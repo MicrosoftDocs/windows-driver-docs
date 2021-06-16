@@ -120,7 +120,7 @@ Only one of the D3DFVF\_TEX *n* flags is set.
 
 Microsoft Direct3D supplies the driver with vertex data whose components are ordered as shown in the following figure.
 
-![diagram illustrating flexible vertex format (fvf) vertex component ordering](images/fvf.png)
+![diagram illustrating flexible vertex format (fvf) vertex component ordering.](images/fvf.png)
 
 Direct3D always sends *x,y,z,* and *w* values; the remaining data is sent only as required by an application. Note that this diagram assumes 2D texture coordinates, although 1D, 3D, and 4D textures are also valid for the latest DirectX release.
 
@@ -144,7 +144,7 @@ As shown in the preceding figure, vertex data consists of the following componen
 
 FVF data is always tightly packed; that is, no memory is wasted on components that are not explicitly specified in the vertex buffer. For example, when **dwVertexType** is (D3DFVF\_XYZRHW | D3DFVF\_TEX2), and the texture dimension is 2D, each vertex in the buffer consists of eight tightly packed D3DVALUEs. These specify the location (*x,y,z,w*) and texture coordinates for two textures (tu₀, tv₀, tu₁, tv₁) as shown in the following figure:
 
-![diagram illustrating the location and texture coordinates for two textures](images/vbuf.png)
+![diagram illustrating the location and texture coordinates for two textures.](images/vbuf.png)
 
 In the preceding figure it is assumed that there are only two texture coordinates. The vertex data supplied to the driver is always transformed and lit. The driver never receives normals. All data in the FVF texture coordinate sets are single precision IEEE floats. For implementation details, see the *Perm3* sample driver. For more information about FVF, see the DirectX SDK documentation.
 

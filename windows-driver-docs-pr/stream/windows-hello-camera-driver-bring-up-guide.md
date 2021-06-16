@@ -13,7 +13,7 @@ This topic discusses how to enable face authentication for an infrared (IR) came
 
 The following diagram shows how face authentication works with the new driver stack through FrameServer:
 
-![windows hello and frameserver](images/windows-hello-device-model.png)
+![windows hello and frameserver.](images/windows-hello-device-model.png)
 
 ## Face authentication DDIs
 

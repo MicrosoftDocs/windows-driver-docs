@@ -19,7 +19,7 @@ Moving data around in an application scenario today is quite simple. It involves
 
 This scenario involves copying a file between two locations on two different file servers, each with its own virtual disk exposed through an Intelligent Storage Array (ISA). The initiating system first needs to read the data from the source virtual disk into a local buffer. It then packages and transmits the data through some transport and protocol (like SMB over 1GbE) to the second system, which then receives the data and outputs it to a local buffer. Then, the target system writes the data to the destination virtual disk. This scenario describes a very typical Read/Write method of data transfer that is performed multiple times by many different applications every day.
 
-![typical data transfer](images/odx-scenario-1.png)
+![typical data transfer.](images/odx-scenario-1.png)
 
 While standard reads and writes work well in most scenarios, the data intending to be copied may be located on virtual disks managed by the same Intelligent Storage Array. This means that the data is moved out of the array, onto a server, across a network transport, onto another server, and back into the same array once again. The act of moving data within a server and across a network transport can significantly impact the availability of those systems; not to mention the fact that the throughput of the data movement is limited by the throughput and availability of the network.
 
@@ -36,7 +36,7 @@ This control request takes an offset within the file to be read and a desired le
 <span id="FSCTL_OFFLOAD_WRITE"></span><span id="fsctl_offload_write"></span>[**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md)  
 This control request takes an offset within the file to be written to, the desired length of the write, and the token that is a logical representation of the data to be written. If supported, the storage subsystem hosting the file to be written receives the associated offload write storage command. It first attempts to recognize the given token, and then performs the write operation if possible. The write operation is completed underneath Windows, and therefore components on the file system and storage stacks will not see the data movement. Once the data movement is complete, the number of bytes written is returned to the caller.
 
-![offloaded data transfer](images/odx-scenario-2.png)
+![offloaded data transfer.](images/odx-scenario-2.png)
 
 Similar to the first diagram, a simple file copy between two virtual disks on two different servers is shown. Instead of doing normal reads and writes, we offload the heavy lifting of bit movement to the storage array. The first system issues the offload read operation, requesting the array to generate a token representing a point-in-time view of the data to be read within the region of the first virtual disk. The first system then transmits the token to the second system, which in turn issues an offload write operation to the second virtual disk with the token. The array then interprets the token and attempts to perform the data movement between the virtual disks. You’ll notice that the actual data transfer occurs within the intelligent storage array, and not between the two hosts. This significantly improves availability of the two systems while virtually eliminating network traffic between the systems.
 
@@ -68,7 +68,7 @@ The following functions do not support offloaded data transfers:
 
 Support for the offload operations is provided in the Hyper-V storage stack and in the Windows SMB File Server. Where the backing physical storage supports ODX operations, callers can issue [**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md) and [**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md) to files residing on VHDs or on remote file shares, whether from within a virtual machine or on physical hardware. The following diagram illustrates the most basic supported source and destination targets for offloaded data transfers.
 
-![offloaded data transfer scenarios](images/odx-scenario-3.png)
+![offloaded data transfer scenarios.](images/odx-scenario-3.png)
 
 ## <span id="File_System_Filter_Opt-In_Model_and_Impact_to_Applications"></span><span id="file_system_filter_opt-in_model_and_impact_to_applications"></span><span id="FILE_SYSTEM_FILTER_OPT-IN_MODEL_AND_IMPACT_TO_APPLICATIONS"></span>File System Filter Opt-In Model and Impact to Applications
 
@@ -131,13 +131,13 @@ There are two scenarios in which NTFS truncates the range to be offload read or 
 
 1.  The copy range will be truncated to Valid Data Length (VDL) if VDL is before the End of the File (EOF). This assumes that VDL is aligned to a logical sector boundary, otherwise see scenario.
 
-    ![vdl occurring before eof](images/odx-vdl-1.png)
+    ![vdl occurring before eof.](images/odx-vdl-1.png)
 
     During a [**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md) operation, the flag OFFLOAD\_READ\_FLAG\_ALL\_ZERO\_BEYOND\_CURRENT\_RANGE is set in the [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure indicating that the rest of the file contains zeros, and the **TransferLength** member is truncated to VDL.
 
 2.  Similar to Scenario 1, but when VDL is not aligned to a logical sector boundary, the desired range is truncated by NTFS to the next logical sector boundary.
 
-    ![vdl misaligned with sector boundary](images/odx-vdl-2.png)
+    ![vdl misaligned with sector boundary.](images/odx-vdl-2.png)
 
 ## <span id="Limitations"></span><span id="limitations"></span><span id="LIMITATIONS"></span>Limitations
 

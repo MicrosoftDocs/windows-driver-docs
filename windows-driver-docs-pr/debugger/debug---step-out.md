@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Step Out** on the **Debug** menu to resume running on the target. This command executes the rest of the current function and breaks when the function return is completed.
 
-This command is equivalent to pressing SHIFT+F11 or clicking the **Step out (Shift+F11)** button (![screen shot of the step out button](images/tbout.png)) on the toolbar.
+This command is equivalent to pressing SHIFT+F11 or clicking the **Step out (Shift+F11)** button (![screen shot of the step out button.](images/tbout.png)) on the toolbar.
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 

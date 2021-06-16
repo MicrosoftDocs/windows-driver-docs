@@ -14,11 +14,11 @@ Microsoft provides the general driver, and typically an independent hardware ven
 
 Every kernel-mode driver must implement a function named [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which gets called shortly after the driver is loaded. The **DriverEntry** function fills in certain members of a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure with pointers to several other functions that the driver implements. For example, the **DriverEntry** function fills in the **Unload** member of the **DRIVER\_OBJECT** structure with a pointer to the driver's [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function, as shown in the following diagram.
 
-![diagram showing the driver\-object structure with the unload member](images/driverfunctionpointers02.png)
+![diagram showing the driver\-object structure with the unload member.](images/driverfunctionpointers02.png)
 
 The **MajorFunction** member of the [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure is an array of pointers to functions that handle I/O request packets ([**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)s), as shown in the following diagram. Typically the driver fills in several members of the **MajorFunction** array with pointers to functions (implemented by the driver) that handle various kinds of IRPs.
 
-![diagram showing the driver\-object structure with the majorfunction member](images/driverfunctionpointers03.png)
+![diagram showing the driver\-object structure with the majorfunction member.](images/driverfunctionpointers03.png)
 
 An IRP can be categorized according to its major function code, which is identified by a constant, such as **IRP\_MJ\_READ**, **IRP\_MJ\_WRITE**, or **IRP\_MJ\_PNP**. The constants that identify major function code serve as indices in the **MajorFunction** array. For example, suppose the driver implements a dispatch function to handle IRPs that have the major function code **IRP\_MJ\_WRITE**. In this case, the driver must fill in the **MajorFunction**\[IRP\_MJ\_WRITE\] element of the array with a pointer to the dispatch function.
 
@@ -85,7 +85,7 @@ The remaining elements of the **MajorFunction** array hold pointers to the defau
 
 In the debugger output, you can see that the parport driver provided function pointers for [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) and [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device), but did not provide a function pointer for [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio). The *AddDevice* function is unusual because its function pointer is not stored in the [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure. Instead, it is stored in the **AddDevice** member of an extension to the **DRIVER\_OBJECT** structure. The following diagram illustrates the function pointers that the parport driver provided in its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The function pointers provided by parport are shaded.
 
-![diagram of function pointers in a driver\-object structure](images/driverfunctionpointers01.png)
+![diagram of function pointers in a driver\-object structure.](images/driverfunctionpointers01.png)
 
 ## <span id="Making_it_easier_by_using_driver_pairs"></span><span id="making_it_easier_by_using_driver_pairs"></span><span id="MAKING_IT_EASIER_BY_USING_DRIVER_PAIRS"></span>Making it easier by using driver pairs
 
@@ -123,7 +123,7 @@ The initialization function in GeneralRobot.sys writes function pointers to the 
 
 At some point after [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) returns, a device stack gets constructed for the Proseware Robot device node. The device stack might look like this.
 
-![diagram of the proseware robot device node, showing three device objects in the device stack: afterthought.sys (filter do), prosewarerobot.sys, generalrobot.sys (fdo), and pci.sys (pdo)](images/driverpairs01.png)
+![diagram of the proseware robot device node, showing three device objects in the device stack: afterthought.sys (filter do), prosewarerobot.sys, generalrobot.sys (fdo), and pci.sys (pdo).](images/driverpairs01.png)
 
 As shown in the preceding diagram, the device stack for Proseware Robot has three device objects. The top device object is a filter device object (Filter DO) associated with the filter driver AfterThought.sys. The middle device object is a functional device object (FDO) associated with the driver pair (ProsewareRobot.sys, GeneralRobot.sys). The driver pair serves as the function driver for the device stack. The bottom device object is a physical device object (PDO) associated with Pci.sys.
 
@@ -179,7 +179,7 @@ In this example, netwlv64.sys implements [**DriverEntry**](/windows-hardware/dri
 
 This diagram shows the device stack for the wireless network card. Notice that the driver pair (netwlv64.sys, ndis.sys) occupies only one level in the device stack and is associated with only one device object: the FDO.
 
-![diagram of the wireless network card device stack, showing netwlv64.sys, ndis.sys as the driver pair associated with the fdo and pci.sys associated with the pdo ](images/driverpairs02a.png)
+![diagram of the wireless network card device stack, showing netwlv64.sys, ndis.sys as the driver pair associated with the fdo and pci.sys associated with the pdo .](images/driverpairs02a.png)
 
 ## <span id="Available_driver_pairs"></span><span id="available_driver_pairs"></span><span id="AVAILABLE_DRIVER_PAIRS"></span>Available driver pairs
 

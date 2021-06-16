@@ -36,7 +36,7 @@ If an INF has [**SourceDisksNames**](inf-sourcedisksnames-section.md) and [**Sou
 
 Consider the hierarchy of included INF files that are shown in the following figure:
 
-![diagram illustrating a sample hierarchy of included inf files](images/inf-hier.png)
+![diagram illustrating a sample hierarchy of included inf files.](images/inf-hier.png)
 
 This figure shows an INF file (*MyMfDevice.inf)* for a multifunction device. This INF file includes the system-supplied *Mf.inf* file. When Windows searches for source media from which to copy a file referenced in *MyMfDevice.inf*, it looks for a **SourceDisksFiles** section in *MyMfDevice.inf* and in any included INF files that reference the file to be copied. Windows searches *MyMfDevice.inf* first, but it does not guarantee the order in which it searches the included INF files.
 

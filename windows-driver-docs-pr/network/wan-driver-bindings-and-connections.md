@@ -27,7 +27,7 @@ NDISWAN binds to one or more WAN miniport drivers and one or more protocol drive
 
 The following figure illustrates the binding relationships between WAN client protocol drivers, NDISWAN, and WAN miniport drivers.
 
-![diagram illustrating the binding relationships between wan client protocol drivers, ndiswan, and wan miniport drivers](images/209-04.png)
+![diagram illustrating the binding relationships between wan client protocol drivers, ndiswan, and wan miniport drivers.](images/209-04.png)
 
 Protocol drivers bind once to NDISWAN and do not bind to WAN miniport drivers. This type of binding saves memory and simplifies WAN miniport drivers. Because there are typically several protocol drivers in a given system and there could be more than one WAN miniport driver, the reduction in the number of bindings saves memory. That is, each protocol does not have to bind to each WAN miniport driver. Also, because protocol drivers can rely on only having a single WAN binding, these protocol drivers can be simplified.
 

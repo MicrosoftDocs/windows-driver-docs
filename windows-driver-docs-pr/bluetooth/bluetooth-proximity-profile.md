@@ -15,7 +15,7 @@ The two roles are called:
 -   The Proximity Reporter
 -   The Proximity Monitor
 
-![role relationship](images/bthleproximityroles.png)
+![role relationship.](images/bthleproximityroles.png)
 
 ## <span id="Proximity_Reporter"></span><span id="proximity_reporter"></span><span id="PROXIMITY_REPORTER"></span>Proximity Reporter
 

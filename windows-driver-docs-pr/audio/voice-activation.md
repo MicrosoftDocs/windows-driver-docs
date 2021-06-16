@@ -40,7 +40,7 @@ A *chained command* describes the ability of issuing a command immediately follo
 
 This diagram illustrates chained and keyword only activation.
 
-![chained and keyword activation diagram showing audio buffer and time sequence](images/audio-chained-keyword-activation.png)
+![chained and keyword activation diagram showing audio buffer and time sequence.](images/audio-chained-keyword-activation.png)
 
 Microsoft provides an OS default keyword spotter (software keyword spotter) that is used to ensure quality of hardware keyword detections and to provide the Hey Cortana experience in cases where hardware keyword detection is absent or unavailable.
 
@@ -48,7 +48,7 @@ Microsoft provides an OS default keyword spotter (software keyword spotter) that
 
 The "Learn my voice" feature allows the user to train Cortana to recognize their unique voice. This is accomplished by the user selecting *Learn how I say "Hey Cortana"* in the Cortana settings screen. The user then repeats six carefully chosen phrases that provide a sufficient variety of phonetic patterns to identify the unique attributes of the users voice.
 
-![cortana desktop settings for hw keyword spotter wake on voice](images/audio-voice-activation-settings-2017.png)
+![cortana desktop settings for hw keyword spotter wake on voice.](images/audio-voice-activation-settings-2017.png)
 
 When voice activation is paired with "Learn my voice", the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices. This feature is  available only for Windows 10 version 1903 and earlier.
 
@@ -281,7 +281,7 @@ Audio is processed in a unique way for voice activation training. The following 
 
 This diagram provides an overview of the keyword recognition system.
 
-![keyword recognition system including cortana the speech runtime and the voice activation manager](images/audio-simple-voice-recon-diagram1.png)
+![keyword recognition system including cortana the speech runtime and the voice activation manager.](images/audio-simple-voice-recon-diagram1.png)
 
 ## Keyword Recognition Sequence Diagrams
 
@@ -289,15 +289,15 @@ In these diagrams, the speech runtime module is shown as the â€œspeech platformâ
 
 During startup, capabilities are gathered using [**IKeywordDetectorOemAdapter::GetCapabilities**](/windows-hardware/drivers/ddi/keyworddetectoroemadapter/nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-getcapabilities).
 
-![keyword recognition sequence showing training ux speech platform and the oem keyword detector during startup](images/audio-voice-activation-startup.png)
+![keyword recognition sequence showing training ux speech platform and the oem keyword detector during startup.](images/audio-voice-activation-startup.png)
 
 Later when the user selects to "Learn my voice", the training flow is invoked.
 
-![keyword recognition sequence showing training ux speech platform and the oem keyword detector during learn my voice](images/audio-voice-activation-training.png)
+![keyword recognition sequence showing training ux speech platform and the oem keyword detector during learn my voice.](images/audio-voice-activation-training.png)
 
 This diagram describes the process of arming for keyword detection.
 
-![keyword recognition sequence showing speech platform oem keyword detector and the audio drive detector during arming for keyword detection](images/audio-voice-activation-arming.png)
+![keyword recognition sequence showing speech platform oem keyword detector and the audio drive detector during arming for keyword detection.](images/audio-voice-activation-arming.png)
 
 ## WAVERT Enhancements
 

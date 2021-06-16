@@ -18,7 +18,7 @@ Describes requirements, assumptions, and constraints to consider when developing
 
 - **Multiple application sessions:** An application session is a positioning session coming from an HLOS component interacting directly with the GNSS driver. The GNSS driver could choose to natively support multiple application sessions by partitioning its state variables and functionality into per-application basis. This is an optional capability of the driver and is indicated specifically through well-defined GNSS driver capability information. In order to support this optional behavior, the GNSS driver needs to keep track of the file handle that the HLOS applications get during **CreateFile**, and associate all subsequent HLOS operations to the application-session specific file handle. This native support from the GNSS driver allows the HLOS components to be more flexible and less restrictive about exposing the driver to the rest of the platform. A GNSS driver that support this capability may need to logically partition and maintain state information for each individual application sessions. A GNSS driver that does not support this capability will only need to maintain global state for all application sessions instead of the logical app-specific partition. In this latter mode, the GNSS driver is oblivious to the presence of multiple parallel application sessions and treats all requests from HLOS as if they are originated from the same application session.
 
-  ![gnss driver support for multiple application sessions](images/gnss-architecture-1.png)
+  ![gnss driver support for multiple application sessions.](images/gnss-architecture-1.png)
 
   The support in the GNSS driver for multiple application sessions has the advantage of enabling a test application in the HLOS to interact directly with the GNSS driver at the same time as the GNSS adapter. The test application and the GNSS adapter are what we considered different applications that can request to a single GNSS driver different sessions simultaneously. If multiple application sessions are not supported, then the GNSS driver needs to either be tested with through the OS Location Platform, or otherwise the service hosting the OS Location Platform should be stopped to avoid interfering with the test application.
 
@@ -32,7 +32,7 @@ Describes requirements, assumptions, and constraints to consider when developing
 
   - Drivers that support distance based tracking fix sessions and time based tracking fix sessions must support simultaneously a single shot fix session, a distance based tracking fix session and a time based tracking fix session.
 
-  ![driver support of multiple simultaneous fix sessions](images/gnss-architecture-2.png)
+  ![driver support of multiple simultaneous fix sessions.](images/gnss-architecture-2.png)
 
   Whether the driver supports multiple simultaneous fix sessions or not is expressed by a well-defined driver capability parameter. If a driver does not explicitly support multiple parallel fix sessions, it must fail a new fix-session request if a session of the same fix type is already started and active. If multiple fix session support is not present, the onus is on the HLOS component to ensure that multiple GNSS requests coming from the high-level applications are multiplexed and mapped into a single fix session request to the GNSS driver.
 
@@ -53,7 +53,7 @@ Describes requirements, assumptions, and constraints to consider when developing
 
   Fix sessions are uniquely identified by a fix session ID. No positional information can be retrieved by the HLOS outside the context of a fix session. The GNSS driver must allow modification of the session parameters on the fly to facilitate the multiplexing operation by the HLOS component, without the need of restarting the fix session.
 
-  ![fix report communication between a gnss driver and an application](images/gnss-architecture-3.png)
+  ![fix report communication between a gnss driver and an application.](images/gnss-architecture-3.png)
 
 - **Fix type:** The GNSS driver must at a minimum support the basic single shot fix. Additionally the driver should natively support advanced fix types (such as tracking). As stated earlier, supporting additional fix types implies that even if the driver does not support multiple fix sessions of the same type, it must support simultaneously at least one fix session of a supported fix type. The HLOS component does not multiplex different fix types into a single type.
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Graphics hardware that supports Direct3D version 10 can be designed with shared programmable shader cores. The graphics processing unit (GPU) can program shader cores that can be scheduled across the functional blocks that make up the rendering pipeline. This load balancing means that hardware developers are not required to use every shader type, but only the ones that are required to perform rendering. This load balancing can then free resources for shader types that are active. The following figure shows the functional blocks of the rendering pipeline. The sections that follow the figure describe the blocks in more detail.
 
-![diagram illustrating the functional blocks of the rendering pipeline](images/pipeline.png)
+![diagram illustrating the functional blocks of the rendering pipeline.](images/pipeline.png)
 
 ### <span id="input_assembler"></span><span id="INPUT_ASSEMBLER"></span> Input Assembler
 

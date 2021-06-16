@@ -19,7 +19,7 @@ The pitch is determined by multiplying the pixel depth, in bytes, by surface wid
 
 The following diagram illustrates linear memory heap allocation with one primary surface and one scratch area.
 
-![diagram illustrating linear memory heap allocation](images/ddfig4.png)
+![diagram illustrating linear memory heap allocation.](images/ddfig4.png)
 
 The pointer to the start of the primary surface is **fpPrimary**, a member of the [**VIDEOMEMORYINFO**](/windows/win32/api/ddrawint/ns-ddrawint-videomemoryinfo) structure. The size of the primary surface and the various Windows caches are added to this to give a pointer to the beginning of the scratch area, indicated by the **fpStart** member of the [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure. The end point, indicated by the **fpEnd** member of the **VIDEOMEMORY** structure, is calculated by adding the size of the remaining memory minus one.
 

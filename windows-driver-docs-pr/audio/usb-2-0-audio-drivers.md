@@ -23,7 +23,7 @@ The driver is automatically enabled when a compatible device is attached to the 
 
 usbaudio2.sys fits within the wider architecture of Windows USB Audio as shown. 
 
-![stack diagram showing Kmixer.sys at the top and a USB audio device at the bottom](images/usb-2-0-audio-arch.png)
+![stack diagram showing Kmixer.sys at the top and a USB audio device at the bottom.](images/usb-2-0-audio-arch.png)
 
 ## Related USB specifications
 

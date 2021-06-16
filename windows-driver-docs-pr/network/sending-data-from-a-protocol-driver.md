@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates a protocol driver send operation, which involves a protocol driver, NDIS, and underlying drivers in a driver stack.
 
-![diagram illustrating a protocol driver send operation, which involves a protocol driver, ndis, and underlying drivers in a driver stack](images/protocolsend.png)
+![diagram illustrating a protocol driver send operation, which involves a protocol driver, ndis, and underlying drivers in a driver stack.](images/protocolsend.png)
 
 Protocol drivers call the [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) function to send the network data that is defined in a list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures.
 

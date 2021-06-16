@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 As discussed in the [Flipping](flipping.md) section, a flip essentially changes a memory pointer so that it points to a new region of display memory (see the Permedia2 sample code). The surface being flipped away from must be finished being displayed before the application can lock, blt, or alter that memory, or a tear may result (as shown in the following figure).
 
-![diagram illustrating tearing and no tearing](images/ddfig8.png)
+![diagram illustrating tearing and no tearing.](images/ddfig8.png)
 
 A tear may also occur if the surface being flipped to is having data written to it during the flip. Tearing is universal and may happen any time an image is being drawn and displayed at the same time. Faster frame rates do not solve this problem. Because primary surfaces, overlays, and textures are all DirectDraw surfaces, they can be flipped the same way to prevent tearing.
 

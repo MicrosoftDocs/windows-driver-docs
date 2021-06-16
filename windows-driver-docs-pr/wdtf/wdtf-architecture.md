@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 
 To understand the architecture of WDTF, you should first read [Windows Device Testing Framework Design Guide](wdtf-overview.md). The most important concept is that WDTF uses devices and the system by abstracting each of them into a *target* (an [**IWDTFTarget2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2) interface). The following illustration shows the core object model that WDTF provides.
 
-![diagram illustrating the wdtf core object model](images/wdtf-objectmodel.gif)
+![diagram illustrating the wdtf core object model.](images/wdtf-objectmodel.gif)
 
 Your scenario can use some or all of the following WDTF objects and interfaces:
 
@@ -54,7 +54,7 @@ The [**IWDTFTargets2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2
 
 WDTF includes a set of interfaces and implementations ([**action interfaces**](/windows-hardware/drivers/ddi/index)) that you can use in your test scenarios to control targets. Each implementation knows how to perform target-specific actions, such as enabling and disabling, or performing I/O operations. Your scripts can refer to these interfaces by their interface name, without understanding the specific implementation, as the following illustration shows.
 
-![diagram illustrating the target::getinterface method](images/wdtf-getinterface.gif)
+![diagram illustrating the target::getinterface method.](images/wdtf-getinterface.gif)
 
 For more information about these interfaces, see [Controlling Targets](controlling-targets.md).
 

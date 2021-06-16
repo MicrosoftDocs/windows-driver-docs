@@ -57,7 +57,7 @@ This example shows a grid display of all the positions in the trace where the fo
 dx -g @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")
 ```
 
-![memory object dx example grid output](images/ttd-time-travel-memory-object-dx-output.png) 
+![memory object dx example grid output.](images/ttd-time-travel-memory-object-dx-output.png) 
 
 You can click on the TimeStart fields in any of the events in the grid display, to display information for that event. 
 

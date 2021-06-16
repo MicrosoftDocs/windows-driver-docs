@@ -16,7 +16,7 @@ A wait/wake IRP completes when a wake-up signal arrives. The wake-up signal is d
 
 The following figure shows the steps in completing a wait/wake IRP.
 
-![steps for completing a wait/wake irp](images/comp-waitwake.png)
+![steps for completing a wait/wake irp.](images/comp-waitwake.png)
 
 When the signal occurs, control re-enters the bus driver at the point where the bus detects that the device has awakened. The bus driver services the event as required and calls [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) to complete the [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md) IRP for its PDO.
 

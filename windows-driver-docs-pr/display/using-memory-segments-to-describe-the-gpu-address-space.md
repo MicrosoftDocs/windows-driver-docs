@@ -27,7 +27,7 @@ The driver is not required to specify all video memory resources that are availa
 
 The following figure shows how the driver can configure memory segments from the GPU address space.
 
-![diagram illustrating the division of gpu address space into segments](images/memseg.png)
+![diagram illustrating the division of gpu address space into segments.](images/memseg.png)
 
 **Note**   Video memory that is hidden from the video memory manager cannot be mapped into user space or be made exclusively available to any particular process. To do so breaks the fundamental rules of virtual memory that require that all processes running on the system have access to all memory.
 

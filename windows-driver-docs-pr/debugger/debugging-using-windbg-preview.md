@@ -7,7 +7,7 @@ ms.localizationpriority: High
 
 # Debugging Using WinDbg Preview
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png) 
+![Small logo on windbg preview.](images/windbgx-preview-logo.png) 
 
 WinDbg Preview is the latest version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
 
@@ -15,13 +15,13 @@ WinDbg Preview is the latest version of WinDbg with more modern visuals, faster 
 
 Here's some of the most notable things that have changed or are new in WinDbg Preview.
 
-![Main screen in debugger](images/windbgx-main-menu.png)
+![Main screen in debugger.](images/windbgx-main-menu.png)
 
 ### General features
 
 - **Easier Connection Setup and Recall** - The WinDbg Preview includes the ability to recall previous session configuration information.
 
-![Screen shot of main screen in debugger](images/windbgx-start-debugging-menu.png)
+![Screen shot of main screen in debugger.](images/windbgx-start-debugging-menu.png)
 
 - **Easy feedback channel** - Your feedback will guide the development effort going forward. For more information, see [Providing Feedback](#providing-feedback)
 
@@ -33,7 +33,7 @@ Here's some of the most notable things that have changed or are new in WinDbg Pr
 
 - **Disassembly Window Improvements** - The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll.
 
-    ![Disassembly windows in Debugger](images/windbgx-disassembly.png)
+    ![Disassembly windows in Debugger.](images/windbgx-disassembly.png)
 
 - **Memory window improvements** - The memory window has highlighting and improved scrolling.
 
@@ -49,37 +49,37 @@ For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 
 Use **File** > **Settings** to enable the dark theme.
 
-![Screen shot showing dark theme](images/windbgx-dark-theme.png)
+![Screen shot showing dark theme.](images/windbgx-dark-theme.png)
 
 ### Ribbon Quick Access
 
 Just pin the buttons you use the most and you can collapse the ribbon to save screen real estate. 
 
-![Screen shot showing a ribbon with pinned items](images/windbgx-quick-access.png)
+![Screen shot showing a ribbon with pinned items.](images/windbgx-quick-access.png)
 
 ### Source code
 
 The source code window has been updated to be much more in line with modern editors.
 
-![Screen shot of source code windows in debugger](images/windbgx-source-window.png)
+![Screen shot of source code windows in debugger.](images/windbgx-source-window.png)
 
 ### Highlighting
 
 The command window has two new highlighting features. Selecting any text will give a subtle highlight to any other instances of that text. You can then hit "Highlight/Un-highlight" or Ctrl+Alt+H to persist the highlighting.
 
-![Screen shot showing columns highlighted in yellow](images/windbgx-highlighting.gif)
+![Screen shot showing columns highlighted in yellow.](images/windbgx-highlighting.gif)
 
 ### Better keyboard navigation
 
 Just hit Ctrl+Tab and you can easily navigate between windows with just your keyboard.
 
-![Screen shot showing ctrl tab menu](images/windbgx-ctrl-tab.gif)
+![Screen shot showing ctrl tab menu.](images/windbgx-ctrl-tab.gif)
 
 ### Integrated Time Travel Debugging (TTD)
 
 If you need a TTD trace of your application, just check the "Record with Time Travel Debugging" box when launching or attaching. WinDbgNext will set it up for TTD and open the trace when you're done recording.
 
-![Screen shot showing process record menu with a notepad process being seleced for recording](images/windbgx-ttd.png)
+![Screen shot showing process record menu with a notepad process being seleced for recording.](images/windbgx-ttd.png)
 
 For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
@@ -87,7 +87,7 @@ For more information, see [Time Travel Debugging - Overview](time-travel-debuggi
 
 Debugging your universal app or background task is now a single click or select.
 
-![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
+![Launch App Package Applications tab showing cal in the search box with three apps listed.](images/windbgx-launch-app-package.png)
 
 For more information, see [Launch App Package](./windbg-user-mode-preview.md#launch-app-package).
 
@@ -95,7 +95,7 @@ For more information, see [Launch App Package](./windbg-user-mode-preview.md#lau
 
 The attach dialog provides more detail, includes a search dialog and is easier to use.
 
-![Attach to a process dialog](images/windbgx-attach-to-a-process-zoomed.png)
+![Attach to a process dialog.](images/windbgx-attach-to-a-process-zoomed.png)
 
 ### Enhanced breakpoint tracking  
 
@@ -111,13 +111,13 @@ For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 
 For more information, see [WinDbg Preview - Data model](windbg-data-model-preview.md).
 
-![Screen shot of data model menu in debugger](images/windbgx-data-model-explore-window.png)
+![Screen shot of data model menu in debugger.](images/windbgx-data-model-explore-window.png)
 
 ### New scripting development UI
 
 - **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting and IntelliSense.
 
-![Screen shot of scripting menu in debugger showing intellisense](images/windbgx-scripting-intellisense.png)
+![Screen shot of scripting menu in debugger showing intellisense.](images/windbgx-scripting-intellisense.png)
 
 For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
@@ -131,7 +131,7 @@ Your feedback will help guide WinDbg's development going forward.
 
 - If you have feedback such as a feature that you really want to see or a bug that makes something difficult, use the Feedback Hub.
 
-![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
+![Screen shot of feedback hub showing feedback options including the add new feedback button.](images/windbgx-feedback.png)
 
 ### Team Blog
 

@@ -26,7 +26,7 @@ An SRB comprises a command and data associated with that command. A [**HW\_STREA
 
 The following illustration shows the interaction between the stream class and the minidriver during initialization.
 
-![diagram illustrating the interaction between the stream class and the minidriver during initialization](images/stclassi.png)
+![diagram illustrating the interaction between the stream class and the minidriver during initialization.](images/stclassi.png)
 
 All streaming minidriver functions are optionally synchronized with the minidriver's interrupt service routine (ISR), making the minidrivers nonreentrant. In other words, when a thread is executing in the minidriver, no calls will be made to any other function within the minidriver, including the ISR. This nonreentrant condition holds true even on multiprocessor Windows NT/Windows 2000 systems, making the minidrivers easier to write. The stream class driver achieves this nonreentrant condition by masking off the IRQ of the streaming minidriver (and all lower priority IRQs) using **KeSynchronizeExecution** when code is executing in any of the minidriver's routines. For more information about synchronization, see [Minidriver Synchronization](minidriver-synchronization.md).
 

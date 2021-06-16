@@ -12,13 +12,13 @@ The Windows Portable Devices (WPD) properties are object-description metadata. T
 
 The WDK includes several tools for WPD driver developers. One of these tools, *WpdInfo.exe*, enables a developer to examine the objects and properties that are exposed by a given driver. The following screenshot of the *WpdInfo.exe* tool shows the properties that the Device object in the driver supports.
 
-![wpd information tool](images/wpdinfo_device_object.png)
+![wpd information tool.](images/wpdinfo_device_object.png)
 
 In the previous image, the leftmost column in the top pane lists the objects that the driver supports. The center pane lists the 18 properties that the driver for the DEVICE object supports. The first column in this pane lists the property name, the second column lists the value of that property, the third column lists the type, and so on. The lower pane shows information that is returned by the event that the driver supports.
 
 The following screenshot of the *WpdInfo.exe* tool shows the properties that the TempHumidity object supports.
 
-![the wpd information tool](images/wpdinfo_temphumidity_object.png)
+![the wpd information tool.](images/wpdinfo_temphumidity_object.png)
 
 This object supports 10 properties. Among them, SENSOR\_READING and SENSOR\_UPDATE\_INTERVAL are custom properties that are defined by WpdBasicHardwareDriver, and represent data that is issued by the sensor firmware. In this example, the SENSOR\_READING property identifies the sensor (2=Sensiron Temperature and Humidity sensor), the element count (1), the element size (7 bytes), the current temperature (74.4 F), and relative humidity (37.3%). The SENSOR\_UPDATE\_INTERVAL property specifies the frequency at which the device fires the event. This value, 02000, is specified in milliseconds, which indicates a 2-second update interval. The firmware supports the configuration of an update interval between 2 and 60 seconds.
 

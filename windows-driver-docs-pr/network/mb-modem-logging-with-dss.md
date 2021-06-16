@@ -46,7 +46,7 @@ When connecting or disconnecting from DSS, the following GUID is used for modem 
 
 The following flow diagram illustrates the DSS setup and tear down process.
 
-![DSS modem logging setup and tear down flow diagram](images/mb-modem-logging-dss-flow.png "DSS modem logging setup and tear down flow diagram.")
+![DSS modem logging setup and tear down flow diagram.](images/mb-modem-logging-dss-flow.png "DSS modem logging setup and tear down flow diagram.")
 
 ## NDIS interface extension
 

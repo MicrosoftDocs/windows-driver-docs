@@ -63,7 +63,7 @@ The INF code that will correctly "plug and play" a hardware ID of the form LPTEN
 Company_Name="Company Name"
 ```
 
-![plug and play for parallel port printers](images/pnppar01.png)
+![plug and play for parallel port printers.](images/pnppar01.png)
 
 For a printer that shares its *device ID* with other models, the INF file should be similar to the following:
 

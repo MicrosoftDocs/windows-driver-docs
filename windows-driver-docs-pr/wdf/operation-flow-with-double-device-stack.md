@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The following figure shows the flow of operations that occur to and from UMDF filter and functional drivers in a double device stack.
 
-![umdf i/o call sequence for umdf filter driver and umdf function driver](images/umdfflow2.gif)
+![umdf i/o call sequence for umdf filter driver and umdf function driver.](images/umdfflow2.gif)
 
 **Note**   All I/O that is initiated by applications is routed through kernel mode as shown in the figures in the [Architecture of the UMDF](/previous-versions/ff554461(v=vs.85)) section, even though the preceding figure does not show this situation.
 

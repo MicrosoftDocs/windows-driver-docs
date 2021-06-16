@@ -41,11 +41,11 @@ For more information on OS descriptors, see [Microsoft OS Descriptors for USB De
 
 1.  Search for printmanagement.msc in **Cortana**.
 
-    ![print management](images/g-code-1.png)
+    ![print management.](images/g-code-1.png)
 
 2.  Expand **Print Servers**, expand the name of your machine, right-click on **Drivers**, then select **Add Driver…**.
 
-    ![print management dialog](images/g-code-2.png)
+    ![print management dialog.](images/g-code-2.png)
 
 3.  Click **Next**, select **(x64)**, click **Next**, then click **Have Disk**.
 
@@ -57,23 +57,23 @@ For more information on OS descriptors, see [Microsoft OS Descriptors for USB De
 
 7.  Click **Add a printer**.
 
-    ![add a printer](images/g-code-3.png)
+    ![add a printer.](images/g-code-3.png)
 
 8.  Select **The printer that I want isn’t listed**.
 
-    ![add a device](images/g-code-4.png)
+    ![add a device.](images/g-code-4.png)
 
 9.  Select **Add a local printer or network printer with manual settings**, then click **Next**.
 
-    ![add a local printer or network printer with manual settings](images/g-code-5.png)
+    ![add a local printer or network printer with manual settings.](images/g-code-5.png)
 
 10. Choose **Create a new port** and select **3D Port** for the type of port, then click **Next**.
 
-    ![create a new port](images/g-code-6.png)
+    ![create a new port.](images/g-code-6.png)
 
 11. Enter a port name and click **OK**.
 
-    ![enter a port name](images/g-code-7.png)
+    ![enter a port name.](images/g-code-7.png)
 
 12. Click **Have Disk…**.
 
@@ -83,10 +83,10 @@ For more information on OS descriptors, see [Microsoft OS Descriptors for USB De
 
 14. Click **Next**.
 
-    ![install the printer driver](images/g-code-9.png)
+    ![install the printer driver.](images/g-code-9.png)
 
 15. You can change the 3D printer name here if you want (it will show up in the printer UI), then click **Next**, then click **OK** to allow the command to be run as an Administrator.
 
-    ![type a printer name](images/g-code-10.png)
+    ![type a printer name.](images/g-code-10.png)
 
 16. After the installation completes, click **Finish**.

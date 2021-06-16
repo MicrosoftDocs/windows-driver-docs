@@ -54,7 +54,7 @@ You can also directly open or close a source file by doing one of the following:
 
 -   (WinDbg only) Use the [**.open (Open Source File)**](-open--open-source-file-.md) command to open a source file.
 
--   (WinDbg only) Use the [file | open source file](file---open-source-file.md) command or press ctrl+o to open a source file. you can also use the **open source file (ctrl+o)** button (![screen shot of the open source file button](images/tbopen.png)) on the toolbar.
+-   (WinDbg only) Use the [file | open source file](file---open-source-file.md) command or press ctrl+o to open a source file. you can also use the **open source file (ctrl+o)** button (![screen shot of the open source file button.](images/tbopen.png)) on the toolbar.
 
     **Note**   When you use **File | Open Source File** (or its shortcut menu or button equivalents) to open a source file, the path of that file is automatically appended to the source path.
 

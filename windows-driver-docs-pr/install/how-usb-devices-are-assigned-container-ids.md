@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 For a device that is connected to the computer through the Universal Serial Bus (USB), the following flowchart shows the heuristic used to assign a container ID to a USB device node (*devnode*).
 
-![flowchart illustrating the container id heuristic for usb devnodes](images/containerid-6.png)
+![flowchart illustrating the container id heuristic for usb devnodes.](images/containerid-6.png)
 
 This heuristic uses information from several sources to determine whether one of the following is true about a USB devnode:
 

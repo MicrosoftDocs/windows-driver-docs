@@ -18,7 +18,7 @@ Query requests specify [**NDIS\_WWAN\_GET\_SLOT\_INFO**](/windows-hardware/drive
 
 The following diagram illustrates a query request.
 
-![slot status query](images/multi-SIM_9_slotStatusQuery.png)
+![slot status query.](images/multi-SIM_9_slotStatusQuery.png)
 
 Set requests are not applicable.
 

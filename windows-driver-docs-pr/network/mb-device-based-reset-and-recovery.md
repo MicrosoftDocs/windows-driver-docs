@@ -70,7 +70,7 @@ For UDE client drivers that enable an MBIM function, Windows 10, version 1809 in
 
 The following flow diagram illustrates the UDE device reset process.
 
-![Flow for reset recovery flow for UDECx client drivers](images/mb-self-healing-udecx-reset.png "Call flow for reset recovery for UDECx client drivers.")
+![Flow for reset recovery flow for UDECx client drivers.](images/mb-self-healing-udecx-reset.png "Call flow for reset recovery for UDECx client drivers.")
 
 
 ## RnR triggers
@@ -165,19 +165,19 @@ After PLDR or PnP disable/enable, the device departs and then re-arrives. Initia
 
 ### Primary flows
 #### RnR for bad connectivity
-![RnR for bad connectivity](images\RnR_bad_connectivity.png?raw=true "RNR_bad_connectivity")
+![RnR for bad connectivity.](images\RnR_bad_connectivity.png?raw=true "RNR_bad_connectivity")
 #### PLDR for radio power set failure
-![PLDR for radio power set failure](images\PLDR_radio_power_set_failure.png?raw=true "PLDR_radio_power_set_failure")
+![PLDR for radio power set failure.](images\PLDR_radio_power_set_failure.png?raw=true "PLDR_radio_power_set_failure")
 #### PnP disable/enable for radio state set failure
-![PnP of radio state set failure](images\PnP_radio_state_set_failure.png?raw=true "PnP_radio_state_set_failure")
+![PnP of radio state set failure.](images\PnP_radio_state_set_failure.png?raw=true "PnP_radio_state_set_failure")
 #### PLDR for time-outs of consecutive OID requests 
-![PLDR of timeouts consecutive OID requests](images\PLDR_timeouts_consecutive_OID_requests.png?raw=true "PLDR_timeouts_consecutive_OID_requests")
+![PLDR of timeouts consecutive OID requests.](images\PLDR_timeouts_consecutive_OID_requests.png?raw=true "PLDR_timeouts_consecutive_OID_requests")
 #### PnP disable/enable for time-outs of consecutive OID requests 
-![PnP of timeouts consecutive OID requests](images\PnP_timeouts_consecutive_OID_requests.png?raw=true "PnP_timeouts_consecutive_OID_requests")
+![PnP of timeouts consecutive OID requests.](images\PnP_timeouts_consecutive_OID_requests.png?raw=true "PnP_timeouts_consecutive_OID_requests")
 #### PLDR for initialization failure
-![PLDR of initialization failure](images\PLDR_initialization_failure.png?raw=true "PLDR_initialization_failure")
+![PLDR of initialization failure.](images\PLDR_initialization_failure.png?raw=true "PLDR_initialization_failure")
 #### PnP disable/enable for initialization failure
-![PnP of initialization failure](images\PnP_initialization_failure.png?raw=true "PnP_initialization_failure")
+![PnP of initialization failure.](images\PnP_initialization_failure.png?raw=true "PnP_initialization_failure")
 
 
 ## Requirements for MB Device-based Reset and Recovery

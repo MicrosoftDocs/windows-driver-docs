@@ -20,11 +20,11 @@ ms.localizationpriority: medium
 
 Macroblocks can be broken into the following segments. (This is done to compartmentalize areas with different characteristics.) The following diagram shows how macroblocks can be broken into the following segments.
 
-![diagram illustrating basic macroblock partitioning schemes](images/portschem.png)
+![diagram illustrating basic macroblock partitioning schemes.](images/portschem.png)
 
 In the MPEG-2 case, the top and bottom portion of a field-structured macroblock in a frame picture represent lines from two different fields captured at different instances in time, as much as one-fiftieth of a second apart. Thus, the top and bottom portion could have totally noncorrelated content if significant movement has taken place between the two fields for the frame area covered by the macroblock. As illustrated in the following figure, an additional 16x8 scheme is added in field-structured pictures to provide a finer vertical granularity of prediction, which better accommodates edges and smaller objects with different motion characteristics.
 
-![diagram illustrating two mpeg-2 macroblock 16x8 partitions](images/m2macro.png)
+![diagram illustrating two mpeg-2 macroblock 16x8 partitions.](images/m2macro.png)
 
 The prediction block itself is an approximation of shape and represents a compromise selection of motion vector for all samples that belong to the portion of the macroblock that the prediction block represents. Ideally, each sample would have its own motion vector, but this would consume a considerable number of bits and require extra overhead in processing.
 

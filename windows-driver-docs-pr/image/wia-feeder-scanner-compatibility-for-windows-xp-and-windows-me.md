@@ -19,25 +19,25 @@ There have been a number of changes to how scans are handled between Windows XP 
 
 The following figure displays the scanner item tree in Windows XP.
 
-![diagram illustrating the scanner item tree in windows xp](images/wia-feeder-tree-xp.png)
+![diagram illustrating the scanner item tree in windows xp.](images/wia-feeder-tree-xp.png)
 
 All of the transfers would occur off this item and would use all scan settings (for both feeder and flatbed).
 
 In contrast, the following figure displays the scanner item tree for a scanner with both a flatbed and a feeder in Windows Vista.
 
-![diagram illustrating the scanner item tree for a scanner with a flatbed and a feeder in windows vista](images/wia-feeder-tree4.png)
+![diagram illustrating the scanner item tree for a scanner with a flatbed and a feeder in windows vista.](images/wia-feeder-tree4.png)
 
 This item tree represents both the function units as separate items in the item tree, a flatbed and a feeder. For more information about this type of scanner, see [Non-Duplex-Capable Document Feeder](non-duplex-capable-document-feeder.md).
 
 If your scanner is capable of duplexing (that is, scanning both sides of a document), the Windows Vista item tree would look like the following figure.
 
-![diagram illustrating the windows vista scanner item tree with duplexing](images/wia-feeder-tree3.png)
+![diagram illustrating the windows vista scanner item tree with duplexing.](images/wia-feeder-tree3.png)
 
 The preceding figure shows an item tree that also represents a scanner with both a flatbed and a feeder.
 
 The item tree for a scanner without a flatbed in Windows Vista would look like the following figure.
 
-![diagram illustrating the windows vista feeder scanner item tree](images/wia-feeder-tree1.png)
+![diagram illustrating the windows vista feeder scanner item tree.](images/wia-feeder-tree1.png)
 
 In the scanner item tree with duplexing and the feeder scanner item tree, data transfers always occur off of the feeder item. Scan settings are contained in both the feeder and child (both front and back) items.
 

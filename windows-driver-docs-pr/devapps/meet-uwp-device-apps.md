@@ -21,7 +21,7 @@ For more info about what a UWP device app is and how to create one, see [Buildin
 
 When specified as a privileged app in device metadata, UWP device apps can perform multistep device operations in a device background task. This special type of background task can run to completion even if the app is moved to the background and suspended. This is necessary to allow reliable device servicing, like changes to persistent settings or firmware, without requiring the user to sit and watch a progress bar.
 
-![windows store device apps can perform device updates, like firmware updates, in the background](images/deviceupdateuserconsent.png)
+![windows store device apps can perform device updates, like firmware updates, in the background.](images/deviceupdateuserconsent.png)
 
 To create a background task for device servicing (device updates), use the [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger) trigger. A similar trigger, [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger), which allows for reliable content synchronization, is available for all UWP apps . For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
@@ -34,7 +34,7 @@ To create a background task for device servicing (device updates), use the [Devi
 
 You can configure any UWP app, including your UWP device app, to automatically start when your AutoPlay-supported device is connected to the PC. However, that app must support the AutoPlay handler and specify the experience ID in the app manifest. You can also choose to let additional UWP apps act as AutoPlay handlers for your device.
 
-![example autoplay dialog for a device](images/autoplayfordeviceapps.png)
+![example autoplay dialog for a device.](images/autoplayfordeviceapps.png)
 
 For more info about AutoPlay and which device classes are supported in Windows 8.1, see [AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md).
 
@@ -74,7 +74,7 @@ OEMs and component suppliers can develop UWP device apps for devices that are in
 
 UWP device apps can automatically install when a user connects the device to their PC. If a connection to the Internet isn't available, Windows will try again later. Device apps are installed to **All Apps**.
 
-![windows store device apps can automatically install](images/autoinstalluserexperience.png)
+![windows store device apps can automatically install.](images/autoinstalluserexperience.png)
 
 **Warning**  It's important to consider that the automatic installation feature does not provide a notification to the user when the app is installed. Some users may find this experience confusing and frustrating, and give your app a bad rating.
 

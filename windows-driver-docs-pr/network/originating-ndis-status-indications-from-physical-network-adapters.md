@@ -20,11 +20,11 @@ This topic discusses the method that is used by an extensible switch forwarding 
 
 The following figure shows the Hyper-V extensible switch control path for NDIS status indications from physical and VM network adapters for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![vswitch control path for ndis status indications from physical and vm network adapters for ndis 6.40 and later](images/vswitch-status-controlpath3-ndis640.png)
+![vswitch control path for ndis status indications from physical and vm network adapters for ndis 6.40 and later.](images/vswitch-status-controlpath3-ndis640.png)
 
 The following figure shows the Hyper-V extensible switch control path for NDIS status indications from physical and VM network adapters for NDIS 6.30 (Windows Server 2012).
 
-![vswitch control path for ndis status indications from physical and vm network adapters for ndis 6.30](images/vswitch-status-controlpath3.png)
+![vswitch control path for ndis status indications from physical and vm network adapters for ndis 6.30.](images/vswitch-status-controlpath3.png)
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensions* and the driver stack is known as the *extensible switch driver stack*.
 

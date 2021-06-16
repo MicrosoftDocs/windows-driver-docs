@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the flow of Windows Display Driver Model (WDDM) operations that occur from when a rendering device is created to when the content is presented to the display. The sequence in the sections that follow describes the operation flow in more detail.
 
-![diagram illustrating the wddm operation flow](images/lddmflow.png)
+![diagram illustrating the wddm operation flow.](images/lddmflow.png)
 
 ### <span id="Creating_a_Rendering_Device"></span><span id="creating_a_rendering_device"></span><span id="CREATING_A_RENDERING_DEVICE"></span>Creating a Rendering Device
 

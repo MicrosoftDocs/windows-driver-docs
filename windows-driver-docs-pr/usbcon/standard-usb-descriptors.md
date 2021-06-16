@@ -28,7 +28,7 @@ Every USB device exposes a device descriptor that indicates the device’s class
 
 For example, let's consider the OSR FX2 board device layout (see USB device layout). At device level, the device exposes a device descriptor and an endpoint descriptor for the default endpoint. At configuration level, the device exposes a configuration descriptor for Configuration 0. At interface level, it exposes one interface descriptor for Alternate Setting 0. At the endpoint level, it exposes three endpoint descriptors.
 
-![usb device descriptor layout](images/device-descriptors.png)
+![usb device descriptor layout.](images/device-descriptors.png)
 
 ## USB device descriptor
 

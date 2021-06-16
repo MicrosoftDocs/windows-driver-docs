@@ -19,7 +19,7 @@ Also, if the location device contains a radio, like a GPS location sensor, then 
 
 When tracking connected clients and radio state, the location sensor should enter the lowest possible power state, preferably D3, at any time there is not a connected client while the radio is on. The diagram below illustrates a state machine for connected clients, radio state, and the suggested corresponding device state.
 
-![state machine](images/state-diagram-with-radio.png)
+![state machine.](images/state-diagram-with-radio.png)
 
 The following table provides another view of the various input combinations and the resulting outputs (including power state).
 

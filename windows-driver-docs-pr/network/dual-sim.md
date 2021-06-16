@@ -23,7 +23,7 @@ Each UICC slot is associated with an executor. An executor registers to a partic
 
 For phones that have radio type W/G + G, one executor is W/G capable and one executor is G capable. Depending on the UICC slot that the user chooses to use for the data line, that slot is automatically associated with the more capable W/G executor. The following diagrams show the two possible executor associations depending on the UICC slot that the user chose for the data line.
 
-![hwcomponents\-dualsim\-logicalview\-1](images/hwcomponents-dualsim-logicalview.png) ![Diagram that shows the second possible executor association.](images/hwcomponents-dualsim-logicalview-2.png)
+![hwcomponents\-dualsim\-logicalview\-1.](images/hwcomponents-dualsim-logicalview.png) ![Diagram that shows the second possible executor association.](images/hwcomponents-dualsim-logicalview-2.png)
 
 ### C+G
 

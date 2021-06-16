@@ -22,10 +22,10 @@ You can use the Partner Center to assign specific roles to each of your users. T
 
 To change a user’s roles, navigate to the [Manage Users](https://go.microsoft.com/fwlink/?linkid=833569) section of **Account Settings**. Find the user you want to modify by using the search bar and click on their name.
 
-![an image showing the manage users menu in the Partner Center](images/manage-users.png)
+![an image showing the manage users menu in the Partner Center.](images/manage-users.png)
 
 In the user’s details, scroll down to the roles and select the ones they should have access to.
 
-![an image showing the various roles available to users](images/user-roles.png)
+![an image showing the various roles available to users.](images/user-roles.png)
 
 Finalize your selections by selecting **Save**.

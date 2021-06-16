@@ -17,7 +17,7 @@ SPI test modules that are included in the MITT software package can be used to t
 
 ## Hardware setup
 
-![spi mitt test](images/spi.jpg)
+![spi mitt test.](images/spi.jpg)
 
 | Bus interface | Pin-out                                      | ACPI and schematics | Connection solution                  |
 |---------------|----------------------------------------------|---------------------|--------------------------------------|
@@ -27,11 +27,11 @@ SPI test modules that are included in the MITT software package can be used to t
 2. Use the jumper on the SPI adapter board to select the correct SPI voltage. The jumper can be used to select between 3.3V and 1.8V.
 3. Connect SCLK, MOSI, MISO, SS, and GND to the system under test.
 
-    ![spi wiring](images/spiwiring.png)
+    ![spi wiring.](images/spiwiring.png)
 
 4. On the MITT board, set switch **SW1** to the high position. This position enables the default mode for SPI when the MITT is powered. You can directly connect the board (without the SPI adapter board) if the signal is at 3.3V.
 
-    ![spi power](images/spi-power.png)
+    ![spi power.](images/spi-power.png)
 
 ## Test driver and ACPI configuration
 
@@ -41,7 +41,7 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 
     **pnputil –a witttest.inf**
 
-    ![intall witt driver for the mitt board](images/mitt-install-witt.png)
+    ![intall witt driver for the mitt board.](images/mitt-install-witt.png)
 
     >[!NOTE]
     >PnpUtil.exe is included in %SystemRoot%\\System32.
@@ -106,4 +106,4 @@ You are now ready to run SPI tests. You can run a single test, all tests at once
 
 ## SPI adapter schematic
 
-![spi schematic](images/spi-schematic.png)
+![spi schematic.](images/spi-schematic.png)

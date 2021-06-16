@@ -44,7 +44,7 @@ Miniport drivers can specify that they support emergency call services even in s
 
 The following diagram represents the process taken to determine whether the interface is a qualified MB interface and to gather information about the device capabilities. These steps are performed for each enumerated MB interface when the MB Service starts up, as well as for each new interface arrival while the service is running. The labels in bold represent OID identifiers or transactional flow control. The labels in regular text represent the important flags within the OID structure.
 
-![Establishing if the interface is a qualified mb interface and gathering information about device capabilities](images/wwandriverinitproc.png)
+![Establishing if the interface is a qualified mb interface and gathering information about device capabilities.](images/wwandriverinitproc.png)
 
 To initialize an MB miniport driver, use the following procedure:
 
@@ -63,7 +63,7 @@ To initialize an MB miniport driver, use the following procedure:
 
 The following diagram illustrates the scenario in which the user enters a SIM PIN and manually configures an access point name string. The labels in bold are OID identifiers or transactional flow control, and the labels in regular text are the important flags within the OID structure.
 
-![Diagram illustrating the scenario in which the user enters a sim pin and manually configures an access-point name string](images/wwanlockedgsmdevinitseq.png)
+![Diagram illustrating the scenario in which the user enters a sim pin and manually configures an access-point name string.](images/wwanlockedgsmdevinitseq.png)
 
 To initialize a GSM-based device with PIN1 locked, implement the following steps:
 

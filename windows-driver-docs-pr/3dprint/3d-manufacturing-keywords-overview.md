@@ -51,7 +51,7 @@ The 3D manufacturing print schema keywords are based on a right-handed coordinat
 
 Producers and consumers MUST use the unit resolution of the coordinate space as one micron. The model MUST be transformed to this coordinate space before applying a print schema for 3D manufacturing keyword.
 
-![coordinate space](images/coordinate-space.png)
+![coordinate space.](images/coordinate-space.png)
 
 ### 1.3.3. Relative directions and measurement
 

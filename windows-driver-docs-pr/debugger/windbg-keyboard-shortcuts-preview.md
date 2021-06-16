@@ -7,13 +7,13 @@ ms.localizationpriority: medium
 
 # WinDbg Preview keyboard shortcuts
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 This section summarizes the keyboard shortcuts for the  WinDbg preview debugger.
 
 All of the ribbon menu options are available using the **Alt +** the first letter of the option. For example **Alt + H** to go to the home menu, **Alt + H + S** to stop debugging.
 
-![Screen shot of home menu showing letters uses for quick keys for ribbon](images/windbgx-ribbon-home-menu-alt-keys.png)
+![Screen shot of home menu showing letters uses for quick keys for ribbon.](images/windbgx-ribbon-home-menu-alt-keys.png)
 
 ### Flow control
 

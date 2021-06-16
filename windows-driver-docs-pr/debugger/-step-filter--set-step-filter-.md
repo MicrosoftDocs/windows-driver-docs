@@ -61,7 +61,7 @@ Clears the filter list.
 
 Without any parameters, **.step\_filter** displays the current filter list.
 
-Typically, a trace command (for example, [**t**](t--trace-.md) or the windbg [debug | step into](debug---step-into.md) button ![screen shot of the step into button](images/tbinto.png)) traces into a function call. However, if the symbol associated with the function being called matches a pattern specified by *FilterList*, the function will be stepped over -- as if a step command (for example, [**p**](p--step-.md)) had been used.
+Typically, a trace command (for example, [**t**](t--trace-.md) or the windbg [debug | step into](debug---step-into.md) button ![screen shot of the step into button.](images/tbinto.png)) traces into a function call. However, if the symbol associated with the function being called matches a pattern specified by *FilterList*, the function will be stepped over -- as if a step command (for example, [**p**](p--step-.md)) had been used.
 
 If the instruction pointer is located within code that is listed in the filter list, any trace or step commands will step out of this function, like the [**gu**](gu--go-up-.md) command or the WinDbg **Step Out** button. Of course, this filter would prevent such code from having been traced into in the first place, so this will only happen if you have changed the filter or hit a breakpoint.
 

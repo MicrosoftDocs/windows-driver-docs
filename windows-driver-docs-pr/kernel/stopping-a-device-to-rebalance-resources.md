@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The following figure shows the sequence of IRPs involved in stopping and restarting a device to rebalance resources.
 
-![diagram illustrating stopping a device to rebalance resources](images/stop-irps.png)
+![diagram illustrating stopping a device to rebalance resources.](images/stop-irps.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 

@@ -29,7 +29,7 @@ This document generically refers to both of the system-supplied components as Di
 
 The following figure shows a diagram of the DirectDraw driver architecture.
 
-![diagram illustrating the directdraw driver architecture](images/ddfig1.png)
+![diagram illustrating the directdraw driver architecture.](images/ddfig1.png)
 
 As shown in the preceding figure, an application accesses the display card through GDI (user and kernel-mode portions) and the display driver. The display driver always supports GDI calls and, usually, DirectDraw and Direct3D calls. The device independent bitmap (DIB) engine portion of GDI emulates functionality when it is not supported by the display driver.
 

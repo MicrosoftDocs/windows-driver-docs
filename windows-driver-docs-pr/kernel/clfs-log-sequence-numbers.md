@@ -40,7 +40,7 @@ As clients write records to a stream, CLFS adjusts the last LSN so that it is al
 
 The *active portion* of a stream is the portion of a stream that begins with the record pointed to by the base LSN and ends with the record pointed to by the last LSN. The following diagram illustrates how the base LSN and last LSN delineate the active portion of a stream.
 
-![diagram illustrating the active portion of a clfs stream](images/clfsactivelog.gif)
+![diagram illustrating the active portion of a clfs stream.](images/clfsactivelog.gif)
 
 **Note**   If a stream has an archive tail, the active portion of the stream begins at the record pointed to by the base LSN or the archive tail, whichever is smaller. For more information about archiving, see [CLFS Support for Archiving](clfs-support-for-archiving.md).
 
@@ -52,7 +52,7 @@ Suppose two active database transactions (transaction A and transaction B) are w
 
 The arrows in the following diagram illustrate how the previous LSN of a log record points to the previous record in a chain that belongs to a particular transaction.
 
-![diagram illustrating previous lsn pointers](images/clfsrecordchains.gif)
+![diagram illustrating previous lsn pointers.](images/clfsrecordchains.gif)
 
 ### Undo-next LSN
 
@@ -66,7 +66,7 @@ Now suppose there is a system failure and, during restart recovery, the entire t
 
 The arrows in the following diagram illustrate how the undo-next LSN provides a mechanism that recovery code can use to skip records whose updates have already been rolled back.
 
-![diagram illustrating previous lsn and undo-next lsn pointers](images/clfsundonext.gif)
+![diagram illustrating previous lsn and undo-next lsn pointers.](images/clfsundonext.gif)
 
  
 

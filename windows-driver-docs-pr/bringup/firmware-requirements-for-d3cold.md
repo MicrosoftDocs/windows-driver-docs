@@ -76,7 +76,7 @@ There is no requirement for a parent device to be capable of being power-managed
 
 The following block diagram shows an embedded device (labeled **EMBD**) on a system bus. The main power (**Vcc**) and auxiliary power (**Vaux**) to the device can be independently turned on and off through the block labeled **Power logic**.
 
-![an acpi-enumerated embedded device](images/d3cold1.png)
+![an acpi-enumerated embedded device.](images/d3cold1.png)
 
 The following ASL code example describes the power resources used by the embedded device in the previous diagram. This example starts with a declaration of an \_OSC control method that describes the capabilities of the device driver. Next, the device's two power resources are declared—the resource names PVCC and PVAX are assigned to the device's main and auxiliary power sources, **Vcc** and **Vaux**. Finally, the power resource requirements are listed for each device power state that the device supports, and the device's wake capabilities are described.
 
@@ -179,7 +179,7 @@ The ACPI descriptor for the parent bus must do the following:
 
 The example hardware configuration in the following block diagram shows two different ways D3cold can be enabled for PCIe devices. First, an endpoint (labeled **ENDP**) is connected to a PCIe root port (**RP01**) and receives auxiliary power from its parent device through a **PCIe link**. Second, the **HD Audio** device in the diagram has no standard link to its parent device (the PCI controller labeled **PCI0**) and is therefore modeled similarly to the ACPI-enumerated case.
 
-![a bus-enumerated embedded device](images/d3cold2.png)
+![a bus-enumerated embedded device.](images/d3cold2.png)
 
 The **RP01** device in this diagram has a main power source, **Vcc1**, and an auxiliary power source, **Vaux1**. Similarly, the **HD Audio** device has a main power source, **Vcc2**, and an auxiliary power source, **Vaux2**.
 

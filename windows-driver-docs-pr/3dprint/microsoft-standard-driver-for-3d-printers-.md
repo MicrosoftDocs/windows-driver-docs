@@ -136,29 +136,29 @@ Information regarding the extended properties OS feature descriptor are in the *
 
 Once the device has the firmware burned in flash memory , the device will automatically be detected by Windows 10 and the print capabilities will be stored in registry.
 
-![installing compatable 3d printer ](images/installing-compatible-3d-printer.png)
+![installing compatable 3d printer .](images/installing-compatible-3d-printer.png)
 
 It is very important that the IHV changes the VID/PID of the device to their own. You should never use the Vendor ID (VID) or Product ID (PID) of another existing device as the operating system will not be able to detect the device properly as the VID and PID take priority over the OS descriptor.
 
 If the device has been properly installed, the device should be listed in **Devices and Printers**.
 
-![devices and printers](images/devices-and-printers-3d.png)
+![devices and printers.](images/devices-and-printers-3d.png)
 
 In the **Device Manager**, the matching device id and the compatible id can be verified.
 
-![device manager](images/device-manager-3d.png)
+![device manager.](images/device-manager-3d.png)
 
-![device manager details tab - matching device id](images/device-manager-details-3d.png)
+![device manager details tab - matching device id.](images/device-manager-details-3d.png)
 
-![device manager details tab - compatible ids](images/device-manager-details2-3d.png)
+![device manager details tab - compatible ids.](images/device-manager-details2-3d.png)
 
 The USB driver properties can be obtained by visiting the registry at **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB**.
 
-![edit multi-string value in usb registry](images/usb-registry-3d.png)
+![edit multi-string value in usb registry.](images/usb-registry-3d.png)
 
 The 3D Print driver properties can be obtained by visiting the registry at **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers**.
 
-![view 3d print driver properties in the registry](images/printers-registry-3d.png)
+![view 3d print driver properties in the registry.](images/printers-registry-3d.png)
 
 ## Additional resources
 

@@ -29,7 +29,7 @@ You can find sample code for some of these scenarios in the examples below.  Als
 
 In the following diagram, two different companies have created separate driver packages for the same device, which are shown in the dotted lines.  The first contains just an extension INF, and the second contains a component INF and a legacy software module.  The diagram also shows how an extension INF can reference a component INF, which can in turn reference software modules to install.
 
-![Extension and Component INF Hierarchy](images/extension-component-inf-hierarchy.png)
+![Extension and Component INF Hierarchy.](images/extension-component-inf-hierarchy.png)
 
 ## How extension INF and base INF work together
 
@@ -47,7 +47,7 @@ Among all possible extension INFs that specify the same **ExtensionId** value, t
 
 To illustrate, consider the following scenario that includes a hypothetical device for which there are three extension INFs:
 
-![Diagram showing how base INF and extension INFs are selected](images/extension-base-inf-example.png)
+![Diagram showing how base INF and extension INFs are selected.](images/extension-base-inf-example.png)
 
 The **ExtensionId** values `{A}`, `{B}`, and `{C}` are shown in curly brackets, and each driver's [rank](how-setup-ranks-drivers--windows-vista-and-later-.md) is shown in the banner ribbons.
 

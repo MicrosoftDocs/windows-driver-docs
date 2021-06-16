@@ -17,7 +17,7 @@ USBLPM is for Windows 8 only and works with the Microsoft USB 3.0 driver stack. 
 
 USBLPM runs in **Monitoring**, **Testing**, or **Configuring** mode.
 
-![usb lpm tool](images/fig10-usb-lpm-tool.png)
+![usb lpm tool.](images/fig10-usb-lpm-tool.png)
 
 ### Monitoring
 

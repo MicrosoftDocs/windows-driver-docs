@@ -20,7 +20,7 @@ NDIS can call a filter driver's [*FilterCancelOidRequest*](/windows-hardware/dri
 
 The following figure illustrates a filtered OID request.
 
-![diagram illustrating a filtered oid request](images/requestfilter.png)
+![diagram illustrating a filtered oid request.](images/requestfilter.png)
 
 The filter driver can complete the OID request synchronously or asynchronously by returning NDIS\_STATUS\_SUCCESS or NDIS\_STATUS\_PENDING, respectively, from [*FilterOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request). *FilterOidRequest* can also complete synchronously with an error status.
 

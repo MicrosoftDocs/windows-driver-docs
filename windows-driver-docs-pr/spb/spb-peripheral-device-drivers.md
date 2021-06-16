@@ -19,7 +19,7 @@ The hardware registers of an SPB-connected peripheral device are not memory-mapp
 
 The following diagram shows an example hardware configuration in which an SPB—in this case, an I²C bus—connects two peripheral devices to a System on a Chip (SoC) module. The peripheral devices are external to the SoC module and connect to four pins on the module. The SoC module contains the main processor (not shown), plus an I²C controller and a [general-purpose I/O](../gpio/gpio-driver-support-overview.md) (GPIO) controller. The processor uses the I²C controller to serially transmit data to and from the two peripheral devices. The interrupt request lines from these devices are connected to two GPIO pins that are configured as interrupt inputs. When a device signals an interrupt request, the GPIO controller relays the interrupt to the processor.
 
-![connections for an spb peripheral device](images/spbconnects.png)
+![connections for an spb peripheral device.](images/spbconnects.png)
 
 Because the GPIO controller and I²C controller in this example are integrated into the SoC module, their hardware registers are memory-mapped and can be directly accessed by the processor. However, the processor can access the hardware registers of the two peripheral devices only indirectly, through the I²C controller.
 
@@ -33,7 +33,7 @@ When the device starts up, the PnP manager supplies the device's driver with a s
 
 The following block diagram shows the layers of software and hardware that connect a peripheral device on an SPB to an application program that uses the device. The SPB peripheral device driver in this example is a UMDF driver. The peripheral device (at the bottom of the diagram) is a sensor device (for example, an accelerometer). As in the preceding diagram, the peripheral device is connected to an I²C bus and signals interrupt requests through a pin on a GPIO controller.
 
-![software and hardware layers for an spb-connected sensor device](images/spblayers.png)
+![software and hardware layers for an spb-connected sensor device.](images/spblayers.png)
 
 The three blocks shown in gray are system-supplied modules. Starting with Windows 7, the [sensor class extension](../sensors/about-the-sensor-class-extension.md) is available as a sensor-specific extension to the UMDF. Starting with Windows 8, the [SPB framework extension](./spb-framework-extension.md) (SpbCx) and [GPIO framework extension](../gpio/gpio-driver-support-overview.md) (GpioClx) are available as extensions to KMDF that perform functions that are specific to SPB controllers and to GPIO controllers, respectively.
 

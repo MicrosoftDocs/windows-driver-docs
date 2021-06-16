@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 When ACPI creates the device node to represent the NFCC, PnP matches against the NFC client driver-provided .inf and is installed for that device node. The NFC client driver will, during its AddDevice routine, initialize the class extension, which will allow the Microsoft-provided NFC class extension (NfcCx.dll) to load and let itself setup any I/O queue handling it must implement for top portion of the NFC class extension driver. The following diagram illustrates the driver load mechanism.
 
-![driver load order](images/driverloadsequence1.png)
+![driver load order.](images/driverloadsequence1.png)
 
  
 

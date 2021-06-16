@@ -28,7 +28,7 @@ To illustrate the roles of the standard driver routines, the following figure sh
 
 -   The driver uses system DMA, so it sets its device objects' **Flags** for direct I/O, and has an [*AdapterControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine.
 
-![diagram illustrating an irp path through lowest-level driver routines](images/4loddirp.png)
+![diagram illustrating an irp path through lowest-level driver routines.](images/4loddirp.png)
 
 As this figure shows, the I/O manager creates an IRP and sends it to the driver's dispatch routine for the given major function code. Assuming the function code is either [**IRP\_MJ\_READ**](./irp-mj-read.md) or [**IRP\_MJ\_WRITE**](./irp-mj-write.md), the dispatch routine is **DDDispatchReadWrite**.
 
@@ -44,7 +44,7 @@ The sample driver does not complete the IRP in its dispatch routine, but instead
 
 The following figure illustrates the call to **IoStartPacket**.
 
-![diagram illustrating a call to iostartpacket](images/4strtpak.png)
+![diagram illustrating a call to iostartpacket.](images/4strtpak.png)
 
 If the driver is busy processing another IRP on the device, **IoStartPacket** inserts the IRP into the device queue associated with the device object. The driver can optionally supply a *Key* value as a parameter to **IoStartPacket** to impose a driver-determined order on IRPs in the device queue.
 
@@ -76,7 +76,7 @@ When the *DpcForIsr* routine has finished processing the transfer, it calls [**I
 
 The following figure illustrates this driver's calls to **IoStartNextPacket** and **IoCompleteRequest**.
 
-![calling iostartnextpacket and iocompleterequest](images/4snxtpak.png)
+![calling iostartnextpacket and iocompleterequest.](images/4snxtpak.png)
 
 Drivers should call **IoStartNextPacket** or [**IoStartNextPacketByKey**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacketbykey) to begin the next requested I/O operation as soon as possible, preferably before they call **IoCompleteRequest**.
 

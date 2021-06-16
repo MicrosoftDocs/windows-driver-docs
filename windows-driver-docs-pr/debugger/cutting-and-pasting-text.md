@@ -36,7 +36,7 @@ To copy text, select that text and then do one of the following:
 
 -   (Docked and tabbed windows only) Click **Copy** on the **Edit** menu.
 
--   Click the **Copy (Ctrl+C)** button (![screen shot of the copy button](images/tbcopy.png)) on the toolbar.
+-   Click the **Copy (Ctrl+C)** button (![screen shot of the copy button.](images/tbcopy.png)) on the toolbar.
 
 ### <span id="cutting_text"></span><span id="CUTTING_TEXT"></span>Cutting Text
 
@@ -48,7 +48,7 @@ To cut text and move it to the clipboard, select the text and then do one of the
 
 -   (Docked and tabbed windows only) Click **Cut** on the **Edit** menu.
 
--   Click the **Cut (Ctrl+X)** button (![screen shot of the cut button](images/tbcut.png)) on the toolbar.
+-   Click the **Cut (Ctrl+X)** button (![screen shot of the cut button.](images/tbcut.png)) on the toolbar.
 
 You can cut text from the bottom pane of the Debugger Command window, from the left column of the Watch window, and from any dialog box (that is, from any location that supports text entry).
 
@@ -64,7 +64,7 @@ To paste text from the clipboard, put the cursor where you want to insert the te
 
 -   (Docked and tabbed windows only) Click **Paste** on the **Edit** menu.
 
--   Click the **Paste (Ctrl+V)** button (![screen shot of the paste button](images/tbpaste.png)) on the tooblar.
+-   Click the **Paste (Ctrl+V)** button (![screen shot of the paste button.](images/tbpaste.png)) on the tooblar.
 
 You can paste text into the bottom pane of the Debugger Command window, into the left column of the Watch window, and into any dialog box (that is, into any location that supports text entry).
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following figure shows the parent-child framework object hierarchy.
 
-![umdf parent-child object hierarchy](images/umdfhierarchy.gif)
+![umdf parent-child object hierarchy.](images/umdfhierarchy.gif)
 
 The lifetime scope of framework objects is determined by their location in the hierarchy and how the objects are created. The lifetime scope of framework objects falls into one of the following categories:
 

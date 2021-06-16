@@ -37,13 +37,13 @@ To help provide audio driver support for home-theater systems, Microsoft has def
 
 The new 7.1-channel speaker configuration is shown in the following figure, which is taken from the Windows multimedia control panel (Mmsys.cpl) in Windows XP with SP2.
 
-![figure of the new 7.1-channel speaker configuration ](images/spkrcfg1new.gif)
+![figure of the new 7.1-channel speaker configuration .](images/spkrcfg1new.gif)
 
 The Windows multimedia control panel assigns the name "7.1 home theater speakers" to the new 7.1-channel wide speaker configuration shown in the preceding figure.
 
 The following figure shows the older 7.1-channel configuration, which is supported in Windows 2000 and later and in Windows Me/98.
 
-![figure of the older 7.1-channel wide configuration](images/spkrcfg1old.gif)
+![figure of the older 7.1-channel wide configuration.](images/spkrcfg1old.gif)
 
 In Windows XP with SP2, the multimedia control panel assigns the name "7.1 wide configuration speakers" to the older configuration shown in the preceding figure.
 
@@ -65,7 +65,7 @@ In Windows 2000 and later and in Windows Me/98, the 5.1-channel speaker configur
 
 The 5.1-channel surround-sound speaker configuration is shown in the following figure, which is taken from the Windows multimedia control panel in Windows XP with SP2.
 
-![figure of the 5.1-channel surround-sound speaker configuration ](images/spkrcfg2.gif)
+![figure of the 5.1-channel surround-sound speaker configuration .](images/spkrcfg2.gif)
 
 The Windows multimedia control panel assigns the name "5.1 surround sound speakers" to the 5.1-channel speaker configuration shown in the preceding figure.
 

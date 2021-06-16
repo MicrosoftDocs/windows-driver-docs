@@ -44,4 +44,4 @@ In the preceding **SetActiveTopology** call, parameter three is set to 1 and not
 
 The following figure shows the flow of operations that occur when TMM handles the situation when a monitor is added to make a two-monitor configuration.
 
-![diagram illustrating adding a monitor to make a two-monitor configuration](images/tmm-newconfig.png)
+![diagram illustrating adding a monitor to make a two-monitor configuration.](images/tmm-newconfig.png)

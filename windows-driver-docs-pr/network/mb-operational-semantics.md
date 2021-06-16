@@ -20,7 +20,7 @@ Many of the *set* and *query* OID requests that are used by the MB Service are p
 
 The following diagram represents the interaction sequence for an asynchronous *query* transaction between the MB Service and the miniport driver. The labels in bold represent OID identifiers, or transactional flow control, and the labels in regular text represent the important flags within the OID structure.
 
-![diagram illustrating the interaction sequence for an asynchronous query transaction between the mobile broadband service and the miniport driver](images/wwanasyncquerytransaction.png)
+![diagram illustrating the interaction sequence for an asynchronous query transaction between the mobile broadband service and the miniport driver.](images/wwanasyncquerytransaction.png)
 
 The three-way handshake is the same for both *query* and *set* requests.
 
@@ -38,7 +38,7 @@ Except for [OID\_WWAN\_DRIVER\_CAPS](./oid-wwan-driver-caps.md), all other MB-sp
 
 The following diagram represents the interaction sequence for an asynchronous *set* transaction between the MB Service and the miniport driver. The labels in bold represent OID identifiers, or transactional flow control, and the labels in regular text represent the important flags within the OID structure.
 
-![diagram illustrating the interaction sequence for an asynchronous set transaction between the mobile broadband service and the miniport driver](images/wwanasyncsettransaction.png)
+![diagram illustrating the interaction sequence for an asynchronous set transaction between the mobile broadband service and the miniport driver.](images/wwanasyncsettransaction.png)
 
 ### Asynchronous Response
 

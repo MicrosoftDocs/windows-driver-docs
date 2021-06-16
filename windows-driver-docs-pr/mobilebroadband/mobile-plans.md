@@ -25,7 +25,7 @@ Mobile Plans is supported in Windows 10, version 1803 and later.
 
 The typical Mobile Plans customer journey is composed of the following steps:
 
-![Mobile Plans customer journey](images/mobile_plans_customer_journey.png)
+![Mobile Plans customer journey.](images/mobile_plans_customer_journey.png)
 
 Step | Description
 ------|------------
@@ -45,13 +45,13 @@ The Mobile Plans app can be launched from a number of different entry points. Th
 
 See the [Mobile Plans account management](mobile-plans-account-management.md) topic for more details on behavior of the network flyout.
 
-![Network flyout get connected](images/network_flyout_get_connected.png)
+![Network flyout get connected.](images/network_flyout_get_connected.png)
 
 The app can also be launched from a toast notification. Selecting the “Get connected” button will launch the Mobile Plans app.
 
 See the [Mobile Plans toast notifications](mobile-plans-notifications.md) topic for more details on the behavior of toast notifications.
 
-![Toast notification promotion](images/toast_notification_promotion.png)
+![Toast notification promotion.](images/toast_notification_promotion.png)
 
 The Mobile Plans app can also be launched from the Settings app, or from the Start menu.
 
@@ -61,7 +61,7 @@ Once the app has launched, the user has the option to choose their mobile operat
 
 See the [Mobile Plans operator catalog](mobile-plans-catalog.md) topic for more information on this page.
 
-![Select provider page](images/select_provider_page.png)
+![Select provider page.](images/select_provider_page.png)
 
 ### Mobile operator gateway page
 
@@ -69,7 +69,7 @@ If the user has chosen a mobile operator, the app shows that operator’s gatewa
 
 See the [Mobile Plans gateway page](mobile-plans-gateway.md) topic for more details on the behavior and customization of the Gateway page.
 
-![Mobile operator gateway page](images/mobile_operator_gateway_page.png)
+![Mobile operator gateway page.](images/mobile_operator_gateway_page.png)
 
 ### Mobile operator web portal
 
@@ -77,7 +77,7 @@ Once the user has selected the button to continue, the app will load the mobile 
 
 See the [mobile operator web portal](mobile-plans-web-portal.md) topic for an in-depth description of the mobile operator web portal.
 
-![Mobile operator web portal](images/mobile_operator_web_portal.png)
+![Mobile operator web portal.](images/mobile_operator_web_portal.png)
 
 ### Fulfillment
 
@@ -85,4 +85,4 @@ After completing the signup flow on the web portal, the mobile operator can trig
 
 See the [Mobile Plans callback notifications](mobile-plans-callback-notifications.md) topic for more information on this step.
 
-![Mobile operator fulfillment](images/mobile_operator_activation.png)
+![Mobile operator fulfillment.](images/mobile_operator_activation.png)

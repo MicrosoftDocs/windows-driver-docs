@@ -13,7 +13,7 @@ The section describes architecture of USB Device Emulation(UDE) that emulates th
 ## UDE drivers
 
 
-![usb device emulation (ude)](images/ude-arch.png)
+![usb device emulation (ude).](images/ude-arch.png)
 
 In the preceding image,
 
@@ -28,7 +28,7 @@ In the preceding image,
 
 Here are the device stacks loaded for the UDE client driver:
 
-![usb device emulation (ude) device nodes](images/ude-dev-nodes.png)
+![usb device emulation (ude) device nodes.](images/ude-dev-nodes.png)
 
  
 

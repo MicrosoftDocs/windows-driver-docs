@@ -40,11 +40,11 @@ MBIM 1.0 specifies that MBIM_CID_PROVISIONED_CONTEXT can only call Query on cont
 
 The following diagram illustrates a sample flow for when a user swaps from one SIM to another, then back to the first one.
 
-![Modem context provisioning SIM swap example](images/Context_Provision_modem_context_1.png "Modem context provisioning SIM swap example")
+![Modem context provisioning SIM swap example.](images/Context_Provision_modem_context_1.png "Modem context provisioning SIM swap example")
 
 OEMs and IHVs that have preconfigured the modem should keep the original factory configuration in case the OS or user wants to restore the context settings in the modem to the original settings. Only the original factory contexts for the currently inserted SIM’s Provider ID should be restored. The original factory setting preconfigured contexts should never be overwritten by the OS’s configuration. The following diagram is an example flow for when a user chooses to restore factory settings:
 
-![Modem context provisioning factory reset example](images/Context_Provision_modem_context_2.png "Modem context provisioning factory reset example")
+![Modem context provisioning factory reset example.](images/Context_Provision_modem_context_2.png "Modem context provisioning factory reset example")
 
 It is expected for the modem to fail Query or Set requests when the SIM is missing, locked, or the Provider ID is inaccessible. The modem should have only one context per CONTEXT_TYPE per Provider ID. If the IHV or OEM decides to preconfigure modem contexts in the modem, it is important for it to make sure that the contexts are configured correctly for each provider for which it chooses to do so. In the case that the inserted SIM card has no IHV preconfigured contexts, the modem should not have any contexts without the OS’s configuration. IHVs and OEMs have to make sure MBIM_MS_CONTEXT_SOURCE = MbimMsContextSourceModemProvisioned so that the OS will use the modem’s context for connection, if it exists, and not overwrite it from Windows’s APN database.
 
@@ -222,7 +222,7 @@ For Set operations only:
 
 The following diagram represents the optimal user experience for GSM-based MB devices. The out-of-box experience requires no user configuration. It is assumed that the device is configured to automatically select the network to register with. The labels in bold represent OID identifiers or transactional flow control. The labels in regular text represent the important flags within the OID structure.
 
-![diagram illustrating the gsm-based mb device-initialization sequence](images/wwangsmdevinitseq.png)
+![diagram illustrating the gsm-based mb device-initialization sequence.](images/wwangsmdevinitseq.png)
 
 To initialize a non-SIM-locked GSM-based device, implement the following steps:
 
@@ -257,7 +257,7 @@ To initialize a non-SIM-locked GSM-based device, implement the following steps:
 
 The following diagram illustrates the optimal user experience for CDMA-based devices. The out-of-box experience does not require user configuration. This scenario assumes that the CDMA-based account has not been activated. Unlike GSM-based devices, a CDMA-based device automatically starts registration with the network after activation is complete. The labels in bold are OID identifiers or transactional flow control. The labels in regular text are the important flags within the OID structure.
 
-![diagram illustrating the cdma-based mobile broadband-device initialization sequence](images/wwancdmadevinitseq.png)
+![diagram illustrating the cdma-based mobile broadband-device initialization sequence.](images/wwancdmadevinitseq.png)
 
 To initialize a CDMA-based packet device with a provisioned context, implement the following steps:
 

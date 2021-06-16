@@ -58,7 +58,7 @@ Removable device capability overrides are specific to individual devices specifi
 
 The following figure shows the topology of the **DeviceOverrides** registry key and its related subkeys.
 
-![diagram illustrating the deviceoverrides registry key topology](images/containerid-3.png)
+![diagram illustrating the deviceoverrides registry key topology.](images/containerid-3.png)
 
 The **DeviceOverrides** registry key must be created for the first removable device capability override that is added to the system. It may not exist by default on a clean operating system installation.
 

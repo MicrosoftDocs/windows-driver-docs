@@ -41,7 +41,7 @@ After you have completed the above prerequisites we must now assign the appropri
 
 3. On this page, under **Roles**, select **Hardware**.
 
-    ![an image showing the Hardware tab in the Roles section](images/hardware-tab-in-roles-section.png)
+    ![an image showing the Hardware tab in the Roles section.](images/hardware-tab-in-roles-section.png)
 
     Select **Driver Submitter**, **Shipping Label owner**, and if available, **Shipping Label promoter**.  [Learn more about these roles](./managing-user-roles.md)
     

@@ -53,7 +53,7 @@ The miniport driver affixes MAC, IP, and TCP headers to each segment that is der
 
 The following figure shows the segmentation of a large packet.
 
-![diagram illustrating the segmentation of a large packet](images/segmentation.png)
+![diagram illustrating the segmentation of a large packet.](images/segmentation.png)
 
 The length of the TCP user data in the large TCP packet should be equal to or less than the value that the miniport driver assigns to the **MaxOffLoadSize** value. For more information about the **MaxOffLoadSize** value, see [Reporting a NIC's LSOv1 TCP-Packet-Segmentation Capabilities](reporting-a-nic-s-lsov1-tcp-packet-segmentation-capabilities.md) and [Reporting a NIC's LSOv2 TCP-Packet-Segmentation Capabilities](reporting-a-nic-s-lsov2-tcp-packet-segmentation-capabilities.md).
 

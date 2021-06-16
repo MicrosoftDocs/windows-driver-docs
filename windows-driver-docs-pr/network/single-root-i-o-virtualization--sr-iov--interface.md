@@ -18,7 +18,7 @@ Each PCIe VF is assigned a unique Requester ID, which allows an I/O memory manag
 
 The following figure shows the VF data path within the SR-IOV interface.
 
-![diagram illustrating the synthetic device data paths with sr-iov](images/sriovarchitecture.png)
+![diagram illustrating the synthetic device data paths with sr-iov.](images/sriovarchitecture.png)
 
 The use of the VF data path provides the following benefits:
 

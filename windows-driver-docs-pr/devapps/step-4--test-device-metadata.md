@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Step 4: Test the device metadata for your UWP device app
 
 
-![device app workflow, step 4](images/4-device-app-workflow.png)
+![device app workflow, step 4.](images/4-device-app-workflow.png)
 
 This topic describes how you can test device metadata for your UWP device app locally before you submit it to the Windows Dev Center Dashboard.
 

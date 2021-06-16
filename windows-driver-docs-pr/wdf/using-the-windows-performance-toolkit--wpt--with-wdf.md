@@ -72,7 +72,7 @@ To capture another trace for the same driver, use Wpr.exe to start and stop a ne
 
 To start analyzing the driver's performance, find the **Graph Explorer** on the left, open the **Computation** category, and then drag the UMDF or KMDF graph to the main work area, under the **Analysis** tab. This screenshot shows the **Graph Explorer** pane:
 
-![graph explorer in wpa](images/WpaUMDFIoCapture-LeftPane.png)
+![graph explorer in wpa.](images/WpaUMDFIoCapture-LeftPane.png)
 
 There is a dedicated table for UMDF and another for KMDF drivers.
 
@@ -97,7 +97,7 @@ Entry time is the trace timestamp when the framework delivered the request to th
 
 Here's a similar screenshot showing I/O request info for a KMDF driver.
 
-![graph for umdf i/o request performance](images/WpaKMDFIoCapture-Narrow.PNG)
+![graph for umdf i/o request performance.](images/WpaKMDFIoCapture-Narrow.PNG)
 
 ## PnP Power callback graph and summary table
 
@@ -106,7 +106,7 @@ WPT can also display the processing time of each PnP and power callback. The fol
 
 The WdfDevice column contains the WDFDEVICE handle associated with the callback. The ActivityID contains a unique identifier for the callback instance.
 
-![pnp power callback graph](images/wpa-fx2-pnppwr.PNG)
+![pnp power callback graph.](images/wpa-fx2-pnppwr.PNG)
 
 ## Which calls are instrumented?
 

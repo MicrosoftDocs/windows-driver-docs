@@ -32,13 +32,13 @@ Controls how many times the each test in the run gets executed (default:10).
 
 The diagram, below, shows how TAEF represents a test run comprising of a single Test File, containing a single Test Class, that contains two Test Methods:
 
-![the 'looptest' parameter](images/looptestmode-looptest.png)
+![the 'looptest' parameter.](images/looptestmode-looptest.png)
 
 The arrows on the diagram show the flow of execution under TAEF; showing how TAEF executes setup fixtures, then the tests themselves, and the appropriate cleanup fixtures are executed after the tests are complete. The 'looptest' value causes TAEF to iterate around the test methods themselves - the *smallest possible scope*. Notice that the setup and cleanup for the test **aren't** executed. The same behavior occurs for data-driven tests, too: the 'looptest' value controls the looping at the 'Test Method' level.
 
 There are times when it's not possible to loop around just the Test Method, and that's where the 'loop' parameter can be used. The diagram, below, shows how TAEF represents a test run comprising of a two test files, each file containing a single test class and each test class containing a single test method:
 
-![the 'loop' parameter](images/looptestmode-loop.png)
+![the 'loop' parameter.](images/looptestmode-loop.png)
 
 The 'loop' parameter controls looping at the *largest possible scope*; the entire run. If you specify a single test file to Te.exe, or if you have multiple test files, the entire run will be looped the specified number of times.
 

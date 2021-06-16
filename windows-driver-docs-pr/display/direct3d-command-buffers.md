@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following figure shows portions of a sample logical command buffer. The driver's [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) callback receives a pointer to a command buffer in the **lpDDCommands** member of the [**D3DHAL\_DRAWPRIMITIVES2DATA**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_drawprimitives2data) structure. The command buffer is always processed sequentially.
 
-![diagram illustrating portions of a direct3d sample logical command buffer](images/d3dcmbuf.png)
+![diagram illustrating portions of a direct3d sample logical command buffer.](images/d3dcmbuf.png)
 
 As shown in the preceding figure, a command buffer contains [**D3DHAL\_DP2COMMAND**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_dp2command) structures, where the **bCommand** member of each structure identifies a command. The following lists possible commands:
 

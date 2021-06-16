@@ -72,11 +72,11 @@ The following command displays the text and link in the Command Browser window.
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 
-![screen shot of dml file output](images/dmlcommands03.png)
+![screen shot of dml file output.](images/dmlcommands03.png)
 
 If you click the **List modules that begin with usb** link, you see output similar to the following image.
 
-![screen shot of module list](images/dmlcommands04.png)
+![screen shot of module list.](images/dmlcommands04.png)
 
 ## <span id="Right-Click_Behavior_in_DML"></span><span id="right-click_behavior_in_dml"></span><span id="RIGHT-CLICK_BEHAVIOR_IN_DML"></span>Right-Click Behavior in DML
 

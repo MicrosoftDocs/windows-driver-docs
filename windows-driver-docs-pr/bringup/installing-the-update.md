@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Firmware update packages can be installed using any tool that installs Windows drivers. The installation process copies the firmware update payload (firmware.bin) to a well-known system directory and creates the registry keys necessary to tell Windows a new update is available. After the installation is finished, a reboot is required in order to trigger the actual firmware update process.
 
-![Firmware update package installation process](images/updateinstallprocess.png)
+![Firmware update package installation process.](images/updateinstallprocess.png)
 
 During the next boot, and before ExitBootServices() has been called, the OS Loader checks the well-known registry key locations to determine if new firmware update payload is available. If new update payload is available, the OS Loader verifies the hash of firmware.bin against the security catalog delivered with the driver package. If the signature is valid, the firmware.bin will be handed off to the platform firmware via the UEFI UpdateCapsule() service.
 

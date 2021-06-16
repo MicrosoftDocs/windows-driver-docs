@@ -31,7 +31,7 @@ For each queue, a network adapter must support the following set of operational 
 
 The following figure shows the relationships between these states.
 
-![diagram illustrating ndis vm queue states and events](images/queuestate.png)
+![diagram illustrating ndis vm queue states and events.](images/queuestate.png)
 
 The following defines the adapter states:
 

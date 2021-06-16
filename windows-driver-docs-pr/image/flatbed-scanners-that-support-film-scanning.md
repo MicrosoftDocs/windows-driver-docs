@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates a possible WIA item tree of a flatbed scanner that supports film scanning by using the flatbed platen as the film scanning surface. The figure also illustrates the physical device and documents.
 
-![diagram illustrating the item tree of a flatbed film scanner with platen-only scanning](images/art-flatbed-film.png)
+![diagram illustrating the item tree of a flatbed film scanner with platen-only scanning.](images/art-flatbed-film.png)
 
 In the preceding figure, the tree on the left represents the scanner item tree. The curved lines that are drawn to the elements on the right symbolize the physical device and documents that are represented by this item tree.
 

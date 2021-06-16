@@ -16,13 +16,13 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 The following diagram illustrates a query request.
 
-![slot mapping query](images/multi-SIM_8_slotMappingQuery.png)
+![slot mapping query.](images/multi-SIM_8_slotMappingQuery.png)
 
 Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [**NDIS\_STATUS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO**](./ndis-status-wwan-device-slot-mappings.md) status notification containing an [**NDIS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_slot_mapping_info) structure, which in turn contains a [**WWAN\_DEVICE\_SLOT\_MAPPING\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_slot_mapping_info) structure to indicate the current mapping status. This holds true even if the set request failed. The structure for set requests for OID\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO is [**NDIS\_WWAN\_SET\_DEVICE\_SLOT\_MAPPING\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_device_slot_mapping_info).
 
 The following diagram illustrates a set request.
 
-![slot mapping set](images/multi-SIM_7_slotMappingSet.png)
+![slot mapping set.](images/multi-SIM_7_slotMappingSet.png)
 
 ## Remarks
 

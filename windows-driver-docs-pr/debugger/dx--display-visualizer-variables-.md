@@ -192,7 +192,7 @@ Use the -g option to display output as a data grid. Select column to sort.
 kd> dx -g @$curprocess.Modules
 ```
 
-![output from dx -g @$curprocess.modules showing columnar grid output](images/dx-grid-example.png)
+![output from dx -g @$curprocess.modules showing columnar grid output.](images/dx-grid-example.png)
 
 Use the -h option to display information about objects.
 ```dbgcmd

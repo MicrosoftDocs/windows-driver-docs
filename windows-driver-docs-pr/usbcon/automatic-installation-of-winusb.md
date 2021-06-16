@@ -168,7 +168,7 @@ During enumeration, the USB driver stack reads the extended properties feature d
 
 This image shows sample settings for a WinUSB device.
 
-![registry settings for winusb device](images/winusb-device-reg.png)
+![registry settings for winusb device.](images/winusb-device-reg.png)
 
 For additional examples, see the specifications on [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 

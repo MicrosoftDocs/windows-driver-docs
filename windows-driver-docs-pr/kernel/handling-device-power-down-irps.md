@@ -16,7 +16,7 @@ A device power-down IRP specifies the minor function code [**IRP\_MN\_SET\_POWER
 
 The following figure shows the steps involved in handling such an IRP.
 
-![diagram illustrating handling a device power-down request](images/devd3.png)
+![diagram illustrating handling a device power-down request.](images/devd3.png)
 
 If the IRP specifies **PowerDeviceD3**, the function driver should typically perform the following tasks:
 

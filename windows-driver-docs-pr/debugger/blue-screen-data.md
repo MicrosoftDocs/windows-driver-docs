@@ -34,7 +34,7 @@ The exact appearance of the blue screen depends on the cause of the error.
 
 The following is an example of one possible blue screen:
 
-![bug check example windows 10 blue screen with qr code](images/bug-check-example-blue-screen-page-fault.png)
+![bug check example windows 10 blue screen with qr code.](images/bug-check-example-blue-screen-page-fault.png)
 
 The stop code is displayed such as [**PAGE\_FAULT\_IN\_NONPAGED\_AREA**](bug-check-0x50--page-fault-in-nonpaged-area.md). When it is available, the module name of the code that was being executed is also displayed, such as AcmeVideo.sys.
 

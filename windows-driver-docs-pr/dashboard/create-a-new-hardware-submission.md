@@ -23,7 +23,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 2. In the **Packages and signing properties** section, choose a name for your driver submission. This name can be used to search for and organize your driver submissions. Note: If you share your driver with another company, they will see this name.
 
 3. Either drag and drop, or browse to the **.hlkx/.hckx** file that you want to submit. The file will begin to upload.
-   ![screenshot that shows the driver name field](images/drivers-name.png)
+   ![screenshot that shows the driver name field.](images/drivers-name.png)
 
 4. It is at this point that the submission portal determines what Product Type is being submitted. Then, at the Submission page, the portal presents any questionnaire that may be required for a product being submitted for Windows Server certification. For all products submitted for Windows Server certification or signing where the submission portal presents a questionnaire, you must complete the questionnaire. The submission will not complete unless the questionaire is completed.
 
@@ -31,7 +31,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 7. Select Request Signatures as applicable. This option allows you to specify which operating system signatures (including allowable downlevel operating systems) should be included with your driver. Available certifications vary depending on your driver submission package, so there may not be any certifications listed. **Note** If you are signing a driver package for a single architecture, only include logs for the intended architecture. For example, to sign for x64 only, submit only the x64 logs.
 
-   ![screenshot that shows possible certifications for a driver submission, and the finalize button](images/additionalcertifications.png)
+   ![screenshot that shows possible certifications for a driver submission, and the finalize button.](images/additionalcertifications.png)
 
 8. In the **Certification** section, complete the following information:
 
@@ -76,7 +76,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
    </tbody>
    </table>
 
-   ![screenshot that shows the certification section](images/drivers-certification.png)
+   ![screenshot that shows the certification section.](images/drivers-certification.png)
 
 9. Select **Submit**.
 
@@ -84,7 +84,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 11. You can monitor the progress of your submission with the progress tracker at the top of the page. Once all steps show a green check, the submission is complete and your organization will receive a notification in the dashboard header.
 
-    ![screenshot that shows the progress tracker](images/drivers-allgreen-new.png)
+    ![screenshot that shows the progress tracker.](images/drivers-allgreen-new.png)
 
 12. Review the results. If your submission failed, make any necessary changes and resubmit.
 

@@ -19,7 +19,7 @@ After the Windows Sockets switch receives a **WSPConnect** call that was initiat
 
 The following figure shows an overview of how the Windows Sockets switch requests a connection with a remote peer. The sequence and sections that follow describe the connection request in more detail.
 
-![diagram overview of how the windows sockets switch requests a connection with a remote peer](images/apiflow3.png)
+![diagram overview of how the windows sockets switch requests a connection with a remote peer.](images/apiflow3.png)
 
 After creating and binding the SAN socket, the switch executes a connect request, using the SAN socket in *nonblocking mode*, as described in the following procedure.
 

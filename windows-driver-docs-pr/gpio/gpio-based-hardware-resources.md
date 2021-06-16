@@ -18,7 +18,7 @@ For GPIO pins that are configured as interrupt request inputs, the fact that an 
 
 The following diagram shows an example assignment of GPIO-based resources to two peripheral device drivers:
 
-![example assignment of gpio-based resources](images/gpioresources.png)
+![example assignment of gpio-based resources.](images/gpioresources.png)
 
 In the preceding diagram, the following three GPIO-based resources are assigned peripheral device driver A:
 

@@ -40,7 +40,7 @@ Vendors can create additional network print providers. For more information, see
 
 The following diagram illustrates possible flow paths involving these print providers.
 
-![print provider flow paths ](images/flowpths.png)
+![print provider flow paths .](images/flowpths.png)
 
 When viewing the diagram, you should consider the following points:
 

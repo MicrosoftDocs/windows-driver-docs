@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Open Source File** on the **File** menu to load a specific source file.
 
-This command is equivalent to pressing CTRL+O or clicking the **Open source file (Ctrl+O)** button (![screen shot of the open source file button](images/tbopen.png)).
+This command is equivalent to pressing CTRL+O or clicking the **Open source file (Ctrl+O)** button (![screen shot of the open source file button.](images/tbopen.png)).
 
 ### <span id="dialog_box"></span><span id="DIALOG_BOX"></span>Dialog Box
 

@@ -20,7 +20,7 @@ Fog can also be range-based. With normal z, or depth-based, fog an object can ap
 
 However, if fog is based on range instead of depth, it does not vary as the viewer rotates in place, as illustrated in the following figure.
 
-![diagram illustrating range-based fog](images/d3dfig26.png)
+![diagram illustrating range-based fog.](images/d3dfig26.png)
 
 Objects that are visible remain visible, regardless of the rotation. This is compelling for flight simulators, tank games, and other applications where it is undesirable to have objects disappearing and reappearing in the distance as the viewer rotates.
 

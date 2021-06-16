@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 WIA consists of several layers that intercede between the user and the hardware. The user interacts with the WIA application, which can have optional user interfaces. This application communicates with the WIA service, which sends the user's requests to the minidriver. The minidriver communicates with the relevant kernel-mode bus driver. Finally, the bus driver communicates with the hardware. The following diagram illustrates the software components that make up the WIA interface.
 
-![diagram illustrating the software components that make up the wia interface](images/art-1.png)
+![diagram illustrating the software components that make up the wia interface.](images/art-1.png)
 
 ### Imaging Applications
 

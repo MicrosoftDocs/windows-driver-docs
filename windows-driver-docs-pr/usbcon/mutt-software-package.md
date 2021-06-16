@@ -29,7 +29,7 @@ File name: mutt2_95.msi
 
 9.4 MB
 
-[![download the mutt software package](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621)
+[![download the mutt software package.](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621)
 
 ## Version Updates
 

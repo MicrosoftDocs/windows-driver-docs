@@ -46,7 +46,7 @@ When [**NdisMIdleNotificationComplete**](/windows-hardware/drivers/ddi/ndis/nf-n
 
 The following figure shows the steps that are involved when the miniport driver completes an idle notification for a USB network adapter.
 
-![diagram showing the idle notification resume process](images/ndis-ss-idle-notification-complete.png)
+![diagram showing the idle notification resume process.](images/ndis-ss-idle-notification-complete.png)
 
 **Note**  When the miniport driver completes an idle notification, it must not call [**NdisMIdleNotificationConfirm**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismidlenotificationconfirm) for an idle notification that was previously completed through a call to [**NdisMIdleNotificationComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismidlenotificationcomplete).
 

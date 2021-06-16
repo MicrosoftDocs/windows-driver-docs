@@ -23,7 +23,7 @@ To make the Sharks Cove's ACPI driver aware of the new device (the accelerometer
 
 Before you start performing the tasks outlined below, please make sure that your Sharks Cove is set up as shown in the following image:
 
-![recommended setup for sharks cove board](images/sharkscove-setup.png)
+![recommended setup for sharks cove board.](images/sharkscove-setup.png)
 
 ## Retrieve and review the default SSDT
 
@@ -204,7 +204,7 @@ You must connect your sensor to the Sharks Cove before you install the sensor dr
 
 5. Browse to the ADXL345 driver on the flash drive, then select **Next**. Follow the screen prompts to install the sensor driver.
 
-6. After the sample sensor driver is successfully installed, **Device Manager** displays the sensor as shown in the following screen shot.<br/>![device manager screen shot, showing device nodes for successfully installed adxl345 accelerometer](images/dev-mgr-sensors.png)
+6. After the sample sensor driver is successfully installed, **Device Manager** displays the sensor as shown in the following screen shot.<br/>![device manager screen shot, showing device nodes for successfully installed adxl345 accelerometer.](images/dev-mgr-sensors.png)
 
 For information about how to use Visual Studio to deploy a driver to a client computer (like the Sharks Cove), see [Deploying a Driver to a Test Computer](../develop/deploying-a-driver-to-a-test-computer.md).
 

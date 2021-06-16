@@ -82,7 +82,7 @@ The following code example shows how to handle a [basic-support query for an aud
 
 The following figure shows the layout of the data buffer for this example. The pDescription, pMembers, and pRange pointers are shown pointing to their respective offsets within the buffer.
 
-![diagram illustrating the layout of a data buffer for a basic-support query](images/propdesc.png)
+![diagram illustrating the layout of a data buffer for a basic-support query.](images/propdesc.png)
 
 For this example, the handler sets **MembersCount** to **ulNumChannels**, the number of channels. The size in bytes of the range array is
 
@@ -135,11 +135,11 @@ The topology parser (in the kernel-mode [WDMAud system driver](user-mode-wdm-aud
 
 In Windows XP and later, the SndVol32 volume-control program (see [SysTray and SndVol32](systray-and-sndvol32.md)) displays controls for multichannel devices, as shown in the following figure.
 
-![screen shot of the sndvol32 volume-control dialog box ](images/volctrl.png)
+![screen shot of the sndvol32 volume-control dialog box .](images/volctrl.png)
 
 If SndVol32 detects a line that has more than two channels, it replaces the normal pan control with a button labeled **Speaker Volume**, which appears above the main volume slider in the preceding figure. Clicking on the **Speaker Volume** button will bring up a dialog displaying controls for all of the channels for a particular line, as shown in the following figure.
 
-![screen shot of the speaker-volume dialog box with advanced audio properties](images/spkrvol.png)
+![screen shot of the speaker-volume dialog box with advanced audio properties.](images/spkrvol.png)
 
 Because the **mixer** API exposes channels by number, it infers the channel names from the speaker configuration that is currently selected in the **Advanced Audio Properties** dialog in the Windows multimedia control panel (Mmsys.cpl).
 

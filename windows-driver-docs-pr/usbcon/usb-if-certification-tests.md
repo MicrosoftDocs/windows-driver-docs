@@ -46,7 +46,7 @@ System manufacturers should be aware of those requirements when they select USB 
 
 This image shows the process flow for how to obtain Windows Certification.
 
-![usb-if testing](images/usbif-testing.png)
+![usb-if testing.](images/usbif-testing.png)
 
 You can submit USB devices for Windows Certification qualification to meet the new USB-IF testing requirement by using one of the following methods:
 

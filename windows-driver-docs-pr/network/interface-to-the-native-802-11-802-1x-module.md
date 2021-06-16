@@ -68,7 +68,7 @@ When interfacing the 802.1X module for user authentication, the IHV Extensions D
 
 The following figure shows the sequence of events when the IHV Extensions DLL initiates an 802.1X authentication operation during a post-association operation.
 
-![diagram illustrating the series of events when the ihv extensions dll initiates an 802.1x authentication operation during a post-association operation](images/ihv-ext-802.1x.png)
+![diagram illustrating the series of events when the ihv extensions dll initiates an 802.1x authentication operation during a post-association operation.](images/ihv-ext-802.1x.png)
 
  
 

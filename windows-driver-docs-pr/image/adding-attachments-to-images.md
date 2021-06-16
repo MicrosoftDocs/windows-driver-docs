@@ -19,7 +19,7 @@ When an item is marked with **WiaItemTypeHasAttachments**, this means that the i
 
 An item cannot be both of type **WiaItemTypeHasAttachments** and type **WiaItemTypeFolder**. However, an item can be of type **WiaItemTypeHasAttachments** and type **WiaItemTypeFile**. This is because an item of type **WiaItemTypeHasAttachments** is conceptually treated as a single entity. The following diagram illustrates the WIA Camera item tree with attachments.
 
-![diagram illustrating a wia camera item tree with attachments](images/camera-tree-attachments.png)
+![diagram illustrating a wia camera item tree with attachments.](images/camera-tree-attachments.png)
 
  
 

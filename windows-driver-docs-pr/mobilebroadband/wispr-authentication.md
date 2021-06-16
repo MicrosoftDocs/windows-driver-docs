@@ -32,7 +32,7 @@ A smart client, such as Windows, interprets this XML (which is contained in an H
 
 When a customer manually connects to a WISPr-capable network, they see the following prompt:
 
-![wispr prompt](images/fig1-mb-wispr-auth-prompt.jpg)
+![wispr prompt.](images/fig1-mb-wispr-auth-prompt.jpg)
 
 Customers who select **No, I need to sign up** are directed to your captive portal. Customers who select **Yes, I’ll enter my user name and password** are prompted to enter their credentials. These credentials are provided to your website, and the user is connected after successfully authentication.
 

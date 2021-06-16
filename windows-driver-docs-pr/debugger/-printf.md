@@ -189,11 +189,11 @@ The following example shows how to include a DML tag in the format string.
 .printf /D "Click <link cmd=\".chain /D\">here</link> to see extensions DLLs."
 ```
 
-![screen shot of dml link in command browser window](images/printf01.png)
+![screen shot of dml link in command browser window.](images/printf01.png)
 
 The output shown in the preceding image has a link that you can click to execute the command specified in the `<link>` tag. The following image shows the result of clicking the link.
 
-![screen shot of dml output in command browser window](images/printf02.png)
+![screen shot of dml output in command browser window.](images/printf02.png)
 
 For information about DML tags, see dml.doc in the installation folder for Debugging Tools for Windows.
 

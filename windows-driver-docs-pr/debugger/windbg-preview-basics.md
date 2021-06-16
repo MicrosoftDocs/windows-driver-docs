@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # WinDbg Preview Basics
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png) 
+![Small logo on windbg preview.](images/windbgx-preview-logo.png) 
 
 | Title               | Description        |
 | ------------------- | -------------------|

@@ -19,7 +19,7 @@ All Source windows can be grouped automatically into a tabbed collection by sele
 
 A set of tabs always controls the window immediately above the tabs. In the following illustration, the [Debugger Command window](debugger-command-window.md) is selected and is visible above the tabs.
 
-![screen shot of docked and tabbed windows](images/windock.png)
+![screen shot of docked and tabbed windows.](images/windock.png)
 
  
 

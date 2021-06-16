@@ -63,7 +63,7 @@ Setup installs the platform-specific versions of KsStudio.exe in the x86, and am
 
 ## KsStudio menu layout and structure
 
-![Scren shot of KSStream Utility showing menu panes 1, 2,3 and six on the first row then 4 and lastly 5 on the bottom of the screen](images/ksstudio-user-interface.png)
+![Scren shot of KSStream Utility showing menu panes 1, 2,3 and six on the first row then 4 and lastly 5 on the bottom of the screen.](images/ksstudio-user-interface.png)
 
 #### 1) Filter Factory View
 

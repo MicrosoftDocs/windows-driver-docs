@@ -18,7 +18,7 @@ The *toolbar* appears underneath the menu bar, near the top of the WinDbg window
 
 The following screen shot shows the WinDbg toolbar.
 
-![screen shot of the windbg toolbar](images/toolbar4.png)
+![screen shot of the windbg toolbar.](images/toolbar4.png)
 
 The toolbar buttons have various effects. Most of them are equivalent to menu commands. To execute the command that is associated with a toolbar button, click the toolbar button. When you cannot use a button, it appears unavailable.
 
@@ -28,7 +28,7 @@ For more information about each button, see [Toolbar Buttons](toolbar-buttons.md
 
 The following screen shot shows the WinDbg status bar.
 
-![screen shot of the windbg status bar](images/statusbar3.png)
+![screen shot of the windbg status bar.](images/statusbar3.png)
 
 The following table describes the sections of the WinDbg status bar.
 

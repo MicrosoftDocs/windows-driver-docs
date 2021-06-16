@@ -18,7 +18,7 @@ All code that runs in kernel mode shares a single virtual address space. This me
 
 This diagram illustrates communication between user-mode and kernel-mode components.
 
-![block diagram of user-mode and kernel-mode components](images/userandkernelmode01.png)
+![block diagram of user-mode and kernel-mode components.](images/userandkernelmode01.png)
 
 ## <span id="related_topics"></span>Related topics
 

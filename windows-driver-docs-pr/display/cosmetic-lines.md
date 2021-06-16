@@ -84,7 +84,7 @@ Start and end pixels of a cosmetic line are also determined by the diamond conve
 
 The following graph illustrates the diamond convention for a cosmetic line.
 
-![diagram illustrating diamond convention for a cosmetic line](images/102-01b.png)
+![diagram illustrating diamond convention for a cosmetic line.](images/102-01b.png)
 
 For rendering cosmetic lines, the [**DrvStrokePath**](/windows/win32/api/winddi/nf-winddi-drvstrokepath) function follows the GIQ diamond convention. The [**DrvLineTo**](/windows/win32/api/winddi/nf-winddi-drvlineto) function is an optional entry point that a driver can supply as an optimization for application calls to the Microsoft Win32 **LineTo** function. **DrvLineTo** is simpler than **DrvStrokePath** because it supports only integer end-points and solid cosmetic lines.
 

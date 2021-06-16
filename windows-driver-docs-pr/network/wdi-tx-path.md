@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the TX path components.
 
-![wdi tx path](images/wdi-tx-path-block-diagram.png)
+![wdi tx path.](images/wdi-tx-path-block-diagram.png)
 
 ## TX descriptors
 

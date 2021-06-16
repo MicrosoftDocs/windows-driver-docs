@@ -204,7 +204,7 @@ Starting in Windows 10 version 1803, apps can declare custom capabilities from o
 
 The following diagram summarizes the sequence described above:
 
-![Getting an SCCD signed](images/signsccd.png)
+![Getting an SCCD signed.](images/signsccd.png)
 
 ## See Also
 

@@ -24,7 +24,7 @@ If the request for read results in retrieval of large number of SMS records that
 
 The following diagram represents the usage of the multiple indication method for large number of SMS record retrieval:
 
-![diagram illustrating the usage of the multiple indication method for a large number of sms record retrieval](images/wwansmsrecordretrieval.png)
+![diagram illustrating the usage of the multiple indication method for a large number of sms record retrieval.](images/wwansmsrecordretrieval.png)
 
 ## Requirements
 

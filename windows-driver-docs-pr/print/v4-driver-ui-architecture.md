@@ -15,7 +15,7 @@ Printer extension apps support print preferences and printer notifications when 
 
 The following diagram shows a high level architecture of the Microsoft Store device apps for the [v4 Print driver and printer extension samples](https://github.com/Microsoft/Windows-driver-samples/tree/master/print/v4PrintDriverSamples) that are provided on GitHub.
 
-![overview of custom ui architecture](images/v4custuiarch.png)
+![overview of custom ui architecture.](images/v4custuiarch.png)
 
 As shown in the preceding diagram, the model/view/controller-based architecture enables the apps to share code at the model layer, written in C#.
 

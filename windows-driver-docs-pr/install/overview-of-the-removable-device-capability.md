@@ -20,7 +20,7 @@ As a general rule, the topmost (parent) devnode of the device should be set as r
 
 The following Device Manager screen shot shows the devnode topology for a generic USB mouse, and shows which devnodes of the mouse are marked as removable.
 
-![screen shot of device manager window showing devnode topology for a usb mouse](images/containerid-2.png)
+![screen shot of device manager window showing devnode topology for a usb mouse.](images/containerid-2.png)
 
  
 

@@ -7,11 +7,11 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - Home Menu
 
-![Small logo of windbg preview with bit pattern](images/windbgx-preview-logo.png)
+![Small logo of windbg preview with bit pattern.](images/windbgx-preview-logo.png)
 
 This topic describes how to work with the home menu.
 
-![View menu in debugger](images/windbgx-home-menu.png)
+![View menu in debugger.](images/windbgx-home-menu.png)
 
 ## Flow Control
 

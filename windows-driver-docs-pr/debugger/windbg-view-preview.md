@@ -7,11 +7,11 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - View Menu
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 This section describes how work with the view menu in WinDbg Preview.
 
-![View menu in debugger](images/windbgx-view-menu.png)
+![View menu in debugger.](images/windbgx-view-menu.png)
 
 The view menu will open a new Window for each item, or bring focus to the existing Window, if one is already open.
 
@@ -29,7 +29,7 @@ The locals and watch windows are both based off of the data model that is used b
 
 The locals window displays information about all of the local variables in the current scope. The locals window will highlight values that have changed during the previous code execution.
 
-![Locals window in debugger](images/windbgx-locals-window.png)
+![Locals window in debugger.](images/windbgx-locals-window.png)
 
 ## Registers
 
@@ -57,7 +57,7 @@ The threads window highlights the current thread.
 
 Use the breakpoints window to view, enable and clear breakpoints.
 
-![ Disassembly window in debugger](images/windbgx-breakpoints-window.png)
+![ Disassembly window in debugger.](images/windbgx-breakpoints-window.png)
 
 ## Logs
 
@@ -82,7 +82,7 @@ Use modules to display loaded modules and their related information. Modules dis
 - The base address that the module is loaded at
 - The file version
 
-![Modules view window showing five modules listed](images/windbgx-view-modules.png)
+![Modules view window showing five modules listed.](images/windbgx-view-modules.png)
 
 ## Layouts
 

@@ -62,7 +62,7 @@ The System Summary page will open by default.
 
 Look for the following information:
 
-![Systems Summary page](images/system-summary-page.png)
+![Systems Summary page.](images/system-summary-page.png)
 
 To run as an administrator, use the following steps:
 

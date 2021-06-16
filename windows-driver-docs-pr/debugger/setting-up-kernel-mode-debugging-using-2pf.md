@@ -327,7 +327,7 @@ You can verify that the KDNET PF was added successfully by checking the new NIC 
 
 This diagram shows three different adapters, with Adapter #2 reserved for use by the kernel debugger.
 
-![device manager showing the network node with a node for Windows KDNET 2PF supported network adapter](images/kdnet-2pf-device-manager-host-adapter.png)
+![device manager showing the network node with a node for Windows KDNET 2PF supported network adapter.](images/kdnet-2pf-device-manager-host-adapter.png)
 
 ### Common error messages - adding a new PF
 

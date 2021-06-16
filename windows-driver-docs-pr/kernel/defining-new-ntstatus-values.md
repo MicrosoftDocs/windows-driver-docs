@@ -16,7 +16,7 @@ Drivers can define custom IO\_ERR\_*XXX* constants to use as **ErrorCode** value
 
 The following diagram shows the bit fields in a 32-bit NTSTATUS value.
 
-![diagram illustrating the bit fields in an ntstatus value](images/16ntstat.png)
+![diagram illustrating the bit fields in an ntstatus value.](images/16ntstat.png)
 
 The **Sev** field shown in the preceding diagram indicates the severity code, which must be one of the following system-defined values:
 

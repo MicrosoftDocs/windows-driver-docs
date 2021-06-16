@@ -33,7 +33,7 @@ In this example, the reference video stream and single substream are characteriz
 
 In this example, the bottom-left corner of the video stream is displayed in the top-left corner of the destination surface, and the bottom-right corner of the substream is displayed in the top-right corner of the destination surface. The following diagram shows the output of the combination deinterlacing and substream compositing operation (the hashed regions indicate the subrectangles that are processed).
 
-![diagram illustrating processing subrectangles without intersection](images/trgrect5.png)
+![diagram illustrating processing subrectangles without intersection.](images/trgrect5.png)
 
 The second example shows a case in which the video stream and substream rectangles intersect.
 
@@ -48,7 +48,7 @@ In the second example, the source surface coordinates are the same as in the fir
 
 In this example, the lower-right corner of the video stream is displayed in the top-left corner of the destination surface, shifted on the X and Y axis by +100. The top-left corner of the substream is displayed in the lower-right corner of the destination surface, shifted on the X and Y axis by -100. The following diagram shows the output of the combination deinterlacing and substream compositing operation.
 
-![diagram illustrating processing subrectangles with intersection](images/trgrect6.png)
+![diagram illustrating processing subrectangles with intersection.](images/trgrect6.png)
 
  
 

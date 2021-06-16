@@ -13,13 +13,13 @@ A Command Browser window displays and stores the text results of a debugger comm
 
 ### <span id="opening_the_command_browser_window"></span><span id="OPENING_THE_COMMAND_BROWSER_WINDOW"></span>Opening the Command Browser Window
 
-You can open multiple Command Browser windows at one time. To open a Command Browser window, choose **Command Browser** from the **View** menu. (You can also press CTRL+N or click the **Command Browser** button (![screen shot of the command browser button](images/window-command-browser-icon.png)) on the toolbar. ALT+SHIFT+N closes the Command Browser window.)
+You can open multiple Command Browser windows at one time. To open a Command Browser window, choose **Command Browser** from the **View** menu. (You can also press CTRL+N or click the **Command Browser** button (![screen shot of the command browser button.](images/window-command-browser-icon.png)) on the toolbar. ALT+SHIFT+N closes the Command Browser window.)
 
 You can also open a Command Browser window by entering [**.browse (Display Command in Browser)**](-browse--display-command-in-browser-.md) in the regular Debugger Command window.
 
 The following screen shot shows an example of a Command Browser window.
 
-![screen shot of the command browser window](images/window-commandbrowser.png)
+![screen shot of the command browser window.](images/window-commandbrowser.png)
 
 ### <span id="using_the_command_browser_window"></span><span id="USING_THE_COMMAND_BROWSER_WINDOW"></span>Using the Command Browser Window
 
@@ -29,7 +29,7 @@ In the Command Browser window, you can do the following:
 
 -   To view the results of a previously entered command, use the **Start**, **Prev**, and **Next** buttons to scroll through the command list, or select one of the preceding 20 commands from the **Command** menu. To find a command that is not one of the preceding 20 commands, use the **Next** button.
 
-The Command Browser window has a shortcut menu with additional commands. To access the menu, right-click the title bar or click the icon near the upper-right corner of the window (![screen shot of the button that displays the command browser window toolbar shortcut menu](images/window-command-browser-icon.png)). The following list describes some of the menu commands:
+The Command Browser window has a shortcut menu with additional commands. To access the menu, right-click the title bar or click the icon near the upper-right corner of the window (![screen shot of the button that displays the command browser window toolbar shortcut menu.](images/window-command-browser-icon.png)). The following list describes some of the menu commands:
 
 -   **Start**, **Prev**, and **Next** move the cursor to the start of the command history or to the previous or next command, respectively.
 

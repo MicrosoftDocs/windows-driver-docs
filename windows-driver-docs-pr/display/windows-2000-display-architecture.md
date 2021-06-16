@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The following figure shows the components required to display on Windows 2000 and later.
 
-![diagram illustrating the windows 2000 and later display subsystem](images/dpy1.png)
+![diagram illustrating the windows 2000 and later display subsystem.](images/dpy1.png)
 
 The shaded elements in the preceding figure represent services that are supplied with Windows 2000 and later. The unshaded elements indicate that a third-party display driver and video miniport driver are required in order for a graphics adapter to display in the Windows 2000 and later systems.
 

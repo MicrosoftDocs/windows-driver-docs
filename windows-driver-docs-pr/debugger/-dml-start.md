@@ -33,7 +33,7 @@ The name of a DML file to be displayed as the starting output.
 
 If *filename* is omitted, the debugger displays a default DML starting output as illustrated in the following image.
 
-![screen shot of .dml\-start output](images/dmlstart01.png)
+![screen shot of .dml\-start output.](images/dmlstart01.png)
 
 Each line of output in the preceding example is a link that you can click to invoke other commands.
 
@@ -59,7 +59,7 @@ Explore device stacks, device objects, and driver objects.
 
 The command **.dml\_start c:\\MyFavoriteCommands.txt** will display the file as shown in the following image.
 
-![screen shot of dml file output](images/dmlstart02.png)
+![screen shot of dml file output.](images/dmlstart02.png)
 
 ## Remarks
 

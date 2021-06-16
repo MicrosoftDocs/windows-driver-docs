@@ -31,7 +31,7 @@ Developers provide TAPI-aware applications and WAN miniport drivers. CoNDIS WAN 
 
 The following figure shows the RAS architecture.
 
-![diagram illustrating the ras architecture](images/condsras.png)
+![diagram illustrating the ras architecture.](images/condsras.png)
 
 The following sections briefly describe the components in the RAS architecture.
 

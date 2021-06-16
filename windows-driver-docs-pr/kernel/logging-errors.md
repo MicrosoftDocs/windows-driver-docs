@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Drivers, like most Microsoft Windows system components, can log errors to the system event log. The errors are visible in the Event Viewer.
 
-![screen shot of the event viewer main window](images/event-viewer.png)
+![screen shot of the event viewer main window.](images/event-viewer.png)
 
 This section includes the following topics:
 

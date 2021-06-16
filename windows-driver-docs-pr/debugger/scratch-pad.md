@@ -16,11 +16,11 @@ The Scratch Pad window is a clipboard on which you can type and save text.
 
 ### <span id="opening_the_scratch_pad_window"></span><span id="OPENING_THE_SCRATCH_PAD_WINDOW"></span>Opening the Scratch Pad Window
 
-To open or switch to the Scratch Pad window, in the WinDbg window, on the **View** menu, click **Scratch Pad**. (You can also press ALT+8 or click the **Scratch Pad (Alt+8)** button (![screen shot of the scratch pad button](images/tbspad.png)) on the toolbar.)
+To open or switch to the Scratch Pad window, in the WinDbg window, on the **View** menu, click **Scratch Pad**. (You can also press ALT+8 or click the **Scratch Pad (Alt+8)** button (![screen shot of the scratch pad button.](images/tbspad.png)) on the toolbar.)
 
 The following screen shot shows an example of a Scratch Pad window.
 
-![screen shot of the scratch pad window](images/window-scratchpad.png)
+![screen shot of the scratch pad window.](images/window-scratchpad.png)
 
 ### <span id="using_the_scratch_pad_window"></span><span id="USING_THE_SCRATCH_PAD_WINDOW"></span>Using the Scratch Pad Window
 
@@ -30,7 +30,7 @@ In the Scratch Pad window, you can do the following:
 
 -   If you close the Scratch Pad window, your text is preserved and is available when you reopen the window. You can also save text from the Scratch Pad window by associating it with a file.
 
-The Scratch Pad window has a shortcut menu with additional commands. To access the menu, right-click the title bar or click the icon near the upper-right corner of the window (![screen shot of the button that displays the scratch pad window toolbar shortcut menu](images/tbspad.png)). This menu contains the following commands:
+The Scratch Pad window has a shortcut menu with additional commands. To access the menu, right-click the title bar or click the icon near the upper-right corner of the window (![screen shot of the button that displays the scratch pad window toolbar shortcut menu.](images/tbspad.png)). This menu contains the following commands:
 
 -   (Menu only) **Associate with file** opens a dialog box through which you can select a text file. After the file is selected, the current text in the Scratch Pad is cleared and replaced with the text in the selected file. While Scratch Pad is associated with this file, all new text typed into Scratch Pad is saved to the file. Association with the file can be ended either by selecting the **End file association** short-cut menu option or by closing and reopening Scratch Pad.
 

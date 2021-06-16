@@ -31,7 +31,7 @@ The callback method should be used when performing an eSIM profile download in t
 
 The following diagram shows the call flow for an inline profile download callback:
 
-![Mobile Plans inline profile download sequence diagram](images/mobile_plans_inline_profile_flow.png)
+![Mobile Plans inline profile download sequence diagram.](images/mobile_plans_inline_profile_flow.png)
 
 This is a revised version of the legacy [Inline profile delivery](mobile-plans-legacy-callback-notifications.md#inline-profile-delivery) callback, which can be found in the Appendix for documentation purposes. It is recommended that mobile operators use the revised callback method above.
 
@@ -166,7 +166,7 @@ function onActivationComplete(activationArgs) {
 
 The following diagram shows the call flow for how the Mobile Plans app supports the delayed download and activation of an eSIM profile. This should be used when the eSIM profile is not available to be released by the SM-DP+ server, and can only be downloaded after a period of time. It is expected that the device will be able to register on the cellular network once the profile is downloaded and activated.
 
-![Mobile Plans deferred profile download sequence diagram](images/mobile_plans_delay_profile_flow.png)
+![Mobile Plans deferred profile download sequence diagram.](images/mobile_plans_delay_profile_flow.png)
 
 ### MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData, activationCode, downloadDelay)
 
@@ -208,7 +208,7 @@ This applies for the deferred eSIM profile download scenario, but it could be us
 
 The following diagram shows the high level flow for how the Mobile Plans program supports a cancellation of an eSIM profile download without control leaving the MODirect portal.
 
-![Mobile Plans cancel eSIM profile download sequence diagram](images/mobile_plans_cancel_profile_download_flow.png)
+![Mobile Plans cancel eSIM profile download sequence diagram.](images/mobile_plans_cancel_profile_download_flow.png)
 
 ### MobilePlansInlineOperations.notifyOperationCancel(MobilePlansOperationContext)
 
@@ -237,7 +237,7 @@ var purchaseMetaData = MobilePlans.createPurchaseMetaData();
 
 The following diagram shows the high level flow for how the Mobile Plans app supports delayed connectivity. This callback method should be used when the eSIM profile is already available for release by the SM-DP+ server, however the device needs to wait some time before attempting to register on the cellular network.
 
-![Mobile Plans delayed connectivity sequence diagram](images/dynamo_async_connectivity_flow.png)
+![Mobile Plans delayed connectivity sequence diagram.](images/dynamo_async_connectivity_flow.png)
 
 After the user successfully completes the activation flow, the web portal informs the Mobile Plans app that it should trigger the delayed connectivity flow using the `MobilePlans.notifyPurchaseWithProfileDownload` API.
 
@@ -307,7 +307,7 @@ When a user completes a purcahse in the web portal by adding more data to an exi
 
 The following diagram shows the call flow for how the Mobile Plans app supports adding balance with iccid information.
 
-![Mobile Plans add balancesequence diagram](images/mobile_plans_add_balance_iccid_flow.png)
+![Mobile Plans add balancesequence diagram.](images/mobile_plans_add_balance_iccid_flow.png)
 
 ### MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData, iccid)
 

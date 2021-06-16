@@ -15,7 +15,7 @@ The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behavi
 | --- | --- | --- |
 | Bluefruit Friend | bluefruit | RunPairingTests.bat bluefruit |
 
-:::image type="content" source="images/Bluefruit.png" alt-text="Photo of the Bluefruit Friend device":::
+:::image type="content" source="images/Bluefruit.png" alt-text="Photo of the Bluefruit Friend device.":::
 
 ## Supported tests
 

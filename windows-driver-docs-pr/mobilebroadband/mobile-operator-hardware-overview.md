@@ -93,7 +93,7 @@ Windows certified mobile broadband devices declare each supported extension poin
 
 The Device Service Extension API provides a direct way for the mobile broadband app to access functionality on their mobile broadband device. This provides a conduit through the WWAN service and the mobile broadband class driver to the device, as illustrated in the following diagram:
 
-![information flow through the wwan service](images/mbae-hwguidelines-fig1.jpg)
+![information flow through the wwan service.](images/mbae-hwguidelines-fig1.jpg)
 
 Each device service has a corresponding GUID. All control messages and non-IP packets exchanged between the mobile broadband class driver and the device will carry the GUID to identify the service associated with the request. Command identifiers (CIDs) and status indication codes are defined under a service’s GUID namespace. For example, Phonebook and STK could both share the same CID code, but will be distinguished by the device service GUID exchanged in the request.
 

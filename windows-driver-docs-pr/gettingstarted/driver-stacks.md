@@ -15,7 +15,7 @@ Most of the requests that are sent to device drivers are packaged in [I/O reques
 
 In some cases, more than one device stack is involved in processing an IRP. The following diagram illustrates a case where four device stacks are involved in processing a single IRP.
 
-![diagram of four device nodes, each with a device stack](images/chain01.png)
+![diagram of four device nodes, each with a device stack.](images/chain01.png)
 
 Here is how the IRP is processed at each numbered stage in the diagram:
 
@@ -33,7 +33,7 @@ Here is how the IRP is processed at each numbered stage in the diagram:
 
 Consider the sequence of four drivers that participated in the I/O request illustrated in the preceding diagram. We can get another view of the sequence by focusing on the drivers rather than on the device nodes and their individual device stacks. The following diagram shows the drivers in sequence from top to bottom. Notice that Disk.sys is associated with one device object, but each of the other three drivers is associated with two device objects.
 
-![diagram of a driver stack, showing the top driver associated with an fdo only, and the other three drivers associated with a pdo and an fdo](images/driverstack01.png)
+![diagram of a driver stack, showing the top driver associated with an fdo only, and the other three drivers associated with a pdo and an fdo.](images/driverstack01.png)
 
 The sequence of drivers that participate in an I/O request is called the *driver stack for the I/O request*. To illustrate a driver stack for an I/O request, we draw the drivers from top to bottom in the order that they participate in the request.
 
@@ -44,13 +44,13 @@ Notice that the driver stack for an I/O request is quite different from the devi
 
 Consider the driver stack for the I/O request shown in the preceding diagram. If we give each of the drivers a friendly name and make some slight changes to the diagram, we have a block diagram that is similar to many of those that appear in the Windows Driver Kit (WDK) documentation.
 
-![diagram of a driver stack showing friendly names for the drivers: disk class driver on top followed by usb storage port driver, and then usb hub driver and (usb 2 miniport, usb port) driver](images/driverstack02.png)
+![diagram of a driver stack showing friendly names for the drivers: disk class driver on top followed by usb storage port driver, and then usb hub driver and (usb 2 miniport, usb port) driver.](images/driverstack02.png)
 
 In the diagram, the driver stack is divided into three sections. We can think of each section as belonging to a particular technology or to a particular component or portion of the operating system. For example, we might say that the first section at the top of the driver stack belongs to the Volume Manager, the second section belongs to the storage component of the operating system, and the third section belongs to the core USB portion of the operating system.
 
 Consider the drivers in the third section. These drivers are a subset of a larger set of core USB drivers that Microsoft provides for handling various kinds of USB requests and USB hardware. The following diagram shows what the entire USB core block diagram might look like.
 
-![diagram showing the technology driver stack for possible usb core block ](images/technologystack01.png)
+![diagram showing the technology driver stack for possible usb core block .](images/technologystack01.png)
 
 A block diagram that shows all of the drivers for a particular technology or a particular component or portion of the operating system is called a *technology driver stack*. Typically, technology driver stacks are given names like the USB Core Driver Stack, the Storage Stack, the 1394 Driver Stack, and the Audio Driver Stack.
 

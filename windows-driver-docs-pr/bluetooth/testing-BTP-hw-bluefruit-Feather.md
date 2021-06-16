@@ -15,7 +15,7 @@ The nRF52840 is a Low Energy (LE) radio from Nordic Semiconductor capable of beh
 | --- | --- | --- |
 | Bluefruit Feather | bluefruit52 | RunPairingTests.bat bluefruit52 |
 
-:::image type="content" source="images/BluefruitFeather.png" alt-text="Photo of the Bluefruit Feather device":::
+:::image type="content" source="images/BluefruitFeather.png" alt-text="Photo of the Bluefruit Feather device.":::
 
 ## Supported tests
 

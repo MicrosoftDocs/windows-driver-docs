@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following diagram illustrates the NFC stack architecture:
 
-![nfc stack architecture](images/nfcstackarchitecture.png)
+![nfc stack architecture.](images/nfcstackarchitecture.png)
 
  
 

@@ -32,12 +32,12 @@ If the first CID that the device receives from the host after it responds to the
 
 If the first CID that the device receives from the host after it responds to the MBIM_CID_DEVICE_SERVICES query is any other CID, then the device assumes that the host's native MBIMEx version is 1.0.
 
-![OS doesn't support MBIM_CID_VERSION and Modem's highest supported MBIMEx version is 3.0](images\mbim_CID_versioning_fig1.png)
+![OS doesn't support MBIM_CID_VERSION and Modem's highest supported MBIMEx version is 3.0.](images\mbim_CID_versioning_fig1.png)
 
 If the device doesn't support MBIM_CID_VERSION, it will not respond to the MBIM_CID_DEVICE_SERVICES query with MBIM_CID_VERSION.
 Therefore the host will not send a MBIM_CID_VERSION message and assumes that the device's native MBIMEx version is 1.0.
 
-![OS highest supported MBIMEx version is 3.0 and Modem doesn't support MBIM_CID_VERSION](images\mbim_CID_versioning_fig2.png)
+![OS highest supported MBIMEx version is 3.0 and Modem doesn't support MBIM_CID_VERSION.](images\mbim_CID_versioning_fig2.png)
 
 
 Feature-wise, a higher MBIMEx version is a superset of all lower MBIMEx versions. A host supports all devices with an announced MBIMEx version at or below the host's native MBIMEx version. If a device's announced MBIMEx version is higher than a host's native MBIMEx version, the host is not expected to support the device and the exact behavior of the host in this situation is undefined.
@@ -46,9 +46,9 @@ A device that intends to work with older hosts should initially advertise MBIMEx
 
 If the host sends MBIM_CID_VERSION with a higher MBIMEx version than the device initially advertised, then the device should indicate a higher MBIMEx version in the MBIM_CID_VERSION response up to the smaller of the host's native MBIMEx version and the device's native MBIMEx version.
 
-![OS highest supported MBIMEx version is lower than Modem's](images\mbim_CID_versioning_fig3.png)
+![OS highest supported MBIMEx version is lower than Modem's.](images\mbim_CID_versioning_fig3.png)
 
-![OS highest supported MBIMEx version is higher than Modem's](images\mbim_CID_versioning_fig4.png)
+![OS highest supported MBIMEx version is higher than Modem's.](images\mbim_CID_versioning_fig4.png)
 
 > [!NOTE]
 > For example, a device supports MBIMEx version 2.0, but is intended to work with older versions of the OS that do not support MBIMEx 2.0. The device initially advertises MBIMEx version 1.0 in the USB descriptors and advertises support for the optional MBIM_CID_VERSION. When inserted into a host running Windows 10, version 1803, the host does not understand MBIM_CID_VERSION and does not send MBIM_CID_VERSION to the device. To the host, the device's MBIMEx version is 1.0. The host continues to send other CIDs in the initialization sequence. Upon receiving CIDs other than MBIM_CID_VERSION, the device knows that the host supports MBIMEx version 1.0. Both sides proceed to conform to MBIMEx version 1.0. Later, when the same device is inserted into a host running Windows 10, version 1903 with a native MBIMEx version of 2.0, the host sends MBIM_CID_VERSION to the device to inform it that the host's native MBIMEx version is 2.0. The device sends MBIM_CID_VERSION back in response with the device's announced MBIMEx version 2.0. From there, both sides proceed to conform to MBIMEx version 2.0.

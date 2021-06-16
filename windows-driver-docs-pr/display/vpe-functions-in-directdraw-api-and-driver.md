@@ -22,7 +22,7 @@ The video port extensions in the latest DirectX release are low-level extensions
 
 VPE is not a high-level API designed for broad use by applications. Applications should use DirectShow, which provides free support for VPE. The following figure shows a simple view of the VPE and kernel-mode architecture. For more information, see [Kernel-Mode Video Transport](kernel-mode-video-transport.md).
 
-![diagram illustrating video port extensions and kernel-mode architecture](images/ddfig10.png)
+![diagram illustrating video port extensions and kernel-mode architecture.](images/ddfig10.png)
 
 The preceding figure shows VPE in relation to other components of DirectDraw architecture. DirectShow uses VPE to negotiate the connection, which provides information about how data and V-sync and H-sync information are transferred. This information can be an APIC connection (ITU 656), external data lines with extra pins, or proprietary data streams such as those implemented by Brooktree and Philips.
 

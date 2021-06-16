@@ -55,7 +55,7 @@ After USBHUB loads USBCCGP, USBCCGP selects the configuration indicated by the s
 
 USBHUB querying the Microsoft OS descriptor from the device during enumeration.
 
-![device returns compatid in the not-configured state. ](images/mbim14.png)
+![device returns compatid in the not-configured state.](images/mbim14.png)
 
 Device returns CompatId in the not-configured state. This CompatId is used to load USBCCGP.
 

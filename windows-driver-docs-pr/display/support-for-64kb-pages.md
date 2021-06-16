@@ -67,7 +67,7 @@ When an allocation that is covered by a 64 KB page table entry is placed to a me
 
 In the following diagram a 4 KB allocation and a 64 KB aligned allocation are in the same virtual address range covered by a level0 page table and in a segment that supports 64 KB pages.
 
-![dual pte mode page tables](images/support-for-64kb-pages.1.png)
+![dual pte mode page tables.](images/support-for-64kb-pages.1.png)
 
  
 

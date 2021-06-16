@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Increasing the number of buffers that can hold a primary surface increases display performance. It is preferable to have at least three flippable surfaces (some games use five or more). When there are only two surfaces and a page flip occurs, the display delays until the monitor's vertical retrace is finished. The delay is necessary to ensure that the back buffer is not written on before it is finished being displayed. With triple buffering, the third surface is always writable because it is a back buffer and available to draw on immediately (as shown in the following figure). In a game that does not use sprite memory, 3D rendering using triple buffering is 20 to 30 percent faster than double buffering.
 
-![diagram illustrating triple buffering](images/ddfig9.png)
+![diagram illustrating triple buffering.](images/ddfig9.png)
 
 The flipping structures in the preceding figure are the same as those in [Tearing](tearing.md), only now three buffers are used. One buffer is almost always writable (because it is not involved in a flip) so the driver does not have to wait for the display scan to finish before allowing the back buffer to be written to again.
 

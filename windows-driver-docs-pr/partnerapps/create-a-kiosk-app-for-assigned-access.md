@@ -105,7 +105,7 @@ When an app with multiple views (and without **windows.aboveLockScreen**) is lau
 
 When a kiosk app has the **windows.aboveLockScreen** extension, and is running above the lock, it’s initialized differently. Its main view is located under the lock, with a secondary view above it. This secondary view will be what the user will see. Note that even if you don’t explicitly create any new views, you’ll still have two views in the app instance.  
 
-![z-order for views when the app is running in lock mode](images/assignedaccesssamplelayout.png)
+![z-order for views when the app is running in lock mode.](images/assignedaccesssamplelayout.png)
 
 You can run the following code in the main window of your app (in assigned access mode) to see the view count and whether the current screen is the main view.
 

@@ -21,7 +21,7 @@ IHVs and OEMs may need an exemption from the policies governing the DShow pipeli
 
 - **MJPEG decompression in FrameServer**: FrameServer is a service virtualizing a camera device. This enables the Pins from the device to be shared between multiple clients. Architectures having an optimized Media Foundation decompressor can use this feature to decode MJPEG in FrameServer. The uncompressed translated media formats (YUY2) are offered to the multiple applications. The stream is only decompressed once for multiple possible clients. This improves the performance of applications. The following diagram shows the camera capture pipeline:
 
-![camera capture pipeline](images/camera-capture-pipeline.png)
+![camera capture pipeline.](images/camera-capture-pipeline.png)
 
 The OEMs and IHVs packaging their USB camera devices can use the USB bus standard's Extended Properties OS Feature Descriptor specification to configure DShow Bridge without resorting to any INF file changes for their UVC driver.
 

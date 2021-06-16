@@ -90,7 +90,7 @@ The [**DrvTransparentBlt**](/windows/win32/api/winddi/nf-winddi-drvtransparentbl
 
 The following figure depicts an example of a transparent blt.
 
-![diagram illustrating transparent blt](images/transblt.png)
+![diagram illustrating transparent blt.](images/transblt.png)
 
 From left to right, the preceding figure shows the source bitmap, the destination bitmap before the transparent blt, and the destination bitmap after the transparent blt. Note that the color in *iTransColor* is the same as that in the four regions above, below, and to either side of the central region in the source bitmap.
 

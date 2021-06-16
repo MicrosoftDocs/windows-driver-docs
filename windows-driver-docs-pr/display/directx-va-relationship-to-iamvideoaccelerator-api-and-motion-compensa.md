@@ -20,7 +20,7 @@ ms.custom: seodec18
 
 DirectX VA uses the **IAMVideoAcceleratorNotify** and **IAMVideoAccelerator** interfaces (documented in the Microsoft Windows SDK), and the [motion compensation DDI](motion-compensation.md) to specify the format of the data exchanged between the software decoder, the video mixing renderer (VMR) or the overlay mixer (OVM), and the video display driver. The following figure shows the relationship of these interfaces to the software decoder, VMR, and video display driver.
 
-![diagram illustrating directx va data flow](images/iamvideo.png)
+![diagram illustrating directx va data flow.](images/iamvideo.png)
 
 The **IAMVideoAcceleratorNotify** interface retrieves or sets decompressed buffer information for a given video accelerator GUID.
 

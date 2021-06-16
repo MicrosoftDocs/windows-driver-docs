@@ -24,7 +24,7 @@ Microsoft recommends that IHVs develop biometric device drivers by using the Win
 
 The following diagram shows how a UMDF-based Windows Biometric Driver Interface (WBDI) driver fits into the Windows Biometric Framework (WBF) biometric support in Windows 7. All biometric operations are driven by client applications to the Windows Biometric Service (WBS). The WBS sends requests to biometric device drivers that expose the WBDI interface.
 
-![diagram illustrating biometric internal driver architecture](images/bioarch.png)
+![diagram illustrating biometric internal driver architecture.](images/bioarch.png)
 
 In the previous diagram, the vendor supplies the biometric device driver DLL.
 

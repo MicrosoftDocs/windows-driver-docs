@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Select **Automatically Open Disassembly** on the **Window** menu to cause the [Disassembly window](disassembly-window.md) to open every time WinDbg begins a debugging session.
 
-If you clear this command, you can still open the Disassembly window by clicking **Disassembly** on the **View** menu, pressing ALT+7, or clicking the **Disassembly (Alt+F7)** button (![screen shot of the disassembly button](images/tbdisasm2.png)) on the toolbar.
+If you clear this command, you can still open the Disassembly window by clicking **Disassembly** on the **View** menu, pressing ALT+7, or clicking the **Disassembly (Alt+F7)** button (![screen shot of the disassembly button.](images/tbdisasm2.png)) on the toolbar.
 
  
 

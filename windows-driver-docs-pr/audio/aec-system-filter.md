@@ -39,7 +39,7 @@ An audio filter graph that incorporates a capture effect that is implemented in 
 
 -   In Windows XP SP1, Windows Server 2003, and later, the AEC system filter's capture-out and render-in pins (see the following figure) must have the same sample rate, but the sample rates at the capture-in and render-out pins can each be selected independently of the other pins. The sample rate at the capture-in pin can be (in order of preference) 16 kHz, 48 kHz, 44.1 kHz, or 8 kHz. (The order of preference is based on processing time and audio quality.) The sample rate at the render-out pin can be (in order of preference) 16 kHz, 48 kHz, or 44.1 kHz. Note that the render-out pin does not support a sample rate of 8 kHz.
 
-![diagram illustrating an aec system filter's pins and connections](images/aecfilt.png)
+![diagram illustrating an aec system filter's pins and connections.](images/aecfilt.png)
 
 -   The AEC and NS nodes (see figure in [Exposing Hardware-Accelerated Capture Effects](exposing-hardware-accelerated-capture-effects.md)) can handle only monophonic streams. If the capture stream is multichannel (for example, two-channel stereo), all channels other than the first are ignored (and discarded). Only monophonic streams can be processed by the render side.
 

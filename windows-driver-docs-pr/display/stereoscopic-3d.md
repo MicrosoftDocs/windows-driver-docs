@@ -44,7 +44,7 @@ To implement stereo capabilities in your display miniport and user-mode drivers,
 
 The stereoscopic display setting is part of the **Screen Resolution** control panel, as shown here:
 
-![stereoscopic display setting](images/stereo3ddisplaysetting.jpg)
+![stereoscopic display setting.](images/stereo3ddisplaysetting.jpg)
 
 The **Enable Stereo** setting is a checkbox with the following states:
 

@@ -32,7 +32,7 @@ MSBDD can use the video BIOS to manage modes and resolutions on a single monitor
 -   Driver upgrade: By using MSBDD, there is no need to go through a system reboot when upgrading to the IHV-recommended driver.
 -   Safe mode: In this mode, only trusted drivers get loaded; this includes MSBDD.
 
-![scenarios supported by microsoft basic display driver](images/scenariossupportedmicrosoftbasicdisplaydriver.jpg)
+![scenarios supported by microsoft basic display driver.](images/scenariossupportedmicrosoftbasicdisplaydriver.jpg)
 
 **Figure 1 Scenarios Supported by Microsoft Basic Display Driver**
 

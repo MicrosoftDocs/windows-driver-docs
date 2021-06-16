@@ -23,7 +23,7 @@ The ATA port driver maintains a device queue for each logical unit number (LUN) 
 
 The following figure shows how requests flow from the port driver's LUN queues into the channel queues.
 
-![ata device and channel queues](images/ataqueues.png)
+![ata device and channel queues.](images/ataqueues.png)
 
 Because the ATA port driver uses a push model of I/O, the ATA port driver does not wait for the miniport driver to request input before it forwards the next packet to the miniport driver. For information about the I/O model that the ATA port driver uses, see [ATA Port I/O Model](ata-port-i-o-model.md).
 

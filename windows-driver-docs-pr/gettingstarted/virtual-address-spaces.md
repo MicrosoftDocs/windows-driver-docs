@@ -20,7 +20,7 @@ The range of virtual addresses that is available to a process is called the *vir
 
 This diagram illustrates some of the key features of virtual address spaces.
 
-![diagram of virtual address spaces for two processes](images/virtualaddressspace01.png)
+![diagram of virtual address spaces for two processes.](images/virtualaddressspace01.png)
 
 The diagram shows the virtual address spaces for two 64-bit processes: Notepad.exe and MyApp.exe. Each process has its own virtual address space that goes from 0x000'0000000 through 0x7FF'FFFFFFFF. Each shaded block represents one page (4 kilobytes in size) of virtual or physical memory. Notice that the Notepad process uses three contiguous pages of virtual addresses, starting at 0x7F7'93950000. But those three contiguous pages of virtual addresses are mapped to noncontiguous pages in physical memory. Also notice that both processes use a page of virtual memory beginning at 0x7F7'93950000, but those virtual pages are mapped to different pages of physical memory.
 
@@ -31,7 +31,7 @@ Processes like Notepad.exe and MyApp.exe run in user mode. Core operating system
 
 In 32-bit Windows, the total available virtual address space is 2^32 bytes (4 gigabytes). Usually the lower 2 gigabytes are used for user space, and the upper 2 gigabytes are used for system space.
 
-![diagram of system space](images/virtualaddressspace02.png)
+![diagram of system space.](images/virtualaddressspace02.png)
 
 In 32-bit Windows, you have the option of specifying (at boot time) that more than 2 gigabytes are available for user space. The consequence is that fewer virtual addresses are available for system space. You can increase the size of user space to as much as 3 gigabytes, in which case only 1 gigabyte is available for system space. To increase the size of user space, use [**BCDEdit /set increaseuserva**](../devtest/bcdedit--set.md).
 
@@ -55,7 +55,7 @@ In user space, all physical memory pages can be paged out to a disk file as need
 
 Memory that is allocated in paged pool can be paged out to a disk file as needed. Memory that is allocated in nonpaged pool can never be paged out to a disk file.
 
-![diagram comparing memory allocation in paged pool to that in nonpaged pool](images/virtualaddressspace04.png)
+![diagram comparing memory allocation in paged pool to that in nonpaged pool.](images/virtualaddressspace04.png)
 
 ## <span id="related_topics"></span>Related topics
 

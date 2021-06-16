@@ -16,11 +16,11 @@ Scanner devices that are equipped with one or more storage units should implemen
 
 A scanner that is equipped with just an empty storage unit (for example, an internal hard disk drive that does not contain any data) should have a WIA item tree that looks like the following figure.
 
-![diagram illustrating the item tree of a scanner with an empty storage unit](images/wia-storage-tree-simple.png)
+![diagram illustrating the item tree of a scanner with an empty storage unit.](images/wia-storage-tree-simple.png)
 
 The preceding figure is a simplified graphic without a scanner item. A scanner will have at least one scanner item (flatbed, feeder, or film) and any type of scanner may be equipped with storage, as the following figure shows.
 
-![diagram illustrating the item tree of a flatbed scanner with storage](images/wia-storage-tree1.png)
+![diagram illustrating the item tree of a flatbed scanner with storage.](images/wia-storage-tree1.png)
 
 The preceding figure shows a WIA item tree for a scanner that supports flatbed platen scanning and a storage unit that contains one subfolder and two files.
 

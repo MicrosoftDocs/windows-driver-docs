@@ -46,7 +46,7 @@ Xperf merged.etl
 
 Xperf shows specialized graphs for a wide range of kernel events as shown in this image. For more information on Xperf recording options and the Xperf GUI, [The Xperf Command Line Tool in Detail](https://msdn.microsoft.com/library/cc305221.aspx) and [Windows Performance Analyzer (WPA)](https://msdn.microsoft.com/library/cc305187.aspx).
 
-![windows performance analyzer](images/xperf3.png)
+![windows performance analyzer.](images/xperf3.png)
 
 To open the merged trace log in Netmon, run Netmon, click **File -&gt; Open -&gt; Capture**, and then select the file. Xperf and Netmon can have the merged file open at the same time. You can switch between the Xperf GUI and Netmon to analyze what was happening in the system and in the USB stack during a particular period of time. You can view the USB events in Xperf, in addition to the system events, but the USB events can be easier to read in Netmon.
 

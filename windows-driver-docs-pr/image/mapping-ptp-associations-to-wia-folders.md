@@ -71,11 +71,11 @@ The **SequenceNumber** field of the ObjectInfo dataset is put into the WIA\_IPC\
 
 The following diagram shows an example AncillaryData association as stored on the camera. This association consists of an image together with associated audio and text.
 
-![ptp tree for an image with ancillary data](images/ptp.png)
+![ptp tree for an image with ancillary data.](images/ptp.png)
 
 When an AncillaryData association is mapped to a WIA folder, the nonimage objects become children of the image object, as shown in the following diagram. The image object has the WiaItemTypeHasAttachments flag set in WIA\_IPA\_ITEM\_FLAGS.
 
-![wia item with attachments](images/wiaattch.png)
+![wia item with attachments.](images/wiaattch.png)
 
  
 

@@ -14,7 +14,7 @@ During the process of updating firmware, it is important to provide a visual not
 
 To avoid such situations the firmware performing an update must manage the user experience by displaying a simple notification that the device is being updated. This will reset the user’s boot time expectations. This user experience must be added to an already existing (and familiar to the user) boot screen. The graphic displayed is likely the OEM or motherboard manufacturer’s logo.
 
-![standard oem boot screen](images/standardoembootscreen.png)
+![standard oem boot screen.](images/standardoembootscreen.png)
 
 ## User experience
 
@@ -30,7 +30,7 @@ During the firmware update process the display must show the user that an update
 
 The following image demonstrates the expected look and feel for this UX. An OEM image is displayed (in this example the fictitious Contoso logo) as it would be displayed during any other time the system boots. The text “Please wait while we install a system update” indicates that a critical system component update is in progress. Users have learned that this means to let the device do what it must do and to not disturb it as it may take some time.
 
-![firmware update boot screen](images/firmwareupdatebootscreen.png)
+![firmware update boot screen.](images/firmwareupdatebootscreen.png)
 
 ## Time frame
 

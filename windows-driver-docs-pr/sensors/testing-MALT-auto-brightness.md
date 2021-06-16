@@ -31,7 +31,7 @@ We highly recommended that you use **MALT_SUT_Setup.bat** to setup MALT and the 
 
 1. Open SensorExplorer and click **MALT** on the left-hand side menu bar.
 
-    ![SensorExplorer MALT page](images/SensorExplorerMALT.png)
+    ![SensorExplorer MALT page.](images/SensorExplorerMALT.png)
 
 2. Verify the connection by clicking **Sensor Data** > **Get ambient brightness**. If MALT is properly set up, the correct lux value will be displayed; otherwise close the app, try re-uploading the Arduino program and checking the Serial Monitor.
 3. Under **Run a Test**, click **Take auto-brightness curve**.
@@ -65,7 +65,7 @@ These steps may vary if you are using a program other than Microsoft Excel 2016.
 1. In your Microsoft Excel .xlsx file, select the two columns with data: "Ambient Lux" and "Screen Lux".
 2. Click **Insert** > **Insert Scatter (X, Y) or Bubble Chart** > **Scatter with straight lines**
 
-![insert scatter plot](images/insertScatter1.png)
+![insert scatter plot.](images/insertScatter1.png)
 
 Now you have a visual representation of the auto brightness response curve measured by the MALT.
 

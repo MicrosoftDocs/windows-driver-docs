@@ -293,7 +293,7 @@ Exit:
 
 When the device returns the configuration descriptor, the request buffer is filled with interface descriptors for all alternate settings, and endpoint descriptors for all endpoints within a particular alternate setting. For the device described in [USB Device Layout](usb-device-layout.md), the following diagram illustrates how configuration information is laid out in memory.
 
-![diagram illustrating a configuration descriptor layout](images/usbconfig.png)
+![diagram illustrating a configuration descriptor layout.](images/usbconfig.png)
 
 The zero-based **bInterfaceNumber** member of [**USB\_INTERFACE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor) distinguishes interfaces within a configuration. For a given interface, the zero-based **bAlternateSetting** member distinguishes between alternate settings of the interface. The device returns interface descriptors in order of **bInterfaceNumber** values and then in order of **bAlternateSetting** values.
 

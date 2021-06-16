@@ -66,7 +66,7 @@ A few sections within the previous INF file have system-defined names, such as *
 
 Note the implied hierarchy of related sections for mouse device driver installations starting with the **Manufacturer** section in the previous example. The following figure shows the hierarchy of some sections in the INF file.
 
-![diagram illustrating a sample hierarchy of sections in an inf file](images/inf-sections.png)
+![diagram illustrating a sample hierarchy of sections in an inf file.](images/inf-sections.png)
 
 Note the following about the implied hierarchy of an INF file:
 

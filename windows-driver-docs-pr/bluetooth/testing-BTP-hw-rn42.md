@@ -15,7 +15,7 @@ The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 | --- | --- | --- |
 | RN42 | rn42 | RunPairingTests.bat rn42 |
 
-:::image type="content" source="images/RN42.png" alt-text="Photo of the RN42 device":::
+:::image type="content" source="images/RN42.png" alt-text="Photo of the RN42 device.":::
 
 ## Supported tests
 
@@ -29,7 +29,7 @@ The Model 2431 RN42 Radio Sled for BTP can be purchased via [MCCI](https://store
 
 ### Bluetooth Test Platform Traduci Board and Diligent sled
 
-:::image type="content" source="images/Traduci_and_DigilentRN42.jpg" alt-text="Photo of the RN42 device on a Digilent sled":::
+:::image type="content" source="images/Traduci_and_DigilentRN42.jpg" alt-text="Photo of the RN42 device on a Digilent sled.":::
 
 > [!NOTE]
 > The RN42 device can **only** be plugged into a Bluetooth Test Platform Traduci board port labeled 'JB'.

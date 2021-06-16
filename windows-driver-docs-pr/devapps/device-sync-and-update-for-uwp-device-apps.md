@@ -65,14 +65,14 @@ Device background tasks that use DeviceUseTrigger and DeviceServicingTrigger let
 
 | Protocol         | DeviceServicingTrigger                                                   | DeviceUseTrigger                                                                         | System triggers                                                                       |
 |------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| USB              | ![deviceservicingtrigger supports usb](images/ap-tools.png)              | ![deviceusetrigger supports usb](images/ap-tools.png)                                    | ![system triggers do not support usb](images/app-tools-doesnotapply.png)              |
-| HID              | ![deviceservicingtrigger supports hid](images/ap-tools.png)              | ![deviceusetrigger supports hid](images/ap-tools.png)                                    | ![system triggers do not support hid](images/app-tools-doesnotapply.png)              |
-| Bluetooth RFCOMM | ![deviceservicingtrigger supports bluetooth rfcomm](images/ap-tools.png) | ![deviceusetrigger supports bluetooth rfcomm](images/ap-tools.png)                       | ![system triggers do not support bluetooth rfcomm](images/app-tools-doesnotapply.png) |
-| Bluetooth GATT   | ![deviceservicingtrigger supports bluetooth gatt](images/ap-tools.png)   | ![deviceusetrigger supports bluetooth gatt](images/ap-tools.png)                         | ![system triggers do not support bluetooth gatt](images/app-tools-doesnotapply.png)   |
-| MTP              | ![deviceservicingtrigger supports mtp](images/ap-tools.png)              | ![deviceusetrigger does not support mtp](images/app-tools-doesnotapply.png)              | ![system triggers do not support mtp](images/app-tools-doesnotapply.png)              |
-| Network wired    | ![deviceservicingtrigger supports network wired](images/ap-tools.png)    | ![deviceusetrigger does not support network wired](images/app-tools-doesnotapply.png)    | ![system triggers do not support network wired](images/app-tools-doesnotapply.png)    |
-| Network Wi-Fi    | ![deviceservicingtrigger supports networked wi-fi](images/ap-tools.png)  | ![deviceusetrigger does not support networked wi-fi](images/app-tools-doesnotapply.png)  | ![system triggers do not support network wi-fi](images/app-tools-doesnotapply.png)    |
-| IDeviceIOControl | ![deviceservicingtrigger supports ideviceiocontrol](images/ap-tools.png) | ![deviceusetrigger does not support ideviceiocontrol](images/app-tools-doesnotapply.png) | ![system triggers do not support ideviceiocontrol](images/app-tools-doesnotapply.png) |
+| USB              | ![deviceservicingtrigger supports usb.](images/ap-tools.png)              | ![deviceusetrigger supports usb](images/ap-tools.png)                                    | ![system triggers do not support usb](images/app-tools-doesnotapply.png)              |
+| HID              | ![deviceservicingtrigger supports hid.](images/ap-tools.png)              | ![deviceusetrigger supports hid](images/ap-tools.png)                                    | ![system triggers do not support hid](images/app-tools-doesnotapply.png)              |
+| Bluetooth RFCOMM | ![deviceservicingtrigger supports bluetooth rfcomm.](images/ap-tools.png) | ![deviceusetrigger supports bluetooth rfcomm](images/ap-tools.png)                       | ![system triggers do not support bluetooth rfcomm](images/app-tools-doesnotapply.png) |
+| Bluetooth GATT   | ![deviceservicingtrigger supports bluetooth gatt.](images/ap-tools.png)   | ![deviceusetrigger supports bluetooth gatt](images/ap-tools.png)                         | ![system triggers do not support bluetooth gatt](images/app-tools-doesnotapply.png)   |
+| MTP              | ![deviceservicingtrigger supports mtp.](images/ap-tools.png)              | ![deviceusetrigger does not support mtp](images/app-tools-doesnotapply.png)              | ![system triggers do not support mtp](images/app-tools-doesnotapply.png)              |
+| Network wired    | ![deviceservicingtrigger supports network wired.](images/ap-tools.png)    | ![deviceusetrigger does not support network wired](images/app-tools-doesnotapply.png)    | ![system triggers do not support network wired](images/app-tools-doesnotapply.png)    |
+| Network Wi-Fi    | ![deviceservicingtrigger supports networked wi-fi.](images/ap-tools.png)  | ![deviceusetrigger does not support networked wi-fi](images/app-tools-doesnotapply.png)  | ![system triggers do not support network wi-fi](images/app-tools-doesnotapply.png)    |
+| IDeviceIOControl | ![deviceservicingtrigger supports ideviceiocontrol.](images/ap-tools.png) | ![deviceusetrigger does not support ideviceiocontrol](images/app-tools-doesnotapply.png) | ![system triggers do not support ideviceiocontrol](images/app-tools-doesnotapply.png) |
 
  
 
@@ -138,17 +138,17 @@ A background task that uses DeviceUseTrigger requires a one-time user consent al
 
 In the following example, an app named Tailspin Toys is getting user permission to sync in the background.
 
-![device sync user consent message dialog](images/devicesyncuserconsent.png)
+![device sync user consent message dialog.](images/devicesyncuserconsent.png)
 
 If users change their minds later, they can revoke permissions in Settings.
 
-![device sync permissions setting dialog](images/devicesyncapppermissions.png)
+![device sync permissions setting dialog.](images/devicesyncapppermissions.png)
 
 ### <span id="Device_update_user__consent"></span><span id="device_update_user__consent"></span><span id="DEVICE_UPDATE_USER__CONSENT"></span>Device update user consent
 
 Unlike those that use DeviceUseTrigger, background tasks that use the DeviceServicingTrigger background task require user consent each time the background task is triggered. And this consent is not stored like it is for DeviceUseTrigger. This is because of the higher-risk operations involved with device firmware updates and the longer amount of time needed for device updates. In addition to obtaining user consent, Windows will provide users with information about device updates , like a warning to keep the device connected throughout the update and ensure that the PC is charged, and the approximate running time of the operation (if your app provides it).
 
-![device update user consent message dialog](images/deviceupdateuserconsent.png)
+![device update user consent message dialog.](images/deviceupdateuserconsent.png)
 
 ## <span id="Frequency_and_foreground_restrictions"></span><span id="frequency_and_foreground_restrictions"></span><span id="FREQUENCY_AND_FOREGROUND_RESTRICTIONS"></span>Frequency and foreground restrictions
 
@@ -166,16 +166,16 @@ This table indicates which task initiation policies apply to each background tas
 
 | Policy                                                                                                                                                                                                                               | DeviceServicingTrigger                       | DeviceUseTrigger                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|-------------------------------------------------------------|
-| Your UWP app is in the foreground when triggering the background task.                                                                                                                                                     | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
-| Your device is attached to the system (or in range for a wireless device).                                                                                                                                                           | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
-| Your background task consumes 400ms of CPU time (assuming a 1GHz CPU) every minute when the screen is locked, or every 5 minutes when the screen is not locked. Failure to meet this policy can result in cancellation of your task. | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
-| Your device is accessible to the app using the device peripheral APIs (the Windows Runtime APIs for USB, HID, Bluetooth, and so on). If your app can't access the device, access to the background tasks is denied.                  | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
-| Background task entry point provided by the app is registered in the app package manifest.                                                                                                                                           | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
+| Your UWP app is in the foreground when triggering the background task.                                                                                                                                                     | ![policy applies.](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
+| Your device is attached to the system (or in range for a wireless device).                                                                                                                                                           | ![policy applies.](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
+| Your background task consumes 400ms of CPU time (assuming a 1GHz CPU) every minute when the screen is locked, or every 5 minutes when the screen is not locked. Failure to meet this policy can result in cancellation of your task. | ![policy applies.](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
+| Your device is accessible to the app using the device peripheral APIs (the Windows Runtime APIs for USB, HID, Bluetooth, and so on). If your app can't access the device, access to the background tasks is denied.                  | ![policy applies.](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
+| Background task entry point provided by the app is registered in the app package manifest.                                                                                                                                           | ![policy applies.](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
 | The user has given the task permission to continue.                                                                                                                                                                                  | Every time.                                  | First time, then controlled by app permissions.             |
-| Time estimate provided by the app is less than 30 minutes.                                                                                                                                                                           | ![policy applies](images/ap-tools.png)       | ![policy does not apply](images/app-tools-doesnotapply.png) |
-| The app is specified as the privileged app for the device. (There must be a full app ID match against the privileged app list in the device container’s device metadata.)                                                            | ![policy applies](images/ap-tools.png)       | ![policy does not apply](images/app-tools-doesnotapply.png) |
-| Computer has greater than 33% battery capacity remaining or is on AC power.                                                                                                                                                          | ![policy applies](images/ap-tools.png)       | ![policy does not apply](images/app-tools-doesnotapply.png) |
-| Only one device background task is running per operation type.                                                                                                                                                                       | ![policy check applies](images/ap-tools.png) | ![policy applies](images/ap-tools.png)                      |
+| Time estimate provided by the app is less than 30 minutes.                                                                                                                                                                           | ![policy applies.](images/ap-tools.png)       | ![policy does not apply](images/app-tools-doesnotapply.png) |
+| The app is specified as the privileged app for the device. (There must be a full app ID match against the privileged app list in the device container’s device metadata.)                                                            | ![policy applies.](images/ap-tools.png)       | ![policy does not apply](images/app-tools-doesnotapply.png) |
+| Computer has greater than 33% battery capacity remaining or is on AC power.                                                                                                                                                          | ![policy applies.](images/ap-tools.png)       | ![policy does not apply](images/app-tools-doesnotapply.png) |
+| Only one device background task is running per operation type.                                                                                                                                                                       | ![policy check applies.](images/ap-tools.png) | ![policy applies](images/ap-tools.png)                      |
 
  
 
@@ -188,10 +188,10 @@ This table indicates which runtime policies apply to each background task trigge
 | Policy check                                                                                | DeviceServicingTrigger                                      | DeviceUseTrigger                             |
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------|----------------------------------------------|
 | Wall-clock time limit – the total amount of time your app’s task can run in the background. | 30 minutes                                                  | 10 minutes                                   |
-| Your device is attached to the system (or in range for a wireless device).                  | ![policy does not apply](images/app-tools-doesnotapply.png) | ![policy check applies](images/ap-tools.png) |
-| Task is performing regular I/O to the device (1 I/O every 5 seconds).                       | ![policy does not apply](images/app-tools-doesnotapply.png) | ![policy check applies](images/ap-tools.png) |
-| App has not canceled the task.                                                              | ![policy check applies](images/ap-tools.png)                | ![policy check applies](images/ap-tools.png) |
-| App has not exited.                                                                         | ![policy check applies](images/ap-tools.png)                | ![policy check applies](images/ap-tools.png) |
+| Your device is attached to the system (or in range for a wireless device).                  | ![policy does not apply.](images/app-tools-doesnotapply.png) | ![policy check applies](images/ap-tools.png) |
+| Task is performing regular I/O to the device (1 I/O every 5 seconds).                       | ![policy does not apply.](images/app-tools-doesnotapply.png) | ![policy check applies](images/ap-tools.png) |
+| App has not canceled the task.                                                              | ![policy check applies.](images/ap-tools.png)                | ![policy check applies](images/ap-tools.png) |
+| App has not exited.                                                                         | ![policy check applies.](images/ap-tools.png)                | ![policy check applies](images/ap-tools.png) |
 
  
 

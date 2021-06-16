@@ -19,7 +19,7 @@ Use the breakpoints menu to create new and remove existing breakpoints as well a
 
 Use the breakpoints window, opened via the View menu, to view, set and clear breakpoints. You can also double-click a breakpoint to open its source file.
 
-![Breakpoint menu in debugger](images/windbgx-breakpoints-window.png)
+![Breakpoint menu in debugger.](images/windbgx-breakpoints-window.png)
 
 The breakpoint window keep a running total of each time the breakpoint is hit.
 

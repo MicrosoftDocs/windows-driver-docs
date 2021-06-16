@@ -20,7 +20,7 @@ Every new release of Windows and subsequently in the released Service Packs, roo
 
 There is a known bug for Windows 7 x64 OS, when a catalog file (.cat) is signed using a new VeriSign released signing certificate which uses the SHA256 has algorithm. If you open the signed cat file and view signature and select the Details tab you will notice the following:
 
-![screen shot showing the signature's hash algorithm](images/tutorialcertsignaturehashalg.png)
+![screen shot showing the signature's hash algorithm.](images/tutorialcertsignaturehashalg.png)
 
 To resolve the issue, you may ask VeriSign to provide a replacement certificate at no cost signed with the SHA1 hash algorithm.
 

@@ -20,7 +20,7 @@ To change these settings, go to **Control Panel &gt; System and Security &gt; Sy
 
 You will see the following dialog box:
 
-![screen shot of the startup and recovery dialog box](images/crashpanel.png)
+![screen shot of the startup and recovery dialog box.](images/crashpanel.png)
 
 Under **Write Debugging Information**, you can specify a kernel-mode dump file setting. Only one dump file can be created for any given crash. See [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md) for a description of different dump file settings.
 

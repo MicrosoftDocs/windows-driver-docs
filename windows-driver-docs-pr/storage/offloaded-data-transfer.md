@@ -16,7 +16,7 @@ Offloaded Data Transfer (ODX) introduces a tokenized operation to move data on s
 
 The process of an offload copy operation on ODX-capable storage devices is shown in the following diagram and described below.
 
-![Copy offload operation using ODX](images/odx.png)
+![Copy offload operation using ODX.](images/odx.png)
 
 1. The copy application sends an offload read request to the copy manager of the source storage device.
 2. The source copy manager returns a token. The token is a representation of data (ROD) to be copied.
@@ -123,7 +123,7 @@ Currently, Windows does not issue asynchronous offload read or write SCSI comman
 
 To perform ODX operations, the application server must have access to both the source LUN and destination LUN with read/write privileges. The copy offload application issues an offload read request to the source LUN and receives a token from the copy manager of the source LUN. The copy offload applications use the token to issue an offload write request to the destination LUN. The copy manager then moves the data from the source LUN to the destination LUN through the storage network. The following diagram illustrates the most basic supported source and destination targets for offloaded data transfers.
 
-![Basic supported ODX source and destination targets](images/odx-scenarios.png)
+![Basic supported ODX source and destination targets.](images/odx-scenarios.png)
 
 ### ODX Operation with One Server
 

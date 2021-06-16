@@ -24,7 +24,7 @@ Thus, when a program attempts to open an object, Windows compares the credential
 
 The following figure illustrates the access control entry.
 
-![diagram illustrating the access control entry](images/fssecurity-04.png)
+![diagram illustrating the access control entry.](images/fssecurity-04.png)
 
 There are five types of ACEs used by the security subsystem. The **Type** member of the ACE structure controls the interpretation of the ACE. The defined types are:
 

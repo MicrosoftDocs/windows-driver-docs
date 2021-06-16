@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Time Travel Debugging - Sample App Walkthrough
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
 
 This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue. Although the issue in this small program is easy to find, the general procedure can be used on more complex code. This general procedure can be summarized as follows.
 
@@ -62,7 +62,7 @@ The lab has the following three sections.
 
 2. Uncheck the Security Development Lifecycle (SDL) checks.
 
-    ![win32 application wizard application settings](images/ttd-time-travel-walkthrough-application-wizard-application-settings.png) 
+    ![win32 application wizard application settings.](images/ttd-time-travel-walkthrough-application-wizard-application-settings.png) 
 
 3. Click on **Finish**.
 
@@ -144,7 +144,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 3. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the launch executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
-    ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-time-travel-walkthrough-recording-app.png)
+    ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen.](images/ttd-time-travel-walkthrough-recording-app.png)
 
 4. Check the **Record with Time Travel Debugging** box to record a trace when the executable is launched.
 
@@ -152,17 +152,17 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 6. When the "Configure recording" dialog box appears, Click **Record** to launch the executable and start recording.
 
-    ![Screen shot of WinDbg Preview showing configure recording dialog with apath set to temp](images/ttd-time-travel-walkthrough-recording-configure.png)
+    ![Screen shot of WinDbg Preview showing configure recording dialog with apath set to temp.](images/ttd-time-travel-walkthrough-recording-configure.png)
 
 7. The recording dialog appears indicating the trace is being recorded. Shortly after that, the application crashes.
 
 8. Click on **Close Program**, to dismiss the "DisplayGreeting has stopped working" dialog box.
 
-   ![Faulting app dialog box](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png)
+   ![Faulting app dialog box.](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png)
 
 9. When the program crashes, the trace file will be closed and written out to disk.
 
-    ![Screen shot of WinDbg Preview showing output with 1/1 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
+    ![Screen shot of WinDbg Preview showing output with 1/1 keyframes indexed.](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
 
 10. The debugger will automatically open the trace file and index it. Indexing is a process that enables efficient debugging of the trace file. This indexing process will take longer for larger trace files.
 
@@ -330,13 +330,13 @@ At the point of failure in trace it is common to end up a few steps after the tr
 
     Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that is ready to be executed at this point in the trace.
 
-    ![Screenshot of WinDbg Preview showing locals windows with memory ASCII output and source code window](images/ttd-time-travel-walkthrough-locals-window.png)
+    ![Screenshot of WinDbg Preview showing locals windows with memory ASCII output and source code window.](images/ttd-time-travel-walkthrough-locals-window.png)
 
 3. To further investigate, we can open up a memory window to view the contents near the base pointer memory address of *0x00effe44*.
 
 4. To display the associated ASCII characters, from the Memory ribbon, select **Text** and then **ASCII**.
 
-    ![screenshot of winbbg preview showing memory ascii output and source code window](images/ttd-time-travel-walkthrough-memory-ascii.png)
+    ![screenshot of winbbg preview showing memory ascii output and source code window.](images/ttd-time-travel-walkthrough-memory-ascii.png)
 
 5. Instead of the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint.
 
@@ -396,7 +396,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 2. Select **View** and then **Breakpoints** to confirm they are set as intended.
 
-    ![WinDbg Preview showing breakpoints window with one breakpoint](images/ttd-time-travel-walkthrough-view-breakpoints.png)
+    ![WinDbg Preview showing breakpoints window with one breakpoint.](images/ttd-time-travel-walkthrough-view-breakpoints.png)
 
 
 3.  From the Home menu, select **Go Back**  to travel back in time until the breakpoint is hit.
@@ -414,12 +414,12 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 4. Select **View** and then **Locals**. In the locals window we can see that the *destination* variable has only part of the message, while the *source* has contains all of the text. This information supports the idea that the stack was corrupted. 
 
-    ![Screenshot of WinDbg Preview locals window](images/ttd-time-travel-walkthrough-locals-window.png)
+    ![Screenshot of WinDbg Preview locals window.](images/ttd-time-travel-walkthrough-locals-window.png)
 
 
 5. At this point we can examine the program stack to see what code is active. From the **View** ribbon select **Stack**. 
 
-    ![Screenshot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
+    ![Screenshot of WinDbg Preview stack window.](images/ttd-time-travel-walkthrough-stack-window.png)
 
 
 As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a new breakpoint to investigate further. 
@@ -445,11 +445,11 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 4. Confirm that a Hardware Read breakpoint is active in the breakpoints window.
 
-    ![WinDbg Preview showing breakpoints window with one hardware read breakpoint](images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png)
+    ![WinDbg Preview showing breakpoints window with one hardware read breakpoint.](images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png)
 
 5. As we are wondering about the size of the greeting string we will set a watch window to display the value of sizeof(greeting). From the View ribbon, select **Watch** and provide *sizeof(greeting)*.
 
-    ![WinDbg Preview showing a watch locals window](images/ttd-time-travel-watch-locals.png)
+    ![WinDbg Preview showing a watch locals window.](images/ttd-time-travel-watch-locals.png)
 
 6. On the Time Travel menu, use **Time travel to start** or use the `!tt 0`command to move to the start of the trace.
 
@@ -493,7 +493,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 9. It looks like we have found the root cause. The *greeting* array that we declared is 50 characters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100).  
 
-    ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
+    ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64.](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
 
     As we look at the size issue further, we also notice that the message is 75 characters in length, 76 including the end of string character.
 
@@ -519,7 +519,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 1. An alternative way to perform this investigation would be to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array definition line in the source window will set a breakpoint there.
 
-    ![Screenshot of source window showing breakpoint set on std:array](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
+    ![Screenshot of source window showing breakpoint set on std:array.](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
 
 2. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 

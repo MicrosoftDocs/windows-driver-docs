@@ -26,7 +26,7 @@ The Web Services for Devices (WSD) API (WSDAPI) enables the following types of m
 
 As shown in the following figure, the WSDAPI Basic Interoperability Tool (WSDBIT) uses WSDAPI to send and receive DPWS messages. WSDBIT can be used to test the interoperability between WSDAPI running in a client and a DPWS stack running in a device.
 
-![diagram illustrating the wsdapi basic interoperability tool (wsdbit) and related components](images/wsdbit2.png)
+![diagram illustrating the wsdapi basic interoperability tool (wsdbit) and related components.](images/wsdbit2.png)
 
 The [interoperability scenarios](client-scenarios-for-wsdbit.md) are intended to verify the message format along with the protocols that are used in the preceding message exchanges. The scenarios are defined from the client perspective and are organized into the following categories:
 

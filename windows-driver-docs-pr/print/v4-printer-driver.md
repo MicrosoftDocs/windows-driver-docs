@@ -36,7 +36,7 @@ The v4 print driver model is also optimized for several new scenarios including 
 
 The following is a high-level representation of a v4 print driver. With the exception of the rendering filters and user interface applications, all the other functional blocks in the diagram are implemented by Microsoft. V4 print drivers rely heavily on data files and JavaScript for extensibility. The blue boxes represent existing files that were used in the v3 driver model, and the green boxes represent new places to plug in.
 
-![high level representation of v4 print driver](images/v4driverarch.png)
+![high level representation of v4 print driver.](images/v4driverarch.png)
 
 This section discusses the following aspects of the v4 printer driver:
 

@@ -19,7 +19,7 @@ Filter drivers can cancel send requests that were originated by the filter drive
 
 The following figure illustrates canceling a send request that was originated by a filter driver.
 
-![diagram illustrating canceling a send request that was originated by a filter driver](images/filtercancelsend.png)
+![diagram illustrating canceling a send request that was originated by a filter driver.](images/filtercancelsend.png)
 
 A filter driver calls the [**NDIS\_SET\_NET\_BUFFER\_LIST\_CANCEL\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndis_set_net_buffer_list_cancel_id) macro for each [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure that it creates for send operations. The NDIS\_SET\_NET\_BUFFER\_LIST\_CANCEL\_ID function marks the specified data with a cancellation identifier.
 
@@ -37,7 +37,7 @@ In *FilterSendNetBufferListsComplete*, a filter driver can call NDIS\_SET\_NET\_
 
 The following figure illustrates canceling a send request that was originated by an overlying driver.
 
-![diagram illustrating canceling a send request that was originated by an overlying driver](images/cancelfiltersend.png)
+![diagram illustrating canceling a send request that was originated by an overlying driver.](images/cancelfiltersend.png)
 
 Overlying drivers call a cancel send function ( [**NdisFCancelSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfcancelsendnetbufferlists) or [**NdisCancelSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscancelsendnetbufferlists)) to cancel outstanding send requests. These overlying drivers must mark the send data with a cancellation ID before making a send request.
 

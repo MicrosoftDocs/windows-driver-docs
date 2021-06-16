@@ -37,7 +37,7 @@ For each miniport adapter that it manages, an [NDIS miniport driver](ndis-minipo
 
 The following figure shows the interrelationships between these states.
 
-![diagram illustrating the miniport adapter state diagram](images/miniportstate.png)
+![diagram illustrating the miniport adapter state diagram.](images/miniportstate.png)
 
 **Note**  The reset operation does not affect miniport adapter operational states. Also, the state of the adapter might change while a reset operation is in progress. For example, NDIS might call a driver's pause handler when there is a reset operation in progress. In this case, the driver can complete either the reset or the pause operation in any order while following the normal requirements for each operation. For a reset operation, the driver can fail transmit request packets or it can keep them queued and complete them later. However, you should note that an overlying driver cannot complete a pause operation while its transmit packets are pending.
 

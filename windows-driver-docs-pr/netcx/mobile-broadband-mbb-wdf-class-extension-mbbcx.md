@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Starting in the next release of Windows 10, the Windows Driver Kit (WDK) includes a Mobile Broadband (MBB) WDF class extension that works with NetAdapterCx. MBB-NetAdapter client drivers are first and foremost fully fledged WDF client drivers, then they're NetAdapterCx client drivers just like other NIC drivers, and finally they're client drivers of the MBB class extension (MBBCx) that provides MBB media-specific functionality. The following block diagram illustrates the MBBCx architecture:
 
-![MbbCx architecture](images/MbbCx.png)
+![MbbCx architecture.](images/MbbCx.png)
 
 An MBB-NetAdapter client driver performs 3 categories of tasks based on its relationships with the framework:
 
