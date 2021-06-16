@@ -1,11 +1,11 @@
 ---
-title: Testing System Brightness Response
+title: Testing System Brightness and Color
 description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light testing solution.
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# Testing System Brightness and Color Response
+# Testing System Brightness and Color
 
 This topic provides instructions on how to test system brightness response by using the MALT (Microsoft Ambient Light Tool) tool.
 

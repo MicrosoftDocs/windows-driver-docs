@@ -138,8 +138,8 @@
       href: testing-MALT-building-a-light-testing-tool.md
     - name: "Getting Started with MALT"
       href: testing-MALT-getting-started.md
-    - name: "Testing System Brightness Response"
-      href: testing-MALT-system-brightness-response.md
+    - name: "Testing System Brightness and Color"
+      href: testing-MALT-system-brightness-and-color.md
     - name: "Testing Auto Brightness"
       href: testing-MALT-auto-brightness.md
     - name: "Testing Manual Brightness"
