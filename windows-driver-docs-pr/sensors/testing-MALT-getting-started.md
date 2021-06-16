@@ -50,3 +50,54 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
     ```console
     arduino-cli compile --fqbn arduino:avr:mega --port COMX --upload --library C:\MALT\Arduino-SerialCommand --library C:\MALT\SoftI2CMaster C:\MALT\busiotools\sensors\tools\MALT\Code\malt
     ```
+
+## Calibrating the MALT Color Sensors
+
+The MALT's color sensors do not come factory calibrated for real world colors. Below is the process for calibration to ensure you get an accurate reading. **Calibration for the MALT must be done for the ambient color sensor AND the screen color sensor.**
+
+1. Plug the MALT into a USB port on the SUT.
+
+2. Open [SensorExplorer](testing-sensor-explorer.md) and navigate to the MALT tab on the left (#3). Click the correct Vid/Pid in the "Select an Arduino Device pane" and then click "Connect to Device".
+
+    ![A screenshot of Sensor Explorer showing how to connect a serial device](images/connectdevice.png)
+
+3. Navigate to the Calibration tab by clicking "Calibration" at the top of the window.
+
+    ![A screenshot of Sensor Explorer showing how to navigate to the calibration tab](images/calibrationtab.png)
+
+4. Known color values are the key to any calibration process and come from a sensor that has already been calibrated and has correct values. Here, we will gather these values by using a hand-held externally calibrated device like the i1Display Pro to capture XYZ values and three colored light sources representing red, green, and blue (use the colored boxes below if desired). Any device with verifiably correct values (such as an existing calibrated PC) can be used to find these numbers. These XYZ values should be around the 0-100 range to be the most effective. Do this for a red display, a blue display, and a green display.
+
+    ![red block](images/red.jpg)   ![green block](images/green.jpg)   ![blue block](images/blue.jpg)
+
+    Put the observed values into the "Known Values" 3x3 matrix using the pattern below:
+    ```console
+    ┌                                                            ┐
+    │Known RED X Value | Known BLUE X Value | Known GREEN X Value│
+    │Known RED Y Value | Known BLUE Y Value | Known GREEN Y Value│
+    |Known RED Z Value | Known BLUE Z Value | Known GREEN Z Value│
+    └                                                            ┘
+    ```
+    ![Known values matrix](images/KnownValues.png)
+
+5. Raw or uncalibrated values are the values that come out of the currently uncalibrated MALT color sensor before any math or calibration is applied. Gather these values by pointing the MALT at the same display colors you gathered your known values from. This step is important and makes the equation reliable. Decide whether you are calibrating the screen facing sensor or the ambient facing sensor. This decision will determine which UI button to press when collecting the data.
+
+    Point the desired sensor at the below color blocks in order and select *either* "Read Screen" *or* "Read Ambient" (determined by the sensor you are calibrating) for each color. This will fill in the "Raw Uncalibrated Values" 3x3 matrix and should look similarly to what is pictured below.
+
+    ![red block](images/red.jpg)   ![green block](images/green.jpg)   ![blue block](images/blue.jpg)
+
+    ![Raw Values Matrix](images/RawValues.png)
+
+6. Once the Known Values and Raw Uncalibrated Values martices are populated, click the "Calculate" button at the bottom of the screen. The "Calibrated Values" 3x3 matrix should populate similarly to what is pictured below.
+
+    ![Calibrated Values Matrix](images/CalibratedValues.png)
+
+    Once these numbers have been generated, click *either* "Calibrate Top" *or* "Calibrate Bottom" (determined by the sensor you are calibrating)
+
+
+## Testing the MALT Calibration
+
+Once you have correctly calibrated **BOTH the screen color sensor AND the ambient color sensor**, return to the home page of the MALT section by clicking "Home" at the top of the window.
+
+![A screenshot of Sensor Explorer showing how to navigate to the home tab](images/calibrationtab.png)
+
+On the Home tab, you should be able to click any button under the "Sensor Data" heading and get non-negative numbers back.
