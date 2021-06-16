@@ -64,7 +64,7 @@ If the light fixture is mounted outside the box (on top), ensure the aperture wi
 
 ### Step 2 - Assemble sensors
 
-The MALT uses two light sensors (one to measure the screen brightness and one to measure the ambient brightness), and two color sensors (one to measure the screen color and one to measure the ambient color). To achieve these simultaneously, wire them such that one light sensor and one color sensor are facing away from the other two sensors. When the screen sensors are facing downwards (sitting on the screen), the other sensors are facing upwards to measure the ambient light.
+The MALT uses two light sensors (one to measure the screen brightness and one to measure the ambient brightness), and two color sensors (one to measure the screen color and one to measure the ambient color). To achieve these simultaneously, wire them such that one light sensor and one color sensor are facing away from the other two sensors. When the screen sensors are facing downwards (sitting on the screen), the other sensors are facing upwards to measure the ambient light and color.
 
 ![sensor rig.](images/sensor.png)
 
@@ -82,7 +82,11 @@ The following diagram shows how various parts of MALT are connected.
 
 Through the MALT PCB, we are able to connect the Arduino board to the sensor PCB and the light source. More details can be found in the MALT PCB KiCad project.
 
-### Step 4- Start testing
+### Step 4 - Configure and Calibrate the MALT
+
+Refer to [Getting Started with MALT](testing-MALT-getting-started.md) for instructions on configuring MALT firmware and calibrating the color sensors.
+
+### Step 4 - Start testing
 
 Refer to [Testing System Brightness Response](testing-MALT-system-brightness-response.md) for details on setting up and using the MALT you just assembled.
 
@@ -93,6 +97,8 @@ Refer to [Testing System Brightness Response](testing-MALT-system-brightness-res
 * [Testing Manual Brightness](testing-MALT-manual-brightness.md)
 
 * [Testing System Scenarios](testing-MALT-system-scenarios.md)
+
+### Custom Tests
 
 Refer to the  
 [microcontroller commands](testing-MALT-microcontroller-commands.md) api for using the MALT for creating custom tests.

@@ -5,7 +5,7 @@ ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# Testing System Brightness Response
+# Testing System Brightness and Color Response
 
 This topic provides instructions on how to test system brightness response by using the MALT (Microsoft Ambient Light Tool) tool.
 
@@ -21,7 +21,7 @@ Use [SensorExplorer](testing-sensor-explorer.md) to confirm the presence of an a
 
 ![Screenshot that shows "Sensor Explorer" in "View" mode with "LightSensor1" selected.](images/sensorexplorer.png)
 
-1. **Plug the MALT into a USB port on the SUT and upload the Arduino program to the microcontroller.** The Arduino program for MALT can be found on [GitHub](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/MALT) (also in the HLK). Upload it to the microcontroller. You may open **Arduino** > **Tools** > **Serial Monitor**, and verify that the [microcontroller commands](testing-MALT-auto-brightness.md) work as expected. Then, close the Serial Monitor so that it does not keep the COM port busy.
+1. **Plug the MALT into a USB port on the SUT.**
 
 2. **Install SensorExplorer on SUT.** See [Testing with SensorExplorer](testing-sensor-explorer.md)
 
