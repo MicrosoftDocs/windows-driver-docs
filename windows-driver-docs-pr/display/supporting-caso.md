@@ -40,23 +40,23 @@ Drivers declare support for each tier by setting the following [**DXGK_DRIVERCAP
 
 | Tier   | Tier Meaning | DXGK_VIDMMCAPS Value |
 | ----   | ------------ | -------------------- |
-| Tier 1 | Copy content in from discrete GPU to cross-adapter resources, and out from cross-adapter resources to the integrated GPU | **CrossAdapterResource** (Exposed to user mode by graphics kernel via the **SupportCrossAdapterResource** bit in [**D3DKMT_WDDM_1_3_CAPS**](/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmt_wddm_1_3_caps)) |
-| Tier 2 | Texture from cross-adapter resources) |  **CrossAdapterResourceTexture** (includes support for shader resource view, unordered access view, and render target operations |
-| Tier 3 | Scan-out of cross-adapter resources  | **CrossAdapterResourceScanout** |
+| Tier 1 | Copy support: copy content in from discrete GPU to cross-adapter resources, and out from cross-adapter resources to the integrated GPU | **CrossAdapterResource** (Exposed to user mode by graphics kernel via the **SupportCrossAdapterResource** bit in [**D3DKMT_WDDM_1_3_CAPS**](/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmt_wddm_1_3_caps)) |
+| Tier 2 | Texture support: texture from cross-adapter resources) |  **CrossAdapterResourceTexture** (includes support for shader resource view, unordered access view, and render target operations |
+| Tier 3 | CASO support: Scan-out from cross-adapter resources  | **CrossAdapterResourceScanout** |
 
 The graphics kernel will fail the adapter start if it does not indicate support in a superset manner for the three tiers. For example, **CrosssAdapterResource** must be set if **CrossAdapterResourceTexture** is set.
 
-#### Tier 1 (copy) support requirements
+#### Tier 1 support requirements
 
 Cross-adapter resources are still defined the same, as used for [WDDM 1.3 tier 1 copy support](using-cross-adapter-resources-in-a-hybrid-system.md).
 
-#### Tier 2 (texture) support requirements
+#### Tier 2 support requirements
 
 The requirements are similar to the D3D12 user-mode driver [**CrossAdapterRowMajorTextureSupported**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) capability (cap); that is, the device supports shader resource views, unordered access views, and render target views of cross-adapter row-major textures. However, while D3D12's **CrossAdapterRowMajorTextureSupported** requires support of all relevant texture formats, this tier 2 cap only requires support on the **DisplayScanOut** formats listed below, at minimum.
 
 Since D3D12's cap is a superset of this tier 2 cap, [**D3D12CreateDevice**](/windows/win32/api/d3d12/nf-d3d12-d3d12createdevice) will also verify that the kernel driver's **CrossAdapterResourceTexture** cap is set if its **CrossAdapterRowMajorTextureSupported** cap is set, and will fail the device creation if it is not.
 
-#### Tier 3 (CASO) support requirements
+#### Tier 3 support requirements
 
 The system must be able to perform the supported flipping capabilities, as declared by the driver in [**DXGK_FLIPCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_flipcaps), for cross-adapter resources of the following minimum specifications:
 
@@ -130,7 +130,7 @@ Drivers use the following three key DDIs to indicate whether cross-adapter scano
 On the 1-copy CASO path, DXGI creates the cross-adapter resource as primary on the display adapter, via **pfnCreateResource**. The driver should evaluate based on the resource properties whether it can scan out from it.
 
 If the driver supports scan-out based on the resource properties, DXGI will continue with the 1-copy CASO path.
-Otherwise, the driver should opt out of scan-outs by returning **DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT**, and DXGI will fall back to the 2-copy path. Note that this fall back should happen only if the resource properties are beyond the minimum requirements as listed [above](#tier-3-(caso)-support-requirements).
+Otherwise, the driver should opt out of scan-outs by returning **DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT**, and DXGI will fall back to the 2-copy path. Note that this fall back should happen only if the resource properties are beyond the minimum requirements as listed [above](#tier-3-support-requirements).
 
 * **pfnCheckMultiplaneOverlaySupport** DDI
 
