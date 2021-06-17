@@ -81,7 +81,9 @@
   - name: "WiFiCx message structure"
     href: wificx-message-structure.md
   - name: "WiFiCx TLVs"
-    items:
+    items: 
+    - name: "WDI_TLV_SSID"
+      href: wdi-tlv-ssid.md
   - name: "WiFiCx task commands"
     items:
   - name: "WiFiCx property commands"
