@@ -53,7 +53,7 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
 
 ## Calibrating the MALT Color Sensors
 
-The MALT's color sensors do not come factory calibrated for real world colors. Below is the process for calibration to ensure you get an accurate reading. **Calibration for the MALT must be done for the ambient color sensor AND the screen color sensor.**
+The MALT's color sensors do not come factory calibrated for real world colors. Below is the process for calibration to ensure you get an accurate reading. **Calibration for the MALT must be done for the ambient color sensor AND the screen color sensor.** This process only needs to be done once per sensor board ad the memory chips on the PCB will save the setting. To refresh the setting press the reset button on the arduino.
 
 1. Plug the MALT into a USB port on the SUT.
 
