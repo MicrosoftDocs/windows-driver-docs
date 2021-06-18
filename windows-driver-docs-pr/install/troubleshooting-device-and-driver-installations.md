@@ -49,7 +49,7 @@ Common device installation errors:
 <td align="left"><p>
 The device installation took too long and was stopped.  See the <a href="setupapi-text-logs.md" data-raw-source="[SetupApi logs](setupapi-text-logs.md)">SetupApi logs</a> for more information about the device installation and where the time was spent. Some common causes of timeouts are:
 <ul>
-<li>A co-installer executing for too long.  This could be because the co-installer is performing some unsupported operation that has hung or is too long running.  For example, a co-installer is executed in a non-interactive session, so it cannot do something that needs to wait on user input.  Co-installers are deprecated and should be avoided.  See [universal INFs](using-a-universal-inf-file.md) for more information.</li>
+<li>A co-installer executing for too long.  This could be because the co-installer is performing some unsupported operation that has hung or is too long running.  For example, a co-installer is executed in a non-interactive session, so it cannot do something that needs to wait on user input.  Co-installers are deprecated and should be avoided.  See <a href="using-a-universal-inf-file.md" data-raw-source="[universal INFs](using-a-universal-inf-file.md)">universal INFs</a> for more information.</li>
 <li>Starting a device at the end of device installation has hung.</li>
 </ul>
 </p></td>
