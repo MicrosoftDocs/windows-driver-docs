@@ -122,6 +122,8 @@
     items: 
     - name: "Introduction to HID over SPI"
       href: hid-over-spi.md
+    - name: "Architecture of HID over SPI"
+      href: architecture-and-overview-for-spi.md
 - name: "Non-HID legacy devices and drivers"
   items: 
   - name: "Non-HID legacy devices"
