@@ -1,7 +1,7 @@
 ---
 title: WiFiCx TLV generator/parser
-description: This section includes topics describing the TLV generator and parser shared library
-ms.date: 10/02/2021
+description: This section includes topics describing the WiFiCx TLV generator and parser shared library
+ms.date: 06/17/2021
 ms.localizationpriority: medium
 ---
 

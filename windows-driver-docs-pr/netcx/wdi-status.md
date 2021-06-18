@@ -3,7 +3,7 @@ title: WDI_STATUS
 description: This topic describes the WDI_STATUS data type for WiFiCx drivers.
 keywords:
 - WDI_STATUS, WiFiCx WDI_STATUS network drivers
-ms.date: 10/02/2021
+ms.date: 06/17/2021
 ms.localizationpriority: medium
 ---
 

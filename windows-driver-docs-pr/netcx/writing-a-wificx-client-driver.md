@@ -3,7 +3,7 @@ title: Writing a WiFiCx client driver
 description: Describes the behavior of the WiFiCx class extension.
 keywords:
 - WiFiCx WDF class extension, WiFiCx, WiFi NetAdapterCx
-ms.date: 10/02/2021
+ms.date: 06/17/2021
 ms.localizationpriority: medium
 ---
 

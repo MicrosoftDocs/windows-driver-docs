@@ -1,0 +1,48 @@
+---
+title: WDI_TLV_PMKID (dot11wificxtypes.h)
+description: WDI_TLV_PMKID is a WiFiCx TLV that contains a PMKID value.
+ms.date: 06/17/2021
+keywords:
+ - WDI_TLV_PMKID Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
+---
+
+# WDI\_TLV\_PMKID (dot11wificxtypes.h)
+
+
+WDI\_TLV\_PMKID is a TLV that contains a PMKID value.
+
+## TLV Type
+
+
+0x9F
+
+## Length
+
+
+The size (in bytes) of the array of UINT8 elements. The array must contain 1 or more elements.
+
+## Values
+
+
+| Type      | Description            |
+|-----------|------------------------|
+| UINT8\[\] | A 16-byte PMKID value. |
+
+ 
+
+## Requirements
+
+|Requirement|Value|
+|--- |--- |
+|Minimum supported client|WIN10_NEXT|
+|Minimum supported server|Windows Server 2022|
+|Header|dot11wificxtypes.h|
+
+ 
+
+ 
+
+
+
+
