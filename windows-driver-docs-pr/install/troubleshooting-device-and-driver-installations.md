@@ -8,7 +8,7 @@ keywords:
 - troubleshooting device installations WDK
 - Device setup WDK device installations , SetupAPI
 - installing devices WDK , SetupAPI
-ms.date: 04/20/2017
+ms.date: 06/17/2021
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +49,7 @@ Common device installation errors:
 <td align="left"><p>
 The device installation took too long and was stopped.  See the <a href="setupapi-text-logs.md" data-raw-source="[SetupApi logs](setupapi-text-logs.md)">SetupApi logs</a> for more information about the device installation and where the time was spent. Some common causes of timeouts are:
 <ul>
-<li>A co-installer executing for too long.  This could be because the co-installer is performing some unsupported operation that has hung or is too long running.  For example, a co-installer is executed in a non-interactive session, so it cannot do something that needs to wait on user input.  Co-installers are deprecated and should be avoided.  See universal INFs for more information.</li>
+<li>A co-installer executing for too long.  This could be because the co-installer is performing some unsupported operation that has hung or is too long running.  For example, a co-installer is executed in a non-interactive session, so it cannot do something that needs to wait on user input.  Co-installers are deprecated and should be avoided.  See [universal INFs](using-a-universal-inf-file.md) for more information.</li>
 <li>Starting a device at the end of device installation has hung.</li>
 </ul>
 </p></td>
@@ -63,7 +63,7 @@ The driver package being installed on the device did not specify an associated s
 <tr class="odd">
 <td align="left"><p>0xe0000248 (ERROR_DEVICE_INSTALL_BLOCKED)</p></td>
 <td align="left"><p>
-The installation of the device was blocked due to group policy settings.  For more information, see <a href="https://docs.microsoft.com/previous-versions/dotnet/articles/bb530324(v=msdn.10)">controlling device installation using Group Policy</a> and <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation">Mobile Device Management policies for device installation</a>.
+The installation of the device was blocked due to group policy settings.  For more information, see <a href="/previous-versions/dotnet/articles/bb530324(v=msdn.10)">controlling device installation using Group Policy</a> and <a href="/windows/client-management/mdm/policy-csp-deviceinstallation">Mobile Device Management policies for device installation</a>.
 </p></td>
 </tr>
 <tr class="even">
