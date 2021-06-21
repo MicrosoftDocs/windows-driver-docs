@@ -27,16 +27,16 @@ UpdateAutoLogger=session-name,update-autologger-install-section
 
 ## Entries
 
-<a href="" id="session-name"></a>*session-name*
+<a href="" id="session-name"></a>*session-name*  
 Specifies the name of the AutoLogger session that will be added. This name needs to be unique among the set of AutoLogger sessions on a machine.
 
 <a href="" id="SessionGUID"></a>*SessionGUID*  
 Specifies the GUID value that identifies the AutoLogger session. This can be expressed as an explicit GUID value of the form `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` or as a %strkey% token defined to `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` in a [**Strings**](inf-strings-section.md) section of the INF file.
 
-<a href="" id="add-autologger-install-section"></a>*add-autologger-install-section*
+<a href="" id="add-autologger-install-section"></a>*add-autologger-install-section*  
 References an INF-writer-defined section that contains information for registering the AutoLogger. For more information, see the following **Remarks** section.
 
-<a href="" id="update-autologger-install-section"></a>*update-autologger-install-section* 
+<a href="" id="update-autologger-install-section"></a>*update-autologger-install-section*  
 References an INF-writer-defined section that contains information for adding providers to an existing AutoLogger. For more information, see the following **Remarks** section.
 
 ## Remarks
@@ -79,15 +79,15 @@ An **UpdateAutoLogger** directive must reference a named *update-autologger-inst
 
 Each *update-autologger-install-section* can specify one or more AutoLogger providers using **AddAutoLoggerProvider**, each on a separate line. For more information about AutoLogger providers in an INF file, see [Adding AutoLogger Providers](#adding-autologger-providers) below.
 
-## Add-AutoLogger-Install-Section Entires and Values
+## Add-AutoLogger-Install-Section Entries and Values
 
-<a href="" id="start-value"></a>**Start**=*0 | 1*
+<a href="" id="start-value"></a>**Start**=*0 | 1*  
 Specifies whether the AutoLogger will start the next time the computer is restarted. To start the AutoLogger, set this value to 1, otherwise, set this value to 0.
 
-<a href="" id="buffersize-buffer-size"></a>**BufferSize**=*buffer-size*
+<a href="" id="buffersize-buffer-size"></a>**BufferSize**=*buffer-size*  
 Optionally specifies the size of each buffer, in kilobytes. **BufferSize** should be less than one megabyte. ETW uses the size of physical memory to calculate this value if it is not set.
 
-<a href="" id="clocktype-clock-type"></a>**ClockType**=*clock-type*
+<a href="" id="clocktype-clock-type"></a>**ClockType**=*clock-type*  
 Optionally specifies the timer to use when logging the time stamp for each event using the following numeric values, expressed either in decimal or, as shown in the following list, in hexadecimal notation. If omitted, this defaults to **0x1** (Performance Counter Value). 
 
 **0x1** (Performance Counter Value)
@@ -98,31 +98,31 @@ Optionally specifies the timer to use when logging the time stamp for each event
 
 For a description of each clock type, see the ClientContext member of [WNODE_HEADER](/windows/win32/etw/wnode-header). 
 
-<a href="" id="disablerealtimepersistence-value"></a>**DisableRealtimePersistense**=*0 | 1*
+<a href="" id="disablerealtimepersistence-value"></a>**DisableRealtimePersistense**=*0 | 1*  
 Optionally allows disabling of real time persistence by setting value to 1. The default is 0 (enabled). If real time persistence is enabled, real-time events that were not delivered by the time the computer was shutdown will be persisted. The events will then be delivered to the consumer the next time the consumer connects to the session.
 
-<a href="" id="filename-file-name"></a>**FileName**=*file-name*
+<a href="" id="filename-file-name"></a>**FileName**=*file-name*  
 Optionally specifies the fully qualified path of the log file. If the path does not exist, there will be a best effort creation the first time the AutoLogger starts. The length of **FileName** is limited to 1024 characters. The file is a sequential log file. The default file path is %DriverData%\\\<SessionName>.etl.
 
-<a href="" id="filemax-file-max"></a>**FileMax**=*file-max*
+<a href="" id="filemax-file-max"></a>**FileMax**=*file-max*  
 Optionally specifies the maximum number of instances of the log file that ETW creates. Once the maximum number of files has been created, ETW overwrites the first file, if it exists. The maximum number of instances of the log file that is supported is 16. Do not use this feature with the EVENT_TRACE_FILE_MODE_NEWLINE **LogFileMode**.
 
-<a href="" id="flushtimer-flush-timer"></a>**FlushTimer**=*flush-timer*
+<a href="" id="flushtimer-flush-timer"></a>**FlushTimer**=*flush-timer*  
 Optionally specifies how often, in seconds, the trace buffers are forcibly flushed. The minimum flush time is 1 second. The default value is 0. By default, buffers are flushed only when they are full. 
 
-<a href="" id="logfilemode-log-file-mode"></a>**LogFileMode**=*log-file-mode*
+<a href="" id="logfilemode-log-file-mode"></a>**LogFileMode**=*log-file-mode*  
 Optionally specifies one or more log modes. For possible values, see [Logging Mode Constants](/windows/win32/etw/logging-mode-constants). The default value is **0x1** (EVENT_TRACE_FILE_MODE_SEQUENTIAL).
 
-<a href="" id="maxfilesize-max-file-size"></a>**MaxFileSize**=*max-file-size*
+<a href="" id="maxfilesize-max-file-size"></a>**MaxFileSize**=*max-file-size*  
 Optionally specifies the maximum file size of the log file, in megabytes. The session is closed when the maximum size is reached, unless EVENT_TRACE_FILE_MODE_CIRCULAR is specified in **LogFileMode**. To specify no limit, set value to 0. The default value is 100 mb. The behavior that occurs when the maximum file size is reached depends on the value of **LogFileMode**. 
 
-<a href="" id="maximumbuffers-maximum-buffers"></a>**MaximumBuffers**=*maximum-buffers*
+<a href="" id="maximumbuffers-maximum-buffers"></a>**MaximumBuffers**=*maximum-buffers*  
 Optionally specifies the maximum number of buffers to allocate, typically the minimum number of buffers plus twenty. This value must be greater than or equal to the value of **MinimumBuffers**. 
 
-<a href="" id="minimumbuffers-minimum-buffers"></a>**MinimumBuffers**=*minimum-buffers*
+<a href="" id="minimumbuffers-minimum-buffers"></a>**MinimumBuffers**=*minimum-buffers*  
 Optionally specifies the minimum number of buffers to allocate at startup. The minimum number of buffers you can specify is two buffers per processor. 
 
-<a href="" id="addautologgerprovider-providerguid-autologger-provider-installsection"></a>**AddAutoLoggerProvider**=*{ProviderGUID}*,*autologger-provider-install-section*
+<a href="" id="addautologgerprovider-providerguid-autologger-provider-installsection"></a>**AddAutoLoggerProvider**=*{ProviderGUID}*,*autologger-provider-install-section*  
 Optionally specifies a provider with a sub-directive that references an INF-writer-defined autologger-provider-install-section elsewhere in the INF file. For more information, see the following [Adding AutoLogger Providers](#adding-autologger-providers) section.
 
 ## Adding AutoLogger Providers
@@ -146,16 +146,16 @@ An AddAutoLoggerProvider sub-directive must also reference an *autologger-provid
 
 ## AutoLogger-Provider-Install-Section Entries and Values 
 
-<a href="" id="enabled-value"></a>**Enabled**=*0 | 1*
+<a href="" id="enabled-value"></a>**Enabled**=*0 | 1*  
 Optionally supplies whether the provider is enabled. To enable the provider, set this value to 1. To disable, set the value to 0. The default value is 0.
 
-<a href="" id="enableflags-enable-flags"></a>**EnableFlags**=*enable-flags*
+<a href="" id="enableflags-enable-flags"></a>**EnableFlags**=*enable-flags*  
 Optionally specifies the class of events for which the provider generates events. For details, see the *EnableFlags* parameter of the [EnableTraceEx](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. Specify this value name if the provider does not support **MatchAnyKeyword** or **MatchAllKeyword**. 
 
-<a href="" id="enablelevel-enable-level"></a>**EnableLevel**=*enable-level*
+<a href="" id="enablelevel-enable-level"></a>**EnableLevel**=*enable-level*  
 Optionally supplies the level of detail included in the event. For a list of predefined levels, see the *Level* parameter of the [EnableTraceEx](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. 
 
-<a href="" id="enableproperty-enable-property"></a>**EnableProperty**=*enable-property*
+<a href="" id="enableproperty-enable-property"></a>**EnableProperty**=*enable-property*  
 Optionally supplies the inclusion of one or more of the following items in the log file: 
 
 **0x00000001** (EVENT_ENABLE_PROPERTY_SID) = Include in the extended data the security identifier (SID) of the user.
@@ -174,10 +174,10 @@ Optionally supplies the inclusion of one or more of the following items in the l
 
 **0x00000200** (EVENT_ENABLE_PROPERTY_EXCLUDE_INPRIVATE) = Filters out all events that are either marked as an InPrivate event or come from a process that is marked as InPrivate.
 
-<a href="" id="matchanykeyword-match-any-keyword"></a>**MatchAnyKeyword**=*match-any-keyword*
+<a href="" id="matchanykeyword-match-any-keyword"></a>**MatchAnyKeyword**=*match-any-keyword*  
 Optionally supplies a bitmask of keywords that determine the category of events that you want the provider to write. The provider writes the event if any of the event’s keyword bits match any of the bits set in this mask. To specify that the provider writes all events, set this value to zero. For an example, see the Remarks section of the [EnableTraceEx](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. 
 
-<a href="" id="matchallkeyword-match-all-keyword"></a>**MatchAllKeyword**=*match-all-keyword*
+<a href="" id="matchallkeyword-match-all-keyword"></a>**MatchAllKeyword**=*match-all-keyword*  
 Optionally restricts the category of events that you want the provider to write. If the event’s keyword meets the **MatchAnyKeyword** condition, the provider will write the event only if all of the bits in this mask exist in the event’s keyword. This mask is not used if **MatchAnyKeyword** is zero. For an example, see the Remarks section of the [EnableTraceEx](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) function.
 
 ## Examples

@@ -836,6 +836,8 @@
     href: inf-version-section.md
 - name: "INF Directives"
   items: 
+  - name: "INF AddAutoLogger and UpdateAutoLogger Directives"
+    href: inf-addupdateautologger-directive.md
   - name: "INF AddComponent Directive"
     href: inf-addcomponent-directive.md
   - name: "INF AddEventProvider Directive"
