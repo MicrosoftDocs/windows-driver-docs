@@ -90,6 +90,7 @@ NDIS_STATUS MiniportInitializeEx(
 
 |Requirement|Value|
 |-|-|
+|Minimum supported client|WIN10_NEXT|
 |Minimum supported server|Windows Server 2022|
 |NDIS Version| NDIS 6.82 and later|
 |Header|Ntddndis.h (include Ndis.h)|

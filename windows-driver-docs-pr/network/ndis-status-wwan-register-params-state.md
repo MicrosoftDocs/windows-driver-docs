@@ -23,6 +23,7 @@ For more information see [OID_WWAN_REGISTER_PARAMS](/windows-hardware/drivers/ne
 
 |Requirement|Value|
 |-|-|
+|Minimum supported client|WIN10_NEXT|
 |Version|Windows Server 2022. NDIS 6.84 and later.|
 |Header|Ndis.h|
 
