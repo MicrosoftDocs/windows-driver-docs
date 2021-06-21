@@ -124,7 +124,7 @@ With your KMDF driver deployed to the target computer, now you'll install the dr
 
         A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
-        :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="screenshot of driver installation warning":::
+        :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="screenshot of driver installation warning.":::
 
 ## Debug the driver
 

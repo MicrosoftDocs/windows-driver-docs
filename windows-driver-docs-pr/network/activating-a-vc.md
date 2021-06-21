@@ -16,11 +16,11 @@ ms.localizationpriority: medium
 
 After a virtual connection (VC) has been created (see [Creating a VC](creating-a-vc.md)), it must be activated before data can be transmitted or received on it. A call manager initiates the activation of a VC by calling [**NdisCmActivateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmactivatevc)(see the following figure).
 
-![diagram illustrating a call manager initiating vc activation](images/cm-07.png)
+![diagram illustrating a call manager initiating vc activation.](images/cm-07.png)
 
 An MCM driver initiates the activation of a VC by calling [**NdisMCmActivateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmactivatevc)(see the following figure).
 
-![diagram illustrating an mcm driver initiating vc activation](images/fig1-07.png)
+![diagram illustrating an mcm driver initiating vc activation.](images/fig1-07.png)
 
 A call manager or MCM driver could initiate reactivation of an active VC if the local client or a remote party successfully negotiates a change in call parameters on that VC (see [Client-Initiated Request to Close a Call](client-initiated-request-to-close-a-call.md) and [Incoming Request to Change Call Parameters](incoming-request-to-change-call-parameters.md)). The call manager or MCM driver can call **Ndis(M)CmActivateVc** many times for a single VC to change the call parameters for an already active call.
 

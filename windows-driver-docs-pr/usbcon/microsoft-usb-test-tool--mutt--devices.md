@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 - Description of MUTT devices
 - The manufactures listed in this section sell MUTT hardware boards required to run interoperability tests.
-- [![download the mutt software package](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621) the MUTT software package to get the latest version of the test tools.
+- [![download the mutt software package.](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621) the MUTT software package to get the latest version of the test tools.
 
 The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack. This section provides a brief overview of the different types of MUTT devices, the tests you can run by using the device, and suggests topologies for controller, hub, device, and BIOS/UEFI testing.
 
@@ -45,7 +45,7 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 - Compatible with **FX2** capabilities, such as high speed and full speed transfers to bulk, isochronous, control, interrupt endpoints.
 - Simulates traffic from USB 2.0 devices.
 
-    ![mutt device](images/fig1-mutt-device.png)
+    ![mutt device.](images/fig1-mutt-device.png)
 
 ## MUTT Pack
 
@@ -57,32 +57,32 @@ The MUTT Pack is a combination of a USB 2.0 hub and an FX2 device that controls 
 - Simulates USB 2.0 hub behavior.
 - Can operate in self-powered or bus-powered modes.
 
-    ![mutt pack device](images/fig2-muttpackdevice.png)
+    ![mutt pack device.](images/fig2-muttpackdevice.png)
 
 The MUTT Pack has two USB connectors. The standard B connector is used to plug the MUTT Pack in to the host system. The standard A connector is downstream of the embedded hub on the MUTT Pack, and can be used for additional device testing (discussed later in this document).
 
-![mutt pack connectors](images/fig3-muttpackconnectors.png)
+![mutt pack connectors.](images/fig3-muttpackconnectors.png)
 
 ### How to power the MUTT Pack
 
 The MUTT Pack uses a small jumper (see Figure 3) to switch between self-powered and bus-powered modes. In bus-powered mode, the USB bus of the host system powers the MUTT Pack. In self-powered mode, the MUTT Pack is powered with an external 5V power adapter.
 
-![mutt pack powering flowchart](images/fig4-muttpackpoweringflowchart.png)
+![mutt pack powering flowchart.](images/fig4-muttpackpoweringflowchart.png)
 
 Use the following flow chart to determine how to power the MUTT Pack:
 
 > [!NOTE]
 > Do not use the MUTT Pack without the power jumper.
 
-![incorrect usage](images/fig5-muttpackincorrectusage.png)
+![incorrect usage.](images/fig5-muttpackincorrectusage.png)
 
 This image shows how to use the jumper for powering the MUTT Pack by the USB bus of the host system:
 
-![mutt pack bus powered](images/fig6-muttpackbuspowered.png)
+![mutt pack bus powered.](images/fig6-muttpackbuspowered.png)
 
 This image shows how to use the jumper for powering the MUTT pack with an external power adapter:
 
-![mutt pack self powered](images/fig7-muttpackselfpowered.png)
+![mutt pack self powered.](images/fig7-muttpackselfpowered.png)
 
 **Note**  Disconnect any existing power adapters and the cable to the host system when you are changing the jumper on the MUTT Pack.
 
@@ -93,7 +93,7 @@ This image shows how to use the jumper for powering the MUTT pack with an extern
 - Simulates USB 3.0 device traffic.
 - Note: this device does not support operation at Low Speed.
 
-    ![supermutt](images/fig8-supermutt.png)
+    ![supermutt.](images/fig8-supermutt.png)
 
 ## SuperMUTT Pack
 
@@ -101,7 +101,7 @@ The SuperMUTT Pack is two devices in one. It is a USB 3.0 hub with a Cypress FX2
 
 **Note**  The downstream device is a 2.0 device, not a USB 3.0 device.
 
-![supermutt pack](images/supermuttpack.png)
+![supermutt pack.](images/supermuttpack.png)
 
 ## DR MUTT
 
@@ -111,7 +111,7 @@ The DR MUTT acts like a SuperMutt when testing host mode of the device under tes
 
 The USB Type-C Connection Exerciser (USB Type-C ConnEx) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md).
 
-![USB Type-C ConnEx](images/connexc-side.jpg)
+![USB Type-C ConnEx.](images/connexc-side.jpg)
 
 ## Related topics
 

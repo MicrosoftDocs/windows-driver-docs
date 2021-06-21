@@ -16,7 +16,7 @@ A driver registers a [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_d
 
 To queue the *DpcForIsr* routine for execution, the driver's ISR calls [**IoRequestDpc**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdpc) just before it returns. The following figure illustrates calls to these routines.
 
-![diagram illustrating using a dpc object for a dpcforisr routine](images/3dpcisr.png)
+![diagram illustrating using a dpc object for a dpcforisr routine.](images/3dpcisr.png)
 
 As the previous figure shows, calling **IoInitializeDpcRequest** associates a DPC object with a driver-supplied *DpcForIsr* routine and a driver-created device object. The I/O manager allocates memory for the DPC object and calls [**KeInitializeDpc**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc) on the driver's behalf.
 

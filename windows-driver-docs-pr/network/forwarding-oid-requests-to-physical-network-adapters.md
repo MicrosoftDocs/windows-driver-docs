@@ -16,11 +16,11 @@ In this configuration, an extensible switch extension is exposed to every networ
 
 The following figure shows an example of an extensible switch team for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram of the oid control path for ndis 6.40](images/vswitch-oid-controlpath2-ndis640.png)
+![diagram of the oid control path for ndis 6.40.](images/vswitch-oid-controlpath2-ndis640.png)
 
 The following figure shows an example of an extensible switch team for NDIS 6.30 (Windows Server 2012).
 
-![diagram of extensible switch team for ndis 6.30](images/vswitch-oid-controlpath2.png)
+![diagram of extensible switch team for ndis 6.30.](images/vswitch-oid-controlpath2.png)
 
 **Note**  In the Hyper-V extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 

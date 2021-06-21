@@ -21,7 +21,7 @@ The security identifier is used by Windows as the definitive value to distinguis
 
 The following figure illustrates the security identifier structure.
 
-![diagram illustrating the security identifier structure](images/fssecurity-02.png)
+![diagram illustrating the security identifier structure.](images/fssecurity-02.png)
 
 In addition to unique SIDs, the Windows system defines a set of well known identifiers. For example, the local Administrator is such a well-known SID. Windows provides an in-kernel mechanism for converting between SIDs and user names within the kernel environment. These function calls are available from the ksecdd driver, which implements these functions by using user-mode helper services. Accordingly, their use within file systems must obey the usual rules for communication with user-mode services. These calls cannot be used during paging file I/O.
 

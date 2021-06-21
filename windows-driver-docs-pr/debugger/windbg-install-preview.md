@@ -9,7 +9,7 @@ ms.localizationpriority: High
 
 ## Installation
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 This section describes how to install the WinDbg Preview debugger.
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 On MIcrosoft Windows 98, the still image core components are as shown in the following figure.
 
-![diagram illustrating the windows 98 core components](images/stiwin98.png)
+![diagram illustrating the windows 98 core components.](images/stiwin98.png)
 
 On the server side, three core components communicate with *sti.dll*: *stimon.exe*, *sti\_ci.dll*, and *sticpl.cpl*. These components are, respectively, the still image event monitor, the class installer, and the Scanners and Cameras Control Panel application. *Sti\_ci.dll* is invoked only when a new still image device is installed or removed, and *sticpl.cpl* is invoked only to do configuration chores.
 

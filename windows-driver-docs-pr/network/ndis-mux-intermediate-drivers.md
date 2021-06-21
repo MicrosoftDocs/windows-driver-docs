@@ -22,13 +22,13 @@ In a one-to-*n* configuration, a single MUX intermediate driver can bind to many
 
 The following figure illustrates a one-to-*n* MUX intermediate driver configuration.
 
-![diagram illustrating a one-to-n mux intermediate driver configuration](images/1tonmux.png)
+![diagram illustrating a one-to-n mux intermediate driver configuration.](images/1tonmux.png)
 
 In an *n*-to-one configuration, a MUX intermediate driver can expose many virtual miniports for a single physical adapter below. Overlying protocol drivers bind to these virtual miniports of the MUX intermediate driver in the same way that they bind to nonvirtual miniports. The MUX intermediate driver handles requests and sends that are submitted to the driver for specific connections at each virtual miniport. The driver repackages and transfers these requests and sends down to the NDIS miniport driver for the bound physical adapter.
 
 The following figure illustrates an *n*-to-one MUX intermediate driver configuration.
 
-![diagram illustrating an n-to-one mux intermediate driver configuration](images/nto1mux.png)
+![diagram illustrating an n-to-one mux intermediate driver configuration.](images/nto1mux.png)
 
 MUX intermediate drivers require a notify object DLL. When a MUX intermediate driver is initialized, its bindings are determined by the configuration established by its notify object DLL. For more information about installing MUX intermediate drivers, see [MUX Intermediate Driver Installation](mux-intermediate-driver-installation.md).
 

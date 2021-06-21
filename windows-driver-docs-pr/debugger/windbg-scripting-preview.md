@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 This section describes how to use the scripting support in the WinDbg Preview.
 
-![Screen shot of scripting menu in debugger](images/windbgx-javascript-new-script.png)
+![Screen shot of scripting menu in debugger.](images/windbgx-javascript-new-script.png)
 
 The WinDbg Preview script window features basic syntax highlighting, IntelliSense, and error recognition. 
 

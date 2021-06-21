@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Together, the battery class driver and the miniclass driver manage the computer's use of a battery. The following figure shows how these two drivers interact.
 
-![diagram illustrating the interaction of battery class and miniclass drivers](images/battmini.png)
+![diagram illustrating the interaction of battery class and miniclass drivers.](images/battmini.png)
 
 The miniclass driver is the primary function driver for the devices it controls. It receives IRPs from the power manager through the composite battery driver and calls support routines in the battery class driver to register its devices, to report status, and to handle certain system-defined battery IOCTLs.
 

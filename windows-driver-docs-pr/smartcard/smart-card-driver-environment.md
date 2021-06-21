@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following figure shows the standard environment for the smart card reader driver.
 
-![diagram illustrating the standard environment for the smart card reader driver](images/memp1.png)
+![diagram illustrating the standard environment for the smart card reader driver.](images/memp1.png)
 
 In addition, the figure shows the following components of the smart card environment:
 

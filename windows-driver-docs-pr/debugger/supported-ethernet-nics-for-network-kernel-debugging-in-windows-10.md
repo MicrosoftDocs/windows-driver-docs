@@ -1,7 +1,7 @@
 ---
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10
 description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 10.
-ms.date: 06/12/2020
+ms.date: 04/20/2021
 ms.localizationpriority: medium
 ---
 
@@ -17,12 +17,13 @@ To do kernel debugging over a network cable, the target computer must have a sup
 
 This topic lists the supported adapters for the following versions of Windows
 
-- Windows 10, version 2004 (20H1) Build 19041
-- Windows Server 2019
+- Windows 10, version 20H2 Build 19042
 
 ## Adapter Support for Previous Releases of Windows 10
 
 See these topics for information on supported versions of NICs in previous versions of Windows 10.
+
+[Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 2004](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-2004.md)
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1909](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1909.md)
 
@@ -68,6 +69,12 @@ For vendor ID 8086, these device IDs are supported:
 043C
 0440
 0470
+0D4E
+0D4F
+0D4C
+0D4D
+0D53
+0D55
 1000
 1001
 1004
@@ -246,6 +253,11 @@ For vendor ID 8086, these device IDs are supported:
 15E1
 15E2
 15E3
+15F4
+15F9
+15FA
+15FB
+15FC
 17D0
 1F40
 1F41
@@ -725,6 +737,49 @@ This is the same information shown above in the XML format.
       <deviceid>15AC</deviceid>
       <deviceid>15AD</deviceid>
       <deviceid>15AE</deviceid>
+      <deviceid>0D4E</deviceid>
+      <deviceid>0D4F</deviceid>
+      <deviceid>0D4C</deviceid>
+      <deviceid>0D4D</deviceid>
+      <deviceid>0D53</deviceid>
+      <deviceid>0D55</deviceid>
+      <deviceid>15FB</deviceid>
+      <deviceid>15FC</deviceid>
+      <deviceid>15F9</deviceid>
+      <deviceid>15FA</deviceid>
+      <deviceid>15F4</deviceid>
+      <deviceid>15F5</deviceid>
+      <deviceid>1A1E</deviceid>
+      <deviceid>1A1F</deviceid>
+      <deviceid>1A1C</deviceid>
+      <deviceid>1A1D</deviceid>
+      <deviceid>550A</deviceid>
+      <deviceid>550B</deviceid>
+      <deviceid>550C</deviceid>
+      <deviceid>550D</deviceid>
+      <deviceid>1572</deviceid>
+      <deviceid>1574</deviceid>
+      <deviceid>1580</deviceid>
+      <deviceid>1581</deviceid>
+      <deviceid>1583</deviceid>
+      <deviceid>1584</deviceid>
+      <deviceid>1585</deviceid>
+      <deviceid>1586</deviceid>
+      <deviceid>1587</deviceid>
+      <deviceid>1588</deviceid>
+      <deviceid>1589</deviceid>
+      <deviceid>158A</deviceid>
+      <deviceid>158B</deviceid>
+      <deviceid>37D0</deviceid>
+      <deviceid>37CC</deviceid>
+      <deviceid>37D2</deviceid>
+      <deviceid>37CE</deviceid>
+      <deviceid>37CF</deviceid>
+      <deviceid>37D0</deviceid>
+      <deviceid>37D1</deviceid>
+      <deviceid>37D2</deviceid>
+      <deviceid>37D3</deviceid>
+      <deviceid>37D4</deviceid>
   </NIC>
 
   <NIC>
@@ -889,6 +944,48 @@ This is the same information shown above in the XML format.
       <deviceid>16F1</deviceid>
       <deviceid>1614</deviceid>
       <deviceid>D802</deviceid>
+      <deviceid>1604</deviceid>
+      <deviceid>1605</deviceid>
+      <deviceid>1606</deviceid>
+      <deviceid>1607</deviceid>
+      <deviceid>1608</deviceid>
+      <deviceid>1609</deviceid>
+      <deviceid>D804</deviceid>
+      <deviceid>D812</deviceid>
+      <deviceid>D814</deviceid>
+      <deviceid>D818</deviceid>
+      <deviceid>D82A</deviceid>
+      <deviceid>D82B</deviceid>
+      <deviceid>D82C</deviceid>
+      <deviceid>D82D</deviceid>
+      <deviceid>D82E</deviceid>
+      <deviceid>D82F</deviceid>
+      <deviceid>1902</deviceid>
+      <deviceid>1903</deviceid>
+      <deviceid>1906</deviceid>
+      <deviceid>1907</deviceid>
+      <deviceid>190A</deviceid>
+      <deviceid>190B</deviceid>
+      <deviceid>1799</deviceid>
+      <deviceid>1041</deviceid>
+      <deviceid>1042</deviceid>
+      <deviceid>1043</deviceid>
+      <deviceid>1750</deviceid>
+      <deviceid>1751</deviceid>
+      <deviceid>1752</deviceid>
+      <deviceid>1800</deviceid>
+      <deviceid>1801</deviceid>
+      <deviceid>1802</deviceid>
+      <deviceid>1803</deviceid>
+      <deviceid>1804</deviceid>
+      <deviceid>1805</deviceid>
+      <deviceid>1806</deviceid>
+      <deviceid>1807</deviceid>
+      <deviceid>1808</deviceid>
+      <deviceid>1809</deviceid>
+      <deviceid>16C1</deviceid>
+      <deviceid>16C5</deviceid>
+      <deviceid>16BD</deviceid>
   </NIC>
 
   <NIC>

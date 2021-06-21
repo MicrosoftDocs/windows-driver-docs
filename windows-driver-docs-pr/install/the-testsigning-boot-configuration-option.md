@@ -42,7 +42,7 @@ Bcdedit.exe -set TESTSIGNING OFF
 
 The following figure shows the result of using the BCDEdit command line to enable test-signing.
 
-![Screen shot of the results of using testsigning, a boot configuration option](images/driver-signing-enable-vista-test-signing.png)
+![Screen shot of the results of using testsigning, a boot configuration option.](images/driver-signing-enable-vista-test-signing.png)
 
 
 ## Behavior of Windows when loading test-signed code is enabled

@@ -17,7 +17,7 @@ This section does not contain information about Sermouse, the Windows system fun
 
 Windows 8 uses the following driver stack for non-HID keyboard, mouse, and touchpad hardware. The only non-HID Transport supported on Windows 8 is PS2.
 
-![non-hid driver stack](images/non-hid-driver-stack.png)
+![non-hid driver stack.](images/non-hid-driver-stack.png)
 
  
 

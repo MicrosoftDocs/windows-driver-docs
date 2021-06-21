@@ -17,25 +17,25 @@ This section depicts scanner and camera item trees in Windows Vista, along with 
 
 The following figure shows a camera item tree and the flags in the WIA\_ITEM\_FLAGS property that must be set.
 
-![diagram illustrating a camera tree with wia item flags](images/art-film-tree1.png)
+![diagram illustrating a camera tree with wia item flags.](images/art-film-tree1.png)
 
 In the preceding figure, the tree on the left represents the camera item tree. The balloons on the right contain the WIA item flags that such a device would need to use.
 
 The following diagram shows a camera item tree and the category in the WIA\_IPA\_ITEM\_CATEGORY property that must be set.
 
-![diagram illustrating a camera tree showing a category](images/art-film-tree2.png)
+![diagram illustrating a camera tree showing a category.](images/art-film-tree2.png)
 
 In the preceding figure, the tree on the left represents the camera item tree. The balloon on the right contains the category that such a device would need to use.
 
 The following diagram shows the item tree for a scanner with a document feeder and a film scanner, and the flags in the WIA\_ITEM\_FLAGS property that must be set.
 
-![diagram illustrating the item tree for a scanner with a document feeder and a film scanner, and the wia item flags](images/art-flatbed-tree1.png)
+![diagram illustrating the item tree for a scanner with a document feeder and a film scanner, and the wia item flags.](images/art-flatbed-tree1.png)
 
 In the preceding figure, the tree on the left represents the scanner item tree. The balloons on the right contain the WIA item flags that such a device would need to use.
 
 The following figure shows the item tree for a scanner, and the categories in the WIA\_IPA\_ITEM\_CATEGORY property that must be set.
 
-![diagram illustrating the item tree for a scanner, and the categories that must be set](images/art-flatbed-tree2.png)
+![diagram illustrating the item tree for a scanner, and the categories that must be set.](images/art-flatbed-tree2.png)
 
 In the preceding figure, the tree on the left represents the scanner item tree. The balloons on the right contain the categories in the WIA\_IPA\_ITEM\_CATEGORY property that such a device must set.
 

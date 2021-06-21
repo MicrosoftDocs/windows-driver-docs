@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The Euro symbol, as shown in the following figure, is the currency symbol for the basic monetary unit used in countries/regions of the European Union.
 
-![figure of the euro symbol](images/euro.png)
+![figure of the euro symbol.](images/euro.png)
 
 The AddEuro feature adds this symbol to the printer's device font. When AddEuro is enabled, a Euro symbol that appears on a display device will also be printed on paper when the document is sent to a printer. If this feature is unavailable or disabled, a user who selects an unaliased device font will be able to see a Euro symbol on the screen, but will see a large circular dot on paper. With this feature enabled, a user can print the Euro symbol, whether or not it is available in the printer's device font.
 

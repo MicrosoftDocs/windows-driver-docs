@@ -14,11 +14,11 @@ In this configuration, the extensible switch extensions are exposed to every net
 
 The following figure shows the data path for packet traffic to or from the underlying extensible switch team that is bound to the external network adapter for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.40](images/vswitchteam-ndis640.png)
+![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.40.](images/vswitchteam-ndis640.png)
 
 The following figure shows the data path for packet traffic to or from the underlying extensible switch team that is bound to the external network adapter for NDIS 6.30 (Windows Server 2012).
 
-![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.30](images/vswitchteam.png)
+![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.30.](images/vswitchteam.png)
 
 Teaming providers can do everything that a forwarding extension can. In addition, teaming providers can do the following.
 

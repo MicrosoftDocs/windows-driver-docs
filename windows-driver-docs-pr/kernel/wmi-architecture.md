@@ -22,7 +22,7 @@ For instance, when a WMI client requests a given data block, the WMI kernel comp
 
 The following figure shows this data flow:
 
-![diagram illustrating wmi architecture data flow](images/wmi1a.png)
+![diagram illustrating wmi architecture data flow.](images/wmi1a.png)
 
  
 

@@ -38,7 +38,7 @@ A driver sends a device power IRP for any of the following reasons:
 
 The following figure shows the sequence of steps that occur to send, forward, and complete a device power IRP.
 
-![diagram illustrating the path of a device power irp](images/devpoirp.png)
+![diagram illustrating the path of a device power irp.](images/devpoirp.png)
 
 As the previous figure shows, a device power IRP is sent, forwarded, and completed in the following steps:
 

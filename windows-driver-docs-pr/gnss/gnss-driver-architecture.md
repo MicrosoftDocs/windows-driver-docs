@@ -13,7 +13,7 @@ Provides an overview of Global Navigation Satellite System (GNSS) UMDF 2.0 drive
 
 The following high-level component block diagram shows how the Global Navigation Satellite System (GNSS) UMDF 2.0 driver integrates with the Windows 10 platform.
 
-![diagram showing user mode gnss architecture](images/gnss-architecture-4.png)
+![diagram showing user mode gnss architecture.](images/gnss-architecture-4.png)
 
 The components in the diagram are described here:
 
@@ -51,7 +51,7 @@ There will also be two different sets of tests for GNSS devices in the Hardware 
 
 A new gatherer component in the HLK identifies which of the two sets of tests needs to be run in a system, if any.
 
-![diagram showing gnss 2.0 driver and adapter communication](images/gnss-architecture-5.png)
+![diagram showing gnss 2.0 driver and adapter communication.](images/gnss-architecture-5.png)
 
 ## Coexistence of Global Navigation Satellite System (GNSS) devices
 
@@ -230,7 +230,7 @@ In order to implement a fully functional SUPL client the IHV stack will need to 
 > [!NOTE]
 > None of the this functionality is part of the location platform or the GNSS DDI, but it is included here for clarification and to help GNSS driver developers understand what can be leveraged from the OS to implement the SUPL functionality.
 
-![SUPL client interaction with a GNSS driver](images/gnss-architecture-6.png)
+![SUPL client interaction with a GNSS driver.](images/gnss-architecture-6.png)
 
 - **SMS router:** The SMS Router enables the SUPL client to subscribe to WAP Push of SIP Push messages that carry SUPL NI requests.
 
@@ -284,7 +284,7 @@ The GNSS adapter issues a stop fix for a single shot session in either of the tw
 
 The following figure illustrates two single shot sessions:
 
-![diagram showing intermediary fixes for two sessions](images/gnss-architecture-7.png)
+![diagram showing intermediary fixes for two sessions.](images/gnss-architecture-7.png)
 
 **Session 1:** The driver was given Accuracy and Response Time parameters. After the start fix command, the driver started sending intermediate fixes. After a while, it determined that it could not return a more accurate fix, so it indicated the last fix as final. This happened before the response time limit was reached. The adapter sent the final fix to the application and issued a stop fix command.
 
@@ -296,7 +296,7 @@ The GNSS adapter may initiate requests for single shot fixes while the system is
 
 The following sequence diagram illustrates the high-level actions related to getting a standalone GNSS Fix. Note that this does not include any request for assistance data.
 
-![sequence diagram for gnss architecture ](images/gnss-architecture-8.png)
+![sequence diagram for gnss architecture .](images/gnss-architecture-8.png)
 
 The sequence description is as follows:
 
@@ -354,7 +354,7 @@ The GNSS adapter issues a stop fix command for a distance-based tracking session
 
 The following figure illustrates two distance based tracking sessions:
 
-![internal tracking for gnss driver ](images/gnss-architecture-9.png)
+![internal tracking for gnss driver .](images/gnss-architecture-9.png)
 
 **Session 1:** The GNSS driver was given accuracy and movement threshold parameters when initiating the tracking session. After the start fix command, the driver starts sending intermediate fixes until it obtains a final fix or a fix that meets the accuracy requirement at which point such fix is provided to the GNSS adapter and the GNSS engine will start the distance-tracking process. While the session is active, the GNSS adapter sends a request to modify the session parameters at times T1 and T2. After each modification of parameters the GNSS driver will send a fix update to the GNSS adapter and will resume the distance tracking session with the new parameters, until the GNSS adapter sends a stop fix command.
 
@@ -388,7 +388,7 @@ The GNSS adapter issues a stop fix command for a time-based tracking session if:
 
 The following figure illustrates two time-based tracking sessions.
 
-![time based tracking diagram for gnss driver fixes](images/gnss-architecture-10.png)
+![time based tracking diagram for gnss driver fixes.](images/gnss-architecture-10.png)
 
 **Session 1:** The GNSS driver was given accuracy and a preferred interval parameters when initiating the tracking session. After the start fix command the driver shall start sending intermediate fixes until it obtains a final fix or a fix that meets the accuracy requirement at which point such fix is provided to the GNSS adapter and the GNSS engine will start the time-based tracking process. While the session is active, the GNSS adapter sends a request to modify the session parameters at times T1 and T2. After each modification of parameters the GNSS driver will send a fix update to the GNSS adapter and will resume the time-based tracking session, with the new parameters, until the GNSS adapter sends a stop fix command.
 

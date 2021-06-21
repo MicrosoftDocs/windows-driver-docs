@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The primary components of the Microsoft Windows 2000 and later print spooler are illustrated in the following diagram.
 
-![diagram illustrating the primary components of the windows 2000 and later print spooler](images/spoocomp.png)
+![diagram illustrating the primary components of the windows 2000 and later print spooler.](images/spoocomp.png)
 
 <a href="" id="application-"></a>**Application**   
 The print application creates a print job by calling GDI functions.

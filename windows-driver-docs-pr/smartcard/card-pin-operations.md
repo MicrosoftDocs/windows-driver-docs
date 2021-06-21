@@ -84,7 +84,7 @@ typedef enum
 
 Windows uses the enumeration value to display an appropriate message to the user that describes which card PIN is currently requested. The minidriver completely controls which SECRET\_TYPE to use. The following is an illustration of a PIN prompt dialog box that includes sample context strings.
 
-![pin dialog box](images/pinbox.png)
+![pin dialog box.](images/pinbox.png)
 
 The first string in the figure (“Enter PIN. Enrolling for: BaseRSASmartcardLogon”) is provided by the calling application to provide application context. If no application context string exists, the dialog box displays a standard text.
 

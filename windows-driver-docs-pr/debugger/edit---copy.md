@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Copy** on the **Edit** menu to copy to the clipboard any text that you have selected.
 
-This command is equivalent to pressing CTRL+C or CTRL+INSERT or clicking the **Copy (Ctrl+C)** button (![screen shot of the copy button](images/tbcopy.png)) on the toolbar.
+This command is equivalent to pressing CTRL+C or CTRL+INSERT or clicking the **Copy (Ctrl+C)** button (![screen shot of the copy button.](images/tbcopy.png)) on the toolbar.
 
 You can use the **Copy** command only with docked or tabbed windows. You can use the shortcut keys and the toolbar button with any window that supports this feature.
 

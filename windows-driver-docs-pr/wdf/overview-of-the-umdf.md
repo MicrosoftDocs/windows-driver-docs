@@ -39,7 +39,7 @@ All function and filter drivers for a given device must run in the same driver h
 
 The following diagram shows how driver host processes, driver manager, and reflector communicate across the user mode/kernel mode boundary.
 
-![umdf components including up and down device objects in reflector](images/umdfarch3.gif)
+![umdf components including up and down device objects in reflector.](images/umdfarch3.gif)
 
  
 

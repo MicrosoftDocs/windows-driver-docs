@@ -78,7 +78,7 @@ HKLM/Software/Microsoft/Symbol Server Proxy/Web Directories/Symbols
 
 After this key is created, edit its **SymbolPath** to be \\\\symbols\\symbols;<https://msdl.microsoft.com/download/symbols>. This can be seen in the following screenshot of the Registry Editor.
 
-![screen shot of the registry editor showing a revised symbolpath](images/symproxy-registry.png)
+![screen shot of the registry editor showing a revised symbolpath.](images/symproxy-registry.png)
 
 In this example, SymProxy first searches for symbols in \\\\symbols\\symbols. If the files are not found there, the Microsoft Symbol Store will be used.
 

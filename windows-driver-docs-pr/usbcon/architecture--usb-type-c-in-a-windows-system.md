@@ -28,7 +28,7 @@ Describes a typical hardware design of a USB Type-C system and the Microsoft-pro
 ## <a href="" id="drivers"></a>Drivers for supporting USB Type-C components
 
 
-![usb type-c software components](images/type-c-arch.png)
+![usb type-c software components.](images/type-c-arch.png)
 
 In the preceding image,
 

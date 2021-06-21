@@ -22,13 +22,13 @@ The driver can also include binary data in the log entry, known as *dump data*. 
 
 You can bring up the property sheet for a log entry by double-clicking the entry in the Event Viewer. The following screen shot shows a sample log entry property sheet.
 
-![screen shot of an event property sheet](images/event-properties.png)
+![screen shot of an event property sheet.](images/event-properties.png)
 
 Drivers use the [**IoAllocateErrorLogEntry**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateerrorlogentry) routine to allocate an error log entry. Log entries consist of a variable-length [**IO\_ERROR\_LOG\_PACKET**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_error_log_packet) header, followed by insertion strings.
 
 The following diagram shows the layout of an error log entry in memory.
 
-![diagram illustrating a layout of an error log packet in memory ](images/errorlogentry.png)
+![diagram illustrating a layout of an error log packet in memory .](images/errorlogentry.png)
 
 The **ErrorCode** member of **IO\_ERROR\_LOG\_PACKET** specifies the NTSTATUS value of the error. The **DumpData** member specifies any dump data for the log entry. **DumpData** is a variable-sized array, whose size is specified by the **DumpDataSize** member. Drivers specify the beginning of the first insertion string with the **StringOffset** member, and the number of strings in the **NumberOfStrings** member. Each insertion string itself is a null-terminated Unicode string.
 

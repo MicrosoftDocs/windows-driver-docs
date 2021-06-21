@@ -22,7 +22,7 @@ The [Processing IRPs in Layered Drivers](example-i-o-request---the-details.md#dd
 
 The following figure shows the contents of the IRP in more detail.
 
-![diagram illustrating the contents of i/o stack location in an irp](images/2irpios.png)
+![diagram illustrating the contents of i/o stack location in an irp.](images/2irpios.png)
 
 As shown in the figure, each driver-specific I/O stack location in an IRP contains the following general information:
 

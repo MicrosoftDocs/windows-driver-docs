@@ -21,18 +21,18 @@ For information about how to get a Sharks Cove board and how to install Windows 
 
 To set the ADXL345 in I2C mode, connect the VDD output to the CS signal, as shown here:
 
-![adxl345 breakout board](images/adxl-breakout-board.png)
+![adxl345 breakout board.](images/adxl-breakout-board.png)
 
 ## Attach the modified ADXL345 to the Sharks Cove
 
 
 When the ADXL345 is operating in I2C mode, attach it to the J1C1 header on your Sharks Cove board. If the power-connector appears in the upper-left corner, you'll see this header in the lower-right corner:
 
-![j1c1 header](images/j1c1-header.png)
+![j1c1 header.](images/j1c1-header.png)
 
 Attach the ADXL345 pins to the J1C1 header pins as shown here:
 
-![j1c1 pins](images/pin-outs.png)
+![j1c1 pins.](images/pin-outs.png)
 
 ## Install kits and tools
 

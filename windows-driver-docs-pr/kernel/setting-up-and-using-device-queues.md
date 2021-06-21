@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 A driver sets up a device queue object by calling [**KeInitializeDeviceQueue**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedevicequeue) at driver or device initialization. After starting its device(s), the driver inserts IRPs into this queue by calling [**KeInsertDeviceQueue**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertdevicequeue) or [**KeInsertByKeyDeviceQueue**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertbykeydevicequeue). The following figure illustrates these calls.
 
-![setting up and using device queues](images/3devqobj.png)
+![setting up and using device queues.](images/3devqobj.png)
 
 As this figure shows, the driver must provide the storage for a device queue object, which must be resident. Drivers that set up a device queue object usually provide the necessary storage in the [device extension](device-extensions.md) of a driver-created device object, but the storage can be in a controller extension if the driver uses a [controller object](./introduction-to-controller-objects.md) or in nonpaged pool allocated by the driver.
 

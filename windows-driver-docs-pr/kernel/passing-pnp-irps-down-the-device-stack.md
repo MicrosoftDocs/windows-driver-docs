@@ -18,7 +18,7 @@ For a list of PnP minor IRPs, see [Plug and Play Minor IRPs](plug-and-play-minor
 
 All drivers for a device must have the opportunity to respond to a PnP IRP unless a driver in the stack fails the IRP. (See the following figure.)
 
-![diagram illustrating passing a plug and play irp down the device stack](images/passpnp.png)
+![diagram illustrating passing a plug and play irp down the device stack.](images/passpnp.png)
 
 No single driver for a device can assume that it is the only driver that will respond to a PnP IRP. Consider, for example, a function driver that responds to an [**IRP\_MN\_QUERY\_CAPABILITIES**](./irp-mn-query-capabilities.md) request and completes the IRP without passing it to the next-lower driver. None of the capabilities supported by lower drivers, such as a unique instance ID or power management capabilities supported by the parent bus driver, is reported.
 

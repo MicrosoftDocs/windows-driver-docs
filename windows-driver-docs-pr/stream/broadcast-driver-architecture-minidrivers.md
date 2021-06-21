@@ -33,7 +33,7 @@ Typically, driver writers only have to code the appropriate static template stru
 
 The following figure shows an architectural overview for BDA minidrivers:
 
-![diagram overview of bda minidriver architecture](images/bdaarch.png)
+![diagram overview of bda minidriver architecture.](images/bdaarch.png)
 
 The following sections describe implementation details for a BDA minidriver, discuss details of some property and method sets, and contain sample code that shows how to intercept certain properties and methods:
 

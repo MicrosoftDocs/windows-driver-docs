@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The internal design of the NFC CX state machine is shown below. The various states specified by NFC CX and the internal and external events that cause the state transitions are captured in the diagram. Note that some transitions between some states are not shown in the diagram for the ease of reading. The states along with the mapping to the NCI RF state machine are described further below.
 
-![nfc cx state machine](images/statemachine.png)
+![nfc cx state machine.](images/statemachine.png)
 
 | State             | Description                                                                                                                                                                                                                                                                                                                                             |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

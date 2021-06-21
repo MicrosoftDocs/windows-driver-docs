@@ -19,7 +19,7 @@ Additionally, it is important to note that BTP tests do not have a tight depende
 
 The Traduci board is produced by [MCCI](https://mcci.com/usb/dev-tools/model-2411/)
 
-:::image type="content" source="images/Traduci_Overhead.jpg" alt-text="Photo of a Traduci board":::
+:::image type="content" source="images/Traduci_Overhead.jpg" alt-text="Photo of a Traduci board.":::
 
 - 4 12-pin ports to support 4 devices simultaneously
 - Able to route data to and from multiple devices simultaneously

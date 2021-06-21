@@ -187,7 +187,7 @@ See the [driver package isolation](driver-isolation.md#run-from-driver-store) pa
 
 The following diagram shows the driver packages that Fabrikam and Contoso created for their DCH-compliant driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they will make two submissions: base and extension/component.
 
-![Extension, base, and component driver packages](images/universal-scenarios.png)
+![Extension, base, and component driver packages.](images/universal-scenarios.png)
 
 Note that the component INF will match on the component hardware ID, whereas the base and extensions will match on the board's hardware ID.
 

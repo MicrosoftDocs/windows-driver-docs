@@ -33,11 +33,11 @@ Consider the following configurations for USB devices under test:
 
 -   The test device is downstream of SuperMUTT Pack.
 
-    ![device is downstream of supermutt pack](images/fig13-topology-downstream-supermuttpack.png)
+    ![device is downstream of supermutt pack.](images/fig13-topology-downstream-supermuttpack.png)
 
 -   The test device is downstream of MUTT Pack.
 
-    ![device is downstream from mutt pack](images/fig14-topology-downstream-muttpack.png)
+    ![device is downstream from mutt pack.](images/fig14-topology-downstream-muttpack.png)
 
 ## Related topics
 [USB](../index.yml)  

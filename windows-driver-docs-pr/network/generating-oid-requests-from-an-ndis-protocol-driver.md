@@ -15,7 +15,7 @@ To originate an OID request to underlying drivers, a protocol calls the [**NdisO
 
 The following figure illustrates an OID request that is originated by a protocol driver.
 
-![diagram illustrating an oid request originated by a protocol driver](images/protocolrequest.png)
+![diagram illustrating an oid request originated by a protocol driver.](images/protocolrequest.png)
 
 After a protocol driver calls the [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) function, NDIS calls the request function of the next underlying driver. For more information about how a miniport driver handles OID requests, see [OID Requests for an Adapter](miniport-adapter-oid-requests.md). For more information about how a filter driver handles OID requests, see [Filter Module OID Requests](filter-module-oid-requests.md).
 

@@ -30,7 +30,7 @@ Multiple power meters could be installed in a computer system, with each power m
 
 The following figure provides an overview of the PMB infrastructure.
 
-![diagram overview of the power metering and budgeting (pmb) infrastructure ](images/powermeter-1.png)
+![diagram overview of the power metering and budgeting (pmb) infrastructure .](images/powermeter-1.png)
 
 PMB consists of the following components:
 

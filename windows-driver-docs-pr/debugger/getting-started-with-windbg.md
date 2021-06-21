@@ -22,7 +22,7 @@ After you have installed the debugging tools, locate the installation directorie
 
 2. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to the folder that contains notepad.exe (typically, C:\\Windows\\System32). For **File name**, enter notepad.exe. Select **Open**.
 
-    ![screen shot of windbg after starting notepad](images/windbggetstart01.png)
+    ![screen shot of windbg after starting notepad.](images/windbggetstart01.png)
 
 3. Near the bottom of the WinDbg window, in the command line, enter this command:
 
@@ -139,7 +139,7 @@ After you have installed the debugging tools, locate the installation directorie
 
 10. Enter [g](g--go-.md) to start Notepad running again. In the Notepad window, enter some text and choose **Save** from the **File** menu. The running code breaks in when it comes to **ZwCreateFile**. Enter [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to see the stack trace.
 
-    ![screen shot of stack trace in windbg](images/windbggetstart02.png)
+    ![screen shot of stack trace in windbg.](images/windbggetstart02.png)
 
     In the WinDbg window, just to the left of the command line, notice the processor and thread numbers. In this example the current processor number is 0, and the current thread number is 11. So we are looking at the stack trace for thread 11 (which happens to be running on processor 0).
 
@@ -244,7 +244,7 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
     WinDbg displays your source code and the Command window.
 
-    ![screen shot of source code in windbg](images/windbggetstart03.png)
+    ![screen shot of source code in windbg.](images/windbggetstart03.png)
 
 5. On the **Debug** menu, choose **Step Into** (or press **F11**). Continue stepping until you have stepped into **MyFunction**. When you step into the line `y = x / p2`, your application will crash and break in to the debugger. The output is similar to this:
 

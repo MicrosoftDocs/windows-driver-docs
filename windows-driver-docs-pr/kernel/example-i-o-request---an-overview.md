@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The following figure shows an overview of what happens when a subsystem opens a file object representing a data file on behalf of an application.
 
-![diagram illustrating opening a file object](images/2opendev.png)
+![diagram illustrating opening a file object.](images/2opendev.png)
 
 1.  The subsystem calls an I/O system service to open a named file.
 

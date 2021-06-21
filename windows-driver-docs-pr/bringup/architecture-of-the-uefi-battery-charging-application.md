@@ -54,7 +54,7 @@ For more information about this protocol, see [UEFI USB function protocol](uefi-
 
 The following diagram describes the logical procedure of the UEFI battery charging application.
 
-![uefi battery charging logic](images/oem-battery-charge-logic.png)
+![uefi battery charging logic.](images/oem-battery-charge-logic.png)
 
 The following notes expand on some key sections of the logic:
 
@@ -237,7 +237,7 @@ The following table illustrates how the UEFI battery charging application reacts
 
 The following diagram shows how the UEFI battery charging application draws the UI to the screen if there is not enough charge in the battery, or if the device is in *power-off charging mode*.
 
-![battery charging user experience](images/oem-battery-charge-user-experience.png)
+![battery charging user experience.](images/oem-battery-charge-user-experience.png)
 
 The following steps describe how the application draws the UI to the screen:
 

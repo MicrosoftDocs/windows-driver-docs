@@ -31,11 +31,11 @@ The remaining portion for smart card vendors is to implement a card minidriver, 
 
 The following figure shows the interfaces between card minidrivers and CAPI-based applications.
 
-![interfaces between card minidrivers and capi-based applications](images/capiinterface.png)
+![interfaces between card minidrivers and capi-based applications.](images/capiinterface.png)
 
 The following figure shows the interfaces between card minidrivers and CAPI2-based applications.
 
-![interfaces between card minidrivers and capi2-based applications](images/capi2interface.png)
+![interfaces between card minidrivers and capi2-based applications.](images/capi2interface.png)
 
 It is recommend that developers take advantage of the rich set of libraries that Microsoft provides for cryptographic operations that the minidriver performs. This lets developers benefit from the Microsoft Windows Update infrastructure for the distribution of critical security updates.
 

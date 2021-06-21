@@ -28,7 +28,7 @@ This feature runs a program once with the specified flags. These settings affect
 
     The following screen shot shows the **Launch** button on the **Image File** tab in Windows Vista.
 
-    ![screen shot of the image file tab in windows vista ](images/gflags-launch.png)
+    ![screen shot of the image file tab in windows vista .](images/gflags-launch.png)
 
 **Note**   Flags set in the registry do not affect the instance of the program that is launched.
 Flags set in the dialog box are used for the launched instance even when they are not image file flags.

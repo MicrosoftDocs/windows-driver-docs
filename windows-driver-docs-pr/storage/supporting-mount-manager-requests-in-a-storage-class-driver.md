@@ -42,7 +42,7 @@ For instance, a single volume with a unique volume name of <strong>"\\\\?\\Volum
 
 The following acreen shot illustrates how persistent names appear in the **MountedDevices** registry key.
 
-![screen shot illustrating how persistent names appear in the mounteddevices registry key](images/mntmgr.png)
+![screen shot illustrating how persistent names appear in the mounteddevices registry key.](images/mntmgr.png)
 
 The mount manager relies on the Plug and Play device interface notification mechanism to alert it of volume arrival and removal. Therefore every client (that is, every volume driver, usually a class driver) must create an interface in the MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class by calling [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) to notify the mount manager of the arrival in the system of the volume it manages. The MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class GUID is defined in *mountmgr.h*.
 

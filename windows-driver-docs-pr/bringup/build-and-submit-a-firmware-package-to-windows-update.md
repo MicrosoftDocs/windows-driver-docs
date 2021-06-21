@@ -23,7 +23,7 @@ Next, sign the contents of the capsule. The capsule content itself is determined
 
 On ARM-based systems, with no keys other than the Microsoft Production CA 2011 allowed in the UEFI Allowed Database and Microsoft does not use a signer under this CA to sign third-party UEFI code, load of such a capsule cannot leverage the regular UEFI **LoadImage()** service. The capsule application may, however, be loaded using a platform-specific verification against the boot ROM public key or the UEFI PK. This load must still be measured into TPM PCR\[7\] as for any other image. More generally, when capsule signing is deemed necessary (for example, to ensure integrity and authenticity of the complete update package), and the capsule may comprise firmware updates for firmware outside of UEFI, the capsule should be signed in such a way that it can be verified using platform-held, non-UEFI keys (for example, signed using a key chaining back to a public key bound to boot ROM or the UEFI PK).
 
-![Driver signing workflow](images/driver-signing-workflow.png)
+![Driver signing workflow.](images/driver-signing-workflow.png)
 
 On non-ARM systems,
 

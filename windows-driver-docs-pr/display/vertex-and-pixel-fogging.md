@@ -33,7 +33,7 @@ Therefore, a fog blending factor of 0.0 is full fog color and a fog blending fac
 
 As the following figure shows, linear fog density increases in a linear fashion as the distance increases.
 
-![diagram illustrating linear fog](images/d3dfig23.png)
+![diagram illustrating linear fog.](images/d3dfig23.png)
 
 This linear increase differs from exponential fog where the fog density increases exponentially. A linear fog profile might be set up as follows: the D3DRENDERSTATE\_FOGSTART render state is set to ZFront and *f* = 1.0; the D3DRENDERSTATE\_FOGEND render state is set to ZBack and *f* = 0.0. The D3DRENDERSTATE\_FOGDENSITY render state is ignored.
 

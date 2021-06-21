@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 Minidrivers to support USB cameras can be clients of the *stream.sys* class driver on their upper end and the USB bus driver on their lower end, as shown in the following diagram.
 
-![diagram illustrating usb camera minidriver models](images/usbimdev.png)
+![diagram illustrating usb camera minidriver models.](images/usbimdev.png)
 
 In the group **A** configuration of the diagram, the minidriver writer must interface to the *stream.sys* class driver, the camera, and the USB bus. In the goup **B** configuration, a minidriver written to use USBCAMD2 needs only to contain the code that is device-specific. That is, if you use USBCAMD2, you can focus on implementing support for video formats, property sets, image decompression, and color space conversion. The USBCAMD2 minidriver library controls the connection to the *stream.sys* class driver and the USB bus driver, thereby simplifying the process of developing a camera minidriver.
 

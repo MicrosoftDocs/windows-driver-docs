@@ -328,7 +328,7 @@ valid to include an IFD containing thumbnail data.
 The following diagram, copied from the TIFF specification, illustrates
 the expected memory layout:
 
-![EXIF blob definition](images/exif-blob-definition.png)
+![EXIF blob definition.](images/exif-blob-definition.png)
 
 The following are requirements that are consistent with the EXIF and
 TIFF specifications but are called out for emphasis:

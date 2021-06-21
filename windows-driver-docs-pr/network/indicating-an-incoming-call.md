@@ -19,11 +19,11 @@ A call manager or MCM driver is alerted to an incoming call by signaling message
 
 The following figure shows an MCM driver indicating an incoming call.
 
-![diagram illustrating a call manager indicating an incoming call](images/cm-13.png)
+![diagram illustrating a call manager indicating an incoming call.](images/cm-13.png)
 
 The following figure shows a call manager indicating an incoming call.
 
-![indicating an incoming call through an mcm driver](images/fig1-13.png)
+![indicating an incoming call through an mcm driver.](images/fig1-13.png)
 
 If the incoming call parameters are unacceptable to the call manager or MCM driver, it can attempt to negotiate a change in these parameters with the remote party if such negotiation is allowed by the signaling protocol. Alternatively, the client to which the incoming call is directed could attempt to negotiate the call parameters after receiving the call indication from the call manager or MCM driver (see [Client-Initiated Request to Change Call Parameters](client-initiated-request-to-change-call-parameters.md)). If the call manager or MCM driver cannot negotiate acceptable call parameters for the call with the remote party, it might refuse the call. The signaling protocol determines what is possible in such cases.
 

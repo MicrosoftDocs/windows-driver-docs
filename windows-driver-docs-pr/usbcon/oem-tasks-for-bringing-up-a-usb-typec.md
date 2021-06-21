@@ -15,7 +15,7 @@ The traditional configuration limits some scenarios. For example, if a mobile de
 
 The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 specification, addresses those limitations. Windows 10 introduces native support for those features.
 
-![usb connector comparison](images/typecccomp.jpg)
+![usb connector comparison.](images/typecccomp.jpg)
 
 ## Feature summary
 
@@ -40,7 +40,7 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 
 USB Type-C connector is reversible and symmetric.
 
-![USB Type-C symmetric cable](images/usb-type-c.png)
+![USB Type-C symmetric cable.](images/usb-type-c.png)
 
 The main component are: the USB Type-C connector and its port or PD controller that manages the CC pin logic for the connector. Such systems typically have a dual-role controller that can swap the USB role from host to function. It has Display-Out module that allows video signal to be transmitted over USB. Optionally it can support BC1.2 charger detection.
 
@@ -53,7 +53,7 @@ Consider recommendations for the design and development of USB components, inclu
 ## Choose a driver model
 
 Use this flow chart to determine a solution for your USB Type-C system.
-![Drivers](images/drivers-c.png)
+![Drivers.](images/drivers-c.png)
 
 |If your system...| Recommended solution...|
 |---|---|

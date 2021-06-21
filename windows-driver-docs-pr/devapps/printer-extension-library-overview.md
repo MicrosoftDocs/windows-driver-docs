@@ -17,7 +17,7 @@ A high level design goal for the [v4 printer driver](../print/v4-printer-driver.
 
 To access those interfaces from your UWP device app, you can use the printer extension library that is included with the Microsoft Store device app printer samples. The printer extension library wraps the COM implementation of the COM interface `PrinterExtensionLib`. This enables code sharing between printer extensions and your UWP device app.
 
-![printer extension library overview](images/373030-printer-app-architecture.png)
+![printer extension library overview.](images/373030-printer-app-architecture.png)
 
 ## <span id="PrinterExtensionLibrary"></span><span id="printerextensionlibrary"></span><span id="PRINTEREXTENSIONLIBRARY"></span>PrinterExtensionLibrary
 

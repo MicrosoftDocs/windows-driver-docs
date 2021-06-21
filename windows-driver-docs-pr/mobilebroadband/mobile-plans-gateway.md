@@ -25,7 +25,7 @@ The Gateway page can be customized by the mobile operator by specifying the cont
 
 The enhanced Gateway page is specified using a template with predefined elements. The highlighted elements are definable by the mobile operator.
 
-![Enhanced gateway page template](images/enhanced_gateway_page_template.png)
+![Enhanced gateway page template.](images/enhanced_gateway_page_template.png)
 
 ### Enhanced Gateway page templates
 
@@ -72,7 +72,7 @@ The following table describes each JSON element in the previous example.
 
 ### Sample enhanced Gateway page
 
-![Mobile operator gateway page](images/mobile_operator_gateway_page.png)
+![Mobile operator gateway page.](images/mobile_operator_gateway_page.png)
 
 ### Using multiple Gateway page templates
 
@@ -85,7 +85,7 @@ Since the request includes identifiers for the profile and device, the mobile op
 
 The Get Offers request returns the template ID to be shown to the user.
 
-![Mobile Plans Get Offers Callflow](images/mobile_plans_get_offers_callflow.png)
+![Mobile Plans Get Offers Callflow.](images/mobile_plans_get_offers_callflow.png)
 
 ### GetOffers API specification
 
@@ -127,4 +127,4 @@ The standard Gateway page is shown to the end when there is no enhanced Gateway 
 
 The standard Gateway page uses a basic template which cannot be customized by the mobile operator.
 
-![Standard gateway page](images/standard_gateway_page.png)
+![Standard gateway page.](images/standard_gateway_page.png)

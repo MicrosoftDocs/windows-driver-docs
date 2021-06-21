@@ -16,7 +16,7 @@ When defining new IOCTLs, it is important to remember the following rules:
 
 An I/O control code is a 32-bit value that consists of several fields. The following figure illustrates the layout of I/O control codes.
 
-![diagram illustrating the i/o control code layout](images/ioctl-1.png)
+![diagram illustrating the i/o control code layout.](images/ioctl-1.png)
 
 Use the system-supplied **CTL\_CODE** macro, which is defined in Wdm.h and Ntddk.h, to define new I/O control codes. The definition of a new IOCTL code, whether intended for use with **IRP\_MJ\_DEVICE\_CONTROL** or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, uses the following format:
 

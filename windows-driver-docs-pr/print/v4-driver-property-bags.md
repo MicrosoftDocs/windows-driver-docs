@@ -110,7 +110,7 @@ The follwoing code snippet shows a DEVMODE Property Bag Mapping XML Sample.
 
 The following screenshot shows the DEVMODE Property Bag Mapping XML Schema, and it can be found at the following path in the WDK installation folder: \\Include\\um\\printerdriverdevmodemap.xsd.pr
 
-![devmode property bag mapping xml schema](images/propbagmapschema.png)
+![devmode property bag mapping xml schema.](images/propbagmapschema.png)
 
 The XML files for the DEVMODE property bag mapping are validated by the INFGate tool.
 
@@ -194,7 +194,7 @@ Rendering filters should read the incoming PrintTicket’s PageMediaSize setting
 
 **Queue Property Bag XML Schema**. The following screenshot shows the queue property bag XML schema, and it can be found at the following path in the WDK installation folder: \\Include\\um\\printqueueproperties.xsd.
 
-![queue property bag xml schema](images/queuepropbagschem.png)
+![queue property bag xml schema.](images/queuepropbagschem.png)
 
 ## Related topics
 [**IPrinterExtensionContext**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontext)  

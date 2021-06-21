@@ -18,11 +18,11 @@ A call manager or MCM driver is alerted to an incoming request from a remote par
 
 The following figure shows an incoming request through a call manager to change call parameters.
 
-![diagram illustrating an incoming request through a call manager to change call parameters](images/cm-16.png)
+![diagram illustrating an incoming request through a call manager to change call parameters.](images/cm-16.png)
 
 The following figure shows an incoming request through an MCM driver to change call parameters.
 
-![diagram illustrating an incoming request through an mcm driver to change call parameters](images/fig1-16.png)
+![diagram illustrating an incoming request through an mcm driver to change call parameters.](images/fig1-16.png)
 
 After receiving an incoming request to change call parameters, a call manager passes appropriately modified call parameters to [**NdisCmActivateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmactivatevc) to notify the underlying miniport driver of the proposed QoS change. An MCM driver passes modified call parameters to [**NdisMCmActivateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmactivatevc)(see [Activating a VC](activating-a-vc.md)). If the underlying miniport driver accepts the changed call parameters, a call manager then calls [**NdisCmDispatchIncomingCallQosChange**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmdispatchincomingcallqoschange)(see Incoming Request to Change Call Parameters). An MCM driver calls [**NdisMCmDispatchIncomingCallQosChange**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmdispatchincomingcallqoschange)(see Incoming Request to Change Call Parameters). The call manager or MCM driver passes an *NdisVcHandle* and a buffered [**CO\_CALL\_PARAMETERS**](/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure to **Ndis(M)CmDispatchIncomingCallQoSChange**.
 

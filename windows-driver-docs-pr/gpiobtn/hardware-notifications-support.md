@@ -30,7 +30,7 @@ The hardware notification class extension is the central component of the hardwa
 
 The following diagram illustrates the basic hardware notification class extension architecture.
 
-![hwn clx architecture](images/oem-hwnclx-arch.png)
+![hwn clx architecture.](images/oem-hwnclx-arch.png)
 
 ## <span id="Hardware_notification_client_driver"></span><span id="hardware_notification_client_driver"></span><span id="HARDWARE_NOTIFICATION_CLIENT_DRIVER"></span>Hardware notification client driver
 
@@ -39,7 +39,7 @@ Client drivers can be easily generated for hardware notification components by u
 
 The following diagram illustrates the interactions from the perspective of the client driver.
 
-![client driver arch](images/oem-hwnclx-clientarch.png)
+![client driver arch.](images/oem-hwnclx-clientarch.png)
 
  
 

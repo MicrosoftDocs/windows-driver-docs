@@ -22,11 +22,11 @@ After a protocol driver calls the **NdisCoOidRequest** function, NDIS calls the 
 
 The following figure illustrates an OID request that is directed to a miniport driver.
 
-![diagram illustrating an oid request that is directed to a miniport driver](images/protocolcorequest.png)
+![diagram illustrating an oid request that is directed to a miniport driver.](images/protocolcorequest.png)
 
 The following figure illustrates an OID request that is directed to a protocol driver.
 
-![diagram illustrating an oid request that is directed to a protocol driver](images/clientcorequest.png)
+![diagram illustrating an oid request that is directed to a protocol driver.](images/clientcorequest.png)
 
 To complete synchronously, [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) returns NDIS\_STATUS\_SUCCESS or an error status. To complete asynchronously, **NdisCoOidRequest** returns NDIS\_STATUS\_PENDING.
 

@@ -27,7 +27,7 @@ The driver must set the **Aperture** bit-field flag in the **Flags** member of t
 
 The following figure shows a visual representation of a linear aperture-space segment.
 
-![diagram illustrating a linear aperture-space segment](images/aptrspac.png)
+![diagram illustrating a linear aperture-space segment.](images/aptrspac.png)
 
  
 

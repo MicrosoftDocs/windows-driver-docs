@@ -26,7 +26,7 @@ The [**!usb3kd.ucx\_controller\_list**](-usb3kd-device-info.md) command displays
 
 The following screen shot show the output of the [**!ucx\_controller\_list**](-usb3kd-device-info.md) command.
 
-![output of the !ucx\-controller\-list command showing ucx controllers devices and endpoints](images/ucxcontrollerlist01.png)
+![output of the !ucx\-controller\-list command showing ucx controllers devices and endpoints.](images/ucxcontrollerlist01.png)
 
 The output shows that there is one USB 3.0 host controller, which is represented by the line that begins with [**!ucx\_controller**](-usb3kd-ucx-controller.md). You can see that two devices are connected to the controller and that each device has four endpoints.
 

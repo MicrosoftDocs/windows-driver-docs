@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 #  Time Travel Debugging - Record a trace
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
 
 This section describes how to record time travel debugging (TTD) traces. There are two ways to record a Trace in WinDbg Preview, *Launch Executable (advanced)* and *Attach to a process*. 
 
@@ -19,13 +19,13 @@ To launch an executable and record a TTD trace, follow these steps.
 
 2. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the Launch Executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
-    ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-windbgx-configure-recording.png)
+    ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen.](images/ttd-windbgx-configure-recording.png)
 
 3. Check the **Record process with Time Travel Debugging** box to record a trace when the executable is launched.
 
 4. If you select **Configure and Record** you will be able to configure a location for the trace file.
 
-    ![Screen shot of Configure recording dialog showing a browse button and path listed](images/ttd-start-recording-dialog.png)
+    ![Screen shot of Configure recording dialog showing a browse button and path listed.](images/ttd-start-recording-dialog.png)
 
 5. Select **OK** to launch the executable and start recording.
 
@@ -43,7 +43,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 2. Select the user mode process that you wish to trace. For information about working with *Attach to a process* menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
-    ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording-attach-to-process.png)
+    ![Screen shot of WinDbg Preview showing start recording checkbox.](images/ttd-start-recording-attach-to-process.png)
 
 
 3. Check the **Record Process with Time Travel Debugging** box to create a trace when the executable is launched. 
@@ -52,7 +52,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 5. The recording dialog appears indicating the trace is being recorded.
 
-    ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up-attach.png)
+    ![TTD recording popup showing stop and debug as well as cancel options.](images/ttd-recording-pop-up-attach.png)
 
 6. See [How to record](#HOWTORECORD) for information on recording.
 

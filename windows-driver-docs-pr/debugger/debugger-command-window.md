@@ -20,11 +20,11 @@ The Debugger Command window is the primary debugging information window in WinDb
 
 ### <span id="opening_the_debugger_command_window"></span><span id="OPENING_THE_DEBUGGER_COMMAND_WINDOW"></span>Opening the Debugger Command Window
 
-To open the Debugger Command window, choose **Command** from the **View** menu. (You can also press ALT+1 or select the **Command** button (![screen shot of the debugger command window button](images/tbcmd.png)) on the toolbar. ALT+SHIFT+1 closes the Debugger Command window.)
+To open the Debugger Command window, choose **Command** from the **View** menu. (You can also press ALT+1 or select the **Command** button (![screen shot of the debugger command window button.](images/tbcmd.png)) on the toolbar. ALT+SHIFT+1 closes the Debugger Command window.)
 
 The following screen shot shows an example of a Debugger Command window.
 
-![screen shot of an example of a debugger command window](images/window-command.png)
+![screen shot of an example of a debugger command window.](images/window-command.png)
 
 ### <span id="using_the_debugger_command_window"></span><span id="USING_THE_DEBUGGER_COMMAND_WINDOW"></span>Using the Debugger Command Window
 
@@ -32,7 +32,7 @@ The Debugger Command window is split into two panes. You type commands in the sm
 
 In the command entry pane, use the UP ARROW and DOWN ARROW keys to scroll through the command history. When a command appears, you can edit it or press ENTER to run the command.
 
-The Debugger Command window contains a shortcut menu with additional commands. To access this menu, select and hold (or right-click) the title bar of the window or select the icon near the upper-right corner of the window (![screen shot of the button for accessing the debugger command window toolbar shortcut menu ](images/tbcmd.png)). The following list describes some of the menu commands:
+The Debugger Command window contains a shortcut menu with additional commands. To access this menu, select and hold (or right-click) the title bar of the window or select the icon near the upper-right corner of the window (![screen shot of the button for accessing the debugger command window toolbar shortcut menu .](images/tbcmd.png)). The following list describes some of the menu commands:
 
 -   **Add to command output** adds a comment to the command output, similar to the [Edit | Add to Command Output](edit---add-to-command-output.md) command.
 

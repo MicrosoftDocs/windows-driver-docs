@@ -70,13 +70,13 @@ To implement the OBMC process in DirectX VA, 10 motion vectors are sent for the 
 
 The following figure shows the motion vectors sent for a macroblock when using OBMC processing. (The letter C indicates a motion vector of the current macroblock. The letter R indicates a motion vector that is remote with respect to the current macroblock.)
 
-![diagram illustrating ten motion vectors sent for a macroblock when using overlapped block motion compensation (obmc) processing](images/10vectors.png)
+![diagram illustrating ten motion vectors sent for a macroblock when using overlapped block motion compensation (obmc) processing.](images/10vectors.png)
 
 Note that H.263 does not use distinct remote vectors for the left and right halves of the bottom of the macroblock—it reuses the vectors for the current macroblock.
 
 The following figure shows how one 8x8 block is placed in the three types of prediction planes used by OBMC processing in H.263.
 
-![diagram illustrating h.263 registration of one 8x8 block in the overlapped block motion compensation (obmc) prediction planes](images/h263reg.png)
+![diagram illustrating h.263 registration of one 8x8 block in the overlapped block motion compensation (obmc) prediction planes.](images/h263reg.png)
 
 **PB frames (Annex G and M)**: In this mode, macroblocks for a P-frame and a pseudoâˆ’B-frame are multiplexed together into the unique PB-frame picture coding type. The B portion of each macroblock borrows from information encoded for the P portion of the macroblock: the B-frame forward and backward motion vectors are scaled from the P-frame vector, and the reconstructed P-frame macroblock serves as backward reference for the B portion. The PB-frame includes only a pseudoâˆ’B-frame, because the backward prediction for each macroblock can only refer to the reconstructed P macroblock that is contained within the same PB macroblock. However, as with traditional B-frame semantics, a B macroblock within a PB-frame can refer to any location within the forward-reference frame. The limitation of the backward reference creates smaller backward prediction block shapes (as described in H.263 Figure G.2). PB-frames are supported in DirectX VA by representing the P portions of the PB-frame as a P-frame, and the B portions of the PB-frame as a separate B-in-P bidirectionally predicted picture containing a unique B-in-PB type of macroblock that has two motion vectors.
 

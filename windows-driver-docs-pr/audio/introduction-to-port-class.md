@@ -46,7 +46,7 @@ Audio adapter drivers and miniport drivers are typically written in Microsoft C+
 
 The following diagram illustrates the relationship between port and miniport drivers and their position in the audio stack.
 
-![diagram illustrating the relationship between port and miniport drivers](images/portcls-diag.png)
+![diagram illustrating the relationship between port and miniport drivers.](images/portcls-diag.png)
 
 In the preceding diagram, the KSEndpoint component is a system-supplied file that is provided with Windows Vista and later versions of Windows. This component is provided in the form of a DLL (Audiokse.dll). KSEndpoint abstracts the kernel-mode device endpoint, and provides the audio engine with access to the abstracted endpoint. For more information about the audio engine, see [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md).
 

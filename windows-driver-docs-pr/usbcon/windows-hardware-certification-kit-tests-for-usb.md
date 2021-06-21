@@ -28,7 +28,7 @@ To run the HLK tests, you need:
 
     Open Device Manager on the test client and make sure that the USB controllers that you want to use expose user-accessible root ports (no integrated hubs).
 
-    ![usb root port](images/roothubports.png)
+    ![usb root port.](images/roothubports.png)
 
 - USB-IF-compliant external SuperSpeed hub to evaluate system compatibility. We have tested HLK tests with these hubs:
   - [Texas Instruments SuperSpeed (USB 3.0) Hub reference design board (TUSB8040EVM)](https://www.ti.com/lit/ug/sllu130a/sllu130a.pdf).

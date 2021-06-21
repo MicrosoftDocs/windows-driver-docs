@@ -133,23 +133,23 @@ These flowcharts show the expected behavior of your implementation:
 
 ### Initialization
 
-![morlock initialization](images/morlock.png)
+![morlock initialization.](images/morlock.png)
 
 ### SetVariable flow
 
-![morlock programming flow](images/morlock1.png)
+![morlock programming flow.](images/morlock1.png)
 
 ### Unlocked state flow for SetVariable
 
-![morlock unlocked flow](images/morlock2.png)
+![morlock unlocked flow.](images/morlock2.png)
 
 ### Locked state flow for SetVariable
 
-![morlock locked flow](images/morlock3.png)
+![morlock locked flow.](images/morlock3.png)
 
 ### Flow for GetVariable
 
-![morlock getvariable](images/morlock4.png)
+![morlock getvariable.](images/morlock4.png)
 
 ## See also
 

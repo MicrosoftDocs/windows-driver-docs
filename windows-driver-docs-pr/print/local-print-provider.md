@@ -33,7 +33,7 @@ The local print provider implements the entire set of [functions defined by prin
 
 The following diagram provides a (somewhat simplified) view of control flow among the local printer provider's components, when an application creates a print job.
 
-![diagram illustrating a view of control flow among the local printer provider's components when an application creates a print job](images/contflow.png)
+![diagram illustrating a view of control flow among the local printer provider's components when an application creates a print job.](images/contflow.png)
 
 As the diagram shows, an application creates a print job by calling the Graphics Driver Interface (GDI). Regardless of whether the print job's initial output format is EMF, the local print provider's job creation API creates a spool file. Later, when the job is scheduled, the spool file is read and, if the format is *enhanced metafile (EMF)*, the EMF print processor sends the job back to GDI for conversion to RAW format, with the help of a [printer graphics DLL](printer-graphics-dll.md). The converted data stream can then be sent back through the local print provider to the printer (without being respooled).
 

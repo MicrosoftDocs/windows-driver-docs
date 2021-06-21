@@ -142,7 +142,7 @@ V4 print drivers may continue to take dependencies on common files that Windows 
 
 If there are existing print class drivers that provide basic rendering functionality for your devices or your PDL, then there also exists a mechanism to take a dependency on the class driver by using the **RequiredClass** directive. This directive causes Windows to build a driver using the files from both the v4 print driver and the required print class driver. GPD and PPD files are merged, with the most specific files taking precedence over less specific files. The following diagram illustrates the logic used to merge the GPD/PPD files, and also includes enhanced driver configuration files obtained from Bidi. Other driver files, such as JavaScript constraints, are not merged in the driver package.
 
-![gpd/ppd file merge logic](images/gpd-ppdmergelogic.png)
+![gpd/ppd file merge logic.](images/gpd-ppdmergelogic.png)
 
 **Printer Model Lines**. Plug and Play maintains an implicit ranking of all HardwareIDs and CompatibleIDs on a model line. As a result, Microsoft recommends that partners should use the following best practices to avoid unpredictable behaviors with regard to ranking.
 

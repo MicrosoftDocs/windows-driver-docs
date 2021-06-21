@@ -36,7 +36,7 @@ An [NDIS protocol driver](ndis-protocol-drivers2.md) must support the following 
 
 The following figures shows the relationship between these states.
 
-![figure illustrating the binding state diagram](images/protocolstate.png)
+![figure illustrating the binding state diagram.](images/protocolstate.png)
 
 The following defines the protocol driver binding states:
 

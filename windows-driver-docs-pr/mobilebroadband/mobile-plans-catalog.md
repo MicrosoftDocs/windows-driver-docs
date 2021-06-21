@@ -19,7 +19,7 @@ The Mobile Plans app enables users to see and choose from a list of mobile opera
 > [!NOTE]
 > The Select Providers page is only available on eSIM-enabled Windows 10 PCs. Since legacy physical UICCs do not allow the mobile operator's SIM profile to be changed, the Select Provider page is not available when there is no active eSIM on the device.
 
-![Select Providers page](images/select_provider_page.png)
+![Select Providers page.](images/select_provider_page.png)
 
 ## List of mobile operators
 

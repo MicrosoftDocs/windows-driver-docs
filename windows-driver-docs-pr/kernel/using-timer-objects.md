@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates the use of a notification timer to set up a timeout interval for an operation and then wait while other driver routines process an I/O request.
 
-![diagram illustrating waiting for a timer object](images/3ketimer.png)
+![diagram illustrating waiting for a timer object.](images/3ketimer.png)
 
 As the previous figure shows, a driver must provide storage for the timer object, which must be initialized by a call to [**KeInitializeTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimer) with a pointer to this storage. A driver typically makes this call from its [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine.
 

@@ -12,11 +12,11 @@ This topic defines the identification numbers associated with Partner Center sub
 
 Within the Windows Hardware Dev Center, each driver submission is associated with three IDs: A private, shared and submission ID. The relation between these three IDs is illustrated below:
 
-![screenshot that shows the relationship of the private, shared and submission ID types](images/id_relationship.png)
+![screenshot that shows the relationship of the private, shared and submission ID types.](images/id_relationship.png)
 
 The Partner Center lists each of these IDs on the driver details page of your products:
 
-![screenshot that shows the that the three ID types and values are listed in the Partner Center](images/id_driver_details.png)
+![screenshot that shows the that the three ID types and values are listed in the Partner Center.](images/id_driver_details.png)
 
 ## ID definitions
 

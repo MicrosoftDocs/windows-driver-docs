@@ -11,7 +11,7 @@ In the Requirements block at the bottom of Microsoft driver reference pages, you
 
 Here's an example of such an entry:
 
-![target platform set to universal in requirements block](images/TargetPlatform.png)
+![target platform set to universal in requirements block.](images/TargetPlatform.png)
 
 The values specified in **Target Platform** map to the values you can use in Visual Studio, in the **Target Platform** property under **Configuration Properties->Driver Settings->General**.  **Windows Drivers** can use any DDI that specifies **Universal** as the Target Platform.
 

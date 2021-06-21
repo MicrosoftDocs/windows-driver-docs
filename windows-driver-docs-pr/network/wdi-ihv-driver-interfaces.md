@@ -51,7 +51,7 @@ When the IHV miniport calls NdisMRegisterWdiMiniportDriver, the Microsoft WLAN c
 
 Below is the typical flow of the DriverEntry process for the WDI IHV miniport driver
 
-![wdi driverentry flow](images/wdi-driverentry-flow.png)
+![wdi driverentry flow.](images/wdi-driverentry-flow.png)
 
 For more information about DriverEntry, see [**DriverEntry of NDIS Miniport Drivers**](./initializing-a-miniport-driver.md).
 
@@ -100,7 +100,7 @@ The WDI model splits the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/
 
     The diagram below shows the flow of MiniportInitializeEx.
 
-    ![wdi miniport initialization flow](images/wdi-miniport-initialization-flow.png)
+    ![wdi miniport initialization flow.](images/wdi-miniport-initialization-flow.png)
 
     If an intermediate operation fails, the Microsoft component undoes the previous operations and fails the miniport bring up. For example, if [OID\_WDI\_TASK\_CREATE\_PORT](./oid-wdi-task-create-port.md) fails, the data path is cleaned up, [OID\_WDI\_TASK\_CLOSE](./oid-wdi-task-close.md) is sent, and the miniport fails.
 
@@ -127,7 +127,7 @@ In a Native Wi-Fi miniport, [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndi
 
 The diagram below shows the flow of MiniportHaltEx.
 
-![wdi miniport halt flow](images/wdi-miniport-halt-flow.png)
+![wdi miniport halt flow.](images/wdi-miniport-halt-flow.png)
 
 The MiniportHaltEx processing is not performed if the device is surprise removed or if the system is being powered off. For surprise removal, refer to the [MiniportDevicePnPEventNotify](#miniportdevicepnpeventnotify) handler behavior. For system shutdown, refer to the [MiniportShutdownEx](#miniportshutdownex) handler behavior.
 
@@ -138,7 +138,7 @@ The MiniportHaltEx processing is not performed if the device is surprise removed
 
 The diagram below shows the flow of MiniportDriverUnload.
 
-![wdi miniport driver unload flow](images/wdi-miniport-driver-unload-flow.png)
+![wdi miniport driver unload flow.](images/wdi-miniport-driver-unload-flow.png)
 
 ## MiniportPause
 
@@ -147,7 +147,7 @@ The NDIS [*MiniportPause*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_p
 
 The diagram below shows the flow of MiniportPause.
 
-![wdi miniport pause flow](images/wdi-miniport-pause-flow.png)
+![wdi miniport pause flow.](images/wdi-miniport-pause-flow.png)
 
 ## MiniportRestart
 
@@ -156,7 +156,7 @@ The NDIS [*MiniportRestart*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport
 
 The diagram below shows the flow of MiniportRestart.
 
-![wdi miniport restart flow](images/wdi-miniport-restart-flow.png)
+![wdi miniport restart flow.](images/wdi-miniport-restart-flow.png)
 
 ## MiniportResetEx
 
@@ -170,7 +170,7 @@ The diagram below shows the flow of MiniportRestart.
 
 The diagram below shows the flow of MiniportDevicePnPEventNotify.
 
-![wdi miniport drive pnp notification flow](images/wdi-miniport-device-pnp-notification-flow.png)
+![wdi miniport drive pnp notification flow.](images/wdi-miniport-device-pnp-notification-flow.png)
 
 ## MiniportShutdownEx
 
@@ -179,7 +179,7 @@ The diagram below shows the flow of MiniportDevicePnPEventNotify.
 
 The diagram below shows the flow of MiniportShutdownEx.
 
-![wdi miniport shutdown flow](images/wdi-miniport-shutdown-flow.png)
+![wdi miniport shutdown flow.](images/wdi-miniport-shutdown-flow.png)
 
 ## MiniportOidRequest
 
@@ -200,17 +200,17 @@ For every WDI command, there are two potential fields where an NDIS\_STATUS code
 
 The diagram below shows an example of an NDIS OID request that maps to a single WDI command. When the OID request is submitted by the operating system, the Microsoft component converts it to a WDI OID request and submits the WDI OID request to the IHV miniport. When the IHV miniport completes the OID, the Microsoft component appropriately completes the original OID request.
 
-![wdi miniport oid request sequence for single wdi command](images/wdi-miniport-oid-request-single.png)
+![wdi miniport oid request sequence for single wdi command.](images/wdi-miniport-oid-request-single.png)
 
 If the OriginalOidRequest maps to multiple WDI OidRequests and one of the WDI requests fails, the OriginalOidRequest also fails. If a subset of the intermediate operations already finished, the Microsoft component attempts to undo the operations that support clean up.
 
 The diagram below shows an example of an NDIS OID request that is handled completed by the Microsoft component. When the OID request is submitted by the operating system, the Microsoft component processes and completes the OID. This OID is not passed to the WDI IHV miniport.
 
-![wdi miniport oid request sequence for oids handled by microsoft component](images/wdi-miniport-oid-request-wdi-handled.png)
+![wdi miniport oid request sequence for oids handled by microsoft component.](images/wdi-miniport-oid-request-wdi-handled.png)
 
 OIDs that are not understood by the Microsoft component are forwarded directly to the IHV component for processing.
 
-![wdi miniport oid request sequence for oids not handled by microsoft component](images/wdi-miniport-oid-request-unknown.png)
+![wdi miniport oid request sequence for oids not handled by microsoft component.](images/wdi-miniport-oid-request-unknown.png)
 
 The behavior of MiniportOidRequest is unchanged for the WDI IHV miniport driver (as compared to a Native Wi-Fi miniport). The calls are serialized and the IHV miniport can either complete it synchronously or asynchronously with a call to [**NdisMOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete).
 
@@ -226,15 +226,15 @@ This is an optional handler that is used by a WDI IHV miniport that needs to han
 
 The diagram below shows an example of a WDI indication that has a corresponding NDIS/Native Wi-Fi indication. When the indication is submitted by the IHV miniport to the Microsoft component, the Microsoft component converts it to an existing indication and forwards it to the operating system.
 
-![wdi miniport status indication flow](images/wdi-miniport-status-indication-flow.png)
+![wdi miniport status indication flow.](images/wdi-miniport-status-indication-flow.png)
 
 The diagram below shows an example of a WDI indication that has no corresponding NDIS/Native Wi-Fi indication. This is handled by the Microsoft component.
 
-![wdi status indication without direct mapping to ndis](images/wdi-miniport-status-indication-not-ndis.png)
+![wdi status indication without direct mapping to ndis.](images/wdi-miniport-status-indication-not-ndis.png)
 
 The diagram below shows an indication that is not recognized by the Microsoft component. The indication is forwarded as-is to the operating system.
 
-![wdi status indication not recognized by microsoft component](images/wdi-miniport-status-indication-unknown.png)
+![wdi status indication not recognized by microsoft component.](images/wdi-miniport-status-indication-unknown.png)
 
 The behavior of NdisMIndicateStatusEx is unchanged for the WDI IHV miniport driver (as compared to a Native Wi-Fi miniport).
 

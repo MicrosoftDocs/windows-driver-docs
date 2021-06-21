@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the major components in the Wi-Fi Offload Framework.
 
-![Wi-Fi Hotspot Offload Framework](images/WiFi_Hotspot_Offload-1.png "Wi-Fi Hotspot Offload Framework")
+![Wi-Fi Hotspot Offload Framework.](images/WiFi_Hotspot_Offload-1.png "Wi-Fi Hotspot Offload Framework")
 
 ## Hotspot offload service
 

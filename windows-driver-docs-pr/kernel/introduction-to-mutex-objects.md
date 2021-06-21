@@ -23,7 +23,7 @@ The kernel never permits a thread that owns a mutex to cause a transition to use
 
 Any driver that uses a mutex object must call [**KeInitializeMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializemutex) once before it waits on or releases its mutex object. The following figure illustrates how two system threads might use a mutex object.
 
-![diagram illustrating waiting for a mutex object](images/3mutxobj.png)
+![diagram illustrating waiting for a mutex object.](images/3mutxobj.png)
 
 As the previous figure shows, a driver that uses a mutex object must provide the storage for the mutex object, which must be resident. The driver can use the [device extension](device-extensions.md) of a driver-created device object, the controller extension if it uses a [controller object](./introduction-to-controller-objects.md), or nonpaged pool that is allocated by the driver.
 

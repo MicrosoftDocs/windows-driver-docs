@@ -58,7 +58,7 @@ The driver is insulated from all IRP cancellation handling. The system provides 
 
 The following diagram illustrates the flow of control for IRP cancellation.
 
-![diagram illustrating the flow of control for irp cancellation](images/5cancelingirp.png)
+![diagram illustrating the flow of control for irp cancellation.](images/5cancelingirp.png)
 
 A basic implementation of [*CsqCompleteCanceledIrp*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_complete_canceled_irp) is as follows.
 
@@ -106,13 +106,13 @@ Drivers use the following system routines when queuing and dequeuing IRPs:
 
 The following diagram illustrates the flow of control for [**IoCsqRemoveNextIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqremovenextirp).
 
-![diagram illustrating the flow of control for iocsqremovenextirp](images/4iocsqremovenextirp.png)
+![diagram illustrating the flow of control for iocsqremovenextirp.](images/4iocsqremovenextirp.png)
 
 -   [**IoCsqRemoveIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqremoveirp) to remove the specified IRP from the queue.
 
 The following diagram illustrates the flow of control for [**IoCsqRemoveIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqremoveirp).
 
-![diagram illustrating the flow of control for iocsqremoveirp](images/3iocsqremoveirp.png)
+![diagram illustrating the flow of control for iocsqremoveirp.](images/3iocsqremoveirp.png)
 
 These routines, in turn, dispatch to driver-supplied routines.
 
@@ -122,11 +122,11 @@ Note that both **IoCsqInsertIrp** and **IoCsqInsertIrpEx** can be called on any 
 
 The following diagram illustrates the flow of control for [**IoCsqInsertIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirp).
 
-![diagram illustrating the flow of control for iocsqinsertirp](images/iocsqinsertirp.png)
+![diagram illustrating the flow of control for iocsqinsertirp.](images/iocsqinsertirp.png)
 
 The following diagram illustrates the flow of control for [**IoCsqInsertIrpEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirpex).
 
-![diagram illustrating the flow of control for iocsqinsertirpex](images/2iocsqinitializeex.png)
+![diagram illustrating the flow of control for iocsqinsertirpex.](images/2iocsqinitializeex.png)
 
 There are several natural ways to use the **IoCsq*Xxx*** routines to queue and dequeue IRPs. For example, a driver could simply queue IRPs to be processed in the order in which they are received. The driver could queue an IRP as follows:
 

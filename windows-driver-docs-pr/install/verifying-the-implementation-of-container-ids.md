@@ -16,7 +16,7 @@ The simplest way to verify that a device complies with the container ID requirem
 
 The following screen shot shows the Devices and Printers UI for a computer that has an attached USB keyboard and mouse. Notice that only one icon appears for each device.
 
-![screen shot of devices and printers window displaying icons for a usb keyboard and mouse](images/containerid-7.png)
+![screen shot of devices and printers window displaying icons for a usb keyboard and mouse.](images/containerid-7.png)
 
 In this example, the mouse is attached to a USB port on a desktop computer. However, only one instance of the mouse appears for the physical device. As a result, this device correctly implements the container ID requirements.
 

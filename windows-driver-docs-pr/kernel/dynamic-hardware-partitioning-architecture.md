@@ -13,7 +13,7 @@ A hardware partitionable server can be configured into one or more isolated hard
 
 The following figure shows an example of a hardware partitionable server.
 
-![diagram illustrating a hardware partitionable server](images/dhparch.gif)
+![diagram illustrating a hardware partitionable server.](images/dhparch.gif)
 
 In the previous figure, the server has a total of 12 partition units: four memory modules, four processor modules, and four I/O host bridge modules. Each of these partition units is assigned to one of three hardware partitions. Each hardware partition is completely isolated from the other hardware partitions. The service processor is responsible for the configuration of the hardware partitions. It controls the mapping of the partition units to the hardware partitions and creates isolation between the hardware partitions.
 

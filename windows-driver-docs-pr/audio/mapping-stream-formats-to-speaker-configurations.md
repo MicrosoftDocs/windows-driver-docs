@@ -43,7 +43,7 @@ Regarding the third option, the driver should avoid directly performing software
 
 The following figure shows a stream that is recorded for a 5.1 surround sound speakers configuration (left) but is played through a 7.1 home theater speakers configuration (right).
 
-![diagram illustrating playing a 5.1 stream on a 7.1 speaker configuration](images/spkrcfg5.png)
+![diagram illustrating playing a 5.1 stream on a 7.1 speaker configuration.](images/spkrcfg5.png)
 
 In the preceding figure, the recorded 5.1 format does not contain channel information for the BL and BR speaker positions in the 7.1 speaker configuration. Thus, these two speakers are silent. (Another, more difficult alternative would be for the audio device to synthesize two additional channels for the BL and BR speakers by mixing the content from the original six channels in the recording.)
 
@@ -59,7 +59,7 @@ Vendors who believe that at least some of their users might want to distinguish 
 
 The following figure shows a stream recorded for a 7.1 home theater speakers configuration (left) being played through a 5.1 surround sound speakers configuration (right). The channel mask for the 7.1-channel stream is 0x63F.
 
-![diagram illustrating playing a 7.1 stream on a 5.1 speaker configuration](images/spkrcfg6.png)
+![diagram illustrating playing a 7.1 stream on a 5.1 speaker configuration.](images/spkrcfg6.png)
 
 In this example, channels 6 and 7, which contain the data for the side speaker positions in the 7.1 configuration, play through the side speaker positions in the 5.1 configuration. The audio device simply discards channels 4 and 5, which contain the data for the back speaker positions in the 7.1 configuration, when it plays the stream on the 5.1 configuration. As mentioned previously, another alternative (not shown in the preceding figure) is for the device to attempt to preserve the content in channels 4 and 5 by mixing them with channels 6 and 7 before playing them through the side speakers in the 5.1 configuration.
 

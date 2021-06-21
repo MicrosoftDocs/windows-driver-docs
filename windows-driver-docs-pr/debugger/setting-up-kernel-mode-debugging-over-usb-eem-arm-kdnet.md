@@ -29,7 +29,7 @@ On the target computer, launch Device Manager.
 
 Confirm that the *Synopsys USB 3.0 Dual-Role Controller* is listed.
 
-![device manager showing the USB node with Synopsys USB 3.0 Dual-Role Controller highlighted in a box](images/kdnet-usb-eem-device-manager-target.png)
+![device manager showing the USB node with Synopsys USB 3.0 Dual-Role Controller highlighted in a box.](images/kdnet-usb-eem-device-manager-target.png)
 
 ## Determine the debugging port when multiple ports are available
 
@@ -37,7 +37,7 @@ After you have identified a port that supports debugging, the next step is to lo
 
 On the Surface Pro X, use the lower of the two USB C ports is used for KDNET EEM debugging.
 
-![A photo of the side of a surface pro x showing two usb c ports ](images/kdnet-usb-eem-surface-pro-x-usb-ports.png)
+![A photo of the side of a surface pro x showing two usb c ports .](images/kdnet-usb-eem-surface-pro-x-usb-ports.png)
 
 ## Use kdnet.exe to confirm device support and view the busparams value
 
@@ -140,7 +140,7 @@ Confirm that the Windows KDNET-USB-EMM Network Adapter is present under Network 
 
 The device properties show when the controller is reserved for use by the Windows kernel debugger.
 
-![device manager showing the USB node with Synopsys USB 3.0 Dual-Role Controller showing when the controller is reserved](images/kdnet-usb-eem-device-manager-properties-active-target.png)
+![device manager showing the USB node with Synopsys USB 3.0 Dual-Role Controller showing when the controller is reserved.](images/kdnet-usb-eem-device-manager-properties-active-target.png)
 
 ## Troubleshooting Host
 
@@ -148,7 +148,7 @@ Confirm that the Windows KDNET-USB-EMM Network Adapter is present under Network 
 
 On the host the KDNET-EEM connection using the USB Type A port is shown.
 
-![device manager showing the network node with a node for Windows KDNET USB-EEM network adapter](images/kdnet-usb-eem-device-manager-host-adapter.png)
+![device manager showing the network node with a node for Windows KDNET USB-EEM network adapter.](images/kdnet-usb-eem-device-manager-host-adapter.png)
 
 ## Related topics
 

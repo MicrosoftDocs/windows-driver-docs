@@ -29,7 +29,7 @@ For the third scenario, when a connection is activated or bridged on the host, t
 
 The following figure shows the scenario flow:
 
-![MB PCO operations flow](images/mb_PCO_operations_flow.png "MB PCO operations flow")
+![MB PCO operations flow.](images/mb_PCO_operations_flow.png "MB PCO operations flow")
 
 ## Modem behavior with Selective Suspend and Connected Standby
 
@@ -48,7 +48,7 @@ The host is not aware of the modem being reset, so the activated connections fro
 
 The following diagram illustrates the modem’s reset flow when one of these scenarios occurs, with Verizon Wireless as the example MO:
 
-![MB modem reset based on PCO values](images/mb_PCO_modem_reset.png "MB modem reset based on PCO values")
+![MB modem reset based on PCO values.](images/mb_PCO_modem_reset.png "MB modem reset based on PCO values")
 
 ## NDIS interface to the modem
 

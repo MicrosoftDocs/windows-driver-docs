@@ -20,7 +20,7 @@ The following figure shows establishing a secure connection through authenticati
 
 Command and status messages are subsequently passed unencrypted; however, for each message, MACs are created by using the data integrity key.
 
-![diagram illustrating authentication and key exchange](images/coppkey.png)
+![diagram illustrating authentication and key exchange.](images/coppkey.png)
 
 For more information about MACs, see [Cryptographic Primitives Used by COPP](cryptographic-primitives-used-by-copp.md).
 

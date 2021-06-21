@@ -14,7 +14,7 @@ The following figure shows the architectural block diagram of the USB driver sta
 
 Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oHCI, or uHCI controllers. The USB 2.0 driver stack ships in Windows XP with Service Pack 1 (SP1) and later versions of the Windows operating system.
 
-![architectural block diagram for usb 2.0 and 3.0 driver stacks](images/usb-driver-stack-3.png)
+![architectural block diagram for usb 2.0 and 3.0 driver stacks.](images/usb-driver-stack-3.png)
 
 -   [USB 3.0 driver stack](#usb-30-driver-stack)
     -   [USB 3.0 host controller driver (Usbxhci.sys)](#usb-30-host-controller-driver-usbxhcisys)

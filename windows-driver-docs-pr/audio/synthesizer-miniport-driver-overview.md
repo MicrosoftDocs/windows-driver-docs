@@ -45,7 +45,7 @@ Two other header files that are of interest are dmusprop.h, which contains Direc
 
 The following diagram shows the relationship between the IHV adapter driver and the rest of the DirectMusic system.
 
-![diagram illustrating the relationship of the adapter driver to the directmusic system](images/dmkmbig.png)
+![diagram illustrating the relationship of the adapter driver to the directmusic system.](images/dmkmbig.png)
 
 At the topmost level, the driver is exposed via a DirectMusic port driver (an **IDirectMusicPort** interface instance). This is how an application talks to DirectMusic. This port driver communicates downward to a pin instance via standard kernel streaming calls through the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function (described in the Microsoft Windows SDK documentation).
 

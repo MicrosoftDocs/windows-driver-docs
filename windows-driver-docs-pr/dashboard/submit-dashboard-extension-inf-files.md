@@ -33,11 +33,11 @@ This section describes how to submit and publish an INF package. See the highlig
 
 1. Start a HLK test run with your base driver and Extension INF(s) as normal. The HLK results will be used for all of the below package creation steps. 
 
-    ![an image showing the files output by an HLK test run](images/hlk-result-files.png)
+    ![an image showing the files output by an HLK test run.](images/hlk-result-files.png)
 
 2. Remove the Extension INF template items from your Drivers folder and add only the base driver files back into your HLK package, as shown below.
 
-    ![an image showing the base driver files](images/hlk-result-files2.png)
+    ![an image showing the base driver files.](images/hlk-result-files2.png)
 
 3. Create and sign this HLKx package to make your base driver package.
 
@@ -48,7 +48,7 @@ This section describes how to submit and publish an INF package. See the highlig
 
 1. Using the same HLK results from above, select **Package** > **Replace Driver**
 
-    ![an image showing the 'replace driver' option in the HLK](images/hlk-replace-driver.png)
+    ![an image showing the 'replace driver' option in the HLK.](images/hlk-replace-driver.png)
 
 2. Add the Extension INF to the driver's folder with any referenced binaries. If you have multiple Extension INFs, only add one file. 
 
@@ -83,7 +83,7 @@ For example, when you create an ExtensionID for a new system part:
 
 You should generate a new ExtensionID for the initial version of an Extension INF (i.e. The first time you customize and submit an Extension INF). This includes the first time you receive a new shared shipping label for a new device. Visual Studio includes a GUID creation utilities in Tools > Create GUID, though any online GUID generation tool should work, if it matches the registry format as shown below.
 
-![An image showing the create GUID screen in Visual Studio](images/guid-formatting.png)
+![An image showing the create GUID screen in Visual Studio.](images/guid-formatting.png)
 
 If you are updating an Extension INF that has already been published, keep the ExtensionID the same and increment the version and/or date specified by the [DriverVer directive](../install/inf-driverver-directive.md). the Driver date and driver version are used (in that order) to differentiate between multiple Extension INFs with the same ExtensionID.
 
@@ -91,7 +91,7 @@ If you are updating an Extension INF that has already been published, keep the E
 
 To publish your Extension INF submission, follow the steps in [Publish a driver to Windows Update](./publish-a-driver-to-windows-update.md). Ensure that both automatic driver promotion options are checked, and that your Extension INFs have specific targeting. 
 
-![An image showing automatic driver promotions](images/automatic-driver-promotion-options.png)
+![An image showing automatic driver promotions.](images/automatic-driver-promotion-options.png)
 
 If you do not see these driver promotion options, you may need to sign up for [driver flighting](./driver-flighting.md).
 

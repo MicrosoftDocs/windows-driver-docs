@@ -33,7 +33,7 @@ You can run the WDK for Windows Server 2022 on Windows 7 and later, and use it t
 
 ## WDK for Windows Server 2022
 
-### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2019
+### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2019
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
 
@@ -62,13 +62,13 @@ MSVC v142 - VS 2019 C++ x64/x86 build tools (Latest)
 MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
-### ![download icon](images/download-install.png) Step 1.5 Install Windows SDK, version 2104 (Build 10.0.20348.0)
+### ![download icon.](images/download-install.png) Step 1.5 Install Windows SDK, version 2104 (Build 10.0.20348.0)
 * [Download SDK for Windows 10, version 2104 (Build 10.0.20348.0)](https://go.microsoft.com/fwlink/?linkid=2164360)
 
 This SDK is strongly recommended and will eventually be made available through Visual Studio
 
 
-### ![download icon](images/download-install.png) Step 2: Install WDK for Windows Server 2022
+### ![download icon.](images/download-install.png) Step 2: Install WDK for Windows Server 2022
 
 * [Download WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149)
 
@@ -83,9 +83,9 @@ The EWDK is a standalone, self-contained command-line environment for building d
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
+### ![download icon.](images/download-install.png) EWDK with Visual Studio Build Tools
 
-* [Download the EWDK for Windows 10, version 2004](/legal/windows/hardware/enterprise-wdk-license-2019)
+* [Download the EWDK for Windows Windows Server 2022](/legal/windows/hardware/enterprise-wdk-license-2019)
 
 > You can use the Visual Studio interface with the build tools provided in the EWDK.
 >
@@ -114,7 +114,7 @@ You can run the Windows 10, version 2004 WDK on Windows 7 and later, and use it 
 
 ## WDK for Windows 10, version 2004
 
-### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2019
+### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2019
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
 
@@ -147,13 +147,13 @@ MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.25)
 MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (v14.25)
 ```
 
-### ![download icon](images/download-install.png) Step 1.5 Install Refreshed Windows SDK 10.0.19041.685 for Windows 10, version 2004
+### ![download icon.](images/download-install.png) Step 1.5 Install Refreshed Windows SDK 10.0.19041.685 for Windows 10, version 2004
 * [Download SDK for Windows 10, version 2004](https://aka.ms/windowssdk)
 
 This SDK is strongly recommended and will eventually be made available through Visual Studio
 
 
-### ![download icon](images/download-install.png) Step 2: Install Refreshed WDK for Windows 10, version 2004
+### ![download icon.](images/download-install.png) Step 2: Install Refreshed WDK for Windows 10, version 2004
 
 * [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)
 
@@ -168,7 +168,7 @@ The EWDK is a standalone, self-contained command-line environment for building d
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
+### ![download icon.](images/download-install.png) EWDK with Visual Studio Build Tools
 
 * [Download the EWDK for Windows 10, version 2004](/legal/windows/hardware/enterprise-wdk-license-2019)
 

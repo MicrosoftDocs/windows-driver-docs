@@ -23,7 +23,7 @@ This section applies only to Windows 7 and later, and Windows Server 2008 R2 and
 
 The [**QueryDisplayConfig**](/windows/win32/api/winuser/nf-winuser-querydisplayconfig) CCD function always returns path information and source and target mode information for a particular display configuration. The following figure shows an example of how the source and target mode information relates to the path information. In this example, the QDC\_ALL\_PATHS flag was passed to the *Flags* parameter in the call to **QueryDisplayConfig**.
 
-![diagram illustrating the relationship of mode information to path information](images/displayconfigpathandmode.png)
+![diagram illustrating the relationship of mode information to path information.](images/displayconfigpathandmode.png)
 
  
 

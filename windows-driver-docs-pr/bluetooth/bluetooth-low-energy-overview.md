@@ -13,11 +13,11 @@ Each profile defines the use of one or more services to create a use case or sce
 
 The diagram below illustrates the way objects are structured inside a typical GATT service.
 
-![bluetooth low energy gatt service declarations](images/bthleservicedeclaration.png)
+![bluetooth low energy gatt service declarations.](images/bthleservicedeclaration.png)
 
 When a Bluetooth Low Energy device is paired with a Windows 8 machine, the device becomes part of the system and Windows will provide device objects to represent both the device and the primary services reported by the device.
 
-![device object structure of the windows 8 bluetooth low energy implementation](images/bthlewin8supt.png)
+![device object structure of the windows 8 bluetooth low energy implementation.](images/bthlewin8supt.png)
 
 Each device and its primary services are represented as device objects in Windows and these device objects can be queried and managed using the [device installation functions](/previous-versions/ff549791(v=vs.85)) such as [**SetupDiEnumDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo), and [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 

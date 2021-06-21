@@ -22,7 +22,7 @@ Secure Digital (SD) card technology began with portable, miniature memory cards,
 
 Card readers for many early SD storage devices were designed to connect to the USB bus. Windows manages these devices with the USB mass storage driver (*usbstor.sys*) and the native storage class driver (*disk.sys*), as depicted in the following diagram:
 
-![diagram illustrating a device stack for an early sd storage device](images/sdio-usb.png)
+![diagram illustrating a device stack for an early sd storage device.](images/sdio-usb.png)
 
 For a more complete description of the device stack that Windows creates for a memory card that connects to the USB bus, see [Device Object Example for a USB Mass Storage Device](../storage/device-object-example-for-a-usb-mass-storage-device.md).
 
@@ -30,7 +30,7 @@ The operating system provides support for SD host controllers that connect direc
 
 All device drivers in the SD stack, whether native or vendor-supplied, must communicate with the SD bus driver by calling routines in the static SD bus library (*sdbus.lib*). SD drivers must link to this library when they compile. The following diagram depicts the SD driver stack that the system creates when it enumerates an SD controller and accompanying cards:
 
-![diagram illustrating the relationship between the sd software and hardware components](images/sdiostack.png)
+![diagram illustrating the relationship between the sd software and hardware components.](images/sdiostack.png)
 
 SD device drivers cannot directly access the host-controller register set, nor can they embed pass-through commands for the host controller in I/O request packets (IRPs). SD device drivers issue commands to the host controller by calling the SD bus library routines, and then the library generates the appropriate SD commands for the host controller.
 

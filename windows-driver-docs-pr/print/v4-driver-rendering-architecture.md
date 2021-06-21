@@ -15,7 +15,7 @@ The rendering architecture for the v4 printer driver model is the same as the XP
 
 The following diagram shows the rendering architecture choices for v4 printer drivers.
 
-![rendering architecture choices for v4 printer drivers](images/v4xpsdrvarch.png)
+![rendering architecture choices for v4 printer drivers.](images/v4xpsdrvarch.png)
 
 The following paragraphs explain the roles of the IHV filters in the preceding diagram, and also provide guidelines for developing features to work within this rendering architecture.
 

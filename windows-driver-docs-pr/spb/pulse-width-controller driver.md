@@ -46,7 +46,7 @@ PWM describes the basic technique for generating a rectangular pulse wave with m
 
 A PWM waveform can be categorized by 2 parameters: waveform period (T) and duty cycle. Waveform frequency (f) is  the reciprocal of the waveform period f=1/T. Duty cycle describes the proportion of the 'on' or 'Active' time with respect to the regular interval or 'Period' of time; a low duty cycle corresponds to an average of low output power, because the power is off for most of the time. Duty cycle is expressed in percent where 100% being fully on, 0% being fully off, 50% being 'Active' 50% of the time.
 
-![drivers](images/pwm.png)
+![drivers.](images/pwm.png)
 
 
 ## Accessing the system-exposed PWM controller and pins
@@ -323,7 +323,7 @@ Note that there are some important implications to opening and closing a control
 |Is-Opened-For-Write|False| False indicates that the controller is either closed or is opened for read; True indicates that it is opened for write.|
 |Desired-Period| MinimumPeriod| |
 
-![Controller state machine](images/controller-state-machine.png)
+![Controller state machine.](images/controller-state-machine.png)
 
 The controller state machine below is centered around the Is-Opened-For-Write state only. The desired period value is also left out because it does not affect the kind of operation that can be done on the controller. Note that whenever a controller that is opened for write gets closed by the caller that opened it for write, the controller get reset to its defaults (default desired period).
 
@@ -336,7 +336,7 @@ The controller state machine below is centered around the Is-Opened-For-Write st
 |  Active-Duty-Cycle  |       0       |                                                                                                                  |
 |     Is-Started      |     False     |                                 False indicates stopped; True indicates started.                                 |
 
-![Pins state machine](images/pins-state-machine.png)
+![Pins state machine.](images/pins-state-machine.png)
 
 The pin state machine is centered around the combination of the 2 states Is-Opened-For-Write and Is-Started. Other pin states like polarity and active duty cycles are left out because their values don’t affect the kind of operations that can be performed on the pin. Note that whenever a pin that is opened for write get closed by the caller that opened it for write, the pin get rest to its defaults (stopped, default polarity, and active duty cycle). Also note that Set-Polarity transition on a state with Is-Started = true is left out because it is invalid in that state.
 

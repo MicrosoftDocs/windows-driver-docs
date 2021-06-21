@@ -14,7 +14,7 @@ Windows 8 MB miniport drivers are based on the [NDIS 6.30](introduction-to-ndis
 
 The following diagram represents the architecture of the MB driver model.
 
-![diagram illustrating the architecture of the mobile broadband driver model](images/wwanarchitecture.png)
+![diagram illustrating the architecture of the mobile broadband driver model.](images/wwanarchitecture.png)
 
 ### Terminology
 

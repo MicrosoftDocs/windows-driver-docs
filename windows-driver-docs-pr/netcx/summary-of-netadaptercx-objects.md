@@ -12,7 +12,7 @@ ms.custom: 19H1
 
 The following figure shows the default parent-child relationships for NetAdapterCx objects. Parent objects are at the top of the figure, so for example the NETADAPTER object is, by default, a child of the WDFDEVICE object. Objects that can have multiple instances are denoted by a double box.
 
-![Summary of NetAdapterCx objects for a NetAdapterCx client driver](images/netcx-adapter-object-model.png "Summary of NetAdapterCx objects for a NetAdapterCx client driver")
+![Summary of NetAdapterCx objects for a NetAdapterCx client driver.](images/netcx-adapter-object-model.png "Summary of NetAdapterCx objects for a NetAdapterCx client driver")
 
 A WDFDEVICE object is a standard [framework object](../wdf/introduction-to-framework-objects.md) that represents a device. A NETADAPTER object represents a network interface, which is the endpoint for all networking I/O. You can have multiple NETADAPTER objects per WDFDEVICE, with the WDFDEVICE being the parent object of each NETADAPTER.
 

@@ -35,7 +35,7 @@ To control the source path in WinDbg, do one of the following:
 
 To open or close a source file directly, do one of the following:
 
--   Choose **Open Source File** from the **File** menu, or press CTRL+O. You can also use the **Open source file** button (![screen shot of the open source file button](images/tbopen.png)) on the toolbar.
+-   Choose **Open Source File** from the **File** menu, or press CTRL+O. You can also use the **Open source file** button (![screen shot of the open source file button.](images/tbopen.png)) on the toolbar.
 
     **Note**  When you use the menu or the toolbar button to open a source file, the path of that file is automatically appended to the source path.
 
@@ -58,7 +58,7 @@ The debugger opens a source window when it loads a new source file. To restore o
 
 The following screen shot shows an example of a Source window.
 
-![screen shot of the source window, displaying a source file that has been loaded into the debugger](images/window-source.png)
+![screen shot of the source window, displaying a source file that has been loaded into the debugger.](images/window-source.png)
 
 Each source file resides in its own Source window. The title of each Source window is the full path of the source file.
 
@@ -66,7 +66,7 @@ Each source file resides in its own Source window. The title of each Source wind
 
 Each Source window displays the text of one source file. You cannot edit a source file in the debugger. For more information about changing the font and tab settings, see [Changing Text Properties](changing-text-properties.md).
 
-Each Source window has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon that appears near the upper-right corner of the window (![screen shot of the button that displays the source window toolbar shortcut menu](images/window-source-icon.png)). The following list describes some of the menu commands:
+Each Source window has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon that appears near the upper-right corner of the window (![screen shot of the button that displays the source window toolbar shortcut menu.](images/window-source-icon.png)). The following list describes some of the menu commands:
 
 -   **Set instruction pointer to current line** changes the value of the instruction pointer to the instruction that corresponds to the current line. This command is equivalent to using the [Edit | Set Current Instruction](edit---set-current-instruction.md) command or pressing CTRL+SHIFT+I.
 

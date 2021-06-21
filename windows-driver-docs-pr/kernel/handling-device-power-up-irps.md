@@ -18,7 +18,7 @@ Requests to power up a device must be handled first by the underlying bus driver
 
 The following figure shows the steps involved in handling a power-up IRP.
 
-![diagram illustrating handling a device power-up request](images/devd0.png)
+![diagram illustrating handling a device power-up request.](images/devd0.png)
 
 When handling an **IRP\_MN\_SET\_POWER** request for power-up, a function or filter driver must:
 

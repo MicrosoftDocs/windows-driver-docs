@@ -14,7 +14,7 @@ The IHV component in the WDI model is an NDIS miniport. It interfaces with the o
 
 The figure below shows the overall architecture layout and a sample flow of messages (PNP actions, OIDs, and sends) from the operating system to the IHV miniport driver for both the old Native WLAN model and the new WDI WLAN model.
 
-![native wi-fi and wdi driver comparison](images/wdi-model-comparison.png)
+![native wi-fi and wdi driver comparison.](images/wdi-model-comparison.png)
 
 Besides assisting with the Native Wi-Fi interface requirements, the Microsoft WLAN component also handles most of the common NDIS requirements. For example, it handles the [*MiniportPause*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_pause) requirements from NDIS and converts them to WDI data and control path messages to ensure that NDIS requirements are met. However, it also provides the IHV miniport driver the ability to do additional work. The driver can register to be notified on *MiniportPause* call to do any additional cleanup it wants to do during *MiniportPause*.
 

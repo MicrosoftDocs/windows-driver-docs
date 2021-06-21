@@ -25,7 +25,7 @@ Unidrv and Pscript5 print drivers that have custom features require plug-ins to 
 <a href="" id="-monolithic-gdi-based-and-xpsdrv-print-drivers"></a> Monolithic GDI-based and XPSDrv print drivers  
 XPSDrv print drivers must support the [IPrintTicketProvider interface](/previous-versions/windows/hardware/drivers/ff554375(v=vs.85)). GDI-based, monolithic print drivers must support the IPrintTicketProvider interface to return printer capabilities and features that the Win32 function, **DeviceCapabilities**, does not provide.
 
-![diagram illustrating the print capabilities support in print drivers](images/ptpcarch1.gif)
+![diagram illustrating the print capabilities support in print drivers.](images/ptpcarch1.gif)
 
  
 

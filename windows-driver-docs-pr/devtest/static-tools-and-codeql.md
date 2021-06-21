@@ -422,7 +422,7 @@ SET ERRORLEVEL = 0
 
 5. Provide a path to the batch file and a description of the post build event.
 
-![Visual Studio post build event configuration showing a batch file configured as a command line option](images/codeql-visual-studio-post-build-event.png)
+![Visual Studio post build event configuration showing a batch file configured as a command line option.](images/codeql-visual-studio-post-build-event.png)
 
 6. When the project builds, at the end of the build output, the results from the running the batch file will be displayed.
 

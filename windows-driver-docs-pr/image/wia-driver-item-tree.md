@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 In WIA, an imaging device is represented logically as a hierarchical tree of WIA items, as shown in the following diagram of a camera tree.
 
-![diagram illustrating a wia driver item tree](images/art-2.png)
+![diagram illustrating a wia driver item tree.](images/art-2.png)
 
 The root item represents the actual device, and the child items represent images or folders. Folders can contain images or other folders. Items have properties that the minidriver can set or query.
 

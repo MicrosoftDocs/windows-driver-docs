@@ -22,7 +22,7 @@ In the Storport queue model, all requests are queued in the port driver in per-l
 
 There are no predefined limits from Storport on the number of outstanding requests that an adapter can have. For example, an adapter with 55 logical units attached to it with a queue depth of 255 could post up to a maximum of 14,025 (55 x 255) requests at a time. See the following diagram for a description of the port driver's queuing model.
 
-![diagram illustrating the port driver's queuing model](images/queues.png)
+![diagram illustrating the port driver's queuing model.](images/queues.png)
 
 Port Driver's Queuing Model
 

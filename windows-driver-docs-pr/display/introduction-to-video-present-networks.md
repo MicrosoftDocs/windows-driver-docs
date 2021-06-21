@@ -45,7 +45,7 @@ Note that video present targets are not the monitors (or other external display 
 
 The following diagram illustrates a VidPN.
 
-![diagram illustrating a video present network (vidpn)](images/vidpn.png)
+![diagram illustrating a video present network (vidpn).](images/vidpn.png)
 
 The VidPN illustrated in the preceding diagram has three video present targets: a DVI connector, an HD15 connector, and an S-video connector. The VidPN topology is represented by the lines that connect the two sources to the three targets. The topology specifies that Source 1 is connected to the DVI target and Source 2 is connected to both the HD15 and S-video targets. The content rendered on Source 2 is presented as a clone view on the display devices connected to the HD15 and S-video connectors.
 
@@ -57,15 +57,15 @@ The model works similarly for video present targets. Each video present target s
 
 A display adapter has one or more *video output codecs* (for example, a CRTC) that read from video present sources and place the corresponding video signals on video present targets. At any given time, a video output codec can read from at most one video present source; however, that codec can supply a video signal to more than one video present target (clone view).The VidPN manager concerns itself with the associations between video present sources and video present targets, but does not concern itself with the role of the video output codecs. The decisions about which video output codec reads from a particular video present source is entirely under the control of the display miniport driver. For example, suppose a display adapter has two video output codecs, and the VidPN manager asks the display miniport driver to implement the topology shown in the following diagram.
 
-![diagram illustrating a video present network (vidpn) topology](images/vidpntopology.png)
+![diagram illustrating a video present network (vidpn) topology.](images/vidpntopology.png)
 
 The following diagram shows one way that the display miniport driver could assign video output codecs to video present sources.
 
-![diagram illustrating video codecs used to implement a video present network (vidpn) topology](images/vidpncodecs1.png)
+![diagram illustrating video codecs used to implement a video present network (vidpn) topology.](images/vidpncodecs1.png)
 
 Notice that the clone view (HD15, S-video) in the preceding diagram is handled by a single CRTC. Now suppose that the HD15 output connected to CRTC 1 is no longer needed. Then the display miniport driver could implement the clone view by configuring the video output codecs as shown in the following diagram:
 
-![diagram illustrating an alternative use of video output codecs](images/vidpncodecs2.png)
+![diagram illustrating an alternative use of video output codecs.](images/vidpncodecs2.png)
 
 Implementing the clone view with two CRTCs has some advantages over implementing it with one CRTC. For example, with two CRTCs the HD15 and S-video outputs can have different resolutions and refresh rates.
 

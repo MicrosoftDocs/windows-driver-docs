@@ -12,7 +12,7 @@ As an option, the driver for a general-purpose I/O (GPIO) controller can provide
 
 As a rule, a GPIO controller that is an integrated part of a System on a Chip (SoC) chip has memory-mapped hardware registers that can be directly accessed by the processor in the SoC chip. However, a separate GPIO controller device might be connected externally to the SoC chip through a serial bus, as shown in the following diagram.
 
-![an integrated gpio controller and an external gpio controller](images/gpioconnects.png)
+![an integrated gpio controller and an external gpio controller.](images/gpioconnects.png)
 
 In this diagram, the external GPIO controller is connected to an I²C bus. This bus is controlled by an I²C bus controller that is an integrated part of the SoC chip. The interrupt request line from the external GPIO controller is connected to a pin on the integrated GPIO controller. The [GpioClx DDI](./gpioclx-ddi.md) can accommodate both the integrated GPIO controller and the external GPIO controller in this example.
 

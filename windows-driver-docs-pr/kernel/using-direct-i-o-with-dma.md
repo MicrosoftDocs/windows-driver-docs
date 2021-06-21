@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates how the I/O manager sets up an [**IRP\_MJ\_READ**](./irp-mj-read.md) request for a DMA transfer operation that uses direct I/O.
 
-![diagram illustrating direct i/o on user buffers for devices that use dma](images/3mdldrct.png)
+![diagram illustrating direct i/o on user buffers for devices that use dma.](images/3mdldrct.png)
 
 The previous figure illustrates how drivers can use the IRP's **MdlAddress** to transfer data for a read request. The driver in the figure uses packet-based system or bus-master DMA, and has ORed the device object's **Flags** with DO\_DIRECT\_IO.
 

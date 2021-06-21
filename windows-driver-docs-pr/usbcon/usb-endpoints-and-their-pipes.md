@@ -40,7 +40,7 @@ A pipe for an endpoint is opened when the device is configured either by selecti
 
 An unconfigured endpoint is called an endpoint while a configured endpoint is called a pipe.
 
-![usb pipes and endpoints](images/endpoints.png)
+![usb pipes and endpoints.](images/endpoints.png)
 
 ## Related topics
 [Concepts for all USB developers](usb-concepts-for-all-developers.md)  

@@ -22,7 +22,7 @@ Print jobs are either rendered as they are created, or they are written to a spo
 
 The following figure shows the interaction between kernel-mode GDI and the printer graphics DLL after **CreateDC** is called.
 
-![diagram illustrating the interaction between kernel-mode gdi and the printer graphics dll after createdc is called](images/gdirendr2.png)
+![diagram illustrating the interaction between kernel-mode gdi and the printer graphics dll after createdc is called.](images/gdirendr2.png)
 
 1.  When an application calls the **CreateDC** function to create a printer device context, GDI checks to see if the appropriate printer graphics DLL is loaded. If it is not, GDI loads the DLL and calls the [**DrvEnableDriver**](/windows/win32/api/winddi/nf-winddi-drvenabledriver) function in the DLL. The function is not called again unless the driver is reloaded.
 

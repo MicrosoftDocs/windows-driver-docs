@@ -16,7 +16,7 @@ When WDI receives a D2 OID, it processes the OID as if it is a regular D2, excep
 
 The following flow diagram shows the suspend sequence.
 
-![wdi usb suspend sequence](images/wdi-usb-suspend-sequence-flow.png)
+![wdi usb suspend sequence.](images/wdi-usb-suspend-sequence-flow.png)
 
 ## Related topics
 

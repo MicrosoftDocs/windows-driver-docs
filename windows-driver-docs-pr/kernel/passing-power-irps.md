@@ -16,7 +16,7 @@ Power IRPs must be passed all the way down the device stack to the PDO to ensure
 
 The following figure shows the steps that drivers need to take to pass a power IRP down a device stack in Windows 7 and Windows Vista.
 
-![diagram illustrating passing down a power irp in windows vista](images/passirpvista.png)
+![diagram illustrating passing down a power irp in windows vista.](images/passirpvista.png)
 
 As the previous figure shows, in Windows 7 and Windows Vista, a driver must do the following:
 
@@ -32,7 +32,7 @@ As the previous figure shows, in Windows 7 and Windows Vista, a driver must do
 
 The following figure shows the steps that drivers need to take to pass a power IRP down a device stack in Windows Server 2003, Windows XP, and Windows 2000.
 
-![passing down a power irp (windows server 2003, windows xp, and windows 2000)](images/passirp.png)
+![passing down a power irp (windows server 2003, windows xp, and windows 2000).](images/passirp.png)
 
 As the previous figure shows, a driver must do the following:
 

@@ -7,11 +7,11 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - Timelines
 
-![Small logo of windbg preview with bit pattern](images/windbgx-preview-logo.png)
+![Small logo of windbg preview with bit pattern.](images/windbgx-preview-logo.png)
 
 Time Travel Debugging (TTD) allows users to record traces, which are recordings of the execution of a program. Timelines  are a visual representation of events that happen during the execution. These events can be locations of: breakpoints, memory read/writes, function calls and returns, and exceptions.
 
-![Timeline in debugger showing exceptions, memory access, breakpoints and Function Calls](images/windbgx-timeline.png)
+![Timeline in debugger showing exceptions, memory access, breakpoints and Function Calls.](images/windbgx-timeline.png)
 
 Use the timelines window to quickly view important events, understand relative position and easily jump to their location in your TTD trace file. Use multiple timelines to visually explore events in the time travel trace and discover event correlation.
 
@@ -36,11 +36,11 @@ When you load a trace file and the timeline is active, it will display any excep
 
 When you hover over a breakpoint information such as the exception type and the exception code are displayed.
 
-![Timeline in debugger showing exceptions showing information on one exception code](images/windbgx-timeline-exceptions.png)
+![Timeline in debugger showing exceptions showing information on one exception code.](images/windbgx-timeline-exceptions.png)
 
 You can further filter on a specific exception code using the optional exception code field.
 
-![Timeline debugger exception dialog box showing timeline type set to exception and exception code set to 0xC0000004](images/windbgx-timeline-exceptions-dialog.png)
+![Timeline debugger exception dialog box showing timeline type set to exception and exception code set to 0xC0000004.](images/windbgx-timeline-exceptions-dialog.png)
 
 You can also add a new timeline for a specific exception type.
 
@@ -48,7 +48,7 @@ You can also add a new timeline for a specific exception type.
 
 After adding a breakpoint, you can display the positions of when that breakpoint is hit on a timeline. This can be done for example using the [bp Set Breakpoint command](bp--bu--bm--set-breakpoint-.md). When you hover over a breakpoint the address and the instruction pointer associated with the breakpoint is displayed.
 
-![Timeline in debugger showing about 30 breakpoint dots](images/windbgx-timeline-breakpoints.png)
+![Timeline in debugger showing about 30 breakpoint dots.](images/windbgx-timeline-breakpoints.png)
 
 When the breakpoint is cleared, the associated breakpoint timeline is automatically removed.
 
@@ -56,21 +56,21 @@ When the breakpoint is cleared, the associated breakpoint timeline is automatica
 
 You can display the positions of function calls on the timeline. To do this provide the search in the form of `module!function`, for example `TimelineTestCode!multiplyTwo`. You can also specify wildcards, for example `TimelineTestCode!m*`.
 
-![Adding a timeline in debugger showing function call name typed in](images/windbgx-timeline-function-calls-dialog.png)
+![Adding a timeline in debugger showing function call name typed in.](images/windbgx-timeline-function-calls-dialog.png)
 
 When you hover over a function call the  function name, input parameters, their values, and the return value are displayed. This example shows *buffer* and *size* since those are the parameters to DisplayGreeting!GetCppConGreeting.
 
-![Timeline in debugger showing function calls and registers window](images/windbgx-timeline-function-calls.png)
+![Timeline in debugger showing function calls and registers window.](images/windbgx-timeline-function-calls.png)
 
 ### Memory Access
 
 Use the memory access timeline to display when a specific range of memory has been read or written to, or where code execution has taken place. A start and stop address is used to define a range between two memory addresses.
 
-![Adding a timeline memory access dialog showing write button checked](images/windbgx-timeline-memory-access-dialog.png)
+![Adding a timeline memory access dialog showing write button checked.](images/windbgx-timeline-memory-access-dialog.png)
 
 When you hover over a memory access item the value and the instruction pointer are displayed.
 
-![Timeline in debugger showing memory access](images/windbgx-timeline-memory-access.png)
+![Timeline in debugger showing memory access.](images/windbgx-timeline-memory-access.png)
 
 ## Work with timelines
 
@@ -80,7 +80,7 @@ Click on the magnifying glass icons to zoom in and out on the timeline.
 
 In the top timeline control area use the rectangle to pan the view of the timeline. Drag the outer delimiters of the rectangle to resize the current timeline view.
 
-![Timeline in debugger showing top area that is used to select the active viewport](images/windbgx-timeline-manipulation.png)
+![Timeline in debugger showing top area that is used to select the active viewport.](images/windbgx-timeline-manipulation.png)
 
 ### Mouse Movements
 
@@ -108,7 +108,7 @@ Time Travel Position: CC:0
 
 Select **View** >> **Registers** to display the registers at this point in the timeline to begin our investigation.
 
-![Timeline in debugger showing demolab exception and registers](images/windbgx-timeline-demo-lab-exception-registers.png)
+![Timeline in debugger showing demolab exception and registers.](images/windbgx-timeline-demo-lab-exception-registers.png)
 
 In the command output note that the stack (esp) and base pointer (ebp) are pointing to two very different addresses. This could indicate that stack corruption - possibly a function returned and then corrupted the stack. To validate this, we need to travel back to before the CPU state was corrupted and see if we can determine when the stack corruption occurred.
 
@@ -157,17 +157,17 @@ Also of interest is that the locals window contains values from our target app a
 
 To further investigate, we can open up a memory window to view the contents near the stack pointer (esp) memory address. In this example it has a value of 003cf7c8. Select **Memory** >> **Text** >> **ASCII** to display the ASCII text stored at that address.
 
-![Debugger showing registers stack and memory windows](images/windbgx-timeline-demo-lab-registers-stack-memory.png)
+![Debugger showing registers stack and memory windows.](images/windbgx-timeline-demo-lab-registers-stack-memory.png)
 
 ## Memory access timeline
 
 After a memory location of interest has been identified, add a memory access timeline using that value. Click on **+ Add timeline** and fill in the starting address. We will look at 4 bytes, so adding that to the start address of 003cf7c8, we have 003cf7cb. The default is to look at all memory writes, but you can also look at just writes or code execution at that address.
 
-![Adding a timeline memory access dialog showing write button checked and a start value of 003cf7c8](images/windbgx-timeline-demo-lab-memory-access-dialog.png)
+![Adding a timeline memory access dialog showing write button checked and a start value of 003cf7c8.](images/windbgx-timeline-demo-lab-memory-access-dialog.png)
 
 We can now traverse the timeline in reverse to examine at what point in this time travel trace this memory location was written to see what we can find. Clicking on this position in the timeline we see that locals value different values for the string being copied. The destination value appears to not be complete, as if the length of our string is not correct.
 
-![Memory access timeline and locals window showing locals value with different values for source and destination](images/windbgx-timeline-demo-lab-memory-access.png)
+![Memory access timeline and locals window showing locals value with different values for source and destination.](images/windbgx-timeline-demo-lab-memory-access.png)
 
 ## Breakpoint timeline
 
@@ -191,7 +191,7 @@ From the Home menu, select **Go Back** to travel back in time until the breakpoi
 
 At this point we can examine the program stack to see what code is active.
 
-![Timeline in debugger showing memory access timeline and stack windows](images/windbgx-timeline-demo-lab-stack.png)
+![Timeline in debugger showing memory access timeline and stack windows.](images/windbgx-timeline-demo-lab-stack.png)
 
 As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set add a function call timeline.
 
@@ -220,17 +220,17 @@ dx @$cursession.TTD.Calls("DisplayGreeting!GetCppConGreeting")[0x0]
 
 Either the Start or End, or both the Start and End location boxes, must be checked.
 
-![Add new Timeline dialog showing adding Function call timeline with a function search string of DisplayGreeting!GetCppConGreeting](images/windbgx-timeline-demo-lab-function-dialog.png)
+![Add new Timeline dialog showing adding Function call timeline with a function search string of DisplayGreeting!GetCppConGreeting.](images/windbgx-timeline-demo-lab-function-dialog.png)
 
 As our code is neither recursive or re-entrant, it is pretty easy to locate on the time line when the GetCppConGreeting method is called. The call to GetCppConGreeting also occurs at the same time as our breakpoint as well as the memory access event that we defined. So it looks like we have narrowed in on an area of code to look carefully at for the root cause of our application crash.
 
-![Timeline in debugger showing memory access timeline and locals window with message and buffer with different string values](images/windbgx-timeline-demo-lab-function.png)
+![Timeline in debugger showing memory access timeline and locals window with message and buffer with different string values.](images/windbgx-timeline-demo-lab-function.png)
 
 ## Explore code execution by viewing multiple timelines
 
 Although our code sample is small, the technique of using multiple timelines allows for visual exploration of a time travel trace. You can look across the trace file to ask questions, such as "when is an area of memory accessed before a breakpoint is hit?".
 
-![Timeline in debugger showing memory access timeline and locals windows](images/windbgx-timeline-demo-lab-locals.png)
+![Timeline in debugger showing memory access timeline and locals windows.](images/windbgx-timeline-demo-lab-locals.png)
 
 The ability to see additional correlations and find things you may not have expected, differentiates the timeline tool from interacting with the time travel trace using command line commands.
 
@@ -240,15 +240,15 @@ Bookmark important Time Travel positions in WinDbg instead of manually copy past
 
 You can provide a descriptive name for bookmarks.
 
-![New bookmark dialog with example name for first api call in display greeting app](images/windbgx-timeline-bookmark-new.png)
+![New bookmark dialog with example name for first api call in display greeting app.](images/windbgx-timeline-bookmark-new.png)
 
 Access Bookmarks via the Timeline window available in *View > Timeline*. When you hover over a bookmark, it will display the bookmark name.
 
-![Timeline showing three bookmarks hovering over one showing bookmark name](images/windbgx-timeline-bookmarks.png)
+![Timeline showing three bookmarks hovering over one showing bookmark name.](images/windbgx-timeline-bookmarks.png)
 
 You can right click the bookmark to travel to that position, rename or delete the bookmark.
 
-![Bookmark right click popup menu showing travel to position edit and remove](images/windbgx-timeline-bookmark-edit.png)
+![Bookmark right click popup menu showing travel to position edit and remove.](images/windbgx-timeline-bookmark-edit.png)
 
 ### See Also
 

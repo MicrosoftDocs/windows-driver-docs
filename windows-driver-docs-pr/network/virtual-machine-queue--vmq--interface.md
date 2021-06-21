@@ -20,7 +20,7 @@ Routing to queues in the network adapter prevents a copy step to copy data from 
 
 The following figure shows the synthetic data paths within the VMQ interface.
 
-![diagram illustrating the synthetic device data paths with vmq](images/vmqdatapaths.png)
+![diagram illustrating the synthetic device data paths with vmq.](images/vmqdatapaths.png)
 
 In the figure, the miniport driver for the physical network adapter indicates received data up to the Hyper-V extensible switch component. This component acts as a network virtual service provider (NetVSP) and provides services to support networking access by the Hyper-V child partitions.
 

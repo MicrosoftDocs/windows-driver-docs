@@ -11,7 +11,7 @@ SensorExplorer is an app available on the [Microsoft Store](https://www.microsof
 
 There are three modes available via the menu bar on the left-hand side in SensorExplorer:
 
-![SensorExplorer Overview](images/sensor-explorer-overview.png)
+![SensorExplorer Overview.](images/sensor-explorer-overview.png)
 
 - **Test:** Used for manual testing of supported sensors. The orientation test verifies orientation sensors are installed in the correct position and the sensor data is as expected. Other tests such as frequency, offset and jitter, are also available. The sensor data is read using the [UWP Sensors API](/uwp/api/Windows.Devices.Sensors).
 
@@ -23,7 +23,7 @@ There are three modes available via the menu bar on the left-hand side in Sensor
 
 Tests available for each sensor can be explored by scrolling the top menu bar, highlighted in the screen shot below as a red box.
 
-![SensorExplorer Tests](images/sensor-explorer-tests.png)
+![SensorExplorer Tests.](images/sensor-explorer-tests.png)
 
 ### SensorExplorer orientation test
 
@@ -45,15 +45,15 @@ Note:
 
 - For the Simple Orientation Sensor the four directions tested are face up, face down, left, and right. For all other sensors, the four directions tested are up, down, left and right.
 
-![SensorExplorer Orientation](images/sensor-explorer-orientation.png)
+![SensorExplorer Orientation.](images/sensor-explorer-orientation.png)
 
 Once the sensor data reflects that your device is indeed in the desired orientation, a green checkmark will be displayed. And you will automatically move on to the next test.
 
-![SensorExplorer Orientation Success](images/sensor-explorer-orientation-success.png)
+![SensorExplorer Orientation Success.](images/sensor-explorer-orientation-success.png)
 
 Otherwise, after 10 sec, a red x will be displayed as this round of tests has failed.
 
-![SensorExplorer Orientation Fail](images/sensor-explorer-orientation-fail.png)
+![SensorExplorer Orientation Fail.](images/sensor-explorer-orientation-fail.png)
 
 #### After the tests
 
@@ -75,13 +75,13 @@ Calculates the maximum difference in sensor readings during a period of time, co
 
 The **View** mode automatically detects any sensors that are attached to or embedded in the platform and displays the information read from the sensors. Scroll the top menu bar (highlighted in the screen shot below as a red box) to change the sensor being displayed. For each sensor the current data and properties are shown in a table and plotted as moving waveforms. The report interval of a specific sensor can be changed here.
 
-![SensorExplorer Table](images/sensor-explorer-table.png)
+![SensorExplorer Table.](images/sensor-explorer-table.png)
 
 ## Additional information on logging
 
 The “Save Log” button will prompt for the name and location of the ETL (Event Trace Log) file, with the default name “SensorExplorerLog”. To view the ETL file use the [tracerpt command](/windows-server/administration/windows-commands/tracerpt_1).
 
-![SensorExplorer Log](images/sensor-explorer-log.png)
+![SensorExplorer Log.](images/sensor-explorer-log.png)
 
 The following will be logged:
 

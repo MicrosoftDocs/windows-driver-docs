@@ -33,7 +33,7 @@ AVStream offers significant advantages to the vendor by:
 
 In the AVStream driver model, vendors provide a minidriver that interacts with a Microsoft-provided class driver, as shown in the following diagram:
 
-![diagram illustrating the relationship between the avstream and ks services](images/avstream.png)
+![diagram illustrating the relationship between the avstream and ks services.](images/avstream.png)
 
  
 

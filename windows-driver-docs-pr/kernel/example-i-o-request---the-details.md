@@ -16,7 +16,7 @@ The figure illustrating opening a file object shows an IRP with two I/O stack lo
 
 The following figure illustrates in more detail how the drivers in the [Opening a File Object](example-i-o-request---an-overview.md) figure use I/O support routines (**Io*Xxx*** routines) to process the IRP for a read or write request.
 
-![diagram illustrating processing irps in layered drivers](images/2girpeg.png)
+![diagram illustrating processing irps in layered drivers.](images/2girpeg.png)
 
 1. The I/O manager calls the file system driver (FSD) with the IRP it has allocated for the subsystem's read/write request. The FSD accesses its I/O stack location in the IRP to determine what operation it should carry out.
 

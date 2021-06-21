@@ -12,7 +12,7 @@ Sensor device drivers are COM objects that are implemented by using the Windows 
 
 A sensor driver uses a special **class extension** object. The sensor class extension, a standard COM object, provides a standard implementation for handling I/O requests for sensor device drivers. Sensor drivers create the class extension object in the driver's process and then use the device driver interface (DDI) to forward I/O requests to and receive events from the class extension. The following diagram shows the relationship between a sensor, its driver, and the sensor class extension. (The sensor driver creates a new instance of the class extension for each sensor device.)
 
-![umdf-based sensor driver that uses the sensor class extension](images/sensordriver-cxt.jpg)
+![umdf-based sensor driver that uses the sensor class extension.](images/sensordriver-cxt.jpg)
 
 For more information about the class extension object, see [About the Sensor Class Extension](about-the-sensor-class-extension.md).
 

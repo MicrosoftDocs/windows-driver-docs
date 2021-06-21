@@ -348,7 +348,7 @@ KSCATEGORY\_AUDIO is another dual-usage GUID. It can be used as either a **KS pi
 
 For a pin category of KSNODETYPE\_ANALOG\_CONNECTOR or KSNODETYPE\_SPDIF\_INTERFACE, WDMAud needs to know whether the pin is a bridge pin to correctly translate the pin to its mixer-line equivalent. For example, an S/PDIF pin (with pin category KSNODETYPE\_SPDIF\_INTERFACE) translates to one of the four mixer-line types shown in the following figure. The translation depends on both the pin's data direction (in or out) and whether it is a bridge pin (yes or no), which together yield four possible types of mixer line (in+yes, in+no, out+yes, and out+no). The four mixer-line types shown in the figure represent the bottom pairs of entries from the preceding tables.
 
-![diagram illustrating the translation of s/pdif pins to mixer lines](images/spdifpin.png)
+![diagram illustrating the translation of s/pdif pins to mixer lines.](images/spdifpin.png)
 
 Note that two streams on the right side of the audio device in the figure are in S/PDIF format, and the two streams on the left are in wave format. The audio device performs the conversion between the two digital formats.
 

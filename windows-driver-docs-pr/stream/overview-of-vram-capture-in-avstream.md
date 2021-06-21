@@ -18,7 +18,7 @@ A capture driver can send data to any DXVA2-aware downstream filter, for example
 
 The following diagram shows how a VRAM capture-enabled AVStream minidriver interacts with the display miniport driver and with other modules.
 
-![diagram illustrating how a vram capture-enabled avstream minidriver interacts with the display miniport driver and other modules](images/lddmcapturearchitectureoverview.gif)
+![diagram illustrating how a vram capture-enabled avstream minidriver interacts with the display miniport driver and other modules.](images/lddmcapturearchitectureoverview.gif)
 
  
 

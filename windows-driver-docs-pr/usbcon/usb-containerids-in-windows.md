@@ -143,11 +143,11 @@ Currently shipping USB devices that support the Microsoft OS descriptor but do n
 
 The **ContainerID** provides information to consolidate devices for multifunction USB devices. Figure 1 shows an example of how all devices in a multifunction printer are consolidated into a single device container when all individual devices within the product use the same **ContainerID**.
 
-![consolidation of all devices in a multifunction printer](images/containerid-multifunction.png)
+![consolidation of all devices in a multifunction printer.](images/containerid-multifunction.png)
 
 By consolidating all devices for a multifunction USB device, the physical product can be shown as a single device in Devices and Printers in Windows 7. Figure 2 shows an example of a USB multifunction keyboard and mouse device that appears as a single device in Devices and Printers.
 
-![multifunction device in devices and printers](images/containerid-multifunction1.png)
+![multifunction device in devices and printers.](images/containerid-multifunction1.png)
 
 ## USB ContainerID HCK Requirements
 

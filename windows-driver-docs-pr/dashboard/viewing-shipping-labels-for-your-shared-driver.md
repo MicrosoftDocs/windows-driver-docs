@@ -15,7 +15,7 @@ After you share a driver with a partner, the partner can create shipping labels 
 
 2.  Go to the **Distribution** section of the hardware submission. You can view a list of shipping labels for this shared driver.
 
-    ![screenshot that shows shared submission's shipping labels](images/publish-view-label.png)
+    ![screenshot that shows shared submission's shipping labels.](images/publish-view-label.png)
 
 ## <span id="related_topics"></span>Related topics
 

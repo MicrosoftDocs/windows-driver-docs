@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Use this decision tree with Step 3 of [Roadmap for Developing WDM Audio Drivers](roadmap-for-developing-wdm-audio-drivers.md). The tree helps you determine the type of audio driver to learn about. The system-supplied port class driver (PortCls) provides a set of port drivers that implement most of the basic functionality. These port drivers simplify the development process for the driver developer. High definition (HD) audio and AC97 drivers are typically based on the PortCls class driver, whereas USB and 1394 drivers are usually based on the AVStream class.
 
-![diagram of decision tree for choosing an audio driver type](images/roadmap-uaacomp.png)
+![diagram of decision tree for choosing an audio driver type.](images/roadmap-uaacomp.png)
 
 If your audio device is based on the universal audio architecture (UAA) standard, it is UAA-compatible. A UAA-compatible audio device can use the system-supplied UAA class drivers and does not need a custom driver, but you can provide your own [Windows Audio Processing Objects](windows-audio-processing-objects.md).
 

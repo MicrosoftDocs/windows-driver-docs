@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A KS filter is a kernel object and is identified by a kernel object handle. In the following figure, the large box in the center is a KS filter that represents an audio device. The data stream flows into the filter from the left, passes through a couple of nodes for processing, and exits the filter on the right. The filter is created by a filter factory, which is shown as a box with dashed edges at the bottom of the filter.
 
-![diagram illustrating a ks filter with two nodes](images/filter-1.png)
+![diagram illustrating a ks filter with two nodes.](images/filter-1.png)
 
 In the figure, two pins are instantiated on the filter. The pin on the left is a data sink, and the pin on the right is a data source. Data flows into the filter through the sink pin and flows out of the filter through the source pin.
 

@@ -29,7 +29,7 @@ In Windows Vista and later versions of Windows, this option is available on the 
 
     The following screen shot shows the Verify Start and Verify End settings on the System **Registry** tab.
 
-    ![screen shot illustrating the verify start and verify end options on the system registry tab](images/gflags-overruns.png)
+    ![screen shot illustrating the verify start and verify end options on the system registry tab.](images/gflags-overruns.png)
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 

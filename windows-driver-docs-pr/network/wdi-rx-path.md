@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the RX path components.
 
-![wdi receive path](images/wdi-receive-path-block-diagram.png)
+![wdi receive path.](images/wdi-receive-path-block-diagram.png)
 
 ## RX Manager (RxMgr)
 

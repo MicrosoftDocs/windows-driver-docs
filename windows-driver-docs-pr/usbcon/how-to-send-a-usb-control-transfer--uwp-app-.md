@@ -28,7 +28,7 @@ To accommodate all types of control transfers, [**Windows.Devices.Usb**](/uwp/ap
 - [**SendControlOutTransferAsync (UsbSetupPacket, IBuffer)**](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlOutTransferAsync_Windows_Devices_Usb_UsbSetupPacket_Windows_Storage_Streams_IBuffer_)
 - [**SendControlInTransferAsync (UsbSetupPacket, IBuffer)**](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlInTransferAsync_Windows_Devices_Usb_UsbSetupPacket_Windows_Storage_Streams_IBuffer_)
 
-![usb control transfer for windows runtime apis for usb](images/scenario2-flowchart.png)
+![usb control transfer for windows runtime apis for usb.](images/scenario2-flowchart.png)
 
 USB control transfers are also used to get descriptor data or send standard commands. However, we recommend that you send those types of requests by calling specific methods provided by [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) rather than building a control transfer, manually. For example, to select an alternate setting, call [**SelectSettingAsync**](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_SelectSettingAsync) instead of calling [**SendControlOutTransferAsync (UsbSetupPacket)**](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlOutTransferAsync_Windows_Devices_Usb_UsbSetupPacket_).
 

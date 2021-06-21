@@ -11,7 +11,7 @@ A Packet Data Protocol (PDP) context offers a packet data connection over which 
 
 Here’s a figure that shows how multiple PDP context works in Windows 8.1 and Windows 10:
 
-![figure 1](images/mb-pdp-fig1.jpg)
+![figure 1.](images/mb-pdp-fig1.jpg)
 
 Use the following sections in this topic to learn more about multiple PDP contexts:
 
@@ -39,7 +39,7 @@ UWP mobile broadband apps can take advantage of multiple PDP contexts to activat
 
 When the mobile broadband app needs to exchange data with the network, it checks the available and connected networks. If the mobile broadband app has a special rule for any of these networks, it uses the Connection Manager API to open a special PDP context. If this connection is successful, the PDP context provides routing rules for this connection and transfers the data using networking APIs. The mobile broadband app should repeat this if it receives the [**NetworkStatusChanged**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event to see whether any connections have changed and whether it needs to open a PDP context for the new connection.
 
-![figure 2](images/mb-pdp-fig2.jpg)
+![figure 2.](images/mb-pdp-fig2.jpg)
 
 ### Networking APIs
 
@@ -52,13 +52,13 @@ HTTP-based APIs, such as [**XMLHTTPRequest**](/previous-versions/windows/apps/br
 >[!NOTE]
 >[**Background Transfer APIs**](/uwp/api/Windows.Networking.BackgroundTransfer) and [HTTP Client(C#) APIs](/previous-versions/visualstudio/hh193681(v=vs.118)) cannot use a route policy.
 
-![figure 3](images/mb-pdp-fig4.jpg)
+![figure 3.](images/mb-pdp-fig4.jpg)
 
 ### Socket-based APIs
 
 Socket-based APIs available in the [**Windows.Networking.Sockets**](/uwp/api/Windows.Networking.Sockets) namespace, such as TCP, UDP, and stream sockets, provide a mechanism to bind to a specific interface. When an app uses the socket APIs, it should bind to specific interface for routing data to the special PDP context. Once the special PDP context is activated, the [**AcquireConnectionAsync**](/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) API provides the interface information to the app. It can use this information to bind to a specific interface and start transferring the data.
 
-![figure 4](images/mb-pdp-fig3.jpg)
+![figure 4.](images/mb-pdp-fig3.jpg)
 
 ### Multiple PDP content API info
 
@@ -516,7 +516,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
 
 Audio streaming apps can play audio or video streams using a special PDP context. Similar to HTTP APIs, your app can use the following logic to play audio or video by using the &lt;audio&gt; or &lt;video&gt; tag.
 
-![streaming app workflow](images/mb-pdp-fig6.jpg)
+![streaming app workflow.](images/mb-pdp-fig6.jpg)
 
 You can use [Player Framework](https://archive.codeplex.com/?p=playerframework) or other video frameworks based on the [WinInet](/windows/desktop/WinInet/portal) APIs.
 
@@ -546,7 +546,7 @@ For more info on InstantGo, see [Introduction to InstantGo](/windows-hardware/de
 
 Your mobile broadband app can use a special PDP context for enabling some of these InstantGo scenarios. You need to use following logic to reconnect to the special PDP context if it is disconnected because it is out of coverage. When the device enters the Connected Standby power state, Windows will disconnect all the connections to special PDP contexts after 10 minutes and your app has to request the connection again.
 
-![instantgo with pdp context](images/mb-pdp-fig5.jpg)
+![instantgo with pdp context.](images/mb-pdp-fig5.jpg)
 
 ### Audio streaming in background
 

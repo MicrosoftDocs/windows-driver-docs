@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Users primarily use your mobile broadband app to view account balance and usage information. This data should be clearly visible on the app’s home screen.
 
-![post-paid plan summary](images/mb-fig1-postpaidplansummary.png)
+![post-paid plan summary.](images/mb-fig1-postpaidplansummary.png)
 
 Relevant account information for post-paid accounts includes the following:
 
@@ -24,7 +24,7 @@ Relevant account information for post-paid accounts includes the following:
 
 At a glance, users can clearly understand how much data they’ve used, how much data they have left, and when the billing cycle ends (for monthly accounts).
 
-![pre-paid plan summary](images/mb-fig2-prepaidplansummary.png)
+![pre-paid plan summary.](images/mb-fig2-prepaidplansummary.png)
 
 Relevant account information for prepaid accounts includes the following:
 

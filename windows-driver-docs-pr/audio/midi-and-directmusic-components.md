@@ -38,7 +38,7 @@ DirectMusic and the Windows Multimedia MIDI functions are clients of the [SysAud
 
 The following figure shows the user-mode and kernel-mode components that a MIDI application uses to *play back* MIDI data. This application interfaces to the WDM audio drivers through the **midiOut***Xxx* functions, which are implemented in the [WinMM system component](user-mode-wdm-audio-components.md#winmm_system_component), Winmm.dll.
 
-![diagram that shows midi playback components](images/midiplay.png)
+![diagram that shows midi playback components.](images/midiplay.png)
 
 The MIDI application in the preceding figure reads time-stamped MIDI events from a MIDI file and plays them. The MIDI and DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor might choose to use one of the system-supplied miniport drivers--FMSynth, UART, or DMusUART--instead of writing a custom miniport driver. All of the other components in the figure are system-supplied.
 
@@ -62,7 +62,7 @@ Appearing at the bottom of the preceding figure are the names of the system-supp
 
 The following figure shows the user-mode and kernel-mode components that a MIDI application program uses to *capture* MIDI data. This application interfaces to the WDM audio drivers through the **midiIn***Xxx* functions.
 
-![diagram illustrating midi capture components](images/midicapt.png)
+![diagram illustrating midi capture components.](images/midicapt.png)
 
 In the preceding figure, the MIDI and DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor might instead choose to use one of the system-supplied miniport drivers, UART or DMusUARTCapture. All of the other components in the figure are system-supplied.
 
@@ -78,7 +78,7 @@ The MIDI application at the top of the figure writes time-stamped MIDI events to
 
 The following figure shows the user- and kernel-mode components that are used by a DirectMusic application program to *play back* or *capture* MIDI data.
 
-![diagram illustrating directmusic playback and capture components](images/dmusplay.png)
+![diagram illustrating directmusic playback and capture components.](images/dmusplay.png)
 
 The playback components are shown in the left half of the preceding figure, and capture components appear on the right. The DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor can instead use one of the system-supplied miniport drivers, DMusUART or DMusUARTCapture. The other components in the figure are system-supplied.
 

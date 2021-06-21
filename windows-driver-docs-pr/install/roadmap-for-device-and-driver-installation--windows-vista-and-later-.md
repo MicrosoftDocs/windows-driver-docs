@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Roadmap for Device and Driver Installation
 
 
-![figure of a compass, a map, and a finger pointing at the map](images/map-hand-sml.png)
+![figure of a compass, a map, and a finger pointing at the map.](images/map-hand-sml.png)
 
 To install a device and driver in the Windows operating system, follow these steps:
 

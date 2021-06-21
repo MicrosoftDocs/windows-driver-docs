@@ -99,4 +99,4 @@ $list
 
 Sample output:
 
-![Sample output](images/sample-output.png)
+![Sample output.](images/sample-output.png)

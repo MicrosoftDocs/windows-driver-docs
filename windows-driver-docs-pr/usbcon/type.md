@@ -99,7 +99,7 @@ Applies to: System, hub, device
 2. Connect the following USB devices to a system with an exposed USB Type-C port:
     - System: Connect these devices to an exposed USB Type-C port of the system by using a USB Type-C to USB Type-A adapter as shown in this image:
 
-        ![usb type-c configuration](images/typec4.png)
+        ![usb type-c configuration.](images/typec4.png)
 
         - USB hub
         - USB keyboard
@@ -285,7 +285,7 @@ The goal of this plan is to determine whether the system can work with different
 
 - Perform [FT Case 1: Device Enumeration](#ft1) for USB Type-C dongle. Verify that each device enumerates and functions as expected. This image shows the recommended topology for testing the USB Type A dongle.
 
-    ![topology for testing the usb type a dongle](images/typec1.png)
+    ![topology for testing the usb type a dongle.](images/typec1.png)
 
 - Perform [FT Case 6: Alternate mode negotiation](#ft6) for the remaining peripherals in the list. Verify that each device enumerates and functions as expected.
 - Perform a reduced version of [FT Case 7: Charging and power delivery (PD)](#ft7) with the USB Type-C charger. Skip the sections requiring two machines and only validate that the system is able to charge (accept power) with a third-party power adapter.
@@ -310,11 +310,11 @@ The goal of this plan is to determine whether this system can perform the most c
 - Perform [FT Case 3: System Power Transitions](#ft3) for each peripheral in the list with USB to Type-C dongle. Verify that each device enumerates and functions as expected before and after the system power state changes.
   - Configure The USB Type-A to USB Type-C adapter as shown in this image:
 
-    ![topology for testing the usb type a dongle](images/typec1.png)
+    ![topology for testing the usb type a dongle.](images/typec1.png)
 
   - Configure the USB Type-C A/V dongle as shown in this image.
 
-    ![usb type-c a/v dongle configuration](images/typec2.png)
+    ![usb type-c a/v dongle configuration.](images/typec2.png)
 
 - Perform [FT Case 2: System Boot](#ft2) with only the USB Type-C A/V dongle configured as shown in the preceding image and validate these scenarios:
   - System will boot with all devices connected and video will display in monitor connected through USB Type-C A/V dongle.
@@ -341,7 +341,7 @@ The full interoperability test plan covers a larger set of user scenarios. Run t
 
 - Perform all function stress test cases. Suggested configuration for the USB Type-C A/V is shown in this image:
 
-    ![usb type-c a/v adapter configuration](images/typec3.png)
+    ![usb type-c a/v adapter configuration.](images/typec3.png)
 
 ## <a href="" id="add"></a>How to confirm device addition
 
@@ -407,7 +407,7 @@ To analyze USB 2.0 and 3.0 traffic, you will need a USB Analyzer device such as 
 
 For example, after capturing traffic with a TotalPhase analyzer, you will see an event similar to the following in the output:
 
-![usb type-c analyzer](images/typec-analyzer.png)
+![usb type-c analyzer.](images/typec-analyzer.png)
 
 When a test requires the device to go to a suspended state, you should be able to correlate the &lt;Suspend&gt; event above with the time at which you expected the device to go to the suspend state.
 
@@ -423,7 +423,7 @@ In order to disable selective suspend on a USB device in Device Manager, first f
 
 Right-click the device and select **Properties**. Then select the **Power Management** tab.
 
-![device manager](images/typec-device-mgr1.png)
+![device manager.](images/typec-device-mgr1.png)
 
 To disable selective suspend, make sure the **Allow the computer to turn off this device** to save power checkbox is clear.
 

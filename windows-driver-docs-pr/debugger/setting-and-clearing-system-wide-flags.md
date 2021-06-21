@@ -18,7 +18,7 @@ System-wide registry settings affect all processes running on Windows. They are 
 
 1.  Click the **System Registry** tab.
 
-    The following screen shot shows the System Registry tab in Windows Vista.![screen shot of the system registry tab in windows vista](images/gflags-registry.png)
+    The following screen shot shows the System Registry tab in Windows Vista.![screen shot of the system registry tab in windows vista.](images/gflags-registry.png)
 
 2.  Set or clear a flag by selecting or clearing the check box associated with the flag.
 

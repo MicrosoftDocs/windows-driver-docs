@@ -18,13 +18,13 @@ The Watch window displays information about global variables, local variables, a
 
 To open or switch to the Watch window, in the WinDbg window, on the **View** menu, click **Watch**.
 
-You can also press ALT+2 or click the **Watch (ALT+2)** button on the toolbar: ![screen shot of the watch button](images/tbwatch.png)
+You can also press ALT+2 or click the **Watch (ALT+2)** button on the toolbar: ![screen shot of the watch button.](images/tbwatch.png)
 
 ALT+SHIFT+2 will close the Watch window.
 
 The following screen shot shows an example of a Watch window.
 
-![screen shot of the watch window ](images/window-watch.png)
+![screen shot of the watch window .](images/window-watch.png)
 
 The Watch window can contain four columns. The **Name** and **Value** columns are always displayed, and the **Type** and **Location** columns are optional. To display the **Type** and **Location** columns, click the **Typecast** and **Locations** buttons, respectively, on the toolbar.
 
@@ -67,7 +67,7 @@ If you open a new workspace, the Watch window contents are discarded and replace
 
 ### <span id="toolbar_and_shortcut_menu"></span><span id="TOOLBAR_AND_SHORTCUT_MENU"></span>Toolbar and Shortcut Menu
 
-The Watch window has a toolbar that contains two buttons (**Typecast** and **Locations**) and a shortcut menu with additional commands. To access the menu, right-click the title bar of the window or click the icon near the upper-right corner of the window: ![screen shot of the button icon for accessing the watch window toolbar shortcut menu ](images/window-watch-menu.png)
+The Watch window has a toolbar that contains two buttons (**Typecast** and **Locations**) and a shortcut menu with additional commands. To access the menu, right-click the title bar of the window or click the icon near the upper-right corner of the window: ![screen shot of the button icon for accessing the watch window toolbar shortcut menu .](images/window-watch-menu.png)
 
 The toolbar and menu contain the following buttons and commands:
 

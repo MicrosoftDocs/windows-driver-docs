@@ -23,7 +23,7 @@ If an application calls the **WSAAccept**, **accept**, or **AcceptEx** function 
 
 The following figure shows an overview of the interaction between the Windows Sockets switch and the SAN service provider in determining whether to accept or reject an incoming connection request. The sequences and sections that follow describe acceptance determination in more detail.
 
-![diagram overview of the interaction between the windows sockets switch and the san service provider](images/apiflow5.png)
+![diagram overview of the interaction between the windows sockets switch and the san service provider.](images/apiflow5.png)
 
  **To accept or reject a connect request**
 

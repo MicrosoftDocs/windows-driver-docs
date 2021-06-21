@@ -25,11 +25,11 @@ The **!dml\_proc** extension displays a list of processes and provides links for
 
 The following image shows a portion of the output displayed by **!dml\_proc**.
 
-![screen shot of !dml\-proc output](images/dmlproc01.png)
+![screen shot of !dml\-proc output.](images/dmlproc01.png)
 
 In the preceding output, the process addresses are links that you can click to see more detailed information. For example, if you click **fffffa80\`04e2b700** (the address for mobsync.exe), you will see detailed information about the mobsync.exe process as shown in the following image.
 
-![screen shot of process details](images/dmlproc02.png)
+![screen shot of process details.](images/dmlproc02.png)
 
 The preceding output, which describes an individual process, contains links that you can click to explore the process and its threads in more detail.
 

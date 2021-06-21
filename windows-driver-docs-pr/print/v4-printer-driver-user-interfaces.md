@@ -16,7 +16,7 @@ UWP device apps support v4 print drivers in the Microsoft Store app UI. For more
 
 The following diagram shows a high level overview of the communication architecture between customized UIs and the print system.
 
-![high level overview of custom ui and print system communication](images/v4customuicomms.png)
+![high level overview of custom ui and print system communication.](images/v4customuicomms.png)
 
 The following topics provide a more detailed look at the v4 print driver's support for user interfaces.
 

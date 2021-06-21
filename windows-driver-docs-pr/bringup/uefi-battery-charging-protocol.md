@@ -35,7 +35,7 @@ The Windows boot flow requires the battery to be charged to a certain level befo
 
 ### Sequence diagram
 
-![uefi battery charging sequence diagram](images/uefibatterychargingsequencediagram.png)
+![uefi battery charging sequence diagram.](images/uefibatterychargingsequencediagram.png)
 
  
 

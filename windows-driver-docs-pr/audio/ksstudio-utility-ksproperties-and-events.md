@@ -21,7 +21,7 @@ This topic describes how to use the [KSStudio Utility](ksstudio-utility.md) to w
  
 Properties for which a filter declares support are shown as a subitem of each filter, pin instance, and node. These Properties are grouped by PropertySet and are displayed using the following font conventions: 
 
-![Diagram showing three fonts that showing attributes of the ksproperty get status](images/ksstudio-property-fonts.png)
+![Diagram showing three fonts that showing attributes of the ksproperty get status.](images/ksstudio-property-fonts.png)
 
 Shown in a blue font - Property is readable and writable (KSPROPERTY_TYPE_GET | KSPROPERTY_TYPE_SET) 
 
