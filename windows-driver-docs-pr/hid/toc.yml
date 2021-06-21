@@ -122,7 +122,7 @@
     items: 
     - name: "Introduction to HID over SPI"
       href: hid-over-spi.md
-    - name: "Architecture"
+    - name: "Architecture and overview"
       href: architecture-and-overview-for-spi.md
     - name: "Plug and Play support"
       href: plug-and-play-for-spi.md
