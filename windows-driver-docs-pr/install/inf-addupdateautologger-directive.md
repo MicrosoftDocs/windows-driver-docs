@@ -41,7 +41,7 @@ References an INF-writer-defined section that contains information for adding pr
 
 ## Remarks
 
-For more information about AutoLoggers, see [Configuring and Starting an AutoLogger Session](windows/win32/etw/configuring-and-starting-an-autologger-session).
+For more information about AutoLoggers, see [Configuring and Starting an AutoLogger Session](/windows/win32/etw/configuring-and-starting-an-autologger-session).
 
 Each INF-writer-created section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -96,7 +96,7 @@ Optionally specifies the timer to use when logging the time stamp for each event
 
 **0x3** (CPU Cycle Counter)
 
-For a description of each clock type, see the ClientContext member of [WNODE_HEADER](windows/win32/etw/wnode-header). 
+For a description of each clock type, see the ClientContext member of [WNODE_HEADER](/windows/win32/etw/wnode-header). 
 
 <a href="" id="disablerealtimepersistence-value"></a>**DisableRealtimePersistense**=*0 | 1*
 Optionally allows disabling of real time persistence by setting value to 1. The default is 0 (enabled). If real time persistence is enabled, real-time events that were not delivered by the time the computer was shutdown will be persisted. The events will then be delivered to the consumer the next time the consumer connects to the session.
@@ -111,7 +111,7 @@ Optionally specifies the maximum number of instances of the log file that ETW cr
 Optionally specifies how often, in seconds, the trace buffers are forcibly flushed. The minimum flush time is 1 second. The default value is 0. By default, buffers are flushed only when they are full. 
 
 <a href="" id="logfilemode-log-file-mode"></a>**LogFileMode**=*log-file-mode*
-Optionally specifies one or more log modes. For possible values, see [Logging Mode Constants](windows/win32/etw/logging-mode-constants). The default value is **0x1** (EVENT_TRACE_FILE_MODE_SEQUENTIAL).
+Optionally specifies one or more log modes. For possible values, see [Logging Mode Constants](/windows/win32/etw/logging-mode-constants). The default value is **0x1** (EVENT_TRACE_FILE_MODE_SEQUENTIAL).
 
 <a href="" id="maxfilesize-max-file-size"></a>**MaxFileSize**=*max-file-size*
 Optionally specifies the maximum file size of the log file, in megabytes. The session is closed when the maximum size is reached, unless EVENT_TRACE_FILE_MODE_CIRCULAR is specified in **LogFileMode**. To specify no limit, set value to 0. The default value is 100 mb. The behavior that occurs when the maximum file size is reached depends on the value of **LogFileMode**. 
@@ -150,10 +150,10 @@ An AddAutoLoggerProvider sub-directive must also reference an *autologger-provid
 Optionally supplies whether the provider is enabled. To enable the provider, set this value to 1. To disable, set the value to 0. The default value is 0.
 
 <a href="" id="enableflags-enable-flags"></a>**EnableFlags**=*enable-flags*
-Optionally specifies the class of events for which the provider generates events. For details, see the *EnableFlags* parameter of the [EnableTraceEx](windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. Specify this value name if the provider does not support **MatchAnyKeyword** or **MatchAllKeyword**. 
+Optionally specifies the class of events for which the provider generates events. For details, see the *EnableFlags* parameter of the [EnableTraceEx](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. Specify this value name if the provider does not support **MatchAnyKeyword** or **MatchAllKeyword**. 
 
 <a href="" id="enablelevel-enable-level"></a>**EnableLevel**=*enable-level*
-Optionally supplies the level of detail included in the event. For a list of predefined levels, see the *Level* parameter of the [EnableTraceEx](windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. 
+Optionally supplies the level of detail included in the event. For a list of predefined levels, see the *Level* parameter of the [EnableTraceEx](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. 
 
 <a href="" id="enableproperty-enable-property"></a>**EnableProperty**=*enable-property*
 Optionally supplies the inclusion of one or more of the following items in the log file: 
@@ -162,11 +162,11 @@ Optionally supplies the inclusion of one or more of the following items in the l
 
 **0x00000002** (EVENT_ENABLE_PROPERTY_TS_ID) = Include in the extended data the terminal session identifier.
 
-**0x00000004** (EVENT_ENABLE_PROPERTY_STACK_TRACE) = Include in the extended data a call stack trace for events written using [EventWrite](windows/win32/api/evntprov/nf-evntprov-eventwrite).
+**0x00000004** (EVENT_ENABLE_PROPERTY_STACK_TRACE) = Include in the extended data a call stack trace for events written using [EventWrite](/windows/win32/api/evntprov/nf-evntprov-eventwrite).
 
 **0x00000010** (EVENT_ENABLE_PROPERTY_IGNORE_KEYWORD_0) = Filters out all events that do not have a non-zero keyword specified.
 
-**0x00000020** (EVENT_ENABLE_PROPERTY_PROVIDER_GROUP) = Indicates that this call to [EnableTraceEx2](windows/win32/api/evntrace/nf-evntrace-enabletraceex2) should enable a [Provider Group](windows/win32/etw/provider-traits) rather than an individual Event Provider.
+**0x00000020** (EVENT_ENABLE_PROPERTY_PROVIDER_GROUP) = Indicates that this call to [EnableTraceEx2](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) should enable a [Provider Group](/windows/win32/etw/provider-traits) rather than an individual Event Provider.
 
 **0x00000080** (EVENT_ENABLE_PROPERTY_PROCESS_START_KEY) = Include the Process Start Key in the extended data.
 
@@ -175,10 +175,10 @@ Optionally supplies the inclusion of one or more of the following items in the l
 **0x00000200** (EVENT_ENABLE_PROPERTY_EXCLUDE_INPRIVATE) = Filters out all events that are either marked as an InPrivate event or come from a process that is marked as InPrivate.
 
 <a href="" id="matchanykeyword-match-any-keyword"></a>**MatchAnyKeyword**=*match-any-keyword*
-Optionally supplies a bitmask of keywords that determine the category of events that you want the provider to write. The provider writes the event if any of the event’s keyword bits match any of the bits set in this mask. To specify that the provider writes all events, set this value to zero. For an example, see the Remarks section of the [EnableTraceEx](windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. 
+Optionally supplies a bitmask of keywords that determine the category of events that you want the provider to write. The provider writes the event if any of the event’s keyword bits match any of the bits set in this mask. To specify that the provider writes all events, set this value to zero. For an example, see the Remarks section of the [EnableTraceEx](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) function. 
 
 <a href="" id="matchallkeyword-match-all-keyword"></a>**MatchAllKeyword**=*match-all-keyword*
-Optionally restricts the category of events that you want the provider to write. If the event’s keyword meets the **MatchAnyKeyword** condition, the provider will write the event only if all of the bits in this mask exist in the event’s keyword. This mask is not used if **MatchAnyKeyword** is zero. For an example, see the Remarks section of the [EnableTraceEx](windows/win32/api/evntrace/nf-evntrace-enabletraceex) function.
+Optionally restricts the category of events that you want the provider to write. If the event’s keyword meets the **MatchAnyKeyword** condition, the provider will write the event only if all of the bits in this mask exist in the event’s keyword. This mask is not used if **MatchAnyKeyword** is zero. For an example, see the Remarks section of the [EnableTraceEx](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) function.
 
 ## Examples
 ```inf

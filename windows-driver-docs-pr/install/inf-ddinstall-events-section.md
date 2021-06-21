@@ -33,7 +33,7 @@ UpdateAutoLogger=session-name,update-autologger-install-section
 [Needs=inf-section-name[,inf-section-name]...] 
 ```
 
-You can provide a <em>DDInstall</em>**.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](/windows/desktop/ETW/about-event-tracing) (ETW) providers. You can also provide one or more **AddAutoLogger** directives to [Configure and Start an AutoLogger Session](windows/win32/etw/configuring-and-starting-an-autologger-session) and  **UpdateAutoLogger** directives to add AutoLogger providers to an existing AutoLogger session. 
+You can provide a <em>DDInstall</em>**.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](/windows/desktop/ETW/about-event-tracing) (ETW) providers. You can also provide one or more **AddAutoLogger** directives to [Configure and Start an AutoLogger Session](/windows/win32/etw/configuring-and-starting-an-autologger-session) and  **UpdateAutoLogger** directives to add AutoLogger providers to an existing AutoLogger session. 
 
 ## Entries
 
