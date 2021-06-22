@@ -23,7 +23,8 @@ For more information about usage of this OID, see MBIM_CID_MS_NETWORK_PARAMS in 
 
 |Requirement|Value|
 |-|-|
-|Version|Windows Server 2022. NDIS 6.84 and later.|
+|Minimum supported client|WIN10_NEXT|
+|Minimum supported server|Windows Server 2022. NDIS 6.84 and later.|
 |Header|Ntddndis.h (include Ndis.h)|
 
 ## See also

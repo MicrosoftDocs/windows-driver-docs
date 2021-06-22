@@ -47,16 +47,6 @@ Updates to [WinDbg Preview](./debugger/debugging-using-windbg-preview.md) to cov
 
 Updates to the [Driver security checklist](./driversecurity/driver-security-checklist.md) to use the BinSkim tool.
 
-## Related Topics
-
-For information on what was new for drivers in past Windows releases, see the following pages:
-
-* [Driver development changes for Windows 10, version 1903](driver-changes-for-windows-10-version-1903.md)
-* [Driver development changes for Windows 10, version 1809](driver-changes-for-windows-10-version-1809.md)
-* [Driver development changes for Windows 10, version 1803](driver-changes-for-windows-10-version-1803.md)
-* [Driver development changes for Windows 10, version 1709](./what-s-new-in-driver-development.md)
-
-[Back to Top](#top)
 
 ## Deprecated features
 

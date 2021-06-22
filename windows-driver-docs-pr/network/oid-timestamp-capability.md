@@ -19,6 +19,7 @@ NDIS handles this OID for the miniport driver based on the information the minip
 
 |Requirement|Value|
 |-|-|
+|Minimum supported client|WIN10_NEXT|
 |Minimum supported server|Windows Server 2022|
 |NDIS Version| NDIS 6.82 and later|
 |Header|Ntddndis.h (include Ndis.h)|
