@@ -9,7 +9,7 @@ keywords:
 - SPI
 - Serial Peripheral Interface
 - Simple Peripheral Bus
-ms.date: 06/18/2021
+ms.date: 06/22/2021
 ms.localizationpriority: medium
 ---
 

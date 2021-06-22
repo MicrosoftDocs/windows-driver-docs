@@ -1,11 +1,11 @@
 ---
-title: Plug and Play support for SPI
+title: Plug and Play support for HID over SPI
 description: Describes Plug and Play support for devices that support HID over SPI.
-ms.date: 06/21/2021
+ms.date: 06/22/2021
 ms.localizationpriority: medium
 ---
 
-# Plug and Play support for SPI
+# Plug and Play support for HID over SPI
 
 This article describes plug and play support for devices that support HID over the SPI transport.
 

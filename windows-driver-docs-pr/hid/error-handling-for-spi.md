@@ -1,7 +1,7 @@
 ---
 title: Error handling for HID over SPI
 description: How to handle errors that may occur in HID over SPI.
-ms.date: 06/21/2021
+ms.date: 06/22/2021
 ms.localizationpriority: medium
 ---
 
