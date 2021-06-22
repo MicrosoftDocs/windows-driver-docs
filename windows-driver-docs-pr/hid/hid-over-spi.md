@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # Introduction to HID over SPI
 
-There’s [HID over I2C](hid-over-i2c-guide.md) and [HID over USB](hid-over-usb.md). Why use HID over SPI? SPI offers the following features:
+Microsoft has created a HID miniport driver that allows devices to communicate over a Serial Peripheral Interface (SPI) bus. Why use HID over SPI? SPI offers the following features:
 
 - Faster than I2C – more bandwidth, higher clock rates
 - Low latency
@@ -33,7 +33,13 @@ The HID protocol was originally targeted at human interface devices. However, th
 
 The HID protocol is a asymmetric and identifies roles for the host and the device. The protocol will define a format (descriptors) for the device to describe its capabilities to the host. Once the host understands the format of communication with the device, it programs the device for sending data back to the host. The HID protocol also identifies ways of sending data to the device as well as status checks for identifying the current state of the device.
 
+## Class extension
+
+You can add to the functionality of the included HIDSPI Windows driver by using the HIDSPICx class extension. For more information see the [HIDSPICx API](/windows-hardware/drivers/ddi/hidspicx).
+
 ## See also
+
+[HIDSPICx API](/windows-hardware/drivers/ddi/hidspicx)
 
 [HID over USB](hid-over-usb.md)
 

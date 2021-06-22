@@ -9,7 +9,7 @@ keywords:
 - Bluetooth LE
 - I2C
 - transport minidriver
-ms.date: 02/28/2020
+ms.date: 06/22/2021
 ms.localizationpriority: medium
 ---
 
@@ -24,6 +24,7 @@ ms.localizationpriority: medium
 | Bluetooth LE | HidBthLE.dll      | Windows 8 and later.  | Windows 8 introduces support for HID over Bluetooth LE.                                               |
 | I²C          | Hidi2c.sys        | Windows 8 and later.  | Windows 8 introduces support for HID over I2C.                                                        |
 | GPIO         | Hidinterrupt.sys  | Windows 10 and later. | Windows Windows 10 introduces support for general-purpose I/O (GPIO) buttons.                         |
+| SPI          | HidSpi.sys        | Windows 10 and later. | Windows Windows 10 introduces support for HID over Serial Peripheral Interface (SPI).                 |
 
 Microsoft recommends using the included drivers for transports listed in the preceding table.
 
@@ -50,6 +51,7 @@ If a device requires a transport other than USB, Bluetooth, Bluetooth LE, or I²
 | Hidbth            | 65535 bytes              | N/A                           | 64 KB                              |
 | HidBthLE          | 65535 bytes              | N/A                           | 64 KB                              |
 | Hidi2c            | 65535 bytes              | N/A                           | 64 KB                              |
+| Hidspi            | 65535 bytes              | N/A                           | 64 KB                              |
 
 ## See Also
 
