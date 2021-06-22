@@ -1,7 +1,7 @@
 ---
 title: Architecture and overview for HID over the SPI transport
 description: Describes the driver stack for devices that support HID over the SPI transport.
-ms.date: 06/18/2021
+ms.date: 06/22/2021
 ms.localizationpriority: medium
 ---
 
@@ -22,18 +22,22 @@ Windows provides a KMDF-based HID miniport driver that implements version 1.0 of
 > [!NOTE]
 > The HIDSPI.sys device driver supports only the SPI bus. It does not support I²C, SMBUS, or other low-power buses in Windows.
 
-## The SPI Controller Driver
+For HWA devices, the vendor provides a client driver responsible for implementing the interface defined by the class extension, and communicating with the class extension.
+
+:::image type="content" source="images/hid-spi-hwa-arch.png" alt-text="The HIDSPICx and HWA driver stack.":::
+
+## The SPI controller driver
 
 The SPI controller driver exposes a Serial Peripheral Bus (SPB) IOCTL interface to perform read and write operations. This driver provides the actual controller intrinsics (for example, SPI). The SPB Class Extension, on behalf of the controller driver, handles all interaction with the resource hub and implements necessary queues to manage simultaneous targets.
 
 > [!NOTE]
 > The HID SPI driver will not function on systems that do not have an SPI bus that is compatible with the SPB platform. Contact your system manufacturer to determine whether the SPI bus on your device system is compatible with the SPB platform.
 
-## The GPIO Controller Driver
+## The GPIO controller driver
 
 The General Purpose Input/Output (GPIO) controller delivers interrupts from the device over GPIO. This is often a simple subordinate component that uses GPIO pins to signal Windows of new data or other events. GPIO can also control the device by approaches other than the SPI channel.
 
-## The Resource Hub
+## The resource hub
 
 Connections on a SoC platform are typically non-discoverable, because there are no standards for device enumeration on the buses that are used on SoC. As a result, these devices must be statically defined in the Advanced Configuration and Power Interface (ACPI). Furthermore, components often have multiple dependencies spanning multiple buses, as opposed to a strict branching tree structure.
 
