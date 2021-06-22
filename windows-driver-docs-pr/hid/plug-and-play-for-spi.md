@@ -23,7 +23,7 @@ The ACPI 5.0 Specification includes support for HID Class Devices. the ACPI defi
 | Hardware Revision | Vendor Specific | \_HRV | 0xRRRR (2byte revision) | Hardware revision number |
 | Current Resource Settings | Vendor Specific | \_CRS | Byte stream | - SpiSerialBus for access to the device.</br>- GpioInt for interrupts. |
 | Device Specific Method | GUID {6e2ac436-0fcf-41af-a265-b32a220dcfab} | \_DSM | Package | Defines a structure that contains device-specific information. |
-| Device Reset Method | &nbsp; | \_RST | &nbsp; | ACPI 6.0 7.3.25 compliant device reset method, to be called by the HOST OS as an ACPI FLDR. |
+| Device Reset Method | &nbsp; | \_RST | &nbsp; | ACPI 6.0 7.3.25 compliant device reset method, to be called by the host OS as an ACPI FLDR. |
 
  Every HID SPI device must provide the following mandatory fields:
 
@@ -77,12 +77,12 @@ The following list gives the enumeration sequence. The order of this list may ch
 
 1. Retrieve [ACPI Source Language (ASL)](https://uefi.org/htmlspecs/ACPI_Spec_6_4_html/19_ASL_Reference/ACPI_Source_Language_Reference.html?highlight=acpi%20source%20language) code for HID SPI device from the system BIOS.
 
-1. Issue a RESET (Host initiated reset) to the device.
+1. Issue a host initiated reset to the device
     - Call ACPI _RST method
     - Device asserts GPIO interrupt
     - Host reads reset response from device
 
-1. Retrieve HID descriptor from the device.
+1. Retrieve HID descriptor from the device
     - Host writes HID descriptor request
     - Device asserts GPIO interrupt
     - Host reads HID descriptor response
@@ -92,35 +92,31 @@ The following list gives the enumeration sequence. The order of this list may ch
     - Device asserts GPIO interrupt
     - Host reads report descriptor response
 
-If the HOST fails to successfully complete any of the steps with the device, the HIDSPI driver may load with an error value of *Code 10*. The host may reattempt to reset the device if no response is received, but retry logic is not guaranteed.
+If the host fails to successfully complete any of the steps with the device, the HIDSPI driver may load with an error value of *Code 10*. The host may reattempt to reset the device if no response is received, but retry logic is not guaranteed.
 
 ## HID report operations
 
 The table below provides an overview of the HID report operations supported by the HID SPI protocol and the input and output reports which are used to carry out the operation.
 
 | HID report type | Operation | Output report type | Input report type |
-|---|---|---|---|
-| Input Report | GET | 0x06 (Request | empty content) | 0x0B (Response) |
+| --- | --- | --- | --- |
+| Input Report | GET | 0x06 <br>(Request empty content) | 0x0B | (Response) |
 | Input Report | SET <br> (Not supported) | N/A | N/A |
 | Input Report | INTERRUPT IN | N/A | No request | 0x01 |
-| Feature Report | GET | 0x04 (Request | empty content) | 0x05 (Response) |
-| Feature Report | SET | 0x03 | 0x09 (Acknowledgement | empty content) |
+| Feature Report | GET | 0x04 <br>(Request empty content) | 0x05 | (Response) |
+| Feature Report | SET | 0x03 | 0x09 <br>(Acknowledgement empty content) |
 | Output Report | GET <br> (Not supported) | N/A | N/A |
-| Output Report | SET | 0x05 | 0x0A (Acknowledgement | empty content) |
+| Output Report | SET | 0x05 | 0x0A <br>(Acknowledgement empty content) |
 
-### Output report types
+### Protocol operations
 
-The following table identifies output report types:
+| Operation | Request report type | Response report type |
+| --- | --- | --- |
+| Device Descriptor Request | 0x01 | 0x7 |
+| Report Descriptor Request | 0x02 | 0x8 |
+| Command Request | 0x07 | 0x4 |
+| Reset Response | N/A | 0x3 |
 
-| Value | Report type |
-|---|---|
-| 0x00 | Reserved |
-| 0x01 | Request for device descriptor |
-| 0x02 | Request for report descriptor |
-| 0x03 | HID SET_FEATURE content |
-| 0x04 | HID GET_FEATURE content |
-| 0x05 | HID OUTPUT_REPORT content |
-| 0x06 | Request for input report (HID Get Report) |
 
 ## See also
 

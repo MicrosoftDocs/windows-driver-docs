@@ -33,12 +33,6 @@ The SPI controller driver exposes a Serial Peripheral Bus (SPB) IOCTL interface 
 
 The General Purpose Input/Output (GPIO) controller delivers interrupts from the device over GPIO. This is often a simple subordinate component that uses GPIO pins to signal Windows of new data or other events. GPIO can also control the device by approaches other than the SPI channel.
 
-## Hardware accelerated (HWA) HIDSPI controllers
-
-For HWA devices, the vendor provides a client driver responsible for implementing the interface defined by the class extension, and communicating with the class extension.
-
-:::image type="content" source="images/hid-spi-hwa-arch.png" alt-text="The HIDSPICx and HWA driver stack.":::
-
 ## The resource hub
 
 Connections on a SoC platform are typically non-discoverable, because there are no standards for device enumeration on the buses that are used on SoC. As a result, these devices must be statically defined in the Advanced Configuration and Power Interface (ACPI). Furthermore, components often have multiple dependencies spanning multiple buses, as opposed to a strict branching tree structure.
@@ -48,3 +42,7 @@ The resource hub is a proxy that manages the connections among all devices and b
 ## HIDSPI class extension (HIDSPICx)
 
 For implementations requiring greater performance or integration, it is possible for system manufacturers to develop custom silicon for processing HIDSPI transactions. For this, the HIDSPICx class extension is provided with Windows. HIDSPICx allows development of a custom HIDSPI HWA controller driver without using SpbCx.
+
+For HWA devices, the vendor provides a client driver responsible for implementing the interface defined by the class extension, and communicating with the class extension.
+
+:::image type="content" source="images/hid-spi-hwa-arch.png" alt-text="The HIDSPICx and HWA driver stack.":::
