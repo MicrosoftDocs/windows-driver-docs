@@ -9,20 +9,20 @@ ms.localizationpriority: medium
 
 ## The pre-CASO performance issue
 
-Starting in Windows 8.1 (WDDM 1.3), in multi-adapter configurations such as [hybrid systems](using-cross-adapter-resources-in-a-hybrid-system.md), games and other GPU-intensive apps go through the multi-adapter presentation path, for emulated full screen exclusive (eFSE) or windowed-flip modes, in the D3D9 and DXGI runtimes. This is where all of the rendering work is done on a render adapter (typically the more performant GPU), and then two copies are done to get the contents to the display adapter (typically the integrated, power-saving GPU) for scanning-out to the display:
+Starting in Windows 8.1 (WDDM 1.3), on multi-adapter configurations such as [hybrid systems](using-cross-adapter-resources-in-a-hybrid-system.md), D3D9 and DXGI applications can utilize the cross-adapter presentation support. This is where the rendering is done on a render adapter (typically the discrete GPU), and then two copies are done to get the contents to the display adapter (typically the integrated GPU) for scanning-out to the display.
 
-* Copy 1: from the render adapter surface to a cross-adapter surface
-* Copy 2: from the cross-adapter surface to the display adapter surface for scan out
+* Copy 1: from the render adapter resource to a cross-adapter resource
+* Copy 2: from the cross-adapter resource to the display adapter resource
 
-This limits the performance of apps, especially if it is a low-latency app configured to a maximum frame latency of 1, where the cost of the copies is pronounced due to lack of GPU engine parallelism.
+These copies can limit the performance of apps, especially for those optimized for low-latency.
 
-## Using CASO to optimize presents
+## Using CASO to optimize flip presentation model
 
-Starting in Windows Server 2022 (WDDM 2.9), drivers can declare support for the appropriate cross-adapter resource, allowing the system's presentation stack to optimize multi-adapter cross-adapter presents. Drivers are required to declare support for this feature based on its own adapter capability, regardless of device configuration, such that the feature value scales across all applicable hardware configurations, including but not limited to, a single GPU device with dynamic attaching of additional external GPUs.
+Starting in Windows Server 2022 (WDDM 2.9), drivers can declare support for the appropriate cross-adapter resource tier, allowing the system's presentation stack to optimize  cross-adapter presents. Drivers are required to declare support for this feature based on its own adapter capability, regardless of device configuration, such that the feature value scales across all applicable hardware configurations, including but not limited to, a single GPU device with dynamic attaching of additional external GPUs.
 
 If the display adapter supports CASO, the system will only undergo the first copy from render adapter surface to cross-adapter surface, and then scan out from the cross-adapter surface directly, resulting in reduced processing, bandwidth, power and latency.
 
-The CASO feature is implemented for the DXGI runtime. Implementing this feature to the D3D9 runtime will be considered for a future OS release.
+The CASO feature is implemented for the DXGI runtime for the flip presentation model.
 
 ## DDI changes and additions for CASO
 
@@ -40,8 +40,8 @@ Drivers declare support for each tier by setting the following [**DXGK_DRIVERCAP
 
 | Tier   | Tier Meaning | DXGK_VIDMMCAPS Value |
 | ----   | ------------ | -------------------- |
-| Tier 1 | Copy support: copy content in from discrete GPU to cross-adapter resources, and out from cross-adapter resources to the integrated GPU | **CrossAdapterResource** (Exposed to user mode by graphics kernel via the **SupportCrossAdapterResource** bit in [**D3DKMT_WDDM_1_3_CAPS**](/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmt_wddm_1_3_caps)) |
-| Tier 2 | Texture support: texture from cross-adapter resources) |  **CrossAdapterResourceTexture** (includes support for shader resource view, unordered access view, and render target operations |
+| Tier 1 | Copy support: Copy to and from cross-adapter resources | **CrossAdapterResource** (Exposed to user mode by graphics kernel via the **SupportCrossAdapterResource** bit in [**D3DKMT_WDDM_1_3_CAPS**](/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmt_wddm_1_3_caps)) |
+| Tier 2 | Texture support: Texture from cross-adapter resources) |  **CrossAdapterResourceTexture** (includes support for shader resource view, unordered access view, and render target operations |
 | Tier 3 | CASO support: Scan-out from cross-adapter resources  | **CrossAdapterResourceScanout** |
 
 The graphics kernel will fail the adapter start if it does not indicate support in a superset manner for the three tiers. For example, **CrosssAdapterResource** must be set if **CrossAdapterResourceTexture** is set.
@@ -85,7 +85,7 @@ Starting in WDDM 3.0, the **StaticCheck** flag was added to [**DXGK_MULTIPLANE_O
 * Have exactly one plane marked with the flag
 * Not contain any *PostComposition* plane information
 
-A call to [**DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3) with the **StaticCheck** flag set is used from the app process from DXGI during buffer creation, such as during swapchain creation or ResizeBuffers, as a best effort attempt to determine whether CASO is truly supported in the current circumstance.
+A call to [**DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3) with the **StaticCheck** flag set is used from the app process from DXGI during buffer creation, such as during swapchain creation or ResizeBuffers, as a best effort attempt to determine whether CASO is supported for the current hardware configuration.
   
 ### HybridIntegrated special case
 
@@ -129,8 +129,7 @@ Drivers use the following three key DDIs to indicate whether cross-adapter scano
 
 On the 1-copy CASO path, DXGI creates the cross-adapter resource as primary on the display adapter, via **pfnCreateResource**. The driver should evaluate based on the resource properties whether it can scan out from it.
 
-If the driver supports scan-out based on the resource properties, DXGI will continue with the 1-copy CASO path.
-Otherwise, the driver should opt out of scan-outs by returning **DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT**, and DXGI will fall back to the 2-copy path. Note that this fall back should happen only if the resource properties are beyond the minimum requirements as listed [above](#tier-3-support-requirements).
+If the driver supports scan-out based on the resource properties, DXGI will continue with the 1-copy CASO path. Otherwise, the driver should opt out of scan-outs by returning **DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT**, and DXGI will fall back to the 2-copy path. Note that this fall back should happen only if the resource properties are beyond the minimum requirements as listed [above](#tier-3-support-requirements).
 
 * **pfnCheckMultiplaneOverlaySupport** DDI
 
@@ -138,7 +137,7 @@ Per current behavior, the Desktop Windows Manager (DWM) will call the display dr
 
 Note that DWM-composed presents are likely to be less desirable than [Independent Flip](/windows/win32/direct3ddxgi/for-best-performance--use-dxgi-flip-model#directflip) (iFlip) via the 2-copy path or iFlip via the 1-copy CASO path. Hence, there might be common display scenarios where presentation bandwidth is limited, such as rotated or multiple displays, where drivers might consistently fail **pfnCheckMultiplaneOverlaySupport** support in DWM, likely resulting in a poorer experience than the 2-copy path.
 
-To mitigate the negative fallback experience, DXGI will call **pfnCheckMultiplaneOverlaySupport** during buffer creation with the cross-adapter resource as a plane marked with the **StaticCheck** flag, to verify with high accuracy whether the driver can truly perform scan-out given the existing known bandwidth characteristics. If supported, DXGI will continue with the 1-copy CASO path; otherwise, it will fall back to the 2-copy path.
+To mitigate the negative fallback experience, DXGI will call **pfnCheckMultiplaneOverlaySupport** during buffer creation with the cross-adapter resource as a plane marked with the **StaticCheck** flag, to verify with high accuracy whether the driver can perform scan-out given the existing known bandwidth characteristics. If supported, DXGI will continue with the 1-copy CASO path; otherwise, it will fall back to the 2-copy path.
 
 ## HLK Testing
 
