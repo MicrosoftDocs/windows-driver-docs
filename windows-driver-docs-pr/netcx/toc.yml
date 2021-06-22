@@ -94,6 +94,8 @@
       href: wdi-tlv-bss-entry-device-context.md
     - name: "WDI_TLV_BSS_ENTRY_SIGNAL_INFO"
       href: wdi-tlv-bss-entry-signal-info.md
+    - name: "WDI_TLV_BSS_SELECTION_PARAMETERS"
+      href: wdi-tlv-bss-selection-parameters.md
     - name: "WDI_TLV_BSSID"
       href: wdi-tlv-bssid.md
     - name: "WDI_TLV_CONNECT_BSS_ENTRY"
@@ -128,8 +130,12 @@
       href: wdi-tlv-probe-response-frame.md
     - name: "WDI_TLV_SSID"
       href: wdi-tlv-ssid.md
+    - name: "WDI_TLV_UNICAST_ALGORITHM_LIST"
+      href: wdi-tlv-unicast-algorithm-list.md
   - name: "WiFiCx task commands"
     items:
+    - name: "WDI_TASK_SCAN"
+      href: wdi-task-scan.md
   - name: "WiFiCx property commands"
     items:
   - name: "WiFiCx unsolicited status indications"
