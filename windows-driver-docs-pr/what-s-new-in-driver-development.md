@@ -1,13 +1,21 @@
 ---
 title: What's new in driver development
 description: This section describes new features for driver development in WIN10_NEXT.
-ms.date: 06/21/2021
+ms.date: 06/24/2021
 ms.localizationpriority: medium
 ---
 
 # <a name="top"></a>What's new in driver development
 
 This section describes new features and updates for driver development in WIN10_NEXT.
+
+## Camera
+
+- [Digital Window overview](/windows-hardware/drivers/stream/digital-window-overview)
+- [Privacy shutter notification](/windows-hardware/drivers/stream/privacy-shutter-notification)
+- [Create device property keys from the MS OS descriptor in USB Video Class (UVC) firmware](/windows-hardware/drivers/stream/create-camera-device-property-keys-from-ms-os-descriptor)
+- [Microsoft extensions to USB Video Class 1.5 specification](/windows-hardware/drivers/stream/uvc-extensions-1-5) (Updated)
+- [Network camera design guide](/windows-hardware/drivers/stream/network-camera-design-guide) (Updated)
 
 ## HID
 
@@ -29,6 +37,11 @@ New API pages:
 - [**HidSpiCxDeviceConfigure**](/windows-hardware/drivers/ddi/hidspicx/nf-hidspicx-hidspicxdeviceconfigure)
 - [**HidSpiCxDeviceInitConfig**](/windows-hardware/drivers/ddi/hidspicx/nf-hidspicx-hidspicxdeviceinitconfig)
 - [**HidSpiCxNotifyDeviceReset**](/windows-hardware/drivers/ddi/hidspicx/nf-hidspicx-hidspicxnotifydevicereset)
+
+## Print devices
+
+- [Print support app design guide](/windows-hardware/drivers/devapps/print-support-app-design-guide)
+- [Print support app association](/windows-hardware/drivers/devapps/print-support-app-association)
 
 ## Related Topics
 
