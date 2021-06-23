@@ -1,13 +1,13 @@
 ---
 title: Supporting cross-adapter resource scan-out
 description: A WDDM 2.9 driver can support cross-adapter resource scan-out, reducing the number of copies between GPUs and cross-adapter resources from two to one.
-ms.date: 06/14/2021
+ms.date: 06/22/2021
 ms.localizationpriority: medium
 ---
 
 # Supporting cross-adapter resource scan-out (CASO)
 
-## The pre-CASO performance issue
+## Pre-CASO performance (2-copy path)
 
 Starting in Windows 8.1 (WDDM 1.3), on multi-adapter configurations such as [hybrid systems](using-cross-adapter-resources-in-a-hybrid-system.md), D3D9 and DXGI applications can utilize cross-adapter presentation support. This is where the rendering is done on a render adapter (typically the discrete GPU), and then two copies are done to get the contents to the display adapter (typically the integrated GPU) for scanning-out to the display.
 
@@ -16,7 +16,7 @@ Starting in Windows 8.1 (WDDM 1.3), on multi-adapter configurations such as [hyb
 
 These copies can limit the performance of apps, especially for those optimized for low-latency.
 
-## Using CASO to optimize flip presentation model
+## Using CASO to optimize flip presentation model (1-copy path)
 
 Starting in Windows Server 2022 (WDDM 2.9), drivers can declare support for the appropriate cross-adapter resource tier, allowing the system's presentation stack to optimize  cross-adapter presents. Drivers are required to declare support for this feature based on their own adapter capability, regardless of device configuration, such that the feature value scales across all applicable hardware configurations, including but not limited to, a single GPU device with dynamic attaching of additional external GPUs.
 
@@ -44,7 +44,7 @@ Drivers declare support for each tier by setting the following [**DXGK_DRIVERCAP
 | Tier 2 | Texture support: Texture from cross-adapter resources) |  **CrossAdapterResourceTexture** (includes support for shader resource view, unordered access view, and render target operations |
 | Tier 3 | CASO support: Scan-out from cross-adapter resources  | **CrossAdapterResourceScanout** |
 
-The graphics kernel will fail the adapter start if it does not indicate support in a superset manner for the three tiers. For example, **CrosssAdapterResource** must be set if **CrossAdapterResourceTexture** is set.
+The graphics kernel will fail the adapter start if it does not indicate support in a superset manner for the three tiers. For example, **CrossAdapterResource** must be set if **CrossAdapterResourceTexture** is set.
 
 #### Tier 1 support requirements
 
@@ -72,13 +72,13 @@ The system must be able to perform the supported flipping capabilities, as decla
 If the driver supports scanning out cross-adapter resources of additional texture formats, then it is also required to support texturing from those formats, per the tier support requirements.
 
 >[!NOTE]
-> The DXGI runtime will query for the driver's **CrossAdapterResourceScanout** support. If supported, the presentation stack goes down the copy path described in [Rendering on a discrete GPU using cross-adapter resources](rendering-on-a-discrete-gpu-using-cross-adapter-resources.md). Therefore, drivers that declare support for **CrossAdapterResourceScanout** are required to support the [**DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3) DDI. In addition, it must also support all the relevant presentation-related DDIs for cross-adapter primaries of the above minimum specifications. A few examples are: [**pfnCreateResource**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createresource2), [**pfnCheckMultiplaneOverlaySupport**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3), and [**pfnPresentMultiplaneOverlay**](/windows-hardware/drivers/ddi/d3dkmthk/nc-d3dkmthk-pfnd3dkmt_presentmultiplaneoverlay)/[**pfnPresent1**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_present1). See [Multiplane overlay support](/windows-hardware/drivers/display/multiplane-overlay-support) and [Rendering on a discrete GPU using cross-adapter resources](rendering-on-a-discrete-gpu-using-cross-adapter-resources.md) for more details. See the section below for more details about falling out of CASO.
+> The DXGI runtime will query for the driver's **CrossAdapterResourceScanout** support. If supported, the presentation stack goes down the 1-copy path. Therefore, drivers that declare support for **CrossAdapterResourceScanout** are required to support the [**DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3) DDI. In addition, it must also support all the relevant presentation-related DDIs for cross-adapter primaries of the above minimum specifications. A few examples are: [**pfnCreateResource**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createresource2), [**pfnCheckMultiplaneOverlaySupport**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3), and [**pfnPresentMultiplaneOverlay**](/windows-hardware/drivers/ddi/d3dkmthk/nc-d3dkmthk-pfnd3dkmt_presentmultiplaneoverlay)/[**pfnPresent1**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_present1). See [Multiplane overlay support](/windows-hardware/drivers/display/multiplane-overlay-support) for more details. See the section below for more details about falling out of CASO.
 
 Both of these tiers have accompanying [HLK tests](#hlk-testing) for verification.
 
 ### Supporting StaticCheck flag for DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3
 
-Starting in WDDM 3.0, the **StaticCheck** flag was added to [**DXGK_MULTIPLANE_OVERLAY_FLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_multiplane_overlay_flags) to expand the use of the [**DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3) DDI for CASO support. Specifically, this flag allows **DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3** to query a driver to determine whether the plane marked with the **StaticCheck** flag is capable of scan out. This will be a one-off call and should not impact real presentation behavior. Hence, drivers that perform any form of caching of present information from **DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3** should not include the information from DDI calls with a **StaticCheck** plane, but simply perform the support determination in a standalone or static manner.
+Starting in WDDM 3.0, the **StaticCheck** flag was added to [**DXGK_MULTIPLANE_OVERLAY_FLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_multiplane_overlay_flags) to expand the use of the [**DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3) DDI for CASO support. Specifically, this flag allows **DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3** to query a driver to determine whether the plane marked with the **StaticCheck** flag is capable of scan-out. This will be a one-off call and should not impact real presentation behavior. Hence, drivers that perform any form of caching of present information from **DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3** should not include the information from DDI calls with a **StaticCheck** plane, but simply perform the support determination in a standalone or static manner.
 
 [**DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3) with the **StaticCheck** flag set is guaranteed to:
 
@@ -89,7 +89,7 @@ A call to [**DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3**](/windows-hardware/drivers
   
 ### HybridIntegrated special case
 
-It is important to note that [**HybridIntegrated**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_adaptertype) drivers have been designed to have tier 3 scan out support. Starting in WDDM 3.0, **HybridIntegrated** drivers are required to declare support for **CrossAdapterResourceScanout**, and will be verified by a HLK test.
+It is important to note that [**HybridIntegrated**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_adaptertype) drivers have been designed to have tier 3 scan-out support. Starting in WDDM 3.0, **HybridIntegrated** drivers are required to declare support for **CrossAdapterResourceScanout**, and will be verified by a HLK test.
 
 Existing hybrid caps might be considered for deprecation in the future. Therefore, it is key that the **CrossAdapterResourceScanout** cap be decoupled to allow for greater flexibility to evolve in this space going forward. Hence, even drivers that are not **HybridIntegrated** can set the cross-adapter support tier as appropriate.
 
@@ -117,7 +117,7 @@ VERIFY_SUCCEEDED(D3DKMTQueryAdapterInfo(&QueryAdapterInfo));
 
 ### DDI impact to presentation optimization
 
-Drivers use the following three key DDIs to indicate whether cross-adapter scanout is supported:
+Drivers use the following three key DDIs to indicate whether cross-adapter scan-out is supported:
 
 * [**DXGK_VIDMMCAPS::CrossAdapterResourceScanout**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps) cap
 
@@ -131,9 +131,9 @@ Drivers use the following three key DDIs to indicate whether cross-adapter scano
 
    If the driver supports scan-out based on the resource properties, DXGI will continue with the 1-copy CASO path. Otherwise, the driver should opt out of scan-outs by returning **DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT**, and DXGI will fall back to the 2-copy path. Note that this fall back should happen only if the resource properties are beyond the minimum requirements as listed [above](#tier-3-support-requirements).
 
-* **pfnCheckMultiplaneOverlaySupport** DDI
+* [**pfnCheckMultiplaneOverlaySupport**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport3) DDI
 
-   Per current behavior, the Desktop Windows Manager (DWM) will call the display driver's **pfnCheckMultiplaneOverlaySupport** DDI to accurately determine whether the primary surface can be scanned out. If the driver supports this, the scan out will occur. Otherwise, DWM will fall back to DWM composition mode.
+   Per current behavior, the Desktop Windows Manager (DWM) will call the display driver's **pfnCheckMultiplaneOverlaySupport** DDI to accurately determine whether the primary surface can be scanned out. If the driver supports this, the scan-out will occur. Otherwise, DWM will fall back to DWM composition mode.
 
    Note that DWM-composed presents are likely to be less desirable than [Independent Flip](/windows/win32/direct3ddxgi/for-best-performance--use-dxgi-flip-model#directflip) (iFlip) via the 2-copy path or iFlip via the 1-copy CASO path. Hence, there might be common display scenarios where presentation bandwidth is limited, such as rotated or multiple displays, where drivers might consistently fail **pfnCheckMultiplaneOverlaySupport** support in DWM, likely resulting in a poorer experience than the 2-copy path.
 
@@ -158,7 +158,7 @@ An HLK test was added to verify shader resource view (SRV) operations on cross-a
 The following HLK tests were added:
 
 * Device.Graphics.WDDM30.Render.CrossAdapterScanOut
-  * A HLK test to verify that drivers are able to create cross-adapter primary resources successfully without opting out of scan out behavior via the **DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT** flag.
+  * A HLK test to verify that drivers are able to create cross-adapter primary resources successfully without opting out of scan-out behavior via the **DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT** flag.
   * A HLK test to verify that these drivers support the **DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3** DDI.
   * A manual HLK test for a tester to manually verify that the scanned out cross-adapter surface is free of visual corruption/artifacts or unexpected tearing, as well as to verify that the cross-adapter surface is directly scanned out without any prior internal transformations or copies. These end-to-end tests also naturally verify that the CheckMultiplaneOverlaySupport and Present DDIs are supported for cross-adapter resources. The manual test app has some specific hardware requirements such as a high resolution and high refresh rate monitor. Consult the [reference document](/windows-hardware/test/hlk/testref/cf519014-522c-49ff-8d70-4b304a00d61b) accompanying the test for more details.
 
