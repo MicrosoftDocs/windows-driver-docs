@@ -5,7 +5,7 @@ ms.date: 06/24/2021
 ms.localizationpriority: medium
 ---
 
-# <a name="top"></a>What's new in driver development
+# <a name="top"></a>What's new in driver development for Windows 11
 
 This section describes new features and updates for driver development in Windows 11.
 
