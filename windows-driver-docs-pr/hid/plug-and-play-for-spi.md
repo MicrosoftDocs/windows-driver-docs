@@ -100,13 +100,13 @@ The table below provides an overview of the HID report operations supported by t
 
 | HID report type | Operation | Output report type | Input report type |
 | --- | --- | --- | --- |
-| Input Report | GET | 0x06 <br>(Request empty content) | 0x0B | (Response) |
+| Input Report | GET | 0x06 <br>(Request - empty content) | 0x0B <br>(Response) |
 | Input Report | SET <br> (Not supported) | N/A | N/A |
-| Input Report | INTERRUPT IN | N/A | No request | 0x01 |
-| Feature Report | GET | 0x04 <br>(Request empty content) | 0x05 | (Response) |
-| Feature Report | SET | 0x03 | 0x09 <br>(Acknowledgement empty content) |
+| Input Report | INTERRUPT IN | N/A - No request | 0x01 |
+| Feature Report | GET | 0x04 <br>(Request - empty content) | 0x05 <br>(Response) |
+| Feature Report | SET | 0x03 | 0x09 <br>(Acknowledgement - empty content) |
 | Output Report | GET <br> (Not supported) | N/A | N/A |
-| Output Report | SET | 0x05 | 0x0A <br>(Acknowledgement empty content) |
+| Output Report | SET | 0x05 | 0x0A <br>(Acknowledgement - empty content) |
 
 ### Protocol operations
 
