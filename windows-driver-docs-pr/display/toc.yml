@@ -628,6 +628,8 @@
         href: validating-a-hybrid-system-configuration.md
       - name: "Rendering on a discrete GPU using cross-adapter resources"
         href: rendering-on-a-discrete-gpu-using-cross-adapter-resources.md
+      - name: "Supporting cross-adapter resource scan-out (CASO)"
+        href: supporting-caso.md
       - name: "Hybrid system DDI"
         href: hybrid-system-ddi.md
     - name: "Managing Resources for Multiple GPU Scenarios"
