@@ -17,7 +17,7 @@ The **KSPROPERTY_NETWORKCAMERACONTROL_EVENTTOPICS_XML** property usage is descri
 
 ## Requirements
 
-**Minimum supported client:** WIN10_NEXT
+**Minimum supported client:** Windows 11
 
 **Header:** ksmedia.h (include Ksmedia.h)
 

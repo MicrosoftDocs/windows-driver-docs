@@ -1,13 +1,13 @@
 ---
 title: What's new in driver development
-description: This section describes new features for driver development in WIN10_NEXT.
+description: This section describes new features for driver development in Windows 11.
 ms.date: 06/24/2021
 ms.localizationpriority: medium
 ---
 
 # <a name="top"></a>What's new in driver development
 
-This section describes new features and updates for driver development in WIN10_NEXT.
+This section describes new features and updates for driver development in Windows 11.
 
 ## Camera
 

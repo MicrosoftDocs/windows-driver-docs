@@ -113,7 +113,7 @@ The following camera driver controls are new for Windows 10, version 2004.
 
 [**KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION**](ksproperty-cameracontrol-extended-relativepaneloptimization.md)
 
-The following camera driver controls are new for WIN10_NEXT.
+The following camera driver controls are new for Windows 11.
 
 [**KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION**](ksproperty-cameracontrol-extended-eyegazecorrection.md)
 

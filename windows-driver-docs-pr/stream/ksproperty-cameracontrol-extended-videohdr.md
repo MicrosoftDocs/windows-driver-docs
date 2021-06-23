@@ -61,7 +61,7 @@ The table below contains the descriptions and requirements for the [KSCAMERA_EXT
 
 ## Requirements
 
-**Minimum supported client:** WIN10_NEXT
+**Minimum supported client:** Windows 11
 
 **Header:** ksmedia.h (include Ksmedia.h)
 

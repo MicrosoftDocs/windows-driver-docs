@@ -14,7 +14,7 @@ In the past, manufacturers of USB Video Class (UVC) cameras had to author custom
 
 ## Applies to
 
-- WIN10_NEXT and later operating systems
+- Windows 11 and later operating systems
 
 ## MS OS 2.0 registry property descriptor
 

@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 | Bluetooth LE | HidBthLE.dll      | Windows 8 and later.  | Windows 8 introduces support for HID over Bluetooth LE.                                               |
 | I²C          | Hidi2c.sys        | Windows 8 and later.  | Windows 8 introduces support for HID over I2C.                                                        |
 | GPIO         | Hidinterrupt.sys  | Windows 10 and later. | Windows 10 introduces support for general-purpose I/O (GPIO) buttons.                                 |
-| SPI          | HidSpi.sys        | Windows 10 and later. | WIN10_NEXT introduces support for HID over Serial Peripheral Interface (SPI).                         |
+| SPI          | HidSpi.sys        | Windows 10 and later. | Windows 11 introduces support for HID over Serial Peripheral Interface (SPI).                         |
 
 Microsoft recommends using the included drivers for transports listed in the preceding table.
 

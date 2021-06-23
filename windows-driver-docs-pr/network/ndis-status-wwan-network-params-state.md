@@ -23,7 +23,7 @@ For more information see [OID_WWAN_NETWORK_PARAMS](/windows-hardware/drivers/ddi
 
 |Requirement|Value|
 |-|-|
-|Minimum supported client|WIN10_NEXT|
+|Minimum supported client|Windows 11|
 |Version|Windows Server 2022. NDIS 6.84 and later.|
 |Header|Ndis.h|
 

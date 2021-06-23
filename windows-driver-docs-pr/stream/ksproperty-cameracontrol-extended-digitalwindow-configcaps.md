@@ -47,7 +47,7 @@ The following table contains the requirements for the [KSCAMERA_EXTENDEDPROP_HEA
 
 ## Requirements
 
-**Minimum supported client:** WIN10_NEXT
+**Minimum supported client:** Windows 11
 
 **Header:** ksmedia.h (include Ksmedia.h)
 

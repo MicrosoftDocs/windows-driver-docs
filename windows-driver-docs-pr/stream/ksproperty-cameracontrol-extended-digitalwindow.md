@@ -74,7 +74,7 @@ These parameters are read-only if KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_AUTOFACEFR
 
 ## Requirements
 
-**Minimum supported client:** WIN10_NEXT
+**Minimum supported client:** Windows 11
 
 **Header:** ksmedia.h (include Ksmedia.h)
 

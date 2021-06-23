@@ -17,7 +17,7 @@ The **KSPROPERTY_NETWORKCAMERACONTROL_METADATA** property usage is described in 
 
 ## Requirements
 
-**Minimum supported client:** WIN10_NEXT
+**Minimum supported client:** Windows 11
 
 **Header:** ksmedia.h (include Ksmedia.h)
 

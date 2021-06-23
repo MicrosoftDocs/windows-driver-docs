@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 Use the guidance in this section to design and implement drivers for devices that stream video and audio (for example, webcams and digital camcorders).
 
-## New and updated content for WIN10_NEXT
+## New and updated content for Windows 11
 
 [Digital Window overview](digital-window-overview.md)
 
