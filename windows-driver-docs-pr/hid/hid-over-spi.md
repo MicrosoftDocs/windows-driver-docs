@@ -15,7 +15,9 @@ ms.localizationpriority: medium
 
 # Introduction to HID over SPI
 
-Microsoft has created a HID miniport driver that allows devices to communicate over a Serial Peripheral Interface (SPI) bus. Why use HID over SPI? SPI offers the following features:
+Microsoft has created a HID miniport driver that allows devices to communicate over a Serial Peripheral Interface (SPI) bus.
+
+SPI offers the following features:
 
 - Faster than I2C – more bandwidth, higher clock rates
 - Low latency
