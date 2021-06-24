@@ -89,7 +89,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 ### ![download icon.](images/download-install.png) Windows 11 EWDK with Visual Studio Build Tools
 
-* [Download the Windows 11 EWDK](/legal/windows/hardware/enterprise-wdk-license-2019-oct2021)
+* [Download the Windows 11 EWDK](/legal/windows/hardware/enterprise-wdk-license-2019-New)
 
 > You can use the Visual Studio interface with the build tools provided in the EWDK.
 >
