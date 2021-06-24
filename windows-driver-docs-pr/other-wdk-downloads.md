@@ -25,7 +25,7 @@ Visual Studio that is appropriate for your targeted platform.
 
 ## Runtime requirements
 
-You can run the Windows 10 WDK versions (including he WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
+You can run the Windows 10 WDK versions (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
 
 |Client OS|Server OS|
 |-|-|
