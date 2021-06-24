@@ -119,7 +119,7 @@ the integrated development environment (IDE).
 Using the EWDK requires .NET Framework 4.6.1. For more information about which systems run this version of the framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers).
 
 For more information about the EWDK, see
-[Using the Enterprise](./develop/using-the-enterprise-wdk.md).
+[Using the Enterprise WDK](./develop/using-the-enterprise-wdk.md).
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
