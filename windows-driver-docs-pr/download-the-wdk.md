@@ -20,9 +20,9 @@ The WDK is used to develop, test, and deploy Windows drivers.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
-## Runtime requirements: WDK for Windows 11, version 21H2
+## Runtime requirements: WDK for Windows 11
 
-You can run the Windows 11, version 21H2 on Windows 7 and later, and use it to develop drivers for these operating systems:
+You can run WDK for Windows 11 on Windows 7 and later, and use it to develop drivers for these operating systems:
 
 |Client OS|Server OS|
 |-|-|
@@ -32,7 +32,7 @@ You can run the Windows 11, version 21H2 on Windows 7 and later, and use it to d
 |Windows 8|Windows Server 2012|
 |Windows 7|Windows Server 2008 R2 SP1|
 
-## WDK for Windows Windows 11, version 21H2
+## WDK for Windows Windows 11
 
 ### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2019
 
@@ -71,16 +71,16 @@ MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (Latest)
 This SDK is strongly recommended and will eventually be made available through Visual Studio
 
 
-### ![download icon.](images/download-install.png) Step 2: Install WDK for Windows 11, version 21H2
+### ![download icon.](images/download-install.png) Step 2: Install WDK for Windows 11
 
-* [Download WDK for Windows 11, version 21H2](https://go.microsoft.com/fwlink/?linkid=2166381)
+* [Download WDK for Windows 11](https://go.microsoft.com/fwlink/?linkid=2166381)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
 > [!TIP]
 > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2019\WDK.vsix.
 
-## Enterprise WDK (EWDK) for Windows 11, version 21H2
+## Enterprise WDK (EWDK) for Windows 11
 
 The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.9.2 and MSVC toolset v14.28.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
@@ -88,7 +88,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 ### ![download icon.](images/download-install.png) EWDK with Visual Studio Build Tools
 
-* [Download the EWDK for Windows 11, version 21H2](/legal/windows/hardware/enterprise-wdk-license-2019-oct2021)
+* [Download the EWDK for Windows 11](/legal/windows/hardware/enterprise-wdk-license-2019-oct2021)
 
 > You can use the Visual Studio interface with the build tools provided in the EWDK.
 >
