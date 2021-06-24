@@ -74,7 +74,7 @@ This SDK must be installed separately until available through Visual Studio
 
 ### ![download icon.](images/download-install.png) Step 2: Install Windows 11 WDK
 
-* [Download WDK for Windows 11](https://go.microsoft.com/fwlink/?linkid=2166381)
+* [Download WDK for Windows 11](https://go.microsoft.com/fwlink/?linkid=2166289)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
