@@ -38,7 +38,7 @@ If the machine is reports a transient error (transient errors from UEFI.SYS are 
 |3221226681| STATUS_UNSATISFIED_DEPENDENCIES|
 |3221226029| STATUS_RETRY|
 
-The status code STATUS_INVALID_IMAGE_FORMAT is a result of the Firmware returning invalid image format in the last attempt status of the [ESRT table](https://docs.microsoft.com/windows-hardware/drivers/bringup/esrt-table-definition). 
+The status code STATUS_INVALID_IMAGE_FORMAT is a result of the Firmware returning invalid image format in the last attempt status of the [ESRT table](/windows-hardware/drivers/bringup/esrt-table-definition). 
 
 This code is returned from the firmware, effectively saying that their own new firmware looks bad, for a number of reasons.  In this case, the Windows OS can’t help because the capsule update process is entirely platform code and is done outside of the operating system.
 
