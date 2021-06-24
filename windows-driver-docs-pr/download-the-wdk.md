@@ -20,8 +20,7 @@ The WDK is used to develop, test, and deploy drivers for Windows.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
-##Windows 11 WDK
-## Runtime requirements:
+## Windows 11 WDK runtime requirements
 
 You can run the Windows 11 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
 
