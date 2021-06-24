@@ -13,16 +13,17 @@ ms.custom: 19H1
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy Windows drivers.
+The WDK is used to develop, test, and deploy drivers for Windows.
 
 * [Learn what's new in driver development](what-s-new-in-driver-development.md)
 * [Review known issues](wdk-known-issues.md)
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
-## Runtime requirements: WDK for Windows 11
+##Windows 11 WDK
+## Runtime requirements:
 
-You can run WDK for Windows 11 on Windows 7 and later, and use it to develop drivers for these operating systems:
+You can run the Windows 11 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
 
 |Client OS|Server OS|
 |-|-|
@@ -32,7 +33,7 @@ You can run WDK for Windows 11 on Windows 7 and later, and use it to develop dri
 |Windows 8|Windows Server 2012|
 |Windows 7|Windows Server 2008 R2 SP1|
 
-## WDK for Windows Windows 11
+## Download and install the Windows 11 WDK
 
 ### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2019
 
@@ -44,9 +45,9 @@ The following editions of Visual Studio 2019 support driver development for this
 * [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16)
 * [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
 
-When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the WDK for Windows Server 2022 may not be the default SDK. To get the compatible version of the SDK please use the link in step 1.5 below. 
+When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the Windows 11 WDK may not be the default installed with Visual Studio. To get the compatible version of the SDK please use the link in step 2 below. 
 
-WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64/ARM64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items you will need to know the latest version of MSVC installed on your system.
+WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64/ARM64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
 
 To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v142 - VS 2019 C++ x64/x86 build tools (V14.xx)** - note where **xx** should be the highest version available.
 
@@ -65,13 +66,13 @@ MSVC v142 - VS 2019 C++ x64/x86 build tools (Latest)
 MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
-### ![download icon.](images/download-install.png) Step 1.5 Install Windows SDK - Windows 10.0.22000.1
-* [Download Windows SDK - Windows 10.0.22000.1](https://go.microsoft.com/fwlink/?linkid=2166460)
+### ![download icon.](images/download-install.png) Step 2 Install Windows 11 SDK (22000.1)
+* [Download Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460)
 
-This SDK is strongly recommended and will eventually be made available through Visual Studio
+This SDK must be installed separately until available through Visual Studio
 
 
-### ![download icon.](images/download-install.png) Step 2: Install WDK for Windows 11
+### ![download icon.](images/download-install.png) Step 2: Install Windows 11 WDK
 
 * [Download WDK for Windows 11](https://go.microsoft.com/fwlink/?linkid=2166381)
 
@@ -80,15 +81,15 @@ The WDK Visual Studio extension is included in the default WDK installation.
 > [!TIP]
 > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2019\WDK.vsix.
 
-## Enterprise WDK (EWDK) for Windows 11
+## Enterprise WDK (EWDK)
 
-The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.9.2 and MSVC toolset v14.28.  To get started, mount the ISO and run **LaunchBuildEnv**.
+The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.9.2 and MSVC toolset v14.28.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-### ![download icon.](images/download-install.png) EWDK with Visual Studio Build Tools
+### ![download icon.](images/download-install.png) Windows 11 EWDK with Visual Studio Build Tools
 
-* [Download the EWDK for Windows 11](/legal/windows/hardware/enterprise-wdk-license-2019-oct2021)
+* [Download the Windows 11 EWDK](/legal/windows/hardware/enterprise-wdk-license-2019-oct2021)
 
 > You can use the Visual Studio interface with the build tools provided in the EWDK.
 >
@@ -103,7 +104,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 <br>
 
 
-## Driver samples for Windows 10
+## Driver samples for Windows
 
 To download the driver samples, do one of the following:
 
