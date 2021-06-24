@@ -12,24 +12,20 @@ ms.custom: 19H1
 
 # Other WDK downloads
 
+The Windows Driver Kit (WDK) is used to develop, test, and deploy Windows Drivers.
 This topic contains information about earlier versions of the Windows Driver Kit (WDK),
 Enterprise WDK (EWDK), and additional downloads for support purposes. To develop drivers,
 use the latest public versions of the Windows Driver Kit (WDK) and tools, available for
 download on [Download the Windows Driver Kit (WDK)](download-the-wdk.md).
 
-The Windows Driver Kit (WDK) is used to develop, test, and deploy
-Windows drivers. To develop drivers, use the latest public versions of
-the Windows Driver Kit (WDK) and tools, available for download on
-[Download the Windows Driver Kit (WDK)](download-the-wdk.md).
-
-This topic contains information about earlier versions of the WDK, the
-Enterprise WDK (EWDK), and additional downloads for support purposes. To
-use these earlier versions, you must *first* install the version of
+To use these earlier versions, you must *first* install the version of
 Visual Studio that is appropriate for your targeted platform.
+
+## Install a previous WDK version
 
 ## Runtime requirements
 
-You can run the WDK for Windows Server 2022 on Windows 7 and later, and use it to develop drivers for these operating systems:
+You can run the Windows 10 WDK versions (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
 
 |Client OS|Server OS|
 |-|-|
@@ -52,7 +48,7 @@ The following table indicates which Visual Studio version is required for the di
 | Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
 | Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
-### Configure Visual Studio for Windows 10, versions 1709, 1803, 1809, 1903 and 2004
+### Configure Visual Studio for Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
 
 When you install Visual Studio, select the **Desktop development with
 C++** workload. The Windows 10 Software Development Kit (SDK) is
@@ -112,7 +108,7 @@ develop, build, package, deploy, test, and debug drivers.
 > 3. Select **Modify**, select **Repair**, and then follow the directions on the screen.
 > 4. The files will be restored.
 
-## Optional: Install the EWDK
+## Download previous versions of the EWDK
 
 The Enterprise WDK (EWDK) is a standalone, self-contained, command-line environment for
 building drivers and basic Win32 test applications. It includes the
@@ -123,7 +119,7 @@ the integrated development environment (IDE).
 Using the EWDK requires .NET Framework 4.6.1. For more information about which systems run this version of the framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers).
 
 For more information about the EWDK, see
-[Using the Enterprise WDK 10](./develop/using-the-enterprise-wdk.md).
+[Using the Enterprise WDK](./develop/using-the-enterprise-wdk.md).
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
