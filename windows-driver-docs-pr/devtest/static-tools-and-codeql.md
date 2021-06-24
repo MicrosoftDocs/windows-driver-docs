@@ -82,10 +82,24 @@ Commands:
 
 1. Navigate to the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
 
-2. [Clone](https://github.com/git-guides/git-clone) the repository to download all CodeQL queries and [query suites](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/) with driver-specific queries.
+2. [Clone](https://github.com/git-guides/git-clone) the repository to download all CodeQL queries and [query suites](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/) with driver-specific queries.  
 
 ```command
-C:\codeql-home\>git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recursive
+C:\codeql-home\>git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recursive -b RELEASE_BRANCH
+```
+
+Replace RELEASE_BRANCH with the appropriate branch depending on the OS you are certifying for, per the following table:
+
+| Release                         | Branch to use   |
+|---------------------------------|-----------------|
+| Windows Server 2022             | WHCP_21H2       |
+| Windows 11                      | WHCP_21H2       |
+
+If you have already cloned the repository and need to switch to a different branch, you can switch to the appropriate branch by running git fetch and git checkout from your local copy of the repository:
+
+```command
+C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools>git fetch --all
+C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools>git checkout RELEASE_BRANCH
 ```
 
 > [!NOTE]
