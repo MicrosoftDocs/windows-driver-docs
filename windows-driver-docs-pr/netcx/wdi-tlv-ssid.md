@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_SSID (dot11wificxtypes.h)
 description: WDI_TLV_SSID is a WiFiCx TLV that contains an SSID.
-ms.date: 06/17/2021
+ms.date: 06/30/2021
 keywords:
  - WDI_TLV_SSID, WiFiCx
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ The size (in bytes) of the array of UINT8 elements. An array length of 0 is allo
 
 |Requirement|Value|
 |--- |--- |
-|Minimum supported client|WIN10_NEXT|
+|Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
 |Header|dot11wificxtypes.h|
 

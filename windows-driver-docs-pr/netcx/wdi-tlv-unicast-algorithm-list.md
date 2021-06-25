@@ -1,6 +1,6 @@
 ---
 title: WDI_TLV_UNICAST_ALGORITHM_LIST (dot11wificxtypes.h)
-description: WDI_TLV_UNICAST_ALGORITHM_LIST is a TLV that contains an array of unicast data algorithm pairs.
+description: WDI_TLV_UNICAST_ALGORITHM_LIST is a WiFiCx TLV that contains an array of unicast data algorithm pairs.
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_UNICAST_ALGORITHM_LIST Network Drivers Starting with Windows Vista
@@ -49,7 +49,7 @@ WDI\_ALGO\_PAIRS consists of the following elements.
 
 |Requirement|Value|
 |--- |--- |
-|Minimum supported client|WIN10_NEXT|
+|Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
 |Header|dot11wificxtypes.h|
 

@@ -35,7 +35,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 |Requirement|Value|
 |--- |--- |
-|Minimum supported client|WIN10_NEXT|
+|Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
 |Header|dot11wificxtypes.h|
 

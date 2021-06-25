@@ -35,7 +35,7 @@ The size (in bytes) of a UINT32.
 
 |Requirement|Value|
 |--- |--- |
-|Minimum supported client|WIN10_NEXT|
+|Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
 |Header|dot11wificxtypes.h|
 

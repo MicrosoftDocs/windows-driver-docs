@@ -82,6 +82,14 @@
     href: wificx-message-structure.md
   - name: "WiFiCx TLVs"
     items: 
+    - name: "WDI_TLV_6_GHZ_BAND_CHANNEL"
+      href: wdi-tlv-6-ghz-band-channel.md
+    - name: "WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE"
+      href: wdi-tlv-association-parameters-requested-type.md
+    - name: "WDI_TLV_BAND_CHANNEL"
+      href: wdi-tlv-band-channel.md
+    - name: "WDI_TLV_BANDID"
+      href: wdi-tlv-bandid.md
     - name: "WDI_TLV_BEACON_FRAME"
       href: wdi-tlv-beacon-frame.md
     - name: "WDI_TLV_BSS_ENTRY"
@@ -98,6 +106,8 @@
       href: wdi-tlv-bss-selection-parameters.md
     - name: "WDI_TLV_BSSID"
       href: wdi-tlv-bssid.md
+    - name: "WDI_TLV_CHANNEL_INFO_LIST"
+      href: wdi-tlv-channel-info-list.md
     - name: "WDI_TLV_CONNECT_BSS_ENTRY"
       href: wdi-tlv-connect-bss-entry.md
     - name: "WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES"
@@ -114,32 +124,74 @@
       href: wdi-tlv-ft-reassoc-parameters.md
     - name: "WDI_TLV_P2P_ADVERTISEMENT_ID"
       href: wdi-tlv-p2p-advertisement-id.md
+    - name: "WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY"
+      href: wdi-tlv-p2p-asp2-service-information-discovery-entry.md
     - name: "WDI_TLV_P2P_CONFIG_METHODS"
       href: wdi-tlv-p2p-config-methods.md
     - name: "WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY"
       href: wdi-tlv-p2p-discovered-service-entry.md
+    - name: "WDI_TLV_P2P_DISCOVER_MODE"
+      href: wdi-tlv-p2p-discover-mode.md
+    - name: "WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS"
+      href: wdi-tlv-p2p-disovery-channel-settings.md
+    - name: "WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL"
+      href: wdi-tlv-p2p-include-listen-channel.md
+    - name: "WDI_TLV_P2P_INSTANCE_NAME"
+      href: wdi-tlv-p2p-instance-name.md
+    - name: "WDI_TLV_P2P_LISTEN_DURATION"
+      href: wdi-tlv-p2p-listen-duration.md
     - name: "WDI_TLV_P2P_SERVICE_INFORMATION"
       href: wdi-tlv-p2p-service-information.md
+    - name: "WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY"
+      href: wdi-tlv-p2p-service-information-discovery-entry.md
     - name: "WDI_TLV_P2P_SERVICE_NAME"
       href: wdi-tlv-p2p-service-name.md
+    - name: "WDI_TLV_P2P_SERVICE_NAME_HASH"
+      href: wdi-tlv-p2p-service-name-hash.md
     - name: "WDI_TLV_P2P_SERVICE_STATUS"
       href: wdi-tlv-p2p-service-status.md
+    - name: "WDI_TLV_P2P_SERVICE_TRANSACTION_ID"
+      href: wdi-tlv-p2p-service-transaction-id.md
+    - name: "WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR"
+      href: wdi-tlv-p2p-service-update-indicator.md
     - name: "WDI_TLV_PMKID"
       href: wdi-tlv-pmkid.md
     - name: "WDI_TLV_PROBE_RESPONSE_FRAME"
       href: wdi-tlv-probe-response-frame.md
+    - name: "WDI_TLV_SCAN_DWELL_TIME"
+      href: wdi-tlv-scan-dwell-time.md
+    - name: "WDI_TLV_SCAN_MODE"
+      href: wdi-tlv-scan-mode.md
     - name: "WDI_TLV_SSID"
       href: wdi-tlv-ssid.md
+    - name: "WDI_TLV_STATUS"
+      href: wdi-tlv-status.md
     - name: "WDI_TLV_UNICAST_ALGORITHM_LIST"
       href: wdi-tlv-unicast-algorithm-list.md
+    - name: "WDI_TLV_VENDOR_SPECIFIC_IE"
+      href: wdi-tlv-vendor-specific-ie.md
   - name: "WiFiCx task commands"
     items:
-    - name: "WDI_TASK_SCAN"
-      href: wdi-task-scan.md
+    - name: "OID_WDI_TASK_CONNECT"
+      href: oid-wdi-task-connect.md
+    - name: "OID_WDI_TASK_P2P_DISCOVER"
+      href: oid-wdi-task-p2p-discover.md
+    - name: "OID_WDI_TASK_SCAN"
+      href: oid-wdi-task-scan.md
   - name: "WiFiCx property commands"
     items:
+    - name: "OID_WDI_SET_ASSOCIATION_PARAMETERS"
+      href: oid-wdi-set-association-parameters.md
   - name: "WiFiCx unsolicited status indications"
     items:
+    - name: "NDIS_STATUS_WDI_INDICATION_ASSOCIATION_PARAMETERS_REQUEST"
+      href: ndis-status-wdi-indication-association-parameters-request.md
+    - name: "NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST"
+      href: ndis-status-wdi-indication-bss-entry-list.md
+    - name: "NDIS_STATUS_WDI_INDICATION_P2P_DISCOVERY_COMPLETE"
+      href: ndis-status-wdi-indication-p2p-discovery-complete.md
+    - name: "NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE"
+      href: ndis-status-wdi-indication-scan-complete.md
   - name: "Other WiFiCx data types"
     items:
   - name: "WiFiCx TLV generator/parser"
@@ -148,8 +200,4 @@
     items:
   - name: "WiFiCx WPA3-SAE authentication"
     href: wificx-wpa3-sae-authentication.md
-  - name: "Other WiFiCx data types"
-    items:
-    - name: "WDI_STATUS"
-      href: wdi-status.md
 

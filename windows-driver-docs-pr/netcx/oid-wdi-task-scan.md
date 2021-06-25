@@ -1,13 +1,13 @@
 ---
-title: OID_WDI_TASK_SCAN
-description: OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan according to the requirements of the IEEE 802.11 specification.
+title: OID_WDI_TASK_SCAN (dot11wificxintf.h)
+description: OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan according to the IEEE 802.11 specification requirements.
 ms.date: 06/30/2021
 keywords:
  - OID_WDI_TASK_SCAN Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
 ---
 
-# OID_WDI_TASK_SCAN
+# OID_WDI_TASK_SCAN (dot11wificxintf.h)
 
 
 OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan according to the requirements of the IEEE 802.11 specification.
@@ -19,7 +19,7 @@ OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan ac
 
 A task started message containing a [**WDI_TLV_STATUS**](wdi-tlv-status.md) is indicated once the port has started the scan and is ready to receive other commands.
 
-Once a scan is started when enabled by LiveUpdatesNeeded, the port must provide incremental updates (using unsolicited indications of [WDI_INDICATION_BSS_ENTRY_LIST](wdi-indication-bss-entry-list.md)) about discovered BSS entries. BSS entries that had previously been discovered but were not found by the port in the current scan should not be reported by the port. For power and performance reasons, the port should throttle indications and send updates to the host only when it has discovered 3 or more, or when it has discovered less than 3 entries but has not reported them to the host for more than 500 milliseconds. After the scan is completed, if the adapter does not manage BSS entries, it does not need to remember the BSS entries that it has discovered. Once the scan operation has finished, the port must send the task complete notification to the operating system and stop reporting BSS entries to the host. The scan command is used for finding legacy (non-Wi-Fi Direct networks) and the port should not include the Wi-Fi Direct IEs in the probe requests.
+Once a scan is started when enabled by LiveUpdatesNeeded, the port must provide incremental updates (using unsolicited indications of [NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST](wdi-indication-bss-entry-list.md)) about discovered BSS entries. BSS entries that had previously been discovered but were not found by the port in the current scan should not be reported by the port. For power and performance reasons, the port should throttle indications and send updates to the host only when it has discovered 3 or more, or when it has discovered less than 3 entries but has not reported them to the host for more than 500 milliseconds. After the scan is completed, if the adapter does not manage BSS entries, it does not need to remember the BSS entries that it has discovered. Once the scan operation has finished, the port must send the task complete notification to the operating system and stop reporting BSS entries to the host. The scan command is used for finding legacy (non-Wi-Fi Direct networks) and the port should not include the Wi-Fi Direct IEs in the probe requests.
 
 If the adapter does not manage BSS entries, the host remembers the BSS entries reported by the port from a scan for a finite period of time. It times out its cached entries and flushes them. If the adapter manages the BSS entries, it caches and times them out. The host may send the [WDI_SET_FLUSH_BSS_ENTRY](wdi-set-flush-bss-entry.md) command to explicitly flush the entries.
 
@@ -51,11 +51,11 @@ The adapter must not violate regulatory restrictions when performing a scan.
 ## Task completion indication
 
 
-[WDI_INDICATION_SCAN_COMPLETE](wdi-indication-scan-complete.md)
+[NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE](ndis-status-wdi-indication-scan-complete.md)
 
 ## Unsolicited indication
 
-[WDI_INDICATION_BSS_ENTRY_LIST](wdi-indication-bss-entry-list.md)
+[NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST](ndis-status-wdi-indication-bss-entry-list.md)
 
 This notification is used by the device to tell the host about updates to the BSS entries. It can be sent at any time.
 
