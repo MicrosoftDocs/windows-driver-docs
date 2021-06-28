@@ -122,12 +122,12 @@ NetAdapterCx provides definitions for known packet extension constants.
 | NET_PACKET_EXTENSION_LSO_NAME NET_PACKET_EXTENSION_LSO_VERSION_1 | The name and version of the large send offload (LSO) packet extension. |
 | NET_PACKET_EXTENSION_RSC_NAME NET_PACKET_EXTENSION_RSC_VERSION_1 | The name and version of the receive segment coalescence (RSC) packet extension. |
 
-Additionally, NetAdapterCx provides three helper methods that act as wrappers around the [**NetExtensionGetData**](/windows-hardware/drivers/ddi/extension/nf-extension-netextensiongetdata) method. Each of these methods returns a pointer to the appropriate type of structure.
+Additionally, NetAdapterCx provides helper methods that act as wrappers around the [**NetExtensionGetData**](/windows-hardware/drivers/ddi/extension/nf-extension-netextensiongetdata) method. Each of these methods returns a pointer to the appropriate type of structure.
 
 | Method | Structure |
 | --- | --- |
 | [**NetExtensionGetPacketChecksum**](/windows-hardware/drivers/ddi/checksum/nf-checksum-netextensiongetpacketchecksum) | [**NET_PACKET_CHECKSUM**](/windows-hardware/drivers/ddi/checksumtypes/ns-checksumtypes-_net_packet_checksum) |
-| [**NetExtensionGetLso**](/windows-hardware/drivers/ddi/lso/nf-lso-netextensiongetpacketlso) | [**NET_PACKET_LSO**](/windows-hardware/drivers/ddi/lsotypes/ns-lsotypes-_net_packet_lso)
+| [**NetExtensionGetGso**](/windows-hardware/drivers/ddi/gso/nf-gso-netextensiongetpacketgso) | [**NET_PACKET_GSO**](/windows-hardware/drivers/ddi/gsotypes/ns-gsotypes-net_packet_gso)
 | [**NetExtensionGetPacketRsc**](/windows-hardware/drivers/ddi/rsc/nf-rsc-netextensiongetpacketrsc) | [**NET_PACKET_RSC**](/windows-hardware/drivers/ddi/rsctypes/ns-rsctypes-_net_packet_rsc) |
 
 ## Using fragment extensions
