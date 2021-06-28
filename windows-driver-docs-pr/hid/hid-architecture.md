@@ -59,19 +59,19 @@ Windows supports the following top-level collections:
 
 | **Usage Page** | **Usage** | **Windows 7** | **Windows 8** | **Windows 10** | **Notes** | **Access Mode** |
 | --- | --- | --- | --- | --- | --- | --- |
-| 0x0001 | 0x0001 - 0x0002 | Yes | Yes | Yes | [Mouse class driver and mapper driver](keyboard-and-mouse-class-drivers.md) | Exclusive |
-| 0x0001 | 0x0004 - 0x0005 | Yes | Yes | Yes | Game Controllers | Shared |
-| 0x0001 | 0x0006 - 0x0007 | Yes | Yes | Yes | [Keyboard / Keypad class driver and mapper driver](keyboard-and-mouse-class-drivers.md) | Exclusive |
-| 0x0001 | 0x000C | No | Yes | Yes | Flight Mode Switch | Shared |
-| 0x0001 | 0x0080 | Yes | Yes | Yes | System Controls (Power) | Shared |
-| 0x000C | 0x0001 | Yes | Yes | Yes (For both Windows 10 and Windows 10 Mobile) | Consumer Controls | Shared (For both Windows 10 and Windows 10 Mobile) |
-| 0x000D | 0x0001 | Yes | Yes | Yes | External Pen Device | Exclusive |
-| 0x000D | 0x0002 | Yes | Yes | Yes | Integrated Pen Device | Exclusive |
-| 0x000D | 0x0004 | Yes | Yes | Yes | Touchscreen | Exclusive |
-| 0x000D | 0x0005 | No | Yes | Yes | Precision Touchpad (PTP) | Exclusive |
-| 0x0020 | *Multiple | No | Yes | Yes | Sensors | Shared |
-| 0x0084 | 0x004 | Yes | Yes | Yes | HID UPS Battery | Shared |
-| 0x008C | 0x0002 | No | Yes (Windows 8.1 and later) | Yes | Barcode Scanner (hidscanner.dll) | Shared |
+| 0x01 | 0x01 - 0x02 | Yes | Yes | Yes | [Mouse class driver and mapper driver](keyboard-and-mouse-class-drivers.md) | Exclusive |
+| 0x01 | 0x04 - 0x05 | Yes | Yes | Yes | Game Controllers | Shared |
+| 0x01 | 0x06 - 0x07 | Yes | Yes | Yes | [Keyboard / Keypad class driver and mapper driver](keyboard-and-mouse-class-drivers.md) | Exclusive |
+| 0x01 | 0x0C | No | Yes | Yes | Flight Mode Switch | Shared |
+| 0x01 | 0x80 | Yes | Yes | Yes | System Controls (Power) | Shared |
+| 0x0C | 0x01 | Yes | Yes | Yes (For both Windows 10 and Windows 10 Mobile) | Consumer Controls | Shared (For both Windows 10 and Windows 10 Mobile) |
+| 0x0D | 0x01 | Yes | Yes | Yes | External Pen Device | Exclusive |
+| 0x0D | 0x02 | Yes | Yes | Yes | Integrated Pen Device | Exclusive |
+| 0x0D | 0x04 | Yes | Yes | Yes | Touchscreen | Exclusive |
+| 0x0D | 0x05 | No | Yes | Yes | Precision Touchpad (PTP) | Exclusive |
+| 0x20 | *Multiple | No | Yes | Yes | Sensors | Shared |
+| 0x84 | 0x04 | Yes | Yes | Yes | HID UPS Battery | Shared |
+| 0x8C | 0x02 | No | Yes (Windows 8.1 and later) | Yes | Barcode Scanner (hidscanner.dll) | Shared |
 
 In the preceding table, the access mode for input HID clients is *Exclusive* to prevent other HID clients from intercepting or receiving global input state when they are not the target recipient of that input. Therefore, for security reasons RIM (Raw Input Manager) opens all such devices exclusively. 
 
