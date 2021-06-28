@@ -56,13 +56,8 @@
           href: how-whea-performs-pfa-on-ecc-memory.md
       - name: "PFA Performed by a PSHED Plug-In"
         href: pfa-performed-by-a-pshed-plug-in.md
-      - name: "Persistence of PFA Results"
-# Auto-expanded node
-        items: 
-        - name: "Persistence of PFA Results"
-          href: persistence-of-pfa-results.md
-        - name: "How to Manage the PFA Memory List"
-          href: how-to-manage-the-pfa-memory-list.md
+      - name: "How to Manage the PFA Memory List"
+        href: how-to-manage-the-pfa-memory-list.md
     - name: "Differences from Previous Versions of Microsoft Windows"
       href: differences-from-previous-versions-of-microsoft-windows.md
   - name: "Platform-Specific Hardware Error Driver Plug-Ins"
