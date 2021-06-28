@@ -25,7 +25,7 @@ When Windows starts, it excludes these memory pages from system use.
 When the failing system memory is replaced, a system administrator must clear this list manually by updating the registry or using the BCDEdit command-line tool.
 If the list is not cleared, Windows continues to exclude the memory pages in the list even if the failing memory modules have been replaced.
 
-To perform the steps described on this page, you need to open an elevated command prompt:
+This page describes how to view and clear page frame numbers from the bad memory lists. To perform the steps below, you'll need an elevated command prompt:
 
 1. Click **Start**, point to **All Programs**, and then click **Accessories**.
 2. Right-click **Command Prompt** and select **Run as administrator**.
