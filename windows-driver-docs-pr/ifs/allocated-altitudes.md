@@ -76,6 +76,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 
 | Minifilter                  | Altitude | Company                                 |
 |-----------------------------|----------|-----------------------------------------|
+| bcloudsafe.sys | 389998 | AISHU Technology Corp |
 | klboot.sys | 389510 | Kaspersky Lab |
 | klfdefsf.sys | 389500 | Kaspersky Lab |
 | JDPPWF.sys | 389492 | JiranData Co. Ltd |
