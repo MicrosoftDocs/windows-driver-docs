@@ -70,7 +70,7 @@ Windows supports the following top-level collections:
 | 0x000D | 0x0004 | Yes | Yes | Yes | Touchscreen | Exclusive |
 | 0x000D | 0x0005 | No | Yes | Yes | Precision Touchpad (PTP) | Exclusive |
 | 0x0020 | *Multiple | No | Yes | Yes | Sensors | Shared |
-| 0x0084 | 0x004 | Yes | Yes | Yes | HID UPS Battery | Shared |
+| 0x0084 | 0x0004 | Yes | Yes | Yes | HID UPS Battery | Shared |
 | 0x008C | 0x0002 | No | Yes (Windows 8.1 and later) | Yes | Barcode Scanner (hidscanner.dll) | Shared |
 
 In the preceding table, the access mode for input HID clients is *Exclusive* to prevent other HID clients from intercepting or receiving global input state when they are not the target recipient of that input. Therefore, for security reasons RIM (Raw Input Manager) opens all such devices exclusively. 
