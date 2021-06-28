@@ -71,6 +71,6 @@ The following table contains the descriptions and requirements for the [KSCAMERA
 
 ## See also
 
-[KSPROPERTY_CAMERACONTROL_EXTENDED_ BACKGROUNDSEGMENTATION_CONFIGCAPS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_extended_backgroundsegmentation_configcaps)
+[KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_extendedprop_backgroundsegmentation_configcaps)
 
 [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)
