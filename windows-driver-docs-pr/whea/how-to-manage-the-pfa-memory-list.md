@@ -17,19 +17,15 @@ Starting in Windows version 19042, bad memory pages are stored in the registry u
 In previous versions of Windows, this information is stored in the BCD system store.
 
 This list contains the PFNs for all memory pages that the PFA has predicted are likely to fail.
-When Windows starts, it excludes memory pages in this list from system use.
+When Windows starts, it excludes these memory pages from system use.
 
 > [!NOTE]
 > There is no industry standard for mapping a physical memory PFN to a specific physical memory module. Thus, WHEA cannot provide information about which memory modules are failing.
 
-Windows does not provide an automated mechanism for clearing this list from the BCD system store.
 When the failing system memory is replaced, a system administrator must clear this list manually by updating the registry or using the BCDEdit command-line tool.
-If the list is not cleared, Windows will continue to exclude the memory pages in the list from being used by the system, even if the failing memory modules have been replaced.
+If the list is not cleared, Windows continues to exclude the memory pages in the list even if the failing memory modules have been replaced.
 
-
-To access the registry using the reg command or to use the bcdedit tool, you need to open an elevated command prompt.
-
-To do so, follow these steps:
+To perform the steps described on this page, you need to open an elevated command prompt:
 
 1. Click **Start**, point to **All Programs**, and then click **Accessories**.
 2. Right-click **Command Prompt** and select **Run as administrator**.
@@ -39,14 +35,14 @@ To do so, follow these steps:
 
 To view the current list of PFNs in the system registry, run the following command from your elevated command prompt:
 
-```console
+```cmd
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\WHEA" /v BadPages
 ```
 
 If no ECC memory pages are predicted to fail, the output from the reg command appears as in the following example:
 
 ```console
-C:\Windows\system3>reg query "HKLM\SYSTEM\CurrentControlSet\Control\WHEA" /v BadPages
+C:\Windows\system32>reg query "HKLM\SYSTEM\CurrentControlSet\Control\WHEA" /v BadPages
 
 
 ERROR: The system was unable to find the specified registry key or value.
