@@ -41,7 +41,7 @@ reg query "HKLM\SYSTEM\CurrentControlSet\Control\WHEA" /v BadPages
 
 If no ECC memory pages are predicted to fail, the output from the reg command appears as in the following example:
 
-```console
+```cmd
 C:\Windows\system32>reg query "HKLM\SYSTEM\CurrentControlSet\Control\WHEA" /v BadPages
 
 
@@ -50,7 +50,7 @@ ERROR: The system was unable to find the specified registry key or value.
 
 If ECC memory pages are predicted to fail, the BadPages registry key contains a binary blob that encapsulates the pages, as shown in the following example:
 
-```console
+```cmd
 C:\Windows\system32>reg query "HKLM\SYSTEM\CurrentControlSet\Control\WHEA" /v BadPages
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WHEA
@@ -76,7 +76,7 @@ while($idx -le $pages.Count) {
 
 To clear the list of PFNs in the BCD system store, use the following command:
 
-```console
+```cmd
 reg delete "HKLM\SYSTEM\CurrentControlSet\Control\WHEA" /v BadPages
 ```
 
@@ -92,13 +92,13 @@ To use the BCDEdit tool, you must be a member of the Administrators group on the
 
 Use the following command from your elevated command prompt:
 
-```console
+```cmd
 C:\Windows\system32>bcdedit /enum {badmemory}
 ```
 
 If no ECC memory pages are predicted to fail, the output from the BCDEdit tool appears as in the following example:
 
-```console
+```cmd
 C:\Windows\system32>bcdedit /enum {badmemory}
 
 RAM Defects
@@ -108,7 +108,7 @@ identifier              {badmemory}
 
 If ECC memory pages are predicted to fail, the **{badmemory}** object contains a **badmemorylist** value. This value contains the list of PFNs for the memory pages that PFA predicts will fail, as shown in the following example:
 
-```console
+```cmd
 C:\Windows\system32>bcdedit /enum {badmemory}
 
 RAM Defects
