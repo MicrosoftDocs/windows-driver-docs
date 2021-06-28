@@ -1,16 +1,31 @@
 ---
 title: How to Manage the PFA Memory List
 description: How to Manage the PFA Memory List
-ms.date: 06/25/2021
+ms.date: 06/28/2021
 ms.localizationpriority: medium
 ---
 
-# How to Manage the PFA Memory List
+# How to Manage the Predictive Failure Analysis (PFA) Memory List
+
+
+
+Whenever Predictive Failure Analysis (PFA) predicts that an Error Correction Code (ECC) memory page is likely to fail based on the current PFA registry settings,
+PFA stores (or *persists*) the page frame number (PFN) for the memory page.
+
 
 Starting in Windows version 19042, bad memory pages are stored in the registry under `HKLM\SYSTEM\CurrentControlSet\Control\WHEA\BadPages`.
 In previous versions of Windows, this information is stored in the BCD system store.
-Any previously marked bad pages remain in the BCD system store while newly marked pages are stored in the registry.
-This page explains how to retrieve the list of bad memory pages from both places.
+
+This list contains the PFNs for all memory pages that the PFA has predicted are likely to fail.
+When Windows starts, it excludes memory pages in this list from system use.
+
+> [!NOTE]
+> There is no industry standard for mapping a physical memory PFN to a specific physical memory module. Thus, WHEA cannot provide information about which memory modules are failing.
+
+Windows does not provide an automated mechanism for clearing this list from the BCD system store.
+When the failing system memory is replaced, a system administrator must clear this list manually by updating the registry or using the BCDEdit command-line tool.
+If the list is not cleared, Windows will continue to exclude the memory pages in the list from being used by the system, even if the failing memory modules have been replaced.
+
 
 To access the registry using the reg command or to use the bcdedit tool, you need to open an elevated command prompt.
 

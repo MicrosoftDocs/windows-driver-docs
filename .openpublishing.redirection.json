@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/whea/persistence-of-pfa-results.md",
+            "redirect_URL":  "/windows-hardware/drivers/whea/how-to-manage-the-pfa-memory-list",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/kernel/resetting-and-recovering-a-device.md",
             "redirect_URL":  "/windows-hardware/drivers/kernel/working-with-guid-device-reset-interface-standard",
             "redirect_document_id":  false
