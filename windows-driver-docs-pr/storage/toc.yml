@@ -40,7 +40,7 @@
     - name: "Storage Data Set Management (DSM)"
 # Auto-expanded node
       items: 
-      - name: "Overview"
+      - name: "Performing storage driver data set management"
         href: data-set-management-overview.md
       - name: "DEVICE_DSM_ACTION Descriptions"
         href: device-dsm-action-descriptions.md
