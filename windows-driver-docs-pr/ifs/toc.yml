@@ -6,7 +6,7 @@
     items:
     - name: "File system sample code"
       href: file-system-sample-code.md
-    - name: "Installing a file system driver"
+    - name: "Development process for file system driver installation"
       href: installing-a-file-system-driver.md
     - name: "Creating an INF file for a file system driver"
       href: creating-an-inf-file-for-a-file-system-driver.md

@@ -1,6 +1,6 @@
 ---
-title: Creating an INF File for a File System Driver
-description: Creating an INF File for a File System Driver
+title: Creating an INF file for a file system driver
+description: Describes how to create an INF file for a file system driver
 keywords:
 - INF files WDK file system , creating
 - SetupAPI WDK file system
@@ -12,17 +12,20 @@ keywords:
 - DestinationDirs section WDK file system
 - Version section WDK file system
 - creating INF files WDK file system
-ms.date: 10/16/2019
+ms.date: 06/29/2021
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q4
 ---
 
-# Creating an INF File for a File System Driver
+# Creating an INF file for a file system driver
+
+## About file system INF files
 
 The Windows Setup and Device Installer Services, known collectively as [SetupAPI](../install/setupapi.md), provide the functions that control Windows setup and driver installation. The installation process is controlled by INF files.
 
 A file system driver's INF file provides instructions that SetupAPI uses to install the driver. The INF file is a text file that specifies the files that must be present for your driver to run and the source and destination directories for the driver files. An INF file also contains driver configuration information that SetupAPI stores in the registry, such as the driver's start type and load order group.
 
-For more information about INF files and how they are created, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md). For general information about signing drivers, see [Driver Signing](../install/driver-signing.md).
+For more information about INF files, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md). For general information about signing drivers, see [Driver Signing](../install/driver-signing.md).
 
 You can create a single INF file to install your driver on multiple versions of the Windows operating system. For more information about creating such an INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md) and [Creating International INF Files](../install/creating-international-inf-files.md).
 
@@ -32,7 +35,7 @@ Starting with 64-bit versions of Windows Vista, all kernel-mode components, incl
 
 - The [**SignTool**](../devtest/signtool.md) command-line tool, located in the \bin\SelfSign directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
 
-- Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) logo signatures.
+- Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package.
 
 - With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it is unsigned.
 
@@ -42,31 +45,31 @@ Starting with 64-bit versions of Windows Vista, all kernel-mode components, incl
 
 INF files cannot be used to read information from the registry or to launch a user-mode application.
 
-After creating an INF file, you will typically write the source code for your setup application. The setup application calls user-mode setup functions to access the information in the INF file and perform installation operations.
+## Sections in a file system driver INF file
 
 To construct your own file system driver INF file, use the following information as a guide. You can use the [InfVerif](../devtest/infverif.md) tool to check the syntax of your INF file.
 
 An INF file for a file system driver generally contains the following sections.
 
-- Version (required)
+- [Version (required)](#version-section-required)
 
-- DestinationDirs (optional but recommended)
+- [DestinationDirs (optional but recommended)](#destinationdirs-section-optional-but-recommended)
 
-- SourceDisksNames (required)
+- [SourceDisksNames (required)](#sourcedisksnames-section-required)
 
-- SourceDisksFiles (required)
+- [SourceDisksFiles (required)](#sourcedisksfiles-section-required)
 
-- DefaultInstall (required)
+- [DefaultInstall (required)](#defaultinstall-section-required)
 
-- DefaultInstall.Services (required)
+- [DefaultInstall.Services (required)](#defaultinstallservices-section-required)
 
-- ServiceInstall (required)
+- [ServiceInstall (required)](#serviceinstall-section-required)
 
-- DefaultUninstall (optional)
+- [DefaultUninstall (optional)](#defaultuninstall-section-optional)
 
-- DefaultUninstall.Services (optional)
+- [DefaultUninstall.Services (optional)](#defaultuninstallservices-section-optional)
 
-- Strings (required)
+- [Strings (required)](#strings-section-required)
 
 ### Version Section (required)
 
@@ -218,7 +221,7 @@ The **LoadOrderGroup** entry must always be set to "File System" for a file syst
 
 The [**AddReg directive**](../install/inf-addreg-directive.md) refers to one or more INF writer-defined **AddRegistry** sections that contain any information to be stored in the registry for the newly installed service.
 
-**Note**   If the INF file will also be used for upgrading the driver after the initial install, the entries that are contained in the **AddRegistry** section should specify the 0x00000002 (FLG_ADDREG_NOCLOBBER) flag. Specifying this flag preserves the registry entries in HKLM\CurrentControlSet\Services when subsequent files are installed. For example:
+If the INF file will also be used for upgrading the driver after the initial install, the entries that are contained in the **AddRegistry** section should specify the 0x00000002 (FLG_ADDREG_NOCLOBBER) flag. Specifying this flag preserves the registry entries in HKLM\CurrentControlSet\Services when subsequent files are installed. For example:
 
 ```cpp
 [ExampleFileSystem.AddRegistry]
@@ -250,8 +253,7 @@ In the following code example, the [**DelService**](../install/inf-delservice-di
 DelService = %ServiceName%,0x200
 ```
 
-> [!NOTE]
-> The [**DelService**](../install/inf-delservice-directive.md) directive should always specify the 0x200 (SPSVCINST_STOPSERVICE) flag to stop the service before it is deleted.
+The [**DelService**](../install/inf-delservice-directive.md) directive should always specify the 0x200 (SPSVCINST_STOPSERVICE) flag to stop the service before it is deleted.
 
 > [!NOTE]
 > There are certain classes of file system products that cannot be completely uninstalled. In this situation, it is acceptable to just uninstall the components of the product that can be uninstalled and leave installed the components of the product that cannot be uninstalled. An example of such a product is the Microsoft Single Instance Store (SIS) feature.
