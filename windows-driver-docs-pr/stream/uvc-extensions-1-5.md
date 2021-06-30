@@ -377,11 +377,13 @@ The following applies:
 
 - GET_CUR request shall report field **dwMode** set to the current operating mode.
 
-- GET_DEF shall have a **dwMode** set to OFF/ON/AUTO
+- GET_DEF shall have a **dwMode** set to OFF (0).
 
-- GET_MIN, GET_MAX, GET_RES  REQUESTS are unused.
+- GET_MAX request shall advertise support for available modes of operations: [1 (ON/OFF), 3 (ON/OFF/Auto)].  Support for ON (1) is mandatory for this control.
 
-- SET_CUR request should set the mode to either OFF/ON/AUTO
+- GET_MIN and GET_RES requests shall report 0.
+
+- SET_CUR request should set the mode to either  OFF (0), ON (1), or AUTO (2).
 
 #### 2.2.3 Metadata
 
