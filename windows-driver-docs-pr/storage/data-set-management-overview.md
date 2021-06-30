@@ -1,14 +1,17 @@
 ---
-title: Data Set Management (DSM) Overview
-description: Management actions can be performed on a device's data-set attributes as data set management (DSM) actions.:"?ASQ
+title: Performing storage driver data set management
+description: Management actions can be performed on a storage device's data-set attributes as data set management (DSM) actions.
 keywords: Storage Data Set Management Actions, Data Set Management Actions, DSM Actions
 ms.localizationpriority: medium
-ms.date: 08/23/2019
+ms.date: 06/29/2019
+ms.custom: contperf-fy21q4
 ---
 
-# Data Set Management (DSM) Overview
+# Performing storage driver data set management
 
-Starting with Windows 7, drivers can perform management actions on a device's data set. DSM actions are defined by Microsoft.
+Starting with Windows 7, drivers can perform management actions on a device's data set. The list of [data set management (DSM) actions](device-dsm-action-descriptions.md) that can be performed on a storage device are defined by Microsoft.
+
+## Using IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES
 
 A [DEVICE_DSM_ACTION](device-dsm-action-descriptions.md) constant specifies the action. This constant is passed in the **Action** member of the [DEVICE_DSM_INPUT](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure contained in the system buffer of an [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request. If the action requires additional parameters, a parameter block will immediately follow the DEVICE_DSM_INPUT structure, and **ParameterBlockOffset** will specify the offset from the start of the DEVICE_DSM_INPUT structure at which the parameter block starts. Data set ranges, if any, will immediately follow the parameter block, and **DataSetRangesOffset** will specify the offset from the start of the DEVICE_DSM_INPUT structure at which the range(s) starts. The system buffer structure is shown in the following diagram.
 
@@ -18,7 +21,9 @@ If the management action will return output, a pointer to a [DEVICE_DSM_OUTPUT](
 
 ![DSM IOCTL Output Buffer.](images/dsm_ioctl_outputbuffer.jpg)
 
-The process flow of a DSM is described below, where *Sender* is the action requestor and *Handler* processes the requested action. Note that there can be more than one *Handler* in the stack.
+## Process flow of a DSM action
+
+The process flow of a DSM action is described below, where *Sender* is the action requestor and *Handler* processes the requested action. Note that there can be more than one *Handler* in the stack.
 
 ![DSM Action Flow.](images/dsm_action_flow.jpg)
 
