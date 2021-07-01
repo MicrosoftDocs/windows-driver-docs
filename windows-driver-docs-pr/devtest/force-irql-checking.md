@@ -49,7 +49,7 @@ You can activate the Force IRQL Checking feature for one or more drivers by usin
 
     The feature will be active after the next boot.
 
-    On Windows 2000 and later versions of Windows, you can also activate and deactivate Force IRQL Checking without rebooting the computer by adding the **/volatile** parameter to the command. For example:
+    You can also activate and deactivate Force IRQL Checking without rebooting the computer by adding the **/volatile** parameter to the command. For example:
 
     ```
     verifier /volatile /flags 0x2 /adddriver MyDriver.sys

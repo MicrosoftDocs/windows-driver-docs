@@ -617,7 +617,7 @@
     items: 
     - name: "Driver Verifier"
       href: driver-verifier.md
-    - name: "Driver Verifier: What's new"
+    - name: "Driver Verifier"
 # Auto-expanded node
       items: 
       - name: "Driver Verifier: What's new"
@@ -652,12 +652,10 @@
         href: irp-logging.md
       - name: "Miscellaneous Checks"
         href: miscellaneous-checks.md
-      - name: "Disk Integrity Checking"
-        href: disk-integrity-checking.md
-      - name: "SCSI Verification"
-        href: scsi-verification.md
       - name: "Storport Verification"
         href: dv-storport-verification.md
+      - name: "SCSI Verification"
+        href: scsi-verification.md        
       - name: "Power Framework Delay Fuzzing"
         href: concurrency-stress-test.md
       - name: "DDI compliance checking"
@@ -692,9 +690,7 @@
         items: 
         - name: "The Verifier Utility"
           href: the-verifier-utility.md
-        - name: "Driver Verifier Manager (Windows 2000)"
-          href: driver-verifier-manager--windows-2000-.md
-        - name: "Driver Verifier Manager (Windows XP and later)"
+        - name: "Driver Verifier Manager"
           href: driver-verifier-manager--windows-xp-and-later-.md
       - name: "Controlling Driver Verifier"
 # Auto-expanded node

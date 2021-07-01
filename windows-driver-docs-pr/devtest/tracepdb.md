@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 Tracepdb (Tracepdb.exe) is a command-line tool that creates [trace message format (.tmf) files](trace-message-format-file.md) by extracting trace message formatting instructions from the full or private [PDB symbol file](pdb-symbol-files.md) for a [trace provider](trace-provider.md) that uses WPP software tracing macros.
 
-You can provide the private PDB symbol file for the trace provider or Tracepdb can find the provider's private PDB symbol file in a directory or by using an internal symbol server. Tracepdb runs on Windows 2000 and later versions of Windows.
+You can provide the private PDB symbol file for the trace provider or Tracepdb can find the provider's private PDB symbol file in a directory or by using an internal symbol server. 
 
 **Note**  [Tracefmt](tracefmt.md), a tool that formats and displays trace messages, can also create TMF files from PDB symbol files. For information, see Tracefmt.
 

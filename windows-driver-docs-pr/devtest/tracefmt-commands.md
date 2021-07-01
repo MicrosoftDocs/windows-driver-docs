@@ -180,7 +180,7 @@ When you use the **-rt** (real-time) parameter, Tracefmt displays a message conf
 
 **Formatting QPC time stamps**
 
-Tracefmt does not format the values of the system performance counter clock (**QueryPerformanceCounter**) correctly. If you are using this high resolution time, use Tracerpt, a tool included in Windows XP and later versions of Windows, to format the trace messages. For more information, see the description of the **-UsePerfCounter** parameter in [**Tracelog Command Syntax**](tracelog-command-syntax.md).
+Tracefmt does not format the values of the system performance counter clock (**QueryPerformanceCounter**) correctly. If you are using this high resolution time, use Tracerpt, a tool included in Windows, to format the trace messages. For more information, see the description of the **-UsePerfCounter** parameter in [**Tracelog Command Syntax**](tracelog-command-syntax.md).
 
 **Out-of-sequence trace messages**
 
