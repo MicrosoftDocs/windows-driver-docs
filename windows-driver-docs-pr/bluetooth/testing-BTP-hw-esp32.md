@@ -71,7 +71,7 @@ Using a USB Serial to UART board (like the one shown below) & jumper wires
         :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 powered on by Traduci.":::
     1. Run `arduino-cli board list` to identify the existing COM ports prior to connecting the USB Serial to UART board.
     1. Connect the USB Serial to UART board to the PC you installed the Arduino CLI to.
-    1. Run `arduino-cli board list` to identify the new COM port associated with the UART to USB Serial board.
+    1. Run `arduino-cli board list` to identify the new COM port associated with the UART to USB Serial board. It will be the COM port listed that was not present in the previously queried board list.
 
 1. Upload the firmware to the ESP32 by running the following from a cmd prompt, and replacing the X in COMX to the COM port number identified in the previous step:
 
