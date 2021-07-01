@@ -64,25 +64,24 @@ Using a USB Serial to UART board (like the one shown below) & jumper wires
     1. Connect the GND of the Serial board to the GND of the ESP32
     1. Connect the RX of the Serial board to the TX of the ESP32
     1. Connect the TX of the Serial board to the RX of the ESP32
-    1. Connect the USB Serial to UART board to the PC you installed the Arduino CLI to.
     1. Connect the ESP32 device to Port JD on the Traduci for power delivery.
-    1. Power on the ESP32 via the Traduci using TraduciCMD.exe: `TraduciCmd.exe -power 4 3`
-        :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 powered on by Traduci.":::
-    1. Run `arduino-cli board list` to identify the COM port associated with the UART to USB Serial board.
     1. Move SW1 to the ON position to switch the ESP32 into boot mode.
         :::image type="content" source="images/ESP32Boot.png" alt-text="ESP32 enable boot mode.":::
+    1. Power on the ESP32 via the Traduci using TraduciCMD.exe: `TraduciCmd.exe -power 4 3`
+        :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 powered on by Traduci.":::
+    1. Run `arduino-cli board list` to identify the existing COM ports prior to connecting the USB Serial to UART board.
+    1. Connect the USB Serial to UART board to the PC you installed the Arduino CLI to.
+    1. Run `arduino-cli board list` to identify the new COM port associated with the UART to USB Serial board. It will be the COM port listed that was not present in the previously queried board list.
 
-1. Upload the firmware to the Bluefruit Feather by running the following from a cmd prompt, and replacing the X in COMX to the COM port number identified in the previous step:
+1. Upload the firmware to the ESP32 by running the following from a cmd prompt, and replacing the X in COMX to the COM port number identified in the previous step:
 
     ```console
     arduino-cli upload -p COMX --fqbn esp32:esp32:esp32 --input-file C:\BTP\<version>\DeviceFirmware\WiFi-ESP32.ino.bin
     ```
 
-    1. Wait for "Connecting ….____...." to show  on the terminal.
-    1. Press BTN1 to reset the board.
-        :::image type="content" source="images/ESP32Reset.png" alt-text="ESP32 reset button.":::
-    1. Wait for "ESP32 firmware is up to date" to show on the terminal and indicate the process is done.
-    1. Move the SW1 to the OFF position to exit boot mode and press BTN1 again to restart the board and the program.
+    1. Wait for "Hard resetting via RTS pin..." to show on the terminal and indicate the process is done.
+    1. Power off the ESP32 via the Traduci using TraduciCMD.exe: `TraduciCmd.exe -power 4 0`
+    1. Move the SW1 to the OFF position to exit boot mode.
 
 ## Updating ESP32 Firmware via Traduci.cmd
 
@@ -91,6 +90,8 @@ If the ESP32 already has BTP compatible firmware installed, future updates can b
 ```console
 TraduciCmd.exe -updateesp32firmware
 ```
+
+Wait for "ESP32 firmware is up to date" to show on the terminal and indicate the process is done.
 
 This flashing process does not require the use of a UART to USB Serial board. This will not work if the ESP32 has not previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md#updating-esp32-firmware-manually)
 
