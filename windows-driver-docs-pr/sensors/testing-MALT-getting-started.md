@@ -51,6 +51,8 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
     ```console
     arduino-cli compile --fqbn arduino:avr:mega --port COMX --upload --library C:\MALT\Arduino-SerialCommand --library C:\MALT\SoftI2CMaster C:\MALT\busiotools\sensors\tools\MALT\Code\malt
     ```
+    The expected output is below:
+    ![A screenshot of the expected output from the compilation and upload process](images/expectedoutput.png)
 
 ## Calibrating the MALT Color Sensors
 
