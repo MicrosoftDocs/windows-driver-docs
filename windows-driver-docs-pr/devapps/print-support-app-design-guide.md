@@ -912,10 +912,10 @@ When designing a print support app, it is important to include these aspects in 
 
 [Print support app association](/windows-hardware/drivers/devapps/print-support-app-association)
 
-[Windows.Devices.Printers](/uwp/api/windows.devices.printers)
+[Windows.Devices.Printers](/uwp/api/windows.devices.printers?view=winrt-insider&preserve-view=true)
 
-[Windows.Graphics.Printing.PrintSupport](/uwp/api/windows.graphics.printing.printsupport)
+[Windows.Graphics.Printing.PrintSupport](/uwp/api/windows.graphics.printing.printsupport?view=winrt-insider&preserve-view=true)
 
-[Windows.Graphics.Printing.Workflow](/uwp/api/windows.graphics.printing.workflow)
+[Windows.Graphics.Printing.Workflow](/uwp/api/windows.graphics.printing.workflow?view=winrt-insider&preserve-view=true)
 
 [*Internet Printing Protocol (IPP) specification*](https://tools.ietf.org/html/rfc8011)

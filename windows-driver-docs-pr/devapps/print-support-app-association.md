@@ -175,10 +175,10 @@ The Hardware Id is the printer-device-id IPP attribute from the printer.
 
 [Print support app design guide](/windows-hardware/drivers/devapps/print-support-app-design-guide)
 
-[Windows.Devices.Printers](/uwp/api/windows.devices.printers)
+[Windows.Devices.Printers](/uwp/api/windows.devices.printers?view=winrt-insider&preserve-view=true)
 
-[Windows.Graphics.Printing.PrintSupport](/uwp/api/windows.graphics.printing.printsupport)
+[Windows.Graphics.Printing.PrintSupport](/uwp/api/windows.graphics.printing.printsupport?view=winrt-insider&preserve-view=true)
 
-[Windows.Graphics.Printing.Workflow](/uwp/api/windows.graphics.printing.workflow)
+[Windows.Graphics.Printing.Workflow](/uwp/api/windows.graphics.printing.workflow?view=winrt-insider&preserve-view=true)
 
 [*Internet Printing Protocol (IPP) specification*](https://tools.ietf.org/html/rfc8011)
