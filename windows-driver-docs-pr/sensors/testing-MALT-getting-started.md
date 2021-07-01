@@ -30,6 +30,7 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
         ```console
         arduino-cli config init
         arduino-cli core update-index
+        arduino-cli core install arduino:avr
         ```
 
 2. Add necessary libraries from the Arduino library manager by running the following from a command prompt:
