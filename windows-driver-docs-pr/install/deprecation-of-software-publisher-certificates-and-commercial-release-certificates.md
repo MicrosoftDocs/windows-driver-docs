@@ -117,7 +117,7 @@ Drivers can still be signed with a 3rd party issued code signing certificate. Ho
 
 ### How do production signing options differ by Windows version?
 
-> [!NOTE]
+> [!WARNING]
 > Cross-signing is no longer accepted for driver signing. Using cross certificates to sign kernel-mode drivers is a violation of the Microsoft Trusted Root Program (TRP) policy.
 > Certificates in violation of Microsoft TRP policies will be revoked by the CA.
 
