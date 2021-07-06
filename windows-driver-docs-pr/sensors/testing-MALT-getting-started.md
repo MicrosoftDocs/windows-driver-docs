@@ -36,7 +36,9 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
 1. Acquire and setup the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download) and save it to your computer.
     2. If not done already, add the arduino-cli to your [PATH variable](https://docs.microsoft.com/windows-server/administration/windows-commands/path).
-    3. Run the following from a command prompt:
+        > [!Note]
+        > Please ensure you close your command prompt and open a new command prompt after adding arduino-cli to your PATH variable!
+    3. Run the following from an elevated command prompt:
 
         ```console
         arduino-cli config init
@@ -44,20 +46,20 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
         arduino-cli core install arduino:avr
         ```
 
-2. Add necessary libraries from the Arduino library manager by running the following from a command prompt:
+2. Add necessary libraries from the Arduino library manager by running the following from an elevated command prompt:
 
     ```console
     arduino-cli lib install MatrixMath
     arduino-cli lib install AsyncDelay
     ```
 
-3. Identify the COM port assigned to the Arduino by running the following from a command prompt:
+3. Identify the COM port assigned to the Arduino by running the following from an elevated command prompt:
 
     ```console
     arduino-cli board list
     ```
 
-4. Upload the firmware to the Arduino by running the following from a command prompt, and replacing the X in COMX to the COM port number identified in the previous step:
+4. Upload the firmware to the Arduino by running the following from an elevated command prompt, and replacing the X in COMX to the COM port number identified in the previous step:
 
     ```console
     arduino-cli compile --fqbn arduino:avr:mega --port COMX --upload --library C:\MALT\Arduino-SerialCommand --library C:\MALT\SoftI2CMaster C:\MALT\busiotools\sensors\tools\MALT\Code\malt
