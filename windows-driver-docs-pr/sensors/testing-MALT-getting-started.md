@@ -28,6 +28,7 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
     3. Run the following from a command prompt:
 
         ```console
+
         arduino-cli config init
         arduino-cli core update-index
         arduino-cli core install arduino:avr
@@ -36,6 +37,7 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
 2. Add necessary libraries from the Arduino library manager by running the following from a command prompt:
 
     ```console
+
     arduino-cli lib install MatrixMath
     arduino-cli lib install AsyncDelay
     ```
@@ -43,12 +45,14 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
 3. Identify the COM port assigned to the Arduino by running the following from a command prompt:
 
     ```console
+
     arduino-cli board list
     ```
 
 4. Upload the firmware to the Arduino by running the following from a command prompt, and replacing the X in COMX to the COM port number identified in the previous step:
 
     ```console
+    
     arduino-cli compile --fqbn arduino:avr:mega --port COMX --upload --library C:\MALT\Arduino-SerialCommand --library C:\MALT\SoftI2CMaster C:\MALT\busiotools\sensors\tools\MALT\Code\malt
     ```
     The expected output is below:
