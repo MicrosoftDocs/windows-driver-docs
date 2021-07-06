@@ -11,11 +11,11 @@ This topic defines how to upload firmware to the MALT as well as how to calibrat
 
 ## Acquiring the Necessary Files
 
-1. Create a folder named ```MALT``` on your computer's C drive. The filepath should be ```C:\MALT```. We will place all of the necessary files and cloned repositories here.
+1. Create a folder named `MALT` on your computer's C drive. The filepath should be `C:\MALT`. We will place all of the necessary files and cloned repositories here.
 
-1. Clone the [busiotools repository](https://github.com/microsoft/busiotools) to your ```MALT``` folder. The filepath should be ```C:\MALT\busiotools```.
+1. Clone the [busiotools repository](https://github.com/microsoft/busiotools) to your `MALT` folder. The filepath should be `C:\MALT\busiotools`.
 
-2. Clone the [SerialCommand](https://github.com/kroimon/Arduino-SerialCommand) and [SoftI2CMaster](https://github.com/sastorer/SoftI2CMaster) repositories to your ```MALT``` folder. The filepaths should be ```C:\MALT\Arduino-SerialCommand``` and ```C:\MALT\SoftI2CMaster``` respectively.
+2. Clone the [SerialCommand](https://github.com/kroimon/Arduino-SerialCommand) and [SoftI2CMaster](https://github.com/sastorer/SoftI2CMaster) repositories to your `MALT` folder. The filepaths should be `C:\MALT\Arduino-SerialCommand` and `C:\MALT\SoftI2CMaster` respectively.
 
 
 ## Updating the MALT Firmware
@@ -24,7 +24,7 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
 
 1. Acquire and setup the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
-    2. If not done already, add the arduino-cli to your [PATH variable](/windows-server/administration/windows-commands/path).
+    2. If not done already, add the arduino-cli to your [PATH variable](https://docs.microsoft.com/windows-server/administration/windows-commands/path).
     3. Run the following from a command prompt:
 
         ```console
