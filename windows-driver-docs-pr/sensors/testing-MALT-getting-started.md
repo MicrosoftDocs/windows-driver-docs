@@ -9,13 +9,24 @@ ms.localizationpriority: medium
 
 This topic defines how to upload firmware to the MALT as well as how to calibrate the sensors using Sensor Explorer. We recommended that the PC controlling the microcontroller is also the system or device under test (SUT/DUT).  
 
+## Setting up the Hardware
+![Hardware Setup Picture for MALT](images/MALTSetup.png)
+
+1. Connect an **Arduino Mega** to your device using a [USB 2.0 cable Type A/B](https://store.arduino.cc/usa/usb-2-0-cable-type-a-b).
+
+2. Connect the MALT Controller Board to the back pin of the Arduino Mega using the rainboe ribbon cable.
+
+3. Connect the MALT Controller Board to the MALT Sensor Board using a CAT5(x) or CAT6(x) cable. (Ex. CAT5, CAT5e, CAT6, etc.)
+
+4. Press the reset button on the Arduino Mega.
+
 ## Acquiring the Necessary Files
 
 1. Create a folder named `MALT` on your computer's C drive. The filepath should be `C:\MALT`. We will place all of the necessary files and cloned repositories here.
 
-1. Clone the [busiotools repository](https://github.com/microsoft/busiotools) to your `MALT` folder. The filepath should be `C:\MALT\busiotools`.
+2. Clone the [busiotools repository](https://github.com/microsoft/busiotools) to your `MALT` folder. The filepath should be `C:\MALT\busiotools`.
 
-2. Clone the [SerialCommand](https://github.com/kroimon/Arduino-SerialCommand) and [SoftI2CMaster](https://github.com/sastorer/SoftI2CMaster) repositories to your `MALT` folder. The filepaths should be `C:\MALT\Arduino-SerialCommand` and `C:\MALT\SoftI2CMaster` respectively.
+3. Clone the [SerialCommand](https://github.com/kroimon/Arduino-SerialCommand) and [SoftI2CMaster](https://github.com/sastorer/SoftI2CMaster) repositories to your `MALT` folder. The filepaths should be `C:\MALT\Arduino-SerialCommand` and `C:\MALT\SoftI2CMaster` respectively.
 
 
 ## Updating the MALT Firmware
@@ -23,7 +34,7 @@ This topic defines how to upload firmware to the MALT as well as how to calibrat
 The MALT is run by an Arduino which requres firmware to set up and interact with the sensors on the MALT board.
 
 1. Acquire and setup the Arduino command line interface.
-    1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
+    1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download) and save it to your computer.
     2. If not done already, add the arduino-cli to your [PATH variable](https://docs.microsoft.com/windows-server/administration/windows-commands/path).
     3. Run the following from a command prompt:
 
