@@ -14,7 +14,7 @@ This topic defines how to upload firmware to the MALT as well as how to calibrat
 
 1. Connect an **Arduino Mega** to your device using a [USB 2.0 cable Type A/B](https://store.arduino.cc/usa/usb-2-0-cable-type-a-b).
 
-2. Connect the MALT Controller Board to the back pin of the Arduino Mega using the rainboe ribbon cable.
+2. Connect the MALT Controller Board to the back pins of the Arduino Mega using the rainboe ribbon cable.
 
 3. Connect the MALT Controller Board to the MALT Sensor Board using a CAT5(x) or CAT6(x) cable. (Ex. CAT5, CAT5e, CAT6, etc.)
 
@@ -70,7 +70,7 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
 
 ## Calibrating the MALT Color Sensors
 
-The MALT's color sensors do not come factory calibrated for real world colors. Below is the process for calibration to ensure you get an accurate reading. **Calibration for the MALT must be done for the ambient color sensor AND the screen color sensor.** This process only needs to be done once per sensor board ad the memory chips on the PCB will save the setting. To refresh the setting press the reset button on the arduino.
+The MALT's color sensors do not come factory calibrated for real world colors. Below is the process for calibration to ensure you get an accurate reading. **Calibration for the MALT must be done for the ambient color sensor AND the screen color sensor.** This process only needs to be done once per sensor board and the memory chips on the PCB will save the setting. To refresh the setting press the reset button on the arduino.
 
 1. Plug the MALT into a USB port on the SUT.
 
