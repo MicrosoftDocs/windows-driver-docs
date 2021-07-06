@@ -14,7 +14,7 @@ This topic defines how to upload firmware to the MALT as well as how to calibrat
 
 1. Connect an **Arduino Mega** to your device using a [USB 2.0 cable Type A/B](https://store.arduino.cc/usa/usb-2-0-cable-type-a-b).
 
-2. Connect the MALT Controller Board to the back pins of the Arduino Mega using the rainboe ribbon cable.
+2. Connect the MALT Controller Board to the back pins of the Arduino Mega using the rainbow ribbon cable.
 
 3. Connect the MALT Controller Board to the MALT Sensor Board using a CAT5(x) or CAT6(x) cable. (Ex. CAT5, CAT5e, CAT6, etc.)
 
