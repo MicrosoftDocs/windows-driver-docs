@@ -119,3 +119,19 @@ Once you have correctly calibrated **BOTH the screen color sensor AND the ambien
 ![A screenshot of Sensor Explorer showing how to navigate to the home tab](images/calibrationtab.png)
 
 On the Home tab, you should be able to click any button under the "Sensor Data" heading and get non-negative numbers back.
+
+## Troubleshooting
+
+1. When calibrating, your raw values are the same whether you press Read Screen RED, Read Screen GREEN, or Read Screen BLUE (similarly true with Read Ambient)
+    - Ensure the MALT Sensor Board is connected vis ethernet cable.
+    - Next, check that the cable you're using can support Power Over Ethernet. All cables CAT5 or better support this.
+    - Finally, try pressing the reset button on the Arduino Mega if you are sure that your cable suppports POE.
+2. When calibrating, your calibration matrix has NaN in one of the squares after pressing the "Calculate" button
+    - Ensure that your raw values are giving different numbers for RED, GREEN, and BLUE. 
+    - Ensure that you are holding the MALT sensor over red when pressing RED, green when pressing GREEN, and blue when pressing BLUE.
+    - If your raw values are still not differing, check #1 above.
+3. Once calibration is done (i.e. you have clicked calibrate top or calibrate bottom) your sensor reads unreasonable values on the home screen
+    - Ensure you actually did click the "Calibrate Top" or "Calibrate Bottom" buttons.
+    - If you are sure you appropriately calibrated the top AND the bottom sensors given the above instructions, email [sensortools@microsoft.com](mailtto:sensortools@microsoft.com)
+
+If none of this troubleshooting addresses your issues, please email [sensortools@microsoft.com](mailtto:sensortools@microsoft.com)

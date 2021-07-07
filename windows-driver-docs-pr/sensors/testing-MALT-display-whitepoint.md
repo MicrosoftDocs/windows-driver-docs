@@ -53,7 +53,7 @@ Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-amb
 
 1. Open SensorExplorer and click **MALT** on the left-hand side menu bar. Click the correct Vid/Pid in the "Select an Arduino Device pane" and then click "Connect to Device".
 
-    ![SensorExplorer MALT page.](images/ConnectToDevice.png)
+    ![SensorExplorer MALT page.](images/ConnectDevice.png)
 
 2. Click on the "Test Display Whitpoint" on the home tab of the MALT screen in SensorExplorer.
 
@@ -80,6 +80,7 @@ Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-amb
 | Ambient Whitepoint X | Ambient Whitepoint Y  | Mapped Whitepoint X | Mapped Whitepoint Y | Screen Whitepoint X | Screen Whitepoint Y |
 |-----|----|----|----|----|----|
 | The x chromaticity of the whitepoint value read by the MALT's sensor for the environmental lighting condition | The y chromaticity of the whitepoint value read by the MALT's sensor for the environmental lighting condition | The x chromaticity or the whitepoint value set by Windows, this value may be clamped to a certain range | The y chromaticity or the whitepoint value set by Windows, this value may be clamped to a certain range |  The x chromaticity of the whitepoint value read by the MALT's sensor for the screen whitepoint, ideally this should be the same as the mapped whitepoint | The y chromaticity of the whitepoint value read by the MALT's sensor for the screen whitepoint, ideally this should be the same as the mapped whitepoint |
+
 4. The number of rows in your document will correspond to the number of times you told the test you would be changing the lighting conditions.
 
 ### Visualize the results
