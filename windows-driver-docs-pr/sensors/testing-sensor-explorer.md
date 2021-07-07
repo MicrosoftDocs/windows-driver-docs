@@ -9,15 +9,25 @@ ms.localizationpriority: medium
 
 SensorExplorer is an app available on the [Microsoft Store](https://www.microsoft.com/p/sensorexplorer/9pgl3xpq1tpx?activetab=pivot:overviewtab) and the app package can be accessed through [GitHub](https://github.com/microsoft/busiotools/tree/master/sensors/Tools/SensorExplorer). SensorExplorer offers tests to quickly verify the installation of supported sensors such as orientation sensors (accelerometer, simple orientation sensors, etc.) and provide detailed tables and plots that enable monitoring different sensors. SensorExplorer also provides logging that can be reviewed for debugging.
 
-There are three modes available via the menu bar on the left-hand side in SensorExplorer:
+There are five modes available via the menu bar on the left-hand side in SensorExplorer:
 
 ![SensorExplorer Overview.](images/sensor-explorer-overview.png)
 
 - **Test:** Used for manual testing of supported sensors. The orientation test verifies orientation sensors are installed in the correct position and the sensor data is as expected. Other tests such as frequency, offset and jitter, are also available. The sensor data is read using the [UWP Sensors API](/uwp/api/Windows.Devices.Sensors).
 
-- **View:** Used for viewing sensor data and properties. In this mode the app displays a data visualization from a variety of sensors such as accelerometer, compass, gyrometer, inclinometer, light sensor, and orientation sensor and shows detailed sensor information in tabular format. This provides monitoring of any abnormal behaviors of the sensors, and can also be used to set the report interval of sensors.
+- **View:** Used for viewing sensor data and properties. In this mode the app displays a data visualization from a variety of sensors such as accelerometer, compass, gyrometer, inclinometer, light sensor, and orientation sensor and shows detailed sensor information in tabular format. This provides monitoring of any abnormal behaviors of the sensors, and can also be used to set the report interval of sensors. 
 
 - **MALT:** Used for connecting to and controlling a [MALT (Microsoft Ambient Light Tool)](./testing-malt-building-a-light-testing-tool.md), a simple low-cost light testing apparatus. The tool combines a microcontroller, light sensors, and a controllable light panel to calibrate light sensors and visually measure a panel's light curve.
+
+- **Display Enhancement Override:** Used for overriding display settings. In this mode, sliders and scenario buttons are exposed to set display brightness in a variety of ways. Ensure you select the Override Requested slider to overried the display given your settings.
+
+- **Distance:** Used for manual and automatic testing of supported human presence sensors. The manual test uses predefined distances and the automatic test uses the sensor in addition to a front-facing camera with facial detection and bounding boxes to determine the accuracy of the human presence sensor.
+
+## Utilities
+
+Inside of the view pane, if you select a Light Sensor, a whitepoint calculation utility will be exposed. By clicking on "Manually Calculate Whitepoint", this utility allows for running X and Y chromaticities through Microsoft's Adaptive Color algorithm. The input should be an ambient light and the output will be Windows' mapped value.
+
+![Manually Calculate Whitepoint Pane](images/ManuallyCalculateWhitepoint.png)
 
 ## How to test your sensors with SensorExplorer
 
@@ -70,6 +80,10 @@ Calculates the average error in sensor readings compared with the expected value
 ### Jitter Test
 
 Calculates the maximum difference in sensor readings during a period of time, compared with the initial reading. A numeric value will be displayed at the end of the test.
+
+### Resolution Noise Density Test
+
+This test checks actual sensor resolution and noise of the physical accelerometer sensor in the device. A numeric value will be displayed at the end of the test.
 
 ## How to monitor your sensors
 
