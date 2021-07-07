@@ -140,6 +140,8 @@
       href: testing-MALT-getting-started.md
     - name: "Testing System Brightness and Color"
       href: testing-MALT-system-brightness-and-color.md
+    - name: "Testing Display Whitepoint"
+      href: testing-MALT-display-whitepoint.md
     - name: "Testing Auto Brightness"
       href: testing-MALT-auto-brightness.md
     - name: "Testing Manual Brightness"
