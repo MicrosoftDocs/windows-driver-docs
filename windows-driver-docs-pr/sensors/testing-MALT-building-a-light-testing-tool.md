@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Building a light and color testing tool (MALT)
 
-This topic provides instructions and requirements on how to build and use a tool for testing and calibrating screen brightness and color. The MALT (**M**icrosoft **A**mbient **L**ight **T**ool) is provided for reference. 
+This topic provides instructions and requirements on how to build and use a tool for testing and calibrating screen brightness and color. The MALT (**M**icrosoft **A**mbient **L**ight **T**ool) is provided for reference.
 
 Please use these instructions for leveraging ideas and concepts into your testing solution. The microcontroller API is published for you to further leverage tests published in the HLK and elsewhere. Your feedback will help improve this guide.
 

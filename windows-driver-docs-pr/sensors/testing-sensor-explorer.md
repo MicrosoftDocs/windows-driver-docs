@@ -1,7 +1,7 @@
 ---
 title: Testing with SensorExplorer
 description: How to use SensorExplorer for sensor testing and logging
-ms.date: 02/01/2021
+ms.date: 07/08/2021
 ms.localizationpriority: medium
 ---
 
