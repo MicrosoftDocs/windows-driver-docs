@@ -110,7 +110,7 @@ An Integer containing one of the following values:
 <tbody>
 <tr class="odd">
 <td>RegisterAccessType</td>
-<td>32-bit (ULONG)</td>
+<td>4-byte (32-bit) unsigned long</td>
 <td><p>Specifies the type of the USB controller register access:</p>
 <ul>
 <li>0x00 – Undefined register access</li>
