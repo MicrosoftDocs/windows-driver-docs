@@ -126,7 +126,7 @@
       href: defining-custom-values-for-constants-v2.md
     - name: "Fusion Sensor Implementation Details"
       href: fusion-sensor-implementation-details.md
-- name: "Testing Windows sensor hardware, drivers, and apps"
+- name: "Test Windows sensor hardware, drivers, and apps"
   items:
   - name: "Sensor Testing Sources"
     href: testing-sensor-landing.md
