@@ -251,7 +251,6 @@ Force pending I/O requests: Disabled
 Low resources simulation: Enabled
 IRP Logging: Disabled
 Miscellaneous checks: Disabled
-Disk integrity checking: Disabled
 
 Low Resources Simulation options:
 

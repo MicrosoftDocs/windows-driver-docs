@@ -10,17 +10,25 @@
   items: 
   - name: "Network camera design guide"
     href: network-camera-design-guide.md
-  - name: "KSPROPERTYSETID_NetworkCameraControl"
-    href: kspropertysetid-networkcameracontrol.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTP"
-    href: ksproperty-networkcameracontrol-ntp.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
-    href: ksproperty-networkcameracontrol-uri.md
+- name: "Digital Window overview"
+# Auto-expanded node
+  items: 
+  - name: "Digital Window overview"
+    href: digital-window-overview.md
+- name: "Privacy shutter notification"
+# Auto-expanded node
+  items: 
+  - name: "Privacy shutter notification"
+    href: privacy-shutter-notification.md
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 
   - name: "USB Video Class (UVC) camera implementation guide"
     href: uvc-camera-implementation-guide.md
+  - name: "Create device property keys from the MS OS descriptor in UVC camera firmware"
+    href: create-camera-device-property-keys-from-ms-os-descriptor.md
+  - name: "Microsoft extensions to USB Video Class 1.5 specification"
+    href: uvc-extensions-1-5.md
   - name: "Camera Intrinsics"
     href: camera-intrinsics.md
   - name: "Camera Capture Metadata"
@@ -41,8 +49,6 @@
     href: camera-driver-inf-file-class-setting.md
   - name: "Driver support for Camera UVC Control Cache"
     href: camera-device-uvc-control-cache.md
-  - name: "Microsoft extensions to USB Video Class 1.5 specification"
-    href: uvc-extensions-1-5.md
 - name: "Windows Hello Camera driver bring up guide"
   href: windows-hello-camera-driver-bring-up-guide.md
 - name: "Extended camera controls"
@@ -1582,6 +1588,14 @@
       href: ksproperty-cameracontrol-extended-videotemporaldenoising.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM"
       href: ksproperty-cameracontrol-extended-zoom.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION"
+      href: ksproperty-cameracontrol-extended-backgroundsegmentation.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION"
+      href: ksproperty-cameracontrol-extended-eyegazecorrection.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW"
+      href: ksproperty-cameracontrol-extended-digitalwindow.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS"
+      href: ksproperty-cameracontrol-extended-digitalwindow-configcaps.md
     - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY"
       href: ksproperty-cameracontrol-perframesetting-capability.md
     - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR"

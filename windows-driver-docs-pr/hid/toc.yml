@@ -118,6 +118,18 @@
       href: troubleshooting-common-errors.md
     - name: "Event tracing"
       href: event-tracing.md
+  - name: "HID over SPI"
+    items: 
+    - name: "Introduction to HID over SPI"
+      href: hid-over-spi.md
+    - name: "Architecture and overview"
+      href: architecture-and-overview-for-spi.md
+    - name: "Plug and Play support"
+      href: plug-and-play-for-spi.md
+    - name: "Power management"
+      href: power-management-over-spi.md
+    - name: "Error handling"
+      href: error-handling-for-spi.md
 - name: "Non-HID legacy devices and drivers"
   items: 
   - name: "Non-HID legacy devices"

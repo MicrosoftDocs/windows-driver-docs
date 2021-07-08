@@ -45,7 +45,7 @@ For information about device and driver types that UMDF and KMDF support, see [C
 
 [UMDF Version History](umdf-version-history.md)
 
-[User-Mode Driver Framework Frequently Asked Questions](user-mode-driver-framework-frequently-asked-questions.md)
+[User-Mode Driver Framework Frequently Asked Questions](user-mode-driver-framework-frequently-asked-questions.yml)
 
  
 

@@ -26,8 +26,6 @@ The DMA Verification option of Driver Verifier attempts to catch common DMA erro
 
 This Driver Verifier option is also called *HAL Verification*. Some error messages produced by Driver Verifier may use this term.
 
-This Driver Verifier option is only available in Windows XP and later.
-
 ### <span id="different_types_of_dma"></span><span id="DIFFERENT_TYPES_OF_DMA"></span>Different Types of DMA
 
 DMA is a mechanism through which a hardware device can transfer data to or from memory without using the processor. The processor is required to set up the transfer, and the device will signal the processor when it has completed the transfer. The advantage of this system is that the processor can perform other tasks while the DMA transfer is being performed.

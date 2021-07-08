@@ -1,11 +1,11 @@
 ---
-title: Using the Enterprise WDK 10
+title: Using the Enterprise WDK
 description: Describes how to set up a command-line based environment for organization use of the WDK.
 ms.date: 08/25/2017
 ms.localizationpriority: medium
 ---
 
-# Using the Enterprise WDK 10
+# Using the Enterprise WDK
 
 The Enterprise Windows Driver Kit (Enterprise WDK) is a command-line build environment that does not require any installation prior to use.  Once you have downloaded the EWDK, you can manage it with version control software or you can zip the files and copy as needed.  A .zip file created with the Enterprise WDK contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio-based driver projects.
 

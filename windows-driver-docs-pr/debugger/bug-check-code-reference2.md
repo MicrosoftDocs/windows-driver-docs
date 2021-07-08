@@ -163,7 +163,7 @@ The following table provides links to bug check codes.
 | 0x00000068 | [**FILE\_INITIALIZATION\_FAILED**](bug-check-0x68--file-initialization-failed.md)                                                                 |
 | 0x00000069 | [**IO1\_INITIALIZATION\_FAILED**](bug-check-0x69--io1-initialization-failed.md)                                                                   |
 | 0x0000006A | [**LPC\_INITIALIZATION\_FAILED**](bug-check-0x6a--lpc-initialization-failed.md)                                                                   |
-| 0x0000006B | [**PROCESS1\_INITIALIZATION\_FAILE**](bug-check-0x6b--process1-initialization-failed.md)D                                                         |
+| 0x0000006B | [**PROCESS1\_INITIALIZATION\_FAILED**](bug-check-0x6b--process1-initialization-failed.md)                                                         |
 | 0x0000006C | [**REFMON\_INITIALIZATION\_FAILED**](bug-check-0x6c--refmon-initialization-failed.md)                                                             |
 | 0x0000006D | [**SESSION1\_INITIALIZATION\_FAILED**](bug-check-0x6d--session1-initialization-failed.md)                                                         |
 | 0x0000006E | [**SESSION2\_INITIALIZATION\_FAILED**](bug-check-0x6e--session2-initialization-failed.md)                                                         |
@@ -227,7 +227,7 @@ The following table provides links to bug check codes.
 | 0x000000C2 | [**BAD\_POOL\_CALLER**](bug-check-0xc2--bad-pool-caller.md)                                                                                       |
 | 0x000000C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](bug-check-0xc4--driver-verifier-detected-violation.md)                                                |
 | 0x000000C5 | [**DRIVER\_CORRUPTED\_EXPOOL**](bug-check-0xc5--driver-corrupted-expool.md)                                                                       |
-| 0x000000C6 | [**DRIVER\_CAUGHT\_MODIFYING\_FREED\_POO**](bug-check-0xc6--driver-caught-modifying-freed-pool.md)L                                               |
+| 0x000000C6 | [**DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL**](bug-check-0xc6--driver-caught-modifying-freed-pool.md)                                               |
 | 0x000000C7 | [**TIMER\_OR\_DPC\_INVALID**](bug-check-0xc7--timer-or-dpc-invalid.md)                                                                            |
 | 0x000000C8 | [**IRQL\_UNEXPECTED\_VALUE**](bug-check-0xc8--irql-unexpected-value.md)                                                                           |
 | 0x000000C9 | [**DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION**](bug-check-0xc9--driver-verifier-iomanager-violation.md)                                              |
