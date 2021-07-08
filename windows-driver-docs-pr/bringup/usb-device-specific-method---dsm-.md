@@ -115,7 +115,7 @@ An Integer containing one of the following values:
 <ul>
 <li>0x00 – Undefined register access</li>
 <li>0x01 – Must use 32bit register access</li>
-<li>0x02 – 0xff reserved</li>
+<li>0x02 – 0xffffffff reserved</li>
 </ul></td>
 </tr>
 </tbody>
