@@ -1,5 +1,4 @@
 ---
-
 title: Building a light and color testing tool (MALT)
 author: windows-driver-content
 description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light and color testing solution.
@@ -92,9 +91,9 @@ See [Testing system brightness and color](testing-MALT-system-brightness-and-col
 
 #### Test scenarios to cover
 
-- [Testing auto brightness](testing-MALT-auto-brightness.md)
-- [Testing manual brightness](testing-MALT-manual-brightness.md)
-- [Testing system scenarios](testing-MALT-system-scenarios.md)
+- [Testing Auto Brightness](testing-MALT-auto-brightness.md)
+- [Testing Manual Brightness](testing-MALT-manual-brightness.md)
+- [Testing System Scenarios](testing-MALT-system-scenarios.md)
 
 ### Custom tests
 
