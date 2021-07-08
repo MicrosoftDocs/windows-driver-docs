@@ -18,7 +18,12 @@ This topic defines how to upload firmware to the MALT as well as how to calibrat
 
 3. Connect the MALT Controller Board to the MALT Sensor Board using a CAT5(x) or CAT6(x) cable. (Ex. CAT5, CAT5e, CAT6, etc.)
 
+    > [!Note]
+    >  The ethernet cable used to connect the MALT Controller Board with the MALT Sensor Board must have all 8 wires and those wires must not cross.
+
 4. Press the reset button on the Arduino Mega.
+
+![Reset Button.](images/resetbutton.png)
 
 ## Acquiring the Necessary Files
 
@@ -123,7 +128,7 @@ On the Home tab, you should be able to click any button under the "Sensor Data" 
 ## Troubleshooting
 
 1. When calibrating, your raw values are the same whether you press Read Screen RED, Read Screen GREEN, or Read Screen BLUE (similarly true with Read Ambient)
-    - Ensure the MALT Sensor Board is connected vis ethernet cable.
+    - Ensure the MALT Sensor Board is connected via ethernet cable.
     - Next, check that the cable you're using can support Power Over Ethernet. All cables CAT5 or better support this.
     - Finally, try pressing the reset button on the Arduino Mega if you are sure that your cable suppports POE.
 2. When calibrating, your calibration matrix has NaN in one of the squares after pressing the "Calculate" button

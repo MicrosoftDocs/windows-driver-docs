@@ -61,13 +61,13 @@ Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-amb
 
 3. This test will output Ambient Whitepoint, Mapped Whitepoint, and Screen Whitepoint values to a csv file. Choose where to save this csv file.
 
-4. Specify the wait time between ambient light changes. This is meant to give you time to change the lighting conditions for the SUT and MALT.
+4. Specify the wait time in seconds between ambient light changes. This is meant to give you time to change the lighting conditions for the SUT and MALT.
 
 5. Specify the number of times you will change the lighting conditions.
 
 6. Place the MALT on the screen of the SUT when and where directed.
 
-    ![Image of the MALT box.](images/MALTBox.png)
+    ![Image of the MALT box.](images/MALTBox.png){:width="300px"}.
 
 7. After the test completes, the output will be saved automatically to `Whitepoint.csv`.
 
@@ -77,8 +77,8 @@ Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-amb
 2. Click **File** > **Export** > **Change file type**. Change the file type to .xlsx and click Save As. This will allow you to create and save visualizations of your data.
 3. In your document, you will see six columns:
 
-| Ambient Whitepoint X | Ambient Whitepoint Y  | Mapped Whitepoint X | Mapped Whitepoint Y | Screen Whitepoint X | Screen Whitepoint Y |
-|-----|----|----|----|----|----|
+| Ambient Whitepoint X | Ambient Whitepoint Y | Mapped Whitepoint X | Mapped Whitepoint Y | Screen Whitepoint X | Screen Whitepoint Y |
+|----|----|----|----|----|----|
 | The x chromaticity of the whitepoint value read by the MALT's sensor for the environmental lighting condition | The y chromaticity of the whitepoint value read by the MALT's sensor for the environmental lighting condition | The x chromaticity or the whitepoint value set by Windows, this value may be clamped to a certain range | The y chromaticity or the whitepoint value set by Windows, this value may be clamped to a certain range |  The x chromaticity of the whitepoint value read by the MALT's sensor for the screen whitepoint, ideally this should be the same as the mapped whitepoint | The y chromaticity of the whitepoint value read by the MALT's sensor for the screen whitepoint, ideally this should be the same as the mapped whitepoint |
 
 4. The number of rows in your document will correspond to the number of times you told the test you would be changing the lighting conditions.
