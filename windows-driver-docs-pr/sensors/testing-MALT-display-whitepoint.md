@@ -67,7 +67,7 @@ Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-amb
 
 6. Place the MALT on the screen of the SUT when and where directed.
 
-    ![Image of the MALT box.](images/MALTBox.png){:width="300px"}.
+    ![Image of the MALT box.](images/MALTBox.png)
 
 7. After the test completes, the output will be saved automatically to `Whitepoint.csv`.
 

@@ -9,6 +9,11 @@ ms.localizationpriority: medium
 
 This topic defines how to upload firmware to the MALT as well as how to calibrate the sensors using Sensor Explorer. We recommended that the PC controlling the microcontroller is also the system or device under test (SUT/DUT).  
 
+## Orienting the MALT
+| Front of the MALT (AMBIENT FACING) | Back of the MALT (SCREEN FACING) |
+|----|----|
+| ![MALT Front](images/MALTFront.jpg) | ![MALT Back](images/MALTBack.jpg) |
+
 ## Setting up the Hardware
 ![Hardware Setup Picture for MALT](images/MALTSetup.png)
 
@@ -23,7 +28,7 @@ This topic defines how to upload firmware to the MALT as well as how to calibrat
 
 4. Press the reset button on the Arduino Mega.
 
-![Reset Button.](images/resetbutton.png)
+    ![Reset Button.](images/resetbutton.png)
 
 ## Acquiring the Necessary Files
 
