@@ -159,6 +159,6 @@ On the Home tab, you should be able to select any button under the **Sensor Data
 
     - Ensure you actually did select the **Calibrate Top** or **Calibrate Bottom** buttons.
 
-    - If you are sure you appropriately calibrated the top and the bottom sensors given the above instructions, email [sensortools@microsoft.com](mailtto:sensortools@microsoft.com)
+    - If you are sure you appropriately calibrated the top and the bottom sensors given the above instructions, email sensortools@microsoft.com.
 
-If this troubleshooting section doesn't address your issues, please email [sensortools@microsoft.com](mailtto:sensortools@microsoft.com)
+If this troubleshooting section doesn't address your issues, please email sensortools@microsoft.com.
