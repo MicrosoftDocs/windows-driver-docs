@@ -1,11 +1,11 @@
 ---
-title: Testing System Scenarios
+title: Testing system scenarios
 description: This test is focused on making sure the ambient light sensor (ALS) is working properly after system power events such as sleep or hibernate.
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# Testing System Scenarios
+# Testing system scenarios
 
 This test is focused on making sure the ambient light sensor (ALS) is working properly after system power events such as sleep or hibernate.
 

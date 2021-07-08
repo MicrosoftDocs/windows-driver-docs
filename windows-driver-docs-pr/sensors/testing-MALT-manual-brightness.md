@@ -1,17 +1,17 @@
 ---
-title: Testing Manual Brightness
+title: Testing manual brightness
 description: This topic describes how to test manual brightness by using the MALT (Microsoft Ambient Light Tool) tool.
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# Testing Manual Brightness
+# Testing manual brightness
 
 This topic describes how to test manual brightness by using the MALT (Microsoft Ambient Light Tool) tool. Manual brightness refers to screen brightness set *manually* by the user.
 
 ## Set up
 
-Read through the topic [Building a Light Testing Tool (MALT)](testing-MALT-building-a-light-testing-tool.md) to ensure that you have met the requirements for the tests.
+Read through the topic [Building a light testing tool (MALT)](testing-MALT-building-a-light-testing-tool.md) to ensure that you have met the requirements for the tests.
 
 ### Configuring the SUT manually
 

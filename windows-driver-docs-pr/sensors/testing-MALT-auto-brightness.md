@@ -1,17 +1,17 @@
 ---
-title: Testing Auto Brightness
+title: Testing auto brightness
 description: This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool.
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# Testing Auto Brightness
+# Testing auto brightness
 
 This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool. Automatic or Adaptive Brightness refers to screen brightness set automatically by the system in response to the Ambient Light Sensor reading.
 
 ## Set up
 
-Read through the topic [Building a Light Testing Tool (MALT)](testing-MALT-building-a-light-testing-tool.md) to ensure that you have met the requirements for the tests.
+Read through the topic [Building a light testing tool (MALT)](testing-MALT-building-a-light-testing-tool.md) to ensure that you have met the requirements for the tests.
 
 ### Configuring the SUT manually
 
