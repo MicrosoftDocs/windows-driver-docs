@@ -79,6 +79,7 @@ When this function is used, the \_DSM method must appear under the USB port devi
 
 ## Function 6: Query controller register access type
 
+This function is available starting in Windows Server 2022 and Windows 11.
 
 The _DSM control method parameters for querying the register access type for communicating with USB controllers are as follows:
 
@@ -109,7 +110,7 @@ An Integer containing one of the following values:
 <tbody>
 <tr class="odd">
 <td>RegisterAccessType</td>
-<td>Integer (BYTE)</td>
+<td>32-bit (ULONG)</td>
 <td><p>Specifies the type of the USB controller register access:</p>
 <ul>
 <li>0x00 – Undefined register access</li>
