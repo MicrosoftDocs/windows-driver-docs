@@ -195,7 +195,6 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
 | tabletaudiosample.inf      | An information (INF) file that contains information needed to install the driver. |
 | sysvad.cat                 | The catalog file.                                                                 |
 | SwapAPO.dll                | A sample driver extension for a UI to manage APOs.                                |
-| PropPageExt.dll            | A sample driver extension for a property page.                                    |
 | KeywordDetectorAdapter.dll | A sample keyword detector.                                                        |
 
 ## Install and test the driver
