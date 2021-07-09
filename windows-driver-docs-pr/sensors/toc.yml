@@ -126,25 +126,29 @@
       href: defining-custom-values-for-constants-v2.md
     - name: "Fusion Sensor Implementation Details"
       href: fusion-sensor-implementation-details.md
-- name: "Testing Windows sensor hardware, drivers, and apps"
+- name: "Test Windows sensor hardware, drivers, and apps"
   items:
   - name: "Sensor Testing Sources"
     href: testing-sensor-landing.md
   - name: Microsoft SensorExplorer
     href: testing-sensor-explorer.md
-  - name: "Building and Using the Microsoft Ambient Light Tool (MALT)"
+  - name: "The Microsoft Ambient Light Tool (MALT)"
     items:
-    - name: "Building a Light Testing Tool"
+    - name: "Building a light testing tool"
       href: testing-MALT-building-a-light-testing-tool.md
-    - name: "Testing System Brightness Response"
-      href: testing-MALT-system-brightness-response.md
-    - name: "Testing Auto Brightness"
+    - name: "Getting started with MALT"
+      href: testing-MALT-getting-started.md
+    - name: "Testing system brightness and color"
+      href: testing-MALT-system-brightness-and-color.md
+    - name: "Testing display whitepoint"
+      href: testing-MALT-display-whitepoint.md
+    - name: "Testing auto brightness"
       href: testing-MALT-auto-brightness.md
-    - name: "Testing Manual Brightness"
+    - name: "Testing manual brightness"
       href: testing-MALT-manual-brightness.md
-    - name: "Testing System Scenarios"
+    - name: "Testing system scenarios"
       href: testing-MALT-system-scenarios.md
-    - name: "Microcontroller Commands"
+    - name: "Microcontroller commands"
       href: testing-MALT-microcontroller-commands.md
 - name: "Previous Versions"
   items: 
