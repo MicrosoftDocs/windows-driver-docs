@@ -27,6 +27,11 @@ A WDF driver targeting version 31 and above will enable DFx by default. If this 
 
 `HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,0`
 
+A WDF driver targeting version 33 and above can alternatively opt out of DFx by setting the **DirectedPoFxEnabled** member of the [**WDF_POWER_FRAMEWORK_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_power_framework_settings) structure to **WdfFalse**.
+
+> [!TIP]
+> To initialize its [**WDF_POWER_FRAMEWORK_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_power_framework_settings) structure, your driver should call [**WDF_POWER_FRAMEWORK_SETTINGS_INIT**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_power_framework_settings_init).
+
 Because requesting system-managed idle timeout causes WDF to register with PoFx on the driver's behalf, the driver does not need to register with PoFx in this scenario.
 
 If the driver specifies **DriverManagedIdleTimeout**, consider switching to system-managed idle timeout.  If that is not feasible, use the guidelines in the WDM section below to opt into DFx.
