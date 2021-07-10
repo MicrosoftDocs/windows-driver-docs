@@ -77,14 +77,50 @@ An integer containing one of the following values:
 
 When this function is used, the \_DSM method must appear under the USB port device.
 
+## Function 6: Query controller register access type
+
+This function is available starting in Windows Server 2022 and Windows 11.
+
+The _DSM control method parameters for querying the register access type for communicating with USB controllers are as follows:
+
+### Arguments
+
+-   **Arg0:** UUID = ce2ee385-00e6-48cb-9f05-2edb927c4899
+-   **Arg1:** Revision ID = 0
+-   **Arg2:** Function index = 6
+-   **Arg3:** Empty package (not used)
+
+### Return
+
+An Integer containing one of the following values:
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Object type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RegisterAccessType</td>
+<td>4-byte (32-bit) unsigned long</td>
+<td><p>Specifies the type of the USB controller register access:</p>
+<ul>
+<li>0x00 – Undefined register access</li>
+<li>0x01 – Must use 32bit register access</li>
+<li>0x02 – 0xffffffff reserved</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+When this function is used, the \_DSM method must appear under the USB controller device.
+
 **Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
-
- 
-
- 
-
- 
-
-
-
-
