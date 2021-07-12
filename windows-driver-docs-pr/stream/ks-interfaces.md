@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-An *Interface* is a descriptor parameter that defines how a pin communicates. The minidriver indicates which interfaces a pin supports by providing a pointer to an array of [**KSPIN\_INTERFACE**](/previous-versions/ff563537(v=vs.85)) structures in the relevant [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) structure. KS then uses this information for determining potential connectivity and graph building.
+An *Interface* is a descriptor parameter that defines how a pin communicates. The minidriver indicates which interfaces a pin supports by providing a pointer to an array of [**KSPIN\_INTERFACE**](/windows-hardware/drivers/stream/kspin-interface-structure) structures in the relevant [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) structure. KS then uses this information for determining potential connectivity and graph building.
 
 Like mediums, interfaces are also described as a set and as an element of that set. The KSPIN\_INTERFACE structure defines a specific interface within an interface set.
 

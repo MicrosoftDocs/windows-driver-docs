@@ -50,7 +50,7 @@ A KSMULTIPLE\_ITEM structure, which is the header for a list of topology informa
 
 [**BdaMethodCreateTopology**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethodcreatetopology)
 
-[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
+[**KSMETHOD**](/windows-hardware/drivers/stream/ksmethod-structure)
 
 [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 

@@ -53,7 +53,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY\_WITH\_NOTIFICATION structure that contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure along with other members. The client writes its requested buffer size into the structure. The client must specify the base address as **NULL** unless a specific base address is needed.
+The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY\_WITH\_NOTIFICATION structure that contains a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure along with other members. The client writes its requested buffer size into the structure. The client must specify the base address as **NULL** unless a specific base address is needed.
 
 This property is used when you want DMA-driven event notification. Based on the **NotificationCount** member, registered events are signaled once (at the end) or twice (at the mid-point and the end) per cycle through the cyclic buffer. Events are registered using [**KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-register-notification-event.md) after successfully calling KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION.
 
@@ -126,7 +126,7 @@ Closing the pin automatically frees the buffer that was allocated through this p
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
 
 [**KSRTAUDIO\_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_buffer)
 

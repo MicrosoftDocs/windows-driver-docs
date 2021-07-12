@@ -70,7 +70,7 @@ The following property-set GUIDs are defined by DirectMusic:
 
 -   GUID\_DMUS\_PROP\_XG\_Hardware
 
-For definitions of the preceding property set GUIDs, see the description of the [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure in the DirectX 8.0 Programmer's Reference in the Microsoft Windows SDK. The property set for each of the preceding GUIDs consists of a single element that is identified by an index of zero.
+For definitions of the preceding property set GUIDs, see the description of the [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure in the DirectX 8.0 Programmer's Reference in the Microsoft Windows SDK. The property set for each of the preceding GUIDs consists of a single element that is identified by an index of zero.
 
 ### <span id="ikscontrol_interface"></span><span id="IKSCONTROL_INTERFACE"></span>IKsControl Interface
 

@@ -53,7 +53,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_HWREGISTER\_PROPERTY structure that contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the KSRTAUDIO\_HWREGISTER\_PROPERTY structure with values that indicate the preferred base address for the clock register.
+The property descriptor (instance data) consists of a KSRTAUDIO\_HWREGISTER\_PROPERTY structure that contains a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure. Before sending the request, the client loads the KSRTAUDIO\_HWREGISTER\_PROPERTY structure with values that indicate the preferred base address for the clock register.
 
 The property value (operation data) is a pointer to a KSRTAUDIO\_HWREGISTER structure into which the property handler writes the register address and the register-update frequency. This register address is the user-mode or kernel-mode virtual address into which the hardware register is mapped. The client can directly read the register from this address.
 

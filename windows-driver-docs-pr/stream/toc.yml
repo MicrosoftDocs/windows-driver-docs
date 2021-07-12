@@ -2132,3 +2132,18 @@
       href: ksevent-vpnotify-formatchange.md
 - name: "COM Interfaces"
   href: com-interfaces.md
+- name: "Ks.h stucture typedef reference"
+# Auto-expanded node
+  items: 
+  - name: "Ks.h stucture typedef reference"
+    href: ks-h-typedef-reference.md
+  - name: "KSEVENT"
+    href: ksevent-structure.md
+  - name: "KSMETHOD"
+    href: ksmethod-structure.md
+  - name: "KSPIN_INTERFACE"
+    href: kspin-interface-structure.md
+  - name: "KSPIN_MEDIUM"
+    href: kspin-medium-structure.md
+  - name: "KSPROPERTY"
+    href: ksproperty-structure.md

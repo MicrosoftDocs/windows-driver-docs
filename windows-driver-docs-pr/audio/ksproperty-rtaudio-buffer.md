@@ -53,7 +53,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY structure that contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure along with other members. The client writes its requested buffer size into the structure. If the client does not have to work with a specific base address, it must specify the base address as **NULL**.
+The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY structure that contains a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure along with other members. The client writes its requested buffer size into the structure. If the client does not have to work with a specific base address, it must specify the base address as **NULL**.
 
 The property value (operation data) is a structure of type KSRTAUDIO\_BUFFER. The driver fills this structure with the actual buffer size, base address, and memory barrier flag for the cyclic buffer that it has allocated.
 

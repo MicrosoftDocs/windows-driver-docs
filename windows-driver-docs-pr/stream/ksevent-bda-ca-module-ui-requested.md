@@ -48,7 +48,7 @@ A KSEVENTDATA structure that describes how to notify about the event.
 ## See also
 
 
-[**KSEVENT**](/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](/windows-hardware/drivers/stream/ksevent-structure)
 
 [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 

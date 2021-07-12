@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 This section is a brief introduction to DirectMusic property item requests. A complete overview of this and other kernel-streaming concepts can be found in [Kernel Streaming](../stream/kernel-streaming.md).
 
-DirectMusic miniport drivers must handle [audio drivers property sets](./audio-drivers-property-sets.md). A property request comes in two parts. The first part is the property set that is defined by the [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. The second is a data buffer that contains instance data that is specific to the property item.
+DirectMusic miniport drivers must handle [audio drivers property sets](./audio-drivers-property-sets.md). A property request comes in two parts. The first part is the property set that is defined by the [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure. The second is a data buffer that contains instance data that is specific to the property item.
 
 The KSPROPERTY structure contains the following:
 

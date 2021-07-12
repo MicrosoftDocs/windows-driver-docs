@@ -58,7 +58,7 @@ The **KSPROPERTY_CAMERA_CONTROL_S** structure must be filled as follows:
 
 | **Get** | **Set** | **Target** | **Event descriptor type** | **Event value type** |
 |--|--|--|--|--|
-| No | Yes | Filter | [**KSEVENT**](/previous-versions/ff561744(v=vs.85)) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
+| No | Yes | Filter | [**KSEVENT**](/windows-hardware/drivers/stream/ksevent-structure) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
 
 The **KSEVENT** structure must be filled as follows:
 
@@ -160,9 +160,9 @@ UCHAR Example2_MSOS20DescriptorSet_UVCDevicePropertyKeyForLidOcclusionOptOut[0x7
 
 [KSPROPERTY_CAMERA_CONTROL_S](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
 
-[KSPROPERTY](/previous-versions/ff564262(v=vs.85))
+[KSPROPERTY](/windows-hardware/drivers/stream/ksproperty-structure)
 
-[KSEVENT](/previous-versions/ff561744(v=vs.85))
+[KSEVENT](/windows-hardware/drivers/stream/ksevent-structure)
 
 [KSEVENTDATA](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 

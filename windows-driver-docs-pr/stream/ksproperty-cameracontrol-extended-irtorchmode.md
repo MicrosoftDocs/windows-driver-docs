@@ -25,7 +25,7 @@ This extended property control is used by the client to control an IR camera's i
 
 | Get | Set | Target | Property descriptor type | Property value type |
 | --- | --- | --- | --- | --- |
-| Yes | Yes | Filter | [KSPROPERTY](/previous-versions/ff564262(v=vs.85)) | [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)|
+| Yes | Yes | Filter | [KSPROPERTY](/windows-hardware/drivers/stream/ksproperty-structure) | [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)|
 
 ## Remarks
 

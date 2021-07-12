@@ -28,7 +28,7 @@ Audio drivers support get, set, and basic-support requests on properties (KSPROP
 
 A client can send requests for three kinds of properties: filter properties, pin properties, and node properties. For more information, see [Filter, Pin, and Node Properties](filter--pin--and-node-properties.md).
 
-When sending a filter-property request to a filter object, the client specifies the target filter by its instance handle (see [Filter Factories](filter-factories.md)). Similarly, when sending a pin-property request to a pin object, the target pin is specified by its instance handle (see [Pin Factories](pin-factories.md)). Either type of request contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure that specifies the following:
+When sending a filter-property request to a filter object, the client specifies the target filter by its instance handle (see [Filter Factories](filter-factories.md)). Similarly, when sending a pin-property request to a pin object, the target pin is specified by its instance handle (see [Pin Factories](pin-factories.md)). Either type of request contains a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure that specifies the following:
 
 -   A GUID that identifies the property set
 

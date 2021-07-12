@@ -54,7 +54,7 @@ Before committing a list of changes, the network provider makes a KSMETHOD\_BDA\
 
 [**BdaCheckChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacheckchanges)
 
-[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
+[**KSMETHOD**](/windows-hardware/drivers/stream/ksmethod-structure)
 
  
 

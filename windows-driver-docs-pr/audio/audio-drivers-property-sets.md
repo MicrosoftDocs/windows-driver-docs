@@ -36,7 +36,7 @@ These headings have the following meanings:
 
 -   **Property Descriptor Type**
 
-    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure, but some types of descriptor contain additional information. For example, the [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure is a property descriptor that begins with a KSPROPERTY structure but also includes a node ID.
+    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure, but some types of descriptor contain additional information. For example, the [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure is a property descriptor that begins with a KSPROPERTY structure but also includes a node ID.
 
 -   **Property Value Type**
 

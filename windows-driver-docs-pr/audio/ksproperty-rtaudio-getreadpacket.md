@@ -24,10 +24,10 @@ KSPROPERTY\_RTAUDIO\_GETREADPACKET returns information about captured audio pack
  
 |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|Yes|No|Pin|[KSPROPERTY](/previous-versions/ff564262(v=vs.85))|[KSRTAUDIO_GETREADPACKET_INFO](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info)|
+|Yes|No|Pin|[KSPROPERTY](/windows-hardware/drivers/stream/ksproperty-structure)|[KSRTAUDIO_GETREADPACKET_INFO](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info)|
 
 
-The property descriptor (instance data) is a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with values that indicate the packet number, packet length and other information.
+The property descriptor (instance data) is a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure. Before sending the request, the client loads the structure with values that indicate the packet number, packet length and other information.
 
 The property value is a variable of type [**KSRTAUDIO\_GETREADPACKET\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info).
 
