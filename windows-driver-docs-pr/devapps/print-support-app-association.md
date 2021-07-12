@@ -44,7 +44,7 @@ To find out the Hardware Id and Compatible Id for your printer, follow these ste
 
 ### Prepare the PSA extension INF file
 
-A PSA is associated with a printer by using an [extension INF](/windows-hardware/drivers/install/using-an-extension-inf-file) file.
+A PSA is associated with a printer by using an [extension INF](../install/using-an-extension-inf-file.md) file.
 
 These are steps to create and test an extension INF file:
 
@@ -54,7 +54,7 @@ These are steps to create and test an extension INF file:
 
 1. Update the **PackageFamilyName** and **AUMID** (AppUserModeId) for your PSA application.
 
-1. Create a [catalog file](/windows-hardware/drivers/devtest/inf2cat).
+1. Create a [catalog file](../devtest/inf2cat.md).
 
 1. Sign the psa.cat file sample extension INF.
 
@@ -173,7 +173,7 @@ The Hardware Id is the printer-device-id IPP attribute from the printer.
 
 ## See also
 
-[Print support app design guide](/windows-hardware/drivers/devapps/print-support-app-design-guide)
+[Print support app design guide](./print-support-app-design-guide.md)
 
 [Windows.Devices.Printers](/uwp/api/windows.devices.printers?view=winrt-insider&preserve-view=true)
 

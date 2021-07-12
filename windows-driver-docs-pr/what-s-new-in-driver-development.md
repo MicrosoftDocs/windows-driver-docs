@@ -11,11 +11,11 @@ This section describes new features and updates for driver development in Window
 
 ## Camera
 
-- [Digital Window overview](/windows-hardware/drivers/stream/digital-window-overview)
-- [Privacy shutter notification](/windows-hardware/drivers/stream/privacy-shutter-notification)
-- [Create device property keys from the MS OS descriptor in USB Video Class (UVC) firmware](/windows-hardware/drivers/stream/create-camera-device-property-keys-from-ms-os-descriptor)
-- [Microsoft extensions to USB Video Class 1.5 specification](/windows-hardware/drivers/stream/uvc-extensions-1-5) (Updated)
-- [Network camera design guide](/windows-hardware/drivers/stream/network-camera-design-guide) (Updated)
+- [Digital Window overview](./stream/digital-window-overview.md)
+- [Privacy shutter notification](./stream/privacy-shutter-notification.md)
+- [Create device property keys from the MS OS descriptor in USB Video Class (UVC) firmware](./stream/create-camera-device-property-keys-from-ms-os-descriptor.md)
+- [Microsoft extensions to USB Video Class 1.5 specification](./stream/uvc-extensions-1-5.md) (Updated)
+- [Network camera design guide](./stream/network-camera-design-guide.md) (Updated)
 
 ## HID
 
@@ -40,8 +40,8 @@ New API pages:
 
 ## Print devices
 
-- [Print support app design guide](/windows-hardware/drivers/devapps/print-support-app-design-guide)
-- [Print support app association](/windows-hardware/drivers/devapps/print-support-app-association)
+- [Print support app design guide](./devapps/print-support-app-design-guide.md)
+- [Print support app association](./devapps/print-support-app-association.md)
 
 ## Related Topics
 
