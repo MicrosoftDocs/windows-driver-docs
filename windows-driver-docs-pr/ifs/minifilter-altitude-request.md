@@ -63,8 +63,8 @@ FilterDev
 
 > [!NOTE]
 >
-> * All fields must be filled out.
+> * All fields must be filled out. Any missing information might delay the assignment.
 >
-> * It may take Microsoft up to two weeks to process and assign altitudes. Any missing information may delay the assignment.
+> * Allow Microsoft 30 business days to process and assign altitudes.
 >
-> * The assigned altitude will eventually be listed in the [Allocated filter altitudes](allocated-altitudes.md) table.
+> * The assigned altitude will eventually be listed in the [Allocated filter altitudes](allocated-altitudes.md) table, which is updated 1-2 times per year.
