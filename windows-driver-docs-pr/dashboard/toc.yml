@@ -26,7 +26,7 @@
     href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
   - name: "Validating driver updates for Modern Standby systems "
     href: validating-driver-updates-for-modern-standby-systems.md
-  - name: "Driver Flighting"
+  - name: "Driver flighting"
     items:
     - name: "Overview of driver flighting"
       href: driver-flighting.md
@@ -42,8 +42,12 @@
       href: overview-of-microsoft-driver-measure-dictionary.md
     - name: "Driver measure attributes"
       href: measure-attributes.md
-    - name: "Cohort Failure Report"
-      href: IDR-cohort-report.md
+    - name: "Failure reports"
+      items:
+      - name: "Cohort failure report"
+        href: IDR-cohort-report.md
+      - name: "Plug and Play failure report"
+        href: pnp-failure-report.md
     - name: "Systemic measures"
       items:
       - name: "Driver installation measures"
