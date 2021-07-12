@@ -107,5 +107,4 @@ and each KSJACK\_DESCRIPTION structure would have a two-bit ChannelMapping value
 
 [KSMULTIPLE\_ITEM](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 
-[KSPROPERTY](/windows-hardware/drivers/stream/ksproperty-structure)
-
+[KSPROPERTY](../stream/ksproperty-structure.md)

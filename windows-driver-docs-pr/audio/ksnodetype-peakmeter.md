@@ -26,7 +26,7 @@ Microsoft recommends making a peakmeter node the final node through which a stre
 
 An audio adapter should name a peakmeter node KSAUDFNAME\_PEAKMETER.
 
-A peakmeter node should provide a property handler for the property flags (see [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)) that appear in the following table.
+A peakmeter node should provide a property handler for the property flags (see [**KSPROPERTY**](../stream/ksproperty-structure.md)) that appear in the following table.
 
 <table>
 <colgroup>

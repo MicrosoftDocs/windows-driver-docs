@@ -23,10 +23,10 @@ KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS has written v
 
 |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|No|Yes|Pin|[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)|[KSRTAUDIO_SETWRITEPACKET_INFO](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)|
+|No|Yes|Pin|[**KSPROPERTY**](../stream/ksproperty-structure.md)|[KSRTAUDIO_SETWRITEPACKET_INFO](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)|
 
 
-The property descriptor (instance data) is a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
+The property descriptor (instance data) is a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
 
 The property value is a structure of type [**KSRTAUDIO\_SETWRITEPACKET\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info).
 
@@ -67,6 +67,4 @@ Depending on hardware capabilities, if the *KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTR
 [**KSPROPERTY\_RTAUDIO\_GETREADPACKET**](ksproperty-rtaudio-getreadpacket.md)
 
 [UsePositionLock](usepositionlock.md)
-
- 
 

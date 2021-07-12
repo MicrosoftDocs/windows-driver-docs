@@ -43,7 +43,7 @@ The **KSPROPERTY\_ONESHOT\_RECONNECT** property is used to prompt the audio driv
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>NULL</p></td>
 </tr>
 </tbody>
@@ -88,7 +88,6 @@ You can implement the [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-descri
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md)
-

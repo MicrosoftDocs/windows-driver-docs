@@ -46,7 +46,7 @@ The KSPROPERTY\_AC3\_DIALOGUE\_LEVEL property specifies the average volume level
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_dialogue_level" data-raw-source="[&lt;strong&gt;KSAC3_DIALOGUE_LEVEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_dialogue_level)"><strong>KSAC3_DIALOGUE_LEVEL</strong></a></p></td>
 </tr>
 </tbody>
@@ -78,7 +78,6 @@ A KSPROPERTY\_AC3\_DIALOGUE\_LEVEL property request returns STATUS\_SUCCESS to i
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSAC3\_DIALOGUE\_LEVEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_dialogue_level)
-
