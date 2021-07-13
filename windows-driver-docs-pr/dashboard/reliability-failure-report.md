@@ -6,7 +6,7 @@ ms.date: 07/12/2021
 ms.localizationpriority: medium
 ---
 
-# Plug and Play extended flight report
+# Reliability Measure Failure Report report
 
 If your driver is cancelled due to a Reliability Measure failure, you will start to receive a new report detailing the specifics of the failure.
 
@@ -21,7 +21,7 @@ When a driver completes flighting, a bug is created and assigned to you. The bug
 The report contains the following sections:
 
 1. [Title](#title)
-1. [Summary](#summary-and-instructions)
+1. [Summary](#summary)
 1. [Driver Level Details](#driver-level-details)
 1. [Cohort Level Details](#cohort-level-details)
 1. [Failure Hash Reported From Drivers](#failure-hash-reported-from-drivers)
