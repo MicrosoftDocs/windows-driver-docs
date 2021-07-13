@@ -6,7 +6,7 @@ ms.date: 07/12/2021
 ms.localizationpriority: medium
 ---
 
-# Reliability Measure Failure Report report
+# Reliability Measure Failure Report
 
 If your driver is cancelled due to a Reliability Measure failure, you will start to receive a new report detailing the specifics of the failure.
 
