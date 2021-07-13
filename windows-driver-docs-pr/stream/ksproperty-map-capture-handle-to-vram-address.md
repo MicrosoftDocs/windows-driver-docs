@@ -79,5 +79,5 @@ The capture driver should perform the mapping in the handler for this property.
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 

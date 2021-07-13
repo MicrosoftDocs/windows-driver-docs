@@ -80,7 +80,7 @@ When the network provider creates a pin for a filter using KSMETHOD\_BDA\_CREATE
 
 [**KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY**](ksmethod-bda-create-pin-factory.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
 

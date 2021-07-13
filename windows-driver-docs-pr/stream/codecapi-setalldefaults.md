@@ -55,7 +55,7 @@ The minidriver should cache its entire list of changed parameters for [CODECAPI\
 
 ### See Also
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
 

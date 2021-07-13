@@ -2137,6 +2137,8 @@
   items: 
   - name: "Ks.h stucture typedef reference"
     href: ks-h-typedef-reference.md
+  - name: "KSDEGRADE"
+    href: ksdegrade-structure.md
   - name: "KSEVENT"
     href: ksevent-structure.md
   - name: "KSMETHOD"

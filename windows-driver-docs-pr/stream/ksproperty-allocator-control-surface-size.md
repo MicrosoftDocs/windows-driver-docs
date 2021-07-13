@@ -80,7 +80,7 @@ The Overlay Mixer always queries this new property if the mixer is connected to 
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_allocator_control_surface_size_s)
 

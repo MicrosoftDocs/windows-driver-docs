@@ -80,7 +80,7 @@ The network provider will use this property to query the capabilities of each no
 
 [**BdaPropertyNodeProperties**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodeproperties)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
 

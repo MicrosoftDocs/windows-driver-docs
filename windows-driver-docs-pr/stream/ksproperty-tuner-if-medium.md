@@ -80,7 +80,7 @@ If the video capture minidriver supports KSPROPERTY\_TUNER\_IF\_MEDIUM, then *ks
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_TUNER\_IF\_MEDIUM\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_if_medium_s)
 

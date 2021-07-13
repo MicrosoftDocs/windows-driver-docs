@@ -57,7 +57,7 @@ The minidriver is required to either provide a static **PropertyItem.Values** de
 
 ### See Also
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier), [**VIDEOENCODER\_BITRATE\_MODE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)
+[**KSPROPERTY**](ksproperty-structure.md), [**VIDEOENCODER\_BITRATE\_MODE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)
 
  
 

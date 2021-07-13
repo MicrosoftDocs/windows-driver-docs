@@ -19,7 +19,7 @@ Clients of the USB Video Class can use the following video capture property sets
 [PROPSETID\_VIDCAP\_VIDEOPROCAMP](./propsetid-vidcap-videoprocamp.md)
 Clients of the USB Video Class can make requests on filters or individual nodes. The functionality of the node-based properties is identical to that of the pre-USB Video Class filter-based properties.
 
-To specify a node-based property, set the KSPROPERTY\_TYPE\_TOPOLOGY flag in the Flags member of the [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) structure contained in the property descriptor structure—for example, [**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s).
+To specify a node-based property, set the KSPROPERTY\_TYPE\_TOPOLOGY flag in the Flags member of the [**KSPROPERTY**](ksproperty-structure.md) structure contained in the property descriptor structure—for example, [**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s).
 
 Because clients can address multiple nodes on a single filter, the USB Video Class enables IHVs to support cameras that have multiple independently controlled lenses.
 

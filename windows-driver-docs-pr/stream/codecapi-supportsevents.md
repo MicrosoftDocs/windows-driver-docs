@@ -51,7 +51,7 @@ The property value (operation data) is of type BOOL, which specifies whether the
 
 ### See Also
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
 

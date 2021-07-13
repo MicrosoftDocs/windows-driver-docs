@@ -72,7 +72,7 @@ Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_START to start operation of a node
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
 

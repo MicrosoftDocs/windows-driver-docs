@@ -72,7 +72,7 @@ Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START to disable any transform tha
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
 

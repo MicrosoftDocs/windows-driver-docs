@@ -72,7 +72,7 @@ Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP to restart the transform that
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START**](ksproperty-bda-null-transform-start.md)
 

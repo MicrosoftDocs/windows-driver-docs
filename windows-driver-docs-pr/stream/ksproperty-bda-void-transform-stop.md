@@ -72,7 +72,7 @@ Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_STOP to stop operation of a node.
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
 
