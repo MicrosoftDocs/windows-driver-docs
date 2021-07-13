@@ -39,7 +39,7 @@ The Summary section provides basic information about what type of analysis was d
 
 ![Screenshot of the Summary and Instructions section.](images/reliability-report-summary.png)
 
-### Driver Level Details Data
+### Driver Level Details
 
 The Driver Level Details Section provides details specific to the Reliability Measure(s) failures that led the driver to be rejected. 
 
