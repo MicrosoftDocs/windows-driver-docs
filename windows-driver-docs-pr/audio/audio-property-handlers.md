@@ -45,7 +45,7 @@ In the case of a KS property request sent to a filter handle, the **MinorTarget*
 
 The **Instance** and **Value** members of PCPROPERTY\_REQUEST point to the input and output buffers, respectively, of the KS property request. (The buffers are specified by the *lpInBuffer* and *lpOutBuffer* parameters of the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function.) These buffers contain the property descriptor (instance data) and property value (operation data), respectively, as described in [Audio Drivers Property Sets](./audio-drivers-property-sets.md). The **Value** member points to the start of the output buffer, but the **Instance** pointer is offset from the start of the input buffer.
 
-The input buffer begins with either a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) or [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure. The port driver copies the information from this structure into the PCPROPERTY\_REQUEST structure's **Node**, **PropertyItem**, and **Verb** members. If any data follows the KSPROPERTY or KSNODEPROPERTY structure in the buffer, the port driver loads the **Instance** member with a pointer to this data. Otherwise, it sets **Instance** to **NULL**.
+The input buffer begins with either a [**KSPROPERTY**](../stream/ksproperty-structure.md) or [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure. The port driver copies the information from this structure into the PCPROPERTY\_REQUEST structure's **Node**, **PropertyItem**, and **Verb** members. If any data follows the KSPROPERTY or KSNODEPROPERTY structure in the buffer, the port driver loads the **Instance** member with a pointer to this data. Otherwise, it sets **Instance** to **NULL**.
 
 If the input buffer begins with a KSPROPERTY structure, which contains no node information, the port driver sets the PCPROPERTY\_REQUEST structure's **Node** member to ULONG(-1). In this case, the port driver calls the appropriate handler from the miniport driver's automation table for the filter or pin, depending on whether the target for the property request is specified by a filter handle or pin handle. (If the table does not specify a handler for the property, the port driver handles the request instead.)
 
@@ -57,7 +57,7 @@ The port driver checks the KSPROPERTY\_TYPE\_TOPOLOGY bit in the operation flags
 
 -   Otherwise, the input buffer begins with a KSPROPERTY structure.
 
-For more information about KSPROPERTY\_TYPE\_TOPOLOGY, see [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure).
+For more information about KSPROPERTY\_TYPE\_TOPOLOGY, see [**KSPROPERTY**](../stream/ksproperty-structure.md).
 
 The PCPROPERTY\_REQUEST structure's **InstanceSize** and **ValueSize** members specify the sizes of the buffers pointed to by the **Instance** and **Value** members. **ValueSize** is equal to the size of the output buffer of the property request, but **InstanceSize** is the size of the data that follows the KSPROPERTY or KSNODEPROPERTY structure in the input buffer. That is, **InstanceSize** is the size of the input buffer minus the size of the KSPROPERTY or KSNODEPROPERTY structure. If no additional data follows this structure, the port driver sets **InstanceSize** to zero (and **Instance** to **NULL**).
 
@@ -79,6 +79,4 @@ For more information, see [Using NTSTATUS Values](../kernel/using-ntstatus-value
 
 
 
-
- 
 

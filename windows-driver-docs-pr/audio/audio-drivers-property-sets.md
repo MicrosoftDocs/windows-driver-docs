@@ -36,7 +36,7 @@ These headings have the following meanings:
 
 -   **Property Descriptor Type**
 
-    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure, but some types of descriptor contain additional information. For example, the [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure is a property descriptor that begins with a KSPROPERTY structure but also includes a node ID.
+    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure, but some types of descriptor contain additional information. For example, the [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure is a property descriptor that begins with a KSPROPERTY structure but also includes a node ID.
 
 -   **Property Value Type**
 
@@ -99,6 +99,4 @@ The following property sets are defined for audio drivers:
 [KSPROPSETID\_TelephonyTopology](kspropsetid-telephonytopology.md)
 
 [KSPROPSETID\_TopologyNode](kspropsetid-topologynode.md)
-
- 
 
