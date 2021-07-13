@@ -36,7 +36,7 @@ If the machine is reports a transient error (listed below) then it is not includ
 |3221226681| STATUS_UNSATISFIED_DEPENDENCIES|
 |3221226029| STATUS_RETRY|
 
-STATUS_INVALID_IMAGE_FORMAT is a result of the firmware returning invalid image format in the last attempt status of the [ESRT table](/windows-hardware/drivers/bringup/esrt-table-definition). This code is returned from the firmware, saying that the new firmware itself has a error. Windows can't help because the capsule update process is entirely platform code and is done outside of the operating system.
+STATUS_INVALID_IMAGE_FORMAT is a result of the firmware returning invalid image format in the last attempt status of the [ESRT table](../bringup/esrt-table-definition.md). This code is returned from the firmware, saying that the new firmware itself has a error. Windows can't help because the capsule update process is entirely platform code and is done outside of the operating system.
 
 The firmware team has open-sourced multiple ways to record information about why a firmware process may have failed such that the information can be retrieved on the next boot of the operating system. These are:
 

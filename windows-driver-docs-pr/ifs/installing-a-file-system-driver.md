@@ -18,6 +18,6 @@ This page highlights the installation development process for developers of Wind
 
 * [Create an INF file](creating-an-inf-file-for-a-file-system-driver.md)
 
-* [Install the file system driver using the INF file](using-an-inf-file-to-install-a-file-system-filter-driver.md). You can use the INF file alone, or together with a batch file or [user-mode setup application](/windows-hardware/drivers/install/writing-a-device-installation-application).
+* [Install the file system driver using the INF file](using-an-inf-file-to-install-a-file-system-filter-driver.md). You can use the INF file alone, or together with a batch file or [user-mode setup application](../install/writing-a-device-installation-application.md).
 
 See [Using an INF File to Uninstall a File System Filter Driver](using-an-inf-file-to-uninstall-a-file-system-filter-driver.md) for uninstall information.

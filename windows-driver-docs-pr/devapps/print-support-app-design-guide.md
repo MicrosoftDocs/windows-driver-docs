@@ -910,7 +910,7 @@ When designing a print support app, it is important to include these aspects in 
 
 ## See also
 
-[Print support app association](/windows-hardware/drivers/devapps/print-support-app-association)
+[Print support app association](./print-support-app-association.md)
 
 [Windows.Devices.Printers](/uwp/api/windows.devices.printers?view=winrt-insider&preserve-view=true)
 

@@ -54,7 +54,7 @@ The KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property is used to explicitly include a
 
  
 
-The property descriptor (instance data) is a structure of type SYSAUDIO\_SELECT\_GRAPH that specifies the property, pin ID, and node ID. The property is specified by an embedded structure of type [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure). The pin ID is an index identifying a pin factory in the KS filter that wraps the virtual audio device. The node ID is an index identifying an optional node in the specified pin's data path. For more information, see the following Remarks section.
+The property descriptor (instance data) is a structure of type SYSAUDIO\_SELECT\_GRAPH that specifies the property, pin ID, and node ID. The property is specified by an embedded structure of type [**KSPROPERTY**](../stream/ksproperty-structure.md). The pin ID is an index identifying a pin factory in the KS filter that wraps the virtual audio device. The node ID is an index identifying an optional node in the specified pin's data path. For more information, see the following Remarks section.
 
 No property value (operation data) is defined for this property. Specify the property value's buffer pointer as **NULL** and its size as zero.
 
@@ -92,5 +92,4 @@ A KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH set-property request affects only pin inst
 
 [**SYSAUDIO\_SELECT\_GRAPH**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
-
+[**KSPROPERTY**](../stream/ksproperty-structure.md)

@@ -70,7 +70,7 @@ The following property-set GUIDs are defined by DirectMusic:
 
 -   GUID\_DMUS\_PROP\_XG\_Hardware
 
-For definitions of the preceding property set GUIDs, see the description of the [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) structure in the DirectX 8.0 Programmer's Reference in the Microsoft Windows SDK. The property set for each of the preceding GUIDs consists of a single element that is identified by an index of zero.
+For definitions of the preceding property set GUIDs, see the description of the [**KSPROPERTY**](../stream/ksproperty-structure.md) structure in the DirectX 8.0 Programmer's Reference in the Microsoft Windows SDK. The property set for each of the preceding GUIDs consists of a single element that is identified by an index of zero.
 
 ### <span id="ikscontrol_interface"></span><span id="IKSCONTROL_INTERFACE"></span>IKsControl Interface
 
@@ -83,6 +83,4 @@ The [**IKsControl::KsProperty**](/windows-hardware/drivers/ddi/ks/nf-ks-ikscontr
 -   No properties are supported by ports that represent DirectMusic emulation on top of the Microsoft Win32 handle-based multimedia calls (the midiOut and midiIn APIs). Use the **GUID\_DMUS\_PROP\_LegacyCaps** property set GUID to query a port for whether it is implemented with Win32 multimedia calls.
 
 -   Property item requests to a port that represents a pluggable software synthesizer are handled entirely in user mode. The topology of this type of port is a synthesizer (represented by an [IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth) interface) that is connected to a sink node (an [IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink) interface). The property request is given first to the synthesizer node, and then to the sink node if it is not recognized by the synthesizer.
-
- 
 
