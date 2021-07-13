@@ -48,6 +48,8 @@
         href: IDR-cohort-report.md
       - name: "Plug and Play failure report"
         href: pnp-failure-report.md
+      - name: "Reliability failure report"
+        href: reliability-failure-report.md
     - name: "Systemic measures"
       items:
       - name: "Driver installation measures"
