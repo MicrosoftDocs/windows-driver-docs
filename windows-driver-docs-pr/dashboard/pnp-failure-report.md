@@ -12,9 +12,9 @@ If your driver is cancelled due to a Plug and Play measure failure, you will rec
 
 ## Location of the report
 
-When a driver completes flighting, a bug is created and assigned to you. The bug includes a *Decision Snapshot*, a report on the state of the measures at the time of flight completion. If the driver is cancelled due to a Plug and Play measure failing during release monitoring, the same bug includes an *Extended Flight Report for Plug and Play Measures*. It is added to the RejectionReports.zip file as an attachment to that bug. Inside the zip file, the report filename is *PnP_Extended_Flight_Report.pdf.*
+When a driver completes flighting, a bug is created and assigned to you. The bug includes a Decision Snapshot, a report on the state of the measures at the time of flight completion. If the driver is cancelled due to a Plug and Play measure failing during release monitoring, the same bug includes an Extended Flight Report for Plug and Play Measures. It is added to the *RejectionReports.zip* file as an attachment to that bug. Inside the zip file, the report filename is *PnP_Extended_Flight_Report.pdf*.
 
-![Screenshot of bug attachment with the RejectionReports.zip file attached that contains the PnP_Extended_Flight_Report.pdf](images/RejectionReports.png)
+![Screenshot of bug attachment with the RejectionReports.zip file attached that contains the PnP_Extended_Flight_Report.pdf](images/rejection-reports.png)
 
 ## How to read the report
 
@@ -31,13 +31,13 @@ The extended flight report contains the following sections:
 
 The Title section describes the driver, including the submitter company name, the date the report was generated, the shipping label number, the driver name, and the driver version.
 
-![Screenshot of the Title section that includes the submitter company name, report date, shipping label, driver name, and driver version.](images/PnP_report_title.png)
+![Screenshot of the Title section that includes the submitter company name, report date, shipping label, driver name, and driver version.](images/failure-report-title.png)
 
 ### Summary and Instructions
 
 The Summary and Instructions section provides details on how to review the data, including basic information about the data in the report.
 
-![Screenshot of the Summary and Instructions section.](images/PnP_report_summary.png)
+![Screenshot of the Summary and Instructions section.](images/pnp-report-summary.png)
 
 ### Driver Rejection Reason
 
@@ -51,7 +51,7 @@ In this section, you will find:
 - The numerical value of the driver for the failing measure.
 - Details of the top failures identified in the driver. Details include Problem Code, Status and Machine Instances.
 
-![Screenshot of the Driver Rejection Reason section.](images/PnP_report_rejection_reason.png)
+![Screenshot of the Driver Rejection Reason section.](images/pnp-report-rejection-reason.png)
 
 ### Measure Data
 
@@ -61,7 +61,7 @@ The Measure Data section provides additional details specific to the Plug and Pl
 - Measure 26387215: Percent of machines where the driver install process completes successfully - Driver Installation Failures
 - Measure 26387262: Percent of machines that installed a driver update and reported a Plug and Play error code within two days of install
 
-![Screenshot of the Measure Data section.](images/PnP_report_measure_data.png)
+![Screenshot of the Measure Data section.](images/pnp-report-measure-data.png)
 
 ### Supplemental Data
 
@@ -73,10 +73,10 @@ For Last Driver Version, Installer App Name and OS Build Number, you will find t
 - Failing Install: Total count of machines that failed to install the driver. This could be due to driver installation issues (i.e. device installation timeout) or Plug and Play problem codes seen during driver installation.
 - After Install: Total count of machines that reported a Plug and Play error code within two days of driver install.
 
-![Screenshot of the Supplemental Data section.](images/PnP_report_supplemental_data.png)
+![Screenshot of the Supplemental Data section.](images/pnp-report-supplemental-data.png)
 
 ### Additional References
 
 The Additional References section provides more information on Plug and Play, measure definitions, error codes and additional information. This section provides additional references to documentation on relevant topics related to the usage and interpretation of the report.
 
-![Screenshot of the Additional References section.](images/PnP_report_additional_refs.png)
+![Screenshot of the Additional References section.](images/pnp-report-additional-refs.png)
