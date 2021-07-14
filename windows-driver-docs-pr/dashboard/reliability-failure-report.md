@@ -25,7 +25,7 @@ The report contains the following sections:
 1. [Driver Level Details](#driver-level-details)
 1. [Cohort Level Details](#cohort-level-details)
 1. [Failure Hash Reported From Drivers](#failure-hash-reported-from-drivers)
-1. [Latest Cabs](#latest-cabs)
+1. [Cabs reported recently](#cabs-reported-recently)
 
 ### Title
 
@@ -90,8 +90,8 @@ The Failure Hash Reported From Drivers section provides information on crash typ
 
 ![Screenshot of the Supplemental Data section.](images/reliability-report-failure-hash.png)
 
-### Latest Cabs
+### Cabs reported recently
 
-The Latest Cabs section provides information on the latest cabs from different OS.
+This section includes details of the cabs recently reported from machines running the failing driver.
 
 ![Screenshot of the Additional References section.](images/reliability-report-latest-cabs.png)
