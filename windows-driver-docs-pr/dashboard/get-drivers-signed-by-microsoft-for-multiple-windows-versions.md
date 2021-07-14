@@ -32,7 +32,7 @@ To confirm the certificate that is used to identify your organization within the
 
 After you sign in to Partner Center and you are ready to sign your submission, you can use either a standard code signing cert or an EV code signing cert. This is true for all operating system versions, not just Windows 10.
 
-This is a [recent change in policy](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification). If you have an EV cert bound to the account for your organization, you’re good to go – that is, you can continue to use a standard SHA-2 certificate when you submit your package.
+If you have an EV cert bound to the account for your organization, you’re good to go – that is, you can continue to use a standard SHA-2 certificate when you submit your package.
 
 ## How to submit HLK test results
 
