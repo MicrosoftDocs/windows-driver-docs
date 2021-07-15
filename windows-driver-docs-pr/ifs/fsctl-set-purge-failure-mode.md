@@ -12,78 +12,55 @@ api_type:
 - HeaderDef
 ---
 
-# FSCTL\_SET\_PURGE\_FAILURE\_MODE control code
+# FSCTL_SET_PURGE_FAILURE_MODE control code
 
-Filter Manager uses the  **FSCTL\_SET\_PURGE\_FAILURE\_MODE** control code to orchestrate the syncrhonization of operations during the lifetime of a section created for [data scan](windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatesectionfordatascan).
+Filter Manager uses the FSCTL_SET_PURGE_FAILURE_MODE control code to synchronize operations during the lifetime of a section created for [data scan](windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatesectionfordatascan).
 
-Filter Manager brackets the life of the section with IRP\_MJ\_FILE\_SYSTEM\_CONTROL calls using this control code.  These serve to instruct a File System (and, rarely, File System MiniFilters) to behave differently if it fails to purge the CacheManager caches.  See the remarks section for more details.
+Filter Manager uses this control code with IRP_MJ_FILE_SYSTEM_CONTROL calls to bracket the life of the section. These calls serve to instruct a file system (and, rarely, minifilters) to behave in the manner described in the Remarks section if it fails to purge the Cache Manager caches.
 
 Filters should never issue this control code.
 
 ## Parameters
 
-The parameter for the operation will be a SET\_PURGE\_FAILURE\_MODE\_INPUT structure (_I'll leave it to you to document that bit because you have tools_)
+The parameter for the operation is a SET_PURGE_FAILURE_MODE_INPUT structure:
+
+typedef struct _SET_PURGE_FAILURE_MODE_INPUT {
+      ULONG Flags;
+} SET_PURGE_FAILURE_MODE_INPUT, *PSET_PURGE_FAILURE_MODE_INPUT;
+
+Where Flags is one of the following values:
+
+| Value | Meaning |
+| ------- | ------- |
+| SET_PURGE_FAILURE_MODE_ENABLED  | Enables purge failure mode  |
+| SET_PURGE_FAILURE_MODE_DISABLED | Disables purge failure mode |
 
 ## Remarks
-For every FSCTL\_SET\_PURGE\_FAILURE\_MODE with the SET\_PURGE\_FAILURE\_MODE\_ENABLED bit set, another one will be issued with the SET\_PURGE\_FAILURE\_MODE\_DISABLED set.   Whilst there is an unbalanced SET\_PURGE\_FAILURE\_MODE\_ENABLED outstanding, filter manager responds to certain failure statuses from certain types of operations by pending the  operation, expediting the close of the section (where possible) and then requeueing the operation to the MiniFilter or File System that issued the failure.
 
-In order to trigger the filter manager to do this the file system (or filter) responds to a failure to purge a section in the following ways.
+For every FSCTL_SET_PURGE_FAILURE_MODE issued with SET_PURGE_FAILURE_MODE_ENABLED set, a FSCTL_SET_PURGE_FAILURE_MODE will be issued with the SET_PURGE_FAILURE_MODE_DISABLED set. While there is an outstanding SET_PURGE_FAILURE_MODE_ENABLED, Filter Manager responds as follows to certain failure statuses for certain types of operations (see below table):
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operation</th>
-<th align="left">Required return status</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>IRP_MJ_CREATE (destructive operations)</p></td>
-<td align="left"><p>STATUS_USER_MAPPED_FILE</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IRP_MJ_WRITE (unbuffered operations <strong>only</strong>)</p></td>
-<td align="left"><p>STATUS_PURGE_FAILED</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>IRP_MJ_SET_INFORMATION</p></td>
-<td align="left"><p>STATUS_PURGE_FAILED</p></td>
-</tr>
-</tbody>
-</table>
+•	Pends the operation, expediting the close of the section (where possible)
+•	Requeues the operation to the minifilter or file system that issued the failure
 
-These statuses should only be returned  while there is a SET\_PURGE\_FAILURE\_MODE\_ENABLED outstanding (no balancing SET\_PURGE\_FAILURE\_MODE\_DISABLED received) - in all other cases error statuses will be returned to the application.
+To trigger the Filter Manager to respond accordingly, the file system (or filter) responds to a failure to purge a section in the following ways:
 
-For any other operation (for instances a cached write), if the filesystem (or filter) fails to purge a section whilst there is an FSCTL\_SET\_PURGE\_FAILURE\_MODE outstanding then it is responsbile for pending the operation and reissuing it when the count of outstanding FSCTL\_SET\_PURGE\_FAILURE\_MODE drops to zero.  If it just returns a failure status (including those listed above) they will be returned to the application.
+| Operation                                 | Required return status  |
+| ---------                                 | ----------------------  |
+| IRP_MJ_CREATE (destructive operations)    | STATUS_USER_MAPPED_FILE |
+| IRP_MJ_WRITE (unbuffered operations only) | STATUS_PURGE_FAILED     |
+| IRP_MJ_SET_INFORMATION                    | STATUS_PURGE_FAILED     |
 
-It should be noted that the error status is processed entirely within Filter Manager as is the requeuing of the failed operation.  This means that neither are visible to filters.  This in turn has has two important implications:
+These statuses should only be returned while there is an outstanding SET_PURGE_FAILURE_MODE_ENABLED (no balancing SET_PURGE_FAILURE_MODE_DISABLED received). In all other cases, error statuses will be returned to the application.
 
-* File system monitoring tools such as [Process Monitor](sysinternals/downloads/procmon) will not report these operations
-* If an upper filter is required to be involved in order for the re-issued operation to succeed, then the requeued operation will fail.  In this situation filter writers are required to ensure that this second filter returns the failure status (_I appreciate that this is a super edge case, but it bit me_)
+For any other operation (for instance, a cached write), if the filesystem (or filter) fails to purge a section while there is an FSCTL_SET_PURGE_FAILURE_MODE outstanding then it is responsible for pending the operation and reissuing it when the count of outstanding FSCTL_SET_PURGE_FAILURE_MODE drops to zero. If the filesystem (or filter) just returns a failure status (including those listed above), that status will be returned to the application.
 
-## OTHER NOTES
+The error status is processed entirely within Filter Manager, as is the requeuing of the failed operation. This means that neither are visible to filters, which has the following important implications:
 
-_I happen to know that you can help things along in the "Pend and post yourself because filter manager won't" case by issuing a non cached zero length write to yourself and arrage to fail it  STATUS\_PURGE\_FAILED, but that probably doesn't need to be documented._
-
+* File system monitoring tools such as [Process Monitor](sysinternals/downloads/procmon) will not report these operations.
+* If an upper filter is required to be involved for the re-issued operation to succeed, then the requeued operation will fail. In this situation filter writers are required to ensure that this second filter returns the failure status.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Ntifs.h (include Ntifs.h or Fltkernel.h)</td>
-</tr>
-</tbody>
-</table>
-
-## See also
+Header: *Ntifs.h* (include Ntifs.h or Fltkernel.h)
+Min Client Version: Windows 8
 
