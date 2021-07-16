@@ -40,6 +40,7 @@ Available starting with Windows 8.1\. Compatible with previous versions of Windo
 * [**ADDRESS_AND_SIZE_TO_SPAN_PAGES**](/windows-hardware/drivers/ddi/wdm/nf-wdm-address_and_size_to_span_pages)
 * [**BYTE_OFFSET**](/windows-hardware/drivers/ddi/wdm/nf-wdm-byte_offset)
 * [**BYTES_TO_PAGES**](/windows-hardware/drivers/ddi/wdm/nf-wdm-bytes_to_pages)
+* [**CONTAINING_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record)
 * [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation)
 * [**KeInitializeCallbackRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializecallbackrecord)
 * [**MmGetMdlByteCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlbytecount)
