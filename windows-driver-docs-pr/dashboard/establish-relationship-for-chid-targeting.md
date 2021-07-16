@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Establish a relationship for HWID and CHID targeting
 
-Establishing a relationship for CHID or HWID targeting is a prerequisite for all shipping label publishing events. Submissions for which a known relationship cannot be validated between the publisher and the targeted HWIDs or CHIDs will be rejected.
+Establishing a relationship for CHID or HWID targeting is a prerequisite for all CHID or HWID targeted driver submissions. Submissions for which a known relationship cannot be validated between the publisher and the targeted HWIDs or CHIDs will be rejected.
 
 **To establish a relationship:**
 
