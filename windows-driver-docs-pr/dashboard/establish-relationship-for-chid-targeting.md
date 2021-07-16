@@ -29,7 +29,7 @@ Establishing a relationship for CHID or HWID targeting is a prerequisite for all
 4. Once the approval email from "OWNER" is received and processed by Microsoft you will be able to create a new shipping label targeting these HWID's and CHID's.
 
 
-**Processing Timeline:**
+**Processing timeline:**
 
 Requests are processed daily by Microsoft, during normal Microsoft Redmond (PST) business hours. Email confirmation will be sent via email once completed to the owning company that requested the relationship.
 
