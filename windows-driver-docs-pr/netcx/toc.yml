@@ -84,6 +84,8 @@
     items: 
     - name: "WDI_TLV_6_GHZ_BAND_CHANNEL"
       href: wdi-tlv-6-ghz-band-channel.md
+    - name: "WDI_TLV_ACTION_FRAME_BODY"
+      href: wdi-tlv-action-frame-body.md
     - name: "WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT"
       href: wdi-tlv-action-frame-device-context.md
     - name: "WDI_TLV_ALLOWED_BSSIDS_LIST"
@@ -136,6 +138,8 @@
       href: wdi-tlv-bssid.md
     - name: "WDI_TLV_CHANNEL_INFO_LIST"
       href: wdi-tlv-channel-info-list.md
+    - name: "WDI_TLV_CHANNEL_NUMBER"
+      href: wdi-tlv-channel-number.md
     - name: "WDI_TLV_CONFIGURED_MAC_ADDRESS"
       href: wdi-tlv-configured-mac-address.md
     - name: "WDI_TLV_CONNECT_BSS_ENTRY"
@@ -174,6 +178,20 @@
       href: wdi-tlv-ft-pmkr0name.md
     - name: "WDI_TLV_FT_REASSOC_PARAMETERS"
       href: wdi-tlv-ft-reassoc-parameters.md
+    - name: "WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS"
+      href: wdi-tlv-ftm-number-of-measurements.md
+    - name: "WDI_TLV_FTM_REQUEST_TIMEOUT"
+      href: wdi-tlv-ftm-request-timeout.md
+    - name: "WDI_TLV_FTM_RESPONSE"
+      href: wdi-tlv-ftm-response.md
+    - name: "WDI_TLV_FTM_RESPONSE_STATUS"
+      href: wdi-tlv-ftm-response-status.md
+    - name: "WDI_TLV_FTM_TARGET_BSS_ENTRY"
+      href: wdi-tlv-ftm-target-bss-entry.md
+    - name: "WDI_TLV_IHV_TASK_DEVICE_CONTEXT"
+      href: wdi-tlv-ihv-task-device-context.md
+    - name: "WDI_TLV_IHV_TASK_REQUEST_PARAMETERS"
+      href: wdi-tlv-ihv-task-request-parameters.md
     - name: "WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO"
       href: wdi-tlv-incoming-association-request-info.md
     - name: "WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS"
@@ -284,6 +302,10 @@
       href: wdi-tlv-radio-state.md
     - name: "WDI_TLV_RADIO_STATE_PARAMETERS"
       href: wdi-tlv-radio-state-parameters.md
+    - name: "WDI_TLV_REQUEST_LCI_REPORT"
+      href: wdi-tlv-request-lci-report.md
+    - name: "WDI_TLV_RETRY_AFTER"
+      href: wdi-tlv-retry-after.md
     - name: "WDI_TLV_ROAMING_NEEDED_PARAMETERS"
       href: wdi-tlv-roaming-needed-parameters.md
     - name: "WDI_TLV_SAE_COMMIT_RESPONSE"
@@ -298,6 +320,8 @@
       href: wdi-tlv-scan-dwell-time.md
     - name: "WDI_TLV_SCAN_MODE"
       href: wdi-tlv-scan-mode.md
+    - name: "WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS"
+      href: wdi-tlv-send-action-frame-response-parameters.md
     - name: "WDI_TLV_SSID"
       href: wdi-tlv-ssid.md
     - name: "WDI_TLV_START_AP_PARAMETERS"
@@ -324,18 +348,24 @@
       href: oid-wdi-task-disconnect.md
     - name: "OID_WDI_TASK_DOT11_RESET"
       href: oid-wdi-task-dot11-reset.md
+    - name: "OID_WDI_TASK_IHV"
+      href: oid-wdi-task-ihv.md
     - name: "OID_WDI_TASK_P2P_DISCOVER"
       href: oid-wdi-task-p2p-discover.md
     - name: "OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME"
       href: oid-wdi-task-p2p-send-request-action-frame.md
     - name: "OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME"
       href: oid-wdi-task-p2p-send-response-action-frame.md
+    - name: "OID_WDI_TASK_REQUEST_FTM"
+      href: oid-wdi-task-request-ftm.md
     - name: "OID_WDI_TASK_ROAM"
       href: oid-wdi-task-roam.md
     - name: "OID_WDI_TASK_SCAN"
       href: oid-wdi-task-scan.md
     - name: "OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE"
       href: oid-wdi-task-send-ap-association-response.md
+    - name: "OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME"
+      href: oid-wdi-task-send-response-action-frame.md
     - name: "OID_WDI_TASK_SET_RADIO_STATE"
       href: oid-wdi-task-set-radio-state.md
     - name: "OID_WDI_TASK_START_AP"
@@ -366,6 +396,10 @@
       href: ndis-status-wdi-indication-dot11-reset-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED"
       href: ndis-status-wdi-indication-ft-assoc-params-needed.md
+    - name: "NDIS_STATUS_WDI_INDICATION_IHV_TASK_COMPLETE"
+      href: ndis-status-wdi-indication-ihv-task-complete.md
+    - name: "NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST"
+      href: ndis-status-wdi-indication-ihv-task-request.md
     - name: "NDIS_STATUS_WDI_INDICATION_P2P_DISCOVERY_COMPLETE"
       href: ndis-status-wdi-indication-p2p-discovery-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_P2P_SEND_REQUEST_ACTION_FRAME_COMPLETE"
@@ -374,6 +408,8 @@
       href: ndis-status-wdi-indication-p2p-send-response-action-frame-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_RADIO_STATUS"
       href: ndis-status-wdi-indication-radio-status.md
+    - name: "NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE"
+      href: ndis-status-wdi-indication-request-ftm-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_ROAM_COMPLETE"
       href: ndis-status-wdi-indication-roam-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED"
@@ -384,6 +420,8 @@
       href: ndis-status-wdi-indication-scan-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE"
       href: ndis-status-wdi-indication-send-ap-association-reponse-complete.md
+    - name: "NDIS_STATUS_WDI_INDICATION_SEND_RESPONSE_ACTION_FRAME_COMPLETE"
+      href: ndis-status-wdi-indication-send-response-action-frame-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_SET_RADIO_STATE_COMPLETE"
       href: ndis-status-wdi-indication-set-radio-state-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_START_AP_COMPLETE"
