@@ -34,9 +34,7 @@ Establishing a relationship for CHID or HWID targeting is a prerequisite for all
 
 **Processing timeline:**
 
-Requests are processed daily by Microsoft, during normal Microsoft Redmond (PST) business hours. Email confirmation will be sent via email once completed to the owning company that requested the relationship.
-
-Typical Turnaround is 24-48 business hours.
+Typical turnaround time is 24-48 Microsoft Redmond (PST) business hours, once the approval email is received by Microsoft. Email confirmation will be sent from Microsoft to the owning company once complete. 
 
 
 
