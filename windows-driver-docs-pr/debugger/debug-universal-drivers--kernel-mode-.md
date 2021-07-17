@@ -54,7 +54,7 @@ This lab walk you through the process of debugging a kernel-mode driver. The exe
 
 ## <span id="echo_driver_lab"></span>Echo driver lab
 
-The Echo driver is a simpler driver then the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step-by-Step Lab (Echo kernel mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you can skip sections 1 and 2 here.
+The Echo driver is a simpler driver than the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step-by-Step Lab (Echo kernel mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you can skip sections 1 and 2 here.
 
 ## <span id="connectto"></span>Section 1: Connect to a kernel-mode WinDbg session
 
