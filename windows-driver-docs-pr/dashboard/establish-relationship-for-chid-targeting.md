@@ -21,7 +21,7 @@ Establishing a relationship for CHID or HWID targeting is a prerequisite for all
 3.	Provide the "OWNER" of the HWID and/or CHID with this information and request that they send an email in the following format, listing the HWIDs and CHIDs the requesting company is approved to target, to HWID-CHID_Validation@Microsoft.com:
 
     Dear Microsoft,
-	Please allow <Requesting Company Name> permission to target our <OWNER Company Name> HWID's listed below:
+	Please allow *Requesting Company Name* permission to target our <OWNER Company Name> HWID's listed below:
     
     - OWNER Company Name and Seller ID:
     - Seller ID of Company Requesting Relationship (Requesting Company):
