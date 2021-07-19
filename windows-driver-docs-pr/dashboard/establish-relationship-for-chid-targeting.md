@@ -33,4 +33,4 @@ Establishing a relationship for computer hardware ID (CHID) or hardware ID (HWID
 
 ## Processing timeline
 
-Typical turnaround time is 24-48 Microsoft Redmond (PST) business hours, once the approval email is received by Microsoft. Email confirmation will be sent from Microsoft to the owning company once complete.
+Typical turnaround time is 24-48 Microsoft Redmond (PST) business hours after the approval email is received by Microsoft. Email confirmation will be sent from Microsoft to the owning company once complete.
