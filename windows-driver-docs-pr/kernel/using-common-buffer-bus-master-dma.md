@@ -22,7 +22,9 @@ To set up a common buffer for bus-master DMA, a bus-master DMA device driver mus
 
 ![diagram illustrating the allocation of a common buffer for bus-master dma.](images/3halcbff.png)
 
-The requested size for the buffer, shown in the previous diagram as LengthForBuffer, determines how many map registers must be used to provide a virtual-to-logical mapping for the common buffer. Use the [**BYTES\_TO\_PAGES**](./mm-bad-pointer.md) macro to determine the maximum number of pages needed (**BYTES\_TO\_PAGES** (*LengthForBuffer*)). This value cannot be greater than the *NumberOfMapRegisters* returned by [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter).
+The requested size for the buffer, shown in the previous diagram as LengthForBuffer, determines how many map registers must be used to provide a virtual-to-logical mapping for the common buffer.
+ Use the [**BYTES_TO_PAGES**](/windows-hardware/drivers/ddi/wdm/nf-wdm-bytes_to_pages) macro to determine the maximum number of pages needed (**BYTES\_TO\_PAGES** (*LengthForBuffer*)).
+  This value cannot be greater than the *NumberOfMapRegisters* returned by [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter).
 
 In addition, the caller must supply the following:
 

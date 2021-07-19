@@ -21,9 +21,11 @@ The remaining members of an MDL are opaque. Do not access the opaque members of 
 
 [**MmGetMdlByteCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlbytecount) returns the size, in bytes, of the I/O buffer.
 
-[**MmGetMdlByteOffset**](./mm-bad-pointer.md) returns the offset within a physical page of the beginning of the I/O buffer.
+[**MmGetMdlByteOffset**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlbyteoffset) returns the offset within a physical page of the beginning of the I/O buffer.
 
-You can allocate an MDL with the [**IoAllocateMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl) routine. To free the MDL, use the [**IoFreeMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreemdl) routine. Alternatively, you can allocate a block of nonpaged memory and then format this block of memory as an MDL by calling the [**MmInitializeMdl**](./mm-bad-pointer.md) routine.
+You can allocate an MDL with the [**IoAllocateMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl) routine.
+To free the MDL, use the [**IoFreeMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreemdl) routine.
+Alternatively, you can allocate a block of nonpaged memory and then format this block of memory as an MDL by calling the [**MmInitializeMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mminitializemdl) routine.
 
 Neither **IoAllocateMdl** nor **MmInitializeMdl** initializes the data array that immediately follows the MDL structure. For an MDL that resides in a driver-allocated block of nonpaged memory, use [**MmBuildMdlForNonPagedPool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool) to initialize this array to describe the physical memory in which the I/O buffer resides.
 
