@@ -204,7 +204,7 @@ MyUSBDriver_EvtDeviceAdd(
 }
 ```
 
-During run time, the implementation of [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) uses the [**PAGED\_CODE**](../kernel/mm-bad-pointer.md) macro to check that the routine is being called in an appropriate environment for pageable code. Make sure you call the macro after declaring all of your variables; otherwise, compilation fails because the generated source files are .c files and not .cpp files.
+During run time, the implementation of [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) uses the [**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code) macro to check that the routine is being called in an appropriate environment for pageable code. Make sure you call the macro after declaring all of your variables; otherwise, compilation fails because the generated source files are .c files and not .cpp files.
 
 The client driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) implementation calls the MyUSBDriver\_CreateDevice helper function to perform the required tasks.
 

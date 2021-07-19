@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # PagedCode rule (wdm)
 
 
-The **PagedCode** rule specifies that the driver calls the [**PAGED\_CODE**](../kernel/mm-bad-pointer.md) macro only when it is executing at **IRQL &lt;= APC\_LEVEL**.
+The **PagedCode** rule specifies that the driver calls the [**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code) macro only when it is executing at **IRQL &lt;= APC\_LEVEL**.
 
 **Driver model: WDM**
 
@@ -46,4 +46,4 @@ Use the following steps to run an analysis of your code:
 
 ## Applies to
 
-[**PAGED\_CODE**](../kernel/mm-bad-pointer.md)
+[**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code)
