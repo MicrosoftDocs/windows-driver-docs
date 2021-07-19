@@ -20,7 +20,7 @@ Usually, a *ControllerControl* routine does at least the following:
 
     If the driver uses DMA, its *ControllerControl* routine usually is responsible for determining whether a given transfer request must be split up into partial transfers due to any system-imposed or device-imposed limitations on the size of each DMA transfer. In these circumstances, the *ControllerControl* routine also is responsible for calling [**AllocateAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel) if the driver has an *AdapterControl* routine.
 
-    If the driver uses PIO, its *ControllerControl* routine also is responsible for [splitting transfer requests](splitting-dma-transfer-requests.md), if its hardware requires it, into partial-transfer ranges and for calling [**MmGetSystemAddressForMdlSafe**](./mm-bad-pointer.md) with the MDL at **Irp-&gt;MdlAddress**.
+    If the driver uses PIO, its *ControllerControl* routine also is responsible for [splitting transfer requests](splitting-dma-transfer-requests.md), if its hardware requires it, into partial-transfer ranges and for calling [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) with the MDL at **Irp-&gt;MdlAddress**.
 
 2.  Programs its hardware for the requested I/O operation
 

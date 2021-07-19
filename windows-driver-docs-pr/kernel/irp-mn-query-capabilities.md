@@ -43,7 +43,7 @@ The **Parameters.DeviceCapabilities.Capabilities** member of the [**IO\_STACK\_L
 
 A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as STATUS\_UNSUCCESSFUL.
 
-If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus.Status** and must not complete the IRP.
+If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus.Status** and must not complete the IRP.
 
 A bus driver sets **Irp-&gt;IoStatus.Status** and completes the IRP.
 

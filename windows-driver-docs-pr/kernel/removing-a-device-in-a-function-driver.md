@@ -50,7 +50,7 @@ A function driver removes a device using a procedure such as the following in it
 
 8. Pass the **IRP\_MN\_REMOVE\_DEVICE** request down to the next driver.
 
-   Set up the IRP stack location for the next lower driver with [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP to the next driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+   Set up the IRP stack location for the next lower driver with [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and pass the IRP to the next driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
    A driver is not required to wait for underlying drivers to finish their remove operations before continuing with its remove activities.
 

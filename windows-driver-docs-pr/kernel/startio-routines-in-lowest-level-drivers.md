@@ -50,7 +50,7 @@ In general, any lower-level device driver's *StartIo* routine is responsible for
 
     See [Adapter Objects and DMA](./introduction-to-adapter-objects.md), and [Maintaining Cache Coherency](maintaining-cache-coherency.md), for additional details.
 
--   If the device uses PIO, mapping the base virtual address of the buffer, described in the IRP at **Irp-&gt;MdlAddress**, to a system-space address with [**MmGetSystemAddressForMdlSafe**](./mm-bad-pointer.md).
+-   If the device uses PIO, mapping the base virtual address of the buffer, described in the IRP at **Irp-&gt;MdlAddress**, to a system-space address with [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe).
 
     For read requests, the device driver's *StartIo* routine can be responsible for calling [**KeFlushIoBuffers**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keflushiobuffers) before PIO operations begin. See [Maintaining Cache Coherency](maintaining-cache-coherency.md) for more information.
 
@@ -86,7 +86,7 @@ If access to the physical device (or the device extension) must be synchronized 
 
 Any driver that uses direct I/O either reads data into or writes data from a locked-down buffer, described by a memory descriptor list (MDL), that the driver finds in the IRP at **Irp-&gt;MdlAddress**. Such a driver commonly uses buffered I/O for device control requests. For more information, see [Handling I/O Control Requests in StartIo Routines](#ddk-handling-i-o-control-requests-in-startio-routines-kg).
 
-The MDL type is an opaque type that drivers do not access directly. Instead, drivers that use PIO remap user-space buffers by calling [**MmGetSystemAddressForMdlSafe**](./mm-bad-pointer.md) with **Irp-&gt;MdlAddress** as a parameter. Drivers that use DMA also pass **Irp-&gt;MdlAddress** to support routines during their transfer operations to have the buffer addresses remapped to logical ranges for their devices.
+The MDL type is an opaque type that drivers do not access directly. Instead, drivers that use PIO remap user-space buffers by calling [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) with **Irp-&gt;MdlAddress** as a parameter. Drivers that use DMA also pass **Irp-&gt;MdlAddress** to support routines during their transfer operations to have the buffer addresses remapped to logical ranges for their devices.
 
 Unless a closely coupled higher-level driver splits up large DMA transfer requests for the underlying device driver, a lowest-level device driver's *StartIo* routine must split up each transfer request that is larger than its device can manage in a single transfer operation. Drivers that use system DMA are required to split transfer requests that are too large for the system DMA controller or for their devices to handle in a single transfer operation.
 

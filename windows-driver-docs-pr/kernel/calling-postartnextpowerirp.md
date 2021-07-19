@@ -16,7 +16,7 @@ Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](/windows-hardwar
 
 A driver must call this routine once for each [**IRP\_MN\_QUERY\_POWER**](./irp-mn-query-power.md) or [**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md) request that it receives. Drivers do not need to call **PoStartNextPowerIrp** when handling [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md) or [**IRP\_MN\_POWER\_SEQUENCE**](./irp-mn-power-sequence.md) requests.
 
-When a driver calls **PoStartNextPowerIrp**, the current IRP stack location must point to the current driver. As a general rule, this call is best made from an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine. **PoStartNextPowerIrp** must be called before [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest), [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md), and **PoCallDriver**. Calling the routines in the other order might cause a system deadlock.
+When a driver calls **PoStartNextPowerIrp**, the current IRP stack location must point to the current driver. As a general rule, this call is best made from an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine. **PoStartNextPowerIrp** must be called before [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest), [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation), and **PoCallDriver**. Calling the routines in the other order might cause a system deadlock.
 
 Even if a driver fails the IRP, it must nevertheless call **PoStartNextPowerIrp** to inform the power manager that it is ready to handle another power IRP.
 

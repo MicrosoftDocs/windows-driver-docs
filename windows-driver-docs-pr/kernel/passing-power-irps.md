@@ -20,7 +20,7 @@ The following figure shows the steps that drivers need to take to pass a power I
 
 As the previous figure shows, in Windows 7 and Windows Vista, a driver must do the following:
 
-1.  Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) if setting an *IoCompletion* routine, or [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) if not setting an *IoCompletion* routine.
+1.  Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) if setting an *IoCompletion* routine, or [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) if not setting an *IoCompletion* routine.
 
     These two routines set the IRP stack location for the next-lower driver. Copying the current stack location ensures that the IRP stack pointer is set to the correct location when the *IoCompletion* routine runs.
 
@@ -38,7 +38,7 @@ As the previous figure shows, a driver must do the following:
 
 1.  Depending on the type of driver, possibly call [**PoStartNextPowerIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp). For more information, see [Calling PoStartNextPowerIrp](calling-postartnextpowerirp.md).
 
-2.  Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) if setting an *IoCompletion* routine, or [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) if not setting an *IoCompletion* routine.
+2.  Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) if setting an *IoCompletion* routine, or [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) if not setting an *IoCompletion* routine.
 
     These two routines set the IRP stack location for the next-lower driver. Copying the current stack location ensures that the IRP stack pointer is set to the correct location when the *IoCompletion* routine runs.
 

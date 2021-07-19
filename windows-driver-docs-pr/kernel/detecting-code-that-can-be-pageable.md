@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-To detect code that runs at IRQL &gt;= DISPATCH\_LEVEL, use the [**PAGED\_CODE**](./mm-bad-pointer.md) macro. In debug mode, this macro generates a message if the code runs at IRQL &gt;= DISPATCH\_LEVEL. Add the macro as the first statement in a routine to mark the whole routine as paged code, as the following example shows:
+To detect code that runs at IRQL &gt;= DISPATCH\_LEVEL, use the [**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code) macro. In debug mode, this macro generates a message if the code runs at IRQL &gt;= DISPATCH\_LEVEL. Add the macro as the first statement in a routine to mark the whole routine as paged code, as the following example shows:
 
 ```cpp
 NTSTATUS 
