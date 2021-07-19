@@ -23,7 +23,7 @@ This rule considers the following MDL access functions:
 
 [**WDF\_MEMORY\_DESCRIPTOR\_INIT\_MDL**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdf_memory_descriptor_init_mdl)
 [**MmGetMdlByteCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlbytecount)
-[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
+[**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe)
 [**MmGetMdlVirtualAddress**](../kernel/mm-bad-pointer.md)
 [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl) (first and second parameter)
 [**KeFlushIoBuffers**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keflushiobuffers)
@@ -74,5 +74,5 @@ Use the following steps to run an analysis of your code:
 [**MmGetMdlByteOffset**](../kernel/mm-bad-pointer.md)
 [**MmGetMdlPfnArray**](../kernel/mm-bad-pointer.md)
 [**MmGetMdlVirtualAddress**](../kernel/mm-bad-pointer.md)
-[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
+[**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe)
 [**MmPrepareMdlForReuse**](../kernel/mm-bad-pointer.md)

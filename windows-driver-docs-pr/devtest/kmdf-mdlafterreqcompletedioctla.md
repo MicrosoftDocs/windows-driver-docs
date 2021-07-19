@@ -66,5 +66,5 @@ Use the following steps to run an analysis of your code:
 [**MmGetMdlByteOffset**](../kernel/mm-bad-pointer.md)
 [**MmGetMdlPfnArray**](../kernel/mm-bad-pointer.md)
 [**MmGetMdlVirtualAddress**](../kernel/mm-bad-pointer.md)
-[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
+[**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe)
 [**MmPrepareMdlForReuse**](../kernel/mm-bad-pointer.md)

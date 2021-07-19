@@ -40,7 +40,7 @@ A pointer to the RX\_CONTEXT structure for this request.
 
 If an MDL exists, then the assumption is that the MDL describes the user buffer, and the system address for the MDL is returned by **RxNewMapUserBuffer**. Otherwise, the user buffer is returned directly by **RxNewMapUserBuffer**.
 
-The **RxNewMapUserBuffer** routine checks if the **CurrentIrp**-&gt;**MdlAddress** member of the *RxContext* variable is **NULL** and returns the **CurrentIrp**-&gt;**UserBuffer** member of the *RxContext* variable when this is the case. If the **CurrentIrp**-&gt;**MdlAddress** member is not **NULL**, then **RxNewMapUserBuffer** will call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to return the MDL from the IRP.
+The **RxNewMapUserBuffer** routine checks if the **CurrentIrp**-&gt;**MdlAddress** member of the *RxContext* variable is **NULL** and returns the **CurrentIrp**-&gt;**UserBuffer** member of the *RxContext* variable when this is the case. If the **CurrentIrp**-&gt;**MdlAddress** member is not **NULL**, then **RxNewMapUserBuffer** will call [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) to return the MDL from the IRP.
 
 Note that the **RxNewMapUserBuffer** routine is only available on Windows XP and Windows 2000.
 
@@ -74,7 +74,7 @@ Note that the **RxNewMapUserBuffer** routine is only available on Windows XP and
 ## See also
 
 
-[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
+[**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe)
 
 [**RxLowIoCompletion**](/windows-hardware/drivers/ddi/lowio/nf-lowio-rxlowiocompletion)
 
