@@ -2,7 +2,7 @@
 title: Bug Check 1A1 WIN32K_CALLOUT_WATCHDOG_LIVEDUMP
 description: The WIN32K_CALLOUT_WATCHDOG_LIVEDUMP has a value of 0x000001A1.
 keywords: ["Bug Check 0x1A1 WIN32K_CALLOUT_WATCHDOG_LIVEDUMP", "WIN32K_CALLOUT_WATCHDOG_LIVEDUMP"]
-ms.date: 02/12/2020
+ms.date: 07/19/2021
 topic_type:
 - apiref
 api_name:
@@ -35,3 +35,13 @@ The following parameters are displayed on the blue screen.
 A callout to Win32k did not return promptly.
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
+
+## Remarks
+
+For general information about working with threads, see:
+
+[Controlling Processes and Threads](controlling-processes-and-threads.md)
+
+[Windows Kernel-Mode Process and Thread Manager](/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager)
+
+
