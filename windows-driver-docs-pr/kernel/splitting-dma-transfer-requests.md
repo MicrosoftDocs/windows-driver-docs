@@ -24,7 +24,7 @@ Any driver might need to split up a transfer request and carry out more than one
 
 A driver can determine the number of map registers needed to transfer all the data specified by an IRP as follows:
 
-1.  Call [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md), passing a pointer to the MDL at **Irp-&gt;MdlAddress**, to get the starting virtual address for the buffer. Note that a driver must not attempt to access memory using this virtual address. The value returned by **MmGetMdlVirtualAddress** is an index into the MDL, not necessarily a valid address.
+1.  Call [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress), passing a pointer to the MDL at **Irp-&gt;MdlAddress**, to get the starting virtual address for the buffer. Note that a driver must not attempt to access memory using this virtual address. The value returned by **MmGetMdlVirtualAddress** is an index into the MDL, not necessarily a valid address.
 
 2.  Pass the returned index and the value of **Length** in the driver's I/O stack location of the IRP to the [**ADDRESS\_AND\_SIZE\_TO\_SPAN\_PAGES**](./mm-bad-pointer.md) macro.
 
@@ -64,7 +64,7 @@ Other class/port drivers can use this technique only if the class driver can det
 
 A monolithic driver (that is, a driver not part of a class/port pair) for a DMA device must split up large transfer requests for itself. Such drivers usually split a large request into pieces and carry out a sequence of DMA operations in order to satisfy the IRP.
 
-If a transfer request is too large for the underlying device driver to handle, a higher-level driver can call [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) and [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl), then set up a sequence of partial-transfer IRPs for underlying device drivers.
+If a transfer request is too large for the underlying device driver to handle, a higher-level driver can call [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) and [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl), then set up a sequence of partial-transfer IRPs for underlying device drivers.
 
  
 

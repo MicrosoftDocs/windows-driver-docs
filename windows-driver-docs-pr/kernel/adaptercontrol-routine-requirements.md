@@ -34,7 +34,7 @@ Depending on the driver's design, its *AdapterControl* routine also can do the f
 
     For example, an *AdapterControl* routine might call [**KeSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimer) with the entry point for a [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine that times out DMA transfer operations for the driver.
 
-4.  Call [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) with the MDL pointer passed at **Irp-&gt;MdlAddress** to get an index for the start of the transfer, suitable for passing to [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer).
+4.  Call [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) with the MDL pointer passed at **Irp-&gt;MdlAddress** to get an index for the start of the transfer, suitable for passing to [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer).
 
 5.  Call **MapTransfer** to set up the system DMA controller or to obtain a physical-to-logical address mapping for a bus-master device.
 

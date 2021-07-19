@@ -17,7 +17,7 @@ An MDL structure is semi-opaque. Your driver should directly access only the **N
 
 The remaining members of an MDL are opaque. Do not access the opaque members of an MDL directly. Instead, use the following macros, which the operating system provides to perform basic operations on the structure:
 
-[**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) returns the virtual memory address of the I/O buffer that is described by the MDL.
+[**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) returns the virtual memory address of the I/O buffer that is described by the MDL.
 
 [**MmGetMdlByteCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlbytecount) returns the size, in bytes, of the I/O buffer.
 
