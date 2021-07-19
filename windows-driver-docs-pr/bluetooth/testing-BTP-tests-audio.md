@@ -45,9 +45,24 @@ To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](t
 
 ## Known issues
 
-- BM64 EVB has the following 4 known test failures:
+- BM64 EVB has the following 8 known test failures:
 
-  - `BluetoothTests::TaefAudioTests::VoiceSinkVolumeUpTest`
-  - `BluetoothTests::TaefAudioTests::VoiceSinkVolumeDownTest`
-  - `BluetoothTests::TaefAudioTests::VoiceSourceVolumeUpTest`
-  - `BluetoothTests::TaefAudioTests::VoiceSourceVolumeDownTest`
+  - `BluetoothTests::TaefAudioTests::MusicMediaReceiverMeasuredVolumeUpTest`
+  - `BluetoothTests::TaefAudioTests::MusicMediaReceiverMeasuredVolumeDownTest`
+  - `BluetoothTests::TaefAudioTests::MusicMediaSenderMeasuredVolumeUpTest`
+  - `BluetoothTests::TaefAudioTests::MusicMediaSenderMeasuredVolumeDownTest`
+  - `BluetoothTests::TaefAudioTests::VoiceMediaReceiverMeasuredVolumeUpTest`
+  - `BluetoothTests::TaefAudioTests::VoiceMediaReceiverMeasuredVolumeDownTest`
+  - `BluetoothTests::TaefAudioTests::VoiceMediaSenderMeasuredVolumeUpTest`
+  - `BluetoothTests::TaefAudioTests::VoiceMediaSenderMeasuredVolumeDownTest`
+
+- BTP may incorrectly identify support for the [Unified Audio Endpoint feature](https://blogs.windows.com/windows-insider/2021/04/29/announcing-windows-10-insider-preview-build-21370/) on some Windows builds, resulting in a test failure when identifying audio endpoints.
+  - `Error: [BluetoothTestHelpers::AudioDevice::WaitForAudioSourcesState]: Assertion failed: AudioSourceDeviceVoiceSourceModule->WaitForAudioSourceState( areReady, areReady ? c_audioSinkInterfaceBringupTimeout : c_audioSinkInterfaceRemovalTimeout)`
+  - Upgrading to build 22000 or later should resolve the issue.
+
+- The following mute tests will fail on Windows builds 21275 and later:
+
+  - `BluetoothTests::TaefAudioTests::VoiceInterruptMusicMeasuredMuteTest`
+  - `BluetoothTests::TaefAudioTests::MeasuredMuteAndUnmuteFromMusicMediaSenderTest`
+  - `BluetoothTests::TaefAudioTests::MeasuredMuteAndUnmuteFromVoiceMediaSenderTest`
+  

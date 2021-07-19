@@ -49,3 +49,8 @@ To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](t
 ## Known issues
 
 - Stress tests: Tests run in a tight loop using an LE device may cause pairing or unpairing to fail.
+
+- BM64 EVB has the following 2 known test failures:
+
+  - `BluetoothTests::TaefAudioHidScenarioTests::VoiceAndKeyboardTest`
+  - `BluetoothTests::TaefAudioHidScenarioTests::MusicAndKeyboardTest`
