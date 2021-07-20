@@ -17,6 +17,8 @@ Establishing a relationship for computer hardware ID (CHID) or hardware ID (HWID
 
 The owner of the HWIDs or CHIDs should send an email to Microsoft requesting the relationship in the following format, listing the specific HWIDs and CHIDs the publishing company is approved to target. The completed email should be sent to HWID-CHID_Validation@microsoft.com.
 
+</br>
+
 ---
 
 Dear Microsoft,
