@@ -2,6 +2,7 @@
 title: FSCTL_SET_PURGE_FAILURE_MODE control code
 description: Filter Manager uses FSCTL\_SET\_PURGE\_FAILURE\_MODE control code to orchestrate the syncrhonization of operations during the lifetime of a section created for [data scan](windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatesectionfordatascan).
 keywords: ["FSCTL_SET_PURGE_FAILURE_MODE control code Installable File System Drivers"]
+ms.date: 07/19/2021
 topic_type:
 - apiref
 api_name:
@@ -14,7 +15,7 @@ api_type:
 
 # FSCTL_SET_PURGE_FAILURE_MODE control code
 
-Filter Manager uses the FSCTL_SET_PURGE_FAILURE_MODE control code to synchronize operations during the lifetime of a section created for [data scan](windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatesectionfordatascan).
+Filter Manager uses the **FSCTL_SET_PURGE_FAILURE_MODE** control code to synchronize operations during the lifetime of a section created for [data scan](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatesectionfordatascan).
 
 Filter Manager uses this control code with IRP_MJ_FILE_SYSTEM_CONTROL calls to bracket the life of the section. These calls serve to instruct a file system (and, rarely, minifilters) to behave in the manner described in the Remarks section if it fails to purge the Cache Manager caches.
 
@@ -39,8 +40,8 @@ Where Flags is one of the following values:
 
 For every FSCTL_SET_PURGE_FAILURE_MODE issued with SET_PURGE_FAILURE_MODE_ENABLED set, a FSCTL_SET_PURGE_FAILURE_MODE will be issued with the SET_PURGE_FAILURE_MODE_DISABLED set. While there is an outstanding SET_PURGE_FAILURE_MODE_ENABLED, Filter Manager responds as follows to certain failure statuses for certain types of operations (see below table):
 
-•	Pends the operation, expediting the close of the section (where possible)
-•	Requeues the operation to the minifilter or file system that issued the failure
+• Pends the operation, expediting the close of the section (where possible)
+• Requeues the operation to the minifilter or file system that issued the failure
 
 To trigger the Filter Manager to respond accordingly, the file system (or filter) responds to a failure to purge a section in the following ways:
 
@@ -56,11 +57,10 @@ For any other operation (for instance, a cached write), if the filesystem (or fi
 
 The error status is processed entirely within Filter Manager, as is the requeuing of the failed operation. This means that neither are visible to filters, which has the following important implications:
 
-* File system monitoring tools such as [Process Monitor](sysinternals/downloads/procmon) will not report these operations.
+* File system monitoring tools such as [Process Monitor](/sysinternals/downloads/procmon) will not report these operations.
 * If an upper filter is required to be involved for the re-issued operation to succeed, then the requeued operation will fail. In this situation filter writers are required to ensure that this second filter returns the failure status.
 
 ## Requirements
 
 Header: *Ntifs.h* (include Ntifs.h or Fltkernel.h)
 Min Client Version: Windows 8
-
