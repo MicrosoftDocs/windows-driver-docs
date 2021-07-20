@@ -40,7 +40,7 @@ Drivers declare support for each tier by setting the following [**DXGK_DRIVERCAP
 
 | Tier   | Tier Meaning | DXGK_VIDMMCAPS Value |
 | ----   | ------------ | -------------------- |
-| Tier 1 | Copy support: Copy to and from cross-adapter resources | **CrossAdapterResource** (Exposed to user mode by graphics kernel via the **SupportCrossAdapterResource** bit in [**D3DKMT_WDDM_1_3_CAPS**](/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmt_wddm_1_3_caps)) |
+| Tier 1 | Copy support: Copy to and from cross-adapter resources | **CrossAdapterResource** (Exposed to user mode by graphics kernel via the **SupportCrossAdapterResource** bit in [**D3DKMT_WDDM_1_3_CAPS**](/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmt_wddm_1_3_caps) |
 | Tier 2 | Texture support: Texture from cross-adapter resources) |  **CrossAdapterResourceTexture** (includes support for shader resource view, unordered access view, and render target operations |
 | Tier 3 | CASO support: Scan-out from cross-adapter resources  | **CrossAdapterResourceScanout** |
 

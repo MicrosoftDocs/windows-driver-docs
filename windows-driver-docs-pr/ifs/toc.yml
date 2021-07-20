@@ -840,6 +840,8 @@
       href: fsctl-request-oplock-level-2.md
     - name: "FSCTL_SET_EXTERNAL_BACKING"
       href: fsctl-set-external-backing.md
+    - name: "FSCTL_SET_PURGE_FAILURE_MODE"
+      href: fsctl-set-purge-failure-mode.md
     - name: "FSCTL_SET_PERSISTENT_VOLUME_STATE"
       href: fsctl-set-persistent-volume-state.md
     - name: "FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS"
