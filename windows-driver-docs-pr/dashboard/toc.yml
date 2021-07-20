@@ -148,6 +148,10 @@
             href: user-mode-reliability-for-crashes-in-windows-components.md
           - name: "Number of user mode crashes in Collaboration and Communications Applications"
             href: graphics-user-mode-crashes-collaboration-standard.md
+          - name: "Number of user mode crashes or TDRs in UWP gaming applications"
+            href: number-user-mode-crashes-in-UWP-gaming-applications.md
+          - name: "Number of user mode crashes or TDRs in Win32 gaming applications"
+            href: number-user-mode-crashes-in-win32-gaming-applications.md
           - name: "Percent of devices with WinML Runtime Errors"
             href: pct-devices-winml-runtime-error.md
         - name: "Ecosystem audience measures"
