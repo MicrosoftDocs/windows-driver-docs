@@ -186,42 +186,42 @@
             href: pct-swdrm-playback-failures-on-netflix.md
           - name: "Ecosystem Netflix HWDRM Quality Comparison"
             href: ecosystem-netflix-hwdrm-quality-comparison.md
-        - name: "Wi-Fi"
-          items:
-          - name: "Wi-Fi Measures"
-            href: wi-fi-measures.md
-          - name: "Ecosystem Netflix HWDRM Quality Comparison"
-            href: ecosystem-netflix-hwdrm-quality-comparison.md
-          - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 
-            href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-ecosystem.md
-          - name: "Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary" 
-            href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-ecosystem.md
-          - name: "Myriad of machines that had a TDR caused by a crash in the graphics driver binary" 
-            href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
-          - name: "Number of user mode crashes in Microsoft Edge"
-            href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
-          - name: "Number of user mode crashes in top Microsoft apps"
-            href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
-          - name: "Number of user mode crashes in creative applications"
-            href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps.md
-          - name: "Number of user mode crashes in Microsoft Photos app"
-            href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
-          - name: "Number of user mode crashes in Windows Components"
-            href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
-          - name: "Number of crashes and hangs in UWP games"
-            href: number-user-mode-crashes-in-UWP-gaming-applications.md
-          - name: "Number of crashes and hangs in Win32 games"
-            href: number-user-mode-crashes-in-win32-gaming-applications.md
-          - name: "Percent of SWDRM playback failures on Netflix"
-            href: pct-swdrm-playback-failures-on-netflix.md
-          - name: "Percent of devices with WinML Runtime Errors"
-            href: pct-devices-winml-runtime-error-ecosystem.md
-          - name: "Percent of Wi-Fi connection failures from devices and access-point pairs that have greater than 50 percent signal quality"
-            href: percent-of-wifi-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-          - name: "Percent of internet connection failures of device and access-point pairs that have greater than 50 percent signal quality"
-            href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-          - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect that have a greater than 50% signal quality"
-            href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
+      - name: "Wi-Fi"
+        items:
+        - name: "Wi-Fi Measures"
+          href: wi-fi-measures.md
+        - name: "Ecosystem Netflix HWDRM Quality Comparison"
+          href: ecosystem-netflix-hwdrm-quality-comparison.md
+        - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 
+          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-ecosystem.md
+        - name: "Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary" 
+          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-ecosystem.md
+        - name: "Myriad of machines that had a TDR caused by a crash in the graphics driver binary" 
+          href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
+        - name: "Number of user mode crashes in Microsoft Edge"
+          href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
+        - name: "Number of user mode crashes in top Microsoft apps"
+          href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
+        - name: "Number of user mode crashes in creative applications"
+          href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps.md
+        - name: "Number of user mode crashes in Microsoft Photos app"
+          href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
+        - name: "Number of user mode crashes in Windows Components"
+          href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
+        - name: "Number of crashes and hangs in UWP games"
+          href: number-user-mode-crashes-in-UWP-gaming-applications.md
+        - name: "Number of crashes and hangs in Win32 games"
+          href: number-user-mode-crashes-in-win32-gaming-applications.md
+        - name: "Percent of SWDRM playback failures on Netflix"
+          href: pct-swdrm-playback-failures-on-netflix.md
+        - name: "Percent of devices with WinML Runtime Errors"
+          href: pct-devices-winml-runtime-error-ecosystem.md
+        - name: "Percent of Wi-Fi connection failures from devices and access-point pairs that have greater than 50 percent signal quality"
+          href: percent-of-wifi-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
+        - name: "Percent of internet connection failures of device and access-point pairs that have greater than 50 percent signal quality"
+          href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
+        - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect that have a greater than 50% signal quality"
+          href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
     - name: "Appendix"
       href: measure-appendix.md
     - name: "Glossary"
