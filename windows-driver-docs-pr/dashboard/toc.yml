@@ -196,8 +196,6 @@
             href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-ecosystem.md
           - name: "Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary" 
             href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-ecosystem.md
-          - name: "Myriad of machines that had an LKE caused by a crash in the graphics driver binary" 
-            href: myriad-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-ecosystem.md
           - name: "Myriad of machines that had a TDR caused by a crash in the graphics driver binary" 
             href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
           - name: "Number of user mode crashes in Microsoft Edge"
@@ -211,9 +209,9 @@
           - name: "Number of user mode crashes in Windows Components"
             href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
           - name: "Number of crashes and hangs in UWP games"
-            href: number-crashes-and-hangs-in-uwp-games.md
+            href: number-user-mode-crashes-and-hangs-in-uwp-gaming-applications.md
           - name: "Number of crashes and hangs in Win32 games"
-            href: number-crashes-and-hangs-in-win32-games.md
+            href: number-user-mode-crashes-and-hangs-in-win32-gaming-applications.md
           - name: "Percent of SWDRM playback failures on Netflix"
             href: pct-swdrm-playback-failures-on-netflix.md
           - name: "Percent of devices with WinML Runtime Errors"
