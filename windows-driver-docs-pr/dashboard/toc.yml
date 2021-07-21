@@ -36,6 +36,8 @@
         href: other-policies.md
       - name: "Extension INF Targeting Rules"
         href: extension-inf-targeting-rules.md
+      - name: "Establish HWID or CHID targeting relationship"
+        href: establish-relationship-for-chid-targeting.md
       - name: "Driver Release Cadence"
         href: driver-release-cadence.md
     - name: "Microsoft driver measures"
