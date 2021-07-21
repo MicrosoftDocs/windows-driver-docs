@@ -142,8 +142,6 @@
             href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
           - name: "Percent of SWDRM playback failures on Netflix"
             href: pct-swdrm-playback-failures-on-netflix.md
-          - name: "Percent of machines with display issues when resume from low power state"
-            href: graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md
           - name: "Ecosystem Netflix HWDRM Quality Comparison"
             href: ecosystem-netflix-hwdrm-quality-comparison.md
         - name: "Wi-Fi"
@@ -172,8 +170,6 @@
             href: number-crashes-and-hangs-in-win32-games.md
           - name: "Percent of SWDRM playback failures on Netflix"
             href: pct-swdrm-playback-failures-on-netflix.md
-          - name: "Percent of machines with display issues when resume from low power state"
-            href: graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md
           - name: "Ecosystem Netflix HWDRM Quality Comparison"
             href: ecosystem-netflix-hwdrm-quality-comparison.md
       - name: "Wi-Fi"
