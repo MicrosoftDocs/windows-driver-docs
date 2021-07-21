@@ -1,6 +1,6 @@
 ---
 title: Standard Options
-description: Standard options are associated with standard features and are identified by predefined names that the GPD language recognizes. 
+description: Standard options are associated with standard features and are identified by predefined names that the GPD language recognizes.
 keywords:
 - printer options WDK Unidrv , standard
 - standard options WDK Unidrv
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Standard Options
 
 
-Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit (WDK). 
+Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit (WDK).
 
 > [!IMPORTANT]
 > This resource may not be available in some languages and countries.
@@ -210,14 +210,24 @@ The following table lists the standard option names that are permitted for each 
 			<td colspan="2">No standard options</td>
 			<td>Yes</td>
 		</tr>
+		<tr>
+			<td><b>NUp</b></td>
+			<td colspan="2">No standard options</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><b>JobPasscode</b></td>
+			<td>OFF<br>ON</td>
+			<td>Off<br>On</td>
+			<td>No</td>
+		</tr>
 	</tbody>
 </table>
-
 
 ## Related topics
 
 
-[Controlling Image Quality](controlling-image-quality.md)  
-[Halftoning with Unidrv](halftoning-with-unidrv.md)  
-[Specifying Paper Orientation](specifying-paper-orientation.md)  
+[Controlling Image Quality](controlling-image-quality.md)
+[Halftoning with Unidrv](halftoning-with-unidrv.md)
+[Specifying Paper Orientation](specifying-paper-orientation.md)
 [Standard features](standard-features.md)

@@ -20,7 +20,7 @@ Drivers of subordinate devices that use packet-based DMA call the following gene
 
     **AllocateAdapterChannel**, in turn, calls the driver's [*AdapterControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine.
 
--   [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) to get an index into the MDL, required as an parameter in the initial call to **MapTransfer**
+-   [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) to get an index into the MDL, required as an parameter in the initial call to **MapTransfer**
 
 -   [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer) to program the system DMA controller for the transfer operation
 

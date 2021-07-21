@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 When [**AllocateAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel) transfers control to a driver's [*AdapterControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine, it has allocated a set of map registers. However, the driver must map system physical memory for the current IRP's transfer request to the bus-master adapter's logical address range, as follows:
 
-1.  Call [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) with the MDL at **Irp-&gt;MdlAddress** to get an index for the system physical address where the transfer should start.
+1.  Call [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) with the MDL at **Irp-&gt;MdlAddress** to get an index for the system physical address where the transfer should start.
 
     The return value is a required parameter (*CurrentVa*) to [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer).
 
@@ -26,7 +26,7 @@ The driver can then set up the adapter for the transfer operation. The following
 
 As the previous figure shows, a driver's *AdapterControl* routine sets up a bus-master DMA operation as follows:
 
-1.  The *AdapterControl* routine gets the address at which to start the transfer. For the initial transfer required to satisfy an IRP, the *AdapterControl* routine calls [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md), passing a pointer to the MDL at **Irp-&gt;MdlAddress**, which describes the buffer for this DMA transfer.
+1.  The *AdapterControl* routine gets the address at which to start the transfer. For the initial transfer required to satisfy an IRP, the *AdapterControl* routine calls [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress), passing a pointer to the MDL at **Irp-&gt;MdlAddress**, which describes the buffer for this DMA transfer.
 
     **MmGetMdlVirtualAddress** returns a virtual address that the driver can use as an index for the system physical address where the transfer should start.
 

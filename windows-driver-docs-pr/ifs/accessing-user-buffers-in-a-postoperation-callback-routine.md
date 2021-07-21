@@ -40,7 +40,7 @@ A minifilter driver [**postoperation callback routine**](/windows-hardware/drive
     status = FltDecodeParameters(CallbackData, &ReadMdl, NULL, NULL, NULL);
     ```
 
--   If an MDL exists for the buffer, call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to obtain the system address for the buffer and then use this address to access the buffer. (**MmGetSystemAddressForMdlSafe** can be called at IRQL &lt;= DISPATCH\_LEVEL.)
+-   If an MDL exists for the buffer, call [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) to obtain the system address for the buffer and then use this address to access the buffer. (**MmGetSystemAddressForMdlSafe** can be called at IRQL &lt;= DISPATCH\_LEVEL.)
 
     Continuing from the previous example, the following code obtains the system address.
 
@@ -60,7 +60,7 @@ A minifilter driver [**postoperation callback routine**](/windows-hardware/drive
 
     -   If the FLT\_IS\_SYSTEM\_BUFFER macro returns **TRUE**, the operation uses buffered I/O, and the buffer can safely be accessed at IRQL = DISPATCH\_LEVEL.
 
-    -   If the FLT\_IS\_SYSTEM\_BUFFER macro returns **FALSE**, the buffer cannot safely be accessed at IRQL = DISPATCH\_LEVEL. If the postoperation callback routine can be called at DISPATCH\_LEVEL, it must call [**FltDoCompletionProcessingWhenSafe**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdocompletionprocessingwhensafe) to pend the operation until it can be processed at IRQL &lt;= APC\_LEVEL. The callback routine that is pointed to by the *SafePostCallback* parameter of **FltDoCompletionProcessingWhenSafe** should first call [**FltLockUserBuffer**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer) to lock the buffer and then call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to obtain the system address for the buffer.
+    -   If the FLT\_IS\_SYSTEM\_BUFFER macro returns **FALSE**, the buffer cannot safely be accessed at IRQL = DISPATCH\_LEVEL. If the postoperation callback routine can be called at DISPATCH\_LEVEL, it must call [**FltDoCompletionProcessingWhenSafe**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdocompletionprocessingwhensafe) to pend the operation until it can be processed at IRQL &lt;= APC\_LEVEL. The callback routine that is pointed to by the *SafePostCallback* parameter of **FltDoCompletionProcessingWhenSafe** should first call [**FltLockUserBuffer**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer) to lock the buffer and then call [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) to obtain the system address for the buffer.
 
 A postoperation callback routine should treat a buffer in a fast I/O operation as follows:
 

@@ -20,7 +20,7 @@ When a driver's dispatch routine receives an IRP, it must call [**IoGetCurrentIr
 
 ### A higher-level driver should pass an I/O request on to a next-lower driver as follows:
 
-1.  If the driver will pass the input IRP on to the next lower-level driver, the dispatch routine should call [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) to set up the I/O stack location of the next-lower driver.
+1.  If the driver will pass the input IRP on to the next lower-level driver, the dispatch routine should call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) to set up the I/O stack location of the next-lower driver.
 
     If the driver calls [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) to allocate one or more additional IRPs for lower drivers, the dispatch routine must initialize the next-lower driver's I/O stack location by following the steps that are described in [Processing IRPs in an Intermediate-Level Driver](processing-irps-in-an-intermediate-level-driver.md).
 

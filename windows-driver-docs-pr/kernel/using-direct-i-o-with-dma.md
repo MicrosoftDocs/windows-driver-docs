@@ -28,7 +28,7 @@ The previous figure illustrates how drivers can use the IRP's **MdlAddress** to 
 
 4.  The I/O manager provides a pointer to the MDL (**MdlAddress**) in an IRP that requests a transfer operation. Until the I/O manager or file system calls [**MmUnlockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunlockpages) after the driver completes the IRP, the physical pages described in the MDL remain locked down and assigned to the buffer. However, the virtual addresses in such an MDL can become invisible (and invalid), even before the IRP is sent to the device driver or to any intermediate driver that might be layered above the device driver.
 
-5.  If the driver uses packet-based system or bus-master DMA, its [*AdapterControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine calls [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) with the IRP's **MdlAddress** pointer to get the base virtual address for the MDL's page-based entries.
+5.  If the driver uses packet-based system or bus-master DMA, its [*AdapterControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine calls [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) with the IRP's **MdlAddress** pointer to get the base virtual address for the MDL's page-based entries.
 
 6.  The *AdapterControl* routine then calls [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer) with the base address returned by **MmGetMdlVirtualAddress**, to read data from the device directly into physical memory. (For more information, see [Adapter Objects and DMA](./introduction-to-adapter-objects.md).)
 

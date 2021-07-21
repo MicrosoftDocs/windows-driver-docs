@@ -45,7 +45,7 @@ On success, a driver sets **Irp-&gt;IoStatus.Information** to zero.
 
 If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
+Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
 
 ## Operation
 

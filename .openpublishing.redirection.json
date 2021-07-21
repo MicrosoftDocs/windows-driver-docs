@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/mobile-broadband-class-driver-logs--event-trace-log-tracing.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-collecting-logs",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/whea/persistence-of-pfa-results.md",
             "redirect_URL":  "/windows-hardware/drivers/whea/how-to-manage-the-pfa-memory-list",
             "redirect_document_id":  false

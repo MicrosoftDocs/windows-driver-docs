@@ -2890,8 +2890,6 @@
         href: ihv-guidance-for-implementing-multimode-and-multicarrier-capable-mb-devices.md
       - name: "Mobile Broadband Device Firmware Update"
         href: mobile-broadband-device-firmware-update.md
-      - name: "Mobile Broadband Class Driver Logs: Event Trace Log Tracing"
-        href: mobile-broadband-class-driver-logs--event-trace-log-tracing.md
       - name: "Mobile Broadband Implementation Guidelines for USB Devices"
         href: mobile-broadband-implementation-guidelines-for-usb-devices.md
       - name: "Collecting Mobilebroadband Logs"

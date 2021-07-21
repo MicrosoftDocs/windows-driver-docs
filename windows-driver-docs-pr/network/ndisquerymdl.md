@@ -39,7 +39,7 @@ A pointer to a caller-supplied variable in which this macro returns the base vir
 A pointer to a caller-supplied variable in which this macro returns the length, in bytes, of the virtual address range that is described by the MDL.
 
 *\_Priority*   
-A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) macro.
+A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) macro.
 
 ## Return value
 
@@ -83,7 +83,7 @@ The **NdisQueryMdl** macro provides an MDL-based version of the [**NdisQueryBuff
 ## See also
 
 
-[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
+[**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe)
 
 [**NdisQueryBuffer**](/previous-versions/windows/hardware/network/ff554407(v=vs.85))
 

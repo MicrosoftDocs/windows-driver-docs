@@ -27,7 +27,7 @@ Driver Verifier adds the following checks when you activate Enhanced I/O Verific
 
 -   Monitors the use of [**IoDeleteDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice) to verify that the driver is not deleting the same device more that once and to detect inappropriate detaching and deleting of device objects.
 
--   Verifies that the driver correctly unwinds all [**IoSkipCurrentIrpStackLocation**](../kernel/mm-bad-pointer.md) calls.
+-   Verifies that the driver correctly unwinds all [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) calls.
 
 New stresses and tests include:
 

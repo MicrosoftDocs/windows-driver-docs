@@ -1504,9 +1504,19 @@
     href: rtlenlargedintegermultiply.md
   - name: "Windows kernel global variables"
     href: mm64bitphysicaladdress.md
-  - name: "Windows kernel macros"
-    href: mm-bad-pointer.md
   - name: "Windows kernel opaque structures"
     href: eprocess.md
   - name: "Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD"
     href: working-with-guid-device-reset-interface-standard.md
+- name: "Macros"
+  items:
+  - name: "MM_BAD_POINTER macro"
+    href: mm-bad-pointer.md
+  - name: "PAGED_CODE macro"
+    href: paged_code.md
+  - name: "PAGED_CODE_LOCKED macro"
+    href: paged_code_locked.md
+  - name: "ZwCurrentProcess macro"
+    href: zwcurrentprocess.md
+  - name: "ZwCurrentThread macro"
+    href: zwcurrentthread.md

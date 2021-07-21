@@ -27,7 +27,7 @@ Use these rules to verify that your driver can correctly processes IRPs in vario
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="storport-pagedcode.md" data-raw-source="[&lt;strong&gt;PagedCode&lt;/strong&gt;](storport-pagedcode.md)"><strong>PagedCode</strong></a></p></td>
-<td align="left"><p>This rule verifies that when the <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PAGED_CODE&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PAGED_CODE</strong></a> macro is called, the driver is at <strong>IRQL &lt; DISPATCH_LEVEL</strong>. Any code executing at <strong>IRQL &gt;= DISPATCH_LEVEL</strong> must be in non-paged memory to avoid causing page faults.</p></td>
+<td align="left"><p>This rule verifies that when the <a href="/windows-hardware/drivers/kernel/paged_code"><strong>PAGED_CODE</strong></a> macro is called, the driver is at <strong>IRQL &lt; DISPATCH_LEVEL</strong>. Any code executing at <strong>IRQL &gt;= DISPATCH_LEVEL</strong> must be in non-paged memory to avoid causing page faults.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="storport-storportstatuspending.md" data-raw-source="[&lt;strong&gt;StorPortStatusPending&lt;/strong&gt;](storport-storportstatuspending.md)"><strong>StorPortStatusPending</strong></a></p></td>
