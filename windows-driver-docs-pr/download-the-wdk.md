@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 08/17/2020
+ms.date: 07/12/2021
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
