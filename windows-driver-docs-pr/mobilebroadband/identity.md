@@ -1,14 +1,13 @@
 ---
 title: Identity (SoftwareInfo)
 description: Identity (SoftwareInfo)
-ms.assetid: fcec93ad-54d4-466e-8fac-888377115689
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Identity (SoftwareInfo)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Identity element specifies the publisher identity and application manifest name of the app.
 

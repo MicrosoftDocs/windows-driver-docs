@@ -1,7 +1,6 @@
 ---
 title: ustr
 description: The ustr extension displays a UNICODE_STRING structure.
-ms.assetid: 17b84bf0-5a5b-47a5-893b-fdc58ca2afc3
 keywords: ["strings", "UNICODE_STRING structure", "ustr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the hexadecimal address of the UNICODE\_STRING structure.
 
 For more information about UNICODE\_STRING structures, see the Microsoft Windows SDK documentation.
 
-Remarks
--------
+## Remarks
 
 Unicode strings are counted 16-bit character strings, as defined in the following structure:
 

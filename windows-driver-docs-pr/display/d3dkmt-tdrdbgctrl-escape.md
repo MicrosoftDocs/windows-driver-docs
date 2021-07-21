@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_TDRDBGCTRL\_ESCAPE structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: dcb558ed-8072-4454-8aea-d966a65b5d63
+description: Learn about the D3DKMT\_TDRDBGCTRL\_ESCAPE structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_TDRDBGCTRL_ESCAPE structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_TDRDBGCTRL_ESCAPE {
@@ -32,15 +30,13 @@ typedef struct _D3DKMT_TDRDBGCTRL_ESCAPE {
 } D3DKMT_TDRDBGCTRL_ESCAPE;
 ```
 
-Members
--------
+## Members
 
 **TdrControl**
 
 **NodeOrdinal**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

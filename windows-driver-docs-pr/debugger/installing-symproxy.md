@@ -1,7 +1,6 @@
 ---
 title: Installing SymProxy
 description: Installing SymProxy
-ms.assetid: 63633de7-d254-415d-bf06-c0e81bd03e74
 keywords: ["SymProxy, installation"]
 ms.date: 03/12/2019
 ms.localizationpriority: medium
@@ -34,13 +33,7 @@ To install SymProxy on the server, copy symproxy.dll, symsrv.dll and symproxy.ma
 
 In order to prevent problems that could occur in accessing the Microsoft Symbol Store, create a blank file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. The contents of this file are not important. When symsrv.yes file is present, it automatically accepts the EULA for the Microsoft Public Symbol Store.
 
-Note that the certificates that are normally installed with IIS and Windows server such as the "Baltimore CyberTrust Root" are used for HTTPS/TLS communication to the upstream provider, and they need to be in the Trusted Root store on the machine where SymProxy is running. For general information on troubleshooting SSL issues, see [Troubleshooting SSL related issues (Server Certificate)](https://docs.microsoft.com/iis/troubleshoot/security-issues/troubleshooting-ssl-related-issues-server-certificate).
+Note that the certificates that are normally installed with IIS and Windows server such as the "Baltimore CyberTrust Root" are used for HTTPS/TLS communication to the upstream provider, and they need to be in the Trusted Root store on the machine where SymProxy is running. For general information on troubleshooting SSL issues, see [Troubleshooting SSL related issues (Server Certificate)](/iis/troubleshoot/security-issues/troubleshooting-ssl-related-issues-server-certificate).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: AEC System Filter
 description: AEC System Filter
-ms.assetid: 45865e8c-7080-428f-b436-6004a8d5c011
 keywords:
 - acoustic echo cancellation WDK audio
 - AEC WDK audio
@@ -40,7 +39,7 @@ An audio filter graph that incorporates a capture effect that is implemented in 
 
 -   In Windows XP SP1, Windows Server 2003, and later, the AEC system filter's capture-out and render-in pins (see the following figure) must have the same sample rate, but the sample rates at the capture-in and render-out pins can each be selected independently of the other pins. The sample rate at the capture-in pin can be (in order of preference) 16 kHz, 48 kHz, 44.1 kHz, or 8 kHz. (The order of preference is based on processing time and audio quality.) The sample rate at the render-out pin can be (in order of preference) 16 kHz, 48 kHz, or 44.1 kHz. Note that the render-out pin does not support a sample rate of 8 kHz.
 
-![diagram illustrating an aec system filter's pins and connections](images/aecfilt.png)
+![diagram illustrating an aec system filter's pins and connections.](images/aecfilt.png)
 
 -   The AEC and NS nodes (see figure in [Exposing Hardware-Accelerated Capture Effects](exposing-hardware-accelerated-capture-effects.md)) can handle only monophonic streams. If the capture stream is multichannel (for example, two-channel stereo), all channels other than the first are ignored (and discarded). Only monophonic streams can be processed by the render side.
 
@@ -149,12 +148,7 @@ All of the AEC system filter's pins use the data-format parameter values shown i
 
  
 
-For more information about the **MajorFormat**, **SubFormat**, and **Specifier** members, see [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)). For an example of a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) data-range descriptor that uses these three parameter values, see [PCM Stream Data Range](pcm-stream-data-range.md).
+For more information about the **MajorFormat**, **SubFormat**, and **Specifier** members, see [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)). For an example of a [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) data-range descriptor that uses these three parameter values, see [PCM Stream Data Range](pcm-stream-data-range.md).
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_ECM\_MAP\_STATUS
 description: Clients use KSPROPERTY\_BDA\_ECM\_MAP\_STATUS to determine status on an ECM map node.
-ms.assetid: 8f46e179-8070-4a1b-921d-41d99aaff446
 keywords: ["KSPROPERTY_BDA_ECM_MAP_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_ECM\_MAP\_STATUS to determine status on an ECM map 
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the ECM map node status.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,14 +78,7 @@ Requirements
 
 [**KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED**](ksevent-bda-program-flow-status-changed.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

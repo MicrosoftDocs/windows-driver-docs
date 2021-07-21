@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RCV_NO_BUFFER
 description: As a query, the OID_GEN_RCV_NO_BUFFER OID specifies the number of frames that the NIC cannot receive due to lack of NIC receive buffer space.
-ms.assetid: 0fcbc7cc-439b-450f-b256-3584b29909fb
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RCV_NO_BUFFER Network Drivers Starting with Windows Vista
@@ -30,13 +29,11 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
-For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +54,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

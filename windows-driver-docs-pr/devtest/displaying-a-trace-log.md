@@ -1,7 +1,6 @@
 ---
 title: Displaying a Trace Log
 description: Displaying a Trace Log
-ms.assetid: c60c801a-6128-43d6-a435-4537c597177f
 keywords:
 - trace logs WDK TraceView , displaying
 - TraceView WDK , displaying logs

@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check Bug Check 0x18E: KERNEL\_PARTITION\_REFERENCE\_VIOLATION
+# Bug Check 0x18E: KERNEL\_PARTITION\_REFERENCE\_VIOLATION
 
 The KERNEL_PARTITION_REFERENCE_VIOLATION bug check has a value of 0x0000018E. 
 

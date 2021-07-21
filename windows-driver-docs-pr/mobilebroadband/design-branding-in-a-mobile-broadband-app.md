@@ -1,7 +1,6 @@
 ---
 title: Design branding in a mobile broadband app
 description: Design branding in a mobile broadband app
-ms.assetid: 0badd121-ce1d-4be2-a9f0-e062631c00c8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,19 +18,19 @@ You can use branding in the following places in your mobile broadband app:
 
 -   Start screen tile (small)
 
-    ![start screen 1x1 tile](images/mb-fig1-start-screen-small-tile.png)
+    ![start screen 1x1 tile.](images/mb-fig1-start-screen-small-tile.png)
 
 -   Start screen tile (medium)
 
-    ![medium tile](images/mb-design-start-screen-medium-tile.png)
+    ![medium tile.](images/mb-design-start-screen-medium-tile.png)
 
 -   Start screen tile (wide)
 
-    ![start screen 1x2 tile](images/mb-fig2-start-screen-large-tile.png)
+    ![start screen 1x2 tile.](images/mb-fig2-start-screen-large-tile.png)
 
 -   Start screen tile (large)
 
-    ![small tile](images/mb-fig2-start-screen-2x1-tile.png)
+    ![small tile.](images/mb-fig2-start-screen-2x1-tile.png)
 
 -   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#app-settings) shows brand name
 
@@ -39,7 +38,7 @@ You can use branding in the following places in your mobile broadband app:
 
 -   Toast notifications
 
-    ![toast notification](images/mb-fig3-toast.png)
+    ![toast notification.](images/mb-fig3-toast.png)
 
 -   Task manager with brand icon and name
 
@@ -47,13 +46,13 @@ You can use branding in the following places in your mobile broadband app:
 
 -   Splash screen
 
-    ![splash screen](images/mb-fig4-splash-screen.png)
+    ![splash screen.](images/mb-fig4-splash-screen.png)
 
 -   Windows Connection Manager
 
-    ![windows connection manager](images/mb-fig5-wcm.png)
+    ![windows connection manager.](images/mb-fig5-wcm.png)
 
-For more info about Windows 10 branding guidance, see [UWP app marketing guidelines](https://docs.microsoft.com/windows/uwp/publish/app-marketing-guidelines).
+For more info about Windows 10 branding guidance, see [UWP app marketing guidelines](/windows/uwp/publish/app-marketing-guidelines).
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 
@@ -83,11 +82,4 @@ Inappropriate design for operator branding:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

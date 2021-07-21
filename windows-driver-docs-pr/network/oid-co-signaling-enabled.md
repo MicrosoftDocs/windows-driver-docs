@@ -1,7 +1,6 @@
 ---
 title: OID_CO_SIGNALING_ENABLED
 description: This topic describes the OID_CO_SIGNALING_ENABLED object identifier (OID).
-ms.assetid: 9ce95120-d6db-4570-80c1-4290ea8fc160
 keywords:
 - OID_CO_SIGNALING_ENABLED
 ms.date: 11/03/2017
@@ -14,8 +13,6 @@ The OID_CO_SIGNALING_ENABLED OID is sent by a call manager to indicate that it i
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

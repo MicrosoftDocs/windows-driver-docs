@@ -1,12 +1,34 @@
 - name: "Streaming media devices design guide"
   href: index.md
 - name: "Device firmware update for USB devices without using a co-installer"
-  href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+# Auto-expanded node
+  items: 
+  - name: "Device firmware update for USB devices without using a co-installer"
+    href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+- name: "Network camera design guide"
+# Auto-expanded node
+  items: 
+  - name: "Network camera design guide"
+    href: network-camera-design-guide.md
+- name: "Digital Window overview"
+# Auto-expanded node
+  items: 
+  - name: "Digital Window overview"
+    href: digital-window-overview.md
+- name: "Privacy shutter notification"
+# Auto-expanded node
+  items: 
+  - name: "Privacy shutter notification"
+    href: privacy-shutter-notification.md
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 
   - name: "USB Video Class (UVC) camera implementation guide"
     href: uvc-camera-implementation-guide.md
+  - name: "Create device property keys from the MS OS descriptor in UVC camera firmware"
+    href: create-camera-device-property-keys-from-ms-os-descriptor.md
+  - name: "Microsoft extensions to USB Video Class 1.5 specification"
+    href: uvc-extensions-1-5.md
   - name: "Camera Intrinsics"
     href: camera-intrinsics.md
   - name: "Camera Capture Metadata"
@@ -25,8 +47,8 @@
     href: infrared-stream-support-in-uvc.md
   - name: "Camera class INF file setting for Universal camera drivers"
     href: camera-driver-inf-file-class-setting.md
-  - name: "Microsoft extensions to USB Video Class 1.5 specification"
-    href: uvc-extensions-1-5.md
+  - name: "Driver support for Camera UVC Control Cache"
+    href: camera-device-uvc-control-cache.md
 - name: "Windows Hello Camera driver bring up guide"
   href: windows-hello-camera-driver-bring-up-guide.md
 - name: "Extended camera controls"
@@ -37,6 +59,8 @@
   href: 360-camera-video-capture.md
 - name: "Flashlight (Lamp) Support"
   href: flashlight-support.md
+- name: "TorchControl shared usage registry settings"
+  href: oem-guidance-on-registry-keys-for-shared-torch-usage.md
 - name: "Streaming Media Samples"
   href: streaming-media-samples.md
 - name: "OEM guidance on settings for the Windows 10 in-box camera app"
@@ -46,20 +70,20 @@
 - name: "Universal camera driver model for Windows 10"
 # Auto-expanded node
   items: 
-  - name: "Universal camera driver model for Windows 10"
+  - name: "Universal camera driver model design guide for Windows 10"
     href: windows-10-technical-preview-camera-drivers-design-guide.md
-  - name: "New camera driver interfaces for Windows 10"
+  - name: "Universal camera driver interfaces for Windows 10"
 # Auto-expanded node
     items: 
-    - name: "New camera driver interfaces for Windows 10"
+    - name: "Universal camera driver reference for Windows 10"
       href: windows-10-technical-preview-camera-drivers-reference.md
-    - name: "New camera driver controls for Windows 10"
+    - name: "Universal camera driver controls for Windows 10"
       href: camera-driver-controls.md
-    - name: "New camera driver enumerations for Windows 10"
+    - name: "Universal camera driver enumerations for Windows 10"
       href: camera-driver-enumerations.md
-    - name: "New camera driver functions for Windows 10"
+    - name: "Universal camera driver functions for Windows 10"
       href: camera-driver-functions.md
-    - name: "New camera driver structures for Windows 10"
+    - name: "Universal camera driver structures for Windows 10"
       href: camera-driver-structures.md
 - name: "AVStream Minidrivers Design Guide"
 # Auto-expanded node
@@ -917,6 +941,8 @@
       href: ksproperty-pin-interfaces.md
     - name: "KSPROPERTY_PIN_MEDIUMS"
       href: ksproperty-pin-mediums.md
+    - name: "KSPROPERTY_PIN_MODEDATAFORMATS"
+      href: ksproperty-pin-modedataformats.md
     - name: "KSPROPERTY_PIN_NAME"
       href: ksproperty-pin-name.md
     - name: "KSPROPERTY_PIN_NECESSARYINSTANCES"
@@ -1544,6 +1570,8 @@
       href: ksproperty-cameracontrol-extended-photomode2.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE"
       href: ksproperty-cameracontrol-extended-profile.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION"
+      href: ksproperty-cameracontrol-extended-relativepaneloptimization.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS"
       href: ksproperty-cameracontrol-extended-roi-configcaps.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_ISPCONTROL"
@@ -1560,6 +1588,14 @@
       href: ksproperty-cameracontrol-extended-videotemporaldenoising.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM"
       href: ksproperty-cameracontrol-extended-zoom.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION"
+      href: ksproperty-cameracontrol-extended-backgroundsegmentation.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION"
+      href: ksproperty-cameracontrol-extended-eyegazecorrection.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW"
+      href: ksproperty-cameracontrol-extended-digitalwindow.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS"
+      href: ksproperty-cameracontrol-extended-digitalwindow-configcaps.md
     - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY"
       href: ksproperty-cameracontrol-perframesetting-capability.md
     - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR"
@@ -2096,3 +2132,20 @@
       href: ksevent-vpnotify-formatchange.md
 - name: "COM Interfaces"
   href: com-interfaces.md
+- name: "Ks.h stucture typedef reference"
+# Auto-expanded node
+  items: 
+  - name: "Ks.h stucture typedef reference"
+    href: ks-h-typedef-reference.md
+  - name: "KSDEGRADE"
+    href: ksdegrade-structure.md
+  - name: "KSEVENT"
+    href: ksevent-structure.md
+  - name: "KSMETHOD"
+    href: ksmethod-structure.md
+  - name: "KSPIN_INTERFACE"
+    href: kspin-interface-structure.md
+  - name: "KSPIN_MEDIUM"
+    href: kspin-medium-structure.md
+  - name: "KSPROPERTY"
+    href: ksproperty-structure.md

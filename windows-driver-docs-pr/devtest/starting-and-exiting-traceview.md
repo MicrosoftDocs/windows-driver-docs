@@ -1,7 +1,6 @@
 ---
 title: Starting and Exiting TraceView
 description: Starting and Exiting TraceView
-ms.assetid: ebadf441-c28a-4d8e-ae83-444c8a68f62b
 keywords:
 - TraceView WDK , starting
 - TraceView WDK , exiting

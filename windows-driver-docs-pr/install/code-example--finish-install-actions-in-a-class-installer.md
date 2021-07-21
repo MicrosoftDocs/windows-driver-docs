@@ -1,7 +1,6 @@
 ---
 title: Code Example Finish-Install Actions in a Class Installer
 description: Code Example Finish-Install Actions in a Class Installer
-ms.assetid: 394f321c-2ce4-4773-b5df-e30ce23b7207
 keywords:
 - finish-install actions WDK device installations
 - class installers WDK device installations , finish-install actions
@@ -14,9 +13,9 @@ ms.localizationpriority: medium
 
 In this example, a class installer performs the following operations to support finish-install actions:
 
--   When the class installer receives a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-newdevicewizard-finishinstall) request, it calls the installer-supplied function *FinishInstallActionsNeeded* to determine whether there are finish-install actions to perform. (The code for the *FinishInstallActionsNeeded* function is not shown in this example.)
+-   When the class installer receives a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](./dif-newdevicewizard-finishinstall.md) request, it calls the installer-supplied function *FinishInstallActionsNeeded* to determine whether there are finish-install actions to perform. (The code for the *FinishInstallActionsNeeded* function is not shown in this example.)
 
-    If *FinishInstallActionsNeeded* returns **TRUE**, the class installer calls [**SetupDiGetDeviceInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa) to retrieve the device installation parameters for the device. It then calls [**SetupDiSetDeviceInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinstallparamsa) to set the **FlagsEx** member of the [**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure for the device with the DI_FLAGSEX_FINISHINSTALL_ACTION flag. Setting this flag causes Windows to send a [**DIF_FINISHINSTALL_ACTION**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-finishinstall-action) request to all class installers, class co-installers, and device co-installers that are involved in the installation of this device. This request is sent after all installation operations except the finish-install actions have completed.
+    If *FinishInstallActionsNeeded* returns **TRUE**, the class installer calls [**SetupDiGetDeviceInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa) to retrieve the device installation parameters for the device. It then calls [**SetupDiSetDeviceInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinstallparamsa) to set the **FlagsEx** member of the [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure for the device with the DI_FLAGSEX_FINISHINSTALL_ACTION flag. Setting this flag causes Windows to send a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request to all class installers, class co-installers, and device co-installers that are involved in the installation of this device. This request is sent after all installation operations except the finish-install actions have completed.
 
 -   When the class installer receives a DIF_FINISHINSTALL_ACTION request, it again calls *FinishInstallActionsNeeded* to determine whether it has finish-install actions to perform and, if so, performs the finish-install actions. The class installer notifies the user that finish-install actions are in progress and waits for the finish-install actions to complete before returning from processing the DIF_FINISHINSTALL_ACTION request.
 
@@ -115,10 +114,4 @@ SampleClassInstaller(
 ```
 
  
-
- 
-
-
-
-
 

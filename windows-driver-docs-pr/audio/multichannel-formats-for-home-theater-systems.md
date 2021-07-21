@@ -1,7 +1,6 @@
 ---
 title: Multichannel Formats for Home-Theater Systems
 description: Multichannel Formats for Home-Theater Systems
-ms.assetid: b8bd1dc7-c9a8-4f4f-8014-d31f1ae5361a
 keywords:
 - data formats WDK audio
 - formats WDK audio , data
@@ -32,19 +31,19 @@ ms.localizationpriority: medium
 
 A relatively inexpensive solution for a home-theater system is to connect a set of surround-sound speakers to an audio adapter on a computer that is running the Windows operating system. Alternately, the user can connect an external audio/video (A/V) receiver between the adapter outputs and the speakers. In response to the popularity of home-theater systems, 5.1- and 7.1-channel audio content that has been authored for these systems is becoming increasingly available.
 
-To accurately render multichannel audio content on a home-theater system requires an audio-format descriptor that can assign speaker positions to audio channels in multichannel streams. As discussed previously, the [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure can specify such speaker assignments.
+To accurately render multichannel audio content on a home-theater system requires an audio-format descriptor that can assign speaker positions to audio channels in multichannel streams. As discussed previously, the [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure can specify such speaker assignments.
 
 To help provide audio driver support for home-theater systems, Microsoft has defined a new 7.1-channel speaker configuration for Microsoft Windows XP and later. This configuration is supported in Windows Vista, Windows XP with Service Pack 2 (SP2), and Windows Server 2003 with Service Pack 1 (SP1). It is not supported in Windows Server 2003 with no service packs installed, Windows XP with Service Pack 1, or Windows XP with no service packs installed.
 
 The new 7.1-channel speaker configuration is shown in the following figure, which is taken from the Windows multimedia control panel (Mmsys.cpl) in Windows XP with SP2.
 
-![figure of the new 7.1-channel speaker configuration ](images/spkrcfg1new.gif)
+![figure of the new 7.1-channel speaker configuration .](images/spkrcfg1new.gif)
 
 The Windows multimedia control panel assigns the name "7.1 home theater speakers" to the new 7.1-channel wide speaker configuration shown in the preceding figure.
 
 The following figure shows the older 7.1-channel configuration, which is supported in Windows 2000 and later and in Windows Me/98.
 
-![figure of the older 7.1-channel wide configuration](images/spkrcfg1old.gif)
+![figure of the older 7.1-channel wide configuration.](images/spkrcfg1old.gif)
 
 In Windows XP with SP2, the multimedia control panel assigns the name "7.1 wide configuration speakers" to the older configuration shown in the preceding figure.
 
@@ -66,7 +65,7 @@ In Windows 2000 and later and in Windows Me/98, the 5.1-channel speaker configur
 
 The 5.1-channel surround-sound speaker configuration is shown in the following figure, which is taken from the Windows multimedia control panel in Windows XP with SP2.
 
-![figure of the 5.1-channel surround-sound speaker configuration ](images/spkrcfg2.gif)
+![figure of the 5.1-channel surround-sound speaker configuration .](images/spkrcfg2.gif)
 
 The Windows multimedia control panel assigns the name "5.1 surround sound speakers" to the 5.1-channel speaker configuration shown in the preceding figure.
 
@@ -81,9 +80,4 @@ This section includes:
 [Header File Changes](header-file-changes.md)
 
  
-
- 
-
-
-
 

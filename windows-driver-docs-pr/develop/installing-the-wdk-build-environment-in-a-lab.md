@@ -1,5 +1,4 @@
 ---
-ms.assetid: D4B35683-5BD1-40F8-9734-95DADF9E0F20
 title: Installing the WDK Build Environment in a Lab
 description: The Windows Driver Kit (WDK) 8.1 enables you to copy components of Visual Studio and the WDK to a new location and then launch the build environment from the command line.
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ You might find this feature useful if you need to integrate the WDK with your bu
 
 To run the set up script that enables this feature, you need to provide the paths to the Visual Studio and WDK setup files. Be sure to save these files (rather than install them).
 
-1.  Download [Visual Studio Professional 2013](https://go.microsoft.com/fwlink/p/?linkid=316548) or [Visual Studio Ultimate 2013](https://go.microsoft.com/fwlink/p/?linkid=316520). Download the Product Layout (for example, vs\_ultimate\_download.exe ). When you are asked if you want to run or save vs\_ultimate\_download.exe, click **Run** and then select the download option and specify the download path as **C:\\VSSetup** (this makes the later steps easier). Click **Download** to download and install a local copy of the DVD layout on the computer.
-2.  Download the standalone [SDK](https://go.microsoft.com/fwlink/p/?linkid=323507). When you are asked if you want to run or save sdksetup.exe, click **Run** and then specify the download location as **C:\\Kits\\SDK**. Click **Next** and follow the instructions to download the standalone SDK.
-3.  Download the [WDK 8.1](https://go.microsoft.com/fwlink/p/?linkid=317353). When you are asked if you want to run or save wdksetup.exe, click **Run** and then specify the download location as **C:\\Kits\\WDK**. Click **Next** and follow the instructions to download the WDK. If you have already installed the WDK on the computer, the web installation program will tell you that the features installed on the computer are up-to-date. To download the WDK setup files so that you can deploy the build environment, click **Next** and specify the **C:\\Kits\\WDK** path.
+1.  Download [Visual Studio Professional 2013](https://go.microsoft.com/fwlink/p/?linkid=316548) or [Visual Studio Ultimate 2013](https://go.microsoft.com/fwlink/p/?linkid=316520). Download the Product Layout (for example, vs\_ultimate\_download.exe ). When you are asked if you want to run or save vs\_ultimate\_download.exe, select **Run** and then select the download option and specify the download path as **C:\\VSSetup** (this makes the later steps easier). Select **Download** to download and install a local copy of the DVD layout on the computer.
+2.  Download the standalone [SDK](https://go.microsoft.com/fwlink/p/?linkid=323507). When you are asked if you want to run or save sdksetup.exe, select **Run** and then specify the download location as **C:\\Kits\\SDK**. Select **Next** and follow the instructions to download the standalone SDK.
+3.  Download the [WDK 8.1](../other-wdk-downloads.md). When you are asked if you want to run or save wdksetup.exe, select **Run** and then specify the download location as **C:\\Kits\\WDK**. Select **Next** and follow the instructions to download the WDK. If you have already installed the WDK on the computer, the web installation program will tell you that the features installed on the computer are up-to-date. To download the WDK setup files so that you can deploy the build environment, select **Next** and specify the **C:\\Kits\\WDK** path.
 
 ## <span id="download_script"></span><span id="DOWNLOAD_SCRIPT"></span>2. Download the BuildLabSupport files
 
@@ -88,13 +87,6 @@ The build lab support files include the **setup.ps1** PowerShell command file, w
 
 
 * [Building a Driver](building-a-driver.md)
-* [MSBuild](https://go.microsoft.com/fwlink/p/?linkid=262804)
+* [MSBuild](/visualstudio/msbuild/msbuild)
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: job
 description: The job extension displays a job object.
-ms.assetid: 1fbadcc7-d81b-4cfb-a54a-7843e2f78ea1
 keywords: ["job Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,8 +61,7 @@ Causes the display to include a list of all processes in the job.
 
 For information about job objects, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

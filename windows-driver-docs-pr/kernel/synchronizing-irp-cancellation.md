@@ -1,7 +1,6 @@
 ---
 title: Synchronizing IRP Cancellation
 description: Synchronizing IRP Cancellation
-ms.assetid: a110c6ad-794d-4b8a-a89d-bceb08ea82b8
 keywords: ["canceling IRPs, synchronization", "Cancel routines, synchronization", "synchronization WDK IRPs", "cancelable IRPs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,13 +16,13 @@ From a driver's perspective, an IRP can be canceled at any time. IRP cancellatio
 
 -   After a driver routine is called, but before it queues an IRP.
 
--   After a driver routine is called, but before it tries to process an IRP. For example, an IRP might be canceled after a driver's [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine is called, but before the *StartIo* routine removes the IRP from the device queue.
+-   After a driver routine is called, but before it tries to process an IRP. For example, an IRP might be canceled after a driver's [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine is called, but before the *StartIo* routine removes the IRP from the device queue.
 
 -   After the driver routine dequeues the IRP, but before it starts the requested I/O.
 
 Note that after a driver queues an IRP and releases any spin locks that protect the queue, another thread can access and change the IRP. When the original thread resumes—even as soon as the next line of code—the IRP might have already been canceled or otherwise changed.
 
-Driver can use the cancel-safe IRP queue framework to implement IRP queuing. The system then registers a [*Cancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine for the driver that automatically handles synchronization to safely cancel IRPs. See [Cancel-Safe IRP Queues](cancel-safe-irp-queues.md) for more information. Otherwise, drivers must implement their own synchronization.
+Driver can use the cancel-safe IRP queue framework to implement IRP queuing. The system then registers a [*Cancel*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine for the driver that automatically handles synchronization to safely cancel IRPs. See [Cancel-Safe IRP Queues](cancel-safe-irp-queues.md) for more information. Otherwise, drivers must implement their own synchronization.
 
 The following members of an IRP contain information about cancellation:
 
@@ -44,9 +43,4 @@ This section includes the following topics on synchronizing IRP cancellation.
 [Using a Driver-Supplied Spin Lock](using-a-driver-supplied-spin-lock.md)
 
  
-
- 
-
-
-
 

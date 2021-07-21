@@ -1,9 +1,8 @@
 ---
 title: ndiskd.mopen
 description: The ndiskd.mopen extension displays information about bindings between miniports and protocols. 
-ms.assetid: 439c4647-8f3e-4473-aca8-364b5d2206e9
 keywords: ["ndiskd.mopen Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -15,7 +14,6 @@ ms.localizationpriority: medium
 
 # !ndiskd.mopen
 
-
 The **!ndiskd.mopen** extension displays information about bindings between miniports and protocols. If you run this extension with no parameters, !ndiskd will display a list of all open bindings between NDIS miniport drivers and protocol drivers.
 
 ```console
@@ -24,19 +22,17 @@ The **!ndiskd.mopen** extension displays information about bindings between mini
 
 ## <span id="ddk__ndiskd_mopen_dbg"></span><span id="DDK__NDISKD_MOPEN_DBG"></span>Parameters
 
-
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
-Handle of an NDIS open binding.
+Optional handle of an NDIS open binding.
 
 <span id="_______-ref______"></span><span id="_______-REF______"></span> *-ref*   
 Shows refcounts of open bindings.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Enter the !ndiskd.mopen command to get a list of all open bindings. In this example, look for the binding between the Microsoft ISATAP Adapter \#2 miniport and the TCPIP6TUNNEL protocol. Its handle is ffff8083e56b8110.
 
@@ -98,25 +94,14 @@ RECEIVE PATH
     Frame Type(s)      0x86dd
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
-
- 
-
- 
-
-
-
-
-
-

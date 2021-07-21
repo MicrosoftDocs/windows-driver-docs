@@ -1,7 +1,6 @@
 ---
 title: RSS Configuration
 description: RSS Configuration
-ms.assetid: 84a00163-6908-439a-a980-c13f0ec8e3c1
 keywords:
 - receive-side scaling WDK networking , ndirection table example
 - RSS WDK networking , indirection table example
@@ -18,19 +17,19 @@ ms.localizationpriority: medium
 
 
 
-To obtain RSS configuration information, an overlying driver can send an OID query of [OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-receive-scale-capabilities) to a miniport driver. NDIS also provides the RSS configuration information to overlying protocol drivers in the [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure during initialization.
+To obtain RSS configuration information, an overlying driver can send an OID query of [OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES](./oid-gen-receive-scale-capabilities.md) to a miniport driver. NDIS also provides the RSS configuration information to overlying protocol drivers in the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure during initialization.
 
-The overlying driver chooses a hashing function, type, and indirection table. To set these configuration options, the driver sends an OID set request of [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-receive-scale-parameters) to the miniport driver. Overlying drivers can also query this OID to obtain the current RSS settings. The information buffer for the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID contains a pointer to an [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) structure.
+The overlying driver chooses a hashing function, type, and indirection table. To set these configuration options, the driver sends an OID set request of [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](./oid-gen-receive-scale-parameters.md) to the miniport driver. Overlying drivers can also query this OID to obtain the current RSS settings. The information buffer for the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID contains a pointer to an [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) structure.
 
 The overlying driver can disable RSS on the NIC. In this case, the driver sets the NDIS\_RSS\_PARAM\_FLAG\_DISABLE\_RSS flag in the **Flags** member of the NDIS\_RECEIVE\_SCALE\_PARAMETERS structure. When this flag is set, the miniport driver should ignore all of the other flags and settings and disable RSS on the NIC.
 
 NDIS processes OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS before passing it to the miniport driver and updates the miniport adapter's \*RSS standardized keyword, if required. For more information about the **\*RSS** keyword, see [Standardized INF Keywords for RSS](standardized-inf-keywords-for-rss.md).
 
-After receiving an [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-receive-scale-parameters) set request with the NDIS\_RSS\_PARAM\_FLAG\_DISABLE\_RSS flag set, the miniport driver should set the RSS state of the NIC to the initial state of the NIC after initialization. Therefore, if the miniport driver receives a subsequent OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS set request with the NDIS\_RSS\_PARAM\_FLAG\_DISABLE\_RSS flag cleared, all of the parameters should have the same values that were set after the miniport driver received the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS set request for the first time after the miniport adapter was initialized.
+After receiving an [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](./oid-gen-receive-scale-parameters.md) set request with the NDIS\_RSS\_PARAM\_FLAG\_DISABLE\_RSS flag set, the miniport driver should set the RSS state of the NIC to the initial state of the NIC after initialization. Therefore, if the miniport driver receives a subsequent OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS set request with the NDIS\_RSS\_PARAM\_FLAG\_DISABLE\_RSS flag cleared, all of the parameters should have the same values that were set after the miniport driver received the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS set request for the first time after the miniport adapter was initialized.
 
-An overlying driver can use the [OID\_GEN\_RECEIVE\_HASH](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-receive-hash) OID to enable and configure hash calculations on received frames without enabling RSS. Overlying drivers can also query this OID to obtain the current receive hash settings.
+An overlying driver can use the [OID\_GEN\_RECEIVE\_HASH](./oid-gen-receive-hash.md) OID to enable and configure hash calculations on received frames without enabling RSS. Overlying drivers can also query this OID to obtain the current receive hash settings.
 
-The information buffer for the OID\_GEN\_RECEIVE\_HASH OID contains a pointer to an [**NDIS\_RECEIVE\_HASH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_hash_parameters) structure. For a set request, the OID specifies the hash parameters that the miniport adapter should use. For a query request, the OID returns the hash parameters that the miniport adapter is using. This OID is optional for drivers that support RSS.
+The information buffer for the OID\_GEN\_RECEIVE\_HASH OID contains a pointer to an [**NDIS\_RECEIVE\_HASH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_hash_parameters) structure. For a set request, the OID specifies the hash parameters that the miniport adapter should use. For a query request, the OID returns the hash parameters that the miniport adapter is using. This OID is optional for drivers that support RSS.
 
 **Note**  If receive hash calculation is enabled, NDIS disables receive hash calculation before it enables RSS. If RSS is enabled, NDIS disables RSS before it enables receive hash calculation.
 
@@ -46,7 +45,7 @@ To rebalance the processing load, the overlying driver can set the RSS parameter
 
 The following figure provides example contents for two instances of the indirection table.
 
-![diagram illustrating the contents of two instances of an rss indirection table](images/rss-table.png)
+![diagram illustrating the contents of two instances of an rss indirection table.](images/rss-table.png)
 
 The preceding figure assumes a four processor configuration, and the number of least significant bits used from the hash value is 6 bits. Therefore, the indirection table contains 64 entries.
 
@@ -60,13 +59,7 @@ The size of the indirection table is typically two to eight times the number of 
 
 When the miniport driver distributes packets to CPUs, if there are far too many CPUs, the effort spent in distributing the load could become prohibitive. In this case, overlying drivers should choose a subset of CPUs on which the processing of network data occurs.
 
-In some cases, the number of available hardware receive queues might be less than the number of CPUs on the system. The miniport driver must examine the indirection table to determine the CPU numbers to associate with hardware queues. If the total number of different CPU numbers that appear in the indirection table is more than the number of hardware queues that the NIC supports, the miniport driver must pick a subset of the CPU numbers from the indirection table. The subset is equal in number to the number of hardware queues. The miniport driver obtained the **IndirectionTableSize** parameter from [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-receive-scale-parameters). The miniport driver specified the **NumberOfReceiveQueues** value in response to OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES.
+In some cases, the number of available hardware receive queues might be less than the number of CPUs on the system. The miniport driver must examine the indirection table to determine the CPU numbers to associate with hardware queues. If the total number of different CPU numbers that appear in the indirection table is more than the number of hardware queues that the NIC supports, the miniport driver must pick a subset of the CPU numbers from the indirection table. The subset is equal in number to the number of hardware queues. The miniport driver obtained the **IndirectionTableSize** parameter from [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](./oid-gen-receive-scale-parameters.md). The miniport driver specified the **NumberOfReceiveQueues** value in response to OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES.
 
  
-
- 
-
-
-
-
 

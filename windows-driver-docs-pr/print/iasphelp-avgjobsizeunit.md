@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: f5a701ff-270f-45f5-8c6e-ecf1b8afab20
 keywords: ["get_AvgJobSizeUnit method Print Devices", "get_AvgJobSizeUnit method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_AvgJobSizeUnit method"]
 topic_type:
 - apiref
@@ -24,8 +23,7 @@ ms.localizationpriority: medium
 
 The **AvgJobSizeUnit** property enables an ASP Web page to determine the units of the average job size.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_AvgJobSizeUnit(
@@ -33,8 +31,7 @@ HRESULT get_AvgJobSizeUnit(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives one of the values in the following table. The value indicates the units that are associated with the average job size.
@@ -64,8 +61,7 @@ A caller-supplied pointer to a memory location that receives one of the values i
 
  
 
-Return value
-------------
+## Return value
 
 This method returns S\_OK on success.
 
@@ -86,8 +82,7 @@ JobUnits = objPrinter.AvgJobSizeUnit
 ' If JobUnits = 2 then job size is in units of bytes
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

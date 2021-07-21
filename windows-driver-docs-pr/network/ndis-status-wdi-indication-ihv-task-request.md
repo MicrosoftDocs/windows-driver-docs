@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST to request that the Microsoft component queue an IHV task.ObjectPort .
-ms.assetid: E123F957-574F-4C78-B366-76E886018503
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST Network Drivers Starting with Windows Vista
@@ -24,13 +23,12 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST to reques
 
 | Type                                                                                         | Multiple TLV instances allowed | Optional | Description                                                                                                                                  |
 |----------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-task-request-parameters) |                                |          | The IHV-requested priority for this task. Refer to the [**WDI\_IHV\_TASK\_PRIORITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_ihv_task_priority) enum for valid values. |
-| [**WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-task-device-context)         |                                | X        | The IHV-provided context information that is forwarded to [OID\_WDI\_TASK\_IHV](oid-wdi-task-ihv.md).                                       |
+| [**WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS**](./wdi-tlv-ihv-task-request-parameters.md) |                                |          | The IHV-requested priority for this task. Refer to the [**WDI\_IHV\_TASK\_PRIORITY**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_ihv_task_priority) enum for valid values. |
+| [**WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT**](./wdi-tlv-ihv-task-device-context.md)         |                                | X        | The IHV-provided context information that is forwarded to [OID\_WDI\_TASK\_IHV](oid-wdi-task-ihv.md).                                       |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -59,9 +57,4 @@ Requirements
 [OID\_WDI\_TASK\_IHV](oid-wdi-task-ihv.md)
 
  
-
- 
-
-
-
 

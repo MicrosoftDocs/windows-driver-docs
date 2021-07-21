@@ -1,7 +1,6 @@
 ---
 title: Common data fields
 description: This topic shows the common data fields that are included in all sensor-specific data fields.
-ms.assetid: 5F9F7987-E898-404A-96F9-F5CF88F01393
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ The field type below is included in all sensor-specific data fields.
 
 Clients can use the ReadFile function to retrieve information from these data fields.
 
-For more information about the types shown in the type column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+For more information about the types shown in the type column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Description|
 | --- | --- | --- | --- |
@@ -24,4 +23,4 @@ For more information about the types shown in the type column, see [PROPVARIANT 
 
 ## Related topics
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

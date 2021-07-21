@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode I/O Manager
 description: Windows Kernel-Mode I/O Manager
-ms.assetid: 8652f37d-0ece-4c08-9bce-499f0fedb0dd
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -19,20 +18,15 @@ It cannot be stressed enough that your driver must send and receive IRPs on a ti
 
 For more information about IRPs, see [Handling IRPs](handling-irps.md).
 
-For more information about driver stacks, see [Device Objects and Device Stacks](device-objects-and-device-stacks.md).
+For more information about driver stacks, see [Device Objects and Device Stacks](example-wdm-device-stack.md).
 
 For programming techiques related to I/O management, see [I/O Manager Programming Techniques](i-o-programming-techniques.md).
 
-Routines that provide a direct interface to the I/O manager are usually prefixed with the letters "**Io**"; for example, **IoCreateDevice**. For a list of I/O manager routines, see [I/O Manager Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551797(v=vs.85)).
+Routines that provide a direct interface to the I/O manager are usually prefixed with the letters "**Io**"; for example, **IoCreateDevice**. For a list of I/O manager routines, see [I/O Manager Routines](/previous-versions/windows/hardware/drivers/ff551797(v=vs.85)).
 
-For lists of routines that relate to IRPS, see [IRPs](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+For lists of routines that relate to IRPS, see [IRPs](/windows-hardware/drivers/ddi/index).
 
 The I/O manager has two subcomponents: the Plug and Play manager and power manager. They manage the I/O functionality for the technologies of Plug and Play and power management. For more information about Plug and Play management, see [Windows Kernel-Mode Plug and Play Manager](windows-kernel-mode-plug-and-play-manager.md) and for more information about power management, see [Windows Kernel-Mode Power Manager](windows-kernel-mode-power-manager.md).
 
  
-
- 
-
-
-
 

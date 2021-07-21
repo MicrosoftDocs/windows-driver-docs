@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Time Travel Debugging - Overview
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
 
 ## What is Time Travel Debugging?
 
@@ -23,7 +23,7 @@ TTD is efficient and works to add as little as possible overhead as it captures 
 
 TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions.
 
-![Example screen shot of WinDbg preview showing time travel command and three timelines](images/ttd-windbgx-screen-shot-example.png)
+![Example screen shot of WinDbg preview showing time travel command and three timelines.](images/ttd-windbgx-screen-shot-example.png)
 
 ## Comparison of Debugging Tools
 
@@ -42,7 +42,7 @@ TTD is available on Windows 10 after installing the WinDbg Preview app from the 
 
 ## Administrator rights required to use TTD
 
-To use TTD, you need to run the debugger elevated. Install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, right-click on the WinDbg Preview icon in the Start menu and then select More > Run as Administrator.
+To use TTD, you need to run the debugger elevated. Install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg Preview icon in the Start menu and then select More > Run as Administrator.
 
 ## Video Training
 
@@ -91,7 +91,7 @@ For more information on working the trace files, see [Time Travel Debugging - Wo
 
 You may encounter incompatibilities because of how TTD hooks into process to record them. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. If you run into issues of with recording, such as an insufficient permission message, try temporarily disabling any anti-virus software.  
 
-Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/help/2458544/the-enhanced-mitigation-experience-toolkit).
+Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. 
 
 Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock or crash of the process being recorded is also possible.
 
@@ -146,7 +146,7 @@ Your feedback will help guide time travel development priorities going forward.
 
 - If you have feedback such as a feature that you really want to see or a bug that makes something difficult, use the Feedback Hub.
 
-![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
+![Screen shot of feedback hub showing feedback options including the add new feedback button.](images/windbgx-feedback.png)
 
 
 ## Getting started with TTD

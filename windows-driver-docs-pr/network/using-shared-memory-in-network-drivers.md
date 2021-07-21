@@ -1,7 +1,6 @@
 ---
 title: Using Shared Memory in Network Drivers
 description: Using Shared Memory in Network Drivers
-ms.assetid: f7dfe785-6c1a-4f56-9018-76be9cdec7fc
 keywords:
 - network drivers WDK , shared memory
 - memory WDK networking
@@ -19,13 +18,7 @@ ms.localizationpriority: medium
 
 Miniport drivers for bus-master direct memory access (DMA) devices allocate shared memory for use by the network interface card (NIC) and the miniport driver.
 
-[**NdisMAllocateSharedMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatesharedmemory) can be called by a bus-master miniport driver to allocate memory for permanent sharing between the network adapter and the miniport driver. This function returns a virtual address and a physical address for the shared memory. The addresses are valid until a call to [**NdisMFreeSharedMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreesharedmemory) frees the memory.
+[**NdisMAllocateSharedMemory**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatesharedmemory) can be called by a bus-master miniport driver to allocate memory for permanent sharing between the network adapter and the miniport driver. This function returns a virtual address and a physical address for the shared memory. The addresses are valid until a call to [**NdisMFreeSharedMemory**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreesharedmemory) frees the memory.
 
  
-
- 
-
-
-
-
 

@@ -1,14 +1,13 @@
 ---
 title: ModelID
 description: ModelID
-ms.assetid: 6873f5b6-453e-4f8e-b534-0bc805865905
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ModelID
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ModelID element specifies the GUID of a physical device.
 

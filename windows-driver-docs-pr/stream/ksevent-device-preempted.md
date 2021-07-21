@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_DEVICE\_PREEMPTED
 description: The KSEVENT\_DEVICE\_PREEMPTED event is triggered when a device has been preempted.
-ms.assetid: A51B7109-AFBE-4849-9655-F913FB7851F1
 keywords: ["KSEVENT_DEVICE_PREEMPTED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -45,16 +44,15 @@ The **KSEVENT\_DEVICE\_PREEMPTED** event is triggered when a device has been pre
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/windows-hardware/drivers/stream/ksevent-structure)"><strong>KSEVENT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
 A preemption event is triggered in the following scenario.
 
@@ -65,16 +63,7 @@ A preemption event is triggered in the following scenario.
 ## See also
 
 
-[**KSEVENT\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ne-ks-ksevent_device)
+[**KSEVENT\_DEVICE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksevent_device)
 
 [**KSEVENT\_DEVICE\_LOST**](ksevent-device-lost.md)
-
- 
-
- 
-
-
-
-
-
 

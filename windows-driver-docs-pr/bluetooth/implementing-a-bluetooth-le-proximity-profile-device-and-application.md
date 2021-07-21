@@ -1,7 +1,6 @@
 ---
 title: Bluetooth LE Proximity Profile Overview
 description: Proximity detection is a common use of Bluetooth Low Energy (LE).
-ms.assetid: 4BF27CBE-C89A-48DC-8536-1A5111CDB0C4
 ms.date: 07/01/2019
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ A GATT profile declares one or more services that define a use case or scenario.
 
 This diagram shows how *characteristics* are structured inside a typical GATT service.
 
-![example gatt service declaration](images/bthleservicedeclaration.png)
+![example gatt service declaration.](images/bthleservicedeclaration.png)
 
 An example proximity profile is described further in [Bluetooth Proximity Profile](bluetooth-proximity-profile.md).
 

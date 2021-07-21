@@ -1,7 +1,6 @@
 ---
 title: HSPluginInitPlugin function
 description: The HSPluginInitPlugin function is exported by the plugin DLL and is called to initialize the plugin.
-ms.assetid: db51267c-4f38-47bd-bde2-7b27a93dd2a7
 keywords: 
 - HSPluginInitPlugin function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
@@ -10,13 +9,12 @@ ms.localizationpriority: medium
 
 # HSPluginInitPlugin function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HSPluginInitPlugin** function is exported by the plugin DLL and is called to initialize the plugin.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DWORD HSPluginInitPlugin(
@@ -30,8 +28,7 @@ DWORD HSPluginInitPlugin(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hPluginContext* \[in\]  
 A handle, provided by the host, that the plugin is required to save and then use when it needs to make a request to the host by way of the host handler functions.
@@ -58,8 +55,7 @@ Pointer to the [**HOTSPOT\_PLUGIN\_APIS**](hotspot-plugin-apis.md) structure tha
 *\*pPluginProfile* \[out\]  
 Pointer to a [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure, returned by the plugin, that provides information about the plugin.
 
-Remarks
--------
+## Remarks
 
 During initialization, the host provides the following:
 
@@ -70,8 +66,7 @@ During initialization, the host provides the following:
 
 The plugin returns a pointer to its own function table and a pointer to its [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

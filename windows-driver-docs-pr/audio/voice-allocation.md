@@ -1,7 +1,6 @@
 ---
 title: Voice Allocation
 description: Voice Allocation
-ms.assetid: fb1e6c36-02b4-41a6-b9c4-09f393d389db
 keywords:
 - DirectMusic kernel-mode WDK audio , voice allocation
 - kernel-mode synths WDK audio , voice allocation
@@ -120,12 +119,7 @@ The following table contains an example sequence of voice allocations that illus
 
 Note that DirectSound buffers are actually allocated one by one, and are grouped together in the table for the purpose of readability.
 
-Immediately after a synthesizer pin instance is created, no voices should be allocated based on it. Shortly after creation, a [**KSPROPERTY\_SYNTH\_PORTPARAMETERS**](https://docs.microsoft.com/previous-versions/ff537405(v=vs.85)) property item is received. This property item indicates, among other things, the number of voices that are to be associated with this instance. This item also gives the miniport driver the chance to report back the actual new size of the dynamic pool in case all requested voices could not be allocated.
+Immediately after a synthesizer pin instance is created, no voices should be allocated based on it. Shortly after creation, a [**KSPROPERTY\_SYNTH\_PORTPARAMETERS**](/previous-versions/ff537405(v=vs.85)) property item is received. This property item indicates, among other things, the number of voices that are to be associated with this instance. This item also gives the miniport driver the chance to report back the actual new size of the dynamic pool in case all requested voices could not be allocated.
 
  
-
- 
-
-
-
 

@@ -21,7 +21,7 @@ There are three broad categories of issues where Bluetooth Reset and Recovery is
 
 - **Bus enumeration failures:** The radio fails enumeration or re-enumeration by the underlying bus (for Bluetooth, this is typically USB or UART) as indicated by a _visible failed state_ (yellow bang) in Device Manager, which may be symptomatic of underlying hardware errors.
 
-- **Driver enumeration failures:** The Bluetooth radio is in a failed state _after_ after successful enumeration by the underlying bus. This typically occurs when building up the driver stack for the radio, e.g. when a filter or function driver is installed on the Bluetooth radio device node (devnode). Failures could occur if a driver encounters an error during one or more start operations and as a result reports a PnP failure. An example of such an operation could be a firmware download to the device.
+- **Driver enumeration failures:** The Bluetooth radio is in a failed state _after_ successful enumeration by the underlying bus. This typically occurs when building up the driver stack for the radio, e.g. when a filter or function driver is installed on the Bluetooth radio device node (devnode). Failures could occur if a driver encounters an error during one or more start operations and as a result reports a PnP failure. An example of such an operation could be a firmware download to the device.
 
 - **Non-enumeration failures:** The device is not in a failed state but is otherwise non-operational as seen by the driver stack. These are failures outside of the enumeration pathway and could be general critical transport-specific failures or device-specific failures such as a catastrophic firmware error. The Bluetooth Reset and Recovery mechanisms described below are used in these cases.
 
@@ -29,7 +29,7 @@ There are three broad categories of issues where Bluetooth Reset and Recovery is
 
 While there are different approaches to recover from a failed state, Bluetooth uses a standardized ACPI-based recovery mechanism to attempt to restore the radio to a working state.
 
-[GUID_DEVICE_RESET_INTERFACE_STANDARD](https://docs.microsoft.com/windows-hardware/drivers/kernel/working-with-guid-device-reset-interface-standard) defines two levels of reset. Note that:
+[GUID_DEVICE_RESET_INTERFACE_STANDARD](../kernel/working-with-guid-device-reset-interface-standard.md) defines two levels of reset. Note that:
 
 - The reset mechanisms work only for **internal devices** so externally-pluggable Bluetooth radios such as dongles are not supported.
 
@@ -42,9 +42,9 @@ While there are different approaches to recover from a failed state, Bluetooth u
 | Function-level device reset (FLDR) | The reset operation is restricted to a specific device and is not visible to other devices. There is no re-enumeration. Function drivers must assume that the hardware has returned to its original state after the operation.  Intermediary state is not preserved.
 | Platform-level device reset (PLDR) | The reset operation affects a specific device and all other devices that are connected to it via the same power rail or reset line. The reset operation causes the device to be reported as missing from the bus and re-enumerated. This type of reset has the most impact on the system since all devices that share the resource go back to their original state.|
 
-- **To support FLDR** there must be an __RST method defined within the __ADR_ namespace as detailed in [ACPI firmware: Function-level reset](https://docs.microsoft.com/windows-hardware/drivers/kernel/resetting-and-recovering-a-device#acpi-firmware-function-level-reset).
+- **To support FLDR** there must be an __RST method defined within the __ADR_ namespace as detailed in [ACPI firmware: Function-level reset](../kernel/working-with-guid-device-reset-interface-standard.md#acpi-firmware-function-level-reset).
 
-- **To support PLDR** there must be an _RST or _PR3  method defined within the __ADR_ namespace as detailed in [ACPI firmware: Platform-level reset](https://docs.microsoft.com/windows-hardware/drivers/kernel/resetting-and-recovering-a-device#acpi-firmware-platform-level-reset). Note that if a __PR3_ method is used, ACPI uses the D3Cold power cycle mechanism to reset. This emulates removing power from the device and subsequently restoring it. If any other devices share the same power rail they will also be reset. If an __RST_ method is defined and referenced by a __PRR_ (PowerResource) then all devices that use that PowerResource will be affected.
+- **To support PLDR** there must be an _RST or _PR3  method defined within the __ADR_ namespace as detailed in [ACPI firmware: Platform-level reset](../kernel/working-with-guid-device-reset-interface-standard.md#acpi-firmware-platform-level-reset). Note that if a __PR3_ method is used, ACPI uses the D3Cold power cycle mechanism to reset. This emulates removing power from the device and subsequently restoring it. If any other devices share the same power rail they will also be reset. If an __RST_ method is defined and referenced by a __PRR_ (PowerResource) then all devices that use that PowerResource will be affected.
 
   - Since PLDR works only for internal devices, it must be declared as such in ACPI. For USB devices, to specify a port that is internal (not user visible) and can be connected to an integrated device, set the __UPC.PortIsConnectable_ byte to 0xFF and the __PLD.UserVisible_ bit to 0.
 
@@ -58,4 +58,4 @@ While there are different approaches to recover from a failed state, Bluetooth u
 
 ### Related links
 
-[Resetting and recovering a device](https://docs.microsoft.com/windows-hardware/drivers/kernel/resetting-and-recovering-a-device)
+[Resetting and recovering a device](../kernel/working-with-guid-device-reset-interface-standard.md)

@@ -1,7 +1,6 @@
 ---
 title: Boot Parameters to Configure DEP and PAE
 description: Boot Parameters to Configure DEP and PAE
-ms.assetid: cb8b6298-e679-4ca3-8b94-4f0c6af23a3f
 keywords:
 - boot parameters WDK
 - boot entry parameters WDK
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 This topic explains how to use boot parameters to enable, disable, and configure Data Execution Prevention (DEP) and Physical Address Extension (PAE) on operating systems that support these features.
 
-For information about the boot parameters for DEP and PAE see the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command and the **nx** and **pae** options.
+For information about the boot parameters for DEP and PAE see the [**BCDEdit /set**](./bcdedit--set.md) command and the **nx** and **pae** options.
 
 **Important**  DEP is a highly effective security feature that should not be disabled unless you have no alternative. The default settings for DEP and PAE are optimal for most systems. Do not change the default settings unless they interfere with essential processing tasks. This section is included to show you how to configure these features, but it should not be interpreted as a recommendation to change the default settings.
 
@@ -28,7 +27,7 @@ For information about the boot parameters for DEP and PAE see the [**BCDEdit /se
 
 ### <span id="dep_and_pae_boot_parameters"></span><span id="DEP_AND_PAE_BOOT_PARAMETERS"></span>DEP and PAE Boot Parameters
 
-DEP and PAE are enabled at boot time and are configured by setting values for the **nx** and **pae** parameters using the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command.
+DEP and PAE are enabled at boot time and are configured by setting values for the **nx** and **pae** parameters using the [**BCDEdit /set**](./bcdedit--set.md) command.
 
 These boot parameters have conflicting effects. To configure DEP and PAE, use only the parameter combinations that are described in the documentation for each parameter and discussed in this topic. Do not experiment with conflicting parameters, especially on a production system.
 
@@ -50,7 +49,7 @@ The parameter combinations for each Windows operating system are summarized in t
 
 The following list describes the boot parameter combinations that can be used to configure DEP and PAE.
 
-**Note**   The optional **{**<em>ID</em>**}** is the GUID for the specific Windows boot loader boot entry that you want to configure. If you do not specify an **{**<em>ID</em>**}**, the command modifies the current operating system boot entry. For more information, see the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command .
+**Note**   The optional **{**<em>ID</em>**}** is the GUID for the specific Windows boot loader boot entry that you want to configure. If you do not specify an **{**<em>ID</em>**}**, the command modifies the current operating system boot entry. For more information, see the [**BCDEdit /set**](./bcdedit--set.md) command .
 
  
 
@@ -118,10 +117,4 @@ The following list describes the boot parameter combinations that can be used to
  
 
  
-
- 
-
-
-
-
 

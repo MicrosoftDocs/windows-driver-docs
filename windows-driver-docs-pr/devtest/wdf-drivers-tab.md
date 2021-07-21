@@ -1,7 +1,6 @@
 ---
 title: WDF Drivers Tab
 description: This topic provides detailed information about WDF Verifier's WDF Drivers page.
-ms.assetid: e1e1d92e-1173-48ef-b985-688ebfb08bdc
 keywords:
 - WDF Verifier control application WDK
 - WDF Verifier WDK
@@ -24,7 +23,7 @@ When you start up the application, you'll see a list of the WDF drivers and runt
 
 When you highlight a driver, you'll see any devices currently using that driver, as well as related UMDF host processes. The host process control is only visible when a running UMDF driver is selected.
 
-![screen grab of wdf drivers tab](images/wdfverifier-tab1.png)
+![screen grab of wdf drivers tab.](images/wdfverifier-tab1.png)
 
 ## <span id="Color_Scheme"></span><span id="color_scheme"></span><span id="COLOR_SCHEME"></span>Color Scheme
 

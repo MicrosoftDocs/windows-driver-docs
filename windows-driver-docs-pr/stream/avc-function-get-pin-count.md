@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_PIN\_COUNT
 description: AVC\_FUNCTION\_GET\_PIN\_COUNT
-ms.assetid: fb455843-c979-479c-ba7c-f84875a9ba6f
 keywords: ["AVC_FUNCTION_GET_PIN_COUNT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -90,13 +89,7 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PIN\_COUNT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_pin_count), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
+[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PIN\_COUNT**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_pin_count), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
 
  
-
- 
-
-
-
-
 

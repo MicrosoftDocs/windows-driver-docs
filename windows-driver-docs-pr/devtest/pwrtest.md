@@ -1,7 +1,6 @@
 ---
 title: PwrTest
 description: The power management test tool (PwrTest) is a test tool that enables developers, testers, and system integrators to exercise and record power management information from the system.
-ms.assetid: 8c242d61-6c5b-44d9-84d1-f78ef9a56a6d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ The power management test tool (PwrTest) is a test tool that enables developers,
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>PwrTest.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://go.microsoft.com/fwlink/p/?linkid=290798" data-raw-source="[Windows Driver Kit Downloads]( https://go.microsoft.com/fwlink/p/?linkid=290798)">Windows Driver Kit Downloads</a>.</p></td>
+<td align="left"><p>PwrTest.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit Downloads](../download-the-wdk.md)">Windows Driver Kit Downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -38,7 +37,7 @@ PwrTest functionality is separated into scenarios. For information about these s
 
 **To run Pwrtest**
 
-1.  To be able to use all PwrTest Scenarios, you must first provision a test computer for testing using Visual Studio and the WDK. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1), or [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/previous-versions/hh698272(v=vs.85)).
+1.  To be able to use all PwrTest Scenarios, you must first provision a test computer for testing using Visual Studio and the WDK. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md), or [Provision a computer for driver deployment and testing (WDK 8)](/previous-versions/hh698272(v=vs.85)).
 
     Some scenarios require the power button driver that is part of Windows Driver Testing Framework (WDTF). WDTF (and the included power button driver) is automatically installed when you provision a system for testing using Visual Studio and the WDK.
 
@@ -69,16 +68,7 @@ PwrTest functionality is separated into scenarios. For information about these s
 
 [PwrTest Scenarios](pwrtest-scenarios.md)
 
-[Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1)
+[Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md)
 
-[Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/previous-versions/hh698272(v=vs.85))
-
- 
-
- 
-
-
-
-
-
+[Provision a computer for driver deployment and testing (WDK 8)](/previous-versions/hh698272(v=vs.85))
 

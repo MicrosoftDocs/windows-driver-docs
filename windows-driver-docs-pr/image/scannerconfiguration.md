@@ -1,7 +1,6 @@
 ---
 title: ScannerConfiguration element
 description: The required ScannerConfiguration element is a collection of elements that describes the scanner's configurable capabilities.
-ms.assetid: 79c26d0d-ebee-4baf-8689-f5bae088883d
 keywords: ["ScannerConfiguration element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScannerConfiguration** element is a collection of elements that describes the scanner's configurable capabilities.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerConfiguration>
@@ -27,8 +25,7 @@ Usage
 </wscn:ScannerConfiguration>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_3D\_EFFECTS
 description: KSNODETYPE\_3D\_EFFECTS
-ms.assetid: 8b19423b-c1ad-4b59-bdae-a53bb99469ea
 keywords: ["KSNODETYPE_3D_EFFECTS Audio Devices"]
 topic_type:
 - apiref
@@ -29,7 +28,7 @@ The KSNODETYPE\_3D\_EFFECTS node is used to control the DirectSound speaker conf
 
 [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](ksproperty-audio-stereo-speaker-geometry.md)
 
-For more information, see [DirectSound Speaker-Configuration Settings](https://docs.microsoft.com/windows-hardware/drivers/audio/directsound-speaker-configuration-settings).
+For more information, see [DirectSound Speaker-Configuration Settings](./directsound-speaker-configuration-settings.md).
 
 In addition, DirectSound requires that a KSNODETYPE\_3D\_EFFECTS node support the following 3D-listener and 3D-buffer properties:
 
@@ -80,10 +79,4 @@ A KSNODETYPE\_3D\_EFFECTS node might implement an interaural time delay (ITD) al
 [**KSPROPERTY\_ITD3D\_PARAMS**](ksproperty-itd3d-params.md)
 
  
-
- 
-
-
-
-
 

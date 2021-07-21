@@ -1,7 +1,6 @@
 ---
 title: Where to Split Header and Data
 description: Where to Split Header and Data
-ms.assetid: e302fcc1-5088-4f64-b454-5f20c69c0626
 keywords:
 - header-data split WDK , where to split
 - Ethernet frame splitting WDK networking , where to split
@@ -29,7 +28,7 @@ The following are the only valid places where a header-data split provider can s
 
 The following figure shows the major parts of the Ethernet frame and the valid split locations.
 
-![diagram illustrating the format of the 802.11 mpdu frame encrypted through the wep algorithm](images/hdsplitframe.png)
+![diagram illustrating the format of the 802.11 mpdu frame encrypted through the wep algorithm.](images/hdsplitframe.png)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Motion-Compensated Prediction
 description: Motion-Compensated Prediction
-ms.assetid: 02706369-2d99-4ac9-8dad-9e431acff42f
 keywords:
 - MCP WDK DirectX VA
 - motion compensation WDK DirectX VA
@@ -28,7 +27,7 @@ This recursive loop occasionally is broken by various types of resets that are s
 
 The following figure shows the signal flow for motion-compensated prediction.
 
-![diagram illustrating motion-compensated prediction signal flow](images/sigflow.png)
+![diagram illustrating motion-compensated prediction signal flow.](images/sigflow.png)
 
 The steps required for motion-compensated prediction coding of pictures are as follows:
 

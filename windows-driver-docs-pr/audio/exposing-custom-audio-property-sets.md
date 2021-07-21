@@ -1,7 +1,6 @@
 ---
 title: Exposing Custom Audio Property Sets
 description: Exposing Custom Audio Property Sets
-ms.assetid: dc45f0fb-f462-4d20-967a-0665e18019e4
 keywords:
 - hardware acceleration WDK DirectSound , custom audio property sets
 - custom audio property sets WDK
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 DirectSound supports the use of custom properties on sound cards and provides an **IKsPropertySet** interface for this purpose.
 
-**Note**   Header files Dsound.h and Ksproxy.h define similar but incompatible versions of the **IKsPropertySet** interface. DirectSound applications should use the version defined in Dsound.h. The DirectSound version of **IKsPropertySet** is defined in the DirectSound reference pages in the Microsoft Windows SDK documentation. For the KSProxy version, see [IKsPropertySet](https://docs.microsoft.com/windows-hardware/drivers/ddi/dsound/nn-dsound-ikspropertyset).
+**Note**   Header files Dsound.h and Ksproxy.h define similar but incompatible versions of the **IKsPropertySet** interface. DirectSound applications should use the version defined in Dsound.h. The DirectSound version of **IKsPropertySet** is defined in the DirectSound reference pages in the Microsoft Windows SDK documentation. For the KSProxy version, see [IKsPropertySet](/windows-hardware/drivers/ddi/dsound/nn-dsound-ikspropertyset).
 
  
 
@@ -50,9 +49,4 @@ Four settings are available on the **Hardware Acceleration** slider:
 Custom property sets are enabled only when the slider is set to **Full**. For more information, see [DirectSound Hardware-Acceleration and SRC Sliders](directsound-hardware-acceleration-and-src-sliders.md).
 
  
-
- 
-
-
-
 

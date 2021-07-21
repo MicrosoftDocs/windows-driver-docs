@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xF5 FLTMGR_FILE_SYSTEM
 description: The FLTMGR_FILE_SYSTEM bug check has a value of 0x000000F5. This indicates that an unrecoverable failure occurred in the Filter Manager.
-ms.assetid: 9b008c76-65c8-4de4-b7a0-96d8732c7b7e
 keywords: ["Bug Check 0xF5 FLTMGR_FILE_SYSTEM", "FLTMGR_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
@@ -106,13 +105,11 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The cause of the problem is indicated by the value of Parameter 1. See the table in the Parameters section.
 
-Resolution
-----------
+## Resolution
 
 If Parameter 1 equals **0x66**, you can debug this problem by verifying that your minifilter driver has registered a post-operation callback for this operation. The current operation can be found in the callback data structure. (See Parameter 2.) Use the **!fltkd.cbd** debugger extension.
 

@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_SAS\_Port WMI Class
 description: MS\_SMHBA\_SAS\_Port WMI Class
-ms.assetid: d3528212-f884-4db8-aadc-eb4ca15814da
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -35,15 +34,9 @@ class MS_SMHBA_SAS_Port
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_SAS\_Port**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_sas_port)
+[**MS\_SMHBA\_SAS\_Port**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_sas_port)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

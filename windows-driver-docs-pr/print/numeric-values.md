@@ -1,7 +1,6 @@
 ---
 title: Numeric Values
 description: Numeric Values
-ms.assetid: 4f1f4145-aeda-4770-9a49-d8fe701763c8
 keywords:
 - GPD file entries WDK Unidrv , numeric values
 - numeric values WDK GPD files

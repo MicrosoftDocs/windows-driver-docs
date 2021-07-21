@@ -1,7 +1,6 @@
 ---
 title: Architecture of the UEFI battery charging application
 description: Architecture of the UEFI battery charging application provided by Microsoft
-ms.assetid: eabac2ec-6e2f-448f-9793-117e12c288d9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -55,7 +54,7 @@ For more information about this protocol, see [UEFI USB function protocol](uefi-
 
 The following diagram describes the logical procedure of the UEFI battery charging application.
 
-![uefi battery charging logic](images/oem-battery-charge-logic.png)
+![uefi battery charging logic.](images/oem-battery-charge-logic.png)
 
 The following notes expand on some key sections of the logic:
 
@@ -238,7 +237,7 @@ The following table illustrates how the UEFI battery charging application reacts
 
 The following diagram shows how the UEFI battery charging application draws the UI to the screen if there is not enough charge in the battery, or if the device is in *power-off charging mode*.
 
-![battery charging user experience](images/oem-battery-charge-user-experience.png)
+![battery charging user experience.](images/oem-battery-charge-user-experience.png)
 
 The following steps describe how the application draws the UI to the screen:
 

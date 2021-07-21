@@ -1,7 +1,6 @@
 ---
 title: KS\_AM\_RATE\_SimpleRateChange
 description: The KS\_AM\_RATE\_SimpleDataRate property sets the time stamp rate on a filter.
-ms.assetid: 07399986-de5a-42fc-975e-05ea57570f58
 keywords: ["KS_AM_RATE_SimpleRateChange Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KS\_AM\_RATE\_SimpleDataRate property sets the time stamp rate on a filter.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange" data-raw-source="[&lt;strong&gt;KS_AM_SimpleRateChange&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange)"><strong>KS_AM_SimpleRateChange</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange" data-raw-source="[&lt;strong&gt;KS_AM_SimpleRateChange&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange)"><strong>KS_AM_SimpleRateChange</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +56,7 @@ The KS\_AM\_RATE\_SimpleDataRate property sets the time stamp rate on a filter.
 
 The property value (operation data) is a KS\_AM\_SimpleRateChange structure that describes a simple rate change for an MPEG-2 stream, such as fast-forward or rewind.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,14 +74,5 @@ Requirements
 ## See also
 
 
-[**KS\_AM\_SimpleRateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange)
-
- 
-
- 
-
-
-
-
-
+[**KS\_AM\_SimpleRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange)
 

@@ -1,7 +1,6 @@
 ---
 title: Mobile operator hardware overview
 description: Mobile operator hardware overview
-ms.assetid: b2322972-16be-443f-b46a-7834b4d7ead0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,7 +37,7 @@ An external device is likely to be inserted immediately before the user wants to
 
 2.  The Mobile Broadband Service reads the IMSI and generates a set of hashes.
 
-3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](cosa-apn-database-submission.md).
+3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
     -   If the connection is successful and Internet connectivity is available, nothing further happens. The user has already purchased service.
 
@@ -62,16 +61,16 @@ When an active device is attached that already had an active SIM, the workflow i
 
 2.  The Mobile Broadband Service reads the IMSI and generates a set of hashes.
 
-3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](cosa-apn-database-submission.md). For a device with an active SIM, the connection is successful and Internet connectivity is available.
+3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). For a device with an active SIM, the connection is successful and Internet connectivity is available.
 
 ## <span id="Components"></span><span id="components"></span><span id="COMPONENTS"></span>Components
 
 
 ### <span id="Windows_8__Windows_8.1__or_Windows_10_certified_mobile_broadband_devices"></span><span id="windows_8__windows_8.1__or_windows_10_certified_mobile_broadband_devices"></span><span id="WINDOWS_8__WINDOWS_8.1__OR_WINDOWS_10_CERTIFIED_MOBILE_BROADBAND_DEVICES"></span>Windows 8, Windows 8.1, or Windows 10 certified mobile broadband devices
 
-To take full advantage of the Windows mobile broadband platform, your mobile broadband device must meet the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements. For a comprehensive description of the hardware certification requirements, see [Windows Hardware Certification Requirements](https://docs.microsoft.com/previous-versions/windows/hardware/cert-program/).
+To take full advantage of the Windows mobile broadband platform, your mobile broadband device must meet the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements. For a comprehensive description of the hardware certification requirements, see [Windows Hardware Certification Requirements](/previous-versions/windows/hardware/cert-program/).
 
-For the end user, the most simplified connection experience is delivered with a USB-based mobile broadband device. As part of the hardware certification requirements, any mobile broadband device that manifests as a USB device must comply with the [Mobile Broadband Interface Model (MBIM) specification](https://docs.microsoft.com/windows-hardware/drivers/network/mb-interface-model) and the MBIM v1.0 Errata. This includes both external USB dongles and embedded modules that provide USB interfaces. For this class of devices, Windows 8, Windows 8.1, or Windows 10 includes a mobile broadband class driver, which eliminates the need for additional drivers from the IHV and simplifies the user’s connection experience. Other hardware that is not USB and driver models can receive Windows 8, Windows 8.1, and Windows 10 certification and will provide the Microsoft Store mobile broadband app experience, but these are not supported by the mobile broadband class driver.
+For the end user, the most simplified connection experience is delivered with a USB-based mobile broadband device. As part of the hardware certification requirements, any mobile broadband device that manifests as a USB device must comply with the [Mobile Broadband Interface Model (MBIM) specification](../network/mb-interface-model.md) and the MBIM v1.0 Errata. This includes both external USB dongles and embedded modules that provide USB interfaces. For this class of devices, Windows 8, Windows 8.1, or Windows 10 includes a mobile broadband class driver, which eliminates the need for additional drivers from the IHV and simplifies the user’s connection experience. Other hardware that is not USB and driver models can receive Windows 8, Windows 8.1, and Windows 10 certification and will provide the Microsoft Store mobile broadband app experience, but these are not supported by the mobile broadband class driver.
 
 ### <span id="Mobile_broadband_class_driver"></span><span id="mobile_broadband_class_driver"></span><span id="MOBILE_BROADBAND_CLASS_DRIVER"></span>Mobile broadband class driver
 
@@ -84,7 +83,7 @@ While USSD, EAP-SIM, and multiple PDP contexts are supported by the mobile broad
 
 Additional device functionality can be implemented using custom device service extensions, which will be exposed directly to the mobile broadband app through the WinRT Device Services API.
 
-For more information on the mobile broadband class driver, see [Mobile Broadband (MB) Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+For more information on the mobile broadband class driver, see [Mobile Broadband (MB) Reference](/windows-hardware/drivers/ddi/_netvista/).
 
 ### <span id="Device_service_extension_API"></span><span id="device_service_extension_api"></span><span id="DEVICE_SERVICE_EXTENSION_API"></span>Device service extension API
 
@@ -94,7 +93,7 @@ Windows certified mobile broadband devices declare each supported extension poin
 
 The Device Service Extension API provides a direct way for the mobile broadband app to access functionality on their mobile broadband device. This provides a conduit through the WWAN service and the mobile broadband class driver to the device, as illustrated in the following diagram:
 
-![information flow through the wwan service](images/mbae-hwguidelines-fig1.jpg)
+![information flow through the wwan service.](images/mbae-hwguidelines-fig1.jpg)
 
 Each device service has a corresponding GUID. All control messages and non-IP packets exchanged between the mobile broadband class driver and the device will carry the GUID to identify the service associated with the request. Command identifiers (CIDs) and status indication codes are defined under a service’s GUID namespace. For example, Phonebook and STK could both share the same CID code, but will be distinguished by the device service GUID exchanged in the request.
 
@@ -115,7 +114,7 @@ The Windows wireless platform supports APIs for the following functionality that
 
 -   Register for unsolicited device events from a specific device
 
-For more information, see [**IMbnDeviceService interface**](https://docs.microsoft.com/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservice).
+For more information, see [**IMbnDeviceService interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbndeviceservice).
 
 ### <span id="Legacy_support_and_identity_morphing"></span><span id="legacy_support_and_identity_morphing"></span><span id="LEGACY_SUPPORT_AND_IDENTITY_MORPHING"></span>Legacy support and identity morphing
 
@@ -146,15 +145,15 @@ When the device is first connected to a Windows 7 PC, a typical external mobile
 
 The native Windows 8, Windows 8.1, and Windows 10 class driver eliminates the need for an external USB device to expose itself initially as a mass storage device, since no driver installation is necessary. Windows 8, Windows 8.1, and Windows 10 include the capability to trigger a device’s identity morphing, allowing the device to immediately appear as a mobile broadband device.
 
-To learn how to develop an identity morphing solution, see [**IMbnDeviceService interface**](https://docs.microsoft.com/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservice).\]
+To learn how to develop an identity morphing solution, see [**IMbnDeviceService interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbndeviceservice).\]
 
 ### <span id="Firmware_update_support"></span><span id="firmware_update_support"></span><span id="FIRMWARE_UPDATE_SUPPORT"></span>Firmware update support
 
-Mobile broadband device firmware should be updated by using Windows Update. For info on how this can be done, see [Mobile Broadband Device Firmware Update on Windows 8](https://docs.microsoft.com/windows-hardware/drivers/network/mobile-broadband-device-firmware-update). Specific configurations for your experience can be provisioned by using your mobile broadband app.
+Mobile broadband device firmware should be updated by using Windows Update. For info on how this can be done, see [Mobile Broadband Device Firmware Update on Windows 8](../network/mobile-broadband-device-firmware-update.md). Specific configurations for your experience can be provisioned by using your mobile broadband app.
 
 ### <span id="OMA-DM_client_support"></span><span id="oma-dm_client_support"></span><span id="OMA-DM_CLIENT_SUPPORT"></span>OMA-DM client support
 
-Windows 8.1 added OMA-DM support for enterprises to manage your devices running Windows in BYOD (Bring Your Own Device) scenarios. This extends support for these scenarios by adding enterprise-relevant protocols ([MS-MDE](https://go.microsoft.com/fwlink/?linkid=617595), [MS-MDM](https://go.microsoft.com/fwlink/?linkid=619346)) for use by 3rd-party mobile device management providers and Windows InTune.
+Windows 8.1 added OMA-DM support for enterprises to manage your devices running Windows in BYOD (Bring Your Own Device) scenarios. This extends support for these scenarios by adding enterprise-relevant protocols ([MS-MDE](/openspecs/windows_protocols/ms-mde/5c841535-042e-489e-913c-9d783d741267), [MS-MDM](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f)) for use by 3rd-party mobile device management providers and Windows InTune.
 
 Windows separates OMA-DM support for mobile Network operator configuration from the support for enterprise BYOD. The OMA-DM client in Windows 8.1 and Windows 10 does not support configuring Mobile Operator specific settings natively and is not 3rd party extensible to support mobile network operator requirements. OMA-DM solutions supporting Windows Phone platform are not compatible with the Windows 8.1 OMA-DM client or the Windows 10 OMA-DM client.
 
@@ -166,7 +165,7 @@ Here are some options to consider when supporting an operator-specific OMA-DM:
 
     -   The mobile broadband device manufacturer may be able to provide 3rd party OMA-DM client solutions for integrating in their network adapter firmware if a natively supported solution does not exist.
 
-    -   Mobile broadband apps should continue to use [provisioning metadata](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) when configuring operating system specific parameters.
+    -   Mobile broadband apps should continue to use [provisioning metadata](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) when configuring operating system specific parameters.
 
 -   OMA-DM client in the mobile broadband app:
 
@@ -174,7 +173,7 @@ Here are some options to consider when supporting an operator-specific OMA-DM:
 
     -   This solution requires operator-specific or device manufacturer-specific custom device service support for configuring device specific parameters by the mobile broadband app.
 
-    -   Mobile broadband app that include an OMA-DM client should use [**provisioning metadata**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) when configuring operating system specific parameters.
+    -   Mobile broadband app that include an OMA-DM client should use [**provisioning metadata**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) when configuring operating system specific parameters.
 
 ### <span id="APN_Management"></span><span id="apn_management"></span><span id="APN_MANAGEMENT"></span>APN Management
 
@@ -197,18 +196,10 @@ For more info about the APN database, see [APN database overview](apn-database-o
 
 Certain operators require that mobile broadband-enabled systems be locked to its network or have requirements to unlock a locked device to allow for service portability. To enable this scenario, we require the OEM’s and device vendors use MBIM\_PIN\_TYPE guidance in the MBIM Specification for Subsidy Lock.
 
-The device must report [**WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ready_info):: [**ReadyState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_ready_state)=**WwanReadyStateInitialized** in this locked state and should not report **WwanReadyStateDeviceLocked**.
+The device must report [**WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ready_info):: [**ReadyState**](/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_ready_state)=**WwanReadyStateInitialized** in this locked state and should not report **WwanReadyStateDeviceLocked**.
 
 **Note**  
 There is no HCK test case to validate that this feature implemented on the device or system works with Windows. We look towards the OEM and the operator to use specific filters within MBOT to ensure that the final product can be tested.
 
  
-
- 
-
- 
-
-
-
-
 

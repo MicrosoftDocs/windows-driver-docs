@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_UPDATEPAGEDIRECTORY structure
 description: The DXGKARG\_UPDATEPAGEDIRECTORY structure is reserved for system use. Do not use it in your driver.
-ms.assetid: ac16c040-50d8-4716-8275-682092a2be77
 keywords: ["_DXGKARG_UPDATEPAGEDIRECTORY structure Display Devices", "DXGKARG_UPDATEPAGEDIRECTORY structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_UPDATEPAGEDIRECTORY structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_UPDATEPAGEDIRECTORY {
@@ -32,8 +30,7 @@ typedef struct _DXGKARG_UPDATEPAGEDIRECTORY {
 } DXGKARG_UPDATEPAGEDIRECTORY;
 ```
 
-Members
--------
+## Members
 
 **pPageDirectory**
 Reserved for system use.
@@ -47,8 +44,7 @@ Reserved for system use.
 **PDEArray**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

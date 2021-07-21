@@ -1,7 +1,6 @@
 ---
 title: DXGKARG\_SYSTEM\_DISPLAY\_ENABLE\_FLAGS structure
-description: Reserved for system use. Do not use it in your driver.
-ms.assetid: f23d6692-4c9d-48eb-8d7f-ef70334494b1
+description: Learn about the DXGKARG\_SYSTEM\_DISPLAY\_ENABLE\_FLAGS structure, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS structure Display Devices", "PDXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS structure pointer Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS {
@@ -34,8 +32,7 @@ typedef struct _DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS {
 } DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS, *PDXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS;
 ```
 
-Members
--------
+## Members
 
 **Reserved**
 Reserved for system use.
@@ -43,8 +40,7 @@ Reserved for system use.
 **Value**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

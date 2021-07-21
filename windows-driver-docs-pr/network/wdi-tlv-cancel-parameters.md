@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CANCEL_PARAMETERS
 description: WDI_TLV_CANCEL_PARAMETERS is a TLV that contains parameters for OID_WDI_ABORT_TASK.
-ms.assetid: 7C071743-5DF9-4CA8-873A-64B06C94388F
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CANCEL_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CANCEL\_PARAMETERS
 
 
-WDI\_TLV\_CANCEL\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_ABORT\_TASK](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-abort-task).
+WDI\_TLV\_CANCEL\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_ABORT\_TASK](./oid-wdi-abort-task.md).
 
 ## TLV Type
 
@@ -34,8 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -59,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: sd
 description: The sd extension displays the security descriptor at the specified address.
-ms.assetid: 67c72bdb-7bfc-42d6-9b65-31a07dc67729
 keywords: ["sd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -41,8 +40,7 @@ Exts.dll
 
 For an application and an example of this command, see [Determining the ACL of an Object](determining-the-acl-of-an-object.md). For information about security descriptors, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Also see [**!sid**](-sid.md) and [**!acl**](-acl.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

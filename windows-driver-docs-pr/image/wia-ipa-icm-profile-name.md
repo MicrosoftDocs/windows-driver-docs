@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ICM\_PROFILE\_NAME
 description: The WIA\_IPA\_ICM\_PROFILE\_NAME property contains the image color management (ICM) profile name that is needed to properly decode an image.
-ms.assetid: bf4874d9-1f08-4aec-8ee3-2a6a11d63956
 keywords: ["WIA_IPA_ICM_PROFILE_NAME Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_ICM\_PROFILE\_NAME property to determine the ICM profile to use when processing the image. The WIA service creates and maintains this property based on the ICMProfiles entry in the driver installation file.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: SetFC3MgmtInfo function
 description: The SetFC3MgmtInfo WMI method sets FC3 management information that is associated with a Fibre Channel adapter.
-ms.assetid: 180f9945-3b2e-494e-8e6d-648ff4369c3b
 keywords: ["SetFC3MgmtInfo function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The **SetFC3MgmtInfo** WMI method sets FC3 management information that is associated with a Fibre Channel adapter.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SetFC3MgmtInfo(
@@ -30,27 +28,23 @@ void SetFC3MgmtInfo(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetFC3MgmtInfo\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetFC3MgmtInfo\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_out) structure.
 
 *MgmtInfo*   
-A structure of type [**HBAFC3MgmtInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo) that holds FC3 management information that will be used to configure the fibre channel adapter. This information is delivered to the miniport driver in the **PortWWN** member of a [**SetFC3MgmtInfo\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_in) structure.
+A structure of type [**HBAFC3MgmtInfo**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo) that holds FC3 management information that will be used to configure the fibre channel adapter. This information is delivered to the miniport driver in the **PortWWN** member of a [**SetFC3MgmtInfo\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_in) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -74,20 +68,13 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**GetFC3MgmtInfo\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfc3mgmtinfo_out)
+[**GetFC3MgmtInfo\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfc3mgmtinfo_out)
 
-[**HBAFC3MgmtInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo)
+[**HBAFC3MgmtInfo**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo)
 
-[**SetFC3MgmtInfo\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_in)
+[**SetFC3MgmtInfo\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_in)
 
-[**SetFC3MgmtInfo\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_out)
-
- 
+[**SetFC3MgmtInfo\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_out)
 
  
-
-
-
-
-
 

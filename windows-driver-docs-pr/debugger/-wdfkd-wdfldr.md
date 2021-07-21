@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfldr
 description: The wdfkd.wdfldr extension displays information about the KMDF and UMDF drivers that are currently dynamically bound to the Windows Driver Frameworks. 
-ms.assetid: 0965632d-922b-4812-9cfb-7663af0e3847
 keywords: ["wdfkd.wdfldr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,8 +39,7 @@ KMDF 1, UMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output of **!wdfldr**.
 

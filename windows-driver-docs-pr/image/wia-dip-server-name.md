@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_SERVER\_NAME
 description: The WIA\_DIP\_SERVER\_NAME property contains the name of the server that a WIA minidriver is running on.
-ms.assetid: 93fec2b1-dc41-48cf-990b-f6aa99133835
 keywords: ["WIA_DIP_SERVER_NAME Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The default value of WIA\_DIP\_SERVER\_NAME is "local". This property should contain the string "local" when an application is connected to a device on the same computer.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

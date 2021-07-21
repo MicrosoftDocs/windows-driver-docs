@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x17 CID_HANDLE_DELETION
 description: The CID_HANDLE_DELETION bug check has a value of 0x00000017.This bug check appears very infrequently.
-ms.assetid: 84012928-655c-4b99-b940-dad4f0caf249
 keywords: ["Bug Check 0x17 CID_HANDLE_DELETION", "CID_HANDLE_DELETION"]
 ms.date: 05/23/2017
 topic_type:

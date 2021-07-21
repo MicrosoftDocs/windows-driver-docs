@@ -1,7 +1,6 @@
 ---
 title: ACPI IPMI Operation Region
 description: ACPI IPMI Operation Region
-ms.assetid: fb953ee1-2628-4cd1-a2d3-a725cf59cc9f
 keywords:
 - Power Metering and Budgeting WDK , ACPI IPMI operation region
 - ACPI IPMI operation region WDK Power Meter

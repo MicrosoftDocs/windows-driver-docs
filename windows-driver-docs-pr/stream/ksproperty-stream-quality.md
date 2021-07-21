@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_QUALITY
 description: The KSPROPERTY\_STREAM\_QUALITY property is an optional property that should be implemented if the pin generates Quality Management complaints.
-ms.assetid: ed4d9baa-967a-41b3-b8b9-910b86230254
 keywords: ["KSPROPERTY_STREAM_QUALITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,25 +46,23 @@ The KSPROPERTY\_STREAM\_QUALITY property is an optional property that should be 
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksquality_manager" data-raw-source="[&lt;strong&gt;KSQUALITY_MANAGER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksquality_manager)"><strong>KSQUALITY_MANAGER</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksquality_manager" data-raw-source="[&lt;strong&gt;KSQUALITY_MANAGER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality_manager)"><strong>KSQUALITY_MANAGER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
-When this request is made, the pin connection in turn notifies the quality manager by providing [**KSQUALITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksquality) structures with the given context parameter.
+When this request is made, the pin connection in turn notifies the quality manager by providing [**KSQUALITY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality) structures with the given context parameter.
 
 If a pin does not report quality problems, it does not need to support KSPROPERTY\_STREAM\_QUALITY.
 
-Also see [Quality Management](https://docs.microsoft.com/windows-hardware/drivers/stream/quality-management).
+Also see [Quality Management](./quality-management.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,18 +80,9 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSQUALITY\_MANAGER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksquality_manager)
+[**KSQUALITY\_MANAGER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality_manager)
 
-[**KSQUALITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksquality)
-
- 
-
- 
-
-
-
-
-
+[**KSQUALITY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality)
 

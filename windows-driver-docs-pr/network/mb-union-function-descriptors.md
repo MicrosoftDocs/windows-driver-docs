@@ -1,7 +1,6 @@
 ---
 title: MB union function descriptors
 description: This section describes union function descriptors and MBIM backwards-compatible functions for MB devices
-ms.assetid: 4B8C63DD-4B8D-40AB-A6DF-0466343E7E45
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,11 +11,11 @@ ms.localizationpriority: medium
 ## Union Function Descriptors
 
 
-Mobile broadband devices that implement UFDs have Device Class / Subclass / Protocol of 2 / 0 / 0 as required for CDC devices. This prevents Windows from loading USBCCGP on the device. For information on how Windows loads USBCCGP on composite devices, see [USB Generic Parent Driver (Usbccgp.sys)](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+Mobile broadband devices that implement UFDs have Device Class / Subclass / Protocol of 2 / 0 / 0 as required for CDC devices. This prevents Windows from loading USBCCGP on the device. For information on how Windows loads USBCCGP on composite devices, see [USB Generic Parent Driver (Usbccgp.sys)](/windows-hardware/drivers/ddi/index).
 
 To allow Windows to load USBCCGP, the device needs to report a Microsoft OS compatible ID of "CDC\_WMC" when the device is not configured. After detecting the compatible ID of "CDC\_WMC", Windows loads USBCCGP, and USBCCGP sets the configuration on the device to 1. USBCCGP will then query again for the Microsoft OS compatible IDs. This time, however, the device should not report the Microsoft OS compatible ID of "CDC\_WMC". The device may report Microsoft OS compatible IDs for functions in the selected configuration.
 
-![usbhub queries for the microsoft os descriptor when the device is not configured](images/mbim1.png)
+![usbhub queries for the microsoft os descriptor when the device is not configured.](images/mbim1.png)
 
 USBHUB queries for the Microsoft OS descriptor when the device is not configured
 
@@ -46,10 +45,4 @@ The device reports any compatible ID that it has for its function. USBCCGP then 
 MBIM functions that are backward compatible with the NCM 1.0 specification will come up as NCM 1.0 functions by default. Mobile broadband devices that consist of an MBIM backward-compatible function should report a Microsoft OS compatible ID of "MBIM" for the MBIM function. This allows Windows 8 to detect the NCM 1.0 function as the MBIM function and load MBCD as the function driver.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: PlatenResolutions element
 description: The required PlatenResolutions element contains a list of resolutions at which the scanner's platen can scan.
-ms.assetid: 9adf54d7-4cca-4d43-b467-c0b2c84a4a7f
 keywords: ["PlatenResolutions element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **PlatenResolutions** element contains a list of resolutions at which the scanner's platen can scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:PlatenResolutions>
@@ -27,8 +25,7 @@ Usage
 </wscn:PlatenResolutions>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -73,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pair, where both Width and Height are specified in pixels per inch.
 

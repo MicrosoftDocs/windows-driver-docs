@@ -1,7 +1,6 @@
 ---
 title: Installing a Test-Signed Driver Package on the Test Computer
 description: Installing a Test-Signed Driver Package on the Test Computer
-ms.assetid: d825acb6-d1de-4fc5-bde2-ea27bd706f61
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,13 +16,13 @@ You can install the test-signed [driver package](driver-packages.md) on the test
 
 You can install the test-signed [driver package](driver-packages.md) on the computer through:
 
--   The [DevCon](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon) tool, which is a WDK command line tool for installing drivers.
+-   The [DevCon](../devtest/devcon.md) tool, which is a WDK command line tool for installing drivers.
 
 This topic will first review the process of test-signing a driver package, and then describe how you can install the driver package on the test computer. This topic uses the *ToastPkg* sample driver package. Within the WDK installation directory, the package's source files are located in the *src\\general\\toaster\\toastpkg* directory.
 
 Follow these steps to build and test-sign the *ToastPkg* sample driver package:
 
-1.  On the signing computer, build the *ToastPkg* sample driver package's kernel-mode binaries. For more information about how to build drivers, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
+1.  On the signing computer, build the *ToastPkg* sample driver package's kernel-mode binaries. For more information about how to build drivers, see [Building a Driver](../develop/building-a-driver.md).
 
 2.  On the signing computer, create the *Contoso.com(Test)* certificate as described in [Creating Test Certificates](creating-test-certificates.md).
 
@@ -39,15 +38,9 @@ The following topics describe how the *ToastPkg* sample driver package can be in
 
 -   [Using the DevCon Tool to Install a Driver Package](using-the-devcon-tool-to-install-a-driver-package.md)
 
-Once the [driver package](driver-packages.md) is installed, you can troubleshoot problems with the loading of test-signed drivers through the methods described in [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md).
+Once the [driver package](driver-packages.md) is installed, you can troubleshoot problems with the loading of test-signed drivers through the methods described in [Troubleshooting Install and Load Problems with Signed Driver Packages](./detecting-driver-load-errors.md).
 
 For more information about how to install a test-signed driver package, see [Installing Test-Signed Driver Packages](installing-test-signed-driver-packages.md).
 
  
-
- 
-
-
-
-
 

@@ -1,5 +1,5 @@
 ---
-Description: Installing the Sample Driver
+description: Installing the Sample Driver
 title: Installing the Sample Driver
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Heights element
 description: The required Heights element contains the list of heights at which the scanner can scan images.
-ms.assetid: b45a967e-9ce9-417a-96f2-c199ab302b88
 keywords: ["Heights element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Heights** element contains the list of heights at which the scanner can scan images.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Heights>
@@ -27,8 +25,7 @@ Usage
 </wscn:Heights>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -76,8 +73,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Each [**Height**](height.md) child element specifies a valid number of vertical pixels per inch at which the device can scan images.
 

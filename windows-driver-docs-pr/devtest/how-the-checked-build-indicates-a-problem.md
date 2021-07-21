@@ -1,7 +1,6 @@
 ---
 title: How the Checked Build Indicates a Problem
 description: How the Checked Build Indicates a Problem
-ms.assetid: 373519e0-bca9-434e-8cc3-e11c2d4b42a4
 keywords:
 - checked builds WDK , problem notifications
 - notifications WDK checked builds
@@ -10,23 +9,25 @@ keywords:
 - debugger messages WDK
 - messages WDK checked builds
 - errors WDK checked builds
-ms.date: 04/20/2017
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
 # How the Checked Build Indicates a Problem
 
-
 ## <span id="ddk_how_the_checked_build_indicates_a_problem_tools"></span><span id="DDK_HOW_THE_CHECKED_BUILD_INDICATES_A_PROBLEM_TOOLS"></span>
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 The checked build of the operating system uses a variety of methods to notify you of problems that it finds. These methods include ASSERT failures, breakpoints, and debugger messages. All of these methods result in output from a kernel debugger. Therefore, to be useful, you must run the checked build with a kernel-mode debugger (such as WinDbg or KD) connected.
 
-For details on debugging, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+For details on debugging, see [Windows Debugging](../debugger/index.md).
 
 ### <span id="assert_failures"></span><span id="ASSERT_FAILURES"></span>ASSERT Failures
 
-Most of the checks that the checked build performs are implemented as [**ASSERT**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)) statements. When the expression that is asserted evaluates to **FALSE**, the debugger displays a message that contains:
+Most of the checks that the checked build performs are implemented as [**ASSERT**](/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)) statements. When the expression that is asserted evaluates to **FALSE**, the debugger displays a message that contains:
 
 -   The text of the code expression that failed
 
@@ -47,9 +48,9 @@ ntkrnlmp!DbgBreakPoint:
 
 As shown in the debugger output, the user is asked to "Break, Ignore, Terminate Process or Terminate Thread." The user answered by entering "b", which caused the debugger to stop system execution with a breakpoint. As a result, the user can now continue to debug the problem that was discovered.
 
-The way in which a failed assert affects the system depends on a number of factors. In versions of Windows prior to Windows Vista, if debugging was enabled for the operating system during the system startup process, the system will break into the debugger (if connected), or hang waiting for a debugger to be connected. If debugging was not enabled, the system will crash with [**Bug Check 0x1E**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x1e--kmode-exception-not-handled) (KMODE\_EXCEPTION\_NOT\_HANDLED) with a Parameter 1 value of 0x80000003. In Windows Vista and later, the system will break into the debugger only if the debugger is connected. If debugging is not enabled, or if debugging is enabled but the debugger is not connected, the failed assertion will not be reported (although assertion checking will still be performed). If you are developing a driver and want to deterministically break into the debugger if debugging is enabled but a debugger is not connected, you can use [**DbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpoint) statements in your code.
+The way in which a failed assert affects the system depends on a number of factors. In versions of Windows prior to Windows Vista, if debugging was enabled for the operating system during the system startup process, the system will break into the debugger (if connected), or hang waiting for a debugger to be connected. If debugging was not enabled, the system will crash with [**Bug Check 0x1E**](../debugger/bug-check-0x1e--kmode-exception-not-handled.md) (KMODE\_EXCEPTION\_NOT\_HANDLED) with a Parameter 1 value of 0x80000003. In Windows Vista and later, the system will break into the debugger only if the debugger is connected. If debugging is not enabled, or if debugging is enabled but the debugger is not connected, the failed assertion will not be reported (although assertion checking will still be performed). If you are developing a driver and want to deterministically break into the debugger if debugging is enabled but a debugger is not connected, you can use [**DbgBreakPoint**](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpoint) statements in your code.
 
-Some [**ASSERT**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)) failures are preceded by additional [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) output. One common example of this type of assert is the following [**PAGED\_CODE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) macro, which is defined in ntddk.h and wdm.h for use in the checked build of drivers:
+Some [**ASSERT**](/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)) failures are preceded by additional [**DbgPrint**](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) output. One common example of this type of assert is the following [**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code) macro, which is defined in ntddk.h and wdm.h for use in the checked build of drivers:
 
 ```
 #define PAGED_CODE() \
@@ -67,7 +68,7 @@ For a list of the most common ASSERT calls, see [Checked Build ASSERTs](checked-
 
 ### <span id="breakpoints"></span><span id="BREAKPOINTS"></span>Breakpoints
 
-Checked builds can also use breakpoints to indicate a problem. Breakpoints are often preceded by [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) statements, which cause the debugger to display information about the problem that has been encountered. If a debugger is not connected to the system when a breakpoint occurs, the system crashes and all explanatory messages are lost.
+Checked builds can also use breakpoints to indicate a problem. Breakpoints are often preceded by [**DbgPrint**](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) statements, which cause the debugger to display information about the problem that has been encountered. If a debugger is not connected to the system when a breakpoint occurs, the system crashes and all explanatory messages are lost.
 
 Some of the most common messages that precede breakpoints in the checked build, and which are encountered by driver writers, are listed in [Checked Build Breakpoints and Messages](checked-build-breakpoints-and-messages.md).
 
@@ -102,7 +103,7 @@ f9f77ddc 8069bece 805f8c04 00000001 00000000 ntkrnlmp!PspSystemThreadStartup+0x4
 00000000 00000000 00000000 00000000 00000000 ntkrnlmp!KiThreadStartup+0x16
 ```
 
-As you can see from this stack trace, the breakpoint was taken as a result of the call **KfAcquireSpinLock**. After you examine the wdm.h, you can see that this is the actual name of the function referred to by drivers as [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock). Even though no message was displayed prior to the breakpoint, you can see the location of the breakpoint at the top of the stack (**ntkrnlmp!SpinLockSpinningForTooLong**). This location indicates the reason for the breakpoint: A spin lock has been spinning, pending acquisition, for an unusually long time.
+As you can see from this stack trace, the breakpoint was taken as a result of the call **KfAcquireSpinLock**. After you examine the wdm.h, you can see that this is the actual name of the function referred to by drivers as [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock). Even though no message was displayed prior to the breakpoint, you can see the location of the breakpoint at the top of the stack (**ntkrnlmp!SpinLockSpinningForTooLong**). This location indicates the reason for the breakpoint: A spin lock has been spinning, pending acquisition, for an unusually long time.
 
 ### <span id="debugger_messages"></span><span id="DEBUGGER_MESSAGES"></span>Debugger Messages
 
@@ -135,10 +136,4 @@ Some of the most common messages that the checked build can display during drive
 Enabling additional trace or informational messages in various system components can also cause debugger messages without subsequent breakpoints or ASSERT failures.
 
  
-
- 
-
-
-
-
 

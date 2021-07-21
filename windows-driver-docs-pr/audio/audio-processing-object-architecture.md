@@ -1,7 +1,6 @@
 ---
 title: Audio Processing Object Architecture
-description: Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.
-ms.assetid: 2F57B4C7-8C83-4DDF-BFAF-B9308752E91D
+description: Architecture for Audio Processing Object APOs used for software based digital signal processing for Windows audio streams.
 ms.date: 10/18/2019
 ms.localizationpriority: medium
 ---
@@ -30,8 +29,8 @@ Software based effects are inserted in the software device pipe on stream initia
 
 Any effects applied in hardware DSP need to be advertised via a proxy APO. Microsoft provides a default proxy APO (MsApoFxProxy.dll). To use the Microsoft provided APO, this property set and property must be supported.
 
--   [KSPROPSETID\_AudioEffectsDiscovery](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audioeffectsdiscovery)
--   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn457706(v=vs.85))
+-   [KSPROPSETID\_AudioEffectsDiscovery](./kspropsetid-audioeffectsdiscovery.md)
+-   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](./ksproperty-audioeffectsdiscovery-effectslist.md)
 
 Optionally, you can implement your own proxy APO.
 
@@ -53,29 +52,29 @@ For more information on creating custom APOs see, [Implementing Audio Processing
 
 **Custom APO Support App**
 
-To allow the user to configure settings associated with your custom APO the recommended approach is to create a Hardware Support App. For more information, see [Hardware Support App (HSA): Steps for Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers).
+To allow the user to configure settings associated with your custom APO the recommended approach is to create a Hardware Support App. For more information, see [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 
 **Custom APO Tests and Requirements**
 
-The Microsoft HLK provides tests that can be used with APOs. For more information about audio tests see, [Device.Audio Testing](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj123955(v=vs.85)) and [Device.Audio Tests](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124726(v=vs.85)).
+The Microsoft HLK provides tests that can be used with APOs. For more information about audio tests see, [Device.Audio Testing](/previous-versions/windows/hardware/hck/jj123955(v=vs.85)) and [Device.Audio Tests](/previous-versions/windows/hardware/hck/jj124726(v=vs.85)).
 
 These two tests can be particularly useful when working with APOs.
 
-[Verify Audio EffectsDiscovery (Manual) - Certification](https://docs.microsoft.com/previous-versions/windows/hardware/hck/dn456312(v=vs.85))
+[Verify Audio EffectsDiscovery (Manual) - Certification](/previous-versions/windows/hardware/hck/dn456312(v=vs.85))
 
-[SysFX Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124017(v=vs.85))
+[SysFX Test](/previous-versions/windows/hardware/hck/jj124017(v=vs.85))
 
-For information on audio requirements to support APOs, see [Device.Audio Requirements](https://docs.microsoft.com/previous-versions/windows/hardware/cert-program/deviceaudio-requirements).
+For information on audio requirements to support APOs, see [Device.Audio Requirements](/previous-versions/windows/hardware/cert-program/deviceaudio-requirements).
 
 **Custom APO Tools and Utilities**
 
 You can use the "Audio Effects Discovery Sample" to explore the available audio effects. This sample demonstrates how to query audio effects on render and capture audio devices and how to monitor changes with the audio effects. It is included as part of the SDK samples and can be downloaded using this link:
 
-[Audio effects discovery sample](https://go.microsoft.com/fwlink/p/?linkid=2112597)
+[Audio effects discovery sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Audio%20effects%20discovery%20sample)
 
 **Application Audio Effect Awareness**
 
-Applications have the ability to call APIs to determine which audio effects are currently active on the system. For more information on the audio effects awareness APIs, see [AudioRenderEffectsManager class](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.AudioRenderEffectsManager).
+Applications have the ability to call APIs to determine which audio effects are currently active on the system. For more information on the audio effects awareness APIs, see [AudioRenderEffectsManager class](/uwp/api/Windows.Media.Effects.AudioRenderEffectsManager).
 
 ## <span id="Audio_Processing_Objects_Architecture"></span><span id="audio_processing_objects_architecture"></span><span id="AUDIO_PROCESSING_OBJECTS_ARCHITECTURE"></span>Audio Processing Objects Architecture
 
@@ -102,7 +101,7 @@ Endpoint Effect (EFX) are applied to all streams that use the same endpoint. An 
 
 This diagram shows the possible locations for stream (SFX), mode (MFX) and endpoint (EFX) effects for Windows 10.
 
-![diagram illustrating placement for stream, mode, and endpoint effects in windows 10](images/audio-apo-software-effects-summary.png)
+![diagram illustrating placement for stream, mode, and endpoint effects in windows 10.](images/audio-apo-software-effects-summary.png)
 
 **Multiple Custom APO Effects**
 
@@ -110,7 +109,7 @@ It is possible to configure multiple APO based effects to work with different ap
 
 This diagram illustrates how multiple applications can access multiple combinations of stream, mode and endpoint APO effects. All of the APOs are COM based and run in user mode. In this scenario, none of the effects are running in hardware or in kernel mode.
 
-![diagram showing how multiple applications can access multiple combinations of stream, mode and endpoint apo effects](images/audio-apo-software-effects-1.png)
+![diagram showing how multiple applications can access multiple combinations of stream, mode and endpoint apo effects.](images/audio-apo-software-effects-1.png)
 
 **Note**  You can use the scroll bar at the very bottom of this page to view all of this diagram.
 
@@ -118,7 +117,7 @@ This diagram illustrates how multiple applications can access multiple combinati
 
 This diagram illustrates software mode effects and hardware endpoint effects for render and capture.
 
-![diagram that shows software mode effects and hardware endpoint effects for render and capture](images/audio-apo-software-mode-effects-and-hardware-endpoint-effects-2.png)
+![diagram that shows software mode effects and hardware endpoint effects for render and capture.](images/audio-apo-software-mode-effects-and-hardware-endpoint-effects-2.png)
 
 **DSP Equipped System with Hardware Effects**
 
@@ -127,4 +126,4 @@ This diagram illustrates a DSP equipped system that implements effects in hardwa
 ![diagram that shows a dsp equipped system that implements effects in hardware.](images/audio-apo-dsp-equipped-system-with-hardware-effects-3.png)
 
 ## <span id="related_topics"></span>Related topics
-[Windows Audio Processing Objects](windows-audio-processing-objects.md)  
+[Windows Audio Processing Objects](windows-audio-processing-objects.md)

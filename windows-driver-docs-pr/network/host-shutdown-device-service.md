@@ -1,7 +1,6 @@
 ---
 title: HOST Shutdown Device Service
 description: This topic provides guidelines for Mobile Broadband Interface Model (MBIM)-compliant devices to implement and report the described device service when queried by CID_MBIM_DEVICE_SERVICES.
-ms.assetid: 62BFC796-EDB2-489E-B487-65E2DD7C4256
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -39,24 +38,31 @@ UUID Value = **883b7c26-985f-43fa-9804-27d7fb80959c**
 
 This command informs the device that the host is shutting down. The MB device may lose power.
 
-|                                      |                           |
-|--------------------------------------|---------------------------|
-| CID                                  | CID\_MBIM\_MSHOSTSHUTDOWN |
-| Command Code                         | 1                         |
-| Set                                  | Yes                       |
-| Query                                | No                        |
-| Event                                | No                        |
-| Set InformationBuffer payload        | N/A                       |
-| Query InformationBuffer payload      | N/A                       |
-| Completion InformationBuffer payload | N/A                       |
+**CID**: CID\_MBIM\_MSHOSTSHUTDOWN
+
+**Command Code**: 1
+
+**Set**: Yes
+
+**Query**: No
+
+**Event**: No
+
+**Set InformationBuffer payload**: N/A
+
+**Query InformationBuffer payload**: N/A
+
+**Completion InformationBuffer payload**: N/A
+
 
  
 
-|                   |                                                                                                      |
-|-------------------|------------------------------------------------------------------------------------------------------|
-| Set               | InformationBuffer on MBIM\_COMMAND\_MSG not used. InformationBuffer of MBIM\_COMMAND\_DONE not used. |
-| Query             | Unsupported                                                                                          |
-| Unsolicited Event | Unsupported                                                                                          |
+**Set**: InformationBuffer on MBIM\_COMMAND\_MSG not used. InformationBuffer of MBIM\_COMMAND\_DONE not used.
+
+**Query**: Unsupported
+
+**Unsolicited Event**: Unsupported
+
 
  
 
@@ -127,16 +133,22 @@ The following information summarizes the list of host sent CIDs/CMDs to the devi
 
 This command notifies the MBIM modem that the system is undergoing pre-shutdown and it should finish all its operations, deregister from the network, and store necessary information to the host for flashless modem cases. The pre-shutdown notification is sent down when the host is preparing to enter S4 and S5 states and is waiting for all services to shut down appropriately.
 
-|                                      |                              |
-|--------------------------------------|------------------------------|
-| CID                                  | CID\_MBIM\_MSHOSTPRESHUTDOWN |
-| Command Code                         | 2                            |
-| Set                                  | Yes                          |
-| Query                                | No                           |
-| Notification                         | No                           |
-| Set InformationBuffer payload        | N/A                          |
-| Query InformationBuffer payload      | N/A                          |
-| Completion InformationBuffer payload | N/A                          |
+**CID**: CID\_MBIM\_MSHOSTPRESHUTDOWN
+
+**Command Code**: 2
+
+**Set**: Yes
+
+**Query**: No
+
+**Notification**: No
+
+**Set InformationBuffer payload**: N/A
+
+**Query InformationBuffer payload**: N/A
+
+**Completion InformationBuffer payload**: N/A
+
 
  
 

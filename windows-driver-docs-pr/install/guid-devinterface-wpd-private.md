@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_WPD_PRIVATE
 description: GUID_DEVINTERFACE_WPD_PRIVATE
-ms.assetid: 50292137-d648-41cf-928e-d72549f6321b
 keywords: ["GUID_DEVINTERFACE_WPD_PRIVATE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_WPD_PRIVATE
 
 
-The GUID_DEVINTERFACE_WPD_PRIVATE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for specialized [Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527) (WPD).
+The GUID_DEVINTERFACE_WPD_PRIVATE [device interface class](./overview-of-device-interface-classes.md) is defined for specialized [Windows Portable Devices](/previous-versions//ff597729(v=vs.85)) (WPD).
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ The GUID_DEVINTERFACE_WPD_PRIVATE [device interface class](https://docs.microsof
 
  
 
-Remarks
--------
+## Remarks
 
 GUID_DEVINTERFACE_WPD_PRIVATE should be used only for private devices that are used by custom WPD applications. Generic WPD drivers and clients of WPD devices should not use instances of this device interface class.
 
@@ -54,8 +52,7 @@ Custom applications can enumerate private devices that register this interface b
 
 For information about the device interface class for generic WPD devices, see [**GUID_DEVINTERFACE_WPD**](guid-devinterface-wpd.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -78,13 +75,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_WPD**](guid-devinterface-wpd.md)
-
- 
-
- 
-
-
-
-
-
 

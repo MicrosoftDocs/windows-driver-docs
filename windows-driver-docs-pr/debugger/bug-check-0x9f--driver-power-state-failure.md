@@ -1,8 +1,7 @@
 ---
 title: Bug Check 0x9F DRIVER_POWER_STATE_FAILURE
 description: This bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
-ms.assetid: f767fe80-0ec0-45e4-9949-467f50ac601c
-keywords: ["(Developer Content) Bug Check 0x9F DRIVER_POWER_STATE_FAILURE", "DRIVER_POWER_STATE_FAILURE"]
+keywords: ["Bug Check 0x9F DRIVER_POWER_STATE_FAILURE", "DRIVER_POWER_STATE_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# (Developer Content) Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE
+# Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE
 
 The DRIVER\_POWER\_STATE\_FAILURE bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 
@@ -59,7 +58,7 @@ Parameter 1 indicates the type of violation.
 <tr class="odd">
 <td align="left"><p>0x3</p></td>
 <td align="left"><p>The physical device object (PDO) of the stack</p></td>
-<td align="left"><p>The functional device object (FDO) of the stack. In Windows 7 and later, nt!TRIAGE_9F_POWER.</p></td>
+<td align="left"><p>nt!TRIAGE_9F_POWER.</p></td>
 <td align="left"><p>The blocked IRP</p></td>
 <td align="left"><p>A device object has been blocking an IRP for too long a time.</p></td>
 </tr>
@@ -67,8 +66,22 @@ Parameter 1 indicates the type of violation.
 <td align="left"><p>0x4</p></td>
 <td align="left"><p>Time-out value, in seconds.</p></td>
 <td align="left"><p>The thread currently holding onto the Plug-and-Play (PnP) lock.</p></td>
-<td align="left"><p>In Windows 7 and later, nt!TRIAGE_9F_POWER.</p></td>
+<td align="left"><p>nt!TRIAGE_9F_PNP.</p></td>
 <td align="left"><p>The power state transition timed out waiting to synchronize with the PnP subsystem.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x5</p></td>
+<td align="left"><p>Physical Device Object of the stack</p></td>
+<td align="left"><p></p>The POP_FX_DEVICE object</td>
+<td align="left"><p>Reserved - 0</p></td>
+<td align="left"><p>The device failed to complete a directed power transition within the required amount of time.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x6</p></td>
+<td align="left"><p>The POP_FX_DEVICE object</p></td>
+<td align="left"><p>Indicates if this was a Directed Power Down(1) or Power Up(0) completion.</p></td>
+<td align="left"><p>Reserved - 0</p></td>
+<td align="left"><p></p>The device did not complete its Directed Power Transition callback successfully.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x500</p></td>
@@ -81,12 +94,10 @@ Parameter 1 indicates the type of violation.
 </table>
 
 ## Cause
------
 
 For a description of the possible causes, see the description of each code in the Parameters section.
 
 ## Resolution
-----------
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x3**
 
@@ -286,8 +297,7 @@ To help you determine the cause of the error, consider the following questions:
 
 - Refer to the additional techniques described above under parameter 0x3.
 
-## Remarks
-----------
+## ## Remarks---
 
 If you are not equipped to debug this problem using the techniques described above, you can use some basic troubleshooting techniques.
 

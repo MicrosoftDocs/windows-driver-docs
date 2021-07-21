@@ -1,7 +1,6 @@
 ---
 title: .beep (Speaker Beep)
 description: The .beep command makes noise on the computer speaker.
-ms.assetid: b7edc3a6-9d15-461b-bcc6-8f34807d1c0c
 keywords: [".beep (Speaker Beep) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

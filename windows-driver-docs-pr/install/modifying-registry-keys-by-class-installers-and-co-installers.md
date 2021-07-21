@@ -1,7 +1,6 @@
 ---
 title: Modifying Registry Keys by Class Installers and Co-installers
 description: Modifying Registry Keys by Class Installers and Co-installers
-ms.assetid: A7F41F97-5E06-41d8-B80F-DDBC41A62BB3
 keywords:
 - registry WDK device installations , modifying registry keys
 - registry WDK device installations , modifying registry keys, class installers
@@ -33,17 +32,9 @@ The following are exceptions to this rule:
 
 The following guidelines should be followed to safely modify registry keys by class installers or co-installers:
 
--   Class installers and co-installers must first use [**SetupDiCreateDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) to open handles to the registry keys that will be modified. After a handle has been opened, class installers and co-installers can use the standard registry functions to modify registry keys.
+-   Class installers and co-installers must first use [**SetupDiCreateDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) to open handles to the registry keys that will be modified. After a handle has been opened, class installers and co-installers can use the standard registry functions to modify registry keys.
 
--   Class installers and co-installers must not use **SetupDiDeleteDevRegKey** or *hardware keys* for the device. For more information, see [Deleting the Registry Keys of a Device](deleting-the-registry-keys-of-a-device.md).
+-   Class installers and co-installers must not use [**SetupDiDeleteDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdideletedevregkey) to delete *software keys* or *hardware keys* for the device. For more information, see [Deleting the Registry Keys of a Device](deleting-the-registry-keys-of-a-device.md).
 
-For more information about the standard registry functions, see [Registry Functions](https://go.microsoft.com/fwlink/p/?linkid=194529).
-
- 
-
- 
-
-
-
-
+For more information about the standard registry functions, see [Registry Functions](/windows/win32/sysinfo/registry-functions).
 

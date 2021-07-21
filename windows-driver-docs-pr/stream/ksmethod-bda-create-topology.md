@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_CREATE\_TOPOLOGY
 description: Clients use KSMETHOD\_BDA\_CREATE\_TOPOLOGY to create a topology structure in Ring 3 that reflects the known connections in a filter.
-ms.assetid: 3f34c7cc-d711-478b-a017-ad2c46545a9b
 keywords: ["KSMETHOD_BDA_CREATE_TOPOLOGY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,8 +30,7 @@ KSMETHOD with the **Flags** member set to KSMETHOD\_TYPE\_WRITE.
 
 A KSMULTIPLE\_ITEM structure, which is the header for a list of topology information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -50,18 +48,11 @@ Requirements
 ## See also
 
 
-[**BdaMethodCreateTopology**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethodcreatetopology)
+[**BdaMethodCreateTopology**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethodcreatetopology)
 
-[**KSMETHOD**](https://docs.microsoft.com/previous-versions/ff563398(v=vs.85))
+[**KSMETHOD**](/windows-hardware/drivers/stream/ksmethod-structure)
 
-[**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
-
- 
+[**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 
  
-
-
-
-
-
 

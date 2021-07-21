@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Implementing Finish-Install Actions
 description: Guidelines for Implementing Finish-Install Actions
-ms.assetid: 455d520a-ccd7-470b-ab5f-5786ee90b91d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,7 +16,7 @@ Consider the following guidelines when you implement finish-install actions in a
 
 -   An installer should wait for the finish-install action to finish if the finish-install action must run to completion.
 
-    For example, to avoid being interrupted by a system restart while a finish-install action is still running, an installer should wait for the finish-install action to finish before the installer returns from processing a [**DIF_FINISHINSTALL_ACTION**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-finishinstall-action) request.
+    For example, to avoid being interrupted by a system restart while a finish-install action is still running, an installer should wait for the finish-install action to finish before the installer returns from processing a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request.
 
 -   A finish-install action should inform a user of progress.
 
@@ -25,7 +24,7 @@ Consider the following guidelines when you implement finish-install actions in a
 
 -   An installer must handle the situation where a system restart is required to complete the finish-install actions.
 
-    If a finish-install action requires a system restart before the settings take effect on the device, the installer should set the DI_NEEDREBOOT flag before it returns from processing a [**DIF_FINISHINSTALL_ACTION**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-finishinstall-action) request. However, a device installation should not force a restart of a computer unless absolutely necessary.
+    If a finish-install action requires a system restart before the settings take effect on the device, the installer should set the DI_NEEDREBOOT flag before it returns from processing a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request. However, a device installation should not force a restart of a computer unless absolutely necessary.
 
     For more information about when a device installation should require a system restart, see [Device Installations and System Reboots](device-installations-and-system-restarts.md).
 
@@ -41,11 +40,11 @@ Consider the following guidelines when you implement finish-install actions in a
 
 -   An installer should handle the situation where a finish-install action fails and should not be attempted again.
 
-    If an error makes it impossible for a finish-install action ever to succeed, an installer should notify the user that the action cannot be completed, and then perform any necessary cleanup. In this situation, a co-installer should return NO_ERROR and a device or class installer should return ERROR_DI_DO_DEFAULT. Windows will subsequently clear the device as having been flagged to perform a finish install action for the devnode and call [**SetupDiFinishInstallAction**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)) to perform the default finish-install operations.
+    If an error makes it impossible for a finish-install action ever to succeed, an installer should notify the user that the action cannot be completed, and then perform any necessary cleanup. In this situation, a co-installer should return NO_ERROR and a device or class installer should return ERROR_DI_DO_DEFAULT. Windows will subsequently clear the device as having been flagged to perform a finish install action for the devnode and call [**SetupDiFinishInstallAction**](/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)) to perform the default finish-install operations.
 
--   When the installer processes a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-newdevicewizard-finishinstall) DIF code, it should check to see if any finish-install actions are needed. The installer should only set the DI_FLAGSEX_FINISHINSTALL_ACTION flag if there are finish-install actions that must be performed. If this flag is set unnecessarily, users get an extra device installation prompt during reinstallation of the driver, and the DIF_FINISHINSTALL_ACTION request has no finish-install actions to perform.
+-   When the installer processes a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](./dif-newdevicewizard-finishinstall.md) DIF code, it should check to see if any finish-install actions are needed. The installer should only set the DI_FLAGSEX_FINISHINSTALL_ACTION flag if there are finish-install actions that must be performed. If this flag is set unnecessarily, users get an extra device installation prompt during reinstallation of the driver, and the DIF_FINISHINSTALL_ACTION request has no finish-install actions to perform.
 
-    For example, consider a device co-installer where the finish-install action installs an application that is required for the device to work properly. For instance, the finish-install action for a Microsoft keyboard might install the IntelliType application. When such a co-installer processes the [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-newdevicewizard-finishinstall) DIF code, it should check to see whether the application is already installed. If the application is already installed, there is no finish-install action to perform, and therefore the DI_FLAGSEX_FINISHINSTALL_ACTION flag should not be set. In this situation, if the co-installer incorrectly sets the DI_FLAGSEX_FINISHINSTALL_ACTION flag, the user gets an undesired User Account Control (UAC) prompt for permission to proceed even though the finish-install action has no action to perform.
+    For example, consider a device co-installer where the finish-install action installs an application that is required for the device to work properly. For instance, the finish-install action for a Microsoft keyboard might install the IntelliType application. When such a co-installer processes the [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](./dif-newdevicewizard-finishinstall.md) DIF code, it should check to see whether the application is already installed. If the application is already installed, there is no finish-install action to perform, and therefore the DI_FLAGSEX_FINISHINSTALL_ACTION flag should not be set. In this situation, if the co-installer incorrectly sets the DI_FLAGSEX_FINISHINSTALL_ACTION flag, the user gets an undesired User Account Control (UAC) prompt for permission to proceed even though the finish-install action has no action to perform.
 
     **Note**  Starting with Windows 7, if UAC is set to the default setting ("Notify me only when programs try to make changes to my computer") or a lower setting, the operating system does not display the prompt for users with administrative privileges when it processes finish-install actions.
 
@@ -56,10 +55,4 @@ Consider the following guidelines when you implement finish-install actions in a
     For more information about the registration requirements of a device or class co-installer, see [Registering a Class Co-installer](registering-a-class-co-installer.md).
 
  
-
- 
-
-
-
-
 

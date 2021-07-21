@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - Command line startup options
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 ## Starting WinDbg Preview
 
@@ -110,7 +110,7 @@ Option | Description
 -xn *Exception* |   For the given exception, disable first- and second-chance-handling, and only display a message on the console.
 -xi *Exception* |   Completely ignore the given exception, disabling first- and second-chance handling, and not outputing anything to the console.
 
-For a list of exceptions that can be specified, see [Event Definitions and Defaults](https://docs.microsoft.com/windows-hardware/drivers/debugger/controlling-exceptions-and-events#event-definitions-and-defaults).
+For a list of exceptions that can be specified, see [Event Definitions and Defaults](./controlling-exceptions-and-events.md#event-definitions-and-defaults).
 
 **Post Mortem**
 
@@ -133,7 +133,7 @@ For general information on the startup parameters, see [WinDbg Command-Line Opti
 
 You can use -? to list the supported command line options.
 
-![Screen shot of command line help output listing about 50 options](images/windbgx-start-up-options.png)
+![Screen shot of command line help output listing about 50 options.](images/windbgx-start-up-options.png)
 
 ## See Also
 

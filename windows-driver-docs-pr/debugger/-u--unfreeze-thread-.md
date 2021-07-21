@@ -1,7 +1,6 @@
 ---
 title: ~u (Unfreeze Thread)
 description: The ~u command unfreezes the specified thread.Do not confuse this command with the U (Unassemble) command.
-ms.assetid: 6ac3c84a-3734-4b16-a239-4233e186c2df
 keywords: ["~u (Unfreeze Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ Specifies the thread or threads to unfreeze. For more information about the synt
 
 For more information about how frozen threads behave and a list of other commands that control the freezing and suspending of threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify threads only in user mode. In kernel mode, the tilde (~) refers to a processor.
 

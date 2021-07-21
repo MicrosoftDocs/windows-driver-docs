@@ -1,7 +1,6 @@
 ---
 title: Minidriver Registration
 description: Minidriver Registration
-ms.assetid: 332FEBD6-9803-4502-8F84-9DB2F17BB19B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 ## <span id="DllMain"></span><span id="dllmain"></span><span id="DLLMAIN"></span>DllMain
 
 
-The smart card minidriver implements and exports a [*DllMain*](https://docs.microsoft.com/windows/desktop/Dlls/dllmain) funtion to handle load/unload and attach/detach notifications. This allows the minidriver DLL to manage its state and allocated resources. For implementation details, see the *DllMain* reference topic.
+The smart card minidriver implements and exports a [*DllMain*](/windows/desktop/Dlls/dllmain) funtion to handle load/unload and attach/detach notifications. This allows the minidriver DLL to manage its state and allocated resources. For implementation details, see the *DllMain* reference topic.
 
 ## <span id="DllRegisterServer_and_DllUnregisterServer"></span><span id="dllregisterserver_and_dllunregisterserver"></span><span id="DLLREGISTERSERVER_AND_DLLUNREGISTERSERVER"></span>DllRegisterServer and DllUnregisterServer
 
@@ -51,10 +50,4 @@ If the minidriver supports loading under CNG, the following line should be inclu
 ```
 
  
-
- 
-
-
-
-
 

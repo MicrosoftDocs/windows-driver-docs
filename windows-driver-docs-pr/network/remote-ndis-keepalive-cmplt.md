@@ -1,7 +1,6 @@
 ---
 title: 'REMOTE_NDIS_KEEPALIVE_CMPLT'
-Description: 'A Remote NDIS device will respond to a REMOTE_NDIS_KEEPALIVE_MSG message from the host by sending back a REMOTE_NDIS_KEEPALIVE_CMPLT response message.'
-ms.assetid: c090b781-73f1-4a7a-a0a2-60af366daa77
+description: 'A Remote NDIS device will respond to a REMOTE_NDIS_KEEPALIVE_MSG message from the host by sending back a REMOTE_NDIS_KEEPALIVE_CMPLT response message.'
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
@@ -56,13 +55,11 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_KEEPALIVE\_MSG**](remote
 
  
 
-Remarks
--------
+## Remarks
 
 If the device implements the option of sending [**REMOTE\_NDIS\_KEEPALIVE\_MSG**](remote-ndis-keepalive-msg.md), the host will respond with REMOTE\_NDIS\_KEEPALIVE\_CMPLT through the control channel.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

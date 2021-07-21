@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_GM\_GRAPHMANAGER
 description: The KSPROPERTY\_GM\_GRAPHMANAGER property is not currently supported.
-ms.assetid: cd41da34-f91b-4a68-859f-ca06e8944c63
 keywords: ["KSPROPERTY_GM_GRAPHMANAGER Streaming Media Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_GM\_GRAPHMANAGER property is not currently supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,6 +1,6 @@
 ---
 title: Driver flighting
-description: Driver flighting in the Partner Center enables you to distribute your driver within defined Windows Insider rings, and provides automatic monitoring and evaluation.
+description: Distribute your driver within defined Windows Insider rings. Driver flighting provides automatic monitoring and evaluation.
 ms.date: 07/27/2018
 ms.topic: article
 ms.localizationpriority: medium
@@ -8,16 +8,16 @@ ms.localizationpriority: medium
 
 # Driver flighting
 
-Driver flighting in the Partner Center enables you to distribute your driver within defined Windows Insider rings, while providing automatic monitoring and evaluation. A report of your driver's performance will be generated after the completion of a flight, enabling you to evaluate its critical functionality and update scenarios. Upon a successful flight and approval from Microsoft, the driver will be distributed publicly through Windows Update. 
+Driver flighting in the Partner Center enables you to distribute your driver within defined Windows Insider rings, while providing automatic monitoring and evaluation. A report of your driver's performance will be generated after the completion of a flight, enabling you to evaluate its critical functionality and update scenarios. Upon a successful flight and approval from Microsoft, the driver will be distributed publicly through Windows Update.
 
-The following video provides an overview for the driver flighting program in more detail: 
+The following video provides an overview for the driver flighting program in more detail:
 <iframe src="https://channel9.msdn.com/Events/WinHEC/WinHEC-Online/Start-Your-Driver-Flighting-The-benefit-of-Driver-Promotion/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 ## Signing up for driver flighting
 
 To sign up for driver flighting, submit a support ticket to the Partner Center. Support for the Partner Center is accessed in the upper-right corner of the browser window, as shown below:
 
-![The button for accessing Partner Center Support](images/support.jpg)
+![The button for accessing Partner Center Support.](images/support.jpg)
 
 > [!NOTE]
 > When signing up for driver flighting, make sure you are inside the Partner Center. Clicking the support button from another area of the Partner Center will connect you with a non-dashboard support group.
@@ -39,7 +39,7 @@ Once your account has been approved, your organization's administrators will be 
 
 After being submitted to the Partner Center, you can promote your drivers for flighting with the following steps:
 
-1. Once your driver has been submitted and is in the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update) for more information.
+1. Once your driver has been submitted and is in the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](./publish-a-driver-to-windows-update.md) for more information.
 
 2. Select one or more driver promotion option to promote your driver for flighting, as described below:
 
@@ -55,9 +55,9 @@ After being submitted to the Partner Center, you can promote your drivers for fl
     4. The OEMs (if any) that are affected by the driver publication
 
 4. Select the appropriate statements that apply to your driver. These answers will improve the speed of the evaluation process:
-    ![An image showing the statements that may apply to a driver being flighted: it is a co-engineering driver, it requires a reboot, it deploys UI and/or software, It supports a new or unreleased device](images/driver-flighting-statements.png)
+    ![An image showing the statements that may apply to a driver being flighted: it is a co-engineering driver, it requires a reboot, it deploys UI and/or software, It supports a new or unreleased device.](images/driver-flighting-statements.png)
 
-    > [!IMPORTANT] 
+    > [!IMPORTANT]
     > Please note the following:
     > * It is recommended to avoid requiring a reboot after driver installation. 
     > * Drivers that deploy UI and/or software during installation are not Windows 10 in S mode compliant, and cannot be flighted to this operating system.
@@ -72,7 +72,7 @@ After promoting your driver for shipping, Microsoft will evaluate your driver fo
 
 ## Reasons a driver may be rejected
 
-A driver can be rejected for several reasons. Most commonly, rejection is caused by improper driver targeting. These include:
+A driver may be rejected for several reasons. Most commonly, rejection is caused by improper driver targeting. These include:
 
 - Targeting previous versions of Windows while also targeting Windows 10.
 - The device class being targeted may have specific CHID targeting requirements that you failed to properly follow.  Some device classes require CHID like Firmware and other classes forbid the use of CHID like Display.  Be sure you have entered your information correctly.

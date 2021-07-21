@@ -1,7 +1,6 @@
 ---
 title: Controlling a Process Server Session
 description: Controlling a Process Server Session
-ms.assetid: 4219b08a-d353-43dc-8640-96c504b8075b
 keywords: ["process server, controlling a session"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

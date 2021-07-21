@@ -1,7 +1,6 @@
 ---
 title: User-mode driver logging
 description: To get a more actionable breakdown of video memory, the Windows Display Driver Model (WDDM) driver must expose the relationship between Microsoft Direct3D resources and video memory allocations.
-ms.assetid: E850E148-821D-4544-A778-00B1B9D13964
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,12 +10,14 @@ ms.localizationpriority: medium
 
 To get a more actionable breakdown of video memory, the Windows Display Driver Model (WDDM) driver must expose the relationship between Microsoft Direct3D resources and video memory allocations. This is made possible starting with Windows 8 with the introduction of additional user-mode driver (UMD) logging interfaces. With this information added to Event Tracing for Windows (ETW) traces, it's possible to see the video memory allocations from the API perspective.
 
-|                                                                                   |                                  |
-|-----------------------------------------------------------------------------------|----------------------------------|
-| Minimum WDDM version                                                              | 1.2                              |
-| Minimum Windows version                                                           | 8                                |
-| Driver implementation—Full graphics and Render only                               | Mandatory                        |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦UMDLogging** |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Render only**: Mandatory
+
+**[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics¦UMDLogging**
+
 
  
 
@@ -33,27 +34,21 @@ You can use the DDI to discover internal memory fragmentation or the impact of s
 
 Use these functions, enumeration, and structure from the Umdprovider.h header to log events in your user-mode display driver:
 
--   [**UMDEtwLogMapAllocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwlogmapallocation) function
--   [**UMDEtwLogUnmapAllocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwlogunmapallocation) function
--   [**UMDEtwRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwregister) function
--   [**UMDEtwUnregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwunregister) function
--   [**UMDETW\_ALLOCATION\_SEMANTIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/ne-umdprovider-_umdetw_allocation_semantic) enumeration
--   [**UMDETW\_ALLOCATION\_USAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/ns-umdprovider-_umdetw_allocation_usage) structure
+-   [**UMDEtwLogMapAllocation**](/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwlogmapallocation) function
+-   [**UMDEtwLogUnmapAllocation**](/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwlogunmapallocation) function
+-   [**UMDEtwRegister**](/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwregister) function
+-   [**UMDEtwUnregister**](/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwunregister) function
+-   [**UMDETW\_ALLOCATION\_SEMANTIC**](/windows-hardware/drivers/ddi/umdprovider/ne-umdprovider-_umdetw_allocation_semantic) enumeration
+-   [**UMDETW\_ALLOCATION\_USAGE**](/windows-hardware/drivers/ddi/umdprovider/ns-umdprovider-_umdetw_allocation_usage) structure
 
 Also see the Umdetw.h header.
 
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ UMDLogging**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ UMDLogging**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
  
-
- 
-
-
-
-
 

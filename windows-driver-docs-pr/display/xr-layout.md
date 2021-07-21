@@ -1,7 +1,6 @@
 ---
 title: XR Layout
 description: XR Layout
-ms.assetid: a5c5d627-8d1a-4091-a7b2-893165e7fe45
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , XR layout
 - extended format WDK Windows 7 display , XR layout

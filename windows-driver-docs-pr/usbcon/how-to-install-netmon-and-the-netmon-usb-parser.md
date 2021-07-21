@@ -1,5 +1,5 @@
 ---
-Description: This topic provides installation information about Netmon and the USB ETW parsers.
+description: This topic provides installation information about Netmon and the USB ETW parsers.
 title: How to install Netmon and USB ETW Parsers
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -49,7 +49,7 @@ Install Netmon from the Microsoft Download Center, and then install USB ETW pars
     1. On the **Tools** menu, select **Options**.
     2. On the **Parser Profiles** tab, make sure that **AutoProfile (generated)** is set as active. Your settings should be similar to this image.
 
-        ![Screenshot of the Parser Profiles tab, with AutoProfile set as active](images/netmon-parsers1.png)
+        ![Screenshot of the Parser Profiles tab, with AutoProfile set as active.](images/netmon-parsers1.png)
 
     3. Click **OK**.
 

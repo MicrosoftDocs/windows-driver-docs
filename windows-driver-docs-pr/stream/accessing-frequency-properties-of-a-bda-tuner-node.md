@@ -1,7 +1,6 @@
 ---
 title: Accessing Frequency Properties of a BDA Tuner Node
 description: Accessing Frequency Properties of a BDA Tuner Node
-ms.assetid: 47c24e99-c82c-4bc8-af36-bd7f728634ba
 keywords:
 - method sets WDK BDA , RF tuner node
 - property sets WDK BDA , RF tuner node
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-A network provider uses the [KSPROPSETID\_BdaFrequencyFilter](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-bdafrequencyfilter) property set to control an RF tuner node in a BDA filter topology. For example, the network provider uses this property set to inform the tuner node how to tune the RF signal.
+A network provider uses the [KSPROPSETID\_BdaFrequencyFilter](./kspropsetid-bdafrequencyfilter.md) property set to control an RF tuner node in a BDA filter topology. For example, the network provider uses this property set to inform the tuner node how to tune the RF signal.
 
 In the following code snippet, the controlling pin of the tuner node in the BDA minidriver intercepts and supplies methods for properties of the KSPROPSETID\_BdaFrequencyFilter property set. Note that some KSPROPSETID\_BdaFrequencyFilter properties are only applicable to specific types of tuners.
 
@@ -64,9 +63,4 @@ DEFINE_KSPROPERTY_TABLE(RFNodeFrequencyProperties)
 ```
 
  
-
- 
-
-
-
 

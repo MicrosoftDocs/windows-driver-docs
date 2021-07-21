@@ -1,7 +1,6 @@
 ---
 title: Retrieving Device Setup Information
 description: Retrieving Device Setup Information
-ms.assetid: 95e88e4a-5a31-4d82-99ea-c9a4d7766c0f
 keywords:
 - audio adapters WDK , retrieving setup information
 - adapter drivers WDK audio , retrieving setup information
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="retrieving_device_setup_information"></span><span id="RETRIEVING_DEVICE_SETUP_INFORMATION"></span>
 
 
-To retrieve setup information from the registry, an adapter driver can call the [**PcGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgetdeviceproperty) function, and a miniport driver can call the port driver's [**IPort::GetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-getdeviceproperty) method.
+To retrieve setup information from the registry, an adapter driver can call the [**PcGetDeviceProperty**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgetdeviceproperty) function, and a miniport driver can call the port driver's [**IPort::GetDeviceProperty**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-getdeviceproperty) method.
 
 For either of these calls, the caller selects the type of setup information to request by setting the device-property parameter to one of the following DEVICE\_REGISTRY\_PROPERTY enumeration values from header file Wdm.h:
 
@@ -61,12 +60,7 @@ For either of these calls, the caller selects the type of setup information to r
 
 -   **DevicePropertyUINumber**
 
-For a description of the DeviceProperty*Xxx* values above, see [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty).
+For a description of the DeviceProperty*Xxx* values above, see [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty).
 
  
-
- 
-
-
-
 

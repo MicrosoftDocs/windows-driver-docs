@@ -1,7 +1,6 @@
 ---
 title: Sensor thresholds
 description: This topic provides information about the thresholds related to each sensor.
-ms.assetid: 89BEAA46-8AC3-4C5B-96ED-8F773D56EFBE
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

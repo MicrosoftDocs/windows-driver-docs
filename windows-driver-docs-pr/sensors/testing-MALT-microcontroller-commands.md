@@ -1,13 +1,11 @@
 ---
-title: Microcontroller Commands for MALT
-author: windows-driver-content
-description: This topic defines commands between the PC and the microcontroller (Arduino) that is controlling the sensors in the MALT.
-ms.assetid: 38b9c6fc-f13c-4af5-90ab-d9931dc9b7f1
-ms.date: 12/13/2018
+title: Microcontroller commands for MALT
+description: Defines commands between the PC and the microcontroller (Arduino) that is controlling the sensors in the MALT.
+ms.date: 07/08/2021
 ms.localizationpriority: medium
 ---
 
-# Microcontroller Commands for MALT
+# Microcontroller commands for MALT
 
 This topic defines commands between the PC and the microcontroller (Arduino) that is controlling the sensors in the MALT. We recommended that the PC controlling the microcontroller is also the system or device under test (SUT/DUT).  
 
@@ -62,9 +60,9 @@ READALSSENSOR 2
 
 **Serial output:**
 
-| Line 0                | Line 1                  | Line 2                |
-|-----------------------|-------------------------|-----------------------|
-| MALTERROR status code | Exponent (0 on failure) | Result (0 on failure) |
+| Line 0                  | Line 1                | Line 2                |
+|-------------------------|-----------------------|-----------------------|
+| Exponent (0 on failure) | Result (0 on failure) | MALTERROR status code |
 
 ### READCOLORSENSOR *sensor number*
 
@@ -75,7 +73,7 @@ Sensor numbers are defined as follows:
 
 **Example:**
 
-The following example writes the resulting raw data from the screen color sensor to serial. Lux can be calculated based on the [datasheet](https://www.ti.com/product/OPT3001) of sensors used.
+The following example writes the resulting data from the screen color sensor to serial. These numbers have gone through an onboard calibration matrix to be converted to the XYZ colorspace.
 
 ```cmd
 READCOLORSENSOR 2
@@ -83,9 +81,9 @@ READCOLORSENSOR 2
 
 **Serial output:**
 
-| Line 0                | Line 1    | Line 2      | Line 3     |
-|-----------------------|-----------|-------------|------------|
-| MALTERROR status code | Red value | Green value | Blue value |
+| Line 1  | Line 2  | Line 3  |        Line 4         |
+|---------|---------|---------|-----------------------|
+| X value | Y value | Z value | MALTERROR status code |
 
 ### CONVERSIONTIME *conversion time in ms*
 
@@ -117,11 +115,11 @@ For any unrecognized command:
 
 **Serial output:**
 
-| Line 0                |
-|-----------------------|
-| MALTERROR status code |
+| Line 0                                                                        |
+|-------------------------------------------------------------------------------|
+| MALTERROR status code (where MALTERROR status code = `E_UNRECOGNIZED_COMMAND`)|
 
-where MALTERROR status code = `E_UNRECOGNIZED_COMMAND`
+
 
 ## MALT error code
 

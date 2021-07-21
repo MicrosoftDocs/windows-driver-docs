@@ -1,7 +1,6 @@
 ---
 title: Trace Managed Object Format (MOF) File
 description: Trace Managed Object Format (MOF) File
-ms.assetid: e0ef452b-042d-42d0-be0f-b36e7bf47285
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Trace Managed Object Format (MOF) File
 
 
-A trace [managed object format](https://go.microsoft.com/fwlink/p/?linkid=74565) (MOF) file is a text file that contains the control GUID for each [trace provider](trace-provider.md) that is represented in a PDB file. The name of the MOF file is the module name of the trace producer, followed by the .mof file name extension.
+A trace [managed object format](/windows/win32/wmisdk/managed-object-format--mof-) (MOF) file is a text file that contains the control GUID for each [trace provider](trace-provider.md) that is represented in a PDB file. The name of the MOF file is the module name of the trace producer, followed by the .mof file name extension.
 
 [Tracepdb](tracepdb.md) and [BinPlace](binplace.md) create a MOF file for each trace provider when they create a trace message format (.tmf) file from the formatting instructions in a PDB file.
 

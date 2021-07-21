@@ -1,9 +1,8 @@
 ---
 title: Controlling Breakpoint Flags and Parameters
 description: Controlling Breakpoint Flags and Parameters
-ms.assetid: ed702f01-2a30-4ffb-a804-167cf3b19936
 keywords: ["breakpoints, flags and parameters", "DEBUG_BREAK_READ", "DEBUG_BREAK_WRITE", "DEBUG_BREAK_EXECUTE", "DEBUG_BREAK_IO"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 ms.localizationpriority: medium
 ---
 
@@ -15,25 +14,25 @@ ms.localizationpriority: medium
 
 There are a number of methods that can be used to determine basic information about breakpoints:
 
--   [**GetId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getid) returns the breakpoint ID.
+-   [**GetId**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getid) returns the breakpoint ID.
 
--   [**GetType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-gettype) returns the breakpoint type (software or processor) and the type of the effective processor on which the breakpoint is set.
+-   [**GetType**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-gettype) returns the breakpoint type (software or processor) and the type of the effective processor on which the breakpoint is set.
 
--   [**GetAdder**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getadder) returns the client that added the breakpoint.
+-   [**GetAdder**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getadder) returns the client that added the breakpoint.
 
--   [**GetOffset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getoffset) returns the address of a breakpoint.
+-   [**GetOffset**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getoffset) returns the address of a breakpoint.
 
--   [**GetOffsetExpression**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getoffsetexpression) returns the expression string that specifies the location of the breakpoint.
+-   [**GetOffsetExpression**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getoffsetexpression) returns the expression string that specifies the location of the breakpoint.
 
 In addition to its location and breakpoint type, a breakpoint has several parameters controlling its behavior.
 
-Breakpoint parameters can be controlled through a variety of specific methods. In addition, most of the parameters may be queried together using [**GetParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters).
+Breakpoint parameters can be controlled through a variety of specific methods. In addition, most of the parameters may be queried together using [**GetParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters).
 
 ### <span id="breakpoint_flags"></span><span id="BREAKPOINT_FLAGS"></span>Breakpoint Flags
 
 Breakpoint flags are one kind of breakpoint parameters.
 
-Breakpoint flags can be queried using [**GetFlags**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getflags). They can be changed by using [**AddFlags**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-addflags), [**RemoveFlags**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-removeflags), or [**SetFlags**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setflags).
+Breakpoint flags can be queried using [**GetFlags**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getflags). They can be changed by using [**AddFlags**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-addflags), [**RemoveFlags**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-removeflags), or [**SetFlags**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setflags).
 
 Breakpoint flags form a bit field. The possible flags that can be used in this bit field, and their meanings, are as follows:
 
@@ -41,7 +40,7 @@ Breakpoint flags form a bit field. The possible flags that can be used in this b
 When this flag is set, the breakpoint is *enabled* and will have its normal effect. When this flag is not set, the breakpoint is *disabled* and will not have any effect. If you wish to temporarily deactivate a breakpoint, you can remove this flag; it is then easy to add this flag back when you want to re-enable this breakpoint.
 
 <span id="DEBUG_BREAKPOINT_ADDER_ONLY"></span><span id="debug_breakpoint_adder_only"></span>DEBUG\_BREAKPOINT\_ADDER\_ONLY  
-When this flag is set, the breakpoint is a *private breakpoint*. This breakpoint is visible only to the client that added it. In this case, other clients will not be able to query the engine for the breakpoint, and the engine will not send events generated by the breakpoint to other clients. All callbacks (event and [output](using-input-and-output.md#output)) related to this breakpoint will be sent only to this client. See [**GetAdder**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getadder).
+When this flag is set, the breakpoint is a *private breakpoint*. This breakpoint is visible only to the client that added it. In this case, other clients will not be able to query the engine for the breakpoint, and the engine will not send events generated by the breakpoint to other clients. All callbacks (event and [output](using-input-and-output.md#output)) related to this breakpoint will be sent only to this client. See [**GetAdder**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getadder).
 
 <span id="DEBUG_BREAKPOINT_GO_ONLY"></span><span id="debug_breakpoint_go_only"></span>DEBUG\_BREAKPOINT\_GO\_ONLY  
 When this flag is set, the breakpoint will only be triggered if the target is in unrestricted execution. It will not be triggered if the engine is stepping through instructions in the target.
@@ -57,19 +56,19 @@ When this flag is set, the breakpoint is *deferred*. This flag is set by the eng
 Breakpoint parameters also include:
 
 <span id="Pass_count"></span><span id="pass_count"></span><span id="PASS_COUNT"></span>*Pass count*  
-If the breakpoint has a pass count associated with it, it will not be activated until the target has passed the breakpoint the specified number of times. The pass count that was originally set can be found by using [**GetPassCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getpasscount). The number of times remaining that the engine will pass the breakpoint before it is activated can be found using [**GetCurrentPassCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getcurrentpasscount). The pass count can be reset to a new value by using [**SetPassCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setpasscount).
+If the breakpoint has a pass count associated with it, it will not be activated until the target has passed the breakpoint the specified number of times. The pass count that was originally set can be found by using [**GetPassCount**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getpasscount). The number of times remaining that the engine will pass the breakpoint before it is activated can be found using [**GetCurrentPassCount**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getcurrentpasscount). The pass count can be reset to a new value by using [**SetPassCount**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setpasscount).
 
 <span id="Match_thread"></span><span id="match_thread"></span><span id="MATCH_THREAD"></span>*Match thread*  
-If the breakpoint has a thread associated with it, it will be ignored by the engine when it is encountered by any other thread. The thread can be found by using [**GetMatchThreadId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getmatchthreadid), and can be changed by using [**SetMatchThreadId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setmatchthreadid).
+If the breakpoint has a thread associated with it, it will be ignored by the engine when it is encountered by any other thread. The thread can be found by using [**GetMatchThreadId**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getmatchthreadid), and can be changed by using [**SetMatchThreadId**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setmatchthreadid).
 
 <span id="Command"></span><span id="command"></span><span id="COMMAND"></span>*Command*  
-The breakpoint may have a command associated with it. The command is executed when the breakpoint is activated. This command can be found by using [**GetCommand**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getcommand), and can be changed by using [**SetCommand**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setcommand).
+The breakpoint may have a command associated with it. The command is executed when the breakpoint is activated. This command can be found by using [**GetCommand**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getcommand), and can be changed by using [**SetCommand**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setcommand).
 
 <span id="Size"></span><span id="size"></span><span id="SIZE"></span>*Size*  
-If the breakpoint is a processor breakpoint, it must have a specified size. This determines the size of the block of memory whose access will activate the breakpoint -- the beginning of the block is the breakpoint's location. The size can be found by using [**GetDataParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getdataparameters), and can be changed by using [**SetDataParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setdataparameters).
+If the breakpoint is a processor breakpoint, it must have a specified size. This determines the size of the block of memory whose access will activate the breakpoint -- the beginning of the block is the breakpoint's location. The size can be found by using [**GetDataParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getdataparameters), and can be changed by using [**SetDataParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setdataparameters).
 
 <span id="Access_type"></span><span id="access_type"></span><span id="ACCESS_TYPE"></span>*Access type*  
-If the breakpoint is a processor breakpoint, it must have an access type. This determines the type of access that will activate the breakpoint. For example, the breakpoint may be activated if the target reads from, writes to, or executes the memory specified by the breakpoint. The access type can be found by using [**GetDataParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getdataparameters), and can be changed by using [**SetDataParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setdataparameters).
+If the breakpoint is a processor breakpoint, it must have an access type. This determines the type of access that will activate the breakpoint. For example, the breakpoint may be activated if the target reads from, writes to, or executes the memory specified by the breakpoint. The access type can be found by using [**GetDataParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getdataparameters), and can be changed by using [**SetDataParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-setdataparameters).
 
 ### <span id="valid_parameters_for_processor_breakpoints"></span><span id="VALID_PARAMETERS_FOR_PROCESSOR_BREAKPOINTS"></span>Valid Parameters for Processor Breakpoints
 
@@ -112,7 +111,6 @@ DEBUG_BREAK_READ
 </tbody>
 </table>
 
- 
 
 Not all access types and sizes are supported on all processors. The following access types and sizes are supported:
 
@@ -121,18 +119,3 @@ All access types are supported. DEBUG\_BREAK\_READ behaves like DEBUG\_BREAK\_RE
 
 <span id="x64"></span><span id="X64"></span>x64  
 All access types are supported. DEBUG\_BREAK\_READ behaves like DEBUG\_BREAK\_READ | DEBUG\_BREAK\_WRITE. The size must be 1, 2, 4, or 8. The breakpoint's address must be a multiple of the size.
-
-<span id="Itanium"></span><span id="itanium"></span><span id="ITANIUM"></span>Itanium  
-All access types except DEBUG\_BREAK\_IO are supported. The size must be a power of two; for DEBUG\_BREAK\_EXECUTE, the size must be 16. The breakpoint's address must be a multiple of the size.
-
-<span id="Itanium_running_in_x86_mode"></span><span id="itanium_running_in_x86_mode"></span><span id="ITANIUM_RUNNING_IN_X86_MODE"></span>Itanium running in x86 mode  
-The is the same as for x86, except that DEBUG\_BREAK\_IO is not supported.
-
- 
-
- 
-
-
-
-
-

@@ -1,14 +1,13 @@
 ---
 title: WindowsInfo XML Example
 description: WindowsInfo XML Example
-ms.assetid: 5933512e-d2bf-437f-abd8-dc3486e07be0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # WindowsInfo XML Example
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following XML document uses the [WindowsInfo XML schema](windowsinfo-xml-schema.md) to specify the display actions for the service that is specified within a metadata package:
 
@@ -19,12 +18,3 @@ The following XML document uses the [WindowsInfo XML schema](windowsinfo-xml-sch
   <ShowDeviceInDisconnectedState>false</ShowDeviceInDisconnectedState>
 </WindowsInfo>
 ```
-
- 
-
- 
-
-
-
-
-

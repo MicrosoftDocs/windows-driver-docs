@@ -1,14 +1,13 @@
 ---
 title: LaunchDeviceStageOnDeviceConnect
 description: LaunchDeviceStageOnDeviceConnect
-ms.assetid: 6c3ac8f9-373f-4b70-85c6-a4bd3d81a534
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # LaunchDeviceStageOnDeviceConnect
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The LaunchDeviceStageOnDeviceConnect element should be set to **false** because it does not apply to service metadata packages in Windows 8, Windows 8.1, and Windows 10.
 

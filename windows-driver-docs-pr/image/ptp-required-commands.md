@@ -1,7 +1,6 @@
 ---
 title: PTP Required Commands
 description: PTP Required Commands
-ms.assetid: 98f4be09-0f13-45a1-b28a-c027e57c0dd7
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA
 description: This extended property control is used by the client to query the driver for the metadata buffer requirements.
-ms.assetid: 6196DFF6-050A-4916-A188-70A89B60B5EA
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA Streaming Media Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA
 
-This extended property control is used by the client to query the driver for the metadata buffer requirements. It is sent to the driver along with a standard [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_METADATAINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo) structure.
+This extended property control is used by the client to query the driver for the metadata buffer requirements. It is sent to the driver along with a standard [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_METADATAINFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo) structure.
 
 ## Usage summary table
 
@@ -56,11 +55,11 @@ In a **Get** call, the driver does the following:
 
 2.  Fill KSCAMERA\_EXTENDEDPROP\_HEADER.Flags with a combination of any of the above KSCAMERA\_EXTENDEDPROP\_METADATA\_*XXX* flags to indicate the metadata memory requirements.
 
-3.  Fill KSCAMERA\_EXTENDEDPROP\_METADATAINFO.BufferAlignment with the desired memory alignment (KSCAMERA\_EXTENDEDPROP\_MetadataAlignment\_*Xxx*). See the [**KSCAMERA\_EXTENDEDPROP\_MetadataAlignment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-kscamera_extendedprop_metadataalignment) for possible values.
+3.  Fill KSCAMERA\_EXTENDEDPROP\_METADATAINFO.BufferAlignment with the desired memory alignment (KSCAMERA\_EXTENDEDPROP\_MetadataAlignment\_*Xxx*). See the [**KSCAMERA\_EXTENDEDPROP\_MetadataAlignment**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-kscamera_extendedprop_metadataalignment) for possible values.
 
 4.  Fill **KSCAMERA\_EXTENDEDPROP\_METADATAINFO.MaxMetadataBufferSize** with the required metadata buffer size in bytes.
 
-The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
+The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
 
 <table>
 <colgroup>
@@ -84,7 +83,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA\_
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_METADATAINFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo)"><strong>KSCAMERA_EXTENDEDPROP_METADATAINFO</strong></a>),</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_METADATAINFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo)"><strong>KSCAMERA_EXTENDEDPROP_METADATAINFO</strong></a>),</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>

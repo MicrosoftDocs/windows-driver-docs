@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_LUNList WMI Class
 description: ISCSI\_LUNList WMI Class
-ms.assetid: 2ad0dabe-54b3-4075-966b-491e078f2c8b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -26,13 +25,7 @@ class ISCSI_LUNList {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_LUNList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_lunlist) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_LUNList**](/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_lunlist) data structure.
 
  
-
- 
-
-
-
-
 

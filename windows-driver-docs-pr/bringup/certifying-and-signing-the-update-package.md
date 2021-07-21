@@ -1,7 +1,6 @@
 ---
 title: Certifying and signing the update package
 description: The firmware update is delivered as a driver package and must go through the same verification and signing processes as a regular driver package.
-ms.assetid: 054E98A5-E860-43BD-9AD2-7CCE55D2164B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ Of these tasks, only \#3 is always required. On a secure boot-enabled system, al
 
 The following diagram indicates the signer for the various components discussed in the rest of this topic.
 
-![firmware update components and signers](images/firmwareupdatecomponentsandsigners.png)
+![firmware update components and signers.](images/firmwareupdatecomponentsandsigners.png)
 
 ## Signing the updated firmware
 

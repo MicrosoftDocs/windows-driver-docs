@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PAGE\_SIZE
 description: The WIA\_IPS\_PAGE\_SIZE property contains the size of the page that is currently selected to be scanned.
-ms.assetid: dcfad67e-31d5-41b8-b471-532626f571af
 keywords: ["WIA_IPS_PAGE_SIZE Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 To select the dimensions of the page to scan, an application sets the WIA\_IPS\_PAGE\_SIZE property. The WIA minidriver creates and maintains this property.
 
@@ -70,8 +68,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PAGE\_
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -93,7 +90,7 @@ Requirements
 ## See also
 
 
-[**IWiaMiniDrv::drvValidateItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties)
+[**IWiaMiniDrv::drvValidateItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties)
 
 [**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md)
 
@@ -112,11 +109,4 @@ Requirements
 [**WIA\_IPS\_YPOS**](wia-ips-ypos.md)
 
  
-
- 
-
-
-
-
-
 

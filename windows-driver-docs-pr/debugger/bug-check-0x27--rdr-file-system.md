@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x27 RDR_FILE_SYSTEM
 description: The RDR_FILE_SYSTEM bug check has a value of 0x00000027. This indicates that a problem occurred in the SMB redirector file system.
-ms.assetid: 1294022d-7281-45d2-89c8-40d11ce202f0
 keywords: ["Bug Check 0x27 RDR_FILE_SYSTEM", "RDR_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,13 +62,11 @@ The RDR\_FILE\_SYSTEM bug check has a value of 0x00000027. This indicates that a
 
  
 
-Cause
------
+## Cause
 
 One possible cause of this bug check is depletion of nonpaged pool memory. If the nonpaged pool memory is completely depleted, this error can stop the system. However, during the indexing process, if the amount of available nonpaged pool memory is very low, another kernel-mode driver requiring nonpaged pool memory can also trigger this error.
 
-Resolution
-----------
+## Resolution
 
 **To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 

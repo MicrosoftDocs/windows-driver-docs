@@ -1,7 +1,6 @@
 ---
 title: KSINTERFACE\_MEDIA\_MUSIC
 description: KSINTERFACE\_MEDIA\_MUSIC
-ms.assetid: 5f81dc68-a2f7-4f74-825d-5f3ebdedf5ba
 keywords: ["KSINTERFACE_MEDIA_MUSIC Streaming Media Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.localizationpriority: medium
 
 The KSINTERFACE\_MEDIA\_MUSIC interface is not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: .servers (List Debugging Servers)
 description: The .servers command lists all debugging servers that have been established by this debugger.
-ms.assetid: bf65c6f7-9c59-4756-a667-8b896bd7ea2a
 keywords: ["List Debugging Servers (.servers) command", "remote debugging through the debugger, List Debugging Servers (.servers) command", ".servers (List Debugging Servers) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,8 +53,7 @@ The **.servers** command lists all debugging servers that have been established 
 
 For full details on debugging servers, see [Remote Debugging Through the Debugger](remote-debugging-through-the-debugger.md).
 
-Remarks
--------
+## Remarks
 
 The output of the **.servers** command lists all the debugging servers started by the debugger on which this command is issued. The output is formatted so that it can be used literally as the argument for the -remote command-line option or pasted into the WinDbg dialog box.
 

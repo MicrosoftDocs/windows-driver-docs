@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Sysaudio
 description: KSPROPSETID\_Sysaudio
-ms.assetid: 817cbda5-9d37-4c12-8749-98a86540609f
 keywords: ["KSPROPSETID_Sysaudio"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_kspropsetid_sysaudio_ks"></span><span id="DDK_KSPROPSETID_SYSAUDIO_KS"></span>
 
 
-The `KSPROPSETID_Sysaudio` property set is used to access the properties of the [SysAudio system driver](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components#sysaudio-system-driver). Sysaudio is the driver that creates and manages [virtual audio devices](https://docs.microsoft.com/windows-hardware/drivers/audio/virtual-audio-devices) on behalf of DirectSound and other clients.
+The `KSPROPSETID_Sysaudio` property set is used to access the properties of the [SysAudio system driver](./kernel-mode-wdm-audio-components.md#sysaudio-system-driver). Sysaudio is the driver that creates and manages [virtual audio devices](./virtual-audio-devices.md) on behalf of DirectSound and other clients.
 
 SysAudio's clients use this property set to do the following:
 
@@ -27,7 +26,7 @@ SysAudio's clients use this property set to do the following:
 
 -   Configure the data path through a pin to either include or bypass an AEC node.
 
-After exploring the properties of the available virtual audio devices, the client should be ready to select one of the virtual audio devices and create a pin on that device. Some clients might choose to create more than one pin on a virtual audio device or to create pins on more than one device. For information about creating pins, see [Pin Factories](https://docs.microsoft.com/windows-hardware/drivers/audio/pin-factories).
+After exploring the properties of the available virtual audio devices, the client should be ready to select one of the virtual audio devices and create a pin on that device. Some clients might choose to create more than one pin on a virtual audio device or to create pins on more than one device. For information about creating pins, see [Pin Factories](./pin-factories.md).
 
 After the pin is created, the client can use the [KSPROPSETID\_Sysaudio\_Pin](kspropsetid-sysaudio-pin.md) property set to manage the pin.
 
@@ -50,10 +49,4 @@ The following properties are members of the `KSPROPSETID_Sysaudio` property set:
 [**KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH**](ksproperty-sysaudio-select-graph.md)
 
  
-
- 
-
-
-
-
 

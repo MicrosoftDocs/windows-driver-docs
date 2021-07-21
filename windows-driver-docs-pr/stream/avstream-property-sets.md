@@ -1,7 +1,6 @@
 ---
 title: AVStream Property Sets
 description: AVStream Property Sets
-ms.assetid: 23c020e8-b778-4784-9dc0-21920557e1c1
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

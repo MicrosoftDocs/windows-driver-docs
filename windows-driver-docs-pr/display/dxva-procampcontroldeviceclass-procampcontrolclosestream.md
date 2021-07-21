@@ -1,7 +1,6 @@
 ---
 title: ProcAmpControlCloseStream method
 description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpCloseStream function closes the ProcAmp stream object and instructs the device driver to release hardware resources associated with the stream.
-ms.assetid: aa13efb8-2014-4790-b121-cd9fd3171458
 keywords: ["ProcAmpControlCloseStream method Display Devices", "ProcAmpControlCloseStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlCloseStream method"]
 topic_type:
 - apiref
@@ -19,8 +18,7 @@ ms.custom: seodec18
 
 The sample **ProcAmpCloseStream** function closes the ProcAmp stream object and instructs the device driver to release hardware resources associated with the stream.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ProcAmpControlCloseStream(
@@ -28,35 +26,25 @@ HRESULT ProcAmpControlCloseStream(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 **
 None
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
-The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure, which points to the driver-supplied [*DdMoCompDestroy*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) callback.
+The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure, which points to the driver-supplied [*DdMoCompDestroy*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) callback.
 
 ## <span id="see_also"></span>See also
 
 
-[**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
+[**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
 [**ProcAmpControlOpenStream**](dxva-procampcontroldeviceclass-procampcontrolopenstream.md)
 
  
-
- 
-
-
-
-
-
 

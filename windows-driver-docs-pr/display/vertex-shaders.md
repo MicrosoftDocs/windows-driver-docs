@@ -1,7 +1,6 @@
 ---
 title: Vertex Shaders
 description: Vertex Shaders
-ms.assetid: dfc421f7-b2fe-4023-a47b-cfd59fe5bdb4
 keywords:
 - vertex shaders WDK DirectX 8.0
 ms.date: 04/20/2017

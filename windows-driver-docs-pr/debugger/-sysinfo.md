@@ -1,7 +1,6 @@
 ---
 title: sysinfo
 description: The sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
-ms.assetid: 1637fcc8-54ff-46a4-94f4-0b2df38507d1
 keywords: ["sysinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -108,10 +107,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
-
-Remarks
--------
+## Remarks
 
 This extension is useful only when the dump file is a System Crash File (.dmp) that has not been converted to a minidump file from a kernel or full dump file, or the live system has finished starting and is online (for example, at the log-in prompt).
 
@@ -119,21 +115,10 @@ You can use any combination of the **-debug**, **-devices**, **-memory**, **-pow
 
 The following parameters are supported only on particular systems:
 
--   The **gbl** parameter works only when the target computer supports ACPI.
+- The **gbl** parameter works only when the target computer supports ACPI.
 
--   The **smbios** parameter works only when the target computer supports SMBIOS.
-
--   The **registers** parameter does not work on Itanium-based target computers, because they do not collect MSRs.
+- The **smbios** parameter works only when the target computer supports SMBIOS.
 
 Microsoft makes every effort to remove personally identifiable information (PII) from these records. All PII is removed from dump files. However, on a live system, some PII may not yet be removed. As a result, PII fields will be reported as 0 or blank, even if they actually contain information.
 
 To stop execution of commands that include the **cpuinfo**, **gbl**, **registers**, or **smbios** parameters at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
-
- 
-
- 
-
-
-
-
-

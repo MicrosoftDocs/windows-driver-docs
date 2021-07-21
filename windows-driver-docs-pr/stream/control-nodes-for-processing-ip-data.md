@@ -1,7 +1,6 @@
 ---
 title: Control Nodes for Processing IP Data
 description: Control Nodes for Processing IP Data
-ms.assetid: 6195ffe9-d20c-4687-8d45-abbfc17ba2fa
 keywords:
 - control nodes WDK BDA
 - nodes WDK BDA
@@ -34,7 +33,7 @@ The following sequence and figure describe the data flow for IP data that is par
 
  
 
-![diagram illustrating ip data flow](images/ipdata.png)
+![diagram illustrating ip data flow.](images/ipdata.png)
 
  
 

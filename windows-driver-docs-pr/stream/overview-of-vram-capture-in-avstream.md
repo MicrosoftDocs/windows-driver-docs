@@ -1,7 +1,6 @@
 ---
 title: Overview of VRAM Capture in AVStream
 description: Overview of VRAM Capture in AVStream
-ms.assetid: b5fd026f-75e3-49e0-a39e-4883dd6cacf2
 keywords:
 - VRAM capture WDK AVStream , about VRAM capture
 ms.date: 04/20/2017
@@ -19,7 +18,7 @@ A capture driver can send data to any DXVA2-aware downstream filter, for example
 
 The following diagram shows how a VRAM capture-enabled AVStream minidriver interacts with the display miniport driver and with other modules.
 
-![diagram illustrating how a vram capture-enabled avstream minidriver interacts with the display miniport driver and other modules](images/lddmcapturearchitectureoverview.gif)
+![diagram illustrating how a vram capture-enabled avstream minidriver interacts with the display miniport driver and other modules.](images/lddmcapturearchitectureoverview.gif)
 
  
 

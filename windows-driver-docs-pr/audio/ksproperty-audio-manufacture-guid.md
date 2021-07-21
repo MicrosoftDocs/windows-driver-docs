@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MANUFACTURE\_GUID
-description: This parameter name is reserved for future use.
-ms.assetid: 3760b9fc-c043-42db-8416-2897f7c370f3
+description: Learn about the KSPROPERTY\_AUDIO\_MANUFACTURE\_GUID parameter. This parameter name is reserved for future use.
 keywords: ["KSPROPERTY_AUDIO_MANUFACTURE_GUID Audio Devices"]
 topic_type:
 - apiref

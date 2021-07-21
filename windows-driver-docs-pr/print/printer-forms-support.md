@@ -1,7 +1,6 @@
 ---
 title: Printer Forms Support
 description: Printer Forms Support
-ms.assetid: 7525dc6c-7521-4a6b-923c-00b7e1c9db8c
 keywords:
 - printer forms WDK
 - forms WDK printer

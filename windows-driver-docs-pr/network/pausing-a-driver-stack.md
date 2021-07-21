@@ -1,7 +1,6 @@
 ---
 title: Pausing a Driver Stack
 description: Pausing a Driver Stack
-ms.assetid: 6c6300e9-aea6-4da3-a91a-73db6ba8ff1f
 keywords:
 - driver stacks WDK networking , pausing
 - pausing driver stacks WDK networking
@@ -23,21 +22,15 @@ NDIS pauses a driver stack to complete operations such as inserting a filter mod
 
 2.  NDIS pauses all the filter modules, beginning at the top of the stack and progressing down to the miniport driver.
 
-    After NDIS calls the filter driver's [*FilterPause*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_pause) function, the filter module enters the Pausing state. After NDIS returns all outstanding receive indications, and all outstanding send operations are complete, the filter module enters the Paused state.
+    After NDIS calls the filter driver's [*FilterPause*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_pause) function, the filter module enters the Pausing state. After NDIS returns all outstanding receive indications, and all outstanding send operations are complete, the filter module enters the Paused state.
 
 3.  NDIS pauses the miniport adapter.
 
-    After NDIS calls the miniport driver's [*MiniportPause*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_pause) function, the miniport adapter enters the Pausing state. After NDIS returns all outstanding receive indications, the miniport adapter enters the Paused state.
+    After NDIS calls the miniport driver's [*MiniportPause*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_pause) function, the miniport adapter enters the Pausing state. After NDIS returns all outstanding receive indications, the miniport adapter enters the Paused state.
 
 **Note**  NDIS drivers cannot fail a pause request. You should log any errors that occur.
 
  
 
  
-
- 
-
-
-
-
 

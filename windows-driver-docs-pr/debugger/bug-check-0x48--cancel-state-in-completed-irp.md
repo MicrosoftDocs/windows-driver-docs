@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x48 CANCEL_STATE_IN_COMPLETED_IRP
 description: The CANCEL_STATE_IN_COMPLETED_IRP bug check has a value of 0x00000048. This indicates that an I/O request packet (IRP) was completed, and then was subsequently canceled.
-ms.assetid: e706cf9b-8800-41ce-9bad-e4b9a8503051
 keywords: ["Bug Check 0x48 CANCEL_STATE_IN_COMPLETED_IRP", "CANCEL_STATE_IN_COMPLETED_IRP"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ The CANCEL\_STATE\_IN\_COMPLETED\_IRP bug check has a value of 0x00000048. This 
 
  
 
-Cause
------
+## Cause
 
 An IRP that had a *Cancel* routine set was completed normally, without cancellation. But after it was complete, a driver called the IRP's *Cancel* routine.
 
@@ -67,8 +65,7 @@ This could be caused by a driver that completed the IRP and then attempted to ca
 
 It could also be caused by two drivers each trying to access the same IRP in an improper way.
 
-Resolution
-----------
+## Resolution
 
 The cancel routine parameter can be used to determine which driver or stack caused the bug check.
 

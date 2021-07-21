@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_BIP_KEY
 description: WDI_TLV_CIPHER_KEY_BIP_KEY is a TLV that contains BIP cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEYS.
-ms.assetid: 99630BDF-9845-4E3D-AB18-5F5BAFCF7198
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_BIP_KEY Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CIPHER\_KEY\_BIP\_KEY
 
 
-WDI\_TLV\_CIPHER\_KEY\_BIP\_KEY is a TLV that contains BIP cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-add-cipher-keys).
+WDI\_TLV\_CIPHER\_KEY\_BIP\_KEY is a TLV that contains BIP cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
 
 ## TLV Type
 
@@ -32,8 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: SRB\_SET\_DATA\_FORMAT
 description: SRB\_SET\_DATA\_FORMAT
-ms.assetid: a111ab92-a0a0-464e-ac13-f5be33ecd064
 keywords: ["SRB_SET_DATA_FORMAT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,15 +30,9 @@ Indicates that the minidriver does not support the requested data format.
 
 ### Comments
 
-The class driver passes the new data format in the **CommandData**.**OpenFormat** member of the *pSrb* pointer. (This pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure.)
+The class driver passes the new data format in the **CommandData**.**OpenFormat** member of the *pSrb* pointer. (This pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure.)
 
-For more information about data formats, see the [Stream Class Minidriver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2). Also see [Data Range Intersections in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/data-range-intersections-in-avstream).
-
- 
+For more information about data formats, see the [Stream Class Minidriver Design Guide](./streaming-minidrivers2.md). Also see [Data Range Intersections in AVStream](./data-range-intersections-in-avstream.md).
 
  
-
-
-
-
 

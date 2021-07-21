@@ -1,7 +1,6 @@
 ---
 title: How do I generate trace messages from a header file
 description: How do I generate trace messages from a header file
-ms.assetid: 00b97f26-90e2-4efe-8bba-e3ffe7ba90ea
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

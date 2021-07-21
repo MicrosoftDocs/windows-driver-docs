@@ -1,7 +1,6 @@
 ---
 title: Global Flag Reference
 description: Global Flag Reference
-ms.assetid: 17de082d-a252-46e6-a0ca-9f8d4273c1c4
 keywords: ["GFlags, global flag reference"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_CONNECTION\_PROTOCOL\_TYPE\_QUALIFIERS
 description: ISCSI\_CONNECTION\_PROTOCOL\_TYPE\_QUALIFIERS
-ms.assetid: 76243fa2-6783-40ef-b569-0f69ae9d4f45
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

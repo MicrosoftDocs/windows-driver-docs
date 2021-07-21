@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xBD INVALID_HIBERNATED_STATE
 description: The INVALID_HIBERNATED_STATE bug check has a value of 0x000000BD.
-ms.assetid: DB386A20-EE6F-4E2B-8FFD-51CCE0A8AEAC
 keywords: ["Bug Check 0xBD INVALID_HIBERNATED_STATE", "INVALID_HIBERNATED_STATE"]
 ms.date: 05/23/2017
 topic_type:

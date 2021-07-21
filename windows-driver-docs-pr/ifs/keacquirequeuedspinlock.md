@@ -1,7 +1,6 @@
 ---
 title: KeAcquireQueuedSpinLock
 description: Reserved for system use.
-ms.assetid: 696c324b-8bb2-4f0d-bfd1-fb36fc20c962
 keywords: ["KeAcquireQueuedSpinLock Installable File System Drivers"]
 topic_type:
 - apiref

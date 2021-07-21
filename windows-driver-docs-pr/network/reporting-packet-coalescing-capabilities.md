@@ -1,7 +1,6 @@
 ---
 title: Reporting Packet Coalescing Capabilities
 description: Reporting Packet Coalescing Capabilities
-ms.assetid: 6118F648-87FE-4B9E-9535-1602F4FF79D2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ Miniport drivers register the following capabilities with NDIS during network ad
 
 
 
-The miniport driver reports the packet coalescing and filtering capabilities of the underlying network adapter through an [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure. If the **\*PacketCoalescing** keyword setting in the registry has a value of one, packet coalescing is enabled and the miniport driver initializes the **NDIS\_RECEIVE\_FILTER\_CAPABILITIES** structure in the following way:
+The miniport driver reports the packet coalescing and filtering capabilities of the underlying network adapter through an [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure. If the **\*PacketCoalescing** keyword setting in the registry has a value of one, packet coalescing is enabled and the miniport driver initializes the **NDIS\_RECEIVE\_FILTER\_CAPABILITIES** structure in the following way:
 
 1.  The miniport driver initializes the **Header** member. The driver sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_DEFAULT.
 
@@ -29,9 +28,9 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
 2.  The miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_SUPPORTED\_ON\_DEFAULT\_QUEUE flag in the **SupportedQueueProperties** member.
 
-    If this flag is set, the network adapter must support the filtering of received multicast packets in hardware. This filtering is based on the multicast addresses that NDIS offloaded to the network adapter by sending it [OID\_802\_3\_MULTICAST\_LIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-802-3-multicast-list) OID set requests.
+    If this flag is set, the network adapter must support the filtering of received multicast packets in hardware. This filtering is based on the multicast addresses that NDIS offloaded to the network adapter by sending it [OID\_802\_3\_MULTICAST\_LIST](./oid-802-3-multicast-list.md) OID set requests.
 
-    **Note**  Protocol drivers can also change the contents of the multicast address list by sending [OID\_802\_3\_ADD\_MULTICAST\_ADDRESS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-802-3-add-multicast-address) and [OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-802-3-delete-multicast-address) requests. NDIS combines these requests into [OID\_802\_3\_MULTICAST\_LIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-802-3-multicast-list) OID set requests.
+    **Note**  Protocol drivers can also change the contents of the multicast address list by sending [OID\_802\_3\_ADD\_MULTICAST\_ADDRESS](./oid-802-3-add-multicast-address.md) and [OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS](./oid-802-3-delete-multicast-address.md) requests. NDIS combines these requests into [OID\_802\_3\_MULTICAST\_LIST](./oid-802-3-multicast-list.md) OID set requests.
 
 
 
@@ -43,7 +42,7 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
 3.  The miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag in the **EnabledFilterTypes** member.
 
-    **Note**  If the driver sets this flag, it must also set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_SUPPORTED\_ON\_DEFAULT\_QUEUE flag in the **SupportedQueueProperties** member. Otherwise, NDIS will fail the call to [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) by returning NDIS\_STATUS\_BAD\_CHARACTERISTICS.
+    **Note**  If the driver sets this flag, it must also set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_SUPPORTED\_ON\_DEFAULT\_QUEUE flag in the **SupportedQueueProperties** member. Otherwise, NDIS will fail the call to [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) by returning NDIS\_STATUS\_BAD\_CHARACTERISTICS.
 
 
 
@@ -141,15 +140,15 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
 
 
-When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the driver reports the packet coalescing and filtering capabilities of the underlying network adapter by following these steps:
+When NDIS calls the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the driver reports the packet coalescing and filtering capabilities of the underlying network adapter by following these steps:
 
--   The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
+-   The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
 
-    If the **\*PacketCoalescing** keyword setting in the registry has a value of one, the miniport driver sets the **HardwareReceiveFilterCapabilities** member to a pointer to the previously initialized [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
+    If the **\*PacketCoalescing** keyword setting in the registry has a value of one, the miniport driver sets the **HardwareReceiveFilterCapabilities** member to a pointer to the previously initialized [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
 
     If the **\*PacketCoalescing** keyword setting in the registry has a value of zero, the miniport driver does not advertise support for packet coalescing. It must set the **HardwareReceiveFilterCapabilities** member to NULL.
 
--   The driver calls [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) and sets the *MiniportAttributes* parameter to a pointer to the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
+-   The driver calls [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) and sets the *MiniportAttributes* parameter to a pointer to the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
 
 The method that is used by miniport drivers to report the packet coalescing and filtering capabilities of the underlying network adapter is based on the NDIS 6.20 method for reporting power management capabilities. For more information about this method, see [Reporting Power Management Capabilities](reporting-power-management-capabilities.md).
 

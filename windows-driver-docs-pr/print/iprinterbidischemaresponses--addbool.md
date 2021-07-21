@@ -4,7 +4,6 @@ description: The AddBool method adds a new response of type BIDI\_BOOL to the co
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 8D1C9198-DE72-4348-84EE-C3B875D14E6A
 keywords: ["AddBool method Print Devices", "AddBool method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddBool method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddBool method adds a new response of type BIDI\_BOOL to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT  AddBool(
@@ -30,8 +28,7 @@ HRESULT  AddBool(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -39,13 +36,11 @@ The schema.
 *bValue* \[in\]  
 The new value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

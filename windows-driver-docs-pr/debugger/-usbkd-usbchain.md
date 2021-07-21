@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbchain
 description: The usbkd.usbchain command displays a USB device chain starting at a specified PDO, and going back to the root hub.
-ms.assetid: 0D69E29E-3886-436F-B5EE-E4F297D9CE36
 keywords: ["usbkd.usbchain Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of the physical device object (PDO) of a device that is connected to a U
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the PDO of a USB device. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -68,14 +66,7 @@ VID Xxxx PID Xxxx REV 0100  Xxxx Corporation
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

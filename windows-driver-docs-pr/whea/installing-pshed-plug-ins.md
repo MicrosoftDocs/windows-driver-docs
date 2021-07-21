@@ -1,7 +1,6 @@
 ---
 title: Installing PSHED Plug-Ins
 description: Installing PSHED Plug-Ins
-ms.assetid: a7f75bc0-b87a-42fa-bc46-f68b3dc31d2d
 keywords:
 - PSHED plug-ins WDK WHEA , installing
 - platform-specific hardware error driver plug-ins WDK WHEA , installing
@@ -13,12 +12,7 @@ ms.localizationpriority: medium
 # Installing PSHED Plug-Ins
 
 
-A PSHED plug-in is installed like any other Windows [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages). For more information about how to install a driver package, see [Device Installation](https://docs.microsoft.com/windows-hardware/drivers/install/index).
+A PSHED plug-in is installed like any other Windows [driver package](../install/driver-packages.md). For more information about how to install a driver package, see [Device Installation](../install/index.md).
 
  
-
- 
-
-
-
 

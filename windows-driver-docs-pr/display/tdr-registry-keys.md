@@ -1,102 +1,125 @@
 ---
-title: Timeout Detection and Recovery (TDR) Registry Keys
-description: The following TDR (timeout detection and recovery)-related registry keys are for display driver development testing or debugging purposes only.
-ms.assetid: 77b8b2aa-0821-4297-a1e4-57894bd4181f
+title: Testing and debugging TDR during driver development
+description: TDR testing and debugging information for developers
 keywords:
-- TDR (timeout detection and recovery)
+- TDR debugging, driver development
+- Timeout detection and recovery debugging, driver development
+- TDR testing, driver development
+- Timeout detection and recovery testing, driver development
+- Registry keys, TDR, driver development
+- Registry keys, timeout detection and recovery, driver development
 - WDK display development
-ms.date: 10/29/2018
+- TDR tests, WHLK
+- TDR tests, Windows Hardware Lab Kit
+ms.date: 03/30/2021
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q3
 ---
 
-# Timeout Detection and Recovery (TDR) Registry Keys
+# Testing and debugging TDR during driver development
 
-You can use the following TDR (timeout detection and recovery)-related registry keys for testing or debugging purposes only. That is, they should not be manipulated by any applications outside targeted testing or debugging.
+This topic provides TDR testing and debugging strategies for display driver developers.
 
--   **TdrLevel**
+## TDR tests in WHLK
 
-    Specifies the initial level of recovery. The default value is to recover on timeout (**TdrLevelRecover**).
+The [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (WHLK) contains TDR-specific tests that driver developers can use for testing and debugging purposes. For example, developers can manually trigger a GPU TDR using the [**SimulatePreemption TDR**](/windows-hardware/test/hlk/testref/86be5032-cfcd-4ee5-a515-0e3ebc0cb6f4). See [**Device.Graphics**](/windows-hardware/test/hlk/testref/device-graphics) for more information about the various TDR-related tests.
 
-    ```registry
-    KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
-    KeyValue  : TdrLevel
-    ValueType : REG_DWORD
-    ValueData : TdrLevelOff (0) - Detection disabled 
-     TdrLevelBugcheck (1) - Bug check on detected timeout, for example, no recovery.
-     TdrLevelRecoverVGA (2) - Recover to VGA (not implemented).
-     TdrLevelRecover (3) - Recover on timeout. This is the default value.
-    ```
+## TDR registry keys for testing and debugging
 
--   **TdrDelay**
+Developers can use the following TDR (timeout detection and recovery)-related registry keys for testing or debugging purposes only during the driver development process.
 
-    Specifies the number of seconds that the GPU can delay the preempt request from the GPU scheduler. This is effectively the timeout threshold. The default value is 2 seconds.
+> [!IMPORTANT]
+> These registry keys should not be manipulated by end users, or by applications outside of targeted testing or debugging during driver development.
 
-    ```registry
-    KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
-    KeyValue  : TdrDelay
-    ValueType : REG_DWORD
-    ValueData : Number of seconds to delay. 2 seconds is the default value.
-    ```
+### TdrLevel
 
--   **TdrDdiDelay**
+Specifies the initial level of recovery.
 
-    Specifies the number of seconds that the operating system allows threads to leave the driver. After a specified time, the operating system bug-checks the computer with the code VIDEO\_TDR\_FAILURE (0x116). The default value is 5 seconds.
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrLevel
+ValueType : REG_DWORD
+ValueData : TdrLevelXxx (see the following table)
+```
 
-    ```registry
-    KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
-    KeyValue  : TdrDdiDelay
-    ValueType : REG_DWORD
-    ValueData : Number of seconds to leave the driver. 5 seconds is the default value.
-    ```
+Where TdrLevel*Xxx* can be one of the following values:
 
--   **TdrTestMode**
+| Value | Meaning |
+| ----- | ------- |
+| TdrLevelOff (0) | Detection disabled |
+| TdrLevelBugcheck (1) | Bug check on detected timeout; for example, no recovery. |
+| TdrLevelRecoverVGA (2) | Recover to VGA (not implemented). |
+| TdrLevelRecover (3) | Recover on timeout. This is the default value. |
 
-    Reserved. Do not use.
+### TdrDelay
 
-    ```registry
-    KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
-    KeyValue  : TdrTestMode
-    ValueType : REG_DWORD
-    ValueData : Do not use.
-    ```
+Specifies the number of seconds that the GPU can delay the preempt request from the GPU scheduler. This is effectively the timeout threshold.
 
--   **TdrDebugMode**
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrDelay
+ValueType : REG_DWORD
+ValueData : Number of seconds to delay. The default value is 2 seconds.
+```
 
-    Specifies the debugging-related behavior of the TDR process. The default value is TDR\_DEBUG\_MODE\_RECOVER\_NO\_PROMPT, which indicates not to break into the debugger.
+### TdrDdiDelay
 
-    ```registry
-    KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
-    KeyValue  : TdrDebugMode
-    ValueType : REG_DWORD
-    ValueData : TDR_DEBUG_MODE_OFF (0) - Break to kernel debugger before the recovery to allow investigation of the timeout. 
-     TDR_DEBUG_MODE_IGNORE_TIMEOUT (1) - Ignore any timeout.
-     TDR_DEBUG_MODE_RECOVER_NO_PROMPT (2) - Recover without breaking into the debugger. This is the default value.
-     TDR_DEBUG_MODE_RECOVER_UNCONDITIONAL (3) - Recover even if some recovery conditions are not met (for example, recover on consecutive timeouts).
-    ```
+Specifies the number of seconds that the OS allows threads to leave the driver. After a specified time, the OS bug-checks the computer with the code VIDEO_TDR_FAILURE (0x116).
 
--   **TdrLimitTime**
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrDdiDelay
+ValueType : REG_DWORD
+ValueData : Number of seconds to leave the driver. The default value is 5 seconds.
+```
 
-    Supported in Windows Server 2008 and later versions, and Windows Vista with Service Pack 1 (SP1) and later versions.
+### TdrDebugMode
 
-    Specifies the default time within which a specific number of TDRs (specified by the **TdrLimitCount** key) are allowed without crashing the computer. The default value is 60 seconds.
+Specifies the debugging-related behavior of the TDR process. The default value is TDR_DEBUG_MODE_RECOVER_NO_PROMPT, which indicates not to break into the debugger.
 
-    ```registry
-    KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
-    KeyValue  : TdrLimitTime
-    ValueType : REG_DWORD
-    ValueData : Number of seconds before crashing. 60 seconds is the default value.
-    ```
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrDebugMode
+ValueType : REG_DWORD
+ValueData : TDR_DEBUG_MODE_XXX (see the following table)
+```
 
--   **TdrLimitCount**
+| Value | Meaning |
+| ----- | ------- |
+| TDR_DEBUG_MODE_OFF (0) | Break to kernel debugger before the recovery to allow investigation of the timeout. |
+| TDR_DEBUG_MODE_IGNORE_TIMEOUT (1) | Ignore any timeout. |
+| TDR_DEBUG_MODE_RECOVER_NO_PROMPT (2) | Recover without breaking into the debugger. This is the default value. |
+| TDR_DEBUG_MODE_RECOVER_UNCONDITIONAL (3) | Recover even if some recovery conditions are not met (for example, recover on consecutive timeouts). |
 
-    Supported in Windows Server 2008 and later versions, and Windows Vista with Service Pack 1 (SP1) and later versions.
+### TdrLimitTime
 
-    Specifies the default number of TDRs (0x117) that are allowed during the time specified by the **TdrLimitTime** key without crashing the computer. The default value is 5.
+Specifies the default time within which a specific number of TDRs (specified by the **TdrLimitCount** key) are allowed without crashing the computer.
 
-    ```registry
-    KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
-    KeyValue  : TdrLimitCount
-    ValueType : REG_DWORD
-    ValueData : Number of TDRs before crashing. The default value is 5.
-    ```
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrLimitTime
+ValueType : REG_DWORD
+ValueData : Number of seconds before crashing. The default value is 60 seconds.
+```
 
+### TdrLimitCount
+
+Specifies the default number of TDRs (0x117) that are allowed during the time specified by the **TdrLimitTime** key without crashing the computer.
+
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrLimitCount
+ValueType : REG_DWORD
+ValueData : Number of TDRs before crashing. The default value is 5.
+```
+
+### TdrTestMode
+
+Reserved. Do not use.
+
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrTestMode
+ValueType : REG_DWORD
+ValueData : Do not use.
+```

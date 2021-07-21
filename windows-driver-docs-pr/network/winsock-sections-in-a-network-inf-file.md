@@ -1,7 +1,6 @@
 ---
 title: Winsock Sections in a Network INF File
 description: Winsock Sections in a Network INF File
-ms.assetid: 179a8570-287b-446e-8b56-a9f23071e84d
 keywords:
 - INF files WDK network , Winsock sections
 - network INF files WDK , Winsock sections
@@ -43,7 +42,7 @@ The vendor-named section referenced by the **AddSock** directive must contain th
 </tr>
 <tr class="even">
 <td align="left"><p>HelperDllName</p></td>
-<td align="left"><p>A REG_EXPAND_SZ value that specifies the path to the Windows Sockets helper (WSH) DLL for the protocol. For more information, see <a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566260(v=vs.85)" data-raw-source="[WSH DLL Function Summary](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566260(v=vs.85))">WSH DLL Function Summary</a>.</p></td>
+<td align="left"><p>A REG_EXPAND_SZ value that specifies the path to the Windows Sockets helper (WSH) DLL for the protocol. For more information, see <a href="/previous-versions/windows/hardware/network/ff566260(v=vs.85)" data-raw-source="[WSH DLL Function Summary](/previous-versions/windows/hardware/network/ff566260(v=vs.85))">WSH DLL Function Summary</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxSockAddrLength</p></td>
@@ -214,12 +213,4 @@ DelSock = Remove.IpxWinsock
 TransportService = nwlinkipx
 ProviderId = "GUID"
 ```
-
- 
-
- 
-
-
-
-
 

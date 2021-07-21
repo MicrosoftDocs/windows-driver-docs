@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_PLANAR
 description: The WIA\_IPA\_PLANAR property contains image data packing options. The WIA minidriver creates and maintains this property.
-ms.assetid: df4013db-8f9e-428a-83dd-c344f7998034
 keywords: ["WIA_IPA_PLANAR Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_NONE
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 An application reads WIA\_IPA\_PLANAR to determine the image packing options or sets the current image packing options.
 
@@ -63,8 +61,7 @@ The following table describes the constants that are valid with WIA\_IPA\_PLANAR
 
 If a device can be set to only a single value, you can implement the WIA\_IPA\_PLANAR property as WIA\_PROP\_NONE and read-only.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

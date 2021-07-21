@@ -1,7 +1,6 @@
 ---
 title: WIA Item Trees
 description: WIA Item Trees
-ms.assetid: 98c43595-8547-4916-8671-86652212ac92
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: The PDBStr Tool
 description: The PDBStr Tool
-ms.assetid: a70e92ac-4d72-4c71-9396-f470314257f2
 keywords: ["SrcSrv, PDBStr tool", "PDBStr tool"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

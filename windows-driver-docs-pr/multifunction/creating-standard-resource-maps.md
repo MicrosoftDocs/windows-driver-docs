@@ -1,7 +1,6 @@
 ---
 title: Creating Standard Resource Maps
 description: Creating Standard Resource Maps
-ms.assetid: 97d95481-5290-41d3-a6e6-7cc142d4c2e8
 keywords:
 - standard resource maps WDK multifunction devices
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-If a multifunction device's INF contains an [**INF DDInstall.LogConfigOverride section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-logconfigoverride-section), the parent resources are implicitly numbered 00 through *nn* as they appear in the INF's *log-config-section* sections (see [**INF LogConfig Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive)). For example, consider a multifunction PC Card with the following INF *DDInstall*.**LogConfigOverride** section:
+If a multifunction device's INF contains an [**INF DDInstall.LogConfigOverride section**](../install/inf-ddinstall-logconfigoverride-section.md), the parent resources are implicitly numbered 00 through *nn* as they appear in the INF's *log-config-section* sections (see [**INF LogConfig Directive**](../install/inf-logconfig-directive.md)). For example, consider a multifunction PC Card with the following INF *DDInstall*.**LogConfigOverride** section:
 
 ```cpp
 [DDInstall.LogConfigOverride]
@@ -46,9 +45,4 @@ The "1" following the **ResourceMap** parameter specifies that the registry entr
 If there are no *DDInstall*.**LogConfigOverride** sections in the INF, the parent resources are numbered in the order that the resource requirements are constructed by the driver for the underlying bus. For PC Cards, the bus driver reports resources in this order: IRQ, I/O ports, memory addresses. For multiple I/O and memory requirements, they are numbered in the same order as the tuples on the card. Other bus drivers might list resources in other orders.
 
  
-
- 
-
-
-
 

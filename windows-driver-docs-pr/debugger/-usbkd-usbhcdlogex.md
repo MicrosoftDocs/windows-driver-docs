@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhcdlogex
 description: The usbkd.usbhcdlogex command displays an annotated debug log for a USB host controller.
-ms.assetid: 47274AEE-0BDB-4C25-9158-6213366434E0
 keywords: ["usbkd.usbhcdlogex Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,8 +35,7 @@ The number of log entries to display. To display the entire log, set this parame
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the device extension for the FDO of a USB host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -102,14 +100,7 @@ LOG@: ffffe00001ca11b8
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

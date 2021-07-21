@@ -15,15 +15,15 @@ Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with W
 
 The driver is named: _usbaudio2.sys_ and the associated inf file is _usbaudio2.inf_.
 
-The driver will identify in device manager as "USB Audio Class 2 Device." This name will be overwritten with a USB Product string, if it is available.
+The driver will identify in device manager as "USB Audio Class 2 Device". This name will be overwritten with a USB Product string, if it is available.
 
 The driver is automatically enabled when a compatible device is attached to the system. However, if a third-party driver exists on the system or Windows Update, that driver will be installed and override the class driver.
 
 ## Architecture
 
-USBAudio.Sys fits within the wider architecture of Windows USB Audio as shown. 
+usbaudio2.sys fits within the wider architecture of Windows USB Audio as shown. 
 
-![stack diagram showing Kmixer.sys at the top and a USB audio device at the bottom](images/usb-2-0-audio-arch.png)
+![stack diagram showing Kmixer.sys at the top and a USB audio device at the bottom.](images/usb-2-0-audio-arch.png)
 
 ## Related USB specifications
 
@@ -41,7 +41,7 @@ The driver supports the formats listed below. An alternate setting which specifi
 
 Type I formats (FMT-2 2.3.1):
 
-- PCM Format with 8..32 bits per sample (FMT20 2.3.1.7.1)
+- PCM Format with 8..32 bits per sample (FMT-2 2.3.1.7.1)
 - PCM8 Format (FMT-2 2.3.1.7.2)
 - IEEE_FLOAT Format (FMT-2 2.3.1.7.3)
 
@@ -56,7 +56,7 @@ Type III formats (FMT-2 2.3.3 and A.2.3):
 
 ## Feature descriptions
 
-This section describes the features of the of the USB Audio 2.0 driver.
+This section describes the features of the USB Audio 2.0 driver.
 
 ### Audio function topology
 
@@ -92,7 +92,7 @@ The size of isochronous packets created by the device must be within the limits 
 
 An audio function must implement exactly one AudioControl  Interface Descriptor (ADC-2 4.7) and one or more AudioStreaming Interface Descriptors (ADC-2 4.9). A function with an audio control interface but no streaming interface is not supported.
 
-The driver supports all descriptor types defined in ADC20, section 4. The following subsections provide comments on some specific descriptor types.
+The driver supports all descriptor types defined in ADC-2, section 4. The following subsections provide comments on some specific descriptor types.
 
 ### Class-Specific AS interface descriptor
 
@@ -118,8 +118,8 @@ For details on this specification, refer to FMT-2 2.3.1.6.
 
 The following restrictions apply:
 
-|                            |                        |                               |
-|----------------------------|------------------------|-------------------------------|
+|Format                      |Subslot size            |Bit resolution                 |
+|----|----|----|
 | Type I PCM format: 		 | 1 <= bSubslotSize <= 4 |		8 <= bBitResolution <= 32 |
 | Type I PCM8 format:		 | bSubslotSize == 1	  | 	bBitResolution == 8       |
 | Type I IEEE_FLOAT format:	 | bSubslotSize == 4	  | 	bBitResolution == 32      |
@@ -259,13 +259,13 @@ For example:
 
 T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType
 
-For additional audio jack information, see [KSJACK_DESCRIPTION structure](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description).
+For additional audio jack information, see [KSJACK_DESCRIPTION structure](./ksjack-description.md).
 
 These registry values can be set in various ways:
 
 - By using custom INFs which wrap the in-box INF for the purpose to set these values.
 
-- Directly by the h/w device via a Microsoft OS Descriptors for USB devices (see example below). For more information about creating these descriptors, see [Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
+- Directly by the h/w device via a Microsoft OS Descriptors for USB devices (see example below). For more information about creating these descriptors, see [Microsoft OS Descriptors for USB Devices](../usbcon/microsoft-defined-usb-descriptors.md).
 
 ### Microsoft OS Descriptors for USB Example
 
@@ -327,13 +327,13 @@ UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
 
 If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in [this blog entry](https://matthewvaneerde.wordpress.com/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
 
-For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub//). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](https://docs.microsoft.com/windows-hardware/drivers/devtest/displaying-a-trace-log-with-a-tmf-file).
+For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub//). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](../devtest/displaying-a-trace-log-with-a-tmf-file.md).
 
 For information on "Audio services not responding" error and USB audio device does not work in Windows 10 version 1703 see, [USB Audio Not Playing](usb-audio-not-playing.md)
 
 ## Feedback Hub
 
-If you run into a problem with this driver, collect audio logs and then  follow steps outlined in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) to bring it to our attention via the Feedback Hub.
+If you run into a problem with this driver, collect audio logs and then  follow steps outlined in [this blog entry](/archive/blogs/matthew_van_eerde/report-problems-with-logs-and-suggest-features-with-the-feedback-hub) to bring it to our attention via the Feedback Hub.
 
 ## Driver development
 
@@ -341,10 +341,10 @@ This USB Audio 2.0 class driver was developed by Thesycon and is supported by Mi
 
 ### See also
 
-[Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model)
+[Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)
 
-[Audio Drivers Overview](https://docs.microsoft.com/windows-hardware/drivers/audio/getting-started-with-wdm-audio-drivers)
+[Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)
 
-[WaveRT Port Driver](https://docs.microsoft.com/windows-hardware/drivers/audio/introducing-the-wavert-port-driver)
+[WaveRT Port Driver](./introducing-the-wavert-port-driver.md)
 
-[Low Latency Audio](https://docs.microsoft.com/windows-hardware/drivers/audio/low-latency-audio)
+[Low Latency Audio](./low-latency-audio.md)

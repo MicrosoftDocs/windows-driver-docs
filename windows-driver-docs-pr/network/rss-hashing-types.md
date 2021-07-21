@@ -1,7 +1,6 @@
 ---
 title: RSS Hashing Types
 description: RSS Hashing Types
-ms.assetid: 21ea384c-5fe2-46c1-9e01-30513f505672
 keywords:
 - receive-side scaling WDK networking , hash
 - RSS WDK networking , hash
@@ -143,13 +142,19 @@ The NIC should compute the hash value over the following fields:
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_TCP_IPV6 case. However, if the packet does not contain a TCP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6 case.
 
+For example, if the packet is fragmented, then it may not contain the TCP header.  In that case, the NIC should compute the hash only over the IP header.
+
 ### <a name="ndis_hash_udp_ipv6--ndis_hash_ipv6"></a> NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_UDP_IPV6 case. However, if the packet does not contain a UDP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6 case.
 
+For example, if the packet is fragmented, then it may not contain the UDP header.  In that case, the NIC should compute the hash only over the IP header.
+
 ### <a name="ndis_hash_tcp_ipv6--ndis_hash_udp_ipv6--ndis_hash_ipv6"></a> NDIS_HASH_TCP_IPV6 | NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6
 
 If this flag combination is set, the NIC should perform the hash calculation as specified by the transport in the packet. However, if the packet does not contain a TCP or UDP header, the NIC should compute the hash value as specified in the NDIS_HASH_IPV6 case.
+
+For example, if the packet is fragmented, then it may not contain the TCP or UDP header.  In that case, the NIC should compute the hash only over the IP header.
 
 ## IPv6 with extension headers hash type combinations
 
@@ -202,4 +207,4 @@ If this flag combination is set, the NIC should perform the hash calculations as
 > [!NOTE]
 > If a miniport driver reports NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX and/or NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX capability for a NIC, the NIC must calculate hash values (over fields in the IPv6 extension headers) in accordance with the IPv6 extension hash types that the protocol driver set. The NIC can store either the extension hash type or the regular hash type in the NET_BUFFER_LIST structure of the IPv6 packet for which a hash value is computed.
 
-A miniport driver sets the hash type in a [**NET_BUFFER_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure before indicating the received data. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
+A miniport driver sets the hash type in a [**NET_BUFFER_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure before indicating the received data. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).

@@ -1,7 +1,6 @@
 ---
 title: PCM Multichannel Stream Data Range
 description: PCM Multichannel Stream Data Range
-ms.assetid: b7e1a5d9-fb8a-46ed-932b-d667e470d4ab
 keywords:
 - PCM multichannel stream data ranges WDK
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="pcm_multichannel_stream_data_range"></span><span id="PCM_MULTICHANNEL_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure to describe the data range for a PCM multichannel stream.
+This example uses a [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure to describe the data range for a PCM multichannel stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);
@@ -32,9 +31,4 @@ This example uses a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-
 ```
 
  
-
- 
-
-
-
 

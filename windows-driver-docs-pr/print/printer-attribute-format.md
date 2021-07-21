@@ -1,7 +1,6 @@
 ---
 title: Printer Attribute Format
 description: Printer Attribute Format
-ms.assetid: 676e9220-4990-4581-8f23-79083afc311c
 keywords:
 - printer attributes WDK Unidrv , formats
 - formats WDK printer attributes

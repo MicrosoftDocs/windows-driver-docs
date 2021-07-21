@@ -1,7 +1,6 @@
 ---
 title: Enabling TWAIN Capability Pass-Through in a WIA Driver
 description: Enabling TWAIN Capability Pass-Through in a WIA Driver
-ms.assetid: b2108109-9e41-481d-bc25-67327420faf9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-To enable support for TWAIN capability pass-through, add the **WiaItemTypeTwainCapabilityPassThrough** flag to the [**WIA\_IPA\_ITEM\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-flags) property on the root item. This flag is defined in header file *wiatwcmp.h*.
+To enable support for TWAIN capability pass-through, add the **WiaItemTypeTwainCapabilityPassThrough** flag to the [**WIA\_IPA\_ITEM\_FLAGS**](./wia-ipa-item-flags.md) property on the root item. This flag is defined in header file *wiatwcmp.h*.
 
 The following example is taken from the *wiascanr* sample (which is included in the Driver Development Kit \[DDK\]) and demonstrates the use of the **WiaItemTypeTwainCapabilityPassThrough** flag).
 
@@ -39,9 +38,4 @@ The following example is taken from the *wiascanr* sample (which is included in 
 ```
 
  
-
- 
-
-
-
 

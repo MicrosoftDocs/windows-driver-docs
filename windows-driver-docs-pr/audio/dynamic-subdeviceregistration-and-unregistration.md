@@ -1,7 +1,6 @@
 ---
 title: Dynamic Subdevice Registration and Unregistration
 description: Dynamic Subdevice Registration and Unregistration
-ms.assetid: 7157b7b3-655b-49d9-be45-c4a86a3cc82d
 keywords:
 - dynamic subdevice WDK audio
 - audio subdevices WDK
@@ -14,21 +13,21 @@ ms.localizationpriority: medium
 # Dynamic Subdevice Registration and Unregistration
 
 
-Devices that support some form of jack presence detection are called dynamic devices, and their jacks must support the [**KSPROPERTY\_JACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-jack-description) property. The following steps show the algorithm that is used by the driver of a dynamic device to create, register, or unregister the associated subdevices for these dynamic devices. The subdevices are created in the form of filters.
+Devices that support some form of jack presence detection are called dynamic devices, and their jacks must support the [**KSPROPERTY\_JACK\_DESCRIPTION**](./ksproperty-jack-description.md) property. The following steps show the algorithm that is used by the driver of a dynamic device to create, register, or unregister the associated subdevices for these dynamic devices. The subdevices are created in the form of filters.
 
 The following steps show what happens when there is an audio device plugged into the jack when the audio device driver is loaded:
 
-1.  The driver uses jack presence detection to determine that there is a device plugged into the jack. The driver calls [**PcRegisterSubdevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice) to register a topology filter with [Portcls](introduction-to-port-class.md). A [**KSCATEGORY\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-audio) interface is created as a result of the topology filter registration.
+1.  The driver uses jack presence detection to determine that there is a device plugged into the jack. The driver calls [**PcRegisterSubdevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice) to register a topology filter with [Portcls](introduction-to-port-class.md). A [**KSCATEGORY\_AUDIO**](../install/kscategory-audio.md) interface is created as a result of the topology filter registration.
 
 2.  The audio stack is notified when the **KSCATEGORY\_AUDIO** interface is created and the [AudioEndpoint Builder](audio-endpoint-builder-algorithm.md) creates and initializes an associated endpoint, and then sets its state to active.
 
 3.  The driver registers a wave filter with Portcls and the audio stack is notified.
 
-4.  The driver calls [**PcRegisterPhysicalConnection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection) to connect the wave filter with the topology filter. This physical connection is then registered with Portcls.
+4.  The driver calls [**PcRegisterPhysicalConnection**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection) to connect the wave filter with the topology filter. This physical connection is then registered with Portcls.
 
-5.  The driver sets the IsConnected member of the [**KSJACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description) structure to **TRUE** to indicate that there is a device plugged into the jack.
+5.  The driver sets the IsConnected member of the [**KSJACK\_DESCRIPTION**](./ksjack-description.md) structure to **TRUE** to indicate that there is a device plugged into the jack.
 
-**Note**   If the audio device lacks jack presence detection, the **IsConnected** member must always be **TRUE**. To confirm whether the device supports jack presence detection, a client application can call [IKsJackDescription2::GetJackDescription2](https://go.microsoft.com/fwlink/p/?linkid=143698) to read the JackCapabilities flag of the [**KSJACK\_DESCRIPTION2**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description2) structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint supports jack presence detection. In that case, the return value of the **IsConnected** member can be interpreted as an accurate reflection of the insertion status of the jack.
+**Note**   If the audio device lacks jack presence detection, the **IsConnected** member must always be **TRUE**. To confirm whether the device supports jack presence detection, a client application can call [IKsJackDescription2::GetJackDescription2](/windows/win32/api/devicetopology/nf-devicetopology-iksjackdescription2-getjackdescription2) to read the JackCapabilities flag of the [**KSJACK\_DESCRIPTION2**](./ksjack-description2.md) structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint supports jack presence detection. In that case, the return value of the **IsConnected** member can be interpreted as an accurate reflection of the insertion status of the jack.
 
  
 
@@ -57,16 +56,11 @@ To comply with the preceding description of the subdevice registration and unreg
 
 **Device driver response to a plug removal**
 
-1.  Driver must call [**IUnregisterPhysicalConnection::UnregisterPhysicalConnection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnection) to unregister the physical connection between the wave filter and the topology filter.
+1.  Driver must call [**IUnregisterPhysicalConnection::UnregisterPhysicalConnection**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnection) to unregister the physical connection between the wave filter and the topology filter.
 
-2.  Driver must call [**IUnregisterSubdevice::UnregisterSubdevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iunregistersubdevice-unregistersubdevice) to unregister the wave filter.
+2.  Driver must call [**IUnregisterSubdevice::UnregisterSubdevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iunregistersubdevice-unregistersubdevice) to unregister the wave filter.
 
 3.  Driver must set the **IsConnected** member of the **KSJACK\_DESCRIPTION** structure **FALSE**.
 
  
-
- 
-
-
-
 

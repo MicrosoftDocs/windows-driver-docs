@@ -1,7 +1,6 @@
 ---
 title: WIA Minidriver Debugging
 description: WIA Minidriver Debugging
-ms.assetid: 6466d0db-a2f9-4b3e-aa3e-8030b243f862
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ Keep the following two points in mind as you debug your minidriver:
 
 1. If you require network access to symbols and other files from within the debugger, these may not be visible if you automatically start the WIA service under the debugger. WIA runs as a LocalSystem service in Windows XP and as a LocalService for Microsoft Windows Server 2003 and later operating system versions and does not have the appropriate privileges to access the network. So, even though your machine can "see" everything on your network, the debugger running the service may not be able to. For more information about the WIA service's changed privilege level, see [Security Issues for WIA Drivers](security-issues-for-wia-drivers.md).
 
-1. If a problem occurs during driver loading or initialization of the STI portion of the driver (for example, during [**IStiUSD::Initialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize)), then by the time a debugger is attached, the error has already occurred and it is too late to get useful information. A common symptom of this problem is that the device does not show up in the **My Computer** folder, but *does* show up in the **Device Manager** folder.
+1. If a problem occurs during driver loading or initialization of the STI portion of the driver (for example, during [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize)), then by the time a debugger is attached, the error has already occurred and it is too late to get useful information. A common symptom of this problem is that the device does not show up in the **My Computer** folder, but *does* show up in the **Device Manager** folder.
 
 ## Starting the WIA Service Under a Debugger
 

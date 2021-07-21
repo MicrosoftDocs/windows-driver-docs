@@ -1,7 +1,6 @@
 ---
 title: RunOnce Registry Key
 description: RunOnce Registry Key
-ms.assetid: dbeb7be7-4d38-49e2-944c-ea95d9914ebe
 keywords:
 - RunOnce registry key
 - registry WDK device installations
@@ -35,7 +34,7 @@ The registry root (*reg-root*) and subkey values for the **RunOnce** registry ke
 
 **HKLM, "Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce"**
 
-The *value-entry-name* string is omitted from a **RunOnce** registry entry. The type of the entry, which is indicated by the *Flags* value, must be either [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) (*Flags* value of 0x00000000) or [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) (*Flags* value of 0x00010000). For an entry of type [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) (the default), the *Flags* value can be omitted.
+The *value-entry-name* string is omitted from a **RunOnce** registry entry. The type of the entry, which is indicated by the *Flags* value, must be either [REG_SZ](/windows/desktop/SysInfo/registry-value-types) (*Flags* value of 0x00000000) or [REG_EXPAND_SZ](/windows/desktop/SysInfo/registry-value-types) (*Flags* value of 0x00010000). For an entry of type [REG_SZ](/windows/desktop/SysInfo/registry-value-types) (the default), the *Flags* value can be omitted.
 
 The *value* parameter in a **RunOnce** key specifies the command to be executed. This parameter is a quoted string that has the following format:
 
@@ -88,13 +87,5 @@ The following rules apply when you use **RunOnce** registry keys for device inst
 
     Before the *device installation application* creates the **RunOnce** entries, it informs the current user that a user who has administrator privileges must log on after a system restart.
 
-    For more information, see [Developing Applications that Run at Logon on Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=133224).
-
- 
-
- 
-
-
-
-
+    For more information, see [Developing Applications that Run at Logon on Windows Vista](/previous-versions/bb325654(v=msdn.10)).
 

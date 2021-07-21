@@ -1,7 +1,6 @@
 ---
 title: PKEY\_AudioDevice\_EnableEndpointByDefault
 description: PKEY\_AudioDevice\_EnableEndpointByDefault
-ms.assetid: bde2c06d-9418-4f6d-960a-0ebec83bf397
 ms.date: 01/15/2020
 ms.localizationpriority: medium
 ---

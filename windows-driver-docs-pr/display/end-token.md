@@ -1,7 +1,6 @@
 ---
 title: End Token
 description: End Token
-ms.assetid: c76890fd-46fb-42b9-802a-e083840f46d8
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

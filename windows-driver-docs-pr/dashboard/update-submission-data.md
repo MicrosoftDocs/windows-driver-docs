@@ -1,8 +1,6 @@
 ---
 title: Update submission data
 description: This method, in the Microsoft Hardware API, updates details of a submission.
-author: balapv
-ms.author: balapv
 ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium
@@ -21,7 +19,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| PATCH | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}`
+| PATCH | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}`
 
 ### Request header
 
@@ -50,7 +48,7 @@ For details on the fields in the request, refer to [Submission resource](get-pro
 The following example demonstrates how to update a product.
 
 ```json 
-PATCH https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions/1152921504627422408 HTTP/1.1
+PATCH https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14631253285588838/submissions/1152921504627422408 HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

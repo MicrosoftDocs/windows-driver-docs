@@ -1,7 +1,6 @@
 ---
 title: MediaSides element
 description: The optional MediaSides element contains the parameters that are unique to each physical side of the scanned media.
-ms.assetid: 9bd3de21-4b2c-4cea-add6-51240ad6c19f
 keywords: ["MediaSides element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **MediaSides** element contains the parameters that are unique to each physical side of the scanned media.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:MediaSides wscn:MustHonor=""
@@ -28,8 +26,7 @@ Usage
 </wscn:MediaSides wscn:MustHonor="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -101,8 +98,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Many duplex-capable scanners allow for setting different scan regions, color processing, and resolutions for each physical side of the scanned media. The **MediaSides** element contains separate data for the front and back sides of the media. Every scan job can have parameters for the media front.
 

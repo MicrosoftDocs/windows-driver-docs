@@ -1,7 +1,6 @@
 ---
 title: OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 3720b101-cac4-4f81-ae71-088ab03f8756
+description: Learn about the OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["OUTPUTDUPL_CONTEXT_DEBUG_STATUS enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _OUTPUTDUPL_CONTEXT_DEBUG_STATUS {
@@ -32,8 +30,7 @@ typedef enum _OUTPUTDUPL_CONTEXT_DEBUG_STATUS {
 } OUTPUTDUPL_CONTEXT_DEBUG_STATUS;
 ```
 
-Constants
----------
+## Constants
 
 <span id="OUTPUTDUPL_CONTEXT_DEBUG_STATUS_INACTIVE"></span><span id="outputdupl_context_debug_status_inactive"></span>**OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS\_INACTIVE**
 
@@ -43,8 +40,7 @@ Constants
 
 <span id="OUTPUTDUPL_CONTEXT_DEBUG_STATUS_FORCE_UINT32"></span><span id="outputdupl_context_debug_status_force_uint32"></span>**OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS\_FORCE\_UINT32**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

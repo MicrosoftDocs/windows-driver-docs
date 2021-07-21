@@ -1,7 +1,6 @@
 ---
 title: MRxDevFcbXXXControlFile routine
 description: The MRxDevFcbXXXControlFile routine is called by RDBSS to pass a device FCB control request (an IOCTL or FSCTL request) to the network mini-redirector.
-ms.assetid: d60449d0-17d0-4303-8d0d-cba091de2b07
 keywords: ["MRxDevFcbXXXControlFile routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 # MRxDevFcbXXXControlFile routine
 
 
-The *MRxDevFcbXXXControlFile* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to pass a device FCB control request (an IOCTL or FSCTL request) to the network mini-redirector.
+The *MRxDevFcbXXXControlFile* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to pass a device FCB control request (an IOCTL or FSCTL request) to the network mini-redirector.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxDevFcbXXXControlFile;
@@ -32,14 +30,12 @@ NTSTATUS MRxDevFcbXXXControlFile(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxDevFcbXXXControlFile* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -80,8 +76,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxDevFcbXXXControlFile* handles IOCTL and FSCTL requests related to the device FCB that are sent to the network mini-redirector.
 
@@ -101,8 +96,7 @@ If this was an IRP\_MJ\_DEVICE\_CONTROL or IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL re
 
 If *MRxDevFcbXXXControlFile* returns STATUS\_SUCCESS, then the routine was successful. Any other return value indicates that an error occurred.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -124,16 +118,9 @@ Requirements
 ## See also
 
 
-[**MRxStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)
+[**MRxStart**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)
 
 [**MRxStop**](mrxstop.md)
 
  
-
- 
-
-
-
-
-
 

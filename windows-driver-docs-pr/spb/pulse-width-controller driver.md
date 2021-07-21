@@ -1,7 +1,6 @@
 ---
 title: PWM driver for an on-SoC PWM module 
 description: PWM controller is part of the SoC and memory-mapped to the SoC address space. Write a kernel-mode driver that manipulates the PWM registers and provides access to applications. 
-ms.assetid: 911375A9-6761-45C1-BB5E-79BC0E4409AC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # PWM driver for an on-SoC PWM module
 To provide access to a Pulse width modulation (PWM) controller that is part of the SoC and memory-mapped to the SoC address space, you need to writer a kernel-mode driver. The driver must register the device class interface of the PWM controller so that UWP apps can access the system exposed PWM devices through the PWM WinRT APIs defined in Windows.Devices.Pwm namespace. 
 
-**Note**    If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](https://docs.microsoft.com/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](https://docs.microsoft.com/uwp/api/windows.devices.pwm.provider) namespace. 
+**Note**    If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](/uwp/api/windows.devices.pwm.provider) namespace. 
 
 A PWM device is abstracted into a single controller and one or more pins. Controlling either the controller or the pins is done through the PWM-defined IOCTLs. For example, an LCD display driver sends such requests to  the PWM driver to control the LCD backlight level. 
 
@@ -40,14 +39,14 @@ This topic describes,
 
 **Important APIs**
 
--   [PWM IOCTLs](https://docs.microsoft.com/windows/desktop/DevIO/pwm-api)
+-   [PWM IOCTLs](/windows/desktop/DevIO/pwm-api)
 
 ## About PWM
 PWM describes the basic technique for generating a rectangular pulse wave with modulated pulse width resulting in the variation of the average value of the waveform.  
 
 A PWM waveform can be categorized by 2 parameters: waveform period (T) and duty cycle. Waveform frequency (f) is  the reciprocal of the waveform period f=1/T. Duty cycle describes the proportion of the 'on' or 'Active' time with respect to the regular interval or 'Period' of time; a low duty cycle corresponds to an average of low output power, because the power is off for most of the time. Duty cycle is expressed in percent where 100% being fully on, 0% being fully off, 50% being 'Active' 50% of the time.
 
-![drivers](images/pwm.png)
+![drivers.](images/pwm.png)
 
 
 ## Accessing the system-exposed PWM controller and pins
@@ -98,9 +97,9 @@ The driver should use the provided PWM support routine PwmParsePinPath to parse 
 
 ## Setting device interface properties
 
-To use PWM WinRT APIs from UWP apps, these [device interface properties](https://docs.microsoft.com/previous-versions/ff541409(v=vs.85)) must be set.
+To use PWM WinRT APIs from UWP apps, these [device interface properties](/previous-versions/ff541409(v=vs.85)) must be set.
 
--   [DEVPKEY_DeviceInterface_Restricted](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-deviceinterface-restricted) 
+-   [DEVPKEY_DeviceInterface_Restricted](../install/devpkey-deviceinterface-restricted.md) 
 
     As per the current UWP device access model, setting Restricted device interface property to FALSE is required to give UWP apps access to the PWM device interface.   
 
@@ -324,7 +323,7 @@ Note that there are some important implications to opening and closing a control
 |Is-Opened-For-Write|False| False indicates that the controller is either closed or is opened for read; True indicates that it is opened for write.|
 |Desired-Period| MinimumPeriod| |
 
-![Controller state machine](images/controller-state-machine.png)
+![Controller state machine.](images/controller-state-machine.png)
 
 The controller state machine below is centered around the Is-Opened-For-Write state only. The desired period value is also left out because it does not affect the kind of operation that can be done on the controller. Note that whenever a controller that is opened for write gets closed by the caller that opened it for write, the controller get reset to its defaults (default desired period).
 
@@ -337,7 +336,7 @@ The controller state machine below is centered around the Is-Opened-For-Write st
 |  Active-Duty-Cycle  |       0       |                                                                                                                  |
 |     Is-Started      |     False     |                                 False indicates stopped; True indicates started.                                 |
 
-![Pins state machine](images/pins-state-machine.png)
+![Pins state machine.](images/pins-state-machine.png)
 
 The pin state machine is centered around the combination of the 2 states Is-Opened-For-Write and Is-Started. Other pin states like polarity and active duty cycles are left out because their values don’t affect the kind of operations that can be performed on the pin. Note that whenever a pin that is opened for write get closed by the caller that opened it for write, the pin get rest to its defaults (stopped, default polarity, and active duty cycle). Also note that Set-Polarity transition on a state with Is-Started = true is left out because it is invalid in that state.
 
@@ -484,20 +483,20 @@ PWM IOCTL requests are sent by an application or another driver and are targeted
 
 **Controller IOCTLs**
 
--    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_get_actual_period) 
--    [**IOCTL_PWM_CONTROLLER_GET_INFO**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_get_info) 
--    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_set_desired_period)
+-    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_get_actual_period) 
+-    [**IOCTL_PWM_CONTROLLER_GET_INFO**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_get_info) 
+-    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_set_desired_period)
 
 
 **Pin IOCTLs**
 
--    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_get_active_duty_cycle_percentage)
--    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_set_active_duty_cycle_percentage)
--    [**IOCTL_PWM_PIN_GET_POLARITY**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_get_polarity)
--    [**IOCTL_PWM_PIN_SET_POLARITY**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_set_polarity)
--    [**IOCTL_PWM_PIN_START**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_start)
--    [**IOCTL_PWM_PIN_STOP**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_stop)
--    [**IOCTL_PWM_PIN_IS_STARTED**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_is_started)    
+-    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_get_active_duty_cycle_percentage)
+-    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_set_active_duty_cycle_percentage)
+-    [**IOCTL_PWM_PIN_GET_POLARITY**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_get_polarity)
+-    [**IOCTL_PWM_PIN_SET_POLARITY**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_set_polarity)
+-    [**IOCTL_PWM_PIN_START**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_start)
+-    [**IOCTL_PWM_PIN_STOP**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_stop)
+-    [**IOCTL_PWM_PIN_IS_STARTED**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_is_started)    
 
 For each IOCTL request, the PWM drivr must verify the following: 
 
@@ -537,5 +536,3 @@ IOCTL code | Description|
 |IOCTL_PWM_PIN_START|Starts generation of Pulse Width Modulation (PWM) signal on a pin or channel. To check whether a pin is started, use IOCTL_PWM_PIN_IS_STARTED.<p>Issuing this IOCTL on a pin or channel that is already started has no effect, but does succeed.</p><p>Irp->IoStatus.Status is set to one of the values in the following list.</p>><ul><li>STATUS_SUCCESS</li><li>STATUS_NOT_SUPPORTED</li><li>STATUS_INVALID_DEVICE_REQUEST<li>STATUS_BUFFER_TOO_SMALL</li></ul>|
 |IOCTL_PWM_PIN_STOP|Stops generation of Pulse Width Modulation (PWM) signal on a pin or channel. To check whether a pin is started, use IOCTL_PWM_PIN_IS_STARTED.<p>Issuing this IOCTL on a pin or channel that is already stopped has no effect, but does succeed.</p><p>Irp->IoStatus.Status is set to one of the values in the following list.</p><ul><li>STATUS_SUCCESS</li><li>STATUS_NOT_SUPPORTED</li><li>STATUS_INVALID_DEVICE_REQUEST<li>STATUS_BUFFER_TOO_SMALL</li></ul>|
 |IOCTL_PWM_PIN_IS_STARTED|Retrieves the state of signal generation for a pin or channel. Each pin has a state of started or stopped as a PWM_PIN_IS_STARTED_OUTPUT structure. The started state has a Boolean value of true. The stopped state is false. <p>By default, a pin is stopped when opened and returns to stopped state when closed it is closed or released.</p><p>Irp->IoStatus.Status is set to one of the values in the following list.</p><ul><li>STATUS_SUCCESS</li><li>STATUS_NOT_SUPPORTED</li><li>STATUS_INVALID_DEVICE_REQUEST<li>STATUS_BUFFER_TOO_SMALL</li></ul>|
-
-

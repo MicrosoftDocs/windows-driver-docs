@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_ARTIST
 description: The WIA\_DPC\_ARTIST property contains the name of the owner (which is the current user) of a device. The device uses this property to populate the Artist field in every EXIF image that it captures.
-ms.assetid: 72b10fee-39ba-4d2a-852f-c6ffac9bc0a8
 keywords: ["WIA_DPC_ARTIST Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

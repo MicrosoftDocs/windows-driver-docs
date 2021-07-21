@@ -1,7 +1,6 @@
 ---
 title: Architecture and overview for HID over the I²C transport
 description: This section describes the driver stack for devices that support HID over the I²C transport.
-ms.assetid: 99384729-552C-4847-AA35-E0D413018104
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ This section describes the driver stack for devices that support HID over the I�
 
 The HID I²C driver stack consists of existing and new components supplied by Microsoft, as well as components provided by the I²C silicon manufacturer. The following illustration depicts the stack and these components.
 
-![hid over i2c driver stack](images/hid-i2c-arch.png)
+![hid over i2c driver stack.](images/hid-i2c-arch.png)
 
 Windows 8 provides an interface for low-power, simple buses to communicate effectively with the operating system. This interface is referred to as simple peripheral bus (SPB), and it supports buses like Inter-Integrated Circuit (I²C) and Serial Peripheral Interface (SPI). For additional details about SPB, refer to the Simple Peripheral Buses topic.
 
@@ -38,19 +37,14 @@ The I²C controller driver exposes a Serial Peripheral Bus (SPB) IOCTL interface
 ## The GPIO Controller Driver
 
 
-The General Purpose Input/Output (GPIO) controller delivers interrupts from the device over GPIO. This is often a simple slave component that uses GPIO pins to signal Windows of new data or other events. GPIO can also control the device by approaches other than the I²C channel.
+The General Purpose Input/Output (GPIO) controller delivers interrupts from the device over GPIO. This is often a simple subordinate component that uses GPIO pins to signal Windows of new data or other events. GPIO can also control the device by approaches other than the I²C channel.
 
 ## The Resource Hub
 
 
 Connections on a SoC platform are typically non-discoverable, because there are no standards for device enumeration on the buses that are used on SoC. As a result, these devices must be statically defined in the Advanced Configuration and Power Interface (ACPI). Furthermore, components often have multiple dependencies spanning multiple buses, as opposed to a strict branching tree structure.
 
-The resource hub is a proxy that manages the connections among all devices and bus controllers. The HIDI²C driver uses the resource hub to reroute device-open requests to the appropriate controller driver. For more information about the resource hub, refer to the [Connection IDs for SPB Connected Devices](https://docs.microsoft.com/windows-hardware/drivers/spb/connection-ids-for-spb-connected-peripheral-devices) topic.
+The resource hub is a proxy that manages the connections among all devices and bus controllers. The HIDI²C driver uses the resource hub to reroute device-open requests to the appropriate controller driver. For more information about the resource hub, refer to the [Connection IDs for SPB Connected Devices](../spb/connection-ids-for-spb-connected-peripheral-devices.md) topic.
 
  
-
- 
-
-
-
 

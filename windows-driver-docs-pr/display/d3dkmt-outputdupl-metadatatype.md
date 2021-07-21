@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 662ddca6-628a-48e7-82dd-344f6bcfb1b1
+description: Learn about the D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTPUTDUPL_METADATATYPE enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _D3DKMT_OUTPUTDUPL_METADATATYPE {
@@ -30,15 +28,13 @@ typedef enum _D3DKMT_OUTPUTDUPL_METADATATYPE {
 } D3DKMT_OUTPUTDUPL_METADATATYPE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DKMT_OUTPUTDUPL_METADATATYPE_DIRTY_RECTS"></span><span id="d3dkmt_outputdupl_metadatatype_dirty_rects"></span>**D3DKMT\_OUTPUTDUPL\_METADATATYPE\_DIRTY\_RECTS**
 
 <span id="D3DKMT_OUTPUTDUPL_METADATATYPE_MOVE_RECTS"></span><span id="d3dkmt_outputdupl_metadatatype_move_rects"></span>**D3DKMT\_OUTPUTDUPL\_METADATATYPE\_MOVE\_RECTS**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

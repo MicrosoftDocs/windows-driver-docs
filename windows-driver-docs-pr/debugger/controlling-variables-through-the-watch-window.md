@@ -1,7 +1,6 @@
 ---
 title: Controlling Variables Through the Watch Window
 description: Controlling Variables Through the Watch Window
-ms.assetid: bd857442-fbd7-4c00-9743-6077d38ee38e
 keywords: ["Watch window, global variables", "Watch window, local variables"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
 description: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
-ms.assetid: fc3424fa-3898-4f6a-a611-f81d97db8b1d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ The Windows Vista WIA item tree causes some compatibility problems in applicatio
 
 To simplify compatibility issues between Windows Vista WIA drivers and applications and older WIA drivers and applications, Windows Vista has an internal compatibility layer. This compatibility layer will allow you to use Windows XP (and Windows Me) drivers and applications with Windows Vista drivers and applications, respectively. On Windows Vista, this translation process is transparent to both the drivers and applications. For more information about this compatibility layer, see [WIA Compatibility Layer](wia-compatibility-layer.md).
 
-However, compatibility for Windows Vista drivers and applications on a Windows XP or Windows Me is more complex. Applications that were written for the version of WIA that existed on those legacy operating systems follow a different set of rules and assumptions. WIA scanner item trees in Windows XP and Windows Me combine the scanner's features onto a single item in the item tree. The root item controls the transfer behavior of that child item. For example, a scanner uses the first child item as the programmable data source and the root item property [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-select) (known as WIA\_IPS\_DOCUMENT\_HANDLING\_SELECT in Windows Vista) to switch between flatbed scanning and feeder scanning.
+However, compatibility for Windows Vista drivers and applications on a Windows XP or Windows Me is more complex. Applications that were written for the version of WIA that existed on those legacy operating systems follow a different set of rules and assumptions. WIA scanner item trees in Windows XP and Windows Me combine the scanner's features onto a single item in the item tree. The root item controls the transfer behavior of that child item. For example, a scanner uses the first child item as the programmable data source and the root item property [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](./wia-dps-document-handling-select.md) (known as WIA\_IPS\_DOCUMENT\_HANDLING\_SELECT in Windows Vista) to switch between flatbed scanning and feeder scanning.
 
 This item-overload approach requires applications to keep track of required WIA properties for important WIA items to help classify a scanner's features. If the WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT property exists on the scanner's root item, the application assumes that the scanner supports scanning from a document feeder. If this property is set to FLATBED, the application assumes that the scanner also supports flatbed platen scanning. As a result, older WIA applications will navigate to the root of a new WIA scanner item tree and will not find any properties that tell them the device's capabilities.
 
@@ -27,9 +26,4 @@ This item-overload approach requires applications to keep track of required WIA 
 For more information about compatibility, see [WIA Item Property and Location Changes](wia-item-property-and-location-changes.md).
 
  
-
- 
-
-
-
 

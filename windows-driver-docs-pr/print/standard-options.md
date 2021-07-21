@@ -1,7 +1,6 @@
 ---
 title: Standard Options
-description: Standard options are associated with standard features and are identified by predefined names that the GPD language recognizes. 
-ms.assetid: db4578c1-0954-4c51-a11a-923ab7df2b5b
+description: Standard options are associated with standard features and are identified by predefined names that the GPD language recognizes.
 keywords:
 - printer options WDK Unidrv , standard
 - standard options WDK Unidrv
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 # Standard Options
 
 
-Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit (WDK). 
+Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit (WDK).
 
 > [!IMPORTANT]
 > This resource may not be available in some languages and countries.
@@ -36,7 +35,7 @@ The following table lists the standard option names that are permitted for each 
 		<tr>
 			<td><b>ColorMode</b></td>
 			<td colspan="2">No standard options</td>
-			<td>Yes<br>Also see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/handling-color-formats">Handling Color Formats</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/print/controlling-image-quality">Controlling Image Quality</a>.</td>
+			<td>Yes<br>Also see <a href="/windows-hardware/drivers/print/handling-color-formats">Handling Color Formats</a> and <a href="/windows-hardware/drivers/print/controlling-image-quality">Controlling Image Quality</a>.</td>
 		</tr>
 		<tr>
 			<td><b>Duplex</b></td>
@@ -47,7 +46,7 @@ The following table lists the standard option names that are permitted for each 
 		<tr>
 			<td><b>Halftone</b></td>
 			<td colspan="2">HT_PATSIZE_2x2<br>HT_PATSIZE_2x2_M<br>HT_PATSIZE_4x4<br>HT_PATSIZE_4x4_M<br>HT_PATSIZE_6x6<br>HT_PATSIZE_6x6_M<br>HT_PATSIZE_8x8<br>HT_PATSIZE_8x8_M<br>HT_PATSIZE_10x10<br>HT_PATSIZE_10x10_M<br>HT_PATSIZE_12x12<br>HT_PATSIZE_12x12_M<br>HT_PATSIZE_14x14<br>HT_PATSIZE_14x14_M<br>HT_PATSIZE_16x16<br>HT_PATSIZE_16x16_M<br>HT_PATSIZE_SUPERCELL<br>HT_PATSIZE_SUPERCELL_M<br>HT_PATSIZE_AUTO</td>
-			<td>Yes<br>Also see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/halftoning-with-unidrv">Halftoning with Unidrv</a>.</td>
+			<td>Yes<br>Also see <a href="/windows-hardware/drivers/print/halftoning-with-unidrv">Halftoning with Unidrv</a>.</td>
 		</tr>
 		<tr>
 			<td rowspan="5"><b>InputBin</b></td>
@@ -75,7 +74,7 @@ The following table lists the standard option names that are permitted for each 
 			<td><b>MediaType</b></td>
 			<td>GLOSSY<br>STANDARD<br>TRANSPARENCY</td>
 			<td>PhotographicGlossy<br>Plain<br>Transparency</td>
-			<td>Yes<br>Also see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/controlling-image-quality">Controlling Image Quality</a>.</td>
+			<td>Yes<br>Also see <a href="/windows-hardware/drivers/print/controlling-image-quality">Controlling Image Quality</a>.</td>
 		</tr>
 		<tr>
 			<td><b>Memory</b></td>
@@ -84,7 +83,7 @@ The following table lists the standard option names that are permitted for each 
 		</tr>
 		<tr>
 			<td><b>Orientation</b></td>
-			<td>PORTRAIT<br>LANDSCAPE_CC90<br>LANDSCAPE_CC270<br><br>For more information about the latter two options, see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/specifying-paper-orientation">Specifying Paper Orientation</a>.</td>
+			<td>PORTRAIT<br>LANDSCAPE_CC90<br>LANDSCAPE_CC270<br><br>For more information about the latter two options, see <a href="/windows-hardware/drivers/print/specifying-paper-orientation">Specifying Paper Orientation</a>.</td>
 			<td>Portrait<br>Landscape<br>ReverseLandscape</td>
 			<td>No</td>
 		</tr>
@@ -211,19 +210,24 @@ The following table lists the standard option names that are permitted for each 
 			<td colspan="2">No standard options</td>
 			<td>Yes</td>
 		</tr>
+		<tr>
+			<td><b>NUp</b></td>
+			<td colspan="2">No standard options</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><b>JobPasscode</b></td>
+			<td>OFF<br>ON</td>
+			<td>Off<br>On</td>
+			<td>No</td>
+		</tr>
 	</tbody>
 </table>
-
 
 ## Related topics
 
 
-[Controlling Image Quality](controlling-image-quality.md)  
-[Halftoning with Unidrv](halftoning-with-unidrv.md)  
-[Specifying Paper Orientation](specifying-paper-orientation.md)  
-[Standard features](standard-features.md)  
-
-
-
-
-
+[Controlling Image Quality](controlling-image-quality.md)
+[Halftoning with Unidrv](halftoning-with-unidrv.md)
+[Specifying Paper Orientation](specifying-paper-orientation.md)
+[Standard features](standard-features.md)

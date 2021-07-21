@@ -1,7 +1,6 @@
 ---
 title: UEFI battery charging protocol
 description: UEFI battery charging protocol
-ms.assetid: 5e9ef620-2ca1-4579-a715-19eec8933d57
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -36,7 +35,7 @@ The Windows boot flow requires the battery to be charged to a certain level befo
 
 ### Sequence diagram
 
-![uefi battery charging sequence diagram](images/uefibatterychargingsequencediagram.png)
+![uefi battery charging sequence diagram.](images/uefibatterychargingsequencediagram.png)
 
  
 

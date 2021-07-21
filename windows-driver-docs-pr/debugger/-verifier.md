@@ -1,7 +1,6 @@
 ---
 title: verifier
 description: The verifier extension displays the status of Driver Verifier and its actions.
-ms.assetid: e84993e1-da10-4041-8fc7-7f40806ee454
 keywords: ["Driver Verifier", "verifier Windows Debugging"]
 ms.date: 05/03/2018
 topic_type:
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The **!verifier** extension displays the status of Driver Verifier and its actions.
 
-Driver Verifier is included in Windows. It works on both checked and free builds. For information about Driver Verifier, see the [Driver Verifier](https://go.microsoft.com/fwlink/p/?linkid=120480) topic in the Windows Driver Kit (WDK) documentation.
+Driver Verifier is included in Windows. It works on both checked and free builds. For information about Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).
 
 Syntax
 
@@ -89,7 +88,7 @@ If *Address* is specified, only entries associated with the specified thread add
 If *Address* is specified, only the IRP with the specified address is displayed.
 
 <span id="Bit_11__0x800_"></span><span id="bit_11__0x800_"></span><span id="BIT_11__0X800_"></span>Bit 11 (0x800)  
-(Windows 8.1 and later) Display entries from the fault injection log that is created when you select the [Systematic low resource simulation](https://docs.microsoft.com/windows-hardware/drivers/devtest/systematic-low-resource-simulation) option.
+(Windows 8.1 and later) Display entries from the fault injection log that is created when you select the [Systematic low resource simulation](../devtest/systematic-low-resource-simulation.md) option.
 
 <span id="_______Image______"></span><span id="_______image______"></span><span id="_______IMAGE______"></span> *Image*   
 If *Flags* is used and is not equal to 4, 8, or 0x10, *Image* specifies the name of a driver. *Image* is used to filter the information displayed by *Flags* values of 0x1 and 0x2: only the specified driver is considered. This driver must be currently verified.
@@ -109,11 +108,10 @@ Kdexts.dll
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about [Driver Verifier](https://go.microsoft.com/fwlink/p/?linkid=120480), see the Windows Driver Kit (WDK) documentation.
+For information about [Driver Verifier](../devtest/driver-verifier.md), see the Windows Driver Kit (WDK) documentation.
 
 
-Remarks
--------
+## Remarks
 
 The following example illustrates that on 64-bit versions of Windows, the IRQL transition log is not always complete. The two entries shown are consecutive entries in the log for Processor 2. The first entry shows the IRQL going from 2 to 0. The second entry shows the IRQL going from 2 to 2. Information about how the IRQL got raised from 0 to 2 is missing.
 
@@ -142,8 +140,6 @@ Time stamp:         0000000000000857
     fffff88005f062f2 nsiproxy!NsippGetParameter+0x24a
     fffff88005f086db nsiproxy!NsippDispatchDeviceControl+0xa3
 ```
-
-When using Driver Verifier to test graphics drivers, use the [**!gdikdx.verifier**](-gdikdx-verifier.md) extension instead of **!verifier**.
 
 The values of 4, 8, and 0x20, 0x40, 0x80, and 0x100 are special values for *Flags*. If these values are used, the special arguments listed in the **Parameters** section can be used, and the display will include only the information associated with that flag value.
 
@@ -317,10 +313,4 @@ Pool block a2b1ce98, Size 00000164, Thread a2b1ce98
 ```
 
  
-
- 
-
-
-
-
 

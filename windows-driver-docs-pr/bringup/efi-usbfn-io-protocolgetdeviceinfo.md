@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
 description: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
-ms.assetid: b72f6ba1-7704-4661-8855-1ff88bd08e5a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

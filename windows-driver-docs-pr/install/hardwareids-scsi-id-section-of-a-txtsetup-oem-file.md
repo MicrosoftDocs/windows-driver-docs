@@ -1,7 +1,6 @@
 ---
 title: HardwareIds.scsi.ID Section of a TxtSetup.oem File
 description: A HardwareIds.scsi.ID section specifies the hardware IDs of the devices that a particular mass storage driver supports.
-ms.assetid: 904744d3-524d-42ea-83a8-1fd7e80d07b8
 keywords: ["HardwareIds.scsi.ID Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref

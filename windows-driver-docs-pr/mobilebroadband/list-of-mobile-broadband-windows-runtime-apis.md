@@ -1,7 +1,6 @@
 ---
 title: Overview of mobile broadband Windows Runtime APIs
 description: Overview of mobile broadband Windows Runtime APIs
-ms.assetid: 45ec97c4-1a58-48a8-ad50-1cd8fcc4763f
 ms.date: 07/02/2019
 ms.localizationpriority: medium
 ---
@@ -75,7 +74,7 @@ Because it has methods that can be used to get personally identifiable informati
     <DeviceCapability Name="BFCD56F7-3943-457F-A312-2E19BB6DC648" />
     ```
 
-    For more information on the **&lt;Capabilities&gt;** element, see [App Manifest File For Windows 8](https://docs.microsoft.com/previous-versions/windows/apps/ff769509(v=vs.105)).
+    For more information on the **&lt;Capabilities&gt;** element, see [App Manifest File For Windows 8](/previous-versions/windows/apps/ff769509(v=vs.105)).
 
 **Note**  
 Applications that are not UWP apps (for example, Microsoft Win32 services or desktop apps) have unrestricted access to the Mobile Broadband Account API. This is because these applications can use existing Win32 and Component Object Model (COM) APIs to get full access to the mobile broadband network. These APIs cannot be used from UWP apps.
@@ -108,14 +107,7 @@ Apps that are not UWP apps (for example, Win32 services or desktop apps) have ac
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
+[Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: XPSDrv Printer Drivers
 description: XPSDrv Printer Drivers
-ms.assetid: 9e61cb21-4e02-48dc-b291-576d37bb640d
 keywords:
 - XPSDrv printer drivers WDK , about XPS
 - printer drivers WDK , XPSDrv

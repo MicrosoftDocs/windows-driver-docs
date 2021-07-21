@@ -1,7 +1,6 @@
 ---
 title: General discard reasons
 description: This section describes General discard reasons for Windows Filtering Platform callout drivers.
-ms.assetid: 8b2d9028-a32e-42bf-b1ba-ab029bf47d71
 keywords:
 - General discard reasons network drivers
 ms.date: 11/09/2017

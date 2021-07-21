@@ -1,7 +1,6 @@
 ---
 title: Example Usage of WIA Item Flags and Categories
 description: Example Usage of WIA Item Flags and Categories
-ms.assetid: 8c9f7d85-6c84-4df9-9db3-6554d7eddf93
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,31 +17,31 @@ This section depicts scanner and camera item trees in Windows Vista, along with 
 
 The following figure shows a camera item tree and the flags in the WIA\_ITEM\_FLAGS property that must be set.
 
-![diagram illustrating a camera tree with wia item flags](images/art-film-tree1.png)
+![diagram illustrating a camera tree with wia item flags.](images/art-film-tree1.png)
 
 In the preceding figure, the tree on the left represents the camera item tree. The balloons on the right contain the WIA item flags that such a device would need to use.
 
 The following diagram shows a camera item tree and the category in the WIA\_IPA\_ITEM\_CATEGORY property that must be set.
 
-![diagram illustrating a camera tree showing a category](images/art-film-tree2.png)
+![diagram illustrating a camera tree showing a category.](images/art-film-tree2.png)
 
 In the preceding figure, the tree on the left represents the camera item tree. The balloon on the right contains the category that such a device would need to use.
 
 The following diagram shows the item tree for a scanner with a document feeder and a film scanner, and the flags in the WIA\_ITEM\_FLAGS property that must be set.
 
-![diagram illustrating the item tree for a scanner with a document feeder and a film scanner, and the wia item flags](images/art-flatbed-tree1.png)
+![diagram illustrating the item tree for a scanner with a document feeder and a film scanner, and the wia item flags.](images/art-flatbed-tree1.png)
 
 In the preceding figure, the tree on the left represents the scanner item tree. The balloons on the right contain the WIA item flags that such a device would need to use.
 
 The following figure shows the item tree for a scanner, and the categories in the WIA\_IPA\_ITEM\_CATEGORY property that must be set.
 
-![diagram illustrating the item tree for a scanner, and the categories that must be set](images/art-flatbed-tree2.png)
+![diagram illustrating the item tree for a scanner, and the categories that must be set.](images/art-flatbed-tree2.png)
 
 In the preceding figure, the tree on the left represents the scanner item tree. The balloons on the right contain the categories in the WIA\_IPA\_ITEM\_CATEGORY property that such a device must set.
 
-For a complete list of all categories defined by WIA and information about valid WIA item flags for each category, see [**WIA\_IPA\_ITEM\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-category).
+For a complete list of all categories defined by WIA and information about valid WIA item flags for each category, see [**WIA\_IPA\_ITEM\_CATEGORY**](./wia-ipa-item-category.md).
 
-For a complete list of all WIA item flags see [**WIA\_IPA\_ITEM\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-flags).
+For a complete list of all WIA item flags see [**WIA\_IPA\_ITEM\_FLAGS**](./wia-ipa-item-flags.md).
 
 The following code example demonstrates how an application could use the combination of the WIA\_IPA\_ITEM\_FLAGS and WIA\_IPA\_ITEM\_CATEGORY properties for classifying a WIA item found in the WIA item tree.
 
@@ -108,9 +107,4 @@ if (hr == S_OK)
 ```
 
  
-
- 
-
-
-
 

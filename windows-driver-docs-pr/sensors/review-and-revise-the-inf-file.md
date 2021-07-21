@@ -1,7 +1,6 @@
 ---
 title: Review the INX file
 description: This topics shows you how to revise the INF file for the sample sensor driver, to make it suitable for installing your sensor driver on your target device.
-ms.assetid: 1D326C5F-5B69-4C5C-AE52-14153DF964E9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ Although you must review the INX file in its entirety, these steps will point ou
    ClassGuid   = {5175D334-C371-4806-B3BA-71FD53C9258D}
    ```
 
-Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](../install/system-defined-device-setup-classes-available-to-vendors.md).
 
 2. Find the \[ADXL345Acc\_Device.NT$ARCH$\] section.
    ```cpp
@@ -71,6 +70,3 @@ HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"    ; Al
 ## Related topics
 
 [Creating a mobile package](creating-a-mobile-package.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: ElementChanges element
 description: The required ElementChanges element contains the changes to the ScannerDescription, ScannerConfiguration, DefaultScanTicket, and vendor-extended elements.
-ms.assetid: d6f1d188-beb6-4ea3-a362-de64d8d8dacb
 keywords: ["ElementChanges element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ElementChanges** element contains the changes to the [**ScannerDescription**](scannerdescription.md), [**ScannerConfiguration**](scannerconfiguration.md), [**DefaultScanTicket**](defaultscanticket.md), and vendor-extended elements.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ElementChanges>
@@ -27,8 +25,7 @@ Usage
 </wscn:ElementChanges>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -76,8 +73,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must include an **ElementChanges** element when it generates a [**ScannerElementsChangeEvent**](scannerelementschangeevent.md) element. Each child element of **ElementChanges** must contain all of its required child elements. If an optional element is missing from the returned XML, the WSD Scan Service is indicating to the client that the service no longer supports that element.
 

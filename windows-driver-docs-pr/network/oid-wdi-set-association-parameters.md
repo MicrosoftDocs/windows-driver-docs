@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_ASSOCIATION_PARAMETERS
 description: OID_WDI_SET_ASSOCIATION_PARAMETERS specifies parameters that the adapter can use during association to a set of BSSIDs.
-ms.assetid: 86a6cc62-eaa4-435c-af6c-b76591d92c00
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista
@@ -27,7 +26,7 @@ This command replaces the previously configured list of BSSID-specific associati
 
 | TLV                                                                     | Multiple TLV instances allowed | Optional | Description                     |
 |-------------------------------------------------------------------------|--------------------------------|----------|---------------------------------|
-| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-bss-entry) | X                              |          | The BSS entries and parameters. |
+| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](./wdi-tlv-connect-bss-entry.md) | X                              |          | The BSS entries and parameters. |
 
  
 
@@ -36,8 +35,7 @@ This command replaces the previously configured list of BSSID-specific associati
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -61,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

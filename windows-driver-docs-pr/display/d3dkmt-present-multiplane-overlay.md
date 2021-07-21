@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_PRESENT\_MULTIPLANE\_OVERLAY structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 2526ccce-826a-4e8f-ab15-639510b1d5cf
+description: Learn about the D3DKMT\_PRESENT\_MULTIPLANE\_OVERLAY structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_PRESENT_MULTIPLANE_OVERLAY structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct D3DKMT_PRESENT_MULTIPLANE_OVERLAY {
@@ -41,8 +39,7 @@ typedef struct D3DKMT_PRESENT_MULTIPLANE_OVERLAY {
 } D3DKMT_PRESENT_MULTIPLANE_OVERLAY;
 ```
 
-Members
--------
+## Members
 
 **hDevice**
 
@@ -66,8 +63,7 @@ Members
 
 **Duration**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

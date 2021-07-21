@@ -1,7 +1,6 @@
 ---
 title: Encoder Installation and Registration
 description: Encoder Installation and Registration
-ms.assetid: 6ce0c504-977a-4db5-b5ee-128b69ce8eba
 keywords:
 - kernel streaming categories WDK encoder
 - encoder devices WDK AVStream
@@ -161,12 +160,7 @@ KSProxy.CLSID="17CCA71B-ECD7-11D0-B908-00A0C9223196"
 MyEncoderDeviceFriendlyName="My Encoder Device"
 ```
 
-**Note:** The GUID specified for *KSNAME\_Filter* must match the **ReferenceGuid** member you specified in the [**KSFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor) structure that describes your filter.
+**Note:** The GUID specified for *KSNAME\_Filter* must match the **ReferenceGuid** member you specified in the [**KSFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor) structure that describes your filter.
 
  
-
- 
-
-
-
 

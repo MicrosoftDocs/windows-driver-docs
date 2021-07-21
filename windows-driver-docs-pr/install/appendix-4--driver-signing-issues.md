@@ -1,7 +1,6 @@
 ---
 title: Appendix 4 Driver Signing Issues
 description: Two known driver signing issues are described below.
-ms.assetid: EC244022-A02B-4AAD-93EE-B9AE3E72A674
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ Every new release of Windows and subsequently in the released Service Packs, roo
 
 There is a known bug for Windows 7 x64 OS, when a catalog file (.cat) is signed using a new VeriSign released signing certificate which uses the SHA256 has algorithm. If you open the signed cat file and view signature and select the Details tab you will notice the following:
 
-![screen shot showing the signature's hash algorithm](images/tutorialcertsignaturehashalg.png)
+![screen shot showing the signature's hash algorithm.](images/tutorialcertsignaturehashalg.png)
 
 To resolve the issue, you may ask VeriSign to provide a replacement certificate at no cost signed with the SHA1 hash algorithm.
 
@@ -33,7 +32,7 @@ Signtool sign /fd sha256 /ac C:\MyCrossCert\Crosscert.cer /s my /n “MyCompany 
 
 Where XX...XX is the hash of the certificate you are using for the secondary signature. Add /tr to timestamp signing.
 
-**Note**  Please review Microsoft Security Advisory ([2880823](https://docs.microsoft.com/security-updates/SecurityAdvisories/2016/2880823)) "Deprecation of SHA-1 Hashing Algorithm for Microsoft Root Certificate Program" which describes a policy change wherein Microsoft will no longer allow root certificate authorities to issue X.509 certificates using the SHA-1 hashing algorithm for the purposes of SSL and code signing after January 1, 2016.
+**Note**  Please review Microsoft Security Advisory ([2880823](/security-updates/SecurityAdvisories/2016/2880823)) "Deprecation of SHA-1 Hashing Algorithm for Microsoft Root Certificate Program" which describes a policy change wherein Microsoft will no longer allow root certificate authorities to issue X.509 certificates using the SHA-1 hashing algorithm for the purposes of SSL and code signing after January 1, 2016.
 
  
 
@@ -42,10 +41,4 @@ Use of SHA1 certificate will be deprecated by Microsoft starting from January 1,
 Windows will stop accepting SHA1 code signing certificates without time stamps after 1 January 2016.
 
  
-
- 
-
-
-
-
 

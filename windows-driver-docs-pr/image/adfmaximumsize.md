@@ -1,7 +1,6 @@
 ---
 title: ADFMaximumSize element
 description: The required ADFMaximumSize element specifies the largest size document that an end user can scan on the front or back side of the automatic document feeder (ADF).
-ms.assetid: 8304bbae-e0ed-40f3-b3aa-2a818664b76a
 keywords: ["ADFMaximumSize element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ADFMaximumSize** element specifies the largest size document that an end user can scan on the front or back side of the automatic document feeder (ADF).
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ADFMaximumSize>
@@ -27,8 +25,7 @@ Usage
 </wscn:ADFMaximumSize>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -76,8 +73,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The [**Width**](width.md) child element specifies the maximum size of media that the ADF supports in the fast scan direction. The [**Height**](height.md) child element specifies the maximum size of media that the ADF supports in the slow scan direction.
 

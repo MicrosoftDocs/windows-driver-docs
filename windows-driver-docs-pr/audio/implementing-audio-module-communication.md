@@ -5,8 +5,7 @@ ms.date: 07/07/2017
 ms.localizationpriority: medium
 ---
 
-Implementing Audio Module Communication
-========================================================================================
+# Implementing Audio Module Communication
 
 An Audio Module	is a distinct piece of audio processing logic performing a relatively atomic function. An audio module may reside in the audio driver or in audio DSP. An example audio module would be DSP-based audio processing.
 
@@ -14,21 +13,19 @@ Starting in Windows 10, release 1703, there are both  APIs and DDIs to support c
 
 This topic provides information on Implementing Audio Module Communication in the kernel device driver. 
 
-For information on how to send commands and receive change notifications from audio device modules using a UWP app, see [Configure and query audio device modules](https://docs.microsoft.com/windows-hardware/drivers/audio/configure-and-query-audiodevicemodules).
+For information on how to send commands and receive change notifications from audio device modules using a UWP app, see [Configure and query audio device modules](./configure-and-query-audiodevicemodules.md).
 
 ## Why Use Audio Modules?
 
 OEMs typically bundle a configuration application on their system that allows the customer to control aspects of this audio system and tune it to their preference. The audio subsystem can contain various components such as on-host audio processing objects, hardware DSP processing, and specialized hardware such as a smart amp (all in addition to the audio codec itself). In most cases these components are created and sold by different vendors. Historically, IHVs have created their own private APIs to integrate with one another and send information between the individual components. Existing WIN32 configuration applications then would leverage these private APIs.
 
-The [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide), provides a set of APIs that enable a single application to run across a breadth of devices. UWP also introduced a new look-and-feel that has become the customer expectation for applications running on Windows 10. 
+The [Universal Windows Platform (UWP)](/windows/uwp/get-started/universal-application-platform-guide), provides a set of APIs that enable a single application to run across a breadth of devices. UWP also introduced a new look-and-feel that has become the customer expectation for applications running on Windows 10. 
 So many OEMs would like to build their audio configuration applications on UWP. However, a core security feature of UWP (the AppContainer sandbox) prevents communication from an application to other components in the audio subsystem. This renders the private APIs previously used by configuration apps inaccessible in UWP. 
 
 Starting in Windows 10, release 1703, the Audio Modules UWP API allows the configuration application and user mode components to communicate with modules in the kernel and hardware layer that are discoverable through a new KS property set.
-Audio IHV and ISVs can write applications and services that can communicate with their hardware modules using a well-defined interface provided by Windows. For more information about the audio modules API, see [Windows.Media.Devices Namespace](https://docs.microsoft.com/uwp/api/Windows.Media.Devices)
+Audio IHV and ISVs can write applications and services that can communicate with their hardware modules using a well-defined interface provided by Windows. For more information about the audio modules API, see [Windows.Media.Devices Namespace](/uwp/api/Windows.Media.Devices)
 
-
-<span id="Audio_Module_Definitions"></span>Audio Module Definitions
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Audio Module Definitions
 These definitions are specific to audio modules.
 
 Term | Definition
@@ -36,33 +33,30 @@ Term | Definition
 Audio Module	| A distinct piece of audio processing logic performing a relatively atomic function. May reside in the audio driver or in audio DSP. An example audio module would be an Audio Processing Object (APO).
 
 
-<span id="Common_Definitions"></span>Common Audio Definitions
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Common Audio Definitions
 These definitions are typically used when working with audio drivers.
 
-Term | Definition
------------- | -------------
-OEM	| Original Equipment Manufacturer
-IHV	| Independent Hardware Vendor
-ISV	| Independent Software Vendor
- |
-HSA	| Hardware Support Application
-UWP	| Universal Windows Platform
- | 
-APO	| Audio Processing Object
-DSP	| Digital Signal Processing
+| Term | Definition                      |
+|------|---------------------------------|
+| OEM  | Original Equipment Manufacturer |
+| IHV  | Independent Hardware Vendor     |
+| ISV  | Independent Software Vendor     |
+| HSA  | Hardware Support Application    |
+| UWP  | Universal Windows Platform      |
+| APO  | Audio Processing Object         |
+| DSP  | Digital Signal Processing       |
 
-<span id="Architecture"></span>Architecture 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Architecture 
+
 Audio Modules puts in place a Windows supported mechanism to send messages between user mode and kernel mode audio components. An important distinction is that Audio Modules standardizes the transport pipeline. It does not establish the communication protocol over that transport and relies on the ISVs and IHVs to define the protocol. The intent is to allow existing third party designs to migrate easily to Audio Modules with very little changes.
 
-<Diagram Pending>
+\<Diagram Pending\>
 
 The Audio Module API provides access to the modules through two different targeting methods: the KS wave filter and an initialized KS pin (stream). The placement and access to specific modules is implementation specific.
 
 HSAs and other applications will only be able to access the modules available through the filter handle. The individual APOs loaded on a stream are the only objects that will have access to the stream targeted audio modules.
 
-For more information about APOs, see [Windows Audio Processing Objects](https://docs.microsoft.com/windows-hardware/drivers/audio/windows-audio-processing-objects).
+For more information about APOs, see [Windows Audio Processing Objects](./windows-audio-processing-objects.md).
 
 ### Sending Commands
 
@@ -78,12 +72,11 @@ The Audio Modules APIs define how to enumerate and send commands to the modules.
 
 The recommended approach is exposing a global driver module. The global driver module would handle custom commands for these topology specific requests.
 
-<span id="Audio_Module_DDIs"></span>Audio Module DDIs
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Audio Module DDIs
  
 **Kernel Streaming Audio Module Properties** 
 
-A new KS Property Set, identified by [KSPROPSETID_AudioModule](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audiomodule), has been defined for three properties specific to audio modules. 
+A new KS Property Set, identified by [KSPROPSETID_AudioModule](./kspropsetid-audiomodule.md), has been defined for three properties specific to audio modules. 
 
 A PortCls miniport driver needs to directly handle the response for each property as no helper interface is provided.
 
@@ -104,7 +97,7 @@ typedef enum {
 
 ### Audio Module Descriptors
 
-Support for the [KSPROPERTY_AUDIOMODULE_DESCRIPTORS](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-descriptors) property identifies the driver as being Audio Module aware. The property will be queried through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call. [KSAUDIOMODULE_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) has been defined to describe each module within the audio hardware. An array of these descriptors is returned in response to this request
+Support for the [KSPROPERTY_AUDIOMODULE_DESCRIPTORS](./ksproperty-audiomodule-descriptors.md) property identifies the driver as being Audio Module aware. The property will be queried through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call. [KSAUDIOMODULE_DESCRIPTOR](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) has been defined to describe each module within the audio hardware. An array of these descriptors is returned in response to this request
 
 #### ksmedia.h:
 
@@ -120,11 +113,11 @@ typedef struct _KSAUDIOMODULE_DESCRIPTOR
     WCHAR   Name[AUDIOMODULE_MAX_NAME_SIZE];
 } KSAUDIOMODULE_DESCRIPTOR, *PKSAUDIOMODULE_DESCRIPTOR;
 ```
-For more information, see [KSAUDIOMODULE_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor).
+For more information, see [KSAUDIOMODULE_DESCRIPTOR](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor).
 
 ### Audio Module Command
 
-Support for the [KSPROPERTY_AUDIOMODULE_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-command) property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property) in the input buffer to send custom commands.
+Support for the [KSPROPERTY_AUDIOMODULE_COMMAND](./ksproperty-audiomodule-command.md) property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [KSAUDIOMODULE_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the [KSAUDIOMODULE_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property) in the input buffer to send custom commands.
 
 #### ksmedia.h:
 
@@ -139,18 +132,18 @@ typedef struct _KSPAUDIOMODULE_PROPERTY
 } KSAUDIOMODULE_PROPERTY, *PKSPAUDIOMODULE_PROPERTY;
 
 ```
-For more information, see [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property).
+For more information, see [KSAUDIOMODULE_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property).
 
 
 ### Audio Module Notification Device ID
 
-Support for the [KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-notification-device-id) is required to enable the miniport to signal notifications and pass information to Audio Module clients. The lifetime of this ID is tied to the lifetime of the audio device being exposed and active to the Windows Audio stack. The property can be sent through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call.
+Support for the [KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID](./ksproperty-audiomodule-notification-device-id.md) is required to enable the miniport to signal notifications and pass information to Audio Module clients. The lifetime of this ID is tied to the lifetime of the audio device being exposed and active to the Windows Audio stack. The property can be sent through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call.
 
-For more information, see [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property).
+For more information, see [KSAUDIOMODULE_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property).
 
 
-<span id="PortCls_Helper"></span>PortCls Helper - Audio Module Notifications
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### PortCls Helper - Audio Module Notifications
+
  A new port interface has been added to assist driver developers to send notifications to Audio Module clients. 
 
 #### PortCls.h:
@@ -208,23 +201,19 @@ typedef struct _KSAUDIOMODULE_NOTIFICATION {
 ```
 For more information, see:
 
- [IPortClsNotifications](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsnotifications)
+ [IPortClsNotifications](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsnotifications)
 	
- [IPortClsNotifications::AllocNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-allocnotificationbuffer)
+ [IPortClsNotifications::AllocNotificationBuffer](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-allocnotificationbuffer)
 
- [IPortClsNotifications::FreeNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-freenotificationbuffer)	
+ [IPortClsNotifications::FreeNotificationBuffer](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-freenotificationbuffer)	
 	
- [IPortClsNotifications::SendNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-sendnotification)	
+ [IPortClsNotifications::SendNotificationBuffer](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-sendnotification)	
 
 ### Calling Sequence
 
 The miniport will call into their port to create and send the notification.  The general call sequence is shown in this diagram.
 
-![AudioIPortClsNotifications Calling Sequence](images/AudioIPortClsNotificationsCallingSequenceDiagram.png)
-
-
-
- 
+![AudioIPortClsNotifications Calling Sequence.](images/AudioIPortClsNotificationsCallingSequenceDiagram.png)
 
 
 

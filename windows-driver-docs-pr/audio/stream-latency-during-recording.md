@@ -1,7 +1,6 @@
 ---
 title: Stream Latency During Recording
 description: Stream Latency During Recording
-ms.assetid: b9391b34-acd8-4434-b00c-48bbbc0b6647
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ While an audio record stream is in the Run state, the role of the WaveRT port dr
 
 In the following diagram, the record and read positions continually progress from left to right as the stream flows through the buffer. When the record or the read position reaches the end of the buffer, it wraps around to the start of the buffer.
 
-![diagram illustrating the latency of a recording stream](images/wavert-record.png)
+![diagram illustrating the latency of a recording stream.](images/wavert-record.png)
 
 The preceding diagram identifies the *Record Position* as the buffer location of the sample that the audio device is currently recording (capturing from the microphone through the analog-to-digital converter, or ADC). Note that the record position is the future buffer location into which the audio device writes the sample after it passes through the FIFO. The *Read Position* is the buffer position from which the audio engine reads the next sample.
 
@@ -29,14 +28,9 @@ Although the client can set up a timer to periodically activate its buffer-readi
 
 By having the audio device periodically notify the audio engine, the client can make the latency smaller than would otherwise be practical.
 
-The client (typically the audio engine) can obtain a summary of the delays that the audio device contributes to stream latency by sending a [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-rtaudio-hwlatency) request to the WaveRT port driver.
+The client (typically the audio engine) can obtain a summary of the delays that the audio device contributes to stream latency by sending a [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](./ksproperty-rtaudio-hwlatency.md) request to the WaveRT port driver.
 
-After the client determines the amount of separation to maintain between the record and read positions, the client monitors changes in the record position to determine how much the read position should lag. In Windows Server 2008 and later operating systems, the client sends out a [**KSPROPERTY\_AUDIO\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-position) or a [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-rtaudio-positionregister) property request to determine the record position. The latter request method is more efficient because it allows the client to read the record position directly without the transition to a kernel-mode routine for the information.
-
- 
+After the client determines the amount of separation to maintain between the record and read positions, the client monitors changes in the record position to determine how much the read position should lag. In Windows Server 2008 and later operating systems, the client sends out a [**KSPROPERTY\_AUDIO\_POSITION**](./ksproperty-audio-position.md) or a [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](./ksproperty-rtaudio-positionregister.md) property request to determine the record position. The latter request method is more efficient because it allows the client to read the record position directly without the transition to a kernel-mode routine for the information.
 
  
-
-
-
 

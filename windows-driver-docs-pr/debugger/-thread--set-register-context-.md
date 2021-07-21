@@ -1,7 +1,6 @@
 ---
 title: .thread (Set Register Context)
 description: The .thread command specifies which thread will be used for the register context.
-ms.assetid: 577276b7-a6c4-427e-ada1-10dbb62ebd5c
 keywords: ["Set Register Context (.thread) command", "context, Set Register Context (.thread) command", "registers, Set Register Context (.thread) command", "call stack, Set Register Context (.thread) command", ".thread (Set Register Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,8 +70,7 @@ The address of the thread. If this is omitted or zero, the thread context is res
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 Generally, when you are doing kernel debugging, the only visible registers are the ones associated with the current thread.
 

@@ -1,7 +1,6 @@
 ---
 title: Driver Features
 description: Driver Features
-ms.assetid: 56efebda-970f-4885-9c5f-1eac97aecfdd
 ms.date: 01/30/2019
 ms.localizationpriority: medium
 ---
@@ -233,7 +232,7 @@ The following table lists the currently supported driver features. Each row in t
     When supported, setting this feature's option to "False" causes changes to the following EMF-related features:
 
     1. If **%PagePerSheet** is "Booklet", it will be changed to "1".
-    2. If Collate is set to "True" (which can be set either directly in the public portion of the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure or by calling **SetOptions** on the **\*Collate** PPD feature), but the Collate feature is not currently available, Collate will be set to "False".
+    2. If Collate is set to "True" (which can be set either directly in the public portion of the [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure or by calling **SetOptions** on the **\*Collate** PPD feature), but the Collate feature is not currently available, Collate will be set to "False".
     3. If **%PageOrder** is the opposite of the printer's current output order setting, **%PageOrder** will be reversed to the printer's value.
 
 4. This feature is supported only when spooler EMF spooling is enabled.

@@ -1,7 +1,6 @@
 ---
 title: Starting a BDA Minidriver
 description: Starting a BDA Minidriver
-ms.assetid: c71e1483-756c-4e98-a413-64ff02ee4a9b
 keywords:
 - BDA minidrivers WDK AVStream , starting
 - starting BDA minidrivers WDK AVStream
@@ -15,11 +14,11 @@ ms.localizationpriority: medium
 
 
 
-When a BDA device starts operating, the Plug and Play (PnP) manager dispatches [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device). The AVStream class in turn calls the start routine of the BDA minidriver associated with the BDA device. This start routine retrieves information about the device from the registry, sets information about the device, and then calls the [**BdaCreateFilterFactory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacreatefilterfactory) support function to:
+When a BDA device starts operating, the Plug and Play (PnP) manager dispatches [**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md). The AVStream class in turn calls the start routine of the BDA minidriver associated with the BDA device. This start routine retrieves information about the device from the registry, sets information about the device, and then calls the [**BdaCreateFilterFactory**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacreatefilterfactory) support function to:
 
--   Create the filter factory for the device from the initial filter descriptor ([**KSFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor)) for the device. The initial filter descriptor references dispatch and automation tables for the filter and input pins. See [Creating Dispatch Tables](creating-dispatch-tables.md) and [Defining Automation Tables](defining-automation-tables.md) for more information.
+-   Create the filter factory for the device from the initial filter descriptor ([**KSFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor)) for the device. The initial filter descriptor references dispatch and automation tables for the filter and input pins. See [Creating Dispatch Tables](creating-dispatch-tables.md) and [Defining Automation Tables](defining-automation-tables.md) for more information.
 
--   Associate the filter factory with a [**BDA\_FILTER\_TEMPLATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_bda_filter_template) structure. This structure references the template filter descriptor for the device and the list of possible pairs of input and output pins. This descriptor and list in turn reference:
+-   Associate the filter factory with a [**BDA\_FILTER\_TEMPLATE**](/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_bda_filter_template) structure. This structure references the template filter descriptor for the device and the list of possible pairs of input and output pins. This descriptor and list in turn reference:
     -   Static template structures that a network provider can use to determine the topology of a BDA filter.
     -   Nodes and pins for a BDA filter along with possible ways to connect the filter.
     -   Routines that a network provider can use to create and close a filter instance.
@@ -183,9 +182,4 @@ BDA_PIN_PAIRING TemplateTunerPinPairings[] =
 ```
 
  
-
- 
-
-
-
 

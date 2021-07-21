@@ -1,7 +1,6 @@
 ---
 title: KDbgCtrl Command-Line Options
 description: The KDbgCtrl command line uses the following syntax
-ms.assetid: 0367a09d-c475-4aeb-8f88-47d51ec7e9d5
 keywords: ["KDbgCtrl Command-Line Options Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,6 +23,8 @@ kdbgctrl [-e|-d|-c] [-ea|-da|-ca] [-eu|-du|-cu] [-eb|-db|-cb] [-sdb Size | -cdb]
 kdbgctrl -cx 
 
 kdbgctrl -td ProcessID File 
+
+kdbgctrl -sd {active|automatic|full|kernel|mini}
 
 kdbgctrl -? 
 ```
@@ -107,6 +108,9 @@ Determines the current Full Kernel Debugging setting and returns an appropriate 
 
 <span id="-td_ProcessID_File"></span><span id="-td_processid_file"></span><span id="-TD_PROCESSID_FILE"></span>**-td** *ProcessID* *File*  
 Obtains a kernel triage dump file. Enter the process ID and a name for the dump file.
+
+<span id="-sd_Type"></span> **-sd {active\|automatic\|full\|kernel\|mini}**   
+Sets the dump type to be collected in the event of a system crash and reloads the crash dump stack. See [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md) for more info on dump types.
 
 <span id="_______-_______"></span> **-?**   
 Displays command-line help for KDbgCtrl.

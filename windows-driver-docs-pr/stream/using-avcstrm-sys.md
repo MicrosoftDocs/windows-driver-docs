@@ -1,7 +1,6 @@
 ---
 title: Using Avcstrm.sys
 description: Using Avcstrm.sys
-ms.assetid: 53430526-ee24-4081-b220-4089d60aec94
 keywords:
 - filter drivers WDK AV/C streaming
 - AV/C WDK , Stream filter driver

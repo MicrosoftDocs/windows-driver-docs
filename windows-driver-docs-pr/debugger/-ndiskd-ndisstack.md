@@ -1,7 +1,6 @@
 ---
 title: ndiskd.ndisstack
 description: The !ndiskd.ndisstack extension displays a debug stack trace.
-ms.assetid: 939DEC34-3D20-41FE-B5A8-DDF810195B07
 keywords: ["ndiskd.ndisstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 The **!ndiskd.ndisstack** extension displays a debug stack trace.
 
 ```console
-!ndiskd.ndisstack [-handle <x>] [-statistics] 
+!ndiskd.ndisstack -handle <x> [-statistics]
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -42,22 +41,15 @@ Ndiskd.dll
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
  
-
- 
-
-
-
-
-
 

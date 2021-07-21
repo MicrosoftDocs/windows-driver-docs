@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_ORDER
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_ORDER property is used to configure the order in which the scan and imprinting/endorsing operations are to be executed relative to each other. The WIA minidriver creates and maintains this property.
-ms.assetid: DE146E16-C956-497D-BAF5-F7CE6FAF382B
 keywords: ["WIA_IPS_PRINTER_ENDORSER_ORDER Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the [**WIA\_IPS\_PREVIEW\_TYPE**](wia-ips-preview-type.md) property.
 
@@ -61,8 +59,7 @@ The following table describes the constants that are valid with the [**WIA\_IPS\
 
 This property must be supported by all Imprinter/Endorser data source items. There is no required default value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

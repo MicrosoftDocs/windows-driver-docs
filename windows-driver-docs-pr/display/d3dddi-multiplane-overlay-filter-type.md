@@ -1,7 +1,6 @@
 ---
 title: D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_TYPE enumeration
-description: Reserved for system use. Do not use it in your driver.Note  This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header. .
-ms.assetid: ceca0ed8-7d46-45e1-86cb-3d0506d26328
+description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_TYPE enumeration, which is reserved for system use. Do not use it in your driver.
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,13 +19,12 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-&gt; \[!Note\]
-&gt;  This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header.
+> [!NOTE]
+> This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header.
 
  
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE {
@@ -38,8 +36,7 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE {
 } D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DDDI_MULTIPLANE_OVERLAY_FILTER_CAPS_BRIGHTNESS"></span><span id="d3dddi_multiplane_overlay_filter_caps_brightness"></span>**D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_CAPS\_BRIGHTNESS**
 
@@ -51,8 +48,7 @@ Constants
 
 <span id="D3DDDI_MULTIPLANE_OVERLAY_FILTER_CAPS_STRETCH_QUALITY"></span><span id="d3dddi_multiplane_overlay_filter_caps_stretch_quality"></span>**D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_CAPS\_STRETCH\_QUALITY**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

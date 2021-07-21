@@ -1,7 +1,6 @@
 ---
 title: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 description: Security Issues with NDIS Virtual Machine (VM) Shared Memory
-ms.assetid: 42b903b0-6729-4314-9305-9345fff9b2ba
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -52,7 +51,7 @@ To address this security issue, when using VM shared memory for a VM queue, the 
 
 The following illustration shows the relationships for the network data structures when the incoming data is split into lookahead and post-lookahead shared memory buffers.
 
-![diagram illustrating vmq packet structures with lookahead and post-lookahead data](images/vmqpacket.png)
+![diagram illustrating vmq packet structures with lookahead and post-lookahead data.](images/vmqpacket.png)
 
 The summary requirements for VMQ shared memory are as follows:
 
@@ -78,21 +77,15 @@ Starting with Windows Server 2012, the VSP does not allocate shared memory from
 
 The following points apply to VMQ miniport drivers that run on Windows Server 2012 and later versions of Windows:
 
--   For NDIS 6.20 VMQ miniport drivers, no change is required. However, when the VSP allocates a VM queue by issuing an OID (object identifier) method request of [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-allocate-queue), it will set the **LookaheadSize** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure to zero. This will force a miniport driver to not split the packet into pre-lookahead and post-lookahead buffers.
+-   For NDIS 6.20 VMQ miniport drivers, no change is required. However, when the VSP allocates a VM queue by issuing an OID (object identifier) method request of [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](./oid-receive-filter-allocate-queue.md), it will set the **LookaheadSize** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure to zero. This will force a miniport driver to not split the packet into pre-lookahead and post-lookahead buffers.
 
--   Starting with NDIS 6.30, VMQ miniport drivers must not advertise support for splitting packet data into pre-lookahead and post-lookahead buffers. When a miniport driver registers its VMQ capabilities, it must follow these rules when it initializes the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure:
+-   Starting with NDIS 6.30, VMQ miniport drivers must not advertise support for splitting packet data into pre-lookahead and post-lookahead buffers. When a miniport driver registers its VMQ capabilities, it must follow these rules when it initializes the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure:
 
     -   The miniport driver must not set the **NDIS\_RECEIVE\_FILTER\_LOOKAHEAD\_SPLIT\_SUPPORTED** flag in the **Flags** member.
 
-    -   The miniport driver must set the **MinLookaheadSplitSize** and **MinLookaheadSplitSize** members to zero.
+    -   The miniport driver must set the **MinLookaheadSplitSize** and **MaxLookaheadSplitSize** members to zero.
 
     For more information about how to register VMQ capabilities, see [Determining the VMQ Capabilities of a Network Adapter](determining-the-vmq-capabilities-of-a-network-adapter.md).
 
  
-
- 
-
-
-
-
 

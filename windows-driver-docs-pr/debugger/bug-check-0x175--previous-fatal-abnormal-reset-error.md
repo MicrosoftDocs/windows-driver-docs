@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x175 PREVIOUS_FATAL_ABNORMAL_RESET_ERROR
 description: The PREVIOUS_FATAL_ABNORMAL_RESET_ERROR bug check has a value of 0x00000175.
-ms.assetid: C1F74858-DAF4-466C-9696-6FE5390574C3
 keywords: ["Bug Check 0x175 PREVIOUS_FATAL_ABNORMAL_RESET_ERROR", "PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,8 +33,7 @@ The PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR bug check has a value of 0x00000175.
 
  
 
-Cause
------
+## Cause
 
 The system on Windows Phone devices encountered an unexpected error and restarted. Issues that may cause this error include: hardware watchdog timer in application or auxiliary processors indicating a system hang, user-initiated key sequence because of a hang, etc.
 

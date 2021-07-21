@@ -1,9 +1,8 @@
 ---
 title: Accessing Global Variables
 description: Accessing Global Variables
-ms.assetid: 81daf418-d3cf-413a-8ee0-790b0c0f86c0
 keywords: ["global variables", "global variables, accessing"]
-ms.date: 05/23/2017
+ms.date: 02/20/2020
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +16,7 @@ The names of global variables are stored in the symbol files that are created wh
 
 In addition, you can use the [**? (Evaluate Expression)**](---evaluate-expression-.md) command to display the address that is associated with any symbol.
 
-Visual Studio and WinDbg provide user interface elements that you can use (in addition to commands) to view and edit global variables. See [Viewing and Editing Memory and Registers in Visual Studio](viewing-memory--variables--and-registers-in-visual-studio.md) and [Viewing and Editing Global Variables in WinDbg](viewing-and-editing-global-variables-in-windbg.md).
+WinDbg provides user interface elements that you can use (in addition to commands) to view and edit global variables. See [Viewing and Editing Global Variables in WinDbg](viewing-and-editing-global-variables-in-windbg.md).
 
 Consider the following example. Suppose that you want to examine the `MyCounter` global variable, which is a 32-bit integer. Also suppose that the default radix is 10.
 

@@ -1,4 +1,5 @@
 ---
+description: "Windows 10 in S mode Driver Requirements"
 title: Windows 10 in S mode Driver Requirements
 ms.date: 05/05/2017
 ms.localizationpriority: medium
@@ -13,25 +14,25 @@ This section describes driver installation requirements and blocked components o
 To install on Windows 10 in S mode, driver packages must meet the following requirements:
 
 -   Driver packages must be digitally signed with a **Windows, WHQL, ELAM, or Store** certificate from the [Windows Hardware Developer Center Dashboard](https://aka.ms/DevCenterPortal).
--   Companion software must be signed with a [Microsoft Store Certificate](https://docs.microsoft.com/windows/uwp/publish/the-app-certification-process).
+-   Companion software must be signed with a [Microsoft Store Certificate](/windows/uwp/publish/the-app-certification-process).
 -   Does not include an \*.exe, \*.zip, \*.msi or \*.cab in the driver package that extracts unsigned binaries.
 -   Driver installs using only INF directives.
 -   Driver does not call [blocked inbox components](#blocked-inbox-components).
 -   Drivers does not include any user interface components, apps, or settings.  Instead, use Universal applications from the Microsoft Store, for example:
-    *  [Hardware Support Apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps)
-    *  [UWP device apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/meet-uwp-device-apps)
+    *  [Hardware Support Apps](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md)
+    *  [UWP device apps](../devapps/meet-uwp-device-apps.md)
     *  [Centennial Apps](https://developer.microsoft.com/windows/bridges/desktop)
 -   Driver and firmware servicing uses Windows Update and not an updater app.
 
 Finally, we recommend using a Universal Windows driver where possible.  For more info, see:
 
--   [Getting Started with Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
--   [Validating Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers)
+-   [Getting Started with Universal Drivers](../develop/getting-started-with-windows-drivers.md)
+-   [Validating Universal Drivers](../develop/validating-windows-drivers.md)
 
 ## Installation
 
-* If you check the S compliance checkboxes when submitting a driver in the dashboard, the driver is delivered to both Windows 10 in S mode as well as desktop versions of Windows 10 that have the same HW ID. For more info about these dashboard options, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
-* If different driver packages are required for Windows 10 in S mode and desktop versions of Windows 10 that target the same HWID, set a greater **DriverVer** entry in the [INF Version Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) for the package that targets desktop versions of Windows 10.  For example, you might set a **DriverVer** of `05/24/2019,10.0.1.0` for the package targeting Windows 10 in S mode, and `05/24/2019,10.1.1.0` for the package targeting desktop versions of Windows 10.
+* If you check the S compliance checkboxes when submitting a driver in the dashboard, the driver is delivered to both Windows 10 in S mode as well as desktop versions of Windows 10 that have the same HW ID. For more info about these dashboard options, see [Publish a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
+* If different driver packages are required for Windows 10 in S mode and desktop versions of Windows 10 that target the same HWID, set a greater **DriverVer** entry in the [INF Version Section](./inf-version-section.md) for the package that targets desktop versions of Windows 10.  For example, you might set a **DriverVer** of `05/24/2019,10.0.1.0` for the package targeting Windows 10 in S mode, and `05/24/2019,10.1.1.0` for the package targeting desktop versions of Windows 10.
 
 ## Troubleshooting installation
 
@@ -70,4 +71,4 @@ The following components are blocked from executing on Windows 10 S:
 -   wsl.exe
 
 > [!NEXT]
-> To ensure your Windows app will operate correctly on devices that run Windows 10 in S mode, please review the [test guidance](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-test-windows-s) for apps. 
+> To ensure your Windows app will operate correctly on devices that run Windows 10 in S mode, please review the [test guidance](/windows/uwp/porting/desktop-to-uwp-test-windows-s) for apps.

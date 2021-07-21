@@ -1,7 +1,6 @@
 ---
 title: FilmColor element
 description: The required FilmColor element contains the list of color processing capabilities that the film scanning input source supports.
-ms.assetid: daea2cb8-a29f-4be8-bc58-8ed45d64870c
 keywords: ["FilmColor element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FilmColor** element contains the list of color processing capabilities that the film scanning input source supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmColor>
@@ -27,8 +25,7 @@ Usage
 </wscn:FilmColor>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -70,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **FilmColor** element contains the information that is needed to determine the type of color processing and acquisition that the scanner's film scanning input source supports.
 

@@ -1,7 +1,6 @@
 ---
 title: Command and Vertex Buffer Allocation
 description: Command and Vertex Buffer Allocation
-ms.assetid: 07666a6f-1d2e-4f30-bba8-a09b59225ecf
 keywords:
 - command buffers WDK Direct3D
 - vertex buffers WDK Direct3D
@@ -35,25 +34,25 @@ Explicit vertex buffers are created and controlled by the application. These can
 
 Command buffers are used by Direct3D to batch commands. They can be multibuffered and are used for all APIs except for TLVERTEX or unclipped execute-buffer API calls. This type of buffer is marked by the flag DDSCAPS2\_COMMANDBUFFER. They are always write-only, though no explicit flag is set and they never contain invalid instructions.
 
-By default, the Direct3D runtime allocates all of these buffers. Implicit vertex buffers and command buffers are accessed through the surfaces with which they are associated. All buffers are passed to the driver's [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) callback.
+By default, the Direct3D runtime allocates all of these buffers. Implicit vertex buffers and command buffers are accessed through the surfaces with which they are associated. All buffers are passed to the driver's [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) callback.
 
 ### <span id="Driver-Allocated_Vertex_and_Command_Buffers"></span><span id="driver-allocated_vertex_and_command_buffers"></span><span id="DRIVER-ALLOCATED_VERTEX_AND_COMMAND_BUFFERS"></span>Driver-Allocated Vertex and Command Buffers
 
-A Direct3D driver optionally performs the allocation of vertex and command buffers by supplying callback functions. To supply these callback functions, the Direct3D driver fills out a [**DD\_D3DBUFCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_d3dbufcallbacks) structure and points the **lpD3DBufCallbacks** member of the [**DD\_HALINFO**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_halinfo) structure to it. DD\_HALINFO is returned by [**DrvGetDirectDrawInfo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetdirectdrawinfo) in response to the initialization of the DirectDraw component of the driver. The callbacks reported in the DD\_D3DBUFCALLBACKS structure are:
+A Direct3D driver optionally performs the allocation of vertex and command buffers by supplying callback functions. To supply these callback functions, the Direct3D driver fills out a [**DD\_D3DBUFCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_d3dbufcallbacks) structure and points the **lpD3DBufCallbacks** member of the [**DD\_HALINFO**](/windows/win32/api/ddrawint/ns-ddrawint-dd_halinfo) structure to it. DD\_HALINFO is returned by [**DrvGetDirectDrawInfo**](/windows/win32/api/winddi/nf-winddi-drvgetdirectdrawinfo) in response to the initialization of the DirectDraw component of the driver. The callbacks reported in the DD\_D3DBUFCALLBACKS structure are:
 
--   [*CanCreateD3DBuffer*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_cancreatesurface)
+-   [*CanCreateD3DBuffer*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_cancreatesurface)
 
--   [*CreateD3DBuffer*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurface)
+-   [*CreateD3DBuffer*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurface)
 
--   [*DestroyD3DBuffer*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff552754(v=vs.85))
+-   [*DestroyD3DBuffer*](/previous-versions/windows/hardware/drivers/ff552754(v=vs.85))
 
--   [*LockD3DBuffer*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568216(v=vs.85))
+-   [*LockD3DBuffer*](/previous-versions/windows/hardware/drivers/ff568216(v=vs.85))
 
--   [*UnlockD3DBuffer*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff570106(v=vs.85))
+-   [*UnlockD3DBuffer*](/previous-versions/windows/hardware/drivers/ff570106(v=vs.85))
 
-These functions are called in the same way as the *DdXxxSurface* callbacks (such as [*DdCanCreateSurface*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549213(v=vs.85))) and only when the DDSCAPS\_EXECUTEBUFFER flag is set. The buffer creation flags are DDSCAPS\_WRITEONLY, DDSCAPS2\_VERTEXBUFFER, and DDSCAPS2\_COMMANDBUFFER.
+These functions are called in the same way as the *DdXxxSurface* callbacks (such as [*DdCanCreateSurface*](/previous-versions/windows/hardware/drivers/ff549213(v=vs.85))) and only when the DDSCAPS\_EXECUTEBUFFER flag is set. The buffer creation flags are DDSCAPS\_WRITEONLY, DDSCAPS2\_VERTEXBUFFER, and DDSCAPS2\_COMMANDBUFFER.
 
-Drivers determine the type of buffer being requested by checking the **ddsCaps** member of the [**DD\_SURFACE\_LOCAL**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_surface_local) structure passed to the **CanCreateExecuteBuffer** and **CreateExecuteBuffer** callback for the following flags:
+Drivers determine the type of buffer being requested by checking the **ddsCaps** member of the [**DD\_SURFACE\_LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) structure passed to the **CanCreateExecuteBuffer** and **CreateExecuteBuffer** callback for the following flags:
 
 -   DDSCAPS\_VERTEXBUFFER indicates that the driver should allocate an explicit vertex buffer.
 
@@ -63,15 +62,9 @@ Drivers determine the type of buffer being requested by checking the **ddsCaps**
 
 The driver internally allocates vertex and command buffers and cycles through these buffers. Direct3D fills a given pair while the hardware asynchronously renders from the other queued buffers. This is very useful with direct memory access (DMA).
 
-Buffers in a multibuffering set can be in different memory types, that is, in system or video memory. When the driver is called to create the first buffer, it creates the set immediately and returns the first buffer in the set to Direct3D. The driver uses flags to specify the type of memory that it used to allocate each buffer in the set. The driver should return a new buffer in system memory for each call to [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) if the D3DHALDP2\_SWAPVERTEXBUFFER or D3DHALDP2\_SWAPCOMMANDBUFFER flag is set. If the returned buffer is in video memory, the corresponding D3DHALDP2\_VIDMEMVERTEXBUF or D3DHALDP2\_VIDMEMCOMMANDBUF flag should be set.
+Buffers in a multibuffering set can be in different memory types, that is, in system or video memory. When the driver is called to create the first buffer, it creates the set immediately and returns the first buffer in the set to Direct3D. The driver uses flags to specify the type of memory that it used to allocate each buffer in the set. The driver should return a new buffer in system memory for each call to [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) if the D3DHALDP2\_SWAPVERTEXBUFFER or D3DHALDP2\_SWAPCOMMANDBUFFER flag is set. If the returned buffer is in video memory, the corresponding D3DHALDP2\_VIDMEMVERTEXBUF or D3DHALDP2\_VIDMEMCOMMANDBUF flag should be set.
 
 Occasionally, Direct3D requests the minimum size for the next buffer. If the size is too large, the driver should allocate the buffer in system memory (a backing surface). If the size is too small, the driver is permitted to provide a larger buffer. The driver should keep track of how many buffers and what memory types they are and clean up everything on exit.
 
  
-
- 
-
-
-
-
 

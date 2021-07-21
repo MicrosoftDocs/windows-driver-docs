@@ -1,7 +1,6 @@
 ---
 title: Differences Between SerCx2.sys and Serial.sys
 description: Although the inbox Sercx2.sys and Serial.sys driver components both implement the serial I/O request interface, these components are not interchangeable. They are designed to meet different sets of requirements.
-ms.assetid: 62FA69BB-FE04-4B5E-96CC-13764ED83AE6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,10 +40,10 @@ A COM port controlled by Serial.sys is assigned a device name. A user-mode appli
 
 In contrast, a serial port controlled by SerCx2.sys and a serial controller driver is unnamed. The driver that owns the peripheral device that is permanently connected to the port receives a special identifier (called a [*connection ID*](connection-ids-for-serially-connected-peripheral-devices.md)) that the driver uses to open the port. Typically, only this peripheral driver can send I/O requests directly to the port. An application that needs to configure the port or to transfer data through the port sends I/O requests to the peripheral driver. Then, acting as intermediary, this driver sends the corresponding I/O requests to the port.
 
-Sercx2.sys and its associated serial controller driver enable the run-time [power management framework](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-the-power-management-framework) (PoFx) to manage power in serial controllers and in the peripheral devices that are connected to these controllers. PoFx, which is available starting with Windows 8, provides fine-tuned power management to enable mobile devices to run for extended periods on a battery charge.
+Sercx2.sys and its associated serial controller driver enable the run-time [power management framework](../kernel/overview-of-the-power-management-framework.md) (PoFx) to manage power in serial controllers and in the peripheral devices that are connected to these controllers. PoFx, which is available starting with Windows 8, provides fine-tuned power management to enable mobile devices to run for extended periods on a battery charge.
 
 In contrast, Serial.sys is not managed by PoFx, and instead relies on device power management capabilities that are supported in earlier versions of Windows.
 
-Another difference is that Serial.sys implements software flow control, but Sercx2.sys does not. Both Serial.sys and Sercx2.sys support hardware flow control using the *request to send* (RTS) and *clear to send* (CTS) signals. For more information about flow control, see [**SERIAL\_HANDFLOW**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ns-ntddser-_serial_handflow).
+Another difference is that Serial.sys implements software flow control, but Sercx2.sys does not. Both Serial.sys and Sercx2.sys support hardware flow control using the *request to send* (RTS) and *clear to send* (CTS) signals. For more information about flow control, see [**SERIAL\_HANDFLOW**](/windows-hardware/drivers/ddi/ntddser/ns-ntddser-_serial_handflow).
 
 A final difference is that Serial.sys can work in conjunction with Serenum.sys, but Sercx2.sys cannot. Serenum.sys is a filter driver that enumerates devices that are connected to serial ports. For more information, see [Enumerating Serenum Devices](enumerating-serenum-devices.md).

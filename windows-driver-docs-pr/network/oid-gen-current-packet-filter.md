@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CURRENT_PACKET_FILTER
 description: As a query, the OID_GEN_CURRENT_PACKET_FILTER OID reports the types of net packets that are in receive indications from a miniport driver.
-ms.assetid: d5a32626-caff-4708-a134-d80a845dee91
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_CURRENT_PACKET_FILTER Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 For NDIS 6.0 and later miniport drivers, the query is not requested and the set is mandatory. NDIS handles the query for miniport drivers. The miniport driver reports the packet filter information during initialization.
 
@@ -77,19 +75,19 @@ SMT packets that an FDDI NIC receives.
 <a href="" id="ndis-packet-type-source-routing"></a>NDIS\_PACKET\_TYPE\_SOURCE\_ROUTING  
 All source routing packets. If the protocol driver sets this bit, the NDIS library attempts to act as a source routing bridge.
 
-For miniport adapters whose media type is **NdisMedium802\_3** or **NdisMedium802\_5**, NDIS disables packet reception, along with multicast and functional addresses during a call to the [**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex) function.
+For miniport adapters whose media type is **NdisMedium802\_3** or **NdisMedium802\_5**, NDIS disables packet reception, along with multicast and functional addresses during a call to the [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex) function.
 
-For miniport adapters with all other media types, the protocol driver can begin receiving packets at any time during the [**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex) call. Note that the protocol can even receive packets before **NdisOpenAdapterEx** returns. In general, packet filtering is best effort, and protocol drivers must be prepared to handle receive indications even when the packet filter is zero.
+For miniport adapters with all other media types, the protocol driver can begin receiving packets at any time during the [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex) call. Note that the protocol can even receive packets before **NdisOpenAdapterEx** returns. In general, packet filtering is best effort, and protocol drivers must be prepared to handle receive indications even when the packet filter is zero.
 
 For a query, NDIS returns the binding filters that are combined using the OR operator.
 
 For a set, the specified packet filter replaces the previous packet filter for the binding. If the miniport driver previously enabled a packet type but the protocol driver does not specify that type in a new filter, the protocol driver will not receive packets of this type.
 
-For miniport adapters whose media type is **NdisMedium802\_3** or **NdisMedium802\_5**, if the miniport driver does not set a bit for a particular packet type in response to this query, the protocol driver will not receive packets of that type. Consequently, a protocol driver can disable packet reception by calling the [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) or [**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) function using a filter of zero.
+For miniport adapters whose media type is **NdisMedium802\_3** or **NdisMedium802\_5**, if the miniport driver does not set a bit for a particular packet type in response to this query, the protocol driver will not receive packets of that type. Consequently, a protocol driver can disable packet reception by calling the [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) or [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) function using a filter of zero.
 
 For miniport adapters with all other media types, NDIS does not check the packet type. For these media types, a protocol driver cannot disable packet reception by specifying a filter of zero.
 
-When a miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function is called, the miniport driver's packet filter should be set to zero. When the packet filter is zero, receive indications are disabled. After a miniport driver's *MiniportInitializeEx* function has returned, a protocol driver can set OID\_GEN\_CURRENT\_PACKET\_FILTER to a nonzero value, thereby enabling the miniport driver to indicate received packets to that protocol.
+When a miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function is called, the miniport driver's packet filter should be set to zero. When the packet filter is zero, receive indications are disabled. After a miniport driver's *MiniportInitializeEx* function has returned, a protocol driver can set OID\_GEN\_CURRENT\_PACKET\_FILTER to a nonzero value, thereby enabling the miniport driver to indicate received packets to that protocol.
 
 If promiscuous mode is enabled with the NDIS\_PACKET\_TYPE\_PROMISCUOUS bit, the protocol driver continues to receive packets even if the sending network node does not direct them to it. NDIS then sends the protocol driver all packets the NIC receives.
 
@@ -118,7 +116,7 @@ If an MPDU fragment is encrypted, it must not decrypt the fragment before it is 
 
 If enabled, this filter type only affects other standard packet filters, such as NDIS\_PACKET\_TYPE\_DIRECTED or NDIS\_PACKET\_TYPE\_BROADCAST.
 
-For more information about the method for indicating raw 802.11 data packets, see [Indicating Raw 802.11 Packets](https://docs.microsoft.com/windows-hardware/drivers/network/indicating-raw-802-11-packets).
+For more information about the method for indicating raw 802.11 data packets, see [Indicating Raw 802.11 Packets](/previous-versions/windows/hardware/wireless/indicating-raw-802-11-packets).
 
 <a href="" id="ndis-packet-type-802-11-directed-mgmt"></a>NDIS\_PACKET\_TYPE\_802\_11\_DIRECTED\_MGMT  
 Directed 802.11 management packets. Directed packets contain a destination address equal to the station address of the NIC.
@@ -140,7 +138,7 @@ An 802.11 MPDU management frame, which contains all of the data in the format re
 
 If enabled, this filter type only affects other 802.11 management packet filters, such as NDIS\_PACKET\_TYPE\_802\_11\_DIRECTED\_MGMT or NDIS\_PACKET\_TYPE\_802\_11\_MULTICAST\_MGMT.
 
-For more information about the method for indicating raw 802.11 management packets, see [Indicating Raw 802.11 Packets](https://docs.microsoft.com/windows-hardware/drivers/network/indicating-raw-802-11-packets).
+For more information about the method for indicating raw 802.11 management packets, see [Indicating Raw 802.11 Packets](/previous-versions/windows/hardware/wireless/indicating-raw-802-11-packets).
 
 <a href="" id="ndis-packet-type-802-11-directed-ctrl"></a>NDIS\_PACKET\_TYPE\_802\_11\_DIRECTED\_CTRL  
 Directed 802.11 control packets. Directed packets contain a destination address equal to the station address of the NIC.
@@ -171,12 +169,11 @@ A miniport driver operating in other Native 802.11 modes besides NetMon must not
 
 For more information about the NetMon and ExtAP operating modes, see the following topics:
 
-[Network Monitor Operation Mode](https://docs.microsoft.com/windows-hardware/drivers/network/network-monitor-operation-mode)
+[Network Monitor Operation Mode](/previous-versions/windows/hardware/wireless/network-monitor-operation-mode)
 
-[Extensible Access Point Operation Mode](https://docs.microsoft.com/windows-hardware/drivers/network/extensible-access-point-operation-mode)
+[Extensible Access Point Operation Mode](/previous-versions/windows/hardware/wireless/extensible-access-point-operation-mode)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -194,18 +191,13 @@ Requirements
 ## See also
 
 
-[*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)
+[*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)
 
-[**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest)
+[**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest)
 
-[**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest)
+[**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest)
 
-[**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex)
-
- 
+[**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex)
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Installing in Windows
 description: Installing in Windows
-ms.assetid: 790caffd-ebb0-4ba1-b31c-b03d3c83bc59
 keywords:
 - audio adapters WDK , system components
 - adapter drivers WDK audio , system components
@@ -21,12 +20,7 @@ In the following example of an INF device-driver-installation section, the two d
   Needs=KS.Registration, WDMAUDIO.Registration
 ```
 
-For information about the **Include** and **Needs** directives, see [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section).
+For information about the **Include** and **Needs** directives, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
 
  
-
- 
-
-
-
 

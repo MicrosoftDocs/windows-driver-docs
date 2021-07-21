@@ -1,7 +1,6 @@
 ---
 title: Fast Startup from a Low-Power State
 description: Fast Startup from a Low-Power State
-ms.assetid: 1091571c-2e30-4ad5-b4b9-0f8633e68288
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -9,7 +8,7 @@ ms.date: 10/17/2018
 # Fast Startup from a Low-Power State
 
 
-To achieve a fast startup from a low-power state, a driver for a leaf-node device should handle an S0 power IRP (that is, an [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) IRP for the S0 system power state). Devices that are leaf nodes in the device hierarchy have no child devices. Because a leaf-node device has no dependencies on child devices, the functional driver for the device can reinitialize the device as a background task to avoid causing unnecessary delays to the operating system or to other drivers. In contrast, bus drivers have dependencies that require additional synchronization logic to coordinate power-on sequences with their child devices.
+To achieve a fast startup from a low-power state, a driver for a leaf-node device should handle an S0 power IRP (that is, an [**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md) IRP for the S0 system power state). Devices that are leaf nodes in the device hierarchy have no child devices. Because a leaf-node device has no dependencies on child devices, the functional driver for the device can reinitialize the device as a background task to avoid causing unnecessary delays to the operating system or to other drivers. In contrast, bus drivers have dependencies that require additional synchronization logic to coordinate power-on sequences with their child devices.
 
 Use the following steps to achieve fast startup of a leaf-node device from a low-power state:
 
@@ -48,9 +47,4 @@ For more information about power IRPs, see the following topics:
 [Handling IRP\_MN\_SET\_POWER for Device Power States](handling-irp-mn-set-power-for-device-power-states.md)
 
  
-
- 
-
-
-
 

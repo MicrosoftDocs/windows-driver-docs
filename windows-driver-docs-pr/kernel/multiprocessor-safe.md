@@ -1,7 +1,6 @@
 ---
 title: Multiprocessor-Safe
 description: Multiprocessor-Safe
-ms.assetid: 58c51f3e-98c4-4aa0-ad4d-cd9225f78141
 keywords: ["multiprocessor safe WDK kernel", "symmetric multiprocessor platforms WDK kernel", "SMP WDK kernel", "spin locks WDK kernel", "synchronization WDK kernel , multiprocessor safe", "symmetric platforms WDK kernel", "locking WDK kernel", "deadlocks WDK kernel", "critical section routines WDK kernel", "shared data protections WDK kernel", "dispatcher objects WDK kernel , multiprocessor safe", "kernel dispatcher objects WDK , multiprocessor safe"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -27,7 +26,7 @@ To run safely on an SMP platform, an operating system must guarantee that code t
 
 Furthermore, drivers' I/O operations that are serialized in a uniprocessor machine can be overlapped in an SMP machine. That is, a driver's routine that processes incoming I/O requests can be executing on one processor while another routine that communicates with the device executes concurrently on another processor. Whether kernel-mode drivers are executing on a uniprocessor or symmetric multiprocessor machine, they must synchronize access to any driver-defined data or system-provided resources that are shared among driver routines, and synchronize access to the physical device, if any.
 
-The Windows NT kernel component exports a synchronization mechanism, called a [spin lock](spin-locks.md), that drivers can use to protect shared data (or device registers) from simultaneous access by one or more routines that are running concurrently on a symmetric multiprocessor platform. The kernel enforces two policies regarding the use of spin locks:
+The Windows NT kernel component exports a synchronization mechanism, called a [spin lock](./introduction-to-spin-locks.md), that drivers can use to protect shared data (or device registers) from simultaneous access by one or more routines that are running concurrently on a symmetric multiprocessor platform. The kernel enforces two policies regarding the use of spin locks:
 
 -   Only one routine can hold a particular spin lock at any given moment. Before accessing shared data, each routine that must reference the data must first attempt to acquire the data's spin lock. To access the same data, another routine must acquire the spin lock, but the spin lock cannot be acquired until the current holder releases it.
 
@@ -45,12 +44,7 @@ For example, a lowest-level driver's ISR frequently shares a state area with the
 
 A set of kernel-mode threads can synchronize access to shared data or resources by waiting for one of the kernel's dispatcher objects: an event, mutex, semaphore, timer, or another thread. However, most drivers do not set up their own threads because they have better performance when they avoid thread-context switches. Whenever time-critical kernel-mode support routines and drivers run at IRQL = DISPATCH\_LEVEL or at DIRQL, they must use the kernel's spin locks to synchronize access to shared data or resources.
 
-For more information, see [Spin Locks](spin-locks.md), [Managing Hardware Priorities](managing-hardware-priorities.md), and [Kernel Dispatcher Objects](kernel-dispatcher-objects.md).
+For more information, see [Spin Locks](./introduction-to-spin-locks.md), [Managing Hardware Priorities](managing-hardware-priorities.md), and [Kernel Dispatcher Objects](./introduction-to-kernel-dispatcher-objects.md).
 
  
-
- 
-
-
-
 

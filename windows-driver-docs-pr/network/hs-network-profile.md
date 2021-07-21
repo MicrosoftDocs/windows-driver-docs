@@ -1,7 +1,6 @@
 ---
 title: HS_NETWORK_PROFILE structure
 description: The HS_NETWORK_PROFILE structure is provided by the plugin and contains information required for connection to the target network. Each instance of the Network Profile is uniquely associated with a corresponding HS_NETWORK_IDENTITY structure.
-ms.assetid: 55e8786c-d7b8-48f3-9e54-312183cf8fb3
 keywords: 
 - HS_NETWORK_PROFILE structure Network Drivers Starting with Windows Vista
 - PHS_NETWORK_PROFILE structure pointer Network Drivers Starting with Windows Vista
@@ -11,13 +10,12 @@ ms.localizationpriority: medium
 
 # HS\_NETWORK\_PROFILE structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_NETWORK\_PROFILE** structure is provided by the plugin and contains information required for connection to the target network. Each instance of the Network Profile is uniquely associated with a corresponding [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_NETWORK_PROFILE {
@@ -31,8 +29,7 @@ typedef struct _HS_NETWORK_PROFILE {
 } HS_NETWORK_PROFILE, *PHS_NETWORK_PROFILE;
 ```
 
-Members
--------
+## Members
 
 **dwNetworkCapabilities**  
 A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
@@ -55,8 +52,7 @@ Optional. The time interval between network connection keep-alive messages.
 **szRealm**  
 Network-specific realm value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

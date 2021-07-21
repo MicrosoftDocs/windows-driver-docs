@@ -1,7 +1,6 @@
 ---
 title: Macroblock Control Command Buffers
 description: Macroblock Control Command Buffers
-ms.assetid: ed6905f6-7e7c-47d2-8f6e-95cfa03e21cb
 keywords:
 - macroblocks WDK DirectX VA , command buffers
 - command buffers WDK DirectX VA
@@ -27,23 +26,17 @@ The processing of a picture requires that the motion prediction for each macrobl
 
 The macroblock control command and the residual difference data for each macroblock affect only the rectangular region within that macroblock.
 
-The total number of macroblock control commands in the macroblock control command buffer is specified by the **dwNumMBsInBuffer** member of the corresponding [**DXVA\_BufferDescription**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_bufferdescription) structure.
+The total number of macroblock control commands in the macroblock control command buffer is specified by the **dwNumMBsInBuffer** member of the corresponding [**DXVA\_BufferDescription**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_bufferdescription) structure.
 
 The quantity and type of data in the residual difference data buffer is determined by the **wPatternCode**, **wPC\_Overflow**, and **bNumCoef** members of the corresponding macroblock control command.
 
 The following figure shows the relationship between the macroblock control command buffer and the residual difference data buffer.
 
-![diagram illustrating the relationship between the macroblock control command buffer and the residual difference data buffer](images/residdiffdata.png)
+![diagram illustrating the relationship between the macroblock control command buffer and the residual difference data buffer.](images/residdiffdata.png)
 
-If the **bConfigMBcontrolRasterOrder** member of the [**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure is equal to 1, then the following expression applies to the preceding illustration where *i* is the index of the macroblock within the macroblock control command buffer.
+If the **bConfigMBcontrolRasterOrder** member of the [**DXVA\_ConfigPictureDecode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure is equal to 1, then the following expression applies to the preceding illustration where *i* is the index of the macroblock within the macroblock control command buffer.
 
-![diagram illustrating the relationship between the mb control command buffer and residual difference data buffer](images/formula3.png)
-
- 
+![diagram illustrating the relationship between the mb control command buffer and residual difference data buffer.](images/formula3.png)
 
  
-
-
-
-
 

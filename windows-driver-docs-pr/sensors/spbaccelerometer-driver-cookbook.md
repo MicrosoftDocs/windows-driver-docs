@@ -1,7 +1,6 @@
 ---
 title: SpbAccelerometer driver cookbook
 description: SpbAccelerometer driver cookbook
-ms.assetid: 3E7875E1-0810-4698-A5E1-7A4C6C366967
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -37,7 +36,7 @@ Before you get started, make sure you have the following hardware:
 
 In the sections that describe the sample driver, you’ll see short tables after each section heading:
 
-![document conventions](images/document-conventions.png)
+![document conventions.](images/document-conventions.png)
 
 These tables identify the source modules and classes discussed in that section. Use this information to open the module and view its corresponding code in Visual Studio.
 

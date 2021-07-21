@@ -1,7 +1,6 @@
 ---
 title: Digital Signatures and PnP Device Installation (Vista and Later)
 description: Digital Signatures and PnP Device Installation (Windows Vista and Later)
-ms.assetid: 38d3e8c9-0be1-4fea-9128-15834c0c4e2e
 keywords:
 - driver signing WDK , PnP device installations
 - signing drivers WDK , PnP device installations
@@ -56,16 +55,16 @@ Windows Vista and later versions of Windows include the following features that 
 
 -   The driver-signing policy is always set to *Warn*. This eliminates the *Ignore* and *Block* options that were available in Windows Server 2003, Windows XP, and Windows 2000. An administrator must always authorize the installation of unsigned drivers or a driver from a publisher that is not yet trusted.
 
--   All [device setup classes](device-setup-classes.md) are treated equally. On Windows Server 2003, Windows XP, and Windows 2000, driver packages that were signed by WHQL must have an INF file that specifies a device setup class that is defined in *%SystemRoot%/inf/Certclas.inf*. Otherwise, Windows treats the driver package as unsigned.
+-   All [device setup classes](./overview-of-device-setup-classes.md) are treated equally. On Windows Server 2003, Windows XP, and Windows 2000, driver packages that were signed by WHQL must have an INF file that specifies a device setup class that is defined in *%SystemRoot%/inf/Certclas.inf*. Otherwise, Windows treats the driver package as unsigned.
 
 -   Starting with Windows Vista, when there are several compatible drivers to choose from, the ranking algorithm that the operating system uses to select the best driver includes drivers that have third-party signatures.
 
     This algorithm ranks drivers in the following way:
 
-    -   If the [AllSignersEqual group policy](allsignersequal-group-policy--windows-vista-and-later-.md) is disabled, the operating system ranks drivers that are signed with a Microsoft signature higher than drivers that are signed with a third-party signature. This ranking occurs even if a driver that is signed with a third-party signature is, in all other ways, a better match for a device.
-    -   If the [AllSignersEqual group policy](allsignersequal-group-policy--windows-vista-and-later-.md) is enabled, the operating system ranks all digitally signed drivers equally.
+    -   If the [AllSignersEqual group policy](./allsigningequal-group-policy.md) is disabled, the operating system ranks drivers that are signed with a Microsoft signature higher than drivers that are signed with a third-party signature. This ranking occurs even if a driver that is signed with a third-party signature is, in all other ways, a better match for a device.
+    -   If the [AllSignersEqual group policy](./allsigningequal-group-policy.md) is enabled, the operating system ranks all digitally signed drivers equally.
 
-    **Note**  Starting with Windows 7, the [AllSignersEqual group policy](allsignersequal-group-policy--windows-vista-and-later-.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** group policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** group policy.
+    **Note**  Starting with Windows 7, the [AllSignersEqual group policy](./allsigningequal-group-policy.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** group policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** group policy.
 
      
 
@@ -98,10 +97,4 @@ Whether Windows will preinstall a [driver package](driver-packages.md) depends o
 For more information about driver signatures and installation, see [Signature Categories and Driver Installation](signature-categories-and-driver-installation.md).
 
  
-
- 
-
-
-
-
 

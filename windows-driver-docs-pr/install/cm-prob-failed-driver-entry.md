@@ -1,17 +1,15 @@
 ---
 title: CM_PROB_FAILED_DRIVER_ENTRY
 description: CM_PROB_FAILED_DRIVER_ENTRY
-ms.assetid: e1345892-69db-4135-be5b-1d182a2a1d66
 keywords:
 - CM_PROB_FAILED_DRIVER_ENTRY
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_FAILED_DRIVER_ENTRY
+# Code 37 - CM_PROB_FAILED_DRIVER_ENTRY
 
-This function is reserved for system use.
-The driver returned failure from its **DriverEntry** routine.
+This Device Manager error message indicates that the driver returned failure from its **DriverEntry** routine.
 
 ## Error Code
 

@@ -1,7 +1,6 @@
 ---
 title: Job element
 description: The required Job element contains all elements that are associated with a scan job.
-ms.assetid: c5622ea6-c57a-4c80-a6ef-e6b9014b2b59
 keywords: ["Job element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Job** element contains all elements that are associated with a scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Job>
@@ -27,8 +25,7 @@ Usage
 </wscn:Job>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -76,8 +73,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A scan job (which the **Job** element represents) can contain one or more documents. The WSD Scan Service's processing instructions for both a job and its documents are executed at the **Job** level.
 

@@ -1,7 +1,6 @@
 ---
 title: p (Step)
 description: The p command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. 
-ms.assetid: 4ee24e76-b751-4346-80af-d481d9513ce0
 keywords: ["p (Step) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -79,8 +78,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 
 For more information about issuing the **p** command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 When you specify *Count*, each instruction is displayed as it is stepped through.
 

@@ -1,7 +1,6 @@
 ---
 title: Pixel Formats for Uncompressed Video
 description: Pixel Formats for Uncompressed Video
-ms.assetid: f7e54642-c712-4af1-b7b7-f0d961167c77
 keywords:
 - uncompressed video pixel formats WDK DirectX VA
 - pixel formats for uncompressed video WDK DirectX VA

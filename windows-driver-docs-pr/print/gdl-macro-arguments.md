@@ -1,7 +1,6 @@
 ---
 title: GDL Macro Arguments
 description: GDL Macro Arguments
-ms.assetid: 2aeaf2fd-39e3-4661-85d1-ccb855a73044
 keywords:
 - GDL WDK , macros
 - macros WDK GDL , arguments

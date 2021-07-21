@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEODECODER\_VCR\_TIMING
 description: The KSPROPERTY\_VIDEODECODER\_VCR\_TIMING property controls whether the VCR is expecting video from a tape source or a broadcast source. This property is optional.
-ms.assetid: 66d194e4-df9e-4f8a-9767-414311c205da
 keywords: ["KSPROPERTY_VIDEODECODER_VCR_TIMING Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_VIDEODECODER\_VCR\_TIMING property controls whether the VCR is e
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEODECODER_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)"><strong>KSPROPERTY_VIDEODECODER_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEODECODER_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)"><strong>KSPROPERTY_VIDEODECODER_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -57,15 +56,13 @@ The KSPROPERTY\_VIDEODECODER\_VCR\_TIMING property controls whether the VCR is e
 
 The property value (operation data) is a ULONG that specifies whether to use VCR timing or broadcast timing. A value of zero indicates a broadcast source. A nonzero value indicates a tape source.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEODECODER\_S structure indicates whether to use VCR timing or broadcast timing.
 
 The timing accuracy of synchronization pulses on tape sources typically is not as accurate as from broadcast sources.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,16 +80,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_VIDEODECODER\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_VIDEODECODER\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)
 

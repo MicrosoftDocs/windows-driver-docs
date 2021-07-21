@@ -1,7 +1,6 @@
 ---
 title: Considerations for convertibles
 description: This topic discusses timing and performance considerations for convertibles.
-ms.assetid: 2353023A-989A-4836-A39C-0B5F749E7FF2
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -35,11 +34,11 @@ To provide an optimal user experience, the state indicator change should be a fa
 
 The following two examples start with the laptop mode and describe the optimal timing when the indicator state should be toggled:
 
-![keyboard attach and detach for convertible](images/keyboardattachdetachconvertible.jpg)
+![keyboard attach and detach for convertible.](images/keyboardattachdetachconvertible.jpg)
 
 **Figure 1 Keyboard Attach and Detach for Convertible**
 
-![screen swivel convertible](images/screenswivelconvertible.jpg)
+![screen swivel convertible.](images/screenswivelconvertible.jpg)
 
 **Figure 2 Screen Swivel Convertible**
 

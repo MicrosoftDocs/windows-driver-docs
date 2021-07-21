@@ -1,7 +1,6 @@
 ---
 title: Global Logger Trace Session
 description: Global Logger Trace Session
-ms.assetid: d78ce5d8-a9f3-47d6-be7a-eeaeacd7b872
 keywords:
 - trace sessions WDK , Global Logger
 - Global Logger trace session WDK , about Global Logger sessions

@@ -1,7 +1,6 @@
 ---
 title: CPixel ComputeSurfaceSize method
 description: The CPixel ComputeSurfaceSize method determines the amount of memory required to allocate a surface.
-ms.assetid: aeee0757-b381-4579-abae-1190399f3a0d
 keywords: ["ComputeSurfaceSize method Display Devices", "ComputeSurfaceSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeSurfaceSize method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The **CPixel::ComputeSurfaceSize** method determines the amount of memory required to allocate a surface.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 static UINT ComputeSurfaceSize(
@@ -31,8 +29,7 @@ static UINT ComputeSurfaceSize(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *cpWidth*
 Specifies the width in pixels of the surface.
@@ -43,18 +40,15 @@ Specifies the height in pixels of the surface.
 *Format*
 Uses a value from the D3DFORMAT enumeration to specify the surface format.
 
-Return value
-------------
+## Return value
 
 Returns the size, in bytes, of the surface.
 
-Remarks
--------
+## Remarks
 
 For more information about D3DFORMAT, see the Microsoft DirectX SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

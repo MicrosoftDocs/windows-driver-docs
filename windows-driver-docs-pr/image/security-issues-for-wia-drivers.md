@@ -1,16 +1,11 @@
 ---
 title: Security Issues for WIA Drivers
 description: Security Issues for WIA Drivers
-ms.assetid: 5d8fc015-cbf5-43a3-8f65-3ebb17754417
-ms.date: 04/20/2017
+ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---
 
 # Security Issues for WIA Drivers
-
-
-
-
 
 Running services under a **LocalSystem** account can be dangerous, because **LocalSystem** is essentially Administrator and, therefore, has access to virtually any resource on the machine. Design flaws or buggy code in a service running under **LocalSystem** might result in an escalation of privilege for a destructive user. Windows XP introduced two new built-in service accounts, **LocalService** and **NetworkService**, specifically designed to mitigate the consequences of a service compromise. These two new accounts are restricted user accounts without any special privileges, except "Login as service".
 
@@ -24,12 +19,4 @@ Following the practices outlined in this document ensures that the WIA drivers d
 
 [WIA Security Best Practices](wia-security-best-practices.md)
 
-For additional information about device driver security, see the [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects) and [Creating Secure Device Installations](https://docs.microsoft.com/windows-hardware/drivers/install/creating-secure-device-installations) sections.
-
- 
-
- 
-
-
-
-
+For additional information about device driver security, see [Creating Secure Device Installations](../install/creating-secure-device-installations.md).

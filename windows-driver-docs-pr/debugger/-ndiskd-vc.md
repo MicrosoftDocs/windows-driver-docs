@@ -1,9 +1,8 @@
 ---
 title: ndiskd.vc
 description: The ndiskd.vc extension displays a Connection-Oriented (CoNDIS) virtual connection (VC).
-ms.assetid: 8F172026-3FBC-4686-A3A4-F54F1A0D08E5
 keywords: ["ndiskd.vc Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/26/2020
 topic_type:
 - apiref
 api_name:
@@ -15,38 +14,34 @@ ms.localizationpriority: medium
 
 # !ndiskd.vc
 
-
 The **!ndiskd.vc** extension displays a Connection-Oriented (CoNDIS) virtual connection (VC).
 
 ```console
-!ndiskd.vc [-handle <x>] 
+!ndiskd.vc -handle <x>
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Handle of a VC pointer.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Remarks
--------
+### Remarks
 
-For more information about CoNDIS, see [Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis).
+For more information about CoNDIS, see [Connection-Oriented NDIS](../network/connection-oriented-ndis.md).
 
-For more information about CoNDIS virtual connections, see [Virtual Connections](https://docs.microsoft.com/windows-hardware/drivers/network/virtual-connections).
+For more information about CoNDIS virtual connections, see [Virtual Connections](../network/virtual-connections.md).
 
-Examples
---------
+### Examples
 
 CoNDIS is used in certain situations such as connecting to a VPN, so running **!ndiskd.vc** will not show you results unless a miniport driver on your system has created and activated a CoNDIS virtual connection. The following example shows results from a machine that is connected to a VPN network. First, run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension with no parameters to see a list of miniports and miniport drivers on the system. In the following output, look for the miniport driver for the Marvell AVASTAR Wireless-AC Network Controller network adapter. Its handle is ffffc804af2e3710.
 
 ```console
 1: kd> !ndiskd.netadapter
-    Driver             NetAdapter          Name                                 
+    Driver             NetAdapter          Name
     ffffc804af2e3710   ffffc804b9e6f1a0    Marvell AVASTAR Wireless-AC Network Controller
     ffffc804b99b9020   ffffc804b9c301a0    WAN Miniport (Network Monitor)
     ffffc804b99b9020   ffffc804b9c2a1a0    WAN Miniport (IPv6)
@@ -89,31 +84,20 @@ VIRTUAL CALL
     Client Context     00003206
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis)
+[Connection-Oriented NDIS](../network/connection-oriented-ndis.md)
 
-[Virtual Connections](https://docs.microsoft.com/windows-hardware/drivers/network/virtual-connections)
+[Virtual Connections](../network/virtual-connections.md)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
-
- 
-
- 
-
-
-
-
-
-

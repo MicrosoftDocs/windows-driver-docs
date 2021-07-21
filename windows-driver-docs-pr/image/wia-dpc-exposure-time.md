@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_EXPOSURE\_TIME
 description: The WIA\_DPC\_EXPOSURE\_TIME property corresponds to the shutter speed, in seconds that are scaled by 10,000.
-ms.assetid: 78f12aaa-4b7b-4ba3-a6af-791e97581d26
 keywords: ["WIA_DPC_EXPOSURE_TIME Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 Typically, a device uses the WIA\_DPC\_EXPOSURE\_TIME property only when the [**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md) property is set to EXPOSUREMODE\_MANUAL or EXPOSUREMODE\_SHUTTER\_PRIORITY.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

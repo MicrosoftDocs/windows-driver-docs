@@ -1,7 +1,6 @@
 ---
 title: WDI TLV versioning
 description: To maintain backwards compatibility, both WDI and the miniport use the TLV stream as a versioning boundary.
-ms.assetid: 308B4C7A-4AC1-4FEB-9775-65ED088F7C48
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,15 +29,9 @@ If a miniport driver does not use the TLV parser generator library and instead w
 
 The XML has been augmented to support this versioning with two attributes allowed on containerRefs: *versionAdded* and *versionRemoved*. This is what drives the parser and generator to adjust the byte stream according to the peer version.
 
-**Note**  The parser and generator assume that they are always linked with WDI\_VERSION\_LATEST. The miniport should always pass WDI\_VERSION\_LATEST for [**NDIS\_MINIPORT\_DRIVER\_WDI\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics)::**WdiVersion** when calling [**NdisMRegisterWdiMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nf-dot11wdi-ndismregisterwdiminiportdriver) rather than using a specific version, like WDI\_VERSION\_1\_0, as they will become out of date and cause problems with the TLV parser generator because the other end might send a byte stream that is unexpected.
+**Note**  The parser and generator assume that they are always linked with WDI\_VERSION\_LATEST. The miniport should always pass WDI\_VERSION\_LATEST for [**NDIS\_MINIPORT\_DRIVER\_WDI\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics)::**WdiVersion** when calling [**NdisMRegisterWdiMiniportDriver**](/windows-hardware/drivers/ddi/dot11wdi/nf-dot11wdi-ndismregisterwdiminiportdriver) rather than using a specific version, like WDI\_VERSION\_1\_0, as they will become out of date and cause problems with the TLV parser generator because the other end might send a byte stream that is unexpected.
 
  
 
  
-
- 
-
-
-
-
 

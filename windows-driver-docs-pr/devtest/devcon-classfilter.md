@@ -1,7 +1,6 @@
 ---
 title: DevCon ClassFilter
 description: Adds, deletes, displays, and changes the order of filter drivers for a device setup class. Valid only on the local computer.
-ms.assetid: c04200c7-2897-46bd-ac5f-f838efef79d9
 keywords:
 - DevCon ClassFilter Driver Development Tools
 topic_type:
@@ -64,7 +63,7 @@ Without subcommands, a **DevCon ClassFilter** command displays the upper or lowe
 
 The **DevCon ClassFilter** operation uses a virtual cursor to move through the list of filter drivers for a class. The cursor starts at the beginning of the list of filter drivers, before the first driver in the list. Unless returned to the starting position, the cursor always moves forward through the filter driver list as DevCon executes the subcommands.
 
-DevCon does not add a filter driver to a class unless the driver is installed as a service, that is, there must be a registry subkey for the driver in the [HKLM\\SYSTEM\\CurrentControlSet\\Services](https://docs.microsoft.com/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree) registry key. This safeguard prevents you from accidentally adding a filter driver that does not exist and thereby rendering the system unbootable.
+DevCon does not add a filter driver to a class unless the driver is installed as a service, that is, there must be a registry subkey for the driver in the [HKLM\\SYSTEM\\CurrentControlSet\\Services](../install/hklm-system-currentcontrolset-services-registry-tree.md) registry key. This safeguard prevents you from accidentally adding a filter driver that does not exist and thereby rendering the system unbootable.
 
 Because filter driver changes require that the devices be restarted, use a [**DevCon Restart**](devcon-restart.md) command or include the **/r** (conditional reboot) parameter in the **DevCon ClassFilter** command.
 
@@ -88,12 +87,3 @@ devcon /r classfilter volume upper !volsnap =!volsnap2
 [Example 26: Replace a filter driver](devcon-examples.md#ddk_example_26_replace_a_filter_driver_tools)
 
 [Example 27: Change the order of filter drivers](devcon-examples.md#ddk_example_27_change_the_order_of_filter_drivers_tools)
-
-
-
-
-
-
-
-
-

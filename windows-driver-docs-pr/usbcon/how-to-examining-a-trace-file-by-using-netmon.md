@@ -1,5 +1,5 @@
 ---
-Description: This topic describes how to example a event trace file by using Netmon.
+description: This topic describes how to example a event trace file by using Netmon.
 title: How to view a USB ETW trace in Netmon
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -21,7 +21,7 @@ To view a trace file in Netmon, on the Start screen, type "netmon" to open Netmo
 
 An event trace is made up of individual events, each of which indicates something that happened in the driver stack. Each event conforms to one of several types defined by the driver stack.
 
-![microsoft network monitor](images/netmon-ui-intro.png)
+![Screenshot that shows the "Netmon" window with an event selected in the "Frame Summary".](images/netmon-ui-intro.png)
 
 Observe that the events are listed in the **Frame Summary** pane. The preceding image shows evens from USB 2.0 driver stack. Note the following columns in this pane:
 
@@ -38,7 +38,7 @@ Important types of events from the USB 2.0 driver stack are also defined in the 
 
 For USB 2.0 driver stack event type, **Frame Details** pane shows idVendor (also known as USB VID) and idProduct (also known as USB PID). This image shows event trace for a USB 2.0 device connected to USB 2.0 host controller.
 
-![microsoft network monitor](images/vid-pid-usb2-0.png)
+![Screenshot that shows the "Netmon" window with an event trace for a U S B device connected to a U S B host controller in the "Frame Details" pane.](images/vid-pid-usb2-0.png)
 
 For USB 3.0 driver stack event type, **Frame Details** pane does not contain idVendor or idPid. That information is available by adding new columns to the **Frame Summary** pane as shown in this image.
 
@@ -50,7 +50,7 @@ Notice these new columns:
 * **USB Length**
 * **USB Request Duration**
 
-![microsoft network monitor](images/usb-3-netmon.png)
+![microsoft network monitor.](images/usb-3-netmon.png)
 
 All USB event traces (USB 2.0 and USB 3.0) now show more information about the request as each URB completes. Notice values, such as, "41 of 255" under **USB Length**. Those values indicate the actual transfer length of each URB on completion with the context of the total request length (original TransferBufferLength specified by the client driver). Also, you can see how long (in seconds) it took for a request to complete under the **USB Request Duration** column.
 

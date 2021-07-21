@@ -1,7 +1,6 @@
 ---
 title: SM\_GetBindingCapability function
 description: The SM\_GetBindingCapability method retrieves the binding capabilities for the indicated port.
-ms.assetid: 11b7df8b-2694-4c49-a97a-ed475f3e841f
 keywords: ["SM_GetBindingCapability function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_GetBindingCapability method retrieves the binding capabilities for the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_GetBindingCapability(
@@ -32,8 +30,7 @@ void SM_GetBindingCapability(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the port whose persistent bindings will be retrieved.
@@ -47,18 +44,15 @@ The status of the operation. For a list of allowed values and their descriptions
 *HBAType*   
 The ability of an HBA and its miniport driver to provide a specific set of features that are related to persistent binding. For a list of values that this parameter can have, see the description of the HBA\_BIND\_TYPE WMI class qualifier.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 The SM\_GetBindingSupport method returns the binding capability that is currently enabled, whereas the SM\_GetBindingCapability method indicates the binding capability of the port without reference to whether particular bindings are enabled or not. This WMI method belongs to the MS\_SM\_TargetInformationMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,16 +76,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetBindingCapability\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_in)
+[**SM\_GetBindingCapability\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_in)
 
-[**SM\_GetBindingCapability\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_out)
-
- 
+[**SM\_GetBindingCapability\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_out)
 
  
-
-
-
-
-
 

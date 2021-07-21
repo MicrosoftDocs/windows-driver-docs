@@ -1,7 +1,6 @@
 ---
 title: FIX Coordinates
 description: FIX Coordinates
-ms.assetid: dfa5c61f-9464-4c63-998e-7fee21cfd278
 keywords:
 - surface negotiation WDK GDI , FIX coordinates
 - fractional coordinates WDK GDI

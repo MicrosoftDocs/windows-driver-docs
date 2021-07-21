@@ -1,7 +1,6 @@
 ---
 title: d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)
 description: The d* commands display the contents of memory in the given range.
-ms.assetid: deb58b77-6648-466d-be00-e2e0a92895b5
 keywords: ["d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,19 +49,19 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
-|||
-|--- |--- |
-|Modes|user mode, kernel mode|
-|Targets|live, crash dump|
-|Platforms|all|
+**Modes**: user mode, kernel mode
+
+**Targets**: live, crash dump
+
+**Platforms**: all
+
  
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 Each line displayed will include the address of the first byte in the line followed by the contents of memory at that and following locations.
 

@@ -1,7 +1,6 @@
 ---
 title: MB Operational Semantics
 description: MB Operational Semantics
-ms.assetid: 5f04b7fd-3df3-4efa-bb26-c7f4cd3c9ebd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,19 +16,19 @@ An asynchronous transaction is a three-way handshake that starts with the initia
 
 ### Asynchronous *Set* and *Query* Requests
 
-Many of the *set* and *query* OID requests that are used by the MB Service are processed asynchronously. For more information about *set* and *query* OID requests, see [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request). The "WWAN-specific OIDs" table in the [MB Data Model](mb-data-model.md) topic identifies which OIDs are processed asynchronously.
+Many of the *set* and *query* OID requests that are used by the MB Service are processed asynchronously. For more information about *set* and *query* OID requests, see [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request). The "WWAN-specific OIDs" table in the [MB Data Model](mb-data-model.md) topic identifies which OIDs are processed asynchronously.
 
 The following diagram represents the interaction sequence for an asynchronous *query* transaction between the MB Service and the miniport driver. The labels in bold represent OID identifiers, or transactional flow control, and the labels in regular text represent the important flags within the OID structure.
 
-![diagram illustrating the interaction sequence for an asynchronous query transaction between the mobile broadband service and the miniport driver](images/wwanasyncquerytransaction.png)
+![diagram illustrating the interaction sequence for an asynchronous query transaction between the mobile broadband service and the miniport driver.](images/wwanasyncquerytransaction.png)
 
 The three-way handshake is the same for both *query* and *set* requests.
 
-Except for [OID\_WWAN\_DRIVER\_CAPS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-driver-caps), all other MB-specific OID requests follow the asynchronous transaction mechanism for information exchange between miniport drivers and the MB Service, with the following additional notes:
+Except for [OID\_WWAN\_DRIVER\_CAPS](./oid-wwan-driver-caps.md), all other MB-specific OID requests follow the asynchronous transaction mechanism for information exchange between miniport drivers and the MB Service, with the following additional notes:
 
 -   Miniport drivers should immediately fail an OID request on any error condition, such as an invalid OID request.
 
--   Miniport drivers must return any WWAN-specific error conditions with the correct error code (for example, WWAN\_STATUS\_XXX) specified in the **uStatus** member of the event notification structure. Miniport drivers should also appropriately fill in the members that follow the **uStatus** member, as needed. For example, miniport drivers should fill in the **ContextState.uNwError** member of the [**NDIS\_WWAN\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state) structure, if available. However, in the case of a failure when processing OIDs related to PINs, miniport drivers may not necessarily have the current PIN state information to specify in the **PinInfo.PinState** member of [**NDIS\_WWAN\_PIN\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info).
+-   Miniport drivers must return any WWAN-specific error conditions with the correct error code (for example, WWAN\_STATUS\_XXX) specified in the **uStatus** member of the event notification structure. Miniport drivers should also appropriately fill in the members that follow the **uStatus** member, as needed. For example, miniport drivers should fill in the **ContextState.uNwError** member of the [**NDIS\_WWAN\_CONTEXT\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state) structure, if available. However, in the case of a failure when processing OIDs related to PINs, miniport drivers may not necessarily have the current PIN state information to specify in the **PinInfo.PinState** member of [**NDIS\_WWAN\_PIN\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info).
 
 -   Miniport drivers should return NDIS\_STATUS\_INDICATION\_REQUIRED as a provisional response for all asynchronous OID requests.
 
@@ -39,13 +38,13 @@ Except for [OID\_WWAN\_DRIVER\_CAPS](https://docs.microsoft.com/windows-hardware
 
 The following diagram represents the interaction sequence for an asynchronous *set* transaction between the MB Service and the miniport driver. The labels in bold represent OID identifiers, or transactional flow control, and the labels in regular text represent the important flags within the OID structure.
 
-![diagram illustrating the interaction sequence for an asynchronous set transaction between the mobile broadband service and the miniport driver](images/wwanasyncsettransaction.png)
+![diagram illustrating the interaction sequence for an asynchronous set transaction between the mobile broadband service and the miniport driver.](images/wwanasyncsettransaction.png)
 
 ### Asynchronous Response
 
 The *NDIS 6.0 Specification* (released with Windows Vista) introduced a new status code, NDIS\_STATUS\_INDICATION\_REQUIRED, for miniport drivers to convey the asynchronous nature of a transaction to the MB Service in a miniport driver's provisional response to an OID request.
 
-As mentioned in [MB Interface Overview](mb-interface-overview.md), the MB Service does not have direct access to kernel-mode memory that is allocated by an MB miniport driver. The execution result stored in the kernel-mode memory is assumed to be copied and made available to the MB Service by some intermediary, such as WMI or an [NDIS filter driver](ndis-filter-drivers2.md). Hence, miniport drivers can release the allocated kernel-mode memory after the [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function call returns in the transactional indication.
+As mentioned in [MB Interface Overview](mb-interface-overview.md), the MB Service does not have direct access to kernel-mode memory that is allocated by an MB miniport driver. The execution result stored in the kernel-mode memory is assumed to be copied and made available to the MB Service by some intermediary, such as WMI or an [NDIS filter driver](./roadmap-for-developing-ndis-filter-drivers.md). Hence, miniport drivers can release the allocated kernel-mode memory after the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function call returns in the transactional indication.
 
 The handshake procedures that miniport drivers and the MB Service must follow are described in the following procedure.
 
@@ -53,7 +52,7 @@ The handshake procedures that miniport drivers and the MB Service must follow ar
 
 Upon receiving an OID request, miniport drivers should perform the following steps:
 
-1.  Allocate memory in kernel mode to copy the contents of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) data structure associated with the OID request.
+1.  Allocate memory in kernel mode to copy the contents of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) data structure associated with the OID request.
 
 2.  Among the request's parameters, ensure that the **RequestId** and **RequestHandle** members of the OID request structure are also copied. These members will be used later in the transactional *indication*.
 
@@ -61,7 +60,7 @@ Upon receiving an OID request, miniport drivers should perform the following ste
 
 4.  Upon completion of the operation, store the result in local or driver-allocated memory, as appropriate.
 
-5.  Call the [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function to notify the MB Service that the outstanding operation has been completed. Miniport drivers should fill in the members of the NDIS\_STATUS\_INDICATION structure as follows:
+5.  Call the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function to notify the MB Service that the outstanding operation has been completed. Miniport drivers should fill in the members of the NDIS\_STATUS\_INDICATION structure as follows:
     1.  Set the **StatusCode** member to the type of status notification. For example, NDIS\_STATUS\_WWAN\_XXX.
     2.  Set the **DestinationHandle** member to the **RequestHandle** member that was received in the NDIS\_OID\_REQUEST data structure when the miniport driver received the corresponding OID request.
     3.  Set the **RequestId** member to match the **RequestId** member of the NDIS\_OID\_REQUEST status structure when the miniport driver received the corresponding OID request.
@@ -76,7 +75,7 @@ The MB Service processes asynchronous transactions by using the following proced
 
 1.  Allocate buffer memory for the request based on the OID data structure. Fill in the data structure members with appropriate values.
 
-2.  Call the [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) function with the **InformationBuffer** member pointing to the OID data structure for the OID request and wait for the miniport driver to respond.
+2.  Call the [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) function with the **InformationBuffer** member pointing to the OID data structure for the OID request and wait for the miniport driver to respond.
 
 3.  Upon receipt of an NDIS\_STATUS\_INDICATION\_REQUIRED provisional response from the miniport driver, the MB Service saves the **RequestId**, releases the allocated memory, and marks the transaction as open. At this point, the MB Service is free to process subsequent OID requests and notifications.
 
@@ -100,45 +99,45 @@ Event notification is unsolicited in the sense that the miniport driver proactiv
 
 For any WWAN-specific event notification, miniport drivers must set the **RequestId** member of the NDIS\_STATUS\_INDICATION structure to zero. The **StatusCode** member specifies which object in the MB device has changed. The miniport driver can set this object to any of the following values:
 
-[**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-caps)
+[**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](./ndis-status-wwan-device-caps.md)
 
-[**NDIS\_STATUS\_WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ready-info)
+[**NDIS\_STATUS\_WWAN\_READY\_INFO**](./ndis-status-wwan-ready-info.md)
 
-[**NDIS\_STATUS\_WWAN\_RADIO\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-radio-state)
+[**NDIS\_STATUS\_WWAN\_RADIO\_STATE**](./ndis-status-wwan-radio-state.md)
 
-[**NDIS\_STATUS\_WWAN\_PIN\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-info)
+[**NDIS\_STATUS\_WWAN\_PIN\_INFO**](./ndis-status-wwan-pin-info.md)
 
-[**NDIS\_STATUS\_WWAN\_PIN\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-list)
+[**NDIS\_STATUS\_WWAN\_PIN\_LIST**](./ndis-status-wwan-pin-list.md)
 
-[**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider)
+[**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](./ndis-status-wwan-home-provider.md)
 
-[**NDIS\_STATUS\_WWAN\_PREFERRED\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-providers)
+[**NDIS\_STATUS\_WWAN\_PREFERRED\_PROVIDERS**](./ndis-status-wwan-preferred-providers.md)
 
-[**NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers)
+[**NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS**](./ndis-status-wwan-visible-providers.md)
 
-[**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-register-state)
+[**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](./ndis-status-wwan-register-state.md)
 
-[**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-packet-service)
+[**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](./ndis-status-wwan-packet-service.md)
 
-[**NDIS\_STATUS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-signal-state)
+[**NDIS\_STATUS\_WWAN\_SIGNAL\_STATE**](./ndis-status-wwan-signal-state.md)
 
-[**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-context-state)
+[**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](./ndis-status-wwan-context-state.md)
 
-[**NDIS\_STATUS\_WWAN\_PROVISIONED\_CONTEXTS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-provisioned-contexts)
+[**NDIS\_STATUS\_WWAN\_PROVISIONED\_CONTEXTS**](./ndis-status-wwan-provisioned-contexts.md)
 
-[**NDIS\_STATUS\_WWAN\_SERVICE\_ACTIVATION**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-service-activation)
+[**NDIS\_STATUS\_WWAN\_SERVICE\_ACTIVATION**](./ndis-status-wwan-service-activation.md)
 
-[**NDIS\_STATUS\_WWAN\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-configuration)
+[**NDIS\_STATUS\_WWAN\_SMS\_CONFIGURATION**](./ndis-status-wwan-sms-configuration.md)
 
-[**NDIS\_STATUS\_WWAN\_SMS\_RECEIVE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-receive)
+[**NDIS\_STATUS\_WWAN\_SMS\_RECEIVE**](./ndis-status-wwan-sms-receive.md)
 
-[**NDIS\_STATUS\_WWAN\_SMS\_SEND**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-send)
+[**NDIS\_STATUS\_WWAN\_SMS\_SEND**](./ndis-status-wwan-sms-send.md)
 
-[**NDIS\_STATUS\_WWAN\_SMS\_DELETE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-delete)
+[**NDIS\_STATUS\_WWAN\_SMS\_DELETE**](./ndis-status-wwan-sms-delete.md)
 
-[**NDIS\_STATUS\_WWAN\_SMS\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-status)
+[**NDIS\_STATUS\_WWAN\_SMS\_STATUS**](./ndis-status-wwan-sms-status.md)
 
-[**NDIS\_STATUS\_WWAN\_VENDOR\_SPECIFIC**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-vendor-specific)
+[**NDIS\_STATUS\_WWAN\_VENDOR\_SPECIFIC**](./ndis-status-wwan-vendor-specific.md)
 
 The MB Service may also process other event notifications from NDIS. These non-MB event notifications are not necessarily subject to the requirement that their **RequestId** values be set to zero.
 
@@ -152,7 +151,7 @@ You must set the **RequestId** member of the NDIS\_STATUS\_INDICATION structure 
 
 ### Status Indication Structure
 
-Both the asynchronous response for a given OID request and the unsolicited event notification structures share the following structure members that are pointed to by **StatusBuffer** member of the *StatusIndication* parameter to [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex):
+Both the asynchronous response for a given OID request and the unsolicited event notification structures share the following structure members that are pointed to by **StatusBuffer** member of the *StatusIndication* parameter to [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex):
 
 ```C++
 typedef struct _NDIS_WWAN_XXX {
@@ -447,10 +446,4 @@ In general, miniport drivers should always notify the MB Service about the updat
 4.  Miniport drivers do not need to respond with the current WWAN\_SMS\_CONFIGURATION value for OID\_WWAN\_SMS\_CONFIGURATION *set* operations.
 
  
-
- 
-
-
-
-
 

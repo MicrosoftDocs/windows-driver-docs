@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: e837f8f2-68a5-4f9a-a253-dfcf33ea7047
 keywords: ["get_Duplex method Print Devices", "get_Duplex method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Duplex method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **Duplex** property enables an ASP Web page to determine if a printer supports duplex printing.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_Duplex(
@@ -32,14 +30,12 @@ HRESULT get_Duplex(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive **TRUE** if the printer supports duplex printing, or **FALSE** if it does not.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -82,8 +78,7 @@ objPrinter.Open strPrinter
 DoesDuplex = objPrinter.Duplex
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: Hardware submissions
 description: Hardware submissions
-ms.assetid: 7EFA9617-CF1D-4259-B0C4-A9DDCF5C3A1F
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -9,16 +8,16 @@ ms.localizationpriority: medium
 
 # Hardware submissions
 
-The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Partner Center. For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
+The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Partner Center. For more information, see the [Windows hardware certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
-To develop your device, download the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+To develop your device, download the [Windows Driver Kit (WDK)](../download-the-wdk.md).
 
-To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](https://go.microsoft.com/fwlink/p/?LinkId=219237).
+To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10.
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
 > [!NOTE]
-> We strongly encourage you to include public driver symbols as part your HLK package. See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
+> We strongly encourage you to include public driver symbols as part your HLK package. See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
 
 - To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
@@ -28,7 +27,7 @@ After you develop and test your product, you can submit the results with a hardw
 
 The Drivers summary page contains a list of all hardware certification submissions that you have created or are shared with you. You can create a new hardware submission by selecting the **Create new driver** button.
 
-![screenshot that shows the drivers summary page](images/drivers-summary-page.png)
+![screenshot that shows the drivers summary page.](images/drivers-summary-page.png)
 
 The hardware certification submission list displays the following information about each submission:
 
@@ -96,7 +95,7 @@ The search box allows you to search for a specific submission or set of submissi
 
 A hardware submission page contains information about a specific hardware submission, including status, packages, certification info, and shipping labels. For information about how to create a hardware submission, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
-![screenshot that shows a hardware submission page](images/hardware-submission-page.png)
+![screenshot that shows a hardware submission page.](images/hardware-submission-page.png)
 
 The left side of the page contains a list of the 10 most recently viewed submissions.
 
@@ -135,7 +134,7 @@ This section displays certification information. Select **See more info** to exp
 <td><p>Indicates whether or not your driver was compiled with the Retpoline flag.  A Check mark = True and an X = False.  For more information about this change see our <a href="https://techcommunity.microsoft.com/t5/Hardware-Dev-Center/Upcoming-Hardware-Dev-Center-changes-that-enable-support-for/ba-p/504574">blog post</a>. </p></td>
 </tr><tr class="even">
 <td><p>Is this a Universal Windows driver?</p></td>
-<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers" data-raw-source="[Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)">Getting Started with Universal Windows drivers</a>.</p></td>
+<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see <a href="/windows-hardware/drivers/develop/getting-started-with-universal-drivers" data-raw-source="[Getting Started with Universal Windows drivers](../develop/getting-started-with-windows-drivers.md)">Getting Started with Universal Windows drivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>What type of device?</p></td>

@@ -1,9 +1,8 @@
 ---
 title: V4 Printer Driver
 description: The v4 printer driver model was designed to address known issues with the version 3 driver model, and thus improve the quality of the experience that users have with their printers.
-ms.assetid: CB333340-FBA0-4CB4-BAD6-4673B4AC0DF2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # V4 Printer Driver
@@ -37,7 +36,7 @@ The v4 print driver model is also optimized for several new scenarios including 
 
 The following is a high-level representation of a v4 print driver. With the exception of the rendering filters and user interface applications, all the other functional blocks in the diagram are implemented by Microsoft. V4 print drivers rely heavily on data files and JavaScript for extensibility. The blue boxes represent existing files that were used in the v3 driver model, and the green boxes represent new places to plug in.
 
-![high level representation of v4 print driver](images/v4driverarch.png)
+![high level representation of v4 print driver.](images/v4driverarch.png)
 
 This section discusses the following aspects of the v4 printer driver:
 

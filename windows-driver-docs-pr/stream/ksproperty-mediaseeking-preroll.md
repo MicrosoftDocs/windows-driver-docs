@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_PREROLL
 description: The KSPROPERTY\_MEDIASEEKING\_PREROLL property retrieves the amount of preroll in 100-nanosecond units required on a filter.
-ms.assetid: 3b9a5458-b26a-452b-b7aa-7bbb30c3d631
 keywords: ["KSPROPERTY_MEDIASEEKING_PREROLL Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_PREROLL property retrieves the amount of preroll i
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_PREROLL property retrieves the amount of preroll i
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns the number of 100-nanosecond units of preroll as a value of type LONGLONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,13 +77,4 @@ Requirements
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
- 
-
- 
-
-
-
-
-
 

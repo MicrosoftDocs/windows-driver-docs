@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi device model and objects
 description: The Wi-Fi device is used by the host in the context of two types of objects adapter and port.
-ms.assetid: 0F375ED7-CB20-4F32-8ECE-4822D7787327
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 The Wi-Fi device is used by the host in the context of two types of objects: adapter and port.
 
-![wdi device model](images/wdi-object-model.png)
+![wdi device model.](images/wdi-object-model.png)
 
 ## Adapter
 
@@ -25,7 +24,7 @@ One Wi-Fi adapter can be used simultaneously for multiple connections e.g. Infra
 
 There can be multiple ports in an adapter. Commands issued on a port should only affect the state maintained for that port.
 
-The operating system configures each port with an operation mode, such as 802.11 station, Wi-Fi Direct Client, or Wi-Fi Direct Group Owner. The set commands that the firmware must be prepared to handle on a given port are determined by the operation mode and the state of the port. A port can be in one of two states: INIT and OP. The port is initially in the INIT state and transitions to the OP state only when the operating system issues a command to connect (in the case of infrastructure client) or to start an AP/GO. The port returns to the INIT state when [OID\_WDI\_TASK\_DOT11\_RESET](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-dot11-reset) is sent to the IHV component.
+The operating system configures each port with an operation mode, such as 802.11 station, Wi-Fi Direct Client, or Wi-Fi Direct Group Owner. The set commands that the firmware must be prepared to handle on a given port are determined by the operation mode and the state of the port. A port can be in one of two states: INIT and OP. The port is initially in the INIT state and transitions to the OP state only when the operating system issues a command to connect (in the case of infrastructure client) or to start an AP/GO. The port returns to the INIT state when [OID\_WDI\_TASK\_DOT11\_RESET](./oid-wdi-task-dot11-reset.md) is sent to the IHV component.
 
 ## Port availability requirements
 
@@ -51,10 +50,4 @@ The following concurrency requirements for the different port types are as follo
     3.  1 GO, 1 Client
 
  
-
- 
-
-
-
-
 

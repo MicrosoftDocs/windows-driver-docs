@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x67 CONFIG_INITIALIZATION_FAILED
 description: The CONFIG_INITIALIZATION_FAILED bug check has a value of 0x00000067. This bug check indicates that the registry configuration failed.
-ms.assetid: 3bc4d6d9-785e-4283-b4c5-2c868c03f084
 keywords: ["Bug Check 0x67 CONFIG_INITIALIZATION_FAILED", "CONFIG_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ The CONFIG\_INITIALIZATION\_FAILED bug check has a value of 0x00000067. This bug
 
  
 
-Cause
------
+## Cause
 
 The registry could not allocate the pool that it needed to contain the registry files. This situation should never occur, because the register allocates this pool early enough in system initialization so that plenty of paged pool should be available.
 

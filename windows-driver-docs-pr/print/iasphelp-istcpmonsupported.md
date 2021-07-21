@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 79ec0584-183d-476d-aca2-e85479248091
 keywords: ["get_IsTCPMonSupported method Print Devices", "get_IsTCPMonSupported method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IsTCPMonSupported method"]
 topic_type:
 - apiref
@@ -21,10 +20,9 @@ ms.localizationpriority: medium
 
 # Iasphelp::get\_IsTCPMonSupported method
 
-The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [port monitor](https://docs.microsoft.com/windows-hardware/drivers/print/port-monitors) is being used with a printer.
+The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [port monitor](./port-monitors.md) is being used with a printer.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_IsTCPMonSupported(
@@ -32,14 +30,12 @@ HRESULT get_IsTCPMonSupported(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive **TRUE** if the TCP/IP port monitor is being used with the printer, or **FALSE** if it is not.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -82,8 +78,7 @@ objPrinter.Open strPrinter
 UseStdMon = objPrinter.IsTCPMonSupported
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

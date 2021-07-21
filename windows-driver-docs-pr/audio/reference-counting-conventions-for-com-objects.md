@@ -1,7 +1,6 @@
 ---
 title: Reference-Counting Conventions for COM Objects
 description: Reference-Counting Conventions for COM Objects
-ms.assetid: e6b19110-37e2-4d23-a528-6393c12ab650
 keywords:
 - COM object references WDK audio
 - object references WDK audio
@@ -23,24 +22,19 @@ The methods in the audio interfaces follow a general set of rules for counting r
 
 ### <span id="Reference_Counting_on_Input_Parameters"></span><span id="reference_counting_on_input_parameters"></span><span id="REFERENCE_COUNTING_ON_INPUT_PARAMETERS"></span>Reference Counting on Input Parameters
 
-When calling a method that takes a reference to an object *X* as an input parameter, the caller must hold its own reference on the object for the duration of the call. This behavior is necessary to ensure that the method's pointer to object *X* remains valid until it returns. If the object *Y* that implements this method needs to hold a reference to object *X* beyond the return from this method, the method should call [**AddRef**](https://docs.microsoft.com/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) on object *X* before returning. When object *Y* later finishes using object *X*, it should call [**Release**](https://docs.microsoft.com/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) on object *X*.
+When calling a method that takes a reference to an object *X* as an input parameter, the caller must hold its own reference on the object for the duration of the call. This behavior is necessary to ensure that the method's pointer to object *X* remains valid until it returns. If the object *Y* that implements this method needs to hold a reference to object *X* beyond the return from this method, the method should call [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) on object *X* before returning. When object *Y* later finishes using object *X*, it should call [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) on object *X*.
 
-For example, the [**IServiceGroup::AddMember**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iservicegroup-addmember) method calls [**AddRef**](https://docs.microsoft.com/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) on the [IServiceSink](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink) object that it adds to its service group. To complement this behavior, the [**IServiceGroup::RemoveMember**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iservicegroup-removemember) method calls [**Release**](https://docs.microsoft.com/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) on the IServiceSink object that it removes from the service group.
+For example, the [**IServiceGroup::AddMember**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iservicegroup-addmember) method calls [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) on the [IServiceSink](/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink) object that it adds to its service group. To complement this behavior, the [**IServiceGroup::RemoveMember**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iservicegroup-removemember) method calls [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) on the IServiceSink object that it removes from the service group.
 
 ### <span id="Reference_Counting_on_Output_Parameters"></span><span id="reference_counting_on_output_parameters"></span><span id="REFERENCE_COUNTING_ON_OUTPUT_PARAMETERS"></span>Reference Counting on Output Parameters
 
-A method that passes an object reference to the caller through an output parameter should call [**AddRef**](https://docs.microsoft.com/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) on the object before it returns (or before it releases its own reference to the object). This behavior is necessary to ensure that the caller holds a valid reference upon return from the call. The caller is responsible for calling [**Release**](https://docs.microsoft.com/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) on the object when it has finished using it.
+A method that passes an object reference to the caller through an output parameter should call [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) on the object before it returns (or before it releases its own reference to the object). This behavior is necessary to ensure that the caller holds a valid reference upon return from the call. The caller is responsible for calling [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) on the object when it has finished using it.
 
-For example, the [**IMiniportWaveCyclic::NewStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclic-newstream) method calls [**AddRef**](https://docs.microsoft.com/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) on the stream, service group, and DMA channel objects that it outputs to the caller (the WaveCyclic port driver). The caller is responsible for releasing these references when it no longer needs them. For an implementation of the **IMiniportWaveCyclic::NewStream** method that shows this behavior, see the Sb16 sample adapter in the Microsoft Windows Driver Kit (WDK).
+For example, the [**IMiniportWaveCyclic::NewStream**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclic-newstream) method calls [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) on the stream, service group, and DMA channel objects that it outputs to the caller (the WaveCyclic port driver). The caller is responsible for releasing these references when it no longer needs them. For an implementation of the **IMiniportWaveCyclic::NewStream** method that shows this behavior, see the Sb16 sample adapter in earlier versions of the Microsoft Windows Driver Kit (WDK).
 
 ### <span id="Exceptions_to_the_Rules"></span><span id="exceptions_to_the_rules"></span><span id="EXCEPTIONS_TO_THE_RULES"></span>Exceptions to the Rules
 
-For a description of the unconventional reference counting that this method performs on its *DmaChannel* output parameter, see [**IMiniportWavePci::NewStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepci-newstream).
+For a description of the unconventional reference counting that this method performs on its *DmaChannel* output parameter, see [**IMiniportWavePci::NewStream**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepci-newstream).
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: View Memory
 description: View Memory
-ms.assetid: 6d4630c0-2b57-417d-8ab1-85116d8e0ff0
 keywords: ["View Memory"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -19,7 +18,7 @@ Click **Memory** on the **View** menu to open a new [Memory window](memory-windo
 
  
 
-The **View** command is equivalent to pressing ALT+5 or clicking the **Memory window (Alt+5)** button (![screen shot of the memory button](images/tbmem.png)) on the toolbar.
+The **View** command is equivalent to pressing ALT+5 or clicking the **Memory window (Alt+5)** button (![screen shot of the memory button.](images/tbmem.png)) on the toolbar.
 
 For more information about this window and its uses, see [Memory Window](memory-window.md).
 

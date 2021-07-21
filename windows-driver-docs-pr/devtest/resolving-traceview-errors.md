@@ -1,7 +1,6 @@
 ---
 title: Resolving TraceView Errors
 description: Resolving TraceView Errors
-ms.assetid: 4849e0b6-5dc9-4666-b1ca-ec89cb94bed0
 keywords:
 - TraceView WDK , errors
 - errors WDK TraceView

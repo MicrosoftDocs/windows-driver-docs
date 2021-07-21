@@ -1,7 +1,6 @@
 ---
 title: Design account balance and usage info in a mobile broadband app
 description: Design account balance and usage info in a mobile broadband app
-ms.assetid: aec4e4b3-d207-4319-a134-29b4a773c3a6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Users primarily use your mobile broadband app to view account balance and usage information. This data should be clearly visible on the app’s home screen.
 
-![post-paid plan summary](images/mb-fig1-postpaidplansummary.png)
+![post-paid plan summary.](images/mb-fig1-postpaidplansummary.png)
 
 Relevant account information for post-paid accounts includes the following:
 
@@ -25,7 +24,7 @@ Relevant account information for post-paid accounts includes the following:
 
 At a glance, users can clearly understand how much data they’ve used, how much data they have left, and when the billing cycle ends (for monthly accounts).
 
-![pre-paid plan summary](images/mb-fig2-prepaidplansummary.png)
+![pre-paid plan summary.](images/mb-fig2-prepaidplansummary.png)
 
 Relevant account information for prepaid accounts includes the following:
 
@@ -51,7 +50,7 @@ Appropriate design for displaying account info:
 -   Use illustrations, such as charts and graphs, to visualize data
 
     **Tip**  
-    You can implement a bar chart by using a determinate progress bar control, as discussed in [Adding progress controls](https://docs.microsoft.com/previous-versions/windows/apps/hh465428(v=win.10)).
+    You can implement a bar chart by using a determinate progress bar control, as discussed in [Adding progress controls](/previous-versions/windows/apps/hh465428(v=win.10)).
 
      
 
@@ -67,11 +66,4 @@ Inappropriate design for displaying account information:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

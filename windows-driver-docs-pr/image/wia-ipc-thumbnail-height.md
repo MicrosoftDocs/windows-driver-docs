@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPC\_THUMBNAIL\_HEIGHT
 description: The WIA\_IPC\_THUMBNAIL\_HEIGHT property contains the current height, in pixels, of the thumbnail image that is stored on a device. The WIA minidriver creates and maintains this property.
-ms.assetid: 84fcaba8-f3db-46bf-812d-bb3daa8d1f37
 keywords: ["WIA_IPC_THUMBNAIL_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

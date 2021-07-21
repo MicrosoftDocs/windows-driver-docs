@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_PRIORITY
 description: Clients use the KSPROPERTY\_CONNECTION\_PRIORITY property to get or set the priority of a connection.
-ms.assetid: 2037fe95-e176-4714-ad36-65a0e25b29e0
 keywords: ["KSPROPERTY_CONNECTION_PRIORITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,18 +46,17 @@ Clients use the KSPROPERTY\_CONNECTION\_PRIORITY property to get or set the prio
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspriority" data-raw-source="[&lt;strong&gt;KSPRIORITY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)"><strong>KSPRIORITY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kspriority" data-raw-source="[&lt;strong&gt;KSPRIORITY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)"><strong>KSPRIORITY</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
-This property returns a structure of type [**KSPRIORITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspriority) that contains a priority class and subclass.
+This property returns a structure of type [**KSPRIORITY**](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority) that contains a priority class and subclass.
 
 One priority is greater than another if the **PriorityClass** member is greater, or if the **PriorityClass** members are identical and the **PrioritySubClass** member is greater.
 
@@ -68,8 +66,7 @@ The priority values have global significance: a client can use the reported valu
 
 KSPROPERTY\_CONNECTION\_PRIORITY is optional. Clients treat pins that do not support it as having priority KSPRIORITY\_NORMAL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,16 +84,7 @@ Requirements
 ## See also
 
 
-[**KSPRIORITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)
+[**KSPRIORITY**](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)
 
-[**KSPIN\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspin_connect)
-
- 
-
- 
-
-
-
-
-
+[**KSPIN\_CONNECT**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_connect)
 

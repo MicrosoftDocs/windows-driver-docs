@@ -1,7 +1,6 @@
 ---
 title: Introduction to WSDBIT
 description: Introduction to WSDBIT
-ms.assetid: 8a8ee9de-95b2-43df-ba96-3b09fcd5751c
 keywords:
 - WSDBIT tool WDK , about
 - WSDAPI Basic Interoperability Tool WDK , about
@@ -27,7 +26,7 @@ The Web Services for Devices (WSD) API (WSDAPI) enables the following types of m
 
 As shown in the following figure, the WSDAPI Basic Interoperability Tool (WSDBIT) uses WSDAPI to send and receive DPWS messages. WSDBIT can be used to test the interoperability between WSDAPI running in a client and a DPWS stack running in a device.
 
-![diagram illustrating the wsdapi basic interoperability tool (wsdbit) and related components](images/wsdbit2.png)
+![diagram illustrating the wsdapi basic interoperability tool (wsdbit) and related components.](images/wsdbit2.png)
 
 The [interoperability scenarios](client-scenarios-for-wsdbit.md) are intended to verify the message format along with the protocols that are used in the preceding message exchanges. The scenarios are defined from the client perspective and are organized into the following categories:
 
@@ -35,9 +34,9 @@ The [interoperability scenarios](client-scenarios-for-wsdbit.md) are intended to
 
 -   *Simple and Advanced Control* tests and verifies service-specific messages.
 
--   *Attachments* tests and verifies message attachments, as defined in the [SOAP Message Transmission Optimization Mechanism (MTOM)](https://go.microsoft.com/fwlink/p/?linkid=81254) specification.
+-   *Attachments* tests and verifies message attachments, as defined in the [SOAP Message Transmission Optimization Mechanism (MTOM)](https://www.w3.org/TR/2005/REC-soap12-mtom-20050125/) specification.
 
--   *Eventing* tests and verifies [Web Services Eventing](https://go.microsoft.com/fwlink/p/?linkid=81245).
+-   *Eventing* tests and verifies [Web Services Eventing](/previous-versions/ms951233(v=msdn.10)).
 
 -   *Secure communication* includes elements of all the preceding scenarios.
 
@@ -50,10 +49,4 @@ You can also selectively implement sections of the test cases. For example, you 
  
 
  
-
- 
-
-
-
-
 

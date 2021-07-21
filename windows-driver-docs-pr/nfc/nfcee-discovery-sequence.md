@@ -1,6 +1,5 @@
 ---
 title: NFCEE discovery sequence
-ms.assetid: F6894EFD-4140-490B-B0BB-1A9BDA4DCECE
 keywords:
 - NFC
 - near field communications
@@ -23,11 +22,11 @@ Due to the limitations of the NCI 1.0 specification, chipset manufacturers have 
 
 Most implementations of NFCCs in this configuration report only the HCI network NFCEEID in its NFCEE\_DISCOVER\_RSP. However, since the NFC CX doesn’t know the actual number, its is unable to determine when the discovery process completes. NFC client drivers usually have a proprietary mechanism to know the additional NFCEEs that will be reporting. Therefore, NFC client driver can in its transport handling implement a small workaround to additional the additional NFCEEs in the response to satisfy this requirement.
 
-![non-standard nci nfcee discovery sequence](images/nonstandardnci-nfceediscoverysequence.png)
+![non-standard nci nfcee discovery sequence.](images/nonstandardnci-nfceediscoverysequence.png)
 
  
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

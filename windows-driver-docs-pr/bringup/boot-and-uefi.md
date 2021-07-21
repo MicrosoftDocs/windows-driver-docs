@@ -1,7 +1,6 @@
 ---
 title: Boot and UEFI
 description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
-ms.assetid: eff3f381-85fe-4bb3-a57f-3889ca8929f5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,7 +37,7 @@ When a Windows 10 device is turned on, it goes through the following high-level
 
 The following diagram illustrates this process at a high level.
 
-![boot process overview for windows phone](images/oem-boot-flow-overview.png)
+![boot process overview for windows phone.](images/oem-boot-flow-overview.png)
 
 Following are additional details about some of the components in this diagram:
 
@@ -83,7 +82,7 @@ Boot applications implement functionality for the following scenarios:
 
 The following diagram illustrates some of the key portions of the process that the Boot Manager follows after it is launched by the UEFI environment.
 
-![boot manager process for windows phone](images/oem-boot-flow-detail.png)
+![boot manager process for windows phone.](images/oem-boot-flow-detail.png)
 
 The following steps describe this process in more detail:
 

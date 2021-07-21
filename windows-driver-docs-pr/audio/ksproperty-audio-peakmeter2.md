@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PEAKMETER2
 description: Windows 8 introduces the KSPROPERTY\_AUDIO\_PEAKMETER2 property that reports the maximum audio signal level that occurred at a peakmeter node (KSNODETYPE\_PEAKMETER) since the last time the peakmeter node was reset.
-ms.assetid: 0A59A482-476D-412C-8D15-D821357C355B
 keywords: ["KSPROPERTY_AUDIO_PEAKMETER2 Audio Devices"]
 topic_type:
 - apiref
@@ -11,14 +10,13 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 04/21/2020
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_PEAKMETER2
 
-
-Windows 8 introduces the KSPROPERTY\_AUDIO\_PEAKMETER2 property that reports the maximum audio signal level that occurred at a peakmeter node (KSNODETYPE\_PEAKMETER) since the last time the peakmeter node was reset.
+Windows 8 introduced the KSPROPERTY\_AUDIO\_PEAKMETER2 property that reports the maximum audio signal level that occurred at a peakmeter node (KSNODETYPE\_PEAKMETER) since the last time the peakmeter node was reset.
 
 ## <span id="ddk_ksproperty_audio_peakmeter2_ks"></span><span id="DDK_KSPROPERTY_AUDIO_PEAKMETER2_KS"></span>
 
@@ -47,13 +45,12 @@ Windows 8 introduces the KSPROPERTY\_AUDIO\_PEAKMETER2 property that reports th
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
 The property value (operation data) is of type LONG and specifies the peak sample value at the node. If the peak value is negative, its absolute value is used.
 
@@ -80,12 +77,10 @@ A KSPROPERTY\_AUDIO\_PEAKMETER2 property request returns STATUS\_SUCCESS to indi
 </tbody>
 </table>
 
- 
 
-Remarks
--------
+## Remarks
 
-The KSPROPERTY\_AUDIO\_PEAKMETER2 property is almost identical to the [**KSPROPERTY\_AUDIO\_PEAKMETER**](ksproperty-audio-peakmeter.md) property. The KSPROPERTY\_AUDIO\_PEAKMETER2 property was introduced with Windows 8 and later operating systems to provide improved hardware metering of a pin topology. The legacy KSPROPERTY\_AUDIO\_PEAKMETER property has been retained for backward compatibility.
+The KSPROPERTY\_AUDIO\_PEAKMETER2 property is almost identical to the [**KSPROPERTY\_AUDIO\_PEAKMETER**](ksproperty-audio-peakmeter.md) property. The KSPROPERTY\_AUDIO\_PEAKMETER2 property was introduced with Windows 8 to provide improved hardware metering of a pin topology. The legacy KSPROPERTY\_AUDIO\_PEAKMETER property is deprecated and should no longer be used.
 
 SignedMinimum must be set to LONG\_MIN (instead of 0x8000), and SignedMaximum must be set to LONG\_MAX (instead of 0x7fff). And also, note that peak meter values are relative to this scale and the scale is linear in amplitude.
 
@@ -95,10 +90,9 @@ Therefore, in the case of the waveform that swings between -0.5 and +0.5 (on a s
 
 A KS audio filter handles this property request synchronously. If the request succeeds, it resets the peakmeter, which initializes the accumulated peak value to zero. If the request does not succeed, the peakmeter is not changed.
 
-The system sends an IOCTL\_KS\_PROPERTY request for the KSPROPERTY\_AUDIO\_PEAKMETER property at IRQL PASSIVE\_LEVEL.
+The system sends an IOCTL\_KS\_PROPERTY request for the KSPROPERTY\_AUDIO\_PEAKMETER2 property at IRQL PASSIVE\_LEVEL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -115,19 +109,8 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
-[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
+[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
 
 [**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md)
 
 [**KSPROPERTY\_AUDIO\_PEAKMETER**](ksproperty-audio-peakmeter.md)
-
- 
-
- 
-
-
-
-
-
-

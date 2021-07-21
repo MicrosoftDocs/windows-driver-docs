@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_CREATE Dispatch Routine
 description: IRP_MJ_CREATE Dispatch Routine
-ms.assetid: 1ff7915a-0949-43fe-9cf4-c0ad9abf6592
 keywords:
 - IRP_MJ_CREATE
 - security WDK file systems , adding security checks
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_CREATE Dispatch Routine
 
 
-A major portion of Windows security checking occurs inside the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) dispatch routine. This is because the bulk of the Windows security model is related to access validation. Access validation results are stored as part of the handle that is created as a result of this operation. Subsequent operations are validated against the rights computed at this point.
+A major portion of Windows security checking occurs inside the [**IRP\_MJ\_CREATE**](./irp-mj-create.md) dispatch routine. This is because the bulk of the Windows security model is related to access validation. Access validation results are stored as part of the handle that is created as a result of this operation. Subsequent operations are validated against the rights computed at this point.
 
 If the access rights on the file change after the file or directory has been opened, the original access rights provided during the IRP\_MJ\_CREATE operation continue to be valid. These access rights are associated with the handle, so as long as the handle persists, the access granted under it governs subsequent operations.
 
@@ -32,9 +31,4 @@ This section includes the following topics:
 [Handling Quotas on IRP\_MJ\_CREATE](handling-quotas-on-irp-mj-create.md)
 
  
-
- 
-
-
-
 

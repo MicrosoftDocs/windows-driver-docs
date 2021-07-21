@@ -1,7 +1,6 @@
 ---
 title: Backing up Boot Options in EFI
 description: Backing up Boot Options in EFI
-ms.assetid: a9c7052c-c554-460c-a8ba-12b79126e67f
 keywords:
 - back ups WDK boot options , EFI
 - NVRAM boot options WDK , backing up

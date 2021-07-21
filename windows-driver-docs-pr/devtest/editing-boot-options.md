@@ -1,7 +1,6 @@
 ---
 title: Editing Boot Options
 description: Editing Boot Options
-ms.assetid: b50b3ac8-154a-4c26-907f-11e274a5c7c8
 keywords:
 - boot options WDK , editing
 - editing boot options
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 This section is a practical guide to editing the boot options on a computer running Windows Server 2008, Windows Server 2012, or Windows 7 or later. It suggests a step-by-step procedure for customizing the basic elements of boot options.
 
-This section describes a method of using BCDEdit, a tool included with the operating system. For information about BCDEdit command syntax, type **bcdedit /?** or **bcdedit /? TOPICS** in a Command Prompt window. See [BCD Boot Options Reference](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcd-boot-options-reference) for more information.
+This section describes a method of using BCDEdit, a tool included with the operating system. For information about BCDEdit command syntax, type **bcdedit /?** or **bcdedit /? TOPICS** in a Command Prompt window. See [BCDEdit Options Reference](./bcd-boot-options-reference.md) for more information.
 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
@@ -38,7 +37,7 @@ Then, to make testing quicker and easier:
 -  [Change the boot menu time-out](changing-the-boot-menu-time-out.md). You can shorten the boot menu time-out so that Windows boots quickly. Or, lengthen the boot menu time-out so that you have ample time to select the preferred boot entry.
 
 ## Related Topics 
- [BCDEdit Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/bcdedit-command-line-options)
+ [BCDEdit Command-Line Options](/windows-hardware/manufacture/desktop/bcdedit-command-line-options)
 
 > [!CAUTION]
 > Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.

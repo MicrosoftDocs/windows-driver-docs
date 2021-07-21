@@ -1,5 +1,5 @@
 ---
-Description: This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.
+description: This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.
 title: How to transfer data to USB isochronous endpoints
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -28,15 +28,15 @@ The client driver starts an isochronous transfer by creating an URB for the requ
 
 Before you create a request for an isochronous transfer, you must have information about the pipe that is opened for the isochronous endpoint.
 
-A client driver that uses Windows Driver Model (WDM) routines has the pipe information in one of the [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structures of a [**USBD\_INTERFACE\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) array. The client driver obtained that array in the driver's previous request to select a configuration or an interface in the device.
+A client driver that uses Windows Driver Model (WDM) routines has the pipe information in one of the [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structures of a [**USBD\_INTERFACE\_LIST\_ENTRY**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) array. The client driver obtained that array in the driver's previous request to select a configuration or an interface in the device.
 
-A Windows Driver Framework (WDF) client driver must get a reference to the framework's target pipe object and call [**WdfUsbTargetPipeGetInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipegetinformation) to obtain pipe information in a [**WDF\_USB\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information) structure.
+A Windows Driver Framework (WDF) client driver must get a reference to the framework's target pipe object and call [**WdfUsbTargetPipeGetInformation**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipegetinformation) to obtain pipe information in a [**WDF\_USB\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information) structure.
 
 Based on the pipe information, determine this set of information:
 
 -   How much data can the host controller send to the pipe in each packet.
 
-    The amount of data that the client driver can send in a request cannot exceed the maximum number of bytes that the host controller can send or receive from an endpoint. The maximum number of bytes is indicated by the **MaximumPacketSize** member of [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) and [**WDF\_USB\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information) structures. The USB driver stack sets the **MaximumPacketSize** value the during a select-configuration or select-interface request.
+    The amount of data that the client driver can send in a request cannot exceed the maximum number of bytes that the host controller can send or receive from an endpoint. The maximum number of bytes is indicated by the **MaximumPacketSize** member of [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) and [**WDF\_USB\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information) structures. The USB driver stack sets the **MaximumPacketSize** value the during a select-configuration or select-interface request.
 
     For full speed devices, **MaximumPacketSize** is derived from the first 11 bits of the **wMaxPacketSize** field of the endpoint descriptor, which indicates the maximum number of bytes that the endpoint can send or receive in a transaction. For full speed devices the controller sends one transaction per bus interval.
 
@@ -92,7 +92,7 @@ Consider an example high-speed endpoint with the following characteristics indic
 
 After the client driver selects a configuration, **MaximumPacketSize** for the isochronous pipe indicates 3,072 bytes (total transactions \* **wMaxPacketSize**). The additional transactions allow the client driver to transfer 3,072 bytes in every microframe, and total 24,576 bytes in one frame. The following illustration shows how often an isochronous packet is transferred in one microframe for high-speed transmissions.
 
-![isochronous transfer](images/iso-packets.png)
+![isochronous transfer.](images/iso-packets.png)
 
 Consider an example SuperSpeed endpoint with these characteristics indicated in the endpoint and SuperSpeed endpoint companion descriptors:
 
@@ -104,14 +104,14 @@ Consider an example SuperSpeed endpoint with these characteristics indicated in 
 
 In preceding example, even though maximum number of bytes can be calculated as **wMaxPacketSize** \* (**bMaxBurst** +1) \* (**Mult** + 1) resulting in 49,152 bytes, the device limits the value to the **wBytesPerInterval** value that is 45,000 bytes. That value is also reflected in **MaximumPacketSize** 45,000. The client driver must only use the **MaximumPacketSize** value. In this example, the request can be divided into three burst transactions. The first two burst transactions each contain 16 chunks of **wMaxPacketSize**. The last burst transaction contains 12 chunks to hold the remaining bytes. This image shows the polling interval and bytes transferred through an isochronous packet for SuperSpeed transmission.
 
-![superspeed isochronous](images/iso-packets-superspeed.png)
+![superspeed isochronous.](images/iso-packets-superspeed.png)
 
 The following procedure describes how to build a request for an isochronous transfer.
 
 1.  Get the size of each isochronous packet.
 2.  Determine the number of isochronous packets per frame.
 3.  Calculate the number of isochronous packets that are required to hold the entire transfer buffer.
-4.  Allocate a [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure to describe the details of the transfer.
+4.  Allocate a [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure to describe the details of the transfer.
 5.  Specify the details of each isochronous packet, such as packet offset.
 
 For complete code example about sending isochronous transfer requests, USBSAMP.
@@ -120,8 +120,7 @@ This example in this topic simplifies USBSAMP implementation of isochronous tran
 
 The following procedure elaborates the preceding steps and shows calculations and routines that a client driver can use to build and send an isochronous transfer request for a high-speed isochronous endpoint. The values used in the procedure are based on the example endpoint characteristics described earlier.
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="get-the-size-of-an-isochronous-packet--"></a>Step 1: Get the size of an isochronous packet.
 
@@ -156,32 +155,32 @@ The client driver should validate these requirements:
 
 ### <a href="" id="allocate-an-urb-structure-to-describe-the-details-of-the-transfer-"></a>Step 4: Allocate an URB structure to describe the details of the transfer.
 
-1.  Allocate an [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure in nonpaged pool.
+1.  Allocate an [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure in nonpaged pool.
 
-    If your client driver uses WDM routines, the driver must call the [**USBD\_IsochUrbAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_isochurballocate) if you have the Windows Driver Kit (WDK) for Windows 8. A client driver can uses the routine to target Windows Vista and later versions of the Windows operating system. If you do not have the WDK for Windows 8 or if the client driver is intended for an earlier version of the operating system, you can allocate the structure on the stack or in nonpaged pool by calling [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag).
+    If your client driver uses WDM routines, the driver must call the [**USBD\_IsochUrbAllocate**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_isochurballocate) if you have the Windows Driver Kit (WDK) for Windows 8. A client driver can uses the routine to target Windows Vista and later versions of the Windows operating system. If you do not have the WDK for Windows 8 or if the client driver is intended for an earlier version of the operating system, you can allocate the structure on the stack or in nonpaged pool by calling [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag).
 
-    A WDF client driver can call the [**WdfUsbTargetDeviceCreateIsochUrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateisochurb) method to allocate memory for the [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure.
+    A WDF client driver can call the [**WdfUsbTargetDeviceCreateIsochUrb**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateisochurb) method to allocate memory for the [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure.
 
-2.  The **UrbIsochronousTransfer** member of the [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure points to a [**\_URB\_ISOCH\_TRANSFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer) structure that describes the details of an isochronous transfer. Initialize the following **UrbIsochronousTransfer** members as follows:
-    -   Set the **UrbIsochronousTransfer.Hdr.Length** member to the size of the URB. To get the size of the URB, call [**GET\_ISO\_URB\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-get_iso_urb_size) macro and specify the number of packets.
+2.  The **UrbIsochronousTransfer** member of the [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure points to a [**\_URB\_ISOCH\_TRANSFER**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer) structure that describes the details of an isochronous transfer. Initialize the following **UrbIsochronousTransfer** members as follows:
+    -   Set the **UrbIsochronousTransfer.Hdr.Length** member to the size of the URB. To get the size of the URB, call [**GET\_ISO\_URB\_SIZE**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-get_iso_urb_size) macro and specify the number of packets.
     -   Set the **UrbIsochronousTransfer.Hdr.Function** member to `URB_FUNCTION_ISOCH_TRANSFER`.
     -   Set the **UrbIsochronousTransfer.NumberOfPackets** member to the number of isochronous packets.
     -   Set the **UrbIsochronousTransfer.PipeHandle** to the opaque handle for the pipe that is associated with the endpoint. Make sure that the pipe handle is the USBD pipe handle used by the Universal Serial Bus (USB) driver stack.
 
-        To obtain the USBD pipe handle, a WDF client driver can call the [**WdfUsbTargetPipeWdmGetPipeHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipewdmgetpipehandle) method and specify the WDFUSBPIPE handle to the framework's pipe object. A WDM client driver must use the same handle that was obtained in the **PipeHandle** member of the [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structure.
+        To obtain the USBD pipe handle, a WDF client driver can call the [**WdfUsbTargetPipeWdmGetPipeHandle**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipewdmgetpipehandle) method and specify the WDFUSBPIPE handle to the framework's pipe object. A WDM client driver must use the same handle that was obtained in the **PipeHandle** member of the [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structure.
 
     -   Specify the direction of the transfer. Set **UrbIsochronousTransfer.TransferFlags** to USBD\_TRANSFER\_DIRECTION\_IN for an isochronous IN transfer (reading from the device); USBD\_TRANSFER\_DIRECTION\_OUT for an isochronous OUT transfer (writing to the device).
     -   Specify the USBD\_START\_ISO\_TRANSFER\_ASAP flag in **UrbIsochronousTransfer**.TransferFlags. The flag instructs the USB driver stack to send the transfer in the next appropriate frame. For the first time that the client driver sends an isochronous URB for this pipe, the driver stack sends the isochronous packets in the URB as soon as it can. The USB driver stack tracks the next frame to use for subsequent URBs on that pipe. If there is a delay in sending a subsequent isochronous URB that uses the USBD\_START\_ISO\_TRANSFER\_ASAP flag, the driver stack considers some or all packets of that URB to be late and does not transfer those packets.
 
         The USB driver stack resets its USBD\_START\_ISO\_TRANSFER\_ASAP start frame tracking, if the stack does not receive an isochronous URB for 1024 frames after it completed the previous URB for that pipe. Instead of specifying the USBD\_START\_ISO\_TRANSFER\_ASAP flag, you can specify the start frame. For more information, see the Remarks section.
 
-    -   Specify the transfer buffer and its size. You can set a pointer to the buffer in **UrbIsochronousTransfer.TransferBuffer** or the [**MDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) that describes the buffer in **UrbIsochronousTransfer.TransferBufferMDL**.
+    -   Specify the transfer buffer and its size. You can set a pointer to the buffer in **UrbIsochronousTransfer.TransferBuffer** or the [**MDL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) that describes the buffer in **UrbIsochronousTransfer.TransferBufferMDL**.
 
-        To retrieve the [**MDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) for the transfer buffer, a WDF client driver can call [**WdfRequestRetrieveOutputWdmMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputwdmmdl) or [**WdfRequestRetrieveInputWdmMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputwdmmdl), depending on the direction of the transfer.
+        To retrieve the [**MDL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) for the transfer buffer, a WDF client driver can call [**WdfRequestRetrieveOutputWdmMdl**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputwdmmdl) or [**WdfRequestRetrieveInputWdmMdl**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputwdmmdl), depending on the direction of the transfer.
 
 ### <a href="" id="specify-the-details-of-each-isochronous-packet-in-the-transfer-"></a>Step 5: Specify the details of each isochronous packet in the transfer.
 
-The USB driver stack allocates the new [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure that is large enough to hold information about each isochronous packet, but not the data contained in the packet. In the **URB** structure, the **UrbIsochronousTransfer.IsoPacket** member is an array of [**USBD\_ISO\_PACKET\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_iso_packet_descriptor) that describes the details of each isochronous packet in the transfer. Packets must be contiguous. The number of elements in the array must be the number of isochronous packets specified in the URB's **UrbIsochronousTransfer.NumberOfPackets** member.
+The USB driver stack allocates the new [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure that is large enough to hold information about each isochronous packet, but not the data contained in the packet. In the **URB** structure, the **UrbIsochronousTransfer.IsoPacket** member is an array of [**USBD\_ISO\_PACKET\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_iso_packet_descriptor) that describes the details of each isochronous packet in the transfer. Packets must be contiguous. The number of elements in the array must be the number of isochronous packets specified in the URB's **UrbIsochronousTransfer.NumberOfPackets** member.
 
 For a high-speed transfer, each element in the array correlates to one isochronous packet in one microframe. For full-speed, each element correlates to one isochronous packet transferred in one frame.
 
@@ -238,14 +237,13 @@ Total length transferred is 360,000 bytes.
 
 The **UrbIsochronousTransfer.IsoPacket\[i\]**.Length member does not imply the length of each packet of the isochronous URB. **IsoPacket\[i\].Length** is updated by the USB driver stack to indicate the actual number of bytes that are received from the device for isochronous IN transfers. For isochronous OUT transfers, the driver stack ignores the value that is set in **IsoPacket\[i\].Length**.
 
-Remarks
--------
+## Remarks
 
 **Specify the starting USB frame number for the transfer**
 
-The **UrbIsochronousTransfer.StartFrame** member of the URB specifies the starting USB frame number for the transfer. There is always latency between the time that the client driver submits an URB and the time that the USB driver stack processes the URB. Therefore, the client driver should always specify a start frame that is later than the frame that is current when the driver submits the URB. To retrieve the current frame number, the client driver can send the URB\_FUNCTION\_GET\_CURRENT\_FRAME\_NUMBER request to the USB driver stack ([**\_URB\_GET\_CURRENT\_FRAME\_NUMBER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb_get_current_frame_number)).
+The **UrbIsochronousTransfer.StartFrame** member of the URB specifies the starting USB frame number for the transfer. There is always latency between the time that the client driver submits an URB and the time that the USB driver stack processes the URB. Therefore, the client driver should always specify a start frame that is later than the frame that is current when the driver submits the URB. To retrieve the current frame number, the client driver can send the URB\_FUNCTION\_GET\_CURRENT\_FRAME\_NUMBER request to the USB driver stack ([**\_URB\_GET\_CURRENT\_FRAME\_NUMBER**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_get_current_frame_number)).
 
-For isochronous transfers, the absolute difference between the current frame and the **StartFrame** value must be less than USBD\_ISO\_START\_FRAME\_RANGE. If StartFrame is not within the proper range, the USB driver stack sets the **Status** member of the URB header (see [**\_URB\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb_header)) to USBD\_STATUS\_BAD\_START\_FRAME and discards the entire URB.
+For isochronous transfers, the absolute difference between the current frame and the **StartFrame** value must be less than USBD\_ISO\_START\_FRAME\_RANGE. If StartFrame is not within the proper range, the USB driver stack sets the **Status** member of the URB header (see [**\_URB\_HEADER**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_header)) to USBD\_STATUS\_BAD\_START\_FRAME and discards the entire URB.
 
 The **StartFrame** value specified in the URB indicates the frame number in which the first isochronous packet of the URB is transferred. The frame number for subsequent packets depends on the bus speed and polling period values of the endpoint. For example, for a full speed transmission, the first packet is transferred in **StartFrame**; second packet is transferred in **StartFrame**+1, and so on. The way in which the USB driver stack transfers isochronous packets, for full speed, in frames is shown as follows:
 
@@ -433,7 +431,4 @@ Exit:
 ```
 
 ## Related topics
-[USB I/O Operations](usb-device-i-o.md)  
-
-
-
+[USB I/O Operations](usb-device-i-o.md)

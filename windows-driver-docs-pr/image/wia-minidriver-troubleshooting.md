@@ -1,7 +1,6 @@
 ---
 title: WIA Minidriver Troubleshooting
 description: WIA Minidriver Troubleshooting
-ms.assetid: a0944bdd-56c4-4f7b-b542-eb353cd4d1f2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ wiasUpdateScanRect, CheckXResAndUpdate failed (0x80070057)
  drvValidateItemProperties with hr = 0x80070057 (This is normal if the app wrote an invalid value)
 ```
 
-The output shows that the Horizontal Resolution property is causing the failure. The application is attempting to set the resolution to 1200, but the list of supported resolutions does not include 1200. Thus, the WIA service validation helper [**wiasValidateItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasvalidateitemproperties) rejects the request to set this value.
+The output shows that the Horizontal Resolution property is causing the failure. The application is attempting to set the resolution to 1200, but the list of supported resolutions does not include 1200. Thus, the WIA service validation helper [**wiasValidateItemProperties**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasvalidateitemproperties) rejects the request to set this value.
 
 Now that the problem is identified, it is up to the developer to determine whether it is the driver or the application that must be revised. If the scanner's specifications allow it to support all resolutions between 100 and 1400 dpi, the driver should be able to handle a request for 1200 dpi. If the scanner does not support this setting, the application should be changed so it does not attempt to set the Horizontal Resolution to a value that is not valid for this property. In this case, the application should then check that a value is valid before attempting to set a property to this value.
 

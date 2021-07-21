@@ -2,7 +2,6 @@
 title: IRP_MN_SET_LOCK
 description: Bus drivers must handle this IRP for their child devices (child PDOs) that support device locking. Function and filter drivers do not handle this request.
 ms.date: 08/12/2017
-ms.assetid: d4e09527-f817-4eb5-b0f5-7584de8888b1
 keywords:
  - IRP_MN_SET_LOCK Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -13,12 +12,15 @@ ms.localizationpriority: medium
 
 Bus drivers must handle this IRP for their child devices (child PDOs) that support device locking. Function and filter drivers do not handle this request.
 
-Major Code
-----------
+## Value
+
+0x12
+
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-When Sent
----------
+
+## When Sent
 
 The PnP manager sends this IRP to direct driver(s) to lock the device and prevent device eject, or to unlock the device.
 
@@ -27,7 +29,7 @@ The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in an arbitrary thread con
 ## Input Parameters
 
 
-The **Parameters.SetLock.Lock** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is a BOOLEAN value specifying whether to lock (TRUE) or unlock (FALSE) the device.
+The **Parameters.SetLock.Lock** member of the [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is a BOOLEAN value specifying whether to lock (TRUE) or unlock (FALSE) the device.
 
 ## Output Parameters
 
@@ -43,21 +45,19 @@ On success, a driver sets **Irp-&gt;IoStatus.Information** to zero.
 
 If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
+Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
 
-Operation
----------
+## Operation
 
 If a driver returns success for this IRP, it ensures that the device has been locked or unlocked before completing the IRP.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,9 +73,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

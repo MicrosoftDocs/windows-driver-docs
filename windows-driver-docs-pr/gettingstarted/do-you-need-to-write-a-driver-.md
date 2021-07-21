@@ -1,7 +1,6 @@
 ---
 title: Do you need to write a driver
 description: Microsoft Windows contains built-in drivers for many device types. If there is a built-in driver for your device type, you won't need to write your own driver. Your device can use the built-in driver.
-ms.assetid: B08994F9-9E60-4C49-BD5C-F5C128075D33
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ Microsoft Windows contains built-in drivers for many device types. If there is a
 ## <span id="Built-in_drivers_for_USB_devices"></span><span id="built-in_drivers_for_usb_devices"></span><span id="BUILT-IN_DRIVERS_FOR_USB_DEVICES"></span>Built-in drivers for USB devices
 
 
-If your device belongs to a device class that is defined by the USB Device Working Group (DWG), there may already be an existing Windows USB class driver for it. For more information, see [Drivers for the Supported USB Device Classes](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+If your device belongs to a device class that is defined by the USB Device Working Group (DWG), there may already be an existing Windows USB class driver for it. For more information, see [Drivers for the Supported USB Device Classes](../usbcon/supported-usb-classes.md).
 
 ## <span id="Built-in_drivers_for_other_devices"></span><span id="built-in_drivers_for_other_devices"></span><span id="BUILT-IN_DRIVERS_FOR_OTHER_DEVICES"></span>Built-in drivers for other devices
 
@@ -41,13 +40,13 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 <td align="left"><p>ACPI: ACPI driver</p></td>
 <td align="left"><p>Acpi.sys</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for basic ACPI device functionality by means of the Acpi.sys driver and ACPI BIOS. To enhance the functionality of an ACPI device, the vendor can supply a WDM function driver. For more information about Windows ACPI support, see <a href="https://docs.microsoft.com/windows-hardware/drivers/acpi/supporting-acpi-devices" data-raw-source="[Supporting ACPI Devices](https://docs.microsoft.com/windows-hardware/drivers/acpi/supporting-acpi-devices)">Supporting ACPI Devices</a> in the ACPI Design Guide.</p></td>
+<td align="left"><p>Microsoft provides support for basic ACPI device functionality by means of the Acpi.sys driver and ACPI BIOS. To enhance the functionality of an ACPI device, the vendor can supply a WDM function driver. For more information about Windows ACPI support, see <a href="/windows-hardware/drivers/acpi/supporting-acpi-devices" data-raw-source="[Supporting ACPI Devices](../acpi/supporting-acpi-devices.md)">Supporting ACPI Devices</a> in the ACPI Design Guide.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Audio: Microsoft Audio Class driver</p></td>
 <td align="left"><p>PortCls.sys</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for basic audio rendering and audio capture via its Port Class driver (PortCls). It is the responsibility of the hardware vendor of an audio device, to provide an adapter driver to work with PortCls. The adapter driver includes initialization code, driver-management code (including the DriverEntry function) and a collection of audio miniport drivers. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/audio/introduction-to-port-class" data-raw-source="[Introduction to Port Class](https://docs.microsoft.com/windows-hardware/drivers/audio/introduction-to-port-class)">Introduction to Port Class</a>.</p></td>
+<td align="left"><p>Microsoft provides support for basic audio rendering and audio capture via its Port Class driver (PortCls). It is the responsibility of the hardware vendor of an audio device, to provide an adapter driver to work with PortCls. The adapter driver includes initialization code, driver-management code (including the DriverEntry function) and a collection of audio miniport drivers. For more information, see <a href="/windows-hardware/drivers/audio/introduction-to-port-class" data-raw-source="[Introduction to Port Class](../audio/introduction-to-port-class.md)">Introduction to Port Class</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Buses: Native SD bus driver, native SD storage class driver, and storage miniport driver</p></td>
@@ -59,7 +58,7 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 <td align="left"><p>HID: HID I2C driver</p></td>
 <td align="left"><p>HIDI2C.sys</p></td>
 <td align="left"><p>Windows 8 and later</p></td>
-<td align="left"><p>Microsoft provides support for HID over I2C devices on SoC systems that support Simple Peripheral Bus (SPB) and general-purpose I/O (GPIO). It does so by means of the HIDI2C.sys driver. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/hid/hid-over-i2c-guide" data-raw-source="[HID over I2C](https://docs.microsoft.com/windows-hardware/drivers/hid/hid-over-i2c-guide)">HID over I2C</a>.</p></td>
+<td align="left"><p>Microsoft provides support for HID over I2C devices on SoC systems that support Simple Peripheral Bus (SPB) and general-purpose I/O (GPIO). It does so by means of the HIDI2C.sys driver. For more information, see <a href="/windows-hardware/drivers/hid/hid-over-i2c-guide" data-raw-source="[HID over I2C](../hid/hid-over-i2c-guide.md)">HID over I2C</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HID: Legacy game port driver</p></td>
@@ -67,7 +66,7 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 <td align="left"><p>Windows Vista</p>
 <p>Windows Server 2003</p>
 <p>Windows XP</p></td>
-<td align="left"><p>In Windows Vista and earlier, Microsoft provided support for legacy (non-USB, non-Bluetooth, non-I2C) game ports by means of the HidGame.sys and Gameenum.sys drivers. For more information, see <a href="https://docs.microsoft.com/previous-versions/jj126201(v=vs.85)" data-raw-source="[HID Transports Supported in Windows](https://docs.microsoft.com/previous-versions/jj126201(v=vs.85))">HID Transports Supported in Windows</a>.</p></td>
+<td align="left"><p>In Windows Vista and earlier, Microsoft provided support for legacy (non-USB, non-Bluetooth, non-I2C) game ports by means of the HidGame.sys and Gameenum.sys drivers. For more information, see <a href="/previous-versions/jj126201(v=vs.85)" data-raw-source="[HID Transports Supported in Windows](/previous-versions/jj126201(v=vs.85))">HID Transports Supported in Windows</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HID: Legacy keyboard class driver</p></td>
@@ -91,37 +90,37 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 <td align="left"><p>Imaging: Web Services for Devices (WSD) scan class driver</p></td>
 <td align="left"><p>WSDScan.sys</p></td>
 <td align="left"><p>Windows Vista and later</p></td>
-<td align="left"><p>Microsoft provides support for web services scanners (that is, scanners that are meant to be used over the web) by means of the WSD scan driver (wsdscan.sys). However, a web services scanner device that supports WSD Distributed Scan Management must implement two web services protocols. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/image/wia-with-web-services-for-devices" data-raw-source="[WIA with Web Services for Devices](https://docs.microsoft.com/windows-hardware/drivers/image/wia-with-web-services-for-devices)">WIA with Web Services for Devices</a>.</p></td>
+<td align="left"><p>Microsoft provides support for web services scanners (that is, scanners that are meant to be used over the web) by means of the WSD scan driver (wsdscan.sys). However, a web services scanner device that supports WSD Distributed Scan Management must implement two web services protocols. For more information, see <a href="/windows-hardware/drivers/image/wia-with-web-services-for-devices" data-raw-source="[WIA with Web Services for Devices](../image/wia-with-web-services-for-devices.md)">WIA with Web Services for Devices</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Print: Microsoft Plotter Driver</p></td>
 <td align="left"><p>Msplot</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for plotters that support the Hewlett-Packard Graphics Language by means of the Microsoft Plotter Driver (Msplot). To enhance the functionality of a plotter, you can create a minidriver, which consists of one or more plotter characterization data (PCD) files. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/plotter-driver-minidrivers" data-raw-source="[Plotter Driver Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/print/plotter-driver-minidrivers)">Plotter Driver Minidrivers</a>.</p></td>
+<td align="left"><p>Microsoft provides support for plotters that support the Hewlett-Packard Graphics Language by means of the Microsoft Plotter Driver (Msplot). To enhance the functionality of a plotter, you can create a minidriver, which consists of one or more plotter characterization data (PCD) files. For more information, see <a href="/windows-hardware/drivers/print/plotter-driver-minidrivers" data-raw-source="[Plotter Driver Minidrivers](../print/plotter-driver-minidrivers.md)">Plotter Driver Minidrivers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Print: Microsoft PostScript Printer Driver</p></td>
 <td align="left"><p>Pscript</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for PostScript printers by means of the PostScript Printer Driver (Pscript). To enhance the functionality of a PostScript printer, you can create a minidriver, which consists of one or more PostScript Printer Description (PPD) files and font (NTF) files. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/pscript-minidrivers" data-raw-source="[Pscript Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/print/pscript-minidrivers)">Pscript Minidrivers</a>.</p></td>
+<td align="left"><p>Microsoft provides support for PostScript printers by means of the PostScript Printer Driver (Pscript). To enhance the functionality of a PostScript printer, you can create a minidriver, which consists of one or more PostScript Printer Description (PPD) files and font (NTF) files. For more information, see <a href="/windows-hardware/drivers/print/pscript-minidrivers" data-raw-source="[Pscript Minidrivers](../print/pscript-minidrivers.md)">Pscript Minidrivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Print: Microsoft Universal Printer Driver</p></td>
 <td align="left"><p>Unidrv</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for non-PostScript printers by means of the Universal Printer Driver (Unidrv). To enhance the functionality of a non-PostScript printer, you can create a minidriver, which consists of one or more generic printer description (GPD) files. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/microsoft-universal-printer-driver" data-raw-source="[Microsoft Universal Printer Driver](https://docs.microsoft.com/windows-hardware/drivers/print/microsoft-universal-printer-driver)">Microsoft Universal Printer Driver</a>.</p></td>
+<td align="left"><p>Microsoft provides support for non-PostScript printers by means of the Universal Printer Driver (Unidrv). To enhance the functionality of a non-PostScript printer, you can create a minidriver, which consists of one or more generic printer description (GPD) files. For more information, see <a href="/windows-hardware/drivers/print/microsoft-universal-printer-driver" data-raw-source="[Microsoft Universal Printer Driver](../print/microsoft-universal-printer-driver.md)">Microsoft Universal Printer Driver</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Print: Microsoft v4 Printer Driver</p></td>
 <td align="left"></td>
 <td align="left"><p>Windows 8 and later</p></td>
-<td align="left"><p>Beginning with Windows 8, Microsoft provides a single in-box class driver that supports PostScript and non-PostScript printers as well as plotters. This driver supersedes the Microsoft Plotter Driver, Microsoft Universal Printer Driver, and Microsoft PostScript Printer Driver. Used on its own, without modification, this printer driver provides basic printing support. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/v4-printer-driver" data-raw-source="[V4 Printer Driver](https://docs.microsoft.com/windows-hardware/drivers/print/v4-printer-driver)">V4 Printer Driver</a>.</p></td>
+<td align="left"><p>Beginning with Windows 8, Microsoft provides a single in-box class driver that supports PostScript and non-PostScript printers as well as plotters. This driver supersedes the Microsoft Plotter Driver, Microsoft Universal Printer Driver, and Microsoft PostScript Printer Driver. Used on its own, without modification, this printer driver provides basic printing support. For more information, see <a href="/windows-hardware/drivers/print/v4-printer-driver" data-raw-source="[V4 Printer Driver](../print/v4-printer-driver.md)">V4 Printer Driver</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Print: Microsoft XPS Printer Driver</p></td>
 <td align="left"><p>XPSDrv</p></td>
 <td align="left"><p>Windows Vista and later</p></td>
-<td align="left"><p>Microsoft provides support for printing the XPS document format with the XPS Printer Driver (XPSDrv). This driver extends Microsoft's GDI-based, version 3 printer driver architecture to support consuming XML Paper Specification (XPS) documents. With an XPSDrv printer driver, the XPS Document format is used as a spool file format and as a document file format. Used on its own, without modification, the XPSDrv printer driver provides support for basic XPS printing. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/xpsdrv-printer-drivers" data-raw-source="[XPSDrv Printer Drivers](https://docs.microsoft.com/windows-hardware/drivers/print/xpsdrv-printer-drivers)">XPSDrv Printer Drivers</a>.</p></td>
+<td align="left"><p>Microsoft provides support for printing the XPS document format with the XPS Printer Driver (XPSDrv). This driver extends Microsoft's GDI-based, version 3 printer driver architecture to support consuming XML Paper Specification (XPS) documents. With an XPSDrv printer driver, the XPS Document format is used as a spool file format and as a document file format. Used on its own, without modification, the XPSDrv printer driver provides support for basic XPS printing. For more information, see <a href="/windows-hardware/drivers/print/xpsdrv-printer-drivers" data-raw-source="[XPSDrv Printer Drivers](../print/xpsdrv-printer-drivers.md)">XPSDrv Printer Drivers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Sensors: Sensor HID class driver</p></td>
@@ -139,18 +138,8 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 <td align="left"><p>WPD: Media Transfer Protocol class driver</p></td>
 <td align="left"><p>WpdMtpDr.dll, WpdMtp.dll,WpdMtpUs.dll, WpdConns.dll, and WpdUsb.sys</p></td>
 <td align="left"><p>Windows Vista and later</p></td>
-<td align="left"><p>Microsoft provides support for portable devices that require connectivity with Windows, such as music players, digital cameras, cellular phones, and health-monitoring devices, by means of the Media Transfer Protocol class driver. A vendor that uses this class driver must implement the MTP class protocol on the device. (For digital still cameras, your MTP implementation should be backward compatible with PTP.) For more information, see <a href="https://docs.microsoft.com/previous-versions/ff597573(v=vs.85)" data-raw-source="[Guidance for the Hardware Vendor](https://docs.microsoft.com/previous-versions/ff597573(v=vs.85))">Guidance for the Hardware Vendor</a>.</p></td>
+<td align="left"><p>Microsoft provides support for portable devices that require connectivity with Windows, such as music players, digital cameras, cellular phones, and health-monitoring devices, by means of the Media Transfer Protocol class driver. A vendor that uses this class driver must implement the MTP class protocol on the device. (For digital still cameras, your MTP implementation should be backward compatible with PTP.) For more information, see <a href="/previous-versions/ff597573(v=vs.85)" data-raw-source="[Guidance for the Hardware Vendor](/previous-versions/ff597573(v=vs.85))">Guidance for the Hardware Vendor</a>.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
 

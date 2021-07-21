@@ -1,7 +1,6 @@
 ---
 title: Obtaining an HDAUDIO_BUS_INTERFACE DDI Object
 description: Obtaining an HDAUDIO_BUS_INTERFACE DDI Object
-ms.assetid: 78667254-62a6-41fe-af36-43dbdea63aa8
 keywords:
 - HDAUDIO_BUS_INTERFACE structure
 ms.date: 04/20/2017
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object
 
 
-The following table shows the input parameter values that the function driver writes into the [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) IOCTL to obtain an [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure and a context object for the version of the HD Audio DDI that this structure defines.
+The following table shows the input parameter values that the function driver writes into the [**IRP\_MN\_QUERY\_INTERFACE**](../kernel/irp-mn-query-interface.md) IOCTL to obtain an [**HDAUDIO\_BUS\_INTERFACE**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure and a context object for the version of the HD Audio DDI that this structure defines.
 
 <table>
 <colgroup>
@@ -31,7 +30,7 @@ The following table shows the input parameter values that the function driver wr
 </tr>
 <tr class="even">
 <td align="left"><p>USHORT <em>Size</em></p></td>
-<td align="left"><p><strong>sizeof</strong>(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface)"><strong>HDAUDIO_BUS_INTERFACE</strong></a>)</p></td>
+<td align="left"><p><strong>sizeof</strong>(<a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface)"><strong>HDAUDIO_BUS_INTERFACE</strong></a>)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>USHORT <em>Version</em></p></td>
@@ -39,7 +38,7 @@ The following table shows the input parameter values that the function driver wr
 </tr>
 <tr class="even">
 <td align="left"><p>PINTERFACE <em>Interface</em></p></td>
-<td align="left"><p>Pointer to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface)"><strong>HDAUDIO_BUS_INTERFACE</strong></a> structure</p></td>
+<td align="left"><p>Pointer to <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface)"><strong>HDAUDIO_BUS_INTERFACE</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>PVOID <em>InterfaceSpecificData</em></p></td>
@@ -50,9 +49,9 @@ The following table shows the input parameter values that the function driver wr
 
  
 
-The function driver allocates the storage for the [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure and includes a pointer to this structure in the IOCTL. In the preceding table, the pointer to the **HDAUDIO\_BUS\_INTERFACE** structure is cast to type **PINTERFACE**, which is a pointer to a structure of type [**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface). The names and types of the first five members of **HDAUDIO\_BUS\_INTERFACE** match those of the five members of **INTERFACE**. **HDAUDIO\_BUS\_INTERFACE** contains additional members that are function pointers to the DDI routines. In response to receiving the IOCTL from the function driver, the HD Audio bus driver fills in the entire **HDAUDIO\_BUS\_INTERFACE** structure.
+The function driver allocates the storage for the [**HDAUDIO\_BUS\_INTERFACE**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure and includes a pointer to this structure in the IOCTL. In the preceding table, the pointer to the **HDAUDIO\_BUS\_INTERFACE** structure is cast to type **PINTERFACE**, which is a pointer to a structure of type [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface). The names and types of the first five members of **HDAUDIO\_BUS\_INTERFACE** match those of the five members of **INTERFACE**. **HDAUDIO\_BUS\_INTERFACE** contains additional members that are function pointers to the DDI routines. In response to receiving the IOCTL from the function driver, the HD Audio bus driver fills in the entire **HDAUDIO\_BUS\_INTERFACE** structure.
 
-The following table shows the values that the HD Audio bus driver writes into the first five members of the [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure.
+The following table shows the values that the HD Audio bus driver writes into the first five members of the [**HDAUDIO\_BUS\_INTERFACE**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure.
 
 <table>
 <colgroup>
@@ -68,7 +67,7 @@ The following table shows the values that the HD Audio bus driver writes into th
 <tbody>
 <tr class="odd">
 <td align="left"><p>USHORT <strong>Size</strong></p></td>
-<td align="left"><p><strong>sizeof</strong>(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface)"><strong>HDAUDIO_BUS_INTERFACE</strong></a>)</p></td>
+<td align="left"><p><strong>sizeof</strong>(<a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface)"><strong>HDAUDIO_BUS_INTERFACE</strong></a>)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>USHORT <strong>Version</strong></p></td>
@@ -92,11 +91,4 @@ The following table shows the values that the HD Audio bus driver writes into th
  
 
 In the preceding table, the **Context** member points to a context object that contains information that is specific to the particular instance of the baseline HD Audio DDI that the client obtains from the IOCTL. When calling any of the routines in the DDI, the client function driver must always specify the **Context** pointer value as the first call parameter. The context information is opaque to the client. The HD Audio bus driver creates a different context object for each client. When the context object is no longer required, the client frees the context object by calling the **InterfaceDereference** routine shown in the preceding table. If required, a client can create additional references to the object by calling the **InterfaceReference** routine, but the client is responsible for releasing these references when it no longer requires them.
-
- 
-
- 
-
-
-
 

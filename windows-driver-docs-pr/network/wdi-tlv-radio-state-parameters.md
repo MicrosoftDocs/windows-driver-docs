@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RADIO_STATE_PARAMETERS
 description: WDI_TLV_RADIO_STATE_PARAMETERS is a TLV that contains radio state parameters for OID_WDI_TASK_SET_RADIO_STATE.
-ms.assetid: D977DF8A-146C-4921-AE7C-5FBEC7FBA4C8
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RADIO_STATE_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_RADIO\_STATE\_PARAMETERS
 
 
-WDI\_TLV\_RADIO\_STATE\_PARAMETERS is a TLV that contains radio state parameters for [OID\_WDI\_TASK\_SET\_RADIO\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-set-radio-state).
+WDI\_TLV\_RADIO\_STATE\_PARAMETERS is a TLV that contains radio state parameters for [OID\_WDI\_TASK\_SET\_RADIO\_STATE](./oid-wdi-task-set-radio-state.md).
 
 ## TLV Type
 
@@ -48,8 +47,7 @@ The size (in bytes) of a UINT8.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,9 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -4,7 +4,6 @@ description: The AddText method adds a new response of type BIDI\_TEXT to the co
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 2421D77A-E0B2-4114-A27E-59E0D9A88E7C
 keywords: ["AddText method Print Devices", "AddText method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddText method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddText method adds a new response of type BIDI\_TEXT to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddText(
@@ -30,8 +28,7 @@ HRESULT AddText(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -39,13 +36,11 @@ The schema.
 *bstrValue* \[in\]  
 The text.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

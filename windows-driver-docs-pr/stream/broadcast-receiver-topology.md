@@ -1,7 +1,6 @@
 ---
 title: Broadcast Receiver Topology
 description: Broadcast Receiver Topology
-ms.assetid: d6f7614b-b7ff-4d42-8e04-fbf1b4f0445a
 keywords:
 - Broadcast Driver Architecture WDK AVStream , broadcast receiver topology
 - BDA WDK AVStream , broadcast receiver topology

@@ -32,7 +32,7 @@ The architectue uses a driver published by the hardware manufacturer on Windows 
 
 The KMDF driver is published by the partner and consists of components shown in the diagram below. This matches the device with a hardware ID (typically, a VID & PID). The driver creates a 3D printer device node on installation which triggers installation of the print queue and the slicer drivers. The partner provids v4 printer drivers for the 3D printer device node that is created.
 
-![kmdf usb filter driver](images/kmdf-usb-filter-driver.png)
+![kmdf usb filter driver.](images/kmdf-usb-filter-driver.png)
 
 ##### MS3DPrintUSB.sys
 
@@ -50,7 +50,7 @@ The kernel mode device driver that creates the 3D printer dev node under Enum\\3
 
 Partnerimp.dll is partner's implementation of the published Microsoft interface. The DLL communicates with the partner's device using their protocols. 3DPrintService.exe loads this DLL at runtime to drive the operations of the 3D printer device.
 
-![3dprintservice](images/3dprintservice.png)
+![Diagram that shows the device communication flow for 3 D printer device operations.](images/3dprintservice.png)
 
 ### Printer usage sequence
 
@@ -94,7 +94,7 @@ This API is used by third-party manufacturers to print the document on their pri
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers**
 
-![3d printer registry](images/3d-printer-registry.png)
+![3d printer registry.](images/3d-printer-registry.png)
 
 ### HRESULT Query(\_In\_ LPCWSTR command, \_In\_ LPCWSTR commandData, \_Out\_ LPWSTR resultBuffer, \_Out\_ resultBufferSize, , \_In\_ LPVOID\* ppPartnerData)
 

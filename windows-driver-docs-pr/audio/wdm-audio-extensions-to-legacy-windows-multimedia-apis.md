@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Extensions to Legacy Windows Multimedia APIs
 description: WDM Audio Extensions to Legacy Windows Multimedia APIs
-ms.assetid: a1009b7f-3720-454f-a128-ae148f781edc
 keywords:
 - WDM audio extensions WDK
 - extended audio capabilities WDK audio
@@ -18,9 +17,9 @@ ms.localizationpriority: medium
 
 Recent versions of Windows have extended the audio functions in the Windows multimedia APIs aux, midiIn, midiOut, mixer, waveIn, and waveOut to output information about the status and capabilities of WDM audio drivers.
 
-The [**auxGetDevCaps**](https://docs.microsoft.com/previous-versions/dd756712(v=vs.85)), [**midiInGetDevCaps**](https://docs.microsoft.com/previous-versions/dd798453(v=vs.85)), [**midiOutGetDevCaps**](https://docs.microsoft.com/previous-versions/dd798469(v=vs.85)), [**mixerGetDevCaps**](https://docs.microsoft.com/previous-versions/dd757300(v=vs.85)), [**waveInGetDevCaps**](https://docs.microsoft.com/previous-versions/dd743841(v=vs.85)), and [**waveOutGetDevCaps**](https://docs.microsoft.com/previous-versions/dd743857(v=vs.85)) functions can retrieve driver-specific information that uniquely identifies an audio device.
+The [**auxGetDevCaps**](/previous-versions/dd756712(v=vs.85)), [**midiInGetDevCaps**](/previous-versions/dd798453(v=vs.85)), [**midiOutGetDevCaps**](/previous-versions/dd798469(v=vs.85)), [**mixerGetDevCaps**](/previous-versions/dd757300(v=vs.85)), [**waveInGetDevCaps**](/previous-versions/dd743841(v=vs.85)), and [**waveOutGetDevCaps**](/previous-versions/dd743857(v=vs.85)) functions can retrieve driver-specific information that uniquely identifies an audio device.
 
-The Windows multimedia functions [**waveInMessage**](https://docs.microsoft.com/previous-versions/dd743846(v=vs.85)), [**waveOutMessage**](https://docs.microsoft.com/previous-versions/dd743865(v=vs.85)), [**midiInMessage**](https://docs.microsoft.com/previous-versions/dd798457(v=vs.85)), [**midiOutMessage**](https://docs.microsoft.com/previous-versions/dd798475(v=vs.85)), and [**mixerMessage**](https://docs.microsoft.com/previous-versions/dd757307(v=vs.85)) can retrieve the device interface name of a wave, MIDI, or mixer device. In addition, the **waveOutMessage**, **midiOutMessage**, and **waveInMessage** functions can retrieve the device IDs of the preferred audio devices for wave I/O, MIDI, and voice communications, respectively.
+The Windows multimedia functions [**waveInMessage**](/previous-versions/dd743846(v=vs.85)), [**waveOutMessage**](/previous-versions/dd743865(v=vs.85)), [**midiInMessage**](/previous-versions/dd798457(v=vs.85)), [**midiOutMessage**](/previous-versions/dd798475(v=vs.85)), and [**mixerMessage**](/previous-versions/dd757307(v=vs.85)) can retrieve the device interface name of a wave, MIDI, or mixer device. In addition, the **waveOutMessage**, **midiOutMessage**, and **waveInMessage** functions can retrieve the device IDs of the preferred audio devices for wave I/O, MIDI, and voice communications, respectively.
 
 The following topics are discussed in this section:
 
@@ -37,9 +36,4 @@ The following topics are discussed in this section:
 [Music Technology GUIDs](music-technology-guids.md)
 
  
-
- 
-
-
-
 

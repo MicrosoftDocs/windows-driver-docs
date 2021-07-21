@@ -1,7 +1,6 @@
 ---
 title: SendDownStreamIrp Function
 description: SendDownStreamIrp Function
-ms.assetid: 09a06041-5b26-4796-b9b8-d7d27321d955
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,15 +8,15 @@ ms.localizationpriority: medium
 # SendDownStreamIrp Function
 
 
-The code example for the `SendDownStreamIrp` function that is provided in this topic shows how to implement a driver-supplied function that sends synchronous IOCTL requests to the ACPI driver. The `SendDownStreamIrp` function can be used to send an [**IOCTL\_ACPI\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method) request, an [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex) request, or an [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request.
+The code example for the `SendDownStreamIrp` function that is provided in this topic shows how to implement a driver-supplied function that sends synchronous IOCTL requests to the ACPI driver. The `SendDownStreamIrp` function can be used to send an [**IOCTL\_ACPI\_EVAL\_METHOD**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method) request, an [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex) request, or an [**IOCTL\_ACPI\_ENUM\_CHILDREN**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request.
 
 The example code for the `SendDownStreamIrp` function that is included in this section performs the following sequence of operations:
 
 -   Creates an event object.
 
--   Calls [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) to create the IOCTL request.
+-   Calls [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) to create the IOCTL request.
 
--   Calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the IOCTL request.
+-   Calls [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the IOCTL request.
 
 -   Waits until the ACPI driver signals the event object, which indicates that the request has completed.
 
@@ -97,9 +96,4 @@ Return Value:
 ```
 
  
-
- 
-
-
-
 

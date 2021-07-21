@@ -1,7 +1,6 @@
 ---
 title: About Sensor Driver Events
 description: About Sensor Driver Events
-ms.assetid: 1e747743-f701-4854-92be-7b55c39fee08
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -13,13 +12,13 @@ Applications can receive information from sensors in two ways: synchronously, by
 
 Sensor drivers can raise **state change events**, which notify applications about a transition in the device to a new operational condition, and other kinds of event notifications. Your driver should raise separate events for each sensor that your device provides.
 
-**Note**  Do not use [**IWDFDevice::PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-postevent) to raise sensor events. The sensor platform will not forward such events to the connected client programs.
+**Note**  Do not use [**IWDFDevice::PostEvent**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-postevent) to raise sensor events. The sensor platform will not forward such events to the connected client programs.
 
  
 
 ## State Change Events
 
-Sensor drivers raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange) method. For example, a driver that has finished initializing a sensor will call this method to signal the new [**SensorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) value named SENSOR\_STATE\_READY.
+Sensor drivers raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange) method. For example, a driver that has finished initializing a sensor will call this method to signal the new [**SensorState**](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) value named SENSOR\_STATE\_READY.
 
 ## Event Constants
 
@@ -43,11 +42,11 @@ The sensor platform defines the following **PROPERTYKEYs** to identify the param
 | Name | Description |
 | --- | --- |
 | SENSOR_EVENT_PARAMETER_EVENT_ID| Indicates that the GUID value in IPortableDeviceValues is an event type ID, such as SENSOR_EVENT_DATA_UPDATED.|
-| SENSOR_EVENT_PARAMETER_STATE| Indicates that the unsigned integer value in IPortableDeviceValues is a sensor state, such as SENSOR_STATE_READY.<br>**Note** To raise a state change event, call [ISensorClass Extension::PostStateChange](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange). You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
+| SENSOR_EVENT_PARAMETER_STATE| Indicates that the unsigned integer value in IPortableDeviceValues is a sensor state, such as SENSOR_STATE_READY.<br>**Note** To raise a state change event, call [ISensorClass Extension::PostStateChange](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange). You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
 
 ## Other Events
 
-Sensor drivers raise all other types of events by calling the sensor class extension's [**ISensorClassExtension::PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) method. This method provides a generic, extensible way to raise sensor events unrelated to operating state. Each call to **PostEvent** contains a pointer to [IPortableDeviceValuesCollection](https://go.microsoft.com/fwlink/p/?linkid=131487). Each [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) object in this collection contains a **GUID** value for the SENSOR\_EVENT\_PARAMETER\_EVENT\_ID property, which identifies the event type, and optional data field values, which contain the event data. For example, a GPS driver that has new city data will use the SENSOR\_EVENT\_DATA\_UPDATED event ID and provide a string value for the SENSOR\_DATA\_TYPE\_CITY property key.
+Sensor drivers raise all other types of events by calling the sensor class extension's [**ISensorClassExtension::PostEvent**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) method. This method provides a generic, extensible way to raise sensor events unrelated to operating state. Each call to **PostEvent** contains a pointer to [IPortableDeviceValuesCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevaluescollection). Each [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) object in this collection contains a **GUID** value for the SENSOR\_EVENT\_PARAMETER\_EVENT\_ID property, which identifies the event type, and optional data field values, which contain the event data. For example, a GPS driver that has new city data will use the SENSOR\_EVENT\_DATA\_UPDATED event ID and provide a string value for the SENSOR\_DATA\_TYPE\_CITY property key.
 
 After your driver posts the event, the sensor class extension forwards the event and any associated data to the Sensor API.
 
@@ -57,7 +56,7 @@ You can find the definitions of platform-defined constants in the file named Sen
 
 Before your driver accepts event requests, it should create a separate thread to generate and post events. By using a thread, you can help prevent frequent event procedures from blocking synchronous procedures, such as data request callbacks. For an example of a thread class that raises data-updated events, see [Raising Data-Updated Events](raising-events.md).
 
-Your sensor should raise events only if at least one client application has requested event notifications. When an application requests event notifications, including for state-change events, the sensor class extension notifies the driver through [**ISensorDriver::OnClientSubscribeToEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-onclientsubscribetoevents). This method provides an [IWDFFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile) pointer that identifies the application and a string that identifies the sensor for which the application is requesting event notifications. You can use the IWDFFile pointer as a unique identifier to help keep track of applications that have subscribed to events. Although your sensor cannot raise events destined for specific clients, you will probably need to keep track of which application set which values for certain properties, such as SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL or SENSOR\_PROPERTY\_CHANGE\_SENSITIVITY.
+Your sensor should raise events only if at least one client application has requested event notifications. When an application requests event notifications, including for state-change events, the sensor class extension notifies the driver through [**ISensorDriver::OnClientSubscribeToEvents**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-onclientsubscribetoevents). This method provides an [IWDFFile](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile) pointer that identifies the application and a string that identifies the sensor for which the application is requesting event notifications. You can use the IWDFFile pointer as a unique identifier to help keep track of applications that have subscribed to events. Although your sensor cannot raise events destined for specific clients, you will probably need to keep track of which application set which values for certain properties, such as SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL or SENSOR\_PROPERTY\_CHANGE\_SENSITIVITY.
 
 For example, if multiple client applications set different values for SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL, you could apply a rule that sets the event frequency to the shortest interval that has been requested. However, your sensor may need to adjust the interval each time a new client subscribes to events or an existing client unsubscribes. For more information about report intervals, including example code, see [Filtering Data](filtering-data.md).
 
@@ -70,10 +69,7 @@ Like other data requests, requests for event notifications are made secure throu
 
  
 
-For more information about data privacy, see [Privacy and Security in the Sensor and Location Platform](https://docs.microsoft.com/windows-hardware/drivers/gnss/privacy-and-security-in-the-sensor-and-location-platform)
+For more information about data privacy, see [Privacy and Security in the Sensor and Location Platform](../gnss/privacy-and-security-in-the-sensor-and-location-platform.md)
 
 ## Related topics
-[**Sensor Properties**](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-properties)
-
-
-
+[**Sensor Properties**](./sensor-properties.md)

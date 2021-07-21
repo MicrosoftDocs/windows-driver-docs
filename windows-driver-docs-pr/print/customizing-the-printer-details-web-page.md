@@ -1,7 +1,6 @@
 ---
 title: Customizing the Printer Details Web Page
 description: Customizing the Printer Details Web Page
-ms.assetid: 4853d5de-b855-4698-9178-877455e257c5
 keywords:
 - customized print Web pages WDK , creating pages
 - ASP files WDK printer
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 If you want to replace the printer details page provided by Microsoft, you can provide one or more customized ASP files. If you replace the default page, you can also provide links to additional customized pages installed on the server, plus links to any other pages on the Web.
 
-If Microsoft's standard TCP/IP [port monitor](https://docs.microsoft.com/windows-hardware/drivers/print/port-monitors) (Tcpmon.dll) is used with your printer, customized ASP files can be used to replace the default printer details pages on a per-printer type or per-manufacturer basis. If customized ASP files have not been installed, the default printer details page is used.
+If Microsoft's standard TCP/IP [port monitor](./port-monitors.md) (Tcpmon.dll) is used with your printer, customized ASP files can be used to replace the default printer details pages on a per-printer type or per-manufacturer basis. If customized ASP files have not been installed, the default printer details page is used.
 
 Customized ASP files can also be used to replace the default printer details pages for printers using other port monitors, but per-printer type and per-manufacturer replacements are not allowed.
 

@@ -2,7 +2,7 @@
 title: Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with integrated GPU that experienced a bluescreen caused by a crash in the graphics driver binary 
 ms.topic: article
-ms.date: 10/28/2019
+ms.date: 07/20/2021
 ms.localizationpriority: medium
 ---
 
@@ -19,8 +19,10 @@ During a user’s session, crash in graphics driver binary may cause bluescreen 
 |**Audience**|Standard|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum population**|10,000 machines|
+|**Minimum population**|20,000 machines|
 |**Passing criteria**|<= 3/10,000 machines experience a blue screen|
+|**High failure rate target**|<= 3,000|
+|**High failure minimum population**|20 machines|
 |**Measure ID**|23253553|
 
 ## Calculation

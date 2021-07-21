@@ -1,7 +1,6 @@
 ---
 title: customData element
 description: The optional customData element specifies a custom data source for this asynchronous notification XML schema.
-ms.assetid: 5e14a627-72c0-440d-b616-6963c3d69d2b
 keywords: ["customData element Print Devices"]
 topic_type:
 - apiref
@@ -15,13 +14,17 @@ ms.localizationpriority: medium
 
 # customData element
 
-
 The optional **customData** element specifies a custom data source for this asynchronous notification XML schema.
 
-The **customData** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **customData** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <customData
@@ -32,8 +35,7 @@ Usage
 </customData>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -121,13 +123,11 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The custom data that you capture must be provided as a **CDATA** type.
 
-Examples
---------
+## Examples
 
 The following code example shows how you can use the **customData** element to obtain your custom data.
 

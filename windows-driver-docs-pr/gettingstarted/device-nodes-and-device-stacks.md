@@ -1,7 +1,6 @@
 ---
 title: Device nodes and device stacks
 description: In Windows, devices are represented by device nodes in the Plug and Play (PnP) device tree.
-ms.assetid: 7bf38b3b-72ba-461c-b9e2-68b697359b37
 keywords:
 - device node
 - device stack
@@ -21,7 +20,7 @@ Windows organizes devices in a tree structure called the *Plug and Play device t
 
 A node in the device tree is called a *device node*. The root node of the device tree is called the *root device node*. By convention, the root device node is drawn at the bottom of the device tree, as shown in the following diagram.
 
-![diagram of the device tree, showing device nodes](images/devicetree01.png)
+![diagram of the device tree, showing device nodes.](images/devicetree01.png)
 
 The device tree illustrates the parent/child relationships that are inherent in the PnP environment. Several of the nodes in the device tree represent buses that have child devices connected to them. For example, the PCI Bus node represents the physical PCI bus on the motherboard. During startup, the PnP manager asks the PCI bus driver to enumerate the devices that are connected to the PCI bus. Those devices are represented by child nodes of the PCI Bus node. In the preceding diagram, the PCI Bus node has child nodes for several devices that are connected to the PCI bus, including USB host controllers, an audio controller, and a PCI Express port.
 
@@ -32,7 +31,7 @@ Whether you think of a node as representing a device or a bus depends on your po
 ## <span id="Device_objects_and_device_stacks"></span><span id="device_objects_and_device_stacks"></span><span id="DEVICE_OBJECTS_AND_DEVICE_STACKS"></span>Device objects and device stacks
 
 
-A *device object* is an instance of a [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. Each device node in the PnP device tree has an ordered list of device objects, and each of these device objects is associated with a driver. The ordered list of device objects, along with their associated drivers, is called the *device stack* for the device node.
+A *device object* is an instance of a [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. Each device node in the PnP device tree has an ordered list of device objects, and each of these device objects is associated with a driver. The ordered list of device objects, along with their associated drivers, is called the *device stack* for the device node.
 
 You can think of a device stack in several ways. In the most formal sense, a device stack is an ordered list of (device object, driver) pairs. However, in certain contexts it might be useful to think of the device stack as an ordered list of device objects. In other contexts, it might be useful to think of the device stack as an ordered list of drivers.
 
@@ -40,18 +39,18 @@ By convention, a device stack has a top and a bottom. The first device object to
 
 In the following diagram, the Proseware Gizmo device node has a device stack that contains three (device object, driver) pairs. The top device object is associated with the driver AfterThought.sys, the middle device object is associated with the driver Proseware.sys, and the bottom device object is associated with the driver Pci.sys. The PCI Bus node in the center of the diagram has a device stack that contains two (device object, driver) pairs--a device object associated with Pci.sys and a device object associated with Acpi.sys.
 
-![diagram showing device objects ordered in device stacks in the proseware gizmo and pci device nodes](images/prosewaredevicenode01.png)
+![diagram showing device objects ordered in device stacks in the proseware gizmo and pci device nodes.](images/prosewaredevicenode01.png)
 
 ## <span id="How_does_a_device_stack_get_constructed_"></span><span id="how_does_a_device_stack_get_constructed_"></span><span id="HOW_DOES_A_DEVICE_STACK_GET_CONSTRUCTED_"></span>How does a device stack get constructed?
 
 
 During startup, the PnP manager asks the driver for each bus to enumerate child devices that are connected to the bus. For example, the PnP manager asks the PCI bus driver (Pci.sys) to enumerate the devices that are connected to the PCI bus. In response to this request, Pci.sys creates a device object for each device that is connected to the PCI bus. Each of these device objects is called a *physical device object* (PDO). Shortly after Pci.sys creates the set of PDOs, the device tree looks like the one shown in the following diagram.
 
-![diagram of pci node and physical device objects for child devices](images/prosewaredevicenode04.png)
+![diagram of pci node and physical device objects for child devices.](images/prosewaredevicenode04.png)
 
 The PnP manager associates a device node with each newly created PDO and looks in the registry to determine which drivers need to be part of the device stack for the node. The device stack must have one (and only one) *function driver* and can optionally have one or more *filter drivers*. The function driver is the main driver for the device stack and is responsible for handling read, write, and device control requests. Filter drivers play auxiliary roles in processing read, write, and device control requests. As each function and filter driver is loaded, it creates a device object and attaches itself to the device stack. A device object created by the function driver is called a *functional device object* (FDO), and a device object created by a filter driver is called a *filter device object* (Filter DO). Now the device tree looks something like this diagram.
 
-![diagram of a device tree showing the filter, function, and physical device objects in the proseware gizmo device node](images/prosewaredevicenode02.png)
+![diagram of a device tree showing the filter, function, and physical device objects in the proseware gizmo device node.](images/prosewaredevicenode02.png)
 
 In the diagram, notice that in one node, the filter driver is above the function driver, and in the other node, the filter driver is below the function driver. A filter driver that is above the function driver in a device stack is called an *upper filter driver*. A filter driver that is below the function driver is called a *lower filter driver*.
 
@@ -74,11 +73,11 @@ If your point of reference is the PCI bus, then Pci.sys is the function driver. 
 
 So far we've been discussing kernel-mode device stacks. That is, the drivers in the stacks run in kernel mode, and the device objects are mapped into system space, which is the address space that is available only to code running in kernel mode. For information about the difference between kernel mode and user mode, see [User mode and kernel mode](user-mode-and-kernel-mode.md).
 
-In some cases, a device has a user-mode device stack in addition to its kernel-mode device stack. User-mode drivers are often based on the User-Mode Driver Framework (UMDF), which is one of the driver models provided by the [Windows Driver Frameworks (WDF)](https://docs.microsoft.com/windows-hardware/drivers/wdf/). In UMDF, the drivers are user-mode DLLs, and the device objects are COM objects that implement the IWDFDevice interface. A device object in a UMDF device stack is called a *WDF device object* (WDF DO).
+In some cases, a device has a user-mode device stack in addition to its kernel-mode device stack. User-mode drivers are often based on the User-Mode Driver Framework (UMDF), which is one of the driver models provided by the [Windows Driver Frameworks (WDF)](../wdf/index.md). In UMDF, the drivers are user-mode DLLs, and the device objects are COM objects that implement the IWDFDevice interface. A device object in a UMDF device stack is called a *WDF device object* (WDF DO).
 
 The following diagram shows the device node, kernel-mode device stack, and the user-mode device stack for a USB-FX-2 device. The drivers in both the user-mode and kernel-mode stacks participate in I/O requests that are directed at the USB-FX-2 device.
 
-![diagram showing user-mode and kernel-mode device stacks](images/userandkerneldevicestacks01.png)
+![diagram showing user-mode and kernel-mode device stacks.](images/userandkerneldevicestacks01.png)
 
 ## <span id="related_topics"></span>Related topics
 
@@ -88,11 +87,4 @@ The following diagram shows the device node, kernel-mode device stack, and the u
 [Driver stacks](driver-stacks.md)
 
  
-
- 
-
-
-
-
-
 

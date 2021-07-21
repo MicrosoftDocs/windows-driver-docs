@@ -1,7 +1,6 @@
 ---
 title: Overview of Network Direct Kernel Provider Interface (NDKPI)
 description: This section provides an overview of Network Direct Kernel Provider Interface (NDKPI)
-ms.assetid: D9667238-FD2E-44DE-920F-FA4CF3365D93
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Overview of Network Direct Kernel Provider Interface (NDKPI)
 
 
-The Network Direct Kernel Provider Interface (NDKPI) is an extension to NDIS that allows IHVs to provide kernel-mode Remote Direct Memory Access (RDMA) support in a network adapter (also called an RNIC). To expose the adapter's RDMA functionality, the IHV must implement the NDKPI interface as defined in the [NDKPI Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+The Network Direct Kernel Provider Interface (NDKPI) is an extension to NDIS that allows IHVs to provide kernel-mode Remote Direct Memory Access (RDMA) support in a network adapter (also called an RNIC). To expose the adapter's RDMA functionality, the IHV must implement the NDKPI interface as defined in the [NDKPI Reference](/windows-hardware/drivers/ddi/_netvista/).
 
 -   [NDKPI and RDMA](#ndkpi-and-rdma)
 -   [The NDK provider](#the-ndk-provider)
@@ -33,9 +32,9 @@ The NDK provider is loaded and initialized by the PnP Manager. For more informat
 
 Once the NDK provider is loaded and initialized, it is ready to handle requests from the NDK consumer. These requests arrive as calls to provider functions.
 
-When handling requests from an NDK consumer, the provider can call the consumer's NDK callback functions. These are documented in [NDKPI Consumer Callback Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+When handling requests from an NDK consumer, the provider can call the consumer's NDK callback functions. These are documented in [NDKPI Consumer Callback Functions](/windows-hardware/drivers/ddi/_netvista/).
 
-NDK providers must implement all elements of the NDKPI interface that are documented in the [NDKPI Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/), except for the [NDKPI Consumer Callback Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+NDK providers must implement all elements of the NDKPI interface that are documented in the [NDKPI Reference](/windows-hardware/drivers/ddi/_netvista/), except for the [NDKPI Consumer Callback Functions](/windows-hardware/drivers/ddi/_netvista/).
 
 ### The NDK consumer
 
@@ -45,21 +44,10 @@ NDK consumers are kernel-mode Windows components, such as SMB server and client.
 
  
 
-An NDK consumer calls the provider's *NdkOpenAdapter* ([*OPEN\_NDK\_ADAPTER\_HANDLER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndisndk/nc-ndisndk-open_ndk_adapter_handler)) callback function to create an adapter object and *NdkCloseAdapter* ([*NDK\_FN\_CLOSE\_OBJECT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_object)) to close it. Once the provider has created the adapter object, the consumer calls other provider callback functions to create additional NDK objects.
+An NDK consumer calls the provider's *NdkOpenAdapter* ([*OPEN\_NDK\_ADAPTER\_HANDLER*](/windows-hardware/drivers/ddi/ndisndk/nc-ndisndk-open_ndk_adapter_handler)) callback function to create an adapter object and *NdkCloseAdapter* ([*NDK\_FN\_CLOSE\_OBJECT*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_object)) to close it. Once the provider has created the adapter object, the consumer calls other provider callback functions to create additional NDK objects.
 
-NDK consumers implement the [NDKPI Consumer Callback Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/), which are called by NDK providers.
+NDK consumers implement the [NDKPI Consumer Callback Functions](/windows-hardware/drivers/ddi/_netvista/), which are called by NDK providers.
 
-## Related topics
-
-
-[Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
  
-
- 
-
-
-
-
-
 

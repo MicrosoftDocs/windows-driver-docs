@@ -1,7 +1,6 @@
 ---
 title: Building UWP device apps
 description: Device manufacturers can create a UWP device app that serves as a companion to their device.
-ms.assetid: DB88876E-3C92-40E9-A2E2-19493F3357B5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -54,7 +53,7 @@ At the most basic level, a *UWP device app* is a UWP app that's associated with 
 
 There are six steps to creating a UWP device app, assuming you've already created your device and submitted any necessary drivers to the Hardware Dashboard. Click the links for more details about each step.
 
-![the device app development workflow](images/device-app-workflow.png)
+![the device app development workflow.](images/device-app-workflow.png)
 
 [Step 1: Create the app](step-1--create-a-uwp-device-app.md). Associate your app with the Microsoft Store, develop the app, and test it.
 

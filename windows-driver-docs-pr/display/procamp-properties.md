@@ -1,7 +1,6 @@
 ---
 title: ProcAmp Properties
 description: ProcAmp Properties
-ms.assetid: 412c9144-dd52-4b36-bea1-b17c9c2c95b3
 keywords:
 - ProcAmp WDK DirectX VA , properties
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_procamp_properties_gg"></span><span id="DDK_PROCAMP_PROPERTIES_GG"></span>
 
 
-A display driver must supply minimum, maximum, step size, and default values when the VMR queries the driver for information about ProcAmp properties. The driver can supply this information in response to a call to its [**ProcAmpControlQueryRange**](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange) function. Although the driver can return any value for the ProcAmp properties, the following are the recommended settings (all values are floats).
+A display driver must supply minimum, maximum, step size, and default values when the VMR queries the driver for information about ProcAmp properties. The driver can supply this information in response to a call to its [**ProcAmpControlQueryRange**](./dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md) function. Although the driver can return any value for the ProcAmp properties, the following are the recommended settings (all values are floats).
 
 <table>
 <colgroup>
@@ -93,10 +92,4 @@ The driver should ensure that the following relationships hold:
 -   For ProcAmp properties that are not supported by your hardware, the driver should return the maximum value, minimum value, and default value with a step size increment of 0.0.
 
  
-
- 
-
-
-
-
 

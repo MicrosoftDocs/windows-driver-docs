@@ -1,7 +1,6 @@
 ---
 title: Supporting Output Protection Manager
 description: Supporting Output Protection Manager
-ms.assetid: 2c138dbd-55ca-4c71-8c8b-b2efd1ca80f2
 keywords:
 - COPP WDK DirectX VA , Output Protection Manager
 - Output Protection Manager WDK display
@@ -26,19 +25,19 @@ The **OPM DDI** is semantically similar to the [COPP DDI](sample-functions-for-c
 
 If a display miniport driver supports the passing of protected commands, information, and status between applications and the driver, the Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) can successfully open the driver's OPM DDI.
 
-A kernel-mode component that must use the OPM interface initiates a call to the display miniport driver's [DxgkDdiQueryInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function to retrieve the interface. Pointers to the OPM interface functions are returned in a [DXGK_OPM_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_opm_interface) structure that the Interface member of the [QUERY_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_query_interface) structure points to. This QUERY_INTERFACE is pointed to by the *QueryInterface* parameter in the DxgkDdiQueryInterface call.
+A kernel-mode component that must use the OPM interface initiates a call to the display miniport driver's [DxgkDdiQueryInterface](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function to retrieve the interface. Pointers to the OPM interface functions are returned in a [DXGK_OPM_INTERFACE](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_opm_interface) structure that the Interface member of the [QUERY_INTERFACE](/windows-hardware/drivers/ddi/video/ns-video-_query_interface) structure points to. This QUERY_INTERFACE is pointed to by the *QueryInterface* parameter in the DxgkDdiQueryInterface call.
 
 The following Output Protection Manager (OPM) interface functions are implemented by some display miniport drivers:
 
-* [DXGKDDI_OPM_GET_CERTIFICATE_SIZE](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_certificate_size)
-* [DXGKDDI_OPM_GET_CERTIFICATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_certificate)
-* [DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output)
-* [DXGKDDI_OPM_GET_RANDOM_NUMBER](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_random_number)
-* [DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers)
-* [DXGKDDI_OPM_GET_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_information)
-* [DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_copp_compatible_information)
-* [DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_configure_protected_output)
-* [DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_destroy_protected_output)
+* [DXGKDDI_OPM_GET_CERTIFICATE_SIZE](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_certificate_size)
+* [DXGKDDI_OPM_GET_CERTIFICATE](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_certificate)
+* [DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output)
+* [DXGKDDI_OPM_GET_RANDOM_NUMBER](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_random_number)
+* [DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers)
+* [DXGKDDI_OPM_GET_INFORMATION](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_information)
+* [DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_copp_compatible_information)
+* [DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_configure_protected_output)
+* [DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_destroy_protected_output)
 
 The following topics describe the new features of OPM and how to support and use the OPM DDI:
 
@@ -67,10 +66,4 @@ The following topics describe the new features of OPM and how to support and use
 [Implementation Tips and Requirements for OPM](implementation-tips-and-requirements-for-opm.md)
 
  
-
- 
-
-
-
-
 

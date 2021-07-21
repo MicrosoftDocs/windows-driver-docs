@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port
 description: Debugging Tools for Windows supports kernel debugging of a virtual machine using a Virtual COM Port.
-ms.assetid: e863e664-8338-4bbe-953b-e000a6843db9
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
 ms.date: 04/23/2019
 ms.localizationpriority: medium
@@ -47,7 +46,7 @@ If the debugger is running on a different computer from the virtual machine, ent
 
 **\\\\**<em>VMHost</em>**\\pipe\\**<em>PipeName</em>
 
-Click **OK**.
+Select **OK**.
 
 You can also start WinDbg at the command line. If the debugger is running on the same physical computer as the virtual machine, enter the following command in a Command Prompt window.
 
@@ -111,7 +110,7 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 
 4. Re-enable secure boot, once you are done updating the configuration changes.
 
-For more information about Generation 2 VMs, see [Generation 2 Virtual Machine Overview](https://go.microsoft.com/fwlink/p/?Linkid=331326).
+For more information about Generation 2 VMs, see [Generation 2 Virtual Machine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282285(v=ws.11)).
 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
@@ -149,10 +148,3 @@ If you restart the virtual machine by using the VMWare facilities (for example, 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
 [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
- 
-
-
-
-
-
-

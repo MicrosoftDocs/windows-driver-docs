@@ -1,7 +1,6 @@
 ---
 title: Page Creation Callbacks
 description: Page Creation Callbacks
-ms.assetid: ec514d17-415e-417b-bb29-b37be43c3cf6
 keywords:
 - callback functions WDK CPSUI
 - Common Property Sheet User Interface WDK print , callbacks
@@ -19,18 +18,13 @@ ms.localizationpriority: medium
 
 
 
-When an application makes an initial call into CPSUI's entry point function ([**CommonPropertySheetUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nf-compstui-commonpropertysheetuia)), it must include the address of a [**PFNPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-pfnpropsheetui)-typed callback function. This callback function is responsible for describing property sheet pages and sending these descriptions to CPSUI for creation.
+When an application makes an initial call into CPSUI's entry point function ([**CommonPropertySheetUI**](/windows-hardware/drivers/ddi/compstui/nf-compstui-commonpropertysheetuia)), it must include the address of a [**PFNPROPSHEETUI**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfnpropsheetui)-typed callback function. This callback function is responsible for describing property sheet pages and sending these descriptions to CPSUI for creation.
 
-CPSUI's **CommonPropertySheetUI** function immediately calls back to the PFNPROPSHEETUI-typed function, supplying the address of a [**PROPSHEETUI\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_propsheetui_info) structure. The application can then call CPSUI's [**ComPropSheet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function, supplying page descriptions that CPSUI can use to create the pages, as illustrated in the following diagram:
+CPSUI's **CommonPropertySheetUI** function immediately calls back to the PFNPROPSHEETUI-typed function, supplying the address of a [**PROPSHEETUI\_INFO**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_propsheetui_info) structure. The application can then call CPSUI's [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function, supplying page descriptions that CPSUI can use to create the pages, as illustrated in the following diagram:
 
-![diagram illustrating application-cpsui communication](images/comprop.png)
+![diagram illustrating application-cpsui communication.](images/comprop.png)
 
 For more information, see [Methods for Specifying Pages](methods-for-specifying-pages.md).
 
  
-
- 
-
-
-
 

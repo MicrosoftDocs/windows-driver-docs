@@ -1,7 +1,6 @@
 ---
 title: PwrTest Syntax
 description: You run PwrTest from a Command Prompt window. You can select and configure PwrTest Scenarios using command options.
-ms.assetid: bcae1bb6-ce5b-4ece-a5ba-bae6fefd6408
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ms.custom: 19H1
@@ -85,7 +84,7 @@ The group policy settings put in place by your system administrator might interf
 
 PwrTest automatically generates multiple logs for each execution in .log (plaintext), .xml (format varies per scenario), .wtl (WTTLog), and .etl (ETW trace) log formats.
 
-To be able to use all PwrTest Scenarios, you must first provision a test computer for testing using Visual Studio and the WDK. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1), or [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/previous-versions/hh698272(v=vs.85)). Some scenarios require the power button driver that is part of Windows Driver Testing Framework (WDTF). WDTF (and the included power button driver) is automatically installed when you provision a system for testing using Visual Studio and the WDK. For information about WDTF, see [**Windows Device Testing Framework (WDTF) (Windows Drivers)**](https://docs.microsoft.com/windows-hardware/drivers/wdtf/index).
+To be able to use all PwrTest Scenarios, you must first provision a test computer for testing using Visual Studio and the WDK. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md), or [Provision a computer for driver deployment and testing (WDK 8)](/previous-versions/hh698272(v=vs.85)). Some scenarios require the power button driver that is part of Windows Driver Testing Framework (WDTF). WDTF (and the included power button driver) is automatically installed when you provision a system for testing using Visual Studio and the WDK. For information about WDTF, see [**Windows Device Testing Framework (WDTF) (Windows Drivers)**](../wdtf/index.md).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -95,11 +94,4 @@ To be able to use all PwrTest Scenarios, you must first provision a test compute
 [PwrTest Log File](pwrtest-log-file.md)
 
  
-
- 
-
-
-
-
-
 

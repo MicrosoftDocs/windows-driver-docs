@@ -1,7 +1,6 @@
 ---
 title: PnP Notification Overview
 description: PnP Notification Overview
-ms.assetid: 134a1ea1-78c2-4bab-b5e9-ae21901772ea
 keywords: ["PnP WDK kernel , notifications", "Plug and Play WDK kernel , notifications", "notifications WDK PnP , about notifications", "event notifications WDK PnP", "EventCategoryDeviceInterfaceChange notification", "EventCategoryTargetDeviceChange notification", "EventCategoryHardwareProfileChange notification"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -25,7 +24,7 @@ The PnP manager provides a mechanism for drivers and applications to be notified
     <a href="" id="guid-device-interface-removal"></a>GUID\_DEVICE\_INTERFACE\_REMOVAL  
     Indicates that a device interface of the specified class has been disabled.
 
-    See [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) and related routines for more information about device interfaces.
+    See [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) and related routines for more information about device interfaces.
 
 -   **EventCategoryTargetDeviceChange**
 
@@ -62,13 +61,13 @@ The PnP manager provides a mechanism for drivers and applications to be notified
 
 PnP notification works as follows for kernel-mode components:
 
-1.  A driver registers for notification on a category of events by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification).
+1.  A driver registers for notification on a category of events by calling [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification).
 
     A PnP notification callback routine remains registered until the driver explicitly removes the registration.
 
 2.  The PnP manager calls the driver's callback routine when an event in the registered category occurs.
 
-3.  The driver removes the callback registration by calling [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification).
+3.  The driver removes the callback registration by calling [**IoUnregisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification).
 
 Drivers must not generate a synchronous event or wait for an asynchronous event to occur during the processing of a close.
 
@@ -85,9 +84,4 @@ For further information about PnP notification, see the following sections:
 [Using PnP Custom Notification](using-pnp-custom-notification.md)
 
  
-
- 
-
-
-
 

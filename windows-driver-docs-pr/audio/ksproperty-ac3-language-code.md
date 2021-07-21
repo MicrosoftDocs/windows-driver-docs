@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AC3\_LANGUAGE\_CODE
 description: The KSPROPERTY\_AC3\_LANGUAGE\_CODE property specifies the language code of the AC-3-encoded stream.
-ms.assetid: 42c0fb44-437c-4fa9-95ee-823880028369
 keywords: ["KSPROPERTY_AC3_LANGUAGE_CODE Audio Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_AC3\_LANGUAGE\_CODE property specifies the language code of the 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537081(v=vs.85)" data-raw-source="[&lt;strong&gt;KSAC3_LANGUAGE_CODE&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537081(v=vs.85))"><strong>KSAC3_LANGUAGE_CODE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/drivers/ff537081(v=vs.85)" data-raw-source="[&lt;strong&gt;KSAC3_LANGUAGE_CODE&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff537081(v=vs.85))"><strong>KSAC3_LANGUAGE_CODE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -61,8 +60,7 @@ The property value (operation data) is a KSAC3\_LANGUAGE\_CODE structure that sp
 
 A KSPROPERTY\_AC3\_LANGUAGE\_CODE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,16 +78,6 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
-[**KSAC3\_LANGUAGE\_CODE**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537081(v=vs.85))
-
- 
-
- 
-
-
-
-
-
-
+[**KSAC3\_LANGUAGE\_CODE**](/previous-versions/windows/hardware/drivers/ff537081(v=vs.85))

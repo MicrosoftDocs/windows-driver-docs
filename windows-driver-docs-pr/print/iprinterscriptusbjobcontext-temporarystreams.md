@@ -4,7 +4,6 @@ description: Returns an array of IPrinterScriptableSequentialStream interfaces f
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: ED9AFB90-287B-4030-AC20-ECCA9841D27E
 keywords: ["TemporaryStreams method Print Devices", "TemporaryStreams method Print Devices , IPrinterScriptUsbJobContext interface", "IPrinterScriptUsbJobContext interface Print Devices , TemporaryStreams method"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 
 # IPrinterScriptUsbJobContext::TemporaryStreams method
 
-Returns an array of [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.
+Returns an array of [IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT TemporaryStreams(
@@ -29,24 +27,20 @@ HRESULT TemporaryStreams(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *ppArray* \[out, retval\]  
-Pointer to an array of [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) interfaces.
+Pointer to an array of [IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) interfaces.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 **TemporaryStreams** is a read-only method. There are a maximum of 2 temporary streams available to the IHV JavaScript functions. These streams are only available for the duration of the current print job. The IHV can use this to store data that is not yet ready to be sent to the print device. On a later **writePrintData** JavaScript function call, these streams can be used to send the stored data to the print device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,4 +67,4 @@ Requirements
 
 [**IPrinterScriptUsbJobContext**](iprinterscriptusbjobcontext.md)
 
-[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)
+[IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)

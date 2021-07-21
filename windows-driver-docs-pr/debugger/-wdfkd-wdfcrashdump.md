@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfcrashdump
 description: The wdfkd.wdfcrashdump extension displays error log information and other crash dump information from a minidump file, if the data is present.
-ms.assetid: 419c76b1-e291-4503-8c59-aa46140e40b3
 keywords: ["wdfkd.wdfcrashdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,8 +63,7 @@ KMDF
 
 UMDF 2.15
 
-Remarks
--------
+## Remarks
 
 This example shows how to use **!wdfkd.wdfcrashdump** to view information about KMDF drivers. If you specify **loader** for *InfoType*, the output includes dynamic-bound drivers in the minidump file.
 
@@ -115,13 +113,13 @@ Listing all drivers loaded in this host process at the time of the failure:
   WUDFOsrUsbFilter
 ```
 
-In the example above, output includes failure type, which is the event type in the WER report. Here, it can be **WUDFVerifierFailure** or **WUDFUnhandledException**. For more information, see [Accessing UMDF Metadata in WER Reports](https://docs.microsoft.com/windows-hardware/drivers/wdf/accessing-umdf-metadata-in-wer-reports). The output for UMDF includes an error code, if event type is **WUDFVerifierFailure**.
+In the example above, output includes failure type, which is the event type in the WER report. Here, it can be **WUDFVerifierFailure** or **WUDFUnhandledException**. For more information, see [Accessing UMDF Metadata in WER Reports](../wdf/accessing-umdf-metadata-in-wer-reports.md). The output for UMDF includes an error code, if event type is **WUDFVerifierFailure**.
 
 To display the framework's error log records from a [complete memory dump](complete-memory-dump.md), a [kernel memory dump](kernel-memory-dump.md), or a [live kernel-mode target](live-kernel-mode-targets.md), you can also try the [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) extension.
 
 **Additional Information**
 
-For information about enabling the inflight trace recorder for your driver, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers). For more information about debugging WDF drivers, see [Debugging WDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver). For information about KMDF debugging, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
+For information about enabling the inflight trace recorder for your driver, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](../wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md). For more information about debugging WDF drivers, see [Debugging WDF Drivers](./debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). For information about KMDF debugging, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
 ## <span id="see_also"></span>See also
 
@@ -129,13 +127,4 @@ For information about enabling the inflight trace recorder for your driver, see 
 [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md)
 
 [**!wdfkd.wdfsettraceprefix**](-wdfkd-wdfsettraceprefix.md)
-
- 
-
- 
-
-
-
-
-
 

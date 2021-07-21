@@ -1,7 +1,6 @@
 ---
 title: Introduction to Choosing a WAN Driver Model
 description: Introduction to Choosing a WAN Driver Model
-ms.assetid: 63976cfa-6f7b-44d0-a4c5-de82254bedbd
 keywords:
 - WAN miniport drivers WDK networking , driver models
 - WAN miniport drivers WDK networking , NDIS WAN vs CoNDIS WAN drivers

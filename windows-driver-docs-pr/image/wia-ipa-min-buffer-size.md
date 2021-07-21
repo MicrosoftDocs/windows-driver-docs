@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_MIN\_BUFFER\_SIZE
 description: The WIA\_IPA\_MIN\_BUFFER\_SIZE property specifies the minimum buffer size that is used in data transfers.
-ms.assetid: 0d289645-666c-4b67-8971-cdeff3caef3e
 keywords: ["WIA_IPA_MIN_BUFFER_SIZE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 If a data transfer is performed through a callback mechanism, the WIA\_IPA\_MIN\_BUFFER\_SIZE property value can be as small as 64 KB. However, if the transfer is to file, the property value is the number of bytes that are needed to transfer one page of data at a time. The WIA minidriver creates and maintains this WIA property.
 
@@ -42,8 +40,7 @@ An application can read WIA\_IPA\_MIN\_BUFFER\_SIZE to determine the driver-spec
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

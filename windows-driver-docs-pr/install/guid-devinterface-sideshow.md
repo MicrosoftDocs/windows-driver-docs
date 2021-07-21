@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_SIDESHOW
 description: GUID_DEVINTERFACE_SIDESHOW
-ms.assetid: 74afef18-bfb3-457c-8112-29dadd0c7e66
 keywords: ["GUID_DEVINTERFACE_SIDESHOW Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_SIDESHOW
 
 
-The GUID_DEVINTERFACE_SIDESHOW [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [Windows SideShow devices](https://docs.microsoft.com/windows-hardware/drivers/).
+The GUID_DEVINTERFACE_SIDESHOW [device interface class](./overview-of-device-interface-classes.md) is defined for [Windows SideShow devices](../index.yml).
 
 <table>
 <colgroup>
@@ -45,13 +44,11 @@ The GUID_DEVINTERFACE_SIDESHOW [device interface class](https://docs.microsoft.c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for Windows Sideshow-compatible devices register instances of GUID_DEVINTERFACE_SIDESHOW to notify the system and applications of the presence of Windows SideShow devices.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -71,10 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

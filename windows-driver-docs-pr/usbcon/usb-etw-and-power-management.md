@@ -1,5 +1,5 @@
 ---
-Description: This topic provides a brief overview about using ETW to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility.
+description: This topic provides a brief overview about using ETW to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility.
 title: USB ETW and Power Management
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -18,10 +18,7 @@ To help you identify system energy efficiency problems, we enhanced the Windows 
 
 PowerCfg detects various energy efficiency problems, including ineffective use of selective suspend by USB devices, excessive processor utilization, increased timer resolution, inefficient power policy settings, and battery capacity degradation. PowerCfg identifies different levels of problems, including server problems (errors) and minor problems (warnings).
 
-For more about Windows power management and the PowerCfg tool, see [Powercfg Command-Line Options](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748940(v=ws.10)) and [Using PowerCfg to Evaluate System Energy Efficiency](https://docs.microsoft.com/previous-versions/windows/hardware/download/dn550976(v=vs.85)).
+For more about Windows power management and the PowerCfg tool, see [Powercfg Command-Line Options](/previous-versions/windows/it-pro/windows-vista/cc748940(v=ws.10)) and [Using PowerCfg to Evaluate System Energy Efficiency](/previous-versions/windows/hardware/download/dn550976(v=vs.85)).
 
 ## Related topics
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
-
-
-
+[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)

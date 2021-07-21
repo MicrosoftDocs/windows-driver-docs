@@ -1,7 +1,6 @@
 ---
 title: Customized OIDs and Status Indications
 description: Customized OIDs and Status Indications
-ms.assetid: 675aff2c-8e4a-4a02-8d08-0f59b8fcd4a2
 keywords:
 - status indications WDK networking , WMI
 - WMI WDK networking , status indications
@@ -23,7 +22,7 @@ You can create a custom OID that NDIS maps to a custom GUID that you create. NDI
 
 To provide a custom status indication, NDIS miniport drivers must use the NDIS\_STATUS\_MEDIA\_SPECIFIC\_INDICATION\_EX status indication. The WMI clients must use the data that is included with the WMI event to identify the custom event. NDIS does not register custom GUIDs for status indications.
 
-To obtain a miniport adapter's custom OIDs and the associated WMI GUIDs, NDIS issues OID requests to the miniport driver after the miniport driver has completed initialization. NDIS issues an [OID\_GEN\_SUPPORTED\_LIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-supported-list) query to obtain the list of the OIDs that the miniport driver supports. The miniport driver includes both custom OIDs and standard OIDs in its response. To obtain the GUIDs that are associated with the custom OIDs, NDIS issues an [OID\_GEN\_SUPPORTED\_GUIDS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-supported-guids) query to connectionless miniport drivers or an [OID\_GEN\_CO\_SUPPORTED\_GUIDS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-co-supported-guids) query to connection-oriented miniport drivers.
+To obtain a miniport adapter's custom OIDs and the associated WMI GUIDs, NDIS issues OID requests to the miniport driver after the miniport driver has completed initialization. NDIS issues an [OID\_GEN\_SUPPORTED\_LIST](./oid-gen-supported-list.md) query to obtain the list of the OIDs that the miniport driver supports. The miniport driver includes both custom OIDs and standard OIDs in its response. To obtain the GUIDs that are associated with the custom OIDs, NDIS issues an [OID\_GEN\_SUPPORTED\_GUIDS](./oid-gen-supported-guids.md) query to connectionless miniport drivers or an [OID\_GEN\_CO\_SUPPORTED\_GUIDS](./oid-gen-co-supported-guids.md) query to connection-oriented miniport drivers.
 
 The query to OID\_GEN\_SUPPORTED\_GUIDS or OID\_GEN\_CO\_SUPPORTED\_GUIDS returns an array of [NDIS\_GUID](filling-in-an-ndis-guid-structure.md) structures to NDIS. Each NDIS\_GUID structure maps a custom GUID to a custom OID.
 
@@ -36,10 +35,4 @@ This section includes:
 [Including a MOF File](including-a-mof-file.md)
 
  
-
- 
-
-
-
-
 

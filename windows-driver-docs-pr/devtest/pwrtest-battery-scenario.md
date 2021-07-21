@@ -1,7 +1,6 @@
 ---
 title: PwrTest Battery Scenario
 description: The PwrTest Battery Scenario is designed to facilitate automated inspection of battery and power source information.
-ms.assetid: e0bad871-a826-4951-9a84-93c9b1aa0653
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

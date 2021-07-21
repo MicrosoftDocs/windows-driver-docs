@@ -1,7 +1,6 @@
 ---
 title: Generic Description Language
 description: Generic Description Language
-ms.assetid: 818037fd-90bb-46dd-a2e3-239d57ed5fcf
 keywords:
 - printer configuration WDK , GDL files
 - text files WDK GDL files

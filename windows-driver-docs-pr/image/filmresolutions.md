@@ -1,7 +1,6 @@
 ---
 title: FilmResolutions element
 description: The required FilmResolutions element contains a list of resolutions at which the scanner's film scanning input source can scan.
-ms.assetid: a273ac11-e1ae-4329-a6a2-e47accf564a9
 keywords: ["FilmResolutions element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FilmResolutions** element contains a list of resolutions at which the scanner's film scanning input source can scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmResolutions>
@@ -27,8 +25,7 @@ Usage
 </wscn:FilmResolutions>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -73,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pair, where both **Width** and **Height** are specified in pixels per inch.
 

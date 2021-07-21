@@ -1,17 +1,17 @@
 ---
 title: WinDbg Preview - View Menu 
 description: This section describes how work with the view menu.
-ms.date: 01/10/2020
+ms.date: 07/02/2020
 ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - View Menu
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 This section describes how work with the view menu in WinDbg Preview.
 
-![View menu in debugger](images/windbgx-view-menu.png)
+![View menu in debugger.](images/windbgx-view-menu.png)
 
 The view menu will open a new Window for each item, or bring focus to the existing Window, if one is already open.
 
@@ -29,7 +29,7 @@ The locals and watch windows are both based off of the data model that is used b
 
 The locals window displays information about all of the local variables in the current scope. The locals window will highlight values that have changed during the previous code execution.
 
-![Locals window in debugger](images/windbgx-locals-window.png)
+![Locals window in debugger.](images/windbgx-locals-window.png)
 
 ## Registers
 
@@ -47,7 +47,7 @@ Use the stack Window to view the current call stack. The stack window provides b
 
 The disassembly window highlights the current instruction and retains that position when you scroll. 
 
-![ Disassembly window in debugger](images/windbgx-disassembly.png)
+![Screenshot that shows the "Disassembly" window in debugger.](images/windbgx-disassembly.png)
 
 ## Threads
 
@@ -57,7 +57,7 @@ The threads window highlights the current thread.
 
 Use the breakpoints window to view, enable and clear breakpoints.
 
-![ Disassembly window in debugger](images/windbgx-breakpoints-window.png)
+![ Disassembly window in debugger.](images/windbgx-breakpoints-window.png)
 
 ## Logs
 
@@ -72,6 +72,17 @@ Use the Notes option to open a note taking window.
 ## Timelines
 
 Use Timelines to open or bring focus to the timelines window. For more information on timelines, see [WinDbg Preview - Timelines](windbg-timeline-preview.md).
+
+## Modules
+
+Use modules to display loaded modules and their related information. Modules displays the following:
+
+- The name of the module including the path location
+- The size in bytes of the loaded module
+- The base address that the module is loaded at
+- The file version
+
+![Modules view window showing five modules listed.](images/windbgx-view-modules.png)
 
 ## Layouts
 

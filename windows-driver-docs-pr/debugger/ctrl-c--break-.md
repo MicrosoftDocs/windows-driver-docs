@@ -1,7 +1,6 @@
 ---
 title: CTRL+C (Break)
 description: The CTRL+C key breaks into the debugger, stopping the target application or target computer, and cancels debugger commands.
-ms.assetid: ee9df6d7-4a40-4006-90df-478e06899e3a
 keywords: ["CTRL+C (Break) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -74,8 +73,7 @@ F12
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 **When Using CDB:**
 

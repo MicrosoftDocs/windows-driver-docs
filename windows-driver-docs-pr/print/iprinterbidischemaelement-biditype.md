@@ -4,7 +4,6 @@ description: The BidiType method returns the Bidi schema element type.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 7E074633-E3AA-45F3-A0B6-621E97E983A8
 keywords: ["BidiType method Print Devices", "BidiType method Print Devices , IPrinterBidiSchemaElement interface", "IPrinterBidiSchemaElement interface Print Devices , BidiType method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The BidiType method returns the Bidi schema element type.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT BidiType(
@@ -29,19 +27,16 @@ HRESULT BidiType(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pType* \[out, retval\]  
 The returned element type.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

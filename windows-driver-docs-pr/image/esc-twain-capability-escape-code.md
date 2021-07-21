@@ -1,7 +1,6 @@
 ---
 title: ESC_TWAIN_CAPABILITY Escape Code
 description: ESC_TWAIN_CAPABILITY Escape Code
-ms.assetid: 3fd3f03b-ea72-4151-a19c-3e71cf3193fa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-To carry out a capability operation on a private TWAIN capability, a TWAIN application notifies the TWAIN compatibility layer, which then calls the WIA driver's [**IStiUSD::Escape**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method, passing the ESC\_TWAIN\_CAPABILITY escape code. The pseudocode in the following example demonstrates how the **Escape** method should be implemented, and how it should respond to the escape code.
+To carry out a capability operation on a private TWAIN capability, a TWAIN application notifies the TWAIN compatibility layer, which then calls the WIA driver's [**IStiUSD::Escape**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method, passing the ESC\_TWAIN\_CAPABILITY escape code. The pseudocode in the following example demonstrates how the **Escape** method should be implemented, and how it should respond to the escape code.
 
 ```cpp
 STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
@@ -283,9 +282,4 @@ STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
 ```
 
  
-
- 
-
-
-
 

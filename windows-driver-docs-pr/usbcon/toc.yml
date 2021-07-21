@@ -19,7 +19,7 @@
   - name: "USB endpoints and their pipes"
     href: usb-endpoints-and-their-pipes.md
   - name: "USB in Windows - FAQ"
-    href: usb-faq--introductory-level.md
+    href: usb-faq--introductory-level.yml
 - name: "Building USB devices for Windows"
   items:
   - name: "Overview of building USB devices for Windows"
@@ -245,7 +245,7 @@
   - name: "USB Type-C Connector System Software Interface (UCSI) driver"
     href: ucsi.md
   - name: "FAQ: USB Type-C connector on a Windows system"
-    href: faq--usb-type-c-connector-on-a-windows-system.md
+    href: faq--usb-type-c-connector-on-a-windows-system.yml
   - name: "Developing Windows drivers for USB Type-C connectors"
     items: 
     - name: "Overview of developing Windows drivers for USB Type-C connectors"
@@ -269,7 +269,7 @@
   - name: "Overview of USB Event Tracing for Windows"
     href: usb-event-tracing-for-windows.md
   - name: "Capture and view USB traces with Microsoft Message Analyzer"
-    href: capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md
+    href: ./usb-event-tracing-for-windows.md
   - name: "How to capture a USB event trace with Logman"
     href: how-to-capture-a-usb-event-trace.md
   - name: "Using activity ID GUIDs in USB ETW traces"
@@ -374,13 +374,11 @@
       items: 
       - name: "Overview of Enumeration of Interface Collections on USB Composite Devices"
         href: support-for-interface-collections.md
-      - name: "Support for the Wireless Mobile Communication Device Class"
-        href: support-for-the-wireless-mobile-communication-device-class--wmcdc-.md
     - name: "Content Security Features in Usbccgp.sys"
       href: content-security-features-in-the-composite-client-generic-parent-drive.md
   - name: "Winusb.sys"
     items: 
-    - name: "WinUSB (Winusb.sys)"
+    - name: "Introduction to WinUSB (Winusb.sys)"
       href: winusb.md
     - name: "WinUSB Architecture and Modules"
       href: winusb-architecture.md

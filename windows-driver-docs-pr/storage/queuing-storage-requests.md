@@ -1,7 +1,6 @@
 ---
 title: Queuing Storage Requests
 description: Queuing Storage Requests
-ms.assetid: 077f7e4f-feb5-4a2e-b22b-b1d8d6871987
 keywords:
 - peripherals WDK storage , queued requests
 - storage peripherals WDK , queued requests

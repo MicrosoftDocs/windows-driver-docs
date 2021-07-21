@@ -1,7 +1,6 @@
 ---
 title: Indicating Connection Status
 description: Indicating Connection Status
-ms.assetid: 8a511c14-6b09-47fe-90de-6a90dab93171
 keywords:
 - WMI WDK networking , media connection status
 - miniport drivers WDK networking , media connection status
@@ -27,7 +26,7 @@ ms.localizationpriority: medium
 
 
 
-A miniport driver calls [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) or [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex) to indicate a change in the media connection status. The miniport driver passes one of the following status indications to **NdisM(Co)IndicateStatus**:
+A miniport driver calls [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) or [**NdisMCoIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex) to indicate a change in the media connection status. The miniport driver passes one of the following status indications to **NdisM(Co)IndicateStatus**:
 
 <a href="" id="ndis-status-media-connect"></a>NDIS\_STATUS\_MEDIA\_CONNECT  
 Indicates a media connection status change from disconnected to connected. A media connect status change occurs when a disconnected adapter makes a network connection. For example, the adapter connects when it comes within range (for a wireless adapter) or the user connects the network cable.
@@ -42,19 +41,19 @@ A miniport driver can check the media connection status while performing certain
 The following list describes additional requirements for indicating media connection status changes for miniport drivers:
 
 <a href="" id="resetting"></a>Resetting  
-NDIS calls [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_reset) to reset a miniport driver. The miniport driver can complete the reset either synchronously or asynchronously.
+NDIS calls [*MiniportResetEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_reset) to reset a miniport driver. The miniport driver can complete the reset either synchronously or asynchronously.
 
 If the media connection status is different after resetting, the driver should indicate the status within two seconds after completing the reset.
 
 A miniport driver should not complete the reset operation until it has determined the media connection status.
 
 <a href="" id="halting"></a>Halting  
-A miniport driver must not indicate any media connection status changes when NDIS calls [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt).
+A miniport driver must not indicate any media connection status changes when NDIS calls [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt).
 
 <a href="" id="initializing"></a>Initializing  
-NDIS calls a miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function to initialize an adapter. During the adapter initialization, the miniport driver must follow these guidelines:
+NDIS calls a miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function to initialize an adapter. During the adapter initialization, the miniport driver must follow these guidelines:
 
--   If the miniport driver does not indicate the media connection status after returning from *MiniportInitializeEx*, NDIS uses the value of the **MediaConnectState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure to determine the media connection status. The miniport driver provides NDIS with this structure when the driver calls [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from its *MiniportInitializeEx* function.
+-   If the miniport driver does not indicate the media connection status after returning from *MiniportInitializeEx*, NDIS uses the value of the **MediaConnectState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure to determine the media connection status. The miniport driver provides NDIS with this structure when the driver calls [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from its *MiniportInitializeEx* function.
 
     **Note**  If the **MediaConnectState** member is set to MediaConnectStateUnknown, NDIS will proceed as if the adapter is disconnected.
 
@@ -64,14 +63,14 @@ NDIS calls a miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.c
 
 -   If an adapter is disconnected after NDIS calls *MiniportInitializeEx*, the miniport driver should indicate NDIS\_STATUS\_MEDIA\_DISCONNECT within 2 seconds after it returns from *MiniportInitializeEx*.
 
--   While initializing, the miniport driver should process [OID\_GEN\_MEDIA\_CONNECT\_STATUS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-media-connect-status) or [OID\_GEN\_CO\_MEDIA\_CONNECT\_STATUS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-co-media-connect-status) requests asynchronously. The miniport driver should not complete such requests until after it has determined the connection status.
+-   While initializing, the miniport driver should process [OID\_GEN\_MEDIA\_CONNECT\_STATUS](./oid-gen-media-connect-status.md) or [OID\_GEN\_CO\_MEDIA\_CONNECT\_STATUS](./oid-gen-co-media-connect-status.md) requests asynchronously. The miniport driver should not complete such requests until after it has determined the connection status.
 
 -   Determination of the media connection status should not delay initialization. If necessary, the miniport driver should initiate the process to determine the connection status within *MiniportInitializeEx*, and complete the process at a later time. For example, the miniport driver could set a timer to poll the adapter for the connection status.
 
 -   A deserialized miniport driver can indicate a media disconnect during initialization, but a serialized miniport driver should not.
 
 <a href="" id="sleeping"></a>Sleeping  
-A miniport driver enters a network sleep state when it receives an [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) request to set a device power state of D1, D2, or D3.
+A miniport driver enters a network sleep state when it receives an [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md) request to set a device power state of D1, D2, or D3.
 
 A miniport driver must not indicate any media connection status changes when it enters a sleep state or while it is in a sleeping state.
 
@@ -83,10 +82,4 @@ If the adapter's media connection status after waking is the same as the status 
 While waking, the miniport driver should process OID\_GEN\_MEDIA\_CONNECT\_STATUS or OID\_GEN\_CO\_MEDIA\_CONNECT\_STATUS requests asynchronously. The miniport driver should not complete such requests until after it has determined the connection status.
 
  
-
- 
-
-
-
-
 

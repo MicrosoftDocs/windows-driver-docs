@@ -1,14 +1,13 @@
 ---
 title: Package (SoftwareInfo - priviliged applications)
 description: Package (SoftwareInfo - priviliged applications)
-ms.assetid: c9b22498-a7b6-4e17-9688-536883aa5844
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Package (SoftwareInfo - priviliged applications)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Package element specifies an app that should have access to the privileged Mobile Broadband interfaces.
 

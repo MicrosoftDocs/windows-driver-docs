@@ -1,7 +1,6 @@
 ---
 title: Calculate characters and segments of a draft SMS
 description: Calculate characters and segments of a draft SMS
-ms.assetid: abbec0b0-dfa8-43e9-8b48-e99680d56b42
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ id('messageSegmentsCount').innerText = messageLength.segmentCount;
 ## <span id="related_topics"></span>Related topics
 
 
-[Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
+[Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)
 
  
 

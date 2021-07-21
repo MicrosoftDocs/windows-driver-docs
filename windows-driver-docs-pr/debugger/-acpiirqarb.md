@@ -1,7 +1,6 @@
 ---
 title: acpiirqarb
 description: The acpiirqarb extension displays the contents of the ACPI IRQ arbiter structure, which contains the configuration of I/O devices to system interrupt controller inputs and processor IDT entries.
-ms.assetid: c57884cd-c70c-4091-871d-c2a35db8d73f
 keywords: ["acpiirqarb Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

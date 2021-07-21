@@ -1,7 +1,6 @@
 ---
 title: Performance bottlenecks in a virtualized networking environment
 description: Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
-ms.assetid: D295E450-C8AF-43A9-B169-5387EB2A2CF0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ Therefore, in the virtualization environment, incoming received frames are copie
 
 The following figure shows the performance bottlenecks for receive processing in a virtualized environment.
 
-![diagram illustrating performance bottlenecks for receive processing in a virtualized environment](images/vmqsyntheticpaths.png)
+![diagram illustrating performance bottlenecks for receive processing in a virtualized environment.](images/vmqsyntheticpaths.png)
 
 The performance issues in the previous figure include the following:
 

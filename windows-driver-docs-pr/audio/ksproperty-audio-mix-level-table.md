@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE
 description: The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property specifies the mix levels for a supermixer node (KSNODETYPE\_SUPERMIX). It provides information for all input and output channels.
-ms.assetid: 1a1b486b-06e4-462b-8fe9-9d3581c82d06
 keywords: ["KSPROPERTY_AUDIO_MIX_LEVEL_TABLE Audio Devices"]
 topic_type:
 - apiref
@@ -11,7 +10,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/04/2020
 ms.localizationpriority: medium
 ---
 
@@ -45,15 +44,15 @@ The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property specifies the mix levels for a
 <tbody>
 <tr class="odd">
 <td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
+<td align="left"><p>Optional</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
-<td align="left"><p>Array of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel" data-raw-source="[&lt;strong&gt;KSAUDIO_MIXLEVEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel)"><strong>KSAUDIO_MIXLEVEL</strong></a> structures</p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p>Array of <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel" data-raw-source="[&lt;strong&gt;KSAUDIO_MIXLEVEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel)"><strong>KSAUDIO_MIXLEVEL</strong></a> structures</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+The node is required to implement support for KSPROPERTY\_TYPE_GET requests. However, support for KSPROPERTY\_TYPE\_SET requests is optional.
 
 The property value (operation data) is an array of KSAUDIO\_MIXLEVEL structures that specifies the mix levels for all M\*N input-output paths in a supermixer node with M input channels and N output channels. The array contains M\*N elements:
 
@@ -110,11 +109,11 @@ The following table shows the mapping of array elements to the supermixer node's
 
 The following figure illustrates the mapping of MixLevel array elements to input-output paths. The index of the MixLevel array element controlling each input-output path is shown in square brackets.
 
-![diagram illustrating the mapping of a supermixer node's mixlevel array elements](images/supermix.png)
+![diagram illustrating the mapping of a supermixer node's mixlevel array elements.](images/supermix.png)
 
 If no path connects input channel *i* to output channel *j*, the filter should set the **Mute** member of array element MixLevel\[*i*\*N+*j*\] to **TRUE**.
 
-The size of the KSAUDIO\_MIXLEVEL array is calculated from the [**KSAUDIO\_MIXCAP\_TABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixcap_table) structure that is retrieved from [**KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS**](ksproperty-audio-mix-level-caps.md). If the structure's **InputChannels** and **OutputChannels** members contain the values *m* and *n*, the array size is
+The size of the KSAUDIO\_MIXLEVEL array is calculated from the [**KSAUDIO\_MIXCAP\_TABLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixcap_table) structure that is retrieved from [**KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS**](ksproperty-audio-mix-level-caps.md). If the structure's **InputChannels** and **OutputChannels** members contain the values *m* and *n*, the array size is
 
 *m* \* *n* \* **sizeof**(KSAUDIO\_MIXLEVEL)
 
@@ -122,13 +121,11 @@ The size of the KSAUDIO\_MIXLEVEL array is calculated from the [**KSAUDIO\_MIXCA
 
 A KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The filter will succeed a KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE set-property request that specifies a mix-level value (**Level** member of KSAUDIO\_MIXLEVEL) that is beyond the range of the filter but will (silently) clamp the value to the supported range. In a subsequent request to get this property, however, the filter will output the actual value used.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -146,22 +143,13 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
-[**KSAUDIO\_MIXCAP\_TABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixcap_table)
+[**KSAUDIO\_MIXCAP\_TABLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixcap_table)
 
 [**KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS**](ksproperty-audio-mix-level-caps.md)
 
-[**KSAUDIO\_MIXLEVEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel)
+[**KSAUDIO\_MIXLEVEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel)
 
 [**KSNODETYPE\_SUPERMIX**](ksnodetype-supermix.md)
-
- 
-
- 
-
-
-
-
-
 

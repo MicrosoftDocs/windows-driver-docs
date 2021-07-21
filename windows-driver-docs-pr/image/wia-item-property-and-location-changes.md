@@ -1,7 +1,6 @@
 ---
 title: WIA Item Property and Location Changes
 description: WIA Item Property and Location Changes
-ms.assetid: 4e8b3d2a-a28c-41d1-9c4b-8d85f28cf904
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,26 +15,21 @@ The simplest way to ensure application compatibility in Windows Vista and previo
 
 In operating systems before Windows Vista, the following WIA properties were located on the root item of a scanner driver that supported flatbed platen scanning. In Windows Vista, they are located on the flatbed item.
 
--   [**WIA\_DPS\_HORIZONTAL\_BED\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-horizontal-bed-size) (known as [**WIA\_IPS\_MAX\_HORIZONTAL\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-max-horizontal-size) in Windows Vista)
+-   [**WIA\_DPS\_HORIZONTAL\_BED\_SIZE**](./wia-dps-horizontal-bed-size.md) (known as [**WIA\_IPS\_MAX\_HORIZONTAL\_SIZE**](./wia-ips-max-horizontal-size.md) in Windows Vista)
 
--   [**WIA\_DPS\_VERTICAL\_BED\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-vertical-bed-size) (known as [**WIA\_IPS\_MAX\_VERTICAL\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-max-vertical-size) in Windows Vista)
+-   [**WIA\_DPS\_VERTICAL\_BED\_SIZE**](./wia-dps-vertical-bed-size.md) (known as [**WIA\_IPS\_MAX\_VERTICAL\_SIZE**](./wia-ips-max-vertical-size.md) in Windows Vista)
 
--   [**WIA\_DPS\_OPTICAL\_XRES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-optical-xres) (known as [**WIA\_IPS\_OPTICAL\_XRES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-optical-xres) in Windows Vista)
+-   [**WIA\_DPS\_OPTICAL\_XRES**](./wia-dps-optical-xres.md) (known as [**WIA\_IPS\_OPTICAL\_XRES**](./wia-ips-optical-xres.md) in Windows Vista)
 
--   [**WIA\_DPS\_OPTICAL\_YRES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-optical-yres) (known as [**WIA\_IPS\_OPTICAL\_YRES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-optical-yres) in Windows Vista)
+-   [**WIA\_DPS\_OPTICAL\_YRES**](./wia-dps-optical-yres.md) (known as [**WIA\_IPS\_OPTICAL\_YRES**](./wia-ips-optical-yres.md) in Windows Vista)
 
--   [**WIA\_DPS\_PREVIEW**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-preview) (known as [**WIA\_IPS\_PREVIEW**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-preview) in Windows Vista)
+-   [**WIA\_DPS\_PREVIEW**](./wia-dps-preview.md) (known as [**WIA\_IPS\_PREVIEW**](./wia-ips-preview.md) in Windows Vista)
 
--   [**WIA\_DPS\_SHOW\_PREVIEW\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-show-preview-control) (known as [**WIA\_IPS\_SHOW\_PREVIEW\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-show-preview-control) in Windows Vista)
+-   [**WIA\_DPS\_SHOW\_PREVIEW\_CONTROL**](./wia-dps-show-preview-control.md) (known as [**WIA\_IPS\_SHOW\_PREVIEW\_CONTROL**](./wia-ips-show-preview-control.md) in Windows Vista)
 
 **Note**   The duplication of WIA properties is needed only for scanners that support flatbed platen scanning or document feeder scanning. The paired properties have the same property identifier for compatibility. The driver can add WIA\_DPS\_*Xxx* properties for the root item and WIA\_IPS\_*Xxx* for other items.
 
  
 
  
-
- 
-
-
-
 

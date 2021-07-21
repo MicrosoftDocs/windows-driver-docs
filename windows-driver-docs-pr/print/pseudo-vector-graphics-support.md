@@ -1,7 +1,6 @@
 ---
 title: Pseudo-Vector Graphics Support
 description: Pseudo-Vector Graphics Support
-ms.assetid: 8eeba51b-00fa-4bf3-a78c-ac1d1adc9696
 keywords:
 - vector graphics WDK Unidrv , pseudovector graphics
 - pseudovector graphics WDK Unidrv
@@ -20,7 +19,7 @@ Devices that do not support true vector graphics can take advantage of the suppo
 
 To benefit from this feature, a minidriver for a nonvector graphics device needs only to support the CmdRectBlackFill command. This functionality is disabled when the **Print Optimization** feature in the **Advanced** tab of the printer property pages is turned off.
 
-The pseudovector graphics feature intercepts calls to [**DrvBitBlt**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvbitblt), [**DrvStrokePath**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvstrokepath), and [**DrvLineTo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvlineto), to determine whether a solid black rectangle or a vertical or horizontal line is to be drawn. When Unidrv recognizes the figure to be drawn as a valid rectangle (one that is solid black, has no complex clipping, and does not use a ROP using the current destination bits), it is stored in a rectangle array instead of being drawn on the surface.
+The pseudovector graphics feature intercepts calls to [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt), [**DrvStrokePath**](/windows/win32/api/winddi/nf-winddi-drvstrokepath), and [**DrvLineTo**](/windows/win32/api/winddi/nf-winddi-drvlineto), to determine whether a solid black rectangle or a vertical or horizontal line is to be drawn. When Unidrv recognizes the figure to be drawn as a valid rectangle (one that is solid black, has no complex clipping, and does not use a ROP using the current destination bits), it is stored in a rectangle array instead of being drawn on the surface.
 
 The most difficult aspect of the pseudovector graphics feature is avoiding z-order problems caused by objects that must be drawn on top of previously-drawn objects. The objects on top might need to erase or overwrite part of a black rectangle. If the black rectangle has already been downloaded to the device, an object drawn later on the system surface may not be drawn correctly.
 
@@ -33,9 +32,4 @@ In addition, it is possible that the new object to be drawn contains complex cli
 The pseudovector graphics feature may alter the z-ordering in certain situations, particularly when text is downloaded directly to the device and subsequent objects with complex clipping must interact with that text.
 
  
-
- 
-
-
-
 

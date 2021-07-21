@@ -1,7 +1,6 @@
 ---
 title: Overview of NDIS Support for Header Versions
 description: Overview of NDIS Support for Header Versions
-ms.assetid: f73baf8d-f6da-486c-b0e2-c3c57aeab269
 keywords:
 - NDIS version information WDK , structure requirements
 - NDIS version information WDK , header member
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 Many NDIS structures include structure version information. NDIS or NDIS drivers initialize the **Header** member in such structures as required for each structure. NDIS drivers should check the version information, if any, in each structure before they access the structure members.
 
-The **Header** member is an [**NDIS\_OBJECT\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header) structure. This structure contains the revision number, type, and size of the structure that includes the **Header** member.
+The **Header** member is an [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header) structure. This structure contains the revision number, type, and size of the structure that includes the **Header** member.
 
 Structures that include the **Header** member meet the following requirements:
 
@@ -30,7 +29,7 @@ Structures that include the **Header** member meet the following requirements:
 
      
 
--   NDIS drivers should always use the predefined revision values. NDIS provides such definitions in the form Xxx\_REVISION\_Nn, and NDIS\_SIZEOF\_Xxx\_REVISION\_Nn, for the **Revision** and **Size** members of [**NDIS\_OBJECT\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header) respectively. Also, Xxx represents the name of the structure and Nn is the revision number. For example, the revision and size for the first revision of the [**NDIS\_FILTER\_PARTIAL\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_partial_characteristics) structure are NDIS\_FILTER\_PARTIAL\_CHARACTERISTICS\_REVISION\_1 and NDIS\_SIZEOF\_FILTER\_PARTIAL\_CHARACTERISTICS\_REVISION\_1 respectively.
+-   NDIS drivers should always use the predefined revision values. NDIS provides such definitions in the form Xxx\_REVISION\_Nn, and NDIS\_SIZEOF\_Xxx\_REVISION\_Nn, for the **Revision** and **Size** members of [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header) respectively. Also, Xxx represents the name of the structure and Nn is the revision number. For example, the revision and size for the first revision of the [**NDIS\_FILTER\_PARTIAL\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_partial_characteristics) structure are NDIS\_FILTER\_PARTIAL\_CHARACTERISTICS\_REVISION\_1 and NDIS\_SIZEOF\_FILTER\_PARTIAL\_CHARACTERISTICS\_REVISION\_1 respectively.
 
 -   The **Header.Size** value must be consistent with the **Header.Revision** value. That is, if the **Revision** member contains Xxx\_REVISION\_1, the **Size** member value must be equal to or greater than NDIS\_SIZEOF\_Xxx\_REVISION\_1.
 
@@ -42,11 +41,4 @@ Structures that include the **Header** member meet the following requirements:
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 
  
-
- 
-
-
-
-
-
 

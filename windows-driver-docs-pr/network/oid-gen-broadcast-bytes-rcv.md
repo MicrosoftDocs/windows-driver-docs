@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_BROADCAST_BYTES_RCV
 description: As a query, the OID_GEN_BROADCAST_BYTES_RCV OID specifies the number of bytes in broadcast packets that are received without errors.
-ms.assetid: 1047f3a9-be4a-4836-ac48-a9029c6f748f
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_BROADCAST_BYTES_RCV Network Drivers Starting with Windows Vista
@@ -30,13 +29,11 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
-For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +54,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

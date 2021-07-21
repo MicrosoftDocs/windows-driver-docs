@@ -1,7 +1,6 @@
 ---
 title: Single Root I/O Virtualization (SR-IOV) Interface
 description: Single Root I/O Virtualization (SR-IOV) Interface
-ms.assetid: B65160F9-DB7E-427E-999C-09BD00173076
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ Each PCIe VF is assigned a unique Requester ID, which allows an I/O memory manag
 
 The following figure shows the VF data path within the SR-IOV interface.
 
-![diagram illustrating the synthetic device data paths with sr-iov](images/sriovarchitecture.png)
+![diagram illustrating the synthetic device data paths with sr-iov.](images/sriovarchitecture.png)
 
 The use of the VF data path provides the following benefits:
 

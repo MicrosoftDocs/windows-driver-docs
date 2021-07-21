@@ -1,8 +1,7 @@
 ---
-ms.assetid: ee46801a-4fa5-465a-aa81-5e76eb83d315
 title: Building for OneCore
 description: You can build a single binary that targets pre-Windows 10 and OneCore editions.
-ms.date: 10/02/2018
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +11,7 @@ When you use Visual Studio to build user-mode code for Windows 10, you can custo
 
 * Should the built binary run on only the most recent version of Windows?  Or should it run on earlier versions, such as Windows 7?  
 
-* Does your project have any [UWP](https://docs.microsoft.com/windows/uwp/get-started/whats-a-uwp) dependencies?
+* Does your project have any [UWP](/windows/uwp/get-started/whats-a-uwp) dependencies?
 
 For example, when you create a new UMDF v2 driver project, Visual Studio links to `OneCoreUAP.lib` by default.  This results in a binary that runs on the most recent version of Windows, and it permits addition of UWP functionality.
 
@@ -28,11 +27,11 @@ However, depending on your requirements, you might choose instead to link to `On
 
 A subset of Windows APIs compile cleanly but return runtime errors on non-Desktop OneCore editions (for example Mobile or IoT).
 
-For example, the [**InstallApplication**](https://docs.microsoft.com/windows/desktop/api/appmgmt/nf-appmgmt-installapplication) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.  The [ApiValidator](validating-universal-drivers.md) tool also reports these problems. The next section describes how to fix them.
+For example, the [**InstallApplication**](/windows/win32/api/appmgmt/nf-appmgmt-installapplication) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.  The [ApiValidator](./validating-windows-drivers.md) tool also reports these problems. The next section describes how to fix them.
 
-## Fixing ApiValidator errors by using [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
+## Fixing ApiValidator errors by using [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented)
 
-If your code calls non-universal APIs, you might see the following [ApiValidator](validating-universal-drivers.md) errors:
+If your code calls non-universal APIs, you might see the following [ApiValidator](./validating-windows-drivers.md) errors:
 
 * `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`
     
@@ -40,9 +39,9 @@ If your code calls non-universal APIs, you might see the following [ApiValidator
 
 * `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`
     
-    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of [DCHU](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles), wrap these calls with [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented).
+    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the [API Layering](api-layering.md) requirement for [Windows Drivers](./getting-started-with-windows-drivers.md), wrap these calls with [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented).
 
-This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented) returns FALSE.
+This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented) returns FALSE.
 
 The following code samples illustrate how to do this.
 
@@ -50,7 +49,7 @@ The following code samples illustrate how to do this.
 
 This code runs fine on versions of Windows earlier than Windows 10, but running it on a OneCore edition of Windows 10 results in WTSEnumerateSessions failure : 78 or ERROR_CALL_NOT_IMPLEMENTED 120 (0x78).
 
-This code sample fails the U part of DCHU with the following [ApiValidator](validating-universal-drivers.md) errors:
+This code sample fails the [API Layering](api-layering.md) requirement of Windows Drivers with the following [ApiValidator](./validating-windows-drivers.md) errors:
 
 ```cpp
 ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSEnumerateSessionsW' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
@@ -92,7 +91,7 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 
 ## Code sample: Direct usage of API, after evaluating for existence
 
-This sample shows how to call [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented). This sample passes the U part of DCHU with the following [ApiValidator](validating-universal-drivers.md) output:
+This sample shows how to call [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented). This sample passes the [API Layering](api-layering.md) requirement of Windows Drivers with the following [ApiValidator](./validating-windows-drivers.md) output:
 
 ```cpp
 ApiValidation: All binaries are Universal
@@ -141,12 +140,12 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 ## Recommended actions
 
 * Review the linker options above and update your Visual Studio project accordingly.
-* Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK.  This tool runs automatically when you build a driver in Visual Studio.
+* Use the [ApiValidator](./validating-windows-drivers.md) tool in the WDK.  This tool runs automatically when you build a driver in Visual Studio.
 * Use runtime testing to verify that your user-mode code runs as you expect on non-Desktop OneCore editions.  Note that stubbed APIs may generate different error codes.
 
 ## See Also
 
-* [Validating Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers)
-* [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows)
+* [Validating Windows Drivers](validating-windows-drivers.md)
+* [OneCore](/windows-hardware/get-started/what-s-new-in-windows)
 
 <!--API BOILERPLATE: Compiles using OneCore.lib but returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore editions.-->

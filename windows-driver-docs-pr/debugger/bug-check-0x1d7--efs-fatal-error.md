@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1D7 EFS_FATAL_ERROR
-description: The EFS_FATAL_ERROR bug check has a value of 0x000001D7. It indicates that an EFS error condition has occured such that cannot be handled without data loss or data corruption.
+description: The EFS_FATAL_ERROR bug check has a value of 0x000001D7. It indicates that an EFS error condition has occurred such that cannot be handled without data loss or data corruption.
 keywords: ["Bug Check 0x1D7 EFS_FATAL_ERROR", "EFS_FATAL_ERROR"]
 ms.date: 01/22/2019
 topic_type:
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Bug Check 0x1D7: EFS\_FATAL\_ERROR
 
-The EFS\_FATAL\_ERROR bug check has a value of 0x000001D7. It indicates that an EFS error condition has occured such that cannot be handled without data loss or data corruption.
+The EFS\_FATAL\_ERROR bug check has a value of 0x000001D7. It indicates that an EFS error condition has occurred such that cannot be handled without data loss or data corruption.
 
 
 > [!IMPORTANT]
@@ -31,10 +31,9 @@ The EFS\_FATAL\_ERROR bug check has a value of 0x000001D7. It indicates that an 
 |3| The current IRP at the time of failure.|
 |4| File encryption context at the time of failure.|
 
-## Cause
------
+## ## Cause
 
-An EFS error condition has occured such that cannot be handled without data loss or data corruption.
+An EFS error condition has occurred such that cannot be handled without data loss or data corruption.
 
 ## Resolution
 -----
@@ -47,8 +46,7 @@ Use the debugger [!IRP](-irp.md) command to investigate parameter 3 for a possib
 
 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

@@ -12,9 +12,9 @@ LINQ syntax can be used with the debugger objects to search and manipulate data.
 
 Debugger objects are projected into a namespace rooted at "Debugger". Processes, modules, threads, stacks, stack frames, and local variables are all available to be used in a LINQ query.
 
-LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. The LINQ C# method syntax is used. For more information on LINQ and the LINQ C# syntax, see [Getting Started with LINQ in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)
+LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. The LINQ C# method syntax is used. For more information on LINQ and the LINQ C# syntax, see [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)
 
-LINQ that is used in the debugger support uses the “method syntax” of LINQ and not the “query syntax”. You can find more details about the differences in [LINQ (Language-Integrated Query)](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
+LINQ that is used in the debugger support uses the “method syntax” of LINQ and not the “query syntax”. You can find more details about the differences in [LINQ (Language-Integrated Query)](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
 
 LINQ commands such as the following can be used with the debugger objects. All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form.
 
@@ -55,7 +55,7 @@ Debugger
     Utility
 ```
 
-After clicking on the top level topics, we determine that Sessions looks most interesting, so we click on the DML link to reveal that it contains *Processes*. 
+After selecting the top level topics, we determine that Sessions looks most interesting, so we select the DML link to reveal that it contains *Processes*. 
 
 ```dbgcmd
 0: kd> dx -r1 Debugger.Sessions[0]
@@ -65,7 +65,7 @@ Debugger.Sessions[0]                 : Remote KD: KdSrv:Server=@{<Local>},Trans=
     Attributes
 ```
 
-Then we click further down to look at specific process and we see that the *Threads* associated with that process are available. When we click on *Threads* for one of the processes, we see the all of the threads associated with that process are available.
+Then we select further down to look at specific process and we see that the *Threads* associated with that process are available. When we select *Threads* for one of the processes, we see the all of the threads associated with that process are available.
 
 
 ```dbgcmd
@@ -331,7 +331,7 @@ kd> dx -r1 @$curprocess.Threads
 
 ## User Defined Variables - Anonymous Types
 
-This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://docs.microsoft.com/dotnet/articles/csharp/programming-guide/classes-and-structs/anonymous-types). This example create an anonymous type with an integer and string value.
+This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](/dotnet/articles/csharp/programming-guide/classes-and-structs/anonymous-types). This example create an anonymous type with an integer and string value.
 
 ```dbgcmd
 kd> dx -r1 new { MyInt = 42, MyString = "Hello World" }
@@ -373,108 +373,116 @@ Any object which dx defines as iterable (be that a native array, a type which ha
 
 Filtering Methods
 
-|                            |                                                                                                                                   |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| .Where ( PredicateMethod ) | Returns a new collection of objects containing every object in the input collection for which the predicate method returned true. |
+**.Where ( PredicateMethod )**: Returns a new collection of objects containing every object in the input collection for which the predicate method returned true.
+
 
 
 
 Projection Methods
 
-|                                     |                                                                                                                                                                                                                                                                                                                             |
-|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .Flatten ( \[KeyProjectorMethod\] ) | Takes an input container of containers (a tree) and flattens it into a single container which has every element in the tree. If the optional key projector method is supplied, the tree is considered a container of keys which are themselves containers and those keys are determined by a call to the projection method. |
-| .Select ( KeyProjectorMethod )      | Returns a new collection of objects containing the result of calling the projector method on every object in the input collection.                                                                                                                                                                                          |
+**.Flatten ( \[KeyProjectorMethod\] )**: Takes an input container of containers (a tree) and flattens it into a single container which has every element in the tree. If the optional key projector method is supplied, the tree is considered a container of keys which are themselves containers and those keys are determined by a call to the projection method.
+
+**.Select ( KeyProjectorMethod )**: Returns a new collection of objects containing the result of calling the projector method on every object in the input collection.
+
 
 
 
 Grouping Methods
 
-|                                                                                                                            |                                                                                                                                                                                                               |
-|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .GroupBy ( KeyProjectorMethod, \[KeyComparatorMethod\] )                                                                   | Returns a new collection of collections by grouping all objects in the input collection having the same key as determined by calling the key projector method. An optional comparator method can be provided. |
-| Join (InnerCollection, Outer key selector method, Inner key selector method, Result selector method, \[ComparatorMethod\]) | Joins two sequences based on key selector functions and extracts pairs of values. An optional comparator method can also be specified.                                                                        |
-| Intersect (InnerCollection, \[ComparatorMethod\])                                                                          | Returns the set intersection, which means elements that appear in each of two collections. An optional comparator method can also be specified.                                                               |
-| Union (InnerCollection, \[ComparatorMethod\])                                                                              | Returns the set union, which means unique elements that appear in either of two collections. An optional comparator method can also be specified.                                                             |
+**.GroupBy ( KeyProjectorMethod, \[KeyComparatorMethod\] )**: Returns a new collection of collections by grouping all objects in the input collection having the same key as determined by calling the key projector method. An optional comparator method can be provided.
+
+**Join (InnerCollection, Outer key selector method, Inner key selector method, Result selector method, \[ComparatorMethod\])**: Joins two sequences based on key selector functions and extracts pairs of values. An optional comparator method can also be specified.
+
+**Intersect (InnerCollection, \[ComparatorMethod\])**: Returns the set intersection, which means elements that appear in each of two collections. An optional comparator method can also be specified.
+
+**Union (InnerCollection, \[ComparatorMethod\])**: Returns the set union, which means unique elements that appear in either of two collections. An optional comparator method can also be specified.
+
 
 
 
 Data Set Methods
 
-|                                                |                                                                                                                                                                                                   |
-|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Contains (Object, \[ComparatorMethod\])        | Determines whether a sequence contains a specified element. An optional comparator method can be provided that will be called each time the element is compared against an entry in the sequence. |
-| Distinct (\[ComparatorMethod\])                | Removes duplicate values from a collection. An optional comparator method can be provided to be called each time objects in the collection must be compared.                                      |
-| Except (InnerCollection, \[ComparatorMethod\]) | Returns the set difference, which means the elements of one collection that do not appear in a second collection. An optional comparator method can be specified.                                 |
-| Concat (InnerCollection)                       | Concatenates two sequences to form one sequence.                                                                                                                                                  |
+**Contains (Object, \[ComparatorMethod\])**: Determines whether a sequence contains a specified element. An optional comparator method can be provided that will be called each time the element is compared against an entry in the sequence.
+
+**Distinct (\[ComparatorMethod\])**: Removes duplicate values from a collection. An optional comparator method can be provided to be called each time objects in the collection must be compared.
+
+**Except (InnerCollection, \[ComparatorMethod\])**: Returns the set difference, which means the elements of one collection that do not appear in a second collection. An optional comparator method can be specified.
+
+**Concat (InnerCollection)**: Concatenates two sequences to form one sequence.
+
 
 
 
 Ordering Methods
 
-|                                                                    |                                                                                                                                                                                                      |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .OrderBy ( KeyProjectorMethod, \[KeyComparatorMethod\] )           | Sorts the collection in ascending order according to a key as provided by calling the key projection method on every object in the input collection. An optional comparator method can be provided.  |
-| .OrderByDescending ( KeyProjectorMethod, \[KeyComparatorMethod\] ) | Sorts the collection in descending order according to a key as provided by calling the key projection method on every object in the input collection. An optional comparator method can be provided. |
+**.OrderBy ( KeyProjectorMethod, \[KeyComparatorMethod\] )**: Sorts the collection in ascending order according to a key as provided by calling the key projection method on every object in the input collection. An optional comparator method can be provided.
+
+**.OrderByDescending ( KeyProjectorMethod, \[KeyComparatorMethod\] )**: Sorts the collection in descending order according to a key as provided by calling the key projection method on every object in the input collection. An optional comparator method can be provided.
+
 
 
 
 Aggregating Methods
 
-|                            |                                                                                                                                                |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Count ()                   | A method that returns the number of elements in the collection.                                                                                |
-| Sum (\[ProjectionMethod\]) | Calculates the sum of the values in a collection. Can optionally specify a projector method to transform the elements before summation occurs. |
+**Count ()**: A method that returns the number of elements in the collection.
+
+**Sum (\[ProjectionMethod\])**: Calculates the sum of the values in a collection. Can optionally specify a projector method to transform the elements before summation occurs.
+
 
 
 
 Skip Methods
 
-|                             |                                                                                               |
-|-----------------------------|-----------------------------------------------------------------------------------------------|
-| Skip (Count)                | Skips elements up to a specified position in a sequence.                                      |
-| SkipWhile (PredicateMethod) | Skips elements based on a predicate function until an element does not satisfy the condition. |
+**Skip (Count)**: Skips elements up to a specified position in a sequence.
+
+**SkipWhile (PredicateMethod)**: Skips elements based on a predicate function until an element does not satisfy the condition.
+
 
 
 
 Take Methods
 
-|                             |                                                                                               |
-|-----------------------------|-----------------------------------------------------------------------------------------------|
-| Take (Count)                | Takes elements up to a specified position in a sequence.                                      |
-| TakeWhile (PredicateMethod) | Takes elements based on a predicate function until an element does not satisfy the condition. |
+**Take (Count)**: Takes elements up to a specified position in a sequence.
+
+**TakeWhile (PredicateMethod)**: Takes elements based on a predicate function until an element does not satisfy the condition.
+
 
 
 
 Comparison Methods
 
-|                                                       |                                                                                                                                  |
-|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| SequenceEqual (InnerCollection, \[ComparatorMethod\]) | Determines whether two sequences are equal by comparing elements in a pair-wise manner. An optional comparator can be specified. |
+**SequenceEqual (InnerCollection, \[ComparatorMethod\])**: Determines whether two sequences are equal by comparing elements in a pair-wise manner. An optional comparator can be specified.
+
 
 
 
 Error Handling Methods
 
-|                                     |                                                                                   |
-|-------------------------------------|-----------------------------------------------------------------------------------|
-| AllNonError (PredicateMethod)       | Returns whether all non-error elements of a collection satisfy a given condition. |
-| FirstNonError (\[PredicateMethod\]) | Returns the first element of a collection that isn’t an error.                    |
-| LastNonError (\[PredicateMethod\])  | Returns the last element of a collection that isn’t an error.                     |
+**AllNonError (PredicateMethod)**: Returns whether all non-error elements of a collection satisfy a given condition.
+
+**FirstNonError (\[PredicateMethod\])**: Returns the first element of a collection that isn’t an error.
+
+**LastNonError (\[PredicateMethod\])**: Returns the last element of a collection that isn’t an error.
+
 
 
 
 Other Methods
 
-|                                |                                                                                                                                                                                                                                                                              |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .All ( PredicateMethod )       | Returns whether the result of calling the specified predicate method on every element in the input collection is true.                                                                                                                                                       |
-| .Any ( PredicateMethod )       | Returns whether the result of calling the specified predicate method on any element in the input collection is true.                                                                                                                                                         |
-| .First ( \[PredicateMethod\] ) | Returns the first element in the collection. If the optional predicate is passed, returns the first element in the collection for which a call to the predicate returns true.                                                                                                |
-| .Last ( \[PredicateMethod\] )  | Returns the last element in the collection. If the optional predicate is passed, returns the last element in the collection for which a call to the predicate returns true.                                                                                                  |
-| Min(\[KeyProjectorMethod\])    | Returns the minimum element of the collection. An optional projector method can be specified to project each method before it is compared to others.                                                                                                                         |
-| Max(\[KeyProjectorMethod\])    | Returns the maximum element of the collection. An optional projector method can be specified to project each method before it is compared to others.                                                                                                                         |
-| Single(\[PredicateMethod\])    | Returns the only element from the list (or an error if the collection contains more than one element). If a predicate is specified, returns the single element that satisfies that predicate (if more than one element satisfies it, the function returns an error instead). |
+**.All ( PredicateMethod )**: Returns whether the result of calling the specified predicate method on every element in the input collection is true.
+
+**.Any ( PredicateMethod )**: Returns whether the result of calling the specified predicate method on any element in the input collection is true.
+
+**.First ( \[PredicateMethod\] )**: Returns the first element in the collection. If the optional predicate is passed, returns the first element in the collection for which a call to the predicate returns true.
+
+**.Last ( \[PredicateMethod\] )**: Returns the last element in the collection. If the optional predicate is passed, returns the last element in the collection for which a call to the predicate returns true.
+
+**Min(\[KeyProjectorMethod\])**: Returns the minimum element of the collection. An optional projector method can be specified to project each method before it is compared to others.
+
+**Max(\[KeyProjectorMethod\])**: Returns the maximum element of the collection. An optional projector method can be specified to project each method before it is compared to others.
+
+**Single(\[PredicateMethod\])**: Returns the only element from the list (or an error if the collection contains more than one element). If a predicate is specified, returns the single element that satisfies that predicate (if more than one element satisfies it, the function returns an error instead).
+
 
 
 
@@ -512,45 +520,43 @@ All string objects have the following methods projected into them, so that they 
 
 Query Relevant Methods & Properties
 
-|                                     |                                                                                                                                                                                                                                   |
-|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .Contains ( OtherString )           | Returns a boolean value indicating whether the input string contains OtherString.                                                                                                                                                 |
-| .EndsWith ( OtherString )           | Returns a boolean value indicating whether the input string ends with OtherString.                                                                                                                                                |
-| Length                              | A property which returns the length of the string.                                                                                                                                                                                |
-| .StartsWith ( OtherString )         | Returns a boolean value indicating whether the input string starts with OtherString.                                                                                                                                              |
-| .Substring ( StartPos, \[Length\] ) | Returns a substring within the input string starting at the given starting position. If the optional length is supplied, the returned substring will be of the specified length; otherwise – it will go to the end of the string. |
+**.Contains ( OtherString )**: Returns a boolean value indicating whether the input string contains OtherString.
+
+**.EndsWith ( OtherString )**: Returns a boolean value indicating whether the input string ends with OtherString.
+
+**Length**: A property which returns the length of the string.
+
+**.StartsWith ( OtherString )**: Returns a boolean value indicating whether the input string starts with OtherString.
+
+**.Substring ( StartPos, \[Length\] )**: Returns a substring within the input string starting at the given starting position. If the optional length is supplied, the returned substring will be of the specified length; otherwise – it will go to the end of the string.
+
 
 
 
 Miscellaneous Methods
 
-|                              |                                                                                   |
-|------------------------------|-----------------------------------------------------------------------------------|
-| .IndexOf ( OtherString )     | Returns the index of the first occurrence of OtherString within the input string. |
-| .LastIndexOf ( OtherString ) | Returns the index of the last occurrence of OtherString within the input string.  |
+**.IndexOf ( OtherString )**: Returns the index of the first occurrence of OtherString within the input string.
+
+**.LastIndexOf ( OtherString )**: Returns the index of the last occurrence of OtherString within the input string.
+
 
 
 
 Formatting Methods
 
-|                                          |                                                                                                                                                                                                                                                     |
-|------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .PadLeft ( TotalWidth )                  | Adds spaces as necessary to the left side of the string in order to bring the total length of the string to the specified width.                                                                                                                    |
-| .PadRight ( TotalWidth )                 | Adds spaces as necessary to the right side of the string in order to bring the total length of the string to the specified width.                                                                                                                   |
-| .Remove ( StartPos, \[Length\] )         | Removes characters from the input string starting as the specified starting position. If the optional length parameter is supplied, that number of characters will be removed; otherwise – all characters to the end of the string will be removed. |
-| .Replace ( SearchString, ReplaceString ) | Replaces every occurrence of SearchString within the input string with the specified ReplaceString.                                                                                                                                                 |
+**.PadLeft ( TotalWidth )**: Adds spaces as necessary to the left side of the string in order to bring the total length of the string to the specified width.
 
+**.PadRight ( TotalWidth )**: Adds spaces as necessary to the right side of the string in order to bring the total length of the string to the specified width.
 
+**.Remove ( StartPos, \[Length\] )**: Removes characters from the input string starting as the specified starting position. If the optional length parameter is supplied, that number of characters will be removed; otherwise – all characters to the end of the string will be removed.
+
+**.Replace ( SearchString, ReplaceString )**: Replaces every occurrence of SearchString within the input string with the specified ReplaceString.
 
 String Object Projections
 
 In addition to the methods which are projected directly onto string objects, any object which itself has a string conversion has the following method projected onto it, making it method available for use:
 
-|                      |                                                                                                                                                                                                                  |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .ToDisplayString ( ) | Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. |
-
-
+**.ToDisplayString ( )**: Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. For more information, see [Format specifiers for C++ in the Visual Studio debugger](/visualstudio/debugger/format-specifiers-in-cpp)
 
 The following examples illustrate the use of format specifiers.
 
@@ -566,6 +572,13 @@ kd> dx (10).ToDisplayString("o")
 
 kd> dx (10).ToDisplayString("b") 
 (10).ToDisplayString("b")  : 0y1010
+
+kd> dx ("some wchar string here").ToDisplayString("su") 
+("some wchar string here").ToDisplayString("su")  : "some wchar string here"
+
+kd> dx ("some wchar string here").ToDisplayString("sub") 
+("some wchar string here").ToDisplayString("sub")  : some wchar string here
+
 ```
 
 ## <span id="Debugging_Plug_and_Play"></span><span id="debugging_plug_and_play"></span><span id="DEBUGGING_PLUG_AND_PLAY"></span>Debugging Plug and Play Example
@@ -594,7 +607,7 @@ Use *Flatten* on the device tree to view all devices.
 
 **Grid Display**
 
-As with other dx commands, you can right click on a command after it was executed and click "Display as grid" or add "-g" to the command to get a grid view of the results.
+As with other dx commands, you can select and hold (or right-click) a command after it was executed and select "Display as grid" or add "-g" to the command to get a grid view of the results.
 
 ```dbgcmd
 # 0: kd> dx -g @$cursession.Devices.DeviceTree.Flatten(n => n.Children)
@@ -837,7 +850,7 @@ This table summarizes the use of the dx command with common device capability fl
 </table>
 
 
-For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities).
+For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities).
 
 
 ## <span id="see_also"></span>See also
@@ -849,10 +862,3 @@ For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](h
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
-
-
-
-
-
-
-

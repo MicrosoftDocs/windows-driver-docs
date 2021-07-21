@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SPECTRAL\_INVERSION
 description: Clients use KSPROPERTY\_BDA\_SPECTRAL\_INVERSION to control the setting for spectral inversion of a demodulator node.
-ms.assetid: a51dee0b-4a45-4159-978b-27ff6e2333e2
 keywords: ["KSPROPERTY_BDA_SPECTRAL_INVERSION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_SPECTRAL\_INVERSION to control the setting for spec
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value from the SpectralInversion enumerated type identifies a setting for spectral inversion.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
-[**SpectralInversion**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568154(v=vs.85))
-
- 
+[**SpectralInversion**](/previous-versions/windows/hardware/drivers/ff568154(v=vs.85))
 
  
-
-
-
-
-
 

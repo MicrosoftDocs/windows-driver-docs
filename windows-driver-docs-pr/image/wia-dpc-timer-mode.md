@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_TIMER\_MODE
 description: The WIA\_DPC\_TIMER\_MODE property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: fcf165ec-62ad-4a0c-9903-5ce6fab69336
 keywords: ["WIA_DPC_TIMER_MODE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

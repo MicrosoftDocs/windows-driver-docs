@@ -1,7 +1,6 @@
 ---
 title: .logfile (Display Log File Status)
 description: The .logfile command determines whether a log file exists and displays the file's status.
-ms.assetid: 30aaa2bc-2ae5-474f-871b-3e3a164b2dee
 keywords: [".logfile (Display Log File Status) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: LoginToTarget
 description: LoginToTarget
-ms.assetid: 9ad66387-ca77-46e7-aa91-5c909251c2ce
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

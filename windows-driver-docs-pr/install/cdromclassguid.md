@@ -1,7 +1,6 @@
 ---
 title: CdRomClassGuid
 description: CdRomClassGuid
-ms.assetid: 406c28c9-8ef3-4ccc-bb70-a13b8d1ad64e
 keywords: ["CdRomClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,15 +17,13 @@ ms.date: 10/17/2018
 # CdRomClassGuid
 
 
-CdRomClassGuid is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for CD-ROM [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md) class identifier for new instances of this class.
+CdRomClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for CD-ROM [storage devices](../storage/index.md). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md) class identifier for new instances of this class.
 
-Remarks
--------
+## Remarks
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [CDROM class driver](https://go.microsoft.com/fwlink/p/?linkid=256093) sample and the [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076). The CDROM class driver sample uses CdRomClassGuid to register instances of the GUID_DEVINTERFACE_CDROM device interface class. The sample Addfilter application uses CdRomClassGuid to enumerate instances of the GUID_DEVINTERFACE_CDROM device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [CDROM class driver](/samples/browse/) sample and the [Addfilter Storage Filter Tool](/samples/browse/). The CDROM class driver sample uses CdRomClassGuid to register instances of the GUID_DEVINTERFACE_CDROM device interface class. The sample Addfilter application uses CdRomClassGuid to enumerate instances of the GUID_DEVINTERFACE_CDROM device interface class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -49,13 +46,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md)
-
- 
-
- 
-
-
-
-
-
 

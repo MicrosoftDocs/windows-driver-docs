@@ -1,7 +1,6 @@
 ---
 title: Write a HID source driver by using Virtual HID Framework (VHF)
 description: Learn about writing a HID source driver that reports HID data to the operating system.
-ms.assetid: 26964963-792F-4529-B4FC-110BF5C65B35
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [Virtual HID Framework Callback Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
--   [Virtual HID Framework Methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
--   [Virtual HID Framework Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+-   [Virtual HID Framework Callback Functions](/windows-hardware/drivers/ddi/_hid/#callback-functions)
+-   [Virtual HID Framework Methods](/windows-hardware/drivers/ddi/_hid/#functions)
+-   [Virtual HID Framework Structures](/windows-hardware/drivers/ddi/_hid/#functions)
 
 Learn about writing a HID source driver that reports HID data to the operating system.
 
@@ -40,11 +39,11 @@ This topic describes the architecture of the framework, the virtual HID device t
 
 In this image, the device tree shows the drivers and their associated device objects.
 
-![virtual hid device tree](images/vhf.png)
+![virtual hid device tree.](images/vhf.png)
 
 **HID source driver (your driver)**
 
-The HID source driver links to Vhfkm.lib and includes Vhf.h in its build project. The driver can be written by using either [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) (WDM) or Kernel-Mode Driver Framework (KMDF) that is part of the [Windows Driver Frameworks (WDF)](https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development). The driver can be loaded as a filter driver or a function driver in the device stack.
+The HID source driver links to Vhfkm.lib and includes Vhf.h in its build project. The driver can be written by using either [Windows Driver Model](../kernel/writing-wdm-drivers.md) (WDM) or Kernel-Mode Driver Framework (KMDF) that is part of the [Windows Driver Frameworks (WDF)](../what-s-new-in-driver-development.md). The driver can be loaded as a filter driver or a function driver in the device stack.
 
 **VHF static library (vhfkm.lib)**
 
@@ -95,44 +94,44 @@ UCHAR HeadSetReportDescriptor[] = {
 
 ## Create a virtual HID device
 
-Initialize a [**VHF\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config) structure by calling the [**VHF\_CONFIG\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhf_config_init) macro and then call the [**VhfCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate) method. The driver must call **VhfCreate** at PASSIVE\_LEVEL after the [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) call, typically, in the driver's [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
+Initialize a [**VHF\_CONFIG**](/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config) structure by calling the [**VHF\_CONFIG\_INIT**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhf_config_init) macro and then call the [**VhfCreate**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate) method. The driver must call **VhfCreate** at PASSIVE\_LEVEL after the [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) call, typically, in the driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 
-In the [**VhfCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate) call, the driver can specify certain configuration options, such as operations that must be processed asynchronously or setting device information (vendor/product IDs).
+In the [**VhfCreate**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate) call, the driver can specify certain configuration options, such as operations that must be processed asynchronously or setting device information (vendor/product IDs).
 
-For example, an application requests a TLC. When the HID class driver pair receives that request, the pair determines the type of request and creates an appropriate [HID Minidriver IOCTL](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) request and forwards it to VHF. Upon getting the IOCTL request, VHF can handle the request, rely on the HID source driver to process it, or complete the request with STATUS\_NOT\_SUPPORTED.
+For example, an application requests a TLC. When the HID class driver pair receives that request, the pair determines the type of request and creates an appropriate [HID Minidriver IOCTL](/windows-hardware/drivers/ddi/_hid/#hid-minidriver-ioctls) request and forwards it to VHF. Upon getting the IOCTL request, VHF can handle the request, rely on the HID source driver to process it, or complete the request with STATUS\_NOT\_SUPPORTED.
 
 VHF handles these IOCTLs:
 
--   [**IOCTL\_HID\_GET\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_string)
--   [**IOCTL\_HID\_GET\_DEVICE\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_device_attributes)
--   [**IOCTL\_HID\_GET\_DEVICE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_device_descriptor)
--   [**IOCTL\_HID\_GET\_REPORT\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_report_descriptor)
+-   [**IOCTL\_HID\_GET\_STRING**](/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_string)
+-   [**IOCTL\_HID\_GET\_DEVICE\_ATTRIBUTES**](/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_device_attributes)
+-   [**IOCTL\_HID\_GET\_DEVICE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_device_descriptor)
+-   [**IOCTL\_HID\_GET\_REPORT\_DESCRIPTOR**](/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_report_descriptor)
 
 If the request is **GetFeature**, **SetFeature**, **WriteReport**, or **GetInputReport**, and the HID source driver registered a corresponding callback function, VHF invokes the callback function. Within that function, the HID source driver can get or set HID data for the HID virtual device. If the driver doesn't register a callback, VHF completes the request with status STATUS\_NOT\_SUPPORTED.
 
 VHF invokes HID source driver-implemented event callback functions for these IOCTLs:
 
--   [**IOCTL\_HID\_READ\_REPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_read_report)
+-   [**IOCTL\_HID\_READ\_REPORT**](/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_read_report)
 
-    If the driver wants to handle the buffering policy while submitting a buffer to obtain HID Input Report, it must implement the [*EvtVhfReadyForNextReadReport*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_ready_for_next_read_report) and specify a pointer in the **EvtVhfAsyncOperationGetInputReport** member. For more information, see [Submit the HID Input Report](#submit-the-hid-input-report).
+    If the driver wants to handle the buffering policy while submitting a buffer to obtain HID Input Report, it must implement the [*EvtVhfReadyForNextReadReport*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_ready_for_next_read_report) and specify a pointer in the **EvtVhfAsyncOperationGetInputReport** member. For more information, see [Submit the HID Input Report](#submit-the-hid-input-report).
 
--   [**IOCTL\_HID\_GET\_FEATURE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_get_feature) or [**IOCTL\_HID\_SET\_FEATURE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_set_feature)
+-   [**IOCTL\_HID\_GET\_FEATURE**](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_get_feature) or [**IOCTL\_HID\_SET\_FEATURE**](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_set_feature)
 
-    If the driver wants to get or set a HID Feature Report asynchronously, the driver must implement the [*EvtVhfAsyncOperation*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_async_operation) function and specify a pointer to the get or set implementation function in the **EvtVhfAsyncOperationGetFeature** or **EvtVhfAsyncOperationSetFeature** member of [**VHF\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config).
+    If the driver wants to get or set a HID Feature Report asynchronously, the driver must implement the [*EvtVhfAsyncOperation*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_async_operation) function and specify a pointer to the get or set implementation function in the **EvtVhfAsyncOperationGetFeature** or **EvtVhfAsyncOperationSetFeature** member of [**VHF\_CONFIG**](/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config).
 
--   [**IOCTL\_HID\_GET\_INPUT\_REPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_get_input_report)
+-   [**IOCTL\_HID\_GET\_INPUT\_REPORT**](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_get_input_report)
 
-    If the driver wants to get a HID Input Report asynchronously, the driver must implement the [*EvtVhfAsyncOperation*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_async_operation) function and specify a pointer to the function in the **EvtVhfAsyncOperationGetInputReport** member of [**VHF\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config).
+    If the driver wants to get a HID Input Report asynchronously, the driver must implement the [*EvtVhfAsyncOperation*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_async_operation) function and specify a pointer to the function in the **EvtVhfAsyncOperationGetInputReport** member of [**VHF\_CONFIG**](/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config).
 
--   [**IOCTL\_HID\_WRITE\_REPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_write_report)
+-   [**IOCTL\_HID\_WRITE\_REPORT**](/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_write_report)
 
-    If the driver wants to get a write a HID Input Report asynchronously, the driver must implement the [*EvtVhfAsyncOperation*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_async_operation) function and specify a pointer to the function in the **EvtVhfAsyncOperationWriteReport** member of [**VHF\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config).
+    If the driver wants to get a write a HID Input Report asynchronously, the driver must implement the [*EvtVhfAsyncOperation*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_async_operation) function and specify a pointer to the function in the **EvtVhfAsyncOperationWriteReport** member of [**VHF\_CONFIG**](/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config).
 
-For any other [HID Minidriver IOCTL](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), VHF completes the request with STATUS\_NOT\_SUPPORTED.
+For any other [HID Minidriver IOCTL](/windows-hardware/drivers/ddi/index), VHF completes the request with STATUS\_NOT\_SUPPORTED.
 
-The virtual HID device is deleted by calling the [**VhfDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete). The [*EvtVhfCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup) callback is required if the driver allocated resources for the virtual HID device. The driver must implement the *EvtVhfCleanup* function and specify a pointer to that function in the **EvtVhfCleanup** member of [**VHF\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config). *EvtVhfCleanup* is invoked before the **VhfDelete** call completes. For more information, see [Delete the virtual HID device](#delete-the-virtual-hid-device).
+The virtual HID device is deleted by calling the [**VhfDelete**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete). The [*EvtVhfCleanup*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup) callback is required if the driver allocated resources for the virtual HID device. The driver must implement the *EvtVhfCleanup* function and specify a pointer to that function in the **EvtVhfCleanup** member of [**VHF\_CONFIG**](/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config). *EvtVhfCleanup* is invoked before the **VhfDelete** call completes. For more information, see [Delete the virtual HID device](#delete-the-virtual-hid-device).
 
-**Note**  After an asynchronous operation completes, the driver must call [**VhfAsyncOperationComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfasyncoperationcomplete) to set the results of the operation. You can call the method from the event callback or at a later time after returning from the callback.
+**Note**  After an asynchronous operation completes, the driver must call [**VhfAsyncOperationComplete**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfasyncoperationcomplete) to set the results of the operation. You can call the method from the event callback or at a later time after returning from the callback.
 
 ```cpp
 NTSTATUS
@@ -185,11 +184,11 @@ Error:
 
 ## Submit the HID input report
 
-Submit the HID input report by calling [**VhfReadReportSubmit**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfreadreportsubmit).
+Submit the HID input report by calling [**VhfReadReportSubmit**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfreadreportsubmit).
 
 Typically, a HID device sends information about state changes by sending input reports through interrupts. For example, the headset device might send a report when the state of a button changes. In such an event, the driver's interrupt service routine (ISR) is invoked. In that routine, the driver might schedule a deferred procedure call (DPC) that processes the input report and submits it to VHF, which sends the information to the operating system. By default, VHF buffers the report and the HID source driver can start submitting HID Input Reports as they come in. This and eliminates the need for the HID source driver to implement complex synchronization.
 
-The HID source driver can submit input reports by implementing the buffering policy for pending reports. To avoid duplicate buffering, the HID source driver can implement the [*EvtVhfReadyForNextReadReport*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_ready_for_next_read_report) callback function and keep track of whether VHF invoked this callback. If it was previously invoked, the HID source driver can call [**VhfReadReportSubmit**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfreadreportsubmit) to submit a report. It must wait for *EvtVhfReadyForNextReadReport* to get invoked before it can call **VhfReadReportSubmit** again.
+The HID source driver can submit input reports by implementing the buffering policy for pending reports. To avoid duplicate buffering, the HID source driver can implement the [*EvtVhfReadyForNextReadReport*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_ready_for_next_read_report) callback function and keep track of whether VHF invoked this callback. If it was previously invoked, the HID source driver can call [**VhfReadReportSubmit**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfreadreportsubmit) to submit a report. It must wait for *EvtVhfReadyForNextReadReport* to get invoked before it can call **VhfReadReportSubmit** again.
 
 ```cpp
 VOID
@@ -207,26 +206,26 @@ MY_SubmitReadReport(
         deviceContext->VhfHidReport.ReportBuffer[0] |=  (0x01 << ButtonType);
     }
 
-    status = VhfSubmitReadReport(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
+    status = VhfReadReportSubmit(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
 
     if (!NT_SUCCESS(status)) {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfSubmitReadReport failed %!STATUS!", status);
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfReadReportSubmit failed %!STATUS!", status);
     }
 }
 ```
 
 ## Delete the virtual HID device
 
-Delete the virtual HID device by calling [**VhfDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete).
+Delete the virtual HID device by calling [**VhfDelete**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete).
 
-[**VhfDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete) can be called synchronous or asynchronously by specifying the Wait parameter. For a synchronous call, the method must be called at PASSIVE\_LEVEL, such as from [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) of the device object. **VhfDelete** returns after deleting the virtual HID device. If the driver calls **VhfDelete** asynchronously, it returns immediately and VHF invokes [*EvtVhfCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup) after the delete operation is complete. The method can be called at maximum DISPATCH\_LEVEL. In this case, the driver must have registered and implemented an *EvtVhfCleanup* callback function when it previously called [**VhfCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate). Here is the sequence of events when HID source driver wants to delete the virtual HID device:
+[**VhfDelete**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete) can be called synchronous or asynchronously by specifying the Wait parameter. For a synchronous call, the method must be called at PASSIVE\_LEVEL, such as from [*EvtCleanupCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) of the device object. **VhfDelete** returns after deleting the virtual HID device. If the driver calls **VhfDelete** asynchronously, it returns immediately and VHF invokes [*EvtVhfCleanup*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup) after the delete operation is complete. The method can be called at maximum DISPATCH\_LEVEL. In this case, the driver must have registered and implemented an *EvtVhfCleanup* callback function when it previously called [**VhfCreate**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate). Here is the sequence of events when HID source driver wants to delete the virtual HID device:
 
 1.  HID source driver stops initiating calls into VHF.
-2.  HID source calls [**VhfDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete) with *Wait* set to FALSE.
+2.  HID source calls [**VhfDelete**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete) with *Wait* set to FALSE.
 3.  VHF stops invoking callback functions implemented by the HID source driver.
 4.  VHF starts reporting the device as missing to PnP Manager. At this point, the VhfDelete call might return.
-5.  When the device is reported as a missing device, VHF invokes [*EvtVhfCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup) if the HID source driver registered its implementation.
-6.  After [*EvtVhfCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup) returns, VHF performs its cleanup.
+5.  When the device is reported as a missing device, VHF invokes [*EvtVhfCleanup*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup) if the HID source driver registered its implementation.
+6.  After [*EvtVhfCleanup*](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup) returns, VHF performs its cleanup.
 
 ```cpp
 VOID
@@ -252,7 +251,7 @@ _In_ WDFOBJECT DeviceObject
 
 ## Install the HID source driver
 
-In the INF file that installs the HID source driver, make sure that you declare Vhf.sys as a lower filter driver to your HID source driver by using the [**AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+In the INF file that installs the HID source driver, make sure that you declare Vhf.sys as a lower filter driver to your HID source driver by using the [**AddReg Directive**](../install/inf-addreg-directive.md).
 
 ```cpp
 [HIDVHF_Inst.NT.HW]
@@ -264,4 +263,3 @@ HKR,,"LowerFilters",0x00010000,"vhf"
 
 ## Related topics
 [Human Interface Device](https://developer.microsoft.com/windows/hardware)
-

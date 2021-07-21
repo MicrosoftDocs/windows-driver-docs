@@ -1,7 +1,6 @@
 ---
 title: .dml_start (Display DML Starting Point)
 description: The .dml_start command displays output that serves as a starting point for exploration using commands that support Debugger Markup Language (DML).
-ms.assetid: 1CFCACDC-B253-4E9B-9877-EE9F1E91395F
 keywords: [".dml_start (Display DML Starting Point) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,7 +33,7 @@ The name of a DML file to be displayed as the starting output.
 
 If *filename* is omitted, the debugger displays a default DML starting output as illustrated in the following image.
 
-![screen shot of .dml\-start output](images/dmlstart01.png)
+![screen shot of .dml\-start output.](images/dmlstart01.png)
 
 Each line of output in the preceding example is a link that you can click to invoke other commands.
 
@@ -60,10 +59,9 @@ Explore device stacks, device objects, and driver objects.
 
 The command **.dml\_start c:\\MyFavoriteCommands.txt** will display the file as shown in the following image.
 
-![screen shot of dml file output](images/dmlstart02.png)
+![screen shot of dml file output.](images/dmlstart02.png)
 
-Remarks
--------
+## Remarks
 
 For information about DML tags that can be used in DML files, see dml.doc in the installation folder for Debugging Tools for Windows.
 

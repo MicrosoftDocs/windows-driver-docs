@@ -1,7 +1,6 @@
 ---
 title: r (Registers)
 description: The r command displays or modifies registers, floating-point registers, flags, pseudo-registers, and fixed-name aliases.
-ms.assetid: c0d0af2f-1852-47a4-8f01-95f6ec198112
 keywords: ["r (Registers) Windows Debugging"]
 ms.date: 07/11/2018
 topic_type:
@@ -171,8 +170,7 @@ Displays the registers used in the current instruction. If no registers are used
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify *Register*, the **r** command displays all the non-floating-point registers, and the **rF** command displays all the floating-point registers. You can change this behavior by using the [**rm (Register Mask)**](rm--register-mask-.md) command.
 

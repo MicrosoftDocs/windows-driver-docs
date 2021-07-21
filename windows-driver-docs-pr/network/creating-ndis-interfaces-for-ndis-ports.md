@@ -1,7 +1,6 @@
 ---
 title: Creating NDIS Interfaces for NDIS Ports
 description: Creating NDIS Interfaces for NDIS Ports
-ms.assetid: 3a856e4d-e32a-4c8a-8fa0-9976966bdf87
 keywords:
 - ports WDK NDIS , creating NDIS interfaces
 - NDIS ports WDK , creating NDIS interfaces
@@ -16,15 +15,9 @@ ms.localizationpriority: medium
 
 
 
-By default, NDIS does not create an NDIS network interface for an NDIS port. If necessary, NDIS drivers can call the [**NdisIfRegisterProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterprovider) function to register as an NDIS interface provider and call the [**NdisIfRegisterInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterinterface) function to register an interface for a port.
+By default, NDIS does not create an NDIS network interface for an NDIS port. If necessary, NDIS drivers can call the [**NdisIfRegisterProvider**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterprovider) function to register as an NDIS interface provider and call the [**NdisIfRegisterInterface**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterinterface) function to register an interface for a port.
 
-For more information about NDIS network interfaces, see [NDIS 6.0 Network Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
-
- 
+For more information about NDIS network interfaces, see [NDIS 6.0 Network Interfaces](/windows-hardware/drivers/ddi/_netvista/).
 
  
-
-
-
-
 

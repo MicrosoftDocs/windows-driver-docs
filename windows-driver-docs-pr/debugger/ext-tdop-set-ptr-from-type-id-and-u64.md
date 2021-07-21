@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64
 description: The EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation creates a typed data description that represents a pointer to a specified memory location with a specified type.
-ms.assetid: 1ca61962-718e-4cbd-8e16-f87e0c9ec9af
 keywords: ["EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64 Windows Debugging"]
 topic_type:
 - apiref
@@ -24,10 +23,10 @@ The EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 sub-operation of the [**DEBUG\
 Set to EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 for this sub-operation.
 
 <span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span>**Flags**  
-Specifies the bit flags that describe the target's memory in which the value of the typed data resides. See [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) for details of these flags.
+Specifies the bit flags that describe the target's memory in which the value of the typed data resides. See [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) for details of these flags.
 
 <span id="InData"></span><span id="indata"></span><span id="INDATA"></span>**InData**  
-Specifies the type and memory location. This instance of the [**DEBUG\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_debug_typed_data) structure can be manually created and populated with the required members. The following members are used:
+Specifies the type and memory location. This instance of the [**DEBUG\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_debug_typed_data) structure can be manually created and populated with the required members. The following members are used:
 
 <span id="ModBase"></span><span id="modbase"></span><span id="MODBASE"></span>**ModBase**  
 Specifies the location in the target's virtual memory of the base address of the module that contains the type.
@@ -44,30 +43,22 @@ Receives the typed data description that represents a pointer to the memory loca
 <span id="Status"></span><span id="status"></span><span id="STATUS"></span>**Status**  
 Receives the status code returned by this sub-operation. This is the same as the value returned by [**Request**](request.md).
 
-Remarks
--------
+## Remarks
 
-EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 is a value in the [**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
+EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 is a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 
-The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
+The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
 
 ## <span id="see_also"></span>See also
 
 
 [**DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI**](debug-request-ext-typed-data-ansi.md)
 
-[**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop)
+[**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop)
 
-[**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data)
+[**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data)
 
 [**Request**](request.md)
 
  
-
- 
-
-
-
-
-
 

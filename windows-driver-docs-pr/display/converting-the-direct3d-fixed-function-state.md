@@ -1,7 +1,6 @@
 ---
 title: Converting the Direct3D Fixed-Function State
 description: Converting the Direct3D Fixed-Function State
-ms.assetid: bc93d65e-ac16-470d-8c52-db8b1cc74456
 keywords:
 - user-mode display drivers WDK Windows Vista , convert Direct3D fixed-function state
 - fixed-function state conversions WDK display
@@ -61,19 +60,19 @@ How the fixed-function vertex and pixel shader converters work depend on the ver
 
 ### <span id="unused_user_mode_display_driver_functions"></span><span id="UNUSED_USER_MODE_DISPLAY_DRIVER_FUNCTIONS"></span>Unused User-Mode Display Driver Functions
 
-The following [user-mode display driver functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) are not called by the Direct3D runtime when the fixed-function vertex shader converter is enabled:
+The following [user-mode display driver functions](/windows-hardware/drivers/ddi/_display/#functions) are not called by the Direct3D runtime when the fixed-function vertex shader converter is enabled:
 
--   [**MultiplyTransform**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_multiplytransform)
+-   [**MultiplyTransform**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_multiplytransform)
 
--   [**SetTransform**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_settransform)
+-   [**SetTransform**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_settransform)
 
--   [**SetMaterial**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setmaterial)
+-   [**SetMaterial**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setmaterial)
 
--   [**SetLight**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setlight)
+-   [**SetLight**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setlight)
 
--   [**CreateLight**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createlight)
+-   [**CreateLight**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createlight)
 
--   [**DestroyLight**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_destroylight)
+-   [**DestroyLight**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_destroylight)
 
 ### <span id="unused_render_states"></span><span id="UNUSED_RENDER_STATES"></span>Unused Render States
 
@@ -150,10 +149,4 @@ The Direct3D runtime passes all texture stage states to the driver. The driver s
 -   D3DTSS\_CONSTANT
 
  
-
- 
-
-
-
-
 

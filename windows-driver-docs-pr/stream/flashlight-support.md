@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Flashlight Support
 
-Starting from Windows Threshold, we will expose a new WinRT *Lamp* API which allows one to program *camera flash* without the need to create a [Windows.Media.Capture.MediaCapture](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaCapture) instance. By doing so, a developer can write a *flashlight* application (for illumination purpose only) by drawing least amount of resources, including power, such that a computing device can be optimized for battery life and performance.
+Starting from Windows Threshold, we will expose a new WinRT *Lamp* API which allows one to program *camera flash* without the need to create a [Windows.Media.Capture.MediaCapture](/uwp/api/Windows.Media.Capture.MediaCapture) instance. By doing so, a developer can write a *flashlight* application (for illumination purpose only) by drawing least amount of resources, including power, such that a computing device can be optimized for battery life and performance.
 
 To achieve this, an IHV/OEM shall implement a WDM driver which supports the following functions:
 
@@ -19,9 +19,9 @@ To achieve this, an IHV/OEM shall implement a WDM driver which supports the foll
 
 - If applicable, specify light color on a per-device basis.
 
-In terms of functionality, the list above overlaps significantly with that of MediaCapture (for example, [FlashControl](https://docs.microsoft.com/uwp/api/Windows.Media.Devices.FlashControl) and [TorchControl](https://docs.microsoft.com/uwp/api/Windows.Media.Devices.TorchControl)). In addition, the same flash hardware is being used for both *lamp* and *flash-during-capture*. Consequently, an IHV/OEM is recommend to support both types of operations using a single WDM driver to control flash exclusively. The figure below illustrates the concept:
+In terms of functionality, the list above overlaps significantly with that of MediaCapture (for example, [FlashControl](/uwp/api/Windows.Media.Devices.FlashControl) and [TorchControl](/uwp/api/Windows.Media.Devices.TorchControl)). In addition, the same flash hardware is being used for both *lamp* and *flash-during-capture*. Consequently, an IHV/OEM is recommend to support both types of operations using a single WDM driver to control flash exclusively. The figure below illustrates the concept:
 
-![Exclusive flash control concept diagram](images/exclusive-flash-control.png)
+![Exclusive flash control concept diagram.](images/exclusive-flash-control.png)
 
 In the example above, there is only one flash hardware instance (shown as) and it is managed by a single *KMDF flash driver*. The flash driver exposes two device interfaces, each of which is targeted for a specific type of client (or WinRT API). For example, given the figure above:
 
@@ -37,7 +37,7 @@ However, Microsoft will standardize the interface, GUID\_DEVINTERFACE\_LAMP, as 
 
 ### Sharing Flash between Camera and Flashlight Applications
 
-A camera flash is typically considered as a *slave* peripheral to a capture device. It is not meant to be shared with non-camera scenarios while capture is running. To complicate further, the number of flash devices on a chassis is extremely limited such that, in practice, there will not be spare flash dedicated to flashlight purpose only.
+A camera flash is typically considered as a *subordinate* peripheral to a capture device. It is not meant to be shared with non-camera scenarios while capture is running. To complicate further, the number of flash devices on a chassis is extremely limited such that, in practice, there will not be spare flash dedicated to flashlight purpose only.
 
 From software perspective, the above imposes a challenge where a camera application and a flashlight application can coexist and access flash at the same time. For example, in theory, a user can toggle LED state via a flashlight application by while a camera viewfinder is running.
 
@@ -63,7 +63,7 @@ In other words, the GUID\_DEVINTERFACE\_LAMP interface only allows one flashligh
 
 ## Device Interface Class GUID
 
-An IHV/OEM flash driver capable of supporting flashlight independent of MediaCapture must register itself with the [Device Interface Class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) GUID, **GUID\_DEVINTERFACE\_LAMP**.
+An IHV/OEM flash driver capable of supporting flashlight independent of MediaCapture must register itself with the [Device Interface Class](../install/overview-of-device-interface-classes.md) GUID, **GUID\_DEVINTERFACE\_LAMP**.
 
 | Attribute  | Setting                                |
 | ---------- | -------------------------------------- |

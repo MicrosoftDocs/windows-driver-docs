@@ -1,7 +1,6 @@
 ---
 title: Standard Features
 description: Standard Features
-ms.assetid: 5cd90992-5ab8-4cb3-89b0-19e58e55b652
 keywords:
 - printer features WDK Unidrv , standard
 - standard features WDK Unidrv
@@ -103,7 +102,7 @@ The following table lists all of the standard features, in alphabetical order, a
 <td><p>See <a href="standard-options.md" data-raw-source="[Standard Options](standard-options.md)">Standard Options</a>.</p>
 <p>Customized options are not allowed.</p></td>
 <td><p>Optional. If not specified, the default orientation is PORTRAIT.</p>
-<p>For Windows 7, the <strong>MxdcGetPDEVAdjustment</strong> function has new parameters for landscape rotation. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment" data-raw-source="[&lt;strong&gt;MxdcXDCGetPDEVAdjustment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment)"><strong>MxdcXDCGetPDEVAdjustment</strong></a>.</p></td>
+<p>For Windows 7, the <strong>MxdcGetPDEVAdjustment</strong> function has new parameters for landscape rotation. For more information, see <a href="/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment" data-raw-source="[&lt;strong&gt;MxdcXDCGetPDEVAdjustment&lt;/strong&gt;](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment)"><strong>MxdcXDCGetPDEVAdjustment</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OutputBin</strong></p></td>
@@ -152,16 +151,26 @@ The following table lists all of the standard features, in alphabetical order, a
 <td><p>All options are customized.</p></td>
 <td><p>Optional. If specified, Directory Services indicates the printer supports stapling.</p></td>
 </tr>
+<tr class="odd">
+<td><p><strong>N-Up</strong></p></td>
+<td><p><strong>NUp</strong></p></td>
+<td><p>Number of pages to print on each sheet</p></td>
+<td><p>No standard options. All options are customized.</p></td>
+<td><p>Optional.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Passcode</strong></p></td>
+<td><p><strong>JobPasscode</strong></p></td>
+<td><p>Job passcode</p></td>
+<td><p>See <a href="driver-support-for-protected-printing.md" data-raw-source="[Driver Support for Protected Printing](driver-support-for-protected-printing.md)">Driver Support for Protected Printing</a>.</p>
+<p>Customized options are not allowed.</p></td>
+<td><p>Optional. If not specified, the default value is OFF.</p></td>
+</tr>
 </tbody>
 </table>
-
- 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
 ## Related topics
-[Sample GPD files](sample-gpd-files.md)  
-[V4 Printer Driver Localization](v4-driver-localization.md)  
-
-
-
+[Sample GPD files](sample-gpd-files.md)
+[V4 Printer Driver Localization](v4-driver-localization.md)

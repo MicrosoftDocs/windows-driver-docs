@@ -1,7 +1,6 @@
 ---
 title: wmitrace.logger
 description: The wmitrace.logger extension displays data about the trace session, including the session configuration data. This extension does not display trace messages generated during the session.
-ms.assetid: 2bc456db-3e97-49f8-9c57-75ee5fee0f9d
 keywords: ["wmitrace.logger Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -41,8 +40,7 @@ This extension is available in Windows 2000 and later versions of Windows. If yo
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK.
 
-Remarks
--------
+## Remarks
 
 This extension is designed for performance logs and events, which cannot be formatted for human-readable display. To display the trace messages in a trace session buffer, along with header data, use [**!wmitrace.logdump**](-wmitrace-logdump.md).
 

@@ -1,5 +1,4 @@
 ---
-ms.assetid: 216E5337-0B05-4560-92AF-0D7AB90EAEEB
 title: Counters Manifest Preprocessor Properties for Driver Projects
 description: Sets the properties for the CTRPP tool that parses and validates your counters manifest.
 ms.date: 04/20/2017
@@ -8,16 +7,16 @@ ms.localizationpriority: medium
 
 # Counters Manifest Preprocessor Properties for Driver Projects
 
-Sets the properties for the [CTRPP](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp) tool that parses and validates your counters manifest. For information about working with performance counters, see [Performance Counters](https://docs.microsoft.com/windows/desktop/PerfCtrs/performance-counters-portal). For information about using performance counters in a kernel-mode Windows driver, see [Kernel Mode Performance Monitoring](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-mode-performance-monitoring).
+Sets the properties for the [CTRPP](/windows/desktop/PerfCtrs/ctrpp) tool that parses and validates your counters manifest. For information about working with performance counters, see [Performance Counters](/windows/desktop/PerfCtrs/performance-counters-portal). For information about using performance counters in a kernel-mode Windows driver, see [Kernel Mode Performance Monitoring](../devtest/kernel-mode-performance-monitoring.md).
 
 ## <span id="Setting_the_Counters_Manifest_Preprocessor_properties_for_driver_projects"></span><span id="setting_the_counters_manifest_preprocessor_properties_for_driver_projects"></span><span id="SETTING_THE_COUNTERS_MANIFEST_PREPROCESSOR_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting the Counters Manifest Preprocessor properties for driver projects
 
 
-1.  Open the property pages for your driver project. Right-click the driver project in **Solution Explorer** and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties** and then click **Counters Manifest Preprocessor Properties**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in **Solution Explorer** and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties** and then select **Counters Manifest Preprocessor Properties**.
 3.  Set the properties for the project.
 
-If you want to add this property page to your project so that you can run the CTRPP tool during the build process, see the [WDK and Visual Studio build environment](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-and-visual-studio-build-environment) and the [Ctrpp task](https://docs.microsoft.com/windows-hardware/drivers/devtest/ctrpp-task).
+If you want to add this property page to your project so that you can run the CTRPP tool during the build process, see the [WDK and Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md) and the [Ctrpp task](../devtest/ctrpp-task.md).
 
 <table>
 <colgroup>
@@ -37,7 +36,7 @@ If you want to add this property page to your project so that you can run the CT
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Additional_Options"></span><span id="additional_options"></span><span id="ADDITIONAL_OPTIONS"></span>Additional Options</p></td>
-<td align="left"><p>Specifies additional options to the <a href="https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp" data-raw-source="[&lt;strong&gt;CTRPP&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp)"><strong>CTRPP</strong></a> tool.</p></td>
+<td align="left"><p>Specifies additional options to the <a href="/windows/desktop/PerfCtrs/ctrpp" data-raw-source="[&lt;strong&gt;CTRPP&lt;/strong&gt;](/windows/desktop/PerfCtrs/ctrpp)"><strong>CTRPP</strong></a> tool.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Backward_Compatibility"></span><span id="backward_compatibility"></span><span id="BACKWARD_COMPATIBILITY"></span>Backward Compatibility</p></td>
@@ -45,7 +44,7 @@ If you want to add this property page to your project so that you can run the CT
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Enable_Legacy"></span><span id="enable_legacy"></span><span id="ENABLE_LEGACY"></span>Enable Legacy</p></td>
-<td align="left"><p>Reverts to generating code using Windows Vista code templates. This option causes <a href="https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp" data-raw-source="[&lt;strong&gt;CTRPP&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp)"><strong>CTRPP</strong></a> to generate four output files: two header files (.h, _r.h), a resource file (.rc), and a source code file (c). (<strong>-legacy</strong>)</p></td>
+<td align="left"><p>Reverts to generating code using Windows Vista code templates. This option causes <a href="/windows/desktop/PerfCtrs/ctrpp" data-raw-source="[&lt;strong&gt;CTRPP&lt;/strong&gt;](/windows/desktop/PerfCtrs/ctrpp)"><strong>CTRPP</strong></a> to generate four output files: two header files (.h, _r.h), a resource file (.rc), and a source code file (c). (<strong>-legacy</strong>)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Generate_header_file_for_containing_counter_names_and_GUIDs"></span><span id="generate_header_file_for_containing_counter_names_and_guids"></span><span id="GENERATE_HEADER_FILE_FOR_CONTAINING_COUNTER_NAMES_AND_GUIDS"></span>Generate header file for containing counter names and GUIDs</p></td>
@@ -97,20 +96,11 @@ If you want to add this property page to your project so that you can run the CT
 ## <span id="Comment"></span><span id="comment"></span><span id="COMMENT"></span>Comment
 
 
-The default names of the files that the tool generates are based on the name of the manifest file that you pass to the [**CTRPP**](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp) tool.
+The default names of the files that the tool generates are based on the name of the manifest file that you pass to the [**CTRPP**](/windows/desktop/PerfCtrs/ctrpp) tool.
 
 ## <span id="related_topics"></span>Related topics
 
 
-* [**CTRPP**](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp)
-* [Performance Counters](https://docs.microsoft.com/windows/desktop/PerfCtrs/performance-counters-portal)
-* [Kernel Mode Performance Monitoring](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-mode-performance-monitoring)
- 
-
- 
-
-
-
-
-
-
+* [**CTRPP**](/windows/desktop/PerfCtrs/ctrpp)
+* [Performance Counters](/windows/desktop/PerfCtrs/performance-counters-portal)
+* [Kernel Mode Performance Monitoring](../devtest/kernel-mode-performance-monitoring.md)

@@ -1,7 +1,7 @@
 ---
 title: 3D print partner onboarding guide
 description: This topic describes how to implement 3D printer drivers that are then published on Windows Update.
-ms.date: 05/17/2018
+ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +33,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 ## Choosing the right driver model
 
-![A 4x4 grid showing pros and cons of Microsoft and custom 3D driver models for Upper and Lower drivers, as described in the next section](images/onboarding-driver-models.png)
+![A 4x4 grid showing pros and cons of Microsoft and custom 3D driver models for Upper and Lower drivers, as described in the next section.](images/onboarding-driver-models.png)
 
 ## 3D print driver with custom slicer
 
@@ -41,18 +41,18 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Ensure the device firmware has a unique Vendor ID and Product ID (VID/PID) allocated by the [USB Implementers Forum (USB-IF)](https://www.usb.org/). For USBSER devices, we strongly recommended that you use a unique serial number to prevent conflicts on a USB port changes.
 
-2. Install Microsoft tools and SDKs
+1. Install Microsoft tools and SDKs
 
-    - Download and install [Visual Studio Community Edition](https://go.microsoft.com/fwlink/p/?LinkId=534599)
+    - Download and install [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community)
 
-    - Download and install the [Windows 10 SDK](https://go.microsoft.com/fwlink/p/?LinkID=822845)
+    - Download and install the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
 
     - Download and install the [3D printing SDK](https://go.microsoft.com/fwlink/p/?LinkId=394375)
 
    > [!NOTE]
    > The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.
 
-3. Implement the USB driver
+1. Implement the USB driver
 
     - A manufacturer can use the Microsoft USB driver for their 3D printer by creating a partner DLL. For more information, see [3D printer custom USB interface support](3d-printer-custom-usb-interface.md).
 
@@ -61,11 +61,11 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
     > [!NOTE]
     > If the printer is using a custom slicer, continue with steps 4-7.
 
-4. Build the Fabrikam driver (slicer template only)
+1. Build the Fabrikam driver (slicer template only)
 
     - Build and obtain the driver package. This creates a x64 folder with the slicer part.
 
-5. Adding the custom slicer
+1. Adding the custom slicer
 
     - Modify the cpp file to include:
 
@@ -73,13 +73,13 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
       - Write G-Code
 
-6. Adding the printer node
+1. Adding the printer node
 
     - Open the inf in Fabrikam Print driver
 
     - Replace the entries hardware IDs:
 
-        ```INF
+        ```inf
         %DeviceName%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam1
 
         %DeviceNamePlus%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam2
@@ -89,6 +89,6 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
         DeviceNamePlus="CONTOSO FABRIKAM 2"
         ```
 
-7. Publish and distribute the driver
+1. Publish and distribute the driver
 
-    - Follow the guidance in the [Windows Partner Center](https://docs.microsoft.com/windows-hardware/drivers/dashboard) topics to publish your driver.
+    - Follow the guidance in the [Windows Partner Center](../dashboard/index.yml) topics to publish your driver.

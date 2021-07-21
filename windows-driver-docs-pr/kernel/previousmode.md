@@ -1,7 +1,6 @@
 ---
 title: PreviousMode
 description: PreviousMode
-ms.assetid: 1251cca9-604c-48c0-a136-21dd1fe4fa72
 keywords: ["PreviousMode", "RequestorMode"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -20,16 +19,11 @@ A kernel-mode driver can directly call the **Nt** version of a native system ser
 
 An error can occur if a kernel-mode driver calls an **Nt*Xxx*** routine and the **PreviousMode** value in the current thread object does not accurately indicate whether the parameter values are from a user-mode or a kernel-mode source.
 
-For example, assume that a kernel-mode driver is running in the context of an arbitrary thread, and that the **PreviousMode** value for this thread is set to **UserMode**. If the driver passes a kernel-mode file handle to the [**NtClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) routine, this routine checks the **PreviousMode** value and decides that the handle must be a user-mode handle. When **NtClose** does not find the handle in the user-mode handle table, it returns the STATUS\_INVALID\_HANDLE error code. Meanwhile, the driver leaks the kernel-mode handle, which was never closed.
+For example, assume that a kernel-mode driver is running in the context of an arbitrary thread, and that the **PreviousMode** value for this thread is set to **UserMode**. If the driver passes a kernel-mode file handle to the [**NtClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) routine, this routine checks the **PreviousMode** value and decides that the handle must be a user-mode handle. When **NtClose** does not find the handle in the user-mode handle table, it returns the STATUS\_INVALID\_HANDLE error code. Meanwhile, the driver leaks the kernel-mode handle, which was never closed.
 
-For another example, if the parameters for an **Nt*Xxx*** routine include an input or output buffer, and if **PreviousMode** = **UserMode**, the routine calls the [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) or [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) routine to validate the buffer. If the buffer was allocated in system memory instead of in user-mode memory, the **ProbeFor*Xxx*** routine raises an exception, and the **Nt*Xxx*** routine returns the STATUS\_ACCESS\_VIOLATION error code.
+For another example, if the parameters for an **Nt*Xxx*** routine include an input or output buffer, and if **PreviousMode** = **UserMode**, the routine calls the [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) or [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) routine to validate the buffer. If the buffer was allocated in system memory instead of in user-mode memory, the **ProbeFor*Xxx*** routine raises an exception, and the **Nt*Xxx*** routine returns the STATUS\_ACCESS\_VIOLATION error code.
 
-If it is necessary, a driver can call the [**ExGetPreviousMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exgetpreviousmode) routine to get the **PreviousMode** value from the current thread object. Or, the driver can read the **RequestorMode** field from the [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure that describes the requested I/O operation. The **RequestorMode** field contains a copy of the **PreviousMode** value from the thread that requested the operation.
-
- 
+If it is necessary, a driver can call the [**ExGetPreviousMode**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exgetpreviousmode) routine to get the **PreviousMode** value from the current thread object. Or, the driver can read the **RequestorMode** field from the [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure that describes the requested I/O operation. The **RequestorMode** field contains a copy of the **PreviousMode** value from the thread that requested the operation.
 
  
-
-
-
 

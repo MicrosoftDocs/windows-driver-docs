@@ -1,7 +1,6 @@
 ---
 title: Changing Contexts
 description: Changing Contexts
-ms.assetid: 3690903c-4281-4c65-98b0-00ca22206168
 keywords: ["context", "logon session, context", "context, session context", "session, context", "user sessions", "session"]
 ms.date: 08/02/2018
 ms.localizationpriority: medium
@@ -33,7 +32,7 @@ Multiple logon sessions can run at the same time. Each logon session has its own
 
 The [**!session**](-session.md) extension displays all logon sessions or changes the current session context.
 
-The session context is used by the [**!sprocess**](-sprocess.md) and [**!spoolused**](https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-extensions) extensions when the session number is entered as "-2".
+The session context is used by the [**!sprocess**](-sprocess.md) and [**!spoolused**](kernel-mode-extensions.md) extensions when the session number is entered as "-2".
 
 When the session context is changed, the process context is automatically changed to the active process for that session.
 

@@ -1,7 +1,6 @@
 ---
 title: Deserialized NDIS Miniport Drivers
 description: Deserialized NDIS Miniport Drivers
-ms.assetid: d133370a-48f4-425b-a2bd-d95ec8b5c369
 keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types
@@ -22,7 +21,7 @@ A *deserialized NDIS miniport driver* serializes the operation of its own *Minip
 
 The deserialized driver model is the default model for NDIS miniport drivers. Connection-oriented miniport drivers, as well as miniport drivers with a WDM lower edge, must be deserialized drivers. When writing a new NDIS miniport driver, you should write a deserialized driver. If possible, you should also port older drivers to NDIS 6.0 or later. For more information about porting drivers, see:
 
--   [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0)
+-   [Porting NDIS 5.x Drivers to NDIS 6.0](/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0)
 -   [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
 -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 
@@ -40,7 +39,7 @@ A deserialized miniport driver must meet the following requirements when it inte
 
 A deserialized miniport driver must meet the following driver-internal requirements:
 
--   A deserialized miniport driver must protect its network buffer queues with [spin locks](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-spin-locks). A deserialized miniport driver must also protect its shared state from simultaneous access by its own *MiniportXxx* functions.
+-   A deserialized miniport driver must protect its network buffer queues with [spin locks](../kernel/introduction-to-spin-locks.md). A deserialized miniport driver must also protect its shared state from simultaneous access by its own *MiniportXxx* functions.
 
 -   A deserialized miniport driver's *MiniportXxx* functions can run at IRQL &lt;= DISPATCH\_LEVEL. Consequently, the driver writer cannot assume that *MiniportXxx* functions will be called in the sequence in which they process requests. One *MiniportXxx* function can preempt another *MiniportXxx* function that is running at a lower IRQL.
 
@@ -53,10 +52,4 @@ For more information about send and receive requirements for NDIS drivers, see [
 Note that a deserialized miniport driver usually completes send requests in protocol-determined order. However, a miniport driver that supports packet priority (for example, IEEE 802.1p) can reorder send requests based on priority information.
 
  
-
- 
-
-
-
-
 

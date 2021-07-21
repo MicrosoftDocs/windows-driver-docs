@@ -1,7 +1,6 @@
 ---
 title: ks.eval
 description: The ks.eval extension evaluates an expression using an extension-specific expression evaluator.
-ms.assetid: 68c9cfb0-ff87-47ea-bd0d-5f45c1de0639
 keywords: ["ks.eval Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,13 +21,12 @@ The **!ks.eval** extension evaluates an expression using an extension-specific e
 !ks.eval Expression 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
-
-<span id="_______Expression______"></span><span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *Expression*   
+*Expression*   
 Specifies the expression to evaluate. *Expression* can include any MASM operators, symbols, or numerical syntax, as well as the extension-specific operators described below. For more information about MASM expressions, see [MASM Numbers and Operators](masm-numbers-and-operators.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 <table>
 <colgroup>
@@ -49,12 +47,11 @@ Specifies the expression to evaluate. *Expression* can include any MASM operator
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The extension module includes two extension-specific operators which can be used in address parameters to extension commands:
 

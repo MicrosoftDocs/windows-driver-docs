@@ -1,14 +1,13 @@
 ---
 title: Applications
 description: Applications
-ms.assetid: 40d73650-556e-4221-a679-0b8e9ead4df5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Applications
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Applications element specifies the apps that are associated with the Mobile Broadband hardware device.
 

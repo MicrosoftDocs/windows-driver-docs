@@ -1,7 +1,6 @@
 ---
 title: Using DBH
 description: Using DBH
-ms.assetid: c544013d-e925-40bf-b76d-bf9cefb9fd6d
 keywords: ["DBH, using"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

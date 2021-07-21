@@ -1,7 +1,6 @@
 ---
 title: User-Mode Dump Files
 description: User-Mode Dump Files
-ms.assetid: bef29d75-6620-4219-b402-36fbddc4fe1f
 keywords: ["dump file, user-mode"]
 ms.date: 12/03/2019
 ms.localizationpriority: medium
@@ -132,7 +131,7 @@ There are several different tools that can be used to create a user-mode dump fi
 
 ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps during a spike that an administrator or developer can use to determine the cause of the spike. ProcDump also includes hung window monitoring (using the same definition of a window hang that Windows and Task Manager use), unhandled exception monitoring and can generate dumps based on the values of system performance counters. It also can serve as a general process dump utility that you can embed in other scripts.
 
-For information about creating a user-mode dump file using the Sysinternals ProcDump utility, see [ProcDump](https://docs.microsoft.com/sysinternals/downloads/procdump).
+For information about creating a user-mode dump file using the Sysinternals ProcDump utility, see [ProcDump](/sysinternals/downloads/procdump).
 
 ## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span>CDB and WinDbg
 
@@ -144,7 +143,7 @@ When an application error occurs, Windows can respond in several different ways,
 
 ### <span id="creating_dump_files_while_debugging"></span><span id="CREATING_DUMP_FILES_WHILE_DEBUGGING"></span>Creating Dump Files While Debugging
 
-When CDB or WinDbg is debugging a user-mode application, you can also the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to create a dump file.
+When CDB or WinDbg is debugging a user-mode application, you can also use the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to create a dump file.
 
 This command does not cause the target application to terminate. By selecting the proper command options, you can create a minidump file that contains exactly the amount of information you wish.
 

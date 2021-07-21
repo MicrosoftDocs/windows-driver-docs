@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Support in Different Versions of Windows
 description: WDM Audio Support in Different Versions of Windows
-ms.assetid: 63894118-508c-406b-a96c-7eee6867d7d4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: package XML Element
 description: The package XML element specifies an INF file for a driver package.Element Tag package XML AttributespathThe path to an INF file for a driver package.
-ms.assetid: c7089e58-50c7-46ec-a9bf-c8e2d2bd354a
 keywords: ["package XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,9 +15,9 @@ ms.date: 10/17/2018
 # package XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
-The **package** XML element specifies an INF file for a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages).
+The **package** XML element specifies an INF file for a [driver package](./driver-packages.md).
 
 **Element Tag**
 
@@ -74,7 +73,7 @@ The **package** XML element specifies an INF file for a [driver package](https:/
 
 **Remarks**
 
-The following code example demonstrates a **package** element that specifies DirAbc\\Abc.inf as the INF file for the [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages).
+The following code example demonstrates a **package** element that specifies DirAbc\\Abc.inf as the INF file for the [driver package](./driver-packages.md).
 
 ```cpp
 <dpinst>
@@ -92,11 +91,4 @@ The following code example demonstrates a **package** element that specifies Dir
 [**group**](group-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

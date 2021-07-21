@@ -1,7 +1,6 @@
 ---
 title: V4 Printer Driver Rendering Architecture
 description: The rendering architecture for the v4 printer driver model is the same as the XPSDrv architecture.
-ms.assetid: 132BB5D5-426C-4449-8562-B5E43E331858
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ The rendering architecture for the v4 printer driver model is the same as the XP
 
 The following diagram shows the rendering architecture choices for v4 printer drivers.
 
-![rendering architecture choices for v4 printer drivers](images/v4xpsdrvarch.png)
+![rendering architecture choices for v4 printer drivers.](images/v4xpsdrvarch.png)
 
 The following paragraphs explain the roles of the IHV filters in the preceding diagram, and also provide guidelines for developing features to work within this rendering architecture.
 
@@ -55,11 +54,8 @@ For manufacturers with multiple IHV Feature Filters, we recommend that these fil
 ## Color Management
 
 
-Color management is supported in v4 print drivers. Drivers should include [Windows Color System](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index) (WCS) compliant color profiles or International Color Consortium (ICC) color profiles. V4 print drivers may also use the driver property bag for device-specific color tables.
+Color management is supported in v4 print drivers. Drivers should include [Windows Color System](/windows-hardware/drivers/ddi/_print/index) (WCS) compliant color profiles or International Color Consortium (ICC) color profiles. V4 print drivers may also use the driver property bag for device-specific color tables.
 
 ## Related topics
 [V4 Printer Driver Rendering](v4-driver-rendering.md)  
-[Windows Color System](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index)  
-
-
-
+[Windows Color System](/windows-hardware/drivers/ddi/_print/index)

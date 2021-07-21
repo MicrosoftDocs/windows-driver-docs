@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_SUBMITRENDER structure
 description: The DXGKARG\_SUBMITRENDER structure is reserved for system use. Do not use it in your driver.
-ms.assetid: eecc3c47-1387-4fca-9113-12dfedc58e80
 keywords: ["_DXGKARG_SUBMITRENDER structure Display Devices", "DXGKARG_SUBMITRENDER structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_SUBMITRENDER structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_SUBMITRENDER {
@@ -36,8 +34,7 @@ typedef struct _DXGKARG_SUBMITRENDER {
 } DXGKARG_SUBMITRENDER;
 ```
 
-Members
--------
+## Members
 
 **pContextSaveArea**
 Reserved for system use.
@@ -63,8 +60,7 @@ Reserved for system use.
 **pDmaBuffer**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

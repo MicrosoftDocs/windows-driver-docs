@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfdevice
 description: The wdfkd.wdfdevice extension displays information that is associated with a WDFDEVICE-typed object handle.
-ms.assetid: c6dd98e5-a0ed-437d-a313-5d8a416105dd
 keywords: ["wdfkd.wdfdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following example uses the **!wdfkd.wdfdevice** extension on a WDFDEVICE handle that represents a physical device object (PDO), without specifying any flags.
 

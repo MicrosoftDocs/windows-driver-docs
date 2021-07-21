@@ -1,7 +1,6 @@
 ---
 title: dpinstTitle XML Element
 description: dpinstTitle XML Element
-ms.assetid: a6867874-436b-414f-9610-aea585822a91
 keywords: ["dpinstTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # dpinstTitle XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **dpinstTitle** XML element customizes the text that appears on the title bar of all of the DPInst wizard pages.
 
@@ -83,11 +82,4 @@ If a **dpinstTitle** element is not specified, DPInst displays the default title
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

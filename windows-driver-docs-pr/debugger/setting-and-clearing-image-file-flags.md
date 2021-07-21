@@ -1,7 +1,6 @@
 ---
 title: Setting and Clearing Image File Flags
 description: Setting and Clearing Image File Flags
-ms.assetid: 8f9ea2df-c172-43e0-98c5-0983f68a66f4
 keywords: ["GFlags, image file flags"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -21,7 +20,7 @@ Image file settings affect instances of the specified program that start after t
 
     The following screen shot shows the **Image File** tab in Windows Vista.
 
-    ![screen shot of the image file tab in windows vista ](images/gflags-image.png)
+    ![screen shot of the image file tab in windows vista .](images/gflags-image.png)
 
 2.  In the **Image** box, type the name of an executable file or DLL, including the file name extension,and then press the TAB key.
 

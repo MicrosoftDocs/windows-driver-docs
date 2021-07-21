@@ -1,7 +1,6 @@
 ---
 title: JobOriginatingUserName element
 description: The required JobOriginatingUserName element specifies the name of the user who submitted the scan job.
-ms.assetid: ba2dd472-1ac0-40bd-816c-02abc093b6ed
 keywords: ["JobOriginatingUserName element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobOriginatingUserName** element specifies the name of the user who submitted the scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobOriginatingUserName>
@@ -27,13 +25,11 @@ Usage
 </wscn:JobOriginatingUserName>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -67,8 +63,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client or the security infrastructure, if any, provides the **JobOriginatingUserName** element. A client should supply a value to help users easily distinguish between the jobs that they submitted and jobs that other users submitted.
 

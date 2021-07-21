@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_SYSTEM_SHUTDOWN
 description: CM_PROB_SYSTEM_SHUTDOWN
-ms.assetid: e469db17-c519-4e05-a6bd-a53190ca33ed
 keywords:
 - CM_PROB_SYSTEM_SHUTDOWN
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_SYSTEM_SHUTDOWN
+# Code 46 - CM_PROB_SYSTEM_SHUTDOWN
 
-This function is reserved for system use.
-
-The device is not available because the system is shutting down.
+This Device Manager error message indicates that the device is not available because the system is shutting down.
 
 ## Error Code
 

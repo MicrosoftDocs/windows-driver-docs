@@ -1,7 +1,6 @@
 ---
 title: MRxStop routine
 description: TheMRxStop routine is called by RDBSS to stop the network mini-redirector.
-ms.assetid: 7600335e-ab7c-4993-9e27-18e530496b1c
 keywords: ["MRxStop routine Installable File System Drivers", "PMRX_CALLDOWN_CTX"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 # MRxStop routine
 
 
-The*MRxStop* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to stop the network mini-redirector.
+The*MRxStop* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to stop the network mini-redirector.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN_CTX MRxStop;
@@ -33,8 +31,7 @@ NTSTATUS MRxStop(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that requested the network mini-redirector to stop.
@@ -42,8 +39,7 @@ A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that req
 *RxDeviceObject* \[in, out\]  
 A pointer to the RDBSS\_DEVICE\_OBJECT structure for this network mini-redirector.
 
-Return value
-------------
+## Return value
 
 *MRxStop* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -72,8 +68,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxStop* stops and uninitializes the network mini-redirector from the RDBSS perspective. Stopping the network mini-redirector may likely require releasing memory allocations and other system resources.
 
@@ -87,7 +82,7 @@ The **StartStopContext.State** member of the RDBSS\_DEVICE\_OBJECT structure poi
 
 The **StartStopContext.pStopContext** member of the RDBSS\_DEVICE\_OBJECT structure pointed to by *RxDeviceObject* is set to the *RxContext* parameter.
 
-*MRxStop* is called by RDBSS from the [**RxStopMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstopminirdr) routine.
+*MRxStop* is called by RDBSS from the [**RxStopMinirdr**](/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstopminirdr) routine.
 
 If *MRxStop* returns STATUS\_SUCCESS, then the routine was successful. Any other return value indicates that an error occurred in stopping the network mini-redirector.
 
@@ -95,8 +90,7 @@ If *MRxStop* returns STATUS\_SUCCESS, RDBSS sets the state of RDBSS to RDBSS\_ST
 
 A network mini-redirector would normally maintain an internal variable indicating whether the network mini-redirector is started. For example, a network mini-redirector might track when it is stopped, started, and when a start operation or stop operation is in progress.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -120,16 +114,9 @@ Requirements
 
 [**MRxDevFcbXXXControlFile**](mrxdevfcbxxxcontrolfile.md)
 
-[**MrxStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)
+[**MrxStart**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)
 
-[**RxStopMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstopminirdr)
-
- 
+[**RxStopMinirdr**](/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstopminirdr)
 
  
-
-
-
-
-
 

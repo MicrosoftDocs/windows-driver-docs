@@ -1,6 +1,5 @@
 ---
 title: NFC stack architecture
-ms.assetid: 04800C37-99EA-431A-98C5-24984030CEA9
 keywords:
 - NFC
 - near field communications
@@ -17,11 +16,11 @@ ms.localizationpriority: medium
 
 The following diagram illustrates the NFC stack architecture:
 
-![nfc stack architecture](images/nfcstackarchitecture.png)
+![nfc stack architecture.](images/nfcstackarchitecture.png)
 
  
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

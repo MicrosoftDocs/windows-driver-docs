@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_YRES
 description: The WIA\_IPS\_YRES property contains the current vertical resolution setting, in pixels per inch, for a device.
-ms.assetid: 40a98cac-e5de-42db-b9df-1fba63925427
 keywords: ["WIA_IPS_YRES Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_YRES property to set the vertical resolution. The WIA minidriver creates and maintains this property.
 
@@ -38,8 +36,7 @@ If a device can be set to only a single value, create a WIA\_PROP\_LIST type and
 
 WIA\_IPS\_YRES is required for all image acquisition-enabled items and stored image items; it is not available for storage items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

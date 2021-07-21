@@ -1,7 +1,6 @@
 ---
 title: a (Assemble)
 description: The a command assembles 32-bit x86 instruction mnemonics and puts the resulting instruction codes into memory.
-ms.assetid: 6736a5fd-5a33-4698-9510-8a95f6a1caf7
 keywords: ["Assemble (a) command", "assembly debugging, Assemble (a) command", "a (Assemble) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Specifies the beginning of the block in memory where the resulting codes are put
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 The **a** command does not support 64-bit instruction mnemonics. However, the **a** command is enabled regardless of whether you are debugging a 32-bit target or a 64-bit target. Because of the similarities between x86 and x64 instructions, you can sometimes use the **a** command successfully when debugging a 64-bit target.
 

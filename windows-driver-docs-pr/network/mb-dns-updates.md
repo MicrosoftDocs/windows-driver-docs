@@ -1,7 +1,6 @@
 ---
 title: MB DNS Updates
 description: MB DNS Updates
-ms.assetid: be93f0b4-a075-455e-b03c-6d23a2be7b1d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic describes the operations to notify the MB Service about DNS address updates.
 
-Miniport drivers should set the **NameServer** registry key to update Windows about DNS address changes. The following table describes the appropriate registry key, the expected value and an example string for IPv4 and IPv6 networks. If a miniport driver supports only IPv4 networks, it should set only the IPv4 registry key. Miniport drivers should set the appropriate registry key(s) before they notify Windows about media connect events by sending [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) notifications.
+Miniport drivers should set the **NameServer** registry key to update Windows about DNS address changes. The following table describes the appropriate registry key, the expected value and an example string for IPv4 and IPv6 networks. If a miniport driver supports only IPv4 networks, it should set only the IPv4 registry key. Miniport drivers should set the appropriate registry key(s) before they notify Windows about media connect events by sending [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) notifications.
 
 <table>
 <colgroup>
@@ -53,10 +52,4 @@ These operations should be used only when the miniport driver specifies **Enable
 For more information about processing IP address notifications, see [Guidelines for MB Miniport driver IP Address Notifications](guidelines-for-mb-miniport-driver-ip-address-notifications.md).
 
  
-
- 
-
-
-
-
 

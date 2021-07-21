@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_PRESHUTDOWN
 description: OID_WWAN_PRESHUTDOWN is sent to notify the modem that the system is entering the shutdown phase and the modem should finish its operations so it can be shut down properly.
-ms.assetid: B00A2D70-64E0-4686-92FC-D4095BDD713B
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PRESHUTDOWN Network Drivers Starting with Windows Vista
@@ -15,12 +14,11 @@ OID\_WWAN\_PRESHUTDOWN is sent to notify the modem that the system is entering t
 
 Query requests are not supported.
 
-Miniport drivers must process set requests asynchronously, initially returning **NDIS\_STATUS\_INDICATION\_REQUIRED** to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preshutdown-state) status notification when the MBB driver has finished all necessary modem operations prior to shutting down. The set request has a [**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preshutdown_state) structure.
+Miniport drivers must process set requests asynchronously, initially returning **NDIS\_STATUS\_INDICATION\_REQUIRED** to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE**](./ndis-status-wwan-preshutdown-state.md) status notification when the MBB driver has finished all necessary modem operations prior to shutting down. The set request has a [**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preshutdown_state) structure.
 
 Miniport drivers should return **NDIS\_STATUS\_NOT\_SUPPORTED** if they do not support this operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -42,14 +40,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preshutdown-state)
+[**NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE**](./ndis-status-wwan-preshutdown-state.md)
 
-[**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preshutdown_state)
-
- 
+[**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preshutdown_state)
 
  
-
-
-
 

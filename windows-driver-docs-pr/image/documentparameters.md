@@ -1,7 +1,6 @@
 ---
 title: DocumentParameters element
 description: The optional DocumentParameters element specifies the image processing functions to apply to documents in a job.
-ms.assetid: 3b76bf47-a674-4925-aa0f-b2310e1ad1ce
 keywords: ["DocumentParameters element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **DocumentParameters** element specifies the image processing functions to apply to documents in a job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DocumentParameters>
@@ -27,8 +25,7 @@ Usage
 </wscn:DocumentParameters>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -103,8 +100,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **DocumentParameters** element specifies the image processing functions and their values that will be applied against the job or document.
 

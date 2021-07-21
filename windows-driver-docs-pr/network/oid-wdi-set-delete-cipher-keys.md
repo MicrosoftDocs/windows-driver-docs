@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_DELETE_CIPHER_KEYS
 description: OID_WDI_SET_DELETE_CIPHER_KEYS deletes cipher keys from the device's cipher key table.
-ms.assetid: 0a8d4625-382b-4976-aa3f-a8fea0976a00
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_DELETE_CIPHER_KEYS Network Drivers Starting with Windows Vista
@@ -25,7 +24,7 @@ OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS deletes cipher keys from the device's cipher
 
 | TLV                                                                                | Multiple TLV instances allowed | Optional | Description                                                |
 |------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------|
-| [**WDI\_TLV\_DELETE\_CIPHER\_KEY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-delete-cipher-key-info) | X                              |          | The cipher keys to be deleted from the device's key table. |
+| [**WDI\_TLV\_DELETE\_CIPHER\_KEY\_INFO**](./wdi-tlv-delete-cipher-key-info.md) | X                              |          | The cipher keys to be deleted from the device's key table. |
 
  
 
@@ -34,8 +33,7 @@ OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS deletes cipher keys from the device's cipher
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -64,9 +62,4 @@ Requirements
 [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](oid-wdi-set-add-cipher-keys.md)
 
  
-
- 
-
-
-
 

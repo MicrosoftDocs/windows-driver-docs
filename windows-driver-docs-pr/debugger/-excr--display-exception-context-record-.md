@@ -1,7 +1,6 @@
 ---
 title: .excr (Display Exception Context Record)
 description: The .excr command displays the context record that is associated with the current exception.
-ms.assetid: 18FD32B9-93DE-4E23-A73C-18CC3665417A
 keywords: [".excr (Display Exception Context Record) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,8 +53,7 @@ The **.excr** command displays the context record that is associated with the cu
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 The **.excr** command locates the current exception's context information and displays the important registers for the specified context record.
 

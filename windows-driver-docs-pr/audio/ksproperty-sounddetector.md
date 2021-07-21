@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR enumeration
 description: The KSPROPERTY\_SOUNDDETECTOR enumeration defines constants that are used to register a filter for an audio capture device that also supports a detector.
-ms.assetid: 6AF98B06-1531-4AC9-9E32-D812E6EA424C
 keywords: ["KSPROPERTY_SOUNDDETECTOR enumeration Audio Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The **KSPROPERTY\_SOUNDDETECTOR** enumeration defines constants that are used to register a filter for an audio capture device that also supports a detector.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum  { 
@@ -32,8 +30,7 @@ typedef enum  {
 } KSPROPERTY_SOUNDDETECTOR;
 ```
 
-Constants
----------
+## Constants
 
 <span id="KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS"></span><span id="ksproperty_sounddetector_supportedpatterns"></span>**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**  
 Specifies the ID for the [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](ksproperty-sounddetector-supportedpatterns.md) property.
@@ -47,8 +44,7 @@ Specifies the ID for the [**KSPROPERTY\_SOUNDDETECTOR\_ARMED**](ksproperty-sound
 <span id="KSPROPERTY_SOUNDDETECTOR_MATCHRESULT"></span><span id="ksproperty_sounddetector_matchresult"></span>**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**  
 Specifies the ID for the [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](ksproperty-sounddetector-matchresult.md) property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

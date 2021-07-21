@@ -1,7 +1,6 @@
 ---
 title: Operation Flow with Single Device Stack
 description: Operation Flow with Single Device Stack
-ms.assetid: b7e38844-2e00-48b8-9741-3bfc38869a6d
 keywords:
 - single device stack flow WDK UMDF
 - operation flow WDK UMDF
@@ -18,21 +17,15 @@ ms.localizationpriority: medium
 
 The following figure shows the flow of operations that occur to and from the UMDF functional driver in a single device stack.
 
-![umdf call sequence for create file followed by a read request](images/umdfflow.gif)
+![umdf call sequence for create file followed by a read request.](images/umdfflow.gif)
 
-**Note**   All I/O that is initiated by applications is routed through kernel mode as shown in the figures in the [Architecture of the UMDF](https://docs.microsoft.com/previous-versions/ff554461(v=vs.85)) section, even though the preceding figure does not show this situation.
-
- 
-
-The UMDF driver calls the [**IWDFIoRequest::GetCreateParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getcreateparameters) method only if it requires information about the file that is associated with the read request. The UMDF driver calls the [**IWDFIoRequest::GetReadParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getreadparameters) method only if it requires more information about the read request.
-
-The UMDF driver can call the [**IWDFIoRequest::Complete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-complete) method rather than the [**IWDFIoRequest::CompleteWithInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation) method if specifying the number of bytes that are transferred in the read operation is not required. The UMDF driver calls **Complete** or **CompleteWithInformation** to signal that the read operation is complete; the application can then access the read data.
+**Note**   All I/O that is initiated by applications is routed through kernel mode as shown in the figures in the [Architecture of the UMDF](/previous-versions/ff554461(v=vs.85)) section, even though the preceding figure does not show this situation.
 
  
 
+The UMDF driver calls the [**IWDFIoRequest::GetCreateParameters**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getcreateparameters) method only if it requires information about the file that is associated with the read request. The UMDF driver calls the [**IWDFIoRequest::GetReadParameters**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getreadparameters) method only if it requires more information about the read request.
+
+The UMDF driver can call the [**IWDFIoRequest::Complete**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-complete) method rather than the [**IWDFIoRequest::CompleteWithInformation**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation) method if specifying the number of bytes that are transferred in the read operation is not required. The UMDF driver calls **Complete** or **CompleteWithInformation** to signal that the read operation is complete; the application can then access the read data.
+
  
-
-
-
-
 

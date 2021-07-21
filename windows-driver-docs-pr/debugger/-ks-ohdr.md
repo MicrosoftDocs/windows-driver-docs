@@ -1,7 +1,6 @@
 ---
 title: ks.ohdr
 description: The ks.ohdr extension displays details of a kernel streaming object header.
-ms.assetid: 0080565a-537d-44f4-9329-9ebe7fc926a1
 keywords: ["ks.ohdr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!ks.ohdr** command works similarly to [**!ks.objhdr**](-ks-objhdr.md) in that it displays details of a KS object header. The difference is that the caller provides the direct address of the KS object header, instead of the address of the associated file object.
 

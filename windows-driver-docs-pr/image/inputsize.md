@@ -1,7 +1,6 @@
 ---
 title: InputSize element
 description: The optional InputSize element specifies the size of the original scan media.
-ms.assetid: 406cfff9-7357-467f-a07a-340e32d9220f
 keywords: ["InputSize element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **InputSize** element specifies the size of the original scan media.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:InputSize wscn:MustHonor=""
@@ -28,8 +26,7 @@ Usage
 </wscn:InputSize wscn:MustHonor="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -101,8 +98,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **InputSize** element can contain the [**DocumentSizeAutoDetect**](documentsizeautodetect.md) or [**InputMediaSize**](inputmediasize.md) element, but not both. **DocumentSizeAutoDetect** specifies that the device utomatically detects the size of the original page. **InputMediaSize** specifies the size of the media to be scanned for the current job.
 

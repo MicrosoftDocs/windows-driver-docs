@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_YEXTENT
 description: The WIA\_IPS\_YEXTENT property contains the current height, in pixels, of a selected image to acquire.
-ms.assetid: 3d07d7d0-a590-49ed-a3d4-c873997b9c27
 keywords: ["WIA_IPS_YEXTENT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_YEXTENT property to mark the upper-left corner (that is, the height) of a selection area to acquire. The WIA minidriver creates and maintains this property.
 
@@ -46,8 +44,7 @@ A driver must also update the [**WIA\_IPS\_XEXTENT**](wia-ips-xextent.md), WIA\_
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

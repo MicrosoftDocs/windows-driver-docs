@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.HW Section
 description: DDInstall.HW sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit AddReg directives or with Include and Needs entries.
-ms.assetid: 417a4ab0-9723-4b3b-aa8c-342598874d61
 keywords:
 - INF DDInstall.HW Section Device and Driver Installation
 topic_type:
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 <em>DDInstall</em>**.HW** sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit [**AddReg**](inf-addreg-directive.md) directives or with **Include** and **Needs** entries.
 
-```ini
+```inf
 [install-section-name.HW] |
 [install-section-name.nt.HW] |
 [install-section-name.ntx86.HW] |
@@ -39,7 +38,7 @@ ms.localizationpriority: medium
 
 
 <a href="" id="addreg-add-registry-section--add-registry-section----"></a>**AddReg=**<em>add-registry-section</em>\[**,**<em>add-registry-section</em>\]...  
-References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this <em>DDInstall</em>**.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/registry-trees-and-keys). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**. 
+References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this <em>DDInstall</em>**.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](./registry-trees-and-keys.md). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**. 
 
 For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
@@ -61,8 +60,7 @@ This directive is rarely used, except in an INF file that upgrades a previous in
 <a href="" id="bitreg-bit-registry-section--bit-registry-section-----"></a>**BitReg=**<em>bit-registry-section</em>\[**,**<em>bit-registry-section</em>\] ...  
 Is valid in this section, but almost never used. An **HKR** specification in a referenced bit-registry section designates the same subkey as for **AddReg**. For more information, see [**INF BitReg Directive**](inf-bitreg-directive.md).
 
-Remarks
--------
+## Remarks
 
 The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a <em>DDInstall</em>**.HW** section name in cross-platform INF files. For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
@@ -75,14 +73,13 @@ Each directive in a <em>DDInstall</em>**.HW** section can reference more than on
 
 Each such section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-For more information about how to install multifunction devices, see [Supporting Multifunction Devices](https://docs.microsoft.com/windows-hardware/drivers/multifunction/index).
+For more information about how to install multifunction devices, see [Supporting Multifunction Devices](../multifunction/index.md).
 
-Examples
---------
+## Examples
 
 This example shows how the CD-ROM device class installer uses <em>DDInstall</em>**.HW** sections and <em>DDInstall</em>**.Services** sections to support both CD audio and changer functionality by creating the appropriate registry sections, and setting these up as PnP upper filter drivers.
 
-```ini
+```inf
 ;;
 ;; Installation section for cdaudio. Sets cdrom as the service 
 ;; and adds cdaudio as a PnP upper filter driver. 
@@ -157,11 +154,4 @@ ServiceBinary  = %12%\cdaudio.sys
 [**DelReg**](inf-delreg-directive.md)
 
  
-
- 
-
-
-
-
-
 

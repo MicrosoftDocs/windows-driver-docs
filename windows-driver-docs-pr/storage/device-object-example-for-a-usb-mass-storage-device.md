@@ -1,7 +1,6 @@
 ---
 title: Device Object Example for a USB Mass Storage Device
 description: Device Object Example for a USB Mass Storage Device
-ms.assetid: 402b99f2-a253-4a43-9c73-d3d2fd066c23
 keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The following figure shows the device objects that are created for a composite USB mass storage device containing both a Smart Media slot and a Compact Flash slot.
 
-![device objects that are created for a composite USB mass storage device containing both a Smart Media slot and a Compact Flash slot](images/usbstor.png)
+![device objects that are created for a composite USB mass storage device containing both a Smart Media slot and a Compact Flash slot.](images/usbstor.png)
 
 Device Object Tree for a Composite USB Mass Storage Device
 

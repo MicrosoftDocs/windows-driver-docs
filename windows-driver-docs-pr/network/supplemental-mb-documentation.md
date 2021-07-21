@@ -1,8 +1,7 @@
 ---
 title: Supplemental MB Documentation Topics
 description: The following sections provide supplemental information for developers of MB devices.
-ms.assetid: 0C812829-D91A-44FC-8BE6-F8264B13F6C7
-ms.date: 04/20/2017
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -20,6 +19,12 @@ The following sections provide supplemental information for developers of MB dev
 [Mobile Broadband Class Driver Logs: Event Trace Log Tracing](mobile-broadband-class-driver-logs--event-trace-log-tracing.md)
 
 [Mobile Broadband Implementation Guidelines for USB Devices](mobile-broadband-implementation-guidelines-for-usb-devices.md)
+
+[Collecting Mobilebroadband Logs](mb-collecting-logs.md)
+
+[Analyzing Mobilebroadband Logs](mb-analyzing-logs.md)
+
+[TextAnalysisTool Filter Files](mb-tat-filters.md)
 
  
 

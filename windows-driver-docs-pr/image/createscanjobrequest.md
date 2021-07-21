@@ -1,7 +1,6 @@
 ---
 title: CreateScanJobRequest element
 description: The required CreateScanJobRequest operation prepares a scan device to scan.
-ms.assetid: ce3aafe2-71b0-4875-852a-f3ab78684329
 keywords: ["CreateScanJobRequest element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **CreateScanJobRequest** operation prepares a scan device to scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CreateScanJobRequest>
@@ -27,13 +25,11 @@ Usage
 </wscn:CreateScanJobRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -67,8 +63,7 @@ None
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **CreateScanJobRequest** operation.
 
@@ -145,8 +140,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
      
 
-Examples
---------
+## Examples
 
 The following code example shows a scan job request when the scan is initiated from the scanning device.
 

@@ -1,5 +1,5 @@
 ---
-Description: This topic describes how to view a USB event trace in Xperf.
+description: This topic describes how to view a USB event trace in Xperf.
 title: Viewing a USB Event Trace in Xperf
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -18,17 +18,17 @@ xperf usb.etl
 
 Xperf displays a view of the events in graphical form. The initial view is a timeline view, in which each diamond represents one or more events in this image. The diamonds are color coded according to the event provider.
 
-![windows performance analyzer - xperf](images/xperf.png)
+![Screenshot that shows the "Windows Performance Analyzer" window displaying the timeline view.](images/xperf.png)
 
 The timeline view graphically presents clusters of event activity. In the graphical view, it is easy to see the periodic nature of event activity at 1-second intervals as USB transfer requests that occurred for the USB mass storage device after the device summary events in this example trace.
 
 You can move the mouse pointer across sections of the timeline and zoom in. This image shows zooming in on the device summary events that occur at the very beginning of the trace.
 
-![windows performance analyzer - xperf](images/xperf1.png)
+![Screenshot that shows the timeline view with a device summary event selected and the "ProviderIDs" window open.](images/xperf1.png)
 
 You can display an event summary table, in a spreadsheet form, for the entire trace or for just a selected interval as shown in this image.
 
-![windows performance analyzer - xperf](images/xperf2.png)
+![windows performance analyzer - xperf.](images/xperf2.png)
 
 To display a summary table, right-click in the **Generic Events** screen and select **Summary Table**.
 

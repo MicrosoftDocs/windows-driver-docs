@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_PIN\_DISCONNECTED
 description: Clients use KSEVENT\_BDA\_PIN\_DISCONNECTED to request notification when a pin becomes disconnected.
-ms.assetid: b3209e9d-21e3-4ade-a6da-9d17ecf31c74
 keywords: ["KSEVENT_BDA_PIN_DISCONNECTED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,8 +30,7 @@ KSEVENT
 
 A KSEVENTDATA structure that describes how to notify about the event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -50,16 +48,9 @@ Requirements
 ## See also
 
 
-[**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](/windows-hardware/drivers/stream/ksevent-structure)
 
-[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
-
- 
+[**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
  
-
-
-
-
-
 

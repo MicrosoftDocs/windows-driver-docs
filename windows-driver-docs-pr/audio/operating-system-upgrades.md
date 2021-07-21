@@ -1,7 +1,6 @@
 ---
 title: Operating System Upgrades
 description: Operating System Upgrades
-ms.assetid: f985967e-e6cf-431a-bb7e-7b6d8486709c
 keywords:
 - audio adapters WDK , operating system upgrades
 - adapter drivers WDK audio , operating system upgrades
@@ -31,7 +30,7 @@ However, when upgrading from Windows 98 to Windows Me, or from one NT-based oper
 
 Some proprietary drivers, however, blindly overwrite these registry settings with defaults each time they are installed. A better approach is for a driver to determine at installation time whether certain driver-specific registry entries already exist. If they do exist, the driver should preserve the settings that are contained in these entries instead of overwriting them.
 
-The directives in the add-registry section of the driver's INF file specify whether existing registry entries should be overwritten. For more information, see the description of the FLG\_ADDREG\_NOCLOBBER flag in [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+The directives in the add-registry section of the driver's INF file specify whether existing registry entries should be overwritten. For more information, see the description of the FLG\_ADDREG\_NOCLOBBER flag in [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 ### <span id="Migration_DLL"></span><span id="migration_dll"></span><span id="MIGRATION_DLL"></span>Migration DLL
 
@@ -64,9 +63,4 @@ As discussed above, the setup program discards the driver's registry settings du
 The Ac97 audio adapter sample in the Windows Driver Kit (WDK) contains an example of an INF file (Ac97smpl.inf) that migrates an audio driver from Windows Me/98 to Windows XP or Windows 2000.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: parameter element
 description: The optional parameter element specifies a text string that is substituted for a percentage ( ) character in the text of an event notification message.
-ms.assetid: 6a43af7d-da00-4038-b1a8-a076d07c4c1a
 keywords: ["parameter element Print Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,13 @@ ms.localizationpriority: medium
 
 The optional **parameter** element specifies a text string that is substituted for a percentage (%) character in the text of an event notification message.
 
-The **parameter** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **parameter** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

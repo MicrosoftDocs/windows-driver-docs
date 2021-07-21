@@ -1,7 +1,6 @@
 ---
 title: Splitting Ethernet Frames Overview
 description: Splitting Ethernet Frames Overview
-ms.assetid: 7b857dee-2805-4004-8f31-452f0cff0e0c
 keywords:
 - header-data split WDK , Ethernet frame splitting
 - splitting Ethernet frames
@@ -20,7 +19,7 @@ This section describes the specific header-data split requirements that apply to
 
  
 
-If the header-data split provider splits a frame in compliance with the header-data split requirements, the indicated [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_HD\_SPLIT flag set in the **NblFlags** member. If the header-data split provider does not split a frame, the frame must be indicated with the following flags cleared in **NblFlags** :
+If the header-data split provider splits a frame in compliance with the header-data split requirements, the indicated [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_HD\_SPLIT flag set in the **NblFlags** member. If the header-data split provider does not split a frame, the frame must be indicated with the following flags cleared in **NblFlags** :
 
 -   NDIS\_NBL\_FLAGS\_HD\_SPLIT
 
@@ -30,7 +29,7 @@ If the header-data split provider splits a frame in compliance with the header-d
 
 For more information about setting header-data split NET\_BUFFER\_LIST flags and other receive indication requirements, see [Receive Indications with Header-Data Split](receive-indications-with-header-data-split.md).
 
-There are cases where a header-data split provider can split a received frame outside of the header-data split provider requirements. In these cases, the provider should never split Ethernet frames in the middle of the IP header, IPv4 options, IPsec headers, IPv6 extension headers, or upper-layer-protocol headers, unless the first MDL contains at least as many bytes as NDIS specified for the lookahead size. For more information about the lookahead size, see [OID\_GEN\_CURRENT\_LOOKAHEAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-lookahead).
+There are cases where a header-data split provider can split a received frame outside of the header-data split provider requirements. In these cases, the provider should never split Ethernet frames in the middle of the IP header, IPv4 options, IPsec headers, IPv6 extension headers, or upper-layer-protocol headers, unless the first MDL contains at least as many bytes as NDIS specified for the lookahead size. For more information about the lookahead size, see [OID\_GEN\_CURRENT\_LOOKAHEAD](./oid-gen-current-lookahead.md).
 
 This section includes:
 
@@ -46,13 +45,7 @@ This section includes:
 
 [Splitting Frames at the UDP Payload](splitting-frames-at-the-udp-payload.md)
 
-[Splitting Frames Other Than TCP and UDP](splitting-frames-other-than-tcp-and-udp.md)
+[Splitting Frames Other Than TCP and UDP](splitting-icmp-frames-and-other-upper-layer-protocol-frames.md)
 
  
-
- 
-
-
-
-
 

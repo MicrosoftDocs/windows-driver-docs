@@ -1,7 +1,6 @@
 ---
 title: MPIO\_ADAPTER\_INFORMATION WMI Class
 description: MPIO\_ADAPTER\_INFORMATION WMI Class
-ms.assetid: 748205a5-d37b-4080-b6ce-9176139cef4a
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -36,13 +35,7 @@ class MPIO_ADAPTER_INFORMATION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_ADAPTER\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_adapter_information) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_ADAPTER\_INFORMATION**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_adapter_information) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

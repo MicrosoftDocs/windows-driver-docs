@@ -1,7 +1,6 @@
 ---
 title: Noninvasive Debugging (User Mode)
 description: Noninvasive Debugging (User Mode)
-ms.assetid: 91f09fb1-9f5e-4081-89b3-78c95eada817
 keywords: ["process, debugging noninvasively", "noninvasive debugging"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -29,7 +28,6 @@ For more information about how to determine the process ID and the process name,
 
 For information about starting and stopping a noninvasive debugging session, see the following topics:
 
--   [Debugging a User-Mode Process Using Visual Studio](debugging-a-user-mode-process-using-visual-studio.md)
 -   [Debugging a User-Mode Process Using WinDbg](debugging-a-user-mode-process-using-windbg.md)
 -   [Debugging a User-Mode Process Using CDB](debugging-a-user-mode-process-using-cdb.md)
 

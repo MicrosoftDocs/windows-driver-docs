@@ -1,7 +1,6 @@
 ---
 title: Stream Latency During Playback
 description: Stream Latency During Playback
-ms.assetid: 70b41245-f463-4225-b79c-0ee65d8a0132
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ In the diagram, the write and play positions continually progress from left to r
 
 Stream latency during playback has two main sources, designated in the following diagram as A and B.
 
-![diagram illustrating the latency of a playback stream](images/wavert-playback.png)
+![diagram illustrating the latency of a playback stream.](images/wavert-playback.png)
 
 In the preceding diagram, the *Write Position* is the location just past the last sample that the client wrote to the buffer. The *Play Position* is the sample that the audio device is currently playing through the speaker.
 
@@ -31,16 +30,11 @@ Although the client can set up a timer to periodically activate its buffer-writi
 
 By having the audio device notify the client each time it finishes reading a block of data from the buffer, the client can make the latency smaller than would otherwise be practical.
 
-The client can obtain a summary of the delays that contribute to stream latency by sending a [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-rtaudio-hwlatency) request to the WaveRT port driver.
+The client can obtain a summary of the delays that contribute to stream latency by sending a [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](./ksproperty-rtaudio-hwlatency.md) request to the WaveRT port driver.
 
-After the client determines the amount of separation to maintain between the write and play positions, the client monitors changes in the play position to determine how far to advance the write position. In Windows Server 2008 and later operating systems, the client sends out a [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-rtaudio-positionregister) property request to determine the play position. Support for this feature is provided by improvements in the PortCls system driver.
+After the client determines the amount of separation to maintain between the write and play positions, the client monitors changes in the play position to determine how far to advance the write position. In Windows Server 2008 and later operating systems, the client sends out a [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](./ksproperty-rtaudio-positionregister.md) property request to determine the play position. Support for this feature is provided by improvements in the PortCls system driver.
 
 If the audio device has a position register as shown in the preceding diagram, the property request maps the register to a virtual memory address that is accessible to the user-mode client. After the position register is mapped, the client can read the contents of the memory address to determine the current play position.
 
  
-
- 
-
-
-
 

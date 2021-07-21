@@ -1,7 +1,6 @@
 ---
 title: Supporting Multifunction PC Card Devices
 description: Supporting Multifunction PC Card Devices
-ms.assetid: 4da3b99c-0731-41b5-9f67-29c7e181342f
 keywords:
 - multifunction devices WDK , PC Card
 - PC Card multifunction standard WDK

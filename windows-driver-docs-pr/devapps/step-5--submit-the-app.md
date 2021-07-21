@@ -1,7 +1,6 @@
 ---
 title: Step 5 Submit the Microsoft Store device app
 description: This topic describes how to submit your UWP device app to the Microsoft Store dashboard.
-ms.assetid: B25F9953-6EFD-4A08-AFD6-B334C46E910F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Step 5: Submit the Microsoft Store device app
 
 
-![device app workflow, step 5](images/5-device-app-workflow.png)
+![device app workflow, step 5.](images/5-device-app-workflow.png)
 
 This topic describes how to submit your UWP device app to the Microsoft Store dashboard. Before submitting your app, review the submission sequence section in [Building UWP device apps](the-workflow.md). This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
@@ -47,7 +46,7 @@ Check the following before you submit your app:
 
 -   The **package name** should be the same as the one you specified when you created the app in [step 1](step-1--create-a-uwp-device-app.md). Note that the package name expires if the app is not submitted within one year.
 
--   The app must be fully compliant with all the [Microsoft Store Certification Requirements](https://go.microsoft.com/fwlink/p/?LinkId=273052).
+-   The app must be fully compliant with all the [Microsoft Store Certification Requirements](/windows/uwp/publish/the-app-certification-process).
 
 -   The app must be suitable for all ages.
 
@@ -84,10 +83,4 @@ The Microsoft Store dashboard validates the Microsoft Store device app package a
 [Step 6: Submit device metadata](step-6--submit-device-metadata.md)
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: .unload (Unload Extension DLL)
 description: The .unload command unloads an extension DLL from the debugger.
-ms.assetid: 8399e4a8-0265-4690-b35f-973b69fe2764
 keywords: ["Unload Extension DLL (.unload) command", "extension commands ( commands), Unload Extension DLL (.unload) command", ".unload (Unload Extension DLL) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ Specifies the file name of the debugger extension DLL to be unloaded. If the ful
 
 For more details on loading, unloading, and controlling extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
-Remarks
--------
+## Remarks
 
 This command is useful when testing an extension you are creating. When the extension is recompiled, you must unload and then load the new DLL.
 

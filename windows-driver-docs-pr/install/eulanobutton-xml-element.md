@@ -1,7 +1,6 @@
 ---
 title: eulaNoButton XML Element
 description: eulaNoButton XML Element
-ms.assetid: d3e47943-10c6-4a87-b39e-d13fc49aadd4
 keywords: ["eulaNoButton XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # eulaNoButton XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **eulaNoButton** XML element customizes the text that is associated with the do-not-accept option button on a DPInst EULA page.
 
@@ -87,11 +86,4 @@ If a **eulaNoButton** element is not specified, DPInst displays the default butt
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

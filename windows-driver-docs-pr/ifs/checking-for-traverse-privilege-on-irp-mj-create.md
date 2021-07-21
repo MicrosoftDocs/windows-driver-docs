@@ -1,7 +1,6 @@
 ---
 title: Checking for Traverse Privilege on IRP_MJ_CREATE
 description: Checking for Traverse Privilege on IRP_MJ_CREATE
-ms.assetid: 9ba743d6-8e78-4f9a-9cb8-cb98f734c290
 keywords:
 - IRP_MJ_CREATE
 - traverse privileges WDK file systems
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_checking_for_traverse_privilege_on_irp_mj_create_if"></span><span id="DDK_CHECKING_FOR_TRAVERSE_PRIVILEGE_ON_IRP_MJ_CREATE_IF"></span>
 
 
-One of the primary concerns [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) checks is whether the caller has traverse privilege (does the caller have the right to access the path to the object). Since most callers have traverse privilege, one of the first checks normally done within the file system is checking for the traverse privilege:
+One of the primary concerns [**IRP\_MJ\_CREATE**](./irp-mj-create.md) checks is whether the caller has traverse privilege (does the caller have the right to access the path to the object). Since most callers have traverse privilege, one of the first checks normally done within the file system is checking for the traverse privilege:
 
 ```cpp
     BOOLEAN traverseCheck = 
@@ -104,9 +103,4 @@ This function performs a generic security check. This function must deal with th
 Note that for a simple traverse check, the requested access would be FILE\_TRAVERSE and the security descriptor would be that of the directory through which the caller is attempting to traverse, not the requested access from the original IRP\_MJ\_CREATE IRP.
 
  
-
- 
-
-
-
 

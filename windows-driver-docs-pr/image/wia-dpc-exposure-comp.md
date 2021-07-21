@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_EXPOSURE\_COMP
 description: The WIA\_DPC\_EXPOSURE\_COMP property enables you to adjust the set point of a digital camera's auto-exposure control.
-ms.assetid: 4b3cb013-d5fa-4f9f-9d7b-43136fab0e30
 keywords: ["WIA_DPC_EXPOSURE_COMP Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 You can use the WIA\_DPC\_EXPOSURE\_COMP property to adjust the set point of a digital camera's auto-exposure control. Setting WIA\_DPC\_EXPOSURE\_COMP to zero does not change the factory-set auto-exposure level.
 
@@ -40,8 +38,7 @@ The setting values are in Additive System of Photographic Exposure (APEX) units.
 
 This property may be expressed as either a list or a range of values. This property is typically used only when a device has the [**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md) property set to EXPOSUREMODE\_MANUAL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

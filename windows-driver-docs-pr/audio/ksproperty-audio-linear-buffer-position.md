@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION
 description: The KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION property request retrieves a number that represents the number of bytes that the DMA has fetched from the audio buffer since the beginning of the stream.
-ms.assetid: 08CC3164-2B8F-4368-8A34-6F8954992D3A
 keywords: ["KSPROPERTY_AUDIO_LINEAR_BUFFER_POSITION Audio Devices"]
 topic_type:
 - apiref
@@ -56,11 +55,9 @@ The KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION property request retrieves a num
 
 The KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

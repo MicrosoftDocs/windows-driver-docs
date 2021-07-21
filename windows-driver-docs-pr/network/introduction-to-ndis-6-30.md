@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS 6.30
 description: Introduction to NDIS 6.30
-ms.assetid: D225780E-731D-4280-8D0B-B0380B117890
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

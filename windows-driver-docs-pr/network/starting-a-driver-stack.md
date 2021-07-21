@@ -1,7 +1,6 @@
 ---
 title: Starting a Driver Stack
 description: Starting a Driver Stack
-ms.assetid: 316de69e-38e8-4ac6-83c5-5d13090ee6d5
 keywords:
 - driver stacks WDK networking , starting
 - starting driver stacks WDK networking
@@ -31,29 +30,23 @@ After the system detects a networking device, the system starts an NDIS driver s
 
 3.  The system requests NDIS to start the miniport adapter.
 
-    To initialize the miniport adapter, NDIS calls the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. If *MiniportInitializeEx* is successful, the miniport adapter enters the Paused state.
+    To initialize the miniport adapter, NDIS calls the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. If *MiniportInitializeEx* is successful, the miniport adapter enters the Paused state.
 
 4.  NDIS attaches the filter modules, beginning with the module that is closest to the miniport driver and progressing to the top of the driver stack.
 
-    To request the driver to attach a filter module to the driver stack, NDIS calls a filter driver's [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) function. If each attach operation is successful, the filter module enters the Paused state.
+    To request the driver to attach a filter module to the driver stack, NDIS calls a filter driver's [*FilterAttach*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) function. If each attach operation is successful, the filter module enters the Paused state.
 
-5.  After all the underlying drivers are in the Paused state, NDIS calls the protocol driver's [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function.
+5.  After all the underlying drivers are in the Paused state, NDIS calls the protocol driver's [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function.
 
-    Then the protocol driver binding enters the Opening state. The protocol driver calls the [**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex) function to open the binding with the miniport adapter.
+    Then the protocol driver binding enters the Opening state. The protocol driver calls the [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex) function to open the binding with the miniport adapter.
 
-6.  NDIS allocates the necessary resources for the binding and calls the protocol driver's [*ProtocolOpenAdapterCompleteEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_open_adapter_complete_ex) function.
+6.  NDIS allocates the necessary resources for the binding and calls the protocol driver's [*ProtocolOpenAdapterCompleteEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_open_adapter_complete_ex) function.
 
     The binding enters the Paused state.
 
-7.  To complete the bind operation, the protocol driver calls the [**NdisCompleteBindAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscompletebindadapterex) function.
+7.  To complete the bind operation, the protocol driver calls the [**NdisCompleteBindAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscompletebindadapterex) function.
 
 8.  NDIS restarts the driver stack. For more information about restarting the driver stack, see [Restarting a Driver Stack](restarting-a-driver-stack.md).
 
  
-
- 
-
-
-
-
 

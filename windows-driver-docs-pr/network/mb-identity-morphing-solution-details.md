@@ -1,7 +1,6 @@
 ---
 title: MB identity morphing solution details
 description: Describes configuration requirements and compatible IDs for MB identity morphing devices
-ms.assetid: E4E17B4F-665B-425C-B90B-F60561B71CAB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -56,7 +55,7 @@ After USBHUB loads USBCCGP, USBCCGP selects the configuration indicated by the s
 
 USBHUB querying the Microsoft OS descriptor from the device during enumeration.
 
-![device returns compatid in the not-configured state. ](images/mbim14.png)
+![device returns compatid in the not-configured state.](images/mbim14.png)
 
 Device returns CompatId in the not-configured state. This CompatId is used to load USBCCGP.
 

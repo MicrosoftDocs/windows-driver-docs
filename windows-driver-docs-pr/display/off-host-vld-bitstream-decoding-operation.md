@@ -1,7 +1,6 @@
 ---
 title: Off-Host VLD Bitstream Decoding Operation
 description: Off-Host VLD Bitstream Decoding Operation
-ms.assetid: fd339d5f-2d63-4b2f-a5dc-7ab7a6799a6d
 keywords:
 - off-host VLD bitstream processing WDK DirectX VA
 - bitstream VLD processing WDK DirectX VA
@@ -57,11 +56,11 @@ When variable-length decoding of raw bitstream data is performed on the accelera
 
 ### <span id="Inverse-Quantization_Matrix_Buffers"></span><span id="inverse-quantization_matrix_buffers"></span><span id="INVERSE-QUANTIZATION_MATRIX_BUFFERS"></span>Inverse-Quantization Matrix Buffers
 
-An inverse-quantization matrix buffer is sent to initialize inverse-quantization matrices for off-host bitstream decoding. Inverse-quantization matrix buffers provide information about how to decode all current and subsequent video in the bitstream, until a new inverse-quantization matrix buffer is provided. (Thus, inverse-quantization matrices are persistent.) No more than one inverse-quantization matrix buffer can be sent from the host to the accelerator at a time. The [**DXVA\_QmatrixData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_qmatrixdata) structure loads quantization matrix data for compressed video-picture decoding.
+An inverse-quantization matrix buffer is sent to initialize inverse-quantization matrices for off-host bitstream decoding. Inverse-quantization matrix buffers provide information about how to decode all current and subsequent video in the bitstream, until a new inverse-quantization matrix buffer is provided. (Thus, inverse-quantization matrices are persistent.) No more than one inverse-quantization matrix buffer can be sent from the host to the accelerator at a time. The [**DXVA\_QmatrixData**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_qmatrixdata) structure loads quantization matrix data for compressed video-picture decoding.
 
 ### <span id="Slice-Control_Buffers"></span><span id="slice-control_buffers"></span><span id="SLICE-CONTROL_BUFFERS"></span>Slice-Control Buffers
 
-Slice-control buffers guide the operation of off-host VLD bitstream processing. The host software decoder determines the location of slice-level resynchronization points in the bitstream. A slice is defined to be a multimacroblock layer that includes a resynchronization point in the bitstream data. In H.261 bitstreams, an H.261 Group Of Blocks (GOB) is considered a slice. In H.263 bitstreams, a sequence of one or more H.263 GOBs starting with a GOB start code and containing no additional GOB start codes is considered a slice. The slice-control buffer contains an array of [**DXVA\_SliceInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_sliceinfo) slice-control structures, which apply to the contents of a corresponding bitstream data buffer.
+Slice-control buffers guide the operation of off-host VLD bitstream processing. The host software decoder determines the location of slice-level resynchronization points in the bitstream. A slice is defined to be a multimacroblock layer that includes a resynchronization point in the bitstream data. In H.261 bitstreams, an H.261 Group Of Blocks (GOB) is considered a slice. In H.263 bitstreams, a sequence of one or more H.263 GOBs starting with a GOB start code and containing no additional GOB start codes is considered a slice. The slice-control buffer contains an array of [**DXVA\_SliceInfo**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_sliceinfo) slice-control structures, which apply to the contents of a corresponding bitstream data buffer.
 
 ### <span id="Bitstream_Buffers"></span><span id="bitstream_buffers"></span><span id="BITSTREAM_BUFFERS"></span>Bitstream Buffers
 
@@ -78,10 +77,4 @@ Certain restrictions are imposed on the contents of bitstream buffers, in order 
 The decoder should manage the filling of the bitstream buffers to avoid placing the data for one slice into more than one buffer.
 
  
-
- 
-
-
-
-
 

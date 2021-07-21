@@ -1,7 +1,6 @@
 ---
 title: KS Filters
 description: KS Filters
-ms.assetid: caf46279-17f3-4bb4-8b8a-a1673f9fa28f
 keywords:
 - filters WDK kernel streaming
 - KS filters WDK kernel streaming
@@ -21,17 +20,17 @@ A filter is a group of nodes that encapsulates a processing task to be performed
 
 A simple filter could contain one data sink pin and one data source pin. The filter receives incoming data on the data sink pin, processes it internally, and writes to the data source pin. In the following figure, the pins are shown as heavy line segments. Internally, the filter connects the data sink pin to an internal processing unit, a *node*, which in turn is connected to the data source pin.
 
-![diagram illustrating a simple ks filter](images/ks01.png)
+![diagram illustrating a simple ks filter.](images/ks01.png)
 
 Another device might combine or split data flows between pins. For example, an audio mixer supports several data sink pins. The mixer combines them into a single stream, and writes that stream to a data source pin. The following illustration shows the data flow.
 
-![diagram illustrating a mixer](images/ks02.png)
+![diagram illustrating a mixer.](images/ks02.png)
 
 The graph describes the internal relationship between the filter's pins. A more complicated filter might encapsulate several nodes that transform data flowing through the filter.
 
-Filters specify internal connections between pins and internal nodes by using the [KSPROPSETID\_Topology](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-topology) property set.
+Filters specify internal connections between pins and internal nodes by using the [KSPROPSETID\_Topology](./kspropsetid-topology.md) property set.
 
-The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-connections) property queries all connections between nodes of a KS filter. This property returns an array of [**KSTOPOLOGY\_CONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection). Each KSTOPOLOGY\_CONNECTION structure represents a single data-path connection inside a filter. In the mixer diagram above, the sequence of KSTOPOLOGY\_CONNECTION structures could be as follows:
+The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](./ksproperty-topology-connections.md) property queries all connections between nodes of a KS filter. This property returns an array of [**KSTOPOLOGY\_CONNECTION**](/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection). Each KSTOPOLOGY\_CONNECTION structure represents a single data-path connection inside a filter. In the mixer diagram above, the sequence of KSTOPOLOGY\_CONNECTION structures could be as follows:
 
 ```cpp
 //    FromNode,       FromNodePin,     ToNode,        ToNodePin,
@@ -42,9 +41,4 @@ The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://docs.microsoft.com/windows-h
 ```
 
  
-
- 
-
-
-
 

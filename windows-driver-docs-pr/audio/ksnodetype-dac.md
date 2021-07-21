@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_DAC
 description: KSNODETYPE\_DAC
-ms.assetid: 70b30425-cffc-49e1-aa8b-8f5734bd196e
 keywords: ["KSNODETYPE_DAC Audio Devices"]
 topic_type:
 - apiref

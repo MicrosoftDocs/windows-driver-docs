@@ -1,6 +1,6 @@
-- name: "Universal sensors driver model"
-  href: overview-of-converged-sensor-driver-model.md
-- name: "Windows sensors programming guide"
+- name: "Sensor driver design guide"
+  href: index.md
+- name: "Windows sensors design guide"
   items:
   - name: "Sensor types"
     href: sensor-types.md
@@ -126,23 +126,29 @@
       href: defining-custom-values-for-constants-v2.md
     - name: "Fusion Sensor Implementation Details"
       href: fusion-sensor-implementation-details.md
-- name: "Testing Windows sensor hardware, drivers, and apps"
+- name: "Test Windows sensor hardware, drivers, and apps"
   items:
   - name: "Sensor Testing Sources"
     href: testing-sensor-landing.md
-  - name: "Building and Using the Microsoft Ambient Light Tool (MALT)"
+  - name: Microsoft SensorExplorer
+    href: testing-sensor-explorer.md
+  - name: "The Microsoft Ambient Light Tool (MALT)"
     items:
-    - name: "Building a Light Testing Tool"
+    - name: "Building a light testing tool"
       href: testing-MALT-building-a-light-testing-tool.md
-    - name: "Testing System Brightness Response"
-      href: testing-MALT-system-brightness-response.md
-    - name: "Testing Auto Brightness"
+    - name: "Getting started with MALT"
+      href: testing-MALT-getting-started.md
+    - name: "Testing system brightness and color"
+      href: testing-MALT-system-brightness-and-color.md
+    - name: "Testing display whitepoint"
+      href: testing-MALT-display-whitepoint.md
+    - name: "Testing auto brightness"
       href: testing-MALT-auto-brightness.md
-    - name: "Testing Manual Brightness"
+    - name: "Testing manual brightness"
       href: testing-MALT-manual-brightness.md
-    - name: "Testing System Scenarios"
+    - name: "Testing system scenarios"
       href: testing-MALT-system-scenarios.md
-    - name: "Microcontroller Commands"
+    - name: "Microcontroller commands"
       href: testing-MALT-microcontroller-commands.md
 - name: "Previous Versions"
   items: 
@@ -150,56 +156,52 @@
     href: new-sensor-features-and-improvements-for-windows-8-1.md
   - name: "Windows 8.1 sensor driver design guide"
     items: 
-    - name: "Introduction to the Sensor and Location Platform in Windows"
-      href: introduction-to-the-sensor-and-location-platform-in-windows.md
-    - name: "Sensor Driver Overview"
+    - name: "Architecture Overview"
+      href: architecture-overview-for-sensor-drivers.md
+    - name: "About the Sensor Class Extension"
+      href: about-the-sensor-class-extension.md
+    - name: "About the Interfaces"
       items: 
-      - name: "Architecture Overview"
-        href: architecture-overview-for-sensor-drivers.md
-      - name: "About the Sensor Class Extension"
-        href: about-the-sensor-class-extension.md
-      - name: "About the Interfaces"
+      - name: "About ISensorClassExtension"
+        href: about-isensorclassextension.md
+      - name: "About ISensorDriver"
+        href: about-isensordriver.md
+      - name: "About the Parameter Types"
+        href: about-the-parameter-types.md
+    - name: "About Sensor Driver Events"
+      href: about-sensor-driver-events.md
+    - name: "Sensor Constants"
+      items: 
+      - name: "Sensor constants overview"
+        href: about-sensor-constants.md
+      - name: "Event Constants"
+        href: event-constants.md
+      - name: "Sensor Properties"
+        href: sensor-properties.md
+      - name: "Sensor Icon Constants"
+        href: sensor-icon-constants.md
+      - name: "Sensor Categories, Types, and Data Fields"
         items: 
-        - name: "About ISensorClassExtension"
-          href: about-isensorclassextension.md
-        - name: "About ISensorDriver"
-          href: about-isensordriver.md
-        - name: "About the Parameter Types"
-          href: about-the-parameter-types.md
-      - name: "About Sensor Driver Events"
-        href: about-sensor-driver-events.md
-      - name: "Sensor Constants"
-        items: 
-        - name: "Sensor constants overview"
-          href: about-sensor-constants.md
-        - name: "Event Constants"
-          href: event-constants.md
-        - name: "Sensor Properties"
-          href: sensor-properties.md
-        - name: "Sensor Icon Constants"
-          href: sensor-icon-constants.md
-        - name: "Sensor Categories, Types, and Data Fields"
-          items: 
-          - name: "SENSOR_CATEGORY_ALL"
-            href: sensor-category-all.md
-          - name: "SENSOR_CATEGORY_BIOMETRIC"
-            href: sensor-category-biometric.md
-          - name: "SENSOR_CATEGORY_ELECTRICAL"
-            href: sensor-category-electrical.md
-          - name: "SENSOR_CATEGORY_ENVIRONMENTAL"
-            href: sensor-category-environmental.md
-          - name: "SENSOR_CATEGORY_LIGHT"
-            href: sensor-category-light.md
-          - name: "SENSOR_CATEGORY_LOCATION"
-            href: sensor-category-loc.md
-          - name: "SENSOR_CATEGORY_MECHANICAL"
-            href: sensor-category-mechanical.md
-          - name: "SENSOR_CATEGORY_MOTION"
-            href: sensor-category-motion.md
-          - name: "SENSOR_CATEGORY_ORIENTATION"
-            href: sensor-category-orientation.md
-          - name: "SENSOR_CATEGORY_SCANNER"
-            href: sensor-category-scanner.md
+        - name: "SENSOR_CATEGORY_ALL"
+          href: sensor-category-all.md
+        - name: "SENSOR_CATEGORY_BIOMETRIC"
+          href: sensor-category-biometric.md
+        - name: "SENSOR_CATEGORY_ELECTRICAL"
+          href: sensor-category-electrical.md
+        - name: "SENSOR_CATEGORY_ENVIRONMENTAL"
+          href: sensor-category-environmental.md
+        - name: "SENSOR_CATEGORY_LIGHT"
+          href: sensor-category-light.md
+        - name: "SENSOR_CATEGORY_LOCATION"
+          href: sensor-category-loc.md
+        - name: "SENSOR_CATEGORY_MECHANICAL"
+          href: sensor-category-mechanical.md
+        - name: "SENSOR_CATEGORY_MOTION"
+          href: sensor-category-motion.md
+        - name: "SENSOR_CATEGORY_ORIENTATION"
+          href: sensor-category-orientation.md
+        - name: "SENSOR_CATEGORY_SCANNER"
+          href: sensor-category-scanner.md
   - name: "Windows 8.1 sensor driver programming guide"
     items: 
       - name: "Considerations for Writing a Sensor Driver"

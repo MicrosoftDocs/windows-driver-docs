@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.FactDef Section
 description: This section should be used in an INF for any manually installed non-PnP device that an end-user might install.
-ms.assetid: df2d46da-4e69-4e3c-b208-1ae0a0f771c9
 keywords:
 - INF DDInstall.FactDef Section Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 This section should be used in an INF for any manually installed non-PnP device that an end-user might install. This section specifies the factory-default hardware configuration settings, such as the bus-relative I/O ports and IRQ (if any), for such a card.
 
-```ini
+```inf
 [install-section-name.FactDef] |
 [install-section-name.nt.FactDef] | 
 [install-section-name.ntx86.FactDef] | 
@@ -67,7 +66,7 @@ Specifies the bus-relative DMA channel as a decimal number. *DMAattrs* is option
 <a href="" id="ioconfig-io-range"></a>**IOConfig=**<em>io-range</em>  
 Specifies the I/O port range for the device in the following form:
 
-```ini
+```inf
 start-end[([decode-mask][:alias-offset][:attr])]
 ```
 
@@ -98,7 +97,7 @@ Specifies the letter **M** if the specified range is in system memory. If omitte
 <a href="" id="memconfig-mem-range"></a>**MemConfig=**<em>mem-range</em>  
 Specifies the memory range for the device in the following form:
 
-```ini
+```inf
 start-end[(attr)]
 ```
 
@@ -124,8 +123,7 @@ If both **R** and **W** are specified or if neither is specified, read/write is 
 <a href="" id="irqconfig--irqattrs--irqnum"></a>**IRQConfig=**\[<em>IRQattrs</em>**:**\]*IRQNum*  
 Specifies the bus-relative IRQ that the device uses as a decimal number. *IRQattrs* is omitted if the device uses a bus-relative, edge-triggered IRQ. Otherwise, specify **L** to indicate a level-triggered IRQ, and **LS** if the device can share the IRQ line listed in this entry.
 
-Remarks
--------
+## Remarks
 
 The specified *DDInstall* section must be referenced in a device-specific entry under the per-manufacturer *Models* section of the INF file. The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a <em>DDInstall</em>**.FactDef** section name in cross-operating system and/or cross-platform INF files. For more information about these system-defined extensions, see [Creating an INF File](overview-of-inf-files.md).
 
@@ -135,18 +133,17 @@ For example, the INF for a device that used two DMA channels would have two **DM
 
 The INF files of manually installed devices for which the factory-default logical configuration settings can be changed should also use the **LogConfig** directive in their *DDInstall* sections. In general, such an INF should specify the entries in each of its log config sections and in its <em>DDInstall</em>**.FactDef** section in the same order.
 
-Examples
---------
+## Examples
 
 This **IOConfig** entry specifies an I/O port region, 8 bytes in size, which can start at 2F8.
 
-```ini
+```inf
 IOConfig=2F8-2FF
 ```
 
 This **MemConfig** entry specifies a memory region of 32K bytes that can start at D0000.
 
-```ini
+```inf
 MemConfig=D0000-D7FFF
 ```
 

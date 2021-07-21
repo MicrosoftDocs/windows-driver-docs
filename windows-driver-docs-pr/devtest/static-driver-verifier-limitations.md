@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier Limitations
 description: Static Driver Verifier Limitations
-ms.assetid: ea00e00d-34ea-4403-8f3c-85893645b890
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

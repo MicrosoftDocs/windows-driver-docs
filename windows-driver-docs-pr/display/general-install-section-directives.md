@@ -1,7 +1,6 @@
 ---
 title: General install section directives
 description: Directives that apply to general installations.
-ms.assetid: 05B44945-158E-4A87-B7ED-D1DE1179493B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

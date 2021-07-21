@@ -1,7 +1,6 @@
 ---
 title: RF discovery sequence
 description: The following figure illustrates the sequence of NCI operations executed by NFC CX for starting discovery.
-ms.assetid: 392F8A06-262D-4CF9-B510-C3FE86291026
 keywords:
 - NFC
 - near field communications
@@ -17,12 +16,11 @@ ms.localizationpriority: medium
 
 The following figure illustrates the sequence of NCI operations executed by NFC CX for starting discovery. The StateRfDiscovery entered from StateRfIdle triggers the start RF discovery sequence. The main set of operations performed in this state is configuration of RF discovery parameters, optional configuration for listen mode routing table, and enabling discovery through the RF discover NCI command. An NFC client driver can use SequencePreRfDiscStart to add non-standard NCI commands to optimize the discovery process.
 
-![A sequence diagram depicting the NCI operations executed by NFC CX for starting discovery](images/staterfdiscoverysequence.png)
+![A sequence diagram depicting the NCI operations executed by NFC CX for starting discovery.](images/staterfdiscoverysequence.png)
 
  
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

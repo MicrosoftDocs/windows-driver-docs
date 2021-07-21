@@ -1,7 +1,6 @@
 ---
-title: ScalingWidth element
+title: ScalingWidth element (fast scan direction)
 description: The required ScalingWidth element specifies the document scaling in the fast scan direction.
-ms.assetid: 5bc7cec8-888a-4b95-9593-94e6e23777bf
 keywords: ["ScalingWidth element Imaging Devices"]
 topic_type:
 - apiref
@@ -9,93 +8,46 @@ api_name:
 - wscn ScalingWidth wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---
 
-# ScalingWidth element
-
+# ScalingWidth element (fast scan direction)
 
 The required **ScalingWidth** element specifies the document scaling in the fast scan direction.
 
-Usage
------
+## Usage
 
 ```xml
-<wscn:ScalingWidth wscn:Override=""                   wscn:UsedDefault=""
+<wscn:ScalingWidth wscn:Override="" wscn:UsedDefault=""
   Override = "xs:string"
   UsedDefault = "xs:string">
   text
-</wscn:ScalingWidth wscn:Override=""                   wscn:UsedDefault="">
+</wscn:ScalingWidth wscn:Override="" wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong><strong>Override</strong></strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>Optional. A Boolean value that must be 0, false, 1, or true.<strong>falsetrue</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong><strong>UsedDefault</strong></strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>Optional. A Boolean value that must be 0, false, 1, or true.<strong>falsetrue</strong></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **Override** | xs:string | No | Optional. A Boolean value that must be 0, false, 1, or true. |
+| **UsedDefault** | xs:string | No | Optional. A Boolean value that must be 0, false, 1, or true. |
 
-Text value
-----------
+## Text value
 
 Required. An integer in the range from 1 through 1000, inclusive.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
+| Element |
+|--|
+| [**Scaling**](scaling.md) |
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scaling.md" data-raw-source="[&lt;strong&gt;Scaling&lt;/strong&gt;](scaling.md)"><strong>Scaling</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
-Remarks
--------
+## Remarks
 
 The **ScalingWidth** element specifies the scaling factor to apply in the fast scan direction. Scaling is expressed in 1 percent increments, where a value of 100 indicates a 100% width scale (no adjustment to the document width).
 
@@ -107,19 +59,8 @@ You can subset the allowed values for this element.
 
 ## See also
 
-
 [**DocumentFinalParameters**](documentfinalparameters.md)
 
 [**Scaling**](scaling.md)
 
 [**ScalingHeight**](scalingheight.md)
-
- 
-
- 
-
-
-
-
-
-

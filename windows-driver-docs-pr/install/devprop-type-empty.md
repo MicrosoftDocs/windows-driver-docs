@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_EMPTY
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_EMPTY identifier represents a special base-data-type identifier that indicates that a property does not exist.
-ms.assetid: 23d48659-e512-4557-a78b-d3afca7020a3
 keywords: ["DEVPROP_TYPE_EMPTY Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_EMPTY identifier represents a special base-data-type identifier that indicates that a property does not exist.
 
-Remarks
--------
+## Remarks
 
 Use this base-data-type identifier with the device property functions to delete a property.
 
@@ -37,14 +35,13 @@ To delete a property, call the corresponding SetupDiSet*Xxx* property function a
 
 -   Set the other function input parameters as appropriate to set the property.
 
-If DEVPROP_TYPE_EMPTY is used in an attempt to delete a property that does not exist, the delete operation will fail, and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return ERROR_NOT_FOUND.
+If DEVPROP_TYPE_EMPTY is used in an attempt to delete a property that does not exist, the delete operation will fail, and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return ERROR_NOT_FOUND.
 
 ### Retrieving a Property that Does Not Exist
 
-A call to a SetupDiGet*Xxx* property function that attempts to retrieve a device property that does not exist will fail, and a subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return ERROR_NOT_FOUND. The called SetupAPI property function will set the \**PropertyType* parameter to DEVPROP_TYPE_EMPTY.
+A call to a SetupDiGet*Xxx* property function that attempts to retrieve a device property that does not exist will fail, and a subsequent call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return ERROR_NOT_FOUND. The called SetupAPI property function will set the \**PropertyType* parameter to DEVPROP_TYPE_EMPTY.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -60,10 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

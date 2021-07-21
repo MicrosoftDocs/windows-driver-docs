@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_DEVPROPTYPE
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPTYPE identifier represents the base-data-type identifier that indicates the data type is a DEVPROPTYPE-typed value.
-ms.assetid: d50a26d4-0af5-4cc5-aaa4-8587b64fc1a8
 keywords: ["DEVPROP_TYPE_DEVPROPTYPE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPTYPE identifier represents the base-data-type identifier that indicates the data type is a DEVPROPTYPE-typed value.
 
-Remarks
--------
+## Remarks
 
 The DEVPROP_TYPE_DEVPROPTYPE property type can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -33,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_DEVPROPTYPE, call the cor
 
 -   Set the remaining function parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

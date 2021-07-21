@@ -1,7 +1,6 @@
 ---
 title: Identifying Device Functions in MFPs
 description: Identifying Device Functions in MFPs
-ms.assetid: 14016c43-b93a-4009-848b-1bcf3f1d94b6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,4 +13,4 @@ A device may report the ContainerID.If a device does not report a ContainerID, W
 
 For devices that may connect through more than one transport (that is, device connects through USB and WSD), it is recommended that the device reports a ContainerID to make the different device instances show as one device.
 
-For more information about ContainerIDs, see [Container ID](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids).
+For more information about ContainerIDs, see [Container ID](../install/container-ids.md).

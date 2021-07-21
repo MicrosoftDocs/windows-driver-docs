@@ -1,7 +1,6 @@
 ---
 title: Introduction to Port Class
 description: Introduction to Port Class
-ms.assetid: 5f986e0c-d021-4dee-85d3-ad69a3708dd8
 keywords:
 - audio miniport drivers WDK , Port Class
 - miniport drivers WDK audio , Port Class
@@ -37,17 +36,17 @@ PortCls is implemented in the Portcls.sys system file as an export driver (a ker
 
 -   A collection of *audio port* drivers
 
-It is the responsibility of the hardware vendor of an audio device, to provide an *adapter driver*. The adapter driver includes initialization and miniport driver-management code (including the [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function) and a collection of *audio miniport* drivers.
+It is the responsibility of the hardware vendor of an audio device, to provide an *adapter driver*. The adapter driver includes initialization and miniport driver-management code (including the [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function) and a collection of *audio miniport* drivers.
 
-When the operating system loads the adapter driver, the adapter driver creates a set of miniport driver objects and prompts the PortCls system driver to create a corresponding set of port driver objects. (The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process.) These port drivers are typically a subset of those that are available in the Portcls.sys file. Each miniport driver binds itself to a matching port driver from Portcls.sys to form a complete *subdevice* driver. The combination port-and-miniport subdevice driver is a KS filter (see [Audio Filters](audio-filters.md)). For example, a typical adapter driver might contain three miniport drivers: WaveRT, DMusUART, and Topology (with [IMiniportWaveRT](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert), [IMiniportDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus), and [IMiniportTopology](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology) interfaces). During initialization, these miniport drivers are bound to the WaveRT, DMus, and Topology port drivers (with [IPortWaveRT](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert), [IPortDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus), and [IPortTopology](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology) interfaces) that are contained in the Portcls.sys file. Each of these three subdevice drivers takes the form of a KS filter. The three filters together expose the complete functionality of the audio adapter.
+When the operating system loads the adapter driver, the adapter driver creates a set of miniport driver objects and prompts the PortCls system driver to create a corresponding set of port driver objects. (The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process.) These port drivers are typically a subset of those that are available in the Portcls.sys file. Each miniport driver binds itself to a matching port driver from Portcls.sys to form a complete *subdevice* driver. The combination port-and-miniport subdevice driver is a KS filter (see [Audio Filters](audio-filters.md)). For example, a typical adapter driver might contain three miniport drivers: WaveRT, DMusUART, and Topology (with [IMiniportWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert), [IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus), and [IMiniportTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology) interfaces). During initialization, these miniport drivers are bound to the WaveRT, DMus, and Topology port drivers (with [IPortWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert), [IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus), and [IPortTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology) interfaces) that are contained in the Portcls.sys file. Each of these three subdevice drivers takes the form of a KS filter. The three filters together expose the complete functionality of the audio adapter.
 
 Typically, the port drivers provide the majority of the functionality for each class of audio subdevice. For example, the WaveRT port driver does most of the work that is required to stream audio data to a DMA-based audio device, whereas the miniport driver provides device-specific details such as the DMA address and device name.
 
-Audio adapter drivers and miniport drivers are typically written in Microsoft C++ and make extensive use of COM interfaces. The port-miniport driver architecture promotes modular design. Miniport driver writers should implement their driver as a C++ class derived from the [IMiniport](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport) interface, which is defined in the header file Portcls.h. Hardware initialization takes place at driver load time--typically in the **Init** method of the **IMiniport**-derived class (for example, [**IMiniportWaveRT::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavert-init)). For more information about COM implementations of audio miniport drivers, see [COM in the Kernel](com-in-the-kernel.md).
+Audio adapter drivers and miniport drivers are typically written in Microsoft C++ and make extensive use of COM interfaces. The port-miniport driver architecture promotes modular design. Miniport driver writers should implement their driver as a C++ class derived from the [IMiniport](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport) interface, which is defined in the header file Portcls.h. Hardware initialization takes place at driver load time--typically in the **Init** method of the **IMiniport**-derived class (for example, [**IMiniportWaveRT::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavert-init)). For more information about COM implementations of audio miniport drivers, see [COM in the Kernel](com-in-the-kernel.md).
 
 The following diagram illustrates the relationship between port and miniport drivers and their position in the audio stack.
 
-![diagram illustrating the relationship between port and miniport drivers](images/portcls-diag.png)
+![diagram illustrating the relationship between port and miniport drivers.](images/portcls-diag.png)
 
 In the preceding diagram, the KSEndpoint component is a system-supplied file that is provided with Windows Vista and later versions of Windows. This component is provided in the form of a DLL (Audiokse.dll). KSEndpoint abstracts the kernel-mode device endpoint, and provides the audio engine with access to the abstracted endpoint. For more information about the audio engine, see [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md).
 
@@ -72,9 +71,4 @@ This section discusses the following topics:
 [PortCls Support by Operating System](portcls-support-by-operating-system.md)
 
  
-
- 
-
-
-
 

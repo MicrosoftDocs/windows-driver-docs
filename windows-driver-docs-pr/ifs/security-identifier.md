@@ -1,7 +1,6 @@
 ---
 title: Security Identifier
 description: Security Identifier
-ms.assetid: e4c39d83-6f32-406c-b8d5-d41305a8976f
 keywords:
 - security descriptors WDK file systems , security identifiers
 - descriptors WDK file systems , security identifiers
@@ -22,31 +21,31 @@ The security identifier is used by Windows as the definitive value to distinguis
 
 The following figure illustrates the security identifier structure.
 
-![diagram illustrating the security identifier structure](images/fssecurity-02.png)
+![diagram illustrating the security identifier structure.](images/fssecurity-02.png)
 
 In addition to unique SIDs, the Windows system defines a set of well known identifiers. For example, the local Administrator is such a well-known SID. Windows provides an in-kernel mechanism for converting between SIDs and user names within the kernel environment. These function calls are available from the ksecdd driver, which implements these functions by using user-mode helper services. Accordingly, their use within file systems must obey the usual rules for communication with user-mode services. These calls cannot be used during paging file I/O.
 
 The functions include the following:
 
--   [**SecMakeSPN**](https://msdn.microsoft.com/library/windows/hardware/ff556584)—creates a service provider name string that can be used when communicating with specific security service providers.
+-   [**SecMakeSPN**](/previous-versions/ff556584(v=vs.85))—creates a service provider name string that can be used when communicating with specific security service providers.
 
--   [**SecMakeSPNEx**](https://msdn.microsoft.com/library/windows/hardware/ff556585)—an augmented version of **SecMakeSPN**. This function is available on Microsoft Windows XP and later versions of Windows.
+-   [**SecMakeSPNEx**](/previous-versions/ff556585(v=vs.85))—an augmented version of **SecMakeSPN**. This function is available on Microsoft Windows XP and later versions of Windows.
 
--   [**SecMakeSPNEx2**](https://msdn.microsoft.com/library/windows/hardware/ff556592)—an augmented version of **SecMakeSPNEx**. This function is available on Windows Vista, Windows Server 2008, and later versions of Windows.
+-   [**SecMakeSPNEx2**](/previous-versions/ff556592(v=vs.85))—an augmented version of **SecMakeSPNEx**. This function is available on Windows Vista, Windows Server 2008, and later versions of Windows.
 
--   [**SecLookupAccountSid**](https://msdn.microsoft.com/library/windows/hardware/ff556579)—given a SID, this routine will return an account name. This function is available on Windows XP and later.
+-   [**SecLookupAccountSid**](/previous-versions/ff556579(v=vs.85))—given a SID, this routine will return an account name. This function is available on Windows XP and later.
 
--   [**SecLookupAccountName**](https://msdn.microsoft.com/library/windows/hardware/ff554795)—given an account name, this routine will retrieve the SID. This function is available on Windows XP and later.
+-   [**SecLookupAccountName**](/previous-versions/ff554795(v=vs.85))—given an account name, this routine will retrieve the SID. This function is available on Windows XP and later.
 
--   [**SecLookupWellKnownSid**](https://msdn.microsoft.com/library/windows/hardware/ff556582)—given a well known SID type, this routine will return the correct SID. This function is available on Windows Server 2003 and later.
+-   [**SecLookupWellKnownSid**](/previous-versions/ff556582(v=vs.85))—given a well known SID type, this routine will return the correct SID. This function is available on Windows Server 2003 and later.
 
 In addition, any kernel driver may create a SID by using the following standard runtime library routines:
 
--   [**RtlInitializeSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlinitializesid)—initializes a buffer for a new SID.
+-   [**RtlInitializeSid**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlinitializesid)—initializes a buffer for a new SID.
 
--   [**RtlLengthSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtllengthsid)—determines the size of the SID stored within the given buffer.
+-   [**RtlLengthSid**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtllengthsid)—determines the size of the SID stored within the given buffer.
 
--   [**RtlValidSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlvalidsid)—determines if the given SID buffer is a valid formatted buffer.
+-   [**RtlValidSid**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlvalidsid)—determines if the given SID buffer is a valid formatted buffer.
 
 Note that **RtlLengthSid** and **RtlValidSid** assume that the 8-byte fixed header for a SID is present. So a driver should check for this minimum length for a SID header before calling these functions.
 
@@ -109,9 +108,4 @@ The following code example demonstrates how to create a SID using the **SecLooku
 Either of these approaches are valid, although the latter code is preferred. Note that these code examples use local buffers for storing the SID. These buffers cannot be used outside the current call context. If the SID buffer needed to be persistent, the buffer should be allocated from pool memory.
 
  
-
- 
-
-
-
 

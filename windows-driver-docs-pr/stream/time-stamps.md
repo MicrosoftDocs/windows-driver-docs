@@ -1,7 +1,6 @@
 ---
 title: Time Stamps
 description: Time Stamps
-ms.assetid: a97a57df-294a-4cbb-85d3-56d33ece65c9
 keywords:
 - video capture WDK AVStream , time stamps
 - capturing video WDK AVStream , time stamps
@@ -18,7 +17,7 @@ Minidrivers should time stamp data packets to synchronize multiple data streams.
 
 Each data packet that is transferred corresponds to a single frame or field of video or ancillary data. Video capture driver writers that are concerned with frame-accurate video capture can choose to provide a clock that all other filters can use as a reference. Digital video minidrivers are an example of minidrivers that should provide clocks to use in a filter graph. Alternatively, video capture minidrivers that run asynchronously to other multimedia streams, such as USB and IEEE 1394 conferencing cameras, should time stamp their data packets with a clock provided by another component, such as an audio digitizer.
 
-If a Stream class minidriver provides master clock, it should specify the following values in the [**HW\_STREAM\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_object) structure:
+If a Stream class minidriver provides master clock, it should specify the following values in the [**HW\_STREAM\_OBJECT**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_object) structure:
 
 ```cpp
 PHW_STREAM_OBJECT *pStreamObject;
@@ -28,9 +27,4 @@ PStreamObject->ClockSupportFlags = CLOCK_SUPPORT_CAN_READ_ONBOARD_CLOCK | CLOCK_
 ```
 
  
-
- 
-
-
-
 

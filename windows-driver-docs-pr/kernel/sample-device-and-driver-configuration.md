@@ -1,7 +1,6 @@
 ---
 title: Sample Device and Driver Configuration
 description: Sample Device and Driver Configuration
-ms.assetid: 803262b2-0882-46d0-9c4f-63e59eb4beaa
 keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "keyboards WDK kernel", "mouse WDK kernel", "hardware configurations WDK kernel", "intermediate drivers WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -23,13 +22,13 @@ The following figure shows two possible hardware configurations for the keyboard
 
 -   Both connected through a keyboard and auxiliary device controller
 
-![diagram illustrating keyboard and mouse hardware configurations](images/2kbdmuhw.png)
+![diagram illustrating keyboard and mouse hardware configurations.](images/2kbdmuhw.png)
 
 ### <a href="" id="keyboard-and-mouse-driver-layers"></a>
 
 The following figure illustrates the corresponding layered drivers for I/O operations on the devices shown in the previous figure.
 
-![keyboard and mouse driver layers](images/2samplyr.png)
+![keyboard and mouse driver layers.](images/2samplyr.png)
 
 Note that drivers of keyboard and mouse devices, whatever the hardware configuration, can use the system's keyboard class and mouse class drivers to handle hardware-independent operations. These are called *class drivers* because each supplies system-required but hardware-independent support for a particular class of device.
 

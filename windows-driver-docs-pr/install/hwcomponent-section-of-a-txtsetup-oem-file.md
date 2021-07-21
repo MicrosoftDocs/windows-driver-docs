@@ -1,7 +1,6 @@
 ---
 title: HwComponent Section of a TxtSetup.oem File
 description: A HwComponent section lists the drivers available for a particular component. There is a HwComponent section for each type of component supported by the file.
-ms.assetid: 84ba057b-6699-4709-bee8-24cb555d4165
 keywords: ["HwComponent Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref

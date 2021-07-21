@@ -1,7 +1,6 @@
 ---
 title: usbkd.usb2
 description: The usbkd.usb2 command displays a list of USB endpoints that have USB 2.0 scheduling information.
-ms.assetid: 48DC685A-3624-4DAD-8077-FB7C4BE4BE93
 keywords: ["usbkd.usb2 Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of the device extension for the functional device object (FDO) of a USB 
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the device extension for the FDO of a USB host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -67,14 +65,7 @@ dt usbport!_HCD_ENDPOINT ffffe0000212d970  !usbep ffffe0000212d970
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

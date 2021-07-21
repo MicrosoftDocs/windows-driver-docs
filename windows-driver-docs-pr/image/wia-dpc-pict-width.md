@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_PICT\_WIDTH
 description: The WIA\_DPC\_PICT\_WIDTH property describes the width, in pixels, to use for newly captured images.
-ms.assetid: 08ff2ef6-1c65-4a46-bf17-f7c5126279d4
 keywords: ["WIA_DPC_PICT_WIDTH Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The list of valid values for the WIA\_DPC\_PICT\_WIDTH property has a one-to-one correspondence to the list of valid values for the [**WIA\_DPC\_PICT\_HEIGHT**](wia-dpc-pict-height.md) property. If the individual width and height are linearly settable and orthogonal to each other, you can express them as a range.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

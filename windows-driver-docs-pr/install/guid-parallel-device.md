@@ -1,7 +1,6 @@
 ---
 title: GUID_PARALLEL_DEVICE
 description: GUID_PARALLEL_DEVICE
-ms.assetid: 274d8851-923c-4576-9e95-ff6bec1cf517
 keywords: ["GUID_PARALLEL_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.date: 10/17/2018
 # GUID_PARALLEL_DEVICE
 
 
-GUID_PARALLEL_DEVICE is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for parallel ports that support an IEEE 1284-compatible hardware interface. For new instances of this class, use the [**GUID_DEVINTERFACE_PARALLEL**](guid-devinterface-parallel.md) class identifier instead.
+GUID_PARALLEL_DEVICE is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for parallel ports that support an IEEE 1284-compatible hardware interface. For new instances of this class, use the [**GUID_DEVINTERFACE_PARALLEL**](guid-devinterface-parallel.md) class identifier instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -46,11 +44,4 @@ Requirements
 [**GUID_DEVINTERFACE_PARALLEL**](guid-devinterface-parallel.md)
 
  
-
- 
-
-
-
-
-
 

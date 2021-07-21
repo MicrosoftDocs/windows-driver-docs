@@ -1,7 +1,6 @@
 ---
 title: IEC-61883 Protocol Driver in a Client Driver Stack
 description: IEC-61883 Protocol Driver in a Client Driver Stack
-ms.assetid: cee0c0ee-7326-421c-af5a-b483c878b289
 keywords:
 - IEC-61883 client drivers WDK IEEE 1394 bus
 - 61883 WDK IEEE 1394 bus
@@ -19,19 +18,19 @@ IEC-61883 client drivers rely on *61883.sys* to communicate with their devices u
 
 The following diagram shows an example of the *61883.sys* in an AV/C driver stack. The vendor-supplied AV/C subunit driver is the IEC-61883 client in this example.
 
-![diagram illustrating an iec-61883 client driver stack](images/61883stk.png)
+![diagram illustrating an iec-61883 client driver stack.](images/61883stk.png)
 
 Starting from the top of the diagram:
 
--   The stream class driver, *stream.sys*, supports kernel streaming drivers for devices such as DVD, video capture, and external sound devices. The stream class driver is documented in the [Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2).
+-   The stream class driver, *stream.sys*, supports kernel streaming drivers for devices such as DVD, video capture, and external sound devices. The stream class driver is documented in the [Streaming Minidrivers](../stream/streaming-minidrivers2.md).
 
--   In this example, the IEC-61883 client is a vendor-supplied AV/C subunit driver. This is a [Writing a Stream Minidriver](https://docs.microsoft.com/windows-hardware/drivers/stream/writing-a-stream-minidriver) that uses facilities provided by lower drivers in the AV/C stack to control its device. (For more information about AV/C subunit drivers, see [AV/C Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/stream/av-c-client-drivers2).)
+-   In this example, the IEC-61883 client is a vendor-supplied AV/C subunit driver. This is a [Writing a Stream Minidriver](../stream/writing-a-stream-minidriver.md) that uses facilities provided by lower drivers in the AV/C stack to control its device. (For more information about AV/C subunit drivers, see [AV/C Client Drivers](../stream/av-c-client-drivers2.md).)
 
     AV/C subunit drivers set up plug connections and streams, and expose subunit control, status, and notification. They use the kernel streaming framework to expose a generic pin property set and device-specific property and event sets.
 
 -   The AV/C stream filter driver, *avcstrm.sys*, is an optional WDM filter driver that isolates stream-specific format handling for subunit drivers. The AV/C stream filter driver is specified as a lower driver by third-party INF files. It supports DV and MPEG stream format for subunit drivers and supplies CMP helper functions in conjunction with *avc.sys*. It also provides kernel-streaming data structures and data intersection handlers.
 
--   The AV/C protocol driver, *avc.sys*, maps AV/C commands to WDM IRPs, retries requests (for example, if a subunit is busy), handles interim responses as pending IRPs, and routes responses to the correct subunit driver based on type, ID, and operation code. For Microsoft Windows XP and later, *avc.sys* also provides plug connection management. (For more information about support that Microsoft provides for the AV/C protocol, see [AV/C Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/stream/av-c-client-drivers2).)
+-   The AV/C protocol driver, *avc.sys*, maps AV/C commands to WDM IRPs, retries requests (for example, if a subunit is busy), handles interim responses as pending IRPs, and routes responses to the correct subunit driver based on type, ID, and operation code. For Microsoft Windows XP and later, *avc.sys* also provides plug connection management. (For more information about support that Microsoft provides for the AV/C protocol, see [AV/C Client Drivers](../stream/av-c-client-drivers2.md).)
 
 -   The IEC-61883 protocol driver, *61883.sys*, handles function control protocol (FCP), common isochronous packet (CIP) format, and connection management procedures (CMP) requests sent down the AV/C driver stack.
 
@@ -42,9 +41,4 @@ Starting from the top of the diagram:
 AV/C subunit drivers are just one of the possible types of IEC-61883 client drivers. Another example would be a driver that utilizes the HAVi protocol layered above IEC-61883. Although *61883.sys* and the IEC-61883 protocol do not have any AV/C or HAVi dependencies, clients of *61883.sys* can operate under different constraints. For example, AV/C subunit drivers are usually clients of *avc.sys*, which provides FCP-related functions and blocks upper-level drivers from sending FCP-related requests down the stack to be handled by *61883.sys*.
 
  
-
- 
-
-
-
 

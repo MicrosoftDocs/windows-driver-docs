@@ -1,7 +1,6 @@
 ---
 title: EFI_DISPLAY_POWER_PROTOCOL
 description: EFI_DISPLAY_POWER_PROTOCOL
-ms.assetid: 61ccf856-7e0b-4f1b-9be9-7b8a31339a6b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

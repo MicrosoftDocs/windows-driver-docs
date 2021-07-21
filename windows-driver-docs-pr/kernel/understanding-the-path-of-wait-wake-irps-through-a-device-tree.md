@@ -1,7 +1,6 @@
 ---
 title: Understanding the Path of Wait/Wake IRPs through a Device Tree
 description: Understanding the Path of Wait/Wake IRPs through a Device Tree
-ms.assetid: 35118367-d20b-45c9-a296-656028339c59
 keywords: ["wait/wake IRPs WDK power management , device tree path", "bus drivers WDK power management", "USB WDK power management", "function drivers WDK power management", "FDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management", "PDOs WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -27,11 +26,11 @@ Keep in mind that drivers that enumerate children create a PDO for each child de
 
 The following figure shows a sample configuration in which such a situation occurs.
 
-![diagram illustrating a sample usb configuration](images/wwhw.png)
+![diagram illustrating a sample usb configuration.](images/wwhw.png)
 
 In the sample configuration, the keyboard and modem are children of the USB hub, which in turn is a child of the USB host controller, which is enumerated by the PCI bus. The following figure shows the device stacks for the keyboard in the sample configuration.
 
-![diagram illustrating device stacks for the sample usb keyboard configuration](images/wwdobj.png)
+![diagram illustrating device stacks for the sample usb keyboard configuration.](images/wwdobj.png)
 
 As the previous figure shows, reading from the bottom up:
 
@@ -49,15 +48,15 @@ Note that each device stack might include additional optional filter DOs that ar
 
 To allow keyboard input to awaken the system, the policy owner for the keyboard requests an **IRP\_MN\_WAIT\_WAKE** for its PDO. That IRP sets off a chain of other wait/wake IRPs, as shown in the following figure.
 
-![wait/wake irp requests for sample usb configuration](images/wwcascade.png)
+![wait/wake irp requests for sample usb configuration.](images/wwcascade.png)
 
-When a bus driver receives an [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) targeted to a PDO it created, it must request another **IRP\_MN\_WAIT\_WAKE** for the device stack for which it owns power policy and created an FDO.
+When a bus driver receives an [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md) targeted to a PDO it created, it must request another **IRP\_MN\_WAIT\_WAKE** for the device stack for which it owns power policy and created an FDO.
 
 As the previous figure shows:
 
-1.  The keyboard driver calls [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to send a wait/wake IRP (IRP1) to its PDO.
+1.  The keyboard driver calls [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to send a wait/wake IRP (IRP1) to its PDO.
 
-    The power manager allocates the IRP and sends it through the I/O manager to the top of the device stack for the keyboard. Drivers set [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines and pass the IRP down the stack until it reaches the keyboard PDO. The USB hub driver, which acts as the bus driver for the keyboard, holds IRP1 pending.
+    The power manager allocates the IRP and sends it through the I/O manager to the top of the device stack for the keyboard. Drivers set [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines and pass the IRP down the stack until it reaches the keyboard PDO. The USB hub driver, which acts as the bus driver for the keyboard, holds IRP1 pending.
 
 2.  Because the USB hub driver cannot wake the system when the wake-up signal arrives, the USB hub driver must call **PoRequestPowerIrp** to request a wait/wake IRP (IRP2) for the USB hub device stack.
 
@@ -75,7 +74,7 @@ As the previous figure shows:
 
 When the keyboard asserts the wake-up signal, Acpi.sys intercepts it. ACPI, however, cannot determine that the keyboard asserted the signal, only that the signal came through the root device. Acpi.sys then completes IRP4, and the I/O manager calls *IoCompletion* routines traveling back up the PCI device stack. When IRP4 is complete and all *IoCompletion* routines have run, the PCI driver's callback routine is invoked. In its callback routine, the PCI driver determines that the signal came through the USB host controller. The PCI driver then completes IRP3. The same sequence occurs through the USB host controller stack and the USB hub stack, until the keyboard driver receives IRP1. At this point, the keyboard driver can service the wake-up event, as necessary.
 
-Each time a driver sends a wait/wake IRP to a parent PDO, it must set a [*Cancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine for its own IRP. Setting a *Cancel* routine gives the driver an opportunity to cancel the new IRP if the IRP that triggered it is canceled. In the USB example, if the keyboard driver cancels its wait/wake IRP (thus disabling keyboard wake-up), the USB hub, USB host controller, and PCI drivers must cancel the IRPs that they sent as a consequence of the keyboard IRP. For more information, see [Cancel Routines for Wait/Wake IRPs](canceling-a-wait-wake-irp.md#ddk-cancel-routines-for-wait-wake-irps-kg).
+Each time a driver sends a wait/wake IRP to a parent PDO, it must set a [*Cancel*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine for its own IRP. Setting a *Cancel* routine gives the driver an opportunity to cancel the new IRP if the IRP that triggered it is canceled. In the USB example, if the keyboard driver cancels its wait/wake IRP (thus disabling keyboard wake-up), the USB hub, USB host controller, and PCI drivers must cancel the IRPs that they sent as a consequence of the keyboard IRP. For more information, see [Cancel Routines for Wait/Wake IRPs](canceling-a-wait-wake-irp.md#ddk-cancel-routines-for-wait-wake-irps-kg).
 
 Although a parent driver might enumerate more than one child that can be enabled for wait/wake, only one wait/wake IRP can be pending for a PDO. In such cases, the parent driver should make sure that it keeps a wait/wake IRP pending whenever any of its devices is enabled for wake-up. To do so, the driver increments an internal counter each time it receives a wait/wake IRP. Each time the driver completes a wait/wake IRP, it decrements the count and, if the resulting value is nonzero, sends another wait/wake IRP to its device stack.
 
@@ -86,9 +85,4 @@ When a wake-up signal arrives from either the keyboard or modem, the USB hub dri
 A driver does not, however, send itself an IRP to reenable wait/wake on the same device on which a wake-up signal just arrived. Only the device power policy manager can do that. Reenabling wait/wake is not automatic.
 
  
-
- 
-
-
-
 

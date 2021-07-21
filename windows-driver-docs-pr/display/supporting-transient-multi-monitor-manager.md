@@ -1,7 +1,6 @@
 ---
 title: Supporting Transient Multi-Monitor Manager
 description: Supporting Transient Multi-Monitor Manager
-ms.assetid: 5091fe00-76d9-4585-9ef0-4b5b7ab8bc06
 keywords:
 - Transient Multi-Monitor Manager WDK display
 - TMM WDK display
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 # Supporting Transient Multi-Monitor Manager
 
-
-Transient Multi-Monitor Manager is a Windows Vista feature that simplifies the setup of display configurations on mobile computers. TMM can place a mobile computer display (for example, a laptop computer display) into clone view when a new monitor is detected. TMM is disabled on desktop computers. For Windows Vista, there is no GDI function that an application can call to enter clone view. Hardware vendors must continue to use their own proprietary methods to enter clone view on desktop computers. However, hardware vendors should implement and provide an [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) COM interface object that will allow TMM to set clone-view mode on mobile computers.
+Transient Multi-Monitor Manager is a Windows Vista feature that simplifies the setup of display configurations on mobile computers. TMM can place a mobile computer display (for example, a laptop computer display) into clone view when a new monitor is detected. TMM is disabled on desktop computers. For Windows Vista, there is no GDI function that an application can call to enter clone view. Hardware vendors must continue to use their own proprietary methods to enter clone view on desktop computers. However, hardware vendors should implement and provide an [IViewHelper](/windows/win32/api/cloneviewhelper) COM interface object that will allow TMM to set clone-view mode on mobile computers.
 
 This section includes:
 
@@ -28,12 +26,3 @@ This section includes:
 [Handling Monitor Configurations](handling-monitor-configurations.md)
 
 [Determining Whether a Platform is Mobile or Desktop](determining-whether-a-platform-is-mobile-or-desktop.md)
-
- 
-
- 
-
-
-
-
-

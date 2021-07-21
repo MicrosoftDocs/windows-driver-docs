@@ -1,7 +1,6 @@
 ---
 title: '#Define Preprocessor Directive'
 description: '#Define Preprocessor Directive'
-ms.assetid: e2fab866-dc81-4e4a-bac7-291d0b803962
 keywords:
 - preprocessor directives WDK GDL , keywords
 - keywords WDK GDL

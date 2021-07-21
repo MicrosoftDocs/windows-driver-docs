@@ -1,7 +1,6 @@
 ---
 title: Changing the Text Size in the Defect Viewer
 description: Changing the Text Size in the Defect Viewer
-ms.assetid: 94e7f8e8-b6cd-4b7e-8e89-ebf7235988b9
 keywords:
 - Static Driver Verifier Report WDK , Defect Viewer
 - Defect Viewer WDK Static Driver Verifier
@@ -19,7 +18,7 @@ This feature affects only the Defect Viewer. It does not change the size of the 
 
 The following screen shot shows how to change text size in the Defect Viewer window.
 
-![screen shot showing how to change text size in the defect viewer window](images/sdv-defectviewerbig.png)
+![screen shot showing how to change text size in the defect viewer window.](images/sdv-defectviewerbig.png)
 
  
 

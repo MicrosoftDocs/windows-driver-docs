@@ -1,7 +1,6 @@
 ---
 title: Supported Scanner Paper Sizes
 description: Supported Scanner Paper Sizes
-ms.assetid: c4437c38-b43a-433c-913a-d3de9bf74284
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Identifying the location of internal cameras
 description: This topic provides info about supporting internal cameras on systems in Windows 8.1.
-ms.assetid: 7664F0F6-BD95-4919-82E4-F6F8080C2B5B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ This topic provides info about supporting internal cameras on systems in Windows
 
 Systems with built-in cameras with mechanically fixed direction must report the physical location of the cameras. This physical location info indicates which direction the camera is facing, such as front or back, so that apps for using the camera in Windows 8.1 function correctly.
 
-The following two [Windows Hardware Certification Requirements](https://go.microsoft.com/fwlink/p/?LinkId=320504), which allow Windows to recognize a camera’s location, are required:
+The following two [Windows Hardware Certification Requirements](/previous-versions/windows/hardware/cert-program/), which allow Windows to recognize a camera’s location, are required:
 
 - **System.Client.PCContainer.PCAppearsAsSingleObject**. The camera must be grouped into the computer’s device container, which contains the device functions located physically inside the computer. A camera must be grouped into the computer’s device container to expose its physical location to apps, because devices external to the computer container aren’t assumed to have a mechanically fixed direction.
 
@@ -33,7 +32,7 @@ Windows needs to know the physical location of internal cameras for the followin
 
 In accordance with certification requirement **System.Client.PCContainer.PCAppearsAsSingleObject**, also known as SYSFUND-0200, the internal camera device nodes must be grouped under the PC device container. In other words, the internal camera should not be displayed in **Devices and Printers** and must be consolidated into the PC container.
 
-The way to implement this requirement depends on the bus type of the internal camera. If the device can expose information on the physical device location in ACPI tables, the correct grouping can be specified in the ACPI layer by including \_PLD information in the tables and modifying the UserVisible flag in the ACPI table, as described in [Multifunction Device Support and Device Container Groupings](https://go.microsoft.com/fwlink/p/?LinkId=320505). Otherwise, override the removable flag by using the DeviceOverrides registry key. For more info, see [DeviceOverrides Registry Key](https://go.microsoft.com/fwlink/p/?LinkId=320506).
+The way to implement this requirement depends on the bus type of the internal camera. If the device can expose information on the physical device location in ACPI tables, the correct grouping can be specified in the ACPI layer by including \_PLD information in the tables and modifying the UserVisible flag in the ACPI table, as described in [Multifunction Device Support and Device Container Groupings](../install/container-ids.md). Otherwise, override the removable flag by using the DeviceOverrides registry key. For more info, see [DeviceOverrides Registry Key](../install/deviceoverrides-registry-key.md).
 
 ### How to provide physical location using \_PLD info in the ACPI table
 
@@ -57,7 +56,7 @@ To specify the address (\_ADR):
 
 1. Install Windows to the target PC
 2. Go to **Device Manager**
-3. Right-click your target webacm and select **Properties**
+3. Select and hold (or right-click) your target webcam and select **Properties**
 4. Open the **Details** tab and select **Address** in the **Property** menu
 5. The value in the **Value** box is the address that your device is located at
 6. Set the value in \_ADR in the ACPI table
@@ -105,13 +104,13 @@ For internal cameras, the OEM creates a GUID to use for the Model ID and creates
 
 The subkey entry to create under the InternalDeviceModification registry key is the OEM-supplied GUID for ModelID. The presence of this key adds the Model ID to the camera’s device node, based on the device hardware ID and the location information indicated by the \_PLD value in the ACPI table.
 
-![registry keys and values for internaldevicemodification](images/372985-camera-internal-registry-layout.png)
+![registry keys and values for internaldevicemodification.](images/372985-camera-internal-registry-layout.png)
 
 ### InternalDeviceModification registry key
 
 The InternalDeviceModification registry key indicates that at least one camera uses the ModelID.
 
-|Registry key name|`InternalDeviceModification`|
+|Registry key name|InternalDeviceModification|
 |----|----|
 |Required/optional| Required|
 |Path|`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control`|

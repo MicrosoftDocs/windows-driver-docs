@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_BrandingIcon
 description: DEVPKEY_DrvPkg_BrandingIcon
-ms.assetid: 4a830401-5677-4fda-a087-407b1246699f
 keywords: ["DEVPKEY_DrvPkg_BrandingIcon Device and Driver Installation"]
 topic_type:
 - apiref
@@ -47,17 +46,15 @@ The DEVPKEY_DrvPkg_BrandingIcon device property represents a list of icons that 
 
  
 
-Remarks
--------
+## Remarks
 
 A branding icon can be specified as an .ico file or as a resource within an executable file.
 
 The format of an icon list is the same as that described for the [**DEVPKEY_DrvPkg_Icon**](devpkey-drvpkg-icon.md) device property.
 
-You can set the value of DEVPKEY_DrvPkg_BrandingIcon by an [**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive) that is included in the [**INF *DDInstall* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of the INF file that installs a device. You can retrieve the value of DEVPKEY_DrvPkg_BrandingIcon by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can set the value of DEVPKEY_DrvPkg_BrandingIcon by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs a device. You can retrieve the value of DEVPKEY_DrvPkg_BrandingIcon by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,18 +78,11 @@ Requirements
 
 [**DEVPKEY_DrvPkg_Icon**](devpkey-drvpkg-icon.md)
 
-[**INF AddProperty Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive)
+[**INF AddProperty Directive**](./inf-addproperty-directive.md)
 
-[**INF *DDInstall* Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)
+[**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

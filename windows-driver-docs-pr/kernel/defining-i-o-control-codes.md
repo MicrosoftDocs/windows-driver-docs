@@ -1,7 +1,6 @@
 ---
 title: Defining I/O Control Codes
 description: Defining I/O Control Codes
-ms.assetid: 967b0199-e9a0-4c8d-9130-c81436c59ca3
 keywords: ["I/O control codes WDK kernel , defining", "control codes WDK IOCTLs , defining", "IOCTLs WDK kernel , defining", "CTL_CODE macro", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode", "layouts WDK IOCTLs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -10,17 +9,14 @@ ms.localizationpriority: medium
 # Defining I/O Control Codes
 
 
-
-
-
 When defining new IOCTLs, it is important to remember the following rules:
 
--   If a new IOCTL will be available to user-mode software components, the IOCTL must be used with [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) requests. User-mode components send **IRP\_MJ\_DEVICE\_CONTROL** requests by calling the [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol), which is a Win32 function.
--   If a new IOCTL will be available only to kernel-mode driver components, the IOCTL must be used with [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) requests. Kernel-mode components create **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests by calling **IoBuildDeviceIoControlRequest**. For more information, see [Creating IOCTL Requests in Drivers](creating-ioctl-requests-in-drivers.md).
+-   If a new IOCTL will be available to user-mode software components, the IOCTL must be used with [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) requests. User-mode components send **IRP\_MJ\_DEVICE\_CONTROL** requests by calling the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol), which is a Win32 function.
+-   If a new IOCTL will be available only to kernel-mode driver components, the IOCTL must be used with [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests. Kernel-mode components create **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests by calling **IoBuildDeviceIoControlRequest**. For more information, see [Creating IOCTL Requests in Drivers](creating-ioctl-requests-in-drivers.md).
 
 An I/O control code is a 32-bit value that consists of several fields. The following figure illustrates the layout of I/O control codes.
 
-![diagram illustrating the i/o control code layout](images/ioctl-1.png)
+![diagram illustrating the i/o control code layout.](images/ioctl-1.png)
 
 Use the system-supplied **CTL\_CODE** macro, which is defined in Wdm.h and Ntddk.h, to define new I/O control codes. The definition of a new IOCTL code, whether intended for use with **IRP\_MJ\_DEVICE\_CONTROL** or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, uses the following format:
 
@@ -33,13 +29,13 @@ Choose a descriptive constant name for the IOCTL, of the form IOCTL\_*Device*\_*
 Supply the following parameters to the **CTL\_CODE** macro:
 
 <a href="" id="devicetype"></a>*DeviceType*  
-Identifies the device type. This value must match the value that is set in the **DeviceType** member of the driver's [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. (See [Specifying Device Types](specifying-device-types.md)). Values of less than 0x8000 are reserved for Microsoft. Values of 0x8000 and higher can be used by vendors. Note that the vendor-assigned values set the **Common** bit.
+Identifies the device type. This value must match the value that is set in the **DeviceType** member of the driver's [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. (See [Specifying Device Types](specifying-device-types.md)). Values of less than 0x8000 are reserved for Microsoft. Values of 0x8000 and higher can be used by vendors. Note that the vendor-assigned values set the **Common** bit.
 
 <a href="" id="functioncode"></a>*FunctionCode*  
 Identifies the function to be performed by the driver. Values of less than 0x800 are reserved for Microsoft. Values of 0x800 and higher can be used by vendors. Note that the vendor-assigned values set the **Custom** bit.
 
 <a href="" id="transfertype"></a>*TransferType*  
-Indicates how the system will pass data between the caller of [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) (or [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)) and the driver that handles the IRP.
+Indicates how the system will pass data between the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) (or [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)) and the driver that handles the IRP.
 
 Use one of the following system-defined constants:
 
@@ -53,16 +49,16 @@ For more information about buffered I/O, see [Using Buffered I/O](using-buffered
 <a href="" id="method-in-direct-or-method-out-direct"></a>METHOD\_IN\_DIRECT or METHOD\_OUT\_DIRECT  
 Specifies the [direct I/O](methods-for-accessing-data-buffers.md) method, which is typically used for reading or writing large amounts of data, using DMA or PIO, that must be transferred quickly.
 
-Specify METHOD\_IN\_DIRECT if the caller of [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will pass data to the driver.
+Specify METHOD\_IN\_DIRECT if the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will pass data to the driver.
 
-Specify METHOD\_OUT\_DIRECT if the caller of [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will receive data from the driver.
+Specify METHOD\_OUT\_DIRECT if the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will receive data from the driver.
 
 For information about how the system specifies data buffers for METHOD\_IN\_DIRECT and METHOD\_OUT\_DIRECT I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
 
 For more information about direct I/O, see [Using Direct I/O](using-direct-i-o.md).
 
 <a href="" id="method-neither"></a>METHOD\_NEITHER  
-Specifies [neither buffered nor direct I/O](using-neither-buffered-nor-direct-i-o.md). The I/O manager does not provide any system buffers or MDLs. The IRP supplies the user-mode virtual addresses of the input and output buffers that were specified to [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest**, without validating or mapping them.
+Specifies [neither buffered nor direct I/O](using-neither-buffered-nor-direct-i-o.md). The I/O manager does not provide any system buffers or MDLs. The IRP supplies the user-mode virtual addresses of the input and output buffers that were specified to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest**, without validating or mapping them.
 
 For information about how the system specifies data buffers for METHOD\_NEITHER I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
 
@@ -73,7 +69,7 @@ With this method, the highest-level driver must determine whether to set up buff
 For more information, see [Using Neither Buffered Nor Direct I/O](using-neither-buffered-nor-direct-i-o.md).
 
 <a href="" id="requiredaccess"></a>*RequiredAccess*  
-Indicates the type of access that a caller must request when opening the file object that represents the device (see [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create)). The I/O manager will create IRPs and call the driver with a particular I/O control code only if the caller has requested the specified access rights. *RequiredAccess* is specified by using the following system-defined constants:
+Indicates the type of access that a caller must request when opening the file object that represents the device (see [**IRP\_MJ\_CREATE**](./irp-mj-create.md)). The I/O manager will create IRPs and call the driver with a particular I/O control code only if the caller has requested the specified access rights. *RequiredAccess* is specified by using the following system-defined constants:
 
 <a href="" id="file-any-access"></a>FILE\_ANY\_ACCESS  
 The I/O manager sends the IRP for any caller that has a handle to the file object that represents the target device object.
@@ -96,11 +92,11 @@ Other system-defined I/O control codes require the caller to have read access ri
         FILE_READ_DATA | FILE_WRITE_DATA)
 ```
 
-**Note**   Before specifying FILE\_ANY\_ACCESS for a new IOCTL code, you must be absolutely certain that allowing unrestricted access to your device does not create a possible path for malicious users to compromise the system.
+> [!NOTE]
+> Before specifying FILE\_ANY\_ACCESS for a new IOCTL code, you must be absolutely certain that allowing unrestricted access to your device does not create a possible path for malicious users to compromise the system.
 
- 
 
-Drivers can use [**IoValidateDeviceIoControlAccess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) to perform stricter access checking than that provided by an IOCTL's *RequiredAccess* bits.
+Drivers can use [**IoValidateDeviceIoControlAccess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) to perform stricter access checking than that provided by an IOCTL's *RequiredAccess* bits.
 
 ## Other useful macros
 
@@ -115,9 +111,4 @@ The following macros are useful for extracting the 16-bit *DeviceType* and 2-bit
 These macros are defined in Wdm.h and Ntddk.h.
 
  
-
- 
-
-
-
 

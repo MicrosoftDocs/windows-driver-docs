@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_STRING
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_STRING property type represents the base-data-type identifier that indicates that the data type is a NULL-terminated Unicode string.
-ms.assetid: b578fa1f-b55d-4ad2-bdc4-a796b5d7b811
 keywords: ["DEVPROP_TYPE_STRING Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_STRING property type represents the base-data-type identifier that indicates that the data type is a NULL-terminated Unicode string.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_STRING can be combined only with the [**DEVPROP_TYPEMOD_LIST**](devprop-typemod-list.md) property-data-type modifier.
 
@@ -33,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_STRING, call the correspo
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

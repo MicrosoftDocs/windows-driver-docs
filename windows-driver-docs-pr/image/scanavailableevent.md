@@ -1,7 +1,6 @@
 ---
 title: ScanAvailableEvent element
 description: The required ScanAvailableEvent element informs a client that a scan device to which the client is subscribed is ready to scan a job.
-ms.assetid: 82ebfa36-60df-44dd-a928-e751deeea5b0
 keywords: ["ScanAvailableEvent element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScanAvailableEvent** element informs a client that a scan device to which the client is subscribed is ready to scan a job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanAvailableEvent>
@@ -27,8 +25,7 @@ Usage
 </wscn:ScanAvailableEvent>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -59,8 +56,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service sends a **ScanAvailableEvent** element to a registered client when a user has selected a scan destination and initiated a scan at the scan device.
 
@@ -72,8 +68,7 @@ If the WSD Scan Service accepts the client's request to create a subscription, t
 
 The **&lt;wse:Subscribe&gt;** and **&lt;wse:SubscribeResponse&gt;** elements are described in the specification.
 
-Examples
---------
+## Examples
 
 The following code example shows how a client subscribes to receive ScanAvailableEvent events from the WSD Scan Service.
 

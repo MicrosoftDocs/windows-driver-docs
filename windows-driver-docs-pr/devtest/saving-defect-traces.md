@@ -1,7 +1,6 @@
 ---
 title: Saving Defect Traces
 description: Saving Defect Traces in Static Driver Verifier
-ms.assetid: 6d54a532-75ff-4226-86a7-cdc2046b0b5b
 keywords:
 - Static Driver Verifier WDK , Static Driver Verifier Report
 - StaticDV WDK , Static Driver Verifier Report
@@ -23,7 +22,7 @@ The Static Driver Verifier Defect Viewer has functionality that allows you to sa
 
 To save a trace, select "Save as..." from the file menu, or press Ctrl-S.  
 
-![screen shot of the defect viewer window, showing the location of the save functionality](images/sdv-savedefecttrace.png)
+![screen shot of the defect viewer window, showing the location of the save functionality.](images/sdv-savedefecttrace.png)
 
 Then specify a folder where the trace folder ("sdvdefect") will be placed.
 

@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting Specific WMI Problems
 description: Troubleshooting Specific WMI Problems
-ms.assetid: 966191e7-aec4-4eff-b975-99a6d3eb8d02
 keywords: ["WMI WDK kernel , troubleshooting", "troubleshooting WMI problems WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 1.  Use [wmimofck](using-wmimofck-exe.md)driver.bmf to check if the binary MOF file format is correct. Additional error messages may be found in mofcomp.log.
 
-2.  Check the [system event log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-irps-and-the-system-event-log-kg) to see if the driver is returning a malformed [**WMIREGINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow) data structure in response to the registration request.
+2.  Check the [system event log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-irps-and-the-system-event-log-kg) to see if the driver is returning a malformed [**WMIREGINFO**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow) data structure in response to the registration request.
 
 3.  Check that the driver is returning the correct values for **RegistryPath** and **MofResourceName** within the **WMIREGINFO** structure.
 
@@ -49,28 +48,23 @@ ms.localizationpriority: medium
 
 6. If Wbemtest returns an error, click the **More Information** button and check the **Description** property for a description of the error.
 
-7. For methods, check that your driver supports handling the [**IRP\_MN\_QUERY\_ALL\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-all-data) and [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-single-instance) requests for the method's GUID. WMI will always perform one of those two requests before executing a method.
+7. For methods, check that your driver supports handling the [**IRP\_MN\_QUERY\_ALL\_DATA**](./irp-mn-query-all-data.md) and [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](./irp-mn-query-single-instance.md) requests for the method's GUID. WMI will always perform one of those two requests before executing a method.
 
 ### Driver's WMI Events Are Not Being Received
 
-1.  Check the [system event log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-irps-and-the-system-event-log-kg) for errors. For example, if the driver specifies a static event name when calling [**IoWMIWriteEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent) but the driver did not register any static event names, this would produce an entry in the system event log.
+1.  Check the [system event log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-irps-and-the-system-event-log-kg) for errors. For example, if the driver specifies a static event name when calling [**IoWMIWriteEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent) but the driver did not register any static event names, this would produce an entry in the system event log.
 
 2.  Check the [WMI WDM provider log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-wdm-provider-log-kg) for errors.
 
-3.  If the driver is sending an event reference, the driver should receive an [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-single-instance) request immediately after sending the event reference. If the driver does not receive the IRP, the [**WNODE\_EVENT\_REFERENCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_event_reference) structure may have been malformed. If the driver receives the IRP, it should be completing it with status STATUS\_SUCCESS.
+3.  If the driver is sending an event reference, the driver should receive an [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](./irp-mn-query-single-instance.md) request immediately after sending the event reference. If the driver does not receive the IRP, the [**WNODE\_EVENT\_REFERENCE**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_event_reference) structure may have been malformed. If the driver receives the IRP, it should be completing it with status STATUS\_SUCCESS.
 
-4.  If the driver uses [**IoWMIWriteEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent) to send the event or event reference, make sure the event structure (either [**WNODE\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) or **WNODE\_EVENT\_REFERENCE**) is filled out correctly. In particular, if the event GUID is registered for static instance names, make sure that the correct instance index and provider ID are provided. If the event GUID is registered for dynamic instance names, make sure the instance name is included when the event is sent. If using the **WNODE\_EVENT\_REFERENCE** structure to specify the event, check that **Wnode.Guid** matches **TargetGuid**.
+4.  If the driver uses [**IoWMIWriteEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent) to send the event or event reference, make sure the event structure (either [**WNODE\_SINGLE\_INSTANCE**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) or **WNODE\_EVENT\_REFERENCE**) is filled out correctly. In particular, if the event GUID is registered for static instance names, make sure that the correct instance index and provider ID are provided. If the event GUID is registered for dynamic instance names, make sure the instance name is included when the event is sent. If using the **WNODE\_EVENT\_REFERENCE** structure to specify the event, check that **Wnode.Guid** matches **TargetGuid**.
 
-5.  If the driver uses [**WmiFireEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmifireevent) to send the event, make sure the correct value is passed for the *Guid* and *InstanceIndex* parameters.
+5.  If the driver uses [**WmiFireEvent**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmifireevent) to send the event, make sure the correct value is passed for the *Guid* and *InstanceIndex* parameters.
 
 ### Changes in Security Settings for WMI Requests Do Not Take Effect
 
--   Unload and reload the WMI WDM Provider. For WMI data blocks registered with the WMIREG\_FLAG\_EXPENSIVE flag, the provider keeps a handle open to the data block as long as there are consumers for that block. The new security settings will not take effect until the provider closes the handle. Unloading and reloading the provider makes sure the handle has been closed. (For more information about the WMIREG\_FLAG\_EXPENSIVE flag, see [**WMIREGGUID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw).)
+-   Unload and reload the WMI WDM Provider. For WMI data blocks registered with the WMIREG\_FLAG\_EXPENSIVE flag, the provider keeps a handle open to the data block as long as there are consumers for that block. The new security settings will not take effect until the provider closes the handle. Unloading and reloading the provider makes sure the handle has been closed. (For more information about the WMIREG\_FLAG\_EXPENSIVE flag, see [**WMIREGGUID**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw).)
 
  
-
- 
-
-
-
 

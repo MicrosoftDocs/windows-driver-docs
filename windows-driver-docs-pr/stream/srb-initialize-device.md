@@ -1,7 +1,6 @@
 ---
 title: SRB\_INITIALIZE\_DEVICE
 description: SRB\_INITIALIZE\_DEVICE
-ms.assetid: a4e35253-43d8-4d11-8a5b-72a9863f6677
 keywords: ["SRB_INITIALIZE_DEVICE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -36,13 +35,7 @@ Indicates that the supplied configuration information was invalid.
 
 ### Comments
 
-The class driver passes a pointer to a PORT\_CONFIGURATION\_INFORMATION structure in *pSrb*-&gt;**CommandData.ConfigInfo**. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure. The class driver fills out most fields in *pSrb*-&gt;**CommandData.ConfigInfo** with information that it gets about the device from the operating system. Under most circumstances, the minidriver only needs to fill in the **StreamDescriptorSize** member of **ConfigInfo** with the size of its [**HW\_STREAM\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_descriptor) structure.
+The class driver passes a pointer to a PORT\_CONFIGURATION\_INFORMATION structure in *pSrb*-&gt;**CommandData.ConfigInfo**. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure. The class driver fills out most fields in *pSrb*-&gt;**CommandData.ConfigInfo** with information that it gets about the device from the operating system. Under most circumstances, the minidriver only needs to fill in the **StreamDescriptorSize** member of **ConfigInfo** with the size of its [**HW\_STREAM\_DESCRIPTOR**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_descriptor) structure.
 
  
-
- 
-
-
-
-
 

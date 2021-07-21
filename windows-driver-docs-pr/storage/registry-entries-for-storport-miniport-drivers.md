@@ -1,7 +1,6 @@
 ---
 title: Registry Entries for StorPort Miniport Drivers
 description: StorPort defines a set of registry entries to configure the behavior of StorPort and miniport operations.
-ms.assetid: 543EC6A4-113C-4525-8063-28854B50760E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,7 +42,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 </tr>
 <tr class="odd">
 <td align="left">Description</td>
-<td align="left"><p>Storport retrieves this registry data, and passes the buffer to the miniport as <em>Parameter</em> when it calls the miniport’s <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> routine.</p></td>
+<td align="left"><p>Storport retrieves this registry data, and passes the buffer to the miniport as <em>Parameter</em> when it calls the miniport’s <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> routine.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Applies</td>
@@ -812,11 +811,4 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 </table>
 
  
-
- 
-
- 
-
-
-
 

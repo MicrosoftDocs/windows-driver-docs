@@ -1,7 +1,6 @@
 ---
 title: Audio Drivers Event Sets
-description: Audio Drivers Event Sets
-ms.assetid: 9e800f71-9c90-4084-b879-32300e6706fc
+description: Learn about audio drivers event sets, such as 'KSEVENTSETID\_AudioControlChange' and 'KSEVENTSETID\_LoopedStreaming'.
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

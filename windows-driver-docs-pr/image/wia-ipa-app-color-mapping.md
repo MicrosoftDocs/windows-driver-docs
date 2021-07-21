@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_APP\_COLOR\_MAPPING
 description: The WIA\_IPA\_APP\_COLOR\_MAPPING property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: abf0888b-7c9a-4cd4-9227-3a065d7b732b
 keywords: ["WIA_IPA_APP_COLOR_MAPPING Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: Erase NVM Image (Function Index 19)
 description: This function erases the backup image saved in the non-volatile memory module.
-ms.assetid: D2856D56-413F-4444-9CDF-C42ACA3CFBA0
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function erases the backup image saved in the non-volatile memory module.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 
@@ -55,8 +54,8 @@ None.
 
  
 
-&gt; \[!Note\]   
-&gt;This is a synchronous function. It returns only when the erase operation has finished or timed out. If the operation takes longer than the timeout defined in \**ERASE\_TIMEOUT0* (0, 0x1E) and \**ERASE\_TIMEOUT1* (0, 0x1F), the platform shall abort this function before it returns.
+> [!NOTE]
+> This is a synchronous function. It returns only when the erase operation has finished or timed out. If the operation takes longer than the timeout defined in \**ERASE\_TIMEOUT0* (0, 0x1E) and \**ERASE\_TIMEOUT1* (0, 0x1F), the platform shall abort this function before it returns.
 
  
 

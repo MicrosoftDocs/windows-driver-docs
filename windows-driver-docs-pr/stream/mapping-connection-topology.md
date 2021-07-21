@@ -1,7 +1,6 @@
 ---
 title: Mapping Connection Topology
 description: Mapping Connection Topology
-ms.assetid: f11ffc48-a117-4b75-bc19-7a3762e6ba19
 keywords:
 - method sets WDK BDA , mapping connection topology
 - property sets WDK BDA , mapping connection topology
@@ -19,15 +18,15 @@ ms.localizationpriority: medium
 
 
 
-In order for the BDA support library to provide properties and methods to applications in Ring 3 on behalf of a BDA minidriver, the BDA minidriver must provide a mapping of its connection topology to the BDA support library. The BDA minidriver provides this mapping in an array of [**BDA\_TEMPLATE\_CONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_template_connection) structures. The BDA minidriver passes this BDA\_TEMPLATE\_CONNECTION array in an array of [**KSTOPOLOGY\_CONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection) structures when it calls the [**BdaCreateFilterFactory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacreatefilterfactory) support function. See [Starting a BDA Minidriver](starting-a-bda-minidriver.md) for more information. This array provides a representation of all the possible connections between node and pin types that can be made within a filter or between a filter and adjoining filters.
+In order for the BDA support library to provide properties and methods to applications in Ring 3 on behalf of a BDA minidriver, the BDA minidriver must provide a mapping of its connection topology to the BDA support library. The BDA minidriver provides this mapping in an array of [**BDA\_TEMPLATE\_CONNECTION**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_template_connection) structures. The BDA minidriver passes this BDA\_TEMPLATE\_CONNECTION array in an array of [**KSTOPOLOGY\_CONNECTION**](/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection) structures when it calls the [**BdaCreateFilterFactory**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacreatefilterfactory) support function. See [Starting a BDA Minidriver](starting-a-bda-minidriver.md) for more information. This array provides a representation of all the possible connections between node and pin types that can be made within a filter or between a filter and adjoining filters.
 
-The network provider filter can subsequently make a KSPROPERTY\_BDA\_TEMPLATE\_CONNECTIONS property request of the [KSPROPSETID\_BdaTopology](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-bdatopology) property set on a filter instance of the BDA minidriver to retrieve the minidriver's connection topology. The BDA minidriver in turn calls the [**BdaPropertyTemplateConnections**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertytemplateconnections) support function, which returns the list of the filter's template connections (BDA\_TEMPLATE\_CONNECTION structures) in an array of KSTOPOLOGY\_CONNECTION structures. The members of a BDA\_TEMPLATE\_CONNECTION structure identify the following pairs of node and pin types of a connection:
+The network provider filter can subsequently make a KSPROPERTY\_BDA\_TEMPLATE\_CONNECTIONS property request of the [KSPROPSETID\_BdaTopology](./kspropsetid-bdatopology.md) property set on a filter instance of the BDA minidriver to retrieve the minidriver's connection topology. The BDA minidriver in turn calls the [**BdaPropertyTemplateConnections**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertytemplateconnections) support function, which returns the list of the filter's template connections (BDA\_TEMPLATE\_CONNECTION structures) in an array of KSTOPOLOGY\_CONNECTION structures. The members of a BDA\_TEMPLATE\_CONNECTION structure identify the following pairs of node and pin types of a connection:
 
 -   node and pin types where the connection begins
 
 -   node and pin types where the connection ends
 
-Setting the node type to a value of −1 indicates that the connection begins or ends at a pin of either an upstream or downstream filter respectively. Otherwise, the value of the node type corresponds to the index of the element in the zero-based array of internal node types. This array is an array of [**KSNODE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksnode_descriptor) structures. The value of the pin type corresponds to the index of the element in the zero-based array of pin types that are available in the template filter descriptor for the BDA minidriver. This array is an array of [**KSPIN\_DESCRIPTOR\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_descriptor_ex) structures.
+Setting the node type to a value of −1 indicates that the connection begins or ends at a pin of either an upstream or downstream filter respectively. Otherwise, the value of the node type corresponds to the index of the element in the zero-based array of internal node types. This array is an array of [**KSNODE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksnode_descriptor) structures. The value of the pin type corresponds to the index of the element in the zero-based array of pin types that are available in the template filter descriptor for the BDA minidriver. This array is an array of [**KSPIN\_DESCRIPTOR\_EX**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_descriptor_ex) structures.
 
 The following code snippet shows example arrays of node types and pin types that are available in the template filter descriptor for the BDA minidriver:
 
@@ -155,9 +154,4 @@ ULONG   AntennaTransportJoints[] =
 ```
 
  
-
- 
-
-
-
 

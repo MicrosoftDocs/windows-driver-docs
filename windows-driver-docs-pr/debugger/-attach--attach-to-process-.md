@@ -1,7 +1,6 @@
 ---
 title: .attach (Attach to Process)
 description: The .attach command attaches to a new target application.
-ms.assetid: e637c7eb-9c3c-4501-b972-a9293a6da52a
 keywords: ["Attach to Process (.attach) command", "process, Attach to Process (.attach) command", ".attach (Attach to Process) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -78,8 +77,7 @@ Specifies the process ID of the new target application.
 
  
 
-Remarks
--------
+## Remarks
 
 This command can be used when CDB is dormant, or if it is already debugging one or more processes. It cannot be used when WinDbg is dormant.
 

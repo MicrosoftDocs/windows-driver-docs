@@ -1,7 +1,6 @@
 ---
 title: Subdevice Creation
 description: Subdevice Creation
-ms.assetid: e4ba1209-adc6-48c3-9633-247e9e3849bc
 keywords:
 - audio adapters WDK , subdevices
 - adapter drivers WDK audio , subdevices
@@ -51,7 +50,7 @@ The term *subdevice* is used to describe the binding of the four components that
 
  
 
-A subdevice's IMiniport*Xxx* and IPort*Xxx* interfaces inherit from base interfaces [IMiniport](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport) and [IPort](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iport), respectively.
+A subdevice's IMiniport*Xxx* and IPort*Xxx* interfaces inherit from base interfaces [IMiniport](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport) and [IPort](/windows-hardware/drivers/ddi/portcls/nn-portcls-iport), respectively.
 
 The PortCls system driver does not distinguish between the port driver and the miniport driver. It simply requires an object, such as the port object, with an interface that can handle system-generated requests.
 
@@ -118,12 +117,7 @@ The following code example shows how the adapter driver performs these actions:
   }
 ```
 
-For information about the PortCls function calls in the preceding code example, see [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport), [**PcNewMiniport**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport), and [**PcRegisterSubdevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice).
+For information about the PortCls function calls in the preceding code example, see [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport), [**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport), and [**PcRegisterSubdevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice).
 
  
-
- 
-
-
-
 

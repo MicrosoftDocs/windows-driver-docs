@@ -1,7 +1,6 @@
 ---
 title: CancelJobRequest element
 description: The required CancelJobRequest operation enables a client to cancel a scan job.
-ms.assetid: 781fae32-2827-48d8-8aed-7f437326919d
 keywords: ["CancelJobRequest element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **CancelJobRequest** operation enables a client to cancel a scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CancelJobRequest>
@@ -27,13 +25,11 @@ Usage
 </wscn:CancelJobRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -61,8 +57,7 @@ None
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 [**JobId**](jobid.md)
 

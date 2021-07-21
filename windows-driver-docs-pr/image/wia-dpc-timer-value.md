@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_TIMER\_VALUE
 description: The WIA\_DPC\_TIMER\_VALUE property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 9e4e4623-7b72-4ab7-983c-c43148cbe272
 keywords: ["WIA_DPC_TIMER_VALUE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

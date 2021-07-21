@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_VERTICAL\_BED\_SIZE
 description: The WIA\_DPS\_VERTICAL\_BED\_SIZE property contains the physical vertical dimensions of a scanner's flatbed, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
-ms.assetid: c4e02364-4785-45f4-8e43-056582bb6d1a
 keywords: ["WIA_DPS_VERTICAL_BED_SIZE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

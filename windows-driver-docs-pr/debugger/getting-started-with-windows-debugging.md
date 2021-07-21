@@ -1,9 +1,8 @@
 ---
 title: Getting Started with Windows Debugging
 description: This section covers how to get started with Windows Debugging. If your goal is to use the debugger to analyze a crash dump, see Crash dump analysis using the Windows debuggers (WinDbg).
-ms.assetid: 4981928E-A33D-4F60-AAA0-124C360B7E03
 ms.date: 08/23/2018
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # Getting Started with Windows Debugging
@@ -19,7 +18,7 @@ The debugger runs on the *host* system, and the code that you want to debug runs
 
    **Host &lt;--------------------------------------------------&gt; Target**
 
-![host and target pcs connected with a double arrow](images/targethost1.png)
+![host and target pcs connected with a double arrow.](images/targethost1.png)
 
 Because it is common to stop instruction execution on the processor during debugging, two computer systems are typically used. In some situations, you might be able to use a virtual machine as the second system. For example, you might be able to use a virtual PC that is running on the same PC as the code that you need to debug. However, if your code is communicating to low-level hardware, using a virtual PC may not be the best approach. For more information, see [Setting up network debugging of a virtual machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
@@ -86,7 +85,7 @@ There are multiple debugging extensions that provide parsing of domain-specific 
 
 ## 12. Learn about related Windows internals
 
-This documentation assumes a knowledge of Windows internals. To learn more about Windows internals (including memory usage, context, threads, and processes), review additional resources, such as [*Windows Internals*](https://docs.microsoft.com/sysinternals/learn/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
+This documentation assumes a knowledge of Windows internals. To learn more about Windows internals (including memory usage, context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/resources/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
 
 ## 13. Review additional debugging resources
 

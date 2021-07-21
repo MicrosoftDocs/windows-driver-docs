@@ -1,5 +1,5 @@
 ---
-Description: Driver Capabilities
+description: Driver Capabilities
 title: Driver Capabilities
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -12,19 +12,28 @@ The *WpdCapabilities.cpp* and *WpdCapabilities.h* files contain the command hand
 
 When a Windows-based application calls one of the methods in the **IPortableDeviceCapabilities** interface, this call, in turn, triggers one of eight command handlers in the **WpdCapabilities** class. The following table identifies the mapping of **IPortableDeviceCapabilities** methods to **WpdCapabilities** command handlers.
 
-|                                                               |                                    |
-|---------------------------------------------------------------|------------------------------------|
-| **IPortableDeviceCapabilities Method**                        | **WpdCapabilities Event Handler**  |
-| **IPortableDeviceCapabilities::GetCommandOptions**            | **OnGetCommandOptions**            |
-| **IPortableDeviceCapabilities::GetFixedPropertyAttributes**   | **OnGetFixedPropertyAttributes**   |
-| **IPortableDeviceCapabilities::GetFunctionalCategories**      | **OnGetFunctionalCategories**      |
-| **IPortableDeviceCapabilities::GetFunctionalObjects**         | **OnGetFunctionalObjects**         |
-| **IPortableDeviceCapabilities::GetSupportedCommands**         | **OnGetSupportedCommands**         |
-| **IPortableDeviceCapabilities::GetSupportedContentTypes**     | **OnGetSupportedContentTypes**     |
-| **IPortableDeviceCapabilities::GetSupportedFormatProperties** | **OnGetSupportedFormatProperties** |
-| **IPortableDeviceCapabilities::GetSupportedFormats**          | **OnGetSupportedFormats**          |
-| **IPortableDeviceCapabilities::GetSupportedEvents**           | **OnGetSupportedEvents**           |
-| **IPortableDeviceCapabilities::GetEventOptions**              | **OnGetEventOptions**              |
+****IPortableDeviceCapabilities Method****: **WpdCapabilities Event Handler**
+
+****IPortableDeviceCapabilities::GetCommandOptions****: **OnGetCommandOptions**
+
+****IPortableDeviceCapabilities::GetFixedPropertyAttributes****: **OnGetFixedPropertyAttributes**
+
+****IPortableDeviceCapabilities::GetFunctionalCategories****: **OnGetFunctionalCategories**
+
+****IPortableDeviceCapabilities::GetFunctionalObjects****: **OnGetFunctionalObjects**
+
+****IPortableDeviceCapabilities::GetSupportedCommands****: **OnGetSupportedCommands**
+
+****IPortableDeviceCapabilities::GetSupportedContentTypes****: **OnGetSupportedContentTypes**
+
+****IPortableDeviceCapabilities::GetSupportedFormatProperties****: **OnGetSupportedFormatProperties**
+
+****IPortableDeviceCapabilities::GetSupportedFormats****: **OnGetSupportedFormats**
+
+****IPortableDeviceCapabilities::GetSupportedEvents****: **OnGetSupportedEvents**
+
+****IPortableDeviceCapabilities::GetEventOptions****: **OnGetEventOptions**
+
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: gu (Go Up)
 description: The gu command causes the target to execute until the current function is complete.
-ms.assetid: 10022292-92a4-4663-b277-26aa3c0d73a7
 keywords: ["gu (Go Up) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,8 +64,7 @@ gu
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **gu** command executes the target until the current function call returns.
 

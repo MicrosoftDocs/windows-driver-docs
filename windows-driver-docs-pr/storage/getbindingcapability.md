@@ -1,7 +1,6 @@
 ---
 title: GetBindingCapability function
 description: The GetBindingCapability method retrieves the binding capabilities for the indicated port.
-ms.assetid: 8db1a3cc-5b79-4de9-a4cd-c75ac72c3785
 keywords: ["GetBindingCapability function Storage Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetBindingCapability** method retrieves the binding capabilities for the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetBindingCapability(
@@ -32,30 +30,26 @@ void GetBindingCapability(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN\[8\]*   
 A worldwide name that indicates the port whose persistent bindings will be retrieved.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetBindingCapability\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingcapability_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetBindingCapability\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingcapability_out) structure.
 
 *BindType*   
 Indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the [HBA\_BIND\_TYPE](hba-bind-type.md) WMI class qualifier.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAFCPInfo WMI Class](msfc-hbafcpinfo-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +75,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**GetBindingCapability\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingcapability_in)
+[**GetBindingCapability\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingcapability_in)
 
-[**GetBindingCapability\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingcapability_out)
-
- 
+[**GetBindingCapability\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingcapability_out)
 
  
-
-
-
-
-
 

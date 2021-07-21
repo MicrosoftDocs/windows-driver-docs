@@ -1,5 +1,5 @@
 ---
-Description: Support for capability commands (WpdServiceSampleDriver sample)
+description: Support for capability commands (WpdServiceSampleDriver sample)
 title: Support for capability commands (WpdServiceSampleDriver sample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium

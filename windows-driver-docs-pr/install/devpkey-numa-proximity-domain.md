@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Numa_Proximity_Domain
 description: DEVPKEY_Numa_Proximity_Domain
-ms.assetid: 384e167b-cb08-4264-a7b1-3cea2dda0d46
 keywords: ["DEVPKEY_Numa_Proximity_Domain Device and Driver Installation"]
 topic_type:
 - apiref
@@ -47,8 +46,7 @@ The DEVPKEY_Numa_Proximity_Domain device property represents the proximity domai
 
  
 
-Remarks
--------
+## Remarks
 
 The value DEVPKEY_Numa_Proximity_Domain is a numeric value that represents a domain ID.
 
@@ -56,14 +54,13 @@ Typically, the operating system sets the value of DEVPKEY_Numa_Proximity_Domain 
 
 You can retrieve the value of DEVPKEY_Numa_Proximity_Domain by calling **IoSetDevicePropertyData** or **IoGetDevicePropertyData** in a device driver.
 
-You can also call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Numa_Proximity_Domain.
+You can also call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Numa_Proximity_Domain.
 
 The value of this property is owned by Windows and should be treated as read-only by drivers and applications.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,10 +80,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

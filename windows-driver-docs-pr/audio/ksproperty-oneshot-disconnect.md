@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_ONESHOT\_DISCONNECT
 description: The KSPROPERTY\_ONESHOT\_DISCONNECT property is used to prompt the audio driver to disconnect from the Bluetooth audio device.
-ms.assetid: B79B3B1E-A34A-4FF9-852A-938C0D5202E9
 keywords: ["KSPROPERTY_ONESHOT_DISCONNECT Audio Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The **KSPROPERTY\_ONESHOT\_DISCONNECT** property is used to prompt the audio dri
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>NULL</p></td>
 </tr>
 </tbody>
@@ -58,18 +57,16 @@ No property value is sent with this property request.
 
 The **KSPROPERTY\_ONESHOT\_DISCONNECT** property returns STATUS\_SUCCESS if the request is successful.
 
-&gt; \[!Note\]
-&gt;   A successful request means that the driver made an attempt to disconnect from the Bluetooth audio device, but does not necessarily mean that the attempt was successful.
+> [!NOTE]
+> A successful request means that the driver made an attempt to disconnect from the Bluetooth audio device, but does not necessarily mean that the attempt was successful.
 
  
 
-Remarks
--------
+## Remarks
 
 You can implement the [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md) pin property in your driver. This implementation allows you to check the connection status of the endpoint after you make a **KSPROPERTY\_ONESHOT\_DISCONNECT** property request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,16 +88,6 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md)
-
- 
-
- 
-
-
-
-
-
-

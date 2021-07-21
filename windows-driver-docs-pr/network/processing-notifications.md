@@ -1,7 +1,6 @@
 ---
 title: Processing Notifications
 description: Processing Notifications
-ms.assetid: f3e97d23-b463-4c3b-822d-b911f6fbe00e
 keywords:
 - notify objects WDK networking , processing notifications
 - network notify objects WDK , processing notifications
@@ -30,18 +29,12 @@ To process notifications, a notify object performs the following general sequenc
 
 2.  After the network configuration subsystem sends notifications to the notify object about networking changes that the notify object previously requested, the notify object modifies its internal data structures to keep track of those changes.
 
-3.  When the network configuration subsystem is done sending notifications to the notify object, the subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547727(v=vs.85)) method to commit the changes to the system registry.
+3.  When the network configuration subsystem is done sending notifications to the notify object, the subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](/previous-versions/windows/hardware/network/ff547727(v=vs.85)) method to commit the changes to the system registry.
 
-**Note**  The notifications mentioned in the preceding sequence can also include a call to the notify object's [**INetCfgComponentControl::CancelChanges**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547728(v=vs.85)) method in which case the notify object should revert back to the original network configuration.
+**Note**  The notifications mentioned in the preceding sequence can also include a call to the notify object's [**INetCfgComponentControl::CancelChanges**](/previous-versions/windows/hardware/network/ff547728(v=vs.85)) method in which case the notify object should revert back to the original network configuration.
 Before modifying the original network configuration, the notify object should make two copies of the configuration. The notify object can modify one copy to include changes and leave the other copy in the original condition. The notify object can use the unmodified copy when reverting back to the original network configuration.
 
  
 
  
-
- 
-
-
-
-
 

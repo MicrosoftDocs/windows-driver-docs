@@ -1,7 +1,6 @@
 ---
 title: Create the LocaleInfo.xml Submission File
 description: Create the LocaleInfo.xml Submission File
-ms.assetid: 2b16b045-4d34-418c-8f68-7f688adf8e7e
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -18,61 +17,25 @@ The data in the LocaleInfo.xml document is formatted based on the LocaleInfo XML
 > [!NOTE]
 > The XML document must be saved by using UTF-8 encoding.
 
-For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](https://go.microsoft.com/fwlink/?LinkId=253559).
+For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85)).
 
-### <span id="LocaleInfo_XML_Schema_NameSpace"></span><span id="localeinfo_xml_schema_namespace"></span><span id="LOCALEINFO_XML_SCHEMA_NAMESPACE"></span>LocaleInfo XML Schema NameSpace
+### LocaleInfo XML Schema NameSpace
 
 The following is the namespace of the LocaleInfo XML schema: `http://schemas.microsoft.com/Windows/2010/08/MetadataSubmission/LocaleInfo`
 
-### <span id="Overview_of_LocaleInfo_XML_Elements_Attributes"></span><span id="overview_of_localeinfo_xml_elements_attributes"></span><span id="OVERVIEW_OF_LOCALEINFO_XML_ELEMENTS_ATTRIBUTES"></span>Overview of LocaleInfo XML Elements/Attributes
+### Overview of LocaleInfo XML Elements/Attributes
 
 The following table describes the metadata elements and attributes of the LocaleInfo XML schema.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element/Attributes</th>
-<th>Element/Attribute type</th>
-<th>Required/ optional</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>MultipleLocale</p></td>
-<td><p>xs:boolean</p></td>
-<td><p>Optional</p></td>
-</tr>
-<tr class="even">
-<td><p>LocaleDeclaredInPackageInfo</p></td>
-<td><p>tns:LocaleDeclaredInPackageInfoType</p></td>
-<td><p>Optional</p></td>
-</tr>
-<tr class="odd">
-<td><p>default</p></td>
-<td><p>xs:boolean</p></td>
-<td><p>Required</p></td>
-</tr>
-<tr class="even">
-<td><p>SupportedLocaleList</p></td>
-<td><p>tns:SupportedLocaleListType</p></td>
-<td><p>Optional</p></td>
-</tr>
-<tr class="odd">
-<td><p>Locale</p></td>
-<td><p>xs:string</p></td>
-<td><p>Optional</p></td>
-</tr>
-</tbody>
-</table>
+|Element/Attributes|Element/Attribute type|Required/ optional|
+|----|----|----|
+|MultipleLocale|xs:boolean|Optional|
+|LocaleDeclaredInPackageInfo|tns:LocaleDeclaredInPackageInfoType|Optional|
+|default|xs:boolean|Required|
+|SupportedLocaleList|tns:SupportedLocaleListType|Optional|
+|Locale|xs:string|Optional|
 
- 
-
-### <span id="LocaleInfo_XML_Schema_Definition"></span><span id="localeinfo_xml_schema_definition"></span><span id="LOCALEINFO_XML_SCHEMA_DEFINITION"></span>LocaleInfo XML Schema Definition
+### LocaleInfo XML Schema Definition
 
 The following is the LocaleInfo XML schema definition:
 
@@ -114,16 +77,11 @@ The following is the LocaleInfo XML schema definition:
 The LocaleInfo XML schema defines the following elements and attributes:
 
 - LocaleInfo
-
   - MultipleLocale
-
   - LocaleDeclaredInPackageInfo
-
-      -   default
-
-   -   SupportedLocaleList
-
-       - Locale
+    - default
+  - SupportedLocaleList
+    - Locale
 
 ### MultipleLocale Element
 
@@ -133,11 +91,11 @@ The MultipleLocale element specifies if the device metadata package supports mul
 <xs:element name="MultipleLocale" type="xs:boolean" />
 ```
 
-**Remarks**
+#### Remarks (MultipleLocale element)
 
 The MultipleLocale element must be “true” if more than one locale is supported in the device metadata package. The element can be “true” or “false” if the device metadata package only supports one locale. The value of MultipleLocale must match the value specified in PackageInfo.xml.
 
-### <span id="LocaleDeclaredInPackageInfo_Element"></span><span id="localedeclaredinpackageinfo_element"></span><span id="LOCALEDECLAREDINPACKAGEINFO_ELEMENT"></span>LocaleDeclaredInPackageInfo Element
+### LocaleDeclaredInPackageInfo Element
 
 The LocaleDeclaredInPackageInfo element specifies information about the locale and package attributes declared in the device metadata package. The Partner Center uses this information to properly validate the declared locale metadata in the device metadata package.
 
@@ -153,11 +111,11 @@ The LocaleDeclaredInPackageInfo element specifies information about the locale a
 </xs:complexType>
 ```
 
-**Remarks**
+#### Remarks (LocaleDeclaredInPackageInfo element)
 
 The LocaleDeclaredInPackageInfo element must match the locale value specified in PackageInfo.xml.
 
-### <span id="default_Attribute"></span><span id="default_attribute"></span><span id="DEFAULT_ATTRIBUTE"></span>default Attribute
+### default Attribute
 
 The default attribute specifies if the device metadata package is a default package, as indicated in PackageInfo.xml.
 
@@ -165,11 +123,11 @@ The default attribute specifies if the device metadata package is a default pack
 <xs:attribute name="default" type="xs:boolean" use="required" />
 ```
 
-**Remarks**
+#### Remarks (default element)
 
 The default element must match the default value specified in PackageInfo.xml.
 
-### <span id="SupportedLocaleList_Element"></span><span id="supportedlocalelist_element"></span><span id="SUPPORTEDLOCALELIST_ELEMENT"></span>SupportedLocaleList Element
+### SupportedLocaleList Element
 
 The SupportedLocaleList element specifies which other locales are supported in the device metadata package. The Partner Center uses this information to properly validate the additional locale metadata in the device metadata package.
 
@@ -184,12 +142,11 @@ The SupportedLocaleList element specifies which other locales are supported in t
 </xs:complexType>
 ```
 
-### <span id="Locale_Element"></span><span id="locale_element"></span><span id="LOCALE_ELEMENT"></span>Locale Element
+### Locale Element
 
 The Locale element specifies an extra locale that is supported in the device metadata package. See SupportedLocaleList Element for more information about how the Partner Center uses this value.
 
-## <span id="LocaleInfo_XML_Example"></span><span id="localeinfo_xml_example"></span><span id="LOCALEINFO_XML_EXAMPLE"></span>LocaleInfo XML Example
-
+## LocaleInfo XML Example
 
 The following XML document uses the LocaleInfo XML schema to specify the components of LocaleInfo information.
 
@@ -215,12 +172,3 @@ This example applies to a device metadata package that supports the en-US, ja-JP
   
 </LocaleInfo>
 ```
-
- 
-
- 
-
-
-
-
-

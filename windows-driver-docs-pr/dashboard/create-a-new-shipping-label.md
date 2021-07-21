@@ -1,8 +1,6 @@
 ---
 title: Create a new shipping label
 description: This method shows how to create a new shipping label in the Microsoft Hardware API.
-author: balapv
-ms.author: balapv
 ms.topic: article
 ms.date: 08/21/2018
 ---
@@ -21,7 +19,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| POST | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels` | 
+| POST | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels` | 
 
 The productID and submissionID in the method represent the submission for which the shipping label is to be created.
 
@@ -51,6 +49,7 @@ The following example demonstrates the JSON request body for creating a new ship
     ],
     "isAutoInstallDuringOSUpgrade": true,
     "isAutoInstallOnApplicableSystems": false,
+    "manualAcquisition": false,
     "isDisclosureRestricted": false,
     "publishToWindows10s": true,
     "additionalInfoForMsApproval": {
@@ -83,8 +82,8 @@ The following example demonstrates the JSON request body for creating a new ship
       }
     ],
     "restrictedToAudiences": [
-      "00000000-0000-0000-0000-000000000000",
-      "00000000-0000-0000-0000-000000000001"
+      "00000000-0000-0000-0000-000000000001",
+      "00000000-0000-0000-0000-000000000002"
       ],
     "inServicePublishInfo": {
       "flooring": "RS1",
@@ -101,7 +100,8 @@ For details about the fields in the request, see [ShippingLabel resource](get-sh
 #### Points to remember when creating shipping labels
 
 - When publishing to Windows Update (*destination* is **windowsUpdate**), you must include a [publishingSpecifications](get-shipping-labels.md#publishing-specifications-object) object. For automatic installs (*isAutoInstallDuringOSUpgrade* or *isAutoInstallOnApplicableSystems* is true), you must set  *additionalInfoForMsApproval*.
-- if in the shipping label *isAutoInstallDuringOSUpgrade* or *isAutoInstallOnApplicableSystems* is true, then the driver will be published with "May request user input" set to false.
+- if in the shipping label *isAutoInstallDuringOSUpgrade* or *isAutoInstallOnApplicableSystems* is true, then *manualAcquisition* must be false and the driver will be published with "May request user input" set to false.
+- if in the shipping label *isAutoInstallDuringOSUpgrade* and *isAutoInstallOnApplicableSystems* are false, then *manualAcquisition* must be true and the driver will be published with "May request user input" set to true.
 - When sharing with other partners  (*destination* is **anotherPartner**), you must include the [recipientSpecifications](get-shipping-labels.md#recipient-specifications-object) object.
 
 #### Populating targeting information
@@ -119,7 +119,7 @@ The hardware ID object should contain a valid combination of bundle ID, PNP ID, 
 The following example demonstrates how to create a new product.
 
 ```cpp
-POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels HTTP/1.1
+POST https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
@@ -154,7 +154,8 @@ The following example demonstrates the JSON response body returned by a successf
       "isForUnreleasedHardware": false,
       "hasUiSoftware": false,
       "businessJustification": "This is a business justification"
-    }
+    },
+    "manualAcquisition": false
   },
   "workflowStatus": {
     "currentStep": "preProcessShippingLabel",
@@ -163,12 +164,12 @@ The following example demonstrates the JSON response body returned by a successf
   },
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606997603",
+      "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606997603",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606997603",
+      "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606997603",
       "rel": "update_shippinglabel",
       "method": "PATCH"
     }

@@ -1,7 +1,6 @@
 ---
 title: Virtual Subunit Device Identifiers
 description: Virtual Subunit Device Identifiers
-ms.assetid: c2018560-f9f4-4aaa-b2b2-8ac5195b892f
 keywords:
 - AV/C WDK , identifiers
 - identifiers WDK AV/C

@@ -1,7 +1,6 @@
 ---
 title: Device Object Example for a SCSI HBA
 description: Device Object Example for a SCSI HBA
-ms.assetid: 695ccf9a-a18f-4f1f-bfdc-24fefc2846b4
 keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The following figure shows the device objects that are created for system with a PCI IEEE 1394 controller and a PCI SCSI adapter with a CD-ROM and partitionable disk device attached. Objects for devices attached to the IEEE 1394 controller are shown and described in [Device Object Example for an IEEE 1394 Controller](device-object-example-for-an-ieee-1394-controller.md).
 
-![Device objects that are created for system with a PCI IEEE 1394 controller and a PCI SCSI adapter with a CD-ROM and partitionable disk device attached](images/kg201-2.png)
+![Device objects that are created for system with a PCI IEEE 1394 controller and a PCI SCSI adapter with a CD-ROM and partitionable disk device attached.](images/kg201-2.png)
 
 Device Object Tree for CD-ROM and Disk Devices on a SCSI HBA
 

@@ -1,7 +1,6 @@
 ---
 title: CM_Next_Range
 description: CM_Next_Range
-ms.assetid: 9efe2678-2480-4ebc-b6cf-8cf53db67935
 keywords: ["CM_Next_Range Device and Driver Installation"]
 topic_type:
 - apiref

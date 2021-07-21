@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_PROPERTIES
 description: Clients use KSPROPERTY\_BDA\_NODE\_PROPERTIES to retrieve a list of properties supported on a node.
-ms.assetid: 36d37844-a69b-4f67-bb8f-e5445ba9a2cb
 keywords: ["KSPROPERTY_BDA_NODE_PROPERTIES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_NODE\_PROPERTIES to retrieve a list of properties s
 
  
 
-Remarks
--------
+## Remarks
 
 The list of properties supported by a node is a list of GUIDs.
 
 The network provider will use this property to query the capabilities of each node in the BDA template connection list.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,9 @@ Requirements
 ## See also
 
 
-[**BdaPropertyNodeProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodeproperties)
+[**BdaPropertyNodeProperties**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodeproperties)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
- 
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
-
-
-
-
-
 

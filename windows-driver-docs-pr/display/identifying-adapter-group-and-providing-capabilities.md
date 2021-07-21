@@ -1,7 +1,6 @@
 ---
 title: Identifying Adapter Group and Providing Capabilities
 description: Identifying Adapter Group and Providing Capabilities
-ms.assetid: 44a2ac71-8852-472f-82a2-7bd4d7dffa1a
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , configuring
 - multiple-head hardware WDK DirectX 9.0 , adapters
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_identifying_adapter_group_and_providing_capabilities_gg"></span><span id="DDK_IDENTIFYING_ADAPTER_GROUP_AND_PROVIDING_CAPABILITIES_GG"></span>
 
 
-The DirectX 9.0 runtime sends a **GetDriverInfo2** request using the D3DGDI2\_TYPE\_GETADAPTERGROUP value to a DirectX 9.0 version driver to request the identifier for the group of adapters that make up the driver's multiple-head video card. The driver returns the identifier in the **ulUniqueAdapterGroupId** member of a [**DD\_GETADAPTERGROUPDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_dd_getadaptergroupdata) structure. The driver must provide a unique identifier for the master and all subordinate adapters within a group. The runtime uses this identifier in subsequent operations to determine whether the given adapter is part of a group. This identifier must be unique across drivers, including drivers from other hardware vendors. Therefore, it is recommended to report this identifier as a unique nonzero kernel-mode address that cannot be common with other multiple-head video cards.
+The DirectX 9.0 runtime sends a **GetDriverInfo2** request using the D3DGDI2\_TYPE\_GETADAPTERGROUP value to a DirectX 9.0 version driver to request the identifier for the group of adapters that make up the driver's multiple-head video card. The driver returns the identifier in the **ulUniqueAdapterGroupId** member of a [**DD\_GETADAPTERGROUPDATA**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_dd_getadaptergroupdata) structure. The driver must provide a unique identifier for the master and all subordinate adapters within a group. The runtime uses this identifier in subsequent operations to determine whether the given adapter is part of a group. This identifier must be unique across drivers, including drivers from other hardware vendors. Therefore, it is recommended to report this identifier as a unique nonzero kernel-mode address that cannot be common with other multiple-head video cards.
 
 A DirectX 9.0 version driver indicates how its multiple-head hardware is configured by setting the following members of the D3DCAPS9 structure:
 
@@ -34,10 +33,4 @@ A DirectX 9.0 version driver indicates how its multiple-head hardware is configu
 The driver returns a D3DCAPS9 structure in response to a **GetDriverInfo2** query similarly to how it returns a D3DCAPS8 structure as described in [Reporting DirectX 8.0 Style Direct3D Capabilities](reporting-directx-8-0-style-direct3d-capabilities.md). Support of this query is described in [Supporting GetDriverInfo2](supporting-getdriverinfo2.md).
 
  
-
- 
-
-
-
-
 

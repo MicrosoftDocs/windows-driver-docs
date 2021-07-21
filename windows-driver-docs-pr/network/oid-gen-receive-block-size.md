@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RECEIVE_BLOCK_SIZE
 description: As a query.
-ms.assetid: 92a7a388-4a41-41cf-96e5-a65b5559553d
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RECEIVE_BLOCK_SIZE Network Drivers Starting with Windows Vista
@@ -30,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 The OID\_GEN\_RECEIVE\_BLOCK\_SIZE OID specifies the amount of storage, in bytes, that a single packet occupies in the receive buffer space of a NIC.
 
 The same information can be obtained from the current and maximum *lookahead* size. However, one of these OIDs can be mandatory to verify each other. Also protocol drivers can determine if the underlying driver indicates full-packet receives by comparing the values that driver returns for the [OID\_GEN\_CURRENT\_LOOKAHEAD](oid-gen-current-lookahead.md) and OID\_GEN\_RECEIVE\_BLOCK\_SIZE OIDs.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

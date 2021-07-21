@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_INDICATION_WAKE_PACKET
 description: WDI_TLV_INDICATION_WAKE_PACKET is a TLV that contains a wake packet for NDIS_STATUS_WDI_INDICATION_WAKE_REASON. When the wake reason is WDI_WAKE_REASON_CODE PACKET, the status must include the wake packet encapsulated in a WDI_TLV_INDICATION_WAKE_PACKET.
-ms.assetid: 3C566FED-4594-403F-93D4-1CA6F2F655F9
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INDICATION_WAKE_PACKET Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_INDICATION\_WAKE\_PACKET
 
 
-WDI\_TLV\_INDICATION\_WAKE\_PACKET is a TLV that contains a wake packet for [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-wake-reason). When the wake reason is WDI\_WAKE\_REASON\_CODE PACKET, the status must include the wake packet encapsulated in a WDI\_TLV\_INDICATION\_WAKE\_PACKET.
+WDI\_TLV\_INDICATION\_WAKE\_PACKET is a TLV that contains a wake packet for [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](./ndis-status-wdi-indication-wake-reason.md). When the wake reason is WDI\_WAKE\_REASON\_CODE PACKET, the status must include the wake packet encapsulated in a WDI\_TLV\_INDICATION\_WAKE\_PACKET.
 
 ## TLV Type
 
@@ -32,8 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

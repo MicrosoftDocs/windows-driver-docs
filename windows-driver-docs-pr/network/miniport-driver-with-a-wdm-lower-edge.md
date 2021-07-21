@@ -1,7 +1,6 @@
 ---
 title: Miniport Driver with a WDM Lower Edge
 description: Miniport Driver with a WDM Lower Edge
-ms.assetid: e3acbcfe-b63d-441d-ab5f-26ee54a5d3ec
 keywords:
 - NDIS-WDM miniport drivers WDK networking , about NDIS-WDM miniport drivers
 - NDIS-WDM miniport drivers WDK networking , components
@@ -23,12 +22,12 @@ A miniport driver with a WDM lower edge (an NDIS-WDM miniport driver) follows th
 
 The following diagram shows an NDIS-WDM miniport driver that interfaces with the USB driver stack by using a WDM lower edge.
 
-![diagram illustrating an ndis-wdm miniport driver that interfaces with the usb driver stack by using a wdm lower edge](images/nonndslo.png)
+![diagram illustrating an ndis-wdm miniport driver that interfaces with the usb driver stack by using a wdm lower edge.](images/nonndslo.png)
 
 The following list describes the components that the preceding diagram shows:
 
 <a href="" id="ipx-spx-compatible-and-tcp-ip"></a>IPX/SPX Compatible and TCP/IP  
-[NDIS protocol drivers](ndis-protocol-drivers.md) that transmit packets by using underlying miniport drivers.
+[NDIS protocol drivers](./roadmap-for-developing-ndis-protocol-drivers.md) that transmit packets by using underlying miniport drivers.
 
 <a href="" id="ndis"></a>NDIS  
 The Ndis.sys driver that provides a standard interface between layered network drivers.
@@ -40,16 +39,8 @@ An NDIS-WDM miniport driver that interfaces with the USB driver stack.
 Other vendor-supplied USB client drivers.
 
 <a href="" id="usb-class-interface"></a>USB Class Interface  
-[USB Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)) and [I/O requests](https://docs.microsoft.com/previous-versions/ff537421(v=vs.85)) that USB client drivers can use to interface with the USB driver stack.
+[USB Routines](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)) and [I/O requests](/previous-versions/ff537421(v=vs.85)) that USB client drivers can use to interface with the USB driver stack.
 
 <a href="" id="usb-driver-stack"></a>USB Driver Stack  
-Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
-
- 
-
- 
-
-
-
-
+Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
 

@@ -1,7 +1,6 @@
 ---
 title: Virtual Function Initialization Sequence
 description: Virtual Function Initialization Sequence
-ms.assetid: 352E12EC-FAF0-4566-8632-B6DA97ACCAD9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ A network adapter that supports single root I/O virtualization (SR-IOV) must be 
 
     For more information on this hardware component, see [SR-IOV Virtual Functions (VFs)](sr-iov-virtual-functions--vfs-.md).
 
-The PF miniport driver, which runs in the management operating system of the Hyper-V parent partition, initializes and allocates resources for a VF on the SR-IOV network adapter. After NDIS calls the PF miniport driver’s [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, NDIS and the virtualization stack can issue object identifier (OID) requests to the PF miniport driver to do the following:
+The PF miniport driver, which runs in the management operating system of the Hyper-V parent partition, initializes and allocates resources for a VF on the SR-IOV network adapter. After NDIS calls the PF miniport driver’s [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, NDIS and the virtualization stack can issue object identifier (OID) requests to the PF miniport driver to do the following:
 
 -   Create a NIC switch on the network adapter. The NIC switch bridges network traffic between the VFs, PF, and the physical network port.
 
@@ -39,11 +38,11 @@ The PF miniport driver, which runs in the management operating system of the Hyp
 
 The following diagram shows the steps that are involved with VF initialization.
 
-![example vf initialization sequence showing calls from the virtualization stack to ndis and then to the pf miniport driver](images/sriov-vf-initialization.png)
+![example vf initialization sequence showing calls from the virtualization stack to ndis and then to the pf miniport driver.](images/sriov-vf-initialization.png)
 
 NDIS, the virtualization stack, and the PF miniport driver follow these steps during the VF initialization sequence:
 
-1.  NDIS reads the default switch configuration from the registry and issues an OID method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-switch) to provision the switch in the network adapter. The parameters that are passed in this OID request include information on how to configure important hardware resources such as VFs and VPorts. It also includes information on how to distribute the resources among the nondefault VPorts and the default VPort that are attached to the PF.
+1.  NDIS reads the default switch configuration from the registry and issues an OID method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](./oid-nic-switch-create-switch.md) to provision the switch in the network adapter. The parameters that are passed in this OID request include information on how to configure important hardware resources such as VFs and VPorts. It also includes information on how to distribute the resources among the nondefault VPorts and the default VPort that are attached to the PF.
 
     After the OID has been successfully completed by the PF miniport driver, the NIC switch is ready to be used to create VPorts and allocate VFs on it.
 
@@ -51,15 +50,15 @@ NDIS, the virtualization stack, and the PF miniport driver follow these steps du
 
 2.  A VF is treated as an offload mechanism for the virtual machine (VM) network adapter. This adapter is exposed in the guest operating system that runs in the Hyper-V child partition. By default, the networking components in the guest operating system send and receive packets over the software-based synthetic data path. However, if a child partition is enabled for VF offload, the virtualization stack issues OID requests to the PF miniport driver for the resource allocation and initialization of a VF. After the VF is attached to the child partition and a VPort on the NIC switch, the networking components send and receive packets over the VF data path. For more information about these data paths, see [SR-IOV Data Paths](sr-iov-data-paths.md).
 
-    If a Hyper-V child partition has been enabled for VF offload, the virtualization stack issues an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-allocate-vf) to the PF miniport driver. The parameters that are passed in this OID request include the identifier of the NIC switch on which the VF is allocated. Other parameters include identifiers for the child partition to which the VF will be attached.
+    If a Hyper-V child partition has been enabled for VF offload, the virtualization stack issues an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](./oid-nic-switch-allocate-vf.md) to the PF miniport driver. The parameters that are passed in this OID request include the identifier of the NIC switch on which the VF is allocated. Other parameters include identifiers for the child partition to which the VF will be attached.
 
-    The PF miniport driver allocates the necessary hardware and software resources for the VF. The PF miniport driver also determines the PCIe Requestor Identifier (RID) for the VF by calling [**NdisMGetVirtualFunctionLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetvirtualfunctionlocation). The RID is used for DMA and interrupt remapping when DMA requests and interrupts are generated by the VF.
+    The PF miniport driver allocates the necessary hardware and software resources for the VF. The PF miniport driver also determines the PCIe Requestor Identifier (RID) for the VF by calling [**NdisMGetVirtualFunctionLocation**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetvirtualfunctionlocation). The RID is used for DMA and interrupt remapping when DMA requests and interrupts are generated by the VF.
 
-    The RID along with the VF identifier are returned by the PF miniport driver when it successfully completes the [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-allocate-vf) request.
+    The RID along with the VF identifier are returned by the PF miniport driver when it successfully completes the [OID\_NIC\_SWITCH\_ALLOCATE\_VF](./oid-nic-switch-allocate-vf.md) request.
 
     For more information about resource allocation for a VF, see [Allocating Resources for a Virtual Function](allocating-resources-for-a-virtual-function.md).
 
-3.  The virtualization stack creates a VPort on the NIC switch by issuing an OID method request of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-vport) to the PF miniport driver. The parameters that are passed in this OID request include the identifier of the NIC switch on which the VPort is to be created. Other parameters include the identifier of the VF to which the VPort will be attached.
+3.  The virtualization stack creates a VPort on the NIC switch by issuing an OID method request of [OID\_NIC\_SWITCH\_CREATE\_VPORT](./oid-nic-switch-create-vport.md) to the PF miniport driver. The parameters that are passed in this OID request include the identifier of the NIC switch on which the VPort is to be created. Other parameters include the identifier of the VF to which the VPort will be attached.
 
     **Note**  The default VPort on the NIC switch always exists and is attached to the PF. Only a single nondefault VPort can be created and attached to a VF.
 
@@ -71,9 +70,9 @@ NDIS, the virtualization stack, and the PF miniport driver follow these steps du
 
 4.  The Hyper-V child partition may be started long before a VF and VPort are allocated. During this time, the networking components in the guest operating system send and receive packets over the synthetic data path. This involves packet traffic over the default VPort that is attached to the PF. To bridge traffic to the child partition, the virtualization stack configures the default VPort with the media access control (MAC) and virtual LAN (VLAN) filters for the VM network adapter of the child partition.
 
-    After resources for the VF and VPort are allocated, the virtualization stack issues an OID method request of [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-move-filter) to the PF miniport driver. This OID request moves the MAC and VLAN filters for the VM network adapter from the default VPort to the VPort that is attached to the VF. This causes packets that match these filters to be forwarded to the VF VPort over the VF data path.
+    After resources for the VF and VPort are allocated, the virtualization stack issues an OID method request of [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](./oid-receive-filter-move-filter.md) to the PF miniport driver. This OID request moves the MAC and VLAN filters for the VM network adapter from the default VPort to the VPort that is attached to the VF. This causes packets that match these filters to be forwarded to the VF VPort over the VF data path.
 
-    **Note**  Existing receive filters may be moved from the default VPort to the VF VPort by using [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-move-filter). Also, new filters may be set on the VF VPort by using [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter).
+    **Note**  Existing receive filters may be moved from the default VPort to the VF VPort by using [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](./oid-receive-filter-move-filter.md). Also, new filters may be set on the VF VPort by using [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md).
 
 After the VF and the VPort are created successfully and the MAC filters have been set on the VPort, the virtualization stack notifies the Virtual PCI (VPCI) virtual service provider (VSP). This VSP runs in the management operating system of the Hyper-V parent partition. The notification informs the VPCI VSP that the VF that has been successfully allocated and attached to a child partition. The VPCI VSP sends messages over the virtual machine bus (VMBus) to the VPCI virtual service client (VSC) that runs in the guest operating system of the child partition. The VPCI VSC is a bus driver that exposes a PCI device for the VF network adapter.
 

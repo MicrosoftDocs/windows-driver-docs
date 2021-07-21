@@ -1,7 +1,6 @@
 ---
 title: Viewing Print Web Pages
 description: Viewing Print Web Pages
-ms.assetid: c2cf782c-0f53-47e1-8c5e-1e2aa87613c4
 keywords:
 - Internet printing WDK , viewing print Web pages
 - viewing print Web pages
@@ -59,7 +58,7 @@ When a user wants to view the Web page of a particular server or printer, the fo
 
 The following figure illustrates the process by which a printer URL is sent from a client to a print server, and how its associated HTML stream is returned to the client.
 
-![diagram illustrating sending a print url from the client to the print server](images/prnturl.png)
+![diagram illustrating sending a print url from the client to the print server.](images/prnturl.png)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Low Power for Wake on LAN
 description: Low Power for Wake on LAN
-ms.assetid: 9ab8fa19-e75a-4266-accf-4e8b2964f82e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,45 +19,39 @@ Note that the lower power on the media disconnect (D3 on disconnect) feature is 
 
 The following figure illustrates the sequence of events that occurs to set a network adapter to a low power state.
 
-![diagram illustrating the sequence of events to set a nic to a low power state](images/d3onsleep.png)
+![diagram illustrating the sequence of events to set a nic to a low power state.](images/d3onsleep.png)
 
 When NDIS puts a network adapter in a low power state, the following sequence occurs:
 
-1.  NDIS uses [OID\_PM\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-parameters) to enable wake on LAN and to disable wake on media connect. NDIS\_PM\_WAKE\_ON\_LINK\_CHANGE\_ENABLED is cleared in the **WakeUpFlags** member.
+1.  NDIS uses [OID\_PM\_PARAMETERS](./oid-pm-parameters.md) to enable wake on LAN and to disable wake on media connect. NDIS\_PM\_WAKE\_ON\_LINK\_CHANGE\_ENABLED is cleared in the **WakeUpFlags** member.
 
-2.  NDIS uses [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) to notify the miniport driver of the new power state (D3).
+2.  NDIS uses [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md) to notify the miniport driver of the new power state (D3).
 
-3.  The miniport driver may indicate an unknown media connect state using the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication. The **MediaConnectStateUnknown** value is set in the **MediaConnectState** member of the [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure. For more information, see the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) documentation.
+3.  The miniport driver may indicate an unknown media connect state using the [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) status indication. The **MediaConnectStateUnknown** value is set in the **MediaConnectState** member of the [**NDIS\_LINK\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure. For more information, see the [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) documentation.
 
-4.  NDIS sends the PCI Express (PCIe) bus an [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) IRP to wait for a WOL event.
+4.  NDIS sends the PCI Express (PCIe) bus an [**IRP\_MN\_WAIT\_WAKE**](../kernel/irp-mn-wait-wake.md) IRP to wait for a WOL event.
 
-5.  NDIS sends the PCIe bus an [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) IRP to set the bus to the D3 state.
+5.  NDIS sends the PCIe bus an [**IRP\_MN\_SET\_POWER**](../kernel/irp-mn-set-power.md) IRP to set the bus to the D3 state.
 
 The following figure illustrates the sequence of events that occurs to restore full power to a network adapter after a WOL event.
 
-![diagram illustrating the sequence of events to restore full power to a nic after a wol event](images/d0onwol.png)
+![diagram illustrating the sequence of events to restore full power to a nic after a wol event.](images/d0onwol.png)
 
 When the network adapter is waking the computer the following sequence occurs:
 
 1.  The network adapter wakes the system by asserting WAKE\# on the PCIe bus or PME\# on the PCI bus.
 
-2.  The bus completes the pending [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) IRP. The IRP is pending completion from the last step in the power down sequence.
+2.  The bus completes the pending [**IRP\_MN\_WAIT\_WAKE**](../kernel/irp-mn-wait-wake.md) IRP. The IRP is pending completion from the last step in the power down sequence.
 
-3.  NDIS sets the bus to full power (D0) with the [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) IRP.
+3.  NDIS sets the bus to full power (D0) with the [**IRP\_MN\_SET\_POWER**](../kernel/irp-mn-set-power.md) IRP.
 
-4.  NDIS notifies the miniport driver that the network adapter is at full power (D0) with the OID set request of [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power).
+4.  NDIS notifies the miniport driver that the network adapter is at full power (D0) with the OID set request of [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md).
 
-5.  The network adapter notifies NDIS of a media connect event with the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication. The **MediaConnectStateConnected** value is set in the **MediaConnectState** member of the [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure.
+5.  The network adapter notifies NDIS of a media connect event with the [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) status indication. The **MediaConnectStateConnected** value is set in the **MediaConnectState** member of the [**NDIS\_LINK\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure.
 
-Starting with NDIS 6.30, if the miniport driver supports [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-pm-wake-reason) status indications, it must issue this status notification if the network adapter wakes the system. The driver issues this status notification while it is handling the OID set request of [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) for the transition to a full-power (D0) state.
+Starting with NDIS 6.30, if the miniport driver supports [**NDIS\_STATUS\_PM\_WAKE\_REASON**](./ndis-status-pm-wake-reason.md) status indications, it must issue this status notification if the network adapter wakes the system. The driver issues this status notification while it is handling the OID set request of [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md) for the transition to a full-power (D0) state.
 
-For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason-status-indications.md).
-
- 
+For more information, see [NDIS Wake Reason Status Indications](overview-of-ndis-wake-reason-statue-indications.md).
 
  
-
-
-
-
 

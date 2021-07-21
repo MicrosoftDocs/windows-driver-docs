@@ -1,7 +1,6 @@
 ---
 title: Enable Code Integrity Event Logging and System Auditing
 description: Describes how to Enable Code Integrity Event Logging and System Auditing.
-ms.assetid: D17C64F1-B295-4EC1-B0D0-F1A119D77F64
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -72,7 +71,7 @@ To enable security audit policy to capture load failures in the audit logs, foll
 
 The following screen shot shows an how to use Auditpol to enable security auditing.
 
-![screen shot of command-prompt window illustrating the use of auditpol to enable security auditing](images/tutorialauditpol.jpg)
+![screen shot of command-prompt window illustrating the use of auditpol to enable security auditing.](images/tutorialauditpol.jpg)
 
  
 

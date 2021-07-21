@@ -1,7 +1,6 @@
 ---
 title: Windows Hello camera driver bring up guide
 description: This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs).
-ms.assetid: 5CE619F4-E136-4F8F-8F90-F7F96DE4642E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ This topic discusses how to enable face authentication for an infrared (IR) came
 
 The following diagram shows how face authentication works with the new driver stack through FrameServer:
 
-![windows hello and frameserver](images/windows-hello-device-model.png)
+![windows hello and frameserver.](images/windows-hello-device-model.png)
 
 ## Face authentication DDIs
 
@@ -30,7 +29,7 @@ There are two new face authentication DDI constructs available in Windows 10, v
 
   - **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_BACKGROUND\_SUBTRACTION**
 
-  For more information about this control and how to use the bit flags to set the face authentication mode, see the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-faceauth-mode) topic.
+  For more information about this control and how to use the bit flags to set the face authentication mode, see the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](./ksproperty-cameracontrol-extended-faceauth-mode.md) topic.
 
 - **MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION**
 
@@ -42,7 +41,7 @@ To enable face authentication for an infrared camera on your device, you must pr
 
 ### Configure the DeviceMFT component
 
-As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/driver-device-transform-sample/) sample.
+As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](/samples/microsoft/windows-driver-samples/driver-device-transform-sample/) sample.
 
 To modify the driver sample, make the following changes to the sample source code:
 
@@ -146,6 +145,6 @@ If the HLK tests listed above are not passed, Microsoft will not issue a signed 
 
 ## Related topics
 
-[Capture photos and video with MediaCapture](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
+[Capture photos and video with MediaCapture](/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
 
-[Windows.Media.Capture namespace](https://docs.microsoft.com/uwp/api/Windows.Media.Capture)  
+[Windows.Media.Capture namespace](/uwp/api/Windows.Media.Capture)

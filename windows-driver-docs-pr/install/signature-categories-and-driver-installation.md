@@ -1,7 +1,6 @@
 ---
 title: Signature Categories and Driver Installation
 description: Signature Categories and Driver Installation
-ms.assetid: d5b0e3a3-51c3-40d8-a2dc-c9392feff2cb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -39,15 +38,15 @@ Administrative users have more flexibility:
 
 -   If the driver was signed by a publisher of unknown trust, Windows prompts the user with the following Windows Security dialog box.
 
-    ![screen shot of windows security dialog box for a driver that has an unknown trust](images/install1.png)
+    ![screen shot of windows security dialog box for a driver that has an unknown trust.](images/install1.png)
 
     The user must explicitly select whether to install this driver. The user is also able to add the publisher to the list of trusted publishers on the user's system. If the user selects this option, all future drivers from this publisher are treated as trusted when installed on the user's system. If the user does not select this option, the publisher remains in the unknown trust category and administrative users continue to receive this prompt if they attempt to install additional drivers from this publisher.
 
 -   If the driver lacks a valid signature or was altered, Windows prompts administrators with the following Windows Security dialog box. Again, the user must explicitly select whether to install the driver.
 
-    ![screen shot of windows security dialog box for a driver that does not have a valid signature](images/install2.png)
+    ![screen shot of windows security dialog box for a driver that does not have a valid signature.](images/install2.png)
 
-**Note**  On Windows Vista and later versions of Windows, in order for users to play next-generation premium content, such as HD DVD and other formats that are licensed under the *Advanced Access Content System (AACS) Specification*, all kernel-mode components on their system must be signed. That means that, if an administrative user selects to install an unsigned or altered driver, the system is not allowed to play premium content. For more information about how to protect media components in Windows Vista, see [Code Signing for Protected Media Components in Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=74262).
+**Note**  On Windows Vista and later versions of Windows, in order for users to play next-generation premium content, such as HD DVD and other formats that are licensed under the *Advanced Access Content System (AACS) Specification*, all kernel-mode components on their system must be signed. That means that, if an administrative user selects to install an unsigned or altered driver, the system is not allowed to play premium content. For more information about how to protect media components in Windows Vista, see [Code Signing for Protected Media Components in Windows Vista](https://download.microsoft.com/download/a/f/7/af7777e5-7dcd-4800-8a0a-b18336565f5b/pmp-sign.doc).
 
  
 

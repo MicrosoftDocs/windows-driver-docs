@@ -1,7 +1,6 @@
 ---
 title: PnPXID
 description: PnPXID
-ms.assetid: 42590d47-edb0-4435-8f7c-6b9c19d7f324
 keywords:
 - WSDMON port monitors WDK , PnPXID command
 - PnPXID

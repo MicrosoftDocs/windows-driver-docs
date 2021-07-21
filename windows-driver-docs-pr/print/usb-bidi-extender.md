@@ -1,7 +1,6 @@
 ---
 title: USB Bidi Extender
 description: Describes Bidi support for USB device using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
-ms.assetid: C4012369-F1C6-4EBC-8DAE-F4E551DE782D
 ms.date: 06/11/2018
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ In Windows 8.1 the v4 driver model has been extended to provide support for hos
 
 The following diagram provides an overview of the USB Bidi extension architecture, showing the scenario where the **getStatus** method is used to obtain unsolicited status from the device via the USBPrint interface.
 
-![usb bidi extender architecture with getstatus method](images/usbbidiext-arch.png)
+![usb bidi extender architecture with getstatus method.](images/usbbidiext-arch.png)
 
 For more information about working with a USB printer, see [USB Printing](usb-printing.md).
 
@@ -56,7 +55,7 @@ The USBMon Bidi Extension file uses the same basic structure as the SNMP Bidi Ex
 
 - Values may specify an accessType of either Get, Set, or GetSet. This indicates where the described schema element is supported in the Bidi Get or Set operation types.
 
-- Values may specify a queryKey. This should be used to denote the physical operations used to obtain data from your device. The [Print driver USB monitor and Bidi sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/print-driver-usb-monitor-and-bidi-sample) demonstrates a USB device that supports two different queryKeys. All properties under the same queryKey should be retrievable in one USB read/write operation.
+- Values may specify a queryKey. This should be used to denote the physical operations used to obtain data from your device. The [Print driver USB monitor and Bidi sample](/samples/microsoft/windows-driver-samples/print-driver-usb-monitor-and-bidi-sample) demonstrates a USB device that supports two different queryKeys. All properties under the same queryKey should be retrievable in one USB read/write operation.
 
 - Bidi values are immediately polled if they are requested in a Bidi API call. The refreshInterval value is the initial value that indicates when to poll the device for updates on a particular Bidi schema value. After each poll, the refreshInterval increases until we stop polling. The following formula shows how refreshInterval is incremented:
 
@@ -70,11 +69,11 @@ As each new USB port is created or opened, USBMon will determine if the attached
 
 ## Windows driver samples on GitHub
 
-**USBMon Bidi XML File Sample** - this provides a sample of a USBMon Bidi Extension XML file. It uses the standard Bidi schema properties DeviceInfo, Configuration, and Memory and also defines a few custom extensions. For more information, see [Print driver USB monitor and Bidi sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/print-driver-usb-monitor-and-bidi-sample).
+**USBMon Bidi XML File Sample** - this provides a sample of a USBMon Bidi Extension XML file. It uses the standard Bidi schema properties DeviceInfo, Configuration, and Memory and also defines a few custom extensions. For more information, see [Print driver USB monitor and Bidi sample](/samples/microsoft/windows-driver-samples/print-driver-usb-monitor-and-bidi-sample).
 
 And for more information about Bidi extension files, see [Bidirectional Communication Schema](bidirectional-communication-schema.md).
 
-**USBMon Bidi JavaScript File Sample**. This sample includes a USBMon Bidi Extender JavaScript file. It demonstrates how to support Bidi SET and GET operations, as well as how to listen for events while the printer is printing. For more information, see [Print driver USB monitor and Bidi sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/print-driver-usb-monitor-and-bidi-sample).
+**USBMon Bidi JavaScript File Sample**. This sample includes a USBMon Bidi Extender JavaScript file. It demonstrates how to support Bidi SET and GET operations, as well as how to listen for events while the printer is printing. For more information, see [Print driver USB monitor and Bidi sample](/samples/microsoft/windows-driver-samples/print-driver-usb-monitor-and-bidi-sample).
 
 Debugging
 
@@ -106,13 +105,13 @@ After the registry key shown in preceding section is created, and the hosting pr
 
 [IPrinterBidiSchemaElement](iprinterbidischemaelement-interface.md)  
 
-[IPrinterScriptContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)  
+[IPrinterScriptContext](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)  
 
-[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)  
+[IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)  
 
 [JavaScript API Reference](javascript-api-reference-.md)  
 
-[Print driver USB monitor and Bidi sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/print-driver-usb-monitor-and-bidi-sample)  
+[Print driver USB monitor and Bidi sample](/samples/microsoft/windows-driver-samples/print-driver-usb-monitor-and-bidi-sample)  
 
 [USB Printing](usb-printing.md)  
 

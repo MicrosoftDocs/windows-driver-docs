@@ -1,7 +1,6 @@
 ---
 title: DSM\_VERSION WMI Class
 description: DSM\_VERSION WMI Class
-ms.assetid: 79239921-169d-496d-a52b-f4b6b0cb0c80
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -25,13 +24,7 @@ class DSM_VERSION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_VERSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_dsm_version) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_VERSION**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_dsm_version) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -40,7 +40,7 @@
     - name: "Storage Data Set Management (DSM)"
 # Auto-expanded node
       items: 
-      - name: "Overview"
+      - name: "Performing storage driver data set management"
         href: data-set-management-overview.md
       - name: "DEVICE_DSM_ACTION Descriptions"
         href: device-dsm-action-descriptions.md
@@ -293,6 +293,8 @@
     items: 
     - name: "About Storage Miniport Drivers"
       href: storage-miniport-drivers.md
+    - name: "Communicating with a storage port driver"
+      href: communicating-with-a-storage-port-driver.md
     - name: "SCSI Miniport Drivers"
 # Auto-expanded node
       items: 
@@ -419,18 +421,20 @@
         href: interlocked-operations-in-storport-miniport-drivers.md
       - name: "Registry Entries"
         href: registry-entries-for-storport-miniport-drivers.md
+      - name: "DMA remapping support in Storport miniport drivers"
+        href: storport-miniport-dma-remapping-support.md
       - name: "Upgrading Firmware for an NVMe Device"
         href: upgrading-firmware-for-an-nvme-device.md
       - name: "StorNVMe Miniport Driver"
 # Auto-expanded node
         items: 
-        - name: "NVMe Features Supported by StorNVMe"
+        - name: "NVMe features supported by StorNVMe"
           href: nvme-features-supported-by-stornvme.md
-        - name: "StorNVMe Command Set Support"
+        - name: "StorNVMe command set support"
           href: stornvme-command-set-support.md
-        - name: "StorNVMe Feature Support"
+        - name: "StorNVMe feature support"
           href: stornvme-feature-support.md
-        - name: "StorNVMe SCSI Translation Support"
+        - name: "StorNVMe SCSI translation support"
           href: stornvme-scsi-translation-support.md
     - name: "IDE Controller Minidrivers"
 # Auto-expanded node
@@ -525,7 +529,7 @@
       href: overview.md
     - name: "Definitions"
       href: definitions.md
-    - name: "Requirements"
+    - name: "Silo driver system requirements"
       href: requirements.md
     - name: "Architecture"
       href: architecture.md

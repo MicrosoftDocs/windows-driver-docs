@@ -1,7 +1,6 @@
 ---
 title: File Open Source File
 description: File Open Source File
-ms.assetid: 27007865-7517-40df-a30a-26ecf3cec9f5
 keywords: ["File Open Source File", "source debugging, File Open Source File"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Open Source File** on the **File** menu to load a specific source file.
 
-This command is equivalent to pressing CTRL+O or clicking the **Open source file (Ctrl+O)** button (![screen shot of the open source file button](images/tbopen.png)).
+This command is equivalent to pressing CTRL+O or clicking the **Open source file (Ctrl+O)** button (![screen shot of the open source file button.](images/tbopen.png)).
 
 ### <span id="dialog_box"></span><span id="DIALOG_BOX"></span>Dialog Box
 

@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WW_INDICATION
 description: The NDIS_STATUS_WW_INDICATION status is the same as the NDIS_STATUS_MEDIA_SPECIFIC_INDICATION status.
-ms.assetid: 8c0a7b33-bab3-4e8c-a1f0-8564633dbc7c
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WW_INDICATION Network Drivers Starting with Windows Vista
@@ -13,13 +12,11 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_WW\_INDICATION status is the same as the [**NDIS\_STATUS\_MEDIA\_SPECIFIC\_INDICATION**](ndis-status-media-specific-indication.md) status.
 
-Remarks
--------
+## Remarks
 
-For more information about NDIS\_STATUS\_WW\_INDICATION, see [OID\_WW\_GEN\_INDICATION\_REQUEST](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561411(v=vs.85)).
+For more information about NDIS\_STATUS\_WW\_INDICATION, see [OID\_WW\_GEN\_INDICATION\_REQUEST](/previous-versions/windows/hardware/network/ff561411(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -43,12 +40,7 @@ Requirements
 
 [**NDIS\_STATUS\_MEDIA\_SPECIFIC\_INDICATION**](ndis-status-media-specific-indication.md)
 
-[OID\_WW\_GEN\_INDICATION\_REQUEST](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561411(v=vs.85))
+[OID\_WW\_GEN\_INDICATION\_REQUEST](/previous-versions/windows/hardware/network/ff561411(v=vs.85))
 
  
-
- 
-
-
-
 

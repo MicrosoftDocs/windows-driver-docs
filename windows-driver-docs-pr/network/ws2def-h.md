@@ -1,7 +1,6 @@
 ---
 title: Ws2def.h
 description: This section contains kernel mode network driver topics for the Ws2def.h header.
-ms.assetid: D84A448E-5810-485F-9CAC-4366E4223DBE
 keywords:
 - Ws2def.h network drivers
 ms.date: 08/08/2017
@@ -17,7 +16,7 @@ The Ws2def.h header contains definitions for the Winsock2 specification. It is i
 > [!IMPORTANT]
 > This section's topics contains pages for definitions, macros, OIDs, status indications, and other data structures that are not part of network driver reference (structures, enumerations, functions, and callbacks). 
 >
-> For more information about network driver reference for this header, see [Ws2def.h (reference)](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)).
+> For more information about network driver reference for this header, see [Ws2def.h (reference)](/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)).
 
 ## In this section
 
@@ -31,6 +30,3 @@ The Ws2def.h header contains definitions for the Winsock2 specification. It is i
 * [SO_KEEPALIVE](so-keepalive.md)
 * [SO_RCVBUF](so-rcvbuf.md)
 * [SO_REUSEADDR](so-reuseaddr.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: rpcexts.thread
 description: The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command.
-ms.assetid: eecc4eb6-7789-47ed-8b3f-5ec21cc6117c
 keywords: ["rpcexts.thread Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,8 +54,7 @@ Specifies the address of the thread environment block (TEB).
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension displays the per-thread RPC information. A field in the per-thread RPC information is the extended error information for this thread.
 

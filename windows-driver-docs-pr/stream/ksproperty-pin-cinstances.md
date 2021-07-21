@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CINSTANCES
 description: The current number of pins this pin factory has instantiated, as well as the maximum number of pins this pin factory can instantiate, per filter.
-ms.assetid: 0a6c0afa-1bdf-4b80-a8d7-55f13d9da74b
 keywords: ["KSPROPERTY_PIN_CINSTANCES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The current number of pins this pin factory has instantiated, as well as the max
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
 <td><p>KSPIN_CINSTANCES</p></td>
 </tr>
 </tbody>
@@ -55,8 +54,7 @@ The current number of pins this pin factory has instantiated, as well as the max
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a structure of type KSPIN\_CINSTANCES:
 
@@ -79,8 +77,7 @@ This property specifies the per-filter maximum for a given pin factory. Use the 
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -94,12 +91,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

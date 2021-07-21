@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_CONNECT
 description: OID_WWAN_CONNECT activates or deactivates a particular packet context and reads the activation state of a context.
-ms.assetid: 51be35fe-750b-4c2b-aab3-a9df59711f7d
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_CONNECT Network Drivers Starting with Windows Vista
@@ -13,14 +12,13 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_CONNECT activates or deactivates a particular packet context and reads the activation state of a context.
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](ndis-status-wwan-context-state.md) status notification containing an [**NDIS\_WWAN\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state) structure that indicates the Packet Data Protocol (PDP) context state of the MB device regardless of completing set or query requests.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](ndis-status-wwan-context-state.md) status notification containing an [**NDIS\_WWAN\_CONTEXT\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state) structure that indicates the Packet Data Protocol (PDP) context state of the MB device regardless of completing set or query requests.
 
-Callers requesting to set the Packet Data Protocol (PDP) context state of the MB device provide an [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_context_state) structure to the miniport driver with the appropriate information.
+Callers requesting to set the Packet Data Protocol (PDP) context state of the MB device provide an [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_context_state) structure to the miniport driver with the appropriate information.
 
-Remarks
--------
+## Remarks
 
-For more information about using this OID, see [WWAN Packet Context Management](https://docs.microsoft.com/windows-hardware/drivers/network/mb-packet-context-management).
+For more information about using this OID, see [WWAN Packet Context Management](./mb-packet-context-management.md).
 
 This object activates or deactivates a particular packet context and reads the activation state of a context. The miniport driver must send appropriate event notifications whenever the activation state changes.
 
@@ -64,8 +62,7 @@ For response to query requests, miniport driver sends the NDIS\_STATUS\_WWAN\_CO
 
 In rare, but specific circumstances, the MB Service on Windows 7 may attempt to auto-connect before connectivity to the Internet has been determined for pre-existing connections or during a momentary disruption in Internet connectivity of pre-existing connections. This could result in simultaneous MB and WLAN/Ethernet connections. For example, this can occur during system boot when MB and other connections are attempted simultaneously and the Network List Manager service is still attempting to determine the Internet connectivity of other connections using active and passive methods. It could also occur due to temporary outages in network infrastructure like a corporate proxy server or an ISP network. Thus, the MB Service may attempt to auto-connect to the internet regardless of whether the "Auto-connect only if no alternate Internet connection is available" option is selected.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,12 +84,7 @@ Requirements
 ## See also
 
 
-[WWAN Packet Context Management](https://docs.microsoft.com/windows-hardware/drivers/network/mb-packet-context-management)
+[WWAN Packet Context Management](./mb-packet-context-management.md)
 
  
-
- 
-
-
-
 

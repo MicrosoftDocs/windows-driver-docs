@@ -1,7 +1,6 @@
 ---
 title: NumberOfLines element
 description: The required NumberOfLines element describes the exact height, in pixels, of the final output image.
-ms.assetid: 9f7f96d4-fd88-4d14-b000-7abefe96775f
 keywords: ["NumberOfLines element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **NumberOfLines** element describes the exact height, in pixels, of the final output image.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:NumberOfLines>
@@ -27,13 +25,11 @@ Usage
 </wscn:NumberOfLines>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. An integer value in the range from 1 through 2147483647.
 
@@ -64,8 +60,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The specified value describes the exact height, in pixels, or the number of lines, of the final output image that would be generated for the current [**ScanTicket**](scanticket.md) settings that are being validated. This height includes rotation and any adjustment that the scanner might perform on the scanned image before transferring it to the client.
 

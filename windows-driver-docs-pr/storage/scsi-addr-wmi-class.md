@@ -1,7 +1,6 @@
 ---
 title: SCSI\_ADDR WMI Class
 description: SCSI\_ADDR WMI Class
-ms.assetid: 720cf803-b004-4c63-8884-66b0e07d82c0
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -24,13 +23,7 @@ class SCSI_ADDR
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**SCSI\_ADDR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_scsi_addr) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**SCSI\_ADDR**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_scsi_addr) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

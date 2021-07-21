@@ -1,7 +1,6 @@
 ---
 title: Vendor-Provided DCB Components
 description: Vendor-Provided DCB Components
-ms.assetid: 864BB701-352A-4F61-934C-3E4E8EEE02C5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This section describes the various components that are part of the NDIS Quality of Service (QoS) architecture for IEEE 802.1 Data Center Bridging (DCB). These components are shown in the following diagram.
 
-![device installation components](images/dcb.png)
+![device installation components.](images/dcb.png)
 
 The shaded boxes in the diagram represent DCB components that independent hardware vendors (IHVs) and original equipment manufacturers (OEMs) provide. The following list describes these components:
 

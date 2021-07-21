@@ -1,7 +1,6 @@
 ---
 title: Broadcast Driver Architecture Property, Event, and Method Sets
 description: Broadcast Driver Architecture Property, Event, and Method Sets
-ms.assetid: 4323c19a-e47d-4ec6-a39c-3f2e95c526e4
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_broadcast_driver_architecture_property_event_and_method_sets_ks"></span><span id="DDK_BROADCAST_DRIVER_ARCHITECTURE_PROPERTY_EVENT_AND_METHOD_SETS_KS"></span>
 
 
-This section documents the property, event, and method sets that a BDA minidriver implements. These sets are defined in *bdamedia.h*. The BDA minidriver can dispatch some of the properties and methods in these sets to default implementations in the BDA support library. For more information, see [Broadcast Driver Architecture Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/stream/broadcast-driver-architecture-minidrivers) on how the minidriver can use the BDA support library of functions to provide default handling of these sets.
+This section documents the property, event, and method sets that a BDA minidriver implements. These sets are defined in *bdamedia.h*. The BDA minidriver can dispatch some of the properties and methods in these sets to default implementations in the BDA support library. For more information, see [Broadcast Driver Architecture Minidrivers](./broadcast-driver-architecture-minidrivers.md) on how the minidriver can use the BDA support library of functions to provide default handling of these sets.
 
 The following sections provide more information about the BDA property, event, and method sets:
 
@@ -69,10 +68,4 @@ The BDA void transform property set controls when a node starts and stops operat
  
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Miniport drivers
 description: Miniport drivers
-ms.assetid: d0b8f143-2966-4338-9d2f-96e7e9216b3a
 keywords:
 - miniport drivers WDK networking , architecture
 - NDIS miniport drivers WDK , architecture
@@ -45,12 +44,12 @@ NDIS supports miniport drivers for both connectionless environments and connecti
 
 An NDIS miniport driver can have a non-NDIS lower edge (see the following figure).
 
-![ndis miniport driver with non-ndis lower edge](images/nonndslo.png)
+![ndis miniport driver with non-ndis lower edge.](images/nonndslo.png)
 
 Through its non-NDIS lower edge, a miniport driver uses the class interface for a bus, such as the Universal Serial Bus (USB) to control a device on the bus. The miniport driver communicates with the device by sending I/O request packets (IRPs) either to the bus or directly to remote devices that are attached to the bus. At its upper edge, the miniport driver exposes a standard NDIS miniport driver interface, which enables the miniport driver to communicate with overlying NDIS drivers.
 
 ## Related topics
 
-[NDIS Miniport Drivers](ndis-miniport-drivers.md)
+[NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers.md)
 
-[NDIS Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[NDIS Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

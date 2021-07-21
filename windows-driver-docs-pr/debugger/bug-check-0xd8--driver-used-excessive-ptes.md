@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD8 DRIVER_USED_EXCESSIVE_PTES
 description: The DRIVER_USED_EXCESSIVE_PTES bug check has a value of 0x000000D8. This indicates that there are no more system page table entries (PTE) remaining.
-ms.assetid: a11212eb-8dd7-49f3-9b23-237ed88b9cff
 keywords: ["Bug Check 0xD8 DRIVER_USED_EXCESSIVE_PTES", "DRIVER_USED_EXCESSIVE_PTES"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,13 +59,11 @@ The DRIVER\_USED\_EXCESSIVE\_PTES bug check has a value of 0x000000D8. This indi
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
-Cause
------
+## Cause
 
 This is usually caused by a driver not cleaning up its memory use properly. Parameter 1 shows the driver which has consumed the most PTEs. The call stack will reveal which driver actually caused the bug check.
 
-Resolution
-----------
+## Resolution
 
 Both drivers may need to be fixed. The total number of system PTEs may also need to be increased.
 

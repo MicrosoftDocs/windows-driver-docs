@@ -1,7 +1,6 @@
 ---
 title: Which Drivers Can Be Ported and Where
 description: This topic describes which WDM drivers can be ported to Windows Driver Frameworks (WDF), and how to decide whether to port to Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF).
-ms.assetid: 53E34B9C-8C0A-4F15-951B-7AB133DE0C5A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ For some device types, system-supplied device class and port drivers provide dri
 
 You can use KMDF to create drivers that run on Windows 2000 and later. You can use UMDF version 1 to write drivers that run on Windows XP and later, and UMDF version 2 to target Windows 8.1 and later.
 
-For information about device and driver types that UMDF and KMDF support, see [Choosing a Driver Model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
+For information about device and driver types that UMDF and KMDF support, see [Choosing a Driver Model](../gettingstarted/choosing-a-driver-model.md).
 
 ## Which framework should I port my WDM driver to, KMDF or UMDF 2?
 
@@ -35,25 +34,18 @@ For information about device and driver types that UMDF and KMDF support, see [C
 
     If you realize later that you need a KMDF-only feature, it's straightforward to convert your UMDF 2 driver to KMDF, as described in [How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md).
 
-2.  You can also write a *mode-agnostic* driver, meaning one that can be compiled using either KMDF or UMDF. To write a mode-agnostic driver, start with a UMDF 2 template. Use the DDI versioning info listed in [Summary of WDF Callbacks and Methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/_wdf/) to ensure that you only call methods that are available in both KMDF and UMDF 2. Conditionally tag any header references with the preprocessor macros described in [How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md). To switch your driver, you would create an empty driver project using a Visual Studio template for the target framework, and copy your source code over.
+2.  You can also write a *mode-agnostic* driver, meaning one that can be compiled using either KMDF or UMDF. To write a mode-agnostic driver, start with a UMDF 2 template. Use the DDI versioning info listed in [Summary of WDF Callbacks and Methods](/windows-hardware/drivers/ddi/_wdf/) to ensure that you only call methods that are available in both KMDF and UMDF 2. Conditionally tag any header references with the preprocessor macros described in [How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md). To switch your driver, you would create an empty driver project using a Visual Studio template for the target framework, and copy your source code over.
 
 ## Related topics
 
 
-[Getting Started with UMDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2)
+[Getting Started with UMDF](./getting-started-with-umdf-version-2.md)
 
 [KMDF Version History](kmdf-version-history.md)
 
 [UMDF Version History](umdf-version-history.md)
 
-[User-Mode Driver Framework Frequently Asked Questions](user-mode-driver-framework-frequently-asked-questions.md)
+[User-Mode Driver Framework Frequently Asked Questions](user-mode-driver-framework-frequently-asked-questions.yml)
 
  
-
- 
-
-
-
-
-
 

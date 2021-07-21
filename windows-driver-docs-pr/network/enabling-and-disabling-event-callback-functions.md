@@ -1,7 +1,6 @@
 ---
 title: Enabling and Disabling Event Callback Functions
 description: Enabling and Disabling Event Callback Functions
-ms.assetid: 52654788-31e2-47c1-8154-f40c42168708
 keywords:
 - WSK WDK networking , events
 - events WDK Winsock Kernel
@@ -18,9 +17,9 @@ ms.localizationpriority: medium
 
 A Winsock Kernel (WSK) application can implement event callback functions that the WSK subsystem calls asynchronously to notify the application when certain [events](winsock-kernel-events.md) occur on a socket. A WSK application can provide a client [dispatch table](winsock-kernel-dispatch-tables.md) structure to the WSK subsystem whenever it creates a socket or accepts a socket on a listening socket. This dispatch table contains pointers to the WSK application's event callback functions for the new socket. If a WSK application does not implement any event callback functions for a particular socket, then it does not need to provide a client dispatch table structure to the WSK subsystem for that socket.
 
-All of a socket's event callback functions, except for a listening socket's [*WskInspectEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_inspect_event) and [*WskAbortEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_abort_event) event callback functions, can be enabled or disabled by using the [**SO\_WSK\_EVENT\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/network/so-wsk-event-callback) socket option. A WSK application can enable multiple event callback functions on a socket at the same time. However, a WSK application must disable each event callback function individually.
+All of a socket's event callback functions, except for a listening socket's [*WskInspectEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_inspect_event) and [*WskAbortEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_abort_event) event callback functions, can be enabled or disabled by using the [**SO\_WSK\_EVENT\_CALLBACK**](./so-wsk-event-callback.md) socket option. A WSK application can enable multiple event callback functions on a socket at the same time. However, a WSK application must disable each event callback function individually.
 
-The following code example shows how a WSK application can use the SO\_WSK\_EVENT\_CALLBACK socket option to enable the [*WskDisconnectEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_disconnect_event) and [*WskReceiveEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event) event callback functions on a connection-oriented socket.
+The following code example shows how a WSK application can use the SO\_WSK\_EVENT\_CALLBACK socket option to enable the [*WskDisconnectEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_disconnect_event) and [*WskReceiveEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event) event callback functions on a connection-oriented socket.
 
 ```C++
 // Function to enable the WskDisconnectEvent and WskReceiveEvent
@@ -66,7 +65,7 @@ NTSTATUS
 }
 ```
 
-The following code example shows how a WSK application can use the [**SO\_WSK\_EVENT\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/network/so-wsk-event-callback) socket option to disable the [*WskReceiveEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event) event callback functions on a connection-oriented socket.
+The following code example shows how a WSK application can use the [**SO\_WSK\_EVENT\_CALLBACK**](./so-wsk-event-callback.md) socket option to disable the [*WskReceiveEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event) event callback functions on a connection-oriented socket.
 
 ```C++
 // Prototype for the disable disconnect IoCompletion routine
@@ -185,15 +184,15 @@ NTSTATUS
 }
 ```
 
-For listening sockets, the [*WskInspectEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_inspect_event) and [*WskAbortEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_abort_event) event callback functions are enabled only if the WSK application enables conditional accept mode on the socket. A WSK application enables conditional accept mode on a listening socket by setting the [**SO\_CONDITIONAL\_ACCEPT**](https://docs.microsoft.com/windows-hardware/drivers/network/so-conditional-accept) socket option for the socket prior to binding the socket to a local transport address. For more information about how to set socket options, see [Performing Control Operations on a Socket](performing-control-operations-on-a-socket.md).
+For listening sockets, the [*WskInspectEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_inspect_event) and [*WskAbortEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_abort_event) event callback functions are enabled only if the WSK application enables conditional accept mode on the socket. A WSK application enables conditional accept mode on a listening socket by setting the [**SO\_CONDITIONAL\_ACCEPT**](./so-conditional-accept.md) socket option for the socket prior to binding the socket to a local transport address. For more information about how to set socket options, see [Performing Control Operations on a Socket](performing-control-operations-on-a-socket.md).
 
 After conditional accept mode has been enabled on a listening socket, the socket's *WskInspectEvent* and *WskAbortEvent* event callback functions cannot be disabled. For more information about conditionally accepting incoming connections on listening sockets, see [Listening for and Accepting Incoming Connections](listening-for-and-accepting-incoming-connections.md).
 
-A listening socket can automatically enable event callback functions on connection-oriented sockets that are accepted by the listening socket's [*WskAcceptEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept_event) event callback function. A WSK application automatically enables these callback functions by enabling the connection-oriented socket event callback functions on the listening socket. For more information about this process, see [**SO\_WSK\_EVENT\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/network/so-wsk-event-callback).
+A listening socket can automatically enable event callback functions on connection-oriented sockets that are accepted by the listening socket's [*WskAcceptEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept_event) event callback function. A WSK application automatically enables these callback functions by enabling the connection-oriented socket event callback functions on the listening socket. For more information about this process, see [**SO\_WSK\_EVENT\_CALLBACK**](./so-wsk-event-callback.md).
 
-If a WSK application always enables certain event callback functions on every socket that it creates, the application can configure the WSK subsystem to automatically enable those event callback functions by using the [**WSK\_SET\_STATIC\_EVENT\_CALLBACKS**](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-set-static-event-callbacks) client control operation. The event callback functions that are enabled in this manner are always enabled and cannot be disabled or re-enabled later by the WSK application. If a WSK application always enables certain event callback functions on every socket that it creates, the application should use this method to automatically enable those event callback functions because it will yield much better performance.
+If a WSK application always enables certain event callback functions on every socket that it creates, the application can configure the WSK subsystem to automatically enable those event callback functions by using the [**WSK\_SET\_STATIC\_EVENT\_CALLBACKS**](./wsk-set-static-event-callbacks.md) client control operation. The event callback functions that are enabled in this manner are always enabled and cannot be disabled or re-enabled later by the WSK application. If a WSK application always enables certain event callback functions on every socket that it creates, the application should use this method to automatically enable those event callback functions because it will yield much better performance.
 
-The following code example shows how a WSK application can use the WSK\_SET\_STATIC\_EVENT\_CALLBACKS client control operation to automatically enable the [*WskReceiveFromEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from_event) event callback function on datagram sockets and the [*WskReceiveEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event) event callback function on connection-oriented sockets.
+The following code example shows how a WSK application can use the WSK\_SET\_STATIC\_EVENT\_CALLBACKS client control operation to automatically enable the [*WskReceiveFromEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from_event) event callback function on datagram sockets and the [*WskReceiveEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event) event callback function on connection-oriented sockets.
 
 ```C++
 // Function to set static event callbacks
@@ -236,10 +235,4 @@ NTSTATUS
 If a WSK application uses the WSK\_SET\_STATIC\_EVENT\_CALLBACKS client control operation to automatically enable certain event callback functions, it must do so before it creates any sockets.
 
  
-
- 
-
-
-
-
 

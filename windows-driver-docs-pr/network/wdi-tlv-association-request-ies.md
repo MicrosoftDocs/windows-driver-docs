@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_REQUEST_IES
 description: WDI_TLV_ASSOCIATION_REQUEST_IES is an unused TLV.
-ms.assetid: 7D057406-7017-46F8-80DD-857F38AFF5D5
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_REQUEST_IES Network Drivers Starting with Windows Vista
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_ASSOCIATION\_REQUEST\_IES is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

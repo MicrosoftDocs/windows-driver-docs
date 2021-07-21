@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfumtriage
 description: The wdfkd.wdfumtriage extension displays information UMDF devices on the system, including device objects, loaded drivers and class extensions, PnP device stack, dispatched IRPs.
-ms.assetid: E25DAE56-E42A-4A56-B36F-8B0B1D826524
 keywords: ["wdfkd.wdfumtriage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -37,14 +36,13 @@ UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use this command in a kernel-mode debugging session.
 
 Here is an example of the output of **!wdfkd.wdfumtriage**.
 
-![driver object list output from !wdfkd.wdfumtriage](images/wdfumtriage2.png)
+![driver object list output from !wdfkd.wdfumtriage.](images/wdfumtriage2.png)
 
  
 

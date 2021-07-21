@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_FirstInstallDate
 description: DEVPKEY_Device_FirstInstallDate
-ms.assetid: aedc4f18-51be-4c42-a172-c1fd88cc49b3
 keywords: ["DEVPKEY_Device_FirstInstallDate Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_Device_FirstInstallDate device property specifies the time stamp whe
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -47,8 +52,7 @@ The DEVPKEY_Device_FirstInstallDate device property specifies the time stamp whe
 
  
 
-Remarks
--------
+## Remarks
 
 Windows sets the value of DEVPKEY_Device_FirstInstallDate with the time stamp that specifies when the device instance was first installed in the system.
 
@@ -56,10 +60,9 @@ Windows sets the value of DEVPKEY_Device_FirstInstallDate with the time stamp th
 
  
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,14 +84,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
- 
-
-
-
-
-
 

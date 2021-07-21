@@ -1,7 +1,6 @@
 ---
 title: Introduction to Controller Objects
 description: Introduction to Controller Objects
-ms.assetid: a46732a7-1e60-41d5-96e9-d5284c000af1
 keywords: ["controller objects WDK kernel , about controller objects", "ControllerControl routines, about ControllerControl routines", "overlapped I/O WDK kernel", "I/O WDK kernel , overlaps"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -41,7 +40,7 @@ Monolithic drivers of physical devices with features like those of the "AT" disk
 
 -   Carry out I/O operations for the currently busy device object and requeue incoming IRPs for other device objects until the current IRP is completed.
 
-The preceding synchronization technique serializes IRP processing for all of the driver's target device objects. Note that it also forces the driver to complete the current IRP before its [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine can begin processing the next IRP, which unfortunately decreases driver performance.
+The preceding synchronization technique serializes IRP processing for all of the driver's target device objects. Note that it also forces the driver to complete the current IRP before its [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine can begin processing the next IRP, which unfortunately decreases driver performance.
 
 If certain device operations can be overlapped, using a controller object can increase a driver's I/O throughput, because this synchronization technique allows the driver to determine whether it can overlap operations just before it sets up the physical device. For example, a disk controller might allow the driver to overlap seeks on one disk with read/write operations on another disk.
 
@@ -50,9 +49,4 @@ Moreover, using a controller object is a relatively easy way to synchronize I/O 
 However, some devices that are designed to overlap I/O operations, such as full-duplex serial controllers or bus-master adapters, generally have drivers that set up internal queues for IRPs.
 
  
-
- 
-
-
-
 

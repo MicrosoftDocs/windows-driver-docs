@@ -1,7 +1,6 @@
 ---
 title: Obsolete GDI Functions, Structures, and Constants
 description: Obsolete GDI Functions, Structures, and Constants
-ms.assetid: 99ab0960-4a0e-4313-a32d-7b48b9c4bf6c
 keywords:
 - GDI WDK Windows 2000 display , obsolete reference
 - graphics drivers WDK Windows 2000 display , obsolete reference

@@ -1,7 +1,6 @@
 ---
 title: welcomeIntro XML Element
 description: welcomeIntro XML Element
-ms.assetid: d0325d14-c31a-453d-b28e-4bdb646d0711
 keywords: ["welcomeIntro XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # welcomeIntro XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **welcomeIntro** XML element customizes the main text on the DPInst welcome page.
 
@@ -83,11 +82,4 @@ If a **welcomeIntro** element is not specified, DPInst displays the default main
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

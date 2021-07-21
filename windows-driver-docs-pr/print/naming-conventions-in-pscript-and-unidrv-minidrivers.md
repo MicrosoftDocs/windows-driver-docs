@@ -1,7 +1,6 @@
 ---
 title: Naming Conventions in Pscript and Unidrv Minidrivers
 description: Naming Conventions in Pscript and Unidrv Minidrivers
-ms.assetid: d15c72e9-781d-4c71-bcf5-b3d08ec603ca
 keywords:
 - in-box autoconfiguration support WDK printer , naming conventions
 - names WDK printer autoconfig

@@ -1,7 +1,6 @@
 ---
 title: The V_NET_ROOT Structure
 description: The V_NET_ROOT Structure
-ms.assetid: 866eba91-13b6-4b15-93de-4f627a635c92
 keywords:
 - share mapping WDK RDBSS
 - V_NET_ROOT structure WDK RDBSS
@@ -30,7 +29,7 @@ The V\_NET\_ROOT structure provides a mechanism for mapping into a share (for ex
 \;m:\server\share\d1\d2
 ```
 
-The format of the name depends on whether there is a local device ("X:", for example) associated with this V\_NET\_ROOT structure. In the case of a local drive mapping (d1\\d2, for example), the local drive mapping gets prefixed onto each [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) that is opened on this V\_NET\_ROOT structure.
+The format of the name depends on whether there is a local device ("X:", for example) associated with this V\_NET\_ROOT structure. In the case of a local drive mapping (d1\\d2, for example), the local drive mapping gets prefixed onto each [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) that is opened on this V\_NET\_ROOT structure.
 
 V\_NET\_ROOT structures are also used to supply alternate credentials. The purpose for this kind of a V\_NET\_ROOT structure is to propagate the alternate credentials into the NET\_ROOT as the default. For this to work, there must be no other references.
 
@@ -53,9 +52,4 @@ The finalization of a V\_NET\_ROOT structure consists of two parts:
 There can be a delay between these two actions, and a field in the V\_NET\_ROOT structure prevents the first step from being duplicated.
 
  
-
- 
-
-
-
 

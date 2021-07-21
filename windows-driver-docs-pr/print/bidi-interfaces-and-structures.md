@@ -4,7 +4,6 @@ description: This section provides information about the interfaces and enumerat
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: CDD092E5-588C-4FAF-9EAD-F8A74293890C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

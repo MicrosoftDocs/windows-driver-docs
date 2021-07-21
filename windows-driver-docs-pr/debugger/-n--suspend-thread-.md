@@ -1,7 +1,6 @@
 ---
 title: ~n (Suspend Thread)
 description: The ~n command suspends execution of the specified thread.Do not confuse this command with the n (Set Number Base) command.
-ms.assetid: 4b1063ad-edba-4cd3-9084-dc6c08c69f55
 keywords: ["~n (Suspend Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ Specifies the thread or threads to suspend. For more information about the synta
 
 For more information about the suspend count and how suspended threads behave and for a list of other commands that control the suspending and freezing of threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify threads only in user mode. In kernel mode, the tilde (~) refers to a processor.
 

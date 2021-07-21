@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPC\_TIMEDELAY
 description: The WIA\_IPC\_TIMEDELAY property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 3166b2b8-eb90-4474-a9ea-beb752985201
 keywords: ["WIA_IPC_TIMEDELAY Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

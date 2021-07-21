@@ -1,7 +1,6 @@
 ---
 title: Value (TCP/IP)
 description: The TCP/IP Value construct allows you to extend the bidi communications schema with queries that retrieve data from a particular MIB object.
-ms.assetid: 46b24830-10a1-405b-9c12-b5804f76d668
 keywords:
 - Value construct
 ms.date: 04/20/2017
@@ -47,7 +46,7 @@ The TCP/IP `Value` construct allows you to extend the bidi communications schema
 </tr>
 <tr class="even">
 <td><p><strong>type</strong></p></td>
-<td><p>The type of data in the<code> Value</code> construct, a value in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
+<td><p>The type of data in the<code> Value</code> construct, a value in the <a href="/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 </tbody>
 </table>
@@ -77,11 +76,4 @@ The preceding example results in the following query:
 ```
 
 Note that because the `Value` construct is contained in a Property instance rather than an IndexedProperty instance, a trailing zero is automatically appended to the OID.
-
- 
-
- 
-
-
-
 

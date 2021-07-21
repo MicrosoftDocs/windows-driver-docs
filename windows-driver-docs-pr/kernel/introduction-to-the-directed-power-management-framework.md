@@ -1,49 +1,57 @@
 ---
 title: Introduction to the Directed Power Management Framework
-description: Describes the Directed Power Management Framework, or DFx, which is equivalent to Power Framework, or PoFx, version 3.
-ms.assetid: 58550c57-3439-4212-b0c6-6a2fbfd38414
-ms.date: 03/27/2019
+description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
+ms.date: 04/02/2021
 ms.custom: 19H1
 ---
 
 # Introduction to the Directed Power Management Framework
 
-Starting in Windows 10, version 1903, version 3 of the run-time power management framework ([PoFx](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-the-power-management-framework)) provides an optional directed power model, Directed PoFx (DFx).
+Starting in Windows 10, version 1903, version 3 of the run-time power management framework ([PoFx](./overview-of-the-power-management-framework.md)) provides an optional directed power model, Directed PoFx (DFx).
 
-With DFx, the operating system directs device stacks to enter their appropriate low-power idle states when the system transitions to idle, and thereby enables the system to enter low power more reliably.
+With DFx, the operating system directs device stacks to enter their appropriate low-power idle states when the system transitions to idle and there is no [activator](/windows-hardware/design/device-experiences/activators)-brokered software activity, and thereby enables the system to enter low power more reliably.
 
 The objective is to make systems more power-efficient and to reduce energy consumption for Windows devices across form factors.
 
-DFx currently supports D-state management only.  DFx skips any device subtree with an F-state constraint.
+DFx is currently supported for devices with D-state constraints only.  DFx skips any device subtree with an F-state constraint.
+
+DFx does not power down paging or debug devices.
 
 ## Requirements for WDF (non-miniport) drivers
 
-A WDF driver that specifies **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure can opt into DFx by adding the following registry key to the INF's [AddReg directive section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) within the [DDInstall.HW section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section):
+A WDF driver that specifies **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure can opt into DFx by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
 
-```
-HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1
-```
+`HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1`
+
+A WDF driver targeting version 31 and above will enable DFx by default. If this is undesired, the driver can opt out of DFx by setting the registry key to 0: 
+
+`HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,0`
+
+A WDF driver targeting version 33 and above can alternatively opt out of DFx by setting the **DirectedPoFxEnabled** member of the [**WDF_POWER_FRAMEWORK_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_power_framework_settings) structure to **WdfFalse**.
+
+> [!TIP]
+> To initialize its [**WDF_POWER_FRAMEWORK_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_power_framework_settings) structure, your driver should call [**WDF_POWER_FRAMEWORK_SETTINGS_INIT**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_power_framework_settings_init).
 
 Because requesting system-managed idle timeout causes WDF to register with PoFx on the driver's behalf, the driver does not need to register with PoFx in this scenario.
 
 If the driver specifies **DriverManagedIdleTimeout**, consider switching to system-managed idle timeout.  If that is not feasible, use the guidelines in the WDM section below to opt into DFx.
 
-If the WDF driver does not use runtime power management, add support for it and use system-managed idle timeout.  To do so, provide an [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure as input to [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings).
+If the WDF driver does not use runtime power management, add support for it and use system-managed idle timeout.  To do so, provide an [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure as input to [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings).
 
 ## Requirements for WDM (non-miniport) drivers
 
-If your driver does not use the system-managed idle support provided by WDF (the driver is either a WDF driver using driver-managed idle, or a WDM driver), it can still get DFx support by registering itself with PoFx.  In this scenario, the driver registers with PoFx by implementing:
+If your driver does not use the system-managed idle support provided by WDF (the driver is either a WDF driver using [driver-managed idle](/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type), or a WDM driver), it can still get DFx support by registering itself with PoFx.  In this scenario, the driver registers with PoFx by implementing:
 
-- [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_down_callback)
-- [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback)
+- [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_down_callback)
+- [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback)
 
 
-Provide pointers to these callbacks in a [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3) structure that is input to the [**PoFxRegisterDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregisterdevice) function.
+Provide pointers to these callbacks in a [PO_FX_DEVICE_V3](/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3) structure that is input to the [**PoFxRegisterDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregisterdevice) function.
 
 To get DFx support, a driver must:
 
 * Provide the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx
-* Call [**PoFxReportDevicePoweredOn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) from its [PO_FX_DIRECTED_POWER_UP_CALLBACK](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback) callback function on resume from Sx transitions
+* Call [**PoFxReportDevicePoweredOn**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) from its [PO_FX_DIRECTED_POWER_UP_CALLBACK](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback) callback function on resume from Sx transitions
 
 ## Example
 
@@ -79,16 +87,16 @@ For device classes that follow a port/miniport driver model, system-supplied por
 
 ## Testing
 
-Microsoft provides three tests you can use for DFx: a single-device test in the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) intended for testing user-specified devices, a device-level HLK test, and a system-level HLK test intended for testing all devices on a system.
+Microsoft provides three tests for DFx: a single-device test in the [Windows Driver Kit](../download-the-wdk.md) intended for testing user-specified devices, a device-level HLK test, and a system-level HLK test intended for testing all devices on a system.
 
-The single-device test is available as part of the [PwrTest](https://docs.microsoft.com/windows-hardware/drivers/devtest/pwrtest) tool that ships with the WDK.  To access it, run the tool with the `/directedfx` switch.  For more information, see [PwrTest DirectedFx Scenario](../devtest/pwrtest-directedfx-scenario.md).
+The single-device test is available as part of the [PwrTest](../devtest/pwrtest.md) tool that ships with the WDK.  To access it, run the tool with the `/directedfx` switch.  For more information, see [PwrTest DirectedFx Scenario](../devtest/pwrtest-directedfx-scenario.md).
 
 For information about HLK tests, please see the following pages:
 
-- [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
-- [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
+- [Directed FX Single Device Test](/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
+- [Directed FX System Verification Test](/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
 
-Testing DFx after an S4 transition is recommended in order to catch any cases where a driver may not be correctly calling [PoFxReportDevicePoweredOn](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) after resume from S4.
+Testing DFx after an S4 transition is recommended in order to catch any cases where a driver may not be correctly calling [PoFxReportDevicePoweredOn](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) after resume from S4.
 
 ## DFx and S-state transitions
 
@@ -99,14 +107,16 @@ Testing DFx after an S4 transition is recommended in order to catch any cases wh
 
 - With RTD3, a device typically enters a lower power D-state when it goes idle.  If new work arrives, the device immediately wakes to D0.  With DFx, the device should continue to remain in its target D-state (and pend new work on its queues) until PoFx directs it to power back up.
 
+
 ## See Also
 
-- [Prepare hardware for modern standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/prepare-hardware-for-modern-standby)
-- [PwrTest](https://docs.microsoft.com/windows-hardware/drivers/devtest/pwrtest)
-- [PO_FX_DEVICE_V3 structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3)
-- [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_down_callback)
-- [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback)
-- [PoFxCompleteDirectedPowerDown function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxcompletedirectedpowerdown) 
+- [Directed power management](/windows-hardware/design/device-experiences/directed-power-management)
+- [Prepare hardware for modern standby](/windows-hardware/design/device-experiences/prepare-hardware-for-modern-standby)
+- [PwrTest](../devtest/pwrtest.md)
+- [PO_FX_DEVICE_V3 structure](/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3)
+- [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_down_callback)
+- [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback)
+- [PoFxCompleteDirectedPowerDown function](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxcompletedirectedpowerdown) 
 - [PwrTest DirectedFx Scenario](../devtest/pwrtest-directedfx-scenario.md)
-- [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
-- [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
+- [Directed FX Single Device Test](/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
+- [Directed FX System Verification Test](/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)

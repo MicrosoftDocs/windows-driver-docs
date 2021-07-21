@@ -1,7 +1,6 @@
 ---
 title: DispatchPnP Routines
 description: DispatchPnP Routines
-ms.assetid: 909d99ac-5bd3-4b12-bfb4-79713cf2a156
 keywords: ["dispatch routines WDK kernel , DispatchPnP routine", "DispatchPnP routine", "PnP dispatch routines WDK kernel", "IRPs WDK kernel , Plug and Play dispatch routines", "Plug and Play dispatch routines WDK kernel", "IRP_MJ_PNP I/O function code"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-A driver's [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine supports [Plug and Play](implementing-plug-and-play.md) by handling IRPs for the [**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp) I/O function code. Associated with the **IRP\_MJ\_PNP** function code are several minor I/O function codes (see [Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps)), some of which all drivers must handle and some of which can be optionally handled. The PnP manager uses these minor function codes to direct drivers to start, stop, and remove devices and to query drivers about their devices.
+A driver's [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine supports [Plug and Play](introduction-to-plug-and-play.md) by handling IRPs for the [**IRP\_MJ\_PNP**](./irp-mj-pnp.md) I/O function code. Associated with the **IRP\_MJ\_PNP** function code are several minor I/O function codes (see [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md)), some of which all drivers must handle and some of which can be optionally handled. The PnP manager uses these minor function codes to direct drivers to start, stop, and remove devices and to query drivers about their devices.
 
 All drivers for a device must have the opportunity to handle PnP IRPs for the device, except in a few cases where a function or filter driver is allowed to fail the IRP.
 
@@ -27,7 +26,7 @@ Each driver's *DispatchPnP* routine must follow these rules:
 
 -   A driver must handle certain PnP IRPs and may optionally handle others.
 
-    Each PnP driver is required to handle certain IRPs, such as [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device), and can optionally handle others. See [Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps) for information about which IRPs are required and optional for each kind of driver (function drivers, filter drivers, and bus drivers).
+    Each PnP driver is required to handle certain IRPs, such as [**IRP\_MN\_REMOVE\_DEVICE**](./irp-mn-remove-device.md), and can optionally handle others. See [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md) for information about which IRPs are required and optional for each kind of driver (function drivers, filter drivers, and bus drivers).
 
     A driver can fail a required PnP IRP with an appropriate error status, but a driver must not return STATUS\_NOT\_SUPPORTED for such an IRP.
 
@@ -37,13 +36,13 @@ Each driver's *DispatchPnP* routine must follow these rules:
 
 -   If a driver fails an IRP, the driver completes the IRP with an error status and does not pass the IRP down to the next driver.
 
-    To fail an IRP like [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-stop-device), a driver sets **Irp-&gt;IoStatus.Status** to STATUS\_UNSUCCESSFUL. Additional error status values for other IRPs include STATUS\_INSUFFICIENT\_RESOURCES and STATUS\_INVALID\_DEVICE\_STATE.
+    To fail an IRP like [**IRP\_MN\_QUERY\_STOP\_DEVICE**](./irp-mn-query-stop-device.md), a driver sets **Irp-&gt;IoStatus.Status** to STATUS\_UNSUCCESSFUL. Additional error status values for other IRPs include STATUS\_INSUFFICIENT\_RESOURCES and STATUS\_INVALID\_DEVICE\_STATE.
 
     Drivers do not set STATUS\_NOT\_SUPPORTED for IRPs that they handle. This is the initial status set by the PnP manager. If an IRP is completed with this status, it means that no drivers in the stack handled the IRP; all drivers just passed the IRP to the next driver.
 
--   A driver must handle a PnP IRP in its dispatch routine (on the IRP's way down the device stack), in an [**IoCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine (on the IRP's way back up the device stack), or both, as specified in the reference page for the IRP.
+-   A driver must handle a PnP IRP in its dispatch routine (on the IRP's way down the device stack), in an [**IoCompletion**](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine (on the IRP's way back up the device stack), or both, as specified in the reference page for the IRP.
 
-    Some PnP IRPs, such as [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device), must be handled first by the driver at the top of the device stack and then by each next-lower driver. Others, such as [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device), must be handled first by the parent bus driver. Still others, such as [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities), can be handled both on the way down the device stack and the way back up. See [Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps) for the rules that apply to each PnP IRP. See [Postponing PnP IRP Processing Until Lower Drivers Finish](postponing-pnp-irp-processing-until-lower-drivers-finish.md) For information about handling PnP IRPs that must be processed first by the parent bus driver.
+    Some PnP IRPs, such as [**IRP\_MN\_REMOVE\_DEVICE**](./irp-mn-remove-device.md), must be handled first by the driver at the top of the device stack and then by each next-lower driver. Others, such as [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md), must be handled first by the parent bus driver. Still others, such as [**IRP\_MN\_QUERY\_CAPABILITIES**](./irp-mn-query-capabilities.md), can be handled both on the way down the device stack and the way back up. See [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md) for the rules that apply to each PnP IRP. See [Postponing PnP IRP Processing Until Lower Drivers Finish](postponing-pnp-irp-processing-until-lower-drivers-finish.md) For information about handling PnP IRPs that must be processed first by the parent bus driver.
 
 -   A driver must add information to an IRP on the IRP's way down the device stack and modify or remove information on the IRP's way back up.
 
@@ -53,13 +52,8 @@ Each driver's *DispatchPnP* routine must follow these rules:
 
 -   When a driver sends a PnP IRP, it must send the IRP to the top driver in the device stack.
 
-    Most PnP IRPs are sent by the PnP manager, but some can be sent by drivers (for example, [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface)). A driver must send a PnP IRP to the driver at the top of the device stack. Call [**IoGetAttachedDeviceReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetattacheddevicereference) to get a pointer to the device object for the driver at the top of the device stack.
+    Most PnP IRPs are sent by the PnP manager, but some can be sent by drivers (for example, [**IRP\_MN\_QUERY\_INTERFACE**](./irp-mn-query-interface.md)). A driver must send a PnP IRP to the driver at the top of the device stack. Call [**IoGetAttachedDeviceReference**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetattacheddevicereference) to get a pointer to the device object for the driver at the top of the device stack.
 
 
  
-
- 
-
-
-
 

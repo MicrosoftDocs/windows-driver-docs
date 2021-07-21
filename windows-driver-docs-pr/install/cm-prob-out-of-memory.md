@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_OUT_OF_MEMORY
 description: CM_PROB_OUT_OF_MEMORY
-ms.assetid: 60b94407-2d06-43d9-b7e1-1ae74c28a216
 keywords:
 - CM_PROB_OUT_OF_MEMORY
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_OUT_OF_MEMORY
+# Code 3 - CM_PROB_OUT_OF_MEMORY
 
-This function is reserved for system use.
-
-Running out of memory − the system is probably running low on system memory.
+This Device Manager error message indicates that the system is probably running low on system memory.
 
 ## Error Code
 

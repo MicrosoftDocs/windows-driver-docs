@@ -1,7 +1,6 @@
 ---
 title: MRxSetSdInfo routine
 description: TheMRxSetSdInfo routine is called by RDBSS to request that a network mini-redirector set security descriptor information on a file system object.
-ms.assetid: 2a03dde1-440c-4e59-b989-ca4b58b91f3a
 keywords: ["MRxSetSdInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 # MRxSetSdInfo routine
 
 
-The*MRxSetSdInfo* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector set security descriptor information on a file system object.
+The*MRxSetSdInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set security descriptor information on a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxSetSdInfo;
@@ -32,14 +30,12 @@ NTSTATUS MRxSetSdInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxSetSdInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -96,8 +92,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxSetSdInfo* in response to receiving an [**IRP\_MJ\_SET\_SECURITY**](irp-mj-set-security.md) request.
 
@@ -107,8 +102,7 @@ The **SetSecurity.SecurityInformation** member is set to **IrpSp-&gt;Parameters.
 
 The **SetSecurity.SecurityDescriptor** member is set to **IrpSp-&gt;Parameters.SetSecurity.SecurityDescriptor**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -130,7 +124,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -155,11 +149,4 @@ Requirements
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
  
-
- 
-
-
-
-
-
 

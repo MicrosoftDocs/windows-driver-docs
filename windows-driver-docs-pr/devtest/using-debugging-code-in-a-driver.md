@@ -1,7 +1,6 @@
 ---
 title: Using Debugging Code in a Driver
 description: Using Debugging Code in a Driver
-ms.assetid: 6ed74bcc-290c-44e3-943e-4169527dfa18
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,13 +15,7 @@ This section includes:
 
 [Debugging Code Overview](debugging-code-overview.md)
 
-[Debugging Code Reference](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544622(v=vs.85))
+[Debugging Code Reference](/previous-versions/windows/hardware/previsioning-framework/ff544622(v=vs.85))
 
  
-
- 
-
-
-
-
 

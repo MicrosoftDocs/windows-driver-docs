@@ -1,7 +1,6 @@
 ---
 title: GetJobHistoryResponse element
 description: The required GetJobHistoryResponse element returns a summary of completed jobs.
-ms.assetid: 85c9edb4-fe6c-49a7-899a-71ce65e38852
 keywords: ["GetJobHistoryResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -9,17 +8,15 @@ api_name:
 - wscn GetJobHistoryResponse
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---
 
 # GetJobHistoryResponse element
 
-
 The required **GetJobHistoryResponse** element returns a summary of completed jobs.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetJobHistoryResponse>
@@ -27,37 +24,21 @@ Usage
 </wscn:GetJobHistoryResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobhistory.md" data-raw-source="[&lt;strong&gt;JobHistory&lt;/strong&gt;](jobhistory.md)"><strong>JobHistory</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobHistory**](jobhistory.md) |
 
 ## Parent elements
 
-
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetJobHistoryResponse** operation element.
 
@@ -65,8 +46,7 @@ A client can call [**GetJobHistoryRequest**](getjobhistoryrequest.md) to determi
 
 The amount of job history that the WSD Scan Service maintains is implementation-specific.
 
-Examples
---------
+## Examples
 
 The following code example shows how to return no job history in response to a client's request for job history.
 
@@ -149,17 +129,6 @@ The following code example returns a list of jobs and associated data for the la
 
 ## See also
 
-
 [**GetJobHistoryRequest**](getjobhistoryrequest.md)
 
 [**JobHistory**](jobhistory.md)
-
-
-
-
-
-
-
-
-
-

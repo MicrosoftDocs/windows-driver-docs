@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_DOCUMENT\_HANDLING\_CAPACITY
 description: The WIA\_DPS\_DOCUMENT\_HANDLING\_CAPACITY property is obsolete and should not be used.
-ms.assetid: a1d633a5-5dc1-420f-a9c9-b44422093478
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_CAPACITY Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

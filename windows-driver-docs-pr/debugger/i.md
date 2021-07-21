@@ -1,7 +1,6 @@
 ---
 title: I (Windows Debugger Glossary)
-description: Glossary page - H
-ms.assetid: 4415522d-6ea3-42f6-9acc-0e3ceaa36dc7
+description: Glossary page - I
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -39,7 +38,7 @@ A breakpoint that automatically occurs near the beginning of a debugging session
 For more information, see [Using Breakpoints](using-breakpoints.md).
 
 <span id="input_callback_objects"></span><span id="INPUT_CALLBACK_OBJECTS"></span>**input callback objects**  
-Instances of the [IDebugInputCallbacks](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebuginputcallbacks) interface which have been registered with a client. Whenever the debugger engine requires input it asks the input callbacks to provide it.
+Instances of the [IDebugInputCallbacks](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebuginputcallbacks) interface which have been registered with a client. Whenever the debugger engine requires input it asks the input callbacks to provide it.
 
 See also output callbacks.
 
@@ -55,10 +54,4 @@ A condition that disrupts normal command execution and transfers control to an i
 The priority ranking of an interrupt. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation.
 
  
-
- 
-
-
-
-
 

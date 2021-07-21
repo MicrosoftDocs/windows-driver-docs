@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_AUDIO\_ENCODER
 description: CODECAPI\_AUDIO\_ENCODER
-ms.assetid: c66cbbe1-36dc-4088-8ecd-7663d4503d6e
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -52,13 +51,7 @@ The property value (operation data) is of type BOOL and specifies whether the mi
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
-
- 
-
-
-
-
 

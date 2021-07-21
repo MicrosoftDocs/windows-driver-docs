@@ -1,7 +1,6 @@
 ---
 title: .jdinfo (Use JIT_DEBUG_INFO)
 description: The .jdinfo command uses a JIT_DEBUG_INFO structure as the source of the exception and context for just in time (JIT) debugging.
-ms.assetid: C35A2A04-CF0E-475e-8471-2A8562BB3650
 keywords: ["Use JIT_DEBUG_INFO (.jdinfo) command ----- Appendix", "JIT_DEBUG_INFO ----- Appendix", ".jdinfo (Use JIT_DEBUG_INFO) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -104,8 +103,7 @@ CrashAV_x64!wmain+0x14:
 00007ff7`91d81014 45891b          mov     dword ptr [r11],r11d ds:00000000`00000000=????????
 ```
 
-Remarks
--------
+## Remarks
 
 The **.jdinfo** command uses the **AeDebug** registry information introduced in Windows Vista. For more information about the registry keys used, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md). The **.jdinfo** command takes the address of a JIT\_DEBUG\_INFO that the system set up for **AeDebug** and sets the context to the exception that caused the crash.
 

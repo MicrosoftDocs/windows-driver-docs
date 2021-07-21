@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaPIDFilter
 description: KSPROPSETID\_BdaPIDFilter
-ms.assetid: 9a2655cb-d7e9-4f61-803a-63fe3fd3501b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: AutoPlay for UWP device apps
 description: This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app.
-ms.assetid: A95382E6-DFF4-4F36-9C9B-4B26161160DE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Device manufacturers can specify their UWP device app as an AutoPlay handler for their device. They can also let other UWP apps act as AutoPlay handlers for their device. This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app. For more info about device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Note**  You don't need to use device metadata for all types of AutoPlay. Without device metadata, AutoPlay lets you provide your app as an option when a user connects a device to a PC. This includes non-volume devices like a camera or media player, or volume devices like a USB thumb drive, SD card, or DVD. AutoPlay also lets you register your app as an option when users share files between two machines by using Proximity (tapping). But your app can't install automatically without device metadata. For more info about using AutoPlay when device metadata isn't required, see [Auto-launching with AutoPlay](https://go.microsoft.com/fwlink/p/?LinkID=254861).
+**Note**  You don't need to use device metadata for all types of AutoPlay. Without device metadata, AutoPlay lets you provide your app as an option when a user connects a device to a PC. This includes non-volume devices like a camera or media player, or volume devices like a USB thumb drive, SD card, or DVD. AutoPlay also lets you register your app as an option when users share files between two machines by using Proximity (tapping). But your app can't install automatically without device metadata. For more info about using AutoPlay when device metadata isn't required, see [Auto-launching with AutoPlay](/previous-versions/windows/apps/hh452731(v=win.10)).
 
  
 
@@ -26,24 +25,24 @@ Depending on the version of your app, you can enable AutoPlay in these ways:
 
 This example shows an AutoPlay dialog for an app named **Contoso Dashboard** that has registered as the AutoPlay handler for the **Contoso Pedometer** device:
 
-![example autoplay dialog for a device](images/autoplayfordeviceapps.png)
+![example autoplay dialog for a device.](images/autoplayfordeviceapps.png)
 
 When using device metadata with your app, AutoPlay supports these device types:
 
 | Device class                 | AutoPlay supported in Windows 8                                                                    | AutoPlay supported in Windows 8.1                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Digital still camera         | ![autoplay is supported for this device class in windows 8](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Digital video camcorder      | ![autoplay is supported for this device class in windows 8](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Portable media player        | ![autoplay is supported for this device class in windows 8](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Cell phone                   | ![autoplay is supported for this device class in windows 8](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Mobile broadband             | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
-| Webcam                       | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
-| Human Interface Device (HID) | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Printers, scanners, fax      | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
-| PC                           | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
-| Smart card                   | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| General port                 | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Bluetooth device             | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| Digital still camera         | ![autoplay is supported for this device class in windows 8.](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Digital video camcorder      | ![autoplay is supported for this device class in windows 8.](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Portable media player        | ![autoplay is supported for this device class in windows 8.](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Cell phone                   | ![autoplay is supported for this device class in windows 8.](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Mobile broadband             | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| Webcam                       | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| Human Interface Device (HID) | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Printers, scanners, fax      | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| PC                           | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| Smart card                   | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| General port                 | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Bluetooth device             | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
 
  
 
@@ -151,16 +150,9 @@ In this example, the activation event parameter (eventObj) carries the device's 
 
 [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)
 
-[Auto-launching with AutoPlay](https://go.microsoft.com/fwlink/p/?LinkID=254861)
+[Auto-launching with AutoPlay](/previous-versions/windows/apps/hh452731(v=win.10))
 
-[Launching, resuming, and multitasking](https://go.microsoft.com/fwlink/p/?LinkID=309316)
-
- 
+[Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
 
  
-
-
-
-
-
 

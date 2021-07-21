@@ -1,7 +1,6 @@
 ---
 title: Windows Storage Driver Architecture
 description: Windows Storage Driver Architecture
-ms.assetid: 16636899-fab9-46e8-ab9d-b8d86519b08a
 keywords:
 - storage drivers WDK , architecture
 - storage drivers WDK , types
@@ -17,7 +16,7 @@ I/O requests from a user application or kernel component reach storage class dri
 
 The following figure shows the layered architecture of Windows storage drivers.
 
-![diagram illustrating the layered architecture of nt-based operating system storage drivers](images/kg201-1.png)
+![diagram illustrating the layered architecture of nt-based operating system storage drivers.](images/kg201-1.png)
 
 Starting from the bottom of the figure, the following describes each type of storage driver:
 

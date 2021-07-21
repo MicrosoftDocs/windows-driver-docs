@@ -1,7 +1,6 @@
 ---
 title: Handling SRB_FUNCTION_ABORT_COMMAND
 description: Handling SRB_FUNCTION_ABORT_COMMAND
-ms.assetid: 74d46df6-2e3e-45d8-bedb-a81a80a0aec1
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
@@ -22,7 +21,7 @@ For an abort request, the miniport driver's *HwScsiStartIo* routine should verif
 
 1.  Set the input SRB's **SrbStatus** to SRB\_STATUS\_ABORT\_FAILED.
 
-2.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with the _NotificationType_**RequestComplete** and with the input SRB.
+2.  Call [**ScsiPortNotification**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with the _NotificationType_**RequestComplete** and with the input SRB.
 
 3.  Call **ScsiPortNotification** again with the _NotificationType_**NextRequest**, or with **NextLuRequest** if the HBA supports tagged queuing or multiple requests per logical unit.
 
@@ -33,9 +32,4 @@ Otherwise, the *HwScsiStartIo* routine does the following:
 2.  Programs the HBA to abort the given **NextSrb** request.
 
  
-
- 
-
-
-
 

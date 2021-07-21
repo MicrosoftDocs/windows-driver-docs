@@ -1,7 +1,6 @@
 ---
 title: address
 description: The address extension displays information about the memory that the target process or target computer uses.
-ms.assetid: 9bbde680-8523-4db2-bb7e-fdacdaf1aa89
 keywords: ["address Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -352,8 +351,7 @@ Displays minimal Help text for this extension in the [Debugger Command window](d
 
 For more information about how to display and search memory, see [Reading and Writing Memory](reading-and-writing-memory.md). For additional extensions that display memory properties, see [**!vm**](-vm.md) (kernel mode) and [**!vprot**](-vprot.md) (user mode).
 
-Remarks
--------
+## Remarks
 
 Without any parameters, the **!address** extension displays information about the whole address space. The **!address -summary** command shows only the summary.
 

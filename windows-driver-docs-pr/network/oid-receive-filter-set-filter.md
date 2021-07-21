@@ -1,7 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_SET_FILTER
 description: An overlying driver issues an OID method request of OID_RECEIVE_FILTER_SET_FILTER to set a filter on a network adapter.
-ms.assetid: ec3e119e-662f-48a6-8c68-20da20590b24
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_SET_FILTER Network Drivers Starting with Windows Vista
@@ -12,28 +11,27 @@ ms.localizationpriority: medium
 
 An overlying driver issues an OID method request of OID\_RECEIVE\_FILTER\_SET\_FILTER to set a filter on a network adapter.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a caller-allocated buffer. This buffer is formatted to contain the following:
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a caller-allocated buffer. This buffer is formatted to contain the following:
 
--   An [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure that specifies the parameters for an NDIS receive filter.
+-   An [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure that specifies the parameters for an NDIS receive filter.
 
--   An array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures that specifies the filter test criterion for a field in a network packet header.
+-   An array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures that specifies the filter test criterion for a field in a network packet header.
 
-After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure. If the overlying driver is creating a new receive filter, NDIS updates this structure with a new filter identifier.
+After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure. If the overlying driver is creating a new receive filter, NDIS updates this structure with a new filter identifier.
 
-Remarks
--------
+## Remarks
 
 NDIS receive filters are used in the following NDIS interfaces:
 
--   [NDIS Packet Coalescing](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-packet-coalescing). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](https://docs.microsoft.com/windows-hardware/drivers/network/managing-packet-coalescing-receive-filters).
+-   [NDIS Packet Coalescing](./ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](./guidelines-for-managing-packet-coalescing-receive-filters.md).
 
--   [Single Root I/O Virtualization (SR-IOV)](https://docs.microsoft.com/windows-hardware/drivers/network/single-root-i-o-virtualization--sr-iov-). For more information about how to use receive filters in this interface, see [Setting a Receive Filter on a Virtual Port](https://docs.microsoft.com/windows-hardware/drivers/network/setting-a-receive-filter-on-a-virtual-port).
+-   [Single Root I/O Virtualization (SR-IOV)](./single-root-i-o-virtualization--sr-iov-.md). For more information about how to use receive filters in this interface, see [Setting a Receive Filter on a Virtual Port](./setting-a-receive-filter-on-a-virtual-port.md).
 
--   [Virtual Machine Queue (VMQ)](https://docs.microsoft.com/windows-hardware/drivers/network/virtual-machine-queue--vmq--in-ndis-6-20). For more information about how to use receive filters in this interface, see [Setting and Clearing VMQ Filters](https://docs.microsoft.com/windows-hardware/drivers/network/setting-and-clearing-vmq-filters).
+-   [Virtual Machine Queue (VMQ)](./virtual-machine-queue--vmq--in-ndis-6-20.md). For more information about how to use receive filters in this interface, see [Setting and Clearing VMQ Filters](./setting-and-clearing-vmq-filters.md).
 
 The OID method request of OID\_RECEIVE\_FILTER\_SET\_FILTER is mandatory for miniport drivers that support the NDIS packet coalescing, SR-IOV, or VMQ interface.
 
-The overlying driver initializes the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure with its requested filter configuration. NDIS assigns a filter identifier in the **FilterId** member of the NDIS\_RECEIVE\_FILTER\_PARAMETERS structure and passes the method request to the underlying miniport driver.
+The overlying driver initializes the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure with its requested filter configuration. NDIS assigns a filter identifier in the **FilterId** member of the NDIS\_RECEIVE\_FILTER\_PARAMETERS structure and passes the method request to the underlying miniport driver.
 
 Each filter that is set on a receive queue has a unique filter identifier for a network adapter. That is, the filter identifiers are not duplicated on different queues that the network adapter manages. When NDIS receives an OID request to set a filter on a receive queue, it verifies the filter parameters. After NDIS allocates the necessary resources and the filter identifier, it submits the OID request to the underlying network adapter. If the network adapter can successfully allocate the necessary software and hardware resources for the filter, it completes the OID request with a return status of NDIS\_STATUS\_SUCCESS.
 
@@ -43,7 +41,7 @@ Each filter that is set on a receive queue has a unique filter identifier for a 
 
 The miniport driver must retain the filter identifiers for the allocated receive filters. NDIS uses the identifier of a filter in later OID requests to change the receive filter parameters or clear the receive filter.
 
-After a miniport driver receives an [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](oid-receive-filter-queue-allocation-complete.md) request and it has filters that are set on the queue, the queue is in the *Running* state. In this state, the miniport driver can start indications of packets in the queue by calling [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists).
+After a miniport driver receives an [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](oid-receive-filter-queue-allocation-complete.md) request and it has filters that are set on the queue, the queue is in the *Running* state. In this state, the miniport driver can start indications of packets in the queue by calling [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists).
 
 ### Additional Guidelines for the SR-IOV Interface
 
@@ -84,7 +82,7 @@ The following points apply to miniport drivers that support the VMQ interface:
 The miniport driver returns one of the following status codes for the OID method request of OID\_RECEIVE\_FILTER\_SET\_FILTER:
 
 <a href="" id="ndis-status-success"></a>NDIS\_STATUS\_SUCCESS  
-The filter was set on the queue successfully. The information buffer contains the updated [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure.
+The filter was set on the queue successfully. The information buffer contains the updated [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure.
 
 <a href="" id="ndis-status-pending"></a>NDIS\_STATUS\_PENDING  
 The request is pending completion. The final status code and results will be passed to the OID request completion handler of the caller.
@@ -93,7 +91,7 @@ The request is pending completion. The final status code and results will be pas
 One or more of the parameters that the overlying driver provided was not valid.
 
 <a href="" id="ndis-status-invalid-length"></a>NDIS\_STATUS\_INVALID\_LENGTH  
-The information buffer was too short. NDIS sets the **DATA.METHOD\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to the minimum buffer size that is required.
+The information buffer was too short. NDIS sets the **DATA.METHOD\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure to the minimum buffer size that is required.
 
 <a href="" id="ndis-status-not-supported"></a>NDIS\_STATUS\_NOT\_SUPPORTED  
 The NDIS version of the miniport driver is an earlier version than 6.20.
@@ -101,8 +99,7 @@ The NDIS version of the miniport driver is an earlier version than 6.20.
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for other reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -124,15 +121,15 @@ Requirements
 ## See also
 
 
-[**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists)
+[**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists)
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
-[**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters)
+[**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters)
 
-[**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list)
+[**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)
 
-[**NET\_BUFFER\_LIST\_RECEIVE\_FILTER\_ID**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-receive-filter-id)
+[**NET\_BUFFER\_LIST\_RECEIVE\_FILTER\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_receive_filter_id)
 
 [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md)
 

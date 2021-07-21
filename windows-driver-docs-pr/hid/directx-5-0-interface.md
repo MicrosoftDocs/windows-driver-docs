@@ -1,7 +1,6 @@
 ---
 title: DirectX 5.0 Interface
 description: DirectX 5.0 Interface
-ms.assetid: 416a9187-d64f-48a4-8868-fd5158d58a25
 keywords:
 - joysticks WDK HID , interfaces
 - virtual joystick drivers WDK HID , interfaces
@@ -61,26 +60,21 @@ The following example shows a joystick minidriver registration sequence:
 
  
 
-The [**VJREGDRVINFO**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543581(v=vs.85)) structure is passed to the new registration.
+The [**VJREGDRVINFO**](/previous-versions/windows/hardware/drivers/ff543581(v=vs.85)) structure is passed to the new registration.
 
 The **dwFunction** member of the VJREGDRVINFO structure must be VJRT\_LOADED; all other values are reserved. VJRT\_LOADED is used in the new interface in the same way that the registration is used in the original interface, that is, to pass the callbacks to VJoyD in response to the minidriver being loaded.
 
-The control callbacks and the poll callback are merged into a single table because all drivers must supply the control callbacks and very few devices are output only (and therefore do not need a poll callback). These callbacks are registered using the [**VJPOLLREG**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543577(v=vs.85)) structure.
+The control callbacks and the poll callback are merged into a single table because all drivers must supply the control callbacks and very few devices are output only (and therefore do not need a poll callback). These callbacks are registered using the [**VJPOLLREG**](/previous-versions/windows/hardware/drivers/ff543577(v=vs.85)) structure.
 
 The **lpCfg** member of the VJPOLLREG structure points to a standard configuration manager callback, exactly like the CfgRoutine in the original interface. The major difference is that VJoyD calls the configuration manager callback as appropriate. VJoyD links drivers to the installed device nodes and calls this callback to inform the driver of configuration manager activity. Whereas the previous interface called all loaded drivers for each configuration manager callback, the DirectX 5.0 and later interface only calls the one driver it has linked to the device node which has changed. Also, because configuration manager activity may happen while the driver is not loaded, VJoyD implements a primitive caching system so that if a device node has been started, the driver is informed of this device node when it is loaded.
 
 Because drivers are always called for their resource allocations, they should not check default ports to find the resources they need. Unfortunately, drivers that had to find some way to work with the previous interface still work in the old way. This means that while VJoyD only allocates a set of resources to a single driver, any old drivers that are loaded can still use ports that have not been allocated to them. When resources have been allocated, the driver should perform any handshaking required with the device to determine the device state.
 
-The [*Initialize*](https://docs.microsoft.com/previous-versions/ff541025(v=vs.85)) callback (pointed to by the **fpInitialize** member of the VJPOLLREG structure) replaces the *JoyId* callback in the previous interface. The main difference is that VJoyD passes back to the driver any device instance identification that the device passed to VJoyD during registration so the instances can be distinguished if the driver supports more than one device.
+The [*Initialize*](/previous-versions/ff541025(v=vs.85)) callback (pointed to by the **fpInitialize** member of the VJPOLLREG structure) replaces the *JoyId* callback in the previous interface. The main difference is that VJoyD passes back to the driver any device instance identification that the device passed to VJoyD during registration so the instances can be distinguished if the driver supports more than one device.
 
-**Note**   If you need to open registry keys, you should use the [VJOYD\_OpenConfigKey\_Service](https://docs.microsoft.com/previous-versions/ff543545(v=vs.85)) and [VJOYD\_OpenTypeKey\_Service](https://docs.microsoft.com/previous-versions/ff543549(v=vs.85)) macros instead of opening the registry keys directly. Using these service macros ensures that the correct registry branch is opened. In addition, the service macros will be supported in future versions of DirectInput when the underlying registry data may be structured differently.
-
- 
+**Note**   If you need to open registry keys, you should use the [VJOYD\_OpenConfigKey\_Service](/previous-versions/ff543545(v=vs.85)) and [VJOYD\_OpenTypeKey\_Service](/previous-versions/ff543549(v=vs.85)) macros instead of opening the registry keys directly. Using these service macros ensures that the correct registry branch is opened. In addition, the service macros will be supported in future versions of DirectInput when the underlying registry data may be structured differently.
 
  
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Installing an Audio Adapter Service
 description: Installing an Audio Adapter Service
-ms.assetid: 465005da-bf06-497b-801c-fe5aa19a3974
 keywords:
 - audio adapters WDK , service installations
 - adapter drivers WDK audio , service installations
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 # Installing an Audio Adapter Service in Windows
 
-The following [**INF AddService directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) installs the adapter driver Xyzaud.sys for the XYZ Audio Device:
+The following [**INF AddService directive**](../install/inf-addservice-directive.md) installs the adapter driver Xyzaud.sys for the XYZ Audio Device:
 
 ```cpp
   [XYZ-Audio-Device.Services.NTX86]
@@ -28,9 +27,4 @@ The following [**INF AddService directive**](https://docs.microsoft.com/windows-
 ```
 
  
-
- 
-
-
-
 

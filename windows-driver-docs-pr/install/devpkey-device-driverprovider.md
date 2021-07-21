@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverProvider
 description: DEVPKEY_Device_DriverProvider
-ms.assetid: cbc1582a-1f43-4239-b00a-f7c99bf2deee
 keywords: ["DEVPKEY_Device_DriverProvider Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,13 +17,19 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_DriverProvider
 
 
-The DEVPKEY_Device_DriverProvider device property represents the name of the provider of the [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) for a device instance.
+The DEVPKEY_Device_DriverProvider device property represents the name of the provider of the [driver package](./driver-packages.md) for a device instance.
 
 <table>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -52,48 +57,26 @@ The DEVPKEY_Device_DriverProvider device property represents the name of the pro
 
  
 
-Remarks
--------
+## Remarks
 
-The value of DEVPKEY_Device_DriverProvider is supplied by the **Provider** directive that is included in the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) of a device INF file.
+The value of DEVPKEY_Device_DriverProvider is supplied by the **Provider** directive that is included in the [**INF Version section**](./inf-driverver-directive.md) of a device INF file.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverProvider.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverProvider.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ProviderName** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-driver-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ProviderName** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive)
+[**INF Version Section**](./inf-driverver-directive.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

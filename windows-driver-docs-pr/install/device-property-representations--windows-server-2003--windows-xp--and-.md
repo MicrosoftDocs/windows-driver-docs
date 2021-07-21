@@ -1,7 +1,6 @@
 ---
 title: Device Property Representations (Windows Server 2003, Windows XP)
 description: Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)
-ms.assetid: 124172d7-52a4-423c-a1fd-eec554f328d6
 keywords:
 - device properties WDK device installations , representations
 ms.date: 04/20/2017
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)
 
 
-Windows Server 2003, Windows XP, and Windows 2000 do not support the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) that Windows Vista and later versions of Windows support. However, most of the [system-defined device properties](https://docs.microsoft.com/previous-versions/ff553413(v=vs.85)) that are included in the unified device property model have corresponding representations that are supported by these earlier versions of Windows. On these earlier versions of Windows, the way a device property is represented, and the mechanism to access a property, depends on the component type and property type. These representations and mechanisms include the following:
+Windows Server 2003, Windows XP, and Windows 2000 do not support the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) that Windows Vista and later versions of Windows support. However, most of the [system-defined device properties](/previous-versions/ff553413(v=vs.85)) that are included in the unified device property model have corresponding representations that are supported by these earlier versions of Windows. On these earlier versions of Windows, the way a device property is represented, and the mechanism to access a property, depends on the component type and property type. These representations and mechanisms include the following:
 
 -   A device property is represented by a system-defined identifier that is supplied as an input parameter to a [SetupAPI function](setupapi.md) to access the device property.
 
@@ -32,10 +31,4 @@ The following topics provide information about how to access device properties o
  
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: title element
 description: The required title element provides text that is displayed in the title of the event notification message.
-ms.assetid: 60583593-9fe9-4c3c-ab86-3e7c37a8e199
 keywords: ["title element Print Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,13 @@ ms.localizationpriority: medium
 
 The required **title** element provides text that is displayed in the title of the event notification message.
 
-The **title** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **title** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

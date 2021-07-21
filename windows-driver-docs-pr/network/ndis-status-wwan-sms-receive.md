@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_SMS_RECEIVE
 description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_RECEIVE notification to inform the MB Service about either the completion of a previous read request through a OID_WWAN_SMS_READ \ 160;query request, or the arrival of a new class-0 (flash/alert) message from the network provider as an event notification. Miniport drivers can also send unsolicited events with this notification.This notification uses the NDIS_WWAN_SMS_RECEIVE structure.
-ms.assetid: fc1c3587-8bba-4ffd-9561-4140c307c705
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_SMS_RECEIVE Network Drivers Starting with Windows Vista
@@ -15,10 +14,9 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_SMS\_RECEIVE notification to inform
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_SMS\_RECEIVE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive) structure.
+This notification uses the [**NDIS\_WWAN\_SMS\_RECEIVE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive) structure.
 
-Remarks
--------
+## Remarks
 
 RequestId is set to "0" by the miniport driver to indicate the arrival of the new class-0 (flash/alert) message. Arrival of new class-0 (flash/alert) messages is dependent on the current network registration state.
 
@@ -26,10 +24,9 @@ If the request for read results in retrieval of large number of SMS records that
 
 The following diagram represents the usage of the multiple indication method for large number of SMS record retrieval:
 
-![diagram illustrating the usage of the multiple indication method for a large number of sms record retrieval](images/wwansmsrecordretrieval.png)
+![diagram illustrating the usage of the multiple indication method for a large number of sms record retrieval.](images/wwansmsrecordretrieval.png)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -53,12 +50,7 @@ Requirements
 
 [OID\_WWAN\_SMS\_READ](oid-wwan-sms-read.md)
 
-[**NDIS\_WWAN\_SMS\_RECEIVE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive)
+[**NDIS\_WWAN\_SMS\_RECEIVE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive)
 
  
-
- 
-
-
-
 

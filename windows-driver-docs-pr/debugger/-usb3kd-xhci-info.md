@@ -1,7 +1,6 @@
 ---
 title: usb3kd.xhci_info
 description: The usb3kd.xhci_info extension displays all the XHCI commands for an individual USB 3.0 host controller.
-ms.assetid: C3C3B379-4871-4293-9C35-B64F3A5E1348
 keywords: ["usb3kd.xhci_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,13 +32,11 @@ Address of the device extension for the host controller's functional device obje
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
-The output the **!usb3kd.xhci\_info** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
+The output the **!usb3kd.xhci\_info** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
-Examples
---------
+## Examples
 
 You can get address of the device extension from the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command or from a variety of other debugger commands. For example, the [**!devstack**](-devstack.md) command displays the address of the device extension. In the following example, the address of the device extension for the host controller's FDO is fffffa800536e2d0.
 
@@ -88,14 +85,7 @@ Now you can pass the address of the device extension to the **!xhci\_info** comm
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

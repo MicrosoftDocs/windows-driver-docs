@@ -1,7 +1,6 @@
 ---
 title: Support for Power Management
 description: Support for Power Management
-ms.assetid: 77e8be50-9623-4085-8d38-44db676a9a1f
 keywords: ["power management WDK kernel , support requirements", "power management WDK kernel , about power management", "PnP WDK power management", "Plug and Play WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-To support power management, drivers must also support [Plug and Play](implementing-plug-and-play.md) (PnP). Driver support for PnP is required because many power management operations are associated with installing and removing devices, and the PnP manager notifies drivers of these events by means of PnP IRPs. Additionally, drivers report device support for power management in response to PnP queries for device capabilities.
+To support power management, drivers must also support [Plug and Play](introduction-to-plug-and-play.md) (PnP). Driver support for PnP is required because many power management operations are associated with installing and removing devices, and the PnP manager notifies drivers of these events by means of PnP IRPs. Additionally, drivers report device support for power management in response to PnP queries for device capabilities.
 
 Power management works on two levels: one applies to individual devices and the other to the system as a whole.
 

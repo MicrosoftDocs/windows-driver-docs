@@ -1,7 +1,6 @@
 ---
 title: Communication Class Interface
 description: Communication Class Interface
-ms.assetid: b0414d0e-6e1b-4d84-8ca4-40a59fb1b099
 keywords:
 - communication
 ms.date: 04/20/2017

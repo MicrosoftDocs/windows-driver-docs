@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_SBYTE
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BYTE identifier represents the base-data-type identifier that indicates the data type is a SBYTE-typed signed integer.
-ms.assetid: d2c503aa-4427-4745-b3c2-57b6ebd0e93c
 keywords: ["DEVPROP_TYPE_SBYTE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BYTE identifier represents the base-data-type identifier that indicates the data type is a SBYTE-typed signed integer.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_SBYTE can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -33,8 +31,7 @@ To set a property whose data type is DEVPROP_TYPE_BYTE, call the corresponding *
 
 - Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

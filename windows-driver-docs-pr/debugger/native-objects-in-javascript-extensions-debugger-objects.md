@@ -1,8 +1,7 @@
 ---
 title: Native Debugger Objects in JavaScript Extensions - Debugger Object Details
 description: Native debugger objects represent various constructs of the debugger environment. This topic describes additional details about the native debugger objects in JavaScript extensions.
-ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE9
-ms.date: 01/15/2020
+ms.date: 04/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -15,6 +14,8 @@ Native debugger objects represent various constructs and behaviors of the debugg
 For information about Debugger object JavaScript extensions, see [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
 
 For general information about working with JavaScript, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md).
+
+For example JavaScript scripts and extensions, the debugger team hosts a GitHub repo at https://github.com/Microsoft/WinDbg-Samples.
 
 ## <span id="Debugger-Objects"></span><span id="debugger-objects"></span><span id="DEBUGGER-OBJECTS"></span>Debugger Objects in JavaScript Extensions
 
@@ -148,6 +149,11 @@ As mentioned, a JavaScript script can get access to native objects by having the
 <p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p>
 <p>If the optional <em>typeName</em> argument is supplied, the symbol will be assumed to be of the passed type and the type indicated in symbol(s) will be ignored. Note that any caller which expects to operate on public symbols for a module should always supply an explicit type name.</p></td>
 </tr>
+<tr>
+<td align="left"><p>host.getModuleContainingSymbol</p></td>
+<td align="left">getModuleContainingSymbol(location, [contextInheritor])</td>
+<td align="left"><p>Returns the symbol (e.g.: function or data) which contains the given address.  Note that this will only work if there are <i>private</i> symbols for the module containing the given address.</p><p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
+</tr>
 <tr class="even">
 <td align="left"><p>host.createPointerObject</p></td>
 <td align="left"><p>createPointerObject(address, moduleName, typeName, [contextInheritor])</p></td>
@@ -186,10 +192,10 @@ Directly within the host object, the following properties, methods, and construc
 
 <table>
 <colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="30%" />
 </colgroup>
 <thead>
 <tr class="header">

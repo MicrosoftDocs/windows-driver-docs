@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES
 description: The KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES property returns the list of audio signal processing modes supported by a pin factory.
-ms.assetid: 95536F80-D4E0-48CB-8DB2-603C4CEF0053
 keywords: ["KSPROPERTY_AUDIOSIGNALPROCESSING_MODES Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ The **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** property returns the list of au
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via Filter instance)</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[KSP_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)">KSP_PIN</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[KSMULTIPLE_ITEM](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)">KSMULTIPLE_ITEM</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[KSP_PIN](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)">KSP_PIN</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[KSMULTIPLE_ITEM](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)">KSMULTIPLE_ITEM</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,26 +57,26 @@ The property value is a structure, followed by zero (0) or more GUIDs.
 
 **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** returns a **KSMULTIPLE\_ITEM** followed by zero (0) or more GUIDS. The KSMULTIPLE\_ITEM.Count member contains the number of GUIDs. The KSMULTIPLE\_ITEM.Size member contains the total size of the property value. Each GUID identifies a signal processing mode supported by the audio driver for the Pin ID specified in the *PinId* member of the **KSP\_PIN** structure.
 
-In Windows 8.1 there were two defined audio signal processing modes, AUDIO\_SIGNALPROCESSINGMODE\_DEFAULT and AUDIO\_SIGNALPROCESSINGMODE\_RAW.
+In Windows 8.1 there were two defined audio signal processing modes:
+* AUDIO\_SIGNALPROCESSINGMODE\_DEFAULT
+* AUDIO\_SIGNALPROCESSINGMODE\_RAW.
 
-In Windows 10, five additional mode are defined.
+In Windows 10, five additional mode are defined:
+* AUDIO\_SIGNALPROCESSINGMODE\_COMMUNICATIONS
+* AUDIO\_SIGNALPROCESSINGMODE\_SPEECH
+* AUDIO\_SIGNALPROCESSINGMODE\_MEDIA
+* AUDIO\_SIGNALPROCESSINGMODE\_MOVIE
+* AUDIO\_SIGNALPROCESSINGMODE\_NOTIFICATION
 
-AUDIO\_SIGNALPROCESSINGMODE\_COMMUNICATIONS
-AUDIO\_SIGNALPROCESSINGMODE\_SPEECH
-AUDIO\_SIGNALPROCESSINGMODE\_MEDIA
-AUDIO\_SIGNALPROCESSINGMODE\_MOVIE
-AUDIO\_SIGNALPROCESSINGMODE\_NOTIFICATION
-For more information, see [Audio Signal Processing Modes](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-signal-processing-modes).
+For more information, see [Audio Signal Processing Modes](./audio-signal-processing-modes.md).
 
-Remarks
--------
+## Remarks
 
 The basic support handler for **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** should be handed a **KSP\_PIN** structure, and should advertise support only on non-loopback streaming pins. Audio drivers should support signal processing modes only on host and offload pins. For loopback or bridge pins the audio driver should still support the property, but return a **KSMULTIPLE\_ITEM** structure with its *Count* parameter set to zero (0).
 
-Any audio miniport driver that is developed to work with the Microsoft audio port Class driver (Portcls) can implement the [**IMiniportAudioSignalProcessing::GetModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes) method.
+Any audio miniport driver that is developed to work with the Microsoft audio port Class driver (Portcls) can implement the [**IMiniportAudioSignalProcessing::GetModes**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes) method.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -99,18 +98,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**IMiniportAudioSignalProcessing::GetModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes)
+[**IMiniportAudioSignalProcessing::GetModes**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes)
 
-[KSMULTIPLE\_ITEM](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
+[KSMULTIPLE\_ITEM](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 
-[KSP\_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
-
- 
-
- 
-
-
-
-
-
+[KSP\_PIN](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 

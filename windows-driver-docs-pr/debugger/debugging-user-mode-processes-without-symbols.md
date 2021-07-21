@@ -1,7 +1,6 @@
 ---
 title: Debugging User-Mode Processes Without Symbols
 description: Debugging User-Mode Processes Without Symbols
-ms.assetid: ac742239-ed6b-4813-80d6-7b8eb84a0cb4
 keywords: ["symbols, debugging without symbols"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

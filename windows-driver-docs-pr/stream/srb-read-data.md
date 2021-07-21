@@ -1,7 +1,6 @@
 ---
 title: SRB\_READ\_DATA
 description: SRB\_READ\_DATA
-ms.assetid: b59d705d-5215-42ee-85cf-369a2e69f99b
 keywords: ["SRB_READ_DATA Streaming Media Devices"]
 topic_type:
 - apiref
@@ -36,7 +35,7 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array of [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structures, which together describe the data buffer. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure. *pSrb*-&gt;**CommandData**.**NumberOfBuffers** specifies the size of the array.
+The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array of [**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structures, which together describe the data buffer. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure. *pSrb*-&gt;**CommandData**.**NumberOfBuffers** specifies the size of the array.
 
 **When the SRB\_READ\_DATA command is received by the minidriver, the responding minidriver routine should:**
 
@@ -45,10 +44,4 @@ The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array o
 2.  Place the SRB in the queue.
 
  
-
- 
-
-
-
-
 

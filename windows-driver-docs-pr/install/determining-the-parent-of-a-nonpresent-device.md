@@ -1,7 +1,6 @@
 ---
 title: Determining the Parent of a Nonpresent Device
 description: Determining the Parent of a Nonpresent Device
-ms.assetid: 2d5948db-5844-4f78-b3a6-2f9f88ee1b24
 keywords:
 - SetupAPI functions WDK , determining parents
 - nonpresent devices WDK
@@ -36,15 +35,15 @@ The following topics describe this method:
 
 ### <a href="" id="saving-the-parent-child-relationship"></a> Saving the Parent/Child Relationship
 
-To save the parent/child relationship of a device, supply a *device co-installer* that saves the device instance ID of the device's parent in a user-created entry value under the hardware registry key of the device. You should use a device instance ID because it remains constant across system restarts and between system processes, whereas a device instance handle does not. When you process a [**DIF_INSTALLDEVICE**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-installdevice) request in the co-installer, follow these steps to save the device instance ID.
+To save the parent/child relationship of a device, supply a *device co-installer* that saves the device instance ID of the device's parent in a user-created entry value under the hardware registry key of the device. You should use a device instance ID because it remains constant across system restarts and between system processes, whereas a device instance handle does not. When you process a [**DIF_INSTALLDEVICE**](./dif-installdevice.md) request in the co-installer, follow these steps to save the device instance ID.
 
 ***<em>To save the device instance ID of the immediate parent in the registry</em>***
 
-1.  Call [**CM_Get_Parent**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to obtain a device instance handle for the parent of the device.
+1.  Call [**CM_Get_Parent**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to obtain a device instance handle for the parent of the device.
 
-2.  Using the device instance handle for the parent device, call [**CM_Get_Device_ID**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to obtain the device instance ID for the parent device.
+2.  Using the device instance handle for the parent device, call [**CM_Get_Device_ID**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to obtain the device instance ID for the parent device.
 
-3.  Call [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) by using the DIREG_DEV flag to obtain a handle to the hardware registry key of the device.
+3.  Call [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) by using the DIREG_DEV flag to obtain a handle to the hardware registry key of the device.
 
 4.  Call **RegSetValueEx** to save the device instance ID of the parent device in a user-created entry value under the hardware registry key of the device.
 
@@ -58,7 +57,7 @@ After a device co-installer has saved the device instance ID of the parent devic
 
 2.  Call **RegQueryValueEx** to retrieve the device instance ID of the parent device that you saved in the entry value that you set in your device co-installer.
 
-After you retrieve the device instance ID of the parent device, call [**SetupDiOpenDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to obtain an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure for the parent device.
+After you retrieve the device instance ID of the parent device, call [**SetupDiOpenDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to obtain an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure for the parent device.
 
 ### <a href="" id="handling-a-chain-of-ancestors-for-a-nonpresent-device"></a> Handling a Chain of Ancestors for a Nonpresent Device
 
@@ -67,10 +66,4 @@ If you require the device instance IDs of a connected sequence of ancestors for 
 One way to do this is for your device co-installer to use **CM_Get_Parent** to obtain all the device instance IDs for all the ancestors and save each instance ID in a different entry value under the hardware registry key of the device. You can use the method described in [Saving the Parent/Child Relationship](#saving-the-parent-child-relationship) to save the device instance ID of each ancestor. You can then retrieve each device instance ID in the same way as is described in [Retrieving the Parent/Child Relationship](#retrieving-the-parent-child-relationship).
 
  
-
- 
-
-
-
-
 

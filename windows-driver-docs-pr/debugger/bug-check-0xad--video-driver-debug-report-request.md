@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xAD VIDEO_DRIVER_DEBUG_REPORT_REQUEST
 description: The VIDEO_DRIVER_DEBUG_REPORT_REQUEST bug check has a value of 0x000000AD. This bug check indicates that the video port created a non-fatal minidump on behalf of the video driver during run time.
-ms.assetid: eedde484-584b-478b-9429-a9c78bb62c1e
 keywords: ["Bug Check 0xAD VIDEO_DRIVER_DEBUG_REPORT_REQUEST", "VIDEO_DRIVER_DEBUG_REPORT_REQUEST"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ The VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST bug check has a value of 0x000000AD. T
 
  
 
-Remarks
--------
+## Remarks
 
 The video port created a non-fatal minidump on behalf of the video driver during run time because the video driver requested a debug report.
 

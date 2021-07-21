@@ -1,7 +1,6 @@
 ---
 title: Idle Power Management Configuration and Usage
 description: Idle Power Management Configuration and Usage
-ms.assetid: 95057785-e5b5-40ae-86e4-50bbf0014cef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,6 +21,6 @@ This can be done only from within the INF file's DDInstall.HW section where HKR 
 
 The Power Options control panel applet shown in the following screen shot is used to configure the system power policy and disk idle timeout value. It is accessible from **Start** &gt; **Control Panel** &gt; **Power Options**.
 
-![screen shot illustrating ipm power options](images/ipm-power-options.png)
+![screen shot illustrating ipm power options.](images/ipm-power-options.png)
 
 A command line tool (*Powercfg.exe*) can also be used. Type **powercfg /?** for usage information at the command prompt.

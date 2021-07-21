@@ -1,7 +1,6 @@
 ---
 title: Creating a New Device Setup Class
 description: Creating a New Device Setup Class
-ms.assetid: 3235d1e9-f6f7-4efe-a50c-5ea7a9956e7e
 keywords:
 - device setup classes WDK device installations
 - setup classes WDK device installations
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](https://docs.microsoft.com/previous-versions/ff553419(v=vs.85)).
+You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](./system-defined-device-setup-classes-available-to-vendors.md).
 
 If your device meets both of the following criteria, you should assign it to an existing device setup class:
 
@@ -36,12 +35,4 @@ If you think a new device setup class is needed, your new class should be based 
 Before creating a new device setup class, contact Microsoft to find out if a new system-supplied device setup class is being planned for your device type
 
 You can create a new device setup class by using an INF file. In addition to installing support for a device, an INF file can initialize a new device setup class for the device. Such an INF file has an [**INF ClassInstall32 section**](inf-classinstall32-section.md).
-
- 
-
- 
-
-
-
-
 

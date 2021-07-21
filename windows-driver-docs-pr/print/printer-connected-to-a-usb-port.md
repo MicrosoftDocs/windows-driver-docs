@@ -1,7 +1,6 @@
 ---
 title: Printer Connected to a USB Port
 description: Printer Connected to a USB Port
-ms.assetid: 85e238e1-4dc1-4720-b383-d6aaed72e560
 keywords:
 - USB printers WDK
 - bus-type printer driver WDK
@@ -32,9 +31,9 @@ USBPRINT\Company_NameModelNam1234
 
 The following figure shows the driver stack for a printer connected over a USB port.
 
-![plug and play for usb printers](images/pnpusb01.png)
+![plug and play for usb printers.](images/pnpusb01.png)
 
-The following example shows the entries in an [**INF Manufacturer section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) that can be used to install a USB or other bus-type printer driver. The first line guarantees a rank-0 hardware ID match if the printer is installed on a USB bus. The second line guarantees a rank-0 hardware ID match if the printer is installed on another bus. For more information, see [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md).
+The following example shows the entries in an [**INF Manufacturer section**](../install/inf-manufacturer-section.md) that can be used to install a USB or other bus-type printer driver. The first line guarantees a rank-0 hardware ID match if the printer is installed on a USB bus. The second line guarantees a rank-0 hardware ID match if the printer is installed on another bus. For more information, see [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md).
 
 ```cpp
  "Model Name XYZ" = Install_Section_XYZ, USBPRINT\Company_NameModelNam1234, Company_NameModelNam1234 ; plus any other compatible IDs  
@@ -42,9 +41,4 @@ The following example shows the entries in an [**INF Manufacturer section**](htt
 ```
 
  
-
- 
-
-
-
 

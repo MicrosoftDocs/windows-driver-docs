@@ -1,7 +1,6 @@
 ---
 title: .reload (Reload Module)
 description: The .reload command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
-ms.assetid: 750eb1a2-7af9-4f2d-81ca-9ea0fb157961
 keywords: ["Reload Module (.reload) command", "symbols, Reload Module (.reload) command", ".reload (Reload Module) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -117,8 +116,7 @@ Displays a short help text for this command.
 
 For more information about deferred (lazy) symbol loading, see [Deferred Symbol Loading](deferred-symbol-loading.md). For more information about other symbol options, see [Setting Symbol Options](symbol-options.md).
 
-Remarks
--------
+## Remarks
 
 The **.reload** command does not cause symbol information to be read. Instead, this command lets the debugger know that the symbol files might have changed or that a new module should be added to the module list. This command causes the debugger to revise its module list and delete its symbol information for the specified modules. The actual symbol information is not read from the individual .pdb files until the information is needed. (This kind of loading is known as *lazy symbol loading* or *deferred symbol loading*.)
 

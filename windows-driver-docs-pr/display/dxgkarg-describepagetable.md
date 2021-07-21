@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_DESCRIBEPAGETABLE structure
 description: The DXGKARG\_DESCRIBEPAGETABLE structure is reserved for system use. Do not use it in your driver.
-ms.assetid: f439ba7c-216e-4286-9a63-d8f596996ac2
 keywords: ["_DXGKARG_DESCRIBEPAGETABLE structure Display Devices", "DXGKARG_DESCRIBEPAGETABLE structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_DESCRIBEPAGETABLE structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_DESCRIBEPAGETABLE {
@@ -33,8 +31,7 @@ typedef struct _DXGKARG_DESCRIBEPAGETABLE {
 } DXGKARG_DESCRIBEPAGETABLE;
 ```
 
-Members
--------
+## Members
 
 **CoverageStart**
 Reserved for system use.
@@ -51,8 +48,7 @@ Reserved for system use.
 **SubtableOffset2**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

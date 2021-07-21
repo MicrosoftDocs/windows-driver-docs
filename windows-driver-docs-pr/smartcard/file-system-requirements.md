@@ -1,7 +1,6 @@
 ---
 title: File System Requirements
 description: File System Requirements
-ms.assetid: 2C363978-3C98-4838-8C55-F804D2C75BEC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -273,7 +272,7 @@ Known principals are identifiers for the various types of users that can attempt
 | Name          | Description                                                                                                                                                                                                                                                                                 | Mnemonic | PIN\_ID mapping    |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------------|
 | Everyone      | Any requestor, including unauthenticated (or anonymous) users.                                                                                                                                                                                                                              | E        | ROLE\_EVERYONE (0) |
-| User          | A user client of the card, who proves his identity to the card by use of a PIN.                                                                                                                                                                                                             | U        | ROLE\_USER (1)     |
+| User          | A user client of the card, who proves their identity to the card by use of a PIN.                                                                                                                                                                                                             | U        | ROLE\_USER (1)     |
 | Administrator | Card issuer or other party with an administrative relationship to the card or data on the card. Uses a special PIN or KEY (that may or may not be unique to the card or user) to perform administrative tasks that the user cannot perform without using this data, such as PIN unblocking. | A        | ROLE\_ADMIN (2)    |
 
  
@@ -300,15 +299,15 @@ Principals can create directories in the card file system with two sets of permi
 <tbody>
 <tr class="odd">
 <td align="left">UserCreateDeleteDirAc</td>
-<td align="left"><p>The user and administrator can create files in the directory by using <a href="https://docs.microsoft.com/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a>.</p>
-<p>The user and administrator can delete the Directory (if it is not empty) by calling <a href="https://docs.microsoft.com/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a>.</p>
-<p>Everyone can list the contents of the directory by using <a href="https://docs.microsoft.com/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a>.</p></td>
+<td align="left"><p>The user and administrator can create files in the directory by using <a href="/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a>.</p>
+<p>The user and administrator can delete the Directory (if it is not empty) by calling <a href="/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a>.</p>
+<p>Everyone can list the contents of the directory by using <a href="/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">AdminCreateDeleteDirAc</td>
-<td align="left"><p>The administrator can create files in the directory by using <a href="https://docs.microsoft.com/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a>.</p>
-<p>The administrator can delete the Directory by using <a href="https://docs.microsoft.com/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a>.</p>
-<p>Everyone can list the contents of the directory by using <a href="https://docs.microsoft.com/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a>.</p>
+<td align="left"><p>The administrator can create files in the directory by using <a href="/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a>.</p>
+<p>The administrator can delete the Directory by using <a href="/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a>.</p>
+<p>Everyone can list the contents of the directory by using <a href="/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a>.</p>
 <div class="alert">
 <strong>Note</strong>  This ACL is optional. It may be removed from future revisions of the smart card minidriver specification.
 </div>
@@ -367,7 +366,7 @@ Principals can use the contents of files in various ways. Valid operations are l
 
 Access conditions are similar to ACLs. Access conditions control which principals can access a given file and what operations they can perform. Each file on the card has an access condition that can be described by a list of principals and their access privileges. If a principal or a privilege is not included in a description, it is assumed to be denied. Generally speaking, access conditions are enforced on the card.
 
-The following table lists the access conditions that are available through [**CardCreateFile**](https://docs.microsoft.com/previous-versions/dn468711(v=vs.85)) and maps them to the appropriate access condition mnemonic.
+The following table lists the access conditions that are available through [**CardCreateFile**](/previous-versions/dn468711(v=vs.85)) and maps them to the appropriate access condition mnemonic.
 
 <table>
 <colgroup>
@@ -390,7 +389,7 @@ The following table lists the access conditions that are available through [**Ca
 </tr>
 <tr class="even">
 <td align="left">EveryoneReadUserWriteAc</td>
-<td align="left"><p>This means that everyone can read the file or get the file information (<a href="https://docs.microsoft.com/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468727(v=vs.85))"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, and that the user and administrator can read the file, write the file, and delete the file.</p></td>
+<td align="left"><p>This means that everyone can read the file or get the file information (<a href="/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](/previous-versions/dn468727(v=vs.85))"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, and that the user and administrator can read the file, write the file, and delete the file.</p></td>
 <td align="left">E(R), U(RW), A(RW)</td>
 </tr>
 <tr class="odd">
@@ -400,7 +399,7 @@ The following table lists the access conditions that are available through [**Ca
 </tr>
 <tr class="even">
 <td align="left">EveryoneReadAdminWriteAc</td>
-<td align="left"><p>This means that everyone can read the file or get the file information (<a href="https://docs.microsoft.com/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468727(v=vs.85))"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, but that only the administrator can write the file and delete the file.</p></td>
+<td align="left"><p>This means that everyone can read the file or get the file information (<a href="/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](/previous-versions/dn468727(v=vs.85))"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, but that only the administrator can write the file and delete the file.</p></td>
 <td align="left">E(R), U(R), A(RW)</td>
 </tr>
 <tr class="odd">
@@ -459,7 +458,7 @@ The following table lists some sample access conditions for common items.
 
 ### <span id="Notes_on_the_Directory_and_File_Access_Conditions"></span><span id="notes_on_the_directory_and_file_access_conditions"></span><span id="NOTES_ON_THE_DIRECTORY_AND_FILE_ACCESS_CONDITIONS"></span>Notes on the Directory and File Access Conditions
 
--   The principal needs Read access on the file for [**CardGetFileInfo**](https://docs.microsoft.com/previous-versions/dn468727(v=vs.85)) to succeed.
+-   The principal needs Read access on the file for [**CardGetFileInfo**](/previous-versions/dn468727(v=vs.85)) to succeed.
 -   There are no separate list permissions for listing the contents of a directory.
 -   “Create access on a directory” means having the privilege to create files in the directory, whereas “delete access on the directory” means having the privilege to delete the directory itself. To delete a file, the card principal must have write access to the file itself.
 -   It is not possible through the smart card minidriver interface to create directories with E(W) permissions.
@@ -468,12 +467,4 @@ The following table lists some sample access conditions for common items.
 -   It is not possible through the smart card minidriver interface to create a PIN file on the card (E(X), U(W), and A(W)).
 -   It is not possible through the smart card minidriver interface to query directory access conditions.
 -   It is only possible through the smart card minidriver interface to create files with a subset of the access condition combinations that are available.
-
- 
-
- 
-
-
-
-
 

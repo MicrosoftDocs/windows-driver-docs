@@ -1,7 +1,6 @@
 ---
 title: DSM\_QuerySupportedLBPolicies\_V2 WMI Class
 description: DSM\_QuerySupportedLBPolicies\_V2 WMI Class
-ms.assetid: d60cf06d-595b-425d-bf22-f0986267ba09
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -39,13 +38,7 @@ class DSM_QuerySupportedLBPolicies_V2
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QuerySupportedLBPolicies\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_querysupportedlbpolicies_v2) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QuerySupportedLBPolicies\_V2**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_querysupportedlbpolicies_v2) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

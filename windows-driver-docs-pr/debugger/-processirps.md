@@ -1,7 +1,6 @@
 ---
 title: processirps
 description: The processirps extension displays information about I/O request packets (IRPs) associated with processes.
-ms.assetid: B7CC72A5-7D3F-4DE5-878D-ABD08BAF227C
 keywords: ["processirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,13 +46,11 @@ If you specify *Flags*, you must also specify *ProcessAddress*. If you do not sp
 
 kdexts.dll
 
-Remarks
--------
+## Remarks
 
 This command enables you to quickly identify any queued IRPs for a process, both those that are queued to threads and those that are queued to file objects. IRPs are queued to a file object when the file object has a completion port associated with it.
 
-Examples
---------
+## Examples
 
 You can use [**!process**](-process.md) command to get process addresses. For example, you could get the process address for explorer.exe.
 

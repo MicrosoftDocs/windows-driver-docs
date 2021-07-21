@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ROAMING_NEEDED_PARAMETERS
 description: WDI_TLV_ROAMING_NEEDED_PARAMETERS is a TLV that contains the reason for a roam trigger. This is used in the NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED payload.
-ms.assetid: 152F923C-ECAE-4D50-A7B4-4B2309D5A3B5
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ROAMING_NEEDED_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS
 
 
-WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS is a TLV that contains the reason for a roam trigger. This is used in the [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-roaming-needed) payload.
+WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS is a TLV that contains the reason for a roam trigger. This is used in the [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](./ndis-status-wdi-indication-roaming-needed.md) payload.
 
 ## TLV Type
 
@@ -28,12 +27,11 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                | Description                                                                                                                                      |
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_ASSOC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_assoc_status) | Specifies the reason for a roam trigger. When a [OID\_WDI\_TASK\_ROAM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-roam) is triggered, this reason is forwarded to it. |
+| [**WDI\_ASSOC\_STATUS**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_assoc_status) | Specifies the reason for a roam trigger. When a [OID\_WDI\_TASK\_ROAM](./oid-wdi-task-roam.md) is triggered, this reason is forwarded to it. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

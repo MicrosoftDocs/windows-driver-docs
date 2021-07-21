@@ -1,7 +1,6 @@
 ---
 title: ~e (Thread-Specific Command)
 description: The ~e command executes one or more commands for a specific thread or for all threads in the target process.Do not confuse this command with the e (Enter Values) command.
-ms.assetid: a14f0a5f-48f9-46dd-baa6-b7d91b15772c
 keywords: ["Thread-Specific Command (~e) command", "thread, Thread-Specific Command (~e) command", "~e (Thread-Specific Command) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,8 +61,7 @@ Specifies one or more commands to execute. You should separate multiple commands
 
 For more information about other commands that control threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify threads only in user mode. In kernel mode, the tilde (~) refers to a processor.
 

@@ -1,23 +1,22 @@
 ---
 title: Anti-virus optimization for Windows Containers
 description: This topic describes optimizations that anti-virus products can utilize when running within Windows Containers.
-ms.assetid: 101BC08B-EE63-4468-8B12-C8C8B0E99FC5
-ms.date: 01/22/2020
+ms.date: 03/06/2020
 ms.localizationpriority: medium
 ---
 
 # Anti-virus optimization for Windows Containers
 
 **The information on this page applies to:**
-- Windows 10, version 1607
-- Windows Server 2016
+- Windows 10, versions 1607 and later
+- Windows Server 2016 and later versions
 - Anti-virus (AV) products running on the Host
 
 This topic describes optimizations that AV products can use to avoid redundant scanning of Windows Container files and help improve Container start up time.
 
 ## Container overview
 
-The Windows Container feature is designed to simplify the distribution and deployment of applications. For more information, see the introduction to [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/about_overview).
+The Windows Container feature is designed to simplify the distribution and deployment of applications. For more information, see the introduction to [Windows Containers](/virtualization/windowscontainers/about/about_overview).
 
 Containers are constructed from any number of package layers. The Windows base OS package forms the first layer.
 
@@ -27,7 +26,7 @@ If a container modifies a file, the isolation filter performs copy-on-write and 
 
 ## Read redirection
 
-Reads from a placeholder file are redirected to the appropriate package layer by the isolation filter. The redirection is performed at the filter’s level. Since the filter is below the AV range, AV filters will not see the read redirection. AV will also not see the opens of package files performed to set up the redirection.
+Reads from a placeholder file are redirected to the appropriate package layer by the isolation filter. The redirection is performed at the filter's level. Since the filter is below the AV range, AV filters will not see the read redirection. AV will also not see the opens of package files performed to set up the redirection.
 
 An AV filter does have full view of all operations on the container system volume. It sees operations on placeholder files as well as the file modifications or new file additions.
 
@@ -53,35 +52,28 @@ The following changes are needed in the AV product:
 
 - **During pre-create on a container volume, attach an ECP to the Create CallbackData that will receive the placeholder information.** These creates can be identified by querying the SILO parameters from the fileobject using **IoGetSiloParameters**. Note the filter must specify the size in the **WCIFS_REDIRECTION_ECP_CONTEXT** structure. All the other fields are out fields set if the ECP is acknowledged.
 
-- **In post-create, if the ECP is acknowledged, examine the ECP redirection flags.** The flags will indicate if the open was serviced from package layer or from the scratch root (new or modified files). Flags will also indicate if the package layer is registered and whether it is remote.
+- **In post-create, if the ECP is acknowledged, examine the ECP redirection flags.** The flags will indicate if the open was serviced from the package layer or from the scratch root (new or modified files). Flags will also indicate if the package layer is registered and whether it is remote.
 
-  - For opens that are serviced from a remote layer, AV should skip scanning the file. This is indicated by the redirection flags:
-  `WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_LAYER && WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_REMOTE_LAYER`
+  - *For opens that are serviced from a remote layer*, AV should skip scanning the file. This is indicated by the redirection flags: `WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_LAYER && WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_REMOTE_LAYER`
 
-    Remote layers can be assumed to have been scanned on remote host. Hyper-V Container packages are remote to the utility VM that hosts the container. Those packages will be scanned normally on the Hyper-V host when they are accessed by the utility VM over SMB loop-back.
+    Remote layers can be assumed to have been scanned on the remote host. Hyper-V Container packages are remote to the utility VM that hosts the container. Those packages will be scanned normally on the Hyper-V host when they are accessed by the utility VM over SMB loop-back.
 
     Since VolumeGUID and FileId do not apply over remote, these fields will not be set.
 
-    - For opens that are serviced from a registered layer, AV should skip scanning the file. This is indicated by the redirection flags:
-
-    `WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_LAYER &&  WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_REGISTERED_LAYER`
+  - *For opens that are serviced from a registered layer*, AV should skip scanning the file. This is indicated by the redirection flags: `WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_LAYER &&  WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_REGISTERED_LAYER`
 
     The registered layer should be scanned asynchronously during package installation and after signature update.
 
     >[!NOTE]
     > Registered layers may not be identified by the system in the future. In this case, local layer files must be individually identified as described in the last bullet.
 
-    - For opens that are serviced from a local package layer, AV should use the provided VolumeGUID and FileId of the layer file to determine if the file needs to be scanned. This will likely require AV to build a cache of scanned files indexed by volume GUID and FileId. This is indicated by the redirection flag:
+  - *For opens that are serviced from a local package layer*, AV should use the provided VolumeGUID and FileId of the layer file to determine if the file needs to be scanned. This will likely require AV to build a cache of scanned files indexed by volume GUID and FileId. This is indicated by the redirection flag: `WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_LAYER`
 
-        `WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_LAYER`
+  - *For new/modified files in the scratch location*, the AV product should scan the files and perform its normal remediation. This is indicated by the redirection flag: `WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_SCRATCH`
 
-    - For new/modified files in the scratch location, the AV product should scan the files and perform its normal remediation. This is indicated by the redirection flag:
+    Since there is no layer file in this case, VolumeGUID and FileId will not be set.
 
-        `WCIFS_REDIRECTION_FLAGS_CREATE_SERVICED_FROM_SCRATCH`
-
-        Since there is no layer file in this case, VolumeGUID and FileId will not be set.
-
-- **Don't save "this file is serviced from layer" as a permanent marker in its stream context.** A file that is initially serviced from the layer root may be modified after the create. In this case, a subsequent create for the same file may indicate that the create is being serviced from the container volume. The AV Filter needs to understand that this can happen.
+  - Don't save "this file is serviced from layer" as a permanent marker in its stream context. A file that is initially serviced from the layer root may be modified after the create. In this case, a subsequent create for the same file may indicate that the create is being serviced from the container volume. The AV Filter needs to understand that this can happen.
 
 ## Don't use the LayerRootLocations registry key
 
@@ -89,7 +81,7 @@ In the past, we recommended using the `LayerRootLocations` registry key to get t
 
 The registry location that had been used to register package layers:
 
-`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Virtualization\LayerRootLocations`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\LayerRootLocations`
 
 ## Benefits and risks
 

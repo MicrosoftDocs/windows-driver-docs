@@ -1,7 +1,6 @@
 ---
 title: Pattern
 description: Pattern
-ms.assetid: 4c9067dc-03b2-4bee-ad30-df395de357d9
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_XRES
 description: The WIA\_IPS\_XRES property contains the current horizontal resolution, in pixels per inch, for a device.
-ms.assetid: cde64e80-b4b0-4360-a14e-b6918b97aabc
 keywords: ["WIA_IPS_XRES Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_XRES property to set the horizontal resolution. The WIA minidriver creates and maintains this property.
 
@@ -38,8 +36,7 @@ If a device can be set to only a single value, create a WIA\_PROP\_LIST type and
 
 WIA\_IPS\_XRES is required for all image acquisition-enabled items and stored image items; it is not available for storage items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

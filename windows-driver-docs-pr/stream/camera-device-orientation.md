@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 As different form factors computing devices are introduced, some of the physical constraints result in camera sensors being mounted in a non-traditional orientation. Because of this, it is necessary to properly describe to the OS and application, how the sensors are mounted so the resulting video can be rendered/recorded properly.
 
-Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 Specifically, a camera driver must set a newly introduced field, *Rotation*, in the ACPI \_PLD structure associated with a capture device interface:
 
 ```cpp
@@ -55,7 +55,7 @@ For those devices whose cameras and displays share the same housing (or *enclosu
 
 One way to solve the problem is to use the ACPI \_PLD structure which already has the concepts of *surface* and *degrees of rotation* defined. For example, the \_PLD structure already has *panel* field which specifies the surface on which a peripheral reside:
 
-![ACPI PLD panel field](images/acpi-pld-panel-field.png)
+![ACPI PLD panel field.](images/acpi-pld-panel-field.png)
 
 ### Definition of ACPI \_PLD Panel field (Rev. 5.0a)
 
@@ -63,23 +63,23 @@ The next two diagrams illustrate the definition of each panel visually:
 
 #### Panel definitions for desktop PCs and most devices
 
-![Panel definitions - desktop](images/panel-definitions-desktop.png)
+![Panel definitions - desktop.](images/panel-definitions-desktop.png)
 
 #### Panel definitions for foldable devices
 
-![Panel definitions - foldable devices](images/panel-definitions-foldable-devices.png)
+![Panel definitions - foldable devices.](images/panel-definitions-foldable-devices.png)
 
 In fact, the concept of an ACPI "panel" is already adopted by Windows where:
 
 - A camera device interface is associated with a \_PLD structure with the Panel field being set accordingly if a capture device is statically mounted at a fixed location.
 
-- An application can retrieve the panel on which a capture device resides by calling the [Windows.Devices.Enumeration.DeviceInformation.EnclosureLocation.Panel](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.EnclosureLocation) property.
+- An application can retrieve the panel on which a capture device resides by calling the [Windows.Devices.Enumeration.DeviceInformation.EnclosureLocation.Panel](/uwp/api/Windows.Devices.Enumeration.EnclosureLocation) property.
 
 The ACPI \_PLD structure also has a Rotation field defined as follow:
 
 #### Definition of ACPI \_PLD Rotation field (Rev 5.0a)
 
-![ACPI \_PLD Rotation field definitions](./images/acpi-pld-rotation-field.png)
+![ACPI \_PLD Rotation field definitions.](./images/acpi-pld-rotation-field.png)
 
 Instead of using the definition above as is, we further refine it to avoid ambiguity:
 
@@ -87,13 +87,15 @@ Instead of using the definition above as is, we further refine it to avoid ambig
 
 ## Landscape Primary vs Portrait Primary
 
-In Windows, one can query the native display orientation by calling the property, [Windows.Graphics.Display.DisplayInformation.NativeOrientation](https://docs.microsoft.com/uwp/api/Windows.Graphics.Display.DisplayInformation), which returns either **Landscape** or **Portrait**:
+In Windows, one can query the native display orientation by calling the property, [Windows.Graphics.Display.DisplayInformation.NativeOrientation](/uwp/api/Windows.Graphics.Display.DisplayInformation), which returns either **Landscape** or **Portrait**:
 
-![Display native orientation scanning pattern](./images/native-scanning-pattern.png)
+![Display native orientation scanning pattern.](./images/native-scanning-pattern.png)
 
 No matter which value **NativeOrientation** returns, the logical display scanning pattern starts from the top-left corner of the display moving from left to right downwards (see Figure 5). For those devices whose default physical orientation is inexplicit, this property not only implies the location of an ACPI *Top* panel but also provides the spatial relationship between a camera output buffer and the rendering surface.
 
 Note that, unlike camera, the **NativeOrientation** property is not based on ACPI and thus does not have a \_PLD structure. This is true even if a display is statically mounted to a device.
+
+When mounting on a Portrait Primary device, camera drivers must be aware that most applications will treat the device as outputting a landscape camera output buffer regardless of the actual camera output buffer orientation. Because of this, we recommend that camera drivers output a camera buffer that has a 90 degree orientation offset from the NativeOrientation Portrait when on a Portrait Primary device. This will then allow applications that are performing this additional rotation on portrait devices to correct the rotation to the expected orientation. This can be verified using the [Camera Application with Rotation Sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/CameraStarterKit/cs).
 
 ## Offset Mounting
 
@@ -248,7 +250,7 @@ The following figures illustrate the values of the \_PLD Rotation field for each
 
 ### Rotation: 0 degree clockwise
 
-![0 degree rotation figure](./images/rotation-0-degree-reference-orientation.png)
+![0 degree rotation figure.](./images/rotation-0-degree-reference-orientation.png)
 
 In the figure above:
 
@@ -260,18 +262,18 @@ In the figure above:
 
 ### Rotation: 90 degrees clockwise
 
-![90 degree rotation figure](./images/rotation-90-degrees-clockwise.png)
+![90 degree rotation figure.](./images/rotation-90-degrees-clockwise.png)
 
 In this case, the content of the media buffer is rotated by 90 degrees clockwise compared to the original scene. As a result, the ACPI \_PLD Rotation field has a value of 2.
 
 ### Rotation: 180 degrees clockwise
 
-![180 degree rotation figure](./images/rotation-180-degrees-clockwise.png)
+![180 degree rotation figure.](./images/rotation-180-degrees-clockwise.png)
 
 In this case, the content of the media buffer is rotated by 180 degrees clockwise compared to the original scene. As a result, the ACPI \_PLD Rotation field has a value of 4.
 
 ### Rotation: 270 degrees clockwise
 
-![270 degree rotation figure](./images/rotation-270-degrees-clockwise.png)
+![270 degree rotation figure.](./images/rotation-270-degrees-clockwise.png)
 
 In this case, the content of the media buffer is rotated by 270 degrees clockwise compared to the original scene. As a result, the ACPI \_PLD Rotation field has a value of 6.

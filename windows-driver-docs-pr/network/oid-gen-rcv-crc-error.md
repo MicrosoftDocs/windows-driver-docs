@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RCV_CRC_ERROR
 description: As a query, the OID_GEN_RCV_CRC_ERROR OID specifies the number of frames that are received with checksum errors.
-ms.assetid: dfa5e568-2b0a-4b26-8100-06ea8b0f1a71
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RCV_CRC_ERROR Network Drivers Starting with Windows Vista
@@ -30,13 +29,11 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
-The value for the [OID\_GEN\_RCV\_DISCARDS](oid-gen-rcv-discards.md) OID includes CRC errors. For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+The value for the [OID\_GEN\_RCV\_DISCARDS](oid-gen-rcv-discards.md) OID includes CRC errors. For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +54,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Viewing Code Integrity Events
 description: Viewing Code Integrity Events
-ms.assetid: b1c8ea3e-1a10-41fd-bdc8-c1e6e7344d39
 keywords:
 - Event Viewer WDK driver signing
 - viewing Code Integrity events
@@ -27,11 +26,11 @@ To view Code Integrity events in the Event Viewer, expand the following sequence
 
 The following screen shot shows the result of expanding the **CodeIntegrity** subfolder under the **Event Viewer** folder.
 
-![screen shot of the computer management window illustrating viewing code integrity events](images/signing-code-integrity-folder.png)
+![screen shot of the computer management window illustrating viewing code integrity events.](images/signing-code-integrity-folder.png)
 
 For more information about a particular Code Integrity log entry, right-click the entry and then select **Event Properties** on the pop-up menu. The following screen shot shows the details about a Code Integrity event.
 
-![screen shot of the event properties dialog box illustrating unsigned driver error](images/event-prop.png)
+![screen shot of the event properties dialog box illustrating unsigned driver error.](images/event-prop.png)
 
 This event indicates that the Toaster driver (toaster.sys) could not be loaded because it was unsigned (or the toaster.sys image that is trying to load is not the same one that was digitally-signed by the publisher).
 

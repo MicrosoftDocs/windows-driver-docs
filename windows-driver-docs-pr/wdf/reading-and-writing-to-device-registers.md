@@ -1,7 +1,6 @@
 ---
 title: Reading and Writing to Device Registers
 description: Reading and Writing to Device Registers
-ms.assetid: 58A94C75-94C1-4517-A300-9F04AA7B771A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,11 +8,11 @@ ms.localizationpriority: medium
 # Reading and Writing to Device Registers
 
 
-After a driver has mapped registers as described in [Finding and Mapping Hardware Resources](finding-and-mapping-hardware-resources.md), a KMDF driver uses the [**HAL Library Routines**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)) to read and write to registers, while a UMDF driver (version 2.0 or later) typically uses the [WDF Register/Port Access Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfhwaccess/).
+After a driver has mapped registers as described in [Finding and Mapping Hardware Resources](finding-and-mapping-hardware-resources.md), a KMDF driver uses the [**HAL Library Routines**](/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)) to read and write to registers, while a UMDF driver (version 2.0 or later) typically uses the [WDF Register/Port Access Functions](/windows-hardware/drivers/ddi/wdfhwaccess/).
 
-If a UMDF driver needs to access memory-mapped registers directly, it can set the INF directive **UmdfRegisterAccessMode** to **RegisterAccessUsingUserModeMapping** and then call [**WdfDeviceGetHardwareRegisterMappedAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegethardwareregistermappedaddress) to retrieve a user-mode mapped address. Because the framework doesn't validate read and write accesses performed in this way, this technique is not recommended for register access. For a complete list of UMDF INF directives, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
+If a UMDF driver needs to access memory-mapped registers directly, it can set the INF directive **UmdfRegisterAccessMode** to **RegisterAccessUsingUserModeMapping** and then call [**WdfDeviceGetHardwareRegisterMappedAddress**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegethardwareregistermappedaddress) to retrieve a user-mode mapped address. Because the framework doesn't validate read and write accesses performed in this way, this technique is not recommended for register access. For a complete list of UMDF INF directives, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
 
-The following example includes code that could be compiled using KMDF (1.13 or later) or UMDF (2.0 or later). The example shows how a driver uses its [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function to examine its memory-mapped register resources and map them into user-mode address space. The example then demonstrates how to access the memory locations.
+The following example includes code that could be compiled using KMDF (1.13 or later) or UMDF (2.0 or later). The example shows how a driver uses its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function to examine its memory-mapped register resources and map them into user-mode address space. The example then demonstrates how to access the memory locations.
 
 Before accessing device registers and ports, a UMDF driver must set the **UmdfDirectHardwareAccess** directive to **AllowDirectHardwareAccess** in the driver's INF file.
 
@@ -208,10 +207,4 @@ NTSTATUS
 ```
 
  
-
- 
-
-
-
-
 

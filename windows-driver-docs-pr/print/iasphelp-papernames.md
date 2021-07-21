@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 558cf0a6-d98b-4d59-ae37-d19ced289bf0
 keywords: ["get_PaperNames method Print Devices", "get_PaperNames method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PaperNames method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **PaperNames** property enables an ASP Web page to obtain a set of strings that name all the paper forms for the printer.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_PaperNames(
@@ -32,14 +30,12 @@ HRESULT get_PaperNames(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied location to receive a pointer to a set of strings representing all the paper forms for the printer.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -72,7 +68,7 @@ This property returns one of the values in the following table.
 
 ## VBScript Example
 
-The handler for this property obtains the list of paper forms by calling the printer driver's [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_PAPERNAMES flag set.
+The handler for this property obtains the list of paper forms by calling the printer driver's [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_PAPERNAMES flag set.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PaperNames** property can be queried.
 
@@ -84,8 +80,7 @@ objPrinter.Open strPrinter
 PaperNameArray = objPrinter.PaperNames
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -102,6 +97,6 @@ Requirements
 
 ## See also
 
-[**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities)
+[**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities)
 
 [**Iasphelp::Open**](iasphelp-open.md)

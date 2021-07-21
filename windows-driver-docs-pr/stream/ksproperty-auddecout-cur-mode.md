@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDDECOUT\_CUR\_MODE
 description: The KSPROPERTY\_AUDDECOUT\_CUR\_MODE property indicates the current audio output mode.
-ms.assetid: 4ac6d181-f532-4ac6-b8fd-2975214a3618
 keywords: ["KSPROPERTY_AUDDECOUT_CUR_MODE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDDECOUT\_CUR\_MODE property indicates the current audio output
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
@@ -57,8 +56,7 @@ The KSPROPERTY\_AUDDECOUT\_CUR\_MODE property indicates the current audio output
 
 The property value (operation data) is a DWORD that represents the current output mode of the audio decoder.
 
-Remarks
--------
+## Remarks
 
 The property value can be one of the following mode constants defined in the header file *ksmedia.h*:
 
@@ -75,10 +73,9 @@ The audio miniport driver get-property handler returns the current mode of the d
 
 We recommend that you specify a default value for the KSPROPERTY\_AUDDECOUT\_CUR\_MODE property in the minidriver's serialized property set in the registry.
 
-For more information, see [Audio Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-miniport-drivers).
+For more information, see [Audio Miniport Drivers](../audio/audio-miniport-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -97,13 +94,4 @@ Requirements
 
 
 [**KSPROPERTY\_AUDDECOUT\_MODES**](ksproperty-auddecout-modes.md)
-
- 
-
- 
-
-
-
-
-
 

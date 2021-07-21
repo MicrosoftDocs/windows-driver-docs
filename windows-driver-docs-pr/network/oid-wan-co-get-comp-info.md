@@ -1,7 +1,6 @@
 ---
 title: OID_WAN_CO_GET_COMP_INFO
 description: The OID_WAN_CO_GET_COMP_INFO OID requests the miniport driver to return information about the capabilities of the NIC or of its driver, in particular whether either supports compression.
-ms.assetid: a2525548-ca5a-47a8-ab19-e0469913f6be
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_GET_COMP_INFO Network Drivers Starting with Windows Vista
@@ -33,13 +32,11 @@ Specifies a structure containing information about compression capabilities for 
 <a href="" id="recvcapabilities"></a>**RecvCapabilities**  
 Specifies a structure containing information about compression capabilities for receiving data.
 
-Remarks
--------
+## Remarks
 
-For specifics of the NDIS\_WAN\_COMPRESS\_INFO structure, see [OID\_WAN\_GET\_COMP\_INFO](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561202(v=vs.85)).
+For specifics of the NDIS\_WAN\_COMPRESS\_INFO structure, see [OID\_WAN\_GET\_COMP\_INFO](/previous-versions/windows/hardware/network/ff561202(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -61,14 +58,6 @@ Requirements
 ## See also
 
 
-[OID\_WAN\_GET\_COMP\_INFO](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561202(v=vs.85))
+[OID\_WAN\_GET\_COMP\_INFO](/previous-versions/windows/hardware/network/ff561202(v=vs.85))
 
 [OID\_WAN\_CO\_SET\_COMP\_INFO](oid-wan-co-set-comp-info.md)
-
-
-
-
-
-
-
-

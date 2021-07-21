@@ -1,7 +1,6 @@
 ---
 title: Creating the Plug-In
 description: Creating the Plug-In
-ms.assetid: 4e52c855-f2c6-49b5-ac79-96dcac785579
 keywords:
 - COM interfaces WDK print , creating plug-ins
 - plug-ins WDK print , creating

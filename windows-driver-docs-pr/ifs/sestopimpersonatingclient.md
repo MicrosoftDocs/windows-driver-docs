@@ -1,7 +1,6 @@
 ---
 title: SeStopImpersonatingClient routine
 description: The SeStopImpersonatingClient routine ends the calling thread's impersonation of a user.
-ms.assetid: 1aab384b-919c-4709-9ceb-66616c622714
 keywords: ["SeStopImpersonatingClient routine Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,30 +19,25 @@ ms.localizationpriority: medium
 
 The **SeStopImpersonatingClient** routine ends the calling thread's impersonation of a user.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID SeStopImpersonatingClient(void);
 ```
 
-Parameters
-----------
+## Parameters
 
 This routine has no parameters.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
-A server thread can impersonate a user by calling the [**SeImpersonateClientEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex) routine. When the thread is done impersonating the user, it calls the **SeStopImpersonatingClient** routine to end the impersonation.
+A server thread can impersonate a user by calling the [**SeImpersonateClientEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex) routine. When the thread is done impersonating the user, it calls the **SeStopImpersonatingClient** routine to end the impersonation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,14 +67,7 @@ Requirements
 ## See also
 
 
-[**SeImpersonateClientEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex)
+[**SeImpersonateClientEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex)
 
  
-
- 
-
-
-
-
-
 

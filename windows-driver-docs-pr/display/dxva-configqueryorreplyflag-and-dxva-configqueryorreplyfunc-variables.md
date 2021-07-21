@@ -1,7 +1,6 @@
 ---
 title: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc
 description: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables
-ms.assetid: bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5
 keywords:
 - video decoding WDK DirectX VA , formats
 - decoding video WDK DirectX VA , formats
@@ -26,11 +25,11 @@ ms.custom: seodec18
 
 The *DXVA\_ConfigQueryOrReplyFlag* variable indicates the type of query or response when using probing and locking commands. The most significant 24 bits of the **dwFunction** member of the following structures contains the *DXVA\_ConfigQueryOrReplyFlag* variable.
 
-[**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding.
+[**DXVA\_ConfigPictureDecode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding.
 
-[**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading.
+[**DXVA\_ConfigAlphaLoad**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading.
 
-[**DXVA\_ConfigAlphaCombine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination.
+[**DXVA\_ConfigAlphaCombine**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination.
 
 The most significant 20 bits of the *DXVA\_ConfigQueryOrReplyFlag* variable specify the following queries and responses.
 
@@ -124,31 +123,25 @@ When *bDXVA\_Func* is used to probe and lock a configuration for a specific Dire
 
 When *bDXVA\_Func* is used to specify the function associated with a configuration structure that is passed with a probe or lock command, *bDXVA\_Func* is placed in the 8 least significant bits of the *DXVA\_ConfigQueryorReplyFunc* variable in the **dwFunction** member of one of the following configuration structures:
 
-[**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding.
+[**DXVA\_ConfigPictureDecode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding.
 
-[**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading.
+[**DXVA\_ConfigAlphaLoad**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading.
 
-[**DXVA\_ConfigAlphaCombine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination.
+[**DXVA\_ConfigAlphaCombine**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination.
 
 ### <span id="DXVA_EncryptProtocolFunc"></span><span id="dxva_encryptprotocolfunc"></span><span id="DXVA_ENCRYPTPROTOCOLFUNC"></span>DXVA\_EncryptProtocolFunc
 
 The most significant 24 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable are set as follows:
 
--   0xFFFF00 when sent by the host software decoder in the **dwFunction** member of the [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure in a call to [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render).
+-   0xFFFF00 when sent by the host software decoder in the **dwFunction** member of the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure in a call to [*DdMoCompRender*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render).
 
--   0xFFFF08 when sent by the video accelerator in the **dwFunction** member of the [**DXVA\_EncryptProtocolHeader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_encryptprotocolheader) structure.
+-   0xFFFF08 when sent by the video accelerator in the **dwFunction** member of the [**DXVA\_EncryptProtocolHeader**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_encryptprotocolheader) structure.
 
 The least significant 8 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable contain the value of *bDXVA\_Func* associated with the encryption protocol. The only value supported for this use is *bDXVA\_Func* = 1 (compressed picture decoding).
 
 ### <span id="Specifying_an_Operation_to_be_Performed_by_DdMoCompRender"></span><span id="specifying_an_operation_to_be_performed_by_ddmocomprender"></span><span id="SPECIFYING_AN_OPERATION_TO_BE_PERFORMED_BY_DDMOCOMPRENDER"></span>Specifying an Operation to be Performed by DdMoCompRender
 
-When *bDXVA\_Func* is used to signal an actual operation to be performed (compressed picture decoding, alpha-blend data loading, alpha-blend combination, or picture resampling), *bDXVA\_Func* is conveyed to the accelerator by inclusion in a series of *bDXVA\_Func* byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure in a call to [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render). The first *bDXVA\_Func* operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Any remaining bytes of **dwFunction** are set to zero.
+When *bDXVA\_Func* is used to signal an actual operation to be performed (compressed picture decoding, alpha-blend data loading, alpha-blend combination, or picture resampling), *bDXVA\_Func* is conveyed to the accelerator by inclusion in a series of *bDXVA\_Func* byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure in a call to [*DdMoCompRender*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render). The first *bDXVA\_Func* operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Any remaining bytes of **dwFunction** are set to zero.
 
  
-
- 
-
-
-
-
 

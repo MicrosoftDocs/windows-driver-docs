@@ -1,7 +1,6 @@
 ---
 title: Exposing Hardware-Accelerated Capture Effects
 description: Exposing Hardware-Accelerated Capture Effects
-ms.assetid: 032139e8-e758-4d63-b8c1-ca61c958b20b
 keywords:
 - noise suppression WDK audio
 - NS WDK audio
@@ -28,22 +27,22 @@ In Windows XP and later, the WDM audio framework supports hardware acceleration 
 A miniport driver can expose hardware acceleration for any subset of these effects, depending on the capabilities of the underlying device. To expose the hardware's capabilities for AEC and NS effects, each pin on the AEC filter that the driver implements should meet these requirements:
 
 -   The pin should include an individual node in its node chain to represent each hardware effect that is to be incorporated into the graph. The KS node types for AEC and NS effects are specified by the following GUIDs:
-    [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-acoustic-echo-cancel)
-    [**KSNODETYPE\_NOISE\_SUPPRESS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-noise-suppress)
--   The AEC and NS nodes on the pin should support the [KSPROPSETID\_General](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-general) property set and should provide information about the manufacturer when queried for the [**KSPROPERTY\_GENERAL\_COMPONENTID**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-general-componentid) property.
+    [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](./ksnodetype-acoustic-echo-cancel.md)
+    [**KSNODETYPE\_NOISE\_SUPPRESS**](./ksnodetype-noise-suppress.md)
+-   The AEC and NS nodes on the pin should support the [KSPROPSETID\_General](../stream/kspropsetid-general.md) property set and should provide information about the manufacturer when queried for the [**KSPROPERTY\_GENERAL\_COMPONENTID**](../stream/ksproperty-general-componentid.md) property.
 
--   The AEC and NS nodes on the pin should support the [KSPROPSETID\_TopologyNode](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-topologynode) property set and its two properties:
+-   The AEC and NS nodes on the pin should support the [KSPROPSETID\_TopologyNode](./kspropsetid-topologynode.md) property set and its two properties:
 
-    [**KSPROPERTY\_TOPOLOGYNODE\_ENABLE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-topologynode-enable) enables an effect.
+    [**KSPROPERTY\_TOPOLOGYNODE\_ENABLE**](./ksproperty-topologynode-enable.md) enables an effect.
 
-    [**KSPROPERTY\_TOPOLOGYNODE\_RESET**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-topologynode-reset) resets the effect to its default state.
+    [**KSPROPERTY\_TOPOLOGYNODE\_RESET**](./ksproperty-topologynode-reset.md) resets the effect to its default state.
 
--   The AEC and NS nodes on the pin should support the following properties of the [KSPROPSETID\_Audio](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audio) property set:
-    [**KSPROPERTY\_AUDIO\_CPU\_RESOURCES**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-cpu-resources)
-    [**KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-algorithm-instance)
+-   The AEC and NS nodes on the pin should support the following properties of the [KSPROPSETID\_Audio](./kspropsetid-audio.md) property set:
+    [**KSPROPERTY\_AUDIO\_CPU\_RESOURCES**](./ksproperty-audio-cpu-resources.md)
+    [**KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE**](./ksproperty-audio-algorithm-instance.md)
 -   The pin should support the following properties of the KSPROPSETID\_Audio property set:
-    [**KSPROPERTY\_AUDIO\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-position)
-    [**KSPROPERTY\_AUDIO\_LATENCY**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-latency)
+    [**KSPROPERTY\_AUDIO\_POSITION**](./ksproperty-audio-position.md)
+    [**KSPROPERTY\_AUDIO\_LATENCY**](./ksproperty-audio-latency.md)
 -   The pin should expose its data-range capabilities (see [Pin Data-Range and Intersection Properties](pin-data-range-and-intersection-properties.md)).
 
 The specific requirements for exposing hardware-accelerated AEC and NS nodes are presented below.
@@ -52,13 +51,13 @@ The specific requirements for exposing hardware-accelerated AEC and NS nodes are
 
 A PCM miniport driver exposes hardware support for AEC in the form of a topology for both the capture and render streams that meets this additional requirement:
 
--   The pin must include an AEC node ([**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-acoustic-echo-cancel)), which must be specified in its proper position in the ordered node chain (see below).
+-   The pin must include an AEC node ([**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](./ksnodetype-acoustic-echo-cancel.md)), which must be specified in its proper position in the ordered node chain (see below).
 
 ### <span id="Noise_Suppression"></span><span id="noise_suppression"></span><span id="NOISE_SUPPRESSION"></span>Noise Suppression
 
 A PCM miniport driver exposes hardware support for NS in the form of a topology for the capture stream that meets this additional requirement:
 
--   The pin must include an NS node ([**KSNODETYPE\_NOISE\_SUPPRESS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-noise-suppress)), which must be specified in its proper position in the ordered node chain (see below).
+-   The pin must include an NS node ([**KSNODETYPE\_NOISE\_SUPPRESS**](./ksnodetype-noise-suppress.md)), which must be specified in its proper position in the ordered node chain (see below).
 
 ### <span id="Node-Chain_Ordering"></span><span id="node-chain_ordering"></span><span id="NODE-CHAIN_ORDERING"></span>Node-Chain Ordering
 
@@ -66,17 +65,17 @@ Currently, the DirectSound capture-effects architecture requires that the nodes 
 
 To enable hardware acceleration, the driver must specify the effects that are implemented by the hardware in the following order:
 
-[**KSNODETYPE\_ADC**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-adc)
+[**KSNODETYPE\_ADC**](./ksnodetype-adc.md)
 
-[**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-acoustic-echo-cancel)
+[**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](./ksnodetype-acoustic-echo-cancel.md)
 
-[**KSNODETYPE\_NOISE\_SUPPRESS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-noise-suppress)
+[**KSNODETYPE\_NOISE\_SUPPRESS**](./ksnodetype-noise-suppress.md)
 
 Note that this list can omit any unimplemented effects as long as the relative ordering is preserved.
 
 ### <span id="AEC_Node_Pin_Assignments"></span><span id="aec_node_pin_assignments"></span><span id="AEC_NODE_PIN_ASSIGNMENTS"></span>AEC Node Pin Assignments
 
-An adapter driver uses an array of [**PCCONNECTION\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)) structures to specify the connections within a filter. Each array element describes one connection, which can be node-to-node, node-to-pin, or pin-to-pin. For details, see [Nodes and Connections](nodes-and-connections.md).
+An adapter driver uses an array of [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)) structures to specify the connections within a filter. Each array element describes one connection, which can be node-to-node, node-to-pin, or pin-to-pin. For details, see [Nodes and Connections](nodes-and-connections.md).
 
 To use the PCCONNECTION\_DESCRIPTOR structure, the driver writer assigns "logical" pins to nodes. These are "pins" on the nodes themselves and are used solely to specify the connections inside the filter. This is in contrast to the external pins on the filter, which are used to connect to other filters.
 
@@ -156,14 +155,9 @@ The following code example shows how an adapter driver can specify the internal 
 
 The AecConnections array in the preceding code example defines the filter topology that is shown in the following figure.
 
-![diagram illustrating the internal topology of an aec filter](images/aectopo.png)
+![diagram illustrating the internal topology of an aec filter.](images/aectopo.png)
 
 The preceding figure represents each connection inside the filter with a dashed arrow that points in the direction of data flow. A total of five connections appear in the figure. Each connection corresponds to one of the five elements in the AecConnections array in the code example.
 
  
-
- 
-
-
-
 

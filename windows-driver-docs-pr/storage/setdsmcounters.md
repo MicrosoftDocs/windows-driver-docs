@@ -1,7 +1,6 @@
 ---
 title: SetDSMCounters function
 description: The SetDSMCounters method is used to set the timer counters for a particular DSM.
-ms.assetid: 6ea2ae07-d50e-48af-92da-7a5083a75bc7
 keywords: ["SetDSMCounters function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The SetDSMCounters method is used to set the timer counters for a particular DSM.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SetDSMCounters(
@@ -30,8 +28,7 @@ void SetDSMCounters(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *DSMcontext*   
 A 64-bitfield that provides the DSM context.
@@ -39,18 +36,15 @@ A 64-bitfield that provides the DSM context.
 *DsmCounters*   
 A DSM\_COUNTERS structure.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MPIO\_WMI\_METHODS WMI class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

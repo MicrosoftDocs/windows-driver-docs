@@ -1,7 +1,6 @@
 ---
 title: NdisGetNextMdl macro
 description: The NdisGetNextMdl macro retrieves the next MDL in an MDL chain, given a pointer to the current MDL.
-ms.assetid: 5b59ca7c-0998-4d53-9553-4946ef85327c
 ms.date: 07/18/2017
 keywords:
  - NdisGetNextMdl macro Network Drivers Starting with Windows Vista
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 The **NdisGetNextMdl** macro retrieves the next MDL in an MDL chain, given a pointer to the current MDL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID NdisGetNextMdl(
@@ -23,8 +21,7 @@ VOID NdisGetNextMdl(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_CurrentMdl*   
 A pointer to the specified current MDL.
@@ -32,18 +29,15 @@ A pointer to the specified current MDL.
 *\_NextMdl*   
 A pointer to a caller-supplied variable in which this macro returns a pointer to the next MDL in the MDL chain, if any, that follows the MDL at *\_CurrentMdl* .
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
-The **NdisGetNextMdl** macro provides an MDL-based version of the [**NdisGetNextBuffer**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff552070(v=vs.85)) function.
+The **NdisGetNextMdl** macro provides an MDL-based version of the [**NdisGetNextBuffer**](/previous-versions/windows/hardware/network/ff552070(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,12 +67,7 @@ Requirements
 ## See also
 
 
-[**NdisGetNextBuffer**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff552070(v=vs.85))
+[**NdisGetNextBuffer**](/previous-versions/windows/hardware/network/ff552070(v=vs.85))
 
  
-
- 
-
-
-
 

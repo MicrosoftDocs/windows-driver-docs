@@ -1,7 +1,6 @@
 ---
 title: Supported smart card attributes
 description: This topic describes supported smart card attributes.
-ms.assetid:
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -155,3 +154,5 @@ This topic describes the smart card attributes currently supported. The only sup
                 </ul>
             </td>
         </tr>
+    <tbody>
+</table>

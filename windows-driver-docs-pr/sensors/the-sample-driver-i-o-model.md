@@ -1,7 +1,6 @@
 ---
 title: Sample driver I/O model
 description: An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in user mode, kernel mode, and the actual hardware.
-ms.assetid: 86DA1BDE-DD97-45CA-884D-12BD279BD12E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in: user mode, kernel mode, and the actual hardware.
 
-![driver i/o model](images/io.png)
+![driver i/o model.](images/io.png)
 
 ## Simple peripheral bus (SPB)
 
@@ -22,7 +21,7 @@ Windows 8.1 supports an SPB component as a class extension (running in kernel mo
 -   Implements tiered queue structure to manage simultaneous targets and bus-locking requests
 -   Translates buffers from user-mode to kernel-mode
 
-For more information see [Simple Peripheral Bus](https://docs.microsoft.com/windows-hardware/design/component-guidelines/simple-peripheral-bus--spb-).
+For more information see [Simple Peripheral Bus](/windows-hardware/design/component-guidelines/simple-peripheral-bus--spb-).
 
 ### SPB component and the sample driver
 
@@ -75,9 +74,9 @@ Here are the key elements of the I2C resource:
 
 | Element    | Description                                             |
 |------------|---------------------------------------------------------|
-| 0x1D       | Specifies the I2C address for the slave device.         |
-| 400000     | Specifies the operating frequency for the slave device. |
-| \\\\SB.I2C | Specifies the ACPI node for the slave device.           |
+| 0x1D       | Specifies the I2C address for the subordinate device.         |
+| 400000     | Specifies the operating frequency for the subordinate device. |
+| \\\\SB.I2C | Specifies the ACPI node for the subordinate device.           |
 
  
 
@@ -149,9 +148,4 @@ Return(RBUF)
 ```
 
  
-
- 
-
-
-
 

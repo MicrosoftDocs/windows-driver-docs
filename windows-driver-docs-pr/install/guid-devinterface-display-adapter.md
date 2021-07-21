@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_DISPLAY_ADAPTER
 description: GUID_DEVINTERFACE_DISPLAY_ADAPTER
-ms.assetid: 22f705b0-bc79-43e8-8445-adf611ae1429
 keywords: ["GUID_DEVINTERFACE_DISPLAY_ADAPTER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_DISPLAY_ADAPTER
 
 
-The GUID_DEVINTERFACE_DISPLAY_ADAPTER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for display views that are supported by display adapters.
+The GUID_DEVINTERFACE_DISPLAY_ADAPTER [device interface class](./overview-of-device-interface-classes.md) is defined for display views that are supported by display adapters.
 
 <table>
 <colgroup>
@@ -45,17 +44,15 @@ The GUID_DEVINTERFACE_DISPLAY_ADAPTER [device interface class](https://docs.micr
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied display drivers register an instance of this device interface class to notify the operating system and applications of the presence of a display view.
 
-For information about display devices, see [Windows Vista Display Driver Model](https://docs.microsoft.com/windows-hardware/drivers/display/windows-vista-display-driver-model-design-guide) and [Windows 2000 Display Driver Model](https://docs.microsoft.com/windows-hardware/drivers/display/windows-2000-display-driver-model-design-guide).
+For information about display devices, see [Windows Vista Display Driver Model](../display/windows-vista-display-driver-model-design-guide.md) and [Windows 2000 Display Driver Model](../display/windows-2000-display-driver-model-design-guide.md).
 
 For information about the device interface class for display adapters, see [**GUID_DISPLAY_DEVICE_ARRIVAL**](guid-display-device-arrival.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,11 +73,4 @@ Requirements
 [**GUID_DISPLAY_DEVICE_ARRIVAL**](guid-display-device-arrival.md)
 
  
-
- 
-
-
-
-
-
 

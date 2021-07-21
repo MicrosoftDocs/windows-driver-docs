@@ -1,14 +1,13 @@
 ---
 title: AutoplayHandler
 description: AutoplayHandler
-ms.assetid: 0ee7ac9b-7c1a-4267-b718-ba110ef5b12d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # AutoplayHandler
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The AutoplayHandler element specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.
 

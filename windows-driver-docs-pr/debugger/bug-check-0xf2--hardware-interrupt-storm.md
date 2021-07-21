@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xF2 HARDWARE_INTERRUPT_STORM
 description: The HARDWARE_INTERRUPT_STORM bug check has a value of 0x000000F2. This indicates that the kernel detected an interrupt storm.
-ms.assetid: 04751AB2-E9B3-40AD-A872-8DDA9B96C6CA
 keywords: ["Bug Check 0xF2 HARDWARE_INTERRUPT_STORM", "HARDWARE_INTERRUPT_STORM"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,8 +33,7 @@ The HARDWARE\_INTERRUPT\_STORM bug check has a value of 0x000000F2. This indicat
 
  
 
-Cause
------
+## Cause
 
 This bugcheck indicates that the kernel has detected an interrupt storm. An interrupt storm is defined as a level triggered interrupt signal staying in the asserted state. This is fatal to the system in the manner that the system will hard hang, or "bus lock".
 
@@ -61,8 +59,7 @@ In the event the fourth parameter is a 0x00000001, the module pointed to is very
 
 In the event the fourth parameter is a 0x00000002, the module pointed to is the first ISR in the chain, and is never guaranteed to be the culprit.
 
-Resolution
-----------
+## Resolution
 
 A user experiencing this bugcheck repeatedly should try to isolate the problem by looking for devices that are on the same IRQ as the one for which the module is a driver for (in this case, the same IRQ that ACPI is using).
 

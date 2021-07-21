@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MAXIMUM_SEND_PACKETS
 description: As a query, the OID_GEN_MAXIMUM_SEND_PACKETS OID specifies the maximum number of send packet descriptors that a miniport driver's MiniportSendPackets function can accept.
-ms.assetid: 7e87285f-26c5-4b7d-99a8-bc0f30c643dc
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MAXIMUM_SEND_PACKETS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # OID\_GEN\_MAXIMUM\_SEND\_PACKETS
 
 
-As a query, the OID\_GEN\_MAXIMUM\_SEND\_PACKETS OID specifies the maximum number of send packet descriptors that a miniport driver's [*MiniportSendPackets*](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff550524(v=vs.85)) function can accept.
+As a query, the OID\_GEN\_MAXIMUM\_SEND\_PACKETS OID specifies the maximum number of send packet descriptors that a miniport driver's [*MiniportSendPackets*](/previous-versions/windows/hardware/network/ff550524(v=vs.85)) function can accept.
 
 **Version Information**
 
@@ -30,13 +29,11 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS ignores any value returned by a deserialized driver in response to a query of OID\_GEN\_MAXIMUM\_SEND\_PACKETS. NDIS does not adjust the size of the array of packet descriptors that it supplies to a deserialized miniport driver's *MiniportSendPackets* function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -54,12 +51,7 @@ Requirements
 ## See also
 
 
-[*MiniportSendPackets*](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff550524(v=vs.85))
+[*MiniportSendPackets*](/previous-versions/windows/hardware/network/ff550524(v=vs.85))
 
  
-
- 
-
-
-
 

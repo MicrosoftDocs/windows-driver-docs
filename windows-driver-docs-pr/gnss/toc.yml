@@ -1,9 +1,9 @@
-- name: "GNSS driver design guide"
+- name: "Global Navigation Satellite System (GNSS) driver design guide"
   href: index.md
-- name: "GNSS driver design guide for Windows 8.1"
+- name: "Global Navigation Satellite System (GNSS) driver design guide for Windows 8.1"
 # Auto-expanded node
   items: 
-  - name: "GNSS driver design guide for Windows 8.1"
+  - name: "Global Navigation Satellite System (GNSS) driver design guide for Windows 8.1"
     href: gnss-driver-design-guide-for-windows-8-1.md
   - name: "Writing a location sensor driver for Windows 8.1"
 # Auto-expanded node
@@ -46,16 +46,16 @@
       href: the-sample-driver-file-list.md
     - name: "The radio-manager file list"
       href: the-radio-manager-file-list.md
-- name: "GNSS driver design guide for Windows 10"
+- name: "Global Navigation Satellite System (GNSS) driver design guide for Windows 10"
 # Auto-expanded node
   items: 
-  - name: "GNSS driver design guide for Windows 10"
+  - name: "Global Navigation Satellite System (GNSS) driver design guide for Windows 10"
     href: gnss-driver-design-guide-for-windows-10.md
-  - name: "GNSS driver overview"
+  - name: "Global Navigation Satellite System (GNSS) driver overview"
     href: gnss-driver-overview.md
-  - name: "GNSS driver requirements"
+  - name: "Global Navigation Satellite System (GNSS) driver requirements"
     href: gnss-driver-requirements.md
-  - name: "GNSS driver architecture"
+  - name: "Global Navigation Satellite System (GNSS) driver architecture"
     href: gnss-driver-architecture.md
-  - name: "GNSS driver design"
+  - name: "Global Navigation Satellite System (GNSS) driver design"
     href: gnss-driver-design.md

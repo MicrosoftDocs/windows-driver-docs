@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_SWSYNTH
 description: KSNODETYPE\_SWSYNTH
-ms.assetid: 611e4666-c9a9-4ffc-b72e-a5894d034bdd
 keywords: ["KSNODETYPE_SWSYNTH Audio Devices"]
 topic_type:
 - apiref

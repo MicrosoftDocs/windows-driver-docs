@@ -1,7 +1,6 @@
 ---
 title: DXGK\_QUERYSEGMENTOUT2 structure
 description: The DXGK\_QUERYSEGMENTOUT2 structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 7193c763-fd76-4d7a-81ac-dfcc2b7bf881
 keywords: ["DXGK_QUERYSEGMENTOUT2 structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_QUERYSEGMENTOUT2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_QUERYSEGMENTOUT2 {
@@ -30,8 +28,7 @@ typedef struct _DXGK_QUERYSEGMENTOUT2 {
 } DXGK_QUERYSEGMENTOUT2;
 ```
 
-Members
--------
+## Members
 
 **SegmentCount**
 Reserved for system use.
@@ -39,8 +36,7 @@ Reserved for system use.
 **pSegmentDescriptor**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

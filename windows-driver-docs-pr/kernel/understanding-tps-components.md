@@ -1,7 +1,6 @@
 ---
 title: Understanding TPS Components
 description: Understanding TPS Components
-ms.assetid: 4bc962fa-8c05-4b0f-b634-9c0f435907b7
 keywords: ["transaction processing systems WDK KTM , components", "TPS WDK KTM , components", "transaction processing systems WDK KTM , scenarios", "TPS WDK KTM , scenarios", "resource managers WDK KTM , in a TPS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 # Understanding TPS Components
 
 
-Any [*transaction processing system*](transaction-processing-terms.md#ktm-term-transaction-processing-system) (TPS) that uses the Kernel Transaction Manager (KTM) and the [Common Log File System](using-common-log-file-system.md) (CLFS) should contain the following important components:
+Any [*transaction processing system*](transaction-processing-terms.md#ktm-term-transaction-processing-system) (TPS) that uses the Kernel Transaction Manager (KTM) and the [Common Log File System](introduction-to-the-common-log-file-system.md) (CLFS) should contain the following important components:
 
 -   A [*transaction manager*](transaction-processing-terms.md#ktm-term-transaction-manager) (KTM)
 
@@ -42,7 +41,7 @@ Now suppose that you want sets of read and write operations to occur atomically 
 
 Your system should include a resource manager that manages the data in the database in response to read and write requests from clients. This resource manager could export an application programming interface (API) that enables clients to associate a transaction with a set of read and write operations.
 
-When your resource manager is loaded, it must register itself with KTM by calling [**ZwCreateTransactionManager**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransactionmanager) and [**ZwCreateResourceManager**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateresourcemanager). Then, the resource manager can participate in transactions.
+When your resource manager is loaded, it must register itself with KTM by calling [**ZwCreateTransactionManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransactionmanager) and [**ZwCreateResourceManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateresourcemanager). Then, the resource manager can participate in transactions.
 
 You might want your resource manager to support a set of functions that enable clients to create data objects, read and write data that is associated with the data objects, and close the data objects. The following pseudocode shows an example code sequence from a client.
 
@@ -55,17 +54,17 @@ WriteData (IN DataHandle, IN Data);
 CloseDataObject (IN DataHandle);
 ```
 
-Before a client can call your resource manager's *CreateDataObject* routine, the client must create a transaction object by calling KTM's [**ZwCreateTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction) routine and obtain the transaction object's identifier by calling [**ZwQueryInformationTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransaction).
+Before a client can call your resource manager's *CreateDataObject* routine, the client must create a transaction object by calling KTM's [**ZwCreateTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction) routine and obtain the transaction object's identifier by calling [**ZwQueryInformationTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransaction).
 
-When the client calls your resource manager's *CreateDataObject* routine, the client passes the transaction object's identifier to the resource manager. The resource manager can call [**ZwOpenTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransaction) to obtain a handle to the transaction object, and then it can call [**ZwCreateEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment) to register its participation in the transaction.
+When the client calls your resource manager's *CreateDataObject* routine, the client passes the transaction object's identifier to the resource manager. The resource manager can call [**ZwOpenTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransaction) to obtain a handle to the transaction object, and then it can call [**ZwCreateEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment) to register its participation in the transaction.
 
 At this point, the client can start performing operations on the data object. Because the client provided a transaction identifier when it created the data object, the resource manager can assign all the read and write operations to the transaction.
 
 Your resource manager must record all the results of data operations that the client specifies without making the results permanent. Typically, the resource manager uses CLFS to record the operation results in a transaction log stream.
 
-When the client has finished calling the resource manager to perform transactional operations, it calls KTM's [**ZwCommitTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction) routine. At this point, KTM [notifies](transaction-notifications.md) the resource manager that it should make the operations permanent. The resource manager then moves the operation results from the log stream to the data's permanent storage medium. Finally, the resource manager calls [**ZwCommitComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommitcomplete) to inform KTM that the commit operation is complete.
+When the client has finished calling the resource manager to perform transactional operations, it calls KTM's [**ZwCommitTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction) routine. At this point, KTM [notifies](transaction-notifications.md) the resource manager that it should make the operations permanent. The resource manager then moves the operation results from the log stream to the data's permanent storage medium. Finally, the resource manager calls [**ZwCommitComplete**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommitcomplete) to inform KTM that the commit operation is complete.
 
-What happens if your resource manager reports an error for one of the client's calls to *ReadData* or *WriteData*? The client can call [**ZwRollbackTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbacktransaction) to roll back the transaction. As a result of that call, KTM notifies the resource manager that it should restore the data to its original state. Then, the client can either create a new transaction for the same operations, or it can choose to not continue.
+What happens if your resource manager reports an error for one of the client's calls to *ReadData* or *WriteData*? The client can call [**ZwRollbackTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbacktransaction) to roll back the transaction. As a result of that call, KTM notifies the resource manager that it should restore the data to its original state. Then, the client can either create a new transaction for the same operations, or it can choose to not continue.
 
 The following pseudocode shows an example of a more detailed sequence of a client's transactional operations.
 
@@ -90,9 +89,9 @@ Leave:
     return;
 ```
 
-What happens if the system crashes after the transaction is created but before it is committed or rolled back? Every time that your resource manager loads, it should call [**ZwRecoverTransactionManager**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrecovertransactionmanager) and [**ZwRecoverResourceManager**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrecoverresourcemanager). Calling **ZwRecoverTransactionManager** causes KTM to open its log stream and read the transaction history. Calling **ZwRecoverResourceManager** causes KTM to notify the resource manager of any enlisted transactions that were in progress before the crash and which transactions the resource manager must therefore recover.
+What happens if the system crashes after the transaction is created but before it is committed or rolled back? Every time that your resource manager loads, it should call [**ZwRecoverTransactionManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrecovertransactionmanager) and [**ZwRecoverResourceManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrecoverresourcemanager). Calling **ZwRecoverTransactionManager** causes KTM to open its log stream and read the transaction history. Calling **ZwRecoverResourceManager** causes KTM to notify the resource manager of any enlisted transactions that were in progress before the crash and which transactions the resource manager must therefore recover.
 
-If a transactional client called [**ZwCommitTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction) for a transaction before the crash, and began to handle commit operations for the transaction, the resource manager must be able to restore the transaction's state to the point immediately prior to the crash. If the client was not ready to commit the transaction before the crash, the resource manager can discard the data and roll back the transaction.
+If a transactional client called [**ZwCommitTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction) for a transaction before the crash, and began to handle commit operations for the transaction, the resource manager must be able to restore the transaction's state to the point immediately prior to the crash. If the client was not ready to commit the transaction before the crash, the resource manager can discard the data and roll back the transaction.
 
 For more information about how to write transactional clients, see [Creating a Transactional Client](creating-a-transactional-client.md).
 
@@ -130,7 +129,7 @@ Leave:
     return;
 ```
 
-Because the client passes the same transaction identifier to both resource managers, both resource managers can call [**ZwOpenTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransaction) and [**ZwCreateEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment) to enlist in the transaction. When the client eventually calls [**ZwCommitTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction), KTM [notifies](transaction-notifications.md) each resource manager that the manager should make the operations permanent, and each resource manager calls [**ZwCommitComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommitcomplete) when it has finished.
+Because the client passes the same transaction identifier to both resource managers, both resource managers can call [**ZwOpenTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransaction) and [**ZwCreateEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment) to enlist in the transaction. When the client eventually calls [**ZwCommitTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction), KTM [notifies](transaction-notifications.md) each resource manager that the manager should make the operations permanent, and each resource manager calls [**ZwCommitComplete**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommitcomplete) when it has finished.
 
 ### Other TPS Scenarios
 
@@ -149,9 +148,4 @@ KTM supports other TPS scenarios. For example, the following scenarios describe 
     In this case, you typically have to modify the existing resource manager so that it becomes a [superior transaction manager](creating-a-superior-transaction-manager.md) that communicates with KTM.
 
  
-
- 
-
-
-
 

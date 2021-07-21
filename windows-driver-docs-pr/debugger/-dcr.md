@@ -1,7 +1,6 @@
 ---
 title: dcr
 description: The dcr extension displays the default control register (DCR) at the specified address.
-ms.assetid: 294fc3a9-5182-47ae-a261-53be6389bcf1
 keywords: ["DCR (default control register)", "dcr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,8 +66,7 @@ Causes the display to include more in-depth information about all of the DCR fie
 
 This extension command can only be used with an Itanium-based target computer.
 
-Remarks
--------
+## Remarks
 
 The DCR specifies default parameters for the processor status register values on interruption. The DCR also specifies some additional global controls, as well as whether or not speculative load faults can be deferred.
 

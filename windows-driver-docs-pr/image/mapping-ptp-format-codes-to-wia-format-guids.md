@@ -1,7 +1,6 @@
 ---
 title: Mapping PTP Format Codes to WIA Format GUIDs
 description: Mapping PTP Format Codes to WIA Format GUIDs
-ms.assetid: a69269c0-1474-4de5-9a08-94902ef1f089
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-The format of an object is exposed through the [**WIA\_IPA\_FORMAT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-format) property as a GUID. The mapping between PTP format codes and WIA GUIDs is shown in the following table:
+The format of an object is exposed through the [**WIA\_IPA\_FORMAT**](./wia-ipa-format.md) property as a GUID. The mapping between PTP format codes and WIA GUIDs is shown in the following table:
 
 <table>
 <colgroup>
@@ -186,9 +185,4 @@ The format of an object is exposed through the [**WIA\_IPA\_FORMAT**](https://do
 (The WiaImgFmt\_XXX GUIDs are defined in *wiadef.h*.)
 
  
-
- 
-
-
-
 

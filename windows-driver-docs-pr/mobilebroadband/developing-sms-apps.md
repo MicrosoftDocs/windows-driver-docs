@@ -1,7 +1,6 @@
 ---
 title: Introduction to developing SMS apps
 description: Introduction to developing SMS apps
-ms.assetid: 052eb3cc-4a39-4667-8678-b18650f3b5c9
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
@@ -45,7 +44,7 @@ The sections in this topic include:
 
 Here’s an overview diagram on how the SMS works with a mobile broadband connection:
 
-![sms platform overview](images/fig1-mb-sms-platformoverview.jpg)
+![sms platform overview.](images/fig1-mb-sms-platformoverview.jpg)
 
 ### <span id="basreq"></span><span id="BASREQ"></span>Basic requirements
 
@@ -111,7 +110,7 @@ For more information about notification filtering, see [Enabling mobile operator
 ## <span id="DevelopSMSApp"></span><span id="developsmsapp"></span><span id="DEVELOPSMSAPP"></span>Developing your SMS app
 
 
-You can write JavaScript, C#, or C++ apps that use the [**Windows.Devices.Sms**](https://docs.microsoft.com/uwp/api/Windows.Devices.Sms) API to send, read, and delete messages.
+You can write JavaScript, C#, or C++ apps that use the [**Windows.Devices.Sms**](/uwp/api/Windows.Devices.Sms) API to send, read, and delete messages.
 
 **Note**  
 The Windows 7 Mobile Broadband SMS API provided only a low-level modem interface for SMS. Windows 8, Windows 8.1, and Windows 10 provide an alternate text-mode interface that is suitable for general app development.
@@ -130,15 +129,9 @@ The Windows 7 Mobile Broadband SMS API provided only a low-level modem interfac
 
 -   [Send SMS by using custom character sets](send-sms-by-using-custom-character-sets.md)
 
--   [Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
+-   [Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)
 
 -   [Set SMS declarations](set-sms-declarations.md)
 
  
-
- 
-
-
-
-
 

@@ -1,17 +1,15 @@
 ---
 title: WIA Error Handling Example
 description: WIA Error Handling Example
-ms.assetid: 7dc4b15e-40db-4e64-be41-d6bcc44603c6
-ms.date: 04/20/2017
+ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---
 
 # WIA Error Handling Example
 
+For an example of a driver that sends device status messages, please see the *Extended WIA 2.0 Monster Driver* sample in the [Windows Image Acquisition (WIA) Driver Samples](/samples/microsoft/windows-driver-samples/windows-image-acquisition-wia-driver-samples). The sample illustrates how a simple error handler can be implemented.
 
-For an example of a driver that sends device status messages, please see the Extended WIA Monster Driver sample in the [WIA Driver Samples](https://go.microsoft.com/fwlink/p/?linkid=256210). The sample illustrates how a simple error handler can be implemented.
-
-### Example: Error Handling Extension
+## Example: Error Handling Extension
 
 The following code snippet shows how a simple error handing extension can be implemented. This error handling extension only handles the WIA\_ERROR\_COVER\_OPEN device status error and shows a modal dialog box. Note that some of the code has been omitted to simplify this example.
 
@@ -120,11 +118,3 @@ OUT BSTR *pbstrDescription)
 
 }
 ```
-
- 
-
- 
-
-
-
-

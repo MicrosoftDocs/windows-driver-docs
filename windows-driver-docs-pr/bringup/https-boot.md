@@ -16,8 +16,4 @@ For reference, there is currently no support in Windows for HTTPS boot. Send ema
 ## Related resources
 
 
-[Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/)
-
-
-
-
+[Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/)

@@ -1,7 +1,6 @@
 ---
 title: FSCTL_ENUM_EXTERNAL_BACKING control code
 description: The FSCTL\_ENUM\_EXTERNAL\_BACKING control code begins or continues an enumeration of files on a volume that have a backing source.
-ms.assetid: 86B07858-2F10-48EF-AEB5-7F4A23A55F7F
 keywords: ["FSCTL_ENUM_EXTERNAL_BACKING control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,18 +19,18 @@ ms.localizationpriority: medium
 
 The **FSCTL\_ENUM\_EXTERNAL\_BACKING** control code begins or continues an enumeration of files on a volume that have a backing source. For each successful completion of the request, an identifier for the backed file is returned. All backed files are enumerated regardless of which external provider is backing it. Successive **FSCTL\_ENUM\_EXTERNAL\_BACKING** requests are required to enumerate all the backed files on the volume.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 **Parameters**
 
 <a href="" id="instance--in-"></a>*Instance \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. Opaque instance pointer for the caller. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. Opaque instance pointer for the caller. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fileobject--in-"></a>*FileObject \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object specifying the volume to be dismounted. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object specifying the volume to be dismounted. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle--in-"></a>*FileHandle \[in\]*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. The file handle of the volume to be dismounted. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. The file handle of the volume to be dismounted. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fscontrolcode--in-"></a>*FsControlCode \[in\]*  
 Control code for the operation. Use **FSCTL\_ENUM\_EXTERNAL\_BACKING** for this operation.
@@ -51,10 +50,9 @@ Size of the output buffer pointed to by *OutputBuffer*. *OutputBufferLength* mus
 <a href="" id="lengthreturned--out-"></a>*LengthReturned \[out\]*  
 Specifies the number of bytes written into *OutputBuffer* on successful completion.
 
-Status block
-------------
+## Status block
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
 <table>
 <colgroup>
@@ -93,8 +91,7 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 The **WOF\_EXTERNAL\_FILE\_ID** structure returned in *OutputBuffer* contains unique file identifiers for backed files. The structure is defined in ntifs.h as the following.
 
@@ -106,8 +103,7 @@ typedef struct _WOF_EXTERNAL_FILE_ID {
 
 A **FSCTL\_ENUM\_EXTERNAL\_BACKING** request is issued successively to retrieve the identifiers for each file on the volume having backing source. When all the files are enumerated, the STATUS\_NO\_MORE\_FILES status code is returned.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -129,18 +125,11 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
 [**FSCTL\_GET\_EXTERNAL\_BACKING**](fsctl-get-external-backing.md)
 
  
-
- 
-
-
-
-
-
 

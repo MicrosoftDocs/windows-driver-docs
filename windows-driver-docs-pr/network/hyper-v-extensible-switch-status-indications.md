@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Status Indications
 description: Hyper-V Extensible Switch Status Indications
-ms.assetid: ADF6622F-93E1-4A0D-AB54-A99F7D33EBA0
 ms.date: 07/18/2017
 ms.localizationpriority: medium
 ---
@@ -14,12 +13,7 @@ This section describes the following NDIS status indications that can be issued 
 -   [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](ndis-status-switch-nic-status.md)
 -   [**NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF**](ndis-status-switch-port-remove-vf.md)
 
-For more information on how extensions issue or handle extensible switch extension status indications, see [Hyper-V Extensible Switch Control Path for NDIS Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-control-path-for-ndis-status-indications).
+For more information on how extensions issue or handle extensible switch extension status indications, see [Hyper-V Extensible Switch Control Path for NDIS Status Indications](./hyper-v-extensible-switch-control-path-for-ndis-status-indications.md).
 
  
-
- 
-
-
-
 

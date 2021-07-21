@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_STATE
 description: Clients use the KSPROPERTY\_CLOCK\_STATE property to determine the streaming state of a pin.
-ms.assetid: c041b896-524b-4a7a-bb2c-9061c08f763c
 keywords: ["KSPROPERTY_CLOCK_STATE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,21 +46,19 @@ Clients use the KSPROPERTY\_CLOCK\_STATE property to determine the streaming sta
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ne-ks-ksstate" data-raw-source="[&lt;strong&gt;KSSTATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ne-ks-ksstate)"><strong>KSSTATE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate" data-raw-source="[&lt;strong&gt;KSSTATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate)"><strong>KSSTATE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
-Also see [KS Properties](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties).
+Also see [KS Properties](./ks-properties.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -79,14 +76,5 @@ Requirements
 ## See also
 
 
-[**KSSTATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ne-ks-ksstate)
-
- 
-
- 
-
-
-
-
-
+[**KSSTATE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate)
 

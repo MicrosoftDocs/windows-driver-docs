@@ -1,7 +1,6 @@
 ---
 title: Firmware requirements for D3cold
 description: Starting with Windows 8, devices can enter the D3cold power sub-state even when the system stays in the S0 power state.
-ms.assetid: 4BADC310-CC53-4084-A592-66197C348279
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,12 +10,12 @@ ms.localizationpriority: medium
 
 Starting with Windows 8, devices can enter the D3cold power sub-state even when the system stays in the S0 power state. This topic describes the firmware requirements for implementing D3cold support for an embedded device. The following discussion is intended to help firmware developers to enable their embedded devices to reliably enter and exit D3cold.
 
-In addition, device driver requirements for supporting D3cold are briefly discussed. For more information about device driver support for D3cold, see [Supporting D3cold in a Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver).
+In addition, device driver requirements for supporting D3cold are briefly discussed. For more information about device driver support for D3cold, see [Supporting D3cold in a Driver](../kernel/supporting-d3cold-in-a-driver.md).
 
 ## Introduction
 
 
-[Device power states](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-power-states) are defined in the ACPI specification, and in various bus specifications. The PCI bus specification has, since it introduced PCI power management, split the D3 (off) device power state into two sub-states, D3hot and D3cold. This distinction was added to the ACPI specification in ACPI 3.0 and extended in ACPI 4.0. Windows has always supported both D3 sub-states, but Windows 7 and earlier versions of Windows support the D3cold sub-state only when the entire machine exits the S0 (working) system power state to enter a sleep or hibernation state—usually S3 or S4. Starting with Windows 8, device drivers can enable their devices to enter the D3cold state even while the system stays in S0.
+[Device power states](../kernel/device-power-states.md) are defined in the ACPI specification, and in various bus specifications. The PCI bus specification has, since it introduced PCI power management, split the D3 (off) device power state into two sub-states, D3hot and D3cold. This distinction was added to the ACPI specification in ACPI 3.0 and extended in ACPI 4.0. Windows has always supported both D3 sub-states, but Windows 7 and earlier versions of Windows support the D3cold sub-state only when the entire machine exits the S0 (working) system power state to enter a sleep or hibernation state—usually S3 or S4. Starting with Windows 8, device drivers can enable their devices to enter the D3cold state even while the system stays in S0.
 
 D3hot, which is often just called "D3", is the device's "soft-off" state. In this state, the device can be detected by a bus scan, and commands sent to the device can cause it to power on again. In D3cold, all power sources are removed, with the possible exception of a small amount of power to drive the device's wake logic. For example, for PCI Express (PCIe) devices, the main device power source, Vcc, is frequently turned off in a transition to D3cold. Turning off Vcc can reduce power consumption and extend the time that a mobile hardware platform can run on a battery charge. When a device is in D3cold, it cannot be detected by a bus scan and cannot receive commands. Restoring Vcc power moves the device to an uninitialized state, which is usually equivalent to the D0 state. Software must then re-initialize the device to put it into the working state.
 
@@ -27,7 +26,7 @@ In the following discussion, a set of requirements is described for enabling dev
 -   Firmware and platform requirements
 -   Device driver requirements
 
-The first of these two categories is the main focus of this discussion. A brief overview of the second category is presented. For more information about device driver requirements, see [Supporting D3cold in a Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver).
+The first of these two categories is the main focus of this discussion. A brief overview of the second category is presented. For more information about device driver requirements, see [Supporting D3cold in a Driver](../kernel/supporting-d3cold-in-a-driver.md).
 
 ## Firmware and platform requirements
 
@@ -77,7 +76,7 @@ There is no requirement for a parent device to be capable of being power-managed
 
 The following block diagram shows an embedded device (labeled **EMBD**) on a system bus. The main power (**Vcc**) and auxiliary power (**Vaux**) to the device can be independently turned on and off through the block labeled **Power logic**.
 
-![an acpi-enumerated embedded device](images/d3cold1.png)
+![an acpi-enumerated embedded device.](images/d3cold1.png)
 
 The following ASL code example describes the power resources used by the embedded device in the previous diagram. This example starts with a declaration of an \_OSC control method that describes the capabilities of the device driver. Next, the device's two power resources are declared—the resource names PVCC and PVAX are assigned to the device's main and auxiliary power sources, **Vcc** and **Vaux**. Finally, the power resource requirements are listed for each device power state that the device supports, and the device's wake capabilities are described.
 
@@ -152,7 +151,7 @@ Scope (\_SB)
 
 If the embedded device conforms to a common bus specification, such as PCIe or USB, this device is discoverable through bus-defined mechanisms, and power can be supplied partially or wholly through the bus. If this device is not powered by other sideband power resources, the device's main power source is the link that connects the device to the parent bus controller. Bus-enumerated devices can be identified by the \_ADR object in the embedded device's definition. An \_ADR object is used to supply OSPM with the address of a device on the embedded device's parent bus. This address is used to tie the bus's representation of the device (as seen by the bus hardware) to the platform's representation of the device (as seen by ACPI firmware). (The \_ADR address encoding is bus-specific. For more information, see section 6.1.1, "\_ADR (Address)", in the ACPI 5.0 specification.) When this mechanism is employed, D3cold support must be coordinated with the parent bus driver.
 
-If the main power source for an embedded device is the link that connects this device to its parent bus, the key requirement for placing the device in D3cold is to power down the link. For more information about the transition to D3cold, see the state graph in [Device Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-power-states).
+If the main power source for an embedded device is the link that connects this device to its parent bus, the key requirement for placing the device in D3cold is to power down the link. For more information about the transition to D3cold, see the state graph in [Device Power States](../kernel/device-power-states.md).
 
 **Platform firmware**
 
@@ -180,7 +179,7 @@ The ACPI descriptor for the parent bus must do the following:
 
 The example hardware configuration in the following block diagram shows two different ways D3cold can be enabled for PCIe devices. First, an endpoint (labeled **ENDP**) is connected to a PCIe root port (**RP01**) and receives auxiliary power from its parent device through a **PCIe link**. Second, the **HD Audio** device in the diagram has no standard link to its parent device (the PCI controller labeled **PCI0**) and is therefore modeled similarly to the ACPI-enumerated case.
 
-![a bus-enumerated embedded device](images/d3cold2.png)
+![a bus-enumerated embedded device.](images/d3cold2.png)
 
 The **RP01** device in this diagram has a main power source, **Vcc1**, and an auxiliary power source, **Vaux1**. Similarly, the **HD Audio** device has a main power source, **Vcc2**, and an auxiliary power source, **Vaux2**.
 
@@ -339,19 +338,14 @@ The techniques shown in the two previous examples can be combined to support con
 ## Device driver requirements
 
 
-The power policy owner for a device (typically the function driver) tells the operating system whether to enable the device's transition from D3hot to D3cold. The driver can supply this information in the INF file that installs the device. Or, the driver can call the [*SetD3ColdSupport*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-set_d3cold_support) routine at run time to dynamically enable or disable the device's transitions to D3cold. By enabling a device to enter D3cold, a driver guarantees the following behavior:
+The power policy owner for a device (typically the function driver) tells the operating system whether to enable the device's transition from D3hot to D3cold. The driver can supply this information in the INF file that installs the device. Or, the driver can call the [*SetD3ColdSupport*](/windows-hardware/drivers/ddi/wdm/nc-wdm-set_d3cold_support) routine at run time to dynamically enable or disable the device's transitions to D3cold. By enabling a device to enter D3cold, a driver guarantees the following behavior:
 
 -   The device can tolerate a transition from D3hot to D3cold when the computer is to remain in S0.
 -   The device will work properly when it returns to D0 from D3cold.
 
 A device that fails to meet either requirement might, after entering D3cold, be unavailable until the computer is restarted or enters a sleeping state. If the device must be able to signal a wake event from any low-power Dx state that it enters, entry to D3cold must not be enabled unless the driver is certain that the device's wake signal will work in D3cold.
 
-For more information, see [Supporting D3cold in a Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver).
+For more information, see [Supporting D3cold in a Driver](../kernel/supporting-d3cold-in-a-driver.md).
 
  
-
- 
-
-
-
 

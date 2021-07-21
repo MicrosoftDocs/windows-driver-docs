@@ -1,7 +1,6 @@
 ---
 title: Defining New NTSTATUS Values
 description: Defining New NTSTATUS Values
-ms.assetid: 44211ae4-6bfe-4931-b12c-e590c7aacd97
 keywords: ["NTSTATUS values WDK kernel", "custom NTSTATUS values WDK kernel", "IO_ERR_XXX values"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,11 +12,11 @@ ms.localizationpriority: medium
 
 
 
-Drivers can define custom IO\_ERR\_*XXX* constants to use as **ErrorCode** values when logging errors. Pairs of drivers that are written together can also define custom STATUS\_*XXX* values for [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) requests.
+Drivers can define custom IO\_ERR\_*XXX* constants to use as **ErrorCode** values when logging errors. Pairs of drivers that are written together can also define custom STATUS\_*XXX* values for [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests.
 
 The following diagram shows the bit fields in a 32-bit NTSTATUS value.
 
-![diagram illustrating the bit fields in an ntstatus value](images/16ntstat.png)
+![diagram illustrating the bit fields in an ntstatus value.](images/16ntstat.png)
 
 The **Sev** field shown in the preceding diagram indicates the severity code, which must be one of the following system-defined values:
 
@@ -41,18 +40,13 @@ The **C** bit specifies if the value is customer-defined or Microsoft-defined. T
 
 Drivers can define new IO\_ERR\_*XXX* values to identify custom error messages in the system event log. For a description of how to define the NTSTATUS values and the error messages that they identify, see [Defining Custom Error Types](defining-custom-error-types.md).
 
-Pairs of drivers can define driver-specific STATUS\_*XXX* values to communicate information about privately defined [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) requests from the lower to the higher driver of the pair.
+Pairs of drivers can define driver-specific STATUS\_*XXX* values to communicate information about privately defined [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests from the lower to the higher driver of the pair.
 
-The class driver must map any private STATUS\_*XXX* value to a system-defined NTSTATUS value when it completes an IRP if an existing higher-level driver's [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine might be called for that IRP.
+The class driver must map any private STATUS\_*XXX* value to a system-defined NTSTATUS value when it completes an IRP if an existing higher-level driver's [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine might be called for that IRP.
 
-For paired display and video miniport drivers, the video port driver does the mapping between public STATUS\_*XXX* values and the Win32-defined constants returned by video miniport drivers. For more information, see [Video Miniport Drivers in the Windows 2000 Display Driver Model](https://docs.microsoft.com/windows-hardware/drivers/display/video-miniport-drivers-in-the-windows-2000-display-driver-model).
+For paired display and video miniport drivers, the video port driver does the mapping between public STATUS\_*XXX* values and the Win32-defined constants returned by video miniport drivers. For more information, see [Video Miniport Drivers in the Windows 2000 Display Driver Model](../display/video-miniport-drivers-in-the-windows-2000-display-driver-model.md).
 
 Drivers cannot use custom NTSTATUS values for IRPs that can be received in user mode, because only the system-defined values can be translated into Win32 error codes.
 
  
-
- 
-
-
-
 

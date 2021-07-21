@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_POWER\_MODE
 description: The WIA\_DPC\_POWER\_MODE property defines the current power source for the camera device.
-ms.assetid: b99d9ebc-6a1f-4bfc-be3a-07dba5b38186
 keywords: ["WIA_DPC_POWER_MODE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPC\_POWER\_MODE property to determine what power source the camera is using.
 
@@ -61,8 +59,7 @@ The following table describes the constants that are valid with WIA\_DPC\_POWER\
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

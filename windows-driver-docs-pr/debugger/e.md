@@ -1,7 +1,6 @@
 ---
 title: E (Windows Debugger Glossary)
 description: Glossary page - E
-ms.assetid: 1e32bd40-8c77-4c6b-913c-6ec26707ed36
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ The debugger engine monitors some of the events that occur in its targets. These
 A collection of rules that influence how the debugger engine proceeds after an event has occurred in a target. There are three types of event filters: specific event filters, specific exception filters, and arbitrary exception filters.
 
 <span id="event_callback_objects"></span><span id="EVENT_CALLBACK_OBJECTS"></span>**event callback objects**  
-Instances of the [IDebugEventCallbacks](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugeventcallbacks) interface which have been registered with a client. The engine notifies the event callbacks whenever an event occurs.
+Instances of the [IDebugEventCallbacks](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugeventcallbacks) interface which have been registered with a client. The engine notifies the event callbacks whenever an event occurs.
 
 <span id="event_callbacks"></span><span id="EVENT_CALLBACKS"></span>**event callbacks**  
 See event callback objects.
@@ -57,10 +56,4 @@ See debugger extension.
 See debugger extension.
 
  
-
- 
-
-
-
-
 

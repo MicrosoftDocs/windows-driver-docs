@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_ALLOCATIONINFO2 structure
 description: The DXGK\_ALLOCATIONINFO2 structure is reserved for system use. Do not use it in your driver.
-ms.assetid: af396dd1-6b47-4724-a481-c8f4646816e9
 keywords: ["_DXGK_ALLOCATIONINFO2 structure Display Devices", "DXGK_ALLOCATIONINFO2 structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_ALLOCATIONINFO2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_ALLOCATIONINFO2 {
@@ -42,8 +40,7 @@ typedef struct _DXGK_ALLOCATIONINFO2 {
 } DXGK_ALLOCATIONINFO2;
 ```
 
-Members
--------
+## Members
 
 **pPrivateDriverData**
 Reserved for system use.
@@ -87,8 +84,7 @@ Reserved for system use.
 **Reserved**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

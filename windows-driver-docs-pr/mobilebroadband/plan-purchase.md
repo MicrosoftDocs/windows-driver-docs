@@ -1,7 +1,6 @@
 ---
 title: Plan purchase
 description: Plan purchase
-ms.assetid: e4713e66-a26d-4408-885e-877259e4450b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,19 +34,12 @@ Design considerations include the following:
 
 The following flow chart describes how plan purchase works with Windows and UWP apps:
 
-![plan purchase flowchart](images/mb-fig1-planpurchaseflowchart.png)
+![plan purchase flowchart.](images/mb-fig1-planpurchaseflowchart.png)
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
+[Mobile broadband app scenarios](./account-management.md)
 
  
-
- 
-
-
-
-
-
 

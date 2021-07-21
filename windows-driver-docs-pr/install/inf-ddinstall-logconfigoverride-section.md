@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.LogConfigOverride Section
 description: DDInstall.LogConfigOverride sections are used to create an override configuration to override hardware resource requirements.
-ms.assetid: 7ee8d221-7cdb-4373-aa8b-2d5164f6a636
 keywords:
 - INF DDInstall.LogConfigOverride Section Device and Driver Installation
 topic_type:
@@ -21,9 +20,9 @@ ms.localizationpriority: medium
 
  
 
-<em>DDInstall</em>**.LogConfigOverride** sections are used to create an [override configuration](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
+<em>DDInstall</em>**.LogConfigOverride** sections are used to create an [override configuration](../kernel/hardware-resources.md#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
-```ini
+```inf
 [install-section-name.LogConfigOverride] |
 [install-section-name.nt.LogConfigOverride] |
 [install-section-name.ntx86.LogConfigOverride] |
@@ -40,17 +39,15 @@ LogConfig=log-config-section[,log-config-section]...]
 
 The section entries and values that are used with <em>DDInstall</em>**.LogConfigOverride** sections are specified within *log-config-sections* referenced by [**INF LogConfig directives**](inf-logconfig-directive.md).
 
-Remarks
--------
+## Remarks
 
 The configuration data that is specified in a *log-config-section* for a Plug and Play device is a preferred hardware resource configuration, but is not an absolute requirement. Some or all of the specified hardware resource configuration data might not be accepted by the device's underlying bus driver. In this situation, the device driver is assigned the hardware resources that were originally reported by the bus driver.
 
-Examples
---------
+## Examples
 
 The following example shows a <em>DDInstall</em>**.LogConfigOverride** section and a corresponding *log-config-section* for a PCMCIA device.
 
-```ini
+```inf
 [XYZDevice.LogConfigOverride]
 LogConfig = XYZDevice.Override0
 
@@ -70,11 +67,4 @@ For more information about the hardware resource configuration data values that 
 [***DDInstall***](inf-ddinstall-section.md)
 
  
-
- 
-
-
-
-
-
 

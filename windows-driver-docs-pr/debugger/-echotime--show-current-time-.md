@@ -1,7 +1,6 @@
 ---
 title: .echotime (Show Current Time)
 description: The .echotime command displays the current time.
-ms.assetid: 08da8914-0882-4525-8e15-e23176484915
 keywords: [".echotime (Show Current Time) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,13 +49,19 @@ The **.echotime** command displays the current time.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.echotime** command displays the time to the computer that the debugger is running on.
 
- 
 
+## See also
+
+[.echotimestamps (Show Time Stamps)](-echotimestamps--show-time-stamps-.md)
+ 
+[.time (Display System Time)](-time--display-system-time-.md)
+
+[!runaway](-runaway.md)
+ 
  
 
 

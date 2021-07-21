@@ -1,7 +1,6 @@
 ---
 title: HBA\_STATUS
 description: HBA\_STATUS
-ms.assetid: 2fabfa86-7f8a-4c90-8aa0-53e42bd5c075
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

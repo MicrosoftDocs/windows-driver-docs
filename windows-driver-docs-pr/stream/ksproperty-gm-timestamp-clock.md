@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_GM\_TIMESTAMP\_CLOCK
 description: The KSPROPERTY\_GM\_TIMESTAMP\_CLOCK property is not currently supported.
-ms.assetid: 009cab3e-0889-4b8e-aee4-235db31c068b
 keywords: ["KSPROPERTY_GM_TIMESTAMP_CLOCK Streaming Media Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_GM\_TIMESTAMP\_CLOCK property is not currently supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

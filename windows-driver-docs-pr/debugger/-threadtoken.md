@@ -1,7 +1,6 @@
 ---
 title: threadtoken
 description: The threadtoken extension displays the impersonation state of the current thread.
-ms.assetid: df16bdb5-0834-4e07-ad5f-a712f9282bb0
 keywords: ["threadtoken Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,8 +49,7 @@ The **!threadtoken** extension displays the impersonation state of the current t
 
 For information about threads and impersonation, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The **!threadtoken** extension is obsolete in Windows XP and later versions of Windows. Use [**!token**](-token.md) instead.
 

@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_CHECK\_CHANGES
 description: Clients use KSMETHOD\_BDA\_CHECK\_CHANGES to determine whether a list of requested changes will work.
-ms.assetid: 00a2d0ca-0ede-4ae5-ab2a-95d19143ea7c
 keywords: ["KSMETHOD_BDA_CHECK_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,13 +30,11 @@ KSMETHOD with **Flags** member set to KSMETHOD\_TYPE\_NONE.
 
 None
 
-Remarks
--------
+## Remarks
 
 Before committing a list of changes, the network provider makes a KSMETHOD\_BDA\_CHECK\_CHANGES request to determine whether the requested changes will work. The minidriver may reserve resources when this request is made, to guarantee that the resources are available.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -55,16 +52,9 @@ Requirements
 ## See also
 
 
-[**BdaCheckChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacheckchanges)
+[**BdaCheckChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacheckchanges)
 
-[**KSMETHOD**](https://docs.microsoft.com/previous-versions/ff563398(v=vs.85))
-
- 
+[**KSMETHOD**](/windows-hardware/drivers/stream/ksmethod-structure)
 
  
-
-
-
-
-
 

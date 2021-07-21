@@ -1,7 +1,6 @@
 ---
 title: Receive Side Scaling Support
 description: Receive Side Scaling Support
-ms.assetid: db0d8178-ae6c-4513-9c8c-f10615d1bbce
 keywords:
 - scalable networking WDK
 - receive-side scaling WDK networking
@@ -26,13 +25,7 @@ The miniport driver or NIC assigns the received data to a receive queue that is 
 
 NDIS schedules a DPC on each of the specified target processors. Each DPC processes a particular receive queue on the specified target processor.
 
-For more information about NDIS 6.0 receive side scaling, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
+For more information about NDIS 6.0 receive side scaling, see [Receive Side Scaling](./receive-side-scaling-version-2-rssv2-.md).
 
  
-
- 
-
-
-
-
 

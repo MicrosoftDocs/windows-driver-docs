@@ -1,7 +1,6 @@
 ---
 title: DSSPEAKER_SURROUND Speaker Configuration
 description: DSSPEAKER_SURROUND Speaker Configuration
-ms.assetid: de8f861b-f190-4915-b3f0-95d39965b612
 keywords:
 - DSSPEAKER_SURROUND speaker configuration WDK audio
 ms.date: 04/20/2017
@@ -24,9 +23,9 @@ Once it takes effect, the DSSPEAKER\_SURROUND speaker-configuration setting is g
 
 DirectSound uses the following algorithm to configure the audio system for surround mode:
 
-1.  DirectSound first asks the driver to go into the surround speaker mode by sending a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) set-property request to the driver's DAC node (or 3D node if it has no DAC node). (See [**KSNODETYPE\_DAC**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-dac) and [**KSNODETYPE\_3D\_EFFECTS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-3d-effects).) The [**KSAUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config) structure that accompanies this property request specifies the KSAUDIO\_SPEAKER\_SURROUND speaker configuration. If the request succeeds, the audio device routes the four channels to four analog outputs that are connected directly to left, right, center, and back speakers.
+1.  DirectSound first asks the driver to go into the surround speaker mode by sending a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) set-property request to the driver's DAC node (or 3D node if it has no DAC node). (See [**KSNODETYPE\_DAC**](./ksnodetype-dac.md) and [**KSNODETYPE\_3D\_EFFECTS**](./ksnodetype-3d-effects.md).) The [**KSAUDIO\_CHANNEL\_CONFIG**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config) structure that accompanies this property request specifies the KSAUDIO\_SPEAKER\_SURROUND speaker configuration. If the request succeeds, the audio device routes the four channels to four analog outputs that are connected directly to left, right, center, and back speakers.
 
-2.  If that fails, DirectSound asks the driver to configure the device in stereo speaker mode and to enable its [**KSNODETYPE\_PROLOGIC\_ENCODER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-prologic-encoder) node, if it has one. If this succeeds, the device converts the four-channel stream from the application to a surround-encoded stereo signal that it outputs in either digital or analog form. (The hardware should do the encoding after mixing the streams that flow into the device's various mixer pins.) The user can connect the device's stereo outputs to an external decoder that converts the encoded signal into four channels that are output to left, right, center, and back speakers.
+2.  If that fails, DirectSound asks the driver to configure the device in stereo speaker mode and to enable its [**KSNODETYPE\_PROLOGIC\_ENCODER**](./ksnodetype-prologic-encoder.md) node, if it has one. If this succeeds, the device converts the four-channel stream from the application to a surround-encoded stereo signal that it outputs in either digital or analog form. (The hardware should do the encoding after mixing the streams that flow into the device's various mixer pins.) The user can connect the device's stereo outputs to an external decoder that converts the encoded signal into four channels that are output to left, right, center, and back speakers.
 
 3.  If that fails, DirectSound enables the KSNODETYPE\_PROLOGIC\_ENCODER node in KMixer. (The device is already in stereo mode from the previous step.) Again, the stereo signal that is output by the device can be fed to an external decoder.
 
@@ -34,12 +33,7 @@ If this algorithm succeeds, the application can create and play four-channel PCM
 
 In case (3) above, the application should avoid using hardware buffers for any of its output streams. Note that KMixer mixes all its input streams before encoding the mix to produce the surround stereo stream. However, any stream that enters a hardware mixer pin is mixed in hardware with the encoded stereo from KMixer, which degrades the quality of the surround audio when it is decoded. The application can prevent this by using only software buffers.
 
-A stereo stream that has been surround-encoded by a KSNODETYPE\_PROLOGIC\_ENCODER node can be decoded into four channels (left, right, center, and back) by a [**KSNODETYPE\_PROLOGIC\_DECODER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-prologic-decoder) node.
+A stereo stream that has been surround-encoded by a KSNODETYPE\_PROLOGIC\_ENCODER node can be decoded into four channels (left, right, center, and back) by a [**KSNODETYPE\_PROLOGIC\_DECODER**](./ksnodetype-prologic-decoder.md) node.
 
  
-
- 
-
-
-
 

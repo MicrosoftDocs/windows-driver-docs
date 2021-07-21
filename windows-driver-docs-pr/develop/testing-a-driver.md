@@ -1,5 +1,4 @@
 ---
-ms.assetid: bb73768e-0ac9-4377-9caa-c0cce1d10bb8
 title: Testing a Driver
 description: Testing a Driver
 ms.date: 06/28/2018
@@ -19,12 +18,12 @@ This video demonstrates the how to run driver-related tests in a test group.
 
 This section describes some strategies for testing driver, and information about how you select and configure a remote computer to use for testing.
 
-To prepare a driver for public distribution, you should run the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893). For information about the Windows Certification program and how to obtain the HCK, see [Windows Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016).
+To prepare a driver for public distribution, you should run the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/). For information about the Windows Certification program and how to obtain the HCK, see [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
 The WDK provides the test binaries and tools which make it easy to run the Device Fundamentals tests from the command-line.
-For more information, see [Run the DevFund Tests via the command-line](https://review.docs.microsoft.com/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line).
+For more information, see [Run the DevFund Tests via the command-line](../devtest/run-devfund-tests-via-the-command-line.md).
 
-## 
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -55,11 +54,4 @@ For more information, see [Run the DevFund Tests via the command-line](https://r
 
 ## See Also
 
-[Tools for Verifying Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-verifying-drivers)
-
- 
-
-
-
-
-
+[Tools for Verifying Drivers](../devtest/tools-for-verifying-drivers.md)

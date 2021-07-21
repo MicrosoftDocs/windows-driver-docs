@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_PHANTOM
 description: CM_PROB_PHANTOM
-ms.assetid: ec95671b-24f6-479b-abf1-4fa4bd619b73
 keywords:
 - CM_PROB_PHANTOM
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_PHANTOM
+# Code 45 - CM_PROB_PHANTOM
 
-This function is reserved for system use.
-
-The device is not present.
+This Device Manager error message indicates that the device is not present.
 
 ## Error Code
 

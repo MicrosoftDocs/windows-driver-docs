@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTPUTDUPL\_POINTER\_POSITION structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: c05205bf-3f7c-487d-8cce-d708d50eb4d9
+description: Learn about the D3DKMT\_OUTPUTDUPL\_POINTER\_POSITION structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTPUTDUPL_POINTER_POSITION structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTPUTDUPL_POINTER_POSITION {
@@ -30,15 +28,13 @@ typedef struct _D3DKMT_OUTPUTDUPL_POINTER_POSITION {
 } D3DKMT_OUTPUTDUPL_POINTER_POSITION;
 ```
 
-Members
--------
+## Members
 
 **Position**
 
 **Visible**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

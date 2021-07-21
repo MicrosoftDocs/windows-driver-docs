@@ -1,7 +1,6 @@
 ---
 title: Using a Driver-Defined Callback Object
 description: Using a Driver-Defined Callback Object
-ms.assetid: b3b32534-0641-4818-9384-65fd45f689e8
 keywords: ["callback objects WDK kernel", "driver-defined callback objects WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,11 +14,11 @@ ms.localizationpriority: medium
 
 To use a callback object defined by another driver, a driver opens the object, then registers a routine to be called when the callback is triggered, as shown in the following figure. The driver requesting notification must know the name of the callback object and must understand the semantics of the arguments passed to the callback routine.
 
-![diagram illustrating registration for callback notification](images/3reg-cbk.png)
+![diagram illustrating registration for callback notification.](images/3reg-cbk.png)
 
-Before it can open the object, the driver must call [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes) to create an attribute block, specifying the name of the object. After it has a pointer to an attribute block, it calls [**ExCreateCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-excreatecallback), passing the attribute pointer, a location in which to receive a handle to the callback, and **FALSE** for the *Create* parameter, indicating that it requires an existing callback object.
+Before it can open the object, the driver must call [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes) to create an attribute block, specifying the name of the object. After it has a pointer to an attribute block, it calls [**ExCreateCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excreatecallback), passing the attribute pointer, a location in which to receive a handle to the callback, and **FALSE** for the *Create* parameter, indicating that it requires an existing callback object.
 
-The driver can then call [**ExRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exregistercallback) with the returned handle to register its callback routine.
+The driver can then call [**ExRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exregistercallback) with the returned handle to register its callback routine.
 
 The callback routine has the following prototype:
 
@@ -37,12 +36,7 @@ When the creator of the callback triggers notification, the system calls the reg
 
 In its callback routine, a driver can perform whatever tasks it requires for the current conditions.
 
-When the driver no longer requires notification, it should call [**ExUnregisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exunregistercallback) to remove its routine from the list of registered callbacks and to remove its reference to the callback object.
+When the driver no longer requires notification, it should call [**ExUnregisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exunregistercallback) to remove its routine from the list of registered callbacks and to remove its reference to the callback object.
 
  
-
- 
-
-
-
 

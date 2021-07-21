@@ -1,7 +1,6 @@
 ---
 title: Specifying a Packet Coalescing Receive Filter
 description: Specifying a Packet Coalescing Receive Filter
-ms.assetid: 0369A63D-4CDE-448A-8472-EEEB7B859B8D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,28 +8,28 @@ ms.localizationpriority: medium
 # Specifying a Packet Coalescing Receive Filter
 
 
-An overlying driver can set one or more receive filters on a miniport driver that support NDIS packet coalescing. The overlying driver can specify up to the maximum number of receive filters that the miniport driver specified in the **MaxPacketCoalescingFilters** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
+An overlying driver can set one or more receive filters on a miniport driver that support NDIS packet coalescing. The overlying driver can specify up to the maximum number of receive filters that the miniport driver specified in the **MaxPacketCoalescingFilters** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
 
-**Note**  The overlying protocol driver obtains the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure within the [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure. The overlying filter driver obtains the **NDIS\_RECEIVE\_FILTER\_CAPABILITIES** structure within the [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_attach_parameters) structure.
+**Note**  The overlying protocol driver obtains the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure within the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure. The overlying filter driver obtains the **NDIS\_RECEIVE\_FILTER\_CAPABILITIES** structure within the [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_attach_parameters) structure.
 
  
 
-The overlying driver downloads receive filters to the miniport driver by issuing OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for this OID request contains a pointer to a caller-allocated buffer. This buffer is formatted to contain the following:
+The overlying driver downloads receive filters to the miniport driver by issuing OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for this OID request contains a pointer to a caller-allocated buffer. This buffer is formatted to contain the following:
 
--   An [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure that specifies the parameters for an NDIS receive filter.
+-   An [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure that specifies the parameters for an NDIS receive filter.
 
     For more information about how to initialize this structure, see [Specifying a Receive Filter](#specifying-a-receive-filter).
 
--   An array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures that specifies the filter test criterion for a field in a network packet header.
+-   An array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures that specifies the filter test criterion for a field in a network packet header.
 
     For more information about how to initialize these structures, see [Specifying Header Field Tests](#specifying-header-field-tests).
 
 ## Specifying a Receive Filter
 
 
-An overlying driver specifies a packet coalescing receive filter by initializing an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure with the configuration parameters for the filter. When it initializes the **NDIS\_RECEIVE\_FILTER\_PARAMETERS** structure, the overlying driver must follow these rules:
+An overlying driver specifies a packet coalescing receive filter by initializing an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure with the configuration parameters for the filter. When it initializes the **NDIS\_RECEIVE\_FILTER\_PARAMETERS** structure, the overlying driver must follow these rules:
 
--   The **FilterType** member must be set to the [**NDIS\_RECEIVE\_FILTER\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_receive_filter_type) enumeration value of **NdisReceiveFilterTypePacketCoalescing**.
+-   The **FilterType** member must be set to the [**NDIS\_RECEIVE\_FILTER\_TYPE**](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_receive_filter_type) enumeration value of **NdisReceiveFilterTypePacketCoalescing**.
 
 -   The **QueueId** member must be set to NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
@@ -40,11 +39,11 @@ An overlying driver specifies a packet coalescing receive filter by initializing
 
 -   If the overlying driver is creating a new receive filter, it must set the **FilterId** member to NDIS\_DEFAULT\_RECEIVE\_FILTER\_ID.
 
-    **Note**  NDIS will generate a unique filter identifier (ID) for the receive filter before it forwards the OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) to the miniport driver.     
+    **Note**  NDIS will generate a unique filter identifier (ID) for the receive filter before it forwards the OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md) to the miniport driver.     
 
--  If the overlying driver is modifying an existing receive filter, it must set the **FilterId** member to the nonzero filter ID of the receive filter. The overlying driver obtains the filter ID for the receive filter when it issues an OID method request of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-enum-filters). For more information about how to modify a receive filter, see [Modifying Packet Coalescing Receive Filters](modifying-packet-coalescing-receive-filters.md).
+-  If the overlying driver is modifying an existing receive filter, it must set the **FilterId** member to the nonzero filter ID of the receive filter. The overlying driver obtains the filter ID for the receive filter when it issues an OID method request of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](./oid-receive-filter-enum-filters.md). For more information about how to modify a receive filter, see [Modifying Packet Coalescing Receive Filters](modifying-packet-coalescing-receive-filters.md).
 
--   The **FieldParametersArrayOffset**, **FieldParametersArrayNumElements**, and **FieldParametersArrayElementSize** members of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure must be set to define a field parameter's array. Each element in the array is an [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure that specifies the parameters for a header field test of a receive filter.
+-   The **FieldParametersArrayOffset**, **FieldParametersArrayNumElements**, and **FieldParametersArrayElementSize** members of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure must be set to define a field parameter's array. Each element in the array is an [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure that specifies the parameters for a header field test of a receive filter.
 
 -   The **RequestedFilterIdBitCount** member must be set to zero.
 
@@ -61,25 +60,19 @@ Each receive filter can specify one or more test criteria (*header field tests*)
 
 To optimize filtering on the network adapter, header field tests are based on standardized header field names instead of byte offset/length specifications within the packet data. By using header/field names, the network adapter's hardware or firmware can optimize how multiple header field tests are performed on a received packet.
 
-Each receive filter can contain one or more header field tests specified by an [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure. Each **NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS** structure is an element of the field parameters array that is referenced by the **FieldParametersArrayOffset**, **FieldParametersArrayNumElements**, and **FieldParametersArrayElementSize** members of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure.
+Each receive filter can contain one or more header field tests specified by an [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure. Each **NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS** structure is an element of the field parameters array that is referenced by the **FieldParametersArrayOffset**, **FieldParametersArrayNumElements**, and **FieldParametersArrayElementSize** members of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure.
 
-The miniport driver must follow these guidelines when it handles an OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter):
+The miniport driver must follow these guidelines when it handles an OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md):
 
--   If the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag is set in the **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure, the network adapter must only indicate received packets with a matching MAC address and untagged packets or packets with a VLAN identifier of zero. That is, the network adapter must not indicate packets with a matching MAC address and a nonzero VLAN identifier.
+-   If the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag is set in the **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure, the network adapter must only indicate received packets with a matching MAC address and untagged packets or packets with a VLAN identifier of zero. That is, the network adapter must not indicate packets with a matching MAC address and a nonzero VLAN identifier.
 
--   If the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag is not set and there is no VLAN identifier filter configured by an OID set request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter), the miniport driver must do one of the following:
+-   If the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag is not set and there is no VLAN identifier filter configured by an OID set request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md), the miniport driver must do one of the following:
 
-    -   If the miniport driver supports NDIS 6.20, it must return a failed status for the OID request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter).
+    -   If the miniport driver supports NDIS 6.20, it must return a failed status for the OID request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md).
 
-    -   If the miniport driver supports NDIS 6.30 or later versions of NDIS, it must configure the network adapter to inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must put the VLAN tag in an [**NDIS\_NET\_BUFFER\_LIST\_8021Q\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_net_buffer_list_8021q_info) that is associated with the packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure.
+    -   If the miniport driver supports NDIS 6.30 or later versions of NDIS, it must configure the network adapter to inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must put the VLAN tag in an [**NDIS\_NET\_BUFFER\_LIST\_8021Q\_INFO**](/windows-hardware/drivers/ddi/nbl8021q/ns-nbl8021q-ndis_net_buffer_list_8021q_info) that is associated with the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure.
 
--   If the overlying driver sets a MAC address filter and a VLAN identifier filter in the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure, it does not set the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag in either of the filter fields. In this case, the miniport driver should indicate packets that match both the specified MAC address and the VLAN identifier. That is, the miniport driver should not indicate packets with a matching MAC address that have a zero VLAN identifier or are untagged packets.
-
- 
+-   If the overlying driver sets a MAC address filter and a VLAN identifier filter in the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure, it does not set the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag in either of the filter fields. In this case, the miniport driver should indicate packets that match both the specified MAC address and the VLAN identifier. That is, the miniport driver should not indicate packets with a matching MAC address that have a zero VLAN identifier or are untagged packets.
 
  
-
-
-
-
 

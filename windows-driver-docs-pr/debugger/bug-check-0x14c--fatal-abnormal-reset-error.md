@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x14C FATAL_ABNORMAL_RESET_ERROR
 description: The FATAL_ABNORMAL_RESET_ERROR bug check has a value of 0x0000014C. This indicates that an unrecoverable system error occurred or the system has abnormally reset.
-ms.assetid: 46E624EE-CA84-443E-95C2-E128E8D03188
 keywords: ["Bug Check 0x14C FATAL_ABNORMAL_RESET_ERROR", "FATAL_ABNORMAL_RESET_ERROR"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,8 +26,7 @@ The FATAL\_ABNORMAL\_RESET\_ERROR bug check has a value of 0x0000014C. This indi
 
 None
 
-Cause
------
+## Cause
 
 The system encountered an unexpected error and restarted. Issues that may cause this error include: hardware watchdog timer in application or auxiliary processors indicating a system hang, user-initiated key sequence because of a hang, a brownout, or failures in the default bugcheck path. The cache may not be flushed and the resulting full memory dump may not contain the current thread context.
 

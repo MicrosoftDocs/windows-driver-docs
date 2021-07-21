@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_EXPOSURE\_METERING\_MODE
 description: The WIA\_DPC\_EXPOSURE\_METERING\_MODE property specifies the mode that a camera uses to automatically adjust the exposure setting.
-ms.assetid: f1340ba2-984e-41a1-a6f2-56639f60d94a
 keywords: ["WIA_DPC_EXPOSURE_METERING_MODE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the WIA\_DPC\_EXPOSURE\_METERING\_MODE property.
 
@@ -67,8 +65,7 @@ The following table describes the constants that are valid with the WIA\_DPC\_EX
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

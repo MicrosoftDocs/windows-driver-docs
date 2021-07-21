@@ -1,7 +1,6 @@
 ---
 title: MS\_SM\_HbaApiVersion WMI Class
 description: MS\_SM\_HbaApiVersion WMI Class
-ms.assetid: 3d0591e5-ed95-4509-bd27-e122ac9186d2
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -24,15 +23,9 @@ class MS_SM_HbaApiVersion
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SM\_HbaApiVersion**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563211(v=vs.85))
+[**MS\_SM\_HbaApiVersion**](/previous-versions/windows/hardware/drivers/ff563211(v=vs.85))
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Driver Support for OpenXPS
 description: OpenXPS is the Open XML Paper Specification format for documents, and it’s based on the Ecma International standard specification.
-ms.assetid: 9BC9787E-A54D-4A11-B256-57BE5D206404
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ OpenXPS is the Open XML Paper Specification format for documents, and it’s bas
 
 For the most up to date information about this specification, see [Open XML Paper Specification](https://www.ecma-international.org/publications/standards/Ecma-388.htm).
 
-Windows 8 provides full support for OpenXPS, side-by-side with continued support for the existing Microsoft XPS format. This topic focuses on support for OpenXPS via the v4 driver model. For OpenXPS support that is relevant to Windows application developers, see [App Support for OpenXPS Printing](https://docs.microsoft.com/windows/desktop/printdocs/app-support-for-openxps-printing).
+Windows 8 provides full support for OpenXPS, side-by-side with continued support for the existing Microsoft XPS format. This topic focuses on support for OpenXPS via the v4 driver model. For OpenXPS support that is relevant to Windows application developers, see [App Support for OpenXPS Printing](/windows/desktop/printdocs/app-support-for-openxps-printing).
 
 ## Supported OpenXPS Scenarios
 
@@ -47,7 +46,7 @@ Instead, you should use IPrintDocumentPackageTarget to submit the print job as a
 ## Impact on App Developers
 
 
-For information about the impact on app developers regarding the Windows 8 support for OpenXPS, see [App Support for OpenXPS Printing](https://docs.microsoft.com/windows/desktop/printdocs/app-support-for-openxps-printing).
+For information about the impact on app developers regarding the Windows 8 support for OpenXPS, see [App Support for OpenXPS Printing](/windows/desktop/printdocs/app-support-for-openxps-printing).
 
 ## Impact on Driver Developers
 
@@ -133,8 +132,8 @@ For additional information about other options for the File Save section of the 
 
 ## Related topics
 
-[App Support for OpenXPS Printing](https://docs.microsoft.com/windows/desktop/printdocs/app-support-for-openxps-printing)  
+[App Support for OpenXPS Printing](/windows/desktop/printdocs/app-support-for-openxps-printing)  
 
 [Open XML Paper Specification](https://www.ecma-international.org/publications/standards/Ecma-388.htm) 
 
-[V4 Driver Manifest](v4-driver-manifest.md)  
+[V4 Driver Manifest](v4-driver-manifest.md)

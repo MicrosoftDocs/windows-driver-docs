@@ -1,7 +1,6 @@
 ---
 title: ATA port driver support routines
 description: Describes the ATA port driver routines
-ms.assetid: 59222e82-8abb-4ef6-b58d-f70470c2def0
 keywords:
 - ATA driver support routines
 - storage WDK

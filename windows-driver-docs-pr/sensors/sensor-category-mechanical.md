@@ -1,7 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_MECHANICAL
 description: The SENSOR\_CATEGORY\_MECHANICAL category contains sensors that provide information related to mechanisms.
-ms.assetid: 0ae66a5b-6564-4e2c-a6a1-c88c7e853a38
 keywords: ["SENSOR_CATEGORY_MECHANICAL Sensor Devices"]
 topic_type:
 - apiref
@@ -127,8 +126,7 @@ This category includes the following platform-defined data fields.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

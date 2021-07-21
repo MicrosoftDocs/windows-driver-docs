@@ -1,7 +1,6 @@
 ---
 title: WDI TX path
 description: This section describes the WDI TX path
-ms.assetid: 8DF3E82E-761E-4A90-A789-1CB8EE8F0377
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,14 +13,14 @@ ms.localizationpriority: medium
 
 The following diagram shows the TX path components.
 
-![wdi tx path](images/wdi-tx-path-block-diagram.png)
+![wdi tx path.](images/wdi-tx-path-block-diagram.png)
 
 ## TX descriptors
 
 
 The TAL uses a Target TX Descriptor (TTD) to inform the target of the size and location of the frame.
 
-Different target WLAN devices may have different definitions of the TTD. Due to this, the TTD programming is done within the TAL, based on information provided by WDI. To program a TTD, WDI specifies a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) (NBL), through which the frame metadata, such as frame ID, extended TID, applicable task offloads, and encryption exemption action, is accessible.
+Different target WLAN devices may have different definitions of the TTD. Due to this, the TTD programming is done within the TAL, based on information provided by WDI. To program a TTD, WDI specifies a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) (NBL), through which the frame metadata, such as frame ID, extended TID, applicable task offloads, and encryption exemption action, is accessible.
 
 The TAL transfers the TTD and the TX frame to the target. From the metadata in the TTD and fields within the frame's header, the target can determine the intended recipient of the transmit frame and how to transmit it.
 
@@ -77,12 +76,16 @@ In general, the DRR scheduler services only the RA-TID queues associated with th
 
 Frames injected by the IHV with extended TID in the IHV reserved range map to the following extended ACs for the purposes of priority scheduling. The table is in order of increasing priority.
 
-|              |        |        |        |        |         |         |         |         |
-|--------------|--------|--------|--------|--------|---------|---------|---------|---------|
-| Extended TID | 17     | 18     | 19     | 20     | 21      | 22      | 23      | 24      |
-| Extended AC  | AC\_BK | AC\_BE | AC\_VI | AC\_VO | AC\_PR0 | AC\_PR1 | AC\_PR2 | AC\_PR3 |
-
- 
+| Extended TID | Extended AC |
+| - | - |
+| 17 | AC\_BK |
+| 18 | AC\_BE |
+| 19 | AC\_VI |
+| 20 | AC\_VO |
+| 21 | AC\_PR0 |
+| 22 | AC\_PR1 |
+| 23 | AC\_PR2 |
+| 24 | AC\_PR3 |
 
 For WDI port queuing, all injected frames are treated equally regardless of the extended TID.
 
@@ -91,47 +94,40 @@ For WDI port queuing, all injected frames are treated equally regardless of the 
 
 ### Requests to TxEngine
 
--   [*MINIPORT\_WDI\_TX\_ABORT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_abort)
--   [*MINIPORT\_WDI\_TX\_DATA\_SEND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_data_send)
--   [*MINIPORT\_WDI\_TX\_TAL\_QUEUE\_IN\_ORDER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_tal_queue_in_order)
--   [*MINIPORT\_WDI\_TX\_TAL\_SEND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_tal_send)
--   [*MINIPORT\_WDI\_TX\_TAL\_SEND\_COMPLETE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_tal_send_complete)
--   [*MINIPORT\_WDI\_TX\_TARGET\_DESC\_DEINIT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_target_desc_deinit)
--   [*MINIPORT\_WDI\_TX\_TARGET\_DESC\_INIT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_target_desc_init)
+-   [*MINIPORT\_WDI\_TX\_ABORT*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_abort)
+-   [*MINIPORT\_WDI\_TX\_DATA\_SEND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_data_send)
+-   [*MINIPORT\_WDI\_TX\_TAL\_QUEUE\_IN\_ORDER*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_tal_queue_in_order)
+-   [*MINIPORT\_WDI\_TX\_TAL\_SEND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_tal_send)
+-   [*MINIPORT\_WDI\_TX\_TAL\_SEND\_COMPLETE*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_tal_send_complete)
+-   [*MINIPORT\_WDI\_TX\_TARGET\_DESC\_DEINIT*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_target_desc_deinit)
+-   [*MINIPORT\_WDI\_TX\_TARGET\_DESC\_INIT*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_target_desc_init)
 
 ### Indications from TxEngine
 
--   [*NDIS\_WDI\_TX\_DEQUEUE\_IND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_dequeue_ind)
--   [*NDIS\_WDI\_TX\_TRANSFER\_COMPLETE\_IND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_transfer_complete_ind)
--   [*NDIS\_WDI\_TX\_SEND\_COMPLETE\_IND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_send_complete_ind)
--   [*NDIS\_WDI\_TX\_QUERY\_RA\_TID\_STATE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_query_ra_tid_state)
+-   [*NDIS\_WDI\_TX\_DEQUEUE\_IND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_dequeue_ind)
+-   [*NDIS\_WDI\_TX\_TRANSFER\_COMPLETE\_IND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_transfer_complete_ind)
+-   [*NDIS\_WDI\_TX\_SEND\_COMPLETE\_IND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_send_complete_ind)
+-   [*NDIS\_WDI\_TX\_QUERY\_RA\_TID\_STATE*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_query_ra_tid_state)
 
 ### TX specific control requests
 
--   [*MINIPORT\_WDI\_TX\_PEER\_BACKLOG*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_peer_backlog)
+-   [*MINIPORT\_WDI\_TX\_PEER\_BACKLOG*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_peer_backlog)
 
 ### TX specific control indications
 
--   [*NDIS\_WDI\_TX\_SEND\_PAUSE\_IND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_send_pause_ind)
--   [*NDIS\_WDI\_TX\_SEND\_RESTART\_IND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_send_restart_ind)
--   [*NDIS\_WDI\_TX\_RELEASE\_FRAMES\_IND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_release_frames_ind)
--   [*NDIS\_WDI\_TX\_INJECT\_FRAME\_IND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_inject_frame_ind)
+-   [*NDIS\_WDI\_TX\_SEND\_PAUSE\_IND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_send_pause_ind)
+-   [*NDIS\_WDI\_TX\_SEND\_RESTART\_IND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_send_restart_ind)
+-   [*NDIS\_WDI\_TX\_RELEASE\_FRAMES\_IND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_release_frames_ind)
+-   [*NDIS\_WDI\_TX\_INJECT\_FRAME\_IND*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_inject_frame_ind)
 
 ## Related topics
 
 
-[WDI TX Path Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[WDI TX Path Functions](/windows-hardware/drivers/ddi/_netvista/)
 
-[**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list)
+[**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)
 
-[**WDI\_TXRX\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities)
-
- 
+[**WDI\_TXRX\_CAPABILITIES**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities)
 
  
-
-
-
-
-
 

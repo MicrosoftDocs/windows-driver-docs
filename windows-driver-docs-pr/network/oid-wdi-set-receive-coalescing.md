@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_RECEIVE_COALESCING
 description: OID_WDI_SET_RECEIVE_COALESCING is used by the host to add a packet filter for packet coalescing.
-ms.assetid: c8856813-0d81-4735-95cc-d9b5dc6ede87
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
@@ -27,7 +26,7 @@ When the host receives a request from the OS to set packet coalescing filters, i
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                                 |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------|
-| [**WDI\_TLV\_SET\_RECEIVE\_COALESCING**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-receive-coalescing) |                                |          | The packet coalescing parameters to be set. |
+| [**WDI\_TLV\_SET\_RECEIVE\_COALESCING**](./wdi-tlv-set-receive-coalescing.md) |                                |          | The packet coalescing parameters to be set. |
 
  
 
@@ -36,8 +35,7 @@ When the host receives a request from the OS to set packet coalescing filters, i
 
 No additional parameters. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -66,9 +64,4 @@ Requirements
 [OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING](oid-wdi-set-clear-receive-coalescing.md)
 
  
-
- 
-
-
-
 

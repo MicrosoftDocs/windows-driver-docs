@@ -1,7 +1,6 @@
 ---
 title: Device-specific methods (_DSM)
 description: To support increased functionality and extension to select technology stacks, Windows define Device-Specific Methods (_DSM) for the device.
-ms.assetid: E49BE897-28A5-42FE-875C-A8EB56EABF8B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -62,18 +61,14 @@ The [ACPI 5.0 specification](https://uefi.org/specifications) introduces several
 
 To support device-class-specific communications between the driver stack in Windows and the platform firmware, Microsoft defines Device-Specific Methods (\_DSM) to be used with drivers.
 
-|                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Topic                                                                                                                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](https://docs.microsoft.com/windows-hardware/drivers/storage/-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-) | The \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1) is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity. It provides a common basis of reporting device functions & capabilities, such that OS software can interact with various implementations through the same mechanisms. Further, it allows support for vendor-specific functionality through access to I2C registers. |
-| [\_DSM (Device Specific Method) for SATA](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613874(v=vs.85))                                                                               | This method enables management of each port of a SATA controller separate from the host controller as a whole.                                                                                                                                                                                                                                                                                                                                                                           |
+**Topic**: Description
+
+**[\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](../storage/-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)**: The \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1) is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity. It provides a common basis of reporting device functions & capabilities, such that OS software can interact with various implementations through the same mechanisms. Further, it allows support for vendor-specific functionality through access to I2C registers.
+
+**[\_DSM (Device Specific Method) for SATA](/previous-versions/windows/hardware/design/dn613874(v=vs.85))**: This method enables management of each port of a SATA controller separate from the host controller as a whole.
+
 
  
 
  
-
- 
-
-
-
 

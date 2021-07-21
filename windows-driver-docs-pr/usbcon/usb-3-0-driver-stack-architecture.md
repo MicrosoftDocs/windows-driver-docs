@@ -1,5 +1,5 @@
 ---
-Description: This topic provides an overview of the Universal Serial Bus (USB) driver stack architecture.
+description: This topic provides an overview of the Universal Serial Bus (USB) driver stack architecture.
 title: USB host-side drivers in Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ The following figure shows the architectural block diagram of the USB driver sta
 
 Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oHCI, or uHCI controllers. The USB 2.0 driver stack ships in Windows XP with Service Pack 1 (SP1) and later versions of the Windows operating system.
 
-![architectural block diagram for usb 2.0 and 3.0 driver stacks](images/usb-driver-stack-3.png)
+![architectural block diagram for usb 2.0 and 3.0 driver stacks.](images/usb-driver-stack-3.png)
 
 -   [USB 3.0 driver stack](#usb-30-driver-stack)
     -   [USB 3.0 host controller driver (Usbxhci.sys)](#usb-30-host-controller-driver-usbxhcisys)
@@ -116,11 +116,8 @@ Microsoft provides the following helper libraries to help kernel-mode drivers an
 
 -   Winusb.dll
 
-    Winusb.dll is a user-mode DLL that exposes [WinUSB functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) for communicating with Winusb.sys, which is loaded as a device's function driver in kernel mode. Applications use these functions to configure the device, retrieve information about the device, and perform I/O operations. For information about using these functions, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+    Winusb.dll is a user-mode DLL that exposes [WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) for communicating with Winusb.sys, which is loaded as a device's function driver in kernel mode. Applications use these functions to configure the device, retrieve information about the device, and perform I/O operations. For information about using these functions, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
-[USB Driver Development Guide](usb-driver-development-guide.md)  
-
-
-
+[Universal Serial Bus (USB) Drivers](../index.yml)  
+[USB Driver Development Guide](usb-driver-development-guide.md)

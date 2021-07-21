@@ -1,7 +1,6 @@
 ---
 title: dg (Display Selector)
 description: The dg command shows the segment descriptor for the specified selector.
-ms.assetid: bf680931-f4f9-4b72-bb25-42d095514d2a
 keywords: ["dg (Display Selector) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,15 +48,14 @@ Specifies the hexadecimal selector value of the last selector to be displayed. I
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86, Itanium</p></td>
+<td align="left"><p>x86</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
 No more than 256 selectors can be displayed by this command.
 

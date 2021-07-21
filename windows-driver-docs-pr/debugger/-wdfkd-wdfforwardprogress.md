@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfforwardprogress
 description: The wdfkd.wdfforwardprogress extension displays information about the forward progress of a specified framework queue object.
-ms.assetid: 3062d914-4fd4-4e33-8cf0-562484380184
 keywords: ["wdfkd.wdfforwardprogress Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,8 +39,7 @@ KMDF 1
 
 For more information about how to debug Kernel-Mode Driver Framework (KMDF) drivers, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension will succeed only if the specified framework queue object is configured to support forward progress. If this extension is used with other objects, an error message will be displayed.
 

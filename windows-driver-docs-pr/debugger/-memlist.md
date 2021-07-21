@@ -1,7 +1,6 @@
 ---
 title: memlist
 description: The memlist extension scans physical memory lists from the page frame number (PFN) database in order to check them for consistency.
-ms.assetid: 9d5307df-5e46-4d95-8c96-ab6da0f54cd0
 keywords: ["PFN database", "memlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,8 +51,7 @@ Causes the zeroed pages list to be verified.
 
  
 
-Remarks
--------
+## Remarks
 
 At present, this extension will only check the zeroed pages list to make sure that all pages in that list are zeroed. The appropriate syntax is:
 

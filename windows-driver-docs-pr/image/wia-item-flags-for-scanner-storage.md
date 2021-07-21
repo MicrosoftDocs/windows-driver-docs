@@ -1,7 +1,6 @@
 ---
 title: WIA Item Flags for Scanner Storage
 description: WIA Item Flags for Scanner Storage
-ms.assetid: 493b7c4f-d36a-4447-92a3-34b42ef58397
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # WIA Item Flags for Scanner Storage
 
 
-This topic lists the required and optional WIA item flags for the root item and child items of a storage scanner item tree. For a complete list of the WIA item flags and their definitions, see [**WIA\_IPA\_ITEM\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-flags).
+This topic lists the required and optional WIA item flags for the root item and child items of a storage scanner item tree. For a complete list of the WIA item flags and their definitions, see [**WIA\_IPA\_ITEM\_FLAGS**](./wia-ipa-item-flags.md).
 
 ### Required WIA Item Flags for Scanners Storage
 
@@ -48,9 +47,4 @@ This flag may optionally be used when an item can be deleted.
 The item is an image. This flag is required if the file contains still image data and is valid only for items that also have the **WiaItemTypeFile** flag set.
 
  
-
- 
-
-
-
 

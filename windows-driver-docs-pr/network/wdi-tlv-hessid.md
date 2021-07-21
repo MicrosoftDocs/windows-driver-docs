@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_HESSID
 description: WDI_TLV_HESSID is a TLV that contains a list of HESSIDs.
-ms.assetid: 630A1824-7722-4B03-8073-EFC44E142400
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_HESSID Network Drivers Starting with Windows Vista
@@ -21,19 +20,18 @@ WDI\_TLV\_HESSID is a TLV that contains a list of HESSIDs.
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
+The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
 
 ## Values
 
 
 | Type                                                  | Description        |
 |-------------------------------------------------------|--------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | A list of HESSIDs. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | A list of HESSIDs. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

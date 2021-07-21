@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_BAUDRATE
 description: The WIA\_DIP\_BAUDRATE property contains the current baud rate setting for a device. The WIA service creates and maintains this property.
-ms.assetid: 38b7c12b-ff74-49eb-9a04-6b906dcc7d44
 keywords: ["WIA_DIP_BAUDRATE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The value of the WIA\_DIP\_BAUDRATE property should be "Empty" if the device is not connected by a serial cable.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

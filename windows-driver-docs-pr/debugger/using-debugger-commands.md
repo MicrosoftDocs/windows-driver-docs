@@ -1,7 +1,6 @@
 ---
 title: Using Debugger Commands
 description: This section describes using Debugger Commands. You enter commands at the prompt at the bottom of the window.
-ms.assetid: 64dcc364-53b5-41d3-9266-abcfe4b328f4
 keywords: commands, debugger commands, meta-commands
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -27,7 +26,7 @@ For WinDbg, "Debugger Command window" refers to the window that is labeled "Comm
 
 -   In the large, upper pane, you view command output.
 
-This window is always open at the beginning of a debugging session. You can reopen or switch to this window by clicking **Command** on the **View** menu, pressing ALT+1, or clicking the **Command (Alt+1)** button (![screen shot of the debugger command window button](images/tbcmd.png)) on the toolbar.
+This window is always open at the beginning of a debugging session. You can reopen or switch to this window by selecting **Command** on the **View** menu, pressing ALT+1, or selecting the **Command (Alt+1)** button (![screen shot of the debugger command window button.](images/tbcmd.png)) on the toolbar.
 
 You can use the UP ARROW and DOWN ARROW keys to scroll through the command history. When a previous command appears, you can edit it and then press ENTER to execute the previous command (or the edited version of the previous command). The cursor does not have to be at the end of the line for this procedure to work correctly.
 
@@ -83,7 +82,7 @@ You can press the TAB key to automatically complete your text entry. In any of t
 
 When you use the TAB key to perform text completion, if your text fragment begins with a period (.), the text is matched to a dot command. If your text fragment begins with an exclamation point (!), the text is matched to an extension command. Otherwise, the text is matched with a symbol. When you usee the TAB key to enter symbols, pressing the TAB key completes code and type symbols and module names. If no module name is apparent, local symbols and module names are completed. If a module or module pattern is given, symbol completion completes code and type symbols from all matches.
 
-You can right-click in the Debugger Command window to automatically paste the contents of the clipboard into the command that you are typing.
+You can select and hold (or right-click) in the Debugger Command window to automatically paste the contents of the clipboard into the command that you are typing.
 
 The maximum command length is 4096 characters. However, if you are [controlling the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md), the maximum line length is 512 characters.
 
@@ -93,7 +92,7 @@ If the last command that you issued presents a long display and you want to cut 
 
 In kernel-mode debugging, you can cancel commands from the keyboard of the target computer by pressing [**CTRL+C**](ctrl-c--break-.md).
 
-You can use the [**.cls (Clear Screen)**](-cls--clear-screen-.md) command to clear all of the text from the [Debugger Command window](debugger-command-window.md). This command clears the whole command history. In WinDbg, you can clear the command history by using the [Edit | Clear Command Output](edit---clear-command-output.md) command or by clicking **Clear command output** on the shortcut menu of the Debugger Command window.
+You can use the [**.cls (Clear Screen)**](-cls--clear-screen-.md) command to clear all of the text from the [Debugger Command window](debugger-command-window.md). This command clears the whole command history. In WinDbg, you can clear the command history by using the [Edit | Clear Command Output](edit---clear-command-output.md) command or by selecting **Clear command output** on the shortcut menu of the Debugger Command window.
 
 ### <span id="expression_syntax"></span><span id="EXPRESSION_SYNTAX"></span>Expression Syntax
 
@@ -123,11 +122,11 @@ You can use the scrollbar to view your previous commands and their output.
 
 When you are using CDB or KD, any keyboard entry automatically scrolls down the Debugger Command window back to the bottom.
 
-In WinDbg, the display automatically scrolls down to the bottom whenever a command produces output or you press the ENTER key. If you want to disable this automatic scrolling, click the [Options](view---options.md) on the **View** menu and then clear the **Automatically scroll** check box.
+In WinDbg, the display automatically scrolls down to the bottom whenever a command produces output or you press the ENTER key. If you want to disable this automatic scrolling, select the [Options](view---options.md) on the **View** menu and then clear the **Automatically scroll** check box.
 
 ### <span id="windbg_text_features"></span><span id="WINDBG_TEXT_FEATURES"></span>WinDbg Text Features
 
-In WinDbg, you can use several additional features to change how text is displayed in the [Debugger Command window](debugger-command-window.md). You can access some of these features in the WinDbg window, some in the shortcut menu in the Debugger Command window, and some by clicking on the appropriate menu icon.
+In WinDbg, you can use several additional features to change how text is displayed in the [Debugger Command window](debugger-command-window.md). You can access some of these features in the WinDbg window, some in the shortcut menu in the Debugger Command window, and some by selecting the appropriate menu icon.
 
 -   The **Word wrap** command on the shortcut menu turns on and off the word wrap status. This command affects the whole window, not only commands that you use after this state is changed. Because many commands and extensions produce formatted displays, we typically do not recommend word wrap.
 

@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_GET_AUTO_POWER_SAVE
 description: OID_WDI_GET_AUTO_POWER_SAVE gets the power save state of the port.
-ms.assetid: b7a14348-66ad-4728-986d-05145eb49b27
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_AUTO_POWER_SAVE Network Drivers Starting with Windows Vista
@@ -30,12 +29,11 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                                          | Multiple TLV instances allowed | Optional | Description                  |
 |------------------------------------------------------------------------------|--------------------------------|----------|------------------------------|
-| [**WDI\_TLV\_GET\_AUTO\_POWER\_SAVE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-get-auto-power-save) |                                |          | Auto power save information. |
+| [**WDI\_TLV\_GET\_AUTO\_POWER\_SAVE**](./wdi-tlv-get-auto-power-save.md) |                                |          | Auto power save information. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -59,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

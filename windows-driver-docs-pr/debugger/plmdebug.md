@@ -1,9 +1,8 @@
 ---
 title: PLMDebug
 description: PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Windows app, which run under Process Lifecycle Management (PLM). 
-ms.assetid: 68BE8F5D-6425-43E2-B5BC-C1D35614AB32
 keywords: ["PLMDebug Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/03/2020
 topic_type:
 - apiref
 api_name:
@@ -15,12 +14,9 @@ ms.localizationpriority: medium
 
 # PLMDebug
 
-
 PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Windows app, which run under Process Lifecycle Management (PLM). With PLMDebug, you can take manual control of suspending, resuming, and terminating a Windows app.
 
 **Tip**  With Windows 10, version 1607 or later, you can use the UWP commands, such as .createpackageapp to debug UWP apps. For more information see [Debugging a UWP app using WinDbg](debugging-a-uwp-app-using-windbg.md).
-
- 
 
 **Where to get PLMDebug**
 
@@ -36,11 +32,10 @@ plmdebug /suspend Package
 plmdebug /resume Package
 plmdebug /disableDebug Package
 plmdebug /enumerateBgTasks Package
-plmdebug /activateBgTaskTaskId
+plmdebug /activateBgTask "{TaskID}"
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______Package"></span><span id="_______package"></span><span id="_______PACKAGE"></span> *Package*  
 The full name of a package or the ID of a running process.
@@ -76,21 +71,21 @@ Resumes a package.
 <span id="________disableDebug_Package"></span><span id="________disabledebug_package"></span><span id="________DISABLEDEBUG_PACKAGE"></span> **/disableDebug** *Package*  
 Decrements the debug reference count for a package.
 
-<span id="________enumerateBgTasksPackage"></span><span id="________enumeratebgtaskspackage"></span><span id="________ENUMERATEBGTASKSPACKAGE"></span> **/enumerateBgTasks***Package*  
+<span id="________enumerateBgTasksPackage"></span><span id="________enumeratebgtaskspackage"></span><span id="________ENUMERATEBGTASKSPACKAGE"></span> **/enumerateBgTasks** *Package*  
 Enumerate background task ids for a package.
 
-<span id="________activateBgTaskTaskId"></span><span id="________activatebgtasktaskid"></span><span id="________ACTIVATEBGTASKTASKID"></span> **/activateBgTask***TaskId*  
-Activates a background task. Note that not all background tasks can be activated using PLMDebug.
+<span id="________activateBgTaskTaskId"></span><span id="________activatebgtasktaskid"></span><span id="________ACTIVATEBGTASKTASKID"></span> **/activateBgTask** "{*TaskId*}"  
+Activates a background task. Note that not all background tasks can be activated using PLMDebug. The TaskID must be wrapped in braces and quotation marks. For example:
 
-Remarks
--------
+`plmdebug.exe /activatebgtask "{29421c11-1e1a-47a4-9121-949ce9e25456}"`
+
+## Remarks
 
 You must call **plmdebug /enableDebug** before you call any of the suspend, resume, or terminate functions.
 
-The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](https://go.microsoft.com/fwlink/p/?LinkID=267918). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](https://go.microsoft.com/fwlink/p/?LinkID=267918) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
+The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
 
-Examples
---------
+## Examples
 
 **Example 1**
 
@@ -132,7 +127,7 @@ Increment the debug reference count for the package that contains MyApp.
 
 **plmdebug /enableDebug 4816**
 
-In WinDbg, in the **Attach to Process** dialog box, select process 4816, and click **OK**. WinDbg will attach to MyApp.
+In WinDbg, in the **Attach to Process** dialog box, select process 4816, and select **OK**. WinDbg will attach to MyApp.
 
 When you have finished debugging MyApp, detach the debugger. Then decrement the debug reference count for the package.
 
@@ -158,19 +153,31 @@ Finally, decrement the debug reference count for the package.
 
 **plmdebug /disableDebug MyApp\_1.0.0.0\_x64\_\_tnq5r49etfg3c**
 
-## <span id="see_also"></span>See also
+**Example 4**
 
+**Manually activate a background task**
 
-[How to trigger suspend, resume, and background events in Windows Apps](https://go.microsoft.com/fwlink/p/?LinkID=267916)
+To manually activate a background task for debugging you can query for the list of background task registered and then activate it through plmdebug.
+
+First query the set of background tasks registered:
+
+**plmdebug /enumeratebgtasks MyApp\_1.0.0.0\_x64\_\_tnq5r49etfg3c**
+```console
+Package full name is MyApp_1.0.0.0_x64__tnq5r49etfg3c.
+Background Tasks:
+SampleTask : {50DB0363-D722-4E23-A18F-1EF49B226CC3}
+```
+
+If you want to guarantee that the task activates, enable debug mode first. For example, opportunistic tasks like TimeTrigger-activated tasks will not activate while the system is in battery saver. Enabling debug mode on the package will ensure the system ignores the policies that would prevent activation otherwise.
+
+**plmdebug /enabledebug MyApp\_1.0.0.0\_x64\_\_tnq5r49etfg3c**
+
+Then activate the desired task using its registration GUID, that you enumerated.
+
+**plmdebug /activatebgtask "{50DB0363-D722-4E23-A18F-1EF49B226CC3}"**
+
+## See also
+
+[How to trigger suspend, resume, and background events while debugging UWP apps in Visual Studio](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
-
- 
-
- 
-
-
-
-
-
-

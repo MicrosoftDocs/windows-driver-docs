@@ -1,7 +1,6 @@
 ---
 title: Overlay support
 description: Overlay support
-ms.assetid: 325a08b2-c357-49b7-a9c3-878c44bc2d26
 keywords:
 - drawing page flips WDK DirectDraw , overlay surfaces
 - DirectDraw flipping WDK Windows 2000 display , overlay surfaces

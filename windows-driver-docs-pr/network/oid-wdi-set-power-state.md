@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_POWER_STATE
 description: OID_WDI_SET_POWER_STATE sets the power state of the device.
-ms.assetid: f1453ace-5e36-464e-96f0-e578890cdf3f
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_POWER_STATE Network Drivers Starting with Windows Vista
@@ -150,19 +149,19 @@ Set power commands cannot fail. The firmware should never fail such commands. Th
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-power-state" data-raw-source="[&lt;strong&gt;WDI_TLV_POWER_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-power-state)"><strong>WDI_TLV_POWER_STATE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/network/wdi-tlv-power-state" data-raw-source="[&lt;strong&gt;WDI_TLV_POWER_STATE&lt;/strong&gt;](./wdi-tlv-power-state.md)"><strong>WDI_TLV_POWER_STATE</strong></a></p></td>
 <td></td>
 <td></td>
 <td><p>The power state. This applies to the primary port.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-enable-wake-events" data-raw-source="[&lt;strong&gt;WDI_TLV_ENABLE_WAKE_EVENTS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-enable-wake-events)"><strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/network/wdi-tlv-enable-wake-events" data-raw-source="[&lt;strong&gt;WDI_TLV_ENABLE_WAKE_EVENTS&lt;/strong&gt;](./wdi-tlv-enable-wake-events.md)"><strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong></a></p></td>
 <td></td>
 <td>X</td>
 <td><p>This field may only appear when the NIC is being put into low power and is armed to wake on any of the specified events (such as D2 on SD IO).</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-power-dx-reason" data-raw-source="[&lt;strong&gt;WDI_TLV_SET_POWER_DX_REASON&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-power-dx-reason)"><strong>WDI_TLV_SET_POWER_DX_REASON</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/network/wdi-tlv-set-power-dx-reason" data-raw-source="[&lt;strong&gt;WDI_TLV_SET_POWER_DX_REASON&lt;/strong&gt;](./wdi-tlv-set-power-dx-reason.md)"><strong>WDI_TLV_SET_POWER_DX_REASON</strong></a></p></td>
 <td></td>
 <td>X</td>
 <td><p>The set power reason.</p></td>
@@ -177,7 +176,7 @@ Set power commands cannot fail. The firmware should never fail such commands. Th
 
 | TLV                                                                                 | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                                                                                                                                                                                               |
 |-------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_ADAPTER\_RESUME\_REQUIRED**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-adapter-resume-required) |                                | X        | If the value is true, it signals to the OS that the firmware needs assistance in resuming its context. This should only occur when the driver is suspended to storage. The IHV component must reset the software state because the operating system issues a series of Wi-Fi commands to bring the firmware context and IHV component context up to date. |
+| [**WDI\_TLV\_ADAPTER\_RESUME\_REQUIRED**](./wdi-tlv-adapter-resume-required.md) |                                | X        | If the value is true, it signals to the OS that the firmware needs assistance in resuming its context. This should only occur when the driver is suspended to storage. The IHV component must reset the software state because the operating system issues a series of Wi-Fi commands to bring the firmware context and IHV component context up to date. |
 
  
 
@@ -186,9 +185,9 @@ Set power commands cannot fail. The firmware should never fail such commands. Th
 
 A NIC specifies the set of events that it can detect to wake the stack. The operating system plumbs down a subset or full set of the events to the NIC with the low power command. Some wake event parameters are set much earlier than the Dx command. Others are set right before the Dx command to the firmware. All events only become enabled with the Dx command.
 
-In this interface, the event that is set to enabled is plumbed down in the optional [**WDI\_TLV\_ENABLE\_WAKE\_EVENTS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-enable-wake-events) TLV as part of the OID\_WDI\_SET\_POWER command for device power state Dx. The TLV is absent if the operating system does not want to arm the NIC to wake.
+In this interface, the event that is set to enabled is plumbed down in the optional [**WDI\_TLV\_ENABLE\_WAKE\_EVENTS**](./wdi-tlv-enable-wake-events.md) TLV as part of the OID\_WDI\_SET\_POWER command for device power state Dx. The TLV is absent if the operating system does not want to arm the NIC to wake.
 
-When the firmware receives a Dx command with [**WDI\_TLV\_ENABLE\_WAKE\_EVENTS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-enable-wake-events), it may detect a wake event before it completes the Dx command. It should buffer the event, finish processing the command, and then assert the wake interrupt.
+When the firmware receives a Dx command with [**WDI\_TLV\_ENABLE\_WAKE\_EVENTS**](./wdi-tlv-enable-wake-events.md), it may detect a wake event before it completes the Dx command. It should buffer the event, finish processing the command, and then assert the wake interrupt.
 
 Each and every wake by the Wi-Fi NIC should be followed by a wake reason for why the NIC wakes the stack. A NIC wakes the stack by asserting the wake interrupt line, which is typically serviced by the bus or ACPI methods. The methods wake the CPU and required components to handle the wake event, and complete the Wi-Fi Wait Wake IRP for the stack. Subsequently, the operating system issues a D0 request to the driver and firmware. This request is a power OID to the driver that sends a D0 command to the firmware. The firmware holds the indication of the wake reason until it receives and completes the D0 command.
 
@@ -199,7 +198,7 @@ Each and every wake by the Wi-Fi NIC should be followed by a wake reason for why
 ## No enabled wake events
 
 
-If there is no [**WDI\_TLV\_ENABLE\_WAKE\_EVENTS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-enable-wake-events) present, the operating system does not need the NICs to run at low power. The NICs may be completely powered off. If suspended to a hard drive, the NICs drivers are expected to resume firmware context at resume.
+If there is no [**WDI\_TLV\_ENABLE\_WAKE\_EVENTS**](./wdi-tlv-enable-wake-events.md) present, the operating system does not need the NICs to run at low power. The NICs may be completely powered off. If suspended to a hard drive, the NICs drivers are expected to resume firmware context at resume.
 
 ## Power state interaction and transition examples
 
@@ -208,7 +207,7 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### D0 to Dx (armed to wake)
 
-![wdi d0 to dx armed transition](images/wdi-d0-to-dx-armed-to-wake.png)
+![wdi d0 to dx armed transition.](images/wdi-d0-to-dx-armed-to-wake.png)
 
 -   Stop \[DnIO|UpIO\]: DnIO are messages (controls and data) to lower layer. UpIO are messages to upper layer.
 
@@ -222,13 +221,13 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### Dx (armed to wake) to D0 transition
 
-![dx armed to d0 transition](images/wdi-dx-to-d0-armed-to-wake.png)
+![dx armed to d0 transition.](images/wdi-dx-to-d0-armed-to-wake.png)
 
 -   If the NIC is armed to wake, it can't be D3Cold. Firmware must continue running in Dx.
 
 ### D0 to D3 (not armed to wake) transition
 
-![d0 to d3 not armed transition](images/wdi-d0-to-d3-not-armed.png)
+![d0 to d3 not armed transition.](images/wdi-d0-to-d3-not-armed.png)
 
 -   Stop \[DnIO|UpIO\]: DnIO are messages (controls and data) to lower layer. UpIO are messages to upper layer.
 
@@ -242,13 +241,12 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### Dx (not armed to wake) to D0 transition
 
-![dx not armed to d0 transition](images/wdi-dx-to-d0-not-armed.png)
+![dx not armed to d0 transition.](images/wdi-dx-to-d0-not-armed.png)
 
 -   D2 notArmToWake: Kept power, no reinitialization required.
 -   D3 notArmtoWake: Might be Hot or Cold. Cold requires that context be restored.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -270,11 +268,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
 

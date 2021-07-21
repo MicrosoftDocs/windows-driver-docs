@@ -1,7 +1,6 @@
 ---
 title: for_each_module
 description: The for_each_module extension executes a debugger command one time for each loaded module.
-ms.assetid: 607947d8-be06-4012-8901-13bf27e382b1
 keywords: ["for_each_module Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -187,8 +186,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 
 For more information about how to define and use aliases as shortcuts for entering character strings (including use of the ${ } token), see [Using Aliases](using-aliases.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!for\_each\_module** extension displays general information about the loaded modules. This information is similar to the information that the following command shows.
 

@@ -1,7 +1,6 @@
 ---
 title: WIA Architecture Overview
 description: WIA Architecture Overview
-ms.assetid: 47f44042-f22b-4ee0-88c5-fc977bf13791
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ WIA has three main components: the WIA service, the WIA driver service library, 
 
 The following diagram illustrates the WIA architecture.
 
-![diagram illustrating the wia components](images/art-1.png)
+![diagram illustrating the wia components.](images/art-1.png)
 
 ### Imaging Applications
 
@@ -50,7 +49,7 @@ Alternatively, a minidriver can perform such tasks itself. By taking advantage o
 
 WIA minidrivers are vendor-supplied, user-mode components that direct WIA property changes and commands to an imaging device. A minidriver implements the WIA DDI, which is called by the WIA service to communicate with the minidriver.
 
-A WIA minidriver implements the standard WIA minidriver interfaces. The minidriver communicates with the imaging device through a standard Microsoft Windows kernel-mode driver, such as the USB driver. The minidriver communicates with the kernel-mode driver by calling the [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and **DeviceIoControl** Win32 functions (described in the Microsoft Windows SDK documentation).
+A WIA minidriver implements the standard WIA minidriver interfaces. The minidriver communicates with the imaging device through a standard Microsoft Windows kernel-mode driver, such as the USB driver. The minidriver communicates with the kernel-mode driver by calling the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and **DeviceIoControl** Win32 functions (described in the Microsoft Windows SDK documentation).
 
 An imaging application cannot make direct calls to the WIA minidriver. Only the WIA service is permitted to call the driver directly.
 
@@ -62,4 +61,3 @@ Microsoft provides WDM-based, kernel-mode still image drivers for the USB, SCSI,
 
 A vendor must provide a kernel-mode still image driver *only* if its imaging device is incompatible with Microsoft-supplied, kernel-mode I/O drivers.
 
- 

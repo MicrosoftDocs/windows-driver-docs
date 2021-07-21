@@ -1,7 +1,6 @@
 ---
 title: HBA\_BIND\_TYPE
 description: HBA\_BIND\_TYPE
-ms.assetid: a5388574-f48a-4bdc-9ffe-408fa6de1eeb
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -50,7 +49,7 @@ The following table lists the qualifier names and the meaning of each name:
 </tr>
 <tr class="even">
 <td align="left"><p>HBA_CAN_BIND_TARGETS</p></td>
-<td align="left"><p>Indicates the ability of an HBA and its miniport driver to generate persistent bindings between Fibre Channel protocol (FCP) identifiers for logical units and the information that the operating system uses to identify logical units, such as the bus and target numbers that are stored in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid" data-raw-source="[&lt;strong&gt;HBAScsiID&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid)"><strong>HBAScsiID</strong></a>.</p></td>
+<td align="left"><p>Indicates the ability of an HBA and its miniport driver to generate persistent bindings between Fibre Channel protocol (FCP) identifiers for logical units and the information that the operating system uses to identify logical units, such as the bus and target numbers that are stored in the <a href="/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid" data-raw-source="[&lt;strong&gt;HBAScsiID&lt;/strong&gt;](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid)"><strong>HBAScsiID</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HBA_CAN_BIND_AUTOMAP</p></td>
@@ -66,12 +65,4 @@ The following table lists the qualifier names and the meaning of each name:
  
 
 By including *Hbaapi.h* your software will have access to a series of symbolic constants that correspond to the type names in the previous table. The definitions for these symbolic constants is not included in *Hbapiwmi.h* (the file that the WMI tool suite generates when it compiles).
-
- 
-
- 
-
-
-
-
 

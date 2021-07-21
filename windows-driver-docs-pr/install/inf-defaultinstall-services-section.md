@@ -1,7 +1,6 @@
 ---
 title: INF DefaultInstall.Services Section
 description: A DefaultInstall.Services section contains one or more AddService directives referencing additional INF-writer-defined sections in an INF file.
-ms.assetid: 2b066cf9-b6b7-42d0-b147-9b1849ff04db
 keywords:
 - INF DefaultInstall.Services Section Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 A **DefaultInstall.Services** section contains one or more [**AddService**](inf-addservice-directive.md) directives referencing additional INF-writer-defined sections in an INF file. This section is equivalent to the [**INF *DDInstall*.Services**](inf-ddinstall-services-section.md) section, and is used in association with an [**INF DefaultInstall**](inf-defaultinstall-section.md) section.
 
-```ini
+```inf
 [DefaultInstall.Services] |
 [DefaultInstall.nt.Services] |
 [DefaultInstall.ntx86.Services] |
@@ -64,8 +63,7 @@ This optional entry specifies the particular named section that must be processe
 
 **Needs** entries cannot be nested. For more information about the **Needs** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
 
-Remarks
--------
+## Remarks
 
 The [**AddService**](inf-addservice-directive.md) directive controls how and when the services of a particular driver are loaded, any dependencies on other services or on underlying (legacy) drivers it might have, and so forth. Optionally, it can set up event-logging services for the driver as well.
 
@@ -75,8 +73,7 @@ The [**AddService**](inf-addservice-directive.md) directive controls how and whe
 
 **DefaultInstall.Services** sections should have the same platform and operating system decorations as their related **DefaultInstall** sections. For example, a **DefaultInstall.ntx86** section would have a corresponding **DefaultInstall.ntx86.Services** section. For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
-Examples
---------
+## Examples
 
 See the examples provided for the [**INF *DDInstall*.Services**](inf-ddinstall-services-section.md) section.
 

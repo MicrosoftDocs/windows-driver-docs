@@ -1,7 +1,6 @@
 ---
 title: amli be
 description: The amli be extension enables an AML breakpoint.
-ms.assetid: 75c0c05f-8c56-4489-a798-2e5ec6ca26d8
 keywords: ["amli be Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -39,8 +38,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 All breakpoints are enabled when they are created. Breakpoints are only disabled if you have used the [**!amli bd**](-amli-bd.md) extension.
 

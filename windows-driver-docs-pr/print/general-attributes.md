@@ -1,7 +1,6 @@
 ---
 title: General Attributes
 description: General Attributes
-ms.assetid: c48fabff-0580-478f-b423-d959815bbeb4
 keywords:
 - printer attributes WDK Unidrv , general
 - general printer attributes WDK Unidrv

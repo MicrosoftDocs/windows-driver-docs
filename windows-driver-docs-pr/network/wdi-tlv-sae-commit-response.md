@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SAE_COMMIT_RESPONSE
 description: WDI_TLV_SAE_COMMIT_RESPONSE is a TLV that contains the Simultaneous Authentication of Equals (SAE) Commit response frame.
-ms.assetid: 3E243737-F1C8-4554-96D2-E05C77DBA8B6
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_COMMIT_RESPONSE Network Drivers Starting with Windows Vista
@@ -31,8 +30,6 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1903
+**Minimum supported server**: Windows Server 2016
+**Header**: Wditypes.hpp

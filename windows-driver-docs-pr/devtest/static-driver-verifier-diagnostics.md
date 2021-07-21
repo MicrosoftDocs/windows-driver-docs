@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier Diagnostics
 description: Static Driver Verifier Diagnostics
-ms.assetid: dff22144-43a0-427f-8075-9c9152670933
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: DXGKDDISETPOWERPSTATE callback function
-description: Reserved for system use. Do not use it in your driver.
-ms.assetid: 58DB4615-BD52-4003-8D60-0881E87C7BD3
+description: Learn about the DXGKDDISETPOWERPSTATE callback function, which is reserved for system use. Do not use it in your driver.
 keywords: ["DxgkDdiSetPowerPState callback function Display Devices", "DXGKDDISETPOWERPSTATE"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDISETPOWERPSTATE DxgkDdiSetPowerPState;
@@ -34,8 +32,7 @@ NTSTATUS APIENTRY DxgkDdiSetPowerPState(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *DriverContext* \[in\]
 
@@ -43,8 +40,7 @@ Parameters
 
 *RequestedComponentPState* \[in\]
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

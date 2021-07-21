@@ -1,7 +1,7 @@
 ---
 title: MB SAR Platform Support
 description: MB SAR Platform Support
-ms.date: 04/20/2017
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-Traditionally, OEMs have implemented proprietary solutions for Specific Absorption Rate (SAR). This requires the OEM to implement a device service command that is either only identified between their User Mode Driver (UMDF) and the modem or requires kernel mode components to directly interact with the modem. Some OEMs may even have a hybrid solution where they have both UMDF-modem and kernel mode-modem components. As radio radiation awareness has increased, standardizing the interface for OEM software components to pass through the SAR command to the modem introduces the following benefits:
+Specific Absorption Rate (SAR) is the capability to change the MBB radio transmitter power in reaction to the proximity of the MBB antenna to the user. Traditionally, OEMs have implemented proprietary solutions for SAR. This requires the OEM to implement a device service command that is either only identified between their User Mode Driver (UMDF) and the modem or requires kernel mode components to directly interact with the modem. Some OEMs may even have a hybrid solution where they have both UMDF-modem and kernel mode-modem components. As radio radiation awareness has increased, standardizing the interface for OEM software components to pass through the SAR command to the modem introduces the following benefits:
 
 1.	OEMs can move toward user mode components and makes the system more stable, as errors in user mode are not fatal to the system compared to kernel mode.
 2.	Windows provides a platform standard interface and reduces the proprietary implementation from OEMs.
@@ -20,7 +20,11 @@ Starting in Windows 10, version 1703, Windows supports passing through SAR confi
 This feature is supported by adding in two new OIDs and CIDs. For IHV partners that implement MBIM, only the CID version needs to be supported.
 
 > [!NOTE]
-> This topic defines the interface for IHV partners to implement SAR platform support in their modem device drivers. If you are looking for info about customizing the SAR mapping table for a device, see [Customize a Specific Absorption Rate (SAR) mapping table](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-sar-mapping-table).
+> This topic defines the interface for IHV partners to implement SAR platform support in their modem device drivers. If you are looking for info about customizing the SAR mapping table for a device, see [Customize a Specific Absorption Rate (SAR) mapping table](/windows-hardware/customize/desktop/customize-sar-mapping-table).
+
+## Flow
+
+![SAR operation flowchart.](images/SAR-flow.png)
 
 ## MB Interface Update for SAR Platform Support
 
@@ -61,7 +65,7 @@ Not applicable.
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_SAR_CONFIG | Not applicable | Not applicable |
 | Response | MBIM_MS_SAR_CONFIG | MBIM_MS_SAR_CONFIG | Not applicable |
@@ -156,11 +160,11 @@ OEMs that use this command should be aware of the potential power impact as the 
 
 #### Query
 
-The InformationBuffer on MBIM_COMMAND_MSG is not used. MBIM_MS_SET_TRANSMISSION_STATUS_INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+The InformationBuffer on MBIM_COMMAND_MSG is not used. MBIM_MS_TRANSMISSION_STATUS_INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
 #### Set
 
-The InformationBuffer on MBIM_COMMAND_MSG contains MBIM_MS_SET_TRANSMISSION_STATUS. MBIM_MS_SET_TRANSIMISSION_STATUS _INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+The InformationBuffer on MBIM_COMMAND_MSG contains MBIM_MS_SET_TRANSMISSION_STATUS. MBIM_MS_TRANSMISSION_STATUS_INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
 #### Unsolicited Events
 
@@ -168,7 +172,7 @@ Unsolicited events contain MBIM_MS_TRANSMISSION_STATUS_INFO and are sent when th
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_TRANSMISSION_STATUS | Not applicable | Not applicable |
 | Response | MBIM_MS_TRANSMISSION_STATUS_INFO | MBIM_MS_TRANSMISSION_STATUS_INFO | MBIM_MS_TRANSMISSION_STATUS_INFO |
@@ -214,7 +218,7 @@ The following MBIM_MS_TRANSMISSION_STATUS structure is used in the preceding tab
 
 #### Notification
 
-For more information, see the MBIM_MS_SET_TRANSMISSION_STATUS_INFO table.
+For more information, see the MBIM_MS_TRANSMISSION_STATUS_INFO table.
 
 ### Status Codes
 
@@ -227,4 +231,58 @@ For more information, see the MBIM_MS_SET_TRANSMISSION_STATUS_INFO table.
 | MBIM_STATUS_INVALID_PARAMETERS | The operation failed because of invalid parameters. |
 | MBIM_STATUS_OPERATION_NOT_ALLOWED | The operation failed because the operation is not allowed. |
 
+## Hardware Lab Kit (HLK) Tests
+See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx). 
 
+In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestSAR](/windows-hardware/test/hlk/testref/aaa1f042-8535-4d09-b19e-082bef24f517). 
+
+This test contains the following tests:
+
+| Test name | Description |
+|---|---|
+| QuerySarConfig | This test verifies the test can successfully query SAR configurations. |
+| SetSarConfig | This test verifies the test can successfully set SAR configurations. |
+| QuerySarTransmissionStatus | This test verifies the test can successfully query SAR transmission status. |
+| SetSarTransmissionStatus | This test verifies the test can successfully set SAR transmission status. |
+
+## WinRT API
+
+[MobileBroadbandSarManager](/uwp/api/windows.networking.networkoperators.mobilebroadbandsarmanager)
+
+## Log Analysis
+
+Logs can be collected and decoded using these instructions: [MB Collecting Logs](mb-collecting-logs.md).
+
+### Important providers and corresponding keywords
+	
+**Microsoft-Windows-WWAN-SVC-EVENTS (3cb40aaa-1145-4fb8-b27b-7e30f0454316)**
+
+Keywords for filtering:
+
+1. SarConfig
+2. CWwanSar::OnNdisNotification
+3. LoadSemiStaticOEMSARTable
+4. AttemptAutoConfigureSAR
+5. PreCheckSemiStaticOEMSARTable
+6. WwanIntfOpcodeSarConfig
+7. WwanIntfOpcodeSarTransmissionStatus
+8. WwanMsmEventTypeSarConfig
+9. WwanMsmEventTypeSarTransmissionStatus
+
+**MobileBroadband WinRT WPP (56dd9c57-06cc-48ba-b123-876a6495ba13)**
+
+Keywords for filtering: MobileBroadbandSarManager
+
+
+**WwanProtDIM (3a07e1ba-3a6b-49bf-8056-c105b54dd7fb)**
+
+Keywords for filtering:
+
+1. NDIS_WWAN_SAR_CONFIG_INFO
+1. SarMode
+1. NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO
+1. HysteresisTimer
+
+## See Also
+
+[Customize a Specific Absorption Rate (SAR) mapping table](/windows-hardware/customize/desktop/customize-sar-mapping-table)

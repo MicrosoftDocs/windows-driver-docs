@@ -14,10 +14,10 @@ This topic documents the following device-specific operations for I/O requests f
 
 
 ## <a name="irp_mj_create"></a> IRP_MJ_CREATE
-The [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) request opens a parallel port.
+The [IRP_MJ_CREATE](../kernel/irp-mj-create.md) request opens a parallel port.
 
 ### When Sent
-A client must use an [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) request to open a parallel port before it can access the port or a device connected to the port.
+A client must use an [IRP_MJ_CREATE](../kernel/irp-mj-create.md) request to open a parallel port before it can access the port or a device connected to the port.
 
 ### Input Parameters
 None.
@@ -44,7 +44,7 @@ A parallel port is a shared device. When the system-supplied function driver for
 
 
 ## <a name="irp_mj_internal_device_control"></a> IRP_MJ_INTERNAL_DEVICE_CONTROL
-The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) request sets internal operating modes on a parallel port.
+The [IRP_MJ_INTERNAL_DEVICE_CONTROL](../kernel/irp-mj-internal-device-control.md) request sets internal operating modes on a parallel port.
 
 ### When Sent
 A client sends an internal device control request to do the following types of operations:
@@ -53,7 +53,7 @@ A client sends an internal device control request to do the following types of o
 * Allocate the port or select a device on the port
 * Set the communication mode
 
-See [Internal Device Control Requests for Parallel Ports](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+See [Internal Device Control Requests for Parallel Ports](/windows-hardware/drivers/ddi/parallel).
 
 ### Input Parameters
 The input is request-specific.
@@ -92,7 +92,6 @@ The operation is request-specific.
 
 ## Related topics
 
-[Internal Device Control Requests for Parallel Ports](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+[Internal Device Control Requests for Parallel Ports](/windows-hardware/drivers/ddi/parallel)
 
-[Operating a Parallel Device Attached to a Parallel Port](https://docs.microsoft.com/windows-hardware/drivers/parports/operating-a-parallel-device-attached-to-a-parallel-port.md)
-
+[Operating a Parallel Device Attached to a Parallel Port](./operating-a-parallel-device-attached-to-a-parallel-port.md)

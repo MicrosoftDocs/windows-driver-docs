@@ -1,7 +1,6 @@
 ---
 title: timer
 description: The timer extension displays a detailed listing of all system timer use.
-ms.assetid: 795bdfe1-1ee4-4bf2-9fcd-80415fe84754
 keywords: ["timer Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,8 +49,7 @@ The **!timer** extension displays a detailed listing of all system timer use.
 
 For information about timer objects, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The **!timer** extension displays the timer tree, which stores all timer objects in the system.
 

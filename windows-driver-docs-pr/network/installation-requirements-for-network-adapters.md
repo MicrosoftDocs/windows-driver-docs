@@ -1,7 +1,6 @@
 ---
 title: Installation Requirements for Network Adapters
 description: Installation Requirements for Network Adapters
-ms.assetid: 682a262a-a712-4fab-a753-d0c6fc08bac8
 keywords:
 - network adapter installation requirements WDK
 - adapters WDK networking , installation requirements
@@ -45,13 +44,13 @@ This topic summarizes the installation requirements for network adapters.
 <p><strong>ClassGuid</strong>= {4D36E972-E325-11CE-BFC1-08002BE10318}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section" data-raw-source="[&lt;strong&gt;INF SourceDisksNames Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section)"><strong>INF SourceDisksNames Section</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section" data-raw-source="[&lt;strong&gt;INF SourceDisksFiles Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section)"><strong>INF SourceDisksFiles Section</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/install/inf-sourcedisksnames-section" data-raw-source="[&lt;strong&gt;INF SourceDisksNames Section&lt;/strong&gt;](../install/inf-sourcedisksnames-section.md)"><strong>INF SourceDisksNames Section</strong></a> and <a href="/windows-hardware/drivers/install/inf-sourcedisksfiles-section" data-raw-source="[&lt;strong&gt;INF SourceDisksFiles Section&lt;/strong&gt;](../install/inf-sourcedisksfiles-section.md)"><strong>INF SourceDisksFiles Section</strong></a></p></td>
 <td align="left"><p>Required if ...</p></td>
 <td align="left"><p>Required if the INF file is not distributed with Windows 2000. If the INF file is distributed with Windows 2000, a <strong>LayoutFile</strong> entry must be specified in the <strong>Version</strong> section, and the <strong>SourceDisksNames</strong> and <strong>SourceDisksFiles</strong> sections are not used.</p>
 <p>No network-specific requirements.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section" data-raw-source="[&lt;strong&gt;INF DestinationDirs Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section)"><strong>INF DestinationDirs Section</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/install/inf-destinationdirs-section" data-raw-source="[&lt;strong&gt;INF DestinationDirs Section&lt;/strong&gt;](../install/inf-destinationdirs-section.md)"><strong>INF DestinationDirs Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
@@ -62,7 +61,7 @@ This topic summarizes the installation requirements for network adapters.
 <p>Non-PnP adapters, such as non-PnP ISA and EISA adapters, should not be listed. Note that Windows XP and later operating systems do not support non-PnP ISA adapters and EISA adapters.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section" data-raw-source="[&lt;strong&gt;INF Manufacturer Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section)"><strong>INF Manufacturer Section</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/install/inf-manufacturer-section" data-raw-source="[&lt;strong&gt;INF Manufacturer Section&lt;/strong&gt;](../install/inf-manufacturer-section.md)"><strong>INF Manufacturer Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
@@ -110,7 +109,7 @@ This topic summarizes the installation requirements for network adapters.
 <p><a href="specifying-custom-property-pages-for-network-adapters.md" data-raw-source="[Specifying Custom Property Pages for Network Adapters](specifying-custom-property-pages-for-network-adapters.md)">Specifying Custom Property Pages for Network Adapters</a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section" data-raw-source="[&lt;strong&gt;INF Strings Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section)"><strong>INF Strings Section</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/install/inf-strings-section" data-raw-source="[&lt;strong&gt;INF Strings Section&lt;/strong&gt;](../install/inf-strings-section.md)"><strong>INF Strings Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
@@ -132,12 +131,4 @@ WAN adapters have additional installation requirements that are described in the
 **Note**  The [Remove Section](remove-section-in-a-network-inf-file.md) and [Notify Objects for Network Components](notify-objects-for-network-components.md) are not supported.
 
  
-
- 
-
- 
-
-
-
-
 

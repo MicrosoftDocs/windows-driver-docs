@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaTopology
 description: KSPROPSETID\_BdaTopology
-ms.assetid: 26d67e68-56a9-4d36-9e33-6fb4486d7cd9
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -44,13 +43,7 @@ Returns a list of nodes.
 
 The BDA support library provides default methods to handle this property set. The network provider filter uses this property set to determine the template topology of the filter, and the methods, properties and events supported on each node and pin. The network provider filter uses this node and pin information to determine what kinds of operations the filter can perform on the signal and whether to add the filter to the graph. The actual topology of a filter refers to the pin and node connections that are actually made on the filter by the network provider.
 
-The properties in this property set define what the filter can do. Typically, filters are not required to intercept any of these properties. For more information, see [Broadcast Driver Architecture Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/stream/broadcast-driver-architecture-minidrivers) on how the BDA minidriver for a filter can use the BDA support library of functions to provide default handling of these properties. A driver writer should create static structures that enable handling of this property set. Once these structures are created and registered with the BDA support library, the driver writer is not required to do anything further to support this property set.
+The properties in this property set define what the filter can do. Typically, filters are not required to intercept any of these properties. For more information, see [Broadcast Driver Architecture Minidrivers](./broadcast-driver-architecture-minidrivers.md) on how the BDA minidriver for a filter can use the BDA support library of functions to provide default handling of these properties. A driver writer should create static structures that enable handling of this property set. Once these structures are created and registered with the BDA support library, the driver writer is not required to do anything further to support this property set.
 
  
-
- 
-
-
-
-
 

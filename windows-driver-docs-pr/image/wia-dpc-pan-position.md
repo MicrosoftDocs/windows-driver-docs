@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_PAN\_POSITION
 description: The WIA\_DPC\_PAN\_POSITION property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 4bc54da2-ae6e-4a46-a4ab-535c419c679e
 keywords: ["WIA_DPC_PAN_POSITION Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

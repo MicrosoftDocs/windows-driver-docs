@@ -1,7 +1,6 @@
 ---
 title: Defining the Configuration-Dependent Data Parameters
 description: Defining the Configuration-Dependent Data Parameters
-ms.assetid: a5bb2e3a-22e0-41d7-8035-5437ac473b21
 keywords:
 - GDL WDK , configurations
 - configurations WDK GDL , defining configuration-dependent data

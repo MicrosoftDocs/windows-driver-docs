@@ -1,7 +1,6 @@
 ---
 title: RefreshInformation function
 description: The RefreshInformation WMI method updates all tables for the HBA that corresponds to the calling instance object.
-ms.assetid: da78db30-0498-4d44-b5bc-76d08dc15938
 keywords: ["RefreshInformation function Storage Devices"]
 topic_type:
 - apiref
@@ -18,25 +17,21 @@ ms.date: 10/17/2018
 
 The **RefreshInformation** WMI method updates all tables for the HBA that corresponds to the calling instance object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void RefreshInformation(void);
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
-Return value
-------------
+## Return value
 
 Not applicable.
 
-Remarks
--------
+## Remarks
 
 The **RefreshInformation** WMI method refreshes port attribute data that is retrieved by the following WMI methods:
 

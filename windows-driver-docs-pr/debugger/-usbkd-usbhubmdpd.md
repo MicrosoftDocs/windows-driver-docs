@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhubmdpd
 description: The usbkd.usbhubmdpd command displays a usbhub _HUB_PORT_DATA structure if one is present in a crash dump that was generated as a result of Bug Check 0xFE.
-ms.assetid: 128D45A2-A891-42BC-9E3E-FCDC5B4504A2
 keywords: ["usbkd.usbhubmdpd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ A USB port number. If you specify a port number, this command displays the struc
 
 Usbkd.dll
 
-Remarks
--------
+## Remarks
 
 Use this command only when you are debugging a crash dump file that was generated as a result of [**Bug Check 0xFE: BUGCODE\_USB\_DRIVER**](bug-check-0xfe--bugcode-usb-driver.md).
 
@@ -43,14 +41,7 @@ Use this command only when you are debugging a crash dump file that was generate
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

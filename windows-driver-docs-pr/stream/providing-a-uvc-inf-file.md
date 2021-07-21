@@ -1,7 +1,6 @@
 ---
 title: Providing a UVC INF File
 description: Providing a UVC INF File
-ms.assetid: 44311eb8-1035-466c-878b-a5d964b34490
 keywords:
 - INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class
@@ -59,6 +58,33 @@ Include=usbvideo.inf, ks.inf, kscaptur.inf, dshowext.inf
 Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT, DSHOWEXT.Registration
 AddReg=MyDevice.Plugins
 CopyFiles=MyDevice.CopyList
+```
+
+Additional sections of *Usbvideo.inf* need to be included for completeness
+```INF
+[MyDevice.SERVICES]
+Include=usbvideo.inf
+Needs=USBVideo.NT.SERVICES
+
+[MyDevice.HW]
+Include=usbvideo.inf
+Needs=USBVideo.NT.HW
+
+[MyDevice.WDF]
+Include=usbvideo.inf
+Needs=USBVideo.NT.WDF
+
+[WdmCompanionFilter_CompanionSect]
+CompanionServices = SecureUSBVideo
+
+[WdmCompanionFilter_KmdfSvcSect]
+KmdfLibraryVersion = %KMDF_VERSION%
+
+[SecureUSBVideo_UmdfSvcSect]
+UmdfLibraryVersion = %UMDF_VERSION%
+ServiceBinary = %12%\UMDF\SecureUSBVideo.dll
+ServiceType = SecureCompanion ; allowed options are: Driver (default), SecureCompanion, NonSecureCompanion
+TrustletIdentity = 4096          ; required if it is SecureCompanion
 ```
 
 The INF also needs a CopyFiles section to copy the plug-in into the system folder.
@@ -163,7 +189,7 @@ If you are using the UVC driver on Windows Server 2003 and Windows Vista or late
 
 In low frame rate conditions, the EOF bit might report completion faster than the FID bit of the following frame. The EOF bit can be used to reduce latency in the delivery of MPEG-2 frames.
 
-For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 This final section supplies missing definitions for the INF.
 

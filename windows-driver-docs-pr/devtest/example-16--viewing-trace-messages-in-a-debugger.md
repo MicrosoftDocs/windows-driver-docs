@@ -1,7 +1,6 @@
 ---
 title: Example 16 Viewing Trace Messages in a Debugger
 description: Example 16 Viewing Trace Messages in a Debugger
-ms.assetid: c548643c-ae0c-47e7-af0a-0d89ed78f281
 keywords:
 - trace message displaying WDK
 - displaying trace messages
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 This example shows how to redirect trace messages to KD or to WinDbg.
 
-Before starting the trace session, verify that Wmitrace.dll and Traceprt.dll are in the debugger's search path on the host computer. These DLLs are included in [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=8708) in the \\Program Files\\Debugging Tools for Windows\\winxp directory. (Despite the directory name, the files work in Windows 2000 and later versions of Windows.)
+Before starting the trace session, verify that Wmitrace.dll and Traceprt.dll are in the debugger's search path on the host computer. These DLLs are included in [Debugging Tools for Windows](../debugger/debugger-download-tools.md) in the \\Program Files\\Debugging Tools for Windows\\winxp directory. (Despite the directory name, the files work in Windows 2000 and later versions of Windows.)
 
 Also, verify that the [trace message format files](trace-message-format-file.md) (TMF) for the trace provider are in the debugger's search path.
 
@@ -39,13 +38,7 @@ The **tracelog -start** command includes a session name to start the trace sessi
 
 In response, Tracelog reports that it has started the session. When the trace provider generates messages, the messages appear in the debugger.
 
-To view the messages in the debugger, use the WMI Tracing Extensions. For information, see [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=8708).
+To view the messages in the debugger, use the WMI Tracing Extensions. For information, see [Debugging Tools for Windows](../debugger/index.md).
 
  
-
- 
-
-
-
-
 

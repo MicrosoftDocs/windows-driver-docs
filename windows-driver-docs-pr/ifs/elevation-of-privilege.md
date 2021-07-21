@@ -1,7 +1,6 @@
 ---
 title: Elevation of Privilege
 description: Elevation of Privilege
-ms.assetid: 08e20c51-fbc1-4e38-b12d-f123e4a2ba10
 keywords:
 - threat models WDK file systems , elevation-of-privilege
 - security threat models WDK file systems , elevation-of-privilege

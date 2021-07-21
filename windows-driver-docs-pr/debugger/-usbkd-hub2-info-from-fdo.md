@@ -1,7 +1,6 @@
 ---
 title: usbkd.hub2_info_from_fdo
 description: The usbkd.hub2_info_from_fdo command displays information about a USB hub.
-ms.assetid: BB40AEDD-9FDF-43BE-A741-56D06BE2965C
 keywords: ["usbkd.hub2_info_from_fdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of the functional device object (FDO) for a USB hub.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the FDO for a USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -130,14 +128,7 @@ PortData 1: !port2_info ffffe000021bf000 Port State = PS_WAIT_CONNECT PortChange
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

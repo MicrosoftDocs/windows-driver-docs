@@ -1,7 +1,6 @@
 ---
 title: Sample KMDF Drivers
 description: This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you can download from the Windows Dev Center - Hardware.
-ms.assetid: 83d15b96-63b1-4584-8ef4-ccbdcc1522bb
 keywords:
 - kernel-mode drivers WDK KMDF , samples
 - KMDF WDK , sample drivers
@@ -14,9 +13,9 @@ ms.localizationpriority: medium
 
 # Sample KMDF Drivers
 
-This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you can browse and download on the [Microsoft Samples portal](https://docs.microsoft.com/samples/browse/?products=windows-wdk). You can also clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
+This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you can browse and download on the [Microsoft Samples portal](/samples/browse/?products=windows-wdk). You can also clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
 
-For information on building the samples, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
+For information on building the samples, see [Building a Driver](../develop/building-a-driver.md).
 
 <a href="" id="echo"></a>ECHO
 Demonstrates how to use the framework's queue and request objects and automatic synchronization.

@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS Packet Coalescing
 description: Introduction to NDIS Packet Coalescing
-ms.assetid: 500FBF0F-54D9-4675-8E2D-447387DA8798
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ This section includes the following topics:
 
 [Querying Packet Coalescing Capabilities](querying-packet-coalescing-capabilities.md)
 
-[Managing Packet Coalescing Receive Filters](managing-packet-coalescing-receive-filters.md)
+[Managing Packet Coalescing Receive Filters](guidelines-for-managing-packet-coalescing-receive-filters.md)
 
 [Standardized INF Keywords for Packet Coalescing](standardized-inf-keywords-for-packet-coalescing.md)
 

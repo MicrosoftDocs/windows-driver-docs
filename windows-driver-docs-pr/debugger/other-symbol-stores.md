@@ -1,7 +1,6 @@
 ---
 title: Other Symbol Stores
 description: Other Symbol Stores
-ms.assetid: 65bb4291-c56a-4837-ac45-6751ebdbd579
 keywords: ["symbol stores, writing your own symbol store"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

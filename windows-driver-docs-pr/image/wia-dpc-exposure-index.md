@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_EXPOSURE\_INDEX
 description: The WIA\_DPC\_EXPOSURE\_INDEX property enables you to emulate film speed settings on a digital camera.
-ms.assetid: 805efbf0-b81f-49fd-82be-536d471d255e
 keywords: ["WIA_DPC_EXPOSURE_INDEX Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 Film speed settings correspond to the ISO designations (ASA/DIN). Typically, a device supports discrete enumerated values, but continuous control over a range of values is possible. A value of 0xFFFF for the WIA\_DPC\_EXPOSURE\_INDEX property corresponds to the Automatic ISO setting.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: Remote Tool Examples
 description: Remote Tool Examples
-ms.assetid: 624f1a78-04da-45c2-8f8d-a593d557be7d
 keywords: ["Remote Tool, examples"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1 APC_INDEX_MISMATCH
 description: 0x00000001.
-ms.assetid: 01e64516-809c-49ce-9aaa-b4e439ac575b
 keywords: ["Bug Check 0x1 APC_INDEX_MISMATCH", "APC_INDEX_MISMATCH"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,14 +54,12 @@ The APC\_INDEX\_MISMATCH bug check has a value of 0x00000001. This indicates tha
 </table>
 
  
-Cause
------
+## Cause
 
 The most common cause of this bug check is when a file system or driver has a mismatched sequence of calls to disable and re-enable APCs. The key data item is the *Thread* &gt;**CombinedApcDisable** field. The **CombinedApcDisable** field consists of two separate 16-bit fields: **SpecialApcDisable** and **KernelApcDisable**. A negative value of either field indicates that a driver has disabled special or normal APCs (respectively) without re-enabling them. A positive value indicates that a driver has enabled special or normal APCs too many times.
 
 
-Resolution
-----------
+## Resolution
 
 ### Debugging with WinDbg
 
@@ -88,10 +85,8 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 For additional general troubleshooting information, see [Blue screen data](blue-screen-data.md).
 
 
-Remarks
--------
+## Remarks
 
-This bug check is the result of an internal error in the kernel. This error occurs on exit from a system call. A possible cause for this bug check is a file system or driver that has a mismatched sequence of system calls to enter or leave guarded or critical regions. For example, each call to [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) must have a matching call to [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion). 
+This bug check is the result of an internal error in the kernel. This error occurs on exit from a system call. A possible cause for this bug check is a file system or driver that has a mismatched sequence of system calls to enter or leave guarded or critical regions. For example, each call to [**KeEnterCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) must have a matching call to [**KeLeaveCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion). 
 
-If you are developing a driver, you can use [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier), a static analysis tool available in the Windows Driver Kit, to detect problems in your code before you ship your driver. Run Static Driver Verifier with the [CriticalRegions](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-criticalregions) rule to verify that your source code uses these system calls in correct sequence.
-
+If you are developing a driver, you can use [Static Driver Verifier](../devtest/static-driver-verifier.md), a static analysis tool available in the Windows Driver Kit, to detect problems in your code before you ship your driver. Run Static Driver Verifier with the [CriticalRegions](../devtest/wdm-criticalregions.md) rule to verify that your source code uses these system calls in correct sequence.

@@ -1,7 +1,6 @@
 ---
 title: Asynchronous Framing
 description: Asynchronous Framing
-ms.assetid: 355fb3c7-2f8e-445f-9109-8ae9068dab01
 keywords:
 - packet framing WDK WAN , asynchronous framing
 - asynchronous framing WDK WAN
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The following diagram illustrates asynchronous framing with compression turned off.
 
-![diagram illustrating asynchronous framing with compression turned off](images/ng10f1.png)
+![diagram illustrating asynchronous framing with compression turned off.](images/ng10f1.png)
 
  
 

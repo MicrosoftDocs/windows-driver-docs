@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
 description: NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
-ms.assetid: 6EBC0131-F2EF-4A2D-997A-8990E53369CF
 ms.date: 02/11/2019
 keywords:
  - NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE Network Drivers Starting with Windows Vista
@@ -22,8 +21,9 @@ Miniport drivers send the **NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE** st
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1903
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

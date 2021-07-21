@@ -1,7 +1,6 @@
 ---
 title: rpcexts.getdbgcell
 description: The rpcexts.getdbgcell extension displays RPC state information for the specified cell.
-ms.assetid: 28be074f-6756-4610-aa86-1162b83fd0a7
 keywords: ["rpcexts.getdbgcell Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,8 +59,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension can only be used with CDB or with user-mode WinDbg.
 

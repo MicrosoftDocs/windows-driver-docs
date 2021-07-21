@@ -1,7 +1,6 @@
 ---
 title: hidkd.hidfdo
 description: The hidkd.hidfdo command displays HID information associated with a functional device object (FDO).
-ms.assetid: CB8E8844-B5A7-4273-8401-D4F3C8CBAC4C
 keywords: ["hidkd.hidfdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of an FDO. To get the addresses of FDOs that are associated with HID dri
 
 Hidkd.dll
 
-Examples
---------
+## Examples
 
 Here is an example of the output of the **!hidfdo** command. The example first calls [**!hidtree**](-hidkd-hidtree.md) to get the address of an FDO.
 

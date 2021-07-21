@@ -1,47 +1,43 @@
 ---
-title: SPB peripheral device drivers
+title: Overview of SPB peripheral device drivers
 description: An SPB peripheral device driver controls a peripheral device that is connected to a simple peripheral bus (SPB).
-ms.assetid: 8352EBD9-D94C-4EC6-A17E-3A72DDE4C16C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# SPB peripheral device drivers
+# Overview of SPB peripheral device drivers
 
+An SPB peripheral device driver controls a peripheral device that is connected to a [simple peripheral bus](/previous-versions/hh450903(v=vs.85)) (SPB). The hardware registers of this device are available only through the SPB. To read from or write to the device, the driver must send I/O requests to the SPB controller. Only this controller can initiate data transfers to and from the device over the SPB.
 
-An SPB peripheral device driver controls a peripheral device that is connected to a [simple peripheral bus](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)) (SPB). The hardware registers of this device are available only through the SPB. To read from or write to the device, the driver must send I/O requests to the SPB controller. Only this controller can initiate data transfers to and from the device over the SPB.
+Starting with Windows 8, Windows provides driver support for peripheral devices on [simple peripheral buses](/previous-versions/hh450903(v=vs.85)) (SPBs). SPBs, such as I²C and SPI, are widely used to connect to low-speed sensor devices, such as accelerometers, GPS devices, and battery-level monitors. This overview describes how an SPB peripheral device driver, in cooperation with other system components, controls an SPB-connected peripheral device.
 
-Starting with Windows 8, Windows provides driver support for peripheral devices on [simple peripheral buses](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)) (SPBs). SPBs, such as I²C and SPI, are widely used to connect to low-speed sensor devices, such as accelerometers, GPS devices, and battery-level monitors. This overview describes how an SPB peripheral device driver, in cooperation with other system components, controls an SPB-connected peripheral device.
-
-An SPB peripheral device driver can be built to use either the [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/overview-of-the-umdf) (UMDF) or the [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/what-s-new-for-wdf-drivers) (KMDF). For more information about developing a UMDF driver, see [Getting Started with UMDF](https://docs.microsoft.com/previous-versions/ff554928(v=vs.85)). For more information about developing a KMDF driver, see [Getting Started with Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/design-guide).
+An SPB peripheral device driver can be built to use either the [User-Mode Driver Framework](../wdf/overview-of-the-umdf.md) (UMDF) or the [Kernel-Mode Driver Framework](../wdf/index.md) (KMDF). For more information about developing a UMDF driver, see [Getting Started with UMDF](/previous-versions/ff554928(v=vs.85)). For more information about developing a KMDF driver, see [Getting Started with Kernel-Mode Driver Framework](../wdf/index.md).
 
 ## Device Configuration Information
 
+The hardware registers of an SPB-connected peripheral device are not memory-mapped. The device can be accessed only through the SPB controller, which serially transfers data to and from the device over the SPB. To perform I/O operations, the SPB peripheral device driver sends I/O requests to the device, and the SPB controller performs the data transfers that are required to complete these requests. For more information about the I/O requests that can be sent to peripheral devices on SPBs, see [Using the SPB I/O Request Interface](./using-the-spb-i-o-request-interface.md).
 
-The hardware registers of an SPB-connected peripheral device are not memory-mapped. The device can be accessed only through the SPB controller, which serially transfers data to and from the device over the SPB. To perform I/O operations, the SPB peripheral device driver sends I/O requests to the device, and the SPB controller performs the data transfers that are required to complete these requests. For more information about the I/O requests that can be sent to peripheral devices on SPBs, see [Using the SPB I/O Request Interface](https://docs.microsoft.com/windows-hardware/drivers/spb/using-the-spb-i-o-request-interface).
+The following diagram shows an example hardware configuration in which an SPB—in this case, an I²C bus—connects two peripheral devices to a System on a Chip (SoC) module. The peripheral devices are external to the SoC module and connect to four pins on the module. The SoC module contains the main processor (not shown), plus an I²C controller and a [general-purpose I/O](../gpio/gpio-driver-support-overview.md) (GPIO) controller. The processor uses the I²C controller to serially transmit data to and from the two peripheral devices. The interrupt request lines from these devices are connected to two GPIO pins that are configured as interrupt inputs. When a device signals an interrupt request, the GPIO controller relays the interrupt to the processor.
 
-The following diagram shows an example hardware configuration in which an SPB—in this case, an I²C bus—connects two peripheral devices to a System on a Chip (SoC) module. The peripheral devices are external to the SoC module and connect to four pins on the module. The SoC module contains the main processor (not shown), plus an I²C controller and a [general-purpose I/O](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpio-driver-support-overview) (GPIO) controller. The processor uses the I²C controller to serially transmit data to and from the two peripheral devices. The interrupt request lines from these devices are connected to two GPIO pins that are configured as interrupt inputs. When a device signals an interrupt request, the GPIO controller relays the interrupt to the processor.
-
-![connections for an spb peripheral device](images/spbconnects.png)
+![connections for an spb peripheral device.](images/spbconnects.png)
 
 Because the GPIO controller and I²C controller in this example are integrated into the SoC module, their hardware registers are memory-mapped and can be directly accessed by the processor. However, the processor can access the hardware registers of the two peripheral devices only indirectly, through the I²C controller.
 
-An SPB is not a [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) (PnP) bus and, therefore, cannot be used to automatically detect and configure new devices that are plugged into the bus. The bus and interrupt connections of an SPB-connected device are frequently permanent. Even if the device can be unplugged from a slot, this slot is typically dedicated to the device. In addition, an SPB does not provide an in-band hardware path for relaying interrupt requests from a peripheral device on the bus to the bus controller. Instead, the hardware path for interrupts is separate from the bus controller.
+An SPB is not a [Plug and Play](../kernel/introduction-to-plug-and-play.md) (PnP) bus and, therefore, cannot be used to automatically detect and configure new devices that are plugged into the bus. The bus and interrupt connections of an SPB-connected device are frequently permanent. Even if the device can be unplugged from a slot, this slot is typically dedicated to the device. In addition, an SPB does not provide an in-band hardware path for relaying interrupt requests from a peripheral device on the bus to the bus controller. Instead, the hardware path for interrupts is separate from the bus controller.
 
-The vendor for the hardware platform stores the configuration information for an SPB-connected peripheral device in the platform's ACPI firmware. During system startup, the [ACPI driver enumerates](https://docs.microsoft.com/windows-hardware/drivers/acpi/enumerating-child-devices-and-control-methods) the devices on the bus for the PnP manager. For each enumerated device, ACPI supplies information about the device's bus and interrupt connections. The PnP manager stores this information in a datastore called the *resource hub*.
+The vendor for the hardware platform stores the configuration information for an SPB-connected peripheral device in the platform's ACPI firmware. During system startup, the [ACPI driver enumerates](../acpi/enumerating-child-devices-and-control-methods.md) the devices on the bus for the PnP manager. For each enumerated device, ACPI supplies information about the device's bus and interrupt connections. The PnP manager stores this information in a datastore called the *resource hub*.
 
-When the device starts up, the PnP manager supplies the device's driver with a set of [hardware resources](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources) that encapsulate the configuration information that the resource hub stores for the device. These resources include a connection ID and an interrupt number. The connection ID encapsulates bus-connection information, such as the SPB controller, bus address, and bus-clock frequency. Before I/O requests can be sent to the device, the driver must first use the connection ID to open a logical connection to the device. The interrupt number is a Windows interrupt resource to which the driver can connect its interrupt service routine (ISR). The driver can easily be ported from one hardware platform to another because the connection ID and interrupt number are high-level abstractions that hide platform-specific information about the physical bus and interrupt connections.
+When the device starts up, the PnP manager supplies the device's driver with a set of [hardware resources](../kernel/hardware-resources.md) that encapsulate the configuration information that the resource hub stores for the device. These resources include a connection ID and an interrupt number. The connection ID encapsulates bus-connection information, such as the SPB controller, bus address, and bus-clock frequency. Before I/O requests can be sent to the device, the driver must first use the connection ID to open a logical connection to the device. The interrupt number is a Windows interrupt resource to which the driver can connect its interrupt service routine (ISR). The driver can easily be ported from one hardware platform to another because the connection ID and interrupt number are high-level abstractions that hide platform-specific information about the physical bus and interrupt connections.
 
 ## Software and Hardware Layers
 
-
 The following block diagram shows the layers of software and hardware that connect a peripheral device on an SPB to an application program that uses the device. The SPB peripheral device driver in this example is a UMDF driver. The peripheral device (at the bottom of the diagram) is a sensor device (for example, an accelerometer). As in the preceding diagram, the peripheral device is connected to an I²C bus and signals interrupt requests through a pin on a GPIO controller.
 
-![software and hardware layers for an spb-connected sensor device](images/spblayers.png)
+![software and hardware layers for an spb-connected sensor device.](images/spblayers.png)
 
-The three blocks shown in gray are system-supplied modules. Starting with Windows 7, the [sensor class extension](https://docs.microsoft.com/windows-hardware/drivers/sensors/about-the-sensor-class-extension) is available as a sensor-specific extension to the UMDF. Starting with Windows 8, the [SPB framework extension](https://docs.microsoft.com/windows-hardware/drivers/spb/spb-framework-extension) (SpbCx) and [GPIO framework extension](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpio-driver-support-overview) (GpioClx) are available as extensions to KMDF that perform functions that are specific to SPB controllers and to GPIO controllers, respectively.
+The three blocks shown in gray are system-supplied modules. Starting with Windows 7, the [sensor class extension](../sensors/about-the-sensor-class-extension.md) is available as a sensor-specific extension to the UMDF. Starting with Windows 8, the [SPB framework extension](./spb-framework-extension.md) (SpbCx) and [GPIO framework extension](../gpio/gpio-driver-support-overview.md) (GpioClx) are available as extensions to KMDF that perform functions that are specific to SPB controllers and to GPIO controllers, respectively.
 
-At the top of the preceding diagram, the application calls the methods in the [Sensor API](https://docs.microsoft.com/windows/desktop/SensorsAPI/portal) or [Location API](https://docs.microsoft.com/windows/desktop/LocationAPI/windows-location-api-portal) to communicate with the sensor device. Through these calls, the application can send I/O requests to the device, and receive event notifications from the device. For more information about these APIs, see [Introduction to the Sensor and Location Platform in Windows](https://docs.microsoft.com/windows-hardware/drivers/sensors/introduction-to-the-sensor-and-location-platform-in-windows).
+At the top of the preceding diagram, the application calls the methods in the [Sensor API](/windows/desktop/SensorsAPI/portal) or [Location API](/windows/desktop/LocationAPI/windows-location-api-portal) to communicate with the sensor device. Through these calls, the application can send I/O requests to the device, and receive event notifications from the device. For more information about these APIs, see [Introduction to the Sensor and Location Platform in Windows](../sensors/index.md).
 
 When the application calls a method that requires communication with the SPB peripheral device driver, the Sensor API or Location API creates an I/O request and sends it to the SPB peripheral device driver. The sensor class extension module assists the driver in handling these I/O requests. When the driver receives a new I/O request, the driver immediately hands the request to the sensor class extension, which queues the request until the driver is ready to handle it. If an I/O request from the application requires the transfer of data to or from the peripheral device, the SPB peripheral device driver creates an I/O request for this transfer and sends the request to the I²C controller. Such requests are handled jointly by SpbCx and the I²C controller driver.
 
@@ -49,72 +45,8 @@ SpbCx is a system-supplied component that manages the queues of I/O requests for
 
 The peripheral device signals an interrupt request when a hardware event occurs that requires attention from the SPB peripheral device driver or the user-mode application. The interrupt line from the peripheral device is connected to a GPIO pin that is configured to receive interrupt requests. When the device signals an interrupt to the GPIO pin, the GPIO controller signals an interrupt to the processor. In response to this interrupt, the kernel's interrupt trap handler calls GpioClx's ISR. This ISR queries the GPIO controller driver, which then accesses the memory-mapped hardware registers of the GPIO controller to identify the interrupting GPIO pin. To silence the interrupt, the GPIO controller driver either clears (if the interrupt is edge-triggered) or masks (if level-triggered) the interrupt request at the GPIO pin. The interrupt must be silenced to prevent the processor from taking the same interrupt again when the trap handler returns. For a level-triggered interrupt, the ISR in the SPB peripheral device driver must access the hardware registers of the peripheral device to clear the interrupt before the GPIO pin can be unmasked.
 
-Before the kernel's interrupt trap handler returns, it schedules the ISR in the SPB peripheral device driver to run at IRQL = PASSIVE\_LEVEL. Starting with Windows 8, a UMDF driver can connect its ISR to an interrupt that the driver receives as an abstract Windows interrupt resource; for more information, see [Handling Interrupts](https://docs.microsoft.com/windows-hardware/drivers/wdf/handling-interrupts). To determine which ISR to call, the operating system looks up the virtual interrupt that is assigned to the interrupting GPIO pin and finds the ISR that is connected to the interrupt. This virtual interrupt is labeled as a *secondary* interrupt in the preceding diagram. In contrast, the hardware interrupt from the GPIO controller is labeled as a *primary* interrupt.
+Before the kernel's interrupt trap handler returns, it schedules the ISR in the SPB peripheral device driver to run at IRQL = PASSIVE\_LEVEL. Starting with Windows 8, a UMDF driver can connect its ISR to an interrupt that the driver receives as an abstract Windows interrupt resource; for more information, see [Handling Interrupts](../wdf/handling-interrupts.md). To determine which ISR to call, the operating system looks up the virtual interrupt that is assigned to the interrupting GPIO pin and finds the ISR that is connected to the interrupt. This virtual interrupt is labeled as a *secondary* interrupt in the preceding diagram. In contrast, the hardware interrupt from the GPIO controller is labeled as a *primary* interrupt.
 
 Because the ISR in the SPB peripheral device driver runs at passive level, the ISR can use synchronous I/O requests to access the hardware registers in the peripheral device. The ISR can block until these requests complete. The ISR, which runs at a relatively high priority, should return as soon as possible and defer all background processing for an interrupt to a worker routine that runs at a lower priority.
 
 In response to the secondary interrupt, the SPB peripheral device driver posts an event in the sensor class extension, which notifies the user-mode application of the event through the Sensor API or Location API.
-
-## In this section
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/using-the-spb-i-o-request-interface" data-raw-source="[Using the SPB I/O Request Interface](https://docs.microsoft.com/windows-hardware/drivers/spb/using-the-spb-i-o-request-interface)">Using the SPB I/O Request Interface</a></p></td>
-<td><p>Starting with Windows 8, the <a href="https://docs.microsoft.com/windows-hardware/drivers/spb/spb-framework-extension" data-raw-source="[SPB framework extension](https://docs.microsoft.com/windows-hardware/drivers/spb/spb-framework-extension)">SPB framework extension</a> (SpbCx) is a system-supplied component that supports the <a href="https://docs.microsoft.com/previous-versions/hh698224(v=vs.85)" data-raw-source="[SPB I/O request interface](https://docs.microsoft.com/previous-versions/hh698224(v=vs.85))">SPB I/O request interface</a>. SPB peripheral device drivers use this interface to send I/O requests to devices that are connected to I²C, SPI, and other <a href="https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)" data-raw-source="[simple peripheral buses](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85))">simple peripheral buses</a> (SPBs).</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/connection-ids-for-spb-connected-peripheral-devices" data-raw-source="[Connection IDs for SPB-Connected Peripheral Devices](https://docs.microsoft.com/windows-hardware/drivers/spb/connection-ids-for-spb-connected-peripheral-devices)">Connection IDs for SPB-Connected Peripheral Devices</a></p></td>
-<td><p>Before a driver can send I/O requests to a peripheral device on a <a href="https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)" data-raw-source="[simple peripheral bus](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85))">simple peripheral bus</a> (SPB), the driver must open a logical connection to the device. Through this connection, the driver can send read and write requests to transfer data to and from the device. Additionally, the driver can send I/O control (IOCTL) requests to the device to perform SPB-specific operations.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/spb-device-stacks" data-raw-source="[SPB Device Stacks](https://docs.microsoft.com/windows-hardware/drivers/spb/spb-device-stacks)">SPB Device Stacks</a></p></td>
-<td><p>The Windows Driver Model cleanly separates the driver components that control a peripheral device (for example, a temperature sensor) on a bus from the driver components that manage the bus controller, which transfers data and control information to and from the peripheral device.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/interrupts-from-spb-connected-peripheral-devices" data-raw-source="[Interrupts from SPB-Connected Peripheral Devices](https://docs.microsoft.com/windows-hardware/drivers/spb/interrupts-from-spb-connected-peripheral-devices)">Interrupts from SPB-Connected Peripheral Devices</a></p></td>
-<td><p>Unlike a bus such as PCI, a <a href="https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)" data-raw-source="[simple peripheral bus](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85))">simple peripheral bus</a> (SPB), such as I²C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor. Instead, an SPB-connected peripheral device signals an interrupt through a separate hardware path that lies outside of both the SPB and the SPB controller.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/hardware-resources-for-kernel-mode-spb-peripheral-drivers" data-raw-source="[Hardware Resources for Kernel-Mode SPB Peripheral Drivers](https://docs.microsoft.com/windows-hardware/drivers/spb/hardware-resources-for-kernel-mode-spb-peripheral-drivers)">Hardware Resources for Kernel-Mode SPB Peripheral Drivers</a></p></td>
-<td><p>The code examples in this topic show how the <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/what-s-new-for-wdf-drivers" data-raw-source="[Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/what-s-new-for-wdf-drivers)">Kernel-Mode Driver Framework</a> (KMDF) driver for a peripheral device on a <a href="https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)" data-raw-source="[simple peripheral bus](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85))">simple peripheral bus</a> (SPB) obtains the hardware resources that it requires to operate the device. Included in these resources is the information that the driver uses to establish a logical connection to the device.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/hardware-resources-for-user-mode-spb-peripheral-drivers" data-raw-source="[Hardware Resources for User-Mode SPB Peripheral Drivers](https://docs.microsoft.com/windows-hardware/drivers/spb/hardware-resources-for-user-mode-spb-peripheral-drivers)">Hardware Resources for User-Mode SPB Peripheral Drivers</a></p></td>
-<td><p>The code examples in this topic show how the <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/overview-of-the-umdf" data-raw-source="[User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/overview-of-the-umdf)">User-Mode Driver Framework</a> (UMDF) driver for a peripheral device on a <a href="https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)" data-raw-source="[simple peripheral bus](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85))">simple peripheral bus</a> (SPB) obtains the hardware resources that it requires to operate the device. Included in these resources is the information that the driver uses to establish a logical connection to the device.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/full-duplex-i-o-requests" data-raw-source="[Full-Duplex I/O Requests](https://docs.microsoft.com/windows-hardware/drivers/spb/full-duplex-i-o-requests)">Full-Duplex I/O Requests</a></p></td>
-<td><p>Some buses, such as SPI, support full-duplex bus transfers. These transfers improve I/O performance by simultaneously writing data to a device and reading data from the same device. To support full-duplex bus transfers, the <a href="https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)" data-raw-source="[simple peripheral bus](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85))">simple peripheral bus</a> (SPB) <a href="https://docs.microsoft.com/previous-versions/hh698224(v=vs.85)" data-raw-source="[I/O request interface](https://docs.microsoft.com/previous-versions/hh698224(v=vs.85))">I/O request interface</a> defines the <a href="https://msdn.microsoft.com/library/windows/hardware/hh974774" data-raw-source="[&lt;strong&gt;IOCTL_SPB_FULL_DUPLEX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh974774)"><strong>IOCTL_SPB_FULL_DUPLEX</strong></a> I/O control code (IOCTL).</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/atomic-bus-operations" data-raw-source="[Atomic Bus Operations](https://docs.microsoft.com/windows-hardware/drivers/spb/atomic-bus-operations)">Atomic Bus Operations</a></p></td>
-<td><p>To use certain hardware capabilities of an SPB-connected peripheral device, a client of the SPB controller (that is, a peripheral driver) might need to perform a sequence of data transfers to and from the device as an atomic bus operation. The transfer sequence is atomic because no other client can transfer data to or from a device on the bus until the sequence finishes.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/spb/spb-connection-locks" data-raw-source="[SPB Connection Locks](https://docs.microsoft.com/windows-hardware/drivers/spb/spb-connection-locks)">SPB Connection Locks</a></p></td>
-<td><p>Connection locks are useful for enabling two clients to share access to a target peripheral device on a <a href="https://docs.microsoft.com/previous-versions/hh450903(v=vs.85)" data-raw-source="[simple peripheral bus](https://docs.microsoft.com/previous-versions/hh450903(v=vs.85))">simple peripheral bus</a> (SPB). Both clients can open logical connections to the same target device and use the connection lock when either client requires exclusive access to the device to perform a series of I/O operations. When one client holds the connection lock, requests by the second client to access the device are automatically deferred until the first client releases the lock.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-

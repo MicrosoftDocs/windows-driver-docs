@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_COMPRESSION\_SETTING
 description: The WIA\_DPC\_COMPRESSION\_SETTING property contains either a range or a list of integers to represent perceived image quality.
-ms.assetid: dfe22ff2-f613-49a5-8c55-38ba851e7ebd
 keywords: ["WIA_DPC_COMPRESSION_SETTING Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_DPC\_COMPRESSION\_SETTING property is intended to approximately linearly describe the perceived image quality over a broad range of scene content. Smaller integers represent lower quality (that is, maximum compression), and larger integers represent higher quality (that is, minimum compression). Any available settings on a device are relative only to that device and are therefore device-specific.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

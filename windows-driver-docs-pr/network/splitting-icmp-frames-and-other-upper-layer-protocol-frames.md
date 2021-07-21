@@ -1,7 +1,6 @@
 ---
 title: Splitting ICMP Frames and Other Upper-Layer-Protocol Frames
 description: Splitting ICMP Frames and Other Upper-Layer-Protocol Frames
-ms.assetid: 693c0b23-f9b5-4a1e-a6c7-5f658a9a636c
 keywords:
 - ICMP frame splitting WDK networking
 ms.date: 04/20/2017

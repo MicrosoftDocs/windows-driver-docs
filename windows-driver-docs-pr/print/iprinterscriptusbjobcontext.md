@@ -4,7 +4,6 @@ description: The IPrinterScriptUsbJobContext interface is passed as a parameter 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 236F6B00-39D8-4084-BAE0-C349AD550040
 keywords: ["IPrinterScriptUsbJobContext interface Print Devices", "IPrinterScriptUsbJobContext interface Print Devices , described"]
 topic_type:
 - apiref
@@ -20,10 +19,9 @@ ms.localizationpriority: medium
 
 The IPrinterScriptUsbJobContext interface is passed as a parameter to the **startPrintJob** JavaScript function.
 
-Members
--------
+## Members
 
-The **IPrinterScriptUsbJobContext** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContext** also has these types of members:
+The **IPrinterScriptUsbJobContext** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContext** also has these types of members:
 
 -   [Methods](#methods)
 
@@ -61,13 +59,12 @@ The **IPrinterScriptUsbJobContext** interface has these methods.
 </tr>
 <tr class="odd">
 <td><a href="iprinterscriptusbjobcontext-temporarystreams.md" data-raw-source="[&lt;strong&gt;TemporaryStreams&lt;/strong&gt;](iprinterscriptusbjobcontext-temporarystreams.md)"><strong>TemporaryStreams</strong></a></td>
-<td><p>Returns an array of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream" data-raw-source="[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)">IPrinterScriptableSequentialStream</a> interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.</p></td>
+<td><p>Returns an array of <a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream" data-raw-source="[IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)">IPrinterScriptableSequentialStream</a> interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.</p></td>
 </tr>
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

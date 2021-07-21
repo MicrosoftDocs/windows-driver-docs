@@ -1,7 +1,6 @@
 ---
 title: Full TCP Offload
 description: Full TCP Offload
-ms.assetid: a940617a-b848-430d-8da1-acd946feba1b
 keywords:
 - TCP offload WDK networking
 - chimney offload WDK networking , full
@@ -27,13 +26,7 @@ The TCP chimney offloads all TCP processing for one or more TCP connections. The
 
  
 
-For information on TCP chimney offload in NDIS 6.0 and later, see [NDIS TCP Chimney Offload](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload).
+For information on TCP chimney offload in NDIS 6.0 and later, see [NDIS TCP Chimney Offload](/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload).
 
  
-
- 
-
-
-
-
 

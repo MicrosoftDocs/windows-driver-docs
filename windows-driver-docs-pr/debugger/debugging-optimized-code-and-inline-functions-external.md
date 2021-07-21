@@ -1,7 +1,6 @@
 ---
 title: Debugging Optimized Code and Inline Functions
 description: For Windows 8, the debugger and the Windows compiler have been enhanced so that you can debug optimized code and debug inline functions.
-ms.assetid: C7BE6B8E-9CF2-471C-A4F9-931C71CCC0FE
 keywords: ["debug optimized code", "debug inline functions"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -23,11 +22,11 @@ To facilitate the accurate display of local variables and parameters, the compil
 
 This screen shot of the Locals window in Visual Studio shows the parameters and local variables for a function in an optimized 64-bit application. The function is not inline, so we see both parameters and local variables.
 
-![screen shot of the locals window](images/optimizedcode01.png)
+![screen shot of the locals window.](images/optimizedcode01.png)
 
 You can use the [**dv -v**](dv--display-local-variables-.md) command to see the locations of the parameters and local variables.
 
-![screen shot that shows the locations of parameters and local variables](images/optimizedcode02.png)
+![screen shot that shows the locations of parameters and local variables.](images/optimizedcode02.png)
 
 Notice that the Locals window displays the parameters correctly even though they are stored in registers.
 

@@ -1,7 +1,6 @@
 ---
 title: Get started with the Hardware program
 description: Get started with the Hardware program
-ms.assetid: 000B5BBB-61EF-4837-8E5E-EF1BBB65B14E
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -35,7 +34,7 @@ Your company's administrator must [register](https://go.microsoft.com/fwlink/?Li
 
 You can help your customers identify quality products that run reliably on Windows-based computers by testing your products and participating in the Windows Hardware Compatibility Program (for Windows 10), or the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems).
 
-These programs enable you to design, create, and test your hardware and drivers before you submit the final version through the PArtner Center . For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page.
+These programs enable you to design, create, and test your hardware and drivers before you submit the final version through the PArtner Center . For more information, see the [Windows hardware certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) page.
 
 ## Submit your hardware and drivers for the compatibility program or certification
 

@@ -6,7 +6,7 @@
   - name: "Getting Started with UMDF"
     href: getting-started-with-umdf-version-2.md
   - name: "User-Mode Driver Framework Frequently Asked Questions"
-    href: user-mode-driver-framework-frequently-asked-questions.md
+    href: user-mode-driver-framework-frequently-asked-questions.yml
   - name: "Advantages of Writing UMDF Drivers"
     href: advantages-of-writing-umdf-drivers.md
   - name: "Overview of UMDF"
@@ -149,7 +149,7 @@
     href: determining-why-umdf-indicates-outstanding-files-at-device-removal-tim.md
   - name: "How to Enable Debugging of a UMDF Driver"
     href: enabling-a-debugger.md
-  - name: "Registry Values for Debugging WDF Drivers (KMDF and UMDF)"
+  - name: "Registry Values for Debugging WDF Drivers"
     href: registry-values-for-debugging-kmdf-drivers.md
   - name: "Summary of Debugger Extensions in Wdfkd.dll"
     href: debugger-extensions-for-kmdf-drivers.md

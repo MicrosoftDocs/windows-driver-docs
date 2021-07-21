@@ -1,7 +1,6 @@
 ---
 title: XPSDrv Configuration Module
 description: XPSDrv Configuration Module
-ms.assetid: 439d7769-57d1-41f9-a3db-da254b4b7cae
 keywords:
 - XPSDrv printer drivers WDK , configuration modules
 - configuration modules WDK XPSDrv , about configuration modules
@@ -21,7 +20,7 @@ Both Win32-based applications and WPF applications can print to XPSDrv print dri
 
 The following diagram shows the XPSDrv configuration architecture.
 
-![diagram illustrating the xpsdrv configuration architecture](images/xpsconfig.png)
+![diagram illustrating the xpsdrv configuration architecture.](images/xpsconfig.png)
 
 Note that the three objects in the Configuration Module section are mutually exclusive.
 
@@ -29,16 +28,11 @@ The two main components of an XPSDrv print driver are the [Version 3 print drive
 
 ### XPSDrv Document Events
 
-XPSDrv drivers can receive GDI document events through the [**DrvDocumentEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent) function when Win32-based applications are printing to them, and the drivers can receive XPS document events through DrvDocumentEvent when WPF applications are printing to them. For more information about XPSDrv document events, see [XPSDrv Driver Document Events](xps-driver-document-events.md).
+XPSDrv drivers can receive GDI document events through the [**DrvDocumentEvent**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent) function when Win32-based applications are printing to them, and the drivers can receive XPS document events through DrvDocumentEvent when WPF applications are printing to them. For more information about XPSDrv document events, see [XPSDrv Driver Document Events](xps-driver-document-events.md).
 
 ### XPSDrv Driver Installation
 
 XPSDrv drivers have specific requirements for installation. For more information about XPSDrv driver installation, see [XPSDrv Installation](xpsdrv-installation.md).
 
  
-
- 
-
-
-
 

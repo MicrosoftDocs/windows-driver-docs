@@ -1,7 +1,6 @@
 ---
 title: IDE Port Driver
 description: IDE Port Driver
-ms.assetid: 8e292680-6fa7-4f6b-b4ec-6f0f0d795d03
 ms.date: 10/08/2019
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # IDE Port Driver
 
 >[!NOTE]
-> The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](storport-driver-overview.md) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
+> The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](storport-driver-overview.md) and [Storport miniport](./storport-miniport-drivers.md) driver models.
 
 In Microsoft Windows NT 4.0, the port/miniport driver pair associated with the IDE bus is a SCSI miniport driver, *atapi.sys*, that linked to the SCSI port driver, *scsiport.sys*.
 
@@ -17,7 +16,7 @@ In Microsoft Windows 2000 and Windows XP, the IDE port driver *atapi.sys* is an 
 
 There are three system-supplied drivers in the IDE driver model for Windows 2000 and Windows XP: *atapi.sys* (port driver), *pciidex.sys* (controller driver), and *pciide.sys* (generic controller minidriver). All three drivers are illustrated in the following figure.
 
-![windows 2000 and windows xp ide driver stack ](images/idedrvrs.png)
+![windows 2000 and windows xp ide driver stack .](images/idedrvrs.png)
 
 Starting from the bottom of the figure, the following describes each driver in the stack:
 

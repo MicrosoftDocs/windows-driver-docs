@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_OFFLOAD_PARAMETERS
 description: This topic describes the OID_TCP_OFFLOAD_PARAMETERS object identifier (OID). 
-ms.assetid: 5D9B5F62-E506-4983-B247-A93B81E70A43
 keywords:
 - OID_TCP_OFFLOAD_PARAMETERS, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
 ms.date: 11/01/2017
@@ -18,11 +17,11 @@ As a set request, the OID_TCP_OFFLOAD_PARAMETERS OID sets the current TCP offloa
 
 OID_TCP_OFFLOAD_PARAMETERS is required for miniport drivers that support TCP offloads and optional for other miniport drivers. If a miniport driver does not support this OID, the driver should return NDIS_STATUS_NOT_SUPPORTED.
 
-The **InformationBuffer** member of the [NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [NDIS_OFFLOAD_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. If the contents of **InformationBuffer** are invalid, the miniport driver should return NDIS_STATUS_INVALID_DATA in response to this OID.
+The **InformationBuffer** member of the [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains an [NDIS_OFFLOAD_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. If the contents of **InformationBuffer** are invalid, the miniport driver should return NDIS_STATUS_INVALID_DATA in response to this OID.
 
 While NDIS processes this OID and before it passes the OID to the miniport driver, NDIS updates the miniport adapter's offload standardized keywords with the new settings.
 
-Miniport drivers must use the contents of the [NDIS_OFFLOAD_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure to update the currently reported TCP offload capabilities. After the update, the miniport driver must report the current task offload capabilities with the [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-task-offload-current-config.md) status indication. This status indication ensures that all of the overlying protocol drivers are updated with the new capabilities information.
+Miniport drivers must use the contents of the [NDIS_OFFLOAD_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure to update the currently reported TCP offload capabilities. After the update, the miniport driver must report the current task offload capabilities with the [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-task-offload-current-config.md) status indication. This status indication ensures that all of the overlying protocol drivers are updated with the new capabilities information.
 
 This OID is a more comprehensive OID that instructs miniport drivers to turn certain offloads on or off. Most TCP/IP task offloads can be configured and activated with this OID. For some offloads, such as Rx Checksum or Rx IPSec, this OID serves as a configuration change and doesn't mean the offload will be operational immediately. To activate those offloads, the miniport driver must wait until it receives an [OID_OFFLOAD_ENCAPSULATION](oid-offload-encapsulation.md) Set request.
 
@@ -30,16 +29,13 @@ Before setting OID_TCP_OFFLOAD_PARAMETERS, the overlying applications or drivers
 
 ### See also
 
-[NDIS_OFFLOAD_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)  
-[NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)  
+[NDIS_OFFLOAD_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)  
+[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)  
 [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-task-offload-current-config.md)  
 [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md)  
 [OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES](oid-tcp-offload-hardware-capabilities.md)
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

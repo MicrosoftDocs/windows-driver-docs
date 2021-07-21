@@ -1,17 +1,15 @@
 ---
 title: Sample Extension Unit Plug-in DLL
-description: Sample Extension Unit Plug-in DLL
-ms.assetid: bd9ea70d-7bd0-494d-8d67-7a36a41d005b
+description: Sample extension unit plug-in DLL
 keywords:
 - plug-in DLL WDK USB Video Class
 - extension units WDK USB Video Class , samples, plug-in DLL
 - sample code WDK USB Video Class , extension unit plug-in DLL
-ms.date: 04/20/2017
+ms.date: 06/19/2020
 ms.localizationpriority: medium
 ---
 
-# Sample Extension Unit Plug-in DLL
-
+# Sample extension unit plug-in DLL
 
 This topic contains sample code for an Extension Unit plug-in DLL that exposes a COM API on top of a KS property set.
 
@@ -19,7 +17,7 @@ The sample defines a class called **CExtension**, which derives from **CNodeCont
 
 *Vidcap.ax* uses **IKsNodeControl** to inform the plug-in of the extension node ID and provide it with an instance of **IKsControl**. Specifically, the plug-in receives this information through calls to **CExtension::put\_NodeId** and **CExtension::put\_KsControl**. You can find possible implementations of these methods later in this topic for the parent class **CNodeControl**.
 
-*Vidcap.h* appears in the Summer 2004 DirectX SDK through the February 2005 [DirectX SDK](https://go.microsoft.com/fwlink/p/?linkid=51990). When installing these packages, you must install the Extras to obtain *Vidcap.h*.
+*Vidcap.h* appears in the Summer 2004 DirectX SDK through the February 2005 [DirectX SDK](/previous-versions/dn629515(v=msdn.10)). When installing these packages, you must install the Extras to obtain *Vidcap.h*.
 
 In Windows Vista and later releases, *Vidcap.h* is included as part of the Microsoft Windows SDK.
 
@@ -72,30 +70,30 @@ class CExtension :
    STDMETHOD (get_InfoSize)(
       ULONG *pulSize);
    STDMETHOD (get_PropertySize)(
-      ULONG PropertyId, 
+      ULONG PropertyId,
       ULONG *pulSize);
    STDMETHOD (get_Property)(
-      ULONG PropertyId, 
-      ULONG ulSize, 
+      ULONG PropertyId,
+      ULONG ulSize,
       BYTE pValue[]);
    STDMETHOD (put_Property)(
-      ULONG PropertyId, 
-      ULONG ulSize, 
+      ULONG PropertyId,
+      ULONG ulSize,
       BYTE pValue[]);
    STDMETHOD (get_PropertyRange)(
-      ULONG PropertyId, 
+      ULONG PropertyId,
       ULONG ulSize,
-      BYTE pMin[], 
-      BYTE pMax[], 
-      BYTE pSteppingDelta[], 
+      BYTE pMin[],
+      BYTE pMax[],
+      BYTE pSteppingDelta[],
       BYTE pDefault[]);
 };
 
 #define STATIC_PROPSETID_VIDCAP_EXTENSION_UNIT \
    0xXXXXXXXX,0xXXXX,0xXXXX,0xXX,0xXX,0xXX,0xXX,0xXX,0xXX,0xXX,0xXX
-DEFINE_GUIDSTRUCT("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", \ 
+DEFINE_GUIDSTRUCT("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", \
    PROPSETID_VIDCAP_EXTENSION_UNIT);
-#define PROPSETID_VIDCAP_EXTENSION_UNIT \      
+#define PROPSETID_VIDCAP_EXTENSION_UNIT \
    DEFINE_GUIDNAMED(PROPSETID_VIDCAP_EXTENSION_UNIT)
 ```
 
@@ -124,7 +122,7 @@ CNodeControl::put_KsControl(
 
     if (m_pKsControl) m_pKsControl.Release();
  hr = pIKsControl->QueryInterface(__uuidof(IKsControl),
-       (void **) &m_pKsControl);        
+       (void **) &m_pKsControl);
 
     return hr;
 }
@@ -138,14 +136,14 @@ CExtension::CExtension()
     m_pKsControl = NULL;
 }
 
-STDMETHODIMP 
+STDMETHODIMP
 CExtension::FinalConstruct()
 {
     if (m_pOuterUnknown == NULL ) return E_FAIL;
     return S_OK;
 }
 
-STDMETHODIMP 
+STDMETHODIMP
 CExtension::get_InfoSize(
     ULONG *pulSize)
 {
@@ -157,7 +155,7 @@ CExtension::get_InfoSize(
 
     ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = KSPROPERTY_EXTENSION_UNIT_INFO;
-    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 
+    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET |
                                    KSPROPERTY_TYPE_TOPOLOGY;
     ExtensionProp.NodeId = m_dwNodeId;
 
@@ -168,17 +166,17 @@ CExtension::get_InfoSize(
         0,
         &ulBytesReturned);
 
-    if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA)) 
+    if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA))
     {
         *pulSize = ulBytesReturned;
         hr = S_OK;
     }
- 
+
  return hr;
 }
 
 
-STDMETHODIMP 
+STDMETHODIMP
 CExtension::get_Info(
     ULONG ulSize,
     BYTE pInfo[])
@@ -189,7 +187,7 @@ CExtension::get_Info(
 
     ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = KSPROPERTY_EXTENSION_UNIT_INFO;
-    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 
+    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET |
                                    KSPROPERTY_TYPE_TOPOLOGY;
     ExtensionProp.NodeId = m_dwNodeId;
 
@@ -204,9 +202,9 @@ CExtension::get_Info(
 }
 
 
-STDMETHODIMP 
+STDMETHODIMP
 CExtension::get_PropertySize(
-    ULONG PropertyId, 
+    ULONG PropertyId,
     ULONG *pulSize)
 {
     HRESULT hr = S_OK;
@@ -217,7 +215,7 @@ CExtension::get_PropertySize(
 
     ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = PropertyId;
-    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 
+    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET |
                                    KSPROPERTY_TYPE_TOPOLOGY;
     ExtensionProp.NodeId = m_dwNodeId;
 
@@ -228,19 +226,19 @@ CExtension::get_PropertySize(
         0,
         &ulBytesReturned);
 
- if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA)) 
+ if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA))
     {
         *pulSize = ulBytesReturned;
         hr = S_OK;
     }
- 
+
  return hr;
 }
 
-STDMETHODIMP 
+STDMETHODIMP
 CExtension::get_Property(
-    ULONG PropertyId, 
-    ULONG ulSize, 
+    ULONG PropertyId,
+    ULONG ulSize,
     BYTE pValue[])
 {
     HRESULT hr = S_OK;
@@ -249,33 +247,7 @@ CExtension::get_Property(
 
     ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = PropertyId;
-    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 
-                                   KSPROPERTY_TYPE_TOPOLOGY;
-    ExtensionProp.NodeId = m_dwNodeId;
-
-    hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &ExtensionProp,
- sizeof(ExtensionProp),
-        (PVOID) pValue,
-        ulSize,
-        &ulBytesReturned);
-
-    return hr;
-}
-
-STDMETHODIMP 
-CExtension::put_Property(
-    ULONG PropertyId, 
-    ULONG ulSize, 
-    BYTE pValue[])
-{
-    HRESULT hr = S_OK;
-    KSP_NODE ExtensionProp;
-    ULONG ulBytesReturned;
-
-    ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
-    ExtensionProp.Property.Id = PropertyId;
-    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_SET | 
+    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET |
                                    KSPROPERTY_TYPE_TOPOLOGY;
     ExtensionProp.NodeId = m_dwNodeId;
 
@@ -290,7 +262,33 @@ CExtension::put_Property(
 }
 
 STDMETHODIMP
-CExtension::get_PropertyRange( 
+CExtension::put_Property(
+    ULONG PropertyId,
+    ULONG ulSize,
+    BYTE pValue[])
+{
+    HRESULT hr = S_OK;
+    KSP_NODE ExtensionProp;
+    ULONG ulBytesReturned;
+
+    ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
+    ExtensionProp.Property.Id = PropertyId;
+    ExtensionProp.Property.Flags = KSPROPERTY_TYPE_SET |
+                                   KSPROPERTY_TYPE_TOPOLOGY;
+    ExtensionProp.NodeId = m_dwNodeId;
+
+    hr = m_pKsControl->KsProperty(
+        (PKSPROPERTY) &ExtensionProp,
+ sizeof(ExtensionProp),
+        (PVOID) pValue,
+        ulSize,
+        &ulBytesReturned);
+
+    return hr;
+}
+
+STDMETHODIMP
+CExtension::get_PropertyRange(
     ULONG PropertyId,
     ULONG ulSize,
     BYTE pMin[  ],
@@ -307,19 +305,11 @@ CExtension::CExtension()
 {
     m_pKsControl = NULL;
 }
- 
-STDMETHODIMP 
+
+STDMETHODIMP
 CExtension::FinalConstruct()
 {
     if (m_pOuterUnknown == NULL) return E_FAIL;
     return S_OK;
 }
 ```
-
- 
-
- 
-
-
-
-

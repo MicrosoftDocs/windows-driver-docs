@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_LNB\_LOF\_LOW\_BAND
 description: Clients use KSPROPERTY\_BDA\_LNB\_LOF\_LOW\_BAND to inform the RF tuner node about the local oscillator frequency (LOF) that is used by the low-noise block (LNB) device for shifting the frequency of incoming low-band RF signals.
-ms.assetid: 96880a70-5c3f-4391-a613-a6a90d1605b4
 keywords: ["KSPROPERTY_BDA_LNB_LOF_LOW_BAND Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_LNB\_LOF\_LOW\_BAND to inform the RF tuner node abo
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the RF tuner node.
 
@@ -64,8 +62,7 @@ The property value specifies the LOF that is used by the LNB for low-band signal
 
 The LNB gathers the RF signal reflected by the satellite dish, shifts the frequency of the RF signal down by the low-band LOF amount, and sends the resulting signal to the RF tuner.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,14 +80,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

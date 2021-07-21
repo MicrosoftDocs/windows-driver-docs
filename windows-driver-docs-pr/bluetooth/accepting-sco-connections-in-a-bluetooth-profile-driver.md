@@ -1,7 +1,6 @@
 ---
 title: Accepting SCO Connections in a Bluetooth Profile Driver
 description: Accepting SCO Connections in a Bluetooth Profile Driver
-ms.assetid: 9736f113-26fb-4e2f-9a58-9874a11f8347
 keywords:
 - Synchronous Connection-Oriented WDK Bluetooth
 - SCO profile drivers WDK Bluetooth
@@ -20,25 +19,19 @@ Server profile drivers must perform the following steps to accept incoming SCO c
 
 **To Receive Incoming SCO Connection Requests from Remote Devices**
 
-1.  Profile drivers should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_REGISTER\_SERVER**](https://docs.microsoft.com/previous-versions/ff536628(v=vs.85)) request to register a [*SCO Callback Function*](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnsco_indication_callback) with the Bluetooth driver stack so the stack can notify the profile driver of incoming SCO connection requests.
+1.  Profile drivers should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_REGISTER\_SERVER**](/previous-versions/ff536628(v=vs.85)) request to register a [*SCO Callback Function*](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnsco_indication_callback) with the Bluetooth driver stack so the stack can notify the profile driver of incoming SCO connection requests.
 
-2.  When the Bluetooth driver stack receives an incoming SCO connection request from a remote device, it calls the [*SCO Callback Function*](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnsco_indication_callback) registered earlier by the profile driver. The Bluetooth driver stack passes the value **ScoIndicationRemoteConnect** to the *Indication* parameter of the callback function.
+2.  When the Bluetooth driver stack receives an incoming SCO connection request from a remote device, it calls the [*SCO Callback Function*](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnsco_indication_callback) registered earlier by the profile driver. The Bluetooth driver stack passes the value **ScoIndicationRemoteConnect** to the *Indication* parameter of the callback function.
 
-3.  To respond to incoming connection requests, profile drivers should build and send a [**BRB\_SCO\_OPEN\_CHANNEL\_RESPONSE**](https://docs.microsoft.com/previous-versions/ff536627(v=vs.85)) request. Based on the value of the **Response** member of the [**\_BRB\_SCO\_OPEN\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_open_channel) structure passed with this request, the server profile driver accepts or rejects the connection request.
+3.  To respond to incoming connection requests, profile drivers should build and send a [**BRB\_SCO\_OPEN\_CHANNEL\_RESPONSE**](/previous-versions/ff536627(v=vs.85)) request. Based on the value of the **Response** member of the [**\_BRB\_SCO\_OPEN\_CHANNEL**](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_open_channel) structure passed with this request, the server profile driver accepts or rejects the connection request.
 
-4.  If the server profile driver accepts the connection, the Bluetooth driver stack can then call the [*SCO Callback Function*](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnsco_indication_callback) as specified in the **Callback** member of the [**\_BRB\_SCO\_OPEN\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_open_channel) structure to notify the server profile driver of any changes to the SCO connection.
+4.  If the server profile driver accepts the connection, the Bluetooth driver stack can then call the [*SCO Callback Function*](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnsco_indication_callback) as specified in the **Callback** member of the [**\_BRB\_SCO\_OPEN\_CHANNEL**](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_open_channel) structure to notify the server profile driver of any changes to the SCO connection.
 
 After the profile driver accepts a connection request, it can use other BRBs to send and receive data over the newly established SCO connection.
 
-To stop receiving notifications of remote device SCO connection attempts, profile drivers should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_UNREGISTER\_SERVER**](https://docs.microsoft.com/previous-versions/ff536630(v=vs.85)) request to unregister a server when the profile driver processes [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) Plug and Play remove notifications.
+To stop receiving notifications of remote device SCO connection attempts, profile drivers should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_UNREGISTER\_SERVER**](/previous-versions/ff536630(v=vs.85)) request to unregister a server when the profile driver processes [**IRP\_MN\_REMOVE\_DEVICE**](../kernel/irp-mn-remove-device.md) Plug and Play remove notifications.
 
 For more information about notifications and callback functions, see [Supporting Bluetooth Event Notifications](supporting-bluetooth-event-notifications.md).
 
  
-
- 
-
-
-
-
 

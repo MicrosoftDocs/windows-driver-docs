@@ -1,7 +1,6 @@
 ---
 title: WSK_CACHE_SD
 description: WSK_CACHE_SD
-ms.assetid: 60a4c7f9-d7e3-4378-b22b-93c69a9b8a37
 ms.date: 07/18/2017
 keywords:
  - WSK_CACHE_SD Network Drivers Starting with Windows Vista
@@ -11,9 +10,9 @@ ms.localizationpriority: medium
 # WSK\_CACHE\_SD
 
 
-A WSK application uses the WSK\_CACHE\_SD client control operation to obtain a cached copy of a security descriptor that can be passed to the [**WskSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket), [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect), and [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) functions.
+A WSK application uses the WSK\_CACHE\_SD client control operation to obtain a cached copy of a security descriptor that can be passed to the [**WskSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket), [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect), and [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) functions.
 
-To obtain a cached copy of a security descriptor, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
+To obtain a cached copy of a security descriptor, a WSK application calls the [**WskControlClient**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
 
 <table>
 <colgroup>
@@ -64,8 +63,7 @@ For more information about the SECURITY\_DESCRIPTOR structure, see the reference
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,9 +83,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

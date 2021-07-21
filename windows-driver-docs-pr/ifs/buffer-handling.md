@@ -1,7 +1,6 @@
 ---
 title: Buffer Handling
 description: Buffer Handling
-ms.assetid: 0739ff35-2915-4237-9fe0-11559eccb0bb
 keywords:
 - security WDK file systems , minimizing threats
 - buffers WDK file systems
@@ -36,13 +35,13 @@ One of the most common problems in this area is that driver writers assume too m
 
 -   Checking that the high bit is set in the address. This does not work on x86-based computers where the system is using Four Gigabyte Tuning (4GT) by setting the /3GB option in the Boot.ini file. In that case, user-mode addresses set the high bit for the third gigabyte (GB) of the address space.
 
--   Using [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate the address. While this will ensure that the address is a valid user-mode address at the time of the probe, there is nothing that requires it to remain valid after the probe operation. Thus, this technique introduces a subtle race condition that can lead to periodic irreproducible crashes. **ProbeForRead** and **ProbeForWrite** calls are necessary for a different reason: to validate whether the address is a user-mode address and that the length of the buffer is within the user address range. If the probe is omitted, users can pass in valid kernel-mode addresses, which will not be caught by a \_\_try and \_\_except block (structured exception handling) and will open up a large security hole. So **ProbeForRead** and **ProbeForWrite** calls are necessary to ensure alignment and that the user-mode address, plus the length, is within the user address range. However, a \_\_try and \_\_except block is needed to guard against access.
+-   Using [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate the address. While this will ensure that the address is a valid user-mode address at the time of the probe, there is nothing that requires it to remain valid after the probe operation. Thus, this technique introduces a subtle race condition that can lead to periodic irreproducible crashes. **ProbeForRead** and **ProbeForWrite** calls are necessary for a different reason: to validate whether the address is a user-mode address and that the length of the buffer is within the user address range. If the probe is omitted, users can pass in valid kernel-mode addresses, which will not be caught by a \_\_try and \_\_except block (structured exception handling) and will open up a large security hole. So **ProbeForRead** and **ProbeForWrite** calls are necessary to ensure alignment and that the user-mode address, plus the length, is within the user address range. However, a \_\_try and \_\_except block is needed to guard against access.
 
-    Note that [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) only validates that the address and length fall within the possible user-mode address range (slightly under 2 GB for a system without 4GT, for example), not whether the memory address is valid. In contrast, [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) will try to access the first byte in each page of the length specified to verify that these are valid memory addresses.
+    Note that [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) only validates that the address and length fall within the possible user-mode address range (slightly under 2 GB for a system without 4GT, for example), not whether the memory address is valid. In contrast, [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) will try to access the first byte in each page of the length specified to verify that these are valid memory addresses.
 
--   Relying on memory manager functions ([**MmIsAddressValid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmisaddressvalid), for example) to ensure that the address is valid. As with the probe functions, this introduces a race condition that can lead to irreproducible crashes.
+-   Relying on memory manager functions ([**MmIsAddressValid**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmisaddressvalid), for example) to ensure that the address is valid. As with the probe functions, this introduces a race condition that can lead to irreproducible crashes.
 
--   Failing to use structured exception handling. The \_\_try and \_\_except functions within the compiler use operating system-level support for exception handling. Exceptions at kernel level are thrown back by calling [**ExRaiseStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exraisestatus), or one of the related functions. A driver failing to use structured exception handling around any call that may raise an exception will lead to a bug check (typically KMODE\_EXCEPTION\_NOT\_HANDLED).
+-   Failing to use structured exception handling. The \_\_try and \_\_except functions within the compiler use operating system-level support for exception handling. Exceptions at kernel level are thrown back by calling [**ExRaiseStatus**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exraisestatus), or one of the related functions. A driver failing to use structured exception handling around any call that may raise an exception will lead to a bug check (typically KMODE\_EXCEPTION\_NOT\_HANDLED).
 
     Note that it is mistake to use structured exception handling around code that is not expected to raise errors. This will just mask real bugs that would otherwise be found. Putting a \_\_try and \_\_except wrapper at the top dispatch level of your routine is not the correct solution to this problem, although it is sometimes the reflex solution tried by driver writers.
 
@@ -52,16 +51,11 @@ For file systems, these problems are particularly severe because they typically 
 
 The WDK contains numerous examples of buffer validation in the FASTFAT and CDFS file system sample code, including:
 
--   The **FatLockUserBuffer** function in fastfat\\deviosup.c uses [**MmProbeAndLockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages) to lock down the physical pages behind the user buffer and [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) in **FatMapUserBuffer** to create a virtual mapping for the pages that are locked down.
+-   The **FatLockUserBuffer** function in fastfat\\deviosup.c uses [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages) to lock down the physical pages behind the user buffer and [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) in **FatMapUserBuffer** to create a virtual mapping for the pages that are locked down.
 
--   The **FatGetVolumeBitmap** function in fastfat\\fsctl.c uses [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate user buffers in the defragmentation API.
+-   The **FatGetVolumeBitmap** function in fastfat\\fsctl.c uses [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate user buffers in the defragmentation API.
 
 -   The **CdCommonRead** function in cdfs\\read.c uses \_\_try and \_\_except around code to zero user buffers. Note that the sample code in **CdCommonRead** appears to use the try and except keywords. In the WDK environment, these keywords in C are defined in terms of the compiler extensions \_\_try and \_\_except. Anyone using C++ code must use the native compiler types to handle exceptions properly, as \_\_try is a C++ keyword, but not a C keyword, and will provide a form of C++ exception handling that is not valid for kernel drivers.
 
  
-
- 
-
-
-
 

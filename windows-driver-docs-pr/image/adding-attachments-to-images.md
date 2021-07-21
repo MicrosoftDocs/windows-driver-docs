@@ -1,7 +1,6 @@
 ---
 title: Adding Attachments to Images
 description: Adding Attachments to Images
-ms.assetid: 704f541b-b98c-44a8-bb19-5d5d0d1eab78
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ When an item is marked with **WiaItemTypeHasAttachments**, this means that the i
 
 An item cannot be both of type **WiaItemTypeHasAttachments** and type **WiaItemTypeFolder**. However, an item can be of type **WiaItemTypeHasAttachments** and type **WiaItemTypeFile**. This is because an item of type **WiaItemTypeHasAttachments** is conceptually treated as a single entity. The following diagram illustrates the WIA Camera item tree with attachments.
 
-![diagram illustrating a wia camera item tree with attachments](images/camera-tree-attachments.png)
+![diagram illustrating a wia camera item tree with attachments.](images/camera-tree-attachments.png)
 
  
 

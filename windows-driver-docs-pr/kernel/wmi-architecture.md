@@ -1,7 +1,6 @@
 ---
 title: WMI Architecture
 description: WMI Architecture
-ms.assetid: cdc8f318-1931-426e-bd9c-da7aa6a11036
 keywords: ["WMI WDK kernel , architecture"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ For instance, when a WMI client requests a given data block, the WMI kernel comp
 
 The following figure shows this data flow:
 
-![diagram illustrating wmi architecture data flow](images/wmi1a.png)
+![diagram illustrating wmi architecture data flow.](images/wmi1a.png)
 
  
 

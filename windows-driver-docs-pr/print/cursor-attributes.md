@@ -1,7 +1,6 @@
 ---
 title: Cursor Attributes
 description: Cursor Attributes
-ms.assetid: 43646e2a-bc40-430e-ac7e-6fe4cb353309
 keywords:
 - cursor attributes WDK Unidrv
 - general printer attributes WDK Unidrv , cursor

@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming Interface Sets
 description: Kernel Streaming Interface Sets
-ms.assetid: 7fb6b137-0e28-4034-8e89-7301f3d2bbba
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -18,15 +17,9 @@ This section documents kernel streaming interface sets. It contains the followin
 
 [KSINTERFACESETID\_Standard](ksinterfacesetid-standard.md)
 
-These sets correspond to GUIDs that are defined in *ks.h* and *ksmedia.h*, and can be specified in the [**KSPIN\_INTERFACE**](https://docs.microsoft.com/previous-versions/ff563537(v=vs.85)) structure.
+These sets correspond to GUIDs that are defined in *ks.h* and *ksmedia.h*, and can be specified in the [**KSPIN\_INTERFACE**](/windows-hardware/drivers/stream/kspin-interface-structure) structure.
 
-For information about how to specify interfaces in your minidriver, see [KS Interfaces](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-interfaces).
-
- 
+For information about how to specify interfaces in your minidriver, see [KS Interfaces](./ks-interfaces.md).
 
  
-
-
-
-
 

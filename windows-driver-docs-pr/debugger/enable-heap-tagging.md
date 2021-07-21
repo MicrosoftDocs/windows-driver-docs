@@ -1,7 +1,6 @@
 ---
 title: Enable heap tagging
 description: Enable heap tagging
-ms.assetid: be877811-075c-4019-81dd-73a134d5fb81
 keywords: ["Enable heap tagging (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

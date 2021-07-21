@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of a virtual machine.
-ms.assetid: E7A289CA-29CE-4C6F-AD08-529E58379715
 ms.date: 10/08/2018
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of a virtual machine. The virtual machine can be located on the same physical computer as the debugger or on a different computer that is connected to the same network. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](https://go.microsoft.com/fwlink/p?linkid=301383).
+You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of a virtual machine. The virtual machine can be located on the same physical computer as the debugger or on a different computer that is connected to the same network. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Debugging Using Visual Studio](debugging-using-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the virtual machine that is being debugged is called the *target virtual machine*.
 
@@ -87,7 +86,7 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 
 3. Restart the VM so that the new settings are in effect.
 
-For more information, see [Generation 2 Virtual Machine Overview](https://go.microsoft.com/fwlink/p/?Linkid=331326).
+For more information, see [Generation 2 Virtual Machine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282285(v=ws.11)).
 
 
 ## <span id="Firewalls"></span>Troubleshooting Firewalls and Network Access Issues
@@ -113,11 +112,4 @@ You can use Control Panel to allow access through the Windows firewall.
 
 [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
  
-
- 
-
-
-
-
-
 

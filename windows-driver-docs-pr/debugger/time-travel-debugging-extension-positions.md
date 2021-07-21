@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # !positions
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
 
 The **!positions** extension displays all the active threads, including their current positions in the time travel trace.
 

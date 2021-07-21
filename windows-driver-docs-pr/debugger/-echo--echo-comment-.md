@@ -1,7 +1,6 @@
 ---
 title: .echo (Echo Comment)
 description: The .echo command displays a comment string.
-ms.assetid: 4a291952-695c-4292-8aa5-82d497f0141c
 keywords: [".echo (Echo Comment) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,8 +53,7 @@ Specifies the text to display. You can also enclose *String* in quotation marks 
 
  
 
-Remarks
--------
+## Remarks
 
 The **.echo** command causes the debugger to display *String* immediately after you enter the command.
 

@@ -1,7 +1,6 @@
 ---
 title: Filter, Pin, and Node Properties
 description: Filter, Pin, and Node Properties
-ms.assetid: e0d52e97-459f-4095-9cf5-1474117ce66a
 keywords:
 - audio properties WDK , filters
 - WDM audio properties WDK , filters
@@ -46,17 +45,17 @@ Whether a node-property request specifies a filter or pin handle depends on whet
 
 The following figure shows these three kinds of property request: a pin-property request sent to a pin instance, a node-property request sent to a node (on a filter or pin instance), and a filter-property request sent to a filter instance.
 
-![diagram illustrating filter-, pin-, and node-property requests](images/propreqs.png)
+![diagram illustrating filter-, pin-, and node-property requests.](images/propreqs.png)
 
 Typically, the port driver handles most requests for filter and pin properties, and the miniport driver handles requests for node properties.
 
-The port driver supplies its own built-in handlers for the filter and pin properties that are used by the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) (see [KSPROPSETID\_Sysaudio](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-sysaudio) and [KSPROPSETID\_Sysaudio\_Pin](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-sysaudio-pin)) and [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver). A miniport driver does not need to implement handlers for properties that the port driver handles. A typical miniport driver provides few, if any, handlers for filter and pin properties. The miniport driver supplies the handlers for node properties that represent hardware-dependent features of the audio device. The port drivers supply no built-in handling of node properties, with the exception of [**KSPROPERTY\_TOPOLOGY\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-name).
+The port driver supplies its own built-in handlers for the filter and pin properties that are used by the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) (see [KSPROPSETID\_Sysaudio](./kspropsetid-sysaudio.md) and [KSPROPSETID\_Sysaudio\_Pin](./kspropsetid-sysaudio-pin.md)) and [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver). A miniport driver does not need to implement handlers for properties that the port driver handles. A typical miniport driver provides few, if any, handlers for filter and pin properties. The miniport driver supplies the handlers for node properties that represent hardware-dependent features of the audio device. The port drivers supply no built-in handling of node properties, with the exception of [**KSPROPERTY\_TOPOLOGY\_NAME**](../stream/ksproperty-topology-name.md).
 
 When both the port driver and miniport driver supply handlers for the same property, the port driver uses its own handler and ignores the miniport driver's handler.
 
 ### <span id="Filter_Descriptors"></span><span id="filter_descriptors"></span><span id="FILTER_DESCRIPTORS"></span>Filter Descriptors
 
-The port driver obtains pointers to the miniport driver's property handlers by calling the [**IMiniport::GetDescription**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription) method. Through this method, the port driver retrieves a pointer to the miniport driver's filter descriptor, which is a structure of type [**PCFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor). This structure specifies the miniport driver's property handlers for filter, pin, and node properties:
+The port driver obtains pointers to the miniport driver's property handlers by calling the [**IMiniport::GetDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription) method. Through this method, the port driver retrieves a pointer to the miniport driver's filter descriptor, which is a structure of type [**PCFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor). This structure specifies the miniport driver's property handlers for filter, pin, and node properties:
 
 -   The PCFILTER\_DESCRIPTOR structure's **AutomationTable** member points to the automation table for the filter. This table specifies the miniport driver's property handlers for filter properties.
 
@@ -68,45 +67,45 @@ The port driver obtains pointers to the miniport driver's property handlers by c
 
 The port driver accesses the miniport driver's filter-property handlers through the **AutomationTable** member of PCFILTER\_DESCRIPTOR. Typically, this automation table contains few handlers because the port driver supplies its own built-in handlers for all the filter properties that SysAudio and WDMAud use to query and configure audio devices.
 
-However, the miniport driver can supply handlers for filter properties such as [**KSPROPERTY\_GENERAL\_COMPONENTID**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-general-componentid) that provide hardware-dependent information that is not available to the port driver. Two of the sample audio drivers in the Microsoft Windows Driver Kit (WDK) handle the KSPROPERTY\_GENERAL\_COMPONENTID property. For more information, see the miniport driver implementations in the Msvad and Sb16 samples.
+However, the miniport driver can supply handlers for filter properties such as [**KSPROPERTY\_GENERAL\_COMPONENTID**](../stream/ksproperty-general-componentid.md) that provide hardware-dependent information that is not available to the port driver. Two of the sample audio drivers in the Microsoft Windows Driver Kit (WDK) handle the KSPROPERTY\_GENERAL\_COMPONENTID property. For more information, see the miniport driver implementations in the Sysvad sample driver, which is discussed in [Sample Audio Drivers](sample-audio-drivers.md).
 
-All the port drivers in Portcls.sys provide handling for the [KSPROPSETID\_Pin](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-pin) and [KSPROPSETID\_Topology](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-topology) property sets. All the properties in these sets are filter properties, with the exception of [**KSPROPERTY\_TOPOLOGY\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-name), which is a node property (that uses a filter handle, not a pin handle, to specify the target for the request). The port drivers support the following subset of the KSPROPSETID\_Pin properties:
+All the port drivers in Portcls.sys provide handling for the [KSPROPSETID\_Pin](../stream/kspropsetid-pin.md) and [KSPROPSETID\_Topology](../stream/kspropsetid-topology.md) property sets. All the properties in these sets are filter properties, with the exception of [**KSPROPERTY\_TOPOLOGY\_NAME**](../stream/ksproperty-topology-name.md), which is a node property (that uses a filter handle, not a pin handle, to specify the target for the request). The port drivers support the following subset of the KSPROPSETID\_Pin properties:
 
-[**KSPROPERTY\_PIN\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-category)
+[**KSPROPERTY\_PIN\_CATEGORY**](../stream/ksproperty-pin-category.md)
 
-[**KSPROPERTY\_PIN\_CINSTANCES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-cinstances)
+[**KSPROPERTY\_PIN\_CINSTANCES**](../stream/ksproperty-pin-cinstances.md)
 
-[**KSPROPERTY\_PIN\_COMMUNICATION**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-communication)
+[**KSPROPERTY\_PIN\_COMMUNICATION**](../stream/ksproperty-pin-communication.md)
 
-[**KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-constraineddataranges)
+[**KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES**](../stream/ksproperty-pin-constraineddataranges.md)
 
-[**KSPROPERTY\_PIN\_CTYPES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-ctypes)
+[**KSPROPERTY\_PIN\_CTYPES**](../stream/ksproperty-pin-ctypes.md)
 
-[**KSPROPERTY\_PIN\_DATAFLOW**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-dataflow)
+[**KSPROPERTY\_PIN\_DATAFLOW**](../stream/ksproperty-pin-dataflow.md)
 
-[**KSPROPERTY\_PIN\_DATAINTERSECTION**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-dataintersection)
+[**KSPROPERTY\_PIN\_DATAINTERSECTION**](../stream/ksproperty-pin-dataintersection.md)
 
-[**KSPROPERTY\_PIN\_DATARANGES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-dataranges)
+[**KSPROPERTY\_PIN\_DATARANGES**](../stream/ksproperty-pin-dataranges.md)
 
-[**KSPROPERTY\_PIN\_GLOBALCINSTANCES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-globalcinstances)
+[**KSPROPERTY\_PIN\_GLOBALCINSTANCES**](../stream/ksproperty-pin-globalcinstances.md)
 
-[**KSPROPERTY\_PIN\_INTERFACES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-interfaces)
+[**KSPROPERTY\_PIN\_INTERFACES**](../stream/ksproperty-pin-interfaces.md)
 
-[**KSPROPERTY\_PIN\_MEDIUMS**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-mediums)
+[**KSPROPERTY\_PIN\_MEDIUMS**](../stream/ksproperty-pin-mediums.md)
 
-[**KSPROPERTY\_PIN\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-name)
+[**KSPROPERTY\_PIN\_NAME**](../stream/ksproperty-pin-name.md)
 
-[**KSPROPERTY\_PIN\_NECESSARYINSTANCES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-necessaryinstances)
+[**KSPROPERTY\_PIN\_NECESSARYINSTANCES**](../stream/ksproperty-pin-necessaryinstances.md)
 
-[**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-physicalconnection)
+[**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](../stream/ksproperty-pin-physicalconnection.md)
 
-[**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-proposedataformat)
+[**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT**](../stream/ksproperty-pin-proposedataformat.md)
 
-[**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-proposedataformat2)
+[**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2**](../stream/ksproperty-pin-proposedataformat2.md)
 
 These properties provide information about the pin factories belonging to a filter. Typically, clients query the filter for these properties before creating pin instances. The port drivers support all four of the KSPROPSETID\_Topology properties, which provide information about the filter's internal topology.
 
-In addition, the DMus port driver provides a handler for the [**KSPROPERTY\_SYNTH\_MASTERCLOCK**](https://docs.microsoft.com/previous-versions/ff537403(v=vs.85)) property, which is a get-only property of a DirectMusic filter. KSPROPERTY\_SYNTH\_MASTERCLOCK is a member of the [KSPROPSETID\_SynthClock](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-synthclock) property set.
+In addition, the DMus port driver provides a handler for the [**KSPROPERTY\_SYNTH\_MASTERCLOCK**](/previous-versions/ff537403(v=vs.85)) property, which is a get-only property of a DirectMusic filter. KSPROPERTY\_SYNTH\_MASTERCLOCK is a member of the [KSPROPSETID\_SynthClock](./kspropsetid-synthclock.md) property set.
 
 ### <span id="Pin_Properties"></span><span id="pin_properties"></span><span id="PIN_PROPERTIES"></span>Pin Properties
 
@@ -116,21 +115,21 @@ Typically, these automation tables contain few entries because the port driver s
 
 With the exception of the Topology port driver, all the port drivers in Portcls.sys supply built-in handlers for the following pin properties:
 
-[**KSPROPERTY\_CONNECTION\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-connection-state)
+[**KSPROPERTY\_CONNECTION\_STATE**](../stream/ksproperty-connection-state.md)
 
-[**KSPROPERTY\_CONNECTION\_DATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-connection-dataformat)
+[**KSPROPERTY\_CONNECTION\_DATAFORMAT**](../stream/ksproperty-connection-dataformat.md)
 
-[**KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-connection-allocatorframing)
+[**KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING**](../stream/ksproperty-connection-allocatorframing.md)
 
-[**KSPROPERTY\_STREAM\_ALLOCATOR**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-stream-allocator)
+[**KSPROPERTY\_STREAM\_ALLOCATOR**](../stream/ksproperty-stream-allocator.md)
 
-[**KSPROPERTY\_STREAM\_MASTERCLOCK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-stream-masterclock)
+[**KSPROPERTY\_STREAM\_MASTERCLOCK**](../stream/ksproperty-stream-masterclock.md)
 
-[**KSPROPERTY\_AUDIO\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-position)
+[**KSPROPERTY\_AUDIO\_POSITION**](./ksproperty-audio-position.md)
 
-[**KSPROPERTY\_DRMAUDIOSTREAM\_CONTENTID**](https://docs.microsoft.com/previous-versions/ff537351(v=vs.85))
+[**KSPROPERTY\_DRMAUDIOSTREAM\_CONTENTID**](/previous-versions/ff537351(v=vs.85))
 
-Some of the properties in this list require hardware-dependent information from the miniport driver. When the port driver receives an IRP containing a request for one of these properties, it does not pass the IRP to the miniport driver. Instead, the port driver handles the request itself, but its handler obtains the information it needs by calling an entry point in the miniport driver. For example, the port driver supplies its own property handler for KSPROPERTY\_AUDIO\_POSITION requests. This handler simply calls the miniport driver stream's **GetPosition** method (for example, [**IMiniportWavePciStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition)) to get the current position.
+Some of the properties in this list require hardware-dependent information from the miniport driver. When the port driver receives an IRP containing a request for one of these properties, it does not pass the IRP to the miniport driver. Instead, the port driver handles the request itself, but its handler obtains the information it needs by calling an entry point in the miniport driver. For example, the port driver supplies its own property handler for KSPROPERTY\_AUDIO\_POSITION requests. This handler simply calls the miniport driver stream's **GetPosition** method (for example, [**IMiniportWavePciStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition)) to get the current position.
 
 ### <span id="Node_Properties"></span><span id="node_properties"></span><span id="NODE_PROPERTIES"></span>Node Properties
 
@@ -144,7 +143,7 @@ The following are general rules for determining whether a node property should u
 
 -   If a filter contains only one instance of a particular node, a node property request specifies a filter handle. The combination of filter handle and node ID is sufficient to unambiguously identify the node that is the target for the request.
 
-Before implementing a handler for a particular node property, however, the driver writer should refer to [Audio Drivers Property Sets](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-drivers-property-sets) to check whether the target for the property should be specified as a filter handle or pin handle.
+Before implementing a handler for a particular node property, however, the driver writer should refer to [Audio Drivers Property Sets](./audio-drivers-property-sets.md) to check whether the target for the property should be specified as a filter handle or pin handle.
 
 The port drivers in Portcls.sys currently do not provide built-in handling of node properties, with the exception of KSPROPERTY\_TOPOLOGY\_NAME.
 
@@ -164,14 +163,7 @@ Drivers should be prepared to deal with property requests from clients that do n
 
 For historical reasons, a few audio properties have behavioral quirks that violate these general rules. The following are examples:
 
--   As described in [Applying Speaker-Configuration Settings](applying-speaker-configuration-settings.md), a client can change an audio device's speaker configuration by setting the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) property of a 3-D node ([**KSNODETYPE\_3D\_EFFECTS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-3d-effects)). The speaker-configuration setting is global because it changes the speaker configuration for all streams that are part of the mix that the device plays through the speakers. According to the general rule, a node-property request that affects the filter as a whole should specify a filter handle (plus a node ID). However, this particular property requires a pin handle instead of a filter handle. The pin handle designates the pin instance containing the 3-D node that is the target for the request.
+-   As described in [Applying Speaker-Configuration Settings](applying-speaker-configuration-settings.md), a client can change an audio device's speaker configuration by setting the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) property of a 3-D node ([**KSNODETYPE\_3D\_EFFECTS**](./ksnodetype-3d-effects.md)). The speaker-configuration setting is global because it changes the speaker configuration for all streams that are part of the mix that the device plays through the speakers. According to the general rule, a node-property request that affects the filter as a whole should specify a filter handle (plus a node ID). However, this particular property requires a pin handle instead of a filter handle. The pin handle designates the pin instance containing the 3-D node that is the target for the request.
 
--   [**KSPROPERTY\_SYNTH\_VOLUME**](https://docs.microsoft.com/previous-versions/ff537409(v=vs.85)) and [**KSPROPERTY\_SYNTH\_MASTERCLOCK**](https://docs.microsoft.com/previous-versions/ff537403(v=vs.85)) are properties of a synth node ([**KSNODETYPE\_SYNTHESIZER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-synthesizer)). Although both are node properties, requests for these properties do not include node IDs. (Note that the property descriptor for the request is a structure of type [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)), not [**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty).) This behavior violates the general rule that a node property requires a node ID. Despite this discrepancy, a miniport driver that supports either property should supply the property handler through the **Nodes** member of PCFILTER\_DESCRIPTOR (instead of the **Pins** member).
-
- 
-
- 
-
-
-
+-   [**KSPROPERTY\_SYNTH\_VOLUME**](/previous-versions/ff537409(v=vs.85)) and [**KSPROPERTY\_SYNTH\_MASTERCLOCK**](/previous-versions/ff537403(v=vs.85)) are properties of a synth node ([**KSNODETYPE\_SYNTHESIZER**](./ksnodetype-synthesizer.md)). Although both are node properties, requests for these properties do not include node IDs. (Note that the property descriptor for the request is a structure of type [**KSPROPERTY**](../stream/ksproperty-structure.md), not [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty).) This behavior violates the general rule that a node property requires a node ID. Despite this discrepancy, a miniport driver that supports either property should supply the property handler through the **Nodes** member of PCFILTER\_DESCRIPTOR (instead of the **Pins** member).
 

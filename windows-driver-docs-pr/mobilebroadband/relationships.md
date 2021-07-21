@@ -1,14 +1,13 @@
 ---
 title: Relationships
 description: Relationships
-ms.assetid: 78443a49-96c6-45d9-a4f3-8213005f82d5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Relationships
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Relationships element specifies data that is used to track a device metadata package within the device metadata cache.
 

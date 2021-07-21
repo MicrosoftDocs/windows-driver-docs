@@ -1,7 +1,6 @@
 ---
 title: Using Common-Buffer Bus-Master DMA
 description: Using Common-Buffer Bus-Master DMA
-ms.assetid: 55b5d819-e257-4863-b02a-5eeb83f72c65
 keywords: ["continuous DMA WDK kernel", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -19,11 +18,13 @@ Use common-buffer DMA economically. Setting up a common buffer can tie up some (
 
 Setting up common-buffer areas economically, such as by using **PAGE\_SIZE** chunks or a single allocation, leaves more map registers available for packet-based DMA operations. It also leaves more system memory free for other purposes, which produces better overall driver and system performance.
 
-To set up a common buffer for bus-master DMA, a bus-master DMA device driver must call [**AllocateCommonBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_common_buffer) with the adapter object pointer returned by [**IoGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter). Typically, a driver makes this call from its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine for [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) requests. A driver should allocate a common buffer only if it will use the buffer repeatedly for its DMA operations while the driver remains loaded. The following diagram illustrates such a call to **AllocateCommonBuffer**.
+To set up a common buffer for bus-master DMA, a bus-master DMA device driver must call [**AllocateCommonBuffer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_common_buffer) with the adapter object pointer returned by [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter). Typically, a driver makes this call from its [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine for [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) requests. A driver should allocate a common buffer only if it will use the buffer repeatedly for its DMA operations while the driver remains loaded. The following diagram illustrates such a call to **AllocateCommonBuffer**.
 
-![diagram illustrating the allocation of a common buffer for bus-master dma](images/3halcbff.png)
+![diagram illustrating the allocation of a common buffer for bus-master dma.](images/3halcbff.png)
 
-The requested size for the buffer, shown in the previous diagram as LengthForBuffer, determines how many map registers must be used to provide a virtual-to-logical mapping for the common buffer. Use the [**BYTES\_TO\_PAGES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) macro to determine the maximum number of pages needed (**BYTES\_TO\_PAGES** (*LengthForBuffer*)). This value cannot be greater than the *NumberOfMapRegisters* returned by [**IoGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter).
+The requested size for the buffer, shown in the previous diagram as LengthForBuffer, determines how many map registers must be used to provide a virtual-to-logical mapping for the common buffer.
+ Use the [**BYTES_TO_PAGES**](/windows-hardware/drivers/ddi/wdm/nf-wdm-bytes_to_pages) macro to determine the maximum number of pages needed (**BYTES\_TO\_PAGES** (*LengthForBuffer*)).
+  This value cannot be greater than the *NumberOfMapRegisters* returned by [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter).
 
 In addition, the caller must supply the following:
 
@@ -43,12 +44,7 @@ If the call succeeds, **AllocateCommonBuffer** returns a driver-accessible base 
 
 Otherwise, the driver can use the allocated common buffer as a driver- and adapter-accessible storage area for DMA transfers.
 
-When the PnP manager sends an IRP that stops or removes the device, the driver must call [**FreeCommonBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pfree_common_buffer) to release each common buffer it has allocated.
+When the PnP manager sends an IRP that stops or removes the device, the driver must call [**FreeCommonBuffer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pfree_common_buffer) to release each common buffer it has allocated.
 
  
-
- 
-
-
-
 

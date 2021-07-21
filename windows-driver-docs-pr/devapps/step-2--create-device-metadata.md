@@ -1,14 +1,13 @@
 ---
 title: Step 2 Create device metadata for your UWP device app
 description: This topic describes how to use the Device Metadata Authoring Wizard to create new device metadata that associates your UWP device app with a device.
-ms.assetid: 61A3AE1B-2256-4034-AE9F-86E6900D9093
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Step 2: Create device metadata for your UWP device app
 
-![device app workflow, step 2](images/2-device-app-workflow.png)
+![device app workflow, step 2.](images/2-device-app-workflow.png)
 
 This topic describes how to use the **Device Metadata Authoring Wizard** to create new device metadata that associates your UWP device app with a device. The wizard can also create a **StoreManfest.xml** file that you may need to add to your app in the next step.
 

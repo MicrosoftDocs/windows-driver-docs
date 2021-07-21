@@ -1,7 +1,6 @@
 ---
 title: Creating Audio Driver Objects
 description: Creating Audio Driver Objects
-ms.assetid: c5d1b1b6-fc47-4227-bcca-1119488dce3b
 keywords:
 - audio driver objects WDK
 - COM object creation WDK audio
@@ -43,7 +42,7 @@ Specifies the class GUID, which is passed by reference. This parameter is used o
 Specifies the **IUnknown** interface for aggregating the new object. This parameter can be set to **NULL** to indicate that no aggregation is required.
 
 <span id="PoolType"></span><span id="pooltype"></span><span id="POOLTYPE"></span>*PoolType*  
-Specifies the type of memory pool from which the object is to be allocated (see [**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type)).
+Specifies the type of memory pool from which the object is to be allocated (see [**POOL\_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type)).
 
 The first three parameters are identical to the parameters of the COM **CoCreateInstance** function. For an example of a creation function of this type, see the **CreateMiniportMidiFM** function in the Fmsynth sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
@@ -60,12 +59,7 @@ NTSTATUS NewMyObject(
 
 The NewMyObject function creates and initializes an object, and then passes a pointer back to the interface. Because the initialization parameters are class-specific, so is the prototype of a New*Xxx* function. The New*Xxx* function provides convenient access to the constructor for the object.
 
-For an example of a New*Xxx* function of this type, see [**PcNewDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewdmachannel).
+For an example of a New*Xxx* function of this type, see [**PcNewDmaChannel**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewdmachannel).
 
  
-
- 
-
-
-
 

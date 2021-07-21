@@ -1,7 +1,6 @@
 ---
 title: Microsoft-defined Bluetooth HCI commands and events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.assetid: 68E34B92-155B-401E-8D90-5BD1AF036B4D
 ms.date: 02/07/2018
 ms.localizationpriority: medium
 ---
@@ -127,11 +126,14 @@ The controller shall always complete this command promptly with a Command Comple
 |---|---|
 |0x00000000&#160;00000001  |Controller supports the RSSI Monitoring feature for BR/EDR connections. In addition, the controller supports [HCI_VS_MSFT_Read_Absolute_RSSI](#hci_vs_msft_read_absolute_rssi) to read the absolute RSSI metric of a BR/EDR connection. |
 |0x00000000&#160;00000002  |Controller supports the RSSI Monitoring feature for LE connections. |
-|0x00000000&#160;00000004  |Controller supports the RSSI Monitoring of LE advertisements. |
-|0x00000000&#160;00000008|Controller supports Advertising Monitoring of LE advertisements.|
+|0x00000000&#160;00000004  |Controller supports the RSSI Monitoring of LE legacy advertisements. |
+|0x00000000&#160;00000008|Controller supports Advertising Monitoring of LE legacy advertisements.|
 |0x00000000&#160;00000010 |Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for P-192 and P-256. <br/>For more information, see [Bluetooth Core Specification Erratum 10734](https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=447440).|
 |0x00000000 00000020|Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities.|
-|0xFFFFFFFF&#160;FFFFFFF0|Bits reserved for future definition. Must be zero.|
+|0x00000000 00000040|Reserved.|
+|0x00000000 00000080|Reserved.|
+|0x00000000 00000100|Reserved.|
+|0xFFFFFFFF&#160;FFFFFE00|Bits reserved for future definition. Must be zero.|
 
 **Microsoft_event_prefix_length** (1 octet):
 
@@ -159,7 +161,7 @@ The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi comm
 
 #### State_diagram
 
-This state diagram shows the transition states on the controller when monitoring RSSI for a connection.![State diagram of HCI_VS_MSFT_Monitor_Rssi](images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png)
+This state diagram shows the transition states on the controller when monitoring RSSI for a connection.![State diagram of HCI_VS_MSFT_Monitor_Rssi.](images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png)
 The controller shall generate an [HCI_VS_MSFT_Rssi_Event](#hci_vs_msft_rssi_event) when the received RSSI is greater than or equal to the specified _RSSI_threshold_high_. After this event has been generated, the controller shall not generate a new HCI_VS_MSFT_Rssi_Event to specify that the _RSSI_threshold_high_ has been exceeded until it generates an HCI_VS_MSFT_Rssi_Event that specifies the RSSI has fallen below _RSSI_threshold_low_.
 
 The controller shall generate an HCI_VS_MSFT_Rssi_Event when the received RSSI equals or falls below the specified _RSSI_threshold_low_ over the specified _RSSI_threshold_low_time_interval_. After this event has been generated, the controller shall not generate a new HCI_VS_MSFT_Rssi_Event to specify that the RSSI has fallen below the _RSSI_threshold_low_ until an HCI_VS_MSFT_Rssi_Event event is generated to specify that _RSSI_threshold_high_ has been reached or exceeded.
@@ -269,7 +271,7 @@ Status (1 octet):
 |  0x00 |  The command succeeded. |
 | 0x01&#160;-&#160;0xFF  |  The command failed. See _Error Codes_ in the Bluetooth Core specification for details. |
 
-Subcommand_opcod (1 octet):
+Subcommand_opcode (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
@@ -295,16 +297,21 @@ HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitor
 The controller shall generate a Command Complete event in response to this command. The status value should be set to zero if the controller can begin monitoring, or a non-zero status otherwise.
 If the controller does not support RSSI monitoring for LE Advertisements, it shall ignore the _RSSI_threshold_high_, _RSSI_threshold_low_, _RSSI_threshold_low_time_interval_, and _RSSI_sampling_period_ parameter values.
 
-#### State_diagram
+This state diagram shows the transition states on the controller when monitoring RSSI for an advertisement.
 
-This state diagram shows the transition states on the controller when monitoring RSSI for an advertisement. ![State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement](images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.png). The controller shall propagate the first advertisement packet to the host only when the received RSSI is greater than or equal to _RSSI_threshold_high_ for a particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 1 and _Monitor_handle_ set to the handle for this _Condition_, to notify the host that the controller is monitoring this particular device for _Condition_.
+![State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement.](images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.png)
+
+The controller shall propagate the first advertisement packet to the host only when the received RSSI is greater than or equal to _RSSI_threshold_high_ for a particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 1 and _Monitor_handle_ set to the handle for this _Condition_, to notify the host that the controller is monitoring this particular device for _Condition_.
 The controller shall stop monitoring for _Condition_ if the RSSI of the received advertisements equals or falls below  _RSSI_threshold_low_ over _RSSI_threshold_low_interval_ for the particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0 to notify the host that the controller has stopped monitoring the particular device for the _Condition_. After the controller specifies the HCI_VS_MSFT_LE_Monitor_Device_Event with _Monitor_state_ set to 0, the controller shall not allow further advertisement packets to flow to the host for the device until the controller has notified the host that the RSSI for the particular device has risen to or above _RSSI_threshold_high_ for the particular device for the _Condition_.
 Additionally, the controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0 to notify the host that the controller has stopped monitoring the device for the _Condition_ if the specified _RSSI_threshold_low_time_interval_ expires without receiving any advertising packets from the device. If the controller is monitoring a device for a particular condition, the following statements are true.
 
-- If RSSI_sampling_period_ is set to 0xFF, the controller shall not allow further advertisement packets to flow to the host for the device for the _Condition_ until the controller has notified the host that the particular device’s RSSI has fallen below _RSSI_threshold_low_ for _RSSI_threshold_low_time_interval_ for the particular device for this _Condition_. This notification is done by generating an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0.
-- If the _RSSI_sampling_period_ is set to 0x0, the controller shall propagate all received advertisement packets to the host for the device for this _Condition_ unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable](#hci_vs_msft_le_set_advertisement_filter_enable) command with _Enable_ set to 0x00. The controller shall propagate an advertisement packet to the host even if the received RSSI is less than or equal to _RSSI_threshold_low_ as long as _RSSI_threshold_low_time_interval_ has not expired for the particular device for this _Condition_. The RSSI value of this advertisement packet shall be the RSSI value of the received advertisement.
+If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall propagate anonymous advertisement packets to the host if the RSSI value for the packet is greater than or equal to _RSSI_threshold_high_. Anonymous advertisements shall not be tracked and the [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) event shall not be generated.
 
-If _RSSI_sampling_period_ is between 0x01 and 0xFE, the controller shall propagate advertisement packets to the host every _RSSI_sampling_period_ specified unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable](#hci_vs_msft_le_set_advertisement_filter_enable) command with _Enable_ set to 0x00. The RSSI value specified for the advertisement shall be the average of the RSSI value received during this sampling interval. If the controller does not receive an advertisement packet during the sampling period, it shall not propagate an advertisement to the host. It is possible that _RSSI_sampling_period_ is less than _RSSI_threshold_low_time_interval_ and all advertisements received during the _RSSI_sampling_period_ have RSSI below _RSSI_threshold_low_. The controller shall still propagate the advertisement with the average of the RSSI value received during this sampling interval.
+| _RSSI_sampling_period_ | Legacy Advertisements | Extended Advertisements (Non-Anonymous) | Extended Advertisements (Anonymous)|
+|---|---|---|---|
+|0xFF|The controller shall not allow further advertisement packets to flow to the host for the device for the _Condition_ until the controller has notified the host that the particular device’s RSSI has fallen below _RSSI_threshold_low_ for _RSSI_threshold_low_time_interval_ for the particular device for this _Condition_. This notification is done by generating an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0.|If the controller supports the RSSI monitoring of LE extended advertisements without sampling, same behavior as _Legacy Advertisements_ column.|  If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |
+|0x00|The controller shall propagate all received advertisement packets to the host for the device for this _Condition_ unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable](#hci_vs_msft_le_set_advertisement_filter_enable) command with _Enable_ set to 0x00. The controller shall propagate an advertisement packet to the host even if the received RSSI is less than or equal to _RSSI_threshold_low_ as long as _RSSI_threshold_low_time_interval_ has not expired for the particular device for this _Condition_. The RSSI value of this advertisement packet shall be the RSSI value of the received advertisement. | If the controller supports the RSSI monitoring of LE extended advertisements without sampling, same behavior as _Legacy Advertisements_ column except that an advertisement packet is defined as all PDUs in the advertising chain. | If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall propagate all received advertisement packets to the host for the device for this _Condition_ unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable](#hci_vs_msft_le_set_advertisement_filter_enable) command with _Enable_ set to 0x00. |
+|0x01 - 0xFE| The controller shall propagate legacy advertisement packets to the host every _RSSI_sampling_period_ specified unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable](#hci_vs_msft_le_set_advertisement_filter_enable) command with _Enable_ set to 0x00. The RSSI value specified for the advertisement shall be the average of the RSSI value received during this sampling interval. If the controller does not receive an advertisement packet during the sampling period, it shall not propagate an advertisement to the host. It is possible that _RSSI_sampling_period_ is less than _RSSI_threshold_low_time_interval_ and all advertisements received during the _RSSI_sampling_period_ have RSSI below _RSSI_threshold_low_. The controller shall still propagate the advertisement with the average of the RSSI value received during this sampling interval. | If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |  If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |
 
 If the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable](#hci_vs_msft_le_set_advertisement_filter_enable) command with _Enable_ set to 0x00, the sampling period timer shall not be stopped. See Example: HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable on filters with sampling period for more information.
 If the controller receives non-duplicate advertisement packets from the same device, it shall match each advertisement packet against the Conditions stored on the controller.
@@ -318,7 +325,9 @@ If the controller has notified the host about a particular device (_A_) and it i
 #### Condition_type_and_Condition_parameters
 
 The _Condition_type_ parameter specifies whether the _Condition_ parameter specifies a pattern, UUID, IRK, or BD_ADDR.
-If the _Condition_type_ parameter specifies a pattern, the _Condition_ contains 2 sections which contain the number of patterns present within the _Condition_, and the pattern data.![Pattern condition data layout](images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png)
+
+If the _Condition_type_ parameter specifies a pattern, the _Condition_ contains 2 sections which contain the number of patterns present within the _Condition_, and the pattern data.![Pattern condition data layout.](images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png)
+
 _Number of Patterns_ specifies the number of patterns that need to be matched.
 
 _Pattern Data_ has the following format.
@@ -330,7 +339,15 @@ _Pattern Data_ has the following format.
 
 If there are multiple patterns specified, the controller shall ensure that at least one pattern matches the received advertisement.
 
+If the controller supports the RSSI monitoring of LE extended advertisements without sampling:
+- The controller shall only look for the pattern in the first extended advertisement PDU. If the ad section extends beyond the first PDU, the controller shall look for the pattern within the part of the ad section that is in the first PDU.
+- The controller shall track based on a per device address per advertising set basis. The controller shall propagate a [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) for each advertising set that matches the pattern even if the advertisement comes from the same device address.
+
 If the _Condition_type_ parameter specifies a UUID, the _Condition_ parameter contains a UUID Type and a UUID. The UUID Type specifies whether the UUID is 16-bit, 32-bit, or 128-bit. The controller shall parse the Service UUID of the advertisement packet to check for the specified UUID. If UUID Type is defined as 0x01, the controller shall parse the Incomplete List of 16-bit service UUIDs and complete list of 16-bit service UUIDs specified in the Service UUID AD Type. If the UUID Type is defined as 0x02, the controller shall parse the Incomplete List of 32-bit service UUIDs and complete list of 32-bit UUIDs specified in the Service UUID AD Type. If the UUID Type specified is 0x03, the controller shall parse the Incomplete List of 128-bit Service UUIDs and complete list of 128-bit Service UUIDs specified in the Service UUID AD Type.
+
+If the controller supports the RSSI monitoring of LE extended advertisements without sampling:
+- The controller shall only look for the Service UUID in the first extended advertisement PDU. If the ad section extends beyond the first PDU, the controller shall look for the Service UUID within the part of the ad section that is in the first PDU.
+- The controller shall track based on a per device address per advertising set basis. The controller shall propagate a [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) for each advertising set that matches the Service UUID even if the advertisement comes from the same device.
 
 If the _Condition_type_ parameter specifies an IRK, the _Condition_ parameter contains the IRK.
 
@@ -373,9 +390,9 @@ RSSI_sampling_period (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-|0x00|Reserved value.|
+|0x00|The controller shall propagate all received advertisements to the host.|
 |_N_&#160;=&#160;0x01&#160;-&#160;0xFE|Time period = _N_ * 100 milliseconds. The sampling interval in milliseconds.|
-|0xFF|The controller should not propagate any of the received advertisements to the host.|
+|0xFF|The controller shall not propagate any of the received advertisements to the host.|
 
 Condition_type (1 octet):
 
@@ -516,7 +533,7 @@ HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable sets the state of the advertiseme
 |---|---|---|---|
 |HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable|Chosen base code |<ul><li>Subcommand_opcode</li><li>Enable</li>|<ul><li>Status</li><li>Subcommand_opcode</ul>|
 
-If _Enable_ is set to 0x00, the controller shall propagate received advertisements to the host based on existing white list settings. The controller shall continue monitoring the devices that are currently being monitored and generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0 if the device is no longer being monitored. The controller shall generate an HCI_VS_MSFT_LE_Monitor_Device_Event with _Monitor_state_ set to 1 if a new device is being monitored. The host may issue HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable with _Enable_ set to 0x01 to reenable all the filter conditions.
+If _Enable_ is set to 0x00, the controller shall propagate received advertisements to the host based on existing allow list settings. The controller shall continue monitoring the devices that are currently being monitored and generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0 if the device is no longer being monitored. The controller shall generate an HCI_VS_MSFT_LE_Monitor_Device_Event with _Monitor_state_ set to 1 if a new device is being monitored. The host may issue HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable with _Enable_ set to 0x01 to reenable all the filter conditions.
 
 If _Enable_ is set to 0x01, this command enables all filters that were set with a previously-issued [HCI_VS_MSFT_LE_Monitor_Advertisement](#hci_vs_msft_le_monitor_advertisement) command. The controller shall reject an HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable command if it does not toggle the filter state:
 
@@ -538,7 +555,7 @@ Enable (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-|0x00| Revert to current white list behavior, but continue monitoring devices based on the _Condition_s from  [HCI_VS_MSFT_LE_Monitor_Advertisement](#hci_vs_msft_le_monitor_advertisement) commands.|
+|0x00| Revert to current allow list behavior, but continue monitoring devices based on the _Condition_s from  [HCI_VS_MSFT_LE_Monitor_Advertisement](#hci_vs_msft_le_monitor_advertisement) commands.|
 |0x01|Enable all issued HCI_VS_MSFT_LE_Monitor_Advertisement commands on the controller.|
 
 #### Return_parameter

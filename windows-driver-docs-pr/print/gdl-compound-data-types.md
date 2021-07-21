@@ -1,7 +1,6 @@
 ---
 title: GDL Compound Data Types
 description: GDL Compound Data Types
-ms.assetid: c0e623f2-cb98-4fed-82ad-cc38ea4b0aa0
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , compound

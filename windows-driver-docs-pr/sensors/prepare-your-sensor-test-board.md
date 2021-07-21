@@ -1,7 +1,6 @@
 ---
 title: Prepare your sensor test board
 description: This topic shows you how to prepare your sensor test board for connection to the Sharks Cove board.
-ms.assetid: 121A6B05-9D5D-447C-B7C6-B2B86C24114B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -49,8 +48,6 @@ Here’s a table from the *Sharks Cove Technical Specifications Rev. 1.0*, showi
 | 20         | Not connected          | None                                                                                                |
 
  
-
-For more detailed technical information about the Sharks Cove board, see [Sharks Cove Schematic](https://firmware.intel.com/sites/default/files/Sharks_Cove_Schematic.pdf).
 
 And if, for example, you had chosen to build a universal sensor driver for the ADXL345 accelerometer, then the following diagram from page 5 of the ADXL345 Digital Accelerometer data sheet (along with Table 4 on the same page) shows you the pins available for connecting the accelerometer board to Sharks Cove.
 

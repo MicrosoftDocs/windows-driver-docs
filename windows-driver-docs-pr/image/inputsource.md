@@ -1,7 +1,6 @@
 ---
 title: InputSource element
 description: The optional InputSource element specifies the source of the original document on the scanning device.
-ms.assetid: a49ed5d8-6d49-4997-9704-de1cd6c7d0c7
 keywords: ["InputSource element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **InputSource** element specifies the source of the original document on the scanning device.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:InputSource wscn:MustHonor=""                  wscn:Override=""                  wscn:UsedDefault=""
@@ -30,8 +28,7 @@ Usage
 </wscn:InputSource wscn:MustHonor=""                  wscn:Override=""                  wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -73,8 +70,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -138,8 +134,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client can specify the optional **MustHonor** attribute only when the **InputSource** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 

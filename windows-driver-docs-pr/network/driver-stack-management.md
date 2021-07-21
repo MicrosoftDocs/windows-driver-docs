@@ -1,7 +1,6 @@
 ---
 title: Driver Stack Management
 description: Driver Stack Management
-ms.assetid: 61d17e92-a1bf-42d9-b241-400b43b0ec0a
 keywords:
 - driver stacks WDK networking , managing
 - miniport adapters WDK networking , driver stacks
@@ -40,7 +39,7 @@ The following topics provide more information about the driver stack, driver sta
 -   [Adapter States of a Miniport Driver](adapter-states-of-a-miniport-driver.md)
 -   [Binding States of a Protocol Driver](binding-states-of-a-protocol-driver.md)
 -   [Module States of a Filter Driver](module-states-of-a-filter-driver.md)
--   [NDIS Stack Operations](ndis-stack-operations.md)
+-   [NDIS Stack Operations](starting-a-driver-stack.md)
 
 ## Related topics
 

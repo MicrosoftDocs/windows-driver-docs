@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_MUTE\_TX
 description: The KSPROPERTY\_TELEPHONY\_MUTE\_TX property is used to control whether to mute the data being transmitted from the local microphone to the remote end.
-ms.assetid: FB59AFB8-A11D-4E8D-9C39-131F1D807D4A
 keywords: ["KSPROPERTY_TELEPHONY_MUTE_TX Audio Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The **KSPROPERTY\_TELEPHONY\_MUTE\_TX** property is used to control whether to m
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -58,8 +57,7 @@ The property value is of type BOOL and specifies whether the data transmitted fr
 
 A **KSPROPERTY\_TELEPHONY\_MUTE\_TX** property request returns **TRUE** if the phone call is muted; it returns **FALSE** if the phone call is unmuted.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,12 +83,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x58 FTDISK_INTERNAL_ERROR
 description: The FTDISK_INTERNAL_ERROR bug check has a value of 0x00000058. This is issued if the system is booted from the wrong copy of a mirrored partition.
-ms.assetid: c8de6a04-740d-415e-bf23-b28da066a225
 keywords: ["Bug Check 0x58 FTDISK_INTERNAL_ERROR", "FTDISK_INTERNAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,15 +26,13 @@ The FTDISK\_INTERNAL\_ERROR bug check has a value of 0x00000058. This is issued 
 
 None
 
-Cause
------
+## Cause
 
 The hives are indicating that the mirror is valid, but it is not. The hives should actually be pointing to the shadow partition.
 
 This is almost always caused by the primary partition being revived.
 
-Resolution
-----------
+## Resolution
 
 Reboot the system from the shadow partition.
 

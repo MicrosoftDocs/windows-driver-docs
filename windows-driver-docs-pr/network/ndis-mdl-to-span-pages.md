@@ -1,7 +1,6 @@
 ---
 title: NDIS_MDL_TO_SPAN_PAGES macro
 description: The NDIS_MDL_TO_SPAN_PAGES macro retrieves the number of physical pages of memory that are being used to back a given MDL.
-ms.assetid: 8c9df989-4a5f-4ec1-9544-29b59517a502
 ms.date: 07/18/2017
 keywords:
 - NDIS_MDL_TO_SPAN_PAGES macro Network Drivers Starting with Windows Vista
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 The **NDIS\_MDL\_TO\_SPAN\_PAGES** macro retrieves the number of physical pages of memory that are being used to back a given MDL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 int NDIS_MDL_TO_SPAN_PAGES(
@@ -22,24 +20,20 @@ int NDIS_MDL_TO_SPAN_PAGES(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_Mdl*   
 A pointer to an MDL.
 
-Return value
-------------
+## Return value
 
 **NDIS\_MDL\_TO\_SPAN\_PAGES** returns the number of pages that are backing the virtual range for the MDL.
 
-Remarks
--------
+## Remarks
 
-The **NDIS\_MDL\_TO\_SPAN\_PAGES** macro provides an MDL-based version of the [**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff556922(v=vs.85)) function.
+The **NDIS\_MDL\_TO\_SPAN\_PAGES** macro provides an MDL-based version of the [**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](/previous-versions/windows/hardware/network/ff556922(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -69,12 +63,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff556922(v=vs.85))
+[**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](/previous-versions/windows/hardware/network/ff556922(v=vs.85))
 
  
-
- 
-
-
-
 

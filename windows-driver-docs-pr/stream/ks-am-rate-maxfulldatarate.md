@@ -1,7 +1,6 @@
 ---
 title: KS\_AM\_RATE\_MaxFullDataRate
 description: The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate, multiplied by 10000 (decimal).
-ms.assetid: 2a331ecd-0b40-4dd9-90f0-7585cd36c41e
 keywords: ["KS_AM_RATE_MaxFullDataRate Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>KS_AM_MaxFullDataRate</p></td>
 </tr>
 </tbody>
@@ -57,8 +56,7 @@ The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate
 
 The property value (operation data) is a KS\_AM\_MaxFullDataRate (which is a type-defined LONG).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -72,12 +70,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

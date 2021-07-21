@@ -1,7 +1,6 @@
 ---
 title: Controlling Exceptions and Events
 description: Controlling Exceptions and Events
-ms.assetid: cc8067f3-07de-4ee2-b028-94f9ac088891
 keywords: ["exceptions", "exceptions, overview", "exceptions, handling", "events", "events, overview", "events, handling"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -59,7 +58,7 @@ You can control the break status and handling status by doing one of the followi
 
 -   (CDB, NTSD, and KD) Use the **sxe** or **sxd** keyword in the [Tools.ini](configuring-tools-ini.md) file.
 
--   (WinDbg only) Click [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
+-   (WinDbg only) Select [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
 
 The **SX\\*** command, the **-x\\*** command-line option, and the **sx\\*** Tools.ini keyword typically set the break status of the specified event. You can add the **-h** option to cause the handling status to be set instead.
 
@@ -127,7 +126,7 @@ or
 
 If an exception is not anticipated by an **SX**\* setting, the target application breaks into the debugger on the second chance. The default status for events is listed in the following "Event Definitions and Defaults" section of this topic.
 
-To set break status by using the WinDbg graphical interface, [Event Filters](debug---event-filters.md) on the **Debug** menu, click the event that you want from the list in the **Event Filters** dialog box, and then select **Enabled**, **Disabled**, **Output**, or **Ignore**.
+To set break status by using the WinDbg graphical interface, [Event Filters](debug---event-filters.md) on the **Debug** menu select the event that you want from the list in the **Event Filters** dialog box, and then select **Enabled**, **Disabled**, **Output**, or **Ignore**.
 
 ### <span id="controlling_handling_status"></span><span id="CONTROLLING_HANDLING_STATUS"></span>Controlling Handling Status
 
@@ -170,7 +169,7 @@ When you use the **SX**\* command on **cc**, **hc**, **bpec**, and **ssec** even
 
  
 
-To set handling status by using the WinDbg graphical interface, click [Event Filters](debug---event-filters.md) on the **Debug** menu, click the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
+To set handling status by using the WinDbg graphical interface, select [Event Filters](debug---event-filters.md) on the **Debug** menu, select the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
 
 ### <span id="automatic_commands"></span><span id="AUTOMATIC_COMMANDS"></span>Automatic Commands
 

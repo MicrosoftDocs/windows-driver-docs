@@ -1,13 +1,11 @@
 ---
 title: Printer Driver Isolation
 description: Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
-ms.assetid: b0f11b3f-92f7-41f6-8edb-63b5651f5499
-ms.date: 04/20/2017
+ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---
 
 # Printer Driver Isolation
-
 
 Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
 
@@ -15,107 +13,57 @@ Support for printer driver isolation is implemented in Windows 7, Windows Server
 
 For Windows 7 and Windows Server 2008 R2, an inbox printer driver must support printer driver isolation and be able to run in an isolated process.
 
-### <a href="" id="previous-versions-of-windows"></a> Previous Versions of Windows
+## Previous versions of Windows
 
 In previous versions of Windows, including Windows Server 2008, printer drivers always ran in the same process as the spooler. Printer driver components that ran in the spooler process included the following:
 
--   Print driver configuration modules
+- Print driver configuration modules
 
--   Print processors
+- Print processors
 
--   Rendering modules
+- Rendering modules
 
 The failure of a single print driver component could cause the print subsystem to fail, halting print operations for all users and for all print components.
 
-### <a href="" id="new-versions-of-windows"></a> New Versions of Windows
+## New versions of Windows
 
 With Windows 7 and Windows Server 2008 R2, an administrator can, as an option, configure a printer driver to run in an isolated process--a process that is separate from the spooler process. By isolating the driver, the administrator can prevent a fault in a driver component from halting the print service.
 
-For more information about the spooler functions, see [Spooler Component Functions and Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index).
+For more information about the spooler functions, see [Spooler Component Functions and Structures](/windows-hardware/drivers/ddi/_print/index).
 
-### <a href="" id="driver-isolation-support-in-inf-files"></a> Driver Isolation Support in INF Files
+## Driver isolation support in INF files
 
 By default, if the INF file that installs a printer driver does not indicate that the driver supports driver isolation, the printer class installer configures the driver to run in the spooler process. However, if the INF file indicates that the driver supports driver isolation, the installer configures the driver to run in an isolated process. An administrator can override these configuration settings and specify, for each driver, whether to run the driver in the spooler process or in an isolated process.
 
 To support driver isolation, the INF file that installs a printer driver can use the **DriverIsolation** keyword to indicate whether the driver supports printer driver isolation. Setting **DriverIsolation**=2 indicates that the driver supports driver isolation. Setting **DriverIsolation**=0 indicates that the driver does not support driver isolation. Omitting the **DriverIsolation** keyword from the INF file has the same effect as setting **DriverIsolation**=0.
 
-### <a href="" id="spooler-functions-for-driver-isolation-settings"></a> Spooler Functions for Driver Isolation Settings
+## Spooler functions for driver isolation settings
 
 The following table shows the spooler functions that an administrator can use to configure the driver-isolation settings.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Function name</th>
-<th>Operation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=135631" data-raw-source="[GetPrinterDataEx](https://go.microsoft.com/fwlink/p/?linkid=135631)">GetPrinterDataEx</a></p></td>
-<td><p>Get the driver-isolation settings for a printer.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=135632" data-raw-source="[SetPrinterDataEx](https://go.microsoft.com/fwlink/p/?linkid=135632)">SetPrinterDataEx</a></p></td>
-<td><p>Set the driver-isolation settings for a printer.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=135633" data-raw-source="[EnumPrinterDataEx](https://go.microsoft.com/fwlink/p/?linkid=135633)">EnumPrinterDataEx</a></p></td>
-<td><p>Enumerate driver-isolation settings for a printer.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=135634" data-raw-source="[FindFirstPrinterChangeNotification](https://go.microsoft.com/fwlink/p/?linkid=135634)">FindFirstPrinterChangeNotification</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=135635" data-raw-source="[FindNextPrinterChangeNotification](https://go.microsoft.com/fwlink/p/?linkid=135635)">FindNextPrinterChangeNotification</a></p></td>
-<td><p>Request notifications of changes to the driver-isolation settings for a printer.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Function name | Operation |
+|--|--|
+| [GetPrinterDataEx](/windows/win32/printdocs/getprinterdataex) | Get the driver-isolation settings for a printer. |
+| [SetPrinterDataEx](/windows/win32/printdocs/setprinterdataex) | Set the driver-isolation settings for a printer. |
+| [EnumPrinterDataEx](/windows/win32/printdocs/enumprinterdataex) | Enumerate driver-isolation settings for a printer. |
+| [FindFirstPrinterChangeNotification](/windows/win32/printdocs/findfirstprinterchangenotification)<br><br>[FindNextPrinterChangeNotification](/windows/win32/printdocs/findnextprinterchangenotification) | Request notifications of changes to the driver-isolation settings for a printer. |
 
 The format for the data is as follows:
 
--   Driver in each group is separated by '\\'
--   Each driver group is separated by '\\\\'
+- Driver in each group is separated by '\\'
+- Each driver group is separated by '\\\\'
 
 The first group loads the driver into the spooler processes. Each subsequent group loads the drivers in isolated processes per group. The second group is considered the 'shared' group in which other isolation-capable drivers are loaded by default.
 
-### <a href="" id="configuring-driver-isolation-mode-through-administration"></a> Configuring Driver Isolation Mode through Administration
+## Configuring driver isolation mode through administration
 
 A computer administrator can use the Windows Print Management console or call the Windows spooler functions to configure the driver-isolation settings for each printer driver installed on a computer. The administrator configures the driver to use one of the settings listed in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Driver-isolation mode</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Shared</p></td>
-<td><p>Run the driver in a process that is shared with other printer drivers but is separate from the spooler process.</p></td>
-</tr>
-<tr class="even">
-<td><p>Isolated</p></td>
-<td><p>Run the driver in a process that is separate from the spooler process and is not shared with other printer drivers.</p></td>
-</tr>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>Run the driver in the spooler process.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Driver-isolation mode | Meaning |
+|--|--|
+| Shared | Run the driver in a process that is shared with other printer drivers but is separate from the spooler process. |
+| Isolated | Run the driver in a process that is separate from the spooler process and is not shared with other printer drivers. |
+| None | Run the driver in the spooler process. |
 
 Ideally, a printer driver is able to run in shared mode. That is, it runs in an isolated process shared with other printer drivers but separate from the spooler process. A driver might need to run in isolated mode if it can run in a process separate from the spooler process, but has difficulty sharing the process with other drivers. For example, a poorly designed driver might have file names that conflict with those of related drivers or of different versions of the same driver, or the driver might fault frequently or have a memory leak that interferes with the operation of other drivers that run in the same process.
 
@@ -125,116 +73,108 @@ If driver isolation is disabled by group policy, the isolation is off for all pr
 
 The following chart shows a decision map for choosing the driver isolation mode:
 
-![flowchart for choosing the driver isolation mode](images/isolation.png)
+![flowchart for choosing the driver isolation mode.](images/isolation.png)
 
-### Spooler Functions Allowed under Driver Isolation
+## Spooler functions allowed under driver isolation
 
 Only specific functions are allowed under driver isolation.
 
-### <a href="" id="spoolss-dll-functions"></a>Spoolss.dll Functions
+## Spoolss.dll functions
 
 The following functions are exported by spoolss.dll and are available to spooler plugins by linking to spoolss.lib.
 
-**AddMonitorW**
+- **AddMonitorW**
 
-**AppendPrinterNotifyInfoData**
+- **AppendPrinterNotifyInfoData**
 
-**ClosePrinter**
+- **ClosePrinter**
 
-**DeletePortW**
+- **DeletePortW**
 
-**DeletePrintProcessorW**
+- **DeletePrintProcessorW**
 
-**EndDocPrinter**
+- **EndDocPrinter**
 
-**EndPagePrinter**
+- **EndPagePrinter**
 
-**EnumFormsW**
+- **EnumFormsW**
 
-**EnumJobsW**
+- **EnumJobsW**
 
-**FlushPrinter**
+- **FlushPrinter**
 
-**GetJobAttributes**
+- **GetJobAttributes**
 
-**GetJobAttributesEx**
+- **GetJobAttributesEx**
 
-**GetJobW**
+- **GetJobW**
 
-**GetPrinterDataExW**
+- **GetPrinterDataExW**
 
-**GetPrinterDataW**
+- **GetPrinterDataW**
 
-**GetPrinterDriverDirectoryW**
+- **GetPrinterDriverDirectoryW**
 
-**GetPrinterDriverW**
+- **GetPrinterDriverW**
 
-**GetPrinterW**
+- **GetPrinterW**
 
-**ImpersonatePrinterClient**
+- **ImpersonatePrinterClient**
 
-**OpenPrinterW**
+- **OpenPrinterW**
 
-**ReadPrinter**
+- **ReadPrinter**
 
-**RouterCreatePrintAsyncNotificationChannel**
+- **RouterCreatePrintAsyncNotificationChannel**
 
-**RouterGetPrintClassObject**
+- **RouterGetPrintClassObject**
 
-**SetJobW**
+- **SetJobW**
 
-**SetPrinterDataExW**
+- **SetPrinterDataExW**
 
-**SetPrinterDataW**
+- **SetPrinterDataW**
 
-**StartDocPrinterW**
+- **StartDocPrinterW**
 
-**StartPagePrinter**
+- **StartPagePrinter**
 
-**WritePrinter**
+- **WritePrinter**
 
-### <a href="" id="winspool-drv-functions"></a>WinSpool.drv Functions
+## WinSpool.drv Functions
 
 The following functions are exported by winspool.drv and are available to spooler plugins by linking to Winspool.h.
 
-**AppendPrinterNotifyInfoData**
+- **AppendPrinterNotifyInfoData**
 
-**ExtDeviceMode**
+- **ExtDeviceMode**
 
-**ImpersonatePrinterClient**
+- **ImpersonatePrinterClient**
 
-**IsValidDevmode**
+- **IsValidDevmode**
 
-**PartialReplyPrinterChangeNotification**
+- **PartialReplyPrinterChangeNotification**
 
-**ReplyPrinterChangeNotification**
+- **ReplyPrinterChangeNotification**
 
-**RevertToPrinterSelf**
+- **RevertToPrinterSelf**
 
-**RouterAllocBidiMem**
+- **RouterAllocBidiMem**
 
-**RouterAllocBidiResponseContainer**
+- **RouterAllocBidiResponseContainer**
 
-**RouterAllocPrinterNotifyInfo**
+- **RouterAllocPrinterNotifyInfo**
 
-**RouterCreatePrintAsyncNotificationChannel**
+- **RouterCreatePrintAsyncNotificationChannel**
 
-**RouterFreeBidiMem**
+- **RouterFreeBidiMem**
 
-**RouterFreeBidiResponseContainer**
+- **RouterFreeBidiResponseContainer**
 
-**RouterFreePrinterNotifyInfo**
+- **RouterFreePrinterNotifyInfo**
 
-**RouterGetPrintClassObject**
+- **RouterGetPrintClassObject**
 
-**RouterRegisterForPrintAsyncNotifications**
+- **RouterRegisterForPrintAsyncNotifications**
 
-**RouterUnregisterForPrintAsyncNotifications**
-
- 
-
- 
-
-
-
-
+- **RouterUnregisterForPrintAsyncNotifications**

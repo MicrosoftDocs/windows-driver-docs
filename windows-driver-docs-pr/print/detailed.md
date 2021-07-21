@@ -1,7 +1,6 @@
 ---
 title: Detailed
 description: Detailed
-ms.assetid: a96cbb55-2a39-4606-94aa-93a59c80c2d5
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

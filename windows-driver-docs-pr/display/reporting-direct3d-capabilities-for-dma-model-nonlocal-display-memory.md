@@ -1,7 +1,6 @@
 ---
 title: Reporting Direct3D Capabilities for Nonlocal Display Memory
 description: A DMA model driver must export the Direct3D capabilities for nonlocal display memory surfaces.
-ms.assetid: aa1b08c0-b212-48b6-a450-78d36951db80
 keywords:
 - DMA-style AGP WDK DirectDraw
 - display memory WDK DirectDraw , DMA-style AGP

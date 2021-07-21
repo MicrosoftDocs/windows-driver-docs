@@ -1,7 +1,6 @@
 ---
 title: NDIS-Supported WMI Operations
 description: NDIS-Supported WMI Operations
-ms.assetid: 78dfe8a6-25aa-40d4-bc32-19bd1d4a41b1
 keywords:
 - Windows Management Instrumentation WDK networking , NDIS operations
 - WMI WDK networking , NDIS operations
@@ -24,7 +23,7 @@ NDIS supports the following WMI operations:
 
 -   Enumerate adapter and enumerate virtual connection (VC).
 
-    NDIS registers global GUIDs ( [GUID\_NDIS\_ENUMERATE\_ADAPTER\_EX](https://docs.microsoft.com/windows-hardware/drivers/network/guid-ndis-enumerate-adapters-ex) and GUID\_NDIS\_ENUMERATE\_VC) with WMI that enable WMI clients to enumerate all miniport adapters (that is, miniport driver instances) and all named VCs. Because NDIS track all of the loaded miniport drivers and all of the named VCs, NDIS does not query miniport drivers for such information.
+    NDIS registers global GUIDs ( [GUID\_NDIS\_ENUMERATE\_ADAPTER\_EX](./guid-ndis-enumerate-adapters-ex.md) and GUID\_NDIS\_ENUMERATE\_VC) with WMI that enable WMI clients to enumerate all miniport adapters (that is, miniport driver instances) and all named VCs. Because NDIS track all of the loaded miniport drivers and all of the named VCs, NDIS does not query miniport drivers for such information.
 
 -   QUERY SINGLE INSTANCE and SET SINGLE INSTANCE
 
@@ -32,7 +31,7 @@ NDIS supports the following WMI operations:
 
 -   QUERY ALL DATA
 
-    NDIS satisfies a QUERY ALL DATA request on a particular GUID by obtaining the appropriate data and returning the combined data for all of the instances of the GUID to WMI. For example, in response to a QUERY ALL DATA request on [GUID\_NDIS\_ENUMERATE\_ADAPTER\_EX](https://docs.microsoft.com/windows-hardware/drivers/network/guid-ndis-enumerate-adapters-ex), NDIS returns a list of all of the loaded miniport drivers to WMI. For a QUERY ALL DATA on the GUID that maps to OID\_GEN\_CO\_XMIT\_PDUS\_OK, NDIS queries that OID for each VC on each connection-oriented miniport driver and returns the combined data to WMI. Because the overhead for a QUERY ALL DATA request might be very high, WMI clients should use a QUERY ALL DATA request only to enumerate adapters and VCs. After determining the adapter or VC interest, the client can then query individual GUID instances.
+    NDIS satisfies a QUERY ALL DATA request on a particular GUID by obtaining the appropriate data and returning the combined data for all of the instances of the GUID to WMI. For example, in response to a QUERY ALL DATA request on [GUID\_NDIS\_ENUMERATE\_ADAPTER\_EX](./guid-ndis-enumerate-adapters-ex.md), NDIS returns a list of all of the loaded miniport drivers to WMI. For a QUERY ALL DATA on the GUID that maps to OID\_GEN\_CO\_XMIT\_PDUS\_OK, NDIS queries that OID for each VC on each connection-oriented miniport driver and returns the combined data to WMI. Because the overhead for a QUERY ALL DATA request might be very high, WMI clients should use a QUERY ALL DATA request only to enumerate adapters and VCs. After determining the adapter or VC interest, the client can then query individual GUID instances.
 
 -   EVENT NOTIFICATION
 
@@ -43,10 +42,4 @@ NDIS supports the following WMI operations:
     Through NDIS, a WMI client can run a method that is associated with a data block, which corresponds to a single OID. WMI clients provide the information that NDIS requires to run the method. Method requests can be associated with miniport adapters, NDIS ports, or VCs. NDIS returns the resulting information after the method is successfully run.
 
  
-
- 
-
-
-
-
 

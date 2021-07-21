@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Time Travel Debugging - Working with Trace Files
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
 
 This section describes how to work with files created and consumed by time travel debugging.
 
@@ -26,7 +26,7 @@ Time Travel Debugging uses the following files to debug code execution.
 
 Trace .RUN files can be opened after they are recorded using **File** > **Start debugging** > **Open trace file**.
 
-![File open options showing open trace option highlighted](images/ttd-start-debugging-options.png) 
+![File open options showing open trace option highlighted.](images/ttd-start-debugging-options.png) 
 
 All of the trace output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
 
@@ -37,7 +37,7 @@ You can change the location of the trace files when you start to record. For mor
 
 The most recently used list of files allows you to quickly access previously used target configuration files. Any recently used trace files or dump files are listed as well.
 
-![File open list of .run trace files showing five recently used trace files](images/ttd-recent-trace-files.png) 
+![File open list of .run trace files showing five recently used trace files.](images/ttd-recent-trace-files.png) 
 
 ## Index .IDX files  
 
@@ -132,7 +132,7 @@ Both the TTD trace and index files are written to disk. Currently there is not a
 
 Running out of disk space during recording results in a trace file with an incomplete record of the code execution. The incomplete trace file can be opened in WinDbg Preview but it may not include the actual problem if the error occurs after running out of disk space when writing the trace file.
 
-Workaround: Open File Explorer and check if the disk (i.e. C: drive) Free space is near zero. Alternately watch the trace (.RUN) file in File Explorer (default in Documents folder) and if not regularly growing in size then recording may be waiting. Click the Stop and Debug button in WinDbg, free up space or save to another disk, and start recording again.
+Workaround: Open File Explorer and check if the disk (i.e. C: drive) Free space is near zero. Alternately watch the trace (.RUN) file in File Explorer (default in Documents folder) and if not regularly growing in size then recording may be waiting. Select the Stop and Debug button in WinDbg, free up space or save to another disk, and start recording again.
 
 *During indexing:* The debugger may produce an invalid index file, resulting in unpredictable behavior in the debugger, or the debugger engine host may crash.
 

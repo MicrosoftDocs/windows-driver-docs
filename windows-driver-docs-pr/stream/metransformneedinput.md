@@ -1,7 +1,6 @@
 ---
 title: METransformNeedInput
 description: The METransformNeedInput event indicates that a device transform needs an input.
-ms.assetid: AACD80F6-90A1-4338-AE5B-4A9248747949
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

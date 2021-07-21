@@ -1,7 +1,6 @@
 ---
 title: Minidrivers and the HID class driver
 description: Operation of the HID class driver
-ms.assetid: 3A8F5545-F8EB-47E2-989D-7DE83E32110E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ The section includes the following topics about the operation of the HID class d
 -   Binding the operation of the HID class driver to a HID minidriver
 -   Communicating with a HID minidriver
 
-See [Creating WDF HID minidrivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers) for more information.
+See [Creating WDF HID minidrivers](../wdf/creating-umdf-hid-minidrivers.md) for more information.
 
 ### Operational features of the HID class driver
 
@@ -25,7 +24,7 @@ The HID class driver does the following:
 
     The HID class driver transparently manages and routes all communication between upper-level drivers and applications and the underlying input devices that support HID collections. It manages the different data protocols that are used by different input devices and input queues that support more than one open file on the same HID collection.
 
-    The upper-level interface to HID collections consists of the [HID class driver IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), the [HIDClass support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), and the [HIDClass structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+    The upper-level interface to HID collections consists of the [HID class driver IOCTLs](/windows-hardware/drivers/ddi/_hid/#hid-class-driver-ioctls), the [HIDClass support routines](/windows-hardware/drivers/ddi/_hid/#hidclass-support-routines), and the [HIDClass structures](/windows-hardware/drivers/ddi/_hid/#structures).
 
 -   Communicates with a HID minidriver by calling the minidriver's standard driver routines.
 
@@ -39,37 +38,37 @@ The HID class driver does the following:
 
 ### Binding a minidriver to HIDClass
 
-A HID minidriver binds its operation to the HID class driver by calling [**HidRegisterMinidriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/nf-hidport-hidregisterminidriver) to register itself with the HID class driver. The registration operation does the following:
+A HID minidriver binds its operation to the HID class driver by calling [**HidRegisterMinidriver**](/windows-hardware/drivers/ddi/hidport/nf-hidport-hidregisterminidriver) to register itself with the HID class driver. The registration operation does the following:
 
 -   Saves a copy of the entry points (pointers) to the HID minidriver's standard driver routines in the HID class driver's device extension.
 
-    A HID minidriver sets its entry points in the driver object that the minidriver receives as input to its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine. The HID minidriver sets these entry points before it registers with the HID class driver.
+    A HID minidriver sets its entry points in the driver object that the minidriver receives as input to its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine. The HID minidriver sets these entry points before it registers with the HID class driver.
 
 -   Resets the entry points in the minidriver's driver object to the entry points for the standard driver routines supplied by the HID class driver.
 
 The HID class driver supplies the following standard driver routines:
 
--   [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) and [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routines
+-   [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) and [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routines
 
 -   Dispatch routines for the following I/O requests:
 
-    [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create)
+    [**IRP\_MJ\_CREATE**](../kernel/irp-mj-create.md)
 
-    [**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close)
+    [**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md)
 
-    [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control)
+    [**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md)
 
-    [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
+    [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md)
 
-    [**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp)
+    [**IRP\_MJ\_PNP**](../kernel/irp-mj-pnp.md)
 
-    [**IRP\_MJ\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-system-control)
+    [**IRP\_MJ\_SYSTEM\_CONTROL**](../kernel/irp-mj-system-control.md)
 
 The registration process also allocates memory for the HID mindriver device extension. Although the memory is allocated by the HID class driver, only the HID minidriver uses this device extension.
 
 ### Communicating with a HID minidriver
 
-The HID class driver communicates with a HID minidriver by calling the HID minidriver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device), [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload), and dispatch routines as follows:
+The HID class driver communicates with a HID minidriver by calling the HID minidriver's [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device), [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload), and dispatch routines as follows:
 
 ### Calling the AddDevice Routine
 
@@ -115,17 +114,17 @@ For more information about the HID class driver, see Operation of the HID Class 
 
 ### Registering a HID minidriver
 
-After a HID minidriver completes all other driver initialization in its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, the HID minidriver binds its operation to the HID class driver by calling [**HidRegisterMinidriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/nf-hidport-hidregisterminidriver).
+After a HID minidriver completes all other driver initialization in its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, the HID minidriver binds its operation to the HID class driver by calling [**HidRegisterMinidriver**](/windows-hardware/drivers/ddi/hidport/nf-hidport-hidregisterminidriver).
 
-When the HID minidriver registers with the HID class driver, it uses a [**HID\_MINIDRIVER\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_minidriver_registration) structure to specify the following: HID revision, the HID minidriver driver object, the size of a HID minidriver device extension, and whether devices are polled or not.
+When the HID minidriver registers with the HID class driver, it uses a [**HID\_MINIDRIVER\_REGISTRATION**](/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_minidriver_registration) structure to specify the following: HID revision, the HID minidriver driver object, the size of a HID minidriver device extension, and whether devices are polled or not.
 
 ### HID minidriver extension
 
-A HID minidriver device extension is device-specific, and is only used by a HID minidriver. The HID class driver allocates the memory for the minidriver device extension when the class driver creates its device extension for a functional device object (*FDO*). The HID minidriver specifies the size of its device extension when it registers the minidriver with the HID class driver. The size is specified by the **DeviceExtensionSize** member of a [**HID\_MINIDRIVER\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_minidriver_registration) structure.
+A HID minidriver device extension is device-specific, and is only used by a HID minidriver. The HID class driver allocates the memory for the minidriver device extension when the class driver creates its device extension for a functional device object (*FDO*). The HID minidriver specifies the size of its device extension when it registers the minidriver with the HID class driver. The size is specified by the **DeviceExtensionSize** member of a [**HID\_MINIDRIVER\_REGISTRATION**](/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_minidriver_registration) structure.
 
 ### <a href="" id="using-the-hid-device-extension-structure"></a>Using the HID\_DEVICE\_EXTENSION structure
 
-A HID minidriver must use a **HID\_DEVICE\_EXTENSION**). The HID class driver sets the members of this structure when it initializes the FDO. A HID minidriver must not change the information in this structure.
+A HID minidriver must use a [**HID\_DEVICE\_EXTENSION**](/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_device_extension) structure as the layout for the device extension created by the HID class driver for a functional device object (*FDO*). The HID class driver sets the members of this structure when it initializes the FDO. A HID minidriver must not change the information in this structure.
 
 A HID\_DEVICE\_EXTENSION structure contains the following members:
 
@@ -159,13 +158,13 @@ A HID minidriver must also support the dispatch routines described in Dispatch R
 
 ### DriverEntry routine
 
-The [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine in a HID minidriver does the following:
+The [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine in a HID minidriver does the following:
 
 -   Creates a driver object for the linked pair of drivers (HID class driver and a HID minidriver).
 
 -   Sets the required driver entry points in the HID minidriver driver object.
 
--   Calls [**HidRegisterMinidriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/nf-hidport-hidregisterminidriver) to register the HID minidriver with the HID class driver.
+-   Calls [**HidRegisterMinidriver**](/windows-hardware/drivers/ddi/hidport/nf-hidport-hidregisterminidriver) to register the HID minidriver with the HID class driver.
 
 -   Does device-specific configurations that are only used by the HID minidriver.
 
@@ -173,13 +172,13 @@ The [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wd
 
 The HID class driver handles creating and initializing the functional device object (*FDO*) for an underlying input device. The HID class driver also operates the FDO from the perspective of the upper-level interface to the underlying device and its child devices (HID collections).
 
-The HID class driver [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine calls the HID minidriver *AddDevice* routine so that the minidriver can do internal device-specific initialization.
+The HID class driver [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine calls the HID minidriver *AddDevice* routine so that the minidriver can do internal device-specific initialization.
 
-The parameters that are passed to the HID minidriver [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine are the minidriver driver object and the FDO. (Note that the HID class driver passes the FDO to the minidriver *AddDevice* routine, not to the physical device object for the underlying input device.)
+The parameters that are passed to the HID minidriver [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine are the minidriver driver object and the FDO. (Note that the HID class driver passes the FDO to the minidriver *AddDevice* routine, not to the physical device object for the underlying input device.)
 
-The HID minidriver [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine obtains a pointer to the minidriver device extension from the FDO.
+The HID minidriver [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine obtains a pointer to the minidriver device extension from the FDO.
 
--   Typically, the HID minidriver [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine does the following:
+-   Typically, the HID minidriver [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine does the following:
 
 -   Initializes the minidriver device extension. The device extension is only used by the minidriver.
 
@@ -211,7 +210,7 @@ A HID minidriver does not need a dispatch routine for device control requests. T
 
 ### <a href="" id="irp-mj-internal-device-control"></a>IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL
 
-A HID minidriver must provide a dispatch routine for internal device control requests that supports the requests described in [HID MinidriverIOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+A HID minidriver must provide a dispatch routine for internal device control requests that supports the requests described in [HID MinidriverIOCTLs](/windows-hardware/drivers/ddi/index).
 
 The HID class driver primarily uses internal device control requests to access the underlying input device.
 
@@ -252,11 +251,4 @@ In compliance with WDM requirements, a HID minidriver sends power requests down 
 -   Sends the power IRP down the FDO's device stack
 
 Typically, the HID minidriver passes power requests down the device stack without additional processing.
-
- 
-
- 
-
-
-
 

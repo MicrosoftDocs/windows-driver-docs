@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_PAGE\_SIZE
 description: The WIA\_DPS\_PAGE\_SIZE property contains the size of the page that is currently selected to be scanned.
-ms.assetid: 16e32b83-26b8-4283-a937-9fbbe77b42b8
 keywords: ["WIA_DPS_PAGE_SIZE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 To select the dimensions of the page to scan, an application sets WIA\_DPS\_PAGE\_SIZE. The WIA minidriver creates and maintains this property.
 
@@ -77,7 +75,7 @@ If WIA\_IPS\_ORIENTATION is set to LANSCAPE, the extent settings will be "flippe
 
 The minidriver must ensure that the WIA\_IPS\_ORIENTATION property agrees with the current selection area. If an application changes the value of WIA\_IPS\_ORIENTATION to one that is invalid for the currently selected page size, the minidriver should change the value of WIA\_DPS\_PAGE\_SIZE to a page size that is supported by the new orientation value.
 
-If an application sets the WIA\_DPS\_PAGE\_SIZE property to WIA\_PAGE\_CUSTOM, the current selection area is not affected. The WIA minidriver should obtain the current image layout, starting from the current settings of the [**WIA\_IPS\_XPOS**](wia-ips-xpos.md) and [**WIA\_IPS\_YPOS**](wia-ips-ypos.md) properties. If the page-size setting results in a selection area that is outside the scanner's bed, the minidriver must automatically adjust the values of the WIA\_IPS\_XPOS and WIA\_IPS\_YPOS properties to valid settings. If the WIA\_DPS\_PAGE\_SIZE and WIA\_IPS\_ORIENTATION properties are set at the same time and they are invalid when they are applied in combination, the minidriver should fail the application's settings by returning an error in the [**IWiaMiniDrv::drvValidateItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties) method.
+If an application sets the WIA\_DPS\_PAGE\_SIZE property to WIA\_PAGE\_CUSTOM, the current selection area is not affected. The WIA minidriver should obtain the current image layout, starting from the current settings of the [**WIA\_IPS\_XPOS**](wia-ips-xpos.md) and [**WIA\_IPS\_YPOS**](wia-ips-ypos.md) properties. If the page-size setting results in a selection area that is outside the scanner's bed, the minidriver must automatically adjust the values of the WIA\_IPS\_XPOS and WIA\_IPS\_YPOS properties to valid settings. If the WIA\_DPS\_PAGE\_SIZE and WIA\_IPS\_ORIENTATION properties are set at the same time and they are invalid when they are applied in combination, the minidriver should fail the application's settings by returning an error in the [**IWiaMiniDrv::drvValidateItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties) method.
 
 The following four code examples show the following WIA\_DPS\_PAGE\_SIZE scenarios:
 
@@ -147,8 +145,7 @@ WIA_IPS_YEXTENT = 850
 WIA_IPS_XRES = 100
 WIA_IPS_YRES = 100
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -169,7 +166,7 @@ Requirements
 
 ## See also
 
-[**IWiaMiniDrv::drvValidateItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties)
+[**IWiaMiniDrv::drvValidateItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties)
 
 [**WIA\_DPS\_PAGE\_HEIGHT**](wia-dps-page-height.md)
 

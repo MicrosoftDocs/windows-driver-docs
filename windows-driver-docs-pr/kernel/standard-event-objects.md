@@ -1,7 +1,6 @@
 ---
 title: Standard Event Objects
 description: Standard Event Objects
-ms.assetid: 3c34c485-28b1-45d5-9e79-05dd2b26015e
 keywords: ["event objects WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -48,12 +47,7 @@ This event is set when the operating system's commit charge is near the *maximum
 
 Each of these events are notification events. They remain set as long as the triggering condition remains true.
 
-To open a handle to any of these events, use the [**IoCreateNotificationEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatenotificationevent) routine. A driver that waits for any of these events should create a dedicated thread to do the waiting. The thread can wait for one or more of these events by calling either [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) or [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects).
+To open a handle to any of these events, use the [**IoCreateNotificationEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatenotificationevent) routine. A driver that waits for any of these events should create a dedicated thread to do the waiting. The thread can wait for one or more of these events by calling either [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) or [**KeWaitForMultipleObjects**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects).
 
  
-
- 
-
-
-
 

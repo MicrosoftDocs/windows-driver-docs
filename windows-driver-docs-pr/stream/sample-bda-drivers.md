@@ -1,7 +1,6 @@
 ---
 title: Sample BDA Drivers
 description: Sample BDA Drivers
-ms.assetid: d5d9778c-1591-444f-89e8-95aa0eab61aa
 keywords:
 - sample drivers WDK BDA
 - Broadcast Driver Architecture WDK AVStream , sample drivers

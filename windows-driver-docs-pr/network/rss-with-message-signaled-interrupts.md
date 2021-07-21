@@ -1,7 +1,6 @@
 ---
 title: RSS with Message Signaled Interrupts
 description: RSS with Message Signaled Interrupts
-ms.assetid: 3c1776cf-f870-4910-88b2-9b5a9544cdf8
 keywords:
 - receive-side scaling WDK networking , message signaled interrupts
 - RSS WDK networking , message signaled interrupts
@@ -22,7 +21,7 @@ Miniport drivers can support message signaled interrupts (MSIs) to improve RSS p
 
 The following figure illustrates RSS with MSI-X.
 
-![diagram illustrating rss with msi-x](images/rssmsistack.png)
+![diagram illustrating rss with msi-x.](images/rssmsistack.png)
 
 In the figure, the dashed arrows represent processing on a different connection. RSS with MSI-X allows the NIC to interrupt the correct CPU for a connection.
 
@@ -39,21 +38,15 @@ The following process repeats for each interrupt:
 
 2.  The NIC can fill additional receive buffers and add them to the queue at any time but does not interrupt that CPU again until the miniport driver enables the interrupts for that CPU.
 
-3.  NDIS calls the miniport driver's ISR ( [*MiniportInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr)) on the current CPU.
+3.  NDIS calls the miniport driver's ISR ( [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr)) on the current CPU.
 
 4.  The ISR disables interrupts on the current CPU and queues a DPC on the current CPU.
 
     Interrupts can still occur on the other CPUs while the DPC is running on the current CPU.
 
-5.  NDIS calls the [*MiniportInterruptDPC*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_interrupt_dpc) function for each queued DPC. Each DPC:
+5.  NDIS calls the [*MiniportInterruptDPC*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_interrupt_dpc) function for each queued DPC. Each DPC:
     1.  Builds receive descriptors for all of the received buffers in its queue and indicates the data up the driver stack. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
     2.  Enables interrupts for the current CPU. This interrupt is complete and the process starts again. Note that no atomic operation is required to track the progress of other DPCs.
 
  
-
- 
-
-
-
-
 

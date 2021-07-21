@@ -1,7 +1,6 @@
 ---
 title: Factors Governing Wave-Output Latency
 description: Factors Governing Wave-Output Latency
-ms.assetid: 6342ffd4-b0e8-41a4-ab97-1f658052748b
 keywords:
 - WDM audio drivers WDK , latency
 - audio drivers WDK , latency

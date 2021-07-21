@@ -1,8 +1,7 @@
 ---
 title: INF Validation Errors and Warnings
 description: Driver installation errors and warnings can appear as a result of the automatic INF verification that Microsoft Visual Studio performs.
-ms.assetid: E021D8F8-BFDA-4F71-B8EA-0997096761FB
-ms.date: 04/20/2017
+ms.date: 03/04/2021
 ms.localizationpriority: medium
 ---
 
@@ -48,6 +47,7 @@ Error codes come in the following classifications:
 
 - [Syntax in the INF file (1100-1299)](#syntax-in-the-inf-file-1100-1299)
 - [Universal INF (1300-1319)](#universal-inf-1300-1319)
+- [Windows Driver (1320-1329)](#windows-driver-1320-1329)
 - [Installation (2000-2999)](#installation-2000-2999)
 
 Not all error codes are listed below, as many have self-evident meanings. Errors in the 1000-1099 range are considered self-evident, as they are basic syntax errors.
@@ -120,7 +120,7 @@ Provider="Microsoft"
 </tr>
 <tr>
 <td><strong>1220: Cannot directly reference a section defined in an included INF</strong></td>
-<td>If your INF file references a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section in an included INF, you must use the <strong>Needs</strong> directive. Any other directive that references a section from an included INF causes error 1220.
+<td>If your INF file references a <a href="/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section in an included INF, you must use the <strong>Needs</strong> directive. Any other directive that references a section from an included INF causes error 1220.
 <p>In this example, the install section of A.INF references an equivalent install section in B.INF.</p>
 <p>A.INF contains:</p>
 <div class="code">
@@ -173,7 +173,7 @@ CatalogFile=wudf.cat
 </tr>
 <tr>
 <td><strong>1235: String token not defined in [Strings]</strong></td>
-<td>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive"><strong>AddReg</strong></a> directive, but there is no corresponding REG_DWORD = 0x00010001 in the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section">[Strings]</a> section.
+<td>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an <a href="/windows-hardware/drivers/install/inf-addreg-directive"><strong>AddReg</strong></a> directive, but there is no corresponding REG_DWORD = 0x00010001 in the <a href="/windows-hardware/drivers/install/inf-strings-section">[Strings]</a> section.
 <p>This error frequently occurs if your INF file specifies a registry value that contains an environment variable. For example:</p>
 <pre>
 [MyAddReg]
@@ -207,9 +207,22 @@ Needs=inf-section-name.Services
 
 For devices that do not require a function driver, the NULL driver can be specified as follows:
 <pre>
-AddService = ,2.
+AddService = ,2
 </pre>
+
 <b>Only use this in the case where the INF is installing a non-functional device to specify it does not need a driver.</b>
+
+For example: A device that requires only a filter driver, and not a function driver would have two AddService directives:
+<pre>
+AddService = MyFilterDriver,, My-Service-Install-Section 
+AddService = ,2
+</pre>
+
+</td>
+</tr>
+<tr>
+<td><strong>1297: Device driver does not install on any devices, use primitive driver if this is intended.</strong></td>
+<td>This indicates that the INF file is a device driver, but it is not being used as a device driver. This may cause issues in how the driver is treated by the driver store. If this is unintentional, check your INF to make sure that hardware IDs are correctly specified. If the driver is not intended to install on devices, convert it to a primitive driver.  For more info, see <a href="/windows-hardware/drivers/develop/creating-a-primitive-driver#converting-from-a-device-driver-inf">Converting from a device driver INF</a>.
 </td>
 </tr>
 </tbody>
@@ -218,7 +231,7 @@ AddService = ,2.
 ## Universal INF (1300-1319)
 
 >[!IMPORTANT]
->Your driver INF file is universal if you do not get any errors or warnings with error number in the range 13*xx*.
+>Your driver INF file is universal if you do not get any errors or warnings with error number in the range 13*00*-13*19*.
 
 The following errors and warnings are related to INF configurability:
 
@@ -232,11 +245,11 @@ The following errors and warnings are related to INF configurability:
 <tbody>
 <tr>
 <td><strong>1300: Found legacy</strong><em>Xxx</em></td>
-<td>You will see this error if you use deprecated sections or directives such as <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive"><strong>LogConfig</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section"><strong>DDInstall.CoInstallers</strong></a>.</td>
+<td>You will see this error if you use deprecated sections or directives such as <a href="/windows-hardware/drivers/install/inf-logconfig-directive"><strong>LogConfig</strong></a> or <a href="/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section"><strong>DDInstall.CoInstallers</strong></a>.</td>
 </tr>
 <tr>
 <td><strong>1301: Found legacy</strong><em>Xxx</em><strong>operation</strong><em>Xxx</em></td>
-<td>You will see this error if you use deprecated sections or directives such as <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive"><strong>LogConfig</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section"><strong>DDInstall.CoInstallers</strong></a>.</td>
+<td>You will see this error if you use deprecated sections or directives such as <a href="/windows-hardware/drivers/install/inf-logconfig-directive"><strong>LogConfig</strong></a> or <a href="/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section"><strong>DDInstall.CoInstallers</strong></a>.</td>
 </tr>
 <tr>
 <td><strong>1302: Found legacy</strong><em>Xxx</em><strong>operation for</strong><em>Xxx</em></td>
@@ -277,6 +290,49 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 </tbody>
 </table>
 
+## Windows Driver (1320-1329)
+
+>[!IMPORTANT]
+>Your driver INF file complies with Windows Driver requirements if you do not get any errors or warnings with error number in the range 13*2x*. These requirements are described in detail in the <a href="/windows-hardware/drivers/develop/driver-isolation"><strong>Driver Isolation Requirements</strong></a> documentation.
+
+The following errors and warnings are related to Windows Driver requirements:
+
+<table>
+<thead>
+<tr>
+<th>Error/Warning Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1320: Registry root <em>Xxx</em> is not isolated to HKR</strong></td>
+<td>Error 1320 indicates that a registry key operation is not compliant with registry requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#reading-and-writing-state"><strong>Reading and Writing State</strong></a>.
+</td>
+</tr>
+<tr>
+<td><strong>1321: Registry root <em>Xxx</em> of value <em>Xxx</em> is not isolated to HKR</strong></td>
+<td>Error 1321 indicates that a registry value operation is not compliant with registry requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#reading-and-writing-state"><strong>Reading and Writing State</strong></a>.
+</td>
+</tr>
+<tr>
+<td><strong>1322: Destination file path <em>Xxx</em> for file <em>Xxx</em> is not isolated to DIRID 13</strong></td>
+<td>Error 1322 indicates that a file is copied to a an invalid destination, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#run-from-driver-store"><strong>Run from Driver Store</strong></a>.
+</td>
+</tr>
+<tr>
+<td><strong>1323: Service registry key <em>Xxx</em> must be under the Parameters subkey</strong></td>
+<td>Error 1323 indicates that a service registry value is not set as an HKR under the parameters subkey, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#service-registry-state"><strong>Service Registry State</strong></a>.
+</td>
+</tr>
+<tr>
+<td><strong>1324: [Version] section should specify PnpLockdown=1</strong></td>
+<td>Error 1324 indicates that PnpLockdown was not specified in the version section. This specification causes PNP to add additional security to binary files in the driver package to prevent tampering and should always be specified in driver packages.
+</td>
+</tr>
+</tbody>
+</table>
+
 ## Installation (2000-2999)
 
 Issues in the 2000-2999 range appear as warnings. Possible values include the following.
@@ -295,17 +351,17 @@ Issues in the 2000-2999 range appear as warnings. Possible values include the fo
 </tr>
 <tr>
 <td><strong>2222: Legacy directive will be ignored.</strong></td>
-<td>This warning indicates that the INF specifies a deprecated directive. When the driver is installed, the directive referencing the section is not evaluated. For example, the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive"><strong>INF LogConfig Directive</strong></a> directive is no longer supported, so the following section results in this warning.
+<td>This warning indicates that the INF specifies a deprecated directive. When the driver is installed, the directive referencing the section is not evaluated. For example, the <a href="/windows-hardware/drivers/install/inf-logconfig-directive"><strong>INF LogConfig Directive</strong></a> directive is no longer supported, so the following section results in this warning.
 <pre>
 [InstallSection.LogConfigOverride]
 LogConfig=LogConfigSection
 ...
 </pre>
-For information about which INF directives are deprecated, see <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-directives">INF Directives</a>.</td>
+For information about which INF directives are deprecated, see <a href="/windows-hardware/drivers/install/inf-directives">INF Directives</a>.</td>
 </tr>
 <tr>
 <td><strong>2223: Section should have an architecture decoration</strong></td>
-<td>This warning indicates that the INF file contains an <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section"><strong>INF Manufacturer Section</strong></a> that specifies a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section"><strong>model section</strong></a> with no architecture decoration. For example, the following INF syntax would result in warning 2223:
+<td>This warning indicates that the INF file contains an <a href="/windows-hardware/drivers/install/inf-manufacturer-section"><strong>INF Manufacturer Section</strong></a> that specifies a <a href="/windows-hardware/drivers/install/inf-models-section"><strong>model section</strong></a> with no architecture decoration. For example, the following INF syntax would result in warning 2223:
 <pre>
 [Manufacturer]
 %MfgName% = InstallSection

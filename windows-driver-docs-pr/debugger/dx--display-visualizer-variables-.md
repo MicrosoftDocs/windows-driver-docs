@@ -1,7 +1,6 @@
 ---
 title: dx (Display Debugger Object Model Expression)
 description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
-ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
 ms.date: 05/28/2019
 topic_type:
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # dx (Display Debugger Object Model Expression)
 
 
-The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](/visualstudio/debugger/create-custom-views-of-native-objects).
 
 ```dbgcmd
 dx [-g|-gc #][-c #][-n|-v]-r[#] Expression[,<FormatSpecifier> ]
@@ -32,14 +31,14 @@ A C++ expression to be displayed.
 <span id="_______-g______"></span><span id="_______-G______"></span> **-g**   
 Display as a data grid objects which are iterable. Each iterated element is a row in the grid and each display child of those elements is a column. This allows you to view something such as an array of structs, where each array element is displayed in a row and each field of the struct is displayed in a column.
 
-Left clicking a column name (where there is an available DML link) will sort by that column. If already sorted by that column, the sort order will be inverted.
+Selecting a column name (where there is an available DML link) will sort by that column. If already sorted by that column, the sort order will be inverted.
 
-Any object which is iterable will have a right click context menu item added via DML called 'Display as Grid'. Right clicking an object in the output window and selecting this will display the object in the grid view instead of the standard tree view.
+Any object which is iterable will have a select and hold (or right-click) context menu item added via DML called 'Display as Grid'. Selecting and holding (or right-clicking) an object in the output window and selecting this will display the object in the grid view instead of the standard tree view.
 
-A (+) displayed by a column name offers both a right click and left click behavior.
+A (+) displayed by a column name offers both a select-and-hold (or right-click) and a select behavior.
 
--   Left click takes that column and explodes it into its own table. You see the original rows plus the children of the expanded column.
--   Right click provides "Expand Into Grid" which takes the column and adds it back to the current table as right most columns.
+-   Select takes that column and explodes it into its own table. You see the original rows plus the children of the expanded column.
+-   Select and hold (or right-click) provides "Expand Into Grid" which takes the column and adds it back to the current table as right most columns.
 
 <span id="_______-gc________"></span><span id="_______-GC________"></span> **-gc \#**   
 Display as a grid and restrict grid cell sizes to specified number of (\#) characters.
@@ -59,24 +58,38 @@ Recursively display subtypes (fields) up to *\#* levels. If *\#* is not specifie
 <span id="__________FormatSpecifier_________"></span><span id="__________formatspecifier_________"></span><span id="__________FORMATSPECIFIER_________"></span> **\[&lt;,FormatSpecifier&gt;\]**   
 Use any of the following format specifiers to modify the default rendering.
 
-|                         |                                                                                          |
-|-------------------------|------------------------------------------------------------------------------------------|
-| ,x                      | Display ordinals in hexidecimal                                                          |
-| ,d                      | Display ordinals in decimal                                                              |
-| ,o                      | Display ordinals in octal                                                                |
-| ,b                      | Display ordinals in binary                                                               |
-| ,en                     | Display enums by name only (no value)                                                    |
-| ,c                      | Display as single character (not a string)                                               |
-| ,s                      | Display 8-bit strings as ASCII quoted                                                    |
-| ,sb                     | Display 8-bit strings as ASCII unquoted                                                  |
-| ,s8                     | Display 8-bit strings as UTF-8 quoted                                                    |
-| ,s8b                    | Display 8-bit strings as UTF-8 unquoted                                                  |
-| ,su                     | Display 16-bit strings as UTF-16 quoted                                                  |
-| ,sub                    | Display 16-bit strings as UTF-16 unqouted                                                |
-| ,!                      | Display objects in raw mode only (e.g.: no NatVis)                                       |
-| ,\#                     | Specify length of pointer/array/container as the literal value \# (replace with numeric) |
-| ,\[&lt;expression&gt;\] | Specify length of pointer/array/container as the expression &lt;expression&gt;           |
-| ,nd                     | Do not find the derived (runtype) type of the object. Display static value only          |
+**,x**: Display ordinals in hexidecimal
+
+**,d**: Display ordinals in decimal
+
+**,o**: Display ordinals in octal
+
+**,b**: Display ordinals in binary
+
+**,en**: Display enums by name only (no value)
+
+**,c**: Display as single character (not a string)
+
+**,s**: Display 8-bit strings as ASCII quoted
+
+**,sb**: Display 8-bit strings as ASCII unquoted
+
+**,s8**: Display 8-bit strings as UTF-8 quoted
+
+**,s8b**: Display 8-bit strings as UTF-8 unquoted
+
+**,su**: Display 16-bit strings as UTF-16 quoted
+
+**,sub**: Display 16-bit strings as UTF-16 unqouted
+
+**,!**: Display objects in raw mode only (e.g.: no NatVis)
+
+**,\#**: Specify length of pointer/array/container as the literal value \# (replace with numeric)
+
+**,\[&lt;expression&gt;\]**: Specify length of pointer/array/container as the expression &lt;expression&gt;
+
+**,nd**: Do not find the derived (runtype) type of the object. Display static value only
+
 
 <span id="_______dx_-_______"></span><span id="_______DX_-_______"></span> **dx** {**-?**}   
 Display command line help.
@@ -173,13 +186,13 @@ Debugger.Sessions.First().Processes.First().Threads.First().Stack.Frames :
     [0x8]            : nt!KiIdleLoop + 0x1a
 ```
 
-Use the -g option to display output as a data grid. Click on a column to sort.
+Use the -g option to display output as a data grid. Select column to sort.
 
 ```dbgcmd
 kd> dx -g @$curprocess.Modules
 ```
 
-![output from dx -g @$curprocess.modules showing columnar grid output](images/dx-grid-example.png)
+![output from dx -g @$curprocess.modules showing columnar grid output.](images/dx-grid-example.png)
 
 Use the -h option to display information about objects.
 ```dbgcmd
@@ -351,10 +364,3 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
-
-
-
-
-
-
-

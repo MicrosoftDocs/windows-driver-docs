@@ -1,7 +1,6 @@
 ---
 title: Prediction Planes
 description: Prediction Planes
-ms.assetid: 967d52d1-c4e1-4a81-a1ad-40a09040c3a8
 keywords:
 - decoding video WDK DirectX VA , macroblock prediction
 - video decoding WDK DirectX VA , macroblock prediction
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates the conceptual macroblock prediction planes that exist prior to forming the final prediction.
 
-![diagram illustrating plane example for field macroblock prediction](images/m2planes.png)
+![diagram illustrating plane example for field macroblock prediction.](images/m2planes.png)
 
 MPEG-2 has two planes: forward and backward (bidirectional prediction), or same-parity and opposite-parity (dual-prime). The forward reference plane consists of blocks from the closest previous I or P picture. The backward reference plane consists of blocks from the closest future I or P picture.
 

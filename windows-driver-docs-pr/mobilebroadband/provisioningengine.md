@@ -1,14 +1,13 @@
 ---
 title: ProvisioningEngine
 description: ProvisioningEngine
-ms.assetid: b6b10145-d554-43be-8682-1355145b3241
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ProvisioningEngine
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ProvisioningEngine element specifies the trusted certificates. This allows operators to provision the PC with packages that are signed with a trusted certificate.
 

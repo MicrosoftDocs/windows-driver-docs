@@ -23,7 +23,7 @@ Next, sign the contents of the capsule. The capsule content itself is determined
 
 On ARM-based systems, with no keys other than the Microsoft Production CA 2011 allowed in the UEFI Allowed Database and Microsoft does not use a signer under this CA to sign third-party UEFI code, load of such a capsule cannot leverage the regular UEFI **LoadImage()** service. The capsule application may, however, be loaded using a platform-specific verification against the boot ROM public key or the UEFI PK. This load must still be measured into TPM PCR\[7\] as for any other image. More generally, when capsule signing is deemed necessary (for example, to ensure integrity and authenticity of the complete update package), and the capsule may comprise firmware updates for firmware outside of UEFI, the capsule should be signed in such a way that it can be verified using platform-held, non-UEFI keys (for example, signed using a key chaining back to a public key bound to boot ROM or the UEFI PK).
 
-![Driver signing workflow](images/driver-signing-workflow.png)
+![Driver signing workflow.](images/driver-signing-workflow.png)
 
 On non-ARM systems,
 
@@ -60,28 +60,28 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 ## Related resources
 
-[Authoring a firmware update package](https://docs.microsoft.com/windows-hardware/drivers/bringup/authoring-a-firmware-update-package)
+[Authoring a firmware update package](./authoring-a-firmware-update-package.md)
 
-[Certifying and signing the update package](https://docs.microsoft.com/windows-hardware/drivers/bringup/certifying-and-signing-the-update-package)
+[Certifying and signing the update package](./certifying-and-signing-the-update-package.md)
 
-[Device.Fundamentals Reliability Testing Prerequisites](https://docs.microsoft.com/windows-hardware/test/hlk/testref/devicefundamentals-reliability-testing-prerequisites)
+[Device.Fundamentals Reliability Testing Prerequisites](/windows-hardware/test/hlk/testref/devicefundamentals-reliability-testing-prerequisites)
 
-[Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/dashboard)
+[Driver Signing](../dashboard/index.yml)
 
 [Microsoft UEFI CA Signing Policy updates](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
-[View test results and log files](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-7-view-test-results-and-log-files)
+[View test results and log files](/windows-hardware/test/hlk/getstarted/step-7-view-test-results-and-log-files)
 
-[Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package)
+[Create a submission package](/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package)
 
-[System and device firmware updates via a firmware driver package](https://docs.microsoft.com/windows-hardware/drivers/bringup/system-and-device-firmware-updates-via-a-firmware-driver-package)
+[System and device firmware updates via a firmware driver package](./system-and-device-firmware-updates-via-a-firmware-driver-package.md)
 
-[Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](https://docs.microsoft.com/windows-hardware/test/hlk/testref/troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck)
+[Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](/windows-hardware/test/hlk/testref/troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck)
 
 [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
-[Windows UEFI firmware update platform](https://docs.microsoft.com/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform)
+[Windows UEFI firmware update platform](./windows-uefi-firmware-update-platform.md)
 
 [Partner Center](https://partner.microsoft.com/dashboard)
 
-[ESRT table definition ](https://docs.microsoft.com/windows-hardware/drivers/bringup/esrt-table-definition)
+[ESRT table definition ](./esrt-table-definition.md)

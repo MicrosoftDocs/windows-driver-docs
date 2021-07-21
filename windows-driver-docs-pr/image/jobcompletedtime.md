@@ -1,7 +1,6 @@
 ---
 title: JobCompletedTime element
 description: The optional JobCompletedTime element specifies the time at which the scan job was completed.
-ms.assetid: f29449bd-c618-400f-b37c-3df7d955936b
 keywords: ["JobCompletedTime element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **JobCompletedTime** element specifies the time at which the scan job was completed.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobCompletedTime>
@@ -27,13 +25,11 @@ Usage
 </wscn:JobCompletedTime>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid value for the dateTime type. For more information about dateTime, see XML Schema Part 2: Datatypes Second Edition.**dateTimedateTime**
 
@@ -64,8 +60,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A scan job is *complete* when all processing has completed, either because scanning and document transfer completed successfully or because a fatal error was encountered.
 

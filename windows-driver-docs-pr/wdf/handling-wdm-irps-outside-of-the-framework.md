@@ -1,7 +1,6 @@
 ---
 title: Handling WDM IRPs Outside of the Framework
 description: Handling WDM IRPs Outside of the Framework
-ms.assetid: 43e1df0c-c0d1-4d41-87de-9f8f5831fb19
 keywords:
 - WDM IRPs WDK KMDF
 - WDM IRPs WDK KMDF , outside framework
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 When the I/O manager delivers an I/O request packet (IRP) to a framework-based driver, the framework intercepts the IRP and then does one of the following:
 
--   Processes the IRP. For example, the framework processes IRPs that contain [**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp) and [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) major I/O function codes. While processing these IRPs, the framework might communicate with the driver by calling the driver's event callback functions.
+-   Processes the IRP. For example, the framework processes IRPs that contain [**IRP\_MJ\_PNP**](../kernel/irp-mj-pnp.md) and [**IRP\_MJ\_POWER**](../kernel/irp-mj-power.md) major I/O function codes. While processing these IRPs, the framework might communicate with the driver by calling the driver's event callback functions.
 
 -   Creates a framework request object for the IRP and delivers the request object to one of the driver's I/O queues so that the driver can receive it, typically in a request handler, and process it. The framework handles read, write, and device I/O control requests in this way.
 
@@ -38,10 +37,4 @@ The following topics describe these situations:
 -   [Dispatching IRPs to I/O Queues](dispatching-irps-to-i-o-queues.md)
 
  
-
- 
-
-
-
-
 

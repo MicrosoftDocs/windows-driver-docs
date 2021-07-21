@@ -1,7 +1,6 @@
 ---
 title: XPSDrv Render Module
 description: XPSDrv Render Module
-ms.assetid: e844e320-bd3d-4855-bb47-fdfbdb157802
 keywords:
 - XPSDrv printer drivers WDK , render modules
 - render modules WDK XPSDrv , about render modules
@@ -21,7 +20,7 @@ The render module of an XPSDrv printer driver contains the filters that render t
 
 The following diagram shows a filter pipeline.
 
-![diagram illustrating a filter pipeline](images/xps-pipeline.png)
+![diagram illustrating a filter pipeline.](images/xps-pipeline.png)
 
 Microsoft provides the following XPS driver components:
 

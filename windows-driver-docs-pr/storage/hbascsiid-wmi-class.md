@@ -1,7 +1,6 @@
 ---
 title: HBAScsiID WMI Class
 description: HBAScsiID WMI Class
-ms.assetid: ca2ebe3f-bc0b-4723-8dff-00478d9baac3
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -27,15 +26,9 @@ class HBAScsiID {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**HBAScsiID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid)
+[**HBAScsiID**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

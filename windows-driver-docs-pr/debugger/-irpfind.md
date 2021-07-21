@@ -1,7 +1,6 @@
 ---
 title: irpfind
 description: The irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria.
-ms.assetid: f0d850d9-8804-40df-90a3-b9c6a6b4540f
 keywords: ["irpfind Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -103,8 +102,7 @@ Kdexts.dll
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This example finds the IRP in the nonpaged pool that is going to set user event FF9E4F48 upon completion:
 

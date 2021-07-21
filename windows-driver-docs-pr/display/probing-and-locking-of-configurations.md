@@ -1,7 +1,6 @@
 ---
 title: Probing and Locking of Configurations
 description: Probing and Locking of Configurations
-ms.assetid: 6f68db48-ed4b-487c-b425-43c610651c16
 keywords:
 - video decoding WDK DirectX VA , configuration probing and locking
 - decoding video WDK DirectX VA , configuration probing and locking
@@ -36,7 +35,7 @@ To ensure that all DirectX VA software decoders can operate with all DirectX VA 
 
 The following figure shows the control flow of probing and locking commands sent by the decoder.
 
-![flowchart illustrating probing and locking to set driver configuration](images/probe-lock.png)
+![flowchart illustrating probing and locking to set driver configuration.](images/probe-lock.png)
 
  
 

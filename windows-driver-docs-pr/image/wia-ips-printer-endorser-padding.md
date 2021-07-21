@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_PADDING
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_PADDING property configures the valid special padding characters that are printed or endorsed to fill blank spaces in counters, data and time sequences.
-ms.assetid: 44C8A517-43E5-4986-9B8A-46167B5884E5
 keywords: ["WIA_IPS_PRINTER_ENDORSER_PADDING Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-Write
 
-Remarks
--------
+## Remarks
 
 The valid values for this property are shown in the following table.
 
@@ -41,8 +39,7 @@ The valid values for this property are shown in the following table.
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_PADDING** property is optional for the Imprinter/Endorser items. When this property is not supported, the printer/endorser device does not support padding.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

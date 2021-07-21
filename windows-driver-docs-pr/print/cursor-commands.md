@@ -1,7 +1,6 @@
 ---
 title: Cursor Commands
 description: Cursor Commands
-ms.assetid: 3ef09c7e-0e88-4236-a4c9-d89eb7ec61cb
 keywords:
 - printer commands WDK Unidrv , cursors
 - cursor commands WDK Unidrv

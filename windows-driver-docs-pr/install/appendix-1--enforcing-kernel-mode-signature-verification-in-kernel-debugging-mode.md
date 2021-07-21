@@ -1,7 +1,6 @@
 ---
 title: Enforce Kernel-Mode Signature Verification in Kernel Debugging
 description: Describes how to enable load-time signature enforcement when a kernel debugger is attached.
-ms.assetid: D7CB436F-4B89-49E7-BB53-101BDA7046F3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ In order to facilitate debugging these situations, the kernel-mode code signing 
 HKLM\SYSTEM\CurrentControlSet\Control\CI\DebugFlags
 ```
 
-This registry value is of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), and can be assigned a value based on a bitwise OR of one or more of the following flags.
+This registry value is of type [REG_DWORD](/windows/desktop/SysInfo/registry-value-types), and can be assigned a value based on a bitwise OR of one or more of the following flags.
 
 ```cpp
 0x00000001
@@ -43,10 +42,4 @@ If this registry value does not exist in the registry or has a value that is not
  
 
  
-
- 
-
-
-
-
 

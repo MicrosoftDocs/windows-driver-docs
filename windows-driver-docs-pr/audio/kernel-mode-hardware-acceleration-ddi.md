@@ -1,7 +1,6 @@
 ---
 title: Kernel Mode Hardware Acceleration DDI
 description: Kernel Mode Hardware Acceleration DDI
-ms.assetid: f3af3caa-0d1f-4da5-8756-ce71c66d5fb6
 keywords:
 - DirectMusic kernel-mode WDK audio
 - kernel-mode synths WDK audio , hardware acceleration

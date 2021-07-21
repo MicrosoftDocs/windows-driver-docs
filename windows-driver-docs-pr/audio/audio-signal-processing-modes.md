@@ -1,78 +1,31 @@
 ---
 title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
-ms.assetid: 104275F8-2302-484B-B673-7448CAA1F793
 ms.date: 05/14/2018
 ms.localizationpriority: medium
 ---
 
 # Audio Signal Processing Modes
 
-
 Drivers declare the supported audio signal processing modes for each device.
 
-## <span id="Available_Signal_Processing_Modes"></span><span id="available_signal_processing_modes"></span><span id="AVAILABLE_SIGNAL_PROCESSING_MODES"></span>Available Signal Processing Modes
-
+## Available Signal Processing Modes
 
 Audio categories (selected by applications) are mapped to audio modes (defined by drivers). Windows defines seven audio signal processing modes. OEMs and IHVs can determine which modes they want to implement. It is recommended that IHVs/OEMs utilize the new modes to add audio effects that optimize the audio signal to provide the best user experience. The modes are summarized in the table shown below.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Mode</strong></td>
-<td align="left"><strong>Render/Capture</strong></td>
-<td align="left"><strong>Description</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Raw</td>
-<td align="left">Both</td>
-<td align="left"><p>Raw mode specifies that there should not be any signal processing applied to the stream.</p>
-<p>An application can request a raw stream that is completely untouched and perform its own signal processing.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Default</td>
-<td align="left">Both</td>
-<td align="left"><p>This mode defines the default audio processing.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Movies *</td>
-<td align="left">Render</td>
-<td align="left">Movie audio playback</td>
-</tr>
-<tr class="odd">
-<td align="left">Media *</td>
-<td align="left">Both</td>
-<td align="left">Music audio playback (default for most media streams)</td>
-</tr>
-<tr class="even">
-<td align="left">Speech *</td>
-<td align="left">Capture</td>
-<td align="left">Human voice capture (e.g. input to Cortana)</td>
-</tr>
-<tr class="odd">
-<td align="left">Communications *</td>
-<td align="left">Both</td>
-<td align="left">VOIP render and capture (e.g. Skype, Lync)</td>
-</tr>
-<tr class="even">
-<td align="left">Notification *</td>
-<td align="left">Render</td>
-<td align="left">Ringtones, alarms, alerts, etc.</td>
-</tr>
-</tbody>
-</table>
-
- 
+|Mode|Render/Capture|Description|
+|----|----|----|
+|Raw|Both|Raw mode specifies that there should not be any signal processing applied to the stream. An application can request a raw stream that is completely untouched and perform its own signal processing.|
+|Default|Both|This mode defines the default audio processing.|
+|Movies*|Render|Movie audio playback|
+|Media*|Both|Music audio playback (default for most media streams)|
+|Speech*|Capture|Human voice capture (e.g. input to Cortana)|
+|Communications*|Both|VOIP render and capture (e.g. Skype, Lync)|
+|Notification*|Render|Ringtones, alarms, alerts, etc.|
 
 \* New in Windows 10.
 
-## <span id="Signal_Processing_Mode_Driver_Requirements"></span><span id="signal_processing_mode_driver_requirements"></span><span id="SIGNAL_PROCESSING_MODE_DRIVER_REQUIREMENTS"></span>Signal Processing Mode Driver Requirements
-
+## Signal Processing Mode Driver Requirements
 
 Audio device drivers need to support at least the *Raw* or *Default* mode. Supporting additional modes is optional.
 
@@ -80,16 +33,14 @@ It is possible that not all modes might be available for a particular system. Dr
 
 The following diagram shows a system that supports multiple modes:
 
-![multiple audio modes ](images/audio-modes-win-10.png)
+![multiple audio modes .](images/audio-modes-win-10.png)
 
-## <span id="Windows_Audio_Stream_Categories"></span><span id="windows_audio_stream_categories"></span><span id="WINDOWS_AUDIO_STREAM_CATEGORIES"></span>Windows Audio Stream Categories
-
+## Windows Audio Stream Categories
 
 In order to inform the system about the usage of an audio stream, applications have the option to tag the stream with a specific audio stream category. Applications can set the audio category, using any of the audio APIs, just after creating the audio stream. In Windows 10 there are nine audio stream categories.
 
-|                |                                                                                                       |
-|----------------|-------------------------------------------------------------------------------------------------------|
-| **Category**   | **Description**                                                                                       |
+|Category|Description|
+|----|----|
 | Movie          | Movies, video with dialog (Replaces ForegroundOnlyMedia)                                              |
 | Media          | Default category for media playback (Replaces BackgroundCapableMedia)                                 |
 | Game Chat      | In-game communication between users (New category in Windows 10)                                      |
@@ -101,13 +52,11 @@ In order to inform the system about the usage of an audio stream, applications h
 | Game Effects   | Balls bouncing, car engine sounds, bullets, etc.                                                      |
 | Other          | Uncategorized streams                                                                                 |
 
- 
-
 As mentioned previously, audio categories (selected by applications) are mapped to audio modes (defined by drivers). Applications can tag each of their streams with one of the 10 audio categories.
 
 Applications do not have the option to change the mapping between an audio category and a signal processing mode. Applications have no awareness of the concept of an "audio processing mode". They cannot find out what mode is used for each of their streams.
 
-**WASAPI Code Sample**
+### WASAPI Code Sample
 
 The following WASAPI code from the WASAPIAudio sample shows how to set different audio categories.
 
@@ -132,11 +81,11 @@ HRESULT ActivateAudioInterfaceCompletionHandler::ActivateCompleted( IActivateAud
     hr = activateOperation->GetActivateResult( &hrActivateResult, &pUnknown );
     if ( FAILED( hr ) )  { … }
     if ( FAILED( hrActivateResult ) ) { … }
-    
+
     hr = pUnknown->QueryInterface( IID_PPV_ARGS( &pAudioClient3 ) );
     if ( FAILED( hr ) ) { … }
 
-    // The IAudioClient3::SetClientProperties call needs to happen after activation completes, 
+    // The IAudioClient3::SetClientProperties call needs to happen after activation completes,
     // but before the call to IAudioClient3::Initialize or IAudioClient3::InitializeSharedAudioStream.
     AudioClientProperties props = {};
     props.cbSize = sizeof(props);
@@ -150,8 +99,7 @@ HRESULT ActivateAudioInterfaceCompletionHandler::ActivateCompleted( IActivateAud
     …
 ```
 
-## <span id="Signal_Processing_Modes_and_Effects"></span><span id="signal_processing_modes_and_effects"></span><span id="SIGNAL_PROCESSING_MODES_AND_EFFECTS"></span>Signal Processing Modes and Effects
-
+## Signal Processing Modes and Effects
 
 OEMs define what effects will be used for each mode. Windows defines a list of seventeen types of audio effects.
 
@@ -165,12 +113,11 @@ Applications have no visibility into how many modes are present, with the except
 
 Applications should request the optimal audio effect processing, regardless of the audio hardware configuration. For example, tagging a stream as Communications will let Windows know to pause background music.
 
-For more information about the static audio stream categories, see [AudioCategory enumeration](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.AudioCategory) and [MediaElement.AudioCategory property](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaElement#Windows_UI_Xaml_Controls_MediaElement_AudioCategory).
+For more information about the static audio stream categories, see [AudioCategory enumeration](/uwp/api/Windows.UI.Xaml.Media.AudioCategory) and [MediaElement.AudioCategory property](/uwp/api/Windows.UI.Xaml.Controls.MediaElement#Windows_UI_Xaml_Controls_MediaElement_AudioCategory).
 
-## <span id="CLSIDs_for_System_Effects"></span><span id="clsids_for_system_effects"></span><span id="CLSIDS_FOR_SYSTEM_EFFECTS"></span>CLSIDs for System Effects
+## CLSIDs for System Effects
 
-
-**FX\_DISCOVER\_EFFECTS\_APO\_CLSID**
+### FX\_DISCOVER\_EFFECTS\_APO\_CLSID
 
 This is the CLSID for the MsApoFxProxy.dll “proxy effect” which queries the driver to get the list of active effects;
 
@@ -178,7 +125,7 @@ This is the CLSID for the MsApoFxProxy.dll “proxy effect” which queries the 
 FX_DISCOVER_EFFECTS_APO_CLSID  = "{889C03C8-ABAD-4004-BF0A-BC7BB825E166}"
 ```
 
-**KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE**
+### KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE
 
 KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE is an identifier to Kernel Streaming that identifies that the specific attribute that is being referenced, is the signal processing mode attribute.
 
@@ -190,95 +137,31 @@ DEFINE_GUIDSTRUCT("E1F89EB5-5F46-419B-967B-FF6770B98401", KSATTRIBUTEID_AUDIOSIG
 #define KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE DEFINE_GUIDNAMED(KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE)
 ```
 
-KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE is used to by mode aware drivers with a [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structure which contain a [**KSATTRIBUTE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute_list). This list has a single element in it which is a [**KSATTRIBUTE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute). The Attribute member of the **KSATTRIBUTE** structure is set to KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE.
+KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE is used to by mode aware drivers with a [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structure which contain a [**KSATTRIBUTE\_LIST**](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute_list). This list has a single element in it which is a [**KSATTRIBUTE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute). The Attribute member of the **KSATTRIBUTE** structure is set to KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE.
 
-## <span id="Audio_Effects"></span><span id="audio_effects"></span><span id="AUDIO_EFFECTS"></span>Audio Effects
-
+## Audio Effects
 
 The following audio effects are available for use in Windows 10.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left">Acoustic Echo Cancellation (AEC)</td>
-<td align="left"><p>Acoustic Echo Cancellation (AEC) improves audio quality by removing echo, after it after it is already present in the audio stream.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Noise Suppression (NS)</td>
-<td align="left"><p>Noise Suppression (NS) suppresses noise such as humming and buzzing, when it is present in the audio stream.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Automatic Gain Control (AGC)</td>
-<td align="left"><p>Automatic Gain Control (AGC) - is designed to provide a controlled signal amplitude at its output, despite variation of the amplitude in the input signal. The average or peak output signal level is used to dynamically adjust the input-to-output gain to a suitable value, enabling a stable level of output, even with a wide range of input signal levels.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Beam Forming (BF)</td>
-<td align="left"><p>Beam Forming (BF) is a signal processing technique used for directional signal transmission or reception. This is achieved by combining elements in a phased array in such a way that signals at particular angles experience constructive interference while others experience destructive interference. The improvement compared with omnidirectional reception/transmission is known as the receive/transmit gain (or loss).</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Constant Tone Removal</td>
-<td align="left"><p>Constant tone removal is used to attenuate constant background noise such as tape hiss, electric fans or hums.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Equalizer</td>
-<td align="left"><p>The Equalizer effect is used to alter the frequency response of an audio system using linear filters. This allows for different parts of the signal to be boosted, similar to a treble or bass setting.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Loudness Equalizer</td>
-<td align="left"><p>The loudness equalizer effect reduces perceived volume differences by leveling the audio output so that louder and quieter sounds are closer to an average level of loudness.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Bass Boost</td>
-<td align="left"><p>In systems such as laptops that have speakers with limited bass capability, it is sometimes possible to increase the perceived quality of the audio by boosting the bass response in the frequency range that is supported by the speaker. Bass boost improves sound on mobile devices with very small speakers by increasing gain in the mid-bass range.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Virtual Surround</td>
-<td align="left"><p>Virtual surround uses simple digital methods to combine a multichannel signal into two channels. This is done in a way that allows the transformed signal to be restored to the original multichannel signal, using the Pro Logic decoders that are available in most modern audio receivers. Virtual surround is ideal for a system with a two-channel sound hardware and a receiver that has a surround sound enhancement mechanism.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Virtual Headphones</td>
-<td align="left"><p>Virtualized surround sound allows users who are wearing headphones to distinguish sound from front to back as well as from side to side. This is done by transmitting spatial cues that help the brain localize the sounds and integrate them into a sound field. This has the effect of making the sound feel like it transcends the headphones, creating an "outside-the-head" listening experience. This effect is achieved by using an advanced technology called Head Related Transfer Functions (HRTF). HRTF generates acoustic cues that are based on the shape of the human head. These cues not only help listeners to locate the direction and source of sound but it also enhances the type of acoustic environment that is surrounding the listener.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Speaker Fill</td>
-<td align="left"><p>Most music is produced with only two channels and is, therefore, not optimized for the multichannel audio equipment of the typical audio or video enthusiast. So having music emanate from only the front-left and front-right loudspeakers is a less-than-ideal audio experience. Speaker fill simulates a multichannel loudspeaker setup. It allows music that would otherwise be heard on only two speakers to be played on all of the loudspeakers in the room, enhancing the spatial sensation.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Room Correction</td>
-<td align="left"><p>Room correction optimizes the listening experience for a particular location in the room, for example, the center cushion of your couch, by automatically calculating the optimal combination of delay, frequency response, and gain adjustments.</p>
-<p>The room correction feature better matches sound to the image on the video screen and is also useful in cases where desktop speakers are placed in nonstandard locations. room correction processing is an improvement over similar features in high-end receivers because it better accounts for the way in which the human ear processes sound.</p>
-<p>Calibration is performed with the help of a microphone, and the procedure can be used with both stereo and multichannel systems. The user places the microphone where the user intends to sit and then activates a wizard that measures the room response. The wizard plays a set of specially designed tones from each loudspeaker in turn, and measures the distance, frequency response, and overall gain of each loudspeaker from the microphone's location.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Bass Management</td>
-<td align="left"><p>There are two bass management modes: forward bass management and reverse bass management.</p>
-<p><em>Forward bass management</em> filters out the low frequency content of the audio data stream. The forward bass management algorithm redirects the filtered output to the subwoofer or to the front-left and front-right loudspeaker channels, depending on the channels that can handle deep bass frequencies. This decision is based on the setting of the LRBig flag. To set the LRBig flag, the user uses the Sound applet in Control Panel to access the Bass Management Settings dialog box. The user selects a check box to indicate, for example, that the front-right and front-left speakers are full range and this action sets the LRBig flag. To clear this flag, click the check box to clear it.</p>
-<p><em>Reverse bass management</em> distributes the signal from the subwoofer channel to the other output channels. The signal is directed either to all channels or to the front-left and front-right channels, depending on the setting of the LRBig flag. This process uses a substantial gain reduction when mixing the subwoofer signal into the other channels. The bass management mode that is used depends on the availability of a subwoofer and the bass-handling capability of the main speakers. In Windows, the user provides this information via the Sound applet in Control Panel.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Environmental Effects</td>
-<td align="left"><p>Environmental effects work to increase the reality of audio playback by more accurately simulating real-world audio environments. There are a number of different environments that you can select, for example "stadium" simulates the acoustics of a sports stadium.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Speaker Protection</td>
-<td align="left"><p>The purpose of speaker protection is to suppress resonant frequencies that would cause the speakers to do physical harm to any of the PCs' system components. For example, some physical hard drives can be damaged by playing a loud sound at just the right frequency. Secondarily, speaker protection works to minimize damage to speakers, by attenuating the signal, when it exceeds certain values.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Speaker Compensation</td>
-<td align="left"><p>Some speakers are better at reproducing sound than others. For example, a particular speaker may attenuate sounds below 100 Hz. Sometimes audio drivers and firmware DSP solutions have knowledge about the specific performance characteristics of the speakers they are playing to, and they can add processing designed to compensate for the speaker limitations. For example, an endpoint effect (EFX) could be created that applies gain to frequencies below 100 Hz. This effect, when combined with the attenuation in the physical speaker, results in enhanced audio fidelity.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Dynamic Range Compression</td>
-<td align="left"><p>Dynamic range compression amplifies quiet sounds by narrowing or "compressing" an audio signal's dynamic range. Audio compression amplifies quiet sounds which are below a certain threshold while loud sounds remain unaffected.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Audio effect|Description|
+|----|----|
+|Acoustic Echo Cancellation (AEC)|Acoustic Echo Cancellation (AEC) improves audio quality by removing echo, after it after it is already present in the audio stream.|
+|Noise Suppression (NS)|Noise Suppression (NS) suppresses noise such as humming and buzzing, when it is present in the audio stream.|
+|Automatic Gain Control (AGC)|Automatic Gain Control (AGC) - is designed to provide a controlled signal amplitude at its output, despite variation of the amplitude in the input signal. The average or peak output signal level is used to dynamically adjust the input-to-output gain to a suitable value, enabling a stable level of output, even with a wide range of input signal levels.|
+|Beam Forming (BF)|Beam Forming (BF) is a signal processing technique used for directional signal transmission or reception. This is achieved by combining elements in a phased array in such a way that signals at particular angles experience constructive interference while others experience destructive interference. The improvement compared with omnidirectional reception/transmission is known as the receive/transmit gain (or loss).|
+|Constant Tone Removal|Constant tone removal is used to attenuate constant background noise such as tape hiss, electric fans or hums.|
+|Equalizer|The Equalizer effect is used to alter the frequency response of an audio system using linear filters. This allows for different parts of the signal to be boosted, similar to a treble or bass setting.|
+|Loudness Equalizer|The loudness equalizer effect reduces perceived volume differences by leveling the audio output so that louder and quieter sounds are closer to an average level of loudness.|
+|Bass Boost|In systems such as laptops that have speakers with limited bass capability, it is sometimes possible to increase the perceived quality of the audio by boosting the bass response in the frequency range that is supported by the speaker. Bass boost improves sound on mobile devices with very small speakers by increasing gain in the mid-bass range.|
+|Virtual Surround|Virtual surround uses simple digital methods to combine a multichannel signal into two channels. This is done in a way that allows the transformed signal to be restored to the original multichannel signal, using the Pro Logic decoders that are available in most modern audio receivers. Virtual surround is ideal for a system with a two-channel sound hardware and a receiver that has a surround sound enhancement mechanism.|
+|Virtual Headphones|Virtualized surround sound allows users who are wearing headphones to distinguish sound from front to back as well as from side to side. This is done by transmitting spatial cues that help the brain localize the sounds and integrate them into a sound field. This has the effect of making the sound feel like it transcends the headphones, creating an "outside-the-head" listening experience. This effect is achieved by using an advanced technology called Head Related Transfer Functions (HRTF). HRTF generates acoustic cues that are based on the shape of the human head. These cues not only help listeners to locate the direction and source of sound but it also enhances the type of acoustic environment that is surrounding the listener.|
+|Speaker Fill|Most music is produced with only two channels and is, therefore, not optimized for the multichannel audio equipment of the typical audio or video enthusiast. So having music emanate from only the front-left and front-right loudspeakers is a less-than-ideal audio experience. Speaker fill simulates a multichannel loudspeaker setup. It allows music that would otherwise be heard on only two speakers to be played on all of the loudspeakers in the room, enhancing the spatial sensation.|
+|Room Correction|Room correction optimizes the listening experience for a particular location in the room, for example, the center cushion of your couch, by automatically calculating the optimal combination of delay, frequency response, and gain adjustments. The room correction feature better matches sound to the image on the video screen and is also useful in cases where desktop speakers are placed in nonstandard locations. room correction processing is an improvement over similar features in high-end receivers because it better accounts for the way in which the human ear processes sound. Calibration is performed with the help of a microphone, and the procedure can be used with both stereo and multichannel systems. The user places the microphone where the user intends to sit and then activates a wizard that measures the room response. The wizard plays a set of specially designed tones from each loudspeaker in turn, and measures the distance, frequency response, and overall gain of each loudspeaker from the microphone's location.|
+|Bass Management|There are two bass management modes: forward bass management and reverse bass management. **Forward bass management** filters out the low frequency content of the audio data stream. The forward bass management algorithm redirects the filtered output to the subwoofer or to the front-left and front-right loudspeaker channels, depending on the channels that can handle deep bass frequencies. This decision is based on the setting of the LRBig flag. To set the LRBig flag, the user uses the Sound applet in Control Panel to access the Bass Management Settings dialog box. The user selects a check box to indicate, for example, that the front-right and front-left speakers are full range and this action sets the LRBig flag. To clear this flag, select the check box. **Reverse bass management** distributes the signal from the subwoofer channel to the other output channels. The signal is directed either to all channels or to the front-left and front-right channels, depending on the setting of the LRBig flag. This process uses a substantial gain reduction when mixing the subwoofer signal into the other channels. The bass management mode that is used depends on the availability of a subwoofer and the bass-handling capability of the main speakers. In Windows, the user provides this information via the Sound applet in Control Panel.|
+|Environmental Effects|Environmental effects work to increase the reality of audio playback by more accurately simulating real-world audio environments. There are a number of different environments that you can select, for example "stadium" simulates the acoustics of a sports stadium.|
+|Speaker Protection|The purpose of speaker protection is to suppress resonant frequencies that would cause the speakers to do physical harm to any of the PCs' system components. For example, some physical hard drives can be damaged by playing a loud sound at just the right frequency. Secondarily, speaker protection works to minimize damage to speakers, by attenuating the signal, when it exceeds certain values.|
+|Speaker Compensation|Some speakers are better at reproducing sound than others. For example, a particular speaker may attenuate sounds below 100 Hz. Sometimes audio drivers and firmware DSP solutions have knowledge about the specific performance characteristics of the speakers they are playing to, and they can add processing designed to compensate for the speaker limitations. For example, an endpoint effect (EFX) could be created that applies gain to frequencies below 100 Hz. This effect, when combined with the attenuation in the physical speaker, results in enhanced audio fidelity.|
+|Dynamic Range Compression|Dynamic range compression amplifies quiet sounds by narrowing or "compressing" an audio signal's dynamic range. Audio compression amplifies quiet sounds which are below a certain threshold while loud sounds remain unaffected.|
 
 The \#define statements shown here, are available in the KSMedia.h header file.
 
@@ -425,11 +308,3 @@ DYNAMIC RANGE COMPRESSION
 DEFINE_GUIDSTRUCT("6f64adce-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION);
 #define AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION)
 ```
-
- 
-
- 
-
-
-
-

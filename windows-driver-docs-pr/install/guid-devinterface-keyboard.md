@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_KEYBOARD
 description: GUID_DEVINTERFACE_KEYBOARD
-ms.assetid: ae434c45-07f6-4aa1-b9d3-e4ceca8cc81c
 keywords: ["GUID_DEVINTERFACE_KEYBOARD Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_KEYBOARD
 
 
-The GUID_DEVINTERFACE_KEYBOARD [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for keyboard devices.
+The GUID_DEVINTERFACE_KEYBOARD [device interface class](./overview-of-device-interface-classes.md) is defined for keyboard devices.
 
 <table>
 <colgroup>
@@ -45,21 +44,19 @@ The GUID_DEVINTERFACE_KEYBOARD [device interface class](https://docs.microsoft.c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for keyboard devices register instances of this device interface class to notify the system and applications of the presence of keyboard devices.
 
 The system-supplied [keyboard class driver](../hid/keyboard-and-mouse-class-drivers.md) registers an instance of this device interface class for a keyboard device. Access an instance of this device interface class by using the I/O interface supported by the keyboard class driver.
 
-For general information about supporting keyboard devices, see [HID Architecture](https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)) and [Features of the Kbdclass and Mouclass Drivers](../hid/keyboard-and-mouse-class-drivers.md).
+For general information about supporting keyboard devices, see [HID Architecture](../hid/hid-architecture.md) and [Features of the Kbdclass and Mouclass Drivers](../hid/keyboard-and-mouse-class-drivers.md).
 
-The WDK includes sample code for the system-supplied keyboard class driver. The keyboard class driver uses the obsolete identifier [**GUID_CLASS_KEYBOARD**](guid-class-keyboard.md) to register an instance of this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
+The WDK includes sample code for the system-supplied keyboard class driver. The keyboard class driver uses the obsolete identifier [**GUID_CLASS_KEYBOARD**](guid-class-keyboard.md) to register an instance of this [device setup class](./overview-of-device-setup-classes.md).
 
 For information about the device interface class for mouse devices, see [**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,11 +83,4 @@ Requirements
 [**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Filter drivers
 description: Filter drivers
-ms.assetid: 626547ba-4c26-4be7-b209-c5e26daf56ab
 keywords:
 - filter drivers WDK networking , architecture
 - NDIS filter drivers WDK , architecture
@@ -16,7 +15,7 @@ NDIS 6.0 introduced NDIS filter drivers. Filter drivers can monitor and modify t
 
 A *filter module* is an instance of a filter driver. As the following figure illustrates, filter modules are typically layered between miniport adapters and protocol bindings.
 
-![diagram illustrating an ndis driver stack with filter modules](images/filterstack.png)
+![diagram illustrating an ndis driver stack with filter modules.](images/filterstack.png)
 
 A filter driver communicates with NDIS and other NDIS drivers through the NDIS library. The NDIS library exports a full set of functions (**NdisF*Xxx*** and other **Ndis*Xxx*** functions) that encapsulate all of the operating system functions that a filter driver must call. The filter driver, in turn, must export a set of entry points (*FilterXxx* functions) that NDIS calls for its own purposes, or on behalf of other drivers, to access the filter driver.
 
@@ -25,6 +24,6 @@ A filter driver communicates with NDIS and other NDIS drivers through the NDIS l
 
 ## Related topics
 
-[NDIS Filter Drivers](ndis-filter-drivers2.md)
+[NDIS Filter Drivers](./roadmap-for-developing-ndis-filter-drivers.md)
 
-[NDIS Filter Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[NDIS Filter Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

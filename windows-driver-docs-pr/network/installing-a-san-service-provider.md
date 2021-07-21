@@ -1,7 +1,6 @@
 ---
 title: Installing a SAN Service Provider
 description: Installing a SAN Service Provider
-ms.assetid: 3a7fcacf-ef26-4a41-a991-230daf67accf
 keywords:
 - Windows Sockets Direct WDK , installing components
 - SAN service providers WDK , installing
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 A SAN service provider is typically installed as a base Windows Sockets service provider that interfaces with the Windows Sockets switch. Although a SAN service provider can be installed for direct use by an application instead, the Windows Sockets Direct technology does not support using a SAN service provider in this manner. A SAN service provider that is installed for direct use by an application exports its native address family and protocol characteristics rather than those of TCP/IP protocol.
 
-A SAN service provider that is indirectly exposed to applications through the Windows Sockets switch must set the PFL\_HIDDEN flag in the **dwProviderFlags** member of the SAN service provider's [**WSAPROTOCOL\_INFOW**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565963(v=vs.85)) structure. To install the SAN service provider on the operating system, the SAN service provider's installation mechanism passes this structure in a call to the **WSCInstallProvider** function. For more information about **WSCInstallProvider**, see the Microsoft Windows SDK documentation. The SAN service provider's installation mechanism can be for example, a setup program or a function exported by the SAN service provider and called by a INF file directive.
+A SAN service provider that is indirectly exposed to applications through the Windows Sockets switch must set the PFL\_HIDDEN flag in the **dwProviderFlags** member of the SAN service provider's [**WSAPROTOCOL\_INFOW**](/previous-versions/windows/hardware/network/ff565963(v=vs.85)) structure. To install the SAN service provider on the operating system, the SAN service provider's installation mechanism passes this structure in a call to the **WSCInstallProvider** function. For more information about **WSCInstallProvider**, see the Microsoft Windows SDK documentation. The SAN service provider's installation mechanism can be for example, a setup program or a function exported by the SAN service provider and called by a INF file directive.
 
 The SAN service provider's installation mechanism must add a value of type REG\_BINARY to the following key in the registry before the SAN service provider can be detected by the Windows Sockets switch as a base Windows Sockets service provider:
 
@@ -67,10 +66,4 @@ The vendor can also assign a unique name that represents this GUID, for example:
      
 
  
-
- 
-
-
-
-
 

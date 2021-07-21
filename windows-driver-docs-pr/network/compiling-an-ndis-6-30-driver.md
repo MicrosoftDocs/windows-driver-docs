@@ -1,7 +1,6 @@
 ---
 title: Compiling an NDIS 6.30 driver
 description: This section explains how to compile an NDIS 6.30 driver
-ms.assetid: 6CBAFAA2-7DA3-4184-B82B-AEFF61F7072C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,15 +16,9 @@ The WDK for Windows 8 supports header versioning. Header versioning makes sure 
 
 -   For a filter or protocol driver, add NDIS630=1.
 
-For information on building a driver with the Windows 8 release of the WDK, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
+For information on building a driver with the Windows 8 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](https://docs.microsoft.com/windows-hardware/drivers).
-
- 
+For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](/windows-hardware/drivers).
 
  
-
-
-
-
 

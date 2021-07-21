@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_IHV_TASK_COMPLETE
 description: NDIS_STATUS_WDI_INDICATION_IHV_TASK_COMPLETE indicates the completion of OID_WDI_TASK_IHV.
-ms.assetid: 03EA1580-110D-483B-BD4D-9275A7AC18A8
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_IHV_TASK_COMPLETE Network Drivers Starting with Windows Vista
@@ -24,8 +23,7 @@ NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_COMPLETE indicates the completion of [
 
 This indication contains no additional data. The data in the header is sufficient. The completion status from the message is not forwarded to anyone.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

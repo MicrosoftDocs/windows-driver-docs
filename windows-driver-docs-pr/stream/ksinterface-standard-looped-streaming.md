@@ -1,7 +1,6 @@
 ---
 title: KSINTERFACE\_STANDARD\_LOOPED\_STREAMING
 description: KSINTERFACE\_STANDARD\_LOOPED\_STREAMING
-ms.assetid: c12e7085-fa13-48d3-b4ed-ea0a708f026b
 keywords: ["KSINTERFACE_STANDARD_LOOPED_STREAMING Streaming Media Devices"]
 topic_type:
 - apiref
@@ -25,13 +24,7 @@ If a pin supports KSINTERFACE\_STANDARD\_LOOPED\_STREAMING, the relevant filter 
 
 ### See Also
 
-[KSINTERFACESETID\_Standard](ksinterfacesetid-standard.md), [**KSPIN\_INTERFACE**](https://docs.microsoft.com/previous-versions/ff563537(v=vs.85)), [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor)
+[KSINTERFACESETID\_Standard](ksinterfacesetid-standard.md), [**KSPIN\_INTERFACE**](/windows-hardware/drivers/stream/kspin-interface-structure), [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor)
 
  
-
- 
-
-
-
-
 

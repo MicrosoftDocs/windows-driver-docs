@@ -1,7 +1,6 @@
 ---
 title: Using the MapTransferEx Routine
 description: The MapTransferEx routine initializes a set of previously allocated DMA resources and starts a DMA transfer.
-ms.assetid: 79D3DDB2-B134-43B2-A6CC-94035C793047
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -9,12 +8,12 @@ ms.date: 10/17/2018
 # Using the MapTransferEx Routine
 
 
-The [**MapTransferEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer_ex) routine initializes a set of previously allocated DMA resources and starts a DMA transfer. This routine is available in version 3 of the DMA operations interface. Version 3 of this interface is supported starting with Windows 8. For more information about the DMA operations interface, see [**DMA\_OPERATIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations).
+The [**MapTransferEx**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer_ex) routine initializes a set of previously allocated DMA resources and starts a DMA transfer. This routine is available in version 3 of the DMA operations interface. Version 3 of this interface is supported starting with Windows 8. For more information about the DMA operations interface, see [**DMA\_OPERATIONS**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations).
 
 ## Comparison of MapTransferEx to MapTransfer
 
 
-**MapTransferEx** is an improved version of the [**MapTransfer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer) routine. **MapTransfer** is available in all versions of the DMA operations interface, starting with version 1 in Windows 2000. One call to **MapTransfer** can map one contiguous block of physical memory from an MDL. However, the data buffer for a complex DMA transfer might be described by an MDL chain, and each MDL in the chain might describe several blocks of physically contiguous memory. To use **MapTransfer** to transfer such a buffer, a driver must make many calls to **MapTransfer**. Typically, these calls are made inside a pair of nested loops. The inner loop iterates from one block of contiguous physical memory to the next in each MDL, and the outer loop iterates from one MDL to the next in the MDL chain.
+**MapTransferEx** is an improved version of the [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer) routine. **MapTransfer** is available in all versions of the DMA operations interface, starting with version 1 in Windows 2000. One call to **MapTransfer** can map one contiguous block of physical memory from an MDL. However, the data buffer for a complex DMA transfer might be described by an MDL chain, and each MDL in the chain might describe several blocks of physically contiguous memory. To use **MapTransfer** to transfer such a buffer, a driver must make many calls to **MapTransfer**. Typically, these calls are made inside a pair of nested loops. The inner loop iterates from one block of contiguous physical memory to the next in each MDL, and the outer loop iterates from one MDL to the next in the MDL chain.
 
 In contrast, one call to **MapTransferEx** can transfer the entire data buffer for a complex DMA transfer. The following three **MapTransferEx** parameters describe the buffer memory to use for the transfer.
 
@@ -64,12 +63,7 @@ Before calling **MapTransferEx**, the caller sets the \**Length* parameter to th
 
 For example, if a **MapTransferEx** call can transfer only X bytes to or from a buffer for which *Offset* = B and \**Length* = N (on input), then, on return, \**Length* = X. For the next call to **MapTransferEx**, the driver should set *Offset* = B + X and \**Length* = N - X. In both calls, the same MDL chain is used without modification.
 
-If the caller specifies a [*DmaCompletionRoutine*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-dma_completion_routine), **MapTransferEx** writes the \**Length* output value before it schedules the *DmaCompletionRoutine* to run. This behavior ensures that the updated \**Length* value is always available before the *DmaCompletionRoutine* runs. For example, if a DMA transfer requires two **MapTransferEx** calls, the *DmaCompletionRoutine* that the first call schedules can obtain the \**Length* output value from the first call. The routine can then use this value to calculate the \**Length* input value for the second call. Typically, the *Length* parameter points to a location in the \**CompletionContext* value that is supplied to the *DmaCompletionRoutine* as a parameter.
+If the caller specifies a [*DmaCompletionRoutine*](/windows-hardware/drivers/ddi/wdm/nc-wdm-dma_completion_routine), **MapTransferEx** writes the \**Length* output value before it schedules the *DmaCompletionRoutine* to run. This behavior ensures that the updated \**Length* value is always available before the *DmaCompletionRoutine* runs. For example, if a DMA transfer requires two **MapTransferEx** calls, the *DmaCompletionRoutine* that the first call schedules can obtain the \**Length* output value from the first call. The routine can then use this value to calculate the \**Length* input value for the second call. Typically, the *Length* parameter points to a location in the \**CompletionContext* value that is supplied to the *DmaCompletionRoutine* as a parameter.
 
  
-
- 
-
-
-
 

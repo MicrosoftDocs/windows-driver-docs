@@ -1,7 +1,6 @@
 ---
 title: rpcexts.getthreadinfo
 description: The rpcexts.getthreadinfo extension searches the system's RPC state information for thread information.
-ms.assetid: 904605e7-c53b-4e29-874f-7a055fc7a02b
 keywords: ["rpcexts.getthreadinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,8 +59,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension can only be used with CDB or with user-mode WinDbg.
 

@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.SetEndpointPolicy
 description: EFI_USBFN_IO_PROTOCOL.SetEndpointPolicy
-ms.assetid: d7ab0529-1925-47b5-9706-2e6288a6a5cf
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

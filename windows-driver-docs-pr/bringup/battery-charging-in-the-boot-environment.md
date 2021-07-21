@@ -1,7 +1,6 @@
 ---
 title: Battery charging in the boot environment for Windows 10 Mobile
 description: Battery charging in the boot environment for Windows 10 Mobile
-ms.assetid: 5aa1ef68-6939-4896-aabd-d499ba23f89f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -40,7 +39,7 @@ The following steps describe the charging process during the boot flow for devic
 
 The following diagram illustrates this components involved with the boot battery charging process. This diagram intentionally omits many UEFI components to focus on the battery charging process; for a more comprehensive view of the UEFI boot process, see [Boot and UEFI](boot-and-uefi.md).
 
-![pre-boot battery charging flow](images/oem-preboot-battery-flow.png)
+![pre-boot battery charging flow.](images/oem-preboot-battery-flow.png)
 
 ## Charging states supported by the Microsoft-provided battery charging application
 
@@ -50,22 +49,22 @@ When the boot battery charging process reaches the UEFI battery charging applica
 
 The following diagram shows the default boot battery charging process. In this process, the device boots to the main OS as soon as the battery reaches a certain threshold, called the *Boot to Main OS threshold*. For more information about this and other thresholds that are defined as part of the battery charging process, see [Battery charging thresholds](#battery-charging-thresholds).
 
-![preboot battery flow for threshold charging](images/oem-preboot-battery-flow-threshold-charging.png)
+![preboot battery flow for threshold charging.](images/oem-preboot-battery-flow-threshold-charging.png)
 
 The following steps illustrate the corresponding UI flow for this charging process:
 
 1. If the battery does not have sufficient charge to meet the *Boot to Main OS* threshold, the device alternates between the following low battery UI screens for 10 seconds. If the user presses the Power button within this 10 second interval, the device continues to alternate between the following low battery UI screens for an additional 10 seconds.
 
-    ![low battery screen before boot threshold](images/oem-battery-charge-ui-empty-red.png)
-    ![low battery screen before boot threshold](images/oem-battery-charge-ui-plug-red.png)
+    ![Screenshot that shows a low battery.](images/oem-battery-charge-ui-empty-red.png)
+    ![Screenshot that shows a low battery with a power plug.](images/oem-battery-charge-ui-plug-red.png)
 
 2. If the device is idle for 10 seconds, the device turns off the display.
 
-    ![low battery screen black](images/oem-battery-charge-ui-black.png)
+    ![Screenshot that shows a black screen.](images/oem-battery-charge-ui-black.png)
 
 3. After the device reaches the *Boot to Main OS* threshold, the device displays the OEM boot logo and boots to the main OS. The following screenshot demonstrates an example OEM boot logo.
 
-    ![low battery screen oem logo](images/oem-battery-charge-ui-oem-logo.png)
+    ![Screenshot that shows a low battery screen O E M logo.](images/oem-battery-charge-ui-oem-logo.png)
 
 ### Power-off charging
 
@@ -80,37 +79,37 @@ Even when power-off charging is enabled, users will not always go through the po
 
 The following diagram shows the boot battery charging process when power-off charging is enabled.
 
-![preboot battery flow for power-off charging](images/oem-preboot-battery-flow-power-off-charging.png)
+![preboot battery flow for power-off charging.](images/oem-preboot-battery-flow-power-off-charging.png)
 
 The following steps illustrate the corresponding UI flow while power-off charging is enabled:
 
 1. If the battery does not have sufficient charge to meet the *Boot to Main OS* threshold, the device alternates between the following red low battery UI screens for 10 seconds. If the user presses the Power button within this 10 second interval, the device continues to alternate between the following low battery UI screens for an additional 10 seconds.
 
-    ![low battery screen before boot threshold](images/oem-battery-charge-ui-empty-red.png)
-    ![low battery screen before boot threshold](images/oem-battery-charge-ui-plug-red.png)
+    ![Screenshot that shows a white and red low battery.](images/oem-battery-charge-ui-empty-red.png)
+    ![Screenshot that shows a white and red low battery with a power plug.](images/oem-battery-charge-ui-plug-red.png)
 
 2. If the device is idle for 10 seconds, the device turns off the display.
 
-    ![low battery screen black](images/oem-battery-charge-ui-black.png)
+    ![low battery screen black.](images/oem-battery-charge-ui-black.png)
 
 3. After the device reaches the *Boot to Main OS* threshold, the device alternates between the following white low battery UI screens for 10 seconds rather than booting directly to the main OS. If the user presses the Power button for a short duraction (less than 2 seconds) within this 10 second interval, the device continues to alternate between the following low battery UI screens for an additional 10 seconds.
 
-    ![low battery screen after boot threshold](images/oem-battery-charge-ui-empty-white.png)
-    ![low battery screen after boot threshold](images/oem-battery-charge-ui-plug-white.png)
+    ![Screenshot that shows a white and black low battery UI.](images/oem-battery-charge-ui-empty-white.png)
+    ![Screenshot that shows a white and black low battery with a power plug UI.](images/oem-battery-charge-ui-plug-white.png)
 
 4. If the device is idle for 10 seconds, the device turns off the display.
 
-    ![low battery screen black](images/oem-battery-charge-ui-black.png)
+    ![low battery screen black.](images/oem-battery-charge-ui-black.png)
 
 5. If the user presses the Power button for 2 seconds or longer, the device displays the OEM boot logo and boots to the main OS. The following screenshot demonstrates an example OEM boot logo.
 
-    ![low battery screen oem logo](images/oem-battery-charge-ui-oem-logo.png)
+    ![low battery screen oem logo.](images/oem-battery-charge-ui-oem-logo.png)
 
 ## Battery charging thresholds
 
 Microsoft has defined several battery charging thresholds to ensure correct battery charging user experience. Some of these thresholds must be implemented by the OEM to ensure correct battery charging behavior. The following diagram illustrates how each of the charging thresholds fit together (this diagram is not drawn to scale).
 
-![preboot battery charging thresholds](images/oem-preboot-battery-charging-thresholds.png)
+![preboot battery charging thresholds.](images/oem-preboot-battery-charging-thresholds.png)
 
 The left side of the diagram shows all thresholds that affect the user experience when the device is charging, and the right side of the diagram shows all thresholds that affect the user experience when the device is discharging. The following table describes each of the thresholds.
 
@@ -166,7 +165,7 @@ The left side of the diagram shows all thresholds that affect the user experienc
 <tr class="even">
 <td><p>Main OS shut down threshold</p></td>
 <td><p>This is the threshold at which the software safely shuts the device off. It is required to prevent system memory corruption.</p></td>
-<td><p>The OEM must set this threshold to be lower than the <em>Boot to Main OS threshold</em> and lower than the <em>Main OS warning threshold</em>. In addition, this threshold must be greater than or equal to 2%. This threshold is defined by the <strong>DefaultAlert1</strong> member of the <a href="https://docs.microsoft.com/windows/desktop/Power/battery-information-str" data-raw-source="[BATTERY_INFORMATION](https://docs.microsoft.com/windows/desktop/Power/battery-information-str)">BATTERY_INFORMATION</a> struct. Contact the SoC vendor for details on how to modify this threshold.</p></td>
+<td><p>The OEM must set this threshold to be lower than the <em>Boot to Main OS threshold</em> and lower than the <em>Main OS warning threshold</em>. In addition, this threshold must be greater than or equal to 2%. This threshold is defined by the <strong>DefaultAlert1</strong> member of the <a href="/windows/desktop/Power/battery-information-str" data-raw-source="[BATTERY_INFORMATION](/windows/desktop/Power/battery-information-str)">BATTERY_INFORMATION</a> struct. Contact the SoC vendor for details on how to modify this threshold.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Hardware shut down threshold</p></td>
@@ -179,4 +178,4 @@ The left side of the diagram shows all thresholds that affect the user experienc
 ## Related topics
 
 [Architecture of the UEFI battery charging application provided by Microsoft](architecture-of-the-uefi-battery-charging-application.md)  
-[Boot and UEFI](boot-and-uefi.md)  
+[Boot and UEFI](boot-and-uefi.md)

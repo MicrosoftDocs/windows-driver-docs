@@ -1,7 +1,6 @@
 ---
 title: DEFINE_DEVPROPKEY
 description: In Windows Vista and later versions of Windows, the DEFINE_DEVPROPKEY macro creates a DEVPROPKEY structure that represents a device property key in the unified device property model.
-ms.assetid: 9723241d-939e-40b4-8f06-83c99b31c02e
 keywords: ["DEFINE_DEVPROPKEY Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # DEFINE_DEVPROPKEY
 
 
-In Windows Vista and later versions of Windows, the DEFINE_DEVPROPKEY macro creates a DEVPROPKEY structure that represents a device property key in the [unified device property model](https://docs.microsoft.com/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-).
+In Windows Vista and later versions of Windows, the DEFINE_DEVPROPKEY macro creates a DEVPROPKEY structure that represents a device property key in the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md).
 
 ``` syntax
 #ifdef INITGUID
@@ -70,15 +69,13 @@ A byte-typed variable that supplies the value of the **data4\[7\]** member of th
 <a href="" id="pid"></a>*pid*  
 A DEVPROPID-typed variable that supplies the value of the **pid** (property identifier) member of the DEVPROPKEY structure. The property identifier must be greater than or equal to two.
 
-Remarks
--------
+## Remarks
 
-The DEFINE_DEVPROPKEY structure is part of the [unified device property model](https://docs.microsoft.com/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-).
+The DEFINE_DEVPROPKEY structure is part of the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md).
 
-The DEFINE_DEVPROPKEY macro can be used to create a [**DEVPROPKEY**](https://docs.microsoft.com/windows-hardware/drivers/install/devpropkey) structure that represents a custom device property.
+The DEFINE_DEVPROPKEY macro can be used to create a [**DEVPROPKEY**](./devpropkey.md) structure that represents a custom device property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -96,14 +93,7 @@ Requirements
 ## See also
 
 
-[**DEVPROPKEY**](https://docs.microsoft.com/windows-hardware/drivers/install/devpropkey)
+[**DEVPROPKEY**](./devpropkey.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,11 +1,10 @@
 ---
 title: Driver Verifier Options
 description: Driver Verifier options and rule classes
-ms.assetid: f251fe07-e68e-4d93-9aa5-9a0bc818756d
 keywords:
 - Driver Verifier WDK , options listed
 - errors WDK Driver Verifier
-ms.date: 04/20/2017
+ms.date: 06/29/2021
 ms.localizationpriority: medium
 ---
 
@@ -62,11 +61,14 @@ Rule classes are marked with (\*) require I/O Verification (5) that will be auto
 | Kernel synchronization delay fuzzing | 24 |
 | VM switch verification | 25 |
 | Code integrity checks | 26 |
+| Driver isolation checks (requires 36) | 33 |
+| Additional IRQL checking | 35 |
+| Enable DIF | 36
 
-## Optional feature and rule class descriptions 
+## Optional feature and rule class descriptions
 
 [Special Pool](special-pool.md)
-    
+
 When this option is enabled, Driver Verifier allocates most of the driver's memory requests from a special pool. This special pool is monitored for memory overruns, memory underruns, and memory that is accessed after it is freed.
 
 [Force IRQL Checking](force-irql-checking.md)
@@ -87,15 +89,15 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [Deadlock Detection](deadlock-detection.md)
 
-(Windows XP and later) When this option is active, Driver Verifier monitors the driver's use of spin locks, mutexes, and fast mutexes. This detects if the driver's code has the potential for causing a deadlock at some point.
+ When this option is active, Driver Verifier monitors the driver's use of spin locks, mutexes, and fast mutexes. This detects if the driver's code has the potential for causing a deadlock at some point.
 
 [Enhanced I/O Verification](enhanced-i-o-verification.md)
 
-(Windows XP and later) When this option is active, Driver Verifier monitors the calls of several I/O Manager routines and performs stress testing of PnP IRPs, power IRPs and WMI IRPs. In Windows 7 and later versions of the Windows operating system, all the features of Enhanced I/O Verification are included as part of [I/O Verification](i-o-verification.md) and it is no longer available nor necessary to select this option in Driver Verifier Manager or from the command line.
+ When this option is active, Driver Verifier monitors the calls of several I/O Manager routines and performs stress testing of PnP IRPs, power IRPs and WMI IRPs. In Windows 7 and later versions of the Windows operating system, all the features of Enhanced I/O Verification are included as part of [I/O Verification](i-o-verification.md) and it is no longer available nor necessary to select this option in Driver Verifier Manager or from the command line.
 
 [DMA Verification](dma-verification.md)
 
-(Windows XP and later) When this option is active, Driver Verifier monitors the driver's use of DMA routines. This detects improper use of DMA buffers, adapters, and map registers.
+ When this option is active, Driver Verifier monitors the driver's use of DMA routines. This detects improper use of DMA buffers, adapters, and map registers.
 
 [Security Checks](security-checks.md)
 
@@ -107,19 +109,11 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [Force Pending I/O Requests](force-pending-i-o-requests.md)
 
-(Windows Vista and later) When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+(Windows Vista and later) When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 [IRP Logging](irp-logging.md)
 
 (Windows Server 2003 and later) When this option is active, Driver Verifier monitors a driver's use of IRPs and creates a log of IRP use.
-
-[Disk Integrity Checking](disk-integrity-checking.md)
-
-(Introduced in Windows Server 2003. Not available in Windows 7 and later.) When this option is active, Driver Verifier monitors hard disk access, and detects whether the disk is preserving its data correctly.
-
-[SCSI Verification](scsi-verification.md)
-
-(Windows XP and later) When this option is active, Driver Verifier monitors a SCSI miniport driver for improper use of exported SCSI port routines, excessive delays, and improper handling of SCSI requests.
 
 [Storport Verification](dv-storport-verification.md)
 
@@ -127,7 +121,7 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [Power Framework Delay Fuzzing](concurrency-stress-test.md)
 
-(Starting with Windows 8) When this option is active, Driver Verifier randomizes thread schedules to help flush out concurrency errors in the drivers that use the [power management framework (PoFx)](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-the-power-management-framework). This option is not recommended for drivers that do not directly utilize the power management framework (PoFx)..
+(Starting with Windows 8) When this option is active, Driver Verifier randomizes thread schedules to help flush out concurrency errors in the drivers that use the [power management framework (PoFx)](../kernel/overview-of-the-power-management-framework.md). This option is not recommended for drivers that do not directly utilize the power management framework (PoFx)..
 
 [DDI compliance checking](ddi-compliance-checking.md)
 
@@ -159,7 +153,7 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [VM switch verification](vm-switch-verification.md)
 
-(Starting with Windows 8.1) This option monitors filter drivers (*extensible switch extensions*) that run inside the [Hyper-V Extensible Switch](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch).
+(Starting with Windows 8.1) This option monitors filter drivers (*extensible switch extensions*) that run inside the [Hyper-V Extensible Switch](../network/hyper-v-extensible-switch.md).
 
 [Port/Miniport interface checking](port-miniport-interface-checking.md)
 
@@ -171,8 +165,17 @@ When using virtualization-based security to isolate Code Integrity, the only way
 
 [WDF verification](wdf-verification.md)
 
-WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Driver Framework (KMDF) requirements properly. 
+WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Driver Framework (KMDF) requirements properly.
 
+Additional IRQL checking
+
+Additional IRQL checking augments the DDI Compliance Checking IRQL rules for PASSIVE_LEVEL. It consists of two rules:
+- The [IrqlIoRtlZwPassive](wdm-irqliortlzwpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.
+- The The [IrqlNtifsApcPassive](wdm-irqlntifsapcpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
+
+[Driver Isolation Checks](../develop/validating-windows-drivers.md#driver-verifier-driver-isolation-checks)
+
+Driver Isolation checks are critical for validating the runtime driver package isolation requirements of Windows Drivers For more information, see [Getting started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).  The checks monitor registry reads and writes that are not allowed for isolated driver packages.
 
 ## Standard settings
 
@@ -199,16 +202,16 @@ WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Dri
 <td align="left"><p><a href="i-o-verification.md" data-raw-source="[I/O Verification](i-o-verification.md)">I/O Verification</a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="deadlock-detection.md" data-raw-source="[Deadlock Detection](deadlock-detection.md)">Deadlock Detection</a> (Windows XP and later)</p></td>
+<td align="left"><p><a href="deadlock-detection.md" data-raw-source="[Deadlock Detection](deadlock-detection.md)">Deadlock Detection</a> </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="enhanced-i-o-verification.md" data-raw-source="[Enhanced I/O Verification](enhanced-i-o-verification.md)">Enhanced I/O Verification</a> (In Windows 7 and later, this option is automatically activated when you select I/O Verification)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="dma-verification.md" data-raw-source="[DMA Verification](dma-verification.md)">DMA Verification</a> (Windows XP and later)</p></td>
+<td align="left"><p><a href="dma-verification.md" data-raw-source="[DMA Verification](dma-verification.md)">DMA Verification</a> </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="security-checks.md" data-raw-source="[Security Checks](security-checks.md)">Security Checks</a> (Windows XP and later)</p></td>
+<td align="left"><p><a href="security-checks.md" data-raw-source="[Security Checks](security-checks.md)">Security Checks</a> </p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="miscellaneous-checks.md" data-raw-source="[Miscellaneous Checks](miscellaneous-checks.md)">Miscellaneous Checks</a> (Windows Vista and later)</p></td>
@@ -219,10 +222,7 @@ WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Dri
 </tbody>
 </table>
 
- 
-
 ## Driver Verifier options that require I/O Verification
-
 
 There are four options that require you to first enable [I/O Verification](i-o-verification.md). If I/O Verification is not enabled, these options are not enabled.
 
@@ -230,12 +230,3 @@ There are four options that require you to first enable [I/O Verification](i-o-v
 -   [IRP Logging](irp-logging.md)
 -   [Invariant MDL Checking for Stack](invariant-mdl-checking-for-stack.md)
 -   [Invariant MDL Checking for Driver](invariant-mdl-checking-for-driver.md)
-
- 
-
- 
-
-
-
-
-

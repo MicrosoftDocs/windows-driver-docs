@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_BYTES\_PER\_LINE
 description: The WIA\_IPA\_BYTES\_PER\_LINE property contains the number of bytes in one scan line of an image. The WIA minidriver creates and maintains this property.
-ms.assetid: f746ce05-5dfe-47fe-857a-967a6144de16
 keywords: ["WIA_IPA_BYTES_PER_LINE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPA\_BYTES\_PER\_LINE property is optional for Windows Vista drivers for all transfer-enabled items. If this property, together with the [**WIA\_IPA\_NUMBER\_OF\_LINES**](wia-ipa-number-of-lines.md) and [**WIA\_IPA\_PIXELS\_PER\_LINE**](wia-ipa-pixels-per-line.md) properties are implemented, applications designed for Windows Server 2003, Windows XP, and previous versions of Windows can estimate the number of pixels for each line, the number of bytes that are required for each scan line, and the total number of scan lines in the image. These values are not accurate because the image processing filter might modify the actual values that these properties represent.
 
@@ -38,8 +36,7 @@ If the Windows Vista driver does not supply these properties, the compatibility 
 
 Windows Vista applications should always parse the image header data to get more accurate information on the image then is available from these properties.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

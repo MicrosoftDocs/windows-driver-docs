@@ -1,7 +1,6 @@
 ---
 title: Printer INF Files
 description: Printer INF Files
-ms.assetid: 33f1c836-0846-49d5-8ab5-baadf9e0678c
 keywords:
 - installing drivers WDK printer , INF files
 - printer driver installations WDK , INF files
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-An extensive discussion of INF files is provided in [General Guidelines for INF Files](https://docs.microsoft.com/windows-hardware/drivers/install/general-guidelines-for-inf-files).
+An extensive discussion of INF files is provided in [General Guidelines for INF Files](../install/general-guidelines-for-inf-files.md).
 
 The following topics provide specific information about INF files for printers:
 
@@ -51,9 +50,4 @@ Also see the installation topics in the following section:
 [Customizing Print Spooler Components](print-spooler-components.md)
 
  
-
- 
-
-
-
 

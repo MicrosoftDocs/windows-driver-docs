@@ -1,7 +1,6 @@
 ---
 title: ContentTypeValue element
 description: The required ContentTypeValue element specifies one document content type that the scan device supports.
-ms.assetid: 04d29626-cc14-4db3-88ec-cfb1cc9cd1cd
 keywords: ["ContentTypeValue element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ContentTypeValue** element specifies one document content type that the scan device supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ContentTypeValue>
@@ -27,13 +25,11 @@ Usage
 </wscn:ContentTypeValue>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -98,8 +94,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 You can both extend and subset the allowed values for this element.
 

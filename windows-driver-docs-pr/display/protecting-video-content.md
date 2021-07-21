@@ -1,7 +1,6 @@
 ---
 title: Protecting Video Content
 description: Protecting Video Content
-ms.assetid: eacb1c8f-6c29-4797-9476-4dcf582a3633
 keywords:
 - protecting video content WDK Windows 7 display
 - protecting video content WDK Windows Server 2008 R2 display

@@ -1,7 +1,6 @@
 ---
 title: S/PDIF Pass-Through Transmission of Non-PCM Streams
 description: S/PDIF Pass-Through Transmission of Non-PCM Streams
-ms.assetid: c06b880e-20d1-417b-9868-a4fb3b418dbf
 keywords:
 - S/PDIF pass-through WDK audio
 - AC-3-over-S/PDIF format WDK audio
@@ -34,7 +33,7 @@ If you attempt to send unpadded WMA Pro or AC-3 sync frames to a PortCls adapter
 
 The following figure shows an example application of S/PDIF pass-through transmission.
 
-![diagram illustrating an s/pdif pass-through transmission](images/passthru.png)
+![diagram illustrating an s/pdif pass-through transmission.](images/passthru.png)
 
 The figure shows a PC connected to an external audio/visual (A/V) receiver through a coaxial cable. The cable connects the S/PDIF output port on the PC's audio device to the S/PDIF input port on the A/V receiver.
 

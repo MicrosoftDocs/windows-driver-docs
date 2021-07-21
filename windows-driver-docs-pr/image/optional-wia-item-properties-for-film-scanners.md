@@ -1,7 +1,6 @@
 ---
 title: Optional WIA Item Properties for Film Scanners
 description: Optional WIA Item Properties for Film Scanners
-ms.assetid: 6c17deed-7840-4ec0-bc19-d695b3e80c38
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,46 +13,41 @@ ms.localizationpriority: medium
 
 The WIA film scanner item can optionally support the following WIA properties:
 
-[**WIA\_IPA\_FILENAME\_EXTENSION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-filename-extension)
+[**WIA\_IPA\_FILENAME\_EXTENSION**](./wia-ipa-filename-extension.md)
 
-[**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-raw-bits-per-channel)
+[**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](./wia-ipa-raw-bits-per-channel.md)
 
-[**WIA\_IPS\_AUTO\_DESKEW**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-auto-deskew)
+[**WIA\_IPS\_AUTO\_DESKEW**](./wia-ips-auto-deskew.md)
 
-[**WIA\_IPS\_DESKEW\_X**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-deskew-x)
+[**WIA\_IPS\_DESKEW\_X**](./wia-ips-deskew-x.md)
 
-[**WIA\_IPS\_DESKEW\_Y**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-deskew-y)
+[**WIA\_IPS\_DESKEW\_Y**](./wia-ips-deskew-y.md)
 
-[**WIA\_IPS\_LAMP**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-lamp)
+[**WIA\_IPS\_LAMP**](./wia-ips-lamp.md)
 
-[**WIA\_IPS\_LAMP\_AUTO\_OFF**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-lamp-auto-off)
+[**WIA\_IPS\_LAMP\_AUTO\_OFF**](./wia-ips-lamp-auto-off.md)
 
-[**WIA\_IPS\_PREVIEW\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-preview-type)
+[**WIA\_IPS\_PREVIEW\_TYPE**](./wia-ips-preview-type.md)
 
-[**WIA\_IPS\_ROTATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-rotation)
+[**WIA\_IPS\_ROTATION**](./wia-ips-rotation.md)
 
-[**WIA\_IPS\_SEGMENTATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-segmentation)
+[**WIA\_IPS\_SEGMENTATION**](./wia-ips-segmentation.md)
 
-[**WIA\_IPS\_SHOW\_PREVIEW\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-show-preview-control)
+[**WIA\_IPS\_SHOW\_PREVIEW\_CONTROL**](./wia-ips-show-preview-control.md)
 
-[**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-supports-child-item-creation)
+[**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](./wia-ips-supports-child-item-creation.md)
 
-[**WIA\_IPS\_THRESHOLD**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-threshold)
+[**WIA\_IPS\_THRESHOLD**](./wia-ips-threshold.md)
 
-[**WIA\_IPS\_WARM\_UP\_TIME**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-warm-up-time)
+[**WIA\_IPS\_WARM\_UP\_TIME**](./wia-ips-warm-up-time.md)
 
-[**WIA\_IPS\_XSCALING**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-xscaling)
+[**WIA\_IPS\_XSCALING**](./wia-ips-xscaling.md)
 
-[**WIA\_IPS\_YSCALING**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-yscaling)
+[**WIA\_IPS\_YSCALING**](./wia-ips-yscaling.md)
 
-**Note**   The [**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-raw-bits-per-channel) property is required if the WiaImgFmt\_RAW format is supported. The [**WIA\_IPA\_Format**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-format) property must support the WiaImgFmt\_BMP format. The [**WIA\_IPS\_THRESHOLD**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-threshold) property is required when the [**WIA\_IPA\_DEPTH**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-depth) property is set to 1 BPP or when the [**WIA\_IPA\_DATATYPE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-datatype) property is set to WIA\_DATA\_THRESHOLD.
-
- 
+**Note**   The [**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](./wia-ipa-raw-bits-per-channel.md) property is required if the WiaImgFmt\_RAW format is supported. The [**WIA\_IPA\_Format**](./wia-ipa-format.md) property must support the WiaImgFmt\_BMP format. The [**WIA\_IPS\_THRESHOLD**](./wia-ips-threshold.md) property is required when the [**WIA\_IPA\_DEPTH**](./wia-ipa-depth.md) property is set to 1 BPP or when the [**WIA\_IPA\_DATATYPE**](./wia-ipa-datatype.md) property is set to WIA\_DATA\_THRESHOLD.
 
  
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Add-registry-sections in a Network INF File
 description: Add-registry-sections in a Network INF File
-ms.assetid: 43c39389-5d01-49e9-a792-e853136068b4
 keywords:
 - INF files WDK network , add-registry-sections
 - network INF files WDK , add-registry-sections
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 
 
-An INF file contains one or more *add-registry-sections* for each component that it installs. An *add-registry-section* adds keys and values to the registry. The **DDInstall** section of an INF file contains an **AddReg** directive that references one or more *add-registry-sections*. For more information about the *add-registry-section* and the **AddReg** directive, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+An INF file contains one or more *add-registry-sections* for each component that it installs. An *add-registry-section* adds keys and values to the registry. The **DDInstall** section of an INF file contains an **AddReg** directive that references one or more *add-registry-sections*. For more information about the *add-registry-section* and the **AddReg** directive, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 ### Adding Keys and Values to Instance Keys
 
@@ -63,10 +62,4 @@ Each network INF file must contain at least one *add-registry-section* that adds
 For a list of **Ndi** registry keys and values that are available in Windows 95/98/Me but not used in Windows 2000 and later versions, see [Ndi Values and Keys Not Used in Windows 2000 and Later Versions](ndi-values-and-keys-not-used-in-windows-2000-and-later-versions.md).
 
  
-
- 
-
-
-
-
 

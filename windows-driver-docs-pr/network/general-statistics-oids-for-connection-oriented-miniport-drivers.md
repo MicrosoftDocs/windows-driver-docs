@@ -1,7 +1,6 @@
 ---
 title: General statistics OIDs for connection-oriented miniport drivers
 description: This topic describes general statistics OIDs for connection-oriented objects.
-ms.assetid: 1967ebb9-0cc9-46ca-b9db-fc505f41c38e
 keywords:
 - General statistics OIDs connection-oriented miniport drivers
 ms.date: 11/02/2017
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 The following table summarizes the OIDs used to get or set the general statistics characteristics of connection-oriented miniport drivers and/or their NICs.
 
 > [!TIP] 
-> A connection-oriented miniport driver handles such requests in its [MiniportCoOidRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) callback function.
+> A connection-oriented miniport driver handles such requests in its [MiniportCoOidRequest](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) callback function.
 
 In this table, M indicates an OID is mandatory, while O indicates it is optional.
 
@@ -46,4 +45,3 @@ All one-Gbps and faster connection-oriented miniport drivers must support 64-bit
 Such miniport drivers can also support 64-bit counters for other statistics OIDs, such as OIDs that indicate transmit or receive errors.
 
 System support for 64-bit counters is available in Windows XP and later versions.
-

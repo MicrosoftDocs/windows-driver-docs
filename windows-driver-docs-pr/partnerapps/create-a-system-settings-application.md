@@ -1,7 +1,6 @@
 ---
 title: Create a partner settings app
 description: Create a partner settings app
-ms.assetid: 3b549c11-f8b2-46e8-9d22-4edc787743ee
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,9 +21,9 @@ For example, in the **Devices** tab of the **Settings** app, the following pages
 * AutoPlay
 * USB
 
-![Devices list in Settings app](images/devices-list-in-settings.png)
+![Devices list in Settings app.](images/devices-list-in-settings.png)
 
-You can find a list of all level two pages in the [Launch the Windows Settings app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must be relevant to the page they are placed on.
+You can find a list of all level two pages in the [Launch the Windows Settings app](/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must be relevant to the page they are placed on.
 
 Additionally, you are able to add up to five search terms on each page, which must be relevant to the content on the page. For the best search experience, use specific phrases. Using general and one-word terms may cause your links to not appear in relevant searches.  
 
@@ -53,7 +52,7 @@ Partner settings apps have the following characteristics:
 > [!NOTE]
 > Settings applications are Universal Windows Platform apps and should conform to all UWP programming guidelines. See [Guidelines for Universal Windows Platform (UWP) apps](https://developer.microsoft.com/windows/apps/design) for more information.
 
-1. Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://docs.microsoft.com/windows/uwp/get-started/create-uwp-apps).
+1. Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](/windows/uwp/get-started/create-uwp-apps).
 
     If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app.
 
@@ -80,7 +79,7 @@ Partner settings apps have the following characteristics:
     </Extensions>
     ```
 
-   Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.
+   Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.
 
     ```xml
      <uap:VisualElements AppListEntry="none" DisplayName="OptionalPackage"

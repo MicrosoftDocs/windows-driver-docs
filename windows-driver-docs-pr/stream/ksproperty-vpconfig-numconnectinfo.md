@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_NUMCONNECTINFO
 description: The KSPROPERTY\_VPCONFIG\_NUMCONNECTINFO property obtains the maximum number of electrical connection configurations.
-ms.assetid: 8ffab85d-cf0d-44d7-ba37-692c3adfa1e5
 keywords: ["KSPROPERTY_VPCONFIG_NUMCONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_VPCONFIG\_NUMCONNECTINFO property obtains the maximum number of 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
@@ -57,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_NUMCONNECTINFO property obtains the maximum number of 
 
 The property value (operation data) is a DWORD that describes the maximum number of video port configurations.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -72,12 +70,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

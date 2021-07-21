@@ -1,7 +1,6 @@
 ---
 title: Filter Module Send and Receive Operations
 description: Filter Module Send and Receive Operations
-ms.assetid: 208f9af6-cde4-4801-9355-daa6633d7d0b
 keywords:
 - filter modules WDK networking , send operations
 - filter modules WDK networking , receive operations
@@ -24,9 +23,9 @@ Filter modules are stacked over a miniport adapter. For more information about t
 
 The filter modules in the driver stack can filter all send requests and receive indications that are associated with the underlying adapter. This is true for all protocol bindings to an adapter. For more information about NDIS 6.0 send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
 
-Filter drivers do not provide direct support for legacy send and receive operations that are based on the [**NDIS\_PACKET**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure. Instead, NDIS converts receive indications from legacy miniport drivers to [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures. Also, NDIS handles the required conversions from send requests that are based on NET\_BUFFER structures to legacy send requests that are based on NDIS\_PACKET structures.
+Filter drivers do not provide direct support for legacy send and receive operations that are based on the [**NDIS\_PACKET**](/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure. Instead, NDIS converts receive indications from legacy miniport drivers to [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures. Also, NDIS handles the required conversions from send requests that are based on NET\_BUFFER structures to legacy send requests that are based on NDIS\_PACKET structures.
 
-**Note**  A filter driver can change the send and receive *FliterXxx* functions for a filter module dynamically. For more information, see [Data Bypass Mode](data-bypass-mode.md).
+**Note**  A filter driver can change the send and receive *FilterXxx* functions for a filter module dynamically. For more information, see [Data Bypass Mode](data-bypass-mode.md).
 
  
 
@@ -41,10 +40,4 @@ The following topics provide additional information about filter driver send and
 [Receiving Data in a Filter Driver](receiving-data-in-a-filter-driver.md)
 
  
-
- 
-
-
-
-
 

@@ -4,7 +4,6 @@ description: The AddEnum method adds a new response of type BIDI\_ENUM to the co
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: B172DF90-63F8-4064-8781-EB0E8D799C1A
 keywords: ["AddEnum method Print Devices", "AddEnum method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddEnum method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddEnum method adds a new response of type BIDI\_ENUM to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddEnum(
@@ -30,8 +28,7 @@ HRESULT AddEnum(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -39,13 +36,11 @@ The schema.
 *bstrValue* \[in\]  
 The enum value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

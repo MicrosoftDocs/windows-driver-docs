@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS property describes the maximum number of images that the Imprinter/Endorser item can print or endorse on each page.
-ms.assetid: A8FB39D2-659C-45E9-BE5E-627E594B9D3A
 keywords: ["WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS Imaging Devices"]
 topic_type:
 - apiref
@@ -26,15 +25,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS** property is optional for the Imprinter/Endorser items that support graphics upload. When implemented, the property value **must be** greater than zero (0).
 
 For more information about the TYMED\_MULTIPAGE\_FILE constant, see [**WIA\_IPA\_TYMED**](wia-ipa-tymed.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

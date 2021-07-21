@@ -1,7 +1,6 @@
 ---
 title: Video stabilization registry settings
 description: The OEM-set MaxPixelsPerSecond value in the VideoStabilization registry key enables OEMs to configure video stabilization settings on a device and apply video stabilization to a video at capture-time.
-ms.assetid: F0F7A705-0F39-4A62-A110-A2E47DFB7B42
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -100,4 +99,4 @@ OEMs must verify the following:
 **Note** Retail systems should not have the registry key to disable the video stabilization internal logic described in this section. However, retail systems should have the **VideoStabilization** registry key with a **MaxPixelsPerSecond** value determined through this test process.
 
 
-**Note** The **VideoStabilization** registry key **MaxPixelsPerSecond** value functions only when attribute [MF\_LOW\_LATENCY](https://docs.microsoft.com/windows/desktop/medfound/mf-low-latency) is set on the effect. When the provided video stabilization effect is added to the MediaCapture pipeline, the attribute is automatically set. However, if the video stabilization effect is inserted into a custom pipeline or a pipeline that does not set the **MF\_LOW\_LATENCY** attribute, the registry key has no effect.
+**Note** The **VideoStabilization** registry key **MaxPixelsPerSecond** value functions only when attribute [MF\_LOW\_LATENCY](/windows/desktop/medfound/mf-low-latency) is set on the effect. When the provided video stabilization effect is added to the MediaCapture pipeline, the attribute is automatically set. However, if the video stabilization effect is inserted into a custom pipeline or a pipeline that does not set the **MF\_LOW\_LATENCY** attribute, the registry key has no effect.

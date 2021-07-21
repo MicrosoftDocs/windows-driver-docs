@@ -1,7 +1,6 @@
 ---
 title: Threat modeling for drivers
 description: Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers for the Microsoft Windows family of operating systems.
-ms.assetid: 77FB242E-A07C-4298-80ED-866F8D80118C
 ms.date: 06/27/2018
 ms.localizationpriority: medium
 ---
@@ -60,11 +59,11 @@ One way to organize a threat modeling effort is to follow these steps:
 
 A data flow diagram shows in conceptual form the flow of data between the driver and the external entities with which it interacts—typically the operating system, a user process, and the device. A formal data flow diagram uses the following symbols:
 
-![symbols](images/dataflowdiagramsymbols.gif)
+![symbols.](images/dataflowdiagramsymbols.gif)
 
 The following figure shows a sample data flow diagram for a hypothetical kernel-mode Windows Driver Model (WDM) driver. Regardless of the architecture for your particular type of driver, the conceptual model is the same: show all data paths and identify each source of data that enters or exits the driver.
 
-![sample data flow diagram for hypothetical kernel-mode driver](images/sampledataflowdiagramkernelmodedriver.gif)
+![sample data flow diagram for hypothetical kernel-mode driver.](images/sampledataflowdiagramkernelmodedriver.gif)
 
 **Note**  The previous figure shows data flowing directly between a user process and the driver, and omits any intermediate drivers. However, in reality, all requests pass through the I/O manager and may traverse one or more higher-level drivers before reaching a particular driver. The figure omits these intermediate steps to emphasize the importance of the original source of the data and the context of the thread that supplied the data. Kernel-mode drivers must validate data that originates in user mode.
 
@@ -88,7 +87,7 @@ Finally, the driver receives data from the device because of device I/O operatio
 
 The previous figure shows driver data flow at a broad conceptual level. Each circle represents a relatively large task and lacks detail. In some cases, a one-level diagram such as the sample is adequate for understanding the data sources and paths. If your driver handles many different types of I/O requests from varying sources, you might need to create one or more additional diagrams that show more detail. For example, the circle labeled “Handle I/O Requests” might be expanded into a separate diagram, similar to the following figure.
 
-![expanded data flow diagram for i/o requests](images/expandeddataflowdiagramiorequests.gif)
+![expanded data flow diagram for i/o requests.](images/expandeddataflowdiagramiorequests.gif)
 
 The second diagram shows separate tasks for each type of I/O request in the first diagram. (For simplicity, data paths to the device have been omitted.)
 
@@ -183,7 +182,7 @@ Threat trees and outlines can be useful in modeling such complex scenarios.
 
 A threat tree is a diagram that shows a hierarchy of threats or vulnerabilities; in essence, a threat tree mimics the malicious user’s steps in mounting an attack. The ultimate goal of the attack is at the top of the tree. Each subordinate level shows the steps required to carry out the attack. The following figure is a simple threat tree for the denial-of-service scenario in the preceding example.
 
-![simple threat tree](images/simplethreattree.gif)
+![simple threat tree.](images/simplethreattree.gif)
 
 The threat tree shows the required steps to mount a particular attack and the relationships between the steps. An outline is an alternative to a threat tree.
 
@@ -273,7 +272,7 @@ Consider including the threat modeling process in a broader Secure Development L
 
 The Microsoft SDL process provides a number of recommended software development process that can be modified to fit any size of organization - including a single developer. Consider adding components of the SDL recommendations to your software development process.
 
-For more information, see [Microsoft Security Development Lifecycle (SDL) – Process Guidance](https://docs.microsoft.com/previous-versions/windows/desktop/cc307891(v=msdn.10)).
+For more information, see [Microsoft Security Development Lifecycle (SDL) – Process Guidance](/previous-versions/windows/desktop/cc307891(v=msdn.10)).
 
 **Training and organizational capabilities** - Pursue software development security training to expand your ability to recognize and remediate software vulnerabilities.
 
@@ -331,19 +330,17 @@ For additional driver security resources, see [Driver Security Checklist](driver
 
 **Microsoft Hardware and Driver Developer Information**
 
-[Common Driver Reliability Problems](https://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc) white paper
-
-[Cancel Logic in Windows Drivers](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn653289(v=vs.85)) white paper
+[Cancel Logic in Windows Drivers](/previous-versions/windows/hardware/design/dn653289(v=vs.85)) white paper
 
 [Windows security model: what every driver writer needs to know](windows-security-model.md)
 
 **Microsoft Windows Driver Development Kit (DDK)**
 
-See [Driver Programming Techniques](https://docs.microsoft.com/windows-hardware/drivers/kernel/driver-programming-techniques) in [Kernel-Mode Driver Architecture](https://docs.microsoft.com/windows-hardware/drivers/)
+See [Driver Programming Techniques](../kernel/using-nt-and-zw-versions-of-the-native-system-services-routines.md) in [Kernel-Mode Driver Architecture](../index.yml)
 
 **Test Tools**
 
-See [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/drivers/) in [Test for performance and compatibility](https://docs.microsoft.com/windows-hardware/test/index)
+See [Windows Hardware Lab Kit](../index.yml) in [Test for performance and compatibility](/windows-hardware/test/index)
 
 **Public databases of known threats and software vulnerabilities**
 
@@ -353,11 +350,3 @@ To expand your knowledge of software threats, review the available public databa
 -   Common Weakness Enumeration: <https://cwe.mitre.org/>
 -   Common Attack Pattern Enumeration and Classification: <https://capec.mitre.org/index.html>
 -   NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
-
-
- 
-
-
-
-
-

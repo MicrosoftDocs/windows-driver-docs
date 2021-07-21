@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # !tt (time travel)
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
 
 The !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
 
