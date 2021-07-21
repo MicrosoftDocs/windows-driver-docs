@@ -1,6 +1,6 @@
 ---
 title: Number of user mode crashes or TDRs in Win32 gaming applications
-description: The measure counts the number of crashes in display drivers that happen in the context of the gaming applications
+description: Counts the number of crashes in display drivers that happen in the context of Win32 gaming applications
 ms.topic: article
 ms.date: 07/20/2021
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-This measure counts the number of crashes in display drivers that happen in the context of the gaming applications and calculating the runtime of such applications on all machines that have the updated driver. The measure then normalizes the crash count by cumulative application runtime in years (HOART - hit over application runtime).
+This measure counts the number of crashes in display drivers that happen in the context of Win32 gaming applications and calculates the run time of such applications on all machines that have the updated driver. The measure then normalizes the crash count by cumulative application runtime in years (HOART - hit over application runtime).
 
 This measure is normalized by usage, less than or equal to the baseline goal.
 
