@@ -209,9 +209,9 @@
           - name: "Number of user mode crashes in Windows Components"
             href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
           - name: "Number of crashes and hangs in UWP games"
-            href: number-user-mode-crashes-and-hangs-in-uwp-gaming-applications.md
+            href: number-user-mode-crashes-in-UWP-gaming-applications.md
           - name: "Number of crashes and hangs in Win32 games"
-            href: number-user-mode-crashes-and-hangs-in-win32-gaming-applications.md
+            href: number-user-mode-crashes-in-win32-gaming-applications.md
           - name: "Percent of SWDRM playback failures on Netflix"
             href: pct-swdrm-playback-failures-on-netflix.md
           - name: "Percent of devices with WinML Runtime Errors"
