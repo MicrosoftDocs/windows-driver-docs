@@ -107,7 +107,7 @@ These extensions have the same capabilities as filtering extensions, but are res
 
 Only one forwarding extension can be bound and enabled in each instance of an extensible switch.
 
-For more information on this type of extension, see [Forwarding Extensions](./filtering-extensions.md).
+For more information on this type of extension, see [Forwarding Extensions](./forwarding-extensions.md).
 
 ## Hyper-V extensible switch architectural diagrams
 
