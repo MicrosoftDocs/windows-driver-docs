@@ -13,12 +13,14 @@ The BTP software package contains several tools to be used for testing Bluetooth
 
 The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included. Click the following button to download the latest version.
 
-[![Download the Bluetooth Test Platform software package.](images/download.png)](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.7.2.msi)
+> [!div class="nextstepaction"]
+> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.7.2.msi)
 
 ## Version Updates
 
 | Version | Changes |
 |---------|---------|
+|1.8.0     | - Added Wi-Fi with Bluetooth audio and HID co-existence tests.</br>- Added mute and unmute audio tests.</br>- Added option to record audio played during tests to a local file.</br>- Fixed issue that could cause the Bluefruit Feather to incorrectly report its Bluetooth address.</br>- Fixed issue with running current audio tests on older Windows builds.</br>- Several other fixes and improvements to test reliability. |
 |1.7.2     | - Added Wi-Fi and Bluetooth audio co-existence tests.</br>- Added support for Bluefruit Feather (nRF52840) with full parity to existing Bluefruit support.</br>- Added tests for all types of pairing key negotiations using the Bluefruit Feather.</br>- Fixed issue where failures would occur in a tight loop if a device was unplugged mid-test.</br>- Several fixes and improvements to test reliability. |
 |1.6.2     | - No longer require a WDK installation to run BTP tests.</br>- Added quick keystroke HID tests to more easily catch key repeats and other performance issues.</br>- Added quick keystroke and mouse movement after idle HID tests that are useful for loop execution.</br>- Added reconnection latency measurement to HID tests.</br>- Added reconnection after idle disconnection HID tests.</br>- Several fixes and improvements to test reliability. |
 |1.5.1     | - Added BTVS and BTETLParse diagnostic tools.</br>- Several fixes and improvements to test reliability. |
@@ -40,7 +42,8 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 | RunAudioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs audio tests including glitch detection and audio volume validation.</br>- Supports custom arguments if provided</br> | RunAudioTests.bat</br>RunAudioTests.ps1 |
 | RunAudioHidScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs audio and HID scenario tests.</br>- Supports custom arguments if provided</br> | RunAudioHidScenarioTests.bat</br>RunAudioHidScenarioTests.ps1 |
 | RunBatteryTests | - Provided as a CMD script and a PowerShell script.</br>- Runs battery tests.</br>- Supports custom arguments if provided</br> | RunBatteryTests.bat</br>RunBatteryTests.ps1 |
-| RunWiFiCoexScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi coexistence scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiCoexScenarioTests.bat</br>RunWiFiCoexScenarioTests.ps1 |
+| RunWiFiAudioScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi and audio scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiAudioScenarioTests.bat</br>RunWiFiAudioScenarioTests.ps1 |
+| RunWiFiAudioHidScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi, audio, and HID scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiAudioHidScenarioTests.bat</br>RunWiFiAudioHidScenarioTests.ps1 |
 | Bluefruit Feather Firmware | - Compiled binaries for Bluefruit Feather device. | BtpBluefruit_nRF52840.ino.zip |
 | ESP32 Firmware | - Compiled binaries for ESP32wifi device. | WiFi-ESP32.ino</br>WiFi-ESP32.ino.partitions |
 

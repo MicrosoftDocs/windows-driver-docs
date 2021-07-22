@@ -29,7 +29,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunAudioTests.bat <device name>` from an elevated command prompt or
 - `RunAudioTests.ps1 <device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found at [Bluetooth Testing Platform supported hardware](testing-BTP-hw.md#supported-devices)
+Information on available device name parameters can be found at [Bluetooth Test Platform supported hardware](testing-BTP-hw.md#supported-devices)
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
