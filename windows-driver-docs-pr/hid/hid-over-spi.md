@@ -39,6 +39,10 @@ The HID protocol is a asymmetric and identifies roles for the host and the devic
 
 You can add to the functionality of the included HIDSPI Windows driver by using the HIDSPICx class extension. For more information see the [HIDSPICx API](/windows-hardware/drivers/ddi/hidspicx).
 
+## HID over SPI specification
+
+The full [HID over SPI protocol specification](https://www.microsoft.com/download/details.aspx?id=103325) is available for download from the Microsoft Download Center.
+
 ## See also
 
 [HIDSPICx API](/windows-hardware/drivers/ddi/hidspicx)
