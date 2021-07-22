@@ -8,7 +8,7 @@ metadata:
    author: tedhudek
    ms.author: tedhudek
    ms.topic: hub-page
-   ms.date: 01/14/2020
+   ms.date: 07/21/2021
    ms.localizationpriority: medium
    uhfHeaderId: "MSDocsHeader-WinHW"
    
@@ -75,7 +75,7 @@ conceptualContent:
         - text: Get started with Windows 10
           url: /windows-hardware/get-started
           itemType: overview
-        - text: Design Windows 10 devices
+        - text: Design Windows 11 devices
           url: /windows-hardware/design
           itemType: overview
         - text: Customize

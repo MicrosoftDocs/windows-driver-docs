@@ -1,7 +1,7 @@
 ---  
 title: System-Defined Device Setup Classes Available to Vendors  
 description: System-Defined Device Setup Classes Available to Vendors 
-ms.date: 11/20/2020
+ms.date: 06/04/2021
 ms.localizationpriority: medium
 ms.custom: contperf-fy21q1
 ---  
