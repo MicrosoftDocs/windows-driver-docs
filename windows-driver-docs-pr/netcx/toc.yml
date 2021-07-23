@@ -88,6 +88,14 @@
       href: wdi-tlv-action-frame-body.md
     - name: "WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT"
       href: wdi-tlv-action-frame-device-context.md
+    - name: "WDI_TLV_ADDITIONAL_BEACON_IES"
+      href: wdi-tlv-additional-beacon-ies.md
+    - name: "WDI_TLV_ADDITIONAL_IES"
+      href: wdi-tlv-additional-ies.md
+    - name: "WDI_TLV_ADDITIONAL_PROBE_REQUEST_DEFAULT_IES"
+      href: wdi-tlv-additional-probe-request-default-ies.md
+    - name: "WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES"
+      href: wdi-tlv-additional-probe-response-ies.md
     - name: "WDI_TLV_ALLOWED_BSSIDS_LIST"
       href: wdi-tlv-allowed-bssids-list.md
     - name: "WDI_TLV_AP_BAND_CHANNEL"
@@ -140,6 +148,22 @@
       href: wdi-tlv-channel-info-list.md
     - name: "WDI_TLV_CHANNEL_NUMBER"
       href: wdi-tlv-channel-number.md
+    - name: "WDI_TLV_CIPHER_KEY_CCMP_KEY"
+      href: wdi-tlv-cipher-key-ccmp-key.md
+    - name: "WDI_TLV_CIPHER_KEY_GCMP_256_KEY"
+      href: wdi-tlv-cipher-key-gcmp-256-key.md
+    - name: "WDI_TLV_CIPHER_KEY_ID"
+      href: wdi-tlv-cipher-key-id.md
+    - name: "WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT"
+      href: wdi-tlv-cipher-key-receive-sequence-count.md
+    - name: "WDI_TLV_CIPHER_KEY_TKIP_INFO"
+      href: wdi-tlv-cipher-key-tkip-info.md
+    - name: "WDI_TLV_CIPHER_KEY_TKIP_KEY"
+      href: wdi-tlv-cipher-key-tkip-key.md
+    - name: "WDI_TLV_CIPHER_KEY_TKIP_MIC"
+      href: wdi-tlv-cipher-key-tkip-mic.md
+    - name: "WDI_TLV_CIPHER_KEY_TYPE_INFO"
+      href: wdi-tlv-cipher-key-type-info.md
     - name: "WDI_TLV_CONFIGURED_MAC_ADDRESS"
       href: wdi-tlv-configured-mac-address.md
     - name: "WDI_TLV_CONNECT_BSS_ENTRY"
@@ -168,6 +192,10 @@
       href: wdi-tlv-ft-auth-request.md
     - name: "WDI_TLV_FT_AUTH_RESPONSE"
       href: wdi-tlv-ft-auth-response.md
+    - name: "WDI_TLV_FTM_BANDWIDTH_USED"
+      href: wdi-tlv-ftm-bandwidth-used.md
+    - name: "WDI_TLV_FTM_PROPAGATION_PROPERTY"
+      href: wdi-tlv-ftm-propagation-property.md
     - name: "WDI_TLV_FT_FTE"
       href: wdi-tlv-ft-fte.md
     - name: "WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS"
@@ -196,6 +224,10 @@
       href: wdi-tlv-incoming-association-request-info.md
     - name: "WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS"
       href: wdi-tlv-incoming-association-request-parameters.md
+    - name: "WDI_TLV_LCI_REPORT_BODY"
+      href: wdi-tlv-lci-report-body.md
+    - name: "WDI_TLV_LCI_REPORT_STATUS"
+      href: wdi-tlv-lci-report-status.md
     - name: "WDI_TLV_MULTICAST_CIPHER_ALGO_LIST"
       href: wdi-tlv-multicast-cipher-algo-list.md
     - name: "WDI_TLV_OPERATION_MODE"
@@ -206,6 +238,10 @@
       href: wdi-tlv-p2p-action-ies.md
     - name: "WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS"
       href: wdi-tlv-p2p-action-frame-response-parameters.md
+    - name: "WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY"
+      href: wdi-tlv-p2p-advertised-service-entry.md
+    - name: "WDI_TLV_P2P_ADVERTISED_SERVICES"
+      href: wdi-tlv-p2p-advertised-services.md
     - name: "WDI_TLV_P2P_ADVERTISEMENT_ID"
       href: wdi-tlv-p2p-advertisement-id.md
     - name: "WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY"
@@ -214,6 +250,14 @@
       href: wdi-tlv-p2p-channel-number.md
     - name: "WDI_TLV_P2P_CONFIG_METHODS"
       href: wdi-tlv-p2p-config-methods.md
+    - name: "WDI_TLV_P2P_DEVICE_CAPABILITY"
+      href: wdi-tlv-p2p-device-capability.md
+    - name: "WDI_TLV_P2P_DEVICE_INFO"
+      href: wdi-tlv-p2p-device-info.md
+    - name: "WDI_TLV_P2P_DEVICE_INFO_PARAMETERS"
+      href: wdi-tlv-p2p-device-info-parameters.md
+    - name: "WDI_TLV_P2P_DEVICE_NAME"
+      href: wdi-tlv-p2p-device-name.md
     - name: "WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY"
       href: wdi-tlv-p2p-discovered-service-entry.md
     - name: "WDI_TLV_P2P_DISCOVER_MODE"
@@ -258,6 +302,8 @@
       href: wdi-tlv-p2p-invitation-response-parameters.md
     - name: "WDI_TLV_P2P_LISTEN_DURATION"
       href: wdi-tlv-p2p-listen-duration.md
+    - name: "WDI_TLV_P2P_LISTEN_STATE"
+      href: wdi-tlv-p2p-listen-state.md
     - name: "WDI_TLV_P2P_PERSISTENT_GROUP_ID"
       href: wdi-tlv-p2p-persistent-group-id.md
     - name: "WDI_TLV_P2P_PROVISION_DISCOVERY_REQUEST_INFO"
@@ -278,6 +324,8 @@
       href: wdi-tlv-p2p-service-session-info.md
     - name: "WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES"
       href: wdi-tlv-p2p-provision-service-attributes.md
+    - name: "WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST"
+      href: wdi-tlv-p2p-secondary-device-type-list.md
     - name: "WDI_TLV_P2P_SERVICE_INFORMATION"
       href: wdi-tlv-p2p-service-information.md
     - name: "WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY"
@@ -292,10 +340,14 @@
       href: wdi-tlv-p2p-service-transaction-id.md
     - name: "WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR"
       href: wdi-tlv-p2p-service-update-indicator.md
+    - name: "WDI_TLV_PEER_MAC_ADDRESS"
+      href: wdi-tlv-peer-mac-address.md
     - name: "WDI_TLV_PHY_TYPE_LIST"
       href: wdi-tlv-phy-type-list.md
     - name: "WDI_TLV_PMKID"
       href: wdi-tlv-pmkid.md
+    - name: "WDI_TLV_PRIVACY_EXEMPTION_ENTRY"
+      href: wdi-tlv-privacy-exemption-entry.md
     - name: "WDI_TLV_PROBE_RESPONSE_FRAME"
       href: wdi-tlv-probe-response-frame.md
     - name: "WDI_TLV_RADIO_STATE"
@@ -308,6 +360,10 @@
       href: wdi-tlv-retry-after.md
     - name: "WDI_TLV_ROAMING_NEEDED_PARAMETERS"
       href: wdi-tlv-roaming-needed-parameters.md
+    - name: "WDI_TLV_RTT"
+      href: wdi-tlv-rtt.md
+    - name: "WDI_TLV_RTT_VARIANCE"
+      href: wdi-tlv-rtt-variance.md
     - name: "WDI_TLV_SAE_COMMIT_RESPONSE"
       href: wdi-tlv-sae-commit-response.md
     - name: "WDI_TLV_SAE_CONFIRM_RESPONSE"
@@ -320,8 +376,12 @@
       href: wdi-tlv-scan-dwell-time.md
     - name: "WDI_TLV_SCAN_MODE"
       href: wdi-tlv-scan-mode.md
+    - name: "WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS"
+      href: wdi-tlv-send-action-frame-request-parameters.md
     - name: "WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS"
       href: wdi-tlv-send-action-frame-response-parameters.md
+    - name: "WDI_TLV_SET_CIPHER_KEY_INFO"
+      href: wdi-tlv-set-cipher-key-info.md
     - name: "WDI_TLV_SSID"
       href: wdi-tlv-ssid.md
     - name: "WDI_TLV_START_AP_PARAMETERS"
@@ -364,6 +424,8 @@
       href: oid-wdi-task-scan.md
     - name: "OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE"
       href: oid-wdi-task-send-ap-association-response.md
+    - name: "OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME"
+      href: oid-wdi-task-send-request-action-frame.md
     - name: "OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME"
       href: oid-wdi-task-send-response-action-frame.md
     - name: "OID_WDI_TASK_SET_RADIO_STATE"
@@ -374,10 +436,20 @@
       href: oid-wdi-task-stop-ap.md
   - name: "WiFiCx property commands"
     items:
+    - name: "OID_WDI_SET_ADD_CIPHER_KEYS"
+      href: oid-wdi-set-add-cipher-keys.md
+    - name: "OID_WDI_SET_ADVERTISEMENT_INFORMATION"
+      href: oid-wdi-set-advertisement-information.md
     - name: "OID_WDI_SET_ASSOCIATION_PARAMETERS"
       href: oid-wdi-set-association-parameters.md
+    - name: "OID_WDI_SET_P2P_LISTEN_STATE"
+      href: oid-wdi-set-p2p-listen-state.md
+    - name: "OID_WDI_SET_PRIVACY_EXEMPTION_LIST"
+      href: oid-wdi-set-privacy-exemption-list.md
   - name: "WiFiCx unsolicited status indications"
     items:
+    - name: "NDIS_STATUS_WDI_INDICATION_ACTION_FRAME_RECEIVED"
+      href: ndis-status-wdi-indication-action-frame-received.md
     - name: "NDIS_STATUS_WDI_INDICATION_ASSOCIATION_PARAMETERS_REQUEST"
       href: ndis-status-wdi-indication-association-parameters-request.md
     - name: "NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT"
@@ -420,6 +492,8 @@
       href: ndis-status-wdi-indication-scan-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE"
       href: ndis-status-wdi-indication-send-ap-association-reponse-complete.md
+    - name: "NDIS_STATUS_WDI_INDICATION_SEND_REQUEST_ACTION_FRAME_COMPLETE"
+      href: ndis-status-wdi-indication-send-request-action-frame-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_SEND_RESPONSE_ACTION_FRAME_COMPLETE"
       href: ndis-status-wdi-indication-send-response-action-frame-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_SET_RADIO_STATE_COMPLETE"
