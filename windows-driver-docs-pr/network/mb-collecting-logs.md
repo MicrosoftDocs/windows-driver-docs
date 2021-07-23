@@ -5,7 +5,7 @@ ms.date: 03/10/2021
 ms.localizationpriority: medium
 ---
 
-# MobileBroadband Collecting Logs
+# Mobile Broadband Collecting Logs
 
 Follow these steps to collect the logs related to Mobilebroadband on a Windows Desktop Device:
 ```
