@@ -148,6 +148,10 @@
       href: wdi-tlv-channel-info-list.md
     - name: "WDI_TLV_CHANNEL_NUMBER"
       href: wdi-tlv-channel-number.md
+    - name: "WDI_TLV_CIPHER_KEY_BIP_KEY"
+      href: wdi-tlv-cipher-key-bip-key.md
+    - name: "WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY"
+      href: wdi-tlv-cipher-key-bip--gmac-256-key.md
     - name: "WDI_TLV_CIPHER_KEY_CCMP_KEY"
       href: wdi-tlv-cipher-key-ccmp-key.md
     - name: "WDI_TLV_CIPHER_KEY_GCMP_256_KEY"
@@ -164,14 +168,22 @@
       href: wdi-tlv-cipher-key-tkip-mic.md
     - name: "WDI_TLV_CIPHER_KEY_TYPE_INFO"
       href: wdi-tlv-cipher-key-type-info.md
+    - name: "WDI_TLV_CIPHER_KEY_WEP_KEY"
+      href: wdi-tlv-cipher-key-wep-key.md
     - name: "WDI_TLV_CONFIGURED_MAC_ADDRESS"
       href: wdi-tlv-configured-mac-address.md
     - name: "WDI_TLV_CONNECT_BSS_ENTRY"
       href: wdi-tlv-connect-bss-entry.md
     - name: "WDI_TLV_CONNECT_PARAMETERS"
       href: wdi-tlv-connect-parameters.md
+    - name: "WDI_TLV_CONNECTION_QUALITY_PARAMETERS"
+      href: wdi-tlv-connection-quality-parameters.md
     - name: "WDI_TLV_CONNECTION_SETTINGS"
       href: wdi-tlv-connection-settings.md
+    - name: "WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS"
+      href: wdi-tlv-default-tx-key-id-parameters,md
+    - name: "WDI_TLV_DELETE_CIPHER_KEY_INFO"
+      href: wdi-tlv-delete-cipher-key-info.md
     - name: "WDI_TLV_DISCONNECT_PARAMETERS"
       href: wdi-tlv-disconnect-parameters.md
     - name: "WDI_TLV_DISALLOWED_BSSIDS_LIST"
@@ -216,6 +228,8 @@
       href: wdi-tlv-ftm-response-status.md
     - name: "WDI_TLV_FTM_TARGET_BSS_ENTRY"
       href: wdi-tlv-ftm-target-bss-entry.md
+    - name: "WDI_TLV_GET_AUTO_POWER_SAVE"
+      href: wdi-tlv-get-auto-power-save.md
     - name: "WDI_TLV_IHV_TASK_DEVICE_CONTEXT"
       href: wdi-tlv-ihv-task-device-context.md
     - name: "WDI_TLV_IHV_TASK_REQUEST_PARAMETERS"
@@ -228,6 +242,8 @@
       href: wdi-tlv-lci-report-body.md
     - name: "WDI_TLV_LCI_REPORT_STATUS"
       href: wdi-tlv-lci-report-status.md
+    - name: "WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS"
+      href: wdi-tlv-low-latency-connection-quality-parameters.md
     - name: "WDI_TLV_MULTICAST_CIPHER_ALGO_LIST"
       href: wdi-tlv-multicast-cipher-algo-list.md
     - name: "WDI_TLV_OPERATION_MODE"
@@ -436,12 +452,20 @@
       href: oid-wdi-task-stop-ap.md
   - name: "WiFiCx property commands"
     items:
+    - name: "OID_WDI_GET_AUTO_POWER_SAVE"
+      href: oid-wdi-get-auto-power-save.md
     - name: "OID_WDI_SET_ADD_CIPHER_KEYS"
       href: oid-wdi-set-add-cipher-keys.md
     - name: "OID_WDI_SET_ADVERTISEMENT_INFORMATION"
       href: oid-wdi-set-advertisement-information.md
     - name: "OID_WDI_SET_ASSOCIATION_PARAMETERS"
       href: oid-wdi-set-association-parameters.md
+    - name: "OID_WDI_SET_CONNECTION_QUALITY"
+      href: oid-wdi-set-connection-quality.md
+    - name: "OID_WDI_SET_DEFAULT_KEY_ID"
+      href: oid-wdi-set-default-key-id.md
+    - name: "OID_WDI_SET_DELETE_CIPHER_KEYS"
+      href: oid-wdi-set-delete-cipher-keys.md
     - name: "OID_WDI_SET_P2P_LISTEN_STATE"
       href: oid-wdi-set-p2p-listen-state.md
     - name: "OID_WDI_SET_PRIVACY_EXEMPTION_LIST"
