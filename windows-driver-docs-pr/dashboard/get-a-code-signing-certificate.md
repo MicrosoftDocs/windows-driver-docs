@@ -2,7 +2,7 @@
 title: Get a code signing certificate
 description: Get a code signing certificate
 ms.topic: article
-ms.date: 04/20/2017
+ms.date: 07/22/2021
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +12,7 @@ Before you can establish a Partner Center account, you need to get a code signin
 
 ## Step 1: Obtain an EV certificate
 
-- Microsoft requires an extended validation (EV) code signing certificates from partners enrolled and authorized for Kernel Mode Code Signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved EV certificate from one of these authorities, you can use it to establish a Partner Center account. If you don’t have a certificate, you’ll need to buy a new one.
+- Microsoft requires an extended validation (EV) code signing certificate from partners enrolled and authorized for kernel mode code signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved EV certificate from one of these authorities, you can use it to establish a Partner Center account. If you don’t have a certificate, you’ll need to buy a new one.
 
 ## Step 2: Buy a new code signing certificate
 
@@ -37,7 +37,7 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
 > [!NOTE]
-> You must use the same computer and browser to retrieve your certificate.
+> You must use the same computer and browser to buy and retrieve your certificate.
 
 ## Step 4: Add the certificates to your account on Partner Center
 
@@ -49,7 +49,7 @@ For step-by-step instructions, see [Add or Update a code signing certificate](up
 
 - If you’ve already set up a Partner Center account and need to renew a certificate, follow the steps in [Add or Update a code signing certificate](update-a-code-signing-certificate.md).
 
-## Code Signing FAQ
+## FAQ
 
 This section provides answers to frequently asked questions about code signing for Windows 10. Additional code signing information is available on the Windows Hardware Certification blog.
 
@@ -57,34 +57,15 @@ This section provides answers to frequently asked questions about code signing f
 - [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10-version-1607/ba-p/364894)
 - [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Update-on-Sysdev-EV-Certificate-requirement/ba-p/364879)
 
-### HLK Tested and Dashboard Signed Drivers
+### HLK tested and dashboard signed drivers
 
 - A dashboard signed driver that has passed the HLK tests will work on Windows Vista through Windows 10, including Windows Server editions. This is the recommended method for driver signing, because it allows a single process for all OS versions. In addition, HLK tested drivers demonstrate that a manufacturer has rigorously tested their hardware to meet all of Microsoft's requirements with regards to reliability, security, power efficiency, serviceability, and performance, so as to provide a great Windows experience. This includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features, helping to ensure correct installation, deployment, connectivity and interoperability. For more information about the HLK, see [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/index).
 
-### Windows 10 Desktop Attestation Signing
+### Windows 10 attestation signing
 
-- A dashboard signed driver using attestation signing will only work on Windows 10 Desktop and later versions of Windows.
-- An attestation signed driver will only work for Windows 10 Desktop; it will not work for other versions of Windows, such as Windows Windows 7, Windows 8.1, or Windows Server 2016 and greater.
-- Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers.
-
-### Windows 10 Earlier Certificate Transition Signing
-
-- The below only applies to Windows 10 1803 and lower.  As of Windows 10 1809, these will no longer work.
-- A driver signed with any certificate issued after July 29th, 2015, with time stamping, is not recommended for Windows 10.
-- A driver signed with any certificate that expires after July 29th, 2015, without time stamping, will work on Windows 10 until the certificate expires.
-
-### Cross-Signing and SHA-256 Certificates
-
-Cross-signing describes a process where a driver is signed with a certificate issued by a Certificate Authority (CA) that is trusted by Microsoft. For more information, see [Cross-Certificates Overview](../install/cross-certificates-for-kernel-mode-code-signing.md).
-
-- Windows 8 and later versions support SHA-256.
-- Windows 7, if patched, supports SHA-256. If you need to support unpatched devices that run Windows 7, you need to either cross-sign with a SHA-1 certificate or submit to the Dashboard for signing. Otherwise, you can either cross-sign with SHA-1 or SHA-2 certificate or create an HLK/HCK submission for signing.
-- Because Windows Vista doesn’t support SHA-256, you need to either cross-sign with a SHA-1 certificate or create an HLK/HCK submission for Windows Vista driver signing.
-- A driver cross-signed with a SHA-256 certificate (including an EV certificate) issued prior to July 29th, 2015 will work on Windows 8 and later. It will not work on Windows Vista or Windows Server 2008.
-- A driver cross-signed with a SHA-256 certificate (including an EV certificate) issued prior to July 29th, 2015 will work on Windows 7 or Server 2008R2 if the patch issued through Windows Update earlier this year has been applied. For more information, see [Availability of SHA-2 Hashing Algorithm for Windows 7 and Windows Server 2008 R2](/security-updates/SecurityAdvisories/2014/2949927) and [Microsoft security advisory: Availability of SHA-2 code signing support for Windows 7 and Windows Server 2008 R2: March 10, 2015](https://support.microsoft.com/help/3033929/microsoft-security-advisory-availability-of-sha-2-code-signing-support).
-- A cross-signed driver using a SHA-1 certificate issued prior to July 29th, 2015 will work on all platforms starting with Windows Vista through Windows 10.
-- A cross-signed driver using a SHA-1 or SHA-256 certificate issued after July 29th, 2015 is not recommended for Windows 10.
-- For more information about the effort to move to SHA-256 Certificates, see [Windows Enforcement of Authenticode Code Signing and Timestamping](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)
+- A dashboard signed driver using attestation signing will only work on Windows 10 and later.
+- An attestation signed driver will only work for Windows 10. The driver will not work for other versions of Windows, such as Windows 7, Windows 8.1, or Windows Server 2016 and greater.
+- Attestation signing supports Windows 10 kernel mode and user mode drivers.
 
 ### Windows Defender Application Control
 
@@ -96,12 +77,13 @@ Cross-signing describes a process where a driver is signed with a certificate is
 - The dashboard will only sign device and filter drivers that have successfully passed the HLK tests.
 - Windows Server 2016 and greater will only load dashboard signed drivers that have successfully passed the HLK tests.
 
-### EV Certs
+### EV certificates
 
 - As of October 31, 2015, your Hardware Dev Center dashboard account must have at least one EV certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
 - The submitted binaries themselves must be signed.
+- EV certificates must be SHA-256.
 
-### OS Support Summary
+### OS support summary
 
 This table summarizes the driver signing requirements for Windows.
 
@@ -120,6 +102,6 @@ This table summarizes the driver signing requirements for Windows.
 | Windows IoT Enterprise- DG Enabled | \*Configuration Dependent | \*Configuration Dependent | \*Configuration Dependent |
 | Windows IoT Core(1) | Yes (Not Required) | Yes (Not Required) | Yes (Cross signing will also work for certificates issued after July 29, 2015) |
 
-\*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Windows Defender Application Control (WDAC) to define custom signing requirements. For more information about WDAC, see [Planning and getting started on the Windows Defender Application Control deployment process](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+\*Configuration dependent – With Windows 10 Enterprise edition, organizations can use Windows Defender Application Control (WDAC) to define custom signing requirements. For more information about WDAC, see [Planning and getting started on the Windows Defender Application Control deployment process](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 (1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](../install/cross-certificates-for-kernel-mode-code-signing.md). Note that if UEFI Secure Boot is enabled, then drivers must be signed.
