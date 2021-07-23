@@ -12,7 +12,7 @@ Before you can establish a Partner Center account, you need to get a code signin
 
 ## Step 1: Obtain an EV certificate
 
-- Microsoft requires an extended validation (EV) code signing certificates from partners enrolled and authorized for Kernel Mode Code Signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved EV certificate from one of these authorities, you can use it to establish a Partner Center account. If you don’t have a certificate, you’ll need to buy a new one.
+- Microsoft requires an extended validation (EV) code signing certificate from partners enrolled and authorized for kernel mode code signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved EV certificate from one of these authorities, you can use it to establish a Partner Center account. If you don’t have a certificate, you’ll need to buy a new one.
 
 ## Step 2: Buy a new code signing certificate
 
@@ -37,7 +37,7 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
 > [!NOTE]
-> You must use the same computer and browser to retrieve your certificate.
+> You must use the same computer and browser to buy and retrieve your certificate.
 
 ## Step 4: Add the certificates to your account on Partner Center
 
