@@ -51,3 +51,4 @@ To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](t
 
 - Stress tests: Tests run in a tight loop using an LE device may cause pairing or unpairing to fail.
 - Running Wi-Fi and Bluetooth coexistence tests without disconnecting from any VPN sessions will cause failures.
+- Currently these tests may fail for some ARM64 devices. We are working on resolving this issue.

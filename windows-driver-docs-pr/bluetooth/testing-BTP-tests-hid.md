@@ -43,3 +43,4 @@ To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](t
 ## Known issues
 
 - Stress tests: Tests run in a tight loop using an LE device may cause pairing or unpairing to fail.
+- When running these tests with an LE HID device, they may infrequently fail due to validation intended to catch unexpected disconnections. Sometimes these disconnections get automatically recovered (failures to establish), but the test still fails the validation. This can happen more frequently in noisy RF environments.
