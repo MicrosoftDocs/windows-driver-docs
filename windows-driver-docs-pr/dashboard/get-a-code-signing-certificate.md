@@ -63,8 +63,8 @@ This section provides answers to frequently asked questions about code signing f
 
 ### Windows 10 attestation signing
 
-- A dashboard signed driver using attestation signing will only work on Windows 10 and later versions of Windows.
-- An attestation signed driver will only work for Windows 10. The driver will not work for other versions of Windows, such as Windows Windows 7, Windows 8.1, or Windows Server 2016 and greater.
+- A dashboard signed driver using attestation signing will only work on Windows 10 and later.
+- An attestation signed driver will only work for Windows 10. The driver will not work for other versions of Windows, such as Windows 7, Windows 8.1, or Windows Server 2016 and greater.
 - Attestation signing supports Windows 10 kernel mode and user mode drivers.
 
 ### Windows Defender Application Control
