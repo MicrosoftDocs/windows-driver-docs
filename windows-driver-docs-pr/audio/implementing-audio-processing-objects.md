@@ -127,8 +127,8 @@ To develop your APOs based on the **CBaseAudioProcessingObject** class, perform 
     The following C++ code example shows the creation of a class that inherits from **CBaseAudioProcessingObject**. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapo.h* file.
 
     ```cpp
-    // Custom APO class - LFX
-    Class MyCustomAPOLFX: public CBaseAudioProcessingObject
+    // Custom APO class - SFX
+    Class MyCustomAPOSFX: public CBaseAudioProcessingObject
     {
      public:
     //Code for custom class goes here
@@ -150,7 +150,7 @@ The following C++ code example shows an implementation of the [**APOProcess**](/
 
 ```cpp
 // Custom implementation of APOProcess method
-STDMETHODIMP_ (Void) MyCustomAPOLFX::APOProcess (...)
+STDMETHODIMP_ (Void) MyCustomAPOSFX::APOProcess (...)
 {
 // Code for method goes here. This code is the algorithm that actually
 // processes the digital audio signal.
