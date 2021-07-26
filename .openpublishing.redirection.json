@@ -8454,6 +8454,11 @@
             "source_path": "windows-driver-docs-pr/bluetooth/testing-BTP-hw-hid.md",
             "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/bluetooth/testing-BTP-hw.md#supported-devices",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md",
+            "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/graphics-measures",
+            "redirect_document_id": false
         }
     ]
 }
