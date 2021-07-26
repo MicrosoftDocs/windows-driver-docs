@@ -28,7 +28,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunHidTests.bat <device name>` from an elevated command prompt or
 - `RunHidTests.ps1 <device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found [Bluetooth Testing Platform supported hardware](testing-BTP-hw.md#supported-devices)
+Information on available device name parameters can be found [Bluetooth Test Platform supported hardware](testing-BTP-hw.md#supported-devices)
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
@@ -43,3 +43,4 @@ To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](t
 ## Known issues
 
 - Stress tests: Tests run in a tight loop using an LE device may cause pairing or unpairing to fail.
+- When running these tests with an LE HID device, they may infrequently fail due to validation intended to catch unexpected disconnections. Sometimes these disconnections get automatically recovered (failures to establish), but the test still fails the validation. This can happen more frequently in noisy RF environments.

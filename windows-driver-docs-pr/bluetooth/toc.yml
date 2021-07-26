@@ -136,7 +136,7 @@
         href: testing-BTP-tests-audio.md
       - name: "Testing Bluetooth Audio and HID"
         href: testing-BTP-tests-audio-hid.md
-      - name: "Testing Bluetooth Audio and Wi-Fi"
+      - name: "Testing Bluetooth and Wi-Fi"
         href: testing-BTP-tests-wifi.md
       - name: "Testing Bluetooth Battery"
         href: testing-BTP-tests-battery.md
