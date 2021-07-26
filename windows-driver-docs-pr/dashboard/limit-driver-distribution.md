@@ -60,7 +60,7 @@ This is especially important to remember when dealing with the OS and Hardware I
 * The minimum allowable OS Floor is initially determined by the submissions lowest Certified OS level, or the Attested OS level. If you need to set an OS Floor that is below these automatically determined levels then you must perform a Driver Expansion prior to setting the OS Floor.
 
 The OS Floor describes the earliest Windows version that the driver could be distributed to. Use this feature when you want to move the implied floor **UP** so that the driver will only be offered at and above the selected operating system.
-The most common use case is described in the Driver Expansion section, [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level~).
+The most common use case is described in the Driver Expansion section, [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level).
 
 ### To set the OS Floor
 
@@ -150,7 +150,7 @@ As the submission owner, you are the only one that can expand your submission.
   ![Screenshot showing driver not shared, but with OS selected.](images/pending-share_example1.png)
 
 1. Scroll to the bottom of the page and click **Publish** to finalize your share actions.
-1. Inform your OEM to come to this page and read [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level~).
+1. Inform your OEM to come to this page and read [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level).
 
 If you already shared a driver with your partner, you could expand it later and share the additional extended item. Be aware though, that the original shared submission will be deprecated, and your partner will only be able to use the latest shared submission from you (see the [Revoke/Revoke All](sharing-drivers-with-your-partners.md#revokerevoke-all) section for more information about deprecated items).
 
@@ -192,7 +192,7 @@ If the box is missing, it means one of two things. You are not the initial submi
 
 ### How can I target a Windows version that is older than my driver’s certification?
 
-See [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level~).
+See [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level).
 
 ### Some of my INFs are missing after expansion. Why can't I expand my entire submission?
 
