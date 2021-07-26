@@ -182,21 +182,19 @@
             href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
           - name: "Number of user mode crashes in Collaboration and Communications Applications"
             href: graphics-user-mode-crashes-collaboration-ecosystem.md
+          - name: "Percent of devices with WinML Runtime Errors (Ecosystem)"
+            href: pct-devices-winml-runtime-error-ecosystem.md
           - name: "Percent of SWDRM playback failures on Netflix"
             href: pct-swdrm-playback-failures-on-netflix.md
-          - name: "Percent of machines with display issues when resume from low power state"
-            href: graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md
           - name: "Ecosystem Netflix HWDRM Quality Comparison"
             href: ecosystem-netflix-hwdrm-quality-comparison.md
-          - name: "Percent of devices with WinML Runtime Errors"
-            href: pct-devices-winml-runtime-error-ecosystem.md
       - name: "Wi-Fi"
         items:
         - name: "Wi-Fi Measures"
           href: wi-fi-measures.md
-        - name: "Percent of wi-fi connection failures, from devices and access-point pairs that have greater than 50 percent signal quality"
+        - name: "Percent of Wi-Fi connection failures from devices and access-point pairs that have greater than 50% signal quality"
           href: percent-of-wifi-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-        - name: "Percent of internet connection failures of device and access-point pairs that have greater than 50 percent signal quality"
+        - name: "Percent of internet connection failures of device and access-point pairs that have greater than 50% signal quality"
           href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
         - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect that have a greater than 50% signal quality"
           href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
