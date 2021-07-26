@@ -5,9 +5,9 @@ ms.date: 03/10/2021
 ms.localizationpriority: medium
 ---
 
-# MobileBroadband Collecting Logs
+# Mobile Broadband Collecting Logs
 
-Follow these steps to collect the logs related to Mobilebroadband on a Windows Desktop Device:
+Follow these steps to collect the logs related to mobile broadband on a Windows Desktop Device:
 ```
 *  Open an Administrator Command Prompt window
 *  Run the below command to start tracing

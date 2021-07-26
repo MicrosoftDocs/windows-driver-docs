@@ -2892,10 +2892,12 @@
         href: mobile-broadband-device-firmware-update.md
       - name: "Mobile Broadband Implementation Guidelines for USB Devices"
         href: mobile-broadband-implementation-guidelines-for-usb-devices.md
-      - name: "Collecting Mobilebroadband Logs"
+      - name: "Collecting Mobile Broadband Logs"
         href: mb-collecting-logs.md
-      - name: "Analyzing Mobilebroadband Logs"
+      - name: "Analyzing Mobile Broadband Logs"
         href: mb-analyzing-logs.md
+      - name: "Analyzing Mobile Broadband Logs in Wireshark"
+        href: analyzing-mobile-broadband-logs-in-wireshark.md
       - name: "TextAnalysisTool Filter Files"
         href: mb-tat-filters.md
       - name: "netsh mbn test installation"

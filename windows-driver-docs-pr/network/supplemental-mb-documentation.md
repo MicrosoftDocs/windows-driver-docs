@@ -20,9 +20,11 @@ The following sections provide supplemental information for developers of MB dev
 
 [Mobile Broadband Implementation Guidelines for USB Devices](mobile-broadband-implementation-guidelines-for-usb-devices.md)
 
-[Collecting Mobilebroadband Logs](mb-collecting-logs.md)
+[Collecting Mobile Broadband Logs](mb-collecting-logs.md)
 
-[Analyzing Mobilebroadband Logs](mb-analyzing-logs.md)
+[Analyzing Mobile Broadband Logs](mb-analyzing-logs.md)
+
+[Analyzing Mobile Broadband Logs in Wireshark](analyzing-mobile-broadband-logs-in-wireshark.md)
 
 [TextAnalysisTool Filter Files](mb-tat-filters.md)
 
