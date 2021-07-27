@@ -1,7 +1,7 @@
 ---
 title: IrqlExApcLte2 rule (wdm)
-description: The IrqlExApcLte2 rule specifies that the driver calls the following routines only at IRQL�  APC\_LEVEL.
-ms.date: 05/21/2018
+description: The IrqlExApcLte2 rule specifies that the driver calls the following routines only at IRQL less than or equal to APC_LEVEL.
+ms.date: 07/21/2021
 keywords: ["IrqlExApcLte2 rule (wdm)"]
 topic_type:
 - apiref
@@ -14,39 +14,37 @@ ms.localizationpriority: medium
 
 # IrqlExApcLte2 rule (wdm)
 
+The **IrqlExApcLte2** rule specifies that the driver calls the following routines only at IRQL less than or equal to APC_LEVEL.
 
-The **IrqlExApcLte2** rule specifies that the driver calls the following routines only at IRQL &lt;= APC\_LEVEL.
+- [**CmRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallback)
 
--   [**CmRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallback)
+- [**CmUnRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmunregistercallback)
 
--   [**CmUnRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmunregistercallback)
+- [**ExAllocateFromPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefrompagedlookasidelist)
 
--   [**ExAllocateFromPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefrompagedlookasidelist)
+- [**ExAllocatePoolWithQuota**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)
 
--   [**ExAllocatePoolWithQuota**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)
+- [**ExAllocatePoolWithQuotaTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag)
 
--   [**ExAllocatePoolWithQuotaTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag)
+- [**ExDeletePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist)
 
--   [**ExDeletePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist)
+- [**ExFreeToPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetopagedlookasidelist)
 
--   [**ExFreeToPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetopagedlookasidelist)
+- [**ExInitializePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist)
 
--   [**ExInitializePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist)
+- [**ExRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exregistercallback)
 
--   [**ExRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exregistercallback)
+- [**ExSetTimerResolution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimerresolution)
 
--   [**ExSetTimerResolution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimerresolution)
+- [**ExUnregisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exunregistercallback)
 
--   [**ExUnregisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exunregistercallback)
+- [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread)
 
--   [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread)
+- [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite)
 
--   [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite)
+**Driver model:** **WDM**
 
-**Driver model: WDM**
-
-**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00020006), [**Bug Check 0xA: IRQL\_NOT\_LESS\_OR\_EQUAL**](../debugger/bug-check-0xa--irql-not-less-or-equal.md)
-
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER_VERIFIER_DETECTED_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00020006), [**Bug Check 0xA: IRQL_NOT_LESS_OR_EQUAL**](../debugger/bug-check-0xa--irql-not-less-or-equal.md)
 
 ## How to test
 
@@ -88,8 +86,6 @@ Use the following steps to run an analysis of your code:
 </tr>
 </tbody>
 </table>
-
- 
 
 ## Applies to
 

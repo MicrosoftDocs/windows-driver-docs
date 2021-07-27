@@ -1,7 +1,7 @@
 ---
 title: 360 camera video capture
-description: Provides information about 360 camera video capture.
-ms.date: 07/20/2018
+description: Provides information about 360 camera video preview, capture, and record with MediaCapture APIs.
+ms.date: 07/26/2021
 ms.localizationpriority: medium
 ---
 
@@ -22,19 +22,17 @@ These equirectangular frames can then be acquired and consumed by the apps via M
 
 360 camera usage:
 
--   For previewing a 360 frame, an application does need to explicitly use the XAML [MediaPlayerElement](/uwp/api/windows.ui.xaml.controls.mediaplayerelement) for preview. An application also needs to explicitly handle UI interaction for panning around, via the [MediaPlaybackSphericalVideoProjetion.ViewOrientation](/uwp/api/windows.media.playback.mediaplaybacksphericalvideoprojection) quaternion.
+- For previewing a 360 frame, an application does need to explicitly use the XAML [MediaPlayerElement](/uwp/api/windows.ui.xaml.controls.mediaplayerelement) for preview. An application also needs to explicitly handle UI interaction for panning around, via the [MediaPlaybackSphericalVideoProjection.ViewOrientation](/uwp/api/windows.media.playback.mediaplaybacksphericalvideoprojection) quaternion.
 
--   For 360 video record, a capture application does not need to be configured explicitly for 360 content if it is using [MediaCapture WinRT APIs](/windows/uwp/audio-video-camera/basic-photo-video-and-audio-capture-with-mediacapture), as the spherical format is implicitly passed on to the record sink and written to the file header.
+- For 360 video record, a capture application does not need to be configured explicitly for 360 content if it is using [MediaCapture WinRT APIs](/windows/uwp/audio-video-camera/basic-photo-video-and-audio-capture-with-mediacapture), as the spherical format is implicitly passed on to the record sink and written to the file header.
 
--   For 360 photo capture, an application needs to explicitly add the appropriate standardized metadata that specifies its spherical format using available [WIC WinRT APIs](/windows/uwp/audio-video-camera/image-metadata).
+- For 360 photo capture, an application needs to explicitly add the appropriate standardized metadata that specifies its spherical format using available [WIC WinRT APIs](/windows/uwp/audio-video-camera/image-metadata).
 
 It is up to the 360 camera IHV to implement a stream with a projected view and expose Pan/Tilt/Zoom controls.
 
 The application may implement and insert an effect to generate a projection. The effect can leverage the attributes on the mediatype to identify equirectangular frames.
 
-
 ## Architecture
-
 
 The following diagram illustrates the relationship of the DMFT to the 360 camera stack:
 
@@ -44,80 +42,47 @@ The following diagram illustrates the relationship of the DMFT to the 360 camera
 
 The stitching and conversion to equirectangular frames can take place in the camera hardware or inside the DMFT. It may be preferable to leverage the DMFT for this purpose, as it will allow use of hardware resources like GPU for efficient processing. The DMFT will also populate the following stream and media type properties (as shown in the table below) to identify them as 360 content streams.
 
-Even if the IHV decides to have the stiching done in the camera hardware, a DMFT is still a mandatory requirement to populate the stream and media type attribute properties for 360 video.
+Even if the IHV decides to have the stitching done in the camera hardware, a DMFT is still a mandatory requirement to populate the stream and mediatype attribute properties for 360 video.
 
 The following table shows the required stream attribute to identify a spherical frame source:
 
-<table>
-<thead>
-<tr class="header">
-<th>Property name and GUID</th>
-<th>
-<p>Value</p>
-</th>
-<th>
-<p>Attribute</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="_Hlk495398335" class="anchor"><span id="_Hlk495398374" class="anchor"></span></span>MF_SD_VIDEO_SPHERICAL<br />
-{A51DA449-3FDC-478C-BCB5-30BE76595F55}</td>
-<td>
-<p>TRUE (1)</p>
-</td>
-<td>
-<p>Stream and MediaType</p>
-</td>
-</tr>
-<tr class="even">
-<td><span id="_Hlk495398361" class="anchor"><span id="_Hlk495398391" class="anchor"></span></span>MF_SD_VIDEO_SPHERICAL_FORMAT<br />
-{4A8FC407-6EA1-46C8-B567-6971D4A139C3}</td>
-<td>
-<p>MFVideoSphericalFormat_Equirectangular (1)</p>
-</td>
-<td>
-<p>MediaType</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Property name and GUID | Value | Attribute |
+|--|--|--|
+| MF_SD_VIDEO_SPHERICAL<br>{A51DA449-3FDC-478C-BCB5-30BE76595F55} | TRUE (1) | Stream and MediaType |
+| MF_SD_VIDEO_SPHERICAL_FORMAT<br>{4A8FC407-6EA1-46C8-B567-6971D4A139C3} | MFVideoSphericalFormat_Equirectangular (1) | MediaType |
 
 The above property already exists as a part of **mfidl.idl**.
 
 To leverage custom apps which perform stitching as well, an IHV has the option of exposing another unstitched 360 video media type with attributes set as
-MF\_SD\_VIDEO\_SPHERICAL\_FORMAT to MFVideoSphericalFormat\_Unsupported(0). The custom application would have to select the unprocessed stream and handle it.
+MF_SD_VIDEO_SPHERICAL_FORMAT to MFVideoSphericalFormat_Unsupported(0). The custom application would have to select the unprocessed stream and handle it.
 
 ## Platform guidance
 
-The platform already exposes all the stream attributes to the WinRT layer for applications via [MediaFrameSourceInfo.Properties](/uwp/api/windows.media.capture.frames.mediaframesourceinfo), which can be searched for the MF\_SD\_VIDEO\_SPHERICAL GUID defined in the table above. However, most of the spherical configurations of platform elements will be managed implicitly by the platform. The properties can be queried by the application only for any extra functionality that the application developer may want to implement, for example, any custom effects that need to be inserted or removed depending on the sphericalness of the video.
+The platform already exposes all the stream attributes to the WinRT layer for applications via [MediaFrameSourceInfo.Properties](/uwp/api/windows.media.capture.frames.mediaframesourceinfo), which can be searched for the MF_SD_VIDEO_SPHERICAL GUID defined in the table above. However, most of the spherical configurations of platform elements will be managed implicitly by the platform. The properties can be queried by the application only for any extra functionality that the application developer may want to implement, for example, any custom effects that need to be inserted or removed depending on the sphericalness of the video.
 
 The platform bypasses the inbox effects like face detection, scene analyzer and video stabilization (if added) when it detects the stream attribute property value indicating a spherical frame source.
 
-The platform implicitly configures the media player element connected for preview for 360 video projection experience. The application has to call appropriate platform APIs to select media player element for preview. The application also has to implement the UI to control media player’s projection direction and angle. If the application chooses capture element for preview, the spherical projection experience cannot be leveraged.
+The platform implicitly configures the media player element connected for preview for 360 video projection experience. The application has to call appropriate platform APIs to select media player element for preview. The application also has to implement the UI to control media player's projection direction and angle. If the application chooses capture element for preview, the spherical projection experience cannot be leveraged.
 
-The platform also implicitly configures the MP4 sink to record a 360 video (pass the appropriate video spherical format and related metadata if any available and supported) when the stream used contains the property defined in Table 1 – required stream atribute to indentify a spherical frame source.
+The platform also implicitly configures the MP4 sink to record a 360 video (pass the appropriate video spherical format and related metadata if any available and supported) when the stream used contains the property (defined in the following table) to provide the required stream attribute to identify a spherical frame source.
 
-| **MF\_SD\_VIDEO\_SPHERICAL\_FORMAT value (MFVideoSphericalFormat)**  | **SphericalVideoFrameFormat value** | **Interpretation**  |
+| **MF_SD_VIDEO_SPHERICAL_FORMAT value (MFVideoSphericalFormat)**  | **SphericalVideoFrameFormat value** | **Interpretation**  |
 |---|---|---|
-| Property found in media type attributes set to value MFVideoSphericalFormat\_Equirectangular (1) | SphericalVideoFrameFormat. Equirectangular | The stream provides spherical frames in equirectangular format viewable via MediaPlayer Element. |
-| Property found in media type attributes set to value MFVideoSphericalFormat\_Unsupported (0)     | SphericalVideoFrameFormat. Unsupported     | The stream provides spherical frames in another format which is not compatible with MediaPlayer Element. (May be a custom format supported by some Apps) |
+| Property found in media type attributes set to value MFVideoSphericalFormat_Equirectangular (1) | SphericalVideoFrameFormat. Equirectangular | The stream provides spherical frames in equirectangular format viewable via MediaPlayer Element. |
+| Property found in media type attributes set to value MFVideoSphericalFormat_Unsupported (0)     | SphericalVideoFrameFormat. Unsupported     | The stream provides spherical frames in another format which is not compatible with MediaPlayer Element. (May be a custom format supported by some Apps) |
 | Property is absent from media type attributes.                                                   | SphericalVideoFrameFormat. None            | The stream provides regular non-spherical frames. (non-360) |
 
 ## Application guidance
 
 The application can use the [MediaPlayerElement](/uwp/api/windows.ui.xaml.controls.mediaplayerelement) XAML control, to leverage the 360 video spherical projection experience.
 
-If the MF\_SD\_VIDEO\_SPHERICAL\_FORMAT property exists on the media type and is set to MFVideoSphericalFormat\_Equirectangular, the frames are then expected to be spherical and can be rendered appropriately via the [MediaPlayerElement](/uwp/api/windows.ui.xaml.controls.mediaplayerelement) XAML control. The application can query the spherical format detected by the media player by checking the properties of MediaPlaybackSphericalVideoProjection obtained from the media player playback session (objMediaPlayer.PlaybackSession.SphericalVideoProjection). The application has to set the **isEnabled** property to **TRUE** to start the spherical projection.
+If the MF_SD_VIDEO_SPHERICAL_FORMAT property exists on the media type and is set to MFVideoSphericalFormat_Equirectangular, the frames are then expected to be spherical and can be rendered appropriately via the [MediaPlayerElement](/uwp/api/windows.ui.xaml.controls.mediaplayerelement) XAML control. The application can query the spherical format detected by the media player by checking the properties of MediaPlaybackSphericalVideoProjection obtained from the media player playback session (objMediaPlayer.PlaybackSession.SphericalVideoProjection). The application has to set the **isEnabled** property to **TRUE** to start the spherical projection.
 
-If the application implements its own custom spherical projection component, then it can query the frame source via its [MediaFrameSourceInfo.Properties](/uwp/api/windows.media.capture.frames.mediaframesourceinfo) for the spherical stream level video properties as described in the table above. However, all platform element configuration like media player preview and record sink will be configured implicitly by the platform on detection of the spherical video properties exposed by the camera DMFT on stream and mediatype attribuites.
-
-
+If the application implements its own custom spherical projection component, then it can query the frame source via its [MediaFrameSourceInfo.Properties](/uwp/api/windows.media.capture.frames.mediaframesourceinfo) for the spherical stream level video properties as described in the table above. However, all platform element configuration like media player preview and record sink will be configured implicitly by the platform on detection of the spherical video properties exposed by the camera DMFT on stream and media type attributes.
 
 ## .INF file example to publish a DMFT
 
-```INF
+```inf
 ;=================================================================================
 ; Microsoft Sample Extension INF for USB Camera SampleDeviceMFT installation
 ; Copyright (C) Microsoft Corporation. All rights reserved.
@@ -198,7 +163,7 @@ KSCATEGORY_VIDEO_CAMERA="{E5323777-F976-4f5b-9B55-B94699C46E44}"
 
 ## Example frame flow with a UVC device
 
-(1) Unstitched combined frame coming out of USBVdeo.sys:
+(1) Unstitched combined frame coming out of USBVideo.sys:
 
 ![Unstitched combined frame.](images/unstitched-combined.png)
 
