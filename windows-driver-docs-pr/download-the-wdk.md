@@ -26,8 +26,8 @@ You can run the Windows 11 WDK on Windows 7 and later, and use it to develop dri
 
 |Client OS|Server OS|
 |-|-|
-|Windows 11||
-|Windows 10|Windows Server 2022, Windows Server 2019, Windows Server 2016|
+|Windows 11|Windows Server 2022|
+|Windows 10|Windows Server 2019, Windows Server 2016|
 |Windows 8.1|Windows Server 2012 R2|
 |Windows 8|Windows Server 2012|
 |Windows 7|Windows Server 2008 R2 SP1|
