@@ -1,7 +1,7 @@
 ---
 title: Print support app design guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device.
-ms.date: 06/24/2021
+ms.date: 07/28/2021
 ms.localizationpriority: medium
 ---
 
@@ -30,13 +30,12 @@ Another area where the printer manufacturers can improve and differentiate is pr
 | MPD | Modern Print Dialog. This is shown to the user when an app is printing using Windows.Graphics.Printing API. |
 | CPD | Common Print Dialog. This is shown to the user when app is printing using win32 API. Apps that need to show print preview do not trigger this dialog and implement a version of dialog themselves. Office apps are a prime example of this. |
 | IPP | Internet Printing Protocol. Used from a client device to interact with the printer to retrieve and set printing preferences as well as to send the document to be printed. |
-| Print Support Associated Printer | Physical IPP Printer that is linked to PSA. |
-| IPP Printer | Printer which supports IPP protocol. |
+| Print Support Associated Printer | Printer that is linked to PSA. |
+| IPP Printer | Printer that supports IPP protocol. |
 | More Settings | Link that opens partner provided app UI in MPD. Defaults to opening built in print preferences UI when there is no PSA installed. |
-| Printer Preferences UI | Dialog where user can change the preferences related to a printer that would be applied at print time. Ex: orientation, paper size, color, print on both sides, etc. |
-| PDL | Page description language. The format in which a document is sent to printer. |
-| Associated PSA Printer | Every PSA is associated with a Physical IPP Printer. |
-| PrintDeviceCapabilities | XML document format for defining printer capabilities. |
+| Printer Preferences UI | Dialog used to set default printer options that are applied at print time. For example: orientation, paper size, color, print on both sides, and so on. |
+| PDL | Page Description Language. The format in which a document is sent to printer. |
+| PrintDeviceCapabilities | XML document format for defining printer capabilities. See [Print Ticket and Print Capabilities Technologies](../print/print-ticket-and-print-capabilities-technologies.md) for more information.|
 | PrintTicket | Collection of various print related features and their values used to capture the user's intent for a given print job. |
 | PrintSupportExtension | PSA background task responsible for providing printer constraint extension capabilities. |
 
