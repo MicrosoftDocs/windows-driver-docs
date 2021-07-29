@@ -19,7 +19,7 @@ The system describes buffers for each *TransferType* value as follows.
 
 ## METHOD_BUFFERED
 
-For this transfer type, IRPs supply a pointer to a buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**. This buffer represents both the input buffer and the output buffer that are specified in calls to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. The driver transfers data out of, and then into, this buffer.
+For this transfer type, IRPs supply a pointer to a buffer at **Irp->AssociatedIrp.SystemBuffer**. This buffer represents both the input buffer and the output buffer that are specified in calls to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. The driver transfers data out of, and then into, this buffer.
 
 For input data, the buffer size is specified by **Parameters.DeviceIoControl.InputBufferLength** in the driver's [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure. For output data, the buffer size is specified by **Parameters.DeviceIoControl.OutputBufferLength** in the driver's **IO_STACK_LOCATION** structure.
 
@@ -27,9 +27,13 @@ The size of the space that the system allocates for the single input/output buff
 
 ## METHOD_IN_DIRECT or METHOD_OUT_DIRECT
 
-For these transfer types, IRPs supply a pointer to a buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**. This represents the buffer that is specified in calls to **DeviceIoControl** and **IoBuildDeviceIoControlRequest**. The buffer size is specified by **Parameters.DeviceIoControl.InputBufferLength** in the driver's **IO_STACK_LOCATION** structure.
+For these transfer types, IRPs supply a pointer to a buffer at **Irp->AssociatedIrp.SystemBuffer**.
+This represents the first buffer that is specified in calls to **DeviceIoControl** and **IoBuildDeviceIoControlRequest**.
+The buffer size is specified by **Parameters.DeviceIoControl.InputBufferLength** in the driver's **IO_STACK_LOCATION** structure.
 
-For these transfer types, IRPs also supply a pointer to an MDL at **Irp-&gt;MdlAddress**. This represents the buffer that is specified in calls to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. This buffer can be used as either an input buffer or an output buffer, as follows:
+For these transfer types, IRPs also supply a pointer to an MDL at **Irp->MdlAddress**.
+This represents the second buffer that is specified in calls to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**.
+This buffer can be used as either an input buffer or an output buffer, as follows:
 
 -   METHOD_IN_DIRECT is specified if the driver that handles the IRP receives data in the buffer when it is called. The MDL describes an input buffer, and specifying METHOD_IN_DIRECT ensures that the executing thread has read-access to the buffer.
 
@@ -39,9 +43,10 @@ For both of these transfer types, **Parameters.DeviceIoControl.OutputBufferLengt
 
 ## METHOD_NEITHER
 
-The I/O manager does not provide any system buffers or MDLs. The IRP supplies the user-mode virtual addresses of the input and output buffers that were specified to **DeviceIoControl** or **IoBuildDeviceIoControlRequest**, without validating or mapping them.
+The I/O manager does not provide any system buffers or MDLs.
+The IRP supplies the user-mode virtual addresses of the input and output buffers that were specified to **DeviceIoControl** or **IoBuildDeviceIoControlRequest**, without validating or mapping them.
 
-The input buffer's address is supplied by **Parameters.DeviceIoControl.Type3InputBuffer** in the driver's **IO_STACK_LOCATION** structure, and the output buffer's address is specified by **Irp-&gt;UserBuffer**.
+The input buffer's address is supplied by **Parameters.DeviceIoControl.Type3InputBuffer** in the driver's **IO_STACK_LOCATION** structure, and the output buffer's address is specified by **Irp->UserBuffer**.
 
 Buffer sizes are supplied by **Parameters.DeviceIoControl.InputBufferLength** and **Parameters.DeviceIoControl.OutputBufferLength** in the driver's **IO_STACK_LOCATION** structure.
 
