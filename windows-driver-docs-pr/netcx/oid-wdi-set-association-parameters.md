@@ -1,6 +1,6 @@
 ---
 title: OID_WDI_SET_ASSOCIATION_PARAMETERS (dot11wificxintf.h)
-description: The OID_WDI_SET_ASSOCIATION_PARAMETERS property command specifies parameters that the adapter can use during association to a set of BSSIDs.
+description: The OID_WDI_SET_ASSOCIATION_PARAMETERS command specifies parameters that the adapter can use during association to a set of BSSIDs.
 ms.date: 06/30/2021
 keywords:
  - OID_WDI_SET_ASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista

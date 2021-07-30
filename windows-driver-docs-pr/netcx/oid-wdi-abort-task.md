@@ -1,13 +1,13 @@
 ---
-title: OID_WDI_ABORT_TASK
-description: OID_WDI_ABORT_TASK is a property that is sent down to cancel a specific pending task.
-ms.date: 07/18/2017
+title: OID_WDI_ABORT_TASK (dot11wificxintf.h)
+description: The OID_WDI_ABORT_TASK command is a property that is sent down to cancel a specific pending task.
+ms.date: 07/31/2021
 keywords:
  - OID_WDI_ABORT_TASK Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
 ---
 
-# OID\_WDI\_ABORT\_TASK
+# OID\_WDI\_ABORT\_TASK (dot11wificxintf.h)
 
 
 OID\_WDI\_ABORT\_TASK is a property that is sent down to cancel a specific pending task.
@@ -34,7 +34,6 @@ This command follows property semantics. It should be treated as a signal, shoul
 
 Contains a status of NDIS\_STATUS\_SUCCESS. There is no additional payload.
 ## Examples
-
 
 
 Original input task command:
@@ -85,26 +84,11 @@ Abort task command result:
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2016</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Dot11wdi.h</td>
-</tr>
-</tbody>
-</table>
+|Requirement|Value|
+|--- |--- |
+|Minimum supported client|Windows 11|
+|Minimum supported server|Windows Server 2022|
+|Header|dot11wificxintf.h|
 
  
 
