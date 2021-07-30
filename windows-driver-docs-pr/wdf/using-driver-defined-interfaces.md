@@ -10,7 +10,7 @@ keywords:
 - reference functions WDK KMDF
 - dereference functions WDK KMDF
 - no-op functions WDK KMDF
-ms.date: 04/20/2017
+ms.date: 07/30/2021
 ms.localizationpriority: medium
 ---
 
@@ -42,6 +42,11 @@ To create an interface and make it available to other drivers, framework-based d
     The first member of this driver-defined structure must be an [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) header structure. Additional members might include interface data and pointers to additional structures or routines that anther driver can call.
 
     Your driver must provide a [**WDF\_QUERY\_INTERFACE\_CONFIG**](/windows-hardware/drivers/ddi/wdfqueryinterface/ns-wdfqueryinterface-_wdf_query_interface_config) structure, which describes the interface that you have defined.
+
+    > [!NOTE]
+    > When using [**WDF\_QUERY\_INTERFACE\_CONFIG**](/windows-hardware/drivers/ddi/wdfqueryinterface/ns-wdfqueryinterface-_wdf_query_interface_config), WDF does not support multiple versions of a single interface that use the same interface GUID.
+    > As a result, when introducing a new version of an existing interface, create a new GUID instead of revising the **Size** or **Version** fields of the [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) structure.
+    > If your driver does reuse the same interface GUID and with modified **Size** or **Version** fields, the driver should provide a [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) callback routine for [**IRP_MN_QUERY_INTERFACE**](/windows-hardware/drivers/kernel/irp-mn-query-interface).
 
 2.  Call [**WdfDeviceAddQueryInterface**](/windows-hardware/drivers/ddi/wdfqueryinterface/nf-wdfqueryinterface-wdfdeviceaddqueryinterface).
 

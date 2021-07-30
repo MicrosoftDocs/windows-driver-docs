@@ -1,7 +1,7 @@
 ---
 title: IRP_MN_QUERY_INTERFACE
 description: The IRP_MN_QUERY_INTERFACE request enables a driver to export a direct-call interface to other drivers.A bus driver that exports an interface must handle this request for its child devices (child PDOs).
-ms.date: 08/12/2017
+ms.date: 07/30/2021
 keywords:
  - IRP_MN_QUERY_INTERFACE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -17,6 +17,9 @@ A bus driver that exports an interface must handle this request for its child de
 An "interface" in this context consists of one or more routines, and possibly data, exported by a driver or set of drivers. An interface has a structure that describes its contents and a GUID that identifies its type.
 
 For example, the PCMCIA bus driver exports an interface of type GUID\_PCMCIA\_INTERFACE\_STANDARD that contains routines for operations such as getting the write-protect condition of a PCMCIA memory card. The function driver for such a memory card can send an **IRP\_MN\_QUERY\_INTERFACE** request to the parent PCMCIA bus driver to get pointers to the PCMCIA interface routines.
+
+> [!NOTE]
+> When introducing a new version of an existing interface, create a new GUID instead of revising the Size or Version fields of the [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) structure. For more info, see [Using Driver-Defined Interfaces](/windows-hardware/drivers/wdf/using-driver-defined-interfaces).
 
 This section describes the query-interface IRP as a general mechanism. Drivers that expose an interface should provide additional information about their specific interface.
 
