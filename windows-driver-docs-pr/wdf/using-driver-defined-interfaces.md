@@ -45,8 +45,8 @@ To create an interface and make it available to other drivers, framework-based d
 
     > [!NOTE]
     > When using [**WDF\_QUERY\_INTERFACE\_CONFIG**](/windows-hardware/drivers/ddi/wdfqueryinterface/ns-wdfqueryinterface-_wdf_query_interface_config), WDF does not support multiple versions of a single interface that use the same interface GUID.
-    > As a result, when introducing a new version of an existing interface, create a new GUID instead of revising the **Size** or **Version** fields of the [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) structure.
-    > If your driver does reuse the same interface GUID and with modified **Size** or **Version** fields, the driver should provide a [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) callback routine for [**IRP_MN_QUERY_INTERFACE**](/windows-hardware/drivers/kernel/irp-mn-query-interface).
+    > As a result, when introducing a new version of an existing interface, we recommend creating a new GUID instead of revising the **Size** or **Version** fields of the [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) structure.
+    > If your driver does reuse the same interface GUID with modified **Size** or **Version** fields, the driver should provide a [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) callback routine for [**IRP_MN_QUERY_INTERFACE**](/windows-hardware/drivers/kernel/irp-mn-query-interface).
 
 2.  Call [**WdfDeviceAddQueryInterface**](/windows-hardware/drivers/ddi/wdfqueryinterface/nf-wdfqueryinterface-wdfdeviceaddqueryinterface).
 
