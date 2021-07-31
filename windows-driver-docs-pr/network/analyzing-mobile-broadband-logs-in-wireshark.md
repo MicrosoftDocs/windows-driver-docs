@@ -16,12 +16,12 @@ Follow these steps to diagnose the logs related to mobile broadband using Wiresh
 
 2. After you start the Wireshark 3.5 installer, one of the steps is **Choose Components**.
  
-   ![Diagram illustrating how to launch the ETW reader.](images/wireshark-mbb-install0.png) 
+   ![Diagram illustrating ETW installation.](images/wireshark-mbb-install0.png) 
 
 
    Expand Tools, scroll down, and select **Etwdump**.
 
-   ![Diagram illustrating how to launch the ETW reader.](images/wireshark-mbb-install1.png) 
+   ![Diagram illustrating how to choose Etwdump.](images/wireshark-mbb-install1.png) 
 
 
 1. Launch the ETW reader.
