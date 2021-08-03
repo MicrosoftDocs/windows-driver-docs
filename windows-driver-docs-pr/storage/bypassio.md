@@ -3,7 +3,7 @@ title: BypassIO for storage drivers
 description: About BypassIO for storage drivers
 keywords:
 - storage drivers WDK , BypassIO
-ms.date: 07/08/2021
+ms.date: 07/30/2021
 prerelease: false
 ms.localizationpriority: medium
 ---
@@ -53,7 +53,7 @@ The following DDIs relevant to storage drivers were added to provide BypassIO su
 Starting in Windows 11, storage driver developers need to update their driver's .INF or MANIFEST files to add the **StorageSupportedFeatures** infrastructure with **STORAGE_SUPPORTED_FEATURES_BYPASS_IO** for BypassIO as follows:
 
 * Define a "Parameters" key under your Service definition
-* Add a DWORD value named "**StorageSupportedFeatures**"
+* Add a DWORD value named "**StorageSupportedFeatures**", and set this value to 0x1 to indicate BypassIO support.
 
 The driver then processes [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_bypass_io) as needed. The **FS_BPIO_OP_QUERY** operation will fail if there is a volume storage stack driver that has not opted in.
 

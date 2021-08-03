@@ -3,7 +3,7 @@ title: BypassIO
 description: About BypassIO
 keywords:
 - filter drivers WDK file system , BypassIO
-ms.date: 07/08/2021
+ms.date: 07/30/2021
 prerelease: false
 ms.localizationpriority: medium
 ---
@@ -40,14 +40,15 @@ Starting in Windows 11, BypassIO is supported as follows:
 
 ## How BypassIO works
 
-When [**NtReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile) is called on a BypassIO-enabled **FileHandle**, instead of flowing through the traditional I/O stack, the operations flow directly from the I/O manager to the (NTFS) file system and then to the (NVMe) storage driver (no IRP is issued):
+When [**NtReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile) is called on a BypassIO-enabled **FileHandle**, the operation does not flow through the traditional I/O stack. Instead, no IRP is issued, and the operation flows directly from the I/O manager to the (NTFS) file system, then to the disk (classpnp) driver, and then to the StorNVMe driver.
 
-* All file system filters are skipped
-* All volume and storage stack filters and drivers are skipped
+* All file system filters are skipped.
+* All volume stack filters are skipped.
+* All storage stack filters and drivers above the disk driver, and between the disk and StorNVMe drivers, are skipped.
 
 :::image type="content" source="images/traditional-io-path.jpg" alt-text="Shows the traditional I O path, where a read request traverses the entire file system stack, volume stack, and storage stack.":::
 
-:::image type="content" source="images/bypass-io-path.jpg" alt-text="Shows the Bypass I O path. When Bypass I O is enabled, the I O manager sends a read request directly to the file system, which sends the request directly to the NVMe driver, skipping all filters in the file system stack, the entire volume stack, and any drivers in the storage stack above the NVMe driver.":::
+:::image type="content" source="images/bypass-io-path.jpg" alt-text="Shows the Bypass I O path. When Bypass I O is enabled, the I O manager sends a read request directly to the file system, which sends the request directly to the disk driver, skipping all filters in the file system stack, the entire volume stack, and any drivers in the storage stack above the disk driver, and between the disk and StorNVMe drivers.":::
 
 ## DDIs changes and additions for BypassIO
 
@@ -83,7 +84,7 @@ Starting in Windows 11, filter developers should add **SUPPORTED_FS_FEATURES_BYP
 > [!NOTE]
 > A filter that can never support BypassIO should still add **SUPPORTED_FS_FEATURES_BYPASS_IO** to its **SupportedFeatures** state, and then veto appropriately inside the filter, specifying the reason.
 
-Minifilters that do not filter IRP_MJ_READ or IRP_MJ_WRITE are automatically opted in to BypassIO support.
+Minifilters that do not filter IRP_MJ_READ or IRP_MJ_WRITE are automatically opted in to BypassIO support, as if they had added **SUPPORTED_FS_FEATURES_BYPASS_IO** in **SupportedFeatures**.
 
 The **FS_BPIO_OP_ENABLE** and **FS_BPIO_OP_QUERY** operations will fail on that stack if there is an attached minifilter that has not opted in.
 
