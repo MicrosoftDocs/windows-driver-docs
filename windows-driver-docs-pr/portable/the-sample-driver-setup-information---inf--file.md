@@ -137,7 +137,7 @@ The WpdHelloWorldDriver project contains a setup information (.inf) file named *
 <td align="left">Class parameter</td>
 <td align="left">This parameter is required. Must be set to "WPD".
 <p>Example:</p>
-<pre space="preserve"><code>[Version]
+<pre><code>[Version]
 Class=WPD</code></pre></td>
 </tr>
 <tr class="odd">
@@ -145,7 +145,7 @@ Class=WPD</code></pre></td>
 <td align="left">ClassGuid parameter</td>
 <td align="left">This parameter is required. Must be set to a valid GUID.
 <p>Example:</p>
-<pre space="preserve"><code>[Version]
+<pre><code>[Version]
 ClassGuid={EEC5AD98-8080-425f-922A-DABF3DE3F69A}</code></pre></td>
 </tr>
 <tr class="even">
@@ -154,7 +154,7 @@ ClassGuid={EEC5AD98-8080-425f-922A-DABF3DE3F69A}</code></pre></td>
 <td align="left">This directive is required.
 <p>This directive must specify a well-formed GUID.</p>
 <p>Example:</p>
-<pre space="preserve"><code>[WpdHelloWorldDriver_Install]
+<pre><code>[WpdHelloWorldDriver_Install]
 DriverCLSID="{EC7445EE-BC00-4CED-AFE7-A52849F10239}"</code></pre></td>
 </tr>
 <tr class="odd">

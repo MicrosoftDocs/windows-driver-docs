@@ -325,7 +325,7 @@ You can also use the following additional operators in MASM expressions.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$scmp("</strong><em>String1</em><strong>", "</strong><em>String2</em><strong>")</strong></p></td>
-<td align="left"><p>Evaluates to -1, 0, or 1, like the <strong>strcmp</strong> by using the <strong><a href="/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp" data-raw-source=" href="/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp"> strcmp </a> C function.</p></td>
+<td align="left"><p>Evaluates to -1, 0, or 1, like the <strong>strcmp</strong> by using the <strong><a href="/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp"> strcmp </a> C function.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$sicmp("</strong><em>String1</em><strong>", "</strong><em>String2</em><strong>")</strong></p></td>

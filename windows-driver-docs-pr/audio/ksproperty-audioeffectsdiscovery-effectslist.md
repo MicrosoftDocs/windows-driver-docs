@@ -24,11 +24,11 @@ The **KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST** property is a filter prop
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -72,8 +72,8 @@ If the property descriptor specifies an *AudioProcessingMode* value that the dri
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
