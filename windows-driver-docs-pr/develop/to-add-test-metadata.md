@@ -18,7 +18,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
 1.  Add the required test property metadata to the source files for your test.
 2.  For example, if you use the Driver Test template to create your version of the SurpriseRemove test, the following metadata is added. Edit the test description, display name, category, and results file attributes.
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -50,7 +50,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="CSharp"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -132,7 +132,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -168,7 +168,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -204,7 +204,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -240,7 +240,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -277,7 +277,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -313,7 +313,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -349,7 +349,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
