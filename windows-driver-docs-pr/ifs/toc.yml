@@ -207,6 +207,8 @@
       href: reparse-points.md
     - name: "Reparse point tag request"
       href: reparse-point-tag-request.md
+  - name: "BypassIO"
+    href: bypassio.md
 - name: "File system legacy filter drivers"
   # Auto-expanded node L1
   items:
