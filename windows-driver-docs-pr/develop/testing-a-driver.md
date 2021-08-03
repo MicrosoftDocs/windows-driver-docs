@@ -14,7 +14,6 @@ The WDK adds a driver testing interface to Visual Studio that allows you to buil
 
 This video demonstrates the how to run driver-related tests in a test group.
 
-`<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src =""></iframe>`
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e12e5ce5-b41f-4b91-ab5f-69598ccdcb57?autoplay=false]
 
 
