@@ -71,7 +71,7 @@ Additionally, the following DDIs were changed to support BypassIO:
 
 Enabling BypassIO on a handle doesn't impact other handles. However, other operations on a BypassIO-enabled handle do impact the use of BypassIO, such as the following:
 
-* If you have a BypassIO-enabled handle on which BypassIO is enabled and functioning, and someone opens that file handle to perform cached or memory-mapped I/O on that handle, the system will temporarily disable BypassIO on that thread, and instead use the traditional I/O path, to guarantee that stale data does not occur. The system continues to use the traditional I/O path on that handle until all data sections and cache maps are torn down, so filters have got to close that file in order for BypassIO to resume.
+* If someone opens a BypassIO-enabled file handle on which BypassIO is enabled and functioning, so that they can perform cached or memory-mapped I/O, the system will temporarily disable BypassIO on that handle. The system will instead use the traditional I/O path to guarantee that stale data does not occur. The system will continue to use the traditional I/O path on that handle until all data sections and cache maps are torn down, so filters have got to close that handle’s file in order for BypassIO to resume.
 
 * If a BypassIO-enabled file is marked sparse, all BypassIO operations start using the traditional I/O path.
 
