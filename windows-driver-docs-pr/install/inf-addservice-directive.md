@@ -50,7 +50,7 @@ To indicate that a service is the function driver for a device, the service shou
 Every device driver INF should have exactly one associated service.  The INF does not require an associated service if it is an Extension or uses the Include/Needs directives to inherit the associated service from another INF.  For devices that do not require a function driver, the NULL driver can be specified as follows:
 
 ```
-AddService = ,2.
+AddService = ,2
 ```
 
 <a href="" id="0x00000008--spsvcinst-noclobber-displayname-"></a>**0x00000008** (SPSVCINST_NOCLOBBER_DISPLAYNAME)  
