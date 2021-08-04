@@ -1,7 +1,7 @@
 ---
 title: Printer Driver Isolation
 description: Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
-ms.date: 06/12/2020
+ms.date: 08/04/2021
 ms.localizationpriority: medium
 ---
 
@@ -46,11 +46,12 @@ The following table shows the spooler functions that an administrator can use to
 | [GetPrinterDataEx](/windows/win32/printdocs/getprinterdataex) | Get the driver-isolation settings for a printer. |
 | [SetPrinterDataEx](/windows/win32/printdocs/setprinterdataex) | Set the driver-isolation settings for a printer. |
 | [EnumPrinterDataEx](/windows/win32/printdocs/enumprinterdataex) | Enumerate driver-isolation settings for a printer. |
-| [FindFirstPrinterChangeNotification](/windows/win32/printdocs/findfirstprinterchangenotification)<br><br>[FindNextPrinterChangeNotification](/windows/win32/printdocs/findnextprinterchangenotification) | Request notifications of changes to the driver-isolation settings for a printer. |
+| [FindFirstPrinterChangeNotification](/windows/win32/printdocs/findfirstprinterchangenotification), [FindNextPrinterChangeNotification](/windows/win32/printdocs/findnextprinterchangenotification) | Request notifications of changes to the driver-isolation settings for a printer. |
 
 The format for the data is as follows:
 
 - Driver in each group is separated by '\\'
+
 - Each driver group is separated by '\\\\'
 
 The first group loads the driver into the spooler processes. Each subsequent group loads the drivers in isolated processes per group. The second group is considered the 'shared' group in which other isolation-capable drivers are loaded by default.
