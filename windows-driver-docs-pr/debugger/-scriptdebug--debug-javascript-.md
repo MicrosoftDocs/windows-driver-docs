@@ -82,7 +82,7 @@ To start actively debugging the script use the **.scriptdebug** command.
 >>> Debug [DebuggableSample <No Position>] >
 ```
 
-Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
+Once you see the prompt `>>> Debug [DebuggableSample <No Position>] >` and a request for input, you are
 inside the script debugger.  
 
 Use the **.help** command or **?** to display a list of commands in the JavaScript debugging environment.
@@ -95,9 +95,9 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ?? <expr>  ......................... Evaluate expression <expr> and display result
     |  ................................. List available scripts
     |<scriptid>s  ...................... Switch context to the given script
-    bc <bpid>  ......................... Clear breakpoint by specified <bpid>
-    bd <bpid>  ......................... Disable breakpoint by specified <bpid>
-    be <bpid>  ......................... Enable breakpoint by specified <bpid>
+    bc \<bpid\>  ......................... Clear breakpoint by specified \<bpid\>
+    bd \<bpid\>  ......................... Disable breakpoint by specified \<bpid\>
+    be \<bpid\>  ......................... Enable breakpoint by specified \<bpid\>
     bl  ................................ List breakpoints
     bp <line>:<column>  ................ Set breakpoint at the specified line and column
     bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name
@@ -182,13 +182,13 @@ someObj          : {...}
 Use the following breakpoint commands to work with additional breakpoints.
 
 
-**bp <bpid>**: Set a breakpoint
+**bp \<bpid\>**: Set a breakpoint
 
-**bd <bpid>**: Disable the breakpoint
+**bd \<bpid\>**: Disable the breakpoint
 
-**be <bpid>**: Enable the breakpoint
+**be \<bpid\>**: Enable the breakpoint
 
-**bc <bpid>**: Clear the breakpoint
+**bc \<bpid\>**: Clear the breakpoint
 
 **bpc**: Set breakpoint on current line
 
