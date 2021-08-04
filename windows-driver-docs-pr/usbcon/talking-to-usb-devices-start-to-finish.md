@@ -120,7 +120,7 @@ Alternatively, you can view information the registry. For more information, see 
 <div>
  
 </div>
-<pre class="syntax" space="preserve"><code>&lt;Capabilities&gt;
+<pre class="syntax"><code>&lt;Capabilities&gt;
       &lt;!--When the device's classId is FF * *, there is a predefined name for the class. 
           You can use the name instead of the class id. 
           There are also other predefined names that correspond to a classId.--&gt;
