@@ -180,7 +180,7 @@ The maximum value that is allowed for an integer. &lt;IHV defined&gt; indicates 
 
 The following table describes all of the RSS keywords that can be edited.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />

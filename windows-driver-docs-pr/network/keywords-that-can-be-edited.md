@@ -63,7 +63,7 @@ The maximum value that is allowed for an integer. &lt;IHV defined&gt; indicates 
 
 The following table lists all of the keywords and describes the values that a driver must use for the preceding attributes. For more information about a keyword, search for the keyword in the WDK documentation.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />

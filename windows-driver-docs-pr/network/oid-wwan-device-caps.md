@@ -28,7 +28,7 @@ Many "world-wide" MB devices today support multiple frequency bands because the 
 
 **3GPP (GSM-based) Frequency Band Classes**
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />

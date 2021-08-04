@@ -175,7 +175,7 @@ The following table describes the operations that are allowed based on the state
 
  
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />
