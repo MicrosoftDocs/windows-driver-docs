@@ -20,7 +20,7 @@ The Mobile Plans app supports the showing of 2 different types of toast notifica
 
 ## SMS-triggered notifications
 
-Mobile operators can trigger a notification to be shown on a user's device by sending an SMS to the device. The body of the SMS includes a string identifier which will route the message to the Mobile Plans app, and trigger showing of the notification. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway.md).
+Mobile operators can trigger a notification to be shown on a user's device by sending an SMS to the device. The body of the SMS includes a string identifier which will route the message to the Mobile Plans app, and trigger showing of the notification. Clicking on the `<accept>` button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway.md).
 
 Because the mobile operator triggers the notification via SMS, the device must have the active profile and be registered on the cellular network with ability to receive the SMS. The device must also have data access to the Mobile Plans service for requesting the notification content.
 
@@ -32,7 +32,7 @@ The notification content can be customized by the mobile operator using a templa
 
 Field name | Description | Example
 ---------- | ----------- | -------
-Notification type | Several pre-defined types of SMS-notifications are supported. Each type behaves the same. Only the strings shown for the <accept> and <decline> buttons change depending on the type. | Low Balance, Zero Balance, New Offer, Trial Offer, Trial Ending, Trial Ended
+Notification type | Several pre-defined types of SMS-notifications are supported. Each type behaves the same. Only the strings shown for the `<accept>` and `<decline>` buttons change depending on the type. | Low Balance, Zero Balance, New Offer, Trial Offer, Trial Ending, Trial Ended
 Title | One line call to action | "You're almost out of data"
 Body | Short message highlighting the offering value to the end user | "There's less than 5MB left for your current data plan. Take action now to make sure you stay connected."
 Image | A lifestyle oriented photo with the PC as the centerpiece. Image dimensions are 364x180 pixels at 100% scaling. | https://picsum.photos/id/1/364/180

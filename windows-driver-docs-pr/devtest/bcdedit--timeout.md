@@ -31,6 +31,6 @@ Specifies the time to wait, in seconds, before the boot manager selects a defaul
 
 ## Examples
 
-The following command sets the boot manager <timeout> to 30 seconds:
+The following command sets the boot manager \<timeout\> to 30 seconds:
 
 `bcdedit /timeout 30`

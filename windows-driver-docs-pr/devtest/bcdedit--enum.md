@@ -33,7 +33,7 @@ Specifies the store to be used. If this option is not specified, the system stor
 
 **\<type\>**
 
-Specifies the type of entries to be listed. <type> can be one of the following:
+Specifies the type of entries to be listed. Can be one of the following:
 
 *ACTIVE* - All entries in the boot manager display order. This is the default.
 

@@ -26,7 +26,7 @@ bcdedit /toolsdisplayorder <id> [...] [ /addfirst | /addlast | /remove ]
 
 ## Parameters
 
-**<id> [...]**
+**\<id\> [...]**
 
 Specifies a list of identifiers that make up the tools display order.  At least one identifier must be specified and they must be separated by spaces.  For more information about identifiers, run "bcdedit /? ID".
 
