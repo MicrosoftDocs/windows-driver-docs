@@ -215,7 +215,7 @@ Use the following commands to move forward in the script.
 Use the following commands to work with frames.
 
 
-**.frame <index>**: Switch to frame number <index>
+**.frame \<index\>**: Switch to frame number \<index\>
 
 **.f+**: Switch to next stack frame
 

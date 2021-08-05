@@ -87,7 +87,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Net** tab. Paste in your port number and key that you saved to in the notepad .txt file earlier. Select **OK**.
 
-You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where <YourPort> is the port you selected above, and <YourKey> is the key that was returned by kdnet.exe above. Paste in the key in that you saved to in the notepad .txt file earlier.
+You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where \<YourPort\> is the port you selected above, and \<YourKey\> is the key that was returned by kdnet.exe above. Paste in the key in that you saved to in the notepad .txt file earlier.
 
    ```console
   windbg -k -d net:port=<YourDebugPort>,key=<YourKey> 

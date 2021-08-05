@@ -240,7 +240,7 @@ Other changes and bug fixes:
 -  Un-indexed TTD traces will now be more clear that they're un-indexed.
 -  Improved performance of the locals window
 -  Added a ribbon button to save the command window logs to a file.
--  Added . SelectMany(<projection>) to the default set of LINQ methods.
+-  Added . SelectMany(\<projection\>) to the default set of LINQ methods.
 
 ## 1.0.1807.11002
 
