@@ -19,8 +19,8 @@ The MITT software package contains several tools to be used to test simple perip
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

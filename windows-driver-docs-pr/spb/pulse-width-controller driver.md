@@ -78,7 +78,7 @@ The format of the path is as follows:
 ```cpp
 <DeviceInterfaceSymbolicLinkName>\<PinNumber>
 ```
-where <PinNumber> is the 0-based index of the pin to open. 
+where `<PinNumber>` is the 0-based index of the pin to open. 
 
 Here is an example of the symbolic path for pins:
 ```cpp

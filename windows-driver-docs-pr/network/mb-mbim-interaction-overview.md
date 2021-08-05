@@ -13,7 +13,7 @@ Microsoft provides an inbox class driver for mobile broadband (MBB) devices call
 MBCD is a miniport driver that combines with the Network Driver Interface Specification (NDIS) port driver to form a single function driver. In the OSI Network Model, this driver  logically sits on the top half of the Data Link Layer (layer 2). Network protocol drivers (such as IP) that logically sit on the Network layer (layer 3) receive data (SDUs) in segments (TCP) or datagrams (UDP) from the Transport Layer (layer 4) and send down data (PDUs) as packets to the Data Link Layer by invoking NDIS APIs. Generally, NDIS only involves a miniport driver when it is necessary.
 
 <br>
-<table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+<table cellpadding="10" border='1'>
   <tr>
   	  <td align ="center" colspan="5">OSI Network Model</td>
   </tr>

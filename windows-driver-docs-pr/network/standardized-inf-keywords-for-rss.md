@@ -149,7 +149,7 @@ The maximum processor group of the RSS interface.
 **\*RssMaxProcGroup** together with **\*RssMaxProcNumber** form a PROCESSOR_NUMBER structure that identifies the maximum processor number that can be used with RSS.
 
 For example, suppose **\*RssBaseProcGroup** is set to 1, **\*RssBaseProcNumber** is set to 16, **\*RssMaxProcGroup** is set to 3, and **\*RssMaxProcNumber** is set to 8.
-Using <group>:<processor> notation, the base processor is 1:16 and the max processor is 3:8.
+Using `<group>:<processor>` notation, the base processor is 1:16 and the max processor is 3:8.
 Then processors 0:0, 0:32, 1:0, and 1:15 will not be considered candidates for RSS, because they are below the base processor number.
 Processors 1:16, 1:31, 2:0, 2:63, 3:0, and 3:8 will all be considered candidates for RSS, because they fall in the range 1:16 through 3:8.
 Processors 3:9, 3:31, and 4:0 will not be considered candidates for RSS, because they are beyond the maximum processor number.

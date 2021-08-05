@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following table provides basic information about each framework object, links to the object's interface, and links to more information about the core framework objects.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />

@@ -543,7 +543,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 <td align="left"><p>0x01 0x23 0x34 0xab</p>
 <p>0xcd 0xef</p></td>
 <td align="left">6</td>
-<td align="left">Wi-Fi Direct P2P device MAC address: “01:23:34<span class="emoji" shortCode="ab">🆎</span>cd:ef”</td>
+<td align="left">Wi-Fi Direct P2P device MAC address: “01:23:34<span class="emoji">🆎</span>cd:ef”</td>
 </tr>
 <tr class="odd">
 <td align="left">69</td>

@@ -90,7 +90,7 @@ X-MS-DM-TransactionId: "MSFT-12345678-1234-1234-1234-123456789abc"
 
 ## App-triggered notifications
 
-Mobile operators in some markets also have the ability to show a promotional notification on eSIM-enabled Windows 10 PCs that do not have an eSIM profile installed. The promotional notification is triggered by the app shortly after the user completes setup of the device in the out of box experience. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway.md).
+Mobile operators in some markets also have the ability to show a promotional notification on eSIM-enabled Windows 10 PCs that do not have an eSIM profile installed. The promotional notification is triggered by the app shortly after the user completes setup of the device in the out of box experience. Clicking on the \<accept\> button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway.md).
 
 ### App-triggered notification content
 
