@@ -583,8 +583,8 @@ The configuration file XML contains a number of settings that need to be adjuste
 </tr>
 
 <tr>
-<td><p>$MaterialSetup\<n\>$</p></td>
-<td><p>The material setup section &lt;psk3dx:SetupCommands&gt; in materials. For example $MaterialSetup3$ represents the 3rd material in the list, typically the 3rd extruder.</p></td>
+<td><p>$MaterialSetup<i>x</i>$</p></td>
+<td><p>Where x is a single digit. The material setup section &lt;psk3dx:SetupCommands&gt; in materials. For example $MaterialSetup3$ represents the 3rd material in the list, typically the 3rd extruder.</p></td>
 </tr>
 
 <tr>
