@@ -1,7 +1,7 @@
 ---
 title: HKLM\SYSTEM\CurrentControlSet\Services Registry Tree
 description: HKLM\SYSTEM\CurrentControlSet\Services registry tree stores information about each service on the system.
-ms.date: 04/20/2017
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ---
 

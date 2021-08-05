@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Windows Drivers
 description: Windows Drivers allow you to create one driver that will run on on both Windows 10X and Windows Desktop.
-ms.date: 06/18/2020
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ---
 

@@ -2,7 +2,7 @@
 title: Device and Driver Installation
 description: This section explains how devices and drivers are installed in Windows.
 ms.assetid: 5bb4d9d3-9dcb-4820-a6ad-0345f7645c82
-ms.date: 07/20/2021
+ms.date: 08/05/2021
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

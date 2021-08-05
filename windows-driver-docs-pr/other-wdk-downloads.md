@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 06/24/2021
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---

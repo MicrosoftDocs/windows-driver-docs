@@ -5,7 +5,7 @@ keywords:
 - certificate stores WDK
 - driver signing WDK , digital signatures
 - Trusted Root Certification Authorities certificate store WDK
-ms.date: 07/20/2021
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ---
 
