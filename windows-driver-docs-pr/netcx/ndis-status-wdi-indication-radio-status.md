@@ -14,7 +14,7 @@ WiFiCx drivers use NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS to indicate chan
 
 | Object |
 |--------|
-| Port   |
+| Adapter   |
 
  
 

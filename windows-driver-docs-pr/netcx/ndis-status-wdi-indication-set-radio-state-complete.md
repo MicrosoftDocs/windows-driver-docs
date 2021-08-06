@@ -14,7 +14,7 @@ WiFiCx drivers use NDIS\_STATUS\_WDI\_INDICATION\_SET\_RADIO\_STATE\_COMPLETE to
 
 | Object |
 |--------|
-| Port   |
+| Adapter   |
 
  
 
