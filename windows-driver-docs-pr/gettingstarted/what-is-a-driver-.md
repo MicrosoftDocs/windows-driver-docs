@@ -4,7 +4,7 @@ description: A driver is a software component that lets the operating system and
 keywords:
 - define driver
 - driver definition
-ms.date: 08/06/21
+ms.date: 08/06/2021
 ms.localizationpriority: medium
 ---
 
