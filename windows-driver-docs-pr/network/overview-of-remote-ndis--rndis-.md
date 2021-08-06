@@ -1,10 +1,10 @@
 ---
 title: Overview of Remote NDIS (RNDIS)
-description: Overview of Remote NDIS (RNDIS)
+description: RNDIS eliminates the need for hardware vendors to write an NDIS miniport driver for a network device attached to the USB bus.
 keywords:
 - Remote NDIS WDK networking , architecture
 - Remote NDIS WDK networking , USB transport
-ms.date: 04/20/2017
+ms.date: 08/06/2021
 ms.localizationpriority: medium
 ---
 

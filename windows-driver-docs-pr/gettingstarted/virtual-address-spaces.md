@@ -1,7 +1,7 @@
 ---
-title: Virtual address spaces
-description: Virtual address spaces
-ms.date: 02/11/2020
+title: Virtual address spaces | Windows drivers
+description: When a processor reads or writes to a memory location, it uses a virtual address.
+ms.date: 08/06/2021
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +24,7 @@ This diagram illustrates some of the key features of virtual address spaces.
 
 The diagram shows the virtual address spaces for two 64-bit processes: Notepad.exe and MyApp.exe. Each process has its own virtual address space that goes from 0x000'0000000 through 0x7FF'FFFFFFFF. Each shaded block represents one page (4 kilobytes in size) of virtual or physical memory. Notice that the Notepad process uses three contiguous pages of virtual addresses, starting at 0x7F7'93950000. But those three contiguous pages of virtual addresses are mapped to noncontiguous pages in physical memory. Also notice that both processes use a page of virtual memory beginning at 0x7F7'93950000, but those virtual pages are mapped to different pages of physical memory.
 
-## <span id="User_space_and_system_space"></span><span id="user_space_and_system_space"></span><span id="USER_SPACE_AND_SYSTEM_SPACE"></span>User space and system space
+## User space and system space
 
 
 Processes like Notepad.exe and MyApp.exe run in user mode. Core operating system components and many drivers run in the more privileged kernel mode. For more information about processor modes, see [User mode and kernel mode](user-mode-and-kernel-mode.md). Each user-mode process has its own private virtual address space, but all code that runs in kernel mode shares a single virtual address space called *system space*. The virtual address space for a user-mode process is called *user space*.
@@ -48,7 +48,7 @@ Drivers that run in kernel mode must be very careful about directly reading from
 3.  Later the device interrupts whatever thread is currently running to say that the read operation is complete. The interrupt is handled by kernel-mode driver routines running on this arbitrary thread, which belongs to an arbitrary process.
 4.  At this point, the driver must not write the data to the starting address that the user-mode program supplied in Step 1. This address is in the virtual address space of the process that initiated the request, which is most likely not the same as the current process.
 
-## <span id="Paged_pool_and_Nonpaged_pool"></span><span id="paged_pool_and_nonpaged_pool"></span><span id="PAGED_POOL_AND_NONPAGED_POOL"></span>Paged pool and Nonpaged pool
+## Paged pool and nonpaged pool
 
 
 In user space, all physical memory pages can be paged out to a disk file as needed. In system space, some physical pages can be paged out and others cannot. System space has two regions for dynamically allocating memory: paged pool and nonpaged pool. 
@@ -57,7 +57,7 @@ Memory that is allocated in paged pool can be paged out to a disk file as needed
 
 ![diagram comparing memory allocation in paged pool to that in nonpaged pool.](images/virtualaddressspace04.png)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [User mode and kernel mode](user-mode-and-kernel-mode.md)

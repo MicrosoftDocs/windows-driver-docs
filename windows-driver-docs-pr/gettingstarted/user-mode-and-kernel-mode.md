@@ -1,7 +1,7 @@
 ---
-title: User mode and kernel mode
-description: User mode and kernel mode
-ms.date: 04/20/2017
+title: User mode and kernel mode | Windows drivers
+description: A processor in a computer running Windows has two different modes - user mode and kernel mode.
+ms.date: 08/06/2021
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +20,7 @@ This diagram illustrates communication between user-mode and kernel-mode compone
 
 ![block diagram of user-mode and kernel-mode components.](images/userandkernelmode01.png)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Virtual Address Spaces](virtual-address-spaces.md)
