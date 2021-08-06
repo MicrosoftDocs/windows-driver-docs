@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 
 This section of the reference discusses the various debugger commands that you can use in CDB, KD, and WinDbg.
 
+- [ENTER (Repeat Last Command)](enter--repeat-last-command-.md)
 - [\$<, \$><, \$\$<, \$\$><, \$\$ >a< (Run Script File)](-----------------------a---run-script-file-.md)
 - [? (Command Help)](---command-help-.md)
 - [? (Evaluate Expression)](---evaluate-expression-.md)
