@@ -1,7 +1,7 @@
 ---
 title: Print support app design guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device.
-ms.date: 07/28/2021
+ms.date: 08/06/2021
 ms.localizationpriority: medium
 ---
 
@@ -11,6 +11,9 @@ ms.localizationpriority: medium
 > Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides guidance and examples for printer OEMs and IHVs to develop print support app (PSA) that can enhance a Windows user's print experience in several ways.
+
+> [!NOTE]
+> Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the [Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460).
 
 Some printer features are not presented in print dialogs shown by Windows as they are special features that need help from a manufacturer app to be configured correctly. They may also be features that are not provided in the default capabilities of the printer.
 
