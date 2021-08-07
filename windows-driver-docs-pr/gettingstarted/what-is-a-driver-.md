@@ -1,10 +1,10 @@
 ---
-title: What is a driver
-description: What is a driver
+title: What is a driver? | Windows drivers
+description: A driver is a software component that lets the operating system and a device communicate with each other.
 keywords:
 - define driver
 - driver definition
-ms.date: 04/20/2017
+ms.date: 08/06/2021
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +15,7 @@ It is challenging to give a single precise definition for the term *driver*. In 
 
 ![diagram that shows application, operating system, and driver.](images/whatisadriver01.png)
 
-## <span id="Expanding_the_definition"></span><span id="expanding_the_definition"></span><span id="EXPANDING_THE_DEFINITION"></span>Expanding the definition
+## Expanding the definition
 
 
 Our explanation so far is oversimplified in several ways:
@@ -32,7 +32,7 @@ Our explanation so far is oversimplified in several ways:
 
 We could expand our definition of *driver* by saying that a driver is any software component that observes or participates in the communication between the operating system and a device.
 
-## <span id="Software_drivers"></span><span id="software_drivers"></span><span id="SOFTWARE_DRIVERS"></span>Software drivers
+## Software drivers
 
 
 Our expanded definition is reasonably accurate but is still incomplete because some drivers are not associated with any hardware device at all. For example, suppose you need to write a tool that has access to core operating system data structures, which can be accessed only by code running in kernel mode. You can do that by splitting the tool into two components. The first component runs in user mode and presents the user interface. The second component runs in kernel mode and has access to the core operating system data. The component that runs in user mode is called an application, and the component that runs in kernel mode is called a *software driver*. A software driver is not associated with a hardware device. For more information about processor modes, see [User Mode and Kernel Mode](user-mode-and-kernel-mode.md).
@@ -41,7 +41,7 @@ This diagram illustrates a user-mode application communicating with a kernel-mod
 
 ![diagram that shows an application and a software driver.](images/whatisadriver03.png)
 
-## <span id="Additional_notes"></span><span id="additional_notes"></span><span id="ADDITIONAL_NOTES"></span>Additional notes
+## Additional notes
 
 
 Software drivers always run in kernel mode. The main reason for writing a software driver is to gain access to protected data that is available only in kernel mode. But device drivers do not always need access to kernel-mode data and resources. So some device drivers run in user mode.
