@@ -120,6 +120,8 @@
     href: windbg-scripting-preview.md
   - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
     href: windbg-notes-etc-preview.md
+  - name: "WinDbg Preview - Restricted Mode"
+    href: windbg-restricted-mode-preview.md
   - name: "WinDbg Preview Basics"
 # Auto-expanded node
     items: 
