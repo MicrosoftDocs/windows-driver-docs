@@ -36,7 +36,7 @@ Starting from the top of the diagram:
 
 -   The 1394 bus driver, *1394bus.sys*, enumerates devices on the IEEE 1394 bus and responds to Plug and Play and power management IRPs on their behalf.
 
--   The port driver for the host controller provides a hardware-independent interface to the IEEE 1394 bus. The port driver handles some IRPs and forwards others to the port driver for the motherboard's host controller. Microsoft supplies a standard port driver, *ohci1394.sys*, for host controllers that satisfy the *1394 Open Host Controller Interface Specification*, which is available for download from the [IEEE 1394 technology](https://go.microsoft.com/fwlink/p/?linkid=8729) website.
+-   The port driver for the host controller provides a hardware-independent interface to the IEEE 1394 bus. The port driver handles some IRPs and forwards others to the port driver for the motherboard's host controller. Microsoft supplies a standard port driver, *ohci1394.sys*, for host controllers that satisfy the *1394 Open Host Controller Interface Specification*.
 
 AV/C subunit drivers are just one of the possible types of IEC-61883 client drivers. Another example would be a driver that utilizes the HAVi protocol layered above IEC-61883. Although *61883.sys* and the IEC-61883 protocol do not have any AV/C or HAVi dependencies, clients of *61883.sys* can operate under different constraints. For example, AV/C subunit drivers are usually clients of *avc.sys*, which provides FCP-related functions and blocks upper-level drivers from sending FCP-related requests down the stack to be handled by *61883.sys*.
 
