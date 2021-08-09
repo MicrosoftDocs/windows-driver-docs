@@ -128,5 +128,5 @@ If you want to add this property page to your project, so that you can run the S
 * [**INF DriverVer directive**](../install/inf-driverver-directive.md)
 * [**INF Version section**](../install/inf-version-section.md)
 * [WDK and Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md)
-* [Stampinf task](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552786_task)
+* [Stampinf task](/windows-hardware/drivers/devtest/stampinf-task)
 * [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)

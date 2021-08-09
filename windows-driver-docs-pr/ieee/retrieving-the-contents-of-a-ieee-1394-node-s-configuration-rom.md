@@ -24,7 +24,7 @@ This topic contains the following sections:
 ## Retrieving the Configuration ROM Header
 
 
-To retrieve the contents of a node's configuration ROM, a client driver sends a [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537644) request to the IEEE 1394 driver stack by specifying the **u.GetLocalHostInformation.nLevel** to GET\_HOST\_CONFIG\_ROM. Upon completing the request, the bus driver retrieves the node's configuration ROM header in a [**GET\_LOCAL\_HOST\_INFO5**](/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info5) structure. The configuration ROM header is in the first five quadlets of a node's configuration ROM. This header includes the contents of the bus information block, as defined in the IEEE-1394a specification.
+To retrieve the contents of a node's configuration ROM, a client driver sends a [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) request to the IEEE 1394 driver stack by specifying the **u.GetLocalHostInformation.nLevel** to GET\_HOST\_CONFIG\_ROM. Upon completing the request, the bus driver retrieves the node's configuration ROM header in a [**GET\_LOCAL\_HOST\_INFO5**](/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info5) structure. The configuration ROM header is in the first five quadlets of a node's configuration ROM. This header includes the contents of the bus information block, as defined in the IEEE-1394a specification.
 
 The 1394ohci.sys bus driver tries to retrieve the configuration ROM header in a single asynchronous block read transaction. However, certain 1394 devices might not respond to this transaction correctly. In this situation, the new 1394 bus driver uses five asynchronous quadlet read transactions to retrieve the configuration ROM header.
 
@@ -54,4 +54,4 @@ You can find descriptions of the configuration ROM values in the previous steps 
 ## Related topics
 [The IEEE 1394 Driver Stack](./the-ieee-1394-driver-stack.md)  
 [Modifying the 1394 Configuration ROM](./modifying-the-1394-configuration-rom.md)  
-[**REQUEST\_GET\_CONFIG\_ROM**](https://msdn.microsoft.com/library/windows/hardware/gg266404)
+[**REQUEST\_GET\_CONFIG\_ROM**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class)

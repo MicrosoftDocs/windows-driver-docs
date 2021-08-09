@@ -83,7 +83,7 @@ The location path string for a given devnode can be displayed through Device Man
 
 3.  In the **Property** drop-down list, find the **LocationPaths** property. This property contains the location path string for this devnode and is the value that should be used for the **LocationPath** registry subkey.
 
-**Note**  It is possible that the devnode does not have a **LocationPaths** value. This is because the driver for this devnode or one of its parents does not implement the [GUID_PNP_LOCATION_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/ff546564) interface. In this case, you must check the parent devnode for a **LocationPaths** property.
+**Note**  It is possible that the devnode does not have a **LocationPaths** value. This is because the driver for this devnode or one of its parents does not implement the [GUID_PNP_LOCATION_INTERFACE](/windows-hardware/drivers/kernel/adding-a-pnp-device-to-a-running-system#using-guid_pnp_location_interface) interface. In this case, you must check the parent devnode for a **LocationPaths** property.
 
  
 

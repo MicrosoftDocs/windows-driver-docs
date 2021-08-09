@@ -18,7 +18,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 ## To submit a file
 
-1. Sign in to the Partner Center, and then select **Submit new hardware**. This loads the submission creation wizard.
+1. Sign in to the [Partner Center](https://partner.microsoft.com/dashboard), and then select **Submit new hardware**. This loads the submission creation wizard.
 
 2. In the **Packages and signing properties** section, choose a name for your driver submission. This name can be used to search for and organize your driver submissions. Note: If you share your driver with another company, they will see this name.
 

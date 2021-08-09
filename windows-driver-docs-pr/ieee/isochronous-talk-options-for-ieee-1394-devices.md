@@ -57,7 +57,7 @@ isoch_descriptor_2->ulLength = 512 * NUM_HEADERS;
 isoch_descriptor_2->nMaxBytesPerFrame = 512;
 ```
 
-Not all host controllers support the DESCRIPTOR\_HEADER\_SCATTER\_GATHER flag. To determine if the host controller supports it, query the bus driver with the [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537644) request, with **nLevel** = GET\_HOST\_CAPABILITIES. The bus driver will set the HOST\_INFO\_SUPPORTS\_ISO\_HDR\_INSERTION flag of the **HostCapabilities** member of the GET\_LOCAL\_HOST\_INFO2 structure it returns.
+Not all host controllers support the DESCRIPTOR\_HEADER\_SCATTER\_GATHER flag. To determine if the host controller supports it, query the bus driver with the [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) request, with **nLevel** = GET\_HOST\_CAPABILITIES. The bus driver will set the HOST\_INFO\_SUPPORTS\_ISO\_HDR\_INSERTION flag of the **HostCapabilities** member of the GET\_LOCAL\_HOST\_INFO2 structure it returns.
 
 ### Variable-size Data Packets with Headers
 
@@ -67,7 +67,7 @@ This case is similar to the fixed-size packet case. As with the fixed-size case,
 isoch_descriptor_1->fulFlags = DESCRIPTOR_HEADER_SCATTER_GATHER;
 ```
 
-But for the variable-size case, the driver must also set the RESOURCE\_VARIABLE\_ISOCH\_PAYLOAD flag in the **u.IsochAllocateResources.fulFlags** member of the IRB when it allocates resources with a [**REQUEST\_ISOCH\_ALLOCATE\_RESOURCES**](https://msdn.microsoft.com/library/windows/hardware/ff537649) request.
+But for the variable-size case, the driver must also set the RESOURCE\_VARIABLE\_ISOCH\_PAYLOAD flag in the **u.IsochAllocateResources.fulFlags** member of the IRB when it allocates resources with a [**REQUEST\_ISOCH\_ALLOCATE\_RESOURCES**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) request.
 
 Also, in the case of variable-size data packets, the driver must assemble a buffer of headers as in the fixed-size case. However, with variable-size packets, unlike fixed-size packets, the driver must record the size of each packet in a scatter/gather *header element* that it prepends to each header.
 
@@ -97,7 +97,7 @@ You should be aware of a subtlety with regard to the definition of **nMaxBytesPe
 
 The smaller the frame, the more frames the host controller driver can fit into the transmission buffer. Because each frame requires system resources such as time stamps and status information, smaller frames consume system resources more rapidly. The host controller driver calculates the number of frames that will fit in the buffer and the number of resources required for those frames, based on the value in **nMaxBytesPerFrame**. If there are frames smaller than the size indicated in **nMaxBytesPerFrame**, the number of frames requiring resources will be larger than the value calculated by the host controller driver, and this might lead to an error.
 
-These considerations do not apply when the driver is receiving data, only when the driver is transmitting variable-size frames in "talk mode". Drivers specify the type of data transmission associated with a particular channel when obtaining a resource handle for the channel with a [**REQUEST\_ISOCH\_ALLOCATE\_RESOURCES**](https://msdn.microsoft.com/library/windows/hardware/ff537649) request. The driver sets the RESOURCE\_VARIABLE\_ISOCH\_PAYLOAD flag in **u.IsochAllocateResources.fulFlags** during this request to indicate that it will transmit variable-size frames. The driver sets the RESOURCE\_USED\_IN\_TALKING flag in **u.IsochAllocateResources.fulFlags** to indicate that it will use the channel to transmit rather than receive data. Only when the driver sets both of these flags during the resource allocation request will the host controller driver interpret **nMaxBytesPerFrame** as a minimum rather than a maximum value.
+These considerations do not apply when the driver is receiving data, only when the driver is transmitting variable-size frames in "talk mode". Drivers specify the type of data transmission associated with a particular channel when obtaining a resource handle for the channel with a [**REQUEST\_ISOCH\_ALLOCATE\_RESOURCES**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) request. The driver sets the RESOURCE\_VARIABLE\_ISOCH\_PAYLOAD flag in **u.IsochAllocateResources.fulFlags** during this request to indicate that it will transmit variable-size frames. The driver sets the RESOURCE\_USED\_IN\_TALKING flag in **u.IsochAllocateResources.fulFlags** to indicate that it will use the channel to transmit rather than receive data. Only when the driver sets both of these flags during the resource allocation request will the host controller driver interpret **nMaxBytesPerFrame** as a minimum rather than a maximum value.
 
 Note that the **u.IsochAllocateResources.nMaxBufferSize** member of [**IRB**](/windows-hardware/drivers/ddi/1394/ns-1394-_irb) is always a maximum.
 
