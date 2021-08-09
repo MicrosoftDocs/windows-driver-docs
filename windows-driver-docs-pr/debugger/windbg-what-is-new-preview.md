@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides infomration on what's new in WinDbg preview debugger.
-ms.date: 04/27/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,22 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
+## 1.2107.13001.0
+
+### Regex search 
+
+WinDbgNext search now includes the option to search using regular expressions - Regex. Enable Regex in the window you'd like to search by doing Ctrl+F, then toggle the button labelled `.*` next to the search box.
+
+### Restricted Mode
+
+Restricted Mode limits the types of debugging sessions WinDbg Preview can start to remote debugging sessions and dump files only.  For more information, see [WinDbg Preview - Restricted Mode](windbg-restricted-mode-preview.md).
+
+### Shadowed variable support
+
+In past versions, WinDbg throws "Ambiguous Symbol" errors when trying to evaluate (??) or display (dx) a variable that shares its name with another variable in scope. Windbg will now disambiguate variables that share the same name by appending `@n` to the variable name. For example: foo`@0`, foo`@1`
+
+This change will also be reflected in the Locals window. Previously, only the nearest variable in scope would be displayed.
+ 
 ## 1.2104.13002.0
 
 ### Smart number selection and search
