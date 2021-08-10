@@ -63,13 +63,4 @@ Correlation of stack option flags to debugger commands. If you use windbg family
 ## <span id="Technical_Reference"></span><span id="technical_reference"></span><span id="TECHNICAL_REFERENCE"></span>Technical Reference
 
 
-If you are interested in more information about the dump and stack optional parameters, please refer to the documentation provided with [Debugging Tools for Windows](/windows-hardware/drivers/debugger/). For documentation on the 'dump flags' see the [DEBUG\_FORMAT\_XXX](/windows-hardware/drivers/debugger/debug-format-xxx). For documentation on the 'stack flags' please see the [OutputStackTrace](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol5-outputstacktraceex).
-
-
-
-
-
-
-
-
-
+If you are interested in more information about the dump and stack optional parameters, please refer to the documentation provided with [Debugging Tools for Windows](../debugger/index.md). For documentation on the 'dump flags' see the [DEBUG\_FORMAT\_XXX](../debugger/debug-format-xxx.md). For documentation on the 'stack flags' please see the [OutputStackTrace](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol5-outputstacktraceex).
