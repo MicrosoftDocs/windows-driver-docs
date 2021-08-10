@@ -2,7 +2,7 @@
 title: Windows driver samples
 description: Windows 10 driver samples are available on the Microsoft Samples portal and on GitHub.
 ms.assetid: 4c51f6c3-a84d-4790-82df-a50570af02bd
-ms.date: 12/03/2019
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
