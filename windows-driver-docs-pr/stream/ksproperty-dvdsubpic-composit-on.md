@@ -46,7 +46,7 @@ The KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property enables or disables the display
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>KSPROPERTY_COMPOSIT_ON</p></td>
 </tr>
 </tbody>
@@ -76,4 +76,3 @@ There is a force-display subpicture command in the subpicture data command strea
 </tr>
 </tbody>
 </table>
-

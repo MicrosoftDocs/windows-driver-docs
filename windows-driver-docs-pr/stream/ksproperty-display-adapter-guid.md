@@ -45,7 +45,7 @@ To use VRAM transport, a capture minidriver must support this property.
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>GUID</p></td>
 </tr>
 </tbody>
@@ -84,4 +84,3 @@ AVStream matches this GUID with the GUID of the downstream render pin to verify 
 
 
 [**KSPROPERTY**](ksproperty-structure.md)
-

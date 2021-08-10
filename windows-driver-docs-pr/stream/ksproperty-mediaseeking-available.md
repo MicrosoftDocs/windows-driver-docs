@@ -46,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_AVAILABLE property retrieves the media time span t
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_mediaavailable" data-raw-source="[&lt;strong&gt;KSPROPERTY_MEDIAAVAILABLE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_mediaavailable)"><strong>KSPROPERTY_MEDIAAVAILABLE</strong></a></p></td>
 </tr>
 </tbody>
@@ -79,4 +79,3 @@ The media time span is the duration that within which a client can seek.
 [**KSPROPERTY\_MEDIAAVAILABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_mediaavailable)
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-

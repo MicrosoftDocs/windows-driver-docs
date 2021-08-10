@@ -46,7 +46,7 @@ The KSPROPERTY\_STREAM\_TIMEFORMAT property is used to retrieve the time format 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>GUID</p></td>
 </tr>
 </tbody>
@@ -79,4 +79,3 @@ KSPROPERTY\_STREAM\_TIMEFORMAT is an optional property that should be implemente
 
 
 [**KSPROPERTY**](ksproperty-structure.md)
-
