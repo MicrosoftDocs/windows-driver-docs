@@ -46,7 +46,7 @@ The KS\_AM\_RATE\_Step property is not yet implemented.
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>KS_AM_Step</p></td>
 </tr>
 </tbody>
@@ -74,4 +74,3 @@ This property always returns STATUS\_NOT\_IMPLEMENTED.
 </tr>
 </tbody>
 </table>
-

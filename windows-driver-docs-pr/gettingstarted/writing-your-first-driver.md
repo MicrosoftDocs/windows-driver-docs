@@ -22,5 +22,4 @@ If you're writing your first driver, use these exercises to get started. Each ex
 
  
 
-UMDF and KMDF are part of the [Windows Driver Frameworks (WDF)](/windows-hardware/drivers/wdf/).
-
+UMDF and KMDF are part of the [Windows Driver Frameworks (WDF)](../wdf/index.md).

@@ -15,8 +15,8 @@ To create a secure device, an OEM should complete the following tasks.
 
 | Task | Description |
 |--|--|
-| Learn how to sign different types of executable code and other code assets | All Windows 10 Mobile binaries need digital signatures to load and execute on a retail phone. For more info, see [Get a code signing certificate](/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). |
-| Understand image validation and encryption | Windows 10 Mobile includes [secure boot](/windows-hardware/drivers/bringup/secure-boot), a process that validates firmware images before they are allowed to execute. Windows 10 Mobile also provides [device encryption](/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview), a feature that encrypts all user data stored on internal data partitions. OEMs must perform a series of tasks during manufacturing to enable these features. |
+| Learn how to sign different types of executable code and other code assets | All Windows 10 Mobile binaries need digital signatures to load and execute on a retail phone. For more info, see [Get a code signing certificate](../dashboard/get-a-code-signing-certificate.md). |
+| Understand image validation and encryption | Windows 10 Mobile includes [secure boot](./secure-boot.md), a process that validates firmware images before they are allowed to execute. Windows 10 Mobile also provides [device encryption](./secure-boot-and-device-encryption-overview.md), a feature that encrypts all user data stored on internal data partitions. OEMs must perform a series of tasks during manufacturing to enable these features. |
 | Understand the Security Development Lifecycle (SDL) | [Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl) best practices and associated tools can be used by OEMs to improve the security of their products. |
 
 ## SDL recommendations for OEMs

@@ -44,7 +44,7 @@ The **KSEVENT\_CAMERACONTROL\_ZOOM** event is triggered when a camera zoom opera
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/windows-hardware/drivers/stream/ksevent-structure)"><strong>KSEVENT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](./ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
@@ -60,4 +60,3 @@ For more information, see [**KSPROPERTY\_CAMERACONTROL\_S\_EX**](/windows-hardwa
 
 
 [**KSEVENT\_CAMERACONTROL**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksevent_cameracontrol)
-

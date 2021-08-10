@@ -20,17 +20,17 @@ The following table lists the standard option names that are permitted for each 
 | Feature name | Standard option names | Default Print Schema option keywords | Customized options allowed? |
 |--|--|--|--|
 | **Collate** | OFF, ON | Uncollated, Collated | No |
-| **ColorMode** | No standard options | &nbsp; | Yes. Also see [Handling Color Formats](/windows-hardware/drivers/print/handling-color-formats) and [Controlling Image Quality](/windows-hardware/drivers/print/controlling-image-quality). |
+| **ColorMode** | No standard options | &nbsp; | Yes. Also see [Handling Color Formats](./handling-color-formats.md) and [Controlling Image Quality](./controlling-image-quality.md). |
 | **Duplex** | HORIZONTAL, VERTICAL, NONE | TwoSidedShortEdge, TwoSidedLongEdge, OneSided | No |
-| **Halftone** | HT_PATSIZE_2x2, HT_PATSIZE_2x2_M, HT_PATSIZE_4x4, HT_PATSIZE_4x4_M, HT_PATSIZE_6x6, HT_PATSIZE_6x6_M, HT_PATSIZE_8x8, HT_PATSIZE_8x8_M, HT_PATSIZE_10x10, HT_PATSIZE_10x10_M, HT_PATSIZE_12x12, HT_PATSIZE_12x12_M, HT_PATSIZE_14x14, HT_PATSIZE_14x14_M, HT_PATSIZE_16x16, HT_PATSIZE_16x16_M, HT_PATSIZE_SUPERCELL, HT_PATSIZE_SUPERCELL_M, HT_PATSIZE_AUTO | &nbsp; | Yes, also see [Halftoning with Unidrv](/windows-hardware/drivers/print/halftoning-with-unidrv). |
+| **Halftone** | HT_PATSIZE_2x2, HT_PATSIZE_2x2_M, HT_PATSIZE_4x4, HT_PATSIZE_4x4_M, HT_PATSIZE_6x6, HT_PATSIZE_6x6_M, HT_PATSIZE_8x8, HT_PATSIZE_8x8_M, HT_PATSIZE_10x10, HT_PATSIZE_10x10_M, HT_PATSIZE_12x12, HT_PATSIZE_12x12_M, HT_PATSIZE_14x14, HT_PATSIZE_14x14_M, HT_PATSIZE_16x16, HT_PATSIZE_16x16_M, HT_PATSIZE_SUPERCELL, HT_PATSIZE_SUPERCELL_M, HT_PATSIZE_AUTO | &nbsp; | Yes, also see [Halftoning with Unidrv](./halftoning-with-unidrv.md). |
 | **InputBin** | AUTO, CASSETTE, ENVFEED, ENVMANUAL | Cassette | Yes |
 | &nbsp; | FORMSOURCE | AutoSelect | &nbsp; |
 | &nbsp; | LARGECAPACITY, LARGEFMT, LOWER | High | &nbsp; |
 | &nbsp; | MANUAL, MIDDLE, SMALLFMT | Manual | &nbsp; |
 | &nbsp; | TRACTOR, UPPER | Tractor | &nbsp; |
-| **MediaType** | GLOSSY, STANDARD, TRANSPARENCY | PhotographicGlossy, Plain, Transparency | Yes. Also see [Controlling Image Quality](/windows-hardware/drivers/print/controlling-image-quality). |
+| **MediaType** | GLOSSY, STANDARD, TRANSPARENCY | PhotographicGlossy, Plain, Transparency | Yes. Also see [Controlling Image Quality](./controlling-image-quality.md). |
 | **Memory** | No standard options | &nbsp; | Yes |
-| **Orientation** | PORTRAIT, LANDSCAPE_CC90, LANDSCAPE_CC270. For more information about the latter two options, see [Specifying Paper Orientation](/windows-hardware/drivers/print/specifying-paper-orientation). | Portrait, Landscape, ReverseLandscape | No |
+| **Orientation** | PORTRAIT, LANDSCAPE_CC90, LANDSCAPE_CC270. For more information about the latter two options, see [Specifying Paper Orientation](./specifying-paper-orientation.md). | Portrait, Landscape, ReverseLandscape | No |
 | **PageProtect** | ON, OFF | &nbsp; | No |
 | **PaperSize** | 10X11, 10X14, 11X17 | NorthAmerica10x11, NorthAmerica10x14, NorthAmerica11x17 | Yes. **Note:** Customized names must not exceed the length specified by **CCHFORMNAME** in **wingdi.h**. |
 | &nbsp; | 12X11, 15X11 | &nbsp; | &nbsp; |

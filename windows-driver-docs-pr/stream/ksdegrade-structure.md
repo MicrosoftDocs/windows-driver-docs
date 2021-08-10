@@ -38,7 +38,7 @@ Contains a ULONG value that specifies either the current percentage of degradati
 
 ## Remarks
 
-The **Flags** member can contain different values based on the type of signal degradation that the client employs. See [Quality Management](/windows-hardware/drivers/stream/quality-management) for more details on different strategies for solving quality management problems by reducing signal quality.
+The **Flags** member can contain different values based on the type of signal degradation that the client employs. See [Quality Management](./quality-management.md) for more details on different strategies for solving quality management problems by reducing signal quality.
 
 Because **Flags** contains a ULONG value, multiple Skip requests may be needed to remedy a quality management issue.
 
@@ -52,8 +52,8 @@ Because **Flags** contains a ULONG value, multiple Skip requests may be needed t
 
 [**KSDEGRADE_STANDARD**](/windows-hardware/drivers/ddi/ks/ne-ks-ksdegrade_standard)
 
-[**KSPROPERTY_STREAM_RATECAPABILITY**](/windows-hardware/drivers/stream/ksproperty-stream-ratecapability)
+[**KSPROPERTY_STREAM_RATECAPABILITY**](./ksproperty-stream-ratecapability.md)
 
-[**KSPROPERTY_STREAM_TIMEFORMAT**](/windows-hardware/drivers/stream/ksproperty-stream-timeformat)
+[**KSPROPERTY_STREAM_TIMEFORMAT**](./ksproperty-stream-timeformat.md)
 
-[Quality Management](/windows-hardware/drivers/stream/quality-management)
+[Quality Management](./quality-management.md)

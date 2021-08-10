@@ -83,7 +83,7 @@ The location path string for a given devnode can be displayed through Device Man
 
 3.  In the **Property** drop-down list, find the **LocationPaths** property. This property contains the location path string for this devnode and is the value that should be used for the **LocationPath** registry subkey.
 
-**Note**  It is possible that the devnode does not have a **LocationPaths** value. This is because the driver for this devnode or one of its parents does not implement the [GUID_PNP_LOCATION_INTERFACE](/windows-hardware/drivers/kernel/adding-a-pnp-device-to-a-running-system#using-guid_pnp_location_interface) interface. In this case, you must check the parent devnode for a **LocationPaths** property.
+**Note**  It is possible that the devnode does not have a **LocationPaths** value. This is because the driver for this devnode or one of its parents does not implement the [GUID_PNP_LOCATION_INTERFACE](../kernel/adding-a-pnp-device-to-a-running-system.md#using-guid_pnp_location_interface) interface. In this case, you must check the parent devnode for a **LocationPaths** property.
 
  
 
@@ -104,10 +104,4 @@ For example, a laptop may have an internal USB hub with both internal and extern
 To discover the location paths value for a device that is connected to an external USB port, you can plug any device into the port and observe its location paths property. Any other USB devices that are plugged into the same port should receive the same location paths value, because the parent bus and how it internally identifies a port never changes.
 
  
-
- 
-
-
-
-
 

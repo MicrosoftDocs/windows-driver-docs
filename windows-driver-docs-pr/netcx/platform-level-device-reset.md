@@ -19,7 +19,7 @@ PLDR is triggered when abnormal device behavior is detected. It can be triggered
 
 * Independent hardware vendor (IHV) client drivers. For example, client drivers may request NetAdapterCx to trigger PLDR when a driver detects that their device is unresponsive to its control command.
 
-To provide user-friendly device failure and recovery, we recommend that IHVs and original equipment manufacturers (OEMs) support PLDR for their network devices. For more information on PLDR, see [Resetting and recovering a device](../kernel/resetting-and-recovering-a-device.md).
+To provide user-friendly device failure and recovery, we recommend that IHVs and original equipment manufacturers (OEMs) support PLDR for their network devices. For more information on PLDR, see [Resetting and recovering a device](../kernel/working-with-guid-device-reset-interface-standard.md).
 NetAdapterCx does not recover network devices through function-level device reset.
 
 ## Register the optional diagnostics collection callback

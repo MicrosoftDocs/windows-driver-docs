@@ -20,7 +20,7 @@ The following table lists required standard routines.
 |--|--|--|
 | [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) | Initializes the driver and its driver object. | [Writing a DriverEntry Routine](writing-a-driverentry-routine.md) |
 | [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) | Initializes devices and creates device objects. | [Writing an AddDevice Routine](writing-an-adddevice-routine.md) |
-| [Dispatch Routines](/windows-hardware/drivers/kernel/dispatchcreate--dispatchclose--and-dispatchcreateclose-routines) | Receive and process IRPs. | [Writing Dispatch Routines](writing-dispatch-routines.md) |
+| [Dispatch Routines](./dispatchcreate--dispatchclose--and-dispatchcreateclose-routines.md) | Receive and process IRPs. | [Writing Dispatch Routines](writing-dispatch-routines.md) |
 | *Unload* | Release system resources acquired by the driver. | [Writing an Unload Routine](writing-an-unload-routine.md) |
 
 The following table lists several optional routines.
@@ -30,12 +30,12 @@ The following table lists several optional routines.
 | *Reinitialize* | Completes driver initialization if **DriverEntry** cannot. | [Writing a Reinitialize Routine](writing-a-reinitialize-routine.md) |
 | *StartIo* | Starts an I/O operation on a physical device. | [Writing a StartIo Routine](writing-a-startio-routine.md) |
 | Interrupt Service Routine | Saves the state of a device when it interrupts. | [Writing an ISR](writing-an-isr.md) |
-| Deferred Procedure Calls | Completes the processing of a device interrupt after an ISR saves the device state. | [DPC Objects and DPCs](/windows-hardware/drivers/kernel/introduction-to-dpc-objects) |
+| Deferred Procedure Calls | Completes the processing of a device interrupt after an ISR saves the device state. | [DPC Objects and DPCs](./introduction-to-dpc-objects.md) |
 | *SynchCritSection* | Synchronizes access to driver data. | [Using Critical Sections](using-critical-sections.md) |
 | *AdapterControl* | Initiates DMA operations. | [Adapter Objects and DMA](./introduction-to-adapter-objects.md) |
 | *IoCompletion* | Completes a driver's processing of an IRP. | [Completing IRPs](completing-irps.md) |
 | *Cancel* | Cancels a driver's processing of an IRP. | [Canceling IRPs](canceling-irps.md) |
-| *CustomTimerDpc*, *IoTimer* | Timing and synchronizing events. | [Synchronization Techniques](/windows-hardware/drivers/kernel/introduction-to-kernel-dispatcher-objects) |
+| *CustomTimerDpc*, *IoTimer* | Timing and synchronizing events. | [Synchronization Techniques](./introduction-to-kernel-dispatcher-objects.md) |
 
 The current IRP and target device object are input parameters to many standard routines. Every driver processes each IRP in stages through its set of standard routines.
 

@@ -42,6 +42,4 @@ For general information about working with threads, see:
 
 [Controlling Processes and Threads](controlling-processes-and-threads.md)
 
-[Windows Kernel-Mode Process and Thread Manager](/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager)
-
-
+[Windows Kernel-Mode Process and Thread Manager](../kernel/windows-kernel-mode-process-and-thread-manager.md)

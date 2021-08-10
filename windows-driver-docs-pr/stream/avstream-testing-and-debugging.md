@@ -40,7 +40,7 @@ The Windows WDK includes KsStudio binaries for the x86-based and x64-based archi
 
 KsStudio is a kernel development tool, and therefore should be used carefully. *KsStudio.exe* must write a summary log to the starting directory, which must have write access for the user. KsStudio attempts to load its helper driver *KsMon.sys*. This loading is optional and will only succeed if *KsMon.sys* is in the starting directory and the command is run at elevated privilege level. Typically, KsStudio will present a dialog box titled "KS Studio Filter Options," which allows the user to specify parameters, the most important of which are the Classes to enumerate. Use the **Classes** button on that dialog box to select none, any, or all classes.
 
-For more information, see [KsStudio Utility](/windows-hardware/drivers/audio/ksstudio-utility).
+For more information, see [KsStudio Utility](../audio/ksstudio-utility.md).
 
 ## USBView
 

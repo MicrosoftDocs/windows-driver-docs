@@ -46,7 +46,7 @@ The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>KS_AM_MaxFullDataRate</p></td>
 </tr>
 </tbody>
@@ -70,4 +70,3 @@ The property value (operation data) is a KS\_AM\_MaxFullDataRate (which is a typ
 </tr>
 </tbody>
 </table>
-

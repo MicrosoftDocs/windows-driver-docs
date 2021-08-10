@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # PagedCode rule (wdm)
 
-The **PagedCode** rule specifies that the driver calls the [**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code) macro only when it is executing at IRQL less than or equal to APC_LEVEL.
+The **PagedCode** rule specifies that the driver calls the [**PAGED_CODE**](../kernel/paged_code.md) macro only when it is executing at IRQL less than or equal to APC_LEVEL.
 
 **Driver model: WDM**
 
@@ -45,4 +45,4 @@ Use the following steps to run an analysis of your code:
 
 ## Applies to
 
-[**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code)
+[**PAGED_CODE**](../kernel/paged_code.md)

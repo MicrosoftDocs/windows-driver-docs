@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # PagedCodeAtPowerTrans rule (wdm)
 
 
-The **PagedCodeAtPowerTrans** rule specifies that a driver should not call [**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code) while responding to a system IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER) and to a device IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER).
+The **PagedCodeAtPowerTrans** rule specifies that a driver should not call [**PAGED_CODE**](../kernel/paged_code.md) while responding to a system IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER) and to a device IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER).
 
 **Driver model: WDM**
 
@@ -46,4 +46,4 @@ Use the following steps to run an analysis of your code:
 
 ## Applies to
 
-[**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code)
+[**PAGED_CODE**](../kernel/paged_code.md)
