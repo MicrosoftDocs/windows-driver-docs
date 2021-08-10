@@ -52,6 +52,6 @@ An example of use of this structure can be found in a tuner sample, in which **K
 
 ## See also
 
-[**KSPROPERTY_PIN_MEDIUMS**](/windows-hardware/drivers/stream/ksproperty-pin-mediums)
+[**KSPROPERTY_PIN_MEDIUMS**](./ksproperty-pin-mediums.md)
 
 [**KSIDENTIFIER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)

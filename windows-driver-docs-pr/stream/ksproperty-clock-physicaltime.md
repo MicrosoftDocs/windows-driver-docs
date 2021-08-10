@@ -46,7 +46,7 @@ Clients use the KSPROPERTY\_CLOCK\_PHYSICAL\_TIME property to determine the curr
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -83,4 +83,3 @@ Clocks are not required to support a 100-nanosecond resolution. To determine the
 [**KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME**](ksproperty-clock-correlatedphysicaltime.md)
 
 [**KSPROPERTY\_CLOCK\_CORRELATEDTIME**](ksproperty-clock-correlatedtime.md)
-

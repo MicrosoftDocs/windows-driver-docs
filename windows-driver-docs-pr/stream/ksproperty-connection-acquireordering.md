@@ -46,7 +46,7 @@ The KSPROPERTY\_CONNECTION\_ACQUIREORDERING property is an optional property tha
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -79,4 +79,3 @@ This read-only property is used to determine whether the Stop-to-Acquire state c
 
 
 [KSPROPSETID\_Connection](kspropsetid-connection.md)
-

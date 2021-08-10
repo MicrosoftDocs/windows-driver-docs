@@ -46,7 +46,7 @@ Clients use the KSPROPERTY\_CONNECTION\_PRIORITY property to get or set the prio
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kspriority" data-raw-source="[&lt;strong&gt;KSPRIORITY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)"><strong>KSPRIORITY</strong></a></p></td>
 </tr>
 </tbody>
@@ -87,4 +87,3 @@ KSPROPERTY\_CONNECTION\_PRIORITY is optional. Clients treat pins that do not sup
 [**KSPRIORITY**](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)
 
 [**KSPIN\_CONNECT**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_connect)
-

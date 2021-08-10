@@ -26,7 +26,7 @@ Examples of setting KSProperty controls can be found in the [AVStream Camera Sam
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Filter | [KSPROPERTY](/windows-hardware/drivers/stream/ksproperty-structure) | [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) |
+| Yes | Yes | Filter | [KSPROPERTY](./ksproperty-structure.md) | [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) |
 
 ## Remarks
 

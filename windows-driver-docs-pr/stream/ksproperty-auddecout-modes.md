@@ -48,7 +48,7 @@ This property is read-only.
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
@@ -90,4 +90,3 @@ Indicates that the output is SPDIFF format AC3 digital.
 
 
 [**KSPROPERTY\_AUDDECOUT\_CUR\_MODE**](ksproperty-auddecout-cur-mode.md)
-

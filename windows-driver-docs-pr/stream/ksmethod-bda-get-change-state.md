@@ -52,7 +52,5 @@ Value from the BDA\_CHANGE\_STATE enumerated type that identifies the current ch
 
 [**BdaGetChangeState**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdagetchangestate)
 
-[**KSMETHOD**](/windows-hardware/drivers/stream/ksmethod-structure)
-
- 
+[**KSMETHOD**](./ksmethod-structure.md)
 

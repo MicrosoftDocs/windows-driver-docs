@@ -46,7 +46,7 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_HONOR\_COUNT property informs the Overlay Mi
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
@@ -81,4 +81,3 @@ KSPROPERTY\_ALLOCATOR\_CONTROL\_HONOR\_COUNT property requests must return 1 to 
 [**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING**](ksproperty-connection-allocatorframing.md)
-
