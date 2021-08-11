@@ -413,4 +413,4 @@ Use the following steps to run an analysis of your code:
 [**WdfWorkItemEnqueue**](/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemenqueue)
 [**WdfWorkItemFlush**](/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemflush)
 [**WdfWorkItemGetParentObject**](/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemgetparentobject)
-[**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code)
+[**PAGED_CODE**](../kernel/paged_code.md)

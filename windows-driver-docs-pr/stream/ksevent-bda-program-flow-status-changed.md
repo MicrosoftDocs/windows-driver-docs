@@ -48,7 +48,7 @@ A KSEVENTDATA structure that describes how to notify about the event.
 ## See also
 
 
-[**KSEVENT**](/windows-hardware/drivers/stream/ksevent-structure)
+[**KSEVENT**](./ksevent-structure.md)
 
 [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
@@ -57,6 +57,4 @@ A KSEVENTDATA structure that describes how to notify about the event.
 [**KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS**](ksproperty-bda-ca-set-program-pids.md)
 
 [**KSPROPERTY\_BDA\_ECM\_MAP\_STATUS**](ksproperty-bda-ecm-map-status.md)
-
- 
 

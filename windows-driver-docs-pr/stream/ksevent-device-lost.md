@@ -44,7 +44,7 @@ The **KSEVENT\_DEVICE\_LOST** event is triggered when a camera device is removed
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/windows-hardware/drivers/stream/ksevent-structure)"><strong>KSEVENT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](./ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
@@ -58,4 +58,3 @@ The **KSEVENT\_DEVICE\_LOST** event is triggered when a camera device is removed
 [**KSEVENT\_DEVICE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksevent_device)
 
 [**KSEVENT\_DEVICE\_PREEMPTED**](ksevent-device-preempted.md)
-

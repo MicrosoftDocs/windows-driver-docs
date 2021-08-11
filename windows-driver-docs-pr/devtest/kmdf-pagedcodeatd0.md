@@ -48,4 +48,4 @@ Use the following steps to run an analysis of your code:
 
 ## Applies to
 
-[**PAGED_CODE**](/windows-hardware/drivers/kernel/paged_code)
+[**PAGED_CODE**](../kernel/paged_code.md)

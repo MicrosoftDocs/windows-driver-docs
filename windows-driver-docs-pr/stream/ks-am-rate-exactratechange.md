@@ -46,7 +46,7 @@ The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange" data-raw-source="[&lt;strong&gt;KS_AM_ExactRateChange&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange)"><strong>KS_AM_ExactRateChange</strong></a></p></td>
 </tr>
 </tbody>
@@ -79,4 +79,3 @@ This property always returns STATUS\_NOT\_IMPLEMENTED.
 
 
 [**KS\_AM\_ExactRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange)
-

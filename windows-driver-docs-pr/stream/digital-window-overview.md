@@ -15,13 +15,13 @@ This enables applications to obtain higher detail images of such objects without
 
 The Digital Window MSXU control specifies the field of view and zoom of the camera while camera is streaming. This control is a potential substitute for Pan, Tilt and Zoom. This control only applies while the camera is actively streaming.
 
-See [Section 2.2.2.11 Digital Window Control](/windows-hardware/drivers/stream/uvc-extensions-1-5#22211-digital-window-control) in the *Microsoft extensions to USB Video Class 1.5 specification* for details.
+See [Section 2.2.2.11 Digital Window Control](./uvc-extensions-1-5.md#22211-digital-window-control) in the *Microsoft extensions to USB Video Class 1.5 specification* for details.
 
 ## Digital Window Config Control MSXU_CONTROL_DIGITALWINDOW_CONFIG
 
 The Digital Window Config MSXU control specifies the scaling limits of the camera given all available resolutions. Resolutions are independent of media type, so two media types advertising the same display resolution are combined into one capability.
 
-See [Section 2.2.2.12 Digital Window Config Control](/windows-hardware/drivers/stream/uvc-extensions-1-5#22212-digital-window-config-control) in the *Microsoft extensions to USB Video Class 1.5 specification* for details.
+See [Section 2.2.2.12 Digital Window Config Control](./uvc-extensions-1-5.md#22212-digital-window-config-control) in the *Microsoft extensions to USB Video Class 1.5 specification* for details.
 
 ## Implementation overview
 
@@ -109,23 +109,23 @@ The reported **NonUpscalingWindowSize** is also reported per resolution, but it 
 
 ### Metadata Attributes
 
-If the camera advertises MSXU_CONTROL_DIGITALWINDOW, MSXU_CONTROL_DIGITALWINDOW_CONFIG and has set a non-zero buffer size on MSXU_CONTROL_METADATA, the camera must emit the MF_CAPTURE_METADATA_DIGITAL_WINDOW attribute for every frame. It can provide this through a Device MFT or by including a MetadataId_DigitalWindow (value of 7) attribute in the raw metadata buffer. How to include metadata attributes is further described in [Section 2.2.3.1 Microsoft Standard-format Metadata](/windows-hardware/drivers/stream/uvc-extensions-1-5#2232-firmware-generated-standard-format-metadata-from-usb-video-frame-packets).
+If the camera advertises MSXU_CONTROL_DIGITALWINDOW, MSXU_CONTROL_DIGITALWINDOW_CONFIG and has set a non-zero buffer size on MSXU_CONTROL_METADATA, the camera must emit the MF_CAPTURE_METADATA_DIGITAL_WINDOW attribute for every frame. It can provide this through a Device MFT or by including a MetadataId_DigitalWindow (value of 7) attribute in the raw metadata buffer. How to include metadata attributes is further described in [Section 2.2.3.1 Microsoft Standard-format Metadata](./uvc-extensions-1-5.md#2232-firmware-generated-standard-format-metadata-from-usb-video-frame-packets).
 
 This metadata is used to report what digital window was applied to the current sample. It does this by initializing the KSCAMERA_METADATA_ITEMHEADER with the value MetadataId_DigitalWindow and the size of the structure and copying over the applied **OriginX**, **OriginY** and **WindowSize** values from the digital window control into an associated KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_SETTING structure.
 
 ## See also
 
-[Section 2.2.2.11 Digital Window Control](/windows-hardware/drivers/stream/uvc-extensions-1-5#22211-digital-window-control)
+[Section 2.2.2.11 Digital Window Control](./uvc-extensions-1-5.md#22211-digital-window-control)
 
-[Section 2.2.2.12 Digital Window Config Control](/windows-hardware/drivers/stream/uvc-extensions-1-5#22212-digital-window-config-control) 
+[Section 2.2.2.12 Digital Window Config Control](./uvc-extensions-1-5.md#22212-digital-window-config-control) 
 
-[Section 2.2.3.1 Microsoft Standard-format Metadata](/windows-hardware/drivers/stream/uvc-extensions-1-5#2232-firmware-generated-standard-format-metadata-from-usb-video-frame-packets)
+[Section 2.2.3.1 Microsoft Standard-format Metadata](./uvc-extensions-1-5.md#2232-firmware-generated-standard-format-metadata-from-usb-video-frame-packets)
 
 [*USB Video Class specification*](https://www.usb.org/document-library/video-class-v15-document-set)
 
-[**KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS**](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-digitalwindow-configcaps)
+[**KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS**](./ksproperty-cameracontrol-extended-digitalwindow-configcaps.md)
 
-[**KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW**](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-digitalwindow)
+[**KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW**](./ksproperty-cameracontrol-extended-digitalwindow.md)
 
 [**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPS**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_extendedprop_digitalwindow_configcaps)
 

@@ -16,7 +16,7 @@ The following sections provide supplemental information for developers of MB dev
 
 [Mobile Broadband Device Firmware Update](mobile-broadband-device-firmware-update.md)
 
-[Mobile Broadband Class Driver Logs: Event Trace Log Tracing](mobile-broadband-class-driver-logs--event-trace-log-tracing.md)
+[Mobile Broadband Class Driver Logs: Event Trace Log Tracing](./mb-collecting-logs.md)
 
 [Mobile Broadband Implementation Guidelines for USB Devices](mobile-broadband-implementation-guidelines-for-usb-devices.md)
 
@@ -29,10 +29,4 @@ The following sections provide supplemental information for developers of MB dev
 [TextAnalysisTool Filter Files](mb-tat-filters.md)
 
  
-
- 
-
-
-
-
 

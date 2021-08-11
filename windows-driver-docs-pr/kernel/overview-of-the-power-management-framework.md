@@ -37,4 +37,4 @@ In addition, PoFx obtains system-wide information about the power and clock doma
 Based on this information, PoFx makes intelligent decisions about when a component should enter a low-power state and which low-power state to enter. The decision process involves information from other components and other devices,
  and takes into account the dependencies between the devices and components in the various power and clock domains.
 
-To get started using PoFx, see [Device power management reference](/windows-hardware/drivers/kernel/device-power-management-reference) and [Component-Level Power Management](/windows-hardware/drivers/kernel/component-level-power-management).
+To get started using PoFx, see [Device power management reference](./device-power-management-reference.md) and [Component-Level Power Management](./component-level-power-management.md).

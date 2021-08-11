@@ -249,7 +249,7 @@ Device(USB1)  
 } 
 ```
 
-Alternatively, PLDR can be achieved by putting the device into the D3Cold power state and back to D0, essentially power cycling the device. In this case, having `_PR3` declared in the device scope is sufficient to support PLDR. ACPI will use `_PR3` to determine reset dependencies between devices if no `_PRR` is referenced in the device scope. For more information, see [Resetting and recovering a device](../kernel/resetting-and-recovering-a-device.md). 
+Alternatively, PLDR can be achieved by putting the device into the D3Cold power state and back to D0, essentially power cycling the device. In this case, having `_PR3` declared in the device scope is sufficient to support PLDR. ACPI will use `_PR3` to determine reset dependencies between devices if no `_PRR` is referenced in the device scope. For more information, see [Resetting and recovering a device](../kernel/working-with-guid-device-reset-interface-standard.md). 
 
 ## Sample Log
 ```
