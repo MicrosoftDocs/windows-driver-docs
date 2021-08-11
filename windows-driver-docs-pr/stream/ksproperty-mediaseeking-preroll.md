@@ -46,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_PREROLL property retrieves the amount of preroll i
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -77,4 +77,3 @@ This property returns the number of 100-nanosecond units of preroll as a value o
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-

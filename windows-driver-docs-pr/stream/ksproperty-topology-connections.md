@@ -46,7 +46,7 @@ The KSPROPERTY\_TOPOLOGY\_CONNECTIONS property queries all connections between n
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>A <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a> structure, followed by a sequence of <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection" data-raw-source="[&lt;strong&gt;KSTOPOLOGY_CONNECTION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection)"><strong>KSTOPOLOGY_CONNECTION</strong></a> structures.</p></td>
 </tr>
 </tbody>
@@ -81,4 +81,3 @@ The KSMULTIPLE\_ITEM header is followed by a KSTOPOLOGY\_CONNECTION structure, w
 [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 
 [**KSTOPOLOGY\_CONNECTION**](/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection)
-

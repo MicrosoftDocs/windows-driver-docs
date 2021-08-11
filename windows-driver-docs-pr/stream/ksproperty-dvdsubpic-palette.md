@@ -46,7 +46,7 @@ The KSPROPERTY\_DVDSUBPIC\_PALETTE property specifies the color palette that the
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal" data-raw-source="[&lt;strong&gt;KSPROPERTY_SPPAL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal)"><strong>KSPROPERTY_SPPAL</strong></a></p></td>
 </tr>
 </tbody>
@@ -79,4 +79,3 @@ The [**KSPROPERTY\_SPPAL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks
 
 
 [**KSPROPERTY\_SPPAL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal)
-

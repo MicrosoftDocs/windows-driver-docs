@@ -46,7 +46,7 @@ The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request to query the 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -77,4 +77,3 @@ The property returns the extent as a LONGLONG, with the same resolution format a
 
 
 [**KSPROPERTY**](ksproperty-structure.md)
-

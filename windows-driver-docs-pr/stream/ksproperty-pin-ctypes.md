@@ -46,7 +46,7 @@ Clients use the KSPROPERTY\_PIN\_CTYPES property to determine how many pin types
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -79,4 +79,3 @@ Stream minidrivers do not need to handle this property directly; the stream clas
 
 
 [**KSPROPERTY**](ksproperty-structure.md)
-

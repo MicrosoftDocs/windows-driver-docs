@@ -46,7 +46,7 @@ The KSPROPERTY\_STREAMINTERFACE\_HEADERSIZE property queries a pin for the size 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -79,4 +79,3 @@ See the **StreamHeaderSize** member of [**KSPIN**](/windows-hardware/drivers/ddi
 [**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPIN**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin)
-

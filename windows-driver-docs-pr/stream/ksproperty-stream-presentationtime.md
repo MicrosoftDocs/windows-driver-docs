@@ -46,7 +46,7 @@ The KSPROPERTY\_STREAM\_PRESENTATIONTIME property is used to retrieve and set th
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kstime" data-raw-source="[&lt;strong&gt;KSTIME&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kstime)"><strong>KSTIME</strong></a></p></td>
 </tr>
 </tbody>
@@ -85,4 +85,3 @@ After a client (for example, a DirectShow proxy) writes a seek request to one co
 [**KSTIME**](/windows-hardware/drivers/ddi/ks/ns-ks-kstime)
 
 [**KSPROPERTY**](ksproperty-structure.md)
-
