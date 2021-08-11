@@ -46,7 +46,7 @@ The KSPROPERTY\_VPCONFIG\_VPDATAINFO property indicates the initial configuratio
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_amvpdatainfo" data-raw-source="[&lt;strong&gt;KS_AMVPDATAINFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_amvpdatainfo)"><strong>KS_AMVPDATAINFO</strong></a></p></td>
 </tr>
 </tbody>
@@ -77,4 +77,3 @@ The property value (operation data) is a KS\_AMVPDATAINFO structure that describ
 [**KSPROPERTY**](ksproperty-structure.md)
 
 [**KS\_AMVPDATAINFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_amvpdatainfo)
-

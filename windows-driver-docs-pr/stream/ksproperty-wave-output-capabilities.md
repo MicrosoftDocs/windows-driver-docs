@@ -46,7 +46,7 @@ The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave device's wave
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kswave_output_capabilities" data-raw-source="[&lt;strong&gt;KSWAVE_OUTPUT_CAPABILITIES&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kswave_output_capabilities)"><strong>KSWAVE_OUTPUT_CAPABILITIES</strong></a></p></td>
 </tr>
 </tbody>
@@ -77,4 +77,3 @@ The property value (operation data) is a KSWAVE\_OUTPUT\_CAPABILITIES structure 
 [**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSWAVE\_OUTPUT\_CAPABILITIES**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kswave_output_capabilities)
-

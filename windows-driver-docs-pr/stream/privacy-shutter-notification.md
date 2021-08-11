@@ -15,7 +15,7 @@ In addition to the privacy shutter feature, the OS implements camera occlusion d
 
 ## Architectural overview
 
-The [**KSPROPERTY_CAMERACONTROL_PRIVACY**](/windows-hardware/drivers/stream/ksproperty-cameracontrol-privacy) control is used when the OS is querying the current state from a camera driver. It should only be used as a Get property. Driver developers should not support the **KSPROPERTY_CAMERACONTROL_PRIVACY** control Set property in their drivers.
+The [**KSPROPERTY_CAMERACONTROL_PRIVACY**](./ksproperty-cameracontrol-privacy.md) control is used when the OS is querying the current state from a camera driver. It should only be used as a Get property. Driver developers should not support the **KSPROPERTY_CAMERACONTROL_PRIVACY** control Set property in their drivers.
 
 In the USB Video Class (UVC) driver, the **KSPROPERTY_CAMERACONTROL_PRIVACY** control is mapped to the **CT_PRIVACY_CONTROL** property defined in the [UVC v1.5 Class Specification](https://www.usb.org/sites/default/files/USB_Video_Class_1_5.zip).
 
@@ -45,8 +45,8 @@ The **KSPROPERTY_CAMERA_CONTROL_S** structure must be filled as follows:
 
 | Structure member | Value |
 |--|--|
-| **KSPROPERTY.Set** | Must be [**PROPSETID_VIDCAP_CAMERACONTROL**](/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol) |
-| **KSPROPERTY.Id** | Must be [**KSPROPERTY_CAMERACONTROL_PRIVACY**](/windows-hardware/drivers/stream/ksproperty-cameracontrol-privacy) |
+| **KSPROPERTY.Set** | Must be [**PROPSETID_VIDCAP_CAMERACONTROL**](./propsetid-vidcap-cameracontrol.md) |
+| **KSPROPERTY.Id** | Must be [**KSPROPERTY_CAMERACONTROL_PRIVACY**](./ksproperty-cameracontrol-privacy.md) |
 | **KSPROPERTY.Flags** | Must be **KSPROPERTY_TYPE_GET** |
 | **Value** | Initialize to 0 |
 | **Flags** | Ignored, set to 0 |
@@ -58,14 +58,14 @@ The **KSPROPERTY_CAMERA_CONTROL_S** structure must be filled as follows:
 
 | **Get** | **Set** | **Target** | **Event descriptor type** | **Event value type** |
 |--|--|--|--|--|
-| No | Yes | Filter | [**KSEVENT**](/windows-hardware/drivers/stream/ksevent-structure) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
+| No | Yes | Filter | [**KSEVENT**](./ksevent-structure.md) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
 
 The **KSEVENT** structure must be filled as follows:
 
 | Structure member | Value |
 |--|--|
-| **Set** | Must be [**PROPSETID_VIDCAP_CAMERACONTROL**](/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol) |
-| **Id** | Must be [**KSPROPERTY_CAMERACONTROL_PRIVACY**](/windows-hardware/drivers/stream/ksproperty-cameracontrol-privacy) |
+| **Set** | Must be [**PROPSETID_VIDCAP_CAMERACONTROL**](./propsetid-vidcap-cameracontrol.md) |
+| **Id** | Must be [**KSPROPERTY_CAMERACONTROL_PRIVACY**](./ksproperty-cameracontrol-privacy.md) |
 | **Flags** | **KSEVENT_TYPE_ENABLE** |
 
 The **KSEVENTDATA** structure must be filled as follows:
@@ -95,7 +95,7 @@ PropertyBufferSize = sizeof(ULONG)
 > [!NOTE]
 > Setting the PropertyBuffer value to 0 is the same as not defining the Device Property Key at all.
 
-The Device Property Key can be provided either in a driver INF file by using [**AddProperty**](/windows-hardware/drivers/install/inf-addproperty-directive) or by using an MS OS descriptor if there is no INF file, for example, a USB camera using the UVC inbox camera driver.
+The Device Property Key can be provided either in a driver INF file by using [**AddProperty**](../install/inf-addproperty-directive.md) or by using an MS OS descriptor if there is no INF file, for example, a USB camera using the UVC inbox camera driver.
 
 ### INF AddProperty example
 
@@ -156,14 +156,14 @@ UCHAR Example2_MSOS20DescriptorSet_UVCDevicePropertyKeyForLidOcclusionOptOut[0x7
 
 ## See also
 
-[KSPROPERTY_CAMERACONTROL_PRIVACY](/windows-hardware/drivers/stream/ksproperty-cameracontrol-privacy)
+[KSPROPERTY_CAMERACONTROL_PRIVACY](./ksproperty-cameracontrol-privacy.md)
 
 [KSPROPERTY_CAMERA_CONTROL_S](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
 
-[KSPROPERTY](/windows-hardware/drivers/stream/ksproperty-structure)
+[KSPROPERTY](./ksproperty-structure.md)
 
-[KSEVENT](/windows-hardware/drivers/stream/ksevent-structure)
+[KSEVENT](./ksevent-structure.md)
 
 [KSEVENTDATA](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
-[PROPSETID_VIDCAP_CAMERACONTROL](/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol)
+[PROPSETID_VIDCAP_CAMERACONTROL](./propsetid-vidcap-cameracontrol.md)
