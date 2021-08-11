@@ -7,7 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 01/21/2021
+ms.date: 08/11/2021
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +53,7 @@ To generate the signature hash, run `C:\Windows\System32\certutil.exe -dump Cert
 
 Look for the signature hash near the bottom and ensure it's SHA256.  Otherwise, use a SHA256 cert to sign your app.  The result should look like this:
 
-```cpp
+```output
 Signature Hash:
 ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4
 ```
@@ -101,7 +101,8 @@ Mark the SCCD as build content by right clicking on the SCCD file and changing *
 
 Finally, right-click the project, select **Store**, then **Create App Packages**.
 
-**Note**: There is no support for UWP apps with custom capabilities on mobile platforms.
+> [!NOTE]
+> There is no support for UWP apps with custom capabilities on mobile platforms.
 
 ## Install the App
 

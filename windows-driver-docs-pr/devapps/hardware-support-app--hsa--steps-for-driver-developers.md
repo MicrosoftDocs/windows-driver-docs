@@ -7,7 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 07/23/2021
+ms.date: 08/11/2021
 ms.localizationpriority: medium
 ---
 
@@ -28,15 +28,25 @@ First, reserve a custom capability:
 1. Email Microsoft Hardware Support Apps Review (<HSAReview@microsoft.com>) with the following information:
 
     - Contact information
+
     - Company name
+
     - Name of the capability (must be unique and reference the owner)
+
     - What resources does capability need to access?
+
     - Any security or privacy concerns
+
     - What data events will be processed to the partner?
-      - Would the events include personal identifiers such as  precise user locations, passwords, IP address, PUID, device ID , CID, username and contact data)?
-      - Do the data events stay on the users device, or is it sent  to partner?
+
+        - Would the events include personal identifiers such as  precise user locations, passwords, IP address, PUID, device ID , CID, username and contact data)?
+
+        - Do the data events stay on the users device, or is it sent  to partner?
+
     - What data does your capability provide access to?
+
     - What is the benefit to the end user of this capability?
+
     - Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](/windows/uwp/publish/create-your-app-by-reserving-a-name).
 
 1. If the request is approved, Microsoft emails back a unique custom capability string name in the format **CompanyName.capabilityName_PublisherID**.
@@ -151,8 +161,8 @@ To prepare the SCCD file, first update the custom capability string.  Use the fo
 
 Next, the custom capability owner obtains the Package Family Name (PFN) and the signature hash from the app developer and updates those strings in the SCCD file.
 
->[!NOTE]
->The app does not have to be signed directly with the certificate, but the specified certificate must be part of the cert chain that signs the app.
+> [!NOTE]
+> The app does not have to be signed directly with the certificate, but the specified certificate must be part of the cert chain that signs the app.
 
 After completing the SCCD, the capability owner emails it to Microsoft for signing.  Microsoft returns the signed SCCD to the capability owner.
 
@@ -412,7 +422,7 @@ The following schema is also valid as of Windows 10, version 1809.  It enables a
 </xs:schema>
 ```
 
-## See Also
+## See also
 
 [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
 
