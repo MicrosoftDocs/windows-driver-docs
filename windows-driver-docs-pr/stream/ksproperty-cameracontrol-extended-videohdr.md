@@ -67,4 +67,4 @@ The table below contains the descriptions and requirements for the [KSCAMERA_EXT
 
 ## See also
 
-[2.2.2.13 Video HDR Control](/windows-hardware/drivers/stream/uvc-extensions-1-5#22213-video-hdr-control)
+[2.2.2.13 Video HDR Control](./uvc-extensions-1-5.md#22213-video-hdr-control)

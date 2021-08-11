@@ -24,7 +24,5 @@ If a pin supports KSINTERFACE\_STANDARD\_LOOPED\_STREAMING, the relevant filter 
 
 ### See Also
 
-[KSINTERFACESETID\_Standard](ksinterfacesetid-standard.md), [**KSPIN\_INTERFACE**](/windows-hardware/drivers/stream/kspin-interface-structure), [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor)
-
- 
+[KSINTERFACESETID\_Standard](ksinterfacesetid-standard.md), [**KSPIN\_INTERFACE**](./kspin-interface-structure.md), [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor)
 

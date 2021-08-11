@@ -46,7 +46,7 @@ The KSPROPERTY\_AUDDECOUT\_CUR\_MODE property indicates the current audio output
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
@@ -94,4 +94,3 @@ For more information, see [Audio Miniport Drivers](../audio/audio-miniport-drive
 
 
 [**KSPROPERTY\_AUDDECOUT\_MODES**](ksproperty-auddecout-modes.md)
-

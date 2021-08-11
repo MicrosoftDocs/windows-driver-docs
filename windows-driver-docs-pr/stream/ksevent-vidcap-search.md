@@ -44,7 +44,7 @@ The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a search has been comp
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/windows-hardware/drivers/stream/ksevent-structure)"><strong>KSEVENT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](./ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
@@ -57,4 +57,3 @@ The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a search has been comp
 Clients might register for this event when searching for a particular track, for instance, in order to be notified when the search completes.
 
 For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index).
-

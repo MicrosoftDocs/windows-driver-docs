@@ -54,7 +54,5 @@ When the network provider makes a KSMETHOD\_BDA\_COMMIT\_CHANGES request, the li
 
 [**BdaCommitChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacommitchanges)
 
-[**KSMETHOD**](/windows-hardware/drivers/stream/ksmethod-structure)
-
- 
+[**KSMETHOD**](./ksmethod-structure.md)
 

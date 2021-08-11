@@ -46,7 +46,7 @@ User-mode clients use this property to get or set a camera's video stabilization
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/stream/ksproperty-structure)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s)"><strong>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S</strong></a></p></td>
 </tr>
 </tbody>
@@ -79,4 +79,3 @@ The property ID is **KSPROPERTY\_CAMERACONTROL\_VIDEO\_STABILIZATION\_MODE\_PROP
 [**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_CAMERACONTROL\_VIDEOSTABILIZATION\_MODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s)
-

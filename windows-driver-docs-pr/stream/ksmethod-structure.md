@@ -52,7 +52,7 @@ Microsoft provides several system-defined method set GUIDs. Minidrivers specify 
 
 For more information about kernel streaming events, see [KS Properties, Events, and Methods](ks-properties--events--and-methods.md).
 
-A client can use the IOCTL_KS_METHOD request along with the KSMETHOD structure to execute methods on a kernel streaming object that the minidriver handles. For more information, see [KS Methods](/windows-hardware/drivers/stream/ks-methods).
+A client can use the IOCTL_KS_METHOD request along with the KSMETHOD structure to execute methods on a kernel streaming object that the minidriver handles. For more information, see [KS Methods](./ks-methods.md).
 
 ## Requirements
 
