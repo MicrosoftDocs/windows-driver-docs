@@ -1,14 +1,14 @@
 ---
-title: BypassIO
+title: BypassIO for filter drivers
 description: About BypassIO
 keywords:
 - filter drivers WDK file system , BypassIO
-ms.date: 07/30/2021
+ms.date: 08/11/2021
 prerelease: false
 ms.localizationpriority: medium
 ---
 
-# BypassIO
+# BypassIO for filter drivers
 
 ## About BypassIO
 
@@ -20,9 +20,9 @@ There will be broader application uses beyond gaming in future Windows releases.
 
 BypassIO is a per handle concept. When BypassIO is requested, it is requested for an explicit file handle. BypassIO has no impact on other handles for that file.
 
-[**FSCTL_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntifs/fsctl-manage-bypass-io) and an equivalent [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ioctl-storage-manage-bypass-io) were added as a part of this infrastructure. Minifilters process **FSCTL_MANAGE_BYPASS_IO**, while **IOCTL_STORAGE_MANAGE_BYPASS_IO** is sent by file systems to the volume/storage stacks. These control codes are designed to be diagnosable: they both return the identity of the driver that failed the BypassIO request, and the reason for vetoing it.
+[**FSCTL_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-fsctl_manage_bypass_io) and an equivalent [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_bypass_io) were added as a part of this infrastructure. Minifilters process **FSCTL_MANAGE_BYPASS_IO**, while **IOCTL_STORAGE_MANAGE_BYPASS_IO** is sent by file systems to the volume/storage stacks. These control codes are designed to be diagnosable: they both return the identity of the driver that failed the BypassIO request, and the reason for vetoing it.
 
-See [BypassIO for storage drivers](../storage/bypassio.md) for BypassIO information that is specific to storage drivers.
+This page provides architectural details across the file system filter and storage stacks, as well as information on how to implement BypassIO in a minifilter driver. See [BypassIO for storage drivers](../storage/bypassio.md) for BypassIO information that is specific to storage drivers.
 
 ## Scope of BypassIO support
 
@@ -71,7 +71,7 @@ Additionally, the following DDIs were changed to support BypassIO:
 
 Enabling BypassIO on a handle doesn't impact other handles. However, other operations on a BypassIO-enabled handle do impact the use of BypassIO, such as the following:
 
-* If someone opens a BypassIO-enabled file handle on which BypassIO is enabled and functioning, so that they can perform cached or memory-mapped I/O, the system will temporarily disable BypassIO on that handle. The system will instead use the traditional I/O path to guarantee that stale data does not occur. The system will continue to use the traditional I/O path on that handle until all data sections and cache maps are torn down, so filters have got to close that handle’s file in order for BypassIO to resume.
+* If you have Handle A open to a file on which BypassIO is enabled and functioning, and someone (for example, another thread or process) opens Handle B to perform cached or memory mapped IO, then BypassIO will temporarily be suspended on Handle A, until Handle B is closed. The system will instead use the traditional I/O path to guarantee that stale data does not occur. The system will continue to use the traditional I/O path on that handle until all data sections and cache maps are torn down, so filters must close the handle’s file in order for BypassIO to resume.
 
 * If a BypassIO-enabled file is marked sparse, all BypassIO operations start using the traditional I/O path.
 
