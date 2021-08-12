@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi Direct
 description: Provides information on the use of Wi-Fi Direct WinRT APIs in Windows applications.
-ms.date: 08/04/2021
+ms.date: 08/12/2021
 ms.localizationpriority: medium
 ---
 
@@ -24,10 +24,10 @@ Developers of desktop applications can use this sample to see how to replace the
 
 ## See also
 
-[Build 2015 video: Wi-Fi Direct and Wi-Fi Direct Services API (including sample code)](https://channel9.msdn.com/Events/Build/2015/3-98)
-
-[Wi-Fi Direct Services API](/uwp/api/windows.devices.wifidirect.services)
-
 [Build 2011 video: Understanding Wi-Fi Direct in Windows 8](https://channel9.msdn.com/Events/Build/BUILD2011/HW-329T)
 
 [Build 2013 video: Building Windows Apps That Use Wi-Fi Direct (Windows 8.1)](https://channel9.msdn.com/Events/Build/2013/3-9030)
+
+[Build 2015 video: Wi-Fi Direct and Wi-Fi Direct Services API (including sample code)](https://channel9.msdn.com/Events/Build/2015/3-98)
+
+[Wi-Fi Direct Services API](/uwp/api/windows.devices.wifidirect.services)
