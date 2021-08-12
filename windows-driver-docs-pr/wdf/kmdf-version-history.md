@@ -16,25 +16,25 @@ This topic lists versions of Kernel-Mode Driver Framework (KMDF), the correspond
 
 The following table shows the release history of the KMDF library:
 
-|KMDF version|Release method|Included in this version of Windows|Drivers using it run on|
-|--- |--- |--- |--- |
-|1.33|WDK for Windows Server 2022|Windows 11, Windows Server 2022|Windows 11, Windows Server 2022 and later|
-|1.31|Windows 10, version 2004 WDK|Windows 10, version 2004 (May 2020 Update, Vibranium)|Windows 10, version 2004 and later|
-|1.29|Not released in WDK|Windows 10, version 1903 (March 2019 Update, 19H1)|Windows 10, version 1903 and later|
-|1.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809 and later|
-|1.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (April 2018 Update, Redstone 4)|Windows 10, version 1803 and later|
-|1.23|Windows 10, version 1709 WDK|Windows 10, version 1709 (Fall Creators Update, Redstone 3)|Windows 10, version 1709 and later|
-|1.21|Windows 10, version 1703 WDK|Windows 10, version 1703 (Creators Update, Redstone 2)|Windows 10, version 1703 and later|
-|1.19|Windows 10, version 1607 WDK|Windows 10, version 1607 (Anniversary Update, Redstone 1)|Windows 10 version 1607, Windows Server 2016 and later|
-|1.17|Windows 10, version 1511 WDK|Windows 10, version 1511 (November Update, Threshold 2)|Windows 10 version 1511, Windows Server 2016 and later|
-|1.15|Windows 10 WDK|Windows 10, version 1507 (Threshold 1)|Windows 10, version 1507, Windows Server 2016 and later|
-|1.13|Windows 8.1 WDK|Windows 8.1|Windows 8.1 and later|
-|1.11|Windows 8 WDK|Windows 8|Windows Vista and later|
-|1.9|Windows 7 WDK|Windows 7|Windows XP and later|
-|1.7|Windows Server 2008 WDK|Windows Vista with Service Pack 1 (SP1), Windows Server 2008|Windows 2000 and later|
-|1.5|Windows Vista WDK|Windows Vista|Windows 2000 and later|
-|1.1|Download only|None|Windows 2000 and later|
-|1.0|Download only|None|Windows XP and later|
+| KMDF version | Release method               | Included in this version of Windows                          | Drivers using it run on                                 |
+|--------------|------------------------------|--------------------------------------------------------------|---------------------------------------------------------|
+| 1.33         | WDK for Windows Server 2022  | Windows 11, Windows Server 2022                              | Windows 11, Windows Server 2022 and later               |
+| 1.31         | Windows 10, version 2004 WDK | Windows 10, version 2004 (May 2020 Update, Vibranium)        | Windows 10, version 2004 and later                      |
+| 1.29         | Not released in WDK          | Windows 10, version 1903 (March 2019 Update, 19H1)           | Windows 10, version 1903 and later                      |
+| 1.27         | Windows 10, version 1809 WDK | Windows 10, version 1809 (October 2018 Update, Redstone 5)   | Windows 10, version 1809 and later                      |
+| 1.25         | Windows 10, version 1803 WDK | Windows 10, version 1803 (April 2018 Update, Redstone 4)     | Windows 10, version 1803 and later                      |
+| 1.23         | Windows 10, version 1709 WDK | Windows 10, version 1709 (Fall Creators Update, Redstone 3)  | Windows 10, version 1709 and later                      |
+| 1.21         | Windows 10, version 1703 WDK | Windows 10, version 1703 (Creators Update, Redstone 2)       | Windows 10, version 1703 and later                      |
+| 1.19         | Windows 10, version 1607 WDK | Windows 10, version 1607 (Anniversary Update, Redstone 1)    | Windows 10 version 1607, Windows Server 2016 and later  |
+| 1.17         | Windows 10, version 1511 WDK | Windows 10, version 1511 (November Update, Threshold 2)      | Windows 10 version 1511, Windows Server 2016 and later  |
+| 1.15         | Windows 10 WDK               | Windows 10, version 1507 (Threshold 1)                       | Windows 10, version 1507, Windows Server 2016 and later |
+| 1.13         | Windows 8.1 WDK              | Windows 8.1                                                  | Windows 8.1 and later                                   |
+| 1.11         | Windows 8 WDK                | Windows 8                                                    | Windows Vista and later                                 |
+| 1.9          | Windows 7 WDK                | Windows 7                                                    | Windows XP and later                                    |
+| 1.7          | Windows Server 2008 WDK      | Windows Vista with Service Pack 1 (SP1), Windows Server 2008 | Windows 2000 and later                                  |
+| 1.5          | Windows Vista WDK            | Windows Vista                                                | Windows 2000 and later                                  |
+| 1.1          | Download only                | None                                                         | Windows 2000 and later                                  |
+| 1.0          | Download only                | None                                                         | Windows XP and later                                    |
 
 You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2019 to build drivers that run on Windows 10 and later.
 
