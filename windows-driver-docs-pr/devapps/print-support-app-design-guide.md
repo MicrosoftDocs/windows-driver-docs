@@ -21,7 +21,7 @@ Printer specific features can be grouped in a way that makes it easy for the use
 
 This need for showing custom print preferences is addressed by this API with an optional UWP extension contract that can be activated by the user from all Windows print dialogs and custom print dialogs that use API provided by Windows. Manufacturers will be able to tailor their UI to provide the best print experience for the specific printer the user owns.
 
-Another area where the printer manufacturers can improve and differentiate is print quality. Manufacturers can improve print quality after rendering by optimizing the content for the specific printer. They can also present a high-fidelity preview that better represents the final output as it could take printer specific features into consideration. 
+Another area where the printer manufacturers can improve and differentiate is print quality. Manufacturers can improve print quality after rendering by optimizing the content for the specific printer. They can also present a high-fidelity preview that better represents the final output as it could take printer specific features into consideration.
 
 ![print support app print timeline](images/psa-api-print-timeline.png)
 
@@ -67,7 +67,7 @@ The following sequence diagram represents the concept of Settings UI print ticke
 
 C# sample code for activation of the Settings UI when launched from any print dialog (MPD/CPD or custom print dialog) or from system settings:
 
-```cs
+```csharp
 namespace PsaSampleApp
 {
     sealed partial class App : Application
@@ -145,7 +145,7 @@ XAML for **DefaultSettingsView** class:
 
 C# sample code for showing UI and changing PrintTicket:
 
-```cs
+```csharp
 namespace PsaSampleApp
 {
     /// <summary>
@@ -226,7 +226,7 @@ WireShark response from an IPP printer to a get-printer-attributes query:
 
 C# sample code for getting ink names and ink levels from the printer:
 
-```cs
+```csharp
 namespace PsaSampleApp
 {
     /// <summary>
@@ -287,7 +287,7 @@ namespace PsaSampleApp
 
 C# sample code for setting printer attributes:
 
-```cs
+```csharp
 int defaultResolutionX = 1200;
 int defaultResolutionY = 1200;
 string pdlFormat = "image/pwg-raster";
@@ -355,7 +355,7 @@ This service can run at any point in a print job for the associated IPP printer.
 
 C# sample code for providing PrintTicket validation service:
 
-```cs
+```csharp
 public void Run(IBackgroundTaskInstance taskInstance)
 {
     // Take task deferral
@@ -395,7 +395,7 @@ private void OnPrintTicketValidationRequested(PrintSupportExtensionSession sessi
 
 ### Updating PrintDeviceCapabilities
 
-```cs
+```csharp
 private void OnPdcChanged(PrintSupportExtensionSession session, PrintSupportPrintDeviceCapabilitiesChangedEventArgs args)
 {
     using (args.GetDeferral())
@@ -457,7 +457,7 @@ This is a UI contract that can be launched from either the Print Support Workflo
 
 ### Skipping system rendering
 
-```cs
+```csharp
 namespace PsaBackground
 {
     class PrintSupportWorkflowBackgroundTask : IBackgroundTask
@@ -498,7 +498,7 @@ Sequence diagram for the PDL modification event:
 
 C# sample code for Print Support Job Monitor reading and writing print job content:
 
-```cs
+```csharp
 private void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession session, PrintWorkflowPdlModificationRequestedEventArgs args)
 {
     using (args.GetDeferral())
@@ -540,7 +540,7 @@ private void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession sessio
 
 C# sample code for launching the Print Support Job UI from PSA PDL modification requested event contract:
 
-```cs
+```csharp
 private async void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession session, PrintWorkflowPdlModificationRequestedEventArgs args)
 {
     IInputStream pdlContent = args.SourceContent.GetInputStream();
@@ -595,7 +595,7 @@ Sequence diagram for print job UI activation for the **PdlDataAvailable** event:
 
 C# sample code for the PSA job UI activation contract:
 
-```cs
+```csharp
 namespace PsaSampleApp
 {
     sealed partial class App : Application
@@ -658,7 +658,7 @@ namespace PsaSampleApp
 
 C# sample code for getting job attributes for a print job:
 
-```cs
+```csharp
 namespace PsaBackground
 {
     class PrintSupportWorkflowBackgroundTask : IBackgroundTask
@@ -696,7 +696,7 @@ namespace PsaBackground
 
 C# sample code, continuing from the *Get printer job attributes* section above, demonstrating setting job attributes:
 
-```cs
+```csharp
 private async void SetJobColorModeToMonochrome(PrintWorkflowPrinterJob printerJob)
 {
     var attributes = new Dictionary<string, IppAttributeValue>();
@@ -716,7 +716,7 @@ Some IPP printers do not support getting/setting job attributes after the job is
 
 Some PDL formats like PDF need a complete stream to be available to start processing. For that reason, a new method named **GetContentFileAsync** is provided on the **PrintWorkflowPdlSourceContent** class that returns a **StorageFile** of the source content.
 
-```cs
+```csharp
 public sealed partial class JobUIPage : Page
 {
     public async void OnPdlDataAvailable(PrintWorkflowJobUISession session, PrintWorkflowPdlDataAvailableEventArgs args)
@@ -748,7 +748,7 @@ public sealed partial class JobUIPage : Page
 
 C# sample code showing PDL conversion of XPS to PDF:
 
-```cs
+```csharp
 private async void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession session, PrintWorkflowPdlModificationRequestedEventArgs args)
 {
     using (args.GetDeferral())
@@ -786,7 +786,7 @@ Sequence diagram for job notification event:
 
 C# sample code, continuing from the workflow job UI activation for **PDLDataAvailable** event section above, to show error on job notification:
 
-```cs
+```csharp
 public sealed partial class JobUIPage : Page    
 {
     public void OnJobNotification(PrintWorkflowJobUISession session, PrintWorkflowJobNotificationEventArgs args)
@@ -819,7 +819,7 @@ public sealed partial class JobUIPage : Page
 
 Currently, some IPP printers do not support set-attribute operation. The **CreateJobOnPrinterWithAttributes** function and CreateJobOnPrinterWithAttributesBuffer function on **PrintWorkflowPdlDataAvailableEventArgs** are provided to mitigate this issue. Using these APIs, a PSA developer can provide job attributes that will be passed to printer when job is created on the printer.
 
-```cs
+```csharp
 public sealed partial class JobUIPage : Page
 {
     public async void OnPdlDataAvailable(PrintWorkflowJobUISession session, PrintWorkflowPdlDataAvailableEventArgs args)

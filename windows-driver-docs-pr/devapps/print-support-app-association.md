@@ -1,7 +1,7 @@
 ---
 title: Print support app association
 description: Provides guidance and examples for associating a print support app with a printer.
-ms.date: 08/06/2021
+ms.date: 08/12/2021
 ms.localizationpriority: medium
 ---
 
@@ -143,7 +143,7 @@ The registry key is defined as follows:
 | Registry key path | HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\PSA\Association |
 | Name | Hardware Id or Compatible Id |
 | Type | REG_SZ |
-| Value | PSA AUMID<br><br>For example, "dd5de805-d9bb-4785-88e9-399cbff2130e_ph1m9x8skttmg!App" |
+| Value | PSA AUMID, for example, "dd5de805-d9bb-4785-88e9-399cbff2130e_ph1m9x8skttmg!App" |
 
 The PSA key in **Registry Editor**:
 
