@@ -60,7 +60,7 @@ There is currently no way to disable the IOMMU after it has been enabled.
 
 * During power transitions, the driver might need to save portions of hardware-reserved memory. To handle this, *Dxgkrnl* provides a mechanism for the driver to specify how much memory will be needed up front to store this data. The exact amount of memory required by the driver can change dynamically, but *Dxgkrnl* will take a commit charge on the upper bound at the time the adapter is initialized to ensure that physical pages can be obtained when required. *Dxgkrnl* is responsible for ensuring this memory is locked and mapped to the IOMMU for the transfer during power transitions.
 
-* For any hardware reserved resources, VidMm ensures that the IOMMU resources are correctly mapped by the time the device is attached to the IOMMU. This includes memory reported by memory segments reported with [**PopulatedFromSystemMemory**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags.md). For reserved memory (e.g. firmware/BIOD reserved) that is not exposed via VidMm segments, *Dxgkrnl* will make a[**DXGKDDI_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) call to query all reserved memory ranges that the driver will need mapped ahead of time. See [Hardware reserved memory](#hardware-reserved-memory) for details.
+* For any hardware reserved resources, VidMm ensures that the IOMMU resources are correctly mapped by the time the device is attached to the IOMMU. This includes memory reported by memory segments reported with [**PopulatedFromSystemMemory**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags). For reserved memory (e.g. firmware/BIOD reserved) that is not exposed via VidMm segments, *Dxgkrnl* will make a[**DXGKDDI_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) call to query all reserved memory ranges that the driver will need mapped ahead of time. See [Hardware reserved memory](#hardware-reserved-memory) for details.
 
 ## Domain assignment
 
@@ -240,7 +240,7 @@ NTSTATUS PHYSICAL_ADAPTER::OnPowerUp()
 
 Hardware reserved memory will be mapped by VidMm before the device is attached to the IOMMU.
 
-Any memory reported to VidMm as a segment with the [**PopulatedFromSystemMemory**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags.md) flag will automatically be handled by VidMm, and will be mapped based on the provided physical address.
+Any memory reported to VidMm as a segment with the [**PopulatedFromSystemMemory**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags) flag will automatically be handled by VidMm, and will be mapped based on the provided physical address.
 
 For private hardware reserved regions not exposed by segments, VidMm will make a [**DXGKDDI_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) call to query the ranges by the driver. The provided ranges must not overlap any regions of memory used by the NTOS memory manager, and VidMm will validate that not such intersections occur. This ensures that the driver cannot accidentally report a region of physical memory that is outside the reserved range, as this would violate the security guarantees of the feature.
 
