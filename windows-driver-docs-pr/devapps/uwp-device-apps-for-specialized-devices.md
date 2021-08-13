@@ -55,7 +55,7 @@ For more info, see:
 
 When OEMs or IHVs are unable to use the device protocol APIs to access their (internal or peripheral) device, they should first contact Microsoft to discuss their scenario with the Windows Ecosystem team. In some instances - upon Microsoft approval - a UWP device app can directly access a custom driver.
 
-Custom driver access requires device metadata. To access a custom driver, the app must be specified in the device metadata as a privileged app for the peripheral device or system container. For more info about custom driver access, see [UWP device apps design guide for specialized devices internal to the PC](https://go.microsoft.com/fwlink/p/?LinkId=306693).
+Custom driver access requires device metadata. To access a custom driver, the app must be specified in the device metadata as a privileged app for the peripheral device or system container. For more info about custom driver access, see [UWP device apps design guide for specialized devices internal to the PC](https://download.microsoft.com/download/F/0/D/F0DBC6F9-5CC7-4F13-A9A4-3DD7F1FA5F64/Windows%20Store%20Device%20App%20Design%20Guide%20for%20Specialized%20Devices%20Internal%20to%20the%20PC.docx).
 
 ## Component suppliers
 
@@ -65,7 +65,7 @@ Component suppliers can work with OEMs to develop UWP device apps for their inte
 
 - **OEM develops and distributes the app**: In this case, the OEM develops and distributes the app that accesses one or more internal devices from different component suppliers. The OEM ultimately owns app development, app distribution, and device metadata maintenance. The component supplier owns the driver.
 
-For more info about these workflows, see [UWP device apps design guide for specialized devices internal to the PC](https://go.microsoft.com/fwlink/p/?LinkId=306693).
+For more info about these workflows, see [UWP device apps design guide for specialized devices internal to the PC](https://download.microsoft.com/download/F/0/D/F0DBC6F9-5CC7-4F13-A9A4-3DD7F1FA5F64/Windows%20Store%20Device%20App%20Design%20Guide%20for%20Specialized%20Devices%20Internal%20to%20the%20PC.docx).
 
 ## Related topics
 

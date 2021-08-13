@@ -45,7 +45,7 @@ When using device metadata with your app, AutoPlay supports these device types:
 
 ## Before you begin
 
-- **Make sure you have the Device Metadata Authoring Wizard**. You'll need it to enable AutoPlay. In this release, this wizard is included with Microsoft Visual Studio Professional and Microsoft Visual Studio Ultimate. But if you have Microsoft Visual Studio Express for Windows, you need to download the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209) to get the wizard.
+- **Make sure you have the Device Metadata Authoring Wizard**. You'll need it to enable AutoPlay. In this release, this wizard is included with Microsoft Visual Studio Professional and Microsoft Visual Studio Ultimate. But if you have Microsoft Visual Studio Express for Windows, you need to download the [standalone SDK for Windows 8.1](https://developer.microsoft.com/windows/hardware/) to get the wizard.
 
 - **Associate your app with the Microsoft Store**. You'll need your app's package information to enable AutoPlay. For more info, see the *Associate your app with the Microsoft Store* section in [Step 1: Create a UWP device app](step-1--create-a-uwp-device-app.md).
 

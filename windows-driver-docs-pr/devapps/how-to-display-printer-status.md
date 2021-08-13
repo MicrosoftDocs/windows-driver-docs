@@ -1,18 +1,18 @@
 ---
 title: How to display printer status in a UWP device app
 description: This topic uses the C# version of the Print settings and print notifications sample to demonstrate how to query the printer status and display it.
-ms.date: 08/11/2021
+ms.date: 08/13/2021
 ms.localizationpriority: medium
 ---
 
 # How to display printer status in a UWP device app
 
-In Windows 8.1, users can check their printer status from the modern UI of a UWP device app. This topic uses the C# version of the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample to demonstrate how to query the printer status and display it. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
+In Windows 8.1, users can check their printer status from the modern UI of a UWP device app. This topic uses the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample to demonstrate how to query the printer status and display it. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-The C# version of the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample uses the **InkLevel.xaml** page to demonstrate how to get the printer status (in this case, the ink level) and display it. A print helper class is used to create a device context (IPrinterExtensionContext) and perform the device queries. The **PrinterHelperClass.cs** file is in the **DeviceAppForPrintersLibrary** project and uses APIs defined in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
+The C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample uses the **InkLevel.xaml** page to demonstrate how to get the printer status (in this case, the ink level) and display it. A print helper class is used to create a device context (IPrinterExtensionContext) and perform the device queries. The **PrinterHelperClass.cs** file is in the **DeviceAppForPrintersLibrary** project and uses APIs defined in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
 > [!NOTE]
-> The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
+> The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Before you get started:
 
 1. Create device metadata for your printer that associates it with your app. See [Step 2: Create device metadata](step-2--create-device-metadata.md) for more about that.
 
-1. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
+1. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample.
 
     > [!NOTE]
     > Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
@@ -187,7 +187,7 @@ private void OnInkLevelReceived(object sender, string response)
 
 The print helper class takes care of sending the Bidi query to the device and receiving the response.
 
-This example shows the `SendInkLevelQuery` method, and others, from the **PrintHelperClass.cs** file. Note that only some of the print helper class methods are shown here. Download the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample to see the full code.
+This example shows the `SendInkLevelQuery` method, and others, from the **PrintHelperClass.cs** file. Note that only some of the print helper class methods are shown here. Download the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample to see the full code.
 
 ```csharp
 public void SendInkLevelQuery()
@@ -245,7 +245,7 @@ Before you can test your UWP device app, it must be linked to your printer using
 You need a copy of the device metadata package for your printer, to add the device app info to it. If you don't have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Step 2: Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
 > [!NOTE]
-> To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
+> To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://developer.microsoft.com/windows/hardware/), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
 The following steps build your app and install the device metadata.
 

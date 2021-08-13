@@ -7,7 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 08/11/2021
+ms.date: 08/13/2021
 ms.localizationpriority: medium
 ---
 
@@ -440,7 +440,7 @@ The following schema is also valid as of Windows 10, version 1809.  It enables a
 
 [Package an app using the Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
 
-[Custom Capability Sample App](https://go.microsoft.com/fwlink/p/?LinkId=846904)
+[Custom Capability Sample App](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomCapability)
 
 [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
 

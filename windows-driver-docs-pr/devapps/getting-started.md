@@ -1,7 +1,7 @@
 ---
 title: Getting started with UWP device apps
 description: Start here to begin building UWP device apps.
-ms.date: 08/11/2021
+ms.date: 08/12/2021
 ms.localizationpriority: medium
 ---
 
@@ -22,15 +22,16 @@ If you're looking for info about UWP mobile broadband apps, see [Mobile Broadban
 
 To develop a UWP device app: you need Microsoft Visual Studio, for developing UWP apps, and the Device Metadata Authoring Wizard, for developing device metadata.
 
-**Note**  To develop UWP device apps in Windows 10, download Microsoft Visual Studio 2017 and Windows Driver Kit (WDK) 10. [Become a Windows Insider to get kits and tools](https://go.microsoft.com/fwlink/p/?LinkId=526775)
+> [!NOTE]
+> To develop UWP device apps in Windows 10, download Microsoft Visual Studio 2017 and Windows Driver Kit (WDK) 10. [Become a Windows Insider to get kits and tools](https://insider.windows.com)
 
 ### If you're also developing drivers
 
 If you're developing Windows drivers in addition to UWP device apps, use Microsoft Visual Studio Professional or Microsoft Visual Studio Ultimate to create UWP device apps. These editions include the new Device Metadata Authoring Wizard and are also required by the Windows Driver Kit (WDK) 8.1.
 
-1. [Download Visual Studio Professional or Visual Studio Ultimate](https://go.microsoft.com/fwlink/p/?LinkId=302196)
+1. [Download Visual Studio Professional or Visual Studio Ultimate](https://developer.microsoft.com/windows/hardware/)
 
-2. [Download the WDK 8.1](https://go.microsoft.com/fwlink/p/?LinkId=302196)
+1. [Download the WDK 8.1](https://developer.microsoft.com/windows/hardware/)
 
 ### If you're not going to be developing drivers
 
@@ -38,13 +39,13 @@ If you don't need to develop drivers, you can use Microsoft Visual Studio Expres
 
 1. [Download Visual Studio Express 2015 for Windows 10](https://visualstudio.microsoft.com/vs/express/)
 
-2. [Download the standalone Windows 8.1 SDK](https://go.microsoft.com/fwlink/p/?LinkId=302196)
+1. [Download the standalone Windows 8.1 SDK](https://developer.microsoft.com/windows/hardware/)
 
 ## 2. Build some regular UWP apps
 
 A UWP device app is a special kind of UWP app. So, before you develop your first UWP device app, get set up to build some regular UWP apps.
 
-- [Sign up - register for a Microsoft Store developer account](https://go.microsoft.com/fwlink/p/?LinkId=302197)
+- [Sign up - register for a Microsoft Store developer account](https://developer.microsoft.com/microsoft-store/register/)
 
 - [Get started with Microsoft Visual Studio](/previous-versions/windows/apps/br211384(v=win.10))
 
