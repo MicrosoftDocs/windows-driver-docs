@@ -29,7 +29,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------|
 | [**WDI\_TLV\_SSID**](wdi-tlv-ssid.md)                                       |                                |          | The SSID.                   |
 | [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](wdi-tlv-unicast-algorithm-list.md) |                                |          | The unicast algorithm list. |
-| [**WDI\_TLV\_CHANNEL\_LIST**](wdi-tlv-channel-list.md)                      |                                |          | The channel list.           |
+| [**WDI\_TLV\_BAND\_CHANNEL\_LIST**](wdi-tlv-band-channel-list.md)                      |                                |          | The channel list.           |
 | [**WDI_TLV_IS_DIRECTED_PROBE_FOR_HIDDEN_PERMITTED**](wdi-tlv-is-directed-probe-for-hidden-permitted.md)                      |                                |     X     | When present, This TLV indicates if a directed (non-wildcard) probe request is allowed for this SSID.  If this TLV is present and **false** then the firmware **must** not use this SSID in any probe request for privacy reasons. If this TLV is not present then the firmware may use whatever behavior was previously used (WDI version 1.0.21 behavior or earlier). |
 
  

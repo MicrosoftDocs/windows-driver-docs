@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_LIMITED_CONNECTIVITY (dot11wificxtypes.h)
 
-**WDI_TLV_LIMITED_CONNECTIVITY** is a TLV that specifies  whether the WiFiCx driver can maintain a secondary STA connection. 
+**WDI_TLV_LIMITED_CONNECTIVITY** is a TLV that specifies whether the WiFiCx driver can maintain a secondary STA connection. 
 
 This TLV is used in [NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY](ndis-status-wdi-indication-secondary-sta-connectivity.md).
 

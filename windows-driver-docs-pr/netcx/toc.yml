@@ -84,6 +84,8 @@
     items: 
     - name: "WDI_TLV_6_GHZ_BAND_CHANNEL"
       href: wdi-tlv-6-ghz-band-channel.md
+    - name: "WDI_TLV_ACCESS_NETWORK_TYPE"
+      href: wdi-tlv-access-network-type.md
     - name: "WDI_TLV_ACTION_FRAME_BODY"
       href: wdi-tlv-action-frame-body.md
     - name: "WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT"
@@ -156,6 +158,8 @@
       href: wdi-tlv-cancel-parameters.md
     - name: "WDI_TLV_CHANNEL_INFO_LIST"
       href: wdi-tlv-channel-info-list.md
+    - name: "WDI_TLV_BAND_CHANNEL_LIST"
+      href: wdi-tlv-band-channel-list.md
     - name: "WDI_TLV_CHANNEL_LIST"
       href: wdi-tlv-channel-list.md
     - name: "WDI_TLV_CHANNEL_NUMBER"
@@ -170,6 +174,8 @@
       href: wdi-tlv-cipher-key-gcmp-256-key.md
     - name: "WDI_TLV_CIPHER_KEY_ID"
       href: wdi-tlv-cipher-key-id.md
+    - name: "WDI_TLV_CIPHER_KEY_IHV_KEY"
+      href: wdi-tlv-cipher-key-ihv-key.md
     - name: "WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT"
       href: wdi-tlv-cipher-key-receive-sequence-count.md
     - name: "WDI_TLV_CIPHER_KEY_TKIP_INFO"
@@ -256,6 +262,12 @@
       href: wdi-tlv-ftm-target-bss-entry.md
     - name: "WDI_TLV_GET_AUTO_POWER_SAVE"
       href: wdi-tlv-get-auto-power-save.md
+    - name: "WDI_TLV_HESSID"
+      href: wdi-tlv-hessid.md
+    - name: "WDI_TLV_HESSID_INFO"
+      href: wdi-tlv-hessid-info.md
+    - name: "WDI_TLV_HOTSPOT_INDICATION_ELEMENT"
+      href: wdi-tlv-hotspot-indication-element.md
     - name: "WDI_TLV_IHV_DATA"
       href: wdi-tlv-ihv-data.md
     - name: "WDI_TLV_IHV_TASK_DEVICE_CONTEXT"
@@ -422,6 +434,8 @@
       href: wdi-tlv-p2p-service-status.md
     - name: "WDI_TLV_P2P_SERVICE_TRANSACTION_ID"
       href: wdi-tlv-p2p-service-transaction-id.md
+    - name: "WDI_TLV_P2P_SERVICE_TYPE"
+      href: wdi-tlv-p2p-service-type.md
     - name: "WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR"
       href: wdi-tlv-p2p-service-update-indicator.md
     - name: "WDI_TLV_P2P_WPS_ENABLED"
@@ -490,6 +504,8 @@
       href: wdi-tlv-scan-dwell-time.md
     - name: "WDI_TLV_SCAN_MODE"
       href: wdi-tlv-scan-mode.md
+    - name: "WDI_TLV_SECONDARY_STA_BAND_CHANNEL"
+      href: wdi-tlv-secondary-sta-band-channel.md
     - name: "WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS"
       href: wdi-tlv-send-action-frame-request-parameters.md
     - name: "WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS"
@@ -695,7 +711,25 @@
   - name: "Other WiFiCx data types"
     items:
   - name: "WiFiCx TLV generator/parser"
-    href: wificx-tlv-generator-parser.md
+    items: 
+    - name: "WiFiCx TLV generator/parser topics"
+      href: wificx-tlv-generator-parser.md
+    - name: "WiFiCx TLV parser interface overview"
+      href: wificx-tlv-parser-interface-overview.md
+    - name: "WiFiCx TLV generator interface overview"
+      href: wificx-tlv-generator-interface-overview.md
+    - name: "WiFiCx TLV generator/parser memory interface"
+      href: wificx-tlv-generator-parser-memory-interface.md
+    - name: "WiFiCx TLV generator/parser special members"
+      href: wificx-tlv-generator-parser-special-members.md
+    - name: "Adding the WiFiCx TLV generator/parser to your driver"
+      href: building-a-wificx-tlv-generator-parser.md
+    - name: "WiFiCx TLV generator/parser XML semantics and syntax"
+      href: wificx-tlv-generator-parser-xml-semantics.md
+    - name: "WiFiCx TLV versioning"
+      href: wificx-tlv-versioning.md
+    - name: "WiFiCx TLV dumpers"
+      href: wificx-tlv-dumpers.md
   - name: "WiFiCx design guide"
     items:
   - name: "WiFiCx WPA3-SAE authentication"

@@ -30,7 +30,7 @@ NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY is used by the Wi-Fi adapt
 
 | Type                                                                  | Multiple TLV instances allowed | Optional | Description                                              |
 |-----------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------|
-| [**WDI_TLV_LIMITED_CONNECTIVITY**](wdi-tlv-limited-connectivity.md) |                                |          | The current state of the radio in hardware and software. |
+| [**WDI_TLV_LIMITED_CONNECTIVITY**](wdi-tlv-limited-connectivity.md) |                                |          | Specifies whether the driver can maintain a secondary STA connection. If this value is **1**, the driver cannot maintain a secondary STA connection. Otherwise this value is **0**.  |
 | [**WDI_TLV_SECONDARY_STA_BAND_CHANNEL**](wdi-tlv-secondary-sta-band-channel.md)|     X                           |    X      | The current state of the radio in hardware and software. |
 
  
