@@ -288,7 +288,9 @@ The following steps build your app and install the device metadata.
 1. Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 
 1. Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
-    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
+
+    > [!NOTE]
+    > If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
     1. If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
 
