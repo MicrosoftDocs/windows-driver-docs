@@ -345,6 +345,8 @@
     href: voice-activation.md
   - name: "USB Audio 2.0 Drivers"
     href: usb-2-0-audio-drivers.md
+  - name: "Supporting audio posture"
+    href: supporting-audio-posture.md
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
   - name: "Bluetooth Bypass Guidelines for Audio Drivers"
