@@ -1,7 +1,7 @@
 ---
 title: Sample configuration XML
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
@@ -341,6 +341,3 @@ You can use the following example configuration XML to develop the configuration
 
 </PrintDeviceCapabilities>
 ```
-
-
-
