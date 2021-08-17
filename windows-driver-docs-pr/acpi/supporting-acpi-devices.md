@@ -1,6 +1,6 @@
 ---
 title: Supporting ACPI Devices
-description: Supporting ACPI Devices
+description: Provides information about supporting ACPI devices
 keywords:
 - Advanced Configuration and Power Interface Specification WDK
 - ACPI devices WDK
@@ -10,7 +10,7 @@ keywords:
 - operation region handlers WDK ACPI
 - function drivers WDK ACPI
 - WDM function drivers WDK ACPI
-ms.date: 05/19/2020
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 

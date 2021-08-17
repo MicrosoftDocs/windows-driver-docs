@@ -1,20 +1,16 @@
 ---
 title: Supporting an Operation Region
-description: Supporting an Operation Region
+description: Provides information about supporting an operation region
 keywords:
 - ACPI devices WDK , operation regions
 - operation regions WDK ACPI
 - function drivers WDK ACPI , operation regions
 - WDM function drivers WDK ACPI , operation regions
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
 # Supporting an Operation Region
-
-
-
-
 
 An operation region is the communication interface between an ACPI device and the device's function driver. The following topics describe how a function driver supports an operating region:
 
@@ -25,11 +21,3 @@ An operation region is the communication interface between an ACPI device and th
 [Implementing an Operation Region Handler](implementing-an-operation-region-handler.md)
 
 [Accessing an Operation Region](accessing-an-operation-region.md)
-
- 
-
- 
-
-
-
-

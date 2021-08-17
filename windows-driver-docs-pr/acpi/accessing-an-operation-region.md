@@ -1,6 +1,6 @@
 ---
 title: Accessing an Operation Region
-description: Accessing an Operation Region
+description: Provides information about accessing an operation region
 keywords:
 - ACPI devices WDK , operation regions
 - operation regions WDK ACPI

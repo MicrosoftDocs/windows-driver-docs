@@ -3,14 +3,13 @@ title: ACPI_METHOD_SET_ARGUMENT_INTEGER macro
 description: The ACPI_METHOD_SET_ARGUMENT_INTEGER macro sets the members of an ACPI_METHOD_ARGUMENT structure for a single integer value.
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_INTEGER macro ACPI Devices
-ms.date: 10/12/2018
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
-# ACPI\_METHOD\_SET\_ARGUMENT\_INTEGER macro
+# ACPI_METHOD_SET_ARGUMENT_INTEGER macro
 
-
-The ACPI\_METHOD\_SET\_ARGUMENT\_INTEGER macro sets the members of an [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a single integer value.
+The ACPI_METHOD_SET_ARGUMENT_INTEGER macro sets the members of an [**ACPI_METHOD_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a single integer value.
 
 ## Syntax
 
@@ -23,10 +22,10 @@ void ACPI_METHOD_SET_ARGUMENT_INTEGER(
 
 ## Parameters
 
-*MethodArgument*   
-A pointer to an ACPI\_METHOD\_ARGUMENT structure.
+*MethodArgument*
+A pointer to an **ACPI_METHOD_ARGUMENT** structure.
 
-*IntData*   
+*IntData*
 An integer value of type ULONG.
 
 ## Return value
@@ -35,28 +34,14 @@ This macro does not return a value.
 
 ## Remarks
 
-A driver can use this macro to set the members of an ACPI\_METHOD\_ARGUMENT structure that supplies a single integer value of type ULONG.
+A driver can use this macro to set the members of an **ACPI_METHOD_ARGUMENT** structure that supplies a single integer value of type ULONG.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr>
-<td><p>Header</p></td>
-<td>Acpiioct.h (include Acpiioct.h)</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Header:** acpiioct.h (include Acpiioct.h)
 
 ## See also
 
-
-[**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)
+[**ACPI_METHOD_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)
