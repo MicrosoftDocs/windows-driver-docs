@@ -37,6 +37,8 @@ Our explanation so far is oversimplified in several ways:
 
     **Filter driver**: The drivers that perform auxiliary processing are called *filter drivers*.
 
+    For more information on stacks, see [Driver stacks](driver-stacks.md).
+
 -   Some filter drivers observe and record information about I/O requests but do not actively participate in them. For example, certain filter drivers act as verifiers to make sure the other drivers in the stack are handling the I/O request correctly.
 
 We could expand our definition of *driver* by saying that a driver is any software component that observes or participates in the communication between the operating system and a device.
