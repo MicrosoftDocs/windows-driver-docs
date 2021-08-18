@@ -26,7 +26,7 @@ As described in [Device power management in ACPI](#device-power-management-in-ac
 
 Namespace devices support up to four device power states, numbered D0 (full-function, or "on") to D3 (no function, or "off"). Each state can have different power requirements, with higher-numbered states consuming less power than lower-numbered states. In addition, the D3 (off) state has two sub-states, D3hot and D3cold. The D3hot sub-state requires the device to remain accessible on its parent bus so that it can respond to bus-specific software commands. This requirement, and the power used to meet it, are removed in D3cold. Finally, a device can be armed to wake itself from a low-power state due to a hardware event, and, if necessary, to also bring the platform out of an idle state.
 
-The platform indicates its support for D3cold by granting the OS control of the "\_PR3 Support" feature (bit 2) when requested by using the platform-wide OSPM Capabilities Method. For more information, see section 6.2.10.2, "Platform-wide OSPM Capabilities", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+The platform indicates its support for D3cold by granting the OS control of the "_PR3 Support" feature (bit 2) when requested by using the platform-wide OSPM Capabilities Method. For more information, see section 6.2.10.2, "Platform-wide OSPM Capabilities", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 Power-managed devices use child objects to describe their power capabilities to the operating system. The following sections describe these capabilities and objects.
 
@@ -36,9 +36,9 @@ A device declares its support for a power state by listing the set of power reso
 
 The [Windows ACPI driver](../kernel/acpi-driver.md), Acpi.sys, monitors the power dependencies among devices that share resources, and, as these devices transition between power states, ensures that only the power resources that are actually needed by a device are turned on at any particular time.
 
-#### Power Resource Requirements (\_PRx)
+#### Power Resource Requirements (_PRx)
 
-There is a Power Resource Requirements (\_PRx) object, where x = 0, 1, 2, or 3, for each supported device power state. When the device driver decides to transition to a new power state, Acpi.sys ensures that any power resources required for the new state are turned on, and that any resources no longer in use are turned off.
+There is a Power Resource Requirements (_PRx) object, where x = 0, 1, 2, or 3, for each supported device power state. When the device driver decides to transition to a new power state, Acpi.sys ensures that any power resources required for the new state are turned on, and that any resources no longer in use are turned off.
 
 | Device state supported | Resource requirements object to use | Resources to include in requirements object |
 |--|--|--|
@@ -48,11 +48,11 @@ There is a Power Resource Requirements (\_PRx) object, where x = 0, 1, 2, or 3, 
 | D3hot (required) | _PR3 | Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command. |
 
 > [!NOTE]
-> If a particular platform supports the D3cold feature, and the device driver for a device opts-in to D3cold, the device's \_PR3 power resources will, if they are not being used by any other device, be turned off sometime after the transition to D3Cold.
+> If a particular platform supports the D3cold feature, and the device driver for a device opts-in to D3cold, the device's _PR3 power resources will, if they are not being used by any other device, be turned off sometime after the transition to D3Cold.
 
 For more information about the power resource requirements for a device that supports D3cold, see [Firmware Requirements for D3cold](firmware-requirements-for-d3cold.md).
 
-#### Device Power State (\_PSx)
+#### Device Power State (_PSx)
 
 There is a Power State method, \_PSx, where x = 0, 1, 2, or 3, for each supported device power state Dx. This method is optional, but, if it is present, it is invoked before the power resources for the state are turned off, and after the power resources for the state are turned on. \_PSx is intended to perform any platform-specific actions required around the power cycle. \_PSx must not access device registers that are assigned to the function driver, access bus-standard registers that are assigned to the bus driver, or switch power resources on or off, which is an operation reserved for Acpi.sys.
 
@@ -60,7 +60,7 @@ There is a Power State method, \_PSx, where x = 0, 1, 2, or 3, for each supporte
 
 Power-managed devices might be able to detect events when in a low-power state and cause the platform to wake up to handle them. To enable this feature, Windows needs information about the capabilities of both the platform and the device.
 
-#### Sx Device Wake State (\_SxW)
+#### Sx Device Wake State (_SxW)
 
 On a given platform, there is a specific mapping between device states that support the wake capability and system states that can respond to wake events. ACPI defines the \_SxW object to provide this information to the operating system. There is an SxW object for each supported system power state, Sx. Because SoC platforms are always in S0, the only object of interest here is \_S0W. This object specifies the platform's ability to wake from a low-power idle state in response to a device's wake signal. The object is used by Windows to determine the target D-state for the device during system low-power idle. For more information about \_S0W, see section 7.2.20, "\_S0W (S0 Device Wake State)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
@@ -72,9 +72,9 @@ For most SoC platforms, devices are aggressively power-managed to the D3 state w
 Any D-state can be designated as the lowest-powered wake-capable state, and some device classes or buses use different values. For instance, SDIO- and USB-connected devices use state D2 for this state.
 
 > [!NOTE]
-> To facilitate the migration of device drivers from Windows 7 to Windows 8 or Windows 8.1, your device might be required to supply \_S4W as well. Currently, the only device class that has this requirement is networking (Ndis.sys).
+> To facilitate the migration of device drivers from Windows 7 to Windows 8 or Windows 8.1, your device might be required to supply _S4W as well. Currently, the only device class that has this requirement is networking (Ndis.sys).
 
-#### Wake-capable interrupts (\_CRS)
+#### Wake-capable interrupts (_CRS)
 
 The resource description for a device indicates that the device is capable of detecting and signaling a wake event by marking an interrupt as "wake-capable" (either ExclusiveAndWake or SharedAndWake). Windows and device drivers provide special handling of such interrupts to ensure that they are enabled when the device transitions to a low-power state. For more information, see the descriptions of the Interrupt and GpioInt resource descriptors in section 6.4.3.6, "Extended Interrupt Descriptor", and section 6.4.3.8.1 , "GPIO Connection Descriptors", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
@@ -82,12 +82,12 @@ The resource description for a device indicates that the device is capable of de
 
 Depending on user scenario or system policy, wake-capable devices may or may not actually be armed for wake. Therefore, wake-capable interrupts may or may not be enabled when the device is idle. In addition to enabling interrupts, Windows uses the following mechanisms to enable wake on a device.
 
-#### Device Sleep Wake (\_DSW)
+#### Device Sleep Wake (_DSW)
 
 ACPI defines the \_DSW object as a way for the operating system to inform the ACPI platform firmware about the next sleep or low-power idle period. This object is optional, and is used only if the platform has a need to configure platform-specific wake hardware in advance. The target D-state for the device and the target S-state for the system are both provided. The D-state and S-state combination will always comply with the information provided by the device's \_SxW object(s).
 
-#### Power Resources for Wake (\_PRW)
+#### Power Resources for Wake (_PRW)
 
-In some cases, additional power resources must be turned on for a device to be enabled for wake. In this case, the device can provide the \_PRW object to list those additional power resources. The [Windows ACPI driver](../kernel/acpi-driver.md), Acpi.sys, will manage these power resources as it normally does, making sure that they are turned on when they are needed by a device (that is, a wake-enabled device), and are turned off otherwise.
+In some cases, additional power resources must be turned on for a device to be enabled for wake. In this case, the device can provide the _PRW object to list those additional power resources. The [Windows ACPI driver](../kernel/acpi-driver.md), Acpi.sys, will manage these power resources as it normally does, making sure that they are turned on when they are needed by a device (that is, a wake-enabled device), and are turned off otherwise.
 
-\_PRW is also used to define the wake capability for traditional (full-ACPI hardware) PC platforms.
+_PRW is also used to define the wake capability for traditional (full-ACPI hardware) PC platforms.

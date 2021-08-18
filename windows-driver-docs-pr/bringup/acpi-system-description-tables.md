@@ -1,7 +1,7 @@
 ---
 title: ACPI system description tables
-description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required.
-ms.date: 10/02/2020
+description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification can be required.
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
@@ -43,16 +43,16 @@ The Fixed ACPI Hardware Table (FADT) contains important information about the va
 
 - The Flags field within the FADT (offset 112) has two new flags:
 
-    HARDWARE\_REDUCED\_ACPI
+    HARDWARE_REDUCED_ACPI
     Bit offset 20. Indicates that ACPI hardware is not available on this platform. This flag must be set if the ACPI Fixed Hardware Programming Model is not implemented.
 
-    LOW\_POWER\_S0\_IDLE\_CAPABLE
+    LOW_POWER_S0_IDLE_CAPABLE
     Bit offset 21. Indicates that the platform supports low-power idle states within the ACPI S0 system power state that are more energy efficient than any Sx sleep state. If this flag is set, Windows will not try to sleep and resume, but will instead use platform idle states and connected standby.
 
-- The FADT Preferred\_PM\_Profile field (byte offset 45) has a new role entry, "Tablet". This role influences power management policy for the display and input, and affects the display of on-screen keyboards.
+- The FADT Preferred_PM_Profile field (byte offset 45) has a new role entry, "Tablet". This role influences power management policy for the display and input, and affects the display of on-screen keyboards.
 - The "IA-PC Boot Architecture Flags" field (offset 109) has a new "CMOS RTC Not Present" flag (bit offset 5) to indicate that the PC's CMOS RTC is either not implemented, or does not exist at the legacy addresses. If this flag is set, the platform must implement the ACPI Time and Alarm Control Method device. For more information, see the **Control Method Time and Alarm device** section in the [ACPI defined devices](acpi-defined-devices.md) topic.
 - New fields are added to support traditional PC sleep/resume on hardware-reduced ACPI platforms. These fields are ignored by Windows, but must be present in the table for compliance.
-- If the HARDWARE\_REDUCED\_ACPI flag is set, all fields relating to the ACPI Hardware Specification are ignored by the operating system.
+- If the HARDWARE_REDUCED_ACPI flag is set, all fields relating to the ACPI Hardware Specification are ignored by the operating system.
 
 All other FADT settings retain their meanings from the previous version, ACPI 4.0. For more information, see section 5.2.9, "Fixed ACPI Description Table (FADT)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 

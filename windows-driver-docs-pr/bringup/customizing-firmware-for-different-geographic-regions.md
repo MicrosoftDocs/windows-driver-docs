@@ -1,12 +1,11 @@
 ---
 title: Customizing firmware for different geographic regions
 description: Systems will be sold in a variety of markets and geographies worldwide. To enable this, OEMs must define unique GUID values for those devices/system firmware which may require region-specific firmware.
-ms.date: 04/20/2017
+ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---
 
 # Customizing firmware for different geographic regions
-
 
 Systems will be sold in a variety of markets and geographies worldwide. To enable this, OEMs must define unique GUID values for those devices/system firmware which may require region-specific firmware.
 
@@ -17,11 +16,13 @@ For example, region-specific firmware is frequently required for the Mobile Broa
 In the previous diagram, note that the system is identical in all respects, with the exception that the systems are destined for resale in different geographies. Therefore, the MBB device firmware in each system must be independently targetable and assigned a different GUID in the ESRT. This enables the MNO to target firmware updates to the system that is sold by them in their operating area. Similar consideration must be given to any device which may require custom firmware by geography or resale channel.
 
 ## Related topics
+
 [System and device firmware updates via a firmware driver package](system-and-device-firmware-updates-via-a-firmware-driver-package.md)  
+
 [Populating the ESRT table](populating-the-esrt-table.md)  
+
 [Authoring a firmware update package](authoring-a-firmware-update-package.md)  
+
 [Certifying and signing the update package](certifying-and-signing-the-update-package.md)  
+
 [Installing the update](installing-the-update.md)  
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: Boot screen components
 description: There are two components to the firmware update boot screen the OEM logo and the update text.
-ms.date: 10/12/2018
+ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +15,7 @@ The OEM logo in the firmware update boot screen must be the same logo which is d
 
 ### OEM logo file
 
-Before customers see any actionable screens, your OEM logo displays on the boot screen. 
+Before customers see any actionable screens, your OEM logo displays on the boot screen.
 
 The OEM logo does not appear on any screens in OOBE, and after OOBE it displays in the **Control Panel** under **Performance Information and Tools**. It does not display in the **Settings** app.
 
@@ -43,11 +43,11 @@ These design principles apply to both landscape and portrait devices.
 
 #### Add the logo to the BGRT
 
-In addition to correctly positioning the logo during POST, you also store the logo inside the Boot Graphics Resource Table (BGRT). The BGRT dynamically defines new objects for Windows to use to describe the resources and on-screen location. Store the logo in EfiBootServicesData and expose it via the BGRT. The BGRT interface supports this logo as either a 24-bit bitmap with a pixel format of 0xRRGGBB, or a 32-bit bitmap with a pixel format of 0xrrRRGGBB, where ‘rr’ is reserved. This is the standard interface that Windows uses to access the logo.
+In addition to correctly positioning the logo during POST, you also store the logo inside the Boot Graphics Resource Table (BGRT). The BGRT dynamically defines new objects for Windows to use to describe the resources and on-screen location. Store the logo in EfiBootServicesData and expose it via the BGRT. The BGRT interface supports this logo as either a 24-bit bitmap with a pixel format of 0xRRGGBB, or a 32-bit bitmap with a pixel format of 0xrrRRGGBB, where 'rr' is reserved. This is the standard interface that Windows uses to access the logo.
 
-Two important fields in the BGRT are "Image Offset X" and "Image Offset Y". These are the (x,y) values of the upper-left corner of the logo's on-screen placement. When you set these values, make sure that you don’t use the logo's position or the upper-left corner of the bounding box, or Windows won't correctly position the logo in Setup, Startup Repair, Push-Button Reset, or other experiences.
+Two important fields in the BGRT are "Image Offset X" and "Image Offset Y". These are the (x,y) values of the upper-left corner of the logo's on-screen placement. When you set these values, make sure that you don't use the logo's position or the upper-left corner of the bounding box, or Windows won't correctly position the logo in Setup, Startup Repair, Push-Button Reset, or other experiences.
 
-You should minimize padding in the logo resource and use only what's necessary for proper centering. Using minimal padding saves space in the firmware and lets Windows scale the BGRT-based logo properly. 
+You should minimize padding in the logo resource and use only what's necessary for proper centering. Using minimal padding saves space in the firmware and lets Windows scale the BGRT-based logo properly.
 
 > [!NOTE]
 > The OEM logo does not appear on any screens in OOBE.
@@ -58,13 +58,13 @@ For additional details on the BGRT, please see section 5.2.22 of the [Advanced C
 
 The update text in the firmware update boot screen is a simple string that is designed to be quick to read and easy to understand. The text is rendered by the Windows bootloader. Once it determines that firmware updates are pending then the bootloader determines the locale of Windows and displays the localized text on the screen.
 
-During the call into UpdateCapsule the bootloader will pass all firmware update capsules. In addition it will also pass in a Microsoft-defined *firmware update display* capsule that contains a bitmap of the text which is displayed and the location of the bitmap on the screen. The system firmware’s UpdateCapsule method must persist the capsule so that any time the screen is cleared or modified it can re-display the bitmap on the screen.
+During the call into UpdateCapsule the bootloader will pass all firmware update capsules. In addition it will also pass in a Microsoft-defined *firmware update display* capsule that contains a bitmap of the text which is displayed and the location of the bitmap on the screen. The system firmware's UpdateCapsule method must persist the capsule so that any time the screen is cleared or modified it can re-display the bitmap on the screen.
 
 ![firmware update boot screen components.](images/firmwareupdatebootscreencomponents.png)
 
 ## Windows firmware update display capsule
 
-When the Windows bootloader calls into the system firmware’s UpdateCapsule method, it passes in all firmware update capsules. Additionally it will pass in a Windows UX capsule. This capsule contains the bitmap of rendered, localized text which must be displayed on the screen. The following GUID is used to identify this capsule: {3b8c8162-188c-46a4-aec9-be43f1d65697}.
+When the Windows bootloader calls into the system firmware's UpdateCapsule method, it passes in all firmware update capsules. Additionally it will pass in a Windows UX capsule. This capsule contains the bitmap of rendered, localized text which must be displayed on the screen. The following GUID is used to identify this capsule: {3b8c8162-188c-46a4-aec9-be43f1d65697}.
 
 There is no guarantee of order the UX capsule will appear in the array of capsules. Do not rely on a specific index position to find the UX capsule. A best practice includes scanning the array looking for the UX capsule and processing it before processing remaining firmware capsules in the array.
 
@@ -72,12 +72,12 @@ It is important to note that there may be some scenarios where there will be no 
 
 The following table describes the firmware update display header for the UX capsule.
 
-| Field | Byte length | Byte offset | Description 
-|---|---|---|---|
-| CapsuleGuid      | 16 | 0 | FIRMWARE\_UPDATE\_DISPLAY\_CAPSULE |
-| HeaderSize       | 4  | 16 | sizeof(EFI\_CAPSULE\_HEADER) |
-| Flags            | 4           | 20          | CAPSULE\_FLAGS\_PERSIST\_ACROSS\_RESET |
-| CapsuleImageSize | 4           | 24          | 4-byte unsigned integer describing the length of the firmware update display capsule. The size includes the header and capsule, which includes the display image. |
+| Field | Byte length | Byte offset | Description |
+|--|--|--|--|
+| CapsuleGuid | 16 | 0 | FIRMWARE\_UPDATE\_DISPLAY\_CAPSULE |
+| HeaderSize | 4 | 16 | sizeof(EFI\_CAPSULE\_HEADER) |
+| Flags | 4 | 20 | CAPSULE\_FLAGS\_PERSIST\_ACROSS\_RESET |
+| CapsuleImageSize | 4 | 24 | 4-byte unsigned integer describing the length of the firmware update display capsule. The size includes the header and capsule, which includes the display image. |
 
 The following table describes the firmware update display capsule payload.
 
@@ -148,7 +148,7 @@ The following table describes the firmware update display capsule payload.
 <td>Image</td>
 <td>N/A</td>
 <td>44</td>
-<td>A byte-array that contains the embedded bitmap to display during the firmware update process. The bitmap can be either a 24-bit bitmap with the pixel format 0xRRGGBB or a 32-bit bitmap with the pixel format 0xrrRRGGBB, where ‘rr’ is reserved.</td>
+<td>A byte-array that contains the embedded bitmap to display during the firmware update process. The bitmap can be either a 24-bit bitmap with the pixel format 0xRRGGBB or a 32-bit bitmap with the pixel format 0xrrRRGGBB, where 'rr' is reserved.</td>
 </tr>
 </tbody>
 </table>
@@ -160,7 +160,7 @@ The firmware update display capsule describes a graphic that must be rendered du
 The firmware update display capsule is modeled off of the Boot Graphics Resource Table (BGRT) defined in ACPI 5.0. The BGRT defines a mechanism for system firmware to provide a graphic to an OS boot loader. While the two tables are similar, there are a couple of notable differences.
 
 | BGRT | Firmware update display capsule | Reason |
-|---|---|---|
+|--|--|--|
 | Pointer to Bitmap | Embedding the bitmap allows the capsule to be saved and restored in a single operation. | 0 |
 | Does not contain video mode | Contains video mode | Done to avoid requiring the firmware to query video mode during UpdateCapsule call. |
 | Contain a Status field | Does not contain a Status field | The Status field of the BGRT describes whether the image is currently displayed on the screen. This is not applicable to the firmware update display capsule. |

@@ -1,13 +1,13 @@
 ---
 title: Battery Device-Specific Method
 description: This topic describes _DSM control method and parameters for passive thermal battery management.
-ms.date: 08/25/2020
+ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---
 
 # Battery Device-Specific Method
 
-To support the passive thermal management of the battery by the platform, Microsoft defines a \_DSM method to communicate to the platform firmware the thermal throttling limit set by the battery's thermal zone.
+To support the passive thermal management of the battery by the platform, Microsoft defines a _DSM method to communicate to the platform firmware the thermal throttling limit set by the battery's thermal zone.
 
 For more information, see the **Thermal zones** section in the [ACPI defined devices](acpi-defined-devices.md#thermal-zones) topic.
 
@@ -18,8 +18,11 @@ The \_DSM control method parameters for the battery charging thermal limit funct
 ### Arguments
 
 - **Arg0:** UUID = 4c2067e3-887d-475c-9720-4af1d3ed602e
+
 - **Arg1:** Revision = 0
+
 - **Arg2:** Function index = 1
+
 - **Arg3:** Thermal limit (integer value from 0 to 100)
 
 ### Return

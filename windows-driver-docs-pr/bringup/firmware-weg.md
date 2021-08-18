@@ -1,14 +1,13 @@
 ---
 title: Firmware Windows Engineering Guide (WEG)
 description: The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow through in implementing system firmware-related best practices.
-ms.date: 05/07/2018
+ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---
 
 # Firmware Windows Engineering Guide (WEG)
 
 The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow through in implementing system firmware-related best practices.
-
 
 ## In this section
 
@@ -30,12 +29,6 @@ The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow throug
 
 [Sample PowerShell script to query SMBIOS locally](sample-powershell-script-to-query-smbios-locally.md)
 
-                                           
-
-
-
-
-
 ## Firmware WEG terminology
 
 The following terms are used throughout the Firmware WEG:
@@ -50,7 +43,7 @@ The following terms are used throughout the Firmware WEG:
 
 - CSM - Compatibility Support Module
 
-- EFI - Extensible Fireware Interface 
+- EFI - Extensible Firmware Interface
 
 - eMMC - embedded Multi-Media Controller
 
@@ -90,7 +83,7 @@ The following terms are used throughout the Firmware WEG:
 
 - SPI - Serial Peripheral Interface
 
-- SSD - Solid State Drive 
+- SSD - Solid State Drive
 
 - TCG - Trusted Computing Group
 
@@ -113,6 +106,3 @@ The following terms are used throughout the Firmware WEG:
 - WPBT - Windows Platform Binary Table
 
 - WSMT - Windows SMM Security Mitigations Table
-
-
-

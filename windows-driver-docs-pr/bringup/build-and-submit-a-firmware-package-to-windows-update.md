@@ -1,7 +1,7 @@
 ---
 title: Build and submit a firmware package to Windows Update (WU)
-description: Build and submit a firmware package to Windows Update (WU)
-ms.date: 05/15/2018
+description: Provides information about how to build and submit a firmware package to Windows Update (WU).
+ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---
 
@@ -11,9 +11,9 @@ Because a firmware update is delivered as a driver package, it follows the same 
 
 1. When the contents of the driver package are installed on the System Under Test (SUT), the device must pass the required Windows Hardware Lab Kit (HLK) tests. If there is not a test specifically for the firmware being tested, locate the most reasonable alternative and submit results with the HLK package as needed.
 
-2. The driver package can then be submitted to the [Partner Center](https://partner.microsoft.com/dashboard) for signing.
+1. The driver package can then be submitted to the [Partner Center](https://partner.microsoft.com/dashboard) for signing.
 
-3. Once signed, the driver package is provided to the submitter where the submitter has the option to publish on Windows Update (WU) via the Hardware Dashboard (using the Driver Distribution feature).
+1. Once signed, the driver package is provided to the submitter where the submitter has the option to publish on Windows Update (WU) via the Hardware Dashboard (using the Driver Distribution feature).
 
 Publishing to Windows Update is done via the [Hardware Dashboard](https://partner.microsoft.com/dashboard) using the Driver Distribution feature.
 
@@ -84,4 +84,4 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 [Partner Center](https://partner.microsoft.com/dashboard)
 
-[ESRT table definition ](./esrt-table-definition.md)
+[ESRT table definition](./esrt-table-definition.md)
