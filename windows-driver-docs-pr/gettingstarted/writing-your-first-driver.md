@@ -1,5 +1,5 @@
 ---
-title: Write your first driver | Windows drivers
+title: Write your first driver
 description: If you're writing your first driver, use these exercises to get started.
 keywords:
 - Hello World driver
