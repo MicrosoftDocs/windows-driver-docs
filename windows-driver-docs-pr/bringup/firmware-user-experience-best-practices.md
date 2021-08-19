@@ -1,6 +1,6 @@
 ---
 title: Firmware user experience (UX) best practices
-description: Provides information about firmware user experience (UX) best practices
+description: Provides information about firmware user experience (UX) best practices.
 ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,6 @@
 ---
 title: Firmware update validation testing
-description: Provides information about firmware update validation testing
+description: Provides information about firmware update validation testing.
 ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---

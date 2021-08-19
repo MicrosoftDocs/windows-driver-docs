@@ -1,6 +1,6 @@
 ---
 title: Boot and UEFI
-description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
+description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
 ms.date: 08/04/2021
 ms.localizationpriority: medium
 ---

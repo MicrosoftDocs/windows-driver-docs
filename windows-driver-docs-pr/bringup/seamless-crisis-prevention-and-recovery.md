@@ -7,7 +7,6 @@ ms.localizationpriority: medium
 
 # Seamless crisis prevention and recovery
 
-
 If a firmware update fails, the results can be devastating. At best, the update fails, but the system is resilient and recovers without the end-user becoming aware. At worst, it is possible for a failed firmware update to result in a completely unusable system, requiring the end-user to return their system to the retailer or manufacturer for repair. The latter case is what we call a *crisis*.
 
 A crisis can result from a failed firmware update, or due to firmware that is incompatible with Windows or other aspects of the system. This section discusses features designed to prevent and recover from crises that resulting from failed firmware updates. Our expectation is that firmware update test coverage by the firmware author will prevent the majority of crises resulting from incompatible firmware.
@@ -15,7 +14,6 @@ A crisis can result from a failed firmware update, or due to firmware that is in
 In order to provide a great experience for end-users, the following crisis prevention and recovery requirements must be met for the firmware driver package update mechanism. These requirements do not preclude additional crisis prevention or recovery solutions.
 
 ## Pre-installation criteria
-
 
 When the system firmware is performing the actual update there are a series of pre-installation checks that must be performed. System firmware must perform this check to ensure there is enough power to complete the update. It is also recommended that the checks be made for each of the updates before the update is applied if there are multiple firmware updates. The list of items to check and validate are provided below. All of the checks must be performed where applicable. There is no specific order to the execution of the tests.
 
@@ -41,7 +39,7 @@ When the system firmware is performing the actual update there are a series of p
 <strong>Note</strong>  In a test/laboratory environment it is acceptable to have no battery present yet still allow firmware updates as long as tethered power is provided. However a differentiation must be made between a dead/not charging battery and no battery present.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -61,7 +59,7 @@ When the system firmware is performing the actual update there are a series of p
 </tr>
 <tr class="odd">
 <td>Storage</td>
-<td><p>The following checks are performed as appropriate, depending upon the system’s hardware</p>
+<td><p>The following checks are performed as appropriate, depending upon the system's hardware</p>
 <ul>
 <li>There is sufficient room for backups of the current firmware which will be replaced</li>
 <li>There is sufficient room in the device to accommodate the new firmware</li>
@@ -69,8 +67,6 @@ When the system firmware is performing the actual update there are a series of p
 </tr>
 </tbody>
 </table>
-
- 
 
 Any failure must result in an appropriate Last Attempt Status error code. For more information, see the Last Attempt Status error code information in [ESRT table definition](esrt-table-definition.md) and [Firmware update status](firmware-update-status.md).
 
@@ -99,9 +95,11 @@ After all of the updates have been processed, UEFI will resume booting Windows. 
 
 Possible causes for install failure include, but are not limited to:
 
--   Insufficient resources
--   Power loss
--   Hardware failure
+- Insufficient resources
+
+- Power loss
+
+- Hardware failure
 
 ### Firmware update succeeds but Windows fails to boot
 
@@ -109,15 +107,22 @@ The UEFI firmware is not responsible for rolling back updated firmware once it h
 
 Possible causes for this class of failure include, but are not limited to:
 
--   Firmware incompatible with OS drivers.
--   Firmware incompatible with OS components.
+- Firmware incompatible with OS drivers.
+
+- Firmware incompatible with OS components.
 
 If a hardware vendor decides to implement additional logic to determine whether Windows has successfully booted, that is acceptable. As mentioned previously, the expectation is that firmware update test coverage by the firmware author will prevent the majority of crises resulting from incompatible firmware.
 
 ## Related topics
+
 [ESRT table definition](esrt-table-definition.md)  
+
 [Plug and play device](plug-and-play-device.md)  
+
 [Authoring an update driver package](authoring-an-update-driver-package.md)  
+
 [Processing updates](processing-updates.md)  
+
 [Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)  
+
 [Firmware update status](firmware-update-status.md)  
