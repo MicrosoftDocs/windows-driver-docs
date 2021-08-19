@@ -2,7 +2,7 @@
 title: Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR
 description: The WHEA_UNCORRECTABLE_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. 
 keywords: ["Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR", "WHEA_UNCORRECTABLE_ERROR"]
-ms.date: 05/07/2021
+ms.date: 08/09/2021
 topic_type:
 - apiref
 api_name:
@@ -126,6 +126,41 @@ The WHEA\_UNCORRECTABLE\_ERROR bug check has a value of 0x00000124. This bug che
 <td align="left"><p>Reserved.</p></td>
 <td align="left"><p>Reserved.</p></td>
 <td align="left"><p>A corrected Itanium platform error occurred.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0xC</p></td>
+<td align="left"><p>Address of WHEA_ERROR_RECORD structure.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>Other types of error sources v2.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0xD</p></td>
+<td align="left"><p>Address of WHEA_ERROR_RECORD structure.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>SCI-based GHESv2 (ACPI Generic Hardware Error Source).</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0xE</p></td>
+<td align="left"><p>Address of WHEA_ERROR_RECORD structure.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>BMC (Baseboard Management Controller) error info.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0xF</p></td>
+<td align="left"><p>Address of WHEA_ERROR_RECORD structure.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>ARS PMEM (Address Range Scrubbing Persistent Memory) error source.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x10</p></td>
+<td align="left"><p>Address of WHEA_ERROR_RECORD structure.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>Reserved.</p></td>
+<td align="left"><p>Device Driver error source.</p></td>
 </tr>
 </tbody>
 </table>
