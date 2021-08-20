@@ -24,7 +24,7 @@ Restricted mode can be enabled by Windows Defender Application Control (WDAC) po
 ```xml
 <Settings>
     <!-- Other settings -->
-    <Setting Provider="Microsoft.WindbgX" Key="Settings" ValueName=“EnableRestrictedMode">
+    <Setting Provider="Microsoft.WindbgX" Key="Settings" ValueName="EnableRestrictedMode">
         <Value>
             <Boolean>true</Boolean>
         </Value>
