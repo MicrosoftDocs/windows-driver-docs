@@ -1,7 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 03/13/2020
+ms.date: 08/20/2021
 ms.localizationpriority: medium
 ---
 
@@ -507,24 +507,36 @@ Follow these steps to validate that the security compile options are properly co
 
 1. Download and install the cross platform [.NET Core SDK](https://dotnet.microsoft.com/download).
 
-2. There are a number of options to download BinSkim, such as a NuGet package. In this example we will download a zip file with BinSkim from here: <https://github.com/microsoft/binskim> and install it on a 64 bit Windows PC.
+2. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
-3. Select the **Clone or download** button on <https://github.com/microsoft/binskim> and select **Download Zip**.
+3. There are a number of options to download BinSkim, such as a NuGet package. In this example we will use the git clone option to download from here: <https://github.com/microsoft/binskim> and install it on a 64 bit Windows PC.
 
-4. Select the downloaded zip file and unzip it, for example to `C:\binskim-master`.
+4. Open a Visual Studio Developer Command Prompt window and create a directory, for example `C:\binskim-master`. 
 
-5. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](/visualstudio/install/install-visual-studio).
-
-6. Open a Visual Studio Developer Command Prompt window and move to the directory that you unzipped the files to.  
+   ```console
+   C:\> Md \binskim-master
+   ```
+5. Move to that directory that you just created.  
 
    ```console
    C:\> Cd \binskim-master
    ```
-
-7. Run **BuildAndTest.cmd** at the root of the enlistment to ensure that release build succeeds, and that all tests pass.
+6. Use the git clone command to download all of the needed files.  
 
    ```console
-   C:\binskim-master> BuildAndTest.cmd
+   C:\binskim-master> git clone --recurse-submodules https://github.com/microsoft/binskim.git
+   ```
+
+7. Move to the new `binskim` dirctory that the clone command created.  
+
+   ```console
+   C:\> Cd \binskim-master\binskim
+   ```
+
+7. Run **BuildAndTest.cmd** to ensure that release build succeeds, and that all tests pass.
+
+   ```console
+   C:\binskim-master\binskim> BuildAndTest.cmd
 
    Welcome to .NET Core 3.1!
    ---------------------
@@ -532,25 +544,25 @@ Follow these steps to validate that the security compile options are properly co
 
    ...
 
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64\BinSkim.Sdk.dll
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64\BinSkim.Sdk.dll
    1 File(s) copied
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\linux-x64\BinSkim.Sdk.dll
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\linux-x64\BinSkim.Sdk.dll
    1 File(s) copied
 
    ...
 
    ```
 
-8. The build process creates a set of directories with the BinSkim executables. Move to the win-x64 bit build output directory.  
+8. The build process creates a set of directories with the BinSkim executables. Move to the win-x64 build output directory.  
 
    ```console
-   C:\binskim-master> Cd \binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64>
+   C:\binskim-master\binskim> Cd \binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64>
    ```
 
 9. Display help for the analyze option.
 
    ```console
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim help analyze
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim help analyze
 
    BinSkim PE/MSIL Analysis Driver 1.6.0.0
 
@@ -581,13 +593,13 @@ For more information about sympath, see [Symbol path for Windows debuggers](../d
 1. Execute the following command to analyze a compiled driver binary. Update the target path to point to your complied driver .sys file.
 
    ```console
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\echo.sys"
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\echo.sys"
    ```
 
 2. For additional information add the verbose option like this.
 
    ```console
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\osrusbfx2.sys" --verbose
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\osrusbfx2.sys" --verbose
    ```
 
    > [!NOTE]
