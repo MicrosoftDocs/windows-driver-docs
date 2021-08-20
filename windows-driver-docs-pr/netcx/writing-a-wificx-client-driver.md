@@ -11,12 +11,13 @@ ms.localizationpriority: medium
 
 ## Device Initialization
 
-In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-and-adapter-initialization.md), a WifiCx client driver must also perform the following tasks in its [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
+In addition to the tasks that NetAdapterCx requires for [NetAdapter device initialization](device-and-adapter-initialization.md), a WifiCx client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
-1.	Call [**WifiDeviceInitConfig**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitconfig) after calling [**NetDeviceInitConfig**](windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig) but before calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE_INIT**](/windows-hardware/drivers/wdf/wdfdevice_init) object passed in by the framework.
+1. Call [**WifiDeviceInitConfig**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitconfig) after calling [**NetDeviceInitConfig**](windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig) but before calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE_INIT**](/windows-hardware/drivers/wdf/wdfdevice_init) object passed in by the framework.
 
-2.	Call [**WifiDeviceInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitialize) to register WifCx device-specific callback functions using an initialized WIFI\_DEVICE\_CONFIG structure and the WDFDEVICE object obtained from **WdfDeviceCreate**.
-The following example demonstrates how to initialize the WifiCx device. Error handling has been left out for clarity.
+2. Call [**WifiDeviceInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitialize) to register WiFiCx device-specific callback functions, using an initialized [**WIFI_DEVICE_CONFIG**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_device_config) structure and the **WDFDEVICE** object obtained from **WdfDeviceCreate**.
+
+The following example demonstrates how to initialize the WiFiCx device. Error handling has been left out for clarity.
 
 ```C++
 status = NetDeviceInitConfig(deviceInit);
@@ -34,20 +35,24 @@ WIFI_DEVICE_CONFIG_INIT(&wifiDeviceConfig,
 
 status = WifiDeviceInitialize(wdfDevice, &wifiDeviceConfig);
 ...
-// Get the TLV version used by WifiCx to initialize client't TLV parser/generator
+// Get the TLV version that WifiCx uses to initialize the client's TLV parser/generator
 auto peerVersion = WifiDeviceGetOsWdiVersion(wdfDevice);
 
 ```
 
 This message flow diagram illustrates the initialization process.
 
-![WiFiCx client driver initialization process](images/wificx_initialization.png)
+![Diagram showing the WiFiCx client driver initialization process.](images/wificx_initialization.png)
 
-### **Default (station) adapter creation flow**
+### Default (station) adapter creation flow
 
-Next, the client driver must set all the WiFi specific device capabilities, typically in the [EvtDevicePrepareHardware](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. If your hardware needs interrupts to be enabled in order to query firmware capabilities, this can be done in the [EvtWdfDeviceD0EntryPostInterruptsEnabled](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled). Note that WifiCx will no longer be calling WDI\_TASK\_OPEN\WDI\_TASK\_CLOSE to instruct clients to load\unload firmware nor will it be querying for Wi-Fi capabilities via WDI\_GET\_ADAPTER\_CAPABILITIES command. Also, unlike other types of NetAdapterCx drivers, WiFi client drivers must not create the NETADAPTER object from within the EvtDriverDeviceAdd callback function. Instead, it will be instructed by WifiCx to create the default NetAdapter (station) later using the EvtWifiCxDeviceCreateAdapter callback (after the client’s PrepareHardware WDF callback is successful). Furthermore, WifiCx/WDI will no longer call WDI\_TASK\_CREATE\_PORT command.
+Next, the client driver must set all the WiFi specific device capabilities, typically in the [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. If your hardware needs interrupts to be enabled in order to query firmware capabilities, this can be done in [*EvtWdfDeviceD0EntryPostInterruptsEnabled*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled). 
 
-In this call, the client driver needs to call into NetAdapterCx to create the new NetAdapter object and then call into WifiCx (using **WifiAdapterInitialize** API) to initialize the WiFiCx context and associate it with this NetAdapter object.
+Note that WiFiCx no longer calls WDI\_TASK\_OPEN\WDI\_TASK\_CLOSE to instruct clients to load\unload firmware nor will it query for Wi-Fi capabilities via the WDI\_GET\_ADAPTER\_CAPABILITIES command. 
+
+Also, unlike other types of NetAdapterCx drivers WiFiCx drivers must not create the NETADAPTER object from within the *EvtDriverDeviceAdd* callback function. Instead, WifiCx will instruct drivers to create the default NetAdapter (station) later using the [*EvtWifiCxDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_adapter) callback (after the client’s *EvtDevicePrepareHardware* callback is successful). Furthermore, WiFiCx/WDI no longer calls the WDI\_TASK\_CREATE\_PORT command.
+
+In its *EvtDevicePrepareHardware* (or *EvtWdfDeviceD0EntryPostInterruptsEnabled*), the client driver needs to call into NetAdapterCx to create the new NetAdapter object and then call into WiFiCx (using **WifiAdapterInitialize** API) to initialize the WiFiCx context and associate it with this NetAdapter object.
 
 If this succeeds, WifiCx will then go on to send initialization commands for the device/adapter (SET\_ADAPTER\_CONFIGURATION, TASK\_SET\_RADIO\_STATE if necessary etc).
 
