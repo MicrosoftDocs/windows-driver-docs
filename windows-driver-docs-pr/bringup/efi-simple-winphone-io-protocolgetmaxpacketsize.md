@@ -1,17 +1,15 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.GetMaxPacketSize
-description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.GetMaxPacketSize
-ms.date: 04/20/2017
+description: Returns the maximum number of bytes that can be accommodated in a single read or write operation.
+ms.date: 08/20/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.GetMaxPacketSize
-
+# EFI_SIMPLE_WINPHONE_IO_PROTOCOL.GetMaxPacketSize
 
 The **GetMaxPacketSize** function returns the maximum number of bytes that can be accommodated in a single read or write operation.
 
 ## Syntax
-
 
 ```cpp
 typedef 
@@ -24,61 +22,23 @@ EFI_STATUS
 
 ## Parameters
 
+*This*  
+A pointer to the EFI_SIMPLE_WINPHONE_IO_PROTOCOL instance.
 
-<a href="" id="this"></a>*This*  
-A pointer to the EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL instance.
-
-<a href="" id="maxpacketsize"></a>*MaxPacketSize*  
+*MaxPacketSize*  
 The maximum supported packet size, in bytes.
 
 ## Return values
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>EFI_SUCCESS</strong></p></td>
-<td><p>The function returned successfully</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>EFI_INVALID_PARAMETER</strong></p></td>
-<td><p>A parameter is invalid</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>EFI_DEVICE_ERROR</strong></p></td>
-<td><p>The physical device reported an error.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>EFI_NOT_READY</strong></p></td>
-<td><p>The physical device is busy or not ready to process this request</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Status code | Description |
+|--|--|
+| EFI_SUCCESS | The function returned successfully. |
+| EFI_INVALID_PARAMETER | A parameter was invalid. |
+| EFI_DEVICE_ERROR | The physical device reported an error. |
+| EFI_NOT_READY | The physical device is busy or not ready to process this request. |
 
 ## Remarks
 
-
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

@@ -5,7 +5,6 @@ ms.date: 05/26/2020
 ms.localizationpriority: medium
 ---
 
-
 # UEFI security
 
 Windows operating systems depend on the integrity and configuration of the firmware and hardware components in order to provide a secure work environment.

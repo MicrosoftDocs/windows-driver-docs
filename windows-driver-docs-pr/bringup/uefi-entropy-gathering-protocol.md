@@ -1,7 +1,7 @@
 ---
 title: UEFI entropy gathering protocol
 description: The UEFI entropy gathering protocol is used to produce Random Number Generation (RNG) values in a well-known manner.
-ms.date: 05/22/2020
+ms.date: 08/20/2021
 ms.localizationpriority: medium
 ---
 
@@ -15,8 +15,8 @@ For guidance about the standard methods of creating the RNG values used in this 
 
 ## Protocol Interface
 
-- [EFI\_RNG\_SERVICE\_BINDING\_PROTOCOL](efi-rng-service-binding-protocol.md)
+[EFI_RNG_SERVICE_BINDING_PROTOCOL](efi-rng-service-binding-protocol.md)
 
-- [EFI\_RNG\_PROTOCOL](efi-rng-protocol.md)
+[EFI_RNG_PROTOCOL](efi-rng-protocol.md)
 
-- [**EFI\_RNG\_ALGORITHM\_LIST**](efi-rng-algorithm-list.md)
+[EFI_RNG_ALGORITHM_LIST](efi-rng-algorithm-list.md)
