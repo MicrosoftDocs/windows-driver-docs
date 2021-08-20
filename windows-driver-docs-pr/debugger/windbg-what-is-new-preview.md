@@ -22,7 +22,7 @@ WinDbgNext search now includes the option to search using regular expressions - 
 
 ### Restricted Mode
 
-Restricted Mode limits the types of debugging sessions WinDbg Preview can start to remote debugging sessions and dump files only.  For more information, see [WinDbg Preview - Restricted Mode](windbg-restricted-mode-preview.md).
+Restricted Mode is an optional setting that can limit the type of debugging sessions WinDbg Preview can start to remote debugging sessions and dump files only.  For more information, see [WinDbg Preview - Restricted Mode](windbg-restricted-mode-preview.md).
 
 ### Shadowed variable support
 
