@@ -53,7 +53,7 @@ Deployment of the web service on a windows machine requires that the machine hav
 
     ![applying changes.](images/wsd-app-6.png)
 
-1. When the **Applying changes** dialog closes, open a browser and navigate to <https://localhost>.
+1. When the **Applying changes** dialog closes, open a browser and navigate to `https://localhost`.
 
     ![localhost.](images/wsd-app-7.png)
 
@@ -63,7 +63,7 @@ Publish the Handler project to localhost to deploy the web service.
 
 ![publish web.](images/wsd-app-8.png)
 
-Once publishing is successful, browsing to <https://localhost> will result in an empty file being sent back. If the handler is not setup correctly, you will receive an error message or potentially see the default IIS web page.
+Once publishing is successful, browsing to `https://localhost` will result in an empty file being sent back. If the handler is not setup correctly, you will receive an error message or potentially see the default IIS web page.
 
 You can switch the **DefaultAppPool** to run with the **NetworkService** identity and it will continue to work as expected. **DefaultAppPool** should also work across the network as well.
 
