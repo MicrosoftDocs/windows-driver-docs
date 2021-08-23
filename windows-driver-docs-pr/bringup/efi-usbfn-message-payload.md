@@ -1,17 +1,15 @@
 ---
 title: EFI_USBFN_MESSAGE_PAYLOAD
-description: EFI_USBFN_MESSAGE_PAYLOAD
-ms.date: 04/20/2017
+description: The EFI_USBFN_MESSAGE_PAYLOAD union contains additional payload (device request, transfer result, or bus speed information) for the current message.
+ms.date: 08/23/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_USBFN\_MESSAGE\_PAYLOAD
+# EFI_USBFN_MESSAGE_PAYLOAD
 
-
-The **EFI\_USBFN\_MESSAGE\_PAYLOAD** union contains additional payload (device request, transfer result, or bus speed information) for the current message.
+The **EFI_USBFN_MESSAGE_PAYLOAD** union contains additional payload (device request, transfer result, or bus speed information) for the current message.
 
 ## Syntax
-
 
 ```cpp
 typedef union _EFI_USBFN_MESSAGE_PAYLOAD
@@ -24,25 +22,15 @@ typedef union _EFI_USBFN_MESSAGE_PAYLOAD
 
 ## Members
 
+**udr**  
+A **EFI_USB_DEVICE_REQUEST** structure that contains information about the device request.
 
-<a href="" id="udr"></a>**udr**  
-A **EFI\_USB\_DEVICE\_REQUEST** structure that contains information about the device request.
+**utr**  
+A [**EFI_USBFN_TRANSFER_RESULT**](efi-usbfn-transfer-result.md) structure that contains information about transfer result.
 
-<a href="" id="utr"></a>**utr**  
-A [EFI\_USBFN\_TRANSFER\_RESULT](efi-usbfn-transfer-result.md) structure that contains information about transfer result.
-
-<a href="" id="ubs"></a>**ubs**  
-A [EFI\_USB\_BUS\_SPEED](efi-usb-bus-speed.md) enumeration value that indicates the USB bus speed.
+**ubs**  
+A [**EFI_USB_BUS_SPEED**](efi-usb-bus-speed.md) enumeration value that indicates the USB bus speed.
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

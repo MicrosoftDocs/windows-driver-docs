@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # EFI_USBFN_IO_PROTOCOL.DetectPort
 
-The **DetectPort** function returns the type of device attached to the USB port.
+The *DetectPort* function returns the type of device attached to the USB port.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ A [EFI_USBFN_PORT_TYPE](efi-usbfn-port-type.md) enumeration that indicates the U
 
 ## Return values
 
-Returns one of the following status codes.
+The function returns one of the following status codes:
 
 | Status code | Description |
 |--|--|

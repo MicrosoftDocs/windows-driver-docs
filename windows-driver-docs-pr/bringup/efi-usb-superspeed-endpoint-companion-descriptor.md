@@ -1,13 +1,13 @@
 ---
 title: EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-description: EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-ms.date: 05/21/2020
+description: The EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure provides the SuperSpeed Endpoint Companion descriptor to the USB function driver.
+ms.date: 08/23/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR
+# EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 
-The **EFI\_USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR** structure provides the SuperSpeed Endpoint Companion descriptor to the USB function driver.
+The **EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR** structure provides the SuperSpeed Endpoint Companion descriptor to the USB function driver.
 
 ## Syntax
 
@@ -32,32 +32,25 @@ typedef struct
 
 ## Members
 
-### Length
-
+**Length**
 The size of this descriptor in bytes.
 
-### DescriptorType
+**DescriptorType**
+Specifies the descriptor type. Must be set to SUPERSPEED_USB_ENDPOINT_COMPANION.
 
-Specifies the descriptor type. Must be set to SUPERSPEED\_USB\_ENDPOINT\_COMPANION.
-
-### MaxBurst
-
+**MaxBurst**
 The maximum number of packets the endpoint can send or receive as part of a burst.
 
-### AsUchar
-
+**AsUchar**
 Specifies the length of the structures.
 
-### MaxStreams
-
+**MaxStreams**
 Specifies the maximum number of streams supported by the bulk endpoint.
 
-### Reserved1
-
+**Reserved1**
 Reserved. Do not use.
 
-### BytesPerInterval
-
+**BytesPerInterval**
 The total number of bytes this endpoint will transfer every service interval (SI).
 
 ## Requirements
