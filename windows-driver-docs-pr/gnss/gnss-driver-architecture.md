@@ -1,7 +1,7 @@
 ---
 title: Global Navigation Satellite System (GNSS) driver architecture
 description: Provides an overview of Global Navigation Satellite System (GNSS) UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
-ms.date: 10/27/2020
+ms.date: 08/24/2021
 ms.localizationpriority: medium
 ---
 
@@ -41,13 +41,13 @@ The components in the diagram are described here:
 
 The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in thr [GNSS driver reference](/windows-hardware/drivers/ddi/gnssdriver).
 
-Therefore, Windows devices with a GNSS device that integrate with the Sensor v1.0 class extension model that existed in Windows 7, Windows 8, and Windows 8.1 are expected to continue working in Windows 10 without the need of any changes. It is strongly recommended for these drivers (and any new drivers) to be published to Windows Update to improve the upgrade process for our users.
+Therefore, Windows devices with a GNSS device that integrate with the Sensor v1.0 class extension model that existed in Windows 7, Windows 8, and Windows 8.1 are expected to continue working in Windows 10 without the need of any changes. It is strongly recommended for these drivers (and any new drivers) to be published to Windows Update to improve the upgrade process for our users.
 
 There will also be two different sets of tests for GNSS devices in the Hardware Lab Kit (HLK) issued with Windows 10:
 
 - One new set of tests to certify drivers following the new model.
 
-- Another set of tests to certify the drivers following the old model. These will be the same set of tests that were available in the WHCK in Windows 8.1.
+- Another set of tests to certify the drivers following the old model. These will be the same set of tests that were available in the WHCK in Windows 8.1.
 
 A new gatherer component in the HLK identifies which of the two sets of tests needs to be run in a system, if any.
 
@@ -63,7 +63,7 @@ In the rare case of multiple GNSS devices detected in a system, the location pla
 
 The behavior of the location platform, based on these assumptions will be as follows:
 
-- Case of two coexistent legacy drivers: To avoid back compatibility issues the behavior will be the same as in Windows 8.1, in which both GNSS devices are used simultaneously and one of the responses is communicated up the stack to applications.
+- Case of two coexistent legacy drivers: To avoid back compatibility issues the behavior will be the same as in Windows 8.1, in which both GNSS devices are used simultaneously and one of the responses is communicated up the stack to applications.
 
 - Case of one legacy driver in the device and one new driver externally plugged: The externally plugged GNSS device is used.
 
@@ -413,14 +413,14 @@ The following acronyms are used in this section:
 The following table provides some scenarios for handling single shot and time-based tracking sessions simultaneously:
 
 | Case | SS active? | TBT active? | Case details | Acceptable interval of fixes | Comments |
-|:-|:-|:-|:-|:-|:-|
+|--|--|--|--|--|--|
 | 1 | X | X | SS session ongoing at the time of the TBT periodic session started with remaining timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received. |
 | 2 | X | X | SS session ongoing at the time of the TBT periodic session started with remaining timeout < interval | Interval remains the same as the SS timeout, until the SS session is satisfied.<br>Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li></ul> |
 | 3 | X | X | SS session started while there is an ongoing TBT periodic session started with timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li></ul> |
 | 4 | X | X | SS session started while there is an ongoing TBT periodic session started with timeout < interval | Interval changes to be the same as the SS timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li> |
 | 5 |  | X | TBT periodic session started with interval modified | Session with modem is updated to the new interval to be the same as TBT interval. If needed the modem session will be restarted. | SS session behavior:<br><ul><li>Not applicable</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li> |
 | 6 | X | X | SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li></ul> |
-| 7 | X | X | SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout < interval | Interval changes to be the same as the SS remaining timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>ession closed immediately after stop is received./li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li>  |
+| 7 | X | X | SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout < interval | Interval changes to be the same as the SS remaining timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>ession closed immediately after stop is received./li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li> |
 
 If there are simultaneously both a time-based and a distance-based tracking session, the GNSS engine accuracy tracking can be set to work with the smallest of the two. The following table also provide some guidelines for the case of disparate values for the accuracy required when there are simultaneous single shot and tracking sessions:
 
