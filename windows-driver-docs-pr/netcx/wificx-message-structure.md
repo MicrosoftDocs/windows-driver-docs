@@ -7,9 +7,11 @@ ms.localizationpriority: medium
 
 # WiFiCx message structure
 
-All WiFi command messages must start with a [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_message_header) structure. The command header is followed by zero or more type-length-value (TLV) structures.
+WiFiCx command messages are based off of the previous WDI model commands.
 
-The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WiFiCx Task OIDs], [WiFiCx Property OIDs], and [WiFiCx status indications].
+All Wi-Fi command messages must start with a [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_message_header) structure. The command header is followed by zero or more type-length-value (TLV) structures.
+
+The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WiFiCx Task OIDs](oid-wdi-task-change-operation-mode.md), [WiFiCx Property OIDs](oid-wdi-abort-task.md), and [WiFiCx status indications](ndis-status-wdi-indication-action-frame-received.md).
 
 ## TLVs
 
@@ -27,7 +29,7 @@ There are two types of TLV groupings: statically sized TLV lists, and multi-TLV 
 
 Statically-sized TLV lists contain several statically sized members. They are analogous to standard C-style arrays.
 
-In this example, [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](../network/wdi-tlv-unicast-algorithm-list.md) is defined as a list of WDI\_ALGO\_PAIRS.
+In this example, [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](wdi-tlv-unicast-algorithm-list.md) is defined as a list of WDI\_ALGO\_PAIRS.
 
 **Type**: WDI\_TLV\_UNICAST\_ALGORITHM\_LIST
 
@@ -41,7 +43,7 @@ This usage is specified in the TLV reference topics with array notation.
 
 When the size of a given object is not known ahead of time, multi-TLV groups are used. This usage pattern specifies that N different variably sized TLVs are expected within a given buffer. The number of entries (N) is not known ahead of time, and is inferred by the number of matching TLVs in the given buffer.
 
-In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_message_header), which defines the end of the TLV buffer. Note that [**WDI\_TLV\_BSS\_ENTRY**](../network/wdi-tlv-bss-entry.md) may be interspersed between other different TLV types in the parent buffer.
+In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_message_header), which defines the end of the TLV buffer. Note that [**WDI\_TLV\_BSS\_ENTRY**](wdi-tlv-bss-entry.md) may be interspersed between other different TLV types in the parent buffer.
 
 | Offset                         | Field                       | Type                |
 |--------------------------------|-----------------------------|---------------------|
@@ -52,4 +54,4 @@ In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](/windows-hard
 | TLV₂ + L₂ + sizeof(TLV Header) | TLV₃ (OTHER\_TLV\_TYPE)     | Some other TLV type |
 | TLV₃ + L₃ + sizeof(TLV Header) | TLV₄ (WDI\_TLV\_BSS\_ENTRY) | WDI\_BSS\_ENTRY     |
 
-For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](../network/wdi-tlv-connect-parameters.md).
+For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](wdi-tlv-connect-parameters.md).
