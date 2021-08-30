@@ -2,7 +2,7 @@
 title: Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR
 description: The WHEA_UNCORRECTABLE_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. 
 keywords: ["Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR", "WHEA_UNCORRECTABLE_ERROR"]
-ms.date: 08/09/2021
+ms.date: 08/30/2021
 topic_type:
 - apiref
 api_name:
@@ -10,12 +10,14 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.custom: contperf-fy22q1
 ---
 
 # Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR
 
+The WHEA\_UNCORRECTABLE\_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. This bug check uses the error data that is provided by the Windows Hardware Error Architecture (WHEA). 
 
-The WHEA\_UNCORRECTABLE\_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. This bug check uses the error data that is provided by the Windows Hardware Error Architecture (WHEA).
+An understanding of the [WHEA\_ERROR\_RECORD](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record) structure is normally required to identify a specific cause of the this error. See the remarks section of this topic for more information.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
