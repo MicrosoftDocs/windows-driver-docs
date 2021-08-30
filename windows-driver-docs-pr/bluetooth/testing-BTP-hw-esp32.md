@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Model 2433 ESP32
 description: Bluetooth Test Platform (BTP) supported hardware (ESP32).
-ms.date: 06/09/2021
+ms.date: 08/30/2021
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ## Overview
 
 The Model 2433 ESP32 is a custom ESP32 board with a 12-pin adapter fit for the Traduci that exercises Wi-Fi connections for BTP. The ESP32 is a microcontorller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IOT devices. More information can be found via the ESP32 page from [**Espressif**](https://www.espressif.com/en/products/socs/esp32).
-The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled) or [**Digilent**](https://store.digilentinc.com/pmod-esp32-wireless-communication-module).
+The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled) or [**Digilent**](https://digilent.com/shop/pmod-esp32-wireless-communication-module).
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
@@ -30,7 +30,7 @@ The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. M
 
 The ESP32 can be purchased via [MCCI](https://store.mcci.com/products/esp32-sled/)
 
-The ESP32 can also be purchased via [Digilent](https://store.digilentinc.com/pmod-esp32-wireless-communication-module/).
+The ESP32 can also be purchased via [Digilent](https://digilent.com/shop/pmod-esp32-wireless-communication-module/).
 
 USB Serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.sparkfun.com/products/12731) needed for first time Firmware Update.
 
