@@ -1,7 +1,7 @@
 ---
 title: V4 Printer Driver
 description: The v4 printer driver model was designed to address known issues with the version 3 driver model, and thus improve the quality of the experience that users have with their printers.
-ms.date: 08/10/2021
+ms.date: 08/30/2021
 ms.localizationpriority: high 
 ---
 
@@ -9,7 +9,8 @@ ms.localizationpriority: high
 
 The v4 printer driver model was designed to address known issues with the version 3 driver model, and thus improve the quality of the experience that users have with their printers.
 
-**Note**  To help to better explain some of the concepts in this section, a fictional company called Fabrikam is used.
+> [!NOTE]
+> To help to better explain some of the concepts in this section, a fictional company called Fabrikam is used.
 
 ## Introduction
 
