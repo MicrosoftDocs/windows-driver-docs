@@ -1,55 +1,46 @@
 ---
 title: Orientation
-description: Orientation
-ms.date: 11/28/2017
+description: Current page orientation and a list of page orientations supported by the device.
+ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
 # Orientation
 
+Schema Path: \\Printer.Layout.Orientation
 
-Schema Path:\\Printer.Layout.Orientation
+Node Type: Property
 
-Node Type:Property
-
-Description:The property associated with page orientation. The value entries that are children of this property are the current page orientation and a list of page orientations supported by the device.
+Description: The property associated with page orientation. The value entries that are children of this property are the current page orientation and a list of page orientations supported by the device.
 
 The Orientation property contains two child values: **CurrentValue** and **Supported**.
 
-### <span id="currentvalue"></span><span id="CURRENTVALUE"></span> CurrentValue
+## CurrentValue
 
-Schema Path:\\Printer.Layout.Orientation:CurrentValue
+Schema Path: \\Printer.Layout.Orientation:CurrentValue
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:The current (default) orientation in which pages will be printed.
+Description: The current (default) orientation in which pages will be printed.
 
 Must be one of the following values.
 
-Portrait
+- Portrait
 
-Landscape
+- Landscape
 
-ReversePortrait
+- ReversePortrait
 
-ReverseLandscape
+- ReverseLandscape
 
-### <span id="supported"></span><span id="SUPPORTED"></span> Supported
+## Supported
 
-Schema Path:\\Printer.Layout.Orientation:Supported
+Schema Path: \\Printer.Layout.Orientation:Supported
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:A comma-separated list of all values supported for Orientation.
-
- 
-
- 
-
-
-
-
+Description: A comma-separated list of all values supported for Orientation.
