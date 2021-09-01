@@ -62,6 +62,8 @@ In its [*EvtWifiDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wi
 
 If this succeeds, WiFiCx will send initialization commands for the device/adapter (for example, [SET\_ADAPTER\_CONFIGURATION](oid-wdi-set-adapter-configuration.md), [TASK\_SET\_RADIO\_STATE](oid-wdi-task-set-radio-state.md), etc.).
 
+For a code example of *EvtWifiDeviceCreateAdapter*, see [Event callback for adapter creation](#event-callback-for-adapter-creation).
+
 ![Flow chart showing WiFiCx client driver station adapter creation.](images/wificx_station.png)
 
 ## Handling WiFiCx command messages
@@ -102,10 +104,15 @@ wfdCapabilities.ConcurrentClientCount = 1;
 WifiDeviceSetWiFiDirectCapabilities(Device, &wfdCapabilities);
 ```
 
-### Wi-Fi Direct Event Callback For "WfdDevice"
+### Wi-Fi Direct event callback for "WfdDevice"
 
-For Wi-Fi Direct, the "WfdDevice" is a control object with no data path capabilities. Therefore, WiFiCx has a new WDFObject named **WIFIDIRECTDEVICE**. It is created using **WifiDirectDeviceCreate** and initialized using **WifiDirectDeviceInitialize**. The port id (used in WDI commands) can be determined using API **WifiDirectDeviceGetPortId**.
+For Wi-Fi Direct, the "WfdDevice" is a control object with no data path capabilities. Therefore, WiFiCx has a new WDFObject named WIFIDIRECTDEVICE. In their [*EvtWifiDeviceCreateWifiDirectDevice*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_wifidirectdevice) callback function, client drivers:
 
+- Call [**WifiDirectDeviceCreate**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidirectdevicecreate) to create the WIFIDIRECTDEVICE object.
+- Call [**WifiDirectDeviceInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidirectdeviceinitialize) to initialize the object. 
+- Call [**WifiDirectDeviceGetPortId**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidirectdevicegetportid) to determine the port id (which is used in command messages).
+
+This example shows how to create and initialize a WIFIDIRECTDEVICE object.
 ```C++
 NTSTATUS
 EvtWifiDeviceCreateWifiDirectDevice(
@@ -146,10 +153,15 @@ EvtWifiDeviceCreateWifiDirectDevice(
     return ntStatus;
 }
 ```
-### Event Callback For Create Adapter
 
-The station adapter and WfdRole adapter are created using the same event callback. The adapter type can be determined using **WifiAdapterGetType** (or **WifiAdapterInitGetType** if type needs to be queried from the NETADAPTER_INIT object by the client driver before the adapter is created). The port id (used in WDI commands) can be determined using API **WifiAdapterGetPortId**.
-.
+### Event callback for adapter creation
+
+Client drivers create the station adapter and WfdRole adapter using the same event callback: [*EvtWifiDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_adapter). 
+- Call [**WifiAdapterGetType**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadaptergettype) to determine the adapter type. 
+- If the driver needs to query the adapter type from the NETADAPTER_INIT object before the adapter is created, call [**WifiAdapterInitGetType**](nf-wificx-wifiadapterinitgettype.md). 
+- Call [**WifiAdapterGetPortId**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadaptergetportid) determine the port ID (used in message commands). 
+
+
 ```C++
 NTSTATUS
 EvtWifiDeviceCreateAdapter(
@@ -207,9 +219,10 @@ EvtWifiDeviceCreateAdapter(
     return ntStatus;
 }
 ```
-### Wi-Fi ExemptionAction support in TxQueue
+### Wi-Fi ExemptionAction support in Tx queues
 
-ExemptionAction is added as a NetAdapter packet extension and it indicates whether the packet is expected to be exempt from any cipher operations performed by the client. Please read documentation on [usExemptionActionType](/windows-hardware/drivers/ddi/windot11/ns-windot11-dot11_extsta_send_context) for details.
+ExemptionAction is a new NetAdapter packet extension that indicates whether the packet is expected to be exempt from any cipher operations performed by the client. Please read the documentation on [usExemptionActionType](/windows-hardware/drivers/ddi/windot11/ns-windot11-dot11_extsta_send_context) for details.
+
 ```C++
 #include <net/wifi/exemptionaction.h>
 
@@ -378,7 +391,8 @@ BuildTcbForPacket(
 ```
 ### Wi-Fi Direct INI/INF file change
 
-vWifi functionalities has been replaced by the NetAdapter, if porting from WDI based driver, the INI/INF should remove the vWIFI related information. 
+vWifi functionalities have been replaced by the NetAdapter. If you are porting from WDI based driver, the INI/INF should remove the vWIFI related information. 
+
 ```INF
 Characteristics = 0x84
 BusType         = 5
@@ -401,39 +415,39 @@ KmdfService = %ServiceName%, wdf
 
 [wdf]
 KmdfLibraryVersion      = $KMDFVERSION$
-
 ```
 
-## NetAdapter Data Path Change
+## NetAdapter data path change
 
-### Data Buffer Pool for receiving network data
+### Data buffer pool for receiving network data
 
-The client drive normally allocates common buffers to store the packets received the NIC. The NetAdapterCx has a new feature that provides the client driver a pool of common buffers that are pre-allocated by the system on behalf of the client driver. 
+The client driver normally allocates common buffers to store the packets received by the NIC. NetAdapterCx has a new feature that provides the client driver with a pool of common buffers that are pre-allocated by the system on behalf of the driver. 
 
 
-To opt-in, set **AllocationMode** and **AttachmentMode** fields of the [NET_ADAPTER_RX_CAPABILITIES](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_rx_capabilities) as the following:
+To opt-in, set the **AllocationMode** and **AttachmentMode** fields of the [NET_ADAPTER_RX_CAPABILITIES](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_rx_capabilities) as follows:
 
 ```C++
 rxCapabilities.AllocationMode = NetRxFragmentBufferAllocationModeSystem;
 rxCapabilities.AttachmentMode = NetRxFragmentBufferAttachmentModeDriver;
 ```
 
-Once the above configuration is set, later the [NET_RING_COLLECTION](/windows-hardware/drivers/ddi/ringcollection/ns-ringcollection-_net_ring_collection) structure obtained through the [NetRxQueueGetRingCollection](/windows-hardware/drivers/ddi/netrxqueue/nf-netrxqueue-netrxqueuegetringcollection) would consist of three [NET_RING](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring) structures, a packet ring, a fragment ring and a data buffer ring. The 3rd ring, data buffer ring, is where those pre-allocated data buffer stored.
+Once the above configuration is set, the [NET_RING_COLLECTION](/windows-hardware/drivers/ddi/ringcollection/ns-ringcollection-_net_ring_collection) structure obtained through [NetRxQueueGetRingCollection](/windows-hardware/drivers/ddi/netrxqueue/nf-netrxqueue-netrxqueuegetringcollection) will consist of three [NET_RING](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring) structures: a packet ring, a fragment ring, and a data buffer ring. The pre-allocated data buffers are stored in the data buffer ring.
 
 > [!IMPORTANT]
-> Just like any other [NET_RING](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring), the data buffer ring must be operated in a sequential manner too, i.e. use of data buffers stored in the data buffer ring must be in sequence order. It is not allowed to skip unused data buffer and leave gaps 
+> Just like any other [NET_RING](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring), the data buffer ring must be operated sequentially. The use of data buffers stored in the data buffer ring must be in sequencial order. Skipping unused data buffers and leaving gaps is not permitted. 
 
-A driver that leverages the system allocated data buffer pool, typically implements its Rx [EvtPacketQueueAdvance](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback in following steps:
-1. Obtains an unused data buffer from the data buffer ring
-2. Programs that data buffer to its hardware for receive
-3. Once new network data has been received, the client driver links the packet and fragment descriptor together with that data buffer
-4. Return the packet descriptor, the fragment descriptors, and the data buffer to OS.
+A driver that leverages the system-allocated data buffer pool typically implements its Rx [*EvtPacketQueueAdvance*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback as follows:
 
-#### Obtains an unused data buffer from the data buffer ring
+1. Obtains an unused data buffer from the data buffer ring.
+2. Programs that data buffer to its hardware for receive.
+3. Once new network data has been received, the driver links the packet and fragment descriptor together with that data buffer.
+4. Returns the packet descriptor, the fragment descriptors, and the data buffer to the OS.
 
-Similar to other rings, every element in the data buffer ring from **BeginIndex** to **EndIndex - 1** is one available data buffer for the client driver to uses. The client driver owns all of them and it decides how many of data buffers it wants to use. The only constraint is that the client driver must use the data buffers in sequential order. **NextIndex** is optional for the driver to use as a way to remember which data buffers have been already used by the client driver.
+#### Obtaining an unused data buffer from the data buffer ring
 
-We provide a convenience helper API **NetDataBufferFetch** to perform the "fetch" operation
+Similar to other rings, every element in the data buffer ring from **BeginIndex** to **EndIndex - 1** is one available data buffer for the client driver to use. The client driver owns all of them and decides how many of the data buffers it wants to use. The only constraint is that the client driver must use the data buffers in sequential order. Drivers may optionally use **NextIndex** as a way to remember which data buffers it has already used.
+
+We provide a convenience helper **NetDataBufferFetch** to perform the "fetch" operation.
 
 ```C++
 
@@ -469,9 +483,9 @@ NetDataBufferFetch(
 }
 ```
 
-#### Programs that data buffer to its hardware for receive
+#### Programing the data buffer to its hardware for receive
 
-The data buffer object fetched from data buffer ring is an opaque handle, to get the actual LogicalAddress and VirtualAddress for that data buffer, call corresponding APIs. For example, 
+The data buffer object that the driver fetches from the data buffer ring is an opaque handle. To get the actual LogicalAddress and VirtualAddress for that data buffer, call the corresponding APIs. For example: 
 
 ```C++
 ...
@@ -484,11 +498,11 @@ while (NetDataBufferFetch(br, 1, &dataBufferHandle))
     ...
 }
 ```
-#### Links the packet and fragment descriptor together with the data buffer
+#### Linking the packet and fragment descriptor together with the data buffer
 
-Once the hardware indicates the receive is done, the client driver needs to fill-in NET_PACKET and NET_FRAGMENT structures, so that it can describe to the OS where is the network data, in which data buffer it stores, what's the starting offset and length, and other meta data. See [Receiving network data with net rings](receiving-network-data-with-net-rings.md) for full detail. 
+Once the hardware indicates that the receive is done, the client driver needs to fill in NET_PACKET and NET_FRAGMENT structures so that it can describe to the OS where the network data is, in which data buffer it stores, what's the starting offset and length, and other meta data. See [Receiving network data with net rings](receiving-network-data-with-net-rings.md) for full details. 
 
-Note, the client driver must use NET_FRAGMENT_DATA_BUFFER fragment extension to associate the fragment and the data buffer handle
+Note that the client driver must use the NET_FRAGMENT_DATA_BUFFER fragment extension to associate the fragment and the data buffer handle.
 
 ```C++
 NET_FRAGMENT_DATA_BUFFER* dataBuffer = NetExtensionGetFragmentDataBuffer(
@@ -497,21 +511,22 @@ NET_FRAGMENT_DATA_BUFFER* dataBuffer = NetExtensionGetFragmentDataBuffer(
 dataBuffer->Handle = dataBufferHandle;
 ```
 
-#### Return the packet descriptor, the fragment descriptors, and the data buffer to OS
+#### Returning the packet descriptor, the fragment descriptors, and the data buffer to the OS
 
-The formed packets and fragments should be returned to the OS as described in [Receiving network data with net rings](receiving-network-data-with-net-rings.md). 
-In addition, the data buffer described by the fragment descriptor should be returned to the OS by the client driver too, by incrementing **EndIndex** of the data buffer ring. Note, the data buffer must only be returned in-order.
+The client driver should return formed packets and fragments to the OS as described in [Receiving network data with net rings](receiving-network-data-with-net-rings.md).
 
-We provide a convenience helper API **NetDataBufferReturn** to perform the "return" operation.
+In addition, the driver should return the data buffer described by the fragment descriptor to the OS by incrementing the **EndIndex** of the data buffer ring. Note that the data buffer must be returned in order.
+
+We provide the convenience helper function **NetDataBufferReturn** to perform the "return" operation.
 
 If a data buffer is used to store a single received network packet, the data buffer is returned whenever that packet is returned to the OS.
 
-If a data buffer is used to store multiple received network packets, **keep the ownership of the data buffer until all the packets have been returned to OS. Only then the client driver returns the data buffer to the OS .**  
+If a data buffer is used to store multiple received network packets, **keep the ownership of the data buffer until all the packets have been returned to OS. Only then does the client driver return the data buffer to the OS.**  
 
 ### Setting up multiple Tx queues
 
-By default, NetAdapter will create one Tx queue for all packets intended for a NetAdapter. 
-If a driver needs to support multiple Tx queues for QOS or needs to setup different queues for different peers, it can do so by setting up the appropriate DEMUX properties. If demux properties are added, Tx queue count is a product of maximum number of peers, maximum number of tids, + 1 (for broadcast/multicast).
+By default, NetAdapterCx will create one Tx queue for all packets intended for a NetAdapter. 
+If a driver needs to support multiple Tx queues for QOS or needs to set up different queues for different peers, it can do so by setting up the appropriate DEMUX properties. If demux properties are added, the Tx queue count is the product of the maximum number of peers and maximum number of tids, plus **1** (for broadcast/multicast).
 
 #### Multiple queues for QOS
 Before using a NETADAPTER_INIT * object to create a NETADAPTER, the client driver should add WMMINFO demux to it:
@@ -523,9 +538,9 @@ WIFI_ADAPTER_TX_WMMINFO_DEMUX_INIT(&wmmInfoDemux);
 WifiAdapterInitAddTxDemux(adapterInit, &wmmInfoDemux);
 ```
 
-This will cause the translator to create up to 8 Tx queues on demand, depending on the value in the NBL WlanTagHeader::WMMInfo value.
+This will cause the translator to create up to 8 Tx queues on demand, depending on the NBL WlanTagHeader::WMMInfo value.
 
-From **EvtPacketQueueStart** the client driver should query the priority the framework will use for this queue:
+From [*EvtPacketQueueStart*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_start) the client driver should query the priority that the framework will use for this queue:
 
 ```C++
 auto const priority = WifiTxQueueGetDemuxWmmInfo(queue);
@@ -541,7 +556,7 @@ WIFI_ADAPTER_TX_DEMUX peerInfoDemux;
 WIFI_ADAPTER_TX_PEER_ADDRESS_DEMUX_INIT(&peerInfoDemux, maxNumOfPeers);
 WifiAdapterInitAddTxDemux(adapterInit, &peerInfoDemux);
 ```
-From **EvtPacketQueueStart** the client driver should query the peer address the framework will use for this queue:
+From *EvtPacketQueueStart* the client driver should query the peer address the framework will use for this queue:
 
 ```C++
 auto const peerAddress = WifiTxQueueGetDemuxPeerAddress(queue);
