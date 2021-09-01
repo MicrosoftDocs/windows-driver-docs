@@ -2,12 +2,12 @@
 title: Driver Release Cadence
 description: Policy around when drivers are released
 ms.topic: article
-ms.date: 12/14/2020
+ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
 # Driver Shiproom Release Cadence Windows
-Last Updated: December 14, 2020
+Last Updated: August 31, 2021
 
 This page provides information on the operation schedule for driver shiproom. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
 
@@ -37,14 +37,7 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 
 > A. If there are known issues for feature update and driver compatibility, partners can request feature update offer block mitigation while a compatible driver update is being validated and posted to WU.
 
-3. **Weekends**: Driver needing “Microsoft Approval” will not be released from Friday until Sunday 5PM Pacific Time, unless the next day is in a deferral period.
-
-|Friday & Saturday |	Sunday |
-|--------|----|
-|No release for “Microsoft Approval” drivers | Release after 
-5PM Pacific time |
-
-4. **Certain US Holidays**: Drivers needing “Microsoft Approval” will not be released on certain US Holidays
+3. **Certain US Holidays**: Drivers needing “Microsoft Approval” will not be released on certain US Holidays
 
 |US Holidays | 2020 |	2021 |
 |----|----|----|
@@ -59,7 +52,7 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 |Christmas Eve | Tuesday Dec 24 | Thursday Dec 23 |
 |Christmas Day | Wednesday Dec 25 | Friday December 24 |
 
-5. **US Winter Holiday timeframe release moratorium**: During the US Winter Holiday season, for approximately two weeks driver shiproom will not be releasing ANY drivers, for calendar year 2020 this is December 17, 2020 through January 1, 2021 and for CY2021 this will be December 16, 2021 through January 1, 2022. 
+4. **US Winter Holiday timeframe release moratorium**: During the US Winter Holiday season, for approximately two weeks driver shiproom will not be releasing ANY drivers, for calendar year 2020 this is December 17, 2020 through January 1, 2021 and for CY2021 this will be December 16, 2021 through January 1, 2022. 
 
 See the [2021 driver deferral periods](#calendar) calendars for additional dates. 
  
@@ -75,4 +68,4 @@ See the [2021 driver deferral periods](#calendar) calendars for additional dates
 2. <a id="calendar"></a>What is the latest deferral calendar?
 ** This calendar is subject to changes based on OS release timelines.
  
-![2021 Driver Release Calendar showing excluded dates as described above.](images/2021driverReleaseCalendar.png)
+![Sept - Dec 2021 Driver Release Calendar showing excluded dates as described above.](images/2021_calendar_update.png)
