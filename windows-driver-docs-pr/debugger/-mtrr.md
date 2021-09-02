@@ -1,5 +1,5 @@
 ---
-title: mtrr
+title: mtrr (WinDbg)
 description: The mtrr extension displays the contents of the MTRR register.
 keywords: ["MTRR register", "registers, MTRR register", "mtrr Windows Debugging"]
 ms.date: 05/23/2017

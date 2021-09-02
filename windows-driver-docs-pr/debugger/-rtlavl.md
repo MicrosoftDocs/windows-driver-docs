@@ -1,5 +1,5 @@
 ---
-title: rtlavl
+title: rtlavl (WinDbg)
 description: The rtlavl extension displays the entries of an RTL_AVL_TABLE structure.
 keywords: ["avl tables", "rtlavl Windows Debugging"]
 ms.date: 05/23/2017

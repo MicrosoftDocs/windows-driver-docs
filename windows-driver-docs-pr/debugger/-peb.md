@@ -1,5 +1,5 @@
 ---
-title: peb
+title: peb (WinDbg)
 description: The peb extension displays a formatted view of the information in the process environment block (PEB).
 keywords: ["PEB (process environment block)", "process, process environment block (PEB)", "peb Windows Debugging"]
 ms.date: 05/23/2017

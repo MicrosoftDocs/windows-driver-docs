@@ -1,5 +1,5 @@
 ---
-title: cppexr
+title: cppexr (WinDbg)
 description: The cppexr extension displays the contents of a C++ exception record.
 keywords: ["exception records", "cppexr Windows Debugging"]
 ms.date: 05/23/2017

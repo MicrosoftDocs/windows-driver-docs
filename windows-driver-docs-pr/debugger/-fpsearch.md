@@ -1,5 +1,5 @@
 ---
-title: fpsearch
+title: fpsearch (WinDbg)
 description: The fpsearch extension searches the freed special pool for a specified address.
 keywords: ["special pool", "fpsearch Windows Debugging"]
 ms.date: 05/23/2017

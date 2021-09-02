@@ -1,5 +1,5 @@
 ---
-title: ppmstate
+title: ppmstate (WinDbg)
 description: The ppmstate command
 keywords: ["ppmstate Windows Debugging"]
 ms.date: 05/23/2017

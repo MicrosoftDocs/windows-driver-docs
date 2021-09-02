@@ -1,5 +1,5 @@
 ---
-title: address
+title: address (WinDbg)
 description: The address extension displays information about the memory that the target process or target computer uses.
 keywords: ["address Windows Debugging"]
 ms.date: 09/17/2018

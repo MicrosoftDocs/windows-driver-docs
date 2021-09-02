@@ -1,5 +1,5 @@
 ---
-title: exr
+title: exr (WinDbg)
 description: exr
 keywords: ["exr extension (obsolete)"]
 ms.date: 05/23/2017

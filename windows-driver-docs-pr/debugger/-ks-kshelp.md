@@ -1,5 +1,5 @@
 ---
-title: ks.kshelp
+title: ks.kshelp (WinDbg)
 description: The ks.kshelp extension displays a help text showing original KS 1.0-specific Ks.dll extension commands.
 keywords: ["ks.kshelp Windows Debugging"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: cchelp
+title: cchelp (WinDbg)
 description: The cchelp extension displays some brief Help text in the Debugger command window for some of the cache management extensions.
 keywords: ["cache manager", "cchelp Windows Debugging"]
 ms.date: 05/23/2017

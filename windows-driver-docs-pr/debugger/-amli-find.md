@@ -1,5 +1,5 @@
 ---
-title: amli find
+title: amli find (WinDbg)
 description: The amli find extension finds an ACPI namespace object.
 keywords: ["amli find Windows Debugging"]
 ms.date: 09/17/2018

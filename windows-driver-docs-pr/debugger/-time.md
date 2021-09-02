@@ -1,5 +1,5 @@
 ---
-title: time
+title: time (WinDbg)
 description: time
 keywords: ["time extension (obsolete)"]
 ms.date: 06/11/2021

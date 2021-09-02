@@ -1,5 +1,5 @@
 ---
-title: ks.ohdr
+title: ks.ohdr (WinDbg)
 description: The ks.ohdr extension displays details of a kernel streaming object header.
 keywords: ["ks.ohdr Windows Debugging"]
 ms.date: 05/23/2017

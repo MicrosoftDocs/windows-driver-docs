@@ -1,5 +1,5 @@
 ---
-title: gs
+title: gs (WinDbg)
 description: The gs extension analyzes a /GS stack overflow.
 keywords: ["gs Windows Debugging"]
 ms.date: 05/23/2017

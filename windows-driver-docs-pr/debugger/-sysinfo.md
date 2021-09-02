@@ -1,5 +1,5 @@
 ---
-title: sysinfo
+title: sysinfo (WinDbg)
 description: The sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
 keywords: ["sysinfo Windows Debugging"]
 ms.date: 05/23/2017

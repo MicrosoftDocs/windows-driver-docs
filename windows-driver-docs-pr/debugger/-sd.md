@@ -1,5 +1,5 @@
 ---
-title: sd
+title: sd (WinDbg)
 description: The sd extension displays the security descriptor at the specified address.
 keywords: ["sd Windows Debugging"]
 ms.date: 05/23/2017

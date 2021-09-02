@@ -1,5 +1,5 @@
 ---
-title: gflag
+title: gflag (WinDbg)
 description: The gflag extension sets or displays the global flags.
 keywords: ["gflag Windows Debugging"]
 ms.date: 05/23/2017

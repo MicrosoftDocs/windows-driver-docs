@@ -1,5 +1,5 @@
 ---
-title: chkimg
+title: chkimg (WinDbg)
 description: The chkimg extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
 keywords: ["executable files and paths, corruption", "chkimg Windows Debugging"]
 ms.date: 05/07/2021
