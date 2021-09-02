@@ -1,5 +1,5 @@
 ---
-title: ubc
+title: ubc (WinDbg)
 description: The ubc extension clears a user-space breakpoint.
 keywords: ["ubc Windows Debugging"]
 ms.date: 05/23/2017

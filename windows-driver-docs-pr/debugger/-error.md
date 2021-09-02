@@ -1,5 +1,5 @@
 ---
-title: error
+title: error (WinDbg)
 description: The error extension decodes and displays information about an error value.
 keywords: ["error codes", "Win32 error codes", "WinSock error codes", "error Windows Debugging"]
 ms.date: 05/23/2017

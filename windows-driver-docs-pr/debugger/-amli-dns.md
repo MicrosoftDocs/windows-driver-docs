@@ -1,5 +1,5 @@
 ---
-title: amli dns
+title: amli dns (WinDbg)
 description: The amli dns extension displays an ACPI namespace object.
 keywords: ["amli dns Windows Debugging"]
 ms.date: 09/17/2018

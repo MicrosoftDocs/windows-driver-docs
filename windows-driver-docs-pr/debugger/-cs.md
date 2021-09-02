@@ -1,5 +1,5 @@
 ---
-title: cs
+title: cs (WinDbg)
 description: The cs extension displays one or more critical sections or the whole critical section tree.
 keywords: ["cs Windows Debugging"]
 ms.date: 11/15/2018

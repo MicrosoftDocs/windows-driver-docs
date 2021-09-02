@@ -1,5 +1,5 @@
 ---
-title: chksym
+title: chksym (WinDbg)
 description: The chksym extension tests the validity of a module against a symbol file.
 keywords: ["chksym Windows Debugging"]
 ms.date: 05/23/2017

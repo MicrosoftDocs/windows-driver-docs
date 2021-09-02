@@ -1,5 +1,5 @@
 ---
-title: drvobj
+title: drvobj (WinDbg)
 description: The drvobj extension displays detailed information about a DRIVER_OBJECT.
 keywords: ["drvobj Windows Debugging"]
 ms.date: 11/16/2018

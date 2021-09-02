@@ -1,5 +1,5 @@
 ---
-title: owner
+title: owner (WinDbg)
 description: The owner extension displays the owner of a module or function.
 keywords: ["owner Windows Debugging"]
 ms.date: 05/23/2017

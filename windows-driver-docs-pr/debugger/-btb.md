@@ -1,5 +1,5 @@
 ---
-title: btb
+title: btb (WinDbg)
 description: The btb extension displays the Itanium-based processor, branch traces buffer (BTB) configuration and trace registers for the current processor.
 keywords: ["branch tree buffer", "btb Windows Debugging"]
 ms.date: 12/17/2019

@@ -1,5 +1,5 @@
 ---
-title: memlist
+title: memlist (WinDbg)
 description: The memlist extension scans physical memory lists from the page frame number (PFN) database in order to check them for consistency.
 keywords: ["PFN database", "memlist Windows Debugging"]
 ms.date: 05/23/2017

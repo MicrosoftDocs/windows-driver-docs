@@ -1,5 +1,5 @@
 ---
-title: token
+title: token (WinDbg)
 description: The token extension displays a formatted view of a security token object.
 keywords: ["token", "security token", "token Windows Debugging"]
 ms.date: 05/23/2017

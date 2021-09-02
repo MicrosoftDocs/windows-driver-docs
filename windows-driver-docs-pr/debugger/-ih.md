@@ -1,5 +1,5 @@
 ---
-title: ih
+title: ih (WinDbg)
 description: The ih extension displays the interrupt history record for the specified processor.
 keywords: ["interrupt history record", "ih Windows Debugging"]
 ms.date: 05/23/2017

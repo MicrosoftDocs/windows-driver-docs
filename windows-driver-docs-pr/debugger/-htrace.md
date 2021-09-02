@@ -1,5 +1,5 @@
 ---
-title: htrace
+title: htrace (WinDbg)
 description: The htrace extension displays stack trace information for one or more handles.
 keywords: ["handle, htrace extension", "htrace Windows Debugging"]
 ms.date: 05/23/2017

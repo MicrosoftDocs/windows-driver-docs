@@ -1,5 +1,5 @@
 ---
-title: stl
+title: stl (WinDbg)
 description: The stl extension displays some of the known Standard Template Library (STL) templates.
 keywords: ["stl Windows Debugging"]
 ms.date: 05/23/2017

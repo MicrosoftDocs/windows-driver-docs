@@ -1,5 +1,5 @@
 ---
-title: ks.dump
+title: ks.dump (WinDbg)
 description: The ks.dump extension displays the specified object.
 keywords: ["ks.dump Windows Debugging"]
 ms.date: 05/23/2017

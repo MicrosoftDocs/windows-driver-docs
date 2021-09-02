@@ -1,5 +1,5 @@
 ---
-title: pcr
+title: pcr (WinDbg)
 description: The pcr extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
 ms.date: 10/07/2019

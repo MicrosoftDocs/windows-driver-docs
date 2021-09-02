@@ -1,5 +1,5 @@
 ---
-title: session
+title: session (WinDbg)
 description: The session extension controls the session context. It can also display a list of all user sessions.
 keywords: ["session Windows Debugging"]
 ms.date: 05/23/2017

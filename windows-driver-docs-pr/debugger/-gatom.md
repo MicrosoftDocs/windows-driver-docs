@@ -1,5 +1,5 @@
 ---
-title: gatom
+title: gatom (WinDbg)
 description: The gatom extension displays the global atom table.
 keywords: ["gatom Windows Debugging"]
 ms.date: 05/23/2017

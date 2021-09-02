@@ -1,5 +1,5 @@
 ---
-title: ate
+title: ate (WinDbg)
 description: The ate extension displays the alternate page table entry (ATE) for the specified address.
 keywords: ["ate Windows Debugging"]
 ms.date: 09/17/2018

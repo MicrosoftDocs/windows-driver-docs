@@ -1,5 +1,5 @@
 ---
-title: ube
+title: ube (WinDbg)
 description: The ube extension re-enables a user-space breakpoint.
 keywords: ["ube Windows Debugging"]
 ms.date: 05/23/2017

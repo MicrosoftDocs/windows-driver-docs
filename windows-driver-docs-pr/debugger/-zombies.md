@@ -1,5 +1,5 @@
 ---
-title: zombies
+title: zombies (WinDbg)
 description: The zombies extension displays all dead ("zombie") processes or threads.
 keywords: ["zombies Windows Debugging"]
 ms.date: 05/23/2017

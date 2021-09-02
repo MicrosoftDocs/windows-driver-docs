@@ -1,5 +1,5 @@
 ---
-title: rellist
+title: rellist (WinDbg)
 description: The rellist extension displays a Plug and Play relation list.
 keywords: ["rellist Windows Debugging"]
 ms.date: 05/23/2017

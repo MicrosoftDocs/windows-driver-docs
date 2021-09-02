@@ -1,5 +1,5 @@
 ---
-title: poolval
+title: poolval (WinDbg)
 description: The poolval extension analyzes the headers for a pool page and diagnoses any possible corruption. 
 keywords: ["poolval Windows Debugging"]
 ms.date: 05/23/2017

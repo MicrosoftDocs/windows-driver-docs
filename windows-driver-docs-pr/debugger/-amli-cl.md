@@ -1,5 +1,5 @@
 ---
-title: amli cl
+title: amli cl (WinDbg)
 description: The amli cl extension clears the AML interpreter's event log.
 keywords: ["amli cl Windows Debugging"]
 ms.date: 09/17/2018
