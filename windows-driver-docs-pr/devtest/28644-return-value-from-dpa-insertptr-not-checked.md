@@ -1,5 +1,5 @@
 ---
-title: C28644
+title: C28644 warning
 description: Warning C28644 Return value from DPA_InsertPtr not checked.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

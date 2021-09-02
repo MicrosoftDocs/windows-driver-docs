@@ -1,5 +1,5 @@
 ---
-title: C28719
+title: C28719 warning
 description: Warning C28719 Banned API Usage.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

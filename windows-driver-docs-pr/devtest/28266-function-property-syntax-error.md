@@ -1,5 +1,5 @@
 ---
-title: C28266
+title: C28266 warning
 description: A syntax error in the annotations was found for the property in the function.
 keywords:
 - warnings listed WDK PREfast for Drivers
