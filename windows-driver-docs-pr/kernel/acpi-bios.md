@@ -1,5 +1,5 @@
 ---
-title: ACPI BIOS
+title: Advanced Configuration and Power Interface (ACPI) BIOS
 description: ACPI BIOS
 keywords: ["ACPI BIOS WDK power management"]
 ms.date: 06/16/2017

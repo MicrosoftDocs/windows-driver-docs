@@ -1,5 +1,5 @@
 ---
-title: Using KTM
+title: Using Kernel Transaction Manager (KTM)
 description: Using KTM
 keywords: ["Kernel Transaction Manager WDK , creating transaction processing systems", "KTM WDK , creating transaction processing systems", "transaction processing systems WDK KTM , creating transaction processing systems", "TPS WDK KTM , creating TPSs"]
 ms.date: 06/16/2017

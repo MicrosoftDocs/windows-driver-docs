@@ -1,5 +1,5 @@
 ---
-title: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
+title: Deprecation of Software Publisher Certificates, Commercial Release and Test Certificates
 description: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
 keywords:
 - Trusted Root Certification Authorities certificate store WDK
