@@ -1,5 +1,5 @@
 ---
-title: C28150
+title: C28150 warning
 description: Warning C28150 The function causes the IRQ Level to be set above the maximum acceptable for the function being analyzed.
 keywords:
 - warnings listed WDK PREfast for Drivers

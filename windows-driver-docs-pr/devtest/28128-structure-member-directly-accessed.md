@@ -1,5 +1,5 @@
 ---
-title: C28128
+title: C28128 warning
 description: Warning C28128 An access to a field has been made directly. It should be made by a routine.
 keywords:
 - warnings listed WDK PREfast for Drivers

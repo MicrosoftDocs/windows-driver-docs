@@ -1,5 +1,5 @@
 ---
-title: C28637
+title: C28637 warning
 description: Warning C28637 Calling the function in a global initializer is unsafe.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
