@@ -1,5 +1,5 @@
 ---
-title: C28151
+title: C28151 warning
 description: Warning C28151 The value is not a legal value for an IRQL.
 keywords:
 - warnings listed WDK PREfast for Drivers

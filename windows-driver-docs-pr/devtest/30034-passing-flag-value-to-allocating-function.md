@@ -1,5 +1,5 @@
 ---
-title: C30034
+title: C30034 warning
 description: Warning C30034 Passing a flag value to an allocating function that could result in executable memory being allocated.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

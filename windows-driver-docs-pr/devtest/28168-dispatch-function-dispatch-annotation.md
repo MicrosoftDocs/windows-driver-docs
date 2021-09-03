@@ -1,5 +1,5 @@
 ---
-title: C28168
+title: C28168 warning
 description: Warning C28168 The dispatch function does not have a _Dispatch_type_ annotation matching this dispatch table entry.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

@@ -1,5 +1,5 @@
 ---
-title: C28638
+title: C28638 warning
 description: Warning C28638 function delayload stub is missing a matching declaration.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

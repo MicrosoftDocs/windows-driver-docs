@@ -1,5 +1,5 @@
 ---
-title: C28121
+title: C28121 warning
 description: Warning C28121 The function is not permitted to be called at the current IRQ level. The current level is too high.
 keywords:
 - warnings listed WDK PREfast for Drivers
