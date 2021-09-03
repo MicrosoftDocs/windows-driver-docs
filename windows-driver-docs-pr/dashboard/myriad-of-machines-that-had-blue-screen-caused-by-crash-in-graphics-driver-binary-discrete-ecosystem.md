@@ -2,7 +2,7 @@
 title: Myriad of machines that had a stop error caused by a graphics driver crash (ecosystem)
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a bluescreen caused by a crash in the graphics driver binary (Ecosystem)
 ms.topic: article
-ms.date: 09/02/2021
+ms.date: 09/03/2021
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-During a user's session, crash in graphics driver binary may cause a stop error resulting in machine restart which can interrupt user's workflow. This measure evaluates myriad (out of 10,000) of machines with discrete GPUs having the driver, encountering a stop error due to a crash in graphics driver binary.
+During a user's session, a crash in the graphics driver binary may cause a stop error resulting in a machine restart which can interrupt user's workflow. This measure evaluates myriad (out of 10,000) of machines with discrete GPUs having the driver, encountering a stop error due to a crash in graphics driver binary.
 
 This is the ecosystem counterpart of [Myriad of machines that had a stop error caused by a graphics driver crash](./myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard.md) measure.
 
