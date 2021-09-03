@@ -1,12 +1,12 @@
 ---
-title: Reliability for crashes in Windows components is less than or equal to the baseline goal
+title: Number of user mode crashes in Windows components
 description: Learn about the measure that monitors how often Windows components are crashing in the display driver, related to the number of machines using the driver.
 ms.topic: article
-ms.date: 09/02/2021
+ms.date: 09/03/2021
 ms.localizationpriority: medium
 ---
 
-# Reliability for crashes in Windows components is less than or equal to the baseline goal
+# Number of user mode crashes in Windows components
 
 ## Description
 

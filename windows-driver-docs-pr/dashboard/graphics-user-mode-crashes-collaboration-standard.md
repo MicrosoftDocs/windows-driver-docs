@@ -1,12 +1,12 @@
 ---
-title: Crashes in communication and collaboration apps normalized by usage <= baseline goal
+title: Crashes in communication and collaboration apps
 description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in communication and collaboration applications, caused by the graphics drivers, over total runtime in years
 ms.topic: article
-ms.date: 09/02/2021
+ms.date: 09/03/2021
 ms.localizationpriority: medium
 ---
 
-# Crashes in communication and collaboration apps normalized by usage <= baseline goal
+# Crashes in communication and collaboration apps
 
 ## Description
 

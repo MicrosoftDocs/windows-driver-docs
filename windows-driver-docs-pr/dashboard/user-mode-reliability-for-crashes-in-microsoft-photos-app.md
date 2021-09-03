@@ -1,12 +1,12 @@
 ---
-title: Reliability for crashes in Microsoft Photos app less than or equal to the baseline goal (ecosystem)
+title: Number of user mode crashes in Microsoft Photos app (ecosystem)
 description: Learn about the measure that counts the number of display driver crashes in the Microsoft Photos app, then normalizes the total runtime to years.
 ms.topic: article
-ms.date: 09/02/2021
+ms.date: 09/03/2021
 ms.localizationpriority: medium
 ---
 
-# Reliability for crashes in Microsoft Photos app less than or equal to the baseline goal (ecosystem)
+# Number of user mode crashes in Microsoft Photos app (ecosystem)
 
 ## Description
 
