@@ -1,34 +1,34 @@
 ---
-title: Number of user mode reliability for crashes in Windows Components, normalized by population, is less than or equal to the baseline goal
-description: Learn about the measure that monitors how often Windows Components are crashing in the display driver, related to the number of machines using the driver.
+title: Reliability for crashes in Windows components is less than or equal to the baseline goal
+description: Learn about the measure that monitors how often Windows components are crashing in the display driver, related to the number of machines using the driver.
 ms.topic: article
-ms.date: 08/08/2019
+ms.date: 09/02/2021
 ms.localizationpriority: medium
 ---
 
-# Number of user mode reliability for crashes in Windows Components Photos app, normalized by population, is less than or equal to the baseline goal
+# Reliability for crashes in Windows components is less than or equal to the baseline goal
 
 ## Description
 
-This measure is monitoring how often Windows Components (e.g. dwm.exe, shell, logon ui, etc.) are crashing in the display driver, in relation to the number of all machines using the driver. If Windows Component crashes, the user must wait for it to recover before being able to use it again.
+This measure is monitoring how often Windows components (dwm.exe, shell, logon ui, and so on) are crashing in the display driver, in relation to the number of all machines using the driver. If a Windows component crashes the user must wait for it to recover before being able to use it again.
 
 ## Measure attributes
 
-|Attribute|Value|
-|----|----|
-|**Audience**|Expanded|
-|**Time period**|7-day sliding window|
-|**Measurement criteria**|Aggregation of machines|
-|**Minimum instances**|10,000 machines|
-|**Passing criteria**|<= 15 crashes per 10,000 machines|
-|**Measure ID**|22725967|
+| Attribute | Value |
+|--|--|
+| **Audience** | Expanded |
+| **Time period** | 7-day sliding window |
+| **Measurement criteria** | Aggregation of machines |
+| **Minimum instances** | 10,000 machines |
+| **Passing criteria** | <= 15 crashes per 10,000 machines |
+| **Measure ID** | 22725967 |
 
 ## Calculation
 
-1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes in Windows Components, caused by the graphics drivers, over all machines with the driver**
-2. *Total Crashes in Windows Components = Count(Windows Component crashes on machines that have the driver)*
-3. *Total Devices = Sum(Machines that have the driver)*
+1. The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Windows components, caused by the graphics drivers, over all machines with the driver
+1. Total crashes in Windows components = Count(Windows component crashes on machines that have the driver)
+1. Total devices = Sum(machines that have the driver)
 
-### Final Calculation 
+### Final Calculation
 
-4. *Crashes in Windows Components Normalized by device count = Total Windows Component Crashes * 10,000 / TotalDevices*
+Crashes in Windows components normalized by device count = total Windows component crashes * 10,000 / total devices

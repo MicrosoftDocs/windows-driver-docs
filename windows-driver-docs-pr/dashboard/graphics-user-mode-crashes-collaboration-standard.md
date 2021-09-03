@@ -1,18 +1,18 @@
 ---
-title: Number of user mode crashes in Communication and Collaboration Applications normalized by usage <= Baseline goal
-description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in Communication and Collaboration Applications, caused by the graphics drivers, over total runtime in years
+title: Crashes in communication and collaboration apps normalized by usage <= baseline goal
+description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in communication and collaboration applications, caused by the graphics drivers, over total runtime in years
 ms.topic: article
-ms.date: 05/11/2020
+ms.date: 09/02/2021
 ms.localizationpriority: medium
 ---
 
-# Number of user mode crashes in Communication and Collaboration Applications normalized by usage <= Baseline goal
+# Crashes in communication and collaboration apps normalized by usage <= baseline goal
 
 ## Description
 
-This measure is counting the number of crashes in Display Drivers that happen in the context of the Communication and Collaboration Applications and calculating the runtime of such applications on all machines that have the updated driver. The measure then normalizes the crash count by cumulative application runtime in years (HOART - hit over application runtime)
+This measure is counting the number of crashes in display drivers that happen in the context of the communication and collaboration applications and calculating the runtime of such applications on all machines that have the updated driver. The measure then normalizes the crash count by cumulative application runtime in years (HOART - hit over application runtime)
 
-Examples of Communication and Collaboration applications considered for this measure:
+Examples of communication and collaboration applications considered for this measure:
 
 * MICROSOFT.SKYPEAPP
 * DISCORD.EXE
@@ -34,25 +34,25 @@ Examples of Communication and Collaboration applications considered for this mea
 
 ## Measure attributes
 
-|Attribute|Value|
-|----|----|
-|**Audience**|Devices targeted by the driver|
-|**Time period**|7-day sliding window|
-|**Measurement criteria**|Aggregation of Communication and Collaboration Application runtime in Years|
-|**Minimum population**|10,000 hours of Communication and Collaboration Application runtime|
-|**Passing criteria**|<= 1 crash per Year of cumulative runtime|
-|**Measure ID**|25912714|
+| Attribute | Value |
+|--|--|
+| **Audience** | Devices targeted by the driver |
+| **Time period** | 7-day sliding window |
+| **Measurement criteria** | Aggregation of communication and collaboration application runtime in years |
+| **Minimum population** | 10,000 hours of communication and collaboration application runtime |
+| **Passing criteria** | <= 1 crash per Year of cumulative runtime |
+| **Measure ID** | 25912714 |
 
 ## Calculation
 
-Ratio of Crashes in Communication and Collaboration Applications, caused by the graphics drivers, over total runtime in years
+Ratio of crashes in communication and collaboration applications, caused by the graphics drivers, over total runtime in years
 
-Total Crashes in Communication and Collaboration Applications= Count(Crashes in Communication and Collaboration Applications on machines that have the driver)
+Total crashes in communication and collaboration applications = Count(crashes in communication and collaboration applications on machines that have the driver)
 
-Total Communication and Collaboration Applications Runtime= Sum(Runtime of Communication and Collaboration Applications, for each machine that has the driver)
+Total communication and collaboration applications runtime = Sum(runtime of communication and collaboration applications, for each machine that has the driver)
 
-Runtime in Years=Total Runtime of Communication and Collaboration Applications∗60 (minute)∗ 60 (hour)∗24 (day)∗365 (year)
+Runtime in years = total runtime of communication and collaboration applications ∗ 60 (minute) ∗ 60 (hour) ∗ 24 (day) ∗ 365 (year)
 
 ### Final Calculation
 
-Crashes in Communication and Collaboration Applications normalized by usage in years=Total Crashes in Communication and Collaboration Applications / Runtime in Years
+Crashes in communication and collaboration applications normalized by usage in years = total crashes in communication and collaboration applications / runtime in years
