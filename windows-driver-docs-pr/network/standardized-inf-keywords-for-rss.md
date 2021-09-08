@@ -228,11 +228,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p><strong></em>MaxRssProcessors</strong></p></td>
 <td align="left"><p>Maximum number of RSS Processors</p></td>
 <td align="left"><p>Int</p></td>
-<td align="left"><p>Windows Server 2008 defaults:</p>
-<p>8 for 1G or slower adapters, 16 for 10G adapters</p>
-<p>Windows 8 defaults:</p>
-<p>For NICs with no MSI-X support - 2 for 1GbE or slower adapters, 4 for 10 GbE adapters.</p>
-<p>For NICs with MSI-X support - 4 for 1GbE or slower adapters, 16 for 10 GbE adapters.</p></td>
+<td align="left"><p>16</p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p>MAXIMUM_PROC_PER_SYSTEM</p></td>
 </tr>
@@ -248,7 +244,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p><strong></em>NumRSSQueues</strong></p></td>
 <td align="left"><p>Maximum Number of RSS Queues</p></td>
 <td align="left"><p>Int</p></td>
-<td align="left"><p>Device-specific</p></td>
+<td align="left"><p>16</p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p>Device-specific</p></td>
 </tr>
