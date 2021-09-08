@@ -421,7 +421,7 @@ KmdfLibraryVersion      = $KMDFVERSION$
 
 ### Data buffer pool for receiving network data
 
-The client driver normally allocates common buffers to store the packets received by the NIC. NetAdapterCx has a new feature that provides the client driver with a pool of common buffers that are pre-allocated by the system on behalf of the driver. 
+The client driver normally allocates common buffers to store packets that the NIC receives. However, NetAdapterCx introduces a new feature that provides the client driver with a pool of common buffers. The system pre-allocates the data buffer pool on behalf of the driver.
 
 
 To opt-in, set the **AllocationMode** and **AttachmentMode** fields of the [NET_ADAPTER_RX_CAPABILITIES](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_rx_capabilities) as follows:
@@ -440,7 +440,7 @@ A driver that leverages the system-allocated data buffer pool typically implemen
 
 1. Obtains an unused data buffer from the data buffer ring.
 2. Programs that data buffer to its hardware for receive.
-3. Once new network data has been received, the driver links the packet and fragment descriptor together with that data buffer.
+3. Once new network data has been received, links the packet and fragment descriptor together with that data buffer.
 4. Returns the packet descriptor, the fragment descriptors, and the data buffer to the OS.
 
 #### Obtaining an unused data buffer from the data buffer ring
@@ -500,7 +500,7 @@ while (NetDataBufferFetch(br, 1, &dataBufferHandle))
 ```
 #### Linking the packet and fragment descriptor together with the data buffer
 
-Once the hardware indicates that the receive is done, the client driver needs to fill in NET_PACKET and NET_FRAGMENT structures so that it can describe to the OS where the network data is, in which data buffer it stores, what's the starting offset and length, and other meta data. See [Receiving network data with net rings](receiving-network-data-with-net-rings.md) for full details. 
+Once the hardware indicates that the receive is done, the client driver needs to fill in NET_PACKET and NET_FRAGMENT structures to describe to the OS where the network data is stored. See [Receiving network data with net rings](receiving-network-data-with-net-rings.md) for full details. 
 
 Note that the client driver must use the NET_FRAGMENT_DATA_BUFFER fragment extension to associate the fragment and the data buffer handle.
 
@@ -526,6 +526,7 @@ If a data buffer is used to store multiple received network packets, **keep the 
 ### Setting up multiple Tx queues
 
 By default, NetAdapterCx will create one Tx queue for all packets intended for a NetAdapter. 
+
 If a driver needs to support multiple Tx queues for QOS or needs to set up different queues for different peers, it can do so by setting up the appropriate DEMUX properties. If demux properties are added, the Tx queue count is the product of the maximum number of peers and maximum number of tids, plus **1** (for broadcast/multicast).
 
 #### Multiple queues for QOS
@@ -540,12 +541,12 @@ WifiAdapterInitAddTxDemux(adapterInit, &wmmInfoDemux);
 
 This will cause the translator to create up to 8 Tx queues on demand, depending on the NBL WlanTagHeader::WMMInfo value.
 
-From [*EvtPacketQueueStart*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_start) the client driver should query the priority that the framework will use for this queue:
+The client driver should query the priority that the framework will use for this queue from [*EvtPacketQueueStart*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_start):
 
 ```C++
 auto const priority = WifiTxQueueGetDemuxWmmInfo(queue);
 ```
-All packets placed to this queue between **EvtStart** and **EvtStop** will be for the given priority.
+All packets placed to this queue between **EvtStart** and **EvtStop** will have the given priority.
 
 #### Multiple queues for peers
 Before using a NETADAPTER_INIT * object to create a NETADAPTER, the client driver should add PEER_ADDRESS demux to it:
@@ -556,20 +557,20 @@ WIFI_ADAPTER_TX_DEMUX peerInfoDemux;
 WIFI_ADAPTER_TX_PEER_ADDRESS_DEMUX_INIT(&peerInfoDemux, maxNumOfPeers);
 WifiAdapterInitAddTxDemux(adapterInit, &peerInfoDemux);
 ```
-From *EvtPacketQueueStart* the client driver should query the peer address the framework will use for this queue:
+The client driver should query the peer address that the framework will use for this queue from [*EvtPacketQueueStart*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_start):
 
 ```C++
 auto const peerAddress = WifiTxQueueGetDemuxPeerAddress(queue);
 ```
-All packets placed to this queue between **EvtStart** and **EvtStop** will be for this peer.
+All packets placed on this queue between **EvtStart** and **EvtStop** will be for this peer.
 
-Queues are only opened for peer addresses that have been added by the driver using the following APIs:
+Queues are only opened for peer addresses that the driver added using the following APIs:
 
-**WifiAdapterAddPeer(Adapter, Address)**:
-Tell WiFiCx of a connected peer with the given address.  This address will be used with peer demultiplexing by associating a queue to the peer address. The maximum number of peers the driver may add shall not exceed the range value provided when adding tx demultiplexing info.
+[**WifiAdapterAddPeer**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapteraddpeer):
+Tells WiFiCx that a peer has connected with the given address. WiFiCx will use this address with peer demultiplexing by associating a queue to the peer address. The maximum number of peers that the driver may add shall not exceed the range value provided when adding Tx demultiplexing info.
 
-**WifiAdapterRemovePeer(Adapter, Address)**:
-Tell WiFiCx a peer has been disconnected.  This will cause the associated queue to be stopped.
+[**WifiAdapterRemovePeer**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapterremovepeer):
+Tells WiFiCx that a peer has been disconnected. This causes the framework to stop the associated queue.
 
 ![Peer lifetime](images/PeerDemux.png)
 
