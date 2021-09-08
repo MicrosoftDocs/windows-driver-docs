@@ -1,11 +1,11 @@
 ---
-title: HolePunch
+title: HolePunch property
 description: Contains all of the information that describes the device hole punch attachment.
-ms.date: 08/31/2021
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
-# HolePunch
+# HolePunch property
 
 Schema Path: \\Printer.Finishing.HolePunch
 
@@ -21,6 +21,6 @@ Schema Path: \\Printer.Finishing.HolePunch:Installed
 
 Node Type: Value
 
-Data Type: BIDI\_BOOL
+Data Type: BIDI_BOOL
 
 Description: Determines whether the print device has a hole punch mechanism installed. If **TRUE**, the hole punch mechanism is installed; if **FALSE**, the hole punch mechanism is not installed.

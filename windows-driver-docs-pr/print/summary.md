@@ -1,11 +1,11 @@
 ---
-title: Summary
+title: Summary property
 description: A brief description of the current state of the device.
-ms.date: 09/02/2021
+ms.date: 09/08/2021
 ms.localizationpriority: medium
 ---
 
-# Summary
+# Summary property
 
 Schema Path: \\Printer.Status.Summary
 

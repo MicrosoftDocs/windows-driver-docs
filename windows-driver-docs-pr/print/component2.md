@@ -1,11 +1,11 @@
 ---
-title: Component
+title: Component property
 description: Contains the value entries that describe the part of the print device that is affected by the current event.
 ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
-# Component
+# Component property
 
 Schema Path: \\Printer.Status.Summary:Detailed.Event\#\#\#.Component
 

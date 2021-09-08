@@ -1,11 +1,11 @@
 ---
-title: Direction
+title: Direction property
 description: Determines the order in which multiple logical pages are placed on the media.
-ms.date: 08/31/2021
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
-# Direction
+# Direction property
 
 Schema Path: \\Printer.Layout.NumberUp.Direction
 
@@ -21,7 +21,7 @@ Schema Path: \\Printer.Layout.NumberUp.Direction:CurrentValue
 
 Node Type: Value
 
-Data Type: BIDI\_STRING
+Data Type: BIDI_STRING
 
 Description: The current (default) orientation in which to lay out the logical page(s). Each possible value consists of a horizontal direction and a vertical direction.
 

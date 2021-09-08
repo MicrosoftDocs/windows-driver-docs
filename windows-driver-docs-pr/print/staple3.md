@@ -1,11 +1,11 @@
 ---
-title: Staple
+title: Staple property
 description: Contains all of the information that describes the stapling device.
-ms.date: 09/02/2021
+ms.date: 09/08/2021
 ms.localizationpriority: medium
 ---
 
-# Staple
+# Staple property
 
 Schema Path: \\Printer.Finishing.Staple
 

@@ -1,11 +1,11 @@
 ---
-title: HardDisk
+title: HardDisk property
 description: The value entries for a hard disk installed in the device.
-ms.date: 08/31/2021
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
-# HardDisk
+# HardDisk property
 
 Schema Path: \\Printer.Configuration.HardDisk
 

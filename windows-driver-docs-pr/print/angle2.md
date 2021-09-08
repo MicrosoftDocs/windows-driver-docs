@@ -1,11 +1,11 @@
 ---
-title: Angle
+title: Angle property
 description:  Contains all of the value entries that pertain to the orientation of staples.
 ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
-# Angle
+# Angle property
 
 Schema Path: \\Printer.Finishing.Staple.Angle
 

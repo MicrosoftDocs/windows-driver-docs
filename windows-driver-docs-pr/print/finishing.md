@@ -1,11 +1,11 @@
 ---
-title: Finishing
+title: Finishing property
 description: Contains data about operations performed after printing is complete.
-ms.date: 08/31/2021
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
-# Finishing
+# Finishing property
 
 Schema Path: \\Printer.Finishing
 

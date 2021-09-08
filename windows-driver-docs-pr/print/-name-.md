@@ -1,11 +1,11 @@
 ---
-title: Name
+title: Name property
 description: This property is an vendor-mapped Consumable name.
-ms.date: 08/31/2021
+ms.date: 09/08/2021
 ms.localizationpriority: medium
 ---
 
-# Name
+# Name property
 
 Schema Path: \\Printer.Consumables.\[Name\]
 
