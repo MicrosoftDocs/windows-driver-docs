@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The kernel's callback mechanism provides a general way for drivers to request and provide notification when certain conditions are satisfied.
 
-A driver can create a callback object, and other drivers can request notification for conditions associated with this driver-defined callback. In addition, the system defines two callback objects for driver use.
+A driver can create a callback object, and other drivers can request notification for conditions associated with this driver-defined callback. In addition, the system defines three callback objects for driver use.
 
 Every callback object has a name and a set of attributes, defined when the object is created. The system-defined callback objects are named **\\Callback\\SetSystemTime**, **\\Callback\\PowerState**, and **\\Callback\\ProcessorAdd**; driver-defined callbacks must not duplicate these names.
 
