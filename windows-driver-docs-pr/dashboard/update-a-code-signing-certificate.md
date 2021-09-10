@@ -18,7 +18,7 @@ If you're registering your company on dashboard for the first time, see [Get sta
 > * You must have an extended validation (EV) code signing certificate to register.
 > * Your registered EV certificate must be valid at the time of submission.
 > * While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
-> * All certificates must be SHA2 and signed with the **/fd sha256** signtool command line switch
+> * All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch
 > * For more information, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-signing-changes-in-windows-10-version-1607/ba-p/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification).
 
 ## To add or update a code signing certificate
@@ -35,7 +35,7 @@ If you're registering your company on dashboard for the first time, see [Get sta
 1. Once an administrator has signed in, you may use this direct link: [Sign and upload your file](https://partner.microsoft.com/dashboard/account/CertificateUpload), or manually navigate to the page following these steps.
 1. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
 1. Select the **Add a new certificate** button, then select the **Next** button.
-1. Download the *Signablefile.bin* and sign it with the new digital certificate for your company using [SignTool](https://docs.microsoft.com/windows/win32/seccrypto/signtool) with the `/fd sha256` switch and appropriate SHA-2 timestamp.
+1. Download the *Signablefile.bin* and sign it with the new digital certificate for your company using [SignTool](/windows/win32/seccrypto/signtool) with the `/fd sha256` switch and appropriate SHA-2 timestamp.
 1. Upload the signed file to Partner Center.
 
 ## Related topics
