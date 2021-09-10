@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_AP_BAND_INFORMATION (dot11wificxtypes.h)
+title: WDI_TLV_AP_BAND_INFORMATION (dot11wificxtypes.hpp)
 description: WDI_TLV_AP_BAND_INFORMATION is a WiFiCx TLV that contains AP band ID information. 
 ms.date: 08/30/21
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_AP_BAND_INFORMATION (dot11wificxtypes.h)
+# WDI_TLV_AP_BAND_INFORMATION (dot11wificxtypes.hpp)
 
 **WDI_TLV_AP_BAND_INFORMATION** is a TLV that contains the AP band information.
 
@@ -34,5 +34,5 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 

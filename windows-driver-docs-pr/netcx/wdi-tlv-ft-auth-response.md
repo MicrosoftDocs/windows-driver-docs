@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_FT_AUTH_RESPONSE (dot11wificxtypes.h)
+title: WDI_TLV_FT_AUTH_RESPONSE (dot11wificxtypes.hpp)
 description: WDI_TLV_FT_AUTH_RESPONSE is a WiFiCx TLV that contains the Fast Transition authentication response byte blob.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_FT\_AUTH\_RESPONSE (dot11wificxtypes.h)
+# WDI\_TLV\_FT\_AUTH\_RESPONSE (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_FT\_AUTH\_RESPONSE is a TLV that contains the Fast Transition authentication response byte blob.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
  
 
  

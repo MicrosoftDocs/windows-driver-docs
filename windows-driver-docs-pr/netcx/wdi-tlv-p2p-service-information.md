@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_SERVICE_INFORMATION (dot11wificxtypes.h)
+title: WDI_TLV_P2P_SERVICE_INFORMATION (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_SERVICE_INFORMATION is a WiFiCx TLV that contains Wi-Fi Direct Service Information.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_SERVICE\_INFORMATION (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_SERVICE\_INFORMATION (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_SERVICE\_INFORMATION is a TLV that contains Wi-Fi Direct Service Information.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

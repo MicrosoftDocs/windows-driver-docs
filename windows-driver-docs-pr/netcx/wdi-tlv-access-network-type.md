@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_ACCESS_NETWORK_TYPE (dot11wificxtypes.h)
+title: WDI_TLV_ACCESS_NETWORK_TYPE (dot11wificxtypes.hpp)
 description: WDI_TLV_ACCESS_NETWORK_TYPE is a WiFiCx TLV that contains an Access Network Type.
 ms.date: 08/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_ACCESS\_NETWORK\_TYPE (dot11wificxtypes.h)
+# WDI\_TLV\_ACCESS\_NETWORK\_TYPE (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_ACCESS\_NETWORK\_TYPE is a TLV that contains an Access Network Type.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

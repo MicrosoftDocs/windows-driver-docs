@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO (dot11wificxtypes.h)
+title: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO is a WiFiCx TLV that contains Wi-Fi Direct Provision Discovery Response information.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_INFO (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_INFO (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_INFO is a TLV that contains Wi-Fi Direct Provision Discovery Response information.
@@ -41,7 +41,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

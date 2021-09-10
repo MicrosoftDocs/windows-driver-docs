@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_REQUEST_LCI_REPORT (dot11wificxtypes.h)
+title: WDI_TLV_REQUEST_LCI_REPORT (dot11wificxtypes.hpp)
 description: WDI_TLV_REQUEST_LCI_REPORT is a WiFiCx TLV that contains information for whether a Location Configuration Information (LCI) report should be requested from a target BSS during a Fine Timing Measurement (FTM) request.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_REQUEST_LCI_REPORT (dot11wificxtypes.h)
+# WDI_TLV_REQUEST_LCI_REPORT (dot11wificxtypes.hpp)
 
 **WDI_TLV_REQUEST_LCI_REPORT** is a TLV that contains information for whether a Location Configuration Information (LCI) report should be requested from a target BSS during a Fine Timing Measurement (FTM) request.
 
@@ -33,4 +33,4 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

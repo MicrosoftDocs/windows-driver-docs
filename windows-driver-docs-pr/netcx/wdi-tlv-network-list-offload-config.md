@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG (dot11wificxtypes.h)
+title: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG (dot11wificxtypes.hpp)
 description: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG is a WiFiCx TLV that contains Network List Offload (NLO) configuration.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG (dot11wificxtypes.h)
+# WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG is a TLV that contains Network List Offload (NLO) configuration.
@@ -41,7 +41,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

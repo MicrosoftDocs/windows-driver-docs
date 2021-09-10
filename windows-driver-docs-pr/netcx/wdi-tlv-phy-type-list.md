@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_PHY_TYPE_LIST (dot11wificxtypes.h)
+title: WDI_TLV_PHY_TYPE_LIST (dot11wificxtypes.hpp)
 description: WDI_TLV_PHY_TYPE_LIST is a WiFiCx TLV that contains an array of PHY types.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_PHY\_TYPE\_LIST (dot11wificxtypes.h)
+# WDI\_TLV\_PHY\_TYPE\_LIST (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_PHY\_TYPE\_LIST is a TLV that contains an array of PHY types.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of [**WDI\_PHY\_TYPE**](/windows-hardware/drive
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

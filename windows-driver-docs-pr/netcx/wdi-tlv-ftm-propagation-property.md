@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_FTM_PROPAGATION_PROPERTY (dot11wificxtypes.h)
+title: WDI_TLV_FTM_PROPAGATION_PROPERTY (dot11wificxtypes.hpp)
 description: WDI_TLV_FTM_PROPAGATION_PROPERTY is a WiFiCx TLV that contains the negotiated bandwidth in MHz between two STAs to exercise the FTM.
 ms.date: 07/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_FTM_PROPAGATION_PROPERTY (dot11wificxtypes.h)
+# WDI_TLV_FTM_PROPAGATION_PROPERTY (dot11wificxtypes.hpp)
 
 
 WDI_TLV_FTM_PROPAGATION_PROPERTY is a TLV that contains the propagation properties of a signal that are estimated by the LE's logic.
@@ -39,7 +39,7 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

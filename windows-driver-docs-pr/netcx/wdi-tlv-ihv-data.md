@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_IHV_DATA (dot11wificxtypes.h)
+title: WDI_TLV_IHV_DATA (dot11wificxtypes.hpp)
 description: WDI_TLV_IHV_DATA is a WiFiCx TLV that contains IHV-specific information that is used by the IHV extensibility module.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_IHV\_DATA (dot11wificxtypes.h)
+# WDI\_TLV\_IHV\_DATA (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_IHV\_DATA is a TLV that contains IHV-specific information that is used by the IHV extensibility module.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

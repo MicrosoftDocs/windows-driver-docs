@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_INDICATION_CAN_SUSTAIN_AP (dot11wificxtypes.h)
+title: WDI_TLV_INDICATION_CAN_SUSTAIN_AP (dot11wificxtypes.hpp)
 description: WDI_TLV_INDICATION_CAN_SUSTAIN_AP is a WiFiCx TLV that contains the reason for a Can Sustain AP indication.
 ms.date: 08/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP (dot11wificxtypes.h)
+# WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP is a TLV that contains the reason for a Can Sustain AP indication.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 ## See also
 

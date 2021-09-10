@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_DISCOVER_MODE (dot11wificxtypes.h)
+title: WDI_TLV_P2P_DISCOVER_MODE (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_DISCOVER_MODE is a WiFiCx TLV that contains Wi-Fi Direct discovery mode information for OID_WDI_TASK_P2P_DISCOVER.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_DISCOVER\_MODE (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_DISCOVER\_MODE (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_DISCOVER\_MODE is a TLV that contains Wi-Fi Direct discovery mode information for [OID\_WDI\_TASK\_P2P\_DISCOVER](./oid-wdi-task-p2p-discover.md).
@@ -42,7 +42,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

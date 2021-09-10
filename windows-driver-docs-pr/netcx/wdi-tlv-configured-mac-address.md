@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_CONFIGURED_MAC_ADDRESS (dot11wificxtypes.h)
+title: WDI_TLV_CONFIGURED_MAC_ADDRESS (dot11wificxtypes.hpp)
 description: WDI_TLV_CONFIGURED_MAC_ADDRESS is a WiFiCx TLV that contains a custom MAC address.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS (dot11wificxtypes.h)
+# WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS is a TLV that contains a custom MAC address.
@@ -37,7 +37,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/d
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

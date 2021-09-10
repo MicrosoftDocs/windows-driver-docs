@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_RTT_VARIANCE (dot11wificxtypes.h)
+title: WDI_TLV_RTT_VARIANCE (dot11wificxtypes.hpp)
 description: WDI_TLV_RTT_VARIANCE is a WiFiCx TLV that contains the statistical variance of the measurements used to calculate roundtrip time (RTT) during a Fine Timing Measurement (FTM) request, if more than one measurement was used. 
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_RTT_VARIANCE (dot11wificxtypes.h)
+# WDI_TLV_RTT_VARIANCE (dot11wificxtypes.hpp)
 
 **WDI_TLV_RTT_VARIANCE** is a TLV that contains the statistical variance of the measurements used to calculate roundtrip time (RTT) during a Fine Timing Measurement (FTM) request, if more than one measurement was used. 
 
@@ -33,4 +33,4 @@ The size (in bytes) of a UINT64.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

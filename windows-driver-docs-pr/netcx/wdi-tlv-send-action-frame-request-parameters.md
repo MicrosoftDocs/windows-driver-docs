@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS (dot11wificxtypes.h)
+title: WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS (dot11wificxtypes.hpp)
 description: WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS is a WiFiCx TLV that contains parameters for OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS (dot11wificxtypes.h)
+# WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME](./oid-wdi-task-send-request-action-frame.md).
@@ -41,7 +41,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

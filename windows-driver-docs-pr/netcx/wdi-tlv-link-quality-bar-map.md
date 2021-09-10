@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_LINK_QUALITY_BAR_MAP (dot11wificxtypes.h)
+title: WDI_TLV_LINK_QUALITY_BAR_MAP (dot11wificxtypes.hpp)
 description: WDI_TLV_LINK_QUALITY_BAR_MAP is a WiFiCx TLV that contains the mapping of signal quality to Wi-Fi signal strength bars.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP (dot11wificxtypes.h)
+# WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP is a TLV that contains the mapping of signal quality to Wi-Fi signal strength bars.
@@ -51,7 +51,7 @@ WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS consists of the following elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
  

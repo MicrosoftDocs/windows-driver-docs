@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_BSS_SELECTION_PARAMETERS (dot11wificxtypes.h)
+title: WDI_TLV_BSS_SELECTION_PARAMETERS (dot11wificxtypes.hpp)
 description: WDI_TLV_BSS_SELECTION_PARAMETERS is a WiFiCx TLV that contains WDI_BSS_SELECTION_FLAGS that are used by host for BSS selection.
 ms.date: 06/25/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_BSS\_SELECTION\_PARAMETERS (dot11wificxtypes.h)
+# WDI\_TLV\_BSS\_SELECTION\_PARAMETERS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_BSS\_SELECTION\_PARAMETERS is a TLV that contains [**WDI\_BSS\_SELECTION\_FLAGS**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_bss_selection_flags) that are used by host for BSS selection.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
  

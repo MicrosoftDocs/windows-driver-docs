@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_BSS_ENTRY (dot11wificxtypes.h)
+title: WDI_TLV_BSS_ENTRY (dot11wificxtypes.hpp)
 description: WDI_TLV_BSS_ENTRY is a WiFiCx TLV that contains BSS entry information.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_BSS_ENTRY (dot11wificxtypes.h)
+# WDI_TLV_BSS_ENTRY (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_BSS\_ENTRY is a TLV that contains BSS entry information.
@@ -44,7 +44,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_DEVICE_CAPABILITY (dot11wificxtypes.h)
+title: WDI_TLV_P2P_DEVICE_CAPABILITY (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_DEVICE_CAPABILITY is a WiFiCx TLV that contains Wi-Fi Direct device capabilities.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_DEVICE\_CAPABILITY (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_DEVICE\_CAPABILITY (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_DEVICE\_CAPABILITY is a TLV that contains Wi-Fi Direct device capabilities.
@@ -39,7 +39,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
  

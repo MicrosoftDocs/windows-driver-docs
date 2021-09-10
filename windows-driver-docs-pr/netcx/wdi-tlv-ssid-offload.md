@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_SSID_OFFLOAD (dot11wificxtypes.h)
+title: WDI_TLV_SSID_OFFLOAD (dot11wificxtypes.hpp)
 description: WDI_TLV_SSID_OFFLOAD is a WiFiCx TLV that contains an SSID and hints about the SSID.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_SSID\_OFFLOAD (dot11wificxtypes.h)
+# WDI\_TLV\_SSID\_OFFLOAD (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_SSID\_OFFLOAD is a TLV that contains an SSID and hints about the SSID.
@@ -40,7 +40,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

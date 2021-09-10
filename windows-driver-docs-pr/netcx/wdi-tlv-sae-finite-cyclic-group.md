@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_SAE_FINITE_CYCLIC_GROUP (dot11wificxtypes.h)
+title: WDI_TLV_SAE_FINITE_CYCLIC_GROUP (dot11wificxtypes.hpp)
 description: WDI_TLV_SAE_FINITE_CYCLIC_GROUP is a WiFiCx TLV that contains the Finite Cyclic Group used in a Commit request for SAE authentication.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_SAE_FINITE_CYCLIC_GROUP (dot11wificxtypes.h)
+# WDI_TLV_SAE_FINITE_CYCLIC_GROUP (dot11wificxtypes.hpp)
 
 **WDI_TLV_SAE_FINITE_CYCLIC_GROUP** is a TLV that contains the Finite Cyclic Group used in a Commit request for Simultaneous Authentication of Equals (SAE) authentication.
 
@@ -33,4 +33,4 @@ The size (in bytes) of a UINT16.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

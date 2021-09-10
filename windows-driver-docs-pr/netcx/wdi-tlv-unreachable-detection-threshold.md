@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD (dot11wificxtypes.h)
+title: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD (dot11wificxtypes.hpp)
 description: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD is a WiFiCx TLV that contains the unreachable detection threshold.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD (dot11wificxtypes.h)
+# WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD is a TLV that contains the unreachable detection threshold.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

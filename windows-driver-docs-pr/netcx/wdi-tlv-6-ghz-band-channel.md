@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_6_GHZ_BAND_CHANNEL (dot11wificxtypes.h)
+title: WDI_TLV_6_GHZ_BAND_CHANNEL (dot11wificxtypes.hpp)
 description: WDI_TLV_6_GHZ_BAND_CHANNEL is a WiFiCx TLV that contains the channels to scan in the 6 GHz band.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_6_GHZ_BAND_CHANNEL (dot11wificxtypes.h)
+# WDI_TLV_6_GHZ_BAND_CHANNEL (dot11wificxtypes.hpp)
 
 
 WDI_TLV_6_GHZ_BAND_CHANNEL is a TLV that contains the channels to scan in the 6 GHz band.
@@ -40,7 +40,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

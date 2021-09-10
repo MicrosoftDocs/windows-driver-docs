@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_ADAPTER_NLO_SCAN_MODE (dot11wificxtypes.h)
+title: WDI_TLV_ADAPTER_NLO_SCAN_MODE (dot11wificxtypes.hpp)
 description: WDI_TLV_ADAPTER_NLO_SCAN_MODE is a WiFiCx TLV that indicates whether scans should be performed in active or passive mode.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_ADAPTER\_NLO\_SCAN\_MODE (dot11wificxtypes.h)
+# WDI\_TLV\_ADAPTER\_NLO\_SCAN\_MODE (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_ADAPTER\_NLO\_SCAN\_MODE is a TLV that indicates whether scans should be performed in active or passive mode.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_GROUP_BSSID (dot11wificxtypes.h)
+title: WDI_TLV_P2P_GROUP_BSSID (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_GROUP_BSSID is a WiFiCx TLV that contains the Group BSSID for local Wi-Fi Direct GO.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_GROUP\_BSSID (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_GROUP\_BSSID (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_GROUP\_BSSID is a TLV that contains the Group BSSID for local Wi-Fi Direct GO.
@@ -37,7 +37,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/d
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_BSS_ENTRY_CHANNEL_INFO (dot11wificxtypes.h)
+title: WDI_TLV_BSS_ENTRY_CHANNEL_INFO (dot11wificxtypes.hpp)
 description: WDI_TLV_BSS_ENTRY_CHANNEL_INFO is a WiFiCx TLV that contains BSS entry channel information.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO (dot11wificxtypes.h)
+# WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO is a TLV that contains BSS entry channel information.
@@ -38,7 +38,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

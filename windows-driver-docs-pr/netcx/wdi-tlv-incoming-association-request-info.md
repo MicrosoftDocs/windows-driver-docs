@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO (dot11wificxtypes.h)
+title: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO (dot11wificxtypes.hpp)
 description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO is a WiFiCx TLV that contains information about the incoming association request.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO (dot11wificxtypes.h)
+# WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO is a TLV that contains information about the incoming association request.
@@ -39,7 +39,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

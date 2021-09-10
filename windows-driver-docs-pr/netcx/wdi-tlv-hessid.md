@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_HESSID (dot11wificxtypes.h)
+title: WDI_TLV_HESSID (dot11wificxtypes.hpp)
 description: WDI_TLV_HESSID is a WiFiCx TLV that contains a list of HESSIDs.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_HESSID (dot11wificxtypes.h)
+# WDI_TLV_HESSID (dot11wificxtypes.hpp)
 
 
 WDI_TLV_HESSID is a TLV that contains a list of HESSIDs.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/dr
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
  

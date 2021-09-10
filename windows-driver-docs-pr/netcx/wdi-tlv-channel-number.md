@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_CHANNEL_NUMBER (dot11wificxtypes.h)
+title: WDI_TLV_CHANNEL_NUMBER (dot11wificxtypes.hpp)
 description: WDI_TLV_CHANNEL_NUMBER is a WiFiCx TLV that contains a channel number.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CHANNEL\_NUMBER (dot11wificxtypes.h)
+# WDI\_TLV\_CHANNEL\_NUMBER (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_CHANNEL\_NUMBER is a TLV that contains a channel number.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

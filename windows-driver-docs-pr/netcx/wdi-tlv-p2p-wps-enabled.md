@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_WPS_ENABLED (dot11wificxtypes.h)
+title: WDI_TLV_P2P_WPS_ENABLED (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_WPS_ENABLED is a WiFiCx TLV that specifies if Wi-Fi Protected Setup is enabled.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_WPS\_ENABLED (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_WPS\_ENABLED (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_WPS\_ENABLED is a TLV that specifies if Wi-Fi Protected Setup is enabled.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
 ## See also

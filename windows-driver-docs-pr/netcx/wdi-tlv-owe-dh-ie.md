@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_OWE_DH_IE (dot11wificxtypes.h)
+title: WDI_TLV_OWE_DH_IE (dot11wificxtypes.hpp)
 description: WDI_TLV_OWE_DH_IE is a WiFiCx TLV that must be included in the association request sent by the station when the auth type is OWE. 
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_OWE\_DH\_IE (dot11wificxtypes.h)
+# WDI\_TLV\_OWE\_DH\_IE (dot11wificxtypes.hpp)
 
 WDI\_TLV\_OWE\_DH\_IE is a Diffie-Hellman Extension IE blob that must be included in the association request sent by the station when auth type is OWE. This is applicable to any BSSID that the device would associate with and should be included in addition to the other associated req vendor IEs.
 
@@ -31,4 +31,4 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

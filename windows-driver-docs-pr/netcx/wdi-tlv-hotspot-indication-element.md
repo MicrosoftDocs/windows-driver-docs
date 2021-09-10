@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_HOTSPOT_INDICATION_ELEMENT (dot11wificxtypes.h)
+title: WDI_TLV_HOTSPOT_INDICATION_ELEMENT (dot11wificxtypes.hpp)
 description: WDI_TLV_HOTSPOT_INDICATION_ELEMENT is a WiFiCx TLV that contains a Hotspot Indication Element that is used in a Association Request.
 ms.date: 08/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT (dot11wificxtypes.h)
+# WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT is a TLV that contains a Hotspot Indication Element that is used in a Association Request.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

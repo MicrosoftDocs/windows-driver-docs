@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_CIPHER_KEY_TKIP_KEY (dot11wificxtypes.h)
+title: WDI_TLV_CIPHER_KEY_TKIP_KEY (dot11wificxtypes.hpp)
 description: WDI_TLV_CIPHER_KEY_TKIP_KEY is a WiFiCx TLV that contains TKIP key material.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CIPHER\_KEY\_TKIP\_KEY (dot11wificxtypes.h)
+# WDI\_TLV\_CIPHER\_KEY\_TKIP\_KEY (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_CIPHER\_KEY\_TKIP\_KEY is a TLV that contains TKIP key material.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

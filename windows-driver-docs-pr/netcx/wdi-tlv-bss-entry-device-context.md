@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT (dot11wificxtypes.h)
+title: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT (dot11wificxtypes.hpp)
 description: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT is a WiFiCx TLV that contains device context for the BSS entry.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_BSS\_ENTRY\_DEVICE\_CONTEXT (dot11wificxtypes.h)
+# WDI\_TLV\_BSS\_ENTRY\_DEVICE\_CONTEXT (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_BSS\_ENTRY\_DEVICE\_CONTEXT is a TLV that contains device context for the BSS entry.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

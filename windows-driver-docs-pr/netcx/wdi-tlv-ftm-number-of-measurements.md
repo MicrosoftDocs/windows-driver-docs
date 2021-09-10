@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS (dot11wificxtypes.h)
+title: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS (dot11wificxtypes.hpp)
 description: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS is a WiFiCx TLV that contains the number of measurements used to provide the round trip time (RTT) for a Fine Timing Measurement (FTM) request.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS (dot11wificxtypes.h)
+# WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS (dot11wificxtypes.hpp)
 
 **WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS** is a TLV that contains the number of measurements used to provide the round trip time (RTT) for a Fine Timing Measurement (FTM) request.
 
@@ -33,4 +33,4 @@ The size (in bytes) of a UINT16.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

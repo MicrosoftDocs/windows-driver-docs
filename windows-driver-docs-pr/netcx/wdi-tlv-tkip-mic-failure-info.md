@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_TKIP_MIC_FAILURE_INFO (dot11wificxtypes.h)
+title: WDI_TLV_TKIP_MIC_FAILURE_INFO (dot11wificxtypes.hpp)
 description: WDI_TLV_TKIP_MIC_FAILURE_INFO is a WiFiCx TLV that contains TKIP-MIC failure information.
 ms.date: 08/30/21
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO (dot11wificxtypes.h)
+# WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO is a TLV that contains TKIP-MIC failure information.
@@ -39,7 +39,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

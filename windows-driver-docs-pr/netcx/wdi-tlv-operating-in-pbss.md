@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_OPERATING_IN_PBSS (dot11wificxtypes.h)
+title: WDI_TLV_OPERATING_IN_PBSS (dot11wificxtypes.hpp)
 description: WDI_TLV_OPERATING_IN_PBSS is a WiFiCx TLV that specifies whether the AP is operating as a PCP in PBSS mode. 
 ms.date: 08/30/21
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_OPERATING_IN_PBSS (dot11wificxtypes.h)
+# WDI_TLV_OPERATING_IN_PBSS (dot11wificxtypes.hpp)
 
 **WDI_TLV_OPERATING_IN_PBSS** is a TLV that specifies whether the AP is operating as a PCP in PBSS mode. 
 
@@ -33,5 +33,5 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 

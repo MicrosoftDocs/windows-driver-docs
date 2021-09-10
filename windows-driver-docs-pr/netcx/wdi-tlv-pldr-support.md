@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_PLDR_SUPPORT (dot11wificxtypes.h)
+title: WDI_TLV_PLDR_SUPPORT (dot11wificxtypes.hpp)
 description: WDI_TLV_PLDR_SUPPORT is a WIFiCx TLV that specifies if PLDR (Platform Level Reset) is supported.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_PLDR\_SUPPORT (dot11wificxtypes.h)
+# WDI\_TLV\_PLDR\_SUPPORT (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_PLDR\_SUPPORT is a TLV that specifies if PLDR (Platform Level Reset) is supported.
@@ -39,7 +39,7 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 ## See also
 

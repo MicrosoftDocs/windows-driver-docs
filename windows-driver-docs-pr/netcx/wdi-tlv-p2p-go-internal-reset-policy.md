@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY (dot11wificxtypes.h)
+title: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY is a WiFiCx TLV that contains the policy used by the firmware for operating channel selection after a Wi-Fi Direct GO Reset is stopped/restarted.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_GO\_INTERNAL\_RESET\_POLICY (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_GO\_INTERNAL\_RESET\_POLICY (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_GO\_INTERNAL\_RESET\_POLICY is a TLV that contains the policy used by the firmware for operating channel selection after a Wi-Fi Direct GO Reset is stopped/restarted.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

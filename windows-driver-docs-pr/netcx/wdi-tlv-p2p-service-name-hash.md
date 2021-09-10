@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_SERVICE_NAME_HASH (dot11wificxtypes.h)
+title: WDI_TLV_P2P_SERVICE_NAME_HASH (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_SERVICE_NAME_HASH is a WiFiCx TLV that contains the hash of a service name.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_SERVICE\_NAME\_HASH (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_SERVICE\_NAME\_HASH (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_SERVICE\_NAME\_HASH is a TLV that contains the hash of a service name.
@@ -37,6 +37,6 @@ The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](/windows-hardware/d
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
  
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_START_AP_PARAMETERS (dot11wificxtypes.h)
+title: WDI_TLV_START_AP_PARAMETERS (dot11wificxtypes.hpp)
 description: WDI_TLV_START_AP_PARAMETERS is a WiFiCx TLV that contains the parameters for OID_WDI_TASK_START_AP.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_START\_AP\_PARAMETERS (dot11wificxtypes.h)
+# WDI\_TLV\_START\_AP\_PARAMETERS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_START\_AP\_PARAMETERS is a TLV that contains the parameters for [OID\_WDI\_TASK\_START\_AP](./oid-wdi-task-start-ap.md).
@@ -42,7 +42,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB (dot11wificxtypes.h)
+title: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB (dot11wificxtypes.hpp)
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB is a WiFiCx TLV that contains information about a device service received from the IHV driver.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB (dot11wificxtypes.h)
+# WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB (dot11wificxtypes.hpp)
 
 WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB is a TLV that contains information about a device service received from the IHV driver. This TLV is used in the [NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT](ndis-status-wdi-indication-device-service-event.md) status indication.
 
@@ -31,5 +31,5 @@ The size, in bytes, of the array of UINT8 elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 

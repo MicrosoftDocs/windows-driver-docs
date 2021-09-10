@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT (dot11wificxtypes.h)
+title: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT (dot11wificxtypes.hpp)
 description: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT is a WiFix TLV that contains the receive sequence count.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CIPHER\_KEY\_RECEIVE\_SEQUENCE\_COUNT (dot11wificxtypes.h)
+# WDI\_TLV\_CIPHER\_KEY\_RECEIVE\_SEQUENCE\_COUNT (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_CIPHER\_KEY\_RECEIVE\_SEQUENCE\_COUNT is a TLV that contains the receive sequence count.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

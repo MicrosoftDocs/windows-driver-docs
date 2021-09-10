@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_LIMITED_CONNECTIVITY (dot11wificxtypes.h)
+title: WDI_TLV_LIMITED_CONNECTIVITY (dot11wificxtypes.hpp)
 description: WDI_TLV_LIMITED_CONNECTIVITY is a WiFiCx TLV that specifies  whether the WiFiCx driver can maintain a secondary STA connection.
 ms.date: 08/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_LIMITED_CONNECTIVITY (dot11wificxtypes.h)
+# WDI_TLV_LIMITED_CONNECTIVITY (dot11wificxtypes.hpp)
 
 **WDI_TLV_LIMITED_CONNECTIVITY** is a TLV that specifies whether the WiFiCx driver can maintain a secondary STA connection. 
 
@@ -33,5 +33,5 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_SCAN_DWELL_TIME (dot11wificxtypes.h)
+title: WDI_TLV_SCAN_DWELL_TIME (dot11wificxtypes.hpp)
 description: WDI_TLV_SCAN_DWELL_TIME is a WiFiCx TLV that contains scanning dwell time settings.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_SCAN\_DWELL\_TIME (dot11wificxtypes.h)
+# WDI\_TLV\_SCAN\_DWELL\_TIME (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_SCAN\_DWELL\_TIME is a TLV that contains scanning dwell time settings.
@@ -39,7 +39,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

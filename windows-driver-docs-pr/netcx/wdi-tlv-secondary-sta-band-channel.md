@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_SECONDARY_STA_BAND_CHANNEL (dot11wificxtypes.h)
+title: WDI_TLV_SECONDARY_STA_BAND_CHANNEL (dot11wificxtypes.hpp)
 description: WDI_TLV_SECONDARY_STA_BAND_CHANNEL is a WiFiCx TLV that contains a list of band IDs and channel numbers available for secondary STA connections. 
 ms.date: 08/30/21
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_SECONDARY_STA_BAND_CHANNEL (dot11wificxtypes.h)
+# WDI_TLV_SECONDARY_STA_BAND_CHANNEL (dot11wificxtypes.hpp)
 
 **WDI_TLV_SECONDARY_STA_BAND_CHANNEL** is a TLV that contains a list of band IDs and optional channel numbers available for secondary STA connections.
 
@@ -34,5 +34,5 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 

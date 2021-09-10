@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_SERVICE_STATUS (dot11wificxtypes.h)
+title: WDI_TLV_P2P_SERVICE_STATUS (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_SERVICE_STATUS is a WiFiCx TLV that contains the Service Status of a service.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_SERVICE\_STATUS (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_SERVICE\_STATUS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_SERVICE\_STATUS is a TLV that contains the Service Status of a service.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
  

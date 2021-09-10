@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_PHY_STATISTICS (dot11wificxtypes.h)
+title: WDI_TLV_PHY_STATISTICS (dot11wificxtypes.hpp)
 description: WDI_TLV_PHY_STATISTICS is a WiFiCx TLV that contains per-PHY statistics for OID_WDI_GET_STATISTICS.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_PHY\_STATISTICS (dot11wificxtypes.h)
+# WDI\_TLV\_PHY\_STATISTICS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_PHY\_STATISTICS is a TLV that contains per-PHY statistics for [OID\_WDI\_GET\_STATISTICS](./oid-wdi-get-statistics.md).
@@ -55,5 +55,5 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 

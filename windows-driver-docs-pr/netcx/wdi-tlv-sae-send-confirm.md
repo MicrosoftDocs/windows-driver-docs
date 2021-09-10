@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_SAE_SEND_CONFIRM (dot11wificxtypes.h)
+title: WDI_TLV_SAE_SEND_CONFIRM (dot11wificxtypes.hpp)
 description: WDI_TLV_SAE_SEND_CONFIRM is a WiFiCx TLV that contains the Send Confirm field for a SAE Confirm request.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_SAE_SEND_CONFIRM (dot11wificxtypes.h)
+# WDI_TLV_SAE_SEND_CONFIRM (dot11wificxtypes.hpp)
 
 **WDI_TLV_SAE_SEND_CONFIRM** is a TLV that contains the Send Confirm field for a Simultaneous Authentication of Equals (SAE) Confirm request. The Send Confirm field is used as an anti-replay counter.
 
@@ -33,4 +33,4 @@ The size (in bytes) of a UINT16.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

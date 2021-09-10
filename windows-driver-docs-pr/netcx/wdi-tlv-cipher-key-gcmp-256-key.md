@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_CIPHER_KEY_GCMP_256_KEY (dot11wificxtypes.h)
+title: WDI_TLV_CIPHER_KEY_GCMP_256_KEY (dot11wificxtypes.hpp)
 description: WDI_TLV_CIPHER_KEY_GCMP_256_KEY is a WiFiCx TLV that contains GCMP 256 cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEYS.
 ms.assetid: 
 ms.date: 07/31/2021
@@ -8,7 +8,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY (dot11wificxtypes.h)
+# WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY (dot11wificxtypes.hpp)
 
 WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY is a TLV that contains GCMP 256 cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
 
@@ -32,4 +32,4 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

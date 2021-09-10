@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_CONNECT_PARAMETERS (dot11wificxtypes.h)
+title: WDI_TLV_CONNECT_PARAMETERS (dot11wificxtypes.hpp)
 description: WDI_TLV_CONNECT_PARAMETERS is a WiFiCx TLV that contains parameters for OID_WDI_TASK_CONNECT and OID_WDI_TASK_ROAM.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CONNECT\_PARAMETERS (dot11wificxtypes.h)
+# WDI\_TLV\_CONNECT\_PARAMETERS (dot11wificxtypes.hpp)
 
 WDI\_TLV\_CONNECT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_CONNECT](./oid-wdi-task-connect.md) and [OID\_WDI\_TASK\_ROAM](./oid-wdi-task-roam.md).
 
@@ -42,4 +42,4 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

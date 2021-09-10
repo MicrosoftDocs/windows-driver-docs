@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL (dot11wificxtypes.h)
+title: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL is a WiFiCx TLV that specifies whether the probe request should include the Listen Channel attribute during discovery.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL is a TLV that specifies whether the probe request should include the Listen Channel attribute during discovery.
@@ -39,7 +39,7 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

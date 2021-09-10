@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS (dot11wificxtypes.h)
+title: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS (dot11wificxtypes.hpp)
 description: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS is a WiFiCx TLV that contains the requested priority for NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS (dot11wificxtypes.h)
+# WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS is a TLV that contains the requested priority for [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST](./ndis-status-wdi-indication-ihv-task-request.md).
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_DISALLOWED_BSSIDS_LIST (dot11wificxtypes.h)
+title: WDI_TLV_DISALLOWED_BSSIDS_LIST (dot11wificxtypes.hpp)
 description: WDI_TLV_DISALLOWED_BSSIDS_LIST is a WiFiCx TLV that contains a list of BSSIDs that are not allowed to be used for association.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_DISALLOWED\_BSSIDS\_LIST (dot11wificxtypes.h)
+# WDI\_TLV\_DISALLOWED\_BSSIDS\_LIST (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_DISALLOWED\_BSSIDS\_LIST is a TLV that contains a list of BSSIDs that are not allowed to be used for association.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/dr
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
  

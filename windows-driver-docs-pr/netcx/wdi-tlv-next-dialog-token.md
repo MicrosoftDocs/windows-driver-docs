@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_NEXT_DIALOG_TOKEN (dot11wificxtypes.h)
+title: WDI_TLV_NEXT_DIALOG_TOKEN (dot11wificxtypes.hpp)
 description: WDI_TLV_NEXT_DIALOG_TOKEN is a WiFiCx TLV that contains the dialog token to be used in the next Action frame.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_NEXT\_DIALOG\_TOKEN (dot11wificxtypes.h)
+# WDI\_TLV\_NEXT\_DIALOG\_TOKEN (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_NEXT\_DIALOG\_TOKEN is a TLV that contains the dialog token to be used in the next Action frame.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 ## See also
 

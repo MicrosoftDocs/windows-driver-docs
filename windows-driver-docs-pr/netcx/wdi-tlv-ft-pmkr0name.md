@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_FT_PMKR0NAME (dot11wificxtypes.h)
+title: WDI_TLV_FT_PMKR0NAME (dot11wificxtypes.hpp)
 description: WDI_TLV_FT_PMKR0NAME is a WiFiCx TLV that contains a PMKR0Name or PMKR1Name (802.11r).
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_FT\_PMKR0NAME (dot11wificxtypes.h)
+# WDI\_TLV\_FT\_PMKR0NAME (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_FT\_PMKR0NAME is a TLV that contains a PMKR0Name or PMKR1Name (802.11r).
@@ -37,7 +37,7 @@ The size (in bytes) of a [**WDI\_TYPE\_PMK\_NAME**](/windows-hardware/drivers/dd
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

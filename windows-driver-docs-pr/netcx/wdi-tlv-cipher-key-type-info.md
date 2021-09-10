@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_CIPHER_KEY_TYPE_INFO (dot11wificxtypes.h)
+title: WDI_TLV_CIPHER_KEY_TYPE_INFO (dot11wificxtypes.hpp)
 description: WDI_TLV_CIPHER_KEY_TYPE_INFO is a WiFiCx TLV that contains cipher key type information for OID_WDI_SET_ADD_CIPHER_KEYS and OID_WDI_SET_DELETE_CIPHER_KEYS.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO (dot11wificxtypes.h)
+# WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO is a TLV that contains cipher key type information for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md) and [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](./oid-wdi-set-delete-cipher-keys.md).
@@ -40,7 +40,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_COUNTRY_REGION_LIST (dot11wificxtypes.h)
+title: WDI_TLV_COUNTRY_REGION_LIST (dot11wificxtypes.hpp)
 description: WDI_TLV_COUNTRY_REGION_LIST is a WiFiCx TLV that contains a list of country or region codes.
 ms.date: 08/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_COUNTRY\_REGION\_LIST (dot11wificxtypes.h)
+# WDI\_TLV\_COUNTRY\_REGION\_LIST (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_COUNTRY\_REGION\_LIST is a TLV that contains a list of country or region codes.
@@ -49,7 +49,7 @@ WDI\_COUNTRY\_REGION\_LIST consists of the following elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
  
 
  

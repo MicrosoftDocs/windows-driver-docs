@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_ROAMING_NEEDED_PARAMETERS (dot11wificxtypes.h)
+title: WDI_TLV_ROAMING_NEEDED_PARAMETERS (dot11wificxtypes.hpp)
 description: WDI_TLV_ROAMING_NEEDED_PARAMETERS is a WiFiCx TLV that contains the reason for a roam trigger. This is used in the NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED payload.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS (dot11wificxtypes.h)
+# WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS is a TLV that contains the reason for a roam trigger. This is used in the [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](./ndis-status-wdi-indication-roaming-needed.md) payload.
@@ -37,7 +37,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 
  

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_PROBE_RESPONSE_FRAME (dot11wificxtypes.h)
+title: WDI_TLV_PROBE_RESPONSE_FRAME (dot11wificxtypes.hpp)
 description: WDI_TLV_PROBE_RESPONSE_FRAME is a WiFiCx TLV that contains a probe response frame.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_PROBE_RESPONSE_FRAME (dot11wificxtypes.h)
+# WDI_TLV_PROBE_RESPONSE_FRAME (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_PROBE\_RESPONSE\_FRAME is a TLV that contains a probe response frame.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

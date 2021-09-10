@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_FTM_REQUEST_TIMEOUT (dot11wificxtypes.h)
+title: WDI_TLV_FTM_REQUEST_TIMEOUT (dot11wificxtypes.hpp)
 description: WDI_TLV_FTM_REQUEST_TIMEOUT is a WiFiCx TLV that contains the maximum time, in milliseconds, to complete a Fine Timing Measurement (FTM).
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_FTM_REQUEST_TIMEOUT (dot11wificxtypes.h)
+# WDI_TLV_FTM_REQUEST_TIMEOUT (dot11wificxtypes.hpp)
 
 **WDI_TLV_FTM_REQUEST_TIMEOUT** is a TLV that contains the maximum time, in milliseconds, to complete a Fine Timing Measurement (FTM).
 
@@ -33,5 +33,5 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_UNAVAILABLE_BAND_LIST (dot11wificxtypes.h)
+title: WDI_TLV_UNAVAILABLE_BAND_LIST (dot11wificxtypes.hpp)
 description: WDI_TLV_UNAVAILABLE_BAND_LIST is a WiFiCx TLV that contains the list of bands on which the driver should not connect.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_UNAVAILABLE_BAND_LIST (dot11wificxtypes.h)
+# WDI_TLV_UNAVAILABLE_BAND_LIST (dot11wificxtypes.hpp)
 
 
 WDI_TLV_UNAVAILABLE_BAND_LIST is a TLV that contains the list of bands on which the driver should not connect as they are used for Primary Sta connectivity. 
@@ -37,4 +37,4 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|

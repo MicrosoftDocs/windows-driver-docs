@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY  (dot11wificxtypes.h)
+title: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY  (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY is a WiFix TLV that contains a discovered service entry.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY is a TLV that contains a discovered service entry.
@@ -41,7 +41,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

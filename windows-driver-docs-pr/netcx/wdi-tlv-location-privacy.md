@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_LOCATION_PRIVACY (dot11wificxtypes.h)
+title: WDI_TLV_LOCATION_PRIVACY (dot11wificxtypes.hpp)
 description: WDI_TLV_LOCATION_PRIVACY is a WiFiCx TLV that contains permissions information for privacy-sensitive location operations. 
 ms.date: 08/30/21
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_LOCATION_PRIVACY (dot11wificxtypes.h)
+# WDI_TLV_LOCATION_PRIVACY (dot11wificxtypes.hpp)
 
 **WDI_TLV_LOCATION_PRIVACY** is a TLV that contains permissions information for privacy-sensitive location operations.
 
@@ -33,5 +33,5 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 

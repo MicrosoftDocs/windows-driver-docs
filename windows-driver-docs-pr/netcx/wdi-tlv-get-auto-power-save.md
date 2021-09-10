@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_GET_AUTO_POWER_SAVE (dot11wificxtypes.h)
+title: WDI_TLV_GET_AUTO_POWER_SAVE (dot11wificxtypes.hpp)
 description: WDI_TLV_GET_AUTO_POWER_SAVE is a WiFiCx TLV that contains auto power save information for OID_WDI_GET_AUTO_POWER_SAVE.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_GET\_AUTO\_POWER\_SAVE (dot11wificxtypes.h)
+# WDI\_TLV\_GET\_AUTO\_POWER\_SAVE (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_GET\_AUTO\_POWER\_SAVE is a TLV that contains auto power save information for [OID\_WDI\_GET\_AUTO\_POWER\_SAVE](./oid-wdi-get-auto-power-save.md).
@@ -51,7 +51,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_AP_BAND_CHANNEL (dot11wificxtypes.h)
+title: WDI_TLV_AP_BAND_CHANNEL (dot11wificxtypes.hpp)
 description: WDI_TLV_AP_BAND_CHANNEL is a WiFiCx TLV that specifies access point band and channel information.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_AP\_BAND\_CHANNEL (dot11wificxtypes.h)
+# WDI\_TLV\_AP\_BAND\_CHANNEL (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_AP\_BAND\_CHANNEL is a TLV that specifies access point band and channel information.
@@ -40,7 +40,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
 ## See also
 

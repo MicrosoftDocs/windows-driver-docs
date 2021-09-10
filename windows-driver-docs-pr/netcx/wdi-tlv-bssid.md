@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_BSSID (dot11wificxtypes.h)
+title: WDI_TLV_BSSID (dot11wificxtypes.hpp)
 description: WDI_TLV_BSSID is a WiFiCx TLV that contains the BSSID of a BSS.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_BSSID (dot11wificxtypes.h)
+# WDI_TLV_BSSID (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_BSSID is a TLV that contains the BSSID of a BSS.
@@ -37,7 +37,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/d
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

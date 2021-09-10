@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_WFD_ASSOCIATION_STATUS (dot11wificxtypes.h)
+title: WDI_TLV_WFD_ASSOCIATION_STATUS (dot11wificxtypes.hpp)
 description: WDI_TLV_WFD_ASSOCIATION_STATUS is a WiFiCx TLV that contains the status code to be set when an association request is denied.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_WFD\_ASSOCIATION\_STATUS (dot11wificxtypes.h)
+# WDI\_TLV\_WFD\_ASSOCIATION\_STATUS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_WFD\_ASSOCIATION\_STATUS is a TLV that contains the status code to be set when an association request is denied.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT8.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

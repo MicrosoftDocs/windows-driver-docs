@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_FT_REASSOC_PARAMETERS (dot11wificxtypes.h)
+title: WDI_TLV_FT_REASSOC_PARAMETERS (dot11wificxtypes.hpp)
 description: WDI_TLV_FT_REASSOC_PARAMETERS is a WiFiCx TLV that contains reassociation parameters for Fast Transition.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_FT\_REASSOC\_PARAMETERS (dot11wificxtypes.h)
+# WDI\_TLV\_FT\_REASSOC\_PARAMETERS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_FT\_REASSOC\_PARAMETERS is a TLV that contains reassociation parameters for Fast Transition.
@@ -39,7 +39,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

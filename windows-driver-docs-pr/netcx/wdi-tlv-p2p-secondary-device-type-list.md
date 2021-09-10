@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST (dot11wificxtypes.h)
+title: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST is a WiFiCx TLV that contains a list of secondary device types.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_SECONDARY\_DEVICE\_TYPE\_LIST (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_SECONDARY\_DEVICE\_TYPE\_LIST (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_SECONDARY\_DEVICE\_TYPE\_LIST is a TLV that contains a list of secondary device types.
@@ -51,7 +51,7 @@ WDI\_P2P\_DEVICE\_TYPE consists of the following elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

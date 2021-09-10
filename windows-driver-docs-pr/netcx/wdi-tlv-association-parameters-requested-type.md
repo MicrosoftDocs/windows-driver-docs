@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE (dot11wificxtypes.h)
+title: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE (dot11wificxtypes.hpp)
 description: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE is a WiFiCx TLV that contains the requested Association Parameter TLV types.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE (dot11wificxtypes.h)
+# WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE is a TLV that contains the requested Association Parameter TLV types.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT16 elements. The array must contain 1 or
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

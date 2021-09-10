@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME (dot11wificxtypes.h)
+title: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME (dot11wificxtypes.hpp)
 description: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME is a WiFiCx TLV that contains the received disassociation frame.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME (dot11wificxtypes.h)
+# WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME is a TLV that contains the received disassociation frame.
@@ -37,7 +37,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

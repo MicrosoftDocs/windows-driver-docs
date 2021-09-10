@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_CONNECTION_QUALITY_PARAMETERS (dot11wificxtypes.h)
+title: WDI_TLV_CONNECTION_QUALITY_PARAMETERS (dot11wificxtypes.hpp)
 description: WDI_TLV_CONNECTION_QUALITY_PARAMETERS is a WiFiCx TLV that contains the desired Wi-Fi Connection Quality Hint.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS (dot11wificxtypes.h)
+# WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS is a TLV that contains the desired Wi-Fi Connection Quality Hint.
@@ -37,6 +37,6 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
  
 

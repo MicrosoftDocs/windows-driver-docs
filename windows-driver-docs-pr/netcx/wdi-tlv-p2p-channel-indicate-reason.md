@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_CHANNEL_INDICATE_REASON (dot11wificxtypes.h)
+title: WDI_TLV_P2P_CHANNEL_INDICATE_REASON (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_CHANNEL_INDICATE_REASON is a WiFiCx TLV that contains a reason for sending an indication.
 ms.date: 08/30/21
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON is a TLV that contains a reason for sending an indication.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT32.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

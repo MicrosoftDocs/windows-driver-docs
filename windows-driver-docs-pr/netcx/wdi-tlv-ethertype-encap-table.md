@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_ETHERTYPE_ENCAP_TABLE (dot11wificxtypes.h)
+title: WDI_TLV_ETHERTYPE_ENCAP_TABLE (dot11wificxtypes.hpp)
 description: WDI_TLV_ETHERTYPE_ENCAP_TABLE is a WiFiCx TLV that contains the Ethertype encapsulations for the association.
 ms.date: 06/30/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_ETHERTYPE\_ENCAP\_TABLE (dot11wificxtypes.h)
+# WDI\_TLV\_ETHERTYPE\_ENCAP\_TABLE (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_ETHERTYPE\_ENCAP\_TABLE is a TLV that contains the Ethertype encapsulations for the association.
@@ -37,7 +37,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

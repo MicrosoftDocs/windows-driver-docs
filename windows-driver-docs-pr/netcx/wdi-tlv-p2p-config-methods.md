@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_P2P_CONFIG_METHODS (dot11wificxtypes.h)
+title: WDI_TLV_P2P_CONFIG_METHODS (dot11wificxtypes.hpp)
 description: WDI_TLV_P2P_CONFIG_METHODS is a WiFiCx TLV that contains Wi-Fi Direct configuration methods.
 ms.date: 06/17/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_P2P\_CONFIG\_METHODS (dot11wificxtypes.h)
+# WDI\_TLV\_P2P\_CONFIG\_METHODS (dot11wificxtypes.hpp)
 
 
 WDI\_TLV\_P2P\_CONFIG\_METHODS is a TLV that contains Wi-Fi Direct configuration methods.
@@ -37,7 +37,7 @@ The size (in bytes) of a UINT16.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
  
 

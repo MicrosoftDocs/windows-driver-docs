@@ -1,5 +1,5 @@
 ---
-title: WDI_TLV_FTM_TARGET_BSS_ENTRY (dot11wificxtypes.h)
+title: WDI_TLV_FTM_TARGET_BSS_ENTRY (dot11wificxtypes.hpp)
 description: WDI_TLV_FTM_TARGET_BSS_ENTRY is a WiFiCx TLV that contains information for a BSS target with which Fine Timing Measurement (FTM) procedures should be completed.
 ms.date: 07/31/2021
 keywords:
@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# WDI_TLV_FTM_TARGET_BSS_ENTRY (dot11wificxtypes.h)
+# WDI_TLV_FTM_TARGET_BSS_ENTRY (dot11wificxtypes.hpp)
 
 **WDI_TLV_FTM_TARGET_BSS_ENTRY** is a TLV that contains information for a BSS target with which Fine Timing Measurement (FTM) procedures should be completed. 
 
@@ -41,5 +41,5 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxtypes.h|
+|Header|dot11wificxtypes.hpp|
 
