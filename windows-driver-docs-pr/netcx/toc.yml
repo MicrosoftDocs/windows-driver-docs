@@ -80,6 +80,8 @@
     href: writing-a-wificx-client-driver.md
   - name: "WiFiCx message structure"
     href: wificx-message-structure.md
+  - name: "WiFiCx TLV generator interface"
+    href: wificx-tlv-generator-interface.md
   - name: "WiFiCx TLVs"
     items: 
     - name: "WDI_TLV_6_GHZ_BAND_CHANNEL"
@@ -708,28 +710,6 @@
       href: ndis-status-wdi-indication-stop-ap-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_TKIP_MIC_FAILURE"
       href: ndis-status-wdi-indication-tkip-mic-failure.md
-  - name: "Other WiFiCx data types"
-    items:
-  - name: "WiFiCx TLV generator/parser"
-    items: 
-    - name: "WiFiCx TLV generator/parser topics"
-      href: wificx-tlv-generator-parser.md
-    - name: "WiFiCx TLV parser interface overview"
-      href: wificx-tlv-parser-interface-overview.md
-    - name: "WiFiCx TLV generator interface overview"
-      href: wificx-tlv-generator-interface-overview.md
-    - name: "WiFiCx TLV generator/parser memory interface"
-      href: wificx-tlv-generator-parser-memory-interface.md
-    - name: "WiFiCx TLV generator/parser special members"
-      href: wificx-tlv-generator-parser-special-members.md
-    - name: "Adding the WiFiCx TLV generator/parser to your driver"
-      href: building-a-wificx-tlv-generator-parser.md
-    - name: "WiFiCx TLV generator/parser XML semantics and syntax"
-      href: wificx-tlv-generator-parser-xml-semantics.md
-    - name: "WiFiCx TLV versioning"
-      href: wificx-tlv-versioning.md
-    - name: "WiFiCx TLV dumpers"
-      href: wificx-tlv-dumpers.md
   - name: "WiFiCx design guide"
     items:
   - name: "WiFiCx WPA3-SAE authentication"

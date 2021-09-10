@@ -31,6 +31,8 @@ The topics in this section assume you already know how to write a [NetAdapterCx 
 
 [WiFiCx message structure](wificx-message-structure.md)
 
+[WiFiCx TLV generator interface](wificx-tlv-generator-interface.md)
+
 [WiFiCx TLVs](wdi-tlv-6-ghz-band-channel.md)
 
 [WiFiCx task commands](oid-wdi-task-change-operation-mode.md)
@@ -38,8 +40,6 @@ The topics in this section assume you already know how to write a [NetAdapterCx 
 [WiFiCx property commands](oid-wdi-abort-task.md)
 
 [WiFiCx unsolicited status indications](ndis-status-wdi-indication-action-frame-received.md)
-
-[WiFiCx TLV generator/parser](wificx-tlv-generator-parser.md)
 
 [WiFiCx WPA3-SAE authentication](wificx-wpa3-sae-authentication.md)
 

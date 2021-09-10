@@ -22,7 +22,7 @@ WDI\_TLV\_COUNTRY\_REGION\_LIST is a TLV that contains a list of country or regi
 
 The size (in bytes) of the array of WDI\_COUNTRY\_REGION\_LIST elements. The array must contain 1 or more elements.
 
-**Note**  WDI\_COUNTRY\_REGION\_LIST is not a WiFiCx structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
+**Note**  WDI\_COUNTRY\_REGION\_LIST is not a WiFiCx structure. It is defined in the WiFiCx TLV parser generator, and is used for documentation purposes only.
 
  
 
