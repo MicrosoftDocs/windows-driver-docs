@@ -13,6 +13,6 @@ A filter driver can define its own extra create parameters (ECPs). To define you
 
 * Define a context structure that describes your ECP.
 
-See [System-defined ECPs](system-defined-ecps.mc) for examples of system-defined GUIDs and associated context structures.
+See [System-defined ECPs](system-defined-ecps.md) for examples of system-defined GUIDs and associated context structures.
 
 For information about how to define GUIDs and using them in driver code, see [Using GUIDs in Drivers](../kernel/using-guids-in-drivers.md).
