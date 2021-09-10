@@ -15,6 +15,8 @@ Partner Center supports multiple certificates associated with a single account. 
 If you're registering your company on dashboard for the first time, see [Get started with the hardware dashboard program](get-started-with-the-hardware-dashboard.md).
 
 > [!IMPORTANT]
+> The certificate uploaded and used for all Partner Center submission packages has changed:
+> 
 > * You must have an extended validation (EV) code signing certificate to register.
 > * Your registered EV certificate must be valid at the time of submission.
 > * While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
