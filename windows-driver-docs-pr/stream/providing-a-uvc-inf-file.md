@@ -1,12 +1,12 @@
 ---
 title: Providing a UVC INF File
-description: Providing a UVC INF File
+description: This section illustrates various portions of a device-specific INF file.
 keywords:
 - INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
-ms.date: 09/12/2018
+ms.date: 09/16/2021
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,7 @@ Be aware, however, that you must install this specific sample by using an INF fi
 
 To do so, include the following code in the INF file, here arbitrarily named *Xuplgin.inf*:
 
-```INF
+```inf
 ; Copyright (c) CompanyName. All rights reserved.
 
 [Version]
@@ -49,7 +49,7 @@ MyDevice.CopyList=11    ; %systemroot%\system32 on NT-based systems
 
 The device-specific INF file is matched with the device based on the VID/PID identifier. In this case, the device-specific INF file takes precedence over *Usbvideo.inf*.
 
-```INF
+```inf
 [CompanyName.NT$ARCH$]
 %MyDevice.DeviceDesc%=MyDevice,USB\Vid_XXXX&Pid_XXXX&MI_XX
 
@@ -60,8 +60,9 @@ AddReg=MyDevice.Plugins
 CopyFiles=MyDevice.CopyList
 ```
 
-Additional sections of *Usbvideo.inf* need to be included for completeness
-```INF
+Additional sections of *Usbvideo.inf* need to be included for completeness.
+
+```inf
 [MyDevice.SERVICES]
 Include=usbvideo.inf
 Needs=USBVideo.NT.SERVICES
@@ -88,14 +89,15 @@ TrustletIdentity = 4096          ; required if it is SecureCompanion
 ```
 
 The INF also needs a CopyFiles section to copy the plug-in into the system folder.
-```INF
+
+```inf
 [MyDevice.CopyList]
 MyPlugin.ax
 ```
 
 The first part of the following INF AddReg section registers the plug-in.  The remainder of this section shows the registry entries for a node-based Extension Unit plug-in. Refer to *Usbvideo.inf* for similar examples.
 
-```INF
+```inf
 [MyDevice.PlugIns]
 HKCR,CLSID\%Plugin.CLSID%,,,%PlugIn_IExtensionUnit%
 HKCR,CLSID\%Plugin.CLSID%\InprocServer32,,,MyPlugin.ax
@@ -114,7 +116,7 @@ HKLM,System\CurrentControlSet\Control\NodeInterfaces\%XU_GUID%,
 
 The following INF section shows how to populate interface-specific registry entries.
 
-```INF
+```inf
 [MyDevice.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,MyDevice.Interface
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,MyDevice.Interface
@@ -131,57 +133,23 @@ HKR,,RTCFlags,0x00010001,0x00000010
 
 For USB Cameras, if the device interface registry key location contains a DWORD registry entry **EnableDependentStillPinCapture** with a non-zero value, the dependent pin on such cameras will be used for photo capture. If the registry entry is not present or set to zero, the dependent pin will not be used. Instead, the photo capture will be done using a frame taken from the preview pin.  The following enables dependent still pin capture:
 
-```INF
+```inf
 HKR,,EnableDependentStillPinCapture,0x00010001,1
 ```
 
 You can also define an optional registry value called **UvcFlags**. **UvcFlags** should be a DWORD value. When the device is plugged in, the UVC driver receives a Plug and Play (PnP) Start request. The driver then searches for **UvcFlags** in the device registry key. The DWORD value is a bitmask and can contain the values in the following table.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Bitmask name</strong></p></td>
-<td><p><strong>Value</strong></p></td>
-<td><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>WORKAROUNDS_DV_INTERLEAVED_DEFAULT_MASK</p></td>
-<td><p>0x00000001</p></td>
-<td><p>UVC supports video-only data ranges and interleaved DV data ranges. Set this bitmask for interleaved DV.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WORKAROUNDS_SUPPRESS_CLOCK_MASK</p></td>
-<td><p>0x00000002</p></td>
-<td><p>Currently not used.</p></td>
-</tr>
-<tr class="even">
-<td><p>WORKAROUNDS_MPEG2TS_SUPPORT_FID</p></td>
-<td><p>0x00000004</p></td>
-<td><p>The FID mask indicates that the stream header contains an FID bit.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WORKAROUNDS_MPEG2TS_SUPPORT_EOF</p></td>
-<td><p>0x00000008</p></td>
-<td><p>The EOF mask indicates that the payload headers contain an end-of-frame bit.</p></td>
-</tr>
-<tr class="even">
-<td><p>WORKAROUNDS_VARIABLE_FRAME_RATE_MASK</p></td>
-<td><p>0x00000010</p></td>
-<td><p>Set this mask if your device might vary frame rate. Fixed-rate DV devices should not set this mask.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Bitmask name | Value | Description |
+|--|--|--|
+| WORKAROUNDS_DV_INTERLEAVED_DEFAULT_MASK | 0x00000001 | UVC supports video-only data ranges and interleaved DV data ranges. Set this bitmask for interleaved DV. |
+| WORKAROUNDS_SUPPRESS_CLOCK_MASK | 0x00000002 | Currently not used. |
+| WORKAROUNDS_MPEG2TS_SUPPORT_FID | 0x00000004 | The FID mask indicates that the stream header contains an FID bit. |
+| WORKAROUNDS_MPEG2TS_SUPPORT_EOF | 0x00000008 | The EOF mask indicates that the payload headers contain an end-of-frame bit. |
+| WORKAROUNDS_VARIABLE_FRAME_RATE_MASK | 0x00000010 | Set this mask if your device might vary frame rate. Fixed-rate DV devices should not set this mask. |
 
 Include a line similar to the following example to specify the bitmask to be applied:
 
-```INF
+```inf
 HKR,,UvcFlags,0x00010001,0x00000010
 ```
 
@@ -193,7 +161,7 @@ For more information about the positional syntax of AddReg directives, see [**IN
 
 This final section supplies missing definitions for the INF.
 
-```INF
+```inf
 [Strings]
 ; Non-localizable
 Plugin.CLSID="{zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz}"

@@ -1,10 +1,10 @@
 ---
 title: Sample Application for UVC Extension Units
-description: Sample application for UVC extension units
+description: This topic contains sample application code that you can use to support Extension Units.
 keywords:
 - extension units WDK USB Video Class , samples, sample application
 - sample code WDK USB Video Class , UVC extension units
-ms.date: 09/08/2020
+ms.date: 09/16/2021
 ms.localizationpriority: medium
 ---
 
