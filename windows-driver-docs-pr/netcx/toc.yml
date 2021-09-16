@@ -357,7 +357,7 @@
     - name: "WDI_TLV_P2P_DISCOVER_MODE"
       href: wdi-tlv-p2p-discover-mode.md
     - name: "WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS"
-      href: wdi-tlv-p2p-disovery-channel-settings.md
+      href: wdi-tlv-p2p-discovery-channel-settings.md
     - name: "WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY"
       href: wdi-tlv-p2p-go-internal-reset-policy.md
     - name: "WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_INFO"
