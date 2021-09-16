@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_SECONDARY_STA_BAND_CHANNEL (dot11wificxtypes.hpp)
 description: WDI_TLV_SECONDARY_STA_BAND_CHANNEL is a WiFiCx TLV that contains a list of band IDs and channel numbers available for secondary STA connections. 
-ms.date: 08/30/21
+ms.date: 08/30/2021
 keywords:
  - WDI_TLV_SECONDARY_STA_BAND_CHANNEL Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 **WDI_TLV_SECONDARY_STA_BAND_CHANNEL** is a TLV that contains a list of band IDs and optional channel numbers available for secondary STA connections.
 
-This TLV is used in the payload data for [NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY ](windows-driver-docs-pr\netcx\ndis-status-wdi-indication-secondary-sta-connectivity.md).
+This TLV is used in the payload data for [NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY ](ndis-status-wdi-indication-secondary-sta-connectivity.md).
 
 ## TLV Type
 

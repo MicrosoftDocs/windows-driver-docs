@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_LOCATION_PRIVACY (dot11wificxtypes.hpp)
 description: WDI_TLV_LOCATION_PRIVACY is a WiFiCx TLV that contains permissions information for privacy-sensitive location operations. 
-ms.date: 08/30/21
+ms.date: 08/30/2021
 keywords:
  - WDI_TLV_LOCATION_PRIVACY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

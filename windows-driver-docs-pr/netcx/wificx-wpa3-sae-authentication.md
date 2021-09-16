@@ -1,13 +1,13 @@
 ---
 title: WiFiCx WPA3-SAE authentication
 description: This topic describes WPA3-SAE authentication for WifiCx.
-ms.date: 06/17/2021
+ms.date: 09/15/2021
 ms.localizationpriority: medium
 ---
 
-# WPA3-SAE authentication
+# WiFiCx WPA3-SAE authentication
 
-WPA3-SAE, also known as WPA3-Personal, is supported in Windows with WDI version 1.1.8 and later. Frame content generation and parsing for SAE (Secure Authentication of Equals) authentication is done within Windows, but the OS requires driver support for sending and receiving WPA3-SAE authentication frames.
+WiFiCx supports WPA3-SAE, also known as WPA3-Personal. Frame content generation and parsing for SAE (Secure Authentication of Equals) authentication is done within Windows, but the OS requires driver support for sending and receiving WPA3-SAE authentication frames.
 
 ## WPA3-SAE capabilities
 

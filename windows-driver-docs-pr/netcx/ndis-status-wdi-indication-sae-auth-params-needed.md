@@ -13,7 +13,7 @@ The Wi-Fi adapter sends this indication to request parameters for Simultaneous A
 
 When the miniport driver is requested to perform SAE authentication with a target BSSID, it needs to request information at various stages of authentication. Initially, it requests parameters for the Commit request frame, then the Confirm request frame if successful. If the driver encounters an irrecoverable timeout or error, it also indicates that to the OS.
 
-This indication is sent during the SAE authentication process. For more information, see [WPA3-SAE authentication](wpa3-sae-authentication.md).
+This indication is sent during the SAE authentication process. For more information, see [WPA3-SAE authentication](wificx-wpa3-sae-authentication.md).
 
 ## Payload data
 

@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES (dot11wificxintf.h)
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES to indicate supported channels. 
-ms.date: 08/30/21
+ms.date: 08/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

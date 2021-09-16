@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE  (dot11wificxintf.h)
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE to indicate link speed or quality changes.
-ms.date: 08/30/21
+ms.date: 08/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

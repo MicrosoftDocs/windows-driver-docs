@@ -44,7 +44,7 @@ This message flow diagram shows the initialization process.
 
 ![Diagram showing the WiFiCx client driver initialization process.](images/wificx_initialization.png)
 
-### Default (station) adapter creation flow
+### Default adapter (station) creation flow
 
 Next, the client driver must set all the Wi-Fi specific device capabilities, typically in the [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. If your hardware needs interrupts to be enabled in order to query firmware capabilities, this can be done in [*EvtWdfDeviceD0EntryPostInterruptsEnabled*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled). 
 
@@ -86,11 +86,11 @@ Commands are exchanged through a set of callback functions provided by the clien
 
 ![Flow chart showing WiFiCx driver command message handling.](images/wificx_command.png)
 
-## Wi-Fi Direct (P2P) Support
+## Wi-Fi Direct (P2P) support
 
 The following sections describe how WiFiCx drivers can support Wi-Fi Direct.
 
-### Wi-Fi Direct Device Capabilities
+### Wi-Fi Direct device capabilities
 
 [**WIFI_WIFIDIRECT_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_wifidirect_capabilities) represents all the relevant capabilities that were previously set in WDI via the WDI_P2P_CAPABILITIES and WDI\_AP\_CAPABILITIES TLVs. The client driver calls [**WifiDeviceSetWiFiDirectCapabilities**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicesetwifidirectcapabilities) to report Wi-Fi direct capabilities to WiFiCx in the set device capabilities phase.
 ```C++
@@ -158,7 +158,7 @@ EvtWifiDeviceCreateWifiDirectDevice(
 
 Client drivers create the station adapter and WfdRole adapter using the same event callback: [*EvtWifiDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_adapter). 
 - Call [**WifiAdapterGetType**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadaptergettype) to determine the adapter type. 
-- If the driver needs to query the adapter type from the NETADAPTER_INIT object before the adapter is created, call [**WifiAdapterInitGetType**](nf-wificx-wifiadapterinitgettype.md). 
+- If the driver needs to query the adapter type from the NETADAPTER_INIT object before the adapter is created, call [**WifiAdapterInitGetType**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapterinitgettype.md). 
 - Call [**WifiAdapterGetPortId**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadaptergetportid) determine the port ID (used in message commands). 
 
 
@@ -417,111 +417,7 @@ KmdfService = %ServiceName%, wdf
 KmdfLibraryVersion      = $KMDFVERSION$
 ```
 
-## NetAdapter data path change
-
-### Data buffer pool for receiving network data
-
-The client driver normally allocates common buffers to store packets that the NIC receives. However, NetAdapterCx introduces a new feature that provides the client driver with a pool of common buffers. The system pre-allocates the data buffer pool on behalf of the driver.
-
-
-To opt-in, set the **AllocationMode** and **AttachmentMode** fields of the [NET_ADAPTER_RX_CAPABILITIES](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_rx_capabilities) as follows:
-
-```C++
-rxCapabilities.AllocationMode = NetRxFragmentBufferAllocationModeSystem;
-rxCapabilities.AttachmentMode = NetRxFragmentBufferAttachmentModeDriver;
-```
-
-Once the above configuration is set, the [NET_RING_COLLECTION](/windows-hardware/drivers/ddi/ringcollection/ns-ringcollection-_net_ring_collection) structure obtained through [NetRxQueueGetRingCollection](/windows-hardware/drivers/ddi/netrxqueue/nf-netrxqueue-netrxqueuegetringcollection) will consist of three [NET_RING](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring) structures: a packet ring, a fragment ring, and a data buffer ring. The pre-allocated data buffers are stored in the data buffer ring.
-
-> [!IMPORTANT]
-> Just like any other [NET_RING](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring), the data buffer ring must be operated sequentially. The use of data buffers stored in the data buffer ring must be in sequencial order. Skipping unused data buffers and leaving gaps is not permitted. 
-
-A driver that leverages the system-allocated data buffer pool typically implements its Rx [*EvtPacketQueueAdvance*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback as follows:
-
-1. Obtains an unused data buffer from the data buffer ring.
-2. Programs that data buffer to its hardware for receive.
-3. Once new network data has been received, links the packet and fragment descriptor together with that data buffer.
-4. Returns the packet descriptor, the fragment descriptors, and the data buffer to the OS.
-
-#### Obtaining an unused data buffer from the data buffer ring
-
-Similar to other rings, every element in the data buffer ring from **BeginIndex** to **EndIndex - 1** is one available data buffer for the client driver to use. The client driver owns all of them and decides how many of the data buffers it wants to use. The only constraint is that the client driver must use the data buffers in sequential order. Drivers may optionally use **NextIndex** as a way to remember which data buffers it has already used.
-
-We provide a convenience helper **NetDataBufferFetch** to perform the "fetch" operation.
-
-```C++
-
-NET_RING * br = NetRingCollectionGetDataBufferRing(ringCollection);
-NET_DATA_BUFFER_HANDLE dataBufferHandle;
-
-while (NetDataBufferFetch(br, 1, &dataBufferHandle))
-{
-    //post the data buffer to the hardware
-    ...
-}
-
-inline
-SIZE_T 
-NetDataBufferFetch(
-    _In_ NET_RING* BufferRing,
-    _In_ UINT32 BufferCount,
-    _Out_ NET_DATA_BUFFER_HANDLE* Buffer
-)
-{
-    UINT32 avaiableBufferCount = 
-        NetRingGetRangeCount(BufferRing, BufferRing->EndIndex, BufferRing->NextIndex);
-
-    UINT32 count = min(avaiableBufferCount, BufferCount);
-
-    for (UINT32 i = 0; i < count; i++)
-    {
-        Buffer[i] = *((NET_DATA_BUFFER_HANDLE*) NetRingGetElementAtIndex(BufferRing, BufferRing->NextIndex));
-        BufferRing->NextIndex = NetRingIncrementIndex(BufferRing, BufferRing->NextIndex);
-    }
-
-    return count;
-}
-```
-
-#### Programing the data buffer to its hardware for receive
-
-The data buffer object that the driver fetches from the data buffer ring is an opaque handle. To get the actual LogicalAddress and VirtualAddress for that data buffer, call the corresponding APIs. For example: 
-
-```C++
-...
-
-while (NetDataBufferFetch(br, 1, &dataBufferHandle))
-{
-    //post the data buffer to the hardware
-    //get the LA
-    UINT64 la = NetDataBufferGetLogicalAddress(br, dataBufferHandle);
-    ...
-}
-```
-#### Linking the packet and fragment descriptor together with the data buffer
-
-Once the hardware indicates that the receive is done, the client driver needs to fill in NET_PACKET and NET_FRAGMENT structures to describe to the OS where the network data is stored. See [Receiving network data with net rings](receiving-network-data-with-net-rings.md) for full details. 
-
-Note that the client driver must use the NET_FRAGMENT_DATA_BUFFER fragment extension to associate the fragment and the data buffer handle.
-
-```C++
-NET_FRAGMENT_DATA_BUFFER* dataBuffer = NetExtensionGetFragmentDataBuffer(
-    &rx->DataBufferExtension, currentFragmentIndex);
-
-dataBuffer->Handle = dataBufferHandle;
-```
-
-#### Returning the packet descriptor, the fragment descriptors, and the data buffer to the OS
-
-The client driver should return formed packets and fragments to the OS as described in [Receiving network data with net rings](receiving-network-data-with-net-rings.md).
-
-In addition, the driver should return the data buffer described by the fragment descriptor to the OS by incrementing the **EndIndex** of the data buffer ring. Note that the data buffer must be returned in order.
-
-We provide the convenience helper function **NetDataBufferReturn** to perform the "return" operation.
-
-If a data buffer is used to store a single received network packet, the data buffer is returned whenever that packet is returned to the OS.
-
-If a data buffer is used to store multiple received network packets, **keep the ownership of the data buffer until all the packets have been returned to OS. Only then does the client driver return the data buffer to the OS.**  
+## NetAdapter data path change 
 
 ### Setting up multiple Tx queues
 

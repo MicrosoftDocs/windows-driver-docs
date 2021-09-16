@@ -169,7 +169,7 @@
     - name: "WDI_TLV_CIPHER_KEY_BIP_KEY"
       href: wdi-tlv-cipher-key-bip-key.md
     - name: "WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY"
-      href: wdi-tlv-cipher-key-bip--gmac-256-key.md
+      href: wdi-tlv-cipher-key-bip-gmac-256-key.md
     - name: "WDI_TLV_CIPHER_KEY_CCMP_KEY"
       href: wdi-tlv-cipher-key-ccmp-key.md
     - name: "WDI_TLV_CIPHER_KEY_GCMP_256_KEY"
@@ -203,7 +203,7 @@
     - name: "WDI_TLV_COUNTRY_REGION_LIST"
       href: wdi-tlv-country-region-list.md
     - name: "WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS"
-      href: wdi-tlv-default-tx-key-id-parameters,md
+      href: wdi-tlv-default-tx-key-id-parameters.md
     - name: "WDI_TLV_DELETE_CIPHER_KEY_INFO"
       href: wdi-tlv-delete-cipher-key-info.md
     - name: "WDI_TLV_DEVICE_SERVICE_GUID_LIST"
@@ -319,7 +319,7 @@
     - name: "WDI_TLV_OWE_DH_IE"
       href: wdi-tlv-owe-dh-ie.md
     - name: "WDI_TLV_P2P_ACTION_FRAME_IES"
-      href: wdi-tlv-p2p-action-ies.md
+      href: wdi-tlv-p2p-action-frame-ies.md
     - name: "WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS"
       href: wdi-tlv-p2p-action-frame-response-parameters.md
     - name: "WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY"
@@ -645,7 +645,7 @@
     - name: "NDIS_STATUS_WDI_INDICATION_CHANGE_OPERATION_MODE_COMPLETE"
       href: ndis-status-wdi-indication-change-operation-mode-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED"
-      href: \ndis-status-wdi-indication-cipher-key-updated.md
+      href: ndis-status-wdi-indication-cipher-key-updated.md
     - name: "NDIS_STATUS_WDI_INDICATION_CONNECT_COMPLETE"
       href: ndis-status-wdi-indication-connect-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT"
@@ -695,7 +695,7 @@
     - name: "NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY"
       href: ndis-status-wdi-indication-secondary-sta-connectivity.md
     - name: "NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE"
-      href: ndis-status-wdi-indication-send-ap-association-reponse-complete.md
+      href: ndis-status-wdi-indication-send-ap-association-response-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_SEND_REQUEST_ACTION_FRAME_COMPLETE"
       href: ndis-status-wdi-indication-send-request-action-frame-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_SEND_RESPONSE_ACTION_FRAME_COMPLETE"

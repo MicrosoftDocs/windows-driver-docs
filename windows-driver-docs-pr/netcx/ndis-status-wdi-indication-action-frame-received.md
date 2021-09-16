@@ -7,7 +7,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED 
+# NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED (dot11wificxintf.h)
 
 
 WiFiCx drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to indicate that an Action Frame has been received.

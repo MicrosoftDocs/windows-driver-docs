@@ -1,3 +1,12 @@
+---
+title: Dual STA connectivity
+description: WiFiCx enables simultaneous connections to more than one STA when the client driver supports it.
+keywords:
+- WiFiCx WDF class extension, WiFiCx, WiFi NetAdapterCx
+ms.date: 09/15/2021
+ms.localizationpriority: medium
+---
+
 # Dual STA connectivity
 
 WiFiCx enables simultaneous connections to more than one STA (Secondary STA connectivity) when the client driver supports it. In its initial iteration this feature only supports a maximum of two STA connections, but this may change later.

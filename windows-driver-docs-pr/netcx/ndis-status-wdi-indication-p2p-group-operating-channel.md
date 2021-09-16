@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL (dot11wificxintf.h)
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL to indicate which operating channel a given Wi-Fi Direct port is operating on.
-ms.date: 08/30/21
+ms.date: 08/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
