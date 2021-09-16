@@ -1,7 +1,7 @@
 ---
 description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
 title: Analyzing USB Performance Issues by Using Xperf and Netmon
-ms.date: 04/20/2017
+ms.date: 09/16/2021
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +51,7 @@ To open the merged trace log in Netmon, run Netmon, click **File -> Open -> Capt
 
 By default, Netmon displays all events in the merged trace file. To show only the USB events, apply a filter such as the following:
 
-```sql
+```syntax
 ProtocolName == "USBHub_MicrosoftWindowsUSBUSBHUB" OR ProtocolName == "USBPort_MicrosoftWindowsUSBUSBPORT"
 ```
 
@@ -59,13 +59,13 @@ You can enter this filter text in the Netmon Filter Display pane. For more infor
 
 To analyze the timing of USB events, you can look at the time difference between displayed events in Netmon.
 
-**To view the time difference of displayed events**
+## To view the time difference of displayed events
 
 1. In the **Frame Summary** pane, right-click a column title, and select **Choose Columns**.
 1. In the **Disabled Columns** list, select **Time Delta**, click **Add**, and then click **OK**.
 1. Write a filter that displays only the events whose timing you would like to see. For example, to view the delays between non-overlapping bulk-transfer dispatch and complete events, add the following filter:
 
-    ```sql
+    ```syntax
     Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" 
     OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" 
     OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with Data"
