@@ -34,16 +34,16 @@ If the authentication algorithm that is used for the connection requires 802.1x 
 
 The 802.11 station uses the PMKID cache for pre-authentication to access points that have enabled the Robust Security Network Association (RSNA) authentication algorithm. If the 802.11 station is associating or reassociating to a BSSID that has a provided PMKID, the 802.11 station must use the PMKID data in the RSN information element (RSN IE) of its Association or Reassociation frame.
 
-If the port declares support for Host FIPS mode in [**WDI\_TLV\_STATION\_ATTRIBUTES**](./wdi-tlv-station-attributes.md), HostFIPSModeEnabled may be set to 1 in the connection parameters.
+If the port declares support for Host FIPS mode in [**WDI\_TLV\_STATION\_ATTRIBUTES**](./wdi-tlv-station-attributes.md), **HostFIPSModeEnabled** may be set to **1** in the connection parameters.
 
-If HostFIPSModeEnabled is set to 1, the following rules apply.
+If **HostFIPSModeEnabled** is set to **1**, the following rules apply.
 
 -   The port must follow the guidelines for sending/receiving data frames in Send operations in FIPS mode and Receive operations in FIPS mode.
 -   The port must not declare support for any QoS protocol in the association request sent to a non-HT access point. QoS support is required for HT connections.
 -   The port must not negotiate TSpec and must not perform transmit MSDU aggregation.
 -   The port must ensure that the SPP A-MSDU capable bit (bit 10) of the RSN capabilities IE it transmits is set to zero. Only PP A-MSDU are supported in this mode.
 
-The connection parameters must not have MFPEnabled and HostFIPSModeEnabled both set to 1. Management Frame Protection (802.11w) requires the port to encrypt/decrypt certain management and action frames, so it cannot be enabled for a connection using Host FIPS mode. In addition, Wake on Wireless LAN features are not applicable in Host-FIPS mode.
+The connection parameters must not have **MFPEnabled** and **HostFIPSModeEnabled** both set to **1**. Management Frame Protection (802.11w) requires the port to encrypt/decrypt certain management and action frames, so it cannot be enabled for a connection using Host FIPS mode. In addition, Wake on Wireless LAN features are not applicable in Host-FIPS mode.
 
 ## Task parameters
 

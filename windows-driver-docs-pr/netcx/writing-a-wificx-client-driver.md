@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 In addition to the tasks that NetAdapterCx requires for [NetAdapter device initialization](device-and-adapter-initialization.md), a WiFiCx client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
-1. Call [**WifiDeviceInitConfig**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitconfig) after calling [**NetDeviceInitConfig**](windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig) but before calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE_INIT**](/windows-hardware/drivers/wdf/wdfdevice_init) object passed in by the framework.
+1. Call [**WifiDeviceInitConfig**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitconfig) after calling [**NetDeviceInitConfig**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig) but before calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE_INIT**](/windows-hardware/drivers/wdf/wdfdevice_init) object passed in by the framework.
 
 2. Call [**WifiDeviceInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitialize) to register WiFiCx device-specific callback functions, using an initialized [**WIFI_DEVICE_CONFIG**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_device_config) structure and the **WDFDEVICE** object obtained from **WdfDeviceCreate**.
 

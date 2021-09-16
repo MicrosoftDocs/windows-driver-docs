@@ -714,6 +714,14 @@
     items:
   - name: "WiFiCx WPA3-SAE authentication"
     href: wificx-wpa3-sae-authentication.md
+  - name: "WiFiCx design guide"
+    items: 
+    - name: "WiFiCx low latency connection quality"
+      href: wificx-low-latency-connection-quality.md
+    - name: "WiFiCx Extended channel switch announcement (ECSA)"
+      href: wificx-extended-channel-switch-announcement-ecsa.md
+    - name: "WiFiCx IHV extensible types"
+      href: wificx-ihv-extensible-types.md
   - name: "Dual STA connectivity"
     href: dual-sta-connectivity.md
 

@@ -11,7 +11,7 @@ WiFiCx supports WPA3-SAE, also known as WPA3-Personal. Frame content generation 
 
 ## WPA3-SAE capabilities
 
-Miniport drivers indicate SAE support by doing the following:
+WiFiCx drivers indicate SAE support by doing the following:
 
 1. Set SAE supported capability.  
     The driver sets the **SAEAuthenticationSupported** capability in [WDI_TLV_INTERFACE_ATTRIBUTES](wdi-tlv-interface-attributes.md) during the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md).
