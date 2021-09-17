@@ -4,11 +4,14 @@ description: Compile the code in this section to create a UVC Extension Unit Sam
 keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.date: 09/15/2021
+ms.date: 09/17/2021
 ms.localizationpriority: medium
 ---
 
 # Building the Extension Unit Sample Control
+
+> [!IMPORTANT]
+> The content and sample code in this topic is outdated and currently unsupported. It may not work with the current driver development toolchain.
 
 You can compile the code in this section to create a UVC Extension Unit Sample Control. When you build this project, you create a Microsoft ActiveX control that you can use with a corresponding application to get and set properties on an extension unit.
 

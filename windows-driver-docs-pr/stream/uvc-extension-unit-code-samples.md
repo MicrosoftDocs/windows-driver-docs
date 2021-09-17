@@ -4,11 +4,14 @@ description: This section contains the UVC Extension Unit code samples
 keywords:
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class
-ms.date: 09/15/2021
+ms.date: 09/17/2021
 ms.localizationpriority: medium
 ---
 
 # UVC Extension Unit Code Samples
+
+> [!IMPORTANT]
+> The content and sample code in the topics listed in this section is outdated and currently unsupported. It may not work with the current driver development toolchain.
 
 This section contains the following topics:
 

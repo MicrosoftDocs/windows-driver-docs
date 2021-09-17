@@ -6,11 +6,14 @@ keywords:
 - UVC INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
-ms.date: 09/16/2021
+ms.date: 09/17/2021
 ms.localizationpriority: medium
 ---
 
 # Providing a UVC INF File
+
+> [!IMPORTANT]
+> The content and sample code in this topic is outdated and currently unsupported. It may not work with the current driver development toolchain.
 
 This section illustrates various portions of a device-specific INF file.
 

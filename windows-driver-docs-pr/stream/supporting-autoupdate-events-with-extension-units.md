@@ -8,11 +8,14 @@ keywords:
 - events WDK USB Video Class , autoupdate with extension units
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class , autoupdate events
-ms.date: 09/16/2021
+ms.date: 09/17/2021
 ms.localizationpriority: medium
 ---
 
 # Supporting Autoupdate Events with Extension Units
+
+> [!IMPORTANT]
+> The content and sample code in this topic is outdated and currently unsupported. It may not work with the current driver development toolchain.
 
 This topic contains sample code that demonstrates how to support autoupdate events.
 
