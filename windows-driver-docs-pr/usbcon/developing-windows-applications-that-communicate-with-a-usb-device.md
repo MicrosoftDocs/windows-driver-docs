@@ -1,22 +1,21 @@
 ---
 description: This topic provides guidelines for deciding whether you should write a UWP app or a Windows desktop app to communicate with a USB device.
 title: Overview of developing Windows applications for USB devices
-ms.date: 04/20/2017
+ms.date: 09/16/2021
 ms.localizationpriority: High
 ---
 
 # Overview of developing Windows applications for USB devices
 
+Summary:
 
-**Summary**
+* Guidelines for choosing the right programming model
+* UWP app and desktop app developer experience
 
--   Guidelines for choosing the right programming model
--   UWP app and desktop app developer experience
+Important APIs:
 
-**Important APIs**
-
--   [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb)
--   [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)
+* [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb)
+* [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)
 
 This topic provides guidelines for deciding whether you should write a UWP app or a Windows desktop app to communicate with a USB device.
 
@@ -26,65 +25,57 @@ Windows provides API sets that you can use to write apps that talk to a custom U
 
 ## Choosing a programming model
 
-
 If you install [Winusb.sys](winusb-installation.md), here are the programming model options:
 
--   [UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)
+* [UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)
 
-    Windows 8.1 provides a new namespace: [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb). The namespace cannot be used in earlier version of Windows. Other Microsoft Store resources are here: [UWP app](https://msdn.microsoft.com/windows/apps).
+    Windows 8.1 provides a new namespace: [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb). The namespace cannot be used in earlier version of Windows. Other Microsoft Store resources are here: [UWP app](/windows/uwp/).
 
--   [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)
+* [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)
 
     Before Windows 8.1, apps that were communicating through [Winusb.sys](winusb-installation.md), were desktop apps written by using [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md). In Windows 8.1, the API set has been extended. Other Windows desktop app resources are here: [Windows desktop app](https://developer.microsoft.com/windows/desktop).
 
 The strategy for choosing the best programming model depends on various factors.
 
--   **Will your app communicate with an internal USB device?**
+* **Will your app communicate with an internal USB device?**
 
     The APIs are primarily designed for accessing peripheral devices. The API can also access PC internal USB devices. However access to PC internal USB devices from a UWP app is limited to a privileged app that is explicitly declared in device metadata by the OEM for that PC.
 
--   **Will your app communicate with USB isochronous endpoints?**
+* **Will your app communicate with USB isochronous endpoints?**
 
     If your app transmits data to or from isochronous endpoints of the device, you must write a Windows desktop app. In Windows 8.1, new [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) have been added to the API set that allow a desktop app to send data to and receive data from isochronous endpoints.
 
--   **Is your app a "control panel" type of app?**
+* **Is your app a "control panel" type of app?**
 
     UWP apps are per-user apps and do not have the ability to make changes outside the scope of each app. For these types of apps, you must write a Windows desktop app.
 
--   **Is the USB device class supported classes by UWP apps?**
+* **Is the USB device class supported classes by UWP apps?**
 
-    Write a UWP app if your device belongs to one these device classes.
+   Write a UWP app if your device belongs to one these device classes.
 
-    -   `name:cdcControl,           classId:02 * *`
-    -   `name:physical, classId:05 * *`
-    -   `name:personalHealthcare,   classId:0f 00 00`
-    -   `name:activeSync,           classId:ef 01 01`
-    -   `name:palmSync,             classId:ef 01 02`
-    -   `name:deviceFirmwareUpdate, classId:fe 01 01`
-    -   `name:irda,                 classId:fe 02 00     `
-    -   `name:measurement,          classId:fe 03 *`
-    -   `name:vendorSpecific,       classId:ff * *`
+   * `name:cdcControl,           classId:02 * *`
+   * `name:physical,             classId:05 * *`
+   * `name:personalHealthcare,   classId:0f 00 00`
+   * `name:activeSync,           classId:ef 01 01`
+   * `name:palmSync,             classId:ef 01 02`
+   * `name:deviceFirmwareUpdate, classId:fe 01 01`
+   * `name:irda,                 classId:fe 02 00`
+   * `name:measurement,          classId:fe 03 *`
+   * `name:vendorSpecific,       classId:ff * *`
 
-    **Note**  If your device belongs to DeviceFirmwareUpdate class, your app must be a privileged app.
-
-
-
+   > [!NOTE]
+   > If your device belongs to DeviceFirmwareUpdate class, your app must be a privileged app.
 
 If your device does not belong to one the preceding device classes, write a Windows desktop app.
 
-
 ## Driver requirement
 
-
-| Driver requirement | UWP app                                                                                                                          | Windows desktop app                                                                                                                       |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Function driver    | Microsoft-provided [Winusb.sys](winusb-installation.md) (kernel-mode driver).                                                             | Microsoft-provided [Winusb.sys](winusb-installation.md) (kernel-mode driver).                                                            |
+| Driver requirement | UWP app | Windows desktop app |
+|--------------------|---------|---------------------|
+| Function driver    | Microsoft-provided [Winusb.sys](winusb-installation.md) (kernel-mode driver). | Microsoft-provided [Winusb.sys](winusb-installation.md) (kernel-mode driver). |
 | Filter driver      | If filter drivers are present, access is limited to privileged apps. The app is declared as privileged apps in device metadata by the OEM. | Filter driver can be present in the kernel mode device stack as long as it doesn't block access to [Winusb.sys](winusb-installation.md). |
 
-
-
 ## Code samples
-
 
 <table>
 <colgroup>
@@ -115,10 +106,7 @@ If your device does not belong to one the preceding device classes, write a Wind
 </tbody>
 </table>
 
-
-
 ## Development tools
-
 
 <table>
 <colgroup>
@@ -154,10 +142,7 @@ If your device does not belong to one the preceding device classes, write a Wind
 </tbody>
 </table>
 
-
-
 ## Feature implementation
-
 
 <table>
 <colgroup>
@@ -225,17 +210,13 @@ If your device does not belong to one the preceding device classes, write a Wind
 </tbody>
 </table>
 
-
-
 ## Documentation
 
-
-| Documentation     | UWP app                                                                     | Windows desktop app                                                                                           |
-|-------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Documentation     | UWP app | Windows desktop app |
+|-------------------|---------|---------------------|
 | Programming guide | [Talking to USB devices, start to finish](talking-to-usb-devices-start-to-finish.md) | [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) |
-| API reference     | [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb)                              | [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)                                     |
-
-
+| API reference     | [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) | [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) |
 
 ## Related topics
-[Universal Serial Bus (USB)](../index.yml)
+
+* [Universal Serial Bus (USB)](../index.yml)
