@@ -1,16 +1,15 @@
 ---
 title: Sample Interface for UVC Extension Units
-description: Sample Interface for UVC Extension Units
+description: This topic contains code for a sample interface.idl that you can use to support Extension Units.
 keywords:
 - interfaces WDK USB Video Class
 - extension units WDK USB Video Class , samples, interface
 - sample code WDK USB Video Class , interface for UVC extension units
-ms.date: 04/20/2017
+ms.date: 09/16/2021
 ms.localizationpriority: medium
 ---
 
 # Sample Interface for UVC Extension Units
-
 
 This topic contains code for a sample *interface.idl* that you can use to support Extension Units.
 
@@ -50,11 +49,3 @@ interface IExtensionUnit : IUnknown
       [in, out, size_is(ulSize)] BYTE pDefault[]);
 };
 ```
-
- 
-
- 
-
-
-
-

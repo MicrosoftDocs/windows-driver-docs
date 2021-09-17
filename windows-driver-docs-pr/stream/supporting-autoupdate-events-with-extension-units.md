@@ -1,6 +1,6 @@
 ---
 title: Supporting Autoupdate Events with Extension Units
-description: Supporting Autoupdate Events with Extension Units
+description: This topic contains sample code that demonstrates how to support autoupdate events.
 keywords:
 - autoupdate events WDK USB Video Class
 - autoupdate events WDK USB Video Class , extension units
@@ -8,12 +8,11 @@ keywords:
 - events WDK USB Video Class , autoupdate with extension units
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class , autoupdate events
-ms.date: 04/20/2017
+ms.date: 09/16/2021
 ms.localizationpriority: medium
 ---
 
 # Supporting Autoupdate Events with Extension Units
-
 
 This topic contains sample code that demonstrates how to support autoupdate events.
 
@@ -71,11 +70,3 @@ printf("Wait returned : %d\n", dwError);
 
 // handle the autoupdate event..
 ```
-
- 
-
- 
-
-
-
-

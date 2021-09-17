@@ -1,12 +1,12 @@
 ---
 title: Sample Extension Unit Descriptor
-description: Sample Extension Unit Descriptor
+description: This code demonstrates how to provide an Extension Unit descriptor at the hardware level.
 keywords:
 - Extension Unit descriptor WDK USB Video Class
 - descriptors WDK USB Video Class
 - descriptors WDK USB Video Class , sample code
 - sample code WDK USB Video Class , extension unit descriptors
-ms.date: 06/19/2020
+ms.date: 09/16/2021
 ms.localizationpriority: medium
 ---
 
