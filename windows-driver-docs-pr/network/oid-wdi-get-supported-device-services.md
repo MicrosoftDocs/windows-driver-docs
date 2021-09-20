@@ -1,13 +1,13 @@
 ---
-title: OID_WDI_GET_SUPPORTED_DEVICE_SERVICES (dot11wificxintf.h)
-description: The OID_WDI_GET_SUPPORTED_DEVICE_SERVICES command queries the IHV driver for all of its supported device services.
+title: OID_WDI_GET_SUPPORTED_DEVICE_SERVICES
+description: OID_WDI_GET_SUPPORTED_DEVICE_SERVICES queries the IHV driver for all of its supported device services.
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_GET_SUPPORTED_DEVICE_SERVICES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
 ---
 
-# OID_WDI_GET_SUPPORTED_DEVICE_SERVICES (dot11wificxintf.h)
+# OID_WDI_GET_SUPPORTED_DEVICE_SERVICES
 
 
 OID_WDI_GET_SUPPORTED_DEVICE_SERVICES queries the IHV driver for all of its supported device services (with each device service identified by a GUID). If no device services are supported, LE should fail the command with **STATUS_NOT_SUPPORTED**.
@@ -36,9 +36,9 @@ No additional parameters. The data in the header is sufficient.
 
 |Requirement|Value|
 |--- |--- |
-|Minimum supported client|Windows 10, version 1809|
-|Minimum supported server|Windows Server 2016|
-|Header|Wditypes.hpp|
+|Minimum supported client|Windows 11|
+|Minimum supported server|Windows Server 2022|
+|Header|dot11wificxintf.h|
 
  
 
