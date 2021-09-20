@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 This topic provides installation information about Netmon and the USB ETW parsers.
 
-Install Netmon from the Microsoft Download Center, and then install USB ETW parsers from [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk). The USB ETW parsers are supported in Netmon Version 3.3 and later versions.
+Install Netmon from the Microsoft Download Center, and then install USB ETW parsers from [Windows Driver Kit (WDK)](../download-the-wdk.md). The USB ETW parsers are supported in Netmon Version 3.3 and later versions.
 
 ## To install the Netmon tool and the Netmon USB parser
 
@@ -26,7 +26,7 @@ Install Netmon from the Microsoft Download Center, and then install USB ETW pars
     1. Download and run the .exe file to start the Setup Wizard.
     1. Select **Typical** when you are asked to choose the setup type.
 
-1. Install the WDK from [Windows Driver Kit (WDK))](/windows-hardware/drivers/download-the-wdk).
+1. Install the WDK from [Windows Driver Kit (WDK))](../download-the-wdk.md).
 1. Allow execution of PowerShell scripts:
     1. On the Start screen, type "powershell", right-click on the Windows PowerShell result, and select **Run as administrator**.
     1. In the PowerShell window, type this command:
@@ -59,4 +59,4 @@ Netmon is now configured for use with a USB ETW trace file. For more information
 
 * [Using USB ETW](using-usb-etw.md)  
 * [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
-* [How to open an ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)  
+* [How to open an ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)

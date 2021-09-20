@@ -74,7 +74,7 @@ Call [**FltIsEcpFromUserMode**](/windows-hardware/drivers/ddi/fltkernel/nf-fltke
 
 ## Using lookaside lists to allocate ECPs
 
-Call the following routines to allocate ECPs from [lookaside lists](/windows-hardware/drivers/kernel/using-lookaside-lists) and to manage the lookaside lists and ECPs:
+Call the following routines to allocate ECPs from [lookaside lists](../kernel/using-lookaside-lists.md) and to manage the lookaside lists and ECPs:
 
 - Call [**FltInitExtraCreateParameterLookasideList**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltinitextracreateparameterlookasidelist) (or [**FsRtlInitExtraCreateParameterLookasideList**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinitextracreateparameterlookasidelist)) to initialize a paged or nonpaged pool lookaside list that is used for the allocation of one or more ECP context structures of fixed size.
 

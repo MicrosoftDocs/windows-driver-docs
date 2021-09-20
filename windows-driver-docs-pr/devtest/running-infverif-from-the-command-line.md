@@ -77,7 +77,7 @@ infverif.exe /w test*.inf
 
 ## InfVerif and MSBuild tasks
 
-MSBuild runs InfVerif as a task automatically, right after the [Stampinf task](/windows-hardware/drivers/devtest/stampinf-task).
+MSBuild runs InfVerif as a task automatically, right after the [Stampinf task](./stampinf-task.md).
 It uses the **Target Platform** in the project properties (**Configuration Properties->Driver Settings**) to auto-configure as follows:
 
 * Target Platform = Desktop uses `InfVerif /k`
