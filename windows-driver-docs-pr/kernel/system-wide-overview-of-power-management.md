@@ -22,7 +22,7 @@ Applications and users can affect power management decisions through Control Pan
 
 The power manager administers the system-wide *power policy*, the rules that govern the system's power usage. (For more information, see [System Power Policy](system-power-policy.md).) Using information from Control Panel and APIs, the power manager can determine when applications are using, or might need to use, various devices, so that it can adjust the system's power policy appropriately.
 
-The power manager also provides an interface for drivers, comprising [power management support routines](/windows-hardware/drivers/ddi/index), [power management minor IRPs](./power-management-minor-irps.md), and required driver entry points.
+The power manager also provides an interface for drivers, comprising [power management support routines](./device-power-management-reference.md), [power management minor IRPs](./power-management-minor-irps.md), and required driver entry points.
 
 When the power manager requests a change to the system power state, drivers respond by putting their devices in an appropriate device power state. In addition, drivers can perform idle detection for their devices and put unused devices in a sleep state. Bus-specific mechanisms report device power capabilities, set and report device status, and change device power. Exactly how and when device power is changed depends on the type of device and the capabilities of the device hardware.
 
