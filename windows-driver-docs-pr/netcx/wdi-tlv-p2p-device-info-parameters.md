@@ -22,7 +22,7 @@ WDI\_TLV\_P2P\_DEVICE\_INFO\_PARAMETERS is a TLV that contains Wi-Fi Direct devi
 
 The sum (in bytes) of the sizes of all contained elements. 
 
-**Note**  WDI\_P2P\_DEVICE\_TYPE is not a WiFiCx structure. It is defined in the WiFiCx TLV parser generator, and is used for documentation purposes only.
+**Note**  WDI\_P2P\_DEVICE\_TYPE is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
 ## Values
 

@@ -104,6 +104,8 @@
       href: wdi-tlv-additional-probe-response-ies.md
     - name: "WDI_TLV_ALLOWED_BSSIDS_LIST"
       href: wdi-tlv-allowed-bssids-list.md
+    - name: "WDI_TLV_ANQP_ELEMENTS"
+      href: wdi-tlv-anqp-elements.md
     - name: "WDI_TLV_AP_BAND_CHANNEL"
       href: wdi-tlv-ap-band-channel.md
     - name: "WDI_TLV_AP_BAND_INFORMATION"
@@ -114,6 +116,8 @@
       href: wdi-tlv-association-request-device-context.md
     - name: "WDI_TLV_ASSOCIATION_REQUEST_FRAME"
       href: wdi-tlv-association-request-frame.md
+    - name: "WDI_TLV_ASSOCIATION_REQUEST_IES"
+      href: wdi-tlv-association-request-ies.md
     - name: "WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS"
       href: wdi-tlv-association-response-parameters.md
     - name: "WDI_TLV_ASSOCIATION_RESPONSE_RESULT_PARAMETERS"
@@ -148,6 +152,8 @@
       href: wdi-tlv-bss-entry-channel-info.md
     - name: "WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT"
       href: wdi-tlv-bss-entry-device-context.md
+    - name: "WDI_TLV_BSS_ENTRY_PHY_INFO"
+      href: wdi-tlv-bss-entry-phy-info.md
     - name: "WDI_TLV_BSS_ENTRY_SIGNAL_INFO"
       href: wdi-tlv-bss-entry-signal-info.md
     - name: "WDI_TLV_BSS_SELECTION_PARAMETERS"
@@ -166,6 +172,8 @@
       href: wdi-tlv-channel-list.md
     - name: "WDI_TLV_CHANNEL_NUMBER"
       href: wdi-tlv-channel-number.md
+    - name: "WDI_TLV_CHANNEL_WIDTH_LIST"
+      href: wdi-tlv-channel-width-list.md
     - name: "WDI_TLV_CIPHER_KEY_BIP_KEY"
       href: wdi-tlv-cipher-key-bip-key.md
     - name: "WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY"
@@ -174,6 +182,8 @@
       href: wdi-tlv-cipher-key-ccmp-key.md
     - name: "WDI_TLV_CIPHER_KEY_GCMP_256_KEY"
       href: wdi-tlv-cipher-key-gcmp-256-key.md
+    - name: "WDI_TLV_CIPHER_KEY_GCMP_KEY"
+      href: wdi-tlv-cipher-key-gcmp-key.md
     - name: "WDI_TLV_CIPHER_KEY_ID"
       href: wdi-tlv-cipher-key-id.md
     - name: "WDI_TLV_CIPHER_KEY_IHV_KEY"
@@ -232,6 +242,8 @@
       href: wdi-tlv-ethertype-encap-table.md
     - name: "WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES"
       href: wdi-tlv-extra-association-request-ies.md
+    - name: "WDI_TLV_FIRMWARE_VERSION"
+      href: wdi-tlv-firmware-version.md
     - name: "WDI_TLV_FT_AUTH_REQUEST"
       href: wdi-tlv-ft-auth-request.md
     - name: "WDI_TLV_FT_AUTH_RESPONSE"
@@ -248,10 +260,16 @@
       href: wdi-tlv-ft-mde.md
     - name: "WDI_TLV_FT_PMKR0NAME"
       href: wdi-tlv-ft-pmkr0name.md
+    - name: "WDI_TLV_FT_R0KHID"
+      href: wdi-tlv-ft-r0khid.md
+    - name: "WDI_TLV_FT_R1KHID"
+      href: wdi-tlv-ft-r1khid.md
     - name: "WDI_TLV_FT_REASSOC_PARAMETERS"
       href: wdi-tlv-ft-reassoc-parameters.md
     - name: "WDI_TLV_FT_RSNIE"
       href: wdi-tlv-ft-rsnie.md
+    - name: "WDI_TLV_FT_SNONCE"
+      href: wdi-tlv-ft-snonce.md
     - name: "WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS"
       href: wdi-tlv-ftm-number-of-measurements.md
     - name: "WDI_TLV_FTM_REQUEST_TIMEOUT"
@@ -268,10 +286,14 @@
       href: wdi-tlv-hessid.md
     - name: "WDI_TLV_HESSID_INFO"
       href: wdi-tlv-hessid-info.md
+    - name: "WDI_TLV_HOTSPOT_DOMAIN_PARTNER"
+      href: wdi-tlv-hotspot-domain-partner.md
     - name: "WDI_TLV_HOTSPOT_INDICATION_ELEMENT"
       href: wdi-tlv-hotspot-indication-element.md
     - name: "WDI_TLV_IHV_DATA"
       href: wdi-tlv-ihv-data.md
+    - name: "WDI_TLV_IHV_NON_WDI_OIDS_LIST"
+      href: wdi-tlv-ihv-non-wdi-oids-list.md
     - name: "WDI_TLV_IHV_TASK_DEVICE_CONTEXT"
       href: wdi-tlv-ihv-task-device-context.md
     - name: "WDI_TLV_IHV_TASK_REQUEST_PARAMETERS"
@@ -302,12 +324,18 @@
       href: wdi-tlv-mac-statistics.md
     - name: "WDI_TLV_MULTICAST_CIPHER_ALGO_LIST"
       href: wdi-tlv-multicast-cipher-algo-list.md
+    - name: "WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST"
+      href: wdi-tlv-multicast-data-algorithm-list.md
+    - name: "WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST"
+      href: wdi-tlv-multicast-mgmt-algorithm-list.md
     - name: "WDI_TLV_NEIGHBOR_REPORT_ENTRY"
       href: wdi-tlv-neighbor-report-entry.md
     - name: "WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG"
       href: wdi-tlv-network-list-offload-config.md
     - name: "WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS"
       href: wdi-tlv-network-list-offload-parameters.md
+    - name: "WDI_TLV_NETWORK_OFFLOAD_CHANNELS"
+      href: wdi-tlv-network-offload-channels.md
     - name: "WDI_TLV_NEXT_DIALOG_TOKEN"
       href: wdi-tlv-next-dialog-token.md
     - name: "WDI_TLV_OPERATING_CLASS"
@@ -388,6 +416,10 @@
       href: wdi-tlv-p2p-device-address.md
     - name: "WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS"
       href: wdi-tlv-p2p-incoming-frame-parameters.md
+    - name: "WDI_TLV_P2P_INSTANCE_NAME_HASH"
+      href: wdi-tlv-p2p-instance-name-hash.md
+    - name: "WDI_TLV_P2P_INTERFACE_ADDRESS_LIST"
+      href: wdi-tlv-p2p-interface-address-list.md
     - name: "WDI_TLV_P2P_INVITATION_REQUEST_INFO"
       href: wdi-tlv-p2p-invitation-request-info.md
     - name: "WDI_TLV_P2P_INVITATION_REQUEST_PARAMETERS"
@@ -396,6 +428,10 @@
       href: wdi-tlv-p2p-invitation-response-info.md
     - name: "WDI_TLV_P2P_INVITATION_RESPONSE_PARAMETERS"
       href: wdi-tlv-p2p-invitation-response-parameters.md
+    - name: "WDI_TLV_KCK_CONTENT"
+      href: wdi-tlv-kck-content.md
+    - name: "WDI_TLV_KEK_CONTENT"
+      href: wdi-tlv-kek-content.md
     - name: "WDI_TLV_P2P_LISTEN_CHANNEL"
       href: wdi-tlv-p2p-listen-channel.md
     - name: "WDI_TLV_P2P_LISTEN_DURATION"
@@ -414,14 +450,20 @@
       href: wdi-tlv-p2p-provision-discovery-response-parameters.md
     - name: "WDI_TLV_P2P_PROVISION_DISCOVERY_RESULT_PARAMETERS"
       href: wdi-tlv-p2p-send-action-frame-result-parameters.md
+    - name: "WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES"
+      href: wdi-tlv-p2p-provision-service-attributes.md
+    - name: "WDI_TLV_P2P_RESPONSE_FRAME_PARAMETERS"
+      href: wdi-tlv-p2p-response-frame-parameters.md
     - name: "WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT"
       href: wdi-tlv-p2p-send-action-frame-result.md
     - name: "WDI_TLV_P2P_SEND_ACTION_REQUEST_FRAME_PARAMETERS"
       href: wdi-tlv-p2p-send-action-request-frame-parameters.md
+    - name: "WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY"
+      href: wdi-tlv-p2p-service-information-entry.md
     - name: "WDI_TLV_P2P_SERVICE_SESSION_INFO"
       href: wdi-tlv-p2p-service-session-info.md
-    - name: "WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES"
-      href: wdi-tlv-p2p-provision-service-attributes.md
+    - name: "WDI_TLV_P2P_SERVICE_TYPE_HASH"
+      href: wdi-tlv-p2p-service-type-hash.md
     - name: "WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST"
       href: wdi-tlv-p2p-secondary-device-type-list.md
     - name: "WDI_TLV_P2P_SERVICE_INFORMATION"
@@ -444,6 +486,8 @@
       href: wdi-tlv-p2p-wps-enabled.md
     - name: "WDI_TLV_PEER_MAC_ADDRESS"
       href: wdi-tlv-peer-mac-address.md
+    - name: "WDI_TLV_PHY_LIST"
+      href: wdi-tlv-phy-list.md
     - name: "WDI_TLV_PHY_TYPE_LIST"
       href: wdi-tlv-phy-type-list.md
     - name: "WDI_TLV_PHY_STATISTICS"
@@ -460,10 +504,14 @@
       href: wdi-tlv-privacy-exemption-entry.md
     - name: "WDI_TLV_PROBE_RESPONSE_FRAME"
       href: wdi-tlv-probe-response-frame.md
+    - name: "WDI_TLV_PROTOCOL_OFFLOAD_ID"
+      href: wdi-tlv-protocol-offload-id.md
     - name: "WDI_TLV_RADIO_STATE"
       href: wdi-tlv-radio-state.md
     - name: "WDI_TLV_RADIO_STATE_PARAMETERS"
       href: wdi-tlv-radio-state-parameters.md
+    - name: "WDI_TLV_REPLAY_COUNTER"
+      href: wdi-tlv-replay-counter.md
     - name: "WDI_TLV_REQUEST_LCI_REPORT"
       href: wdi-tlv-request-lci-report.md
     - name: "WDI_TLV_RETRY_AFTER"
@@ -516,12 +564,16 @@
       href: wdi-tlv-set-cipher-key-info.md
     - name: "WDI_TLV_SSID"
       href: wdi-tlv-ssid.md
+    - name: "WDI_TLV_SSID_LIST"
+      href: wdi-tlv-ssid-list.md
     - name: "WDI_TLV_SSID_OFFLOAD"
       href: wdi-tlv-ssid-offload.md
     - name: "WDI_TLV_START_AP_PARAMETERS"
       href: wdi-tlv-start-ap-parameters.md
     - name: "WDI_TLV_STATUS"
       href: wdi-tlv-status.md
+    - name: "WDI_TLV_SUPPORTED_GUIDS"
+      href: wdi-tlv-supported-guids.md
     - name: "WDI_TLV_TKIP_MIC_FAILURE_INFO"
       href: wdi-tlv-tkip-mic-failure-info.md
     - name: "WDI_TLV_UNAVAILABLE_BAND_LIST"

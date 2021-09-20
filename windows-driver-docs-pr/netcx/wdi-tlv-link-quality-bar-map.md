@@ -22,7 +22,7 @@ WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP is a TLV that contains the mapping of signal q
 
 The size (in bytes) of the array of WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS elements. The array must contain 1 or more elements.
 
-**Note**  WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS is not a WiFiCx structure. It is defined in the WiFiCx TLV parser generator, and is used for documentation purposes only.
+**Note**  WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
  
 

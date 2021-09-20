@@ -22,7 +22,7 @@ WDI\_TLV\_P2P\_SECONDARY\_DEVICE\_TYPE\_LIST is a TLV that contains a list of se
 
 The size (in bytes) of the array of WDI\_P2P\_DEVICE\_TYPE elements. An array length of 0 is allowed.
 
-**Note**  WDI\_P2P\_DEVICE\_TYPE is not a WiFiCx structure. It is defined in the WiFiCx TLV parser generator, and is used for documentation purposes only.
+**Note**  WDI\_P2P\_DEVICE\_TYPE is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
  
 

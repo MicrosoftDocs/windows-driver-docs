@@ -1,22 +1,21 @@
 ---
-title: WDI_TLV_UNICAST_ALGORITHM_LIST (dot11wificxtypes.hpp)
-description: WDI_TLV_UNICAST_ALGORITHM_LIST is a WiFiCx TLV that contains an array of unicast data algorithm pairs.
-ms.date: 06/30/2021
+title: WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST (dot11wificxtypes.hpp)
+description: WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST is a WiFiCx TLV that contains an array of multicast management algorithm pairs.
+ms.date: 09/30/2021
 keywords:
- - WDI_TLV_UNICAST_ALGORITHM_LIST Network Drivers Starting with Windows Vista
+ - WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_UNICAST\_ALGORITHM\_LIST (dot11wificxtypes.hpp)
+# WDI\_TLV\_MULTICAST\_MGMT\_ALGORITHM\_LIST (dot11wificxtypes.hpp)
 
 
-
-WDI\_TLV\_UNICAST\_ALGORITHM\_LIST is a TLV that contains an array of unicast data algorithm pairs.
+WDI\_TLV\_MULTICAST\_MGMT\_ALGORITHM\_LIST is a TLV that contains an array of multicast management algorithm pairs.
 
 ## TLV Type
 
 
-0x13
+0x15
 
 ## Length
 
@@ -26,6 +25,8 @@ The size (in bytes) of the array of WDI\_ALGO\_PAIRS elements. The array must co
 **Note**  WDI\_ALGO\_PAIRS is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
  
+
+The size (in bytes) of the array of algorithm pairs.
 
 ## Values
 
