@@ -3,7 +3,7 @@ title: CM_PROB_REGISTRY
 description: CM_PROB_REGISTRY
 keywords:
 - CM_PROB_REGISTRY
-ms.date: 04/20/2017
+ms.date: 09/21/2021
 ms.localizationpriority: medium
 ---
 
@@ -38,3 +38,8 @@ To uninstall and reinstall a device driver, follow these steps:
 5. On the **Action** menu, click **Scan for hardware changes** to reinstall the device driver.
 
 To roll a system back to the most recent successful configuration of the registry, restart the computer in Safe Mode and select the Last Known Good Configuration option.
+
+## For driver developers
+
+The [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device should indicate a failure code that may provide more context on the problem. A common cause of this problem is that a driver service that was specified as a device filter for this device or a class filter for the class this device is in is a service that does not exist.  In that situation, the [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device will typically be STATUS_OBJECT_NAME_NOT_FOUND (0xc0000034).  
+
