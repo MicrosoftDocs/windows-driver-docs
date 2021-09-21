@@ -38,7 +38,7 @@ No additional parameters. The data in the header is sufficient.
 |--- |--- |
 |Minimum supported client|Windows 10, version 1809|
 |Minimum supported server|Windows Server 2016|
-|Header|Wditypes.hpp|
+|Header|dot11wificxintf.h|
 
  
 

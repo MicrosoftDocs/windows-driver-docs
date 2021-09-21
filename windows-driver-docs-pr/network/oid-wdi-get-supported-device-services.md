@@ -38,7 +38,7 @@ No additional parameters. The data in the header is sufficient.
 |--- |--- |
 |Minimum supported client|Windows 11|
 |Minimum supported server|Windows Server 2022|
-|Header|dot11wificxintf.h|
+|Header|Dot11wdi.h|
 
  
 
