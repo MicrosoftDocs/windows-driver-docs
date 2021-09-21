@@ -118,6 +118,10 @@
       href: wdi-tlv-association-request-frame.md
     - name: "WDI_TLV_ASSOCIATION_REQUEST_IES"
       href: wdi-tlv-association-request-ies.md
+    - name: "WDI_TLV_ASSOCIATION_RESPONSE_FRAME"
+      href: wdi-tlv-association-response-frame.md
+    - name: "WDI_TLV_ASSOCIATION_RESPONSE_IES"
+      href: wdi-tlv-association-response-ies.md
     - name: "WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS"
       href: wdi-tlv-association-response-parameters.md
     - name: "WDI_TLV_ASSOCIATION_RESPONSE_RESULT_PARAMETERS"
@@ -126,8 +130,6 @@
       href: wdi-tlv-association-result.md
     - name: "WDI_TLV_ASSOCIATION_RESULT_PARAMETERS"
       href: wdi-tlv-association-result-parameters.md
-    - name: "WDI_TLV_ASSOCIATION_RESPONSE_FRAME"
-      href: wdi-tlv-association-response-frame.md
     - name: "WDI_TLV_AUTH_ALGO_LIST"
       href: wdi-tlv-auth-algo-list.md
     - name: "WDI_TLV_AUTHENTICATION_RESPONSE_FRAME"
