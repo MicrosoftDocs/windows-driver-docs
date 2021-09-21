@@ -766,8 +766,6 @@
       href: ndis-status-wdi-indication-stop-ap-complete.md
     - name: "NDIS_STATUS_WDI_INDICATION_TKIP_MIC_FAILURE"
       href: ndis-status-wdi-indication-tkip-mic-failure.md
-  - name: "WiFiCx design guide"
-    items:
   - name: "WiFiCx WPA3-SAE authentication"
     href: wificx-wpa3-sae-authentication.md
   - name: "WiFiCx design guide"

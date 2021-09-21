@@ -43,4 +43,6 @@ The topics in this section assume you already know how to write a [NetAdapterCx 
 
 [WiFiCx WPA3-SAE authentication](wificx-wpa3-sae-authentication.md)
 
+[WiFiCx design guide](wificx-low-latency-connection-quality.md)
+
 [Dual STA connectivity](dual-sta-connectivity.md)
