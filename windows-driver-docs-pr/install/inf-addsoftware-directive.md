@@ -2,7 +2,7 @@
 title: INF AddSoftware Directive
 description: An AddSoftware directive describes the installation of standalone software.
 ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.date: 09/22/2021
 ---
 
 # INF AddSoftware Directive
@@ -36,6 +36,8 @@ The **AddSoftware** directive is processed only once.
 
 **0x00000001**  
 The **AddSoftware** directive is processed once for each component device that specifies **AddSoftware** with the same unique *SoftwareName*.
+
+For example, consider a configuration in which three devices are installed using the same INF file. The software installation process runs only once for *flags* 0x00000000 but three times for *flags* 0x00000001.
 
 *software-install-section*
 
