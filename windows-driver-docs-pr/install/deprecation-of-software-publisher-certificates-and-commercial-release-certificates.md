@@ -139,6 +139,3 @@ If you have challenges signing your driver with WHCP, please report the specific
 ## Related information
 
 * [Register for the Hardware Program](../dashboard/register-for-the-hardware-program.md)
-* [Software Publisher Certificate](software-publisher-certificate.md)
-* [Commercial Release Certificate](commercial-release-certificate.md)
-* [Commercial Test Certificate](commercial-test-certificate.md)
