@@ -2,6 +2,7 @@
 title: KSPIN_MEDIUM structure (ks.h)
 description: The KSPIN_MEDIUM structure identifies a specific connection on a communication bus.
 ms.date: 07/07/2021
+ms.custom: contperf-fy22q1
 ms.localizationpriority: medium
 ---
 
