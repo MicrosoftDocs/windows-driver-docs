@@ -4,20 +4,26 @@ description: Deprecation of Software Publisher Certificates, Commercial Release 
 keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
-ms.date: 08/01/2019
+ms.date: 09/22/2021
 ms.localizationpriority: medium
 ---
 
 # Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
 
+> [!CAUTION] 
+> The majority of cross-certificates expired in July 2021.
+> You cannot use code signing certificates that chain to expired cross-certificates to create new kernel mode digital signatures for any version of Windows.
+
 The [Microsoft Trusted Root Program](/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities.
 
 For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
-Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration.
-As a result, all [software publisher certificates](software-publisher-certificate.md), [commercial release certificates](commercial-release-certificate.md), and [commercial test certificates](commercial-test-certificate.md) that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md).
+Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration. All software publisher certificates, commercial release certificates, and commercial test certificates that chain back to these root certificates also become invalid on the same schedule.
+
+To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md).
 
 ## Frequently asked questions
+
 * [What is the expiration schedule of the trusted cross-certificates?](#what-is-the-expiration-schedule-of-the-trusted-cross-certificates)
 * [What alternatives to cross signed certificates are available for testing drivers?](#what-alternatives-to-cross-signed-certificates-are-available-for-testing-drivers)
 * [What will happen to my existing signed driver packages?](#what-will-happen-to-my-existing-signed-driver-packages)
@@ -33,7 +39,7 @@ As a result, all [software publisher certificates](software-publisher-certificat
 
 ### What is the expiration schedule of the trusted cross-certificates?
 
-The majority of cross-signed root certificates will expire in 2021, according to the following schedule:
+The majority of cross-signed root certificates expired in 2021, according to the following schedule:
 
 |Common Name| Expiration date|
 |-----------|---------------|
@@ -133,6 +139,3 @@ If you have challenges signing your driver with WHCP, please report the specific
 ## Related information
 
 * [Register for the Hardware Program](../dashboard/register-for-the-hardware-program.md)
-* [Software Publisher Certificate](software-publisher-certificate.md)
-* [Commercial Release Certificate](commercial-release-certificate.md)
-* [Commercial Test Certificate](commercial-test-certificate.md)
