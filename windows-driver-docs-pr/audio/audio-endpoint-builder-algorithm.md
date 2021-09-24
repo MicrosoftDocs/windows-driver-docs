@@ -7,7 +7,6 @@ ms.localizationpriority: medium
 
 # Audio Endpoint Builder Algorithm
 
-
 In Windows Vista and later versions of Windows, the AudioEndpointBuilder is a system service that enumerates, initializes, and activates the audio endpoints in a system. This topic provides an overview of the algorithm that is used by the AudioEndpointBuilder service.
 
 The AudioEndpointBuilder service uses an algorithm to discover and enumerate endpoints. The algorithm was designed to simplify the system access to multiplexed (MUXed) capture devices and to help work with topologies that involve multiple host pins and multiple bridge pins, or both.
@@ -60,7 +59,7 @@ If you develop your own audio device driver and INF file to work with your audio
 
         In the following diagram, the KS filter is shown to have two host pins that are connected to a single bridge pin (Speaker).
 
-        ![problematic topology showing ac-3 host pin with hidden endpoint on left side is individual pcm and ac-3]sharing single filter (images/hidden-endpoint-bad.png)
+        ![problematic topology showing ac-3 host pin with hidden endpoint on left side is individual pcm and ac-3 sharing single filter](images/hidden-endpoint-bad.png)
 
         When the AudioEndpointBuilder discovers this bridge pin, it traces a path back to only one of the host pins, sets the default values for the bridge pin, creates and activates a Speaker endpoint, and continues to discover other bridge pins. Thus, the other host pin remains hidden from the AudioEndpointBuilder.
 
@@ -85,38 +84,11 @@ If you develop your own audio device driver and INF file to work with your audio
 -   Default device. The endpoint that is set as the default device is selected at the time of installation by using information in the INF file. After installation has completed, you must use Control Panel or a third-party application to select another endpoint to be the default endpoint.
 
 **Note**   If your INF file does not select an endpoint to be set as default during installation, a client application can use the MMDevice API to select an endpoint. The API bases its selection on the form factor rank and whether the endpoint is a render or a capture endpoint. The following table shows the selection order.
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Render rank</th>
-<th align="left">Capture rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Speakers</p></td>
-<td align="left"><p>Microphone</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Line-out</p></td>
-<td align="left"><p>Line-in</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SPDIF</p></td>
-<td align="left"><p>SPDIF</p></td>
-</tr>
-</tbody>
-</table>
-
  
-
+| Render rank | Capture rank |
+|-------------|--------------|
+| Speakers    | Microphone   |
+| Line-out    | Line-in      |
+| SPDIF       | SPDIF        |
  
-
 If you use the MMDevice API to select a default endpoint and the available endpoints are ranked the same, the MMDevice API will alphabetize the Endpoint IDs to determine which endpoint to select as default. For example, if an audio adapter has both line-out and line-in connectors, and the associated INF file does not select either one to be the default at the time of installation, the MMDevice API identifies which Endpoint IDs is first alphabetically and sets that connector as the default. This selection persists after you restart the system because the Endpoint IDs are persistent. However, the selection does not persist if a higher-ranking endpoint (for example, a second adapter with a microphone connector) appears in the system.
-
- 
-
