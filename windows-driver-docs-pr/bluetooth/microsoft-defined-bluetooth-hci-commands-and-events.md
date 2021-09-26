@@ -153,11 +153,11 @@ HCI_VS_MSFT_Monitor_Rssi requests that the controller starts monitoring the meas
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_Read_Supported_Features|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_handle</li><li>RSSI_threshold_high</li><li>RSSI_threshold_low</li><li>RSSI_threshold_low_time_interval</li><li>RSSI_sampling_period</li></ul>|<ul><li>Status</li><li>Subcommand_opcode</ul>|
+|HCI_VS_MSFT_Monitor_Rssi|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_Handle</li><li>RSSI_threshold_high</li><li>RSSI_threshold_low</li><li>RSSI_threshold_low_time_interval</li><li>RSSI_sampling_period</li></ul>|<ul><li>Status</li><li>Subcommand_opcode</ul>|
 
 The controller shall notify the host of the RSSI value with a periodically generated event (based on the _RSSI_sampling_period_). The measured link RSSI shall be the **absolute** receiver signal strength value in dBm for the BR/EDR connection.
 In response to a HCI_VS_MSFT_Monitor_Rssi command, the controller shall generate a Command Complete event with status equaling zero if the controller can begin monitoring, or a non-zero status otherwise. If the status value is non-zero, the controller shall not generate an [HCI_VS_MSFT_Rssi_Event](#hci_vs_msft_rssi_event) in response to this command.
-The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi command with the same _Connection_handle_ is outstanding, or if the specified connection handle is invalid. The controller may also refuse the command for other reasons, such as resource exhaustion.
+The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi command with the same _Connection_Handle_ is outstanding, or if the specified connection handle is invalid. The controller may also refuse the command for other reasons, such as resource exhaustion.
 
 #### State_diagram
 
@@ -177,11 +177,11 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x01   |  The subcommand opcode for HCI_VS_MSFT_Monitor_Rssi.|
 
-Connection_handle (2 octets):
+Connection_Handle (2 octets):
 
 | Value  |  Parameter description |
 |---|---|
-|0x_XXXX   |  The handle for the connection whose RSSI must be monitored.|
+|0xXXXX   |  The handle for the connection whose RSSI must be monitored.|
 
 RSSI_threshold_high (1 octet):
 
@@ -246,7 +246,7 @@ The controller shall promptly generate a Command Completed event in response to 
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_Cancel_Monitor_Rssi|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_handle</li>|<ul><li>Status</li><li>Subcommand_opcode</ul>|
+|HCI_VS_MSFT_Cancel_Monitor_Rssi|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_Handle</li>|<ul><li>Status</li><li>Subcommand_opcode</ul>|
 
 #### Command_parameters
 
@@ -256,11 +256,11 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x02   |  The subcommand opcode for HCI_VS_MSFT_Cancel_Monitor_Rssi.|
 
-Connection_handle (1 octets):
+Connection_Handle (1 octets):
 
 | Value  |  Parameter description |
 |---|---|
-|0x_XXXX   |  The handle for the connection whose RSSI must be canceled.|
+|0xXXXX   |  The handle for the connection whose RSSI must be canceled.|
 
 #### Return_parameters
 
@@ -292,7 +292,7 @@ HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitor
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_LE_Monitor_Advertisement|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_handle</li>|<ul><li>Status</li><li>Subcommand_opcode<li>Monitor_handle</li></ul>|
+|HCI_VS_MSFT_LE_Monitor_Advertisement|Chosen base code |<ul><li>Subcommand_opcode</li><li>RSSI_threshold_high</li><li>RSSI_threshold_low</li><li>RSSI_threshold_low_time_interval</li><li>RSSI_sampling_period</li><li>Condition_type</li><li>Condition: Number_of_patterns</li><li>Condition: Pattern_data</li></ul>|<ul><li>Status</li><li>Subcommand_opcode<li>Monitor_handle</li></ul>|
 
 The controller shall generate a Command Complete event in response to this command. The status value should be set to zero if the controller can begin monitoring, or a non-zero status otherwise.
 If the controller does not support RSSI monitoring for LE Advertisements, it shall ignore the _RSSI_threshold_high_, _RSSI_threshold_low_, _RSSI_threshold_low_time_interval_, and _RSSI_sampling_period_ parameter values.
@@ -449,7 +449,7 @@ Address_type (1 octet):
 |0x01| Random Device Address.|
 |0x02 - 0xFF| Reserved values for future use.|
 
-Address_type (1 octet):
+BD_ADDR (6 octets):
 
 | Value  |  Parameter description |
 |---|---|
@@ -499,7 +499,7 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x04   |  The subcommand opcode for HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement.|
 
-Connection_handle (1 octet):
+Connection_Handle (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
@@ -519,7 +519,7 @@ Subcommand_opcode (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-|0x04| The subcommand opcode for HCI_VS_MSFT_LE_Cancel_Monitor_Adver. |
+|0x04| The subcommand opcode for HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement. |
 
 #### Events_generated__unless_masked_away
 
@@ -584,7 +584,7 @@ HCI_VS_MSFT_Read_Absolute_RSSI reads the **absolute** Received Signal Strength I
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_Read_Absolute_RSSI|Chosen base code |<ul><li>Subcommand_opcode</li><li>Handle</li>|<ul><li>Status</li><li>Subcommand_opcode</li><li>Handle</li><li>RSSI</li></ul>|
+|HCI_VS_MSFT_Read_Absolute_RSSI|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_Handle</li>|<ul><li>Status</li><li>Subcommand_opcode</li><li>Connection_Handle</li><li>RSSI</li></ul>|
 
 A connection handle is provided as both a command and return parameter to identify the ACL connection whose RSSI is being read. The RSSI metric is the **absolute** receiver signal strength in dBm to ± 6 dB accuracy. If the RSSI cannot be read, the RSSI metric shall be set to 127.
 The controller shall always complete this command promptly with a Command Completed event.
@@ -597,11 +597,11 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x06|  The subcommand opcode for HCI_VS_MSFT_Read_Absolute_RSSI.|
 
-Handle (2 octets):
+Connection_Handle (2 octets):
 
 | Value  |  Parameter description |
 |---|---|
-|0x_XXXX_|The handle for the BR/EDR connection whose RSSI has to be read.|
+|0xXXXX|The handle for the BR/EDR connection whose RSSI has to be read.|
 
 #### Return_parameters
 
@@ -618,7 +618,7 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x06|The subcommand opcode for HCI_VS_MSFT_Read_Absolute_RSSI.|
 
-Handle (2 octets):
+Connection_Handle (2 octets):
 
 |Value|Parameter description|
 |---|---|
@@ -650,7 +650,7 @@ If the _Status_ parameter is zero, the command completed because the RSSI value 
 
 |Event|Event Code|Microsoft event code|Event parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_RSSI_Event|0xFF|0x01|<p>Event_prefix</p><p>Microsoft_event_code</p><p>Status</p><p>Connection_handle</p><p>RSSI</p>
+|HCI_VS_MSFT_RSSI_Event|0xFF|0x01|<p>Event_prefix</p><p>Microsoft_event_code</p><p>Status</p><p>Connection_Handle</p><p>RSSI</p>
 
 #### Event_parameters
 
@@ -673,11 +673,11 @@ Status (1 octet):
 |0x00|Success. The RSSI value of the connection has met one of the following conditions.<ul><li>The RSSI reached or exceeded _RSSI_threshold_high_.</li><li>The RSSI reached or dropped below _RSSI_threshold_low_ over _RSSI_threshold_low_time_interval_ seconds.</li><li>The _RSSI_sampling_period_ has expired and this event was generated to notify the host of the RSSI value.</li></ul>|
 |0x01&#160;-&#160;0xFF|Failure. The RSSI value of the connection can no longer be monitored. The error code is usually one of codes that describes why the underlying ACL connection was lost.|
 
-Connection_handle (2 octets):
+Connection_Handle (2 octets):
 
 |Value|Parameter description|
 |---|---|
-|0x_XXXX_|The handle for the connection whose RSSI is to be monitored.|
+|0xXXXX|The handle for the connection whose RSSI is to be monitored.|
 
 RSSI (1 octet):
 
@@ -723,13 +723,13 @@ BD_ADDR (6 octets):
 
 |Value|Parameter description|
 |---|---|
-|0x_XXXXXXXXXXXX_|The Bluetooth address of the device.|
+|0xXXXXXXXXXXXX|The Bluetooth address of the device.|
 
 Monitor_handle (1 octet):
 
 |Value|Parameter description|
 |---|---|
-|0x_XX_|The handle to the filter that was specified for the [HCI_VS_MSFT_LE_Monitor_Advertisement](#hci_vs_msft_le_monitor_advertisement) command.|
+|0xXX|The handle to the filter that was specified for the [HCI_VS_MSFT_LE_Monitor_Advertisement](#hci_vs_msft_le_monitor_advertisement) command.|
 
 Monitor_state (1 octet):
 
