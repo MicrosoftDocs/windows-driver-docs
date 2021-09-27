@@ -286,7 +286,7 @@ The controller shall generate a Command Complete event when the HCI_VS_MSFT_Canc
 HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitoring for advertisements that fall within the specified RSSI range and also satisfy one of the following conditions:
 
 - A specified pattern can be matched to the received advertisement packet.
-- A specified UUID can be matched to the received advertisement packe
+- A specified UUID can be matched to the received advertisement packet.
 - A specified Identity Resolution Key (IRK) can be used to resolve the private address of the device from which the advertisement packet originated.
 - A specified Bluetooth Address can be matched to the received advertisement packet.
 
