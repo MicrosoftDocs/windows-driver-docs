@@ -1,7 +1,7 @@
 ---
 title: Language Specification 1
 description: Language Specification 1
-ms.date: 01/27/2021
+ms.date: 09/27/2021
 ms.localizationpriority: medium
 ---
 
@@ -116,7 +116,7 @@ The \[ini\] section of the data block contains variables that describe the requi
 <span id="VERSION"></span><span id="version"></span>**VERSION**  
 The language specification version. This variable is required. If you develop a script based on the current language specification, set this value to 1. The SrcSrv client code does not attempt to execute any script that has a value greater than its own. Current versions of SrcSrv use a value of 2.
 
-<span id="VERCTL"></span><span id="verctl"></span>**VERCTL**  
+<span id="VERCTRL"></span><span id="verctrl"></span>**VERCTRL**  
 A string that describes the source version control system. This variable is optional.
 
 <span id="DATETIME"></span><span id="datetime"></span>**DATETIME**  
