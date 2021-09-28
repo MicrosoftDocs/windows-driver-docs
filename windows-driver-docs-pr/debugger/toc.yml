@@ -518,6 +518,8 @@
             href: language-specification-1.md
           - name: "Language Specification 2"
             href: language-specification-2.md
+          - name: "Language Specification 3"
+            href: language-specification-3.md
       - name: "HTTP Sites and UNC Shares"
 # Auto-expanded node
         items: 
