@@ -1,7 +1,7 @@
 ---
 title: Firmware Windows Engineering Guide (WEG)
 description: The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow through in implementing system firmware-related best practices.
-ms.date: 08/18/2021
+ms.date: 09/28/2021
 ms.localizationpriority: medium
 ---
 
@@ -49,6 +49,8 @@ The following terms are used throughout the Firmware WEG:
 
 - ESRT – EFI System Resource Table
 
+- FFU - Full Flash Update
+
 - GPT - GUID Partition Table
 
 - GUID – Globally Unique Identification
@@ -80,6 +82,8 @@ The following terms are used throughout the Firmware WEG:
 - RPMC – Replay Protected Monotonic Counter
 
 - SMBIOS – System Management Basic Input Output System
+
+- SoC - System on Chip
 
 - SPI - Serial Peripheral Interface
 

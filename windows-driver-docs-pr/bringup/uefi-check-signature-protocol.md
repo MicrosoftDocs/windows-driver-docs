@@ -1,7 +1,7 @@
 ---
 title: UEFI check signature protocol
 description: Provides information about the UEFI check signature protocol.
-ms.date: 08/19/2021
+ms.date: 09/28/2021
 ms.localizationpriority: medium
 ---
 
@@ -10,10 +10,10 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
-The check signature protocol enables flashing tools to validate the signature on the catalog file in an FFU and verify that the hash of the table of hashes matches the hash specified in the catalog file.
+The check signature protocol enables flashing tools to validate the signature on the catalog file in a Full Flash Update (FFU) and verify that the hash of the table of hashes matches the hash specified in the catalog file.
 
 > [!NOTE]
-> Information about the structure of FFU files and flashing tools will be provided in a future release of this documentation.
+> Information about the structure of Full Flash Update (FFU) files and flashing tools will be provided in a future release of this documentation.
 
 ## EFI_CHECKSIG_PROTOCOL
 
@@ -48,8 +48,12 @@ struct _EFI_CHECKSIG_PROTOCOL {
 The revision to which the **EFI_CHECKSIG_PROTOCOL** adheres. All future revisions must be backward compatible. If a future version is not backward compatible, a different GUID must be used.
 
 **EfiCheckSignatureAndHash**  
-Verifies the signature and hash of the FFU catalog file. See [EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash](efi-checksig-protocolefichecksignatureandhash.md)
+Verifies the signature and hash of the Full Flash Update (FFU) catalog file. See [EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash](efi-checksig-protocolefichecksignatureandhash.md)
 
 ## Requirements
 
 **Header:** User generated
+
+## See also
+
+[Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu)

@@ -1,7 +1,7 @@
 ---
 title: Boot and UEFI
 description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
-ms.date: 08/04/2021
+ms.date: 09/28/2021
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +14,7 @@ A device running Windows 10 has several requirements for booting into the OS. A
 
 To accommodate each of these scenarios, the Windows 10 boot process uses the following components:
 
-- Firmware boot loaders provided by the SoC vendor.
+- Firmware boot loaders provided by the System on Chip (SoC) vendor.
 
 - UEFI (Unified Extensible Firmware Interface) environment provided by the SoC vendor.
 
@@ -30,7 +30,7 @@ When a Windows 10 device is turned on, it goes through the following high-level
 
 1. The firmware boot loaders boot the UEFI environment and hands over control to UEFI applications written by the SoC vendor, Microsoft, and OEMs. These applications can utilize UEFI drivers and services.
 
-1. The UEFI environment launches the Windows Boot Manager, which determines whether to boot to FFU flashing or device reset mode, to the update OS, or to the main OS.
+1. The UEFI environment launches the Windows Boot Manager, which determines whether to boot to Full Flash Update (FFU) image flashing or device reset mode, to the update OS, or to the main OS.
 
 The following diagram illustrates this process at a high level.
 
@@ -40,13 +40,13 @@ Following are additional details about some of the components in this diagram:
 
 - The update OS is a minimal OS environment provided by Microsoft. This OS is used specifically for installing updates.
 
-- FFU flashing mode refers to a UEFI application that flashes an OS image to device storage. Microsoft provides a UEFI flashing application which can be used in non-manufacturing scenarios. OEMs can also implement their own UEFI flashing application.
+- Full Flash Update (FFU) image flashing mode refers to a UEFI application that flashes an OS image to device storage. Microsoft provides a UEFI flashing application which can be used in non-manufacturing scenarios. OEMs can also implement their own UEFI flashing application. For more information, see [Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu).
 
 ## SoC firmware boot loaders
 
 The SoC firmware boot loaders initialize the minimal set of hardware required for the device to run. The SoC firmware boot loaders are designed to finish as fast as possible, and nothing is drawn to the screen while they are running. After the SoC firmware boot loaders finish, the device is booted into the UEFI environment.
 
-The SoC firmware boot loaders also contain an emergency flashing capability that allows devices to be flashed when the boot environment is not stable and FFU-based flashing using the Microsoft-provided flashing tool is not possible. Emergency flashing requires tools specific to the SoC. For more information, contact the SoC vendor.
+The SoC firmware boot loaders also contain an emergency flashing capability that allows devices to be flashed when the boot environment is not stable and Full Flash Update (FFU) image-based flashing using the Microsoft-provided flashing tool is not possible. Emergency flashing requires tools specific to the SoC. For more information, contact the SoC vendor.
 
 ## UEFI
 
@@ -102,3 +102,5 @@ The following steps describe this process in more detail:
 [Architecture of the UEFI battery charging application](architecture-of-the-uefi-battery-charging-application.md)  
 
 [UEFI in Windows](uefi-in-windows.md)  
+
+[Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu)
