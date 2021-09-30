@@ -1,10 +1,14 @@
 ---
-title: Windows Offloaded Data Transfer
+title: Windows Storage Offloaded Data Transfer
 description: Offloaded Data Transfer
 appliesto:
 - Windows Server 2019
 - Windows Server 2016
 ms.date: 09/30/2021
+keywords:
+- offloaded data transfers
+- Windows offloaded data transfers
+- offloaded data transfers, storage
 ms.localizationpriority: medium
 ms.custom: contperf-fy22q1
 ---
