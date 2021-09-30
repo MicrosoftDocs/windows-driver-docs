@@ -53,7 +53,7 @@ For other commands and extensions that can display critical section information,
 
 #### Remarks
 
-The **!cs** extension requires full symbols (including type information) for the process that is being debugged and for Ntdll.dll. If you do not have symbols for Ntdll.dll, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
+The **!cs** extension requires full symbols (including type information) for the process that is being debugged and for Ntdll.dll. 
 
 The following examples shows you how to use **!cs**. The following command displays information about the critical section at address 0x7803B0F8 and shows its initialization stack trace.
 

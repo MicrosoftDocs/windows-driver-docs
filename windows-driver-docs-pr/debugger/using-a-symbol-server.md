@@ -1,14 +1,13 @@
 ---
 title: Using a Symbol Server
 description: Using a Symbol Server
-ms.date: 11/28/2017
+ms.date: 09/28/2021
 ms.localizationpriority: medium
 ---
 
 # Using a Symbol Server
 
-
-A symbol server enables the debugger to automatically retrieve the correct symbol files from a symbol store - an indexed collection of symbol files - without the user needing to know product names, releases, or build numbers. The Debugging Tools for Windows package includes the symbol server [SymSrv](symsrv.md) (symsrv.exe).
+A symbol server enables the debugger to automatically retrieve the correct symbol files from a symbol store - an indexed collection of symbol files - without the user needing to know product names, releases, or build numbers. Debugging Tools for Windows includes the required dll symbol server *SymSrv*.  For information about working with the symbol server, see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 ### <span id="using_symsrv_with_a_debugger"></span><span id="USING_SYMSRV_WITH_A_DEBUGGER"></span>Using SymSrv with a Debugger
 
@@ -35,12 +34,4 @@ If you plan to create a symbol store, configure a symbol store for web (HTTP) ac
 ### <span id="using_agestore_to_reduce_the_cache_size"></span><span id="USING_AGESTORE_TO_REDUCE_THE_CACHE_SIZE"></span>Using AgeStore to Reduce the Cache Size
 
 Any symbol files downloaded by SymSrv will remain on your hard drive after the debugging session is over. To control the size of the symbol cache, the AgeStore tool can be used to delete cached files that are older than a specified date, or to reduce the contents of the cache below a specified size. For details, see [AgeStore](agestore.md).
-
- 
-
- 
-
-
-
-
 
