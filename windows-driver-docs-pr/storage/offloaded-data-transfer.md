@@ -32,7 +32,7 @@ The process of an offload copy operation on ODX-capable storage devices is shown
 
 ## Identify an ODX-Capable Source and Destination
 
-To support ODX, storage arrays must implement the related [T10 standard specifications](t10.org) for ODX-capable storage arrays, including offload read and write operations with tokens. During the LUN device enumeration (a system boot or a plug-and-play event), Windows gathers or updates the ODX capability information of the storage target device through the following steps.
+To support ODX, storage arrays must implement the related [T10 standard specifications](https://www.t10.org/) for ODX-capable storage arrays, including offload read and write operations with tokens. During the LUN device enumeration (a system boot or a plug-and-play event), Windows gathers or updates the ODX capability information of the storage target device through the following steps.
 
 1. Query copy offload capability.
 2. Gather the required parameters for copy offload operations and limitations.
