@@ -30,7 +30,7 @@ You can activate the Systematic low resources simulation feature for one or more
 
     **Windows 11**
 
-    At the command line, Systematic low resources simulation is represented by **verifier /rc 19 36** (including the required DIF mode) or **verifier /dif 19**.
+    At the command line, Systematic low resources simulation is represented by **verifier /rc 19 36** or **verifier /dif 19**, both of which include the required DIF mode.
 
     The feature will be active after the next boot, or immediately if **/now** is added to the command string.
 

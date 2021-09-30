@@ -35,7 +35,7 @@ As of Windows 11, only the following flags can be used with volatile:
 ```
 
 > [!NOTE]
-> Many other flags in Windows 11 may be enabled without reboot using the **/now** [Verifier Command](verifier-command-line.md).
+> A number of other flags in Windows 11 may be enabled without reboot using the **/now** command. The supported flags are described in [Verifier Command](verifier-command-line.md).
 
 As of Windows 10, only the following flags can be used with volatile:
 
