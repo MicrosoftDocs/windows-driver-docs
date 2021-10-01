@@ -900,7 +900,7 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Header are described in this table.
 
 The possible values for the Flags byte are described in this table.
 
-###### Table 5.5-4 FIRMWARE_UPDATE_OFFER- Offer Command Packet - Flag Values
+###### Table 5.5-4 FIRMWARE_UPDATE_CONTENT Header - Flag Values
 
 | Flag | Name | Description |
 |--|--|--|
@@ -950,7 +950,7 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this t
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (7-4) are described in this table.
 
-###### Table 5.5-11 FIRMWARE_UPDATE_OFFER - Response - Status Bits
+###### Table 5.5-11 FIRMWARE_UPDATE_CONTENT - Response - Status Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -959,7 +959,7 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Response (7-4) are described in this t
 
 The possible values for the Status byte are described in this table.
 
-###### Table 5.5-12 FIRMWARE_UPDATE_OFFER- Response - Status Code Values
+###### Table 5.5-12 FIRMWARE_UPDATE_CONTENT- Response - Status Code Values
 
 | Flag | Name | Description |
 |--|--|--|
