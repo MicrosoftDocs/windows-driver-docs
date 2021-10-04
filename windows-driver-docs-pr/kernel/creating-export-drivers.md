@@ -18,7 +18,7 @@ Windows includes several export drivers that are loaded by other drivers, for ex
 
 * SCSI port driver
 * Tape class driver
-* IDE controller driver are all system-supplied export drivers .
+* IDE controller driver are all system-supplied export drivers
 
 Standard drivers can also function as export drivers. For a driver to function in both ways, it must be built as an export driver and loaded as a regular driver.
 
