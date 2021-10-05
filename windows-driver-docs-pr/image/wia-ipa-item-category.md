@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_ITEM\_CATEGORY
-description: The WIA\_IPA\_ITEM\_CATEGORY property contains grouped categories for WIA items.
+title: WIA_IPA_ITEM_CATEGORY
+description: The WIA_IPA_ITEM_CATEGORY property contains grouped categories for WIA items.
 keywords: ["WIA_IPA_ITEM_CATEGORY Imaging Devices"]
 topic_type:
 - apiref
@@ -10,21 +10,17 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/05/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_IPA\_ITEM\_CATEGORY
+# WIA_IPA_ITEM_CATEGORY
 
+The WIA_IPA_ITEM_CATEGORY property contains grouped categories for WIA items.
 
-The WIA\_IPA\_ITEM\_CATEGORY property contains grouped categories for WIA items.
+Property Type: VT_CLSID
 
-## <span id="ddk_wia_ipa_item_category_si"></span><span id="DDK_WIA_IPA_ITEM_CATEGORY_SI"></span>
-
-
-Property Type: VT\_CLSID
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
@@ -34,51 +30,26 @@ The WIA minidriver creates and maintains this property.
 
 WIA defines the following categories:
 
-<span id="WIA_CATEGORY_BARCODE_READER"></span><span id="wia_category_barcode_reader"></span>WIA\_CATEGORY\_BARCODE\_READER  
-A barcode reader item that is a programmable data source, transfer enabled to download barcode metadata.
-
-<span id="WIA_CATEGORY_ENDORSER"></span><span id="wia_category_endorser"></span>WIA\_CATEGORY\_ENDORSER  
-The endorsing category of a programmable data source item that represents both imprinting and endorsing, and can be transfer enabled to upload and download the data content to be printed/endorsed.
-
-<span id="WIA_CATEGORY_FEEDER"></span><span id="wia_category_feeder"></span>WIA\_CATEGORY\_FEEDER  
-A feeder item that is a programmable data source, that follows the standard rules, and that has the WIA properties that are required to support document feeders.
-
-<span id="WIA_CATEGORY_FEEDER_BACK"></span><span id="wia_category_feeder_back"></span>WIA\_CATEGORY\_FEEDER\_BACK  
-A programmable data source item that describes the back side data source of a duplex base feeder item (WIA\_CATEGORY\_FEEDER).
-
-<span id="WIA_CATEGORY_FEEDER_FRONT"></span><span id="wia_category_feeder_front"></span>WIA\_CATEGORY\_FEEDER\_FRONT  
-A programmable data source item that describes the front side data source of a duplex base feeder item (WIA\_CATEGORY\_FEEDER).
-
-<span id="WIA_CATEGORY_FILM"></span><span id="wia_category_film"></span>WIA\_CATEGORY\_FILM  
-A film item that is a programmable data source, that follows the standard rules, and that has the WIA properties that are required to support film-scanning units.
-
-<span id="WIA_CATEGORY_FINISHED_FILE"></span><span id="wia_category_finished_file"></span>WIA\_CATEGORY\_FINISHED\_FILE  
-*Not* a programmable data source. The device provides data in a finished file format or in a folder item that contains the finished-file-format item.
-
-<span id="WIA_CATEGORY_FLATBED"></span><span id="wia_category_flatbed"></span>WIA\_CATEGORY\_FLATBED  
-A flatbed item that is a programmable data source, that follows the standard rules, and that has the WIA properties that are required to support flatbed-platen scanning.
-
-<span id="WIA_CATEGORY_FOLDER"></span><span id="wia_category_folder"></span>WIA\_CATEGORY\_FOLDER  
-A folder storage item (not a programmable data source) containing other folder items and/or finished files.
-
-<span id="WIA_CATEGORY_IMPRINTER"></span><span id="wia_category_imprinter"></span>WIA\_CATEGORY\_IMPRINTER  
-The imprinting category of a programmable data source item that represents both imprinting and endorsing, and can be transfer enabled to upload and download the data content to be printed/endorsed.
-
-<span id="WIA_CATEGORY_MICR_READER"></span><span id="wia_category_micr_reader"></span>WIA\_CATEGORY\_MICR\_READER  
-A (Magnetic Ink Character Recognition) MICR reader item that is a programmable data source, transfer enabled to download MICR text.
-
-<span id="WIA_CATEGORY_PATCH_CODE_READER"></span><span id="wia_category_patch_code_reader"></span>WIA\_CATEGORY\_PATCH\_CODE\_READER  
-A patch code reader item that is a programmable data source, transfer enabled to download patch code metadata.
-
-<span id="WIA_CATEGORY_ROOT"></span><span id="wia_category_root"></span>WIA\_CATEGORY\_ROOT  
-The root item for the device.
-
-<span id="WIA_CATEGORY_AUTO"></span><span id="wia_category_auto"></span>WIA\_CATEGORY\_AUTO  
-In Windows 7 and later, an [auto item](./auto-item.md) has the WIA properties that are required to support [auto-configured scanning](./auto-configured-scanning.md).
+| Category | Description |
+|--|--|
+| WIA_CATEGORY_BARCODE_READER | A barcode reader item that is a programmable data source, transfer enabled to download barcode metadata. |
+| WIA_CATEGORY_ENDORSER | The endorsing category of a programmable data source item that represents both imprinting and endorsing, and can be transfer enabled to upload and download the data content to be printed/endorsed. |
+| WIA_CATEGORY_FEEDER | A feeder item that is a programmable data source, that follows the standard rules, and that has the WIA properties that are required to support document feeders. |
+| WIA_CATEGORY_FEEDER_BACK | A programmable data source item that describes the back side data source of a duplex base feeder item (WIA_CATEGORY_FEEDER). |
+| WIA_CATEGORY_FEEDER_FRONT | A programmable data source item that describes the front side data source of a duplex base feeder item (WIA_CATEGORY_FEEDER). |
+| WIA_CATEGORY_FILM | A film item that is a programmable data source, that follows the standard rules, and that has the WIA properties that are required to support film-scanning units. |
+| WIA_CATEGORY_FINISHED_FILE | *Not* a programmable data source. The device provides data in a finished file format or in a folder item that contains the finished-file-format item. |
+| WIA_CATEGORY_FLATBED | A flatbed item that is a programmable data source, that follows the standard rules, and that has the WIA properties that are required to support flatbed-platen scanning. |
+| WIA_CATEGORY_FOLDER | A folder storage item (not a programmable data source) containing other folder items and/or finished files. |
+| WIA_CATEGORY_IMPRINTER | The imprinting category of a programmable data source item that represents both imprinting and endorsing, and can be transfer enabled to upload and download the data content to be printed/endorsed. |
+| WIA_CATEGORY_MICR_READER | A (Magnetic Ink Character Recognition) MICR reader item that is a programmable data source, transfer enabled to download MICR text. |
+| WIA_CATEGORY_PATCH_CODE_READER | A patch code reader item that is a programmable data source, transfer enabled to download patch code metadata. |
+| WIA_CATEGORY_ROOT | The root item for the device. |
+| WIA_CATEGORY_AUTO | In Windows 7 and later, an [auto item](./auto-item.md) has the WIA properties that are required to support [auto-configured scanning](./auto-configured-scanning.md). |
 
 The preceding categories define how a WIA item should be treated or used. For example, if the item represents a finished file, you can assume that the data is static and located on the device. If the item represents a feeder, you can expect it to contain the required document-feeder properties and to operate like a document feeder. For more information about these categories, see [WIA Item Categories](./wia-item-categories.md).
 
-The following table shows the WIA grouped categories and their item flags. This table does not include a full list of all of the WIA item flags that WIA defines. For a complete list of these flags, see [**WIA\_IPA\_ITEM\_FLAGS**](wia-ipa-item-flags.md).
+The following table shows the WIA grouped categories and their item flags. This table does not include a full list of all of the WIA item flags that WIA defines. For a complete list of these flags, see [**WIA_IPA_ITEM_FLAGS**](wia-ipa-item-flags.md).
 
 <table>
 <colgroup>
@@ -222,8 +193,6 @@ The following table shows the WIA grouped categories and their item flags. This 
 </tbody>
 </table>
 
- 
-
 The following table shows the WIA grouped categories and their WIA properties and WIA items.
 
 <table>
@@ -294,29 +263,10 @@ The following table shows the WIA grouped categories and their WIA properties an
 </tbody>
 </table>
 
- 
-
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available in Windows Vista and later versions of the operating system.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_IPA\_ITEM\_FLAGS**](wia-ipa-item-flags.md)
-
+[**WIA_IPA_ITEM_FLAGS**](wia-ipa-item-flags.md)
