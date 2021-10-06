@@ -1,7 +1,7 @@
 ---
 title: How to Identify the Windows Version in ACPI by Using _OSI
 description: Provides information about the ACPI Source Language (ASL) Operating System Interface Level (_OSI) method used to identify the host operating system.
-ms.date: 04/14/2020
+ms.date: 10/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -11,6 +11,7 @@ This topic describes how to use the _OSI method in Advanced Configuration and Po
 
 This information applies to the following operating systems:
 
+- Windows 11
 - Windows 10, version 2004
 - Windows 10, version 1903
 - Windows 10, version 1809
@@ -41,11 +42,13 @@ By using the _OSI method, ASL writers can easily determine the version of the AC
 
 The _OSI method has one argument and one return value. The argument is a string that is defined by and for each operating system. The return value is 0x00000000 if the interface is not supported or 0xFFFFFFFF if the interface is supported.
 
-Recent versions of the ACPI specification have extended the use cases of the _OSI method beyond host operating system version identification. However, Windows supports _OSI only for the use of identifying the host version of Windows that is running on the system.
+Recent versions of the ACPI specification have extended the use cases of the _OSI method beyond host operating system version identification.
+
+However, Windows supports _OSI only for the use of identifying the host version of Windows that is running on the system.
 
 The _OSI method is defined as follows:
 
-- \\\_OSI - Operating System Interfaces
+- _OSI - Operating System Interfaces
 
 ### Argument
 
@@ -94,10 +97,13 @@ Windows operating systems return 0xFFFFFFFF if the argument to the _OSI method s
 | Windows 2018.2 | Windows 10, version 1809 |
 | Windows 2019 | Windows 10, version 1903 |
 | Windows 2020 | Windows 10, version 2004 |
+| Windows 2021 | Windows 11 |
 
 ### Implementation Note
 
-Place the routine that identifies the operating system in an _INI method under the \\\_SB scope so that _OSI can run as early as possible. This placement is important because the operating system makes features available based on the string argument to the \_OSI method.
+Place the routine that identifies the operating system in an \_INI method under the \_SB scope so that _OSI can run as early as possible.
+
+This placement is important because the operating system makes features available based on the string argument to the _OSI method.
 
 ## Additional resources
 
