@@ -11,7 +11,7 @@ Follow these steps to collect the logs related to mobile broadband on a Windows 
 ```
 *  Open an Administrator Command Prompt window
 *  Run the below command to start tracing
-    *  netsh trace start wireless_dbg,provisioning overwrite=yes maxSize=999
+    *  netsh trace start wireless_dbg,provisioning overwrite=yes maxSize=999 level=5
 *  <Repro the scenario for which you need to collect logs>
 *  Run the below command to stop tracing
     *  netsh trace stop
