@@ -1,53 +1,26 @@
 ---
-title: CODECAPI\_CHANGELISTS
-description: CODECAPI\_CHANGELISTS
-ms.date: 11/28/2017
+title: CODECAPI_CHANGELISTS
+description: The CODECAPI_CHANGELISTS event is used to return a list of GUIDs that have changed.
+ms.date: 10/08/2021
 ms.localizationpriority: medium
 ---
 
-# CODECAPI\_CHANGELISTS
+# CODECAPI_CHANGELISTS
 
+The CODECAPI_CHANGELISTS event is used to return a list of GUIDs that have changed as a result of a property "set" call, such as [CODECAPI_ALLSETTINGS](codecapi-allsettings.md) and [CODECAPI_SETALLDEFAULTS](codecapi-setalldefaults.md), or an encoder setting property.
 
-## <span id="ddk_codecapi_changelists_ks"></span><span id="DDK_CODECAPI_CHANGELISTS_KS"></span>
-
-
-The CODECAPI\_CHANGELISTS event is used to return a list of GUIDs that have changed as a result of a property "set" call, such as [CODECAPI\_ALLSETTINGS](codecapi-allsettings.md) and [CODECAPI\_SETALLDEFAULTS](codecapi-setalldefaults.md), or an encoder setting property.
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Event descriptor type</th>
-<th>Event value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes (query supported)</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Event descriptor type | Event value type |
+|--|--|--|--|--|
+| Yes (query supported) | Yes | Filter | [**KSE_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
 
 For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index).
 
 The driver uses the AVStream [**KsGenerateEvents**](/windows-hardware/drivers/ddi/ks/nf-ks-ksgenerateevents) to post a list of GUIDs that changed.
 
-### See Also
+## See also
 
-[**KsGenerateEvents**](/windows-hardware/drivers/ddi/ks/nf-ks-ksgenerateevents), [CODECAPI\_ALLSETTINGS](codecapi-allsettings.md), [CODECAPI\_SETALLDEFAULTS](codecapi-setalldefaults.md)
+[**KsGenerateEvents**](/windows-hardware/drivers/ddi/ks/nf-ks-ksgenerateevents)
 
+[CODECAPI_ALLSETTINGS](codecapi-allsettings.md)
+
+[CODECAPI_SETALLDEFAULTS](codecapi-setalldefaults.md)
