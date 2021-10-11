@@ -94,7 +94,7 @@ Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range i
 
 This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxiliary power in D3, above the default 375mA @3.3V. Any PCI port or bridge defining this DSD *must* guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds.
 
-```asl
+```ASL
 Name (_DSD, Package () {
             ToUUID("6B4AD420-8FD3-4364-ACF8-EB94876FD9EB"),
             Package () {
@@ -110,7 +110,7 @@ This ACPI object enables the operating system to map the native protocols (e.g.,
 
 Note: In the sample below, the “Device (DSB0), has dependency on “\_SB.PCI0.NHI0”
 
-```asl
+```ASL
 Scope (\_SB.PCI0)
 {
     Device (NHI0) { } //Host interface instance which has dependency on \_SB.PCI0.NHI0
