@@ -169,7 +169,7 @@ The following table lists all of the keywords and describes the values that a dr
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong><em>SpeedDuplex</strong></p></td>
+<td align="left"><p><strong>*SpeedDuplex</strong></p></td>
 <td align="left"><p>Speed & Duplex</p></td>
 <td align="left"><p>0 (Default)</p></td>
 <td align="left"><p>Auto Negotiation</p></td>
@@ -235,7 +235,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>100 Gbps Full Duplex</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong></em>FlowControl</strong></p></td>
+<td align="left"><p><strong>*FlowControl</strong></p></td>
 <td align="left"><p>Flow Control</p></td>
 <td align="left"><p>0 (Server Default)</p></td>
 <td align="left"><p>Tx & Rx Disabled</p></td>
@@ -265,7 +265,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Auto Negotiation</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>PriorityVLANTag</strong></p></td>
+<td align="left"><p><strong>*PriorityVLANTag</strong></p></td>
 <td align="left"><p>Packet Priority & VLAN</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Packet Priority & VLAN Disabled</p></td>
@@ -289,7 +289,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Packet Priority & VLAN Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>InterruptModeration</strong></p></td>
+<td align="left"><p><strong>*InterruptModeration</strong></p></td>
 <td align="left"><p>Interrupt Moderation</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -301,7 +301,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>RSS</strong></p></td>
+<td align="left"><p><strong>*RSS</strong></p></td>
 <td align="left"><p>Receive Side Scaling</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -313,7 +313,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>HeaderDataSplit</strong></p></td>
+<td align="left"><p><strong>*HeaderDataSplit</strong></p></td>
 <td align="left"><p>Header Data Split</p></td>
 <td align="left"><p>0 (Default)</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -325,7 +325,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>TCPConnectionOffloadIPv4</strong></p></td>
+<td align="left"><p><strong>*TCPConnectionOffloadIPv4</strong></p></td>
 <td align="left"><p>TCP Connection Offload (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -337,7 +337,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>TCPConnectionOffloadIPv6</strong></p></td>
+<td align="left"><p><strong>*TCPConnectionOffloadIPv6</strong></p></td>
 <td align="left"><p>TCP Connection Offload (IPv6)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -349,7 +349,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>IPChecksumOffloadIPv4</strong></p></td>
+<td align="left"><p><strong>*IPChecksumOffloadIPv4</strong></p></td>
 <td align="left"><p>IPv4 Checksum Offload</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -373,7 +373,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>TCPChecksumOffloadIPv4</strong></p></td>
+<td align="left"><p><strong>*TCPChecksumOffloadIPv4</strong></p></td>
 <td align="left"><p>TCP Checksum Offload (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -421,7 +421,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>UDPChecksumOffloadIPv4</strong></p></td>
+<td align="left"><p><strong>*UDPChecksumOffloadIPv4</strong></p></td>
 <td align="left"><p>UDP Checksum Offload (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -445,7 +445,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>UDPChecksumOffloadIPv6</strong></p></td>
+<td align="left"><p><strong>*UDPChecksumOffloadIPv6</strong></p></td>
 <td align="left"><p>UDP Checksum Offload (IPv6)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -469,7 +469,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>LsoV1IPv4</strong></p></td>
+<td align="left"><p><strong>*LsoV1IPv4</strong></p></td>
 <td align="left"><p>Large Send Offload Version 1 (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -481,7 +481,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>LsoV2IPv4</strong></p></td>
+<td align="left"><p><strong>*LsoV2IPv4</strong></p></td>
 <td align="left"><p>Large Send Offload Version 2 (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -505,7 +505,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>IPsecOffloadV1IPv4</strong></p></td>
+<td align="left"><p><strong>*IPsecOffloadV1IPv4</strong></p></td>
 <td align="left"><p>IPsec Offload Version 1 (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -529,7 +529,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>IPsecOffloadV2</strong></p></td>
+<td align="left"><p><strong>*IPsecOffloadV2</strong></p></td>
 <td align="left"><p>IPsec Offload</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -553,7 +553,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>IPsecOffloadV2IPv4</strong></p></td>
+<td align="left"><p><strong>*IPsecOffloadV2IPv4</strong></p></td>
 <td align="left"><p>IPsec Offload (IPv4 only)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -577,7 +577,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>TCPUDPChecksumOffloadIPv4</strong></p></td>
+<td align="left"><p><strong>*TCPUDPChecksumOffloadIPv4</strong></p></td>
 <td align="left"><p>TCP/UDP Checksum Offload (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
