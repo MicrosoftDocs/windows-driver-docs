@@ -106,9 +106,9 @@ Name (_DSD, Package () {
 
 ## Mapping native protocols (PCIe, DisplayPort) tunneled through USB4 to USB4 Host Routers
 
-This ACPI object enables the operating system to map the native protocols (e.g., PCIe, DisplayPort) tunneled through USB4 to the correct USB4 Host Router.
+This ACPI object enables the operating system to map native protocols, such as PCIe and DisplayPort, tunneled through USB4 to the correct USB4 host router.
 
-Note: In the sample below, the “Device (DSB0), has dependency on “\_SB.PCI0.NHI0”
+In the following sample, `Device (DSB0)` has a dependency on `\_SB.PCI0.NHI0`.
 
 ```ASL
 Scope (\_SB.PCI0)
