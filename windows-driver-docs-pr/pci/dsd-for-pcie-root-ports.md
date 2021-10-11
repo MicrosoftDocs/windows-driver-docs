@@ -104,6 +104,39 @@ Name (_DSD, Package () {
 
 ```
 
+## Mapping native protocols (PCIe, DisplayPort) tunneled through USB4 to USB4 Host Routers
+
+This ACPI object enables the operating system to map the native protocols (e.g., PCIe, DisplayPort) tunneled through USB4 to the correct USB4 Host Router.
+
+Note: In the sample below, the “Device (DSB0), has dependency on “\_SB.PCI0.NHI0”
+
+```asl
+Scope (\_SB.PCI0)
+{
+    Device (NHI0) { } //Host interface instance which has dependency on \_SB.PCI0.NHI0
+    Device (DSB0) //Tunneled PCIe port instance
+    {
+        Name (_DSD, Package () {
+            ToUUID("daffd814-6eba-4d8c-8a91-bc9bbf4aa301"), //Device Properties UUID 
+            Package () {
+                Package () { “usb4-host-interface", \_SB.PCI0.NHI0 },
+                Package () { “usb4-port-number", PortInstance#},
+            }
+        })
+    }
+    Device (…) //Extend to DP and USB tunneled ports, as needed 
+    {
+        Name (_DSD, Package () {
+            ToUUID("daffd814-6eba-4d8c-8a91-bc9bbf4aa301"), //Device Properties UUID 
+            Package () {
+                Package () { “usb4-host-interface", \_SB.PCI0.NHI0 },
+                Package () { “usb4-port-number", PortInstance#},
+            }
+        })
+    }
+}
+```
+
 ## See also
 
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
