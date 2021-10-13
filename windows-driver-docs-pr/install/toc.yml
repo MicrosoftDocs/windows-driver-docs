@@ -898,10 +898,6 @@
     href: enumerating-installed-device-interface-classes.md
   - name: "Accessing the Properties of Installed Device Interfaces"
     href: accessing-the-properties-of-installed-device-interface-classes.md
-  - name: "Modifying Registry Keys by Class Installers and Co-installers"
-    href: modifying-registry-keys-by-class-installers-and-co-installers.md
-  - name: "Modifying Registry Values by Class Installers and Co-installers"
-    href: modifying-registry-values-by-class-installers-and-co-installers.md
   - name: "Deleting the Registry Keys of a Device"
     href: deleting-the-registry-keys-of-a-device.md
   - name: "Calling SetupAPI Functions"
@@ -926,8 +922,6 @@
     href: installing-a-new-bus-driver.md
   - name: "Using Custom Hardware IDs and Compatible IDs"
     href: using-custom-hardware-ids-and-compatible-ids.md
-  - name: "Installing a New Device Setup Class for a Bus"
-    href: installing-a-new-device-setup-class-for-a-bus.md
   - name: "Installing Private Builds of In-box Drivers"
     href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
   - name: "Overview of Installing Private Builds of In-box Drivers"
