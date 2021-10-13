@@ -507,7 +507,7 @@ HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable sets the state of the advertiseme
 |---|---|---|---|
 |HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable|Chosen base code |Subcommand_opcode,</br>Enable</li>|Status,</br>Subcommand_opcode|
 
-If _Enable_ is set to 0x00, the controller shall propagate received advertisements to the host based on existing white list settings. The controller shall continue monitoring the devices that are currently being monitored and generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 0 if the device is no longer being monitored. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 1 if a new device is being monitored. The host may issue HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable with _Enable_ set to 0x01 to reenable all the filter conditions.
+If _Enable_ is set to 0x00, the controller shall propagate received advertisements to the host based on existing filter accept list settings. The controller shall continue monitoring the devices that are currently being monitored and generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 0 if the device is no longer being monitored. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 1 if a new device is being monitored. The host may issue HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable with _Enable_ set to 0x01 to reenable all the filter conditions.
 
 If _Enable_ is set to 0x01, this command enables all filters that were set with a previously-issued [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] command. The controller shall reject an HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable command if it does not toggle the filter state:
 
@@ -529,7 +529,7 @@ Enable (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-|0x00| Revert to current white list behavior, but continue monitoring devices based on the _Condition_ from  [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] commands.|
+|0x00| Revert to current filter accept list behavior, but continue monitoring devices based on the _Condition_ from  [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] commands.|
 |0x01|Enable all issued [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] commands on the controller.|
 
 #### Return_parameter
@@ -844,9 +844,9 @@ When the periodic timer expires at time 13, the average of the advertisement RSS
 
 When *RSSI_threshold_low_time_interval* expires at instant 15, an advertisement is propagated to the host with RSSI of -85dB. No further advertisements are sent to the host in this example.
 
-### Flowchart: Advertisement and white list filtering
+### Flowchart: Advertisement and filter accept list filtering
 
-This flowchart provides an example controller implementation of advertisement filtering and white list filtering when an advertisement is received.
+This flowchart provides an example controller implementation of advertisement filtering and filter accept list filtering when an advertisement is received.
 
 A controller can implement this logic differently, as long as the host is notified of the advertisement or [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] as specified by the flowchart.
 
