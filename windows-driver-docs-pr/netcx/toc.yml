@@ -524,6 +524,8 @@
       href: wdi-tlv-roaming-needed-parameters.md
     - name: "WDI_TLV_RTT"
       href: wdi-tlv-rtt.md
+    - name: "WDI_TLV_RTT_ACCURACY"
+      href: wdi-tlv-rtt-accuracy.md
     - name: "WDI_TLV_RTT_VARIANCE"
       href: wdi-tlv-rtt-variance.md
     - name: "WDI_TLV_ANTI_CLOGGING_TOKEN"

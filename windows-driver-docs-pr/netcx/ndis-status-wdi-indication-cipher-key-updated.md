@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 WiFiCx drivers send this indication to indicate that the cipher key(s) have been updated.
 
-This indication is sent only while the driver has not offloaded the RSN GTK rekey (via the [WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) filed in the [OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD](oid-wdi-set-add-pm-protocol-offload.md) command). If the driver is currently in the offload state for the Rsn GTK Rekey, then it should not indicate via this method and should allow the updated key information to be queried via the [OID_WDI_GET_PM_PROTOCOL_OFFLOAD](oid-wdi-get-pm-protocol-offload.md) command when it comes out of the offload state.
+This indication is sent only while the driver has not offloaded the RSN GTK rekey (via the WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY filed in the OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD command). If the driver is currently in the offload state for the Rsn GTK Rekey, then it should not indicate via this method and should allow the updated key information to be queried via the OID_WDI_GET_PM_PROTOCOL_OFFLOAD command when it comes out of the offload state.
 
 For example, the driver would send this notification if it or the firmware receives a new GTK/iGTK in the WNM-Sleep mode response.
 

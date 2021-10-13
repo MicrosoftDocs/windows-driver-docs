@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_START\_AP requests that the IHV component configures a port to s
 
  
 
-During initialization, the driver sets the GO on 5GHz band capability in [**WDI\_TLV\_P2P\_CAPABILITIES**](./wdi-tlv-p2p-capabilities.md) to indicate whether it can start the access point on the 5 GHz band.
+During initialization, the driver sets the GO on 5GHz band capability in [**WIFI_WIFIDIRECT_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_wifidirect_capabilities) to indicate whether it can start the access point on the 5 GHz band.
 
 If GO on 5 GHz band support is set, the adapter should start the AP on the Advertised Operating channel, and if that fails, it should try the list specified in the AP band channel list parameter. The operating system will provide a hint to the driver about whether this AP would provide internet connectivity by setting the **DOT11\_WFD\_GROUP\_CAPABILITY\_CROSS\_CONNECTION\_SUPPORTED** flag in [**WDI\_TLV\_P2P\_GROUP\_OWNER\_CAPABILITY**](./wdi-tlv-p2p-group-owner-capability.md).
 

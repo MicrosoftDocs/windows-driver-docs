@@ -1,7 +1,7 @@
 ---
 title: OID_WDI_TASK_CONNECT (dot11wificxintf.h)
 description: The OID_WDI_TASK_CONNECT task command requests that the IHV component connects to an Access Point or to a Wi-Fi Direct GO.
-ms.date: 06/30/2021
+ms.date: 10/30/2021
 keywords:
  - OID_WDI_TASK_CONNECT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ If the authentication algorithm that is used for the connection requires 802.1x 
 
 The 802.11 station uses the PMKID cache for pre-authentication to access points that have enabled the Robust Security Network Association (RSNA) authentication algorithm. If the 802.11 station is associating or reassociating to a BSSID that has a provided PMKID, the 802.11 station must use the PMKID data in the RSN information element (RSN IE) of its Association or Reassociation frame.
 
-If the port declares support for Host FIPS mode in [**WDI\_TLV\_STATION\_ATTRIBUTES**](./wdi-tlv-station-attributes.md), **HostFIPSModeEnabled** may be set to **1** in the connection parameters.
+If the port declares support for Host FIPS mode in [**WIFI_STATION_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_station_capabilities), **HostFIPSModeEnabled** may be set to **1** in the connection parameters.
 
 If **HostFIPSModeEnabled** is set to **1**, the following rules apply.
 

@@ -14,13 +14,15 @@ WiFiCx supports WPA3-SAE, also known as WPA3-Personal. Frame content generation 
 WiFiCx drivers indicate SAE support by doing the following:
 
 1. Set SAE supported capability.  
-    The driver sets the **SAEAuthenticationSupported** capability in [WDI_TLV_INTERFACE_ATTRIBUTES](wdi-tlv-interface-attributes.md) during the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md).
+    The driver sets the **SAEAuthenticationSupported** capability in [**WIFI_DEVICE_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_device_capabilities) during the call to [**WifiDeviceSetDeviceCapabilities**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicesetdevicecapabilities).
 2. Set MFP capability.  
-    The driver sets the **MFPCapable** capability in [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) during the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md).
-3. Add the **WDI_AUTH_ALGO_WPA3_SAE** auth method.  
-    The driver includes **WDI_AUTH_ALGO_WPA3_SAE** in the list of auth-cipher combinations returned in the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md). This should be added in the following sections:
-    - [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) : : [WDI_TLV_UNICAST_ALGORITHM_LIST](wdi-tlv-unicast-algorithm-list.md)
-    - [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) : : [WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST](wdi-tlv-multicast-data-algorithm-list.md)
+    The driver sets the **MFPCapable** capability in [**WIFI_STATION_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_station_capabilities) during the call to [**WifiDeviceSetStationCapabilities**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicesetstationcapabilities).
+3. Add the **WDI_AUTH_ALGO_WPA3_SAE** cipher.  
+    The driver includes the **WDI_AUTH_ALGO_WPA3_SAE + DOT11_CIPHER_ALGO_CCMP** pair in the list of auth-cipher combinations returned in the call to [**WifiDeviceSetStationCapabilities**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicesetstationcapabilities). This should be added in the following structure:
+    - [**WIFI_STATION_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_station_capabilities) -> **NumSupportedUnicastAlgorithms** + **UnicastAlgorithmsList**
+
+    The driver also includes the **WDI_AUTH_ALGO_WPA3_SAE + WDI_CIPHER_ALGO_BI** pair in the list of auth-cipher combinations returned in the call to [**WifiDeviceSetStationCapabilities**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicesetstationcapabilities). It should be added in the following struct:
+    - [**WIFI_STATION_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_station_capabilities) -> **NumSupportedMulticastMgmtAlgorithms** + **MulticastMgmtAlgorithmsList**
 
 ## WPA3-SAE authentication flow
 

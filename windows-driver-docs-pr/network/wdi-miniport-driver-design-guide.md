@@ -9,6 +9,9 @@ ms.localizationpriority: medium
 
 # WDI Miniport Driver Design Guide
 
+> [!IMPORTANT]
+> [WiFiCx](../netcx/wifi-wdf-class-extension-wificx.md) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
 
 WLAN Device Driver Interface (WDI) is the new Universal Windows driver model for Wi-Fi drivers, for both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile. The WLAN device manufacturer writes a WDI miniport driver to work with the Windows 10 OS implementation. WDI enables device manufacturers to write less code than the previous Native WLAN driver model. All new WLAN features introduced in Windows 10 require WDI-based drivers.
 
