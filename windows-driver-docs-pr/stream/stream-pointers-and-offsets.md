@@ -1,7 +1,6 @@
 ---
 title: Stream Pointers and Offsets
 description: Stream Pointers and Offsets
-ms.assetid: ef9dc015-f0ee-49a6-8774-cfb0223c8b12
 keywords:
 - stream pointers WDK AVStream , offsets
 - offsets WDK AVStream
@@ -20,16 +19,11 @@ ms.localizationpriority: medium
 
 
 
-A [**KSSTREAM\_POINTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksstream_pointer) structure contains two [**KSSTREAM\_POINTER\_OFFSET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksstream_pointer_offset) structures that index input and output positions within a frame. A minidriver can either manipulate these offsets or access the data at frame resolution.
+A [**KSSTREAM\_POINTER**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer) structure contains two [**KSSTREAM\_POINTER\_OFFSET**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer_offset) structures that index input and output positions within a frame. A minidriver can either manipulate these offsets or access the data at frame resolution.
 
-To advance a stream pointer within a frame, the minidriver calls [**KsStreamPointerAdvanceOffsets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointeradvanceoffsets) and [**KsStreamPointerAdvanceOffsetsAndUnlock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointeradvanceoffsetsandunlock).
+To advance a stream pointer within a frame, the minidriver calls [**KsStreamPointerAdvanceOffsets**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointeradvanceoffsets) and [**KsStreamPointerAdvanceOffsetsAndUnlock**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointeradvanceoffsetsandunlock).
 
-Minidrivers that access stream data with virtual addresses can use these offsets to specify a stream position at byte resolution. Minidrivers that use scatter/gather physical mappings can specify stream position at the granularity of a [**KSMAPPING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksmapping) structure.
-
- 
+Minidrivers that access stream data with virtual addresses can use these offsets to specify a stream position at byte resolution. Minidrivers that use scatter/gather physical mappings can specify stream position at the granularity of a [**KSMAPPING**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksmapping) structure.
 
  
-
-
-
 

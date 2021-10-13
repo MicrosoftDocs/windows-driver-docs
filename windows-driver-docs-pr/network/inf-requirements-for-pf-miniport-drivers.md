@@ -1,7 +1,6 @@
 ---
 title: INF Requirements for PF Miniport Drivers
 description: INF Requirements for PF Miniport Drivers
-ms.assetid: B301514E-BCC2-401D-B63B-A819BF3D265A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXPOSURE\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_EXPOSURE\_RELATIVE property specifies the electronic shutter speed.
-ms.assetid: a4003fcd-9dc8-4889-9ce0-e4f09273d152
 keywords: ["KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_CAMERACONTROL\_EXPOSURE\_RELATIVE property specifies the electro
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
@@ -86,8 +85,7 @@ The property value (operation data) is a LONG that specifies a camera's relative
 
  
 
-Remarks
--------
+## Remarks
 
 When making a set request, you should provide one of the values in the preceding table in the **Value** member of the KSPROPERTY\_CAMERACONTROL\_NODE\_S structure.
 
@@ -95,8 +93,7 @@ When making a get request, the client receives one of the values in the precedin
 
 Set requests will fail if the Auto-Exposure mode control is in Auto mode or Aperture Priority mode.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -118,14 +115,5 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)
 

@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter OID Requests
 description: Miniport Adapter OID Requests
-ms.assetid: c3769b1e-c84a-499d-9f93-17a31441a477
 keywords:
 - OIDs WDK networking , miniport adapter requests
 - miniport adapters WDK networking , OID requests
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS defines object identifier (OID) values to identify miniport adapter parameters, which include operating parameters such as device characteristics, configurable settings and statistics. For more information about OIDs, see [NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+NDIS defines object identifier (OID) values to identify miniport adapter parameters, which include operating parameters such as device characteristics, configurable settings and statistics. For more information about OIDs, see [NDIS OIDs](/windows-hardware/drivers/ddi/_netvista/).
 
 For NDIS 6.1 and later miniport drivers, NDIS provides a [Direct OID Request Interface](direct-oid-request-interface-in-ndis-6-1.md). The *Direct OID request path* supports OID requests that are queried or set frequently. The Direct OID Request Interface is optional for NDIS drivers.
 

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_SERVICE_SESSION
 description: OID_WWAN_DEVICE_SERVICE_SESSION directs a miniport driver to open or close a device service session.NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION status notification containing a NDIS_WWAN_SET_DEVICE_SERVICE_SESSION structure that describes the result of the operation.
-ms.assetid: 32D4EDE3-4782-4C54-95B8-83DE7E63C4F8
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_SERVICE_SESSION Network Drivers Starting with Windows Vista
@@ -15,12 +14,11 @@ OID\_WWAN\_DEVICE\_SERVICE\_SESSION directs a miniport driver to open or close a
 
 Query requests are not supported.
 
-Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-session) status notification containing a [**NDIS\_WWAN\_SET\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_set_service_session) structure that describes the result of the operation.
+Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION**](./ndis-status-wwan-device-service-session.md) status notification containing a [**NDIS\_WWAN\_SET\_DEVICE\_SERVICE\_SESSION**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_set_service_session) structure that describes the result of the operation.
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support specified device service or operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -42,14 +40,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SET\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_set_service_session)
+[**NDIS\_WWAN\_SET\_DEVICE\_SERVICE\_SESSION**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_set_service_session)
 
-[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-session)
-
- 
+[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION**](./ndis-status-wwan-device-service-session.md)
 
  
-
-
-
 

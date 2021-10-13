@@ -1,5 +1,5 @@
 ---
-Description: A USB device exposes its capabilities in the form of a series of interfaces called a USB configuration.
+description: A USB device exposes its capabilities in the form of a series of interfaces called a USB configuration.
 title: USB configuration descriptors
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A USB device exposes its capabilities in the form of a series of interfaces called a USB configuration. Each interface consists of one or more alternate settings, and each alternate setting is made up of a set of endpoints. This topic describes the various descriptors associated with a USB configuration.
 
-A USB configuration is described in a configuration descriptor (see [**USB\_CONFIGURATION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_configuration_descriptor) structure). A configuration descriptor contains information about the configuration and its interfaces, alternate settings, and their endpoints. Each interface descriptor or alternate setting is described in a [**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_interface_descriptor) structure. In a configuration, each interface descriptor is followed in memory by all of the endpoint descriptors for the interface and alternate setting. Each endpoint descriptor is stored in a [**USB\_ENDPOINT\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_endpoint_descriptor) structure.
+A USB configuration is described in a configuration descriptor (see [**USB\_CONFIGURATION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor) structure). A configuration descriptor contains information about the configuration and its interfaces, alternate settings, and their endpoints. Each interface descriptor or alternate setting is described in a [**USB\_INTERFACE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor) structure. In a configuration, each interface descriptor is followed in memory by all of the endpoint descriptors for the interface and alternate setting. Each endpoint descriptor is stored in a [**USB\_ENDPOINT\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_endpoint_descriptor) structure.
 
 For example, consider a USB webcam device described in [USB Device Layout](usb-device-layout.md). The device supports a configuration with two interfaces, and the first interface (index 0) supports two alternate settings.
 
@@ -66,24 +66,24 @@ The **bEndpointAddress** field specifies the unique endpoint address that contai
 
 The configuration descriptor is obtained from the device through a standard device request (GET\_DESCRIPTOR), which is sent as a control transfer by the USB driver stack. A USB client driver can initiate the request in one of the following ways:
 
-- If the device supports only one configuration, the easiest way is to call the framework-provided [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor) method.
+- If the device supports only one configuration, the easiest way is to call the framework-provided [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor) method.
 - For a device that supports multiple configurations, if the client driver wants to get the descriptor of the configuration other than the first, the driver must submit an URB. To submit an URB, the driver must allocate, format, and then submit the URB to the USB driver stack.
 
-  To allocate the URB, the client driver must call the [**WdfUsbTargetDeviceCreateUrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb) method. The method receives a pointer to an URB allocated by the USB driver stack.
+  To allocate the URB, the client driver must call the [**WdfUsbTargetDeviceCreateUrb**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb) method. The method receives a pointer to an URB allocated by the USB driver stack.
 
-  To format the URB, the client driver can use the [**UsbBuildGetDescriptorRequest**](https://docs.microsoft.com/previous-versions/ff538943(v=vs.85)) macro. The macro sets all the necessary information in the URB, such as the device-defined configuration number for which to retrieve the descriptor. The URB function is set to URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE (see [**\_URB\_CONTROL\_DESCRIPTOR\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_descriptor_request)) and the type of descriptor is set to USB\_CONFIGURATION\_DESCRIPTOR\_TYPE. By using the information contained in the URB, the USB driver stack builds a standard control request and sends it to the device.
+  To format the URB, the client driver can use the [**UsbBuildGetDescriptorRequest**](/previous-versions/ff538943(v=vs.85)) macro. The macro sets all the necessary information in the URB, such as the device-defined configuration number for which to retrieve the descriptor. The URB function is set to URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE (see [**\_URB\_CONTROL\_DESCRIPTOR\_REQUEST**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_descriptor_request)) and the type of descriptor is set to USB\_CONFIGURATION\_DESCRIPTOR\_TYPE. By using the information contained in the URB, the USB driver stack builds a standard control request and sends it to the device.
 
-  To submit the URB, the client driver must use a WDF request object. To send the request object to the USB driver stack asynchronously, the driver must call the [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsend)method. To send it synchronously, call the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicesendurbsynchronously) method.
+  To submit the URB, the client driver must use a WDF request object. To send the request object to the USB driver stack asynchronously, the driver must call the [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)method. To send it synchronously, call the [**WdfUsbTargetDeviceSendUrbSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicesendurbsynchronously) method.
 
-  <strong>WDM drivers:  **A Windows Driver Model (WDM) client driver can only get the configuration descriptor by submitting an URB. To allocate the URB, the driver must call the [</strong>USBD\_UrbAllocate<strong>](<https://msdn.microsoft.com/library/windows/hardware/hh406250>) routine. To format the URB, the driver must call the [</strong>UsbBuildGetDescriptorRequest**](<https://msdn.microsoft.com/library/windows/hardware/ff538943>) macro. To submit the URB, the driver must associate the URB with an IRP, and submit the IRP to the USB driver stack. For more information, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
+  <strong>WDM drivers:  **A Windows Driver Model (WDM) client driver can only get the configuration descriptor by submitting an URB. To allocate the URB, the driver must call the [</strong>USBD\_UrbAllocate<strong>](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate) routine. To format the URB, the driver must call the [</strong>UsbBuildGetDescriptorRequest**](/previous-versions//ff538943(v=vs.85)) macro. To submit the URB, the driver must associate the URB with an IRP, and submit the IRP to the USB driver stack. For more information, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
 Within a USB configuration, the number of interfaces and their alternate settings are variable. Therefore, it's difficult to predict the size of buffer required to hold the configuration descriptor. The client driver must collect all that information in two steps. First, determine what size buffer required to hold all of the configuration descriptor, and then issue a request to retrieve the entire descriptor. A client driver can get the size in one of the following ways:
 
 **To obtain the configuration descriptor by calling WdfUsbTargetDeviceRetrieveConfigDescriptor, perform these steps:**
 
-1.  Get the size of buffer required to hold all of the configuration information by calling [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor). The driver must pass NULL in the buffer, and a variable to hold the size of the buffer.
-2.  Allocate a larger buffer based on the size received through the previous [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor) call.
-3.  Call [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor) again and specify a pointer to the new buffer allocated in step 2.
+1.  Get the size of buffer required to hold all of the configuration information by calling [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor). The driver must pass NULL in the buffer, and a variable to hold the size of the buffer.
+2.  Allocate a larger buffer based on the size received through the previous [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor) call.
+3.  Call [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor) again and specify a pointer to the new buffer allocated in step 2.
 
 ```cpp
  NTSTATUS RetrieveDefaultConfigurationDescriptor (
@@ -152,14 +152,14 @@ Exit:
 
 **To obtain the configuration descriptor by submitting an URB, perform these steps:**
 
-1.  Allocate an URB by calling the [**WdfUsbTargetDeviceCreateUrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb) method.
-2.  Format the URB by calling the [**UsbBuildGetDescriptorRequest**](https://docs.microsoft.com/previous-versions/ff538943(v=vs.85)) macro. The transfer buffer of the URB must point to a buffer large enough to hold a [**USB\_CONFIGURATION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_configuration_descriptor) structure.
-3.  Submit the URB as a WDF request object by calling [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsend) or [**WdfUsbTargetDeviceSendUrbSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicesendurbsynchronously).
-4.  After the request completes, check the **wTotalLength** member of [**USB\_CONFIGURATION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_configuration_descriptor). That value indicates the size of the buffer required to contain a full configuration descriptor.
+1.  Allocate an URB by calling the [**WdfUsbTargetDeviceCreateUrb**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb) method.
+2.  Format the URB by calling the [**UsbBuildGetDescriptorRequest**](/previous-versions/ff538943(v=vs.85)) macro. The transfer buffer of the URB must point to a buffer large enough to hold a [**USB\_CONFIGURATION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor) structure.
+3.  Submit the URB as a WDF request object by calling [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) or [**WdfUsbTargetDeviceSendUrbSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicesendurbsynchronously).
+4.  After the request completes, check the **wTotalLength** member of [**USB\_CONFIGURATION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor). That value indicates the size of the buffer required to contain a full configuration descriptor.
 5.  Allocate a larger buffer based on the size retrieved in **wTotalLength**.
 6.  Issue the same request with the larger buffer.
 
-The following example code shows the [**UsbBuildGetDescriptorRequest**](https://docs.microsoft.com/previous-versions/ff538943(v=vs.85)) call for a request to get configuration information for the i-th configuration:
+The following example code shows the [**UsbBuildGetDescriptorRequest**](/previous-versions/ff538943(v=vs.85)) call for a request to get configuration information for the i-th configuration:
 
 ```cpp
 NTSTATUS FX3_RetrieveConfigurationDescriptor (
@@ -293,17 +293,14 @@ Exit:
 
 When the device returns the configuration descriptor, the request buffer is filled with interface descriptors for all alternate settings, and endpoint descriptors for all endpoints within a particular alternate setting. For the device described in [USB Device Layout](usb-device-layout.md), the following diagram illustrates how configuration information is laid out in memory.
 
-![diagram illustrating a configuration descriptor layout](images/usbconfig.png)
+![diagram illustrating a configuration descriptor layout.](images/usbconfig.png)
 
-The zero-based **bInterfaceNumber** member of [**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_interface_descriptor) distinguishes interfaces within a configuration. For a given interface, the zero-based **bAlternateSetting** member distinguishes between alternate settings of the interface. The device returns interface descriptors in order of **bInterfaceNumber** values and then in order of **bAlternateSetting** values.
+The zero-based **bInterfaceNumber** member of [**USB\_INTERFACE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor) distinguishes interfaces within a configuration. For a given interface, the zero-based **bAlternateSetting** member distinguishes between alternate settings of the interface. The device returns interface descriptors in order of **bInterfaceNumber** values and then in order of **bAlternateSetting** values.
 
-To search for a given interface descriptor within the configuration, the client driver can call [**USBD\_ParseConfigurationDescriptorEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_parseconfigurationdescriptorex). In the call, the client driver provides a starting position within the configuration. Optionally the driver can specify an interface number, an alternate setting, a class, a subclass, or a protocol. The routine returns a pointer to the next matching interface descriptor.
+To search for a given interface descriptor within the configuration, the client driver can call [**USBD\_ParseConfigurationDescriptorEx**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_parseconfigurationdescriptorex). In the call, the client driver provides a starting position within the configuration. Optionally the driver can specify an interface number, an alternate setting, a class, a subclass, or a protocol. The routine returns a pointer to the next matching interface descriptor.
 
-To examine a configuration descriptor for an endpoint or string descriptor, use the [**USBD\_ParseDescriptors**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_parsedescriptors) routine. The caller provides a starting position within the configuration and a descriptor type, such as USB\_STRING\_DESCRIPTOR\_TYPE or USB\_ENDPOINT\_DESCRIPTOR\_TYPE. The routine returns a pointer to the next matching descriptor.
+To examine a configuration descriptor for an endpoint or string descriptor, use the [**USBD\_ParseDescriptors**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_parsedescriptors) routine. The caller provides a starting position within the configuration and a descriptor type, such as USB\_STRING\_DESCRIPTOR\_TYPE or USB\_ENDPOINT\_DESCRIPTOR\_TYPE. The routine returns a pointer to the next matching descriptor.
 
 ## Related topics
 [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md)  
-[USB Descriptors](usb-descriptors.md)  
-
-
-
+[USB Descriptors](usb-descriptors.md)

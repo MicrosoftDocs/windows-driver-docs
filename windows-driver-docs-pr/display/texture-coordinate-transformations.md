@@ -1,7 +1,6 @@
 ---
 title: Texture Coordinate Transformations
 description: Texture Coordinate Transformations
-ms.assetid: d0857496-a7ce-4e9f-89d9-03c73d6f59e3
 keywords:
 - coordinate transformations WDK Direct3D
 - texture transforms WDK Direct3D

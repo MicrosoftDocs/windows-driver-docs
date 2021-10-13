@@ -1,7 +1,6 @@
 ---
 title: Creating and Binding SAN Sockets
 description: Creating and Binding SAN Sockets
-ms.assetid: 0589bd82-40d3-42df-926c-93093fb0617f
 keywords:
 - SAN connection setup WDK , socket creation and binding
 - SAN sockets WDK SANs
@@ -35,7 +34,7 @@ The companion socket also has the same IP address and TCP port as the socket tha
 
 The following figure shows an overview of how the Windows Sockets switch creates a companion socket. The sequence in the sections that follow describe creating a companion socket in more detail.
 
-![diagram overview of how the windows sockets switch creates a companion socket](images/apiflow2.png)
+![diagram overview of how the windows sockets switch creates a companion socket.](images/apiflow2.png)
 
 ### Initiating Creation of a TCP/IP Socket
 
@@ -66,7 +65,7 @@ The following figure shows an overview of how the Windows Sockets switch creates
 
 2.  If the switch determines that it cannot use a SAN service provider for a data transfer, the switch routes the data transfer through the TCP/IP service provider.
 
-3.  If the switch chooses a SAN service provider to service an application's socket, the switch calls the SAN service provider's [**WSPSocket**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566319(v=vs.85)) function to create a companion socket.
+3.  If the switch chooses a SAN service provider to service an application's socket, the switch calls the SAN service provider's [**WSPSocket**](/previous-versions/windows/hardware/network/ff566319(v=vs.85)) function to create a companion socket.
 
 ### Initiating Creation of a Companion Socket
 
@@ -86,7 +85,7 @@ The following figure shows an overview of how the Windows Sockets switch creates
 
 ### Binding a Companion Socket
 
-1.  If a SAN service provider's **WSPSocket** function completes successfully, the switch immediately calls the SAN service provider's [**WSPBind**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566268(v=vs.85)) function to assign a local IP address and TCP port to the socket.
+1.  If a SAN service provider's **WSPSocket** function completes successfully, the switch immediately calls the SAN service provider's [**WSPBind**](/previous-versions/windows/hardware/network/ff566268(v=vs.85)) function to assign a local IP address and TCP port to the socket.
 
 2.  The switch assigns the same IP address and TCP port to the SAN socket as was assigned to the socket that was created by the TCP/IP provider. The SAN service provider must translate this TCP/IP address into its native format.
 
@@ -94,21 +93,15 @@ The following figure shows an overview of how the Windows Sockets switch creates
 
 ### Setting Options for a Companion Socket
 
--   If the application specified any socket options, the switch stores those options. After creating the SAN socket, the switch calls the SAN service provider's [**WSPSetSockOpt**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566318(v=vs.85)) function for each supported option that was specified by the application to immediately set these options for the SAN socket.
+-   If the application specified any socket options, the switch stores those options. After creating the SAN socket, the switch calls the SAN service provider's [**WSPSetSockOpt**](/previous-versions/windows/hardware/network/ff566318(v=vs.85)) function for each supported option that was specified by the application to immediately set these options for the SAN socket.
 
 ### Failing a Companion Socket Call
 
--   If a SAN service provider fails any of the preceding calls to its **WSPSocket**, **WSPBind**, or **WSPSetSockOpt** functions, the switch calls the SAN service provider's [**WSPCloseSocket**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566273(v=vs.85)) function to destroy the SAN socket. The switch then uses the TCP/IP provider to continue servicing the application socket. Note that, after the switch establishes a connection using a SAN service provider, the switch cannot use the TCP/IP provider to service the application's socket. In this case, the switch returns the appropriate error to the application.
+-   If a SAN service provider fails any of the preceding calls to its **WSPSocket**, **WSPBind**, or **WSPSetSockOpt** functions, the switch calls the SAN service provider's [**WSPCloseSocket**](/previous-versions/windows/hardware/network/ff566273(v=vs.85)) function to destroy the SAN socket. The switch then uses the TCP/IP provider to continue servicing the application socket. Note that, after the switch establishes a connection using a SAN service provider, the switch cannot use the TCP/IP provider to service the application's socket. In this case, the switch returns the appropriate error to the application.
 
 ### Connecting the Companion Socket
 
--   After the switch sets up the companion socket, the switch calls either the **WSPListen** or **WSPConnect** function for the SAN service provider to perform the operation that caused the SAN service provider to originally set up the socket. For example, if an application originally requested to listen for incoming connections, the switch calls the SAN service provider's [**WSPListen**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566297(v=vs.85)) function.
+-   After the switch sets up the companion socket, the switch calls either the **WSPListen** or **WSPConnect** function for the SAN service provider to perform the operation that caused the SAN service provider to originally set up the socket. For example, if an application originally requested to listen for incoming connections, the switch calls the SAN service provider's [**WSPListen**](/previous-versions/windows/hardware/network/ff566297(v=vs.85)) function.
 
  
-
- 
-
-
-
-
 

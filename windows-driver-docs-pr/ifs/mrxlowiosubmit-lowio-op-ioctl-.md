@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_IOCTL\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_IOCTL\ routine is called by RDBSS to issue an I/O system control request to the network mini-redirector.
-ms.assetid: b416e2b4-6024-45ec-adf5-90743d417ad5
 keywords: ["MRxLowIOSubmit LOWIO_OP_IOCTL routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 # MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\] routine
 
 
-The *MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to issue an I/O system control request to the network mini-redirector.
+The *MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to issue an I/O system control request to the network mini-redirector.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxLowIOSubmit[LOWIO_OP_IOCTL];
@@ -32,14 +30,12 @@ NTSTATUS MRxLowIOSubmit[LOWIO_OP_IOCTL](
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -80,8 +76,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS calls *MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]* in response to receiving an [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](irp-mj-internal-device-control.md) requests.
 
@@ -103,8 +98,7 @@ The **LowIoContext.ParamsFor.IoCtl.OutputBufferLength** member is set to the out
 
 While the *MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member of RX\_CONTEXT can be used to release the input resource on behalf of another thread. When an asynchronous routine completes, the input resource that was acquired from the initial thread can be released.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -143,11 +137,4 @@ Requirements
 [**MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]**](mrxlowiosubmit-lowio-op-write-.md)
 
  
-
- 
-
-
-
-
-
 

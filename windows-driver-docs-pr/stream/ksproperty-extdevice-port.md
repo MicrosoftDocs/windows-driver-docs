@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_PORT
 description: The KSPROPERTY\_EXTDEVICE\_PORT property retrieves an external device's port type.
-ms.assetid: 7513c37f-0c93-4078-ba85-cbc98304880f
 keywords: ["KSPROPERTY_EXTDEVICE_PORT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_EXTDEVICE\_PORT property retrieves an external device's port typ
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Device</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extdevice_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTDEVICE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extdevice_s)"><strong>KSPROPERTY_EXTDEVICE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTDEVICE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)"><strong>KSPROPERTY_EXTDEVICE_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -57,13 +56,11 @@ The KSPROPERTY\_EXTDEVICE\_PORT property retrieves an external device's port typ
 
 The property value (operation data) is a ULONG that specifies the external device's connection port. For example 1394 or USB.
 
-Remarks
--------
+## Remarks
 
 The **DevPort** member of the KSPROPERTY\_EXTDEVICE\_S structure specifies the external device's port type. The **DevPort** member may be set to equal DEV\_PORT\_1394, DEV\_PORT\_USB, etc. These tokens are defined in the *xprtdefs.h* file in the Microsoft DirectX SDK.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_EXTDEVICE\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extdevice_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_EXTDEVICE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)
 

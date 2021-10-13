@@ -4,7 +4,6 @@ description: The AddRequeryKey method adds a new QueryKey to re-query upon retur
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: D2C418C4-3C1B-4CEA-9F39-036C4DB2A483
 keywords: ["AddRequeryKey method Print Devices", "AddRequeryKey method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddRequeryKey method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddRequeryKey method adds a new QueryKey to re-query upon return from the getSchemas call.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddRequeryKey(
@@ -29,19 +27,16 @@ HRESULT AddRequeryKey(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
  *bstrQueryKey* \[in\]  
 The new QueryKey.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

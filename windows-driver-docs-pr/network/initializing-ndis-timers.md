@@ -1,7 +1,6 @@
 ---
 title: Initializing NDIS Timers
 description: Initializing NDIS Timers
-ms.assetid: 2f304f5c-fa70-441e-853e-a48ad70d61a0
 keywords:
 - timer services WDK NDIS
 - NDIS timer services WDK
@@ -16,17 +15,11 @@ ms.localizationpriority: medium
 
 
 
-The [**NDIS\_TIMER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_timer_characteristics) structure defines characteristics of a one-shot or periodic timer. Any NDIS driver can have more than one timer. Each timer object is associated with a different [**NetTimerCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_timer_function) function that is specified in the **TimerFunction** member. NDIS calls the associated *NetTimerCallback* function when the timer expires.
+The [**NDIS\_TIMER\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_timer_characteristics) structure defines characteristics of a one-shot or periodic timer. Any NDIS driver can have more than one timer. Each timer object is associated with a different [**NetTimerCallback**](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_timer_function) function that is specified in the **TimerFunction** member. NDIS calls the associated *NetTimerCallback* function when the timer expires.
 
-To allocate and initialize a timer, your driver should call the [**NdisAllocateTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocatetimerobject) function and provide a driver-allocated NDIS\_TIMER\_CHARACTERISTICS structure. The timer does not start until the driver calls the [**NdisSetTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissettimerobject) function.
+To allocate and initialize a timer, your driver should call the [**NdisAllocateTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatetimerobject) function and provide a driver-allocated NDIS\_TIMER\_CHARACTERISTICS structure. The timer does not start until the driver calls the [**NdisSetTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissettimerobject) function.
 
-To free a timer object, your driver should call the [**NdisFreeTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreetimerobject) function.
-
- 
+To free a timer object, your driver should call the [**NdisFreeTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreetimerobject) function.
 
  
-
-
-
-
 

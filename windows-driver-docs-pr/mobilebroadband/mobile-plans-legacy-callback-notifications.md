@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans legacy callback notifications
 description: This topic describes the Callback notifications support by Mobile Plans app
-ms.assetid: 5077A3EA 379C 4EB5 A05B BA1585E9594D
 keywords:
 - Windows Mobile Plans Legacy Callback notifications, Mobile Plans Legacy implementation mobile operators
 ms.date: 05/24/2019
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the high level flow for how the Mobile Plans program supports downloading a profile without control leaving the MODirect portal.
 
-![Mobile Plans inline profile download sequence diagram](images/dynamo_inline_profile_flow.PNG)
+![Mobile Plans inline profile download sequence diagram.](images/dynamo_inline_profile_flow.PNG)
 
 When the MO Direct portal is ready for a profile download, install, and activation to occur, the portal should call `MobilePlansInlineProfile.notifyInlineProfileDownload`.
 

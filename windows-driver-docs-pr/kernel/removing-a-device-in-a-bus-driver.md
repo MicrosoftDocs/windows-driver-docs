@@ -1,7 +1,6 @@
 ---
 title: Removing a Device in a Bus Driver
 description: Removing a Device in a Bus Driver
-ms.assetid: f3961c29-02e1-41f0-bb7f-784bcdb57eb0
 keywords: ["bus drivers WDK PnP", "DispatchPnP routine"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,9 +14,9 @@ ms.localizationpriority: medium
 
 When removing a child device (child PDO), the parent bus driver must undo any operations it performed to add and start the device.
 
-A bus driver removes a child device with a procedure such as the following in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine:
+A bus driver removes a child device with a procedure such as the following in its [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine:
 
-1.  Has the driver handled a previous [**IRP\_MN\_SURPRISE\_REMOVAL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-surprise-removal) request for this PDO?
+1.  Has the driver handled a previous [**IRP\_MN\_SURPRISE\_REMOVAL**](./irp-mn-surprise-removal.md) request for this PDO?
 
     If so, perform any remaining clean-up and skip to step 4.
 
@@ -25,19 +24,19 @@ A bus driver removes a child device with a procedure such as the following in it
 
 2.  Complete any requests queued in the driver.
 
-3.  Remove power from the device, if the bus driver is capable of doing so, and notify the power manager by calling [**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-posetpowerstate).
+3.  Remove power from the device, if the bus driver is capable of doing so, and notify the power manager by calling [**PoSetPowerState**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate).
 
-    The bus driver powers down the child device, if possible, and notifies the power manager of the device's change in power state. The bus driver does this in response to the [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) request; the device's power policy owner does not send an [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) request when the device is being removed. For additional information, see [Power Management](implementing-power-management.md).
+    The bus driver powers down the child device, if possible, and notifies the power manager of the device's change in power state. The bus driver does this in response to the [**IRP\_MN\_REMOVE\_DEVICE**](./irp-mn-remove-device.md) request; the device's power policy owner does not send an [**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md) request when the device is being removed. For additional information, see [Power Management](./introduction-to-power-management.md).
 
-4.  If the bus driver reported this device in its most recent response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) request for **BusRelations**, the device is still physically present on the machine. In this case, the bus driver:
+4.  If the bus driver reported this device in its most recent response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](./irp-mn-query-device-relations.md) request for **BusRelations**, the device is still physically present on the machine. In this case, the bus driver:
 
     -   Retains the PDO for the device until the device has been physically removed.
 
     -   Sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Completes the IRP with [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest).
+    -   Completes the IRP with [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest).
 
-    -   Returns from the [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+    -   Returns from the [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
     The bus driver must continue to report this device in subsequent enumerations (**IRP\_MN\_QUERY\_DEVICE\_RELATIONS** for **BusRelations**) until the device is physically removed. The PnP manager keeps track of whether an enumerated device has been added and started.
 
@@ -47,9 +46,9 @@ A bus driver removes a child device with a procedure such as the following in it
 
     -   Sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Completes the IRP with [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest).
+    -   Completes the IRP with [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest).
 
-    -   Frees the PDO with [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iodeletedevice).
+    -   Frees the PDO with [**IoDeleteDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice).
 
         The bus driver must delete the PDO if the driver omitted the device from its most recent **BusRelations** list. If a user plugs the device into the machine again, the bus driver must create a new PDO in response to the next **BusRelations** query. If a bus driver reuses the same PDO for a new instance of a device, the machine will not operate properly.
 
@@ -59,12 +58,7 @@ If the device is still present when the PnP manager sends the **IRP\_MN\_REMOVE\
 
 A bus driver must be able to handle an **IRP\_MN\_REMOVE\_DEVICE** for a device it has already removed and whose PDO is marked for deletion. In response to such an IRP, the bus driver can succeed the IRP or return STATUS\_NO\_SUCH\_DEVICE. The PDO for the device has not yet been deleted in this case, despite the bus driver's previous call to **IoDeleteDevice**, because some component still has a reference to the object. Therefore, the bus driver can access the PDO while handling the second remove IRP. The bus driver must not call **IoDeleteDevice** a second time for the PDO; the I/O system deletes the PDO when its reference count reaches zero.
 
-A bus driver does not remove its data structures for a child device until it receives an **IRP\_MN\_REMOVE\_DEVICE** request for the device. A bus driver might detect that a device has been removed and call [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations), but it must not delete the device's PDO until the PnP manager sends an **IRP\_MN\_REMOVE\_DEVICE** request.
+A bus driver does not remove its data structures for a child device until it receives an **IRP\_MN\_REMOVE\_DEVICE** request for the device. A bus driver might detect that a device has been removed and call [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations), but it must not delete the device's PDO until the PnP manager sends an **IRP\_MN\_REMOVE\_DEVICE** request.
 
  
-
- 
-
-
-
 

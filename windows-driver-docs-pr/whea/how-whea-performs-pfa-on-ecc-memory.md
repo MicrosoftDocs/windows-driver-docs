@@ -1,7 +1,6 @@
 ---
 title: How WHEA Performs PFA on ECC Memory
 description: How WHEA Performs PFA on ECC Memory
-ms.assetid: def94688-9ca6-4146-8d5b-4c3550d3d272
 keywords:
 - predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory
 - PFA WDK WHEA , Error Correction Code memory
@@ -22,7 +21,7 @@ WHEA performs PFA on ECC memory pages only if the following are true:
 
 -   The registry value **MemPfaDisable** is not set to 1.
 
--   A [platform-specific hardware error driver (PSHED) plug-in](platform-specific-hardware-error-driver-plug-ins2.md) had not previously set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_packet_flags) member of the [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure to 1. The plug-in sets this bit if it is performing PFA. For more information about how PFA is performed by this plug-in, see [PFA Performed by a PSHED Plug-In](pfa-performed-by-a-pshed-plug-in.md).
+-   A [platform-specific hardware error driver (PSHED) plug-in](platform-specific-hardware-error-driver-plug-ins2.md) had not previously set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_packet_flags) member of the [WHEA\_ERROR\_PACKET](/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure to 1. The plug-in sets this bit if it is performing PFA. For more information about how PFA is performed by this plug-in, see [PFA Performed by a PSHED Plug-In](pfa-performed-by-a-pshed-plug-in.md).
 
 When an ECC memory error occurs on a memory page, WHEA performs PFA on the ECC memory page by following these steps:
 
@@ -50,12 +49,4 @@ WHEA then adds the memory page into the Boot Configuration Data (BCD) in the sys
 
 For more information about the PFA registry values for WHEA, see [WHEA Policy Settings](whea-pfa-registry-settings.md).
 
-For more information about the system memory manager, see the [Memory Management](https://go.microsoft.com/fwlink/p/?linkid=140723) in the Windows SDK documentation.
-
-
-
-
-
-
-
-
+For more information about the system memory manager, see the [Memory Management](/windows/win32/memory/memory-management) in the Windows SDK documentation.

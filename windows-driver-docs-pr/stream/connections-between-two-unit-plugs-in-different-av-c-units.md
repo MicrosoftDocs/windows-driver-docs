@@ -1,7 +1,6 @@
 ---
 title: Connections Between Two Unit Plugs in Different AV/C Units
 description: Connections Between Two Unit Plugs in Different AV/C Units
-ms.assetid: b9c45304-33a2-4d02-9c38-1d124a33f0f2
 keywords:
 - connections WDK AV/C
 - AV/C WDK , connection scenarios
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 Scenarios 7 and 8 represent connections between a subunit in one unit to a subunit in a different unit, where the target does not support subunit to unit connections within one AV/C unit. These type of connections require the **Signal source** and **Input select** CCM commands.
 
-Scenarios 7 and 8 describe subunit source or destination plugs that have the **KSPIN\_FLAG\_AVC\_PCRONLY** flag set in the **Flag** member of their [**AVCPRECONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avcpreconnectinfo) structures, which is translated by *Avc.sys* to 0xFF for their subunit's address.
+Scenarios 7 and 8 describe subunit source or destination plugs that have the **KSPIN\_FLAG\_AVC\_PCRONLY** flag set in the **Flag** member of their [**AVCPRECONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcpreconnectinfo) structures, which is translated by *Avc.sys* to 0xFF for their subunit's address.
 
 ### **Scenario 7**
 
@@ -24,11 +23,11 @@ Scenarios 7 and 8 describe subunit source or destination plugs that have the **K
 
 **Input select**: The local unit connects from any available (0x7F) isochronous output plug on the target unit to any available (0x7F) isochronous input plug on the local unit and then connects to a specific (0x0 to 0x1E) or any available (0xFF) subunit destination plug on the local unit.
 
-![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-in](images/avc-ccm7.gif)
+![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-in.](images/avc-ccm7.gif)
 
 Scenario 7 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_IN.
 
-Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avcconnectinfo) structure and specifies values for these members for a source subunit plug.
+Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo) structure and specifies values for these members for a source subunit plug.
 
 <table>
 <colgroup>
@@ -92,7 +91,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 
 **Input select**: The target unit connects from local unit's isochronous output plug (returned in signal source CCM command) to any available (0x7F) isochronous input plug on the target unit.
 
-![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-out](images/avc-ccm8.gif)
+![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-out.](images/avc-ccm8.gif)
 
 Scenario 8 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_OUT.
 
@@ -167,9 +166,4 @@ The following list describes the meaning of values that appear in the preceding 
 -   The values in the **DeviceID** columns (for source and destination subunit plugs) are used to search for the physical device object (PDO) of the target AV/C device to issue AV/C CCM commands to.
 
  
-
- 
-
-
-
 

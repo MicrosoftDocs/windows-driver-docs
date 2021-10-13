@@ -1,7 +1,6 @@
 ---
 title: Allocator
 description: Allocator
-ms.assetid: 8f263288-2f79-4f1d-b740-d78d40f47b32
 keywords:
 - MIDI transport WDK audio
 - wave sinks WDK audio , MIDI transport
@@ -17,11 +16,11 @@ ms.localizationpriority: medium
 ## <span id="allocator"></span><span id="ALLOCATOR"></span>
 
 
-The interfaces to and from the allocator are [IMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imxf) and [IAllocatorMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iallocatormxf). These interfaces allow you to reuse [**DMUS\_KERNEL\_EVENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/ns-dmusicks-_dmus_kernel_event) structures without allocating and deallocating memory. [**IMXF::PutMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-imxf-putmessage) gives a structure to the allocator and [**IAllocatorMXF::GetMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iallocatormxf-getmessage) retrieves a freshly zeroed DMUS\_KERNEL\_EVENT structure from the allocator for reuse. (The allocator gets created with empty DMUS\_KERNEL\_EVENT structures in the pool so that it never starts out empty.) As shown in the following diagram figure, IRPs (in the form of DMUS\_EVENTHEADER structures) come in from dmusic.dll to the unpacker.
+The interfaces to and from the allocator are [IMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imxf) and [IAllocatorMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iallocatormxf). These interfaces allow you to reuse [**DMUS\_KERNEL\_EVENT**](/windows-hardware/drivers/ddi/dmusicks/ns-dmusicks-_dmus_kernel_event) structures without allocating and deallocating memory. [**IMXF::PutMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-putmessage) gives a structure to the allocator and [**IAllocatorMXF::GetMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iallocatormxf-getmessage) retrieves a freshly zeroed DMUS\_KERNEL\_EVENT structure from the allocator for reuse. (The allocator gets created with empty DMUS\_KERNEL\_EVENT structures in the pool so that it never starts out empty.) As shown in the following diagram figure, IRPs (in the form of DMUS\_EVENTHEADER structures) come in from dmusic.dll to the unpacker.
 
-![diagram illustrating the flow of irps through port and miniport drivers](images/dmalloc.png)
+![diagram illustrating the flow of irps through port and miniport drivers.](images/dmalloc.png)
 
-The unpacker calls **IAllocatorMXF::GetMessage** to retrieve an empty [**DMUS\_KERNEL\_EVENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/ns-dmusicks-_dmus_kernel_event) structure. The unpacker retrieves the DMUS\_KERNEL\_EVENT structures from the IRP, fills in these structures (one per MIDI event), and passes them down to the sequencer (using its MXF interface). The sequencer reorders them based on their time stamps and, when they are due, passes them to the miniport driver by calling **IMXF::PutMessage**. The miniport driver pulls the MIDI data out of the DMUS\_KERNEL\_EVENT structures so that it can render it into wave data. It passes the used DMUS\_KERNEL\_EVENT structures back to the allocator with another **IMXF::PutMessage** call.
+The unpacker calls **IAllocatorMXF::GetMessage** to retrieve an empty [**DMUS\_KERNEL\_EVENT**](/windows-hardware/drivers/ddi/dmusicks/ns-dmusicks-_dmus_kernel_event) structure. The unpacker retrieves the DMUS\_KERNEL\_EVENT structures from the IRP, fills in these structures (one per MIDI event), and passes them down to the sequencer (using its MXF interface). The sequencer reorders them based on their time stamps and, when they are due, passes them to the miniport driver by calling **IMXF::PutMessage**. The miniport driver pulls the MIDI data out of the DMUS\_KERNEL\_EVENT structures so that it can render it into wave data. It passes the used DMUS\_KERNEL\_EVENT structures back to the allocator with another **IMXF::PutMessage** call.
 
 The reverse situation happens for capture. MIDI data comes in from the hardware to the miniport driver and the miniport driver calls **IAllocatorMXF::GetMessage** to get an empty DMUS\_KERNEL\_EVENT structure. DMUS\_KERNEL\_EVENT structures are filled with time stamps and data and passed to the capture sink via **IMXF::PutMessage**. The miniport driver can pass more than one message per structure if it sets the DMUS\_KEF\_EVENT\_INCOMPLETE flag in the DMUS\_KERNEL\_EVENT structure. The capture sink in the DMus port driver parses this raw data stream and emits DMUS\_KERNEL\_EVENT structures that contain time-stamped MIDI messages (one per structure).
 
@@ -30,9 +29,4 @@ It is also possible for the miniport driver itself to emit time-stamped messages
 When the packer pulls the data out of a DMUS\_KERNEL\_EVENT structure, it discards the used DMUS\_KERNEL\_EVENT structure into the allocator with **IMXF::PutMessage**. When the IRP buffer is full, it is passed up to dmusic.dll. The packer receives empty IRPs from dmusic.dll, fills them, and completes them. More IRPs keep trickling down so that it always has one to fill.
 
  
-
- 
-
-
-
 

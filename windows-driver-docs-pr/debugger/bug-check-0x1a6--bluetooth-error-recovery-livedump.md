@@ -31,15 +31,13 @@ The BLUETOOTH\_ERROR\_RECOVERY\_LIVEDUMP bug check has a value of 0x000001A6. It
 |4| Reserved.|
 
 ## Cause
------
 
 The Bluetooth radio driver (bthport.sys) has initiated error recovery to attempt to recover and reset the radio from an irremediable internal condition.
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 
-## See Also
-----------
+## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

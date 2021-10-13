@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbusb2ep
 description: The usbkd.usbusb2ep command displays information from a usbport _USB2_EP structure.
-ms.assetid: 0298D7A2-C121-4B09-8542-CCD10323D573
 keywords: ["usbkd.usbusb2ep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -38,14 +37,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

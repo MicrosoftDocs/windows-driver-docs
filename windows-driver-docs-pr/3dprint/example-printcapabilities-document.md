@@ -1,26 +1,24 @@
 ---
 title: PrintCapabilities document example
 description: The keywords used in the following example are for illustration only, although they generally conform to the Print Schema keywords for 3D manufacturing.
-ms.assetid: 0FCEFC25-C22F-44BD-9693-B3DBE6F6D314
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
 # PrintCapabilities document example
-
 
 The keywords used in the following example are for illustration only, although they generally conform to the Print Schema keywords for 3D manufacturing.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <psf:PrintCapabilities
-    xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1"
-    xmlns:ns0000="http://schemas.microsoft.com/windows/printing/oemdriverpt/3dprinter"
-    xmlns:psk="http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords"
-    xmlns:psk3d="http://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d"
-    xmlns:vnd="http://foo">
+    xmlns:psf="https://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="https://www.w3.org/2001/XMLSchema" version="1"
+    xmlns:ns0000="https://schemas.microsoft.com/windows/printing/oemdriverpt/3dprinter"
+    xmlns:psk="https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords"
+    xmlns:psk3d="https://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d"
+    xmlns:vnd="https://foo">
 
     <psf:Property name="psk3d:Job3DOutputArea">
         <psf:Property name="psk3d:Job3DOutputAreaWidth">
@@ -265,11 +263,3 @@ The keywords used in the following example are for illustration only, although t
 
 </psf:PrintCapabilities>
 ```
-
- 
-
- 
-
-
-
-

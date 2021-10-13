@@ -1,7 +1,6 @@
 ---
 title: Enforcing a Secure Read For a HID Collection
 description: Enforcing a Secure Read For a HID Collection
-ms.assetid: be3c7d1b-195c-4b7f-a404-070b3b265333
 keywords:
 - collections WDK HID , secure reads
 - HID collections WDK , secure reads
@@ -23,7 +22,7 @@ If a secure read is enabled for a collection, only "trusted" clients (those with
 
 This mechanism is provided primarily so that "trusted" user-mode system components can prevent user-mode applications without SeTcbPrivilege privileges from obtaining input from a collection during critical system operations. For example, a "trusted" user-mode system component can prevent a user-mode application without SeTcbPrivilege privileges from obtaining confidential information that a user supplies during a logon operation.
 
-"Trusted" clients use [**IOCTL\_HID\_ENABLE\_SECURE\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidclass/ni-hidclass-ioctl_hid_enable_secure_read) and [**IOCTL\_HID\_DISABLE\_SECURE\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidclass/ni-hidclass-ioctl_hid_disable_secure_read) requests to enable and disable a secure read for a collection. If a client without SeTcbPrivilege privileges uses these requests, the request does not change the secure read state of a collection, and the HID class driver returns a status value of STATUS\_PRIVILEGE\_NOT\_HELD.
+"Trusted" clients use [**IOCTL\_HID\_ENABLE\_SECURE\_READ**](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_enable_secure_read) and [**IOCTL\_HID\_DISABLE\_SECURE\_READ**](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_disable_secure_read) requests to enable and disable a secure read for a collection. If a client without SeTcbPrivilege privileges uses these requests, the request does not change the secure read state of a collection, and the HID class driver returns a status value of STATUS\_PRIVILEGE\_NOT\_HELD.
 
 Enabling and disabling a secure read for a collection works in the following way:
 
@@ -36,12 +35,7 @@ Enabling and disabling a secure read for a collection works in the following way
     -   If the secure read count for the file is equal to zero, the driver does not change the secure read counts.
 -   If the secure read count for a collection is greater than zero, the HID class driver enforces a secure read for the collection. Otherwise, the driver does not enforce a secure read for the collection.
 
--   A client should use a disable request to cancel a corresponding enable request. However, if the client does not do this, the HID class driver appropriately decrements the secure read count for a collection when it processes an [**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close) request for a file. When the driver processes the close request, it decrements the secure read count for the collection by the secure read count for the file being closed.
+-   A client should use a disable request to cancel a corresponding enable request. However, if the client does not do this, the HID class driver appropriately decrements the secure read count for a collection when it processes an [**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md) request for a file. When the driver processes the close request, it decrements the secure read count for the collection by the secure read count for the file being closed.
 
  
-
- 
-
-
-
 

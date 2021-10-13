@@ -1,7 +1,6 @@
 ---
 title: NDIS Intermediate Drivers Overview
 description: NDIS Intermediate Drivers Overview
-ms.assetid: 63e1b34b-c59e-4aa9-9551-ac9ccb8bcc82
 keywords:
 - intermediate drivers WDK networking , about intermediate drivers
 - NDIS intermediate drivers WDK , about intermediate drivers
@@ -24,7 +23,7 @@ Miniport drivers control NIC devices and communicate with the lower edge of prot
 
 The relationships between miniport drivers, protocol drivers, and NDIS are illustrated in the following figure.
 
-![diagram illustrating the relationships between miniport drivers, protocol drivers, and ndis ](images/ndisdrvr.png)
+![diagram illustrating the relationships between miniport drivers, protocol drivers, and ndis .](images/ndisdrvr.png)
 
 NDIS miniport drivers and protocol drivers are bound together through standard NDIS interfaces.
 
@@ -32,7 +31,7 @@ NDIS intermediate drivers include a protocol driver interface at their upper edg
 
 The relationships between miniport drivers, protocol drivers, intermediate drivers, and NDIS are illustrated in the following figure.
 
-![diagram illustrating the relationships between miniport drivers, protocol drivers, intermediate drivers, and ndis ](images/intdriver.png)
+![diagram illustrating the relationships between miniport drivers, protocol drivers, intermediate drivers, and ndis .](images/intdriver.png)
 
 The intermediate driver miniport interface is called a virtual miniport. It is virtual in that it does not control a physical device directly. Instead, it relies on an underlying miniport driver to communicate with the physical device.
 
@@ -42,7 +41,7 @@ The lower edge of the virtual miniport and the upper edge of the intermediate dr
 
 The following figure illustrates the internal bindings between the virtual miniport and the intermediate driver protocol.
 
-![diagram illustrating the internal bindings between the virtual miniport and the intermediate driver protocol](images/intbindings.png)
+![diagram illustrating the internal bindings between the virtual miniport and the intermediate driver protocol.](images/intbindings.png)
 
 There are two types of NDIS intermediate drivers: filter intermediate drivers and MUX intermediate drivers. The following topics describe these driver types:
 

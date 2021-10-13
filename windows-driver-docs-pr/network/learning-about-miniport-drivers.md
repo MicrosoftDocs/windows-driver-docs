@@ -1,7 +1,6 @@
 ---
 title: Learning About Miniport Drivers
 description: Learning About Miniport Drivers
-ms.assetid: faaeee13-7d21-4e06-a33c-da249716d925
 keywords:
 - connectionless drivers WDK networking
 - connection-oriented drivers WDK networking
@@ -32,9 +31,9 @@ There are several types of miniport drivers. The following list describes which 
 <a href="" id="connectionless-miniport-drivers"></a>**Connectionless miniport drivers**  
 If you are writing a miniport driver that controls a network interface card (NIC) for connectionless network media (such as Ethernet), read:
 
--   [Introduction to NDIS Miniport Drivers](introduction-to-ndis-miniport-drivers.md)
+-   [Introduction to NDIS Miniport Drivers](deserialized-ndis-miniport-drivers.md)
 
--   [NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
+-   [NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
 <a href="" id="connection-oriented-miniport-drivers"></a>**Connection-oriented miniport drivers**  
 If you are writing a miniport driver for connection-oriented network media (such as ISDN), read:
@@ -65,7 +64,7 @@ If you are writing a miniport driver that controls an IrDA adapter, read:
 <a href="" id="miniport-drivers-that-support-scalable-networking"></a>**Miniport drivers that support scalable networking**  
 To learn about miniport drivers that support scalable networking, read:
 
--   [Scalable Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+-   [Scalable Networking](/windows-hardware/drivers/ddi/_netvista/)
 
 <a href="" id="miniport-drivers-that-support-offloading-tcp-ip--------to-hardware-------"></a>**Miniport drivers that support offloading TCP/IP to hardware**   
 To learn about miniport drivers that offload TCP/IP to hardware, read:
@@ -73,10 +72,4 @@ To learn about miniport drivers that offload TCP/IP to hardware, read:
 -   [TCP/IP Offload](tcp-ip-offload.md)
 
  
-
- 
-
-
-
-
 

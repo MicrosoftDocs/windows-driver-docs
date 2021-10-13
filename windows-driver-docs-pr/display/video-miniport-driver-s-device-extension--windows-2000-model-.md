@@ -1,7 +1,6 @@
 ---
 title: Video Miniport Driver's Device Extension (XDDM)
 description: Video Miniport Driver's Device Extension (Windows 2000 Model)
-ms.assetid: 4d7841d1-39e2-4bdf-b79b-3feb363a0fe5
 keywords:
 - video miniport drivers WDK Windows 2000 , device extensions
 - device extensions WDK video miniport
@@ -20,15 +19,9 @@ ms.custom: seodec18
 
 A device extension is each miniport driver's primary and only global storage area for adapter-specific state information.
 
-Each miniport driver defines the size, internal structure, and contents of its device extension. The video port driver passes a pointer to the device extension as an input parameter to every system-defined miniport driver function except **DriverEntry** and, if implemented, the [*HwVidSynchronizeExecutionCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pminiport_synchronize_routine) and *SvgaHwIoPortXxx* functions. Many **VideoPort**_Xxx_ functions require this pointer as an argument as well.
+Each miniport driver defines the size, internal structure, and contents of its device extension. The video port driver passes a pointer to the device extension as an input parameter to every system-defined miniport driver function except **DriverEntry** and, if implemented, the [*HwVidSynchronizeExecutionCallback*](/windows-hardware/drivers/ddi/video/nc-video-pminiport_synchronize_routine) and *SvgaHwIoPortXxx* functions. Many **VideoPort**_Xxx_ functions require this pointer as an argument as well.
 
 The miniport driver must also use the device extension to maintain the state information for a single adapter. Each adapter detected by the system will have separate state information maintained in a separate device extension. The miniport driver must not use global variables to store any per-adapter state. This is especially critical in order to provide seamless multiple monitor support.
 
  
-
- 
-
-
-
-
 

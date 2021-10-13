@@ -1,7 +1,6 @@
 ---
-title: psp
+title: psp (WinDbg)
 description: The psp extension displays the processor state parameter (PSP) register at the specified address.
-ms.assetid: 5ed36051-31e0-405f-ac30-88d888f9d915
 keywords: ["processor state parameter (PSP)", "PSP register", "psp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

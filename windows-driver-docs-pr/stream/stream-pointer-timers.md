@@ -1,7 +1,6 @@
 ---
 title: Stream Pointer Timers
 description: Stream Pointer Timers
-ms.assetid: 98413fc6-2b62-4c52-9ac4-bd2a3a60db60
 keywords:
 - stream pointers WDK AVStream , timers
 - timers WDK AVStream
@@ -16,14 +15,9 @@ ms.localizationpriority: medium
 
 
 
-To set a timer on a stream pointer, call [**KsStreamPointerScheduleTimeout**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointerscheduletimeout). If the specified stream pointer has not been deleted by the time *Interval* expires, AVStream calls the vendor-supplied timer callback routine. Specify *Interval* in 100-nanosecond units.
+To set a timer on a stream pointer, call [**KsStreamPointerScheduleTimeout**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerscheduletimeout). If the specified stream pointer has not been deleted by the time *Interval* expires, AVStream calls the vendor-supplied timer callback routine. Specify *Interval* in 100-nanosecond units.
 
-To cancel a timeout, call [**KsStreamPointerCancelTimeout**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointercanceltimeout).
-
- 
+To cancel a timeout, call [**KsStreamPointerCancelTimeout**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointercanceltimeout).
 
  
-
-
-
 

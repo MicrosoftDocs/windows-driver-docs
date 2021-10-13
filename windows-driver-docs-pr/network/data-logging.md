@@ -1,7 +1,6 @@
 ---
 title: Data Logging
 description: Data Logging
-ms.assetid: 1e4f00e0-0fc6-459d-bbdd-02fbca5b9945
 keywords:
 - classify callouts WDK Windows Filtering Platform , data logging
 - logging WDK Windows Filtering Platform
@@ -12,9 +11,9 @@ ms.localizationpriority: medium
 # Data Logging
 
 
-To determine what data should be logged, a callout's [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) callout function can inspect any combination of the data fields, the metadata fields, and any raw data that is passed to it, as well as any relevant data that has been stored in a context associated with the filter or the data flow.
+To determine what data should be logged, a callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function can inspect any combination of the data fields, the metadata fields, and any raw data that is passed to it, as well as any relevant data that has been stored in a context associated with the filter or the data flow.
 
-For example, if a callout keeps track of how many incoming (inbound) IPv4 packets are discarded by a filter at the network layer, the callout is added to the filter engine at the FWPM\_LAYER\_INBOUND\_IPPACKET\_V4\_DISCARD layer. In this situation, the callout's [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) callout function might resemble the following example:
+For example, if a callout keeps track of how many incoming (inbound) IPv4 packets are discarded by a filter at the network layer, the callout is added to the filter engine at the FWPM\_LAYER\_INBOUND\_IPPACKET\_V4\_DISCARD layer. In this situation, the callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function might resemble the following example:
 
 ```C++
 ULONG TotalDiscardCount = 0;
@@ -62,14 +61,7 @@ VOID NTAPI
 ## Related topics
 
 
-[classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[classifyFn](/windows-hardware/drivers/ddi/_netvista/)
 
  
-
- 
-
-
-
-
-
 

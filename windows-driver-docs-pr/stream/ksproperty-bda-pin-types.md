@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIN\_TYPES
 description: Clients use KSPROPERTY\_BDA\_PIN\_TYPES to retrieve a list of pin types.
-ms.assetid: de11ab3c-a787-4831-aad4-e97f46432032
 keywords: ["KSPROPERTY_BDA_PIN_TYPES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_PIN\_TYPES to retrieve a list of pin types.
 
  
 
-Remarks
--------
+## Remarks
 
 In a template topology each pin type can only occur once, but it can occur multiple times in an actual topology. This list of pin types is an array of KSPIN\_DESCRIPTOR\_EX structures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -79,18 +76,11 @@ Requirements
 ## See also
 
 
-[**BdaPropertyPinTypes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdapropertypintypes)
+[**BdaPropertyPinTypes**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertypintypes)
 
-[**KSPIN\_DESCRIPTOR\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin_descriptor_ex)
+[**KSPIN\_DESCRIPTOR\_EX**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_descriptor_ex)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
-
- 
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
-
-
-
-
-
 

@@ -1,82 +1,86 @@
 - name: "UWP device apps"
+  href: index.md
+- name: "What's new"
+  href: what-s-new.md
+- name: "Getting started"
 # Auto-expanded node
   items: 
-  - name: "UWP device apps"
-    href: index.md
-  - name: "What's new"
-    href: what-s-new.md
   - name: "Getting started"
+    href: getting-started.md
+  - name: "Meet UWP device apps"
+    href: meet-UWP-device-apps.md
+  - name: "Building UWP device apps"
+    href: the-workflow.md
+- name: "Build a UWP device app step-by-step"
 # Auto-expanded node
-    items: 
-    - name: "Getting started"
-      href: getting-started.md
-    - name: "Meet UWP device apps"
-      href: meet-UWP-device-apps.md
-    - name: "Building UWP device apps"
-      href: the-workflow.md
+  items: 
   - name: "Build a UWP device app step-by-step"
+    href: build-a-UWP-device-app-step-by-step.md
+  - name: "Step 1: Create a UWP device app"
+    href: step-1--create-a-UWP-device-app.md
+  - name: "Step 2: Create device metadata"
+    href: step-2--create-device-metadata.md
+  - name: "Step 3: Add an experience ID to the app"
+    href: step-3--add-an-experience-id-to-the-app.md
+  - name: "Step 4: Test device metadata"
+    href: step-4--test-device-metadata.md
+  - name: "Step 5: Submit the app"
+    href: step-5--submit-the-app.md
+  - name: "Step 6: Submit device metadata"
+    href: step-6--submit-device-metadata.md
+- name: "AutoPlay for UWP device apps"
+  href: autoplay-for-UWP-device-apps.md
+- name: "Device sync and update for UWP device apps"
 # Auto-expanded node
-    items: 
-    - name: "Build a UWP device app step-by-step"
-      href: build-a-UWP-device-app-step-by-step.md
-    - name: "Step 1: Create a UWP device app"
-      href: step-1--create-a-UWP-device-app.md
-    - name: "Step 2: Create device metadata"
-      href: step-2--create-device-metadata.md
-    - name: "Step 3: Add an experience ID to the app"
-      href: step-3--add-an-experience-id-to-the-app.md
-    - name: "Step 4: Test device metadata"
-      href: step-4--test-device-metadata.md
-    - name: "Step 5: Submit the app"
-      href: step-5--submit-the-app.md
-    - name: "Step 6: Submit device metadata"
-      href: step-6--submit-device-metadata.md
-  - name: "AutoPlay for UWP device apps"
-    href: autoplay-for-UWP-device-apps.md
+  items: 
   - name: "Device sync and update for UWP device apps"
+    href: device-sync-and-update-for-UWP-device-apps.md
+  - name: "Creating a device background task"
+    href: how-to-create-a-device-background-task.md
+- name: "Print support apps for printers"
 # Auto-expanded node
-    items: 
-    - name: "Device sync and update for UWP device apps"
-      href: device-sync-and-update-for-UWP-device-apps.md
-    - name: "Creating a device background task"
-      href: how-to-create-a-device-background-task.md
+  items: 
+  - name: "Print support app design guide"
+    href: print-support-app-design-guide.md
+  - name: "Print support app association"
+    href: print-support-app-association.md 
+- name: "UWP device apps for printers"
+# Auto-expanded node
+  items: 
   - name: "UWP device apps for printers"
+    href: UWP-device-apps-for-printers.md
+  - name: "How to display printer status"
+    href: how-to-display-printer-status.md
+  - name: "How to customize print settings"
+    href: how-to-customize-print-settings.md
+  - name: "Working with print notifications"
+    href: working-with-print-notifications.md
+  - name: "How to manage print jobs"
+    href: how-to-manage-print-jobs.md
+  - name: "How to do printer maintenance"
+    href: how-to-do-printer-maintenance.md
+  - name: "Printer extension library overview"
+    href: printer-extension-library-overview.md
+- name: "UWP device apps for cameras"
 # Auto-expanded node
-    items: 
-    - name: "UWP device apps for printers"
-      href: UWP-device-apps-for-printers.md
-    - name: "How to display printer status"
-      href: how-to-display-printer-status.md
-    - name: "How to customize print settings"
-      href: how-to-customize-print-settings.md
-    - name: "Working with print notifications"
-      href: working-with-print-notifications.md
-    - name: "How to manage print jobs"
-      href: how-to-manage-print-jobs.md
-    - name: "How to do printer maintenance"
-      href: how-to-do-printer-maintenance.md
-    - name: "Printer extension library overview"
-      href: printer-extension-library-overview.md
+  items: 
   - name: "UWP device apps for cameras"
-# Auto-expanded node
-    items: 
-    - name: "UWP device apps for cameras"
-      href: UWP-device-apps-for-webcams.md
-    - name: "How to customize camera options"
-      href: how-to-customize-camera-options.md
-    - name: "Creating a camera driver MFT"
-      href: creating-a-camera-driver-mft.md
-    - name: "Considerations for driver MFTs on multi-pin cameras"
-      href: driver-mfts-on-multi-pin-cameras.md
-    - name: "Identifying the location of internal cameras"
-      href: identifying-the-location-of-internal-cameras.md
-  - name: "UWP device apps for internal devices"
-    href: UWP-device-apps-for-specialized-devices.md
-  - name: "Automatic installation for UWP device apps"
-    href: auto-install-for-UWP-device-apps.md
-  - name: "Hardware Support App (HSA): Steps for Driver Developers"
-    href: hardware-support-app--hsa--steps-for-driver-developers.md
-  - name: "Hardware Support App (HSA): Steps for App Developers"
-    href: hardware-support-app--hsa--steps-for-app-developers.md
-  - name: "FAQ on custom capabilities"
-    href: FAQ-on-custom-capabilities.md
+    href: UWP-device-apps-for-webcams.md
+  - name: "How to customize camera options"
+    href: how-to-customize-camera-options.md
+  - name: "Creating a camera driver MFT"
+    href: creating-a-camera-driver-mft.md
+  - name: "Considerations for driver MFTs on multi-pin cameras"
+    href: driver-mfts-on-multi-pin-cameras.md
+  - name: "Identifying the location of internal cameras"
+    href: identifying-the-location-of-internal-cameras.md
+- name: "UWP device apps for internal devices"
+  href: UWP-device-apps-for-specialized-devices.md
+- name: "Automatic installation for UWP device apps"
+  href: auto-install-for-UWP-device-apps.md
+- name: "Hardware Support App (HSA): Steps for Driver Developers"
+  href: hardware-support-app--hsa--steps-for-driver-developers.md
+- name: "Hardware Support App (HSA): Steps for App Developers"
+  href: hardware-support-app--hsa--steps-for-app-developers.md
+- name: "FAQ on custom capabilities"
+  href: FAQ-on-custom-capabilities.yml

@@ -1,7 +1,6 @@
 ---
 title: Differences Between WDM and WDF
 description: The WDM model is closely tied to the operating system.
-ms.assetid: 4D35F0AB-44CE-49CA-8AB7-3922871567B0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ The WDM model is closely tied to the operating system. Drivers interact directly
 
 In comparison, the Windows Driver Frameworks (WDF) model focuses on the driver’s requirements, and the framework library handles the majority of the interactions with the system.
 
-The framework intercepts I/O requests, takes default actions where appropriate, and invokes the driver’s callbacks as required. The WDF model is object based and event driven. Objects represent common driver constructs, such as a device, a lock, or a queue. A Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) driver contains an entry point ([**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers)), the event-related callback functions that are required to service the device and support I/O, and any additional internal utility functions on which the implementation depends.
+The framework intercepts I/O requests, takes default actions where appropriate, and invokes the driver’s callbacks as required. The WDF model is object based and event driven. Objects represent common driver constructs, such as a device, a lock, or a queue. A Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) driver contains an entry point ([**DriverEntry**](./driverentry-for-kmdf-drivers.md)), the event-related callback functions that are required to service the device and support I/O, and any additional internal utility functions on which the implementation depends.
 
 This section describes important differences between WDM and WDF in the following areas:
 
@@ -30,7 +29,7 @@ This section describes important differences between WDM and WDF in the followin
 ## Driver Structure
 
 
-Both WDM and WDF drivers contain a [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine, a number of routines that are called to handle particular I/O requests, and various support routines.
+Both WDM and WDF drivers contain a [**DriverEntry**](./driverentry-for-kmdf-drivers.md) routine, a number of routines that are called to handle particular I/O requests, and various support routines.
 
 In a WDM driver, the I/O dispatch routines map to particular major IRP codes. The dispatch routines receive IRPs from the I/O manager, parse them, and respond accordingly.
 
@@ -38,8 +37,8 @@ In a WDF driver, the framework registers its own dispatch routines, which receiv
 
 A typical WDF driver for a Plug and Play device contains:
 
--   A [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine.
--   An [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) routine, which is similar in function to a WDM AddDevice routine.
+-   A [**DriverEntry**](./driverentry-for-kmdf-drivers.md) routine.
+-   An [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) routine, which is similar in function to a WDM AddDevice routine.
 -   One or more I/O queues.
 -   One or more I/O event callback functions, which are similar in function to a WDM driver’s I/O *DispatchXxx* routines.
 -   Callbacks to handle the Plug and Play and power events that the driver supports.
@@ -83,11 +82,11 @@ WDF drivers follow a regular pattern to create all types of objects:
 2.  Optionally initialize the attributes structure for the object.
 3.  Call the creation method to create the object.
 
-The configuration structure and the attributes structure supply basic information about the object and how the driver uses it. All object types use [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) as the attributes structure, but the configuration structure for each type of object is different and some objects do not have one. For example, there is a [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure but not a **WDF\_DEVICE\_CONFIG** structure.
+The configuration structure and the attributes structure supply basic information about the object and how the driver uses it. All object types use [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) as the attributes structure, but the configuration structure for each type of object is different and some objects do not have one. For example, there is a [**WDF\_DRIVER\_CONFIG**](/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure but not a **WDF\_DEVICE\_CONFIG** structure.
 
-The configuration structure holds pointers to object-specific information, such as the driver’s event callback functions for the object. The driver fills in this structure and then passes it to the framework when it calls the object creation method. For example, a call to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate) includes a pointer to a [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure that contains a pointer to the driver’s [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
+The configuration structure holds pointers to object-specific information, such as the driver’s event callback functions for the object. The driver fills in this structure and then passes it to the framework when it calls the object creation method. For example, a call to [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) includes a pointer to a [**WDF\_DRIVER\_CONFIG**](/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure that contains a pointer to the driver’s [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 
-The framework defines functions that are named WDF\_*Object*\_CONFIG\_INIT to initialize the configuration structures, where *Object* represents the name of the object type. The [**WDF\_OBJECT\_ATTRIBUTES\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdf_object_attributes_init) function initializes a driver's [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
+The framework defines functions that are named WDF\_*Object*\_CONFIG\_INIT to initialize the configuration structures, where *Object* represents the name of the object type. The [**WDF\_OBJECT\_ATTRIBUTES\_INIT**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init) function initializes a driver's [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
 
 ## Object Context Area
 
@@ -106,7 +105,7 @@ Even if your driver receives IRPs other than those listed in the table, you can 
 
 Nearly all drivers queue I/O requests. WDM drivers typically use one of the following approaches:
 
--   Implement a [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_startio) function and call [**IoStartPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartpacket) and [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartnextpacket) to use the system’s device queue for I/O requests.
+-   Implement a [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) function and call [**IoStartPacket**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartpacket) and [**IoStartNextPacket**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacket) to use the system’s device queue for I/O requests.
 -   Use the **IoCsqXxx** or other list-management functions to implement its own internal I/O queues.
 -   Use the **KeXxxDeviceQueue** functions to initialize and manage a queue that is protected by a spin lock.
 
@@ -119,7 +118,7 @@ When you port a WDM driver to WDF, you can use the WDF queuing mechanism regardl
 
 WDF drivers benefit from some built-in synchronization support that is not available to WDM drivers. Although this support does not mean that the driver can ignore concurrency and synchronous access to data, WDF drivers nevertheless require significantly fewer locks and less synchronization code than do WDM drivers.
 
-For more information about the synchronization features that the framework provides, see [Synchronization Techniques](synchronization-techniques-for-wdf-drivers.md).
+For more information about the synchronization features that the framework provides, see [Synchronization Techniques](./using-automatic-synchronization.md).
 
 ## Driver Installation
 
@@ -127,10 +126,4 @@ For more information about the synchronization features that the framework provi
 Like WDM drivers, KMDF and UMDF drivers are installed by using INF files. However, WDF driver installation sometimes requires a framework co-installer that is provided with the Windows Driver Kit (WDK). The co-installer ensures that a compatible version of the framework library is present on the target system. For information about installation, see [Building and Loading a WDF Driver](building-and-loading-a-kmdf-driver.md).
 
  
-
- 
-
-
-
-
 

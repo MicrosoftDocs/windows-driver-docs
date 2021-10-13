@@ -1,7 +1,6 @@
 ---
 title: DirectX File Version Numbers
 description: DirectX File Version Numbers
-ms.assetid: 60f840d2-384c-49be-bf05-c16613b4858c
 keywords:
 - DirectX file version numbers WDK audio
 - version numbers WDK audio

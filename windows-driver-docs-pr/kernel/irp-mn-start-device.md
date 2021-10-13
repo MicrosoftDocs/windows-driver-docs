@@ -1,8 +1,7 @@
 ---
 title: IRP_MN_START_DEVICE
-description: All PnP drivers must handle this IRP.
+description: Learn about the 'IRP_MN_START_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 0aac1346-b5c7-4dcc-ab86-03e8fd151505
 keywords:
  - IRP_MN_START_DEVICE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -13,25 +12,28 @@ ms.localizationpriority: medium
 
 All PnP drivers must handle this IRP.
 
-Major Code
-----------
+## Value
+
+0x00
+
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-When Sent
----------
+
+## When Sent
 
 The PnP manager sends this IRP after it has assigned hardware resources, if any, to the device. The device may have been recently enumerated and is being started for the first time, or the device may be restarting after being stopped for resource rebalancing.
 
-Sometimes the PnP manager sends an **IRP\_MN\_START\_DEVICE** to a device that is already started, supplying a different set of resources than the device is currently using. A driver initiates this action by calling [**IoInvalidateDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicestate) and responding to the subsequent [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](irp-mn-query-pnp-device-state.md) request with the PNP\_RESOURCE\_REQUIREMENTS\_CHANGED flag set. A bus driver might use this mechanism, for example, to open a new aperture on a PCI-to-PCI bridge.
+Sometimes the PnP manager sends an **IRP\_MN\_START\_DEVICE** to a device that is already started, supplying a different set of resources than the device is currently using. A driver initiates this action by calling [**IoInvalidateDeviceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate) and responding to the subsequent [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](irp-mn-query-pnp-device-state.md) request with the PNP\_RESOURCE\_REQUIREMENTS\_CHANGED flag set. A bus driver might use this mechanism, for example, to open a new aperture on a PCI-to-PCI bridge.
 
 The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in the context of a system thread.
 
 ## Input Parameters
 
 
-The **Parameters.StartDevice.AllocatedResources** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure points to a [**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_resource_list) describing the hardware resources that the PnP manager assigned to the device. This list contains the resources in raw form. Use the raw resources to program the device.
+The **Parameters.StartDevice.AllocatedResources** member of the [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure points to a [**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) describing the hardware resources that the PnP manager assigned to the device. This list contains the resources in raw form. Use the raw resources to program the device.
 
-**Parameters.StartDevice.AllocatedResourcesTranslated** points to a [**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_resource_list) describing the hardware resources that the PnP manager assigned to the device. This list contains the resources in translated form. Use the translated resources to connect the interrupt vector, map I/O space, and map memory.
+**Parameters.StartDevice.AllocatedResourcesTranslated** points to a [**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) describing the hardware resources that the PnP manager assigned to the device. This list contains the resources in translated form. Use the translated resources to connect the interrupt vector, map I/O space, and map memory.
 
 ## Output Parameters
 
@@ -45,8 +47,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriat
 
 If a driver requires some time to run its start operations for a device, it can mark the IRP pending and return STATUS\_PENDING.
 
-Operation
----------
+## Operation
 
 This IRP must be handled first by the parent bus driver for a device and then by each higher driver in the device stack.
 
@@ -56,14 +57,13 @@ A driver can typically handle this IRP in the same way whether it is starting a 
 
 On Windows Vista and later operating systems, we recommend that drivers always pend the **IRP\_MN\_START\_DEVICE** IRP and complete its processing later. This order enables the system to process device restarts asynchronously. (On operating systems before Windows Vista, drivers can return STATUS\_PENDING from their dispatch routines, but the PnP manager does not overlap the device restart with any other operation.)
 
-For more information about handling a start IRP, see [Starting a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/starting-a-device).
+For more information about handling a start IRP, see [Starting a Device](./starting-a-device.md).
 
 **Sending This IRP**
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -84,9 +84,4 @@ Requirements
 [**IRP\_MN\_STOP\_DEVICE**](irp-mn-stop-device.md)
 
  
-
- 
-
-
-
 

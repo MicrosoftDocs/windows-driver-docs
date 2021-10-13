@@ -1,26 +1,16 @@
 ---
-title: InputBins
-description: InputBins
-ms.assetid: 5cf7dcec-b8ea-47c6-b2a3-1cdd431fd295
-ms.date: 11/28/2017
+title: InputBins property
+description: Contains all of the information about the device input bins.
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
-# InputBins
+# InputBins property
 
+Schema Path: \\Printer.Layout.InputBins
 
-Schema Path:\\Printer.Layout.InputBins
+Node Type: Property
 
-Node Type:Property
-
-Description:The InputBins property contains all of the information about the device input bins.
+Description: The InputBins property contains all of the information about the device input bins.
 
 The InputBins property is the parent of the [\[TrayName\]](-trayname-.md) property.
-
- 
-
- 
-
-
-
-

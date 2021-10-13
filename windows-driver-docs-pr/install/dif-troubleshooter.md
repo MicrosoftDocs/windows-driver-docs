@@ -1,7 +1,6 @@
 ---
 title: DIF_TROUBLESHOOTER
 description: DIF_TROUBLESHOOTER
-ms.assetid: e8477d4d-cc81-48aa-9d51-9f37c3cce0cb
 keywords: ["DIF_TROUBLESHOOTER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -56,21 +55,21 @@ When a user clicks the "Troubleshooter" button for a device in Device Manager.
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-Supplies a handle to the [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets) that contains the device.
+Supplies a handle to the [device information set](./device-information-sets.md) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_TROUBLESHOOTER_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_troubleshooter_params_a) structure is associated with the *DeviceInfoData*.
+An [**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_troubleshooter_params_a) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer might modify the [**SP_TROUBLESHOOTER_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_troubleshooter_params_a), setting a CHM or HTML file.
+An installer might modify the [**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_troubleshooter_params_a), setting a CHM or HTML file.
 
 ### Installer Return Value
 
@@ -92,16 +91,15 @@ There is no default handler for DIF_TROUBLESHOOTER, but the operating system pro
 
 ### Installer Operation
 
-An installer calls [**CM_Get_DevNode_Status**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status) to get the device status and the CM problem code. Depending on the problem, an installer might provide a troubleshooter, a help file, or nothing. A troubleshooter can possibly resolve a problem with a device. If a troubleshooter resolves the problem, it should call **SetupDiCallClassInstaller** to send a DIF_PROPERTYCHANGE request of type DICS_PROPCHANGE. If an installer does not supply a troubleshooter for a device, it might supply a help file of problem-solving suggestions for the user.
+An installer calls [**CM_Get_DevNode_Status**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status) to get the device status and the CM problem code. Depending on the problem, an installer might provide a troubleshooter, a help file, or nothing. A troubleshooter can possibly resolve a problem with a device. If a troubleshooter resolves the problem, it should call **SetupDiCallClassInstaller** to send a DIF_PROPERTYCHANGE request of type DICS_PROPCHANGE. If an installer does not supply a troubleshooter for a device, it might supply a help file of problem-solving suggestions for the user.
 
 If no installer runs its own troubleshooter, Windows runs HTML Help to display information to the user. If an installer supplied a CHM file in the class installation parameters, Windows displays that file. Otherwise, Windows displays system-supplied troubleshooting information.
 
 The class installation parameters contain at most one **ChmFile** and **HtmlTroubleShooter** pair. If more than one installer specifies these values, Windows uses the values set by the last installer that handled the DIF request.
 
-For more information about DIF codes, see [Handling DIF Codes](https://docs.microsoft.com/windows-hardware/drivers/install/handling-dif-codes).
+For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -123,20 +121,13 @@ Requirements
 ## See also
 
 
-[**CM_Get_DevNode_Status**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status)
+[**CM_Get_DevNode_Status**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status)
 
-[**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
+[**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_TROUBLESHOOTER_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_troubleshooter_params_a)
-
- 
+[**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_troubleshooter_params_a)
 
  
-
-
-
-
-
 

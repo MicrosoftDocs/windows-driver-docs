@@ -1,18 +1,15 @@
 ---
 title: Output keywords
 description: These keywords are used to describe the actual output processes for a given 3D manufacturing job.
-ms.assetid: FBCE5E9C-8411-46C1-899E-A6C8FE27D947
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
 # Output keywords
 
-
 These keywords are used to describe the actual output processes for a given 3D manufacturing job.
 
 ## 4.1. Job3DQuality
-
 
 <table>
 <colgroup>
@@ -56,8 +53,6 @@ These keywords are used to describe the actual output processes for a given 3D m
 </tbody>
 </table>
 
- 
-
 Job3DQuality keyword usage
 
 ```xml
@@ -72,7 +67,6 @@ Job3DQuality keyword usage
 ```
 
 ## 4.2. Job3DDensity
-
 
 <table>
 <colgroup>
@@ -120,8 +114,6 @@ Job3DQuality keyword usage
 </tbody>
 </table>
 
- 
-
 Job3DDensity keyword usage
 
 ```xml
@@ -138,7 +130,6 @@ Job3DDensity keyword usage
 ```
 
 ## 4.3. Job3DSliceHeight
-
 
 This Parameter SHOULD be used to communicate the desired thickness of each slice, if the psk3d:Job3DQuality parameter is deemed insufficient.
 
@@ -182,8 +173,6 @@ Job3DSliceHeight keyword profile
 </tbody>
 </table>
 
- 
-
 Job3DSliceHeight initialization profile
 
 <table>
@@ -220,8 +209,6 @@ Job3DSliceHeight initialization profile
 </tr>
 </tbody>
 </table>
-
- 
 
 Job3DSliceHeight keyword usage
 
@@ -262,7 +249,6 @@ This Parameter is initialized as follows:
 ```
 
 ## 4.4. Job3DOutputColor
-
 
 The psk3d:Job3DOutputColor keyword specifies whether the model is to be reproduced in full color or with a single monochromatic material (the color of the base material).
 
@@ -306,8 +292,6 @@ The psk3d:Job3DOutputColor keyword specifies whether the model is to be reproduc
 </tbody>
 </table>
 
- 
-
 Job3DOutputColor keyword usage
 
 ```xml
@@ -319,11 +303,3 @@ Job3DOutputColor keyword usage
     <psf:Option name="psk3d:Monochrome" />
 </psf:Feature>
 ```
-
- 
-
- 
-
-
-
-

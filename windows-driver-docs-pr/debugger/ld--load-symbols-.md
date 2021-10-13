@@ -1,7 +1,6 @@
 ---
 title: ld (Load Symbols)
 description: The ld command loads symbols for the specified module and updates all module information.
-ms.assetid: 1dae519f-8dd1-4f30-98f4-fe904454c84c
 keywords: ["ld (Load Symbols) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,8 +55,7 @@ Changes the name selected for the match. By default the module name is matched, 
 
  
 
-Remarks
--------
+## Remarks
 
 The debugger's default behavior is to use *lazy symbol loading* (also known as [deferred symbol loading](deferred-symbol-loading.md)). This means that symbols are not actually loaded until they are needed.
 

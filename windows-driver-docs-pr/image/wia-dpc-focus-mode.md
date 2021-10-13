@@ -1,7 +1,6 @@
 ---
-title: WIA\_DPC\_FOCUS\_MODE
-description: The WIA\_DPC\_FOCUS\_MODE property defines the current focus mode setting for a camera device.
-ms.assetid: d651c9f7-97ca-4fa5-bc52-2af1f7c2e241
+title: WIA_DPC_FOCUS_MODE
+description: The WIA_DPC_FOCUS_MODE property defines the current focus mode setting for a camera device.
 keywords: ["WIA_DPC_FOCUS_MODE Imaging Devices"]
 topic_type:
 - apiref
@@ -11,85 +10,34 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/29/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DPC\_FOCUS\_MODE
+# WIA_DPC_FOCUS_MODE
 
+The WIA_DPC_FOCUS_MODE property defines the current focus mode setting for a camera device.
 
-The WIA\_DPC\_FOCUS\_MODE property defines the current focus mode setting for a camera device.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_focus_mode_si"></span><span id="DDK_WIA_DPC_FOCUS_MODE_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
-A device driver enumerates the supported values of the WIA\_DPC\_FOCUS\_MODE property, and an application writes this property to set the focus mode for the camera device.
+A device driver enumerates the supported values of the WIA_DPC_FOCUS_MODE property, and an application writes this property to set the focus mode for the camera device.
 
-The following table describes the constants that are valid with the WIA\_DPC\_FOCUS\_MODE property.
+The following table describes the constants that are valid with the WIA_DPC_FOCUS_MODE property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>FOCUSMODE_AUTO</p></td>
-<td><p>The camera device is configured to focus automatically.</p></td>
-</tr>
-<tr class="even">
-<td><p>FOCUSMODE_MACROAUTO</p></td>
-<td><p>The camera device is configured to focus automatically by using short-range macro settings.</p></td>
-</tr>
-<tr class="odd">
-<td><p>FOCUSMODE_MANUAL</p></td>
-<td><p>The camera device is configured to allow a user to focus manually.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| FOCUSMODE_AUTO | The camera device is configured to focus automatically. |
+| FOCUSMODE_MACROAUTO | The camera device is configured to focus automatically by using short-range macro settings. |
+| FOCUSMODE_MANUAL | The camera device is configured to allow a user to focus manually. |
 
- 
+## Requirements
 
-Requirements
-------------
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

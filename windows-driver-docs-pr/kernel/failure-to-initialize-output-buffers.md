@@ -1,7 +1,6 @@
 ---
 title: Failure to Initialize Output Buffers
 description: Failure to Initialize Output Buffers
-ms.assetid: 8c038a94-8506-44e3-ac7f-82b58d791124
 keywords: ["output buffers WDK kernel", "initializing output buffers"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -45,14 +44,9 @@ In the following example, a driver returns garbage in unused bytes.
       }
 ```
 
-Setting **IoStatus.Information** to the output buffer size causes the whole output buffer to be returned to the caller. The I/O manager does not initialize the data beyond the size of the input buffer—the input and output buffers overlap for a buffered request. Because the system support routine [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceproperty) does not write the entire buffer, this IOCTL returns uninitialized data to the caller.
+Setting **IoStatus.Information** to the output buffer size causes the whole output buffer to be returned to the caller. The I/O manager does not initialize the data beyond the size of the input buffer—the input and output buffers overlap for a buffered request. Because the system support routine [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) does not write the entire buffer, this IOCTL returns uninitialized data to the caller.
 
 Some drivers use the **Information** field to return codes that provide extra details about I/O requests. Before doing so, such drivers should check the IRP flags to ensure that IRP\_INPUT\_OPERATION is not set. When this flag is not set, the IOCTL or FSCTL does not have an output buffer, so the **Information** field need not supply a buffer size. In this case. the driver can safely use the **Information** field to return its own code.
 
  
-
- 
-
-
-
 

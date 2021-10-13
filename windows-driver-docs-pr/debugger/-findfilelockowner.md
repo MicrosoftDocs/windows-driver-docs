@@ -1,7 +1,6 @@
 ---
 title: findfilelockowner
 description: The findfilelockowner extension attempts to find the owner of a file object lock by examining all threads for a thread that is blocked.
-ms.assetid: 0d6eabf4-e7ac-4536-beab-d3027720efa8
 keywords: ["findfilelockowner Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the address of a file object. If *FileObject* is omitted, the extensio
 
 For information about file objects, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This extension is most useful after a critical section timeout in which the thread that times out was waiting for the file inside **IopAcquireFileObjectLock**. After the offending thread is found, the extension attempts to recover the IRP that was used for the request and to display the driver that was processing the IRP.
 

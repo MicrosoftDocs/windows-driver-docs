@@ -1,7 +1,6 @@
 ---
 title: UAA Extensions to the HD Audio Architecture
 description: UAA Extensions to the HD Audio Architecture
-ms.assetid: 895dc7b6-f484-4be2-8f43-112254d6ef4b
 keywords:
 - HD Audio, Universal Audio Architecture
 - High Definition Audio (HD Audio), Universal Audio Architecture

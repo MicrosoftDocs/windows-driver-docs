@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_DRIVER_FAILED_LOAD
 description: CM_PROB_DRIVER_FAILED_LOAD
-ms.assetid: 84d88db9-338b-4318-ba05-696521c96dd6
 keywords:
 - CM_PROB_DRIVER_FAILED_LOAD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DRIVER_FAILED_LOAD
+# Code 39 - CM_PROB_DRIVER_FAILED_LOAD
 
-This function is reserved for system use.
-
-The driver could not be loaded.
+This Device Manager error message indicates that the driver could not be loaded.
 
 ## Error Code
 
@@ -26,8 +23,14 @@ The driver could not be loaded.
 
 Reinstall or obtain a new driver.
 
-Reasons for this error include the following:
+## For driver developers
 
-- A driver file that is not present, a binary file that is corrupted, a file I/O problem, or a driver that references an entry point in another binary that could not be loaded.
+Some of the more common reasons for this error include the following:
 
-- The driver does not comply with [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
+- A driver file that links with another binary file that is not present on the system
+
+- A driver file that links with an operating system provided API and the driver file is being loaded on a version of the operating system that does not support that API.
+
+- The system has [Hypervisor-Protected Code Integrity](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard) enabled and the driver is not compatible with that feature.
+
+- A failure to load a driver file or one of its dependencies due to the file being corrupted or a file I/O problem

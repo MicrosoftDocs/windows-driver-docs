@@ -1,7 +1,6 @@
 ---
 title: New Information for Windows Hardware Error Architecture
 description: New Information for Windows Hardware Error Architecture
-ms.assetid: 258dca19-3988-4fab-bc9f-a93035cbbd0e
 keywords:
 - Windows Hardware Error Architecture WDK , new information
 - WHEA WDK , new information
@@ -28,14 +27,9 @@ This section includes the following topics:
 
 Starting with Windows 8, the following changes have been made to Windows Hardware Error Architecture (WHEA)
 
--   A new WMI provider class [**WHEAPolicyManagementMethods**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/).
--   WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
--   The WHEA WMI Method [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/) is deprecated.
+-   A new WMI provider class [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/).
+-   WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
+-   The WHEA WMI Method [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](/windows-hardware/drivers/ddi/_whea/) is deprecated.
 
  
-
- 
-
-
-
 

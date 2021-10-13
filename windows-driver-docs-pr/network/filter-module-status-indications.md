@@ -1,7 +1,6 @@
 ---
 title: Filter Module Status Indications
 description: Filter Module Status Indications
-ms.assetid: b39c6cda-dac7-4538-8ea6-513a52601b1f
 keywords:
 - filter modules WDK networking , status indications
 - filter drivers WDK networking , status indications
@@ -17,27 +16,21 @@ ms.localizationpriority: medium
 
 
 
-Filter drivers can supply a [*FilterStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_status) function that NDIS calls when an underlying driver reports status. Filter drivers can also initiate status indications.
+Filter drivers can supply a [*FilterStatus*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_status) function that NDIS calls when an underlying driver reports status. Filter drivers can also initiate status indications.
 
 The following figure illustrates a filtered status indication.
 
-![diagram illustrating a filtered status indication](images/statusfilter.png)
+![diagram illustrating a filtered status indication.](images/statusfilter.png)
 
-NDIS calls a filter driver's [*FilterStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_status) function, after an underlying driver calls a status indication function ([**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex) or [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus)). For more information about how to indicate status from a miniport driver, see [Adapter Status Indications](miniport-adapter-status-indications.md).
+NDIS calls a filter driver's [*FilterStatus*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_status) function, after an underlying driver calls a status indication function ([**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) or [**NdisFIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus)). For more information about how to indicate status from a miniport driver, see [Adapter Status Indications](miniport-adapter-status-indications.md).
 
-A filter driver calls **NdisFIndicateStatus** in its [*FilterStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_status) function, to pass on a filtered status indication to overlying drivers. A filter driver can filter out status indications (by not calling [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus)) or modify the indicated status before it calls **NdisFIndicateStatus**.
+A filter driver calls **NdisFIndicateStatus** in its [*FilterStatus*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_status) function, to pass on a filtered status indication to overlying drivers. A filter driver can filter out status indications (by not calling [**NdisFIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus)) or modify the indicated status before it calls **NdisFIndicateStatus**.
 
-To originate status indications, filter drivers call [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus) without a prior call to [*FilterStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_status).
+To originate status indications, filter drivers call [**NdisFIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus) without a prior call to [*FilterStatus*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_status).
 
-In this case, the filter driver should set the **SourceHandle** member to the handle that NDIS passed to the *NdisFilterHandle* parameter of the [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_attach) function. If the status indication is associated with an OID request, the filter driver can set the **DestinationHandle** and **RequestId** members so that NDIS can provide the status indication to a specific protocol binding.
+In this case, the filter driver should set the **SourceHandle** member to the handle that NDIS passed to the *NdisFilterHandle* parameter of the [*FilterAttach*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) function. If the status indication is associated with an OID request, the filter driver can set the **DestinationHandle** and **RequestId** members so that NDIS can provide the status indication to a specific protocol binding.
 
-After a filter driver calls [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus), NDIS calls the status function ([**ProtocolStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_status_ex) or *FilterStatus*) of the next overlying driver.
-
- 
+After a filter driver calls [**NdisFIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus), NDIS calls the status function ([**ProtocolStatusEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_status_ex) or *FilterStatus*) of the next overlying driver.
 
  
-
-
-
-
 

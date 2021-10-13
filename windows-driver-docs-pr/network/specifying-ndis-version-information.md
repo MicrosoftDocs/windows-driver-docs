@@ -1,7 +1,6 @@
 ---
 title: Specifying NDIS Version Information
 description: Specifying NDIS Version Information
-ms.assetid: 9d007046-01c5-4bf8-adda-b88b596945d6
 keywords:
 - NDIS version information WDK
 - versioning WDK networking

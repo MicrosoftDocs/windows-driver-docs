@@ -1,7 +1,6 @@
 ---
-title: IRP_MJ_WRITE
+title: IRP_MJ_WRITE (IFS)
 description: IRP_MJ_WRITE
-ms.assetid: 8f16a579-1598-4f70-8d88-dfe877daec31
 keywords: ["IRP_MJ_WRITE Installable File System Drivers"]
 topic_type:
 - apiref
@@ -13,13 +12,13 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_WRITE
+# IRP\_MJ\_WRITE (IFS)
 
 
 ## When Sent
 
 
-The IRP\_MJ\_WRITE request is sent by the I/O Manager or by a file system driver. This request can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **WriteFile** or when a kernel-mode component has called [**ZwWriteFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntwritefile).
+The IRP\_MJ\_WRITE request is sent by the I/O Manager or by a file system driver. This request can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **WriteFile** or when a kernel-mode component has called [**ZwWriteFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile).
 
 ## Operation: File System Drivers
 
@@ -54,7 +53,7 @@ The filter driver should perform any needed processing and, depending on the nat
 ## Parameters
 
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a create request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a create request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
 
@@ -66,7 +65,7 @@ A pointer to a system-supplied buffer to be used as an intermediate system buffe
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
 
-A pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation. If the IRP\_MJ\_WRITE request fails, the file system's write dispatch routine returns an error NTSTATUS value, and the value of *Irp-&gt;IoStatus.Information* is undefined and should not be used.
+A pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation. If the IRP\_MJ\_WRITE request fails, the file system's write dispatch routine returns an error NTSTATUS value, and the value of *Irp-&gt;IoStatus.Information* is undefined and should not be used.
 
 <a href="" id="irp--mdladdress"></a>*Irp-&gt;MdlAddress*  
 
@@ -80,7 +79,7 @@ The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObje
 
 <a href="" id="irpsp--flags"></a>*IrpSp-&gt;Flags*  
 
-If the SL\_FORCE\_DIRECT\_WRITE flag is set, kernel-mode drivers can write to volume areas that they normally cannot write to because of direct write blocking. Direct write blocking was implemented for security reasons in Windows Vista and later operating systems. This flag is checked both at the file system layer and storage stack layer. For more information about direct write blocking, see [Blocking Direct Write Operations to Volumes and Disks](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index). The SL\_FORCE\_DIRECT\_WRITE flag is available in Windows Vista and later versions of Windows.
+If the SL\_FORCE\_DIRECT\_WRITE flag is set, kernel-mode drivers can write to volume areas that they normally cannot write to because of direct write blocking. Direct write blocking was implemented for security reasons in Windows Vista and later operating systems. This flag is checked both at the file system layer and storage stack layer. For more information about direct write blocking, see [Blocking Direct Write Operations to Volumes and Disks](/windows-hardware/drivers/ddi/index). The SL\_FORCE\_DIRECT\_WRITE flag is available in Windows Vista and later versions of Windows.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*
 
@@ -124,40 +123,30 @@ Key value associated with a byte-range lock on the target file.
 
 Length in bytes of the data to be written. If the write operation is successful, the number of bytes written is returned in the **Information** member of the IO\_STATUS\_BLOCK structure pointed to by *Irp-&gt;IoStatus*.
 
-Remarks
--------
+## Remarks
 
-File systems round write and read operations at end of file up to a multiple of the sector size of the underlying file storage device. When processing pre-read or pre-write operations, filters that allocate and swap buffers need to round the size of an allocated buffer up to a multiple of the sector size of the associated device. If they do not, the length of data transferred from the underlying file system will exceed the allocated length of the buffer. For more information about swapping buffers, see [swapBuffers Minifilter Sample](https://go.microsoft.com/fwlink/p/?linkid=256055).
+File systems round write and read operations at end of file up to a multiple of the sector size of the underlying file storage device. When processing pre-read or pre-write operations, filters that allocate and swap buffers need to round the size of an allocated buffer up to a multiple of the sector size of the associated device. If they do not, the length of data transferred from the underlying file system will exceed the allocated length of the buffer. For more information about swapping buffers, see [swapBuffers Minifilter Sample](/samples/browse/).
 
 ## See also
 
 
-[**CcMdlWriteComplete**](https://msdn.microsoft.com/library/windows/hardware/ff539172)
+[**CcMdlWriteComplete**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlwritecomplete)
 
-[**CcPrepareMdlWrite**](https://msdn.microsoft.com/library/windows/hardware/ff539181)
+[**CcPrepareMdlWrite**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpreparemdlwrite)
 
-[**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block)
+[**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location)
+[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block)
+[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
-[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation)
+[**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp)
+[**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**IRP\_MJ\_READ**](irp-mj-read.md)
 
-[**IRP\_MJ\_WRITE (WDK Kernel Reference)**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write)
+[**IRP\_MJ\_WRITE (WDK Kernel Reference)**](../kernel/irp-mj-write.md)
 
-[**ZwWriteFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntwritefile)
-
- 
-
- 
-
-
-
-
-
+[**ZwWriteFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile)
 

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_SessionId
 description: DEVPKEY_Device_SessionId
-ms.assetid: 0e5815b3-0427-4f07-9ec1-a21976d5d933
 keywords: ["DEVPKEY_Device_SessionId Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_Device_SessionId device property represents a value that indicates t
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -47,8 +52,7 @@ The DEVPKEY_Device_SessionId device property represents a value that indicates t
 
  
 
-Remarks
--------
+## Remarks
 
 The Terminal Server feature supports Plug and Play (PnP) device redirection. Device redirection determines whether a device can be accessed by applications and services within all Terminal Services sessions or whether a device can be accessed only within a particular Terminal Services session. The accessibility of a device within a Terminal Services session is determined by the setting of DEVPKEY_Device_SessionId for a device, as follows:
 
@@ -58,43 +62,22 @@ The Terminal Server feature supports Plug and Play (PnP) device redirection. Dev
 
 -   If the DEVPKEY_Device_SessionId property exists and the value of the property is set to zero, the device can be accessed only by services. Session zero is a special session in which only services can run.
 
-You can access the DEVPKEY_Device_SessionId property by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
+You can access the DEVPKEY_Device_SessionId property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
-
- 
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
-
-
-
-
-
 

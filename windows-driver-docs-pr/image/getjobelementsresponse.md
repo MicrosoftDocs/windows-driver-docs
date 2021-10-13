@@ -1,7 +1,6 @@
 ---
 title: GetJobElementsResponse element
 description: The required GetJobElementsResponse element returns the job-related information that a client requests.
-ms.assetid: b27c1aba-eb5f-4446-ab34-c03a969e954f
 keywords: ["GetJobElementsResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **GetJobElementsResponse** element returns the job-related information that a client requests.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetJobElementsResponse>
@@ -27,8 +25,7 @@ Usage
 </wscn:GetJobElementsResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,32 +53,30 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetJobElementsResponse** operation.
 
 A client calls **GetJobElementsRequest** to determine the values of job-related elements for the job that [**JobId**](jobid.md) identifies. The WSD Scan Service must respond with a **GetJobElementsResponse** element that contains the requested information. The information that the Scan Service returns must fully comply with the scan job-related portion of the schema.
 
-Examples
---------
+## Examples
 
 In the following code example, the Scan Service returns the job status for the job that JobId 1 identifies.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
-      http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
+      https://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
     </wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/GetJobElements
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/GetJobElements
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheGetJobElementsRequest</wsa:RelatesTo>

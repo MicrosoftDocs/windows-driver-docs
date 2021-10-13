@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Source Control
 description: Participating in Error Source Control
-ms.assetid: 4b2e3431-348f-48b1-924e-14b9fb5a48f0
 keywords:
 - Windows Hardware Error Architecture WDK , error source control
 - WHEA WDK , error source control
@@ -19,11 +18,11 @@ ms.localizationpriority: medium
 
 To participate in error source control, a PSHED plug-in must implement the following callback functions:
 
-[*SetErrorSourceInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pshed_pi_set_error_source_info)
+[*SetErrorSourceInfo*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_set_error_source_info)
 
-[*EnableErrorSource*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pshed_pi_enable_error_source)
+[*EnableErrorSource*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_enable_error_source)
 
-[*DisableErrorSource*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pshed_pi_disable_error_source)
+[*DisableErrorSource*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_disable_error_source)
 
 The following code example shows how to implement these callback functions.
 
@@ -146,9 +145,4 @@ NTSTATUS
 A PSHED plug-in that participates in error source control must specify the **PshedFAErrorSourceControl** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
  
-
- 
-
-
-
 

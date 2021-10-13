@@ -1,7 +1,6 @@
 ---
 title: Accessing Printer Driver Interfaces from Plug-Ins
 description: Accessing Printer Driver Interfaces from Plug-Ins
-ms.assetid: 021ba789-99bd-4ab5-98fb-0d24ffd0ce25
 keywords:
 - COM interfaces WDK print , accessing printer driver interfaces
 - plug-ins WDK print , accessing interfaces
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-If a plug-in calls methods that belong to the driver-supplied [IPrintOemDriverUI](iprintoemdriverui-com-interface.md), [IPrintCoreHelperPS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperps), [IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperuni), [IPrintCoreUI2](iprintcoreui2-com-interface.md), [IPrintOemDriverUni](iprintoemdriveruni-com-interface.md), [IPrintOemDriverPS](iprintoemdriverps-com-interface.md), or [IPrintCorePS2](iprintcoreps2-com-interface.md) COM interfaces, it must obtain an interface pointer from the driver as follows:
+If a plug-in calls methods that belong to the driver-supplied [IPrintOemDriverUI](iprintoemdriverui-com-interface.md), [IPrintCoreHelperPS](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperps), [IPrintCoreHelperUni](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni), [IPrintCoreUI2](iprintcoreui2-com-interface.md), [IPrintOemDriverUni](iprintoemdriveruni-com-interface.md), [IPrintOemDriverPS](iprintoemdriverps-com-interface.md), or [IPrintCorePS2](iprintcoreps2-com-interface.md) COM interfaces, it must obtain an interface pointer from the driver as follows:
 
 1.  The plug-in must implement the IPrintOemUI, IPrintOemUI2, IPrintOemUni, IPrintOemUni2, IPrintOemPS, or IPrintOemPS2 interface's PublishDriverInterface method.
 
@@ -27,12 +26,7 @@ If a plug-in calls methods that belong to the driver-supplied [IPrintOemDriverUI
 
 5.  When the [IPrintOemDriverUI](iprintoemdriverui-com-interface.md), [IPrintCoreUI2](iprintcoreui2-com-interface.md), [IPrintOemDriverUni](iprintoemdriveruni-com-interface.md), [IPrintOemDriverPS](iprintoemdriverps-com-interface.md), or [IPrintCorePS2](iprintcoreps2-com-interface.md) interface pointer is no longer needed, the plug-in must call the interface's Release method (described in the Windows SDK documentation).
 
-For plug-ins to use the new Windows Vista [IPrintCoreHelperPS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperps) or [IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperuni) interface, the plug-in needs to add support for **OEMGI\_GETREQUESTEDHELPERINTERFACES** in its [**IPrintOemUI::GetInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui-getinfo), [**IPrintOemPS::GetInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemps-getinfo), or [**IPrintOemUni::GetInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-getinfo) method.
+For plug-ins to use the new Windows Vista [IPrintCoreHelperPS](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperps) or [IPrintCoreHelperUni](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni) interface, the plug-in needs to add support for **OEMGI\_GETREQUESTEDHELPERINTERFACES** in its [**IPrintOemUI::GetInfo**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-getinfo), [**IPrintOemPS::GetInfo**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemps-getinfo), or [**IPrintOemUni::GetInfo**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-getinfo) method.
 
  
-
- 
-
-
-
 

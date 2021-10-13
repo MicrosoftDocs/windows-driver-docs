@@ -1,7 +1,6 @@
 ---
 title: Performing Control Operations on a Socket
 description: Performing Control Operations on a Socket
-ms.assetid: 5d6ff02a-dc50-4818-9d0d-ba741fe7dfd8
 keywords:
 - Winsock Kernel WDK networking , control operations
 - WSK WDK networking , control operations
@@ -15,9 +14,9 @@ ms.localizationpriority: medium
 
 After a Winsock Kernel (WSK) application has successfully created a socket, it can perform control operations on the socket. The control operations that can be performed on a socket include setting and retrieving socket options and executing socket IOCTL operations.
 
-A WSK application performs control operations on a socket by calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function. The **WskControlSocket** function is pointed to by the **WskControlSocket** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
+A WSK application performs control operations on a socket by calling the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function. The **WskControlSocket** function is pointed to by the **WskControlSocket** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
 
-The following code example shows how a WSK application can set the [**SO\_EXCLUSIVEADDRUSE**](https://docs.microsoft.com/windows-hardware/drivers/network/so-exclusiveaddruse) socket option on a datagram socket.
+The following code example shows how a WSK application can set the [**SO\_EXCLUSIVEADDRUSE**](./so-exclusiveaddruse.md) socket option on a datagram socket.
 
 ```C++
 // Prototype for the control socket IoCompletion routine
@@ -128,9 +127,9 @@ NTSTATUS
 }
 ```
 
-For more information about each of the supported socket options, see [**WSK Socket Options**](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-socket-options).
+For more information about each of the supported socket options, see [**WSK Socket Options**](so-broadcast.md).
 
-The following code example shows how a WSK application can execute the [**SIO\_WSK\_SET\_REMOTE\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/network/sio-wsk-set-remote-address) socket IOCTL operation on a datagram socket.
+The following code example shows how a WSK application can execute the [**SIO\_WSK\_SET\_REMOTE\_ADDRESS**](./sio-wsk-set-remote-address.md) socket IOCTL operation on a datagram socket.
 
 ```C++
 // Prototype for the control socket IoCompletion routine
@@ -238,13 +237,7 @@ NTSTATUS
 }
 ```
 
-For more information about each of the supported socket IOCTL operations, see [WSK Socket IOCTL Operations](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-socket-ioctl-operations).
+For more information about each of the supported socket IOCTL operations, see [WSK Socket IOCTL Operations](sio-wsk-query-ideal-send-backlog.md).
 
  
-
- 
-
-
-
-
 

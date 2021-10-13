@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_MOUSE
 description: GUID_DEVINTERFACE_MOUSE
-ms.assetid: c5aff960-a78d-4429-ba3f-f2f91d9a56fa
 keywords: ["GUID_DEVINTERFACE_MOUSE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_MOUSE
 
 
-The GUID_DEVINTERFACE_MOUSE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for mouse devices.
+The GUID_DEVINTERFACE_MOUSE [device interface class](./overview-of-device-interface-classes.md) is defined for mouse devices.
 
 <table>
 <colgroup>
@@ -45,21 +44,19 @@ The GUID_DEVINTERFACE_MOUSE [device interface class](https://docs.microsoft.com/
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for mouse devices register instances of this device interface class to notify the operating system and applications of the presence of mouse devices.
 
 The system-supplied [mouse class driver](../hid/keyboard-and-mouse-class-drivers.md) registers an instance of this device interface class for a mouse device. Access an instance of this device interface class by using the I/O interface supported by the mouse class driver.
 
-For general information about supporting mouse devices, see [HID Architecture](https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)) and [Features of the Kbdclass and Mouclass Drivers](../hid/keyboard-and-mouse-class-drivers.md).
+For general information about supporting mouse devices, see [HID Architecture](../hid/hid-architecture.md) and [Features of the Kbdclass and Mouclass Drivers](../hid/keyboard-and-mouse-class-drivers.md).
 
-The WDK includes sample code for the system-supplied mouse class driver. The mouse class driver uses the obsolete identifier [**GUID_CLASS_MOUSE**](guid-class-mouse.md) to register an instance of this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
+The WDK includes sample code for the system-supplied mouse class driver. The mouse class driver uses the obsolete identifier [**GUID_CLASS_MOUSE**](guid-class-mouse.md) to register an instance of this [device setup class](./overview-of-device-setup-classes.md).
 
 For information about the device interface class for keyboard devices, see [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,11 +83,4 @@ Requirements
 [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md)
 
  
-
- 
-
-
-
-
-
 

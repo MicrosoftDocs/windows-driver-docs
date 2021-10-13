@@ -1,7 +1,6 @@
 ---
 title: Querying for the Write Cache Property
 description: Querying for the Write Cache Property
-ms.assetid: 80b7c366-3b54-4dae-8ac7-63caaa1767f9
 keywords:
 - storage drivers WDK , write cache
 - write cache WDK storage
@@ -27,7 +26,7 @@ For example, database applications can use write-through requests to ensure that
 
 However, not all storage devices that have write caches support write-through requests or SYNCHRONIZE CACHE; and some devices do not need to bypass or flush cached data as a precaution because they have battery backup systems that prevent data corruption during power failures. Applications and drivers must have information about the properties of a device's write cache before they can make effective use of it.
 
-In Windows Vista, you can use the [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_query_property) request with a **StorageDeviceWriteCacheProperty** property identifier to query the storage class driver for a write cache property that specifies the characteristics of the device's write cache. The write cache property includes the following information about the caching capabilities of the device:
+In Windows Vista, you can use the [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) request with a **StorageDeviceWriteCacheProperty** property identifier to query the storage class driver for a write cache property that specifies the characteristics of the device's write cache. The write cache property includes the following information about the caching capabilities of the device:
 
 -   *Presence of a write cache*. The write cache property specifies whether the device has a write cache.
 
@@ -39,7 +38,7 @@ In Windows Vista, you can use the [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](https://
 
 -   *Battery backup*. The write cache property indicates whether the device has a battery backup that will protect the integrity of cache data during power failures.
 
-For a complete description of the information that the write cache property reports, see [**STORAGE\_WRITE\_CACHE\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_storage_write_cache_property).
+For a complete description of the information that the write cache property reports, see [**STORAGE\_WRITE\_CACHE\_PROPERTY**](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_write_cache_property).
 
 Without the write cache property mechanism (that is, using the IOCTL\_STORAGE\_QUERY\_PROPERTY request and the **StorageDeviceWriteCacheProperty** property identifier), applications and drivers must query for a device's write cache characteristics with a different sequence of commands for every bus. For example, if the target device is attached to an IEEE 1394 bus and uses the Reduced Block Command (RBC) protocol, the initiator must retrieve page 6 of the device's mode data to determine if the write cache is enabled. But if the target device is SCSI-compliant, the initiator must retrieve page 8 of the mode data. The write-cache property mechanism hides the details of these operations from the initiator and provides a technique to query for the characteristics of a storage device's write cache that is the same across different buses.
 
@@ -48,9 +47,4 @@ The write cache property mechanism is not supported for RAID devices (because th
 The write cache property is supported on the 64-bit versions of Windows.
 
  
-
- 
-
-
-
 

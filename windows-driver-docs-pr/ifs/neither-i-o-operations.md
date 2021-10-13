@@ -1,7 +1,6 @@
 ---
 title: Neither I/O Operations
 description: Neither I/O Operations
-ms.assetid: c8fc4742-e220-45c4-9113-ec5658bc09cc
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , neither I/O operations
@@ -19,25 +18,25 @@ ms.localizationpriority: medium
 
 A file system must handle operations that typically involve directly manipulating user buffers. Such operations are inherently risky because the user address might not be valid. File systems must be particularly conscious of such operations and ensure that they protect them appropriately. The following operations rely upon the **Flags** member of the file system's device object to specify how the I/O manager is to transfer data between user and kernel address space:
 
--   [**IRP\_MJ\_DIRECTORY\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-directory-control)
+-   [**IRP\_MJ\_DIRECTORY\_CONTROL**](./irp-mj-directory-control.md)
 
--   [**IRP\_MJ\_QUERY\_EA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-ea)
+-   [**IRP\_MJ\_QUERY\_EA**](./irp-mj-query-ea.md)
 
--   [**IRP\_MJ\_QUERY\_QUOTA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-quota)
+-   [**IRP\_MJ\_QUERY\_QUOTA**](./irp-mj-query-quota.md)
 
--   [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-read)
+-   [**IRP\_MJ\_READ**](./irp-mj-read.md)
 
--   [**IRP\_MJ\_SET\_EA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-ea)
+-   [**IRP\_MJ\_SET\_EA**](./irp-mj-set-ea.md)
 
--   [**IRP\_MJ\_SET\_QUOTA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-quota)
+-   [**IRP\_MJ\_SET\_QUOTA**](./irp-mj-set-quota.md)
 
--   [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-write)
+-   [**IRP\_MJ\_WRITE**](./irp-mj-write.md)
 
 Typically, a file system chooses neither I/O implicitly by setting neither DO\_DIRECT\_IO nor DO\_BUFFERED\_IO in the **Flags** member of the volume device object that it creates.
 
 The following operation ignores the **Flags** member of the file system's device object and uses neither I/O to transfer data between user and kernel address space:
 
--   [**IRP\_MJ\_QUERY\_SECURITY**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-security)
+-   [**IRP\_MJ\_QUERY\_SECURITY**](./irp-mj-query-security.md)
 
 Using neither I/O, the file system is responsible for handling its own data transfer operations. This allows a file system to satisfy an operation by directly placing the data into the user-space buffer of an application. The file system must thus ensure that the user's buffer is valid when the operation begins and gracefully handle the buffer becoming invalid while the operation is ongoing. Fast I/O also passes raw pointers. Developers should be aware that checking the validity of the buffer at the beginning of the operation is not sufficient to ensure that it remains valid throughout the operation. For example, a malicious application could map a block of memory (through a section, for example), issue an I/O operation, and unmap the block of memory while the I/O operation is ongoing.
 
@@ -156,9 +155,4 @@ Another critical issue occurs when the request is not satisfied in the context o
 The FASTFAT file system protects against a broad range of failures, not simply invalid user buffers, by using these routines. While this is a very powerful technique, it also involves ensuring that all protected code blocks properly release any resources they might be holding. The resources to release include memory, synchronization objects, or some other resource of the file system itself. A failure to do so would give a would-be attacker the ability to cause resource starvation by making many repetitive calls into the operating system to exhaust the resource.
 
  
-
- 
-
-
-
 

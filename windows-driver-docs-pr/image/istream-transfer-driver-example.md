@@ -1,7 +1,6 @@
 ---
 title: IStream Transfer Driver Example
 description: IStream Transfer Driver Example
-ms.assetid: fb830522-f95e-4dd7-8c1b-de092a6c5a51
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -67,7 +66,4 @@ LONG                      *plDevErrVal)
 ```
 
 ## Related topics
-[**IWiaMiniDrvTransferCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrvtransfercallback)  
-
-
-
+[**IWiaMiniDrvTransferCallback**](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrvtransfercallback)

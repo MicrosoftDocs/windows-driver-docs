@@ -1,7 +1,6 @@
 ---
 title: logexts.logb
 description: The logexts.logb extension displays or flushes the output buffer.
-ms.assetid: 3c6ec412-f800-469b-9a9f-ebc2940d00fe
 keywords: ["logexts.logb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Flushes the output buffer to the disk.
 
 For more information, see [Logger and LogViewer](logger-and-logviewer.md).
 
-Remarks
--------
+## Remarks
 
 As a performance consideration, log output is flushed to disk only when the output buffer is full. By default, the buffer is 2144 bytes.
 

@@ -1,7 +1,6 @@
 ---
 title: GUID_PARCLASS_DEVICE
 description: GUID_PARCLASS_DEVICE
-ms.assetid: ce2c312f-4af3-464b-995f-e5907830a7dc
 keywords: ["GUID_PARCLASS_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 GUID_PARCLASS_DEVICE is an obsolete identifier for the device interface class for devices that are attached to a parallel port. For new instances of this class, use the [**GUID_DEVINTERFACE_PARCLASS**](guid-devinterface-parclass.md) class identifier instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

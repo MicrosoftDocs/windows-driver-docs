@@ -1,7 +1,6 @@
 ---
 title: Bus-Master DMA in Video Miniport Drivers
 description: Bus-Master DMA in Video Miniport Drivers
-ms.assetid: fe6c2e16-d222-4948-b1df-34ed8d57d9d8
 keywords:
 - video miniport drivers WDK Windows 2000 , bus-master DMA
 - bus-master DMA WDK video miniport
@@ -34,7 +33,7 @@ Beginning with Windows XP, the operating system graphics interface supports DMA 
 
 Depending on the nature of the bus-master adapter, some miniport drivers use packet-based DMA exclusively, others use common-buffer DMA exclusively, and some use both.
 
-Regardless of which type of DMA is used, the miniport driver should call [**VideoPortGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportgetdmaadapter) to get a pointer to the [**VP\_DMA\_ADAPTER**](https://docs.microsoft.com/previous-versions/ff570570(v=vs.85)) structure and use it for subsequent DMA functions calls. When there is no longer any need for continued DMA operations, the miniport driver should call [**VideoPortPutDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportputdmaadapter) to discard the adapter object.
+Regardless of which type of DMA is used, the miniport driver should call [**VideoPortGetDmaAdapter**](/windows-hardware/drivers/ddi/video/nf-video-videoportgetdmaadapter) to get a pointer to the [**VP\_DMA\_ADAPTER**](/previous-versions/ff570570(v=vs.85)) structure and use it for subsequent DMA functions calls. When there is no longer any need for continued DMA operations, the miniport driver should call [**VideoPortPutDmaAdapter**](/windows-hardware/drivers/ddi/video/nf-video-videoportputdmaadapter) to discard the adapter object.
 
 The following subsections describe how to use the packet-based and common-buffer DMA support supplied by the video port driver.
 
@@ -45,10 +44,4 @@ The following subsections describe how to use the packet-based and common-buffer
 [Points to Consider When Using DMA](points-to-consider-when-using-dma.md)
 
  
-
- 
-
-
-
-
 

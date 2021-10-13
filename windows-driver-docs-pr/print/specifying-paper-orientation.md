@@ -1,7 +1,6 @@
 ---
 title: Specifying Paper Orientation
 description: Specifying Paper Orientation
-ms.assetid: 2d62e1ff-965b-4fd7-922c-319ec1bc39a5
 keywords:
 - Unidrv, paper orientation
 - paper orientation WDK Unidrv
@@ -61,14 +60,9 @@ However, a printer that supports landscape mode (for which the LANDSCAPE\_CC90 o
 }
 ```
 
-**Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mxdc/nf-mxdc-mxdcgetpdevadjustment).
+**Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment).
 
  
 
  
-
- 
-
-
-
 

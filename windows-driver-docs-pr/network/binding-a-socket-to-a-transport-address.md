@@ -1,7 +1,6 @@
 ---
 title: Binding a Socket to a Transport Address
 description: Binding a Socket to a Transport Address
-ms.assetid: b76bb601-536f-43de-b91c-932f4f08c274
 keywords:
 - Winsock Kernel WDK networking , local transport addresses
 - WSK WDK networking , local transport addresses
@@ -21,7 +20,7 @@ After a Winsock Kernel (WSK) application has successfully created a socket, it c
 
  
 
-A WSK application binds a socket to a local transport address by calling the [**WskBind**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_bind) function. The **WskBind** function is pointed to by the **WskBind** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
+A WSK application binds a socket to a local transport address by calling the [**WskBind**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_bind) function. The **WskBind** function is pointed to by the **WskBind** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
 
 A socket can be bound to a local wildcard address. For more information about the behavior of a socket that has been bound to a local wildcard address, see **WskBind**.
 
@@ -126,13 +125,7 @@ NTSTATUS
 }
 ```
 
-For connection-oriented sockets, a WSK application can call the [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_socket_connect) function to create, bind, and connect a socket in a single function call.
+For connection-oriented sockets, a WSK application can call the [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create, bind, and connect a socket in a single function call.
 
  
-
- 
-
-
-
-
 

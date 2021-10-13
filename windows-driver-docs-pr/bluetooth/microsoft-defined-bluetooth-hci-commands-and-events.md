@@ -1,7 +1,6 @@
 ---
 title: Microsoft-defined Bluetooth HCI commands and events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.assetid: 68E34B92-155B-401E-8D90-5BD1AF036B4D
 ms.date: 02/07/2018
 ms.localizationpriority: medium
 ---
@@ -121,13 +120,13 @@ HCI_VS_MSFT_Monitor_Rssi requests that the controller starts monitoring the meas
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_Monitor_Rssi|Chosen base code |Subcommand_opcode,</br>Connection_handle,</br>RSSI_threshold_high,</br>RSSI_threshold_low,</br>RSSI_threshold_low_time_interval,</br>RSSI_sampling_period|Status,</br>Subcommand_opcode|
+|HCI_VS_MSFT_Monitor_Rssi|Chosen base code |Subcommand_opcode,</br>Connection_Handle,</br>RSSI_threshold_high,</br>RSSI_threshold_low,</br>RSSI_threshold_low_time_interval,</br>RSSI_sampling_period|Status,</br>Subcommand_opcode|
 
 The controller shall notify the host of the RSSI value with a periodically generated event (based on the _RSSI_sampling_period_). The measured link RSSI shall be the **absolute** receiver signal strength value in dBm for the BR/EDR connection.
 
 In response to a HCI_VS_MSFT_Monitor_Rssi command, the controller shall generate a Command Complete event with status equaling zero if the controller can begin monitoring, or a non-zero status otherwise. If the status value is non-zero, the controller shall not generate an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] in response to this command.
 
-The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi command with the same _Connection_handle_ is outstanding, or if the specified connection handle is invalid. The controller may also refuse the command for other reasons, such as resource exhaustion.
+The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi command with the same _Connection_Handle_ is outstanding, or if the specified connection handle is invalid. The controller may also refuse the command for other reasons, such as resource exhaustion.
 
 This state diagram shows the transition states on the controller when monitoring RSSI for a connection.![State diagram of HCI_VS_MSFT_Monitor_Rssi](images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png)
 
@@ -146,7 +145,7 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x01   |  The subcommand opcode for [HCI_VS_MSFT_Monitor_Rssi][ref_HCI_VS_MSFT_Monitor_Rssi].|
 
-Connection_handle (2 octets):
+Connection_Handle (2 octets):
 
 | Value  |  Parameter description |
 |---|---|
@@ -216,7 +215,7 @@ The controller shall promptly generate a Command Completed event in response to 
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_Cancel_Monitor_Rssi|Chosen base code |Subcommand_opcode,</br>Connection_handle</li>|Status,</br>Subcommand_opcode|
+|HCI_VS_MSFT_Cancel_Monitor_Rssi|Chosen base code |Subcommand_opcode,</br>Connection_Handle|Status,</br>Subcommand_opcode|
 
 #### Command_parameters
 
@@ -226,7 +225,7 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x02   |  The subcommand opcode for [HCI_VS_MSFT_Cancel_Monitor_Rssi][ref_HCI_VS_MSFT_Cancel_Monitor_Rssi].|
 
-Connection_handle (1 octets):
+Connection_Handle (1 octets):
 
 | Value  |  Parameter description |
 |---|---|
@@ -257,20 +256,20 @@ The controller shall generate a Command Complete event when the [HCI_VS_MSFT_Can
 HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitoring for advertisements that fall within the specified RSSI range and also satisfy one of the following conditions:
 
 - A specified pattern can be matched to the received advertisement packet.
-- A specified UUID can be matched to the received advertisement packe
+- A specified UUID can be matched to the received advertisement packet.
 - A specified Identity Resolution Key (IRK) can be used to resolve the private address of the device from which the advertisement packet originated.
 - A specified Bluetooth Address can be matched to the received advertisement packet.
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_LE_Monitor_Advertisement|Chosen base code |Subcommand_opcode,</br>RSSI_threshold_high,</br>RSSI_threshold_low,</br>RSSI_threshold_low_time_interval,</br>RSSI_sampling_period,</br>Condition_type,</br>\<Condition Parameters\>|Status,</br>Subcommand_opcodee,</br>Monitor_handle|
+|HCI_VS_MSFT_LE_Monitor_Advertisement|Chosen base code |Subcommand_opcode,</br>RSSI_threshold_high,</br>RSSI_threshold_low,</br>RSSI_threshold_low_time_interval,</br>RSSI_sampling_period,</br>Condition_type,</br>\<Condition Parameters\>|Status,</br>Subcommand_opcodee,</br>Monitor_Handle|
 
 The controller shall generate a Command Complete event in response to this command. The status value should be set to zero if the controller can begin monitoring, or a non-zero status otherwise.
 If the controller does not support RSSI monitoring for LE Advertisements, it shall ignore the _RSSI_threshold_high_, _RSSI_threshold_low_, _RSSI_threshold_low_time_interval_, and _RSSI_sampling_period_ parameter values.
 
 This state diagram shows the transition states on the controller when monitoring RSSI for an advertisement.
 
-![State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement](images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.png)
+![State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement.](images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.png)
 
 The controller shall propagate the first advertisement packet to the host only when the received RSSI is greater than or equal to _RSSI_threshold_high_ for a particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 1 and _Monitor_handle_ set to the handle for this _Condition_, to notify the host that the controller is monitoring this particular device for _Condition_.
 The controller shall stop monitoring for _Condition_ if the RSSI of the received advertisements equals or falls below  _RSSI_threshold_low_ over _RSSI_threshold_low_interval_ for the particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 0 to notify the host that the controller has stopped monitoring the particular device for the _Condition_. After the controller specifies the HCI_VS_MSFT_LE_Monitor_Device_Event with _Monitor_state_ set to 0, the controller shall not allow further advertisement packets to flow to the host for the device until the controller has notified the host that the RSSI for the particular device has risen to or above _RSSI_threshold_high_ for the particular device for the _Condition_.
@@ -422,7 +421,7 @@ Address_type (1 octet):
 |0x01| Random Device Address.|
 |0x02 - 0xFF| Reserved values for future use.|
 
-Address_type (1 octet):
+BD_ADDR (6 octets):
 
 | Value  |  Parameter description |
 |---|---|
@@ -473,7 +472,7 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x04   |  The subcommand opcode for [HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement].|
 
-Connection_handle (1 octet):
+Connection_Handle (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
@@ -560,7 +559,7 @@ HCI_VS_MSFT_Read_Absolute_RSSI reads the **absolute** Received Signal Strength I
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_Read_Absolute_RSSI|Chosen base code |Subcommand_opcode,</br>Handle</li>|Status,</br>Subcommand_opcode,</br>Handle,</br>RSSI|
+|HCI_VS_MSFT_Read_Absolute_RSSI|Chosen base code |Subcommand_opcode,</br>Connection_Handle</li>|Status,</br>Subcommand_opcode,</br>Connection_Handle,</br>RSSI|
 
 A connection handle is provided as both a command and return parameter to identify the ACL connection whose RSSI is being read. The RSSI metric is the **absolute** receiver signal strength in dBm to ± 6 dB accuracy. If the RSSI cannot be read, the RSSI metric shall be set to 127.
 The controller shall always complete this command promptly with a Command Completed event.
@@ -573,7 +572,7 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x06|  The subcommand opcode for HCI_VS_MSFT_Read_Absolute_RSSI.|
 
-Handle (2 octets):
+Connection_Handle (2 octets):
 
 | Value  |  Parameter description |
 |---|---|
@@ -594,7 +593,7 @@ Subcommand_opcode (1 octet):
 |---|---|
 |0x06|The subcommand opcode for [HCI_VS_MSFT_Read_Absolute_RSSI][ref_HCI_VS_MSFT_Read_Absolute_RSSI].|
 
-Handle (2 octets):
+Connection_Handle (2 octets):
 
 |Value|Parameter description|
 |---|---|
@@ -627,7 +626,7 @@ If the _Status_ parameter is zero, the command completed because the RSSI value 
 
 |Event|Event Code|Microsoft event code|Event parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_RSSI_Event|0xFF|0x01|Event_prefix,</br>Microsoft_event_code,</br>Status,</br>Connection_handle,</br>RSSI
+|HCI_VS_MSFT_RSSI_Event|0xFF|0x01|Event_prefix,</br>Microsoft_event_code,</br>Status,</br>Connection_Handle,</br>RSSI
 
 #### Event_parameters
 
@@ -650,7 +649,7 @@ Status (1 octet):
 |0x00|Success. The RSSI value of the connection has met one of the following conditions.The RSSI reached or exceeded _RSSI_threshold_high_.,</br>The RSSI reached or dropped below _RSSI_threshold_low_ over _RSSI_threshold_low_time_interval_ seconds.,</br>The _RSSI_sampling_period_ has expired and this event was generated to notify the host of the RSSI value.|
 |0x01&#160;-&#160;0xFF|Failure. The RSSI value of the connection can no longer be monitored. The error code is usually one of codes that describes why the underlying ACL connection was lost.|
 
-Connection_handle (2 octets):
+Connection_Handle (2 octets):
 
 |Value|Parameter description|
 |---|---|

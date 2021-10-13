@@ -1,7 +1,6 @@
 ---
 title: Starting the Debugging Session
 description: Starting the Debugging Session
-ms.assetid: 789c61cf-edd2-4354-91a8-87a0a7af28a3
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

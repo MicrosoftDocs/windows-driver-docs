@@ -1,7 +1,6 @@
 ---
 title: About Network Wake-Up Events
 description: About Network Wake-Up Events
-ms.assetid: 85195d44-4d79-4feb-af35-c478dc4319c5
 keywords:
 - wake-up capabilities WDK networking , types
 - NICs WDK networking , wake-up events
@@ -29,15 +28,15 @@ NDIS defines the following two network wake-up events:
 
 -   Receipt of a Magic Packet.
 
-A network adapter can support any combination of network wake-up events, including none at all. NDIS treats the miniport driver as not power management-aware if the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL**.
+A network adapter can support any combination of network wake-up events, including none at all. NDIS treats the miniport driver as not power management-aware if the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL**.
 
 Depending on the capabilities of the network adapter, a network wake-up event can occur from any device power state, including the highest-powered state (D0).
 
 ### Network Wake-Up Frames
 
-If, during initialization, a miniport driver indicates that a network adapter can signal a wake-up on the receipt of a packet that contains a specified pattern, a bound protocol can enable the pattern-based wake up method on the network adapter and specify wake-up patterns. To enable this type of wake-up, a protocol driver sets the NDIS\_PNP\_WAKE\_UP\_PATTERN\_MATCH flag in [OID\_PNP\_ENABLE\_WAKE\_UP](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-enable-wake-up).
+If, during initialization, a miniport driver indicates that a network adapter can signal a wake-up on the receipt of a packet that contains a specified pattern, a bound protocol can enable the pattern-based wake up method on the network adapter and specify wake-up patterns. To enable this type of wake-up, a protocol driver sets the NDIS\_PNP\_WAKE\_UP\_PATTERN\_MATCH flag in [OID\_PNP\_ENABLE\_WAKE\_UP](./oid-pnp-enable-wake-up.md).
 
-A protocol driver uses [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-add-wake-up-pattern) to specify a wake-up pattern, along with a mask that indicates which bytes of an incoming packet should be compared with the pattern. A protocol driver can remove a wake-up pattern with [OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-remove-wake-up-pattern).
+A protocol driver uses [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](./oid-pnp-add-wake-up-pattern.md) to specify a wake-up pattern, along with a mask that indicates which bytes of an incoming packet should be compared with the pattern. A protocol driver can remove a wake-up pattern with [OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN](./oid-pnp-remove-wake-up-pattern.md).
 
 For more information about network wake-up frames, see [Power Management for Network Devices](https://go.microsoft.com/fwlink/p/?linkid=9945).
 
@@ -52,10 +51,4 @@ This section includes:
 [Handling Wake-Up Events](handling-wake-up-events.md)
 
  
-
- 
-
-
-
-
 

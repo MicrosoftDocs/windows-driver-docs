@@ -1,7 +1,6 @@
 ---
 title: Macroblock Prediction
 description: Macroblock Prediction
-ms.assetid: 95e779ab-b110-4636-9475-6881dba89649
 keywords:
 - MCP WDK DirectX VA
 - motion compensation WDK DirectX VA
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 The formation of a macroblock prediction through motion-compensated prediction (MCP) must be done as a series of discrete stages as shown in the following figure and steps:
 
-![diagram illustrating creating a macroblock prediction through motion-compensated prediction (mcp)](images/preddata.png)
+![diagram illustrating creating a macroblock prediction through motion-compensated prediction (mcp).](images/preddata.png)
 
 The following four steps are involved in creating a macroblock prediction:
 
@@ -49,7 +48,7 @@ The following four steps are involved in creating a macroblock prediction:
 
 The following figure shows the additional steps in the video decoding process that occur when creating a macroblock prediction. (The blocks with solid lines depict the motion compensation process, while the blocks with dotted lines depict other aspects of video decoding.)
 
-![diagram illustrating signal flow of motion-compensation prediction blocks](images/sigflowmo3.png)
+![diagram illustrating signal flow of motion-compensation prediction blocks.](images/sigflowmo3.png)
 
  
 

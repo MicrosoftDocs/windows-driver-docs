@@ -1,7 +1,6 @@
 ---
 title: minipkd.adapters
 description: The minipkd.adapters extension displays all of the adapters that work with the SCSI Port driver that have been identified in the system, and the individual devices associated with each adapter.
-ms.assetid: 8571b9ec-1ec9-4adb-8a65-5306e45c3aa6
 keywords: ["minipkd.adapters Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,8 +46,7 @@ The **!minipkd.adapters** extension displays all of the adapters that work with 
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The display includes the driver name, the device object address, and the device extension address for each adapter. The display for each adapter also includes a list of each device on the adapter. The display for each device includes the device extension address, the SCSI address, the device object address, and some flags for the device. Information about the Plug and Play state and the power state is also included.
 

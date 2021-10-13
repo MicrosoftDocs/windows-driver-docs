@@ -1,7 +1,6 @@
 ---
 title: lsf, lsf- (Load or Unload Source File)
 description: The lsf and lsf- commands load or unload a source file.
-ms.assetid: e788a778-e331-4b7b-8aad-072b3d08442b
 keywords: ["lsf, lsf- (Load or Unload Source File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,8 +53,7 @@ Specifies the file to load or unload. If this file is not located in the directo
 
  
 
-Remarks
--------
+## Remarks
 
 The **lsf** command loads a source file.
 

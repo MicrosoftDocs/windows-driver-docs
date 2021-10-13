@@ -1,7 +1,6 @@
 ---
 title: Task offload OIDs
 description: This topic describes Task offload OIDs 
-ms.assetid: 0d7eab31-d5c9-4264-9598-c72e19e1d86b
 keywords:
 - Task offload OIDs, task offload NDIS OIDs, task offload OIDs WDK, task offload OIDs networking
 ms.date: 11/06/2017

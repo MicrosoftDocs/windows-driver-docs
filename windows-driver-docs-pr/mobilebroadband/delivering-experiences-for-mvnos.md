@@ -1,14 +1,13 @@
 ---
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
-ms.assetid: fcb2a3d4-bc19-4fa5-b81d-b0df287404a8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Delivering experiences for MVNOs
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 This topic provides info on how you can match service metadata to a mobile network operator (MNO) or mobile virtual network operator (MVNO) so that a mobile broadband app is automatically downloaded when the mobile broadband device is inserted.
 
@@ -24,7 +23,7 @@ For info about the hardware that is required to properly match service metadata 
 
 For info on service metadata, see [Service metadata](service-metadata.md).
 
-For info on the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+For info on the service metadata package schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 ## Matching on GSM networks
 
@@ -54,7 +53,7 @@ IMSI ranges must have a granularity of 100. The start range value must end in 00
 
 *Figure 1 Segmenting IMSI ranges (within an MNO's MCC+MNC)* shows an example of client device that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
-![segmenting imsi ranges](images/hck-winb-fig1-segmenting-imsi-ranges-matchingservicemetadata.jpg)
+![segmenting imsi ranges.](images/hck-winb-fig1-segmenting-imsi-ranges-matchingservicemetadata.jpg)
 
 **Figure 1 Segmenting IMSI ranges (in an MNO's MCC+MNC)**
 
@@ -79,7 +78,7 @@ IMSI ranges must have a granularity of 100. The start range value must end in 00
 
 *Figure 2 Segmenting ICCID ranges (within an MNO's ICCID issuer identification number)* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
-![segmenting iccid ranges](images/hck-winb-fig2-segmenting-iccid-ranges-matchingservicemetadata.jpg)
+![segmenting iccid ranges.](images/hck-winb-fig2-segmenting-iccid-ranges-matchingservicemetadata.jpg)
 
 **Figure 2 Segmenting ICCID ranges (in an MNO's ICCID issuer identification number)**
 
@@ -102,7 +101,7 @@ IMSI ranges must have a granularity of 100. The start range value must end in 00
 
 *Figure 3 Using ICCID to define MVNOs and an all-encompassing IMSI range for the MNO* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
-![using iccid to define mvnos](images/hck-winb-fig3-using-iccid-to-define-mvnos-matchingservicemetadata.jpg)
+![using iccid to define mvnos.](images/hck-winb-fig3-using-iccid-to-define-mvnos-matchingservicemetadata.jpg)
 
 *Figure 3 Using ICCID to define MVNOs and an all-encompassing IMSI range for the MNO*
 
@@ -127,7 +126,7 @@ This is the most complex matching model. To ensure proper matching, the MNO and 
 
 *Figure 4 Segmenting ICCID and IMSI ranges* shows an example of client device that request service metadata from WMIS, and how each matching request from the client is matched to an experience.
 
-![segmenting ccid and imsi ranges](images/hck-winb-fig4-segmenting-ccid-and-imsi-ranges-matchingservicemetadata.jpg)
+![segmenting ccid and imsi ranges.](images/hck-winb-fig4-segmenting-ccid-and-imsi-ranges-matchingservicemetadata.jpg)
 
 *Figure 4 Segmenting ICCID and IMSI ranges*
 
@@ -160,7 +159,7 @@ Home Provider Names must be globally unique to ensure that a user gets the corre
 
 *Figure 5 Provider Name-based matching for GSM networks* shows an example of devices that request service metadata from the Windows Metadata and Internet Services (WMIS) service, and how each matching request from the device is matched to an experience.
 
-![using home provider name for gsm networks](images/hck-winb-fig5-using-home-provider-name-for-gsm-networks-to-identify-the-mno-and-mvno.jpg)
+![using home provider name for gsm networks.](images/hck-winb-fig5-using-home-provider-name-for-gsm-networks-to-identify-the-mno-and-mvno.jpg)
 
 *Figure 5 Provider Name-based matching for GSM networks*
 
@@ -180,7 +179,7 @@ This option requires the MNO or MVNO to ensure that the Home Provider Name repor
 
 *Figure 6 Using Home Provider Name to define MVNOs and an all-encompassing IMSI range for the MNO* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
-![using home provider name to define mvnos](images/hck-winb-fig6-using-home-provider-name-to-define-mvnos-and-an-all-encompassing-imsi-range-for-the-mno.jpg)
+![using home provider name to define mvnos.](images/hck-winb-fig6-using-home-provider-name-to-define-mvnos-and-an-all-encompassing-imsi-range-for-the-mno.jpg)
 
 *Figure 6 Using Home Provider Name to define MVNOs and an all-encompassing IMSI range for the MNO*
 
@@ -237,7 +236,7 @@ You can rebrand the following items in the app:
 
 -   The app content itself (that is, everything inside the app can be changed for a particular operator). This is code over which the app has complete control. You might want to change help content, navigation options, page layouts, colors, and branding inside the app, based on the MNO/MVNO.
 
--   The app tile can be dynamically updated to show specific images and layouts that are specific to the operator. For information about how to dynamically update tile content, see [Quickstart: Sending a tile update](https://docs.microsoft.com/previous-versions/windows/apps/hh465439(v=win.10)).
+-   The app tile can be dynamically updated to show specific images and layouts that are specific to the operator. For information about how to dynamically update tile content, see [Quickstart: Sending a tile update](/previous-versions/windows/apps/hh465439(v=win.10)).
 
 You cannot rebrand the following items in the app:
 
@@ -283,7 +282,7 @@ Separate service metadata is created for the MNO and for each of the MVNOs that 
 
 *Figure 7 SID-based matching for CDMA networks* shows an example of computers that request service metadata from WMIS service, and how each matching request from the client gets matched to an experience.
 
-![sid-based matching](images/hck-winb-fig5-sid-based-matching-matchingservicemetadata.jpg)
+![sid-based matching.](images/hck-winb-fig5-sid-based-matching-matchingservicemetadata.jpg)
 
 *Figure 7 SID-based matching for CDMA networks*
 
@@ -305,7 +304,7 @@ For this option to work, the MNO must make sure that no service metadata is subm
 
 *Figure 8 Provider Name-based matching for CDMA networks* shows an example of devices that request service metadata from the Windows Metadata and Internet Services (WMIS) service, and how each matching request from the device is matched to an experience.
 
-![provider name based matching](images/hck-winb-fig6-provider-name-based-matching-matchingservicemetadata.jpg)
+![provider name based matching.](images/hck-winb-fig6-provider-name-based-matching-matchingservicemetadata.jpg)
 
 *Figure 8 Provider Name-based matching for CDMA networks*
 
@@ -360,10 +359,4 @@ It is important to keep the following metadata package content up-to-date:
 For more information about mobile broadband metadata see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
  
-
- 
-
-
-
-
 

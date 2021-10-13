@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x59 PINBALL_FILE_SYSTEM
 description: The PINBALL_FILE_SYSTEM bug check has a value of 0x00000059. This indicates that a problem occurred in the Pinball file system.
-ms.assetid: b6b9f2e9-261d-4d4d-b282-41fadd0bf8b3
 keywords: ["Bug Check 0x59 PINBALL_FILE_SYSTEM", "PINBALL_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,13 +57,11 @@ The PINBALL\_FILE\_SYSTEM bug check has a value of 0x00000059. This indicates th
 
  
 
-Cause
------
+## Cause
 
 One possible cause of this bug check is depletion of nonpaged pool memory. If the nonpaged pool memory is completely depleted, this error can stop the system. However, during the indexing process, if the amount of available nonpaged pool memory is very low, another kernel-mode driver requiring nonpaged pool memory can also trigger this error.
 
-Resolution
-----------
+## Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 

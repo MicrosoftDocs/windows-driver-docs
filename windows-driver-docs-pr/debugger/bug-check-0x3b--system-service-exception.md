@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION
 description: The SYSTEM_SERVICE_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
-ms.assetid: 0e2c230e-d942-4f32-ae8e-7a54aceb4c19
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
 ms.date: 03/24/2019
 topic_type:
@@ -10,11 +9,10 @@ api_name:
 - SYSTEM_SERVICE_EXCEPTION
 api_type:
 - NA
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # Bug Check 0x3B: SYSTEM\_SERVICE\_EXCEPTION
-
 
 The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
 
@@ -22,13 +20,12 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
-## SYSTEM\_SERVICE\_EXCEPTION Parameters
-
+## SYSTEM\_SERVICE\_EXCEPTION parameters
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,34 +53,29 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 </tbody>
 </table>
 
- 
 
-Cause
------
+## Cause
 
-The stop code indicates that executing code had an exception and the thread that was below it, is a system thread.
+This stop code indicates that executing code had an exception, and the thread that was below it is a system thread.
 
-The exception information returned in parameter one is listed in [NTSTATUS Values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
+The exception information that is returned in parameter 1 is described in [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](../index.yml). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
 Common exception codes include:
 
 - 0x80000003: STATUS\_BREAKPOINT
 
-A breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
+    A breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
 
 - 0xC0000005: STATUS\_ACCESS\_VIOLATION
 
-A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
+    A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
 
-Resolution
-----------
+## Resolution
 
-**To debug this problem:** 
-
-Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code. Use the [u, ub, uu (Unassemble)](u--unassemble-.md) command to see the assembly program code.
+To debug this problem, use the [**.cxr** (display context record)](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code that precedes this stop code and attempt to single-step forward into the faulting code. Use the [**u**, **ub**, **uu** (unassemble)](u--unassemble-.md) commands to see the assembly program code.
 
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. The following example is output from **!analyze**.
 
 ```dbgcmd
 SYSTEM_SERVICE_EXCEPTION (3b)
@@ -96,54 +88,48 @@ Arg4: 0000000000000000, zero.
 ...
 ```
 
-For more information see the following topics:
+For more information about WinDbg and **!analyze**, see the following topics:
 
-[Using the !analyze Extension](using-the--analyze-extension.md) 
+ - [Using the !analyze extension](using-the--analyze-extension.md) 
 
-[Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+ - [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-If a driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use the debugger [**dx (Display Debugger Object Model Expression)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command to display this - `dx KiBugCheckDriver`.
+### Identify the driver
 
-Use the [!error](-error.md) extension to display information about the exception code in parameter 1.
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
+
+Use the [**!error**](-error.md) extension to display information about the exception code in parameter 1. Following is an example of output from **!error**.
 
 ```dbgcmd
 2: kd> !error 00000000c0000005
 Error code: (NTSTATUS) 0xc0000005 (3221225477) - The instruction at 0x%p referenced memory at 0x%p. The memory could not be %s.
 ```
 
-Look at the STACK TEXT for clues on what was running when the failure occurred. If multiple dump files are available, compare information to look for common code that is in the stack. Use debugger commands such as use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
+Look at the **STACK TEXT** output from WinDbg for clues about what was running when the failure occurred. If multiple dump files are available, compare their information to look for common code that is in the stack. Use debugger commands like [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
 
-Use the `lm t n` to list modules that are loaded in the memory. 
+Use the following command to list modules that are loaded in memory: **lm t n**
 
-Use `!memusage` and to examine the general state of the system memory. The `!pte` and `!pool` command may also be used to examine specific areas of memory. 
+Use **!memusage** to examine the general state of the system memory. You can also use the commands **!pte** and **!pool** to examine specific areas of memory. 
 
-In the past, this error has been linked to excessive paged pool usage and may occur due to user-mode graphics drivers crossing over and passing bad data to the kernel code. If you suspect this is the case, use the pool options in driver verifier to gather additional information.
+In the past, this error has been linked to excessive use of the paged pool, which may occur due to user-mode graphics drivers crossing over and passing bad data to the kernel code. If you suspect this is the case, use the pool options in Driver Verifier to gather additional information.
 
-**Driver Verifier**
+### Driver Verifier
 
-Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it sees errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifer* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it identifies errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. Driver Verifier Manager is built into Windows and is available on all Windows PCs. 
+
+To start Driver Verifier Manager, enter **verifier** at a command prompt. You can configure which drivers to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 
-Remarks
-----------
+## Remarks
 
 For general troubleshooting of Windows bug check codes, follow these suggestions:
 
 -   If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
--   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
+-   Look in Device Manager to see if any devices are marked with an exclamation point (!), which indicates a problem. Review the events log displayed in the properties for any faulting device driver. Try to update the related driver.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
 
--   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
-
-
- 
-
- 
-
-
-
-
+For additional general troubleshooting information, see [Blue screen data](blue-screen-data.md).

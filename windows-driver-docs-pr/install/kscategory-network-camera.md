@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_NETWORK_CAMERA
 description: KSCATEGORY_NETWORK_CAMERA
-ms.assetid: FE86C0D5-3512-4DC9-891D-60E46BA33F51
 keywords: ["KSCATEGORY_NETWORK_CAMERA Device and Driver Installation"]
 topic_type:
 - apiref
@@ -39,15 +38,14 @@ The KSCATEGORY_NETWORK_CAMERA GUID is defined as follows:
 </tr>
 <tr class="even">
 <td align="left"><p>Class GUID</p></td>
-<td align="left"><p>{B8238652-B500-41EB-B4F3-4234F7F5AE9}</p></td>
+<td align="left"><p>{B8238652-B500-41EB-B4F3-4234F7F5AE99}</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: Requirements for Accessing Attribute Memory of a PCMCIA Device
 description: Requirements for Accessing Attribute Memory of a PCMCIA Device
-ms.assetid: 8af41eb0-c057-43c9-a50f-b7d88e1bed6a
 keywords:
 - attribute memory WDK PCMCIA bus , requirements
 ms.date: 04/20/2017
@@ -32,16 +31,10 @@ Some drivers require write access to configuration registers in attribute memory
 
 A driver usually configures a device infrequently.
 
-Note that the PCMCIA bus driver manages the standard PCMCIA configuration registers in attribute memory. Drivers must not write to these registers. If they do, unpredictable system behavior can occur. System setup and the Plug and Play manager support INF file directives - for example, the [**INF LogConfig Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive) - that must be used to configure these registers.
+Note that the PCMCIA bus driver manages the standard PCMCIA configuration registers in attribute memory. Drivers must not write to these registers. If they do, unpredictable system behavior can occur. System setup and the Plug and Play manager support INF file directives - for example, the [**INF LogConfig Directive**](../install/inf-logconfig-directive.md) - that must be used to configure these registers.
 
 <a href="" id="operate-a-device"></a>**Operate a device**  
 Some PCMCIA devices use control registers located in attribute memory. Drivers must typically directly access these registers within an ISR. Accesses of this type can be relatively high in frequency, and require fast direct memory access.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: V4 Print Class Driver Rendering
 description: For rendering, the v4 printer driver can utilize the existing rendering capabilities of a Print Class driver.
-ms.assetid: F8178988-1C11-4B21-B250-6626528E0AE5
 ms.date: 07/13/2018
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ PrinterDriverID={GUID}
 DriverCategory=PrintFax.Printer
 ConstraintScript=faconst.js
 EventFile=faevents.xml
-PrinterExtensionUrl="http://www.fabrikam.com/download.asp?uiapp=120"
+PrinterExtensionUrl="https://www.fabrikam.com/download.asp?uiapp=120"
 
 [BidiFiles]
 BidiSPMFile=FABidiSPM.xml

@@ -1,7 +1,6 @@
 ---
 title: GetPortAttributesByWWN function
 description: The GetPortAttributesByWWN method retrieves the attributes for the port specified by Port Name.
-ms.assetid: 24b62b1c-9f47-40f1-aa72-849fabcbfbae
 keywords: ["GetPortAttributesByWWN function Storage Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetPortAttributesByWWN** method retrieves the attributes for the port specified by Port Name.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetPortAttributesByWWN(
@@ -32,30 +30,26 @@ void GetPortAttributesByWWN(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *wwn\[8\]*   
-The name of the port whose attributes are to be queried. This information is delivered to the miniport driver in the **wwn** member of a [**GetPortAttributesByWWN\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_in) structure.
+The name of the port whose attributes are to be queried. This information is delivered to the miniport driver in the **wwn** member of a [**GetPortAttributesByWWN\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_in) structure.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetPortAttributesByWWN\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetPortAttributesByWWN\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_out) structure.
 
 *PortAttributes*   
-A structure of type [**MSFC\_HBAPortAttributesResults**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults) in which attributes for the discovered FC\_Port may be returned. The miniport driver returns this information in the **PortAttributes** member of a [**GetDiscoveredPortAttributes\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_getdiscoveredportattributes_out) structure.
+A structure of type [**MSFC\_HBAPortAttributesResults**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults) in which attributes for the discovered FC\_Port may be returned. The miniport driver returns this information in the **PortAttributes** member of a [**GetDiscoveredPortAttributes\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getdiscoveredportattributes_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,18 +75,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**GetPortAttributesByWWN\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_in)
+[**GetPortAttributesByWWN\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_in)
 
-[**GetPortAttributesByWWN\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_out)
+[**GetPortAttributesByWWN\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_out)
 
-[**MSFC\_HBAPortAttributesResults**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults)
-
- 
+[**MSFC\_HBAPortAttributesResults**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults)
 
  
-
-
-
-
-
 

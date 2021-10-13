@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: b2ab9414-8401-4ec4-a235-f6a8da93523b
 keywords: ["get_MibErrorDscp method Print Devices", "get_MibErrorDscp method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_MibErrorDscp method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **MibErrorDscp** property enables an ASP Web page to convert a Simple Network Management Protocol (SNMP) management information base (MIB) error code into a text description of the error.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_MibErrorDscp(
@@ -33,8 +31,7 @@ HRESULT get_MibErrorDscp(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *dwError* \[in\]  
 Caller-supplied SNMP MIB error code.
@@ -42,8 +39,7 @@ Caller-supplied SNMP MIB error code.
 *pVal* \[out\]  
 Caller-supplied location to receive a pointer to a string containing a text description of the error.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -85,8 +81,7 @@ Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
 MIBErrorString = objPrinter.MibErrorDscp(ErrorCodeMIB)
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

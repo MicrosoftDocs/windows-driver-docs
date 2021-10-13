@@ -1,7 +1,6 @@
 ---
 title: SerCx2 Handling of Read and Write Requests
 description: A peripheral driver sends write (IRP_MJ_WRITE) and read (IRP_MJ_READ) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port.
-ms.assetid: 98100680-7D27-42B7-A445-C539B2DF95AD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # SerCx2 Handling of Read and Write Requests
 
 
-A peripheral driver sends write ([**IRP\_MJ\_WRITE**](https://docs.microsoft.com/previous-versions/ff546904(v=vs.85))) and read ([**IRP\_MJ\_READ**](https://docs.microsoft.com/previous-versions/ff546883(v=vs.85))) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port. The way in which SerCx2 handles these requests is well-defined, even when the requests time out or are canceled.
+A peripheral driver sends write ([**IRP\_MJ\_WRITE**](/previous-versions/ff546904(v=vs.85))) and read ([**IRP\_MJ\_READ**](/previous-versions/ff546883(v=vs.85))) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port. The way in which SerCx2 handles these requests is well-defined, even when the requests time out or are canceled.
 
 ## Cancellation of a read or write request
 
@@ -21,7 +20,7 @@ However, if the read or write request is canceled after one or more bytes of dat
 ## Requests that time out
 
 
-If a read or write request can time out if the request takes too long to process. Also, a read request can time out if the time between two successive bytes received by the serial controller exceeds some maximum allowed time. In either case, when the time-out condition is detected, SerCx2 immediately completes the request with the STATUS\_TIMEOUT status code. The completed request reports the number of bytes read or written by SerCx2 during the handling of the request. If necessary, the peripheral driver that sent the request can use this information to send a second request to finish the partially completed read or write operation. For more information about time-outs, see [**SERIAL\_TIMEOUTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ns-ntddser-_serial_timeouts).
+If a read or write request can time out if the request takes too long to process. Also, a read request can time out if the time between two successive bytes received by the serial controller exceeds some maximum allowed time. In either case, when the time-out condition is detected, SerCx2 immediately completes the request with the STATUS\_TIMEOUT status code. The completed request reports the number of bytes read or written by SerCx2 during the handling of the request. If necessary, the peripheral driver that sent the request can use this information to send a second request to finish the partially completed read or write operation. For more information about time-outs, see [**SERIAL\_TIMEOUTS**](/windows-hardware/drivers/ddi/ntddser/ns-ntddser-_serial_timeouts).
 
 ## Impact of hardware limitations
 
@@ -34,9 +33,4 @@ Typically, SerCx2 accurately reports the number of bytes transferred by a read o
 In response to a read or write request to transfer zero bytes, SerCx2 completes the request with a STATUS\_SUCCESS status code but performs no operation.
 
  
-
- 
-
-
-
 

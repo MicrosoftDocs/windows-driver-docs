@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MAXIMUM_TOTAL_SIZE
 description: As a query, the OID_GEN_MAXIMUM_TOTAL_SIZE OID specifies the maximum total packet length, in bytes, the NIC supports.
-ms.assetid: 4973b4bd-58a5-4242-b33f-1ff8c3a7ec4b
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MAXIMUM_TOTAL_SIZE Network Drivers Starting with Windows Vista
@@ -30,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
-The returned length specifies the largest packet size for the underlying medium. Thus, the returned length depends on the particular medium. A protocol driver might use this returned length as a gauge to determine the maximum size packet that a miniport driver could forward to the protocol driver. If the protocol driver preallocates buffers, it allocates buffers accordingly. The returned length also specifies the largest packet that a protocol driver can pass to the [**NdisSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissendnetbufferlists) function.
+The returned length specifies the largest packet size for the underlying medium. Thus, the returned length depends on the particular medium. A protocol driver might use this returned length as a gauge to determine the maximum size packet that a miniport driver could forward to the protocol driver. If the protocol driver preallocates buffers, it allocates buffers accordingly. The returned length also specifies the largest packet that a protocol driver can pass to the [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) function.
 
-If the miniport driver for a NIC enables [802.1p packet priority](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff562331(v=vs.85))(that is, the miniport driver specifies the NDIS\_MAC\_OPTION\_8021P\_PRIORITY bit in the [OID\_GEN\_MAC\_OPTIONS](oid-gen-mac-options.md) OID bitmask), then the miniport driver must specify its maximum total packet length as 4 bytes less than the maximum size of packets received or sent over the network. For example, if a NIC that has 802.1p packet priority enabled receives and sends packets on the wire that are 1514 bytes in length, the miniport driver for the NIC must report its maximum total packet length as 1510 bytes. The miniport driver must never indicate up to the bound protocol driver packets received over the network that are longer than the packet size specified by OID\_GEN\_MAXIMUM\_TOTAL\_SIZE. That is, even if the miniport driver receives packets over the network that are not marked with priority values but are still the maximum size that the underlying medium supports, the miniport driver can only indicate up packets that are no longer than the size specified by OID\_GEN\_MAXIMUM\_TOTAL\_SIZE.
+If the miniport driver for a NIC enables [802.1p packet priority](/previous-versions/windows/hardware/network/ff562331(v=vs.85))(that is, the miniport driver specifies the NDIS\_MAC\_OPTION\_8021P\_PRIORITY bit in the [OID\_GEN\_MAC\_OPTIONS](oid-gen-mac-options.md) OID bitmask), then the miniport driver must specify its maximum total packet length as 4 bytes less than the maximum size of packets received or sent over the network. For example, if a NIC that has 802.1p packet priority enabled receives and sends packets on the wire that are 1514 bytes in length, the miniport driver for the NIC must report its maximum total packet length as 1510 bytes. The miniport driver must never indicate up to the bound protocol driver packets received over the network that are longer than the packet size specified by OID\_GEN\_MAXIMUM\_TOTAL\_SIZE. That is, even if the miniport driver receives packets over the network that are not marked with priority values but are still the maximum size that the underlying medium supports, the miniport driver can only indicate up packets that are no longer than the size specified by OID\_GEN\_MAXIMUM\_TOTAL\_SIZE.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -56,14 +53,9 @@ Requirements
 ## See also
 
 
-[**NdisSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissendnetbufferlists)
+[**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists)
 
 [OID\_GEN\_MAC\_OPTIONS](oid-gen-mac-options.md)
 
  
-
- 
-
-
-
 

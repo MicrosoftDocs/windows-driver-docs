@@ -1,7 +1,6 @@
 ---
-title: list
+title: list (WinDbg)
 description: The list extension executes the specified debugger commands repeatedly, once for every element in a linked list.
-ms.assetid: 763742f3-1cb8-4263-861b-b9d01483245e
 keywords: ["list Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,8 +77,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-Remarks
--------
+## Remarks
 
 The **!list** extension will go through the linked list and issue the specified command once for each list element.
 

@@ -1,7 +1,6 @@
 ---
 title: RemovePort function
 description: The RemovePort WMI method configures the WMI provider so that it stops passing events associated with the indicated port to the WMI client.
-ms.assetid: 6e466a89-273b-4ed9-a0fe-5a8df745b28a
 keywords: ["RemovePort function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The **RemovePort** WMI method configures the WMI provider so that it stops passing events associated with the indicated port to the WMI client.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void RemovePort(
@@ -30,27 +28,23 @@ void RemovePort(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN*   
 A worldwide name that indicates the port that should be removed from the list of ports whose events are reported to the WMI client.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**RemovePort\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_removeport_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**RemovePort\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removeport_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_EventControl WMI Class](msfc-eventcontrol-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -72,16 +66,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**RemovePort\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_removeport_in)
+[**RemovePort\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removeport_in)
 
-[**RemovePort\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_removeport_out)
-
- 
+[**RemovePort\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removeport_out)
 
  
-
-
-
-
-
 

@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 1e90649a-6075-4b78-93fd-781c3e363b5f
 keywords: ["get_MediaReady method Print Devices", "get_MediaReady method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_MediaReady method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **MediaReady** property enables an ASP Web page to obtain a set of strings that name all of the paper forms for the printer that are currently available for use.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_MediaReady(
@@ -32,14 +30,12 @@ HRESULT get_MediaReady(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied location to receive a pointer to a set of strings that name all of the paper forms for a printer that are currently available for use.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -72,7 +68,7 @@ This property returns one of the values in the following table.
 
 ## VBScript Example
 
-This method obtains a list of the names of the paper forms that are currently available for use by calling the printer driver's [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_MEDIAREADY flag set.
+This method obtains a list of the names of the paper forms that are currently available for use by calling the printer driver's [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_MEDIAREADY flag set.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::MediaReady** property can be queried.
 
@@ -84,8 +80,7 @@ objPrinter.Open strPrinter
 MediaReadyArray = objPrinter.MediaReady
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -102,6 +97,6 @@ Requirements
 
 ## See also
 
-[**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities)
+[**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities)
 
 [**Iasphelp::Open**](iasphelp-open.md)

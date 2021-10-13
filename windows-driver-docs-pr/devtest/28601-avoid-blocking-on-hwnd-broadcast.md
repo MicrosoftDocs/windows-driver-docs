@@ -1,7 +1,6 @@
 ---
-title: C28601
+title: C28601 warning
 description: Warning C28601 Avoid blocking on HWND_BROADCAST.
-ms.assetid: 51fc27da-012a-4cf3-adbf-bd7f7c497b01
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 f1_keywords: 

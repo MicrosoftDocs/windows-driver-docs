@@ -1,7 +1,6 @@
 ---
 title: dl (Display Linked List)
 description: The dl command displays a LIST_ENTRY or SINGLE_LIST_ENTRY linked list.
-ms.assetid: fbf03e78-d4b3-4dd9-904b-3f44a1a86cff
 keywords: ["dl (Display Linked List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,8 +65,7 @@ Size of each element. This is the number of consecutive ULONG\_PTRs that will be
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 This list must be a LIST\_ENTRY or SINGLE\_LIST\_ENTRY structure. If this is embedded in a larger structure, be sure that *Address* points to the linked list structure and not to the beginning of the outer structure.
 

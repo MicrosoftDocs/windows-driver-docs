@@ -1,7 +1,6 @@
 ---
 title: Connecting a KMDF Driver to GPIO I/O Pins
 description: How a kernel-mode driver framework (KMDF) driver for a peripheral device can obtain a description of the GPIO I/O resource. 
-ms.assetid: 02F6431C-7B55-4DFB-9792-4A72F0268C76
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -54,7 +53,7 @@ NTSTATUS
 }
 ```
 
-In the preceding code example, the `DeviceExtension` variable is a pointer to the device context for the peripheral device. The `XyzDrvGetDeviceExtension` function, which retrieves this device context, is implemented by the peripheral device driver. This driver previously registered its [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function by calling the [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method.
+In the preceding code example, the `DeviceExtension` variable is a pointer to the device context for the peripheral device. The `XyzDrvGetDeviceExtension` function, which retrieves this device context, is implemented by the peripheral device driver. This driver previously registered its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function by calling the [**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method.
 
 The following code example shows how the peripheral device driver can use the GPIO resource description that it obtained in the previous code example to open a WDFIOTARGET handle to the driver's GPIO I/O resource.
 
@@ -106,7 +105,7 @@ NTSTATUS IoRoutine(WDFDEVICE Device, BOOLEAN ReadOperation)
 
 In the preceding code example, the `Device` variable is a WDFDEVICE handle to the framework device object for the peripheral device. The **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** function creates a string that contains the name of the GPIO I/O resource. The code example uses this string to open the GPIO I/O resource by name.
 
-After the peripheral device driver has obtained a handle to a GPIO I/O resource, this driver can send I/O control requests to read data from or write data to the GPIO pins. A driver that opens a GPIO I/O resource for reads uses [**IOCTL\_GPIO\_READ\_PINS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpio/ni-gpio-ioctl_gpio_read_pins) I/O control requests to read data from the pins in the resource. A driver that opens a GPIO I/O resource for writes uses [**IOCTL\_GPIO\_WRITE\_PINS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpio/ni-gpio-ioctl_gpio_write_pins) I/O control requests to write data to the pins in the resource. The following code example shows how to perform a GPIO read or write operation.
+After the peripheral device driver has obtained a handle to a GPIO I/O resource, this driver can send I/O control requests to read data from or write data to the GPIO pins. A driver that opens a GPIO I/O resource for reads uses [**IOCTL\_GPIO\_READ\_PINS**](/windows-hardware/drivers/ddi/gpio/ni-gpio-ioctl_gpio_read_pins) I/O control requests to read data from the pins in the resource. A driver that opens a GPIO I/O resource for writes uses [**IOCTL\_GPIO\_WRITE\_PINS**](/windows-hardware/drivers/ddi/gpio/ni-gpio-ioctl_gpio_write_pins) I/O control requests to write data to the pins in the resource. The following code example shows how to perform a GPIO read or write operation.
 
 ```cpp
     WDF_OBJECT_ATTRIBUTES RequestAttributes;
@@ -187,14 +186,9 @@ In the preceding code example, `Data` is a pointer to a data buffer, `Size` is t
 ## For more information
 
 
-For more information about **IOCTL\_GPIO\_READ\_PINS** requests, including the mapping of data input pins to the bits in the request output buffer, see [**IOCTL\_GPIO\_READ\_PINS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpio/ni-gpio-ioctl_gpio_read_pins). For more information about **IOCTL\_GPIO\_WRITE\_PINS** requests, including the mapping of the bits in the request input buffer to data output pins, see [**IOCTL\_GPIO\_WRITE\_PINS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpio/ni-gpio-ioctl_gpio_write_pins).
+For more information about **IOCTL\_GPIO\_READ\_PINS** requests, including the mapping of data input pins to the bits in the request output buffer, see [**IOCTL\_GPIO\_READ\_PINS**](/windows-hardware/drivers/ddi/gpio/ni-gpio-ioctl_gpio_read_pins). For more information about **IOCTL\_GPIO\_WRITE\_PINS** requests, including the mapping of the bits in the request input buffer to data output pins, see [**IOCTL\_GPIO\_WRITE\_PINS**](/windows-hardware/drivers/ddi/gpio/ni-gpio-ioctl_gpio_write_pins).
 
 For a sample driver that shows how to write a GPIO peripheral driver that runs in kernel mode, see the SimDevice sample driver in the [GPIO sample drivers](https://go.microsoft.com/fwlink/p/?LinkId=616032) collection on GitHub.
 
  
-
- 
-
-
-
 

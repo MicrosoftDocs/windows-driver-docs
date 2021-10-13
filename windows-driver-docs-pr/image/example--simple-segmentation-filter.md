@@ -1,7 +1,6 @@
 ---
 title: Example Simple Segmentation Filter
 description: Example Simple Segmentation Filter
-ms.assetid: 9c77fea4-61d9-4bec-8d8d-35436d00c1ed
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-The following code example shows how a simple segmentation filter can be implemented. The segmentation filter in the example does not use the [**WIA\_IPS\_DESKEW\_X**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-deskew-x) and [**WIA\_IPS\_DESKEW\_Y**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-deskew-y) properties. For clarity, error checking code has been omitted.
+The following code example shows how a simple segmentation filter can be implemented. The segmentation filter in the example does not use the [**WIA\_IPS\_DESKEW\_X**](./wia-ips-deskew-x.md) and [**WIA\_IPS\_DESKEW\_Y**](./wia-ips-deskew-y.md) properties. For clarity, error checking code has been omitted.
 
 ```cpp
 typedef struct _SUB_RECT
@@ -106,9 +105,4 @@ SegFilter::DetectRegions(IN IStream  *pInputStream,
 ```
 
  
-
- 
-
-
-
 

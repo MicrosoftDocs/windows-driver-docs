@@ -1,7 +1,6 @@
 ---
 title: Stream Inspection
 description: Stream Inspection
-ms.assetid: 77e152bf-cb6b-4845-9a5e-9c37281f23f1
 keywords:
 - stream inspection WDK Windows Filtering Platform
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## Inline Stream Inspection
 
 
-Inline stream modifiers can edit stream data by permitting or blocking a part of the indicated data by setting the value of the **countBytesEnforced** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure as they return **FWP\_ACTION\_PERMIT** or **FWP\_ACTION\_BLOCK** from the [*classifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function. They can also call the [**FwpsStreamInjectAsync0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsstreaminjectasync0) function to add new content to the stream. This content can be new or can replace blocked data.
+Inline stream modifiers can edit stream data by permitting or blocking a part of the indicated data by setting the value of the **countBytesEnforced** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure as they return **FWP\_ACTION\_PERMIT** or **FWP\_ACTION\_BLOCK** from the [*classifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function. They can also call the [**FwpsStreamInjectAsync0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0) function to add new content to the stream. This content can be new or can replace blocked data.
 
 To replace a pattern found in the middle of an indicated segment (for example, *n* bytes followed by a pattern of *p* bytes followed by *m* bytes), the callout would follow these steps:
 
@@ -30,22 +29,22 @@ To replace a pattern found in the middle of an indicated segment (for example, *
 
 6.  The callout returns **FWP\_ACTION\_BLOCK** with **countBytesEnforced** set to *m*.
 
-If the indicated data is insufficient for the callout to make an inspection decision, it can set the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_NEED\_MORE\_DATA** and set the **countBytesRequired** member to the minimal amount WFP should accumulate before the data is indicated again. When **streamAction** is set, the callout should return **FWP\_ACTION\_NONE** from the *classifyFn* function.
+If the indicated data is insufficient for the callout to make an inspection decision, it can set the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_NEED\_MORE\_DATA** and set the **countBytesRequired** member to the minimal amount WFP should accumulate before the data is indicated again. When **streamAction** is set, the callout should return **FWP\_ACTION\_NONE** from the *classifyFn* function.
 
 WFP can accumulate up to 8 MB of stream data when **FWPS\_STREAM\_ACTION\_NEED\_MORE\_DATA** is set. WFP will set the **FWPS\_CLASSIFY\_OUT\_FLAG\_BUFFER\_LIMIT\_REACHED** flag when it calls the callout's *classifyFn* function and the buffer space is exhausted. When the latter flag is set, the callout must accept the indicated data in full. A callout must not return **FWPS\_STREAM\_ACTION\_NEED\_MORE\_DATA** when the **FWPS\_CLASSIFY\_OUT\_FLAG\_NO\_MORE\_DATA** flag is set.
 
-For the convenience of being able to scan a stream pattern from a flat buffer, WFP provides the [**FwpsCopyStreamDataToBuffer0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpscopystreamdatatobuffer0) utility function, which can copy indicated stream data into a contiguous buffer.
+For the convenience of being able to scan a stream pattern from a flat buffer, WFP provides the [**FwpsCopyStreamDataToBuffer0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscopystreamdatatobuffer0) utility function, which can copy indicated stream data into a contiguous buffer.
 
 ## Out-of-Band Stream Inspection
 
 
-For out-of-band inspection or modification, a stream callout would follow the similar pattern as the packet inspection callout: it would first clone all indicated stream segments for deferred processing, and then it would block those segments. The inspected or modified data is later injected back into the data stream. When injecting data out-of-band, the callout must return **FWP\_ACTION\_BLOCK** on all indicated segments to guarantee integrity of the resulting stream. An out-of-band inspection module must not arbitrarily inject a FIN (which indicates no more data from the sender) into an outgoing data stream. If the module must drop the connection, its *classifyFn* callout function must set the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_DROP\_CONNECTION**.
+For out-of-band inspection or modification, a stream callout would follow the similar pattern as the packet inspection callout: it would first clone all indicated stream segments for deferred processing, and then it would block those segments. The inspected or modified data is later injected back into the data stream. When injecting data out-of-band, the callout must return **FWP\_ACTION\_BLOCK** on all indicated segments to guarantee integrity of the resulting stream. An out-of-band inspection module must not arbitrarily inject a FIN (which indicates no more data from the sender) into an outgoing data stream. If the module must drop the connection, its *classifyFn* callout function must set the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_DROP\_CONNECTION**.
 
-Because stream data can be indicated as a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) chain, FWP provides the [**FwpsCloneStreamData0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsclonestreamdata0) and [**FwpsDiscardClonedStreamData0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsdiscardclonedstreamdata0) utility functions that operate on net buffer list chains.
+Because stream data can be indicated as a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) chain, FWP provides the [**FwpsCloneStreamData0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsclonestreamdata0) and [**FwpsDiscardClonedStreamData0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsdiscardclonedstreamdata0) utility functions that operate on net buffer list chains.
 
-WFP also supports stream data throttling for the incoming direction. If a callout cannot keep pace with the incoming data rate, it can return **FWPS\_STREAM\_ACTION\_DEFER** to "pause" the stream. The stream can then be "resumed" by calling the [**FwpsStreamContinue0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsstreamcontinue0) function. Deferring a stream with this function causes the TCP/IP stack to stop ACK-processing incoming data. This causes the TCP sliding window to decrease toward 0.
+WFP also supports stream data throttling for the incoming direction. If a callout cannot keep pace with the incoming data rate, it can return **FWPS\_STREAM\_ACTION\_DEFER** to "pause" the stream. The stream can then be "resumed" by calling the [**FwpsStreamContinue0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreamcontinue0) function. Deferring a stream with this function causes the TCP/IP stack to stop ACK-processing incoming data. This causes the TCP sliding window to decrease toward 0.
 
-For out-of-band stream inspection callouts, [**FwpsStreamContinue0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsstreamcontinue0) must not be called while the **FwpsStreamInjectAsync0** function is called.
+For out-of-band stream inspection callouts, [**FwpsStreamContinue0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreamcontinue0) must not be called while the **FwpsStreamInjectAsync0** function is called.
 
 Injected stream data will not be re-indicated to the callout, but it will be made available to stream callouts from lower-weight sublayers.
 
@@ -54,21 +53,21 @@ The [Windows Filtering Platform Stream Edit Sample](https://go.microsoft.com/fwl
 **Note**  Windows Server 2008 and later do not support removal of a stream filter during the following processes:
 -   The callout is performing out-of-band packet injection.
 
--   The callout is requesting more data by setting the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_NEED\_MORE\_DATA**.
+-   The callout is requesting more data by setting the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_NEED\_MORE\_DATA**.
 
--   The callout is deferring a stream by setting the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_DEFER**.
+-   The callout is deferring a stream by setting the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_DEFER**.
 
  
 
 ## Dynamic Stream Inspection
 
 
-Windows 7 and later support dynamic stream inspections. A dynamic stream inspection operates on an existing stream data flow, rather than creating and tearing down a new one. A callout driver that can perform dynamic stream inspections should set the **FWP\_CALLOUT\_FLAG\_ALLOW\_MID\_STREAM\_INSPECTION** flag in the **Flags** member of the [**FWPS\_CALLOUT1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_callout1_) or [**FWPS\_CALLOUT2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_callout2_) structure.
+Windows 7 and later support dynamic stream inspections. A dynamic stream inspection operates on an existing stream data flow, rather than creating and tearing down a new one. A callout driver that can perform dynamic stream inspections should set the **FWP\_CALLOUT\_FLAG\_ALLOW\_MID\_STREAM\_INSPECTION** flag in the **Flags** member of the [**FWPS\_CALLOUT1**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout1_) or [**FWPS\_CALLOUT2**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout2_) structure.
 
 ## Avoiding Unnecessary Inspections
 
 
-To perform stream inspections only on connections that the driver is interested in, a callout can set the **FWP\_CALLOUT\_FLAG\_CONDITIONAL\_ON\_FLOW** flag in the **Flags** member of the [**FWPS\_CALLOUT0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_callout0_) structure. This callout will be ignored on all other connections. Performance will be improved and the driver will not have to maintain unnecessary state data.
+To perform stream inspections only on connections that the driver is interested in, a callout can set the **FWP\_CALLOUT\_FLAG\_CONDITIONAL\_ON\_FLOW** flag in the **Flags** member of the [**FWPS\_CALLOUT0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout0_) structure. This callout will be ignored on all other connections. Performance will be improved and the driver will not have to maintain unnecessary state data.
 
 ## Stream Layer Waterfall Model
 
@@ -80,10 +79,4 @@ Moreover:
 2. The **FWPS\_RIGHT\_ACTION\_WRITE** flag in the **rights** member of the *classifyOut* parameter has no significance in the WFP stream layer. Callouts at this layer should not check for the presence of this flag. Callouts may process the indicated *layerData* parameter regardless of the value of *classifyOut*->**rights**.
 
  
-
- 
-
-
-
-
 

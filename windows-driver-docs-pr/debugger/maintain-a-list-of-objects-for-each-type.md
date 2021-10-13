@@ -1,7 +1,6 @@
 ---
 title: Maintain a list of objects for each type
 description: Maintain a list of objects for each type
-ms.assetid: 845ba6cb-60b3-4053-9d54-f43ed344f82d
 keywords: ["Maintain a list of objects for each type (global flag)"]
 ms.date: 10/25/2018
 ms.localizationpriority: medium
@@ -44,17 +43,11 @@ The **Maintain a list of objects for each type** flag collects and maintains a l
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-To display the object list, use the sysinternals tool [Handle](https://docs.microsoft.com/sysinternals/downloads/handle).
+To display the object list, use the sysinternals tool [Handle](/sysinternals/downloads/handle).
 
 **Note**   The linked lists created when you set this flag use eight bytes of overhead for each object. Remember to clear this flag when your analysis is complete.
 
  
 
  
-
- 
-
-
-
-
 

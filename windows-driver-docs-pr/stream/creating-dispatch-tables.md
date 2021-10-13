@@ -1,7 +1,6 @@
 ---
 title: Creating Dispatch Tables
 description: Creating Dispatch Tables
-ms.assetid: 0771aeac-68b2-4dec-8887-a0b313899ce8
 keywords:
 - BDA minidrivers WDK AVStream , dispatch tables
 - dispatch tables WDK AVStream
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-You must create a filter dispatch table for a filter descriptor ([**KSFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksfilter_descriptor)) of a BDA minidriver so that the network provider filter can open and initialize an instance of the filter and later release the filter instance. You must also create a pin dispatch table for each pin descriptor ([**KSPIN\_DESCRIPTOR\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin_descriptor_ex)) in the array of pin types that are available in the filter's template topology. The network provider filter uses a pin dispatch table to open and initialize a pin and later release the pin. The following code snippet shows examples of filter and pin dispatch tables:
+You must create a filter dispatch table for a filter descriptor ([**KSFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor)) of a BDA minidriver so that the network provider filter can open and initialize an instance of the filter and later release the filter instance. You must also create a pin dispatch table for each pin descriptor ([**KSPIN\_DESCRIPTOR\_EX**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_descriptor_ex)) in the array of pin types that are available in the filter's template topology. The network provider filter uses a pin dispatch table to open and initialize a pin and later release the pin. The following code snippet shows examples of filter and pin dispatch tables:
 
 ```cpp
 //
@@ -58,9 +57,4 @@ AntennaPinDispatch =
 ```
 
  
-
- 
-
-
-
 

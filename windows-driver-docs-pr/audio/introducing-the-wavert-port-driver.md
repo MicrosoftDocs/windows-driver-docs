@@ -1,7 +1,6 @@
 ---
 title: Introducing the WaveRT Port Driver
 description: Introducing the WaveRT Port Driver
-ms.assetid: 48b2b59e-385e-4814-ac20-c4b1a08f32dc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,11 +16,11 @@ The improved performance of the WaveRT port driver includes the following charac
 
 -   A glitch-resilient audio stream
 
-Like the WaveCyclic and WavePci port drivers in earlier versions of Microsoft Windows, the WaveRT port driver provides the generic functionality for a [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/kernel-streaming) (KS) filter. The WaveRT port driver provides support for audio devices that can do the following:
+Like the WaveCyclic and WavePci port drivers in earlier versions of Microsoft Windows, the WaveRT port driver provides the generic functionality for a [kernel streaming](../stream/kernel-streaming.md) (KS) filter. The WaveRT port driver provides support for audio devices that can do the following:
 
 -   They can connect to a system bus, for example the PCI Express bus.
 
--   They can playback or record wave data (audio data that is described by a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) or [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-waveformatextensible) structure).
+-   They can playback or record wave data (audio data that is described by a [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) or [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure).
 
 -   They can use the improved scheduling support that is available in Windows Vista, to reduce the latency of an audio stream.
 
@@ -30,9 +29,4 @@ If you want your audio device to take advantage of the improvements in audio off
 The main client of the WaveRT port driver is the audio engine running in shared mode. For more information about the Windows Vista audio engine, see the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic.
 
  
-
- 
-
-
-
 

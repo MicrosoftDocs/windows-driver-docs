@@ -1,7 +1,6 @@
 ---
 title: USBCAMD2 Camera Configurations
 description: USBCAMD2 Camera Configurations
-ms.assetid: 9a0dd6f9-aefb-4134-8bd5-31420a16db4a
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
 - Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 Minidrivers to support USB cameras can be clients of the *stream.sys* class driver on their upper end and the USB bus driver on their lower end, as shown in the following diagram.
 
-![diagram illustrating usb camera minidriver models](images/usbimdev.png)
+![diagram illustrating usb camera minidriver models.](images/usbimdev.png)
 
 In the group **A** configuration of the diagram, the minidriver writer must interface to the *stream.sys* class driver, the camera, and the USB bus. In the goup **B** configuration, a minidriver written to use USBCAMD2 needs only to contain the code that is device-specific. That is, if you use USBCAMD2, you can focus on implementing support for video formats, property sets, image decompression, and color space conversion. The USBCAMD2 minidriver library controls the connection to the *stream.sys* class driver and the USB bus driver, thereby simplifying the process of developing a camera minidriver.
 
@@ -26,7 +25,7 @@ Although USBCAMD2 interfaces with the *stream.sys* class driver, which is now ob
 
 The primary purpose of USBCAMD2 is to support streaming video cameras, such as webcams. However, USBCAMD2 also provides support to use USB bulk and interrupt transfer pipes to capture still images sent from the camera. This feature supports USB cameras with snapshot capability to capture still frames.
 
-If your camera primarily streams video, and optionally provides snapshot capability, then you need only to write a USBCAMD2 minidriver. Vendors of hybrid cameras (cameras that primarily take still photos, but that can also stream video) write a USBCAMD2 minidriver to support the streaming capability, and a separate Windows Image Acquisition (WIA) still camera driver to support still image storage and management. For more information about WIA and supporting digital cameras that capture still images, see [Windows Image Acquisition Drivers](https://docs.microsoft.com/windows-hardware/drivers/image/windows-image-acquisition-drivers).
+If your camera primarily streams video, and optionally provides snapshot capability, then you need only to write a USBCAMD2 minidriver. Vendors of hybrid cameras (cameras that primarily take still photos, but that can also stream video) write a USBCAMD2 minidriver to support the streaming capability, and a separate Windows Image Acquisition (WIA) still camera driver to support still image storage and management. For more information about WIA and supporting digital cameras that capture still images, see [Windows Image Acquisition Drivers](../image/windows-image-acquisition-drivers.md).
 
 The USBCAMD2 library supports cameras that use a combination of isochronous pipe(s), bulk I/O pipe(s) and/or an interrupt pipe to transfer data streams and control settings. USBCAMD2 supports cameras that implement the following USB pipe configurations:
 
@@ -40,16 +39,11 @@ The USBCAMD2 library supports cameras that use a combination of isochronous pipe
 
 -   Two bulk I/O pipes and an optional interrupt pipe. One bulk pipe streams video and the other bulk pipe transfers still images. The optional interrupt pipe signals notification of external trigger events to registered applications.
 
-**Note**   USBCAMD2 supports cameras with a single USB interface that has multiple alternate settings. All alternate settings must have the same type and number of pipes. You specify this information in an array of type [**USBCAMD\_Pipe\_Config\_Descriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/ns-usbcamdi-_pipe_config_descriptor) that you pass to [*CamConfigureEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-pcam_configure_routine_ex) when you initialize and configure the camera.
+**Note**   USBCAMD2 supports cameras with a single USB interface that has multiple alternate settings. All alternate settings must have the same type and number of pipes. You specify this information in an array of type [**USBCAMD\_Pipe\_Config\_Descriptor**](/windows-hardware/drivers/ddi/usbcamdi/ns-usbcamdi-_pipe_config_descriptor) that you pass to [*CamConfigureEx*](/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-pcam_configure_routine_ex) when you initialize and configure the camera.
 
  
 
 Whereas USB 1.1 devices can be connected to a USB 2.0 bus, USBCAMD2 supports only USB 1.1 camera devices and is therefore limited to the maximum throughput of the USB 1.1 bus (for example, isochronous data transfer in *full*-speed mode). USBCAMD2 does not support the USB 2.0 *high*-speed mode for isochronous data transfer. However, if a camera implements bulk pipes only, then it could benefit from being connected to a USB 2.0 bus where there is more available bulk transfer bandwidth.
 
  
-
- 
-
-
-
 

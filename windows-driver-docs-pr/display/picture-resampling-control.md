@@ -1,7 +1,6 @@
 ---
 title: Picture Resampling Control
 description: Picture Resampling Control
-ms.assetid: 08d74812-3393-4461-91c4-644ecc5ad428
 keywords:
 - picture resampling WDK DirectX VA
 - spatial scalable video coding WDK DirectX VA
@@ -23,13 +22,7 @@ Picture resampling is performed as specified in H.263 Annex O Spatial Scalabilit
 
 Note that picture resampling control does not require a connection configuration. Its operation requires only support of the appropriate restricted mode GUID. Because no connection configuration is needed for picture resampling control, no minimal interoperability set must be defined for its operation.
 
-A single buffer type defined in the [**DXVA\_PicResample**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_picresample) structure controls the resampling process.
+A single buffer type defined in the [**DXVA\_PicResample**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_picresample) structure controls the resampling process.
 
  
-
- 
-
-
-
-
 

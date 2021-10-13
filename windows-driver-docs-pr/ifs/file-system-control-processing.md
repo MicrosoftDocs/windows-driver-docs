@@ -1,7 +1,6 @@
 ---
 title: File System Control Processing
 description: File System Control Processing
-ms.assetid: 95a610c8-b48c-4fff-bf1f-f9fb6abb0fd9
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , control processing
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_file_system_control_processing_if"></span><span id="DDK_FILE_SYSTEM_CONTROL_PROCESSING_IF"></span>
 
 
-Handling the [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-file-system-control) operation is different from the data buffer handling required by other operations within the file system. This is because each operation establishes its specific data transfer mechanism for the I/O manager as part of its control code by means of the CTL\_CODE macro. In addition, the control code specifies the file access that is required by the caller. A file system should be particularly cognizant of this issue when defining the control code, because this access is enforced by the I/O manager. Some I/O control codes (FSCTL\_MOVE\_FILE , for example) specify FILE\_SPECIAL\_ACCESS, which is a mechanism for allowing the file system to indicate that the operation's security will be checked by the file system directly. FILE\_SPECIAL\_ACCESS is numerically equivalent to FILE\_ANY\_ACCESS, so the I/O manager does not provide any specific security checks, deferring instead to the file system. FILE\_SPECIAL\_ACCESS mainly provides documentation that additional checks will be made by the file system.
+Handling the [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](./irp-mj-file-system-control.md) operation is different from the data buffer handling required by other operations within the file system. This is because each operation establishes its specific data transfer mechanism for the I/O manager as part of its control code by means of the CTL\_CODE macro. In addition, the control code specifies the file access that is required by the caller. A file system should be particularly cognizant of this issue when defining the control code, because this access is enforced by the I/O manager. Some I/O control codes (FSCTL\_MOVE\_FILE , for example) specify FILE\_SPECIAL\_ACCESS, which is a mechanism for allowing the file system to indicate that the operation's security will be checked by the file system directly. FILE\_SPECIAL\_ACCESS is numerically equivalent to FILE\_ANY\_ACCESS, so the I/O manager does not provide any specific security checks, deferring instead to the file system. FILE\_SPECIAL\_ACCESS mainly provides documentation that additional checks will be made by the file system.
 
 Several file system operations specify FILE\_SPECIAL\_ACCESS. The FSCTL\_MOVE\_FILE operation is used as part of the defragmentation interface for file systems and it specifies FILE\_SPECIAL\_ACCESS. Since you want to be able to defragment open files that are actively being read and written, the handle to be used has only FILE\_READ\_ATTRIBUTES granted access to avoid share access conflicts. However, this operation needs to be a privileged operation as the disk is being modified on a low level. The solution is to verify that the handle used to issue the FSCTL\_MOVE\_FILE is a direct-access storage device (DASD) user volume open, which is a privileged handle. The FASTFAT file system code that ensures this operation is being done against a user volume open is in the **FatMoveFile** function (see the fsctrl.c source file from the fastfat sample that the WDK contains):
 
@@ -47,7 +46,7 @@ typedef struct {
 } MOVE_FILE_DATA, *PMOVE_FILE_DATA;
 ```
 
-As previously noted, the handle used to issue the FSCTL\_MOVE\_FILE is an "open" operation of the entire volume, while the operation actually applies to the file handle specified in the MOVE\_FILE\_DATA input buffer. This makes the security checks for this operation somewhat complex. For example, this interface must convert the file handle to a file object that represents the file being moved. This requires careful consideration on the part of any driver. FASTFAT does this using [**ObReferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obfreferenceobject) in a guarded fashion in the **FatMoveFile** function in the fsctrl.c source file in the fastfat sample that the WDK contains:
+As previously noted, the handle used to issue the FSCTL\_MOVE\_FILE is an "open" operation of the entire volume, while the operation actually applies to the file handle specified in the MOVE\_FILE\_DATA input buffer. This makes the security checks for this operation somewhat complex. For example, this interface must convert the file handle to a file object that represents the file being moved. This requires careful consideration on the part of any driver. FASTFAT does this using [**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) in a guarded fashion in the **FatMoveFile** function in the fsctrl.c source file in the fastfat sample that the WDK contains:
 
 ```cpp
     //
@@ -110,9 +109,4 @@ For any file system, correct security is an essential part of file system contro
 In many cases, the code necessary to perform proper validation and security can constitute a substantial portion of the code within the given function.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Predictive Failure Analysis (PFA)
 description: Predictive Failure Analysis (PFA)
-ms.assetid: d2ded330-edcc-4bdd-9b52-73c1961d8ef2
 keywords:
 - Windows Hardware Error Architecture WDK , predictive failure analysis
 - Windows Hardware Error Architecture WDK , PFA
@@ -27,14 +26,6 @@ For an overview of how WHEA performs PFA, see [PFA Performed by WHEA](pfa-perfor
 
 A [platform-specific hardware error driver (PSHED) plug-in driver](platform-specific-hardware-error-driver-plug-ins2.md) can also perform PFA on ECC memory. In this way, the plug-in (not WHEA) must monitor ECC memory pages. For more information about how PSHED plug-ins perform PFA, see [PFA Performed by a PSHED Plug-In](pfa-performed-by-a-pshed-plug-in.md).
 
-When PFA predicts an ECC memory page will fail, it saves (or *persists*) the results in the Boot Configuration Data (BCD) system store. For more information about this process, see [Persistence of PFA Results](persistence-of-pfa-results.md).
+When PFA predicts an ECC memory page will fail, it saves (or *persists*) the results in the Boot Configuration Data (BCD) system store. For more information about this process, see [Persistence of PFA Results](./how-to-manage-the-pfa-memory-list.md).
 
 WHEA supports PFA on Windows 7 and later versions of Windows.
-
- 
-
- 
-
-
-
-

@@ -1,7 +1,6 @@
 ---
-title: ks.kshelp
+title: ks.kshelp (WinDbg)
 description: The ks.kshelp extension displays a help text showing original KS 1.0-specific Ks.dll extension commands.
-ms.assetid: 672446ad-74a0-4caa-9801-eafef80929cb
 keywords: ["ks.kshelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

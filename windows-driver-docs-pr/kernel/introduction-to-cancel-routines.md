@@ -1,7 +1,6 @@
 ---
 title: Introduction to Cancel Routines
 description: Introduction to Cancel Routines
-ms.assetid: 99f7f045-2b2f-4fb3-ac1c-99ab76fa46ad
 keywords: ["canceling IRPs, about canceling IRPs", "Cancel routines, about Cancel routines", "associated IRP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Any driver in which IRPs can be held in a pending state for an indefinite interval must have one or more [*Cancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_cancel) routines. For example, a keyboard driver might wait indefinitely for a user to press a key. Conversely, if a driver will never queue more IRPs than it can complete in five minutes, it probably does not need a *Cancel* routine.
+Any driver in which IRPs can be held in a pending state for an indefinite interval must have one or more [*Cancel*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routines. For example, a keyboard driver might wait indefinitely for a user to press a key. Conversely, if a driver will never queue more IRPs than it can complete in five minutes, it probably does not need a *Cancel* routine.
 
 Suppose a user-mode thread makes an I/O request, which is queued by a highest-level device driver's dispatch routine, and the requesting thread is terminated while the IRP is queued. IRPs queued on behalf of a terminated thread should be canceled. Consequently, the driver must set a driver-supplied *Cancel* routine in each IRP that it queues.
 
@@ -34,9 +33,4 @@ Some highest-level drivers for interactive devices, such as keyboard, mouse, sou
 Mass-storage device drivers, along with intermediate drivers layered over them, are unlikely to have *Cancel* routines. It is the responsibility of a file system driver to handle the cancellation of file I/O requests, while the IRPs input to lower-level mass-storage drivers are usually processed to completion too quickly to be cancelable.
 
  
-
- 
-
-
-
 

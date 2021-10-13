@@ -1,7 +1,6 @@
 ---
 title: GDL Exercise 3 Creating Root-Level Constructs
 description: GDL Exercise 3 Creating Root-Level Constructs
-ms.assetid: 3c7ad284-b77c-4ad3-8334-2fe5b026e340
 keywords:
 - GDL WDK , examples
 - examples WDK GDL

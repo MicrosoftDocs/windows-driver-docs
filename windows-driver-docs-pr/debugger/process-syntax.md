@@ -1,7 +1,6 @@
 ---
 title: Process Syntax
 description: Process Syntax
-ms.assetid: fe08b5fe-ec27-4264-baee-de4c11bcb2bf
 keywords: ["process, command syntax", "(process identifier)", "process, process identifier ( )", "process, process ID (PID)", "PID (process ID)", "(process identifier)", "syntax rules for commands, (process identifier)", "syntax rules for commands, (process identifier)", "process identifier ( )"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -64,7 +63,7 @@ The current process defines the memory space and the set of threads that are use
 
 Process identifiers are used as parameters in several commands, frequently as the command prefix. Note that WinDbg and CDB can debug child processes that the original process created. WinDbg and CDB can also attach to multiple unrelated processes.
 
-An example of the |\[*Expression*\] syntax would be \[|@$t0\]. In this example, the process changes depending on the value of a user-defined pseudo-register. This syntax allows debugger scripts to programmatically select a process.
+An example of the |\[*Expression*\] syntax would be |\[@$t0\]. In this example, the process changes depending on the value of a user-defined pseudo-register. This syntax allows debugger scripts to programmatically select a process.
 
 ### <span id="controlling_processes_in_kernel_mode"></span><span id="CONTROLLING_PROCESSES_IN_KERNEL_MODE"></span>Controlling Processes in Kernel Mode
 

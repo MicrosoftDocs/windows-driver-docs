@@ -1,7 +1,6 @@
 ---
 title: Run-Down Protection
 description: Starting with Windows XP, run-down protection is available to kernel-mode drivers. Drivers can use run-down protection to safely access objects in shared system memory that are created and deleted by another kernel-mode driver.
-ms.assetid: AF451636-DBA0-4905-9723-73EE7AA9483E
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -18,13 +17,13 @@ The driver that owns the shared object can enable other drivers to acquire and r
 ## Primary run-down protection routines
 
 
-To start sharing an object, the driver that owns the object calls the [**ExInitializeRundownProtection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializerundownprotection) routine to initialize run-down protection on the object. After this call, other drivers that access the object can acquire and release run-down protection on the object.
+To start sharing an object, the driver that owns the object calls the [**ExInitializeRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializerundownprotection) routine to initialize run-down protection on the object. After this call, other drivers that access the object can acquire and release run-down protection on the object.
 
-A driver that accesses the shared object calls the [**ExAcquireRundownProtection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirerundownprotection) routine to request run-down protection on the object. After the access is finished, this driver calls the [**ExReleaseRundownProtection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleaserundownprotection) routine to release run-down protection on the object.
+A driver that accesses the shared object calls the [**ExAcquireRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirerundownprotection) routine to request run-down protection on the object. After the access is finished, this driver calls the [**ExReleaseRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaserundownprotection) routine to release run-down protection on the object.
 
 If the owning driver determines that the shared object must be deleted, this driver waits to delete the object until all outstanding accesses of the object are finished.
 
-In preparation to delete the shared object, the owning driver calls the [**ExWaitForRundownProtectionRelease**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exwaitforrundownprotectionrelease) routine to wait for the object to run down. During this call, **ExWaitForRundownProtectionRelease** waits for all previously granted instances of run-down protection on the object to be released, but prevents new requests for run-down protection on the object from being granted. After the last protected access finishes and all instances of run-down protection are released, **ExWaitForRundownProtectionRelease** returns, and the owning driver can safely delete the object.
+In preparation to delete the shared object, the owning driver calls the [**ExWaitForRundownProtectionRelease**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exwaitforrundownprotectionrelease) routine to wait for the object to run down. During this call, **ExWaitForRundownProtectionRelease** waits for all previously granted instances of run-down protection on the object to be released, but prevents new requests for run-down protection on the object from being granted. After the last protected access finishes and all instances of run-down protection are released, **ExWaitForRundownProtectionRelease** returns, and the owning driver can safely delete the object.
 
 **ExWaitForRundownProtectionRelease** blocks the execution of the calling driver thread until all drivers that hold run-down protection on the shared object release this protection. To prevent **ExWaitForRundownProtectionRelease** from blocking execution for excessively long periods, drivers threads that access the shared object should avoid being suspended while they hold run-down protection on the object. For this reason, accessing drivers should call **ExAcquireRundownProtection** and **ExReleaseRundownProtection** within a critical region or guarded region, or while running at IRQL = APC\_LEVEL.
 
@@ -40,7 +39,7 @@ Run-down protection does not serialize accesses to a shared object. If two or mo
 ## The EX\_RUNDOWN\_REF structure
 
 
-An [**EX\_RUNDOWN\_REF**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure tracks the status of run-down protection on a shared object. This structure is opaque to drivers. The system-supplied run-down protection routines use this structure to count the number of instances of run-down protection that are currently in effect on the object. These routines also use this structure to track whether the object is run down or is in the process of being run down.
+An [**EX\_RUNDOWN\_REF**](./eprocess.md) structure tracks the status of run-down protection on a shared object. This structure is opaque to drivers. The system-supplied run-down protection routines use this structure to count the number of instances of run-down protection that are currently in effect on the object. These routines also use this structure to track whether the object is run down or is in the process of being run down.
 
 To start sharing an object, the driver that owns the object calls **ExInitializeRundownProtection** to initialize the **EX\_RUNDOWN\_REF** structure associated with the object. After initialization, the owning driver can make this structure available to other drivers that require access to the object. The accessing drivers pass this structure as a parameter to the **ExAcquireRundownProtection** and **ExReleaseRundownProtection** calls that acquire and release run-down protection on the object. The owning driver passes this structure as a parameter to the **ExWaitForRundownProtectionRelease** call that waits for the object to run down so that it can be safely deleted.
 
@@ -56,16 +55,11 @@ In contrast to locks, run-down protection has relatively lightweight processing 
 
 Several other run-down protection routines are available, in addition to those that were mentioned previously. These additional routines might used by some drivers.
 
-The [**ExReInitializeRundownProtection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreinitializerundownprotection) routine enables a previously used [**EX\_RUNDOWN\_REF**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure to be associated with a new object, and initializes run-down protection on this object.
+The [**ExReInitializeRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializerundownprotection) routine enables a previously used [**EX\_RUNDOWN\_REF**](./eprocess.md) structure to be associated with a new object, and initializes run-down protection on this object.
 
-The [**ExRundownCompleted**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exrundowncompleted) routine updates the **EX\_RUNDOWN\_REF** structure to indicate that the run down of the associated object has completed.
+The [**ExRundownCompleted**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exrundowncompleted) routine updates the **EX\_RUNDOWN\_REF** structure to indicate that the run down of the associated object has completed.
 
-The [**ExAcquireRundownProtectionEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirerundownprotectionex) and [**ExReleaseRundownProtectionEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleaserundownprotectionex) routines are similar to [**ExAcquireRundownProtection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirerundownprotection) and [**ExReleaseRundownProtection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleaserundownprotection). These four routines increment or decrement the count of the instances of run-down protection that are in effect on a shared object. Whereas **ExAcquireRundownProtection** and **ExReleaseRundownProtection** increment and decrement this count by one, **ExAcquireRundownProtectionEx** and **ExReleaseRundownProtectionEx** increment and decrement the count by arbitrary amounts.
-
- 
+The [**ExAcquireRundownProtectionEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirerundownprotectionex) and [**ExReleaseRundownProtectionEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaserundownprotectionex) routines are similar to [**ExAcquireRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirerundownprotection) and [**ExReleaseRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaserundownprotection). These four routines increment or decrement the count of the instances of run-down protection that are in effect on a shared object. Whereas **ExAcquireRundownProtection** and **ExReleaseRundownProtection** increment and decrement this count by one, **ExAcquireRundownProtectionEx** and **ExReleaseRundownProtectionEx** increment and decrement the count by arbitrary amounts.
 
  
-
-
-
 

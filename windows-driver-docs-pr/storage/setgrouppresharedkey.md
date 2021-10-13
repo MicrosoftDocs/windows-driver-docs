@@ -1,7 +1,6 @@
 ---
 title: SetGroupPresharedKey
 description: SetGroupPresharedKey
-ms.assetid: 7dedcc62-4ad6-42d5-a461-b0a69c9c97cd
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -17,15 +16,9 @@ The **SetGroupPresharedKey** method configures an initiator to use the default p
 
 After the **SetGroupPresharedKey** method specifies the default key, the initiator should store this key in nonvolatile storage if nonvolatile storage is available. But the initiator should also keep the key in working memory, so that it will be quickly available during IKE phase 1 negotiation. This improves the efficiency of the key exchange.
 
-**SetGroupPresharedKey** belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **SetGroupPresharedKey** method, see the member descriptions for the [**SetGroupPresharedKey\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_setgrouppresharedkey_in) and [**SetGroupPresharedKey\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_setgrouppresharedkey_out) structures.
+**SetGroupPresharedKey** belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **SetGroupPresharedKey** method, see the member descriptions for the [**SetGroupPresharedKey\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setgrouppresharedkey_in) and [**SetGroupPresharedKey\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setgrouppresharedkey_out) structures.
 
 Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support **SetGroupPresharedKey**.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration in an IHV Driver
 description: Autoconfiguration in an IHV Driver
-ms.assetid: 81febae0-6fab-4226-9e98-7705d606caf4
 keywords:
 - IHV driver autoconfiguration WDK printer
 - autoconfiguration WDK printer , IHV drivers
@@ -15,9 +14,9 @@ ms.localizationpriority: medium
 
 A standalone IHV driver that supports autoconfiguration must meet the following requirements:
 
-1.  Follow the Microsoft [bidi communications schema](https://docs.microsoft.com/windows-hardware/drivers/print/bidi-communications-schema-reference) and the [bidi communication interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index) described in the Windows SDK documentation.
+1.  Follow the Microsoft [bidi communications schema](./bidi-communications-schema-reference.md) and the [bidi communication interfaces](/windows-hardware/drivers/ddi/_print/index) described in the Windows SDK documentation.
 
-2.  Support the PRINTER\_EVENT\_CONFIGURATION\_UPDATE printer event in the [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvprinterevent) function.
+2.  Support the PRINTER\_EVENT\_CONFIGURATION\_UPDATE printer event in the [**DrvPrinterEvent**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent) function.
 
 3.  Be aware of the bidi notification schema's ability to understand received notifications. See [Bidi Communications Schema](bidirectional-communication-schema.md).
 
@@ -26,9 +25,4 @@ A standalone IHV driver that supports autoconfiguration must meet the following 
  
 
  
-
- 
-
-
-
 

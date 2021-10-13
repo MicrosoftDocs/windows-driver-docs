@@ -1,7 +1,6 @@
 ---
 title: j (Execute If - Else)
 description: The j command conditionally executes one of the specified commands, depending on the evaluation of a given expression.
-ms.assetid: c6bb2415-e888-458b-8fb9-9d50b90cc531
 keywords: ["j (Execute If - Else) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,8 +59,7 @@ The command string to be executed if the expression in *Expression* evaluates to
 
  
 
-Remarks
--------
+## Remarks
 
 You cannot add a semicolon or additional commands after the **j** command. If a semicolon appears after *Command2*, everything after the semicolon is ignored.
 

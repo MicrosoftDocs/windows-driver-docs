@@ -1,7 +1,6 @@
 ---
 title: Updates for Windows DDK
 description: Updates for Windows DDK
-ms.assetid: 6e0ac7f6-8072-4688-b195-58625a9f2284
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

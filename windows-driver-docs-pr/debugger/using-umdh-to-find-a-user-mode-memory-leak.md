@@ -1,7 +1,6 @@
 ---
 title: Using UMDH to Find a User-Mode Memory Leak
 description: Using UMDH to Find a User-Mode Memory Leak
-ms.assetid: b15ed695-3f35-4a72-93ab-3cbfd2e33980
 keywords: ["memory leak, user-mode, UMDH", "UMDH, memory leak detection"]
 ms.date: 08/16/2018
 ms.localizationpriority: medium
@@ -24,7 +23,7 @@ Before using UMDH to display the stack trace data, you must use [GFlags](gflags.
 
 The following GFlags settings enable UMDH stack traces:
 
--   In the GFlags graphical interface, choose the Image File tab, type the process name (including the file name extension), press the TAB key, select **Create user mode stack trace database**, and then click **Apply**.
+-   In the GFlags graphical interface, choose the Image File tab, type the process name (including the file name extension), press the TAB key, select **Create user mode stack trace database**, and then select **Apply**.
 
     Or, equivalently, use the following GFlags command line, where *ImageName* is the process name (including the file name extension):
 
@@ -38,7 +37,7 @@ The following GFlags settings enable UMDH stack traces:
     ```
     
 
--   By default, the amount of stack trace data that Windows gathers is limited to 32 MB on an x86 processor, and 64 MB on an x64 processor. If you must increase the size of this database, choose the **Image File** tab in the GFlags graphical interface, type the process name, press the TAB key, check the **Stack Backtrace (Megs)** check box, type a value (in MB) in the associated text box, and then click **Apply**. Increase this database only when necessary, because it may deplete limited Windows resources. When you no longer need the larger size, return this setting to its original value.
+-   By default, the amount of stack trace data that Windows gathers is limited to 32 MB on an x86 processor, and 64 MB on an x64 processor. If you must increase the size of this database, choose the **Image File** tab in the GFlags graphical interface, type the process name, press the TAB key, check the **Stack Backtrace (Megs)** check box, type a value (in MB) in the associated text box, and then select **Apply**. Increase this database only when necessary, because it may deplete limited Windows resources. When you no longer need the larger size, return this setting to its original value.
 
 -   If you changed any flags on the **System Registry** tab, you must restart Windows to make these changes effective. If you changed any flags on the **Image File** tab, you must restart the process to make the changes effective. Changes to the **Kernel Flags** tab are effective immediately, but they are lost the next time Windows restarts.
 

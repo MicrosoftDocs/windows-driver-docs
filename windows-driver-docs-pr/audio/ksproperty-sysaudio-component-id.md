@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID
 description: The KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID property retrieves the component ID from the wave-rendering device that the specified virtual audio device uses.
-ms.assetid: ef4a940f-dfef-43ed-8895-d318fb603e5c
 keywords: ["KSPROPERTY_SYSAUDIO_COMPONENT_ID Audio Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID property retrieves the component ID from
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a>+ULONG</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kscomponentid" data-raw-source="[&lt;strong&gt;KSCOMPONENTID&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kscomponentid)"><strong>KSCOMPONENTID</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a>+ULONG</p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid" data-raw-source="[&lt;strong&gt;KSCOMPONENTID&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid)"><strong>KSCOMPONENTID</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -63,13 +62,11 @@ The property value (operation data) is a structure of type KSCOMPONENTID that sp
 
 A KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 DirectSound does not communicate directly with the miniport driver for the audio hardware that underlies each of SysAudio's virtual audio devices. Thus, DirectSound is unable to query the wave-rendering device directly for its component-ID information. The KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID property provides a means for DirectSound to obtain this information indirectly through SysAudio.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,18 +84,8 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
-[**KSCOMPONENTID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kscomponentid)
+[**KSCOMPONENTID**](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid)
 
 [**KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT**](ksproperty-sysaudio-device-count.md)
-
- 
-
- 
-
-
-
-
-
-

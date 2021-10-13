@@ -1,7 +1,6 @@
 ---
 title: Creating Pageable Code in a KMDF Driver
 description: Creating Pageable Code in a KMDF Driver
-ms.assetid: 5c694ae2-2a16-4c2f-84b0-62e26f4121bc
 keywords:
 - pageable drivers WDK KMDF
 - KMDF WDK , pageable drivers
@@ -18,11 +17,11 @@ To help you determine whether pageable code or data is appropriate for your driv
 
 1.  Identify pageable sections in your driver.
 
-    Pageable sections are not loaded into memory until they are needed. For information about how to create pageable sections in a driver, see [Making Drivers Pageable](https://docs.microsoft.com/windows-hardware/drivers/kernel/making-drivers-pageable).
+    Pageable sections are not loaded into memory until they are needed. For information about how to create pageable sections in a driver, see [Making Drivers Pageable](../kernel/making-drivers-pageable.md).
 
 2.  Make sure that paged driver code does not impede a computer's ability to quickly awaken from a low-power state.
 
-    All device object callback functions that drivers provide are called at IRQL = PASSIVE\_LEVEL, which enables you to make their code pageable (as described in [Making Drivers Pageable](https://docs.microsoft.com/windows-hardware/drivers/kernel/making-drivers-pageable)).
+    All device object callback functions that drivers provide are called at IRQL = PASSIVE\_LEVEL, which enables you to make their code pageable (as described in [Making Drivers Pageable](../kernel/making-drivers-pageable.md)).
 
     However, you should not make a callback function's code pageable if the framework calls the callback function when the device leaves a low-power state and returns to its working (D0) state.
 
@@ -32,15 +31,9 @@ To help you determine whether pageable code or data is appropriate for your driv
 
 3.  Determine whether your driver requires access to pageable data outside the driver, such as files, the registry, or paged pool, during power transitions.
 
-    For information about how to enable and disable a driver's ability to access pageable data during power transitions, see [**WdfDeviceInitSetPowerPageable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpageable) and [**WdfDeviceInitSetPowerNotPageable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowernotpageable).
+    For information about how to enable and disable a driver's ability to access pageable data during power transitions, see [**WdfDeviceInitSetPowerPageable**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpageable) and [**WdfDeviceInitSetPowerNotPageable**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowernotpageable).
 
-    For information about how to determine when your driver is in a nonpageable state, see [**WdfDevStateIsNP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevstateisnp).
-
- 
+    For information about how to determine when your driver is in a nonpageable state, see [**WdfDevStateIsNP**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevstateisnp).
 
  
-
-
-
-
 

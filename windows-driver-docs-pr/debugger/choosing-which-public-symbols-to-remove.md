@@ -1,7 +1,6 @@
 ---
 title: Choosing Which Public Symbols to Remove
 description: Choosing Which Public Symbols to Remove
-ms.assetid: 0de89f65-ebb5-4186-a6f9-6676f86a75f1
 keywords: ["PDBCopy, removing public symbols", "symbols, AgeStore"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

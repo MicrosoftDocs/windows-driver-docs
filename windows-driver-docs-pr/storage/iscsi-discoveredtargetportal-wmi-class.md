@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_DiscoveredTargetPortal WMI Class
 description: ISCSI\_DiscoveredTargetPortal WMI Class
-ms.assetid: 0283bd12-2f14-48d6-8229-916208ae9fec
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -18,13 +17,7 @@ ISCSI\_DiscoveredTargetPortal is a superset of the information that is provided 
 
 The ISCSI\_DiscoveredTargetPortal class is unpublished and is defined in *Discover.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortal**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsifnd/ns-iscsifnd-_iscsi_discoveredtargetportal) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortal**](/windows-hardware/drivers/ddi/iscsifnd/ns-iscsifnd-_iscsi_discoveredtargetportal) data structure.
 
  
-
- 
-
-
-
-
 

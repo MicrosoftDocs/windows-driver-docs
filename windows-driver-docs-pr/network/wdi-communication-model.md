@@ -1,7 +1,6 @@
 ---
 title: Communication model, synchronization, and abort
 description: This section describes the WDI communication model, synchronization, and abort
-ms.assetid: 575D1314-8726-49C1-AE6C-C171FE1CD2AD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,15 +29,15 @@ The sequence of messages for each type of command is shown in the following figu
 
 Figure 1 shows the task command sequence.
 
-![wdi command task flow](images/wdi-command-task-flow.png)
+![wdi command task flow.](images/wdi-command-task-flow.png)
 
 Figure 2 shows the property command flow.
 
-![wdi property command flow](images/wdi-property-command-flow.png)
+![wdi property command flow.](images/wdi-property-command-flow.png)
 
 Figure 3 shows the flow for indications.
 
-![wdi indication flow](images/wdi-indication-flow.png)
+![wdi indication flow.](images/wdi-indication-flow.png)
 
 ## Synchronization
 

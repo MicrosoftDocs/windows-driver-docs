@@ -1,7 +1,6 @@
 ---
 title: Receive Side Scaling Version 2 (RSSv2)
 description: This topic describes Receive Side Scaling Version 2 (RSSv2)
-ms.assetid: 192CAA41-0D17-4C06-8F13-68EA7C26D023
 keywords: Receive Side Scaling Version 2, RSSv2, Receive Side Scaling Version 2 WDK, RSSv2 network drivers
 ms.date: 10/12/2017
 ms.localizationpriority: medium
@@ -9,9 +8,7 @@ ms.localizationpriority: medium
 
 # Receive Side Scaling Version 2 (RSSv2)
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
-
-[Receive Side Scaling](ndis-receive-side-scaling2.md) improves the system performance related to handling of network data on multiprocessor systems. NDIS 6.80 and later support RSS Version 2 (RSSv2), which extends RSS by offering dynamic, per-VPort spreading of queues.
+Receive Side Scaling improves the system performance related to handling of network data on multiprocessor systems. NDIS 6.80 and later support RSS Version 2 (RSSv2), which extends RSS by offering dynamic, per-VPort spreading of queues.
 
 ## Overview
 
@@ -28,18 +25,18 @@ This topic uses the following terms:
 | RSSv1 | The first generation receive side scaling mechanism. Uses [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md). |
 | RSSv2 | The second generation receive side scaling mechanism supported in Windows 10, version 1803 and later, described in this topic. |
 | Scaling entity| The miniport adapter itself in Native RSS mode, or a VPort in RSSv2 mode. |
-| ITE | An indirection table entry (ITE) of a given scaling entity. The total number of ITEs per VPort cannot exceed **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** in VMQ mode or 128 in the Native RSS case. **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** and **NumberOfIndirectionTableEntriesForDefaultVPort** are members of the [NDIS_NIC_SWITCH_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. |
+| ITE | An indirection table entry (ITE) of a given scaling entity. The total number of ITEs per VPort cannot exceed **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** in VMQ mode or 128 in the Native RSS case. **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** and **NumberOfIndirectionTableEntriesForDefaultVPort** are members of the [NDIS_NIC_SWITCH_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. |
 | Scaling mode | The per-VPort vmswitch policy that controls how its ITEs are handled at runtime. This can be static (no ITE moves due to load changes) or dyanmic (expansion and coalescing depending on current traffic load). |
 | Queue | An underlying hardware object (queue) that backs an ITE. Depending on the hardware and indirection table, the configuration queue may back multiple ITEs. The total number of queues, including one that is used by the default queue, cannot exceed the preconfigured limit typically set by an administrator. |
 | Default processor | A processor that receives packets for which the hash cannot be calculated. Each VPort has a default processor.
-| Primary processor | A processor specified as the **ProcessorAffinity** member of the [NDIS_NIC_SWITCH_VPORT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure during VPort creation. This processor can be updated at runtime and specifies where VMQ traffic is directed. |
+| Primary processor | A processor specified as the **ProcessorAffinity** member of the [NDIS_NIC_SWITCH_VPORT_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure during VPort creation. This processor can be updated at runtime and specifies where VMQ traffic is directed. |
 | Source CPU | The processor to which the ITE is currently mapped. |
 | Target CPU | The processor to which the ITE is being re-mapped (using RSSv2). |
 | Actor CPU | The processor on which RSSv2 requests are being made. |
 
 ## Advertising RSSv2 capability in a miniport driver
 
-Miniport drivers advertise RSSv2 support by setting the **CapabilitiesFlags** member of the [NDIS_RECEIVE_SCALE_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities) structure with the *NDIS_RSS_CAPS_SUPPORTS_INDEPENDENT_ENTRY_MOVE* flag. This capability is required to enable RSSv2's CPU load balancing feature, along with the *NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED* flag that enables RSSv1 dynamic balancing for non-default VPorts (VMQs).
+Miniport drivers advertise RSSv2 support by setting the **CapabilitiesFlags** member of the [NDIS_RECEIVE_SCALE_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities) structure with the *NDIS_RSS_CAPS_SUPPORTS_INDEPENDENT_ENTRY_MOVE* flag. This capability is required to enable RSSv2's CPU load balancing feature, along with the *NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED* flag that enables RSSv1 dynamic balancing for non-default VPorts (VMQs).
 
 > [!NOTE]
 > Upper layer protocols assume that the primary processor of the default VPort can be moved for RSSv2 miniport drivers.
@@ -64,9 +61,9 @@ Each type of NDIS driver, miniport, filter, and protocol, have entry points to s
 
 | NDIS driver type | Synchronous OID handler(s) | Function to originate Synchronous OIDs |
 | --- | --- | --- |
-| Miniport | [*MiniportSynchronousOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-miniport_synchronous_oid_request) | N/A |
-| Filter | <ul><li>[*FilterSynchronousOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-filter_synchronous_oid_request)</li><li>[*FilterSynchronousOidRequestComplete*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-filter_synchronous_oid_request_complete)</li></ul> | [**NdisFSynchronousOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsynchronousoidrequest) |
-| Protocol | N/A | [**NdisSynchronousOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissynchronousoidrequest) |
+| Miniport | [*MiniportSynchronousOidRequest*](/windows-hardware/drivers/ddi/ndis/nf-ndis-miniport_synchronous_oid_request) | N/A |
+| Filter | <ul><li>[*FilterSynchronousOidRequest*](/windows-hardware/drivers/ddi/ndis/nf-ndis-filter_synchronous_oid_request)</li><li>[*FilterSynchronousOidRequestComplete*](/windows-hardware/drivers/ddi/ndis/nf-ndis-filter_synchronous_oid_request_complete)</li></ul> | [**NdisFSynchronousOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsynchronousoidrequest) |
+| Protocol | N/A | [**NdisSynchronousOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissynchronousoidrequest) |
 
 ## RSS state transitions, ITE updates, and primary/default processors
 

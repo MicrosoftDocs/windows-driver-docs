@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CROSSBAR\_CHANGED
 description: The KSEVENT\_CROSSBAR\_CHANGED event propagates an action, such as a new routing configuration, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-ms.assetid: b67d95a3-7c30-49ae-a2df-eb88491c2e97
 keywords: ["KSEVENT_CROSSBAR_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -45,21 +44,13 @@ The KSEVENT\_CROSSBAR\_CHANGED event propagates an action, such as a new routing
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index).
-
- 
-
- 
-
-
-
-
+For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index).
 

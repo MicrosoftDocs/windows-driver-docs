@@ -1,7 +1,6 @@
 ---
-title: C28718
+title: C28718 warning
 description: Warning C28718 Unannotated buffer.
-ms.assetid: 8417AB73-B645-451D-A359-9A66A793A78D
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 
@@ -13,7 +12,7 @@ f1_keywords:
 
 warning C28718: Unannotated buffer
 
-This warning is reported when a buffer that is passed to a function or returned by a function does not have Source Code Annotation Language (SAL) annotations. Static analysis tools can use such annotations to detect buffer overruns. For information about adding annotations, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://go.microsoft.com/fwlink/p/?linkid=247283) and **Annotating Function Parameters and Return Values**.
+This warning is reported when a buffer that is passed to a function or returned by a function does not have Source Code Annotation Language (SAL) annotations. Static analysis tools can use such annotations to detect buffer overruns. For information about adding annotations, see [Using SAL Annotations to Reduce C/C++ Code Defects](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
 Currently, only non-constant string buffers are diagnosed with this warning. Ideally, all buffers passed as function parameters or returned by functions should be annotated. Arrays of **wchar\_t** or **char** are candidates for this warning. Unsigned chars currently are not.
 
@@ -35,15 +34,8 @@ int foo( _Out_writes_(cch) LPTSTR buffer, size_t cch );
 ## <span id="related_topics"></span>Related topics
 
 
-[Using SAL Annotations to Reduce C/C++ Code Defects](https://go.microsoft.com/fwlink/p/?linkid=247283)
+[Using SAL Annotations to Reduce C/C++ Code Defects](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)
 
-**Annotating Function Parameters and Return Values**
- 
 
  
-
-
-
-
-
 

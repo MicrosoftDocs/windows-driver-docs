@@ -1,5 +1,4 @@
 ---
-ms.assetid: 31CE7AE9-6444-4706-9C43-2B35038FA955
 title: How to test a driver at runtime from a Command Prompt
 description: The WDK provides device testing components that enable you to test a driver on a test computer on your network.
 ms.date: 04/20/2017
@@ -15,15 +14,14 @@ Starting in WDK 8.1, you can copy and run the HCK Test Suites on test computers 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 -   Install Visual Studio and the WDK on the computer you use for development.
--   From Visual Studio, you can configure and provision computers for testing. When you configure the test computer, the WDK driver test framework automatically enables the test computer for remote debugging and transfers the necessary test binaries and support files. If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1)
--   Although it is not recommended, you can also install the necessary test components manually. Follow the instructions to install the [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/index) and WDTF on the test computer. See [Manually installing and uninstalling TAEF on a test computer](https://docs.microsoft.com/windows-hardware/drivers/taef/getting-started#manual_install_taef) and [Manually installing WDTF on a test computer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index#manual_install_wdtf).
+-   From Visual Studio, you can configure and provision computers for testing. When you configure the test computer, the WDK driver test framework automatically enables the test computer for remote debugging and transfers the necessary test binaries and support files. If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md)
+-   Although it is not recommended, you can also install the necessary test components manually. Follow the instructions to install the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) and WDTF on the test computer. See [Manually installing and uninstalling TAEF on a test computer](../taef/getting-started.md#manually-installing-and-uninstalling-taef-on-a-test-computer) and [WDTF Quick Start](../wdtf/wdtf-quick-start-.md).
 
-Instructions
-------------
+## Instructions
 
 ### <span id="Copy_the_tests_to_the_test_computer"></span><span id="copy_the_tests_to_the_test_computer"></span><span id="COPY_THE_TESTS_TO_THE_TEST_COMPUTER"></span>Step 1: Copy the tests to the test computer
 
--   Copy the [Device Fundamentals Tests](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-fundamentals-tests) from the computer you use for development. Copy the folder %ProgramFiles%\\Windows Kits\\8.0\\Testing\\Tests\\Device Fundamentals to the test computer.
+-   Copy the [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md) from the computer you use for development. Copy the folder %ProgramFiles%\\Windows Kits\\8.0\\Testing\\Tests\\Device Fundamentals to the test computer.
 
 ### <span id="Run_the_tests"></span><span id="run_the_tests"></span><span id="RUN_THE_TESTS"></span>Step 2: Run the tests
 
@@ -33,10 +31,9 @@ The TAEF command to run the tests uses the following syntax:
 Te.exe [/name:<Test Method>] [<Test Name>.dll | <Test Name.wsc> ]  [/rebootStateFile=<file> ] [/enablewttlogging]  [/P:"DQ= <>" ]  
 ```
 
-Remarks
--------
+## Remarks
 
-You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:**_&lt;test method&gt;_) is optional. For the test names and test methods, see the [Device Fundamentals Tests](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-fundamentals-tests). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how-to-select-and-configure-the-device-fundamental-tests.md) and [Te.exe Command Options](https://docs.microsoft.com/windows-hardware/drivers/taef/te-exe-command-line-parameters) .
+You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:**_&lt;test method&gt;_) is optional. For the test names and test methods, see the [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how-to-select-and-configure-the-device-fundamental-tests.md) and [Te.exe Command Options](../taef/te-exe-command-line-parameters.md) .
 
 For example, to run all PnP tests in the Devfund\_PnPDTest.dll on a device with a specific device ID.
 
@@ -53,17 +50,8 @@ Te.exe /name:"*PNPSurpriseRemoveAndRestartDevice" Devfund_PnPDTest.dll /P:"DQ=De
 ## <span id="related_topics"></span>Related topics
 
 
-* [Device Fundamentals Tests](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-fundamentals-tests)
+* [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md)
 * [Device Fundamentals Test Parameters](how-to-select-and-configure-the-device-fundamental-tests.md)
 * [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md)
-* [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/index)
-* [Te.exe Command Options](https://docs.microsoft.com/windows-hardware/drivers/taef/te-exe-command-line-parameters)
- 
-
- 
-
-
-
-
-
-
+* [Test Authoring and Execution Framework (TAEF)](../taef/index.md)
+* [Te.exe Command Options](../taef/te-exe-command-line-parameters.md)

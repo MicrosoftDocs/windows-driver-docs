@@ -34,7 +34,6 @@ The CLUSTER\_CLUSPORT\_STATUS\_IO\_TIMEOUT\_LIVEDUMP bug check has a value of 0x
 
 
 ## Cause
------
 
 SMB client on the initiator node complains that an IO on target node is taking too long and fails all IOs with STATUS_IO_TIMEOUT.
 
@@ -46,11 +45,9 @@ Additional information is available in the dump's secondary data streams.
 
 
 ## Resolution
-----------
  
 
-## See Also
-----------
+## See Also-
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

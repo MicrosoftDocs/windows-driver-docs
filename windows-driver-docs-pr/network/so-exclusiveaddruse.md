@@ -1,7 +1,6 @@
 ---
 title: SO_EXCLUSIVEADDRUSE
 description: SO_EXCLUSIVEADDRUSE
-ms.assetid: d281086f-4d8b-4e1e-b2bd-7b0a20338222
 ms.date: 08/08/2017
 keywords: 
  -SO_EXCLUSIVEADDRUSE Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ The state of the SO\_EXCLUSIVEADDRUSE socket option determines whether the local
 
 If a WSK application sets this socket option, it must do so before the socket is bound to a local transport address.
 
-To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the state of this socket option, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -123,10 +122,9 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 The default state of this socket option is that exclusive use of the local transport address is disabled.
 
-For more information about using the SO\_EXCLUSIVEADDRUSE socket option and its impact on the sharing of local transport addresses between sockets, see [Sharing Transport Addresses](https://docs.microsoft.com/windows-hardware/drivers/network/sharing-transport-addresses).
+For more information about using the SO\_EXCLUSIVEADDRUSE socket option and its impact on the sharing of local transport addresses between sockets, see [Sharing Transport Addresses](./sharing-transport-addresses.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -146,9 +144,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_PACKET_SERVICE
 description: Miniport drivers use the NDIS_STATUS_WWAN_PACKET_SERVICE notification to inform the MB Service when packet service availability changes, including to notify of a change to the type of packet data service currently used.
-ms.assetid: 7a04b54e-e07b-43dc-ba76-086d7521ff60
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_PACKET_SERVICE Network Drivers Starting with Windows Vista
@@ -15,10 +14,9 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_PACKET\_SERVICE notification to inf
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state) structure.
+This notification uses the [**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state) structure.
 
-Remarks
--------
+## Remarks
 
 CDMA-based miniport drivers can automatically initiate packet-attach service if there is no resource allocation/release is possible and can send the event notification to the MB Service.
 
@@ -48,8 +46,7 @@ Miniport drivers should return *set* results according to the following rules:
 
 -   Never return transient states for the *set* request. Only the final states **WwanPacketServiceStateAttached** or **WwanPacketServiceStateDetached** must be returned after the successful completion of the packet service operation with WWAN\_STATUS\_SUCCESS
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -71,14 +68,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state)
+[**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state)
 
 [OID\_WWAN\_PACKET\_SERVICE](oid-wwan-packet-service.md)
 
  
-
- 
-
-
-
 

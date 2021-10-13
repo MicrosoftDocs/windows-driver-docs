@@ -1,7 +1,6 @@
 ---
 title: Using PnP Custom Notification
 description: Using PnP Custom Notification
-ms.assetid: de5562f8-07a8-4f4e-ac49-58c789bd9fde
 keywords: ["notifications WDK PnP , custom", "custom notifications WDK PnP", "notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -23,13 +22,13 @@ The programmer that defines the custom event must do the following:
 
 2.  Write code to trigger the custom event.
 
-    In kernel mode, a driver calls [**IoReportTargetDeviceChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreporttargetdevicechange) with the custom GUID and a pointer to the PDO for the device. Custom events can only be triggered from kernel mode.
+    In kernel mode, a driver calls [**IoReportTargetDeviceChange**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreporttargetdevicechange) with the custom GUID and a pointer to the PDO for the device. Custom events can only be triggered from kernel mode.
 
 A driver writer uses custom notification with a procedure like the following:
 
 1.  The driver (or application) registers for notification of the custom event.
 
-    In kernel mode, a driver calls [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification) and registers for an **EventCategoryTargetDeviceChange** on the device.
+    In kernel mode, a driver calls [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) and registers for an **EventCategoryTargetDeviceChange** on the device.
 
     In user mode, an application registers using **RegisterDeviceNotification**. See the Windows SDK for further information.
 
@@ -44,9 +43,4 @@ A driver writer uses custom notification with a procedure like the following:
     See [Guidelines for Writing PnP Notification Callback Routines](guidelines-for-writing-pnp-notification-callback-routines.md) for general guidelines for notification callback routines. In addition to those guidelines, a custom notification callback routine must not open a handle to a device from within the callback routine thread.
 
  
-
- 
-
-
-
 

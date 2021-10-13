@@ -1,7 +1,6 @@
 ---
 title: GDL Miscellaneous Macros
 description: GDL Miscellaneous Macros
-ms.assetid: d3c66bc1-815d-484b-b69b-6616d2b43069
 keywords:
 - GDL WDK , macros
 - macros WDK GDL , miscellaneous macros

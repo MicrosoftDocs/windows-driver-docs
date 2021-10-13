@@ -1,7 +1,6 @@
 ---
 title: SM\_SendCTPassThru function
 description: The SM\_SendCTPassThru WMI method sends a common transport (CT) pass-through command to the indicated port.
-ms.assetid: 437f0c79-78f6-406e-8774-79de4425bfe8
 keywords: ["SM_SendCTPassThru function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_SendCTPassThru WMI method sends a common transport (CT) pass-through command to the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendCTPassThru(
@@ -36,8 +34,7 @@ void SM_SendCTPassThru(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the HBA through which the target is accessed. This information is delivered to the miniport driver in the PortWWN member of a SendCTPassThru\_IN structure.
@@ -63,18 +60,15 @@ The size, in bytes, of the data that was actually retrieved. The miniport driver
 *ResponseBuffer*   
 The results of the common transport command. The miniport driver returns this information in the ResponseBuffer member of a SM\_SendCTPassThru\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -98,16 +92,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendCTPassThru\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_in)
+[**SM\_SendCTPassThru\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_in)
 
-[**SM\_SendCTPassThru\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_out)
-
- 
+[**SM\_SendCTPassThru\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_out)
 
  
-
-
-
-
-
 

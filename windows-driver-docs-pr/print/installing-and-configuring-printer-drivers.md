@@ -1,19 +1,14 @@
 ---
 title: Installing and Configuring Printer Drivers
-description: Installing and Configuring Printer Drivers
-ms.assetid: 77534f45-daa5-460c-97d4-0f0c3c54f4b4
+description: Describes installation and configuration of printer drivers.
 keywords:
 - installing drivers WDK printer
 - printer driver installations WDK
-ms.date: 04/20/2017
+ms.date: 08/10/2021
 ms.localizationpriority: medium
 ---
 
 # Installing and Configuring Printer Drivers
-
-
-
-
 
 This section describes installation and configuration of printer drivers. It includes the following topics:
 
@@ -24,11 +19,3 @@ This section describes installation and configuration of printer drivers. It inc
 [Installing Printers Over a Network](installing-printers-over-a-network.md)
 
 [Printer Configuration](printer-configuration.md)
-
- 
-
- 
-
-
-
-

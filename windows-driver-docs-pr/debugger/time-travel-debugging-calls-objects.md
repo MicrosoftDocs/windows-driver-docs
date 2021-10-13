@@ -5,8 +5,8 @@ ms.date: 09/25/2017
 ms.localizationpriority: medium
 ---
 
-
 # TTD Calls Objects
+
 ## Description
 *TTD Calls* objects are used to give information about function calls that occur over the course of a trace.
 
@@ -45,8 +45,6 @@ These assumptions allow queries to be made in the absence of adequate symbol inf
 
 Note that the Calls function does computation, and depending on the size of the trace, it can take a while to run. CPU usage will spike during the computation and watching CPU usage in task manager, gives an indication that the computation is progressing.  The query results are cached in memory so subsequent queries against previously queried calls are significantly faster.
 
-
-
 ## Example Usage
 
 This example shows the calls object for ucrtbase!initterm.
@@ -66,15 +64,8 @@ This example shows the calls object for ucrtbase!initterm.
         Parameters
 ```
 
-
-
-
 ## See Also
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-

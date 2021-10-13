@@ -1,5 +1,5 @@
 ---
-Description: Describes the behavior of the UCSI class extension that implements the UCSI specification in a transport agnostic way. 
+description: Describes the behavior of the UCSI class extension that implements the UCSI specification in a transport agnostic way.
 title: Write a UCSI client driver
 ms.date: 09/30/2018
 ms.localizationpriority: medium
@@ -15,47 +15,49 @@ If your system that implements Platform Policy Manager (PPM), as described in th
 
 - A non-ACPI transport, such as  USB, PCI, I2C or UART, you need to write a client driver for the controller.
 
+> [!NOTE]
 > If your USB Type-C hardware does not have the capability of handling the power delivery (PD) state machine, consider writing a USB Type-C port controller driver. For more information, see [Write a USB Type-C port controller driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
 
 Starting in Windows 10, version 1809, a new class extension for UCSI (UcmUcsiCx.sys) has been added,which implements the UCSI specification in a transport agnostic way. With minimal amount of code, your driver, which is a client to UcmUcsiCx, can communicate with the USB Type-C hardware over non-ACPI transport. This topic describes the services provided by the UCSI class extension and the expected behavior of the client driver.
 
-**Official specifications**
--   [Intel BIOS Implementation of UCSI](https://go.microsoft.com/fwlink/p/?LinkId=760658)
--   [USB 3.1 and USB Type-C specifications](https://go.microsoft.com/fwlink/p/?LinkId=699515)
--   [UCSI driver](ucsi.md)
+## Official specifications
+
+- [Intel BIOS Implementation of UCSI](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/bios-implementation-of-ucsi.html)
+- [USB 3.1 and USB Type-C specifications](https://www.usb.org/usb-type-cr-cable-and-connector-specification)
+- [UCSI driver](ucsi.md)
 
 Applies to:
 
 - Windows 10, version 1809
 
-**WDF version**
+## WDF version
 
--   KMDF version 1.27
+- KMDF version 1.27
 
+## Important APIs
 
-**Important APIs**
+[UcmUcsiCx class extensions reference](/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
 
-[UcmUcsiCx class extensions reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
-
-**Sample**
+## Sample
 
 [UcmUcsiCx client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmUcsiAcpiSample)
 
 Replace the ACPI portions with your implementation for the required bus.
 
 ## UCSI class extension architecture
+
 UCSI class extension, UcmUcsiCx, allows you to write a driver that communicates with its embedded controller by using non-ACPI transport. The controller driver is a client driver to UcmUcsiCx. UcmUcsiCx is in turn a client to USB connector manager (UCM). Hence, UcmUcsiCx does not make any policy decisions of its own. Instead, it implements policies provided by UCM. UcmUcsiCx implements state machines for handling Platform Policy Manager (PPM) notifications from the client driver and sends commands to implement UCM policy decisions, allowing for a more reliable problem detection and error handling.
 
-![UCSI class extension architecture](images/ucsicxarch.png)
+![UCSI class extension architecture.](images/ucsicxarch.png)
 
-**OS Policy Manager (OPM)**
+## OS Policy Manager (OPM)
 
 OS Policy Manager (OPM) implements the logic to interact with PPM, as described in the UCSI specification. OPM is responsible for:
 
 - Converting UCM policies into UCSI commands and UCSI notifications into UCM notifications.
 - Sending UCSI commands required for initializing PPM, detecting error, and recovery mechanisms.
 
-**Handling UCSI commands** 
+## Handling UCSI commands
 
 A typical operation involves several commands to be completed by the UCSI-complicant hardware. For example, let's consider the GET_CONNECTOR_STATUS command.
 
@@ -66,7 +68,7 @@ A typical operation involves several commands to be completed by the UCSI-compli
 5. The PPM firmware executes ACK_CC_CI and asynchronously sends a command-complete notification to the UcmUcsiCx/client driver.
 6. The UcmUcsiCx/client driver considers the GET_CONNECTOR_STATUS command to be complete.
 
-**Communication with Platform Policy Manager (PPM)**
+## Communication with Platform Policy Manager (PPM)
 
 UcmUcsiCx abstracts the details of sending UCSI commands from OPM to the PPM firmware and receiving notifications from the PPM firmware. It converts PPM commands to WDFREQUEST objects and forwards them to the client driver.
 
@@ -78,45 +80,44 @@ UcmUcsiCx abstracts the details of sending UCSI commands from OPM to the PPM fir
 
     UcmUcsiCx sends UCSI commands (through IOCTL requests) to client driver to send to the PPM firmware. The driver is responsible for completing the request after it has sent the UCSI command to the firmware.
 
-
-**Handling power transitions**
+## Handling power transitions
 
 The client driver is the power policy owner.  
 
 If the client driver enters a Dx state because of S0-Idle, WDF brings the driver to D0 when the UcmUcsiCx sends a IOCTL containing a UCSI command to the client driver's power-managed queue. The client driver in S0-Idle should reenter a powered state when there is a PPM notification from the firmware because in S0-Idle, PPM notifications are still enabled.  
 
-## Before you begin...
+## Before you begin
 
--   Determine the type of driver you need to write depending on whether your hardware or firmware implements PD state machine, and the transport.
+- Determine the type of driver you need to write depending on whether your hardware or firmware implements PD state machine, and the transport.
 
-    ![Decision for choosing the correct class extension](images/drivers-c.png)
+    ![Decision for choosing the correct class extension.](images/drivers-c.png)
     For more information, see [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md).  
 
--   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
+- Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
--   [Install](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
+- [Install](../download-the-wdk.md) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
 
-    -   The stub library, (UcmUcsiCxStub.lib). The library translates calls made by the client driver and pass them up to the class extension.
-    -   The header file, Ucmucsicx.h.
-    - The client driver runs in kernel mode and binds to  KMDF 1.27 library.
+  - The stub library, (UcmUcsiCxStub.lib). The library translates calls made by the client driver and pass them up to the class extension.
+  - The header file, Ucmucsicx.h.
+  - The client driver runs in kernel mode and binds to  KMDF 1.27 library.
 
--   Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( https://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
+- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md) written by Penny Orwick and Guy Smith.
 
 ## 1. Register your client driver with UcmUcsiCx
 
-In your [**EVT_WDF_DRIVER_DEVICE_ADD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) implementation, 
+In your [**EVT_WDF_DRIVER_DEVICE_ADD**](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) implementation.
 
-1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmUcsiDeviceInitInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
+1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmUcsiDeviceInitInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](../wdf/wdfdevice_init.md) opaque structure. The call associates the client driver with the framework.
 
-2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize.md) to register the client diver with UcmUcsiCx.
+2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize) to register the client diver with UcmUcsiCx.
 
 ## 2. Create the PPM object with UcmUcsiCx
 
-In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), after you have recieved the list of raw and translated resources, use the resources to prepare the hardware. For example, if your transport is I2C, read the hardware resources to open a communication channel. Next, create a PPM object. To create the object, you need to set certain configuration options.
+In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), after you have recieved the list of raw and translated resources, use the resources to prepare the hardware. For example, if your transport is I2C, read the hardware resources to open a communication channel. Next, create a PPM object. To create the object, you need to set certain configuration options.
 
-1. Provide a handle to the connector collection on the device. 
-   1. Create the connector collection by calling [**UcmUcsiConnectorCollectionCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectioncreate).
-   2. Enumerate the connectors on the device and add them to the collection by calling [**UcmUcsiConnectorCollectionAddConnector**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectionaddconnector)
+1. Provide a handle to the connector collection on the device.
+   1. Create the connector collection by calling [**UcmUcsiConnectorCollectionCreate**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectioncreate).
+   2. Enumerate the connectors on the device and add them to the collection by calling [**UcmUcsiConnectorCollectionAddConnector**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectionaddconnector)
 
       ```cpp
       // Create the connector collection.
@@ -137,13 +138,14 @@ In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.mic
       status = UcmUcsiConnectorCollectionAddConnector ( &ConnectorCollectionHandle,
                    &connectorInfo);
       ```
+
 2. Decide whether you want to enable the device controller.
 
 3. Configure and create the PPM object.
-   1. Initialize a [**UCMUCSI_PPM_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/ns-ucmucsippm-_ucmucsi_ppm_config) structure by providing the connector handle you created in step 1.
+   1. Initialize a [**UCMUCSI_PPM_CONFIG**](/windows-hardware/drivers/ddi/ucmucsippm/ns-ucmucsippm-_ucmucsi_ppm_config) structure by providing the connector handle you created in step 1.
    2. Set **UsbDeviceControllerEnabled** member to a boolean value determined in step 2.
    3. Set your event callbacks in WDF_OBJECT_ATTRIBUTES.
-   4. Call [**UcmUcsiPpmCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmcreate) by passing all the configured structures.
+   4. Call [**UcmUcsiPpmCreate**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmcreate) by passing all the configured structures.
 
       ```cpp
       UCMUCSIPPM ppmObject = WDF_NO_HANDLE;
@@ -159,18 +161,19 @@ In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.mic
 
       status = UcmUcsiPpmCreate(wdfDevice, UcsiPpmConfig, &attrib, &ppmObject);
       ```
-      ## 3. Set up IO queues
+
+## 3. Set up IO queues
 
 UcmUcsiCx sends UCSI commands to client driver to send to the PPM firmware. The commands are sent in form of these IOCTL requests in a WDF queue.
 
--  [IOCTL_UCMUCSI_PPM_SEND_UCSI_DATA_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_send_ucsi_data_block)
--  [IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_get_ucsi_data_block)
+- [IOCTL_UCMUCSI_PPM_SEND_UCSI_DATA_BLOCK](/windows-hardware/drivers/ddi/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_send_ucsi_data_block)
+- [IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK](/windows-hardware/drivers/ddi/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_get_ucsi_data_block)
 
-The client driver is responsible for creating and registering that queue to UcmUcsiCx by calling [**UcmUcsiPpmSetUcsiCommandRequestQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmsetucsicommandrequestqueue). The queue must be power-managed.
+The client driver is responsible for creating and registering that queue to UcmUcsiCx by calling [**UcmUcsiPpmSetUcsiCommandRequestQueue**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmsetucsicommandrequestqueue). The queue must be power-managed.
 
 UcmUcsiCx guarantees that there can be at most one outstanding request in the WDF queue. The client driver also is responsible of completing the WDF request after it has sent the UCSI command to the firmware.
 
-Typically the driver sets up queues in its implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware).
+Typically the driver sets up queues in its implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware).
 
 ```cpp
 WDFQUEUE UcsiCommandRequestQueue = WDF_NO_HANDLE;
@@ -180,8 +183,8 @@ WDF_IO_QUEUE_CONFIG queueConfig;
 WDF_OBJECT_ATTRIBUTES_INIT(&attrib);
 attrib.ParentObject = GetObjectHandle();
 
-// In this example, even though the driver creates a sequential queue, 
-// UcmUcsiCx guarantees that will not send another request 
+// In this example, even though the driver creates a sequential queue,
+// UcmUcsiCx guarantees that will not send another request
 // until the previous one has been completed.
 
 
@@ -197,24 +200,24 @@ status = WdfIoQueueCreate(device, &queueConfig, &attrib, &UcsiCommandRequestQueu
 UcmUcsiPpmSetUcsiCommandRequestQueue(ppmObject, UcsiCommandRequestQueue);
 ```
 
-Also, the client driver must also call [**UcmUcsiPpmStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmstart) to notify UcmUcsiCx that the driver is ready to receive the IOCTL requests.  We recommend that you make that call in your in [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) after creating the WDFQUEUE handle for receiving UCSI commands, through [**UcmUcsiPpmSetUcsiCommandRequestQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmsetucsicommandrequestqueue).
-Conversely, when the driver does not want to process any more requests, it must call [**UcmUcsiPpmStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmstop). Do this is in your [**EVT_WDF_DEVICE_RELEASE_HARDWARE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) implementation.
+Also, the client driver must also call [**UcmUcsiPpmStart**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmstart) to notify UcmUcsiCx that the driver is ready to receive the IOCTL requests.  We recommend that you make that call in your in [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) after creating the WDFQUEUE handle for receiving UCSI commands, through [**UcmUcsiPpmSetUcsiCommandRequestQueue**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmsetucsicommandrequestqueue).
+Conversely, when the driver does not want to process any more requests, it must call [**UcmUcsiPpmStop**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmstop). Do this is in your [**EVT_WDF_DEVICE_RELEASE_HARDWARE**](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) implementation.
 
 ## 4. Handle the IOCTL requests
 
 Consider this example sequence of the events that occurs when a USB Type-C partner is attached to a connector.
 
 1. PPM firmware determines an attach event and sends a notification to the client driver.
-2. Client driver calls [**UcmUcsiPpmNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmnotification) to send that notification to UcmUcsiCx.
+2. Client driver calls [**UcmUcsiPpmNotification**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmnotification) to send that notification to UcmUcsiCx.
 3. UcmUcsiCx notfies the OPM state machine and it sends a Get Connector Status command to UcmUcsiCx.
-4. UcmUcsiCx creates a request and sends [IOCTL_UCMUCSI_PPM_SEND_UCSI_DATA_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_send_ucsi_data_block) to the client driver.
+4. UcmUcsiCx creates a request and sends [IOCTL_UCMUCSI_PPM_SEND_UCSI_DATA_BLOCK](/windows-hardware/drivers/ddi/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_send_ucsi_data_block) to the client driver.
 5. The client driver processes that request and sends the command to the PPM firmware. The driver completes this request asynchronously and sends another notification to UcmUcsiCx.
 6. On successful command complete notification, the OPM state machine reads the payload (containing connector status info) and notifies UCM of the Type-C attach event.
 
 In this example, the payload also indicated that a change in power delivery negotiation status between the firmware and the port partner was successful. The OPM state machine sends another UCSI command: Get PDOs.
 Similar to Get Connector Status command, when Get PDOs command completes successfully, the OPM state machine notifies UCM of this event.
 
-The client driver's handler for [EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control) is similar to this example code. For information about handling requests, see [Request Handlers](https://docs.microsoft.com/windows-hardware/drivers/wdf/request-handlers)
+The client driver's handler for [EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control) is similar to this example code. For information about handling requests, see [Request Handlers](../wdf/request-handlers.md)
 
 ```cpp
 void EvtIoDeviceControl(

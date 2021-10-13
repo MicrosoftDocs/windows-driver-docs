@@ -1,7 +1,6 @@
 ---
 title: Multiplex ID Management
 description: Multiplex ID Management
-ms.assetid: feffc421-bd51-4174-80a4-1f9a36355667
 keywords:
 - RDBSS WDK file systems , multiplex ID
 - Redirected Drive Buffering Subsystem WDK file systems , multiplex ID
@@ -32,7 +31,7 @@ The two primary operations that need to be handled well are:
 
 -   Generating a new MID for sending requests to the server. This routine will be used at the client for enforcement of maximum connection limits as well as for tagging each concurrent request with a unique ID.
 
-The MID must be able to efficiently manage the unique tagging and identification of a number of MIDs (typically 50) from a possible combination of 65,536 values. In some cases, it might make sense to create a small MID\_ATLAS structure to save kernel memory used by the MID\_MAP structure and expand the size of the MID\_ATLAS structure if needed to efficiently handle greater usage. To ensure a proper time-space tradeoff, the lookup is organized as a three-level hierarchy. The 16 bits used to represent a MID are split up into three-bitfields. The length of the right-most field (least significant ) is decided by the maximum number of MIDs that are allowed in the initial atlas. This maximum value is a parameter passed to the [**RxCreateMidAtlas**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxcreatemidatlas) routine when the MID\_ATLAS data structure is first created. This maximum value determines the initial size of the MID\_ATLAS data structure that is created and how many MID\_MAP data structures can be accommodated. The remaining length is split up equally between the next two fields, which determine the maximum size of possible subordinate MID\_ATLAS structures that can be defined to expand and extend an existing MID\_ATLAS into a three-level hierarchy of MID\_MAP data structures. So, each MID\_ATLAS data structure can contain the maximum number of MID\_MAP structures or a pointer to one subordinate MID\_ATLAS and the MID\_MAP structures.
+The MID must be able to efficiently manage the unique tagging and identification of a number of MIDs (typically 50) from a possible combination of 65,536 values. In some cases, it might make sense to create a small MID\_ATLAS structure to save kernel memory used by the MID\_MAP structure and expand the size of the MID\_ATLAS structure if needed to efficiently handle greater usage. To ensure a proper time-space tradeoff, the lookup is organized as a three-level hierarchy. The 16 bits used to represent a MID are split up into three-bitfields. The length of the right-most field (least significant ) is decided by the maximum number of MIDs that are allowed in the initial atlas. This maximum value is a parameter passed to the [**RxCreateMidAtlas**](/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxcreatemidatlas) routine when the MID\_ATLAS data structure is first created. This maximum value determines the initial size of the MID\_ATLAS data structure that is created and how many MID\_MAP data structures can be accommodated. The remaining length is split up equally between the next two fields, which determine the maximum size of possible subordinate MID\_ATLAS structures that can be defined to expand and extend an existing MID\_ATLAS into a three-level hierarchy of MID\_MAP data structures. So, each MID\_ATLAS data structure can contain the maximum number of MID\_MAP structures or a pointer to one subordinate MID\_ATLAS and the MID\_MAP structures.
 
 For example, if a maximum of 50 MIDs are allocated on creation , the length of the first field is 6 (64 ( 2 \*\* 6 ) is greater than 50 ). The remaining length is split into two fields of 5 bits each for the second and third hierarchical levels so that an existing MID\_ATLAS data structure can be expanded to accommodate more MID\_MAP entries.
 
@@ -51,38 +50,31 @@ RDBSS provides the following routines for creating and manipulating a MID\_ATLAS
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxassociatecontextwithmid" data-raw-source="[&lt;strong&gt;RxAssociateContextWithMid&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxassociatecontextwithmid)"><strong>RxAssociateContextWithMid</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxassociatecontextwithmid" data-raw-source="[&lt;strong&gt;RxAssociateContextWithMid&lt;/strong&gt;](/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxassociatecontextwithmid)"><strong>RxAssociateContextWithMid</strong></a></p></td>
 <td align="left"><p>This routine associates the supplied opaque context with an available MID from a MID_ATLAS structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxcreatemidatlas" data-raw-source="[&lt;strong&gt;RxCreateMidAtlas&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxcreatemidatlas)"><strong>RxCreateMidAtlas</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxcreatemidatlas" data-raw-source="[&lt;strong&gt;RxCreateMidAtlas&lt;/strong&gt;](/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxcreatemidatlas)"><strong>RxCreateMidAtlas</strong></a></p></td>
 <td align="left"><p>This routine allocates a new instance of the MID_ATLAS data structure and initializes it.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxdestroymidatlas" data-raw-source="[&lt;strong&gt;RxDestroyMidAtlas&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxdestroymidatlas)"><strong>RxDestroyMidAtlas</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxdestroymidatlas" data-raw-source="[&lt;strong&gt;RxDestroyMidAtlas&lt;/strong&gt;](/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxdestroymidatlas)"><strong>RxDestroyMidAtlas</strong></a></p></td>
 <td align="left"><p>This routine destroys an existing instance of a MID_ATLAS data structure and frees the memory allocated to it. As a side effect it invokes the passed in context destructor on every valid context in the MID_ATLAS structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxmapmidtocontext" data-raw-source="[&lt;strong&gt;RxMapMidToContext&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxmapmidtocontext)"><strong>RxMapMidToContext</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxmapmidtocontext" data-raw-source="[&lt;strong&gt;RxMapMidToContext&lt;/strong&gt;](/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxmapmidtocontext)"><strong>RxMapMidToContext</strong></a></p></td>
 <td align="left"><p>This routine maps a MID to its associated context in a MID_ATLAS structure.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxmapanddissociatemidfromcontext" data-raw-source="[&lt;strong&gt;RxMapAndDissociateMidFromContext&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxmapanddissociatemidfromcontext)"><strong>RxMapAndDissociateMidFromContext</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxmapanddissociatemidfromcontext" data-raw-source="[&lt;strong&gt;RxMapAndDissociateMidFromContext&lt;/strong&gt;](/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxmapanddissociatemidfromcontext)"><strong>RxMapAndDissociateMidFromContext</strong></a></p></td>
 <td align="left"><p>This routine maps a MID to its associated context in a MID_ATLAS structure and then disassociates the MID from the context.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxreassociatemid" data-raw-source="[&lt;strong&gt;RxReassociateMid&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/midatlax/nf-midatlax-rxreassociatemid)"><strong>RxReassociateMid</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxreassociatemid" data-raw-source="[&lt;strong&gt;RxReassociateMid&lt;/strong&gt;](/windows-hardware/drivers/ddi/midatlax/nf-midatlax-rxreassociatemid)"><strong>RxReassociateMid</strong></a></p></td>
 <td align="left"><p>This routine reassociates a MID with an alternate context.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
- 
-
- 
-
-
-
 

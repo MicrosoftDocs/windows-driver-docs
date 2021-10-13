@@ -1,7 +1,6 @@
 ---
-title: rebase
+title: rebase (WinDbg)
 description: The rebase extension searches in a rebase.log file for a specified address or symbol.
-ms.assetid: 811e7ab8-301f-433a-bfc4-8a4e5f002b30
 keywords: ["rebase Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

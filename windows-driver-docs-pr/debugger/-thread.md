@@ -1,9 +1,8 @@
 ---
-title: thread
+title: thread (WinDbg)
 description: The thread extension displays summary information about a thread on the target system, including the ETHREAD block. This command can be used only during kernel-mode debugging.
-ms.assetid: 5d3cf2f7-02bf-4a94-b542-826ad2b66a6f
 keywords: ["thread Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 07/19/2021
 topic_type:
 - apiref
 api_name:
@@ -59,10 +58,9 @@ Kdexts.dll
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about threads in kernel mode, see [Changing Contexts](changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
+For information about threads in kernel mode, see [Changing Contexts](changing-contexts.md) and [Controlling Processes and Threads](controlling-processes-and-threads.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich, Alex Ionescu and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example using Windows 10:
 

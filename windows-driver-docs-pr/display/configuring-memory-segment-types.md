@@ -1,7 +1,6 @@
 ---
 title: Configuring Memory Segment Types
 description: Configuring Memory Segment Types
-ms.assetid: a1fed4d6-60ae-42f2-9be0-98b667953606
 keywords:
 - memory segments WDK display , configuring
 - memory segments WDK display , types

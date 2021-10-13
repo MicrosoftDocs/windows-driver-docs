@@ -1,7 +1,6 @@
 ---
 title: DVD Decoder Related Clock Events
 description: DVD Decoder Related Clock Events
-ms.assetid: c3ed0ee4-95a3-4596-9f29-86397b0d8753
 keywords:
 - DVD decoder minidrivers WDK , master clock
 - decoder minidrivers WDK DVD , master clock
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-Any DVD decoder minidriver stream that supports a master clock for DVD playback must also support the following two clock events: [**KSEVENT\_CLOCK\_POSITION\_MARK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-clock-position-mark) and [**KSEVENT\_CLOCK\_INTERVAL\_MARK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-clock-interval-mark). These events provide reference information to any component in the system when they need to synchronize any time during DVD playback. The GUID for the event set is [**KSEVENTSETID\_Clock**](https://docs.microsoft.com/windows-hardware/drivers/stream/kseventsetid-clock).
+Any DVD decoder minidriver stream that supports a master clock for DVD playback must also support the following two clock events: [**KSEVENT\_CLOCK\_POSITION\_MARK**](./ksevent-clock-position-mark.md) and [**KSEVENT\_CLOCK\_INTERVAL\_MARK**](./ksevent-clock-interval-mark.md). These events provide reference information to any component in the system when they need to synchronize any time during DVD playback. The GUID for the event set is [**KSEVENTSETID\_Clock**](./kseventsetid-clock.md).
 
 The DVD decoder minidriver should check for outstanding clock events. Typical implementations might examine all clock events on interrupts generated for each video start code, or on interrupts generated for VSYNC. The following events are provided.
 
@@ -36,7 +35,7 @@ The DVD decoder minidriver should check for outstanding clock events. Typical im
 <tbody>
 <tr class="odd">
 <td><p>KSEVENT_CLOCK_POSITION_MARK</p></td>
-<td><p>This event provides notification that a specified stream time has been exceeded. This event is signaled using the <em>SignalStreamEvent</em> parameter to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassstreamnotification" data-raw-source="[&lt;strong&gt;StreamClassStreamNotification&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassstreamnotification)"><strong>StreamClassStreamNotification</strong></a> function. After this call has been made, the <strong>KSEVENT_ENTRY</strong> structure may not be used for any further function calls, including calls to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassgetnextevent" data-raw-source="[&lt;strong&gt;StreamClassGetNextEvent&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassgetnextevent)"><strong>StreamClassGetNextEvent</strong></a> function.</p></td>
+<td><p>This event provides notification that a specified stream time has been exceeded. This event is signaled using the <em>SignalStreamEvent</em> parameter to the <a href="/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification" data-raw-source="[&lt;strong&gt;StreamClassStreamNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification)"><strong>StreamClassStreamNotification</strong></a> function. After this call has been made, the <strong>KSEVENT_ENTRY</strong> structure may not be used for any further function calls, including calls to the <a href="/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassgetnextevent" data-raw-source="[&lt;strong&gt;StreamClassGetNextEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassgetnextevent)"><strong>StreamClassGetNextEvent</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p>KSEVENT_CLOCK_INTERVAL_MARK</p></td>
@@ -46,11 +45,4 @@ The DVD decoder minidriver should check for outstanding clock events. Typical im
 </table>
 
  
-
- 
-
- 
-
-
-
 

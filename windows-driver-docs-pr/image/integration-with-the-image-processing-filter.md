@@ -1,7 +1,6 @@
 ---
 title: Integration with the Image Processing Filter
 description: Integration with the Image Processing Filter
-ms.assetid: ae5c6209-c95a-424c-9151-caeb8e6b3f8c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,11 +16,11 @@ Similarly, the Image Processing Filter can give a stream to the driver so that d
 
 This situation is shown graphically in the following figures. The first figure illustrates a stream-based data transfer when the Image Processing Filter is not used.
 
-![diagram illustrating an istream transfer without the image-processing filter](images/streamtrans-no-filter.png)
+![diagram illustrating an istream transfer without the image-processing filter.](images/streamtrans-no-filter.png)
 
 The second figure illustrates stream-based data transfer when the Image Processing Filter is used.
 
-![diagram illustrating an istream transfer with the image-processing filter](images/streamtrans-with-filter.png)
+![diagram illustrating an istream transfer with the image-processing filter.](images/streamtrans-with-filter.png)
 
 Notice that the driver's behavior does not change; the driver receives a stream and writes to it whether the stream is provided by the Image Processing Filter or by an application directly. As a result, you can publish value-add image processing components separately. For example, you could provide an in-box driver that is functional but could provide better quality images when the user installs the image processing component from a CD. The driver does not need to be changed in this situation.
 

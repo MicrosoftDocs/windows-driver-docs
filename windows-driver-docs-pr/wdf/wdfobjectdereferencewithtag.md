@@ -1,7 +1,6 @@
 ---
 title: WdfObjectDereferenceWithTag macro
 description: The WdfObjectDereferenceWithTag macro decrements the reference count for a specified framework object and assigns the driver's current file name and line number to the reference. This macro also assigns a tag value to the reference.
-ms.assetid: c5cfe516-ad62-4656-a033-d1800d9554a8
 keywords:
  - WdfObjectDereferenceWithTag macro
 ms.date: 08/23/2017
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectDereferenceWithTag** macro decrements the reference count for a specified framework object and assigns the driver's current file name and line number to the reference. This macro also assigns a tag value to the reference.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID WdfObjectDereferenceWithTag(
@@ -25,8 +23,7 @@ VOID WdfObjectDereferenceWithTag(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Handle* \[in\]  
 A handle to a framework object.
@@ -34,26 +31,23 @@ A handle to a framework object.
 *Tag* \[in\]  
 A driver-defined value that identifies an object reference. The tag value must match a tag value that the driver previously supplied to [**WdfObjectReferenceWithTag**](wdfobjectreferencewithtag.md).
 
-Return value
-------------
+## Return value
 
 None.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-Remarks
--------
+## Remarks
 
 If the object's reference count becomes zero, the object might be deleted before **WdfObjectDereferenceWithTag** returns.
 
-Calling [**WdfObjectDereferenceActual**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdereferenceactual) or **WdfObjectDereferenceWithTag** instead of [**WdfObjectDereference**](wdfobjectdereference.md) provides additional information (tag string, line number, and file name) to Microsoft debuggers. **WdfObjectDereferenceActual** allows your driver to specify the line number and file name, while **WdfObjectDereferenceWithTag** uses the driver's current line number and file name.
+Calling [**WdfObjectDereferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual) or **WdfObjectDereferenceWithTag** instead of [**WdfObjectDereference**](wdfobjectdereference.md) provides additional information (tag string, line number, and file name) to Microsoft debuggers. **WdfObjectDereferenceActual** allows your driver to specify the line number and file name, while **WdfObjectDereferenceWithTag** uses the driver's current line number and file name.
 
-You can view the tag, line number, and file name values by using the **!wdftagtracker** debugger extension. The debugger extension displays the tag value as both a pointer and a series of characters. For more about debugger extensions, see [Debugging a KMDF Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver).
+You can view the tag, line number, and file name values by using the **!wdftagtracker** debugger extension. The debugger extension displays the tag value as both a pointer and a series of characters. For more about debugger extensions, see [Debugging a KMDF Driver](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
-For more information about object reference counts, see [Framework Object Life Cycle](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-life-cycle).
+For more information about object reference counts, see [Framework Object Life Cycle](./framework-object-life-cycle.md).
 
-Examples
---------
+## Examples
 
 The following code example decrements an object's reference count and assigns a tag value to the reference.
 
@@ -64,8 +58,7 @@ WdfObjectDereferenceWithTag(
                             );
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -109,11 +102,4 @@ WUDFx02000.dll (UMDF)</td>
 [**WdfObjectReferenceWithTag**](wdfobjectreferencewithtag.md)
 
  
-
- 
-
-
-
-
-
 

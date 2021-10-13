@@ -1,7 +1,6 @@
 ---
 title: DeviceOverrides Registry Key
 description: DeviceOverrides Registry Key
-ms.assetid: 18f95848-71fe-4884-bcbe-d3cae90fc262
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Beginning with Windows 7, the **DeviceOverrides** registry key specifies that one or more removable device capability overrides exist in the system. For more information about the removable device capability, see [Overview of the Removable Device Capability](overview-of-the-removable-device-capability.md).
 
-The Plug and Play (PnP) manager uses a new ID (container IDs) that originated from and belong to each instance of a particular physical device installed in the computer. For legacy devices, the PnP manager generates container IDs through the removable device capability. For more information about how the PnP manager generates container IDs, see [How Container IDs are Generated](how-container-ids-are-generated.md).
+The Plug and Play (PnP) manager uses a new ID ([container IDs](container-ids.md)) to group one or more device nodes (*devnodes*) that originated from and belong to each instance of a particular physical device installed in the computer. For legacy devices, the PnP manager generates container IDs through the removable device capability. For more information about how the PnP manager generates container IDs, see [How Container IDs are Generated](how-container-ids-are-generated.md).
 
 Removable device capability overrides let the independent hardware vendor (IHV) or original equipment manufacturer (OEM) change the interpreted value of the removable device capability on a devnode or group of devnodes.
 
@@ -59,7 +58,7 @@ Removable device capability overrides are specific to individual devices specifi
 
 The following figure shows the topology of the **DeviceOverrides** registry key and its related subkeys.
 
-![diagram illustrating the deviceoverrides registry key topology](images/containerid-3.png)
+![diagram illustrating the deviceoverrides registry key topology.](images/containerid-3.png)
 
 The **DeviceOverrides** registry key must be created for the first removable device capability override that is added to the system. It may not exist by default on a clean operating system installation.
 

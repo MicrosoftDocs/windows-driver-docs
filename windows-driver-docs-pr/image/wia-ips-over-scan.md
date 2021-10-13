@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_OVER\_SCAN
 description: The WIA\_IPS\_OVER\_SCAN property is used to enable and configure over scanning (scanning beyond physical document boundaries). The WIA minidriver creates and maintains this property.
-ms.assetid: CAE654BE-B0AC-4182-83CE-C2BDA4792FE4
 keywords: ["WIA_IPS_OVER_SCAN Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_OVER\_SCAN** property.
 
@@ -69,8 +67,7 @@ The following table describes the valid values for the **WIA\_IPS\_OVER\_SCAN** 
 
 This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) and is optional. When the property is supported, WIA\_OVER\_SCAN\_DISABLED is the required default value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

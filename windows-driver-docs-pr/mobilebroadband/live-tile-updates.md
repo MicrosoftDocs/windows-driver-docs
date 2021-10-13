@@ -1,7 +1,6 @@
 ---
 title: Live tile updates
 description: Live tile updates
-ms.assetid: 46ad4a92-0a80-47ca-a8dc-2608d863e14f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,14 +13,7 @@ On the Windows 10 **Start** menu, tiles are the primary representation of an ap
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
+[Mobile broadband app scenarios](./account-management.md)
 
  
-
- 
-
-
-
-
-
 

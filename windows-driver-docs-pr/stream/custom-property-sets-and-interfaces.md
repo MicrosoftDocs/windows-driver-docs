@@ -1,7 +1,6 @@
 ---
 title: Custom Property Sets and Interfaces
 description: Custom Property Sets and Interfaces
-ms.assetid: ea1337e4-c8e5-4971-b602-c066b5a6fd07
 keywords:
 - interfaces WDK video capture
 - custom property sets WDK video capture

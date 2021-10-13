@@ -1,7 +1,6 @@
 ---
 title: Error Processing
 description: Error Processing
-ms.assetid: d9cb2f62-1ccf-4ab6-b547-dc54f6d07820
 keywords:
 - Windows Hardware Error Architecture WDK , error processing
 - WHEA WDK , error processing
@@ -32,7 +31,7 @@ The following describes the sequence of actions taken by WHEA in response to eac
 
 2.  The LLHEH verifies the presence of the hardware error.
 
-3.  The LLHEH retrieves hardware error information from the error source and uses the error data to fill in a hardware error packet. This packet is formatted as a [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
+3.  The LLHEH retrieves hardware error information from the error source and uses the error data to fill in a hardware error packet. This packet is formatted as a [WHEA\_ERROR\_PACKET](/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
 
 4.  The LLHEH calls into the *platform-specific hardware error driver* (PSHED) to retrieve any platform-specific hardware error information. If a PSHED plug-in is installed and is registered to participate in error information retrieval, the PSHED will in turn call into the PSHED plug-in so that it can further augment the error information that is returned to the LLHEH.
 
@@ -85,9 +84,4 @@ The following describes the sequence of actions taken by WHEA in response to eac
 8.  The Windows kernel generates a bug check.
 
  
-
- 
-
-
-
 

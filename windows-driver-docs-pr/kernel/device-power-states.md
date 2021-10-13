@@ -1,16 +1,12 @@
 ---
 title: Device Power States
 description: Device Power States
-ms.assetid: 2229f34c-9b88-4e3e-802e-f7be2c7ef168
 keywords: ["device power states WDK kernel", "power states WDK kernel", "states WDK power management", "Dx names WDK power management", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
 ---
 
 # Device Power States
-
-
-## <a href="" id="ddk-device-power-states-kg"></a>
 
 
 A device power state describes the power state of a device in a computer, independently of the other devices in the computer. Device power states are named D0, D1, D2, and D3. D0 is the fully on state, and D1, D2, and D3 are low-power states. The state number is inversely related to power consumption: higher numbered states use less power. Starting with Windows 8, the D3 state is divided into two substates, D3hot and D3cold.
@@ -43,12 +39,9 @@ A driver or the power manager can request a device power state transition, and a
 
 [Handling IRP\_MN\_SET\_POWER for Device Power States](handling-irp-mn-set-power-for-device-power-states.md)
 
-## <a href="" id="power-state-diagram"></a>
-
-
 Like the system, a device can transition from the working state (D0) to any low-power state (D1, D2, or D3) and from any low-power state to the working state. The following diagram is a state graph that shows the valid device power state transitions.
 
-![diagram illustrating the valid device power state transitions](images/dxpostates.png)
+![diagram illustrating the valid device power state transitions.](images/dxpostates.png)
 
 This graph shows the subdivision of D3 into D3hot and D3cold. D3hot and D3cold are defined starting with Windows 8. All devices are required to support the D0 state and D3hot substate. The other states shown in the diagram are optional.
 
@@ -84,4 +77,4 @@ The table below enumerates the power state mapping of PCI Root Ports and its att
 </tbody>
 </table>
 
-*PCI D3cold power state requires BIOS and device driver support. If support is missing, the PCI endpoint will only be able to achieve D3Hot. For more information, see [Supporting D3Cold in a driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver).
+*PCI D3cold power state requires BIOS and device driver support. If support is missing, the PCI endpoint will only be able to achieve D3Hot. For more information, see [Supporting D3Cold in a driver](./supporting-d3cold-in-a-driver.md).

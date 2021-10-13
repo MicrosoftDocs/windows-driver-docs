@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_POSITION
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_POSITION property specifies the position of a 3D listener.
-ms.assetid: c2cb6bc2-e983-49c8-a251-ab28879b4fcd
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_POSITION Audio Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_DIRECTSOUND3DLISTENER\_POSITION property specifies the position 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ds3dvector" data-raw-source="[&lt;strong&gt;DS3DVECTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ds3dvector)"><strong>DS3DVECTOR</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ds3dvector" data-raw-source="[&lt;strong&gt;DS3DVECTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ds3dvector)"><strong>DS3DVECTOR</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -61,13 +60,11 @@ The property value (operation data) is a structure of type DS3DVECTOR that speci
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 DirectSound uses this property to implement the **IDirectSound3DListener::GetPosition** and **IDirectSound3DListener::SetPosition** methods, which are described in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,18 +82,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
-[**DS3DVECTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ds3dvector)
+[**DS3DVECTOR**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ds3dvector)
 
 [**KSPROPERTY\_DIRECTSOUND3DLISTENER\_DISTANCEFACTOR**](ksproperty-directsound3dlistener-distancefactor.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
-title: zombies
+title: zombies (WinDbg)
 description: The zombies extension displays all dead ("zombie") processes or threads.
-ms.assetid: f7fbce79-456a-4643-ad31-8cb2e6449ecf
 keywords: ["zombies Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,8 +63,7 @@ To see a list of all processes and threads, use the [**!process**](-process.md) 
 
 For general information about processes and threads in kernel mode, see [Changing Contexts](changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 Zombie processes are dead processes that have not yet been removed from the process list. Zombie threads are analogous.
 

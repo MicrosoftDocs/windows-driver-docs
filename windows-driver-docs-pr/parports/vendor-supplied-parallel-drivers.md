@@ -1,7 +1,6 @@
 ---
 title: Vendor-Supplied Parallel Drivers
 description: Vendor-Supplied Parallel Drivers
-ms.assetid: 2f706dd2-4032-4f4d-8146-2f3a81e28b62
 keywords:
 - parallel drivers WDK
 - parallel ports WDK , vendor-supplied drivers
@@ -32,12 +31,7 @@ For more information about Windows support for parallel ports and devices, see:
 
 [System-Supplied Parallel Drivers](system-supplied-parallel-drivers.md)
 
-[Client Interfaces to System-Supplied Parallel Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/_parports)
 
  
-
- 
-
-
-
 

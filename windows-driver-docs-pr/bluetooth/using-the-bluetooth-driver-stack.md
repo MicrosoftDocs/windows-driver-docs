@@ -1,7 +1,6 @@
 ---
 title: How to use the Bluetooth Driver Stack
 description: How to use the Bluetooth Driver Stack
-ms.assetid: c8a68c30-4cd6-4ee2-a653-7e0c1a28f4cf
 keywords:
 - Bluetooth WDK , driver stack
 - driver stacks WDK Bluetooth
@@ -31,93 +30,93 @@ After Windows loads and initializes the Bluetooth driver stack, the driver stack
 
 Profile drivers communicate with the Bluetooth driver stack through the standard I/O Request Packet (IRP)-based mechanism employed by all drivers based on the WDM architecture. A profile driver communicates with its device by allocating and sending IRPs down the Bluetooth driver stack to the Bluetooth port driver, *Bthport.sys*.
 
-A profile driver allocates and initializes IRPs to be processed by *Bthport.sys*. Profile drivers then communicate with their devices by using IOCTL requests that are delivered to the device by means of an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) or [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) IRP. The profile driver specifies one of the I/O control codes in the following list in the IRP.
+A profile driver allocates and initializes IRPs to be processed by *Bthport.sys*. Profile drivers then communicate with their devices by using IOCTL requests that are delivered to the device by means of an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md) or [**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md) IRP. The profile driver specifies one of the I/O control codes in the following list in the IRP.
 
-The Bluetooth driver stack supports the following IOCTLs for kernel-mode callers through [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control):
+The Bluetooth driver stack supports the following IOCTLs for kernel-mode callers through [**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md):
 
-[**IOCTL\_BTH\_DISCONNECT\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_disconnect_device)
+[**IOCTL\_BTH\_DISCONNECT\_DEVICE**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_disconnect_device)
 
-[**IOCTL\_BTH\_GET\_DEVICE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_get_device_info)
+[**IOCTL\_BTH\_GET\_DEVICE\_INFO**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_get_device_info)
 
-[**IOCTL\_BTH\_GET\_LOCAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_get_local_info)
+[**IOCTL\_BTH\_GET\_LOCAL\_INFO**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_get_local_info)
 
-[**IOCTL\_BTH\_GET\_RADIO\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_get_radio_info)
+[**IOCTL\_BTH\_GET\_RADIO\_INFO**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_get_radio_info)
 
-[**IOCTL\_BTH\_SDP\_ATTRIBUTE\_SEARCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_attribute_search)
+[**IOCTL\_BTH\_SDP\_ATTRIBUTE\_SEARCH**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_attribute_search)
 
-[**IOCTL\_BTH\_SDP\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_connect)
+[**IOCTL\_BTH\_SDP\_CONNECT**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_connect)
 
-[**IOCTL\_BTH\_SDP\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_disconnect)
+[**IOCTL\_BTH\_SDP\_DISCONNECT**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_disconnect)
 
-[**IOCTL\_BTH\_SDP\_REMOVE\_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_remove_record)
+[**IOCTL\_BTH\_SDP\_REMOVE\_RECORD**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_remove_record)
 
-[**IOCTL\_BTH\_SDP\_SERVICE\_ATTRIBUTE\_SEARCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_attribute_search)
+[**IOCTL\_BTH\_SDP\_SERVICE\_ATTRIBUTE\_SEARCH**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_attribute_search)
 
-[**IOCTL\_BTH\_SDP\_SERVICE\_SEARCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_search)
+[**IOCTL\_BTH\_SDP\_SERVICE\_SEARCH**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_search)
 
-[**IOCTL\_BTH\_SDP\_SUBMIT\_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_submit_record)
+[**IOCTL\_BTH\_SDP\_SUBMIT\_RECORD**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_submit_record)
 
-[**IOCTL\_BTH\_SDP\_SUBMIT\_RECORD\_WITH\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_submit_record_with_info)
+[**IOCTL\_BTH\_SDP\_SUBMIT\_RECORD\_WITH\_INFO**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_submit_record_with_info)
 
-The Bluetooth driver stack supports the following IOCTLs and [**BRBs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb) kernel-mode callers (generally for driver-to-driver communication) through [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control):
+The Bluetooth driver stack supports the following IOCTLs and [**BRBs**](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb) kernel-mode callers (generally for driver-to-driver communication) through [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md):
 
-[**BRB\_HCI\_GET\_LOCAL\_BD\_ADDR**](https://docs.microsoft.com/previous-versions/ff536611(v=vs.85))
+[**BRB\_HCI\_GET\_LOCAL\_BD\_ADDR**](/previous-versions/ff536611(v=vs.85))
 
-[**BRB\_L2CA\_REGISTER\_SERVER**](https://docs.microsoft.com/previous-versions/ff536618(v=vs.85))
+[**BRB\_L2CA\_REGISTER\_SERVER**](/previous-versions/ff536618(v=vs.85))
 
-[**BRB\_L2CA\_UNREGISTER\_SERVER**](https://docs.microsoft.com/previous-versions/ff536619(v=vs.85))
+[**BRB\_L2CA\_UNREGISTER\_SERVER**](/previous-versions/ff536619(v=vs.85))
 
-[**BRB\_L2CA\_OPEN\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536615(v=vs.85))
+[**BRB\_L2CA\_OPEN\_CHANNEL**](/previous-versions/ff536615(v=vs.85))
 
-[**BRB\_L2CA\_OPEN\_CHANNEL\_RESPONSE**](https://docs.microsoft.com/previous-versions/ff536616(v=vs.85))
+[**BRB\_L2CA\_OPEN\_CHANNEL\_RESPONSE**](/previous-versions/ff536616(v=vs.85))
 
-[**BRB\_L2CA\_CLOSE\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536614(v=vs.85))
+[**BRB\_L2CA\_CLOSE\_CHANNEL**](/previous-versions/ff536614(v=vs.85))
 
-[**BRB\_L2CA\_ACL\_TRANSFER**](https://docs.microsoft.com/previous-versions/ff536613(v=vs.85))
+[**BRB\_L2CA\_ACL\_TRANSFER**](/previous-versions/ff536613(v=vs.85))
 
-[**BRB\_L2CA\_UPDATE\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536620(v=vs.85))
+[**BRB\_L2CA\_UPDATE\_CHANNEL**](/previous-versions/ff536620(v=vs.85))
 
-[**BRB\_L2CA\_PING**](https://docs.microsoft.com/previous-versions/ff536617(v=vs.85))
+[**BRB\_L2CA\_PING**](/previous-versions/ff536617(v=vs.85))
 
-[**BRB\_REGISTER\_PSM**](https://docs.microsoft.com/previous-versions/ff536621(v=vs.85))
+[**BRB\_REGISTER\_PSM**](/previous-versions/ff536621(v=vs.85))
 
-[**BRB\_UNREGISTER\_PSM**](https://docs.microsoft.com/previous-versions/ff536632(v=vs.85))
+[**BRB\_UNREGISTER\_PSM**](/previous-versions/ff536632(v=vs.85))
 
-[**BRB\_SCO\_REGISTER\_SERVER**](https://docs.microsoft.com/previous-versions/ff536628(v=vs.85))
+[**BRB\_SCO\_REGISTER\_SERVER**](/previous-versions/ff536628(v=vs.85))
 
-[**BRB\_SCO\_UNREGISTER\_SERVER**](https://docs.microsoft.com/previous-versions/ff536630(v=vs.85))
+[**BRB\_SCO\_UNREGISTER\_SERVER**](/previous-versions/ff536630(v=vs.85))
 
-[**BRB\_SCO\_OPEN\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536626(v=vs.85))
+[**BRB\_SCO\_OPEN\_CHANNEL**](/previous-versions/ff536626(v=vs.85))
 
-[**BRB\_SCO\_OPEN\_CHANNEL\_RESPONSE**](https://docs.microsoft.com/previous-versions/ff536627(v=vs.85))
+[**BRB\_SCO\_OPEN\_CHANNEL\_RESPONSE**](/previous-versions/ff536627(v=vs.85))
 
-[**BRB\_SCO\_CLOSE\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536622(v=vs.85))
+[**BRB\_SCO\_CLOSE\_CHANNEL**](/previous-versions/ff536622(v=vs.85))
 
-[**BRB\_SCO\_TRANSFER**](https://docs.microsoft.com/previous-versions/ff536629(v=vs.85))
+[**BRB\_SCO\_TRANSFER**](/previous-versions/ff536629(v=vs.85))
 
-[**BRB\_SCO\_GET\_CHANNEL\_INFO**](https://docs.microsoft.com/previous-versions/ff536624(v=vs.85))
+[**BRB\_SCO\_GET\_CHANNEL\_INFO**](/previous-versions/ff536624(v=vs.85))
 
-[**BRB\_SCO\_GET\_SYSTEM\_INFO**](https://docs.microsoft.com/previous-versions/ff536625(v=vs.85))
+[**BRB\_SCO\_GET\_SYSTEM\_INFO**](/previous-versions/ff536625(v=vs.85))
 
-[**BRB\_SCO\_FLUSH\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536623(v=vs.85))
+[**BRB\_SCO\_FLUSH\_CHANNEL**](/previous-versions/ff536623(v=vs.85))
 
-[**BRB\_ACL\_GET\_MODE**](https://docs.microsoft.com/previous-versions/ff536609(v=vs.85))
+[**BRB\_ACL\_GET\_MODE**](/previous-versions/ff536609(v=vs.85))
 
-[**BRB\_ACL\_ENTER\_ACTIVE\_MODE**](https://docs.microsoft.com/previous-versions/ff536608(v=vs.85))
+[**BRB\_ACL\_ENTER\_ACTIVE\_MODE**](/previous-versions/ff536608(v=vs.85))
 
-[**BRB\_GET\_DEVICE\_INTERFACE\_STRING**](https://docs.microsoft.com/previous-versions/ff536610(v=vs.85))
+[**BRB\_GET\_DEVICE\_INTERFACE\_STRING**](/previous-versions/ff536610(v=vs.85))
 
-[**IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_internal_bth_submit_brb)
+[**IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_internal_bth_submit_brb)
 
-[**IOCTL\_INTERNAL\_BTHENUM\_GET\_DEVINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_internal_bthenum_get_devinfo)
+[**IOCTL\_INTERNAL\_BTHENUM\_GET\_DEVINFO**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_internal_bthenum_get_devinfo)
 
-[**IOCTL\_INTERNAL\_BTHENUM\_GET\_ENUMINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_internal_bthenum_get_enuminfo)
+[**IOCTL\_INTERNAL\_BTHENUM\_GET\_ENUMINFO**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_internal_bthenum_get_enuminfo)
 
 For more information about how to use the IOCTLs described in the previous lists, see [Bluetooth IOCTLs](bluetooth-ioctls2.md).
 
-Profile drivers primarily use IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB to communicate and interact with the functionality provided in the Bluetooth driver stack. A profile driver uses IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB to deliver a variable-length data structure called a Bluetooth Request Block ( [**BRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb)) to the device it manages. Profile drivers use BRBs to open and close connections to remote devices and to perform most input and output tasks. IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB contains a BRB that further describes the Bluetooth operation to perform. To learn more about how to build and send BRBs down the Bluetooth driver stack, see [Building and Sending a BRB](building-and-sending-a-brb.md).
+Profile drivers primarily use IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB to communicate and interact with the functionality provided in the Bluetooth driver stack. A profile driver uses IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB to deliver a variable-length data structure called a Bluetooth Request Block ( [**BRB**](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb)) to the device it manages. Profile drivers use BRBs to open and close connections to remote devices and to perform most input and output tasks. IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB contains a BRB that further describes the Bluetooth operation to perform. To learn more about how to build and send BRBs down the Bluetooth driver stack, see [Building and Sending a BRB](building-and-sending-a-brb.md).
 
-Each BRB begins with a standard header defined by the [**BRB\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_header) structure that specifies the type of BRB, which determines the structure of the rest of the BRB. The **Type** member, which must equal one of the values found in the [**BRB\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ne-bthddi-_brb_type) enumeration, determines the type of Bluetooth operation that the profile driver requests. The BRB structure and size vary according to the type of BRB. The **Length** member of the BRB\_HEADER structure specifies the size, in bytes, of the BRB. The [**BthAllocateBrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/nc-bthddi-pfnbth_allocate_brb), [**BthInitializeBrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/nc-bthddi-pfnbth_initialize_brb), and [**BthReuseBrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/nc-bthddi-pfnbth_reuse_brb) functions automatically set the **Type** and **Length** members.
+Each BRB begins with a standard header defined by the [**BRB\_HEADER**](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_header) structure that specifies the type of BRB, which determines the structure of the rest of the BRB. The **Type** member, which must equal one of the values found in the [**BRB\_TYPE**](/windows-hardware/drivers/ddi/bthddi/ne-bthddi-_brb_type) enumeration, determines the type of Bluetooth operation that the profile driver requests. The BRB structure and size vary according to the type of BRB. The **Length** member of the BRB\_HEADER structure specifies the size, in bytes, of the BRB. The [**BthAllocateBrb**](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnbth_allocate_brb), [**BthInitializeBrb**](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnbth_initialize_brb), and [**BthReuseBrb**](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnbth_reuse_brb) functions automatically set the **Type** and **Length** members.
 
 For example, to open a connection to a remote device, specify either one of the function codes, **BRB\_L2CA\_OPEN\_CHANNEL** or BRB\_SCO\_OPEN\_CHANNEL, to indicate that the profile driver is attempting to open a L2CAP or a SCO connection channel to the remote device. The Bluetooth driver stack uses the **Status** member of the BRB structure to return a Bluetooth-specific status code.
 
@@ -139,95 +138,95 @@ The following table describes the structures that correspond to specific BRBs th
 <tbody>
 <tr class="odd">
 <td align="left"><p>BRB_HCI_GET_LOCAL_BD_ADDR</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_get_local_bd_addr" data-raw-source="[&lt;strong&gt;_BRB_GET_LOCAL_BD_ADDR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_get_local_bd_addr)"><strong>_BRB_GET_LOCAL_BD_ADDR</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_get_local_bd_addr" data-raw-source="[&lt;strong&gt;_BRB_GET_LOCAL_BD_ADDR&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_get_local_bd_addr)"><strong>_BRB_GET_LOCAL_BD_ADDR</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_L2CA_REGISTER_SERVER</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_register_server" data-raw-source="[&lt;strong&gt;_BRB_L2CA_REGISTER_SERVER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_register_server)"><strong>_BRB_L2CA_REGISTER_SERVER</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_register_server" data-raw-source="[&lt;strong&gt;_BRB_L2CA_REGISTER_SERVER&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_register_server)"><strong>_BRB_L2CA_REGISTER_SERVER</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_L2CA_UNREGISTER_SERVER</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_unregister_server" data-raw-source="[&lt;strong&gt;_BRB_L2CA_UNREGISTER_SERVER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_unregister_server)"><strong>_BRB_L2CA_UNREGISTER_SERVER</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_unregister_server" data-raw-source="[&lt;strong&gt;_BRB_L2CA_UNREGISTER_SERVER&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_unregister_server)"><strong>_BRB_L2CA_UNREGISTER_SERVER</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_L2CA_OPEN_CHANNEL</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_open_channel" data-raw-source="[&lt;strong&gt;_BRB_L2CA_OPEN_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_open_channel)"><strong>_BRB_L2CA_OPEN_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel" data-raw-source="[&lt;strong&gt;_BRB_L2CA_OPEN_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel)"><strong>_BRB_L2CA_OPEN_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_L2CA_OPEN_CHANNEL_RESPONSE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_open_channel" data-raw-source="[&lt;strong&gt;_BRB_L2CA_OPEN_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_open_channel)"><strong>_BRB_L2CA_OPEN_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel" data-raw-source="[&lt;strong&gt;_BRB_L2CA_OPEN_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel)"><strong>_BRB_L2CA_OPEN_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_L2CA_CLOSE_CHANNEL</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_close_channel" data-raw-source="[&lt;strong&gt;_BRB_L2CA_CLOSE_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_close_channel)"><strong>_BRB_L2CA_CLOSE_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_close_channel" data-raw-source="[&lt;strong&gt;_BRB_L2CA_CLOSE_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_close_channel)"><strong>_BRB_L2CA_CLOSE_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_L2CA_ACL_TRANSFER</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_acl_transfer" data-raw-source="[&lt;strong&gt;_BRB_L2CA_ACL_TRANSFER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_acl_transfer)"><strong>_BRB_L2CA_ACL_TRANSFER</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_acl_transfer" data-raw-source="[&lt;strong&gt;_BRB_L2CA_ACL_TRANSFER&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_acl_transfer)"><strong>_BRB_L2CA_ACL_TRANSFER</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_L2CA_UPDATE_CHANNEL</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_update_channel" data-raw-source="[&lt;strong&gt;_BRB_L2CA_UPDATE_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_update_channel)"><strong>_BRB_L2CA_UPDATE_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_update_channel" data-raw-source="[&lt;strong&gt;_BRB_L2CA_UPDATE_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_update_channel)"><strong>_BRB_L2CA_UPDATE_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_L2CA_PING</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_ping" data-raw-source="[&lt;strong&gt;_BRB_L2CA_PING&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_ping)"><strong>_BRB_L2CA_PING</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_ping" data-raw-source="[&lt;strong&gt;_BRB_L2CA_PING&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_ping)"><strong>_BRB_L2CA_PING</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_REGISTER_PSM</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_psm" data-raw-source="[&lt;strong&gt;_BRB_PSM&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_psm)"><strong>_BRB_PSM</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_psm" data-raw-source="[&lt;strong&gt;_BRB_PSM&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_psm)"><strong>_BRB_PSM</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_UNREGISTER_PSM</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_psm" data-raw-source="[&lt;strong&gt;_BRB_PSM&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_psm)"><strong>_BRB_PSM</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_psm" data-raw-source="[&lt;strong&gt;_BRB_PSM&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_psm)"><strong>_BRB_PSM</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_REGISTER_SERVER</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_register_server" data-raw-source="[&lt;strong&gt;_BRB_SCO_REGISTER_SERVER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_register_server)"><strong>_BRB_SCO_REGISTER_SERVER</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_register_server" data-raw-source="[&lt;strong&gt;_BRB_SCO_REGISTER_SERVER&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_register_server)"><strong>_BRB_SCO_REGISTER_SERVER</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_SCO_UNREGISTER_SERVER</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_unregister_server" data-raw-source="[&lt;strong&gt;_BRB_SCO_UNREGISTER_SERVER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_unregister_server)"><strong>_BRB_SCO_UNREGISTER_SERVER</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_unregister_server" data-raw-source="[&lt;strong&gt;_BRB_SCO_UNREGISTER_SERVER&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_unregister_server)"><strong>_BRB_SCO_UNREGISTER_SERVER</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_OPEN_CHANNEL</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_open_channel" data-raw-source="[&lt;strong&gt;_BRB_SCO_OPEN_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_open_channel)"><strong>_BRB_SCO_OPEN_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_open_channel" data-raw-source="[&lt;strong&gt;_BRB_SCO_OPEN_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_open_channel)"><strong>_BRB_SCO_OPEN_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_SCO_OPEN_CHANNEL_RESPONSE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_open_channel" data-raw-source="[&lt;strong&gt;_BRB_SCO_OPEN_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_open_channel)"><strong>_BRB_SCO_OPEN_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_open_channel" data-raw-source="[&lt;strong&gt;_BRB_SCO_OPEN_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_open_channel)"><strong>_BRB_SCO_OPEN_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_CLOSE_CHANNEL</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_close_channel" data-raw-source="[&lt;strong&gt;_BRB_SCO_CLOSE_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_close_channel)"><strong>_BRB_SCO_CLOSE_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_close_channel" data-raw-source="[&lt;strong&gt;_BRB_SCO_CLOSE_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_close_channel)"><strong>_BRB_SCO_CLOSE_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_SCO_TRANSFER</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_transfer" data-raw-source="[&lt;strong&gt;_BRB_SCO_TRANSFER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_transfer)"><strong>_BRB_SCO_TRANSFER</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_transfer" data-raw-source="[&lt;strong&gt;_BRB_SCO_TRANSFER&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_transfer)"><strong>_BRB_SCO_TRANSFER</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_GET_CHANNEL_INFO</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_get_channel_info" data-raw-source="[&lt;strong&gt;_BRB_SCO_GET_CHANNEL_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_get_channel_info)"><strong>_BRB_SCO_GET_CHANNEL_INFO</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_get_channel_info" data-raw-source="[&lt;strong&gt;_BRB_SCO_GET_CHANNEL_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_get_channel_info)"><strong>_BRB_SCO_GET_CHANNEL_INFO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_SCO_GET_SYSTEM_INFO</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_get_system_info" data-raw-source="[&lt;strong&gt;_BRB_SCO_GET_SYSTEM_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_get_system_info)"><strong>_BRB_SCO_GET_SYSTEM_INFO</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_get_system_info" data-raw-source="[&lt;strong&gt;_BRB_SCO_GET_SYSTEM_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_get_system_info)"><strong>_BRB_SCO_GET_SYSTEM_INFO</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_FLUSH_CHANNEL</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_flush_channel" data-raw-source="[&lt;strong&gt;_BRB_SCO_FLUSH_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_sco_flush_channel)"><strong>_BRB_SCO_FLUSH_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_flush_channel" data-raw-source="[&lt;strong&gt;_BRB_SCO_FLUSH_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_flush_channel)"><strong>_BRB_SCO_FLUSH_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_ACL_GET_MODE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_acl_get_mode" data-raw-source="[&lt;strong&gt;_BRB_ACL_GET_MODE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_acl_get_mode)"><strong>_BRB_ACL_GET_MODE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_acl_get_mode" data-raw-source="[&lt;strong&gt;_BRB_ACL_GET_MODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_acl_get_mode)"><strong>_BRB_ACL_GET_MODE</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_ACL_ENTER_ACTIVE_MODE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_acl_enter_active_mode" data-raw-source="[&lt;strong&gt;_BRB_ACL_ENTER_ACTIVE_MODE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_acl_enter_active_mode)"><strong>_BRB_ACL_ENTER_ACTIVE_MODE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_acl_enter_active_mode" data-raw-source="[&lt;strong&gt;_BRB_ACL_ENTER_ACTIVE_MODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_acl_enter_active_mode)"><strong>_BRB_ACL_ENTER_ACTIVE_MODE</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_GET_DEVICE_INTERFACE_STRING</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_get_device_interface_string" data-raw-source="[&lt;strong&gt;_BRB_GET_DEVICE_INTERFACE_STRING&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_get_device_interface_string)"><strong>_BRB_GET_DEVICE_INTERFACE_STRING</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_get_device_interface_string" data-raw-source="[&lt;strong&gt;_BRB_GET_DEVICE_INTERFACE_STRING&lt;/strong&gt;](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_get_device_interface_string)"><strong>_BRB_GET_DEVICE_INTERFACE_STRING</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -235,12 +234,4 @@ The following table describes the structures that correspond to specific BRBs th
  
 
 For more information about using Bluetooth IOCTLs and BRBs, see [Building and Sending a BRB](building-and-sending-a-brb.md).
-
- 
-
- 
-
-
-
-
 

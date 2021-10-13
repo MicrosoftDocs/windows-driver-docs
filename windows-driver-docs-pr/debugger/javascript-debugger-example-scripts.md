@@ -1,8 +1,7 @@
 ---
 title: JavaScript Debugger Example Scripts
 description: This topic provides the information on user and kernel mode JavaScript code samples, such as the Data Filtering Plug and Play Device Tree sample.
-ms.assetid: F477430B-10C7-4039-9C5F-25556C306643
-ms.date: 04/10/2019
+ms.date: 02/02/2021
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +25,6 @@ The readme file describes the current example code that is available.
 
 ## <span id="Working_with_Samples"></span><span id="working_with_samples"></span><span id="WORKING_WITH_SAMPLES"></span>Working with Samples
 
-
 Use the general process to test any of the samples.
 
 1. Determine if the sample JavaScript is intended for kernel or user mode debugging. Then either load an appropriate dump file or establish a live connection to a target system.
@@ -47,13 +45,7 @@ function sayHi()
 }
 ```
 
-3. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
-
-4. Use the [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
+3. Use the [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
 
 ```dbgcmd
 0:000> .scriptrun c:\WinDbg\Scripts\HelloWorld.js
@@ -61,7 +53,7 @@ JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 ***> Hello World! 
 ```
 
-5. If the script contains a uniquely named function, use the dx command to execute that function, that is located in Debugger.State.Scripts.*ScriptName*.Contents.*FunctionName*.
+4. If the script contains a uniquely named function, use the dx command to execute that function, that is located in Debugger.State.Scripts.*ScriptName*.Contents.*FunctionName*.
 
 ```dbgcmd
 0:001> dx Debugger.State.Scripts.HelloWorld.Contents.sayHi()
@@ -79,7 +71,7 @@ This script is intended to support kernel mode debugging.
 
 ```JavaScript
 "use strict";
- 
+
 class __CheckArchitecture
 {
 //
@@ -139,7 +131,7 @@ Note that this sample code may not always be able to determine the architecture 
 
 This sample code filters the device node tree to display just devices that contain a path of PCI that are started.
 
-This script is intended to support kernel mode debugging.
+This script is intended to support live kernel mode debugging.
 
 You can use the !devnode 0 1 command to display information about the device tree. For more information, see [**!devnode**](-devnode.md).
 
@@ -175,15 +167,15 @@ function filterAllDevices()
 }
 ```
 
-Either load a kernel dump file or establish a kernel mode connection to a target system.
+Establish a kernel mode connection to a target system.
 
 ```dbgcmd
 0: kd> !load jsprovider.dll
 ```
 
 ```dbgcmd
-0: kd> .scriptload c:\WinDbg\Scripts\deviceFilter.js
-JavaScript script successfully loaded from 'c:\WinDbg\Scripts\deviceFilter.js'
+0: kd> .scriptload c:\WinDbg\Scripts\PlugAndPlayDeviceTree.js
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\PlugAndPlayDeviceTree.js'
 ```
 
 Call the filterAllDevices() function.
@@ -200,7 +192,7 @@ Debugger.State.Scripts.PlugAndPlayDeviceTree.Contents.filterAllDevices()        
 ...
 ```
 
-Each of these objects presented above, automatically supports DML, and can be clicked through just as with any other dx query.
+Each of these objects presented above, automatically supports DML, and can be selected just as with any other dx query.
 
 Alternatively to using this script, it is possible to use a LINQ query to accomplish a similar result.
 
@@ -217,7 +209,6 @@ Alternatively to using this script, it is possible to use a LINQ query to accomp
 ```
 
 ## <span id="Multimedia"></span><span id="multimedia"></span><span id="MULTIMEDIA"></span>Extend Devices Specific To Multimedia (Kernel Mode)
-
 
 This larger JavaScript example extends a kernel \_DEVICE\_OBJECT for information specific to multimedia and adds StreamingDevices to a debugger session.
 

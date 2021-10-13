@@ -1,7 +1,6 @@
 ---
 title: Filter Template Data Type
 description: Filter Template Data Type
-ms.assetid: cfbe8f39-9a8d-4e6b-91d8-f25926057e7b
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , primitive

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SAE_INDICATION_TYPE
 description: WDI_TLV_SAE_INDICATION_TYPE is a TLV that contains the type of information needed to continue SAE authentication with a target BSSID, or notification that authentication cannot continue.
-ms.assetid: F505CA27-4B2F-4210-8BE4-F3B931B86DDC
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_INDICATION_TYPE Network Drivers Starting with Windows Vista
@@ -27,12 +26,10 @@ The size (in bytes) of a UINT32.
 
 | Type | Description |
 | --- | --- |
-| [**WDI_SAE_INDICATION_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_sae_indication_type) | The type of information needed to continue SAE authentication with a target BSSID, or notification that authentication cannot continue. |
+| [**WDI_SAE_INDICATION_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_sae_indication_type) | The type of information needed to continue SAE authentication with a target BSSID, or notification that authentication cannot continue. |
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1903
+**Minimum supported server**: Windows Server 2016
+**Header**: Wditypes.hpp

@@ -1,9 +1,8 @@
 ---
 title: ndiskd.netrb
 description: The ndiskd.netrb extension displays information about a NET_RING structure.
-ms.assetid: 2D749E7E-00A5-422B-B785-B8DB3393A74F
 keywords: ["ndiskd.netrb Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/17/2020
 topic_type:
 - apiref
 api_name:
@@ -16,17 +15,15 @@ ms.custom: 19H1
 
 # !ndiskd.netrb
 
+The **!ndiskd.netrb** extension displays information about a [NET\_RING\_BUFFER](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring) structure.
 
-The **!ndiskd.netrb** extension displays information about a [NET\_RING\_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-ring-buffer) structure.
-
-For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
+For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](../netcx/index.md).
 
 ```console
-!ndiskd.netrb [-handle <x>] [-basic] [-dump] [-elementtype <str>] 
+!ndiskd.netrb -handle <x> [-basic] [-dump] [-elementtype <str>] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Address of a NET\_RING\_BUFFER.
@@ -40,24 +37,21 @@ Displays information about each element in the NET\_RING\_BUFFER.
 <span id="_______-elementtype______"></span><span id="_______-ELEMENTTYPE______"></span> *-elementtype*   
 A string for the data type to use when referring to a ring buffer element.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
-**Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_RING\_BUFFER object with other objects in the NetAdapterCx.
-
- 
+**Note**  See [Summary of Objects](../netcx/summary-of-netadaptercx-objects.md) to see a diagram explaining the relationship of the NET\_RING\_BUFFER object with other objects in the NetAdapterCx.
 
 To obtain a handle for a NET\_RING\_BUFFER, follow these steps:
 
-1.  Run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension.
-2.  Click on the handle for a NetAdapter that has a NetAdapterCx driver installed.
-3.  Click the "More Information" link to the right of the NetAdapter's NETADAPTER object to run the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension.
-4.  Enter the **!ndiskd.cxadapter** command with the *-datapath* parameter to see that NETADAPTER's datapath queues.
-5.  Click on the handle for one of the datapath queues.
+1. Run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension.
+2. Click on the handle for a NetAdapter that has a NetAdapterCx driver installed.
+3. Click the "More Information" link to the right of the NetAdapter's NETADAPTER object to run the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension.
+4. Enter the **!ndiskd.cxadapter** command with the *-datapath* parameter to see that NETADAPTER's datapath queues.
+5. Click on the handle for one of the datapath queues.
 
 For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic.
 In the following example, look for the handle for this NETTXQUEUE's ring buffer, ffffd1022d000000.
@@ -115,37 +109,26 @@ To see this NET\_RING\_BUFFER's elements, either click the "List all elements" l
     [07f] ffffd1022d003fc0 - NET_PACKET
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx)
+[Network Adapter WDF Class Extension (Cx)](../netcx/index.md)
 
-[Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects)
+[Summary of Objects](../netcx/summary-of-netadaptercx-objects.md)
 
-[NET\_RING\_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-ring-buffer)
+[NET\_RING\_BUFFER](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
 [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md)
 
 [**!ndiskd.netqueue**](-ndiskd-netqueue.md)
-
- 
-
- 
-
-
-
-
-
-

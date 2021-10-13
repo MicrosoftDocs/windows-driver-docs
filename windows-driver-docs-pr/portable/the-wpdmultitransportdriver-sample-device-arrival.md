@@ -1,5 +1,5 @@
 ---
-Description: MultiTransport Device Support
+description: MultiTransport Device Support
 title: MultiTransport Device Support
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -21,14 +21,18 @@ The code in the **CDevice::OnPrepareHardware** method completes the following ta
 
 The parallel queue is required so that the **IOCTL\_COMPOSITE\_TRANSPORT\_REQUEST IOCTLs** can be correctly received from the WPD class installer when the device interface state changes. The second queue allows a different (for example, non-parallel) dispatch mode to be used by the transport driver. Sequential queues are simpler to manage because WUDF only allows one request at a time. However, if your WPD driver is able to handle multiple requests in parallel, it does not require the secondary queue.
 
-|                                                                       |                                                                                                                                                                                                                                  |
-|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Task                                                                  | Description                                                                                                                                                                                                                      |
-| Create a Functional Unique Identifier (FUID).                         | The FUID is a globally unique identifier (GUID) value that the driver passes to the WPD class extension during initialization. (The class extension associates this FUID with each transport.)                                   |
-| Retrieve a pointer to an **IQueueCallbackDeviceIoControl** interface. | The driver forwards any non-WPD IOCTLs to the class extension by using this pointer.                                                                                                                                             |
-| Enable the multitransport mode option.                                | This option informs the WPD class extension that it should set up the multitransport framework.                                                                                                                                  |
-| Set the necessary Plug and Play (PnP) values.                         | These values are used to configure the multitransport framework.                                                                                                                                                                 |
-| Set the current transport bandwidth.                                  | This value is used by the class extension and the composite driver (*WpdComp.dll*). The composite driver retrieves the value from the extension and uses it to determine the best transport when multiple transports are active. |
+**Task**: Description
+
+**Create a Functional Unique Identifier (FUID).**: The FUID is a globally unique identifier (GUID) value that the driver passes to the WPD class extension during initialization. (The class extension associates this FUID with each transport.)
+
+**Retrieve a pointer to an **IQueueCallbackDeviceIoControl** interface.**: The driver forwards any non-WPD IOCTLs to the class extension by using this pointer.
+
+**Enable the multitransport mode option.**: This option informs the WPD class extension that it should set up the multitransport framework.
+
+**Set the necessary Plug and Play (PnP) values.**: These values are used to configure the multitransport framework.
+
+**Set the current transport bandwidth.**: This value is used by the class extension and the composite driver (*WpdComp.dll*). The composite driver retrieves the value from the extension and uses it to determine the best transport when multiple transports are active.
+
 
  
 

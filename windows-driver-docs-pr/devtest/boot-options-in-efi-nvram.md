@@ -1,7 +1,6 @@
 ---
 title: Boot Options in EFI NVRAM
 description: Computers with Extensible Firmware Interface (EFI) firmware store boot options in NVRAM, but retains its state even when you turn off the computer.
-ms.assetid: 99247d03-1723-4a2b-8ef4-c1f39687642f
 keywords:
 - NVRAM boot options WDK
 - EFI NVRAM boot options WDK
@@ -22,9 +21,9 @@ Computers with Extensible Firmware Interface (EFI) firmware, such as Intel Itani
 
 To configure features related to driver debugging and testing on EFI-based systems running Windows XP, Windows Server 2003 and their predecessors, you must edit the boot options in NVRAM. The following sections briefly describe the boot options in EFI NVRAM and explain the aspects of boot options that are specific to systems that use this technology.
 
-On Windows Vista and later versions of Windows, boot options on BIOS-based and EFI-based computers are stored in *Boot Configuration Data* (BCD), a firmware-independent configuration and storage system for boot options. For more information, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).
+On Windows Vista and later versions of Windows, boot options on BIOS-based and EFI-based computers are stored in *Boot Configuration Data* (BCD), a firmware-independent configuration and storage system for boot options. For more information, see [Boot Options in Windows Vista and Later](./boot-options-in-windows.md).
 
-For a detailed description of boot options on Itanium-based systems, see the Extensible Firmware Interface Specification. You can download a copy of the updated specification from the [Intel Extensible Firmware Interface](https://go.microsoft.com/fwlink/p/?linkid=10596) website.
+For a detailed description of boot options on Itanium-based systems, see the Extensible Firmware Interface Specification. You can download a copy of the updated specification from the [Intel Extensible Firmware Interface](https://www.intel.com/content/www/us/en/architecture-and-technology/unified-extensible-firmware-interface/efi-homepage-general-technology.html) website.
 
 This section includes:
 

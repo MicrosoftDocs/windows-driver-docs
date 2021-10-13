@@ -5,9 +5,10 @@ ms.date: 04/17/2019
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
-
 # Introduction to Time Travel Debugging objects
+
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
+
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
 * What exceptions are in the trace?
 * At what point in time in the trace did a specific code module load?
@@ -350,7 +351,7 @@ Use this dx command to display all of the events in the trace in grid format (-g
 ==================================================================================================================================================================================================
 ```
 
-Click on any of the columns with a + sign to sort the output.
+Select any of the columns with a + sign to sort the output.
 
 Use this LINQ query to display in grid format, the time position in the trace when threads were created (Type == "ThreadCreated").
 
@@ -456,7 +457,7 @@ The data model extension needs full symbol information in order to provide funct
 
 There can be a several reasons that a query does not return anything for calls to a DLL.
 
-- The syntax for the call isn't quite right.  Try verifying the call syntax by using the x command: "x <call>". If the module name returned by x is in uppercase, use that.
+- The syntax for the call isn't quite right.  Try verifying the call syntax by using the x command: "x \<call\>". If the module name returned by x is in uppercase, use that.
 - The DLL is not loaded yet and is loaded later in the trace. To work around this travel to a point in time after the DLL is loaded and redo the query.
 - The call is inlined which the query engine is unable to track.
 - The query pattern uses wildcards which returns too many functions.  Try to make the query pattern more specific so that the number of matched functions is small enough.

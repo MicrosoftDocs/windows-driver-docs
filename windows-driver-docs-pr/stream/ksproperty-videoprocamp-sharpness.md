@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS
 description: The KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS property controls a camera's sharpness setting. This property is optional.
-ms.assetid: d6b10876-313b-420a-9d81-348030e580dd
 keywords: ["KSPROPERTY_VIDEOPROCAMP_SHARPNESS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS property controls a camera's sharpness s
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)"><strong>KSPROPERTY_VIDEOPROCAMP_S</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videoprocamp_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_NODE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videoprocamp_node_s)"><strong>KSPROPERTY_VIDEOPROCAMP_NODE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)"><strong>KSPROPERTY_VIDEOPROCAMP_S</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_node_s)"><strong>KSPROPERTY_VIDEOPROCAMP_NODE_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
@@ -57,15 +56,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS property controls a camera's sharpness s
 
 The property value (operation data) is a LONG that specifies a camera's sharpness setting. Sharpness is expressed in arbitrary units.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the sharpness setting.
 
 Every video capture minidriver must define a range and default value for the value of this property. The required range must be 0 through 100. The default value must be 50.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,16 +80,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_VIDEOPROCAMP\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_VIDEOPROCAMP\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)
 

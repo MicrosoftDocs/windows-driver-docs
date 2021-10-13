@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_INFO
 description: WDI_TLV_CIPHER_KEY_TKIP_INFO is a TLV that contains TKIP information.
-ms.assetid: 330A93F5-43E7-4A4A-A6BD-EF276D6F09A1
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_TKIP_INFO Network Drivers Starting with Windows Vista
@@ -33,8 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

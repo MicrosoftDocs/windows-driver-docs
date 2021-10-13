@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_SCAN
 description: OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan according to the requirements of the IEEE 802.11 specification.
-ms.assetid: c4131010-20f2-45a4-8fb9-5a1e3e9735e5
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SCAN Network Drivers Starting with Windows Vista
@@ -42,7 +41,7 @@ OID\_WDI\_TASK\_SCAN requests a survey of BSS networks. The port performs a scan
 
  
 
-A task started message containing a [**WDI\_TLV\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-status) is indicated once the port has started the scan and is ready to receive other commands.
+A task started message containing a [**WDI\_TLV\_STATUS**](./wdi-tlv-status.md) is indicated once the port has started the scan and is ready to receive other commands.
 
 Once a scan is started when enabled by LiveUpdatesNeeded, the port must provide incremental updates (using unsolicited indications of [NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST](ndis-status-wdi-indication-bss-entry-list.md)) about discovered BSS entries. BSS entries that had previously been discovered but were not found by the port in the current scan should not be reported by the port. For power and performance reasons, the port should throttle indications and send updates to the host only when it has discovered 3 or more, or when it has discovered less than 3 entries but has not reported them to the host for more than 500 milliseconds. After the scan is completed, if the adapter does not manage BSS entries, it does not need to remember the BSS entries that it has discovered. Once the scan operation has finished, the port must send the task complete notification to the operating system and stop reporting BSS entries to the host. The scan command is used for finding legacy (non-Wi-Fi Direct networks) and the port should not include the Wi-Fi Direct IEs in the probe requests.
 
@@ -63,12 +62,12 @@ The adapter must not violate regulatory restrictions when performing a scan.
 
 | TLV                                                                       | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_BSSID**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bssid)                             |                                |          | BSSID of the network to scan for. If this is the broadcast MAC address, the station scans for all BSSIDs.                                                                                                                                                                                     |
-| [**WDI\_TLV\_SSID**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ssid)                               | X                              |          | A list of SSID list that the port should scan for. There can be multiple SSIDs in this list and one of them can be a wildcard. When doing an active scan on a channel, the port must send a probe request for each SSID in the list. If this list is empty, the port must scan for all SSIDs. |
-| [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-vendor-specific-ie) |                                | X        | One or more IEs that must be included in the probe requests sent by the port. These IEs are not used for passive scan.                                                                                                                                                                        |
-| [**WDI\_TLV\_SCAN\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-scan-mode)                    |                                |          | Scan mode parameters.                                                                                                                                                                                                                                                                         |
-| [**WDI\_TLV\_SCAN\_DWELL\_TIME**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-scan-dwell-time)       |                                |          | Dwell time parameters.                                                                                                                                                                                                                                                                        |
-| [**WDI\_TLV\_BAND\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-band-channel)              | X                              | X        | A list of recommended channels to scan. The adapter can perform a scan on a subset or superset of the channel list as long as it meets the Maximum Scan Time requirements. If this list is empty, the port must scan on all supported channels.                                               |
+| [**WDI\_TLV\_BSSID**](./wdi-tlv-bssid.md)                             |                                |          | BSSID of the network to scan for. If this is the broadcast MAC address, the station scans for all BSSIDs.                                                                                                                                                                                     |
+| [**WDI\_TLV\_SSID**](./wdi-tlv-ssid.md)                               | X                              |          | A list of SSID list that the port should scan for. There can be multiple SSIDs in this list and one of them can be a wildcard. When doing an active scan on a channel, the port must send a probe request for each SSID in the list. If this list is empty, the port must scan for all SSIDs. |
+| [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](./wdi-tlv-vendor-specific-ie.md) |                                | X        | One or more IEs that must be included in the probe requests sent by the port. These IEs are not used for passive scan.                                                                                                                                                                        |
+| [**WDI\_TLV\_SCAN\_MODE**](./wdi-tlv-scan-mode.md)                    |                                |          | Scan mode parameters.                                                                                                                                                                                                                                                                         |
+| [**WDI\_TLV\_SCAN\_DWELL\_TIME**](./wdi-tlv-scan-dwell-time.md)       |                                |          | Dwell time parameters.                                                                                                                                                                                                                                                                        |
+| [**WDI\_TLV\_BAND\_CHANNEL**](./wdi-tlv-band-channel.md)              | X                              | X        | A list of recommended channels to scan. The adapter can perform a scan on a subset or superset of the channel list as long as it meets the Maximum Scan Time requirements. If this list is empty, the port must scan on all supported channels.                                               |
 
  
 
@@ -83,8 +82,7 @@ The adapter must not violate regulatory restrictions when performing a scan.
 
 This notification is used by the device to tell the host about updates to the BSS entries. It can be sent at any time.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -108,9 +106,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Introduction to System Area Networks
 description: Introduction to System Area Networks
-ms.assetid: 28d92bb5-8c3c-4f46-b908-63e3a3efff37
 keywords:
 - system area networks WDK , about system area networks
 - SAN WDK , about system area networks
@@ -34,7 +33,7 @@ A SAN network interface controller (NIC), a transport driver for the SAN NIC, or
 
 The following figure shows the architecture required to support a SAN. The shaded areas represent components that a SAN NIC vendor supplies to enable using a SAN.
 
-![diagram illustrating the architecture required to support a system area network (san)](images/wsdpsan.png)
+![diagram illustrating the architecture required to support a system area network (san).](images/wsdpsan.png)
 
 The following is a description of the components shown in this figure.
 
@@ -71,7 +70,6 @@ A reliable transport service, which can be fully implemented in the NIC, fully i
 <a href="" id="san-nic"></a>**SAN NIC**  
 The physical SAN network interface controller (NIC).
 
-[]()  
 A kernel-mode provider for a particular SAN. (Reserved for future use.)
 
  

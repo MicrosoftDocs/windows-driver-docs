@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_TILT
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_TILT property to get or set a camera's tilt setting. This property is optional.
-ms.assetid: 265315ce-6f35-4f5a-907f-b5595e7fb5af
 keywords: ["KSPROPERTY_CAMERACONTROL_TILT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ User-mode clients use the KSPROPERTY\_CAMERACONTROL\_TILT property to get or set
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
@@ -59,7 +58,7 @@ The property value (operation data) is a LONG that specifies a camera's tilt set
 
 Positive values point the imaging plane up. Negative values point the imaging plane down, as shown in the following illustration.
 
-![illustration showing camera tilt values](images/cam-tilt-1.png)
+![illustration showing camera tilt values.](images/cam-tilt-1.png)
 
 Every video capture minidriver that supports this property must define a range and default value for this property. The range for the device must -180 through +180. The default value must be 0.
 
@@ -67,13 +66,11 @@ Every video capture minidriver that supports this property must define a range a
 
  
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies the tilt setting.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,16 +88,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_CAMERACONTROL\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_CAMERACONTROL\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
 

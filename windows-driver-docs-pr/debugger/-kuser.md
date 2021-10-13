@@ -1,7 +1,6 @@
 ---
-title: kuser
+title: kuser (WinDbg)
 description: The kuser extension displays the shared user-mode page (KUSER_SHARED_DATA).
-ms.assetid: 352a2f96-ff66-41be-94ee-045edbb1f81f
 keywords: ["kuser Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,8 +47,7 @@ Ntsdexts.dll</td>
 
  
 
-Remarks
--------
+## Remarks
 
 The KUSER\_SHARED\_DATA page gives resource and other information about the user who is currently logged on.
 

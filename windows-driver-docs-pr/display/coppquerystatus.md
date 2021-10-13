@@ -1,7 +1,6 @@
 ---
 title: COPPQueryStatus function
 description: The sample COPPQueryStatus function retrieves status on a protected video session that is associated with a COPP DirectX VA device.
-ms.assetid: c2265df7-8b60-4a14-b7dc-ee227ad062dc
 keywords:
 - copy protection WDK COPP , video miniport driver code template
 - video copy protection WDK COPP , video miniport driver code template
@@ -58,6 +57,7 @@ The RenderMoComp callback function is called without the display driver-supplied
 The DD_RENDERMOCOMPDATA structure is filled as follows.
 
 | Member | Value |
+| ------ | ----- |
 | dwNumBuffers | Zero. |
 | lpBufferInfo | NULL. |
 | dwFunction | DXVA_COPPQueryStatusFnCode constant (defined in dxva.h). |

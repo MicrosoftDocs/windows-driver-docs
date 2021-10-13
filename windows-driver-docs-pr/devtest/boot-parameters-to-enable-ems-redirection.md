@@ -1,7 +1,6 @@
 ---
 title: Boot Parameters to Enable EMS Redirection
 description: Boot Parameters to Enable EMS Redirection
-ms.assetid: b93fd580-0e1d-4b1e-8358-1c6ce7e2eb5e
 keywords:
 - boot parameters WDK
 - boot entry parameters WDK
@@ -24,7 +23,7 @@ To determine whether a computer has ACPI firmware, use Device Manager (devmgmt.m
 
 ## Enabling EMS on a computer without an ACPI SPCR table in operating systems prior to Windows Server 2008
 
-To enable EMS console redirection on a computer that has BIOS firmware, but does not have an ACPI Serial Port Console Redirection (SPCR) table, add the **redirect=COM***x* and the **redirectbaudrate=** parameters to the \[boot loader\] section of the Boot.ini file. These parameters set the port and transmission rate for EMS console redirection. Use the same port and transmission rate that are established for out-of-band communication in the BIOS. Then, add the [**/redirect**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-redirect) parameter to a boot entry.
+To enable EMS console redirection on a computer that has BIOS firmware, but does not have an ACPI Serial Port Console Redirection (SPCR) table, add the **redirect=COM***x* and the **redirectbaudrate=** parameters to the \[boot loader\] section of the Boot.ini file. These parameters set the port and transmission rate for EMS console redirection. Use the same port and transmission rate that are established for out-of-band communication in the BIOS. Then, add the [**/redirect**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) parameter to a boot entry.
 
 The following Bootcfg command enables EMS console redirection on the first boot entry in the list. It sets the port for COM2 and sets the transmission rate to 115,200 kilobits per second (Kbps). These are the same port and baud rate settings that the administrator set in the BIOS for the out-of-band port.
 
@@ -64,11 +63,11 @@ multi(0)disk(0)rdisk(0)partition(2)\WINDOWS="Windows Server 2003, Standard" /fas
 
 ## Enabling EMS on a Computer without an ACPI SPCR Table in Windows Server 2008
 
-To enable EMS console redirection on a computer that has BIOS firmware, but does not have an ACPI Serial Port Console Redirection (SPCR) table, use the [**BCDEdit /emssettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--emssettings) command to set the COM port and baud rate.
+To enable EMS console redirection on a computer that has BIOS firmware, but does not have an ACPI Serial Port Console Redirection (SPCR) table, use the [**BCDEdit /emssettings**](./bcdedit--emssettings.md) command to set the COM port and baud rate.
 
 These parameters set the global port and transmission rate for EMS console redirection. Use the same port and transmission rate that are established for out-of-band communication in the BIOS.
 
-Then, use the [**BCDEdit /ems**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--ems) command to enable EMS for a boot entry.
+Then, use the [**BCDEdit /ems**](./bcdedit--ems.md) command to enable EMS for a boot entry.
 
 The following commands set the global EMS redirection settings to use COM2 and a baud rate of 115200, and enable EMS for the specified boot entry.
 
@@ -82,7 +81,7 @@ bcdedit /ems {18b123cd-2bf6-11db-bfae-00e018e2b8db} on
 
 ## Enabling EMS on a computer with an SPCR table in operating systems prior to Windows Server 2008
 
-To enable EMS on a computer with ACPI BIOS firmware and an ACPI SPCR table, you can either use the **redirect=USEBIOSSETTINGS** parameter or the **redirect=COM***x* and **redirectbaudrate=** parameters. Then, you can add the [**/redirect**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-redirect) parameter to a boot entry.
+To enable EMS on a computer with ACPI BIOS firmware and an ACPI SPCR table, you can either use the **redirect=USEBIOSSETTINGS** parameter or the **redirect=COM***x* and **redirectbaudrate=** parameters. Then, you can add the [**/redirect**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) parameter to a boot entry.
 
 The following example demonstrates use of the **redirect=USEBIOSSETTINGS** parameter. The following Bootcfg command enables EMS console redirection on the first boot entry in the list.
 
@@ -125,7 +124,7 @@ multi(0)disk(0)rdisk(0)partition(2)\WINDOWS="Windows Server 2003, Standard" /fas
 
 ## Enabling EMS on a Computer with an SPCR Table in Windows Server 2008
 
-To enable EMS on a computer with ACPI BIOS firmware and an ACPI SPCR table, you can use the [**BCDEdit /emssettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--emssettings) and specify either the **BIOS** parameter or the **emsport** and **emsbaudrate** parameters. To enable EMS for a boot entry, use the [**BCDEdit /ems**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--ems) command.
+To enable EMS on a computer with ACPI BIOS firmware and an ACPI SPCR table, you can use the [**BCDEdit /emssettings**](./bcdedit--emssettings.md) and specify either the **BIOS** parameter or the **emsport** and **emsbaudrate** parameters. To enable EMS for a boot entry, use the [**BCDEdit /ems**](./bcdedit--ems.md) command.
 
 The following example demonstrates how to use the **BIOS** parameter. The following BCDEdit command enables EMS console redirection on the current boot entry.
 
@@ -136,7 +135,7 @@ bcdedit /ems on
 
 ## Enabling EMS on a computer with EFI firmware in operating systems prior to Windows Server 2008
 
-To enable EMS on a computer with EFI firmware, use Bootcfg to add the [**/redirect**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-redirect) parameter to a boot entry. Windows finds the out-of-band port and its settings in the firmware by reading the SPCR table and uses the same port and rate for EMS console redirection.
+To enable EMS on a computer with EFI firmware, use Bootcfg to add the [**/redirect**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) parameter to a boot entry. Windows finds the out-of-band port and its settings in the firmware by reading the SPCR table and uses the same port and rate for EMS console redirection.
 
 The following Bootcfg command enables EMS redirection on an Itanium-based computer. It uses the Bootcfg **/ems** switch with the ON argument to add the **/redirect** parameter to the boot entry. The **/id** switch identifies the boot entry.
 
@@ -164,7 +163,7 @@ OsFilePath:       \Device\HarddiskVolume3\WINDOWS
 
 ## Enabling EMS on a Computer with EFI Firmware in Windows Server 2008
 
-To enable EMS on a computer with EFI firmware, use the [**BCDEdit /ems**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--ems) command and specify a boot entry. Windows finds the out-of-band port and its settings in the firmware by reading the SPCR table and uses the same port and rate for EMS console redirection.
+To enable EMS on a computer with EFI firmware, use the [**BCDEdit /ems**](./bcdedit--ems.md) command and specify a boot entry. Windows finds the out-of-band port and its settings in the firmware by reading the SPCR table and uses the same port and rate for EMS console redirection.
 
 The following command enables EMS console redirection on the specified boot entry that has the identifier of {18b123cd-2bf6-11db-bfae-00e018e2b8db}.
 
@@ -198,7 +197,7 @@ If EMS is not enabled on any other boot entries, Bootcfg also deletes the EMS po
 
 ## Changing EMS Settings on a Computer running Windows Server 2008
 
-When you configure EMS on a boot entry on a computer that has ACPI BIOS firmware and an ACPI SPCR table, you can use the [**BCDEdit /emssettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--emssettings) command and specify either the **BIOS** option or the **emsport** and **emsbaudrate** options. If you use the **BIOS** option, do not set the **emsport** or **emsbaudrate** options.
+When you configure EMS on a boot entry on a computer that has ACPI BIOS firmware and an ACPI SPCR table, you can use the [**BCDEdit /emssettings**](./bcdedit--emssettings.md) command and specify either the **BIOS** option or the **emsport** and **emsbaudrate** options. If you use the **BIOS** option, do not set the **emsport** or **emsbaudrate** options.
 
 When you configure EMS on a computer that has EFI firmware, or with ACPI BIOS firmware and without an ACPI SPCR table, you can use the **BCDEdit /emssettings** command and specify the **emsport** and **emsbaudrate** options.
 
@@ -210,7 +209,7 @@ For example, the following command changes the EMS port to COM2 and changes the 
 bcdedit /emssettings EMSPORT:2 EMSBAUDRATE:57600
 ```
 
-To enable or disable EMS on a boot entry, use the [**BCDEdit /ems**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--ems) command.
+To enable or disable EMS on a boot entry, use the [**BCDEdit /ems**](./bcdedit--ems.md) command.
 
 For example, the following command enables EMS on a specific boot entry that has an identifier of {173075c9-2cb2-11dc-b426-001558c41f5c}..
 

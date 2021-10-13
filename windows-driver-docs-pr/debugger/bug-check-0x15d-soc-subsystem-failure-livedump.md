@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP
 description: The SOC_SUBSYSTEM_FAILURE_LIVEDUMP bug code has a value of 0x0000015D.
-ms.assetid: F7903E88-1706-46E6-A5D0-6972702058A8
 keywords: ["Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP", "Bug Check 0x14B SOC_SUBSYSTEM_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,7 +38,7 @@ The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D. This i
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Address of an <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_soc_subsystem_failure_details" data-raw-source="[SOC_SUBSYSTEM_FAILURE_DETAILS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_soc_subsystem_failure_details)">SOC_SUBSYSTEM_FAILURE_DETAILS</a></strong> structure.</p></td>
+<td align="left"><p>Address of an <strong><a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_soc_subsystem_failure_details" data-raw-source="[SOC_SUBSYSTEM_FAILURE_DETAILS](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_soc_subsystem_failure_details)">SOC_SUBSYSTEM_FAILURE_DETAILS</a></strong> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
@@ -58,8 +57,7 @@ The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D. This i
 
  
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
@@ -94,8 +92,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -113,11 +110,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
 

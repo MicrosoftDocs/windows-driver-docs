@@ -1,7 +1,6 @@
 ---
 title: Adding a PnP Device to a Running System
 description: Adding a PnP Device to a Running System
-ms.assetid: 73d14ba1-6cf1-44eb-8a98-8c2fe44c11bb
 keywords: ["PnP WDK kernel , adding device to running system", "Plug and Play WDK kernel , adding device to running system", "adding PnP device to running system", "enumerating PnP devices WDK PnP", "reporting PnP devices", "devnodes WDK PnP", "device nodes WDK PnP", "function drivers WDK PnP", "filter drivers WDK PnP", "AddDevice routine WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -19,7 +18,7 @@ Most of this discussion is also relevant to configuring a PnP device that is pre
 
 The following figure shows the first steps in configuring the device, starting from when the user plugs the hardware into the machine.
 
-![diagram illustrating enumerating and reporting a plug and play device](images/hotplug.png)
+![diagram illustrating enumerating and reporting a plug and play device.](images/hotplug.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 
@@ -35,27 +34,27 @@ The following notes correspond to the circled numbers in the previous figure:
 
 3.  The function driver for the bus device notifies the PnP manager that its set of child devices has changed.
 
-    The function driver notifies the PnP manager by calling [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) with a *Type* of **BusRelations**.
+    The function driver notifies the PnP manager by calling [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) with a *Type* of **BusRelations**.
 
 4.  The PnP manager queries the bus's drivers for the current list of devices on the bus.
 
-    The PnP manager sends an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) request to the device stack for the bus. The **Parameters.QueryDeviceRelations.Type** value is **BusRelations**, indicating that the PnP manager is asking for the current list of devices present on the bus (*bus relations*).
+    The PnP manager sends an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](./irp-mn-query-device-relations.md) request to the device stack for the bus. The **Parameters.QueryDeviceRelations.Type** value is **BusRelations**, indicating that the PnP manager is asking for the current list of devices present on the bus (*bus relations*).
 
     The PnP manager sends the IRP to the top driver in the device stack for the bus. According to the rules for PnP IRPs, each driver in the stack handles the IRP, if appropriate, and passes the IRP down to the next driver.
 
 5.  The function driver for the bus device handles the IRP.
 
-    See the reference page for [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) for detailed information about handling this IRP.
+    See the reference page for [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](./irp-mn-query-device-relations.md) for detailed information about handling this IRP.
 
     In this example, the USB hub driver handles this IRP for the hub *FDO*. The hub driver creates a *PDO* for the joystick device and includes a referenced pointer to the joystick PDO in its list of child devices returned with the IRP.
 
-    When the USB hub's parent bus driver (the USB host controller class/miniclass driver pair) completes the IRP, the IRP travels back up the device stack by means of any [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routines registered by the hub drivers.
+    When the USB hub's parent bus driver (the USB host controller class/miniclass driver pair) completes the IRP, the IRP travels back up the device stack by means of any [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines registered by the hub drivers.
 
 Note that the bus function driver reports a change in its list of children by requesting that the PnP manager query for its list of child devices. The resulting **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request is seen by all the drivers for the bus device. Typically, the bus function driver is the only driver to handle the IRP and report children. In some device stacks, a bus filter driver is present and participates in constructing the list of bus relations. One example is ACPI, which attaches as a bus filter driver for ACPI devices. In some device stacks, nonbus filter drivers handle the **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request, but this is not typical.
 
 At this point, the PnP manager has the current list of devices on the bus. The PnP manager then determines whether any devices are newly arrived or have been removed. In this example, there is one new device. The following figure shows the PnP manager creating a devnode for the new device and beginning to configure the device.
 
-![diagram illustrating creating a devnode for a new plug and play device](images/credvnd.png)
+![diagram illustrating creating a devnode for a new plug and play device.](images/credvnd.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 
@@ -73,7 +72,7 @@ The following notes correspond to the circled numbers in the previous figure:
 
     The PnP manager gathers information about a new device by sending IRPs to the device stack. These IRPs include the following:
 
-    -   [**IRP\_MN\_QUERY\_ID**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id), a separate IRP for each of the following types of hardware IDs:
+    -   [**IRP\_MN\_QUERY\_ID**](./irp-mn-query-id.md), a separate IRP for each of the following types of hardware IDs:
 
         **BusQueryDeviceID**
 
@@ -85,17 +84,17 @@ The following notes correspond to the circled numbers in the previous figure:
 
         **BusQueryContainerID**
 
-    -   [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities)
+    -   [**IRP\_MN\_QUERY\_CAPABILITIES**](./irp-mn-query-capabilities.md)
 
-    -   [**IRP\_MN\_QUERY\_DEVICE\_TEXT**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-text), a separate IRP for each of the following items:
+    -   [**IRP\_MN\_QUERY\_DEVICE\_TEXT**](./irp-mn-query-device-text.md), a separate IRP for each of the following items:
 
         **DeviceTextDescription**
 
         **DeviceTextLocationInformation**
 
-    -   [**IRP\_MN\_QUERY\_BUS\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-bus-information)
-    -   [**IRP\_MN\_QUERY\_RESOURCES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-resources)
-    -   [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-resource-requirements)
+    -   [**IRP\_MN\_QUERY\_BUS\_INFORMATION**](./irp-mn-query-bus-information.md)
+    -   [**IRP\_MN\_QUERY\_RESOURCES**](./irp-mn-query-resources.md)
+    -   [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](./irp-mn-query-resource-requirements.md)
 
     The PnP manager sends the IRPs listed above at this stage of processing a new PnP device, but not necessarily in the order listed, so you should not make assumptions about the order in which the IRPs are sent. Also, you should not assume that the PnP manager sends only the IRPs listed above.
 
@@ -121,47 +120,47 @@ The following notes correspond to the circled numbers in the previous figure:
 
         The PnP manager stores information, including the following, if it was supplied for the device:
 
-        **DeviceDesc** — from [**IRP\_MN\_QUERY\_DEVICE\_TEXT**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-text)
+        **DeviceDesc** — from [**IRP\_MN\_QUERY\_DEVICE\_TEXT**](./irp-mn-query-device-text.md)
 
         **Location** — from **IRP\_MN\_QUERY\_DEVICE\_TEXT**
 
-        **Capabilities** — the flags from [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities)
+        **Capabilities** — the flags from [**IRP\_MN\_QUERY\_CAPABILITIES**](./irp-mn-query-capabilities.md)
 
         **UINumber** — from **IRP\_MN\_QUERY\_CAPABILITIES**
 
-        **HardwareID** — from [**IRP\_MN\_QUERY\_ID**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id)
+        **HardwareID** — from [**IRP\_MN\_QUERY\_ID**](./irp-mn-query-id.md)
 
         **CompatibleIDs** — from **IRP\_MN\_QUERY\_ID**
 
         **ContainerID** — from **IRP\_MN\_QUERY\_ID**
 
-        **LogConf\\BootConfig** — from [**IRP\_MN\_QUERY\_RESOURCES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-resources)
+        **LogConf\\BootConfig** — from [**IRP\_MN\_QUERY\_RESOURCES**](./irp-mn-query-resources.md)
 
-        **LogConf\\BasicConfigVector** — from [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-resource-requirements)
+        **LogConf\\BasicConfigVector** — from [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](./irp-mn-query-resource-requirements.md)
 
 At this point, the PnP manager is ready to locate the function driver and filter drivers for the device, if any. (See the following figure.)
 
-![diagram illustrating finding function and filter drivers](images/finddrv.png)
+![diagram illustrating finding function and filter drivers.](images/finddrv.png)
 
 The following notes correspond to the numbered circles in the previous figure:
 
 1.  The kernel-mode PnP manager coordinates with the user-mode PnP manager and user-mode Setup components to find the function and filter drivers for the device, if there are any.
 
-    The kernel-mode PnP manager queues an event to the user-mode PnP manager, identifying a device that needs to be installed. Once a privileged user logs in, the user-mode components proceed with finding drivers. See the [device installation overview](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation) For information about Setup components and their role in installing a device.
+    The kernel-mode PnP manager queues an event to the user-mode PnP manager, identifying a device that needs to be installed. Once a privileged user logs in, the user-mode components proceed with finding drivers. See the [device installation overview](../install/overview-of-device-and-driver-installation.md) For information about Setup components and their role in installing a device.
 
 2.  The user-mode Setup components direct the kernel-mode PnP manager to load the function and filter drivers.
 
-    The user-mode components call back to kernel mode to get the drivers loaded, causing their [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routines to be called.
+    The user-mode components call back to kernel mode to get the drivers loaded, causing their [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routines to be called.
 
 The following figure shows the PnP manager loading the drivers (if appropriate), calling their *AddDevice* routines, and directing the drivers to start the device.
 
-![diagram illustrating calling adddevice routines and starting the new device](images/addstart.png)
+![diagram illustrating calling adddevice routines and starting the new device.](images/addstart.png)
 
 The following notes correspond to the numbered circles in the previous figure:
 
 1.  Lower-filter drivers
 
-    Before the function driver attaches to the device stack, the PnP manager processes any lower-filter drivers. For each lower-filter driver, the PnP manager calls the driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine if the driver is not yet loaded. Then the PnP manager calls the driver's *AddDevice* routine. In its *AddDevice* routine, the filter driver creates a filter device object (filter DO) and attaches it to the device stack ([**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioattachdevicetodevicestack)). Once it attaches its device object to the device stack, the driver is engaged as a driver for the device.
+    Before the function driver attaches to the device stack, the PnP manager processes any lower-filter drivers. For each lower-filter driver, the PnP manager calls the driver's [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine if the driver is not yet loaded. Then the PnP manager calls the driver's *AddDevice* routine. In its *AddDevice* routine, the filter driver creates a filter device object (filter DO) and attaches it to the device stack ([**IoAttachDeviceToDeviceStack**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack)). Once it attaches its device object to the device stack, the driver is engaged as a driver for the device.
 
     In the USB joystick example, there is one lower-filter driver for the device.
 
@@ -183,7 +182,7 @@ The following notes correspond to the numbered circles in the previous figure:
 
     -   Assigning resources
 
-        Earlier in the configuration process, the PnP manager gathered the hardware resource requirements for the device from the device's parent bus driver. After the full set of drivers is loaded for the device, the PnP manager sends an [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-filter-resource-requirements) request to the device stack. All drivers in the stack have the opportunity to handle this IRP and modify the device's resource requirements list, if necessary.
+        Earlier in the configuration process, the PnP manager gathered the hardware resource requirements for the device from the device's parent bus driver. After the full set of drivers is loaded for the device, the PnP manager sends an [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](./irp-mn-filter-resource-requirements.md) request to the device stack. All drivers in the stack have the opportunity to handle this IRP and modify the device's resource requirements list, if necessary.
 
         The PnP manager assigns resources to the device, if the device requires any, based on the device's requirements and the resources currently available.
 
@@ -193,19 +192,19 @@ The following notes correspond to the numbered circles in the previous figure:
 
     -   Starting the device (**IRP\_MN\_START\_DEVICE**)
 
-        Once the PnP manager assigns resources to the device, it sends an [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) IRP to the device stack to direct the drivers to start the device.
+        Once the PnP manager assigns resources to the device, it sends an [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) IRP to the device stack to direct the drivers to start the device.
 
     After the device is started, the PnP manager sends three more IRPs to the drivers for the device:
 
-    -   [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities)
+    -   [**IRP\_MN\_QUERY\_CAPABILITIES**](./irp-mn-query-capabilities.md)
 
         After the start IRP completes successfully, the PnP manager sends another **IRP\_MN\_QUERY\_CAPABILITIES** IRP to the device stack. All the drivers for the device have the option of handling the IRP. The PnP manager sends this IRP at this time, after all drivers are attached and the device is started, because the function or filter drivers might need to access the device to collect capability information.
 
-    -   [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-pnp-device-state)
+    -   [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](./irp-mn-query-pnp-device-state.md)
 
         This IRP gives a driver the opportunity to, for example, report that the device should not be displayed in user interfaces such as Device Manager and the Hotplug program. This is useful for devices that are present on a system but are not usable in the current configuration, such as a game port on a laptop that is not usable when the laptop is undocked.
 
-    -   [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) for bus relations
+    -   [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](./irp-mn-query-device-relations.md) for bus relations
 
         The PnP manager sends this IRP to determine whether the device has any child devices. If so, the PnP manager configures each child device.
 
@@ -214,12 +213,7 @@ The following notes correspond to the numbered circles in the previous figure:
 
 The GUID_PNP_LOCATION_INTERFACE interface supplies the SPDRP_LOCATION_PATHS Plug and Play (PnP) device property for a device.
 
-To implement this interface in your driver, handle the IRP_MN_QUERY_INTERFACE IRP with InterfaceType = GUID_PNP_LOCATION_INTERFACE. Your driver supplies a pointer to a PNP_LOCATION_INTERFACE structure that contains pointers to the individual routines of the interface. The [PnpGetLocationString routine](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pget_location_string) provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
-
-
-
- 
-
+To implement this interface in your driver, handle the IRP_MN_QUERY_INTERFACE IRP with InterfaceType = GUID_PNP_LOCATION_INTERFACE. Your driver supplies a pointer to a PNP_LOCATION_INTERFACE structure that contains pointers to the individual routines of the interface. The [PnpGetLocationString routine](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pget_location_string) provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
 
 
 

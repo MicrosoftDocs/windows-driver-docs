@@ -1,7 +1,6 @@
 ---
-title: devobj
+title: devobj (WinDbg)
 description: The devobj extension displays detailed information about a DEVICE_OBJECT structure.
-ms.assetid: cf722d95-fbd3-4d80-8679-f8fb348ab4b0
 keywords: ["devobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the device object. This can be the hexadecimal address of this structu
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for examples and applications of this extension command. For information about device objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 If *DeviceObject* specifies the name of the device but supplies no prefix, the prefix "\\Device\\" is assumed. Note that this command will check to see if *DeviceObject* is a valid address or device name before using the expression evaluator.
 

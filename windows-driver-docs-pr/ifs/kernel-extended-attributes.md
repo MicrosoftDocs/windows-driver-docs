@@ -19,7 +19,7 @@ EA's with the name prefix ``$Kernel`` can only be modified from kernel mode. Any
 It is recommended that a Kernel EA contains at least the following information:
 - USN UsnJournalID
   - The **UsnJournalID** field is a GUID that identifies the current incarnation of USN Journal File.  The USN Journal can be deleted and created from user mode per volume.  Each time the USN Journal is created a new **UsnJournalID** GUID will be generated.  With this field, you can tell if there was a period of time where the USN Journal was disabled and can revalidate.
-    - This value can be retrieved using [FSCTL_QUERY_USN_JOURNAL](https://docs.microsoft.com/windows/desktop/api/winioctl/ni-winioctl-fsctl_query_usn_journal).
+    - This value can be retrieved using [FSCTL_QUERY_USN_JOURNAL](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_usn_journal).
 - USN FileUSN
   - The **FileUSN** value contains the USN ID of the last change that was made to the file and is tracked inside the Master File Table (MFT) record for the given file.
     - When the USN Journal is deleted, **FileUSN** is reset to zero.
@@ -28,21 +28,21 @@ This information, along with any other a given usage might need, is then set on 
 
 
 ## Setting a Kernel Extended Attribute
-In order to set a Kernel EA, it must begin with the prefix ``"$Kernel."`` and be trailed by a valid EA name string. An attempt to set a Kernel EA from user mode will be silently ignored.  The request will return **STATUS_SUCCESS** but no actual EA modification will be made. To set a Kernel EA calling an API like [ZwSetEaFile](https://msdn.microsoft.com/library/windows/hardware/ff961908) or [FltSetEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltseteafile) from kernel mode is not sufficient.  This is because SMB supports the setting of EA’s across the network and those requests will be issued from kernel mode on the server.  
+In order to set a Kernel EA, it must begin with the prefix ``"$Kernel."`` and be trailed by a valid EA name string. An attempt to set a Kernel EA from user mode will be silently ignored.  The request will return **STATUS_SUCCESS** but no actual EA modification will be made. To set a Kernel EA calling an API like [ZwSetEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwseteafile) or [FltSetEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltseteafile) from kernel mode is not sufficient.  This is because SMB supports the setting of EA’s across the network and those requests will be issued from kernel mode on the server.  
 
-To set a Kernel EA the caller must also set the **IRP_MN_KERNEL_CALL** value in the MinorFunction field of the IRP (I/O request packet). Since the only way to set this field is by generating a custom IRP, the routine [FsRtlSetKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807493) has been exported from the FsRtl package as a support function to set up a Kernel EA.
+To set a Kernel EA the caller must also set the **IRP_MN_KERNEL_CALL** value in the MinorFunction field of the IRP (I/O request packet). Since the only way to set this field is by generating a custom IRP, the routine [FsRtlSetKernelEaFile](/previous-versions/mt807493(v=vs.85)) has been exported from the FsRtl package as a support function to set up a Kernel EA.
 
-You may not intermix the setting of normal and kernel EA’s in the same call to [FsRtlSetKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807493).  If you do this the operation will be failed with **STATUS_INTERMIXED_KERNEL_EA_OPERATION**.    Setting a Kernel EA will not generate a **USN_REASON_EA_CHANGE** record to the USN Journal; as a consequence, kernel EA's and regular EA's cannot be used in the same operation.  
+You may not intermix the setting of normal and kernel EA’s in the same call to [FsRtlSetKernelEaFile](/previous-versions/mt807493(v=vs.85)).  If you do this the operation will be failed with **STATUS_INTERMIXED_KERNEL_EA_OPERATION**.    Setting a Kernel EA will not generate a **USN_REASON_EA_CHANGE** record to the USN Journal; as a consequence, kernel EA's and regular EA's cannot be used in the same operation.  
 
 
 ## Querying an Extended Attribute
-Querying the EA’s on a file from user mode will return both normal and Kernel EA’s. They are returned to user mode to minimize any application compatibility issues. The normal [ZwQueryEaFile](https://msdn.microsoft.com/library/windows/hardware/ff961907) and [FltQueryEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltqueryeafile) operations will return both normal and kernel EA's from both user and kernel modes.
+Querying the EA’s on a file from user mode will return both normal and Kernel EA’s. They are returned to user mode to minimize any application compatibility issues. The normal [ZwQueryEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryeafile) and [FltQueryEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryeafile) operations will return both normal and kernel EA's from both user and kernel modes.
 
-When only a **FileObject** is available, using [FsRtlQueryKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807492) may be more convenient for use to query for Kernel EA's from kernel mode.
+When only a **FileObject** is available, using [FsRtlQueryKernelEaFile](/previous-versions/mt807492(v=vs.85)) may be more convenient for use to query for Kernel EA's from kernel mode.
 
 
 ## Querying Update Sequence Number Journal Information
-The [FSCTL_QUERY_USN_JOURNAL](https://docs.microsoft.com/windows/desktop/api/winioctl/ni-winioctl-fsctl_query_usn_journal) operation requires **SE_MANAGE_VOLUME_PRIVILEGE** even when issued from kernel mode unless the **IRP_MN_KERNEL_CALL** value was set in the MinorFunction field of the IRP. The routine **FsRtlKernelFsControlFile** has been exported from the FsRtl package in the Kernel to easily allow kernel mode components to issue this USN request.
+The [FSCTL_QUERY_USN_JOURNAL](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_usn_journal) operation requires **SE_MANAGE_VOLUME_PRIVILEGE** even when issued from kernel mode unless the **IRP_MN_KERNEL_CALL** value was set in the MinorFunction field of the IRP. The routine **FsRtlKernelFsControlFile** has been exported from the FsRtl package in the Kernel to easily allow kernel mode components to issue this USN request.
 
 **NOTE** Starting with Windows 10, version 1703 and later this operation no longer requires SE_MANAGE_VOLUME_PRIVILEGE.  
 
@@ -63,10 +63,10 @@ This delete of Kernel EA’s will be successful even in low memory situations.
 
 
 ## See Also
-[FltQueryEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltqueryeafile)  
-[FltSetEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltseteafile)  
-[FSCTL_QUERY_USN_JOURNAL](https://docs.microsoft.com/windows/desktop/api/winioctl/ni-winioctl-fsctl_query_usn_journal)  
-[FsRtlQueryKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807492)      
-[FsRtlSetKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807493)  
-[ZwQueryEaFile](https://msdn.microsoft.com/library/windows/hardware/ff961907)  
-[ZwSetEaFile](https://msdn.microsoft.com/library/windows/hardware/ff961908)  
+[FltQueryEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryeafile)  
+[FltSetEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltseteafile)  
+[FSCTL_QUERY_USN_JOURNAL](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_usn_journal)  
+[FsRtlQueryKernelEaFile](/previous-versions/mt807492(v=vs.85))      
+[FsRtlSetKernelEaFile](/previous-versions/mt807493(v=vs.85))  
+[ZwQueryEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryeafile)  
+[ZwSetEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwseteafile)

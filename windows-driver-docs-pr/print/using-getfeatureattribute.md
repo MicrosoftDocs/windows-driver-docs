@@ -1,7 +1,6 @@
 ---
 title: Using GetFeatureAttribute
 description: Using GetFeatureAttribute
-ms.assetid: e5050cb1-c178-405d-bb0e-fd7827198bca
 keywords:
 - GetFeatureAttribute
 ms.date: 04/20/2017
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 This function is supported only for PPD features. If a certain attribute is not available, **GetFeatureAttribute** returns E\_INVALIDARG.
 
-In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/ne-printoem-_eattribute_datatype) enumerated type.
+In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
 <table>
 <colgroup>
@@ -78,9 +77,4 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
  
 
  
-
- 
-
-
-
 

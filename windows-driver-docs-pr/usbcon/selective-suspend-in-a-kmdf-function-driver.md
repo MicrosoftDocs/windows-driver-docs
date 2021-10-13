@@ -1,5 +1,5 @@
 ---
-Description: This topic describes how KMDF function drivers support USB selective suspend.
+description: This topic describes how KMDF function drivers support USB selective suspend.
 title: Selective suspend in USB KMDF function drivers
 ms.date: 05/09/2018
 ms.localizationpriority: medium
@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)
--   [**WdfDeviceAssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings)
--   [**WdfDeviceStopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle)
+-   [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)
+-   [**WdfDeviceAssignSxWakeSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings)
+-   [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle)
 
 This topic describes how KMDF function drivers support USB selective suspend.
 
@@ -45,7 +45,7 @@ If a KMDF function driver supports selective suspend, KMDF tracks the I/O activi
 
 If an I/O request arrives at a power-managed queue that belongs to the device object before the idle time-out period expires, the framework cancels the idle timer and does not suspend the device.
 
-When the idle timer expires, KMDF issues the requests that are required to put the USB device in the suspended state. If a function driver uses a continuous reader on a USB endpoint, the reader’s repeated polling does not count as activity toward the KMDF idle timer. However, in the [*EvtDeviceD0Exit*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) callback function, the USB driver must manually stop the continuous reader and any other I/O targets that are fed by queues that are not power managed to ensure that the driver does not send I/O requests while the device is not in the working state. To stop the targets, the driver calls [**WdfIoTargetStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) and specifies **WdfIoTargetWaitForSentIoToComplete** as the target action. In response, the framework stops the I/O target only after all I/O requests that are in the target’s I/O queue have been completed and any associated I/O completion callbacks have run.
+When the idle timer expires, KMDF issues the requests that are required to put the USB device in the suspended state. If a function driver uses a continuous reader on a USB endpoint, the reader’s repeated polling does not count as activity toward the KMDF idle timer. However, in the [*EvtDeviceD0Exit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) callback function, the USB driver must manually stop the continuous reader and any other I/O targets that are fed by queues that are not power managed to ensure that the driver does not send I/O requests while the device is not in the working state. To stop the targets, the driver calls [**WdfIoTargetStop**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) and specifies **WdfIoTargetWaitForSentIoToComplete** as the target action. In response, the framework stops the I/O target only after all I/O requests that are in the target’s I/O queue have been completed and any associated I/O completion callbacks have run.
 
 By default, KMDF transitions the device out of D0 and into the device power state that the driver specified in the idle settings. As part of the transition, KMDF calls the driver’s power callback functions in the same way that it would for any other power-down sequence.
 
@@ -53,11 +53,11 @@ After the device has been suspended, the framework automatically resumes the dev
 
 -   An I/O request arrives for any of the driver’s power-managed queues.
 -   The user disables USB selective suspend by using Device Manager.
--   The driver calls [**WdfDeviceStopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle), as described in [Preventing Device Suspension](#preventsusp).
+-   The driver calls [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle), as described in [Preventing Device Suspension](#preventsusp).
 
 To resume the device, KMDF sends a power-up request down the device stack and then invokes the driver’s callback functions in the same way that it would for any other power-up sequence.
 
-For detailed information about the callbacks that are involved in the power-down and power-up sequences, see the [Plug and Play and Power Management in WDF Drivers](http://download.microsoft.com/download/5/d/6/5d6eaf2b-7ddf-476b-93dc-7cf0072878e6/WDF-pnpPower.docx) white paper.
+For detailed information about the callbacks that are involved in the power-down and power-up sequences, see the [Plug and Play and Power Management in WDF Drivers](https://download.microsoft.com/download/5/d/6/5d6eaf2b-7ddf-476b-93dc-7cf0072878e6/WDF-pnpPower.docx) white paper.
 
 ## Supporting USB selective suspend in a KMDF function driver
 
@@ -70,13 +70,13 @@ To implement USB selective suspend in a KMDF function driver:
 
 **Initializing Power Policy Settings in a KMDF Function Driver**
 
-To configure support for USB selective suspend, a KMDF driver uses the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure. The driver must first initialize the structure and can then set fields that provide details about the capabilities of the driver and its device. Typically, the driver fills in this structure in its *EvtDriverDeviceAdd* or *EvtDevicePrepareHardware* function.
+To configure support for USB selective suspend, a KMDF driver uses the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure. The driver must first initialize the structure and can then set fields that provide details about the capabilities of the driver and its device. Typically, the driver fills in this structure in its *EvtDriverDeviceAdd* or *EvtDevicePrepareHardware* function.
 
 **To initialize the WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS structure**
 
-After the driver creates the device object, the driver uses the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdf_device_power_policy_idle_settings_init) function to initialize the structure. This function takes two arguments:
+After the driver creates the device object, the driver uses the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS\_INIT**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_device_power_policy_idle_settings_init) function to initialize the structure. This function takes two arguments:
 
--   A pointer to the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure to initialize.
+-   A pointer to the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure to initialize.
 -   An enumeration value that indicates support for selective suspend. The driver should specify **IdleUsbSelectiveSuspend**.
 
 If the driver specifies **IdleUsbSelectiveSuspend**, the function initializes the structure’s members as follows:
@@ -88,13 +88,13 @@ If the driver specifies **IdleUsbSelectiveSuspend**, the function initializes th
 
 **To configure USB selective suspend**
 
-After the driver initializes the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure, the driver can set other fields in the structure and then call **WdfDeviceAssignS0IdleSettings** to pass these settings to the framework. The following fields apply to USB function drivers:
+After the driver initializes the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure, the driver can set other fields in the structure and then call **WdfDeviceAssignS0IdleSettings** to pass these settings to the framework. The following fields apply to USB function drivers:
 
 -   IdleTimeout—The interval, in milliseconds, that must elapse without receiving an I/O request before the framework considers the device idle. The driver can specify a ULONG value or can accept the default.
 -   UserControlOfIdleSettings—Whether the user can modify the device’s idle settings. Possible values are IdleDoNotAllowUserControl and IdleAllowUserControl.
 -   DxState—The device power state to which the framework suspends the device. Possible values are PowerDeviceD1, PowerDeviceD2, and PowerDeviceD3.
 
-    USB drivers should not change the initial setting of this value. The [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdf_device_power_policy_idle_settings_init) function sets this value to PowerDeviceMaximum, which ensures that the framework chooses the correct value based on the device capabilities.
+    USB drivers should not change the initial setting of this value. The [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS\_INIT**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_device_power_policy_idle_settings_init) function sets this value to PowerDeviceMaximum, which ensures that the framework chooses the correct value based on the device capabilities.
 
 The following code snippet is from the Osrusbfx2 sample driver’s Device.c file:
 
@@ -117,17 +117,17 @@ if ( !NT_SUCCESS(status)) {
 }
 ```
 
-In the example, the driver calls [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdf_device_power_policy_idle_settings_init), specifying **IdleUsbSelectiveSuspend**. The driver sets **IdleTimeout** to 10,000 milliseconds (10 seconds) and accepts the framework defaults for **DxState** and **UserControlOfIdleSettings**. As a result, the framework transitions the device to the D3 state when it is idle and creates a Device Manager property page that allows users with administrator privilege to enable or disable device idle support. The driver then calls [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) to enable idle support and register these settings with the framework.
+In the example, the driver calls [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS\_INIT**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_device_power_policy_idle_settings_init), specifying **IdleUsbSelectiveSuspend**. The driver sets **IdleTimeout** to 10,000 milliseconds (10 seconds) and accepts the framework defaults for **DxState** and **UserControlOfIdleSettings**. As a result, the framework transitions the device to the D3 state when it is idle and creates a Device Manager property page that allows users with administrator privilege to enable or disable device idle support. The driver then calls [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) to enable idle support and register these settings with the framework.
 
-A driver can call [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)any time after it creates the device object. Although most drivers call this method initially from the *EvtDriverDeviceAdd* callback, this might not always be possible or even desirable. If a driver supports multiple devices or device versions, the driver might not know all device capabilities until it queries the hardware. Such drivers can postpone calling **WdfDeviceAssignS0IdleSettings** until the *EvtDevicePrepareHardware* callback.
+A driver can call [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)any time after it creates the device object. Although most drivers call this method initially from the *EvtDriverDeviceAdd* callback, this might not always be possible or even desirable. If a driver supports multiple devices or device versions, the driver might not know all device capabilities until it queries the hardware. Such drivers can postpone calling **WdfDeviceAssignS0IdleSettings** until the *EvtDevicePrepareHardware* callback.
 
-At any time after its initial call to [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings), the driver can change the idle time-out value and the device state in which the device idles. To change one or more settings, the driver simply initializes another [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure as described earlier and calls **WdfDeviceAssignS0IdleSettings** again.
+At any time after its initial call to [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings), the driver can change the idle time-out value and the device state in which the device idles. To change one or more settings, the driver simply initializes another [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure as described earlier and calls **WdfDeviceAssignS0IdleSettings** again.
 
 ### <a href="" id="preventsusp"></a>Preventing USB device suspension
 
-Sometimes, a USB device should not be powered down even if no I/O requests are present within the time-out period—typically when a handle is open to the device or the device is charging. A USB driver can prevent the framework from suspending an idle device in such situations by calling [**WdfDeviceStopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle) and calling [**WdfDeviceResumeIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceresumeidle) when it is again acceptable for the device to be suspended.
+Sometimes, a USB device should not be powered down even if no I/O requests are present within the time-out period—typically when a handle is open to the device or the device is charging. A USB driver can prevent the framework from suspending an idle device in such situations by calling [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) and calling [**WdfDeviceResumeIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceresumeidle) when it is again acceptable for the device to be suspended.
 
-[**WdfDeviceStopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle) stops the idle timer. If the **IdleTimeout** period has not expired and the device has not yet been suspended, the framework cancels the idle timer and does not suspend the device. If the device has already been suspended, the framework returns the device to the working state. **WdfDeviceStopIdle**does not prevent the framework from suspending the device when the system changes to an Sx sleep state. Its only effect is to prevent device suspension while the system is in the S0 working state. [**WdfDeviceResumeIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceresumeidle) restarts the idle timer. These two methods manage a reference count on the device, so if the driver calls **WdfDeviceStopIdle** several times, the framework does not suspend the device until the driver has called **WdfDeviceResumeIdle** the same number of times. A driver must not call **WdfDeviceResumeIdle**without first calling **WdfDeviceStopIdle**.
+[**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) stops the idle timer. If the **IdleTimeout** period has not expired and the device has not yet been suspended, the framework cancels the idle timer and does not suspend the device. If the device has already been suspended, the framework returns the device to the working state. **WdfDeviceStopIdle**does not prevent the framework from suspending the device when the system changes to an Sx sleep state. Its only effect is to prevent device suspension while the system is in the S0 working state. [**WdfDeviceResumeIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceresumeidle) restarts the idle timer. These two methods manage a reference count on the device, so if the driver calls **WdfDeviceStopIdle** several times, the framework does not suspend the device until the driver has called **WdfDeviceResumeIdle** the same number of times. A driver must not call **WdfDeviceResumeIdle**without first calling **WdfDeviceStopIdle**.
 
 ### Including a registry key (HID drivers only)
 
@@ -148,16 +148,16 @@ For USB devices, wakeup merely indicates that the device itself can initiate the
 
 KMDF USB function drivers do not require any code to support wake from S0 because KMDF provides this capability as part of the selective suspend mechanism. However, to support remote wake when the system is in Sx, a function driver must:
 
--   Check whether the device supports remote wake by calling [**WdfUsbTargetDeviceRetrieveInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveinformation).
--   Enable remote wake by initializing wake settings and calling [**WdfDeviceAssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings).
+-   Check whether the device supports remote wake by calling [**WdfUsbTargetDeviceRetrieveInformation**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveinformation).
+-   Enable remote wake by initializing wake settings and calling [**WdfDeviceAssignSxWakeSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings).
 
 KMDF drivers typically configure wake support at the same time that they configure support for USB selective suspend in the *EvtDriverDeviceAdd* or *EvtDevicePrepareHardware* function.
 
 ### Checking device capabilities
 
-Before a KMDF USB function driver initializes its power policy settings for idle and wake, it should verify that the device supports remote wake. To get information about device hardware features, the driver initializes a [**WDF\_USB\_DEVICE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/ns-wdfusb-_wdf_usb_device_information) structure and calls [**WdfUsbTargetDeviceRetrieveInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveinformation), typically in its *EvtDriverDeviceAdd* or *EvtDevicePrepareHardware* callback.
+Before a KMDF USB function driver initializes its power policy settings for idle and wake, it should verify that the device supports remote wake. To get information about device hardware features, the driver initializes a [**WDF\_USB\_DEVICE\_INFORMATION**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_device_information) structure and calls [**WdfUsbTargetDeviceRetrieveInformation**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveinformation), typically in its *EvtDriverDeviceAdd* or *EvtDevicePrepareHardware* callback.
 
-In the call to [**WdfUsbTargetDeviceRetrieveInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveinformation), the driver passes a handle to the device object and a pointer to the initialized [**WDF\_USB\_DEVICE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/ns-wdfusb-_wdf_usb_device_information) structure. Upon successful return from the function, the Traits field of the structure contains flags that indicate whether the device is self-powered, can operate at high speed, and supports remote wake.
+In the call to [**WdfUsbTargetDeviceRetrieveInformation**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveinformation), the driver passes a handle to the device object and a pointer to the initialized [**WDF\_USB\_DEVICE\_INFORMATION**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_device_information) structure. Upon successful return from the function, the Traits field of the structure contains flags that indicate whether the device is self-powered, can operate at high speed, and supports remote wake.
 
 The following example from the Osrusbfx2 KMDF sample shows how to call this method to determine whether a device supports remote wake. After these lines of code have run, the waitWakeEnable variable contains TRUE if the device supports remote wake and FALSE if it does not:
 
@@ -181,8 +181,8 @@ In USB terminology, a USB device is enabled for remote wakeup when its DEVICE\_R
 
 **To initialize wake settings**
 
-1.  Call [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdf_device_power_policy_wake_settings_init) to initialize a [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_wake_settings) structure. This function sets the structure's **Enabled** member to **WdfUseDefault**, sets the **DxState** member to **PowerDeviceMaximum**, and sets the **UserControlOfWakeSettings** member to **WakeAllowUserControl**.
-2.  Call [**WdfDeviceAssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings) with the initialized structure. As a result, the device is enabled to wake from the D3 state and the user can enable or disable the wake signal from the device property page in Device Manager.
+1.  Call [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS\_INIT**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_device_power_policy_wake_settings_init) to initialize a [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_wake_settings) structure. This function sets the structure's **Enabled** member to **WdfUseDefault**, sets the **DxState** member to **PowerDeviceMaximum**, and sets the **UserControlOfWakeSettings** member to **WakeAllowUserControl**.
+2.  Call [**WdfDeviceAssignSxWakeSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings) with the initialized structure. As a result, the device is enabled to wake from the D3 state and the user can enable or disable the wake signal from the device property page in Device Manager.
 
 The following code snippet from the Osrusbfx2 sample shows how to initialize wake settings to their default values:
 
@@ -201,7 +201,4 @@ For USB devices that support selective suspend, the underlying bus driver prepar
 For the same reason, USB function drivers rarely require a *EvtDeviceWakeFromS0Triggered* or *EvtDeviceWakeFromSxTriggered* callback. Instead, the framework and the underlying bus driver handle all requirements for returning the device to the working state.
 
 ## Related topics
-[Selective suspend in USB drivers (WDF)](selective-suspend-in-usb-drivers-wdf.md)  
-
-
-
+[Selective suspend in USB drivers (WDF)](selective-suspend-in-usb-drivers-wdf.md)

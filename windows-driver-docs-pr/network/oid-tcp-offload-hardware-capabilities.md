@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES
 description: This topic describes the OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES object identifier (OID). 
-ms.assetid: 9958F93C-0D68-428B-A25C-7FF6E4F37702
 keywords:
 - OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
 ms.date: 11/01/2017
@@ -16,23 +15,20 @@ Set requests are not supported.
 
 ## Remarks
 
-NDIS handles this OID for miniport drivers. Miniport drivers report miniport adapter hardware capabilities to NDIS. For information about reporting task offload hardware capabilites to NDIS from a miniport driver and from NDIS to overlying drivers, see [NDIS_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload).
+NDIS handles this OID for miniport drivers. Miniport drivers report miniport adapter hardware capabilities to NDIS. For information about reporting task offload hardware capabilites to NDIS from a miniport driver and from NDIS to overlying drivers, see [NDIS_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload).
 
-The **InformationBuffer** member of the [NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains an [NDIS_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload) structure. NDIS returns NDIS_STATUS_BUFFER_TOO_SHORT if the buffer is not big enough.
+The **InformationBuffer** member of the [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains an [NDIS_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure. NDIS returns NDIS_STATUS_BUFFER_TOO_SHORT if the buffer is not big enough.
 
 After determining the miniport adapter's hardware capabilities, the overlying applications or drivers can use the [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md) OID to enable capabilities that are currently reported as not enabled by the [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md) OID.
 
 ### See also
 
-[NDIS_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload)  
-[NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)  
+[NDIS_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload)  
+[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)  
 [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md)  
 [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md)  
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

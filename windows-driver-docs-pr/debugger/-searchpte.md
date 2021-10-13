@@ -1,7 +1,6 @@
 ---
-title: searchpte
+title: searchpte (WinDbg)
 description: The searchpte extension searches physical memory for the specified page frame number (PFN).
-ms.assetid: b9bac11e-605b-4064-b078-d3171b59da3b
 keywords: ["searchpte Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Displays help for this extension in the Debugger Command window.
 
 For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 To stop execution at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # DEBUG\_ATTACH\_XXX
 
-The DEBUG\_ATTACH\_*XXX* bit-flags described in this topic control how the debugger engine attaches to a user-mode process. For the DEBUG_ATTACH_XXX options used when attaching to a kernel target, see the [IDebugClient::AttachKernel method](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugclient-attachkernel).
+The DEBUG\_ATTACH\_*XXX* bit-flags described in this topic control how the debugger engine attaches to a user-mode process. For the DEBUG_ATTACH_XXX options used when attaching to a kernel target, see the [IDebugClient::AttachKernel method](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient-attachkernel).
 
 The possible values include the following.
 
@@ -30,7 +30,7 @@ The possible values include the following.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Attach to the target noninvasively.  For more information about noninvasive debugging, see <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/noninvasive-debugging--user-mode-" data-raw-source="[Noninvasive Debugging (User Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/noninvasive-debugging--user-mode-)">Noninvasive Debugging (User Mode)</a>.</p>
+<p>Attach to the target noninvasively.  For more information about noninvasive debugging, see <a href="/windows-hardware/drivers/debugger/noninvasive-debugging--user-mode-" data-raw-source="[Noninvasive Debugging (User Mode)](./noninvasive-debugging--user-mode-.md)">Noninvasive Debugging (User Mode)</a>.</p>
 <p>If this flag is set, then the flags DEBUG_ATTACH_EXISTING, DEBUG_ATTACH_INVASIVE_NO_INITIAL_BREAK, and DEBUG_ATTACH_INVASIVE_RESUME_PROCESS must not be set.</p>
 </td>
 </tr>
@@ -40,7 +40,7 @@ The possible values include the following.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Re-attach to an application to which a debugger has already attached (and possibly abandoned).  For more information about re-attaching to targets, see <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/-attach--attach-to-process-" data-raw-source="[.attach (Attach to Process)](https://docs.microsoft.com/windows-hardware/drivers/debugger/-attach--attach-to-process-)">.attach (Attach to Process)</a>.</p>
+<p>Re-attach to an application to which a debugger has already attached (and possibly abandoned).  For more information about re-attaching to targets, see <a href="/windows-hardware/drivers/debugger/-attach--attach-to-process-" data-raw-source="[.attach (Attach to Process)](./-attach--attach-to-process-.md)">.attach (Attach to Process)</a>.</p>
 <p>If this flag is set, then the other DEBUG_ATTACH_<i>XXX</i> flags must not be set.</p>
 </td>
 </tr>
@@ -77,8 +77,7 @@ The possible values include the following.
 </table>
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -92,12 +91,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

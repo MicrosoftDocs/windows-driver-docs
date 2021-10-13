@@ -1,7 +1,6 @@
 ---
 title: Accessing Driver Settings from UI Plug-Ins
 description: Accessing Driver Settings from UI Plug-Ins
-ms.assetid: 898e1cfb-851b-403e-a88b-d38c505c1390
 keywords:
 - user interface plug-ins WDK print , accessing driver settings
 - UI plug-ins WDK print , accessing driver settings
@@ -16,18 +15,13 @@ ms.localizationpriority: medium
 
 
 
-A UI plug-in can obtain the current status of printer features and other internal information. The [**IPrintOemDriverUI::DrvGetDriverSetting**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriverui-drvgetdriversetting) COM interface method is implemented within the printer interface DLL for Microsoft's printer drivers and can be called by UI plug-ins.
+A UI plug-in can obtain the current status of printer features and other internal information. The [**IPrintOemDriverUI::DrvGetDriverSetting**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvgetdriversetting) COM interface method is implemented within the printer interface DLL for Microsoft's printer drivers and can be called by UI plug-ins.
 
 Additionally, the following methods allow UI plug-ins to modify driver information:
 
-[**IPrintOemDriverUI::DrvUpdateUISetting**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriverui-drvupdateuisetting) allows a UI plug-in to notify the driver when a user has modified driver settings.
+[**IPrintOemDriverUI::DrvUpdateUISetting**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupdateuisetting) allows a UI plug-in to notify the driver when a user has modified driver settings.
 
-[**IPrintOemDriverUI::DrvUpgradeRegistrySetting**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriverui-drvupgraderegistrysetting) allows a UI plug-in to modify device settings in the registry, so that registry settings used by older driver versions can be updated.
-
- 
+[**IPrintOemDriverUI::DrvUpgradeRegistrySetting**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupgraderegistrysetting) allows a UI plug-in to modify device settings in the registry, so that registry settings used by older driver versions can be updated.
 
  
-
-
-
 

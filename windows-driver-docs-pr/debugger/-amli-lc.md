@@ -1,7 +1,6 @@
 ---
-title: amli lc
+title: amli lc (WinDbg)
 description: The amli lc extension lists all active ACPI contexts.
-ms.assetid: 070db570-ab8c-47ce-88fa-dc5f16c1c2ee
 keywords: ["amli lc Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -35,8 +34,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 Each context corresponds to a method currently running in the AML interpreter.
 

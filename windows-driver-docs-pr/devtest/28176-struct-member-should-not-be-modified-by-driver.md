@@ -1,7 +1,6 @@
 ---
-title: C28176
+title: C28176 warning
 description: Warning C28176 The member of struct should not be modified by a driver.
-ms.assetid: 837b2dcd-0682-460f-a3ae-ebd82bcc451b
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
@@ -18,13 +17,7 @@ warning C28176: The member of struct should not be modified by a driver
 
 This warning indicates that a driver changed an undocumented structure member that drivers should never change.
 
-Drivers should not write to the specified undocumented structure member. For most undocumented members of opaque or partially opaque structures, this prohibition is absolute. However, drivers may write certain undocumented structure members from within particular routines. For example, the [**DEVICE\_OBJECT.NextDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) member can be written only within a DRIVER\_INITIALIZE or DRIVER\_UNLOAD routine.
+Drivers should not write to the specified undocumented structure member. For most undocumented members of opaque or partially opaque structures, this prohibition is absolute. However, drivers may write certain undocumented structure members from within particular routines. For example, the [**DEVICE\_OBJECT.NextDevice**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) member can be written only within a DRIVER\_INITIALIZE or DRIVER\_UNLOAD routine.
 
  
-
- 
-
-
-
-
 

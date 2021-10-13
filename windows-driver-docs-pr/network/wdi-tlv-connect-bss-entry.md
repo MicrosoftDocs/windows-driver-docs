@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CONNECT_BSS_ENTRY
 description: WDI_TLV_CONNECT_BSS_ENTRY is a TLV that contains a list of candidate connect BSS entries.
-ms.assetid: 0D74B2DE-9224-4FDF-8EA8-B22CEC0B5F26
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CONNECT_BSS_ENTRY Network Drivers Starting with Windows Vista
@@ -38,12 +37,11 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_EXTRA\_ASSOCIATION\_REQUEST\_IES**](wdi-tlv-extra-association-request-ies.md) |                                | X        | The IE to be included in the (re)association request frame for this BSSID. If present, this should be included in addition to the common IE.                  |
 | [**WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS**](wdi-tlv-ft-initial-assoc-parameters.md)     |                                | X        | The initial Mobility Domain association parameters.                                                                                                           |
 | [**WDI\_TLV\_FT\_REASSOC\_PARAMETERS**](wdi-tlv-ft-reassoc-parameters.md)                  |                                | X        | The fast transition parameters (MDIE, R0KH-ID, PMKR0Name, SNonce). This is only present for Fast Transition (not during initial mobility domain association). |
-| [**WDI\_TLV\_BSS\_SELECTION\_PARAMETERS**](wdi-tlv-bss-selection-parameters.md)            |                                | X        | [**WDI\_BSS\_SELECTION\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_bss_selection_flags) that provide information used by the host for BSS selection.                               |
+| [**WDI\_TLV\_BSS\_SELECTION\_PARAMETERS**](wdi-tlv-bss-selection-parameters.md)            |                                | X        | [**WDI\_BSS\_SELECTION\_FLAGS**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_bss_selection_flags) that provide information used by the host for BSS selection.                               |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -67,9 +65,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

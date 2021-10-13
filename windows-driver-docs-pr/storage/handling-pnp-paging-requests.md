@@ -1,7 +1,6 @@
 ---
 title: Handling PnP Paging Requests
 description: Handling PnP Paging Requests
-ms.assetid: c30c70d9-69c6-42d7-ae69-9c2421ba1d53
 keywords:
 - storage filter drivers WDK , PnP
 - filter drivers WDK storage , PnP
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_handling_pnp_paging_requests_kg"></span><span id="DDK_HANDLING_PNP_PAGING_REQUESTS_KG"></span>
 
 
-A storage filter driver must handle PnP paging requests ([**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp) with [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-device-usage-notification) and **Parameters.UsageNotification.Type** set to **DeviceUsageTypePaging**) if the function driver it is filtering handles this IRP.
+A storage filter driver must handle PnP paging requests ([**IRP\_MJ\_PNP**](../kernel/irp-mj-pnp.md) with [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](../kernel/irp-mn-device-usage-notification.md) and **Parameters.UsageNotification.Type** set to **DeviceUsageTypePaging**) if the function driver it is filtering handles this IRP.
 
 The following items must be added to the DeviceExtension of the Filter DO:
 
@@ -126,9 +125,4 @@ case DeviceUsageTypePaging: {
 ```
 
  
-
- 
-
-
-
 

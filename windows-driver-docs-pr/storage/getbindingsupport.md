@@ -1,7 +1,6 @@
 ---
 title: GetBindingSupport function
 description: The GetBindingSupport method retrieves the binding capabilities that are currently enabled for the indicated port.
-ms.assetid: 50c90379-613f-42f1-80fe-7bc1b77a53bf
 keywords: ["GetBindingSupport function Storage Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetBindingSupport** method retrieves the binding capabilities that are currently enabled for the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetBindingSupport(
@@ -32,32 +30,28 @@ void GetBindingSupport(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN\[8\]*   
 A worldwide name that indicates the port whose persistent bindings will be retrieved.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetBindingSupport\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_getbindingsupport_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetBindingSupport\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingsupport_out) structure.
 
 *BindType*   
 A bitmap that indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the [HBA\_BIND\_TYPE](hba-bind-type.md) WMI class qualifier.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This **GetBindingSupport** method returns the binding capability that is currently enabled, whereas the [**GetBindingCapability**](getbindingcapability.md) method indicates the binding capability of the port without reference to whether particular bindings are enabled or not.
 
 This WMI method belongs to the [MSFC\_HBAFCPInfo WMI Class](msfc-hbafcpinfo-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,16 +81,9 @@ Requirements
 
 [**GetBindingSupport**](getbindingsupport.md)
 
-[**GetBindingSupport\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_getbindingsupport_in)
+[**GetBindingSupport\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingsupport_in)
 
-[**GetBindingSupport\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_getbindingsupport_out)
-
- 
+[**GetBindingSupport\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getbindingsupport_out)
 
  
-
-
-
-
-
 

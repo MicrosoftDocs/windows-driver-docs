@@ -1,7 +1,6 @@
 ---
 title: MIDI Stream Data Range
 description: MIDI Stream Data Range
-ms.assetid: 392eadf7-9c6e-4527-bc84-a2916623c154
 keywords:
 - MIDI stream data ranges WDK audio
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="midi_stream_data_range"></span><span id="MIDI_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_music) structure to describe the data range for a MIDI stream.
+This example uses a [**KSDATARANGE\_MUSIC**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structure to describe the data range for a MIDI stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_MUSIC);
@@ -31,9 +30,4 @@ This example uses a [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-
 ```
 
  
-
- 
-
-
-
 

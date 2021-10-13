@@ -1,14 +1,13 @@
 ---
 title: MobileBroadbandInfo XML schema definition
 description: MobileBroadbandInfo XML schema definition
-ms.assetid: 4d4a8f0a-99e5-429b-bc56-fdc4818b0a91
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # MobileBroadbandInfo XML schema definition
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following is the namespace of the MobileBroadbandInfo XML schema:
 
@@ -104,12 +103,3 @@ The following is a definition of the MobileBroadbandInfo schema.
 
 </xs:schema>
 ```
-
- 
-
- 
-
-
-
-
-

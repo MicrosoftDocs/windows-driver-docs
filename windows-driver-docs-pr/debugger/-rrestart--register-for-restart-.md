@@ -1,7 +1,6 @@
 ---
 title: .rrestart (Register for Restart)
 description: The .rrestart command registers the debugging session for restart in case of a reboot or an application failure.
-ms.assetid: 8984DBD8-380D-4EB2-95B1-16764153FCF7
 keywords: [".rrestart (Register for Restart) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,8 +21,7 @@ The **.rrestart** command registers the debugging session for restart in case of
 .rrestart
 ```
 
-Remarks
--------
+## Remarks
 
 This command does not work for elevated debugger sessions.
 

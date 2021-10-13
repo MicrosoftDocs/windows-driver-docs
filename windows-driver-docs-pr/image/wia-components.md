@@ -1,7 +1,6 @@
 ---
 title: WIA Components
 description: WIA Components
-ms.assetid: e75b8929-c16a-4c7a-9064-4fcb104bfa41
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 WIA consists of several layers that intercede between the user and the hardware. The user interacts with the WIA application, which can have optional user interfaces. This application communicates with the WIA service, which sends the user's requests to the minidriver. The minidriver communicates with the relevant kernel-mode bus driver. Finally, the bus driver communicates with the hardware. The following diagram illustrates the software components that make up the WIA interface.
 
-![diagram illustrating the software components that make up the wia interface](images/art-1.png)
+![diagram illustrating the software components that make up the wia interface.](images/art-1.png)
 
 ### Imaging Applications
 
@@ -99,9 +98,9 @@ The [WIA utility library](wia-utility-library.md) includes a collection of debug
 
 ### WIA Minidrivers
 
-[WIA minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) are vendor-supplied, user-mode components that direct WIA property changes and commands to an imaging device. A minidriver implements the WIA DDI, which the WIA service calls to communicate with the minidriver.
+[WIA minidrivers](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) are vendor-supplied, user-mode components that direct WIA property changes and commands to an imaging device. A minidriver implements the WIA DDI, which the WIA service calls to communicate with the minidriver.
 
-A WIA minidriver provides a device-specific, user-mode interface to a kernel-mode still image driver, which drives the imaging device through a driver, such as a USB driver. A minidriver communicates with the kernel-mode drivers by calling the [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) Microsoft Win32 functions (which are described in the Microsoft Windows SDK documentation).
+A WIA minidriver provides a device-specific, user-mode interface to a kernel-mode still image driver, which drives the imaging device through a driver, such as a USB driver. A minidriver communicates with the kernel-mode drivers by calling the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) Microsoft Win32 functions (which are described in the Microsoft Windows SDK documentation).
 
 An imaging application cannot directly call the WIA minidriver. Only the WIA service can call the driver directly.
 
@@ -113,14 +112,9 @@ Microsoft provides Microsoft Windows Driver Model (WDM)-based kernel-mode still 
 
 A vendor must provide a kernel-mode still image driver only if its imaging device is incompatible with Microsoft-supplied kernel-mode I/O drivers.
 
-**Note**   On Windows XP and later, you can retrieve version information from the driver. The [**WIA\_DIP\_WIA\_VERSION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dip-wia-version) property contains the WIA version, and the [**WIA\_DIP\_DRIVER\_VERSION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dip-driver-version) property contains the driver DLL version. The WIA service creates and maintains these properties; they are added automatically by the WIA service when the driver is loaded. Windows Me does not include these properties.
+**Note**   On Windows XP and later, you can retrieve version information from the driver. The [**WIA\_DIP\_WIA\_VERSION**](./wia-dip-wia-version.md) property contains the WIA version, and the [**WIA\_DIP\_DRIVER\_VERSION**](./wia-dip-driver-version.md) property contains the driver DLL version. The WIA service creates and maintains these properties; they are added automatically by the WIA service when the driver is loaded. Windows Me does not include these properties.
 
  
 
  
-
- 
-
-
-
 

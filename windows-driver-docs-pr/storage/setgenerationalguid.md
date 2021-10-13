@@ -1,7 +1,6 @@
 ---
 title: SetGenerationalGuid
 description: SetGenerationalGuid
-ms.assetid: cf8e57e5-afdf-4bc2-9849-5df3fbbdd6c5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -27,13 +26,7 @@ Applications and services can use the following iSCSI WMI methods to manage an i
 
 [SetTunnelModeOuterAddress](settunnelmodeouteraddress.md)
 
-The **SetGenerationalGuid** method belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **SetGenerationalGuid** method, see the member descriptions for the [**SetGenerationalGuid\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_setgenerationalguid_in) and [**SetGenerationalGuid\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_setgenerationalguid_out) structures. Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support this method if the HBA caches information.
+The **SetGenerationalGuid** method belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **SetGenerationalGuid** method, see the member descriptions for the [**SetGenerationalGuid\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setgenerationalguid_in) and [**SetGenerationalGuid\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setgenerationalguid_out) structures. Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support this method if the HBA caches information.
 
  
-
- 
-
-
-
-
 

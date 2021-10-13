@@ -1,7 +1,6 @@
 ---
 title: WDM Driver Layers An Example
 description: WDM Driver Layers An Example
-ms.assetid: 64eaa850-6394-4832-b11f-ce4db7f7c37d
 keywords: ["WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "joysticks WDK WDM"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,13 +16,13 @@ This section describes a possible set of WDM drivers for USB hardware to illustr
 
 The following figure shows a sample PnP hardware configuration for a USB joystick.
 
-![diagram illustrating sample plug and play hardware for a usb joystick](images/usbjoyhw.png)
+![diagram illustrating sample plug and play hardware for a usb joystick.](images/usbjoyhw.png)
 
 In this figure, the USB joystick plugs into a port on a USB hub. The USB hub in this example resides on the USB Host Controller board and is plugged into the single port on the USB host controller board. The USB host controller plugs into a PCI bus. From a PnP perspective, the USB hub, the USB host controller, and the PCI bus are all bus devices because they each provide ports. The joystick is not a bus device.
 
 The following figure shows a sample set of drivers that might be loaded for the USB joystick hardware in the previous figure.
 
-![diagram illustrating sample plug and play driver layers for a usb joystick](images/usbjoydr.png)
+![diagram illustrating sample plug and play driver layers for a usb joystick.](images/usbjoydr.png)
 
 Starting at the bottom of the previous figure, the drivers in the sample stack include:
 

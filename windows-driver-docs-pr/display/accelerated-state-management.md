@@ -1,7 +1,6 @@
 ---
 title: Accelerated State Management
 description: Accelerated State Management
-ms.assetid: 276d3cdb-34bf-49e8-aae5-94315746c5ff
 keywords:
 - accelerated state management WDK Direct3D
 - states WDK Direct3D
@@ -21,7 +20,7 @@ This reduces API overhead by reducing the number of **IDirect3DDevice7::SetRende
 
 Most applications render in only a handful of states, so having fine-grained state transitions is seldom important. What is more important is being able to define blocks of state that can be interchanged as the driver switches between common rendering scenarios. This is the whole point of accelerated state management.
 
-State-set tokens are used to record the states in the driver. A handle refers to a collection of states. The [**D3DHAL\_DP2STATESET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/ns-d3dhal-_d3dhal_dp2stateset) structure informs the driver about what state-set operations to perform.
+State-set tokens are used to record the states in the driver. A handle refers to a collection of states. The [**D3DHAL\_DP2STATESET**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_dp2stateset) structure informs the driver about what state-set operations to perform.
 
 If the **dwOperation** member of the D3DHAL\_DP2STATESET structure is set to D3DHAL\_STATESETBEGIN, the driver begins recording the states for the handle contained in the **dwParam** member. When the driver receives a **dwOperation** of D3DHAL\_STATESETEND, it stops recording state.
 
@@ -38,10 +37,4 @@ The **sbType** member is only valid for D3DHAL\_STATESETBEGIN and D3DHAL\_STATES
 The driver should ignore the**sbType** member unless it implements render state extensions. If the driver implements extended render states, that is, render states beyond those the Direct3D runtime supplies, it can use **sbType**to determine what type of predefined render states are being used. From this information it can determine how to append the state block appropriately, to support its extensions.
 
  
-
- 
-
-
-
-
 

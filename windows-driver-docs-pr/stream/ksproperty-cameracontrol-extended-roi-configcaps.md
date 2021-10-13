@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS property ID that is defined in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration is used to query ROI capabilities.
-ms.assetid: 29722CE2-81D3-453E-82C5-98C8E7115448
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS
 
-The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used to query ROI capabilities.
+The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used to query ROI capabilities.
 
 ## Usage summary table
 
@@ -43,7 +42,7 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS** property ID that is
 </tbody>
 </table>
 
-To query the ROI capabilities with the driver, the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS** extended property control is sent to the driver along with a standard [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_ROI\_CONFIGCAPSHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_roi_configcapsheader) structure, which is followed by one or more [**KSCAMERA\_EXTENDEDPROP\_ROI\_CONFIGCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_roi_configcaps) structures. The following list illustrates the data structure with two ROI config caps.
+To query the ROI capabilities with the driver, the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS** extended property control is sent to the driver along with a standard [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_ROI\_CONFIGCAPSHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_roi_configcapsheader) structure, which is followed by one or more [**KSCAMERA\_EXTENDEDPROP\_ROI\_CONFIGCAPS**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_roi_configcaps) structures. The following list illustrates the data structure with two ROI config caps.
 
 -   **KSCAMERA\_EXTENDEDPROP\_HEADER**
 

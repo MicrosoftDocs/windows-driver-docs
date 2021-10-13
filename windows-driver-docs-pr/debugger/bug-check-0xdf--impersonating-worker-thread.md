@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xDF IMPERSONATING_WORKER_THREAD
 description: The IMPERSONATING_WORKER_THREAD bug check has a value of 0x000000DF. This indicates that a workitem did not disable impersonation before it completed.
-ms.assetid: d8a68b5b-3aa8-4d02-8063-420834a47f1b
 keywords: ["Bug Check 0xDF IMPERSONATING_WORKER_THREAD", "IMPERSONATING_WORKER_THREAD"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ The IMPERSONATING\_WORKER\_THREAD bug check has a value of 0x000000DF. This indi
 
  
 
-Cause
------
+## Cause
 
 A worker thread was impersonating another process, and failed to disable impersonation before it returned.
 

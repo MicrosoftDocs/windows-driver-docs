@@ -1,7 +1,6 @@
 ---
 title: Device Error States
 description: Device Error States
-ms.assetid: 7d0fee11-0fdf-4490-88d0-fb074cbf4082
 keywords:
 - error states WDK printer
 - printer error states WDK
@@ -45,14 +44,9 @@ You should also perform the following additional test procedures for offline and
     -   When the printer goes into the offline state, verify that the print job remains in the job queue until the device becomes ready for printing again. The job should then complete successfully.
     -   Unplug the power from the printer during and before print jobs. Confirm that the printer reacquires the job queue and starts printing again. See more details in [Power Management](power-management.md).
 -   **Hot-Pluggable Bus Errors**
-    -   With the device connected, unload and load the device stack (for example, the [USB Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)). Send print jobs before, during, and after unloading the stack. For example, with USB devices connected, uninstall the USB root hub or host controller to which the device is connected.
+    -   With the device connected, unload and load the device stack (for example, the [USB Driver Stack](/windows-hardware/drivers/ddi/index)). Send print jobs before, during, and after unloading the stack. For example, with USB devices connected, uninstall the USB root hub or host controller to which the device is connected.
     -   Test unloading and loading the device stack with and without print jobs in progress. Verify that the job can be canceled, recovered from, and restarted.
     -   Reload the device stack to allow the print job to recover gracefully.
 
  
-
- 
-
-
-
 

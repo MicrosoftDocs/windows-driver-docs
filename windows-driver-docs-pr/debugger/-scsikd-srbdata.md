@@ -1,7 +1,6 @@
 ---
 title: scsikd.srbdata
 description: The scsikd.srbdata extension displays the specified SRB_DATA tracking block.
-ms.assetid: 9c0ba4d9-124f-4e86-a0e1-7f8796b6571a
 keywords: ["scsikd.srbdata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

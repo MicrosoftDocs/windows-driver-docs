@@ -1,7 +1,6 @@
 ---
 title: Teaming Provider Extensions
 description: Teaming Provider Extensions
-ms.assetid: 94F73ECD-54D0-4218-B3C4-33DC3BD57ED0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,11 +14,11 @@ In this configuration, the extensible switch extensions are exposed to every net
 
 The following figure shows the data path for packet traffic to or from the underlying extensible switch team that is bound to the external network adapter for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.40](images/vswitchteam-ndis640.png)
+![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.40.](images/vswitchteam-ndis640.png)
 
 The following figure shows the data path for packet traffic to or from the underlying extensible switch team that is bound to the external network adapter for NDIS 6.30 (Windows Server 2012).
 
-![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.30](images/vswitchteam.png)
+![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.30.](images/vswitchteam.png)
 
 Teaming providers can do everything that a forwarding extension can. In addition, teaming providers can do the following.
 
@@ -39,7 +38,7 @@ Teaming providers must follow these guidelines when managing an extensible switc
 
 -   The teaming provider must maintain state for every physical network adapter for which an extensible switch network connection had been established.
 
-    For every physical network adapter that is bound to the external network adapter, the protocol edge of the extensible switch issues a separate OID set request of [OID\_SWITCH\_NIC\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create). This OID request notifies the extension about the creation of a network connection to an underlying physical adapter.
+    For every physical network adapter that is bound to the external network adapter, the protocol edge of the extensible switch issues a separate OID set request of [OID\_SWITCH\_NIC\_CREATE](./oid-switch-nic-create.md). This OID request notifies the extension about the creation of a network connection to an underlying physical adapter.
 
 -   When the network connection to the physical network adapter is created, it is assigned a nonzero index value that is unique for the port to which the external network adapter is connected.
 
@@ -49,15 +48,15 @@ Teaming providers must follow these guidelines when managing an extensible switc
 
 -   If the teaming provider issues or forwards packets to a physical adapter, it must specify the nonzero network adapter index value of the physical adapter connection.
 
-    When the provider receives packets, it can determine the source network adapter index value from the packet's out-of-band forwarding context in the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure. For more information about the forwarding context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
+    When the provider receives packets, it can determine the source network adapter index value from the packet's out-of-band forwarding context in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. For more information about the forwarding context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
 
     For more information, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
--   To issue forward OID requests to a physical adapter, the teaming provider must encapsulate the OID request within an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. The provider must set the **DestinationNicIndex** member to the nonzero network adapter index value of the physical adapter connection. The provider then issues an OID set request of [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request) to deliver the encapsulated OID request to the target physical adapter.
+-   To issue forward OID requests to a physical adapter, the teaming provider must encapsulate the OID request within an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. The provider must set the **DestinationNicIndex** member to the nonzero network adapter index value of the physical adapter connection. The provider then issues an OID set request of [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) to deliver the encapsulated OID request to the target physical adapter.
 
     For more information, see [Managing OID Requests to Physical Network Adapters](managing-oid-requests-to-physical-network-adapters.md).
 
--   The teaming provider can issue NDIS status indications on behalf of an underlying physical adapter. To do this, the provider must encapsulate the indication within an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure. The provider must set the **SourceNicIndex** member to the nonzero network adapter index value of the physical adapter connection. The provider then issues an NDIS status indication of [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) to deliver the encapsulated status indication to overlying drivers in the extensible switch driver stack.
+-   The teaming provider can issue NDIS status indications on behalf of an underlying physical adapter. To do this, the provider must encapsulate the indication within an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure. The provider must set the **SourceNicIndex** member to the nonzero network adapter index value of the physical adapter connection. The provider then issues an NDIS status indication of [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) to deliver the encapsulated status indication to overlying drivers in the extensible switch driver stack.
 
     For more information, see [Managing NDIS Status Indications from Physical Network Adapters](managing-ndis-status-indications-from-physical-network-adapters.md).
 
@@ -66,10 +65,4 @@ For more information about forwarding extensions, see [Forwarding Extensions](fo
 For more information on MUX drivers, see [NDIS MUX Intermediate Drivers](ndis-mux-intermediate-drivers.md).
 
  
-
- 
-
-
-
-
 

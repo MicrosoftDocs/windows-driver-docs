@@ -1,7 +1,6 @@
 ---
 title: File Streams, Stream Contexts, and Per-Stream Contexts
 description: File Streams, Stream Contexts, and Per-Stream Contexts
-ms.assetid: baea4967-f0d6-4096-aac4-fd38c117b4c6
 keywords:
 - filter drivers WDK file system , per-stream context tracking
 - file system filter drivers WDK , per-stream context tracking
@@ -29,22 +28,17 @@ For local file systems, if the already opened file stream is opened again (for s
 
 For network file systems that support per-stream contexts, if the already opened file stream is opened again using the same network share name or IP address, the behavior is the same as for local file systems. The I/O subsystem creates a new file object, but the file system does not create a new stream context. Instead, it assigns the same **FsContext** pointer value to both file objects. However, if the file stream is opened using a different path (for example, a different share name, or an IP address for a file previously opened using a share name), the file system does create a new stream context. Thus, for network file systems that support per-stream contexts, the **FsContext** pointer does not uniquely identify a file stream.
 
-A *per-stream context* is a filter-defined structure that contains a [**FSRTL\_PER\_STREAM\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff547357) structure as one of its members. Filter drivers use this structure to track information about each file stream that is opened by the file system.
+A *per-stream context* is a filter-defined structure that contains a [**FSRTL\_PER\_STREAM\_CONTEXT**](/previous-versions/ff547357(v=vs.85)) structure as one of its members. Filter drivers use this structure to track information about each file stream that is opened by the file system.
 
 ### <span id="File_System_Support_for_Per-Stream_Contexts"></span><span id="file_system_support_for_per-stream_contexts"></span><span id="FILE_SYSTEM_SUPPORT_FOR_PER-STREAM_CONTEXTS"></span>File System Support for Per-Stream Contexts
 
-On Microsoft Windows XP and later, file systems that support per-stream contexts must use stream context structures that contain a [**FSRTL\_ADVANCED\_FCB\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure.
+On Microsoft Windows XP and later, file systems that support per-stream contexts must use stream context structures that contain a [**FSRTL\_ADVANCED\_FCB\_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure.
 
-The global list of per-stream contexts associated with a particular file stream is owned by the file system. When the file system creates a new stream context (FSRTL\_ADVANCED\_FCB\_HEADER object) for a file stream, it calls [**FsRtlSetupAdvancedHeader**](https://msdn.microsoft.com/library/windows/hardware/ff547257) to initialize this list. When a file system filter driver calls [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546194), the per-stream context created by the filter is added to the global list.
+The global list of per-stream contexts associated with a particular file stream is owned by the file system. When the file system creates a new stream context (FSRTL\_ADVANCED\_FCB\_HEADER object) for a file stream, it calls [**FsRtlSetupAdvancedHeader**](/previous-versions/ff547257(v=vs.85)) to initialize this list. When a file system filter driver calls [**FsRtlInsertPerStreamContext**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinsertperstreamcontext), the per-stream context created by the filter is added to the global list.
 
-When the file system deletes its stream context for a file stream, it calls [**FsRtlTeardownPerStreamContexts**](https://msdn.microsoft.com/library/windows/hardware/ff547295) to free all per-stream contexts that filters have associated with the file stream. This routine calls the [**FreeCallback**](https://msdn.microsoft.com/library/windows/hardware/ff547357) routine for each per-stream context in the global list. Note that the **FreeCallback** routine must assume that the file object for the file stream has already been freed.
+When the file system deletes its stream context for a file stream, it calls [**FsRtlTeardownPerStreamContexts**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlteardownperstreamcontexts) to free all per-stream contexts that filters have associated with the file stream. This routine calls the [**FreeCallback**](/previous-versions/ff547357(v=vs.85)) routine for each per-stream context in the global list. Note that the **FreeCallback** routine must assume that the file object for the file stream has already been freed.
 
-To query whether the file system supports per-stream contexts for the file stream represented by a given file object, call [**FsRtlSupportsPerStreamContexts**](https://docs.microsoft.com/previous-versions/ff547285(v=vs.85)) on the file object. Note that a file system might support per-stream contexts for some types of files but not for others. For example, NTFS and FAT do not currently support per-stream contexts for paging files. Thus if **FsRtlSupportsPerStreamContexts** returns **TRUE** for one file stream, this does not imply that it returns **TRUE** for all file streams.
-
- 
+To query whether the file system supports per-stream contexts for the file stream represented by a given file object, call [**FsRtlSupportsPerStreamContexts**](/previous-versions/ff547285(v=vs.85)) on the file object. Note that a file system might support per-stream contexts for some types of files but not for others. For example, NTFS and FAT do not currently support per-stream contexts for paging files. Thus if **FsRtlSupportsPerStreamContexts** returns **TRUE** for one file stream, this does not imply that it returns **TRUE** for all file streams.
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_BINARY
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BINARY identifier represents the base-data-type identifier that indicates that the data type is an array of BYTE-typed unsigned values.
-ms.assetid: ee20f0f1-fff9-41a9-a880-f8f577320e41
 keywords: ["DEVPROP_TYPE_BINARY Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BINARY identifier represents the base-data-type identifier that indicates that the data type is an array of BYTE-typed unsigned values.
 
-Remarks
--------
+## Remarks
 
 The DEVPROP_TYPE_BINARY property type cannot be combined with the property-data-type modifiers.
 
@@ -33,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_BINARY, call the correspo
 
 -   Set the remaining function parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

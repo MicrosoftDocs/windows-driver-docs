@@ -1,7 +1,6 @@
 ---
 title: NDIS Port Send and Receive Operations
 description: NDIS Port Send and Receive Operations
-ms.assetid: f9a22b7b-5565-4d56-a9b9-22562b6bf0da
 keywords:
 - ports WDK NDIS , send and receive operations
 - NDIS ports WDK , send and receive operations
@@ -23,13 +22,7 @@ NDIS drivers can associate send and receive operations with NDIS ports.The port 
 
 If the miniport driver allocates ports, overlying drivers can use the ports to send and receive data on the appropriate subinterfaces of the associated miniport adapter. However, the overlying driver must ensure that the ports are active before sending any data. Miniport drivers activate ports when the associated subinterfaces become available. For more information about activating a port in a miniport driver, see [Activating NDIS Ports](activating-an-ndis-port.md).
 
-When NDIS calls the [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_bind_adapter_ex) function of a protocol driver, NDIS provides a list of all currently active ports in the **ActivePorts** member of the [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_bind_parameters) structure that the *BindParameters* parameter points to. NDIS also informs protocol drivers with a PnP event when ports are activated and deactivated. For more information about PnP port activation and deactivation notifications, see [Handling NDIS Ports PnP Notifications](handling-ndis-ports-pnp-event-notifications.md). For more general information about send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
+When NDIS calls the [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function of a protocol driver, NDIS provides a list of all currently active ports in the **ActivePorts** member of the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure that the *BindParameters* parameter points to. NDIS also informs protocol drivers with a PnP event when ports are activated and deactivated. For more information about PnP port activation and deactivation notifications, see [Handling NDIS Ports PnP Notifications](handling-ndis-ports-pnp-event-notifications.md). For more general information about send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
 
  
-
- 
-
-
-
-
 

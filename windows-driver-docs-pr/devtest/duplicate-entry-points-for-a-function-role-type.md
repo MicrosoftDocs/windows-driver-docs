@@ -1,7 +1,6 @@
 ---
 title: Duplicate Entry Points for a Function Role Type
 description: Duplicate Entry Points for a Function Role Type
-ms.assetid: cf6604da-bd79-4adf-a08f-9b903aa91133
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Duplicate Entry Points for a Function Role Type
 
 
-For most function role types, SDV assumes that the driver has, at most, one callback function for each entry point. However, there are some function role types that can have multiple event callback functions associated with them. For example, a KMDF driver might have multiple [*EvtTimerFunc*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdftimer/nc-wdftimer-evt_wdf_timer) or [*EvtDpcFunc*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdpc/nc-wdfdpc-evt_wdf_dpc) callback functions (that use the EVT\_WDF\_TIMER and EVT\_WDF\_DPC role type annotations). In this case, SDV appends an integer to the function type in Sdv-map.h. For example, if your driver has two DPC callback functions, SDV maps them to **fun\_WDF\_DPC\_1** and **fun\_WDF\_DPC\_2**.
+For most function role types, SDV assumes that the driver has, at most, one callback function for each entry point. However, there are some function role types that can have multiple event callback functions associated with them. For example, a KMDF driver might have multiple [*EvtTimerFunc*](/windows-hardware/drivers/ddi/wdftimer/nc-wdftimer-evt_wdf_timer) or [*EvtDpcFunc*](/windows-hardware/drivers/ddi/wdfdpc/nc-wdfdpc-evt_wdf_dpc) callback functions (that use the EVT\_WDF\_TIMER and EVT\_WDF\_DPC role type annotations). In this case, SDV appends an integer to the function type in Sdv-map.h. For example, if your driver has two DPC callback functions, SDV maps them to **fun\_WDF\_DPC\_1** and **fun\_WDF\_DPC\_2**.
 
 If a driver exceeds the maximum number of callback functions for a role type, SDV displays the following message.
 
@@ -19,7 +18,7 @@ Static Driver Verifier found more than one entry point for '[role type]'
 
 If a function role type has more entry points than SDV supports, there is not necessarily something wrong with the driver. However, to obtain accurate verification results, you must edit the Sdv.-map.h file to remove the duplicate entries.
 
-For example, the following Sdv-map.h file shows that there are two [*CompletionRoutine*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine) functions that were annotated using the EVT\_WDF\_REQUEST\_COMPLETION\_ROUTINE role type. In the Sdv-map.h file, SDV defines both **EvtRequestReadCompletionRoutine** and **EvtRequestWriteCompletionRoutine** as fun\_WDF\_REQUEST\_COMPLETION\_ROUTINE.
+For example, the following Sdv-map.h file shows that there are two [*CompletionRoutine*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine) functions that were annotated using the EVT\_WDF\_REQUEST\_COMPLETION\_ROUTINE role type. In the Sdv-map.h file, SDV defines both **EvtRequestReadCompletionRoutine** and **EvtRequestWriteCompletionRoutine** as fun\_WDF\_REQUEST\_COMPLETION\_ROUTINE.
 
 ```
 //Approved=false
@@ -60,10 +59,4 @@ Some function role types support multiple entries. When the number of entries ex
 See [Static Driver Verifier KMDF Annotations](static-driver-verifier-kmdf-function-declarations.md) for a list of function role types that can have more than one callback function. The list shows the maximum number of callback functions that SDV supports for those role types.
 
  
-
- 
-
-
-
-
 

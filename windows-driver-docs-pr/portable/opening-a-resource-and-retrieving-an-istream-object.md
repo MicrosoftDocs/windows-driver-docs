@@ -1,5 +1,5 @@
 ---
-Description: Opening a Resource and Retrieving an IStream object
+description: Opening a Resource and Retrieving an IStream object
 title: Opening a Resource and Retrieving an IStream object
 ms.date: 04/20/2017
 ms.localizationpriority: medium

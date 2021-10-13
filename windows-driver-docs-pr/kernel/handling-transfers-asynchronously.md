@@ -1,7 +1,6 @@
 ---
 title: Handling Transfers Asynchronously
 description: Handling Transfers Asynchronously
-ms.assetid: 84b231bd-54ff-4312-8e6c-cfc33e72b8cc
 keywords: ["DispatchRead routine", "DispatchWrite routine", "DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchWrite routine", "dispatch routines WDK kernel , DispatchRead routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "asynchronous transfers WDK kernel", "data transfers WDK kernel , asynchronous", "transferring data WDK kernel , asynchronous"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Except for highest-level drivers, all drivers handle [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write) requests asynchronously. The *DispatchRead* and *DispatchWrite* routines in even a highest-level driver cannot wait for lower-level drivers to finish processing an asynchronous read or write request; they must pass such a request on to lower drivers and return STATUS\_PENDING.
+Except for highest-level drivers, all drivers handle [**IRP\_MJ\_READ**](./irp-mj-read.md) and [**IRP\_MJ\_WRITE**](./irp-mj-write.md) requests asynchronously. The *DispatchRead* and *DispatchWrite* routines in even a highest-level driver cannot wait for lower-level drivers to finish processing an asynchronous read or write request; they must pass such a request on to lower drivers and return STATUS\_PENDING.
 
 Similarly, a lowest-level device driver's *DispatchReadWrite* routine must pass the transfer request on to other driver routines that process device I/O requests and then return STATUS\_PENDING.
 
@@ -26,9 +25,4 @@ Other device drivers that use DMA or PIO also might need to split up large trans
 For more information about using DMA and PIO, see [Input/Output Techniques](i-o-programming-techniques.md).
 
  
-
- 
-
-
-
 

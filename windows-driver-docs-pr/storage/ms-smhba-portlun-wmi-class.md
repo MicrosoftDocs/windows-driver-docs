@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_PORTLUN WMI Class
 description: MS\_SMHBA\_PORTLUN WMI Class
-ms.assetid: 28473b3b-2b88-4abc-81b5-9a6a7f8166e3
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -29,15 +28,9 @@ class MS_SMHBA_PORTLUN
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_PORTLUN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_ms_smhba_portlun)
+[**MS\_SMHBA\_PORTLUN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_portlun)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

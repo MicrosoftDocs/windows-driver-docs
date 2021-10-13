@@ -1,7 +1,6 @@
 ---
 title: .restart (Restart Target Application)
 description: The .restart command restarts the target application.Do not confuse this command with the .restart (Restart Kernel Connection) command, which works only in kernel mode.
-ms.assetid: abfa1817-41d8-4bb2-a6d2-e9c9027b50df
 keywords: [".restart (Restart Target Application) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,8 +55,7 @@ Do not confuse this command with the [**.restart (Restart Kernel Connection)**](
 
 For more information about how to issue this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 CDB and WinDbg can restart a target application if the debugger originally created the application. You can use the **.restart** command even if the target application has already closed.
 

@@ -1,7 +1,6 @@
 ---
 title: Access Control Entry
 description: Access Control Entry
-ms.assetid: 4dc72f43-e5a7-441d-8586-f8893b9c1084
 keywords:
 - security descriptors WDK file systems , access control entry
 - descriptors WDK file systems , access control entry
@@ -25,7 +24,7 @@ Thus, when a program attempts to open an object, Windows compares the credential
 
 The following figure illustrates the access control entry.
 
-![diagram illustrating the access control entry](images/fssecurity-04.png)
+![diagram illustrating the access control entry.](images/fssecurity-04.png)
 
 There are five types of ACEs used by the security subsystem. The **Type** member of the ACE structure controls the interpretation of the ACE. The defined types are:
 
@@ -41,12 +40,7 @@ There are five types of ACEs used by the security subsystem. The **Type** member
 
 Thus, three of the types are used to control programmatic access to an object, while the other two are used to control the audit and alarm behavior of the security subsystem when the object is accessed. Note that the actual behavior of the security subsystem is computed by combining the information for some or all of the ACEs associated with the object.
 
-A driver may construct an access control entry of ACCESS\_ALLOWED\_ACE\_TYPE using the routine [**RtlAddAccessAllowedAce**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-rtladdaccessallowedace). For adding the other types of ACE entries, driver writers must construct their own functions because the WDK does not provide any other support routines.
+A driver may construct an access control entry of ACCESS\_ALLOWED\_ACE\_TYPE using the routine [**RtlAddAccessAllowedAce**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtladdaccessallowedace). For adding the other types of ACE entries, driver writers must construct their own functions because the WDK does not provide any other support routines.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 description: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
-ms.assetid: 933dc761-2616-4bee-8357-dbb6644596c2
 keywords:
 - kernel-mode clients WDK UMDF
 - UMDF drivers WDK UMDF , kernel-mode clients
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 # Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 >[!WARNING]
 >Also see [Supporting Kernel-Mode Clients in UMDF 2.x](supporting-kernel-mode-clients-in-umdf-drivers.md).
@@ -41,7 +40,7 @@ A UMDF driver can receive I/O requests from a kernel-mode driver only if the UMD
 
 To enable a UMDF driver's support for kernel-mode clients, the INF file of the UMDF driver must include a [UmdfKernelModeClientPolicy](specifying-wdf-directives-in-inf-files.md) directive in its INF *DDInstall*.**WDF** section. If the INF file of the UMDF driver does not include this directive, UMDF does not allow a kernel-mode driver that is installed above the UMDF driver to run.
 
-The framework provides two methods that are useful to drivers that support kernel-mode clients. A driver can call the [**IWDFIoRequest2::GetRequestorMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest2-getrequestormode) method to determine whether an I/O request came from kernel mode or user mode. If the I/O request came from user mode, the driver can call [**IWDFIoRequest2::IsFromUserModeDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest2-isfromusermodedriver) to determine whether the request came from an application or another user-mode driver.
+The framework provides two methods that are useful to drivers that support kernel-mode clients. A driver can call the [**IWDFIoRequest2::GetRequestorMode**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest2-getrequestormode) method to determine whether an I/O request came from kernel mode or user mode. If the I/O request came from user mode, the driver can call [**IWDFIoRequest2::IsFromUserModeDriver**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest2-isfromusermodedriver) to determine whether the request came from an application or another user-mode driver.
 
 ### Restrictions on kernel-mode drivers
 
@@ -49,25 +48,25 @@ A UMDF driver can process I/O requests from a kernel-mode driver only if the ker
 
 -   The kernel-mode driver must be running at IRQL = PASSIVE\_LEVEL when it sends the I/O request.
 
--   Unless the driver has set the **UmdfFileObjectPolicy** INF directive to **AllowNullAndUnknownFileObjects**, each I/O request that a kernel-mode driver sends to a user-mode driver must have an associated file object. The framework must have previously been notified that the I/O manager created the file object. (Such notification causes the framework to call the user-mode driver's [**IQueueCallbackCreate::OnCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iqueuecallbackcreate-oncreatefile) callback function, but that callback function is optional.)
+-   Unless the driver has set the **UmdfFileObjectPolicy** INF directive to **AllowNullAndUnknownFileObjects**, each I/O request that a kernel-mode driver sends to a user-mode driver must have an associated file object. The framework must have previously been notified that the I/O manager created the file object. (Such notification causes the framework to call the user-mode driver's [**IQueueCallbackCreate::OnCreateFile**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackcreate-oncreatefile) callback function, but that callback function is optional.)
 
--   The I/O request cannot contain an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) function code.
+-   The I/O request cannot contain an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md) function code.
 
 -   The I/O request's buffers must not contain pointers to additional information, because the user-mode driver cannot dereference the pointers.
 
--   If the I/O request contains an [I/O control code](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) that specifies the "neither" buffer access method, the kernel-mode driver must send the I/O request in the process context of the application that created the I/O request. For more information about how to support the "neither" method in a UMDF-base driver, see [Using Neither Buffered I/O nor Direct I/O in UMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/accessing-data-buffers-in-umdf-1-x-drivers#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers).
+-   If the I/O request contains an [I/O control code](../kernel/introduction-to-i-o-control-codes.md) that specifies the "neither" buffer access method, the kernel-mode driver must send the I/O request in the process context of the application that created the I/O request. For more information about how to support the "neither" method in a UMDF-base driver, see [Using Neither Buffered I/O nor Direct I/O in UMDF Drivers](./accessing-data-buffers-in-umdf-1-x-drivers.md#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers).
 
 -   The UMDF driver might modify an I/O request's output data, in user mode. Therefore, the kernel-mode driver must validate any output data that it receives from the user-mode driver.
 
--   The kernel-mode client should typically validate the *Information* value that a UMDF driver passes to [**IWDFIoRequest::CompleteWithInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation). If the client is a KMDF driver, it can call [**WdfRequestGetCompletionParams**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestgetcompletionparams) to obtain this information in an IO\_STATUS\_BLOCK structure.
+-   The kernel-mode client should typically validate the *Information* value that a UMDF driver passes to [**IWDFIoRequest::CompleteWithInformation**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation). If the client is a KMDF driver, it can call [**WdfRequestGetCompletionParams**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetcompletionparams) to obtain this information in an IO\_STATUS\_BLOCK structure.
 
-    Typically, the framework does not validate the information value that a UMDF driver passes to [**IWDFIoRequest::CompleteWithInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation). (This parameter usually specifies the number of transferred bytes.) The framework validates the information value only for output buffers, and only for the [buffered I/O](https://docs.microsoft.com/windows-hardware/drivers/wdf/accessing-data-buffers-in-umdf-1-x-drivers#using-buffered-i-o-in-umdf-drivers) data access method. (For example, the framework verifies that the number of transferred bytes does not exceed the output buffer size of a read operation, if the access method is buffered I/O.)
+    Typically, the framework does not validate the information value that a UMDF driver passes to [**IWDFIoRequest::CompleteWithInformation**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation). (This parameter usually specifies the number of transferred bytes.) The framework validates the information value only for output buffers, and only for the [buffered I/O](./accessing-data-buffers-in-umdf-1-x-drivers.md#using-buffered-i-o-in-umdf-drivers) data access method. (For example, the framework verifies that the number of transferred bytes does not exceed the output buffer size of a read operation, if the access method is buffered I/O.)
 
 ### <a href="" id="handling-return-status-values"></a>Handling return status values in a UMDF 1.x driver
 
 Passing return status values from user-mode to kernel-mode requires special attention, as follows:
 
--   UMDF version 1 drivers typically receive HRESULT-typed return values, while KMDF and WDM-based kernel-mode drivers typically receive NTSTATUS-typed values. If a UMDF 1.*x* driver completes an I/O request, and if the driver has a kernel-mode client, the driver's call to [**IWDFIoRequest::Complete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-complete) or [**IWDFIoRequest::CompleteWithInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation) should specify an HRESULT value that the driver generates from an NTSTATUS value. In general, UMDF 1.*x* drivers should use the HRESULT\_FROM\_NT macro (defined in *Winerror.h*) to return status to a kernel-mode client. The following example shows how to use this macro when completing a request.
+-   UMDF version 1 drivers typically receive HRESULT-typed return values, while KMDF and WDM-based kernel-mode drivers typically receive NTSTATUS-typed values. If a UMDF 1.*x* driver completes an I/O request, and if the driver has a kernel-mode client, the driver's call to [**IWDFIoRequest::Complete**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-complete) or [**IWDFIoRequest::CompleteWithInformation**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation) should specify an HRESULT value that the driver generates from an NTSTATUS value. In general, UMDF 1.*x* drivers should use the HRESULT\_FROM\_NT macro (defined in *Winerror.h*) to return status to a kernel-mode client. The following example shows how to use this macro when completing a request.
 
     ```cpp
     hr = HRESULT_FROM_NT(STATUS_BUFFER_OVERFLOW)
@@ -77,10 +76,10 @@ Passing return status values from user-mode to kernel-mode requires special atte
 
     To return a specific HRESULT value to a kernel-mode client, the following callbacks must use the HRESULT\_FROM\_NT macro:
 
-    -   [**IPnpCallback::OnQueryRemove**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipnpcallback-onqueryremove)
-    -   [**IPnpCallback::OnQueryStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipnpcallback-onquerystop)
-    -   [**IPnpCallbackHardware::OnPrepareHardware**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware)
-    -   [**IPnpCallbackHardware::OnReleaseHardware**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipnpcallbackhardware-onreleasehardware)
+    -   [**IPnpCallback::OnQueryRemove**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-onqueryremove)
+    -   [**IPnpCallback::OnQueryStop**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-onquerystop)
+    -   [**IPnpCallbackHardware::OnPrepareHardware**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware)
+    -   [**IPnpCallbackHardware::OnReleaseHardware**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onreleasehardware)
 
     To use the NTSTATUS values that are defined in *ntstatus.h*, a UMDF 1.*x* driver must include these two lines before including any additional headers.
 
@@ -101,17 +100,9 @@ Passing return status values from user-mode to kernel-mode requires special atte
 
 ### <a href="" id="kernel-mode-client-support-in-earlier-umdf-versions"></a> Kernel-mode client support in earlier UMDF versions
 
-For UMDF versions earlier than version 1.9, a driver's INF file can include an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) to create a REG\_DWORD-sized **UpperDriverOk** registry value under the **WUDF** subkey of the device's [hardware key](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers).
+For UMDF versions earlier than version 1.9, a driver's INF file can include an [**INF AddReg directive**](../install/inf-addreg-directive.md) to create a REG\_DWORD-sized **UpperDriverOk** registry value under the **WUDF** subkey of the device's [hardware key](./using-the-registry-in-umdf-1-x-drivers.md).
 
 If the **UpperDriverOk** registry value is set to a nonzero number, the framework allows kernel-mode drivers to load above the user-mode driver. The kernel-mode drivers can forward I/O requests from user-mode applications to the UMDF driver, but kernel-mode drivers cannot send I/O requests that are created in kernel mode to the UMDF driver.
 
 For UMDF versions 1.9 and later, the **UpperDriverOk** registry value is obsolete and supported only for existing drivers. New drivers should use the [UmdfKernelModeClientPolicy](specifying-wdf-directives-in-inf-files.md) directive.
-
- 
-
- 
-
-
-
-
 

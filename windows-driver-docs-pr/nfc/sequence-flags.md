@@ -1,7 +1,6 @@
 ---
 title: Sequence flags
 description: The NFC CX defines the following constants for sequence events.
-ms.assetid: AC6CE286-52F7-4FC9-9F38-CD10C1413A90
 keywords:
 - NFC
 - near field communications
@@ -62,6 +61,5 @@ This flag forces the NFC CX to not send an NCI reset during shutdown.
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

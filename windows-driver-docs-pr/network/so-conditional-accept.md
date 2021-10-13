@@ -1,7 +1,6 @@
 ---
 title: SO_CONDITIONAL_ACCEPT
 description: SO_CONDITIONAL_ACCEPT
-ms.assetid: 8aaaa08b-b239-4648-8c4f-8db2efbda551
 ms.date: 08/08/2017
 keywords: 
  -SO_CONDITIONAL_ACCEPT Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ The state of the SO\_CONDITIONAL\_ACCEPT socket option determines whether condit
 
 If a WSK application sets this socket option, it must do so before the listening socket is bound to a local transport address.
 
-To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the state of this socket option, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -126,10 +125,9 @@ The default state of this socket option is that conditional accept mode is disab
 
 Some transport protocols might not support conditional accept mode on listening sockets.
 
-For more information about conditionally accepting incoming connections, see [Listening for and Accepting Incoming Connections](https://docs.microsoft.com/windows-hardware/drivers/network/listening-for-and-accepting-incoming-connections).
+For more information about conditionally accepting incoming connections, see [Listening for and Accepting Incoming Connections](./listening-for-and-accepting-incoming-connections.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -149,9 +147,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

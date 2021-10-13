@@ -1,63 +1,44 @@
-- name: "Sensor Device Driver Design Guide"
+- name: "Sensor driver design guide"
   href: index.md
-- name: "What's new in sensors"
-  href: what-s-new-in-sensors.md
-- name: "Overview of the universal sensor driver model"
-  href: overview-of-converged-sensor-driver-model.md
-- name: "Windows sensor driver features"
-# Auto-expanded node
-  items: 
-  - name: "Windows sensor driver features"
-    href: windows-sensor-driver-features.md
-  - name: "Sensors ACPI entries"
-    href: sensors-acpi-entries.md
-  - name: "Universal sensor driver reference"
-# Auto-expanded node
+- name: "Windows sensors design guide"
+  items:
+  - name: "Sensor types"
+    href: sensor-types.md
+  - name: "Sensor categories"
+    href: sensor-categories.md
+  - name: "Sensors threshold configuration"
     items: 
-    - name: "Universal sensor driver reference"
-      href: sensor-universal-driver-reference.md
-    - name: "Sensor thresholds"
-# Auto-expanded node
-      items: 
-      - name: "Sensor thresholds"
-        href: sensor-thresholds-v2.md
-      - name: "Accelerometer thresholds"
-        href: accelerometer-thresholds.md
-      - name: "Magnetometer thresholds"
-        href: magnetometer-thresholds.md
-      - name: "Gyroscope thresholds"
-        href: gyroscope-thresholds.md
-      - name: "Orientation sensor thresholds"
-        href: orientation-sensor-thresholds.md
-      - name: "Light sensor thresholds"
-        href: light-sensor-thresholds.md
-      - name: "Proximity sensor thresholds"
-        href: proximity-sensor-thresholds.md
+    - name: "Sensors thresholds overview"
+      href: sensor-thresholds-v2.md
+    - name: "Accelerometer thresholds"
+      href: accelerometer-thresholds.md
+    - name: "Magnetometer thresholds"
+      href: magnetometer-thresholds.md
+    - name: "Gyroscope thresholds"
+      href: gyroscope-thresholds.md
+    - name: "Orientation sensor thresholds"
+      href: orientation-sensor-thresholds.md
+    - name: "Light sensor thresholds"
+      href: light-sensor-thresholds.md
+    - name: "Proximity sensor thresholds"
+      href: proximity-sensor-thresholds.md
+  - name: "Sensors helper functions"
+    items: 
     - name: "Marshalling helper functions"
-# Auto-expanded node
-      items: 
-      - name: "Marshalling helper functions"
-        href: marshalling-helper-functions.md
-      - name: "Time stamp helper"
-        href: timestamp-helper.md
-      - name: "PropVariant helpers"
-        href: propvariant-helpers.md
-      - name: "Collection list helpers"
-        href: collection-list-helpers.md
-      - name: "Collection list serialization helpers"
-        href: collection-list-serialization-helpers.md
-      - name: "Collection list legacy helpers"
-        href: collection-list-legacy-helpers.md
-    - name: "Sensor types"
-      href: sensor-types.md
-    - name: "Sensor categories"
-      href: sensor-categories.md
-    - name: "Sensor data fields"
-# Auto-expanded node
-      items: 
-      - name: "Sensor data fields"
-        href: sensor-data-fields.md
-      - name: "Common data fields"
+      href: marshalling-helper-functions.md
+    - name: "Time stamp helper"
+      href: timestamp-helper.md
+    - name: "PropVariant helpers"
+      href: propvariant-helpers.md
+    - name: "Collection list helpers"
+      href: collection-list-helpers.md
+    - name: "Collection list serialization helpers"
+      href: collection-list-serialization-helpers.md
+    - name: "Collection list legacy helpers"
+      href: collection-list-legacy-helpers.md
+  - name: "Sensor data fields"
+    items: 
+      - name: "Data fields overview"
         href: common-data-fields.md
       - name: "Accelerometer data fields"
         href: accelerometer-data-fields.md
@@ -89,47 +70,26 @@
         href: relative-orientation-data-fields.md
       - name: "Custom sensor data fields"
         href: custom-sensor-data-fields.md
-    - name: "Sensor properties"
-# Auto-expanded node
-      items: 
-      - name: "Sensor properties"
-        href: sensor-properties2.md
+  - name: "Sensor properties"
+    items: 
       - name: "Common sensor properties"
         href: common-sensor-properties.md
       - name: "Enumeration properties"
         href: enumeration-properties.md
-      - name: "Other sensor properties"
-# Auto-expanded node
-        items: 
-        - name: "Other sensor properties"
-          href: other-sensor-properties.md
-        - name: "Proximity sensor property"
-          href: proximity-sensor-property.md
-        - name: "Light sensor property"
-          href: light-sensor-property.md
-        - name: "Orientation sensor property"
-          href: orientation-sensor-property.md
-        - name: "Activity sensor properties"
-          href: activity-sensor-properties.md
-        - name: "Pedometer sensor property"
-          href: pedometer-sensor-property.md
-      - name: "Data field properties"
-# Auto-expanded node
-        items: 
-        - name: "Data field properties"
-          href: data-field-properties.md
-        - name: "Required data field properties"
-          href: required-data-field-properties.md
-- name: "Programming Guide"
-# Auto-expanded node
+      - name: "Proximity sensor property"
+        href: proximity-sensor-property.md
+      - name: "Light sensor property"
+        href: light-sensor-property.md
+      - name: "Orientation sensor property"
+        href: orientation-sensor-property.md
+      - name: "Activity sensor property"
+        href: activity-sensor-properties.md
+      - name: "Pedometer sensor property"
+        href: pedometer-sensor-property.md
+  - name: "Sensors Windows 10 Mobile ACPI entries"
+    href: sensors-acpi-entries.md
+- name: "Build and test a universal sensor driver"
   items: 
-  - name: "Programming Guide"
-    href: programming-guide-v2.md
-  - name: "How to Build a Universal Sensor Driver"
-# Auto-expanded node
-    items: 
-    - name: "How to Build a Universal Sensor Driver"
-      href: how-to-build-a-universal-sensor-driver.md
     - name: "Set up your Development Environment"
       href: set-up-your-development-environment.md
     - name: "Prepare your Sensor Test Board"
@@ -137,176 +97,135 @@
     - name: "Connect your Sensor to the Sharks Cove Board"
       href: connect-your-sensor-to-the-sharks-cove-board.md
     - name: "Write and Deploy your Universal Sensor Driver"
-# Auto-expanded node
-      items: 
-      - name: "Write and Deploy your Universal Sensor Driver"
-        href: write-and-deploy-your-universal-sensor-driver.md
-      - name: "Make the Driver Loadable"
-        href: make-the-driver-loadable.md
-      - name: "Connect to Hardware"
-        href: connect-to-hardware.md
-      - name: "Read Data from Hardware"
-        href: read-data-from-hardware.md
-      - name: "Review the INX File"
-# Auto-expanded node
-        items: 
-        - name: "Review the INX File"
-          href: review-and-revise-the-inf-file.md
-        - name: "Creating a Mobile Package"
-          href: creating-a-mobile-package.md
-      - name: "Build the Sensor Driver"
-        href: build-the-sensor-driver.md
-      - name: "Install the Sensor Driver"
-        href: install-the-sensor-driver.md
-      - name: "Creating a Persistent Unique Identifier for a Sensor"
-        href: creating-a-persistent-unique-identifier-v2.md
+      href: write-and-deploy-your-universal-sensor-driver.md
+    - name: "Make the Driver Loadable"
+      href: make-the-driver-loadable.md
+    - name: "Connect to Hardware"
+      href: connect-to-hardware.md
+    - name: "Read Data from Hardware"
+      href: read-data-from-hardware.md
+    - name: "Review the INX File"
+      href: review-and-revise-the-inf-file.md
+    - name: "Creating a Mobile Package"
+      href: creating-a-mobile-package.md
+    - name: "Build the Sensor Driver"
+      href: build-the-sensor-driver.md
+    - name: "Install the Sensor Driver"
+      href: install-the-sensor-driver.md
+    - name: "Creating a Persistent Unique Identifier for a Sensor"
+      href: creating-a-persistent-unique-identifier-v2.md
     - name: "Test your Universal Sensor Driver"
       href: test-your-universal-sensor-driver.md
     - name: "Collecting and Decoding WPP Logs"
       href: collecting-and-decoding-wpp-logs.md
-  - name: "Sensor data batching for power savings"
-    href: sensor-batching-for-power-saving-.md
-  - name: "Filtering data"
-    href: filtering-data-v2.md
-  - name: "Defining Custom Values for Sensor Constants"
-    href: defining-custom-values-for-constants-v2.md
-  - name: "Fusion Sensor Implementation Details"
-    href: fusion-sensor-implementation-details.md
-- name: "Testing sensor hardware, drivers, and apps in Windows"
-# Auto-expanded node
+    - name: "Sensor data batching for power savings"
+      href: sensor-batching-for-power-saving-.md
+    - name: "Filtering data"
+      href: filtering-data-v2.md
+    - name: "Defining Custom Values for Sensor Constants"
+      href: defining-custom-values-for-constants-v2.md
+    - name: "Fusion Sensor Implementation Details"
+      href: fusion-sensor-implementation-details.md
+- name: "Test Windows sensor hardware, drivers, and apps"
   items:
-  - name: "Testing sensor hardware, drivers, and apps in Windows"
+  - name: "Sensor Testing Sources"
     href: testing-sensor-landing.md
-  - name: "Building a Light Testing Tool"
-# Auto-expanded node
+  - name: Microsoft SensorExplorer
+    href: testing-sensor-explorer.md
+  - name: "The Microsoft Ambient Light Tool (MALT)"
     items:
-    - name: "Building a Light Testing Tool"
+    - name: "Building a light testing tool"
       href: testing-MALT-building-a-light-testing-tool.md
-    - name: "Testing System Brightness Response"
-      href: testing-MALT-system-brightness-response.md
-    - name: "Testing Auto Brightness"
+    - name: "Getting started with MALT"
+      href: testing-MALT-getting-started.md
+    - name: "Testing system brightness and color"
+      href: testing-MALT-system-brightness-and-color.md
+    - name: "Testing display whitepoint"
+      href: testing-MALT-display-whitepoint.md
+    - name: "Testing auto brightness"
       href: testing-MALT-auto-brightness.md
-    - name: "Testing Manual Brightness"
+    - name: "Testing manual brightness"
       href: testing-MALT-manual-brightness.md
-    - name: "Testing System Scenarios"
+    - name: "Testing system scenarios"
       href: testing-MALT-system-scenarios.md
-    - name: "Microcontroller Commands"
+    - name: "Microcontroller commands"
       href: testing-MALT-microcontroller-commands.md
-- name: "Sensor Driver Model for Windows 8.1"
-# Auto-expanded node
+- name: "Previous Versions"
   items: 
-  - name: "Sensor Driver Model for Windows 8.1"
-    href: sensor-driver-model-for-windows-8-1.md
-  - name: "New Sensor Features and Improvements for Windows 8.1"
+  - name: "Windows 8.1 new sensor features and improvements"
     href: new-sensor-features-and-improvements-for-windows-8-1.md
-  - name: "Design Guide"
-# Auto-expanded node
+  - name: "Windows 8.1 sensor driver design guide"
     items: 
-    - name: "Design Guide"
-      href: sensor-driver-design-guide.md
-    - name: "Getting Started"
-# Auto-expanded node
+    - name: "Architecture Overview"
+      href: architecture-overview-for-sensor-drivers.md
+    - name: "About the Sensor Class Extension"
+      href: about-the-sensor-class-extension.md
+    - name: "About the Interfaces"
       items: 
-      - name: "Getting Started"
-        href: getting-started.md
-      - name: "Introduction to the Sensor and Location Platform in Windows"
-        href: introduction-to-the-sensor-and-location-platform-in-windows.md
-    - name: "Sensor Driver Overview"
-# Auto-expanded node
+      - name: "About ISensorClassExtension"
+        href: about-isensorclassextension.md
+      - name: "About ISensorDriver"
+        href: about-isensordriver.md
+      - name: "About the Parameter Types"
+        href: about-the-parameter-types.md
+    - name: "About Sensor Driver Events"
+      href: about-sensor-driver-events.md
+    - name: "Sensor Constants"
       items: 
-      - name: "Sensor Driver Overview"
-        href: sensor-driver-overview.md
-      - name: "Architecture Overview"
-        href: architecture-overview-for-sensor-drivers.md
-      - name: "About the Sensor Class Extension"
-        href: about-the-sensor-class-extension.md
-      - name: "About the Interfaces"
-# Auto-expanded node
+      - name: "Sensor constants overview"
+        href: about-sensor-constants.md
+      - name: "Event Constants"
+        href: event-constants.md
+      - name: "Sensor Properties"
+        href: sensor-properties.md
+      - name: "Sensor Icon Constants"
+        href: sensor-icon-constants.md
+      - name: "Sensor Categories, Types, and Data Fields"
         items: 
-        - name: "About the Interfaces"
-          href: about-the-interfaces.md
-        - name: "About ISensorClassExtension"
-          href: about-isensorclassextension.md
-        - name: "About ISensorDriver"
-          href: about-isensordriver.md
-        - name: "About the Parameter Types"
-          href: about-the-parameter-types.md
-      - name: "About Sensor Driver Events"
-        href: about-sensor-driver-events.md
-      - name: "About Sensor Constants"
-# Auto-expanded node
-        items: 
-        - name: "About Sensor Constants"
-          href: about-sensor-constants.md
-        - name: "Event Constants"
-          href: event-constants.md
-        - name: "Sensor Properties"
-          href: sensor-properties.md
-        - name: "Sensor Icon Constants"
-          href: sensor-icon-constants.md
-        - name: "Sensor Categories, Types, and Data Fields"
-# Auto-expanded node
-          items: 
-          - name: "Sensor Categories, Types, and Data Fields"
-            href: sensor-categories--types--and-data-fields.md
-          - name: "SENSOR_CATEGORY_ALL"
-            href: sensor-category-all.md
-          - name: "SENSOR_CATEGORY_BIOMETRIC"
-            href: sensor-category-biometric.md
-          - name: "SENSOR_CATEGORY_ELECTRICAL"
-            href: sensor-category-electrical.md
-          - name: "SENSOR_CATEGORY_ENVIRONMENTAL"
-            href: sensor-category-environmental.md
-          - name: "SENSOR_CATEGORY_LIGHT"
-            href: sensor-category-light.md
-          - name: "SENSOR_CATEGORY_LOCATION"
-            href: sensor-category-loc.md
-          - name: "SENSOR_CATEGORY_MECHANICAL"
-            href: sensor-category-mechanical.md
-          - name: "SENSOR_CATEGORY_MOTION"
-            href: sensor-category-motion.md
-          - name: "SENSOR_CATEGORY_ORIENTATION"
-            href: sensor-category-orientation.md
-          - name: "SENSOR_CATEGORY_SCANNER"
-            href: sensor-category-scanner.md
-  - name: "Programming Guide"
-# Auto-expanded node
+        - name: "SENSOR_CATEGORY_ALL"
+          href: sensor-category-all.md
+        - name: "SENSOR_CATEGORY_BIOMETRIC"
+          href: sensor-category-biometric.md
+        - name: "SENSOR_CATEGORY_ELECTRICAL"
+          href: sensor-category-electrical.md
+        - name: "SENSOR_CATEGORY_ENVIRONMENTAL"
+          href: sensor-category-environmental.md
+        - name: "SENSOR_CATEGORY_LIGHT"
+          href: sensor-category-light.md
+        - name: "SENSOR_CATEGORY_LOCATION"
+          href: sensor-category-loc.md
+        - name: "SENSOR_CATEGORY_MECHANICAL"
+          href: sensor-category-mechanical.md
+        - name: "SENSOR_CATEGORY_MOTION"
+          href: sensor-category-motion.md
+        - name: "SENSOR_CATEGORY_ORIENTATION"
+          href: sensor-category-orientation.md
+        - name: "SENSOR_CATEGORY_SCANNER"
+          href: sensor-category-scanner.md
+  - name: "Windows 8.1 sensor driver programming guide"
     items: 
-    - name: "Programming Guide"
-      href: programming-guide.md
-    - name: "Sensor Driver Development Basics"
-# Auto-expanded node
-      items: 
-      - name: "Sensor Driver Development Basics"
-        href: sensor-driver-development-basics.md
-      - name: "Writing a Sensor Device Driver"
-# Auto-expanded node
-        items: 
-        - name: "Writing a Sensor Device Driver"
-          href: writing-a-sensor-device-driver.md
-        - name: "Considerations for Writing a Sensor Driver"
-          href: considerations-for-writing-a-sensor-driver.md
-        - name: "Creating a Sensor Driver"
-          href: creating-the-driver.md
-        - name: "Creating a Persistent Unique Identifier for a Sensor"
-          href: creating-a-persistent-unique-identifier.md
-        - name: "Raising Sensor Events"
-          href: raising-events.md
-        - name: "Filtering Data"
-          href: filtering-data.md
-        - name: "Using Vector Types with Sensors"
-          href: using-vector-types.md
-        - name: "Defining Custom Values for Sensor Constants"
-          href: defining-custom-values-for-constants.md
-        - name: "Specifying a Sensor Icon"
-          href: specifying-an-icon.md
-        - name: "Sensor Driver Best Practices"
-          href: sensor-driver-best-practices.md
+      - name: "Considerations for Writing a Sensor Driver"
+        href: considerations-for-writing-a-sensor-driver.md
+      - name: "Creating a Sensor Driver"
+        href: creating-the-driver.md
+      - name: "Creating a Persistent Unique Identifier for a Sensor"
+        href: creating-a-persistent-unique-identifier.md
+      - name: "Raising Sensor Events"
+        href: raising-events.md
+      - name: "Filtering Data"
+        href: filtering-data.md
+      - name: "Using Vector Types with Sensors"
+        href: using-vector-types.md
+      - name: "Defining Custom Values for Sensor Constants"
+        href: defining-custom-values-for-constants.md
+      - name: "Specifying a Sensor Icon"
+        href: specifying-an-icon.md
+      - name: "Sensor Driver Best Practices"
+        href: sensor-driver-best-practices.md
       - name: "Supporting Ambient Light Sensors"
         href: supporting-ambient-light-sensors.md
-    - name: "Sensor Driver Logic"
-# Auto-expanded node
-      items: 
+  - name: "Windows 8.1 sensor driver logic walkthrough"
+    items: 
       - name: "Sensor Driver Logic"
         href: driver-logic--pseudo-code-.md
       - name: "Driver Initialization Methods"
@@ -321,47 +240,23 @@
         href: internal-driver-methods.md
       - name: "Device Methods"
         href: device-methods.md
-    - name: "Testing Sensor Functionality with the Sensor Diagnostic Tool"
-# Auto-expanded node
-      items: 
       - name: "Testing Sensor Functionality with the Sensor Diagnostic Tool"
         href: the-sensor-diagnostic-tool.md
       - name: "Testing Sensor Functionality"
-# Auto-expanded node
-        items: 
-        - name: "Testing Sensor Functionality"
-          href: testing-sensor-functionality.md
-        - name: "Testing Sensor Events"
-          href: testing-sensor-events.md
-        - name: "Testing Sensor Data Retrieval"
-          href: testing-sensor-properties.md
-        - name: "Testing Sensor Property Support"
-          href: testing-and-logging-sensor-data.md
+        href: testing-sensor-functionality.md
+      - name: "Testing Sensor Events"
+        href: testing-sensor-events.md
+      - name: "Testing Sensor Data Retrieval"
+        href: testing-sensor-properties.md
+      - name: "Testing Sensor Property Support"
+        href: testing-and-logging-sensor-data.md
       - name: "Testing Location Functionality"
         href: testing-location-functionality.md
       - name: "Known Issues"
         href: known-issues.md
-    - name: "SpbAccelerometer Driver Sample"
-# Auto-expanded node
-      items: 
-      - name: "SpbAccelerometer Driver Sample"
-        href: spbaccelerometer-driver-sample.md
-      - name: "Supporting Multiple Sensors"
-        href: supporting-multiple-sensors.md
-      - name: "The Driver I/O Model"
-        href: the-driver-i-o-model.md
-      - name: "Defining the Accelerometer Object"
-        href: defining-the-accelerometer-object.md
-      - name: "Using the Sensor Class Extension"
-        href: using-the-sensor-class-extension.md
-      - name: "Supporting the Accelerometer Properties"
-        href: supporting-the-accelerometer-properties.md
-      - name: "The Driver Sample File List"
-        href: the-driver-sample-file-list.md
-  - name: "SpbAccelerometer Driver Cookbook"
-# Auto-expanded node
+  - name: "Windows 8.1 sample driver getting started"
     items: 
-    - name: "SpbAccelerometer Driver Cookbook"
+    - name: "SpbAccelerometer sensor sample driver"
       href: spbaccelerometer-driver-cookbook.md
     - name: "Install the Sample Device and Driver on your Sharks Cove Board"
       href: installing-the-sample-device-and-driver-on-your-sharks-cove-board.md

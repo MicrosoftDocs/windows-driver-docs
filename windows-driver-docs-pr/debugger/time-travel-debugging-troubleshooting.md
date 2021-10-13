@@ -5,9 +5,9 @@ ms.date: 10/18/2017
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
-
 # Time Travel Debugging - Troubleshooting
+
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
 
 This section describes how to troubleshoot time travel traces.
 
@@ -39,9 +39,9 @@ TTD recording is an invasive technology, which can interfere with other invasive
 
 See "Things to look out for" in [Time Travel Debugging - Overview](time-travel-debugging-overview.md) for information on known TTD incompatibilities.
 
-### I’m tracing an application and running AppVerifer at the same time, and the performance when replaying the trace is slow.
+### I’m tracing an application and running AppVerifier at the same time, and the performance when replaying the trace is slow.
 
-Because of the way AppVerifer uses memory to check the application, the experience later when replaying the trace can be noticeably worse than without AppVerifier. To improve performance, disable AppVerifier when recording the app. If this is not possible, you may need to close the callstack window in WinDbg in order to improve performance.
+Because of the way AppVerifier uses memory to check the application, the experience later when replaying the trace can be noticeably worse than without AppVerifier. To improve performance, disable AppVerifier when recording the app. If this is not possible, you may need to close the callstack window in WinDbg in order to improve performance.
 
 
 ## Issues with .IDX index files

@@ -1,7 +1,6 @@
 ---
 title: Obtaining a Function Instance Object
 description: Obtaining a Function Instance Object
-ms.assetid: 2c750281-031b-4b9f-9012-3b341ebe1cd9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ To use Function Discovery COM interfaces, the minidriver code must include the *
 #include <FunctionDiscovery.h>
 ```
 
-During initialization, as might happen in the [**IStiUSD::Initialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-initialize) method, the minidriver should query Function Discovery to obtain the appropriate Function Instance object that represents the hardware device. To complete this query, use the following procedure (and the associated code examples):
+During initialization, as might happen in the [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) method, the minidriver should query Function Discovery to obtain the appropriate Function Instance object that represents the hardware device. To complete this query, use the following procedure (and the associated code examples):
 
 ### Step 1: Create the Function Discovery object
 
@@ -83,9 +82,4 @@ pfiCollection->Item(0, &m_pFunctionInstance);
 For a code example that contains the declaration of a sample class (CWSDDevice), see [Code Sample for Obtaining a Function Instance Object](code-example-for-obtaining-a-function-instance-object.md).
 
  
-
- 
-
-
-
 

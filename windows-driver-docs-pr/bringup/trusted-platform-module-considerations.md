@@ -1,10 +1,9 @@
 ---
 title: Trusted Platform Module (TPM) Considerations
-description: Trusted Platform Module (TPM) Considerations
+description: Provides information about Trusted Platform Module (TPM) considerations.
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---
-
 
 # Trusted Platform Module (TPM) Considerations
 
@@ -16,12 +15,8 @@ After you upgrade to later operating system (Win8 and later), depending on the f
 
 ## Related resources
 
-[TPM recommendations](https://docs.microsoft.com/windows/security/hardware-protection/tpm/tpm-recommendations)
+[TPM recommendations](/windows/security/hardware-protection/tpm/tpm-recommendations)
 
 [Trusted Platform Module 2.0: A Brief Introduction](https://trustedcomputinggroup.org/resource/trusted-platform-module-2-0-a-brief-introduction/)
 
 [Trusted Platform Module (TPM)](https://trustedcomputinggroup.org/work-groups/trusted-platform-module/)
-
-
-
-

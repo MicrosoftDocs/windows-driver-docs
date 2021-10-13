@@ -1,7 +1,6 @@
 ---
 title: KSMETHODSETID\_BdaDeviceConfiguration
 description: KSMETHODSETID\_BdaDeviceConfiguration
-ms.assetid: a0014869-2ea0-4f55-be3a-da1e624ad61c
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -33,13 +32,7 @@ If a BDA minidriver does not define it's own handlers for the methods in this me
 
 ### See Also
 
-[**BdaInitFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdainitfilter)
+[**BdaInitFilter**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdainitfilter)
 
  
-
- 
-
-
-
-
 

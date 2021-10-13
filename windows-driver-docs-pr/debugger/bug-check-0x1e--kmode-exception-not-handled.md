@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1E KMODE_EXCEPTION_NOT_HANDLED
 description: The KMODE_EXCEPTION_NOT_HANDLED bug check has a value of 0x0000001E. This indicates that a kernel-mode program generated an exception which the error handler did not catch.
-ms.assetid: 4a30b770-b2c4-4fdd-b431-95f2b40ef5f7
 keywords: ["Bug Check 0x1E KMODE_EXCEPTION_NOT_HANDLED", "KMODE_EXCEPTION_NOT_HANDLED"]
 ms.date: 08/23/2018
 topic_type:
@@ -16,19 +15,19 @@ ms.localizationpriority: medium
 # Bug Check 0x1E: KMODE\_EXCEPTION\_NOT\_HANDLED
 
 
-The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This indicates that a kernel-mode program generated an exception which the error handler did not catch.
+The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This indicates that a kernel-mode program generated an exception that the error handler did not catch.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
-## KMODE\_EXCEPTION\_NOT\_HANDLED Parameters
+## KMODE\_EXCEPTION\_NOT\_HANDLED parameters
 
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -39,27 +38,25 @@ The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This ind
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>The exception code that was not handled</p></td>
+<td align="left"><p>The exception code that was not handled.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p>The address at which the exception occurred</p></td>
+<td align="left"><p>The address at which the exception occurred.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>Parameter 0 of the exception</p></td>
+<td align="left"><p>Parameter 0 of the exception.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>Parameter 1 of the exception</p></td>
+<td align="left"><p>Parameter 1 of the exception.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
-Cause
------
+## Cause
 
 To interpret this bug check, you must identify which exception was generated.
 
@@ -77,43 +74,45 @@ Common exception codes include:
 
     A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
 
-For a complete list of exception codes, see [NTSTATUS Values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are also listed in the ntstatus.h file located in the inc directory of the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/).
+For a complete list of exception codes, see [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](../index.yml). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
 
-Remarks
-----------
+## Remarks
 
-**If you are not equipped to debug this problem**, you can use some basic troubleshooting techniques described in [**Blue Screen Data**](blue-screen-data.md). If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
+If you are not equipped to debug this problem, you can use some basic troubleshooting techniques described in [Blue screen data](blue-screen-data.md). If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
-**Hardware incompatibility**
+### Hardware incompatibility
 
 Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
-**Faulty device driver or system service**
+### Faulty device driver or system service
 
 In addition, a faulty device driver or system service might be responsible for this error. Hardware issues, such as BIOS incompatibilities, memory conflicts, and IRQ conflicts can also generate this error.
 
-If a driver is listed by name within the bug check message, disable or remove that driver. Disable or remove any drivers or services that were recently added. If the error occurs during the startup sequence and the system partition is formatted with NTFS file system, you might be able to use Safe Mode to disable the driver in Device Manager.
+If a driver is listed by name within the bug check message, disable or remove that driver. Disable or remove any drivers or services that were recently added. If the error occurs during the startup sequence, and the system partition is formatted with NTFS file system, you might be able to use Safe Mode to disable the driver in Device Manager.
 
-Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing bug check 0x1E. You should also run hardware diagnostics, especially the memory scanner, supplied by the system manufacturer. For details on these procedures, see the owner's manual for your computer.
+Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing bug check 0x1E. Also run hardware diagnostics, especially the memory scanner, supplied by the system manufacturer. For details on these procedures, see the owner's manual for your computer.
 
 The error that generates this message can occur after the first restart during Windows Setup, or after Setup is finished. A possible cause of the error is a system BIOS incompatibility. BIOS problems can be resolved by upgrading the system BIOS version.
 
-Resolution
-----------
+## Resolution
 
-**If you plan to debug this problem**, you may find it difficult to obtain a stack trace. Parameter 2 (the exception address) should pinpoint the driver or function that caused this problem.
+If you plan to debug this problem, you may find it difficult to obtain a stack trace. The exception address (parameter 2) should pinpoint the driver or function that caused this problem.
 
-If exception code 0x80000003 occurs, this indicates that a hard-coded breakpoint or assertion was hit, but the system was started with the **/NODEBUG** switch. This problem should rarely occur. If it occurs repeatedly, make sure a kernel debugger is connected and the system is started with the **/DEBUG** switch.
+Exception code 0x80000003 indicates that a hard-coded breakpoint or assertion was hit, but the system was started with the **/NODEBUG** switch. This problem should rarely occur. If it occurs repeatedly, make sure that a kernel debugger is connected and that the system is started with the **/DEBUG** switch.
 
 If exception code 0x80000002 occurs, the trap frame will supply additional information.
 
-If the specific cause of the exception is unknown, the following should be considered:
+### Unknown cause
 
+If the specific cause of the exception is unknown, consider using the following procedure to obtain a stack trace.
+
+> [!NOTE]
+> This procedure assumes that you can locate **NT!PspUnhandledExceptionInSystemThread**. However, in some cases (such as an access violation crash) you will not be able to do this. In that case, look for **ntoskrnl!KiDispatchException**. The third parameter passed to this function is a trap frame address. Use the [**.trap** (display trap frame)](-trap--display-trap-frame-.md) command with this address to set the Register Context to the proper value. You can then perform stack traces and issue other commands.
 
 **To get a stack trace if the normal stack tracing procedures fail**
 
-1.  Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display parameters in the stack trace. Look for the call to **NT!PspUnhandledExceptionInSystemThread**. (If this function is not listed, see the note below.)
+1.  Use the [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display parameters in the stack trace. Look for the call to **NT!PspUnhandledExceptionInSystemThread**. (If this function is not listed, see the note above.)
 
 2.  The first parameter to **NT!PspUnhandledExceptionInSystemThread** is a pointer to a structure, which contains pointers to an **except** statement:
 
@@ -128,17 +127,15 @@ If the specific cause of the exception is unknown, the following should be consi
         )
     ```
 
-    Use the [**dd (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command on that address to display the necessary data.
+    Use the [**dd** (display memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command on that address to display the necessary data.
 
-3.  The first retrieved value is an exception record and the second is a context record. Use the [**.exr (Display Exception Record)**](-exr--display-exception-record-.md) command and the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with these two values as their arguments, respectively.
+3.  The first retrieved value is an exception record and the second is a context record. Use the [**.exr** (display exception record)](-exr--display-exception-record-.md) command and the [**.cxr** (display context record)](-cxr--display-context-record-.md) command with these two values as their arguments, respectively.
 
 4.  After the **.cxr** command executes, use the **kb** command to display a stack trace that is based on the context record information. This stack trace indicates the calling stack where the unhandled exception occurred.
 
-**Note**  This procedure assumes that you can locate **NT!PspUnhandledExceptionInSystemThread**. However, in some cases (such as an access violation crash) you will not be able to do this. In that case, look for **ntoskrnl!KiDispatchException**. The third parameter passed to this function is a trap frame address. Use the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command with this address to set the Register Context to the proper value. You can then perform stack traces and issue other commands.
+### Example bug check
 
- 
-
-Here is an example of bug check 0x1E on an x86 processor:
+Following is an example of bug check 0x1E on an x86 processor:
 
 ```dbgcmd
 kd> .bugcheck                 get the bug check data

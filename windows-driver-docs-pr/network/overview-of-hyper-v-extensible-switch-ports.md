@@ -1,7 +1,6 @@
 ---
 title: Overview of Hyper-V Extensible Switch Ports
 description: Overview of Hyper-V Extensible Switch Ports
-ms.assetid: FD6B6014-B840-4EC8-96F4-34C08EC303EA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,8 +30,8 @@ For more information, see [Operational Ports](operational-ports.md).
 
 Extensible switch extensions are notified of port creation, update and deletion through the following extensible switch object identifier (OID) requests:
 
-<a href="" id="oid-switch-port-create"></a>[OID\_SWITCH\_PORT\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-create)  
-The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-create) to notify extensible switch extensions about the creation of an extensible switch port.
+<a href="" id="oid-switch-port-create"></a>[OID\_SWITCH\_PORT\_CREATE](./oid-switch-port-create.md)  
+The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_CREATE](./oid-switch-port-create.md) to notify extensible switch extensions about the creation of an extensible switch port.
 
 The extension can veto the creation notification by returning STATUS\_DATA\_NOT\_ACCEPTED for the OID request. For example, if an extension cannot allocate resources to enforce its configured policies on the port, the extension vetoes the creation notification.
 
@@ -40,8 +39,8 @@ If the extension accepts the creation notification, it must forward the OID requ
 
 Extensions cannot forward packets to the newly created port until a network connection is created. For more information on this process, see [Hyper-V Extensible Switch Network Adapters](hyper-v-extensible-switch-network-adapters.md).
 
-<a href="" id="oid-switch-port-updated"></a>[OID\_SWITCH\_PORT\_UPDATED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-updated)  
-The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_UPDATED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-updated) to notify extensible switch extensions that an extensible switch port’s parameters are being updated. The OID will only be issued for ports that have already been created, and have not yet begun the teardown/delete process. Currently only the *PortFriendlyName* field is subject to update after creation.
+<a href="" id="oid-switch-port-updated"></a>[OID\_SWITCH\_PORT\_UPDATED](./oid-switch-port-updated.md)  
+The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_UPDATED](./oid-switch-port-updated.md) to notify extensible switch extensions that an extensible switch port’s parameters are being updated. The OID will only be issued for ports that have already been created, and have not yet begun the teardown/delete process. Currently only the *PortFriendlyName* field is subject to update after creation.
 
 The protocol edge of the extensible switch issues this OID request when the previous network connection to the port has been torn down and all OID requests to the port have been completed.
 
@@ -51,8 +50,8 @@ The protocol edge of the extensible switch issues this OID request when the prev
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
-<a href="" id="oid-switch-port-teardown"></a>[OID\_SWITCH\_PORT\_TEARDOWN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-teardown)  
-The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-teardown) to notify extensible switch extensions that an extensible switch port is being deleted. The protocol edge of the extensible switch issues this OID request when the previous network connection to the port has been torn down and all OID requests to the port have been completed.
+<a href="" id="oid-switch-port-teardown"></a>[OID\_SWITCH\_PORT\_TEARDOWN](./oid-switch-port-teardown.md)  
+The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](./oid-switch-port-teardown.md) to notify extensible switch extensions that an extensible switch port is being deleted. The protocol edge of the extensible switch issues this OID request when the previous network connection to the port has been torn down and all OID requests to the port have been completed.
 
 **Note**  This OID request could be issued if a network adapter connection was not previously made to the port.
 
@@ -62,62 +61,56 @@ The extension must always forward this OID set request down the extensible switc
 
 After the extension forwards this OID request, it can no longer issue OID requests for the port being deleted.
 
-<a href="" id="oid-switch-port-delete"></a>[OID\_SWITCH\_PORT\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-delete)  
-The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-delete) to notify extensible switch extensions that an extensible switch port has been deleted. The protocol edge of the extensible switch issues this OID request after it issues the [OID\_SWITCH\_PORT\_TEARDOWN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-teardown) request and OID requests that target the port have been completed.
+<a href="" id="oid-switch-port-delete"></a>[OID\_SWITCH\_PORT\_DELETE](./oid-switch-port-delete.md)  
+The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](./oid-switch-port-delete.md) to notify extensible switch extensions that an extensible switch port has been deleted. The protocol edge of the extensible switch issues this OID request after it issues the [OID\_SWITCH\_PORT\_TEARDOWN](./oid-switch-port-teardown.md) request and OID requests that target the port have been completed.
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
 All extensible switch ports that are created for network connections are assigned an identifier greater than **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**. The **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** identifier is reserved and used in the following ways:
 
--   The source port identifier for a packet is stored in the packet's out-of-band (OOB) forwarding context that is associated with its [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure. A source port identifier of **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** specifies that the packet originated from the extensible switch extension and not from an extensible switch port. A packet with a source port identifier of **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** is trusted and bypasses the extensible switch port policies, such as access control lists (ACLs) and quality of service (QoS).
+-   The source port identifier for a packet is stored in the packet's out-of-band (OOB) forwarding context that is associated with its [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. A source port identifier of **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** specifies that the packet originated from the extensible switch extension and not from an extensible switch port. A packet with a source port identifier of **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** is trusted and bypasses the extensible switch port policies, such as access control lists (ACLs) and quality of service (QoS).
 
-    The extension may want the packet to be treated as if it originated from a particular port. This allows the policies for that port to be applied to the packet. The extension calls [*SetNetBufferListSource*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_set_net_buffer_list_source) to change the source port for the packet.
+    The extension may want the packet to be treated as if it originated from a particular port. This allows the policies for that port to be applied to the packet. The extension calls [*SetNetBufferListSource*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_set_net_buffer_list_source) to change the source port for the packet.
 
     However, there may be situations where the extension may want to assign the packet's source port identifier to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**. For example, the extension may want to set the source port identifier to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** for proprietary control packets that are sent to a device on the external network.
 
     For more information about the forwarding context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
 
--   Object identifier (OID) requests of [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request) are issued by the extensible switch interface to encapsulate OID requests that are issued to the extensible switch external network adapter. For example, hardware offload OID requests are encapsulated by the interface before they are issued down the extensible switch driver stack.
+-   Object identifier (OID) requests of [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) are issued by the extensible switch interface to encapsulate OID requests that are issued to the extensible switch external network adapter. For example, hardware offload OID requests are encapsulated by the interface before they are issued down the extensible switch driver stack.
 
     An extension can also issue encapsulated OID requests in order to forward requests down the extensible switch control path. This allows extensions to query or configure the capabilities of an underlying physical network adapter.
 
-    The **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure for this OID request contains a pointer to an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. If the **SourcePortId** member is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**, this specifies that the OID request was originated by the extensible switch interface. If the **DestinationPortId** is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**, this specifies that the OID request is targeted for processing by an extension in the extensible switch driver stack.
+    The **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure for this OID request contains a pointer to an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. If the **SourcePortId** member is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**, this specifies that the OID request was originated by the extensible switch interface. If the **DestinationPortId** is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**, this specifies that the OID request is targeted for processing by an extension in the extensible switch driver stack.
 
     For more information about the control path for OID requests, see [Hyper-V Extensible Switch Control Path for OID Requests](hyper-v-extensible-switch-control-path-for-oid-requests.md).
 
--   NDIS status indications of [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) are issued by the miniport edge of the extensible switch to encapsulate a status indication from the extensible switch external network adapter.
+-   NDIS status indications of [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) are issued by the miniport edge of the extensible switch to encapsulate a status indication from the extensible switch external network adapter.
 
     An extension can also issue encapsulated NDIS status indications in order to forward indications up the extensible switch control path. This allows extensions to change the reported capabilities of an underlying physical network adapter.
 
-    The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure for this indication contains a pointer to an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure. If the **SourcePortId** member is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**, this specifies that the status indication was originated by the extensible switch interface. If the **DestinationPortId** is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**, this specifies that the OID request is targeted for processing by an extension in the extensible switch driver stack.
+    The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure for this indication contains a pointer to an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure. If the **SourcePortId** member is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**, this specifies that the status indication was originated by the extensible switch interface. If the **DestinationPortId** is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**, this specifies that the OID request is targeted for processing by an extension in the extensible switch driver stack.
 
     For more information about the control path for NDIS status indications, see [Hyper-V Extensible Switch Control Path for NDIS Status Indications](hyper-v-extensible-switch-control-path-for-ndis-status-indications.md).
 
 The extensible switch interface maintains a reference counter for each port that has been created. A port will not be deleted if its reference counter has a nonzero value. The interface provides the following handler functions for incrementing or decrementing an extensible switch port's reference counters:
 
-<a href="" id="referenceswitchport"></a>[*ReferenceSwitchPort*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_port)  
-The extensible switch extension calls this function to increment a port's reference counter. While the reference counter has a nonzero value, the protocol edge of the extensible switch will not issue an object identifier (OID) set request of [OID\_SWITCH\_PORT\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-delete) to delete the extensible switch port.
+<a href="" id="referenceswitchport"></a>[*ReferenceSwitchPort*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port)  
+The extensible switch extension calls this function to increment a port's reference counter. While the reference counter has a nonzero value, the protocol edge of the extensible switch will not issue an object identifier (OID) set request of [OID\_SWITCH\_PORT\_DELETE](./oid-switch-port-delete.md) to delete the extensible switch port.
 
-The extension must call [*ReferenceSwitchPort*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_port) before it performs any operation that requires the port to be in an active state. For example, the extension must call *ReferenceSwitchPort* before it issues an OID method request of [OID\_SWITCH\_PORT\_PROPERTY\_ENUM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-enum).
+The extension must call [*ReferenceSwitchPort*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port) before it performs any operation that requires the port to be in an active state. For example, the extension must call *ReferenceSwitchPort* before it issues an OID method request of [OID\_SWITCH\_PORT\_PROPERTY\_ENUM](./oid-switch-port-property-enum.md).
 
-**Note**  The extension must not call [*ReferenceSwitchPort*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_port) for a port after it receives an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-teardown) for that port.
+**Note**  The extension must not call [*ReferenceSwitchPort*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port) for a port after it receives an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](./oid-switch-port-teardown.md) for that port.
 
  
 
-<a href="" id="dereferenceswitchport"></a>[*DereferenceSwitchPort*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_port)  
+<a href="" id="dereferenceswitchport"></a>[*DereferenceSwitchPort*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port)  
 The extensible switch extension calls this function to decrement a port's reference counter.
 
-The extension must call [*DereferenceSwitchPort*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_port) after the operation being performed on the port has completed. For example, if the extension called *ReferenceSwitchPort* before if issued an [OID\_SWITCH\_PORT\_PROPERTY\_ENUM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-enum) request, the extension must call *DereferenceSwitchPort* after the OID request has completed.
+The extension must call [*DereferenceSwitchPort*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port) after the operation being performed on the port has completed. For example, if the extension called *ReferenceSwitchPort* before if issued an [OID\_SWITCH\_PORT\_PROPERTY\_ENUM](./oid-switch-port-property-enum.md) request, the extension must call *DereferenceSwitchPort* after the OID request has completed.
 
 **Note**  NDIS ports and extensible switch ports are different objects. Packets that move through the extensible switch data path are always assigned to the NDIS port number of **NDIS\_DEFAULT\_PORT\_NUMBER**. However, the packet's source and destination extensible switch port number can be a value of **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** or greater. For more information, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
  
 
  
-
- 
-
-
-
-
 

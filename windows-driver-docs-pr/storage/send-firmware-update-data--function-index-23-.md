@@ -1,7 +1,6 @@
 ---
 title: Send Firmware Update Data (Function Index 23)
 description: This function sends firmware data to the device.
-ms.assetid: 3F28C89B-040A-407B-B780-96D6767DC5C7
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function sends firmware data to the device.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 
@@ -102,8 +101,8 @@ This function sends firmware data to the device.
 
  
 
-&gt; \[!Note\]   
-&gt;This function shall compute the CRC of the Firmware Data and compare it with \**FW\_REGION\_CRC0* (3, 0x40) and \**FW\_REGION\_CRC1* (3, 0x41). If the values don’t match, the function shall fail with Function-Specific Error Code 3. Please refer to the Byte Addressable Energy Backed Interface JEDEC standard for the CRC algorithm specification.
+> [!NOTE]
+> This function shall compute the CRC of the Firmware Data and compare it with \**FW\_REGION\_CRC0* (3, 0x40) and \**FW\_REGION\_CRC1* (3, 0x41). If the values don’t match, the function shall fail with Function-Specific Error Code 3. Please refer to the Byte Addressable Energy Backed Interface JEDEC standard for the CRC algorithm specification.
 
  
 

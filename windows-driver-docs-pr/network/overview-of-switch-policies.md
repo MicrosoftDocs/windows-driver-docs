@@ -1,7 +1,6 @@
 ---
 title: Overview of Switch Policies
 description: Overview of Switch Policies
-ms.assetid: DB9368CE-96D4-48C9-AE18-601EE4A09001
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,7 +22,7 @@ The ISV defines the format for the custom switch properties. The format of the c
 
 Custom switch properties are defined through managed object format (MOF) class definitions. After the MOF file is registered with the WMI management layer, the underlying extensions are provisioned with the custom switch policy.
 
-A custom switch property is specified by the [**NDIS\_SWITCH\_PROPERTY\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_switch_property_type) enumeration value of **NdisSwitchPropertyTypeCustom**. Each custom switch property is uniquely defined through a GUID value. The extension manages those custom switch properties for which it has been configured with the property's GUID value.
+A custom switch property is specified by the [**NDIS\_SWITCH\_PROPERTY\_TYPE**](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_switch_property_type) enumeration value of **NdisSwitchPropertyTypeCustom**. Each custom switch property is uniquely defined through a GUID value. The extension manages those custom switch properties for which it has been configured with the property's GUID value.
 
 **Note**  The method by which the extension is configured with the property's GUID value is proprietary to the ISV.
 
@@ -31,13 +30,13 @@ A custom switch property is specified by the [**NDIS\_SWITCH\_PROPERTY\_TYPE**](
 
 Custom switch policies are provisioned through the following OID requests:
 
--   The protocol edge issues OID set requests of [OID\_SWITCH\_PROPERTY\_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-add) to notify underlying extensions of the addition of a custom switch property.
+-   The protocol edge issues OID set requests of [OID\_SWITCH\_PROPERTY\_ADD](./oid-switch-property-add.md) to notify underlying extensions of the addition of a custom switch property.
 
--   The protocol edge issues OID set requests of [OID\_SWITCH\_PROPERTY\_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-update) to notify underlying extensions of the update to a custom switch property.
+-   The protocol edge issues OID set requests of [OID\_SWITCH\_PROPERTY\_UPDATE](./oid-switch-property-update.md) to notify underlying extensions of the update to a custom switch property.
 
--   The protocol edge issues OID set requests of [OID\_SWITCH\_PROPERTY\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-delete) to notify underlying extensions of the deletion of a custom switch property.
+-   The protocol edge issues OID set requests of [OID\_SWITCH\_PROPERTY\_DELETE](./oid-switch-property-delete.md) to notify underlying extensions of the deletion of a custom switch property.
 
-A forwarding extension can block the provisioning of the new or updated switch policy by vetoing the OID request. The extension does this by completing the OID request with STATUS\_DATA\_NOT\_ACCEPTED. If the extension does not veto the OID request, it must call [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest) to forward the OID request down the extensible switch control path.
+A forwarding extension can block the provisioning of the new or updated switch policy by vetoing the OID request. The extension does this by completing the OID request with STATUS\_DATA\_NOT\_ACCEPTED. If the extension does not veto the OID request, it must call [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request down the extensible switch control path.
 
 **Note**  If the extension does not veto the OID request, it monitors the status when the request is completed. The extension does this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 
@@ -46,10 +45,4 @@ A forwarding extension can block the provisioning of the new or updated switch p
 For more information on how to manage switch policies and properties, see [Managing Switch Policies](managing-switch-policies.md).
 
  
-
- 
-
-
-
-
 

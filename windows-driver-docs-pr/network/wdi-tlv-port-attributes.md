@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PORT_ATTRIBUTES
 description: WDI_TLV_PORT_ATTRIBUTES is a TLV that contains port attributes.
-ms.assetid: F5A0BC8D-1B86-41C2-A530-860E15775695
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PORT_ATTRIBUTES Network Drivers Starting with Windows Vista
@@ -28,13 +27,12 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                              | Description                                         |
 |---------------------------------------------------|-----------------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Specifies the MAC address associated with the port. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Specifies the MAC address associated with the port. |
 | UINT16                                            | Specifies the port number.                          |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -58,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

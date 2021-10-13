@@ -1,7 +1,6 @@
 ---
 title: Processing Mutex in AVStream
 description: Processing Mutex in AVStream
-ms.assetid: dd84fe3f-352e-4641-99d7-792ccecb0b40
 keywords:
 - AVStream mutexes WDK
 - mutexes WDK AVStream
@@ -26,12 +25,7 @@ A thread that has acquired a processing mutex should not subsequently attempt to
 
 To manipulate the processing mutex, use the following functions:
 
-[**KsFilterAcquireProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfilteracquireprocessingmutex), [**KsPinAcquireProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinacquireprocessingmutex), [**KsFilterReleaseProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfilterreleaseprocessingmutex), [**KsPinReleaseProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinreleaseprocessingmutex)
+[**KsFilterAcquireProcessingMutex**](/windows-hardware/drivers/ddi/ks/nf-ks-ksfilteracquireprocessingmutex), [**KsPinAcquireProcessingMutex**](/windows-hardware/drivers/ddi/ks/nf-ks-kspinacquireprocessingmutex), [**KsFilterReleaseProcessingMutex**](/windows-hardware/drivers/ddi/ks/nf-ks-ksfilterreleaseprocessingmutex), [**KsPinReleaseProcessingMutex**](/windows-hardware/drivers/ddi/ks/nf-ks-kspinreleaseprocessingmutex)
 
  
-
- 
-
-
-
 

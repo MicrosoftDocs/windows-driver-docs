@@ -62,18 +62,15 @@ The CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x000001
 
 
 ## Cause
------
 
 A Cluster Resource call took longer than configured timeout. The system generated a live dump for analysis of the delay.
 
 (This code can never be used for a real bugcheck.)
 
 ## Resolution
-----------
  
 
-## See Also
-----------
+## See Also-
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

@@ -1,7 +1,6 @@
 ---
 title: INF AddProperty Directive
 description: An AddProperty directive references one or more INF file sections that modify the device properties that are set for a device instance, a device setup class, a device interface class, or a device interface.
-ms.assetid: 8fcb1355-f13d-4d96-aa73-62a094a52267
 keywords:
 - INF AddProperty Directive Device and Driver Installation
 topic_type:
@@ -17,9 +16,9 @@ ms.localizationpriority: medium
 # INF AddProperty Directive
 
 
-An **AddProperty** directive references one or more INF file sections that modify the [device properties](device-properties.md) that are set for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface.
+An **AddProperty** directive references one or more INF file sections that modify the [device properties](device-properties.md) that are set for a device instance, a [device setup class](./overview-of-device-setup-classes.md), a [device interface class](./overview-of-device-interface-classes.md), or a device interface.
 
-```ini
+```inf
 [DDInstall] |
 [DDInstall.nt] |
 [DDInstall.ntx86] |
@@ -54,7 +53,7 @@ Each *add-property-section* can have entries to do the following:
 
 An *add-property-section* that is referenced by an **AddProperty** directive has the following format:
 
-```ini
+```inf
 [add-property-section]
 (property-name, , , [flags], value]) | 
 ({property-category-guid}, property-pid, type, [flags], value)
@@ -76,8 +75,10 @@ One of the following property names that represent the device instance [driver p
 -   **DeviceIcon**
 -   **DeviceBrandingIcon**
 
+For more info about adding custom device icons, see [Providing Icons for a Device](providing-vendor-icons-for-the-shell-and-autoplay.md).
+
 <a href="" id="property-category-guid"></a>*property-category-guid*  
-A GUID value that identifies the property category. The GUID value can be a system-defined GUID that identifies one of the property categories for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface. All properties that have the same GUID value are members of the same category. These property categories are defined in *Devpkey.h*.
+A GUID value that identifies the property category. The GUID value can be a system-defined GUID that identifies one of the property categories for a device instance, a [device setup class](./overview-of-device-setup-classes.md), a [device interface class](./overview-of-device-interface-classes.md), or a device interface. All properties that have the same GUID value are members of the same category. These property categories are defined in *Devpkey.h*.
 
 The GUID value can also be a custom GUID value that identifies a custom property category.
 
@@ -85,7 +86,7 @@ The GUID value can also be a custom GUID value that identifies a custom property
 The property identifier that indicates the specific property within the property category that is indicated by the *property-category-guid* value. For internal system reasons, a property identifier must be greater than or equal to two.
 
 <a href="" id="type"></a>type  
-The numeric value, in decimal or hexadecimal format, of the [property-data-type identifier](https://docs.microsoft.com/previous-versions/ff541476(v=vs.85)) for the property that is specified by the *property-category-guid* value and the *property-pid* value. Only the following [**base data types**](https://docs.microsoft.com/previous-versions/ff537793(v=vs.85)) are supported:
+The numeric value, in decimal or hexadecimal format, of the [property-data-type identifier](/previous-versions/ff541476(v=vs.85)) for the property that is specified by the *property-category-guid* value and the *property-pid* value. Only the following [**base data types**](/previous-versions/ff537793(v=vs.85)) are supported:
 
 -   DEVPROP_TYPE_STRING
 -   DEVPROP_TYPE_STRING_LIST
@@ -116,8 +117,7 @@ A flag that performs a bitwise AND of the value entry value to that of the exist
 <a href="" id="value"></a>*value*  
 The value that the add operation uses to modify a property value, depending on the property data type and the value of the *flags* entry.
 
-Remarks
--------
+## Remarks
 
 The **AddProperty** directive can be used to modify a system-defined device property or a custom device property. This directive can be specified under any of the sections shown in the formal syntax statement above.
 
@@ -125,8 +125,7 @@ Each *add-property-section* name must be unique within an INF file, but the sect
 
 For more information about how to use the INF **AddProperty** directive, see [Using the INF AddProperty Directive and the INF DelProperty Directive](using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md).
 
-Examples
---------
+## Examples
 
 The following example of an add property section includes two line entries: the first line entry sets the **DeviceModel** property by name, and the second line entry sets a custom device property by specifying a custom property key GUID.
 
@@ -136,7 +135,7 @@ The second line entry sets a custom property in a custom property category. The 
 
 The optional *flags* entry value is not present, and the type entry value is "18" (DEVPROP_TYPE_STRING). The value entry value is "String value for property 1."
 
-```ini
+```inf
 [SampleAddPropertySection]
 DeviceModel,,,,"Sample Device Model Name"
 {c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e}, 2, 18,, "String value for property 1"
@@ -148,11 +147,4 @@ DeviceModel,,,,"Sample Device Model Name"
 [**DelProperty**](inf-delproperty-directive.md)
 
  
-
- 
-
-
-
-
-
 

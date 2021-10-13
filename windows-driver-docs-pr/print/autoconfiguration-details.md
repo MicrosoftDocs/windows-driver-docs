@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration Details
 description: Autoconfiguration Details
-ms.assetid: ba596ce3-724d-45c4-85ee-2486a31a0c01
 keywords:
 - autoconfiguration WDK printer , about printer autoconfiguration
 - printer autoconfiguration WDK printer , about printer autoconfiguration
@@ -26,7 +25,7 @@ The printer driver must:
 
 -   Be able to receive notifications about device configuration changes using the bidi notification schema.
 
--   Be able to solicit configuration data from the printer using the [bidi communication interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index), and specifically the IBidiSpl2 COM interface.
+-   Be able to solicit configuration data from the printer using the [bidi communication interfaces](/windows-hardware/drivers/ddi/_print/index), and specifically the IBidiSpl2 COM interface.
 
 The port monitor must:
 
@@ -49,9 +48,4 @@ This section contains the following topics:
 [Autoconfiguration During Configuration Change](autoconfiguration-during-configuration-change.md)
 
  
-
- 
-
-
-
 

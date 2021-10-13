@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MEDIA_CONNECT_STATUS
 description: As a query, the OID_GEN_MEDIA_CONNECT_STATUS OID requests the connection status of the NIC on the network.
-ms.assetid: 3ed26e62-a285-4b78-91c6-7c3cc0963570
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MEDIA_CONNECT_STATUS Network Drivers Starting with Windows Vista
@@ -30,8 +29,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for NDIS 6.0 and later miniport drivers.
 
@@ -41,10 +39,9 @@ The OID\_GEN\_MEDIA\_CONNECT\_STATUS OID requests the connection status of the N
 
 **NdisMediaStateDisconnected**
 
-When a miniport driver senses that the network connection has been lost, it must also call the [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex) or [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcoindicatestatusex) function with NDIS\_STATUS\_MEDIA\_DISCONNECT (for NDIS 5.1) or NDIS\_STATUS\_LINK\_STATE with **MediaConnectStateDisconnected** in the MediaConnectState property (for NDIS 6.x). When the connection is restored, it must then call **NdisM(Co)IndicateStatus** with NDIS\_STATUS\_MEDIA\_CONNECT (for NDIS 5.1) or NDIS\_STATUS\_LINK\_STATE with **MediaConnectStateConnected** in the MediaConnectState property (for NDIS 6.x).
+When a miniport driver senses that the network connection has been lost, it must also call the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) or [**NdisMCoIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex) function with NDIS\_STATUS\_MEDIA\_DISCONNECT (for NDIS 5.1) or NDIS\_STATUS\_LINK\_STATE with **MediaConnectStateDisconnected** in the MediaConnectState property (for NDIS 6.x). When the connection is restored, it must then call **NdisM(Co)IndicateStatus** with NDIS\_STATUS\_MEDIA\_CONNECT (for NDIS 5.1) or NDIS\_STATUS\_LINK\_STATE with **MediaConnectStateConnected** in the MediaConnectState property (for NDIS 6.x).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -62,14 +59,9 @@ Requirements
 ## See also
 
 
-[**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcoindicatestatusex)
+[**NdisMCoIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex)
 
-[**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex)
-
- 
+[**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex)
 
  
-
-
-
 

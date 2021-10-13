@@ -1,7 +1,6 @@
 ---
-title: C28128
+title: C28128 warning
 description: Warning C28128 An access to a field has been made directly. It should be made by a routine.
-ms.assetid: 66b3345b-fab8-4f1a-b7ab-dfc5e70ca312
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
@@ -18,7 +17,7 @@ warning C28128: An access to a field has been made directly. It should be made b
 
 The driver directly accessed a structure member that should be accessed only by using specialized functions.
 
-For example, you should use the [**IoSetCancelRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcancelroutine) instead of directly modifying the **CancelRoutine** member of the [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp) structure.
+For example, you should use the [**IoSetCancelRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcancelroutine) instead of directly modifying the **CancelRoutine** member of the [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure.
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -35,10 +34,4 @@ oldCancel = IoSetCancelRoutine(irp, myCancelRoutine);
 ```
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: DXGK\_POWER\_COMPONENT\_P\_FLAGS structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 9A3C9821-7E98-4F9E-94EE-AF2C09C2A881
+description: Learn about the DXGK\_POWER\_COMPONENT\_P\_FLAGS structure, which is reserved for system use. Do not use in your driver.
 keywords: ["DXGK_POWER_COMPONENT_P_FLAGS structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_POWER_COMPONENT_P_FLAGS {
@@ -34,15 +32,13 @@ typedef struct _DXGK_POWER_COMPONENT_P_FLAGS {
 } DXGK_POWER_COMPONENT_P_FLAGS;
 ```
 
-Members
--------
+## Members
 
 **Reserved**
 
 **Value**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

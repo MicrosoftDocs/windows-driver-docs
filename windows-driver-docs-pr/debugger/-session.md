@@ -1,7 +1,6 @@
 ---
-title: session
+title: session (WinDbg)
 description: The session extension controls the session context. It can also display a list of all user sessions.
-ms.assetid: c5f32bf0-59b5-4274-9271-1ad4913ffa1a
 keywords: ["session Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,8 +42,7 @@ Kdexts.dll
 
 For information about user sessions and the Session Manager (smss.exe), see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The **!session** extension is used to control the session context. Using **!session** with no parameters will display a list of active sessions on the target computer. Using **!session /s** *DefaultSession* will change the session context to the new default value.
 

@@ -1,7 +1,6 @@
 ---
 title: Dispatch IRQL Tracking
 description: Dispatch IRQL Tracking
-ms.assetid: ac559f4f-0138-4b9a-8f1b-44a2973fd6a1
 keywords:
 - dispatch level flags WDK networking
 - IRQLs WDK networking
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-To improve system performance, some NDIS functions (for example, the [*MiniportSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_send_net_buffer_lists) function) include a dispatch level flag that indicates the current IRQL. The proper use of the dispatch level flag can help to avoid unnecessary attempts to set the IRQL.
+To improve system performance, some NDIS functions (for example, the [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) function) include a dispatch level flag that indicates the current IRQL. The proper use of the dispatch level flag can help to avoid unnecessary attempts to set the IRQL.
 
 There are other flags that control other attributes, but the names for the dispatch level flags are:
 
@@ -39,10 +38,4 @@ If the known current IRQL is DISPATCH\_LEVEL, the caller should set this flag. I
 Drivers should not test for the IRQL to determine the value for the dispatch level flag. Testing would defeat the purpose of the flag. If necessary, the called function can simply do the testing itself. How a driver determines that it should or should not set the flag is left to the design of the particular driver.
 
  
-
- 
-
-
-
-
 

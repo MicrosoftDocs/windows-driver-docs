@@ -1,7 +1,6 @@
 ---
 title: Implementing IPv6 NS Offload
 description: This section describes how to implement IPv6 neighbor solicitation (NS) offload
-ms.assetid: 48AACE46-4D39-49ED-90AD-F73E27D0CDBE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,18 +8,18 @@ ms.localizationpriority: medium
 # Implementing IPv6 NS Offload
 
 
-An NDIS protocol driver sends an IPv6 neighbor solicitation (NS) offload request as an [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-add-protocol-offload) OID request. To support these NS offload requests, miniports should do the following.
+An NDIS protocol driver sends an IPv6 neighbor solicitation (NS) offload request as an [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](./oid-pm-add-protocol-offload.md) OID request. To support these NS offload requests, miniports should do the following.
 
 ## Indicating How Many Offload Requests the Miniport Adapter Supports
 
 
-A miniport driver sets the **NumNSOffloadIPv6Addresses** member of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure to indicate how many NS offload requests the miniport adapter supports.
+A miniport driver sets the **NumNSOffloadIPv6Addresses** member of the [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure to indicate how many NS offload requests the miniport adapter supports.
 
 **Note**  Despite its name, the **NumNSOffloadIPv6Addresses** member contains the number of supported requests, not the number of addresses.
 
  
 
-**Note**  Some Windows Hardware Certification requirements, such as **Device.Network.LAN.PM.PowMgmtNDIS** and **Device.Network.WLAN.WoWLAN.ImplementWakeOnWLAN**, specify that the miniport adapter must support at least 2 NS offload requests. (In other words, to meet these requirements, the value of **NumNSOffloadIPv6Addresses** must be at least 2.) For more information, see the [Windows 8 Hardware Certification Requirements](https://go.microsoft.com/fwlink/p/?linkid=268621).
+**Note**  Some Windows Hardware Certification requirements, such as **Device.Network.LAN.PM.PowMgmtNDIS** and **Device.Network.WLAN.WoWLAN.ImplementWakeOnWLAN**, specify that the miniport adapter must support at least 2 NS offload requests. (In other words, to meet these requirements, the value of **NumNSOffloadIPv6Addresses** must be at least 2.) For more information, see the [Windows 8 Hardware Certification Requirements](/previous-versions/windows/hardware/cert-program/).
 
  
 
@@ -30,7 +29,7 @@ In addition, there are 2 types of NS messages: unicast and multicast. Miniport d
 
 ### Example
 
-If a miniport driver sets the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_capabilities) member of the **NumNSOffloadIPv6Addresses** structure to 3, then NDIS may send up to 3 [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-add-protocol-offload) requests of type **NdisPMProtocolOffloadIdIPv6NS**. Each OID\_PM\_ADD\_PROTOCOL\_OFFLOAD request may have exactly 1 or 2 addresses in the **TargetIPv6Addresses** member of the [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure. Therefore, the miniport must support a 3 x 2 = 6 target addresses.
+If a miniport driver sets the [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) member of the **NumNSOffloadIPv6Addresses** structure to 3, then NDIS may send up to 3 [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](./oid-pm-add-protocol-offload.md) requests of type **NdisPMProtocolOffloadIdIPv6NS**. Each OID\_PM\_ADD\_PROTOCOL\_OFFLOAD request may have exactly 1 or 2 addresses in the **TargetIPv6Addresses** member of the [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure. Therefore, the miniport must support a 3 x 2 = 6 target addresses.
 
 Because the miniport must match both unicast and multicast NS messages for each target address, the miniport should be able to match a total of 6 x 2 = 12 NS message patterns.
 
@@ -199,12 +198,4 @@ Upon receiving the NS message, device firmware should perform the validation ste
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

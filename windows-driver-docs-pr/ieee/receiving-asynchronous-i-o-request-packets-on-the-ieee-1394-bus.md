@@ -1,7 +1,6 @@
 ---
 title: Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
 description: The computer itself is a node on the IEEE 1394 bus, and therefore can receive asynchronous I/O requests.
-ms.assetid: 7b8eaf40-7fdc-4c25-86a7-8377d2d51877
 keywords:
 - receiving asynchronous I/O requests
 - allocating address ranges
@@ -166,33 +165,33 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
 The client driver must perform the following tasks in the driver's asynchronous receive notification routine:
 
-* Verify the members of the [**NOTIFICATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_notification_info_w2k) structure that is passed to the client driver.
+* Verify the members of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure that is passed to the client driver.
 * For successful read/lock requests (where you return data through the response packet), the client driver must:
-  * Allocate memory by calling [**WdfMemoryCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycreate) ([**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) for WDM-based client drivers) for the response packet data.
+  * Allocate memory by calling [**WdfMemoryCreate**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreate) ([**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) for WDM-based client drivers) for the response packet data.
   * Fill that buffer with the data to be returned.
-  * Initialize the **ResponseMdl** member and reference the buffer. You can call [**MmInitializeMdl**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and [**MmBuildMdlForNonPagedPool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmbuildmdlfornonpagedpool).
+  * Initialize the **ResponseMdl** member and reference the buffer. You can call [**MmInitializeMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mminitializemdl) and [**MmBuildMdlForNonPagedPool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool).
   * Set **\*NotificationInfo-&gt;ResponsePacket** to point to the buffer.
   * Set **\*NotificationInfo-&gt;ResponseLength** to the size of the response data being returned, that is 4 for a quadlet read request).
-  * Allocate memory by calling [**WdfMemoryCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycreate) ([**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) for WDM-based client drivers) for the response event.
+  * Allocate memory by calling [**WdfMemoryCreate**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreate) ([**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) for WDM-based client drivers) for the response event.
   * Set **\*NotificationInfo-&gt;ResponseEvent** to point to the event buffer.
   * Schedule a work item to wait on the event, and free the response packet and event data buffers after the response event is signaled.
   * Set **NotificationInfo-&gt;ResponseCode** to RCODE\_RESPONSE\_COMPLETE.
 
 ## Asynchronous receive in the pre-notification case
 
-The legacy 1394 bus driver fails to complete asynchronous receive transactions by using the pre-notification mechanism. For more information, see [Knowledge Base: IEEE 1394 Async Receive Response not sent using Pre-Notification (2635883)](https://support.microsoft.com/help/2635883/ieee-1394-async-receive-response-not-sent-using-pre-notification).
+The legacy 1394 bus driver fails to complete asynchronous receive transactions by using the pre-notification mechanism.
 
 For the new 1394 bus driver, the expected behavior of the client driver's notification callback routine in the pre-notification case is as follows:
 
-* If **Mdl** and **Fifo** members of the [**NOTIFICATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_notification_info_w2k) structure are NULL, then pre-notification is being performed.
-* The **ResponseMdl**, **ResponsePacket**, **ResponseLength**, and **ResponseEvent** members of the [**NOTIFICATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_notification_info_w2k) structure must not be NULL.
-* The **fulNotificationOptions** member of the [**NOTIFICATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_notification_info_w2k) structure must indicate the action (read, write, lock) that triggered the notification. Only one flag (NOTIFY\_FLAGS\_AFTER\_READ , NOTIFY\_FLAGS\_AFTER\_WRITE , or NOTIFY\_FLAGS\_AFTER\_LOCK) can be set each time your notification routine is invoked.
+* If **Mdl** and **Fifo** members of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure are NULL, then pre-notification is being performed.
+* The **ResponseMdl**, **ResponsePacket**, **ResponseLength**, and **ResponseEvent** members of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must not be NULL.
+* The **fulNotificationOptions** member of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must indicate the action (read, write, lock) that triggered the notification. Only one flag (NOTIFY\_FLAGS\_AFTER\_READ , NOTIFY\_FLAGS\_AFTER\_WRITE , or NOTIFY\_FLAGS\_AFTER\_LOCK) can be set each time your notification routine is invoked.
 * You can identify the type of request by inspecting the **RequestPacket-&gt;AP\_tCode** member of the ASYNC\_PACKET structure. The member indicates the TCODE that specifies the request type, such as block or quadlet read/write, type of lock request. The ASYNC\_PACKET structure is declared in 1394.h.
-* The **ResponsePacket** and **ResponseEvent** members of [**NOTIFICATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_notification_info_w2k) contain pointers to pointers. Therefore, you must reference the pointers to your response packet and response event appropriately.
-* The **ResponseLength** member of [**NOTIFICATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_notification_info_w2k) is a pointer to a ULONG variable. Therefore, you must dereference the member appropriately when setting the response data length for requests such as for read & lock requests).
+* The **ResponsePacket** and **ResponseEvent** members of [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) contain pointers to pointers. Therefore, you must reference the pointers to your response packet and response event appropriately.
+* The **ResponseLength** member of [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) is a pointer to a ULONG variable. Therefore, you must dereference the member appropriately when setting the response data length for requests such as for read & lock requests).
 * The 1394 client driver is responsible for allocating memory for the response packet and response event (from nonpaged pool), and releasing that memory after the response has been delivered. It is recommended that a work item is queued and the work item should wait on response event. That event is signaled by the 1394 bus driver after the response has been delivered. The client driver can then release the memory within the work item.
-* The **ResponseCode** member in the [**NOTIFICATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_notification_info_w2k) structure must be set to one of the RCODE values defined in 1394.h. If **ResponseCode** is set to any value other than RCODE\_RESPONSE\_COMPLETE, the 1394 bus driver sends an error response packet. In the case of a read or lock request, the request does not return any data. In Windows 7, can leak memory, for more information see [Knowledge Base: Memory Leak in IEEE 1394 Bus Driver Performing Asynchronous Notification Callbacks (2023232)](https://support.microsoft.com/help/2023232).
-* For read and lock requests, the **ResponsePacket** member of the [**NOTIFICATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_notification_info_w2k) structure must point to the data to be returned in the asynchronous response packet.
+* The **ResponseCode** member in the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must be set to one of the RCODE values defined in 1394.h. If **ResponseCode** is set to any value other than RCODE\_RESPONSE\_COMPLETE, the 1394 bus driver sends an error response packet. In the case of a read or lock request, the request does not return any data.
+* For read and lock requests, the **ResponsePacket** member of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must point to the data to be returned in the asynchronous response packet.
 
 The following code examples shows the work item implementation and the client driver's notification routine.
 

@@ -1,5 +1,5 @@
 ---
-Description: 'USB device driver that sends MA-USB packets.'
+description: 'USB device driver that sends MA-USB packets.'
 title: USB client drivers for Media-Agnostic (MA-USB)
 ms.date: 09/26/2017
 ms.localizationpriority: medium
@@ -25,7 +25,7 @@ To build that request the driver must use the **_URB_GET_ISOCH_PIPE_TRANSFER_PAT
 Here are some best practices for building this URB:
 
 
--    The client dirver must allocate this URB by calling [WdfUsbTargetDeviceCreateUrb](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb) or [USBD_UrbAllocate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_urballocate). 
+-    The client dirver must allocate this URB by calling [WdfUsbTargetDeviceCreateUrb](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb) or [USBD_UrbAllocate](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate). 
 - The URB can be sent at <= Dispatch Level.
 - If the URB is targeted to a non-isochronous endpoint, the USB driver stack fails the request.
 - The client driver must not assume this URB is supported by third-party USB stacks. It will be supported by all Microsoft=provided inbox USB client drivers.
@@ -42,30 +42,30 @@ For continuous streaming, the number of isochronous packets in each isochronous 
 ## Getting the host controller transport characteristics
 A client driver can retrieve the transport characteristics by sending these IOCTLs requests:
 
--    [IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_get_transport_characteristics)
--    [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_register_for_transport_characteristics_change)
--    [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_notify_on_transport_characteristics_change) 
--    [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_unregister_for_transport_characteristics_change)
+-    [IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_transport_characteristics)
+-    [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_register_for_transport_characteristics_change)
+-    [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_notify_on_transport_characteristics_change) 
+-    [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_unregister_for_transport_characteristics_change)
 
 The transport characteristics may or may not be available in all cases because the USB driver stack is dependent on the underlying transport to expose those values. Therefore, the client driver must determine the information through other mechanisms when the IOCTL requests fail. 
 
 ### Query for the current transport characterisctics
 
-The client driver can query the transport characteristics at a specific time by sending the   [IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_get_transport_characteristics) request. On receiving the request, the USB driver stack completes it immediately with the information about the current transport characteristics in a USB_TRANSPORT_CHARACTERISTICS structure. Given that the information does not indicate changes at all times, this request can be used by the driver for the deciding the algorithm or starting a stream. 
+The client driver can query the transport characteristics at a specific time by sending the   [IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_transport_characteristics) request. On receiving the request, the USB driver stack completes it immediately with the information about the current transport characteristics in a USB_TRANSPORT_CHARACTERISTICS structure. Given that the information does not indicate changes at all times, this request can be used by the driver for the deciding the algorithm or starting a stream. 
 
 ### Receive changes in trasport characteristics
 For MA-USB, the underlying transport could be wired, wireless￼. The transport characteristics of those mediums can vary significantly over time. The client driver can get notified on the ongoing changes.
 
-1.    Send an [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_register_for_transport_characteristics_change) request 
+1.    Send an [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_register_for_transport_characteristics_change) request 
 to register for notifications. If registration is successful, the client driver receives a handle and the initial values of the transport characteristics.
 
-2.  Send an [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_notify_on_transport_characteristics_change) request with the registration handle obtained in step 1. The USB driver stack keeps the request pending. Whenever transport characteristics change, the pending request is completed with the new values of transport characteristics.
+2.  Send an [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_notify_on_transport_characteristics_change) request with the registration handle obtained in step 1. The USB driver stack keeps the request pending. Whenever transport characteristics change, the pending request is completed with the new values of transport characteristics.
 
-3.  After the client is done and not interested in getting further notifications, it should ensure that there are no IOCTLs pending in the stack and then send the IOCTL with sub-code [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_unregister_for_transport_characteristics_change), passing in the registration handle. If the client unregisters with pending change request, USB Stack will complete them before completing the unregister IOCTL.
+3.  After the client is done and not interested in getting further notifications, it should ensure that there are no IOCTLs pending in the stack and then send the IOCTL with sub-code [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_unregister_for_transport_characteristics_change), passing in the registration handle. If the client unregisters with pending change request, USB Stack will complete them before completing the unregister IOCTL.
 
 ### Query for device characteristics
 
-To determione the eneral characteristics about a USB device, such as maximum send and receive delays for any request, the client driver can send the  [IOCTL_USB_GET_DEVICE_CHARACTERISTICS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_device_characteristics) request.
+To determione the eneral characteristics about a USB device, such as maximum send and receive delays for any request, the client driver can send the  [IOCTL_USB_GET_DEVICE_CHARACTERISTICS](/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb_device_characteristics) request.
 
 ## Setting priority for a bulk endpoint
 
@@ -76,7 +76,7 @@ For a user good experience over MA-USB with such client drivers, the driver must
 The client driver can set the options by defining the priorties of specific bulk endpoints in the Device Parameters subkey of the device's HW registry key.  
 
 The format of the registry value is a multistring named **EndpointPriorities**.  Each string within the multi-string defines the priority for a specific endpoint.  The format of the string is as follows:
-    "<CONFIG>,<INTERFACE>,<ALTSETTING>,<TYPE>,<ORDER>,<PRIORITY>"
+    `<CONFIG>,<INTERFACE>,<ALTSETTING>,<TYPE>,<ORDER>,<PRIORITY>`
 
 Where:
 
@@ -100,13 +100,13 @@ REG_MULTI_SZ:"EndpointPriorities" =
 "2,1,0,BULK_OUT,1,INTERACTIVE"” // BULK OUT endpoint in configuration 2, interface 1, alt setting 1 has INTERACTIVE priority.
 ```
 ## See Also
-[WdfUsbTargetDeviceCreateUrb](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb)
+[WdfUsbTargetDeviceCreateUrb](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb)
 
-[USBD_UrbAllocate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_urballocate)
-[IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_get_transport_characteristics)
+[USBD_UrbAllocate](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate)
+[IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_transport_characteristics)
 
-[IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_register_for_transport_characteristics_change)
+[IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_register_for_transport_characteristics_change)
 
-[IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_notify_on_transport_characteristics_change)
+[IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_notify_on_transport_characteristics_change)
 
-[IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_unregister_for_transport_characteristics_change)
+[IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_unregister_for_transport_characteristics_change)

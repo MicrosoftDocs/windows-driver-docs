@@ -5,9 +5,7 @@ ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---
 
-
 # Sample PowerShell script to query SMBIOS locally
-
 
 The following list of ChassisTypes is copied from the latest DMTF SMBIOS specification.
 
@@ -75,7 +73,7 @@ foreach ($machine in $machines)
     $obj.Manufacturer = Get-WmiObject -class Win32_Bios -computername $machine -namespace $namespace | Select-Object -ExpandProperty Manufacturer
     $obj.UUID = Get-WmiObject Win32_ComputerSystemProduct | Select-Object -ExpandProperty UUID
     $obj.BaseBoardProduct = Get-WmiObject Win32_BaseBoard | Select-Object -ExpandProperty Product
-    $obj.ChassisTypes = Get-WmiObject Win32_SystemEnclosure | Select-Object -ExpandProperty ChassisType
+    $obj.ChassisTypes = Get-WmiObject Win32_SystemEnclosure | Select-Object -ExpandProperty ChassisTypes
     $obj.Chassis = $ChassisTypes[[int]$obj.ChassisTypes]
     $obj.SystemFamily = Get-WmiObject Win32_ComputerSystem | Select-Object -ExpandProperty SystemFamily
     $obj.SystemSKUNumber = Get-WmiObject Win32_ComputerSystem | Select-Object -ExpandProperty SystemSKUNumber
@@ -99,4 +97,4 @@ $list
 
 Sample output:
 
-![Sample output](images/sample-output.png)
+![Sample output.](images/sample-output.png)

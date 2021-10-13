@@ -1,7 +1,6 @@
 ---
 title: ADFBack element
 description: The optional ADFBack element describes the capabilities of the back side of a duplex automatic document feeder (ADF) that is attached to the scanner.
-ms.assetid: f364c001-ec1a-4f8c-b25a-eaa5368ba05f
 keywords: ["ADFBack element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **ADFBack** element describes the capabilities of the back side of a duplex automatic document feeder (ADF) that is attached to the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ADFBack>
@@ -27,8 +25,7 @@ Usage
 </wscn:ADFBack>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -82,8 +79,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service should specify the **ADFBack** elements and its children only if the scanner's ADF supports duplexing.
 

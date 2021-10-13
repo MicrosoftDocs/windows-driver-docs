@@ -1,9 +1,8 @@
 ---
 title: ndiskd.filter
 description: The ndiskd.filter extension displays information about an NDIS light-weight filter (LWF). If you run this extension with no parameters, ndiskd will display a list of all LWFs.
-ms.assetid: 4cf0f8bc-a15a-49db-b7db-13d60fd0c767
 keywords: ["ndiskd.filter Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -15,18 +14,16 @@ ms.localizationpriority: medium
 
 # !ndiskd.filter
 
-
 The **!ndiskd.filter** extension displays information about an NDIS light-weight filter (LWF). If you run this extension with no parameters, !ndiskd will display a list of all LWFs.
 
 ```console
-!ndiskd.filter [-handle <x>] [-findname <any>] [-handlers] 
+!ndiskd.filter [-handle <x>] [-findname <any>] [-handlers]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
-Handle of an NDIS light-weight filter.
+Optional handle of an NDIS light-weight filter.
 
 <span id="_______-findname______"></span><span id="_______-FINDNAME______"></span> *-findname*   
 Filters LWFs by name prefix.
@@ -34,12 +31,11 @@ Filters LWFs by name prefix.
 <span id="_______-handlers______"></span><span id="_______-HANDLERS______"></span> *-handlers*   
 Displays this LWF's filter handlers.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Enter the **!ndiskd.filter** command with no parameters to get a list of all filters. In this example, look for the ffff8083e14e8460 handle. Note that this handle is for the filter itself and is nested under its associated filter *driver*, the QoS Packet Scheduler.
 
@@ -83,25 +79,14 @@ FILTER
     Driver handlers
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
-
- 
-
- 
-
-
-
-
-
-

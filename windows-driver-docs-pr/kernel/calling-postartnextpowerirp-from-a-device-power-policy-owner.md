@@ -1,7 +1,6 @@
 ---
 title: Calling PoStartNextPowerIrp from a Device Power Policy Owner
 description: Calling PoStartNextPowerIrp from a Device Power Policy Owner
-ms.assetid: 58576ff8-638e-4928-9a2d-337ac3f4d2d8
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp", "device power policy WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-postartnextpowerirp) is not required and call to this routine performs no power management operation. However, in Windows Server 2003, Windows XP, and Windows 2000, a function driver that owns device power policy must call **PoStartNextPowerIrp** once for every [**IRP\_MN\_QUERY\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-power) or [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) request that the driver receives. When the call occurs depends on the type of request and whether the driver will fail or succeed the request, as the following table shows.
+Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp) is not required and call to this routine performs no power management operation. However, in Windows Server 2003, Windows XP, and Windows 2000, a function driver that owns device power policy must call **PoStartNextPowerIrp** once for every [**IRP\_MN\_QUERY\_POWER**](./irp-mn-query-power.md) or [**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md) request that the driver receives. When the call occurs depends on the type of request and whether the driver will fail or succeed the request, as the following table shows.
 
 <table>
 <colgroup>
@@ -31,12 +30,12 @@ Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](https://docs.mic
 <tbody>
 <tr class="odd">
 <td><p><strong>IRP_MN_QUERY_POWER</strong> (device power state)</p></td>
-<td><p>In an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine" data-raw-source="[&lt;em&gt;IoCompletion&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine)"><em>IoCompletion</em></a> routine, immediately before returning.</p></td>
-<td><p>In <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch" data-raw-source="[&lt;em&gt;DispatchPower&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)"><em>DispatchPower</em></a> routine, before calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest" data-raw-source="[&lt;strong&gt;IoCompleteRequest&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest)"><strong>IoCompleteRequest</strong></a>.</p></td>
+<td><p>In an <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine" data-raw-source="[&lt;em&gt;IoCompletion&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine)"><em>IoCompletion</em></a> routine, immediately before returning.</p></td>
+<td><p>In <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch" data-raw-source="[&lt;em&gt;DispatchPower&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)"><em>DispatchPower</em></a> routine, before calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest" data-raw-source="[&lt;strong&gt;IoCompleteRequest&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)"><strong>IoCompleteRequest</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>IRP_MN_QUERY_POWER</strong> (system power state)</p></td>
-<td><p>In the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp" data-raw-source="[&lt;strong&gt;PoRequestPowerIrp&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp)"><strong>PoRequestPowerIrp</strong></a> callback routine for the related device IRP, immediately before completing the system IRP.</p></td>
+<td><p>In the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp" data-raw-source="[&lt;strong&gt;PoRequestPowerIrp&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)"><strong>PoRequestPowerIrp</strong></a> callback routine for the related device IRP, immediately before completing the system IRP.</p></td>
 <td><p>In <em>DispatchPower</em> routine, before calling <strong>IoCompleteRequest</strong>.</p></td>
 </tr>
 <tr class="odd">
@@ -53,11 +52,4 @@ Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](https://docs.mic
 </table>
 
  
-
- 
-
- 
-
-
-
 

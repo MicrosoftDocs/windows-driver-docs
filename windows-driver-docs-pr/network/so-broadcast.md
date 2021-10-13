@@ -1,7 +1,6 @@
 ---
 title: SO_BROADCAST
 description: SO_BROADCAST
-ms.assetid: 24b93d4e-461d-44c3-b721-85cf41a1680a
 ms.date: 08/08/2017
 keywords: 
  -SO_BROADCAST Network Drivers Starting with Windows Vista
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 The state of the SO\_BROADCAST socket option determines whether broadcast messages can be transmitted over a datagram socket. This socket option applies only to datagram sockets.
 
-To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the state of this socket option, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -123,8 +122,7 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 The default state of this socket option is that broadcast messages are not allowed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -144,9 +142,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

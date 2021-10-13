@@ -1,53 +1,46 @@
 ---
 title: Handling IOCTL_SPB_FULL_DUPLEX Requests
 description: Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus.
-ms.assetid: B200461F-9F9C-43A7-BA78-0864FD58C64E
-ms.date: 04/20/2017
+ms.date: 09/14/2021
 ms.localizationpriority: medium
 ---
 
-# Handling IOCTL\_SPB\_FULL\_DUPLEX Requests
+# Handling IOCTL_SPB_FULL_DUPLEX Requests
 
+Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus. To support these full-duplex transfers, the definition of the simple peripheral bus (SPB) I/O request interface includes, as an option, the [IOCTL_SPB_FULL_DUPLEX](./spb-ioctls.md#ioctl_spb_full_duplex-control-code) I/O control code (IOCTL). Only SPB controller drivers for bus controllers that implement full-duplex transfers in hardware should support the **IOCTL_SPB_FULL_DUPLEX** IOCTL.
 
-Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus. To support these full-duplex transfers, the definition of the simple peripheral bus (SPB) I/O request interface includes, as an option, the [**IOCTL\_SPB\_FULL\_DUPLEX**](https://msdn.microsoft.com/library/windows/hardware/hh974774) I/O control code (IOCTL). Only SPB controller drivers for bus controllers that implement full-duplex transfers in hardware should support the **IOCTL\_SPB\_FULL\_DUPLEX** IOCTL.
-
-If an SPB controller driver supports I/O requests for full-duplex transfers, the driver should use the **IOCTL\_SPB\_FULL\_DUPLEX** IOCTL for these requests, and should follow the implementation guidelines that are presented in this topic. The purpose of these guidelines is to encourage uniform behavior across all hardware platforms that support **IOCTL\_SPB\_FULL\_DUPLEX** requests. Drivers for SPB-connected peripheral devices can then rely on these requests to produce similar results regardless of what platform that they run on.
+If an SPB controller driver supports I/O requests for full-duplex transfers, the driver should use the **IOCTL_SPB_FULL_DUPLEX** IOCTL for these requests, and should follow the implementation guidelines that are presented in this topic. The purpose of these guidelines is to encourage uniform behavior across all hardware platforms that support **IOCTL_SPB_FULL_DUPLEX** requests. Drivers for SPB-connected peripheral devices can then rely on these requests to produce similar results regardless of what platform that they run on.
 
 ## Buffer Requirements
 
+An [IOCTL_SPB_FULL_DUPLEX](./spb-ioctls.md#ioctl_spb_full_duplex-control-code) request is formatted the same as an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) request, but with these constraints:
 
-An [**IOCTL\_SPB\_FULL\_DUPLEX**](https://msdn.microsoft.com/library/windows/hardware/hh974774) request is formatted the same as an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) request, but with these constraints:
-
--   The [**SPB\_TRANSFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spb/ns-spb-spb_transfer_list) structure in the request must contain exactly two entries. The first entry describes a buffer that contains data to write to the device. The second entry describes a buffer used to hold data read from the device.
--   Each [**SPB\_TRANSFER\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spb/ns-spb-spb_transfer_list_entry) structure in the transfer list must specify a **DelayInUs** value of zero.
+* The [SPB_TRANSFER_LIST](/windows-hardware/drivers/ddi/spb/ns-spb-spb_transfer_list) structure in the request must contain exactly two entries. The first entry describes a buffer that contains data to write to the device. The second entry describes a buffer used to hold data read from the device.
+* Each [SPB_TRANSFER_LIST_ENTRY](/windows-hardware/drivers/ddi/spb/ns-spb-spb_transfer_list_entry) structure in the transfer list must specify a **DelayInUs** value of zero.
 
 During a full-duplex transfer, the read and write transfers start in unison. The first byte of write data is transmitted over the bus at the same time as the first byte of read data.
 
-The write and read buffers in the **IOCTL\_SPB\_FULL\_DUPLEX** request are not required to be the same length.
+The write and read buffers in the **IOCTL_SPB_FULL_DUPLEX** request are not required to be the same length.
 
 If the read buffer is shorter than the write buffer, the full-duplex bus transfer continues until the entire contents of write buffer are written to the device. After the read buffer is full, the bus controller discards all additional data received from the device until the full-duplex bus transfer completes.
 
 If the write buffer is shorter than the read buffer, the full-duplex bus transfer continues until the read buffer is full. After the entire contents of the write buffer are written to the device, the bus controller writes zeros to the device until the full-duplex bus transfer completes.
 
-If the **IOCTL\_SPB\_FULL\_DUPLEX** request completes successfully, the SPB controller driver sets the **Status** member of the I/O status block to STATUS\_SUCCESS, and sets the **Information** member to the total number of bytes transferred (bytes read plus bytes written) during the full-duplex transfer. The count value in the **Information** member should never exceed the sum of the read buffer size and the write buffer size.
+If the **IOCTL_SPB_FULL_DUPLEX** request completes successfully, the SPB controller driver sets the **Status** member of the I/O status block to STATUS_SUCCESS, and sets the **Information** member to the total number of bytes transferred (bytes read plus bytes written) during the full-duplex transfer. The count value in the **Information** member should never exceed the sum of the read buffer size and the write buffer size.
 
 If the read buffer is shorter than the write buffer, the count value in the **Information** member should not include the bytes of data that the bus controller reads from the device (and discards) after the read buffer is full. For example, if a full-duplex transfer with a 1-byte write buffer and a 4-byte read buffer completes successfully, the count value should be 5, not 8. Similarly, if the write buffer is shorter than the read buffer, the count value should not include the zeros written to the device after the write buffer is emptied.
 
 ## Parameter Checking
 
+Although the [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) and **IOCTL_SPB_FULL_DUPLEX** requests have similar formats, they are handled differently by the SPB framework extension (SpbCx). For the **IOCTL_SPB_EXECUTE_SEQUENCE** request, SpbCx validates the parameter values in the request, and captures the request's buffers in the process context of the request originator. SpbCx passes **IOCTL_SPB_EXECUTE_SEQUENCE** requests to the SPB controller driver through the driver's [EvtSpbControllerIoSequence](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_sequence) callback function, which is dedicated to these requests.
 
-Although the [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) and **IOCTL\_SPB\_FULL\_DUPLEX** requests have similar formats, they are handled differently by the SPB framework extension (SpbCx). For the **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request, SpbCx validates the parameter values in the request, and captures the request's buffers in the process context of the request originator. SpbCx passes **IOCTL\_SPB\_EXECUTE\_SEQUENCE** requests to the SPB controller driver through the driver's [*EvtSpbControllerIoSequence*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nc-spbcx-evt_spb_controller_sequence) callback function, which is dedicated to these requests.
+In contrast, SpbCx treats the **IOCTL_SPB_FULL_DUPLEX** request as a custom, driver-defined IOCTL request. SpbCx passes **IOCTL_SPB_FULL_DUPLEX** requests to the SPB controller driver through the driver's [EvtSpbControllerIoOther](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_other) callback function, which also handles any custom IOCTL requests that the driver supports. SpbCx does no parameter checking or buffer capture for these requests. The driver is responsible for any parameter checking or buffer capture that might be required for the IOCTL requests that the driver receives through its *EvtSpbControllerIoOther* function. To enable buffer capture, the driver must supply an [EvtIoInCallerContext](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context) callback function when the driver registers its *EvtSpbControllerIoOther* function. For more information, see [Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs](./using-the-spb-transfer-list-structure.md).
 
-In contrast, SpbCx treats the **IOCTL\_SPB\_FULL\_DUPLEX** request as a custom, driver-defined IOCTL request. SpbCx passes **IOCTL\_SPB\_FULL\_DUPLEX** requests to the SPB controller driver through the driver's [*EvtSpbControllerIoOther*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nc-spbcx-evt_spb_controller_other) callback function, which also handles any custom IOCTL requests that the driver supports. SpbCx does no parameter checking or buffer capture for these requests. The driver is responsible for any parameter checking or buffer capture that might be required for the IOCTL requests that the driver receives through its *EvtSpbControllerIoOther* function. To enable buffer capture, the driver must supply an [*EvtIoInCallerContext*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context) callback function when the driver registers its *EvtSpbControllerIoOther* function. For more information, see [Using the **SPB\_TRANSFER\_LIST** Structure for Custom IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/spb/using-the-spb-transfer-list-structure).
+Typically, the SPB controller driver validates the parameter values in an **IOCTL_SPB_FULL_DUPLEX** request in the *EvtSpbControllerIoOther* function instead of in the *EvtIoInCallerContext* function. The following code example shows how the driver might implement parameter checking. In this example, the driver verifies that the following parameter requirements are satisfied:
 
-
-
-
-Typically, the SPB controller driver validates the parameter values in an **IOCTL\_SPB\_FULL\_DUPLEX** request in the *EvtSpbControllerIoOther* function instead of in the *EvtIoInCallerContext* function. The following code example shows how the driver might implement parameter checking. In this example, the driver verifies that the following parameter requirements are satisfied:
-
--   The transfer list in the request contains exactly two entries.
--   The first entry in the transfer list is for a write buffer, and the second is for a read buffer.
--   The **DelayInUs** value for both entries is zero.
+* The transfer list in the request contains exactly two entries.
+* The first entry in the transfer list is for a write buffer, and the second is for a read buffer.
+* The **DelayInUs** value for both entries is zero.
 
 ```cpp
 //
@@ -139,11 +132,3 @@ MyDriverPerformFullDuplexTransfer(
 ```
 
 After checking the parameter values, the preceding code example calls a driver-internal routine, named `MyDriverPerformFullDuplexTransfer`, to initiate the full-duplex I/O transfer.
-
- 
-
- 
-
-
-
-

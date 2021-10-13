@@ -1,7 +1,6 @@
 ---
 title: A Single DispatchCreateClose Routine
 description: A Single DispatchCreateClose Routine
-ms.assetid: 6127d696-2409-49fc-9cbd-ba1b13c0c672
 keywords: ["dispatch routines WDK kernel , DispatchCreateClose routine", "DispatchCreateClose routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 Many drivers, particularly lower-level drivers in a chain of layered drivers, merely need to establish their existence on receipt of a *create* request and merely need to acknowledge the receipt of a *close* request.
 
-For example, a port driver for a device controller with one or more closely coupled class drivers that call [**IoGetDeviceObjectPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceobjectpointer) might have a minimal [*DispatchCreateClose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. The routine might do nothing more than complete the IRP as follows:
+For example, a port driver for a device controller with one or more closely coupled class drivers that call [**IoGetDeviceObjectPointer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceobjectpointer) might have a minimal [*DispatchCreateClose*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine. The routine might do nothing more than complete the IRP as follows:
 
 ```cpp
     :    : 
@@ -35,16 +34,11 @@ How much work a *DispatchCreateClose* routine does depends partly on the nature 
 
 To handle a create request to open a file object representing a logical or physical device, a highest-level driver should do the following:
 
-1.  Call [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation) to get a pointer to its I/O stack location in the IRP.
+1.  Call [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) to get a pointer to its I/O stack location in the IRP.
 
 2.  Check **FileObject**.**FileName** in the I/O stack location and complete the IRP with STATUS\_SUCCESS if the Unicode string at **FileName** has a zero length; otherwise, complete the IRP with STATUS\_INVALID\_PARAMETER.
 
 Following the preceding steps ensures that no attempt to open a pseudofile on a device can cause problems later. For example, this prevents attempts to open a nonexistent \\\\device\\parallel0\\temp.dat.
 
  
-
- 
-
-
-
 

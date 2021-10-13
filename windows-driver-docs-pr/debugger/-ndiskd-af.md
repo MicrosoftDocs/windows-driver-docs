@@ -1,9 +1,8 @@
 ---
-title: ndiskd.af
+title: ndiskd.af (WinDbg)
 description: The ndiskd.af extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF).
-ms.assetid: 737AB46E-DFAA-42D6-A9BD-B7223167D0DD
 keywords: ["ndiskd.af Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -15,15 +14,13 @@ ms.localizationpriority: medium
 
 # !ndiskd.af
 
-
 The **!ndiskd.af** extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF).
 
 ```console
-!ndiskd.af [-handle <x>] 
+!ndiskd.af -handle <x>
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Handle of a CoNDIS address family.
@@ -32,21 +29,19 @@ Required. Handle of a CoNDIS address family.
 
 Ndiskd.dll
 
-Remarks
--------
+### Remarks
 
-For more information about CoNDIS, see [Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis).
+For more information about CoNDIS, see [Connection-Oriented NDIS](../network/connection-oriented-ndis.md).
 
-For more information about CoNDIS address families, see [Address Families](https://docs.microsoft.com/windows-hardware/drivers/network/address-families).
+For more information about CoNDIS address families, see [Address Families](../network/address-families.md).
 
-Examples
---------
+### Examples
 
 CoNDIS is used in certain situations such as connecting to a VPN, so running **!ndiskd.af** will not show you results unless a miniport driver on your system has created and activated a CoNDIS virtual connection. The following example shows results from a machine that is connected to a VPN network. First, run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension with no parameters to see a list of miniports and miniport drivers on the system. In the following output, look for the miniport driver for the Marvell AVASTAR Wireless-AC Network Controller network adapter. Its handle is ffffc804af2e3710.
 
 ```console
 1: kd> !ndiskd.netadapter
-    Driver             NetAdapter          Name                                 
+    Driver             NetAdapter          Name
     ffffc804af2e3710   ffffc804b9e6f1a0    Marvell AVASTAR Wireless-AC Network Controller
     ffffc804b99b9020   ffffc804b9c301a0    WAN Miniport (Network Monitor)
     ffffc804b99b9020   ffffc804b9c2a1a0    WAN Miniport (IPv6)
@@ -108,29 +103,18 @@ CLIENT HANDLERS
     ClIncomingCallQoSChangeHandler         fffff80965ffa610   wdiwifi!MPWrapperOidRequest
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis)
+[Connection-Oriented NDIS](../network/connection-oriented-ndis.md)
 
-[Address Families](https://docs.microsoft.com/windows-hardware/drivers/network/address-families)
-
- 
-
- 
-
-
-
-
-
-
+[Address Families](../network/address-families.md)

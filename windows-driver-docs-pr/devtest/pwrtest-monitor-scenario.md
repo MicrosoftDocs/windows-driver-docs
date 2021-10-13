@@ -1,7 +1,6 @@
 ---
 title: PwrTest Monitor Scenario
 description: The PwrTest Monitor Scenario logs user idle statistics related to monitor or display auto-dimming and blanking.
-ms.assetid: 8B45C85A-01E8-4256-82F3-097871CB9021
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,7 +22,7 @@ pwrtest.exe /monitor  [/t:n] [/?]
 **/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
-### Examples
+## Examples
 
 ```command
 pwrtest.exe /device 

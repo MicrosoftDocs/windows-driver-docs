@@ -1,5 +1,5 @@
 ---
-Description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about various descriptors that a client driver can obtain from a USB device.
+description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about various descriptors that a client driver can obtain from a USB device.
 title: USB descriptors
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -36,7 +36,7 @@ For example, consider the OSR FX2 board device layout described in [USB Device L
 <tbody>
 <tr class="odd">
 <td><p><a href="usb-device-descriptors.md" data-raw-source="[USB device descriptors](usb-device-descriptors.md)">USB device descriptors</a></p></td>
-<td><p>The device descriptor contains information about a USB device as a whole. This topic describes the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_device_descriptor" data-raw-source="[&lt;strong&gt;USB_DEVICE_DESCRIPTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_device_descriptor)"><strong>USB_DEVICE_DESCRIPTOR</strong></a> structure and includes information about how a client driver can send a get-descriptor request to obtain the device descriptor.</p></td>
+<td><p>The device descriptor contains information about a USB device as a whole. This topic describes the <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor" data-raw-source="[&lt;strong&gt;USB_DEVICE_DESCRIPTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor)"><strong>USB_DEVICE_DESCRIPTOR</strong></a> structure and includes information about how a client driver can send a get-descriptor request to obtain the device descriptor.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="usb-configuration-descriptors.md" data-raw-source="[USB configuration descriptors](usb-configuration-descriptors.md)">USB configuration descriptors</a></p></td>
@@ -57,7 +57,4 @@ For example, consider the OSR FX2 board device layout described in [USB Device L
 
 ## Related topics
 [USB Device Layout](usb-device-layout.md)  
-[USB Driver Development Guide](usb-driver-development-guide.md)  
-
-
-
+[USB Driver Development Guide](usb-driver-development-guide.md)

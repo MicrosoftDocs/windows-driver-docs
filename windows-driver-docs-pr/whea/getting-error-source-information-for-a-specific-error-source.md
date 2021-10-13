@@ -1,7 +1,6 @@
 ---
 title: Getting Error Source Information for a Specific Error Source
 description: Getting Error Source Information for a Specific Error Source
-ms.assetid: 9979d654-8214-4e2d-9c6e-fc29a7f4ab40
 keywords:
 - error sources WDK WHEA , getting information
 - errors WDK WHEA , error sources
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # Getting Error Source Information for a Specific Error Source
 
 
-A user-mode application can get information about a particular [error source](hardware-errors-and-error-sources.md) that is supported by the hardware platform by calling the [**WHEAErrorSourceMethods::GetErrorSourceInfoRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/) method. This method returns a [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_source_descriptor) structure that describes the specified error source.
+A user-mode application can get information about a particular [error source](hardware-errors-and-error-sources.md) that is supported by the hardware platform by calling the [**WHEAErrorSourceMethods::GetErrorSourceInfoRtn**](/windows-hardware/drivers/ddi/_whea/) method. This method returns a [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structure that describes the specified error source.
 
 The following code example shows how to get the error source information for a particular error source.
 
@@ -166,9 +165,4 @@ pOutParameters->Release();
 ```
 
  
-
- 
-
-
-
 

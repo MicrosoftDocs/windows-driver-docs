@@ -1,7 +1,6 @@
 ---
 title: Overview of Boot Options in Windows
 description: Describes Windows boot loader architecture, firmware-independent boot configuration, and boot option editing tool.
-ms.assetid: 1cc5b1cc-8d0e-4b4e-93fe-272772a3e458
 keywords:
 - boot options WDK , Windows
 - editing boot options
@@ -55,7 +54,7 @@ You can manage BCD remotely and manage BCD when the system boots from media othe
 
 The BCD store, with its familiar object-and-element architecture, uses GUIDs and names such as "Default" to precisely identify boot-related applications.
 
-BCD includes its own set of boot options. For more information about these boot options, see [BCD Boot Options Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+BCD includes its own set of boot options. For more information about these boot options, see [BCD Boot Options Reference](./bcd-boot-options-reference.md).
 
 ## Editing Boot Options
 
@@ -65,11 +64,10 @@ To use BCDEdit, you must be a member of the Administrators group on the computer
 
 You can also use the System Configuration utility (MSConfig.exe) to change boot settings.
 
-To change boot options programmatically in Windows, use the Windows Management Instrument (WMI) interface to boot options. This BCD WMI interface is the best method to programmatically change the boot options. For information about the BCD WMI interface, see [Boot Configuration Data WMI Provider](https://docs.microsoft.com/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) in the Windows SDK documentation.
+To change boot options programmatically in Windows, use the Windows Management Instrument (WMI) interface to boot options. This BCD WMI interface is the best method to programmatically change the boot options. For information about the BCD WMI interface, see [Boot Configuration Data WMI Provider](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) in the Windows SDK documentation.
 
 ## Related topics
 
 - [BCD Edit Options Reference](bcd-boot-options-reference.md)
 - [Editing Boot Options](editing-boot-options.md)
 - [Using Boot Parameters](using-boot-parameters.md)
-

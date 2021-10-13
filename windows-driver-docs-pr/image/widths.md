@@ -1,7 +1,6 @@
 ---
 title: Widths element
 description: The required Widths element contains the list of widths at which the scanner can scan images.
-ms.assetid: 785d469f-bdad-413c-8bfb-de7a518b243c
 keywords: ["Widths element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Widths** element contains the list of widths at which the scanner can scan images.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Widths>
@@ -27,8 +25,7 @@ Usage
 </wscn:Widths>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -77,8 +74,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Each [**Width**](width.md) child element specifies a valid number of horizontal pixels per inch at which the device can scan images.
 

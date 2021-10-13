@@ -1,7 +1,6 @@
 ---
 title: ACPI Keyboard Shortcut Logic
 description: ACPI Keyboard Shortcut Logic
-ms.assetid: cd62380b-1393-403e-b0e6-c52f60c06936
 keywords:
 - ACPI hotkeys WDK display
 ms.date: 04/20/2017
@@ -15,19 +14,13 @@ Beginning with Windows 7, IHVs implement ACPI-based OEM-specific keyboard shortc
 
 The behavior of calls to the following functions has changed for drivers running on Windows 7:
 
-<span id="DxgkDdiNotifyAcpiEvent_and_DxgkDdiRecommendFunctionalVidPn"></span><span id="dxgkddinotifyacpievent_and_dxgkddirecommendfunctionalvidpn"></span><span id="DXGKDDINOTIFYACPIEVENT_AND_DXGKDDIRECOMMENDFUNCTIONALVIDPN"></span>[*DxgkDdiNotifyAcpiEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_notify_acpi_event) and [*DxgkDdiRecommendFunctionalVidPn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn)  
--   If the display miniport driver receives a call to the [*DxgkDdiNotifyAcpiEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_notify_acpi_event) function with the DXGK\_ACPI\_CHANGE\_DISPLAY\_MODE flag set in the *AcpiFlags* parameter, DMM calls the [*DxgkDdiRecommendFunctionalVidPn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn) function to obtain the new VidPN and to compare against the current client VidPN. If the topology of the two VidPNs is the same, DMM does not modify the new VidPN. Otherwise, DMM removes mode information from the VidPN, leaving just the topology, and allows the CCD database to determine the modes for the given topology. DMM then sets the display configuration based on the new VidPN.
+<span id="DxgkDdiNotifyAcpiEvent_and_DxgkDdiRecommendFunctionalVidPn"></span><span id="dxgkddinotifyacpievent_and_dxgkddirecommendfunctionalvidpn"></span><span id="DXGKDDINOTIFYACPIEVENT_AND_DXGKDDIRECOMMENDFUNCTIONALVIDPN"></span>[*DxgkDdiNotifyAcpiEvent*](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_notify_acpi_event) and [*DxgkDdiRecommendFunctionalVidPn*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn)  
+-   If the display miniport driver receives a call to the [*DxgkDdiNotifyAcpiEvent*](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_notify_acpi_event) function with the DXGK\_ACPI\_CHANGE\_DISPLAY\_MODE flag set in the *AcpiFlags* parameter, DMM calls the [*DxgkDdiRecommendFunctionalVidPn*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn) function to obtain the new VidPN and to compare against the current client VidPN. If the topology of the two VidPNs is the same, DMM does not modify the new VidPN. Otherwise, DMM removes mode information from the VidPN, leaving just the topology, and allows the CCD database to determine the modes for the given topology. DMM then sets the display configuration based on the new VidPN.
 
-<span id="D3DKMTInvalidateActiveVidPn"></span><span id="d3dkmtinvalidateactivevidpn"></span><span id="D3DKMTINVALIDATEACTIVEVIDPN"></span>[**D3DKMTInvalidateActiveVidPn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtinvalidateactivevidpn)  
+<span id="D3DKMTInvalidateActiveVidPn"></span><span id="d3dkmtinvalidateactivevidpn"></span><span id="D3DKMTINVALIDATEACTIVEVIDPN"></span>[**D3DKMTInvalidateActiveVidPn**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtinvalidateactivevidpn)  
 -   This function is supported on Windows Vista and later for display miniport drivers with version &lt; DXGKDDI\_INTERFACE\_VERSION\_WIN7. Function behavior is identical to the behavior on Windows Vista.
 
 -   This function is not supported on Windows 7 and later for display miniport drivers with version &gt;= DXGKDDI\_INTERFACE\_VERSION\_WIN7. If called, the status code STATUS\_NOT\_SUPPORTED is returned.
 
  
-
- 
-
-
-
-
 

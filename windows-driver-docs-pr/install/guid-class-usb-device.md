@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_USB_DEVICE
 description: GUID_CLASS_USB_DEVICE
-ms.assetid: e014f3d5-541d-4e86-a572-b110ec5a822d
 keywords: ["GUID_CLASS_USB_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,15 +17,13 @@ ms.date: 10/17/2018
 # GUID_CLASS_USB_DEVICE
 
 
-GUID_CLASS_USB_DEVICE is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for [USB](https://docs.microsoft.com/windows-hardware/drivers/) devices that are attached to a USB hub. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md) class identifier for new instances of this class.
+GUID_CLASS_USB_DEVICE is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for [USB](../index.yml) devices that are attached to a USB hub. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md) class identifier for new instances of this class.
 
-Remarks
--------
+## Remarks
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](https://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses GUID_CLASS_USB_DEVICE to register to be notified if instances of the GUID_CLASS_USB_DEVICE interface class are present.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](/samples/browse/). The USBVIEW sample uses GUID_CLASS_USB_DEVICE to register to be notified if instances of the GUID_CLASS_USB_DEVICE interface class are present.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -45,21 +42,10 @@ Requirements
 </tbody>
 </table>
 
-## Remarks
-
 Previously, this identifier was dependent on `Usbioctl.h`.  Note that you now need to include `Usbiodef.h` instead.
 
 ## See also
 
 
 [**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md)
-
- 
-
- 
-
-
-
-
-
 

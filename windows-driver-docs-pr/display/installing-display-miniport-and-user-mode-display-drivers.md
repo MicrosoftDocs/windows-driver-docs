@@ -1,7 +1,6 @@
 ---
 title: Installing Display Miniport and User-Mode Display Drivers
 description: Installation Requirements for Display Miniport and User-Mode Display Drivers
-ms.assetid: f813071d-897d-4100-bc46-326558de2e70
 keywords:
 - display driver model WDK Windows Vista , driver installations
 - Windows Vista display driver model WDK , driver installations
@@ -21,7 +20,7 @@ ms.custom: seodec18
 
 A display miniport driver for a graphics device is installed on the operating system by using an INF file that is marked as **Class=Display**. This INF will be interpreted by the system-supplied display class installer during driver installation.
 
-The INF file of the graphics device's display miniport driver for Windows Vista and later must store all software settings under the [**DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section). Doing so causes the operating system to copy all registry values to the Plug and Play (PnP) software key in the registry.
+The INF file of the graphics device's display miniport driver for Windows Vista and later must store all software settings under the [**DDInstall section**](../install/inf-ddinstall-section.md). Doing so causes the operating system to copy all registry values to the Plug and Play (PnP) software key in the registry.
 
 To ensure proper installation, the following information must be supplied in the INF file of any display miniport driver that conforms to the Windows Display Driver Model (WDDM).
 
@@ -53,17 +52,9 @@ To ensure proper installation, the following information must be supplied in the
 
 [Overriding Monitor EDIDs with an INF](overriding-monitor-edids.md)
 
-You should refer to the [Overview of INF Files](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives) sections for general help in creating a display miniport driver INF file. For more information about registry root identifiers, such as **HKR**, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+You should refer to the [Overview of INF Files](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md) sections for general help in creating a display miniport driver INF file. For more information about registry root identifiers, such as **HKR**, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 **Note**   There are no INF sections and directives for uninstalling display drivers that are specific to graphic devices.
 
  
-
- 
-
- 
-
-
-
-
 

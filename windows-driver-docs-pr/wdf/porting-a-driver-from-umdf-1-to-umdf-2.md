@@ -1,7 +1,6 @@
 ---
 title: Porting a Driver from UMDF 1 to UMDF 2
 description: This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to UMDF 2.
-ms.assetid: 99D20B4C-17C4-42AC-B4D9-F5FD64E10723
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,36 +20,36 @@ The Echo driver sample is an example of a driver that has been ported from UMDF 
 
 To start, open a new driver project in Visual Studio. Select the **Visual C++-&gt;Windows Driver-&gt;WDF-&gt;User Mode Driver (UMDF 2)** template. Visual Studio opens a partially populated template that includes stubs for the callback functions that your driver must implement. This new driver project will be the foundation of your UMDF 2 driver. Use the UMDF 2 Echo sample as a guide to the type of code you should introduce.
 
-Next, review your existing UMDF 1 driver code and determine object mappings. Each COM object in UMDF 1 has a corresponding WDF object in UMDF 2. For example, the **IWDFDevice** interface maps to the WDF device object, which is represented by a WDFDEVICE handle. Nearly all framework-supplied interface methods in UMDF 1 have corresponding methods in UMDF 2. For example, [**IWDFDevice::GetDefaultIoQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-getdefaultioqueue) maps to [**WdfDeviceGetDefaultQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicegetdefaultqueue).
+Next, review your existing UMDF 1 driver code and determine object mappings. Each COM object in UMDF 1 has a corresponding WDF object in UMDF 2. For example, the **IWDFDevice** interface maps to the WDF device object, which is represented by a WDFDEVICE handle. Nearly all framework-supplied interface methods in UMDF 1 have corresponding methods in UMDF 2. For example, [**IWDFDevice::GetDefaultIoQueue**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-getdefaultioqueue) maps to [**WdfDeviceGetDefaultQueue**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetdefaultqueue).
 
-Similarly, driver-supplied callback functions have equivalents in the two versions. In UMDF 1, the naming convention for driver-supplied interfaces (except for **IDriverEntry**) is *I*Object*Callback*Xxx<strong>, while in UMDF 2 the naming convention for driver-supplied routines is *Evt*ObjectXxx</strong>. For example, the [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback method maps to [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add).
+Similarly, driver-supplied callback functions have equivalents in the two versions. In UMDF 1, the naming convention for driver-supplied interfaces (except for **IDriverEntry**) is *I*Object*Callback*Xxx<strong>, while in UMDF 2 the naming convention for driver-supplied routines is *Evt*ObjectXxx</strong>. For example, the [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback method maps to [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add).
 
-Your driver implements callback functions in both UMDF 1 and 2, but the way that the driver supplies pointers to its callbacks differs. In UMDF 1, the driver implements callback methods as members of driver-supplied interfaces. The driver registers these interfaces with the framework when it creates framework objects, for example by calling [**IWDFDriver::CreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdriver-createdevice).
+Your driver implements callback functions in both UMDF 1 and 2, but the way that the driver supplies pointers to its callbacks differs. In UMDF 1, the driver implements callback methods as members of driver-supplied interfaces. The driver registers these interfaces with the framework when it creates framework objects, for example by calling [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice).
 
-In UMDF 2, the driver provides pointers to driver-supplied callback functions in configuration structures such as [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/ns-wdfdriver-_wdf_driver_config) and [**WDF\_IO\_QUEUE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/ns-wdfio-_wdf_io_queue_config).
+In UMDF 2, the driver provides pointers to driver-supplied callback functions in configuration structures such as [**WDF\_DRIVER\_CONFIG**](/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config) and [**WDF\_IO\_QUEUE\_CONFIG**](/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config).
 
 ## Managing Object Lifetime
 
 
 Drivers that use UMDF 1 must implement reference counting in order to determine when it is safe to delete objects. Because the framework tracks object references on the driver's behalf, a UMDF 2 driver does not need to count references.
 
-In UMDF 2, each framework object has a default parent object. When a parent object is deleted, the framework deletes associated child objects. When your driver calls an object creation method such as [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate), it can accept the default parent, or it can specify a custom parent in a [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) structure. For a list of framework objects and their default parent objects, see [Summary of Framework Objects](summary-of-framework-objects.md).
+In UMDF 2, each framework object has a default parent object. When a parent object is deleted, the framework deletes associated child objects. When your driver calls an object creation method such as [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), it can accept the default parent, or it can specify a custom parent in a [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure. For a list of framework objects and their default parent objects, see [Summary of Framework Objects](summary-of-framework-objects.md).
 
 ## Driver Initialization
 
 
-A UMDF 1 driver implements the [**IDriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-idriverentry) interface. In its [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback method, the driver typically:
+A UMDF 1 driver implements the [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface. In its [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback method, the driver typically:
 
 -   Creates and initializes an instance of the device callback object.
--   Creates the new framework device object by calling [**IWDFDriver::CreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdriver-createdevice).
+-   Creates the new framework device object by calling [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice).
 -   Sets up the device's queues and their corresponding callback objects.
--   Creates an instance of a device interface class by calling [**IWDFDevice::CreateDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-createdeviceinterface).
+-   Creates an instance of a device interface class by calling [**IWDFDevice::CreateDeviceInterface**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-createdeviceinterface).
 
-A UMDF 2 driver implements [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) and [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add). In its **DriverEntry** routine, a UMDF 2 driver typically calls [**WDF\_DRIVER\_CONFIG\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdf_driver_config_init) to initialize the driver's [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure. Then it passes this structure to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate).
+A UMDF 2 driver implements [**DriverEntry**](./driverentry-for-kmdf-drivers.md) and [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add). In its **DriverEntry** routine, a UMDF 2 driver typically calls [**WDF\_DRIVER\_CONFIG\_INIT**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdf_driver_config_init) to initialize the driver's [**WDF\_DRIVER\_CONFIG**](/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure. Then it passes this structure to [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate).
 
-In its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function, the driver might do some of the following:
+In its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function, the driver might do some of the following:
 
--   Fill in the [WDFDEVICE\_INIT](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevice_init) structure, which supplies information that is used to create the device object. For more information about using WDFDEVICE\_INIT, see [Creating a Framework Device Object](creating-a-framework-device-object.md).
+-   Fill in the [WDFDEVICE\_INIT](./wdfdevice_init.md) structure, which supplies information that is used to create the device object. For more information about using WDFDEVICE\_INIT, see [Creating a Framework Device Object](creating-a-framework-device-object.md).
 -   Set up the device object’s context area. For information about allocating and accessing context space for framework objects, see [Framework Object Context Space](framework-object-context-space.md).
 -   [Create the device object](creating-a-framework-device-object.md).
 -   Specify [request handlers](request-handlers.md) for the device object.
@@ -71,9 +70,9 @@ Also, although a UMDF 1 driver must reference the co-installer in its INF file, 
 ## Storing Device Context
 
 
-In UMDF 1, the driver usually stores device context in a driver-created callback object, for example by specifying private members of the device callback object class. Alternatively, a UMDF 1 driver can call the [**IWDFObject::AssignContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfobject-assigncontext) method to register context on a framework object.
+In UMDF 1, the driver usually stores device context in a driver-created callback object, for example by specifying private members of the device callback object class. Alternatively, a UMDF 1 driver can call the [**IWDFObject::AssignContext**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfobject-assigncontext) method to register context on a framework object.
 
-In UMDF 2, the framework allocates context space based on the optional [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) structure that the driver provides when it calls an object creation method. After calling an object's create method, a driver can call [**WdfObjectAllocateContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectallocatecontext) one or more times to allocate additional context space to a specific object. For the steps a UMDF 2 driver should use to define a context structure and accessor method, see [Framework Object Context Space](framework-object-context-space.md).
+In UMDF 2, the framework allocates context space based on the optional [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure that the driver provides when it calls an object creation method. After calling an object's create method, a driver can call [**WdfObjectAllocateContext**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectallocatecontext) one or more times to allocate additional context space to a specific object. For the steps a UMDF 2 driver should use to define a context structure and accessor method, see [Framework Object Context Space](framework-object-context-space.md).
 
 ## Debugging your driver
 
@@ -94,11 +93,4 @@ In UMDF 2, you can also get additional driver debugging information through the 
 [Framework Objects](framework-objects.md)
 
  
-
- 
-
-
-
-
-
 

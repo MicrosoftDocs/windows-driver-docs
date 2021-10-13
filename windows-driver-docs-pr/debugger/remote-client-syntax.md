@@ -1,7 +1,6 @@
 ---
 title: Remote Client Syntax
 description: To start the client side of the Remote tool, use the following syntax at the command line.
-ms.assetid: 4728ef17-a365-4024-815c-2719b51b81f6
 keywords: ["Remote Client Syntax Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,16 +13,13 @@ ms.localizationpriority: medium
 ---
 
 # Remote Client Syntax
-
-
 To start the client side of the Remote tool, use the following syntax at the command line.
 
 ```console
 remote /c Server SessionName [/L Lines] [/f] [/b] [/k ColorFile] 
 ```
 
-## <span id="ddk_remote_client_syntax_dtools"></span><span id="DDK_REMOTE_CLIENT_SYNTAX_DTOOLS"></span>Parameters
-
+## <span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 <span id="________c______"></span><span id="________C______"></span> **/c**   
 Connects the client to a remote session.
@@ -54,7 +50,7 @@ The color file associates keywords in the output with text colors. When the keyw
 <span id="________q_______Computer______"></span><span id="________q_______computer______"></span><span id="________Q_______COMPUTER______"></span> **/q** *Computer*   
 Displays the remote sessions available on the specified computer. Only visible sessions appear in the list. (See **/v** in [**Remote Server Syntax**](remote-server-syntax.md).)
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The *Server* and *SessionName* parameters must appear in the order shown on the syntax line.
 
@@ -80,7 +76,7 @@ Windows Vista
 lgreen
 ```
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```console
 remote /c Server01 TestSession
@@ -88,12 +84,3 @@ remote /c Domain1\ComputerA0 "cmd" "My Remote Session"
 remote /c Server01 TestSession /L 50 /f black /b white /k c:\remote_file.txt
 remote /q Server01
 ```
-
- 
-
- 
-
-
-
-
-

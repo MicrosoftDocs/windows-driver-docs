@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for All Features
 description: Option Attributes for All Features
-ms.assetid: 0d269fdf-f4a1-431a-9f07-044289b9f0fa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -65,7 +64,7 @@ The following table lists, in alphabetic order, the [option attributes](option-a
 </tr>
 <tr class="odd">
 <td><p></em><strong>OptionID</strong></p></td>
-<td><p>Numeric value representing a unique option identifier that Unidrv stores in the printer's <a href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew)"><strong>DEVMODEW</strong></a> structure. For use only with the PaperSize, InputSlot, Halftoning, and MediaType features. Value is stored in the DEVMODE structure's <strong>dmPaperSize</strong>, <strong>dmDefaultSource</strong>, <strong>dmDitherType</strong>, or <strong>dmMediaType</strong> member, respectively.</p></td>
+<td><p>Numeric value representing a unique option identifier that Unidrv stores in the printer's <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure. For use only with the PaperSize, InputSlot, Halftoning, and MediaType features. Value is stored in the DEVMODE structure's <strong>dmPaperSize</strong>, <strong>dmDefaultSource</strong>, <strong>dmDitherType</strong>, or <strong>dmMediaType</strong> member, respectively.</p></td>
 <td><p>Optional. If not specified, Unidrv assigns an identifier value (&gt;256). To avoid conflicts with Unidrv-assigned identifiers, the specified value must be greater than 512.</p></td>
 </tr>
 <tr class="even">
@@ -91,11 +90,4 @@ The following table lists, in alphabetic order, the [option attributes](option-a
  
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
 

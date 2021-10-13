@@ -1,7 +1,6 @@
 ---
-title: pci
+title: pci (WinDbg)
 description: The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
-ms.assetid: 37b767db-18c9-4fd3-8910-4be03f41e764
 keywords: ["PCI bus", "PCI device", "PCI configuration space", "pci Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -108,8 +107,7 @@ This extension command can only be used with an x86-based target computer.
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command and additional examples. For information about PCI buses, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 To edit the PCI configuration space, use [**!ecb**](-ecb---ecd---ecw.md), **!ecd**, or **!ecw**.
 

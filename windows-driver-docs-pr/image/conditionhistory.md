@@ -1,7 +1,6 @@
 ---
 title: ConditionHistory element
 description: The optional ConditionHistory element is a collection of ConditionHistoryEntry elements that provide details about recent conditions and errors on the scanner.
-ms.assetid: 3725a635-6571-4a34-b8f9-9fe6881bd6da
 keywords: ["ConditionHistory element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **ConditionHistory** element is a collection of [**ConditionHistoryEntry**](conditionhistoryentry.md) elements that provide details about recent conditions and errors on the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ConditionHistory>
@@ -27,8 +25,7 @@ Usage
 </wscn:ConditionHistory>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -74,8 +71,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A client can query the scanner's **ConditionHistory** element by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation.
 

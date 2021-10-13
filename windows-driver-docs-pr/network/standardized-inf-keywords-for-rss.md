@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for RSS
 description: Standardized INF Keywords for RSS
-ms.assetid: 0ea0d6f7-0dc5-40dd-a706-4712e19dbfdb
 keywords:
 - receive-side scaling WDK networking , standardized INF keywords
 - RSS WDK networking , standardized INF keywords
@@ -122,7 +121,7 @@ The preferred NUMA node that is used for the memory allocations of the network a
 
 A driver for a PCI expansion card should not specify the NUMA node ID statically in its INF, since the closest node depends on which PCI slot the card is plugged into.  Only specify **\*NumaNodeId** if the network adapter is integrated into the system, the NUMA node is known in advance, and the node cannot be determined at runtime by querying ACPI.
 
-**Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
+**Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
 
  
 
@@ -150,7 +149,7 @@ The maximum processor group of the RSS interface.
 **\*RssMaxProcGroup** together with **\*RssMaxProcNumber** form a PROCESSOR_NUMBER structure that identifies the maximum processor number that can be used with RSS.
 
 For example, suppose **\*RssBaseProcGroup** is set to 1, **\*RssBaseProcNumber** is set to 16, **\*RssMaxProcGroup** is set to 3, and **\*RssMaxProcNumber** is set to 8.
-Using <group>:<processor> notation, the base processor is 1:16 and the max processor is 3:8.
+Using `<group>:<processor>` notation, the base processor is 1:16 and the max processor is 3:8.
 Then processors 0:0, 0:32, 1:0, and 1:15 will not be considered candidates for RSS, because they are below the base processor number.
 Processors 1:16, 1:31, 2:0, 2:63, 3:0, and 3:8 will all be considered candidates for RSS, because they fall in the range 1:16 through 3:8.
 Processors 3:9, 3:31, and 4:0 will not be considered candidates for RSS, because they are beyond the maximum processor number.
@@ -181,7 +180,7 @@ The maximum value that is allowed for an integer. &lt;IHV defined&gt; indicates 
 
 The following table describes all of the RSS keywords that can be edited.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />
@@ -229,11 +228,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p><strong></em>MaxRssProcessors</strong></p></td>
 <td align="left"><p>Maximum number of RSS Processors</p></td>
 <td align="left"><p>Int</p></td>
-<td align="left"><p>Windows Server 2008 defaults:</p>
-<p>8 for 1G or slower adapters, 16 for 10G adapters</p>
-<p>Windows 8 defaults:</p>
-<p>For NICs with no MSI-X support - 2 for 1GbE or slower adapters, 4 for 10 GbE adapters.</p>
-<p>For NICs with MSI-X support - 4 for 1GbE or slower adapters, 16 for 10 GbE adapters.</p></td>
+<td align="left"><p>16</p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p>MAXIMUM_PROC_PER_SYSTEM</p></td>
 </tr>
@@ -249,7 +244,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p><strong></em>NumRSSQueues</strong></p></td>
 <td align="left"><p>Maximum Number of RSS Queues</p></td>
 <td align="left"><p>Int</p></td>
-<td align="left"><p>Device-specific</p></td>
+<td align="left"><p>16</p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p>Device-specific</p></td>
 </tr>
@@ -277,10 +272,4 @@ If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
  
-
- 
-
-
-
-
 

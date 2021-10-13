@@ -1,7 +1,6 @@
 ---
 title: MB UICC application and file system access
 description: MB UICC application and file system access
-ms.assetid: 9A9BFCCE-2481-412F-AEBB-9919F6916224
 keywords:
 - MB UICC application and file system access, Mobile Broadband UICC application and file system access
 ms.date: 03/07/2019
@@ -21,7 +20,7 @@ The UICC provides a file system and supports a set of applications that can run 
 
 The following diagram from Section 8.1 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594) shows an example card application structure.
 
-![An example UICC application structure](images/mb-uicc-application-structure.png "An example UICC application structure.")
+![An example UICC application structure.](images/mb-uicc-application-structure.png "An example UICC application structure.")
 
 The UICC file system can be regarded as a forest of directory trees. The legacy SIM tree is rooted at a Master File (MF) and contains up to two levels of subdirectories (Dedicated Files, or DFs) containing Elemental Files (EFs) that hold various types of information. The SIM defines DFs under the MF, one of which, DFTelecom, contains information common to multiple access types such as the common phone book. Additional applications are effectively implemented as separate trees, each rooted in its own Application Directory File (ADF). Each ADF is identified by an application identifier that can be up to 128 bits long. A file under the card root (EFDir under the MF in the diagram) contains the application names and corresponding identifiers. Within a tree (the MF or an ADF), DFs and EFs might be identified by a path of file IDs, where a file ID is a 16-bit integer.
 
@@ -50,7 +49,7 @@ The following table specifies the UUID and command code for each CID, as well as
 | MBIM_CID_MS_UICC_FILE_STATUS | UUID_MS_UICC_LOW_LEVEL | 8 | N | Y | N |
 | MBIM_CID_MS_UICC_ACCESS_BINARY | UUID_MS_UICC_LOW_LEVEL | 9 | Y | Y | N |
 | MBIM_CID_MS_UICC_ACCESS_RECORD | UUID_MS_UICC_LOW_LEVEL | 10 | Y | Y | N |
-| MBIM_CID_MS_PIN_EX | UUID_BASIC_CONNECT_EXTENSIONS | 15 | Y | Y | N |
+| MBIM_CID_MS_PIN_EX | UUID_BASIC_CONNECT_EXTENSIONS | 14 | Y | Y | N |
 
 ## MBIM_CID_MS_UICC_APP_LIST
 
@@ -58,7 +57,7 @@ This CID retrieves a list of applications in a UICC and information about them. 
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Empty | Not applicable |
 | Response | Not applicable | MBIM_UICC_APP_LIST | Not applicable |
@@ -82,21 +81,23 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_UICC_APP_
 | 0 | 4 | Version | UINT32 | The version number of the structure that follows. This field must be set to **1** for version 1 of this structure. |
 | 4 | 4 | AppCount | UINT32 | The number of UICC application **MBIM_UICC_APP_INFO** structures being returned in this response. |
 | 8 | 4 | ActiveAppIndex | UINT32(0..NumApp - 1) | The index of the application selected by the modem for registration with the mobile network. This field must be between **0** and the **AppCount - 1**. It indexes to the array of applications returned by this response. If no application is selected for registration, this field contains **0xFFFFFFFF**. |
-| 12 | 4 | AppListOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the app list. |
-| 16 | 4 | AppListSize | SIZE (0..AppCount * 312) | The size of the app list data, in bytes. |
-| 20 | AppListSize | DataBuffer | DATABUFFER | An array of **AppCount** * **MBIM_UICC_APP_INFO** structures. |
+| 12 | 4 | AppListSize | UINT32 | The size of the app list data, in bytes. |
+|  | 8\*AppCount | AppList | OL_PAIR_LIST | First element of the pair is a 4-byte field with the Offset of an app info in the DataBuffer. Second element of the pair is a 4-byte field with the size of the app info. |
+|  | AppListSize | DataBuffer | DATABUFFER | An array of **AppCount** * **MBIM_UICC_APP_INFO** structures. |
 
 #### MBIM_UICC_APP_INFO
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | AppType | MBIM_UICC_APP_TYPE | The type of the UICC application. |
-| 4 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). This field is set to zero for the **MBIMUiccAppTypeMf**, **MBIMUiccAppTypeMfSIM**, or **MBIMUiccAppTypeMfRUIM** app types. |
-| 8 | 16 | AppId | Byte array | The application ID. Only the first **AppIdSize** bytes are meaningful. If the application ID is longer than **MBIM_MAXLENGTH_APPID** bytes, then AppIdSize specifies the actual length but only the first **MBIM_MAXLENGTH_APPID** bytes are in this field. This field is valid only when **AppType** is not **MBIMUiccAppTypeMf**, **MBIMUiccAppTypeMfSIM**, or **MBIMUiccAppTypeMfRUIM**. |
-| 24 | 4 | AppNameLength | SIZE (0..256) | The length, in characters, of the application name. |
-| 28 | 256 | AppName | ASCII character array | A UTF-8 string specifying the name of the application. The length of this field is specified by **AppNameLength**. If the length is greater than or equal to **MBIM_MAXLENGTH_APPNAME** bytes, this field contains the first **MBIM_MAXLENGTH_APPNAME - 1** bytes of the name. The string is always null-terminated. |
-| 284 | 4 | NumPins | SIZE (0..8) | The number of application PIN references. In other words, the number of elements of **PinRef** that are valid. Applications on a virtual R-UIM have no PIN references. |
-| 288 | 8 | PinRef | Byte array | A byte array specifying the application PIN references for this application (keys for PIN1 and possibly UPIN), as defined in Section 9.4.2 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). In the case of a single-verification card, or an MBB driver and/or modem that does not support different application keys for different applications, this field must be **0x01**. |
+| 4 |	4	| AppIdOffset | OFFSET | Offset for the application ID in the databuffer. Only the first AppIdSize bytes are meaningful. If the application ID is longer than MBIM_MAXLENGTH_APPID bytes, then AppIdSize specifies the actual length but only the first MBIM_MAXLENGTH_APPID bytes are in this field. This field is valid only when AppType is not MBIMUiccAppTypeMf, MBIMUiccAppTypeMfSIM, or MBIMUiccAppTypeMfRUIM. |
+| 8 |	4	| AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the ETSI TS 102 221 technical specification. This field is set to zero for the MBIMUiccAppTypeMf, MBIMUiccAppTypeMfSIM, or MBIMUiccAppTypeMfRUIM app types. |
+| 12 |  | AppNameOffset | OFFSET | Offset for the application name in the databuffer. A UTF-8 string specifying the name of the application. The length of this field is specified by AppNameLength. If the length is greater than or equal to MBIM_MAXLENGTH_APPNAME bytes, this field contains the first MBIM_MAXLENGTH_APPNAME - 1 bytes of the name. The string is always null-terminated. |
+| 16 | 4 | AppNameLength | SIZE (0..256) | The length, in bytes, of the application name. |
+| 20 | 4 | NumPinKeyRefs | SIZE (0..8) | The number of application PIN key references. In other words, the number of elements of PinKeyRef that are valid. Applications on a virtual R-UIM have no PIN key references. |
+| 24 | 4 | KeyRefOffset | OFFSET | Offset of the PinKeyRef in the DataBuffer. The PinKeyRef is a byte array specifying the application’s PIN key references for different levels of verification (keys for PIN1, PIN2, and possibly a universal PIN), as defined in Table 9.3 and Section 9.4.2 of the ETSI TS 102 221 technical specification. In the case of a single-verification card, or an MBB driver and/or modem that does not support different application keys for different applications, the first byte of the PinKeyRef field must be 0x01 (PIN1) and the second byte must be 0x81 (PIN2), as described in Section 9.5.1 of ETSI TS 102 221. |
+| 28 | 4 | KeyRefSize | SIZE (0..8) | The size of PinKeyRef. |
+| 32 |  | DataBuffer | DATABUFFER | The data buffer containing AppId, AppName, and PinKeyRef.of a single-verification card, or an MBB driver and/or modem that does not support different application keys for different applications, this field must be **0x01**. |
 
 #### MBIM_UICC_APP_TYPE
 
@@ -114,7 +115,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_UICC_APP_
 
 The following constants are defined for MBIM_CID_MS_UICC_APP_INFO.
 
-`const int MBIM_MAXLENGTH_APPID = 16`  
+`const int MBIM_MAXLENGTH_APPID = 32`  
 `const int MBIM_MAXLENGTH_APPNAME = 256`  
 `const int MBIM_MAXNUM_PINREF = 8`  
 
@@ -142,7 +143,7 @@ This CID retrieves information about a specified UICC file.
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_UICC_FILE_PATH | Not applicable |
 | Response | Not applicable | MBIM_UICC_FILE_STATUS | Not applicable |
@@ -266,10 +267,10 @@ This CID sends a specific command to access a UICC binary file, with structure t
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_UICC_ACCESS_BINARY | MBIM_UICC_ACCESS_BINARY | Not applicable |
-| Response | MBIM_UICC_RESPONSE | MBIM_UICC_RESPONSE | Not applicable |
+| Command | Not applicable | MBIM_UICC_ACCESS_BINARY | Not applicable |
+| Response | Not applicable | MBIM_UICC_RESPONSE | Not applicable |
 
 ### Query
 
@@ -294,7 +295,7 @@ Reads a binary file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM
 
 ### Set
 
-Updates a transparent file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM_UICC_ACCESS_BINARY structure. An MBIM_UICC_RESPONSE structure is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+Not applicable.
 
 ### Response
 
@@ -334,10 +335,10 @@ This CID sends a specific command to access a UICC linear fixed or cyclic file, 
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_UICC_ACCESS_RECORD | MBIM_UICC_ACCESS_RECORD | Not applicable |
-| Response | MBIM_UICC_RESPONSE | MBIM_UICC_RESPONSE | Not applicable |
+| Command | Not applicable | MBIM_UICC_ACCESS_RECORD | Not applicable |
+| Response | Not applicable | MBIM_UICC_RESPONSE | Not applicable |
 
 ### Query
 
@@ -361,7 +362,7 @@ Reads contents of a record. The InformationBuffer for MBIM_COMMAND_MSG contains 
 
 ### Set
 
-Updates a linear fixed or cyclic file. The InformationBuffer for MBIM_COMMAND_MSG contains the following MBIM_UICC_ACCESS_RECORD structure. MBIM_UICC_RESPONSE is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+Not applicable.
 
 ### Response
 
@@ -392,7 +393,7 @@ Just like MBIM_CID_MS_PIN, with MBIM_CID_MS_PIN_EX the device only reports one P
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_PIN_EX | MBIM_PIN_APP | Not applicable |
 | Response | MBIM_PIN_INFO_EX | MBIM_PIN_INFO_EX | Not applicable |

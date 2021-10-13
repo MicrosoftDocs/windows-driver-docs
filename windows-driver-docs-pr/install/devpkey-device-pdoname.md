@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_PDOName
 description: DEVPKEY_Device_PDOName
-ms.assetid: 1f2bc1e0-a671-47f6-9fbb-d0482b5abeca
 keywords: ["DEVPKEY_Device_PDOName Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_Device_PDOName device property represents the name of the physical d
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -51,48 +56,26 @@ The DEVPKEY_Device_PDOName device property represents the name of the physical d
 
  
 
-Remarks
--------
+## Remarks
 
-Windows sets the value of DEVPKEY_Device_PDOName to the name of the physical name object (PDO) that represents a device. For more information about PDO names, see the *DeviceName* parameter that is used with the [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) routine.
+Windows sets the value of DEVPKEY_Device_PDOName to the name of the physical name object (PDO) that represents a device. For more information about PDO names, see the *DeviceName* parameter that is used with the [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) routine.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PDOName.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PDOName.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_PDOName property key. Instead, you can use the corresponding SPDRP_PHYSICAL_DEVICE_OBJECT_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_PDOName property key. Instead, you can use the corresponding SPDRP_PHYSICAL_DEVICE_OBJECT_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice)
+[**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: TCP/IP Schema Extensions for Driver-Specific Queries
 description: TCP/IP Schema Extensions for Driver-Specific Queries
-ms.assetid: c6f85f99-852a-418f-98da-41fe4c36e9ba
 keywords:
 - TCP/IP schema extensions WDK printer
 - schema extensions WDK TCP/IP

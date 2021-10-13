@@ -1,7 +1,6 @@
 ---
 title: Audio Drivers Property Sets
 description: Audio Drivers Property Sets
-ms.assetid: bac74ad5-3a9b-40b1-ae49-c86558c34e94
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -37,13 +36,13 @@ These headings have the following meanings:
 
 -   **Property Descriptor Type**
 
-    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) structure, but some types of descriptor contain additional information. For example, the [**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty) structure is a property descriptor that begins with a KSPROPERTY structure but also includes a node ID.
+    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure, but some types of descriptor contain additional information. For example, the [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure is a property descriptor that begins with a KSPROPERTY structure but also includes a node ID.
 
 -   **Property Value Type**
 
     A property typically has a value, and the type of this value depends on the property. For example, a property that can be in one of only two states--on or off--typically has a BOOL value. A property that can assume integer values from 0 to 0xFFFFFFFF might have a ULONG value. More complex properties might have values that are arrays or structures.
 
-The preceding property descriptor and property value are the property-specific versions of the instance-specification and operation-data buffers that are discussed in [KS Properties, Events, and Methods](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties--events--and-methods).
+The preceding property descriptor and property value are the property-specific versions of the instance-specification and operation-data buffers that are discussed in [KS Properties, Events, and Methods](../stream/ks-properties--events--and-methods.md).
 
 A property request uses one of the following flags to specify the operation that is to be performed on the property:
 
@@ -53,7 +52,7 @@ A property request uses one of the following flags to specify the operation that
 
 -   KSPROPERTY\_TYPE\_SET
 
-All filter and pin objects support the basic-support operation on their properties. Whether they support the get and set operations depends on the property. A property that represents an inherent capability of the filter or pin object is likely to require only a get operation. A property that represents a configurable setting might require only a set operation, although a get operation might also be useful for reading the current setting. For more information about using the get, set, and basic-support operations with audio properties, see [Audio Endpoints, Properties and Events](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-endpoints--properties-and-events).
+All filter and pin objects support the basic-support operation on their properties. Whether they support the get and set operations depends on the property. A property that represents an inherent capability of the filter or pin object is likely to require only a get operation. A property that represents a configurable setting might require only a set operation, although a get operation might also be useful for reading the current setting. For more information about using the get, set, and basic-support operations with audio properties, see [Audio Endpoints, Properties and Events](./audio-endpoints--properties-and-events.md).
 
 The following property sets are defined for audio drivers:
 
@@ -100,12 +99,4 @@ The following property sets are defined for audio drivers:
 [KSPROPSETID\_TelephonyTopology](kspropsetid-telephonytopology.md)
 
 [KSPROPSETID\_TopologyNode](kspropsetid-topologynode.md)
-
- 
-
- 
-
-
-
-
 

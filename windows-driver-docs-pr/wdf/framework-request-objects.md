@@ -1,7 +1,6 @@
 ---
 title: Framework Request Objects
 description: Framework Request Objects
-ms.assetid: 564f3600-4784-4a37-ac13-38338c38a9d2
 keywords:
 - I/O requests WDK KMDF , request objects
 - request objects WDK KMDF
@@ -18,9 +17,9 @@ ms.localizationpriority: medium
 
 
 
-Framework request objects represent I/O requests that the I/O manager has sent to a driver. Framework-based drivers process each I/O request by calling [framework request object methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/).
+Framework request objects represent I/O requests that the I/O manager has sent to a driver. Framework-based drivers process each I/O request by calling [framework request object methods](/windows-hardware/drivers/ddi/wdfrequest/).
 
-Each I/O request contains a WDM *I/O request packet* ([**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp) structure), but framework-based drivers typically do not need to access the IRP structure.
+Each I/O request contains a WDM *I/O request packet* ([**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure), but framework-based drivers typically do not need to access the IRP structure.
 
 ## In this section
 
@@ -35,10 +34,4 @@ Each I/O request contains a WDM *I/O request packet* ([**IRP**](https://docs.mic
 -   [Reusing Framework Request Objects](reusing-framework-request-objects.md)
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Cube Environment Map Support
 description: Cube Environment Map Support
-ms.assetid: 41666b17-39b0-4022-925f-538455e41f3a
 keywords:
 - mapping cube environments
 - environment mapping WDK Direct3D
@@ -30,7 +29,7 @@ Cubical environment maps, formed by pointing a real or simulated camera with 90-
 
 In general, cube maps are the best choice to provide real-time environment mapping for complex lighting and reflections.
 
-The cube map enables are passed to the driver using the [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) render state mechanism. [FVF](fvf--flexible-vertex-format-.md) texture coordinates are passed with FVF code 01 for that texture coordinate set.
+The cube map enables are passed to the driver using the [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) render state mechanism. [FVF](fvf--flexible-vertex-format-.md) texture coordinates are passed with FVF code 01 for that texture coordinate set.
 
 The cube map is defined in world coordinates; that is, its world transform matrix is the identity matrix. The cube map can appear to be in a different space if texture transforms are used on the corresponding texture coordinate indexes. These texture coordinate indexes will be looking directly at face four, the +z face. Y is up by default. The origin of the (u,v) texel grid is at the upper left corner of each face, in order to allow creation of the face without any additional transformations by pointing camera from the center of the cube.
 
@@ -40,17 +39,11 @@ The pointer returned from **DirectDrawCreate** is actually a pointer to the firs
 
 If any of the surfaces are intended to be rendered to, the cube map must be created with the D3DPTEXTURECAPS\_CUBEMAP cap flag set.
 
-Any faces not created by the call are assumed to be filled with the color specified in the surface descriptor's **dwEmptyFaceColor** member. (See the [**DDSURFACEDESC2**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550340(v=vs.85)) structure.)
+Any faces not created by the call are assumed to be filled with the color specified in the surface descriptor's **dwEmptyFaceColor** member. (See the [**DDSURFACEDESC2**](/previous-versions/windows/hardware/drivers/ff550340(v=vs.85)) structure.)
 
 **Note**   Current restrictions: All cube faces must be the same size and must be square. The cube faces can be MIP mapped. No color keying is supported with cube map textures. As with other textures, alpha channels and alpha palettes are supported.
 
  
 
  
-
- 
-
-
-
-
 

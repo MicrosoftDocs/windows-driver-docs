@@ -1,7 +1,6 @@
 ---
 title: Device Services Extension API
 description: Device Services Extension API
-ms.assetid: e1539ae1-78fd-4d79-81bf-4030e69e191c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ Windows-compliant mobile broadband devices project each supported feature as a d
 
 Any device services that are not natively implemented by the Windows wireless platform can be accessed by the Device Services Extension API. This API provides a direct pipe for the independent hardware vendor (IHV) software to access functionality on the device. This pipe provides a conduit through the WWAN service and mobile broadband generic driver to the device, as shown in the following diagram:
 
-![device services](images/mb-fig1-deviceservices.png)
+![device services.](images/mb-fig1-deviceservices.png)
 
 The Windows wireless platform supports APIs for the following app functions:
 

@@ -1,7 +1,6 @@
 ---
 title: Handling Rollback Operations
 description: Handling Rollback Operations
-ms.assetid: d36bfac8-47dc-4fcd-a6e2-feb27d244630
 keywords: ["transactions WDK KTM , rolling back transactions", "rolling back transactions WDK KTM", "resource managers WDK KTM , rolling backing transactions", "transactional clients WDK KTM , rolling back transactions"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -12,11 +11,11 @@ ms.localizationpriority: medium
 
 A resource manager, a transactional client, or KTM can roll back a transaction if it determines that the transaction must not be committed (typically because an error has been detected).
 
-To roll back a transaction, a resource manager can call [**ZwRollbackEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbackenlistment). After the resource manager has called [**ZwCreateEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreateenlistment) to enlist in a transaction, it can roll back the transaction at any time before it calls [**ZwPrepareComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpreparecomplete).
+To roll back a transaction, a resource manager can call [**ZwRollbackEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbackenlistment). After the resource manager has called [**ZwCreateEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment) to enlist in a transaction, it can roll back the transaction at any time before it calls [**ZwPrepareComplete**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntpreparecomplete).
 
-Transactional clients can roll back their transactions by calling [**ZwRollbackTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbacktransaction). After a transactional client has called [**ZwCreateTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreatetransaction) to create a transaction, it can roll back the transaction at any time before it calls [**ZwCommitTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommittransaction).
+Transactional clients can roll back their transactions by calling [**ZwRollbackTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbacktransaction). After a transactional client has called [**ZwCreateTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction) to create a transaction, it can roll back the transaction at any time before it calls [**ZwCommitTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction).
 
-In addition, a transactional client can set a time-out value for a transaction by calling [**ZwSetInformationTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsetinformationtransaction). KTM rolls back the transaction if it has not been committed by the specified amount of time.
+In addition, a transactional client can set a time-out value for a transaction by calling [**ZwSetInformationTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntsetinformationtransaction). KTM rolls back the transaction if it has not been committed by the specified amount of time.
 
 When a call to **ZwRollbackEnlistment** or **ZwRollbackTransaction** is made, or when a time-out value is exceeded, KTM sends a TRANSACTION\_NOTIFY\_ROLLBACK [notification](transaction-notifications.md) to all resource managers.
 
@@ -26,16 +25,11 @@ When each resource manager receives a TRANSACTION\_NOTIFY\_ROLLBACK notification
 
     Typically, a resource manager restores the transaction's data by copying the transaction's saved initial data from the log stream to the database's public, permanent storage. For more information about how to use log streams, see [Using Log Streams with KTM](using-log-streams-with-ktm.md).
 
-2.  Call [**ZwRollbackComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbackcomplete).
+2.  Call [**ZwRollbackComplete**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbackcomplete).
 
-After calling **ZwRollbackComplete**, the resource manager should call [**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntclose) to close the enlistment handle.
+After calling **ZwRollbackComplete**, the resource manager should call [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) to close the enlistment handle.
 
 If a resource manager initiated the rollback operation, it must use its client interface to inform the client that the transaction failed.
 
  
-
- 
-
-
-
 

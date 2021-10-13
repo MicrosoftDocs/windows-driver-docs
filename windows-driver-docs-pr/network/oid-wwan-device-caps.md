@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_CAPS
 description: OID_WWAN_DEVICE_CAPS returns the capabilities of the MB device, including the cellular technology it supports, the classes of packet data it supports, the radio frequencies it supports, the type of voice service it provides, and whether it uses a Subscriber Identity Module (SIM card). The supported cellular technology and whether the device uses a SIM are particularly important because network provider selection and SIM user interfaces depend on the values of these two capabilities. The manufacturer and firmware revision are returned as optional fields. Set requests are not supported. Miniport drivers must process query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request, and later sending a NDIS_STATUS_WWAN_DEVICE_CAPS status notification containing a NDIS_WWAN_DEVICE_CAPS structure that indicates the capabilities of the MB device when completing query requests.
-ms.assetid: bcf04d0b-70f3-48b7-a505-c82e50edadb2
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_CAPS Network Drivers Starting with Windows Vista
@@ -15,14 +14,13 @@ OID\_WWAN\_DEVICE\_CAPS returns the capabilities of the MB device, including the
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-caps) status notification containing a [**NDIS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure that indicates the capabilities of the MB device when completing query requests.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](./ndis-status-wwan-device-caps.md) status notification containing a [**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure that indicates the capabilities of the MB device when completing query requests.
 
-Remarks
--------
+## Remarks
 
-Starting with Windows 8, the MB driver model has been updated to version 2.0. Windows 8 miniport drivers should set the **Header.Revision** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_2** for *query* requests. Windows 7 miniport drivers should set the **Header.Revision** member of the **NDIS\_WWAN\_DEVICE\_CAPS** structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_1** for *query* requests.
+Starting with Windows 8, the MB driver model has been updated to version 2.0. Windows 8 miniport drivers should set the **Header.Revision** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_2** for *query* requests. Windows 7 miniport drivers should set the **Header.Revision** member of the **NDIS\_WWAN\_DEVICE\_CAPS** structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_1** for *query* requests.
 
-For more information about using this OID, see [WWAN Driver Initialization Procedure](https://docs.microsoft.com/windows-hardware/drivers/network/mb-miniport-driver-initialization).
+For more information about using this OID, see [WWAN Driver Initialization Procedure](mb-device-readiness.md#mb-miniport-driver-initialization).
 
 Miniport drivers can access device memory when processing query operations, but should not access the provider network or the Subscriber Identity Module (SIM card).
 
@@ -30,7 +28,7 @@ Many "world-wide" MB devices today support multiple frequency bands because the 
 
 **3GPP (GSM-based) Frequency Band Classes**
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />
@@ -287,8 +285,7 @@ US 2.5 GHz Forward Link Only Band
 
 The unit for radio frequency bands in both tables is megahertz (MHz).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -310,14 +307,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps)
+[**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps)
 
-[WWAN Driver Initialization Procedure](https://docs.microsoft.com/windows-hardware/drivers/network/mb-miniport-driver-initialization)
-
- 
+[WWAN Driver Initialization Procedure](mb-device-readiness.md#mb-miniport-driver-initialization)
 
  
-
-
-
 

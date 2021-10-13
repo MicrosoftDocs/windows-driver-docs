@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming Proxy Plug-ins Design Guide
 description: Kernel Streaming Proxy Plug-ins Design Guide
-ms.assetid: 9a2b83ab-f54c-421b-bc9b-7dad63cd8cb5
 keywords:
 - Kernel Streaming Proxy WDK AVStream , plug-ins
 ms.date: 04/20/2017
@@ -27,12 +26,7 @@ The interface plug-in provides programmatic control to get and set property valu
 
 [Property Page Plug-in](property-page-plug-in.md)
 
-For more information about the KS proxy COM interfaces, exported helper functions, and structures that are used by applications and plug-ins, see [Kernel Streaming Proxy](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index).
+For more information about the KS proxy COM interfaces, exported helper functions, and structures that are used by applications and plug-ins, see [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index).
 
  
-
- 
-
-
-
 

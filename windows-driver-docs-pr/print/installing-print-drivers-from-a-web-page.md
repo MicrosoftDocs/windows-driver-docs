@@ -1,7 +1,6 @@
 ---
 title: Installing Print Drivers from a Web Page
 description: Installing Print Drivers from a Web Page
-ms.assetid: 44da45f7-687c-4c54-9ee6-79c91fce3947
 keywords:
 - Internet printing WDK , installing drivers from Web pages
 - print Web pages WDK , installing print drivers from

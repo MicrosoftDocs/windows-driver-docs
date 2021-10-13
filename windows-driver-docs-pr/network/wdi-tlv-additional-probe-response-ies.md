@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES
 description: WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES is a TLV that contains probe response IEs.
-ms.assetid: BDEDAD4D-A35B-4AE9-BC90-184CD75002B2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

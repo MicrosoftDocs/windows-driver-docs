@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ADAPTER_NLO_SCAN_MODE
 description: WDI_TLV_ADAPTER_NLO_SCAN_MODE is a TLV that indicates whether scans should be performed in active or passive mode.
-ms.assetid: 4294AF4D-587E-4978-9C54-E11D7368FBB8
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADAPTER_NLO_SCAN_MODE Network Drivers Starting with Windows Vista
@@ -28,12 +27,11 @@ The size (in bytes) of a UINT32.
 
 | Type   | Description                                                                                                                     |
 |--------|---------------------------------------------------------------------------------------------------------------------------------|
-| UINT32 | [**WDI\_SCAN\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_scan_type) value that indicates whether scans should be performed in active or passive mode. |
+| UINT32 | [**WDI\_SCAN\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_scan_type) value that indicates whether scans should be performed in active or passive mode. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

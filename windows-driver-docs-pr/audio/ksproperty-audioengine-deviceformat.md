@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT
 description: The KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT property request retrieves or alters the state of the audio engine node, regarding its device format setting.
-ms.assetid: 07821ACC-F561-4A40-9E2C-CB30B25521CB
 keywords: ["KSPROPERTY_AUDIOENGINE_DEVICEFORMAT Audio Devices"]
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT** property request retrieves or alte
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -56,8 +55,7 @@ The **KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT** property request retrieves or alte
 
 The **KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT** property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -79,16 +77,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat)
+[**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
-
- 
-
- 
-
-
-
-
-
 

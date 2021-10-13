@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier General Tool and Technical Limitations
 description: Static Driver Verifier General Tool and Technical Limitations
-ms.assetid: d263dee5-2408-4772-96d7-d1895a445fab
 keywords:
 - Static Driver Verifier WDK , limitations
 - StaticDV WDK , limitations
@@ -59,7 +58,7 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
     If a function role type is not detected by SDV, SDV will not verify the traces that originate from this function.
 
-    For example, if a driver defines (or implements) an [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function in the file mydriver.c. This compilation unit (or any .h files that mydriver.c includes) must contain the function role type declaration for the *EvtDriverDeviceAdd* function.
+    For example, if a driver defines (or implements) an [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function in the file mydriver.c. This compilation unit (or any .h files that mydriver.c includes) must contain the function role type declaration for the *EvtDriverDeviceAdd* function.
 
 -   Does not interpret structured exception handling. For **try/except** statements, SDV analyzes the guarded section as if no exception is thrown. Does not analyze the expression or the exception handler code.
 
@@ -89,7 +88,7 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
     For both **try/except** and **try/finally** statements, SDV ignores the **leave** statement.
 
-    For both **try/except** and **try/finally** statements, a jump out of the **try** block prevents analysis of the **except** or **finally** statements. For information about how to rewrite so that you can use a leave statement, see the topic for compiler warning [C6242](https://go.microsoft.com/fwlink/p/?linkid=153317).
+    For both **try/except** and **try/finally** statements, a jump out of the **try** block prevents analysis of the **except** or **finally** statements. For information about how to rewrite so that you can use a leave statement, see the topic for compiler warning [C6242](/cpp/code-quality/c6242).
 
 -   Ignores pointer arithmetic. For example, it will miss situations in which a pointer is incremented or decremented. This limitation can result in false negative and false positive results.
 
@@ -146,10 +145,4 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 -   SDV does not support virtual inheritance or virtual functions. SDV does not generate defects that follow a code path through virtual functions, which might lead to lost true defects. Virtual inheritance is treated like regular inheritance, which might lead to false defects or lost true defects.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE property specifies the maximum distance for a 3D sound buffer.
-ms.assetid: efa69fe3-834a-42be-a578-f284b07b93c4
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_MAXDISTANCE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE property specifies the maximum 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>FLOAT</p></td>
 </tr>
 </tbody>
@@ -61,8 +60,7 @@ The property value (operation data) is of type FLOAT and specifies the maximum d
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 At a distance that exceeds the maximum distance from a sound source, the sound from that source is reduced to silence. For more information about the maximum distance for a DirectSound 3D buffer, see the following in the Microsoft Windows SDK documentation:
 
@@ -70,8 +68,7 @@ At a distance that exceeds the maximum distance from a sound source, the sound f
 
 -   The **IDirectSound3DBuffer::GetMaxDistance** and **IDirectSound3DBuffer::SetMaxDistance** methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -89,16 +86,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSPROPERTY\_DIRECTSOUND3DLISTENER\_DISTANCEFACTOR**](ksproperty-directsound3dlistener-distancefactor.md)
-
- 
-
- 
-
-
-
-
-
 

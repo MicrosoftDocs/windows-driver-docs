@@ -1,7 +1,6 @@
 ---
 title: Locking rule set (Storport)
-description: Use these rules to verify that your driver correctly manages shared resources.
-ms.assetid: FBB75F07-E689-4B7C-B053-E0B6A3772764
+description: Learn about using rules (Storport) to verify that your driver correctly manages shared resources, and how to select the Locking rule set.
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -28,11 +27,11 @@ Use these rules to verify that your driver correctly manages shared resources.
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="storport-cancelspinlock.md" data-raw-source="[&lt;strong&gt;CancelSpinLock&lt;/strong&gt;](storport-cancelspinlock.md)"><strong>CancelSpinLock</strong></a></p></td>
-<td align="left"><p>The <a href="storport-cancelspinlock.md" data-raw-source="[&lt;strong&gt;CancelSpinLock Rule (Storport)&lt;/strong&gt;](storport-cancelspinlock.md)"><strong>CancelSpinLock Rule (Storport)</strong></a> rule verifies that each call to <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)" data-raw-source="[&lt;strong&gt;IoAcquireCancelSpinLock&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548196(v=vs.85))"><strong>IoAcquireCancelSpinLock</strong></a> is promptly followed by a call to <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)" data-raw-source="[&lt;strong&gt;IoReleaseCancelSpinLock&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549550(v=vs.85))"><strong>IoReleaseCancelSpinLock</strong></a>.</p></td>
+<td align="left"><p>The <a href="storport-cancelspinlock.md" data-raw-source="[&lt;strong&gt;CancelSpinLock Rule (Storport)&lt;/strong&gt;](storport-cancelspinlock.md)"><strong>CancelSpinLock Rule (Storport)</strong></a> rule verifies that each call to <a href="/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)" data-raw-source="[&lt;strong&gt;IoAcquireCancelSpinLock&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff548196(v=vs.85))"><strong>IoAcquireCancelSpinLock</strong></a> is promptly followed by a call to <a href="/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)" data-raw-source="[&lt;strong&gt;IoReleaseCancelSpinLock&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff549550(v=vs.85))"><strong>IoReleaseCancelSpinLock</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="storport-queuedspinlock.md" data-raw-source="[&lt;strong&gt;QueuedSpinLock&lt;/strong&gt;](storport-queuedspinlock.md)"><strong>QueuedSpinLock</strong></a></p></td>
-<td align="left"><p>The <a href="storport-queuedspinlock.md" data-raw-source="[&lt;strong&gt;QueuedSpinLock&lt;/strong&gt;](storport-queuedspinlock.md)"><strong>QueuedSpinLock</strong></a> rule verifies that in-stack queued spin locks that are acquired using <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)" data-raw-source="[&lt;strong&gt;KeAcquireInStackQueuedSpinLock&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551899(v=vs.85))"><strong>KeAcquireInStackQueuedSpinLock</strong></a> are promptly released using <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleaseinstackqueuedspinlock" data-raw-source="[&lt;strong&gt;KeReleaseInStackQueuedSpinLock&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleaseinstackqueuedspinlock)"><strong>KeReleaseInStackQueuedSpinLock</strong></a>. In addition, at the end of a dispatch or cancel routine, the driver should not hold any locks.</p></td>
+<td align="left"><p>The <a href="storport-queuedspinlock.md" data-raw-source="[&lt;strong&gt;QueuedSpinLock&lt;/strong&gt;](storport-queuedspinlock.md)"><strong>QueuedSpinLock</strong></a> rule verifies that in-stack queued spin locks that are acquired using <a href="/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)" data-raw-source="[&lt;strong&gt;KeAcquireInStackQueuedSpinLock&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85))"><strong>KeAcquireInStackQueuedSpinLock</strong></a> are promptly released using <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock" data-raw-source="[&lt;strong&gt;KeReleaseInStackQueuedSpinLock&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock)"><strong>KeReleaseInStackQueuedSpinLock</strong></a>. In addition, at the end of a dispatch or cancel routine, the driver should not hold any locks.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="storport-queuedspinlockrelease.md" data-raw-source="[&lt;strong&gt;QueuedSpinLockRelease&lt;/strong&gt;](storport-queuedspinlockrelease.md)"><strong>QueuedSpinLockRelease</strong></a></p></td>
@@ -56,7 +55,7 @@ Use these rules to verify that your driver correctly manages shared resources.
 </tr>
 <tr class="even">
 <td align="left"><p><a href="storport-storportmsilock.md" data-raw-source="[&lt;strong&gt;StorPortMSILock&lt;/strong&gt;](storport-storportmsilock.md)"><strong>StorPortMSILock</strong></a></p></td>
-<td align="left"><p>Miniport drivers are required to acquire the MSI spin lock for a message if, and only if, the <strong>InterruptSynchronizationMode</strong> member of the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563901(v=vs.85)" data-raw-source="[&lt;strong&gt;PORT_CONFIGURATION_INFORMATION (Storport)&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563901(v=vs.85))"><strong>PORT_CONFIGURATION_INFORMATION (Storport)</strong></a> structure is set to <strong>InterruptSynchronizePerMessage</strong>. This rule verifies that calls to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportacquiremsispinlock" data-raw-source="[&lt;strong&gt;StorPortAcquireMSISpinLock&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportacquiremsispinlock)"><strong>StorPortAcquireMSISpinLock</strong></a> are only made if the synchronization mode is <strong>InterruptSynchronizePerMessage</strong>.</p></td>
+<td align="left"><p>Miniport drivers are required to acquire the MSI spin lock for a message if, and only if, the <strong>InterruptSynchronizationMode</strong> member of the <a href="/previous-versions/windows/hardware/drivers/ff563901(v=vs.85)" data-raw-source="[&lt;strong&gt;PORT_CONFIGURATION_INFORMATION (Storport)&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff563901(v=vs.85))"><strong>PORT_CONFIGURATION_INFORMATION (Storport)</strong></a> structure is set to <strong>InterruptSynchronizePerMessage</strong>. This rule verifies that calls to <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportacquiremsispinlock" data-raw-source="[&lt;strong&gt;StorPortAcquireMSISpinLock&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportacquiremsispinlock)"><strong>StorPortAcquireMSISpinLock</strong></a> are only made if the synchronization mode is <strong>InterruptSynchronizePerMessage</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="storport-storportspinlock.md" data-raw-source="[&lt;strong&gt;StorPortSpinLock&lt;/strong&gt;](storport-storportspinlock.md)"><strong>StorPortSpinLock</strong></a></p></td>
@@ -64,7 +63,7 @@ Use these rules to verify that your driver correctly manages shared resources.
 </tr>
 <tr class="even">
 <td align="left"><p><a href="storport-storportspinlock3.md" data-raw-source="[&lt;strong&gt;StorPortSpinLock3&lt;/strong&gt;](storport-storportspinlock3.md)"><strong>StorPortSpinLock3</strong></a></p></td>
-<td align="left"><p>The <a href="storport-storportspinlock3.md" data-raw-source="[&lt;strong&gt;StorPortSpinLock3&lt;/strong&gt;](storport-storportspinlock3.md)"><strong>StorPortSpinLock3</strong></a> rule verifies the lock acquisition hierarchy that is described in the documentation for the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportacquirespinlock" data-raw-source="[&lt;strong&gt;StorPortAcquireSpinLock&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportacquirespinlock)"><strong>StorPortAcquireSpinLock</strong></a> routine.</p></td>
+<td align="left"><p>The <a href="storport-storportspinlock3.md" data-raw-source="[&lt;strong&gt;StorPortSpinLock3&lt;/strong&gt;](storport-storportspinlock3.md)"><strong>StorPortSpinLock3</strong></a> rule verifies the lock acquisition hierarchy that is described in the documentation for the <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock" data-raw-source="[&lt;strong&gt;StorPortAcquireSpinLock&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock)"><strong>StorPortAcquireSpinLock</strong></a> routine.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="storport-storportspinlock4.md" data-raw-source="[&lt;strong&gt;StorPortSpinLock4&lt;/strong&gt;](storport-storportspinlock4.md)"><strong>StorPortSpinLock4</strong></a></p></td>
@@ -87,13 +86,5 @@ Use these rules to verify that your driver correctly manages shared resources.
     msbuild /t:sdv /p:Inputs="/check:Locking.sdv" mydriver.VcxProj /p:Configuration="Win8 Release" /p:Platform=Win32
     ```
 
-    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers) and [Static Driver Verifier commands (MSBuild)](https://docs.microsoft.com/windows-hardware/drivers/devtest/-static-driver-verifier-commands--msbuild-).
-
- 
-
- 
-
-
-
-
+    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md) and [Static Driver Verifier commands (MSBuild)](./-static-driver-verifier-commands--msbuild-.md).
 

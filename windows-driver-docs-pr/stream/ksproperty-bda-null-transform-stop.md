@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP
 description: Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP to restart the transform that the node performed on the signal before that transform was disabled with the KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START property.
-ms.assetid: 4bf0bc50-8a08-4ded-b7e8-cf9a8191cc35
 keywords: ["KSPROPERTY_BDA_NULL_TRANSFORM_STOP Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP to restart the transform that
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -74,16 +72,9 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START**](ksproperty-bda-null-transform-start.md)
 
  
-
- 
-
-
-
-
-
 

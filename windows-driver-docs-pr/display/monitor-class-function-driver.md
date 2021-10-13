@@ -1,7 +1,6 @@
 ---
 title: Monitor Class Function Driver
 description: Monitor Class Function Driver
-ms.assetid: d16c3dcc-2fbf-4579-8962-1b89e6e7b347
 keywords:
 - multiple monitors WDK
 - Monitor class function drivers WDK
@@ -72,7 +71,7 @@ User-mode applications use WMI to invoke the services of the monitor class funct
 
 A monitor stores its identification and capability information in an Extended Display Identification Data (EDID) structure, a format that lets the display supply the host with information about its identity and capabilities independent of the communications protocol used between the monitor and host. A request, from a user-mode application, to read a monitor's EDID is processed by the function driver (Monitor.sys) in that monitor's device stack. When the monitor function driver receives a request to retrieve the monitor's EDID, it sends a request to the display port/miniport driver pair that is represented by the physical device object (PDO) at the bottom of the monitor's device stack. The display port/miniport driver pair uses the Display Data Channel (DDC) protocol to read the monitor's EDID over the I²C bus, which is a simple two-wire bus built into all standard monitor cables.
 
-The EDID can be obtained using the [ACPI_METHOD_OUTPUT_DDC](https://docs.microsoft.com/windows-hardware/drivers/bringup/other-acpi-namespace-objects) method whose alias is defined in [Dispmprt.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/). This method is required for integrated LCDs that do not have another standard mechanism for returning EDID data.
+The EDID can be obtained using the [ACPI_METHOD_OUTPUT_DDC](../bringup/other-acpi-namespace-objects.md) method whose alias is defined in [Dispmprt.h](/windows-hardware/drivers/ddi/dispmprt/). This method is required for integrated LCDs that do not have another standard mechanism for returning EDID data.
 
 For more information about communication between display adapters and monitors, see the following topic:
 
@@ -89,10 +88,4 @@ You can download these standards from [vesa.org](https://vesa.org/vesa-standards
 For details about the I²C bus, see the [I²C Bus Specification](https://www.i2c-bus.org/specification/) published by Philips Semiconductors.
 
  
-
- 
-
-
-
-
 

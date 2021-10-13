@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_IRIS
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_IRIS property to get or set a camera's aperture setting. This property is optional.
-ms.assetid: 000fc146-f6bb-490b-93b6-ebf5ad83b92f
 keywords: ["KSPROPERTY_CAMERACONTROL_IRIS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ User-mode clients use the KSPROPERTY\_CAMERACONTROL\_IRIS property to get or set
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
@@ -57,15 +56,13 @@ User-mode clients use the KSPROPERTY\_CAMERACONTROL\_IRIS property to get or set
 
 The property value (operation data) is a LONG that specifies a camera's aperture setting. This value is expressed in units of fstop \* 10.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies a camera's aperture setting.
 
 Every video capture minidriver that supports this property must define its own range and default value for this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,16 +80,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_CAMERACONTROL\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_CAMERACONTROL\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
 

@@ -1,7 +1,6 @@
 ---
 title: pct (Step to Next Call or Return)
 description: The pct command executes the program until it reaches a call instruction or a return instruction.
-ms.assetid: ff4b5708-b9d0-4809-9fe4-9a22d4cacbc0
 keywords: ["pct (Step to Next Call or Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -76,8 +75,7 @@ Specifies the number of **call** or **return** instructions that must be encount
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **pct** command causes the target to begin executing. This execution continues until a call or **return** instruction is reached or a breakpoint is encountered.
 

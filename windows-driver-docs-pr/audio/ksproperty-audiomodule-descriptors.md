@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS
 description: KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS is used to retrieves the static data descriptor for each audio module on the endpoint wave filter.
-ms.assetid: EAD613AA-005B-4751-B60E-212853CA40B4
 keywords: ["KSPROPERTY_AUDIOMODULE_DESCRIPTORS Audio Devices"]
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ ms.localizationpriority: medium
 
  
 
-The property value is a structure, followed by zero (0) or more [**KSAUDIOMODULE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) structures.
+The property value is a structure, followed by zero (0) or more [**KSAUDIOMODULE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) structures.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -59,10 +58,9 @@ The property value is a structure, followed by zero (0) or more [**KSAUDIOMODULE
 
 If the driver support this property but it doesn’t have any audio modules, it returns an ksmultiple\_item with zero element count.
 
-For more information about audio modules, see [Implementing Audio Module Discovery](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication).
+For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -88,16 +86,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSAUDIOMODULE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor)
+[**KSAUDIOMODULE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor)
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
  
-
- 
-
-
-
-
-
 

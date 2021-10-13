@@ -1,7 +1,6 @@
 ---
 title: Debugging DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x20002 - 0x20022
 description: When you have the DDI compliance checking option selected, and Driver Verifier detects that the driver violates one of the DDI compliance rules, Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION (with Parameter 1 equal to the identifier of the specific compliance rule).
-ms.assetid: 9817AC4B-2BE8-44AC-8C9B-DED5EF0A7DD8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Debugging DDI Compliance bugs - DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4): 0x20002 - 0x20022
 
 
-When you have the [DDI compliance checking](ddi-compliance-checking.md) option selected, and Driver Verifier detects that the driver violates one of the DDI compliance rules, [Driver Verifier](driver-verifier.md) generates [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (with Parameter 1 equal to the identifier of the specific compliance rule).
+When you have the [DDI compliance checking](ddi-compliance-checking.md) option selected, and Driver Verifier detects that the driver violates one of the DDI compliance rules, [Driver Verifier](driver-verifier.md) generates [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (with Parameter 1 equal to the identifier of the specific compliance rule).
 
 The DDI Compliance rules ensure that a driver correctly interacts with the Windows operating system kernel. For example, the rules verify that your driver makes function calls at the required IRQL for the function, or that the driver correctly acquires and releases spin locks. This section describes some example strategies for debugging these violations.
 
@@ -23,7 +22,7 @@ The DDI Compliance rules ensure that a driver correctly interacts with the Windo
 
 ### Use !analyze to display information about the bug check
 
-As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) command.
+As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debugger/-analyze.md) command.
 
 ```
 *******************************************************************************
@@ -54,15 +53,15 @@ DV_MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=216021
 DV_RULE_INFO: 0x20004
 ```
 
-Whenever [Driver Verifier](driver-verifier.md) catches a [DDI compliance checking](ddi-compliance-checking.md) violation, information about the violation will be provided in the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) output.
+Whenever [Driver Verifier](driver-verifier.md) catches a [DDI compliance checking](ddi-compliance-checking.md) violation, information about the violation will be provided in the [**!analyze**](../debugger/-analyze.md) output.
 
-In this example, [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) has a parameter 1 (Arg1) value of 0x20004, which indicates that the driver has violated the [**IrqlExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexallocatepool) compliance rule.
+In this example, [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) has a parameter 1 (Arg1) value of 0x20004, which indicates that the driver has violated the [**IrqlExAllocatePool**](./wdm-irqlexallocatepool.md) compliance rule.
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) output includes the following information:
+The [**!analyze**](../debugger/-analyze.md) output includes the following information:
 
-**DV\_VIOLATED\_CONDITION:** This field provides a description of what caused the rule violation. In this example, the condition violated was that a driver attempted to allocate memory at a very high IRQL level, or attempted to allocated paged pool memory at DISPATCH\_LEVEL. For example, this may have been a driver that was attempting to call [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority) in an Interrupt Service Routine (ISR), or a driver that attempted to allocate paged pool memory while holding a spin lock.
+**DV\_VIOLATED\_CONDITION:** This field provides a description of what caused the rule violation. In this example, the condition violated was that a driver attempted to allocate memory at a very high IRQL level, or attempted to allocated paged pool memory at DISPATCH\_LEVEL. For example, this may have been a driver that was attempting to call [**ExAllocatePoolWithTagPriority**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) in an Interrupt Service Routine (ISR), or a driver that attempted to allocate paged pool memory while holding a spin lock.
 
-**DV\_MSDN\_LINK:** In WinDBG, this is a live link that causes the debugger to open the MSDN page showing more information about the [**IrqlExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexallocatepool) rule.
+**DV\_MSDN\_LINK:** In WinDBG, this is a live link that causes the debugger to open the MSDN page showing more information about the [**IrqlExAllocatePool**](./wdm-irqlexallocatepool.md) rule.
 
 **DV\_RULE\_INFO:** In WinDBG, this is a live link that will show information about this rule from the help available on the debugger.
 
@@ -135,9 +134,9 @@ FAULTING_SOURCE_LINE_NUMBER:  206
 
 Fixing these bug checks that have Arg1 values in the range 0x00020000 to 0x00020022, generally consists of verifying the driver meets the API and DDI usage conditions described in the corresponding documentation.
 
-In the example we've used here (0x20004), a memory allocation of any sort in the ISR is going to violate the IRQL rules set for the [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority) routine.
+In the example we've used here (0x20004), a memory allocation of any sort in the ISR is going to violate the IRQL rules set for the [**ExAllocatePoolWithTagPriority**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) routine.
 
-In general, you should review the documentation about the routine for information about IRQL and proper usage. Review the specific [DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) that test the function. In this case, the rule is [**IrqlExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexallocatepool).
+In general, you should review the documentation about the routine for information about IRQL and proper usage. Review the specific [DDI Compliance Rules](./static-driver-verifier-rules.md) that test the function. In this case, the rule is [**IrqlExAllocatePool**](./wdm-irqlexallocatepool.md).
 
 Use [Static Driver Verifier](static-driver-verifier.md) to analyze your driver source code, using the same rule(s). Static Driver Verifier is a tool that scans Windows driver source code and reports on possible issues by simulating the exercising of various code paths. Static Driver Verifier is an excellent development-time utility to help identify these kinds of issues.
 
@@ -146,18 +145,9 @@ Use [Static Driver Verifier](static-driver-verifier.md) to analyze your driver s
 
 [DDI compliance checking](ddi-compliance-checking.md)
 
-[DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[DDI Compliance Rules](./static-driver-verifier-rules.md)
 
 [Static Driver Verifier](static-driver-verifier.md)
 
-[**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation)
-
- 
-
- 
-
-
-
-
-
+[**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)
 

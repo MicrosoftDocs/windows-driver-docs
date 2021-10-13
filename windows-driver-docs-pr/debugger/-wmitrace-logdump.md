@@ -1,7 +1,6 @@
 ---
 title: wmitrace.logdump
 description: The wmitrace.logdump extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers.
-ms.assetid: 073338c6-68c4-4ae0-b69e-392256277236
 keywords: ["wmitrace.logdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,8 +46,7 @@ This extension is available in Windows 2000 and later versions of Windows. If yo
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about Tracelog, see "Tracelog" in the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 During Windows software trace preprocessor (WPP) software tracing, trace session buffers are used to store trace messages until they are flushed to a log file or to a trace consumer for a real-time display. The **!wmitrace.logdump** extension displays the contents of the buffers that are in physical memory. The display appears in the Debugger Command window.
 
@@ -68,13 +66,7 @@ This extension is only useful during WPP software tracing, and earlier (legacy) 
 
 This extension is similar to the [**!wmitrace.eventlogdump**](-wmitrace-eventlogdump.md) extension, except that the output of **!wmitrace.logdump** is formatted in WPP style, and the output of **!wmitrace.eventlogdump** is formatted in event log style. You should choose the extension whose format is appropriate for the data you want to display.
 
-For information about how to view the UMDF trace log, see [Using WPP Software Tracing in UMDF-based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-umdf-drivers#viewing-the-umdf-trace-log).
+For information about how to view the UMDF trace log, see [Using WPP Software Tracing in UMDF-based Drivers](../wdf/using-wpp-software-tracing-in-umdf-drivers.md#viewing-the-umdf-trace-log).
 
  
-
- 
-
-
-
-
 

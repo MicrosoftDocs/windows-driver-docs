@@ -1,7 +1,6 @@
 ---
 title: Starting and Pausing a Filter Module
 description: Starting and Pausing a Filter Module
-ms.assetid: 7c12846a-0934-4397-b236-487a812a01f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

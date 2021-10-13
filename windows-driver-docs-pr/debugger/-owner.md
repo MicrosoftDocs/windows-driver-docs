@@ -1,7 +1,6 @@
 ---
-title: owner
+title: owner (WinDbg)
 description: The owner extension displays the owner of a module or function.
-ms.assetid: f881bd86-89cf-49fd-9bca-3ecc96123be8
 keywords: ["owner Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,8 +51,7 @@ Specifies the symbol within *Module* whose owner is desired. An asterisk (\*) at
 
  
 
-Remarks
--------
+## Remarks
 
 If no parameters are used and a fault has occurred, **!owner** will display the name of the owner of the faulting module or function.
 

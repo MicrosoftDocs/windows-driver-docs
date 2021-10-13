@@ -1,7 +1,6 @@
 ---
-title: WIA\_DPC\_CONTRAST
-description: The WIA\_DPC\_CONTRAST property indicates the perceived contrast of a captured image.
-ms.assetid: 78477714-0cf3-464c-9d32-7aba0b7def16
+title: WIA_DPC_CONTRAST
+description: The WIA_DPC_CONTRAST property indicates the perceived contrast of a captured image.
 keywords: ["WIA_DPC_CONTRAST Imaging Devices"]
 topic_type:
 - apiref
@@ -11,56 +10,28 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/29/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DPC\_CONTRAST
+# WIA_DPC_CONTRAST
 
+The WIA_DPC_CONTRAST property indicates the perceived contrast of a captured image.
 
-The WIA\_DPC\_CONTRAST property indicates the perceived contrast of a captured image.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_contrast_si"></span><span id="DDK_WIA_DPC_CONTRAST_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
+Valid Values: WIA_PROP_LIST or WIA_PROP_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
-The WIA\_DPC\_CONTRAST property can contain either a list of values or a range of values.
+The WIA_DPC_CONTRAST property can contain either a list of values or a range of values.
 
-The minimum supported value for WIA\_DPC\_CONTRAST represents the least amount of contrast, and the maximum value represents the most contrast. Typically, a value in the middle of the range represents normal, or default, contrast.
+The minimum supported value for WIA_DPC_CONTRAST represents the least amount of contrast, and the maximum value represents the most contrast. Typically, a value in the middle of the range represents normal, or default, contrast.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
 
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

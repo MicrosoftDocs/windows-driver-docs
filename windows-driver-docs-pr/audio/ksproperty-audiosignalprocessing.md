@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration
 description: The KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration defines a constant that is used by audio drivers in connection with audio processing modes on pins.
-ms.assetid: E0552FFF-E10F-496A-9D67-0AE06AF7B877
 keywords: ["KSPROPERTY_AUDIOSIGNALPROCESSING enumeration Audio Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration defines a constant that is used by audio drivers in connection with audio processing modes on pins.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _KSPROPERTY_AUDIOSIGNALPROCESSING { 
@@ -29,14 +27,12 @@ typedef enum _KSPROPERTY_AUDIOSIGNALPROCESSING {
 } KSPROPERTY_AUDIOSIGNALPROCESSING;
 ```
 
-Constants
----------
+## Constants
 
 <span id="KSPROPERTY_AUDIOSIGNALPROCESSING_MODES"></span><span id="ksproperty_audiosignalprocessing_modes"></span>**KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES**  
 Specifies the ID for the [**KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES**](ksproperty-audiosignalprocessing-modes.md) property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

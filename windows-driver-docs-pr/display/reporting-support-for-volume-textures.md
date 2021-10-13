@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for Volume Textures
 description: Reporting Support for Volume Textures
-ms.assetid: da0c1c88-504e-4293-96ca-65cac2e0fe97
 keywords:
 - textures WDK DirectX 8.0
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures
@@ -26,13 +25,7 @@ A driver that supports volume textures is also required to specify the minimum a
 
 A driver notifies the runtime of the volume texture filtering and texture addressing modes supported by the hardware by setting the **VolumeTextureFilterCaps** and **VolumeTextureAddressCaps** to the appropriate combinations of flags.
 
-Finally, the driver notifies the runtime about what surface formats can be used with volume textures by setting the D3DFORMAT\_OP\_VOLUMETEXTURE in the **dwOperations** field of the surface format's [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat).
+Finally, the driver notifies the runtime about what surface formats can be used with volume textures by setting the D3DFORMAT\_OP\_VOLUMETEXTURE in the **dwOperations** field of the surface format's [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat).
 
  
-
- 
-
-
-
-
 

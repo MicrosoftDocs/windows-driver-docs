@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_DOT11_RESET
 description: OID_WDI_TASK_DOT11_RESET requests that the IHV component resets the MAC and PHY state on a specified port.
-ms.assetid: 5fcac1da-0776-47a5-87b7-8e831f968f7c
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DOT11_RESET Network Drivers Starting with Windows Vista
@@ -38,8 +37,8 @@ If the port being reset was operating as a STA, AP, or a Wi-Fi Direct Client or 
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                                       |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------------|
-| [**WDI\_TLV\_DOT11\_RESET\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-dot11-reset-parameters) |                                |          | Parameters for the dot11 reset.                   |
-| [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-configured-mac-address) |                                | X        | The MAC address that should be used for the port. |
+| [**WDI\_TLV\_DOT11\_RESET\_PARAMETERS**](./wdi-tlv-dot11-reset-parameters.md) |                                |          | Parameters for the dot11 reset.                   |
+| [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](./wdi-tlv-configured-mac-address.md) |                                | X        | The MAC address that should be used for the port. |
 
  
 
@@ -48,8 +47,7 @@ If the port being reset was operating as a STA, AP, or a Wi-Fi Direct Client or 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_DOT11\_RESET\_COMPLETE](ndis-status-wdi-indication-dot11-reset-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,9 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

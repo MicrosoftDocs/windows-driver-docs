@@ -1,7 +1,6 @@
 ---
 title: ExtExtension
 description: The ExtExtension class is the base class for the C++ class that represents the EngExtCpp extension library.
-ms.assetid: 9c6c4633-df49-4f49-8116-d680bb20c3f5
 keywords: ["ExtExtension Windows Debugging"]
 topic_type:
 - apiref
@@ -20,17 +19,17 @@ The **ExtExtension** class is the base class for the C++ class that represents t
 
 The **ExtExtension** class includes the following methods, which can be used by the subclass:
 
-[**Initialize**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85))
+[**Initialize**](/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85))
 
-[**Uninitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff558961(v=vs.85))
+[**Uninitialize**](/previous-versions/windows/hardware/previsioning-framework/ff558961(v=vs.85))
 
-[**OnSessionActive**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff552312(v=vs.85))
+[**OnSessionActive**](/previous-versions/windows/hardware/previsioning-framework/ff552312(v=vs.85))
 
-[**OnSessionInactive**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff552318(v=vs.85))
+[**OnSessionInactive**](/previous-versions/windows/hardware/previsioning-framework/ff552318(v=vs.85))
 
-[**OnSessionAccessible**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff552310(v=vs.85))
+[**OnSessionAccessible**](/previous-versions/windows/hardware/previsioning-framework/ff552310(v=vs.85))
 
-[**OnSessionInaccessible**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff552315(v=vs.85))
+[**OnSessionInaccessible**](/previous-versions/windows/hardware/previsioning-framework/ff552315(v=vs.85))
 
 **IsUserMode**
 
@@ -60,35 +59,35 @@ The **ExtExtension** class includes the following methods, which can be used by 
 
 **RequireKernelMode**
 
-[**GetNumUnnamedArgs**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff548001(v=vs.85))
+[**GetNumUnnamedArgs**](/previous-versions/windows/hardware/previsioning-framework/ff548001(v=vs.85))
 
-[**GetUnnamedArgStr**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff549464(v=vs.85))
+[**GetUnnamedArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff549464(v=vs.85))
 
-[**GetUnnamedArgU64**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff549465(v=vs.85))
+[**GetUnnamedArgU64**](/previous-versions/windows/hardware/previsioning-framework/ff549465(v=vs.85))
 
-[**HasUnnamedArg**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff549733(v=vs.85))
+[**HasUnnamedArg**](/previous-versions/windows/hardware/previsioning-framework/ff549733(v=vs.85))
 
-[**GetArgStr**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff545586(v=vs.85))
+[**GetArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff545586(v=vs.85))
 
-[**GetArgU64**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff545596(v=vs.85))
+[**GetArgU64**](/previous-versions/windows/hardware/previsioning-framework/ff545596(v=vs.85))
 
-[**HasArg**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff549721(v=vs.85))
+[**HasArg**](/previous-versions/windows/hardware/previsioning-framework/ff549721(v=vs.85))
 
-[**HasCharArg**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff549727(v=vs.85))
+[**HasCharArg**](/previous-versions/windows/hardware/previsioning-framework/ff549727(v=vs.85))
 
-[**SetUnnamedArg**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556876(v=vs.85))
+[**SetUnnamedArg**](/previous-versions/windows/hardware/previsioning-framework/ff556876(v=vs.85))
 
-[**SetUnnamedArgStr**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556878(v=vs.85))
+[**SetUnnamedArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff556878(v=vs.85))
 
-[**SetUnnamedArgU64**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556879(v=vs.85))
+[**SetUnnamedArgU64**](/previous-versions/windows/hardware/previsioning-framework/ff556879(v=vs.85))
 
-[**SetArg**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556614(v=vs.85))
+[**SetArg**](/previous-versions/windows/hardware/previsioning-framework/ff556614(v=vs.85))
 
-[**SetArgStr**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556618(v=vs.85))
+[**SetArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff556618(v=vs.85))
 
-[**SetArgU64**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556622(v=vs.85))
+[**SetArgU64**](/previous-versions/windows/hardware/previsioning-framework/ff556622(v=vs.85))
 
-[**GetRawArgStr**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff548226(v=vs.85))
+[**GetRawArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff548226(v=vs.85))
 
 **GetRawArgCopy**
 
@@ -244,102 +243,102 @@ public:
 
 
 <span id="m_ExtMajorVersion"></span><span id="m_extmajorversion"></span><span id="M_EXTMAJORVERSION"></span>**m\_ExtMajorVersion**  
-The major version number of the extension library. This should be set by the [**Initialize**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method. If it is not set, it defaults to **1**.
+The major version number of the extension library. This should be set by the [**Initialize**](/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method. If it is not set, it defaults to **1**.
 
 <span id="m_ExtMinorVersion"></span><span id="m_extminorversion"></span><span id="M_EXTMINORVERSION"></span>**m\_ExtMinorVersion**  
-The minor version number of the extension library. This should be set by the [**Initialize**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method. If it is not set, it defaults to **0** (zero).
+The minor version number of the extension library. This should be set by the [**Initialize**](/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method. If it is not set, it defaults to **0** (zero).
 
 <span id="m_ExtInitFlags"></span><span id="m_extinitflags"></span><span id="M_EXTINITFLAGS"></span>**m\_ExtInitFlags**  
-The DbgEng extension initialization flags for [*DebugExtensionInitialize*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nc-dbgeng-pdebug_extension_initialize).
+The DbgEng extension initialization flags for [*DebugExtensionInitialize*](/windows-hardware/drivers/ddi/dbgeng/nc-dbgeng-pdebug_extension_initialize).
 
 <span id="m_KnownStructs"></span><span id="m_knownstructs"></span><span id="M_KNOWNSTRUCTS"></span>**m\_KnownStructs**  
-An array of [**ExtKnownStruct**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/ns-engextcpp-extknownstruct) structures that the extension library is capable of formatting for output. This member should be set by the [**Initialize**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method and should not be changed once this method returns.
+An array of [**ExtKnownStruct**](/windows-hardware/drivers/ddi/engextcpp/ns-engextcpp-extknownstruct) structures that the extension library is capable of formatting for output. This member should be set by the [**Initialize**](/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method and should not be changed once this method returns.
 
 If **m\_KnownStructs** is not **NULL**, the **TypeName** member of the last **ExtKnownStruct** structure in the array must be **NULL**.
 
 When formatting a target's structure for output, if the name of the structure's type matches the **TypeName** member of one of the **ExtKnownStruct** structures in this array, the callback function specified in the **Method** member is called to perform the formatting.
 
 <span id="m_ProvidedValues"></span><span id="m_providedvalues"></span><span id="M_PROVIDEDVALUES"></span>**m\_ProvidedValues**  
-An array of **ExtProvidedValue** structures listing the pseudo registers that the extension library can provide values for. This member should be set by the [**Initialize**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method and should not be changed once this method returns.
+An array of **ExtProvidedValue** structures listing the pseudo registers that the extension library can provide values for. This member should be set by the [**Initialize**](/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method and should not be changed once this method returns.
 
 If **m\_ProvidedValues** is not **NULL**, the **ValueName** member of the last **ExtProvidedValue** structure in the array must be **NULL**.
 
 When evaluating a pseudo register, if the name of the pseudo register matches the **ValueName** member of one of the **ExtProvidedValue** structures in this array, the callback function specified in the **Method** member is called to evaluate the pseudo register.
 
 <span id="m_Advanced"></span><span id="m_advanced"></span><span id="M_ADVANCED"></span>**m\_Advanced**  
-The [**IDebugAdvanced**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugadvanced) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
+The [**IDebugAdvanced**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
 
 <span id="m_Client"></span><span id="m_client"></span><span id="M_CLIENT"></span>**m\_Client**  
-The [**IDebugClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
+The [**IDebugClient**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
 
 <span id="m_Control"></span><span id="m_control"></span><span id="M_CONTROL"></span>**m\_Control**  
-The [**IDebugControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugcontrol) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
+The [**IDebugControl**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
 
 <span id="m_Data"></span><span id="m_data"></span><span id="M_DATA"></span>**m\_Data**  
-The [**IDebugDataSpaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugdataspaces) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
+The [**IDebugDataSpaces**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
 
 <span id="m_Registers"></span><span id="m_registers"></span><span id="M_REGISTERS"></span>**m\_Registers**  
-The [**IDebugRegisters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugregisters) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
+The [**IDebugRegisters**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
 
 <span id="m_Symbols"></span><span id="m_symbols"></span><span id="M_SYMBOLS"></span>**m\_Symbols**  
-The [**IDebugSymbols**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugsymbols) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
+The [**IDebugSymbols**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
 
 <span id="m_System"></span><span id="m_system"></span><span id="M_SYSTEM"></span>**m\_System**  
-The [**IDebugSystemObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugsystemobjects) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
+The [**IDebugSystemObjects**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**.
 
 <span id="m_Advanced2"></span><span id="m_advanced2"></span><span id="M_ADVANCED2"></span>**m\_Advanced2**  
-The [**IDebugAdvanced2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugadvanced) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugAdvanced2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Advanced3"></span><span id="m_advanced3"></span><span id="M_ADVANCED3"></span>**m\_Advanced3**  
-The [**IDebugAdvanced3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugadvanced) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugAdvanced3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Client2"></span><span id="m_client2"></span><span id="M_CLIENT2"></span>**m\_Client2**  
-The [**IDebugClient2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugClient2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Client3"></span><span id="m_client3"></span><span id="M_CLIENT3"></span>**m\_Client3**  
-The [**IDebugClient3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugClient3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Client4"></span><span id="m_client4"></span><span id="M_CLIENT4"></span>**m\_Client4**  
-The [**IDebugClient4**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugClient4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Client5"></span><span id="m_client5"></span><span id="M_CLIENT5"></span>**m\_Client5**  
-The [**IDebugClient5**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugClient5**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Control2"></span><span id="m_control2"></span><span id="M_CONTROL2"></span>**m\_Control2**  
-The [**IDebugControl2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugcontrol) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugControl2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Control3"></span><span id="m_control3"></span><span id="M_CONTROL3"></span>**m\_Control3**  
-The [**IDebugControl3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugcontrol) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugControl3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Control4"></span><span id="m_control4"></span><span id="M_CONTROL4"></span>**m\_Control4**  
-The [**IDebugControl4**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugcontrol) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugControl4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Data2"></span><span id="m_data2"></span><span id="M_DATA2"></span>**m\_Data2**  
-The [**IDebugDataSpaces2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugdataspaces) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugDataSpaces2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Data3"></span><span id="m_data3"></span><span id="M_DATA3"></span>**m\_Data3**  
-The [**IDebugDataSpaces3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugdataspaces) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugDataSpaces3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Data4"></span><span id="m_data4"></span><span id="M_DATA4"></span>**m\_Data4**  
-The [IDebugDataSpaces4](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugdataspaces) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [IDebugDataSpaces4](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Registers2"></span><span id="m_registers2"></span><span id="M_REGISTERS2"></span>**m\_Registers2**  
-The [**IDebugRegisters2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugregisters) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugRegisters2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Symbols2"></span><span id="m_symbols2"></span><span id="M_SYMBOLS2"></span>**m\_Symbols2**  
-The [**IDebugSymbols2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugsymbols) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugSymbols2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_Symbols3"></span><span id="m_symbols3"></span><span id="M_SYMBOLS3"></span>**m\_Symbols3**  
-The [**IDebugSymbols3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugsymbols) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugSymbols3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_System2"></span><span id="m_system2"></span><span id="M_SYSTEM2"></span>**m\_System2**  
-The [**IDebugSystemObjects2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugsystemobjects) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugSystemObjects2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_System3"></span><span id="m_system3"></span><span id="M_SYSTEM3"></span>**m\_System3**  
-The [**IDebugSystemObjects3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugsystemobjects) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugSystemObjects3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_System4"></span><span id="m_system4"></span><span id="M_SYSTEM4"></span>**m\_System4**  
-The [**IDebugSystemObjects4**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugsystemobjects) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
+The [**IDebugSystemObjects4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects) interface pointer for the client object that can be used by the extension library. It is valid during the invocation of externally-called extension methods-for example, the execution of an extension command, a call to [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) and **ExtProvideValueMethod**. This interface might not be available in all versions of the debugger engine.
 
 <span id="m_PtrSize"></span><span id="m_ptrsize"></span><span id="M_PTRSIZE"></span>**m\_PtrSize**  
 The size of a pointer on the current target. If the target uses 32-bit pointers, **m\_PtrSize** is 4. If the target uses 64-bit pointers, **m\_PtrSize** is 8.
@@ -349,12 +348,3 @@ A character buffer used to return strings from the extension library to the engi
 
 <span id="m_AppendBufferChars"></span><span id="m_appendbufferchars"></span><span id="M_APPENDBUFFERCHARS"></span>**m\_AppendBufferChars**  
 The size, in characters, of the buffer **m\_AppendBuffer**.
-
-
-
-
-
-
-
-
-

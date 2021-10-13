@@ -1,7 +1,6 @@
 ---
 title: Deleting a System-Allocated Timer Object
 description: Starting with Windows 8.1, the ExDeleteTimer routine deletes a timer object that was created by the ExAllocateTimer routine.
-ms.assetid: 7D119448-3890-4E8F-BC79-7FEB3213B693
 keywords: ["ExXxxTimer routines", "ExAllocateTimer", "ExDeleteTimer", "ExSetTimer", "ExCancelTimer", "ExTimerCallback", "ExTimerDeleteCallback", "EX_TIMER"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -10,9 +9,9 @@ ms.localizationpriority: medium
 # Deleting a System-Allocated Timer Object
 
 
-Starting with Windows 8.1, the [**ExDeleteTimer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exdeletetimer) routine deletes a timer object that was created by the [**ExAllocateTimer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatetimer) routine. This timer object is a system-allocated [**EX\_TIMER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure whose members are opaque to drivers. Before a timer object is deleted, **ExDeleteTimer** disables further timer operations on the object, and cancels or completes any pending operation on the object that might be in progress.
+Starting with Windows 8.1, the [**ExDeleteTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletetimer) routine deletes a timer object that was created by the [**ExAllocateTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatetimer) routine. This timer object is a system-allocated [**EX\_TIMER**](./eprocess.md) structure whose members are opaque to drivers. Before a timer object is deleted, **ExDeleteTimer** disables further timer operations on the object, and cancels or completes any pending operation on the object that might be in progress.
 
-After a driver calls **ExDeleteTimer**, this routine takes several steps to ensure that it can safely delete the timer object. First, **ExDeleteTimer** marks the timer object as disabled to prevent the driver from starting a new timer operation that uses the object. After the timer object is disabled, a call to the [**ExSetTimer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exsettimer) or [**ExCancelTimer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-excanceltimer) routine immediately returns **FALSE** and performs no operation. Also, a second call to **ExDeleteTimer** returns **FALSE** and performs no operation.
+After a driver calls **ExDeleteTimer**, this routine takes several steps to ensure that it can safely delete the timer object. First, **ExDeleteTimer** marks the timer object as disabled to prevent the driver from starting a new timer operation that uses the object. After the timer object is disabled, a call to the [**ExSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer) or [**ExCancelTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excanceltimer) routine immediately returns **FALSE** and performs no operation. Also, a second call to **ExDeleteTimer** returns **FALSE** and performs no operation.
 
 Next, **ExDeleteTimer** checks whether a timer is still pending from a previous call to **ExDeleteTimer**. Disabling a timer object does not cancel a timer that was set before the object was disabled. In either of the following two cases, a timer that was previously set might expire after the timer object is disabled:
 
@@ -21,7 +20,7 @@ Next, **ExDeleteTimer** checks whether a timer is still pending from a previous 
 
 A periodic timer can never expire more than once after the timer object is disabled.
 
-If your driver implements an [*ExTimerCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-ext_callback) callback routine, the *Timer* parameter to this routine is guaranteed to always be a valid pointer to the timer object (an **EX\_TIMER** structure), even if the timer expires after the timer object is disabled.
+If your driver implements an [*ExTimerCallback*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ext_callback) callback routine, the *Timer* parameter to this routine is guaranteed to always be a valid pointer to the timer object (an **EX\_TIMER** structure), even if the timer expires after the timer object is disabled.
 
 If no timer is pending, **ExDeleteTimer** deletes the timer object and returns without waiting.
 
@@ -33,7 +32,7 @@ If *Cancel* is **TRUE**, **ExDeleteTimer** tries to cancel a pending timer befor
 
 If *Cancel* is **TRUE** and *Wait* is **FALSE**, **ExDeleteTimer** never blocks the calling thread. If the timer object cannot be immediately deleted, **ExDeleteTimer** marks the timer object to indicate that it is to be deleted after the pending timer finishes expiring, and returns immediately without waiting either for the timer to expire or for the object to be deleted.
 
-If *Cancel* and *Wait* are both **TRUE**, **ExDeleteTimer** blocks the calling thread if the timer object cannot be immediately deleted. **ExDeleteTimer** waits, if necessary, for the timer to finish expiring and for any callback to a driver-implemented *ExTimerCallback* routine to finish. Next, **ExDeleteTimer** deletes the timer object and calls the [*ExTimerDeleteCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-ext_delete_callback) routine, if the driver implements this routine. Finally, **ExDeleteTimer** returns.
+If *Cancel* and *Wait* are both **TRUE**, **ExDeleteTimer** blocks the calling thread if the timer object cannot be immediately deleted. **ExDeleteTimer** waits, if necessary, for the timer to finish expiring and for any callback to a driver-implemented *ExTimerCallback* routine to finish. Next, **ExDeleteTimer** deletes the timer object and calls the [*ExTimerDeleteCallback*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ext_delete_callback) routine, if the driver implements this routine. Finally, **ExDeleteTimer** returns.
 
 A driver can call **ExDeleteTimer** from the driver's *ExTimerCallback* routine, which runs at IRQL = DISPATCH\_LEVEL, but the driver must set the *Wait* parameter in this call to **FALSE**.
 
@@ -44,9 +43,4 @@ As an option, a driver can implement an *ExTimerDeleteCallback* callback routine
 For more information, see [Ex*Xxx*Timer Routines and EX\_TIMER Objects](exxxxtimer-routines-and-ex-timer-objects.md).
 
  
-
- 
-
-
-
 

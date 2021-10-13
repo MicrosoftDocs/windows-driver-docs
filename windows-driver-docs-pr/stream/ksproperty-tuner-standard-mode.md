@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_STANDARD\_MODE
 description: The KSPROPERTY\_TUNER\_STANDARD\_MODE property retrieves a BOOL value that indicates whether the driver can set the tuning device to automatically detect the tuner standard from the signal itself. This property can be implemented optionally.
-ms.assetid: 9c374778-20fd-427a-864f-f57ec14add07
 keywords: ["KSPROPERTY_TUNER_STANDARD_MODE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The KSPROPERTY\_TUNER\_STANDARD\_MODE property retrieves a BOOL value that indic
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_standard_mode_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_STANDARD_MODE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_standard_mode_s)"><strong>KSPROPERTY_TUNER_STANDARD_MODE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_standard_mode_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_STANDARD_MODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_standard_mode_s)"><strong>KSPROPERTY_TUNER_STANDARD_MODE_S</strong></a></p></td>
 <td><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -54,13 +53,11 @@ The KSPROPERTY\_TUNER\_STANDARD\_MODE property retrieves a BOOL value that indic
 
 The property value (operation data) is a BOOL that indicates whether the tuning device can automatically detect the tuner standard from the signal itself.
 
-Remarks
--------
+## Remarks
 
-For more information about how the KSPROPERTY\_TUNER\_STANDARD\_MODE property is used, see [Detecting Tuner Standards](https://docs.microsoft.com/windows-hardware/drivers/stream/detecting-tuner-standards).
+For more information about how the KSPROPERTY\_TUNER\_STANDARD\_MODE property is used, see [Detecting Tuner Standards](./detecting-tuner-standards.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -84,14 +81,5 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_STANDARD**](ksproperty-tuner-standard.md)
 
-[**KSPROPERTY\_TUNER\_STANDARD\_MODE\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_standard_mode_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_TUNER\_STANDARD\_MODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_standard_mode_s)
 

@@ -1,7 +1,6 @@
 ---
-title: vad
+title: vad (WinDbg)
 description: The vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
-ms.assetid: 96bd5a38-016d-4ce9-b128-cc730577be45
 keywords: ["virtual address descriptor (VAD)", "VAD (virtual address descriptor)", "addresses, virtual address descriptor (VAD)", "vad Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -70,8 +69,7 @@ Address in the virtual address range of a user-mode module.
 
 For information about virtual address descriptors, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The address of the root of the VAD for any process can be found by using the [**!process**](-process.md) command.
 

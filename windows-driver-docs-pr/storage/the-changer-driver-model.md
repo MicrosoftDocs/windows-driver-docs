@@ -1,7 +1,6 @@
 ---
 title: The Changer Driver Model
 description: The Changer Driver Model
-ms.assetid: 87a70ecf-e518-4c22-945b-9056b59fed5a
 keywords:
 - changer drivers WDK storage , architecture
 - storage changer drivers WDK , architecture
@@ -25,11 +24,11 @@ ms.localizationpriority: medium
 
 The following figure shows the relationship between a changer driver, user-mode applications and services, mass storage and port drivers, and a changer device.
 
-![diagram illustrating relationships between a changer driver, user-mode applications and services, mass storage and port drivers, and a changer device](images/changer.png)
+![diagram illustrating relationships between a changer driver, user-mode applications and services, mass storage and port drivers, and a changer device.](images/changer.png)
 
 Changer Driver Model
 
-As shown in this figure, transfers of user data are handled by the appropriate mass storage driver for changer's drives, using the same Microsoft Win32 requests as for a stand-alone drive. However, a mass storage driver must handle the [**IOCTL\_STORAGE\_GET\_MEDIA\_TYPES\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_get_media_types_ex) I/O request in order to control changer's drives.
+As shown in this figure, transfers of user data are handled by the appropriate mass storage driver for changer's drives, using the same Microsoft Win32 requests as for a stand-alone drive. However, a mass storage driver must handle the [**IOCTL\_STORAGE\_GET\_MEDIA\_TYPES\_EX**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_get_media_types_ex) I/O request in order to control changer's drives.
 
 User-mode applications access changer's elements through a user-mode service called the removable storage manager (RSM). RSM is the only client of a changer driver and it reserves the changer for exclusive use. RSM sends requests involving changer's elements (for example, to mount a piece of media in a drive) to the changer driver. User-mode applications cannot send requests directly to the changer driver. For details on RSM, see the Microsoft Windows SDK documentation.
 
@@ -57,12 +56,7 @@ A changer might also have either one or both of the following elements:
 
     Provides access to all media in the changer at one time. A changer's door can be a physical door that an operator opens, or a single magazine that holds all media.
 
-A changer miniclass driver reports the type and number of a changer's elements in a [**GET\_CHANGER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddchgr/ns-ntddchgr-_get_changer_parameters) structure when requested by the changer class driver. In particular, the miniclass driver must report IEports and doors according to these definitions, regardless of the elements' physical appearance, so that an application can issue appropriate requests to those elements.
+A changer miniclass driver reports the type and number of a changer's elements in a [**GET\_CHANGER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddchgr/ns-ntddchgr-_get_changer_parameters) structure when requested by the changer class driver. In particular, the miniclass driver must report IEports and doors according to these definitions, regardless of the elements' physical appearance, so that an application can issue appropriate requests to those elements.
 
  
-
- 
-
-
-
 

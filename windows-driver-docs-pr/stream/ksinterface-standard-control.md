@@ -1,7 +1,6 @@
 ---
 title: KSINTERFACE\_STANDARD\_CONTROL
 description: KSINTERFACE\_STANDARD\_CONTROL
-ms.assetid: 672b63bd-cda4-48c3-9605-0f54802611ce
 keywords: ["KSINTERFACE_STANDARD_CONTROL Streaming Media Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.localizationpriority: medium
 
 The KSINTERFACE\_STANDARD\_CONTROL interface is not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

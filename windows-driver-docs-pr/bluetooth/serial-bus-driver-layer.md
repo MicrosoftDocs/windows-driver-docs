@@ -1,7 +1,6 @@
 ---
 title: Serial Bus Driver Layer
 description: The serial bus driver is loaded based on a PDO created by ACPI, and can query and access the system resources, such as GPIO and I2C controllers to perform signaling control.
-ms.assetid: E6A3E1CF-C25B-429B-946D-B300BAF3CF9B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -119,14 +118,14 @@ Child PDO registers to receive a callback to enter and exit D0 in order to be no
 ## <span id="Arm_for_Wake"></span><span id="arm_for_wake"></span><span id="ARM_FOR_WAKE"></span>Arm for Wake
 
 
-Prior to entering idle, the serial bus driver will receive the callback [**EvtDeviceEnableWakeAtBus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfpdo/nc-wdfpdo-evt_wdf_device_enable_wake_at_bus) to arm for wake.
+Prior to entering idle, the serial bus driver will receive the callback [**EvtDeviceEnableWakeAtBus**](/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_enable_wake_at_bus) to arm for wake.
 
 The mechanism to arm for wake is vendor specific for SoC platforms and is thus outside the scope of this section. However, Windows expects that the bus driver will be prepared to receive a wake signal, and there will be a callback function (e.g. ISR) to process such a signal.
 
 ## <span id="Enter_Idle"></span><span id="enter_idle"></span><span id="ENTER_IDLE"></span>Enter Idle
 
 
-The Bluetooth core driver enables a time-based idle detection mechanism. Upon satisfying idle requirements, the core driver starts to initiate the stack to enter the idle state. It invokes [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp) to set the power to go into D2 along with a completion function. After the bus driver has completed the IRP, this completion function is invoked. It is at this time, the transition to D2 gets completed.
+The Bluetooth core driver enables a time-based idle detection mechanism. Upon satisfying idle requirements, the core driver starts to initiate the stack to enter the idle state. It invokes [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to set the power to go into D2 along with a completion function. After the bus driver has completed the IRP, this completion function is invoked. It is at this time, the transition to D2 gets completed.
 
 While transitioning into idle state, the Bluetooth core driver will cancel all pending read requests and restart them when resuming to active. An empty power managed queue is required in order for the serial bus driver itself to enter idle.
 
@@ -142,11 +141,11 @@ In this idle state, the multifunction controller has the option to throttle down
 
 While the Bluetooth function has been paired with one or more devices and is in the sleep state, its radio is periodically scanning for requests from its paired devices. When a paired device initiates a request and gets received by the Bluetooth radio, the process to resume to active state begins. Once the device stack has resumed to active (D0), the drivers can begin servicing this remote request.
 
-This remote request is processed by the wake-signal processing function in the bus driver as discussed in the last section. This wake-signal processing function should ensure that the PDO’s device state is indeed in D2 state and then invoke [**WdfDeviceIndicateWakeStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceindicatewakestatus) (PDO, success status) to notify KMDF to complete the W/W (Wait Wake) IRP. It is at this time when the completion function of this W/W IRP can be invoked and get processed by its initiator - the Bluetooth core driver and the power policy owner.
+This remote request is processed by the wake-signal processing function in the bus driver as discussed in the last section. This wake-signal processing function should ensure that the PDO’s device state is indeed in D2 state and then invoke [**WdfDeviceIndicateWakeStatus**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceindicatewakestatus) (PDO, success status) to notify KMDF to complete the W/W (Wait Wake) IRP. It is at this time when the completion function of this W/W IRP can be invoked and get processed by its initiator - the Bluetooth core driver and the power policy owner.
 
-The completion of the W/W IRP triggers the Bluetooth core driver to initiate a transition to D0. It requests a [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp) with a completion function to set the device power state to D0.
+The completion of the W/W IRP triggers the Bluetooth core driver to initiate a transition to D0. It requests a [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) with a completion function to set the device power state to D0.
 
-Prior to resuming to the active D0 state, the serial bus driver may receive a notification [**EvtDeviceDisableWakeAtBus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfpdo/nc-wdfpdo-evt_wdf_device_disable_wake_at_bus) to disable wake – this completes the process to reverse what [**EvtDeviceEnableWakeAtBus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfpdo/nc-wdfpdo-evt_wdf_device_enable_wake_at_bus) did earlier.
+Prior to resuming to the active D0 state, the serial bus driver may receive a notification [**EvtDeviceDisableWakeAtBus**](/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_disable_wake_at_bus) to disable wake – this completes the process to reverse what [**EvtDeviceEnableWakeAtBus**](/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_enable_wake_at_bus) did earlier.
 
 After Bluetooth driver stack resumes to D0, the serial bus driver can then complete the remote device request.
 
@@ -165,7 +164,7 @@ In order to reduce power up time, the callback functions (e.g. the EnterD0 and w
 
 The following is a simplified flowchart to illustrate a typical sequence and logic for idle and wake support. This logic spans many drivers and threads, and there are exceptions as well as corner cases that are not expressed (e.g. an application on the host side can also wake the stack from idle state).
 
-![bluetooth device power state transitions flowchart](images/bthdevicepwrstatetransitionsflowchart.png)
+![bluetooth device power state transitions flowchart.](images/bthdevicepwrstatetransitionsflowchart.png)
 
 ## <span id="Bus_Driver_s_own_Power_Management"></span><span id="bus_driver_s_own_power_management"></span><span id="BUS_DRIVER_S_OWN_POWER_MANAGEMENT"></span>Bus Driver’s own Power Management
 
@@ -173,10 +172,4 @@ The following is a simplified flowchart to illustrate a typical sequence and log
 The serial bus driver is a function driver (FD) and the power policy owner (PPO) of its layer. Thus, it needs to handle its own power management. After all of its children have entered lower device power states, it can then enter into a lower power state itself. When it’s ready to enter this lower power state, it can cancel any pending I/O requests to the UART controller driver – this will allow the UART driver to also enter a lower power state. However, the UART driver should persist and restore its device settings (including the baud rate) when its power state is later resumed to active.
 
  
-
- 
-
-
-
-
 

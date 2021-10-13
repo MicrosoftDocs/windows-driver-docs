@@ -1,7 +1,6 @@
 ---
-title: acpicache
+title: acpicache (WinDbg)
 description: The acpicache extension displays all of the Advanced Configuration and Power Interface (ACPI) tables cached by the HAL.
-ms.assetid: 488bbc40-0f67-4d13-8615-944ff8a6a177
 keywords: ["acpicache Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

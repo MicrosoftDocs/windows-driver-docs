@@ -1,7 +1,6 @@
 ---
 title: Enumeration properties
 description: This topic describes the static sensor properties that are available from the PnP Driver Store.
-ms.assetid: E4663410-375F-48B9-A9E4-6E608FA8D2FF
 ms.date: 01/04/2018
 ms.localizationpriority: medium
 ---
@@ -11,9 +10,9 @@ ms.localizationpriority: medium
 
 This topic describes the static sensor properties that are available from the PnP Driver Store.
 
-The following table shows static sensor properties. The Class Extension (CX) writes these properties for each sensor when [SensorsCxSensorCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/nf-sensorscx-sensorscxsensorcreate) is called. Client applications can use these properties to search for sensors on the Windows device.
+The following table shows static sensor properties. The Class Extension (CX) writes these properties for each sensor when [SensorsCxSensorCreate](/windows-hardware/drivers/ddi/sensorscx/nf-sensorscx-sensorscxsensorcreate) is called. Client applications can use these properties to search for sensors on the Windows device.
 
-For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 <table>
 <colgroup>
@@ -35,7 +34,7 @@ For more information about the data types shown in the **Type** column, see [PRO
 <td><p>DEVPKEY_Sensor_Type</p></td>
 <td><p>VT_CLSID</p></td>
 <td><p>Required</p></td>
-<td><p>A GUID that identifies the type of sensor. For more information about sensor types, see <a href="https://docs.microsoft.com/windows-hardware/drivers/sensors/about-sensor-constants" data-raw-source="[Sensor type GUIDs](https://docs.microsoft.com/windows-hardware/drivers/sensors/about-sensor-constants)">Sensor type GUIDs</a>.</p></td>
+<td><p>A GUID that identifies the type of sensor. For more information about sensor types, see <a href="/windows-hardware/drivers/sensors/about-sensor-constants" data-raw-source="[Sensor type GUIDs](./about-sensor-constants.md)">Sensor type GUIDs</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>DEVPKEY_Sensor_Category</p></td>
@@ -49,7 +48,7 @@ For more information about the data types shown in the **Type** column, see [PRO
 <td><p>Optional</p>
 <p>Required for Ambient Light Sensor and Accelerometer</p></td>
 <td><p>The senor connection type. Sensor connection types can be integrated, attached, or external.</p>
-<p>For more information, see the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002" data-raw-source="[&lt;strong&gt;SensorConnectionType&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002)"><strong>SensorConnectionType</strong></a> enumeration.</p></td>
+<p>For more information, see the <a href="/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002" data-raw-source="[&lt;strong&gt;SensorConnectionType&lt;/strong&gt;](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002)"><strong>SensorConnectionType</strong></a> enumeration.</p></td>
 </tr>
 <tr class="even">
 <td><p>DEVPKEY_Sensor_IsPrimary</p></td>
@@ -108,22 +107,12 @@ For more information about the data types shown in the **Type** column, see [PRO
 ## <span id="related_topics"></span>Related topics
 
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
-[**SensorConnectionType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002)
+[**SensorConnectionType**](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002)
 
-[SensorsCxSensorCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/nf-sensorscx-sensorscxsensorcreate)
+[SensorsCxSensorCreate](/windows-hardware/drivers/ddi/sensorscx/nf-sensorscx-sensorscxsensorcreate)
 
-[Sensor properties](sensor-properties2.md)
+[Sensor properties](./common-sensor-properties.md)
 
-[Sensor type GUIDs](https://docs.microsoft.com/windows-hardware/drivers/sensors/about-sensor-constants)
-
- 
-
- 
-
-
-
-
-
-
+[Sensor type GUIDs](./about-sensor-constants.md)

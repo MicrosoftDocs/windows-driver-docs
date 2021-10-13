@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT
 description: The KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT property registers a user-mode event for DMA-driven event notification.
-ms.assetid: 8fd5883a-ff86-4d27-af44-a82511c9e8eb
 keywords: ["KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT Audio Devices"]
 topic_type:
 - apiref
@@ -46,7 +45,7 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property" data-raw-source="[&lt;strong&gt;KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)"><strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property" data-raw-source="[&lt;strong&gt;KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)"><strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong></a></p></td>
 <td align="left"><p><strong>NULL</strong></p></td>
 </tr>
 </tbody>
@@ -54,7 +53,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) structure along with a user-mode event handle.
+The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure along with a user-mode event handle.
 
 The property value (operation data) for this property is **NULL** because no operation data is returned.
 
@@ -91,17 +90,15 @@ A KSPROPERTY\_ RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT property request returns S
 
  
 
-Remarks
--------
+## Remarks
 
 This property is used to register user-mode events for DMA-driven event notification.
 
-When the pin is placed into the *run* state (KSSTATE\_RUN) the registered events are signaled once or twice per cycle of the cyclic audio buffer, depending on the notification count requested when KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION was called. For more information about KSSTATERUN, see the [State Transitions](https://docs.microsoft.com/windows-hardware/drivers/stream/state-transitions) topic.
+When the pin is placed into the *run* state (KSSTATE\_RUN) the registered events are signaled once or twice per cycle of the cyclic audio buffer, depending on the notification count requested when KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION was called. For more information about KSSTATERUN, see the [State Transitions](../stream/state-transitions.md) topic.
 
 After you stop the pin, and prior to the time when you close it, each registered event is unregistered via a call to [**KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-unregister-notification-event.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -123,20 +120,10 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md)
 
 [**KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-unregister-notification-event.md)
 
-[State Transitions](https://docs.microsoft.com/windows-hardware/drivers/stream/state-transitions)
-
- 
-
- 
-
-
-
-
-
-
+[State Transitions](../stream/state-transitions.md)

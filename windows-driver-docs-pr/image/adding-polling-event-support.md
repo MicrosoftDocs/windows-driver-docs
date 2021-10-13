@@ -1,7 +1,6 @@
 ---
 title: Adding Polling Event Support
 description: Adding Polling Event Support
-ms.assetid: 7c7617d4-22d6-48a8-b69c-dd0347f078dd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,13 +15,13 @@ To properly set up your WIA driver to report polling events, do the following:
 
 1.  Set **Capabilities=0x33** in your device's INF file. (See [INF Files for WIA Devices](inf-files-for-wia-devices.md) for details.)
 
-2.  Report STI\_GENCAP\_NOTIFICATIONS and STI\_USD\_GENCAP\_NATIVE\_PUSHSUPPORT in the [**IStiUSD::GetCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getcapabilities) method.
+2.  Report STI\_GENCAP\_NOTIFICATIONS and STI\_USD\_GENCAP\_NATIVE\_PUSHSUPPORT in the [**IStiUSD::GetCapabilities**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getcapabilities) method.
 
-3.  Report all supported events in the [**IWiaMiniDrv::drvGetCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
+3.  Report all supported events in the [**IWiaMiniDrv::drvGetCapabilities**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
 
-4.  Respond to calls to the [**IStiUSD::GetStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getstatus) method. The WIA service calls this method at a preset interval that is configurable in the INF file. The default setting is a 1-second interval.
+4.  Respond to calls to the [**IStiUSD::GetStatus**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getstatus) method. The WIA service calls this method at a preset interval that is configurable in the INF file. The default setting is a 1-second interval.
 
-5.  Report the proper event information response in the [**IStiUSD::GetNotificationData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getnotificationdata) method.
+5.  Report the proper event information response in the [**IStiUSD::GetNotificationData**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getnotificationdata) method.
 
 The WIA service calls the **IStiUSD::GetStatus** method for two major operations:
 
@@ -30,7 +29,7 @@ The WIA service calls the **IStiUSD::GetStatus** method for two major operations
 
 2.  Polling for device events, such as a push button event.
 
-Determining the operation request can be done by checking the **StatusMask** member of the [**STI\_DEVICE\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sti/ns-sti-_sti_device_status) structure. The **StatusMask** member can be either of the following requests:
+Determining the operation request can be done by checking the **StatusMask** member of the [**STI\_DEVICE\_STATUS**](/windows-hardware/drivers/ddi/sti/ns-sti-_sti_device_status) structure. The **StatusMask** member can be either of the following requests:
 
 <a href="" id="sti-devstatus-online-state"></a>STI\_DEVSTATUS\_ONLINE\_STATE  
 This operation request checks whether the device is online and should be filled by setting the **dwOnlinesState** member of the STI\_DEVICE\_STATUS structure.
@@ -47,7 +46,7 @@ This WIA driver should set the *m\_guidLastEvent* class member variable to the p
 
  
 
-The following example shows an implementation of the [**IStiUSD::GetStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getstatus) method.
+The following example shows an implementation of the [**IStiUSD::GetStatus**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getstatus) method.
 
 ```cpp
 STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
@@ -127,9 +126,4 @@ STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
 ```
 
  
-
- 
-
-
-
 

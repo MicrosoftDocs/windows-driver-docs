@@ -1,7 +1,6 @@
 ---
-title: mapic
+title: mapic (WinDbg)
 description: The mapic extension displays an ACPI Multiple APIC table.
-ms.assetid: 064f887b-39d1-4251-9043-3c0dc9775bfe
 keywords: ["mapic Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

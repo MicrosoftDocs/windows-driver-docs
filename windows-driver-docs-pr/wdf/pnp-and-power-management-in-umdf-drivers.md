@@ -1,7 +1,6 @@
 ---
 title: PnP and Power Management in UMDF Drivers
 description: PnP and Power Management in UMDF Drivers
-ms.assetid: 1860ee80-0ad8-4f65-80b0-fb628a84a852
 keywords:
 - Plug and Play WDK UMDF , power management in UMDF-based drivers
 - PnP WDK UMDF , power management in UMDF-based drivers
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # PnP and Power Management in UMDF Drivers
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 ## In this section
 

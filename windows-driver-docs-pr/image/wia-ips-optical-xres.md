@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_OPTICAL\_XRES
 description: The WIA\_IPS\_OPTICAL\_XRES property contains the highest-supported horizontal optical resolution of a device, in dots per inch (dpi). The WIA minidriver creates and maintains this property.
-ms.assetid: 414a0c35-2146-4de7-9dec-a31f182ab7e8
 keywords: ["WIA_IPS_OPTICAL_XRES Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE.
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

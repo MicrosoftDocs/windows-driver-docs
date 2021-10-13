@@ -1,7 +1,6 @@
 ---
-title: AVC\_FUNCTION\_SEND\_RESPONSE
-description: AVC\_FUNCTION\_SEND\_RESPONSE
-ms.assetid: f04caed8-8521-4dfa-9bfa-cf71ec7a658e
+title: AVC_FUNCTION_SEND_RESPONSE
+description: The AVC_FUNCTION_SEND_RESPONSE function code is used to respond to AV/C unit and subunit requests.
 keywords: ["AVC_FUNCTION_SEND_RESPONSE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -11,54 +10,31 @@ api_location:
 - avc.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 07/27/2021
 ms.localizationpriority: medium
 ---
 
-# AVC\_FUNCTION\_SEND\_RESPONSE
+# AVC_FUNCTION_SEND_RESPONSE
 
+The **AVC_FUNCTION_SEND_RESPONSE** function code is used to respond to AV/C unit and subunit requests.
 
-## <span id="ddk_avc_function_send_response_ks"></span><span id="DDK_AVC_FUNCTION_SEND_RESPONSE_KS"></span>
+## I/O Status Block
 
+If successful, the AV/C protocol driver may set **Irp->IoStatus.Status** to either:
 
-The **AVC\_FUNCTION\_SEND\_RESPONSE** function code is used to respond to AV/C unit and subunit requests.
+- STATUS_SUCCESS if the response is discarded due to one or more bus resets since original request, or
 
-### I/O Status Block
-
-If successful, the AV/C protocol driver may set **Irp-&gt;IoStatus.Status** to either:
-
-STATUS\_SUCCESS if the response is discarded due to one or more bus resets since original request, or
-
-STATUS\_PENDING if the response is successfully delivered to *61883.sys* (implies successful delivery to the request initiator).
+- STATUS_PENDING if the response is successfully delivered to *61883.sys* (implies successful delivery to the request initiator)
 
 Possible other return values include:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>STATUS_INSUFFICIENT_RESOURCES</p></td>
-<td><p>An internal buffer allocation failed.</p></td>
-</tr>
-</tbody>
-</table>
+| Return value | Description |
+|--|--|
+| STATUS_INSUFFICIENT_RESOURCES | An internal buffer allocation failed. |
 
- 
+## Comments
 
-### <span id="headers"></span><span id="HEADERS"></span>Headers
-
-### Comments
-
-This function uses the AVC\_COMMAND\_IRB structure as shown below.
+This function uses the AVC_COMMAND_IRB structure as shown below.
 
 ```cpp
 typedef struct _AVC_COMMAND_IRB {
@@ -83,91 +59,74 @@ typedef struct _AVC_COMMAND_IRB {
 } AVC_COMMAND_IRB, *PAVC_COMMAND_IRB;
 ```
 
-### <span id="avc_command_irb_input"></span><span id="AVC_COMMAND_IRB_INPUT"></span>AVC\_COMMAND\_IRB Input
+## Requirements
+
+**Header:** Avc.h (include Avc.h)
+
+### AVC_COMMAND_IRB Input
 
 **Common**  
-The **Function** submember of this member must be set to **AVC\_FUNCTION\_SEND\_RESPONSE** from the AVC\_FUNCTION enumeration.
+The **Function** submember of this member must be set to **AVC_FUNCTION_SEND_RESPONSE** from the AVC_FUNCTION enumeration.
 
-<span id="SubunitAddrFlag"></span><span id="subunitaddrflag"></span><span id="SUBUNITADDRFLAG"></span>**SubunitAddrFlag**  
-Set to the value obtained from the **AVC\_FUNCTION\_GET\_REQUEST** completion.
+**SubunitAddrFlag**  
+Set to the value obtained from the **AVC_FUNCTION_GET_REQUEST** completion.
 
-<span id="AlternateOpcodesFlag"></span><span id="alternateopcodesflag"></span><span id="ALTERNATEOPCODESFLAG"></span>**AlternateOpcodesFlag**  
+**AlternateOpcodesFlag**  
 Ignored.
 
-<span id="TimeoutFlag"></span><span id="timeoutflag"></span><span id="TIMEOUTFLAG"></span>**TimeoutFlag**  
+**TimeoutFlag**  
 Ignored.
 
-<span id="RetryFlag"></span><span id="retryflag"></span><span id="RETRYFLAG"></span>**RetryFlag**  
+**RetryFlag**  
 Ignored.
 
-<span id="CommandType"></span><span id="commandtype"></span><span id="COMMANDTYPE"></span>**CommandType**  
+**CommandType**  
 Ignored for responses.
 
-<span id="ResponseCode"></span><span id="responsecode"></span><span id="RESPONSECODE"></span>**ResponseCode**  
+**ResponseCode**  
 This member must be set to one of the values from the **AvcResponseCode** enumeration.
 
-<span id="SubunitAddr"></span><span id="subunitaddr"></span><span id="SUBUNITADDR"></span>**SubunitAddr**  
-Set to the value obtained from the **AVC\_FUNCTION\_GET\_REQUEST** completion.
+ **SubunitAddr**  
+Set to the value obtained from the **AVC_FUNCTION_GET_REQUEST** completion.
 
-<span id="AlternateOpcodes"></span><span id="alternateopcodes"></span><span id="ALTERNATEOPCODES"></span>**AlternateOpcodes**  
+**AlternateOpcodes**  
 Ignored.
 
-<span id="Timeout"></span><span id="timeout"></span><span id="TIMEOUT"></span>**Timeout**  
+**Timeout**  
 Ignored.
 
-<span id="Retries"></span><span id="retries"></span><span id="RETRIES"></span>**Retries**  
+**Retries**  
 Ignored.
 
-<span id="Opcode"></span><span id="opcode"></span><span id="OPCODE"></span>**Opcode**  
+**Opcode**  
 This must contain the AV/C unit opcode appropriate for the response (may be different than the opcode provided in the original request).
 
-<span id="OperandLength"></span><span id="operandlength"></span><span id="OPERANDLENGTH"></span>**OperandLength**  
+**OperandLength**  
 Set to the number of bytes in the operand list of the response.
 
-<span id="Operands"></span><span id="operands"></span><span id="OPERANDS"></span>**Operands**  
+**Operands**  
 The operand list of the response.
 
-<span id="NodeAddress"></span><span id="nodeaddress"></span><span id="NODEADDRESS"></span>**NodeAddress**  
+**NodeAddress**  
 The node address of the source of the original request.
 
-<span id="Generation"></span><span id="generation"></span><span id="GENERATION"></span>**Generation**  
+**Generation**  
 The generation ID obtained from the original request.
 
-In the context of the GUID\_AVC\_CLASS device interface, the **AVC\_FUNCTION\_SEND\_RESPONSE** function code is used to respond only to AV/C unit requests.
+In the context of the GUID_AVC_CLASS device interface, the **AVC_FUNCTION_SEND_RESPONSE** function code is used to respond only to AV/C unit requests.
 
-In the case of virtual instances of *avc.sys* (that is, instances that register the GUID\_VIRTUAL\_AVC\_CLASS device interface), the **AVC\_FUNCTION\_SEND\_RESPONSE** function code is used to respond to AV/C unit *and* subunit requests.
+In the case of virtual instances of *avc.sys* (that is, instances that register the GUID_VIRTUAL_AVC_CLASS device interface), the **AVC_FUNCTION_SEND_RESPONSE** function code is used to respond to AV/C unit *and* subunit requests.
 
-If the first response uses the **AVC\_RESPONSE\_INTERIM** response code (from the **AvcResponseType** enumeration), then follow-up processing is expected. The **NodeAddress** and **Generation** members, obtained by the completion of the **AVC\_FUNCTION\_GET\_REQUEST** original function, must be used in subsequent responses. In any case, the next **AVC\_FUNCTION\_GET\_REQUEST** function should be submitted before returning from the initial **AVC\_FUNCTION\_SEND\_RESPONSE** completion routine, so that the next unit request may be received.
+If the first response uses the **AVC_RESPONSE_INTERIM** response code (from the **AvcResponseType** enumeration), then follow-up processing is expected. The **NodeAddress** and **Generation** members, obtained by the completion of the **AVC_FUNCTION_GET_REQUEST** original function, must be used in subsequent responses. In any case, the next **AVC_FUNCTION_GET_REQUEST** function should be submitted before returning from the initial **AVC_FUNCTION_SEND_RESPONSE** completion routine, so that the next unit request may be received.
 
 The recommended use of this structure is to use the contents of the original request, and update the **Opcode**, **OperandLength**, and **Operands** members as appropriate for the response.
 
-This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
+This function code may be called at IRQL >= DISPATCH_LEVEL.
 
 ### See Also
 
-[**AVC\_FUNCTION\_GET\_REQUEST**](avc-function-get-request.md), [**AvcResponseCode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavcresponsecode), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function)
+[**AVC_FUNCTION_GET_REQUEST**](avc-function-get-request.md)
 
-Requirements
-------------
+[**AvcResponseCode**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavcresponsecode)
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Avc.h (include Avc.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+[**AVC_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)

@@ -1,7 +1,6 @@
 ---
 title: How Completion Processing Is Performed
 description: How Completion Processing Is Performed
-ms.assetid: 5741c226-9781-4d9a-b6dd-d8ecc17c4c6f
 keywords:
 - IRP completion routines WDK file system , processing stages
 ms.date: 04/20/2017
@@ -32,20 +31,15 @@ The second stage is performed in the context of the thread that originated the I
 
 -   If an event has been supplied in **Irp-&gt;UserEvent**, it is signaled. Otherwise, if there is a file object for this IRP, its event is signaled.
 
--   If the IRP was created by calling [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest) or [**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildsynchronousfsdrequest), it is dequeued from the thread's pending I/O request list.
+-   If the IRP was created by calling [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) or [**IoBuildSynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest), it is dequeued from the thread's pending I/O request list.
 
 -   A user APC is queued, if the caller requested one.
 
 -   The IRP is freed.
 
-**Note**   If completion processing for an IRP is halted because a completion routine returned STATUS\_MORE\_PROCESSING\_REQUIRED, it can be resumed by calling [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) on the same IRP. When this happens, first-stage processing resumes, beginning with the completion routine for the driver immediately above the one whose completion routine returned STATUS\_MORE\_PROCESSING\_REQUIRED.
+**Note**   If completion processing for an IRP is halted because a completion routine returned STATUS\_MORE\_PROCESSING\_REQUIRED, it can be resumed by calling [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) on the same IRP. When this happens, first-stage processing resumes, beginning with the completion routine for the driver immediately above the one whose completion routine returned STATUS\_MORE\_PROCESSING\_REQUIRED.
 
  
 
  
-
- 
-
-
-
 

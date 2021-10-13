@@ -1,7 +1,6 @@
 ---
 title: Streaming Minidrivers
 description: Streaming Minidrivers
-ms.assetid: 9f669a1a-50fd-482f-a5af-28e5685dc68c
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , streaming minidrivers
 - Streaming Model WDK Windows 2000 Kernel , streaming minidrivers
@@ -22,7 +21,7 @@ ms.localizationpriority: medium
 
 
 
-**Note**   This section details the outdated *Stream.sys* class driver. With the release of Microsoft Windows XP, Microsoft supports *Stream.sys* only for existing drivers. As of this release, Microsoft recommends that vendors consider developing new video or audio/video multimedia drivers using the AVStream class driver model. See details in the [AVStream Overview](avstream-overview.md). If developing an audio-only driver, you should write an audio miniport driver under the Microsoft-provided *Portcls.sys* class driver. For details, see [Audio Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-miniport-drivers).
+**Note**   This section details the outdated *Stream.sys* class driver. With the release of Microsoft Windows XP, Microsoft supports *Stream.sys* only for existing drivers. As of this release, Microsoft recommends that vendors consider developing new video or audio/video multimedia drivers using the AVStream class driver model. See details in the [AVStream Overview](avstream-overview.md). If developing an audio-only driver, you should write an audio miniport driver under the Microsoft-provided *Portcls.sys* class driver. For details, see [Audio Miniport Drivers](../audio/audio-miniport-drivers.md).
 
  
 
@@ -43,7 +42,7 @@ The stream class driver is designed to make writing hardware drivers for streami
 -   The class driver handles all interaction with the PnP manager. For example:
     -   The class driver creates the functional device object on the minidriver's behalf.
     -   The class driver manages resource configuration (such as translating port addresses, translating and mapping memory ranges, and connecting interrupts).
-    -   The class driver handles PnP IRPs, such as [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device), or [**IRP\_MN\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device).
+    -   The class driver handles PnP IRPs, such as [**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md), or [**IRP\_MN\_STOP\_DEVICE**](../kernel/irp-mn-stop-device.md).
 -   All low-level buffer management is handled by the class driver:
     -   Allocating DMA adapter object, if necessary.
     -   Mapping buffers and building scatter/gather lists for DMA.
@@ -57,9 +56,4 @@ The stream class driver is designed to make writing hardware drivers for streami
 -   Only one device object is created per adapter. Multiple subdevices (called *streams*) supported by the adapter are represented by kernel streaming pins.
 
  
-
- 
-
-
-
 

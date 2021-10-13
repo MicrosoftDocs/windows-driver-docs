@@ -1,7 +1,6 @@
 ---
 title: Source Path
 description: This topic covers how to set the source path or load the individual source files.
-ms.assetid: b5dcb557-b413-401a-be4b-2d45b2597e6c
 keywords: source files and paths, source path
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -55,7 +54,7 @@ You can also directly open or close a source file by doing one of the following:
 
 -   (WinDbg only) Use the [**.open (Open Source File)**](-open--open-source-file-.md) command to open a source file.
 
--   (WinDbg only) Use the [file | open source file](file---open-source-file.md) command or press ctrl+o to open a source file. you can also use the **open source file (ctrl+o)** button (![screen shot of the open source file button](images/tbopen.png)) on the toolbar.
+-   (WinDbg only) Use the [file | open source file](file---open-source-file.md) command or press ctrl+o to open a source file. you can also use the **open source file (ctrl+o)** button (![screen shot of the open source file button.](images/tbopen.png)) on the toolbar.
 
     **Note**   When you use **File | Open Source File** (or its shortcut menu or button equivalents) to open a source file, the path of that file is automatically appended to the source path.
 
@@ -63,7 +62,7 @@ You can also directly open or close a source file by doing one of the following:
 
 -   (WinDbg only) Use the [File | Recent Files](file---recent-files.md) command to open one of the four source files that you most recently opened in WinDbg.
 
--   (WinDbg only) Use the [File | Close Current Window](file---close-current-window.md) command or click the **Close** button in the corner of the [Source window](source-window.md) to close a source file.
+-   (WinDbg only) Use the [File | Close Current Window](file---close-current-window.md) command or select the **Close** button in the corner of the [Source window](source-window.md) to close a source file.
 
 For more information about how to use source files, see [Debugging in Source Mode](debugging-in-source-mode.md).
 

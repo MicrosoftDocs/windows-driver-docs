@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE
 description: The FAULTY_HARDWARE_CORRUPTED_PAGE bug check has a value of 0x0000012B. This bug check indicates that the Windows memory manager detected corruption, and the corruption could only have been caused by a component accessing memory using physical addressing. 
-ms.assetid: caa57d76-946f-4394-bfcf-1dbf3813a55b
 keywords: ["Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE", "FAULTY_HARDWARE_CORRUPTED_PAGE"]
 ms.date: 01/18/2019
 topic_type:
@@ -103,7 +102,6 @@ This bug check indicates that a single-bit error was found in this page. This is
 
 
 ## Cause
------
 
 This bugcheck can only occur by memory corruption due to physical memory access. The causes for physical memory corruption include:
 
@@ -113,20 +111,19 @@ This bugcheck can only occur by memory corruption due to physical memory access.
 
 NOTE:  Compressed Store Manager can detect if the corruption was caused by a single-bit error, and automatically corrects this condition without raising a bug check. This bugcheck is reported by the Compressed Store Manager if the corruption was not caused by a single bit error.
 
-For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](https://docs.microsoft.com/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## Resolution
 -----
 
 **Windows Memory Diagnostics Tool**
 
-To investigate if this bug check is caused by defective RAM hardware, run the Windows Memory Diagnostics tool. In the control panel search box, type Memory, and then click *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+To investigate if this bug check is caused by defective RAM hardware, run the Windows Memory Diagnostics tool. In the control panel search box, type Memory, and then select *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
-## See Also
-----------
+## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-[Windows Kernel-Mode Memory Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager)
+[Windows Kernel-Mode Memory Manager](../kernel/windows-kernel-mode-memory-manager.md)
 
 [Channel 9 video on memory compression](https://channel9.msdn.com/Blogs/Seth-Juarez/Memory-Compression-in-Windows-10-RTM)

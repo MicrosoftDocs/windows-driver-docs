@@ -1,7 +1,6 @@
 ---
 title: MPIO\_DEVINSTANCE\_HEALTH\_INFO WMI Class
 description: MPIO\_DEVINSTANCE\_HEALTH\_INFO WMI Class
-ms.assetid: 4d47b41b-eac6-4f8b-801b-76eec8158074
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -36,13 +35,7 @@ class MPIO_DEVINSTANCE_HEALTH_INFO
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DEVINSTANCE\_HEALTH\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiodisk/ns-mpiodisk-_mpio_devinstance_health_info) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DEVINSTANCE\_HEALTH\_INFO**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_mpio_devinstance_health_info) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

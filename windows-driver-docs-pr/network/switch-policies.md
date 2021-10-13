@@ -1,7 +1,6 @@
 ---
 title: Switch Policies
 description: Switch Policies
-ms.assetid: 26070BFB-AFD8-4D4B-AEC2-865DEFEA9CF7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

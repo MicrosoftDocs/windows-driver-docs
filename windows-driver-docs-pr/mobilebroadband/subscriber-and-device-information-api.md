@@ -1,7 +1,6 @@
 ---
 title: Subscriber and Device Information API
 description: Subscriber and Device Information API
-ms.assetid: 45d6c053-b64b-4768-8e79-a090dcdf346e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ The Subscriber and Device Information API provides the following subscriber and 
 
 -   **Firmware and hardware version** Firmware and hardware version.
 
-For more info about the Subscriber and Device Information API, see [**Windows.Networking.NetworkOperators namespace**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators).
+For more info about the Subscriber and Device Information API, see [**Windows.Networking.NetworkOperators namespace**](/uwp/api/Windows.Networking.NetworkOperators).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -35,11 +34,4 @@ For more info about the Subscriber and Device Information API, see [**Windows.Ne
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
  
-
- 
-
-
-
-
-
 

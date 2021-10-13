@@ -1,7 +1,6 @@
 ---
 title: .fnent (Display Function Data)
 description: The .fnent command displays information about the function table entry for a specified function.
-ms.assetid: 914caf55-2fbf-4f30-af6e-e666dc47c7da
 keywords: ["Display Function Data (.fnent) command", ".fnent (Display Function Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the address of the function.
 
  
 
-Remarks
--------
+## Remarks
 
 The symbol search algorithm for the **.fnent** command is the same as that of the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command. The display first shows the nearest symbols. Then, the debugger displays the function entry for the first of these symbols.
 

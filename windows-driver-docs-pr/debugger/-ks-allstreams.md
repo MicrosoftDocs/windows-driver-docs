@@ -1,7 +1,6 @@
 ---
 title: ks.allstreams
 description: The ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system.
-ms.assetid: 3a9f4ad4-a3aa-46dc-887d-c83296bc8f84
 keywords: ["ks.allstreams Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,8 +70,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This command can take some time to execute (a minute is not unusual).
 

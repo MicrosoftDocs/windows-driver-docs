@@ -1,7 +1,6 @@
 ---
 title: EventingService WSDL
 description: EventingService WSDL
-ms.assetid: 2071f4db-6a5a-4e9f-b53f-f50d4d99772a
 keywords:
 - WSDBIT tool WDK , WSDL
 - WSDAPI Basic Interoperability Tool WDK , WSDL
@@ -14,18 +13,17 @@ ms.localizationpriority: medium
 
 # EventingService WSDL
 
-
 The following code sample shows the EventingService WSDL.
 
-```
-<wsdl:definitions 
- targetNamespace="http://schemas.example.org/EventingService" 
+```xml
+<wsdl:definitions
+ targetNamespace="http://schemas.example.org/EventingService"
  xmlns:tns="http://schemas.example.org/EventingService"
- xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" 
+ xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
- xmlns:wsdp="http://schemas.xmlsoap.org/ws/2005/05/devprof" 
- xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing" 
- xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" 
+ xmlns:wsdp="http://schemas.xmlsoap.org/ws/2005/05/devprof"
+ xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
+ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
  xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/"
     xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
  xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
@@ -39,18 +37,18 @@ The following code sample shows the EventingService WSDL.
  </wsp:Policy>
 
  <wsdl:types>
- <xs:schema 
+ <xs:schema
    targetNamespace="http://schemas.example.org/EventingService"
-   xmlns:tns="http://schemas.example.org/EventingService" 
+   xmlns:tns="http://schemas.example.org/EventingService"
    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   elementFormDefault="qualified" 
+   elementFormDefault="qualified"
    blockDefault="#all">
 
  <xs:element name="SimpleEvent" type="tns:SimpleEventType" />
  <xs:complexType name="SimpleEventType">
      <xs:sequence/>
  </xs:complexType>
- 
+
  <xs:element name="IntegerEvent" type="tns:IntegerEventType" />
  <xs:complexType name="IntegerEventType">
  <xs:sequence>
@@ -107,8 +105,8 @@ The following code sample shows the EventingService WSDL.
  </wsdl:binding>
 
  <wsdl:service name="EventingService">
- <wsdl:port 
-   name="EventingPort" 
+ <wsdl:port
+   name="EventingPort"
    binding="tns:EventingServiceSoap12Binding">
  <wsoap12:address
  location="http://localhost/WebService/Eventing.asmx" />
@@ -117,12 +115,3 @@ The following code sample shows the EventingService WSDL.
 
 </wsdl:definitions>
 ```
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Creating Custom Property Pages
 description: Creating Custom Property Pages
-ms.assetid: 2481450f-ebb2-40e3-8a42-eabaecc1c7e4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 When a [device property page provider](types-of-device-property-page-providers.md) handles a request to create a property page for its device or device class, the provider should take the following steps:
 
-1.  Call [**SetupDiGetClassInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassinstallparamsa) to get the current class install parameters for the device. For example:
+1.  Call [**SetupDiGetClassInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassinstallparamsa) to get the current class install parameters for the device. For example:
 
     ```cpp
     SP_ADDPROPERTYPAGE_DATA AddPropertyPageData;
@@ -39,7 +38,7 @@ When a [device property page provider](types-of-device-property-page-providers.m
 
 3.  Allocate memory in which to save any device-specific data that will be needed later in the dialog box procedure and initialize this memory with the data. The provider must release this memory in its property page callback when the property page is destroyed.
 
-    For providers that are [co-installers](writing-a-co-installer.md), this device-specific data must include the *DeviceInfoSet* and *DeviceInfoData* passed with the [**DIF_ADDPROPERTYPAGE_ADVANCED**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-addpropertypage-advanced) device installation function (DIF) code.
+    For providers that are [co-installers](writing-a-co-installer.md), this device-specific data must include the *DeviceInfoSet* and *DeviceInfoData* passed with the [**DIF_ADDPROPERTYPAGE_ADVANCED**](./dif-addpropertypage-advanced.md) device installation function (DIF) code.
 
     For example, a property page provider can define and use a structure as shown in the following example:
 
@@ -68,17 +67,11 @@ When a [device property page provider](types-of-device-property-page-providers.m
 
 7.  Repeat steps 2 through 6 for each additional custom property page.
 
-8.  Call [**SetupDiSetClassInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetclassinstallparamsa) to set the new class install parameters, which include the updated property page structure.
+8.  Call [**SetupDiSetClassInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclassinstallparamsa) to set the new class install parameters, which include the updated property page structure.
 
 9.  Return NO_ERROR.
 
 Windows adds the newly created property pages to the property sheet for the device, and Device Manager makes Microsoft Win32 API calls to create the sheet. When the property page is displayed, the system calls the dialog box procedure that is specified in the PROPSHEETPAGE structure.
 
  
-
- 
-
-
-
-
 

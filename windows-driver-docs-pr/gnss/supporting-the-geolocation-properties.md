@@ -1,14 +1,13 @@
 ---
 title: Supporting the geolocation properties
 description: The source file, geolocation.cpp, contains three arrays of PROPERTYKEY structures that define the properties supported by the simulated sensor.
-ms.assetid: 0D25D58F-1023-4470-9F7D-E62544B87A42
-ms.date: 04/20/2017
+ms.date: 08/25/2021
 ms.localizationpriority: medium
 ---
 
 # Supporting the geolocation properties
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The source file, geolocation.cpp, contains three arrays of PROPERTYKEY structures that define the properties supported by the simulated sensor.
@@ -63,7 +62,5 @@ const PROPERTYKEY g_SettableGeolocationProperties[] =
 The sample driver also uses these values when updating a writeable property (or properties). The method that updates property values is **CGeolocation::UpdateGeolocationPropertyValues**.
 
 ## Related topics
+
 [The Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md)  
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Debugging Tools For Windows What's New
 description: Debugging Tools For Windows What's New
-ms.assetid: 7F85412E-7A5D-4B1E-83B9-C32EDA7C6B49
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

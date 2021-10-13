@@ -1,7 +1,6 @@
 ---
 title: MSFC\_PortEvent WMI Class
 description: MSFC\_PortEvent WMI Class
-ms.assetid: 38b8e358-b118-4a0c-ac47-2f257d0ed1bf
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -32,13 +31,7 @@ class MSFC_PortEvent : WMIEvent {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_PortEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_portevent)
+[**MSFC\_PortEvent**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_portevent)
 
  
-
- 
-
-
-
-
 

@@ -1,10 +1,9 @@
 ---
 title: Certificate Stores
 description: Certificate Stores
-ms.assetid: 7c29bf08-c5d2-40c3-b849-0b8c2f8d67f2
 keywords:
 - certificate stores WDK
-ms.date: 04/20/2017
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -22,10 +21,6 @@ This section includes the following topics:
 [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md)
 
  
-
- 
-
-
-
+For info on viewing certificates, see [How to: View certificates with the MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
 
 

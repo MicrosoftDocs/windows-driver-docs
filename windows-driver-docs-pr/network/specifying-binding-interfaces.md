@@ -1,7 +1,6 @@
 ---
 title: Specifying Binding Interfaces
 description: Specifying Binding Interfaces
-ms.assetid: 49ef3eae-88e6-4424-8c3b-19e8c3bb734f
 keywords:
 - add-registry-sections WDK networking , binding interfaces
 - binding interfaces WDK networking

@@ -1,7 +1,6 @@
 ---
 title: usbkd.isthisdumpasyncissue
 description: This command checks a 0xFE crash dump file, to see whether the likely cause of the crash was an Interrupt on Async Advance issue associated with a USB EHCI host controller.
-ms.assetid: 1729E52F-F943-4062-94AC-7890C2E25EBF
 keywords: ["usbkd.isthisdumpasyncissue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,13 +26,11 @@ The **!usbkd.isthisdumpasyncissue** command checks a crash dump file, generated 
 
 Usbkd.dll
 
-Remarks
--------
+## Remarks
 
 Use this command only when you are debugging a crash dump file that was generated as a result of [**Bug Check 0xFE: BUGCODE\_USB\_DRIVER**](bug-check-0xfe--bugcode-usb-driver.md).
 
-Examples
---------
+## Examples
 
 Here is an example of the output of **!usbkd.isthisdumpasyncissue**.
 
@@ -51,14 +48,7 @@ This is *NOT* Async on Advance Issue because the EndPointData is NULL
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

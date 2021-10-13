@@ -1,7 +1,6 @@
 ---
 title: Finish-Install Actions
 description: Finish-Install Actions
-ms.assetid: 52c7f166-ee74-46b6-815b-5d360d829b4c
 keywords:
 - finish-install actions WDK device installations
 - installer finish-install actions WDK device installations
@@ -23,11 +22,11 @@ ms.localizationpriority: medium
 
 Installers can specify finish-install actions to happen in a class installer, class co-installer, or device co-installer, starting with Windows Vista and later versions. Finish-install actions run in the context of an administrator *after* all other installation operations, including finish-install wizard pages, are completed.
 
-In Windows 7, the default finish-install action is provided by the system-supplied [**SetupDiFinishInstallAction**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)) function. This function processes, in the interactive context of an administrator, the [RunOnce registry entries](runonce-registry-key.md) that are set for a device. If a device does not have a class installer, or a class installer returns ERROR_DI_DO_DEFAULT in response to a [**DIF_FINISHINSTALL_ACTION**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-finishinstall-action) request, Windows calls **SetupDiFinishInstallAction** after all the installers for a device complete their finish-install actions.
+In Windows 7, the default finish-install action is provided by the system-supplied [**SetupDiFinishInstallAction**](/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)) function. This function processes, in the interactive context of an administrator, the [RunOnce registry entries](runonce-registry-key.md) that are set for a device. If a device does not have a class installer, or a class installer returns ERROR_DI_DO_DEFAULT in response to a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request, Windows calls **SetupDiFinishInstallAction** after all the installers for a device complete their finish-install actions.
 
-In Windows 8 and later versions, finish-install actions are not automatically run as part of device installation, and the [**SetupDiFinishInstallAction**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)) function has been removed. Instead, an administrator (or a limited user that can provide administrator credentials to a UAC prompt) must go to the Action Center and address the "Finish installing device software" maintenance item in order for the finish-install action to be run. Until then, the finish-install action will not run. For example, if a user plugs in a device that installs a driver that includes a finish-install action, the finish-install action will not automatically run at that time. Instead, the finish-install action will run at some later point when the user manually initiates it. Thereafter, when Windows runs the finish-install action, the action has that single opportunity to run. If the action fails then it must take appropriate steps to allow the user to try again and finish later. Similarly, installing supporting software that should accompany a driver can still be accomplished with a finish-install action, but it will also not be installed automatically.
+In Windows 8 and later versions, finish-install actions are not automatically run as part of device installation, and the [**SetupDiFinishInstallAction**](/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)) function has been removed. Instead, an administrator (or a limited user that can provide administrator credentials to a UAC prompt) must go to the Action Center and address the "Finish installing device software" maintenance item in order for the finish-install action to be run. Until then, the finish-install action will not run. For example, if a user plugs in a device that installs a driver that includes a finish-install action, the finish-install action will not automatically run at that time. Instead, the finish-install action will run at some later point when the user manually initiates it. Thereafter, when Windows runs the finish-install action, the action has that single opportunity to run. If the action fails then it must take appropriate steps to allow the user to try again and finish later. Similarly, installing supporting software that should accompany a driver can still be accomplished with a finish-install action, but it will also not be installed automatically.
 
-Alternatively, depending on your scenario, in Windows 8 and later versions, you may be able to make use of the new device app model. More information about device apps can be found at [Design Great Hardware Experiences](https://go.microsoft.com/fwlink/p/?linkid=227833).
+Alternatively, depending on your scenario, in Windows 8 and later versions, you may be able to make use of the new device app model. More information about device apps can be found at [Design Great Hardware Experiences](/windows-hardware/design/).
 
 Finish-install actions are useful in the following situations:
 
@@ -48,12 +47,4 @@ This section discusses finish-install actions in more detail and includes the fo
 [Implementing Finish-Install Actions](implementing-finish-install-actions.md)
 
 [How Finish-Install Actions are Processed](how-finish-install-actions-are-processed.md)
-
- 
-
- 
-
-
-
-
 

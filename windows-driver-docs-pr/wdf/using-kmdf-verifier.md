@@ -1,7 +1,6 @@
 ---
 title: Using KMDF Verifier
 description: Using KMDF Verifier
-ms.assetid: ab6a0149-9341-435b-b7e7-9c5d6520ebd8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Using KMDF Verifier
 
 
-The framework provides built-in verification functionality that you can use to test a running KMDF driver. This functionality, called KMDF Verifier, extensively validates your driver's state and the arguments that the driver passes to framework object methods. You can use the framework's verifier by itself or together with the general-purpose [Driver Verifier (Verifier.exe)](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) tool.
+The framework provides built-in verification functionality that you can use to test a running KMDF driver. This functionality, called KMDF Verifier, extensively validates your driver's state and the arguments that the driver passes to framework object methods. You can use the framework's verifier by itself or together with the general-purpose [Driver Verifier (Verifier.exe)](../devtest/driver-verifier.md) tool.
 
 If KMDF Verifier is enabled, the framework checks lock acquisition and hierarchies, ensures that calls to the framework occur at the correct IRQL, verifies correct I/O cancellation and queue usage, and ensures that the driver and framework follow the documented contracts. It can also simulate out-of-memory conditions so that the driver developer can test whether the driver responds properly without crashing, hanging, or failing to unload.
 
@@ -17,9 +16,10 @@ When KMDF Verifier is enabled, the framework breaks into the debugger if a defau
 
 We recommend running Driver Verifier (Verifier.exe) during testing, and adding your own driver and wdf01000.sys to the verify list.
 
-If your driver was built with KMDF version 1.9 or later and you run Verifier.exe, KMDF Verifier is automatically enabled.
+> [!NOTE]
+> KMDF Verifier is automatically enabled when using Driver Verifier's `/standard` settings. If you are using `/flags` instead of the `/standard` driver verifier setting, be aware that on Windows 10, version 1803 or more recent builds, `/flags` is deprecated in favor of `/ruleclasses`. The rule class for WDF is 34. To enable WDF verifier when `/standard` is not used, use `/ruleclasses 34`.
 
-You can also use the [WDF Verifier Control Application (WdfVerifier.exe)](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) to enable and disable KMDF Verifier.
+You can also use the [WDF Verifier Control Application (WdfVerifier.exe)](../devtest/wdf-verifier-control-application.md) to enable and disable KMDF Verifier.
 
 ## Enabling and Disabling the Framework's Built-in Verification
 
@@ -32,11 +32,11 @@ You can manually enable KMDF Verifier using this procedure:
     You may need to add **VerifierOn** manually to the subkey if it is not already present.
 
 3.  Use Device Manager to reenable the device, thereby loading the driver.
-4.  When the driver calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate), the framework examines the registry and enables the framework's verifier if **VerifierOn** to a nonzero value.
+4.  When the driver calls [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate), the framework examines the registry and enables the framework's verifier if **VerifierOn** to a nonzero value.
 
 To disable the framework's verifier, follow the same steps, but set the value of **VerifierOn** to zero.
 
-To determine whether the framework's verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdriverinfo) debugger extension command:
+To determine whether the framework's verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](../debugger/-wdfkd-wdfdriverinfo.md) debugger extension command:
 
 **!wdfkd.wdfdriverinfo** *&lt;your drivername&gt;* **** **0x1**
 
@@ -45,15 +45,15 @@ For more information about the debugger extension commands, see [Debugger Extens
 ## Controlling the Verifier's Behavior
 
 
-We recommend that you use the [WDF Verifier control application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) to control the options below. However, you can directly modify the following values in the registry.
+We recommend that you use the [WDF Verifier control application](../devtest/wdf-verifier-control-application.md) to control the options below. However, you can directly modify the following values in the registry.
 
 The relevant values are located under the **Parameters\\Wdf** subkey of the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services** key.
 
 <a href="" id="verifyon-----------------reg-dword-"></a>**VerifyOn** (**REG\_DWORD**)  
-Set this value to a nonzero value to enable the [**WDFVERIFY**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfverify) macro.
+Set this value to a nonzero value to enable the [**WDFVERIFY**](./wdfverify.md) macro.
 
 <a href="" id="dbgbreakonerror-----------------------------reg-dword-"></a>**DbgBreakOnError** (**REG\_DWORD**)  
-If this value is set to a nonzero value, the framework will break into the debugger (if available) each time that a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint).
+If this value is set to a nonzero value, the framework will break into the debugger (if available) each time that a driver calls [**WdfVerifierDbgBreakPoint**](/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint).
 
 <a href="" id="dbgwaitforsignaltimeoutinsec---------------reg-dword-"></a>**DbgWaitForSignalTimeoutInSec** (**REG\_DWORD**)  
 Starting in Windows 8, when **VerifierOn** and **DbgBreakOnError** are set to nonzero values, the driver can change the default time-out period by setting **DbgWaitForSignalTimeoutInSec**.
@@ -77,10 +77,4 @@ As a general rule, if you set the above registry values, delete them when they a
 For full descriptions of these registry values, see [Registry Values for Debugging Framework-based Drivers](registry-values-for-debugging-kmdf-drivers.md).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: FSCTL_DELETE_EXTERNAL_BACKING control code
 description: The FSCTL\_DELETE\_EXTERNAL\_BACKING control code removes the association of a file with an external backing provider, including the Windows Image Format (WIM) provider or compressed file provider.
-ms.assetid: 5C150899-6BCA-49EB-AEEB-0CBEC7BE60BA
 keywords: ["FSCTL_DELETE_EXTERNAL_BACKING control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,18 +19,18 @@ ms.localizationpriority: medium
 
 The **FSCTL\_DELETE\_EXTERNAL\_BACKING** control code removes the association of a file with an external backing provider, including the Windows Image Format (WIM) provider or compressed file provider. As a result of this operation, the entire contents of a backed file are read, decompressed, and written into the file.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 **Parameters**
 
 <a href="" id="instance--in-"></a>*Instance \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer for the caller. This parameter is required and cannot be NULL.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer for the caller. This parameter is required and cannot be NULL.
 
 <a href="" id="fileobject--in-"></a>*FileObject \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object of the file for which backing association is deleted. This parameter is required and cannot be NULL.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object of the file for which backing association is deleted. This parameter is required and cannot be NULL.
 
 <a href="" id="filehandle--in-"></a>*FileHandle \[in\]*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. The handle of the file for which backing association is deleted. This parameter is required and cannot be NULL.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. The handle of the file for which backing association is deleted. This parameter is required and cannot be NULL.
 
 <a href="" id="fscontrolcode--in-"></a>*FsControlCode \[in\]*  
 The control code for the operation. Use **FSCTL\_DELETE\_EXTERNAL\_BACKING** for this operation.
@@ -48,10 +47,9 @@ None. Set to NULL.
 <a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
 Set to 0.
 
-Status block
-------------
+## Status block
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
 <table>
 <colgroup>
@@ -82,13 +80,11 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 As a result of the delete operation, the contents of the file are read from the backing source and the entire file is written to the volume.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -110,18 +106,11 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
 [**FSCTL\_SET\_EXTERNAL\_BACKING**](fsctl-set-external-backing.md)
 
  
-
- 
-
-
-
-
-
 

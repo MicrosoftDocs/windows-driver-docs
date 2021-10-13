@@ -1,7 +1,6 @@
 ---
 title: Specifying Hardware IDs for a Bluetooth Device
 description: Specifying Hardware IDs for a Bluetooth Device
-ms.assetid: 7fc8e53a-3fa9-4dad-a507-310329ca88c0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

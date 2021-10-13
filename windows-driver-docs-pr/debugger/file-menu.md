@@ -1,7 +1,6 @@
 ---
 title: File Menu
 description: File Menu
-ms.assetid: ce9652a8-cee5-4294-b90b-fe1a24a862dc
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

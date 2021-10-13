@@ -1,7 +1,6 @@
 ---
 title: Asynchronous I/O for IEEE 1394 Devices
 description: Asynchronous I/O for IEEE 1394 Devices
-ms.assetid: 36ca83d9-83ed-4366-81e7-63c5337f8643
 keywords:
 - IEEE 1394 WDK buses , asynchronous I/O
 - 1394 WDK buses , asynchronous I/O
@@ -25,14 +24,9 @@ Devices on the IEEE 1394 bus communicate, in asynchronous mode, by sending and r
 
 A driver can communicate to its device by sending asynchronous I/O requests to the device. The driver can also allocate ranges of addresses in the IEEE 1394 address space of the host computer, and receive requests to these addresses. Both are documented in the following sections:
 
-[Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus](https://docs.microsoft.com/windows-hardware/drivers/ieee/sending-asynchronous-i-o-request-packets-on-the-ieee-1394-bus)
+[Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus](./sending-asynchronous-i-o-request-packets-on-the-ieee-1394-bus.md)
 
-[Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus](https://docs.microsoft.com/windows-hardware/drivers/ieee/receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus)
-
- 
+[Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus](./receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus.md)
 
  
-
-
-
 

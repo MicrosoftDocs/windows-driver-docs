@@ -1,8 +1,7 @@
 ---
 title: IrqlKeWaitForMutexObject rule (wdm)
-ms.assetid: f2e7b733-1746-4db5-b4a9-becd211e40cf
 ms.date: 05/21/2018
-description: 
+description: "Learn more about: IrqlKeWaitForMutexObject rule (wdm)"
 keywords: ["IrqlKeWaitForMutexObject rule (wdm)"]
 topic_type:
 - apiref
@@ -16,18 +15,15 @@ ms.localizationpriority: medium
 # IrqlKeWaitForMutexObject rule (wdm)
 
 
-The **IrqlKeWaitForMutexObject** rule specifies the driver to call the [**KeWaitForMutexObject**](https://msdn.microsoft.com/library/windows/hardware/ff553344) routine at the proper IRQL based on the value of the *Timeout* parameter:
+The **IrqlKeWaitForMutexObject** rule specifies the driver to call the [**KeWaitForMutexObject**](/windows-hardware/drivers/ddi/wdm/) routine at the proper IRQL based on the value of the *Timeout* parameter:
 
 -   If *Timeout* points to a zero value, the driver is executing at IRQL = DISPATCH\_LEVEL.
 
 -   If *Timeout* is **NULL**, or points to any value other than zero, the driver is executing at IRQL &lt;= APC\_LEVEL.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -40,27 +36,18 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier" data-raw-source="[Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier)">Static Driver Verifier</a> and specify the <strong>IrqlKeWaitForMutexObject</strong> rule.</p>
+<td align="left"><p>Run <a href="/windows-hardware/drivers/devtest/static-driver-verifier" data-raw-source="[Static Driver Verifier](./static-driver-verifier.md)">Static Driver Verifier</a> and specify the <strong>IrqlKeWaitForMutexObject</strong> rule.</p>
 Use the following steps to run an analysis of your code:
 <ol>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
+<li><a href="/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](./using-static-driver-verifier-to-find-defects-in-drivers.md#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
+<li><a href="/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](./using-static-driver-verifier-to-find-defects-in-drivers.md#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
+<li><a href="/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](./using-static-driver-verifier-to-find-defects-in-drivers.md#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
 </ol>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
+<p>For more information, see <a href="/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
-[**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject)
- 
-
- 
-
-
-
-
-
+[**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject)

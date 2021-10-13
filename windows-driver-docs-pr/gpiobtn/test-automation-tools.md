@@ -1,7 +1,6 @@
 ---
 title: Test automation tools
 description: GPIO test automation uses the MITT platform.
-ms.assetid: F6C4FCC2-210B-4B6E-9D1A-77842E470025
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,7 +10,7 @@ ms.date: 10/17/2018
 
 GPIO test automation uses the MITT platform.
 
-To get started, see [GPIO tests in MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/gpio-tests-in-mitt). Download the installer, unpack its contents, and read the **ReadMe** file for a general overview of the tool.
+To get started, see [GPIO tests in MITT](../spb/gpio-tests-in-mitt.md). Download the installer, unpack its contents, and read the **ReadMe** file for a general overview of the tool.
 
 To connect the tool to the system under test, the GPIO button and indicator pin-outs are required. After the board is set up and its related package is installed, you can use it in either of the following ways:
 
@@ -20,17 +19,10 @@ To connect the tool to the system under test, the GPIO button and indicator pin-
 
 The test binaries are part of the MITT tool installer. To start the tests, follow the instructions under “Running the GPIO automation” section of the MITT documentation.
 
-The MITT tool can directly generate the GPIO impulses that are needed to simulate the equivalent of various button press actions (press down, hold the button press and releasing the button). The tests are [SimpleIo](https://go.microsoft.com/fwlink/p/?linkid=296486)-based and can detect issues, such as the indicators coming out of sync after power transitions.
+The MITT tool can directly generate the GPIO impulses that are needed to simulate the equivalent of various button press actions (press down, hold the button press and releasing the button). The tests are [SimpleIo](../wdtf/provided-wdtf-simpleio-plug-ins.md)-based and can detect issues, such as the indicators coming out of sync after power transitions.
 
 **Note**  
 The MITT platform can easily accommodate customized input patterns. See the MITT Readme file for instructions on how to generate these.
 
  
-
- 
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_PREFERRED_PROVIDERS
 description: OID_WWAN_PREFERRED_PROVIDERS returns information about the list of preferred providers for GSM-based devices.
-ms.assetid: fa70f1ac-5b14-44f8-a2c4-d2163fe81c5a
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PREFERRED_PROVIDERS Network Drivers Starting with Windows Vista
@@ -13,12 +12,11 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_PREFERRED\_PROVIDERS returns information about the list of preferred providers for GSM-based devices. Miniport drivers of CDMA-based devices do not need to support this OID.
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_PREFERRED\_PROVIDERS**](ndis-status-wwan-preferred-providers.md) status notification containing an [**NDIS\_WWAN\_PREFERRED\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_providers) structure to provide information about the Preferred Provider List (PPL) regardless of completing set or query requests.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_PREFERRED\_PROVIDERS**](ndis-status-wwan-preferred-providers.md) status notification containing an [**NDIS\_WWAN\_PREFERRED\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_providers) structure to provide information about the Preferred Provider List (PPL) regardless of completing set or query requests.
 
-Remarks
--------
+## Remarks
 
-For more information about using this OID, see [WWAN Provider Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-provider-operations).
+For more information about using this OID, see [WWAN Provider Operations](./mb-provider-operations.md).
 
 Miniport drivers can access the Subscriber Identity Module (SIM card) when processing query requests, but should not access the provider network.
 
@@ -32,8 +30,7 @@ Whether the PPL on the device can be overwritten or not when processing set requ
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support returning or setting the PPL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -55,16 +52,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_PREFERRED\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_providers)
+[**NDIS\_WWAN\_PREFERRED\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_providers)
 
 [**NDIS\_STATUS\_WWAN\_PREFERRED\_PROVIDERS**](ndis-status-wwan-preferred-providers.md)
 
-[WWAN Provider Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-provider-operations)
+[WWAN Provider Operations](./mb-provider-operations.md)
 
  
-
- 
-
-
-
 

@@ -1,6 +1,5 @@
 ---
 title: YUV format ranges in Windows 8.1
-ms.assetid: D76FFB8C-CA42-446E-826F-52982B1849E5
 description: How User-mode display drivers take advantage of YUV video formats
 keywords:
 - full-range YUV WDK display
@@ -8,7 +7,6 @@ keywords:
 - studio luminance range YUV WDK display
 - YUV formats and WMF support WDK display
 ms.date: 04/20/2017
-keywords: ["full-range YUV WDK display", "extended-range YUV WDK display", "studio luminance range YUV WDK display", "YUV formats and WMF support WDK display"]
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +38,7 @@ These images show how YUV extended-range content that ranges from dark to light 
 
 The incorrect interpretation in the top image shows increased contrast and highlights become excessively bright before pure white is reached.
 
-![comparison of incorrect and correct interpretation of extended-range yuv content](images/extended-range-yuv.png)
+![comparison of incorrect and correct interpretation of extended-range yuv content.](images/extended-range-yuv.png)
 
 ## <span id="Extended-range_YUV_interface"></span><span id="extended-range_yuv_interface"></span><span id="EXTENDED-RANGE_YUV_INTERFACE"></span>Extended-range YUV interface
 
@@ -49,16 +47,16 @@ Before Windows 8.1, Media Foundation only supported studio luminance range, so 
 
 ### <span id="New_enumerations"></span><span id="new_enumerations"></span><span id="NEW_ENUMERATIONS"></span>New enumerations
 
--   [**D3D11\_1DDI\_VIDEO\_PROCESSOR\_NOMINAL\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range)
--   [**DXVAHDDDI\_NOMINAL\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ne-d3dumddi-_dxvahdddi_nominal_range)
+-   [**D3D11\_1DDI\_VIDEO\_PROCESSOR\_NOMINAL\_RANGE**](/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range)
+-   [**DXVAHDDDI\_NOMINAL\_RANGE**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvahdddi_nominal_range)
 
 ### <span id="Changed_structures_and_enumerations"></span><span id="changed_structures_and_enumerations"></span><span id="CHANGED_STRUCTURES_AND_ENUMERATIONS"></span>Changed structures and enumerations
 
--   [**D3D11\_1DDI\_VIDEO\_PROCESSOR\_COLOR\_SPACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_processor_color_space)
--   [**D3D11\_1DDI\_VIDEO\_PROCESSOR\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_device_caps)
--   [**DXVAHDDDI\_BLT\_STATE\_OUTPUT\_COLOR\_SPACE\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_dxvahdddi_blt_state_output_color_space_data)
--   [**DXVAHDDDI\_STREAM\_STATE\_INPUT\_COLOR\_SPACE\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_dxvahdddi_stream_state_input_color_space_data)
--   [**DXVAHDDDI\_VPDEVCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_dxvahdddi_vpdevcaps)
+-   [**D3D11\_1DDI\_VIDEO\_PROCESSOR\_COLOR\_SPACE**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_processor_color_space)
+-   [**D3D11\_1DDI\_VIDEO\_PROCESSOR\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_device_caps)
+-   [**DXVAHDDDI\_BLT\_STATE\_OUTPUT\_COLOR\_SPACE\_DATA**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_blt_state_output_color_space_data)
+-   [**DXVAHDDDI\_STREAM\_STATE\_INPUT\_COLOR\_SPACE\_DATA**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_stream_state_input_color_space_data)
+-   [**DXVAHDDDI\_VPDEVCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_vpdevcaps)
 
 **Note**  WDDM 1.3 and greater user-mode display drivers must support all of these new and changed structures and enumerations.
 
@@ -67,10 +65,4 @@ Before Windows 8.1, Media Foundation only supported studio luminance range, so 
 See [YUV-RGB data range conversions](yuv-rgb-data-range-conversions.md) for details on how to convert between different input RGB and YUV formats.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Data Copying and Caching Policy
 description: Data Copying and Caching Policy
-ms.assetid: 1867f2bd-240c-4525-9f02-98b8f1d54b17
 keywords:
 - HD Audio, caching
 - High Definition Audio (HD Audio), caching
@@ -30,20 +29,15 @@ The function driver cannot detect whether the PCI controller hardware supports s
 
 To support devices and systems that do not perform bus snooping, a custom function driver must follow these rules:
 
--   For a playback stream, specify the DMA buffer's cache type as **MmWriteCombined**. After copying a block of data from the client buffer to the DMA buffer, call the [**KeMemoryBarrier**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kememorybarrier) function to make the data visible to the DMA engine. **KeMemoryBarrier** flushes the copied data to memory in an efficient way that leaves the processor's data caches largely undisturbed.
+-   For a playback stream, specify the DMA buffer's cache type as **MmWriteCombined**. After copying a block of data from the client buffer to the DMA buffer, call the [**KeMemoryBarrier**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kememorybarrier) function to make the data visible to the DMA engine. **KeMemoryBarrier** flushes the copied data to memory in an efficient way that leaves the processor's data caches largely undisturbed.
 
 -   For a capture stream, specify the DMA buffer's cache type as either **MmWriteCombined** or **MmNonCached**. In addition, the function driver should avoid writing to the DMA buffer. If it must perform in-place processing of audio samples, it should first copy the data elsewhere.
 
 The block of data that the function driver copies to or from the DMA buffer is not required to begin or end on a write-combining buffer boundary, and its size is not required to be a multiple of the write-combining buffer size (typically, 32 or 64 bytes).
 
-For codec function drivers that use the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) version of the DDI, the [**AllocateContiguousDmaBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer) routine performs both the allocation and mapping of the DMA buffer memory. The routine always sets the buffer's cache type to **MmWriteCombined**.
+For codec function drivers that use the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) version of the DDI, the [**AllocateContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer) routine performs both the allocation and mapping of the DMA buffer memory. The routine always sets the buffer's cache type to **MmWriteCombined**.
 
-For more information about write-combining, see the IA-32 Intel Architecture Software Developer's Manual at the [Intel](https://go.microsoft.com/fwlink/p/?linkid=38518) website.
-
- 
+For more information about write-combining, see the IA-32 Intel Architecture Software Developer's Manual at the [Intel](https://www.intel.com/content/www/us/en/homepage.html) website.
 
  
-
-
-
 

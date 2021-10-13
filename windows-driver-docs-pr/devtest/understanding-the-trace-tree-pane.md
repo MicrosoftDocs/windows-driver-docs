@@ -1,7 +1,6 @@
 ---
 title: Understanding the Trace Tree Pane
 description: Understanding the Trace Tree Pane
-ms.assetid: 98640d7e-29fc-4397-ac6b-47f4e17f88a1
 keywords:
 - Static Driver Verifier Report WDK , Trace Tree pane
 - Trace Tree pane WDK Static Driver Verifier
@@ -18,7 +17,7 @@ The **Trace Tree** pane is organized into a hierarchical structure with a series
 
 The following screen shot shows an example **Trace Tree** pane.
 
-![screen shot of the trace tree pane in the defect viewer](images/sdv-tracetree.png)
+![screen shot of the trace tree pane in the defect viewer.](images/sdv-tracetree.png)
 
 Each code element in the **Trace Tree** pane is preceded by its line number in the source file. This numbering helps you find the code element in the Source Tree window and in the source file.
 
@@ -28,13 +27,7 @@ Some lines of code in the **Source Code** pane correspond to more than one eleme
 IoReleaseCancelSpinLock(KeGetCurrentIrql());
 ```
 
-In this situation, the **Trace Tree** pane would include a critical element for the [**KeGetCurrentIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kegetcurrentirql) function call, a few calls to the SDV operating system model to randomly generate an IRQL, and then a call to [**IoReleaseCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) with the returned IRQL.
+In this situation, the **Trace Tree** pane would include a critical element for the [**KeGetCurrentIrql**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kegetcurrentirql) function call, a few calls to the SDV operating system model to randomly generate an IRQL, and then a call to [**IoReleaseCancelSpinLock**](/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) with the returned IRQL.
 
  
-
- 
-
-
-
-
 

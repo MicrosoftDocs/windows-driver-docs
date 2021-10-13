@@ -1,7 +1,6 @@
 ---
 title: Topology Filters
 description: Topology Filters
-ms.assetid: 1b3d35e9-5858-407c-9cd0-06307d82ce58
 keywords:
 - audio filters WDK audio , topology filters
 - topology filters WDK audio
@@ -38,23 +37,23 @@ A topology filter is implemented as a port/miniport pair. A topology filter fact
 
 -   It instantiates a Topology miniport driver object.
 
--   It instantiates a Topology port driver object by calling [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewport) with GUID value **CLSID\_PortTopology**.
+-   It instantiates a Topology port driver object by calling [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) with GUID value **CLSID\_PortTopology**.
 
--   It calls the port driver's [**IPort::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
 
 The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process.
 
-The Topology port and miniport drivers communicate with each other through their respective [IPortTopology](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iporttopology) and [IMiniportTopology](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiporttopology) interfaces. These interfaces are relatively simple compared to those for wave and MIDI port and miniport drivers because topology filters do not need to explicitly manage the streams that pass through their pins. A topology filter's pins represent hardwired connections in the adapter hardware. The physical connection underlying a topology filter pin typically carries an analog audio signal, but might carry a digital audio stream instead, depending on the hardware implementation.
+The Topology port and miniport drivers communicate with each other through their respective [IPortTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology) and [IMiniportTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology) interfaces. These interfaces are relatively simple compared to those for wave and MIDI port and miniport drivers because topology filters do not need to explicitly manage the streams that pass through their pins. A topology filter's pins represent hardwired connections in the adapter hardware. The physical connection underlying a topology filter pin typically carries an analog audio signal, but might carry a digital audio stream instead, depending on the hardware implementation.
 
-In contrast to the [IMiniportWaveCyclic](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavecyclic), [IMiniportWavePci](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavepci), [IMiniportMidi](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportmidi), and [IMiniportDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iminiportdmus) interfaces, the [IMiniportTopology](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiporttopology) interface has no **NewStream** method.
+In contrast to the [IMiniportWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclic), [IMiniportWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci), [IMiniportMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi), and [IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus) interfaces, the [IMiniportTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology) interface has no **NewStream** method.
 
 Most of the functionality of a topology filter is provided by its property handlers. The topology filter exists primarily to provide topology information to the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) and to applications that use the Microsoft Windows Multimedia mixer API. The property handlers in the topology filter provide access to the various controls (such as volume, equalization, and reverb) that audio adapters typically offer. Through property requests, the mixer API can enumerate the control nodes in the adapter hardware, discover connections between nodes, and both query and set the nodes' control parameters. The SndVol32 application (see [SysTray and SndVol32](systray-and-sndvol32.md)) uses the mixer API to discover the adapter's per-stream volume and mute controls.
 
-When building a filter graph, SysAudio queries the topology filter for the [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-physicalconnection) properties at its pins to determine which wave, MIDI, or DirectMusic filter pin is connected to which topology filter pin.
+When building a filter graph, SysAudio queries the topology filter for the [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](../stream/ksproperty-pin-physicalconnection.md) properties at its pins to determine which wave, MIDI, or DirectMusic filter pin is connected to which topology filter pin.
 
-Unlike a wave, MIDI, or DirectMusic filter, a topology filter does not instantiate pins. Thus, no pin objects are available to handle queries for a topology filter's pin properties. The topology filter itself handles all queries regarding the physical connections at its pins. For more information, see [KSPROPSETID\_Pin](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-pin).
+Unlike a wave, MIDI, or DirectMusic filter, a topology filter does not instantiate pins. Thus, no pin objects are available to handle queries for a topology filter's pin properties. The topology filter itself handles all queries regarding the physical connections at its pins. For more information, see [KSPROPSETID\_Pin](../stream/kspropsetid-pin.md).
 
-Similar to other types of audio filters, a topology filter uses an array of [**PCCONNECTION\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)) structures to describe its internal topology. The miniport driver exposes this array in the [**PCFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcfilter_descriptor) structure that it outputs from the [**IMiniport::GetDescription**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiport-getdescription) method. The array specifies the topology as a list of connections between the topology filter's nodes and pins (see [Nodes and Connections](nodes-and-connections.md)). The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) translates these connections and nodes into the mixer lines and controls that the mixer API exposes to applications. As discussed in [Audio Filters](audio-filters.md), an input pin on a KS filter maps to a SRC mixer line, and an output pin on a filter maps to a DST mixer line.
+Similar to other types of audio filters, a topology filter uses an array of [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)) structures to describe its internal topology. The miniport driver exposes this array in the [**PCFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor) structure that it outputs from the [**IMiniport::GetDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription) method. The array specifies the topology as a list of connections between the topology filter's nodes and pins (see [Nodes and Connections](nodes-and-connections.md)). The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) translates these connections and nodes into the mixer lines and controls that the mixer API exposes to applications. As discussed in [Audio Filters](audio-filters.md), an input pin on a KS filter maps to a SRC mixer line, and an output pin on a filter maps to a DST mixer line.
 
 A typical audio adapter can play wave and MIDI files through a speaker, and can capture audio signals from a microphone and a MIDI synthesizer. The code example below contains the PCCONNECTION\_DESCRIPTOR array for a topology filter that exposes these capabilities:
 
@@ -109,13 +108,13 @@ A typical audio adapter can play wave and MIDI files through a speaker, and can 
     };
 ```
 
-Constant [**PCFILTER\_NODE**](https://docs.microsoft.com/previous-versions/ff537695(v=vs.85)) in the preceding code example is the null node ID and is defined in header file Portcls.h. For a description of how this constant is used to distinguish external pins on a filter from logical pins on a node, see [**PCCONNECTION\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)).
+Constant [**PCFILTER\_NODE**](/previous-versions/ff537695(v=vs.85)) in the preceding code example is the null node ID and is defined in header file Portcls.h. For a description of how this constant is used to distinguish external pins on a filter from logical pins on a node, see [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)).
 
 Each pin name in the preceding code example ends with either "SRC" or "DST" depending on whether the mixer API maps the pin to a source or destination mixer line. To avoid confusion, remember that source and destination mixer lines map to sink (input) and source (output) KS filter pins, respectively. For more information, see [Audio Filters](audio-filters.md).
 
 The PCCONNECTION\_DESCRIPTOR array in the preceding code example describes the topology filter in the following figure.
 
-![diagram illustrating the topology filter connections described by the pcconnection\-descriptor array](images/topofilt.png)
+![diagram illustrating the topology filter connections described by the pcconnection\-descriptor array.](images/topofilt.png)
 
 The topology filter in the figure has four input (sink) pins on the left and two output (source) pins on the right. The data paths that connect the top two input pins and top output pin mix the two analog signals that have been rendered from the wave and MIDI streams that are being played back. The data paths that connect the bottom two input pins and bottom output pin multiplex the captured analog signals that are being recorded.
 
@@ -135,22 +134,17 @@ The two output pins operate as follows:
 
 -   The KSPIN\_TOPO\_WAVEIN\_DST pin is physically connected to the input pin of a wave filter, which converts the analog signal to a wave stream and writes it to a destination such as a .wav file.
 
-The volume and mute nodes (see [**KSNODETYPE\_VOLUME**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-volume) and [**KSNODETYPE\_MUTE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-mute)) are used to control the volume levels of the various streams. The SUM node (see [**KSNODETYPE\_SUM**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-sum)) mixes the audio streams from the wave and MIDI inputs. The MUX node (see [**KSNODETYPE\_MUX**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-mux)) selects between the two input streams.
+The volume and mute nodes (see [**KSNODETYPE\_VOLUME**](./ksnodetype-volume.md) and [**KSNODETYPE\_MUTE**](./ksnodetype-mute.md)) are used to control the volume levels of the various streams. The SUM node (see [**KSNODETYPE\_SUM**](./ksnodetype-sum.md)) mixes the audio streams from the wave and MIDI inputs. The MUX node (see [**KSNODETYPE\_MUX**](./ksnodetype-mux.md)) selects between the two input streams.
 
 The figure uses a dashed arrow to indicate a connection between two nodes or between a pin and a node. The arrow points in the direction of data flow. The diagram shows a total of 13 connections, each of which corresponds to one of the 13 elements in the PCCONNECTION\_DESCRIPTOR array in the preceding code example.
 
 In addition to the topology filter, the adapter driver creates other filters--wave, FM synth, wave table, and so on--that connect to the pins on the topology filter.
 
-For example, the wave filter that is physically connected to the topology filter's KSPIN\_TOPO\_WAVEOUT\_SRC pin contains a DAC (represented by a [**KSNODETYPE\_DAC**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-dac) node) that converts PCM data to the analog signal that it outputs to the topology filter's pin. The FM-synth or a wavetable synth filter that is physically connected to the topology filter's KSPIN\_TOPO\_SYNTHOUT\_SRC pin similarly converts MIDI data to an analog signal that it outputs to the topology filter's pin. The topology filter mixes the analog signals from these two pins and outputs the mixed signal to the speakers.
+For example, the wave filter that is physically connected to the topology filter's KSPIN\_TOPO\_WAVEOUT\_SRC pin contains a DAC (represented by a [**KSNODETYPE\_DAC**](./ksnodetype-dac.md) node) that converts PCM data to the analog signal that it outputs to the topology filter's pin. The FM-synth or a wavetable synth filter that is physically connected to the topology filter's KSPIN\_TOPO\_SYNTHOUT\_SRC pin similarly converts MIDI data to an analog signal that it outputs to the topology filter's pin. The topology filter mixes the analog signals from these two pins and outputs the mixed signal to the speakers.
 
 The topology filter's physical connections to other filters that represent other hardware devices on the same adapter card need to be distinguished from other types of connections to filters. For example, certain pins on wave, MIDI, and DirectMusic filters can be connected or disconnected under software control.
 
-During device startup, the adapter driver registers the topology filter's physical connections by calling [**PcRegisterPhysicalConnection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcregisterphysicalconnection) once per connection. The port driver needs this information in order to respond to [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-physicalconnection) get-property requests.
+During device startup, the adapter driver registers the topology filter's physical connections by calling [**PcRegisterPhysicalConnection**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection) once per connection. The port driver needs this information in order to respond to [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](../stream/ksproperty-pin-physicalconnection.md) get-property requests.
 
  
-
- 
-
-
-
 

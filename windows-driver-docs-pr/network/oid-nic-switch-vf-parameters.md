@@ -1,7 +1,6 @@
 ---
 title: OID_NIC_SWITCH_VF_PARAMETERS
 description: An overlying driver or user-mode application issues an object identifier (OID) method request of OID_NIC_SWITCH_VF_PARAMETERS to obtain the current configuration parameters of a PCI Express (PCIe) Virtual Function (VF) on a network adapter.
-ms.assetid: DF08B0BA-6D86-4C4F-AC38-8A401F097925
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_VF_PARAMETERS Network Drivers Starting with Windows Vista
@@ -15,26 +14,25 @@ An overlying driver or user-mode application issues an object identifier (OID) m
 
 NDIS handles the OID method request of OID\_NIC\_SWITCH\_VF\_PARAMETERS for miniport drivers.
 
-When the OID method request is made, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
+When the OID method request is made, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
 
-Remarks
--------
+## Remarks
 
-The overlying driver or user-mode application specifies the VF to query by setting the **VFId** member of the [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure to the identifier of the VF. The overlying driver or application obtains the VF identifier through one of the following ways:
+The overlying driver or user-mode application specifies the VF to query by setting the **VFId** member of the [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure to the identifier of the VF. The overlying driver or application obtains the VF identifier through one of the following ways:
 
 -   By issuing an OID method request of [OID\_NIC\_SWITCH\_ENUM\_VFS](oid-nic-switch-enum-vfs.md).
 
-    If this OID request is completed successfully, the overlying driver or user-mode application receives a list of all VFs allocated on the network adapter. Each element within the list is an [**NDIS\_NIC\_SWITCH\_VF\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_info) structure, with the VF identifier specified by the **VFId** member.
+    If this OID request is completed successfully, the overlying driver or user-mode application receives a list of all VFs allocated on the network adapter. Each element within the list is an [**NDIS\_NIC\_SWITCH\_VF\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_info) structure, with the VF identifier specified by the **VFId** member.
 
 -   By issuing an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](oid-nic-switch-allocate-vf.md).
 
-    If this OID request is completed successfully, the overlying driver receives the identifier of the newly created VF in the **VFId** member of the returned [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
+    If this OID request is completed successfully, the overlying driver receives the identifier of the newly created VF in the **VFId** member of the returned [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
 
     **Note**  Only overlying drivers can obtain the VF identifier in this manner.
 
      
 
-After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure. This structure contains the configuration parameters for the specified VF.
+After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure. This structure contains the configuration parameters for the specified VF.
 
 ### Return Status Codes
 
@@ -54,7 +52,7 @@ NDIS handles the OID method request of OID\_NIC\_SWITCH\_VF\_PARAMETERS for mini
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_SUCCESS</p></td>
-<td><p>The request completed successfully. The <strong>InformationBuffer</strong> member points to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters)"><strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong></a> structure.</p></td>
+<td><p>The request completed successfully. The <strong>InformationBuffer</strong> member points to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters)"><strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_NOT_SUPPORTED</p></td>
@@ -62,15 +60,15 @@ NDIS handles the OID method request of OID\_NIC\_SWITCH\_VF\_PARAMETERS for mini
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters)"><strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong></a> structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters)"><strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters)"><strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong></a>). NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than sizeof(<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters)"><strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong></a>). NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -81,8 +79,7 @@ NDIS handles the OID method request of OID\_NIC\_SWITCH\_VF\_PARAMETERS for mini
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -105,22 +102,15 @@ Requirements
 
 
 ****
-[**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters)
+[**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters)
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [OID\_NIC\_SWITCH\_ALLOCATE\_VF](oid-nic-switch-allocate-vf.md)
 
 [OID\_NIC\_SWITCH\_ENUM\_VFS](oid-nic-switch-enum-vfs.md)
 
-[**NDIS\_NIC\_SWITCH\_VF\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_info)
+[**NDIS\_NIC\_SWITCH\_VF\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_info)
 
 [OID\_NIC\_SWITCH\_VF\_PARAMETERS](oid-nic-switch-vf-parameters.md)
-
- 
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WDI Selective Suspend capability registration
 description: The following is a flow diagram for registering the USB Selective Suspend capability.
-ms.assetid: E4AE424F-2017-4111-B4C7-DF0BA6A40A15
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 The following is a flow diagram for registering the USB Selective Suspend capability.
 
-![wdi selective suspend capability registration](images/wdi-register-usb-selective-suspend-flow.png)
+![wdi selective suspend capability registration.](images/wdi-register-usb-selective-suspend-flow.png)
 
 AdapterCap(PM(ss)), \*SelectiveSuspend, **LeIdleNotificationHandler**, and **LeCancelIdleNotificationHandler** must be true or valid for WDI to register that WLAN supports Selective Suspend.
 
@@ -20,16 +19,9 @@ When WDI decides that Selective Suspend can be supported, WDI also registers an 
 ## Related topics
 
 
-[*MiniportWdiCancelIdleNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/nc-dot11wdi-miniport_wdi_cancel_idle_notification)
+[*MiniportWdiCancelIdleNotification*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_cancel_idle_notification)
 
-[*MiniportWdiIdleNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/nc-dot11wdi-miniport_wdi_idle_notification)
-
- 
+[*MiniportWdiIdleNotification*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_idle_notification)
 
  
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: HBAFC3MgmtInfo WMI Class
 description: HBAFC3MgmtInfo WMI Class
-ms.assetid: 7c3e5b7e-aed9-4d82-91d9-e0c7b8f5ddf6
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -40,13 +39,7 @@ class HBAFC3MgmtInfo {
 };
 ```
 
-When compiled by the WMI tool suite, this class definition produces the [**HBAFC3MgmtInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo) data structure. There are no methods associated with this WMI class.
+When compiled by the WMI tool suite, this class definition produces the [**HBAFC3MgmtInfo**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

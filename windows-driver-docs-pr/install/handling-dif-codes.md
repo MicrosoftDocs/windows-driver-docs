@@ -1,7 +1,6 @@
 ---
 title: Handling DIF Codes
 description: Handling DIF Codes
-ms.assetid: cb54bc04-4cd4-4eec-ad74-2abbf601de54
 keywords:
 - co-installers WDK device installations , DIF codes
 - DIF codes WDK device installations
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-*Device installation applications* send [device installation function codes](https://docs.microsoft.com/previous-versions/ff541307(v=vs.85)) (DIF codes) to installers by calling [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller). This function, in turn, calls the installer's entry point function. For a description of installer entry points, see:
+*Device installation applications* send [device installation function codes](/previous-versions/ff541307(v=vs.85)) (DIF codes) to installers by calling [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller). This function, in turn, calls the installer's entry point function. For a description of installer entry points, see:
 
 [Co-installer Interface](co-installer-interface.md)
 
@@ -30,29 +29,29 @@ Describes the typical times when, and reasons why, a device installation applica
 Specifies which installers are allowed to handle this request. The installers include class installers, class co-installers (setup-class-wide co-installers), and device co-installers (device-specific co-installers).
 
 <a href="" id="installer-input"></a>**Installer Input**  
-Besides the DIF code, **SetupDiCallClassInstaller** supplies additional information relevant to the particular request. See the reference page for each DIF code for details on the information that is supplied with each request. The following list contains a general description of the additional input parameters, and lists the [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)) (**SetupDi*Xxx*** functions) that installers can call to handle the parameters:
+Besides the DIF code, **SetupDiCallClassInstaller** supplies additional information relevant to the particular request. See the reference page for each DIF code for details on the information that is supplied with each request. The following list contains a general description of the additional input parameters, and lists the [device installation functions](/previous-versions/ff541299(v=vs.85)) (**SetupDi*Xxx*** functions) that installers can call to handle the parameters:
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
 Supplies a handle to the device information set.
 
 The handle is opaque. Use the handle, for example, to identify the device information set in calls to **SetupDi*Xxx*** functions.
 
-The *DeviceInfoSet* might have an associated [device setup class](device-setup-classes.md). If so, call [**SetupDiGetDeviceInfoListClass**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinfolistclass) to get the class GUID.
+The *DeviceInfoSet* might have an associated [device setup class](./overview-of-device-setup-classes.md). If so, call [**SetupDiGetDeviceInfoListClass**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinfolistclass) to get the class GUID.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies a device in the device information set.
+Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that identifies a device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>*Device Installation Parameters*   
-These indirect parameters supply information for the device installation in an [**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure. If *DeviceInfoData* is not **NULL**, there are device installation parameters associated with the *DeviceInfoData*. If *DeviceInfoData* is **NULL**, the device installation parameters are associated with the *DeviceInfoSet*.
+These indirect parameters supply information for the device installation in an [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure. If *DeviceInfoData* is not **NULL**, there are device installation parameters associated with the *DeviceInfoData*. If *DeviceInfoData* is **NULL**, the device installation parameters are associated with the *DeviceInfoSet*.
 
-Call [**SetupDiGetDeviceInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa) to get the device installation parameters.
+Call [**SetupDiGetDeviceInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa) to get the device installation parameters.
 
 <a href="" id="class-installation-parameters"></a>*Class Installation Parameters*  
 The optional indirect parameters are specific to the particular DIF request. These are essentially "DIF request parameters." For example, the class installation parameters for a DIF_REMOVE installation request are contained in an SP_REMOVEDEVICE_PARAMS structure.
 
 Each SP_*XXX*_PARAMS structure starts with a fixed-sized SP_CLASSINSTALL_HEADER structure.
 
-Call [**SetupDiGetClassInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassinstallparamsa) to get the class installation parameters.
+Call [**SetupDiGetClassInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassinstallparamsa) to get the class installation parameters.
 
 If a DIF request has class installation parameters, there is a set of parameters associated with the *DeviceInfoSet* and another set of parameters associated with the *DeviceInfoData* (if the DIF request specifies *DeviceInfoData*). **SetupDiGetClassInstallParams** returns the most specific parameters available.
 
@@ -62,7 +61,7 @@ Co-installers have an optional context parameter.
 <a href="" id="installer-output"></a>**Installer Output**  
 Describes the output expected for this DIF code.
 
-If an installer modifies the device installation parameters, the installer must call [**SetupDiSetDeviceInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinstallparamsa) to apply the changes before returning. Similarly, if an installer modifies the class installation parameters for the DIF code, the installer must call [**SetupDiSetClassInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetclassinstallparamsa).
+If an installer modifies the device installation parameters, the installer must call [**SetupDiSetDeviceInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinstallparamsa) to apply the changes before returning. Similarly, if an installer modifies the class installation parameters for the DIF code, the installer must call [**SetupDiSetClassInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclassinstallparamsa).
 
 <a href="" id="installer-return-value"></a>**Installer Return Value**  
 Specifies the appropriate return values for the DIF code. See the following figure for more information about return values.
@@ -86,15 +85,9 @@ Lists sources of related information.
 
 The following figure shows the sequence of events in **SetupDiCallClassInstaller** for processing a DIF code.
 
-![diagram illustrating the flow of dif code processing in setupdicallclassinstaller](images/dif-flow.png)
+![diagram illustrating the flow of dif code processing in setupdicallclassinstaller.](images/dif-flow.png)
 
 The operating system performs some operations for each DIF code. Vendor-supplied co-installers and class installers can participate in the installation activities. Note that **SetupDiCallClassInstaller** calls co-installers that registered for postprocessing even if the DIF code fails.
 
  
-
- 
-
-
-
-
 

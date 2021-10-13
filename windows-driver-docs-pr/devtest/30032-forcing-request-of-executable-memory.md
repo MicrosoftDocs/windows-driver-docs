@@ -1,7 +1,6 @@
 ---
-title: C30032
+title: C30032 warning
 description: Warning C30032 Calling a memory allocating function and forcing the request of executable memory through use of the POOL_NX_OPTOUT directive.
-ms.assetid: 7C6F9ACE-DD02-45A7-A601-C5C7A5C89256
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 
@@ -11,11 +10,11 @@ f1_keywords:
 # C30032
 
 
-warning C30032: Calling a memory allocating function and forcing the request of executable memory through use of the [POOL\_NX\_OPTOUT](https://docs.microsoft.com/windows-hardware/drivers/kernel/selective-opt-out-pool-nx-optout) directive
+warning C30032: Calling a memory allocating function and forcing the request of executable memory through use of the [POOL\_NX\_OPTOUT](../kernel/selective-opt-out-pool-nx-optout.md) directive
 
 BANNED\_MEM\_ALLOCATION\_FORCE\_UNSAFE
 
-The preprocessor directive [POOL\_NX\_OPTOUT](https://docs.microsoft.com/windows-hardware/drivers/kernel/selective-opt-out-pool-nx-optout) prevents the auto-promotion of non-safe types (**MM\_PAGE\_PRIORITY** and **POOL\_TYPE**) to safe types (for example, NonPagedPool to NonPagedPoolNx). The use of POOL\_NX\_OPTOUT in your sources is likely by design. If this is by design and executable memory is required, then you can suppress the warning with [Pragma Prefast to Suppress Warning Messages](https://docs.microsoft.com/previous-versions/windows/embedded/gg155764(v=winembedded.70)). This type of allocation is not permitted on Windows 10 systems that have opted-in to additional memory protections.
+The preprocessor directive [POOL\_NX\_OPTOUT](../kernel/selective-opt-out-pool-nx-optout.md) prevents the auto-promotion of non-safe types (**MM\_PAGE\_PRIORITY** and **POOL\_TYPE**) to safe types (for example, NonPagedPool to NonPagedPoolNx). The use of POOL\_NX\_OPTOUT in your sources is likely by design. If this is by design and executable memory is required, then you can suppress the warning with [Pragma Prefast to Suppress Warning Messages](/previous-versions/windows/embedded/gg155764(v=winembedded.70)). This type of allocation is not permitted on Windows 10 systems that have opted-in to additional memory protections.
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -49,10 +48,4 @@ pPtr = MmGetSystemAddressForMdlSafe( pMdl, NormalPagePriority);
 ```
 
  
-
- 
-
-
-
-
 

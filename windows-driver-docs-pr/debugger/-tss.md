@@ -1,7 +1,6 @@
 ---
-title: tss
+title: tss (WinDbg)
 description: tss
-ms.assetid: 6b6109bf-8438-4cf5-963a-f2d1a5317c4e
 keywords: ["tss extension (obsolete)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

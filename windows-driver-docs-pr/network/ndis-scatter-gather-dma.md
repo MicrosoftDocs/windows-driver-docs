@@ -1,7 +1,6 @@
 ---
 title: NDIS Scatter/Gather DMA
 description: NDIS Scatter/Gather DMA
-ms.assetid: 70b8321b-7b21-4d11-a9c2-46b0caa26ce6
 keywords:
 - miniport drivers WDK networking , scatter/gather DMA
 - NDIS miniport drivers WDK , scatter/gather DMA
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 # NDIS Scatter/Gather DMA
 
-[!include[NDIS DMA ARM note](ndis-dma-arm-note.md)]
+[!include[NDIS DMA ARM note](../includes/ndis-dma-arm-note.md)]
 
 NDIS miniport drivers can use the Scatter/Gather DMA (SGDMA) method to transfer data between a NIC and system memory. A successful DMA transfer requires the physical address of the data to be in an address range that the NIC supports. HAL provides a mechanism for drivers to obtain the physical address list for an MDL chain and, if necessary, will double-buffer the data to a physical address range.
 
@@ -60,22 +59,22 @@ This approach yields the following benefits:
 
 ## Registering and Deregistering DMA Channels
 
-An NDIS miniport driver calls the [**NdisMRegisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterscattergatherdma) function from its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function to register a DMA channel with NDIS.
+An NDIS miniport driver calls the [**NdisMRegisterScatterGatherDma**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma) function from its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function to register a DMA channel with NDIS.
 
-The miniport driver passes a DMA description to [**NdisMRegisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterscattergatherdma) in the *DmaDescription* parameter. **NdisMRegisterScatterGatherDma** returns a size for the buffer that should be large enough to hold the scatter/gather list. Miniport drivers should use this size to preallocate the storage for scatter/gather lists.
+The miniport driver passes a DMA description to [**NdisMRegisterScatterGatherDma**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma) in the *DmaDescription* parameter. **NdisMRegisterScatterGatherDma** returns a size for the buffer that should be large enough to hold the scatter/gather list. Miniport drivers should use this size to preallocate the storage for scatter/gather lists.
 
-The miniport driver also passes [**NdisMRegisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterscattergatherdma) the entry points for the *MiniportXxx* functions that NDIS calls to process the scatter/gather list. NDIS calls the miniport driver's [*MiniportProcessSGList*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_process_sg_list) function after HAL has built the scatter/gather list for a buffer. **NdisMRegisterScatterGatherDma** supplies a handle in the *pNdisMiniportDmaHandle* parameter, which the miniport driver must use in subsequent calls to NDIS scatter/gather DMA functions.
+The miniport driver also passes [**NdisMRegisterScatterGatherDma**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma) the entry points for the *MiniportXxx* functions that NDIS calls to process the scatter/gather list. NDIS calls the miniport driver's [*MiniportProcessSGList*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_process_sg_list) function after HAL has built the scatter/gather list for a buffer. **NdisMRegisterScatterGatherDma** supplies a handle in the *pNdisMiniportDmaHandle* parameter, which the miniport driver must use in subsequent calls to NDIS scatter/gather DMA functions.
 
-An NDIS miniport driver calls the [**NdisMDeregisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterscattergatherdma) function from its [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_halt) function to release scatter/gather DMA resources.
+An NDIS miniport driver calls the [**NdisMDeregisterScatterGatherDma**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterscattergatherdma) function from its [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function to release scatter/gather DMA resources.
 
 ## Allocating and Freeing Scatter/Gather Lists
 
-An NDIS miniport driver calls the [**NdisMAllocateNetBufferSGList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismallocatenetbuffersglist) function in its [*MiniportSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_send_net_buffer_lists) function. The miniport driver calls **NdisMAllocateNetBufferSGList** once for each [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structure that it must map. After the resources become available and HAL has the SG list ready, NDIS calls the driver's [*MiniportProcessSGList*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_process_sg_list) function. NDIS can call *MiniportProcessSGList* before or after the miniport driver's call to **NdisMAllocateNetBufferSGList** returns.
+An NDIS miniport driver calls the [**NdisMAllocateNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatenetbuffersglist) function in its [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) function. The miniport driver calls **NdisMAllocateNetBufferSGList** once for each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure that it must map. After the resources become available and HAL has the SG list ready, NDIS calls the driver's [*MiniportProcessSGList*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_process_sg_list) function. NDIS can call *MiniportProcessSGList* before or after the miniport driver's call to **NdisMAllocateNetBufferSGList** returns.
 
-To improve system performance, the scatter/gather list is generated from the network data starting at the beginning of the MDL that is specified at the **CurrentMdl** member of the associated [**NET\_BUFFER\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_data) structure. The start of the network data in the SG list is offset from the beginning of the SG list by the value specified in the **CurrentMdlOffset** member of the associated **NET\_BUFFER\_DATA** structure.
+To improve system performance, the scatter/gather list is generated from the network data starting at the beginning of the MDL that is specified at the **CurrentMdl** member of the associated [**NET\_BUFFER\_DATA**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_data) structure. The start of the network data in the SG list is offset from the beginning of the SG list by the value specified in the **CurrentMdlOffset** member of the associated **NET\_BUFFER\_DATA** structure.
 
-While handling a DPC for a send-complete interrupt, and after the miniport driver does not need the SG list any more, the miniport driver should call the [**NdisMFreeNetBufferSGList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismfreenetbuffersglist) function to free the SG list.
+While handling a DPC for a send-complete interrupt, and after the miniport driver does not need the SG list any more, the miniport driver should call the [**NdisMFreeNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreenetbuffersglist) function to free the SG list.
 
-**Note**  Do not call [**NdisMFreeNetBufferSGList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismfreenetbuffersglist) while the driver or hardware is still accessing the memory that is described by the [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structure that is associated with the scatter/gather list. 
+**Note**  Do not call [**NdisMFreeNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreenetbuffersglist) while the driver or hardware is still accessing the memory that is described by the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure that is associated with the scatter/gather list. 
 
-Before accessing received data, miniport drivers must call [**NdisMFreeNetBufferSGList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismfreenetbuffersglist) to flush the memory cache.
+Before accessing received data, miniport drivers must call [**NdisMFreeNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreenetbuffersglist) to flush the memory cache.

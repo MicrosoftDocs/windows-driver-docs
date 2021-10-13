@@ -1,7 +1,6 @@
 ---
 title: Device Power States for Network Adapters
 description: Device Power States for Network Adapters
-ms.assetid: 969aadc9-e797-4a07-9714-8c2c5a6357da
 keywords:
 - NICs WDK networking , power states
 - network interface cards WDK networking , power states
@@ -27,10 +26,10 @@ The state number is inversely related to power consumption: higher-numbered stat
 
 For a thorough description of device states, see the following topics:
 
-* [Device Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-power-states)
-* [Device Working State D0](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-working-state-d0)
-* [Device Low-Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-sleeping-states)
-* [Required Support for Device Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/required-support-for-device-power-states)
+* [Device Power States](../kernel/device-power-states.md)
+* [Device Working State D0](../kernel/device-working-state-d0.md)
+* [Device Low-Power States](../kernel/device-sleeping-states.md)
+* [Required Support for Device Power States](../kernel/required-support-for-device-power-states.md)
 
 **Note**  NDIS processes power management IRPs, but NDIS drivers do not.
 
@@ -40,7 +39,7 @@ The device power states for network adapters are defined as follows:
 
 ### <a href="" id="d0"></a>Device Working State D0
 
-This power state is described for all devices in [Device Working State D0](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-working-state-d0). For network adapters and miniport drivers:
+This power state is described for all devices in [Device Working State D0](../kernel/device-working-state-d0.md). For network adapters and miniport drivers:
 
 <a href="" id="power-consumption"></a>Power consumption  
 The network adapter is fully powered and delivering full functionality and performance.
@@ -56,7 +55,7 @@ Not applicable.
 
 ### <a href="" id="d1"></a>Device Power State D1
 
-This power state is described for all devices in [Device Low-Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-sleeping-states). For network adapters and miniport drivers:
+This power state is described for all devices in [Device Low-Power States](../kernel/device-sleeping-states.md). For network adapters and miniport drivers:
 
 <a href="" id="power-consumption"></a>Power consumption  
 This state is the highest-powered sleeping state. Power consumption is less than that in the D0 state and greater than or equal to that in the D2 state.
@@ -76,7 +75,7 @@ The time to restore the network adapter to the D0 state is less than that requir
 
 ### <a href="" id="d2"></a>Device Power State D2
 
-This power state is described for all devices in [Device Low-Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-sleeping-states). For network adapters and miniport drivers:
+This power state is described for all devices in [Device Low-Power States](../kernel/device-sleeping-states.md). For network adapters and miniport drivers:
 
 <a href="" id="power-consumption"></a>Power consumption  
 An intermediate sleeping state. Power consumption is less than that in the D1 state and greater than or equal to that in the D3 state.
@@ -92,10 +91,10 @@ The time to restore the network adapter to the D0 state is greater than that req
 
 ### <a href="" id="d3"></a>Device Power State D3
 
-This power state is described for all devices in [Device Low-Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-sleeping-states). For network adapters and miniport drivers:
+This power state is described for all devices in [Device Low-Power States](../kernel/device-sleeping-states.md). For network adapters and miniport drivers:
 
 <a href="" id="power-consumption"></a>Power consumption  
-The sleeping state with the least amount of power. The amount of power may be nonzero (D3hot) or it may be exactly zero (D3cold). For more information about D3hot and D3cold, see [Device Low-Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-sleeping-states).
+The sleeping state with the least amount of power. The amount of power may be nonzero (D3hot) or it may be exactly zero (D3cold). For more information about D3hot and D3cold, see [Device Low-Power States](../kernel/device-sleeping-states.md).
 
 <a href="" id="device-context"></a>Device context  
 Same as for D1.
@@ -113,10 +112,4 @@ Before a network adapter can transition to a sleeping state, its miniport driver
 The only transitions allowed between device power states are from the highest-powered state (D0) to a sleeping state (D1, D2, D3), or from a sleeping state to the highest-powered state. NDIS never commands a network adapter to transition directly from one sleeping state to another.
 
  
-
- 
-
-
-
-
 

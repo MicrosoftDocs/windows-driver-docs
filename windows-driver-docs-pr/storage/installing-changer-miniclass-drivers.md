@@ -1,7 +1,6 @@
 ---
 title: Installing Changer Miniclass Drivers
 description: Installing Changer Miniclass Drivers
-ms.assetid: 923e1128-bacc-450b-b250-bc666951965d
 keywords:
 - changer drivers WDK storage , miniclass drivers
 - storage changer drivers WDK , miniclass drivers
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 This section provides installation information, specific to changer miniclass drivers in Windows 2000 and later operating systems.
 
-Vendors supplying their own controller minidriver should make that minidriver a member of the MediumChanger setup class in the [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) of the driver's INF file. For example:
+Vendors supplying their own controller minidriver should make that minidriver a member of the MediumChanger setup class in the [**INF Version Section**](../install/inf-version-section.md) of the driver's INF file. For example:
 
 ```cpp
 [version]
@@ -31,12 +30,7 @@ There are no other special requirements associated with installing changer minic
 
 For more installation information, see the INF files that are supplied with the media changer samples that are included in the Windows Driver Kit (WDK).
 
-For general information about device installation in Windows 2000 and later operating systems, see [Device Installation Overview](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation).
+For general information about device installation in Windows 2000 and later operating systems, see [Device Installation Overview](../install/overview-of-device-and-driver-installation.md).
 
  
-
- 
-
-
-
 

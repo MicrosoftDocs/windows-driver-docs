@@ -1,7 +1,6 @@
 ---
 title: DIF_PROPERTIES
 description: DIF_PROPERTIES
-ms.assetid: 8d775bce-22c8-4839-b68a-69ad43cb03da
 keywords: ["DIF_PROPERTIES Device and Driver Installation"]
 topic_type:
 - apiref

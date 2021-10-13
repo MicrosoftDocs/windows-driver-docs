@@ -1,7 +1,6 @@
 ---
 title: Native 802.11 IHV UI Extensions DLL Overview
 description: Native 802.11 IHV UI Extensions DLL Overview
-ms.assetid: 82276ffb-eec4-4a77-9feb-f8f2ca1d7b34
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , about IHV UI Extensions DLL
 ms.date: 04/20/2017
@@ -34,13 +33,8 @@ If the independent hardware vendor (IHV) provides a Native 802.11 IHV Extensions
 
 For more information about the Native 802.11 IHV Extensions DLL, see [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-dll4.md).
 
-For more information about the Microsoft Network Configuration UI and other Native 802.11 components, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
+For more information about the Microsoft Network Configuration UI and other Native 802.11 components, see [Native 802.11 Software Architecture](/previous-versions/windows/hardware/wireless/native-802-11-software-architecture).
 
  
 
  
-
-
-
-
-

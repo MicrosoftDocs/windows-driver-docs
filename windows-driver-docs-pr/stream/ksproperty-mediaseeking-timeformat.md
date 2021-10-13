@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_TIMEFORMAT
 description: The KSPROPERTY\_MEDIASEEKING\_TIMEFORMAT property retrieves the current media time format for a filter.
-ms.assetid: 3a7b6873-7351-4e87-8fa7-a804894c56bb
 keywords: ["KSPROPERTY_MEDIASEEKING_TIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_TIMEFORMAT property retrieves the current media ti
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>GUID</p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_TIMEFORMAT property retrieves the current media ti
 
  
 
-Remarks
--------
+## Remarks
 
 The property sets the current media time format that is returned as a time format GUID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,13 +77,3 @@ Requirements
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
- 
-
- 
-
-
-
-
-
-

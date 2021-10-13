@@ -1,7 +1,6 @@
 ---
 title: Header File Changes
 description: Header File Changes
-ms.assetid: 9212aa8d-bb11-4ade-a70c-274a7ffe83ef
 keywords:
 - data formats WDK audio
 - formats WDK audio , data
@@ -33,7 +32,7 @@ ms.localizationpriority: medium
 
 The Windows Driver Kit (WDK) contains two header files that define the speaker configurations that are supported by the Windows multimedia control panel:
 
--   Ksmedia.h defines the channel masks for the [**KSAUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_channel_config) structure that is used by the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) property request.
+-   Ksmedia.h defines the channel masks for the [**KSAUDIO\_CHANNEL\_CONFIG**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config) structure that is used by the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) property request.
 
 -   Dsound.h defines a list of speaker-configuration identifiers that can be submitted to the **IDirectSound::SetSpeakerConfig** method. For more information about this method, see the Windows SDK documentation.
 
@@ -130,9 +129,4 @@ DSSPEAKER\_7POINT1\_SURROUND represents the new 7.1 home theater speaker configu
 For more information about speaker configuration for DirectSound, see [DirectSound Speaker-Configuration Settings](directsound-speaker-configuration-settings.md).
 
  
-
- 
-
-
-
 

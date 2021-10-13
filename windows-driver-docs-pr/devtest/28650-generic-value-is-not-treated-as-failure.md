@@ -1,7 +1,6 @@
 ---
-title: C28650
+title: C28650 warning
 description: The type for which 0 is being used does not treat it as failure case.
-ms.assetid: faa24e4b-327c-42c7-92ee-33cd7b6ce5cb
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

@@ -1,7 +1,6 @@
 ---
 title: Preparing to Use TraceView
 description: Preparing to Use TraceView
-ms.assetid: 724e3c8a-7760-4e53-8d44-1927e5ad1efd
 keywords:
 - TraceView WDK , preparing to use
 - files WDK TraceView
@@ -25,9 +24,9 @@ By default, TraceView.exe is located in the tools\\*&lt;Platform&gt;* subdirecto
 
 ### <span id="understand_event_tracing"></span><span id="UNDERSTAND_EVENT_TRACING"></span>Understand Event Tracing
 
-Before you use TraceView, you should be familiar with *event tracing*. For more information, see [WPP Software Tracing](wpp-software-tracing.md) and the "[Event Tracing](https://go.microsoft.com/fwlink/p/?linkid=60384)" topic in the Microsoft Windows SDK.
+Before you use TraceView, you should be familiar with *event tracing*. For more information, see [WPP Software Tracing](wpp-software-tracing.md) and [Event Tracing for Windows](/windows-hardware/test/wpt/event-tracing-for-windows).
 
-Also, examine Tracedrv (Tracedrv.c), a sample driver instrumented with WPP software tracing. The [Tracedrv](https://go.microsoft.com/fwlink/p/?LinkId=617726) sample is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507 ) repository on GitHub. Build the Tracedrv driver and its engine, Tracectl (Tracectl.c), and then use the driver and engine to experiment with TraceView.
+Also, examine Tracedrv (Tracedrv.c), a sample driver instrumented with WPP software tracing. The [Tracedrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver) sample is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub. Build the Tracedrv driver and its engine, Tracectl (Tracectl.c), and then use the driver and engine to experiment with TraceView.
 
 ### <span id="know_the_trace_provider"></span><span id="KNOW_THE_TRACE_PROVIDER"></span>Know the Trace Provider
 
@@ -50,10 +49,4 @@ The [NT Kernel Logger Trace Session](nt-kernel-logger-trace-session.md) uses the
 These files, and their use in TraceView, are described in [Creating an NT Kernel Logger Trace Session](creating-an-nt-kernel-logger-trace-session.md). You will use this information when you create a trace session.
 
  
-
- 
-
-
-
-
 

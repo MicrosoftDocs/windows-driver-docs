@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_QMIPSECStats WMI Class
 description: MSiSCSI\_QMIPSECStats WMI Class
-ms.assetid: 81a21c25-5f03-4ad0-a892-3947d65975d2
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -166,13 +165,7 @@ class MSiSCSI_QMIPSECStats : Win32_PerfRawData {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_QMIPSECStats**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiprf/ns-iscsiprf-_msiscsi_qmipsecstats) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_QMIPSECStats**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_qmipsecstats) data structure.
 
  
-
- 
-
-
-
-
 

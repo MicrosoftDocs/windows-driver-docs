@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xA7 BAD_EXHANDLE
 description: The BAD_EXHANDLE bug check has a value of 0x000000A7. This bug check indicates that the kernel-mode handle table detected an inconsistent handle table entry state.
-ms.assetid: 9f485894-2653-40d2-b5fe-56e46ba26c1b
 keywords: ["Bug Check 0xA7 BAD_EXHANDLE", "BAD_EXHANDLE"]
 ms.date: 05/23/2017
 topic_type:

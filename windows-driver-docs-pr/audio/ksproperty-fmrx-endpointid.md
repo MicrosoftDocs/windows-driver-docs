@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_FMRX\_ENDPOINTID
 description: The KSTOPOLOGY\_ENDPOINTID property contains the endpoint ID for the FM radio output/render endpoint.
-ms.assetid: C71DA54C-069D-43F6-8107-AF109D4CA967
 keywords: ["KSPROPERTY_FMRX_ENDPOINTID Audio Devices"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # KSPROPERTY\_FMRX\_ENDPOINTID
 
 
-The [**KSTOPOLOGY\_ENDPOINTID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagkstopology_endpointid) property contains the endpoint ID for the FM radio output/render endpoint.
+The [**KSTOPOLOGY\_ENDPOINTID**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointid) property contains the endpoint ID for the FM radio output/render endpoint.
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -44,22 +43,21 @@ The [**KSTOPOLOGY\_ENDPOINTID**](https://docs.microsoft.com/windows-hardware/dri
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagkstopology_endpointid" data-raw-source="[&lt;strong&gt;KSTOPOLOGY_ENDPOINTID&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagkstopology_endpointid)"><strong>KSTOPOLOGY_ENDPOINTID</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointid" data-raw-source="[&lt;strong&gt;KSTOPOLOGY_ENDPOINTID&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointid)"><strong>KSTOPOLOGY_ENDPOINTID</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-The property value is of type [**KSTOPOLOGY\_ENDPOINTID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagkstopology_endpointid) and specifies the name and the pin ID of the topology endpoint associated with FM radio.
+The property value is of type [**KSTOPOLOGY\_ENDPOINTID**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointid) and specifies the name and the pin ID of the topology endpoint associated with FM radio.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
 A **KSPROPERTY\_FMRX\_ENDPOINTID** property request returns the name and the pin ID of the current render endpoint for the FM radio.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -90,13 +88,3 @@ Requirements
 
 
 [KSPROPSETID\_FMRXTopology](kspropsetid-fmrxtopology.md)
-
- 
-
- 
-
-
-
-
-
-

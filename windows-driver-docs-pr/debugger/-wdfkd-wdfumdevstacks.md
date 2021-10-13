@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfumdevstacks
 description: The wdfkd.wdfumdevstacks extension displays information about all UMDF device stacks in the implicit process.
-ms.assetid: 05D09B0D-4ED8-4333-B4BC-5BE28C63312C
 keywords: ["wdfkd.wdfumdevstacks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,8 +48,7 @@ UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use this command in a kernel-mode debugging session or in a user-mode debugging session that is attached to the UMDF host process (wudfhost.exe).
 

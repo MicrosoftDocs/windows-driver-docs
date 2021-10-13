@@ -1,26 +1,25 @@
 ---
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
-ms.assetid: 2CBEB814-974D-4E8B-A44A-2CFAA8D4C94E
-ms.date: 04/20/2017
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
 # Using a Universal INF File
 
-If you are building a universal or mobile driver package, you must use a universal INF file. If you are building a desktop driver package, you don't have to use a universal INF file, but doing so is recommended because of the performance benefits.
-
-A universal INF file uses a subset of the [INF syntax](inf-file-sections-and-directives.md) that is available to a Windows driver. A universal INF file installs a driver and configures device hardware, but does not perform any other action, such as running a co-installer.
-
-## Why is a universal INF file required on non-desktop editions of Windows?
-
-Some editions of Windows, such as Windows 10 Mobile, do not support the Plug and Play mechanism for driver installation. Therefore, driver installation takes place on an offline image of the target system. When Microsoft Visual Studio builds your driver for such a target system, it generates an XML-based configuration file that contains all of the registry settings to be applied. As a result, an INF file for such a system must perform only additive operations that do not depend on the runtime behavior of the system. An INF file with such restricted syntax is called a universal INF file.
+Some editions of Windows use only a subset of the driver installation methods that are available on Windows 10 Desktop. An INF file for non-Desktop versions of Windows must perform only additive operations that do not depend on the runtime behavior of the system. An INF file with such restricted syntax is called a *universal INF file*.
 
 A universal INF file installs predictably, with the same result each time. The results of the installation do not depend on the runtime behavior of the system. For example, co-installer references are not valid in a universal INF file because code in an additional DLL cannot be executed on an offline system.
 
-As a result, a driver package with a universal INF file can be configured in advance and added to an offline system.
+A driver package with a universal INF file can be configured in advance and added to an offline system.
 
-You can use the [InfVerif](../devtest/infverif.md) tool to test if your driver's INF file is universal.
+To test if your INF is universal, use `infverif /u`.
+ 
+A [Windows Driver](../develop/getting-started-with-windows-drivers.md) must pass `infverif /w`, which tests `/u` as well as [Driver Package Isolation](../develop/driver-isolation.md).
+
+For a list of InfVerif options, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
+
+If you are building a Windows Desktop Driver package, you don't have to use a universal INF file, but doing so is recommended because of the performance benefits.
 
 ## Which INF sections are invalid in a universal INF file?
 
@@ -32,6 +31,8 @@ You can use any INF section in a universal INF file except for the following:
 -   [**INF DDInstall.LogConfigOverride Section**](inf-ddinstall-logconfigoverride-section.md)
 
 The [**INF Manufacturer Section**](inf-manufacturer-section.md) is valid as long as the **TargetOSVersion** decoration does not contain a **ProductType** flag or **SuiteMask** flag.
+
+The [**INF DefaultInstall Section**](inf-defaultinstall-section.md) is valid only if it has an architecture decoration, for example `[DefaultInstall.NTAMD64]`.
 
 ## Which INF directives are invalid in a universal INF file?
 
@@ -55,10 +56,10 @@ You can use any INF directive in a universal INF file except for the following:
 The following directives are valid with some caveats:
 
 -   The [**INF AddReg Directive**](inf-addreg-directive.md) is valid if entries in the specified *add-registry-section* have a *reg-root* value of **HKR**, or in the following cases:
-	-	For registration of [Component Object Model](https://docs.microsoft.com/windows/desktop/com) (COM) objects, a key may be written under:
+	-	For registration of [Component Object Model](/windows/desktop/com) (COM) objects, a key may be written under:
 		-	HKCR
 		-	HKLM\SOFTWARE\Classes
-	-	For creation of [Hardware Media Foundation Transforms](https://docs.microsoft.com/windows/desktop/medfound/media-foundation-transforms) (MFTs), a key may be written under:
+	-	For creation of [Hardware Media Foundation Transforms](/windows/desktop/medfound/media-foundation-transforms) (MFTs), a key may be written under:
 		-	HKLM\SOFTWARE\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW3232Node\Microsoft\Windows Media Foundation
@@ -75,5 +76,5 @@ The following directives are valid with some caveats:
 
 ## See Also
 
-* [Installing a Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers)
-* [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif)
+* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
+* [InfVerif](../devtest/infverif.md)

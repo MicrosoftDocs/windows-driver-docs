@@ -1,158 +1,66 @@
 ---
 title: V4 Printer Driver Localization
-description: Windows 8 has provided standard, localized display strings to support the development of printer extensions and UWP device apps.
-ms.assetid: 5C587AF2-C51E-4728-A214-7FC1F8A6E445
-ms.date: 04/20/2017
+description: Windows provides standard localized display strings to support development of printer extensions and UWP device apps.
+ms.date: 08/27/2021
 ms.localizationpriority: medium
 ---
 
 # V4 Printer Driver Localization
 
+Windows provides standard localized display strings to support development of printer extensions and UWP device apps provided through [**IPrintSchemaCapabilities**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities) objects.
 
-Windows 8 has provided standard, localized display strings to support the development of printer extensions and UWP device apps.
+The following table shows the features that Windows can localize with its standard display strings:
 
-These standard, localized display strings are provided through the new [**IPrintSchemaCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemacapabilities) objects to support some features and their associated standard options. The following table shows the features that Windows 8 can localize with its standard display strings:
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>Standard options</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Input bins</td>
-<td>Job/Document/PageInputBin</td>
-</tr>
-<tr class="even">
-<td>Media types</td>
-<td>PageMediaType</td>
-</tr>
-<tr class="odd">
-<td>Duplexing</td>
-<td>JobDuplexAllDocumentsContiguously</td>
-</tr>
-<tr class="even">
-<td>Collation</td>
-<td>DocumentCollate</td>
-</tr>
-<tr class="odd">
-<td>Output color</td>
-<td>PageOutputColor</td>
-</tr>
-<tr class="even">
-<td>Orientation</td>
-<td>PageOrientation</td>
-</tr>
-<tr class="odd">
-<td>N-Up</td>
-<td>JobNUpAllDocumentsContiguously</td>
-</tr>
-<tr class="even">
-<td>Hole punching</td>
-<td><ul>
-<li><p>JobHolePunch</p></li>
-<li><p>DocumentHolePunch</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Stapling</td>
-<td><ul>
-<li><p>JobStapleAllDocuments</p></li>
-<li><p>DocumentStaple</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Binding</td>
-<td><ul>
-<li><p>JobBindAllDocuments</p></li>
-<li><p>DocumentBinding</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Output quality</td>
-<td>PageOutputQuality</td>
-</tr>
-<tr class="even">
-<td>Media size</td>
-<td>PageMediaSize</td>
-</tr>
-</tbody>
-</table>
-
- 
+| Feature | Standard options |
+|--|--|
+| Input bins | Job/Document/PageInputBin |
+| Media types | PageMediaType |
+| Duplexing | JobDuplexAllDocumentsContiguously |
+| Collation | DocumentCollate |
+| Output color | PageOutputColor |
+| Orientation | PageOrientation |
+| N-Up | JobNUpAllDocumentsContiguously |
+| Hole punching | JobHolePunch<br><br>DocumentHolePunch |
+| Stapling | JobStapleAllDocuments<br><br>DocumentStaple |
+| Binding | JobBindAllDocuments<br><br>DocumentBinding |
+| Output quality | PageOutputQuality |
+| Media size | PageMediaSize |
 
 In addition, these strings are available in the XML forms of PrintCapabilities, provided that the driver does not specify a display name using a resource DLL for the feature or option. If a driver does specify a display name using a resource DLL, it will be provided in the XML, as well as to the legacy COMPSTUI-based print preferences UI used on previous versions of Windows.
 
 Across the different user interfaces and APIs, the display names vary. Use the following three flowcharts to see an overview of the expected localization behavior for a given scenario.
 
-The following flowchart shows the expected localization behavior in UWP apps, as well as in the [**IPrintSchemaFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemafeature) and [**IPrintSchemaOption**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemaoption) families of objects.
+The following flowchart shows the expected localization behavior in UWP apps, as well as in the [**IPrintSchemaFeature**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature) and [**IPrintSchemaOption**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption) families of objects.
 
-![localization behavior flowchart for Windows apps, iprintschemafeature or iprintschemaoption](images/locstringmodern.png)
+![localization behavior flowchart for Windows apps, iprintschemafeature or iprintschemaoption.](images/locstringmodern.png)
 
 The following flowchart shows the expected localization behavior in **PrintCapabilities** XML documents.
 
-![localization behavior flowchart for printcapabilities xml documents](images/locstringpcap.png)
+![localization behavior flowchart for printcapabilities xml documents.](images/locstringpcap.png)
 
 The following flowchart shows the expected localization behavior in the standard, Compstui-based print preferences dialog.
 
-![localization behavior flowchart for compstui-based dialog ](images/locstringcomp.png)
+![localization behavior flowchart for compstui-based dialog .](images/locstringcomp.png)
 
 To use the Microsoft-localized display names, follow the instructions in this table to properly edit your GPD or PPD configuration files.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>File type</th>
-<th>Instructions</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>GPD</td>
-<td><ul>
-<li><p>Specify the <strong><em>Name</strong> entry for the GPD feature or option.</p></li>
-<li><p>Do not specify the <strong></em>rcNameID</strong> entry.</p></li>
-<li>For the following features/options, you must also specify <strong><em>PrintSchemaKeywordMap</strong> to map GPD features or options to the corresponding Print Schema-defined features or options, unless they are specified as <a href="standard-features.md" data-raw-source="[Standard Features](standard-features.md)">Standard Features</a>. To see examples showing how to use <strong></em>PrintSchemaKeywordMap</strong> to map features, see <a href="gpd-ppd-based-feature-description-changes.md" data-raw-source="[GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md)">GPD/PPD-Based Feature Description Changes</a>.
-o JobHolePunch, DocumentHolePunch
-o JobStapleAllDocuments, DocumentStaple
-o JobBindAllDocuments, DocumentBinding
-o PageOutputQuality
-o PageMediaType</li>
-<li><p>For N-Up, do not use <strong><em>PrintSchemaKeywordMap</strong> on the option values.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>PPD</td>
-<td><ul>
-<li><p>Use <strong></em>PrintSchemaKeywordMap</strong> to map PPD features or options to the corresponding Print Schema-defined features or options. To see examples showing how to use <strong><em>PrintSchemaKeywordMap</strong> to map features, see <a href="gpd-ppd-based-feature-description-changes.md" data-raw-source="[GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md)">GPD/PPD-Based Feature Description Changes</a>.</p></li>
-<li><p>For N-Up, do not use <strong></em>PrintSchemaKeywordMap</strong> on the option values.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| File type | Instructions |
+|--|--|
+| GPD | Specify the ***Name*** entry for the GPD feature or option.<br><br>Do not specify the **rcNameID** entry.<br><br>For the following features or options, you must also specify ***PrintSchemaKeywordMap*** to map GPD features or options to the corresponding Print Schema-defined features or options, unless they are specified as [Standard Features](standard-features.md). To see examples showing how to use ***PrintSchemaKeywordMap*** to map features, see [GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md)<br><br>JobHolePunch, DocumentHolePunch<br><br>JobStapleAllDocuments, DocumentStaple<br><br>JobBindAllDocuments, DocumentBinding<br><br>PageOutputQuality<br><br>PageMediaType<br><br>For N-Up, do not use **PrintSchemaKeywordMap** on the option values. |
+| PPD | Use **PrintSchemaKeywordMap** to map PPD features or options to the corresponding Print Schema-defined features or options. To see examples showing how to use **PrintSchemaKeywordMap** to map features, see [GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md)<br><br>For N-Up, do not use **PrintSchemaKeywordMap** on the option values. |
 
- 
-
-**Localizing PPD Based Drivers**
+## Localizing PPD Based Drivers
 
 PPD based drivers do not support resource DLLs. As a result, it may be necessary to provide multiple PPD files. Microsoft recommends that v4 print drivers that use PPD configuration files should use the techniques outlined in this topic to include one PPD file per locale.
 
 ## Related topics
-[**IPrintSchemaCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemacapabilities)  
-[**IPrintSchemaFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemafeature)  
-[**IPrintSchemaOption**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemaoption)  
+
+[**IPrintSchemaCapabilities**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities)  
+
+[**IPrintSchemaFeature**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature)  
+
+[**IPrintSchemaOption**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption)  
+
 [GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md)  
-[Standard Features](standard-features.md)  
 
-
-
+[Standard Features](standard-features.md)

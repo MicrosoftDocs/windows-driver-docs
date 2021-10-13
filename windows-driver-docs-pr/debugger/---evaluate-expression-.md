@@ -1,9 +1,8 @@
 ---
 title: (Evaluate Expression)
 description: The question mark ( ) command evaluates and displays the value of an expression.Note  A question mark by itself ( ) displays command help.
-ms.assetid: fae689b3-47c9-44bd-992d-8344805fb4b7
 keywords: ["(Evaluate Expression) Windows Debugging"]
-ms.date: 09/17/2018
+ms.date: 04/26/2021
 topic_type:
 - apiref
 api_name:
@@ -24,13 +23,12 @@ The question mark (**?**) command evaluates and displays the value of an express
     ? Expression
 ```
 
-## <span id="ddk_cmd_evaluate_expression_dbg"></span><span id="DDK_CMD_EVALUATE_EXPRESSION_DBG"></span>Parameters
+## Parameters
 
-
-<span id="_______Expression______"></span><span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *Expression*   
+*Expression*   
 Specifies the expression to evaluate.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -55,8 +53,7 @@ Specifies the expression to evaluate.
 
  
 
-Remarks
--------
+## Remarks
 
 The input and output of the **?** command depend on whether you are using MASM expression syntax or C++ expression syntax. For more information about these kinds of expression syntax, see [Evaluating Expressions](evaluating-expressions.md) and [Numerical Expression Syntax](numerical-expression-syntax.md).
 
@@ -74,8 +71,10 @@ Some strings may contain escapes, such as **\\n**, **\\"**, **\\r**, and **\\b**
  AliasName        c:\dir\name.txt
 0:001> ? $spat( "c:\dir\name.txt", "*name*" )
 Evaluate expression: 0 = 00000000
+
 0:001> ? $spat( "${AliasName}", "*name*" )
 Evaluate expression: 0 = 00000000
+
 0:001> ? $spat( "c:\dir\", "*filename*" )
 Syntax error at '( "c:\dir\", "*filename*" )
 ```
@@ -87,21 +86,29 @@ To get the evaluator to interpret a string literally, you must use the <strong>@
 ```console
 0:000> ? $spat( @"c:\dir\name.txt", "*name*" )
 Evaluate expression: 1 = 00000000`00000001
+
 0:000> ? $spat( @"${AliasName}", "*name*" )
 Evaluate expression: 1 = 00000000`00000001
+
 0:001> ? $spat( @"c:\dir\", "*filename*" )
 Evaluate expression: 0 = 00000000
 ```
 
 In the preceding examples, the **$spat** MASM operator checks the first string to determine whether it matches (case-insensitive) the pattern of the second string. For more information about MASM operators, see the [MASM Numbers and Operators](masm-numbers-and-operators.md) topic.
 
-## <span id="see_also"></span>See also
+## See also
 
+[?? (Evaluate C++ Expression)](----evaluate-c---expression-.md)
 
-[**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md)
+[.formats (Show Number Formats)](-formats--show-number-formats-.md)
 
-[**.formats (Show Number Formats)**](-formats--show-number-formats-.md)
+[MASM Numbers and Operators](masm-numbers-and-operators.md)
 
+[C++ Numbers and Operators](c---numbers-and-operators.md)
+
+[MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
+
+[Mixed Expression Examples](expression-examples.md)
  
 
  

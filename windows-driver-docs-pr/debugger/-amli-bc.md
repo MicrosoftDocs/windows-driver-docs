@@ -1,7 +1,6 @@
 ---
-title: amli bc
+title: amli bc (WinDbg)
 description: The amli bc extension permanently clears an AML breakpoint.
-ms.assetid: e975ee10-cd2f-4944-8d00-b2eda2dd099a
 keywords: ["amli bc Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -40,7 +39,6 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 To determine the breakpoint number of a breakpoint, use the [**!amli bl**](-amli-bl.md) extension.

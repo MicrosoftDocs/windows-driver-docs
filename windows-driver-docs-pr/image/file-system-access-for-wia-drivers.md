@@ -1,7 +1,6 @@
 ---
 title: File System Access for WIA Drivers
 description: File System Access for WIA Drivers
-ms.assetid: 7bdd116e-d58f-4c2e-a5ec-c9a8196cfd62
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

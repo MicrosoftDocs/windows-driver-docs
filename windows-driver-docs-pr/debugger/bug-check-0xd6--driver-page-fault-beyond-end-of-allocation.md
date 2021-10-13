@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD6 DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 description: The DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION bug check has a value of 0x000000D6. This indicates the driver accessed memory beyond the end of its pool allocation.
-ms.assetid: 939165dc-3052-4de7-88fd-25d4a7e82945
 keywords: ["Bug Check 0xD6 DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION", "DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,18 +57,16 @@ The DRIVER\_PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION bug check has a value of 0x
 </table>
 
  
-
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) *KiBugCheckDriver*.
 
-Cause
------
+## Cause
 
 The driver allocated *n* bytes of memory and then referenced more than *n* bytes. The Driver Verifier **Special Pool** option detected this violation.
 
 For information about the special pool, consult the Driver Verifier section of the Windows Driver Kit.
 
-Remarks
--------
+## Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 

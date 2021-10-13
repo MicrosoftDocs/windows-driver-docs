@@ -1,7 +1,6 @@
 ---
 title: VBI Category
 description: VBI Category
-ms.assetid: c33c0427-5162-435a-bb96-a230455a1035
 keywords:
 - stream categories WDK video capture , VBI
 - VBI WDK video capture
@@ -36,7 +35,7 @@ When specifying **PINNAME\_VIDEO\_VBI** pins, use the information listed in the 
 <tbody>
 <tr class="odd">
 <td><p><strong>DataRange Structure</strong></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_datarange_video_vbi" data-raw-source="[&lt;strong&gt;KS_DATARANGE_VIDEO_VBI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_datarange_video_vbi)"><strong>KS_DATARANGE_VIDEO_VBI</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video_vbi" data-raw-source="[&lt;strong&gt;KS_DATARANGE_VIDEO_VBI&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video_vbi)"><strong>KS_DATARANGE_VIDEO_VBI</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DataFormat Structure</strong></p></td>
@@ -56,7 +55,7 @@ When specifying **PINNAME\_VIDEO\_VBI** pins, use the information listed in the 
 </tr>
 <tr class="even">
 <td><p><strong>Extended Header Size</strong></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_vbi_frame_info" data-raw-source="[&lt;strong&gt;KS_VBI_FRAME_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_vbi_frame_info)"><strong>KS_VBI_FRAME_INFO</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_vbi_frame_info" data-raw-source="[&lt;strong&gt;KS_VBI_FRAME_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_vbi_frame_info)"><strong>KS_VBI_FRAME_INFO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Required Property Sets</strong></p></td>
@@ -78,11 +77,4 @@ When specifying **PINNAME\_VIDEO\_VBI** pins, use the information listed in the 
 </table>
 
  
-
- 
-
- 
-
-
-
 

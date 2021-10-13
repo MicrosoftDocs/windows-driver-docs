@@ -1,7 +1,6 @@
 ---
 title: DDI usage rule set (NDIS)
 description: Use these rules to verify that your driver correctly uses NDIS DDIs correctly.
-ms.assetid: A109A452-D3A7-4204-B267-1F0F98652597
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -28,14 +27,14 @@ Use these rules to verify that your driver correctly uses NDIS DDIs correctly.
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="ndis-init-deregisterinterrupt.md" data-raw-source="[&lt;strong&gt;Init_DeRegisterInterrupt&lt;/strong&gt;](ndis-init-deregisterinterrupt.md)"><strong>Init_DeRegisterInterrupt</strong></a></p></td>
-<td align="left"><p>The <a href="ndis-init-deregisterinterrupt.md" data-raw-source="[&lt;strong&gt;Init_DeRegisterInterrupt&lt;/strong&gt;](ndis-init-deregisterinterrupt.md)"><strong>Init_DeRegisterInterrupt</strong></a> rule specifies that if <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterinterruptex" data-raw-source="[&lt;strong&gt;NdisMRegisterInterruptEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterinterruptex)"><strong>NdisMRegisterInterruptEx</strong></a> is called at least once during MPInitilize, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterinterruptex" data-raw-source="[&lt;strong&gt;NdisMDeregisterInterruptEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterinterruptex)"><strong>NdisMDeregisterInterruptEx</strong></a> should be called at least once in MPHaltEx.</p></td>
+<td align="left"><p>The <a href="ndis-init-deregisterinterrupt.md" data-raw-source="[&lt;strong&gt;Init_DeRegisterInterrupt&lt;/strong&gt;](ndis-init-deregisterinterrupt.md)"><strong>Init_DeRegisterInterrupt</strong></a> rule specifies that if <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex" data-raw-source="[&lt;strong&gt;NdisMRegisterInterruptEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex)"><strong>NdisMRegisterInterruptEx</strong></a> is called at least once during MPInitilize, <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterinterruptex" data-raw-source="[&lt;strong&gt;NdisMDeregisterInterruptEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterinterruptex)"><strong>NdisMDeregisterInterruptEx</strong></a> should be called at least once in MPHaltEx.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ndis-init-ndisallocateioworkitem.md" data-raw-source="[&lt;strong&gt;Init_NdisAllocateIoWorkItem&lt;/strong&gt;](ndis-init-ndisallocateioworkitem.md)"><strong>Init_NdisAllocateIoWorkItem</strong></a></p></td>
-<td align="left"><p>The <a href="ndis-init-ndisallocateioworkitem.md" data-raw-source="[&lt;strong&gt;Init_NdisAllocateIoWorkItem&lt;/strong&gt;](ndis-init-ndisallocateioworkitem.md)"><strong>Init_NdisAllocateIoWorkItem</strong></a> rule specifies that if <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocateioworkitem" data-raw-source="[&lt;strong&gt;NdisAllocateIoWorkItem&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocateioworkitem)"><strong>NdisAllocateIoWorkItem</strong></a> is called at least once during <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize)"><em>MiniportInitializeEx</em></a>, the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreeioworkitem" data-raw-source="[&lt;strong&gt;NdisFreeIoWorkItem&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreeioworkitem)"><strong>NdisFreeIoWorkItem</strong></a> function should:</p>
+<td align="left"><p>The <a href="ndis-init-ndisallocateioworkitem.md" data-raw-source="[&lt;strong&gt;Init_NdisAllocateIoWorkItem&lt;/strong&gt;](ndis-init-ndisallocateioworkitem.md)"><strong>Init_NdisAllocateIoWorkItem</strong></a> rule specifies that if <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocateioworkitem" data-raw-source="[&lt;strong&gt;NdisAllocateIoWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocateioworkitem)"><strong>NdisAllocateIoWorkItem</strong></a> is called at least once during <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)"><em>MiniportInitializeEx</em></a>, the <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreeioworkitem" data-raw-source="[&lt;strong&gt;NdisFreeIoWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreeioworkitem)"><strong>NdisFreeIoWorkItem</strong></a> function should:</p>
 <ul>
-<li>- be called at least once in MPHaltEx, if <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize)"><em>MiniportInitializeEx</em></a> succeeds.</li>
-<li>- be called in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize)"><em>MiniportInitializeEx</em></a>, if <em>MiniportInitializeEx</em> fails.</li>
+<li>- be called at least once in MPHaltEx, if <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)"><em>MiniportInitializeEx</em></a> succeeds.</li>
+<li>- be called in <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)"><em>MiniportInitializeEx</em></a>, if <em>MiniportInitializeEx</em> fails.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -50,11 +49,11 @@ Use these rules to verify that your driver correctly uses NDIS DDIs correctly.
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="ndis-ndisfderegisterfilterdriver.md" data-raw-source="[&lt;strong&gt;NdisFDeregisterFilterDriver&lt;/strong&gt;](ndis-ndisfderegisterfilterdriver.md)"><strong>NdisFDeregisterFilterDriver</strong></a></p></td>
-<td align="left"><p>A filter driver must call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfderegisterfilterdriver" data-raw-source="[&lt;strong&gt;NdisFDeregisterFilterDriver&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfderegisterfilterdriver)"><strong>NdisFDeregisterFilterDriver</strong></a> from its <a href="https://docs.microsoft.com/windows-hardware/drivers/network/unloading-a-filter-driver" data-raw-source="[&lt;strong&gt;FilterDriverUnload&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/unloading-a-filter-driver)"><strong>FilterDriverUnload</strong></a> routine.</p></td>
+<td align="left"><p>A filter driver must call <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfderegisterfilterdriver" data-raw-source="[&lt;strong&gt;NdisFDeregisterFilterDriver&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfderegisterfilterdriver)"><strong>NdisFDeregisterFilterDriver</strong></a> from its <a href="/windows-hardware/drivers/network/unloading-a-filter-driver" data-raw-source="[&lt;strong&gt;FilterDriverUnload&lt;/strong&gt;](../network/unloading-a-filter-driver.md)"><strong>FilterDriverUnload</strong></a> routine.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ndis-ndismderegisterinterruptex.md" data-raw-source="[&lt;strong&gt;NdisMDeregisterInterruptEx&lt;/strong&gt;](ndis-ndismderegisterinterruptex.md)"><strong>NdisMDeregisterInterruptEx</strong></a></p></td>
-<td align="left"><p>After <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterinterruptex" data-raw-source="[&lt;strong&gt;NdisMDeregisterInterruptEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterinterruptex)"><strong>NdisMDeregisterInterruptEx</strong></a> returns control, the miniport driver cannot call the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsynchronizewithinterruptex" data-raw-source="[&lt;strong&gt;NdisMSynchronizeWithInterruptEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsynchronizewithinterruptex)"><strong>NdisMSynchronizeWithInterruptEx</strong></a> function.</p></td>
+<td align="left"><p>After <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterinterruptex" data-raw-source="[&lt;strong&gt;NdisMDeregisterInterruptEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterinterruptex)"><strong>NdisMDeregisterInterruptEx</strong></a> returns control, the miniport driver cannot call the <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsynchronizewithinterruptex" data-raw-source="[&lt;strong&gt;NdisMSynchronizeWithInterruptEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsynchronizewithinterruptex)"><strong>NdisMSynchronizeWithInterruptEx</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="nullcheckn.md" data-raw-source="[&lt;strong&gt;NullCheck&lt;/strong&gt;](nullcheckn.md)"><strong>NullCheck</strong></a></p></td>
@@ -63,7 +62,7 @@ Use these rules to verify that your driver correctly uses NDIS DDIs correctly.
 <li>There is an assignment of NULL that is dereferenced later.</li>
 <li>There is a global/parameter to a procedure in a driver that may be NULL that is dereferenced later, and there is an explicit check in the driver that suggests that the initial value of the pointer may be NULL.</li>
 </ul>
-<p>With NullCheck rule violations, the most relevant code statements are highlighted in the trace tree pane. For more information about working with report output, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-report" data-raw-source="[Static Driver Verifier Report](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-report)">Static Driver Verifier Report</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/understanding-the-defect-viewer" data-raw-source="[Understanding the Trace Viewer](https://docs.microsoft.com/windows-hardware/drivers/devtest/understanding-the-defect-viewer)">Understanding the Trace Viewer</a>.</p>
+<p>With NullCheck rule violations, the most relevant code statements are highlighted in the trace tree pane. For more information about working with report output, see <a href="/windows-hardware/drivers/devtest/static-driver-verifier-report" data-raw-source="[Static Driver Verifier Report](./static-driver-verifier-report.md)">Static Driver Verifier Report</a> and <a href="/windows-hardware/drivers/devtest/understanding-the-defect-viewer" data-raw-source="[Understanding the Trace Viewer](./understanding-the-defect-viewer.md)">Understanding the Trace Viewer</a>.</p>
 <p></p></td>
 </tr>
 </tbody>
@@ -83,13 +82,5 @@ Use these rules to verify that your driver correctly uses NDIS DDIs correctly.
     msbuild /t:sdv /p:Inputs="/check:DDIUsage.sdv" mydriver.VcxProj /p:Configuration="Win8 Release" /p:Platform=Win32
     ```
 
-    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers) and [Static Driver Verifier commands (MSBuild)](https://docs.microsoft.com/windows-hardware/drivers/devtest/-static-driver-verifier-commands--msbuild-).
-
- 
-
- 
-
-
-
-
+    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md) and [Static Driver Verifier commands (MSBuild)](./-static-driver-verifier-commands--msbuild-.md).
 

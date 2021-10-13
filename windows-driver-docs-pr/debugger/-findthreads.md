@@ -1,7 +1,6 @@
 ---
 title: findthreads
 description: The findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria.
-ms.assetid: ED14E503-0AF2-4444-81B0-7E00A6E424E5
 keywords: ["findthreads Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -69,8 +68,7 @@ Specifies the length of the memory range specified with -a.
 
 For information about threads in kernel mode, see [Changing Contexts](changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 Here is example output using the -v and -t options:
 

@@ -1,7 +1,6 @@
 ---
 title: File Share (SMB) Symbol Server
 description: Running a SMB Symbol Server is simply a matter of creating a file share and granting users access to that file share.
-ms.assetid: C5CF9665-9289-48EB-AA12-8881F812488A
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -18,15 +17,15 @@ Use Windows Explorer or Computer Management to create the File Share and assign 
 
 1. Open **Windows Explorer**.
 
-2. Right-click *D:\\SymStore\\Symbols* and choose **Properties**.
+2. Select and hold (or right-click) *D:\\SymStore\\Symbols* and choose **Properties**.
 
-3. Click on the **Sharing** tab.
+3. Select the **Sharing** tab.
 
-4. Click on **Advanced Sharing**… .
+4. Select **Advanced Sharing**… .
 
 5. Check *Share this folder*.
 
-6. Click on **Permissions**.
+6. Select **Permissions**.
 
 7. Remove the *Everyone* group.
 
@@ -34,9 +33,9 @@ Use Windows Explorer or Computer Management to create the File Share and assign 
 
 9. For each User/Security Group added, grant Read or Read/Change access.
 
-10. Click on **OK** (Permissions dialog).
+10. Select **OK** (Permissions dialog).
 
-11. Click on **OK** (Advanced Sharing dialog).
+11. Select **OK** (Advanced Sharing dialog).
 
 12. Press **Close** (Properties dialog).
 
@@ -44,11 +43,11 @@ Complete these steps using Computer Management:
 
 1. Type *Computer* in Window Start (resolves as This PC in Windows 8).
 
-2. Right-click and select *Manage*.
+2. Select and hold (or right-click) and select *Manage*.
 
 3. Navigate to *System Tools | Shared Folders | Shares*.
 
-4. Right-click and select **New | Share…** .
+4. Select and hold (or right-click) and select **New | Share…** .
 
 5. Press **Next** (Create a Shared Folder Wizard dialog).
 

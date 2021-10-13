@@ -1,7 +1,6 @@
 ---
 title: SMS API
 description: SMS API
-ms.assetid: d39d82b0-d88d-4448-a24a-22f329e95106
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,7 +22,7 @@ The SMS API supports the following use cases:
 
 -   Get properties of the mobile broadband device (account phone number, Global System for Mobile communication \[GSM\] or Code-Division Multiple Access \[CDMA\], and similar information).
 
-For more info about the SMS API, see [**Windows.Devices.Sms namespace**](https://docs.microsoft.com/uwp/api/Windows.Devices.Sms).
+For more info about the SMS API, see [**Windows.Devices.Sms namespace**](/uwp/api/Windows.Devices.Sms).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -31,11 +30,4 @@ For more info about the SMS API, see [**Windows.Devices.Sms namespace**](https:/
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
  
-
- 
-
-
-
-
-
 

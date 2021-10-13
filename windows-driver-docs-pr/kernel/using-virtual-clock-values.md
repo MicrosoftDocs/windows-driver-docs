@@ -1,7 +1,6 @@
 ---
 title: Using Virtual Clock Values
 description: Using Virtual Clock Values
-ms.assetid: de01b0f1-86b1-4e7d-af22-84dbbe3a3f83
 keywords: ["virtual clock values WDK KTM", "Kernel Transaction Manager WDK , virtual clock values", "KTM WDK , virtual clock values", "transactions WDK KTM , virtual clock values"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -10,11 +9,11 @@ ms.localizationpriority: medium
 # Using Virtual Clock Values
 
 
-KTM provides a virtual clock for each transaction manager object. When a resource manager calls [**ZwCreateTransactionManager**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreatetransactionmanager), KTM sets the object's virtual clock value to 1. KTM increments the virtual clock value every time that a commit operation begins. Whenever KTM writes to its log stream, it includes the current virtual clock value in the log record.
+KTM provides a virtual clock for each transaction manager object. When a resource manager calls [**ZwCreateTransactionManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransactionmanager), KTM sets the object's virtual clock value to 1. KTM increments the virtual clock value every time that a commit operation begins. Whenever KTM writes to its log stream, it includes the current virtual clock value in the log record.
 
-When a resource manager calls [**ZwRecoverTransactionManager**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrecovertransactionmanager), KTM reads log stream records up to the end of the stream, and it sets the transaction manager object's virtual clock value to the last value that it finds in the object's log stream.
+When a resource manager calls [**ZwRecoverTransactionManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrecovertransactionmanager), KTM reads log stream records up to the end of the stream, and it sets the transaction manager object's virtual clock value to the last value that it finds in the object's log stream.
 
-When a resource manager calls [**ZwRollforwardTransactionManager**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollforwardtransactionmanager), KTM reads log stream records up to the specified clock value, and it sets the transaction manager object's virtual clock value to the specified clock value.
+When a resource manager calls [**ZwRollforwardTransactionManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollforwardtransactionmanager), KTM reads log stream records up to the specified clock value, and it sets the transaction manager object's virtual clock value to the specified clock value.
 
 KTM enables resource managers and superior transaction managers to modify a transaction manager object's virtual clock value, but they typically do not have to modify the clock value.
 
@@ -34,20 +33,15 @@ These steps cause the virtual clock values that KTM stores for each transaction 
 
 ### How to Modify Virtual Clock Values
 
-Resource managers can modify the virtual clock value by passing a new value to [**ZwPrePrepareComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntprepreparecomplete), [**ZwPrepareComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpreparecomplete), [**ZwCommitComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommitcomplete), [**ZwRollbackComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbackcomplete), [**ZwReadOnlyEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntreadonlyenlistment), or [**ZwSinglePhaseReject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsinglephasereject).
+Resource managers can modify the virtual clock value by passing a new value to [**ZwPrePrepareComplete**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntprepreparecomplete), [**ZwPrepareComplete**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntpreparecomplete), [**ZwCommitComplete**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommitcomplete), [**ZwRollbackComplete**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbackcomplete), [**ZwReadOnlyEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntreadonlyenlistment), or [**ZwSinglePhaseReject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntsinglephasereject).
 
-[Superior transaction managers](creating-a-superior-transaction-manager.md) can modify the virtual clock value by passing a new value to [**ZwPrePrepareEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpreprepareenlistment), [**ZwPrepareEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntprepareenlistment), [**ZwCommitEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommitenlistment), or [**ZwReadOnlyEnlistment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntreadonlyenlistment).
+[Superior transaction managers](creating-a-superior-transaction-manager.md) can modify the virtual clock value by passing a new value to [**ZwPrePrepareEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntpreprepareenlistment), [**ZwPrepareEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntprepareenlistment), [**ZwCommitEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommitenlistment), or [**ZwReadOnlyEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntreadonlyenlistment).
 
-In addition, a resource manager or superior transaction manager that uses a [**ResourceManagerNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-ptm_rm_notification) callback routine can modify the virtual clock value that the callback routine receives. KTM then saves the updated value.
+In addition, a resource manager or superior transaction manager that uses a [**ResourceManagerNotification**](/windows-hardware/drivers/ddi/wdm/nc-wdm-ptm_rm_notification) callback routine can modify the virtual clock value that the callback routine receives. KTM then saves the updated value.
 
 If a resource manager or superior transaction manager passes a new clock value to KTM, KTM saves the new value only if it is greater than the current clock value. Otherwise, KTM keeps the current clock value.
 
-Resource managers and superior transaction managers can obtain a transaction manager object's virtual clock value by calling the [**ZwQueryInformationTransactionManager**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationtransactionmanager) routine.
+Resource managers and superior transaction managers can obtain a transaction manager object's virtual clock value by calling the [**ZwQueryInformationTransactionManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransactionmanager) routine.
 
  
-
- 
-
-
-
 

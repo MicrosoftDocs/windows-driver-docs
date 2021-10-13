@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_PACKETCOUNT
 description: KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
-ms.assetid: 904896DE-D135-43B6-AA1F-F49D0748952D
 keywords: ["KSPROPERTY_RTAUDIO_PACKETCOUNT Audio Devices"]
 topic_type:
 - apiref
@@ -44,15 +43,15 @@ KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets complete
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/ulong" data-raw-source="[&lt;strong&gt;ULONG&lt;/strong&gt;](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/ulong)"><strong>ULONG</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/dotnet/csharp/language-reference/keywords/ulong" data-raw-source="[&lt;strong&gt;ULONG&lt;/strong&gt;](/dotnet/csharp/language-reference/keywords/ulong)"><strong>ULONG</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-The property descriptor (instance data) is a [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
+The property descriptor (instance data) is a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the structure with the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
 
 The property value is a variable of type ULONG.
 
@@ -60,8 +59,7 @@ The property value is a variable of type ULONG.
 
 A KSPROPERTY\_RTAUDIO\_PACKETCOUNT property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code.
 
-Remarks
--------
+## Remarks
 
 From the packet count, the OS can derive the stream position of the packets it writes into the WaveRT buffer. The OS can also derive the WaveRT buffer position of the next packet to write within the WaveRT buffer. For WaveRT drivers, the driver signals a single notification event as it transfers data from each packet of the WaveRT buffer. Therefore the event alone cannot indicate which packet within the WaveRT buffer is being transferred. In normal operation this is not a concern but in underflow cases correction is more easily achieved by querying the packet count from which the OS can determine which packet to write next.
 
@@ -71,8 +69,7 @@ The OS may get this property at any time. However it generally gets this propert
 
 The driver should reset the packet count to 0 when the stream is in KSSTATE\_STOP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -95,13 +92,3 @@ Requirements
 
 
 [KSPROPSETID\_RTAudio](kspropsetid-rtaudio.md)
-
- 
-
- 
-
-
-
-
-
-

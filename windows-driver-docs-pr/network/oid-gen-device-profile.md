@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_DEVICE_PROFILE
 description: The OID_GEN_DEVICE_PROFILE OID is obsolete. NDIS and NDIS drivers do not use this OID.
-ms.assetid: 0c95bbce-235a-4827-b935-137b9ee983b6
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_DEVICE_PROFILE Network Drivers Starting with Windows Vista
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 The OID\_GEN\_DEVICE\_PROFILE OID is obsolete. NDIS and NDIS drivers do not use this OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

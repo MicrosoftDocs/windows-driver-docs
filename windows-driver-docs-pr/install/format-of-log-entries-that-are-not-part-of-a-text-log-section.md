@@ -1,7 +1,6 @@
 ---
 title: Format of Log Entries That Are Not Part of a Text Log Section
 description: Format of Log Entries That Are Not Part of a Text Log Section
-ms.assetid: c2c7567e-dfb4-49d3-acc9-034f6544633e
 keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , entries not part of section
@@ -34,19 +33,19 @@ Indicates the message type. The *entry_prefix* field is always present and conta
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>"!!!  "</code></pre></td>
+<td align="left"><pre><code>"!!!  "</code></pre></td>
 <td align="left"><p>An error message in a text log</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>"!    "</code></pre></td>
+<td align="left"><pre><code>"!    "</code></pre></td>
 <td align="left"><p>A warning message in a text log</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>"   . "</code></pre></td>
+<td align="left"><pre><code>"   . "</code></pre></td>
 <td align="left"><p>An information message in a text log (other than an error message or a warning message)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>"     "</code></pre></td>
+<td align="left"><pre><code>"     "</code></pre></td>
 <td align="left"><p>An information message in the application installation text log (other than an error message or a warning message)</p></td>
 </tr>
 </tbody>

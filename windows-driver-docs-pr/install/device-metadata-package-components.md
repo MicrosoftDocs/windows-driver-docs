@@ -1,7 +1,6 @@
 ---
 title: Device Metadata Package Structure
 description: Device Metadata Package Structure
-ms.assetid: 37614100-0a56-4a32-8e45-3161994e503a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -40,7 +39,7 @@ When you create a device metadata package, XML documents and icon files are stor
 
 
 
-More information about Windows Device Experience, Device Stage, and the Device Stage XML schema can be found in the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?linkid=192621).
+More information about Windows Device Experience, Device Stage, and the Device Stage XML schema can be found in the [Microsoft Device Experience Development Kit](../download-the-wdk.md).
 
 
 When you create a device metadata package, you should follow these guidelines:
@@ -49,13 +48,4 @@ When you create a device metadata package, you should follow these guidelines:
 
 -   The device metadata package is not required to include a device icon. However, we highly recommend that the device metadata package contain a [device icon file](device-icon-file.md). This is used to display the photo-realistic image of the device in Devices and Printers.
 
-Starting with the Windows 7 version of the Windows Driver Kit (WDK), the [Toaster Sample](https://go.microsoft.com/fwlink/p/?linkid=256195) provides a sample device metadata package. The XML documents for this package are located in the *src\\general\\toaster\\devicemetadatapackage* subdirectory of the WDK.
-
-
-
-
-
-
-
-
-
+Starting with the Windows 7 version of the Windows Driver Kit (WDK), the [Toaster Sample](/samples/browse/) provides a sample device metadata package. The XML documents for this package are located in the *src\\general\\toaster\\devicemetadatapackage* subdirectory of the WDK.

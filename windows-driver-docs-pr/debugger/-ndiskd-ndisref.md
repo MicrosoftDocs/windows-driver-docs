@@ -1,9 +1,8 @@
 ---
 title: ndiskd.ndisref
 description: The ndiskd.ndisref extension displays a debug log of a tracked reference count.
-ms.assetid: 6860A567-1017-4184-B8DF-157467360FB9
 keywords: ["ndiskd.ndisref Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/18/2020
 topic_type:
 - apiref
 api_name:
@@ -15,15 +14,13 @@ ms.localizationpriority: medium
 
 # !ndiskd.ndisref
 
-
 The **!ndiskd.ndisref** extension displays a debug log of a tracked reference count.
 
 ```console
-!ndiskd.ndisref [-handle <x>] [-tagtype <str>] [-stacks] [-tag <str>] [-refdebug] 
+!ndiskd.ndisref -handle <x> [-tagtype <str>] [-stacks] [-tag <str>] [-refdebug] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Handle of the refcount block.
@@ -40,12 +37,11 @@ Limits display to a single tag.
 <span id="_______-refdebug______"></span><span id="_______-REFDEBUG______"></span> *-refdebug*   
 Shows detailed debug log, if available.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 The following example passes the handle of an NDIS miniport driver to the **!ndiskd.ndisref** extension to display the refcount block for that driver. First, run [**!ndiskd.minidriver**](-ndiskd-minidriver.md) with no parameters to see a list of all miniport drivers on the system. In the example output below, look for the handle for the kdnic driver, ffffdf801418d650.
 
@@ -91,27 +87,16 @@ REFCOUNT BLOCK
     Include inactive tags
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
-
- 
-
- 
-
-
-
-
-
-

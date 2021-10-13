@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SMS_SEND
 description: OID_WWAN_SMS_SEND sends SMS text messages to another MB device.
-ms.assetid: 557d2bdc-8414-4fcb-903c-23bb68955d07
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_SEND Network Drivers Starting with Windows Vista
@@ -15,14 +14,13 @@ OID\_WWAN\_SMS\_SEND sends SMS text messages to another MB device.
 
 Query requests are not supported.
 
-Set requests use the [**NDIS\_WWAN\_SMS\_SEND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send) structure.
+Set requests use the [**NDIS\_WWAN\_SMS\_SEND**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send) structure.
 
 Miniport drivers process this OID asynchronously, and should return an NDIS\_STATUS\_INDICATION\_REQUIRED provisional response to any set requests. Miniport drivers should send an [**NDIS\_STATUS\_WWAN\_SMS\_SEND**](ndis-status-wwan-sms-send.md) indication when they have completed the transaction.
 
-Remarks
--------
+## Remarks
 
-For more information about using this OID, see [WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations).
+For more information about using this OID, see [WWAN SMS Operations](./mb-sms-operations.md).
 
 When processing this OID, miniport drivers can access the provider network, but should not access the Subscriber Identity Module (SIM card).
 
@@ -32,8 +30,7 @@ GSM-based devices are expected to support only PDU-mode SMS text messages. CDMA-
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support SMS text messages, or the ability to send SMS text messages.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -55,14 +52,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SMS\_SEND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send)
+[**NDIS\_WWAN\_SMS\_SEND**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send)
 
-[WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations)
-
- 
+[WWAN SMS Operations](./mb-sms-operations.md)
 
  
-
-
-
 

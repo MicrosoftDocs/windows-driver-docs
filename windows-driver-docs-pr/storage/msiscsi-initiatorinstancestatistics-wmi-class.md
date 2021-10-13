@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_InitiatorInstanceStatistics WMI Class
 description: MSiSCSI\_InitiatorInstanceStatistics WMI Class
-ms.assetid: 5cb20302-e3f9-40fe-b501-7c23d284c120
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -58,13 +57,7 @@ class MSiSCSI_InitiatorInstanceStatistics : Win32_PerfRawData {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorInstanceStatistics**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiprf/ns-iscsiprf-_msiscsi_initiatorinstancestatistics) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorInstanceStatistics**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_initiatorinstancestatistics) data structure.
 
  
-
- 
-
-
-
-
 

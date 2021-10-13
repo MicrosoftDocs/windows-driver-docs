@@ -1,7 +1,6 @@
 ---
 title: DevCon DriverNodes
 description: Lists all driver packages that are compatible with the device, along with their version and ranking. Valid only on the local computer.
-ms.assetid: 891aa022-44f5-4920-ab57-a0573deb94de
 keywords:
 - DevCon DriverNodes Driver Development Tools
 topic_type:
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 # DevCon DriverNodes
 
-Lists all [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/components-of-a-driver-package) that are compatible with the device, along with their version and ranking. Valid only on the local computer.
+Lists all [driver packages](../install/components-of-a-driver-package.md) that are compatible with the device, along with their version and ranking. Valid only on the local computer.
 
 ```
     devcon drivernodes {* | ID [ID ...] | =class [ID [ID ...]]}

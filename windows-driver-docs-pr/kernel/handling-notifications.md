@@ -1,7 +1,6 @@
 ---
 title: Handling Notifications
 description: Handling Notifications
-ms.assetid: ace7f59d-fe9f-4810-91db-2cf20c9591cf
 keywords: ["filtering registry calls WDK kernel , notification options", "registry filtering drivers WDK kernel , notification options", "notifications WDK filter registry call", "filtering registry calls WDK kernel , monitoring calls", "registry filtering drivers WDK kernel , monitoring calls", "filtering registry calls WDK kernel , blocking calls", "registry filtering drivers WDK kernel , blocking calls", "filtering registry calls WDK kernel , modifying calls", "registry filtering drivers WDK kernel , modifying calls", "blocking calls WDK filter registry call", "monitoring registry calls"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 # Handling Notifications
 
 
-The [*RegistryCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-ex_callback_function) routine receives a pointer to a **REG\_*XXX*\_KEY\_INFORMATION** structure that contains information about the registry operation that is occurring.
+The [*RegistryCallback*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function) routine receives a pointer to a **REG\_*XXX*\_KEY\_INFORMATION** structure that contains information about the registry operation that is occurring.
 
 The *RegistryCallback* routine can monitor, block, or modify a registry operation.
 
@@ -38,7 +37,7 @@ When a registry filtering driver's *RegistryCallback* routine receives a post-no
 
     Modifying output parameters is supported in Windows Vista and later.
 
--   Modify the registry operation's return value by providing a status value for the **ReturnStatus** member of the [**REG\_POST\_OPERATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_post_operation_information) structure and then returning STATUS\_CALLBACK\_BYPASS. The configuration manager returns the specified return value to the calling thread.
+-   Modify the registry operation's return value by providing a status value for the **ReturnStatus** member of the [**REG\_POST\_OPERATION\_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_reg_post_operation_information) structure and then returning STATUS\_CALLBACK\_BYPASS. The configuration manager returns the specified return value to the calling thread.
 
     **Note**  If the driver changes a status code from success to failure, it might have to deallocate objects that the configuration manager allocated. Alternatively, if the driver changes a status code from failure to success, it might have to provide appropriate output parameters.
 
@@ -64,13 +63,3 @@ If a *RegistryCallback* routine returns STATUS\_CALLBACK\_BYPASS for a pre-notif
 -   **NtReplaceKey**
 -   **NtRenameKey**
 -   **NtSetInformationKey**
-
-
-
-
-
-
-
-
-
-

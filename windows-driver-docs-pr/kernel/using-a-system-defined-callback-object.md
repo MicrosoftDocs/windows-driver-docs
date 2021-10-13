@@ -1,7 +1,6 @@
 ---
 title: Using a System-Defined Callback Object
 description: Using a System-Defined Callback Object
-ms.assetid: 1f1a2fc1-e698-41f7-84e4-9db091def690
 keywords: ["callback objects WDK kernel", "system-defined callback objects WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -33,16 +32,11 @@ The **\\Callback\\PowerState** callback object provides for notification when on
 
 The **\\Callback\\ProcessorAdd** callback provides notification when a new processor is added to the system.
 
-To use a system-defined callback, a driver initializes an attribute block ([**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfwdm/nf-wudfwdm-initializeobjectattributes)) with the callback's name, then opens the callback object ([**ExCreateCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-excreatecallback)), just as for a driver-defined callback. The driver should not request that the callback object be created.
+To use a system-defined callback, a driver initializes an attribute block by calling [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes) with the callback's name, then opens the callback object ([**ExCreateCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excreatecallback)), just as for a driver-defined callback. The driver should not request that the callback object be created.
 
-With the handle returned by **ExCreateCallback**, the driver calls [**ExRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exregistercallback) to register a notification routine, passing a pointer to an arbitrary context and a pointer to its routine. A driver can register its callback routine any time. When the specified condition occurs, the system calls the registered callback routine at IRQL&lt;=DISPATCH\_LEVEL.
+With the handle returned by **ExCreateCallback**, the driver calls [**ExRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exregistercallback) to register a notification routine, passing a pointer to an arbitrary context and a pointer to its routine. A driver can register its callback routine any time. When the specified condition occurs, the system calls the registered callback routine at IRQL&lt;=DISPATCH\_LEVEL.
 
-When the driver no longer requires notification, it should call [**ExUnregisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exunregistercallback) to delete its callback routine from the list of registered callbacks and to remove its reference to the callback object.
-
- 
+When the driver no longer requires notification, it should call [**ExUnregisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exunregistercallback) to delete its callback routine from the list of registered callbacks and to remove its reference to the callback object.
 
  
-
-
-
 

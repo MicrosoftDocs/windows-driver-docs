@@ -1,7 +1,6 @@
 ---
 title: Typical Audio Configurations
 description: Typical Audio Configurations
-ms.assetid: 00e05a66-2830-4f68-baac-2244e1f66770
 keywords:
 - WDM audio drivers WDK , typical configurations
 - audio drivers WDK , typical configurations

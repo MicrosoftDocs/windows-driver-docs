@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIDFILTER\_LIST\_PIDS
 description: Clients use KSPROPERTY\_BDA\_PIDFILTER\_LIST\_PIDS to retrieve from a PID filter node the list of its PIDs that identify groups of packets that the node delivers from the input stream to the output stream.
-ms.assetid: fc7dc0af-af74-4bd1-b99c-f06de25aae3c
 keywords: ["KSPROPERTY_BDA_PIDFILTER_LIST_PIDS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_PIDFILTER\_LIST\_PIDS to retrieve from a PID filter
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the PID filter node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -79,14 +76,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

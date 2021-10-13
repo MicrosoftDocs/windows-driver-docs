@@ -1,14 +1,13 @@
 ---
 title: MultipleLocale
 description: MultipleLocale
-ms.assetid: 95590875-2797-4a73-a211-6102305098f9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # MultipleLocale
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The MultipleLocale element specifies if the service metadata package supports multiple locales or not.
 

@@ -1,30 +1,36 @@
 ---
-title: Allocated Altitudes
-description: Allocated Altitudes
-ms.assetid: EC1993FB-5219-4C0C-A76A-05937A461C5A
-ms.date: 04/20/2017
+title: Allocated filter altitudes
+description: Lists file system filter altitudes allocated by Microsoft
+ms.date: 05/27/2021
+keywords:
+- filter driver altitude
+- minifilter driver altitude
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q1
 ---
 
-# Allocated Altitudes
+# Allocated filter altitudes
 
-A file system minifilter driver developed to the Filter Manager model must have a unique identifier called an altitude that defines its position relative to other minifilters present in the file system stack. Minifilter altitudes are allocated by Microsoft based on minifilter requirements and load order group.
+This page lists filter altitude allocations by load order group. It is updated 1-2 times per year, so might not include any recently assigned allocations (see date on this page for last update).
 
-To request a minifilter altitude number, see [Minifilter Altitude Request](minifilter-altitude-request.md).
+> [!NOTE]
+> If you already have a Microsoft-assigned "integer" altitude, you can [use it to create your own altitude to place a new filter in the same load order group](load-order-groups-and-altitudes-for-minifilter-drivers.md#create-an-altitude). If you don't have a Microsoft-assigned altitude in the appropriate load order group, you'll need [submit an altitude request](minifilter-altitude-request.md).
 
-The current altitude allocations are listed below for each of the following load order groups.
+To learn more about load order groups and altitudes, including how you can place filters at fractional altitudes based on your Microsoft-issued integer altitude, see ["Load order groups and altitudes for minifilter drivers"](load-order-groups-and-altitudes-for-minifilter-drivers.md).
 
-## <span id="420000_-_429999__Filter"></span><span id="420000_-_429999__filter"></span><span id="420000_-_429999__FILTER"></span>420000 - 429999: Filter
+To see how a driver uses its altitude number in its INF file, see [Creating an INF file for a filter driver](creating-an-inf-file-for-a-minifilter-driver.md).
+
+## 420000 - 429999: Filter
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | ntoskrnl.exe | 425500 | Microsoft |
 | ntoskrnl.exe | 425000 | Microsoft |
 
-## <span id="400000_-_409999__FSFilter_Top"></span><span id="400000_-_409999__fsfilter_top"></span><span id="400000_-_409999__FSFILTER_TOP"></span>400000 - 409999: FSFilter Top
+## 400000 - 409999: FSFilter Top
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | wcnfs.sys | 409900 | Microsoft |
 | bindflt.sys | 409800 | Microsoft |
 | cldflt.sys | 409500 | Microsoft |
@@ -33,12 +39,16 @@ The current altitude allocations are listed below for each of the following load
 | fsdepends.sys | 407000 | Microsoft |
 | sftredir.sys | 406000 | Microsoft |
 | dfs.sys | 405000 | Microsoft |
+| VeeamFCT.sys | 404920 | Veeam Software |
 | tracker.sys | 404910 | Acronis |
 | csvnsflt.sys | 404900 | Microsoft |
 | csvflt.sys | 404800 | Microsoft |
 | Microsoft.Uev.AgentDriver.sys | 404710 | Microsoft |
 | AppvVfs.sys | 404700 | Microsoft |
 | CCFFilter.sys | 404600 | Microsoft |
+| uberAgentDrv.sys | 402110 | vast limits GmbH |
+| mrigflt.sys | 402100 | Paramount Software Ltd |
+| RevoNetDriver.sys | 402020 | J's Communication Co. |
 | dciogrd.sys | 402010 | Datacloak Tech |
 | Dewdrv.sys | 402000 | Dell Technologies |
 | zsusbstorfilt.sys | 401910 | Zshield Inc |
@@ -59,27 +69,50 @@ The current altitude allocations are listed below for each of the following load
 | edevmon.sys | 400800 | ESET spol. s r.o. |
 | vmwflstor.sys | 400700 | VMware, Inc. |
 | TsQBDrv.sys | 400600 | Tencent Technology |
-| WRAEKernel.sys | 400500 | Webroot Inc. |
+| PolyPortFlt.sys | 400490 | PolyPort Inc |
+| Dscdriver.sys | 400300 | Dell Technologies Inc. |
 
-## <span id="360000_-_389999__FSFilter_Activity_Monitor"></span><span id="360000_-_389999__fsfilter_activity_monitor"></span><span id="360000_-_389999__FSFILTER_ACTIVITY_MONITOR"></span>360000 - 389999: FSFilter Activity Monitor
+## 360000 - 389999: FSFilter Activity Monitor
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | klboot.sys | 389510 | Kaspersky Lab |
 | klfdefsf.sys | 389500 | Kaspersky Lab |
+| JDPPWF.sys | 389492 | JiranData Co. Ltd |
+| JDPPSF.sys | 389490 | JiranData Co. Ltd |
+| FFDriver.sys | 389470 | ColorTokens |
+| SeRdr.sys | 389450 | rhipe Australia Pty |
+| storagedrv.sys | 389400 | SMTechnology Co. |
+| NetPeeker.sys | 389330 | eMingSoftware Inc |
+| path8flt.sys | 389320 | Telefónica Digital |
+| NgScan.sys | 389310 | Acronis |
+| icrlmonitor.sys | 389300 | Industrial Technology |
+| gibepcore.sys | 389290 | Group-IB LTD |
+| enmon.sys | 389280 | OpenText Corp |
+| wsafefilter.sys | 389272 | WidgetNuri Corp |
+| RansomDetect.sys | 389270 | WidgetNuri Corp |
+| cbfsfilter2017.sys | 389260 | Mobile Content Mgmt |
 | CBFSFilter2017.sys | 389250 | SecureLink Inc. |
+| MagicProtect.sys | 389247 | NanJing Geomarking |
+| cbfsfilter2017.sys | 389245 | NanJing Geomarking |
+| cbfsfilter2020.sys | 389245 | NanJing Geomarking |
+| DTDSel.sys | 389242 | DELL Technologies |
 | NWEDriver.sys | 389240 | Dell Technologies |
 | cytmon.sys | 389230 | Cytrence Inc |
 | SophosED.sys | 389220 | Sophos |
 | MonsterK.sys | 389210 | Somma Inc |
 | IFS64.sys | 389200 | Ashampoo Development |
+| TSTFsReDir.sys | 389192 | ThinScale Tech |
+| TSTRegReDir.sys | 389191 | ThinScale Tech |
 | TSTFilter.sys | 389190 | ThinScale Tech |
 | VrnsFilter.sys | 389180 | Varonis Ltd |
+| slb_guard.sys | 389175 | Lenovo Beijing |
 | lrtp.sys | 389170 | Lenovo Beijing |
 | ipcomfltr.sys | 389160 | Bluzen Inc |
 | SvCBT.sys | 389150 | Spharsoft Technologies |
 | mbamshuriken.sys | 389140 | Malwarebytes |
 | ContainerMonitor.sys | 389130 | Aqua Security |
+| cmflt.sys | 389125 | Certero |
 | SaMFlt.sys | 389120 | DreamCrafts |
 | RuiMinispy.sys | 389117 | RuiGuard Ltd |
 | RuiFileAccess.sys | 389115 | RuiGuard Ltd |
@@ -88,6 +121,8 @@ The current altitude allocations are listed below for each of the following load
 | windd.sys | 389110 | Comae Tech |
 | cbfsfilter2017.sys | 389105 | Basein Networks |
 | taobserveflt.sys | 389100 | ThinAir Labs Inc |
+| bsrfsflt.sys | 389096 | Man Technology Inc |
+| fsrfilter.sys | 389094 | Man Technology Inc |
 | vollock.sys | 389092 | Man Technology Inc |
 | drbdlock.sys | 389090 | Man Technology Inc |
 | dcfsgrd.sys | 389085 | Datacloak Tech |
@@ -119,9 +154,12 @@ The current altitude allocations are listed below for each of the following load
 | CrUnCopy.sys | 388964 | Shenzhen CloudRiver |
 | aictracedrv_am.sys | 388960 | AI Consulting |
 | fiopolicyfilter.sys | 388954 | SanDisk Inc. |
+| sodatpfl.sys | 388951 | SODATSW spol. s r.o. |
+| sodatpfl.sys | 388950.2 | SODATSW |
 | fcontrol.sys | 388950 | SODATSW spol. s r.o. |
 | qfilter.sys | 388940 | Quorum Labs |
 | Redlight.sys | 388930 | Trustware Ltd |
+| ClumioChangeBlockMf.sys | 388925 | Clumio Inc |
 | eps.sys | 388920 | Lumension |
 | VHDTrack.sys | 388915 | Intronis Inc |
 | VHDDelta.sys | 388912 | Niriva LLC |
@@ -134,25 +172,34 @@ The current altitude allocations are listed below for each of the following load
 | dsflt.sys | 388876 | cEncrypt |
 | bfaccess.sys | 388872 | bitFence Inc. |
 | xcpl.sys | 388870 | X-Cloud Systems |
+| DFMFilter.sys | 388867 | ManageEngine Zoho |
 | DCFAFilter.sys | 388866 | ManageEngine Zoho |
 | RMPHVMonitor.sys | 388865 | ManageEngine Zoho |
 | FAPMonitor.sys | 388864 | ManageEngine Zoho |
+| MEARWFltDriver.sys | 388863 | ManageEngine Zoho |
 | EaseFlt.sys | 388860 | EaseVault Technologies Inc. |
 | rpwatcher.sys | 388855 | Best Security |
 | sieflt.sys | 388852 | Quick Heal Technologies Pvt. Ltd. |
 | cssdlp.sys | 388851 | Quick Heal Technologies Pvt. Ltd. |
 | cssdlp.sys | 388850 | CoSoSys |
 | INISBDrv64.sys | 388840 | Initech Inc. |
+| kconv.sys | 388832 | Fitsec Ltd |
 | trace.sys | 388831 | Fitsec Ltd |
 | SandDriver.sys | 388830 | Fitsec Ltd |
 | dskmn.sys | 388820 | Honeycomb Technologies |
+| offsm.sys | 388811 | Jiransoft Co., Ltd |
 | xkfsfd.sys | 388810 | Jiransoft Co., Ltd |
+| JKPPOB.sys | 388808 | Jiransoft Co., Ltd |
+| JKPPXK.sys | 388807 | Jiransoft Co., Ltd |
+| JKPPPF.sys | 388806 | Jiransoft Co., Ltd |
+| JKPPOK.sys | 388805 | Jiransoft Co., Ltd |
 | pcpifd.sys | 388800 | Jiransoft Co., Ltd |
 | NNTInfo.sys | 388790 | New Net Technologies Limited |
+| NmpFilter.sys | 388781 | IBM |
 | FsMonitor.sys | 388780 | IBM |
 | CVCBT.sys | 388770 | CommVault Systems, Inc. |
 | AwareCore.sys | 388760 | TaaSera Inc. |
-| laFS.sys | 388750 | NetworkProfi Ltd. |
+| laFS.sys | 388750 | NetworkProfi Ltd |
 | fsnk.sys | 388740 | SoftPerfect Research |
 | RGNT.sys | 388730 | HFN Inc. |
 | fltRs329.sys | 388720 | Secured Globe Inc. |
@@ -192,14 +239,17 @@ The current altitude allocations are listed below for each of the following load
 | axfltdrv.sys | 388460 | Axact Pvt Ltd |
 | RMDiskMon.sys | 388450 | Qingdao Ruanmei Network Technology Co. |
 | diskactmon.sys | 388440 | Qingdao Ruanmei Network Technology Co. |
+| BlackCat.sys | 388435 | NEXON KOREA |
 | Codex.sys | 388430 | GameHi Co. |
 | CatMF.sys | 388420 | Logichron Inc |
 | RW7FsFlt.sys | 388410 | PJSC KP VTI |
 | aswSP.sys | 388401 | Avast Software |
 | aswFsBlk.sys | 388400 | ALWIL Software |
+| AbrPmon.sys | 388390 | FastTrack Software ApS |
 | ThreatStackFIM.sys | 388380 | Threat Stack |
 | BOsCmFlt.sys | 388370 | Barkly Protects Inc. |
 | BOsFsFltr.sys | 388370 | Barkly Protects Inc. |
+| Asgard.sys | 388365 | SPEKNET EOOD |
 | FeKern.sys | 388360 | FireEye Inc. |
 | libwamf.sys | 388350 | OPSWAT Inc. |
 | SZEDRDrv.sys | 388346 | SaferZone Co. |
@@ -238,6 +288,7 @@ The current altitude allocations are listed below for each of the following load
 | LCgFile.sys | 387972 | YATEM Co. Ltd. |
 | LCmFileMon.sys | 387970 | YATEM Co. Ltd. |
 | IridiumSwitch.sys | 387960 | Confio |
+| axfsysmon.sys | 387951 | AppiXoft |
 | scensemon.sys | 387950 | AppiXoft |
 | ruaff.sys | 387940 | RUNEXY |
 | bbfilter.sys | 387930 | derivo GmbH |
@@ -254,6 +305,7 @@ The current altitude allocations are listed below for each of the following load
 | uamflt.sys | 387700 | Sevtechnotrans |
 | ehdrv.sys | 387600 | ESET, spol. s r.o. |
 | DattoFSF.sys | 387560 | Datto Inc |
+| RubrikFileAudit.sys | 387552 | Rubrik Inc |
 | FileSystemCBT.sys | 387550 | Rubrik Inc |
 | Snilog.sys | 387500 | Systemneeds, Inc |
 | tss.sys | 387400 | Tiversa Inc |
@@ -282,11 +334,12 @@ The current altitude allocations are listed below for each of the following load
 | ScAuthIoDrv.sys | 386700 | Security Code LLC |
 | mfeaskm.sys | 386610 | McAfee Inc. |
 | mfencfilter.sys | 386600 | McAfee |
-| WinFLAHdrv.sys | 386540 | NewSoftwares&#x2024;net, Inc. |
-| WinFLAdrv.sys | 386530 | NewSoftwares&#x2024;net, Inc. |
-| WinDBdrv.sys | 386520 | NewSoftwares&#x2024;net, Inc. |
-| WinFLdrv.sys | 386510 | NewSoftwares&#x2024;net, Inc. |
-| WinFPdrv.sys | 386500 | NewSoftwares&#x2024;net, Inc. |
+| WinFLAHdrv.sys | 386540 | NewSoftwares.net,Inc. |
+| WinFLAdrv.sys | 386530 | NewSoftwares.net,Inc. |
+| WinDBdrv.sys | 386520 | NewSoftwares.net,Inc. |
+| WinFLdrv.sys | 386510 | NewSoftwares.net,Inc. |
+| WinFPdrv.sys | 386500 | NewSoftwares.net,Inc. |
+| varpffmon.sys | 386486 | Varlook Ltd. |
 | SkyWPDrv.sys | 386435 | Sky Co.,Ltd. |
 | SkyRGDrv.sys | 386431 | Sky Co., LTD. |
 | SkyAMDrv.sys | 386430 | Sky Co., LTD. |
@@ -328,6 +381,7 @@ The current altitude allocations are listed below for each of the following load
 | klrsps.sys | 385815 | Kaspersky Lab |
 | klsnsr.sys | 385810 | Kaspersky Lab |
 | TaniumRecorderDrv.sys | 385800 | Tanium |
+| CdsgFsFilter.sys | 385700 | CRU Data Security Group |
 | mssecflt.sys | 385600 | Microsoft |
 | Backupreader.sys | 385500 | Microsoft |
 | MsixPackagingToolMonitor.sys | 385410 | Microsoft |
@@ -386,6 +440,8 @@ The current altitude allocations are listed below for each of the following load
 | amfd.sys | 382400 | Atlansys Software |
 | iSafeKrnl.sys | 382390 | Elex Tech Inc |
 | iSafeKrnlMon.sys | 382380 | Elex Tech Inc |
+| AtdrAgent.sys | 382325 | 360 Software (Beijing) |
+| AtdrAgent64.sys | 382325 | 360 Software (Beijing) |
 | Qutmdrv.sys | 382320 | 360 Software (Beijing) |
 | 360box.sys | 382310 | Qihoo 360 |
 | 360fsflt.sys | 382300 | Beijing Qihoo Technology Co. |
@@ -417,7 +473,7 @@ The current altitude allocations are listed below for each of the following load
 | qfmon.sys | 381190 | Quality Corporation |
 | flyfs.sys | 381160 | NEC Soft |
 | serfs.sys | 381150 | NEC Soft |
-| hdrfs.sys | 381140 | NEC Soft |
+| hdrfs.sys | 381140  | NEC Soft |
 | UVMCIFSF.sys | 381130 | NEC Corporation |
 | ICFClientFlt.sys | 381120 | NEC System Technologies,Ltd. |
 | IccFileIoAd.sys | 381110 | NEC System Technologies,Ltd. |
@@ -425,8 +481,10 @@ The current altitude allocations are listed below for each of the following load
 | IccFilterSc.sys | 381090 | InfoCage |
 | Sefo.sys - Top | 381010 | Solusseum Inc |
 | mtsvcdf.sys | 381000 | CristaLink |
+| SDDrvLdr.sys | 380970 | Aliaksander Lebiadzevich |
 | SQLsafeFilterDriver.sys | 380901 | Idera Software |
 | IderaFilterDriver.sys | 380900 | Idera |
+| cbfilter20.sys | 380852 | SN Systems Ltd |
 | cbfsfilter2017.sys | 380850 | SN Systems Ltd |
 | xhunter1.sys | 380800 | Wellbia&#x2024;com |
 | iGuard.sys | 380720 | i-Guard SAS |
@@ -435,6 +493,7 @@ The current altitude allocations are listed below for each of the following load
 | PkgFilter.sys | 380700 | Scalable Software Inc. |
 | snimg.sys | 380600 | Softnext Technologies |
 | SK.sys | 380520 | HEAT Software |
+| cbfsfilter2017.sys | 380515 | Kits Ltd. |
 | mpxmon.sys | 380510 | Positive Technologies |
 | filenamevalidator.sys | 380502 | Infotecs |
 | KC3.sys | 380500 | Infotecs |
@@ -443,11 +502,14 @@ The current altitude allocations are listed below for each of the following load
 | ionmonwdrv.sys | 380490 | SK Infosec Co |
 | Sefo.sys - Middle | 380480 | Solusseum Inc |
 | sagntflt.sys | 380470 | ShinNihonSystec Co |
+| VrVBRFsFilter.sys | 380461 | Hauri Inc |
 | VrExpDrv.sys | 380460 | Hauri Inc |
 | srminifilterdrv.sys | 380450 | Citrix Systems |
 | zzpensys.sys | 380440 | Zhuan Zhuan Jing Shen |
 | tedrdrv.sys | 380430 | Palo Alto Networks |
 | fangcloud_autolock_driver.sys | 380420 | Hangzhou Yifangyun |
+| FASDriver | 380410 | Tech Research |
+| kFileFlt.sys | 380405 | AsiaInfo Technologies |
 | CbSampleDrv.sys | 380020 | Microsoft |
 | CbSampleDrv.sys | 380010 | Microsoft |
 | CbSampleDrv.sys | 380000 | Microsoft |
@@ -469,6 +531,7 @@ The current altitude allocations are listed below for each of the following load
 | nullFilter.sys | 370020 | Microsoft |
 | ntest.sys | 370010 | Microsoft |
 | minispy.sys - Middle | 370000 | Microsoft |
+| AvaPsFD.sys | 368540 | Avanite Limited |
 | isecureflt.sys | 368530 | iSecure Ltd. |
 | SFPMonitor.sys - Middle | 368520 | SonicWall Inc |
 | wats_se.sys | 368510 | Fujian Shen Kong |
@@ -477,6 +540,7 @@ The current altitude allocations are listed below for each of the following load
 | asiofms.sys | 368460 | Encourage Technologies |
 | cbfsfilter2017.sys | 368450 | Absolute Software |
 | FileHubAgent.sys | 368440 | SmartFile LLC |
+| pfracdrv.sys | 368430 | NURILAB |
 | nrcomgrdki.sys | 368420 | NURILAB |
 | nrcomgrdka.sys | 368420 | NURILAB |
 | nrpmonki.sys | 368410 | NURILAB |
@@ -492,6 +556,9 @@ The current altitude allocations are listed below for each of the following load
 | SfdFilter.sys | 368350 | Sandoll Communication |
 | phdcbtdrv.sys | 368340 | PHD Virtual Tech Inc. |
 | sysdiag.sys | 368330 | HeroBravo Technology |
+| wlminisecmod.sys | 368329 | Winicssec Ltd |
+| WntGPDrv.sys | 368327 | Winicssec Ltd |
+| edrdrv.sys | 368325 | Nurd Yazilim A.S. |
 | CmdCwagt.sys | 368322 | Comodo Security Solutions Inc. |
 | cfrmd.sys | 368320 | Comodo Security Solutions Inc. |
 | repdrv.sys | 368310 | Vision Solutions |
@@ -510,10 +577,12 @@ The current altitude allocations are listed below for each of the following load
 | soidriver.sys | 367750 | Sophos Plc |
 | drvhookcsmf.sys | 367700 | GrammaTech, Inc. |
 | drvhookcsmf_amd64.sys | 367700 | GrammaTech, Inc. |
+| RevoNetDriver.sys | 367650 | J's Communication Co. |
 | avipbb.sys | 367600 | Avira GmbH |
 | FileSightMF.sys | 367500 | PA File Sight |
 | csaam.sys | 367400 | Cisco Systems |
 | FSMon.sys | 367300 | 1mill |
+| AccessValidator.sys | 367200 | Shanghai YiCun Network Tech Co. Ltd |
 | filefilter.sys | 367100 | Beijing Zhong Hang Jiaxin Computer Technology Co.,Ltd. |
 | iiscache.sys | 367000 | Microsoft |
 | nowonmf.sys | 366993 | Diskeeper Corporation |
@@ -535,6 +604,8 @@ The current altitude allocations are listed below for each of the following load
 | intmfs.sys | 366781 | CondusivTechnologies |
 | excfs.sys | 366780 | CondusivTechnologies |
 | zampit_ml.sys | 366700 | Zampit |
+| TenRSafe2.sys | 366669 | Tencent Technology |
+| tesxporter.sys | 366667 | Tencent Technology |
 | tesxnginx.sys | 366666 | Tencent Technology |
 | rflog.sys | 366600 | AppStream, Inc. |
 | csmon.sys | 366582 | CyberSight Inc |
@@ -573,10 +644,11 @@ The current altitude allocations are listed below for each of the following load
 | ssrfsf.sys | 365210 | Symantec |
 | emxdrv2.sys | 365200 | Symantec |
 | reghook.sys | 365150 | Symantec |
-| symevnt.sys | 365110 | Symantec |
 | spbbcdrv.sys | 365100 | Symantec |
 | bhdrvx86.sys | 365100 | Symantec |
 | bhdrvx64.sys | 365100 | Symantec |
+| symevnt.sys | 365090 | Broadcom |
+| symevnt32.sys | 365090 | Broadcom |
 | SISIPSFileFilter | 365010 | Symantec |
 | symevent.sys | 365000 | Symantec |
 | wrpfv.sys | 364900 | Microsoft |
@@ -609,15 +681,21 @@ The current altitude allocations are listed below for each of the following load
 | Santa.sys | 363510 | Safend |
 | vfdrv.sys | 363500 | Viewfinity |
 | topdogfsfilt.sys | 363450 | ManTech |
-| xhunter64.sys | 363400 | Wellbia&#x2024;com |
-| uncheater.sys | 363390 | Wellbia&#x2024;com |
+| sfac.sys | 363420 | SoulFrost |
+| xhunter64.sys | 363400 | Wellbia.com |
+| uncheater.sys | 363390 | Wellbia.com |
 | AuditFlt.sys | 363313 | Ionx Solutions LLP |
 | SPIMiniFilter.sys | 363300 | Software Pursuits Inc. |
 | mracdrv.sys | 363230 | Mail&#x2024;Ru |
 | BEDaisy.sys | 363220 | BattlEye Innovations |
+| MPKernel.sys | 363210 | Lovelace Network Tech |
 | NetAccCtrl.sys | 363200 | LINK co. |
 | NetAccCtrl64.sys | 363200 | LINK co. |
+| bzsenyaradrv.sys | 363142 | BiZone LLC |
+| bzsenspdrv.sys | 363141 | BiZone LLC |
+| bzsenth.sys | 363140 | BiZone LLC |
 | hpreg.sys | 363130 | HP |
+| QMON.sys | 363122 | Qualys Inc. |
 | qfimdvr.sys | 363120 | Qualys Inc. |
 | QDocumentREF.sys | 363110 | BicDroid Inc. |
 | dsfemon.sys | 363100 | Topology Ltd |
@@ -626,14 +704,17 @@ The current altitude allocations are listed below for each of the following load
 | ctamflt.sys | 363010 | ComTrade |
 | psisolator.sys | 363000 | SharpCrafters |
 | QmInspec.sys | 362990 | Beijing QiAnXin Tech. |
+| HVLMinifilter.sys | 362980 | HAVELSAN A.Ş |
 | GagSecurity.sys | 362970 | Beijing Shu Yan Science |
+| vfpd.sys | 362962 | CyberArk Software |
 | CybKernelTracker.sys | 362960 | CyberArk Software |
 | filemon.sys | 362950 | Temasoft S.R.L. |
 | SCAegis.sys | 362940 | Sogou Ltd. |
-| fpifp_minifilter.sys | 362930 | ForcePoint LLC. |
+| fpepflt.sys | 362930 | ForcePoint LLC. |
 | klifks.sys | 362902 | Kaspersky Lab |
 | klifaa.sys | 362901 | Kaspersky Lab |
 | Klifsm.sys | 362900 | Kaspersky Lab |
+| Spotlight.sys | 362870 | Cigent Technology Inc |
 | nxrmflt.sys | 362860 | NextLabs |
 | vast.sys | 362850 | PolyLogyx LLC |
 | AALProtect.sys | 362840 | AlphaAntiLeak |
@@ -641,13 +722,15 @@ The current altitude allocations are listed below for each of the following load
 | RsFlt.sys | 362820 | Redstor Limited |
 | CentrifyFSF.sys | 362810 | Centrify Corp |
 | Sefo.sys - Bottom | 362800 | Solusseum Inc |
+| proggerdriver.sys | 362790 | WaikatoLink Ltd |
+| imfilter.sys | 362780 | ITsMine |
 | SFPMonitor.sys - Bottom | 362700 | SonicWall Inc |
 | minispy.sys - Bottom | 361000 | Microsoft |
 
-## <span id="340000_-_349999__FSFilter_Undelete"></span><span id="340000_-_349999__fsfilter_undelete"></span><span id="340000_-_349999__FSFILTER_UNDELETE"></span>340000 - 349999: FSFilter Undelete
+## 340000 - 349999: FSFilter Undelete
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | BSSFlt.sys | 346000 | Blue Shoe Software LLC |
 | ThinIO.sys | 345900 | ThinScale Technology |
 | hmpalert.sys | 345800 | SurfRight |
@@ -664,18 +747,25 @@ The current altitude allocations are listed below for each of the following load
 | SolRegFilter.sys | 345030 | Soliton Systems K.K. |
 | SolSecBr.sys | 345020 | Soliton Systems K.K. |
 | SolFCLLi.sys | 345010 | Soliton Systems K.K. |
+| WinSetupMon.sys | 345102 | Microsoft |
 | SolFCL.sys | 345000 | Soliton Smart Sec |
 | DCVPr.sys | 340700 | SecurStar GmbH |
 
-## <span id="320000_-_329998__FSFilter_Anti-Virus"></span><span id="320000_-_329998__fsfilter_anti-virus"></span><span id="320000_-_329998__FSFILTER_ANTI-VIRUS"></span>320000 - 329998: FSFilter Anti-Virus
+## 320000 - 329998: FSFilter Anti-Virus
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
+| tbmninifilter.sys | 329370 | Confluera Inc |
+| trfsfilter.sys | 329360 | NetSecurity Corp |
+| ReveFltMgr.sys | 329350 | REVE Antivirus |
+| ReveProcProtection.sys | 329340 | REVE Antivirus |
 | zwPxeSvr.sys | 329330 | SecureLink Inc. |
 | zwASatom.sys | 329320 | SecureLink Inc. |
 | wscm.sys | 329310 | Fujitsu Social Science |
 | IMFFilter.sys | 329300 | IObit Information Tech |
 | CSFlt.sys | 329290 | ConeSecurity Inc |
+| PWProtect.sys | 329250 | PerfectWorld Ltd |
+| Osiris.sys | 329240 | Binary Defense Systems |
 | ospfile_mini.sys | 329230 | OKUMA Corp |
 | SoftFilterxxx.sys | 329222 | WidgetNuri Corp |
 | RansomDefensexxx.sys | 329220 | WidgetNuri Corp |
@@ -691,6 +781,7 @@ The current altitude allocations are listed below for each of the following load
 | ECATDriver.sys | 329120 | EMC |
 | pfkrnl.sys | 329110 | FXSEC LTD |
 | epicFilter.sys | 329100 | Hidden Reflex |
+| EdnemFsFilter.sys | 329090 | Dakota State University |
 | b9kernel.sys | 329050 | Bit9 Inc |
 | eeCtrl.sys | 329010 | symantec |
 | eraser.sys (Retired) | 329010 | symantec |
@@ -708,6 +799,7 @@ The current altitude allocations are listed below for each of the following load
 | si32_file.sys | 328810 | Scargo Inc |
 | si64_file.sys | 328810 | Scargo Inc |
 | mbam.sys | 328800 | Malwarebytes Corp. |
+| lnvscenter.sys | 328780 | Lenovo |
 | EnigmaFileMonDriver.sys | 328770 | EnigmaSoft |
 | KUBWKSP.sys | 328750 | Netlor SAS |
 | hcp_kernel_acq.sys | 328740 | refractionPOINT |
@@ -720,6 +812,7 @@ The current altitude allocations are listed below for each of the following load
 | MaxProtector.sys | 328610 | Max Secure Software |
 | maxcryptmon.sys | 328601 | Max Secure Software |
 | SDActMon.sys | 328600 | Max Secure Software |
+| TmKmSnsr.sys | 328550 | Trend Micro Inc. |
 | fileflt.sys | 328540 | Trend Micro Inc. |
 | TmEsFlt.sys | 328530 | Trend Micro Inc. |
 | TmEyes.sys | 328520 | Trend Micro Inc. |
@@ -739,11 +832,13 @@ The current altitude allocations are listed below for each of the following load
 | AhkSvPro.sys | 327720 | Ahkun Co. |
 | AhkUsbFW.sys | 327710 | Ahkun Co. |
 | AhkAMFlt.sys | 327700 | Ahkun Co. |
+| majoradvapi.sys | 327680 | Beijing Majorsec |
 | PSINPROC.SYS | 327620 | Panda Security |
 | PSINFILE.SYS | 327610 | Panda Security |
 | amfsm.sys - Windows XP/2003 x64 | 327600 | Panda Security |
 | amm8660.sys - Windows Vista x86 | 327600 | Panda Security |
 | amm6460.sys - Windows Vista x64 | 327600 | Panda Security |
+| PerfectWorldAntiCheatSys.sys | 327560 | Perfect World Co. Ltd |
 | ADSpiderDoc.sys | 327550 | Digitalonnet |
 | BkavAutoFlt.sys | 327542 | Bkav Corporation |
 | BkavSdFlt.sys | 327540 | Bkav Corporation |
@@ -759,11 +854,13 @@ The current altitude allocations are listed below for each of the following load
 | 360qpesv.sys | 327404 | 360 Software (Beijing) |
 | dsark.sys | 327402 | Qihoo 360 |
 | 360avflt.sys | 327400 | Qihoo 360 |
+| sciptflt.sys | 327334 | SECUI Corporation |
 | scifsflt.sys | 327333 | SECUI Corporation |
 | ANVfsm.sys | 327310 | Arcdo |
 | CDrRSFlt.sys | 327300 | Arcdo |
 | mfdriver.sys | 327250 | Imperva Inc. |
 | EPSMn.sys | 327200 | SGA |
+| TxFileFilter.sys | 327160 | Beijing Venus |
 | VTSysFlt.sys | 327150 | Beijing Venus |
 | TesMon.sys | 327130 | Tencent |
 | QQSysMonX64.sys | 327125 | Tencent |
@@ -797,7 +894,7 @@ The current altitude allocations are listed below for each of the following load
 | SheedAntivirusFilterDriver.sys | 326290 | SheedSoft Ltd |
 | bSyirmf.sys | 326260 | BLACKFORT SECURITY |
 | bSysp.sys | 326250 | BLACKFORT SECURITY |
-| bSymfdm.sys | 326240 | BLACKFORT SECURITY |
+| bSydf.sys | 326240 | BLACKFORT SECURITY |
 | bSywl.sys | 326235 | BLACKFORT SECURITY |
 | bSyrtm.sys | 326230 | BLACKFORT SECURITY |
 | bSyaed.sys | 326220 | BLACKFORT SECURITY |
@@ -922,6 +1019,7 @@ The current altitude allocations are listed below for each of the following load
 | PZDrvXP.sys | 321600 | VisionPower Co.,Ltd. |
 | ggc.sys | 321510 | Quick Heal TechnologiesPvt. Ltd. |
 | catflt.sys | 321500 | Quick Heal TechnologiesPvt. Ltd. |
+| snsrflt.sys | 321495 | Quick Heal Technologies Pvt. Ltd. |
 | bdsflt.sys | 321490 | Quick Heal Technologies Pvt. Ltd. |
 | arwflt.sys | 321480 | Quick Heal Technologies Pvt. Ltd. |
 | csagent.sys | 321410 | CrowdStrike Ltd. |
@@ -941,6 +1039,7 @@ The current altitude allocations are listed below for each of the following load
 | dgsafe.sys | 320950 | KINGSOFT |
 | issfltr.sys | 320900 | ISS |
 | hbflt.sys | 320840 | BitDefender SRL |
+| vlflt.sys | 320832 | BitDefender SRL |
 | bdsvm.sys | 320830 | Bitdefender |
 | gzflt.sys | 320820 | BitDefender SRL |
 | bddevflt.sys | 320812 | BitDefender SRL |
@@ -953,9 +1052,17 @@ The current altitude allocations are listed below for each of the following load
 | AVC3.SYS | 320780 | BitDefender SRL |
 | TRUFOS.SYS | 320770 | BitDefender SRL |
 | aswmonflt.sys | 320700 | Alwil |
+| kavnsi.sys | 320650 | AVNOS |
+| CiscoSAM.sys | 320618 | Cisco Systems |
+| immunetselfprotect.sys | 320616 | Cisco Systems |
+| immunetprotect.sys | 320614 | Cisco Systems |
+| CiscoAMPCEFWDriver.sys | 320612 | Cisco Systems |
+| CiscoAMPHeurDriver.sys | 320610 | Cisco Systems |
 | HookCentre.sys | 320602 | G Data |
 | PktIcpt.sys | 320601 | G Data |
 | MiniIcpt.sys | 320600 | G Data |
+| acdrv.sys | 320520 | OnMoon Company LLC |
+| tmfsdrv2.sys | 320510 | Teramind |
 | avgntflt.sys | 320500 | Avira GmbH |
 | klam.sys | 320450 | Kaspersky Lab |
 | klbg.sys | 320440 | Kaspersky |
@@ -967,23 +1074,34 @@ The current altitude allocations are listed below for each of the following load
 | klam.sys | 320350 | Kaspersky Lab |
 | hsmltwhl.sys | 320340 | Hitachi Solutions |
 | hssfwhl.sys | 320330 | Hitachi Solutions |
+| DeepInsFS.sys | 320323 | Deep Instinct Ltd. |
+| DeepInsFS.sys | 320322 | Deep Instinct Ltd. |
+| DeepInsFS.sys | 320321 | Deep Instinct Ltd. |
 | DeepInsFS.sys | 320320 | Deep Instinct Ltd. |
 | avfsmn.sys | 320310 | Anvisoft |
 | lbd.sys | 320300 | Lavasoft AB |
 | pavdrv.sys | 320210 | Panzor Cybersecurity |
 | rvsmon.sys | 320200 | CJSC Returnil Software |
-| WRKrn.sys | 320110 | Webroot Inc. |
+| KawachFsMinifilter.sys | 320160 | Sequretek IT |
+| securoFSD_x64.sys | 320150 | knowwheresoft Ltd |
+| WRAEKernel.sys | 320112 | Webroot Inc. |
+| WRKrn.sys | 320111 | Webroot Inc. |
+| WRCore.sys | 320110 | Webroot Inc. |
 | ssfmonm.sys | 320100 | Webroot Software, Inc. |
+| ODFsFimFilter.sys | 320070 | Odyssey Cyber Security |
+| ODFsTokenFilter.sys | 320061 | Odyssey Cyber Security |
+| ODFsFilter.sys | 320060 | Odyssey Cyber Security |
 | vk_fsf.sys | 320050 | AxBx |
 | VirtualAgent.sys | 320005 | Symantec |
 
-## <span id="300000_-_309998__FSFilter_Replication"></span><span id="300000_-_309998__fsfilter_replication"></span><span id="300000_-_309998__FSFILTER_REPLICATION"></span>300000 - 309998: FSFilter Replication
+## 300000 - 309998: FSFilter Replication
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | IntelCAS.sys | 309100 | Intel Corporation |
 | mvfs.sys | 309000 | IBM Corporation |
 | frxccd.sys | 306000 | FSLogix Inc. |
+| dvfilter.sys | 305002 | Microsoft |
 | fsrecord.sys | 305000 | Microsoft |
 | InstMon.sys | 304201 | Numecent Inc. |
 | StreamingFSD.sys | 304200 | Numecent Inc. |
@@ -1003,21 +1121,25 @@ The current altitude allocations are listed below for each of the following load
 | mDP_win_mini.sys | 302900 | Macro Impact |
 | ctxubs.sys | 302800 | Citrix Systems Inc. |
 | rrepfsf.sys | 302700 | Rose Datasystems Inc |
+| wsyncd.sys | 302100 | WANFast LLC |
 | cbfsfilter2017.sys | 301900 | Super Flexible Software |
 | AxFilter.sys | 301800 | Axcient Inc. |
 | vxfsrep.sys | 301700 | Symantec |
 | dellcapfd.sys | 301600 | Dell Inc. |
 | Sptres.sys | 301500 | Safend |
 | OfficeBackup.sys | 301400 | Ushus Technologies |
+| LxFileMirror.sys | 301350 | Techit GmbH |
 | pcvnfilt.sys | 301300 | Blue Coat |
 | repdac.sys | 301200 | NSI |
 | repkap.sys | 301100 | NSI |
 | repdrv.sys | 301000 | NSI |
 
-## <span id="280000_-_289998__FSFilter_Continuous_Backup"></span><span id="280000_-_289998__fsfilter_continuous_backup"></span><span id="280000_-_289998__FSFILTER_CONTINUOUS_BACKUP"></span>280000 - 289998: FSFilter Continuous Backup
+## 280000 - 289998: FSFilter Continuous Backup
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
+| SyncODFA.sys | 289010 | Sync.com Inc |
+| File_monitor.sys | 289000 | Acronis |
 | Klcdp.sys | 288900 | Kaspersky Lab |
 | splitinfmon.sys | 288800 | Split Infinity |
 | versamatic.sys | 288700 | Acertant Tech |
@@ -1049,7 +1171,7 @@ The current altitude allocations are listed below for each of the following load
 | dpnedriver.sys   (x86) | 280850 | HP |
 | dpnedriver64.sys (x64) | 280850 | HP |
 | hpchgflt.sys | 280800 | HP |
-| VirtFile.sys | 280700 | Symantec |
+| VirtFile.sys | 280700 | Veritas |
 | DeqoCPS.sys | 280600 | Deqo |
 | LV_Tracker.sys | 280500 | LiveVault |
 | cpbak.sys | 280410 | Checkpoint Software |
@@ -1059,10 +1181,16 @@ The current altitude allocations are listed below for each of the following load
 | Sptbkp.sys | 280290 | Safend |
 | accessmonitor.sys | 280280 | Briljant Ekonomisystem |
 
-## <span id="260000_-_269998__FSFilter_Content_Screener"></span><span id="260000_-_269998__fsfilter_content_screener"></span><span id="260000_-_269998__FSFILTER_CONTENT_SCREENER"></span>260000 - 269998: FSFilter Content Screener
+## 260000 - 269998: FSFilter Content Screener
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
+| anrfsdrv.sys | 268500 | ANR Co. LTD. |
+| taExeScanner.sys | 268350 | ITSTATION Inc. |
+| GuardFSFlt.sys | 268340 | ProShield |
+| usbguard.sys | 268330 | HangZhou Tease Tech |
+| gibepdevflt.sys | 268320 | Group-IB LTD |
+| EffeDriver.sys | 268310 | DROVA |
 | Klshadow.sys | 268300 | Kaspersky Lab |
 | TN28.sys | 268290 | ID Authentication Tech |
 | PGDriver.sys | 268280 | Avecto Ltd |
@@ -1178,9 +1306,12 @@ The current altitude allocations are listed below for each of the following load
 | psmmfilter.sys | 260700 | PolyServe |
 | pctefa.sys | 260650 | PC Tools Pty. Ltd. |
 | pctefa64.sys | 260650 | PC Tools Pty. Ltd. |
+| SymEFASI64.sys | 260620 | NortonLifeLock Inc. |
+| SymEFASI.sys | 260620 | NortonLifeLock Inc. |
 | symefasi.sys | 260610 | Symantec Corporation |
 | symefa.sys | 260600 | Symantec |
 | symefa64.sys | 260600 | Symantec |
+| apdFSF.sys | 260550 | Cyberbit Ltd |
 | aictracedrv_cs.sys | 260500 | AI Consulting |
 | DWFIxxxx.sys | 260410 | SciencePark Corporation |
 | DWFIxxxx.sys | 260400 | SciencePark Corporation |
@@ -1188,26 +1319,30 @@ The current altitude allocations are listed below for each of the following load
 | mcfltlab.sys | 260320 | Beijing MicroColor |
 | FDriver.sys | 260310 | Fox-IT |
 | iqpk.sys | 260300 | Secure Islands Technologies LTD |
+| ZTkrnlOpRg.sys | 260264 | Trustsoft |
+| ZTkrnlNt.sys | 260262 | Trustsoft |
+| ZTkrnl.sys | 260260 | Trustsoft |
 | VHDFlt.sys | 260240 | Dell |
 | VHDFlt.sys | 260230 | Dell |
 | VHDFlt.sys | 260220 | Dell |
 | VHDFlt.sys | 260210 | Dell |
 
-## <span id="240000_-_249999__FSFilter_Quota_Management"></span><span id="240000_-_249999__fsfilter_quota_management"></span><span id="240000_-_249999__FSFILTER_QUOTA_MANAGEMENT"></span>240000 - 249999: FSFilter Quota Management
+## 240000 - 249999: FSFilter Quota Management
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | ntps_qfs.sys | 245100 | NTP Software |
 | PSSFsFilter.sys | 245000 | PSS Systems |
 | Sptqmg.sys | 245300 | Safend |
 | storqosflt.sys | 244000 | Microsoft |
 
-## <span id="220000_-_229999__FSFilter_System_Recovery"></span><span id="220000_-_229999__fsfilter_system_recovery"></span><span id="220000_-_229999__FSFILTER_SYSTEM_RECOVERY"></span>220000 - 229999: FSFilter System Recovery
+## 220000 - 229999: FSFilter System Recovery
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | file_protector.sys | 227000 | Acronis |
 | fbwf.sys | 226000 | Microsoft |
+| hmpalert.sys | 221600 | SurfRight |
 | Klsysrec.sys | 221500 | Kaspersky Lab |
 | SFDRV.SYS | 221400 | Utixo LLC |
 | sp_prot.sys | 221300 | Xacti Corporation |
@@ -1215,21 +1350,24 @@ The current altitude allocations are listed below for each of the following load
 | syscow.sys | 221100 | System OK AB |
 | fsredir.sys | 221000 | Microsoft |
 
-## <span id="200000_-_209999__FSFilter_Cluster_File_System"></span><span id="200000_-_209999__fsfilter_cluster_file_system"></span><span id="200000_-_209999__FSFILTER_CLUSTER_FILE_SYSTEM"></span>200000 - 209999: FSFilter Cluster File System
+## 200000 - 209999: FSFilter Cluster File System
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | CVCBT.sys | 203400 | CommVault Systems, Inc. |
 | ResumeKeyFilter.sys | 202000 | Microsoft |
+| VeeamFCT.sys | 201900 | Veeam Software |
+| ShadowVirtualStorage.sys | 201800 | Blade SAS |
 
-## <span id="180000_-_189999__FSFilter_HSM"></span><span id="180000_-_189999__fsfilter_hsm"></span><span id="180000_-_189999__FSFILTER_HSM"></span>180000 - 189999: FSFilter HSM
+## 180000 - 189999: FSFilter HSM
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | wcifs.sys | 189900 | Microsoft |
 | prjflt.sys | 189800 | Microsoft |
 | gameflt.sys | 189750 | Microsoft |
 | nvmsqrd.sys | 188900 | NVIDIA Corporation |
+| Ghost_file.sys | 188800 | Acronis |
 | RsFlt.sys | 187000 | Redstor Limited |
 | mnefs.sys | 186800 | Nippon Techno Lab |
 | Svfsf.sys | 186700 | Spharsoft Technologies |
@@ -1238,10 +1376,12 @@ The current altitude allocations are listed below for each of the following load
 | gwmemory.sys | 186600 | Macrotec LLC |
 | cteraflt.sys | 186550 | CTERA Networks Ltd. |
 | dbx.sys | 186500 | Dropbox Inc. |
+| iMDrvFlt.sys | 186450 | iManage LLC |
 | quaddrasi.sys | 186400 | Quaddra Software |
 | gdrive.sys | 186300 | Google |
 | CoreSyncFilter.sys | 186250 | Adobe Systems Inc. |
 | EaseTag.sys | 186200 | EaseVault Technologies Inc. |
+| HSFilter.sys | 186150 | HubStor Inc. |
 | hcminifilter.sys | 186100 | Happy Cloud Inc. |
 | PDFsFilter.sys | 186000 | Raxco Sfotware Inc. |
 | camino.sys | 185900 | CaminoSoft Corp |
@@ -1295,6 +1435,7 @@ The current altitude allocations are listed below for each of the following load
 | BkfMap.sys | 181200 | Data Storage Group |
 | hsmfilter.sys | 181100 | GRAU Data Storage AG |
 | mwilcflt.sys | 181020 | Moonwalk Universal P/L |
+| mwildflt.sys | 181015 | Moonwalk |
 | mwilsflt.sys | 181010 | Moonwalk Universal P/L |
 | mwidmflt.sys | 181000 | Moonwalk Universal P/L |
 | HcpAwfs.sys | 181960 | Hitachi Data Systems |
@@ -1313,18 +1454,18 @@ The current altitude allocations are listed below for each of the following load
 | sis.sys | 180400 | Microsoft |
 | rbt_wfd.sys | 180300 | Riverbed Technology,Inc |
 
-## <span id="170000_-_174999__*FSFilter_Imaging_(ex:_.ZIP)"></span><span id="170000_-_174999__*fsfilter_imaging_(ex:_.zip)"></span><span id="170000_-_174999__*FSFILTER_IMAGING_(EX:_.ZIP)"></span>170000 - 174999: *FSFilter Imaging (ex: .ZIP)
+## 170000 - 174999: FSFilter Imaging (ex: .ZIP)
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | pfmfs_???.sys | 172100 | Pismo Technic Inc |
 | virtual_file.sys | 172000 | Acronis |
 | wimFltr.sys | 170500 | Microsoft |
 
-## <span id="160000_-_169999__FSFilter_Compression"></span><span id="160000_-_169999__fsfilter_compression"></span><span id="160000_-_169999__FSFILTER_COMPRESSION"></span>160000 - 169999: FSFilter Compression
+## 160000 - 169999: FSFilter Compression
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | CmgFFC.sys | 166000 | Credant Technologies |
 | compress.sys | 165000 | Microsoft |
 | cmpflt.sys | 162000 | Microsoft |
@@ -1336,11 +1477,13 @@ The current altitude allocations are listed below for each of the following load
 | wimfsf.sys | 161000 | Microsoft |
 | GEFCMP.sys | 160100 | Symantec |
 
-## <span id="140000_-_149999__FSFilter_Encryption"></span><span id="140000_-_149999__fsfilter_encryption"></span><span id="140000_-_149999__FSFILTER_ENCRYPTION"></span>140000 - 149999: FSFilter Encryption
+## 140000 - 149999: FSFilter Encryption
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
+| AAFS.sys | 149110 | ViGero |
 | FJSeparettiFilterRamMon.sys | 149100 | FUJITSU LIMITED |
+| trsxefs.sys | 149060 | TransientX Inc. |
 | psatfilter.sys | 149050 | ProYuga |
 | RdFilter.sys | 149040 | CyberEye Research Labs |
 | gisfile_decryption.sys | 149030 | Communication U China |
@@ -1349,6 +1492,7 @@ The current altitude allocations are listed below for each of the following load
 | EasyKryptMF.sys | 149000 | SoftKrypt LLC |
 | padlock.sys | 148910 | IntSoft Inc. |
 | ffecore.sys | 148900 | Winmagic |
+| bkfs.sys | 148880 | Hangzhou JoyBlock Ltd |
 | fangcloud.sys | 148860 | Hangzhou Yifangyun |
 | klvfs.sys | 148810 | Kaspersky Lab |
 | Klfle.sys | 148800 | Kaspersky Lab |
@@ -1401,6 +1545,7 @@ The current altitude allocations are listed below for each of the following load
 | DDSFilter.sys | 145800 | WuHan Forworld Software |
 | SecureShield.sys | 145700 | HMI |
 | AifaFE.sys | 145600 | Alfa |
+| HiCrypt.sys | 145566 | digitronic computersysteme GmbH |
 | GBFsMf.sys | 145500 | GreenBorder |
 | jmefs.sys | 145400 | ShangHai Elec |
 | emugufs.sys | 145333 | Emugu Secure FS |
@@ -1451,6 +1596,7 @@ The current altitude allocations are listed below for each of the following load
 | Fcfileio.sys | 143100 | Brainzsquare, Co. Ltd. |
 | cpdrm.sys | 143000 | Pikewerks |
 | vmfiltr.sys | 142900 | Vormetric Inc |
+| Sfntpffd.sys | 142890 | Thales CPL |
 | VFSEnc.sys | 142811 | Symantec |
 | pgpfs.sys | 142810 | Symantec |
 | fencry.sys | 142800 | Symantec |
@@ -1464,6 +1610,7 @@ The current altitude allocations are listed below for each of the following load
 | ldsecusb.sys | 142000 | LANDesk Inc. |
 | fencr.sys | 141900 | SODATSW spol. s.r.o. |
 | RubiFlt.sys | 141800 | Hitachi |
+| NCrypt.sys | 141700 | Nimshi Corp |
 | mfild.sys | 141660 | Penta Security Systems |
 | cbfsfilter2017.sys | 141635 | Automaton Inc |
 | cbfsfilter2017.sys | 141634 | Automaton Inc |
@@ -1484,20 +1631,24 @@ The current altitude allocations are listed below for each of the following load
 | DWENxxxx.sys | 141400 | SciencePark Corporation |
 | hdFileSentryDrv32.sys | 141300 | Heilig Defense |
 | hdFileSentryDrv64.sys | 141300 | Heilig Defense |
-| CovertxFilter.sys | 141240 | Micro Focus |
+| SDSCloudDrv.sys | 141255 | Stormshield |
+| pnpfs.sys | 141250 | PNP SECURE INC |
+| SmartCipherFilter.sys | 141240 | Micro Focus |
 | cplcdt2.sys | 141230 | conpal GmbH |
 | asCryptoFilter.sys | 141220 | Applied Security GmbH |
 | NetCryptKR.sys | 141210 | NetCrypt Pty Ltd |
+| SGFS.sys | 141205 | Levyco Development,LLC |
 | BHFilter.sys | 141200 | Beachhead Solutions |
 | Filecrypt.sys | 141100 | Microsoft |
 | encrypt.sys | 141010 | Microsoft |
 | swapBuffers.sys | 141000 | Microsoft |
 
-## <span id="130000_-_139999__FSFilter_Virtualization"></span><span id="130000_-_139999__fsfilter_virtualization"></span><span id="130000_-_139999__FSFILTER_VIRTUALIZATION"></span>130000 - 139999: FSFilter Virtualization
+## 130000 - 139999: FSFilter Virtualization
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | Klvirt.sys | 138100 | Kaspersky Lab |
+| thsmmf.sys | 138060 | Talon Storage Solutions |
 | VMagic.sys | 138050 | AI Consulting |
 | GetSAS.sys | 138040 | SAS Institute Inc |
 | rqtNos.sys | 138030 | ReaQta Ltd. |
@@ -1531,6 +1682,7 @@ The current altitude allocations are listed below for each of the following load
 | pszmf.sys | 136430 | Sony Corporation |
 | sxsudfmf.sys | 136410 | Sony Corporation |
 | vfammf.sys | 136400 | Sony Corporation |
+| lwfsflt.sys | 136300 | Liquidware Labs |
 | VHDFlt.sys | 136240 | Dell |
 | VHDFlt.sys | 136230 | Dell |
 | VHDFlt.sys | 136220 | Dell |
@@ -1542,6 +1694,7 @@ The current altitude allocations are listed below for each of the following load
 | luafv.sys | 135000 | Microsoft |
 | ivm.sys | 134000 | RingCube Technologies |
 | ivm.sys | 133990 | Citrix Systems |
+| RasRdpFs.sys | 132720 | Parallels International |
 | frxdrvvt.sys | 132700 | FSLogix Inc. |
 | pfmfs_???.sys | 132600 | Pismo Technic Inc. |
 | Stcvhdmf.sys | 132600 | StorageCraft Tech Corp |
@@ -1565,29 +1718,35 @@ The current altitude allocations are listed below for each of the following load
 | sfo.sys | 130100 | Microsoft |
 | DeVolume.sys | 130000 | Microsoft |
 
-## <span id="120000_-_129999__FSFilter_Physical_Quota_management"></span><span id="120000_-_129999__fsfilter_physical_quota_management"></span><span id="120000_-_129999__FSFILTER_PHYSICAL_QUOTA_MANAGEMENT"></span>120000 - 129999: FSFilter Physical Quota management
+## 120000 - 129999: FSFilter Physical Quota management
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | quota.sys | 125000 | Microsoft |
 | qafilter.sys | 124000 | Veritas |
 | DroboFlt.sys | 123900 | Data Robotics |
 
-## <span id="100000_-_109999__FSFilter_Open_File"></span><span id="100000_-_109999__fsfilter_open_file"></span><span id="100000_-_109999__FSFILTER_OPEN_FILE"></span>100000 - 109999: FSFilter Open File
+## 100000 - 109999: FSFilter Open File
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | insyncmf.sys | 105000 | InSync |
 | SPILock8.sys | 100900 | Software Pursuits Inc. |
 | Klbackupflt.sys | 100800 | Kaspersky |
 | repkap | 100700 | Vision Solutions |
 | symrg.sys | 100600 | Symantec |
 | adsfilter.sys | 100500 | PolyServ |
+| FMonitor.sys | 100490 | Safetica |
 
-## <span id="80000_-_89999__FSFilter_Security_Enhancer"></span><span id="80000_-_89999__fsfilter_security_enhancer"></span><span id="80000_-_89999__FSFILTER_SECURITY_ENHANCER"></span>80000 - 89999: FSFilter Security Enhancer
+## 80000 - 89999: FSFilter Security Enhancer
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
+| KpHrd.sys | 88300 | Ivanti |
+| cbfilter20.sys | 88250 | Division-M |
+| pfcflt.sys | 88240 | PNP SECURE INC |
+| pegasus.sys | 88230 | Assured Info Security |
+| RSBDrv.sys | 88220 | SMTechnology Co. |
 | psprotf.sys | 88210 | Panzor Cybersecurity |
 | DPMACL.sys | 88100 | Randtronics Pty |
 | dsbwnck.sys | 88000 | Easy Solution Inc. |
@@ -1625,6 +1784,7 @@ The current altitude allocations are listed below for each of the following load
 | CModule.sys | 87070 | Zhejiang Security Tech |
 | HHRRPH.sys | 87010 | H+H Software GmbH |
 | HHVolFltr.sys | 87000 | H+H Software GmbH |
+| CCRRSecMon.sys | 86960 | Cyber Crucible Inc. |
 | SbieDrv.sys | 86900 | Sandboxie L.T.D |
 | assetpro.sys | 86800 | pyaprotect&#x2024;com |
 | dlp.sys | 86700 | Tellus Software AS |
@@ -1668,6 +1828,7 @@ The current altitude allocations are listed below for each of the following load
 | CProCtrl.sys | 84100 | Crypto-Pro |
 | spyshelter.sys | 84000 | Datpol |
 | clpinspprot.sys | 83900 | Information Technology Company Ltd. |
+| AbrEpm.sys | 83800 | FastTrack Software ApS |
 | uvmfsflt.sys | 83376 | NEC Corporation  |
 | ProtectIt.sys | 82373 | TeraByte Inc. |
 | dguard.sys | 82300 | Dmitry Varshavsky |
@@ -1678,6 +1839,7 @@ The current altitude allocations are listed below for each of the following load
 | cpsgfsmf.sys | 81900 | conpal GmbH |
 | ndevsec.sys | 81800 | Norman ASA |
 | ViewIntus_RTDG.sys | 81700 | Pentego Technologies Ltd |
+| BKSandFS.sys | 81640 | Binklac Workstation |
 | airlock.sys | 81630 | Airlock Digital Pty Ltd |
 | zam.sys | 81620 |  |
 | ANXfsm.sys | 81610 | Arcdo |
@@ -1704,10 +1866,11 @@ The current altitude allocations are listed below for each of the following load
 | jazzfile.sys | 80660 | Jazz Networks |
 | SMXFs.sys | 80500 | OSR |
 
-## <span id="60000_-_69999__FSFilter_Copy_Protection"></span><span id="60000_-_69999__fsfilter_copy_protection"></span><span id="60000_-_69999__FSFILTER_COPY_PROTECTION"></span>60000 - 69999: FSFilter Copy Protection
+## 60000 - 69999: FSFilter Copy Protection
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
+| plypFsMon.sys | 67100 | PolyPort Inc. |
 | d3clock.sys | 67000 | D3CRYPT3D LLC |
 | cbfltfs4.sys | 66500 | I3D Technology Inc |
 | CkProcess.sys | 66100 | KASHU SYSTEM DESIGN INC. |
@@ -1717,12 +1880,14 @@ The current altitude allocations are listed below for each of the following load
 | rgasdev.sys | 65500 | Macrovision |
 | SkyFPDrv.sys | 65410 | Sky Co. Ltd. |
 | SkyLWP.sys | 65400 | Sky Co. Ltd. |
+| SkySDVRF.sys | 65390 | Sky Co. Ltd. |
 | SnEraser.sys | 65300 | Informzaschita |
 | vfilter.sys | 65200 | RSJ Software GmbH |
 | COGOFlt32.sys | 65100 | Fortium Technologies Ltd |
 | COGOFlt64.sys | 65100 | Fortium Technologies Ltd |
 | COGOFLTia64.sys | 65100 | Fortium Technologies Ltd |
 | scrubber.sys | 65000 | Microsoft |
+| SmDLP.sys | 64100 | SmTools |
 | BRDriver.sys | 64000 | BitRaider LLC |
 | BRDriver64.sys | 64000 | BitRaider LLC |
 | X7Ex.sys | 62500 | Exent Technologies Ltd |
@@ -1737,11 +1902,12 @@ The current altitude allocations are listed below for each of the following load
 | tccp.sys | 61100 | TrusCont Ltd |
 | KomFS.sys | 61000 | KOM Networks |
 
-## <span id="40000_-_49999__FSFilter_Bottom"></span><span id="40000_-_49999__fsfilter_bottom"></span><span id="40000_-_49999__FSFILTER_BOTTOM"></span>40000 - 49999: FSFilter Bottom
+## 40000 - 49999: FSFilter Bottom
 
 | Minifilter                  | Altitude | Company                                 |
-------------------------------|----------|-----------------------------------------|
+|-----------------------------|----------|-----------------------------------------|
 | RMPFileMounter.sys | 48000 | ManageEngine Zoho |
+| MFPAMCtrl.sys | 47500 | Micro Focus |
 | cbfsfilter2017.sys | 47400 | 12d Synergy |
 | pfmfs_???.sys | 47300 | Pismo Technic Inc. |
 | DLDriverMiniFlt.sys | 47200 | DeviceLock Inc |
@@ -1749,6 +1915,7 @@ The current altitude allocations are listed below for each of the following load
 | hskdlib.sys | 47100 | Hitachi Solutions |
 | acmnlib.sys | 47090 | Hitachi Solutions |
 | aictracedrv_b.sys | 47000 | AI Consulting |
+| SBox.sys | 46950 | ASF Labs 2019 LTD |
 | hhdcfltr.sys | 46900 | Seagate Technology |
 | Npsvctrig.sys | 46000 | Microsoft |
 | klvfs.sys | 44900 | Kaspersky Lab |
@@ -1761,6 +1928,6 @@ The current altitude allocations are listed below for each of the following load
 | fileinfo | 40500 | Microsoft |
 | WinSetupBoot.sys | 40400 | Microsoft |
 
-## <span id="20000_-_29999__FSFilter_System"></span><span id="20000_-_29999__fsfilter_system"></span><span id="20000_-_29999__FSFILTER_SYSTEM"></span>20000 - 29999: FSFilter System
+## 20000 - 29999: FSFilter System
 
 None.

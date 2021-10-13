@@ -1,7 +1,6 @@
 ---
 title: Initializing a PF Miniport Driver Topics
 description: Initializing a PF Miniport Driver Topics
-ms.assetid: 8673966D-DE84-4667-A426-CBDE85F42198
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

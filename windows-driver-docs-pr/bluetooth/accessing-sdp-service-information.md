@@ -1,7 +1,6 @@
 ---
 title: Accessing SDP Service Information
 description: Accessing SDP Service Information
-ms.assetid: 0b327fbd-1101-4566-ac2f-3d039eed6835
 keywords:
 - Bluetooth WDK , SDP server communication
 - SDP WDK Bluetooth
@@ -21,15 +20,15 @@ ms.localizationpriority: medium
 
 After a profile driver submits a Service Discovery Protocol (SDP) record to advertise its services with SDP, other devices can discover these services by either searching specifically for the record or by browsing to find it.
 
-To search for SDP records, a client profile driver must first use [**IOCTL\_BTH\_SDP\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_connect) to connect to the SDP service of the remote device.
+To search for SDP records, a client profile driver must first use [**IOCTL\_BTH\_SDP\_CONNECT**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_connect) to connect to the SDP service of the remote device.
 
 A profile driver can then use one of the following IOCTLs to perform the actual SDP record search:
 
--   [**IOCTL\_BTH\_SDP\_ATTRIBUTE\_SEARCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_attribute_search) obtains all components of a remote SDP record that fall into a specified SDP attribute range.
+-   [**IOCTL\_BTH\_SDP\_ATTRIBUTE\_SEARCH**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_attribute_search) obtains all components of a remote SDP record that fall into a specified SDP attribute range.
 
--   [**IOCTL\_BTH\_SDP\_SERVICE\_SEARCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_search) issues an SDP request to the remote device, requesting handles to SDP records of a particular service class or classes.
+-   [**IOCTL\_BTH\_SDP\_SERVICE\_SEARCH**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_search) issues an SDP request to the remote device, requesting handles to SDP records of a particular service class or classes.
 
--   [**IOCTL\_BTH\_SDP\_SERVICE\_ATTRIBUTE\_SEARCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_attribute_search) combines IOCTL\_BTH\_SDP\_ATTRIBUTE\_SEARCH and IOCTL\_BTH\_SDP\_SERVICE\_ATTRIBUTE\_SEARCH and returns a usable SDP record stream in a single operation.
+-   [**IOCTL\_BTH\_SDP\_SERVICE\_ATTRIBUTE\_SEARCH**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_attribute_search) combines IOCTL\_BTH\_SDP\_ATTRIBUTE\_SEARCH and IOCTL\_BTH\_SDP\_SERVICE\_ATTRIBUTE\_SEARCH and returns a usable SDP record stream in a single operation.
 
 Profile drivers can use IOCTL\_BTH\_SDP\_SERVICE\_SEARCH and IOCTL\_BTH\_SDP\_ATTRIBUTE\_SEARCH to reduce the amount of SDP traffic transmitted across a Bluetooth link and can extract necessary information by using a small number of maximum transfer units (MTUs). If neither of these issues is of great concern, it can be more convenient for profile drivers to call IOCTL\_BTH\_SDP\_SERVICE\_ATTRIBUTE\_SEARCH.
 
@@ -39,13 +38,7 @@ After the profile driver has obtained the *dynamic* protocol/service multiplexer
 
  
 
-When the profile driver finishes searching, it should use [**IOCTL\_BTH\_SDP\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthioctl/ni-bthioctl-ioctl_bth_sdp_disconnect) to disconnect from the remote SDP server.
+When the profile driver finishes searching, it should use [**IOCTL\_BTH\_SDP\_DISCONNECT**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_disconnect) to disconnect from the remote SDP server.
 
  
-
- 
-
-
-
-
 

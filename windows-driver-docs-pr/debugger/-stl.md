@@ -1,7 +1,6 @@
 ---
-title: stl
+title: stl (WinDbg)
 description: The stl extension displays some of the known Standard Template Library (STL) templates.
-ms.assetid: a1f1f923-64bd-44c9-941f-9a648888c7e0
 keywords: ["stl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,8 +61,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-Remarks
--------
+## Remarks
 
 The verbose options will only take effect if the debugger's verbose mode is enabled.
 

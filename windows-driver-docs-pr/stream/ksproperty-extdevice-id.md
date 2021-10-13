@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_ID
 description: The KSPROPERTY\_EXTDEVICE\_ID property retrieves an external device's generalized system-wide Id.
-ms.assetid: ff0f37f8-55a8-45b9-8cf1-81e2cc5ac3aa
 keywords: ["KSPROPERTY_EXTDEVICE_ID Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_EXTDEVICE\_ID property retrieves an external device's generalize
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Device</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extdevice_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTDEVICE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extdevice_s)"><strong>KSPROPERTY_EXTDEVICE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTDEVICE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)"><strong>KSPROPERTY_EXTDEVICE_S</strong></a></p></td>
 <td><p>DWORD array</p></td>
 </tr>
 </tbody>
@@ -57,13 +56,11 @@ The KSPROPERTY\_EXTDEVICE\_ID property retrieves an external device's generalize
 
 The property value (operation data) is a DWORD array that specifies the external device's unique node Id
 
-Remarks
--------
+## Remarks
 
 The **NodeUniqueID** member of the KSPROPERTY\_EXTDEVICE\_S structure specifies the external device's unique node Id.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_EXTDEVICE\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extdevice_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_EXTDEVICE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)
 

@@ -1,7 +1,6 @@
 ---
 title: MSFC\_TM WMI Class
 description: MSFC\_TM WMI Class
-ms.assetid: c81b9b2a-6381-4ff9-a579-bee53ac8678d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -32,13 +31,7 @@ class MSFC_TM {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_TM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_tm)
+[**MSFC\_TM**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_tm)
 
  
-
- 
-
-
-
-
 

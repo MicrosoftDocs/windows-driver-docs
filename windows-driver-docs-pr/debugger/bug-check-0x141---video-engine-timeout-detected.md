@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x141 VIDEO_ENGINE_TIMEOUT_DETECTED
 description: The VIDEO_ENGINE_TIMEOUT_DETECTED bug check has a value of 0x00000141. This indicates that one of the display engines failed to respond in timely fashion.
-ms.assetid: 0912495D-DE6D-4064-BD66-DA6145889821
 keywords: ["Bug Check 0x141 VIDEO_ENGINE_TIMEOUT_DETECTED", "VIDEO_ENGINE_TIMEOUT_DETECTED"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,11 +33,10 @@ The VIDEO\_ENGINE\_TIMEOUT\_DETECTED bug check has a value of 0x00000141. This i
 
  
 
-Remarks
--------
+## Remarks
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
-Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-enumtag--enumerate-secondary-callback-data-) to view the data.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag**](-enumtag--enumerate-secondary-callback-data-.md) to view the data.
 
  
 

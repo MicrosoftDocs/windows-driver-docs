@@ -1,7 +1,6 @@
 ---
 title: Control Nodes
 description: Control Nodes
-ms.assetid: e1ab522e-089e-4508-aef4-5b2a65f50bb5
 keywords:
 - broadcast receiver topology WDK BDA
 - receiver topology WDK BDA
@@ -31,7 +30,7 @@ The following figure shows an example of one possible functional topology that r
 
 -   obtain IP data.
 
-![diagram illustrating receiver topology](images/rcvrtopl.png)
+![diagram illustrating receiver topology.](images/rcvrtopl.png)
 
 Note that some functions in receiver topology that acquire content, such as the tuner, are always associated with hardware. Other functions, such as content stream demultiplexing, can be performed with hardware or software components. Still others, such as the transport information filter (TIF) and network provider filter, are always software components.
 

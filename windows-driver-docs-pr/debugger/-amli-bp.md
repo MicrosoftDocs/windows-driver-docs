@@ -1,7 +1,6 @@
 ---
-title: amli bp
+title: amli bp (WinDbg)
 description: The amli bp extension places a breakpoint in AML code.
-ms.assetid: 830df6b8-835c-4485-a28a-e9a028f166f5
 keywords: ["amli bp Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -41,8 +40,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 The AMLI Debugger supports a maximum of 10 breakpoints.
 

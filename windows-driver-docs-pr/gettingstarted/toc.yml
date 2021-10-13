@@ -1,55 +1,52 @@
 - name: "Getting started with Windows drivers"
+  href: index.md
+- name: "What is a driver?"
+  href: what-is-a-driver-.md
+- name: "Do you need to write a driver?"
+  href: do-you-need-to-write-a-driver-.md
+- name: "Choosing a driver model"
+  href: choosing-a-driver-model.md
+- name: "Write your first driver"
 # Auto-expanded node
   items: 
-  - name: "Getting started with Windows drivers"
-    href: index.md
-  - name: "What is a driver?"
-    href: what-is-a-driver-.md
-  - name: "Do you need to write a driver?"
-    href: do-you-need-to-write-a-driver-.md
-  - name: "Choosing a driver model"
-    href: choosing-a-driver-model.md
   - name: "Write your first driver"
+    href: writing-your-first-driver.md
+  - name: "Write a Universal Windows driver (UMDF 2) based on a template"
+    href: writing-a-umdf-driver-based-on-a-template.md
+  - name: "Write a universal Hello World driver (KMDF)"
+    href: writing-a-very-small-kmdf--driver.md
+  - name: "Write a Universal Windows driver (KMDF) based on a template"
+    href: writing-a-kmdf-driver-based-on-a-template.md
+- name: "Windows compatible hardware development boards"
+  href: windows-compatible-hardware-development-boards.md
+- name: "Sharks Cove hardware development board"
+  href: sharks-cove-hardware-development-board.md
+- name: "Provision a  computer for driver deployment and testing (WDK 10)"
+  href: provision-a-target-computer-wdk-8-1.md
+- name: "Concepts for all driver developers"
 # Auto-expanded node
-    items: 
-    - name: "Write your first driver"
-      href: writing-your-first-driver.md
-    - name: "Write a Universal Windows driver (UMDF 2) based on a template"
-      href: writing-a-umdf-driver-based-on-a-template.md
-    - name: "Write a universal Hello World driver (KMDF)"
-      href: writing-a-very-small-kmdf--driver.md
-    - name: "Write a Universal Windows driver (KMDF) based on a template"
-      href: writing-a-kmdf-driver-based-on-a-template.md
-  - name: "Windows compatible hardware development boards"
-    href: windows-compatible-hardware-development-boards.md
-  - name: "Sharks Cove hardware development board"
-    href: sharks-cove-hardware-development-board.md
-  - name: "Provision a  computer for driver deployment and testing (WDK 10)"
-    href: provision-a-target-computer-wdk-8-1.md
+  items: 
   - name: "Concepts for all driver developers"
-# Auto-expanded node
-    items: 
-    - name: "Concepts for all driver developers"
-      href: 
-    - name: "User mode and kernel mode"
-      href: user-mode-and-kernel-mode.md
-    - name: "Virtual address spaces"
-      href: virtual-address-spaces.md
-    - name: "Device nodes and device stacks"
-      href: device-nodes-and-device-stacks.md
-    - name: "I/O request packets"
-      href: i-o-request-packets.md
-    - name: "Driver stacks"
-      href: driver-stacks.md
-    - name: "Minidrivers, miniport drivers, and driver pairs"
-      href: minidrivers-and-driver-pairs.md
-    - name: "KMDF as a generic driver pair model"
-      href: kmdf-as-a-generic-pair-model.md
-    - name: "KMDF extensions and driver triples"
-      href: extensions-and-driver-triples.md
-    - name: "Upper and lower edges of drivers"
-      href: upper-and-lower-edges-of-drivers.md
-    - name: "Header files in the Windows Driver Kit"
-      href: header-files-in-the-windows-driver-kit.md
-    - name: "Writing drivers for different versions of Windows"
-      href: platforms-and-driver-versions.md
+    href: concepts-and-knowledge-for-all-driver-developers.md
+  - name: "User mode and kernel mode"
+    href: user-mode-and-kernel-mode.md
+  - name: "Virtual address spaces"
+    href: virtual-address-spaces.md
+  - name: "Device nodes and device stacks"
+    href: device-nodes-and-device-stacks.md
+  - name: "I/O request packets"
+    href: i-o-request-packets.md
+  - name: "Driver stacks"
+    href: driver-stacks.md
+  - name: "Minidrivers, miniport drivers, and driver pairs"
+    href: minidrivers-and-driver-pairs.md
+  - name: "KMDF as a generic driver pair model"
+    href: kmdf-as-a-generic-pair-model.md
+  - name: "KMDF extensions and driver triples"
+    href: extensions-and-driver-triples.md
+  - name: "Upper and lower edges of drivers"
+    href: upper-and-lower-edges-of-drivers.md
+  - name: "Header files in the Windows Driver Kit"
+    href: header-files-in-the-windows-driver-kit.md
+  - name: "Writing drivers for different versions of Windows"
+    href: platforms-and-driver-versions.md

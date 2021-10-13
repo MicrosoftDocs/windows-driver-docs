@@ -1,33 +1,20 @@
 ---
 title: Providing a Vendor-Defined ACPI Device Interface
-description: Providing a Vendor-Defined ACPI Device Interface
-ms.assetid: 5a7fd03b-6d4f-481b-8e4e-0e1deaf88583
+description: Describes providing a vendor-defined ACPI device interface
 keywords:
 - ACPI devices WDK , device interfaces
 - vendor-defined device interfaces WDK ACPI
 - device interfaces WDK ACPI
 - function drivers WDK ACPI , vendor-defined device interfaces
 - WDM function drivers WDK ACPI , vendor-defined device interfaces
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
 # Providing a Vendor-Defined ACPI Device Interface
 
-
-
-
-
 A vendor can provide an optional *device interface* and support for custom IOCTLs to operate an ACPI device's functional device object (*FDO*).
 
-The function driver typically calls [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) in its [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine to register a device interface. The driver calls [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) to enable the interface after Plug and Play starts the FDO. The driver should disable the interface if a device is removed by Plug and Play.
+The function driver typically calls [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) in its [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine to register a device interface. The driver calls [**IoSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) to enable the interface after Plug and Play starts the FDO. The driver should disable the interface if a device is removed by Plug and Play.
 
 The device interface class GUID is vendor-defined.
-
- 
-
- 
-
-
-
-

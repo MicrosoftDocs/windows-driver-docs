@@ -1,7 +1,6 @@
 ---
 title: Edit Set Current Instruction
 description: Edit Set Current Instruction
-ms.assetid: 9c881b6d-34c7-4c5c-bbfc-9a6d4c6f06e8
 keywords: ["Edit Set Current Instruction"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_Model
 description: DEVPKEY_DrvPkg_Model
-ms.assetid: 54aedf63-50b3-49eb-9638-2984af7de59a
 keywords: ["DEVPKEY_DrvPkg_Model Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DrvPkg_Model
 
 
-The DEVPKEY_DrvPkg_Model device [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) property represents the model name for a device instance.
+The DEVPKEY_DrvPkg_Model device [driver package](./driver-packages.md) property represents the model name for a device instance.
 
 <table>
 <colgroup>
@@ -47,10 +46,9 @@ The DEVPKEY_DrvPkg_Model device [driver package](https://docs.microsoft.com/wind
 
  
 
-Remarks
--------
+## Remarks
 
-You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive) that is included in the [**INF *DDInstall* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_Model for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
@@ -65,8 +63,7 @@ DeviceModel,,,,"DSC-530"
 ...
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -88,18 +85,11 @@ Requirements
 ## See also
 
 
-[**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive)
+[**INF AddProperty directive**](./inf-addproperty-directive.md)
 
-[**INF *DDInstall* Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)
+[**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

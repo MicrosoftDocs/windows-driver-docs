@@ -1,7 +1,6 @@
 ---
 title: Step 3 The Driver for the Device is Installed
 description: Step 3 The Driver for the Device is Installed
-ms.assetid: 292c5ffe-fbdf-42b8-9642-024c78709843
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,21 +24,15 @@ As soon as the device and driver are instantiated, Windows installs the driver b
 
     -   Performs any device-instance related configuration, such as registry key writes.
 
-2.  Windows determines the [device setup class](device-setup-classes.md) from the **Class** and **ClassGuid** entries in the [**INF Version section**](inf-version-section.md) of the [driver package's](driver-packages.md) [INF file](overview-of-inf-files.md). To optimize device installation, devices that are set up and configured in the same manner are grouped into the same device setup class.
+2.  Windows determines the [device setup class](./overview-of-device-setup-classes.md) from the **Class** and **ClassGuid** entries in the [**INF Version section**](inf-version-section.md) of the [driver package's](driver-packages.md) [INF file](overview-of-inf-files.md). To optimize device installation, devices that are set up and configured in the same manner are grouped into the same device setup class.
 
 3.  As soon as the driver files are copied, Windows transfers control to the [Plug and Play (PnP) manager](pnp-manager.md). The PnP manager loads the drivers and starts the device.
 
 4.  The PnP manager loads the appropriate function driver and any optional filter drivers for the device.
 
-    The PnP manager calls the [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine for any required driver that is not yet loaded. The PnP manager then calls the [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine for each driver, starting with lower-filter drivers, then the function driver, and, finally, any upper filter drivers. The PnP manager assigns resources to the device, if required, and sends an [**IRP_MN_START_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) to the device's drivers.
+    The PnP manager calls the [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine for any required driver that is not yet loaded. The PnP manager then calls the [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine for each driver, starting with lower-filter drivers, then the function driver, and, finally, any upper filter drivers. The PnP manager assigns resources to the device, if required, and sends an [**IRP_MN_START_DEVICE**](../kernel/irp-mn-start-device.md) to the device's drivers.
 
 As soon as this step is complete, the device is installed and ready to be used.
 
  
-
- 
-
-
-
-
 

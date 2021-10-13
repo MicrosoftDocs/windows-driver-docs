@@ -1,7 +1,6 @@
 ---
 title: PwrTest Thermal Scenario
 description: The PwrTest Thermal Scenario monitors ACPI thermal zone information and statistics.
-ms.assetid: C6941A50-EA0F-4C46-A290-8CAAD292E156
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -180,14 +179,7 @@ The following table describes the XML elements that appear in the log file.
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
-[PowerCfg](https://go.microsoft.com/fwlink/p/?linkid=294568)
+[PowerCfg](/windows-hardware/design/device-experiences/powercfg-command-line-options)
 
  
-
- 
-
-
-
-
-
 

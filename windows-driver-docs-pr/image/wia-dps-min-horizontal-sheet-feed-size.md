@@ -1,7 +1,6 @@
 ---
-title: WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE
-description: The WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE property contains the physical horizontal dimensions of the smallest page that a scanner's document feeder can scan, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
-ms.assetid: 5e7c56ea-39d3-4f0a-bd35-f0100c3a4a06
+title: WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE
+description: The WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE property contains the physical horizontal dimensions of the smallest page that a scanner's document feeder can scan, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
 keywords: ["WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE Imaging Devices"]
 topic_type:
 - apiref
@@ -11,57 +10,28 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/30/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE
+# WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE
 
+The WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE property contains the physical horizontal dimensions of the smallest page that a scanner's document feeder can scan, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
 
-The WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE property contains the physical horizontal dimensions of the smallest page that a scanner's document feeder can scan, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dps_min_horizontal_sheet_feed_size_si"></span><span id="DDK_WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Beginning with Windows Vista, the WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE property is still available at the root level of the WIA driver, but it has been replaced by the WIA_IPS_MIN_HORIZONTAL_SIZE property, so you should consider it optional.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Beginning with Windows Vista, the WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE property is still available at the root level of the WIA driver, but it has been replaced by the WIA_IPS_MIN_HORIZONTAL_SIZE property, so you should consider it optional.
+
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_DPS_MIN_VERTICAL_SHEET_FEED_SIZE**](wia-dps-min-vertical-sheet-feed-size.md)
 
-[**WIA\_DPS\_MIN\_VERTICAL\_SHEET\_FEED\_SIZE**](wia-dps-min-vertical-sheet-feed-size.md)
-
-[**WIA\_IPS\_MIN\_HORIZONTAL\_SIZE**](wia-ips-min-horizontal-size.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_MIN_HORIZONTAL_SIZE**](wia-ips-min-horizontal-size.md)

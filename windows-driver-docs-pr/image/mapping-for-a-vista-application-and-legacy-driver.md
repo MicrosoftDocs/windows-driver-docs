@@ -1,7 +1,6 @@
 ---
 title: Mapping for a Vista Application and Legacy Driver
 description: Mapping for a Vista Application and Legacy Driver
-ms.assetid: 176157b0-cc30-467b-95ec-2d25a40c43ab
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -105,16 +104,11 @@ This table shows the mapping of a legacy driver's file transfer messages to the 
 
  
 
-For more information on the legacy transfer messages, see the [IWiaMiniDrvCallBack Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrvcallback).
+For more information on the legacy transfer messages, see the [IWiaMiniDrvCallBack Interface](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrvcallback).
 
 For more information on the TYMED constants, see [Understanding TYMED](understanding-tymed.md).
 
 The **IStream** interface is described in the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
 

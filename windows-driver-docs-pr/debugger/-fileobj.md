@@ -1,7 +1,6 @@
 ---
-title: fileobj
+title: fileobj (WinDbg)
 description: The fileobj extension displays detailed information about a FILE_OBJECT structure.
-ms.assetid: ee9237e7-8a1f-473c-9e30-f2b0731a7519
 keywords: ["FILE_OBJECT", "fileobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -26,7 +25,7 @@ The **!fileobj** extension displays detailed information about a FILE\_OBJECT st
 
 
 <span id="_______FileObject______"></span><span id="_______fileobject______"></span><span id="_______FILEOBJECT______"></span> *FileObject*   
-Specifies the address of a [FILE_OBJECT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_object) structure.
+Specifies the address of a [FILE_OBJECT](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -53,16 +52,9 @@ Specifies the address of a [FILE_OBJECT](https://docs.microsoft.com/windows-hard
 
 For information about file objects, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 If the FILE\_OBJECT structure has an associated cache, **!fileobj** tries to parse and display cache information..
 
  
-
- 
-
-
-
-
 

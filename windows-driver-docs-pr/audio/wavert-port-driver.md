@@ -1,7 +1,6 @@
 ---
 title: WaveRT Port Driver
 description: WaveRT Port Driver
-ms.assetid: d25e37e2-2e29-4bf9-8150-221ebef88c87
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

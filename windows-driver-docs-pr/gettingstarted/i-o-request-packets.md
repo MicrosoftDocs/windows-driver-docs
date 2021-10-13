@@ -1,7 +1,6 @@
 ---
 title: I/O request packets
 description: I/O request packets
-ms.assetid: 72288D9A-86F7-4145-8470-FFA1AC26E9BF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,11 +8,11 @@ ms.localizationpriority: medium
 # I/O request packets
 
 
-Most of the requests that are sent to device drivers are packaged in I/O request packets ([**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp)s). An operating system component or a driver sends an IRP to a driver by calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver), which has two parameters: a pointer to a [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) and a pointer to an **IRP**. The **DEVICE\_OBJECT** has a pointer to an associated [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_driver_object). When a component calls **IoCallDriver**, we say the component *sends the IRP to the device object* or *sends the IRP to the driver associated with the device object*. Sometimes we use the phrase *passes the IRP* or *forwards the IRP* instead of *sends the IRP*.
+Most of the requests that are sent to device drivers are packaged in I/O request packets ([**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)s). An operating system component or a driver sends an IRP to a driver by calling [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver), which has two parameters: a pointer to a [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) and a pointer to an **IRP**. The **DEVICE\_OBJECT** has a pointer to an associated [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object). When a component calls **IoCallDriver**, we say the component *sends the IRP to the device object* or *sends the IRP to the driver associated with the device object*. Sometimes we use the phrase *passes the IRP* or *forwards the IRP* instead of *sends the IRP*.
 
-Typically an IRP is processed by several drivers that are arranged in a stack. Each driver in the stack is associated with a device object. For more information, see [Device nodes and device stacks](device-nodes-and-device-stacks.md). When an [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp) is processed by a device stack, the **IRP** is usually sent first to the top device object in the device stack. For example, if an **IRP** is processed by the device stack shown in this diagram, the IRP would be sent first to the filter device object (Filter DO) at the top of the device stack.
+Typically an IRP is processed by several drivers that are arranged in a stack. Each driver in the stack is associated with a device object. For more information, see [Device nodes and device stacks](device-nodes-and-device-stacks.md). When an [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) is processed by a device stack, the **IRP** is usually sent first to the top device object in the device stack. For example, if an **IRP** is processed by the device stack shown in this diagram, the IRP would be sent first to the filter device object (Filter DO) at the top of the device stack.
 
-![diagram of a device node and its device stack](images/prosewaredevicenode03.png)
+![diagram of a device node and its device stack.](images/prosewaredevicenode03.png)
 
 ## <span id="Passing_an_IRP_down_the_device_stack"></span><span id="passing_an_irp_down_the_device_stack"></span><span id="PASSING_AN_IRP_DOWN_THE_DEVICE_STACK"></span>Passing an IRP down the device stack
 
@@ -28,10 +27,4 @@ Some IRPs are passed all the way down the device stack to the physical device ob
 The IRP structure is self-contained in the sense that it holds all of the information that a driver needs to handle an I/O request. Some parts of the IRP structure hold information that is common to all of the participating drivers in the stack. Other parts of the IRP hold information that is specific to a particular driver in the stack.
 
  
-
- 
-
-
-
-
 

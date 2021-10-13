@@ -1,7 +1,6 @@
 ---
 title: Handling Errors
 description: Handling Errors
-ms.assetid: ac4e056e-3304-4934-887a-5cc2b87989bd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,15 +8,15 @@ ms.localizationpriority: medium
 # Handling Errors
 
 
-The [Direct3D version 10 functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) that a user-mode display driver implements typically have VOID for a return parameter type. The primary exception to this rule is the *CalcPrivate***ObjType***Size*-type function (for example, the [**CalcPrivateResourceSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateresourcesize) function). This type of function returns a SIZE\_T parameter type that indicates the size of the memory region that the driver requires for creating the particular object type through the *Create***ObjType**-type function (for example, [**CreateResource(D3D10)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createresource)).
+The [Direct3D version 10 functions](/windows-hardware/drivers/ddi/_display/#functions) that a user-mode display driver implements typically have VOID for a return parameter type. The primary exception to this rule is the *CalcPrivate***ObjType***Size*-type function (for example, the [**CalcPrivateResourceSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateresourcesize) function). This type of function returns a SIZE\_T parameter type that indicates the size of the memory region that the driver requires for creating the particular object type through the *Create***ObjType**-type function (for example, [**CreateResource(D3D10)**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createresource)).
 
-Returning VOID prevents the user-mode display driver from notifying the Direct3D runtime of errors in the conventional way (that is, through a user-mode display driver's function return parameter). Instead, the user-mode display driver must use the Direct3D runtime's [**pfnSetErrorCb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb) callback function to pass such information back to the runtime. The runtime supplies a pointer to its **pfnSetErrorCb** in the [**D3D10DDI\_CORELAYER\_DEVICECALLBACKS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ns-d3d10umddi-d3d10ddi_corelayer_devicecallbacks) structure that the **pUMCallbacks** member of the [**D3D10DDIARG\_CREATEDEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdevice) structure points to in a call to the [**CreateDevice(D3D10)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice) function.
+Returning VOID prevents the user-mode display driver from notifying the Direct3D runtime of errors in the conventional way (that is, through a user-mode display driver's function return parameter). Instead, the user-mode display driver must use the Direct3D runtime's [**pfnSetErrorCb**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb) callback function to pass such information back to the runtime. The runtime supplies a pointer to its **pfnSetErrorCb** in the [**D3D10DDI\_CORELAYER\_DEVICECALLBACKS**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_corelayer_devicecallbacks) structure that the **pUMCallbacks** member of the [**D3D10DDIARG\_CREATEDEVICE**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdevice) structure points to in a call to the [**CreateDevice(D3D10)**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice) function.
 
 The reference page for each user-mode display driver function specifies the errors that the function can pass through a call to **pfnSetErrorCb**. This means that if the user-mode display driver calls **pfnSetErrorCb** with an error code that is not allowed for the current user-mode display driver function, the runtime determines that the error condition is critical and acts appropriately. Because the runtime will act appropriately during **pfnSetErrorCb**, you should not expect that you can reverse the effects of calling **pfnSetErrorCb**( E\_FAIL ) by calling something like **pfnSetErrorCb**( S\_OK ). In fact, the runtime determines that S\_OK is just as invalid or critical as E\_FAIL. The concept of an S\_OK return code is equivalent to the user-mode display driver function not calling **pfnSetErrorCb** at all.
 
-If the Direct3D runtime determines that an error condition is critical, it will first take action by logging the error with Dr. Watson--the default post-mortem (just-in-time) debugger. The runtime will then lose the device on purpose, thereby emulating the scenario of receiving the D3DDDIERR\_DEVICEREMOVED error code. By requiring the driver to call the [**pfnSetErrorCb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb) callback function, the odds are much greater that every error coming out of the driver will have a useful call stack associated with it. Having a call stack associated with an error enables quick diagnosis and accurate Dr. Watson logs.
+If the Direct3D runtime determines that an error condition is critical, it will first take action by logging the error with Dr. Watson--the default post-mortem (just-in-time) debugger. The runtime will then lose the device on purpose, thereby emulating the scenario of receiving the D3DDDIERR\_DEVICEREMOVED error code. By requiring the driver to call the [**pfnSetErrorCb**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb) callback function, the odds are much greater that every error coming out of the driver will have a useful call stack associated with it. Having a call stack associated with an error enables quick diagnosis and accurate Dr. Watson logs.
 
-You should use [**pfnSetErrorCb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb) in your driver code when something goes wrong in your driver even though returning an error code that the runtime does not allow for the particular driver function is determined by the runtime as a driver bug or issue. It would be even worse for the user-mode display driver to absorb critical errors and continue on. The user-mode display driver should call **pfnSetErrorCb** as close to the point of the error detection as possible to provide a useful call stack for post-mortem debugging.
+You should use [**pfnSetErrorCb**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb) in your driver code when something goes wrong in your driver even though returning an error code that the runtime does not allow for the particular driver function is determined by the runtime as a driver bug or issue. It would be even worse for the user-mode display driver to absorb critical errors and continue on. The user-mode display driver should call **pfnSetErrorCb** as close to the point of the error detection as possible to provide a useful call stack for post-mortem debugging.
 
 The following table lists the categories of errors that the Direct3D runtime allows from particular driver functions.
 
@@ -35,7 +34,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 <tbody>
 <tr class="odd">
 <td align="left"><p>NoErrors</p></td>
-<td align="left"><p>The driver should not encounter any errors, including D3DDDIERR_DEVICEREMOVED. The runtime will determine that any call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb" data-raw-source="[&lt;strong&gt;pfnSetErrorCb&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb)"><strong>pfnSetErrorCb</strong></a> is critical.</p></td>
+<td align="left"><p>The driver should not encounter any errors, including D3DDDIERR_DEVICEREMOVED. The runtime will determine that any call to <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb" data-raw-source="[&lt;strong&gt;pfnSetErrorCb&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb)"><strong>pfnSetErrorCb</strong></a> is critical.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AllowDeviceRemoved</p></td>
@@ -51,7 +50,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 </tr>
 <tr class="odd">
 <td align="left"><p>AllowMapErrors</p></td>
-<td align="left"><p>The driver should check for resource contention. Therefore, the driver can pass DXGI_DDI_ERR_WASSTILLDRAWING through <strong>pfnSetErrorCb</strong> if the D3D10_DDI_MAP_FLAG_DONOTWAIT flag was passed into the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap" data-raw-source="[&lt;strong&gt;ResourceMap&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap)"><strong>ResourceMap</strong></a> function. The driver can also pass D3DDDIERR_DEVICEREMOVED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p></td>
+<td align="left"><p>The driver should check for resource contention. Therefore, the driver can pass DXGI_DDI_ERR_WASSTILLDRAWING through <strong>pfnSetErrorCb</strong> if the D3D10_DDI_MAP_FLAG_DONOTWAIT flag was passed into the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap" data-raw-source="[&lt;strong&gt;ResourceMap&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap)"><strong>ResourceMap</strong></a> function. The driver can also pass D3DDDIERR_DEVICEREMOVED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AllowGetDataErrors</p></td>
@@ -59,7 +58,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 </tr>
 <tr class="odd">
 <td align="left"><p>AllowWKCheckCounterErrors</p></td>
-<td align="left"><p>The driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter" data-raw-source="[&lt;strong&gt;CheckCounter&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter)"><strong>CheckCounter</strong></a> function should indicate whether it supports any runtime-defined counters. Therefore, the driver can pass DXGI_DDI_ERR_UNSUPPORTED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p>
+<td align="left"><p>The driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter" data-raw-source="[&lt;strong&gt;CheckCounter&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter)"><strong>CheckCounter</strong></a> function should indicate whether it supports any runtime-defined counters. Therefore, the driver can pass DXGI_DDI_ERR_UNSUPPORTED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p>
 <p>The driver cannot return D3DDDIERR_DEVICEREMOVED for any check-type function.</p></td>
 </tr>
 <tr class="even">
@@ -71,12 +70,4 @@ The following table lists the categories of errors that the Direct3D runtime all
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

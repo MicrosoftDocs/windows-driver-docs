@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_INTERFACE_ADDRESS_LIST
 description: WDI_TLV_P2P_INTERFACE_ADDRESS_LIST is a TLV that contains an address list for a Wi-Fi Direct interface.
-ms.assetid: B7FCB047-28D2-43E2-B4D6-B24E7BC74D47
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INTERFACE_ADDRESS_LIST Network Drivers Starting with Windows Vista
@@ -21,19 +20,18 @@ WDI\_TLV\_P2P\_INTERFACE\_ADDRESS\_LIST is a TLV that contains an address list f
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
+The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
 
 ## Values
 
 
 | Type                                                  | Description                      |
 |-------------------------------------------------------|----------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | An array of Wi-Fi MAC addresses. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | An array of Wi-Fi MAC addresses. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

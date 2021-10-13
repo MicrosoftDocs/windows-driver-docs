@@ -1,7 +1,6 @@
 ---
-title: pcrs
+title: pcrs (WinDbg)
 description: The pcrs extension displays the Intel Itanium-specific processor control registers.
-ms.assetid: 45a84a95-86df-4176-ba30-ac93b509f7f7
 keywords: ["processor control register (PCR)", "PCR (processor control register)", "pcrs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,8 +54,7 @@ Specifies the address of a processor control registers file.
 
 This extension command can only be used with an Itanium-based target computer.
 
-Remarks
--------
+## Remarks
 
 Do not confuse the **!pcrs** extension with the [**!pcr**](-pcr.md) extension, which displays the current status of the processor control region.
 

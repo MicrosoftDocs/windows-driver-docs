@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_VISIBLE_PROVIDERS
 description: OID_WWAN_VISIBLE_PROVIDERS returns a list of network providers currently visible within the MB device's range.
-ms.assetid: 4dfd4477-6332-4163-8b3e-a1604b11d175
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_VISIBLE_PROVIDERS Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ OID\_WWAN\_VISIBLE\_PROVIDERS returns a list of network providers currently visi
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS**](ndis-status-wwan-visible-providers.md) status notification containing an [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers) structure to provide information about visible network providers when completing query requests.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS**](ndis-status-wwan-visible-providers.md) status notification containing an [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers) structure to provide information about visible network providers when completing query requests.
 
 *Query* requests specify NDIS\_WWAN\_GET\_VISIBLE\_PROVIDERS structure as input. When the **Action** member in WWAN\_GET\_VISIBLE\_PROVIDERS is set to WWAN\_GET\_VISIBLE\_PROVIDERS\_ALL the miniport should return all visible providers. When the **Action** member in WWAN\_GET\_VISIBLE\_PROVIDERS is set to WWAN\_GET\_VISIBLE\_PROVIDERS\_MULTICARRIER the miniport should only return visible multi-carrier providers that can be set as the home provider.
 
@@ -23,10 +22,9 @@ The visible provider list returned by the device should have the provider state 
 
 The **Rssi** and **ErrorRate** members of WWAN\_PROVIDER2 structure should be set if available.
 
-Remarks
--------
+## Remarks
 
-For more information about using this OID, see [WWAN Provider Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-provider-operations).
+For more information about using this OID, see [WWAN Provider Operations](./mb-provider-operations.md).
 
 Miniport drivers can access the Subscriber Identity Module (SIM card) when processing query operations, but should not access the provider network.
 
@@ -38,8 +36,7 @@ Devices that do not support scanning for visible providers while connected shoul
 
 Both GSM-based and CDMA-based devices must support scanning for visible providers while in registered mode. However, miniport drivers are not required to support scanning for visible provider while a Packet Data Protocol (PDP) context is active (for example, the device is connected to the provider's network).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -61,16 +58,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)
+[**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)
 
 [**NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS**](ndis-status-wwan-visible-providers.md)
 
-[WWAN Provider Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-provider-operations)
+[WWAN Provider Operations](./mb-provider-operations.md)
 
  
-
- 
-
-
-
 

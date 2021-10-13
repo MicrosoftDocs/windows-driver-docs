@@ -1,7 +1,6 @@
 ---
 title: ndiskd.ndisevent
 description: The !ndiskd.ndisevent extension displays an NDIS debug event log.
-ms.assetid: E042CA22-6521-4DD4-9396-39EC587706D6
 keywords: ["ndiskd.ndisevent Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -15,19 +14,15 @@ ms.localizationpriority: medium
 
 # !ndiskd.ndisevent
 
-
 **Note**  Third party network driver developers are not expected to manually use this extension command. You can run it to see the information it displays but you are not able to reuse the details it provides in your driver.
-
- 
 
 The **!ndiskd.ndisevent** extension displays an NDIS debug event log.
 
 ```console
-!ndiskd.ndisevent [-handle <x>] [-tagtype <str>] 
+!ndiskd.ndisevent -handle <x> [-tagtype <str>]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Handle of the event log.
@@ -35,12 +30,11 @@ Required. Handle of the event log.
 <span id="_______-tagtype______"></span><span id="_______-TAGTYPE______"></span> *-tagtype*   
 Enum type of the tags.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 To see the output of the event log for a network adapter, !ndiskd provides a link to it in the State section of the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) output. This is easier than the manual method of finding an event log's handle from a miniport block and using that to run the **!ndiskd.ndisevent** extension.
 
@@ -153,27 +147,16 @@ MINIPORT PM & PNP EVENTS
     Set a breakpoint on the next event
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: DSM\_PARAMETERS WMI Class
 description: DSM\_PARAMETERS WMI Class
-ms.assetid: c946f8cb-327c-4d5a-a133-0051a405fcad
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -36,13 +35,7 @@ class DSM_PARAMETERS
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_dsm_parameters) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_PARAMETERS**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_dsm_parameters) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented NDIS Miniport Drivers
 description: Connection-Oriented NDIS Miniport Drivers
-ms.assetid: 58f9bed1-274c-4f60-87cd-f0b44871eb60
 keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types
@@ -22,25 +21,19 @@ A connection-oriented miniport driver provides an interface between connection-o
 
 A connection-oriented miniport driver must register the following *MiniportXxx* functions that are specific to connection-oriented operations:
 
--   [**MiniportCoCreateVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_create_vc)
+-   [**MiniportCoCreateVc**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_create_vc)
 
--   [**MiniportCoDeleteVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_delete_vc)
+-   [**MiniportCoDeleteVc**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_delete_vc)
 
--   [**MiniportCoActivateVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_activate_vc)
+-   [**MiniportCoActivateVc**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_activate_vc)
 
--   [**MiniportCoDeactivateVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_deactivate_vc)
+-   [**MiniportCoDeactivateVc**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_deactivate_vc)
 
--   [**MiniportCoSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_send_net_buffer_lists)
+-   [**MiniportCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_send_net_buffer_lists)
 
--   [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_oid_request)
+-   [**MiniportCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request)
 
-For more information about registering these functions, see [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver).
-
- 
+For more information about registering these functions, see [**NdisMRegisterMiniportDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver).
 
  
-
-
-
-
 

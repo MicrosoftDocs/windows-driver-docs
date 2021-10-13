@@ -1,7 +1,6 @@
 ---
 title: Desktop duplication
 description: Windows 8 introduces a new Microsoft DirectX Graphics Infrastructure (DXGI)-based API to make it easier for independent software vendors (ISVs) to support desktop collaboration and remote desktop access scenarios.
-ms.assetid: 5D4CBEA1-3C13-4B5C-A43D-7E6DBBB1A80F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -36,13 +35,7 @@ The API enables an application to request Windows to provide access to the conte
     -   Application can choose to use hardware acceleration to process move and mouse data.
     -   Application can choose to use hardware acceleration for compression before streaming out.
 
-For detailed documentation and samples, see [Desktop Duplication API](https://docs.microsoft.com/windows/desktop/direct3ddxgi/desktop-dup-api).
+For detailed documentation and samples, see [Desktop Duplication API](/windows/desktop/direct3ddxgi/desktop-dup-api).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Software-based DVD Decoding
 description: Software-based DVD Decoding
-ms.assetid: 23181ace-563b-4920-b4c3-4fc4452a10b3
 keywords:
 - DVD decoder minidrivers WDK , software-based DVD decoding
 - decoder minidrivers WDK DVD , software-based DVD decoding
@@ -20,7 +19,7 @@ The following diagram demonstrates a completely software-based DVD decoding and 
 
 The white boxes represent software supplied by Microsoft, and the shaded box represents the component provided by software vendors. The ovals represent hardware supplied by IHVs and OEMs.
 
-![diagram illustrating a software dvd decoding solution](images/swdvddec.png)
+![diagram illustrating a software dvd decoding solution.](images/swdvddec.png)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CATEGORY
 description: The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category of a pin factory.
-ms.assetid: 6579408c-9ec5-4b09-9a63-815cec5bd5a3
 keywords: ["KSPROPERTY_PIN_CATEGORY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
 <td><p>GUID</p></td>
 </tr>
 </tbody>
@@ -55,8 +54,7 @@ The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category 
 
  
 
-Remarks
--------
+## Remarks
 
 The **PinId** member of the KSP\_PIN structure specifies the pin factory for which to return the category GUID.
 
@@ -64,8 +62,7 @@ The KS filter uses this property to indicate the standard functional *Category* 
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information where necessary.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,14 +80,5 @@ Requirements
 ## See also
 
 
-[**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)
-
- 
-
- 
-
-
-
-
-
+[**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 

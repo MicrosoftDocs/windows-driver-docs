@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_ALLOCATIONINFOFLAGS2 structure
 description: The DXGK\_ALLOCATIONINFOFLAGS2 structure is reserved for system use. Do not use in your driver.
-ms.assetid: 67c27f53-29f0-4639-a360-0dbf7f3b3849
 keywords: ["_DXGK_ALLOCATIONINFOFLAGS2 structure Display Devices", "DXGK_ALLOCATIONINFOFLAGS2 structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_ALLOCATIONINFOFLAGS2 structure is reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_ALLOCATIONINFOFLAGS2 {
@@ -63,8 +61,7 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS2 {
 } DXGK_ALLOCATIONINFOFLAGS2;
 ```
 
-Members
--------
+## Members
 
 **CpuVisible**
 
@@ -128,8 +125,7 @@ Members
 
 **Value**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

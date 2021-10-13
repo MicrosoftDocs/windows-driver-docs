@@ -1,7 +1,6 @@
 ---
 title: Registry Key Object Routines
 description: Registry Key Object Routines
-ms.assetid: 9db6ff0d-8371-41bc-82c4-1bb56f5430f2
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -56,12 +55,7 @@ A driver can manipulate a registry-key object by performing the following steps:
 
 2.  Perform the intended operations by calling the appropriate **Zw*Xxx*Key** routines. For information about how to do so, see [Using a Handle to a Registry-Key Object](using-a-handle-to-a-registry-key-object.md).
 
-3.  Close the handle by calling [**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntclose).
+3.  Close the handle by calling [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose).
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Errors in Direct I/O
 description: Errors in Direct I/O
-ms.assetid: 9efc2875-3402-4e2e-871b-3cc1d8f45360
 keywords: ["reliability WDK kernel , direct I/O", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O", "zero-length buffers WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 The most common direct I/O problem is failing to handle zero-length buffers correctly. Because the I/O manager does not create MDLs for zero-length transfers, a zero-length buffer results in a **NULL** value at **Irp-&gt;MdlAddress**.
 
-To map the address space, drivers should use [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer), which returns **NULL** if mapping fails, as it will if a driver passes a **NULL** **MdlAddress**. Drivers should always check for a **NULL** return before attempting to use the returned address.
+To map the address space, drivers should use [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe), which returns **NULL** if mapping fails, as it will if a driver passes a **NULL** **MdlAddress**. Drivers should always check for a **NULL** return before attempting to use the returned address.
 
 Direct I/O involves double-mapping the user's address space to a system address buffer, so that two different virtual addresses have the same physical address. Double-mapping has the following consequences, which can sometimes cause problems for drivers:
 
@@ -47,12 +46,7 @@ Direct I/O involves double-mapping the user's address space to a system address 
 
     Conversely, if the **NULL** is not present, then the call to **RtlInitUnicodeString** can exceed the range of the buffer and possibly cause a bug check if it falls outside the system mapping.
 
-If a driver creates and maps its own MDL, it should ensure that it accesses the MDL only with the method for which it has probed. That is, when the driver calls [**MmProbeAndLockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmprobeandlockpages), it specifies an access method (**IoReadAccess**, **IoWriteAccess**, or **IoModifyAccess**). If the driver specifies **IoReadAccess**, it must not later attempt to write to the system buffer made available by [**MmGetSystemAddressForMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmgetsystemaddressformdl) or [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer).
+If a driver creates and maps its own MDL, it should ensure that it accesses the MDL only with the method for which it has probed. That is, when the driver calls [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages), it specifies an access method (**IoReadAccess**, **IoWriteAccess**, or **IoModifyAccess**). If the driver specifies **IoReadAccess**, it must not later attempt to write to the system buffer made available by [**MmGetSystemAddressForMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdl) or [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe).
 
  
-
- 
-
-
-
 

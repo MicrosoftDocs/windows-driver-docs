@@ -1,7 +1,6 @@
 ---
 title: GetScannerElementsRequest element
 description: The required GetScannerElementsRequest element enables a client to request information about the scanner.
-ms.assetid: 9b5baed9-0950-4fbd-9e5b-4ad58dedb87e
 keywords: ["GetScannerElementsRequest element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **GetScannerElementsRequest** element enables a client to request information about the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetScannerElementsRequest>
@@ -27,8 +25,7 @@ Usage
 </wscn:GetScannerElementsRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,8 +53,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetScannerElementsRequest** operation.
 
@@ -67,23 +63,22 @@ If the Scan Service successfully processes **GetScannerElementsRequest**, it ret
 
 This operation can return all of the [**common WSD Scan Service operation error codes**](common-wsd-scan-service-operation-error-codes.md). For more information about how to report errors, see [WSD Scan Service Operation Error Reporting](wsd-scan-service-operation-error-reporting.md).
 
-Examples
---------
+## Examples
 
 In the following code example, the client specifies a single QName value (wscn:ScannerDescription) to query for the scanner's description.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/GetScannerElements
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/GetScannerElements
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>
@@ -103,15 +98,15 @@ The following code example shows a client's request for the scanner's status.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/GetScannerElements
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/GetScannerElements
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>
@@ -131,16 +126,16 @@ In the following code example, a client specifies two QName values. The first QN
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  xmlns:ihv="http://www.example.com/extension"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  xmlns:ihv="https://www.example.com/extension"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/GetScannerElements
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/GetScannerElements
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>

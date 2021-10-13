@@ -1,7 +1,6 @@
 ---
 title: Exploring the Windows Vista Audio Engine
 description: Exploring the Windows Vista Audio Engine
-ms.assetid: 6301f6d7-57f5-4b9f-9567-57efb9dc58f3
 ms.date: 11/05/2018
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ This topic presents an overview of the Windows Vista audio engine. It focuses on
 
 The following diagram presents a simplified layout of the internal structure of the audio engine.
 
-![diagram illustrating a windows vista audio engine simplified layout](images/sysfxapo-custom-details.png)
+![diagram illustrating a windows vista audio engine simplified layout.](images/sysfxapo-custom-details.png)
 
 As the diagram shows, system-supplied APOs and sAPOs are the basic building blocks of the audio engine. The audio engine configures the system-supplied APOs and sAPOs into components called pipes. There are two types of pipes in the audio engine:
 

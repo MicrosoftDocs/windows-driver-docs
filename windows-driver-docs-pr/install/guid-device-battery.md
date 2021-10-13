@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_BATTERY
 description: GUID_DEVICE_BATTERY
-ms.assetid: 8391b167-0d17-46bf-9320-4fceed54aead
 keywords: ["GUID_DEVICE_BATTERY Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVICE_BATTERY
 
 
-The GUID_DEVICE_BATTERY [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [battery devices](https://docs.microsoft.com/windows-hardware/drivers/battery/index).
+The GUID_DEVICE_BATTERY [device interface class](./overview-of-device-interface-classes.md) is defined for [battery devices](../battery/index.md).
 
 <table>
 <colgroup>
@@ -45,15 +44,13 @@ The GUID_DEVICE_BATTERY [device interface class](https://docs.microsoft.com/wind
 
  
 
-Remarks
--------
+## Remarks
 
-The system-supplied [battery class driver](https://docs.microsoft.com/windows-hardware/drivers/battery/battery-class-driver-functionality) registers an instance of this device interface class for a battery device on behalf of a battery miniclass driver.
+The system-supplied [battery class driver](../battery/battery-class-driver-functionality.md) registers an instance of this device interface class for a battery device on behalf of a battery miniclass driver.
 
-For information about battery devices and drivers, see [Overview of System Battery Management](https://docs.microsoft.com/windows-hardware/drivers/battery/overview-of-system-battery-management).
+For information about battery devices and drivers, see [Overview of System Battery Management](../battery/overview-of-system-battery-management.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -69,10 +66,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

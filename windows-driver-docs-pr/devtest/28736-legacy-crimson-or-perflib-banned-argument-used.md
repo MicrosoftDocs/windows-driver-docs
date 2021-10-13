@@ -1,7 +1,6 @@
 ---
-title: C28736
+title: C28736 warning
 description: Warning C28736 Banned API Argument Usage.
-ms.assetid: d5febe00-46d3-4ef3-bced-1b995bf0656c
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

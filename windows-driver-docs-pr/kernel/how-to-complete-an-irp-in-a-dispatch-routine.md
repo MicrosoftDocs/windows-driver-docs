@@ -1,7 +1,6 @@
 ---
 title: How to Complete an IRP in a Dispatch Routine
 description: How to Complete an IRP in a Dispatch Routine
-ms.assetid: b29da791-e768-4f67-8e85-6cfbeca97220
 keywords: ["completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs", "status information WDK IRPs", "I/O status blocks WDK kernel", "status blocks WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -19,7 +18,7 @@ If an input IRP can be completed immediately, a dispatch routine does the follow
 
     -   The dispatch routine sets **Status** either to STATUS\_SUCCESS or to an appropriate error (STATUS\_*XXX*), which can be the value returned by a call to a support routine or, for certain synchronous requests, by a lower driver.
 
-        If a lower-level driver returns STATUS\_PENDING, a higher-level driver should not call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) for the IRP, with one exception: The higher-level driver can use an event to synchronize between its [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine and its dispatch routine, in which case the *IoCompletion* routine signals the event and returns STATUS\_MORE\_PROCESSING\_REQUIRED. The dispatch routine waits for the event and then calls **IoCompleteRequest** to complete the IRP.
+        If a lower-level driver returns STATUS\_PENDING, a higher-level driver should not call [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) for the IRP, with one exception: The higher-level driver can use an event to synchronize between its [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine and its dispatch routine, in which case the *IoCompletion* routine signals the event and returns STATUS\_MORE\_PROCESSING\_REQUIRED. The dispatch routine waits for the event and then calls **IoCompleteRequest** to complete the IRP.
 
     -   It sets **Information** to the number of bytes successfully transferred if a request to transfer data, such as a read or write request, was satisfied.
 
@@ -40,9 +39,4 @@ Always release any spin lock(s) the driver is holding before calling **IoComplet
 It takes an indeterminate amount of time to complete an IRP, particularly in a chain of layered drivers. Moreover, a deadlock can occur if a higher-level driver's *IoCompletion* routine sends an IRP back down to a lower driver that is holding a spin lock.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: .lines (Toggle Source Line Support)
 description: The .lines command enables or disables support for source-line information.
-ms.assetid: 5d923592-7aba-42a0-893b-2c6621e4b87f
 keywords: [".lines (Toggle Source Line Support) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,8 +62,7 @@ Turns source line support on or off. If you do not specify parameters for **.lin
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
-Remarks
--------
+## Remarks
 
 You must enable source line support before you can perform source-level debugging. This support enables the debugger to load source line symbols.
 

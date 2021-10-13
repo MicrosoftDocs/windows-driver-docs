@@ -1,7 +1,6 @@
 ---
 title: Subscribing for messages
 description: Subscribing for messages
-ms.assetid: CF0D5CE0-A0E0-47D4-88E6-FBE186F78626
 keywords:
 - NFC
 - near field communications
@@ -32,6 +31,4 @@ There is no ordering or priority defined in the model. It is acceptable for the 
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

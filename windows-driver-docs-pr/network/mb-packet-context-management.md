@@ -1,7 +1,6 @@
 ---
 title: MB Packet Context Management
 description: MB Packet Context Management
-ms.assetid: 52d72def-8aee-4e04-ad42-1a4537cda899
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,17 +20,11 @@ The MB driver model builds on these two constraints regarding the number of acti
 
 2.  Only a single packet context can be activated at any given time.
 
-It is mandatory that any miniport driver that conforms to the MB driver model sets the **MaxActivatedContexts** member of the [**WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_device_caps) structure to one, when responding to [OID\_WWAN\_DEVICE\_CAPS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-caps) query requests. Even if a miniport driver sets this value to be greater than one, the MB Service ensures that, at most, only one packet context is activated at any given time.
+It is mandatory that any miniport driver that conforms to the MB driver model sets the **MaxActivatedContexts** member of the [**WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps) structure to one, when responding to [OID\_WWAN\_DEVICE\_CAPS](./oid-wwan-device-caps.md) query requests. Even if a miniport driver sets this value to be greater than one, the MB Service ensures that, at most, only one packet context is activated at any given time.
 
 Because each packet context can be activated no more than one time, a static packet context identifier can be used to identify the virtual circuit after being activated. The use of this static identifier is still valid as long as the first constraint still holds.
 
-For more information about packet context management, see [OID\_WWAN\_PROVISIONED\_CONTEXTS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-provisioned-contexts) and [OID\_WWAN\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-connect).
+For more information about packet context management, see [OID\_WWAN\_PROVISIONED\_CONTEXTS](./oid-wwan-provisioned-contexts.md) and [OID\_WWAN\_CONNECT](./oid-wwan-connect.md).
 
  
-
- 
-
-
-
-
 

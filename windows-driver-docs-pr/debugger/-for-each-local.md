@@ -1,7 +1,6 @@
 ---
 title: for_each_local
 description: The for_each_local extension executes a debugger command one time for each local variable in the current frame.
-ms.assetid: 2b1d65e6-6322-404e-a94b-90a46035fe9e
 keywords: ["for_each_local Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,8 +60,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 
 For more information about how to display and change local variables and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!for\_each\_local** extension lists local variables. For more information about the local variables, use the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command.
 

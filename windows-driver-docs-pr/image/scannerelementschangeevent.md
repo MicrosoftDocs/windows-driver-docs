@@ -1,7 +1,6 @@
 ---
 title: ScannerElementsChangeEvent element
 description: The required ScannerElementsChangeEvent element informs the client that a change has occurred in the scanner.
-ms.assetid: 5a3eb934-631d-432b-befa-c67360fe68d1
 keywords: ["ScannerElementsChangeEvent element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScannerElementsChangeEvent** element informs the client that a change has occurred in the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerElementsChangeEvent>
@@ -27,8 +25,7 @@ Usage
 </wscn:ScannerElementsChangeEvent>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,30 +53,28 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service should send a **ScannerElementsChangeEvent** element to the client when an element has changed within [**ScannerDescription**](scannerdescription.md), [**ScannerConfiguration**](scannerconfiguration.md), [**DefaultScanTicket**](defaultscanticket.md), or a vendor extension in the scanner.
 
 The body of **ScannerElementsChangeEvent** must contain an [**ElementChanges**](elementchanges.md) element with the complete XML for the updated element. If an optional element is missing from the returned XML, the WSD Scan Service is indicating to the client that the service no longer supports that element. This change in support could be caused by removal of an option, such as the film scan option or duplex scanning mode. The client must compare the information in **ElementChanges** against previous data to determine which values have changed and must update its internal data store.
 
-Examples
---------
+## Examples
 
 The following code example shows how the device reports updated scanner configuration information because of the installation of a film scanning option.
 
 ```xml
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-  xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding'>
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+  xmlns:wse="https://schemas.xmlsoap.org/ws/2004/08/eventing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding'>
 
   <soap:Header>
     <wsa:To>AddressofEventSink</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/ScannerElementsChangeEvent
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/ScannerElementsChangeEvent
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>

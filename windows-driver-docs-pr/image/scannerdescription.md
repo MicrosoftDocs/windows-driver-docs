@@ -1,7 +1,6 @@
 ---
 title: ScannerDescription element
 description: ScannerDescription element
-ms.assetid: 4429702e-18de-4b7c-83a2-ac405517e730
 keywords: ["ScannerDescription element Imaging Devices"]
 topic_type:
 - apiref
@@ -16,8 +15,7 @@ ms.localizationpriority: medium
 # ScannerDescription element
 
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerDescription>
@@ -25,13 +23,11 @@ Usage
 </wscn:ScannerDescription>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -82,8 +78,7 @@ None
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
 

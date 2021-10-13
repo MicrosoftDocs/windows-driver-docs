@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_BANDWIDTH
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_BANDWIDTH to control the bandwidth setting of the tuner node.
-ms.assetid: 34feb05d-c1dc-4ce1-86bf-d7d33920befd
 keywords: ["KSPROPERTY_BDA_RF_TUNER_BANDWIDTH Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_BANDWIDTH to control the bandwidth setti
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the tuner node.
 
@@ -68,8 +66,7 @@ Specifying the KSPROPERTY\_BDA\_RF\_TUNER\_BANDWIDTH property with:
 
 -   BDA\_CHAN\_BANDWITH\_NOT\_DEFINED (0) indicates that the bandwidth is not defined.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,14 +84,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

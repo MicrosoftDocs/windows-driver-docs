@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE
 description: The KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE property specifies the digital signal processing (DSP) algorithm that is used to achieve the third-party effect that the node applies to the audio data stream.
-ms.assetid: 8c27f856-de46-42a2-9f1f-e0cef1ee0f6e
 keywords: ["KSPROPERTY_AUDIO_ALGORITHM_INSTANCE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE property specifies the digital signal
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>GUID</p></td>
 </tr>
 </tbody>
@@ -73,15 +72,13 @@ System default noise suppression algorithm
 
 A KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to control the DSP algorithm that is performed by an AEC node ([**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)) or noise suppression node ([**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)).
 
 The algorithm-instance GUID matches the value in the **guidDSCFXInstance** member of a DSCEFFECTDESC structure that a caller passes to the **IDirectSoundCapture::CreateCaptureBuffer** method or **DirectSoundFullDuplexCreate** function. For more information, see the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -99,18 +96,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)
 
 [**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_BATCH
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_BATCH property specifies the batch-mode setting for a 3D listener.
-ms.assetid: 370191f8-e5a2-40f0-a979-c14cf7f44756
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_BATCH Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_DIRECTSOUND3DLISTENER\_BATCH property specifies the batch-mode s
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -65,15 +64,13 @@ The property value (operation data) is of type BOOL and specifies the batch-mode
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_BATCH property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 When this property transitions from **TRUE** to **FALSE** the miniport driver should put all cached properties into effect immediately. If possible, any cached properties should be put into effect simultaneously.
 
 For more information about batch-mode settings for 3D listeners, see the description of the **IDirectSound3DListener::CommitDeferredSettings** method in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,14 +88,5 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
-
- 
-
- 
-
-
-
-
-
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 

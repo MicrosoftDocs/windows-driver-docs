@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting HID Reports
 description: Troubleshooting HID Reports
-ms.assetid: 8fbf641b-461b-44c2-9cc5-c1547abc75d6
 keywords:
 - HID reports WDK , troubleshooting
 - reports WDK HID , troubleshooting
@@ -36,11 +35,11 @@ A requested usage is not in any report supported by the top-level collection.
 
 For example, the following figure shows a HID collection that contains two reports.
 
-![diagram illustrating an hid collection containing two reports](images/reportid.png)
+![diagram illustrating an hid collection containing two reports.](images/reportid.png)
 
-Based on this example, assume an application or driver received a report from a collection and calls [**HidP\_GetUsageValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/nf-hidpi-hidp_getusagevalue) to extract the current value of "Value X." If the report's ID is seven, the routine returns HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID, which indicates that the device supports Value X, but that Value X is not present in the report. On the other hand, if the application or driver requests the value of "Value Z," the routine returns HIDP\_STATUS\_USAGE\_NOT\_FOUND, which indicates that Value Z is not in any report supported by the collection.
+Based on this example, assume an application or driver received a report from a collection and calls [**HidP\_GetUsageValue**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) to extract the current value of "Value X." If the report's ID is seven, the routine returns HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID, which indicates that the device supports Value X, but that Value X is not present in the report. On the other hand, if the application or driver requests the value of "Value Z," the routine returns HIDP\_STATUS\_USAGE\_NOT\_FOUND, which indicates that Value Z is not in any report supported by the collection.
 
-When an application or driver uses **HidP\_Set***Xxx* routines to set usages in a report, the routines can also return the same two status values. The meaning of HIDP\_STATUS\_USAGE\_NOT\_FOUND is the same as with the **HidP\_Get***Xxx* routines. However, the meaning of HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID is different. This status value indicates that the report was previously configured with a report ID, and the usage specified by the caller does not belong to that report ID. Using the previous figure as an example, after an application or driver uses [**HidP\_SetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/nf-hidpi-hidp_setusages) to set "Button 2" in a zero-initialized report, the report is configured with a report ID of seven. If the application or driver subsequently attempts to use [**HidP\_SetUsageValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/nf-hidpi-hidp_setusagevalue) to set "Value X" in the same report, the routine will return HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID.
+When an application or driver uses **HidP\_Set***Xxx* routines to set usages in a report, the routines can also return the same two status values. The meaning of HIDP\_STATUS\_USAGE\_NOT\_FOUND is the same as with the **HidP\_Get***Xxx* routines. However, the meaning of HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID is different. This status value indicates that the report was previously configured with a report ID, and the usage specified by the caller does not belong to that report ID. Using the previous figure as an example, after an application or driver uses [**HidP\_SetUsages**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages) to set "Button 2" in a zero-initialized report, the report is configured with a report ID of seven. If the application or driver subsequently attempts to use [**HidP\_SetUsageValue**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevalue) to set "Value X" in the same report, the routine will return HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID.
 
 If a **HidP\_**<em>Xxx</em> routine returns HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID, the caller should take one of the following actions:
 
@@ -52,12 +51,7 @@ If a **HidP\_**<em>Xxx</em> routine returns HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_
 
 When the [HID Client Drivers](hid-client-drivers.md) obtains input reports from a HID collection, the reports are stored in a ring buffer maintained by the HID class driver. This mechanism reduces the possibility that an application or driver will miss input reports that it requires.
 
-By default, the HID class driver maintains an input report ring buffer that holds 32 reports. If a collection transmits data to the HID class driver faster than a user-mode application or kernel-mode driver retrieves it from the buffer, input reports are lost because of buffer overflow. To reduce the possibility of buffer overflow, an application or driver can reconfigure the size, in number of reports, of the buffer. Drivers retrieve and change the size of the buffer by using an [**IOCTL\_GET\_NUM\_DEVICE\_INPUT\_BUFFERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidclass/ni-hidclass-ioctl_get_num_device_input_buffers) request and an [**IOCTL\_SET\_NUM\_DEVICE\_INPUT\_BUFFERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidclass/ni-hidclass-ioctl_set_num_device_input_buffers) request. Applications do the same operation by calling [**HidD\_GetNumInputBuffers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidsdi/nf-hidsdi-hidd_getnuminputbuffers) and [**HidD\_SetNumInputBuffers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidsdi/nf-hidsdi-hidd_setnuminputbuffers).
+By default, the HID class driver maintains an input report ring buffer that holds 32 reports. If a collection transmits data to the HID class driver faster than a user-mode application or kernel-mode driver retrieves it from the buffer, input reports are lost because of buffer overflow. To reduce the possibility of buffer overflow, an application or driver can reconfigure the size, in number of reports, of the buffer. Drivers retrieve and change the size of the buffer by using an [**IOCTL\_GET\_NUM\_DEVICE\_INPUT\_BUFFERS**](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_get_num_device_input_buffers) request and an [**IOCTL\_SET\_NUM\_DEVICE\_INPUT\_BUFFERS**](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_set_num_device_input_buffers) request. Applications do the same operation by calling [**HidD\_GetNumInputBuffers**](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getnuminputbuffers) and [**HidD\_SetNumInputBuffers**](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setnuminputbuffers).
 
  
-
- 
-
-
-
 

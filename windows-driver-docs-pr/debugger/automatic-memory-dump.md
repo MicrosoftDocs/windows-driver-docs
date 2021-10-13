@@ -1,7 +1,6 @@
 ---
 title: Automatic Memory Dump
 description: Automatic Memory Dump
-ms.assetid: A2C71497-7865-4DC8-B760-6121B224737A
 ms.date: 05/08/2018
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ If the computer crashes and the paging file is not large enough to capture a ker
 
 The increased paging file size stays in place for 4 weeks and then returns to the smaller size. If you want to return to the smaller paging file before 4 weeks, you can delete the Registry entry.
 
-To see the paging file settings, go to **Control Panel &gt; System and Security &gt; System &gt; Advanced system settings**. Under **Performance**, click **Settings**. On the **Advanced** tab, under **Virtual memory**, click **Change**. In the Virtual Memory dialog box, you can see the paging file settings.
+To see the paging file settings, go to **Control Panel &gt; System and Security &gt; System &gt; Advanced system settings**. Under **Performance**, select **Settings**. On the **Advanced** tab, under **Virtual memory**, select **Change**. In the Virtual Memory dialog box, you can see the paging file settings.
 
 ![screen shot of the virtual memory dialog box.](images/virtualmemorydialog.png)
 

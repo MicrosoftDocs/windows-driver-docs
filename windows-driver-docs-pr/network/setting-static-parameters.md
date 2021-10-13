@@ -1,7 +1,6 @@
 ---
 title: Setting Static Parameters
 description: Setting Static Parameters
-ms.assetid: 0a41d8b4-8dd8-4a6b-a9b9-d19d07acd083
 keywords:
 - add-registry-sections WDK networking , static parameters
 - static parameters WDK networking

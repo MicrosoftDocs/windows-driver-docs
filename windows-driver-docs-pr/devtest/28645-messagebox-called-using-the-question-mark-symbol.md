@@ -1,7 +1,6 @@
 ---
-title: C28645
+title: C28645 warning
 description: Warning C28645 MessageBox was called using the question mark message symbol which is no longer recommended.
-ms.assetid: 1d95b2a3-9d29-4fbb-9473-d2f1a57c9c2e
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

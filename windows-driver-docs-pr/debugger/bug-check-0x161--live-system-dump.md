@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x161 LIVE_SYSTEM_DUMP
 description: The LIVE_SYSTEM_DUMP bug check has a value of 0x00000161. This indicates that the system administrator requested the collection of a live system memory dump.
-ms.assetid: 0FD942A1-C92F-4386-850D-3C51D9E553D4
 keywords: ["Bug Check 0x161 LIVE_SYSTEM_DUMP", "LIVE_SYSTEM_DUMP"]
 ms.date: 05/23/2017
 topic_type:

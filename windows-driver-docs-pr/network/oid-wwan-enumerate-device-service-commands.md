@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 description: OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS returns a list of commands supported for a device service.NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS status notification containing a NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure that describes the result of the operation.
-ms.assetid: 9888E4EC-D4BB-4BAC-B20B-DFA51005EEDA
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS Network Drivers Starting with Windows Vista
@@ -15,12 +14,11 @@ OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS returns a list of commands suppo
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-supported-commands) status notification containing a [**NDIS\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_enumerate_device_service_commands) structure that describes the result of the operation.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](./ndis-status-wwan-device-service-supported-commands.md) status notification containing a [**NDIS\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_enumerate_device_service_commands) structure that describes the result of the operation.
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support specified device service or operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -42,14 +40,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-supported-commands)
+[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](./ndis-status-wwan-device-service-supported-commands.md)
 
-[**NDIS\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_enumerate_device_service_commands)
-
- 
+[**NDIS\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_enumerate_device_service_commands)
 
  
-
-
-
 

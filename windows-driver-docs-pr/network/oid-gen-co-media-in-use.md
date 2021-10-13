@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_MEDIA_IN_USE
 description: This topic describes the OID_GEN_CO_MEDIA_IN_USE object identifier (OID).
-ms.assetid: 59a2c981-87a5-4df9-af26-3c5a5eadc17a
 keywords:
 - OID_GEN_CO_MEDIA_IN_USE
 ms.date: 11/02/2017
@@ -42,13 +41,10 @@ Various types of NdisWirelessXxx media.
 **NdisMediumAtm**  
 ATM.
 
-If the underlying miniport driver returns **NULL** for this query or if an experimental media type is used, the driver must indicate receives with [NdisMCoIndicateReceivePacket](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff553455(v=vs.85)).
+If the underlying miniport driver returns **NULL** for this query or if an experimental media type is used, the driver must indicate receives with [NdisMCoIndicateReceivePacket](/previous-versions/windows/hardware/network/ff553455(v=vs.85)).
 
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

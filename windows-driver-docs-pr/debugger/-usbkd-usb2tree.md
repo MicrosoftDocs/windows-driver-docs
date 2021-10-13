@@ -1,7 +1,6 @@
 ---
 title: usbkd.usb2tree
 description: The usbkd.usb2tree command displays USB 2.0 tree.
-ms.assetid: 6BEFE154-C8F0-466C-AB68-71C6304D0DEA
 keywords: ["usbkd.usb2tree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +26,7 @@ The **!usbkd.usb2tree** command displays [USB 2.0 tree](usb-2-0-extensions.md#us
 
 This screen shot shows and example of the output of the **!usb2tree** command.
 
-![output of the !usbkd.usb2tree command showing uhci ehci information and an enumerated hub list](images/usb2tree01.png)
+![output of the !usbkd.usb2tree command showing uhci ehci information and an enumerated hub list.](images/usb2tree01.png)
 
 The output shows one EHCI execution unit and two UHCI execution units. The execution units shown in this example happen to be on a single USB host controller device. The output also shows the root hubs and connected devices.
 
@@ -42,8 +41,7 @@ The output uses [Using Debugger Markup Language (DML)](debugger-markup-language-
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The **!usb2tree** command is the parent command for many of the [USB 2.0 debugger extensions commands.](usb-2-0-extensions.md) The information displayed by these commands is based on data structures maintained by these drivers:
 
@@ -52,21 +50,14 @@ The **!usb2tree** command is the parent command for many of the [USB 2.0 debugge
 -   usbport.sys (port driver for USB 2 host controller)
 -   usbhub.sys (USB 2 hub driver)
 
-For more information about these drivers, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p/?LinkId=251983).
+For more information about these drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 ## <span id="see_also"></span>See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

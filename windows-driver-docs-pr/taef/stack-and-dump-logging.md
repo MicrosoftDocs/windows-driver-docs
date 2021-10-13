@@ -1,7 +1,6 @@
 ---
 title: Stack and Dump Logging
 description: Stack and Dump Logging
-ms.assetid: 5FE6AA76-5299-4d5d-9154-6DB34D93EECB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -64,13 +63,4 @@ Correlation of stack option flags to debugger commands. If you use windbg family
 ## <span id="Technical_Reference"></span><span id="technical_reference"></span><span id="TECHNICAL_REFERENCE"></span>Technical Reference
 
 
-If you are interested in more information about the dump and stack optional parameters, please refer to the documentation provided with [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=8708). For documentation on the 'dump flags' see the [DEBUG\_FORMAT\_XXX documentation](https://msdn.microsoft.com/library/cc267446.aspx). For documentation on the 'stack flags' please see the ['OutputStackTrace' method documentation](https://msdn.microsoft.com/library/cc266034.aspx).
-
-
-
-
-
-
-
-
-
+If you are interested in more information about the dump and stack optional parameters, please refer to the documentation provided with [Debugging Tools for Windows](../debugger/index.md). For documentation on the 'dump flags' see the [DEBUG\_FORMAT\_XXX](../debugger/debug-format-xxx.md). For documentation on the 'stack flags' please see the [OutputStackTrace](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol5-outputstacktraceex).

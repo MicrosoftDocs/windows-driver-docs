@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PANTILT\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_PANTILT\_RELATIVE property specifies horizontal or vertical rotation of the camera and can specify both simultaneously.
-ms.assetid: c2c9405c-7713-439f-a150-51969a2a5e6b
 keywords: ["KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_CAMERACONTROL\_PANTILT\_RELATIVE property specifies horizontal o
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s2" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S2&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s2)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S2</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s2" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S2&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s2)"><strong>KSPROPERTY_CAMERACONTROL_S2</strong></a> depending on whether the request is for a filter or a node</p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s2" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S2&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s2)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S2</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s2" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S2&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s2)"><strong>KSPROPERTY_CAMERACONTROL_S2</strong></a> depending on whether the request is for a filter or a node</p></td>
 <td><p>Pair of LONG integers</p></td>
 </tr>
 </tbody>
@@ -117,8 +116,7 @@ The size of the value represents the desired tilt speed; a higher value represen
 
  
 
-Remarks
--------
+## Remarks
 
 When making a set request to pan the camera, the client should supply one of the values in the preceding table in **Value1** member of the property descriptor structure.
 
@@ -126,12 +124,11 @@ Similarly, when making a set request to tilt the camera, the client supplies one
 
 When making a get request, the client receives the pan value in the **Value1** member and the tilt value in the **Value2** member of the KSPROPERTY\_CAMERACONTROL\_S2 or KSPROPERTY\_CAMERACONTROL\_NODE\_S2 structure. The values indicate the current pan or tilt status of the camera.
 
-Note that a particular device might support only a certain speed range. To determine the range of speeds supported by the device, an application can issue a KSPROPERTY\_TYPE\_BASICSUPPORT request. You can specify KSPROPERTY\_TYPE\_BASICSUPPORT in the **Flags** member of the [**KSPROPERTY\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_item) structure.
+Note that a particular device might support only a certain speed range. To determine the range of speeds supported by the device, an application can issue a KSPROPERTY\_TYPE\_BASICSUPPORT request. You can specify KSPROPERTY\_TYPE\_BASICSUPPORT in the **Flags** member of the [**KSPROPERTY\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_item) structure.
 
 Some devices support only a single pan or tilt speed. In this case, the sign of the **Value1** or **Value2** member indicates which direction to pan.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -153,16 +150,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_CAMERACONTROL\_S2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s2)
+[**KSPROPERTY\_CAMERACONTROL\_S2**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s2)
 
-[**KSPROPERTY\_CAMERACONTROL\_NODE\_S2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s2)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_CAMERACONTROL\_NODE\_S2**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s2)
 

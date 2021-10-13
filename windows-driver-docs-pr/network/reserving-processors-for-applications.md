@@ -1,7 +1,6 @@
 ---
 title: Reserving Processors for Applications
 description: Reserving Processors for Applications
-ms.assetid: e09790e9-29a7-4ff6-a122-b4bd99de8bc7
 keywords:
 - CPU configuration WDK RSS
 - reserving processors for applications WDK RSS
@@ -26,15 +25,9 @@ In Windows Server 2008, administrators can set the base CPU number with the **Rs
 
 **Note** Starting in Windows 8 and Windows Server 2012, administrators can control many aspects of Network Adapters by using PowerShell cmdlets. Directly editing the registry is now discouraged.
 
-The PowerShell cmdlet for reserving RSS CPUs is [Set-NetAdapterRss](https://docs.microsoft.com/powershell/module/netadapter/Set-NetAdapterRss). The primary difference between using **Set-NetAdapterRss** and using **RssBaseCpu** is that PowerShell cmdlets operate on a per-Network Adapter basis while **RssBaseCpu** is global, meaning it applies to all Network Adapters. Generally, working with each Network Adapter separately is recommended because it offers more flexibility, granularity, and understandability in giving each Network Adapter its own configuration. However, administrators might still use the global **RssBaseCpu** key if they would like to apply a configuration to all current and all future Network Adapters at the same time.
+The PowerShell cmdlet for reserving RSS CPUs is [Set-NetAdapterRss](/powershell/module/netadapter/Set-NetAdapterRss). The primary difference between using **Set-NetAdapterRss** and using **RssBaseCpu** is that PowerShell cmdlets operate on a per-Network Adapter basis while **RssBaseCpu** is global, meaning it applies to all Network Adapters. Generally, working with each Network Adapter separately is recommended because it offers more flexibility, granularity, and understandability in giving each Network Adapter its own configuration. However, administrators might still use the global **RssBaseCpu** key if they would like to apply a configuration to all current and all future Network Adapters at the same time.
 
-For a complete list of Network Adapter cmdlets, see [Network Adapter Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/netadapter/).
-
- 
+For a complete list of Network Adapter cmdlets, see [Network Adapter Cmdlets in Windows PowerShell](/powershell/module/netadapter/).
 
  
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Determining BDA Device Topology
 description: Determining BDA Device Topology
-ms.assetid: fdac317e-d4fc-47c9-87d3-bec597f758f5
 keywords:
 - method sets WDK BDA , BDA device topology
 - property sets WDK BDA , BDA device topology
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 A BDA device topology is composed of a connected network of nodes, each of which represent some transformation on a signal. Nodes can be grouped arbitrarily among different filters. This arbitrary grouping provides hardware vendors with a certain freedom in how they implement their hardware and drivers so that such hardware and drivers work in a generic way with the network providers for the different types of networks they wish to support.
 
-For this arbitrary grouping architecture to work, the network provider must be able to query filters as to what kind of transformations those filters perform on a signal (that is, what types of node networks the filter can support). The underlying Ring 0 minidriver for a filter conveys a picture of its supported node networks to the network provider through the [KSPROPSETID\_BdaTopology](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-bdatopology) property set.
+For this arbitrary grouping architecture to work, the network provider must be able to query filters as to what kind of transformations those filters perform on a signal (that is, what types of node networks the filter can support). The underlying Ring 0 minidriver for a filter conveys a picture of its supported node networks to the network provider through the [KSPROPSETID\_BdaTopology](./kspropsetid-bdatopology.md) property set.
 
 When determining the template topology for a filter, the network provider iterates lists of node types and pin types and queries each node and pin for its capabilities. The network provider uses the following properties of KSPROPSETID\_BdaTopology to determine the template topology for the filter:
 
@@ -37,7 +36,7 @@ When determining the template topology for a filter, the network provider iterat
 
     The KSPROPERTY\_BDA\_TEMPLATE\_CONNECTIONS property returns an array that represents all the possible connections between node types and pin types that can be configured on the filter. See [Mapping Connection Topology](mapping-connection-topology.md) for more information.
 
-When a filter instance is first created and added to the graph, it typically has input pins but no output pins. To create output pins, the network provider first uses the KSPROPSETID\_BdaTopology properties to determine what operations the filter can perform. From these properties, the network provider determines which operations it requires the filter to perform for a particular filter graph. The network provider then uses the [KSMETHODSETID\_BdaDeviceConfiguration](https://docs.microsoft.com/windows-hardware/drivers/stream/ksmethodsetid-bdadeviceconfiguration) method set to create output pins matching a particular pin type and create the internal topology, which is the actual hardware path, between those pins and the input pins. See [Configuring a BDA Filter](configuring-a-bda-filter.md) for more information.
+When a filter instance is first created and added to the graph, it typically has input pins but no output pins. To create output pins, the network provider first uses the KSPROPSETID\_BdaTopology properties to determine what operations the filter can perform. From these properties, the network provider determines which operations it requires the filter to perform for a particular filter graph. The network provider then uses the [KSMETHODSETID\_BdaDeviceConfiguration](./ksmethodsetid-bdadeviceconfiguration.md) method set to create output pins matching a particular pin type and create the internal topology, which is the actual hardware path, between those pins and the input pins. See [Configuring a BDA Filter](configuring-a-bda-filter.md) for more information.
 
 The following code snippet shows how to define functions that are exported by the BDA support library as dispatch routines for the KSPROPSETID\_BdaTopology property set:
 
@@ -70,9 +69,4 @@ DEFINE_KSPROPERTY_TABLE(FilterTopologyProperties)
 ```
 
  
-
- 
-
-
-
 

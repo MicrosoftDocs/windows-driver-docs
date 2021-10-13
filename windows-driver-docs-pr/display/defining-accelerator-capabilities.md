@@ -1,7 +1,6 @@
 ---
 title: Defining Accelerator Capabilities
 description: Defining Accelerator Capabilities
-ms.assetid: 1f590cfd-74b8-4a08-848d-fcbb2c0c9486
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , accelerator capabilities
 - Video Acceleration WDK DirectX , accelerator capabilities
@@ -27,15 +26,9 @@ Some restricted profiles are defined as subsets of the capabilities of other res
 
 ### <span id="Nonrestricted_Operation"></span><span id="nonrestricted_operation"></span><span id="NONRESTRICTED_OPERATION"></span>Nonrestricted Operation
 
-If in DirectX VA an accelerator is used without strict conformance to a restricted profile, the **wRestrictedMode** member of the [**DXVA\_ConnectMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_connectmode) structure must be set to 0xFFFF to indicate this lack of restriction.
+If in DirectX VA an accelerator is used without strict conformance to a restricted profile, the **wRestrictedMode** member of the [**DXVA\_ConnectMode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_connectmode) structure must be set to 0xFFFF to indicate this lack of restriction.
 
 All defined values of the **bDXVA\_Func** variable are allowed.
 
  
-
- 
-
-
-
-
 

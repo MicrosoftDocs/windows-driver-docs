@@ -1,29 +1,36 @@
 ---
 title: Processor power management (PPM) notifications
 description: Each processor power management (PPM) notification that the PEP's AcceptProcessorNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
-ms.assetid: 4BA89D0F-78F0-44DF-BC9B-0F9F3256CD59
 keywords: [AcceptProcessorNotification callback]
 ms.date: 01/17/2018
 ms.localizationpriority: medium
 ---
 
 # Processor power management (PPM) notifications
-Each processor power management (PPM) notification that the PEP's AcceptProcessorNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
+
+Each processor power management (PPM) notification that the PEP's [*AcceptProcessorNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm) callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
 
 In this call, the Notification parameter is set to a PEP_NOTIFY_PPM_XXX constant value that indicates the notification type. The Data parameter points to a PEP_PPM_XXX structure type that is associated with this notification type.
 
 The following processor power management (PPM) notification IDs are used by the AcceptProcessorNotification callback routine.
 
 ## PEP_NOTIFY_PPM_QUERY_CAPABILITIES 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_CAPABILITIES.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_CAPABILITIES structure.
- informs the PEP that it is being queried for the power management capabilities of the PEP.
+
+**Remarks**
+
+Informs the PEP that it is being queried for the power management capabilities of the PEP.
 
 The Windows power management framework (PoFx) sends this notification when the PEP is queried for its power management capabilities. This happens at processor initialization time and will be sent for each processor in the system.
 
@@ -33,60 +40,82 @@ To send a PEP_NOTIFY_PPM_QUERY_CAPABILITIES notification, PoFx calls the PEP's A
 
 For a PEP_NOTIFY_PPM_QUERY_CAPABILITIES notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
  
 ## PEP_NOTIFY_PPM_QUERY_IDLE_STATES 
-Notification
+
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_IDLE_STATES.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_IDLE_STATES structure.
- Informs the PEP about idle states.
+
+**Remarks**
+
+Informs the PEP about idle states.
 
 To send a PEP_NOTIFY_PPM_QUERY_IDLE_STATES notification, PoFx calls the PEP's AcceptProcessorNotification callback routine. In this call, the Notification parameter value is PEP_NOTIFY_PPM_QUERY_IDLE_STATES, and the Data parameter points to a PEP_PPM_QUERY_IDLE_STATES structure.
 
 For a PEP_NOTIFY_PPM_QUERY_IDLE_STATES notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
  
 ## PEP_NOTIFY_PPM_IDLE_SELECT 
-Notification
+
+*Notification*
+
 The value PEP_NOTIFY_PPM_IDLE_SELECT.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_IDLE_SELECT structure.
- Informs the PEP of idle select.
+
+**Remarks**
+
+Informs the PEP of idle select.
 
 To send a PEP_NOTIFY_PPM_IDLE_SELECT notification, PoFx calls the PEP's AcceptProcessorNotification callback routine. In this call, the Notification parameter value is PEP_NOTIFY_PPM_IDLE_SELECT, and the Data parameter points to a PEP_PPM_IDLE_SELECT structure.
 
 For a PEP_NOTIFY_PPM_IDLE_SELECT notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_IDLE_CANCEL 
-Notification
+
+*Notification*
+
 The value PEP_NOTIFY_PPM_IDLE_CANCEL.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_IDLE_CANCEL structure.
- Informs the PEP of a cancel action.
+
+**Remarks**
+
+Informs the PEP of a cancel action.
 
 To send a PEP_NOTIFY_PPM_IDLE_CANCEL notification, PoFx calls the PEP's AcceptProcessorNotification callback routine. In this call, the Notification parameter value is PEP_NOTIFY_PPM_IDLE_CANCEL, and the Data parameter points to a PEP_PPM_IDLE_CANCEL structure.
 
 For a PEP_NOTIFY_PPM_IDLE_CANCEL notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
  
 ## PEP_NOTIFY_PPM_IDLE_EXECUTE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_IDLE_EXECUTE.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_IDLE_EXECUTE or PEP_PPM_IDLE_EXECUTE_V2 structure.
- Sent to the PEP to transition the current processor to the specified idle state.
+
+**Remarks**
+
+Sent to the PEP to transition the current processor to the specified idle state.
 
 The Windows power management framework (PoFx) sends this notification to the PEP to transition the current processor to the specified idle state. 
 
@@ -99,15 +128,22 @@ When not using the coordinated idle state interface, the OS uses the PEP_PPM_IDL
 For a PEP_NOTIFY_PPM_IDLE_EXECUTE notification, the AcceptProcessorNotification routine is called with interrupts disabled.
  
 ## PEP_NOTIFY_PPM_IDLE_COMPLETE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. 
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_IDLE_COMPLETE.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_IDLE_COMPLETE or PEP_PPM_IDLE_COMPLETE_V2 structure..
- Informs the PEP that the current processor is waking up from a completed idle transition.
+
+**Remarks**
+
+Informs the PEP that the current processor is waking up from a completed idle transition.
 
 The Windows power management framework (PoFx) sends this notification when the current processor is waking up from a completed idle transition. If the platform was executing a platform idle transition, the first processor to wake will indicate the platform idle state that is being exited. Depending on the type of synchronization used in the platform idle transition, the first processor to wake from a platform idle state may not be the processor that entered the platform idle state. 
 
@@ -120,15 +156,22 @@ When not using the coordinated idle state interface, the OS uses the PEP_PPM_IDL
 For a PEP_NOTIFY_PPM_IDLE_COMPLETE notification, the AcceptProcessorNotification routine is called with interrupts disabled and is always executed on the target processor.
  
 ## PEP_NOTIFY_PPM_IS_PROCESSOR_HALTED 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_IS_PROCESSOR_HALTED.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_IS_PROCESSOR_HALTED structure.
- Sent to the PEP to determine if the specified processor is currently halted in its selected idle state.
+
+**Remarks**
+
+Sent to the PEP to determine if the specified processor is currently halted in its selected idle state.
 
 The Windows power management framework (PoFx) sends this notification to the PEP to determine if the specified processor is currently halted in its selected idle state. The OS will use this notification to check if a secondary processor has fully completed the transition to idle when coordinating platform idle states. The PEP must guarantee the target processor has reached a state in which the platform idle transition can safely occur (e.g., by checking hardware registers to see if the core is halted). Once this notification indicates the processor is in an idle state, that processor must not wake up unless the OS explicitly requests it to do so. 
 
@@ -139,15 +182,22 @@ For a PEP_NOTIFY_PPM_IS_PROCESSOR_HALTED notification, the AcceptProcessorNotifi
 <= HIGH_LEVEL
  
 ## PEP_NOTIFY_PPM_INITIATE_WAKE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_INITIATE_WAKE.
 
-Data
+*Data*
+
 A pointer to a structure.
- Sent to the PEP for a specified processor to initiate its wake up from a non-interruptible idle state.
+
+**Remarks**
+
+Sent to the PEP for a specified processor to initiate its wake up from a non-interruptible idle state.
 
 The Windows power management framework (PoFx) sends this notification to the PEP for a specified processor to initiate its wake up from a non-interruptible idle state. The PEP must return the status of wake for the target processor using NeedInterruptForCompletion. It returns TRUE if the processor requires an interrupt to finish waking up from the idle state. In this case the PEP must ensure the target processor is interruptible upon return from handling this notification. If the target processor is already running and/or will eventually exit the idle state (and is in the process of doing so) without requiring any software generated interrupt, NeedInterruptForCompletion should be set to FALSE.
 
@@ -160,32 +210,46 @@ For a PEP_NOTIFY_PPM_INITIATE_WAKE notification, the AcceptProcessorNotification
 <= HIGH_LEVEL
  
 ## PEP_NOTIFY_PPM_QUERY_FEEDBACK_COUNTERS 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_FEEDBACK_COUNTERS.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_FEEDBACK_COUNTERS structure.
- Informs the PEP that the PEP is being queried for the list of feedback counters that it supports.
+
+**Remarks**
+
+Informs the PEP that the PEP is being queried for the list of feedback counters that it supports.
 
 The Windows power management framework (PoFx) sends this notification at processor initialization to query the PEP for the list of feedback counters that it supports.
 
 For a PEP_NOTIFY_PPM_QUERY_FEEDBACK_COUNTERS notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_FEEDBACK_READ 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_FEEDBACK_READ.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_FEEDBACK_READ structure.
- Informs the PEP that it is being queried for a feedback counter's current value.
+
+**Remarks**
+
+Informs the PEP that it is being queried for a feedback counter's current value.
 
 The Windows power management framework (PoFx) sends this notification when it wants to query a feedback counter's current value. 
 
@@ -193,35 +257,48 @@ This notification may be sent with interrupts disabled. If the counter's Affinit
 
 For a PEP_NOTIFY_PPM_FEEDBACK_READ notification, the AcceptProcessorNotification routine may be called at IRQL = DISPATCH_LEVEL.
 
-DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_PERF_CAPABILITIES structure.
- Informs the PEP that it is being queried for the performance ranges supported by the platform.
+
+**Remarks**
+
+Informs the PEP that it is being queried for the performance ranges supported by the platform.
 
 The Windows power management framework (PoFx) sends this notification at processor initialization to query the performance ranges supported by the platform. The DomainId and DomainMembers fields of the PEP_PPM_QUERY_PERF_CAPABILITIES structure are used to express performance state domains to the platform. Each processor is a member of exactly one performance state domain. The operating system will ensure that all processors in a performance domain change performance together. 
 
 For a PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_PERF_CONSTRAINTS 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. 
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_PERF_CONSTRAINTS.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_PERF_CONSTRAINTS structure.
- Informs the PEP that it is being queried for the current operating constraints of the processor.
+
+**Remarks**
+
+Informs the PEP that it is being queried for the current operating constraints of the processor.
 
 The Windows power management framework (PoFx) sends this notification when it wants to inspect the current operating constraints of the processor. The PEP initiates a request for the OS to re-evaluate the perf constraints of the processor by executing a power control with the control code GUID_PPM_PERF_CONSTRAINT_CHANGE. The InBuffer and OutBuffer must be NULL. 
 
@@ -229,35 +306,50 @@ The PEP must wait until it receives a PEP_DPM_DEVICE_STARTED notification for a 
 
 For a PEP_NOTIFY_PPM_PERF_CONSTRAINTS notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_PERF_SET 
-Handle
+ 
+This notification informs the PEP that the current operating performance of the processor should be changed.
+
+The following describe parameters to [*AcceptProcessorNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm).
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
-The value PEP_NOTIFY_PPM_PERF_SET.
+*Notification*
 
-Data
-A pointer to a PEP_PPM_PERF_SET structure.
- Informs the PEP that the current operating performance of the processor should be changed.
+The value **PEP_NOTIFY_PPM_PERF_SET**.
+
+*Data*
+
+A pointer to a [**PEP_PPM_PERF_SET**](/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_ppm_perf_set) structure.
+
+**Remarks**
 
 The Windows power management framework (PoFx) sends this notification when it wants to change the current operating performance of the processor. This notification may be sent while executing on any processor.
 
-For a PEP_NOTIFY_PPM_PERF_SET notification, the AcceptProcessorNotification routine is always called at IRQL = DISPATCH_LEVEL.
+For a PEP_NOTIFY_PPM_PERF_SET notification, the *AcceptProcessorNotification* routine is always called at IRQL = DISPATCH_LEVEL.
 
-DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_PARK_SELECTION 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_PARK_SELECTION.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_PARK_SELECTION structure.
- Informs the PEP that the OS would like it to select a preferred set of processor cores to park.
+
+**Remarks**
+
+Informs the PEP that the OS would like it to select a preferred set of processor cores to park.
 
 The Windows power management framework (PoFx) sends this notification to instruct the PEP to select a preferred set of cores to park.
 
@@ -269,63 +361,89 @@ Windows does not provide a means for the PEP to distinguish which of the two the
 
 For a PEP_NOTIFY_PPM_PARK_SELECTION notification, the AcceptProcessorNotification routine is always called at IRQL = DISPATCH_LEVEL.
 
-DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_CST_STATES 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_CST_STATES.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_CST_STATES structure.
- sent to the PEP to indicate the set of ACPI-defined C-states supported by the processor. 
+
+**Remarks**
+
+Sent to the PEP to indicate the set of ACPI-defined C-states supported by the processor. 
 
 The Windows power management framework (PoFx) sends this notification to the PEP to indicate the set of ACPI-defined C-states supported by the processor. This notification will be sent once before the first time the PEP receives PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2 notification for a processor, and again any time that processor receives a Notify(0x81) indicating the _CST object has changed.
 
 For a PEP_NOTIFY_PPM_CST_STATES notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_PLATFORM_STATES structure.
- Sent at processor initialization to query the number of platform idle states that the PEP supports.
+
+**Remarks**
+
+Sent at processor initialization to query the number of platform idle states that the PEP supports.
 
 The Windows power management framework (PoFx) sends this notification to the PEP at processor initialization to query the number of platform idle states that it supports. This notification is sent once upon boot. After returning a non-zero number of platform states, the PEP can then begin to select platform idle states during processor idle transitions.
 
 For a PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_LP_SETTINGS 
-Notification
+
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_LP_SETTINGS.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_LP_SETTINGS structure.
+
+**Remarks**
+
  To send a PEP_NOTIFY_PPM_QUERY_LP_SETTINGS notification, PoFx calls the PEP's AcceptProcessorNotification callback routine. In this call, the Notification parameter value is PEP_NOTIFY_PPM_QUERY_LP_SETTINGS, and the Data parameter points to a PEP_PPM_QUERY_LP_SETTINGS structure.
 
 For a PEP_NOTIFY_PPM_QUERY_LP_SETTINGS notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_IDLE_STATES_V2 structure.
+
+**Remarks**
+
  Used at processor initialization to query the list of idle states that the PEP supports.
 
 The Windows power management framework (PoFx) sends this notification to the PEP at processor initialization to query the list of idle states that it supports. 
@@ -336,18 +454,25 @@ The PEP fills in the IdleStates array with information about each idle state tha
 
 For a PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2 notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_PLATFORM_STATE structure.
- Sent to the PEP to query the properties of a single platform idle state.
+
+**Remarks**
+
+Sent to the PEP to query the properties of a single platform idle state.
 
 The Windows power management framework (PoFx) sends this notification at processor initialization to query the properties of a single platform idle state. 
 
@@ -357,17 +482,24 @@ The PEP fills in State structure with information about the platform idle state.
 
 For a PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_TEST_IDLE_STATE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_TEST_IDLE_STATE.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_TEST_IDLE_STATE structure.
+
+**Remarks**
+
  Used to test whether the specified processor and platform idle state can be entered on the specified processor.
 
 The Windows power management framework (PoFx) sends this notification to test whether the specified processor and platform idle state can be entered on the specified processor. If the idle state can be entered, the PEP fills in veto code PEP_IDLE_VETO_NONE and completes the idle transition. If the idle transition cannot be completed for some reason, the PEP fills in a non-zero veto code. 
@@ -382,15 +514,22 @@ This notification will be sent before the OS attempts to enter any processor or 
 For a PEP_NOTIFY_PPM_TEST_IDLE_STATE notification, the AcceptProcessorNotification routine is called with interrupts disabled.
  
 ## PEP_NOTIFY_PPM_IDLE_PRE_EXECUTE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_IDLE_PRE_EXECUTE.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_IDLE_EXECUTE or PEP_PPM_IDLE_EXECUTE_V2 structure.
- Sent to the PEP to prepare the system to transition to the specified idle state.
+
+**Remarks**
+
+Sent to the PEP to prepare the system to transition to the specified idle state.
 
 The Windows power management framework (PoFx) sends this notification to the PEP to prepare the system to transition to the specified idle state. Upon successful completion of this notification, the OS will transition the processor into idle by entering the associated C-state. If the PEP is unable to prepare the system to enter the processor (and platform) idle state, then it must return back an error status. 
 
@@ -403,15 +542,22 @@ When not using the coordinated idle state interface, the OS uses the PEP_PPM_IDL
 For a PEP_NOTIFY_PPM_IDLE_PRE_EXECUTE notification, the AcceptProcessorNotification routine is called with interrupts disabled and is always executed on the target processor.
  
 ## PEP_NOTIFY_PPM_UPDATE_PLATFORM_STATE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_UPDATE_PLATFORM_STATE.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_PLATFORM_STATE structure.
- Informs the PEP that a processor has received Notify(0x81) to update the characteristics of a platform idle state.
+
+**Remarks**
+
+Informs the PEP that a processor has received Notify(0x81) to update the characteristics of a platform idle state.
 
 The Windows power management framework (PoFx) sends this notification when a processor has received Notify(0x81) to update the characteristics of a platform idle state. This notification is sent once for each platform idle state. If the PEP does not accept the notification (i.e. returns FALSE from its AcceptProcessorNotification callback), then the prior definition of the platform idle state, from the most recently accepted PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE or PEP_NOTIFY_PPM_UPDATE_PLATFORM_STATE notification, is preserved. 
 
@@ -419,18 +565,25 @@ This notification uses the same Data buffer as the PEP_NOTIFY_PPM_QUERY_PLATFORM
 
 For a PEP_NOTIFY_PPM_UPDATE_PLATFORM_STATE notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE_RESIDENCIES 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE_RESIDENCIES.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_PLATFORM_STATE_RESIDENCIES structure.
- Informs the PEP that it should capture the actual accumulated time spent in each platform idle state since boot.
+
+**Remarks**
+
+Informs the PEP that it should capture the actual accumulated time spent in each platform idle state since boot.
 
 The Windows power management framework (PoFx) sends this notification to the PEP to capture the actual accumulated time spent in each platform idle state since boot. As such, this query is only applicable to platforms where the underlying hardware may autonomously decide to enter a platform idle state different from that requested by the OS. The values returned are used for diagnostic purposes and identify when the OS's view of platform idle state residency differs significantly from what the platform actually achieved. 
 
@@ -443,14 +596,21 @@ Note  The accumulated values captured by this query should correspond only to th
 For a PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE_RESIDENCIES notification, the AcceptProcessorNotification routine can be called at any IRQL.
  
 ## PEP_NOTIFY_PPM_QUERY_VETO_REASONS 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_VETO_REASONS.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_VETO_REASONS structure.
+
+**Remarks**
+
  Used to query the number of unique veto reasons that the PEP uses in the ProcessorIdleVeto and PlatformIdleVeto callbacks. 
 
 The Windows power management framework (PoFx) sends this notification at processor initialization to query the number of unique veto reasons that the PEP uses in the ProcessorIdleVeto and PlatformIdleVeto callbacks. This notification is optional, and may be ignored by the PEP. 
@@ -461,103 +621,143 @@ If this notification is not accepted by the PEP, the PEP may use the ProcessorId
 
 For a PEP_NOTIFY_PPM_QUERY_VETO_REASONS notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_VETO_REASON 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_VETO_REASON.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_VETO_REASON structure.
- Sent to the PEP to query for information about a specific veto reason.
+
+**Remarks**
+
+Sent to the PEP to query for information about a specific veto reason.
 
 The Windows power management framework (PoFx) sends this notification at processor initialization to query for information about a specific veto reason. This notification is sent twice for each veto reason, once with a NULLName buffer to retrieve the allocation size needed for Name, and once with a non-NULLName buffer to fill in the contents of Name. The name should be a human-readable string indicating what condition this veto reason represents. Debugging tools such as WPA and the kernel debugger will display Name when diagnosing why an idle state was not entered. 
 
 For a PEP_NOTIFY_PPM_QUERY_VETO_REASON notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_ENUMERATE_BOOT_VETOES 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_ENUMERATE_BOOT_VETOES.
 
-Data
+*Data*
+
 The NULL pointer value.
- Informs the PEP that the OS is ready to accept calls to ProcessorIdleVeto or PlatformIdleVeto. 
+
+**Remarks**
+
+Informs the PEP that the OS is ready to accept calls to ProcessorIdleVeto or PlatformIdleVeto. 
 
 The Windows power management framework (PoFx) sends this notification after processor initialization but before first idle entry to indicate that the OS is ready to accept calls to ProcessorIdleVeto or PlatformIdleVeto. The PEP may enumerate any boot-time vetoes in the context of this notification, and the OS guarantees that they will take effect before the first attempt to select a processor, platform, or coordinated idle state. This notification has no associated Data parameter. 
 
 For a PEP_NOTIFY_PPM_ENUMERATE_BOOT_VETOES notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_PARK_MASK 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_PARK_MASK.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_PARK_MASK structure.
- Informs the PEP of the current core parking mask.
+
+**Remarks**
+
+Informs the PEP of the current core parking mask.
 
 The Windows power management framework (PoFx) sends this notification at runtime to inform the PEP of the current core parking mask.
 
 For a PEP_NOTIFY_PPM_PARK_MASK notification, the AcceptProcessorNotification routine is called at IRQL = DISPATCH_LEVEL and may be sent while executing on any processor.
 
-DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_PARK_SELECTION_V2 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_PARK_SELECTION_V2.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_PARK_SELECTION_V2 structure.
- Informs the PEP that the OS would like it to select a preferred set of cores to park or steer interrupts away from. If this notification is not accepted, the OS will fall back to sending the PEP_NOTIFY_PPM_PARK_SELECTION notification.
+
+**Remarks**
+
+
+Informs the PEP that the OS would like it to select a preferred set of cores to park or steer interrupts away from. If this notification is not accepted, the OS will fall back to sending the PEP_NOTIFY_PPM_PARK_SELECTION notification.
 
 When running its performance check algorithm, the OS may send the PEP_NOTIFY_PPM_PARK_SELECTION_V2 notification multiple times: zero or more times for each core efficiency class within each park domain, and zero or more times for interrupt steering. To assist the PEP in providing a consistent response to the OS for a performance check, the OS will supply the interrupt time based timestamp of the performance check evaluation that prompted the notification. All park selection notifications resulting from one performance check evaluation will have the same timestamp. Note that the remaining fields (Count, AdditionalUnparkedProcessors, EvaluationType, and Processors) may vary for notifications that are sent during the same performance check evaluation, the PEP cannot assume that they will remain the same. 
 
 For a PEP_NOTIFY_PPM_PARK_SELECTION notification, the AcceptProcessorNotification routine is always called at IRQL = DISPATCH_LEVEL.
 
-DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_PERF_CHECK_COMPLETE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_PERF_CHECK_COMPLETE.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_PERF_CHECK_COMPLETE structure.
- Informs the PEP that the periodic performance check evaluation has completed.
+
+**Remarks**
+
+Informs the PEP that the periodic performance check evaluation has completed.
 
 The Windows power management framework (PoFx) sends this notification at runtime to notify the PEP that the periodic per check evaluation has completed.
 
 For a PEP_NOTIFY_PPM_PERF_CHECK_COMPLETE notification, the AcceptProcessorNotification routine is called at IRQL = DISPATCH_LEVEL and may be sent while executing on any processor.
 
-DISPATCH_LEVEL
- 
+
 ## PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure.
- Sent to the PEP to query for the dependencies of each coordinated idle state.
+
+**Remarks**
+
+Sent to the PEP to query for the dependencies of each coordinated idle state.
 
 The Windows power management framework (PoFx) sends this notification at processor initialization to query the PEP for the dependencies of each coordinated idle state. The OS will allocate MaximumDependencySize elements for the Dependencies array. The PEP must fill in the number of elements of the array that were used in DependencySizeUsed.
 
@@ -569,34 +769,48 @@ Each dependency lists a menu of options the OS is allowed to use to satisfy the 
 
 For a PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_COORDINATED_STATE_NAME 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_COORDINATED_STATE_NAME.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_STATE_NAME structure.
- Sent to the PEP to query for information about a specific coordinated or platform idle state.
+
+**Remarks**
+
+Sent to the PEP to query for information about a specific coordinated or platform idle state.
 
 The Windows power management framework (PoFx) sends this notification at processor initialization to query the PEP for information about a specific coordinated or platform idle state. This notification is sent twice for each state, once with a NULL Name buffer to retrieve the allocation size needed for Name, and once with a non-NULL Name buffer to fill in the contents of Name. The name should be a human-readable string indicating the name of the coordinated idle state. Coordinated idle states should have unique names, except on multi-cluster systems, where the names of equivalent states on different clusters may be the same. Debugging tools such as WPA and the kernel debugger will display Name in diagnostics that refer to this coordinated/platform idle state.
 
 For a PEP_NOTIFY_PPM_QUERY_COORDINATED_STATE_NAME notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_COORDINATED_STATES 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_COORDINATED_STATES.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_COORDINATED_STATES structure.
+
+**Remarks**
+
  Used at processor initialization to query for the properties of all coordinated idle states.
 
 The Windows power management framework (PoFx) sends this notification to the PEP at processor initialization to query for the properties of all coordinated idle states. This notification is sent just before the PEP would have sent the PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE notification. If accepted, the PEP is using the coordinated idle state interface and will not receive any PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE notifications. If not accepted, the PEP is using the platform idle state interface and the OS will fall back to using the PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE notification to query for coordinated idle states. 
@@ -613,34 +827,48 @@ There is not required order between two disjoint coordinated idle states (that i
 
 For a PEP_NOTIFY_PPM_QUERY_COORDINATED_STATES notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_PROCESSOR_STATE_NAME 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_PROCESSOR_STATE_NAME.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_STATE_NAME structure.
- Sent to the PEP to query for information about a specific processor idle state.
+
+**Remarks**
+
+Sent to the PEP to query for information about a specific processor idle state.
 
 The Windows power management framework (PoFx) sends this notification at processor initialization to query the PEP for information about a specific processor idle state. This notification is sent twice for each state, once with a NULL Name buffer to retrieve the allocation size needed for Name, and once with a non-NULL Name buffer to fill in the contents of Name. The name should be a human-readable string indicating the name of the coordinated idle state. Coordinated idle states should have unique names, except on multi-cluster systems, where the names of equivalent states on different clusters may be the same. Debugging tools such as WPA and the kernel debugger will display Name in diagnostics that refer to this coordinated/platform idle state.
 
 For a PEP_NOTIFY_PPM_QUERY_PROCESSOR_STATE_NAME notification, the AcceptProcessorNotification routine is always called at IRQL = PASSIVE_LEVEL.
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_ENTER_SYSTEM_STATE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_ENTER_SYSTEM_STATE.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_ENTER_SYSTEM_STATE structure.
+
+**Remarks**
+
  PEP_NOTIFY_PPM_ENTER_SYSTEM_STATE is an optional notification that notifies the PEP that the system is about to enter a system power state. This notification is sent to all processors simultaneously after the system has completed all passive level work transitioning the processor to the system power state.  
 
 This notification is sent at DISPATCH_LEVEL, with all processors at dispatch. This notification is always executed on the target processor. 
@@ -651,60 +879,83 @@ Note  The PEP must not queue any work from this notification. The processors wil
 DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_PERF_SET_STATE 
-Handle
+
+The following describe parameters to [*AcceptProcessorNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm).
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
-The value PEP_NOTIFY_PPM_PERF_SET_STATE.
+*Notification*
 
-Data
-A pointer to a PEP_PPM_PERF_SET_STATE structure.
- Used at runtime to set the current operating performance state of the processor. If the PEP has autonomous hardware capable of boosting/reducing performance without a performance set request, it should limit the requests from autonomous hardware based on the minimum performance state and/or maximum performance state, and target the desired performance state. Otherwise, it should run at exactly the desired performance state.  
+The value **PEP_NOTIFY_PPM_PERF_SET_STATE**.
+
+*Data*
+
+A pointer to a [**PEP_PPM_PERF_SET_STATE**](/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_ppm_perf_set_state) structure.
+
+**Remarks**
+
+Used at runtime to set the current operating performance state of the processor. If the PEP has autonomous hardware capable of boosting/reducing performance without a performance set request, it should limit the requests from autonomous hardware based on the minimum performance state and/or maximum performance state, and target the desired performance state. Otherwise, it should run at exactly the desired performance state.  
 
 This notification is sent at DISPATCH_LEVEL. If scheduler directed performance states are in use, the PEP must adhere to the restrictions in section 3.3.6 when processing this notification. It may be sent while executing on any processor. 
 
-DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_QUERY_DISCRETE_PERF_STATES 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_DISCRETE_PERF_STATES.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_DISCRETE_PERF_STATES structure.
  Used at processor initialization to query for the list of discrete performance states that the PEP supports, if the PEP_NOTIFY_PPM_QUERY_CAPABILITIES notification indicates support for discrete performance states.  
 
 The performance state list should be ordered from fastest to slowest, with each performance state mapping to a distinct performance value. The performance state list should also include an entry that matches each performance value listed in the PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES notification.  This notification is sent at PASSIVE_LEVEL. It may be sent while executing on any processor. 
 
-PASSIVE_LEVEL
+
  
 ## PEP_NOTIFY_PPM_QUERY_DOMAIN_INFO 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_QUERY_DOMAIN_INFO.
 
-Data
+*Data*
+
 A pointer to a PEP_PPM_QUERY_DOMAIN_INFO structure.
+
+**Remarks**
+
  An optional notification that queries for information about a performance domain.  This notification is sent at PASSIVE_LEVEL. It may be sent while executing on any processor.
 
-PASSIVE_LEVEL
+
 
   
 ## PEP_NOTIFY_PPM_RESUME_FROM_SYSTEM_STATE 
-Handle
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
+*Notification*
+
 The value PEP_NOTIFY_PPM_RESUME_FROM_SYSTEM_STATE.
 
-Data
-A pointer to a PEP_PPM_RESUME_FROM_SYSTEM_STATE structure.
- An optional notification that notifies the PEP that the system has just resumed from a system power state. This notification is sent to all processors simultaneously just before processors are released to resume passive level work.  This notification is sent at DISPATCH_LEVEL, with all processors at dispatch. This notification is always executed on the target processor. 
+*Data*
 
-DISPATCH_LEVEL
- 
+A pointer to a PEP_PPM_RESUME_FROM_SYSTEM_STATE structure.
+
+**Remarks**
+
+ An optional notification that notifies the PEP that the system has just resumed from a system power state. This notification is sent to all processors simultaneously just before processors are released to resume passive level work.  This notification is sent at DISPATCH_LEVEL, with all processors at dispatch. This notification is always executed on the target processor. 
 

@@ -1,7 +1,6 @@
 ---
 title: Code Example for Initializing Device Properties
 description: Code Example for Initializing Device Properties
-ms.assetid: ec25fa77-13d8-4cb0-913c-b24010355702
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,15 +8,15 @@ ms.localizationpriority: medium
 # Code Example for Initializing Device Properties
 
 
-During the [**IWiaMiniDrv::drvInitItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinititemproperties) call for the Root item, the minidriver must initialize the following WIA properties that describe the device:
+During the [**IWiaMiniDrv::drvInitItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinititemproperties) call for the Root item, the minidriver must initialize the following WIA properties that describe the device:
 
-[**WIA\_DPS\_SERVICE\_ID**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-service-id)
+[**WIA\_DPS\_SERVICE\_ID**](./wia-dps-service-id.md)
 
-[**WIA\_DPS\_DEVICE\_ID**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-device-id)
+[**WIA\_DPS\_DEVICE\_ID**](./wia-dps-device-id.md)
 
-[**WIA\_DPS\_GLOBAL\_IDENTITY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-global-identity)
+[**WIA\_DPS\_GLOBAL\_IDENTITY**](./wia-dps-global-identity.md)
 
-[**WIA\_DPA\_FIRMWARE\_VERSION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dpa-firmware-version)
+[**WIA\_DPA\_FIRMWARE\_VERSION**](./wia-dpa-firmware-version.md)
 
 The following code example shows how to initialize WIA\_DPS\_SERVICE\_ID by using the **OpenProperyStore** and **ReadDeviceProperty** methods to read PKEY\_PNPX\_ServiceId. The same general method can be used to initialize each of the device properties.
 
@@ -82,9 +81,4 @@ if (pPropertyStore)
 ```
 
  
-
- 
-
-
-
 

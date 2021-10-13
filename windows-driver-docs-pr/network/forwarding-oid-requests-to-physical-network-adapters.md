@@ -1,7 +1,6 @@
 ---
 title: Forwarding OID Requests to Physical Network Adapters
 description: Forwarding OID Requests to Physical Network Adapters
-ms.assetid: 2A6AA842-FFC2-4CEF-BA56-2FDB277E37C9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,17 +16,17 @@ In this configuration, an extensible switch extension is exposed to every networ
 
 The following figure shows an example of an extensible switch team for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram of the oid control path for ndis 6.40](images/vswitch-oid-controlpath2-ndis640.png)
+![diagram of the oid control path for ndis 6.40.](images/vswitch-oid-controlpath2-ndis640.png)
 
 The following figure shows an example of an extensible switch team for NDIS 6.30 (Windows Server 2012).
 
-![diagram of extensible switch team for ndis 6.30](images/vswitch-oid-controlpath2.png)
+![diagram of extensible switch team for ndis 6.30.](images/vswitch-oid-controlpath2.png)
 
 **Note**  In the Hyper-V extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 
  
 
-OID requests must be encapsulated to forward the request to an underlying physical network adapter. OID requests are first encapsulated inside an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. Then, the OID requests are forwarded through the extensible switch control path by an OID set request of [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request).
+OID requests must be encapsulated to forward the request to an underlying physical network adapter. OID requests are first encapsulated inside an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. Then, the OID requests are forwarded through the extensible switch control path by an OID set request of [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md).
 
 OID requests to the underlying physical adapters are issued by the following:
 
@@ -51,9 +50,9 @@ When the forwarding extension forwards the OID request over the control path, it
 <a href="" id="a-forwarding-extension-"></a>A forwarding extension.  
 The forwarding extension can originate its own encapsulated OID requests and forward them to an underlying physical network adapter. The forwarding extension can encapsulate standard NDIS OID requests. The forwarding extension can also encapsulate private OID requests that are defined by the independent hardware vendor (IHV) for the physical network adapters. This allows a forwarding extension that was also developed by the IHV to enable or disable proprietary attributes on individual physical adapters in the team.
 
-In addition, the forwarding extension can originate encapsulated hardware offload OID requests to allocate resources for a specified Hyper-V child partition. For example, the forwarding extension can originate encapsulated OID requests of [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-allocate-queue) to allocate a VMQ for a specified child partition. In this case, the extension encapsulates the request as originating from the extensible switch port and network adapter connection associated with the partition.
+In addition, the forwarding extension can originate encapsulated hardware offload OID requests to allocate resources for a specified Hyper-V child partition. For example, the forwarding extension can originate encapsulated OID requests of [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](./oid-receive-filter-allocate-queue.md) to allocate a VMQ for a specified child partition. In this case, the extension encapsulates the request as originating from the extensible switch port and network adapter connection associated with the partition.
 
-**Note**  The forwarding extension can only originate its own encapsulated hardware offload OID request if it is filtering the same OID request that was issued by overlying drivers. In this case, the extension must not forward the original OID request. Instead, the extension must call [**NdisFOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequestcomplete) to complete this request when NDIS calls its [*FilterOidRequestComplete*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_oid_request_complete) to complete the originated OID request.
+**Note**  The forwarding extension can only originate its own encapsulated hardware offload OID request if it is filtering the same OID request that was issued by overlying drivers. In this case, the extension must not forward the original OID request. Instead, the extension must call [**NdisFOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequestcomplete) to complete this request when NDIS calls its [*FilterOidRequestComplete*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request_complete) to complete the originated OID request.
 
  
 
@@ -66,11 +65,11 @@ A filtering or capturing extension can originate its own encapsulated OID query 
 
 The forwarding extension must follow these steps when it forwards, redirects, or originates an encapsulated OID request for an underlying physical adapter:
 
-1.  If the forwarding extension is originating an OID request, it must initialize an extension-allocated [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure with the information related to the request.
+1.  If the forwarding extension is originating an OID request, it must initialize an extension-allocated [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure with the information related to the request.
 
-    If the extension is forwarding an OID request, it must not change the existing [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure referenced by the *OidRequest* parameter of the [*FilterOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_oid_request) function. Instead, the extension must call [**NdisAllocateCloneOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocatecloneoidrequest) to allocate memory for a new **NDIS\_OID\_REQUEST** structure and copy all the information from the existing **NDIS\_OID\_REQUEST** structure.
+    If the extension is forwarding an OID request, it must not change the existing [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure referenced by the *OidRequest* parameter of the [*FilterOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request) function. Instead, the extension must call [**NdisAllocateCloneOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatecloneoidrequest) to allocate memory for a new **NDIS\_OID\_REQUEST** structure and copy all the information from the existing **NDIS\_OID\_REQUEST** structure.
 
-2.  The extension sets the members of an extension-allocated [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure to the following values:
+2.  The extension sets the members of an extension-allocated [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure to the following values:
 
     -   The **DestinationPortId** member must be set to the identifier of the extensible switch port to which the external network adapter is connected.
 
@@ -84,55 +83,49 @@ The forwarding extension must follow these steps when it forwards, redirects, or
 
         If the forwarding extension is forwarding or redirecting a hardware offload OID request, it must retain the values of the **SourcePortId** and **SourceNicIndex** members that were set by the extensible switch interface.
 
-    -   The **OidRequest** member must be set to a pointer to an initialized [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure for the encapsulated OID request. The forwarding extension either allocates and initializes this structure or uses the cloned copy of the structure.
+    -   The **OidRequest** member must be set to a pointer to an initialized [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the encapsulated OID request. The forwarding extension either allocates and initializes this structure or uses the cloned copy of the structure.
 
-3.  The extension sets the members of an extension-allocated [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure to the following values:
+3.  The extension sets the members of an extension-allocated [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure to the following values:
 
-    -   The **Oid** member must be set to [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request).
+    -   The **Oid** member must be set to [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md).
 
     -   The **InformationBuffer** member must contain a pointer to a buffer that contains the generated or filtered OID request data.
 
     -   The **InformationBufferLength** member must contain the length, in bytes, of the buffer that contains the generated or filtered OID request data.
 
-    The extension sets the other members to values that are valid for the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure.
+    The extension sets the other members to values that are valid for the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure.
 
-4.  The extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the index of the destination physical network adapter. This guarantees that the extensible switch interface will not delete the physical network adapter connection while its reference counter is nonzero.
+4.  The extension calls [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the index of the destination physical network adapter. This guarantees that the extensible switch interface will not delete the physical network adapter connection while its reference counter is nonzero.
 
-    When the extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic), it sets the *SwitchPortId* parameter to the value specified for the **DestinationPortId** member. The extension also sets the *SwitchNicIndex* parameter to the value specified for the **DestinationNicIndex** member.
+    When the extension calls [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic), it sets the *SwitchPortId* parameter to the value specified for the **DestinationPortId** member. The extension also sets the *SwitchNicIndex* parameter to the value specified for the **DestinationNicIndex** member.
 
-    **Note**  If [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) does not return NDIS\_STATUS\_SUCCESS, the OID request cannot be forwarded to the destination physical network adapter.
-
-     
-
-5.  If the forwarding extension is originating a hardware offload OID request for a Hyper-V child partition, it also calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the index of the source network adapter connection that is associated with the partition. This guarantees that the extensible switch interface will not delete the physical network adapter connection while its reference counter is nonzero.
-
-    When the extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic), it sets the *SwitchPortId* parameter to the value specified for the **SourcePortId** member. The extension also sets the *SwitchNicIndex* parameter to the value specified for the **SourceNicIndex** member.
-
-    **Note**  If [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) does not return NDIS\_STATUS\_SUCCESS, the OID request cannot be forwarded to the destination physical network adapter.
+    **Note**  If [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) does not return NDIS\_STATUS\_SUCCESS, the OID request cannot be forwarded to the destination physical network adapter.
 
      
 
-6.  The extension calls [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest) to forward the encapsulated OID request to the specified destination extensible switch port and network adapter.
+5.  If the forwarding extension is originating a hardware offload OID request for a Hyper-V child partition, it also calls [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the index of the source network adapter connection that is associated with the partition. This guarantees that the extensible switch interface will not delete the physical network adapter connection while its reference counter is nonzero.
 
-    **Note**  If the extension is forwarding a filtered OID request, it must call [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest) within the context of the call to its [*FilterOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_oid_request) function. If the extension is forwarding OID requests that it has generated, it calls [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus) while it is in the *Running*, *Restarting*, *Paused*, and *Pausing* states. For more information on these states, see [Filter Module States and Operations](filter-module-states-and-operations.md).
+    When the extension calls [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic), it sets the *SwitchPortId* parameter to the value specified for the **SourcePortId** member. The extension also sets the *SwitchNicIndex* parameter to the value specified for the **SourceNicIndex** member.
+
+    **Note**  If [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) does not return NDIS\_STATUS\_SUCCESS, the OID request cannot be forwarded to the destination physical network adapter.
 
      
 
-7.  When NDIS calls the [*FilterOidRequestComplete*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_oid_request_complete) function, the extension calls [*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_dereference_switch_nic) to clear the reference counter for the index of the destination physical network adapter.
+6.  The extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the encapsulated OID request to the specified destination extensible switch port and network adapter.
 
-    If the forwarding extension originated a hardware offload OID request for a Hyper-V child partition, it also calls [*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_dereference_switch_nic) to clear the reference counter for the index of the source network adapter connection for the adapter.
+    **Note**  If the extension is forwarding a filtered OID request, it must call [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) within the context of the call to its [*FilterOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request) function. If the extension is forwarding OID requests that it has generated, it calls [**NdisFIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus) while it is in the *Running*, *Restarting*, *Paused*, and *Pausing* states. For more information on these states, see [Filter Module States and Operations](filter-module-states-and-operations.md).
 
-    In both cases, the extension sets the *SwitchPortId* and *SwitchNicIndex* parameters to the same values that it used in the call to [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic).
+     
+
+7.  When NDIS calls the [*FilterOidRequestComplete*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request_complete) function, the extension calls [*DereferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic) to clear the reference counter for the index of the destination physical network adapter.
+
+    If the forwarding extension originated a hardware offload OID request for a Hyper-V child partition, it also calls [*DereferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic) to clear the reference counter for the index of the source network adapter connection for the adapter.
+
+    In both cases, the extension sets the *SwitchPortId* and *SwitchNicIndex* parameters to the same values that it used in the call to [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic).
 
 For more information on how the extension issues OID requests, see [Generating OID Requests from an NDIS Filter Driver](generating-oid-requests-from-an-ndis-filter-driver.md).
 
 For more information on MUX drivers, see [NDIS MUX Intermediate Drivers](ndis-mux-intermediate-drivers.md).
 
  
-
- 
-
-
-
-
 

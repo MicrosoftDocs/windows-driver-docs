@@ -1,29 +1,26 @@
 ---
 title: About Kernel Mode Performance Counters
 description: About Kernel Mode Performance Counters
-ms.assetid: 57655e65-6db4-487d-8831-282e8d30d84e
-ms.date: 04/20/2017
+ms.date: 08/05/2020
 ms.localizationpriority: medium
 ---
 
 # About Kernel Mode Performance Counters
 
+Performance counters are values published by a component to allow system administrators and developers to understand the status of the component. For example, a networking component might publish the number of packets sent over a network connection.
 
-Performance Counters for Windows (PCW) interacts with different components in the system and keeps track of the counter sets (and their instances) that are provided by kernel-mode components. Additionally, PCW tracks service requests from consumers by reviewing the counter sets and returning the requested data.
+The Windows Performance Counter system allows various different components to publish performance counters through a consistent and discoverable interface. Windows Performance Counter publishers are consumed through GUI tools (e.g. perfmon), command-line tools (e.g. typeperf), and APIs (e.g. PDH and WMI). For more information, see [Performance Counters](/windows/win32/perfctrs/performance-counters-portal). A component that publishes performance counters is called a performance counter provider.
 
-Kernel-mode PCW providers are installed in the system as Performance Counter Library (PERFLIB) (Version 2 providers), which allows their counters to be browsed, and allows for data collection and instance enumeration. Consumers can query KM PCW providers by using PDH and PERFLIB Version 1 without any modification to the consumer code. For more information, see [Developing with Performance Counters](https://go.microsoft.com/fwlink/p/?linkid=144623).
+Performance counter values can be published in three ways.
 
-Providers running in kernel-mode register their counter sets by using the kernel-mode PCW provider API. Providers can manage the instances of the registered counter sets and use notifications to be informed when various events related to performance counters occur (for example, when consumers add, remove, or collect counters).
+1. A user-mode component (e.g. a service) can publish counters via the [PerfLib APIs](/windows/win32/perfctrs/providing-counter-data-using-version-2-0).
+2. A kernel-mode component (e.g. a driver) can publish counters via the [PCW APIs](using-kernel-mode-performance-counters.md).
+3. An in-process [performance extension DLL](/windows/win32/perfctrs/providing-counter-data-using-a-performance-dll) can perform custom collection. Note that in-process performance extension DLLs are **deprecated and should not be used** by new components due to performance and reliability issues.
 
-**Note**   The kernel-mode PCW provider API (PERFLIB version 2), introduced in Windows 7, does not currently support session-space drivers.
+Performance Counters for Windows (PCW) keeps track of countersets provided by kernel-mode components. It routes consumer data collection requests to the appropriate kernel-mode component and returns the requested data to the user-mode consumer.
 
- 
+## Related topics
 
- 
+[Using Kernel Mode Performance Counters](using-kernel-mode-performance-counters.md)
 
- 
-
-
-
-
-
+[Performance Counters Portal](/windows/win32/perfctrs/performance-counters-portal)

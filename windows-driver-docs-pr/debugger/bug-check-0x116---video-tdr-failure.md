@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x116 VIDEO_TDR_FAILURE
 description: The VIDEO_TDR_FAILURE bug check has a value of 0x00000116. This indicates that an attempt to reset the display driver and recover from a timeout failed.
-ms.assetid: 06fe312a-e2d3-479f-b0fb-06c0ac79be32
 keywords: ["Bug Check 0x116 VIDEO_TDR_FAILURE","VIDEO_TDR_FAILURE", "VIDEO_TDR_ERROR"]
 ms.date: 01/17/2019
 topic_type:
@@ -58,23 +57,21 @@ The VIDEO\_TDR\_FAILURE bug check has a value of 0x00000116. This indicates that
 
 
 
-Cause
------
+## Cause
 
 A common stability problem in graphics occurs when the system appears completely frozen or hung while processing an end-user command or operation. Usually the GPU is busy processing intensive graphics operations, typically during game-play. No screen updates occur, and users assume that their system is frozen. Users usually wait a few seconds and then reboot the system by pressing the power button. Windows tries to detect these problematic hang situations and dynamically recover a responsive desktop.
 
-This process of detection and recovery is known as Timeout Detection and Recovery (TDR). The default timeout is 2 seconds. In the TDR process for video cards, the operating system's GPU scheduler calls the display miniport driver's [*DxgkDdiResetFromTimeout*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_resetfromtimeout) function to reinitialize the driver and reset the GPU.
+This process of detection and recovery is known as Timeout Detection and Recovery (TDR). The default timeout is 2 seconds. In the TDR process for video cards, the operating system's GPU scheduler calls the display miniport driver's [*DxgkDdiResetFromTimeout*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_resetfromtimeout) function to reinitialize the driver and reset the GPU.
 
-During this process, the operating system tells the driver not to access the hardware or memory and gives it a short time for currently running threads to complete. If the threads do not complete within the timeout, then the system bug checks with 0x116 VIDEO\_TDR\_FAILURE. For more information, see [Thread Synchronization and TDR](https://docs.microsoft.com/windows-hardware/drivers/display/thread-synchronization-and-tdr).
+During this process, the operating system tells the driver not to access the hardware or memory and gives it a short time for currently running threads to complete. If the threads do not complete within the timeout, then the system bug checks with 0x116 VIDEO\_TDR\_FAILURE. For more information, see [Thread Synchronization and TDR](../display/thread-synchronization-and-tdr.md).
 
 The system can also bug check with VIDEO\_TDR\_FAILURE if a number of TDR events occur in a short period of time, by default more than five TDRs in one minute.
 
 If the recovery process is successful, a message will be displayed, indicating that the "Display driver stopped responding and has recovered."
 
-For more information, see Timeout Detection and Recovery (TDR), [TDR Registry Keys](https://docs.microsoft.com/windows-hardware/drivers/display/tdr-registry-keys) and [TDR changes in Windows 8](https://docs.microsoft.com/windows-hardware/drivers/display/tdr-changes-in-windows-8) which are located in [Debugging Tips for the Windows Display Driver Model (WDDM)](https://docs.microsoft.com/windows-hardware/drivers/display/debugging-tips-for-the-windows-vista-display-driver-model).
+For more information, see Timeout Detection and Recovery (TDR), [TDR Registry Keys](../display/tdr-registry-keys.md) and [TDR changes in Windows 8](../display/tdr-changes-in-windows-8.md) which are located in [Timeout Detection and Recovery (TDR)](../display/timeout-detection-and-recovery.md).
 
-Resolution
-----------
+## Resolution
 
 The GPU is taking more time than permitted to display graphics to your monitor. This behavior can occur for one or more of the following reasons:
 
@@ -210,23 +207,14 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
     Safe Mode may be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
 
--   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+-   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
-Remarks
--------
+## Remarks
 
 **Hardware certification requirements**
 
 For information on requirements that hardware devices must meet when they implement TDR, refer to the WHCK documentation on *Device.Graphics…TDRResiliency*.
-
-
-
-
-
-
-
-

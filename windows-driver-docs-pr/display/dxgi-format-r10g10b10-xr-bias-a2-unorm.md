@@ -1,7 +1,6 @@
 ---
 title: DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
 description: DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
-ms.assetid: 2aef590f-2328-4175-ab60-c72b1fd83db7
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
 - extended format WDK Windows 7 display , DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
@@ -21,13 +20,7 @@ Scan-out hardware must be able to apply the bias and scale.
 
 The DXGI\_FORMAT\_R10G10B10\_XR\_BIAS\_A2\_UNORM format has only the display scan-out, CPU lockable, and "cast within bit layout" resource attributes. Therefore, to render to a resource, the application typically creates a render target view of format DXGI\_FORMAT\_R10G10B10A2\_\*.
 
-For full functionality, the display miniport driver must support XR\_BIAS as a display format. The new D3DDDIFMT\_A2B10G10R10\_XR\_BIAS value was added to the [**D3DDDIFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ne-d3dukmdt-_d3dddiformat) enumeration for XR\_BIAS support.
+For full functionality, the display miniport driver must support XR\_BIAS as a display format. The new D3DDDIFMT\_A2B10G10R10\_XR\_BIAS value was added to the [**D3DDDIFORMAT**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat) enumeration for XR\_BIAS support.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_PRESENTATIONEXTENT
 description: The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request to query the stream extent.
-ms.assetid: 36b66035-f935-4264-8555-d949865d708e
 keywords: ["KSPROPERTY_STREAM_PRESENTATIONEXTENT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request to query the 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request to query the 
 
  
 
-Remarks
--------
+## Remarks
 
 The property returns the extent as a LONGLONG, with the same resolution format as the presentation time.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -79,14 +76,4 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
-
- 
-
- 
-
-
-
-
-
-
+[**KSPROPERTY**](ksproperty-structure.md)

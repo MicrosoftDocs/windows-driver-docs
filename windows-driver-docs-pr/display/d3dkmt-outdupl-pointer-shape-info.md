@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_INFO structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: fc72fe82-8807-44ac-b9da-8f84d38c45bf
+description: Learn about the D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_INFO structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTDUPL_POINTER_SHAPE_INFO structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTDUPL_POINTER_SHAPE_INFO {
@@ -33,8 +31,7 @@ typedef struct _D3DKMT_OUTDUPL_POINTER_SHAPE_INFO {
 } D3DKMT_OUTDUPL_POINTER_SHAPE_INFO;
 ```
 
-Members
--------
+## Members
 
 **Type**
 
@@ -46,8 +43,7 @@ Members
 
 **HotSpot**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

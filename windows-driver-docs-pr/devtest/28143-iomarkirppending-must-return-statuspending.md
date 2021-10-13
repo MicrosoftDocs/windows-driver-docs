@@ -1,7 +1,6 @@
 ---
-title: C28143
+title: C28143 warning
 description: Warning C28143 A dispatch routine that calls IoMarkIrpPending must also return STATUS_PENDING.
-ms.assetid: 3b9e6c4f-73d1-4abc-9495-85bb56e2532b
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
@@ -16,7 +15,7 @@ f1_keywords:
 
 warning C28143: A dispatch routine that calls IoMarkIrpPending must also return STATUS\_PENDING
 
-A dispatch routine that calls [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending) includes at least one path in which the driver returns a value other than STATUS\_PENDING.
+A dispatch routine that calls [**IoMarkIrpPending**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending) includes at least one path in which the driver returns a value other than STATUS\_PENDING.
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -37,10 +36,4 @@ return STATUS_PENDING;
 ```
 
  
-
- 
-
-
-
-
 

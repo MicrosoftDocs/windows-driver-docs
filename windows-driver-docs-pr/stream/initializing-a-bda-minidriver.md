@@ -1,7 +1,6 @@
 ---
 title: Initializing a BDA Minidriver
 description: Initializing a BDA Minidriver
-ms.assetid: 4df2efc6-e666-48d5-9a7b-cbf724c027f0
 keywords:
 - BDA minidrivers WDK AVStream , initializing
 - initializing BDA minidrivers WDK AVStream
@@ -15,11 +14,11 @@ ms.localizationpriority: medium
 
 
 
-A BDA minidriver is initialized similarly to other AVStream minidrivers. The BDA minidriver's DriverEntry function calls the AVStream [**KsInitializeDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksinitializedriver) function to initialize the BDA minidriver's driver object. In this call, the BDA minidriver passes a pointer to a [**KSDEVICE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_descriptor) structure that specifies characteristics of the device, which can include:
+A BDA minidriver is initialized similarly to other AVStream minidrivers. The BDA minidriver's DriverEntry function calls the AVStream [**KsInitializeDriver**](/windows-hardware/drivers/ddi/ks/nf-ks-ksinitializedriver) function to initialize the BDA minidriver's driver object. In this call, the BDA minidriver passes a pointer to a [**KSDEVICE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_descriptor) structure that specifies characteristics of the device, which can include:
 
--   A pointer to a [**KSDEVICE\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_dispatch) structure that contains the dispatch table for the BDA device. At a minimum, the BDA minidriver should supply routines that create and start the device and specify these routines in the **Add** and **Start** members respectively of the KSDEVICE\_DISPATCH structure. The BDA minidriver's create routine should allocate memory for the device class and reference the pointer to the [**KSDEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice) structure for the BDA device to this device class. The BDA minidriver's start routine should get information about the device from the registry, set information about the device, and then register a group of static template structures with the BDA support library. See [Starting a BDA Minidriver](starting-a-bda-minidriver.md) for more information.
+-   A pointer to a [**KSDEVICE\_DISPATCH**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch) structure that contains the dispatch table for the BDA device. At a minimum, the BDA minidriver should supply routines that create and start the device and specify these routines in the **Add** and **Start** members respectively of the KSDEVICE\_DISPATCH structure. The BDA minidriver's create routine should allocate memory for the device class and reference the pointer to the [**KSDEVICE**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice) structure for the BDA device to this device class. The BDA minidriver's start routine should get information about the device from the registry, set information about the device, and then register a group of static template structures with the BDA support library. See [Starting a BDA Minidriver](starting-a-bda-minidriver.md) for more information.
 
--   An array of [**KSFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksfilter_descriptor) structures for the individual filter types supported by this device. This structure type describes the characteristics of a filter created by a given filter factory. You should specify members of structures of this type in this array if you create your BDA minidriver so that it does not use the BDA support library (*Bdasup.lib*) to handle your BDA minidriver's property and method sets. If you create your BDA minidriver so that it uses the BDA support library, then your BDA minidriver should instead call the [**BdaCreateFilterFactory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdacreatefilterfactory) support function to add filter factory descriptors (KSFILTER\_DESCRIPTOR structures) for your device. See [Starting a BDA Minidriver](starting-a-bda-minidriver.md) for more information.
+-   An array of [**KSFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor) structures for the individual filter types supported by this device. This structure type describes the characteristics of a filter created by a given filter factory. You should specify members of structures of this type in this array if you create your BDA minidriver so that it does not use the BDA support library (*Bdasup.lib*) to handle your BDA minidriver's property and method sets. If you create your BDA minidriver so that it uses the BDA support library, then your BDA minidriver should instead call the [**BdaCreateFilterFactory**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacreatefilterfactory) support function to add filter factory descriptors (KSFILTER\_DESCRIPTOR structures) for your device. See [Starting a BDA Minidriver](starting-a-bda-minidriver.md) for more information.
 
 The following code snippet shows examples of an array of filter descriptors, a dispatch table for the BDA device, and the descriptor for the BDA device:
 
@@ -88,9 +87,4 @@ DeviceDescriptor =
 ```
 
  
-
- 
-
-
-
 

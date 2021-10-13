@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier
 description: Static Driver Verifier
-ms.assetid: 74feeb16-387c-4796-987a-aff3fb79b556
 keywords:
 - verifying drivers WDK , Static Driver Verifier
 - driver verification WDK , Static Driver Verifier
@@ -20,9 +19,9 @@ Static Driver Verifier (also known as "StaticDV" or "SDV") is a static verificat
 
 ## Installing Static Driver Verifier
 
-Static Driver Verifier is available as part of the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) in both the full WDK experience and in the standalone Enterprise WDK.  In addition, the Visual C++ Redistributable Packages for Visual Studio are required for SDV to run. See the following:
+Static Driver Verifier is available as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md) in both the full WDK experience and in the standalone Enterprise WDK.  In addition, the Visual C++ Redistributable Packages for Visual Studio are required for SDV to run. See the following:
 
-* [Visual Studio 2019 Redistribution](https://docs.microsoft.com/visualstudio/releases/2019/redistribution)
+* [Visual Studio 2019 Redistribution](/visualstudio/releases/2019/redistribution)
 * [Visual C++ Redistributable Packages for Visual Studio 2017](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 * [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)  
 
@@ -34,7 +33,7 @@ Static Driver Verifier is integrated into Visual Studio. You can run static anal
 
 ## Static Driver Verifier Documentation
 
-* [Static Driver Verifier Known Issues](https://docs.microsoft.com/windows-hardware/drivers/develop/static-driver-verifier-known-issues): Lists latest known issues for Static Driver Verifier
+* [Static Driver Verifier Known Issues](../develop/static-driver-verifier-known-issues.md): Lists latest known issues for Static Driver Verifier
 * [Using Static Driver Verifier to Find Defects in Drivers](using-static-driver-verifier-to-find-defects-in-drivers.md): Tells you what you need to get started analyzing your driver code in the Visual Studio environment.
 * [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md): Lists the MSBuild commands to use to run SDV in a Visual Studio Command Prompt window.
 * [Introducing Static Driver Verifier](introducing-static-driver-verifier.md): Provides an overview of the static analysis tool.

@@ -1,6 +1,5 @@
 ---
 title: MB USSD Operations
-ms.assetid: 49D106BD-F938-4BF8-88EE-A4D0F0E2722A
 description: Describes the operations to send and receive messages using the Unstructured Supplementary Service Data (USSD) capabilities of an MB device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic describes the operations to send and receive messages using the Unstructured Supplementary Service Data (USSD) capabilities of an MB device.
 
-USSD support is optional and when supported is only available on GSM networks. Miniport drivers that support USSD must set the WWAN\_CTRL\_CAPS\_USSD capability flag as part of the **WwanControlCaps** member of the [**WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_device_caps) structure when processing [OID\_WWAN\_DEVICE\_CAPS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-caps) requests. If miniport drivers do not support USSD, they must not set this flag and should return WWAN\_STATUS\_NO\_DEVICE\_SUPPORT for all USSD-related OIDs.
+USSD support is optional and when supported is only available on GSM networks. Miniport drivers that support USSD must set the WWAN\_CTRL\_CAPS\_USSD capability flag as part of the **WwanControlCaps** member of the [**WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps) structure when processing [OID\_WWAN\_DEVICE\_CAPS](./oid-wwan-device-caps.md) requests. If miniport drivers do not support USSD, they must not set this flag and should return WWAN\_STATUS\_NO\_DEVICE\_SUPPORT for all USSD-related OIDs.
 
 The MB driver model supports the following USSD operations: Device initiated operations:
 
@@ -23,7 +22,7 @@ The MB driver model supports the following USSD operations: Device initiated ope
 
 -   Terminating the USSD session
 
-For more information on device initiated operations, see [OID\_WWAN\_USSD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-ussd).
+For more information on device initiated operations, see [OID\_WWAN\_USSD](./oid-wwan-ussd.md).
 
 Network initiated operations:
 
@@ -33,9 +32,9 @@ Network initiated operations:
 
 -   Termination the USSD session
 
-For more information on network initiated operations, see [**NDIS\_STATUS\_WWAN\_USSD**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ussd).
+For more information on network initiated operations, see [**NDIS\_STATUS\_WWAN\_USSD**](./ndis-status-wwan-ussd.md).
 
-The USSD protocol only allows a single USSD session at any time. For device initiated operations, the **RequestType** member of the [**WWAN\_USSD\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_ussd_request) structure indicates the purpose of the request OID:
+The USSD protocol only allows a single USSD session at any time. For device initiated operations, the **RequestType** member of the [**WWAN\_USSD\_REQUEST**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ussd_request) structure indicates the purpose of the request OID:
 
 -   **WwanUssdRequestInitiate** is used to create a new USSD session and send the provided USSD string to the network. If a USSD session already exists, the driver must fail the request with an event of type **WwanUssdEventOtherLocalClient**. A USSD string must be present. For example, the length must be between 1 and 160 bytes.
 
@@ -43,7 +42,7 @@ The USSD protocol only allows a single USSD session at any time. For device init
 
 -   **WwanUssdRequestCancel** is used to terminate the existing session. The driver must respond with an event of type **WwanUssdEventTerminated**, even if no session existed (which may happen during a concurrent release of the session from the network and the local client). The content of the USSD string must be ignored for this request; the string length is set to zero to indicate that there is no USSD string.
 
-For network initiated operations, the **EventType** member of the [**WWAN\_USSD\_EVENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_ussd_event) structure indicates the high level purpose of the indication:
+For network initiated operations, the **EventType** member of the [**WWAN\_USSD\_EVENT**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ussd_event) structure indicates the high level purpose of the indication:
 
 -   The event **WwanUssdEventNoActionRequired** is used for network initiated USSD notifications, or when no further information is needed after a mobile initiated operation. The event **WwanUssdEventActionRequired** is used for network initiated USSD requests, or when further information is needed after a mobile initiated operation. Both events require a non-empty USSD string to be present. The **SessionState** member is used to indicate if the USSD string is the first message of a USSD session; it must be set to **WwanUssdSessionStateNew** for the first message of a network initiated USSD session and to **WwanUssdSessionStateExisting** in all other cases.
 
@@ -60,10 +59,4 @@ For network initiated operations, the **EventType** member of the [**WWAN\_USSD\
 -   The event **WwanUssdEventNetworkTimeOut** is used to indicate that the session was closed due to a session timeout either by the network or locally. The driver or device is responsible for timing out an inactive USSD session after an implementation specific timeout.
 
  
-
- 
-
-
-
-
 

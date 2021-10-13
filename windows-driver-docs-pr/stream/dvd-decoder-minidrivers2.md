@@ -1,7 +1,6 @@
 ---
 title: DVD Decoder Minidrivers
 description: DVD Decoder Minidrivers
-ms.assetid: 1dec271d-47cf-4ab6-9149-7f5b9b92b189
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , DVD decoder minidrivers
 - Streaming Model WDK Windows 2000 Kernel , DVD decoder minidrivers

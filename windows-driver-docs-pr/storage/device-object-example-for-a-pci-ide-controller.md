@@ -1,7 +1,6 @@
 ---
 title: Device Object Example for a PCI IDE Controller
 description: Device Object Example for a PCI IDE Controller
-ms.assetid: 7cb97da7-1d94-42a1-af3a-9085e68c8f28
 keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The following figure shows the device objects that are created for a system using a PCI IDE controller that has two IDE disks attached to one channel and an IDE CD-ROM attached to the other.
 
-![Device objects that are created for a system using a PCI IDE controller that has two IDE disks attached to one channel and an IDE CD-ROM attached to the other](images/kg201-4.png)
+![Device objects that are created for a system using a PCI IDE controller that has two IDE disks attached to one channel and an IDE CD-ROM attached to the other.](images/kg201-4.png)
 
 Device Object Tree for CD-ROM and Disk Devices on an IDE controller
 

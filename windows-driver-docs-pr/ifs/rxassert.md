@@ -1,7 +1,6 @@
 ---
 title: RxAssert routine
 description: RxAssert sends an ASSERT string on checked builds of RDBSS to a kernel debugger if one is installed. For retail builds of RDBSS, calls to this routine will bug check.
-ms.assetid: 3ef01569-74ef-4f35-acaf-9c01f2b9d9a7
 keywords: ["RxAssert routine Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 **RxAssert** sends an ASSERT string on checked builds of RDBSS to a kernel debugger if one is installed. For retail builds of RDBSS, calls to this routine will bug check.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID RxAssert(
@@ -32,8 +30,7 @@ VOID RxAssert(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *FailedAssertion* \[in\]  
 The failed assertion.
@@ -47,20 +44,17 @@ The line number in the source file where **RxAssert** or **RtlAssert** was calle
 *Message* \[in, optional\]  
 An optional message.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 When the *rxassert.h* include file is used, Windows kernel RtlAssert calls will be redefined to call this RxAssert routine as well.
 
 On retail builds, **RxAssert** will call **KeBugCheckEx** passing in the value 0xa55a0000 ORed with the line number as BugCheckParamater1.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,18 +80,9 @@ Requirements
 ## See also
 
 
-[**ASSERT**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85))
+[**ASSERT**](/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85))
 
-[RtlAssert](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[RtlAssert]()
 
 [**RxDbgBreakPoint**](rxdbgbreakpoint.md)
-
- 
-
- 
-
-
-
-
-
 

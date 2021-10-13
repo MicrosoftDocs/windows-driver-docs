@@ -1,7 +1,6 @@
 ---
 title: CD-ROM Exclusive Access Mode
 description: CD-ROM Exclusive Access Mode
-ms.assetid: 4432f6d6-e98c-4354-a7ba-b043a624f064
 keywords:
 - CD-ROM drivers WDK storage
 - storage CD-ROM drivers WDK
@@ -25,7 +24,7 @@ Many manufacturers of CD-ROM devices provide a firmware update utility. If an ap
 
 Without the exclusive access mechanism, the only way for vendors to give these two types of applications exclusive access would be to install a custom filter driver that fails I/O requests from other applications and components, and this approach causes system instability. You should not use filter drivers to obtain exclusive access to CD-ROM devices.
 
-To use the exclusive access mechanism, applications must send an [**IOCTL\_CDROM\_EXCLUSIVE\_ACCESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_exclusive_access) request to the CD-ROM class driver at PASSIVE\_LEVEL IRQL. When the caller makes this request, the caller must provide an identification string in the **CallerName** member of [**CDROM\_EXCLUSIVE\_LOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddcdrm/ns-ntddcdrm-_cdrom_exclusive_lock). The class driver uses this string to identify the application that has exclusive access.
+To use the exclusive access mechanism, applications must send an [**IOCTL\_CDROM\_EXCLUSIVE\_ACCESS**](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_exclusive_access) request to the CD-ROM class driver at PASSIVE\_LEVEL IRQL. When the caller makes this request, the caller must provide an identification string in the **CallerName** member of [**CDROM\_EXCLUSIVE\_LOCK**](/windows-hardware/drivers/ddi/ntddcdrm/ns-ntddcdrm-_cdrom_exclusive_lock). The class driver uses this string to identify the application that has exclusive access.
 
 Applications should query for the current state of the device before attempting to lock it. If the device is already locked, the class driver returns the identification string of the current owner of the device. Before locking the device, the caller must open it in read/write access mode. Therefore, the caller must have administrator privileges or permission to open the CD-ROM device in write access mode.
 
@@ -45,13 +44,13 @@ Exclusive access mode has the following characteristics:
 
 -   The system fails requests to open the device while it is locked.
 
--   Other applications that send an [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_query_property) request to the CD-ROM class driver will receive cached information from the device while it is locked. Specifically, if the [**STORAGE\_QUERY\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ne-ntddstor-_storage_query_type) is **PropertyExistsQuery**, the IOCTL will behave the same as it does when the device is not locked. Also, if the **STORAGE\_QUERY\_TYPE** is **PropertyStandardQuery** and the [**STORAGE\_PROPERTY\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ne-ntddstor-storage_property_id) is **StorageDeviceProperty** or **StorageAdapterProperty**, the IOCTL returns information cached in the CD-ROM class driver. With other combinations of **STORAGE\_QUERY\_TYPE** and **STORAGE\_PROPERTY\_ID**, the IOCTL fails with the status value STATUS\_ACCESS\_DENIED.
+-   Other applications that send an [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) request to the CD-ROM class driver will receive cached information from the device while it is locked. Specifically, if the [**STORAGE\_QUERY\_TYPE**](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_query_type) is **PropertyExistsQuery**, the IOCTL will behave the same as it does when the device is not locked. Also, if the **STORAGE\_QUERY\_TYPE** is **PropertyStandardQuery** and the [**STORAGE\_PROPERTY\_ID**](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id) is **StorageDeviceProperty** or **StorageAdapterProperty**, the IOCTL returns information cached in the CD-ROM class driver. With other combinations of **STORAGE\_QUERY\_TYPE** and **STORAGE\_PROPERTY\_ID**, the IOCTL fails with the status value STATUS\_ACCESS\_DENIED.
 
--   Other applications that send an [**IOCTL\_CDROM\_GET\_INQUIRY\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_get_inquiry_data) request to the CD-ROM class driver receive cached information from the device while it is locked, and also when it is unlocked.
+-   Other applications that send an [**IOCTL\_CDROM\_GET\_INQUIRY\_DATA**](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_get_inquiry_data) request to the CD-ROM class driver receive cached information from the device while it is locked, and also when it is unlocked.
 
 The system removes exclusive access to a CD-ROM device when any of the following occurs:
 
--   The owner of the exclusive access lock sends an [**IOCTL\_CDROM\_EXCLUSIVE\_ACCESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_exclusive_access) request to the CD-ROM class driver with the **RequestType** member of [**CDROM\_EXCLUSIVE\_ACCESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddcdrm/ns-ntddcdrm-_cdrom_exclusive_access) set to **ExclusiveAccessUnlockDevice**.
+-   The owner of the exclusive access lock sends an [**IOCTL\_CDROM\_EXCLUSIVE\_ACCESS**](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_exclusive_access) request to the CD-ROM class driver with the **RequestType** member of [**CDROM\_EXCLUSIVE\_ACCESS**](/windows-hardware/drivers/ddi/ntddcdrm/ns-ntddcdrm-_cdrom_exclusive_access) set to **ExclusiveAccessUnlockDevice**.
 
 -   The owner of the exclusive access lock closes the device handle.
 
@@ -66,9 +65,4 @@ After removing the exclusive access lock on a device, the CD-ROM class driver ta
 -   Forces an update of the device's multimedia capabilities.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS property lists the characters (letters, digits, punctuation marks, and so on) that are valid for the WIA\_IPS\_PRINTER\_ENDORSER\_STRING values that can be configured for the Imprinter/Endorser.
-ms.assetid: 763355B8-7CA0-4B3F-87B1-BD51F24CF78C
 keywords: ["WIA_IPS_PRINTER_ENDORSER_VALID_CHARACTERS Imaging Devices"]
 topic_type:
 - apiref
@@ -33,15 +32,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 All Imprinter/Endorser items must support all characters that occur in the [**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS**](wia-ips-printer-endorser-valid-format-specifiers.md) values (if any), including the '$' character. If the Imprinter/Endorser supports the WiaImgFmt\_CSV value for [**WIA\_IPA\_TYMED**](wia-ipa-tymed.md), the ',' (comma) character must not be listed by **WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS**.
 
 This property is optional for all Imprinter/Endorser data source items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

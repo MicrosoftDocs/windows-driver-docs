@@ -1,7 +1,6 @@
 ---
 title: Conditional Compilation and the Build Environment
 description: Conditional Compilation and the Build Environment
-ms.assetid: 7879b6c6-4985-4817-a8bc-b287397df721
 keywords:
 - DBG preprocessor constant
 - debugging code WDK , conditional compilation
@@ -25,19 +24,13 @@ The value of **DBG** depends on the build configuration you choose to build your
 
 -   If you create your driver by using a release (free) build configuration, **DBG** will equal 0 (or will be undefined if neither wdm.h nor ntddk.h is included).
 
-The debugging routines [**ASSERT**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)), [**ASSERTMSG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-assertmsg), [**KdBreakPoint**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff548063(v=vs.85)), [**KdBreakPointWithStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdbreakpointwithstatus), [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprint), and [**KdPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprintex) are actually macros that are conditionally defined depending on the value of **DBG**. If it is 0, these macros are no-ops. Therefore, these macros are active only in the debug (checked) build of a driver.
+The debugging routines [**ASSERT**](/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)), [**ASSERTMSG**](/windows-hardware/drivers/ddi/wdm/nf-wdm-assertmsg), [**KdBreakPoint**](/previous-versions/windows/hardware/previsioning-framework/ff548063(v=vs.85)), [**KdBreakPointWithStatus**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kdbreakpointwithstatus), [**KdPrint**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint), and [**KdPrintEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex) are actually macros that are conditionally defined depending on the value of **DBG**. If it is 0, these macros are no-ops. Therefore, these macros are active only in the debug (checked) build of a driver.
 
 **Note**   All debugging routines beginning with the letters "Kd" have no effect in a free build of a driver, except for **KdRefreshDebuggerNotPresent**.
 
  
 
-For more information about using Visual Studio and MSBuild to create to release and debug versions of a driver, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver) and the [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md).
+For more information about using Visual Studio and MSBuild to create to release and debug versions of a driver, see [Building a Driver](../develop/building-a-driver.md) and the [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
-title: teb
+title: teb (WinDbg)
 description: The teb extension displays a formatted view of the information in the thread environment block (TEB).
-ms.assetid: 4137b54b-f784-412d-bffd-e8a71a54155e
 keywords: ["teb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,8 +35,7 @@ Exts.dll
 
 For information about thread environment blocks, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The TEB is the user-mode portion of Microsoft Windows thread control structures.
 

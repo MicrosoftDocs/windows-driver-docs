@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FCAdapterHBAAttributes WMI Class
 description: MSFC\_FCAdapterHBAAttributes WMI Class
-ms.assetid: fa0ff9c2-e7cc-4000-bd18-ade953e57dcc
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -50,15 +49,9 @@ class MSFC_FCAdapterHBAAttributes {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_FCAdapterHBAAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_fcadapterhbaattributes)
+[**MSFC\_FCAdapterHBAAttributes**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fcadapterhbaattributes)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_MULTIPLANE\_OVERLAY\_BLEND enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: f0d181a6-f9cc-4e21-a971-7192e245a5c7
+description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_BLEND enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_BLEND enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum D3DKMT_MULTIPLANE_OVERLAY_BLEND {
@@ -30,15 +28,13 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_BLEND {
 } D3DKMT_MULTIPLANE_OVERLAY_BLEND;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DKMT_MULTIPLANE_OVERLAY_BLEND_OPAQUE"></span><span id="d3dkmt_multiplane_overlay_blend_opaque"></span>**D3DKMT\_MULTIPLANE\_OVERLAY\_BLEND\_OPAQUE**
 
 <span id="D3DKMT_MULTIPLANE_OVERLAY_BLEND_ALPHABLEND"></span><span id="d3dkmt_multiplane_overlay_blend_alphablend"></span>**D3DKMT\_MULTIPLANE\_OVERLAY\_BLEND\_ALPHABLEND**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

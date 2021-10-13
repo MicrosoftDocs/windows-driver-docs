@@ -1,14 +1,13 @@
 ---
 title: Public and Private Symbols
 description: Public and Private Symbols
-ms.assetid: 61ed583d-8b97-4929-8d86-1a6353c13304
 keywords: ["symbols, public", "symbols, private", "public symbols", "private symbols", "retail symbols", "export symbols", "symbol file, full symbol file", "symbol file, stripped symbol file", "full symbol file"]
-ms.date: 05/23/2017
+ms.date: 09/30/2021
 ms.localizationpriority: medium
+ms.custom: contperf-fy22q1
 ---
 
 # Public and Private Symbols
-
 
 When a full-sized .pdb or .dbg symbol file is built by a linker, it contains two distinct collections of information: the *private symbol data* and a *public symbol table*. These collections differ in the list of items they contain and the information they store about each item.
 
@@ -32,13 +31,11 @@ The public symbol table contains fewer items:
 
 As a general rule, the public symbol table contains exactly those items that are accessible from one source file to another. Items visible in only one object file--such as **static** functions, variables that are global only within a single source file, and local variables--are not included in the public symbol table.
 
-These two collections of data also differ in what information they include for each item. The following information is typically included for each item contained in the private symbol data:
+These two collections of data also differ in what information they include for each item. The following information is typically included for each item contained in the *private* symbol data:
 
 -   Name of the item
 
 -   Address of the item in virtual memory
-
--   Frame pointer omission (FPO) records for each function
 
 -   Data type of each variable, structure, and function
 
@@ -48,15 +45,21 @@ These two collections of data also differ in what information they include for e
 
 -   Symbols associated with each line in each source file
 
-On the other hand, the public symbol table stores only the following information about each item included in it:
+-   Frame pointer omission (FPO) records for each function used to access the stack
+
+On the other hand, the *public* symbol table stores only the following information about each item included in it:
 
 -   The name of the item.
 
 -   The address of the item in the virtual memory space of its module. For a function, this is the address of its entry point.
 
 -   Frame pointer omission (FPO) records for each function.
+- 
+- May include symbol prefix/suffixes refereed to as decorations.
 
-In other words, the public symbol data can be thought of as a subset of the private symbol data in two ways: it contains a shorter list of items, and it also contains less information about each item. For example, the public symbol data does not include local variables at all. Each local variable is included only in the private symbol data, with its address, data type, and scope. Functions, on the other hand, are included both in the private symbol data and public symbol table, but while the private symbol data includes the function name, address, FPO records, input parameter names and types, and output type, the public symbol table includes just the function name, address, and FPO record.
+The public symbol data can be thought of as a subset of the private symbol data in two ways: it contains a shorter list of items, and it also contains less information about each item. For example, the public symbol data does not include local variables at all. 
+
+Each local variable is included only in the private symbol data, with its address, data type, and scope. Functions, on the other hand, are included both in the private symbol data and public symbol table, but while the private symbol data includes the function name, address, FPO records, input parameter names and types, and output type, the public symbol table includes just the function name, address, and FPO record.
 
 There is one other difference between the private symbol data and the public symbol table. Many of the items in the public symbol table have names that are *decorated* with a prefix, a suffix, or both. These decorations are added by the C compiler, the C++ compiler, and the MASM assembler. Typical prefixes include a series of underscores or the string **\_\_imp\_** (designating an imported function). Typical suffixes include one or more at signs ( **@** ) followed by addresses or other identifying strings. These decorations are used by the linker to disambiguate the symbol, since it is possible that function names or global variable names could be repeated across different modules. These decorations are an exception to the general rule that the public symbol table is a subset of the private symbol data.
 
@@ -68,11 +71,9 @@ A *stripped symbol file* is a smaller file that contains only the public symbol 
 
 ### <span id="creating_full_and_stripped_symbol_files"></span><span id="CREATING_FULL_AND_STRIPPED_SYMBOL_FILES"></span>Creating Full and Stripped Symbol Files
 
-If you build your binaries with Visual Studio, you can create either full or stripped symbol files. When building a "debug build" of a binary, Visual Studio typically will create full symbol files. When building a "retail build", Visual Studio typically creates no symbol files, but a full or stripped symbol file will be created if the proper options are set.
+If you build your binaries with Visual Studio, you can create either full or stripped symbol files. For information on building stripped symbols, see [/PDBSTRIPPED (Strip Private Symbols)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
-If you build your binaries with the Build utility, the utility will create full symbol files.
-
-Using the BinPlace tool, you can create a stripped symbol file from a full symbol file. When the most common BinPlace options are used (**-a -x -s -n**), the stripped symbol files are placed in the directory that is listed after the **-s** switch, and the full symbol files are placed in the directory that is listed after the **-n** switch. When BinPlace strips a symbol file, the stripped and full versions of the file are given identical signatures and other identifying information. This allows you to use either version for debugging.
+Using the BinPlace tool, you can create a stripped symbol file from a full symbol file. When the most common BinPlace options are used (**-a -x -s -n**), the stripped symbol files are placed in the directory that is listed after the **-s** switch, and the full symbol files are placed in the directory that is listed after the **-n** switch. When BinPlace strips a symbol file, the stripped and full versions of the file are given identical signatures and other identifying information. This allows you to use either version for debugging. For more information about BinPlace, see [BinPlace](/windows-hardware/drivers/devtest/binplace).
 
 Using the PDBCopy tool, you can create a stripped symbol file from a full symbol file by removing the private symbol data. PDBCopy can also remove a specified subset of the public symbol table. For details, see [PDBCopy](pdbcopy.md).
 
@@ -80,11 +81,17 @@ Using the SymChk tool, you can determine whether a symbol file contains private 
 
 ### <span id="viewing_public_and_private_symbols_in_the_debugger"></span><span id="VIEWING_PUBLIC_AND_PRIVATE_SYMBOLS_IN_THE_DEBUGGER"></span>Viewing Public and Private Symbols in the Debugger
 
-You can use WinDbg, KD, or CDB to view symbols. When one of these debuggers has access to a full symbol file, it has both the information listed in the private symbol data and the information listed in the public symbol table. The private symbol data is more detailed, while the public symbol data contains symbol decorations.
+You can use WinDbg, KD, or CDB to view symbols. When one of these debuggers has access to a full symbol file, it has both the information listed in the private symbol data and the information listed in the public symbol table. The public symbol data contains symbol decorations.
 
 When accessing private symbols, private symbol data is always used because these symbols are not included in the public symbol table. These symbols are never decorated.
 
-When accessing public symbols, the debugger's behavior depends on certain [symbol options](symbol-options.md):
+The [.symopt (Set Symbol Options)](-symopt--set-symbol-options-.md) command can be used to control the [symbol options](symbol-options.md) that determine how public and private symbols are used by the debugger. For example this command turns on symbols debugging information.
+
+```dbgcmd
+ .symopt+ 0x80000000
+```
+
+The following options change how public and private symbols are used in the debugger.
 
 -   When the [SYMOPT\_UNDNAME](symbol-options.md#symopt-undname) option is on, decorations are not included when the name of a public symbol is displayed. Moreover, when searching for symbols, decorations are ignored. When this option is off, decorations are displayed when displaying public symbols, and decorations are used in searches. Private symbols are never decorated in any circumstances. This option is on by default in all debuggers.
 
@@ -115,7 +122,29 @@ Here is an example in which the command [**x (Examine Symbols)**](x--examine-sym
 
 ### <span id="viewing_public_and_private_symbols_with_the_dbh_tool"></span><span id="VIEWING_PUBLIC_AND_PRIVATE_SYMBOLS_WITH_THE_DBH_TOOL"></span>Viewing Public and Private Symbols with the DBH Tool
 
-Another way to view symbols is by using the [the DBH tool](dbh.md). DBH uses the same symbol options as the debugger. Like the debugger, DBH leaves [SYMOPT\_PUBLICS\_ONLY](symbol-options.md#symopt-publics-only) and [SYMOPT\_NO\_PUBLICS](symbol-options.md#symopt-no-publics) off by default, and turns [SYMOPT\_UNDNAME](symbol-options.md#symopt-undname) and [SYMOPT\_AUTO\_PUBLICS](symbol-options.md#symopt-auto-publics) on by default. These defaults can be overridden by a command-line option or by a DBH command.
+Another way to view symbols is by using the [DBH](dbh.md) tool. Display the help options using the `/?` option.
+
+```dbgcmd
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x64>dbh /?
+dbh dbghelp shell
+usage: dbh [-n] [-c] [-d] [-?] [-??] [-p] [targetmodule] [command]
+       [-n]             display noisy symbol spew
+       [-d]             use decorated publics
+       [-p:XXXX]        attaches to process ID XXXX
+       [-s:SSSS]        set symbol path to SSSS
+       [-c]             callbacks return false
+       [targetmodule]   load symbols for specified module
+       [command]        execute command and exit
+       [-?]             display these usage instructions
+       [-??]            display detailed usage instructions
+```
+
+Use a tool such as Tlist to list process IDs and the -p option to attach to an existing process.
+
+```dbgcmd
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x64>dbh -p:4308
+```
+DBH uses the same symbol options as the debugger. Like the debugger, DBH leaves [SYMOPT\_PUBLICS\_ONLY](symbol-options.md#symopt-publics-only) and [SYMOPT\_NO\_PUBLICS](symbol-options.md#symopt-no-publics) off by default, and turns [SYMOPT\_UNDNAME](symbol-options.md#symopt-undname) and [SYMOPT\_AUTO\_PUBLICS](symbol-options.md#symopt-auto-publics) on by default. These defaults can be overridden by a command-line option or by a DBH command.
 
 Here is an example in which the DBH command **addr 414fe0** is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the function **fgets**. Next, the command symopt +4000 is used, which causes DBH to ignore the private symbol data. When the **addr 414fe0** is then run again, the public symbol table is used; this time there is no size and data type information for the function **fgets**. Finally, the command symopt -2 is used, which causes DBH to include decorations. When the **addr 414fe0** is run this final time, the decorated version of the function name, **\_fgets**, is shown.
 
@@ -176,11 +205,6 @@ modbase :   400000
   index : 7f 
 ```
 
- 
+## Additional Information
 
- 
-
-
-
-
-
+For additional information about symbols, see [Symbol Syntax and Symbol Matching](symbol-syntax-and-symbol-matching.md), [Symbol Options](symbol-options.md), [Symbol Status Abbreviations](symbol-status-abbreviations.md) and [Deferred Symbol Loading](deferred-symbol-loading.md).

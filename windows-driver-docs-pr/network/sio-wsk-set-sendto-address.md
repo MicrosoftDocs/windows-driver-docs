@@ -1,7 +1,6 @@
 ---
 title: SIO_WSK_SET_SENDTO_ADDRESS
 description: SIO_WSK_SET_SENDTO_ADDRESS
-ms.assetid: 2dd149d2-adc6-4e03-92de-ed76aa048886
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_SET_SENDTO_ADDRESS Network Drivers Starting with Windows Vista
@@ -15,11 +14,11 @@ The SIO\_WSK\_SET\_SENDTO\_ADDRESS socket I/O control operation allows a WSK app
 
 If a WSK application sets a fixed destination transport address for a datagram socket, all datagrams that are sent over the socket are sent to the fixed destination transport address. However, datagrams that are received on the socket will be accepted from any transport address.
 
-A WSK application can override a fixed destination transport address when it sends a datagram over the socket by specifying an alternative remote transport address in the *RemoteAddress* parameter when calling the [**WskSendTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_send_to) function. In this situation, the datagram is sent to the alternative remote transport address instead of the fixed destination transport address.
+A WSK application can override a fixed destination transport address when it sends a datagram over the socket by specifying an alternative remote transport address in the *RemoteAddress* parameter when calling the [**WskSendTo**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_to) function. In this situation, the datagram is sent to the alternative remote transport address instead of the fixed destination transport address.
 
 If a WSK application uses this socket I/O control operation to specify a fixed destination transport address, it must do so after the datagram socket has been bound to a local transport address.
 
-To set a fixed destination transport address for a datagram socket, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set a fixed destination transport address for a datagram socket, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -122,8 +121,7 @@ To clear a fixed destination transport address for a datagram socket, a WSK appl
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or clear a fixed destination transport address for a datagram socket.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -143,9 +141,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

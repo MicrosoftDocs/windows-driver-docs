@@ -1,7 +1,6 @@
 ---
 title: OID_NIC_SWITCH_VPORT_PARAMETERS
 description: An overlying driver can obtain the parameters for a virtual port (VPort) on a NIC switch that has been created on a network adapter that supports single root I/O virtualization (SR-IOV).
-ms.assetid: B22C760E-F2B0-4774-A532-4044C679CD64
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_VPORT_PARAMETERS Network Drivers Starting with Windows Vista
@@ -15,44 +14,43 @@ An overlying driver can obtain the parameters for a virtual port (VPort) on a NI
 
 Overlying drivers issue an OID set request of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS to set the configuration parameters of a specified VPort that is attached to the network adapter's NIC switch. These OID set requests are issued to the miniport driver of the network adapter's PCI Express (PCIe) Physical Function (PF). These OID set requests are required for PF miniport drivers that support the single root I/O virtualization (SR-IOV) interface.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure.
 
-The overlying driver specifies the VPort for the OID method or set request by setting the **VPortId** member of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure to the identifier associated with the VPort. The overlying driver obtains the VPort identifier through one of the following ways:
+The overlying driver specifies the VPort for the OID method or set request by setting the **VPortId** member of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure to the identifier associated with the VPort. The overlying driver obtains the VPort identifier through one of the following ways:
 
 -   From a previous OID method request of [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md).
 
 -   From a previous OID method request of [OID\_NIC\_SWITCH\_ENUM\_VPORTS](oid-nic-switch-enum-vports.md).
 
-Remarks
--------
+## Remarks
 
 OID\_NIC\_SWITCH\_VPORT\_PARAMETERS can be used in either [OID method requests](#oid-method-requests) or [OID set requests](#oid-set-requests).
 
 ### <a href="" id="oid-method-requests"></a>Handling OID Method Requests of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS
 
-Overlying drivers issue an OID method request of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS to query the current configuration parameters of a VPort that is attached to the network adapter's NIC switch. Overlying drivers specify the VPort to query by setting the **VPortId** member of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure to the VPort identifier.
+Overlying drivers issue an OID method request of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS to query the current configuration parameters of a VPort that is attached to the network adapter's NIC switch. Overlying drivers specify the VPort to query by setting the **VPortId** member of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure to the VPort identifier.
 
 NDIS handles the OID method request of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS for miniport drivers. NDIS returns information that it obtained from previous OID requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md) and [OID\_NIC\_SWITCH\_ENUM\_VPORTS](oid-nic-switch-enum-vports.md).
 
-After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure. This structure contains the configuration parameters for the specified switch.
+After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure. This structure contains the configuration parameters for the specified switch.
 
-For more information, see [Querying the Parameters of a Virtual Port](https://docs.microsoft.com/windows-hardware/drivers/network/querying-the-parameters-of-a-virtual-port).
+For more information, see [Querying the Parameters of a Virtual Port](./querying-the-parameters-of-a-virtual-port.md).
 
 ### <a href="" id="oid-set-requests"></a>Handling OID Set Requests of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS
 
 Overlying drivers issue an OID set request of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS to change the current configuration parameters of a VPort that is attached to a network adapter's NIC switch. This OID request can be used to update the parameters for default as well as nondefault VPorts.
 
-Only a limited subset of configuration parameters for a VPort can be changed. The overlying driver specifies the parameter to change by setting the following members of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure:
+Only a limited subset of configuration parameters for a VPort can be changed. The overlying driver specifies the parameter to change by setting the following members of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure:
 
 1.  The **VPortId** member is set to the identifier of the VPort whose parameters will be changed.
 
-2.  The appropriate NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS\_*Xxx*\_CHANGED flags are set in the **Flags** member. Members of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure can only be changed if a corresponding NDIS\_NIC\_SWITCH\_PARAMETERS\_*Xxx*\_CHANGED flag is defined in Ntddndis.h.
+2.  The appropriate NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS\_*Xxx*\_CHANGED flags are set in the **Flags** member. Members of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure can only be changed if a corresponding NDIS\_NIC\_SWITCH\_PARAMETERS\_*Xxx*\_CHANGED flag is defined in Ntddndis.h.
 
-3.  The corresponding members of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure are set with the VPort configuration parameters that are to be changed.
+3.  The corresponding members of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure are set with the VPort configuration parameters that are to be changed.
 
-After the PF miniport driver receives the OID set request of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS, the driver configures the hardware with the configuration parameters. The driver can only change those configuration parameters identified by NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS\_*Xxx*\_CHANGED flags in the **Flags** member of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure.
+After the PF miniport driver receives the OID set request of OID\_NIC\_SWITCH\_VPORT\_PARAMETERS, the driver configures the hardware with the configuration parameters. The driver can only change those configuration parameters identified by NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS\_*Xxx*\_CHANGED flags in the **Flags** member of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure.
 
-For more information, see [Setting the Parameters of a Virtual Port](https://docs.microsoft.com/windows-hardware/drivers/network/setting-the-parameters-of-a-virtual-port).
+For more information, see [Setting the Parameters of a Virtual Port](./setting-the-parameters-of-a-virtual-port.md).
 
 ### Return Status Codes
 
@@ -72,7 +70,7 @@ NDIS or the PF miniport driver returns the following status code for set or meth
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_SUCCESS</p></td>
-<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_CAPABILITIES&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities)"><strong>NDIS_NIC_SWITCH_CAPABILITIES</strong></a> structure.</p></td>
+<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_CAPABILITIES&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities)"><strong>NDIS_NIC_SWITCH_CAPABILITIES</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_NOT_SUPPORTED</p></td>
@@ -80,11 +78,11 @@ NDIS or the PF miniport driver returns the following status code for set or meth
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VPORT_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters)"><strong>NDIS_NIC_SWITCH_VPORT_PARAMETERS</strong></a> structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VPORT_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters)"><strong>NDIS_NIC_SWITCH_VPORT_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS or the PF miniport driver sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member (for OID method requests) or <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member (for OID set requests) in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS or the PF miniport driver sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member (for OID method requests) or <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member (for OID set requests) in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -95,8 +93,7 @@ NDIS or the PF miniport driver returns the following status code for set or meth
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -119,18 +116,11 @@ Requirements
 
 
 ****
-[**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters)
+[**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters)
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md)
 
 [OID\_NIC\_SWITCH\_ENUM\_VPORTS](oid-nic-switch-enum-vports.md)
-
- 
-
- 
-
-
-
 

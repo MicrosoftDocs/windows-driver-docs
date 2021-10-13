@@ -1,34 +1,28 @@
 ---
 title: COM Interfaces
 description: The following COM interfaces are defined in headers included in the WDK.Important  Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see COM Fundamentals. .
-ms.assetid: 8443D16A-ACE5-4A34-9FB7-CBACA7230116
-ms.date: 11/28/2017
+ms.date: 10/08/2021
 ms.localizationpriority: medium
 ---
 
 # COM Interfaces
 
-
 The following COM interfaces are defined in headers included in the WDK.
 
-**Important**  Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see [COM Fundamentals](https://docs.microsoft.com/windows/desktop/com/com-fundamentals).
+> [!IMPORTANT]
+> Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see [COM Fundamentals](/windows/desktop/com/com-fundamentals).
 
- 
-
-## <span id="UNKNOWN.H_"></span>unknown.h
-
+## unknown.h
 
 PFNCREATEINSTANCE
 
-## <span id="PUNKNOWN.H"></span>punknown.h
-
+## punknown.h
 
 PFNCREATEINSTANCE
 
 PUNKNOWN
 
-## <span id="STDUNK.H"></span>stdunk.h
-
+## stdunk.h
 
 CUnknown
 
@@ -43,12 +37,3 @@ INonDelegatingUnknown::NonDelegatingQueryInterface
 INonDelegatingUnknown::NonDelegatingRelease
 
 PNONDELEGATINGUNKNOWN
-
- 
-
- 
-
-
-
-
-

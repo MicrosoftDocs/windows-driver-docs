@@ -1,5 +1,4 @@
 ---
-ms.assetid: 176A3794-E9E9-46C3-B242-422843436D2A
 title: Building Drivers for Different Versions of Windows
 description: If you are writing drivers for different versions of Windows, the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit (WDK) 8.1 or WDK 8, Visual Studio, and MSBuild.
 ms.date: 04/20/2017
@@ -8,7 +7,7 @@ ms.localizationpriority: medium
 
 # Building Drivers for Different Versions of Windows
 
-If you are [writing drivers for different versions of Windows](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/platforms-and-driver-versions), the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit (WDK) 8.1 or WDK 8, Visual Studio, and MSBuild.
+If you are [writing drivers for different versions of Windows](../gettingstarted/platforms-and-driver-versions.md), the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit (WDK) 8.1 or WDK 8, Visual Studio, and MSBuild.
 
 ## <span id="Guidelines_that_apply_to_building_both_user-mode_and_kernel-mode_drivers"></span><span id="guidelines_that_apply_to_building_both_user-mode_and_kernel-mode_drivers"></span><span id="GUIDELINES_THAT_APPLY_TO_BUILDING_BOTH_USER-MODE_AND_KERNEL-MODE_DRIVERS"></span>Guidelines that apply to building both user-mode and kernel-mode drivers
 
@@ -22,7 +21,7 @@ If you are [writing drivers for different versions of Windows](https://docs.micr
 
 -   If you want your kernel-mode driver to run on multiple versions of Windows and dynamically determine the features that are available to the driver, build the driver using the build configuration for the most recent version of the operating system. For example, if you want your driver to support all versions of Windows starting with Windows 7, but to use certain features that were first available in Windows 8.1 when your driver is running on Windows 8.1 or later versions of the operating system, specify Windows 8.1 (**Win8.1**) as the target configuration.
 
--   Use the [**RtlIsNtDdiVersionAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlisntddiversionavailable) and [**RtlIsServicePackVersionInstalled**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlisservicepackversioninstalled) functions to determine the version of Windows that is available to your driver at run time. For more information, see [Writing drivers for different versions of Windows](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/platforms-and-driver-versions).
+-   Use the [**RtlIsNtDdiVersionAvailable**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisntddiversionavailable) and [**RtlIsServicePackVersionInstalled**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisservicepackversioninstalled) functions to determine the version of Windows that is available to your driver at run time. For more information, see [Writing drivers for different versions of Windows](../gettingstarted/platforms-and-driver-versions.md).
 -   Create prototypes for pointers to functions that your driver must call conditionally.
 -   If you have a WDM driver, or a non-KMDF kernel-mode driver, and you are targeting Windows 8.1 or Windows 8 but also want to run on earlier versions of Windows, you need to override the linker **$(KernelBufferOverflowLib)** option. When you select Windows 8 or Windows 8.1 configurations, the driver is linked with BufferOverflowFastFailK.lib, which is not available in earlier Windows versions. For Windows 7 and Vista, you must link with BufferOverflowK.lib instead.
 
@@ -38,7 +37,7 @@ If you are [writing drivers for different versions of Windows](https://docs.micr
 
     Using Notepad, or another text editor, open the driver project file (\*.vcxproj). In the project file, locate the **&lt;PropertyGroup&gt;** for the configurations your driver supports, and add the following line to override the default linker option:
 
-    <span codelanguage="XML"></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -59,7 +58,7 @@ If you are [writing drivers for different versions of Windows](https://docs.micr
 
     For example, if your driver supports Windows 8.1 and Windows 8 debug and release builds, those configuration sections would look like the following:
 
-    <span codelanguage="XML"></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -117,14 +116,7 @@ If you are [writing drivers for different versions of Windows](https://docs.micr
 ## <span id="related_topics"></span>Related topics
 
 
-* [Writing drivers for different versions of Windows](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/platforms-and-driver-versions)
+* [Writing drivers for different versions of Windows](../gettingstarted/platforms-and-driver-versions.md)
 * [Building a Driver](building-a-driver.md)
  
-
- 
-
-
-
-
-
 

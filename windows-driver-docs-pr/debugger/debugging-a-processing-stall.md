@@ -1,7 +1,6 @@
 ---
 title: Debugging a Processing Stall
 description: Debugging a Processing Stall
-ms.assetid: 9dff37ed-4843-4e85-8ab3-6a0a37a58c23
 keywords: ["kernel streaming debugging, video stream stall, processing stall"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -77,13 +76,7 @@ Because the gate count is one, the And gate is open. In this case, investigate t
 
 -   The process dispatch incorrectly returned STATUS\_PENDING.
 
--   The data availability case is missing a [KsPinAttemptProcessing](https://go.microsoft.com/fwlink/p/?linkid=56545) call.
+-   The data availability case is missing a [KsPinAttemptProcessing](/windows-hardware/drivers/ddi/ks/nf-ks-kspinattemptprocessing) call.
 
  
-
- 
-
-
-
-
 

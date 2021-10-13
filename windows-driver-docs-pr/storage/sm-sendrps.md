@@ -1,7 +1,6 @@
 ---
 title: SM\_SendRPS function
 description: The SM\_SendRPS WMI method sends a read port status block (RPS) request to the indicated port or domain controller.
-ms.assetid: a64983ef-c665-43db-ad29-0a6f14421ab8
 keywords: ["SM_SendRPS function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_SendRPS WMI method sends a read port status block (RPS) request to the indicated port or domain controller.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendRPS(
@@ -38,8 +36,7 @@ void SM_SendRPS(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN*   
 A worldwide name (WWN) for the local port through which the RPS command is sent. This information is delivered to the miniport driver in the PortWWN member of a SM\_SendRPS\_IN structure.
@@ -71,18 +68,15 @@ The size, in bytes, of the data that was actually retrieved. The miniport driver
 *RespBuffer*   
 The results of the RPS command. The miniport driver returns this information in the RespBuffer member of a SM\_SendRPS\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -106,14 +100,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendRPS\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_sendrps_out)
+[**SM\_SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrps_out)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: SendRNID function
 description: The SendRNID WMI method sends a request node identification data (RNID) command to the indicated port.
-ms.assetid: 70c9655c-aaa8-45bb-ae5b-7428d9cdd4b2
 keywords: ["SendRNID function Storage Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.date: 10/17/2018
 
 The **SendRNID** WMI method sends a request node identification data (RNID) command to the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SendRNID(
@@ -34,36 +32,32 @@ void SendRNID(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *wwn*   
-A worldwide name for the port to which the RNID command is sent. This information is delivered to the miniport driver in the **wwn** member of a [**SendRNID\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrnid_in) structure.
+A worldwide name for the port to which the RNID command is sent. This information is delivered to the miniport driver in the **wwn** member of a [**SendRNID\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrnid_in) structure.
 
 *wwntype*   
 Deprecated. Do not use.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendRNID\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrnid_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendRNID\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrnid_out) structure.
 
 *ResponseBufferCount*   
-The size in bytes of the results of the RNID command. The miniport driver returns this information in the **ResponseBufferCount** member of a [**SendRNID\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrnid_out) structure.
+The size in bytes of the results of the RNID command. The miniport driver returns this information in the **ResponseBufferCount** member of a [**SendRNID\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrnid_out) structure.
 
 *ResponseBuffer*   
-The results of the RNID command. The miniport driver returns this information in the **ResponseBuffer** member of a [**SendRNID\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrnid_out) structure.
+The results of the RNID command. The miniport driver returns this information in the **ResponseBuffer** member of a [**SendRNID\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrnid_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,16 +85,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SendRNID\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrnid_in)
+[**SendRNID\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrnid_in)
 
-[**SendRNID\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrnid_out)
-
- 
+[**SendRNID\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrnid_out)
 
  
-
-
-
-
-
 

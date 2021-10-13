@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS
 description: The KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS property is used to retrieve the number of frequency bands in the equalization table. This is a get-only property of a channel in an EQ node (KSNODETYPE\_EQUALIZER).
-ms.assetid: b7bb9f05-0b27-4b41-aa38-efb87fc1beee
 keywords: ["KSPROPERTY_AUDIO_NUM_EQ_BANDS Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS property is used to retrieve the number of
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -61,13 +60,11 @@ The property value (operation data) is of type ULONG and specifies the number of
 
 A KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used in conjunction with the [**KSPROPERTY\_AUDIO\_EQ\_BANDS**](ksproperty-audio-eq-bands.md) and [**KSPROPERTY\_AUDIO\_EQ\_LEVEL**](ksproperty-audio-eq-level.md) properties to determine the lengths of the arrays that contain the values for those properties.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,20 +82,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
+[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
 
 [**KSNODETYPE\_EQUALIZER**](ksnodetype-equalizer.md)
 
 [**KSPROPERTY\_AUDIO\_EQ\_BANDS**](ksproperty-audio-eq-bands.md)
 
 [**KSPROPERTY\_AUDIO\_EQ\_LEVEL**](ksproperty-audio-eq-level.md)
-
- 
-
- 
-
-
-
-
-
 

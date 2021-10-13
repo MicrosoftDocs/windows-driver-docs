@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT indication to notify the MB Service of device service changes.NDIS_WWAN_DEVICE_SERVICE_EVENT structure.
-ms.assetid: 2414F63D-756F-4057-974C-A363CEB6399B
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT Network Drivers Starting with Windows Vista
@@ -15,10 +14,9 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_EVENT indication t
 
 Miniport drivers can only use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_EVENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_event) structure.
+This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_EVENT**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_event) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -40,12 +38,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_EVENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_event)
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_EVENT**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_event)
 
  
-
- 
-
-
-
 

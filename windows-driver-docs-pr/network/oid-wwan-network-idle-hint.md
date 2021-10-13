@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_NETWORK_IDLE_HINT
 description: OID_WWAN_NETWORK_IDLE_HINT sends a hint to the network interface regarding whether data is expected to be active or idle on the interface.
-ms.assetid: 1FE758C1-543A-45B4-A377-336A1307689F
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_NETWORK_IDLE_HINT Network Drivers Starting with Windows Vista
@@ -15,10 +14,9 @@ OID\_WWAN\_NETWORK\_IDLE\_HINT sends a hint to the network interface regarding w
 
 Query requests are not supported.
 
-Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later completing the request with the [**NDIS\_WWAN\_NETWORK\_IDLE\_HINT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_network_idle_hint) structure that indicates the network idle hint.
+Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later completing the request with the [**NDIS\_WWAN\_NETWORK\_IDLE\_HINT**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_network_idle_hint) structure that indicates the network idle hint.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -40,12 +38,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_NETWORK\_IDLE\_HINT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_network_idle_hint)
+[**NDIS\_WWAN\_NETWORK\_IDLE\_HINT**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_network_idle_hint)
 
  
-
- 
-
-
-
 

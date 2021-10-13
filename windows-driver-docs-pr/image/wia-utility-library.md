@@ -1,7 +1,6 @@
 ---
 title: WIA Utility Library
 description: WIA Utility Library
-ms.assetid: 333d7ad3-9bab-401e-a1d9-c8a5b241bfef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

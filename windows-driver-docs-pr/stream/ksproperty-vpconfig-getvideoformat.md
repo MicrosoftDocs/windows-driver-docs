@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT
 description: The KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT property retrieves an array of supported pixel formats.
-ms.assetid: 74cc8cbc-cd81-43e1-ba15-3105a4c70808
 keywords: ["KSPROPERTY_VPCONFIG_GETVIDEOFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT property retrieves an array of supporte
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat" data-raw-source="[&lt;strong&gt;DDPIXELFORMAT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat)"><strong>DDPIXELFORMAT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat" data-raw-source="[&lt;strong&gt;DDPIXELFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat)"><strong>DDPIXELFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT property retrieves an array of supporte
 
 The property value (operation data) is a DDPIXELFORMAT structure that describes the pixel format of the video port.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,16 +74,6 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat)
-
- 
-
- 
-
-
-
-
-
-
+[**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat)

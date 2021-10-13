@@ -1,14 +1,13 @@
 ---
 title: TrustedCertificate (MobileBroadbandInfo)
 description: TrustedCertificate (MobileBroadbandInfo)
-ms.assetid: d22a488d-445e-4011-b881-f2cf49aa4049
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # TrustedCertificate (MobileBroadbandInfo)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The TrustedCertificate element specifies the Subject Name and Issuer name of a trusted certificate.
 

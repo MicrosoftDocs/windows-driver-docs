@@ -1,18 +1,15 @@
 ---
 title: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
-description: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
-ms.assetid: 1151643e-8b22-4034-b043-ac4d44c01082
-ms.date: 04/20/2017
+description: This structure defines the completion token used by EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery.
+ms.date: 08/20/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN
+# EFI_BATTERY_CHARGING_COMPLETION_TOKEN
 
-
-This structure defines the completion token used by [EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md).
+This structure defines the completion token used by [EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md).
 
 ## Syntax
-
 
 ```cpp
 typedef struct _EFI_BATTERY_CHARGING_COMPLETION_TOKEN {
@@ -23,25 +20,22 @@ typedef struct _EFI_BATTERY_CHARGING_COMPLETION_TOKEN {
 
 ## Members
 
+**Event**  
+The event to signal after charge request is finished. The type of event must be EVT_NOTIFY_SIGNAL.
 
-<a href="" id="event"></a>**Event**  
-The event to signal after charge request is finished. The type of event must be EVT\_NOTIFY\_SIGNAL.
-
-<a href="" id="status"></a>**Status**  
+**Status**  
 The result of the completed operation.
 
 ## Remarks
 
-
-EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN is returned in the *CompletionToken* parameter of [EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md).
+EFI_BATTERY_CHARGING_COMPLETION_TOKEN is returned in the *CompletionToken* parameter of [EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md).
 
 ## Requirements
-
 
 **Header:** User generated
 
 ## Related topics
 
-[EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  
+[EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  
 
-[EFI\_BATTERY\_CHARGING\_STATUS](efi-battery-charging-status.md)  
+[EFI_BATTERY_CHARGING_STATUS](efi-battery-charging-status.md)  

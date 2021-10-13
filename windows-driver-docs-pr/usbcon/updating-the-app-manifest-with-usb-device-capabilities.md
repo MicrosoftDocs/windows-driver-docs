@@ -1,5 +1,5 @@
 ---
-Description: This topic describes the device capabilities that are required for a Windows app that uses the Windows.Devices.Usb namespace.
+description: This topic describes the device capabilities that are required for a Windows app that uses the Windows.Devices.Usb namespace.
 title: How to add USB device capabilities to the app manifest
 ms.date: 01/07/2019
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 -   You must update Package.appxmanifest with USB device capabilities.
 -   The device class must be one of the supported classes.
 
-This topic describes the device capabilities that are required for a Windows app that uses the [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb) namespace.
+This topic describes the device capabilities that are required for a Windows app that uses the [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) namespace.
 
 ## USB device capability usage
 
 
-Your USB app must include certain device capabilities in its [App package manifest](https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest) to specify key information about the device. Here are the required elements in hierarchical order:
+Your USB app must include certain device capabilities in its [App package manifest](/uwp/schemas/appxpackage/appx-package-manifest) to specify key information about the device. Here are the required elements in hierarchical order:
 
-[**&lt;DeviceCapability&gt;**](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability): The **Name** attribute must be "usb".
+[**&lt;DeviceCapability&gt;**](/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability): The **Name** attribute must be "usb".
 
 **&lt;Device&gt;**: The **Id** attribute must specify the vendor/product Id or can be "any" to allow access to any device that matches the function type.
 
@@ -96,7 +96,7 @@ Here are some examples for defining USB device capabilities:
 </thead>
 <tbody>
 <tr class="odd">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+<td><pre class="syntax"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
   &lt;Device Id="any"&gt;
     &lt;Function Type="classId:ef 01 01"/&gt;
     &lt;Function Type="name:stillImage"/&gt;
@@ -105,7 +105,7 @@ Here are some examples for defining USB device capabilities:
 <td><p>Allows the app to access any ActiveSync or StillImage interface on any device. The app is not required to specify the vendor/product identifiers because these are known class types.</p></td>
 </tr>
 <tr class="even">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+<td><pre class="syntax"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
   &lt;Device Id="vidpid:045e 930a"&gt;
     &lt;Function Type="name:vendorSpecific"/&gt;
   &lt;/Device&gt;
@@ -113,7 +113,7 @@ Here are some examples for defining USB device capabilities:
 <td><p>Allows the app to access a vendor-specific interface on the OSR USB Fx2 device.</p></td>
 </tr>
 <tr class="odd">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+<td><pre class="syntax"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
   &lt;Device Id="vidpid:045e 930a"&gt;
     &lt;Function Type="classId:ff * <em>"/&gt;
   &lt;/Device&gt;
@@ -121,7 +121,7 @@ Here are some examples for defining USB device capabilities:
 <td><p>Allows the app to access a vendor-specific interface on a different version of the OSR USB Fx2 device. Note the classId format: "ff * *". The class code is "ff" followed by a wildcard (</em>) to include any subclass and protocol code.</p></td>
 </tr>
 <tr class="even">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+<td><pre class="syntax"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
   &lt;Device Id=" vidpid:1234 5678"&gt;
     &lt;Function Type="winUsbId:"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"/&gt;
   &lt;/Device&gt;
@@ -156,7 +156,4 @@ Here are some examples for defining USB device capabilities:
 ```
 
 ## Related topics
-[UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)  
-
-
-
+[UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)

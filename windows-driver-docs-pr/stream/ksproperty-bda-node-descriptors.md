@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_DESCRIPTORS
 description: Clients use KSPROPERTY\_BDA\_NODE\_DESCRIPTORS to retrieve a list of nodes.
-ms.assetid: 53b297e6-7e31-4231-80ad-b114cf9343b4
 keywords: ["KSPROPERTY_BDA_NODE_DESCRIPTORS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_NODE\_DESCRIPTORS to retrieve a list of nodes.
 
  
 
-Remarks
--------
+## Remarks
 
 The list of nodes is an array of GUIDs for available nodes.
 
 For a list of BDA nodes that are available to create in a template topology, see [BDA Node Category GUIDs](bda-node-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,9 @@ Requirements
 ## See also
 
 
-[**BdaPropertyNodeDescriptors**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdapropertynodedescriptors)
+[**BdaPropertyNodeDescriptors**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodedescriptors)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
-
- 
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
-
-
-
-
-
 

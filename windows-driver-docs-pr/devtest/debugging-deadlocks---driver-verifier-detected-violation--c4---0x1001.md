@@ -1,7 +1,6 @@
 ---
 title: Debugging deadlocks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x1001
 description: When Driver Verifier detects a spin lock hierarchy violation, Driver Verifiergenerates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x1001.
-ms.assetid: 4C3ED1DB-5EDC-4386-B91C-CF86973EE1F6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # <span id="devtest.debugging_deadlocks_-_driver_verifier_detected_violation__c4___0x1001"></span>Debugging deadlocks - DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4): 0x1001
 
 
-When [Driver Verifier](driver-verifier.md) detects a spin lock hierarchy violation, Driver Verifiergenerates [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) with a parameter 1 value of 0x1001.
+When [Driver Verifier](driver-verifier.md) detects a spin lock hierarchy violation, Driver Verifiergenerates [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) with a parameter 1 value of 0x1001.
 
 When the Deadlock Detection option is active (Deadlock Detection is part of the Driver Verifier Standard Options), [Driver Verifier](driver-verifier.md) keeps track of each spin lock allocated and the order in which it was acquired and freed. A lock hierarchy violation means that Driver Verifier has detected a situation where, in at least one case, *LockA* is acquired and held before *LockB* is acquired, and in another, *LockB* is acquired and held before *LockA* is required.
 
@@ -30,7 +29,7 @@ When the Deadlock Detection option is active (Deadlock Detection is part of the 
 (B)reak, (I)gnore, (W)arn only, (R)emove assert?
 ```
 
-To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-deadlock)):
+To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](../debugger/-deadlock.md)):
 
 ```
 kd> !deadlock
@@ -50,7 +49,7 @@ Lock A =   97dd800c (MyTestDriver!AlphaLock+0x00000000) - Type 'Spinlock'.
 Lock B =   97dd8008 (MyTestDriver!BravoLock+0x00000000) - Type 'Spinlock'.
 ```
 
-The [**!deadlock**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-deadlock) **3** command can also be used to show more information, including the stack at the time of last acquire:
+The [**!deadlock**](../debugger/-deadlock.md) **3** command can also be used to show more information, including the stack at the time of last acquire:
 
 ```
 kd> !deadlock 3
@@ -108,7 +107,7 @@ Lock A =     97dd800c (MyTestDriver!AlphaLock+0x00000000) - Type 'Spinlock'.
     Stack:   << Current stack trace - use kb to display it >>
 ```
 
-The debugger suggests using the [**kb (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) command to display the current stack trace.
+The debugger suggests using the [**kb (Display Stack Backtrace)**](../debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the current stack trace.
 
 ```
 kd> kb
@@ -221,23 +220,13 @@ NTSTATUS DeviceControlIrpWorker(_In_ PIRP Irp,
 
 To fix this potential violation, the correct thing to do would be to ensure that whenever the driver attempts to acquire AlphaLock, it checks and makes sure BravoLock is not held. The simplest fix could be to simply release BravoLock and re-acquire it as soon as AlphaLock is acquired. But more significant code changes might be necessary if it’s vital that whatever data BravoLock is protecting does not change while waiting for AlphaLock and the re-acquisition of BravoLock.
 
-For more information about spin locks and other synchronization techniques, see [Spin Locks](https://docs.microsoft.com/windows-hardware/drivers/kernel/spin-locks).
+For more information about spin locks and other synchronization techniques, see [Spin Locks](../kernel/introduction-to-spin-locks.md).
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Spin Locks](https://docs.microsoft.com/windows-hardware/drivers/kernel/spin-locks)
+[Spin Locks](../kernel/introduction-to-spin-locks.md)
 
-[**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation)
+[**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)
 
-[**!deadlock**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-deadlock)
-
-
-
-
-
-
-
-
-
-
+[**!deadlock**](../debugger/-deadlock.md)

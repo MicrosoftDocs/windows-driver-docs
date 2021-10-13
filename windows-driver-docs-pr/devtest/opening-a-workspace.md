@@ -1,7 +1,6 @@
 ---
 title: Opening a Workspace
 description: Opening a Workspace
-ms.assetid: 9b0c68da-030c-4b9f-8e3a-7af34c6e9c83
 keywords:
 - workspaces WDK TraceView , opening
 - opening workspaces

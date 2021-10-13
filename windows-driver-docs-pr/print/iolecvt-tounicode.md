@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: e03997f6-e9b5-403e-99da-52504960cb99
 keywords: ["ToUnicode method Print Devices", "ToUnicode method Print Devices , IOleCvt interface", "IOleCvt interface Print Devices , ToUnicode method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **ToUnicode** property enables an ASP Web page to convert one Unicode string to another using a specified code page.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 [propget, id(4), helpstring("property ToUnicode")] HRESULT ToUnicode(
@@ -34,8 +32,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrString* \[in\]  
 Caller-supplied string to be converted.
@@ -46,8 +43,7 @@ Caller-supplied code page to use for the conversion. For more information, see t
 *pVal* \[out, retval\]  
 Caller-supplied pointer to a location to receive the converted Unicode string.
 
-Return value
-------------
+## Return value
 
 <table>
 <colgroup>
@@ -74,8 +70,7 @@ Return value
 
 ## VBScript Example
 
-Remarks
--------
+## Remarks
 
 Set the *lCodePage* parameter to one of the code page identifiers that are defined for the *CodePage* parameter of the **MultiByteToWideChar** function. For more information about this function, see the Windows SDK documentation.
 
@@ -91,8 +86,7 @@ Else
 End If
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

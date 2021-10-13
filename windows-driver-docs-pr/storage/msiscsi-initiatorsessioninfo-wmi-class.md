@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_InitiatorSessionInfo WMI Class
 description: MSiSCSI\_InitiatorSessionInfo WMI Class
-ms.assetid: 73053af8-80b0-4cab-8e27-c651be8f0e8c
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -42,13 +41,7 @@ class MSiSCSI_InitiatorSessionInfo {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorSessionInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_msiscsi_initiatorsessioninfo) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorSessionInfo**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_initiatorsessioninfo) data structure.
 
  
-
- 
-
-
-
-
 

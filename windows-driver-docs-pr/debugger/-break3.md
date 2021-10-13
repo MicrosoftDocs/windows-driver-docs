@@ -1,7 +1,6 @@
 ---
-title: .break
+title: .break (WinDbg)
 description: The .break token behaves like the break keyword in C.
-ms.assetid: 577e74d1-824f-424a-b30e-a82fe2d682f1
 keywords: [".break Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ The **.break** token behaves like the **break** keyword in C.
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The **.break** token can be used within any [**.for**](-for.md), [**.while**](-while.md), or [**.do**](-do.md) loop.
 

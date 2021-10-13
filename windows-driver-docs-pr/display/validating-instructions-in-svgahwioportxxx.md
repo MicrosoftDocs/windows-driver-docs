@@ -1,7 +1,6 @@
 ---
 title: Validating Instructions in SvgaHwIoPortXxx
 description: Validating Instructions in SvgaHwIoPortXxx
-ms.assetid: 70fe2acb-10ff-4182-96a5-78bff0d8f8a0
 keywords:
 - video miniport drivers WDK Windows 2000 , VGA, SvgaHwIoPortXxx functions
 - VGA WDK video miniport , SvgaHwIoPortXxx functions
@@ -20,17 +19,11 @@ As already mentioned in [VGA-Compatible Miniport Driver's HwVidFindAdapter](vga-
 
 VGA-compatible miniport drivers must ensure that full-screen MS-DOS applications do not issue instructions that cause the machine to hang. Each such miniport driver must supply *SvgaHwIoPortXxx* functions that monitor application-issued instructions to the I/O ports for the adapter sequencer registers and miscellaneous output register. Each new VGA-compatible miniport driver for an adapter with special features also must monitor and continue to validate any I/O ports to which an application might send any instruction sequence that could hang the machine.
 
-Whenever an application attempts to access the sequencer clock register, the *SvgaHwIoPortXxx* function must change the IOPM in order to trap all instructions coming in during a synchronous reset. As soon as an application sends an instruction that affects the sequencer or attempts to write to the miscellaneous output register, the *SvgaHwIoPortXxx* function should adjust the IOPM by calling [**VideoPortSetTrappedEmulatorPorts**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportsettrappedemulatorports) to disable direct access to all adapter registers.
+Whenever an application attempts to access the sequencer clock register, the *SvgaHwIoPortXxx* function must change the IOPM in order to trap all instructions coming in during a synchronous reset. As soon as an application sends an instruction that affects the sequencer or attempts to write to the miscellaneous output register, the *SvgaHwIoPortXxx* function should adjust the IOPM by calling [**VideoPortSetTrappedEmulatorPorts**](/windows-hardware/drivers/ddi/video/nf-video-videoportsettrappedemulatorports) to disable direct access to all adapter registers.
 
 The miniport driver-supplied *SvgaHwIoPortXxx* functions should buffer subsequent **IN** (or **INSB/INSW/INSD**) and/or **OUT** (or **OUTSB/OUTSW/OUTSD**) instructions in the **EmulatorAccessEntriesContext** area it set up in the VIDEO\_PORT\_CONFIG\_INFO (see [VGA-Compatible Miniport Driver's HwVidFindAdapter](vga-compatible-miniport-driver-s-hwvidfindadapter.md)) until the synchronous reset is done, or until the application either restores the miscellaneous output register or resets it to a "safe" clock.
 
-Then, the miniport driver is responsible for checking that the buffered instructions cannot hang the machine. If not, the miniport driver should process the buffered instructions, usually by calling [**VideoPortSynchronizeExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportsynchronizeexecution) with a driver-supplied [*HwVidSynchronizeExecutionCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pminiport_synchronize_routine) function. Otherwise, the miniport driver should discard the buffered instructions.
+Then, the miniport driver is responsible for checking that the buffered instructions cannot hang the machine. If not, the miniport driver should process the buffered instructions, usually by calling [**VideoPortSynchronizeExecution**](/windows-hardware/drivers/ddi/video/nf-video-videoportsynchronizeexecution) with a driver-supplied [*HwVidSynchronizeExecutionCallback*](/windows-hardware/drivers/ddi/video/nc-video-pminiport_synchronize_routine) function. Otherwise, the miniport driver should discard the buffered instructions.
 
  
-
- 
-
-
-
-
 

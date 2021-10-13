@@ -1,7 +1,6 @@
 ---
-title: C28268
+title: C28268 warning
 description: Warning C28268 The function class on the function does not match the function class on the typedef used here.
-ms.assetid: 952303b9-ad45-4f73-a31d-a227b5c573cc
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

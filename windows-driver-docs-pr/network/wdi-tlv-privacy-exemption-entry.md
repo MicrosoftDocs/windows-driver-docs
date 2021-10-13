@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PRIVACY_EXEMPTION_ENTRY
 description: WDI_TLV_PRIVACY_EXEMPTION_ENTRY is a TLV that contains a privacy exemption entry.
-ms.assetid: 086BD366-F54C-4BF4-8544-CC2AB2472EB2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PRIVACY_EXEMPTION_ENTRY Network Drivers Starting with Windows Vista
@@ -29,13 +28,12 @@ The sum (in bytes) of the sizes of all contained elements.
 | Type                                                                   | Description                                                 |
 |------------------------------------------------------------------------|-------------------------------------------------------------|
 | UINT16                                                                 | Specifies the IEEE EtherType in big-endian byte order.      |
-| [**WDI\_EXEMPTION\_ACTION\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ne-dot11wdi-_wdi_exemption_action_type) | Specifies the action type of the exemption.                 |
-| [**WDI\_EXEMPTION\_PACKET\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_exemption_packet_type) | Specifies the type of packet that the exemption applies to. |
+| [**WDI\_EXEMPTION\_ACTION\_TYPE**](/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_exemption_action_type) | Specifies the action type of the exemption.                 |
+| [**WDI\_EXEMPTION\_PACKET\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_exemption_packet_type) | Specifies the type of packet that the exemption applies to. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -59,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

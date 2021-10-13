@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: a58cc911-dc09-4847-b4b7-cf97326cd444
 keywords: ["GetTree method Print Devices", "GetTree method Print Devices , ISNMP interface", "ISNMP interface Print Devices , GetTree method"]
 topic_type:
 - apiref
@@ -25,8 +24,7 @@ ms.localizationpriority: medium
 
 The `GetTree` method enables an ASP Web page to obtain the values associated with a set of subnodes beneath a specified root SNMP OID.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT GetTree(
@@ -35,8 +33,7 @@ HRESULT GetTree(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *varTree* \[in\]  
 Caller-supplied string identifying a root SNMP OID.
@@ -44,8 +41,7 @@ Caller-supplied string identifying a root SNMP OID.
 *varValue* \[out\]  
 Caller-supplied location to receive the address of a two-dimensional array containing SNMP OID strings and associated values.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -95,8 +91,7 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 OIDValueArray = objSNMP.GetTree ("43.18.1.1.2")
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

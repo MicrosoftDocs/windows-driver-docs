@@ -1,7 +1,6 @@
 ---
 title: Calling Other Windows Filtering Platform Functions
 description: Calling Other Windows Filtering Platform Functions
-ms.assetid: dae70b4d-2be2-4db3-86cc-2e7df7d5c034
 keywords:
 - Windows Filtering Platform callout drivers WDK , calling other functions
 - callout drivers WDK Windows Filtering Platform , calling other functions
@@ -23,13 +22,7 @@ Most of the Windows Filtering Platform management functions require a handle to 
 
 [Closing a Session to the Filter Engine](closing-a-session-to-the-filter-engine.md)
 
-For a list of the other Windows Filtering Platform functions that can be called from a callout driver, see [Other Windows Filtering Platform Functions](https://docs.microsoft.com/windows-hardware/drivers/network/other-windows-filtering-platform-functions). For more information about how to use these functions, see the [Windows Filtering Platform](https://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
+For a list of the other Windows Filtering Platform functions that can be called from a callout driver, see [Other Windows Filtering Platform Functions](calling-other-windows-filtering-platform-functions.md). For more information about how to use these functions, see the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) documentation in the Microsoft Windows SDK.
 
  
-
- 
-
-
-
-
 

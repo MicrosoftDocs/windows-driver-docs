@@ -1,7 +1,6 @@
 ---
 title: Supporting Functional Power States
 description: Supporting Functional Power States
-ms.assetid: F96214C9-702D-402E-B873-5DF57C521B34
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,7 +37,7 @@ The following table summarizes framework support for different functional power 
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>When you want the power engine plug-in (PEP) to determine the idle timeout value, and your driver has only one F-state.</p>
-<p>Call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings" data-raw-source="[&lt;strong&gt;WdfDeviceAssignS0IdleSettings&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)"><strong>WdfDeviceAssignS0IdleSettings</strong></a> with <em>IdleTimeoutType</em> = <strong>SystemManagedIdleTimout</strong> or <strong>SystemManagedIdleTimoutWithHint</strong>.</p></td>
+<p>Call <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings" data-raw-source="[&lt;strong&gt;WdfDeviceAssignS0IdleSettings&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)"><strong>WdfDeviceAssignS0IdleSettings</strong></a> with <em>IdleTimeoutType</em> = <strong>SystemManagedIdleTimout</strong> or <strong>SystemManagedIdleTimoutWithHint</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="supporting-multiple-functional-power-states-for-single-component-devices.md" data-raw-source="[Single component, multiple states (F0, F1, F2…)](supporting-multiple-functional-power-states-for-single-component-devices.md)">Single component, multiple states (F0, F1, F2…)</a></p></td>
@@ -46,8 +45,8 @@ The following table summarizes framework support for different functional power 
 <td align="left"><p>Not supported</p></td>
 <td align="left"><p>When your driver has more than one F-state.</p>
 <ul>
-<li>Call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings" data-raw-source="[&lt;strong&gt;WdfDeviceWdmAssignPowerFrameworkSettings&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings)"><strong>WdfDeviceWdmAssignPowerFrameworkSettings</strong></a> to register WDM PoFx callbacks.</li>
-<li>Call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings" data-raw-source="[&lt;strong&gt;WdfDeviceAssignS0IdleSettings&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)"><strong>WdfDeviceAssignS0IdleSettings</strong></a> with <em>IdleTimeoutType</em> = <strong>SystemManagedIdleTimout</strong>.</li>
+<li>Call <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings" data-raw-source="[&lt;strong&gt;WdfDeviceWdmAssignPowerFrameworkSettings&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings)"><strong>WdfDeviceWdmAssignPowerFrameworkSettings</strong></a> to register WDM PoFx callbacks.</li>
+<li>Call <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings" data-raw-source="[&lt;strong&gt;WdfDeviceAssignS0IdleSettings&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)"><strong>WdfDeviceAssignS0IdleSettings</strong></a> with <em>IdleTimeoutType</em> = <strong>SystemManagedIdleTimout</strong>.</li>
 </ul>
 <p>In this case, KMDF handles most interactions with the PoFx.</p>
 <p>For sample code, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=617937" data-raw-source="[PoFx sample drivers](https://go.microsoft.com/fwlink/p/?LinkId=617937)">PoFx sample drivers</a>.</p></td>
@@ -64,13 +63,5 @@ The following table summarizes framework support for different functional power 
 
  
 
-Because KMDF adds minimal abstraction on top of PoFx, it is helpful to have a basic understanding of PoFx before writing your driver. Accordingly, we recommend that you read [Overview of the Power Management Framework](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-the-power-management-framework) before reading these topics.
-
- 
-
- 
-
-
-
-
+Because KMDF adds minimal abstraction on top of PoFx, it is helpful to have a basic understanding of PoFx before writing your driver. Accordingly, we recommend that you read [Overview of the Power Management Framework](../kernel/overview-of-the-power-management-framework.md) before reading these topics.
 

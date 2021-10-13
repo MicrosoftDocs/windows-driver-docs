@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_MIXER
 description: KSCATEGORY_MIXER
-ms.assetid: b17696ed-d8d6-4d02-a23b-64ebc8505afd
 keywords: ["KSCATEGORY_MIXER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_MIXER
 
 
-The KSCATEGORY_MIXER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that mixes data streams.
+The KSCATEGORY_MIXER [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that mixes data streams.
 
 <table>
 <colgroup>
@@ -45,15 +44,13 @@ The KSCATEGORY_MIXER [device interface class](https://docs.microsoft.com/windows
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_MIXER to indicate to the operating system that the devices support the KSCATEGORY_MIXER functional category.
 
-For more information about this functional category and other functional categories, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories).
+For more information about this functional category and other functional categories, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -71,14 +68,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md)
 
  
-
- 
-
-
-
-
-
 

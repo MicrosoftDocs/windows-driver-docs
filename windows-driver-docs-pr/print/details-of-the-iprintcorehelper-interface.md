@@ -1,7 +1,6 @@
 ---
 title: Details of the IPrintCoreHelper Interface
 description: Details of the IPrintCoreHelper Interface
-ms.assetid: df736ca2-425e-4fc8-bdcb-bdbd5caa3e22
 keywords:
 - IPrintCoreHelper
 ms.date: 04/20/2017
@@ -15,7 +14,7 @@ The **IPrintCoreHelper** interface is roughly based on the Pscript5 UI replaceme
 
 -   The **IPrintCoreHelper** interface does not have a **QuerySimulatedCapabilities** method. Instead, the **IPrintCoreHelper** interface maps simulated features to the regular list of features and options in a well-defined and recognizable way.
 
--   In the **IPrintCoreHelper** interface, the caller is asked to pass in a [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure instead of an [**OEMUIOBJ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/ns-printoem-_oemuiobj) structure.
+-   In the **IPrintCoreHelper** interface, the caller is asked to pass in a [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure instead of an [**OEMUIOBJ**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemuiobj) structure.
 
 If you use the **IPrintCoreHelper** interface or the interfaces that inherit from it, you should consider the following points:
 
@@ -32,9 +31,4 @@ This section provides the following topics:
 [Details of the IPrintCoreHelperPS Interface](details-of-the-iprintcorehelperps-interface.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Supporting System Wake-Up
 description: Supporting System Wake-Up
-ms.assetid: 519dcd1a-9975-48b1-a032-04348b903ac5
 keywords:
 - system wake-up WDK KMDF
 - power management WDK KMDF , wake-up capabilities
@@ -21,32 +20,26 @@ ms.localizationpriority: medium
 
 While the system is in a low-power state, some devices can detect an external event, such as an incoming network packet, and then wake the system. For example, if a PCI device has a system wakeup capability, as indicated in the device's Power Management Capabilities (PMC) register, it wakes the system by raising the Power Management Event (PME) signal on the PCI bus.
 
-If your device can wake the system from a system-wide low-power state, the [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function in the [power policy owner](power-policy-ownership.md) must perform the following two steps:
+If your device can wake the system from a system-wide low-power state, the [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function in the [power policy owner](power-policy-ownership.md) must perform the following two steps:
 
-1.  Call [**WdfDeviceAssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings) to specify:
+1.  Call [**WdfDeviceAssignSxWakeSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings) to specify:
 
     -   The low-power state that the device will enter
     -   Whether users can control the device's idle settings
     -   Whether the device's wake capability is enabled or disabled
 
-    For more information about these settings, see the [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_wake_settings) structure.
+    For more information about these settings, see the [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_wake_settings) structure.
 
-2.  Call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register the following event callback functions, if you need them for your device:
-    -   [*EvtDeviceArmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) or [*EvtDeviceArmWakeFromSxWithReason*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx_with_reason), which enable the device hardware to respond to an external wake-up event.
-    -   [*EvtDeviceDisarmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx), which disables the device's ability to respond to an external wake-up event.
-    -   [*EvtDeviceWakeFromSxTriggered*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_wake_from_sx_triggered), which informs the driver that the bus detected a wake signal.
+2.  Call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register the following event callback functions, if you need them for your device:
+    -   [*EvtDeviceArmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) or [*EvtDeviceArmWakeFromSxWithReason*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx_with_reason), which enable the device hardware to respond to an external wake-up event.
+    -   [*EvtDeviceDisarmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx), which disables the device's ability to respond to an external wake-up event.
+    -   [*EvtDeviceWakeFromSxTriggered*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_wake_from_sx_triggered), which informs the driver that the bus detected a wake signal.
 
-Bus drivers also participate in waking up the system. The driver for the device's bus typically provides [*EvtDeviceEnableWakeAtBus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfpdo/nc-wdfpdo-evt_wdf_device_enable_wake_at_bus) and [*EvtDeviceDisableWakeAtBus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfpdo/nc-wdfpdo-evt_wdf_device_disable_wake_at_bus) callback functions. These functions do whatever is necessary on the bus adapter to enable and disable a device's ability to wake from a low-power state.
+Bus drivers also participate in waking up the system. The driver for the device's bus typically provides [*EvtDeviceEnableWakeAtBus*](/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_enable_wake_at_bus) and [*EvtDeviceDisableWakeAtBus*](/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_disable_wake_at_bus) callback functions. These functions do whatever is necessary on the bus adapter to enable and disable a device's ability to wake from a low-power state.
 
-When a bus driver determines that a device has triggered a wake signal, it must call [**WdfDeviceIndicateWakeStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceindicatewakestatus) to inform the framework that the device's power should be restored. The framework then passes this information to the rest of the drivers in the driver stack.
+When a bus driver determines that a device has triggered a wake signal, it must call [**WdfDeviceIndicateWakeStatus**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceindicatewakestatus) to inform the framework that the device's power should be restored. The framework then passes this information to the rest of the drivers in the driver stack.
 
 For information about registry entries that control a device's wake capabilities, see [User Control of Device Idle and Wake Behavior](user-control-of-device-idle-and-wake-behavior.md).
 
  
-
- 
-
-
-
-
 

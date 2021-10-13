@@ -1,7 +1,6 @@
 ---
 title: Retrieving the Contents of a IEEE 1394 Node's Configuration ROM
 description: Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver, that is implemented by using the kernel-mode driver framework (KMDF).
-ms.assetid: AC327938-A813-4665-8E2E-43BEE11D4AA9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,9 +8,9 @@ ms.localizationpriority: medium
 # Retrieving the Contents of a IEEE 1394 Node's Configuration ROM
 
 
-Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver, that is implemented by using the kernel-mode driver framework (KMDF). The 1394ohci.sys bus driver replaces the legacy IEEE bus driver in port/miniport configuration-- 1394bus.sys and ochi1394.sys. It is backward compatible with the legacy 1394 bus driver. For information about some known differences in behavior between the new and the legacy 1394 bus driver, see [IEEE 1394 Bus Driver in Windows 7](https://docs.microsoft.com/windows-hardware/drivers/ieee/IEEE-1394-Bus-Driver-in-Windows-7).
+Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver, that is implemented by using the kernel-mode driver framework (KMDF). The 1394ohci.sys bus driver replaces the legacy IEEE bus driver in port/miniport configuration-- 1394bus.sys and ochi1394.sys. It is backward compatible with the legacy 1394 bus driver. For information about some known differences in behavior between the new and the legacy 1394 bus driver, see [IEEE 1394 Bus Driver in Windows 7](./ieee-1394-bus-driver-in-windows-7.md).
 
-This topic provides details about how the 1394ohci.sys bus driver retrieves the contents of a node's configuration ROM, which is later used for device enumeration. Processing the contents of a node's configuration ROM for device discovery has not changed for Windows 7. For more information about how the contents of a node's configuration ROM is processed, see [Modifying the 1394 Configuration ROM](https://docs.microsoft.com/windows-hardware/drivers/ieee/modifying-the-1394-configuration-rom).
+This topic provides details about how the 1394ohci.sys bus driver retrieves the contents of a node's configuration ROM, which is later used for device enumeration. Processing the contents of a node's configuration ROM for device discovery has not changed for Windows 7. For more information about how the contents of a node's configuration ROM is processed, see [Modifying the 1394 Configuration ROM](./modifying-the-1394-configuration-rom.md).
 
 The 1394ohci.sys bus driver retrieves the contents of a node's configuration ROM after a 1394 bus reset by sending asynchronous read transactions to the node. It tries to reduce the number of asynchronous read transactions that are sent to a node to retrieve the contents of the node's configuration ROM.
 
@@ -25,7 +24,7 @@ This topic contains the following sections:
 ## Retrieving the Configuration ROM Header
 
 
-To retrieve the contents of a node's configuration ROM, a client driver sends a [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537644) request to the IEEE 1394 driver stack by specifying the **u.GetLocalHostInformation.nLevel** to GET\_HOST\_CONFIG\_ROM. Upon completing the request, the bus driver retrieves the node's configuration ROM header in a [**GET\_LOCAL\_HOST\_INFO5**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_get_local_host_info5) structure. The configuration ROM header is in the first five quadlets of a node's configuration ROM. This header includes the contents of the bus information block, as defined in the IEEE-1394a specification.
+To retrieve the contents of a node's configuration ROM, a client driver sends a [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) request to the IEEE 1394 driver stack by specifying the **u.GetLocalHostInformation.nLevel** to GET\_HOST\_CONFIG\_ROM. Upon completing the request, the bus driver retrieves the node's configuration ROM header in a [**GET\_LOCAL\_HOST\_INFO5**](/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info5) structure. The configuration ROM header is in the first five quadlets of a node's configuration ROM. This header includes the contents of the bus information block, as defined in the IEEE-1394a specification.
 
 The 1394ohci.sys bus driver tries to retrieve the configuration ROM header in a single asynchronous block read transaction. However, certain 1394 devices might not respond to this transaction correctly. In this situation, the new 1394 bus driver uses five asynchronous quadlet read transactions to retrieve the configuration ROM header.
 
@@ -53,9 +52,6 @@ The 1394ohci.sys bus driver uses the following steps to determine whether it can
 You can find descriptions of the configuration ROM values in the previous steps in the IEEE 1394 specifications. If the 1394ohci.sys bus driver fails to find a matching cached configuration ROM header or if it must reread the contents of the node's configuration ROM because the **generation** value changed, then it follows the previous steps to retrieve the contents of a new configuration ROM.
 
 ## Related topics
-[The IEEE 1394 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ieee/the-ieee-1394-driver-stack)  
-[Modifying the 1394 Configuration ROM](https://docs.microsoft.com/windows-hardware/drivers/ieee/modifying-the-1394-configuration-rom)  
-[**REQUEST\_GET\_CONFIG\_ROM**](https://msdn.microsoft.com/library/windows/hardware/gg266404)  
-
-
-
+[The IEEE 1394 Driver Stack](./the-ieee-1394-driver-stack.md)  
+[Modifying the 1394 Configuration ROM](./modifying-the-1394-configuration-rom.md)  
+[**REQUEST\_GET\_CONFIG\_ROM**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class)

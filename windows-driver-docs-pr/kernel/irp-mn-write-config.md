@@ -2,7 +2,6 @@
 title: IRP_MN_WRITE_CONFIG
 description: Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Function and filter drivers do not handle this request.
 ms.date: 08/12/2017
-ms.assetid: d57c30b8-83bd-41c9-906d-b8c95f8ca54e
 keywords:
  - IRP_MN_WRITE_CONFIG Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -13,12 +12,15 @@ ms.localizationpriority: medium
 
 Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Function and filter drivers do not handle this request.
 
-Major Code
-----------
+## Value
+
+0x10
+
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-When Sent
----------
+
+## When Sent
 
 A driver or other system component sends this IRP to write data to the configuration space of a device's parent bus.
 
@@ -64,20 +66,19 @@ On success, a bus driver sets **Irp-&gt;IoStatus.Information** to the number of 
 
 If a bus driver is unable to complete this request immediately, it can mark the IRP pending, return STATUS\_PENDING, and complete the IRP at a later time.
 
-Operation
----------
+## Operation
 
 A bus driver handles this IRP for its child devices (child PDOs).
 
-Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus.Status** and do not set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine.
+Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus.Status** and do not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 
 Typically, a function driver sends this IRP to the device stack to which it is attached and the IRP is handled by the parent bus driver.
 
-See [Handling IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-irps) for information about sending IRPs. The following steps apply specifically to this IRP:
+See [Handling IRPs](./handling-irps.md) for information about sending IRPs. The following steps apply specifically to this IRP:
 
 -   Allocate a buffer from paged pool and initialize it with the data to be written.
 
@@ -91,10 +92,9 @@ Drivers must send this IRP from IRQL &lt; DISPATCH\_LEVEL.
 
 A driver can access a bus's configuration space at DISPATCH\_LEVEL through a bus interface routine, if the parent bus driver exports such an interface. To get a bus interface, a driver sends an [**IRP\_MN\_QUERY\_INTERFACE**](irp-mn-query-interface.md) request to its parent bus driver. The driver then calls the appropriate routine returned in the interface.
 
-For example, to write configuration space from DISPATCH\_LEVEL a driver can call **IRP\_MN\_QUERY\_INTERFACE** during driver initialization to get the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard) interface from the parent bus driver. The driver sends the query IRP from IRQL PASSIVE\_LEVEL. Later, from code at IRQL DISPATCH\_LEVEL, the driver calls the appropriate routine returned in the interface, such as the **Interface.SetBusData** routine.
+For example, to write configuration space from DISPATCH\_LEVEL a driver can call **IRP\_MN\_QUERY\_INTERFACE** during driver initialization to get the [**BUS\_INTERFACE\_STANDARD**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) interface from the parent bus driver. The driver sends the query IRP from IRQL PASSIVE\_LEVEL. Later, from code at IRQL DISPATCH\_LEVEL, the driver calls the appropriate routine returned in the interface, such as the **Interface.SetBusData** routine.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -117,9 +117,4 @@ Requirements
 [**IRP\_MN\_READ\_CONFIG**](irp-mn-read-config.md)
 
  
-
- 
-
-
-
 

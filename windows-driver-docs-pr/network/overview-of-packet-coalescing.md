@@ -1,7 +1,6 @@
 ---
 title: Overview of Packet Coalescing
 description: Overview of Packet Coalescing
-ms.assetid: E406E89C-247B-4DCB-B309-B742BF0A27E9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Certain IP version 4 (IPv4) and IP version 6 (IPv6) network protocols involve the transmission of packets to broadcast or multicast addresses. These packets are received by multiple hosts in the IPv4/IPv6 subnet. In most cases, the host that receives these packets does not do anything with these packets. Therefore, the reception of these unwanted multicast or broadcast packets causes unnecessary processing and power consumption to occur within the receiving host.
 
-For example, host A sends a multicast Link-local Multicast Name Resolution (LLMNR) request on an IPv6 subnet to resolve host B's name. Except for host A, this LLMNR request is received by all hosts on the subnet. Except for host B, the TCP/IP protocol stack that runs on the other hosts inspects the packet and determines that the packet is not intended for it. Therefore, the protocol stack rejects the packet and calls [**NdisReturnNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisreturnnetbufferlists) to return the packet to the miniport driver.
+For example, host A sends a multicast Link-local Multicast Name Resolution (LLMNR) request on an IPv6 subnet to resolve host B's name. Except for host A, this LLMNR request is received by all hosts on the subnet. Except for host B, the TCP/IP protocol stack that runs on the other hosts inspects the packet and determines that the packet is not intended for it. Therefore, the protocol stack rejects the packet and calls [**NdisReturnNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreturnnetbufferlists) to return the packet to the miniport driver.
 
 Starting with NDIS 6.30, network adapters can support NDIS packet coalescing. By reducing the number of receive interrupts through the coalescing of random broadcast or multicast packets, the processing overhead and power consumption is significantly reduced on the system.
 
@@ -39,6 +38,6 @@ Packet coalescing involves the following steps:
 
 The following points apply to the support of packet coalescing by NDIS:
 
--   NDIS supports packet coalescing for packets received on the default NDIS port (port 0) assigned to the physical network adapter. NDIS does not support packet coalescing on NDIS ports that are assigned to virtual network adapters. For more information, see [NDIS Ports](ndis-ports.md).
+-   NDIS supports packet coalescing for packets received on the default NDIS port (port 0) assigned to the physical network adapter. NDIS does not support packet coalescing on NDIS ports that are assigned to virtual network adapters. For more information, see [NDIS Ports](overview-of-ndis-ports.md).
 
 -   NDIS supports packet coalescing for packets received on the default receive queue of the network adapter. This receive queue has an identifier of NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.

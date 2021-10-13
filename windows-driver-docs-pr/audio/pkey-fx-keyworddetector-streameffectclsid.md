@@ -1,7 +1,6 @@
 ---
 title: PKEY\_FX\_KeywordDetector\_StreamEffectClsid
 description: In Windows 10 and later, the PKEY\_FX\_KeywordDetector\_StreamEffectClsid property key identifies the stream effect (SFX) supported for the keyword detector by the driver.
-ms.assetid: C4ED26A0-FDFB-499B-8A61-429E53CCAE6A
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

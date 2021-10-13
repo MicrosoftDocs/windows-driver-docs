@@ -1,7 +1,6 @@
 ---
-title: WIA\_DPC\_THUMB\_HEIGHT
-description: The WIA\_DPC\_THUMB\_HEIGHT property defines the height, in pixels, of a thumbnail image to use for newly captured images.
-ms.assetid: bc4ad063-7287-461e-a31b-d4b6628372b6
+title: WIA_DPC_THUMB_HEIGHT
+description: The WIA_DPC_THUMB_HEIGHT property defines the height, in pixels, of a thumbnail image to use for newly captured images.
 keywords: ["WIA_DPC_THUMB_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
@@ -11,62 +10,32 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/30/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DPC\_THUMB\_HEIGHT
+# WIA_DPC_THUMB_HEIGHT
 
+The WIA_DPC_THUMB_HEIGHT property defines the height, in pixels, of a thumbnail image to use for newly captured images.
 
-The WIA\_DPC\_THUMB\_HEIGHT property defines the height, in pixels, of a thumbnail image to use for newly captured images.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_thumb_height_si"></span><span id="DDK_WIA_DPC_THUMB_HEIGHT_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE or WIA\_PROP\_LIST
+Valid Values: WIA_PROP_NONE or WIA_PROP_LIST
 
 Access Rights: Read-only or read/write
 
-Remarks
--------
+## Remarks
 
-An application reads the WIA\_DPC\_THUMB\_HEIGHT value to get an estimated size for displaying thumbnail images in its user interface.
+An application reads the WIA_DPC_THUMB_HEIGHT value to get an estimated size for displaying thumbnail images in its user interface.
 
-If the value or WIA\_DPC\_THUMB\_HEIGHT is WIA\_PROP\_NONE, the access rights must be read-only. If the value is WIA\_PROP\_LIST, the access rights must be read/write.
+If the value or WIA_DPC_THUMB_HEIGHT is WIA_PROP_NONE, the access rights must be read-only. If the value is WIA_PROP_LIST, the access rights must be read/write.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
+
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_DPC\_THUMB\_WIDTH**](wia-dpc-thumb-width.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_DPC_THUMB_WIDTH**](wia-dpc-thumb-width.md)

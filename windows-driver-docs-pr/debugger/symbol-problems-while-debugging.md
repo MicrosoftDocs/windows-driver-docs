@@ -1,7 +1,6 @@
 ---
 title: Symbol Problems While Debugging
 description: Symbol Problems While Debugging
-ms.assetid: 2713c371-9683-4d0d-a8ab-8a4c897ba0ab
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -29,12 +28,6 @@ This section includes:
 [Debugging User-Mode Processes Without Symbols](debugging-user-mode-processes-without-symbols.md)
 
 [Debugging Performance-Optimized Code](debugging-performance-optimized-code.md)
-
- 
-
- 
-
-
 
 
 

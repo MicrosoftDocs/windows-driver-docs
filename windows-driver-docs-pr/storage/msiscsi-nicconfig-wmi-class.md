@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_NICConfig WMI Class
 description: MSiSCSI\_NICConfig WMI Class
-ms.assetid: 9b7a466d-a9bb-41c5-8f38-e5baf21e863a
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -45,13 +44,7 @@ class MSiSCSI_NICConfig {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_NICConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsicfg/ns-iscsicfg-_msiscsi_nicconfig) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_NICConfig**](/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_nicconfig) data structure.
 
  
-
- 
-
-
-
-
 

@@ -1,52 +1,51 @@
 ---
 title: Wi-Fi Direct Printing overview
 description: Provides information on supported user experiences and use cases for a Wi-Fi Direct Printing.
-ms.assetid: 40ED3410-EC46-42C8-B09B-8010639F2268
-ms.date: 04/20/2017
+ms.date: 06/09/2020
 ms.localizationpriority: medium
 ---
 
 # Wi-Fi Direct Printing overview
 
-
 ## Supported User Experiences
-
 
 **Pair with Wi-Fi Direct Printer from Windows**
 
-While at a meeting with overseas partners, a business executive receives a revision to a contract and now must print updated copies before her meeting.
+While at a meeting with overseas partners, a business executive receives a revision to a contract and must print updated copies before the meeting.
 
-She locates a Windows Certified print device at the partner’s office that supports Wi-Fi Direct. She initiates pairing between the device and her Windows Surface and she quickly establishes a connection to the device and is ready to print. She prints several copies of the document and is able to present the new, approved contract to her partners.
+They locate a Windows Certified print device at the partner’s office that supports Wi-Fi Direct. They initiate pairing between the device and their Windows Surface and they quickly establish a connection to the device and are ready to print. They print several copies of the document and are able to present the new, approved contract to the partners.
 
-A few hours later she is on her way to the airport; signed contracts in hand.
+A few hours later they are on the way to the airport; signed contracts in hand.
 
 This scenario describes:
 
 Pairing using PIN
 
--   After selecting the device in the control panel, she is prompted for the connection PIN. She enters the PIN number provided to her by the receptionist. The connection is completed and she is ready to print
+- After selecting the device in the control panel, the user is prompted for the connection PIN. they enter the PIN number provided to them by the receptionist. The connection is completed and they are ready to print.
 
 Pairing using Ad-Hoc PIN
 
--   After selecting the device in the control panel, the device’s control panel asks for her to enter a PIN that will match one she will enter on her device (just like Bluetooth pairing). She enters a PIN on the control panel of the device and then enters the same number into the prompt on her PC. The connection is completed and she is ready to print.
+- After selecting the device in the control panel, the device’s control panel asks the user to enter a PIN that will match one they will enter on their device (just like Bluetooth pairing). They enter a PIN on the control panel of the device and then enter the same number into the prompt on their PC. The connection is completed and they are ready to print.
 
 **Printing to a Previously Paired Wi-Fi Direct Printer**
 
-A different user uses only his mobile broadband connection to get Internet connectivity on his Windows PC when he is at home. He owns a Wi-Fi Direct print device, which he has previously paired to and installed on his Windows PC.
+A different user uses only their mobile broadband connection to get Internet connectivity on their Windows PC when they are at home. They own a Wi-Fi Direct print device, which they have previously paired to and installed on their Windows PC.
 
-He is working on a document at home and needs to print a hard copy. He selects “Print” in his application. His Wi-Fi Direct printer is always broadcasting over Wi-Fi Direct and he is currently in range. When the print dialog appears, his Wi-Fi Direct printer appears as “online”. He selects the device and clicks print. His Windows PC establishes the connection to the device and sends the print job. To him, his Wi-Fi Direct printer appears to work as any other printer he has used over a network or direct connected. The print job outputs and he can continue editing.
+They are working on a document at home and need to print a hard copy. They select "Print" in their application. Their Wi-Fi Direct printer is always broadcasting over Wi-Fi Direct and they are currently in range. When the print dialog appears, their Wi-Fi Direct printer appears as "online". They select the device and click print. Their Windows PC establishes the connection to the device and sends the print job. To them, the Wi-Fi Direct printer appears to work as any other printer they have used over a network or direct connected. The print job outputs and they can continue editing.
 
 ## Use Cases
-
 
 **Printer - First Time Pairing**
 
 MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH MODERN DEVICES CONTROL PANEL
+
 Preconditions
 
--   User is within range of a Wi-Fi Direct Print Device
--   A driver for the Wi-Fi Direct Print Device is on the user’s device
--   Wi-Fi Direct Print Device meets Windows Certification requirements
+- User is within range of a Wi-Fi Direct Print Device
+
+- A driver for the Wi-Fi Direct Print Device is on the user’s device
+
+- Wi-Fi Direct Print Device meets Windows Certification requirements
 
 Trigger
 
@@ -54,17 +53,23 @@ User types in “add printer” in Windows Start screen, selects “settings”,
 
 Steps
 
-1.  Devices control panel searches for available print devices
-2.  DAF issues L2 challenge for Wi-Fi Direct (WFD) devices
-3.  Available WFD Print Devices appear as options for user in devices list
-4.  User clicks on the WFD Print Device
-5.  DAF makes L2/L3 connection with WFD device and triggers vertical pairing with the WSD provider. Queue is built for device and driver is configured.
-6.  WFD provider disconnects from device
+1. Devices control panel searches for available print devices
+
+1. DAF issues L2 challenge for Wi-Fi Direct (WFD) devices
+
+1. Available WFD Print Devices appear as options for user in devices list
+
+1. User clicks on the WFD Print Device
+
+1. DAF makes L2/L3 connection with WFD device and triggers vertical pairing with the WSD provider. Queue is built for device and driver is configured.
+
+1. WFD provider disconnects from device
 
 Postconditions
 
--   Print queue for Wi-Fi Direct Printer is established
--   Print queue will appear “available” whenever WFD L2 beacon challenge is successful
+- Print queue for Wi-Fi Direct Printer is established
+
+- Print queue will appear “available” whenever WFD L2 beacon challenge is successful
 
 Alternate flows
 
@@ -74,14 +79,15 @@ Considerations
 
 N/A
 
- 
-
 MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH ADD PRINTER WIZARD
+
 Preconditions
 
--   User is within range of a Wi-Fi Direct Print Device
--   A driver for the Wi-Fi Direct Print Device is on the user’s device
--   Wi-Fi Direct Print Device meets Windows Certification requirements
+- User is within range of a Wi-Fi Direct Print Device
+
+- A driver for the Wi-Fi Direct Print Device is on the user’s device
+
+- Wi-Fi Direct Print Device meets Windows Certification requirements
 
 Trigger
 
@@ -89,18 +95,25 @@ User opens classic control panel and launches Devices and Printers control panel
 
 Steps
 
-1.  User launches Devices and Printers control panel
-2.  User clicks “Add a Device”
-3.  DAF issues L2 challenge for Wi-Fi Direct (WFD) devices
-4.  Available WFD Print Devices appear as options for user in devices list
-5.  User clicks on the WFD Print Device
-6.  DAF makes L2/L3 connection with WFD device and triggers vertical pairing with the WSD provider. Queue is built for device and driver is configured.
-7.  WFD provider disconnects from device
+1. User launches Devices and Printers control panel
+
+1. User clicks “Add a Device”
+
+1. DAF issues L2 challenge for Wi-Fi Direct (WFD) devices
+
+1. Available WFD Print Devices appear as options for user in devices list
+
+1. User clicks on the WFD Print Device
+
+1. DAF makes L2/L3 connection with WFD device and triggers vertical pairing with the WSD provider. Queue is built for device and driver is configured.
+
+1. WFD provider disconnects from device
 
 Postconditions
 
--   Print queue for Wi-Fi Direct Printer is established
--   Print queue will appear “available” whenever WFD L2 beacon challenge is successful
+- Print queue for Wi-Fi Direct Printer is established
+
+- Print queue will appear “available” whenever WFD L2 beacon challenge is successful
 
 Alternate flows
 
@@ -110,15 +123,15 @@ Considerations
 
 N/A
 
- 
-
 ERROR CONNECTING TO PRINT DEVICE
+
 Preconditions
 
 User initiates pairing using:
 
--   Modern device control panel, as described in "MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH MODERN DEVICES CONTROL PANEL" above
--   Devices and Printers control panel, as described in "MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH ADD PRINTER WIZARD" above
+- Modern device control panel, as described in "MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH MODERN DEVICES CONTROL PANEL" above
+
+- Devices and Printers control panel, as described in "MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH ADD PRINTER WIZARD" above
 
 Trigger
 
@@ -126,30 +139,31 @@ Failure event occurs during pairing/queue setup.
 
 Steps
 
-1.  Any partially set-up print queue is removed.
-2.  User is notified of failure.
+1. Any partially set-up print queue is removed.
+
+1. User is notified of failure.
 
 Postconditions
 
--   User’s print system is returned to a its state before pairing attempt
+- User’s print system is returned to a its state before pairing attempt
 
 Alternate flows
 
--   If the error is due to a missing driver AND the driver can be downloaded or added (x86 or amd64 on a non-metered connection), the user is prompted to do so and re-attempt pairing.
+- If the error is due to a missing driver AND the driver can be downloaded or added (x86 or amd64 on a non-metered connection), the user is prompted to do so and re-attempt pairing.
 
 Considerations
 
 N/A
 
- 
-
 CONNECTING TO WI-FI DIRECT PRINT DEVICE WITH A REQUIRED PIN
+
 Preconditions
 
 User initiates pairing using:
 
--   Modern device control panel, as described in "MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH MODERN DEVICES CONTROL PANEL" above
--   Devices and Printers control panel, as described in "MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH ADD PRINTER WIZARD" above
+- Modern device control panel, as described in "MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH MODERN DEVICES CONTROL PANEL" above
+
+- Devices and Printers control panel, as described in "MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH ADD PRINTER WIZARD" above
 
 Trigger
 
@@ -157,45 +171,53 @@ Device requires a PIN for pairing
 
 Steps
 
-1.  1. User has received a PIN required by the print device
-2.  2. During WSD setup, the user is prompted for the PIN
-3.  3. The user enters the PIN and pairing completes
+1. User has received a PIN required by the print device
+
+1. During WSD setup, the user is prompted for the PIN
+
+1. The user enters the PIN and pairing completes
 
 Postconditions
 
--   Print queue is properly set-up
+- Print queue is properly set-up
 
 Alternate flows
 
--   If the error is due to a missing driver AND the driver can be downloaded or added (x86 or amd64 on a non-metered connection), the user is prompted to do so and re-attempt pairing.
+- If the error is due to a missing driver AND the driver can be downloaded or added (x86 or amd64 on a non-metered connection), the user is prompted to do so and re-attempt pairing.
 
 Considerations
 
--   Ad-hoc PIN
-    1.  User is required to enter a PIN on BOTH the printer and device similar to Bluetooth pairing.
-    2.  During WSD setup, the user enters the proper PIN on the device AND the client PC when prompted.
-    3.  The user enters the PIN and pairing completes.
+- Ad-hoc PIN
 
-<!-- -->
+    1. User is required to enter a PIN on BOTH the printer and device similar to Bluetooth pairing.
 
--   PIN entry failure
-    1.  User has received a client PIN OR ad-hoc PIN is required.
-    2.  During WFD setup, the user is prompted for the PIN.
-    3.  User enters the incorrect PIN.
-    4.  User is informed that PIN is incorrect and pairing cannot complete.
-    5.  Discovery is terminated. No queue is set-up.
+    1. During WSD setup, the user enters the proper PIN on the device AND the client PC when prompted.
+
+    1. The user enters the PIN and pairing completes.
+
+- PIN entry failure
+
+    1. User has received a client PIN OR ad-hoc PIN is required.
+
+    1. During WFD setup, the user is prompted for the PIN.
+
+    1. User enters the incorrect PIN.
+
+    1. User is informed that PIN is incorrect and pairing cannot complete.
+
+    1. Discovery is terminated. No queue is set-up.
 
 **Postcondition**: No print queue is set-up.
-
- 
 
 **Printing**
 
 USE OF WI-FI DIRECT PRINT DEVICE FROM APPLICATION
+
 Preconditions
 
--   User is within range of a Wi-Fi Direct Print Device
--   User has successfully completed first-time pairing with the Wi-Fi Direct Print Device, as described in "Printer - First Time Pairing" above.
+- User is within range of a Wi-Fi Direct Print Device
+
+- User has successfully completed first-time pairing with the Wi-Fi Direct Print Device, as described in "Printer - First Time Pairing" above.
 
 Trigger
 
@@ -203,16 +225,21 @@ User tries to print from an application
 
 Steps
 
-1.  DAF issues L2 challenge for Wi-Fi Direct (WFD) devices.
-2.  Known WFD print devices responding to L2 challenge appear as “available” to the user
-3.  The user selects the WFD print device and clicks “print”
-4.  DAF makes L2/L3 connection with the user-selection WFD device and establishes a L3 WSD connection. Reference count to the device is incremented.
-5.  Print job is spooled, rendered, and sent to the device
-6.  Reference count to the device is decremented. If the reference count after decrement equals 0, then the connection will be closed.
+1. DAF issues L2 challenge for Wi-Fi Direct (WFD) devices.
+
+1. Known WFD print devices responding to L2 challenge appear as “available” to the user
+
+1. The user selects the WFD print device and clicks “print”
+
+1. DAF makes L2/L3 connection with the user-selection WFD device and establishes a L3 WSD connection. Reference count to the device is incremented.
+
+1. Print job is spooled, rendered, and sent to the device
+
+1. Reference count to the device is decremented. If the reference count after decrement equals 0, then the connection will be closed.
 
 Postconditions
 
--   Print job is successfully sent to the print device.
+- Print job is successfully sent to the print device.
 
 Alternate flows
 
@@ -220,12 +247,9 @@ N/A
 
 Considerations
 
--   The queue is persisted on the Windows PC in the same way as all other print queues. The user is expected to be able to reconnect and print to the device regardless of how much time has lapsed between pairing and subsequent use. The only time the user should have to re-pair to print is if the printer has pruned the connection information and the user’s pairing information has been removed. Re-pairings should be minimized to provide a better user experience. This implies that the device must maintain in memory a number of pairings that is reasonable to maintain for the intended use. For example, a printer for home use may maintain 10-25 pairings. A printer for office use may maintain considerably more.
-
- 
+- The queue is persisted on the Windows PC in the same way as all other print queues. The user is expected to be able to reconnect and print to the device regardless of how much time has lapsed between pairing and subsequent use. The only time the user should have to re-pair to print is if the printer has pruned the connection information and the user’s pairing information has been removed. Re-pairings should be minimized to provide a better user experience. This implies that the device must maintain in memory a number of pairings that is reasonable to maintain for the intended use. For example, a printer for home use may maintain 10-25 pairings. A printer for office use may maintain considerably more.
 
 ## Considerations for Pairing
-
 
 **Persistent Groups**
 
@@ -322,11 +346,12 @@ Realtek RTL8723A Wireless LAN 802.11n USB 2.0 Network Adapter
 Realtek RTL8723AE Wireless LAN 802.11n PCI-E NIC
 Realtek Wireless LAN 802.11n USB 2.0 Network Adapter
 WNA3100M
+
 **Device Name in Windows**
 
 Windows uses the Wi-Fi P2P IE format’s P2P Device Info sub element’s Device Name attribute to set the device name in Windows when the device is the group owner. This attribute should contain a meaningful name for the user as it will appear in as the device name in all Windows UI.
 
-![p2p ie format oob device info element](images/wfd-p2pieformat.png)
+![p2p ie format oob device info element.](images/wfd-p2pieformat.png)
 
 *P2P IE format OOB Device Info Element*
 
@@ -339,11 +364,3 @@ There are known issues concerning group ownership and 5 GHz networks. Windows do
 When Windows as the Group Owner negotiates the connection with the Wi-Fi Direct device, Windows provides a preferred channel for communication. If the preferred channel is in the 5 GHz range, a device supporting only 2.4 GHz will not be able to use that channel. Windows will not maintain a dual-bandwidth group and there is no functionality to move the existing group or AP connection to 2.4 GHz. In this case, the print device will be discovered but pairing will always fail since no channel can be established.
 
 To prevent a user from encountering this scenario, Windows Printing requires the Print device to be the group owner. Windows as the client on a P2P network is able to manage a dual-band scenario. Thus there is never a situation where the user can discover the printer but will be unable to pair due to their existing AP connection.
-
- 
-
- 
-
-
-
-

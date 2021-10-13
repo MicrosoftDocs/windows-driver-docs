@@ -1,7 +1,6 @@
 ---
 title: Example Uses of I/O Queues
 description: Example Uses of I/O Queues
-ms.assetid: 13b09254-ce0a-4c7d-bdb1-d28ec094a266
 keywords:
 - I/O queues WDK KMDF , examples
 - request handlers WDK KMDF
@@ -33,9 +32,9 @@ ms.localizationpriority: medium
 
 For each device that is connected to a system and supported by a particular driver, the driver can use the following combinations of I/O queues and [request handlers](request-handlers.md):
 
--   A single, default I/O queue and a single request handler, [*EvtIoDefault*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_default). The framework will deliver all of the device's requests to the default queue, and it will call the driver's *EvtIoDefault* handler to deliver each request to the driver.
+-   A single, default I/O queue and a single request handler, [*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default). The framework will deliver all of the device's requests to the default queue, and it will call the driver's *EvtIoDefault* handler to deliver each request to the driver.
 
--   A single, default I/O queue and multiple request handlers such as [*EvtIoRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_read), [*EvtIoWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_write), and [*EvtIoDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control). The framework will deliver all of the device's requests to the default queue. It will call the driver's *EvtIoRead* handler to deliver read requests, the *EvtIoWrite* handler to deliver write requests, and the *EvtIoDeviceControl* handler to deliver device I/O control requests.
+-   A single, default I/O queue and multiple request handlers such as [*EvtIoRead*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_read), [*EvtIoWrite*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_write), and [*EvtIoDeviceControl*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control). The framework will deliver all of the device's requests to the default queue. It will call the driver's *EvtIoRead* handler to deliver read requests, the *EvtIoWrite* handler to deliver write requests, and the *EvtIoDeviceControl* handler to deliver device I/O control requests.
 
 -   Multiple I/O queues, such as one for read requests and another for write requests. For each queue, the driver provides only one request handler because the queue receives only one type of request.
 
@@ -55,13 +54,13 @@ Some example scenarios include:
 
 If you are writing a function driver for a disk drive that can only service read and write requests one at a time, the function driver needs only one I/O queue per device.
 
-The driver can use the default I/O queue that the framework creates when the driver calls [**WdfIoQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuecreate) and sets **DefaultQueue** to **TRUE** in the queue's [**WDF\_IO\_QUEUE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/ns-wdfio-_wdf_io_queue_config) structure. In the WDF\_IO\_QUEUE\_CONFIG structure, the driver should also specify:
+The driver can use the default I/O queue that the framework creates when the driver calls [**WdfIoQueueCreate**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate) and sets **DefaultQueue** to **TRUE** in the queue's [**WDF\_IO\_QUEUE\_CONFIG**](/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config) structure. In the WDF\_IO\_QUEUE\_CONFIG structure, the driver should also specify:
 
 -   **WdfIoQueueDispatchSequential** as the dispatching method, so the default I/O queue will deliver I/O requests to the driver synchronously.
 
--   A single event callback function, [*EvtIoDefault*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_default), that will receive all I/O requests.
+-   A single event callback function, [*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default), that will receive all I/O requests.
 
-Each time an I/O request is available in the driver's default I/O queue, the framework will deliver the request to the driver by calling the driver's [*EvtIoDefault*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) request handler. If another request becomes available in the queue, the framework will not deliver it until the driver calls [**WdfRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestcomplete) for the previously delivered request.
+Each time an I/O request is available in the driver's default I/O queue, the framework will deliver the request to the driver by calling the driver's [*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) request handler. If another request becomes available in the queue, the framework will not deliver it until the driver calls [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete) for the previously delivered request.
 
 ## Multiple Sequential I/O Queues and a Manual Queue
 
@@ -73,15 +72,15 @@ Consider a serial port device that has the following characteristics:
 
 -   It can receive device I/O control requests for status information. The device's driver might take a long time to complete some of these requests (such as a request to wait for a status change).
 
-A function driver for this device could use multiple, sequential I/O queues per device. The driver would call [**WdfIoQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuecreate) three times: once to create a default queue and twice to create two additional I/O queues. In the [**WDF\_IO\_QUEUE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/ns-wdfio-_wdf_io_queue_config) structure for each of these queues, the driver should specify:
+A function driver for this device could use multiple, sequential I/O queues per device. The driver would call [**WdfIoQueueCreate**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate) three times: once to create a default queue and twice to create two additional I/O queues. In the [**WDF\_IO\_QUEUE\_CONFIG**](/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config) structure for each of these queues, the driver should specify:
 
 -   **WdfIoQueueDispatchSequential** as the dispatching method for each queue, so that the framework will deliver I/O requests to the driver synchronously.
 
--   A different [request handler](request-handlers.md) for each queue ([*EvtIoDefault*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_default), [*EvtIoRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_read), and [*EvtIoWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_write)), which will receive the queue's I/O requests.
+-   A different [request handler](request-handlers.md) for each queue ([*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default), [*EvtIoRead*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_read), and [*EvtIoWrite*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_write)), which will receive the queue's I/O requests.
 
-After calling [**WdfIoQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuecreate), the driver could call [**WdfDeviceConfigureRequestDispatching**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceconfigurerequestdispatching) twice - to forward all read requests to one of the additional queues and all write requests to the other.
+After calling [**WdfIoQueueCreate**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate), the driver could call [**WdfDeviceConfigureRequestDispatching**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceconfigurerequestdispatching) twice - to forward all read requests to one of the additional queues and all write requests to the other.
 
-With this configuration, the device's default I/O queue [*EvtIoDefault*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) callback function will receive only the device I/O control requests for status information.
+With this configuration, the device's default I/O queue [*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) callback function will receive only the device I/O control requests for status information.
 
 If the driver has to hold a status request for a long time, it can create a fourth queue and specify **WdfIoQueueDispatchManual** as the dispatching method. When the driver receives a request for information that it must wait for, it can place the request in this extra queue until the status information becomes available. Then the driver can retrieve the request from the queue and complete it. In the meantime, the default queue can deliver another request to the driver.
 
@@ -95,13 +94,13 @@ A function driver for this controller must examine each I/O request. If the driv
 
 -   A disk drive is being formatted and, therefore, no other drives can be active.
 
-For each device that is connected to the controller, the driver could call [**WdfIoQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuecreate) to create a default I/O queue. In the [**WDF\_IO\_QUEUE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/ns-wdfio-_wdf_io_queue_config) structure for each of these queues, the driver should specify:
+For each device that is connected to the controller, the driver could call [**WdfIoQueueCreate**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate) to create a default I/O queue. In the [**WDF\_IO\_QUEUE\_CONFIG**](/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config) structure for each of these queues, the driver should specify:
 
 -   **WdfIoQueueDispatchParallel** as the dispatching method for each queue, so that the framework will deliver I/O requests to the driver asynchronously.
 
--   An [*EvtIoDefault*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) event callback function for each queue, which will receive the queue's I/O requests.
+-   An [*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) event callback function for each queue, which will receive the queue's I/O requests.
 
-With this configuration, a single, parallel I/O queue is assigned to each device. The driver must examine each I/O request that the framework delivers from each I/O queue. If the driver can process the request immediately, it does so. Otherwise, the driver calls [**WdfIoQueueStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuestop), which causes the framework to stop delivering requests until the driver calls [**WdfIoQueueStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuestart).
+With this configuration, a single, parallel I/O queue is assigned to each device. The driver must examine each I/O request that the framework delivers from each I/O queue. If the driver can process the request immediately, it does so. Otherwise, the driver calls [**WdfIoQueueStop**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuestop), which causes the framework to stop delivering requests until the driver calls [**WdfIoQueueStart**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuestart).
 
 ## Multiple Parallel I/O Queues
 
@@ -113,21 +112,15 @@ A SCSI host adapter is an example of a device that supports asynchronous, overla
 
 For best performance, the function driver for this SCSI host adapter should receive I/O requests from the framework as soon as they are available. The driver must examine each request and determine if it can be started immediately or must be postponed until the device and resources (such as mailbox memory) are available.
 
-The driver should probably use multiple, parallel I/O queues. For each device that is connected to the adapter, the driver would call [**WdfIoQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuecreate) to create a default I/O queue. In the [**WDF\_IO\_QUEUE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/ns-wdfio-_wdf_io_queue_config) structure for each of these queues, the driver should specify:
+The driver should probably use multiple, parallel I/O queues. For each device that is connected to the adapter, the driver would call [**WdfIoQueueCreate**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate) to create a default I/O queue. In the [**WDF\_IO\_QUEUE\_CONFIG**](/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config) structure for each of these queues, the driver should specify:
 
 -   **WdfIoQueueDispatchParallel** as the dispatching method for each queue, so that the framework will deliver I/O requests to the driver asynchronously.
 
--   An [*EvtIoDefault*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) event callback function for each queue, which will receive the queue's I/O requests.
+-   An [*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) event callback function for each queue, which will receive the queue's I/O requests.
 
-Each I/O queue's [*EvtIoDefault*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) callback function must examine the queue's I/O requests, as they are delivered, and determine whether each one can be serviced immediately. If the device and system resources are available, the driver starts the I/O operation. If the device or resources are not available, the driver must call [**WdfIoQueueStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuestop) to stop delivery of additional requests until the current one can be processed.
+Each I/O queue's [*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default) callback function must examine the queue's I/O requests, as they are delivered, and determine whether each one can be serviced immediately. If the device and system resources are available, the driver starts the I/O operation. If the device or resources are not available, the driver must call [**WdfIoQueueStop**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuestop) to stop delivery of additional requests until the current one can be processed.
 
-Optionally, the driver can call [**WdfIoQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuecreate) to create additional queues for each device. Then the driver can call [**WdfRequestForwardToIoQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestforwardtoioqueue) to requeue some types of requests to the additional queues. When the framework delivers requests from an additional queue, the driver can call [**WdfIoQueueStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuestop), if necessary, on that queue instead of the default queue, thereby minimizing the number or type of requests for which delivery is postponed.
-
- 
+Optionally, the driver can call [**WdfIoQueueCreate**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate) to create additional queues for each device. Then the driver can call [**WdfRequestForwardToIoQueue**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestforwardtoioqueue) to requeue some types of requests to the additional queues. When the framework delivers requests from an additional queue, the driver can call [**WdfIoQueueStop**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuestop), if necessary, on that queue instead of the default queue, thereby minimizing the number or type of requests for which delivery is postponed.
 
  
-
-
-
-
 

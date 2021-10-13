@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_TargetPortalGroup WMI Class
 description: ISCSI\_TargetPortalGroup WMI Class
-ms.assetid: dff17d52-b308-49cc-97ec-d54eddb4e747
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -27,13 +26,7 @@ class ISCSI_TargetPortalGroup {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortalGroup**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsidef/ns-iscsidef-_iscsi_targetportalgroup) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortalGroup**](/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_targetportalgroup) data structure.
 
  
-
- 
-
-
-
-
 

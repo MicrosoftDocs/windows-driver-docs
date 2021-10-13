@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CAN_SUSTAIN_AP
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_CAN_SUSTAIN_AP to indicate that the port is ready to receive a OID_WDI_TASK_START_AP request, after previously indicating NDIS_STATUS_WDI_INDICATION_STOP_AP.
-ms.assetid: 638822A9-4CED-4564-86B3-8BC9DBA05DD3
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CAN_SUSTAIN_AP Network Drivers Starting with Windows Vista
@@ -24,12 +23,11 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CAN\_SUSTAIN\_AP to indicate
 
 | Type                                                                                     | Multiple TLV instances allowed | Optional | Description                                                     |
 |------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------|
-| [**WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-indication-can-sustain-ap) |                                |          | The reason the adapter can now sustain 802.11 AP functionality. |
+| [**WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP**](./wdi-tlv-indication-can-sustain-ap.md) |                                |          | The reason the adapter can now sustain 802.11 AP functionality. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -53,9 +51,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

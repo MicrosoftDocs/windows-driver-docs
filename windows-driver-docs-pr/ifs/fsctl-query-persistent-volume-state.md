@@ -1,7 +1,6 @@
 ---
 title: FSCTL_QUERY_PERSISTENT_VOLUME_STATE control code
 description: The FSCTL\_QUERY\_PERSISTENT\_VOLUME\_STATE control code retrieves persistent settings for a file system volume.
-ms.assetid: e54a03bb-9329-4095-bb81-857b46fee31c
 keywords: ["FSCTL_QUERY_PERSISTENT_VOLUME_STATE control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,35 +19,34 @@ ms.localizationpriority: medium
 
 The **FSCTL\_QUERY\_PERSISTENT\_VOLUME\_STATE** control code retrieves persistent settings for a file system volume. Persistent settings remain on a file system volume between reboots of the computer.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 **Parameters**
 
 <a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the file system volume. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the file system volume. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle"></a>*FileHandle*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. A file handle for the file system volume. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A file handle for the file system volume. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fscontrolcode"></a>*FsControlCode*  
 The control code for the operation. Use **FSCTL\_QUERY\_PERSISTENT\_VOLUME\_STATE** for this operation.
 
 <a href="" id="inputbuffer"></a>*InputBuffer*  
-A pointer to a caller-allocated [**FILE\_FS\_PERSISTENT\_VOLUME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_fs_persistent_volume_information) structure.
+A pointer to a caller-allocated [**FILE\_FS\_PERSISTENT\_VOLUME\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_persistent_volume_information) structure.
 
 <a href="" id="inputbufferlength"></a>*InputBufferLength*  
 The size, in bytes, of the buffer pointed to by the *InputBuffer* parameter.
 
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
-A pointer to a caller-allocated [**FILE\_FS\_PERSISTENT\_VOLUME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_fs_persistent_volume_information) structure that receives the persistent settings for a file system volume.
+A pointer to a caller-allocated [**FILE\_FS\_PERSISTENT\_VOLUME\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_persistent_volume_information) structure that receives the persistent settings for a file system volume.
 
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 
-Status block
-------------
+## Status block
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 
 <table>
 <colgroup>
@@ -64,11 +62,11 @@ Status block
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_NOT_SUPPORTED</strong></p></td>
-<td align="left"><p>The caller specified an incorrect version number in the <strong>Version</strong> member of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_fs_persistent_volume_information" data-raw-source="[&lt;strong&gt;FILE_FS_PERSISTENT_VOLUME_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_fs_persistent_volume_information)"><strong>FILE_FS_PERSISTENT_VOLUME_INFORMATION</strong></a>.</p></td>
+<td align="left"><p>The caller specified an incorrect version number in the <strong>Version</strong> member of <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_persistent_volume_information" data-raw-source="[&lt;strong&gt;FILE_FS_PERSISTENT_VOLUME_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_persistent_volume_information)"><strong>FILE_FS_PERSISTENT_VOLUME_INFORMATION</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_INVALID_PARAMETER</strong></p></td>
-<td align="left"><p>The file system volume is not an open user volume, or the caller specified an invalid flag in the <strong>FlagMask</strong> member of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_fs_persistent_volume_information" data-raw-source="[&lt;strong&gt;FILE_FS_PERSISTENT_VOLUME_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_fs_persistent_volume_information)"><strong>FILE_FS_PERSISTENT_VOLUME_INFORMATION</strong></a>.</p></td>
+<td align="left"><p>The file system volume is not an open user volume, or the caller specified an invalid flag in the <strong>FlagMask</strong> member of <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_persistent_volume_information" data-raw-source="[&lt;strong&gt;FILE_FS_PERSISTENT_VOLUME_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_persistent_volume_information)"><strong>FILE_FS_PERSISTENT_VOLUME_INFORMATION</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_BUFFER_TOO_SMALL</strong></p></td>
@@ -95,8 +93,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -118,18 +115,9 @@ Requirements
 ## See also
 
 
-[**FILE\_FS\_PERSISTENT\_VOLUME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_fs_persistent_volume_information)
+[**FILE\_FS\_PERSISTENT\_VOLUME\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_persistent_volume_information)
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
-
- 
-
- 
-
-
-
-
-
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 

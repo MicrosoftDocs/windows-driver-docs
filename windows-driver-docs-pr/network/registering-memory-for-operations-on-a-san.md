@@ -1,7 +1,6 @@
 ---
 title: Registering Memory for Operations on a SAN
 description: Registering Memory for Operations on a SAN
-ms.assetid: 5492466e-4765-4d43-b6bc-1d5bc74996ba
 keywords:
 - SAN connection setup WDK , registering memory
 - registering memory for SANs
@@ -24,9 +23,9 @@ The Windows Sockets switch calls a SAN service provider's extension functions to
 
 ### Registering Data Buffers
 
-The switch calls a SAN service provider's [**WSPRegisterMemory**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566311(v=vs.85)) extension function on behalf of an application that runs in a local process to register data buffers that can be accessed only by that process. The buffer handles that **WSPRegisterMemory** returns are valid only in the context of the local process that performed the registration. The switch calls **WSPRegisterMemory** to register buffers that serve as the message receiving buffer in a call to the [**WSPRecv**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566309(v=vs.85)) function or the message sending buffer in a call to the [**WSPSend**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566316(v=vs.85)) function. The switch also calls **WSPRegisterMemory** to register buffers that serve as the local receiving RDMA buffer in a call to the [**WSPRdmaRead**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566304(v=vs.85)) extension function or the local RDMA source in a call to the [**WSPRdmaWrite**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566306(v=vs.85)) extension function. After the local process finishes using buffers that were registered with **WSPRegisterMemory**, the switch calls the [**WSPDeregisterMemory**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566279(v=vs.85)) extension function to release those buffers.
+The switch calls a SAN service provider's [**WSPRegisterMemory**](/previous-versions/windows/hardware/network/ff566311(v=vs.85)) extension function on behalf of an application that runs in a local process to register data buffers that can be accessed only by that process. The buffer handles that **WSPRegisterMemory** returns are valid only in the context of the local process that performed the registration. The switch calls **WSPRegisterMemory** to register buffers that serve as the message receiving buffer in a call to the [**WSPRecv**](/previous-versions/windows/hardware/network/ff566309(v=vs.85)) function or the message sending buffer in a call to the [**WSPSend**](/previous-versions/windows/hardware/network/ff566316(v=vs.85)) function. The switch also calls **WSPRegisterMemory** to register buffers that serve as the local receiving RDMA buffer in a call to the [**WSPRdmaRead**](/previous-versions/windows/hardware/network/ff566304(v=vs.85)) extension function or the local RDMA source in a call to the [**WSPRdmaWrite**](/previous-versions/windows/hardware/network/ff566306(v=vs.85)) extension function. After the local process finishes using buffers that were registered with **WSPRegisterMemory**, the switch calls the [**WSPDeregisterMemory**](/previous-versions/windows/hardware/network/ff566279(v=vs.85)) extension function to release those buffers.
 
-The switch calls the SAN service provider's [**WSPRegisterRdmaMemory**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566313(v=vs.85)) extension function on behalf of an application that runs in a local process to register RDMA buffers that both local and remote processes can access. The buffer descriptors that **WSPRegisterRdmaMemory** returns are valid only for RDMA data transfer operations that a remote peer initiates in the context of the peer's connection to the SAN socket on which the registration was performed. The switch at the remote peer connection uses these RDMA buffers as either the target in a call to the **WSPRdmaWrite** extension function or the source in a call to the **WSPRdmaRead** extension function. After the local and remote processes finish using buffers that were registered with **WSPRegisterRdmaMemory**, the switch calls the [**WSPDeregisterRdmaMemory**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566281(v=vs.85)) extension function to release those buffers.
+The switch calls the SAN service provider's [**WSPRegisterRdmaMemory**](/previous-versions/windows/hardware/network/ff566313(v=vs.85)) extension function on behalf of an application that runs in a local process to register RDMA buffers that both local and remote processes can access. The buffer descriptors that **WSPRegisterRdmaMemory** returns are valid only for RDMA data transfer operations that a remote peer initiates in the context of the peer's connection to the SAN socket on which the registration was performed. The switch at the remote peer connection uses these RDMA buffers as either the target in a call to the **WSPRdmaWrite** extension function or the source in a call to the **WSPRdmaRead** extension function. After the local and remote processes finish using buffers that were registered with **WSPRegisterRdmaMemory**, the switch calls the [**WSPDeregisterRdmaMemory**](/previous-versions/windows/hardware/network/ff566281(v=vs.85)) extension function to release those buffers.
 
 ### Managing Memory Access
 
@@ -51,10 +50,4 @@ The switch typically registers RDMA buffers only if it transfers application dat
 Before the switch closes a socket, the switch calls either **WSPDeregisterMemory** or **WSPDeregisterRdmaMemory** functions of a SAN service provider to release any memory that a pending data transfer operation is not currently using. The SAN service provider must also release memory associated with outstanding data transfer operations.
 
  
-
- 
-
-
-
-
 

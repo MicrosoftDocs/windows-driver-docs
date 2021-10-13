@@ -1,7 +1,6 @@
 ---
 title: Methods for Specifying Pages
 description: Methods for Specifying Pages
-ms.assetid: 76006a2b-37b9-4490-913e-dcfc01812d43
 keywords:
 - Common Property Sheet User Interface WDK print , specifying pages
 - CPSUI WDK print , specifying pages
@@ -18,9 +17,9 @@ ms.localizationpriority: medium
 
 
 
-An application can use any of three methods to specify property sheet pages to CPSUI. Each of the following methods involves calling CPSUI's [**ComPropSheet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nc-compstui-pfncompropsheet) function, specifying one of the [ComPropSheet function codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index).
+An application can use any of three methods to specify property sheet pages to CPSUI. Each of the following methods involves calling CPSUI's [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function, specifying one of the [ComPropSheet function codes](/windows-hardware/drivers/ddi/_print/index).
 
--   Supplying a [**COMPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/ns-compstui-_compropsheetui) structure
+-   Supplying a [**COMPROPSHEETUI**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_compropsheetui) structure
 
     If an application describes a property sheet page by passing a COMPROPSHEETUI structure to **ComPropSheet**, it can:
 
@@ -33,16 +32,9 @@ An application can use any of three methods to specify property sheet pages to C
 
 -   Supplying a callback function
 
-    An application can pass [**ComPropSheet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nc-compstui-pfncompropsheet) the address of a [**PFNPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nc-compstui-pfnpropsheetui)-typed callback function, which CPSUI immediately calls. The callback function is responsible for calling **ComPropSheet** itself to create property sheet pages.
+    An application can pass [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) the address of a [**PFNPROPSHEETUI**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfnpropsheetui)-typed callback function, which CPSUI immediately calls. The callback function is responsible for calling **ComPropSheet** itself to create property sheet pages.
 
-    The print spooler uses this method to inform CPSUI of the existence a printer interface DLL's **DrvDocumentPropertySheets** and *Pscript* drivers use the technique to inform CPSUI of the existence of [**IPrintOemUI::DocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui-documentpropertysheets) and [**IPrintOemUI::DevicePropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui-devicepropertysheets) COM methods in [user interface plug-ins](user-interface-plug-ins.md).
+    The print spooler uses this method to inform CPSUI of the existence a printer interface DLL's [**DrvDocumentPropertySheets**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets) and [**DrvDevicePropertySheets**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicepropertysheets) functions. Likewise, the *Unidrv* and *Pscript* drivers use the technique to inform CPSUI of the existence of [**IPrintOemUI::DocumentPropertySheets**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-documentpropertysheets) and [**IPrintOemUI::DevicePropertySheets**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-devicepropertysheets) COM methods in [user interface plug-ins](user-interface-plug-ins.md).
 
 Whichever method is used for specifying new pages, the pages must be assigned to a [group parent](group-parent.md) by passing a group parent handle to the **ComPropSheet** function.
-
- 
-
- 
-
-
-
 

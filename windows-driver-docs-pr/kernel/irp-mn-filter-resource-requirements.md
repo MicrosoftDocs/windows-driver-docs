@@ -2,7 +2,6 @@
 title: IRP_MN_FILTER_RESOURCE_REQUIREMENTS
 description: The PnP manager sends this IRP to a device stack so the function driver can adjust the resources required by the device, if appropriate.The function driver typically handles this IRP.
 ms.date: 08/12/2017
-ms.assetid: f43dc60e-de88-4af0-ad83-3ce3a414d880
 keywords:
  - IRP_MN_FILTER_RESOURCE_REQUIREMENTS Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -19,12 +18,15 @@ The parent bus driver (and bus filter drivers) should not handle this request fo
 
 Upper and lower-filter drivers do not handle this IRP.
 
-Major Code
-----------
+## Value
+
+0x0D
+
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-When Sent
----------
+
+## When Sent
 
 The PnP manager sends this IRP when it is preparing to allocate resource(s) to a device.
 
@@ -33,7 +35,7 @@ The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in the context of an arbit
 ## Input Parameters
 
 
-**Irp-&gt;IoStatus.Information** points to an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_resource_requirements_list) containing the hardware resource requirements for the device. The pointer is **NULL** if the device consumes no hardware resources.
+**Irp-&gt;IoStatus.Information** points to an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_requirements_list) containing the hardware resource requirements for the device. The pointer is **NULL** if the device consumes no hardware resources.
 
 **Parameters.FilterResourceRequirements.IoResourceRequirementList** also points to an **IO\_RESOURCE\_REQUIREMENTS\_LIST**, but the function driver should use the list in the **IoStatus** block.
 
@@ -45,14 +47,13 @@ Returned in the I/O status block.
 ## I/O Status Block
 
 
-If a function driver handles this IRP, it handles it on the IRP's way back up the stack. If the function driver handles the IRP successfully, it sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS and sets **Irp-&gt;IoStatus.Information** to a pointer to an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_resource_requirements_list) containing the filtered resource requirements. See the "Operation" section below for more information about setting the filtered resource list. If a function driver encounters an error when handling this IRP, it sets the error in **Irp-&gt;IoStatus.Status**. If a function driver does not handle this IRP, it uses [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) to pass the IRP down the stack unchanged.
+If a function driver handles this IRP, it handles it on the IRP's way back up the stack. If the function driver handles the IRP successfully, it sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS and sets **Irp-&gt;IoStatus.Information** to a pointer to an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_requirements_list) containing the filtered resource requirements. See the "Operation" section below for more information about setting the filtered resource list. If a function driver encounters an error when handling this IRP, it sets the error in **Irp-&gt;IoStatus.Status**. If a function driver does not handle this IRP, it uses [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) to pass the IRP down the stack unchanged.
 
 Upper and lower-filter drivers do not handle this IRP. Such a driver calls **IoSkipCurrentIrpStackLocation**, passes the IRP down to the next driver, must not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
 
 The parent bus driver does not handle this IRP. It leaves **Irp-&gt;IoStatus** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 The PnP manager sends an [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request to the parent bus driver for the device, before the function driver has attached its device object to the device stack. To give the function driver an opportunity to modify the device's resource requirements, if appropriate, the PnP manager later sends an **IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS** request to the full device stack. The PnP manager sends this IRP before it allocates hardware resources to the device during initial device configuration. The PnP manager might also send this IRP during resource rebalancing.
 
@@ -66,24 +67,23 @@ When the PnP manager sends this IRP, it supplies the driver stack with a resourc
 
 -   Boot configuration (modified from a resource list to a resource requirements list)
 
-If a function driver handles this IRP, it must set a completion routine and handle the IRP on its way back up the device stack. See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for information about handling a PnP IRP on its way back up the device stack.
+If a function driver handles this IRP, it must set a completion routine and handle the IRP on its way back up the device stack. See [Plug and Play](./introduction-to-plug-and-play.md) for information about handling a PnP IRP on its way back up the device stack.
 
-If the function driver is not changing the size of the current list pointed to by **Irp-&gt;IoStatus.Information**, the driver can modify the list in place. If the driver needs to change the size of the requirements list, the driver must allocate a new [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_resource_requirements_list) list from paged memory and free the previous list. The PnP manager frees the returned structure when it is no longer needed.
+If the function driver is not changing the size of the current list pointed to by **Irp-&gt;IoStatus.Information**, the driver can modify the list in place. If the driver needs to change the size of the requirements list, the driver must allocate a new [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_requirements_list) list from paged memory and free the previous list. The PnP manager frees the returned structure when it is no longer needed.
 
 A function driver must preserve the order of resources in the list pointed to by **Irp-&gt;IoStatus.Information** and must not alter resource tags that it does not handle. The driver must take care to adjust the requirements list in a way that the device's parent bus supports. If a function driver adds a new resource to the requirements list, and that resource is assigned to the device, the function driver should filter that resource out of the [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md) before passing the start IRP down to the bus driver.
 
 If the function driver for the device does not handle this IRP, the PnP manager uses the resource requirements as specified by the parent bus driver in response to the [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request.
 
-A function driver must be prepared to handle this IRP for a device at any time after the driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine has been called for the device.
+A function driver must be prepared to handle this IRP for a device at any time after the driver's [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine has been called for the device.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -101,18 +101,13 @@ Requirements
 ## See also
 
 
-[**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag)
+[**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
-[**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-exfreepool)
+[**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool)
 
-[**IO\_RESOURCE\_REQUIREMENTS\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_resource_requirements_list)
+[**IO\_RESOURCE\_REQUIREMENTS\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_requirements_list)
 
 [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Types of Device Property Page Providers
 description: Types of Device Property Page Providers
-ms.assetid: b467543e-6907-44e5-b407-637cad7f6d78
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ You can supply custom device property pages by using the following types of prop
 
 -   **Class Installers and Co-installers.**
 
-    A [co-installer](writing-a-co-installer.md) can provide one or more custom device property pages by supporting the [**DIF_ADDPROPERTYPAGE_ADVANCED**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-addpropertypage-advanced) device installation function (DIF) code. When an installer that supplies property pages handles a **DIF_ADDPROPERTYPAGE_ADVANCED** request, it sets the address of a dialog box procedure for the property page.
+    A [co-installer](writing-a-co-installer.md) can provide one or more custom device property pages by supporting the [**DIF_ADDPROPERTYPAGE_ADVANCED**](./dif-addpropertypage-advanced.md) device installation function (DIF) code. When an installer that supplies property pages handles a **DIF_ADDPROPERTYPAGE_ADVANCED** request, it sets the address of a dialog box procedure for the property page.
 
     The co-installer that is part of the Toaster sample in the Windows Driver Kit (WDK) supports this type of device property page provider. It is located in the *src\\general\\toaster\\classinstaller* subdirectory of the WDK.
 
@@ -40,10 +39,4 @@ You can supply custom device property pages by using the following types of prop
 All types of device property page providers must follow the guidelines described in [General Requirements for Device Property Page Providers](general-requirements-for-device-property-page-providers.md).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Transitioning to a Sleeping State
 description: Transitioning to a Sleeping State
-ms.assetid: cea326dd-7235-41a3-ad37-19549533a8dd
 keywords:
 - network interface cards WDK networking , transitioning power states
 - NICs WDK networking , transitioning power states
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 
 
-If a miniport driver supports wake-up events, NDIS sends the driver an [OID\_PNP\_ENABLE\_WAKE\_UP](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-enable-wake-up) request before sending an [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) request. For more information, see [Enabling Wake-Up Events](enabling-wake-up-events.md). A miniport driver must not fail an OID\_PNP\_SET\_POWER request.
+If a miniport driver supports wake-up events, NDIS sends the driver an [OID\_PNP\_ENABLE\_WAKE\_UP](./oid-pnp-enable-wake-up.md) request before sending an [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md) request. For more information, see [Enabling Wake-Up Events](enabling-wake-up-events.md). A miniport driver must not fail an OID\_PNP\_SET\_POWER request.
 
 Before returning NDIS\_STATUS\_SUCCESS in response to an OID\_PNP\_SET\_POWER request, the miniport driver must:
 
@@ -31,10 +30,4 @@ Before returning NDIS\_STATUS\_SUCCESS in response to an OID\_PNP\_SET\_POWER re
 -   Disable interrupts and the network adapter's DMA engine. A miniport driver cannot access the network adapter hardware after the network adapter has been set to the D3 state by the bus driver.
 
  
-
- 
-
-
-
-
 

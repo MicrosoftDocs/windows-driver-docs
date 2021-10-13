@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RECEIVE_COALESCING_CAPABILITIES
 description: WDI_TLV_RECEIVE_COALESCING_CAPABILITIES is a TLV that contains hardware assisted receive filter capabilities.
-ms.assetid: 87BC1F55-90C6-4B22-9E8E-A54FF42515F3
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RECEIVE_COALESCING_CAPABILITIES Network Drivers Starting with Windows Vista
@@ -75,8 +74,8 @@ The sum (in bytes) of the sizes of all contained elements.
 </dd>
 <dt>NDIS_RECEIVE_FILTER_VM_QUEUE_SUPPORTED</dt>
 <dd><p>The network adapter provides the minimum requirements to support VM queue packet filtering. The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV interface.</p>
-<p>For more information about VMQ requirements for VM queue packet filtering, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/setting-and-clearing-vmq-filters" data-raw-source="[Setting and Clearing VMQ Filters](https://docs.microsoft.com/windows-hardware/drivers/network/setting-and-clearing-vmq-filters)">Setting and Clearing VMQ Filters</a>.</p>
-<p>For more information about SR-IOV requirements for VM queue packet filtering, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/setting-a-receive-filter-on-a-virtual-port" data-raw-source="[Setting a Receive Filter on a Virtual Port](https://docs.microsoft.com/windows-hardware/drivers/network/setting-a-receive-filter-on-a-virtual-port)">Setting a Receive Filter on a Virtual Port</a>.</p>
+<p>For more information about VMQ requirements for VM queue packet filtering, see <a href="/windows-hardware/drivers/network/setting-and-clearing-vmq-filters" data-raw-source="[Setting and Clearing VMQ Filters](./setting-and-clearing-vmq-filters.md)">Setting and Clearing VMQ Filters</a>.</p>
+<p>For more information about SR-IOV requirements for VM queue packet filtering, see <a href="/windows-hardware/drivers/network/setting-a-receive-filter-on-a-virtual-port" data-raw-source="[Setting a Receive Filter on a Virtual Port](./setting-a-receive-filter-on-a-virtual-port.md)">Setting a Receive Filter on a Virtual Port</a>.</p>
 </dd>
 <dt>NDIS_RECEIVE_FILTER_LOOKAHEAD_SPLIT_SUPPORTED</dt>
 <dd><p>The network adapter supports VM queues that split an incoming received packet at the lookahead offset. This offset is equal to or greater than the requested lookahead size. The network adapter uses DMA to transfer the lookahead and post-lookahead data to separate shared memory segments.</p>
@@ -90,8 +89,8 @@ The sum (in bytes) of the sizes of all contained elements.
 <dt>NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED</dt>
 <dd><p>The network adapter supports the ability to dynamically change one of the following processor affinity attributes:</p>
 <ul>
-<li><p>The processor affinity of a VM queue in the VMQ interface. The processor affinity is changed through an OID set request of <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-queue-parameters" data-raw-source="[OID_RECEIVE_FILTER_QUEUE_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-queue-parameters)">OID_RECEIVE_FILTER_QUEUE_PARAMETERS</a>.</p></li>
-<li><p>The processor affinity of a nondefault virtual port (VPort), which was created in the SR-IOV interface and is attached to the PCI Express (PCIe) physical function (PF) of the network adapter. The processor affinity is changed through an OID set request of <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-vport-parameters" data-raw-source="[OID_NIC_SWITCH_VPORT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-vport-parameters)">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.</p></li>
+<li><p>The processor affinity of a VM queue in the VMQ interface. The processor affinity is changed through an OID set request of <a href="/windows-hardware/drivers/network/oid-receive-filter-queue-parameters" data-raw-source="[OID_RECEIVE_FILTER_QUEUE_PARAMETERS](./oid-receive-filter-queue-parameters.md)">OID_RECEIVE_FILTER_QUEUE_PARAMETERS</a>.</p></li>
+<li><p>The processor affinity of a nondefault virtual port (VPort), which was created in the SR-IOV interface and is attached to the PCI Express (PCIe) physical function (PF) of the network adapter. The processor affinity is changed through an OID set request of <a href="/windows-hardware/drivers/network/oid-nic-switch-vport-parameters" data-raw-source="[OID_NIC_SWITCH_VPORT_PARAMETERS](./oid-nic-switch-vport-parameters.md)">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.</p></li>
 </ul>
 </dd>
 <dt>NDIS_RECEIVE_FILTER_INTERRUPT_VECTOR_COALESCING_SUPPORTED</dt>
@@ -274,7 +273,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tr>
 <tr class="odd">
 <td>UINT32</td>
-<td>The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-packet-coalescing" data-raw-source="[NDIS Packet Coalescing](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-packet-coalescing)">NDIS Packet Coalescing</a>.
+<td>The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="/windows-hardware/drivers/network/ndis-packet-coalescing" data-raw-source="[NDIS Packet Coalescing](./ndis-packet-coalescing.md)">NDIS Packet Coalescing</a>.
 <div class="alert">
 <strong>Note</strong>  Network adapters that support packet coalescing must support five or more packet header fields that can be specified for a single packet coalescing filter. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.
 </div>
@@ -297,8 +296,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -324,12 +322,5 @@ Requirements
 ## See also
 
 
-[**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities)
-
- 
-
- 
-
-
-
+[**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities)
 

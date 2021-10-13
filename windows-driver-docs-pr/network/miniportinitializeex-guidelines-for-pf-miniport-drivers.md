@@ -1,7 +1,6 @@
 ---
 title: MiniportInitializeEx Guidelines for PF Miniport Drivers
 description: MiniportInitializeEx Guidelines for PF Miniport Drivers
-ms.assetid: 338035E7-7677-49FE-A06D-CCFD813B0C10
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,17 +8,17 @@ ms.localizationpriority: medium
 # MiniportInitializeEx Guidelines for PF Miniport Drivers
 
 
-This topic describes the guidelines for writing a [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function for the miniport driver of the PCI Express (PCIe) Physical Function (PF). The PF is a component of a network adapter that supports single root I/O virtualization (SR-IOV).
+This topic describes the guidelines for writing a [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function for the miniport driver of the PCI Express (PCIe) Physical Function (PF). The PF is a component of a network adapter that supports single root I/O virtualization (SR-IOV).
 
 **Note**  These guidelines only apply to PF miniport drivers. For initialization guidelines for the miniport driver of a PCIe Virtual Function (VF) of the adapter, see [Initializing a VF Miniport Driver](initializing-a-vf-miniport-driver.md).
 
  
 
-The PF miniport driver follows the same steps as any NDIS miniport driver when its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function. For more information about these steps, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).
+The PF miniport driver follows the same steps as any NDIS miniport driver when its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. For more information about these steps, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).
 
-In addition to these steps, the PF miniport driver must follow these additional steps when NDIS calls the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function:
+In addition to these steps, the PF miniport driver must follow these additional steps when NDIS calls the driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function:
 
-1.  The PF miniport driver calls the [**NdisGetHypervisorInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisgethypervisorinfo) function to verify that it is running in the Hyper-V parent partition. This function returns an [**NDIS\_HYPERVISOR\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_hypervisor_info) structure that defines the partition type. If the partition type is reported as **NdisHypervisorPartitionMsHvParent**, the miniport driver is running in the Hyper-V parent partition that is attached to the PF on the adapter.
+1.  The PF miniport driver calls the [**NdisGetHypervisorInfo**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgethypervisorinfo) function to verify that it is running in the Hyper-V parent partition. This function returns an [**NDIS\_HYPERVISOR\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_hypervisor_info) structure that defines the partition type. If the partition type is reported as **NdisHypervisorPartitionMsHvParent**, the miniport driver is running in the Hyper-V parent partition that is attached to the PF on the adapter.
 
     **Note**  If the partition type is reported as **NdisHypervisorPartitionMsHvChild**, the miniport driver is running in the Hyper-V child partition that is attached to a VF on the adapter. In this case, the miniport driver must not initialize as a PF driver. If possible, the driver must initialize as a VF driver as described in [Initializing a VF Miniport Driver](initializing-a-vf-miniport-driver.md).
 
@@ -27,7 +26,7 @@ In addition to these steps, the PF miniport driver must follow these additional 
 
 2.  The PF miniport driver must read the SR-IOV standardized keywords to determine whether SR-IOV is enabled and obtain the NIC switch configuration settings. For more information about these keywords, see [Standardized INF Keywords for SR-IOV](standardized-inf-keywords-for-sr-iov.md).
 
-    **Note**  If the PF miniport driver registered an entry point to a [*MiniportSetOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options) function, the driver may have previously obtained these settings from the registry when NDIS called *MiniportSetOptions*.
+    **Note**  If the PF miniport driver registered an entry point to a [*MiniportSetOptions*](/windows-hardware/drivers/ddi/ndis/nc-ndis-set_options) function, the driver may have previously obtained these settings from the registry when NDIS called *MiniportSetOptions*.
 
      
 
@@ -51,23 +50,17 @@ In addition to these steps, the PF miniport driver must follow these additional 
 
     For more information on reporting the receive filtering capabilities, see [Determining Receive Filtering Capabilities](determining-receive-filtering-capabilities.md).
 
-7.  If the miniport driver supports static NIC switch creation, it must do the following in the context of the call to [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize).
+7.  If the miniport driver supports static NIC switch creation, it must do the following in the context of the call to [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize).
 
     -   The driver configures the adapter hardware based on the NIC switch standardized keyword settings. Based on these settings, the driver allocates the necessary hardware and software resources for the NIC switch.
 
-    -   The miniport driver calls [**NdisMEnableVirtualization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismenablevirtualization) to enable SR-IOV and set the number of VFs on the network adapter. This function configures the SR-IOV Extended Capability in the adapter's PCI configuration space. If this function returns NDIS\_STATUS\_SUCCESS, SR-IOV is enabled and the VFs are exposed over the PCIe interface.
+    -   The miniport driver calls [**NdisMEnableVirtualization**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismenablevirtualization) to enable SR-IOV and set the number of VFs on the network adapter. This function configures the SR-IOV Extended Capability in the adapter's PCI configuration space. If this function returns NDIS\_STATUS\_SUCCESS, SR-IOV is enabled and the VFs are exposed over the PCIe interface.
 
     For more information, see [Static Creation of a NIC Switch](static-creation-of-a-nic-switch.md).
 
-    **Note**  If the miniport driver supports dynamic NIC switch creation, it creates the switch and enables virtualization when it handles an object identifier (OID) method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-switch). For more information, see [Dynamic Creation of a NIC Switch](dynamic-creation-of-a-nic-switch.md).
+    **Note**  If the miniport driver supports dynamic NIC switch creation, it creates the switch and enables virtualization when it handles an object identifier (OID) method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](./oid-nic-switch-create-switch.md). For more information, see [Dynamic Creation of a NIC Switch](dynamic-creation-of-a-nic-switch.md).
 
      
 
  
-
- 
-
-
-
-
 

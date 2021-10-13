@@ -1,7 +1,6 @@
 ---
 title: Overview of SerCx2 I/O Transactions
 description: SerCx2 handles a read or write request from a client by issuing one or more I/O transactions to the serial controller driver.
-ms.assetid: 04DDFE53-4855-4029-BE1E-9D184B02A998
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -53,12 +52,7 @@ If SerCx2 needs to split a read or write request into two or more I/O transactio
 
 When the serial controller driver registers a set of callback functions to support system-DMA transactions or custom transactions, the driver supplies parameter values that describe the capabilities of the hardware that will be performing these transactions. For example, for system-DMA transactions, the parameters include the alignment requirements, and the minimum and maximum transfer lengths that the system DMA controller supports. SerCx2 uses these parameters to decide whether to process a read or write request as a PIO transaction or a system-DMA transaction, and whether to split the request into two or more I/O transactions.
 
-However, a serial controller might have special hardware capabilities that cannot adequately be described by the parameters that the serial controller driver supplies to SerCx2. Thus, the driver might have access to hardware-dependent information that enables the driver to make better decisions than SerCx2 about how to partition a read or write request into one or more I/O transactions. As an option, such a driver can implement [*EvtSerCx2SelectNextReceiveTransactionType*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sercx/nc-sercx-evt_sercx2_select_next_receive_transaction_type) and [*EvtSerCx2SelectNextTransmitTransactionType*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sercx/nc-sercx-evt_sercx2_select_next_transmit_transaction_type) event callback functions. SerCx2 calls these functions, if they are implemented, to let the driver decide what I/O transactions to use to satisfy a read or write request.
+However, a serial controller might have special hardware capabilities that cannot adequately be described by the parameters that the serial controller driver supplies to SerCx2. Thus, the driver might have access to hardware-dependent information that enables the driver to make better decisions than SerCx2 about how to partition a read or write request into one or more I/O transactions. As an option, such a driver can implement [*EvtSerCx2SelectNextReceiveTransactionType*](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_select_next_receive_transaction_type) and [*EvtSerCx2SelectNextTransmitTransactionType*](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_select_next_transmit_transaction_type) event callback functions. SerCx2 calls these functions, if they are implemented, to let the driver decide what I/O transactions to use to satisfy a read or write request.
 
  
-
- 
-
-
-
 

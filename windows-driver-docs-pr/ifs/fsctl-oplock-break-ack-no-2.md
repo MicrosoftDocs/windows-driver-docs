@@ -1,7 +1,6 @@
 ---
 title: FSCTL_OPLOCK_BREAK_ACK_NO_2 control code
 description: The FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2 control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
-ms.assetid: f76c98ba-e0bf-4b86-bda4-92f233ea5839
 keywords: ["FSCTL_OPLOCK_BREAK_ACK_NO_2 control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -22,7 +21,7 @@ The **FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2** control code responds to notification t
 
 A client application sends this control code to indicate that it acknowledges the oplock break and that, if the oplock is a level 1 oplock that was broken to level 2, it does not want the level 2 oplock.
 
-To process this control code, a minifilter calls [**FltOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltoplockfsctrl) with the following parameters. A file system or legacy filter driver calls [**FsRtlOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl).
+To process this control code, a minifilter calls [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) with the following parameters. A file system or legacy filter driver calls [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl).
 
 For more information about opportunistic locking and about the FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2 control code, see the Microsoft Windows SDK documentation.
 
@@ -32,20 +31,19 @@ For more information about opportunistic locking and about the FSCTL\_OPLOCK\_BR
 Opaque oplock object pointer for the file.
 
 <a href="" id="callbackdata"></a>*CallbackData*  
-[**FltOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltoplockfsctrl) only. Callback data ([**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)) structure for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2.
+[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) only. Callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2.
 
 <a href="" id="irp"></a>*Irp*  
-[**FsRtlOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) only. IRP for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2.
+[**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) only. IRP for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2.
 
 <a href="" id="opencount"></a>*OpenCount*  
 Not used with this operation; set to zero.
 
-Status block
-------------
+## Status block
 
-[**FltOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltoplockfsctrl) always returns FLT\_PREOP\_COMPLETE for this operation.
+[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) always returns FLT\_PREOP\_COMPLETE for this operation.
 
-[**FsRtlOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) returns one of the following NTSTATUS values for this operation:
+[**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) returns one of the following NTSTATUS values for this operation:
 
 <table>
 <colgroup>
@@ -72,8 +70,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,13 +88,13 @@ Requirements
 ## See also
 
 
-[**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)
+[**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters)
+[**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 
 [**FLT\_PARAMETERS for IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
 
-[**FltOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltoplockfsctrl)
+[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl)
 
 [**FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING**](fsctl-opbatch-ack-close-pending.md)
 
@@ -113,16 +110,9 @@ Requirements
 
 [**FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2**](fsctl-request-oplock-level-2.md)
 
-[**FsRtlOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl)
+[**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl)
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
  
-
- 
-
-
-
-
-
 

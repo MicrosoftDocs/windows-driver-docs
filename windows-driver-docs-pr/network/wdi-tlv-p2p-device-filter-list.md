@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_FILTER_LIST
 description: WDI_TLV_P2P_DEVICE_FILTER_LIST is a TLV that contains a list of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discovery.
-ms.assetid: 56D1E6BD-41E3-4869-A821-334012B781A7
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DEVICE_FILTER_LIST Network Drivers Starting with Windows Vista
@@ -21,19 +20,18 @@ WDI\_TLV\_P2P\_DEVICE\_FILTER\_LIST is a TLV that contains a list of Wi-Fi Direc
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
+The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
 
 ## Values
 
 
 | Type                                                  | Description                                                                                         |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | A list of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discovery. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | A list of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discovery. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,173 +1,166 @@
 - name: "NFC design guide"
+  href: index.md
+- name: "NFC device drivers in Windows 10"
+  href: what-s-new-in-nfc-device-drivers.md
+- name: "NFC architecture"
+  href: nfc-architecture.md
+- name: "Wi-Fi direct pairing implementation"
+  href: wi-fi-direct-paring-implementation.md
+- name: "Near Field Proximity (NFP)"
 # Auto-expanded node
   items: 
-  - name: "NFC design guide"
-    href: index.md
-  - name: "What's new in NFC device drivers"
-    href: what-s-new-in-nfc-device-drivers.md
-  - name: "NFC architecture"
-    href: nfc-architecture.md
-  - name: "Wi-Fi direct pairing implementation"
-    href: wi-fi-direct-paring-implementation.md
   - name: "Near Field Proximity design guide"
+    href: nfp-design-guide.md
+  - name: "Tap and Do"
 # Auto-expanded node
     items: 
-    - name: "Near Field Proximity design guide"
-      href: nfp-design-guide.md
-    - name: "Tap and Do"
+    - name: "Tap and Do scenarios"
+      href: tap-and-do-scenarios.md
+    - name: "Tap and Do use cases"
+      href: tap-and-do-use-cases.md
+  - name: "NFP provider"
 # Auto-expanded node
-      items: 
-      - name: "Tap and Do"
-        href: tap-and-do.md
-      - name: "Tap and Do scenarios"
-        href: tap-and-do-scenarios.md
-      - name: "Tap and Do use cases"
-        href: tap-and-do-use-cases.md
+    items: 
     - name: "NFP provider model"
+      href: nfp-provider-model.md
+    - name: "Physical sensor model"
+      href: physical-sensor-model.md
+    - name: "Message type"
+      href: message-type.md
+    - name: "Publishing messages"
+      href: publishing-messages.md
+    - name: "Subscribing for messages"
+      href: subscribing-for-messages.md
+    - name: "Message transmission"
+      href: message-transmission.md
+    - name: "Proximity device presence events"
+      href: proximity-device-presence-events.md
+    - name: "NFP-facilitated peripheral wireless device pairing"
+      href: nfp-facilitated-peripheral-wireless-device-pairing.md
+  - name: "NFP device drivers"
 # Auto-expanded node
-      items: 
-      - name: "NFP provider model"
-        href: nfp-provider-model.md
-      - name: "Physical sensor model"
-        href: physical-sensor-model.md
-      - name: "Message type"
-        href: message-type.md
-      - name: "Publishing messages"
-        href: publishing-messages.md
-      - name: "Subscribing for messages"
-        href: subscribing-for-messages.md
-      - name: "Message transmission"
-        href: message-transmission.md
-      - name: "Proximity device presence events"
-        href: proximity-device-presence-events.md
-      - name: "NFP-facilitated peripheral wireless device pairing"
-        href: nfp-facilitated-peripheral-wireless-device-pairing.md
+    items: 
     - name: "NFP device driver requirements"
-# Auto-expanded node
-      items: 
-      - name: "NFP device driver requirements"
-        href: nfp-device-driver-requirements.md
-      - name: "Device identifiers"
-        href: device-identifiers.md
-      - name: "Device interface"
-        href: device-interface.md
-      - name: "Publishing messages"
-        href: publication.md
-      - name: "Message subscriptions"
-        href: message-subscriptions.md
-      - name: "Subscribing for presence events"
-        href: subscribing-for-presence-events.md
-      - name: "Enabling"
-        href: enabling.md
-      - name: "Disabling"
-        href: disabling.md
-      - name: "Maximum message size"
-        href: maximum-message-size.md
-      - name: "Transmission rate"
-        href: transmission-rate.md
-      - name: "Tag writing"
-        href: tag-writing.md
-      - name: "Reserved IOCTL codes"
-        href: reserved-ioctl-codes.md
-      - name: "Power management"
-        href: power-management.md
-      - name: "Protocol support"
-# Auto-expanded node
-        items: 
-        - name: "Protocol support"
-          href: protocol-support.md
-        - name: "NDEF protocol"
-          href: ndef-protocol.md
-        - name: "Pairing:Bluetooth protocol"
-          href: pairing-bluetooth-protocol.md
-        - name: "WindowsUri protocol"
-          href: windowsuri-protocol.md
-        - name: "WindowsMime protocol"
-          href: windowsmime-protocol.md
-        - name: "WriteableTag protocol"
-          href: writeabletag-protocol.md
-        - name: "Windows protocol"
-          href: windows-protocol.md
-        - name: "Peer-to-peer"
-          href: peer-to-peer.md
-  - name: "Smart card design guide"
-# Auto-expanded node
-    items: 
-    - name: "Smart card design guide"
-      href: design-guide-smart-card.md
-    - name: "Functional flow"
-      href: functional-flow.md
-    - name: "Example sequence"
-      href: example-sequence.md
-    - name: "Storage card requirements"
-      href: storage-card-requirements.md
-    - name: "Supported smart card attributes"
-      href: smart-card-attributes.md
-    - name: "PC/SC interface"
-      href: pc-sc-interface.md
-  - name: "Power management"
-# Auto-expanded node
-    items: 
+      href: nfp-device-driver-requirements.md
+    - name: "Device identifiers"
+      href: device-identifiers.md
+    - name: "Device interface"
+      href: device-interface.md
+    - name: "Publishing messages"
+      href: publication.md
+    - name: "Message subscriptions"
+      href: message-subscriptions.md
+    - name: "Subscribing for presence events"
+      href: subscribing-for-presence-events.md
+    - name: "Enabling"
+      href: enabling.md
+    - name: "Disabling"
+      href: disabling.md
+    - name: "Maximum message size"
+      href: maximum-message-size.md
+    - name: "Transmission rate"
+      href: transmission-rate.md
+    - name: "Tag writing"
+      href: tag-writing.md
+    - name: "Reserved IOCTL codes"
+      href: reserved-ioctl-codes.md
     - name: "Power management"
-      href: nfc-power-management.md
-    - name: "Polling"
-      href: polling.md
-  - name: "NFC class extension (CX) design guide"
-# Auto-expanded node
-    items: 
-    - name: "NFC class extension (CX) design guide"
-      href: nfc-class-extension-.md
-    - name: "Glossary"
-      href: glossary.md
-    - name: "NFC CX quick start guide"
-      href: nfc-class-extension-quickstart.md
-    - name: "Architecture"
-      href: architecture.md
-    - name: "NFC stack architecture"
-      href: nfc-stack-architecture.md
-    - name: "Driver load order"
-      href: driver-load-order.md
-    - name: "Class extension interface"
-      href: nfc-class-extension-interface.md
-    - name: "Class extension state machine"
-      href: nfc-class-extension-state-machine.md
-    - name: "Extensibility model"
+      href: power-management.md
+    - name: "Protocol support for NFP drivers"
 # Auto-expanded node
       items: 
-      - name: "Extensibility model"
-        href: extensibility-model.md
-      - name: "Sequence handling"
+      - name: "NDEF protocol"
+        href: ndef-protocol.md
+      - name: "Pairing:Bluetooth protocol"
+        href: pairing-bluetooth-protocol.md
+      - name: "WindowsUri protocol"
+        href: windowsuri-protocol.md
+      - name: "WindowsMime protocol"
+        href: windowsmime-protocol.md
+      - name: "WriteableTag protocol"
+        href: writeabletag-protocol.md
+      - name: "Windows protocol"
+        href: windows-protocol.md
+      - name: "Peer-to-peer"
+        href: peer-to-peer.md
+- name: "Smart card design guide"
 # Auto-expanded node
-        items: 
-        - name: "Sequence handling"
-          href: sequence-handling.md
-        - name: "Sequences"
-          href: sequences.md
-        - name: "Sequence flags"
-          href: sequence-flags.md
-        - name: "Initialization sequence"
-          href: initialization-sequence.md
-        - name: "NFCEE discovery sequence"
-          href: nfcee-discovery-sequence.md
-        - name: "RF discovery sequence"
-          href: rf-discovery-sequence.md
-        - name: "Tag RF data exchange sequence"
-          href: tag-rf-data-exchange-sequence.md
-        - name: "P2P RF data exchange sequence"
-          href: p2p-rf-data-exchange-sequence.md
-        - name: "Card emulation RF sequence"
-          href: card-emulation-rf-sequence.md
-      - name: "NCI packet handling"
-        href: packet-handling.md
-    - name: "Configurability"
-      href: configurability.md
-    - name: "Error handling"
-      href: error-handling.md
-    - name: "Power states"
-      href: power-states.md
-    - name: "NFC client driver power management requirements"
-      href: nfc-client-driver-power-management-requirements.md
-    - name: "Logging"
-      href: logging.md
-    - name: "Persisted data"
-      href: persisted-data.md
+  items: 
+  - name: "Smart card design guide"
+    href: design-guide-smart-card.md
+  - name: "Functional flow for Smart Card"
+    href: functional-flow.md
+  - name: "Example sequence"
+    href: example-sequence.md
+  - name: "Storage card requirements"
+    href: storage-card-requirements.md
+  - name: "Supported smart card attributes"
+    href: smart-card-attributes.md
+  - name: "PC/SC interface"
+    href: pc-sc-interface.md
+- name: "Power management"
+# Auto-expanded node
+  items: 
+  - name: "NFC Power management"
+    href: nfc-power-management.md
+  - name: "NFC Polling"
+    href: polling.md
+- name: "NFC class extension (CX)"
+# Auto-expanded node
+  items: 
+  - name: "NFC class extension (CX) design guide"
+    href: nfc-class-extension-.md
+  - name: "Glossary"
+    href: glossary.md
+  - name: "NFC CX quick start guide"
+    href: nfc-class-extension-quickstart.md
+  - name: "Architecture"
+    href: architecture.md
+  - name: "NFC stack architecture"
+    href: nfc-stack-architecture.md
+  - name: "Driver load order"
+    href: driver-load-order.md
+  - name: "Class extension interface"
+    href: nfc-class-extension-interface.md
+  - name: "Class extension state machine"
+    href: nfc-class-extension-state-machine.md
+  - name: "NFC Class Extensibility model"
+# Auto-expanded node
+    items: 
+    - name: "NFC Class Extensibility model"
+      href: extensibility-model.md
+    - name: "Sequence handling"
+# Auto-expanded node
+      items: 
+      - name: "Sequence handling"
+        href: sequence-handling.md
+      - name: "Sequences"
+        href: sequences.md
+      - name: "Sequence flags"
+        href: sequence-flags.md
+      - name: "Initialization sequence"
+        href: initialization-sequence.md
+      - name: "NFCEE discovery sequence"
+        href: nfcee-discovery-sequence.md
+      - name: "RF discovery sequence"
+        href: rf-discovery-sequence.md
+      - name: "Tag RF data exchange sequence"
+        href: tag-rf-data-exchange-sequence.md
+      - name: "P2P RF data exchange sequence"
+        href: p2p-rf-data-exchange-sequence.md
+      - name: "Card emulation RF sequence"
+        href: card-emulation-rf-sequence.md
+    - name: "NCI packet handling"
+      href: packet-handling.md
+  - name: "Configurability"
+    href: configurability.md
+  - name: "Error handling"
+    href: error-handling.md
+  - name: "Power states"
+    href: power-states.md
+  - name: "NFC client driver power management requirements"
+    href: nfc-client-driver-power-management-requirements.md
+  - name: "Logging"
+    href: logging.md
+  - name: "Persisted data"
+    href: persisted-data.md

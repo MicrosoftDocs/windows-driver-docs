@@ -1,7 +1,6 @@
 ---
 title: SM\_SetPersistentBinding function
 description: The SM\_SetPersistentBinding method sets the bindings that are used by the HBA miniport driver to map the OS-specific LUN information to the fibre channel protocol (FCP) identifiers for the logical units.
-ms.assetid: 722f7216-9ff4-4f12-a4fe-e1f8f9e594e1
 keywords: ["SM_SetPersistentBinding function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_SetPersistentBinding method sets the bindings that are used by the HBA miniport driver to map the OS-specific LUN information to the fibre channel protocol (FCP) identifiers for the logical units.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SetPersistentBinding(
@@ -35,8 +33,7 @@ void SM_SetPersistentBinding(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the port whose persistent bindings will be set.
@@ -59,18 +56,15 @@ The total number of persistent bindings that are retrieved by the SM\_GetPersist
 *EntryStatus*   
 The status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the HBAStatus member of a GetPersistentBinding\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_TargetInformationMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -94,16 +88,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SetPersistentBinding\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_setpersistentbinding_in)
+[**SM\_SetPersistentBinding\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setpersistentbinding_in)
 
-[**SM\_SetPersistentBinding\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_setpersistentbinding_out)
-
- 
+[**SM\_SetPersistentBinding\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setpersistentbinding_out)
 
  
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: OidProcessing rule set (NDIS)
 description: Use these rules to verify that your driver correctly processes OID requests.
-ms.assetid: 0E12778B-BB86-4387-9B8A-19E3876D6F8C
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -36,7 +35,7 @@ Use these rules to verify that your driver correctly processes OID requests.
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="ndis-ndismnetpnpeventinoidrequest.md" data-raw-source="[&lt;strong&gt;NdisMNetPnPEventInOIDRequest&lt;/strong&gt;](ndis-ndismnetpnpeventinoidrequest.md)"><strong>NdisMNetPnPEventInOIDRequest</strong></a></p></td>
-<td align="left"><p>This rule checks that <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismnetpnpevent" data-raw-source="[&lt;strong&gt;NdisMNetPnPEvent&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismnetpnpevent)"><strong>NdisMNetPnPEvent</strong></a> is not called in the context of an OID request.</p></td>
+<td align="left"><p>This rule checks that <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismnetpnpevent" data-raw-source="[&lt;strong&gt;NdisMNetPnPEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismnetpnpevent)"><strong>NdisMNetPnPEvent</strong></a> is not called in the context of an OID request.</p></td>
 </tr>
 </tbody>
 </table>
@@ -55,13 +54,5 @@ Use these rules to verify that your driver correctly processes OID requests.
     msbuild /t:sdv /p:Inputs="/check:OidProcessing.sdv" mydriver.VcxProj /p:Configuration="Win8 Release" /p:Platform=Win32
     ```
 
-    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers) and [Static Driver Verifier commands (MSBuild)](https://docs.microsoft.com/windows-hardware/drivers/devtest/-static-driver-verifier-commands--msbuild-).
-
- 
-
- 
-
-
-
-
+    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md) and [Static Driver Verifier commands (MSBuild)](./-static-driver-verifier-commands--msbuild-.md).
 

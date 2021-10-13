@@ -1,7 +1,6 @@
 ---
 title: Sending Ethernet Frames
 description: Sending Ethernet Frames
-ms.assetid: 9d1037b9-ef5c-4ed8-9204-5729eff2cea3
 keywords:
 - Ethernet WDK networking
 - frames WDK networking
@@ -25,7 +24,7 @@ The Windows TCP/IP transport supports a set of requirements for sending Ethernet
 
 For Ethernet send requests, drivers must support these requirements:
 
--   If a driver originates a send request, the driver should allocate a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure for the Ethernet frames. The **NetBufferListInfo** member in each NET\_BUFFER\_LIST structure must include the out-of-band (OOB) data that is required for the particular use. The OOB data applies to all of the [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structures that are associated with a NET\_BUFFER\_LIST structure.
+-   If a driver originates a send request, the driver should allocate a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure for the Ethernet frames. The **NetBufferListInfo** member in each NET\_BUFFER\_LIST structure must include the out-of-band (OOB) data that is required for the particular use. The OOB data applies to all of the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures that are associated with a NET\_BUFFER\_LIST structure.
 
 -   If a driver originates a send request, the driver should allocate one or more NET\_BUFFER structures for the Ethernet frames and link these structures to the NET\_BUFFER\_LIST structure. Each NET\_BUFFER structure that is linked to a NET\_BUFFER\_LIST structure describes a single Ethernet frame. The driver may chain multiple NET\_BUFFER\_LIST structures in a send request. 
 
@@ -43,10 +42,4 @@ For Ethernet send requests, drivers must support these requirements:
 -   If a driver changes the links in the MDL chain in a NET\_BUFFER structure or the NET\_BUFFER chain in a NET\_BUFFER\_LIST structure, the driver must restore the links to the original configuration before it returns ownership of the NET\_BUFFER\_LIST to an overlying driver. However, drivers are not required to restore the links between NET\_BUFFER\_LIST structures.
 
  
-
- 
-
-
-
-
 

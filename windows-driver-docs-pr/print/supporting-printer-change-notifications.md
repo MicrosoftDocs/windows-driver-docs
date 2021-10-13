@@ -1,7 +1,6 @@
 ---
 title: Supporting Printer Change Notifications
 description: Supporting Printer Change Notifications
-ms.assetid: e75c6f89-9cef-4900-af89-edf1f7f786c7
 keywords:
 - print providers WDK , printer change notifications
 - network print providers WDK , printer change notifications
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 Applications can request notification of the occurrences of print queue events by calling the spooler's **FindFirstPrinterChangeNotification**, **FindNextPrinterChangeNotification**, and **FindClosePrinterChangeNotification** functions, all of which are described in the Microsoft Windows SDK documentation. If you think application writers will want to request event notification for print queues supported by your partial print provider, you must support event notification in your provider as follows:
 
--   Provide a [**FindFirstPrinterChangeNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winspool/nf-winspool-findfirstprinterchangenotification) function.
+-   Provide a [**FindFirstPrinterChangeNotification**](/windows-hardware/drivers/ddi/winspool/nf-winspool-findfirstprinterchangenotification) function.
 
     The spooler calls this function to supply the print provider with the following information:
 
@@ -37,20 +36,15 @@ Applications can request notification of the occurrences of print queue events b
 
     (For a list of the types of notifications an application can request, and for a list of the types of information that can be used to describe an event, see the Windows SDK documentation's description of the Win32 **FindFirstPrinterChangeNotification** function. Types of events for which an application might request notification include adding or deleting a print job or form. Types of information an application might request include job or form parameters.)
 
-    Print providers that are not polled must call [**PartialReplyPrinterChangeNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-partialreplyprinterchangenotification) or [**ReplyPrinterChangeNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-replyprinterchangenotification) when changes occur, to supply the spooler with information describing the changes. The **ReplyPrinterChangeNotification** function must be called at some point because it causes the spooler to signal the application, while the **PartialReplyPrinterChangeNotification** function does not. When the application receives a signal from **ReplyPrinterChangeNotification**, it is supposed to call **FindNextPrinterChangeNotification**. This latter function supplies the application with the event information that the spooler previously received from the print provider.
+    Print providers that are not polled must call [**PartialReplyPrinterChangeNotification**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-partialreplyprinterchangenotification) or [**ReplyPrinterChangeNotification**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-replyprinterchangenotification) when changes occur, to supply the spooler with information describing the changes. The **ReplyPrinterChangeNotification** function must be called at some point because it causes the spooler to signal the application, while the **PartialReplyPrinterChangeNotification** function does not. When the application receives a signal from **ReplyPrinterChangeNotification**, it is supposed to call **FindNextPrinterChangeNotification**. This latter function supplies the application with the event information that the spooler previously received from the print provider.
 
     Print providers that are polled should simply keep track of changes. The spooler signals the application at regular intervals. When the application receives a signal, it is supposed to call the spooler's **FindNextPrinterChangeNotification** function. For polled providers, this function calls the provider's **RefreshPrinterChangeNotification** function.
 
--   Provide a [**RefreshPrinterChangeNotification**](https://docs.microsoft.com/previous-versions/ff561930(v=vs.85)) function.
+-   Provide a [**RefreshPrinterChangeNotification**](/previous-versions/ff561930(v=vs.85)) function.
 
     This function must return the current state of all monitored print queue options, for the specified print queue. The spooler calls this function when an application calls **FindNextPrinterChangeNotification** with the PRINTER\_NOTIFY\_OPTIONS\_REFRESH flag set, as described in the Windows SDK documentation. (Applications are supposed to set this flag if a previous call to **FindNextPrinterChangeNotification** returns a PRINTER\_NOTIFY\_INFO structure with the PRINTER\_NOTIFY\_INFO\_DISCARDED flag set.) Both polled and nonpolled providers must support **RefreshPrinterChangeNotification**.
 
 -   Provide a **FindClosePrinterChangeNotification** function (described in the Windows SDK documentation).
 
  
-
- 
-
-
-
 

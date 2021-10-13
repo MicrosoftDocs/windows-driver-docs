@@ -1,7 +1,6 @@
 ---
 title: ~m (Resume Thread)
 description: The ~m command resumes execution of the specified thread.Do not confuse this command with the m (Move Memory) command.
-ms.assetid: fc4eec45-2a28-4571-abf5-3896b77a52c9
 keywords: ["~m (Resume Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ Specifies the thread or threads to resume. For more information about the syntax
 
 For more information about the suspend count and how suspended threads behave and for a list of other commands that control the suspending and freezing of threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify threads only in user mode. In kernel mode, the tilde (~) refers to a processor.
 

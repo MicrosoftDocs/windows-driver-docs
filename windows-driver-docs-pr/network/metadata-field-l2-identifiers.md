@@ -1,7 +1,6 @@
 ---
 title: Metadata field L2 identifiers
 description: This section describes metadata field L2 identifiers for Windows Filtering Platform callout drivers.
-ms.assetid: 4A03C593-3760-48F0-A082-A9D1AD90EAD6
 keywords:
 - Metadata field L2 identifiers network drivers
 ms.date: 11/09/2017
@@ -29,5 +28,4 @@ The metadata field L2 identifiers are each represented by a bit field. These ide
 
 [Metadata fields at each filtering layer](metadata-fields-at-each-filtering-layer.md)
 
-[FWPS_INCOMING_METADATA_VALUES0](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_incoming_metadata_values0_)
-
+[FWPS_INCOMING_METADATA_VALUES0](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_incoming_metadata_values0_)

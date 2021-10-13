@@ -45,7 +45,6 @@ The CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP bug check has a
 4  Waiting for volume to transition to the Active state.
 
 ## Cause
------
 
 The Cluster Shared Volume next state transition request has not arrived.
 
@@ -55,11 +54,9 @@ The system generated a live dump for analysis of the delay.
 
 
 ## Resolution
-----------
  
 
-## See Also
-----------
+## See Also-
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

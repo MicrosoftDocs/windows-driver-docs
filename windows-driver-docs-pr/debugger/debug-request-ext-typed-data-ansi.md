@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI
 description: DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI
-ms.assetid: ac883bc8-3956-4bc3-a11e-b6e036305329
 keywords: ["DEBUG_REQUEST_EXT_TYPED_DATA_ANSI Windows Debugging"]
 topic_type:
 - apiref
@@ -21,7 +20,7 @@ The DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI [**Request**](request.md) operation p
 **Parameters**
 
 <span id="InBuffer"></span><span id="inbuffer"></span><span id="INBUFFER"></span>*InBuffer*  
-Specifies the [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data) structure that determines the sub-operation to perform. This EXT\_TYPED\_DATA structure contains the input parameters for that sub-operation along with any (optional) additional data. The additional data is included in *InBuffer* after the EXT\_TYPED\_DATA structure. The size of *InBuffer* is the total size of the buffer that contains the EXT\_TYPED\_DATA structure and the additional data. See **EXT\_TYPED\_DATA** for details on this structure and how to include the additional data.
+Specifies the [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure that determines the sub-operation to perform. This EXT\_TYPED\_DATA structure contains the input parameters for that sub-operation along with any (optional) additional data. The additional data is included in *InBuffer* after the EXT\_TYPED\_DATA structure. The size of *InBuffer* is the total size of the buffer that contains the EXT\_TYPED\_DATA structure and the additional data. See **EXT\_TYPED\_DATA** for details on this structure and how to include the additional data.
 
 The following sub-operations are supported.
 
@@ -119,7 +118,7 @@ The following sub-operations are supported.
  
 
 <span id="OutBuffer"></span><span id="outbuffer"></span><span id="OUTBUFFER"></span>*OutBuffer*  
-Receives the [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data) structure that contains the output parameters and any additional data for the sub-operation. As with *InBuffer*, the size of *OutBuffer* is the total size of the buffer that contains the EXT\_TYPED\_DATA structure and any additional data.
+Receives the [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure that contains the output parameters and any additional data for the sub-operation. As with *InBuffer*, the size of *OutBuffer* is the total size of the buffer that contains the EXT\_TYPED\_DATA structure and any additional data.
 
 The DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI operation will initially copy *InBuffer* into *OutBuffer* and then modify the contents of *OutBuffer* in place. This means that *OutBuffer* will be populated with the input parameters of the EXT\_TYPED\_DATA and any additional data that was provided in *InBuffer*. It also means that the size of *OutBuffer* must be at least as big as the size of *InBuffer*.
 
@@ -128,30 +127,22 @@ The DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI operation will initially copy *InBuff
 <span id="S_OK"></span><span id="s_ok"></span>S\_OK  
 The operation was successful.
 
-This method can also return error values. See [**Return Values**](https://docs.microsoft.com/windows-hardware/drivers/debugger/hresult-values) for more details.
+This method can also return error values. See [**Return Values**](./hresult-values.md) for more details.
 
 The value returned by this operation is also stored in the **Status** member of *OutBuffer*.
 
-Remarks
--------
+## Remarks
 
-The sub-operation performed by the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI [**Request**](request.md) operation is determined by the **Operation** member of the [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data) structure, which takes a value in the [**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
+The sub-operation performed by the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI [**Request**](request.md) operation is determined by the **Operation** member of the [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure, which takes a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 
 ## <span id="see_also"></span>See also
 
 
-[**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data)
+[**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data)
 
-[**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ne-wdbgexts-_ext_tdop)
+[**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop)
 
 [**Request**](request.md)
 
  
-
- 
-
-
-
-
-
 

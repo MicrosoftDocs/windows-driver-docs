@@ -1,7 +1,6 @@
 ---
 title: Using the Debugger Engine API
 description: Using the Debugger Engine API
-ms.assetid: 64785cb6-819c-4a27-b2be-71cc489418ab
 keywords: ["Debugger Engine, API", "Debugger Engine API"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ This section includes:
 
 [Debugger Engine API Overview](debugger-engine-api-overview.md)
 
-[Debugger Engine Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-engine-reference)
+[Debugger Engine Reference](debugger-engine-reference.md)
 
  
 

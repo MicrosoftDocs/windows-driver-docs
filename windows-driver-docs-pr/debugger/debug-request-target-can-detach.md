@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_TARGET\_CAN\_DETACH
 description: DEBUG\_REQUEST\_TARGET\_CAN\_DETACH
-ms.assetid: 1e36715e-3414-4cd2-95f3-2b97878a3989
 keywords: ["DEBUG_REQUEST_TARGET_CAN_DETACH Windows Debugging"]
 topic_type:
 - apiref
@@ -34,8 +33,7 @@ It is possible to detach the debugger from the current process.
 <span id="S_FALSE"></span><span id="s_false"></span>S\_FALSE  
 It is not possible to detach the debugger from the current process.
 
-Remarks
--------
+## Remarks
 
 Only targets running on Microsoft Windows XP or later versions of Windows support detaching the debugger from the process.
 

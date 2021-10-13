@@ -1,7 +1,6 @@
 ---
 title: High Definition Audio DDI Reference
 description: High Definition Audio DDI Reference
-ms.assetid: 82d8698b-20fd-40ba-b7f5-56006ffb518f
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -9,9 +8,9 @@ ms.localizationpriority: medium
 # High Definition Audio DDI Reference
 
 
-This section is a technical reference that describes the routines in the three versions of the High Definition (HD) Audio device driver interface (DDI) that the [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface), [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structures define. It also describes the types of structures that these routines use as parameters.
+This section is a technical reference that describes the routines in the three versions of the High Definition (HD) Audio device driver interface (DDI) that the [**HDAUDIO\_BUS\_INTERFACE**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface), [**HDAUDIO\_BUS\_INTERFACE\_V2**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structures define. It also describes the types of structures that these routines use as parameters.
 
-For more information about the DDI, see [High Definition Audio DDI](https://docs.microsoft.com/windows-hardware/drivers/audio/high-definition-audio-ddi).
+For more information about the DDI, see [High Definition Audio DDI](./high-definition-audio-ddi.md).
 
 Two sets of reference pages are presented:
 
@@ -22,10 +21,4 @@ Two sets of reference pages are presented:
 [HD Audio DDI Enumerations](hd-audio-ddi-enumerations.md)
 
  
-
- 
-
-
-
-
 

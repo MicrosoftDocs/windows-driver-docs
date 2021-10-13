@@ -1,7 +1,6 @@
 ---
 title: Synchronization Examples
 description: Synchronization Examples
-ms.assetid: b9290fab-8213-4083-bda5-0e6c2af737a6
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , synchronization
 - streaming minidrivers WDK Windows 2000 Kernel , synchronization
@@ -21,21 +20,21 @@ The following examples illustrate what a minidriver needs to do regarding synchr
 
 -   **Example One: Minidriver With A Functioning ISR**
 
-    If stream class synchronization is turned on, all minidriver entry points are called at raised IRQL, using [**KeSynchronizeExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesynchronizeexecution), which means that the IRQ level of the adapter and all lower IRQ levels are masked when the minidriver is executing its code. Therefore, it is imperative that the minidriver does only a small amount of work in this mode.
+    If stream class synchronization is turned on, all minidriver entry points are called at raised IRQL, using [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution), which means that the IRQ level of the adapter and all lower IRQ levels are masked when the minidriver is executing its code. Therefore, it is imperative that the minidriver does only a small amount of work in this mode.
 
     The minidriver should not run code that typically takes more than 10 to 20 microseconds at raised IRQL. If you use the debug build of *stream.sys*, the stream class logs the amount of time spent at raised IRQL and asserts if the driver is spending too much time there. If the minidriver simply needs to program hardware DMA registers for a request, or just needs to read ports in its ISR, it is usually acceptable to do all of its processing at raised IRQL.
 
-    If the minidriver needs to do processing that takes more than a few microseconds, such as a minidriver that transfers data through PIO, the minidriver should use [**StreamClassCallAtNewPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclasscallatnewpriority) to schedule a DISPATCH\_LEVEL callback. In the callback, the minidriver can take up to around 1/2 to 1 millisecond to do its processing. One thing to remember when in this mode is that the DISPATCH\_LEVEL callback is *not* synchronized with the ISR.
+    If the minidriver needs to do processing that takes more than a few microseconds, such as a minidriver that transfers data through PIO, the minidriver should use [**StreamClassCallAtNewPriority**](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclasscallatnewpriority) to schedule a DISPATCH\_LEVEL callback. In the callback, the minidriver can take up to around 1/2 to 1 millisecond to do its processing. One thing to remember when in this mode is that the DISPATCH\_LEVEL callback is *not* synchronized with the ISR.
 
     This lack of synchronization is not a problem if the hardware remains stable when the minidriver accesses resources (for example, ports or a queue) during the callback as well as in the ISR. But if instability could be a problem, the minidriver must use **StreamClassCallAtNewPriority** to schedule a HIGH priority callback where the DISPATCH\_LEVEL callback touches resources that are shared with the resources used by the ISR.
 
-    Note that a HIGH priority callback is equivalent to calling **KeSynchronizeExecution**. **KeSynchronizeExecution** requires the minidriver to reference several parameters that [**StreamClassCallAtNewPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclasscallatnewpriority) does not, but in general the two result in the same behavior.
+    Note that a HIGH priority callback is equivalent to calling **KeSynchronizeExecution**. **KeSynchronizeExecution** requires the minidriver to reference several parameters that [**StreamClassCallAtNewPriority**](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclasscallatnewpriority) does not, but in general the two result in the same behavior.
 
     If the minidriver only occasionally needs to run code that takes more than 1/2 to 1 millisecond, or occasionally needs to call services at PASSIVE\_LEVEL (such as at initialization time), then setting **StreamClassCallAtNewPriority** to LOW priority can be used to acquire a PASSIVE\_LEVEL worker thread. Note that a low-priority callback is not synchronized with anything and that the minidriver could receive new requests (assuming **ReadyForNextRequest** NotificationType parameter is pending) or an ISR call when running a low priority callback.
 
 -   **Example Two: Minidriver Without An ISR**
 
-    If stream class synchronization is turned on, the minidriver's entry points are all called at DISPATCH\_LEVEL. The minidriver can do processing of up to around 1/2 to 1 millisecond duration without needing to adjust priority. If the minidriver only occasionally needs to run code that takes more than 1/2 millisecond, or occasionally needs to call services at PASSIVE\_LEVEL (such as at initialization time), then [**StreamClassCallAtNewPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclasscallatnewpriority) with LOW priority can be used to acquire a PASSIVE\_LEVEL worker thread. Note that a low-priority callback is not synchronized with anything and the minidriver could receive new requests (assuming **ReadyForNextRequest** NotificationType parameter is pending) when running a low-priority callback.
+    If stream class synchronization is turned on, the minidriver's entry points are all called at DISPATCH\_LEVEL. The minidriver can do processing of up to around 1/2 to 1 millisecond duration without needing to adjust priority. If the minidriver only occasionally needs to run code that takes more than 1/2 millisecond, or occasionally needs to call services at PASSIVE\_LEVEL (such as at initialization time), then [**StreamClassCallAtNewPriority**](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclasscallatnewpriority) with LOW priority can be used to acquire a PASSIVE\_LEVEL worker thread. Note that a low-priority callback is not synchronized with anything and the minidriver could receive new requests (assuming **ReadyForNextRequest** NotificationType parameter is pending) when running a low-priority callback.
 
 -   **When Stream Class Synchronization Should** **_Not_** **Be Used**
 
@@ -49,9 +48,4 @@ The following examples illustrate what a minidriver needs to do regarding synchr
     -   When the minidriver is a bus-on-bus type driver (for example, a USB or 1394 peripheral driver) that does not really worry about synchronization of the actual hardware, but just calls requests down to the next layer at PASSIVE\_LEVEL and receives callbacks typically at DISPATCH\_LEVEL.
 
  
-
- 
-
-
-
 

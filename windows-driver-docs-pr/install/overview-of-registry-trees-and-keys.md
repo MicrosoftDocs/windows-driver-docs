@@ -1,7 +1,6 @@
 ---
 title: Registry Trees for Devices and Drivers
 description: Registry Trees for Devices and Drivers
-ms.assetid: 74dc1889-26a9-47ba-8c8d-3cd6ed95cb68
 keywords:
 - hardware keys WDK device installations
 - registry WDK device installations

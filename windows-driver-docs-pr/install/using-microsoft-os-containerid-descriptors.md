@@ -1,7 +1,6 @@
 ---
 title: Using Microsoft OS ContainerID Descriptors
 description: Using Microsoft OS ContainerID Descriptors
-ms.assetid: e51b1bc8-fd9d-40f9-b2ae-9f5886f57c7b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

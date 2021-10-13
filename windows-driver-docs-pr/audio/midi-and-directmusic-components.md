@@ -1,7 +1,6 @@
 ---
 title: MIDI and DirectMusic Components
 description: MIDI and DirectMusic Components
-ms.assetid: 6334f332-31ba-4daf-aad1-94bb65d25153
 keywords:
 - WDM audio components WDK
 - user-mode components WDK audio
@@ -39,7 +38,7 @@ DirectMusic and the Windows Multimedia MIDI functions are clients of the [SysAud
 
 The following figure shows the user-mode and kernel-mode components that a MIDI application uses to *play back* MIDI data. This application interfaces to the WDM audio drivers through the **midiOut***Xxx* functions, which are implemented in the [WinMM system component](user-mode-wdm-audio-components.md#winmm_system_component), Winmm.dll.
 
-![diagram that shows midi playback components](images/midiplay.png)
+![diagram that shows midi playback components.](images/midiplay.png)
 
 The MIDI application in the preceding figure reads time-stamped MIDI events from a MIDI file and plays them. The MIDI and DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor might choose to use one of the system-supplied miniport drivers--FMSynth, UART, or DMusUART--instead of writing a custom miniport driver. All of the other components in the figure are system-supplied.
 
@@ -57,13 +56,13 @@ The DMus port driver is able to achieve a much higher timing accuracy than the M
 
 If the DMusic synth does not have a hardware sequencer, it must rely on the DMus port driver's software sequencer, which, like the MIDI port driver's, has a timer resolution of one millisecond.
 
-An adapter driver creates a MIDI or DMus port driver by calling [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewport) with a GUID value of **CLSID\_PortMidi** or **CLSID\_PortDMus**, respectively. In Windows XP and later, the MIDI and DMus port drivers share the same software implementation.
+An adapter driver creates a MIDI or DMus port driver by calling [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) with a GUID value of **CLSID\_PortMidi** or **CLSID\_PortDMus**, respectively. In Windows XP and later, the MIDI and DMus port drivers share the same software implementation.
 
-Appearing at the bottom of the preceding figure are the names of the system-supplied miniport drivers FMSynth, UART, and DMusUART, which are included in Portcls.sys. An adapter driver creates one of these miniport drivers by calling [**PcNewMiniport**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewminiport). FMSynth and UART provide [IMiniportMidi](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportmidi) interfaces, and DMusUART provides an [IMiniportDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iminiportdmus) interface. Note that UART is now obsolete (after Windows 98 Gold) and is supported only for existing drivers. New adapter drivers should instead use DMusUART (in Windows 98 SE and later, and in Windows 2000 and later), which implements a superset of UART's functionality. DMusUART is an example of a DMus miniport driver that supports neither DLS downloads nor hardware sequencing. The source code for the FMSynth and DMusUART miniport drivers is available in the sample audio drivers in the Windows Driver Kit (WDK).
+Appearing at the bottom of the preceding figure are the names of the system-supplied miniport drivers FMSynth, UART, and DMusUART, which are included in Portcls.sys. An adapter driver creates one of these miniport drivers by calling [**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport). FMSynth and UART provide [IMiniportMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi) interfaces, and DMusUART provides an [IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus) interface. Note that UART is now obsolete (after Windows 98 Gold) and is supported only for existing drivers. New adapter drivers should instead use DMusUART (in Windows 98 SE and later, and in Windows 2000 and later), which implements a superset of UART's functionality. DMusUART is an example of a DMus miniport driver that supports neither DLS downloads nor hardware sequencing. The source code for the FMSynth and DMusUART miniport drivers is available in the sample audio drivers in the Windows Driver Kit (WDK).
 
 The following figure shows the user-mode and kernel-mode components that a MIDI application program uses to *capture* MIDI data. This application interfaces to the WDM audio drivers through the **midiIn***Xxx* functions.
 
-![diagram illustrating midi capture components](images/midicapt.png)
+![diagram illustrating midi capture components.](images/midicapt.png)
 
 In the preceding figure, the MIDI and DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor might instead choose to use one of the system-supplied miniport drivers, UART or DMusUARTCapture. All of the other components in the figure are system-supplied.
 
@@ -79,7 +78,7 @@ The MIDI application at the top of the figure writes time-stamped MIDI events to
 
 The following figure shows the user- and kernel-mode components that are used by a DirectMusic application program to *play back* or *capture* MIDI data.
 
-![diagram illustrating directmusic playback and capture components](images/dmusplay.png)
+![diagram illustrating directmusic playback and capture components.](images/dmusplay.png)
 
 The playback components are shown in the left half of the preceding figure, and capture components appear on the right. The DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor can instead use one of the system-supplied miniport drivers, DMusUART or DMusUARTCapture. The other components in the figure are system-supplied.
 
@@ -94,9 +93,4 @@ An adapter driver can use the system-supplied DMusUARTCapture miniport driver to
 A DirectMusic application can also run through a **midiOut***Xxx* device such as SWMidi (Swmidi.sys) if it chooses to. For simplicity, this path is omitted from the preceding figure. The DMusic driver (Dmusic.sys) requires an initial DLS download in order to operate correctly; using SWMidi avoids this requirement.
 
  
-
- 
-
-
-
 

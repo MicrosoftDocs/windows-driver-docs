@@ -1,7 +1,6 @@
 ---
 title: Controlling Multiple-Sample Rendering
 description: Controlling Multiple-Sample Rendering
-ms.assetid: 29ebe5ac-3917-417e-9fc9-1aa978748ee9
 keywords:
 - multiple-sample rendering WDK DirectX 9.0
 - rendering multisamples WDK DirectX 9.0

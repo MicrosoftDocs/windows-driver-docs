@@ -1,7 +1,6 @@
 ---
-title: ahcache
+title: ahcache (WinDbg)
 description: The ahcache extension displays the application compatibility cache.
-ms.assetid: 65a7c320-3ea3-4657-b271-ec3d9c2bd5de
 keywords: ["ahcache Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

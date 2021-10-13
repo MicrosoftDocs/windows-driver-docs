@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON
 description: The KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property enables or disables the display of the subpicture.
-ms.assetid: f9dcf8ca-44fb-45e2-9993-813439c742ef
 keywords: ["KSPROPERTY_DVDSUBPIC_COMPOSIT_ON Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property enables or disables the display
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>KSPROPERTY_COMPOSIT_ON</p></td>
 </tr>
 </tbody>
@@ -57,15 +56,13 @@ The KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property enables or disables the display
 
 The property value (operation data) is a KSPROPERTY\_COMPOSIT\_ON (a type-defined Boolean). Specify **TRUE** to turn on the subpicture display, or specify **FALSE** to turn off the subpicture display.
 
-Remarks
--------
+## Remarks
 
 If subpicture display is disabled then the decoder must still decode the subpicture data but not display it. This facilitates instant display when a subpicture-enable command is received.
 
 There is a force-display subpicture command in the subpicture data command stream that can override the KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -79,12 +76,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

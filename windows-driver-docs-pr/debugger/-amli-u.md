@@ -1,7 +1,6 @@
 ---
-title: amli u
+title: amli u (WinDbg)
 description: The amli u extension unassembles AML code.
-ms.assetid: 0a8b160f-9aae-4ef0-a569-8e701de9679c
 keywords: ["amli u Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -41,8 +40,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 If neither *MethodName* nor *CodeAddress* is specified and you are issuing this command from an AMLI
 

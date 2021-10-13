@@ -1,7 +1,6 @@
 ---
 title: Environment Mapping with Standard Diffuse Lighting
 description: Environment Mapping with Standard Diffuse Lighting
-ms.assetid: 7cdba0db-fdaf-46a4-a5f9-c5e930f68314
 keywords:
 - mapping cube environments
 - environment mapping WDK Direct3D

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_VOLUME
 description: The KSPROPERTY\_TELEPHONY\_VOLUME property is used to control the volume for all cellular calls.
-ms.assetid: 3754A7A0-FA50-4831-B449-DED0D3D69418
 keywords: ["KSPROPERTY_TELEPHONY_VOLUME Audio Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The **KSPROPERTY\_TELEPHONY\_VOLUME** property is used to control the volume for
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -58,13 +57,11 @@ The property value is of type LONG and specifies the cellular call volume.
 
 A **KSPROPERTY\_TELEPHONY\_VOLUME** property request returns the cellular call volume.
 
-Remarks
--------
+## Remarks
 
 For cellular calls, only this volume is applicable to cellular data, and the endpoint volume has no effect. This property must be settable even when there is no active phone call in the system. Basic support for this property should return the minimum volume, the maximum volume, and the volume ranges.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -90,12 +87,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Filtering Extensions
 description: Filtering Extensions
-ms.assetid: EDE50213-DFA0-4D8B-9E15-12AED8FDE5CA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,11 +14,11 @@ Filtering extensions are invoked after capturing extensions in the ingress data 
 
 A filtering extension can do the following with packets that were obtained on the ingress data path:
 
--   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the ingress data path, it can apply filtering rules based only on the source port and network adapter connection from which the packet originated. This information is stored in the out-of-band (OOB) data of a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure and can be obtained by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-switch-forwarding-detail) macro.
+-   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the ingress data path, it can apply filtering rules based only on the source port and network adapter connection from which the packet originated. This information is stored in the out-of-band (OOB) data of a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure and can be obtained by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_switch_forwarding_detail) macro.
 
     **Note**  Packets obtained on the ingress data path do not contain destination ports. Filtering packets based on destination ports can be done only on packets obtained on the egress data path.
 
-    Custom policies are defined by the independent software vendor (ISV). Property settings for this policy type are managed through the Hyper-V WMI management layer. The filtering extension is configured with these property settings through an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-update) and [OID\_SWITCH\_PROPERTY\_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-update).
+    Custom policies are defined by the independent software vendor (ISV). Property settings for this policy type are managed through the Hyper-V WMI management layer. The filtering extension is configured with these property settings through an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](./oid-switch-port-property-update.md) and [OID\_SWITCH\_PROPERTY\_UPDATE](./oid-switch-property-update.md).
 
     For more information on custom extensible port or switch policies, see [Managing Hyper-V Extensible Switch Policies](managing-hyper-v-extensible-switch-extensibility-policies.md).
 
@@ -31,7 +30,7 @@ A filtering extension can do the following with packets that were obtained on th
 
 A filtering extension can do the following with packets that were obtained on the egress data path:
 
--   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the egress data path, it can apply filtering rules based on the source or destination ports for a packet. Destination port data is stored in the OOB data of a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure. Extensions obtain this information by calling the [*GetNetBufferListDestinations*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_get_net_buffer_list_destinations) function.
+-   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the egress data path, it can apply filtering rules based on the source or destination ports for a packet. Destination port data is stored in the OOB data of a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. Extensions obtain this information by calling the [*GetNetBufferListDestinations*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_get_net_buffer_list_destinations) function.
 
 -   Exclude the delivery of the packet to one or more extensible switch destination ports. This allows the filtering extension to exclude the delivery of a packet to extensible switch ports.
 
@@ -39,7 +38,7 @@ A filtering extension can do the following with packets that were obtained on th
 
 -   Manage the traffic flow to one or more destination ports by postponing the forwarding of packets up the egress data path.
 
-    For example, a filtering extension that supports quality of service (QoS) functionality may want to immediately call [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsendnetbufferlists) to forward packets that are specified with a higher priority value. Depending on the traffic flow, the extension may want to forward packets with a lower priority value at a later time.
+    For example, a filtering extension that supports quality of service (QoS) functionality may want to immediately call [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) to forward packets that are specified with a higher priority value. Depending on the traffic flow, the extension may want to forward packets with a lower priority value at a later time.
 
 -   Modify the packet data. If the filtering extension needs to modify the data in a packet, it must first clone the packet without preserving port destinations. Then, the extension must inject the modified packet into the ingress data path. This allows the underlying extensions to enforce policies on the modified packet and the forwarding extension can add port destinations.
 
@@ -47,11 +46,11 @@ A filtering extension can do the following with packets that were obtained on th
 
 Besides inspecting OID requests and NDIS status indications, a filtering extension can do the following:
 
--   Veto the creation of an extensible switch port or network adapter connection by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the filtering extension can veto a port creation request by returning STATUS\_DATA\_NOT\_ACCEPTED when the driver receives an OID set request of [OID\_SWITCH\_PORT\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-create).
+-   Veto the creation of an extensible switch port or network adapter connection by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the filtering extension can veto a port creation request by returning STATUS\_DATA\_NOT\_ACCEPTED when the driver receives an OID set request of [OID\_SWITCH\_PORT\_CREATE](./oid-switch-port-create.md).
 
     **Note**  Filtering extensions do not create or delete ports or network adapter connections. The protocol edge of the extensible switch issues OIDs to notify the underlying filter drivers about the creation or deletion of ports or network adapter connections. For more information, see [Hyper-V Extensible Switch Port and Network Adapter States](hyper-v-extensible-switch-port-and-network-adapter-states.md).
 
--   Veto the addition or update of an extensible switch or port policy by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the filtering extension can veto the addition of a port policy by returning STATUS\_DATA\_NOT\_ACCEPTED when the extension receives an OID set request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-add).
+-   Veto the addition or update of an extensible switch or port policy by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the filtering extension can veto the addition of a port policy by returning STATUS\_DATA\_NOT\_ACCEPTED when the extension receives an OID set request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](./oid-switch-port-property-add.md).
 
     For more information about extensible switch policies, see [Managing Hyper-V Extensible Switch Policies](managing-hyper-v-extensible-switch-extensibility-policies.md).
 
@@ -59,7 +58,7 @@ A filtering extension has the following requirements:
 
 -   A filtering extension must be developed as an NDIS filter driver that supports the extensible switch interface.
 
-    For more information about filter drivers, see [NDIS Filter Drivers](ndis-filter-drivers2.md).
+    For more information about filter drivers, see [NDIS Filter Drivers](./roadmap-for-developing-ndis-filter-drivers.md).
 
     For more information on how to write a filtering extension, see [Writing Hyper-V Extensible Switch Extensions](writing-hyper-v-extensible-switch-extensions.md).
 

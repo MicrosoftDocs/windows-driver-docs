@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_SCSIENTRY WMI Class
 description: MS\_SMHBA\_SCSIENTRY WMI Class
-ms.assetid: 8ac7a979-b3fe-4da6-a8e7-301c64b27e46
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -29,15 +28,9 @@ class MS_SMHBA_SCSIENTRY
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_SCSIENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_ms_smhba_scsientry)
+[**MS\_SMHBA\_SCSIENTRY**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_scsientry)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

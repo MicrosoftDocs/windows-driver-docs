@@ -1,7 +1,6 @@
 ---
 title: Handling Packet Coalescing Receive Filters
 description: Handling Packet Coalescing Receive Filters
-ms.assetid: 83FF780F-6B8F-4222-90F0-42037FFF7653
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Handling Packet Coalescing Receive Filters
 
 
-Multiple receive filters are downloaded to a miniport driver through OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter). Each filter can specify one or more tests (*header field tests*) that the network adapter uses to determine whether a received packet should be coalesced in a hardware coalescing buffer on the adapter.
+Multiple receive filters are downloaded to a miniport driver through OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md). Each filter can specify one or more tests (*header field tests*) that the network adapter uses to determine whether a received packet should be coalesced in a hardware coalescing buffer on the adapter.
 
 Before the miniport driver configures the network adapter with the receive filters, the driver should optimize the receive filters based on the hardware capabilities of the adapter. For example, all receive filters require a header field test for the MAC header. Therefore, the driver could optimize filter rules based on the results of this test. This allows the adapter to determine which Open Systems Interconnection (OSI) layer 3 (L3) and layer 4 (L4) header field tests to perform next.
 
@@ -17,11 +16,11 @@ As soon as the network adapter has been configured with receive filters, it must
 
 -   All the header field test parameters for a particular filter must match on the received packet in order to coalesce the packet in the coalescing buffer.
 
-    The network adapter combines the results from all header field tests of a receive filter with a logical AND operation. That is, if any header field test that is included in the array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures for a receive filter fails, the received packet does not meet the specified filter criterion and must not be coalesced.
+    The network adapter combines the results from all header field tests of a receive filter with a logical AND operation. That is, if any header field test that is included in the array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures for a receive filter fails, the received packet does not meet the specified filter criterion and must not be coalesced.
 
 -   The network adapter only inspects packet data based on the specified header field test parameters. The adapter must ignore all header fields in the packet for which header field tests are not specified.
 
--   If a received packet matches all the header field tests for any of the receive filters, the network adapter must coalesce the packet within the hardware coalescing buffer. As soon as the first packet is coalesced, the network adapter must start a hardware timer and must set the expiration time to the value of the **MaxCoalescingDelay** member of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure for the matching receive filter.
+-   If a received packet matches all the header field tests for any of the receive filters, the network adapter must coalesce the packet within the hardware coalescing buffer. As soon as the first packet is coalesced, the network adapter must start a hardware timer and must set the expiration time to the value of the **MaxCoalescingDelay** member of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure for the matching receive filter.
 
 -   As more packets are received that match a packet coalescing receive filter, the network adapter puts them into the coalescing buffer.
 
@@ -45,9 +44,9 @@ As soon as the network adapter has been configured with receive filters, it must
 
     As soon as the interrupt is generated, the network adapter must stop the hardware timer if it hasn't expired and must clear the hardware coalescing buffer.
 
-The miniport driver must maintain a coalesced packet counter, which contains a value for the number of received packets that have matched a packet coalescing filter. NDIS queries this counter through an OID query request of [OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-packet-coalescing-filter-match-count).
+The miniport driver must maintain a coalesced packet counter, which contains a value for the number of received packets that have matched a packet coalescing filter. NDIS queries this counter through an OID query request of [OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT](./oid-packet-coalescing-filter-match-count.md).
 
-The network adapter only performs packet coalescing while the hardware is operating in a full-power state. While the hardware is in a low-power state, the adapter must only filter received packets based on wake-up patterns that have been offloaded to the adapter through OID set requests of [OID\_PNP\_ENABLE\_WAKE\_UP](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-enable-wake-up).
+The network adapter only performs packet coalescing while the hardware is operating in a full-power state. While the hardware is in a low-power state, the adapter must only filter received packets based on wake-up patterns that have been offloaded to the adapter through OID set requests of [OID\_PNP\_ENABLE\_WAKE\_UP](./oid-pnp-enable-wake-up.md).
 
 When the network adapter transitions to a full-power state, the miniport driver must follow these steps:
 
@@ -58,10 +57,4 @@ When the network adapter transitions to a full-power state, the miniport driver 
 -   The miniport driver must clear the coalesced packet counter.
 
  
-
- 
-
-
-
-
 

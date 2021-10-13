@@ -1,7 +1,6 @@
 ---
 title: Background Reading on RDMA
 description: RDMA is a networking technology that provides high-throughput, low-latency communication that minimizes CPU usage.
-ms.assetid: 583A806D-B7E8-40F5-9CEB-406FAEE8B6C6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,14 +28,7 @@ For more information about RDMA, Infiniband, iWARP, and RoCE, see the following 
 ## Related topics
 
 
-[Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
+[Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md)
 
  
-
- 
-
-
-
-
-
 

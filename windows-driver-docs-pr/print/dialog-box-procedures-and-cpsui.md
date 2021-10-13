@@ -1,7 +1,6 @@
 ---
 title: Dialog Box Procedures and CPSUI
 description: Dialog Box Procedures and CPSUI
-ms.assetid: fad65a34-9580-41a5-ad58-91ea7ffcd3d5
 keywords:
 - page event callbacks WDK CPSUI
 - event callbacks WDK CPSUI
@@ -23,14 +22,9 @@ A dialog box procedure is a callback function that handles window messages sent 
 
 For all property sheet pages created using CPSUI, window messages are first intercepted by CPSUI before being passed to the application-supplied dialog box procedure. If the page was defined using a CPSUI-supplied template, the application-supplied dialog procedure can supply a return value indicating that CPSUI should process the message.
 
-A dialog box procedure can use the [**SetCPSUIUserData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nf-compstui-setcpsuiuserdata) and [**GetCPSUIUserData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nf-compstui-getcpsuiuserdata) functions to store and retrieve an application-supplied value.
+A dialog box procedure can use the [**SetCPSUIUserData**](/windows-hardware/drivers/ddi/compstui/nf-compstui-setcpsuiuserdata) and [**GetCPSUIUserData**](/windows-hardware/drivers/ddi/compstui/nf-compstui-getcpsuiuserdata) functions to store and retrieve an application-supplied value.
 
-For more information about using dialog box procedures with CPSUI, see the Remarks section for [**DLGPAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/ns-compstui-_dlgpage).
-
- 
+For more information about using dialog box procedures with CPSUI, see the Remarks section for [**DLGPAGE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage).
 
  
-
-
-
 

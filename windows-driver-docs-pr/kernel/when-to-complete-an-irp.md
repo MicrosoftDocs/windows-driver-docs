@@ -1,7 +1,6 @@
 ---
 title: When to Complete an IRP
 description: When to Complete an IRP
-ms.assetid: 6986b24c-e7e5-43f2-861d-b84e4c131a8a
 keywords: ["completing IRPs WDK kernel , when to complete"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -21,16 +20,11 @@ A driver should initiate IRP completion when any of the following conditions is 
 
 -   The IRP is being canceled. (See [Canceling IRPs](canceling-irps.md).)
 
-If these conditions are not met, a driver's dispatch routine must pass the IRP down to the next-lower driver, or it must handle processing of the I/O request. If one of the conditions is met, the driver must call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest).
+If these conditions are not met, a driver's dispatch routine must pass the IRP down to the next-lower driver, or it must handle processing of the I/O request. If one of the conditions is met, the driver must call [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest).
 
-If a driver completes a request because processing cannot progress, or if it completes a request by handling the requested operation without actually accessing the device, it typically calls **IoCompleteRequest** from one of its dispatch routines. For more information, see [Completing IRPs in Dispatch Routines](completing-irps-in-dispatch-routines.md).
+If a driver completes a request because processing cannot progress, or if it completes a request by handling the requested operation without actually accessing the device, it typically calls **IoCompleteRequest** from one of its dispatch routines. For more information, see [Completing IRPs in Dispatch Routines](how-to-complete-an-irp-in-a-dispatch-routine.md).
 
-If a driver must access a device to satisfy the request, it typically calls **IoCompleteRequest** from a [*DpcForIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_dpc_routine) routine. These routines are discussed extensively in [Servicing Interrupts](servicing-interrupts.md).
-
- 
+If a driver must access a device to satisfy the request, it typically calls **IoCompleteRequest** from a [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine. These routines are discussed extensively in [Servicing Interrupts](introduction-to-interrupt-service-routines.md).
 
  
-
-
-
 

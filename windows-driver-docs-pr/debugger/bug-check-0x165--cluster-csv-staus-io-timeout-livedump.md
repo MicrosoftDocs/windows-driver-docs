@@ -30,7 +30,6 @@ The CLUSTER\_CSV\_STATUS\_IO\_TIMEOUT\_LIVEDUMP bug check has a value of 0x00000
 |4|Reserved.|
 
 ## Cause
------
 
 A SMB client on the non-coordinating node complains that an IO on coordinating node is taking too long and fails all IOs with STATUS_IO_TIMEOUT.
 
@@ -40,11 +39,9 @@ Additional information is available in the dump's secondary data streams.
 
 
 ## Resolution
-----------
  
 
-## See Also
-----------
+## See Also-
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

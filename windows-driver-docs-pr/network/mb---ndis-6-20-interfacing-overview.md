@@ -1,7 +1,6 @@
 ---
 title: MB / NDIS 6.20 Interfacing Overview
 description: MB / NDIS 6.20 Interfacing Overview
-ms.assetid: 6abde9b4-8ac2-4757-8db3-4f563fc5ed24
 keywords:
 - NDIS 6.20 WDK , mobile broadband (MB) interfacing
 - mobile broadband (MB) WDK
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic is designed to provide enough background about the *NDIS 6.20 Specification* to put the MB driver model into perspective. It is not intended to be a reference for NDIS 6.20. In the case of discrepancies between this content and the *NDIS 6.20 Specification*, see the [NDIS 6.20](introduction-to-ndis-6-20.md) documentation for complete information.
 
-In NDIS 6.20, the MB Service calls [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisoidrequest) to issue OID requests to the miniport driver. Then, miniport drivers call [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex) to return data back to the MB Service.
+In NDIS 6.20, the MB Service calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) to issue OID requests to the miniport driver. Then, miniport drivers call [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) to return data back to the MB Service.
 
 NDIS 6.20 supports the following types of OID operations:
 
@@ -29,25 +28,25 @@ Finally, miniport drivers may send *indications* that contain data to notify the
 
 ### Receiving *Set* and *Query* Requests
 
-MB miniport drivers implement the [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) NDIS handler to respond to both *set* and *query* requests.
+MB miniport drivers implement the [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) NDIS handler to respond to both *set* and *query* requests.
 
 ### Sending Status Indications
 
-Miniport drivers provide status indications to the MB Service by calling [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex). See the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure for more details about status indications.
+Miniport drivers provide status indications to the MB Service by calling [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex). See the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure for more details about status indications.
 
 ### Connection State Indications
 
-NDIS 6.20 miniport drivers must use the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication to notify NDIS and overlying drivers that there has been a change in the physical characteristics of a transmission medium.
+NDIS 6.20 miniport drivers must use the [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) status indication to notify NDIS and overlying drivers that there has been a change in the physical characteristics of a transmission medium.
 
-The **StatusBuffer** member of the NDIS\_STATUS\_INDICATION structure is an [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure, which specifies the physical state of the transmission medium.
+The **StatusBuffer** member of the NDIS\_STATUS\_INDICATION structure is an [**NDIS\_LINK\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure, which specifies the physical state of the transmission medium.
 
 MB miniport drivers should avoid sending the NDIS\_STATUS\_LINK\_STATUS status indication if there have been no changes in the physical state of the medium. However, miniport drivers are not necessarily required to avoid sending this status indication.
 
 MB miniport drivers must report the maximum data rate of the currently connected data-class. A change in data-class while connected must result in a Connection State Indication with the corresponding data rate reported. The following is a recommended implementation of this rule:
 
-1.  MB miniport drivers that conform to this specification must use [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) to indicate connection status changes instead of NDIS\_STATUS\_MEDIA\_CONNECT, NDIS\_STATUS\_MEDIA\_DISCONNECT, or NDIS\_STATUS\_LINK\_SPEED\_CHANGE (as in NDIS 5.1) for connection status indications.
+1.  MB miniport drivers that conform to this specification must use [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) to indicate connection status changes instead of NDIS\_STATUS\_MEDIA\_CONNECT, NDIS\_STATUS\_MEDIA\_DISCONNECT, or NDIS\_STATUS\_LINK\_SPEED\_CHANGE (as in NDIS 5.1) for connection status indications.
 
-2.  The **XmitLinkSpeed** and **RcvLinkSpeed** members of the [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure must not report NDIS\_LINK\_SPEED\_UNKNOWN. Miniport drivers must report the speed by using the information in the following tables.
+2.  The **XmitLinkSpeed** and **RcvLinkSpeed** members of the [**NDIS\_LINK\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure must not report NDIS\_LINK\_SPEED\_UNKNOWN. Miniport drivers must report the speed by using the information in the following tables.
 
 **For GSM-based MB device speed links**
 
@@ -145,10 +144,4 @@ Receiving speed (bps)
  
 
  
-
- 
-
-
-
-
 

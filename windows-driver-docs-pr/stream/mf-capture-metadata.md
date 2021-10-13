@@ -31,7 +31,7 @@ performance considerations.
 | [MF\_CAPTURE\_METADATA\_FLASH](#mf_capture_metadata_flash)                                        | UINT32 (Boolean) | Preview, Still        | This attribute contains a Boolean value that contains the flash state. A value of 1 specifies that the flash is on and a value of 0 specifies that the flash is off for the photo captured. |
 | [MF\_CAPTURE\_METADATA\_FLASH\_POWER](#mf_capture_metadata_flash_power)                           | UINT32           | Still                 | \[Optional\] This attribute contains the flash power applied as a percentage value between 0 and 100. |
 | [MF\_CAPTURE\_METADATA\_WHITEBALANCE](#mf_capture_metadata_whitebalance)                          | UINT32 (Kelvin)  | Preview, Still        | This attribute contains the white balance applied as a value in Kelvin. |
-| [MF\_CAPTURE\_METADATA\_ZOOMFACTOR](#mf_capture_metadata_zoomfactor)                              | UINT32 (Q16)     | Still                 | This attribute contains the zoom value applied and is the same value that can be queried from [**KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-zoom) in a GET call. The value must be in Q16. |
+| [MF\_CAPTURE\_METADATA\_ZOOMFACTOR](#mf_capture_metadata_zoomfactor)                              | UINT32 (Q16)     | Still                 | This attribute contains the zoom value applied and is the same value that can be queried from [**KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM**](./ksproperty-cameracontrol-extended-zoom.md) in a GET call. The value must be in Q16. |
 | [MF\_CAPTURE\_METADATA\_EXIF](#mf_capture_metadata_exif)                                          | Blob             | Still                 | \[Optional\] This attribute contains EXIF metadata as specified in the [blob definition section](#blob-definition) |
 | [MF\_CAPTURE\_METADATA\_REQUESTED\_FRAME\_SETTING\_ID](#mf_capture_metadata_requested_frame_setting_id) | UINT32           | Still                | \[Optional\] This attribute contains the frame ID for the corresponding frame in the variable photo sequence. This attribute is only set for a variable photo sequence capture. |
 | [MF\_CAPTURE\_METADATA\_ISO\_GAINS](#mf_capture_metadata_iso_gains)                               | Blob             | Preview               | This attribute contains the analog and digital gains applied to the senor when the preview frame was captured. This is unitless. |
@@ -328,7 +328,7 @@ valid to include an IFD containing thumbnail data.
 The following diagram, copied from the TIFF specification, illustrates
 the expected memory layout:
 
-![EXIF blob definition](images/exif-blob-definition.png)
+![EXIF blob definition.](images/exif-blob-definition.png)
 
 The following are requirements that are consistent with the EXIF and
 TIFF specifications but are called out for emphasis:

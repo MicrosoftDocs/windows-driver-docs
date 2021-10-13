@@ -1,7 +1,6 @@
 ---
 title: IPrintOemUI2 COM Interface
 description: IPrintOemUI2 COM Interface
-ms.assetid: 9aee61af-e8e2-4bc4-a17b-783242d1ac1f
 keywords:
 - IPrintOemUI2
 ms.date: 04/20/2017
@@ -33,16 +32,16 @@ The `IPrintOemUI2` COM interface extends the [IPrintOemUI COM interface](iprinto
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui2-documentevent" data-raw-source="[&lt;strong&gt;IPrintOemUI2::DocumentEvent&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui2-documentevent)"><strong>IPrintOemUI2::DocumentEvent</strong></a></p></td>
-<td><p>Enables a UI plug-in to replace the core driver UI module's default implementation of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdocumentevent" data-raw-source="[&lt;strong&gt;DrvDocumentEvent&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdocumentevent)"><strong>DrvDocumentEvent</strong></a> DDI.</p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui2-documentevent" data-raw-source="[&lt;strong&gt;IPrintOemUI2::DocumentEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui2-documentevent)"><strong>IPrintOemUI2::DocumentEvent</strong></a></p></td>
+<td><p>Enables a UI plug-in to replace the core driver UI module's default implementation of the <a href="/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent" data-raw-source="[&lt;strong&gt;DrvDocumentEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent)"><strong>DrvDocumentEvent</strong></a> DDI.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui2-hidestandardui" data-raw-source="[&lt;strong&gt;IPrintOemUI2::HideStandardUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui2-hidestandardui)"><strong>IPrintOemUI2::HideStandardUI</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui2-hidestandardui" data-raw-source="[&lt;strong&gt;IPrintOemUI2::HideStandardUI&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui2-hidestandardui)"><strong>IPrintOemUI2::HideStandardUI</strong></a></p></td>
 <td><p>Enables a UI plug-in to specify whether the standard property sheets should be displayed or hidden.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui2-queryjobattributes" data-raw-source="[&lt;strong&gt;IPrintOemUI2::QueryJobAttributes&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui2-queryjobattributes)"><strong>IPrintOemUI2::QueryJobAttributes</strong></a></p></td>
-<td><p>Enables a UI plug-in to post-process the core driver's results after a call to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvqueryjobattributes" data-raw-source="[&lt;strong&gt;DrvQueryJobAttributes&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvqueryjobattributes)"><strong>DrvQueryJobAttributes</strong></a> DDI.</p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui2-queryjobattributes" data-raw-source="[&lt;strong&gt;IPrintOemUI2::QueryJobAttributes&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui2-queryjobattributes)"><strong>IPrintOemUI2::QueryJobAttributes</strong></a></p></td>
+<td><p>Enables a UI plug-in to post-process the core driver's results after a call to the <a href="/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvqueryjobattributes" data-raw-source="[&lt;strong&gt;DrvQueryJobAttributes&lt;/strong&gt;](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvqueryjobattributes)"><strong>DrvQueryJobAttributes</strong></a> DDI.</p></td>
 </tr>
 </tbody>
 </table>
@@ -50,11 +49,4 @@ The `IPrintOemUI2` COM interface extends the [IPrintOemUI COM interface](iprinto
  
 
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-
- 
-
- 
-
-
-
 

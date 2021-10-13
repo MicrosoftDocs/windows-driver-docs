@@ -1,5 +1,5 @@
 ---
-Description: This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
+description: This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
 title: Headers and libraries required by a USB client driver
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
 
-To find the header and library for a specific device driver interface (DDI), consult the reference pages in the [USB Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/).
+To find the header and library for a specific device driver interface (DDI), consult the reference pages in the [USB Reference](/windows-hardware/drivers/ddi/_usbref/).
 
 ## Headers
 
@@ -41,7 +41,7 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>usb.h</td>
 <td>Include\shared</td>
 <td></td>
-<td>Defines <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb)"><strong>URB</strong></a> structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
+<td>Defines <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)"><strong>URB</strong></a> structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
 </tr>
 <tr class="odd">
 <td>usb100.h</td>
@@ -127,14 +127,14 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>Include\um</td>
 <td><p>winapifamily.h</p>
 <p>winusbio.h</p></td>
-<td>Defines <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb" data-raw-source="[WinUSB functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)">WinUSB functions</a> exposed by Winusb.dll, which are used by applications that want to send requests to Winusb.sys that is installed as the function driver for a USB device.</td>
+<td>Defines <a href="/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb" data-raw-source="[WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)">WinUSB functions</a> exposed by Winusb.dll, which are used by applications that want to send requests to Winusb.sys that is installed as the function driver for a USB device.</td>
 </tr>
 <tr class="even">
 <td>winusbio.h</td>
 <td>Include\shared</td>
 <td><p>winapifamily.h</p>
 <p>usb.h</p></td>
-<td>Defines flags for <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb" data-raw-source="[WinUSB functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)">WinUSB functions</a>.</td>
+<td>Defines flags for <a href="/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb" data-raw-source="[WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)">WinUSB functions</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -202,9 +202,6 @@ Starting in Windows Driver Kit (WDK) for Windows 8, header file usbspec.h repla
 The new header file, usbspec.h, provides protocol definitions for the DDIs that are defined, as per the official USB specifications. The header file includes DDIs for the USB 3.0 specification.
 
 ## Related topics
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Header files in the Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/header-files-in-the-windows-driver-kit)  
-[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
-
-
-
+[Universal Serial Bus (USB)](../index.yml)  
+[Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)  
+[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)

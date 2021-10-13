@@ -1,7 +1,6 @@
 ---
 title: Supporting DMA in 64-Bit AVStream Drivers
 description: Supporting DMA in 64-Bit AVStream Drivers
-ms.assetid: 1173a83f-8d9e-4678-bfb5-f2fb91e827be
 keywords:
 - AVStream WDK , hardware
 - hardware WDK AVStream
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 AVStream supports DMA on 32-bit and 64-bit addressable devices.
 
-All drivers compiled for Win64 platforms should use [**IKsDeviceFunctions::RegisterAdapterObjectEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-iksdevicefunctions-registeradapterobjectex) instead of [**KsDeviceRegisterAdapterObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksdeviceregisteradapterobject).
+All drivers compiled for Win64 platforms should use [**IKsDeviceFunctions::RegisterAdapterObjectEx**](/windows-hardware/drivers/ddi/ks/nf-ks-iksdevicefunctions-registeradapterobjectex) instead of [**KsDeviceRegisterAdapterObject**](/windows-hardware/drivers/ddi/ks/nf-ks-ksdeviceregisteradapterobject).
 
 **IKsDeviceFunctions::RegisterAdapterObjectEx** is only available in Microsoft Windows Server 2003 SP1 and later.
 
@@ -80,9 +79,4 @@ This code example works on 64-bit as well as 32-bit platforms. If the driver doe
 In addition, when authoring a 64-bit AVStream driver, minimize the number of concurrent frame locks held. Since AVStream generates scatter/gather mappings when the minidriver first locks frames, your driver might run out of resources if it does not follow this guideline. In particular, if you are writing a driver to run on a Win64 platform with a 32-bit card, increasing the number of simultaneous locks increases the chance that a lock will fail because low memory buffers are a limited resource.
 
  
-
- 
-
-
-
 

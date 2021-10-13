@@ -1,8 +1,7 @@
 ---
 title: OID_GEN_BROADCAST_FRAMES_RCV
 description: As a query, the OID_GEN_BROADCAST_FRAMES_RCV OID specifies the number of broadcast packets that are received without errors.
-ms.assetid: c9b09318-a12e-4429-b05c-fee525ab33f5
-ms.date: 08/08/2017
+ms.date: 11/01/2019
 keywords: 
  -OID_GEN_BROADCAST_FRAMES_RCV Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -30,13 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
-For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+The count from this OID, combined with the count from [OID_GEN_MULTICAST_FRAMES_RCV](oid-gen-multicast-frames-rcv.md), is identical to the *ifInNUcastPkts* counter described in RFC 2863.
 
-Requirements
-------------
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
+
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +56,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

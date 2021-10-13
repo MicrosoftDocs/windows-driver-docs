@@ -1,19 +1,14 @@
 ---
-title: Pairs
-description: Pairs
-ms.assetid: 156e6b10-74c2-4702-b0be-b9d209c02070
+title: Pairs (GPD language)
+description: To assign a pair of values to an attribute, use the PAIR keyword.
 keywords:
 - GPD file entries WDK Unidrv , pairs
 - pairs WDK GPD files
-ms.date: 04/20/2017
+ms.date: 09/08/2021
 ms.localizationpriority: medium
 ---
 
-# Pairs
-
-
-
-
+# Pairs (GPD language)
 
 To assign a pair of values to an attribute, use the PAIR keyword. The format is:
 
@@ -24,11 +19,3 @@ where *Value1* and *Value2* are [numeric values](numeric-values.md). For example
 ```cpp
 *CursorOrigin: PAIR(120, 100)
 ```
-
- 
-
- 
-
-
-
-

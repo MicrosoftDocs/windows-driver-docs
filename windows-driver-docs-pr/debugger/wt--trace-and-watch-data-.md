@@ -1,7 +1,6 @@
 ---
 title: wt (Trace and Watch Data)
 description: The wt command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
-ms.assetid: 2dd62a7f-67d9-4b13-b04e-5cd02e6ef9f0
 keywords: ["wt (Trace and Watch Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -122,8 +121,7 @@ Specifies the address where tracing ends. If you do not use *EndAddress*, a sing
 
 For more information about issuing the **wt** command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **wt** command is useful if you want information about the behavior of a specific function, but you do not want to step through the function. Instead, go to the beginning of that function and then issue the **wt** command.
 

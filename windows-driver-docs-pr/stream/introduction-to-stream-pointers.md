@@ -1,7 +1,6 @@
 ---
 title: Introduction to Stream Pointers
 description: Introduction to Stream Pointers
-ms.assetid: 2682b145-5148-4301-b382-9811bb5e8fa6
 keywords:
 - stream pointers WDK AVStream , about stream pointers
 - advancing stream pointers WDK AVStream
@@ -25,7 +24,7 @@ Minidrivers that use [pin-centric processing](pin-centric-processing.md) (most h
 
 Minidrivers that use filter-centric processing should not use stream pointers directly. See [filter-centric processing](filter-centric-processing.md) for more information.
 
-By default, each queue has a leading edge stream pointer. Optionally, it can have a trailing edge stream pointer if the trailing edge flag is specified. The minidriver can create new stream pointers by calling [**KsStreamPointerClone**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointerclone).
+By default, each queue has a leading edge stream pointer. Optionally, it can have a trailing edge stream pointer if the trailing edge flag is specified. The minidriver can create new stream pointers by calling [**KsStreamPointerClone**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerclone).
 
 You can move a stream pointer in one direction only: to a newer frame. This is called advancing the stream pointer.
 
@@ -33,18 +32,13 @@ You can move a stream pointer in one direction only: to a newer frame. This is c
 
 When you advance a stream pointer, you move it to a newer frame, or advance it some number of bytes within its current frame. For instance, the minidriver can advance a stream pointer from the first frame arrival to the second frame arrival.
 
-To advance a stream pointer, a pin-centric filter can either call [**KsStreamPointerAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointeradvance) or [**KsStreamPointerUnlock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointerunlock) with the *Eject* parameter set to **TRUE**.
+To advance a stream pointer, a pin-centric filter can either call [**KsStreamPointerAdvance**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointeradvance) or [**KsStreamPointerUnlock**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerunlock) with the *Eject* parameter set to **TRUE**.
 
 ### Frame Reference Counts
 
 Frames with stream pointers pointing to them are reference counted, as are frames that are in the window between the leading and trailing edges.
 
-When a minidriver is finished with a stream pointer, it can optionally call [**KsStreamPointerSetStatusCode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointersetstatuscode) to specify an error code with which to complete the given I/O request packet (IRP). The minidriver must then call [**KsStreamPointerDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointerdelete). AVStream then decrements the reference count on the frame that the deleted stream pointer previously referenced. The leading-edge and trailing-edge stream pointers cannot be deleted.
+When a minidriver is finished with a stream pointer, it can optionally call [**KsStreamPointerSetStatusCode**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointersetstatuscode) to specify an error code with which to complete the given I/O request packet (IRP). The minidriver must then call [**KsStreamPointerDelete**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete). AVStream then decrements the reference count on the frame that the deleted stream pointer previously referenced. The leading-edge and trailing-edge stream pointers cannot be deleted.
 
  
-
- 
-
-
-
 

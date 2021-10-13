@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_TRANSMIT_QUEUE_LENGTH
 description: As a query, the OID_GEN_TRANSMIT_QUEUE_LENGTH OID specifies the number of packets that are currently queued for transmission, whether on the NIC or in a driver-internal queue.
-ms.assetid: 042a7df3-a204-45f8-b147-96def7438b4a
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_TRANSMIT_QUEUE_LENGTH Network Drivers Starting with Windows Vista
@@ -30,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 For queries, the number returned is always the total number of packets currently queued. This number can include unsubmitted send requests queued in the NDIS library.
 
-For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -59,9 +56,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: TWAIN and Raw RGB Format
 description: TWAIN and Raw RGB Format
-ms.assetid: 0de4a547-6c8e-4fbf-a7a3-7af440bf72f3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

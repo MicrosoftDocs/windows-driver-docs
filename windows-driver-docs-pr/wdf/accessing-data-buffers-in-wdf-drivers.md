@@ -1,7 +1,6 @@
 ---
 title: Accessing Data Buffers in WDF Drivers (KMDF or UMDF)
 description: When a Windows Driver Frameworks (WDF) driver receives a read, write, or device I/O control request, the request object contains either an input buffer, an output buffer, or both.
-ms.assetid: ceba2279-b0fb-4261-b439-723d5dad967b
 keywords:
 - request processing WDK KMDF , data buffers
 - data buffers WDK KMDF
@@ -40,19 +39,19 @@ A Kernel-Mode Driver Framework (KMDF) driver can use any of the three access met
 
 For read and write requests, all drivers in a driver stack must use the same method for accessing a device's buffers, except for the highest-level driver, which can use the "neither" method, regardless of which method is used by lower drivers.
 
-Starting in version 1.13, a KMDF driver specifies the access method for all of a device's read and write requests by calling [**WdfDeviceInitSetIoTypeEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetiotypeex) for each device. For example, if a driver specifies the buffered I/O method for one of its devices, the I/O manager uses the buffered I/O method when delivering read and write requests to the driver for that device.
+Starting in version 1.13, a KMDF driver specifies the access method for all of a device's read and write requests by calling [**WdfDeviceInitSetIoTypeEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetiotypeex) for each device. For example, if a driver specifies the buffered I/O method for one of its devices, the I/O manager uses the buffered I/O method when delivering read and write requests to the driver for that device.
 
-For device I/O control requests, the I/O control code (IOCTL) contains bits that specify the buffer access method. As a result, a KMDF driver does not need to take any action to select a buffering method for IOCTLs. For more information about IOCTLs, see [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes). Unlike read and write requests, all of a device's IOCTLs do not have to specify the same access method.
+For device I/O control requests, the I/O control code (IOCTL) contains bits that specify the buffer access method. As a result, a KMDF driver does not need to take any action to select a buffering method for IOCTLs. For more information about IOCTLs, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md). Unlike read and write requests, all of a device's IOCTLs do not have to specify the same access method.
 
 <a href="" id="umdf-drivers"></a>**UMDF Drivers**  
 
 A UMDF driver specifies *preferences* for the access method that the framework uses for read and write requests, as well as device I/O control requests. The values that a UMDF driver provides are only preferences, and are not guaranteed to be used by the framework. For more information, see [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md).
 
-A UMDF driver specifies the access method for all of a device's read, write and IOCTL requests by calling [**WdfDeviceInitSetIoTypeEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetiotypeex) for each device. For example, if a driver specifies the buffered I/O method for one of its devices, the framework uses the buffered I/O method when delivering read, write and IOCTL requests to the driver for that device.
+A UMDF driver specifies the access method for all of a device's read, write and IOCTL requests by calling [**WdfDeviceInitSetIoTypeEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetiotypeex) for each device. For example, if a driver specifies the buffered I/O method for one of its devices, the framework uses the buffered I/O method when delivering read, write and IOCTL requests to the driver for that device.
 
 Note the difference in buffer access technique for IOCTLs between KMDF and UMDF. KMDF drivers do not specify buffer access method for IOCTLs, whereas UMDF drivers do specify the buffer access method for IOCTLs.
 
-If a WDF driver describes an I/O request's buffer by using a technique that is incorrect for the I/O method that an I/O target uses, the framework corrects the buffer description. For example, if a driver uses an MDL to describe a buffer that it passes to [**WdfIoTargetSendReadSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfiotarget/nf-wdfiotarget-wdfiotargetsendreadsynchronously), and if the I/O target uses buffered I/O (which requires that buffers be specified using virtual addresses instead of MDLs), the framework converts the buffer description from an MDL to a virtual address and length. However, it is more efficient if your driver specifies buffers in the correct format.
+If a WDF driver describes an I/O request's buffer by using a technique that is incorrect for the I/O method that an I/O target uses, the framework corrects the buffer description. For example, if a driver uses an MDL to describe a buffer that it passes to [**WdfIoTargetSendReadSynchronously**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetsendreadsynchronously), and if the I/O target uses buffered I/O (which requires that buffers be specified using virtual addresses instead of MDLs), the framework converts the buffer description from an MDL to a virtual address and length. However, it is more efficient if your driver specifies buffers in the correct format.
 
 For information about framework memory objects, lookaside lists, MDLs, and local buffers, see [Using Memory Buffers](using-memory-buffers.md).
 
@@ -79,11 +78,11 @@ When a UMDF driver uses buffered I/O, the driver host process creates one or two
 -   Read requests. A UMDF driver reads info from a device and stores it in a buffer that the framework created. The driver host process copies the output data from the intermediate buffer to the app's output buffer.
 -   Device I/O control requests. The framework creates two buffers corresponding to input and output buffers of the IOCTL that the driver can access. The framework copies the input info from the IOCTL into the new intermediate buffer and makes it available to the driver. The framework does not copy the contents of the output buffer, so the driver shouldn't attempt to read from it (otherwise it will end up reading garbage data). Any data that the driver writes to the output buffer is copied back into the original IOCTL buffer and is returned to the app upon successful completion of the I/O request. Note that any data that the driver writes to the input buffer is discarded and not returned to the calling app.
 
-To retrieve a handle to a framework memory object that represents the buffer, both KMDF and UMDF drivers call [**WdfRequestRetrieveInputMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputmemory) or [**WdfRequestRetrieveOutputMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputmemory), depending on whether this is a read or write request. The driver can then retrieve a pointer to the buffer by calling [**WdfMemoryGetBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer). To read and write the buffer, the driver calls [**WdfMemoryCopyFromBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycopyfrombuffer) or [**WdfMemoryCopyToBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycopytobuffer).
+To retrieve a handle to a framework memory object that represents the buffer, both KMDF and UMDF drivers call [**WdfRequestRetrieveInputMemory**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputmemory) or [**WdfRequestRetrieveOutputMemory**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputmemory), depending on whether this is a read or write request. The driver can then retrieve a pointer to the buffer by calling [**WdfMemoryGetBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer). To read and write the buffer, the driver calls [**WdfMemoryCopyFromBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycopyfrombuffer) or [**WdfMemoryCopyToBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycopytobuffer).
 
-To retrieve the virtual address and length of the buffer, the driver calls [**WdfRequestRetrieveInputBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputbuffer) or [**WdfRequestRetrieveOutputBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputbuffer).
+To retrieve the virtual address and length of the buffer, the driver calls [**WdfRequestRetrieveInputBuffer**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputbuffer) or [**WdfRequestRetrieveOutputBuffer**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputbuffer).
 
-To allocate and build a memory descriptor list (MDL) for the buffer, a KMDF driver calls [**WdfRequestRetrieveInputWdmMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputwdmmdl) or [**WdfRequestRetrieveOutputWdmMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputwdmmdl).
+To allocate and build a memory descriptor list (MDL) for the buffer, a KMDF driver calls [**WdfRequestRetrieveInputWdmMdl**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputwdmmdl) or [**WdfRequestRetrieveOutputWdmMdl**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputwdmmdl).
 
 ## <a href="" id="direct"></a> Accessing Data Buffers for Direct I/O
 
@@ -96,11 +95,11 @@ If your driver is using direct I/O, the I/O manager verifies the accessibility o
 
 If your driver has specified a preference for direct I/O, and all the UMDF requirements for direct I/O have been met (see [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md)), the framework maps the memory buffer it receives from the I/O manager directly into the driver's host process address space, and thus provides the driver with direct access to the buffer space.
 
-To retrieve a handle to a framework memory object that represents the buffer space, the driver calls [**WdfRequestRetrieveInputMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputmemory) or [**WdfRequestRetrieveOutputMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputmemory). The driver can then retrieve a pointer to the buffer by calling [**WdfMemoryGetBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer). To read and write the buffer, the driver calls [**WdfMemoryCopyFromBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycopyfrombuffer) or [**WdfMemoryCopyToBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycopytobuffer).
+To retrieve a handle to a framework memory object that represents the buffer space, the driver calls [**WdfRequestRetrieveInputMemory**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputmemory) or [**WdfRequestRetrieveOutputMemory**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputmemory). The driver can then retrieve a pointer to the buffer by calling [**WdfMemoryGetBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer). To read and write the buffer, the driver calls [**WdfMemoryCopyFromBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycopyfrombuffer) or [**WdfMemoryCopyToBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycopytobuffer).
 
-To retrieve the virtual address and length of the buffer space, the driver calls [**WdfRequestRetrieveInputBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputbuffer) or [**WdfRequestRetrieveOutputBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputbuffer).
+To retrieve the virtual address and length of the buffer space, the driver calls [**WdfRequestRetrieveInputBuffer**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputbuffer) or [**WdfRequestRetrieveOutputBuffer**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputbuffer).
 
-If a device's drivers are using direct I/O, the I/O manager describes buffers by using MDLs. To retrieve a pointer to a buffer's MDL, a KMDF driver calls [**WdfRequestRetrieveInputWdmMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputwdmmdl) or [**WdfRequestRetrieveOutputWdmMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputwdmmdl). A UMDF driver cannot access MDLs.
+If a device's drivers are using direct I/O, the I/O manager describes buffers by using MDLs. To retrieve a pointer to a buffer's MDL, a KMDF driver calls [**WdfRequestRetrieveInputWdmMdl**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveinputwdmmdl) or [**WdfRequestRetrieveOutputWdmMdl**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputwdmmdl). A UMDF driver cannot access MDLs.
 
 ## <a href="" id="neither"></a> Accessing Data Buffers for Neither Buffered Nor Direct I/O
 
@@ -111,23 +110,23 @@ If your driver is using the buffer access method known as the *neither buffered 
 
 The virtual addresses that the I/O manager provides can be accessed only in the process context of the originator of the I/O request. Only the highest-level driver in the driver stack is guaranteed to execute in the originator's process context.
 
-To obtain access to an I/O request's buffer space, the highest-level driver must provide an [*EvtIoInCallerContext*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context) callback function. The framework calls this callback function each time it receives an I/O request for the driver.
+To obtain access to an I/O request's buffer space, the highest-level driver must provide an [*EvtIoInCallerContext*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context) callback function. The framework calls this callback function each time it receives an I/O request for the driver.
 
 If a request's buffer access method is "neither," a KMDF driver must do the following for each buffer:
 
-1.  Call [**WdfRequestRetrieveUnsafeUserInputBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer) or [**WdfRequestRetrieveUnsafeUserOutputBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveunsafeuseroutputbuffer) to obtain the buffer's virtual address.
+1.  Call [**WdfRequestRetrieveUnsafeUserInputBuffer**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer) or [**WdfRequestRetrieveUnsafeUserOutputBuffer**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveunsafeuseroutputbuffer) to obtain the buffer's virtual address.
 
-2.  Call [**WdfRequestProbeAndLockUserBufferForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestprobeandlockuserbufferforread) or [**WdfRequestProbeAndLockUserBufferForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite) to probe and lock the buffer and to obtain a handle to a framework memory object for the buffer.
+2.  Call [**WdfRequestProbeAndLockUserBufferForRead**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestprobeandlockuserbufferforread) or [**WdfRequestProbeAndLockUserBufferForWrite**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite) to probe and lock the buffer and to obtain a handle to a framework memory object for the buffer.
 
 3.  Save the memory object handles in the request's [context space](using-request-object-context.md).
 
-4.  Call [**WdfDeviceEnqueueRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceenqueuerequest), which returns the request to the framework.
+4.  Call [**WdfDeviceEnqueueRequest**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceenqueuerequest), which returns the request to the framework.
 
 The framework subsequently adds the request to one of the driver's I/O queues. If the driver has provided [request handlers](request-handlers.md), the framework will eventually call the appropriate request handler.
 
-The request handler can retrieve the request's memory object handles from the request's context space. The driver can pass the handles to [**WdfMemoryGetBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer) to obtain the buffer's address.
+The request handler can retrieve the request's memory object handles from the request's context space. The driver can pass the handles to [**WdfMemoryGetBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer) to obtain the buffer's address.
 
-Occasionally, a highest-level driver must use the preceding steps to access a user-mode buffer, even if the driver is not using the "neither" access method. For example, suppose the driver is using buffered I/O. An I/O control code that uses the buffered access method might pass a structure that contains an embedded pointer to a user-mode buffer. In such a case, the driver must provide an [*EvtIoInCallerContext*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context) callback function that extracts the pointers from the structure and then uses the preceding steps 2 through 4.
+Occasionally, a highest-level driver must use the preceding steps to access a user-mode buffer, even if the driver is not using the "neither" access method. For example, suppose the driver is using buffered I/O. An I/O control code that uses the buffered access method might pass a structure that contains an embedded pointer to a user-mode buffer. In such a case, the driver must provide an [*EvtIoInCallerContext*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context) callback function that extracts the pointers from the structure and then uses the preceding steps 2 through 4.
 
 <a href="" id="umdf-drivers"></a>**UMDF Drivers**  
 
@@ -136,10 +135,4 @@ UMDF doesn't support neither buffered nor direct I/O type buffers, so a UMDF dri
 However, if the framework receives such buffers for read or write from the I/O manager, it makes them available to a UMDF driver as buffered I/O or direct I/O, depending on the access method selected by the driver. If the framework receives an IOCTL specifying the "neither" buffer method, it can optionally convert the buffer access method of the IOCTL request to buffered I/O or direct I/O based on the presence of an INF directive. See [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md) for more info.
 
  
-
- 
-
-
-
-
 

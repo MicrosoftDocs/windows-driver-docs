@@ -1,7 +1,6 @@
 ---
 title: NABTS Categories
 description: NABTS Categories
-ms.assetid: 7d064ed4-1bd9-4457-83c8-8b1fee10251c
 keywords:
 - stream categories WDK video capture , NABTS
 - PINNAME_VIDEO_NABTS

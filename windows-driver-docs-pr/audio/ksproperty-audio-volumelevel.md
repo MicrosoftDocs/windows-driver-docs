@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_VOLUMELEVEL
 description: The KSPROPERTY\_AUDIO\_VOLUMELEVEL property specifies the volume level of a channel in a volume node (KSNODETYPE\_VOLUME).
-ms.assetid: 5b420c71-fc82-413d-a93d-e8f3408cc8d7
 keywords: ["KSPROPERTY_AUDIO_VOLUMELEVEL Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_VOLUMELEVEL property specifies the volume level of a chan
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -63,8 +62,8 @@ The property value is of type LONG and specifies the volume level of a channel i
 
 +2147483647 is +32767.99998474 decibels (gain).
 
-&gt; \[!Note\]
-&gt;  The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
+> [!NOTE]
+> The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
 
  
 
@@ -74,13 +73,11 @@ If a value is specified beyond the range of the filter, the request to set this 
 
 A KSPROPERTY\_AUDIO\_VOLUMELEVEL property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
-The property descriptor for this property specifies a channel number. If the stream that passes through the volume node contains *n* channels, the channels are numbered 0 through *n*-1. For more information, see [Exposing Multichannel Nodes](https://docs.microsoft.com/windows-hardware/drivers/audio/exposing-multichannel-nodes).
+The property descriptor for this property specifies a channel number. If the stream that passes through the volume node contains *n* channels, the channels are numbered 0 through *n*-1. For more information, see [Exposing Multichannel Nodes](./exposing-multichannel-nodes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -98,20 +95,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[Customizing Default Audio Volume Settings](https://docs.microsoft.com/windows-hardware/drivers/audio/customizing-default-audio-volume-settings)
+[Customizing Default Audio Volume Settings](./customizing-default-audio-volume-settings.md)
 
-[Default Audio Volume Settings](https://docs.microsoft.com/windows-hardware/drivers/audio/default-audio-volume-settings)
+[Default Audio Volume Settings](./default-audio-volume-settings.md)
 
-[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
+[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
 
 [**KSNODETYPE\_VOLUME**](ksnodetype-volume.md)
-
- 
-
- 
-
-
-
-
-
 

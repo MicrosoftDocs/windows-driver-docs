@@ -1,7 +1,6 @@
 ---
 title: Handling IRP_MN_SET_POWER for System Power States
 description: Handling IRP_MN_SET_POWER for System Power States
-ms.assetid: 21e8e8a7-ca77-445b-a49e-28a53f431a26
 keywords: ["IRP_MN_SET_POWER", "system power states WDK kernel , IRP_MN_SET_POWER", "set-power IRPs WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,11 +12,11 @@ ms.localizationpriority: medium
 
 
 
-The power manager sends a power IRP that specifies the minor code [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) and a system power state for one of the following reasons:
+The power manager sends a power IRP that specifies the minor code [**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md) and a system power state for one of the following reasons:
 
 -   To change the system power state.
 
--   To reaffirm the current power state after a failed [**IRP\_MN\_QUERY\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-power) request.
+-   To reaffirm the current power state after a failed [**IRP\_MN\_QUERY\_POWER**](./irp-mn-query-power.md) request.
 
 Through the I/O manager, the power manager sends the IRP to the top driver in the device stack at each PnP device node. The IRP notifies all drivers in the stack of the correct system power state.
 
@@ -40,9 +39,4 @@ How a driver handles this IRP depends upon its role in the device stack, as desc
 A driver cannot fail an **IRP\_MN\_SET\_POWER** request to set the system power state. The power manager ignores any failure status returned for this IRP.
 
  
-
- 
-
-
-
 

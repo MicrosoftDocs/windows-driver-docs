@@ -1,7 +1,6 @@
 ---
 title: Overview of the Power Metering and Budgeting Infrastructure
 description: Overview of the Power Metering and Budgeting Infrastructure
-ms.assetid: eda1c829-eb5e-404b-bf6b-1b0807ee02c7
 keywords:
 - Power Metering and Budgeting WDK , overview
 ms.date: 04/20/2017
@@ -31,7 +30,7 @@ Multiple power meters could be installed in a computer system, with each power m
 
 The following figure provides an overview of the PMB infrastructure.
 
-![diagram overview of the power metering and budgeting (pmb) infrastructure ](images/powermeter-1.png)
+![diagram overview of the power metering and budgeting (pmb) infrastructure .](images/powermeter-1.png)
 
 PMB consists of the following components:
 
@@ -43,7 +42,7 @@ The PMB WMI classes are provided by the Power WMI Provider component of the UMPS
 For more information about UMPS, see [User-Mode Power Service](user-mode-power-service.md).
 
 <span id="Power_Meter_Interface__PMI__"></span><span id="power_meter_interface__pmi__"></span><span id="POWER_METER_INTERFACE__PMI__"></span>Power Meter Interface (PMI)   
-PMI is a WDM interface that is provided by a driver. By using this interface, the driver services PMI I/O request packets (IRPs) from the [Power Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/power-manager) and the Power WMI Provider component of the UMPS. These IRPs are used to query and set the current power metering and budgeting information from a power meter.
+PMI is a WDM interface that is provided by a driver. By using this interface, the driver services PMI I/O request packets (IRPs) from the [Power Manager](../kernel/power-manager.md) and the Power WMI Provider component of the UMPS. These IRPs are used to query and set the current power metering and budgeting information from a power meter.
 
 Starting with Windows 7 and Windows Server 2008 R2, the operating system provides a driver (*ACPIPMI.SYS*) that implements the PMI for systems that support the ACPI 4.0 Power Metering objects. This driver enables original equipment manufacturers (OEMs) to build systems that can participate within the PMB infrastructure without having to install third-party drivers.
 
@@ -59,9 +58,4 @@ The ACPI 4.0 Power Metering objects are modeled after the ACPI Control Method ba
 For more information, see [ACPI Power Meter Interface](acpi-power-meter-interface.md).
 
  
-
- 
-
-
-
 

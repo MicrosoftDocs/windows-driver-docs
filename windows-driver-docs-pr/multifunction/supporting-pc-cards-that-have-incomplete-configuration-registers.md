@@ -1,26 +1,21 @@
 ---
 title: Supporting PC Cards That Have Incomplete Configuration Registers
-description: Supporting PC Cards That Have Incomplete Configuration Registers
-ms.assetid: 62bdb1e7-ca45-42e6-bdf5-c48fb3ddb3fc
+description: Provides information on supporting PC cards that have incomplete configuration registers.
 keywords:
 - incomplete configuration registers WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
 - mf.sys
-ms.date: 04/20/2017
+ms.date: 08/13/2021
 ms.localizationpriority: medium
 ---
 
 # Supporting PC Cards That Have Incomplete Configuration Registers
 
-
-
-
-
 If a multifunction 16-bit PC Card device does not have configuration registers for each function, the vendor of such a device can use the system-supplied multifunction bus driver (mf.sys) but must provide a custom INF file and support for the individual functions.
 
 The vendor of such a device on an NT-based platform can use the following system-supplied component:
 
--   A function driver for the multifunction device. (system-supplied)
+- A function driver for the multifunction device. (system-supplied)
 
     A custom INF for the device must specify mf.sys as the function driver for the device. The system-supplied mf.sys driver will then enumerate the functions of the device.
 
@@ -28,45 +23,45 @@ The vendor of such a device on an NT-based platform can use the following system
 
 The vendor of such a device must provide the following:
 
--   A custom INF file for the multifunction device. (vendor-supplied)
+- A custom INF file for the multifunction device. (vendor-supplied)
 
     The vendor must supply a multifunction INF file that specifies mf.sys as the multifunction bus driver, specifies the class "MultiFunction" (with its associated GUID as defined in devguid.h), and provides the missing configuration register information. See further information later in this section.
 
--   A PnP function driver for each function of the device. (vendor-supplied)
+- A PnP function driver for each function of the device. (vendor-supplied)
 
     Since the multifunction bus driver handles the multifunction semantics, the function drivers can be the same drivers that are used when the functions are packaged as individual devices.
 
--   An INF file for each function of the device. (vendor-supplied)
+- An INF file for each function of the device. (vendor-supplied)
 
     The INF files can be the same files that are used when the functions are packaged as a individual devices. The INF files do not need any special multifunction semantics.
 
 The vendor-supplied custom INF for such a device must specify:
 
--   mf.sys as the service for the device.
+- mf.sys as the service for the device.
 
     See [Using the System-Supplied Multifunction Bus Driver](using-the-system-supplied-multifunction-bus-driver.md) for more information.
 
--   The resource requirements of the multifunction device.
+- The resource requirements of the multifunction device.
 
-    Specify the resource requirements in [**INF DDInstall.LogConfigOverride sections**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-logconfigoverride-section).
+    Specify the resource requirements in [**INF DDInstall.LogConfigOverride sections**](../install/inf-ddinstall-logconfigoverride-section.md).
 
--   The hardware ID for each function of the device.
+- The hardware ID for each function of the device.
 
-    Specify the hardware IDs in an [**INF DDInstall.HW section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section).
+    Specify the hardware IDs in an [**INF DDInstall.HW section**](../install/inf-ddinstall-hw-section.md).
 
--   A resource map for each function of the device, identifying the parent resources required by each child function.
+- A resource map for each function of the device, identifying the parent resources required by each child function.
 
     Specify the resource maps in an INF *DDInstall*.**HW** section. See [Creating Resource Maps for a Multifunction Device](creating-resource-maps-for-a-multifunction-device.md) for more information about creating resource maps.
 
 The INF must restate all the resource requirements specified by the device because if override configurations are present in the INF, the PnP manager does not use any device resource requirements from the device.
 
-For such a device, the configuration option register can be programmed using a **PcCardConfig** entry, similar to programming a single-function device. The **PcCardConfig** entry contains information that applies to the entire device. The **PcCardConfig** entry is documented in [**INF LogConfig Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive).
+For such a device, the configuration option register can be programmed using a **PcCardConfig** entry, similar to programming a single-function device. The **PcCardConfig** entry contains information that applies to the entire device. The **PcCardConfig** entry is documented in [**INF LogConfig Directive**](../install/inf-logconfig-directive.md).
 
 When specifying a **PcCardConfig** entry for a multifunction device, the format of the *ConfigIndex* is the same as that defined for a single-function device. The configuration register for single-function PC Cards contains an index to a set of resources defined in that device's attributes. This directive can also be used with certain multifunction devices that use the index-based format of the configuration option register.
 
 The following example shows an INF file for installing a multifunction device that uses mf.sys as its bus driver and has incomplete configuration registers.
 
-```cpp
+```inf
 ; MFSupra.inf
 ; This file installs the Supra Dual 56K modem
 ; Copyright 1999 Microsoft Corporation
@@ -147,11 +142,3 @@ Supra1 = "Supra Dual 56K modem"
 ```
 
 An INF like the one shown above copies the ID and resource information for the child functions to the registry. The mf.sys driver retrieves the information from the registry when it enumerates the child functions of the device.
-
-
-
-
-
-
-
-

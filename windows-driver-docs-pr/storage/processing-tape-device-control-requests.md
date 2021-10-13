@@ -1,7 +1,6 @@
 ---
 title: Processing Tape Device Control Requests
 description: Processing Tape Device Control Requests
-ms.assetid: de6edfc6-9b4b-4866-8fdb-1047b43163de
 keywords:
 - tape drivers WDK storage , mapping status values
 - storage tape drivers WDK , mapping status values
@@ -22,7 +21,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_processing_tape_device_control_requests_kg"></span><span id="DDK_PROCESSING_TAPE_DEVICE_CONTROL_REQUESTS_KG"></span>
 
 
-All tape miniclass drivers must report status using the values listed in the [**TAPE\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/ne-minitape-_tape_status) enumerator. However, when the tape class driver completes an I/O control request, it reports status using the equivalent NT Status Values. The following table provides a mapping between TAPE\_STATUS values and their equivalent NT status values:
+All tape miniclass drivers must report status using the values listed in the [**TAPE\_STATUS**](/windows-hardware/drivers/ddi/minitape/ne-minitape-_tape_status) enumerator. However, when the tape class driver completes an I/O control request, it reports status using the equivalent NT Status Values. The following table provides a mapping between TAPE\_STATUS values and their equivalent NT status values:
 
 <table>
 <colgroup>
@@ -172,9 +171,4 @@ A miniclass routine returns one of the following status values to indicate that 
 When the miniclass routine finishes processing a request--either successfully or with an error after retries are exhausted--it returns to the tape class driver with a TAPE\_STATUS\_*XXX* that indicates the success or failure of the request.
 
  
-
- 
-
-
-
 

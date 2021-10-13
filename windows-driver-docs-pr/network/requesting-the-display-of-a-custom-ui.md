@@ -1,7 +1,6 @@
 ---
 title: Requesting the Display of a Custom UI
 description: Requesting the Display of a Custom UI
-ms.assetid: 4b7366d9-e55a-4b24-b75f-a5f133b80ca7
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , requesting display
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ The Native 802.11 IHV Extensions DLL can request the display of a custom user in
 
 -   Notify the end user with the results of the authentication to the WLAN network.
 
-To launch a custom UI or display a notification, the Native 802.11 IHV Extensions DLL calls [**Dot11ExtSendUIRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/nc-wlanihv-dot11ext_send_ui_request) and passes a pointer to a [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure through the *pIhvUIRequest* parameter of this function.
+To launch a custom UI or display a notification, the Native 802.11 IHV Extensions DLL calls [**Dot11ExtSendUIRequest**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_ui_request) and passes a pointer to a [**DOT11EXT\_IHV\_UI\_REQUEST**](/windows-hardware/drivers/ddi/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure through the *pIhvUIRequest* parameter of this function.
 
-Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure, the Native 802.11 IHV Extensions DLL specifies the custom UI through the following data:
+Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](/windows-hardware/drivers/ddi/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure, the Native 802.11 IHV Extensions DLL specifies the custom UI through the following data:
 
 -   The user session identifier (ID), which is used to identify a specific user context.
 
@@ -33,7 +32,7 @@ Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-
 
 -   The class ID (CLSID) of **IWizardExtension** COM interface implemented within the Native 802.11 IHV UI Extensions DLL. The CLSID is used to request a specific custom UI supported by the DLL.
 
-    For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56607).
+    For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](/windows/win32/api/shobjidl/nn-shobjidl-iwizardextension).
 
 -   A buffer containing data in a proprietary format that is defined by the independent hardware vendor (IHV) and processed by the specified **IWizardExtension** COM interface. For example, the buffer could contain the default values that are displayed within the custom UI.
 
@@ -46,8 +45,3 @@ Depending upon the WLAN connection state for the user session ID, the custom UI 
  
 
  
-
-
-
-
-

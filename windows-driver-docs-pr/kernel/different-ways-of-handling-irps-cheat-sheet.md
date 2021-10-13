@@ -1,6 +1,5 @@
 ---
 title: Different ways of handling IRPs - Cheat sheet
-author: kaushika-msft
 description: Different ways of handling IRPs
 keywords: ["IRPs WDK kernel , handling IRPs"]
 ms.date: 12/07/2017
@@ -67,7 +66,7 @@ DispatchRoutine_1(
 
 ### Scenario 2: Forward and wait
 
-Use the following code if a driver wants to forward the IRP to a lower driver and wait for it to return so that it can process the IRP. This is frequently done when handling PNP IRPs. For example, when you receive a [IRP_MN_START_DEVICE](irp-mn-start-device.md) IRP, you must forward the IRP down to the bus driver and wait for it to complete before you can start your device. You can call [**IoForwardIrpSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioforwardirpsynchronously) to do this operation easily.
+Use the following code if a driver wants to forward the IRP to a lower driver and wait for it to return so that it can process the IRP. This is frequently done when handling PNP IRPs. For example, when you receive a [IRP_MN_START_DEVICE](irp-mn-start-device.md) IRP, you must forward the IRP down to the bus driver and wait for it to complete before you can start your device. You can call [**IoForwardIrpSynchronously**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioforwardirpsynchronously) to do this operation easily.
 
 ```cpp
 NTSTATUS
@@ -148,7 +147,7 @@ In this case, the driver sets a completion routine, forwards the IRP down, and t
 
 ```cpp
 NTSTATUS
-DispathRoutine_3(
+DispatchRoutine_3(
     IN PDEVICE_OBJECT DeviceObject,
     IN PIRP Irp
     )
@@ -351,7 +350,7 @@ Before you examine the scenarios, you must understand the differences between a 
 
 ### Scenario 6: Send a synchronous device-control request (IRP_MJ_INTERNAL_DEVICE_CONTROL/IRP_MJ_DEVICE_CONTROL) by using IoBuildDeviceIoControlRequest
 
-The following code shows how to call [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest) request to make a synchronous IOCTL request.  For more info, see [IRP_MJ_INTERNAL_DEVICE_CONTROL](irp-mj-internal-device-control.md) and [IRP_MJ_DEVICE_CONTROL](irp-mj-device-control.md).
+The following code shows how to call [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) request to make a synchronous IOCTL request.  For more info, see [IRP_MJ_INTERNAL_DEVICE_CONTROL](irp-mj-internal-device-control.md) and [IRP_MJ_DEVICE_CONTROL](irp-mj-device-control.md).
 
 ```cpp
 NTSTATUS
@@ -622,7 +621,7 @@ MakeSynchronousIoctlWithTimeOutCompletion(
 ```
 
 ### Scenario 8: Send a synchronous non-IOCTL request by using IoBuildSynchronousFsdRequest - completion routine returns STATUS_CONTINUE_COMPLETION
-The following code shows how to make a synchronous non-IOCTL request by calling [**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildsynchronousfsdrequest). The technique shown here is similar to scenario 6.
+The following code shows how to make a synchronous non-IOCTL request by calling [**IoBuildSynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest). The technique shown here is similar to scenario 6.
 
 ```cpp
 NTSTATUS
@@ -827,7 +826,7 @@ NTSTATUS MakeSynchronousNonIoctlRequestCompletion2(
 ```
 
 ### Scenario 10: Send an asynchronous request by using IoBuildAsynchronousFsdRequest 
-This scenario shows how to make an asynchronous request by calling [**IoBuildAsynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildasynchronousfsdrequest). 
+This scenario shows how to make an asynchronous request by calling [**IoBuildAsynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildasynchronousfsdrequest). 
 
 In an asynchronous request, the thread that made the request does not have to wait for the IRP to complete. The IRP can be created in an arbitrary thread context because the IRP is not associated with the thread. You must provide a completion routine and release the buffers and IRP in the completion routine if you do not intend to reuse the IRP. This is because the I/O manager cannot do post-completion cleanup of driver-created asynchronous IRPs (created with **IoBuildAsynchronousFsdRequest** and **IoAllocateIrp**). 
 
@@ -959,7 +958,7 @@ MakeAsynchronousRequestCompletion(
 
 ### Scenario 11: Send an asynchronous request by using IoAllocateIrp
 
-This scenario is similar to the previous scenario except that instead of calling [**IoBuildAsynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildasynchronousfsdrequest), this scenario uses the [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp) function to create the IRP.
+This scenario is similar to the previous scenario except that instead of calling [**IoBuildAsynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildasynchronousfsdrequest), this scenario uses the [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) function to create the IRP.
 
 ```cpp
 NTSTATUS

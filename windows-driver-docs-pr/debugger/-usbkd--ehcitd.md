@@ -1,7 +1,6 @@
 ---
 title: usbkd._ehcitd
 description: The usbkd._ehcitd command displays information from a usbehci _TRANSFER_CONTEXT structure. 
-ms.assetid: C0EE04CF-E059-4064-9791-3500E66B24FA
 keywords: ["usbkd._ehcitd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of a **usbehci!\_TRANSFER\_CONTEXT** structure.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 This example shows one way to get the address of a **usbehci!\_TRANSFER\_CONTEXT** structure. Use [**!\_ehciep**](-usbkd--ehciep.md) to display information about an endpoint.
 
@@ -105,14 +103,7 @@ SlotNextHcdTD: 21e65200
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

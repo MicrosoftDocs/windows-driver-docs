@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_DRIVER_VERSION
 description: As a query, the OID_GEN_DRIVER_VERSION OID specifies the NDIS version in use by the miniport driver.
-ms.assetid: 8c3ac2ab-a83a-44d2-88bc-bd1468a0a59b
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_DRIVER_VERSION Network Drivers Starting with Windows Vista
@@ -30,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for NDIS 6.0 and later miniport drivers.
 
 The high byte is the major version number; the low byte is the minor version number.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

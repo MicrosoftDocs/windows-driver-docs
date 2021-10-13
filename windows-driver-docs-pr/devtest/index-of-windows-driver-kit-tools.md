@@ -1,7 +1,6 @@
 ---
 title: Index of Windows Driver Kit Tools
 description: Index of Windows Driver Kit Tools
-ms.assetid: 26db88c4-8fb8-4308-ab8a-1a1eef5e19d8
 keywords:
 - Disabler tool
 - DbgCon tool
@@ -18,851 +17,136 @@ keywords:
 - GUIDGen WDK
 - GUID Generator WDK
 - GUIDGen.exe WDK
-ms.date: 05/09/2018
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
 # Index of Windows Driver Kit Tools
 
-
 This topic supplies basic information about the tools that are included in the Windows Driver Kit (WDK). This topic also includes references to other tools that are useful for driver development. These other tools are either available as part of the operating system or are available as separate download. For more information about each tool, see the documentation in this topic that describes the tool.
 
-For information about how to obtain the latest WDK, see [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?linkid=261797).
+For information about how to obtain the latest WDK, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
-This topic includes the following:
+## Index of WDK Tools
 
--   [Index of WDK Tools](#index-of-wdk-tools)
--   [What's New in the WDK for Windows 8.1](#what-s-new-in-the-wdk-for-windows8-1)
--   [What's New in the WDK for Windows 8](#what-s-new-in-the-wdk-for-windows8)
--   [What's Changed in the WDK for Windows 8](#what-s-changed-in-the-wdk-for-windows8)
--   [Supported platforms](#supported-platforms)
+The information in the following tables describes the tools that are useful for Windows driver developers. The list of tools includes tools that ship with the WDK (as indicated by the **WDK tool** field) and also includes some tools that are available separately or that are installed with Windows. Tools that can generally be used with all drivers are listed under [All Drivers](#all-drivers). Tools that are specific to a technology are grouped together, for example, tools that are specific for [Windows Portable Devices (WPD) Drivers](#windows-portable-devices-wpd-drivers) or [Sensors](#sensors).
 
-### Index of WDK Tools
+- [Audio/Video Drivers](#audio--video-drivers)
+- [Bluetooth Drivers](#bluetooth-drivers)
+- [Windows Image Acquisition (WIA) Drivers](#windows-image-acquisition-wia-drivers)
+- [Windows Portable Devices (WPD) Drivers](#windows-portable-devices-wpd-drivers)
+- [Printer Drivers](#printer-drivers)
+- [Sensors](#sensors)
+- [All Drivers](#all-drivers)
 
-The information in the following tables describes the tools that are useful for Windows driver developers. The list of tools includes tools that ship with the WDK (as indicated by the **WDK tool** field) and also includes some tools that are available separately or that are installed with Windows. Tools that can generally be used with all drivers are listed under [All Drivers](#tech-all). Tools that are specific to a technology are grouped together, for example, tools that are specific for [Windows Portable Devices (WPD) Drivers](#tech-wpd) or [Sensors](#tech-sensors).
+>[!NOTE]
+>The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where this version of the WDK is installed, for example, C:\\Program Files (x86)\\Windows Kits\\8.1.
 
--   [Audio/Video Drivers](#tech-audio-video)
--   [Bluetooth Drivers](#tech-bluetooth)
--   [Windows Image Acquisition (WIA) Drivers](#tech_wia)
--   [Windows Portable Devices (WPD) Drivers](#tech-wpd)
--   [Printer Drivers](#tech-printer)
--   [Sensors](#tech-sensors)
--   [All Drivers](#tech-all)
+### Audio / Video Drivers
 
-**Note**  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where this version of the WDK is installed, for example, C:\\Program Files (x86)\\Windows Kits\\8.1.
+|Tool Name|Tool Location|Description and Help file location|
+|----|----|----|
+|Display Color Calibration tool (Dccw.exe) </br>**WDK tool**: No|%Windir%\System32\Dccw.exe</br>|A calibration tool that lets users adjust their display color to be closer to the Windows and World Wide Web international standard red-green-blue (sRGB) color space.|
+|GraphEdt (Graphedt.exe)</br>**Tool in WDK:** Yes|%WindowsSdkDir%\tools\x86\graphedt.exe</br>%WindowsSdkDir%\tools\x64\graphedt.exe|Builds filter graphs to test streaming audio/video capture drivers.</br>Documentation:</br>[Overview of GraphEdit](/windows/win32/directshow/simulating-graph-building-with-graphedit)|
+|KSStudio (KsStudio.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x86\KsStudio.exe</br> %WindowsSdkDir%\tools\x64\KsStudio.exe</br></br>**Note** This tool must be run by someone who has administrator privileges.|This tool can construct a graphical representation of a filter graph that shows the pin-to-pin connections between filters and the filters' internal nodes.</br>%WindowsSdkDir%\tools\x86\KsStudio.chm</br>%WindowsSdkDir%\tools\x64\KsStudio.chm</br>See [AVStream Testing and Debugging](../stream/avstream-testing-and-debugging.md) for more information.|
+|USB Device Viewer (Usbview.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x86\Usbview.exe</br>%WindowsSdkDir%\tools\x64\Usbview.exe|Enumerates the USB host controllers, USB hubs, and attached USB devices and can query information about the devices from the registry and through USB requests to the devices.</br>The source code for the USB Device Viewer is available from the code gallery, see [USBVIEW Sample Application](/samples/microsoft/windows-driver-samples/usbview-sample-application/)|
 
- 
+### Bluetooth Drivers
 
-### Technology: Audio / Video Drivers <a name="tech-audio-video"></a>
+|Tool name|Tool location|Description and Help file location|
+|----|----|----|
+|Bluetooth Inquiry Record Verifier (Sdpverify.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x86\Sdpverifiy.exe</br>%WindowsSdkDir%\tools\x64\Sdpverifiy.exe|Displays a Bluetooth device's Inquiry Record as Windows interprets it.</br>WDK documentation: [Bluetooth Inquiry Record Verifier](bluetooth-inquiry-record-verifier.md)|
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Tool name</th>
-<th align="left">Tool location</th>
-<th align="left">Description and Help file location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Display Color Calibration tool (Dccw.exe)</p>
-<p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>%Windir%\System32\Dccw.exe</p></td>
-<td align="left"><p>A calibration tool that lets users adjust their display color to be closer to the Windows and World Wide Web international standard red-green-blue (sRGB) color space.</p>
-</tr>
-<tr class="even">
-<td align="left"><p>GraphEdt (Graphedt.exe)</p>
-<p><strong>Tool in WDK:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x86\graphedt.exe</p>
-<p>%WindowsSdkDir%\tools\x64\graphedt.exe</p></td>
-<td align="left"><p>Builds filter graphs to test streaming audio/video capture drivers.</p>
-<p>Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=9230" data-raw-source="[Overview of GraphEdit](https://go.microsoft.com/fwlink/p/?linkid=9230)">Overview of GraphEdit</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSStudio (KsStudio.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x86\KsStudio.exe</p>
-<p>%WindowsSdkDir%\tools\x64\KsStudio.exe</p>
-<div class="alert">
-<strong>Note</strong>   This tool must be run by someone who has administrator privileges.
-</div>
-<div>
- 
-</div></td>
-<td align="left"><p>This tool can construct a graphical representation of a filter graph that shows the pin-to-pin connections between filters and the filters' internal nodes.</p>
-<p>%WindowsSdkDir%\tools\x86\KsStudio.chm</p>
-<p>%WindowsSdkDir%\tools\x64\KsStudio.chm</p>
-<p>See <a href="https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-testing-and-debugging" data-raw-source="[AVStream Testing and Debugging](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-testing-and-debugging)">AVStream Testing and Debugging</a> for more information.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>USB Device Viewer (Usbview.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x86\Usbview.exe</p>
-<p>%WindowsSdkDir%\tools\x64\Usbview.exe</p></td>
-<td align="left"><p>Enumerates the USB host controllers, USB hubs, and attached USB devices and can query information about the devices from the registry and through USB requests to the devices.</p>
-<p>The source code for the USB Device Viewer is available from the code gallery, see <a href="https://go.microsoft.com/fwlink/p/?linkid=256205" data-raw-source="[USBVIEW Sample Application](https://go.microsoft.com/fwlink/p/?linkid=256205)">USBVIEW Sample Application</a>.</p></td>
-</tr>
-</tbody>
-</table>
+### Windows Image Acquisition (WIA) Drivers
 
- 
+|Tool name|Tool location|Description and Help file location|
+|----|----|----|
+|WIADbgCfg (Wiadbgcfg.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x86\wiadbgcfg.exe</br>%WindowsSdkDir%\tools\x64\wiadbgcfg.exe|Enables logging for WIA drivers (Windows Server 2008 and later versions of Windows).</br>**Note** For earlier versions of Windows, use WIALogCfg.</br>%WindowsSdkDir%\tools\x86\wiadbgcfg.htm</br>%WindowsSdkDir%\tools\x64\wiadbgcfg.htm|
+|WIAInfo2 (Wiainfo2.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x86\wiainfo2.exe</br>%WindowsSdkDir%\tools\x64\wiainfo2.exe|Displays the WIA item tree so that you can view and edit WIA device driver properties.</br>%WindowsSdkDir%\tools\x86\wiainfo2.htm</br>%WindowsSdkDir%\tools\x64\wiainfo2.htm|
+|WIAPreview (Wiapreview.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\wiapreview.exe</br>%WindowsSdkDir%\tools\x86\wiapreview.exe|Shows how to use the WIA Preview component and the driver's segmentation filter.</br>%WindowsSdkDir%\tools\x64\wiapreview.htm</br>%WindowsSdkDir%\tools\x86\wiapreview.htm|
+|WIATest (Wiatest.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\wiatest.exe</br>%WindowsSdkDir%\tools\x86\wiatest.exe|Displays the item tree that is created by the driver, the Windows Image Acquisition (WIA) properties exposed by the driver, and the current value of each property. You can use this tool to debug your driver during development and unit test.</br>%WindowsSdkDir%\tools\x64\wiatest.htm</br>%WindowsSdkDir%\tools\x64\wiatest.htm|
+|Windows Imaging Trace File Viewer (Wiatrcvw.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\Wiatrcvw.exe</br>%WindowsSdkDir%\tools\x86\Wiatrcvw.exe|Displays the WIA trace log (%WINDIR%\Debug\WIA\wiatrace.log) and lets you change the WIA tracing parameters for each module.</br>%WindowsSdkDir%\tools\x64\Wiatrcvw.mht</br>%WindowsSdkDir%\tools\x64\Wiatrcvw.mht|
 
-### Technology: Bluetooth Drivers <a name="tech-bluetooth"></a>
+### Windows Portable Devices (WPD) Drivers
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Tool name</th>
-<th align="left">Tool location</th>
-<th align="left">Description and Help file location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bluetooth Inquiry Record Verifier (Sdpverify.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x86\Sdpverifiy.exe</p>
-<p>%WindowsSdkDir%\tools\x64\Sdpverifiy.exe</p></td>
-<td align="left"><p>Displays a Bluetooth device's Inquiry Record as Windows interprets it.</p>
-<p>WDK documentation:</p>
-<p><a href="bluetooth-inquiry-record-verifier.md" data-raw-source="[Bluetooth Inquiry Record Verifier](bluetooth-inquiry-record-verifier.md)">Bluetooth Inquiry Record Verifier</a></p></td>
-</tr>
-</tbody>
-</table>
+|Tool name|Tool location|Description and Help file location|
+|----|----|----|
+|WpdDeviceInspector (WpdDeviceInspector.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\WpdDeviceInspector.exe</br>%WindowsSdkDir%\tools\x86\WpdDeviceInspector.exe|Queries a WPD driver and generates a comprehensive HTML report that describes your device and its capabilities. For example, you can use it to retrieve a list of supported device commands and objects. And, this tool will generate a list of all properties supported by each object.</br>WDK Documentation:</br>[Windows Portable Devices](/windows/win32/windows-portable-devices)</br>[WPD Driver Development Tools](../portable/familiarizing-yourself-with-the-sample-driver.md)|
+|WpdInfo (WpdInfo.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\WpdInfo.exe</br>%WindowsSdkDir%\tools\x86\WpdInfo.exe|Performs common WPD operations such as: opening and closing a device, creating or deleting objects on a device, and issuing device commands.</br>WDK Documentation:</br>[Windows Portable Devices](/windows/win32/windows-portable-devices)</br>[WPD Driver Development Tools](../portable/familiarizing-yourself-with-the-sample-driver.md)|
+|Microsoft Network Monitor (NetMon.exe)</br>**WDK tool:** No|Download the Microsoft Network Monitor</br>[NetMon.exe](https://www.microsoft.com/download/details.aspx?displaylang=en&id=4865)|Displays trace information from WPD components. This tool replaces WpdMon.exe which had shipped in previous versions of the WDK.</br>WDK Documentation:</br>[Windows Portable Devices](/windows/win32/windows-portable-devices)</br>[WPD Driver Development Tools](../portable/familiarizing-yourself-with-the-sample-driver.md), see [Using the Network Monitor Tool](../portable/using-the-netmon-tool.md).|
 
- 
+### Printer Drivers
 
-### Technology: Windows Image Acquisition (WIA) Drivers<a name="tech_wia"></a>
+|Tool name|Tool location|Description and Help file location|
+|----|----|----|
+|GPDCheck (Gpdcheck.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\gpdcheck.exe</br>%WindowsSdkDir%\tools\x86\gpdcheck.exe|Validates the syntactical correctness of a Generic Printer Description File (GPD).</br>For information about command options, type </br>**gpdcheck /?**|
+|INFGate (Infgate.exe)</br>**WDK tool:** Yes|WindowsSdkDir%\tools\x64\infgate.exe</br>%WindowsSdkDir%\tools\x86\infgate.exe.exe|Validates the conformance of a printer INF file.</br>For information about command options, type</br>**infgate /?**|
+|isXPS (isXPS.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\isxps\isxps.exe</br>%WindowsSdkDir%\tools\x86\isxps\isxps.exe|Validates the conformance of an XPS file to the XPS and OPC specifications.</br>For information about command options, type</br>**isxps /?** in a Command prompt window.</br>For more information, see [isXPS Conformance Tool](/previous-versions/aa348104(v=vs.110))|
+|Looksgood (Looksgood.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\looksgood.exe</br>%WindowsSdkDir%\tools\x86\looksgood.exe|Validates the correctness of an XPS rendering engine.</br>For information about command options, type</br>**looksgood /?**|
+|MakeNTF (Makentf.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\makentf.exe</br>%WindowsSdkDir%\tools\x86\makentf.exe|Converts Adobe Font Metrics (AFM) files and East Asian font AFM files to Windows font files (.ntf).</br>WDK Documentation:</br>[Converting AFM Files to NTF Files](../print/converting-afm-files-to-ntf-files.md)</br>[Converting East Asian AFM Files to NTF Files](../print/converting-east-asian-afm-files-to-ntf-files.md)|
+|PPDCheck (Ppdcheck.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\ppdcheck.exe</br>%WindowsSdkDir%\tools\x86\ppdcheck.exe|Validates the syntactical correctness of a PostScript Printer Description File (PPD).</br>For information about command options, type</br>**ppdcheck /?**|
+|PTConform (PTConform.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\PTConform.exe</br>%WindowsSdkDir%\tools\x86\PTConform.exe|Validates a Print Ticket or Print Capabilities document for conformance to the Print Schema.</br>For information about command options, type</br>**ptconform /?**|
+|XpsAnalyzer (XpsAnalyzer.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\XpsAnalyzer.exe</br>%WindowsSdkDir%\tools\x86\XpsAnalyzer.exe|Analyzes XML Paper Specification (XPS) files for compatibility with the XPS 1.0 specification.</br>WDK Documentation:</br>[XpsAnalyzer](xpsanalyzer.md)|
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Tool name</th>
-<th align="left">Tool location</th>
-<th align="left">Description and Help file location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>WIADbgCfg (Wiadbgcfg.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x86\wiadbgcfg.exe</p>
-<p>%WindowsSdkDir%\tools\x64\wiadbgcfg.exe</p></td>
-<td align="left"><p>Enables logging for WIA drivers (Windows Server 2008 and later versions of Windows).</p>
-<div class="alert">
-<strong>Note</strong>   For earlier versions of Windows, use WIALogCfg.
-</div>
-<div>
- 
-</div>
-<p>%WindowsSdkDir%\tools\x86\wiadbgcfg.htm</p>
-<p>%WindowsSdkDir%\tools\x64\wiadbgcfg.htm</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>WIAInfo2 (Wiainfo2.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x86\wiainfo2.exe</p>
-<p>%WindowsSdkDir%\tools\x64\wiainfo2.exe</p></td>
-<td align="left"><p>Displays the WIA item tree so that you can view and edit WIA device driver properties.</p>
-<p>%WindowsSdkDir%\tools\x86\wiainfo2.htm</p>
-<p>%WindowsSdkDir%\tools\x64\wiainfo2.htm</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>WIAPreview (Wiapreview.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\wiapreview.exe</p>
-<p>%WindowsSdkDir%\tools\x86\wiapreview.exe</p></td>
-<td align="left"><p>Shows how to use the WIA Preview component and the driver's segmentation filter.</p>
-<p>%WindowsSdkDir%\tools\x64\wiapreview.htm</p>
-<p>%WindowsSdkDir%\tools\x86\wiapreview.htm</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>WIATest (Wiatest.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\wiatest.exe</p>
-<p>%WindowsSdkDir%\tools\x86\wiatest.exe</p></td>
-<td align="left"><p>Displays the item tree that is created by the driver, the Windows Image Acquisition (WIA) properties exposed by the driver, and the current value of each property. You can use this tool to debug your driver during development and unit test.</p>
-<p>%WindowsSdkDir%\tools\x64\wiatest.htm</p>
-<p>%WindowsSdkDir%\tools\x64\wiatest.htm</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Imaging Trace File Viewer (Wiatrcvw.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\Wiatrcvw.exe</p>
-<p>%WindowsSdkDir%\tools\x86\Wiatrcvw.exe</p></td>
-<td align="left"><p>Displays the WIA trace log (%WINDIR%\Debug\WIA\wiatrace.log) and lets you change the WIA tracing parameters for each module.</p>
-<p>%WindowsSdkDir%\tools\x64\Wiatrcvw.mht</p>
-<p>%WindowsSdkDir%\tools\x64\Wiatrcvw.mht</p></td>
-</tr>
-</tbody>
-</table>
+### Sensors
 
- 
+|Tool name|Tool location|Description and Help file location|
+|----|----|----|
+|Sensor Diagnostic Tool (sensordiagnostictool.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64</br>%WindowsSdkDir%\tools\x86|Tests the driver, firmware, and hardware for sensor and location functionality. The tool invokes the sensor and location API to test data retrieval, event handling, report intervals, change sensitivity, property retrieval.</br>WDK Documentation:</br>[Testing sensor functionality with the Sensor Diagnostic Tool](../sensors/the-sensor-diagnostic-tool.md)|
 
-### Technology: Windows Portable Devices (WPD) Drivers <a name="tech-wpd"></a>
+### All Drivers
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Tool name</th>
-<th align="left">Tool location</th>
-<th align="left">Description and Help file location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>WpdDeviceInspector (WpdDeviceInspector.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\WpdDeviceInspector.exe</p>
-<p>%WindowsSdkDir%\tools\x86\WpdDeviceInspector.exe</p></td>
-<td align="left"><p>Queries a WPD driver and generates a comprehensive HTML report that describes your device and its capabilities. For example, you can use it to retrieve a list of supported device commands and objects. And, this tool will generate a list of all properties supported by each object.</p>
-<p>WDK Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=106527" data-raw-source="[Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527)">Windows Portable Devices</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262664" data-raw-source="[WPD Driver Development Tools](https://go.microsoft.com/fwlink/p/?linkid=262664)">WPD Driver Development Tools</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>WpdInfo (WpdInfo.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\WpdInfo.exe</p>
-<p>%WindowsSdkDir%\tools\x86\WpdInfo.exe</p></td>
-<td align="left"><p>Performs common WPD operations such as: opening and closing a device, creating or deleting objects on a device, and issuing device commands.</p>
-<p>WDK Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=106527" data-raw-source="[Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527)">Windows Portable Devices</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262664" data-raw-source="[WPD Driver Development Tools](https://go.microsoft.com/fwlink/p/?linkid=262664)">WPD Driver Development Tools</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Network Monitor (NetMon.exe)</p>
-<p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>Download the Microsoft Network Monitor (NetMon.exe <a href="https://go.microsoft.com/fwlink/p/?linkid=248501" data-raw-source="[here](https://go.microsoft.com/fwlink/p/?linkid=248501)">here</a>.</p></td>
-<td align="left"><p>Displays trace information from WPD components. This tool replaces WpdMon.exe which had shipped in previous versions of the WDK.</p>
-<p>WDK Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=106527" data-raw-source="[Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527)">Windows Portable Devices</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262664" data-raw-source="[WPD Driver Development Tools](https://go.microsoft.com/fwlink/p/?linkid=262664)">WPD Driver Development Tools</a>, see <a href="https://docs.microsoft.com/previous-versions/hh451296(v=vs.85)" data-raw-source="[Using the Network Monitor Tool](https://docs.microsoft.com/previous-versions/hh451296(v=vs.85))">Using the Network Monitor Tool</a>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### Technology: Printer Drivers <a name="tech-printer"></a>
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Tool name</th>
-<th align="left">Tool location</th>
-<th align="left">Description and Help file location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>GPDCheck (Gpdcheck.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\gpdcheck.exe</p>
-<p>%WindowsSdkDir%\tools\x86\gpdcheck.exe</p></td>
-<td align="left"><p>Validates the syntactical correctness of a Generic Printer Description File (GPD).</p>
-<p>For information about command options, type</p>
-<p><strong>gpdcheck /?</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>INFGate (Infgate.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\infgate.exe</p>
-<p>%WindowsSdkDir%\tools\x86\infgate.exe.exe</p></td>
-<td align="left"><p>Validates the conformance of a printer INF file.</p>
-<p>For information about command options, type</p>
-<p><strong>infgate /?</strong></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>isXPS (isXPS.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\isxps\isxps.exe</p>
-<p>%WindowsSdkDir%\tools\x86\isxps\isxps.exe</p></td>
-<td align="left"><p>Validates the conformance of an XPS file to the XPS and OPC specifications.</p>
-<p>For information about command options, type</p>
-<p><strong>isxps /?</strong> in a Command prompt window.</p>
-<p>For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=150004" data-raw-source="[isXPS Conformance Tool](https://go.microsoft.com/fwlink/p/?linkid=150004)">isXPS Conformance Tool</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Looksgood (Looksgood.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\looksgood.exe</p>
-<p>%WindowsSdkDir%\tools\x86\looksgood.exe</p></td>
-<td align="left"><p>Validates the correctness of an XPS rendering engine.</p>
-<p>For information about command options, type</p>
-<p><strong>looksgood /?</strong></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>MakeNTF (Makentf.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\makentf.exe</p>
-<p>%WindowsSdkDir%\tools\x86\makentf.exe</p></td>
-<td align="left"><p>Converts Adobe Font Metrics (AFM) files and East Asian font AFM files to Windows font files (.ntf).</p>
-<p>WDK Documentation:</p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers/print/converting-afm-files-to-ntf-files" data-raw-source="[Converting AFM Files to NTF Files](https://docs.microsoft.com/windows-hardware/drivers/print/converting-afm-files-to-ntf-files)">Converting AFM Files to NTF Files</a></p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers/print/converting-east-asian-afm-files-to-ntf-files" data-raw-source="[Converting East Asian AFM Files to NTF Files](https://docs.microsoft.com/windows-hardware/drivers/print/converting-east-asian-afm-files-to-ntf-files)">Converting East Asian AFM Files to NTF Files</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>PPDCheck (Ppdcheck.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\ppdcheck.exe</p>
-<p>%WindowsSdkDir%\tools\x86\ppdcheck.exe</p></td>
-<td align="left"><p>Validates the syntactical correctness of a PostScript Printer Description File (PPD).</p>
-<p>For information about command options, type</p>
-<p><strong>ppdcheck /?</strong></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PTConform (PTConform.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\PTConform.exe</p>
-<p>%WindowsSdkDir%\tools\x86\PTConform.exe</p></td>
-<td align="left"><p>Validates a Print Ticket or Print Capabilities document for conformance to the Print Schema.</p>
-<p>For information about command options, type</p>
-<p><strong>ptconform /?</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>XpsAnalyzer (XpsAnalyzer.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\XpsAnalyzer.exe</p>
-<p>%WindowsSdkDir%\tools\x86\XpsAnalyzer.exe</p></td>
-<td align="left"><p>Analyzes XML Paper Specification (XPS) files for compatibility with the XPS 1.0 specification.</p>
-<p>WDK Documentation:</p>
-<p><a href="xpsanalyzer.md" data-raw-source="[XpsAnalyzer](xpsanalyzer.md)">XpsAnalyzer</a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### Technology: Sensors <a name="tech-sensors"></a>
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Tool name</th>
-<th align="left">Tool location</th>
-<th align="left">Description and Help file location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Sensor Diagnostic Tool (sensordiagnostictool.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64&lt;/p&gt;
-<p>%WindowsSdkDir%\tools\x86&lt;/p&gt;</td>
-<td align="left"><p>Tests the driver, firmware, and hardware for sensor and location functionality. The tool invokes the sensor and location API to test data retrieval, event handling, report intervals, change sensitivity, property retrieval.</p>
-<p>WDK Documentation:</p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers/sensors/the-sensor-diagnostic-tool" data-raw-source="[Testing sensor functionality with the Sensor Diagnostic Tool](https://docs.microsoft.com/windows-hardware/drivers/sensors/the-sensor-diagnostic-tool)">Testing sensor functionality with the Sensor Diagnostic Tool</a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### Technology: All Drivers <a name="tech-all"></a>
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Tool name</th>
-<th align="left">Tool location</th>
-<th align="left">Description and Help file location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>BinPlace (Binplace.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x86\binplace.exe</p></td>
-<td align="left"><p>Manages large coding projects by moving files, extracting symbols from executable files, and removing private symbols from symbol files.</p>
-<p>WDK Documentation:</p>
-<p><a href="binplace.md" data-raw-source="[BinPlace](binplace.md)">BinPlace</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Code Analysis for Drivers</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>The Code Analysis tool is included in Visual Studio. The driver-specific component is added when you install the WDK.</p></td>
-<td align="left"><p>A static verification tool that detects C and C++ coding errors. This version is specifically designed to detect errors in kernel-mode drivers.</p>
-<div class="alert">
-<strong>Note</strong>  In previous versions of the WDK, this feature was part of OACR and was also available as the standalone tool PREfast for Drivers. Starting with Visual Studio 2012, the feature is now integrated into Visual Studio.
-</div>
-<div>
- 
-</div>
-<p>WDK Documentation:</p>
-<p><a href="code-analysis-for-drivers.md" data-raw-source="[Code Analysis for Drivers](code-analysis-for-drivers.md)">Code Analysis for Drivers</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>CertMgr (CertMgr.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\CertMgr.exe</p>
-<p>%WindowsSdkDir%\bin\x86\CertMgr.exe</p></td>
-<td align="left"><p>Manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs) that are used to sign drivers and <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages" data-raw-source="[driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver packages</a>.</p>
-<p>WDK Documentation:</p>
-<p><a href="certmgr.md" data-raw-source="[&lt;strong&gt;CertMgr&lt;/strong&gt;](certmgr.md)"><strong>CertMgr</strong></a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>ChkINF</p>
-<p><strong>WDK tool:</strong> Deprecated</p></td>
-<td align="left"><p>Previous path:</p>
-<p>%WindowsSdkDir%\tools\x86\Chkinf</p></td>
-<td align="left"><p>ChkInf has been deprecated. Instead, use <a href="infverif.md" data-raw-source="[InfVerif](infverif.md)">InfVerif</a></p>
-<p>WDK Documentation:</p>
-<p><a href="infverif.md" data-raw-source="[InfVerif](infverif.md)">InfVerif</a></p>
-</td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Computer Hardware Identification Tool (ComputerHardwareIds.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p><strong>Windows Driver Kit (WDK) 8:</strong></p>
-<p>%WindowsSdkDir%\tools\x64\ComputerHardwareIds.exe</p>
-<p>%WindowsSdkDir%\tools\x86\ComputerHardwareIds.exe</p>
-<p>WDKPath\tools\Other\ia64\ComputerHardwareIds.exe</p>
-<p><strong>Windows Driver Kit (WDK) 8.1:</strong></p>
-<p>%WindowsSdkDir%\bin\x64\ComputerHardwareIds.exe</p>
-<p>%WindowsSdkDir%\bin\x86\ComputerHardwareIds.exe</p>
-<p>%WindowsSdkDir%\bin\arm\ComputerHardwareIds.exe</p></td>
-<td align="left"><p>Derives the computer hardware IDs from SMBIOS information.</p>
-<p>WDK Documentation:</p>
-<p><a href="computerhardwareids.md" data-raw-source="[ComputerHardwareIds](computerhardwareids.md)">ComputerHardwareIds</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC2WMIParser (DC2WMIParser.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\DC2WMIParser.exe</p>
-<p>%WindowsSdkDir%\tools\x86\DC2WMIParser.exe</p></td>
-<td align="left"><p>DC2WMIParser is a tool that collects the WMI IRP records created by Driver Verifier and converts this log to a text file.</p>
-<p>Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=698758" data-raw-source="[IRP Logging](https://go.microsoft.com/fwlink/p/?LinkId=698758)">IRP Logging</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dependency Walker (Depends.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\depends.exe</p>
-<p>%WindowsSdkDir%\tools\x86\depends.exe</p></td>
-<td align="left"><p>Displays the dependence patterns of the modules that are required by an application in a tree diagram. The display includes numerous details, including the functions exported by each module, the functions actually called by other modules, and the minimum set of files that are required for a module to load and run.</p>
-<p>In the tool, from the <strong>Dependency Walker</strong> Help menu, select <strong>Help Topics</strong>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DevCon (Devcon.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\devcon.exe</p>
-<p>%WindowsSdkDir%\tools\x86\devcon.exe</p></td>
-<td align="left"><p>A command-line version of Device Manager. DevCon enables, disables, installs, configures, and removes devices on the local computer and displays detailed information about devices on local and remote computers.</p>
-<p>WDK Documentation:</p>
-<p><a href="devcon.md" data-raw-source="[DevCon](devcon.md)">DevCon</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Drivers (Drivers.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\drivers.exe</p>
-<p>%WindowsSdkDir%\tools\x86\drivers.exe</p></td>
-<td align="left"><p>Displays a list of all drivers that are installed on the computer.</p>
-<p>WDK Documentation:</p>
-<p>None</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Driver Verifier (Verifier.exe)</p>
-<p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>%Windir%\system32\verifier.exe</p></td>
-<td align="left"><p>Monitors kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. It can subject the drivers to a variety of stresses and tests to find improper behavior.</p>
-<p>WDK Documentation:</p>
-<p><a href="driver-verifier.md" data-raw-source="[Driver Verifier](driver-verifier.md)">Driver Verifier</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Driver Verification Log (DVL)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>Requires Microsoft Visual Studio and the WDK. From the <strong>Driver</strong> menu, click <strong>Create Driver Verification Log....</strong></p></td>
-<td align="left"><p>The <a href="https://go.microsoft.com/fwlink/p/?linkid=227016" data-raw-source="[Windows Server 2012 Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)">Windows Server 2012 Hardware Certification Program</a> requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. See <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Creating a Driver Verification Log](https://docs.microsoft.com/windows-hardware/drivers)">Creating a Driver Verification Log</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Enhanced Storage Certificate Management Tool (EhStorCertMgrCmd.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\ehstorcertmgrcmd.exe</p>
-<p>%WindowsSdkDir%\tools\x86\ehstorcertmgrcmd.exe</p></td>
-<td align="left"><p>Manages certificates on USB storage devices that are compliant with the IEEE 1667 standard.</p>
-<p>WDK Documentation:</p>
-<p><a href="enhanced-storage-certificate-management-tool.md" data-raw-source="[Enhanced Storage Certificate Management Tool](enhanced-storage-certificate-management-tool.md)">Enhanced Storage Certificate Management Tool</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Event and Performance Counter Manifest Generator Tool (ECManGen.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\ECManGen.exe</p>
-<p>%WindowsSdkDir%\bin\x86\ECManGen.exe</p></td>
-<td align="left"><p>A tool for creating an event or performance counter manifest (*.man) from scratch without ever having to use XML tags. For information about creating manifest files, see <a href="https://docs.microsoft.com/windows/desktop/WES/writing-an-instrumentation-manifest" data-raw-source="[Writing an Instrumentation Manifest (Windows)](https://docs.microsoft.com/windows/desktop/WES/writing-an-instrumentation-manifest)">Writing an Instrumentation Manifest (Windows)</a> section and <a href="adding-event-tracing-to-kernel-mode-drivers.md" data-raw-source="[Adding Event Tracing to Kernel-Mode Drivers](adding-event-tracing-to-kernel-mode-drivers.md)">Adding Event Tracing to Kernel-Mode Drivers</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>GUIDgen (Guidgen.exe)</p>
-<p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>Download available from <a href="https://go.microsoft.com/fwlink/p/?linkid=121586" data-raw-source="[Microsoft Exchange Server GUID Generator](https://go.microsoft.com/fwlink/p/?linkid=121586)">Microsoft Exchange Server GUID Generator</a></p></td>
-<td align="left"><p>Generates globally unique identifiers (GUID) that you can use to identify your classes, objects, and interfaces. The generated GUID is copied to the Clipboard in one of four formats so that you can insert it into your source code.</p>
-<p>GUIDGEN.doc (included in the download package)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Inf2Cat (Inf2cat.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\inf2cat.exe</p>
-<p>%WindowsSdkDir%\bin\x86\inf2cat.exe</p></td>
-<td align="left"><p>Determines whether a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages" data-raw-source="[driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver package's</a> INF file can be digitally-signed for a specified list of Windows versions, and, if so, generates the unsigned <a href="https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files" data-raw-source="[catalog files](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files)">catalog files</a> that apply to the specified Windows versions.</p>
-<p>WDK Documentation:</p>
-<p><a href="inf2cat.md" data-raw-source="[&lt;strong&gt;Inf2Cat&lt;/strong&gt;](inf2cat.md)"><strong>Inf2Cat</strong></a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>InfVerif (InfVerif.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>c:\Program Files(x86)\Windows Kits\10\tools\arm\infverif.exe</p>
-<p>c:\Program Files(x86)\Windows Kits\10\tools\arm64\infverif.exe</p>
-<p>c:\Program Files(x86)\Windows Kits\10\tools\x86\infverif.exe</p>
-<p>c:\Program Files(x86)\Windows Kits\10\tools\x64\infverif.exe</p>
-<td align="left"><p>Tests a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</p>
-<p>WDK Documentation:</p>
-<p><a href="infverif.md" data-raw-source="[InfVerif](infverif.md)">InfVerif</a></p></td>
-</tr>
-
-<tr class="even">
-<td align="left"><p>MakeCat (MakeCat.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>WDKPath\bin\amd64\MakeCat.exe</p>
-<p>WDKPath\bin\ia64\MakeCat.exe</p>
-<p>WDKPath\bin\x86\MakeCat.exe</p></td>
-<td align="left"><p>Creates a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files" data-raw-source="[catalog file](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files)">catalog file</a> for a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages" data-raw-source="[driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver package</a>.</p>
-<p>WDK Documentation:</p>
-<p><a href="makecat.md" data-raw-source="[MakeCat](makecat.md)">MakeCat</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>MakeCert (MakeCert.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\MakeCert.exe</p>
-<p>%WindowsSdkDir%\bin\x86\MakeCert.exe</p></td>
-<td align="left"><p>Creates an X.509 certificate that is signed by a system test root key or by another specified key.</p>
-<p>WDK Documentation:</p>
-<p><a href="makecert.md" data-raw-source="[&lt;strong&gt;MakeCert&lt;/strong&gt;](makecert.md)"><strong>MakeCert</strong></a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>MSBuild (MSBuild.exe)</p>
-<p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>Installed with Visual Studio</p></td>
-<td align="left"><p>Builds the samples, drivers, and associated software components that are supplied in the Microsoft WDK.</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262804" data-raw-source="[MSBuild]( https://go.microsoft.com/fwlink/p/?linkid=262804)">MSBuild</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PnpCpu (PnPCpu.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\PnPCpu.exe</p>
-<p>%WindowsSdkDir%\tools\x86\PnPCpu.exe</p></td>
-<td align="left"><p>Simulates a hot add of processors to a running instance of Windows Server 2008.</p>
-<p>WDK Documentation:</p>
-<p><a href="pnpcpu.md" data-raw-source="[PNPCPU](pnpcpu.md)">PNPCPU</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>PnPUtil (PnPUtil.exe)</p>
-<p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>%Windir%\system32\pnputil.exe</p></td>
-<td align="left"><p>A command-line tool that installs or deletes <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages" data-raw-source="[driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver packages</a> from the Windows driver store.</p>
-<p>This tool is available in Windows 7 and later versions of Windows.</p>
-<p>WDK Documentation:</p>
-<p><a href="pnputil.md" data-raw-source="[PnPUtil](pnputil.md)">PnPUtil</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PoolMon (Poolmon.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\poolmon.exe</p>
-<p>%WindowsSdkDir%\tools\x86\poolmon.exe</p></td>
-<td align="left"><p>Displays data that the operating system collects about memory allocations from the system's paged and nonpaged kernel pools, and the memory pools used for Terminal Services sessions. The data is grouped by pool allocation tag.</p>
-<p>WDK Documentation:</p>
-<p><a href="poolmon.md" data-raw-source="[PoolMon](poolmon.md)">PoolMon</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>PowerCfg (PowerCfg.exe)</p>
-<p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>%Windir%\system32\powercfg.exe</p></td>
-<td align="left"><p>A command-line tool that is used to evaluate system energy efficiency.</p>
-<p>This tool is available in Windows 7 and later versions of Windows.</p>
-<p>Dev Center Documentation:</p>
-<a href="http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx" data-raw-source="[Using PowerCfg to Evaluate System Energy Efficiency](http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx)">Using PowerCfg to Evaluate System Energy Efficiency</a>
-<p>For information about command options, type</p>
-<p></p>
-<p><strong>PowerCfg /?</strong></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Pvk2Pfx (Pvk2Pfx.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\Pvk2Pfx.exe</p>
-<p>%WindowsSdkDir%\bin\x86\Pvk2Pfx.exe</p></td>
-<td align="left"><p>Copies public key and private key information contained in .spc, .cer, and .pvk files to a personal information exchange (.pfx) file.</p>
-<p>WDK Documentation:</p>
-<p><a href="pvk2pfx.md" data-raw-source="[&lt;strong&gt;Pvk2Pfx&lt;/strong&gt;](pvk2pfx.md)"><strong>Pvk2Pfx</strong></a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>PwrTest (Pwrtest.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\pwrtest.exe</p>
-<p>%WindowsSdkDir%\tools\x86\pwrtest.exe</p></td>
-<td align="left"><p>A power management tool for Windows 7 and later that exercises and records power management information from the computer.</p>
-<p>WDK Documentation:</p>
-<p><a href="pwrtest.md" data-raw-source="[PwrTest](pwrtest.md)">PwrTest</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SignTool (SignTool.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\SignTool.exe</p>
-<p>%WindowsSdkDir%\bin\x86\SignTool.exe</p></td>
-<td align="left"><p>Digitally-signs files, verifies signatures in files, and time-stamps files.</p>
-<p>WDK Documentation:</p>
-<p><a href="signtool.md" data-raw-source="[&lt;strong&gt;SignTool&lt;/strong&gt;](signtool.md)"><strong>SignTool</strong></a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Stampinf (Stampinf.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\stampinf.exe</p>
-<p>%WindowsSdkDir%\bin\x86\stampinf.exe</p></td>
-<td align="left"><p>Updates common INF file directives, including the <strong>DriverVer</strong> directive.</p>
-<p>WDK Documentation:</p>
-<p><a href="stampinf.md" data-raw-source="[Stampinf](stampinf.md)">Stampinf</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Static Driver Verifier</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\SDV</p>
-<p></p>
-<div class="alert">
-<strong>Note</strong>  Launch Static Driver Verifier from the <strong>Driver</strong> menu in Visual Studio.
-</div>
-<div>
- 
-</div></td>
-<td align="left"><p>A static verification tool for drivers that systematically analyzes the source code of Windows drivers and determines whether the driver properly interacts with the Windows operating system kernel.</p>
-<p>WDK Documentation:</p>
-<p><a href="static-driver-verifier.md" data-raw-source="[Static Driver Verifier](static-driver-verifier.md)">Static Driver Verifier</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Tracefmt (Tracefmt.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\tracefmt.exe</p>
-<p>%WindowsSdkDir%\bin\x86\tracefmt.exe</p></td>
-<td align="left"><p>Formats and displays trace messages from an event trace log file (.etl) or a real-time trace session.</p>
-<p>WDK Documentation:</p>
-<p><a href="tracefmt.md" data-raw-source="[Tracefmt](tracefmt.md)">Tracefmt</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>TraceLog (Tracelog.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p><strong>WDK 8:</strong></p>
-<p>%WindowsSdkDir%\tools\x64\tracelog.exe</p>
-<p>%WindowsSdkDir%\tools\x86\tracelog.exe</p>
-<p><strong>WDK 8.1:</strong></p>
-<p>%WindowsSdkDir%\bin\x64\tracelog.exe</p>
-<p>%WindowsSdkDir%\bin\x86\tracelog.exe</p>
-<p>%WindowsSdkDir%\bin\arm\tracelog.exe</p></td>
-<td align="left"><p>Configures and controls trace sessions from the command line. Measures time spent in deferred procedure calls (DPCs) and interrupt service routines (ISRs).</p>
-<p>WDK Documentation:</p>
-<p><a href="tracelog.md" data-raw-source="[Tracelog](tracelog.md)">Tracelog</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>TracePDB (Tracepdb.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\tracepdb.exe</p>
-<p>%WindowsSdkDir%\bin\x86\tracepdb.exe</p></td>
-<td align="left"><p>Creates trace message format (.tmf) files from the full or private PDB symbol file for a WPP trace provider.</p>
-<p>WDK Documentation:</p>
-<p><a href="tracepdb.md" data-raw-source="[Tracepdb](tracepdb.md)">Tracepdb</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>TraceView (Traceview.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\TraceView.exe</p>
-<p>%WindowsSdkDir%\tools\x86\TraceView.exe</p></td>
-<td align="left"><p>Configures and controls trace sessions and displays formatted trace messages from real-time trace sessions and trace logs. TraceView has a graphic user interface and a command-line interface for batch processing and scripting.</p>
-<p>WDK Documentation:</p>
-<p><a href="traceview.md" data-raw-source="[TraceView](traceview.md)">TraceView</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>TraceWPP (Tracewpp.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\tracewpp.exe</p>
-<p>%WindowsSdkDir%\bin\x86\tracewpp.exe</p></td>
-<td align="left"><p>Runs the Windows Software Trace Preprocessor (WPP).</p>
-<p>WDK Documentation:</p>
-<p><a href="wpp-preprocessor.md" data-raw-source="[WPP Preprocessor](wpp-preprocessor.md)">WPP Preprocessor</a></p>
-<p><a href="survey-of-software-tracing-tools.md" data-raw-source="[Survey of Software Tracing Tools](survey-of-software-tracing-tools.md)">Survey of Software Tracing Tools</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>WDF Tester</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64&lt;/p&gt;
-<p>%WindowsSdkDir%\tools\x86&lt;/p&gt;</td>
-<td align="left"><p>A set of tools that can be used to test, verify, and debug WDF drivers. The toolset provides a WMI programming interface that can be used in a script or a compiled application.</p>
-<p>WDK Documentation:</p>
-<p><a href="wdftester--wdf-driver-testing-toolset.md" data-raw-source="[WdfTester: WDF Driver Testing Toolset](wdftester--wdf-driver-testing-toolset.md)">WdfTester: WDF Driver Testing Toolset</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>WDF Verifier (Wdfverifier.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\wdfverifier.exe</p>
-<p>%WindowsSdkDir%\tools\x86\wdfverifier.exe</p></td>
-<td align="left"><p>Provides an easy-to-use interface to the framework's verifier for KMDF and UMDF drivers.</p>
-<p>WDK Documentation:</p>
-<p><a href="wdf-verifier-control-application.md" data-raw-source="[WDF Verifier Control Application](wdf-verifier-control-application.md)">WDF Verifier Control Application</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Web Services on devices (WSD) Basic Interoperability Tool (WSDBIT)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p><strong>WSDBIT Client:</strong></p>
-<p>%WindowsSdkDir%\tools\x64\wsdbit_client.exe</p>
-<p>%WindowsSdkDir%\tools\x86\wsdbit_client.exe</p>
-<p><strong>WSDBIT Server:</strong></p>
-<p>%WindowsSdkDir%\tools\x64\wsdbit_server.exe</p>
-<p>%WindowsSdkDir%\tools\x86\wsdbit_server.exe</p></td>
-<td align="left"><p>Verifies an implementation of <a href="https://go.microsoft.com/fwlink/p/?linkid=81255" data-raw-source="[Device Profile for Web Services (DPWS)](https://go.microsoft.com/fwlink/p/?linkid=81255)">Device Profile for Web Services (DPWS)</a> works with WSDAPI.</p>
-<p>WDK Documentation:</p>
-<p><a href="wsdapi-basic-interoperability-tool.md" data-raw-source="[WSD Interoperability Tool](wsdapi-basic-interoperability-tool.md)">WSD Interoperability Tool</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Winerror (Winerror.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\winerror.exe</p>
-<p>%WindowsSdkDir%\tools\x86\winerror.exe</p></td>
-<td align="left"><p>Returns the error message identifier and mapping information for the specified error (Winerror.h) or success codes (Ntstatus.h).</p>
-<p>For information about command options, type</p>
-<p><strong>winerror /?</strong></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>WMIMofCk (Wmimofck.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x86\wmimofck.exe</p></td>
-<td align="left"><p>WDK Documentation:</p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/using-wmimofck-exe" data-raw-source="[Using wmimofck.exe](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-wmimofck-exe)">Using wmimofck.exe</a></p>
-<p>For information about command options, type</p>
-<p><strong>wmimofck -?</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>WsdCodeGen (Wsdcodegen.exe)</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\bin\x64\wsdcodegen.exe</p>
-<p>%WindowsSdkDir%\bin\x86\wsdcodegen.exe</p></td>
-<td align="left"><p>Automatically generates proxies and stubs based on a Web Services contract. Primarily, you can use this tool to create client applications. However, you can use it for testing or for creating user-mode drivers.</p>
-<p>Verifies that the classes, properties, methods and events specified in a binary MOF file (.bmf) are valid for WMI use. Generates MOF support files.</p>
-<p>Windows SDK:</p>
-<p>See the <a href="https://go.microsoft.com/fwlink/p/?linkid=81407" data-raw-source="[Web Services on Devices](https://go.microsoft.com/fwlink/p/?linkid=81407)">Web Services on Devices</a> section</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>WSDDebug_client and WSDDebug_host</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p><strong>Debug Client:</strong></p>
-<p>%WindowsSdkDir%\bin\x64\WSDDebug_client.exe</p>
-<p>%WindowsSdkDir%\bin\x86\WSDDebug_client.exe</p>
-<p><strong>Debug Host:</strong></p>
-<p>%WindowsSdkDir%\bin\x64\WSDDebug_host.exe</p>
-<p>%WindowsSdkDir%\bin\x86\WSDDebug_host.exe</p></td>
-<td align="left"><p>These tools are a soft device and client that you can use to troubleshoot devices or applications.</p>
-<p>Windows SDK:</p>
-<p>See the <a href="https://go.microsoft.com/fwlink/p/?linkid=81407" data-raw-source="[Web Services on Devices](https://go.microsoft.com/fwlink/p/?linkid=81407)">Web Services on Devices</a> section</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### What's New in the WDK for Windows 8.1 <a name="what-s-new-in-the-wdk-for-windows8-1"></a>
-
-The following tools have been added or have changed in the WDK 8.1:
-
--   HCK Test Suites (see [How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers) and [How to run the HCK Test Suites in WDK 8.1](https://docs.microsoft.com/windows-hardware/drivers).)
-
--   [Driver Verifier](driver-verifier.md)—now has four new options for detecting errors in Windows drivers.
--   [PwrTest](pwrtest.md)—updated documentation, new test scenarios, including support for connected standby power states.
--   [Tracelog](tracelog.md)—new options.
-
-### What's New in the WDK for Windows 8 <a name="what-s-new-in-the-wdk-for-windows8"></a>
-
-The following tools have been added to the WDK for Windows 8:
-
--   Bluetooth Inquiry Record Verifier (Sdpverify.exe)
-
--   Device Fundamentals tests (see [How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers) and [How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers).
-
--   Sensor Diagnostic Tool (sensordiagnostictool.exe)
-
-### What's Changed in the WDK for Windows 8 <a name="what-s-changed-in-the-wdk-for-windows8"></a>
-The following tools were in the Microsoft WDK for Windows 7, but are not included in the WDK for Windows 8.
-
--   Windows Biometric Framework Tools (BioTest.exe, WBDIDriverTest.exe)
-
--   Device Path Exerciser (devpathexer.exe). Now part of the Device Fundamental fuzz tests.
-
--   IoSpy and IoAttack (IoSpyCmd.exe, IoAttack.exe). Now part of the Device Fundamental tests.
-
--   Kernrate (Kernrate.exe) Kernrate is no longer supported. Instead, use the [Windows Performance Analysis Toolkit](https://go.microsoft.com/fwlink/p/?linkid=294280).
-
--   Microsoft Auto Code Review (OACR) (The driver components now part of the Code Analysis tool in Visual Studio.)
-
--   Plug and Play Driver Test (pnpdtest.exe). Now part of the Device Fundamental tests.
-
--   ProCalc
-
--   WWAN Driver Test App (wwandrivertestapp.exe)
+|Tool name|Tool location|Description and Help file location|
+|----|----|----|
+|BinPlace (Binplace.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x86\binplace.exe|Manages large coding projects by moving files, extracting symbols from executable files, and removing private symbols from symbol files.</br>WDK Documentation:</br>[BinPlace](binplace.md)|
+|Code Analysis for Drivers</br>**WDK tool:** Yes|The Code Analysis tool is included in Visual Studio. The driver-specific component is added when you install the WDK.|A static verification tool that detects C and C++ coding errors. This version is specifically designed to detect errors in kernel-mode drivers.</br>WDK Documentation:</br>[Code Analysis for Drivers](code-analysis-for-drivers.md)|
+|CertMgr (CertMgr.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\CertMgr.exe</br>%WindowsSdkDir%\bin\x86\CertMgr.exe|Manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs) that are used to sign drivers and [driver packages](../install/driver-packages.md).</br>WDK Documentation:</br>[CertMgr](certmgr.md)|
+|ChkINF</br>**WDK tool:** Deprecated|Previous path:</br>%WindowsSdkDir%\tools\x86\Chkinf|ChkInf has been deprecated. Instead, use [InfVerif](infverif.md).</br>WDK Documentation:</br>[InfVerif](infverif.md)|
+|Computer Hardware Identification Tool (ComputerHardwareIds.exe)</br>**WDK tool:** Yes|**Windows Driver Kit (WDK) 8:**</br>%WindowsSdkDir%\tools\x64\ComputerHardwareIds.exe</br>%WindowsSdkDir%\tools\x86\ComputerHardwareIds.exe</br>WDKPath\tools\Other\ia64\ComputerHardwareIds.exe</br>**Windows Driver Kit (WDK) 8.1:**</br>%WindowsSdkDir%\bin\x64\ComputerHardwareIds.exe</br>%WindowsSdkDir%\bin\x86\ComputerHardwareIds.exe</br>%WindowsSdkDir%\bin\arm\ComputerHardwareIds.exe|Derives the computer hardware IDs from SMBIOS information.</br>WDK Documentation:</br>[ComputerHardwareIds](computerhardwareids.md)|
+|DC2WMIParser (DC2WMIParser.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\DC2WMIParser.exe</br>%WindowsSdkDir%\tools\x86\DC2WMIParser.exe|DC2WMIParser is a tool that collects the WMI IRP records created by Driver Verifier and converts this log to a text file.</br>Documentation:</br>[IRP Logging](./irp-logging.md)|
+|Dependency Walker (Depends.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\depends.exe</br>%WindowsSdkDir%\tools\x86\depends.exe|Displays the dependence patterns of the modules that are required by an application in a tree diagram. The display includes numerous details, including the functions exported by each module, the functions actually called by other modules, and the minimum set of files that are required for a module to load and run.</br>In the tool, from the **Dependency Walker** Help menu, select **Help Topics**.|
+|DevCon (Devcon.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\devcon.exe</br>%WindowsSdkDir%\tools\x86\devcon.exe|A command-line version of Device Manager. DevCon enables, disables, installs, configures, and removes devices on the local computer and displays detailed information about devices on local and remote computers.</br>WDK Documentation:</br>[DevCon](devcon.md)|
+|Drivers (Drivers.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\drivers.exe</br>%WindowsSdkDir%\tools\x86\drivers.exe|Displays a list of all drivers that are installed on the computer.</br>WDK Documentation:</br>None|
+|Driver Verifier (Verifier.exe)</br>**WDK tool:** No|%Windir%\system32\verifier.exe|Monitors kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. It can subject the drivers to a variety of stresses and tests to find improper behavior.</br>WDK Documentation:</br>[Driver Verifier](driver-verifier.md)|
+|Driver Verification Log (DVL)</br>**WDK tool:** Yes|Requires Microsoft Visual Studio and the WDK. From the **Driver** menu, select **Create Driver Verification Log....**|The [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. See [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md).|
+|Enhanced Storage Certificate Management Tool (EhStorCertMgrCmd.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\ehstorcertmgrcmd.exe</br>%WindowsSdkDir%\tools\x86\ehstorcertmgrcmd.exe|Manages certificates on USB storage devices that are compliant with the IEEE 1667 standard.</br>WDK Documentation:</br>[Enhanced Storage Certificate Management Tool](enhanced-storage-certificate-management-tool.md)|
+|Inf2Cat (Inf2cat.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\inf2cat.exe</br>%WindowsSdkDir%\bin\x86\inf2cat.exe|Determines whether a [driver package's](../install/driver-packages.md) INF file can be digitally-signed for a specified list of Windows versions, and, if so, generates the unsigned [catalog files](../install/catalog-files.md) that apply to the specified Windows versions.</br>WDK Documentation:</br>[Inf2Cat](inf2cat.md)|
+|InfVerif (InfVerif.exe)</br>**WDK tool:** Yes|c:\Program Files(x86)\Windows Kits\10\tools\arm\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\arm64\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\x86\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\x64\infverif.exe|Tests a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</br>WDK Documentation:</br>[InfVerif](infverif.md)|
+|MakeCat (MakeCat.exe)</br>**WDK tool:** Yes|WDKPath\bin\amd64\MakeCat.exe</br>WDKPath\bin\ia64\MakeCat.exe</br>WDKPath\bin\x86\MakeCat.exe|Creates a [catalog file](../install/catalog-files.md) for a [driver package](../install/driver-packages.md).</br>WDK Documentation:</br>[MakeCat](makecat.md)|
+|MakeCert (MakeCert.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\MakeCert.exe</br>%WindowsSdkDir%\bin\x86\MakeCert.exe|Creates an X.509 certificate that is signed by a system test root key or by another specified key.</br>WDK Documentation:</br>[MakeCert](makecert.md)|
+|MSBuild (MSBuild.exe)/br>**WDK tool:** No|Installed with Visual Studio|Builds the samples, drivers, and associated software components that are supplied in the Microsoft WDK.</br>[MSBuild]( /visualstudio/msbuild/msbuild)|
+|PnpCpu (PnPCpu.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\PnPCpu.exe</br>%WindowsSdkDir%\tools\x86\PnPCpu.exe|Simulates a hot add of processors to a running instance of Windows Server 2008.</br>WDK Documentation:</br>[PNPCPU](pnpcpu.md)|
+|PnPUtil (PnPUtil.exe)</br>**WDK tool:** No|%Windir%\system32\pnputil.exe|A command-line tool that installs or deletes [driver packages](../install/driver-packages.md) from the Windows driver store.</br>WDK Documentation:</br>[PnPUtil](pnputil.md)|
+|PoolMon (Poolmon.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\poolmon.exe</br>%WindowsSdkDir%\tools\x86\poolmon.exe|Displays data that the operating system collects about memory allocations from the system's paged and nonpaged kernel pools, and the memory pools used for Terminal Services sessions. The data is grouped by pool allocation tag.</br>WDK Documentation:</br>[PoolMon](poolmon.md)|
+|PowerCfg (PowerCfg.exe)</br>**WDK tool:** No|%Windir%\system32\powercfg.exe|A command-line tool that is used to evaluate system energy efficiency.</br>Dev Center Documentation:</br>[Using PowerCfg to Evaluate System Energy Efficiency](https://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx)</br>For information about command options, type</br>**PowerCfg /?**|
+|Pvk2Pfx (Pvk2Pfx.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\Pvk2Pfx.exe</br>%WindowsSdkDir%\bin\x86\Pvk2Pfx.exe|Copies public key and private key information contained in .spc, .cer, and .pvk files to a personal information exchange (.pfx) file.</br>WDK Documentation:</br>[Pvk2Pfx](pvk2pfx.md)|
+|PwrTest (Pwrtest.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\pwrtest.exe</br>%WindowsSdkDir%\tools\x86\pwrtest.exe|A power management tool that exercises and records power management information from the computer.</br>WDK Documentation:</br>[PwrTest](pwrtest.md)|
+|SignTool (SignTool.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\SignTool.exe</br>%WindowsSdkDir%\bin\x86\SignTool.exe|Digitally-signs files, verifies signatures in files, and time-stamps files.</br>WDK Documentation:</br>[SignTool](signtool.md)|
+|Stampinf (Stampinf.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\stampinf.exe</br>%WindowsSdkDir%\bin\x86\stampinf.exe|Updates common INF file directives, including the **DriverVer** directive.</br>WDK Documentation:</br>[Stampinf](stampinf.md)|
+|Static Driver Verifier</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\SDV</br></br>**Note**  Launch Static Driver Verifier from the **Driver** menu in Visual Studio.|A static verification tool for drivers that systematically analyzes the source code of Windows drivers and determines whether the driver properly interacts with the Windows operating system kernel.</br>WDK Documentation:</br>[Static Driver Verifier](static-driver-verifier.md)|
+|Tracefmt (Tracefmt.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\tracefmt.exe</br>%WindowsSdkDir%\bin\x86\tracefmt.exe|Formats and displays trace messages from an event trace log file (.etl) or a real-time trace session.</br>WDK Documentation:</br>[Tracefmt](tracefmt.md)|
+|TraceLog (Tracelog.exe)</br>**WDK tool:** Yes|**WDK 8:**</br>%WindowsSdkDir%\tools\x64\tracelog.exe</br>%WindowsSdkDir%\tools\x86\tracelog.exe</br>**WDK 8.1:**</br>%WindowsSdkDir%\bin\x64\tracelog.exe</br>%WindowsSdkDir%\bin\x86\tracelog.exe</br>%WindowsSdkDir%\bin\arm\tracelog.exe|Configures and controls trace sessions from the command line. Measures time spent in deferred procedure calls (DPCs) and interrupt service routines (ISRs).</br>WDK Documentation:</br>[Tracelog](tracelog.md)|
+|TracePDB (Tracepdb.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\tracepdb.exe</br>%WindowsSdkDir%\bin\x86\tracepdb.exe|Creates trace message format (.tmf) files from the full or private PDB symbol file for a WPP trace provider.</br>WDK Documentation:</br>[Tracepdb](tracepdb.md)|
+|TraceView (Traceview.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\TraceView.exe</br>%WindowsSdkDir%\tools\x86\TraceView.exe|Configures and controls trace sessions and displays formatted trace messages from real-time trace sessions and trace logs. TraceView has a graphic user interface and a command-line interface for batch processing and scripting.</br>WDK Documentation:</br>[TraceView](traceview.md)|
+|TraceWPP (Tracewpp.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\tracewpp.exe</br>%WindowsSdkDir%\bin\x86\tracewpp.exe|Runs the Windows Software Trace Preprocessor (WPP).</br>WDK Documentation:</br>[WPP Preprocessor](wpp-preprocessor.md)</br>[Survey of Software Tracing Tools](survey-of-software-tracing-tools.md)|
+|WDF Tester</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64</br>%WindowsSdkDir%\tools\x86|A set of tools that can be used to test, verify, and debug WDF drivers. The toolset provides a WMI programming interface that can be used in a script or a compiled application.</br>WDK Documentation:</br>[WdfTester: WDF Driver Testing Toolset](wdftester--wdf-driver-testing-toolset.md)|
+|WDF Verifier (Wdfverifier.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\wdfverifier.exe</br>%WindowsSdkDir%\tools\x86\wdfverifier.exe|Provides an easy-to-use interface to the framework's verifier for KMDF and UMDF drivers.</br>WDK Documentation:</br>[WDF Verifier Control Application](wdf-verifier-control-application.md)|
+|Web Services on devices (WSD) Basic Interoperability Tool (WSDBIT)</br>**WDK tool:** Yes|**WSDBIT Client:**</br>%WindowsSdkDir%\tools\x64\wsdbit_client.exe</br>%WindowsSdkDir%\tools\x86\wsdbit_client.exe</br>**WSDBIT Server:**</br>%WindowsSdkDir%\tools\x64\wsdbit_server.exe</br>%WindowsSdkDir%\tools\x86\wsdbit_server.exe|Verifies an implementation of Device Profile for Web Services (DPWS) works with WSDAPI.</br>WDK Documentation:</br>[WSD Interoperability Tool](wsdapi-basic-interoperability-tool.md)|
+|Winerror (Winerror.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\winerror.exe</br>%WindowsSdkDir%\tools\x86\winerror.exe|Returns the error message identifier and mapping information for the specified error (Winerror.h) or success codes (Ntstatus.h).</br>For information about command options, type</br>**winerror /?**|
+|WMIMofCk (Wmimofck.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x86\wmimofck.exe|WDK Documentation:</br>[Using wmimofck.exe](../kernel/using-wmimofck-exe.md)</br>For information about command options, type</br>**wmimofck -?**|
+|WsdCodeGen (Wsdcodegen.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\wsdcodegen.exe</br>%WindowsSdkDir%\bin\x86\wsdcodegen.exe|Automatically generates proxies and stubs based on a Web Services contract. Primarily, you can use this tool to create client applications. However, you can use it for testing or for creating user-mode drivers.</br>Verifies that the classes, properties, methods and events specified in a binary MOF file (.bmf) are valid for WMI use. Generates MOF support files.</br>Windows SDK:</br>See the [Web Services on Devices](/windows/win32/wsdapi/wsd-portal) section|
+|WSDDebug_client and WSDDebug_host</br>**WDK tool:** Yes|**Debug Client:**</br>%WindowsSdkDir%\bin\x64\WSDDebug_client.exe</br>%WindowsSdkDir%\bin\x86\WSDDebug_client.exe</br>**Debug Host:**</br>%WindowsSdkDir%\bin\x64\WSDDebug_host.exe</br>
+%WindowsSdkDir%\bin\x86\WSDDebug_host.exe|These tools are a soft device and client that you can use to troubleshoot devices or applications.</br>Windows SDK:</br>[Web Services on Devices](/windows/win32/wsdapi/wsd-portal) section|
 
 ### Supported platforms
 
-WDK 8.1 supports development of drivers that run on these versions of Windows:
+You can run the Windows 10 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
 
--   Windows 8.1 and Windows 8
+RUNTIME REQUIREMENTS
 
--   Windows Server 2012 R2 and Windows Server 2012
-
--   Windows 7
-
--   Windows Server 2008 R2
-
--   For Windows Vista (including SP1 and SP2), you must use WDK 8. For Windows XP, you must use WDK 7.
-
-You can run the integrated Visual Studio driver development environment on these versions of Windows.
-
--   Windows 8.1 and Windows 8
-
--   Windows Server 2012 R2 and Windows Server 2012
-
--   Windows 7
-
--   Windows Server 2008 R2
-
- 
-
- 
-
+|Client OS|Server OS|
+|----|----|
+|Windows 10|Windows Server 2019, Windows Server 2016|
+|Windows 8.1|Windows Server 2012 R2|
+|Windows 8|Windows Server 2012|
+|Windows 7|Windows Server 2008 R2 SP1|

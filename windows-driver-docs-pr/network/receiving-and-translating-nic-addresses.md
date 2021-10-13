@@ -1,7 +1,6 @@
 ---
 title: Receiving and Translating NIC Addresses
 description: Receiving and Translating NIC Addresses
-ms.assetid: c7171a4d-cc77-427e-8d23-8811f650e543
 keywords:
 - Windows Sockets Direct WDK , initializing SAN usage
 - initializing SAN usage
@@ -22,17 +21,17 @@ ms.localizationpriority: medium
 
 
 
-The Windows Sockets switch always uses the [WSK address families](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)), which contain IP addresses, when it interacts with SAN service providers and SAN NICs. The switch does not use a SAN's native address family. Therefore, a SAN service provider must use its associated proxy driver to retrieve the list of IP addresses assigned to its NICs. The SAN service provider uses these IP addresses when interacting with its proxy driver. The proxy driver must translate between IP addresses and native addresses.
+The Windows Sockets switch always uses the [WSK address families](ws2def-h.md), which contain IP addresses, when it interacts with SAN service providers and SAN NICs. The switch does not use a SAN's native address family. Therefore, a SAN service provider must use its associated proxy driver to retrieve the list of IP addresses assigned to its NICs. The SAN service provider uses these IP addresses when interacting with its proxy driver. The proxy driver must translate between IP addresses and native addresses.
 
 During initialization, a proxy driver typically registers with Transport Driver Interface (TDI) for address change notifications. All Plug and Play (PnP) aware transports, including TCP/IP, supply address change notifications through TDI to clients that have registered for such notifications.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](/windows-hardware/drivers/ddi/_netvista/) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 
 ### Registering for Address Change Notification
 
-During initialization, a proxy driver calls the [**TdiRegisterPnPHandlers**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565062(v=vs.85)) function to register for address change notifications. In this call, the proxy driver passes pointers to callback functions for address additions and deletions in the **AddAddressHandlerV2** and **DelAddressHandlerV2** members of the TDI\_CLIENT\_INTERFACE\_INFO structure. After the proxy driver registers to receive these notifications, TDI promptly indicates all currently active network addresses using the add-address callback.
+During initialization, a proxy driver calls the [**TdiRegisterPnPHandlers**](/previous-versions/windows/hardware/network/ff565062(v=vs.85)) function to register for address change notifications. In this call, the proxy driver passes pointers to callback functions for address additions and deletions in the **AddAddressHandlerV2** and **DelAddressHandlerV2** members of the TDI\_CLIENT\_INTERFACE\_INFO structure. After the proxy driver registers to receive these notifications, TDI promptly indicates all currently active network addresses using the add-address callback.
 
 TDI passes the following parameters to a proxy driver's add-address or delete-address callback functions:
 
@@ -46,9 +45,9 @@ Pointer to a Unicode string that identifies the transport-to-NIC binding with wh
 
 where NIC-GUID is the globally unique identifier assigned by the network configuration subsystem to the NIC.
 
-The preceding structure definitions are defined in the tdi.h header file. The preceding registration and callback functions are defined in the tdikrnl.h header file. These header files are available in the Microsoft Windows Driver Development Kit (DDK) and the Windows Driver Kit (WDK). Detailed information about TDI PnP notifications is included in [TDI Client Callbacks](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565081(v=vs.85)) and [TDI Client Event and PnP Notification Handlers](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565082(v=vs.85)).
+The preceding structure definitions are defined in the tdi.h header file. The preceding registration and callback functions are defined in the tdikrnl.h header file. These header files are available in the Microsoft Windows Driver Development Kit (DDK) and the Windows Driver Kit (WDK). Detailed information about TDI PnP notifications is included in [TDI Client Callbacks](/previous-versions/windows/hardware/network/ff565081(v=vs.85)) and [TDI Client Event and PnP Notification Handlers](/previous-versions/windows/hardware/network/ff565082(v=vs.85)).
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](/windows-hardware/drivers/ddi/_netvista/) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 
@@ -56,13 +55,7 @@ The preceding structure definitions are defined in the tdi.h header file. The pr
 
 A SAN service provider's proxy driver uses add-address and delete-address notifications to maintain the list of IP addresses assigned to each NIC under its control. The proxy driver uses this list to translate between one or more IP addresses assigned to a SAN NIC by the TCP/IP transport and native SAN addresses. The proxy driver must also supply a device-control routine that makes the list of IP addresses assigned to a NIC available to the Windows Sockets switch whenever the switch makes an SIO\_ADDRESS\_LIST\_QUERY control-code query. The proxy driver's **DriverEntry** routine must specify an entry point for this device-control routine.
 
-The Windows Sockets switch maintains a list of all IP addresses assigned to each SAN NIC. To retrieve IP addresses for this inclusive list, the switch calls each SAN service provider 's [**WSPIoctl**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566296(v=vs.85)) function, passing the SIO\_ADDRESS\_LIST\_QUERY control code. Each SAN service provider, in turn, queries its associated proxy driver for its individual list of IP addresses assigned to its SAN NICs. After the switch is notified of an address change, it again queries each SAN service provider for updates in each individual list.
+The Windows Sockets switch maintains a list of all IP addresses assigned to each SAN NIC. To retrieve IP addresses for this inclusive list, the switch calls each SAN service provider 's [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) function, passing the SIO\_ADDRESS\_LIST\_QUERY control code. Each SAN service provider, in turn, queries its associated proxy driver for its individual list of IP addresses assigned to its SAN NICs. After the switch is notified of an address change, it again queries each SAN service provider for updates in each individual list.
 
  
-
- 
-
-
-
-
 

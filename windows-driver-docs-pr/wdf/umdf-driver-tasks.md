@@ -1,7 +1,6 @@
 ---
 title: UMDF Driver Tasks
 description: UMDF Driver Tasks
-ms.assetid: 7868aedd-35b6-4de5-a513-067895b647b4
 keywords:
 - User-Mode Driver Framework WDK , tasks
 - UMDF WDK , tasks
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 # UMDF Driver Tasks
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 ## In this section
 

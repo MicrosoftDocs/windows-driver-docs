@@ -1,7 +1,6 @@
 ---
 title: GDI from the Driver's Perspective
 description: GDI from the Driver's Perspective
-ms.assetid: 2a6769ea-c6ae-4397-a5e4-f38964d2d8d1
 keywords:
 - GDI WDK Windows 2000 display , driver communication
 - graphics drivers WDK Windows 2000 display , driver communication
@@ -24,7 +23,7 @@ GDI includes many graphics output capabilities in itself, eliminating the need f
 
 The following figure shows this flow of communication.
 
-![diagram illustrating the graphics driver and graphics device interface (gdi) interaction](images/gditoddi.png)
+![diagram illustrating the graphics driver and graphics device interface (gdi) interaction.](images/gditoddi.png)
 
  
 

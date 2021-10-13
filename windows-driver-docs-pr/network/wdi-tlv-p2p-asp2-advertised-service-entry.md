@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY
 description: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY is a TLV that contains an ASP2 Advertised Service Entry.
-ms.assetid: CF7ED750-1987-4784-9E61-516EBBA22B9B
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY Network Drivers Starting with Windows Vista
@@ -39,12 +38,11 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_SERVICE\_INFORMATION**](wdi-tlv-p2p-service-information.md) |                                | X        | Service Information for the service.                                                                                                                                                                                                                                                     |
 | [**WDI\_TLV\_P2P\_SERVICE\_STATUS**](wdi-tlv-p2p-service-status.md)           |                                |          | Service Status of the service.                                                                                                                                                                                                                                                           |
 | [**WDI\_TLV\_P2P\_ADVERTISEMENT\_ID**](wdi-tlv-p2p-advertisement-id.md)       |                                |          | An ID that uniquely identifies the service instance.                                                                                                                                                                                                                                     |
-| [**WDI\_TLV\_P2P\_CONFIG\_METHODS**](wdi-tlv-p2p-config-methods.md)           |                                |          | Configuration methods as defined in [**WDI\_WPS\_CONFIGURATION\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_wps_configuration_method). Only **WDI\_WPS\_CONFIGURATION\_METHOD\_DISPLAY**, **WDI\_WPS\_CONFIGURATION\_METHOD\_KEYPAD**, and **WDI\_WPS\_CONFIGURATION\_METHOD\_WFDS\_DEFAULT** are applicable. |
+| [**WDI\_TLV\_P2P\_CONFIG\_METHODS**](wdi-tlv-p2p-config-methods.md)           |                                |          | Configuration methods as defined in [**WDI\_WPS\_CONFIGURATION\_METHOD**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_wps_configuration_method). Only **WDI\_WPS\_CONFIGURATION\_METHOD\_DISPLAY**, **WDI\_WPS\_CONFIGURATION\_METHOD\_KEYPAD**, and **WDI\_WPS\_CONFIGURATION\_METHOD\_WFDS\_DEFAULT** are applicable. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -68,9 +66,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

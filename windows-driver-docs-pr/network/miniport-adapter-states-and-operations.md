@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter States and Operations
 description: Miniport Adapter States and Operations
-ms.assetid: b47e2cbe-9da3-4600-9afe-b082e60b87fb
 keywords:
 - miniport adapters WDK networking , states
 - adapters WDK networking , states
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 For each adapter that it manages, an NDIS 6.0 or later miniport driver must support the following set of operational states:
 
 <a href="" id="halted"></a>Halted  
-The Halted state is the initial state of all adapters. When an adapter is in the Halted state, NDIS can call the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function to initialize the adapter.
+The Halted state is the initial state of all adapters. When an adapter is in the Halted state, NDIS can call the driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function to initialize the adapter.
 
 <a href="" id="shutdown"></a>Shutdown  
 In the Shutdown state, a system shutdown and restart must occur before the system can use the adapter again.
@@ -70,7 +69,7 @@ In the following table, the headings are the adapter states. Major events are li
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize)"><em>MiniportInitializeEx</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)"><em>MiniportInitializeEx</em></a></p></td>
 <td align="left"><p>Initializing</p></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -90,7 +89,7 @@ In the following table, the headings are the adapter states. Major events are li
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_shutdown" data-raw-source="[&lt;em&gt;MiniportShutdownEx&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_shutdown)"><em>MiniportShutdownEx</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown" data-raw-source="[&lt;em&gt;MiniportShutdownEx&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown)"><em>MiniportShutdownEx</em></a></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -100,7 +99,7 @@ In the following table, the headings are the adapter states. Major events are li
 <td align="left"><p>Shutdown</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_halt" data-raw-source="[&lt;em&gt;MiniportHaltEx&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_halt)"><em>MiniportHaltEx</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt" data-raw-source="[&lt;em&gt;MiniportHaltEx&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt)"><em>MiniportHaltEx</em></a></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -110,7 +109,7 @@ In the following table, the headings are the adapter states. Major events are li
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart" data-raw-source="[&lt;em&gt;MiniportRestart&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart)"><em>MiniportRestart</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart" data-raw-source="[&lt;em&gt;MiniportRestart&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart)"><em>MiniportRestart</em></a></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -130,7 +129,7 @@ In the following table, the headings are the adapter states. Major events are li
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_pause" data-raw-source="[&lt;em&gt;MiniportPause&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_pause)"><em>MiniportPause</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_pause" data-raw-source="[&lt;em&gt;MiniportPause&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_pause)"><em>MiniportPause</em></a></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -205,25 +204,25 @@ In the following table, the headings are the adapter states. Major events are li
 The primary miniport driver events are defined as follows:
 
 <a href="" id="miniportinitializeex"></a>MiniportInitializeEx  
-NDIS called the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function to initialize an adapter. For more information about adapter initialization, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
+NDIS called the driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function to initialize an adapter. For more information about adapter initialization, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
 <a href="" id="initialize-is-complete"></a>Initialize is complete  
-After [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) returns successfully, the initialize operation is complete and the adapter is in the Paused state.
+After [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) returns successfully, the initialize operation is complete and the adapter is in the Paused state.
 
 <a href="" id="miniportshutdownex"></a>MiniportShutdownEx  
-NDIS called the driver's [*MiniportShutdownEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_shutdown) function to shutdown an adapter. For more information, see [Miniport Adapter Shutdown](miniport-adapter-shutdown.md).
+NDIS called the driver's [*MiniportShutdownEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) function to shutdown an adapter. For more information, see [Miniport Adapter Shutdown](miniport-adapter-shutdown.md).
 
 <a href="" id="miniporthaltex"></a>MiniportHaltEx  
-NDIS called the driver's [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_halt) function to halt an adapter. For more information, see [Halting a Miniport Adapter](halting-a-miniport-adapter.md).
+NDIS called the driver's [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function to halt an adapter. For more information, see [Halting a Miniport Adapter](halting-a-miniport-adapter.md).
 
 <a href="" id="miniportrestart"></a>MiniportRestart  
-NDIS called the driver's [**MiniportRestart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart) function to restart a paused adapter. Because an adapter is in the Paused state after initialization, this event is also required to start the adapter after adapter initialization is complete. For more information, see [Starting an Adapter](starting-an-adapter.md).
+NDIS called the driver's [**MiniportRestart**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart) function to restart a paused adapter. Because an adapter is in the Paused state after initialization, this event is also required to start the adapter after adapter initialization is complete. For more information, see [Starting an Adapter](starting-an-adapter.md).
 
 <a href="" id="restart-is-complete"></a>Restart is complete  
 After the driver is ready to handle send and receive operations, the restart operation is complete and the adapter is in the Running state.
 
 <a href="" id="miniportpause"></a>MiniportPause  
-NDIS called the driver's [*MiniportPause*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_pause) function to pause an adapter. For more information, see [Pausing an Adapter](pausing-an-adapter.md).
+NDIS called the driver's [*MiniportPause*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_pause) function to pause an adapter. For more information, see [Pausing an Adapter](pausing-an-adapter.md).
 
 <a href="" id="pause-is-complete"></a>Pause is complete  
 After the driver has completed all operations that are necessary to stop send and receive operations, the pause operation is complete and the adapter is in the Paused state.
@@ -233,10 +232,10 @@ After the driver has completed all operations that are necessary to stop send an
  
 
 <a href="" id="initialize-failed"></a>Initialize failed  
-If NDIS calls a driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function and the initialization attempt fails, the adapter returns to the Halted state.
+If NDIS calls a driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function and the initialization attempt fails, the adapter returns to the Halted state.
 
 <a href="" id="restart-failed"></a>Restart failed  
-If NDIS calls a driver's [**MiniportRestart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart) function and the restart attempt fails, the adapter remains in the Paused state.
+If NDIS calls a driver's [**MiniportRestart**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart) function and the restart attempt fails, the adapter remains in the Paused state.
 
 <a href="" id="send-and-receive-operations"></a>Send and Receive Operations  
 A driver must handle send and receive operations in the Running and Pausing states. For more information about send and receive operations, see [Miniport Driver Send and Receive Operations](miniport-driver-send-and-receive-operations.md).
@@ -258,13 +257,4 @@ A driver must handle OID Requests in the Running, Restarting, Paused, and Pausin
 [Pausing an Adapter](pausing-an-adapter.md)
 
 [Starting an Adapter](starting-an-adapter.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: eula XML Element
 description: eula XML Element
-ms.assetid: ab647583-b0e1-4f40-86af-9b7923f5535c
 keywords: ["eula XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # eula XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **eula** XML element is an empty XML element that includes two attributes that specify a EULA text file that contains custom text for a DPInst EULA page.
 
@@ -98,11 +97,4 @@ The following code example demonstrates a **eula** element that specifies that *
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

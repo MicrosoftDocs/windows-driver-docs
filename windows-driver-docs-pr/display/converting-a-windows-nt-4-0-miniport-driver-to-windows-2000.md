@@ -1,7 +1,6 @@
 ---
 title: Converting a Windows NT 4.0 Miniport Driver to Windows 2000
 description: Converting a Windows NT 4.0 Miniport Driver to Windows 2000
-ms.assetid: a55192c6-3de4-4433-8825-3393f2bce04a
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions, converting a Windows NT 4.0 driver
 - converting video miniport drivers WDK Windows 2000
@@ -17,18 +16,18 @@ ms.localizationpriority: medium
 
 A good Windows NT 4.0 and previous miniport driver can easily become a Windows 2000 and later miniport driver. The following are some of the updates necessary to provide Plug and Play support, which is required in Windows 2000 and later miniport drivers:
 
--   See [Plug and Play and Power Management in Video Miniport Drivers (Windows 2000 Model)](plug-and-play-and-power-management-in-video-miniport-drivers--windows-.md) for a list of new functions that must be implemented. Be sure to initialize the new members of [**VIDEO\_HW\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/ns-video-_video_hw_initialization_data) to point to these new functions.
+-   See [Plug and Play and Power Management in Video Miniport Drivers (Windows 2000 Model)](plug-and-play-and-power-management-in-video-miniport-drivers--windows-.md) for a list of new functions that must be implemented. Be sure to initialize the new members of [**VIDEO\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data) to point to these new functions.
 
--   Update the call to [**VideoPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportinitialize) in your [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/display/driverentry-of-video-miniport-driver) function. The fourth parameter (*HwContext*) must be **NULL** on Windows 2000 and later.
+-   Update the call to [**VideoPortInitialize**](/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize) in your [**DriverEntry**](./driverentry-of-video-miniport-driver.md) function. The fourth parameter (*HwContext*) must be **NULL** on Windows 2000 and later.
 
--   Update your [*HwVidFindAdapter*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_find_adapter) function. For devices on an enumerable bus, *HwVidFindAdapter* must be changed as follows:
+-   Update your [*HwVidFindAdapter*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_find_adapter) function. For devices on an enumerable bus, *HwVidFindAdapter* must be changed as follows:
 
-    -   Remove most of your device detection code. This is because a call to [*HwVidFindAdapter*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_find_adapter) on Windows 2000 means that the PnP manager has already detected the device.
-    -   Call [**VideoPortGetAccessRanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportgetaccessranges) to obtain the bus-relative physical addresses to which the device will respond. These addresses are assigned by the PnP manager.
+    -   Remove most of your device detection code. This is because a call to [*HwVidFindAdapter*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_find_adapter) on Windows 2000 means that the PnP manager has already detected the device.
+    -   Call [**VideoPortGetAccessRanges**](/windows-hardware/drivers/ddi/video/nf-video-videoportgetaccessranges) to obtain the bus-relative physical addresses to which the device will respond. These addresses are assigned by the PnP manager.
     -   If the driver supports more than one device type, determine the type of device.
-    -   Ignore the [*Again*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_find_adapter) parameter. This is because the system will call *HwVidFindAdapter* only once per device.
+    -   Ignore the [*Again*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_find_adapter) parameter. This is because the system will call *HwVidFindAdapter* only once per device.
 
-    For a device on a nonenumerable bus such as ISA, PnP still attempts to start the device, although it is the responsibility of [*HwVidFindAdapter*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_find_adapter) to determine whether the device is actually present.
+    For a device on a nonenumerable bus such as ISA, PnP still attempts to start the device, although it is the responsibility of [*HwVidFindAdapter*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_find_adapter) to determine whether the device is actually present.
 
 -   Update the **.Mfg** section of the driver's INF file to include the device and vendor ID. This is required so that the PnP manager can associate the device with its INF file. Samples of the Windows NT 4.0 and updated Windows 2000 and later **.Mfg** sections follow:
 
@@ -47,10 +46,4 @@ You can use the *geninf.exe* tool that is included with the Driver Development K
 The Windows 2000 and later video port supports Windows NT 4.0 miniport drivers as legacy drivers. The graphics adapter for a legacy miniport driver cannot be removed from the system while the system is running, nor are legacy miniport drivers automatically detected when added to a running system.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
-title: ppmstate
+title: ppmstate (WinDbg)
 description: The ppmstate command
-ms.assetid: 45181F34-6753-4C5D-B573-A46B7E64870B
 keywords: ["ppmstate Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

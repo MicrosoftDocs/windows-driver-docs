@@ -1,7 +1,6 @@
 ---
 title: Exception Handling When Accessing User-Mode Memory
 description: Exception Handling When Accessing User-Mode Memory
-ms.assetid: 44ed69a0-da0e-4335-9128-a78a83ea80dd
 keywords:
 - user-mode memory WDK Windows 2000 display
 - user-mode memory WDK Windows 2000 display , exception handling
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_exception_handling_when_accessing_user_mode_memory_gg"></span><span id="DDK_EXCEPTION_HANDLING_WHEN_ACCESSING_USER_MODE_MEMORY_GG"></span>
 
 
-A display or video miniport driver must use exception handling around code that accesses data structures allocated in user mode. The Microsoft Direct3D runtime secures ownership of such data structures before passing them to the driver. To secure ownership of user-mode memory, the runtime calls the [**MmSecureVirtualMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-mmsecurevirtualmemory) function. When the runtime secures ownership of user-mode memory, it prevents any other thread from modifying the type of access to the memory. For example, if the runtime secures ownership of a data structure that a user-mode thread has allocated with read and write access, other threads cannot restrict the data structure's access type to read-only. Also, securing ownership of user-mode memory does not guarantee that the memory remains valid.
+A display or video miniport driver must use exception handling around code that accesses data structures allocated in user mode. The Microsoft Direct3D runtime secures ownership of such data structures before passing them to the driver. To secure ownership of user-mode memory, the runtime calls the [**MmSecureVirtualMemory**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmsecurevirtualmemory) function. When the runtime secures ownership of user-mode memory, it prevents any other thread from modifying the type of access to the memory. For example, if the runtime secures ownership of a data structure that a user-mode thread has allocated with read and write access, other threads cannot restrict the data structure's access type to read-only. Also, securing ownership of user-mode memory does not guarantee that the memory remains valid.
 
 Therefore, unless exception handling is implemented around code that accesses such memory, the operating system crashes if the driver attempts to access invalid user-mode memory. For invalid kernel-memory accesses, the only available option for the operating system is to crash. However, for invalid user-memory accesses, the driver can terminate the application that invalidated the memory and leave the operating system and the driver's device in a stable state.
 
@@ -27,11 +26,11 @@ The driver must implement exception handling rather than rely on the runtime to 
 
 In the following scenarios, the runtime secures ownership of memory allocated in user mode before passing the memory to the driver.
 
--   The driver processes vertex data that is specified by a pointer to user-mode memory. The driver receives this memory pointer in a call to its [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function. In this *D3dDrawPrimitives2* call, the D3DHALDP2\_USERMEMVERTICES flag of the **dwFlags** member of the [**D3DHAL\_DRAWPRIMITIVES2DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/ns-d3dhal-_d3dhal_drawprimitives2data) structure is set.
+-   The driver processes vertex data that is specified by a pointer to user-mode memory. The driver receives this memory pointer in a call to its [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function. In this *D3dDrawPrimitives2* call, the D3DHALDP2\_USERMEMVERTICES flag of the **dwFlags** member of the [**D3DHAL\_DRAWPRIMITIVES2DATA**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_drawprimitives2data) structure is set.
 
 -   The driver updates the render state array to which the **lpdwRStates** member of D3DHAL\_DRAWPRIMITIVES2DATA points. The driver updates this array during a call to its *D3dDrawPrimitives2* function.
 
--   The driver updates its state at the **lpdwStates** member of the [**DD\_GETDRIVERSTATEDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_getdriverstatedata) structure during a call to its [**D3dGetDriverState**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverstate) function.
+-   The driver updates its state at the **lpdwStates** member of the [**DD\_GETDRIVERSTATEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverstatedata) structure during a call to its [**D3dGetDriverState**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverstate) function.
 
 -   The driver bit-block transfers or accesses a system texture that was allocated in user memory.
 
@@ -55,10 +54,4 @@ __except(EXCEPTION_EXECUTE_HANDLER)
  
 
  
-
- 
-
-
-
-
 

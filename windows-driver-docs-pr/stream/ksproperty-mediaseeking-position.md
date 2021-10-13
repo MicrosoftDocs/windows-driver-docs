@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_POSITION
 description: KSPROPERTY\_MEDIASEEKING\_POSITION retrieves the media time of a filter.
-ms.assetid: 46b246c6-63e9-4f38-91cc-eed762126097
 keywords: ["KSPROPERTY_MEDIASEEKING_POSITION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ KSPROPERTY\_MEDIASEEKING\_POSITION retrieves the media time of a filter.
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ KSPROPERTY\_MEDIASEEKING\_POSITION retrieves the media time of a filter.
 
  
 
-Remarks
--------
+## Remarks
 
 The media time is returned as a value of type LONGLONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,13 +77,3 @@ Requirements
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
- 
-
- 
-
-
-
-
-
-

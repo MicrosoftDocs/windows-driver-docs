@@ -1,7 +1,6 @@
 ---
 title: Operating System Model
 description: Operating System Model
-ms.assetid: a7200472-24e1-4ecf-86c7-a1b72c5661fc
 keywords:
 - Static Driver Verifier WDK , operating system model
 - StaticDV WDK , operating system model

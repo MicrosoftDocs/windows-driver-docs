@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_SYMBOL\_XXX
 description: The DEBUG\_SYMBOL\_XXX constants are used for the symbol flags bit-set. The symbol flags describe (in part) a symbol in a symbol group.
-ms.assetid: de1988f8-6a4d-43a3-856a-0543ecaaf06f
 ms.date: 12/07/2017
 topic_type:
 - apiref
@@ -77,8 +76,7 @@ The rest of the symbol flags' bit-set can contain the following bit-flags.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -96,14 +94,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**DEBUG\_SYMBOL\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/ns-dbgeng-_debug_symbol_parameters)
+[**DEBUG\_SYMBOL\_PARAMETERS**](/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_symbol_parameters)
 
  
-
- 
-
-
-
-
-
 

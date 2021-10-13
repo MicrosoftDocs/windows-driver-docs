@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio with a Sharks Cove development board
 description: This topic describes setting up Kernel-Mode Debugging USB in Visual Studio with a Sharks Cove development board.
-ms.assetid: D909CA2C-3870-4521-8F23-FBF93738F338
 ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---
@@ -12,11 +11,9 @@ ms.localizationpriority: medium
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-The [Sharks Cove development board](https://go.microsoft.com/fwlink/p?linkid=403168) supports serial debugging over a USB cable.
+The [Sharks Cove hardware development board](../gettingstarted/sharks-cove-hardware-development-board.md) supports serial debugging over a USB cable.
 
-To use Microsoft Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p?linkid=301383).
-
-As an alternative to using Visual Studio to set up serial debugging over a USB cable, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md).
+To use Microsoft Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Debugging Using Visual Studio](debugging-using-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. In this topic, the Sharks Cove board is the target computer.
 
@@ -27,13 +24,13 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 2.  On the Sharks Cove board, locate the debug connector. This is the micro USB connector shown in the following picture.
 
-    ![picture that shows debug connector on sharks cove board](images/sharkscovedebugconnector.png)
+    ![picture that shows debug connector on sharks cove board.](images/sharkscovedebugconnector.png)
 
 3.  Use a USB 2.0 cable to connect the host computer to the debug connector on the Sharks cove board.
 
 4.  On the host computer, in Device Manager, two COM ports will get enumerated. Select the lowest numbered COM port. On the **View** menu, choose **Devices by Connection**. Verify that the COM port is listed under one of the USB host controllers.
 
-    ![screen show that shows com ports in device manager](images/serialoverusb01.png)
+    ![screen show that shows com ports in device manager.](images/serialoverusb01.png)
 
     Make a note of the COM port number. This is the lowest COM port number that shows under the USB host controller node. For example, in the preceding screen shot, the lowest COM port number under the USB host controller is COM3. You will need this COM port number later when you start a debugging session. If the driver is not already installed for the COM port, right click the COM port node, and choose **Update Driver**. Then select **Search automatically for updated driver software**. You will need an internet connection for this.
 
@@ -42,11 +39,11 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 In these steps, the Sharks Cove board is the target computer.
 
-1.  Begin configuring your host and target computer as described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+1.  Begin configuring your host and target computer as described in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 2.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 3.  For **Connection Type**, choose **Serial**.
 
-    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters](images/setupserialoverusbvs.png)
+    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters.](images/setupserialoverusbvs.png)
 
     For **Baud Rate**, enter 115200. For **Port**, enter the name of the COM port that you noted previously in Device Manager (for example, com3). For **Target Port**, enter com1.
 
@@ -88,16 +85,3 @@ On the host computer, verify that you are using a baud rate of 115200.
 4.  Verify that the **Baud Rate** is 115200.
 
 ## <span id="related_topics"></span>Related topics
-
-
-[Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
-
- 
-
- 
-
-
-
-
-
-

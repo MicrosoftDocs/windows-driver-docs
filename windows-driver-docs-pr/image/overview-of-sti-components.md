@@ -1,7 +1,6 @@
 ---
 title: Overview of STI Components
 description: Overview of STI Components
-ms.assetid: 30aaa622-fb86-42dc-a417-df61e0093db3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 The following diagram illustrates the software components that compose Microsoft STI. Following the diagram is a component list.
 
-![diagram illustrating the microsoft sti components](images/sticomp.png)
+![diagram illustrating the microsoft sti components.](images/sticomp.png)
 
 ### <a href="" id="ddk-imaging-application-si"></a>Imaging Application
 
@@ -60,7 +59,7 @@ Microsoft STI defines a set of COM interfaces that provide communications paths 
 
 ### <a href="" id="ddk-user-mode-still-image-minidrivers-si"></a>User-Mode Still Image Minidrivers
 
-User-mode still image minidrivers are vendor-supplied components that provide a device-specific, user-mode interface to an appropriate kernel-mode driver. Each of these user-mode drivers must implement the [IStiUSD COM Interface](istiusd-com-interface.md). They communicate with kernel-mode drivers by calling the [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) Win32 functions (described in the Microsoft Windows SDK documentation). For more information, see [Creating a User-Mode Still Image Minidriver](creating-a-user-mode-still-image-minidriver.md).
+User-mode still image minidrivers are vendor-supplied components that provide a device-specific, user-mode interface to an appropriate kernel-mode driver. Each of these user-mode drivers must implement the [IStiUSD COM Interface](istiusd-com-interface.md). They communicate with kernel-mode drivers by calling the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) Win32 functions (described in the Microsoft Windows SDK documentation). For more information, see [Creating a User-Mode Still Image Minidriver](creating-a-user-mode-still-image-minidriver.md).
 
 ### <a href="" id="ddk-kernel-mode-still-image-drivers-si"></a>Kernel-Mode Still Image Drivers
 
@@ -78,23 +77,16 @@ Microsoft supports still image devices connected to SCSI, USB, parallel, IEEE 13
 User-mode drivers call bus-specific [kernel-mode drivers for still image devices](accessing-kernel-mode-drivers-for-still-image-devices.md).
 
 <a href="" id="devices-connected-to-a-parallel-port"></a>**Devices connected to a parallel port**  
-Extended capabilities port (ECP) and enhanced parallel port (EPP) modes are supported. A vendor-supplied, kernel-mode *filter driver* can be added between the user-mode still image driver and the kernel-mode bus driver stack. (For more information about parallel port drivers, see [Parallel Devices Design Guide](https://docs.microsoft.com/previous-versions/ff544263(v=vs.85)) and [Parallel Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index). For more information about filter drivers, see [Filter Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/filter-drivers).)
+Extended capabilities port (ECP) and enhanced parallel port (EPP) modes are supported. A vendor-supplied, kernel-mode *filter driver* can be added between the user-mode still image driver and the kernel-mode bus driver stack. (For more information about parallel port drivers, see [Parallel Devices Design Guide](/previous-versions/ff544263(v=vs.85)) and [Parallel Devices Reference](/windows-hardware/drivers/ddi/index). For more information about filter drivers, see [Filter Drivers](../kernel/filter-drivers.md).)
 
 <a href="" id="devices-connected-to-an-ieee-1394-bus"></a>**Devices connected to an IEEE 1394 bus**  
 For devices that support the SBP-2 protocol, user-mode drivers can call Microsoft's SBP-2 interface. Otherwise, a vendor-supplied filter driver is required.
 
 <a href="" id="devices-connected-to-a-serial-port"></a>**Devices connected to a serial port**  
-The standard serial port driver is used. (For more information, see [Serial Devices and Drivers](https://docs.microsoft.com/previous-versions/ff547451(v=vs.85)).)
+The standard serial port driver is used. (For more information, see [Serial Devices and Drivers](../serports/using-serial-sys-and-serenum-sys.md).)
 
 <a href="" id="devices-connected-to-an-infrared-interface"></a>**Devices connected to an infrared interface**  
 Drivers can call the **IrSock** software interface (described in the Microsoft Windows SDK documentation).
 
 A vendor only needs to provide bus drivers for buses that are not supported by Microsoft drivers.
-
- 
-
- 
-
-
-
 

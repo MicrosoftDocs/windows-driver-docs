@@ -1,7 +1,6 @@
 ---
 title: MSFC\_VirtualFibrePortAttributes WMI Class
 description: MSFC\_VirtualFibrePortAttributes WMI Class
-ms.assetid: D605D63F-0EBF-44C0-8ADE-729F2DE48487
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -41,15 +40,9 @@ class MSFC_VirtualFibrePortAttributes
 
 When compiled by the WMI tool suite, this class definition produces the following data structure:
 
-[**MSFC\_VirtualFibrePortAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/npivwmi/ns-npivwmi-_msfc_virtualfibreportattributes)
+[**MSFC\_VirtualFibrePortAttributes**](/windows-hardware/drivers/ddi/npivwmi/ns-npivwmi-_msfc_virtualfibreportattributes)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

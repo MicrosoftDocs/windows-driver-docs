@@ -1,9 +1,8 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a 1394 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a 1394 (Firewire) cable. This topic describes how to set up 1394 debugging manually.
-ms.assetid: bcfc61a1-0315-451c-a279-f6305995b05f
 keywords: making a 1394 cable connection, 1394 connection, IEEE 1394 cable, FireWire cable
-ms.date: 05/03/2018
+ms.date: 02/20/2020
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
 > It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
-> For more information about that transport, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+> For more information about that transport, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 >
 
 Debugging Tools for Windows supports kernel debugging over a 1394 (Firewire) cable. This topic describes how to set up 1394 debugging manually.
@@ -21,8 +20,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 ## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Target Computer
 
-
-1.  Connect a 1394 cable to the 1394 controllers that you have chosen for debugging on the host and target computers.
+1. Connect a 1394 cable to the 1394 controllers that you have chosen for debugging on the host and target computers.
 
 > [!IMPORTANT]
 > Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
@@ -34,12 +32,11 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
    **bcdedit /dbgsettings 1394 channel:**<em>n</em>
 
-3. If there is more than one 1394 controller on the target computer, you must specify the bus, device, and function numbers of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for 1394 Debugging](#troubleshooting-tips-for-debugging-over-a-1394-cable).
+3. You must specify the bus, device, and function numbers of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for 1394 Debugging](#troubleshooting-tips-for-debugging-over-a-1394-cable).
 
 4. Do not reboot the target computer yet.
 
 ## <span id="Starting_a_Debugging_Session_for_the_First_Time"></span><span id="starting_a_debugging_session_for_the_first_time"></span><span id="STARTING_A_DEBUGGING_SESSION_FOR_THE_FIRST_TIME"></span>Starting a Debugging Session for the First Time
-
 
 1.  Determine the bitness (32-bit or 64-bit) of Windows running on the host computer.
 2.  On the host computer, open a version of WinDbg (as Administrator) that matches the bitness of Windows running on the host computer. For example, if the host computer is running a 64-bit version of Windows, open the 64-bit version of WinDbg as Administrator.
@@ -50,7 +47,6 @@ The computer that runs the debugger is called the *host computer*, and the compu
 4.  Reboot the target computer.
 
 ## <span id="Starting_a_Debugging_Session"></span><span id="starting_a_debugging_session"></span><span id="STARTING_A_DEBUGGING_SESSION"></span>Starting a Debugging Session
-
 
 ### <span id="Using_WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span>Using WinDbg
 
@@ -99,15 +95,6 @@ Reboot the target computer.
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
-
- 
-
-
-
-
-
-
+[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)

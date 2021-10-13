@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_WAVE\_PAN
 description: The KSPROPERTY\_WAVE\_PAN property specifies a wave device's pan setting.
-ms.assetid: 5ec4dc6d-44cb-4716-9f5b-dd044cd38239
 keywords: ["KSPROPERTY_WAVE_PAN Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_WAVE\_PAN property specifies a wave device's pan setting.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/ff567249(v=vs.85)" data-raw-source="[&lt;strong&gt;KSWAVE_PAN&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff567249(v=vs.85))"><strong>KSWAVE_PAN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/previous-versions/ff567249(v=vs.85)" data-raw-source="[&lt;strong&gt;KSWAVE_PAN&lt;/strong&gt;](/previous-versions/ff567249(v=vs.85))"><strong>KSWAVE_PAN</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +56,7 @@ The KSPROPERTY\_WAVE\_PAN property specifies a wave device's pan setting.
 
 The property value (operation data) is a KSWAVE\_PAN structure the describes the left and right pan level.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,16 +74,6 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSWAVE\_PAN**](https://docs.microsoft.com/previous-versions/ff567249(v=vs.85))
-
- 
-
- 
-
-
-
-
-
-
+[**KSWAVE\_PAN**](/previous-versions/ff567249(v=vs.85))

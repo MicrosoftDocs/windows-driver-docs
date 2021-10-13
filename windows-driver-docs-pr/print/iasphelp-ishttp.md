@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 54aaed11-8f18-433b-b774-c695a85b813e
 keywords: ["get_IsHTTP method Print Devices", "get_IsHTTP method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IsHTTP method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **IsHTTP** property enables an ASP Web page to determine whether the printer is connected to an HTTP port.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_IsHTTP(
@@ -32,14 +30,12 @@ HRESULT get_IsHTTP(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives **TRUE** if the printer is connected to an HTTP port, and **FALSE** otherwise.
 
-Return value
-------------
+## Return value
 
 The property return one of the values in the following table.
 
@@ -82,8 +78,7 @@ objPrinter.Open strPrinter
 IsHTTPPort = objPrinter.IsHTTP
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

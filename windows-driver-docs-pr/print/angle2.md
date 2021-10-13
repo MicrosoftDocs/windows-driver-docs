@@ -1,56 +1,46 @@
 ---
-title: Angle
-description: Angle
-ms.assetid: a5bc6a00-ca65-4c4b-9372-1d0db8dd7e41
-ms.date: 11/28/2017
+title: Angle property
+description:  Contains all of the value entries that pertain to the orientation of staples.
+ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
-# Angle
+# Angle property
 
+Schema Path: \\Printer.Finishing.Staple.Angle
 
-Schema Path:\\Printer.Finishing.Staple.Angle
+Node Type: Property
 
-Node Type:Property
-
-Description:This property contains all of the value entries that pertain to the orientation of staples that are applied to output pages.
+Description: This property contains all of the value entries that pertain to the orientation of staples that are applied to output pages.
 
 The Angle property contains two child values: CurrentValue and Supported.
 
-### <span id="currentvalue"></span><span id="CURRENTVALUE"></span> CurrentValue
+## CurrentValue
 
-Schema Path:\\Printer.Finishing.Staple.Angle:CurrentValue
+Schema Path: \\Printer.Finishing.Staple.Angle:CurrentValue
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_INT
+Data Type: BIDI_INT
 
-Description:The current (default) orientation for staples to be applied.
+Description: The current (default) orientation for staples to be applied.
 
 The following values are allowed:
 
-Horizontal
+- Horizontal
 
-Vertical
+- Vertical
 
-Slanted
+- Slanted
 
-unknown
+- unknown
 
-### <span id="supported"></span><span id="SUPPORTED"></span> Supported
+## Supported
 
-Schema Path:\\Printer.Finishing.Staple.Angle:Supported
+Schema Path: \\Printer.Finishing.Staple.Angle:Supported
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:A comma-separated list of all the values supported for staple Angle.
-
- 
-
- 
-
-
-
-
+Description: A comma-separated list of all the values supported for staple Angle.

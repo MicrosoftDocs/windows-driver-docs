@@ -1,7 +1,6 @@
 ---
 title: Sample User-Mode Code for Methods and Events
 description: Sample User-Mode Code for Methods and Events
-ms.assetid: 0d564eb7-8e81-43bd-b539-f1240b3a21de
 keywords:
 - events WDK AVStream
 - AVStream events WDK
@@ -21,7 +20,7 @@ The code in this section shows how you can use methods and events from a user-mo
 
 To learn how to support properties, methods, and events in your kernel-mode minidriver, see [Defining Automation Tables](defining-automation-tables.md).
 
-After you have provided a minidriver that supports a given method, you can invoke that method by calling [**IKsControl::KsMethod**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-ikscontrol-ksmethod) from a user-mode plug-in, as shown in the following code example.
+After you have provided a minidriver that supports a given method, you can invoke that method by calling [**IKsControl::KsMethod**](/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-ikscontrol-ksmethod) from a user-mode plug-in, as shown in the following code example.
 
 ```cpp
 PVOID MethodBuffer; // Your method arguments buffer
@@ -43,7 +42,7 @@ pIKsControl -> KsMethod (
     &BytesReturned);
 ```
 
-In the automation tables you provide in kernel mode, you can use the **Flags** member of [**KSMETHOD\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksmethod_item) to specify whether the buffer is read/write and whether it should be mapped or copied.
+In the automation tables you provide in kernel mode, you can use the **Flags** member of [**KSMETHOD\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmethod_item) to specify whether the buffer is read/write and whether it should be mapped or copied.
 
 To register for an event that you support in your minidriver, use the following user-mode code example.
 
@@ -73,14 +72,9 @@ pIKsControl -> KsEvent (
     &BytesReturned);
 ```
 
-In the above example, notification continues until the minidriver disables the event. To disable the event. call [**IKsControl::KsEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-ikscontrol-ksevent). If you want to be notified only the first time this event happens, set KSEVENT\_TYPE\_ONESHOT in **Event.Flags**.
+In the above example, notification continues until the minidriver disables the event. To disable the event. call [**IKsControl::KsEvent**](/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-ikscontrol-ksevent). If you want to be notified only the first time this event happens, set KSEVENT\_TYPE\_ONESHOT in **Event.Flags**.
 
 If you are supporting events with USB Video Class Extension Units, see [Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md).
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: RemoveVirtualPort method
 description: The RemoveVirtualPort method removes a virtual port for a specific world wide port name (WWPN) .
-ms.assetid: 47A85B72-821C-4552-BA6E-1742D58B54A4
 keywords: ["RemoveVirtualPort method Storage Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.date: 10/17/2018
 
 The **RemoveVirtualPort** method removes a virtual port for a specific world wide port name (WWPN) .
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void RemoveVirtualPort(
@@ -28,8 +26,7 @@ void RemoveVirtualPort(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *WWPN\[8\]*   
 The world wide port name of the virtual port to remove.
@@ -37,22 +34,14 @@ The world wide port name of the virtual port to remove.
 *Status*   
 On return, contains the status of the operation.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
 ## <span id="see_also"></span>See also
 
 
-[NPIV Status Codes](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn386176(v=vs.85))
+[NPIV Status Codes](/previous-versions/windows/hardware/drivers/dn386176(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

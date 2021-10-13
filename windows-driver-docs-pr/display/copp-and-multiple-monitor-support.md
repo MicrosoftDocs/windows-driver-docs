@@ -1,7 +1,6 @@
 ---
 title: COPP and Multiple-Monitor Support
 description: COPP and Multiple-Monitor Support
-ms.assetid: 96bd24f6-4aba-4605-8fd4-465c86061044
 keywords:
 - copy protection WDK COPP , multiple monitors
 - video copy protection WDK COPP , multiple monitors

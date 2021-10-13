@@ -1,7 +1,6 @@
 ---
 title: Hardware Requirements for WavePci Devices
 description: Hardware Requirements for WavePci Devices
-ms.assetid: 58a73ac1-baba-42df-a590-e7282f902157
 keywords:
 - WavePci hardware requirements WDK audio
 - bus master WDK audio
@@ -46,11 +45,11 @@ A WavePci device requires a bus-master DMA controller supporting scatter/gather 
 
 -   **The device must be able to handle data transfers of arbitrary length.**
 
-    It should handle mappings (see [**IPortWavePciStream::GetMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavepcistream-getmapping)) larger than a memory page. A device with a transfer limitation of 4 kilobytes, for example, does not fit the full requirements for WavePci. On 64-bit CPUs that support Microsoft Windows, the page size is 8 kilobytes, which makes it likely that some mappings will be larger than 4 kilobytes in size. Data transfers that exceed 32 kilobytes in a single mapping are theoretically possible, depending on physical memory fragmentation. At the other extreme, a mapping size of one byte is possible.
+    It should handle mappings (see [**IPortWavePciStream::GetMapping**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-getmapping)) larger than a memory page. A device with a transfer limitation of 4 kilobytes, for example, does not fit the full requirements for WavePci. On 64-bit CPUs that support Microsoft Windows, the page size is 8 kilobytes, which makes it likely that some mappings will be larger than 4 kilobytes in size. Data transfers that exceed 32 kilobytes in a single mapping are theoretically possible, depending on physical memory fragmentation. At the other extreme, a mapping size of one byte is possible.
 
 -   **The device should handle data transfers to or from any location in system memory.**
 
-    Data transfers that straddle 32-kilobyte or larger power-of-two boundaries are quite likely. A computer can now contain more than 4 gigabytes of RAM, and in those systems, mappings can be located higher than 4 gigabytes in physical memory in the case of either a 64-bit CPU or the x86 physical address extension (PAE). To achieve the best performance on these machines, vendors should create devices that support 64-bit addressing. Otherwise, data copying in software is required. Data copying has historically been required for devices with 24-bit addressing on systems with more than 16 megabytes of RAM. Devices should use WaveCyclic instead of WavePci if they cannot read from or write to anywhere in physical memory. A driver can make this decision at device startup time (see [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device)) after it has had a chance to determine whether its address reach is sufficient to access the full address range of the system memory bus.
+    Data transfers that straddle 32-kilobyte or larger power-of-two boundaries are quite likely. A computer can now contain more than 4 gigabytes of RAM, and in those systems, mappings can be located higher than 4 gigabytes in physical memory in the case of either a 64-bit CPU or the x86 physical address extension (PAE). To achieve the best performance on these machines, vendors should create devices that support 64-bit addressing. Otherwise, data copying in software is required. Data copying has historically been required for devices with 24-bit addressing on systems with more than 16 megabytes of RAM. Devices should use WaveCyclic instead of WavePci if they cannot read from or write to anywhere in physical memory. A driver can make this decision at device startup time (see [**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md)) after it has had a chance to determine whether its address reach is sufficient to access the full address range of the system memory bus.
 
 -   **The device should handle data transfers with arbitrary alignment.**
 
@@ -64,7 +63,7 @@ This exceeds the memory page size (4096 bytes), which means that the buffer cont
 
 For this reason, the scatter/gather DMA hardware for a WavePci device should be designed to handle audio frames (such as frame 197 in the following figure) that are split between two physically noncontiguous pages in memory.
 
-![diagram illustrating an audio buffer at an offset from the start of a page](images/framealign.png)
+![diagram illustrating an audio buffer at an offset from the start of a page.](images/framealign.png)
 
 At the top of the preceding figure is a 5760-byte buffer that straddles the boundary between two pages. In this example, the buffer begins at a 1728-byte offset from the start of the first page, which aligns the start of the buffer to a 64-byte boundary in memory. Assume that each audio frame occupies 12 bytes and contains six channels. The first page contains all of frames 0 through 196 but only the first four bytes of frame 197.
 
@@ -74,14 +73,9 @@ Although the two pages appear next to each other at the top of the figure, they 
 
 Even if the preceding example is changed to align the buffer with the start of the first page, the split-frame problem does not disappear. The following figure demonstrates this point. In this case, frame 341 gets split at the page boundary with the samples for channels 0 and 1 again falling within the first page and the samples for channels 2 through 5 located in the second page.
 
-![diagram illustrating an audio buffer aligned to the start of a page](images/framealign2.png)
+![diagram illustrating an audio buffer aligned to the start of a page.](images/framealign2.png)
 
 A WavePci device whose scatter/gather DMA controller does not properly handle split audio frames is limited in the kinds of audio data formats it can handle, although software workarounds might help alleviate some hardware design flaws. For more information, see [WavePci Latency](wavepci-latency.md).
 
  
-
- 
-
-
-
 

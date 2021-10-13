@@ -1,7 +1,6 @@
 ---
 title: Reading WIA Item Properties by an Application
 description: Reading WIA Item Properties by an Application
-ms.assetid: e09f604e-451e-40dc-bc12-a077d4d263ee
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,23 +11,23 @@ ms.localizationpriority: medium
 
 
 
-When an application makes a request to read WIA item properties, the WIA service calls the [**IWiaMiniDrv::drvReadItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties) method.
+When an application makes a request to read WIA item properties, the WIA service calls the [**IWiaMiniDrv::drvReadItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties) method.
 
 The **IWiaMiniDrv::drvReadItemProperties** method should perform the following tasks:
 
 1.  Determine whether the properties being read need run-time updates. To determine which WIA properties are being read, the WIA minidriver can use the PROPSPEC array (defined in the Microsoft Windows SDK documentation). It is recommended that the WIA minidriver determine the item type before processing the PROPSPEC array. This reduces the need to traverse the array on every **IWiaMiniDrv::drvReadItemProperties** call. If you have no run-time properties on the child items of this device, only root item property read requests will be processed.
 
-2.  Update the current value by calling the [**wiasWriteMultiple**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswritemultiple) or **wiasWriteProp**_Xxx_ service functions, using the WIA property's ID. This updates the WIA property set that is stored in the driver item, and the WIA service returns the new value to the application.
+2.  Update the current value by calling the [**wiasWriteMultiple**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiaswritemultiple) or **wiasWriteProp**_Xxx_ service functions, using the WIA property's ID. This updates the WIA property set that is stored in the driver item, and the WIA service returns the new value to the application.
 
 If the WIA minidriver does not perform any run-time adjustments to WIA properties in this function, the WIA service automatically returns only the current WIA property value to the application. This function should be used only for properties such as device clocks, or WIA properties that require hardware-specific checks, such as document feeder status.
 
 ### <a href="" id="implementing-iwiaminidrv--drvreaditemproperties-"></a>Implementing IWiaMiniDrv::drvReadItemProperties
 
-The **IWiaMiniDrv::drvReadItemProperties** method is called when an application tries to read a WIA item's properties. The WIA service first notifies the driver by calling this method. The WIA driver should verify that the property being read is correct. This is a good place to access the hardware for properties that require device status (such as [**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-status), or [**WIA\_DPA\_DEVICE\_TIME**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dpa-device-time) if your device supports a clock).
+The **IWiaMiniDrv::drvReadItemProperties** method is called when an application tries to read a WIA item's properties. The WIA service first notifies the driver by calling this method. The WIA driver should verify that the property being read is correct. This is a good place to access the hardware for properties that require device status (such as [**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](./wia-dps-document-handling-status.md), or [**WIA\_DPA\_DEVICE\_TIME**](./wia-dpa-device-time.md) if your device supports a clock).
 
 It is important to note that a WIA driver should communicate with the hardware only on rare occasions. WIA drivers that communicate with hardware too much in this call will appear sluggish and slow.
 
-The following example shows an implementation of the [**IWiaMiniDrv::drvReadItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties) method:
+The following example shows an implementation of the [**IWiaMiniDrv::drvReadItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties) method:
 
 ```cpp
 HRESULT _stdcall CWIADevice::drvReadItemProperties(
@@ -156,9 +155,4 @@ HRESULT _stdcall CWIADevice::drvReadItemProperties(
 ```
 
  
-
- 
-
-
-
 

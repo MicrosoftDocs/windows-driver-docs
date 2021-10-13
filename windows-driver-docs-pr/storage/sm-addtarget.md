@@ -1,7 +1,6 @@
 ---
 title: SM\_AddTarget function
 description: The SM\_AddTarget WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated targets.
-ms.assetid: 78e19496-1eb0-4d05-8637-f2e6d123208b
 keywords: ["SM_AddTarget function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_AddTarget WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated targets.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_AddTarget(
@@ -33,8 +31,7 @@ void SM_AddTarget(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 The worldwide name (WWN) of the local port whose events the WMI client will receive.
@@ -51,18 +48,15 @@ The scope of the target events to report. If this member is zero, the WMI client
 *HBAStatus*   
 The status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the HBAStatus member of a SM\_AddTarget\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_EventControl WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,16 +80,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_AddTarget\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_addtarget_in)
+[**SM\_AddTarget\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_addtarget_in)
 
-[**SM\_AddTarget\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_addtarget_out)
-
- 
+[**SM\_AddTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_addtarget_out)
 
  
-
-
-
-
-
 

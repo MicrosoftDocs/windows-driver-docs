@@ -1,7 +1,6 @@
 ---
 title: WDI Miniport Driver Design Guide
 description: WLAN Device Driver Interface (WDI) is the new WLAN Universal Windows driver model for both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
-ms.assetid: E1666D5E-1932-4378-B4F6-61F28716183E
 keywords:
 - wi-fi drivers, wi-fi drivers Windows 10, wireless drivers, wireless drivers windows 10, wlan drivers, wlan drivers windows 10, wlan driver interface, WDI drivers, WDI network drivers, WDI Windows 10
 ms.date: 04/20/2017
@@ -108,7 +107,7 @@ The following principles guided the overall model and design of this protocol.
 </tr>
 <tr class="even">
 <td align="left"><p>MAC Address Randomization</p></td>
-<td align="left"><p>In order to improve the privacy of Windows 10 users, configured Wi-Fi MAC addresses are used in some circumstances, such as before connecting to a particular Wi-Fi network or when initiating scans in specific conditions. This only applies to the station port. The system ensures that randomization is used appropriately, so important connectivity scenarios are not broken. The system manages changes of addresses by issuing <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-dot11-reset" data-raw-source="[OID_WDI_TASK_DOT11_RESET](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-dot11-reset)">OID_WDI_TASK_DOT11_RESET</a> commands prior to issuing a scan or connect command. The reset command parameters include an optional MAC address argument. If the argument is present, the MAC address is reset to the specified value. If it is absent, the MAC address is left to the current value. When configuring randomized MAC addresses, the operating system uses the "locally administered" format defined for IEEE802 addresses.</p></td>
+<td align="left"><p>In order to improve the privacy of Windows 10 users, configured Wi-Fi MAC addresses are used in some circumstances, such as before connecting to a particular Wi-Fi network or when initiating scans in specific conditions. This only applies to the station port. The system ensures that randomization is used appropriately, so important connectivity scenarios are not broken. The system manages changes of addresses by issuing <a href="/windows-hardware/drivers/network/oid-wdi-task-dot11-reset" data-raw-source="[OID_WDI_TASK_DOT11_RESET](./oid-wdi-task-dot11-reset.md)">OID_WDI_TASK_DOT11_RESET</a> commands prior to issuing a scan or connect command. The reset command parameters include an optional MAC address argument. If the argument is present, the MAC address is reset to the specified value. If it is absent, the MAC address is left to the current value. When configuring randomized MAC addresses, the operating system uses the "locally administered" format defined for IEEE802 addresses.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ECSA</p></td>
@@ -122,14 +121,5 @@ The following principles guided the overall model and design of this protocol.
 ## Related topics
 
 
-[WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
- 
-
- 
-
-
-
-
-
+[WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)
 

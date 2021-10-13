@@ -1,7 +1,6 @@
 ---
 title: Creating Your Own Source Control System
 description: Creating Your Own Source Control System
-ms.assetid: 86492545-fc94-40ee-b22d-26fa2b0fbcc8
 keywords: ["source servers, HTTP sites", "source servers, UNC shares", "SrcSrv, HTTP sites", "SrcSrv, UNC shares"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -19,6 +18,10 @@ This section includes:
 [Language Specification 1](language-specification-1.md)
 
 [Language Specification 2](language-specification-2.md)
+
+[Language Specification 3](language-specification-3.md)
+
+
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: storagekd.storclass
 description: The storagekd.storclass extension displays information about the specified classpnp device.
-ms.assetid: EC5B44F5-540E-4F25-80AA-09BE4F78BF72
 keywords: ["storagekd.storclass Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,8 +47,7 @@ Specifies the amount of detail to display. This parameter can be set to 0, 1, or
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storclass** display:
 

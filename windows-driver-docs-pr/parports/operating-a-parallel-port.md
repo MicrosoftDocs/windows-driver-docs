@@ -1,7 +1,6 @@
 ---
 title: Operating a Parallel Port
 description: Operating a Parallel Port
-ms.assetid: c9015a01-a7cb-41f4-9710-a868ef19f6d7
 keywords:
 - vendor-supplied parallel drivers WDK , parallel port operation
 - system-supplied function drivers WDK parallel ports
@@ -42,12 +41,7 @@ For more information about system support for parallel ports, see:
 
 [System-Supplied Parallel Drivers](system-supplied-parallel-drivers.md)
 
-[Client Interfaces to System-Supplied Parallel Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/_parports)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
-title: C28740
+title: C28740 warning
 description: Warning C28740 Unannotated unsigned buffer.
-ms.assetid: 849BA4E4-89E7-4E8C-B73C-CA303487A5E3
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

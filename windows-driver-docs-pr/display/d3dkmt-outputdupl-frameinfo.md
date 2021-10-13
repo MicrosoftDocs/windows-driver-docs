@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTPUTDUPL\_FRAMEINFO structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: e35389b2-52aa-4481-a5d7-6c45c795885f
+description: Learn about the D3DKMT\_OUTPUTDUPL\_FRAMEINFO structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTPUTDUPL_FRAMEINFO structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTPUTDUPL_FRAMEINFO {
@@ -36,8 +34,7 @@ typedef struct _D3DKMT_OUTPUTDUPL_FRAMEINFO {
 } D3DKMT_OUTPUTDUPL_FRAMEINFO;
 ```
 
-Members
--------
+## Members
 
 **LastPresentTime**
 
@@ -55,8 +52,7 @@ Members
 
 **PointerShapeBufferSize**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

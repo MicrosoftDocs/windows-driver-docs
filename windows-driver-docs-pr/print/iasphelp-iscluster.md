@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 78573fe7-d264-4d3c-8654-a85c2abfb93a
 keywords: ["get_IsCluster method Print Devices", "get_IsCluster method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IsCluster method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **IsCluster** property enables an ASP Web page to determine whether the Cluster service is running on a cluster node.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_IsCluster(
@@ -32,14 +30,12 @@ HRESULT get_IsCluster(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives **TRUE** if the Cluster service is installed, configured, and running on the node, and **FALSE** otherwise.
 
-Return value
-------------
+## Return value
 
 This property always returns S\_OK.
 
@@ -55,8 +51,7 @@ objPrinter.Open strPrinter
 ClusterRunning = objPrinter.IsCluster
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

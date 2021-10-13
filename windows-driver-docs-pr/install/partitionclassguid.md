@@ -1,7 +1,6 @@
 ---
 title: PartitionClassGuid
 description: PartitionClassGuid
-ms.assetid: 2f8ec440-5f52-41f6-b37b-a1bb030957b0
 keywords: ["PartitionClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.date: 10/17/2018
 # PartitionClassGuid
 
 
-PartitionClassGuid is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for partition devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_PARTITION**](guid-devinterface-partition.md) class identifier for new instances of this class.
+PartitionClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for partition devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_PARTITION**](guid-devinterface-partition.md) class identifier for new instances of this class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -46,11 +44,4 @@ Requirements
 [**GUID_DEVINTERFACE_PARTITION**](guid-devinterface-partition.md)
 
  
-
- 
-
-
-
-
-
 

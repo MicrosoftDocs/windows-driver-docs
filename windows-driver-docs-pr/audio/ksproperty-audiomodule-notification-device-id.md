@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID
 description: The KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID retrieves the audio module notification device identifier GUID.
-ms.assetid: CD9C5FCD-FB2A-4B21-A15E-BA520C3311A7
 keywords: ["KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID Audio Devices"]
 topic_type:
 - apiref
@@ -58,17 +57,15 @@ The returned property value is a single GUID.
 
 The same device GUID value is returned if the filter handle or pin handle is provided as the target.
 
-Remarks
--------
+## Remarks
 
 Support for the KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID is required to enable the miniport to signal notifications and pass information to Audio Module clients. The lifetime of this ID is tied to the lifetime of the audio device being exposed and active to the Windows Audio stack. The property can be sent through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call.
 
 For an example of using this KSPROPERTY see the SYSVAD audio driver sample.
 
-For more information about audio modules, see [Implementing Audio Module Discovery](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication).
+For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -96,14 +93,7 @@ Requirements
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
-[**KSAUDIOMODULE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_notification)
+[**KSAUDIOMODULE\_NOTIFICATION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_notification)
 
  
-
- 
-
-
-
-
-
 

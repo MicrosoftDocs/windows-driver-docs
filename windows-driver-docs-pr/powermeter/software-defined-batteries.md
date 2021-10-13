@@ -47,7 +47,7 @@ Imagine a two battery system. Where one battery is a non removable battery, situ
 
 *A Multi-Battery System*
 
-![A multi-battery system showing internal and external batteries](images/powermeter-multi-battery.png)
+![A multi-battery system showing internal and external batteries.](images/powermeter-multi-battery.png)
 
 As the keyboard is attached-detached over a period of time, it forces the two batteries to age differently. This creates a scope for age balancing the batteries and prolonging system usability period by employing the SDB simple age balancing algorithm.
 
@@ -57,7 +57,7 @@ The algorithm is called *simple age balancing* because it attempts to balance th
 
 *Simple Age Balancing SDB Algorithm*
 
-![Simple Age Balancing SDB Algorithm](images/powermeter-simple-age-balancing-algorithm.png)
+![Simple Age Balancing SDB Algorithm.](images/powermeter-simple-age-balancing-algorithm.png)
 
 The core idea behind the simple age balancing algorithm is to simply use the battery that has accrued least battery cycle counts, as depicted by decision box (2) in the flowchart above. The hypothetical system in this example, allows for exclusive use of either internal or external batteries. However, this may not be true for all the systems. Other systems may not be as flexible or may have electrical constraints on use of batteries. In such cases the algorithm expects a best attempt of age balancing. For example consider the following.  
 
@@ -97,7 +97,7 @@ Windows calculates the battery availability and produces a “Preserve Non-Hot S
 
 *Simple Age Balancing SDB Algorithm Adapted for Hot Swappable Batteries*
 
-![Simple Age Balancing SDB Algorithm Adapted for Hot Swappable Batteries](images/powermeter-simple-age-balancing-algorithm-hot-swap.png)
+![Simple Age Balancing SDB Algorithm Adapted for Hot Swappable Batteries.](images/powermeter-simple-age-balancing-algorithm-hot-swap.png)
 
 
 ## <span id="implementing-sdb"></span><span id="IMPLEMENTING-SDB"></span>Implementing SDB Algorithm in Firmware
@@ -109,14 +109,14 @@ Note that this is not a prescription of how the SDB algorithm should be implemen
 
 *Full Firmware Implemenation of Simple Age Balancing SDB Algorithm*
 
-![Full Firmware Implemenation of Simple Age Balancing SDB Algorithm](images/powermeter-firmware-age-balancing-algorithm-hot-swap.png)
+![Full Firmware Implemenation of Simple Age Balancing SDB Algorithm.](images/powermeter-firmware-age-balancing-algorithm-hot-swap.png)
 
 
 ## Power Stack Architecture
 
 This section describes the component layout for all components participating in the power stack and their relative relationship with each other.
 
-![Power stack architecture showing HPMI](images/powermeter-hpmi-stack-architecture.png)
+![Power stack architecture showing HPMI.](images/powermeter-hpmi-stack-architecture.png)
 
 
 ### Battery Miniport
@@ -125,7 +125,7 @@ The battery miniport interfaces remain the same.
 
 SDB interfaces do not affect or influence OEM’s desire to rely on ACPI/CmBatt mechanism or to develop their proprietary miniport.
 
-Note: Windows forwards all [IOCTL_BATTERY_SET_INFORMATION](https://docs.microsoft.com/windows/desktop/Power/ioctl-battery-set-information) commands to all battery devices enumerated on the system.
+Note: Windows forwards all [IOCTL_BATTERY_SET_INFORMATION](/windows/desktop/Power/ioctl-battery-set-information) commands to all battery devices enumerated on the system.
 
 ### HPMI
 
@@ -158,7 +158,7 @@ HPMI may be manifested as either an ACPI device or be root enumerated by one of 
 
 The following diagram illustrates two examples of how the SDB algorithm may be implemented if the firmware component already hosts bulk of battery control logic.
 
-![HPMI and firmware example SDB algorithm stack examples](images/powermeter-firmware-and-hpmi-implementation.png)
+![HPMI and firmware example SDB algorithm stack examples.](images/powermeter-firmware-and-hpmi-implementation.png)
 
 
 ### HPMI Implements SDB Algorithm
@@ -179,7 +179,7 @@ A full flow-chart model depicting how SDB Algorithm is implemented is shown in [
 
 ## Interface Definitions
 
-A new Device Interface Class GUID for HPMI device is introduced. HPMI device must identify itself as implementing the [Device Interface Classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes). For more information, see [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces) in the WDK.
+A new Device Interface Class GUID for HPMI device is introduced. HPMI device must identify itself as implementing the [Device Interface Classes](../install/overview-of-device-interface-classes.md). For more information, see [Using Device Interfaces](../wdf/using-device-interfaces.md) in the WDK.
 
 Windows uses the device arrival notification for querying and configuring the HPMI device.
 
@@ -199,7 +199,7 @@ Note that the device index should be set to zero.
 
 ### Feature Discovery
 
-[IOCTL_HPMI_QUERY_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ni-hpmi-ioctl_hpmi_query_capabilities) is used to discover features supported by HPMI. IOCTL_HPMI_QUERY_CAPABILITIES is a required IOCTL.
+[IOCTL_HPMI_QUERY_CAPABILITIES](/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_query_capabilities) is used to discover features supported by HPMI. IOCTL_HPMI_QUERY_CAPABILITIES is a required IOCTL.
 
 Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered. 
 
@@ -273,7 +273,7 @@ typedef struct _HPMI_QUERY_CAPABILITIES_RESPONSE {
 
 ### Command Format
 
-Windows issues this IOCTL with [HPMI_QUERY_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ns-hpmi-_hpmi_query_capabilities).
+Windows issues this IOCTL with [HPMI_QUERY_CAPABILITIES](/windows-hardware/drivers/ddi/hpmi/ns-hpmi-_hpmi_query_capabilities).
 
 The Version is set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
@@ -282,16 +282,16 @@ The Version is set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
 HPMI must return STATUS_SUCCESS code.
 
-HPMI responds by setting the following values in [HPMI_QUERY_CAPABILITIES_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ns-hpmi-_hpmi_query_capabilities_response) struct:
+HPMI responds by setting the following values in [HPMI_QUERY_CAPABILITIES_RESPONSE](/windows-hardware/drivers/ddi/hpmi/ns-hpmi-_hpmi_query_capabilities_response) struct:
 
 - Version is set to HPMI_QUERY_CAPABILITIES_RESPONSE_VERSION_1
-- RequestService is set to HPMI_REQUEST_SERVICE_BATTERY_UTILIZATION_HINTS to ensure HPMI driver receives [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint).
+- RequestService is set to HPMI_REQUEST_SERVICE_BATTERY_UTILIZATION_HINTS to ensure HPMI driver receives [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint).
 - SdbCapabilities is set to HPMI_CAPABILITY_SDB_OEM_SIMPLE_AGE_BALANCING to indicate battery age balancing support.
 
 
 #### Battery Utilization
 
-Windows issues [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint) to HPMI to provide most updated battery utilization hints. IOCTL_HPMI_BATTERY_UTILIZATION_HINT is a required IOCTL.
+Windows issues [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint) to HPMI to provide most updated battery utilization hints. IOCTL_HPMI_BATTERY_UTILIZATION_HINT is a required IOCTL.
 
 HPMI may utilize the PreserveNonHotSwappableBatteries hint as described in [Adapting SDB Algorithm for use with Hot Swappable Batteries](#ADAPTING-SDB) to conserve the internal batteries.
 
@@ -374,7 +374,7 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
 
 Windows issues this IOCTL with HPMI_BATTERY_UTILIZATION_HINT. Version is set to *HPMI_BATTERY_UTILIZATION_HINT_VERSION_1*.
 
-[HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ns-hpmi-_hpmi_battery_utilization_hint)
+[HPMI_BATTERY_UTILIZATION_HINT](/windows-hardware/drivers/ddi/hpmi/ns-hpmi-_hpmi_battery_utilization_hint)
 
 PreserveNonHotSwappableBatteries is set to one of the following values:
 
@@ -391,12 +391,9 @@ No data is returned in the response.
 
 ## Sample Interface Contract
 
-Refer to [HMPI.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/index) for a full (sample) API contract for the interface definitions described here.
+Refer to [HMPI.h](/windows-hardware/drivers/ddi/hpmi/index) for a full (sample) API contract for the interface definitions described here.
 
 
 
 >[!NOTE]
 > Contents of this document are subject to change without notice.
-
-
-

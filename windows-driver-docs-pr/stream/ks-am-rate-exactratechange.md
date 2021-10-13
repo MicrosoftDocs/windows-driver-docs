@@ -1,7 +1,6 @@
 ---
 title: KS\_AM\_RATE\_ExactRateChange
 description: The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
-ms.assetid: c96fe88c-04c5-47d9-a9dd-18d06388300e
 keywords: ["KS_AM_RATE_ExactRateChange Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ks_am_exactratechange" data-raw-source="[&lt;strong&gt;KS_AM_ExactRateChange&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ks_am_exactratechange)"><strong>KS_AM_ExactRateChange</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange" data-raw-source="[&lt;strong&gt;KS_AM_ExactRateChange&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange)"><strong>KS_AM_ExactRateChange</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,13 +56,11 @@ The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
 
 The property value (operation data) is a KS\_AM\_ExactRateChange structure.
 
-Remarks
--------
+## Remarks
 
 This property always returns STATUS\_NOT\_IMPLEMENTED.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,14 +78,4 @@ Requirements
 ## See also
 
 
-[**KS\_AM\_ExactRateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ks_am_exactratechange)
-
- 
-
- 
-
-
-
-
-
-
+[**KS\_AM\_ExactRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange)

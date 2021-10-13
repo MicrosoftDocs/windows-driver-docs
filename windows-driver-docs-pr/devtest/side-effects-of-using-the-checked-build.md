@@ -1,18 +1,19 @@
 ---
 title: Side Effects of Using the Checked Build
 description: Side Effects of Using the Checked Build
-ms.assetid: 8c08d4f3-1221-4858-afd4-249d966c14a7
 keywords:
 - checked builds WDK , performance impact
-ms.date: 04/20/2017
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
 # Side Effects of Using the Checked Build
 
-
 ## <span id="ddk_side_effects_of_using_the_checked_build_tools"></span><span id="DDK_SIDE_EFFECTS_OF_USING_THE_CHECKED_BUILD_TOOLS"></span>
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 The checked components of the operating system contain fewer optimizations and more debugging checks than otherwise identical free components. Therefore, checked components run substantially slower than free counterparts.
 

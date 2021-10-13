@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfobject
 description: The wdfkd.wdfobject extension displays information about a specified framework object.
-ms.assetid: fee1b924-5437-4d15-b39c-4d0f6eba0a90
 keywords: ["wdfkd.wdfobject Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,8 +39,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 If the Kernel-Mode Driver Framework (KMDF) verifier is enabled for a driver and the public handle type was marked for tracking, the display from the **!wdfkd.wdfobject** extension includes the tag tracker (that is, the tracking object), as in the following example.
 

@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_LUNMappingInformation WMI Class
 description: MSiSCSI\_LUNMappingInformation WMI Class
-ms.assetid: 646add52-f946-4169-9f6b-974253ec30af
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -20,7 +19,7 @@ Because this class is associated with a particular LUN, the miniport driver that
 
 The MSiSCSI\_LUNMappingInformation class is unpublished and is defined in *Operations.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_LUNMappingInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_msiscsi_lunmappinginformation) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_LUNMappingInformation**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_msiscsi_lunmappinginformation) data structure.
 
 The SCSI address information that MSiSCSI\_LUNMappingInformation exposes must be consistent with the information that the initiator's miniport driver provided to the port driver during enumeration of the logical unit.
 
@@ -31,10 +30,4 @@ Initiators must register the MSiSCSI\_LUNMappingInformation class using the name
 Initiators must create one instance of the MSiSCSI\_LUNMappingInformation class for each logical unit that it enumerates.
 
  
-
- 
-
-
-
-
 

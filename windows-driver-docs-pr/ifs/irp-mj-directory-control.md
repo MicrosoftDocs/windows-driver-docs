@@ -1,8 +1,7 @@
 ---
-title: IRP_MJ_DIRECTORY_CONTROL
-description: IRP\_MJ\_DIRECTORY\_CONTROL
-ms.assetid: cb1bed36-bcb5-419b-87ca-6d9107ece6d1
-keywords: ["IRP_MJ_DIRECTORY_CONTROL Installable File System Drivers"]
+title: IRP_MJ_DIRECTORY_CONTROL (IFS)
+description: IRP_MJ_DIRECTORY_CONTROL
+keywords: ["IRP_MJ_DIRECTORY_CONTROL  Installable File System Drivers"]
 topic_type:
 - apiref
 api_name:
@@ -13,261 +12,131 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_DIRECTORY\_CONTROL
-
+# IRP_MJ_DIRECTORY_CONTROL (IFS)
 
 ## When Sent
 
-
-The IRP\_MJ\_DIRECTORY\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **ReadDirectoryChangesW** or **FindNextVolumeMountPoint** or when a kernel-mode component has called [**ZwQueryDirectoryFile**](https://msdn.microsoft.com/library/windows/hardware/ff567047).
+The IRP_MJ_DIRECTORY_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **ReadDirectoryChangesW** or **FindNextVolumeMountPoint** or when a kernel-mode component has called [**ZwQueryDirectoryFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwquerydirectoryfile).
 
 ## Operation: File System Drivers
 
-
 The file system driver should check the minor function code to determine which directory control operation is requested. The following are the valid minor function codes:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Term</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>IRP_MN_NOTIFY_CHANGE_DIRECTORY</p></td>
-<td align="left"><p>Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IRP_MN_QUERY_DIRECTORY</p></td>
-<td align="left"><p>Indicates a directory query request. The types of information that can be queried are file-system-dependent, but generally include the following:</p>
-FileBothDirectoryInformation
-FileDirectoryInformation
-FileFullDirectoryInformation
-FileIdBothDirectoryInformation
-FileIdFullDirectoryInformation
-FileNamesInformation
-FileObjectIdInformation
-FileReparsePointInformation</td>
-</tr>
-</tbody>
-</table>
+| Term | Description |
+| ---- | ----------- |
+| IRP_MN_NOTIFY_CHANGE_DIRECTORY | Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP. |
+| IRP_MN_QUERY_DIRECTORY | Indicates a directory query request. The types of information that can be queried are file-system-dependent, but generally include the following: FileBothDirectoryInformation, FileDirectoryInformation, FileFullDirectoryInformation, FileIdBothDirectoryInformation, FileIdFullDirectoryInformation, FileNamesInformation, FileObjectIdInformation, FileReparsePointInformation |
 
- 
-
-&gt; \[!Note\]
-&gt;   The FileQuotaInformation information class is obsolete. [**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md) should be used instead.
-
- 
+> [!NOTE]
+> The FileQuotaInformation information class is obsolete. [**IRP_MJ_QUERY_QUOTA**](irp-mj-query-quota.md) should be used instead.
 
 After performing the requested operation, the file system driver should complete the IRP.
 
 ## Operation: File System Filter Drivers
 
-
 The filter driver must pass this IRP down to the next-lower driver on the stack.
 
 ## Parameters
 
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a directory control request:
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a directory control request:
-
-<a href="" id="deviceobject"></a>*DeviceObject*  
+*DeviceObject*  
 Pointer to the target device object.
 
-<a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
+*Irp->IoStatus*  
+Pointer to an [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
-<a href="" id="irp--userbuffer"></a>*Irp-&gt;UserBuffer*  
+*Irp->UserBuffer*  
 Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory.
 
-<a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
+*IrpSp->FileObject*  
 Pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_DIRECTORY\_CONTROL and should not be used.
+The *IrpSp->FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE_OBJECT structure. The **RelatedFileObject** field of the FILE_OBJECT structure is not valid during the processing of IRP_MJ_DIRECTORY_CONTROL and should not be used.
 
-<a href="" id="irpsp--flags"></a>*IrpSp-&gt;Flags*  
-The following flags can be set for IRP\_MN\_QUERY\_DIRECTORY.
+*IrpSp->Flags*  
+The following flags can be set for IRP_MN_QUERY_DIRECTORY.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Flag</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>SL_INDEX_SPECIFIED</p></td>
-<td align="left"><p>Begin the scan at the entry in the directory whose index is given by <em>IrpSp-&gt;Parameters.QueryDirectory.FileIndex</em>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SL_RESTART_SCAN</p></td>
-<td align="left"><p>Begin the scan at the first entry in the directory. If this flag is not set, resume the scan from a previous IRP_MN_QUERY_DIRECTORY request.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SL_RETURN_SINGLE_ENTRY</p></td>
-<td align="left"><p>Return only the first entry that is found.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SL_RETURN_ON_DISK_ENTRIES_ONLY</p></td>
-<td align="left"><p>Instructs any filters that perform directory virtualization or just-in-time expansion to simply pass the request through to the file system and return entries that are currently on disk.</p></td>
-</tr>
-</tbody>
-</table>
+| Flag | Meaning |
+| ---- | ------- |
+| SL_INDEX_SPECIFIED | Begin the scan at the entry in the directory whose index is given by *IrpSp->Parameters.QueryDirectory.FileIndex*. |
+| SL_RESTART_SCAN | Begin the scan at the first entry in the directory. If this flag is not set, resume the scan from a previous IRP_MN_QUERY_DIRECTORY request. |
+| SL_RETURN_SINGLE_ENTRY | Return only the first entry that is found. |
+| SL_RETURN_ON_DISK_ENTRIES_ONLY | Instructs any filters that perform directory virtualization or just-in-time expansion to simply pass the request through to the file system and return entries that are currently on disk. |
 
- 
+The following flag can be set for IRP_MN_NOTIFY_CHANGE_DIRECTORY:
 
-The following flag can be set for IRP\_MN\_NOTIFY\_CHANGE\_DIRECTORY:
+| Flag | Meaning |
+| ---- | ------- |
+| SL_WATCH_TREE | Set to **TRUE** if all subdirectories of this directory should also be watched. Set to **FALSE** if only the directory itself is to be watched.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Flag</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>SL_WATCH_TREE</p></td>
-<td align="left"><p>Set to <strong>TRUE</strong> if all subdirectories of this directory should also be watched. Set to <strong>FALSE</strong> if only the directory itself is to be watched.</p></td>
-</tr>
-</tbody>
-</table>
+*IrpSp->MajorFunction*  
+Specifies IRP_MJ_DIRECTORY_CONTROL.
 
- 
-
-<a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
-Specifies IRP\_MJ\_DIRECTORY\_CONTROL.
-
-<a href="" id="irpsp--minorfunction"></a>*IrpSp-&gt;MinorFunction*  
+*IrpSp->MinorFunction*  
 One of the following:
 
--   IRP\_MN\_NOTIFY\_CHANGE\_DIRECTORY
--   IRP\_MN\_QUERY\_DIRECTORY
+- IRP_MN_NOTIFY_CHANGE_DIRECTORY
+- IRP_MN_QUERY_DIRECTORY
 
-<a href="" id="irpsp--parameters-notifydirectory-completionfilter"></a>*IrpSp-&gt;Parameters.NotifyDirectory.CompletionFilter*  
-For more information, see the description of the *CompletionFilter* parameter to [**FsRtlNotifyFullChangeDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory).
+*IrpSp->Parameters.NotifyDirectory.CompletionFilter*  
+For more information, see the description of the *CompletionFilter* parameter to [**FsRtlNotifyFullChangeDirectory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory).
 
-<a href="" id="irpsp--parameters-notifydirectory-length"></a>*IrpSp-&gt;Parameters.NotifyDirectory.Length*  
-Length in bytes of the buffer pointed to by *Irp-&gt;UserBuffer*.
+*IrpSp->Parameters.NotifyDirectory.Length*  
+Length in bytes of the buffer pointed to by *Irp->UserBuffer*.
 
-<a href="" id="irpsp--parameters-querydirectory-fileindex"></a>*IrpSp-&gt;Parameters.QueryDirectory.FileIndex*  
-Index of the file at which to begin the directory scan. Ignored if the SL\_INDEX\_SPECIFIED flag is not set. This parameter cannot be specified in any Win32 function or kernel-mode support routine. Currently it is used only by the NT virtual DOS machine (NTVDM), which exists only on 32-bit NT-based platforms. Note that the file index is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
+*IrpSp->Parameters.QueryDirectory.FileIndex*  
+Index of the file at which to begin the directory scan. Ignored if the SL_INDEX_SPECIFIED flag is not set. This parameter cannot be specified in any Win32 function or kernel-mode support routine. Currently it is used only by the NT virtual DOS machine (NTVDM), which exists only on 32-bit NT-based platforms. Note that the file index is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
 
-<a href="" id="irpsp--parameters-querydirectory-fileinformationclass"></a>*IrpSp-&gt;Parameters.QueryDirectory.FileInformationClass*  
+*IrpSp->Parameters.QueryDirectory.FileInformationClass*  
 Specifies one of the values described below.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>FileBothDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_both_dir_information" data-raw-source="[&lt;strong&gt;FILE_BOTH_DIR_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_both_dir_information)"><strong>FILE_BOTH_DIR_INFORMATION</strong></a> structure for each file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_directory_information" data-raw-source="[&lt;strong&gt;FILE_DIRECTORY_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_directory_information)"><strong>FILE_DIRECTORY_INFORMATION</strong></a> structure for each file.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileFullDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_full_dir_information" data-raw-source="[&lt;strong&gt;FILE_FULL_DIR_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_full_dir_information)"><strong>FILE_FULL_DIR_INFORMATION</strong></a> structure for each file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileIdBothDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_both_dir_information" data-raw-source="[&lt;strong&gt;FILE_ID_BOTH_DIR_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_both_dir_information)"><strong>FILE_ID_BOTH_DIR_INFORMATION</strong></a> structure for each file.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileIdFullDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_full_dir_information" data-raw-source="[&lt;strong&gt;FILE_ID_FULL_DIR_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_full_dir_information)"><strong>FILE_ID_FULL_DIR_INFORMATION</strong></a> structure for each file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileNamesInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_names_information" data-raw-source="[&lt;strong&gt;FILE_NAMES_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_names_information)"><strong>FILE_NAMES_INFORMATION</strong></a> structure for each file.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileObjectIdInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_objectid_information" data-raw-source="[&lt;strong&gt;FILE_OBJECTID_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_objectid_information)"><strong>FILE_OBJECTID_INFORMATION</strong></a> structure for each file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileQuotaInformation</strong></p></td>
-<td align="left"><p>This information class is obsolete. <a href="irp-mj-query-quota.md" data-raw-source="[&lt;strong&gt;IRP_MJ_QUERY_QUOTA&lt;/strong&gt;](irp-mj-query-quota.md)"><strong>IRP_MJ_QUERY_QUOTA</strong></a> should be used instead.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileReparsePointInformation</strong></p></td>
-<td align="left"><p>Return a single <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_reparse_point_information" data-raw-source="[&lt;strong&gt;FILE_REPARSE_POINT_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_reparse_point_information)"><strong>FILE_REPARSE_POINT_INFORMATION</strong></a> structure for the directory.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Meaning |
+| ----- | ------- |
+| **FileBothDirectoryInformation** | Return a [**FILE_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_both_dir_information) structure for each file. |
+| **FileDirectoryInformation** | Return a [**FILE_DIRECTORY_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_directory_information) structure for each file. |
+| **FileFullDirectoryInformation** | Return a [**FILE_FULL_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_full_dir_information)" structure for each file. |
+| **FileIdBothDirectoryInformation** | Return a [**FILE_ID_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_id_both_dir_information) structure for each file. |
+| **FileIdFullDirectoryInformation** | Return a [**FILE_ID_FULL_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_id_full_dir_information) structure for each file. |
+| **FileNamesInformation** | Return a [**FILE_NAMES_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_names_information) structure for each file. |
+| **FileObjectIdInformation** | Return a [**FILE_OBJECTID_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_objectid_information) structure for each file. |
+| **FileQuotaInformation** | Obsolete. Use [IRP_MJ_QUERY_QUOTA](irp-mj-query-quota.md) instead. |
+| **FileReparsePointInformation** | Return a single [**FILE_REPARSE_POINT_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_reparse_point_information) structure for the directory. |
 
- 
-
-<a href="" id="irpsp--parameters-querydirectory-filename"></a>*IrpSp-&gt;Parameters.QueryDirectory.FileName*  
+*IrpSp->Parameters.QueryDirectory.FileName*  
 Optional name of a file within the specified directory.
 
-<a href="" id="irpsp--parameters-querydirectory-length"></a>*IrpSp-&gt;Parameters.QueryDirectory.Length*  
-Length in bytes of the buffer pointed to by *Irp-&gt;UserBuffer*.
+*IrpSp->Parameters.QueryDirectory.Length*  
+Length in bytes of the buffer pointed to by *Irp->UserBuffer*.
 
 ## See also
 
+[**FILE_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_both_dir_information)
 
-[**FILE\_BOTH\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_both_dir_information)
+[**FILE_DIRECTORY_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_directory_information)
 
-[**FILE\_DIRECTORY\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_directory_information)
+[**FILE_FULL_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_full_dir_information)
 
-[**FILE\_FULL\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_full_dir_information)
+[**FILE_ID_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_id_both_dir_information)
 
-[**FILE\_ID\_BOTH\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_both_dir_information)
+[**FILE_ID_FULL_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_id_full_dir_information)
 
-[**FILE\_ID\_FULL\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_full_dir_information)
+[**FILE_NAMES_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_names_information)
 
-[**FILE\_NAMES\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_names_information)
+[**FILE_OBJECTID_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_objectid_information)
 
-[**FILE\_OBJECTID\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_objectid_information)
+[**FILE_REPARSE_POINT_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_reparse_point_information)
 
-[**FILE\_REPARSE\_POINT\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_reparse_point_information)
+[**FsRtlNotifyFullChangeDirectory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory)
 
-[**FsRtlNotifyFullChangeDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory)
+[**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location)
+[**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
-[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block)
+[**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation)
+[**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
-[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp)
+[**IRP_MJ_QUERY_QUOTA**](irp-mj-query-quota.md)
 
-[**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md)
-
-[**ZwQueryDirectoryFile**](https://msdn.microsoft.com/library/windows/hardware/ff567047)
-
- 
-
- 
-
-
-
-
-
-
+[**ZwQueryDirectoryFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwquerydirectoryfile)

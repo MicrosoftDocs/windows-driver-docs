@@ -1,7 +1,6 @@
 ---
 title: Creating International INF Files
 description: Creating International INF Files
-ms.assetid: 7c07c4de-4a0f-4555-b153-15307c76a2a3
 keywords:
 - INF files WDK device installations , international
 - international INF files WDK

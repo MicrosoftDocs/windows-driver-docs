@@ -1,7 +1,6 @@
 ---
-title: WIA\_IPS\_XRES
-description: The WIA\_IPS\_XRES property contains the current horizontal resolution, in pixels per inch, for a device.
-ms.assetid: cde64e80-b4b0-4360-a14e-b6918b97aabc
+title: WIA_IPS_XRES
+description: The WIA_IPS_XRES property contains the current horizontal resolution, in pixels per inch, for a device.
 keywords: ["WIA_IPS_XRES Imaging Devices"]
 topic_type:
 - apiref
@@ -11,68 +10,40 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/05/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_IPS\_XRES
+# WIA_IPS_XRES
 
+The WIA_IPS_XRES property contains the current horizontal resolution, in pixels per inch, for a device.
 
-The WIA\_IPS\_XRES property contains the current horizontal resolution, in pixels per inch, for a device.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ips_xres_si"></span><span id="DDK_WIA_IPS_XRES_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
+Valid Values: WIA_PROP_RANGE or WIA_PROP_LIST
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
-An application sets the WIA\_IPS\_XRES property to set the horizontal resolution. The WIA minidriver creates and maintains this property.
+An application sets the WIA_IPS_XRES property to set the horizontal resolution. The WIA minidriver creates and maintains this property.
 
-If a device can be set to only a single value, create a WIA\_PROP\_LIST type and place the valid value in it. This situation also applies when one resolution setting depends on another resolution. (For example, the vertical resolution can depend on the horizontal resolution.)
+If a device can be set to only a single value, create a WIA_PROP_LIST type and place the valid value in it. This situation also applies when one resolution setting depends on another resolution. (For example, the vertical resolution can depend on the horizontal resolution.)
 
-WIA\_IPS\_XRES is required for all image acquisition-enabled items and stored image items; it is not available for storage items.
+WIA_IPS_XRES is required for all image acquisition-enabled items and stored image items; it is not available for storage items.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_IPS_XEXTENT**](wia-ips-xextent.md)
 
-[**WIA\_IPS\_XEXTENT**](wia-ips-xextent.md)
+[**WIA_IPS_XPOS**](wia-ips-xpos.md)
 
-[**WIA\_IPS\_XPOS**](wia-ips-xpos.md)
+[**WIA_IPS_YEXTENT**](wia-ips-yextent.md)
 
-[**WIA\_IPS\_YEXTENT**](wia-ips-yextent.md)
+[**WIA_IPS_YPOS**](wia-ips-ypos.md)
 
-[**WIA\_IPS\_YPOS**](wia-ips-ypos.md)
-
-[**WIA\_IPS\_YRES**](wia-ips-yres.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_YRES**](wia-ips-yres.md)

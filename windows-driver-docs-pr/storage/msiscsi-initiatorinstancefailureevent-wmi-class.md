@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
 description: MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
-ms.assetid: 58ddfaf7-d2ec-4b06-8eef-f7b07285963d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -32,13 +31,7 @@ class MSiSCSI_InitiatorInstanceFailureEvent : WMIEvent {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorInstanceFailureEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_msiscsi_initiatorinstancefailureevent) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorInstanceFailureEvent**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_initiatorinstancefailureevent) data structure.
 
  
-
- 
-
-
-
-
 

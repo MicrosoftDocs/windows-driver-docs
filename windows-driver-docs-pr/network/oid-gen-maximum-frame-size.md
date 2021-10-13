@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MAXIMUM_FRAME_SIZE
 description: As a query, the OID_GEN_MAXIMUM_FRAME_SIZE OID specifies the maximum network packet size, in bytes, that the NIC supports.
-ms.assetid: 4c81f3a6-6f66-466d-8d22-67841a5a8320
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MAXIMUM_FRAME_SIZE Network Drivers Starting with Windows Vista
@@ -30,8 +29,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 The miniport driver supplies the maximum frame size during initialization and during a restart. NDIS handles this OID query for NDIS 6.0 and later miniport drivers.
 
@@ -39,8 +37,7 @@ In response to this query from requesting transports, the miniport driver should
 
 If the miniport driver supports 802.1p packet priority and 802.1Q virtual LAN (VLAN) tags, based on prior actions, if the miniport driver expects that frames must traverse old networks before priority values are removed, that miniport driver might indicate a smaller value in response to this query.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

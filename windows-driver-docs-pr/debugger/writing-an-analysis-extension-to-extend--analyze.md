@@ -1,7 +1,6 @@
 ---
 title: Writing an Analysis Extension Plugin to Extend analyze
 description: You can extend the capabilities of the analyze debugger command by writing an analysis extension plugin.
-ms.assetid: 7648F789-85D5-4247-90DD-2EAA43543483
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ When you write an analysis extension plugin, you also write a metadata file that
 
 To write an analysis extension plugin and make it available to [**!analyze**](-analyze.md), follow these steps.
 
--   Create a DLL that exports an [**\_EFN\_Analyze**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nc-extsfns-ext_analysis_plugin) function.
+-   Create a DLL that exports an [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function.
 -   Create a metadata file that has the same name as your DLL and an extension of .alz. For example, if your DLL is named MyAnalyzer.dll, your metadata file must be named MyAnalyzer.alz. For information about how to create a metadata file, see [Metadata Files for Analysis Extensions](metadata-files-for-analysis-extensions.md). Place the metadata file in the same directory as your DLL.
 -   In the debugger, use the [**.extpath**](-extpath--set-extension-path-.md) command to add your directory to the extension file path. For example, if your DLL and metadata file are in the folder named c:\\MyAnalyzer, enter the command **.extpath+ c:\\MyAnalyzer**.
 
@@ -28,7 +27,7 @@ BugCheckCode   0xA
 BugCheckCode   0xE2
 ```
 
-The entry `BugCheckCode  0x0A` specifies that this plugin wants to participate in the analysis of Bug Check 0xA, so the analysis engine loads MyAnalyzer.dll (which must be in the same directory as MyAnalyzer.alz) and calls its [**\_EFN\_Analyze**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nc-extsfns-ext_analysis_plugin) function.
+The entry `BugCheckCode  0x0A` specifies that this plugin wants to participate in the analysis of Bug Check 0xA, so the analysis engine loads MyAnalyzer.dll (which must be in the same directory as MyAnalyzer.alz) and calls its [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function.
 
 **Note**  The last line of the metadata file must end with a newline character.
 
@@ -39,7 +38,7 @@ The entry `BugCheckCode  0x0A` specifies that this plugin wants to participate i
 
 Here is a skeleton example that you can use as a starting point.
 
-1.  Build a DLL named MyAnalyzer.dll that exports the [**\_EFN\_Analyze**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nc-extsfns-ext_analysis_plugin) function shown here.
+1.  Build a DLL named MyAnalyzer.dll that exports the [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function shown here.
 
     ```cpp
     #include <windows.h>
@@ -111,7 +110,7 @@ Here is a skeleton example that you can use as a starting point.
 
     **.crash**
 
-6.  The [**.crash**](-crash--force-system-crash-.md) command generates Bug Check 0xE2 MANUALLY\_INITIATED\_CRASH on the target computer, which causes a break in to the debugger on the host computer. The bug check analysis engine (running in the debugger on the host computer) reads MyAnalyzer.alz and sees that MyAnalyzer.dll is able to participate in analyzing bug check 0xE2. So the analysis engine loads MyAnalyzer.dll and calls its [**\_EFN\_Analyze**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nc-extsfns-ext_analysis_plugin) function.
+6.  The [**.crash**](-crash--force-system-crash-.md) command generates Bug Check 0xE2 MANUALLY\_INITIATED\_CRASH on the target computer, which causes a break in to the debugger on the host computer. The bug check analysis engine (running in the debugger on the host computer) reads MyAnalyzer.alz and sees that MyAnalyzer.dll is able to participate in analyzing bug check 0xE2. So the analysis engine loads MyAnalyzer.dll and calls its [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function.
 
     Verify that you see output similar to the following in the debugger.
 
@@ -131,12 +130,12 @@ Here is a skeleton example that you can use as a starting point.
     The data type for the DEBUG_FLR_BUGCHECK_CODE tag is 0x1.
     ```
 
-The preceding debugger output shows that the analysis engine called the [**\_EFN\_Analyze**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nc-extsfns-ext_analysis_plugin) function four times: once for each phase of the analysis. The analysis engine passes the **\_EFN\_Analyze** function two interface pointers. *Client* is an [**IDebugClient4**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugclient4) interface, and *pAnalysis* is an [**IDebugFailureAnalysis2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) interface. The code in the preceding skeleton example shows how to obtain two more interface pointers. `Client->QueryInterface` gets an [**IDebugControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugcontrol) interface, and `pAnalysis->GetDebugFATagControl` gets an **IDebugFAEntryTags** interface.
+The preceding debugger output shows that the analysis engine called the [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function four times: once for each phase of the analysis. The analysis engine passes the **\_EFN\_Analyze** function two interface pointers. *Client* is an [**IDebugClient4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient4) interface, and *pAnalysis* is an [**IDebugFailureAnalysis2**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) interface. The code in the preceding skeleton example shows how to obtain two more interface pointers. `Client->QueryInterface` gets an [**IDebugControl**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol) interface, and `pAnalysis->GetDebugFATagControl` gets an **IDebugFAEntryTags** interface.
 
 ## <span id="failure-analysis-entries-tags-and-data-types"></span><span id="FAILURE_ANALYSIS_ENTRIES_TAGS_AND_DATA_TYPES"></span>Failure Analysis Entries, Tags, and Data Types
 
 
-The analysis engine creates a [**DebugFailureAnalysis**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) object to organize the data related to a particular code failure. A **DebugFailureAnalysis** object has a collection of [failure analysis entries](failure-analysis-entries.md) (FA entries), each of which is represented by an **FA\_ENTRY** structure. An analysis extension plugin uses the **IDebugFailureAnalysis2** interface to get access to this collection of FA entries. Each FA entry has a tag that identifies the kind of information that the entry contains. For example, an FA entry might have the tag **DEBUG\_FLR\_BUGCHECK\_CODE**, which tells us that the entry contains a bug check code. Tags are values in the **DEBUG\_FLR\_PARAM\_TYPE** enumeration (defined in extsfns.h), which is also called the **FA\_TAG** enumeration.
+The analysis engine creates a [**DebugFailureAnalysis**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) object to organize the data related to a particular code failure. A **DebugFailureAnalysis** object has a collection of [failure analysis entries](failure-analysis-entries.md) (FA entries), each of which is represented by an **FA\_ENTRY** structure. An analysis extension plugin uses the **IDebugFailureAnalysis2** interface to get access to this collection of FA entries. Each FA entry has a tag that identifies the kind of information that the entry contains. For example, an FA entry might have the tag **DEBUG\_FLR\_BUGCHECK\_CODE**, which tells us that the entry contains a bug check code. Tags are values in the **DEBUG\_FLR\_PARAM\_TYPE** enumeration (defined in extsfns.h), which is also called the **FA\_TAG** enumeration.
 
 ```cpp
 typedef enum _DEBUG_FLR_PARAM_TYPE {
@@ -161,19 +160,19 @@ typedef struct _FA_ENTRY
 } FA_ENTRY, *PFA_ENTRY;
 ```
 
-Each tag has a set of properties: for example, name, description, and data type. A [**DebugFailureAnalysis**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) object is associated with a [DebugFailureAnalysisTags](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfaentrytags) object, which contains a collection of tag properties. The following diagram illustrates this association.
+Each tag has a set of properties: for example, name, description, and data type. A [**DebugFailureAnalysis**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) object is associated with a [DebugFailureAnalysisTags](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags) object, which contains a collection of tag properties. The following diagram illustrates this association.
 
-![diagram that shows the analysis engine, a debugfailureanalysis object, and a debugfailureanalysistags object](images/debugfa01.png)
+![diagram that shows the analysis engine, a debugfailureanalysis object, and a debugfailureanalysistags object.](images/debugfa01.png)
 
-A [**DebugFailureAnalysis**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) object has a collection of [FA entries](failure-analysis-entries.md) that belong to a particular analysis session. The associated [DebugFailureAnalysisTags](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfaentrytags) object has a collection of tag properties that includes only the tags used by that same analysis session. As the preceding diagram shows, the analysis engine has a global tag table that holds limited information about a large set of tags that are generally available for use by analysis sessions.
+A [**DebugFailureAnalysis**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) object has a collection of [FA entries](failure-analysis-entries.md) that belong to a particular analysis session. The associated [DebugFailureAnalysisTags](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags) object has a collection of tag properties that includes only the tags used by that same analysis session. As the preceding diagram shows, the analysis engine has a global tag table that holds limited information about a large set of tags that are generally available for use by analysis sessions.
 
-Typically most of the tags used by an analysis session are standard tags; that is, the tags are values in the [**FA\_TAG**](https://docs.microsoft.com/previous-versions/jj991810(v=vs.85)) enumeration. However, an analysis extension plug-in can create custom tags. An analysis extension plug-in can add an [FA entry](failure-analysis-entries.md) to a [**DebugFailureAnalysis**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) object and specify a custom tag for the entry. In that case, properties for the custom tag are added to the collection of tag properties in the associated [DebugFailureAnalysisTags](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfaentrytags) object.
+Typically most of the tags used by an analysis session are standard tags; that is, the tags are values in the [**FA\_TAG**](/previous-versions/jj991810(v=vs.85)) enumeration. However, an analysis extension plug-in can create custom tags. An analysis extension plug-in can add an [FA entry](failure-analysis-entries.md) to a [**DebugFailureAnalysis**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) object and specify a custom tag for the entry. In that case, properties for the custom tag are added to the collection of tag properties in the associated [DebugFailureAnalysisTags](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags) object.
 
-You can access a [DebugFailureAnalysisTags](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfaentrytags) through an IDebugFAEntry tags interface. To get a pointer to an IDebugFAEntry interface, call the [**GetDebugFATagControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nf-extsfns-idebugfailureanalysis2-getdebugfatagcontrol) method of the [**IDebugFailureAnalysis2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) interface.
+You can access a [DebugFailureAnalysisTags](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags) through an IDebugFAEntry tags interface. To get a pointer to an IDebugFAEntry interface, call the [**GetDebugFATagControl**](/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getdebugfatagcontrol) method of the [**IDebugFailureAnalysis2**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) interface.
 
 Each tag has a data type property that you can inspect to determine the data type of the data in a failure analysis entry. A data type is represented by a value in the **FA\_ENTRY\_TYPE** enumeration.
 
-The following line of code gets the data type of the **DEBUG\_FLR\_BUILD\_VERSION\_STRING** tag. In this case, the data type is **DEBUG\_FA\_ENTRY\_ANSI\_STRING**. In the code, `pAnalysis` is a pointer to an [**IDebugFailureAnalysis2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) interface.
+The following line of code gets the data type of the **DEBUG\_FLR\_BUILD\_VERSION\_STRING** tag. In this case, the data type is **DEBUG\_FA\_ENTRY\_ANSI\_STRING**. In the code, `pAnalysis` is a pointer to an [**IDebugFailureAnalysis2**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) interface.
 
 ```cpp
 IDebugFAEntryTags* pTags = pAnalysis->GetDebugFATagControl(&pTags);
@@ -186,7 +185,7 @@ if(NULL != pTags)
 
 If a failure analysis entry has no data block, the data type of the associated tag is **DEBUG\_FA\_ENTRY\_NO\_TYPE**.
 
-Recall that a [**DebugFailureAnalysis**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) object has a collection of [FA entries](failure-analysis-entries.md). To inspect all the FA entries in the collection, use the **NextEntry** method. The following example shows how to iterate through the entire collection of FA entries. Assume that *pAnalysis* is a pointer to an **IDebugFailureAnalysis2** interface. Notice that we get the first entry by passing **NULL** to **NextEntry**.
+Recall that a [**DebugFailureAnalysis**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) object has a collection of [FA entries](failure-analysis-entries.md). To inspect all the FA entries in the collection, use the **NextEntry** method. The following example shows how to iterate through the entire collection of FA entries. Assume that *pAnalysis* is a pointer to an **IDebugFailureAnalysis2** interface. Notice that we get the first entry by passing **NULL** to **NextEntry**.
 
 ```cpp
 PFA_ENTRY entry = pAnalysis->NextEntry(NULL);
@@ -199,7 +198,7 @@ while(NULL != entry)
 }
 ```
 
-A tag can have a name and a description. In the following code, *pAnalysis* is a pointer to an [**IDebugFailureAnalysis**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2) interface, *pControl* is a pointer to an [**IDebugControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugcontrol) interface, and `pTags` is a pointer to an [IDebugFAEntryTags](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfaentrytags) interface. The code shows how to use the **GetProperties** method to get the name and description of the tag associated with an [FA entry](failure-analysis-entries.md).
+A tag can have a name and a description. In the following code, *pAnalysis* is a pointer to an [**IDebugFailureAnalysis**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) interface, *pControl* is a pointer to an [**IDebugControl**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol) interface, and `pTags` is a pointer to an [IDebugFAEntryTags](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags) interface. The code shows how to use the **GetProperties** method to get the name and description of the tag associated with an [FA entry](failure-analysis-entries.md).
 
 ```cpp
 #define MAX_NAME_LENGTH 64
@@ -221,20 +220,13 @@ pControl->Output(DEBUG_OUTPUT_NORMAL, "The description is %s\n", desc);
 
 [Writing Custom Analysis Debugger Extensions](writing-custom-analysis-debugger-extensions.md)
 
-[**\_EFN\_Analyze**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nc-extsfns-ext_analysis_plugin)
+[**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin)
 
 [Metadata Files for Analysis Extension Plug-ins](metadata-files-for-analysis-extensions.md)
 
-[**IDebugFailureAnalysis2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfailureanalysis2)
+[**IDebugFailureAnalysis2**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2)
 
-[IDebugFAEntryTags](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nn-extsfns-idebugfaentrytags)
-
- 
+[IDebugFAEntryTags](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags)
 
  
-
-
-
-
-
 

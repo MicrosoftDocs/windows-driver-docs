@@ -1,7 +1,6 @@
 ---
 title: .typeopt (Set Type Options)
 description: The .typeopt command sets or displays the type options.
-ms.assetid: 17842897-26e3-4b61-aa65-e5cfe8576324
 keywords: [".typeopt (Set Type Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -90,8 +89,7 @@ Causes the debugger to choose the matching symbol with the largest size when the
 
  
 
-Remarks
--------
+## Remarks
 
 Without any arguments, **.typeopt** displays the current symbol options.
 

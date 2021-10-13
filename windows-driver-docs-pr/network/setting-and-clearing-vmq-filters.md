@@ -1,7 +1,6 @@
 ---
 title: Setting and Clearing VMQ Filters
 description: Setting and Clearing VMQ Filters
-ms.assetid: bfee8a3c-d2be-4718-beb4-067b66756a41
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

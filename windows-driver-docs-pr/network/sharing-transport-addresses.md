@@ -1,7 +1,6 @@
 ---
 title: Sharing Transport Addresses
 description: Sharing Transport Addresses
-ms.assetid: 1f5bc91a-75eb-466c-ad7d-cfbe0e83dc17
 keywords:
 - sharing transport addresses
 - binding sockets WDK Winsock Kernel
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 # Sharing Transport Addresses
 
 
-In most situations, a Winsock Kernel (WSK) application cannot bind a socket to a local transport address that is already in use by another socket. WSK applications can use the [SO\_EXCLUSIVEADDRUSE](https://docs.microsoft.com/windows-hardware/drivers/network/so-exclusiveaddruse) and [SO\_REUSEADDR](https://docs.microsoft.com/windows-hardware/drivers/network/so-reuseaddr) socket options to control the sharing of the local transport address to which a socket is bound. Neither of these socket options are set for a socket by default. For more information about setting socket options, see [Performing Control Operations on a Socket](performing-control-operations-on-a-socket.md).
+In most situations, a Winsock Kernel (WSK) application cannot bind a socket to a local transport address that is already in use by another socket. WSK applications can use the [SO\_EXCLUSIVEADDRUSE](./so-exclusiveaddruse.md) and [SO\_REUSEADDR](./so-reuseaddr.md) socket options to control the sharing of the local transport address to which a socket is bound. Neither of these socket options are set for a socket by default. For more information about setting socket options, see [Performing Control Operations on a Socket](performing-control-operations-on-a-socket.md).
 
 The following table shows the result of binding a second socket to a local transport address that is already in use by another socket. The *Wildcard* and *Specific* cases specify whether the socket is bound to a wildcard local transport address or to a specific local transport address.
 
@@ -254,17 +253,11 @@ An access check is performed to determine if the bind operation on the second so
 
 In the cases defined in the previous table where an access check is performed, the second socket's security context is checked against the first socket's security descriptor.
 
--   A socket's security context is determined by the *OwningProcess* and *OwningThread* parameters that are passed to either the [WskSocket](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_socket) function or the [WskSocketConnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_socket_connect) function when the socket is created. If no specific process or thread is specified when the socket is created, the security context of the process that created the socket is used.
+-   A socket's security context is determined by the *OwningProcess* and *OwningThread* parameters that are passed to either the [WskSocket](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [WskSocketConnect](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function when the socket is created. If no specific process or thread is specified when the socket is created, the security context of the process that created the socket is used.
 
--   A socket's security descriptor is specified by the *SecurityDescriptor* parameter that is passed to either the WskSocket function or the WskSocketConnect function when the socket is created. If no specific security descriptor is specified, the WSK subsystem uses a default security descriptor that does not permit sharing of transport addresses. A security descriptor can also be applied to a socket after the socket has been created by using the [SO\_WSK\_SECURITY](https://docs.microsoft.com/windows-hardware/drivers/network/so-wsk-security) socket option.
+-   A socket's security descriptor is specified by the *SecurityDescriptor* parameter that is passed to either the WskSocket function or the WskSocketConnect function when the socket is created. If no specific security descriptor is specified, the WSK subsystem uses a default security descriptor that does not permit sharing of transport addresses. A security descriptor can also be applied to a socket after the socket has been created by using the [SO\_WSK\_SECURITY](./so-wsk-security.md) socket option.
 
 If the two sockets are bound to two different specific local transport addresses, there is no sharing of either transport address. In this situation the second bind operation will always complete successfully.
 
  
-
- 
-
-
-
-
 

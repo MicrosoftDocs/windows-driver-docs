@@ -1,8 +1,7 @@
 ---
 title: OID_GEN_RCV_DISCARDS
 description: As a query, NDIS and overlying drivers use the OID_GEN_RCV_DISCARDS OID to determine the number of receive discards on a miniport adapter.
-ms.assetid: 638d2961-d327-490d-925b-3f6c30a13a89
-ms.date: 08/08/2017
+ms.date: 11/01/2019
 keywords: 
  -OID_GEN_RCV_DISCARDS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -21,15 +20,13 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for miniport drivers. See the [OID\_GEN\_STATISTICS](oid-gen-statistics.md) OID for more information about statistics.
 
-The count is the dropped-receive-buffer error count as described in RFC 2863.
+The count is identical to the *ifInDiscards* counter described in RFC 2863.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

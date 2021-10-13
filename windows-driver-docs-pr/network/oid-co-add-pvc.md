@@ -1,7 +1,6 @@
 ---
 title: OID_CO_ADD_PVC
 description: This topic describes the OID_CO_ADD_PVC object identifier (OID).
-ms.assetid: 182d5bdb-9cfe-4e9c-a2cf-4d5440bfdb76
 keywords:
 - OID_CO_ADD_PVC
 ms.date: 11/03/2017
@@ -22,17 +21,14 @@ typedef struct _CO_PVC {
 The members of this structure contain the following information:
 
 **NdisAfHandle**  
-Specifies the NDIS-supplied handle returned by [NdisClOpenAddressFamilyEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclopenaddressfamilyex).
+Specifies the NDIS-supplied handle returned by [NdisClOpenAddressFamilyEx](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex).
 
 **PvcParameters**  
-A formatted [CO_SPECIFIC_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545396(v=vs.85)) structure. This structure contains protocol-specific parameters that describe the PVC.
+A formatted [CO_SPECIFIC_PARAMETERS](/previous-versions/windows/hardware/network/ff545396(v=vs.85)) structure. This structure contains protocol-specific parameters that describe the PVC.
 
 A PVC is configured manually by an administrator. A client that monitors such activity notifies a call manager of a newly configured PVC by sending this OID to the call manager. Other clients can then use the newly-configured PVC.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

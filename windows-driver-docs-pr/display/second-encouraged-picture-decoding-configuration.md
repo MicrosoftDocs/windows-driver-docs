@@ -1,7 +1,6 @@
 ---
 title: Second Encouraged Picture Decoding Configuration
 description: Second Encouraged Picture Decoding Configuration
-ms.assetid: 9e259768-4588-4a5b-b01b-fca0021cd966
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA

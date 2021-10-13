@@ -1,7 +1,6 @@
 ---
 title: Using AVStream with the Kernel Streaming Proxy Module
 description: Using AVStream with the Kernel Streaming Proxy Module
-ms.assetid: c8ae1385-337e-46ad-841e-fbdf5d685210
 keywords:
 - Kernel Streaming Proxy WDK AVStream
 - KS proxy WDK AVStream
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-Kernel-mode filters often are connected in user mode through the [Kernel Streaming Proxy](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index). This proxy makes a kernel-mode filter appear to user mode as a DirectShow filter.
+Kernel-mode filters often are connected in user mode through the [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index). This proxy makes a kernel-mode filter appear to user mode as a DirectShow filter.
 
 When this mode of connection is used, DirectShow connects the filters by intersecting their *media types*. These media types are the DirectShow counterpart to data formats in kernel mode.
 
@@ -27,12 +26,7 @@ When DirectShow enumerates a media type on a kernel-mode pin, the corresponding 
 
 As in kernel mode, the proxy either asks a data handler to determine whether the media type is acceptable, or it determines whether the media type is a partial match for a data range on the pin. A partial match indicates that, in the context of kernel-mode semantics, the major type, subformat, specifier, and required attributes match. If the media type is a partial match, the connection proceeds.
 
-Before the connection is complete, AVStream calls the minidriver's [*AVStrMiniPinSetDataFormat*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspinsetdataformat) dispatch to inform the minidriver of the data format being set. This format corresponds to the user-mode media type that was suggested to the proxied pin. AVStream also provides the data range that was determined to be a partial match for the format.
+Before the connection is complete, AVStream calls the minidriver's [*AVStrMiniPinSetDataFormat*](/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdataformat) dispatch to inform the minidriver of the data format being set. This format corresponds to the user-mode media type that was suggested to the proxied pin. AVStream also provides the data range that was determined to be a partial match for the format.
 
  
-
- 
-
-
-
 

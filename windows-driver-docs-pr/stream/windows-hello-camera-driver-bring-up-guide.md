@@ -1,7 +1,6 @@
 ---
 title: Windows Hello camera driver bring up guide
 description: This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs).
-ms.assetid: 5CE619F4-E136-4F8F-8F90-F7F96DE4642E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,25 +13,25 @@ This topic discusses how to enable face authentication for an infrared (IR) came
 
 The following diagram shows how face authentication works with the new driver stack through FrameServer:
 
-![windows hello and frameserver](images/windows-hello-device-model.png)
+![windows hello and frameserver.](images/windows-hello-device-model.png)
 
 ## Face authentication DDIs
 
 There are two new face authentication DDI constructs available in Windows 10, version 1607 to support Windows Hello:
 
--   **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**
+- **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**
 
-    This property ID is used to turn on and configure face authentication in the driver using the following flags:
+  This property ID is used to turn on and configure face authentication in the driver using the following flags:
 
-    -   **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_DISABLED**
+  - **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_DISABLED**
 
-    -   **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_ALTERNATIVE\_FRAME\_ILLUMINATION**
+  - **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_ALTERNATIVE\_FRAME\_ILLUMINATION**
 
-    -   **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_BACKGROUND\_SUBTRACTION**
+  - **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_BACKGROUND\_SUBTRACTION**
 
-    For more information about this control and how to use the bit flags to set the face authentication mode, see the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-faceauth-mode) topic.
+  For more information about this control and how to use the bit flags to set the face authentication mode, see the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](./ksproperty-cameracontrol-extended-faceauth-mode.md) topic.
 
--   **MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION**
+- **MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION**
 
     This metadata attribute for IR cameras specifies that frames are using active IR illumination. For more information, see the mandatory metadata attributes table in the [Capture Stats Metadata Attributes](mf-capture-metadata.md) topic.
 
@@ -42,15 +41,15 @@ To enable face authentication for an infrared camera on your device, you must pr
 
 ### Configure the DeviceMFT component
 
-As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) sample located in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
+As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](/samples/microsoft/windows-driver-samples/driver-device-transform-sample/) sample.
 
-To modify the driver sample, download and extract [Windows-driver-samples-master.zip](https://github.com/Microsoft/Windows-driver-samples/archive/master.zip), or alternatively, use git to clone the Windows driver sample repository to your development computer. Navigate to the **sampledevicemft** sample located in the **avstream** folder and make the following changes to the sample source code:
+To modify the driver sample, make the following changes to the sample source code:
 
-1.  Add Source type information in the DeviceMFT component
+1. Add Source type information in the DeviceMFT component
 
-2.  Tag the illumination flag in the DeviceMFT component
+1. Tag the illumination flag in the DeviceMFT component
 
-3.  Convert the IKSControl in the DeviceMFT component to communicate with the UVC extension unit you will build in the next section:
+1. Convert the IKSControl in the DeviceMFT component to communicate with the UVC extension unit you will build in the next section:
 
 ### Build a USB Video Class (UVC) Extension Unit
 
@@ -74,7 +73,6 @@ Refer to the [Extension Unit Plug-In Architecture](extension-unit-plug-in-archit
 
 ## INF file entries
 
-
 To register a UVC device under **KSCATEGORY\_SENSOR\_CAMERA**, the sensor camera promotion flag should be specified:
 
 ```INF
@@ -93,61 +91,60 @@ Both the **SkipCameraEnumeration** and **SensorCameraMode** entries should be pl
 
 ## HLK tests for KSCATEGORY\_SENSOR\_CAMERA to assist driver testing
 
-
 Hardware Logo Kit (HLK) testing is required for both IR and RGB camera modules. This testing verifies the basic functionality of RGB and IR cameras used for Windows Hello face authentication. The RGB camera requirements are already specified in the HLK test suite.
 
 These are tests that IR camera modules will need to pass to be enabled:
 
-1.  Enumerate all KS Sensor Category Camera:
+1. Enumerate all KS Sensor Category Camera:
 
-    -   Devices that support IR streams have to be under the SENSOR\_CAMERA category.
+    - Devices that support IR streams have to be under the SENSOR\_CAMERA category.
 
-    -   Devices that support RGB streams go under the VIDEO\_CAMERA category.
+    - Devices that support RGB streams go under the VIDEO\_CAMERA category.
 
-    -   Only for a single camera device that supports IR and RGB stream, should register the device under both KSCAMERA categories: SENSOR\_CAMERA and VIDEO\_CAMERA.
+    - Only for a single camera device that supports IR and RGB stream, should register the device under both KSCAMERA categories: SENSOR\_CAMERA and VIDEO\_CAMERA.
 
-2.  Find streams which have the **MF\_DEVICESTREAM\_ATTRIBUTE\_FACEAUTH\_CAPABILITY** attribute defined:
+1. Find streams which have the **MF\_DEVICESTREAM\_ATTRIBUTE\_FACEAUTH\_CAPABILITY** attribute defined:
 
-    -   If no stream has the **MF\_DEVICESTREAM\_ATTRIBUTE\_FACEAUTH\_CAPABILITY** attribute defined, then skip the test.
+    - If no stream has the **MF\_DEVICESTREAM\_ATTRIBUTE\_FACEAUTH\_CAPABILITY** attribute defined, then skip the test.
 
-    -   If multiple streams have the **MF\_DEVICESTREAM\_ATTRIBUTE\_FACEAUTH\_CAPABILITY** attribute defined, fail the test, as only one stream should be Windows Hello capable.
+    - If multiple streams have the **MF\_DEVICESTREAM\_ATTRIBUTE\_FACEAUTH\_CAPABILITY** attribute defined, fail the test, as only one stream should be Windows Hello capable.
 
-    -   If **MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES** is not set to IR for this stream, fail the test, as there can not be RGB media types on this stream.
+    - If **MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES** is not set to IR for this stream, fail the test, as there can not be RGB media types on this stream.
 
-    -   Select this stream and validate that the media type is Windows Hello-capable (MJPG/L8/NV12) and that the resolution is greater than or equal to 320 x 320 pixels:
+    - Select this stream and validate that the media type is Windows Hello-capable (MJPG/L8/NV12) and that the resolution is greater than or equal to 320 x 320 pixels:
 
-        1.  If Face Authentication Profile is supported, then validate this stream for the profile media type.
+        1. If Face Authentication Profile is supported, then validate this stream for the profile media type.
 
-        2.  If Face Authentication Profile is not supported, validate the default media type of this stream.
+        1. If Face Authentication Profile is not supported, validate the default media type of this stream.
 
-    -   Check support for one of the properties in the face authentication DDI: Illuminated/un-illuminated or ambient subtraction.
+    - Check support for one of the properties in the face authentication DDI: Illuminated/un-illuminated or ambient subtraction.
 
-    -   Set the KS property to the one which is supported.
+    - Set the KS property to the one which is supported.
 
-    -   Start streaming
+    - Start streaming
 
-3.  Check run-time properties:
+1. Check run-time properties:
 
-    -   Verify timestamp precision (preview test for Face Authentication with Meta Data).
+    - Verify timestamp precision (preview test for Face Authentication with Meta Data).
 
-    -   Verify that startup is less than 500 milliseconds (preview test for Face Authentication with Meta Data).
+    - Verify that startup is less than 500 milliseconds (preview test for Face Authentication with Meta Data).
+  
+    - Verify streaming at a minimum frame rate with the following parameters: 15 FPS illuminated and 15 FPS ambient or 15 FPS ambient subtracted, resolution greater than or equal to 320 x 320 pixels, media type L8/NV12, positive stride on the sample:
 
-    -   Verify streaming at a minimum frame rate with the following parameters: 15 FPS illuminated and 15 FPS ambient or 15 FPS ambient subtracted, resolution greater than or equal to 320 x 320 pixels, media type L8/NV12, positive stride on the sample:
+        1. If illuminated property is enabled, check for metadata on frames (illuminated/non-illuminated pair frames at 15 FPS).
 
-        1.  If illuminated property is enabled, check for metadata on frames (illuminated/non-illuminated pair frames at 15 FPS).
+        1. If ambient subtraction property is enabled, check for no metadata on frames (ambient frames at 15 FPS).
 
-        2.  If ambient subtraction property is enabled, check for no metadata on frames (ambient frames at 15 FPS).
+1. Stop streaming
 
-4.  Stop streaming
+1. Unset the KS Control
 
-5.  Unset the KS Control
-
-6.  Concurrency for RGB + IR: tested if defined in the camera profile
+1. Concurrency for RGB + IR: tested if defined in the camera profile
 
 If the HLK tests listed above are not passed, Microsoft will not issue a signed driver to the OEM, and Windows Hello will not operate.
 
 ## Related topics
 
-[Capture photos and video with MediaCapture](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
+[Capture photos and video with MediaCapture](/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
 
-[Windows.Media.Capture namespace](https://docs.microsoft.com/uwp/api/Windows.Media.Capture)  
+[Windows.Media.Capture namespace](/uwp/api/Windows.Media.Capture)

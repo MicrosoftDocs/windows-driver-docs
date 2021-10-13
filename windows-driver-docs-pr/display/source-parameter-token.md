@@ -1,7 +1,6 @@
 ---
 title: Source Parameter Token
 description: Source Parameter Token
-ms.assetid: 280b9fb2-9b5c-4830-9ba5-cfb6201960e0
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ A source parameter token describes properties of a source register and is compos
 Bits 0 through 10 indicate the register number (offset in register file).
 
 <span id="_12_11_"></span>**\[12:11\]**
-Bits 11 and 12 are the fourth and fifth bits \[3,4\] for indicating the [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+Bits 11 and 12 are the fourth and fifth bits \[3,4\] for indicating the [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 <span id="_13_"></span>**\[13\]**
 For a pixel shader (PS) versions earlier than 3\_0, bit 13 is reserved and set to 0x0.
@@ -184,14 +183,14 @@ Bits 24 through 27 indicate the source modifier. This 4-bit value indicates the 
  
 
 <span id="_30_28_"></span>**\[30:28\]**
-Bits 28 through 30 are the first three bits \[0,1,2\] for indicating the [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+Bits 28 through 30 are the first three bits \[0,1,2\] for indicating the [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 <span id="_31_"></span>**\[31\]**
 Bit 31 is 0x1.
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type. For information about register types, see [Shader Register Types](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type. For information about register types, see [Shader Register Types](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -199,10 +198,4 @@ Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type.
 Available in Windows Vista and later versions of the Windows operating systems.
 
  
-
- 
-
-
-
-
 

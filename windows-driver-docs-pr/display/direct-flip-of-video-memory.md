@@ -1,7 +1,6 @@
 ---
 title: Direct flip of video memory
 description: The direct flip feature allows for special optimizations to the composition model to reduce power consumption.
-ms.assetid: 00A8FCB1-966A-4176-9840-7EB5BA300C8B
 keywords:
 - direct flip
 - DirectFlip
@@ -36,7 +35,7 @@ The direct flip feature allows for special optimizations to the composition mode
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
+<td align="left"><a href="/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics ¦ DirectFlip</strong></p></td>
 </tr>
 </tbody>
@@ -52,32 +51,24 @@ The direct flip feature allows for special optimizations to the composition mode
 
 These functions and structures are new or updated for Windows 8:
 
--   [*CheckDirectFlipSupport*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_checkdirectflipsupport)
--   [*CheckDirectFlipSupport(D3D11\_1)*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_checkdirectflipsupport)
--   [*DxgkDdiSetVidPnSourceAddress*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560767(v=vs.85))
--   [**D3D11\_1\_DDI\_CHECK\_DIRECT\_FLIP\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ne-d3d10umddi-d3d11_1_ddi_check_direct_flip_flags)
--   [**D3DDDI\_CHECK\_DIRECT\_FLIP\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ne-d3dumddi-d3dddi_check_direct_flip_flags)
--   [**D3DDDIARG\_CHECKDIRECTFLIPSUPPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_checkdirectflipsupport)
--   [**D3DKMT\_DIRECTFLIP\_SUPPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_directflip_support)
--   [**D3DKMT\_QUERYADAPTERINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_queryadapterinfo)
--   [**D3DKMT\_WAITFORVERTICALBLANKEVENT2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_waitforverticalblankevent2)
--   [**D3DKMTWaitForVerticalBlankEvent2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtwaitforverticalblankevent2)
--   [**DXGK\_DRIVERCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps)
--   [**DXGK\_SEGMENTFLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags)
--   [**DXGK\_SETVIDPNSOURCEADDRESS\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags)
+-   [*CheckDirectFlipSupport*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_checkdirectflipsupport)
+-   [*CheckDirectFlipSupport(D3D11\_1)*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_checkdirectflipsupport)
+-   [*DxgkDdiSetVidPnSourceAddress*](/previous-versions/windows/hardware/drivers/ff560767(v=vs.85))
+-   [**D3D11\_1\_DDI\_CHECK\_DIRECT\_FLIP\_FLAGS**](/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1_ddi_check_direct_flip_flags)
+-   [**D3DDDI\_CHECK\_DIRECT\_FLIP\_FLAGS**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-d3dddi_check_direct_flip_flags)
+-   [**D3DDDIARG\_CHECKDIRECTFLIPSUPPORT**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_checkdirectflipsupport)
+-   [**D3DKMT\_DIRECTFLIP\_SUPPORT**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_directflip_support)
+-   [**D3DKMT\_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_queryadapterinfo)
+-   [**D3DKMT\_WAITFORVERTICALBLANKEVENT2**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_waitforverticalblankevent2)
+-   [**D3DKMTWaitForVerticalBlankEvent2**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtwaitforverticalblankevent2)
+-   [**DXGK\_DRIVERCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps)
+-   [**DXGK\_SEGMENTFLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags)
+-   [**DXGK\_SETVIDPNSOURCEADDRESS\_FLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags)
 
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ DirectFlip**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ DirectFlip**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
-
- 
-
- 
-
-
-
-
 

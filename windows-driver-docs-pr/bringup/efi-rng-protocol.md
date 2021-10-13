@@ -1,18 +1,15 @@
 ---
 title: EFI_RNG_PROTOCOL
 description: The EFI_RNG_PROTOCOL is used to obtain a Random Number Generation (RNG) value from an EFI driver.
-ms.assetid: 927E2C40-973B-49AB-ACD5-2A3532827D74
-ms.date: 04/20/2017
+ms.date: 08/20/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_RNG\_PROTOCOL
+# EFI_RNG_PROTOCOL
 
-
-The EFI\_RNG\_PROTOCOL is used to obtain a Random Number Generation (RNG) value from an EFI driver.
+The EFI_RNG_PROTOCOL is used to obtain a Random Number Generation (RNG) value from an EFI driver.
 
 ## Syntax
-
 
 ```cpp
 #define EFI_RNG_PROTOCOL_GUID \
@@ -26,22 +23,12 @@ typedef struct _EFI_RNG_PROTOCOL {
 
 ## Members
 
+**GetInfo**  
+Returns information about the RNG algorithms the driver supports. For more information, see [EFI_RNG_PROTOCOL.GetInfo](efi-rng-protocol-getinfo.md).
 
-<a href="" id="getinfo"></a>**GetInfo**  
-Returns information about the RNG algorithms the driver supports. For more information, see [EFI\_RNG\_PROTOCOL.GetInfo](efi-rng-protocol-getinfo.md).
-
-<a href="" id="getrng"></a>**GetRNG**  
-Returns an RNG value using an optional RNG algorithm. For more information, see [EFI\_RNG\_PROTOCOL.GetRNG](efi-rng-protocol-getrng.md).
+**GetRNG**  
+Returns an RNG value using an optional RNG algorithm. For more information, see [EFI_RNG_PROTOCOL.GetRNG](efi-rng-protocol-getrng.md).
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

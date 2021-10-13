@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xE8 INVALID_CANCEL_OF_FILE_OPEN
 description: The INVALID_CANCEL_OF_FILE_OPEN bug check has a value of 0x000000E8. This indicates that an invalid file object was passed to IoCancelFileOpen.
-ms.assetid: 168d8b3a-62a0-4436-9e97-812ddfb8b7f7
 keywords: ["Bug Check 0xE8 INVALID_CANCEL_OF_FILE_OPEN", "INVALID_CANCEL_OF_FILE_OPEN"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ The INVALID\_CANCEL\_OF\_FILE\_OPEN bug check has a value of 0x000000E8. This in
 
  
 
-Cause
------
+## Cause
 
 The file object passed to **IoCancelFileOpen** is invalid. It should have reference of one. The driver that called **IoCancelFileOpen** is at fault.
 

@@ -1,7 +1,6 @@
 ---
 title: Trusted certificates
 description: Trusted certificates
-ms.assetid: 9323b7dd-7311-479e-bb00-b4a6ee71f27f
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

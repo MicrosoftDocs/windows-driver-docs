@@ -1,7 +1,6 @@
 ---
 title: High Definition Audio DDI
 description: High Definition Audio DDI
-ms.assetid: d471777c-0002-4caa-a06e-c58e449b7678
 keywords:
 - HD Audio
 - High Definition Audio (HD Audio)
@@ -21,17 +20,17 @@ In Windows Vista, Microsoft will provide the following two drivers as part of th
 
 -   A [Universal Audio Architecture](universal-audio-architecture.md) (UAA) class driver for managing a UAA-compliant audio codec (or possibly more than one codec) that is connected to an HD Audio controller.
 
-Microsoft also will develop a similar HD Audio bus driver and UAA HD Audio class driver for systems that run Windows Server 2003, and Windows XP. For information about the HD Audio controller architecture, see the Intel High Definition Audio Specification at the [Intel HD Audio](https://go.microsoft.com/fwlink/p/?linkid=42508) website. For an overview of Microsoft's UAA, see the white paper titled Universal Audio Architecture at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
+Microsoft also will develop a similar HD Audio bus driver and UAA HD Audio class driver for systems that run Windows Server 2003, and Windows XP. For information about the HD Audio controller architecture, see the Intel High Definition Audio Specification at the [Intel HD Audio](https://www.intel.com/content/www/us/en/standards/intel-standards-and-initiatives.html) website. For an overview of Microsoft's UAA, see the white paper [Universal Audio Architecture](/previous-versions/windows/hardware/design/dn640534(v=vs.85)) website.
 
 The HD Audio bus driver implements the HD Audio device driver interface (DDI), which kernel-mode audio and modem drivers use to communicate with hardware codecs that are attached to the HD Audio controller. The HD Audio bus driver exposes the HD Audio DDI to its children, which are instances of the audio and modem drivers that manage the codecs.
 
 The version of the HD Audio bus driver that runs on Windows Server 2003 and Windows XP supports three variants of the HD Audio DDI:
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure. This DDI is identical to the HD Audio DDI in Windows Vista.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure. This DDI is identical to the HD Audio DDI in Windows Vista.
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) structure. This DDI is available in Windows Vista and later versions of Windows.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) structure. This DDI is available in Windows Vista and later versions of Windows.
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structure. This DDI is available in Windows XP and later versions of Windows.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structure. This DDI is available in Windows XP and later versions of Windows.
 
 The differences between the three DDIs are minor and are discussed in [Differences Between the HD Audio DDI Versions](differences-between-the-hd-audio-ddi-versions.md).
 
@@ -54,9 +53,4 @@ This section includes:
 [HD Audio DDI Programming Guidelines](programming-guidelines.md)
 
  
-
- 
-
-
-
 

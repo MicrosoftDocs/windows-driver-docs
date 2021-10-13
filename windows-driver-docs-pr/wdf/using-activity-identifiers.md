@@ -1,7 +1,6 @@
 ---
 title: Using Activity Identifiers
 description: Using Activity Identifiers
-ms.assetid: 2B70953F-5192-4654-9506-6A84373D20B4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,22 +13,16 @@ In framework versions 1.11 and later, UMDF drivers can set and retrieve activity
 ## Associating New Requests with an Existing Request
 
 
-In your driver's I/O dispatch callback function, you might create multiple framework I/O requests as a result of an incoming request. The driver obtains the activity ID from the original request and sets it in the new requests by calling [**WdfRequestRetrieveActivityId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveactivityid) and [**WdfRequestSetActivityId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsetactivityid).
+In your driver's I/O dispatch callback function, you might create multiple framework I/O requests as a result of an incoming request. The driver obtains the activity ID from the original request and sets it in the new requests by calling [**WdfRequestRetrieveActivityId**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveactivityid) and [**WdfRequestSetActivityId**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetactivityid).
 
-For a code example, see [**WdfRequestRetrieveActivityId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveactivityid).
+For a code example, see [**WdfRequestRetrieveActivityId**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveactivityid).
 
 ## Associating New Requests with an Existing Thread
 
 
-A driver might create a new I/O request in a thread other than the I/O dispatch thread, or in a work item. You can set the activity ID for such a request from any corresponding request, or by using the activity ID associated with the I/O dispatch thread. The driver can retrieve the activity ID associated with the current thread by calling [**EventActivityIdControl**](https://docs.microsoft.com/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol) and then calling [**WdfRequestSetActivityId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsetactivityid) to set the identifier for each new I/O request.
+A driver might create a new I/O request in a thread other than the I/O dispatch thread, or in a work item. You can set the activity ID for such a request from any corresponding request, or by using the activity ID associated with the I/O dispatch thread. The driver can retrieve the activity ID associated with the current thread by calling [**EventActivityIdControl**](/windows/win32/api/evntprov/nf-evntprov-eventactivityidcontrol) and then calling [**WdfRequestSetActivityId**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetactivityid) to set the identifier for each new I/O request.
 
 If the driver calls the Win32 API to send an I/O request, it can retrieve the activity ID from the original request and propagate it to the thread. The I/O manager then applies the activity ID that is associated with the thread to any I/O request packets (IRPs) that it generates in response to the request.
 
  
-
- 
-
-
-
-
 

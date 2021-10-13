@@ -1,7 +1,6 @@
 ---
 title: XPS Driver Document Events
 description: XPS Driver Document Events
-ms.assetid: 240e14d1-d8ee-403c-b728-b14941775634
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , events
 - events WDK XPSDrv

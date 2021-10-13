@@ -1,7 +1,6 @@
 ---
 title: DSM\_COUNTERS WMI Class
 description: DSM\_COUNTERS WMI Class
-ms.assetid: 11ff77d7-5643-45ec-ac38-26ee70e6ea94
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -55,13 +54,7 @@ class DSM_COUNTERS
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_COUNTERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_dsm_counters) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_COUNTERS**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_dsm_counters) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

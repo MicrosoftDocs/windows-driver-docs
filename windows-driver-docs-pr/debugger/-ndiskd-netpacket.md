@@ -1,9 +1,8 @@
 ---
 title: ndiskd.netpacket
 description: The ndiskd.netpacket extension displays information about a NET_PACKET structure.
-ms.assetid: 304BA2CF-B6BC-452C-8543-9B872054AA9E
 keywords: ["ndiskd.netpacket Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/17/2020
 topic_type:
 - apiref
 api_name:
@@ -15,13 +14,12 @@ ms.localizationpriority: medium
 
 # !ndiskd.netpacket
 
+The **!ndiskd.netpacket** extension displays information about a [NET\_PACKET](/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet) structure.
 
-The **!ndiskd.netpacket** extension displays information about a [NET\_PACKET](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-packet) structure.
-
-For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
+For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](../netcx/index.md).
 
 ```console
-!ndiskd.netpacket [-handle <x>] [-basic] [-layout] [-checksum] [-data] 
+!ndiskd.netpacket -handle <x> [-basic] [-layout] [-checksum] [-data]
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -42,26 +40,23 @@ Displays packet checksum information.
 <span id="_______-data______"></span><span id="_______-DATA______"></span> *-data*   
 Dumps the payload memory.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
-**Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_PACKET object with other objects in the NetAdapterCx.
-
- 
+**Note**  See [Summary of Objects](../netcx/summary-of-netadaptercx-objects.md) to see a diagram explaining the relationship of the NET\_PACKET object with other objects in the NetAdapterCx.
 
 To obtain a handle for a NET\_PACKET, follow these steps:
 
-1.  Run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension.
-2.  Click on the handle for a NetAdapter that has a NetAdapterCx driver installed.
-3.  Click the "More Information" link to the right of the NetAdapter's NETADAPTER object to run the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension.
-4.  Enter the **!ndiskd.cxadapter** command with the *-datapath* parameter to see that NETADAPTER's datapath queues.
-5.  Click on the handle for one of the datapath queues.
-6.  Click on the handle for that datapath queue's ring buffer.
-7.  Click on the "List all elements" link at the bottom of the ring buffer details to see the elements it contains.
+1. Run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension.
+2. Click on the handle for a NetAdapter that has a NetAdapterCx driver installed.
+3. Click the "More Information" link to the right of the NetAdapter's NETADAPTER object to run the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension.
+4. Enter the **!ndiskd.cxadapter** command with the *-datapath* parameter to see that NETADAPTER's datapath queues.
+5. Click on the handle for one of the datapath queues.
+6. Click on the handle for that datapath queue's ring buffer.
+7. Click on the "List all elements" link at the bottom of the ring buffer details to see the elements it contains.
 
 For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic. For details on Steps 6-7 of this procedure, see the examples on the [**!ndiskd.netrb**](-ndiskd-netrb.md) topic.
 In the following example, look for the handle for the first NET\_PACKET, ffffd1022d000040.
@@ -139,24 +134,23 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
     ffffd102303e8352  00 fc   
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx)
+[Network Adapter WDF Class Extension (Cx)](../netcx/index.md)
 
-[Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects)
+[Summary of Objects](../netcx/summary-of-netadaptercx-objects.md)
 
-[NET\_PACKET](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-packet)
+[NET\_PACKET](/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
@@ -165,13 +159,3 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 [**!ndiskd.netqueue**](-ndiskd-netqueue.md)
 
 [**!ndiskd.netrb**](-ndiskd-netrb.md)
-
- 
-
- 
-
-
-
-
-
-

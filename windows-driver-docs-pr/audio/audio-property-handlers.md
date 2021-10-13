@@ -1,7 +1,6 @@
 ---
 title: Audio Property Handlers
 description: Audio Property Handlers
-ms.assetid: 4bf176ae-b3fd-47e6-9802-a92ef5e9904f
 keywords:
 - audio properties WDK , handlers
 - WDM audio properties WDK , handlers
@@ -24,7 +23,7 @@ ms.localizationpriority: medium
 ## <span id="audio_property_handlers"></span><span id="AUDIO_PROPERTY_HANDLERS"></span>
 
 
-A miniport driver stores information about each property that it supports in a [**PCPROPERTY\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcproperty_item) structure. This structure contains the following information about the property:
+A miniport driver stores information about each property that it supports in a [**PCPROPERTY\_ITEM**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcproperty_item) structure. This structure contains the following information about the property:
 
 -   The property-set GUID and property ID (or index)
 
@@ -32,21 +31,21 @@ A miniport driver stores information about each property that it supports in a [
 
 -   Flags specifying the property operations that the handler supports
 
-The miniport driver provides an automation table (specified by a [**PCAUTOMATION\_TABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcautomation_table) structure) for the filter. The driver provides additional automation tables for the filter's pin types and node types - each pin or node type has its own table. Each automation table contains a (possibly empty) array of PCPROPERTY\_ITEM structures, and each of these structures describes one property of the filter, pin, or node. When a client sends a property request to a filter, pin, or node, the port driver routes the request through the automation table to the appropriate property handler.
+The miniport driver provides an automation table (specified by a [**PCAUTOMATION\_TABLE**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcautomation_table) structure) for the filter. The driver provides additional automation tables for the filter's pin types and node types - each pin or node type has its own table. Each automation table contains a (possibly empty) array of PCPROPERTY\_ITEM structures, and each of these structures describes one property of the filter, pin, or node. When a client sends a property request to a filter, pin, or node, the port driver routes the request through the automation table to the appropriate property handler.
 
 A miniport driver can specify a unique property handler routine for each property. However, if a driver handles several similar properties, these can sometimes be consolidated into a single handler routine for convenience. Whether to provide a unique handler for each property or to consolidate several properties into a single handler is an implementation decision to be made by the driver writer and should be transparent to clients that submit property requests.
 
-A user-mode client can send a get, set, or basic-support property request by calling the Microsoft Win32 function [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) with the *dwIoControlCode* call parameter set to IOCTL\_KS\_PROPERTY. The operating system converts this call to an [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp), which it dispatches to the class driver. For more information, see [KS Properties](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties).
+A user-mode client can send a get, set, or basic-support property request by calling the Microsoft Win32 function [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) with the *dwIoControlCode* call parameter set to IOCTL\_KS\_PROPERTY. The operating system converts this call to an [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp), which it dispatches to the class driver. For more information, see [KS Properties](../stream/ks-properties.md).
 
-When a client sends a KS property request (that is, an IOCTL\_KS\_PROPERTY I/O-control IRP) to a filter handle or pin handle, the KS system driver (Ks.sys) delivers the request to the port driver for the filter object or pin object. If the miniport driver provides a handler for the property, the port driver forwards the request to the handler. Before forwarding the request, the port driver converts the information from the property request into the format specified by the [**PCPROPERTY\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-_pcproperty_request) structure. The port driver passes this structure to the miniport driver's handler.
+When a client sends a KS property request (that is, an IOCTL\_KS\_PROPERTY I/O-control IRP) to a filter handle or pin handle, the KS system driver (Ks.sys) delivers the request to the port driver for the filter object or pin object. If the miniport driver provides a handler for the property, the port driver forwards the request to the handler. Before forwarding the request, the port driver converts the information from the property request into the format specified by the [**PCPROPERTY\_REQUEST**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcproperty_request) structure. The port driver passes this structure to the miniport driver's handler.
 
-The **MajorTarget** member of PCPROPERTY\_REQUEST points to the primary miniport driver interface for the audio device. For example, for a WavePci device, this is a pointer to the miniport driver object's [IMiniportWavePci](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavepci) interface.
+The **MajorTarget** member of PCPROPERTY\_REQUEST points to the primary miniport driver interface for the audio device. For example, for a WavePci device, this is a pointer to the miniport driver object's [IMiniportWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci) interface.
 
-In the case of a KS property request sent to a filter handle, the **MinorTarget** member of PCPROPERTY\_REQUEST is **NULL**. In the case of a request sent to a pin handle, **MinorTarget** points to the stream interface for the pin. For example, for a WavePci device, this is a pointer to the stream object's [IMiniportWavePciStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavepcistream) interface.
+In the case of a KS property request sent to a filter handle, the **MinorTarget** member of PCPROPERTY\_REQUEST is **NULL**. In the case of a request sent to a pin handle, **MinorTarget** points to the stream interface for the pin. For example, for a WavePci device, this is a pointer to the stream object's [IMiniportWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream) interface.
 
-The **Instance** and **Value** members of PCPROPERTY\_REQUEST point to the input and output buffers, respectively, of the KS property request. (The buffers are specified by the *lpInBuffer* and *lpOutBuffer* parameters of the [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function.) These buffers contain the property descriptor (instance data) and property value (operation data), respectively, as described in [Audio Drivers Property Sets](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-drivers-property-sets). The **Value** member points to the start of the output buffer, but the **Instance** pointer is offset from the start of the input buffer.
+The **Instance** and **Value** members of PCPROPERTY\_REQUEST point to the input and output buffers, respectively, of the KS property request. (The buffers are specified by the *lpInBuffer* and *lpOutBuffer* parameters of the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function.) These buffers contain the property descriptor (instance data) and property value (operation data), respectively, as described in [Audio Drivers Property Sets](./audio-drivers-property-sets.md). The **Value** member points to the start of the output buffer, but the **Instance** pointer is offset from the start of the input buffer.
 
-The input buffer begins with either a [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) or [**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty) structure. The port driver copies the information from this structure into the PCPROPERTY\_REQUEST structure's **Node**, **PropertyItem**, and **Verb** members. If any data follows the KSPROPERTY or KSNODEPROPERTY structure in the buffer, the port driver loads the **Instance** member with a pointer to this data. Otherwise, it sets **Instance** to **NULL**.
+The input buffer begins with either a [**KSPROPERTY**](../stream/ksproperty-structure.md) or [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure. The port driver copies the information from this structure into the PCPROPERTY\_REQUEST structure's **Node**, **PropertyItem**, and **Verb** members. If any data follows the KSPROPERTY or KSNODEPROPERTY structure in the buffer, the port driver loads the **Instance** member with a pointer to this data. Otherwise, it sets **Instance** to **NULL**.
 
 If the input buffer begins with a KSPROPERTY structure, which contains no node information, the port driver sets the PCPROPERTY\_REQUEST structure's **Node** member to ULONG(-1). In this case, the port driver calls the appropriate handler from the miniport driver's automation table for the filter or pin, depending on whether the target for the property request is specified by a filter handle or pin handle. (If the table does not specify a handler for the property, the port driver handles the request instead.)
 
@@ -58,11 +57,11 @@ The port driver checks the KSPROPERTY\_TYPE\_TOPOLOGY bit in the operation flags
 
 -   Otherwise, the input buffer begins with a KSPROPERTY structure.
 
-For more information about KSPROPERTY\_TYPE\_TOPOLOGY, see [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)).
+For more information about KSPROPERTY\_TYPE\_TOPOLOGY, see [**KSPROPERTY**](../stream/ksproperty-structure.md).
 
 The PCPROPERTY\_REQUEST structure's **InstanceSize** and **ValueSize** members specify the sizes of the buffers pointed to by the **Instance** and **Value** members. **ValueSize** is equal to the size of the output buffer of the property request, but **InstanceSize** is the size of the data that follows the KSPROPERTY or KSNODEPROPERTY structure in the input buffer. That is, **InstanceSize** is the size of the input buffer minus the size of the KSPROPERTY or KSNODEPROPERTY structure. If no additional data follows this structure, the port driver sets **InstanceSize** to zero (and **Instance** to **NULL**).
 
-For example, if the client specifies a [**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel) structure as the instance data in the input buffer, the port driver passes the handler a PCPROPERTY\_REQUEST structure whose **Instance** member points to the KSNODEPROPERTY\_AUDIO\_CHANNEL structure's **Channel** member, and whose **InstanceSize** member contains the value
+For example, if the client specifies a [**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel) structure as the instance data in the input buffer, the port driver passes the handler a PCPROPERTY\_REQUEST structure whose **Instance** member points to the KSNODEPROPERTY\_AUDIO\_CHANNEL structure's **Channel** member, and whose **InstanceSize** member contains the value
 
 **sizeof**(KSNODEPROPERTY\_AUDIO\_CHANNEL) - **sizeof**(KSNODEPROPERTY)
 
@@ -72,18 +71,11 @@ If the specified buffer size is too small to receive any of the requested inform
  
 In some cases, PortCls port drivers return STATUS_BUFFER_TOO_SMALL instead of STATUS_BUFFER_OVERFLOW in response to a property request with a non-zero output buffer address and size. Required buffer size is not returned in such cases. 
  
-For more information, see [Using NTSTATUS Values](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values) and these blog posts:
+For more information, see [Using NTSTATUS Values](../kernel/using-ntstatus-values.md) and these blog posts:
 
-- [How to return the number of bytes required for a subsequent operation](https://blogs.msdn.microsoft.com/doronh/2006/12/12/how-to-return-the-number-of-bytes-required-for-a-subsequent-operation/)
+- [How to return the number of bytes required for a subsequent operation](/archive/blogs/doronh/how-to-return-the-number-of-bytes-required-for-a-subsequent-operation)
 
 - [STATUS_BUFFER_OVERFLOW really should be named STATUS_BUFFER_OVERFLOW_PREVENTED](https://devblogs.microsoft.com/oldnewthing/?p=22863)
-
-
-
-
- 
-
- 
 
 
 

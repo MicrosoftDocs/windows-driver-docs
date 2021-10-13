@@ -1,186 +1,182 @@
 ---
-title: \ TrayName\ (InputBins)
-description: \ TrayName\ (InputBins)
-ms.assetid: 7fa03413-5b95-443f-9b0f-75d82d0e41cf
-ms.date: 11/28/2017
+title: TrayName (InputBins)
+description: An IHV-mapped property name for an input tray.
+ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
-# \[TrayName\] (InputBins)
+# TrayName (InputBins)
 
+Schema Path: \\Printer.Layout.InputBins.\[TrayName\]
 
-Schema Path:\\Printer.Layout.InputBins.\[TrayName\]
+Node Type: Property
 
-Node Type:Property
+Description: An IHV-mapped property name for an input tray. An IHV can map an IHV-specific tray name for an input bin with a name from the following list.
 
-Description:An IHV-mapped property name for an input tray. An IHV can map an IHV-specific tray name for an input bin with a name from the following list.
+- Tray1
 
-Tray1
+- Tray2
 
-Tray2
+- Trayxx (xx an arbitrary positive integer)
 
-Trayxx (xx an arbitrary positive integer)
+- TopBin
 
-TopBin
+- MiddleBin
 
-MiddleBin
+- BottomBin
 
-BottomBin
+- LargeCapacityBin
 
-LargeCapacityBin
+- ManualBin
 
-ManualBin
+- EnvelopeBin
 
-EnvelopeBin
+- EnvelopeManual
 
-EnvelopeManual
-
-MultiPurposeBin
+- MultiPurposeBin
 
 The \[TrayName\] property contains the following child values:
 
-Installed
+- Installed
 
-MediaSize
+- MediaSize
 
-MediaColor
+- MediaColor
 
-Capacity
+- Capacity
 
-Level
+- Level
 
-### <span id="installed"></span><span id="INSTALLED"></span> Installed
+## Installed
 
-Schema Path:\\Printer.Layout.InputBins.\[TrayName\]:Installed
+Schema Path: \\Printer.Layout.InputBins.\[TrayName\]:Installed
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_BOOL
+Data Type: BIDI_BOOL
 
-Description:Indicates whether the bin referenced by \[TrayName\] is installed on the device. If **TRUE**, the bin is installed on the device; if **FALSE**, the bin is not installed on the device.
+Description: Indicates whether the bin referenced by \[TrayName\] is installed on the device. If **TRUE**, the bin is installed on the device; if **FALSE**, the bin is not installed on the device.
 
-### <span id="mediasize"></span><span id="MEDIASIZE"></span> MediaSize
+## MediaSize
 
-Schema Path:\\Printer.Layout.InputBins.\[TrayName\]:MediaSize
+Schema Path: \\Printer.Layout.InputBins.\[TrayName\]:MediaSize
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:The size of the media available in the currently referenced input bin. The values should conform to the IEEE-ISTO PWG Standard 5101.1-2001 - Media Standardized Names.
+Description: The size of the media available in the currently referenced input bin. The values should conform to the IEEE-ISTO PWG Standard 5101.1-2001 - Media Standardized Names.
+
 The following values are allowed:
-na\_legal\_8.5x14in
 
-na\_letter\_8.5x11in
+- na_legal_8.5x14in
 
-iso\_a4\_210x297mm
+- na_letter_8.5x11in
 
-iso\_c5\_162x229mm
+- iso_a4_210x297mm
 
-iso\_dl\_110x220mm
+- iso_c5_162x229mm
 
-jis\_b4\_257x364mm
+- iso_dl_110x220mm
 
-### <span id="mediatype"></span><span id="MEDIATYPE"></span> MediaType
+- jis_b4_257x364mm
 
-Schema Path:\\Printer.Layout.InputBins.\[TrayName\]:MediaType
+## MediaType
 
-Node Type:Value
+Schema Path: \\Printer.Layout.InputBins.\[TrayName\]:MediaType
 
-Data Type:BIDI\_STRING
+Node Type: Value
 
-Description:The type of media available in the currently referenced input bin. The values should conform to the IEEE-ISTO PWG Standard 5101.1-2001 - Media Standardized Names.
+Data Type: BIDI_STRING
+
+Description: The type of media available in the currently referenced input bin. The values should conform to the IEEE-ISTO PWG Standard 5101.1-2001 - Media Standardized Names.
+
 The following values are allowed:
-cardstock
 
-envelope
+- cardstock
 
-labels
+- envelope
 
-photographic
+- labels
 
-stationery
+- photographic
 
-stationery-inkjet
+- stationery
 
-transparency
+- stationery-inkjet
 
-other
+- transparency
 
-### <span id="mediacolor"></span><span id="MEDIACOLOR"></span> MediaColor
+- other
 
-Schema Path:\\Printer.Layout.InputBins.\[TrayName\]:MediaColor
+## MediaColor
 
-Node Type:Value
+Schema Path: \\Printer.Layout.InputBins.\[TrayName\]:MediaColor
 
-Data Type:BIDI\_STRING
+Node Type: Value
 
-Description:The color of the media available in the currently referenced input bin. The values should conform to the IEEE-ISTO PWG Standard 5101.1-2001 - Media Standardized Names.
+Data Type: BIDI_STRING
+
+Description: The color of the media available in the currently referenced input bin. The values should conform to the IEEE-ISTO PWG Standard 5101.1-2001 - Media Standardized Names.
+
 The following values are allowed:
-white
 
-pink
+- white
 
-yellow
+- pink
 
-buff
+- yellow
 
-goldenrod
+- buff
 
-blue
+- goldenrod
 
-green
+- blue
 
-red
+- green
 
-gray
+- red
 
-ivory
+- gray
 
-orange
+- ivory
 
-no-color
+- orange
 
-unknown
+- no-color
 
-### <span id="feeddirection"></span><span id="FEEDDIRECTION"></span> FeedDirection
+- unknown
 
-Schema Path:\\Printer.Layout.InputBins.\[TrayName\]:FeedDirection
+## FeedDirection
 
-Node Type:Value
+Schema Path: \\Printer.Layout.InputBins.\[TrayName\]:FeedDirection
 
-Data Type:BIDI\_STRING
+Node Type: Value
 
-Description:Indicates which edge of the paper enters the media path first in the currently referenced input bin and must be one of the following values:
+Data Type: BIDI_STRING
 
-LongEdgeFirst
+Description: Indicates which edge of the paper enters the media path first in the currently referenced input bin and must be one of the following values:
 
-ShortEdgeFirst
+- LongEdgeFirst
 
-### <span id="capacity"></span><span id="CAPACITY"></span> Capacity
+- ShortEdgeFirst
 
-Schema Path:\\Printer.Layout.InputBins.\[TrayName\]:Capacity
+## Capacity
 
-Node Type:Value
+Schema Path: \\Printer.Layout.InputBins.\[TrayName\]:Capacity
 
-Data Type:BIDI\_INT
+Node Type: Value
 
-Description:The capacity, in sheets, of the currently referenced input bin.
+Data Type: BIDI_INT
 
-### <span id="level"></span><span id="LEVEL"></span> Level
+Description: The capacity, in sheets, of the currently referenced input bin.
 
-Schema Path:\\Printer.Layout.InputBins.\[TrayName\]:Level
+## Level
 
-Node Type:Value
+Schema Path: \\Printer.Layout.InputBins.\[TrayName\]:Level
 
-Data Type:BIDI\_INT
+Node Type: Value
 
-Description:The amount of capacity remaining in the currently referenced input bin, expressed as a percentage. A full tray would have a value of 100, while an empty tray a value of 0. If the level is not measurable, a value of -1 (indicating an unknown Level) should be returned.
+Data Type: BIDI_INT
 
- 
-
- 
-
-
-
-
+Description: The amount of capacity remaining in the currently referenced input bin, expressed as a percentage. A full tray would have a value of 100, while an empty tray a value of 0. If the level is not measurable, a value of -1 (indicating an unknown Level) should be returned.

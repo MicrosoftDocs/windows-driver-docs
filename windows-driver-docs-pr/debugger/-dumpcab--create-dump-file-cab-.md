@@ -1,7 +1,6 @@
 ---
 title: .dumpcab (Create Dump File CAB)
 description: The .dumpcab command creates a CAB file containing the current dump file.
-ms.assetid: 65ed766f-b049-47b0-90d7-e21d510a35ba
 keywords: [".dumpcab (Create Dump File CAB) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,8 +59,7 @@ The CAB file name, including extension. *CabName* can include an absolute or rel
 
 For more details on crash dumps, see [Crash Dump Files](crash-dump-files.md).
 
-Remarks
--------
+## Remarks
 
 This command can only be used if you are already debugging a dump file.
 

@@ -1,7 +1,6 @@
 ---
 title: Output Streams
 description: Output Streams
-ms.assetid: 91be637c-f195-4713-bfb0-b41c0346e390
 keywords:
 - output streams WDK DVD decoder
 ms.date: 04/20/2017
@@ -49,7 +48,7 @@ No format block.</td>
 
  
 
-Kernel-mode interface provides control of video port extensions (VPE) settings. For more information, see [VideoPort Extensions Background](https://docs.microsoft.com/windows-hardware/drivers/display/video-port-extensions-background).
+Kernel-mode interface provides control of video port extensions (VPE) settings. For more information, see [VideoPort Extensions Background](../display/video-port-extensions-background.md).
 
 The following table describes the closed caption (CC) output stream media type used by DVDs:
 
@@ -86,12 +85,7 @@ No format block.</td>
 
  
 
-A frame size of 200 (decimal) in the **SampleSize** member of the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure must be specified. For more information, see [Closed Captioning Streams](closed-captioning-streams.md).
+A frame size of 200 (decimal) in the **SampleSize** member of the [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure must be specified. For more information, see [Closed Captioning Streams](closed-captioning-streams.md).
 
  
-
- 
-
-
-
 

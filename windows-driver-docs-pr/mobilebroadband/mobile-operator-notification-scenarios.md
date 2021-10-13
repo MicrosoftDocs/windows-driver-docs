@@ -1,7 +1,6 @@
 ---
 title: Mobile operator notification scenarios
 description: Mobile operator notification scenarios
-ms.assetid: 3749d9ab-3dff-4216-a23b-0e75c04d9a22
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -55,7 +54,7 @@ MNOs specify custom filtering rules for administrative SMS and USSD notification
 
 Windows 8, Windows 8.1, and Windows 10 provide a USSD API, which is an abstraction of the underlying USSD protocol that hides most of the details to simplify app development. Upon receiving a network-initiated USSD that matches the provisioned filtering rules, the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event is trigged and the corresponding background work item can communicate over the USSD session by using the USSD API.
 
-For more information about USSD APIs, see [**Windows.Networking.NetworkOperators**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators) namespace.
+For more information about USSD APIs, see [**Windows.Networking.NetworkOperators**](/uwp/api/Windows.Networking.NetworkOperators) namespace.
 
 ## <span id="trigloc"></span><span id="TRIGLOC"></span>Triggering data usage and roaming notifications
 
@@ -108,11 +107,4 @@ Some MNOs or MVNOs do not support Internet Sharing features on their network or 
 [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
  
-
- 
-
-
-
-
-
 

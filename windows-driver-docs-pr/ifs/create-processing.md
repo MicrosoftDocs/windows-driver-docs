@@ -1,7 +1,6 @@
 ---
 title: Create Processing
 description: Create Processing
-ms.assetid: c15a56d2-47db-4124-8250-f25f69d2d4e3
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , create processing
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_create_processing_if"></span><span id="DDK_CREATE_PROCESSING_IF"></span>
 
 
-For a file system, most of the interesting security work occurs during [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) processing. It is this step that must analyze the incoming request, determine whether the caller has appropriate rights to perform the operation, and grant or deny the operation as appropriate. Fortunately, for file system developers, most of the decision mechanism is implemented within the Security Reference Monitor. Thus, in most cases, the file system need only call the appropriate Security Reference Monitor routines to properly determine access. The risk for a file system occurs when it fails to call these routines as necessary and inappropriately grants access to a caller.
+For a file system, most of the interesting security work occurs during [**IRP\_MJ\_CREATE**](./irp-mj-create.md) processing. It is this step that must analyze the incoming request, determine whether the caller has appropriate rights to perform the operation, and grant or deny the operation as appropriate. Fortunately, for file system developers, most of the decision mechanism is implemented within the Security Reference Monitor. Thus, in most cases, the file system need only call the appropriate Security Reference Monitor routines to properly determine access. The risk for a file system occurs when it fails to call these routines as necessary and inappropriately grants access to a caller.
 
 For a standard file system, such as the FAT file system, the checks that are made as part of IRP\_MJ\_CREATE are primarily semantics checks. For example, the FAT file system has numerous checks to ensure that IRP\_MJ\_CREATE processing is allowed based upon the state of the file or directory. These checks made by the FAT file system include checks for read-only media (for example, attempts to perform destructive "create" operations, such as overwrite or supersede, on read-only media are not allowed), share access checks, and oplock checks. One of the most difficult parts of this analysis is to realize that an operation at one level (the file level, for example) may in fact be disallowed because of the state of a different level resource (the volume level, for example). For example, a file may not be opened if another process has exclusively locked the volume. Common cases to check would include:
 
@@ -30,7 +29,7 @@ For a standard file system, such as the FAT file system, the checks that are mad
 
 In addition, file attributes must be compatible. A file with the read-only attribute cannot be opened for write access. Note that the desired access should be checked after expansion of the generic rights are expanded. For example, this check within the FASTFAT file system is in the **FatCheckFileAccess** function (see the Acchksup.c source file from the fastfat samples that the WDK contains).
 
-The following code example is specific to the FAT semantics. A file system that implements DACLs as well, would do an additional security check using the Security Reference Monitor routines ([**SeAccessCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-seaccesscheck), for example.)
+The following code example is specific to the FAT semantics. A file system that implements DACLs as well, would do an additional security check using the Security Reference Monitor routines ([**SeAccessCheck**](/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck), for example.)
 
 ```cpp
     //
@@ -104,7 +103,7 @@ The following code example demonstrates an important concept for file system sec
     }
 ```
 
-Fortunately for file systems, once the security check has been done during the initial create processing, subsequent security checks are performed by the I/O manager. Thus, for example, the I/O manager ensures that user-mode applications do not perform a write operation against a file that has been opened only for read access. In fact, a file system should not attempt to enforce read-only semantics against the file object, even if it was opened only for read access, during the IRP\_MJ\_WRITE dispatch routine. This is due to the way the memory manager associates a specific file object with a given section object. Subsequent writing through that section will be sent as IRP\_MJ\_WRITE operations on the file object, even though the file was opened read-only. In other words, the access enforcement is done when a file handle is converted into the corresponding file object at Nt system service entry points by [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbyhandle).
+Fortunately for file systems, once the security check has been done during the initial create processing, subsequent security checks are performed by the I/O manager. Thus, for example, the I/O manager ensures that user-mode applications do not perform a write operation against a file that has been opened only for read access. In fact, a file system should not attempt to enforce read-only semantics against the file object, even if it was opened only for read access, during the IRP\_MJ\_WRITE dispatch routine. This is due to the way the memory manager associates a specific file object with a given section object. Subsequent writing through that section will be sent as IRP\_MJ\_WRITE operations on the file object, even though the file was opened read-only. In other words, the access enforcement is done when a file handle is converted into the corresponding file object at Nt system service entry points by [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle).
 
 There are two additional places within a file system where semantic security checks must be made similar to "create" processing:
 
@@ -117,9 +116,4 @@ Rename processing and file system control processing is discussed in subsequent 
 Note that this is not an exhaustive list of semantic issues related to "create" processing. The intent of this section is to draw attention to these issues for file system developers. All semantic issues must be identified for a specific file system, implemented to meet the specific semantics, and tested to ensure that the implementation handles the various cases.
 
  
-
- 
-
-
-
 

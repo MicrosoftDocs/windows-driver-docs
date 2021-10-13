@@ -1,13 +1,10 @@
 - name: "SD Bus Driver Design Guide"
-# Auto-expanded node
-  items: 
-  - name: "SD Bus Driver Design Guide"
-    href: index.md
-  - name: "SD Card Driver Stack"
-    href: sd-card-driver-stack.md
-  - name: "Opening, Initializing and Closing an SD Card Bus Interface"
-    href: opening--initializing-and-closing-an-sd-card-bus-interface.md
-  - name: "Handling SD Card Interrupts"
-    href: handling-sd-card-interrupts.md
-  - name: "SD Card Requests"
-    href: sd-card-requests.md
+  href: index.md
+- name: "SD Card Driver Stack"
+  href: sd-card-driver-stack.md
+- name: "Opening, Initializing and Closing an SD Card Bus Interface"
+  href: opening--initializing-and-closing-an-sd-card-bus-interface.md
+- name: "Handling SD Card Interrupts"
+  href: handling-sd-card-interrupts.md
+- name: "SD Card Requests"
+  href: sd-card-requests.md

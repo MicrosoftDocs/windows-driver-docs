@@ -1,7 +1,6 @@
 ---
 title: Packet-Based Bus-Master DMA
 description: Packet-Based Bus-Master DMA
-ms.assetid: f94b9ca9-6e29-4801-a092-30af19345f6d
 keywords:
 - bus-master DMA WDK video miniport , packet based
 - DMA bus-master WDK video miniport , packet based
@@ -17,27 +16,27 @@ ms.localizationpriority: medium
 ## <span id="ddk_packet_based_bus_master_dma_gg"></span><span id="DDK_PACKET_BASED_BUS_MASTER_DMA_GG"></span>
 
 
-Ordinarily, a display driver initiates a DMA operation by sending a transfer request to the miniport driver. When a miniport driver supporting packet-based DMA operations receives such a request, it first locks the buffer involved in the data transfer. The miniport driver then initiates the transfer by calling the video port driver's [**VideoPortStartDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportstartdma) function, which in turn calls the miniport driver's [**HwVidExecuteDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pexecute_dma) callback routine to carry out the data transfer. This DMA operation is handled asynchronously: **VideoPortStartDma** does not wait for the DMA operation to complete before returning control to the miniport driver.
+Ordinarily, a display driver initiates a DMA operation by sending a transfer request to the miniport driver. When a miniport driver supporting packet-based DMA operations receives such a request, it first locks the buffer involved in the data transfer. The miniport driver then initiates the transfer by calling the video port driver's [**VideoPortStartDma**](/windows-hardware/drivers/ddi/video/nf-video-videoportstartdma) function, which in turn calls the miniport driver's [**HwVidExecuteDma**](/windows-hardware/drivers/ddi/video/nc-video-pexecute_dma) callback routine to carry out the data transfer. This DMA operation is handled asynchronously: **VideoPortStartDma** does not wait for the DMA operation to complete before returning control to the miniport driver.
 
-Depending on the size of the transfer request and the number of system resources assigned to the adapter, the driver may not be able to transfer all of the data in a single DMA operation. The miniport driver should inspect the actual transfer size returned in order to find out whether there is more data to be transferred. As soon as the DMA hardware finishes the current transfer, the miniport driver should call the video port driver's [**VideoPortCompleteDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportcompletedma) function to complete the current DMA operation. If there is still data remaining to be transferred, the miniport driver repeats the process of calling the video port driver's **VideoPortStartDma** and **VideoPortCompleteDma** functions iteratively until no more data remains to be transferred. When all of the data has been transferred, the miniport driver should unlock the buffer.
+Depending on the size of the transfer request and the number of system resources assigned to the adapter, the driver may not be able to transfer all of the data in a single DMA operation. The miniport driver should inspect the actual transfer size returned in order to find out whether there is more data to be transferred. As soon as the DMA hardware finishes the current transfer, the miniport driver should call the video port driver's [**VideoPortCompleteDma**](/windows-hardware/drivers/ddi/video/nf-video-videoportcompletedma) function to complete the current DMA operation. If there is still data remaining to be transferred, the miniport driver repeats the process of calling the video port driver's **VideoPortStartDma** and **VideoPortCompleteDma** functions iteratively until no more data remains to be transferred. When all of the data has been transferred, the miniport driver should unlock the buffer.
 
 The miniport driver performs the following sequence of operations to use packet-based DMA:
 
 1.  Report hardware capabilities to the system and acquire an adapter object.
 
-    The miniport driver calls the video port driver's [**VideoPortGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportgetdmaadapter) function, which returns a pointer to a [**VP\_DMA\_ADAPTER**](https://docs.microsoft.com/previous-versions/ff570570(v=vs.85)) structure. This is usually done at initialization time, typically within the miniport driver's [*HwVidFindAdapter*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_find_adapter) routine. The miniport driver uses this pointer for subsequent DMA operations.
+    The miniport driver calls the video port driver's [**VideoPortGetDmaAdapter**](/windows-hardware/drivers/ddi/video/nf-video-videoportgetdmaadapter) function, which returns a pointer to a [**VP\_DMA\_ADAPTER**](/previous-versions/ff570570(v=vs.85)) structure. This is usually done at initialization time, typically within the miniport driver's [*HwVidFindAdapter*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_find_adapter) routine. The miniport driver uses this pointer for subsequent DMA operations.
 
 2.  Lock host memory.
 
-    The miniport driver calls the video port driver's [**VideoPortLockBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportlockbuffer) function, which probes the buffer, makes those memory pages resident, and locks them.
+    The miniport driver calls the video port driver's [**VideoPortLockBuffer**](/windows-hardware/drivers/ddi/video/nf-video-videoportlockbuffer) function, which probes the buffer, makes those memory pages resident, and locks them.
 
 3.  Start the DMA transfer.
 
-    The miniport driver calls the video port driver's [**VideoPortStartDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportstartdma) function, which flushes the host processor memory caches, builds the scatter/gather list, and calls the miniport driver's [**HwVidExecuteDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pexecute_dma) callback routine to carry out the DMA operation asynchronously. **VideoPortStartDma** returns control to the miniport driver without waiting for the DMA operation to complete.
+    The miniport driver calls the video port driver's [**VideoPortStartDma**](/windows-hardware/drivers/ddi/video/nf-video-videoportstartdma) function, which flushes the host processor memory caches, builds the scatter/gather list, and calls the miniport driver's [**HwVidExecuteDma**](/windows-hardware/drivers/ddi/video/nc-video-pexecute_dma) callback routine to carry out the DMA operation asynchronously. **VideoPortStartDma** returns control to the miniport driver without waiting for the DMA operation to complete.
 
 4.  Complete the DMA transfer.
 
-    The miniport driver should call the video port driver's [**VideoPortCompleteDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportcompletedma) function as soon as the hardware finishes the DMA operation. Many video adapters generate an interrupt when a DMA operation is complete. For example, a system with this type of adapter could react to the interrupt in the following way. When the hardware generates the interrupt to notify the miniport driver that the DMA operation has completed, the miniport driver's interrupt service routine (ISR) calls the video port driver's [**VideoPortQueueDpc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportqueuedpc) function to queue a DPC routine, which in turn calls the video port driver's **VideoPortCompleteDma** function. The ISR cannot directly call **VideoPortCompleteDma** since this video port driver function must be called at or below IRQL DISPATCH\_LEVEL.
+    The miniport driver should call the video port driver's [**VideoPortCompleteDma**](/windows-hardware/drivers/ddi/video/nf-video-videoportcompletedma) function as soon as the hardware finishes the DMA operation. Many video adapters generate an interrupt when a DMA operation is complete. For example, a system with this type of adapter could react to the interrupt in the following way. When the hardware generates the interrupt to notify the miniport driver that the DMA operation has completed, the miniport driver's interrupt service routine (ISR) calls the video port driver's [**VideoPortQueueDpc**](/windows-hardware/drivers/ddi/video/nf-video-videoportqueuedpc) function to queue a DPC routine, which in turn calls the video port driver's **VideoPortCompleteDma** function. The ISR cannot directly call **VideoPortCompleteDma** since this video port driver function must be called at or below IRQL DISPATCH\_LEVEL.
 
     **VideoPortCompleteDma** flushes any data remaining in the bus-master adapter's internal cache, and frees any unused resources (including the scatter/gather list built by **VideoPortStartDma**).
 
@@ -45,17 +44,11 @@ The miniport driver performs the following sequence of operations to use packet-
 
 5.  Unlock host memory.
 
-    When all of the data has been transferred, the miniport driver should call the video port driver's [**VideoPortUnlockBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportunlockbuffer) function to unlock the data buffer it acquired in the second step.
+    When all of the data has been transferred, the miniport driver should call the video port driver's [**VideoPortUnlockBuffer**](/windows-hardware/drivers/ddi/video/nf-video-videoportunlockbuffer) function to unlock the data buffer it acquired in the second step.
 
 6.  Discard the adapter object.
 
-    *This step is optional*. If, for some reason, the miniport driver decides that there will be no further DMA operations for the rest of its lifetime, it should discard the DMA adapter object by calling the video port driver's [**VideoPortPutDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportputdmaadapter) function.
+    *This step is optional*. If, for some reason, the miniport driver decides that there will be no further DMA operations for the rest of its lifetime, it should discard the DMA adapter object by calling the video port driver's [**VideoPortPutDmaAdapter**](/windows-hardware/drivers/ddi/video/nf-video-videoportputdmaadapter) function.
 
  
-
- 
-
-
-
-
 

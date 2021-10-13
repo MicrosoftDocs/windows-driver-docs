@@ -1,7 +1,6 @@
 ---
 title: Battery Class Driver Functionality
 description: Battery Class Driver Functionality
-ms.assetid: cd7536d9-bcf1-4674-8ebf-af2b888a0f0a
 keywords:
 - battery class drivers WDK , functionality
 ms.date: 04/20/2017
@@ -20,7 +19,7 @@ The battery class driver takes care of the following tasks for miniclass drivers
 
 -   Performing a large part of miniclass driver initialization, including allocating system resources and space for the miniclass driver's class data
 
--   Handling device control IRPs ([**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control)) that specify battery class IOCTLs. (See the Microsoft Windows SDK for information about these IOCTLs.)
+-   Handling device control IRPs ([**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md)) that specify battery class IOCTLs. (See the Microsoft Windows SDK for information about these IOCTLs.)
 
 -   Serializing requests to the battery device
 
@@ -30,12 +29,7 @@ The battery class driver takes care of the following tasks for miniclass drivers
 
 -   Handling certain standard battery WMI classes
 
-See [Battery Miniclass Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_battery/) for descriptions of the routines that the battery class driver exports to battery miniclass drivers.
+See [Battery Miniclass Driver Routines](/windows-hardware/drivers/ddi/_battery/) for descriptions of the routines that the battery class driver exports to battery miniclass drivers.
 
  
-
- 
-
-
-
 

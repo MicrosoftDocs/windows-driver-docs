@@ -1,7 +1,6 @@
 ---
 title: Writing WIA Properties by a Driver
 description: Writing WIA Properties by a Driver
-ms.assetid: 6d2164ac-0fbc-4ecb-b3bf-a46efbe07f51
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,45 +13,45 @@ ms.localizationpriority: medium
 
 A WIA minidriver can update any of the current values of its WIA properties and valid values by using the following WIA service functions:
 
-<a href="" id="wiaswritemultiple"></a>[**wiasWriteMultiple**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswritemultiple)  
+<a href="" id="wiaswritemultiple"></a>[**wiasWriteMultiple**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiaswritemultiple)  
 Write all WIA property types. This is a general function that allows a WIA driver to write any property existing on a WIA item, including custom properties. It can be used to write to multiple properties per call.
 
-<a href="" id="wiaswritepropstr"></a>[**wiasWritePropStr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswritepropstr)  
+<a href="" id="wiaswritepropstr"></a>[**wiasWritePropStr**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiaswritepropstr)  
 Write WIA properties that are strings (type VT\_BSTR).
 
-<a href="" id="wiaswriteproplong"></a>[**wiasWritePropLong**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswriteproplong)  
+<a href="" id="wiaswriteproplong"></a>[**wiasWritePropLong**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiaswriteproplong)  
 Write WIA properties that are four-byte integers (type VT\_I4).
 
-<a href="" id="wiaswritepropfloat"></a>[**wiasWritePropFloat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswritepropfloat)  
+<a href="" id="wiaswritepropfloat"></a>[**wiasWritePropFloat**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiaswritepropfloat)  
 Write WIA properties that are four-byte real numbers (type VT\_R4).
 
-<a href="" id="wiaswritepropguid"></a>[**wiasWritePropGuid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswritepropguid)  
+<a href="" id="wiaswritepropguid"></a>[**wiasWritePropGuid**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiaswritepropguid)  
 Write WIA properties that are GUIDs (type VT\_CLSID).
 
-<a href="" id="wiaswritepropbin"></a>[**wiasWritePropBin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswritepropbin)  
+<a href="" id="wiaswritepropbin"></a>[**wiasWritePropBin**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiaswritepropbin)  
 Write WIA properties that are strings of unsigned bytes (type VT\_VECTOR | VT\_UI1).
 
-<a href="" id="wiasgetchangedvaluelong"></a>[**wiasGetChangedValueLong**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluelong)  
+<a href="" id="wiasgetchangedvaluelong"></a>[**wiasGetChangedValueLong**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetchangedvaluelong)  
 Get the current changed information for WIA properties that are four-byte integers (type VT\_I4).
 
-<a href="" id="wiasgetchangedvaluefloat"></a>[**wiasGetChangedValueFloat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluefloat)  
+<a href="" id="wiasgetchangedvaluefloat"></a>[**wiasGetChangedValueFloat**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetchangedvaluefloat)  
 Get the current changed information for WIA properties that are four-byte real numbers (type VT\_R4).
 
-<a href="" id="wiasgetchangedvalueguid"></a>[**wiasGetChangedValueGuid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvalueguid)  
+<a href="" id="wiasgetchangedvalueguid"></a>[**wiasGetChangedValueGuid**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetchangedvalueguid)  
 Get the current changed information for WIA properties that are GUIDs (type VT\_CLSID).
 
-<a href="" id="wiasgetchangedvaluestr"></a>[**wiasGetChangedValueStr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluestr)  
+<a href="" id="wiasgetchangedvaluestr"></a>[**wiasGetChangedValueStr**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetchangedvaluestr)  
 Get the current changed information for WIA properties that are strings (type VT\_BSTR).
 
-<a href="" id="wiascreatepropcontext"></a>[**wiasCreatePropContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiascreatepropcontext)  
-Create a WIA property context, which is used in the [**wiasGetChangedValueLong**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluelong), [**wiasGetChangedValueFloat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluefloat), [**wiasGetChangedValueGuid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvalueguid), and [**wiasGetChangedValueStr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluestr) service functions.
+<a href="" id="wiascreatepropcontext"></a>[**wiasCreatePropContext**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatepropcontext)  
+Create a WIA property context, which is used in the [**wiasGetChangedValueLong**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetchangedvaluelong), [**wiasGetChangedValueFloat**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetchangedvaluefloat), [**wiasGetChangedValueGuid**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetchangedvalueguid), and [**wiasGetChangedValueStr**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetchangedvaluestr) service functions.
 
-<a href="" id="wiasfreepropcontext"></a>[**wiasFreePropContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasfreepropcontext)  
-Free the allocated context memory that was created by [**wiasCreatePropContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiascreatepropcontext).
+<a href="" id="wiasfreepropcontext"></a>[**wiasFreePropContext**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasfreepropcontext)  
+Free the allocated context memory that was created by [**wiasCreatePropContext**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatepropcontext).
 
 ### <a href="" id="implementing-iwiaminidrv-drvvalidateitemproperties"></a>Implementing IWiaMiniDrv::drvValidateItemProperties
 
-The [**IWiaMiniDrv::drvValidateItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties) method is called when changes are made to an item's WIA properties. The WIA minidriver should not only check that the values are valid, but must update any valid values that change.
+The [**IWiaMiniDrv::drvValidateItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties) method is called when changes are made to an item's WIA properties. The WIA minidriver should not only check that the values are valid, but must update any valid values that change.
 
 If a WIA property is invalid, andthe application is not writing to it, the invalid value and any dependent values must be changed to valid values, or else fail validation (because the application is setting the property to an invalid value).
 
@@ -174,9 +173,4 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
 ```
 
  
-
- 
-
-
-
 

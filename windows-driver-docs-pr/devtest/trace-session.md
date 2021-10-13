@@ -1,7 +1,6 @@
 ---
 title: Trace Session
 description: Trace Session
-ms.assetid: 50a8cc64-5127-4abe-a6a8-514ca5db63ab
 keywords:
 - trace sessions WDK
 - trace sessions WDK , about trace sessions

@@ -1,7 +1,6 @@
 ---
 title: Implementing XPS Filters
 description: Implementing XPS Filters
-ms.assetid: 681f533f-d6f6-43a3-be0b-10d8c1a6f12e
 keywords:
 - XPSDrv printer drivers WDK , render modules
 - render modules WDK XPSDrv , XPS filters
@@ -15,21 +14,21 @@ ms.localizationpriority: medium
 # Implementing XPS Filters
 
 
-All XPS filters must implement the [IPrintPipelineFilter](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintpipelinefilter) interface.
+All XPS filters must implement the [IPrintPipelineFilter](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelinefilter) interface.
 
-During the call to the [**IPrintPipelineFilter::InitializeFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-iprintpipelinefilter-initializefilter) method, a filter should:
+During the call to the [**IPrintPipelineFilter::InitializeFilter**](/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-iprintpipelinefilter-initializefilter) method, a filter should:
 
-1.  Cache the pointer to the [IPrintPipelineManagerControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintpipelinemanagercontrol) interface.
+1.  Cache the pointer to the [IPrintPipelineManagerControl](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelinemanagercontrol) interface.
 
-2.  Process relevant data in the [IPrintPipelinePropertyBag](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintpipelinepropertybag) interface.
+2.  Process relevant data in the [IPrintPipelinePropertyBag](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelinepropertybag) interface.
 
-3.  Call the [**IInterFilterCommunicator::RequestReader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-iinterfiltercommunicator-requestreader) and [**IInterFilterCommunicator::RequestWriter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-iinterfiltercommunicator-requestwriter) methods of the **IInterfilterCommunicator** interface (pIInterFilterCom) to initialize the provider and consumer interfaces for the filter.
+3.  Call the [**IInterFilterCommunicator::RequestReader**](/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-iinterfiltercommunicator-requestreader) and [**IInterFilterCommunicator::RequestWriter**](/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-iinterfiltercommunicator-requestwriter) methods of the **IInterfilterCommunicator** interface (pIInterFilterCom) to initialize the provider and consumer interfaces for the filter.
 
-If the data contains a PrintTicket section, you can access the data through the Microsoft Win32 PrintTicket or PrintCapabilities API. For UniDrv and PScript5 drivers that are based on XPSDrv, filters can have access to the [IPrintCoreHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelper) interface core Unidrv or PScript5 driver as their configuration service.
+If the data contains a PrintTicket section, you can access the data through the Microsoft Win32 PrintTicket or PrintCapabilities API. For UniDrv and PScript5 drivers that are based on XPSDrv, filters can have access to the [IPrintCoreHelper](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelper) interface core Unidrv or PScript5 driver as their configuration service.
 
 Filters may also be able to access proprietary configuration data through the property bag, depending on driver design.
 
-The Inter-Filter Communicator is the part of the Filter Pipeline Manager that handles the communication between filters in the filter pipeline. When the Filter Pipeline Manager initializes a filter, an Inter-Filter Communicator interface ([IInterFilterCommunicator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iinterfiltercommunicator)) is passed to the filter so that the filter can obtain the read and write interfaces that are defined for that filter.
+The Inter-Filter Communicator is the part of the Filter Pipeline Manager that handles the communication between filters in the filter pipeline. When the Filter Pipeline Manager initializes a filter, an Inter-Filter Communicator interface ([IInterFilterCommunicator](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iinterfiltercommunicator)) is passed to the filter so that the filter can obtain the read and write interfaces that are defined for that filter.
 
 Microsoft supplies the XPS document and stream interfaces, but you can create your own inter-filter interfaces that are defined for that filter. Microsoft provides the following interfaces:
 
@@ -54,9 +53,4 @@ The following recommendations apply to filters:
 For more information about adding asynchronous notification to your filter, see [Asynchronous Notifications in Print Filters](asynchronous-notifications-in-print-filters.md).
 
  
-
- 
-
-
-
 

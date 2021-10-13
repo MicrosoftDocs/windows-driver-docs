@@ -1,7 +1,6 @@
 ---
 title: Protocol Binding States and Operations
 description: Protocol Binding States and Operations
-ms.assetid: 669b3de1-7f6b-4e63-8943-c8eaadfa80fc
 keywords:
 - protocol drivers WDK networking , binding operational states
 - NDIS protocol drivers WDK , binding operation states
@@ -22,7 +21,7 @@ ms.localizationpriority: medium
 An NDIS protocol driver must support the following operational states for each binding that the driver manages:
 
 <a href="" id="unbound"></a>Unbound  
-The Unbound state is the initial state of a binding. In this state, the protocol driver waits for NDIS to call the [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_bind_adapter_ex) function.
+The Unbound state is the initial state of a binding. In this state, the protocol driver waits for NDIS to call the [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function.
 
 <a href="" id="opening"></a>Opening  
 In the Opening state, a protocol driver allocates resources for the binding and attempts to open the adapter.
@@ -200,7 +199,7 @@ In the following table, the headings represent the binding states, and events ar
 The primary binding events are defined as follows:
 
 <a href="" id="protocolbindadapterex"></a>*ProtocolBindAdapterEx*  
-After NDIS calls the driver's [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_bind_adapter_ex) function, the binding enters the Opening state. For more information, see [Binding to an Adapter](binding-to-an-adapter.md).
+After NDIS calls the driver's [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function, the binding enters the Opening state. For more information, see [Binding to an Adapter](binding-to-an-adapter.md).
 
 <a href="" id="bind-failed"></a>Bind failed  
 If the protocol driver fails to bind to the adapter, the binding returns to the Unbound state.
@@ -209,7 +208,7 @@ If the protocol driver fails to bind to the adapter, the binding returns to the 
 If the driver successfully opens the adapter, the binding enters the Paused state. The driver completes the bind operation.
 
 <a href="" id="protocolunbindadapterex"></a>*ProtocolUnbindAdapterEx*  
-After NDIS calls the driver's [*ProtocolUnbindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_unbind_adapter_ex) hander, the binding enters the *Closing* state. For more information, see [Unbinding from an Adapter](unbinding-from-an-adapter.md).
+After NDIS calls the driver's [*ProtocolUnbindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_unbind_adapter_ex) hander, the binding enters the *Closing* state. For more information, see [Unbinding from an Adapter](unbinding-from-an-adapter.md).
 
 <a href="" id="unbind-is-complete"></a>Unbind is complete  
 After the driver completes the unbind operation, the binding enters the Unbound state.
@@ -242,14 +241,7 @@ A protocol driver can initiate OID requests to set or query information in under
 ## Related topics
 
 
-[Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md)
+[Writing NDIS Protocol Drivers](initializing-a-protocol-driver.md)
 
  
-
- 
-
-
-
-
-
 

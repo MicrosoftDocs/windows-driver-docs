@@ -1,7 +1,6 @@
 ---
 title: Plotter Driver Components
 description: Plotter Driver Components
-ms.assetid: 6a976956-c188-4d31-b176-e97e09e8cc0b
 keywords:
 - Plotter Driver WDK print , components
 - MSPlot WDK print , components
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 MSPlot components consist of DLLs and binary data files, as illustrated in the following diagram.
 
-![diagram illustrating how the msplot components consist of dlls and binary data files](images/msplot.png)
+![diagram illustrating how the msplot components consist of dlls and binary data files.](images/msplot.png)
 
 Components in the diagram include:
 

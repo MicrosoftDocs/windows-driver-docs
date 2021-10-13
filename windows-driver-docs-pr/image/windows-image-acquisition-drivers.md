@@ -1,8 +1,7 @@
 ---
 title: Windows Image Acquisition Drivers
-description: Windows Image Acquisition Drivers
-ms.assetid: ac145e5f-82c5-4c44-a0cc-c1ea7726d34e
-ms.date: 07/18/2018
+description: The Windows Image Acquisition (WIA) programming interface documentation explains how to develop a WIA driver that supports communication to imaging devices such as digital cameras and scanners.
+ms.date: 08/10/2021
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +11,7 @@ The Microsoft Windows Image Acquisition (WIA) programming interface is a Still I
 
 WIA is a full-featured imaging architecture that has evolved from the Windows STI model. WIA provides robustness, reliability, a consistent user experience, and built-in driver support for industry standard protocols such as the Picture Transfer Protocol (PTP) for cameras.
 
-For information about programming imaging applications, see the [WIA Application Programming Interface](https://docs.microsoft.com/windows/desktop/wia/-wia-wia-application-programming-interface).
+For information about programming imaging applications, see the [WIA Application Programming Interface](/windows/desktop/wia/-wia-wia-application-programming-interface).
 
 This section contains the following topics:
 
@@ -29,5 +28,3 @@ This section contains the following topics:
 [WIA Samples and Tools](wia-samples-and-tools.md)
 
 [Installing a WIA Minidriver](installing-a-wia-minidriver.md)
-
- 

@@ -1,7 +1,6 @@
 ---
 title: XPSDrv Installation
 description: XPSDrv Installation
-ms.assetid: 0b5ef114-2862-46f9-bd32-ae09fa4e6a92
 keywords:
 - XPSDrv printer drivers WDK , installing
 - INF files WDK print , XPSDrv printer drivers
@@ -14,9 +13,9 @@ ms.localizationpriority: medium
 
 To be properly installed by the spooler, XPSDrv drivers must include the following:
 
--   The [**CopyFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) directive of the driver INF file must reference the [filter pipeline configuration file](filter-pipeline-configuration-file.md).
+-   The [**CopyFiles**](../install/inf-copyfiles-directive.md) directive of the driver INF file must reference the [filter pipeline configuration file](filter-pipeline-configuration-file.md).
 
--   The Needs directive must reference Xpsdrv.oem. For more information about the Needs directive, see [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) and [Source Media for INFs](https://docs.microsoft.com/windows-hardware/drivers/install/source-media-for-inf-files).
+-   The Needs directive must reference Xpsdrv.oem. For more information about the Needs directive, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md) and [Source Media for INFs](../install/source-media-for-inf-files.md).
 
 -   If the configuration module is based on Unidrv, the Needs directive must reference Unidrv.oem and Xpsgpd.oem. Likewise, if the XPSDrv driver configuration module is based on PScript5, the Needs directive must reference Pscript.oem and Xpsppd.oem.
 
@@ -53,9 +52,4 @@ xdsmpl-pipelineconfig.xml
 ```
 
  
-
- 
-
-
-
 

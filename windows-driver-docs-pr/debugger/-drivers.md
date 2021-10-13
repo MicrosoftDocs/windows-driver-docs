@@ -1,7 +1,6 @@
 ---
-title: drivers
+title: drivers (WinDbg)
 description: In Windows XP and later versions of Windows, the drivers extension is obsolete. Instead use the lm command.
-ms.assetid: 48b69af3-bf00-43d3-ac1a-e9513ead8647
 keywords: ["drivers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,8 +64,7 @@ Causes the display to be a much longer and more detailed list of the driver imag
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about drivers and their memory use, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 An explanation of this command's display is given in the following table:
 

@@ -1,7 +1,6 @@
 ---
 title: Managing Device Performance States
 description: Managing Device Performance States
-ms.assetid: 5a4cc09a-e86e-4e5a-98b2-0351b253b5b6
 keywords: ["power management WDK kernel , device performance states", "device performance states WDK power management", "performance states WDK power management", "custom power settings WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -26,9 +25,9 @@ You can define custom power settings that can be used to configure device perfor
 
 -   Optionally, a system administrator can create an administrative template (.ADM) file that enables group policy-based configuration of new power settings.
 
-An individual power setting contains all of the information that is required to uniquely identify, name, describe, and provide values for the power setting. Each power setting is defined with a GUID, a setting name, a description, and default settings for AC and DC power schemes. A custom power setting can be created statically for a device, by using an [**INF AddPowerSetting directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addpowersetting-directive), or dynamically, by calling the Win32 power management functions that are included in the power management reference that is provided with Microsoft Windows SDK documentation.
+An individual power setting contains all of the information that is required to uniquely identify, name, describe, and provide values for the power setting. Each power setting is defined with a GUID, a setting name, a description, and default settings for AC and DC power schemes. A custom power setting can be created statically for a device, by using an [**INF AddPowerSetting directive**](../install/inf-addpowersetting-directive.md), or dynamically, by calling the Win32 power management functions that are included in the power management reference that is provided with Microsoft Windows SDK documentation.
 
-Drivers call [**PoRegisterPowerSettingCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-poregisterpowersettingcallback) to register a callback routine that the power manager calls to notify the driver of a change to a power setting. When the setting changes, the power manager calls the callback routine and passes the new setting value. Drivers can then take the action that is appropriate for the power setting. Each setting is identified by the GUID of the power setting. The system-defined GUIDs for power settings are defined in Wdm.h and Ntpoapi.h.
+Drivers call [**PoRegisterPowerSettingCallback**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterpowersettingcallback) to register a callback routine that the power manager calls to notify the driver of a change to a power setting. When the setting changes, the power manager calls the callback routine and passes the new setting value. Drivers can then take the action that is appropriate for the power setting. Each setting is identified by the GUID of the power setting. The system-defined GUIDs for power settings are defined in Wdm.h and Ntpoapi.h.
 
 For example, to be notified when monitor power is turned on or off, a driver calls **PoRegisterPowerSettingCallback**, supplying the GUID that identifies the monitor power setting (GUID\_MONITOR\_POWER\_ON) and a pointer to the callback routine that the power manager calls when the value of the monitor power setting changes.
 
@@ -70,9 +69,4 @@ The active power scheme setting and the power scheme personality setting use the
 When the power source changes, the power manager calls the callback routine and passes the GUID that represents the power source setting and the value of the power source setting that indicates whether the computer is being powered by an AC power source, a DC power source, or a short-term DC power source.
 
  
-
- 
-
-
-
 

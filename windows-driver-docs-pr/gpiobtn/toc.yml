@@ -1,89 +1,84 @@
 - name: "Hardware notifications design guide"
+  href: index.md
+- name: "GPIO buttons and indicators implementation guide"
 # Auto-expanded node
   items: 
-  - name: "Hardware notifications design guide"
-    href: index.md
   - name: "GPIO buttons and indicators implementation guide"
+    href: gpio-buttons-and-indicators-implementation-guide-for-windows-8-1.md
+  - name: "State indicators"
 # Auto-expanded node
     items: 
-    - name: "GPIO buttons and indicators implementation guide"
-      href: gpio-buttons-and-indicators-implementation-guide-for-windows-8-1.md
     - name: "State indicators"
+      href: state-indicators.md
+    - name: "Behavior and guidance"
+      href: behavior-and-guidance.md
+    - name: "Docking versus laptop slate conversion"
+      href: docking-versus-laptop-slate-conversion.md
+    - name: "Implementation requirements for various form factors"
+      href: implementation-requirements-for-various-form-factors.md
+    - name: "Considerations for convertibles"
+      href: considerations-for-convertibles.md
+  - name: "Physical buttons"
 # Auto-expanded node
-      items: 
-      - name: "State indicators"
-        href: state-indicators.md
-      - name: "Behavior and guidance"
-        href: behavior-and-guidance.md
-      - name: "Docking versus laptop slate conversion"
-        href: docking-versus-laptop-slate-conversion.md
-      - name: "Implementation requirements for various form factors"
-        href: implementation-requirements-for-various-form-factors.md
-      - name: "Considerations for convertibles"
-        href: considerations-for-convertibles.md
+    items: 
     - name: "Physical buttons"
+      href: physical-buttons.md
+    - name: "Button behavior"
+      href: button-behavior.md
+    - name: "Button reporting"
+      href: button-reporting.md
+  - name: "Interface implementation guidance"
 # Auto-expanded node
-      items: 
-      - name: "Physical buttons"
-        href: physical-buttons.md
-      - name: "Button behavior"
-        href: button-behavior.md
-      - name: "Button reporting"
-        href: button-reporting.md
+    items: 
     - name: "Interface implementation guidance"
+      href: interface-implementation-guidance.md
+    - name: "Available interfaces and related APIs"
+      href: available-interfaces-and-related-apis.md
+    - name: "Indicator implementation"
+      href: indicator-implementation.md
+    - name: "Button implementation"
+      href: button-implementation.md
+  - name: "Code samples"
 # Auto-expanded node
-      items: 
-      - name: "Interface implementation guidance"
-        href: interface-implementation-guidance.md
-      - name: "Available interfaces and related APIs"
-        href: available-interfaces-and-related-apis.md
-      - name: "Indicator implementation"
-        href: indicator-implementation.md
-      - name: "Button implementation"
-        href: button-implementation.md
+    items: 
     - name: "Code samples"
+      href: code-samples.md
+    - name: "Laptop/slate mode toggling between states"
+      href: laptop-slate-mode-toggling-between-states.md
+    - name: "Windows button sample code"
+      href: windows-button-sample-code.md
+    - name: "ACPI descriptor samples"
+      href: acpi-descriptor-samples.md
+  - name: "Implement the unattended Windows Setup setting"
+    href: implement-the-unattended-windows-setup-setting.md
+  - name: "Logging and investigations"
+    href: logging-and-investigations.md
+  - name: "Running test passes"
+    href: running-test-passes.md
+- name: "GPIO buttons and indicators supplemental testing"
 # Auto-expanded node
-      items: 
-      - name: "Code samples"
-        href: code-samples.md
-      - name: "Laptop/slate mode toggling between states"
-        href: laptop-slate-mode-toggling-between-states.md
-      - name: "Windows button sample code"
-        href: windows-button-sample-code.md
-      - name: "ACPI descriptor samples"
-        href: acpi-descriptor-samples.md
-      - name: "HID button report descriptors"
-        href: hid-button-report-descriptors.md
-    - name: "Implement the unattended Windows Setup setting"
-      href: implement-the-unattended-windows-setup-setting.md
-    - name: "Logging and investigations"
-      href: logging-and-investigations.md
-    - name: "Running test passes"
-      href: running-test-passes.md
+  items: 
   - name: "GPIO buttons and indicators supplemental testing"
+    href: gpio-buttons-and-indicators-supplemental-certification-testing-for-windows-8-1.md
+  - name: "Test automation tools"
+    href: test-automation-tools.md
+  - name: "Integration testing"
 # Auto-expanded node
     items: 
-    - name: "GPIO buttons and indicators supplemental testing"
-      href: gpio-buttons-and-indicators-supplemental-certification-testing-for-windows-8-1.md
-    - name: "Test automation tools"
-      href: test-automation-tools.md
     - name: "Integration testing"
+      href: integration-testing.md
+    - name: "Indicator testing"
+      href: indicator-testing.md
+    - name: "Convertible testing"
+      href: convertible-testing.md
+    - name: "Touchscreen laptop system testing"
+      href: touchscreen-laptop-system-testing.md
+  - name: "GPIO logging and investigations"
+    href: gpio-logging-and-investigations.md
+- name: "Hardware notifications support"
 # Auto-expanded node
-      items: 
-      - name: "Integration testing"
-        href: integration-testing.md
-      - name: "Indicator testing"
-        href: indicator-testing.md
-      - name: "Convertible testing"
-        href: convertible-testing.md
-      - name: "Touchscreen laptop system testing"
-        href: touchscreen-laptop-system-testing.md
-    - name: "GPIO logging and investigations"
-      href: gpio-logging-and-investigations.md
+  items: 
   - name: "Hardware notifications support"
-# Auto-expanded node
-    items: 
-    - name: "Hardware notifications support"
-      href: hardware-notifications-support.md
-    - name: "Create a hardware notification client driver"
-      href: create-a-hardware-notification-client-driver.md
+    href: hardware-notifications-support.md
+  - name: "Create a hardware notification client driver"
+    href: create-a-hardware-notification-client-driver.md

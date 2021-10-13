@@ -1,7 +1,6 @@
 ---
-title: .if
+title: .if (WinDbg)
 description: The .if token behaves like the if keyword in C.
-ms.assetid: ccd74461-759f-400d-90da-efba2e4498e6
 keywords: [".if Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Protocol drivers
 description: Protocol drivers
-ms.assetid: e144f9a6-97fc-46ac-82f8-4a1745d280c7
 keywords:
 - protocol drivers WDK networking , architecture
 - NDIS protocol drivers WDK , architecture
@@ -23,6 +22,6 @@ At its upper edge, a transport protocol driver has a private interface to a high
 
 ## Related topics
 
-[NDIS Protocol Drivers](ndis-protocol-drivers.md)
+[NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md)
 
-[NDIS Protocol Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[NDIS Protocol Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

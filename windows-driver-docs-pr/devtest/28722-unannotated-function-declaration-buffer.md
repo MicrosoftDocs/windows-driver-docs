@@ -1,7 +1,6 @@
 ---
-title: C28722
+title: C28722 warning
 description: Warning C28722 Unannotated buffer in function declaration.
-ms.assetid: 460B9F71-9878-4DC8-8B93-6DCDF1544213
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

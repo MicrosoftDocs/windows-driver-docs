@@ -1,7 +1,6 @@
 ---
 title: Auto-Configured Scanning
 description: Auto-Configured Scanning
-ms.assetid: 6904e216-3eb7-419f-a6ca-198defaeebe0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,7 +16,7 @@ In addition, auto-configured scanning can relieve WIA applications of the respon
 
 WIA 2.0 minidrivers can support auto-configured scanning for all types of WIA scanner devices, including scanners that connect to serial and parallel ports, scanners that connect to USB, SCSI, and IEEE 1394 buses, and network-connected Web Services scanners.
 
-In Windows Vista, the Microsoft Web Services for Devices (WSD) scan class driver includes a custom driver extension to support auto-configured scanning. This driver provides auto-configured scanning only for networked WIA scanner devices that implement the Windows Device Protocol (WDP) 1.0 for scanners. In Windows 7, the WSD scan class driver implements auto-configured scanning as a standard feature, as described in the preceding paragraphs, instead of as a custom driver extension. For more information about the WSD scan class driver, see [WIA with Web Services for Devices](wia-with-web-services-for-devices.md). For more information about WDP for scanners, see [Web Services for Devices Scan Service Schema](https://docs.microsoft.com/windows-hardware/drivers/image/scan-service--ws-scan--schema).
+In Windows Vista, the Microsoft Web Services for Devices (WSD) scan class driver includes a custom driver extension to support auto-configured scanning. This driver provides auto-configured scanning only for networked WIA scanner devices that implement the Windows Device Protocol (WDP) 1.0 for scanners. In Windows 7, the WSD scan class driver implements auto-configured scanning as a standard feature, as described in the preceding paragraphs, instead of as a custom driver extension. For more information about the WSD scan class driver, see [WIA with Web Services for Devices](wia-with-web-services-for-devices.md). For more information about WDP for scanners, see [Web Services for Devices Scan Service Schema](./scan-service--ws-scan--schema.md).
 
 ### Examples
 
@@ -32,9 +31,4 @@ This section contains the following topics:
 [WIA Properties Supported by an Auto Item](wia-properties-supported-by-an-auto-item.md)
 
  
-
- 
-
-
-
 

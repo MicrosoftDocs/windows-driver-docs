@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_CA\_MODULE\_STATUS\_CHANGED
 description: Clients use KSEVENT\_BDA\_CA\_MODULE\_STATUS\_CHANGED to request notification when status on the CA module associated with an ECM map node changes.
-ms.assetid: a331cfa9-abd0-422e-8c39-0ff01f9dcc6a
 keywords: ["KSEVENT_BDA_CA_MODULE_STATUS_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,8 +30,7 @@ KSEVENT
 
 A KSEVENTDATA structure that describes how to notify about the event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -50,18 +48,9 @@ Requirements
 ## See also
 
 
-[**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](./ksevent-structure.md)
 
-[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)
+[**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
 [**KSPROPERTY\_BDA\_CA\_MODULE\_STATUS**](ksproperty-bda-ca-module-status.md)
-
- 
-
- 
-
-
-
-
-
 

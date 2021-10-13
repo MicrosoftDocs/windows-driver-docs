@@ -1,7 +1,6 @@
 ---
 title: Using Neither Buffered Nor Direct I/O
 description: Using Neither Buffered Nor Direct I/O
-ms.assetid: e85af2e0-e532-47ca-918e-087e7aff859e
 keywords: ["buffers WDK I/O , neither buffered nor direct I/O", "data buffers WDK I/O , neither buffered nor direct I/O", "neither buffered nor direct I/O WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -19,13 +18,13 @@ An intermediate or lowest-level driver cannot always meet this condition. For ex
 
 The I/O manager determines that an I/O operation is using neither buffered nor direct I/O as follows:
 
--   For [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write) requests, neither DO\_BUFFERED\_IO nor DO\_DIRECT\_IO are set in the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure. For more information, see [Initializing a Device Object](initializing-a-device-object.md).
+-   For [**IRP\_MJ\_READ**](./irp-mj-read.md) and [**IRP\_MJ\_WRITE**](./irp-mj-write.md) requests, neither DO\_BUFFERED\_IO nor DO\_DIRECT\_IO are set in the **Flags** member of the [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. For more information, see [Initializing a Device Object](initializing-a-device-object.md).
 
--   For [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) requests, the IOCTL code's value contains METHOD\_NEITHER as the *TransferType* value in the IOCTL value. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
+-   For [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests, the IOCTL code's value contains METHOD\_NEITHER as the *TransferType* value in the IOCTL value. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
 
 When a driver receives an IRP that specifies an I/O operation using neither buffered nor direct I/O, it must do the following:
 
-1.  Check the validity of the user buffer's address range and check whether the appropriate read or write access is permitted, using the [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-probeforwrite) support routines. The driver must enclose its accesses to the buffer's address range within a driver-supplied exception handler, so that a user thread cannot change the access rights for the buffer while the driver is accessing memory. If the probe raises an exception, the driver should return an error. The driver must call these routines within the context of the thread that made the I/O request; therefore, only a higher-level driver can perform this task.
+1.  Check the validity of the user buffer's address range and check whether the appropriate read or write access is permitted, using the [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) support routines. The driver must enclose its accesses to the buffer's address range within a driver-supplied exception handler, so that a user thread cannot change the access rights for the buffer while the driver is accessing memory. If the probe raises an exception, the driver should return an error. The driver must call these routines within the context of the thread that made the I/O request; therefore, only a higher-level driver can perform this task.
 
 2.  Manage buffers and memory operations in one of the following ways:
     -   Carry out its own double-buffering operations, as the I/O manager does for drivers that use buffered I/O. For more information, see [Using Buffered I/O](using-buffered-i-o.md).
@@ -35,9 +34,4 @@ When a driver receives an IRP that specifies an I/O operation using neither buff
 In effect, the driver must choose on a per-IRP basis whether to do buffered I/O, direct I/O, or I/O in the context of the calling thread, and it must handle any exceptions that might occur in a user-mode thread context. The driver must manage its own user buffer accesses, double-buffering operations, and memory mappings, as necessary, instead of letting the I/O manager handle these operations for the driver.
 
  
-
- 
-
-
-
 

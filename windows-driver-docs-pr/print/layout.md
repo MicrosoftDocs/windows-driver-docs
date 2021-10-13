@@ -1,34 +1,24 @@
 ---
-title: Layout
-description: Layout
-ms.assetid: 649268ab-582a-4a9a-9f1e-669af321e6c6
-ms.date: 11/28/2017
+title: Layout property
+description: Contains information about the appearance of each page of the print job.
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
-# Layout
+# Layout property
 
+Schema Path: \\Printer.Layout
 
-Schema Path:\\Printer.Layout
-
-Node Type:Property
+Node Type: Property
 
 The Layout property contains information about the appearance of each page of the print job. This includes the type of media available and how to place the information about each sheet.
 
 The Layout property is the parent of the following properties:
 
-[NumberUp](numberup2.md)
+- [NumberUp](numberup2.md)
 
-[Orientation](orientation2.md)
+- [Orientation](orientation2.md)
 
-[Resolutions](resolutions.md)
+- [Resolutions](resolutions.md)
 
-[InputBins](inputbins2.md)
-
- 
-
- 
-
-
-
-
+- [InputBins](inputbins2.md)

@@ -1,7 +1,6 @@
 ---
 title: Creating Callback Objects
 description: Creating Callback Objects
-ms.assetid: bbae1458-911f-4a48-8bf2-0997e8f98826
 keywords:
 - callback objects WDK UMDF
 - callback objects WDK UMDF , creating
@@ -16,13 +15,13 @@ ms.localizationpriority: medium
 # Creating Callback Objects
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 A UMDF driver can create *callback objects*, which consist of context data and interface methods. The framework accesses the driver's callback objects through the driver's callback interface methods.
 
 The following figure shows how driver-implemented callback objects correspond to [framework objects](framework-objects.md).
 
-![framework objects and vendor-supplied callback objects](images/correspond.gif)
+![framework objects and vendor-supplied callback objects.](images/correspond.gif)
 
 A UMDF driver can create several types of callback objects, including the following:
 
@@ -40,7 +39,7 @@ A UMDF driver can create several types of callback objects, including the follow
 
 The following figure shows how a UMDF driver creates a device callback object.
 
-![call sequence for creating a umdf device callback object](images/callback.gif)
+![call sequence for creating a umdf device callback object.](images/callback.gif)
 
 The following topics contain code examples that show how to create a callback object:
 

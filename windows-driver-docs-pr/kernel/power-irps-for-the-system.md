@@ -1,7 +1,6 @@
 ---
 title: Power IRPs for the System
 description: Power IRPs for the System
-ms.assetid: a37e8dda-af7a-4f28-bf04-908a74bb5b2f
 keywords: ["power IRPs WDK kernel , system", "system power IRPs WDK kernel", "IRP_MJ_POWER", "IRP_MN_SET_POWER", "IRP_MN_QUERY_POWER", "inrush power WDK kernel", "system inrush power WDK kernel", "change power states WDK kernel", "reaffirming power states", "idle time-outs WDK power management", "expired batteries WDK power management", "battery expirations WDK power management", "user-requested power changes WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,13 +12,13 @@ ms.localizationpriority: medium
 
 
 
-A *system power IRP* specifies major IRP code [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power), one of the minor power IRP codes listed below, and the value **SystemPowerState** in the **Power.Type** member of the IRP stack. Only the power manager can send such an IRP; a driver cannot send a system power IRP.
+A *system power IRP* specifies major IRP code [**IRP\_MJ\_POWER**](./irp-mj-power.md), one of the minor power IRP codes listed below, and the value **SystemPowerState** in the **Power.Type** member of the IRP stack. Only the power manager can send such an IRP; a driver cannot send a system power IRP.
 
 The power manager sends a system power IRP for one of the following reasons:
 
--   To change the system power state in response to an idle time-out, a change in system activity, a user request, or an expiring battery ([**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power))
+-   To change the system power state in response to an idle time-out, a change in system activity, a user request, or an expiring battery ([**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md))
 
--   To query devices to determine whether the system can go to sleep ([**IRP\_MN\_QUERY\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-power))
+-   To query devices to determine whether the system can go to sleep ([**IRP\_MN\_QUERY\_POWER**](./irp-mn-query-power.md))
 
 -   To reaffirm the current system power state after a query (**IRP\_MN\_SET\_POWER**)
 
@@ -27,13 +26,13 @@ The power manager sends **IRP\_MN\_QUERY\_POWER** and **IRP\_MN\_SET\_POWER** re
 
 For example, to change the system power state, the power manager sends a system power IRP to the top driver in the stack at each device node of the device tree. The following figure shows how drivers within a single device stack handle a system power IRP.
 
-![diagram illustrating the path of a system power irp](images/s2dirp.png)
+![diagram illustrating the path of a system power irp.](images/s2dirp.png)
 
 As the previous figure shows:
 
 1.  The power manager calls the I/O manager to send a system power IRP to each leaf node in the device tree.
 
-2.  Drivers handle the IRP if possible, set [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routines if necessary, and call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) (Windows 7 and Windows Vista) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver) (Windows Server 2003, Windows XP, and Windows 2000) to forward the IRP down the stack. If a driver must fail the IRP, the driver does so immediately and completes the IRP. Drivers can fail **IRP\_MN\_QUERY\_POWER** IRPs, but must not fail **IRP\_MN\_SET\_POWER** IRPs that set the system power state.
+2.  Drivers handle the IRP if possible, set [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines if necessary, and call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) (Windows 7 and Windows Vista) or [**PoCallDriver**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver) (Windows Server 2003, Windows XP, and Windows 2000) to forward the IRP down the stack. If a driver must fail the IRP, the driver does so immediately and completes the IRP. Drivers can fail **IRP\_MN\_QUERY\_POWER** IRPs, but must not fail **IRP\_MN\_SET\_POWER** IRPs that set the system power state.
 
 3.  When the driver that owns power policy for the device receives the IRP, that driver sets an *IoCompletion* routine for the system IRP and then forwards the IRP.
 
@@ -43,20 +42,15 @@ As the previous figure shows:
 
 6.  The I/O manager calls any *IoCompletion* routines that were set as drivers passed the system IRP down the device stack.
 
-7.  In its *IoCompletion* routine, the device power policy owner calls [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp) to send a device power IRP, specifying a device power state that is valid for the system power state in the system IRP. The driver sets a callback routine to be invoked when the device power IRP completes.
+7.  In its *IoCompletion* routine, the device power policy owner calls [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to send a device power IRP, specifying a device power state that is valid for the system power state in the system IRP. The driver sets a callback routine to be invoked when the device power IRP completes.
 
-    If necessary, the driver consults the **DeviceState** member in its cached copy of the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure (see [Reporting Device Power Capabilities](reporting-device-power-capabilities.md)) to determine which device power states correspond to the system power state in the IRP.
+    If necessary, the driver consults the **DeviceState** member in its cached copy of the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure (see [Reporting Device Power Capabilities](reporting-device-power-capabilities.md)) to determine which device power states correspond to the system power state in the IRP.
 
-8.  After the device IRP is complete and any device IRP completion routines have run, the power policy owner's callback routine is invoked. In the callback routine, the driver copies its returned status into the system IRP. In Windows Server 2003, Windows XP, and Windows 2000, the callback calls [**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-postartnextpowerirp) to start the next power IRP. However, in Windows 7 and Windows Vista, calling **PoStartNextPowerIrp** is not required and such a call performs no power management operation. Finally, the callback calls [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) to complete the system IRP.
+8.  After the device IRP is complete and any device IRP completion routines have run, the power policy owner's callback routine is invoked. In the callback routine, the driver copies its returned status into the system IRP. In Windows Server 2003, Windows XP, and Windows 2000, the callback calls [**PoStartNextPowerIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp) to start the next power IRP. However, in Windows 7 and Windows Vista, calling **PoStartNextPowerIrp** is not required and such a call performs no power management operation. Finally, the callback calls [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) to complete the system IRP.
 
 For further information, see [Handling System Power State Requests](handling-system-power-state-requests.md).
 
 Because some devices require an inrush of current when they power on, system inrush power IRPs are handled synchronously and serially throughout the system. Only one such IRP can be active at a time. For further information, see [Calling IoCallDriver vs. Calling PoCallDriver](calling-iocalldriver-versus-calling-pocalldriver.md).
 
  
-
- 
-
-
-
 

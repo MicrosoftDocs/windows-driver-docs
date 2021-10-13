@@ -12,7 +12,7 @@ Function aliases are a unique short name by which a user of the debugger can acc
 
 This topic assumes the reader is familiar with the debugger object model and JavaScript. For information about using debugger objects with JavaScript, see [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
 
-Some of the examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md). In addition the LINQ is used which is described in [Using LINQ With the debugger objects](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-linq-with-the-debugger-objects).
+Some of the examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md). In addition the LINQ is used which is described in [Using LINQ With the debugger objects](./using-linq-with-the-debugger-objects.md).
 
 
 
@@ -158,7 +158,7 @@ One of the advantages with using a function alias, is that it can be further ref
 ```
 
 
-LINQ commands such as the following can be used with functional aliases -  .All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form. For more information see [Using LINQ With the debugger objects](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-linq-with-the-debugger-objects).
+LINQ commands such as the following can be used with functional aliases -  .All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form. For more information see [Using LINQ With the debugger objects](./using-linq-with-the-debugger-objects.md).
 
 
 
@@ -170,7 +170,7 @@ As with other dx commands, you can right click on a command after it was execute
 0: kd> dx -g @$devices().OrderBy(obj => obj.@"InstancePath")
 ```
 
-![debugger objects function alias grid output showing sorted rows](images/debugger-objects-function-alias.png) 
+![debugger objects function alias grid output showing sorted rows.](images/debugger-objects-function-alias.png) 
 
 
 
@@ -239,9 +239,3 @@ In this example the top 5 process with the largest thread count are displayed.
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
-
-
-
-
-
-

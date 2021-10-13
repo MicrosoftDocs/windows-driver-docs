@@ -1,7 +1,6 @@
 ---
-title: urb
+title: urb (WinDbg)
 description: urb
-ms.assetid: 5eb68a56-af44-4a99-81cf-fb556fec0e2e
 keywords: ["urb extension (obsolete)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

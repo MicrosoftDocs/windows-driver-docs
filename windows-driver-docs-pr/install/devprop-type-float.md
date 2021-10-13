@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_FLOAT
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT64 identifier represents the base-data-type identifier that indicates that the data type is a FLOAT-typed IEEE floating-point number.
-ms.assetid: b83a0510-674e-4141-9d3f-25efcb08aea0
 keywords: ["DEVPROP_TYPE_FLOAT Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT64 identifier represents the base-data-type identifier that indicates that the data type is a FLOAT-typed IEEE floating-point number.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_FLOAT can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -33,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_FLOAT, call the correspon
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

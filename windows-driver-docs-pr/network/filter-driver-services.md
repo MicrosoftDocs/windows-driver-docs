@@ -1,7 +1,6 @@
 ---
 title: Filter Driver Services
 description: Filter Driver Services
-ms.assetid: 72ee00c6-0887-46bd-a329-ee7bf0dd2c06
 keywords:
 - filter drivers WDK networking , services
 - NDIS filter drivers WDK , services

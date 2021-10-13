@@ -1,7 +1,6 @@
 ---
 title: Analyzing a User-Mode Dump File
 description: Analyzing a User-Mode Dump File
-ms.assetid: b7f3dff8-cd2d-41c9-83ff-f0e5fb2312c0
 keywords: ["dump file, analyzing a user-mode dump file"]
 ms.date: 08/01/2018
 ms.localizationpriority: medium
@@ -22,7 +21,7 @@ User-mode memory dump files can be analyzed by WinDbg. The processor or Windows 
 
 ### <span id="installing_symbol_files"></span><span id="INSTALLING_SYMBOL_FILES"></span>Installing Symbol Files
 
-Before analyzing the memory dump file, you will need to install the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For more information about the proper installation of symbol files, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
+Before analyzing the memory dump file, you will need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md)..
 
 You will also need to install all the symbol files for the user-mode process, either an application or system service, that caused the system to generate the dump file. If this code was written by you, the symbol files should have been generated when the code was compiled and linked. If this is commercial code, check on the product CD-ROM or contact the software manufacturer for these particular symbol files.
 
@@ -34,7 +33,7 @@ To analyze a dump file, start WinDbg with the **-z** command-line option:
 
 The **-v** option (verbose mode) is also useful. For a full list of options, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
-If WinDbg is already running and is in dormant mode, you can open a crash dump by selecting the **File | Open Crash Dump** menu command or pressing the CTRL+D shortcut key. When the **Open Crash Dump** dialog box appears, enter the full path and name of the crash dump file in the **File name** text box, or use the dialog box to select the proper path and file name. When the proper file has been chosen, click **Open**.
+If WinDbg is already running and is in dormant mode, you can open a crash dump by selecting the **File | Open Crash Dump** menu command or pressing the CTRL+D shortcut key. When the **Open Crash Dump** dialog box appears, enter the full path and name of the crash dump file in the **File name** text box, or use the dialog box to select the proper path and file name. When the proper file has been chosen, select **Open**.
 
 You can also open a dump file after the debugger is running by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed with [**g (Go)**](g--go-.md).
 
@@ -63,7 +62,7 @@ User-mode memory dump files can be analyzed by CDB. The processor or Windows ver
 
 ### <span id="installing_symbol_files"></span><span id="INSTALLING_SYMBOL_FILES"></span>Installing Symbol Files
 
-Before analyzing the memory dump file, you will need to install the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For more information about the proper installation of symbol files, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
+Before analyzing the memory dump file, you will need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 You will also need to install all the symbol files for the user-mode process, either an application or system service, that caused the system to generate the dump file. If this code was written by you, the symbol files should have been generated when the code was compiled and linked. If this is commercial code, check on the product CD-ROM or contact the software manufacturer for these particular symbol files.
 

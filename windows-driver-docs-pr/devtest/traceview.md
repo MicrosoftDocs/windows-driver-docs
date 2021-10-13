@@ -1,7 +1,6 @@
 ---
 title: TraceView
 description: TraceView
-ms.assetid: f64ddf90-56b8-4341-8d59-f4d7e3eeddaf
 keywords:
 - software tracing WDK , TraceView
 - tracing WDK , TraceView

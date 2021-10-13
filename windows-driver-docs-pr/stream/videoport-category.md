@@ -1,7 +1,6 @@
 ---
 title: Videoport Category
 description: Videoport Category
-ms.assetid: c11a407f-4ff0-4337-b989-e3ec42418ec3
 keywords:
 - stream categories WDK video capture , videoport
 - videoport category WDK video capture
@@ -64,7 +63,7 @@ When specifying **PINNAME\_VIDEO\_VIDEOPORT** pins, use the information listed i
 </tr>
 <tr class="even">
 <td><p><strong>Required Event Sets</strong></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/kseventsetid-vpnotify" data-raw-source="[KSEVENTSETID_VPNotify](https://docs.microsoft.com/windows-hardware/drivers/stream/kseventsetid-vpnotify)">KSEVENTSETID_VPNotify</a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/kseventsetid-vpnotify" data-raw-source="[KSEVENTSETID_VPNotify](./kseventsetid-vpnotify.md)">KSEVENTSETID_VPNotify</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DirectShow majortype</strong></p></td>
@@ -78,11 +77,4 @@ When specifying **PINNAME\_VIDEO\_VIDEOPORT** pins, use the information listed i
 </table>
 
  
-
- 
-
- 
-
-
-
 

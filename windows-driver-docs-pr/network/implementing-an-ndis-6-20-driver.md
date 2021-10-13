@@ -1,7 +1,6 @@
 ---
 title: Implementing an NDIS 6.20 Driver
 description: Implementing an NDIS 6.20 Driver
-ms.assetid: 6c6f83ff-2a6f-4e5d-acc0-70835429312d
 keywords:
 - NDIS 6.20 WDK , implementing a driver
 ms.date: 04/20/2017
@@ -26,7 +25,7 @@ To inform NDIS and overlying drivers about device and driver capabilities, NDIS 
 
 -   [Power Management](power-management-enhancements-in-ndis-6-20.md)
 
--   [Receive Side Scaling (RSS)](ndis-receive-side-scaling2.md)
+-   [Receive Side Scaling (RSS)](./receive-side-scaling-version-2-rssv2-.md)
 
 -   [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq--in-ndis-6-20.md)
 
@@ -37,10 +36,4 @@ Replace code that uses obsolete interfaces with the NDIS 6.20 equivalents. For m
 Use NDIS interfaces that support more than 64 processors, for example, use the NDIS 6.20 read and write lock interface. For more information about support for more than 64 processors, see [Support for More than 64 Processors in NDIS 6.20](support-for-more-than-64-processors-in-ndis-6-20.md).
 
  
-
- 
-
-
-
-
 

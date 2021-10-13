@@ -1,7 +1,6 @@
 ---
 title: Get Vendor Log Page Size (Function Index 14)
 description: This function returns the size of the vendor log page so that the host knows the size of the buffer it needs to allocate to read the vendor log page.
-ms.assetid: 24211D67-1D36-4711-B87B-C99546E206FC
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function returns the size of the vendor log page so that the host knows the size of the buffer it needs to allocate to read the vendor log page.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

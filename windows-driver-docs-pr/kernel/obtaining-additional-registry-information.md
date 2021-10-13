@@ -1,7 +1,6 @@
 ---
 title: Obtaining Additional Registry Information
 description: Obtaining Additional Registry Information
-ms.assetid: 989acf63-3bb1-4d9a-a7a8-3eea1e2bc68a
 keywords: ["filtering registry calls WDK kernel , additional information to obtain", "registry filtering drivers WDK kernel , additional information to obtain"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -14,20 +13,15 @@ Registry filtering drivers that run on Windows Vista and later operating system 
 
 -   Object identifiers and names
 
-    The [**CmCallbackGetKeyObjectIDEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmcallbackgetkeyobjectidex) routine retrieves the registry key identifier and object name that are associated with a specified registry key object.
+    The [**CmCallbackGetKeyObjectIDEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmcallbackgetkeyobjectidex) routine retrieves the registry key identifier and object name that are associated with a specified registry key object.
 
 -   Transaction objects
 
-    The [**CmGetBoundTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmgetboundtransaction) routine returns a pointer to the transaction object that represents the [transaction](using-kernel-transaction-manager.md), if any, that is associated with a registry key object.
+    The [**CmGetBoundTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmgetboundtransaction) routine returns a pointer to the transaction object that represents the [transaction](introduction-to-ktm.md), if any, that is associated with a registry key object.
 
 -   Version information
 
-    The [**CmGetCallbackVersion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmgetcallbackversion) routine retrieves the major and minor version numbers for the current version of the configuration manager's registry callback feature.
+    The [**CmGetCallbackVersion**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmgetcallbackversion) routine retrieves the major and minor version numbers for the current version of the configuration manager's registry callback feature.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Cloning Stream Pointers
 description: Cloning Stream Pointers
-ms.assetid: bbe01f48-db86-41c9-b7b8-b48a4a295d21
 keywords:
 - stream pointers WDK AVStream , cloning
 - cloning stream pointers WDK AVStream
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-Multiple stream pointers can reference a single frame. To duplicate a stream pointer, call [**KsStreamPointerClone**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointerclone).
+Multiple stream pointers can reference a single frame. To duplicate a stream pointer, call [**KsStreamPointerClone**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerclone).
 
 The resulting copy of the stream pointer is referred to as a stream pointer *clone*. The clone is a new stream pointer that is identical to the parent. Initially, the clone references the same frame and has the same lock status. After it is created, a clone is independent of its parent stream pointer.
 
@@ -25,16 +24,11 @@ You can clone leading edge, trailing edge, or current clone stream pointers.
 
 Adding a clone stream pointer increments the reference count on that particular frame. See [Introduction to Stream Pointers](introduction-to-stream-pointers.md) For more information about reference counts.
 
-Enumerate clone stream pointers by using [**KsPinGetFirstCloneStreamPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspingetfirstclonestreampointer) and [**KsStreamPointerGetNextClone**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointergetnextclone).
+Enumerate clone stream pointers by using [**KsPinGetFirstCloneStreamPointer**](/windows-hardware/drivers/ddi/ks/nf-ks-kspingetfirstclonestreampointer) and [**KsStreamPointerGetNextClone**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointergetnextclone).
 
-Clones exist until you delete them by calling [**KsStreamPointerDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointerdelete). When the minidriver deletes a clone, AVStream decrements the reference count for the corresponding frame.
+Clones exist until you delete them by calling [**KsStreamPointerDelete**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete). When the minidriver deletes a clone, AVStream decrements the reference count for the corresponding frame.
 
 See [AVStream DMA Services](avstream-dma-services.md) for an example of how to use stream pointer clones.
 
  
-
- 
-
-
-
 

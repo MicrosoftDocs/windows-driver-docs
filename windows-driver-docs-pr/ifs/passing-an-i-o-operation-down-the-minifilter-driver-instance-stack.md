@@ -1,7 +1,6 @@
 ---
 title: Passing I/O Operations Down the Minifilter Driver Instance Stack
 description: Passing an I/O Operation Down the Minifilter Driver Instance Stack
-ms.assetid: b2661e1e-2190-4def-be6c-27057c631304
 keywords:
 - preoperation callback routines WDK file system minifilter , passing down driver instance stack
 - passing I/O ops down minifilter driver stack WDK file system
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_passing_an_io_operation_down_the_minifilter_instance_stack_if"></span><span id="DDK_PASSING_AN_IO_OPERATION_DOWN_THE_MINIFILTER_INSTANCE_STACK_IF"></span>
 
 
-When a minifilter driver's [**preoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_pre_operation_callback) or work routine returns an I/O operation to the filter manager, the filter manager sends the operation to minifilter drivers below the current minifilter driver in the minifilter driver instance stack and to legacy filters and the file system for further processing.
+When a minifilter driver's [**preoperation callback routine**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) or work routine returns an I/O operation to the filter manager, the filter manager sends the operation to minifilter drivers below the current minifilter driver in the minifilter driver instance stack and to legacy filters and the file system for further processing.
 
 A minifilter driver's preoperation callback routine returns an I/O operation to the filter manager for further processing by returning one of the following status values:
 
@@ -29,7 +28,7 @@ A minifilter driver's preoperation callback routine returns an I/O operation to 
 
  
 
-Alternatively, the work routine for an operation that was pended in a preoperation callback routine returns an I/O operation to the filter manager by passing one of the preceding status values in the *CallbackStatus* parameter when it calls [**FltCompletePendedPreOperation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcompletependedpreoperation) to resume processing for the pended I/O operation.
+Alternatively, the work routine for an operation that was pended in a preoperation callback routine returns an I/O operation to the filter manager by passing one of the preceding status values in the *CallbackStatus* parameter when it calls [**FltCompletePendedPreOperation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation) to resume processing for the pended I/O operation.
 
 This section includes:
 
@@ -40,9 +39,4 @@ This section includes:
 [Returning FLT\_PREOP\_SYNCHRONIZE](returning-flt-preop-synchronize.md)
 
  
-
- 
-
-
-
 

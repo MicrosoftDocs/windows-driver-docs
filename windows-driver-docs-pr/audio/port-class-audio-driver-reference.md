@@ -1,7 +1,6 @@
 ---
 title: Port Class Audio Driver Reference
 description: Port Class Audio Driver Reference
-ms.assetid: ce68e3fd-9d7e-4d9e-b30a-09c07a3bb805
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ This section describes the following:
 
 -   The interfaces that port and miniport drivers use to communicate with each other.
 
-For a list of which versions of the operating system support the various PortCls functions and interfaces, see [PortCls Support by Operating System](https://docs.microsoft.com/windows-hardware/drivers/audio/portcls-support-by-operating-system).
+For a list of which versions of the operating system support the various PortCls functions and interfaces, see [PortCls Support by Operating System](./portcls-support-by-operating-system.md).
 
 This section presents the following topics:
 
@@ -38,15 +37,9 @@ This section presents the following topics:
 
 [Audio Power Management Interfaces](audio-power-management-interfaces.md)
 
-[Audio Port Class Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/)
+[Audio Port Class Structures](/windows-hardware/drivers/ddi/portcls/)
 
 [Macro Definitions for Obsolete Functions](macro-definitions-for-obsolete-functions.md)
 
  
-
- 
-
-
-
-
 

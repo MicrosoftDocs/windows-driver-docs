@@ -1,7 +1,6 @@
 ---
 title: Overview of SCSI Miniport Debugging
 description: Overview of SCSI Miniport Debugging
-ms.assetid: 9d05d416-aae4-453a-bdb0-2ac9148ad81d
 keywords: ["SCSI Miniport Debugging, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -15,4 +14,4 @@ Small computer system interface (SCSI) debugging extensions can be found in two 
 
 The SCSIkd.dll extension commands can be used in any version of Windows. The Minipkd.dll extension commands can only be used in Windows XP and later versions of Windows. Commands in Minipkd.dll are only applicable to miniport drivers that work with the SCSI Port driver.
 
-To test a SCSI miniport driver, use the SCSI Verification feature of Driver Verifier. For information about Driver Verifier, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) in the Windows Driver Kit (WDK) documentation.
+To test a SCSI miniport driver, use the SCSI Verification feature of Driver Verifier. For information about Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md) in the Windows Driver Kit (WDK) documentation.

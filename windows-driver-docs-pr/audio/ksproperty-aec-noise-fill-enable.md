@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AEC\_NOISE\_FILL\_ENABLE
 description: The KSPROPERTY\_AEC\_NOISE\_FILL\_ENABLE property is used to enable and disable background noise filling. This is an optional property of an AEC node (KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL).
-ms.assetid: 7c0ed4ba-d25e-42b5-b213-fbe74040a453
 keywords: ["KSPROPERTY_AEC_NOISE_FILL_ENABLE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AEC\_NOISE\_FILL\_ENABLE property is used to enable and disable 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -61,15 +60,13 @@ The property value (operation data) is of type BOOL. Setting this value to **TRU
 
 A KSPROPERTY\_AEC\_NOISE\_FILL\_ENABLE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 An AEC node inserts background comfort noise into the capture stream in order to avoid the unnatural silence that occurs when the captured data stream is set to zero after perfect echo cancellation.
 
 When the filter containing the AEC node is created or the node is reset, background noise filling is disabled by default.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,16 +84,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)
-
- 
-
- 
-
-
-
-
-
 

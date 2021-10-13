@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CHANNEL_LIST
 description: WDI_TLV_CHANNEL_LIST is a TLV that contains one or more channel numbers.
-ms.assetid: DBBA28C2-D80F-409B-BEE6-81B6FEDF7484
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHANNEL_LIST Network Drivers Starting with Windows Vista
@@ -21,19 +20,18 @@ WDI\_TLV\_CHANNEL\_LIST is a TLV that contains one or more channel numbers.
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_CHANNEL\_MAPPING\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ns-wditypes-_wdi_channel_mapping_entry) structures. The array must contain 1 or more structures.
+The size (in bytes) of the array of [**WDI\_CHANNEL\_MAPPING\_ENTRY**](/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_channel_mapping_entry) structures. The array must contain 1 or more structures.
 
 ## Values
 
 
 | Type                                                                       | Description                          |
 |----------------------------------------------------------------------------|--------------------------------------|
-| [**WDI\_CHANNEL\_MAPPING\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ns-wditypes-_wdi_channel_mapping_entry)\[\] | An array of channel mapping entries. |
+| [**WDI\_CHANNEL\_MAPPING\_ENTRY**](/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_channel_mapping_entry)\[\] | An array of channel mapping entries. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

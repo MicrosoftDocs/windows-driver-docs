@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_GM\_RENDER\_CLOCK
 description: The KSPROPERTY\_GM\_RENDER\_CLOCK property is not currently supported.
-ms.assetid: 3e67db6e-b174-45f8-afdf-75c846875508
 keywords: ["KSPROPERTY_GM_RENDER_CLOCK Streaming Media Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_GM\_RENDER\_CLOCK property is not currently supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

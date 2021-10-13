@@ -1,7 +1,6 @@
 ---
 title: Decoder Stages
 description: Decoder Stages
-ms.assetid: 34562b2a-9568-440d-b6ec-dbd1e5004d56
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , video decoding
 - Video Acceleration WDK DirectX , video decoding
@@ -25,7 +24,7 @@ ms.localizationpriority: medium
 
 The decoder stages that are depicted in the following figure show the operation of the motion compensation prediction (MCP) and inverse discrete-cosine transform (IDCT) parts of an accelerator. The data indicated as dct\_type is a syntax element that controls the type of IDCT that is performed.
 
-![diagram illustrating decoder stages](images/decstages.png)
+![diagram illustrating decoder stages.](images/decstages.png)
 
  
 

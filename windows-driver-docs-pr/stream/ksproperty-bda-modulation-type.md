@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_MODULATION\_TYPE
 description: Clients use KSPROPERTY\_BDA\_MODULATION\_TYPE to control the demodulator type such as QPSK or 8VSB.
-ms.assetid: 7c7dd8a4-4aa2-4e62-9b08-05c202df957d
 keywords: ["KSPROPERTY_BDA_MODULATION_TYPE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_MODULATION\_TYPE to control the demodulator type su
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value from the ModulationType enumerated type identifies a demodulator type.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
-[**ModulationType**](https://docs.microsoft.com/previous-versions/windows/desktop/mstv/modulationtype)
-
- 
+[**ModulationType**](/previous-versions/windows/desktop/mstv/modulationtype)
 
  
-
-
-
-
-
 

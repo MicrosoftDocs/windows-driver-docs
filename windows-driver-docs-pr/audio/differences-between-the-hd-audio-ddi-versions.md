@@ -1,7 +1,6 @@
 ---
 title: Differences Between the HD Audio DDI Versions
 description: Differences Between the HD Audio DDI Versions
-ms.assetid: e24071d3-9021-40c0-907a-91ada8a1306b
 keywords:
 - HD Audio, DDI version differences
 - High Definition Audio (HD Audio), DDI version differences
@@ -16,13 +15,13 @@ ms.localizationpriority: medium
 
 The HD Audio DDI is available in three slightly different versions that are defined as follows:
 
--   A baseline version of the HD Audio DDI, which is defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure. Most function drivers for audio and modem codecs require only the capabilities that this DDI version provides. This version is available through the HD Audio bus drivers that are provided with Windows XP and Windows Vista.
+-   A baseline version of the HD Audio DDI, which is defined by the [**HDAUDIO\_BUS\_INTERFACE**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure. Most function drivers for audio and modem codecs require only the capabilities that this DDI version provides. This version is available through the HD Audio bus drivers that are provided with Windows XP and Windows Vista.
 
--   An enhanced version of the HD Audio DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) structure. This version of the DDI provides the additional capability that is required to support DMA-driven event notification with flexibility. It is available in Windows Vista and later versions of Windows.
+-   An enhanced version of the HD Audio DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) structure. This version of the DDI provides the additional capability that is required to support DMA-driven event notification with flexibility. It is available in Windows Vista and later versions of Windows.
 
--   A modified version of the HD Audio DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structure. This version accommodates the requirements of a relatively few audio and modem drivers that must have additional control over the setup of buffer descriptor lists (BDLs) for DMA operations. This version of the DDI is available for Windows XP and later versions of Windows. However, use either the HDAUDIO\_BUS\_INTERFACE or the HDAUDIO\_BUS\_INTERFACE\_V2 DDI version instead. .
+-   A modified version of the HD Audio DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structure. This version accommodates the requirements of a relatively few audio and modem drivers that must have additional control over the setup of buffer descriptor lists (BDLs) for DMA operations. This version of the DDI is available for Windows XP and later versions of Windows. However, use either the HDAUDIO\_BUS\_INTERFACE or the HDAUDIO\_BUS\_INTERFACE\_V2 DDI version instead. .
 
-In all three structures, the names and types of the first five members match those of the five members of the [**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_interface) structure. For information about the values of these members, see [Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object](obtaining-an-hdaudio-bus-interface-ddi-object.md), [Obtaining an HDAUDIO\_BUS\_INTERFACE\_V2 DDI Object](obtaining-an-hdaudio-bus-interface-v2-ddi-object.md) or [Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object](obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md).
+In all three structures, the names and types of the first five members match those of the five members of the [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) structure. For information about the values of these members, see [Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object](obtaining-an-hdaudio-bus-interface-ddi-object.md), [Obtaining an HDAUDIO\_BUS\_INTERFACE\_V2 DDI Object](obtaining-an-hdaudio-bus-interface-v2-ddi-object.md) or [Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object](obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md).
 
 The routines in the three versions of the HD Audio DDI perform the following tasks:
 
@@ -42,9 +41,9 @@ The routines in the three versions of the HD Audio DDI perform the following tas
 
 The HDAUDIO\_BUS\_INTERFACE and HDAUDIO\_BUS\_INTERFACE\_BDL versions of the DDI have the following differences:
 
--   The HDAUDIO\_BUS\_INTERFACE structure defines two routines, [**AllocateDmaBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pallocate_dma_buffer) and [**FreeDmaBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pfree_dma_buffer), that are not present in HDAUDIO\_BUS\_INTERFACE\_BDL.
+-   The HDAUDIO\_BUS\_INTERFACE structure defines two routines, [**AllocateDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_dma_buffer) and [**FreeDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_buffer), that are not present in HDAUDIO\_BUS\_INTERFACE\_BDL.
 
--   The HDAUDIO\_BUS\_INTERFACE\_BDL structure defines three routines, [**SetupDmaEngineWithBdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-psetup_dma_engine_with_bdl), [**AllocateContiguousDmaBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer), and [**FreeContiguousDmaBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pfree_contiguous_dma_buffer), that are not present in HDAUDIO\_BUS\_INTERFACE.
+-   The HDAUDIO\_BUS\_INTERFACE\_BDL structure defines three routines, [**SetupDmaEngineWithBdl**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-psetup_dma_engine_with_bdl), [**AllocateContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer), and [**FreeContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_contiguous_dma_buffer), that are not present in HDAUDIO\_BUS\_INTERFACE.
 
 When a client calls the **AllocateDmaBuffer** routine in the first DDI version, the HD Audio bus driver:
 
@@ -63,9 +62,4 @@ For more information, see the *Intel High Definition Audio Specification*.
 However, nearly all clients will use the HDAUDIO\_BUS\_INTERFACE version of the DDI. Only a few clients that require precise control over the timing of interrupts will use the HDAUDIO\_BUS\_INTERFACE\_BDL version.
 
  
-
- 
-
-
-
 

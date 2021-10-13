@@ -1,7 +1,6 @@
 ---
 title: n (Set Number Base)
 description: The n command sets the default number base (radix) to the specified value or displays the current number base.Do not confuse this command with the ~n (Suspend Thread) command.
-ms.assetid: a2af7cf4-b0f1-4ceb-b9c0-7517a9517c3e
 keywords: ["n (Set Number Base) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -86,8 +85,7 @@ If you omit *Radix*, the current default number base is displayed.
 
  
 
-Remarks
--------
+## Remarks
 
 The current radix affects the input and output of MASM expressions. It does not affect the input or output of C++ expressions. For more information about these expressions, see [Evaluating Expressions](evaluating-expressions.md).
 

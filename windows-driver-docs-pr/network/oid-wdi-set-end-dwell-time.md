@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_END_DWELL_TIME
 description: OID_WDI_SET_END_DWELL_TIME is typically sent during an Action Frame exchange, either when WDI has to wait some time before sending a followup Action Frame, or when the protocol sequence is complete.
-ms.assetid: 8ED1FDB1-BFDB-4522-8FF8-00D3B59EE43C
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_END_DWELL_TIME Network Drivers Starting with Windows Vista
@@ -31,8 +30,7 @@ No additional parameters. The data in the header is sufficient.
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

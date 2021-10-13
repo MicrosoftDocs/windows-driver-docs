@@ -1,7 +1,6 @@
 ---
 title: Digital Rights Management
 description: Digital Rights Management
-ms.assetid: 7ce19196-5180-421f-b6be-ac4a235a8c16
 keywords:
 - WDM audio drivers WDK , Digital Rights Management
 - audio drivers WDK , Digital Rights Management

@@ -1,7 +1,6 @@
 ---
 title: RetrieveImageResponse element
 description: The required RetrieveImageResponse operation element returns the scan data to the client.
-ms.assetid: f63398c4-bbae-42ca-94c5-059b066c65cb
 keywords: ["RetrieveImageResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **RetrieveImageResponse** operation element returns the scan data to the client.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:RetrieveImageResponse>
@@ -27,8 +25,7 @@ Usage
 </wscn:RetrieveImageResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,8 +53,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **RetrieveImageResponse** operation element. The Scan Service sends this element when a client successful sends a [**RetrieveImageRequest**](retrieveimagerequest.md) element.
 
@@ -72,8 +68,7 @@ If [**Format**](format.md) specifies a single image format and the value of [**I
 
 The Scan Service should abort the job with a [**JobStateReason**](jobstatereason.md) of **ImageTransferError** if there is a communication error during the transfer of the image data.
 
-Examples
---------
+## Examples
 
 The following code example shows how the WSD Scan Service sends image data to the client.
 
@@ -94,16 +89,16 @@ Content-ID: <14629f74-2047-436c-8046-5cac76d280fc@uuid>
 
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:xop="http://www.w3.org/2003/12/xop/include"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:xop="https://www.w3.org/2003/12/xop/include"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
-    <wsa:To>http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous</wsa:To>
+    <wsa:To>https://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/RetrieveImage
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/RetrieveImage
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheRetrieveImageRequest</wsa:RelatesTo>

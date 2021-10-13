@@ -1,7 +1,6 @@
 ---
 title: NFP maximum message size
 description: Each provider implementation can specify a maximum message size for publications and subscriptions. Windows requires that this maximum provider-supported message size be no less than 10 KB.
-ms.assetid: 9806130F-AB9D-4265-8D9E-72CED49BF2C2
 keywords:
 - NFC
 - near field communications
@@ -19,7 +18,6 @@ Each provider implementation can specify a maximum message size for publications
 
 
 ## Related topics
-[IOCTL\_NFP\_GET\_MAX\_MESSAGE\_BYTES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfpdev/ni-nfpdev-ioctl_nfp_get_max_message_bytes)  
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[IOCTL\_NFP\_GET\_MAX\_MESSAGE\_BYTES](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_max_message_bytes)  
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

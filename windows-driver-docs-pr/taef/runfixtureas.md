@@ -1,7 +1,6 @@
 ---
 title: RunFixtureAs
 description: TAEF provides a mechanism to execute test fixtures within a different context than their corresponding tests.
-ms.assetid: FAFF5265-5268-412E-86A5-149B187B1376
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -59,14 +58,14 @@ TAEF runs the fixture in an 'Immersive Broker' process.
 
 **Note**  
 -   'Broker' is only supported on Windows 8 and higher operating systems.
--   The test signing policy must be enabled on the system. For more information, [The TESTSIGNING Boot Configuration Option](https://docs.microsoft.com/windows-hardware/drivers/install/the-testsigning-boot-configuration-option).
+-   The test signing policy must be enabled on the system. For more information, [The TESTSIGNING Boot Configuration Option](../install/the-testsigning-boot-configuration-option.md).
 -   Running tests remotely with 'RunFixtureAs=Broker' is not currently supported.
 -   When executing with 'RunFixtureAs=Broker' TAEF will use the "TE.ProcessHost.Broker.exe" process for fixture execution, not "TE.ProcessHost.exe".
 
  
 
 <span id="UIAccess"></span><span id="uiaccess"></span><span id="UIACCESS"></span>**UIAccess**  
-TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://docs.microsoft.com/previous-versions/dotnet/articles/bb625963(v=msdn.10)).
+TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](/previous-versions/dotnet/articles/bb625963(v=msdn.10)).
 
 **Note**  
 -   UIAccess is only supported on Vista and higher operating systems.
@@ -414,10 +413,4 @@ The above example will run tests and fixtures as follows:
 -   MyModuleSetup and MyModuleCleanup run as System (within a different process than MyTestMethod)
 
  
-
- 
-
-
-
-
 

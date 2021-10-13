@@ -1,7 +1,6 @@
 ---
 title: Identifying Backup Files for Existing Boot Entries
 description: Identifying Backup Files for Existing Boot Entries
-ms.assetid: 8f7e13b4-32f9-4b54-a8ab-db8148434ae8
 keywords:
 - NVRAM boot options WDK , backup file searches
 - EFI NVRAM boot options WDK , backup file searches
@@ -29,7 +28,7 @@ In the following example, the boot loader for a boot entry is stored on the EFI 
 
 As shown in the following Bootcfg sample, the path to the boot loader file appears in the **BootFilePath** field.
 
-Bootcfg displays the file location as the [NT device name](https://docs.microsoft.com/windows-hardware/drivers/kernel/nt-device-names) of the partition, followed by the file system path to the boot loader file.
+Bootcfg displays the file location as the [NT device name](../kernel/nt-device-names.md) of the partition, followed by the file system path to the boot loader file.
 
 ```
 Boot Entries

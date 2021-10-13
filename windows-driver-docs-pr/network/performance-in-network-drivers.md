@@ -1,7 +1,6 @@
 ---
 title: Performance in network drivers
 description: This section describes techniques to improve performance in network drivers
-ms.assetid: 7EA23AA6-7673-4D88-91CA-BDDD8FBB2A4F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,18 +37,18 @@ Partitioning is needed to minimize shared data and code across processors. Parti
 
 -   Use per-processor data structures to reduce global and shared data access. This allows you to keep statistic counters without synchronization, which reduces the code path length and increases performance. For vital statistics, have per-processor counters that are added together at query time. If you must have a global counter, use interlocked operations instead of spin locks to manipulate the counter. See Using Locking Mechanisms Properly below for information about how to avoid using spin locks.
 
-    To facilitate this, [**KeGetCurrentProcessorNumberEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kegetcurrentprocessornumberex) can be used to determine the current processor. To determine the number of processors when allocating per-processor data structures, [**KeQueryGroupAffinity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequerygroupaffinity) can be used.
+    To facilitate this, [**KeGetCurrentProcessorNumberEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kegetcurrentprocessornumberex) can be used to determine the current processor. To determine the number of processors when allocating per-processor data structures, [**KeQueryGroupAffinity**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kequerygroupaffinity) can be used.
 
     The total number of bits set in the affinity mask indicates the number of active processors in the system. Drivers should not assume that all the set bits in the mask will be contiguous because the processors might not be consecutively numbered in the future releases of the operating system. The number of processors in an SMP machine is a zero-based value.
 
-    If your driver maintains per-processor data, you can use the [**KeQueryGroupAffinity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequerygroupaffinity) function to reduce cache-line contention.
+    If your driver maintains per-processor data, you can use the [**KeQueryGroupAffinity**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kequerygroupaffinity) function to reduce cache-line contention.
 
 ## Avoiding false sharing
 
 
 False sharing occurs when processors request shared variables that are independent from each other. However, because the variables are on the same cache line, they are shared among the processors. In such situations, the cache line will travel back and forth between processors for every access to any of the variables in it, causing an increase in cache flushes and reloads. This increases the system bus utilization and reduces overall system performance.
 
-To avoid false sharing, align important data structures (such as spin locks, buffer queue headers, singly linked lists) to cache-line boundaries by using [**NdisGetSharedDataAlignment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisgetshareddataalignment).
+To avoid false sharing, align important data structures (such as spin locks, buffer queue headers, singly linked lists) to cache-line boundaries by using [**NdisGetSharedDataAlignment**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetshareddataalignment).
 
 ## Using locking mechanisms properly
 
@@ -60,46 +59,46 @@ Here are some tips for using locking mechanisms effectively:
 
 -   Use NDIS singly-linked list functions such as the following for managing resource pools:
 
-    [**NdisInitializeSListHead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisinitializeslisthead)
+    [**NdisInitializeSListHead**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisinitializeslisthead)
 
-    [**NdisInterlockedPushEntrySList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisinterlockedpushentryslist)
+    [**NdisInterlockedPushEntrySList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisinterlockedpushentryslist)
 
-    [**NdisInterlockedPopEntrySList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisinterlockedpopentryslist)
+    [**NdisInterlockedPopEntrySList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisinterlockedpopentryslist)
 
-    [**NdisQueryDepthSList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisquerydepthslist)
+    [**NdisQueryDepthSList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisquerydepthslist)
 
 -   If you need to use spin locks, use them to only protect data, not code. Don't use one lock to protect all data used in common paths. For example, separate the data used in the send and receive paths into two data structures so that when the send path needs to lock its data, the receive path is not affected.
 
--   If you are using spin locks and the path is already at DPC level, use the [**NdisDprAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisdpracquirespinlock) and [**NdisDprReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisdprreleasespinlock) functions to avoid extra code when acquiring and releasing the locks.
+-   If you are using spin locks and the path is already at DPC level, use the [**NdisDprAcquireSpinLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisdpracquirespinlock) and [**NdisDprReleaseSpinLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisdprreleasespinlock) functions to avoid extra code when acquiring and releasing the locks.
 
 -   To minimize the number of spin lock acquires and releases, use these NDIS RWLock functions:
 
-    [**NdisAllocateRWLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocaterwlock)
+    [**NdisAllocateRWLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocaterwlock)
 
-    [**NdisAcquireRWLockRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisacquirerwlockread)
+    [**NdisAcquireRWLockRead**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisacquirerwlockread)
 
-    [**NdisAcquireRWLockWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisacquirerwlockwrite)
+    [**NdisAcquireRWLockWrite**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisacquirerwlockwrite)
 
-    [**NdisReleaseRWLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisreleaserwlock)
+    [**NdisReleaseRWLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreleaserwlock)
 
 ## Using 64-bit DMA
 
 
-64-Bit DMA If the network adapter supports 64-bit DMA, steps must be taken to avoid extra copies for addresses above the 4 GB range. When the driver calls [**NdisMRegisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterscattergatherdma), the **NDIS\_SG\_DMA\_64\_BIT\_ADDRESS** flag must be set in the *Flags* parameter.
+64-Bit DMA If the network adapter supports 64-bit DMA, steps must be taken to avoid extra copies for addresses above the 4 GB range. When the driver calls [**NdisMRegisterScatterGatherDma**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma), the **NDIS\_SG\_DMA\_64\_BIT\_ADDRESS** flag must be set in the *Flags* parameter.
 
 ## Ensuring proper buffer alignment
 
 
-Buffer alignment on a cache-line boundary improves performance when copying data from one buffer to another. Most network adapter receive buffers are properly aligned when they are first allocated, but the user data that must eventually be copied into the application buffer is misaligned due to the header space consumed. In the case of TCP data (the most common scenario), the shift due to the TCP, IP and Ethernet headers results in a shift of 0x36 bytes. To resolve this problem, we recommend that drivers allocate a slightly larger buffer and insert packet data at an offset of 0xA bytes. This will ensure that, after the buffers are shifted by 0x36 bytes for the header, the user data is properly aligned. For more information about cache-line boundaries, see the Remarks section for [**NdisMAllocateSharedMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismallocatesharedmemory).
+Buffer alignment on a cache-line boundary improves performance when copying data from one buffer to another. Most network adapter receive buffers are properly aligned when they are first allocated, but the user data that must eventually be copied into the application buffer is misaligned due to the header space consumed. In the case of TCP data (the most common scenario), the shift due to the TCP, IP and Ethernet headers results in a shift of 0x36 bytes. To resolve this problem, we recommend that drivers allocate a slightly larger buffer and insert packet data at an offset of 0xA bytes. This will ensure that, after the buffers are shifted by 0x36 bytes for the header, the user data is properly aligned. For more information about cache-line boundaries, see the Remarks section for [**NdisMAllocateSharedMemory**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatesharedmemory).
 
 ## Using Scatter-Gather DMA
 
 
-[NDIS Scatter/Gather DMA](ndis-scatter-gather-dma.md) provides the hardware with support to transfer data to and from noncontiguous ranges of physical memory. Scatter-Gather DMA uses a [**SCATTER\_GATHER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_scatter_gather_list) structure, which includes an array of **SCATTER\_GATHER\_ELEMENT** structures and the number of elements in the array. This structure is retrieved from the packet descriptor passed to the driver's send function. Each element of the array provides the length and starting physical address of a physically contiguous Scatter-Gather region. The driver uses the length and address information for transferring the data.
+[NDIS Scatter/Gather DMA](ndis-scatter-gather-dma.md) provides the hardware with support to transfer data to and from noncontiguous ranges of physical memory. Scatter-Gather DMA uses a [**SCATTER\_GATHER\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list) structure, which includes an array of **SCATTER\_GATHER\_ELEMENT** structures and the number of elements in the array. This structure is retrieved from the packet descriptor passed to the driver's send function. Each element of the array provides the length and starting physical address of a physically contiguous Scatter-Gather region. The driver uses the length and address information for transferring the data.
 
 Using the Scatter-Gather routines for DMA operations can improve utilization of system resources by not locking these resources down statically, as would occur if map registers were used. For more information, see [NDIS Scatter/Gather DMA](ndis-scatter-gather-dma.md).
 
-If the network adapter supports TCP Segmentation Offload (Large Send Offload), then the driver will need to pass in the maximum buffer size it can get from TCP/IP into the *MaximumPhysicalMapping* parameter within [**NdisMRegisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterscattergatherdma) function. This will guarantee that the driver has enough map registers to build the Scatter-Gather list and eliminate any possible buffer allocations and copying. For more information, see these topics:
+If the network adapter supports TCP Segmentation Offload (Large Send Offload), then the driver will need to pass in the maximum buffer size it can get from TCP/IP into the *MaximumPhysicalMapping* parameter within [**NdisMRegisterScatterGatherDma**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma) function. This will guarantee that the driver has enough map registers to build the Scatter-Gather list and eliminate any possible buffer allocations and copying. For more information, see these topics:
 
 - [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
 - [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
@@ -112,10 +111,4 @@ To minimize disruptions during media playback in multimedia applications, NDIS 6
 [Receive Side Throttle in NDIS 6.20](receive-side-throttle-in-ndis-6-20.md)
 "Send and Receive Code Paths" in [Summary of Changes Required to Port a Miniport Driver to NDIS 6.20](summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-20.md)
  
-
- 
-
-
-
-
 

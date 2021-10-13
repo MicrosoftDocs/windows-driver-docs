@@ -1,7 +1,6 @@
 ---
 title: MB Multimode Multicarrier
 description: This topic describes the support for MB multimode multicarrier that has been integrated into mobile broadband for Windows 8.
-ms.assetid: ADEC17E0-9150-4094-8287-CA13C186AB5B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,17 +16,11 @@ For more information see the following topics:
 
 -   [MB Provider Operations](mb-provider-operations.md)
 
--   [OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-preferred-multicarrier-providers)
+-   [OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS](./oid-wwan-preferred-multicarrier-providers.md)
 
--   [**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-multicarrier-providers)
+-   [**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](./ndis-status-wwan-preferred-multicarrier-providers.md)
 
--   [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers)
-
- 
+-   [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers)
 
  
-
-
-
-
 

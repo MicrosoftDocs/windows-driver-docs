@@ -1,7 +1,6 @@
 ---
-title: pcitree
+title: pcitree (WinDbg)
 description: The pcitree extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
-ms.assetid: cd1b2f85-b8de-4396-8b37-79bb3d62092c
 keywords: ["PCI bus", "PCI device", "pcitree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,8 +49,7 @@ The **!pcitree** extension displays information about PCI device objects, includ
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about PCI buses and PCI device objects, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

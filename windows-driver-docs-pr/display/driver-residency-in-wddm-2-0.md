@@ -1,7 +1,6 @@
 ---
 title: Driver residency in WDDM 2.0
 description: This section provides details about the driver residency changes for Windows Display Driver Model (WDDM) 2.0. The functionality described is available starting with Windows 10.
-ms.assetid: 9BD0138A-E957-4675-8E08-2750825A5C87
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,24 +42,16 @@ This section provides details about the driver residency changes for Windows Dis
 <td align="left"><p>Graphics processing unit (GPU) access to allocations which are not resident is illegal and will result in a device removed for the application that generated the error.</p>
 <p>There are two distinct models of handling such invalid access dependent on whether the faulting engine supports GPU virtual addressing or not:</p>
 <ul>
-<li>For engines that don't support GPU virtual addressing and use the allocation and patch location list to patch memory references, an invalid access occurs when the user mode driver submits an allocation list which references an allocation which is not resident on the device (i.e. the user mode driver hasn't called <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb" data-raw-source="[&lt;em&gt;MakeResidentCb&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb)"><em>MakeResidentCb</em></a> on that allocation). When this occurs, the graphics kernel puts the faulty context/device in error.</li>
+<li>For engines that don't support GPU virtual addressing and use the allocation and patch location list to patch memory references, an invalid access occurs when the user mode driver submits an allocation list which references an allocation which is not resident on the device (i.e. the user mode driver hasn't called <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb" data-raw-source="[&lt;em&gt;MakeResidentCb&lt;/em&gt;](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb)"><em>MakeResidentCb</em></a> on that allocation). When this occurs, the graphics kernel puts the faulty context/device in error.</li>
 <li>For engines that do support GPU virtual addressing but access a GPU virtual address that is invalid, either because there is no allocation behind the virtual address or there is a valid allocation but it hasn't been made resident, the GPU is expected to raise an unrecoverable page fault in the form of an interrupt. When the page fault interrupt occurs, the kernel mode driver needs to forward the error to the graphics kernel through a new page fault notification. Upon receiving this notification, the graphics kernel initiates an engine reset on the faulting engine and puts the faulty context/device in error. If the engine reset is unsuccessful, the graphics kernel promotes the error to a full adapter wide timeout detection and recovery (TDR).</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="process-residency-budgets.md" data-raw-source="[Process residency budgets](process-residency-budgets.md)">Process residency budgets</a></p></td>
-<td align="left"><p>In WDDM v2, processes will be assigned budgets for how much memory they can keep resident. This budget can change over time, but generally will only be imposed when the system is under memory pressure. Prior to Microsoft Direct3D 12, the budget is handled by the user mode driver in the form of <em>Trim</em> notifications and <em>MakeResident</em> failures with <strong>STATUS_NO_MEMORY</strong>. <em>TrimToBudget</em> notification, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb" data-raw-source="[&lt;em&gt;Evict&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb)"><em>Evict</em></a>, and failed <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb" data-raw-source="[&lt;em&gt;MakeResident&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb)"><em>MakeResident</em></a> calls all return the latest budget in the form of an integer <strong>NumBytesToTrim</strong> value that indicates how much needs to be trimmed in order to fit in the new budget.</p></td>
+<td align="left"><p>In WDDM v2, processes will be assigned budgets for how much memory they can keep resident. This budget can change over time, but generally will only be imposed when the system is under memory pressure. Prior to Microsoft Direct3D 12, the budget is handled by the user mode driver in the form of <em>Trim</em> notifications and <em>MakeResident</em> failures with <strong>STATUS_NO_MEMORY</strong>. <em>TrimToBudget</em> notification, <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb" data-raw-source="[&lt;em&gt;Evict&lt;/em&gt;](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb)"><em>Evict</em></a>, and failed <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb" data-raw-source="[&lt;em&gt;MakeResident&lt;/em&gt;](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb)"><em>MakeResident</em></a> calls all return the latest budget in the form of an integer <strong>NumBytesToTrim</strong> value that indicates how much needs to be trimmed in order to fit in the new budget.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

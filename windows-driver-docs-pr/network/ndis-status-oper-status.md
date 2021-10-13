@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_OPER_STATUS
 description: The NDIS_STATUS_OPER_STATUS status indicates the current operational state of an NDIS network interface to overlying drivers.
-ms.assetid: dbe7ce19-290d-4a48-a6c2-1b95e956c26c
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_OPER_STATUS Network Drivers Starting with Windows Vista
@@ -13,17 +12,15 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_OPER\_STATUS status indicates the current operational state of an NDIS network interface to overlying drivers.
 
-Remarks
--------
+## Remarks
 
 NDIS generates this status indication; NDIS miniport drivers should not generate this status indication.
 
-NDIS supplies an [**NDIS\_OPER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_oper_state) structure in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure.
+NDIS supplies an [**NDIS\_OPER\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_oper_state) structure in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure.
 
-The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(NDIS\_OPER\_STATE).
+The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(NDIS\_OPER\_STATE).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -45,14 +42,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_OPER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_oper_state)
+[**NDIS\_OPER\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_oper_state)
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
-
- 
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
  
-
-
-
 

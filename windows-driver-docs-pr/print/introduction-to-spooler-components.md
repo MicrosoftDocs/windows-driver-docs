@@ -1,7 +1,6 @@
 ---
 title: Introduction to Spooler Components
 description: Introduction to Spooler Components
-ms.assetid: 4eb6e84a-f75f-4ec2-af4f-0007678d120b
 keywords:
 - spooler component diagram WDK print
 - print spooler component diagram WDK
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The primary components of the Microsoft Windows 2000 and later print spooler are illustrated in the following diagram.
 
-![diagram illustrating the primary components of the windows 2000 and later print spooler](images/spoocomp.png)
+![diagram illustrating the primary components of the windows 2000 and later print spooler.](images/spoocomp.png)
 
 <a href="" id="application-"></a>**Application**   
 The print application creates a print job by calling GDI functions.

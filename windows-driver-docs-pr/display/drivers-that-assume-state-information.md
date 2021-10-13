@@ -1,7 +1,6 @@
 ---
 title: Drivers That Assume State Information
 description: Drivers That Assume State Information
-ms.assetid: c4dfb701-c547-4e94-8fd8-05571508137c
 keywords:
 - surfaces WDK DirectDraw , blitting
 - drawing blt WDK DirectDraw , state information

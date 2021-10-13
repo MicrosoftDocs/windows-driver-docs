@@ -1,7 +1,6 @@
 ---
 title: File System Object I/O Routines
 description: File System Object I/O Routines
-ms.assetid: 0514e396-76b9-458b-9a98-e539d7e90274
 keywords:
 - mini-redirectors WDK , object I/O routines
 - I/O WDK network redirectors
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The file system object I/O routines represent the traditional file I/O calls for read, write, and other file operations. These routines are often called "low I/O routines" in the network mini-redirector. RDBSS calls these routines in response to receiving a specific IRP
 
-The low I/O routines are passed in as an array of routine pointers as part of the MINIRDR\_DISPATCH structure passed to the [**RxRegisterMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nf-mrx-rxregisterminirdr) routine that is used to register the network mini-redirector at startup (in the **DriverEntry** routine). The value of the array entry is the low I/O operation to perform.
+The low I/O routines are passed in as an array of routine pointers as part of the MINIRDR\_DISPATCH structure passed to the [**RxRegisterMinirdr**](/windows-hardware/drivers/ddi/mrx/nf-mrx-rxregisterminirdr) routine that is used to register the network mini-redirector at startup (in the **DriverEntry** routine). The value of the array entry is the low I/O operation to perform.
 
 These low I/O or file system object I/O routines are normally called asynchronously by RDBSS. So a network mini-redirector must make certain that any low I/O routines that are implemented can be safely called asynchronously. It is also possible for a network mini-redirector to ignore the request for an asynchronous call and implement a routine to only operate synchronously. However, for certain calls that may take time to complete (read and write, for example), implementing these as synchronous operations can significantly reduce I/O performance for the entire operating system.
 
@@ -28,7 +27,7 @@ Other file I/O routines other than the low I/O routines are based on synchronous
 
 While in the LowIo path, the **LowIoContext.ResourceThreadId** member of the RX\_CONTEXT is guaranteed to indicate the owning thread that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member can be used to release the FCB resource on behalf of another thread. When an asynchronous routine completes, the FCB resource that was acquired from the initial thread can be released.
 
-If an **MrxLowIoSubmit\[LOWIO\_OP\_XXX\]** routine is likely to take a long time to complete, the network mini-redirector driver should release the FCB resource before initiating the network communication. The FCB resource can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx).
+If an **MrxLowIoSubmit\[LOWIO\_OP\_XXX\]** routine is likely to take a long time to complete, the network mini-redirector driver should release the FCB resource before initiating the network communication. The FCB resource can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx).
 
 The following table lists the routines that can be implemented by a network mini-redirector for file system object I/O (low I/O) operations.
 
@@ -45,50 +44,43 @@ The following table lists the routines that can be implemented by a network mini
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-exclusivelock-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_EXCLUSIVELOCK]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-exclusivelock-)"><strong>MRxLowIOSubmit[LOWIO_OP_EXCLUSIVELOCK]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-exclusivelock-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_EXCLUSIVELOCK]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-exclusivelock-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_EXCLUSIVELOCK]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector open an exclusive lock on a file object. RDBSS issues this call in response to receiving an IRP_MJ_LOCK_CONTROL with a minor code of IRP_MN_LOCK and IrpSp-&gt;Flags has the SL_EXCLUSIVE_LOCK bit set.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-fsctl-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_FSCTL]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-fsctl-)"><strong>MRxLowIOSubmit[LOWIO_OP_FSCTL]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-fsctl-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_FSCTL]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-fsctl-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_FSCTL]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to pass a file system control request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_FILE_SYSTEM_CONTROL.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-ioctl-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_IOCTL]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-ioctl-)"><strong>MRxLowIOSubmit[LOWIO_OP_IOCTL]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-ioctl-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_IOCTL]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-ioctl-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_IOCTL]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to pass an I/O system control request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_DEVICE_CONTROL or IRP_MJ_INTERNAL_DEVICE_CONTROL..</p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-notify-change-directory-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-notify-change-directory-)"><strong>MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-notify-change-directory-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-notify-change-directory-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to issue a request to the network mini-redirector for a directory change notification operation. RDBSS issues this call in response to receiving an IRP_MJ_DIRECTORY_CONTROL.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-read-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_READ]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-read-)"><strong>MRxLowIOSubmit[LOWIO_OP_READ]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-read-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_READ]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-read-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_READ]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to issue a read request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_READ.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-sharedlock-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-sharedlock-)"><strong>MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-sharedlock-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-sharedlock-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network redirector open a shared lock on a file object. RDBSS issues this call in response to receiving an IRP_MJ_LOCK_CONTROL with a minor code of IRP_MN_LOCK and IrpSp-&gt;Flags does not have the SL_EXCLUSIVE_LOCK bit set.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-unlock-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_UNLOCK]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-unlock-)"><strong>MRxLowIOSubmit[LOWIO_OP_UNLOCK]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-unlock-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_UNLOCK]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-unlock-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_UNLOCK]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector remove a single lock on a file object. RDBSS issues this call in response to receiving an IRP_MJ_LOCK_CONTROL with a minor code of IRP_MN_UNLOCK_SINGLE.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-unlock-multiple-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_UNLOCK_MULTIPLE]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-unlock-multiple-)"><strong>MRxLowIOSubmit[LOWIO_OP_UNLOCK_MULTIPLE]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-unlock-multiple-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_UNLOCK_MULTIPLE]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-unlock-multiple-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_UNLOCK_MULTIPLE]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector remove multiple locks held on a file object. RDBSS issues this call in response to receiving an IRP_MJ_LOCK_CONTROL with a minor code of IRP_MN_UNLOCK_ALL or IRP_MN_UNLOCK_ALL_BY_KEY. The byte ranges to be unlocked are specified in the <strong>LowIoContext.ParamsFor.Locks.LockList</strong> member of the RX_CONTEXT.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-write-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_WRITE]&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-write-)"><strong>MRxLowIOSubmit[LOWIO_OP_WRITE]</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxlowiosubmit-lowio-op-write-" data-raw-source="[&lt;strong&gt;MRxLowIOSubmit[LOWIO_OP_WRITE]&lt;/strong&gt;](./mrxlowiosubmit-lowio-op-write-.md)"><strong>MRxLowIOSubmit[LOWIO_OP_WRITE]</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to issue a write request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_WRITE.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
- 
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Error handling
 description: This topic discusses error handling requirements for NFC clients.
-ms.assetid: 52376A1F-9ADD-4297-ADF9-A1EBF5714316
 keywords:
 - NFC
 - near field communications
@@ -31,6 +30,5 @@ This topic discusses error handling requirements for NFC clients.
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

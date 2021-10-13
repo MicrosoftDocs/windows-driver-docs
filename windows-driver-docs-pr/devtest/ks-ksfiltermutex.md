@@ -1,7 +1,6 @@
 ---
 title: KsFilterMutex rule ()
 description: The KsFilterMutex rule specifies that a KS miniport driver acquires and releases the filter mutex in the correct sequence.
-ms.assetid: 09927C42-2F05-49F6-AFE1-E45049ED2805
 ms.date: 05/21/2018
 keywords: ["KsFilterMutex rule ()"]
 topic_type:
@@ -21,16 +20,12 @@ The KsFilterMutex rule specifies that a KS miniport driver acquires and releases
 -   A KS miniport driver cannot obtain the filter mutex recursively.
 -   A thread should not release the filter mutex without acquiring it first.
 
-|              |     |
-|--------------|-----|
-| Driver model | KS  |
+**Driver model: KS**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x0008100A) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0008100A)
 
-How to test
------------
+
+## How to test
 
 <table>
 <colgroup>
@@ -46,7 +41,7 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain ks</strong>.</p>
 <p>For example:</p>
 <p></p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)">Driver Verifier</a>.</p></td>
+<p>For more information, see <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -54,15 +49,6 @@ How to test
  
 
 **verifier /domain ks** \[*options*\] **/driver** *&lt;yourdriver&gt;*
-See also
---------
+## See also
 
-[Filter Control Mutex in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/filter-control-mutex-in-avstream)
- 
-
- 
-
-
-
-
-
+[Filter Control Mutex in AVStream](../stream/filter-control-mutex-in-avstream.md)

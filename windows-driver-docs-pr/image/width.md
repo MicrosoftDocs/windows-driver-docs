@@ -1,7 +1,6 @@
 ---
 title: Width element
 description: The required Width element specifies a width value that the scan device supports for scanner configuration elements that require a Width.
-ms.assetid: 2e9b6c4a-8180-4c09-8d60-64f8ede7bdfc
 keywords: ["Width element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Width** element specifies a width value that the scan device supports for scanner configuration elements that require a **Width**.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Width wscn:Override="" wscn:UsedDefault=""
@@ -29,8 +27,7 @@ Usage
 </wscn:Width wscn:Override="" wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -65,8 +62,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. For possible values, see the specific parent element.
 
@@ -109,8 +105,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **Width** element is a required child element for all of its parent elements. The value of **Width** depends on its parent element. For possible values, see the appropriate parent element.
 

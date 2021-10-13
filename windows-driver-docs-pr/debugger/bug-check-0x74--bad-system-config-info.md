@@ -1,9 +1,8 @@
 ---
 title: Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO
 description: The BAD_SYSTEM_CONFIG_INFO bug check has a value of 0x00000074. This bug check indicates that there is an error in the registry.
-ms.assetid: c59ddc44-d860-4fbb-a975-ae7226fdce86
 keywords: ["Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO", "BAD_SYSTEM_CONFIG_INFO"]
-ms.date: 03/24/2019
+ms.date: 01/29/2021
 topic_type:
 - apiref
 api_name:
@@ -57,17 +56,15 @@ The BAD\_SYSTEM\_CONFIG\_INFO bug check has a value of 0x00000074. This bug chec
 
  
 
-Cause
------
+## Cause
 
 The BAD\_SYSTEM\_CONFIG\_INFO bug check occurs if the SYSTEM hive is corrupt. However, this corruption is unlikely, because the boot loader, checks a hive for corruption when it loads the hive.
 
 This bug check can also occur if some critical registry keys and values are missing. The keys and values might be missing if a user manually edited the registry or if an application or service corrupted the registry.
 
-Looking up the NT status value returned in parameter 4 can provide additional information, see [NTSTATUS Values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) for a listing. 
+Looking up the NT status value returned in parameter 4 can provide additional information, see [NTSTATUS Values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) for a listing. 
 
-Resolution
-----------
+## Resolution
 
 Check in the Windows system eventlog to see if there are any registry related error events. If there are see if the event lists a hive or specific key that the error occurred in.
 
@@ -134,8 +131,13 @@ Index 5: 	 e9dd6ce5 kcb=ffffd805e4180e48 cell=00812970 f=00200000 \REGISTRY\MACH
 
 ```
 
-Remarks
-----------
+## Remarks
+
+For general information on determining the cause of a blue screen, refer to [Blue Screen Data](blue-screen-data.md).
+
+It is always a good idea to confirm that there is sufficient hard drive or SSD storage available to allow the OS to function normally.
+
+The system file checker tool can look for corruptions in Windows. For more information, see [Use the System File Checker tool to repair missing or corrupted system files](https://support.microsoft.com/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e).
 
 Try booting into safe mode and then restart the OS normally. If the restart does not fix the problem, the registry damage is too extensive. Try the following steps.
 

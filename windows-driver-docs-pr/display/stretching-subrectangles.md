@@ -1,7 +1,6 @@
 ---
 title: Stretching Subrectangles
 description: Stretching Subrectangles
-ms.assetid: c8642ea4-67e9-4a15-9636-8d7efbfd8c9e
 keywords:
 - deinterlacing WDK DirectX VA , subrectangular processing
 - subrectangular processing WDK DirectX VA
@@ -34,7 +33,7 @@ The source surface of the single substream is 360 x 240, with the following sour
 
 The following diagram shows the output of the combination deinterlacing and substream compositing operation.
 
-![diagram illustrating stretching subrectangles](images/trgrect7.png)
+![diagram illustrating stretching subrectangles.](images/trgrect7.png)
 
  
 

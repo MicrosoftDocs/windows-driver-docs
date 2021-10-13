@@ -1,7 +1,6 @@
 ---
 title: Overview of the Boot.ini File
 description: The Boot.ini file is a text file that contains the boot options for computers with BIOS firmware running NT-based operating system prior to Windows Vista. It is located at the root of the system partition, typically c:\Boot.ini.
-ms.assetid: bc9bb063-4caa-42fe-bb3d-dc588fbbb8d9
 keywords:
 - Boot.ini files WDK , about Boot.ini files
 - boot loader section WDK boot options
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # Overview of the Boot.ini File
 
 > [!IMPORTANT] 
-> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).
+> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](./boot-options-in-windows.md).
 
 The Boot.ini file is a text file that contains the boot options for computers with BIOS firmware running NT-based operating system prior to Windows Vista. It is located at the root of the system partition, typically c:\\Boot.ini. The following sample shows the content of a typical Boot.ini file.
 
@@ -67,8 +66,8 @@ Each boot entry includes the following elements:
     "Microsoft Windows XP Professional"
     ```
 
--   *Boot entry parameters*, also known as *boot parameters* or *load options* enable, disable, and configure operating system features. Boot parameters resemble command-line parameters, each beginning with a forward slash (/), such as [**/debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-debug). You can have zero or more boot parameters on each boot entry.
+-   *Boot entry parameters*, also known as *boot parameters* or *load options* enable, disable, and configure operating system features. Boot parameters resemble command-line parameters, each beginning with a forward slash (/), such as [**/debug**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200). You can have zero or more boot parameters on each boot entry.
 
-    For a list of boot parameters that are relevant to driver testing and debugging, see [Boot.ini Boot Parameter Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+    For a list of boot parameters that are relevant to driver testing and debugging, see [Boot.ini Boot Parameter Reference](./boot-options-in-a-boot-ini-file.md).
 
 You can have multiple boot entries for the same operating system, each with a different set of boot parameters. Windows creates a standard boot entry when you install the operating system, and you can create additional, customized entries for an operating system by editing Boot.ini.

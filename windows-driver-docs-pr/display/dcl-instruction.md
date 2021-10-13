@@ -1,7 +1,6 @@
 ---
 title: DCL Instruction Format
 description: DCL Instruction Format
-ms.assetid: 2833fe6a-f430-4a34-936f-04e997063671
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---
@@ -35,7 +34,7 @@ Has the following bit format:
 
 [destination parameter token](destination-parameter-token.md)
 
-Indicates the register number and the [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type) as D3DSPR\_SAMPLER. These are the only fields that are used in this token.
+Indicates the register number and the [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type) as D3DSPR\_SAMPLER. These are the only fields that are used in this token.
 
 **Input or texture register only.**
 
@@ -77,7 +76,7 @@ Has the following bit format:
 
 [destination parameter token](destination-parameter-token.md)
 
-Indicates the register number and the [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type) as D3DSPR\_INPUT. The write-mask field indicates declared components.
+Indicates the register number and the [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type) as D3DSPR\_INPUT. The write-mask field indicates declared components.
 
 **Pixel shader 3\_0 and later only.**
 
@@ -102,7 +101,7 @@ Has the following bit format:
 
 [destination parameter token](destination-parameter-token.md)
 
-Indicates the register number and the [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type) as D3DSPR\_TEXTURE. The write-mask field indicates declared components.
+Indicates the register number and the [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type) as D3DSPR\_TEXTURE. The write-mask field indicates declared components.
 
 **Face register only.**
 
@@ -161,7 +160,7 @@ Has the following bit format:
 
 [destination parameter token](destination-parameter-token.md)
 
-Indicates the register number and the [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type) as D3DSPR\_OUTPUT. The write-mask field defines which components are written.
+Indicates the register number and the [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type) as D3DSPR\_OUTPUT. The write-mask field defines which components are written.
 
 Note that several DCL instructions, which describe the output, can use the same register offset. However, the write mask components for each DCL instruction must be different. For example, the following is valid in a vertex shader 3\_0 and later:
 
@@ -178,10 +177,4 @@ The output DCL instructions must declare all registers that are written by a ver
 Available in Windows Vista and later versions of the Windows operating systems.
 
  
-
- 
-
-
-
-
 

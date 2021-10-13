@@ -1,7 +1,6 @@
 ---
 title: DispatchDeviceControl in Lowest-Level Drivers
 description: DispatchDeviceControl in Lowest-Level Drivers
-ms.assetid: 51caacd3-c9e0-450e-9060-f308ab46b5a0
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-An [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) request for a lowest-level driver requires that the driver either change the state of its device or provide information about the state of its device. Because most kinds of drivers are required to handle a number of I/O control codes, their [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines usually contain a **switch** statement somewhat like the following:
+An [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) request for a lowest-level driver requires that the driver either change the state of its device or provide information about the state of its device. Because most kinds of drivers are required to handle a number of I/O control codes, their [*DispatchDeviceControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routines usually contain a **switch** statement somewhat like the following:
 
 ```cpp
     :    : 
@@ -47,12 +46,7 @@ Consider the following implementation guidelines for device drivers' *DispatchDe
 
 -   For better performance, every lowest-level device driver's *DispatchDeviceControl* routine should satisfy any device control request that it can, without queuing the IRP to other driver routines.
 
-If the *DispatchDeviceControl* routine can complete the IRP, it should call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) with a *PriorityBoost* of IO\_NO\_INCREMENT. If the *DispatchDeviceControl* routine must queue the IRP for further processing, it must call [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending) and return STATUS\_PENDING.
+If the *DispatchDeviceControl* routine can complete the IRP, it should call [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) with a *PriorityBoost* of IO\_NO\_INCREMENT. If the *DispatchDeviceControl* routine must queue the IRP for further processing, it must call [**IoMarkIrpPending**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending) and return STATUS\_PENDING.
 
  
-
- 
-
-
-
 

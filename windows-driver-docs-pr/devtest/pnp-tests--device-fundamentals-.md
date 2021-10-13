@@ -1,7 +1,6 @@
 ---
 title: PnP Tests (Device Fundamentals)
 description: The Device Fundamentals PnP tests force a driver to handle almost all of the PnP IRPs; however, there are three areas that are stressed specifically removal, rebalance, and surprise removal.
-ms.assetid: 4224F92B-5430-4F55-900D-0B08ADBE54F6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ The Device Fundamentals PnP tests force a driver to handle almost all of the PnP
 ## PNP tests
 
 
-The Plug and Play (PnP) tests execute various PnP-related code paths in the driver and user-mode components. The PnP tests should be run with [Driver Verifier](driver-verifier.md) enabled on the test computer. For information about enabling Driver Verifier, see [Driver Verifier properties for driver projects](https://docs.microsoft.com/windows-hardware/drivers).
+The Plug and Play (PnP) tests execute various PnP-related code paths in the driver and user-mode components. The PnP tests should be run with [Driver Verifier](driver-verifier.md) enabled on the test computer. For information about enabling Driver Verifier, see [Driver Verifier properties for driver projects](/windows-hardware/drivers).
 
 <table>
 <colgroup>
@@ -31,7 +30,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <tr class="odd">
 <td align="left"><p><span id="Disable_Enhanced_Device_Testing__EDT__Support_"></span><span id="disable_enhanced_device_testing__edt__support_"></span><span id="DISABLE_ENHANCED_DEVICE_TESTING__EDT__SUPPORT_"></span>Disable Enhanced Device Testing (EDT) Support</p></td>
 <td align="left"><p>This test uninstalls the test filter driver (msdmfilt.sys) as an upper filter on devices specified using the DQ parameter. This test filter gets installed as part of running tests in this test category</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -44,7 +43,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <td align="left"><p>This test performs basic PnP disable/enable and I/O on devices with a system reboot.</p>
 <p><strong>Test binary:</strong> Devfund_PNP_DisableEnable_Reboot_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> PNP_DisableEnable_Reboot_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p></td>
 </tr>
@@ -54,15 +53,15 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <p>This test does the following:</p>
 <ol>
 <li>Verifies that there are no devices on the system reporting device problem codes.</li>
-<li>Tests I/O on every device on the system using WDTF Simple I/O plugins. See <a href="https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins" data-raw-source="[Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins)">Provided WDTF Simple I/O plug-ins</a> for more information.</li>
-<li>Disables and enables every device on the system using WDTF PnP action interfaces, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-disabledevice" data-raw-source="[&lt;strong&gt;IWDTFPNPAction2::DisableDevice&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-disabledevice)"><strong>IWDTFPNPAction2::DisableDevice</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-enabledevice" data-raw-source="[&lt;strong&gt;IWDTFPNPAction2::EnableDevice&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-enabledevice)"><strong>IWDTFPNPAction2::EnableDevice</strong></a> methods for more information.</li>
+<li>Tests I/O on every device on the system using WDTF Simple I/O plugins. See <a href="/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins" data-raw-source="[Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)">Provided WDTF Simple I/O plug-ins</a> for more information.</li>
+<li>Disables and enables every device on the system using WDTF PnP action interfaces, see <a href="/windows-hardware/drivers/ddi/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-disabledevice" data-raw-source="[&lt;strong&gt;IWDTFPNPAction2::DisableDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-disabledevice)"><strong>IWDTFPNPAction2::DisableDevice</strong></a> and <a href="/windows-hardware/drivers/ddi/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-enabledevice" data-raw-source="[&lt;strong&gt;IWDTFPNPAction2::EnableDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-enabledevice)"><strong>IWDTFPNPAction2::EnableDevice</strong></a> methods for more information.</li>
 <li>Verifies that there are no devices on the system reporting device problem codes.</li>
-<li>Tests I/O on every device on the system using WDTF Simple I/O plugins. See <a href="https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins" data-raw-source="[Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins)">Provided WDTF Simple I/O plug-ins</a> for more information.</li>
+<li>Tests I/O on every device on the system using WDTF Simple I/O plugins. See <a href="/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins" data-raw-source="[Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)">Provided WDTF Simple I/O plug-ins</a> for more information.</li>
 <li>Repeats steps 3-5 several times.</li>
 </ol>
 <p><strong>Test binary:</strong> Devfund_PNP_DisableEnable_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> PNP_DisableEnable_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p></td>
 </tr>
@@ -72,7 +71,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <p>For more information, see <a href="#about-the-device-removal-tests" data-raw-source="[About the Device Removal tests](#about-the-device-removal-tests)">About the Device Removal tests</a>.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPCancelRemoveDevice</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -85,7 +84,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <p>For more information, see <a href="#about-the-rebalance-tests" data-raw-source="[About the Rebalance tests](#about-the-rebalance-tests)">About the Rebalance tests</a>.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPCancelStopDevice</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -94,10 +93,10 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 </tr>
 <tr class="even">
 <td align="left"><p><span id="PNP_DIF_Remove_Device_Test"></span><span id="pnp_dif_remove_device_test"></span><span id="PNP_DIF_REMOVE_DEVICE_TEST"></span>PNP DIF Remove Device Test</p></td>
-<td align="left"><p>This test uses the SetupDi API to send a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/dif-remove" data-raw-source="[&lt;strong&gt;DIF_REMOVE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/dif-remove)"><strong>DIF_REMOVE</strong></a> request for the installers to remove the device.</p>
+<td align="left"><p>This test uses the SetupDi API to send a <a href="/windows-hardware/drivers/install/dif-remove" data-raw-source="[&lt;strong&gt;DIF_REMOVE&lt;/strong&gt;](../install/dif-remove.md)"><strong>DIF_REMOVE</strong></a> request for the installers to remove the device.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPDIFRemoveAndRescanParentDevice</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -109,7 +108,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <td align="left"><p>This test disables and enables the target devices.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPDisableAndEnableDevice</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -123,7 +122,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <p>For more information, see <a href="#about-the-rebalance-tests" data-raw-source="[About the Rebalance tests](#about-the-rebalance-tests)">About the Rebalance tests</a>.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPTryStopDeviceAndFailRestart</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -136,7 +135,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <p>For more information, see <a href="#about-the-rebalance-tests" data-raw-source="[About the Rebalance tests](#about-the-rebalance-tests)">About the Rebalance tests</a>.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPTryStopDeviceRequestNewResourcesAndRestartDevice</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -149,7 +148,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <p>For more information, see <a href="#about-the-device-removal-tests" data-raw-source="[About the Device Removal tests](#about-the-device-removal-tests)">About the Device Removal tests</a>.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPRemoveAndRestartDevice</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -162,7 +161,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <p>For more information, see <a href="#about-the-rebalance-tests" data-raw-source="[About the Rebalance tests](#about-the-rebalance-tests)">About the Rebalance tests</a>.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPTryStopAndRestartDevice</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -175,7 +174,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <p>For more information, see <a href="#about-the-surprise-removal-test" data-raw-source="[About the Surprise Removal test](#about-the-surprise-removal-test)">About the Surprise Removal test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPSurpriseRemoveAndRestartDevice</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>DoSimpleIO</em></p>
@@ -279,7 +278,7 @@ Depending upon which rebalance test that you choose, the following events occur:
 ## Device Error Codes
 
 
-If the test gives an error message saying that the device status is not OK, you can learn more about the device status through Device Manager. For a summary of the various device error codes, see [Device Manager Error Messages](https://docs.microsoft.com/windows-hardware/drivers/install/device-manager-error-messages).
+If the test gives an error message saying that the device status is not OK, you can learn more about the device status through Device Manager. For a summary of the various device error codes, see [Device Manager Error Messages](../install/device-manager-error-messages.md).
 
 ## Debug installation failures using the Setup API logs
 
@@ -295,24 +294,15 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 ## Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers/develop/how-to-select-and-configure-the-device-fundamental-tests)
+[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
 
-[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)
+[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
-[Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins)
+[Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](https://docs.microsoft.com/windows-hardware/drivers)
-
- 
-
- 
-
-
-
-
-
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
 

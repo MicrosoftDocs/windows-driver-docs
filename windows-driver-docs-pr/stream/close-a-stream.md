@@ -1,7 +1,6 @@
 ---
 title: Close a Stream
 description: Close a Stream
-ms.assetid: 1ed9b07c-8d22-485f-a7e8-3a27ca3768b0
 keywords:
 - Avcstrm.sys streaming filter driver WDK , closing streams
 - stream closing WDK AV/C streaming

@@ -1,7 +1,6 @@
 ---
-title: Filtering data
+title: Filtering data (previous version)
 description: In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed.
-ms.assetid: 1895EC5C-08C1-4976-83F2-CD5A2B55338D
 keywords:
 - change sensitivity
 - sensor change sensitivity
@@ -18,7 +17,7 @@ ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
-# Filtering data
+# Filtering data (previous version)
 
 
 In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed. This filtering results in lower CPU utilization (due to reduced sensor throughput) and less power consumption (both for the sensor and the CPU).
@@ -164,7 +163,7 @@ Once the current E-CRI and E-CS values have been determined and are updated as s
 
 The following illustration demonstrates how time filtering of raw sensor data is evaluated in order to determine when data events should be raised.
 
-![time-filtered sensor data](images/cri-cs.png)
+![time-filtered sensor data.](images/cri-cs.png)
 
 In the previous illustration, the red data in the lower portion of the diagram represents the raw sensor data. The green line represents data that would be returned to clients that poll for data (one of many ways to implement this behavior) and the “X” values represent when data events are fired. Blue lines are the thresholds for the E-CS boundaries (+/- E-CS relative to last data event value).
 
@@ -198,7 +197,4 @@ If your sensor hardware, or firmware, supports the notion of a report interval y
 If your sensor does not provide native report-interval support, consider disabling interrupts for a subset of the current report interval. Then, once this time elapses, retrieve the current device data.
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-
-
-
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

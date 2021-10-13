@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_InitiatorNodeFailureEvent WMI Class
 description: MSiSCSI\_InitiatorNodeFailureEvent WMI Class
-ms.assetid: 2e542667-4da8-447b-b625-2cd27d52da61
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -35,13 +34,7 @@ class MSiSCSI_InitiatorNodeFailureEvent : WMIEvent {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorNodeFailureEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_msiscsi_initiatornodefailureevent) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorNodeFailureEvent**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_initiatornodefailureevent) data structure.
 
  
-
- 
-
-
-
-
 

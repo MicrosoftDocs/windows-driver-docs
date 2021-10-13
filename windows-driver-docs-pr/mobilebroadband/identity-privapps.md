@@ -1,14 +1,13 @@
 ---
 title: Identity (SoftwareInfo - priviliged applications)
 description: Identity (SoftwareInfo - priviliged applications)
-ms.assetid: 405ec2ee-ea4a-468b-b75b-365ffce03cdb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Identity (SoftwareInfo - priviliged applications)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Identity element specifies the publisher identity and application manifest name of the app.
 

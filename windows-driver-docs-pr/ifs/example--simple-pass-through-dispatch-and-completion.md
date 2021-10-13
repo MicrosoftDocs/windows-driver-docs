@@ -1,7 +1,6 @@
 ---
 title: Example Simple Pass-Through Dispatch and Completion
 description: Example Simple Pass-Through Dispatch and Completion
-ms.assetid: dae3a450-37b1-470b-a0f3-4108075e06ac
 keywords:
 - IRP completion routines WDK file system , examples
 ms.date: 04/20/2017
@@ -16,11 +15,11 @@ ms.localizationpriority: medium
 
 To set a completion routine for an IRP and pass the IRP down, a dispatch routine must do the following:
 
--   Call [**IoCopyCurrentIrpStackLocationToNext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) to copy the parameters from the current stack location to that of the next-lower-level driver.
+-   Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) to copy the parameters from the current stack location to that of the next-lower-level driver.
 
--   Call [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine) to designate a completion routine for the IRP.
+-   Call [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) to designate a completion routine for the IRP.
 
--   Call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) to pass the IRP down to the next-lower-level driver.
+-   Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to pass the IRP down to the next-lower-level driver.
 
 This technique is illustrated in the following code example:
 
@@ -37,15 +36,15 @@ IoSetCompletionRoutine( Irp,                                 // Irp
 return IoCallDriver ( NextLowerDriverDeviceObject, Irp ); 
 ```
 
-In this example, the call to [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine) sets a completion routine for an IRP.
+In this example, the call to [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) sets a completion routine for an IRP.
 
-The first two parameters in the call to [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine) are a pointer to the IRP and the name of the completion routine. The third parameter is a pointer to a driver-defined structure to be passed to the completion routine. This structure contains context information that the completion routine will need when it performs completion processing on the IRP. The context structure must be allocated from nonpaged pool, because the completion routine can be called at IRQL DISPATCH\_LEVEL.
+The first two parameters in the call to [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) are a pointer to the IRP and the name of the completion routine. The third parameter is a pointer to a driver-defined structure to be passed to the completion routine. This structure contains context information that the completion routine will need when it performs completion processing on the IRP. The context structure must be allocated from nonpaged pool, because the completion routine can be called at IRQL DISPATCH\_LEVEL.
 
-The last three parameters passed to [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine) are flags that specify whether the completion routine is called when the I/O request succeeds, fails, or is canceled.
+The last three parameters passed to [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) are flags that specify whether the completion routine is called when the I/O request succeeds, fails, or is canceled.
 
 ### <span id="Completion_Routine"></span><span id="completion_routine"></span><span id="COMPLETION_ROUTINE"></span>Completion Routine
 
-If a dispatch routine sets a completion routine and immediately returns after calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) (as shown in the above dispatch routine), the corresponding completion routine must check the IRP's PendingReturned flag and, if it is set, call **IoMarkIrpPending**. Then it should return STATUS\_SUCCESS, as shown in the following example:
+If a dispatch routine sets a completion routine and immediately returns after calling [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) (as shown in the above dispatch routine), the corresponding completion routine must check the IRP's PendingReturned flag and, if it is set, call **IoMarkIrpPending**. Then it should return STATUS\_SUCCESS, as shown in the following example:
 
 ```cpp
 if (Irp->PendingReturned) {
@@ -63,9 +62,4 @@ Setting a completion routine allows the driver to further process the IRP after 
 Because it runs in an arbitrary thread context at IRQL &lt;= DISPATCH\_LEVEL, a completion routine can perform only limited processing on the IRP.
 
  
-
- 
-
-
-
 

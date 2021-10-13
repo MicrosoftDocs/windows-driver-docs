@@ -1,14 +1,13 @@
 ---
 title: Internet
 description: Internet
-ms.assetid: 13723c21-0054-4b91-9059-c7c985e83773
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Internet
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Internet element specifies the purchase mobile broadband profile file to use.
 

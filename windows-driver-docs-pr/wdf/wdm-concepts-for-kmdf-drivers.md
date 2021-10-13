@@ -1,7 +1,6 @@
 ---
 title: WDM Concepts for WDF Drivers
 description: WDM Concepts for WDF Drivers
-ms.assetid: 164b4882-a5a3-45d3-a2f5-53367b396439
 keywords:
 - kernel-mode drivers WDK KMDF , WDM
 - KMDF WDK , WDM
@@ -29,7 +28,7 @@ Windows Driver Frameworks (WDF) is a wrapper around Microsoft Windows Driver Mod
 
 ### Driver types
 
-Windows-based drivers are divided into three types: [bus drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/bus-drivers), [function drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/function-drivers), and [filter drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/filter-drivers). Bus drivers support I/O buses by detecting child devices that are plugged into a parent bus and reporting their characteristics. (This activity is called *bus enumeration*.) Function drivers control I/O operations for devices and buses. Filter drivers receive, review, and possibly modify data that flows between user applications and drivers, or between individual drivers.
+Windows-based drivers are divided into three types: [bus drivers](../kernel/bus-drivers.md), [function drivers](../kernel/function-drivers.md), and [filter drivers](../kernel/filter-drivers.md). Bus drivers support I/O buses by detecting child devices that are plugged into a parent bus and reporting their characteristics. (This activity is called *bus enumeration*.) Function drivers control I/O operations for devices and buses. Filter drivers receive, review, and possibly modify data that flows between user applications and drivers, or between individual drivers.
 
 Drivers for buses are essentially function drivers that also enumerate children. A driver acts as a "bus driver" when it enumerates the child devices on a bus. Otherwise, the same driver acts as the "function driver" for the bus when it handles I/O operations that access the bus adapter's hardware.
 
@@ -43,7 +42,7 @@ A simple driver stack includes a bus driver at the bottom of the stack, which ha
 
 ### Device stacks
 
-Each driver stack supports one or more *device stacks*. A device stack is a set of *device objects* that are created from WDM-defined [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structures. Each device stack represents one device. Each driver creates a device object for each of its devices and attaches each device object to a device stack. Device stacks are created and removed as devices are plugged in and unplugged, and each time the system is rebooted.
+Each driver stack supports one or more *device stacks*. A device stack is a set of *device objects* that are created from WDM-defined [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structures. Each device stack represents one device. Each driver creates a device object for each of its devices and attaches each device object to a device stack. Device stacks are created and removed as devices are plugged in and unplugged, and each time the system is rebooted.
 
 When a bus driver detects that child devices have been plugged in or unplugged, it informs the Plug and Play (PnP) manager. In response, the PnP manager asks the bus driver to create a physical device object (PDO) for each child device that is connected to the parent device (that is, the bus). The PDO becomes the bottom of a device stack.
 
@@ -64,10 +63,4 @@ Each time a driver receives an IRP, the driver also receives a pointer to the de
 WDF drivers typically do not directly access IRPs. The framework converts the WDM IRPs that represent read, write, and device I/O control operations to framework request objects that Kernel-Mode Driver Framework (KMDF) and UMDF drivers receive in I/O queues. The framework handles PnP and power management IRPs internally and uses event callback functions to inform the driver of PnP and power events.
 
  
-
- 
-
-
-
-
 

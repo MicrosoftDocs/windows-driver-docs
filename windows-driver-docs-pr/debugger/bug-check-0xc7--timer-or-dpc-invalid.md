@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC7 TIMER_OR_DPC_INVALID
 description: The TIMER_OR_DPC_INVALID bug check has a value of 0x000000C7. This is issued if a kernel timer or delayed procedure call (DPC) is found somewhere in memory where it is not permitted.
-ms.assetid: 25a85b38-c299-4bf8-a7ed-f516adb5fcb1
 keywords: ["Bug Check 0xC7 TIMER_OR_DPC_INVALID", "TIMER_OR_DPC_INVALID"]
 ms.date: 05/23/2017
 topic_type:
@@ -94,13 +93,11 @@ The TIMER\_OR\_DPC\_INVALID bug check has a value of 0x000000C7. This is issued 
 
  
 
-Cause
------
+## Cause
 
 This condition is usually caused by a driver failing to cancel a timer or DPC before freeing the memory where it resides.
 
-Resolution
-----------
+## Resolution
 
 If you are the driver writer, use the information obtained through this bug check to fix the bugs in your code.
 

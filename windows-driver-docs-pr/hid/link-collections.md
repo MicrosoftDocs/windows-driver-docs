@@ -1,7 +1,6 @@
 ---
 title: Link Collections
 description: Link Collections
-ms.assetid: 3f934661-c33c-4c08-82ac-ee2e0f519c8e
 keywords:
 - link collections WDK HID
 - nested collections WDK HID
@@ -21,17 +20,17 @@ ms.localizationpriority: medium
 
 A *link collection* as a nested subcollection within a [top-level collection](top-level-collections.md). A top-level collection can have zero or more link collections.
 
-[**HidP\_GetLinkCollectionNodes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/nf-hidpi-hidp_getlinkcollectionnodes) returns a top-level collection's [link collection array](#ddk-link-collection-array-kg) that contains information about a top-level collection's link collections.
+[**HidP\_GetLinkCollectionNodes**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getlinkcollectionnodes) returns a top-level collection's [link collection array](#ddk-link-collection-array-kg) that contains information about a top-level collection's link collections.
 
 ### <a href="" id="ddk-link-collection-array-kg"></a>Link Collection Array
 
-A *link collection array* describes all the link collections contained within a top-level collection. Each link collection is represented by a [**HIDP\_LINK\_COLLECTION\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/ns-hidpi-_hidp_link_collection_node) structure. The array's link nodes are linked in a manner that identifies their sequential and hierarchical order within a top-level collection. The first element of a link collection array represents a top-level collection and the remaining members represent the top-level collection's link collections.
+A *link collection array* describes all the link collections contained within a top-level collection. Each link collection is represented by a [**HIDP\_LINK\_COLLECTION\_NODE**](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_link_collection_node) structure. The array's link nodes are linked in a manner that identifies their sequential and hierarchical order within a top-level collection. The first element of a link collection array represents a top-level collection and the remaining members represent the top-level collection's link collections.
 
 By tracing through the nodes in the link connection array, a user-mode application or kernel-mode driver can determine the organization and usage of all the link collections in a top-level collection. In addition, the application or driver can organize controls by their link collection. This is possible because a top-level collection's [button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md) identify the link collection that contains each [HID usage](hid-usages.md) described by the capability arrays.
 
 The following figure shows an example of a top-level collection that contains four link collections.
 
-![diagram illustrating a top-level collection that contains four link collections](images/linkcol.png)
+![diagram illustrating a top-level collection that contains four link collections.](images/linkcol.png)
 
 As indicated in the previous figure, link collections are linked together in a top-to-bottom and left-to-right order (ABCD). The following table indicates, for each link collection in the example, the links between the top-level collection and its link collections.
 
@@ -127,9 +126,4 @@ An application or driver can determine which collections are aliased by repeated
 [Button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md) identify, for each usage they describe, the link collection that contains the usage. If a link collection is aliased, the capability arrays specify the preferred usage.
 
  
-
- 
-
-
-
 

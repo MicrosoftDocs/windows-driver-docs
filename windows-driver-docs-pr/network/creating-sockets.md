@@ -1,7 +1,6 @@
 ---
 title: Creating Sockets
 description: Creating Sockets
-ms.assetid: 84cd0503-15bd-401f-836c-1fdc8425d073
 keywords:
 - Winsock Kernel WDK networking , socket creation
 - WSK WDK networking , socket creation
@@ -14,15 +13,15 @@ ms.localizationpriority: medium
 # Creating Sockets
 
 
-After a Winsock Kernel (WSK) application has successfully attached to the WSK subsystem, it can create sockets that can be used for network I/O operations. A WSK application creates sockets by calling the [**WskSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_socket) function. The **WskSocket** function is pointed to by the **WskSocket** member of the [**WSK\_PROVIDER\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_provider_dispatch) structure that was returned by the WSK subsystem during attachment.
+After a Winsock Kernel (WSK) application has successfully attached to the WSK subsystem, it can create sockets that can be used for network I/O operations. A WSK application creates sockets by calling the [**WskSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function. The **WskSocket** function is pointed to by the **WskSocket** member of the [**WSK\_PROVIDER\_DISPATCH**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch) structure that was returned by the WSK subsystem during attachment.
 
 A WSK application must specify which category of WSK socket it is creating whenever it creates a new socket. For more information about WSK socket categories, see [Winsock Kernel Socket Categories](winsock-kernel-socket-categories.md).
 
-A WSK application must also specify the address family, socket type, and protocol whenever it creates a new socket. For more information about the address families supported by WSK, see [WSK Address Families](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)).
+A WSK application must also specify the address family, socket type, and protocol whenever it creates a new socket. For more information about the address families supported by WSK, see [WSK Address Families](ws2def-h.md).
 
 When creating a new socket, a WSK application must provide a socket context value and a pointer to a client dispatch table structure if the application will be enabling any event callback functions on the socket. For more information about enabling event callback functions on a socket, see [Enabling and Disabling Event Callback Functions](enabling-and-disabling-event-callback-functions.md).
 
-If the socket is created successfully, the **IoStatus.Information** field of the IRP contains a pointer to a socket object structure ( [**WSK\_SOCKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_socket)) for the new socket. For more information about using IRPs with WSK functions, see [Using IRPs with Winsock Kernel Functions](using-irps-with-winsock-kernel-functions.md).
+If the socket is created successfully, the **IoStatus.Information** field of the IRP contains a pointer to a socket object structure ( [**WSK\_SOCKET**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket)) for the new socket. For more information about using IRPs with WSK functions, see [Using IRPs with Winsock Kernel Functions](using-irps-with-winsock-kernel-functions.md).
 
 The following code example shows how a WSK application can create a listening socket.
 
@@ -148,13 +147,7 @@ NTSTATUS
 }
 ```
 
-For connection-oriented sockets, a WSK application can call the [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_socket_connect) function to create, bind, and connect a socket in a single function call.
+For connection-oriented sockets, a WSK application can call the [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create, bind, and connect a socket in a single function call.
 
  
-
- 
-
-
-
-
 

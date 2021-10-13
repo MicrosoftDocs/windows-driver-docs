@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_DiscoveredTarget WMI Class
 description: ISCSI\_DiscoveredTarget WMI Class
-ms.assetid: d2d1941e-a67a-498e-9ead-ce0f45147ba0
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -16,13 +15,7 @@ The ISCSI\_DiscoveredTarget WMI class provides information that is related to a 
 
 This class is unpublished and is defined in *Discover.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTarget**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsifnd/ns-iscsifnd-_iscsi_discoveredtarget) data structure
+When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTarget**](/windows-hardware/drivers/ddi/iscsifnd/ns-iscsifnd-_iscsi_discoveredtarget) data structure
 
  
-
- 
-
-
-
-
 

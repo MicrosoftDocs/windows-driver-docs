@@ -1,7 +1,6 @@
 ---
 title: Third Part of Macroblock Control Command Structure
 description: Third Part of Macroblock Control Command Structure
-ms.assetid: 4e378d2f-dbb2-42b6-984e-b231bb806a7c
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_third_part_of_macroblock_control_command_structure_gg"></span><span id="DDK_THIRD_PART_OF_MACROBLOCK_CONTROL_COMMAND_STRUCTURE_GG"></span>
 
 
-If the **bPicIntra** member of [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_pictureparameters) is 1, the macroblock control command structure ends with the data described in the [Second Part of Macroblock Control Command Structure](second-part-of-macroblock-control-command-structure.md). If **bPicIntra** is zero, the following additional data elements are included in the macroblock control command to control the motion compensation process. The data that follows is an array of [**DXVA\_MVvalue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_mvvalue) structures contained in the **MVector** member of the macroblock control command structure. The number of elements in **MVector** depends on the type of picture specified by the members of DXVA\_PictureParameters in the following table.
+If the **bPicIntra** member of [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) is 1, the macroblock control command structure ends with the data described in the [Second Part of Macroblock Control Command Structure](second-part-of-macroblock-control-command-structure.md). If **bPicIntra** is zero, the following additional data elements are included in the macroblock control command to control the motion compensation process. The data that follows is an array of [**DXVA\_MVvalue**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mvvalue) structures contained in the **MVector** member of the macroblock control command structure. The number of elements in **MVector** depends on the type of picture specified by the members of DXVA\_PictureParameters in the following table.
 
 <table>
 <colgroup>
@@ -90,10 +89,4 @@ If the **bPicIntra** member of [**DXVA\_PictureParameters**](https://docs.micros
  
 
  
-
- 
-
-
-
-
 

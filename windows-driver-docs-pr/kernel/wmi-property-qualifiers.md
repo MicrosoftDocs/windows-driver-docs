@@ -1,7 +1,6 @@
 ---
 title: WMI Property Qualifiers
 description: WMI Property Qualifiers
-ms.assetid: e2d281b3-913c-43ad-921c-80dc8be09aa0
 keywords: ["MOF property qualifiers WDK WMI", "property qualifiers WDK WMI", "qualifiers WDK WMI", "standard MOF qualifiers WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 The following table lists the required and optional MOF property qualifiers that can be used to define items in a WMI data or event block.
 
-The following are standard MOF qualifiers: **key**, **read**, **write**, **ValueMap**, and **Values**. For more information about these and other standard MOF qualifiers, see [MOF Data Types](https://docs.microsoft.com/windows/desktop/WmiSdk/mof-data-types).
+The following are standard MOF qualifiers: **key**, **read**, **write**, **ValueMap**, and **Values**. For more information about these and other standard MOF qualifiers, see [MOF Data Types](/windows/desktop/WmiSdk/mof-data-types).
 
 <table>
 <colgroup>
@@ -115,9 +114,4 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
  
 
  
-
- 
-
-
-
 

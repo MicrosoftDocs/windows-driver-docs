@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PHY_TX_POWER_LEVEL_LIST
 description: WDI_TLV_PHY_TX_POWER_LEVEL_LIST is a TLV that contains a list of power levels.
-ms.assetid: DDBF9BBA-9700-4FD2-9521-6D0970E99893
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_TX_POWER_LEVEL_LIST Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ The size (in bytes) of the array of UINT32 elements. The array must contain 1 or
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

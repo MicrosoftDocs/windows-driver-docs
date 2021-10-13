@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_UPDATEPAGETABLEFLAGS structure
 description: The DXGKARG\_UPDATEPAGETABLEFLAGS structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 59a3fb51-ba3e-420e-abf7-c3faacc25ebc
 keywords: ["_DXGKARG_UPDATEPAGETABLEFLAGS structure Display Devices", "DXGKARG_UPDATEPAGETABLEFLAGS structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_UPDATEPAGETABLEFLAGS structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_UPDATEPAGETABLEFLAGS {
@@ -35,8 +33,7 @@ typedef struct _DXGKARG_UPDATEPAGETABLEFLAGS {
 } DXGKARG_UPDATEPAGETABLEFLAGS;
 ```
 
-Members
--------
+## Members
 
 **LinearAccess**
 Reserved for system use.
@@ -47,8 +44,7 @@ Reserved for system use.
 **Value**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

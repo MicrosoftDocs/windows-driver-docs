@@ -1,7 +1,6 @@
 ---
 title: NDEF protocol
 description: NDEF protocol
-ms.assetid: 5AF082EC-70D6-4117-BFCE-B28A8DBAC210
 keywords:
 - NFC
 - near field communications
@@ -45,7 +44,7 @@ There are several requirements common for NDEF support on the drivers of all NFC
 -   If one or more “\*:WriteTag” publications is enabled at the moment the driver detects a writable tag with sufficient space available for at least one of the payloads, the driver MUST write exactly one of the payloads to the tag. o In the event that more than one publications is active and small enough to be written to a tag, the most recently created or enabled “\*:WriteTag” publication MUST be the one written.
 -   If a “\*:WriteTag” publication is created or enabled while the driver is currently in communication with a writable tag with sufficient space available for the payload, the driver MUST write the payload to the tag even if the driver previously wrote to the tag.
 -   The driver MUST write to tags in such a way that the previous contents is overwritten.
--   If a “\*:WriteTag” payload is successfully written to a tag, the driver MUST trigger the [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message) handling (as specified above) for that publication.
+-   If a “\*:WriteTag” payload is successfully written to a tag, the driver MUST trigger the [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message) handling (as specified above) for that publication.
 
 ## Publications for “NDEF:WriteTag”
 
@@ -134,6 +133,4 @@ The driver MUST match subscriptions for “NDEF:Unknown” ONLY with NDEF messag
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

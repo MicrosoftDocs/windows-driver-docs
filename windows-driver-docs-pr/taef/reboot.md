@@ -1,7 +1,6 @@
 ---
 title: Reboot
 description: Reboot
-ms.assetid: 8AB66CAB-9BAA-4911-A143-618627226B78
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_HD_SPLIT_CURRENT_CONFIG
 description: Miniport drivers use the NDIS_STATUS_HD_SPLIT_CURRENT_CONFIG status indication to notify NDIS and overlying drivers that there has been a change in the header-data split configuration of a miniport adapter.
-ms.assetid: 6605d888-bcbe-4898-aa25-4a4352fc50de
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_HD_SPLIT_CURRENT_CONFIG Network Drivers Starting with Windows Vista
@@ -13,15 +12,13 @@ ms.localizationpriority: medium
 
 Miniport drivers use the NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG status indication to notify NDIS and overlying drivers that there has been a change in the header-data split configuration of a miniport adapter.
 
-Remarks
--------
+## Remarks
 
-When a miniport driver receives an [OID\_GEN\_HD\_SPLIT\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-hd-split-parameters) set request, the driver must use the contents of the [**NDIS\_HD\_SPLIT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_hd_split_parameters) structure to update the current configuration of the miniport adapter. After the update, the miniport driver must report the changes with the NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG status indication. The status indication ensures that all of the overlying drivers are updated with the new information.
+When a miniport driver receives an [OID\_GEN\_HD\_SPLIT\_PARAMETERS](./oid-gen-hd-split-parameters.md) set request, the driver must use the contents of the [**NDIS\_HD\_SPLIT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_hd_split_parameters) structure to update the current configuration of the miniport adapter. After the update, the miniport driver must report the changes with the NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG status indication. The status indication ensures that all of the overlying drivers are updated with the new information.
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_HD\_SPLIT\_CURRENT\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_hd_split_current_config) structure. This structure specifies the current header-data split configuration of a miniport adapter.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_HD\_SPLIT\_CURRENT\_CONFIG**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_hd_split_current_config) structure. This structure specifies the current header-data split configuration of a miniport adapter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -43,18 +40,13 @@ Requirements
 ## See also
 
 
-[**NDIS\_HD\_SPLIT\_CURRENT\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_hd_split_current_config)
+[**NDIS\_HD\_SPLIT\_CURRENT\_CONFIG**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_hd_split_current_config)
 
 [**NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG**](ndis-status-hd-split-current-config.md)
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
-[OID\_GEN\_HD\_SPLIT\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-hd-split-parameters)
-
- 
+[OID\_GEN\_HD\_SPLIT\_PARAMETERS](./oid-gen-hd-split-parameters.md)
 
  
-
-
-
 

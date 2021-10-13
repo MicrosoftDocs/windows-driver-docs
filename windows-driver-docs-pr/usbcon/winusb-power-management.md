@@ -1,5 +1,5 @@
 ---
-Description: WinUSB Power Management
+description: WinUSB Power Management
 title: WinUSB Power Management
 ms.date: 01/07/2019
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # WinUSB Power Management
 
 
-WinUSB uses the KMDF state machines for power management. Power policies are managed through calls to [**WinUsb\_SetPowerPolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_setpowerpolicy).
+WinUSB uses the KMDF state machines for power management. Power policies are managed through calls to [**WinUsb\_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy).
 
 In order to modify the power behavior of WinUSB, default registry settings can be modified in the device's INF. These values must be written to the device specific location in the registry by adding the values in the **HW.AddReg** section of the INF.
 
@@ -31,7 +31,7 @@ HKR,,SystemWakeEnabled,0x00010001,1
 <a href="" id="selective-suspend"></a>**Selective Suspend**  
 Selective suspend can be disabled by any of several system or WinUSB settings. A single setting cannot force WinUSB to enable selective suspend.
 
-The following power policy settings that are specified in [**WinUsb\_SetPowerPolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_setpowerpolicy)'s *PolicyType* parameter affect the behavior of selective suspend:
+The following power policy settings that are specified in [**WinUsb\_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)'s *PolicyType* parameter affect the behavior of selective suspend:
 
 -   AUTO\_SUSPEND When set to zero, it does not set the device to selective suspend mode.
 -   SUSPEND\_DELAY Sets the time between when the device becomes idle and when WinUSB requests the device to go into selective suspend.
@@ -58,7 +58,7 @@ The following table shows how the registry keys affect the selective suspend fea
 <li>A nonzero value indicates that the device supports being powered down when idle.</li>
 <li>If DeviceIdleEnabled is not set, the value of the AUTO_SUSPEND power policy setting is ignored.</li>
 </ul>
-<pre class="syntax" space="preserve"><code class="language-INF">HKR,,DeviceIdleEnabled,0x00010001,1</code></pre></td>
+<pre class="syntax"><code class="language-INF">HKR,,DeviceIdleEnabled,0x00010001,1</code></pre></td>
 </tr>
 <tr class="even">
 <td><strong>DeviceIdleIgnoreWakeEnable</strong></td>
@@ -72,7 +72,7 @@ The following table shows how the registry keys affect the selective suspend fea
 <li>If the user enables device power savings, then the value of AUTO_SUSPEND is used to determine whether to suspend the device when idle.</li>
 </ul>
 <p>The <strong>UserSetDeviceIdleEnabled</strong> is ignored if <strong>DeviceIdleEnabled</strong> is not set.</p>
-<pre class="syntax" space="preserve"><code class="language-INF">HKR,,UserSetDeviceIdleEnabled,0x00010001,1</code></pre></td>
+<pre class="syntax"><code class="language-INF">HKR,,UserSetDeviceIdleEnabled,0x00010001,1</code></pre></td>
 </tr>
 <tr class="even">
 <td><strong>DefaultIdleState</strong></td>
@@ -82,13 +82,13 @@ The following table shows how the registry keys affect the selective suspend fea
 <li>A nonzero value indicates that by default the device is allowed to be suspended when idle.</li>
 </ul>
 <p>This value is ignored if <strong>DeviceIdleEnabled</strong> is not set.</p>
-<pre class="syntax" space="preserve"><code class="language-INF">HKR,,DefaultIdleState,0x00010001,1</code></pre></td>
+<pre class="syntax"><code class="language-INF">HKR,,DefaultIdleState,0x00010001,1</code></pre></td>
 </tr>
 <tr class="odd">
 <td><strong>DefaultIdleTimeout</strong></td>
 <td>This is a DWORD value. This registry value sets the default state of the SUSPEND_DELAY power policy setting.
 <p>The value indicates the amount of time in milliseconds to wait before determining that a device is idle.</p>
-<pre class="syntax" space="preserve"><code class="language-INF">HKR,,DefaultIdleTimeout,0x00010001,100</code></pre></td>
+<pre class="syntax"><code class="language-INF">HKR,,DefaultIdleTimeout,0x00010001,100</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -104,10 +104,7 @@ All writes and control transfers force the device into the **D0** power state an
 [WinUSB (Winusb.sys) Installation](winusb-installation.md)  
 [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
 [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)  
-[WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
+[WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
 [WinUSB](winusb.md)  
-[**WinUsb\_GetPowerPolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getpowerpolicy)  
-[**WinUsb\_SetPowerPolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_setpowerpolicy)  
-
-
-
+[**WinUsb\_GetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_getpowerpolicy)  
+[**WinUsb\_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)

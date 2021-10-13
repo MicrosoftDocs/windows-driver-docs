@@ -1,7 +1,6 @@
 ---
 title: Windows Hardware Error Architecture Overview
 description: Windows Hardware Error Architecture Overview
-ms.assetid: 859caa70-371c-4191-baf9-52a38411164a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ms.custom: 19H1
@@ -11,13 +10,12 @@ ms.custom: 19H1
 
 Windows 10, version 1903 includes a simplified interface to WHEA.  For more info, see the following pages:
 
-- [**WheaAddErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
-- [**WheaReportHwErrorDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
-- [**WheaRemoveErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver)
-- [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-whea_error_source_configuration_device_driver)
-- [*WHEA_ERROR_SOURCE_READY_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_ready_device_driver)
-- [*WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_uninitialize_device_driver)
-- [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver)
+- [**WheaAddErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
+- [**WheaReportHwErrorDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
+- [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver)
+- [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-whea_error_source_configuration_device_driver)
+- [*WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_uninitialize_device_driver)
+- [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver)
 
 This section includes the following topics:
 
@@ -38,9 +36,4 @@ This section includes the following topics:
 [Differences from Previous Versions of Microsoft Windows](differences-from-previous-versions-of-microsoft-windows.md)
 
  
-
- 
-
-
-
 

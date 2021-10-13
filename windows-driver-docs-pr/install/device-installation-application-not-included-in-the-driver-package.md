@@ -1,7 +1,6 @@
 ---
 title: Device Installation Application Not Included in Driver Package
 description: Device Installation Application Not Included in the Driver Package
-ms.assetid: 3c8fd504-50c9-4a61-9cca-cd8cee4e2bd7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Device Installation Application Not Included in the Driver Package
 
 
-This method describes a way through which a co-installer, by using finish-install actions to install device-specific applications.
+This method describes a way through which a co-installer, by using [finish-install actions](finish-install-actions--windows-vista-and-later-.md), can start a *device installation application* to install device-specific applications.
 
 In this method, the device installation application is not part of the [driver package](driver-packages.md), and the driver package's INF file is not used to copy this file to the user's hard drive. Instead, the co-installer starts the device installation application directly from the distribution medium, or prompts the user to download the device installation application from the Internet.
 

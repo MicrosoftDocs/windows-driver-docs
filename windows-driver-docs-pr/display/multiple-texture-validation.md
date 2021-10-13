@@ -1,7 +1,6 @@
 ---
 title: Multiple Texture Validation
 description: Multiple Texture Validation
-ms.assetid: 3f56f7c1-89d6-40d0-9540-b6280379ddc5
 keywords:
 - multiple textures WDK Direct3D , validation
 - texture management WDK Direct3D , validation
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_multiple_texture_validation_gg"></span><span id="DDK_MULTIPLE_TEXTURE_VALIDATION_GG"></span>
 
 
-Current hardware does not necessarily implement everything that Direct3D can express. The application determines whether a particular blending operation can be performed by first setting up the desired blending mode, and then calling the **IDirect3DDevice7::ValidateDevice** method. The driver must accurately report its capabilities at initialization time and support [**D3dValidateTextureStageState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_validatetexturestagestatecb) to allow its capabilities to be validated. Validation also covers operations specified at the TBLEND level. For information about **IDirect3DDevice7::ValidateDevice**, see the Direct3D SDK documentation.
+Current hardware does not necessarily implement everything that Direct3D can express. The application determines whether a particular blending operation can be performed by first setting up the desired blending mode, and then calling the **IDirect3DDevice7::ValidateDevice** method. The driver must accurately report its capabilities at initialization time and support [**D3dValidateTextureStageState**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_validatetexturestagestatecb) to allow its capabilities to be validated. Validation also covers operations specified at the TBLEND level. For information about **IDirect3DDevice7::ValidateDevice**, see the Direct3D SDK documentation.
 
 The following table lists the return codes for **IDirect3DDevice7::ValidateDevice**.
 
@@ -69,10 +68,4 @@ The following table lists the return codes for **IDirect3DDevice7::ValidateDevic
  
 
  
-
- 
-
-
-
-
 

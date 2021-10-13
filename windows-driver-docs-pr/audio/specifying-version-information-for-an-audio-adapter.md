@@ -1,7 +1,6 @@
 ---
 title: Specifying Version Information for an Audio Adapter
 description: Specifying Version Information for an Audio Adapter
-ms.assetid: 2d1fb5e7-84fe-451f-b53f-bf6017ae94ad
 keywords:
 - audio adapters WDK , version information
 - adapter drivers WDK audio , version information
@@ -25,12 +24,7 @@ A vendor should specify the following entries in the **Version** section of an I
   ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
 ```
 
-For a description of additional version requirements and options for all device classes, see [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section).
+For a description of additional version requirements and options for all device classes, see [**INF Version Section**](../install/inf-version-section.md).
 
  
-
- 
-
-
-
 

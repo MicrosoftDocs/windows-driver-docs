@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_DEPTH
 description: The KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_DEPTH property specifies the chorus modulation depth. This is a property of a chorus node (KSNODETYPE\_CHORUS).
-ms.assetid: A14DA707-7ED6-4E86-87C7-9A4E40062FE8
 keywords: ["KSPROPERTY_AUDIO_CHORUS_MODULATION_DEPTH Audio Devices"]
 topic_type:
 - apiref
@@ -61,8 +60,7 @@ The property value is of type ULONG and it specifies the chorus modulation depth
 
 A KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_DEPTH property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

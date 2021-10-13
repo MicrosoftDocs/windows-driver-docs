@@ -1,7 +1,6 @@
 ---
 title: COSA overview
 description: COSA overview
-ms.assetid: 45D69B8D-69C1-488B-AC52-D8DEB337F878
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,6 +21,7 @@ To see a list of available settings MOs can configure in desktop COSA, see [Desk
 - [Is there an algorithm to make the best APN match?](#APNmatch)
 - [Where is the COSA database stored, and can it be visually inspected like apndatabase.xml?](#location)
 - [What happens when a device updates from Windows 10, version 1607 (or earlier) to Windows 10, version 1703? Are custom or manually created APNs migrated? Do they still have priority over the defaults from the database?](#update)
+- [Why does the **Set as metered connection** setting sometimes change from **Off** to **On**?](#metered)
 
 ### <a href="" id="settings"></a> What are the settings that MOs can specify in COSA?
 
@@ -47,9 +47,12 @@ In versions of Windows before Windows 10, version 1703, MOs could specify an aut
 
 COSA is in the format of a Windows 10 provisioning package (.ppkg). It is in the Windows\Provisioning\COSA\Microsoft folder. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](https://go.microsoft.com/fwlink/p/?linkid=844795)), to visually inspect its contents.
 
-Note that OEM extensions to COSA, if specified in the device image, are in the COSA\OEM folder. For more information, see [Customize the Country and Operator Settings Asset](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-cosa).
+Note that OEM extensions to COSA, if specified in the device image, are in the COSA\OEM folder. For more information, see [Customize the Country and Operator Settings Asset](/windows-hardware/customize/desktop/customize-cosa).
 
 ### <a href="" id="update"></a> What happens when a device updates from Windows 10, version 1607 or earlier to Windows 10, version 1703 or later? Are custom or manually created APNs migrated? Do they still have priority over the defaults from the database?
 
 COSA replaces apndatabase.xml after the upgrade. If an APN was provisioned in the previous version, whether custom, manual, or device-provisioned via the database, it is migrated as a part of the upgrade to version 1703 and the device continues to use it for connectivity without requiring any additional action. Manually provisioned APNs still have priority over the defaults from the database just as they did in version 1607 and earlier.
 
+### <a href="" id="metered"></a>Why does the "Set as metered connection" setting sometimes change from **Off** to **On**?
+
+Updates to the Windows operating system may include updates for the COSA database. If the database is updated, the provisioning engine may remove the cellular profiles. When the system restarts after database updates are installed, the provisioning engine reinstalls the cellular profiles. This operation resets user settings to their default values. For example, **Set as metered connection** changes from **Off** to **On**. This behavior is by design.

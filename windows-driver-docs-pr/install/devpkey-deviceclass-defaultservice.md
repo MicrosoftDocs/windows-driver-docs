@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_DefaultService
 description: DEVPKEY_DeviceClass_DefaultService
-ms.assetid: 19d1a9ea-3bde-4230-af1a-b67b5a29e6f4
 keywords: ["DEVPKEY_DeviceClass_DefaultService Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,13 +17,19 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_DefaultService
 
 
-The DEVPKEY_DeviceClass_DefaultService device property represents the name of the default service for a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
+The DEVPKEY_DeviceClass_DefaultService device property represents the name of the default service for a [device setup class](./overview-of-device-setup-classes.md).
 
 <table>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -51,52 +56,30 @@ The DEVPKEY_DeviceClass_DefaultService device property represents the name of th
 
  
 
-Remarks
--------
+## Remarks
 
-If a default service is installed for a device setup class and a device does not install a device-specific service, the [**INF ClassInstall32.Services section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-services-section) of the INF file that installs the class installs the class default service for the device.
+If a default service is installed for a device setup class and a device does not install a device-specific service, the [**INF ClassInstall32.Services section**](./inf-classinstall32-services-section.md) of the INF file that installs the class installs the class default service for the device.
 
 The value of DEVPKEY_DeviceClass_DefaultService is the value of the **Default Service** registry value under the class registry key.
 
-You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_DefaultService.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_DefaultService.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_DefaultService property key. You can access the value of this property by accessing the corresponding **Default Service** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-registry-entry-values-under-the-class-registry-key).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_DefaultService property key. You can access the value of this property by accessing the corresponding **Default Service** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**INF ClassInstall32.Services Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-services-section)
+[**INF ClassInstall32.Services Section**](./inf-classinstall32-services-section.md)
 
-[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
-
- 
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
  
-
-
-
-
-
 

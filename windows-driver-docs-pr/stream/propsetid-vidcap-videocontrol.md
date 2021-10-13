@@ -1,7 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_VIDEOCONTROL
 description: PROPSETID\_VIDCAP\_VIDEOCONTROL
-ms.assetid: 892663c1-a807-4d03-9af0-f065149e7d42
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

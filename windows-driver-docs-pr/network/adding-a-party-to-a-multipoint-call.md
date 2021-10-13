@@ -1,7 +1,6 @@
 ---
 title: Adding a Party to a Multipoint Call
 description: Adding a Party to a Multipoint Call
-ms.assetid: 2d6b8ebe-8028-46d0-91bd-7f95b0375cc4
 keywords:
 - parties WDK CoNDIS
 - multipoint calls WDK CoNDIS
@@ -16,21 +15,21 @@ ms.localizationpriority: medium
 
 
 
-A client requests to add a party to a multipoint call with [**NdisClAddParty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscladdparty). A client can add a party only to an existing multipoint call--that is, a call for which the client supplied a *ProtocolPartyContext* to [**NdisClMakeCall**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclmakecall)(see [Making a Call](making-a-call.md)).
+A client requests to add a party to a multipoint call with [**NdisClAddParty**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscladdparty). A client can add a party only to an existing multipoint call--that is, a call for which the client supplied a *ProtocolPartyContext* to [**NdisClMakeCall**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmakecall)(see [Making a Call](making-a-call.md)).
 
 The following figure shows a client of a call manager requesting to add a party to multipoint call.
 
-![diagram illustrating a client of a call manager requesting to add a party to multipoint call](images/cm-17.png)
+![diagram illustrating a client of a call manager requesting to add a party to multipoint call.](images/cm-17.png)
 
 The following figure shows a client of an MCM driver requesting to add a party to multipoint call.
 
-![diagram illustrating a client of an mcm driver requesting to add a party to multipoint call](images/fig1-17.png)
+![diagram illustrating a client of an mcm driver requesting to add a party to multipoint call.](images/fig1-17.png)
 
 Before it calls **NdisClAddParty**, a client must allocate and initialize its context area for the party to be added. Clients commonly pass a pointer to such a context area as the *ProtocolPartyContext* and a pointer to a variable within that context area as the *NdisPartyHandle* parameters when they call **NdisClAddParty**.
 
-In addition to an *NdisVcHandle* and a *ProtocolPartyContext*, the client passes call parameters (a buffered [**CO\_CALL\_PARAMETERS**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure) to **NdisClAddParty**. The underlying network medium determines whether a client can specify per-party traffic parameters on a multipoint VC.
+In addition to an *NdisVcHandle* and a *ProtocolPartyContext*, the client passes call parameters (a buffered [**CO\_CALL\_PARAMETERS**](/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure) to **NdisClAddParty**. The underlying network medium determines whether a client can specify per-party traffic parameters on a multipoint VC.
 
-The call to **NdisClAddParty** causes NDIS to forward this request to the [**ProtocolCmAddParty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_cm_add_party) function of the call manager or MCM driver with which the client shares the given *NdisVcHandle* . NDIS passes the following to the *ProtocolCmAddParty*:
+The call to **NdisClAddParty** causes NDIS to forward this request to the [**ProtocolCmAddParty**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_add_party) function of the call manager or MCM driver with which the client shares the given *NdisVcHandle* . NDIS passes the following to the *ProtocolCmAddParty*:
 
 -   A *CallMgrVcContext* that indicates the VC for the call.
 
@@ -50,15 +49,9 @@ If the client passed in call parameters that did not match those already establi
 
 -   Fail the client's attempt to add a party.
 
-*ProtocolCmAddParty* can complete synchronously or, more probably, asynchronously with [**NdisCmAddPartyComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscmaddpartycomplete), in the case of a call manager, or [**NdisMCmAddPartyComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcmaddpartycomplete), in the case of an MCM driver. Whether the call manager or MCM driver completes the operation synchronously or asynchronously, it passes the buffered call parameters to NDIS.
+*ProtocolCmAddParty* can complete synchronously or, more probably, asynchronously with [**NdisCmAddPartyComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmaddpartycomplete), in the case of a call manager, or [**NdisMCmAddPartyComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmaddpartycomplete), in the case of an MCM driver. Whether the call manager or MCM driver completes the operation synchronously or asynchronously, it passes the buffered call parameters to NDIS.
 
-The call to **Ndis(M)CmAddPartyComplete** causes NDIS to call the client's [**ProtocolClAddPartyComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_cl_add_party_complete) function. If the client's request to add the party succeeded and if the signaling protocol allows the call manager or MCM driver to modify the call parameters, *ProtocolClAddPartyComplete* should test the CALL\_PARAMETERS\_CHANGED flag in the buffered CO\_CALL\_PARAMETERS structure to determine whether the call parameters were modified. The signaling protocol determines what the client can do if it finds the modifications to CO\_CALL\_PARAMETERS unacceptable. Usually, a client calls [**NdisClDropParty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscldropparty) in this case (see [Dropping a Party from a Multipoint Call](dropping-a-party-from-a-multipoint-call.md)).
-
- 
+The call to **Ndis(M)CmAddPartyComplete** causes NDIS to call the client's [**ProtocolClAddPartyComplete**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cl_add_party_complete) function. If the client's request to add the party succeeded and if the signaling protocol allows the call manager or MCM driver to modify the call parameters, *ProtocolClAddPartyComplete* should test the CALL\_PARAMETERS\_CHANGED flag in the buffered CO\_CALL\_PARAMETERS structure to determine whether the call parameters were modified. The signaling protocol determines what the client can do if it finds the modifications to CO\_CALL\_PARAMETERS unacceptable. Usually, a client calls [**NdisClDropParty**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscldropparty) in this case (see [Dropping a Party from a Multipoint Call](dropping-a-party-from-a-multipoint-call.md)).
 
  
-
-
-
-
 

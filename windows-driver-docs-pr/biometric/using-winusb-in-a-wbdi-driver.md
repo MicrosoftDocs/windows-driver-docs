@@ -1,7 +1,6 @@
 ---
 title: Using WinUSB in a WBDI Driver
 description: Using WinUSB in a WBDI Driver
-ms.assetid: a2f109cd-cb61-4c63-8e93-111f62a2c02d
 keywords:
 - biometric drivers WDK , WinUSB
 ms.date: 04/20/2017
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # Using WinUSB in a WBDI Driver
 
 
-Microsoft recommends that WBDI drivers use the [USB I/O target](https://docs.microsoft.com/windows-hardware/drivers/wdf/usb-i-o-targets-in-umdf) that is built into User-Mode Driver Framework (UMDF).
+Microsoft recommends that WBDI drivers use the [USB I/O target](../wdf/usb-i-o-targets-in-umdf.md) that is built into User-Mode Driver Framework (UMDF).
 
 ### <span id="setting_umdfdispatcher"></span><span id="SETTING_UMDFDISPATCHER"></span>Setting UmdfDispatcher
 
@@ -27,7 +26,7 @@ UmdfService=WudfBioUsbSample, WudfBioUsbSample_Install
 UmdfServiceOrder=WudfBioUsbSample
 ```
 
-For specific information about UmdfDispatcher, see [Specifying the UmdfDispatcher INF Directive](https://docs.microsoft.com/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files). For general information about WDF registry directives, see [Specifying WDF Directives](https://docs.microsoft.com/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files).
+For specific information about UmdfDispatcher, see [Specifying the UmdfDispatcher INF Directive](../wdf/specifying-wdf-directives-in-inf-files.md). For general information about WDF registry directives, see [Specifying WDF Directives](../wdf/specifying-wdf-directives-in-inf-files.md).
 
 ### <span id="pending_asynchronous_read_requests"></span><span id="PENDING_ASYNCHRONOUS_READ_REQUESTS"></span>Pending Asynchronous Read Requests
 
@@ -37,17 +36,17 @@ You can refer to the `CBiometricDevice::InitiatePendingRead` method in Device.cp
 
 The code to pend a read request should be a loop of the following steps:
 
-1.  Create a pre-allocated framework memory object by calling [**IWDFDriver::CreatePreallocatedWdfMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdriver-createpreallocatedwdfmemory).
+1.  Create a pre-allocated framework memory object by calling [**IWDFDriver::CreatePreallocatedWdfMemory**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createpreallocatedwdfmemory).
 
-2.  Provide callback code in an [**OnCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-irequestcallbackrequestcompletion-oncompletion) routine. See `CBiometricDevice::OnCompletion` in the sample.
+2.  Provide callback code in an [**OnCompletion**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-irequestcallbackrequestcompletion-oncompletion) routine. See `CBiometricDevice::OnCompletion` in the sample.
 
-3.  Acquire a pointer to the [**IRequestCallbackRequestCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-irequestcallbackrequestcompletion) interface of the owning object.
+3.  Acquire a pointer to the [**IRequestCallbackRequestCompletion**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-irequestcallbackrequestcompletion) interface of the owning object.
 
-4.  Register callback function by calling [**IWDFIoRequest::SetCompletionCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-setcompletioncallback) and passing in the pointer to [**IRequestCallbackRequestCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-irequestcallbackrequestcompletion) that was obtained in the previous step. The framework will now call the callback when an I/O request completes.
+4.  Register callback function by calling [**IWDFIoRequest::SetCompletionCallback**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-setcompletioncallback) and passing in the pointer to [**IRequestCallbackRequestCompletion**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-irequestcallbackrequestcompletion) that was obtained in the previous step. The framework will now call the callback when an I/O request completes.
 
-5.  Call [**IWDFIoRequest::Send**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-send) to send the read request to the device.
+5.  Call [**IWDFIoRequest::Send**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-send) to send the read request to the device.
 
-6.  Process read request when callback completion occurs. Before the [**OnCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-irequestcallbackrequestcompletion-oncompletion) routine initiates a new pending read request, it should check the state of the I/O target. To do this, query [IWDFUsbTargetPipe](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfusb/nn-wudfusb-iwdfusbtargetpipe) for a pointer to its [IWDFIoTargetStateManagement](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement) interface. Then call [**IWDFIoTargetStateManagement::GetState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-getstate):
+6.  Process read request when callback completion occurs. Before the [**OnCompletion**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-irequestcallbackrequestcompletion-oncompletion) routine initiates a new pending read request, it should check the state of the I/O target. To do this, query [IWDFUsbTargetPipe](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe) for a pointer to its [IWDFIoTargetStateManagement](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement) interface. Then call [**IWDFIoTargetStateManagement::GetState**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-getstate):
     ```cpp
     IWDFIoTarget * pTarget
     IWDFIoTargetStateManagement * pStateMgmt = NULL;
@@ -81,10 +80,4 @@ The operating system USB stack cannot guarantee the timing between system wake a
 Ideally, the device should be left in a state ready to capture a scan when the system is suspended. If a scan occurs while the system is suspended, the device should cache the input data for an entire fingerprint scan. When the system wakes up, the driver then reads in the data from the device. By supporting this scenario, you can enable system wake and unlock/login scenarios.
 
  
-
- 
-
-
-
-
 

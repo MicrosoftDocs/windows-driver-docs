@@ -1,7 +1,6 @@
 ---
 title: Auditing
 description: Auditing
-ms.assetid: 0a703a27-91d6-41fc-bd46-a9486842a150
 keywords:
 - security WDK file systems , auditing
 - auditing WDK file systems
@@ -25,16 +24,11 @@ The auditing system within Windows provides a mechanism for tracking specific se
 
 Key routines for auditing include:
 
--   [**SeAuditingFileEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-seauditingfileevents)--this routine determines whether file auditing has been enabled on the system; this is a global policy check to determine whether a full audit check should be done. This routine was introduced to optimize the security system operations.
+-   [**SeAuditingFileEvents**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seauditingfileevents)--this routine determines whether file auditing has been enabled on the system; this is a global policy check to determine whether a full audit check should be done. This routine was introduced to optimize the security system operations.
 
--   [**SeOpenObjectAuditAlarm**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-seopenobjectauditalarm)--this routine performs the primary audit operations in the Windows system (audits an attempt to open an object). Note that it is the attempt to access the object that is audited, not whether access to the object was successful or unsuccessful.
+-   [**SeOpenObjectAuditAlarm**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seopenobjectauditalarm)--this routine performs the primary audit operations in the Windows system (audits an attempt to open an object). Note that it is the attempt to access the object that is audited, not whether access to the object was successful or unsuccessful.
 
 There is no requirement for auditing. None of the sample file systems (FAT or CDFS, for example) in the IFS section of the WDK implement auditing. However, from a security perspective, auditing is important because it allows administrators to monitor the security behavior of the system.
 
  
-
- 
-
-
-
 

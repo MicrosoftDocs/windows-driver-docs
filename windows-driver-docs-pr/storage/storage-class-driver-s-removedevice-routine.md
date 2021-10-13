@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's RemoveDevice Routine
 description: Storage Class Driver's RemoveDevice Routine
-ms.assetid: fbcbfbab-676a-43d3-aa63-0ea5e5f265d2
 keywords:
 - RemoveDevice
 - query-remove requests WDK storage
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_storage_class_drivers_removedevice_routine_kg"></span><span id="DDK_STORAGE_CLASS_DRIVERS_REMOVEDEVICE_ROUTINE_KG"></span>
 
 
-When a device is about to be removed, the PnP manager first calls the class driver's [**DispatchPnP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine with a PnP query-remove request (IRP\_MJ\_PNP with [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-remove-device). The storage class driver should fail the query-remove request in any of the following cases:
+When a device is about to be removed, the PnP manager first calls the class driver's [**DispatchPnP**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine with a PnP query-remove request (IRP\_MJ\_PNP with [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](../kernel/irp-mn-query-remove-device.md). The storage class driver should fail the query-remove request in any of the following cases:
 
 -   The device contains the system paging file or hibernation file.
 
@@ -25,7 +24,7 @@ When a device is about to be removed, the PnP manager first calls the class driv
 
 The storage class driver might also fail a query-remove request if the device is claimed for crash dump, because removing such a device disables crash dump.
 
-If the storage class driver returns STATUS\_SUCCESS in response to a query-remove request, the PnP manager then calls the class driver's *DispatchPnP* routine with a PnP remove request (IRP\_MJ\_PNP with [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device)). The storage class driver's *DispatchPnP* routine either calls an internal *RemoveDevice* routine or implements the same functionality inline.
+If the storage class driver returns STATUS\_SUCCESS in response to a query-remove request, the PnP manager then calls the class driver's *DispatchPnP* routine with a PnP remove request (IRP\_MJ\_PNP with [**IRP\_MN\_REMOVE\_DEVICE**](../kernel/irp-mn-remove-device.md)). The storage class driver's *DispatchPnP* routine either calls an internal *RemoveDevice* routine or implements the same functionality inline.
 
 A storage class driver's *RemoveDevice* routine must do the following:
 
@@ -41,12 +40,5 @@ If the storage class driver created PDOs at startup (for example, to represent p
 
 Even after a device object has been deleted, if it has a nonzero reference count the device object persists in the system until its reference count reaches zero, then disappears silently. A storage class driver must not attempt to use the device object pointer after the device object has been deleted.
 
-For more information about handling a remove request, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
-
- 
-
- 
-
-
-
+For more information about handling a remove request, see [Removing a Device](../kernel/understanding-when-remove-irps-are-issued.md).
 

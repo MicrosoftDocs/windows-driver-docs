@@ -1,7 +1,6 @@
 ---
 title: Identifiers for ISAPNP Devices
 description: Identifiers for ISAPNP Devices
-ms.assetid: 67337bd6-3b5f-41a7-b50d-bf3587f243e8
 keywords:
 - device identification strings WDK , ISAPNP devices
 - identification strings WDK device , ISAPNP devices

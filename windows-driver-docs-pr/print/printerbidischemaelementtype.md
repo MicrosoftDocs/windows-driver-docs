@@ -4,7 +4,6 @@ description: Specifies the possible values of data transferred in a bidi operati
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 18F2325D-DA22-4D73-8560-62FDEF1E04A8
 keywords: ["PRINTERBIDISCHEMAELEMENTTYPE enumeration Print Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Specifies the possible values of data transferred in a bidi operation
 
-Syntax
-------
+## Syntax
 
 ```cpp
 typedef enum _PRINTERBIDISCHEMAELEMENTTYPE { 
@@ -36,8 +34,7 @@ typedef enum _PRINTERBIDISCHEMAELEMENTTYPE {
 } PRINTERBIDISCHEMAELEMENTTYPE;
 ```
 
-Constants
----------
+## Constants
 
 **PrinterBidiSchemaElementType\_Null**  
 No data.

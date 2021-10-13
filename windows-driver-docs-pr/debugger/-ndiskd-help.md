@@ -1,9 +1,8 @@
 ---
 title: ndiskd.help
 description: The ndiskd.help command displays a list of available ndiskd commands with a brief description of each one.
-ms.assetid: ba9a1364-173b-4258-9894-09271e47786e
 keywords: ["ndiskd.help Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -15,20 +14,17 @@ ms.localizationpriority: medium
 
 # !ndiskd.help
 
-
 The **!ndiskd.help** command displays a list of available !ndiskd commands with a brief description of each one.
 
 ```console
-!ndiskd.help 
+!ndiskd.help
 ```
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 The following example shows the list of help commands using **!ndiskd.help**.
 
@@ -56,14 +52,12 @@ By using **!ndiskd.help -all**, you'll get a more detailed list, as shown in the
 **Note**  
 Some alternate commands are listed at the bottom of this example. These commands are available for NDIS driver developers who have used them before but we recommend using the primary commands instead.
 
-
-
 ```console
 3: kd> !ndiskd.help -all
 
 NDIS KD EXTENSIONS
 
-    Primary commands:                                                           
+    Primary commands:
     help               This help and lots more
     netadapter         Show network adapters  (this is a good starting place)
         minidriver     Show network adapter drivers
@@ -96,14 +90,18 @@ NDIS KD EXTENSIONS
     wdiminidriver      Shows one or more CMiniportDriver structures
     nwadapter          Shows one or more nwifi!ADAPT structures
     ndisrwlock         Show an NDIS_RW_LOCK_EX lock
-    ndisslot           Show an NDIS per-processor slot
-    ndis               Show NDIS.sys build info
         dbglevel       Change the debugging level [checked NDIS.sys only]
         dbgsystems     Toggle subsystems being debugged [checked NDIS.sys only]
         ndiskdversion  Show info about NDISKD itself
     netreport          Draw a box diagram of your network stack
+    cxadapter          Show information about an NETADAPTER
+    netqueue           Show information about a NetAdapterCx datapath queue
+    nrc                Show information about an NET_RING_COLLECTION
+    netring            Show information about an NET_RING
+    netpacket          Show information about an NET_PACKET
+    netfragment        Show information about an NET_FRAGMENT
 
-    Alternate commands:                                                         
+    Alternate commands:
     miniport           Same as !ndiskd.netadapter
     gminiports         Same as !ndiskd.netadapter
     miniports          "Classic" version of !ndiskd.netadapter
@@ -118,23 +116,12 @@ NDIS KD EXTENSIONS
     nbpools            Same as !ndiskd.nbpool
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
-
-
-
-
-
-
-
-
-
-

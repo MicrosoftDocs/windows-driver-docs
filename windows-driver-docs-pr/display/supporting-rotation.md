@@ -1,27 +1,16 @@
 ---
 title: Supporting Rotation
 description: Supporting Rotation
-ms.assetid: b85f3130-e69d-4a5f-b58e-d2138ea994dd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Supporting Rotation
 
-
 The following topics describe how display miniport drivers and user-mode display drivers support rotation:
 
-[Supporting Rotation in a Display Miniport Driver](supporting-rotation-in-a-display-miniport-driver.md)
+[Supporting rotation in a display miniport driver](supporting-rotation-in-a-display-miniport-driver.md)
 
-[VidPN Path-Independent Rotation Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[Optimized screen rotation support](optimized-screen-rotation-support.md)
 
-[Supporting Rotation in a User-Mode Display Driver](supporting-rotation-in-a-user-mode-display-driver.md)
-
- 
-
- 
-
-
-
-
-
+[Supporting rotation in a user-mode display driver](supporting-rotation-in-a-user-mode-display-driver.md)

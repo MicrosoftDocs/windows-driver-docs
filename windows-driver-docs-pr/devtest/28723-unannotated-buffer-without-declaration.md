@@ -1,7 +1,6 @@
 ---
-title: C28723
+title: C28723 warning
 description: Warning C28723 Unannotated buffer in function definition that has no corresponding declaration.
-ms.assetid: FE481A48-F4C1-4C25-8CE6-3802D57B8F68
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

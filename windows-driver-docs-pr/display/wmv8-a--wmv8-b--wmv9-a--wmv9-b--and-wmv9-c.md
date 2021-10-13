@@ -1,7 +1,6 @@
 ---
 title: WMV8_A, WMV8_B, WMV9_A, WMV9_B, and WMV9_C
 description: WMV8_A, WMV8_B, WMV9_A, WMV9_B, and WMV9_C
-ms.assetid: ffc203e9-fca4-48d3-842b-d9f75ad7caa0
 keywords:
 - WMV8_A restricted profile WDK DirectX VA
 - WMV8_B restricted profile WDK DirectX VA

@@ -1,7 +1,6 @@
 ---
 title: Handling Stride in AVStream Codecs
 description: Handling Stride in AVStream Codecs
-ms.assetid: 816a0ddc-8ab8-4259-9842-76f5e4dadee0
 keywords:
 - AVStream hardware codec support WDK , handling stride
 ms.date: 04/20/2017
@@ -15,7 +14,7 @@ When a decoder is connected to a renderer like Enhanced Video Renderer (EVR) or 
 
 Unlike system memory buffers, which must be copied to a D3D surface before rendering, D3D buffers can be displayed directly by the render engine. Therefore, by using D3D buffers instead of system memory buffers, the minidriver saves a copy operation for each buffer.
 
-When a SHED-capable minidriver receives D3D buffers, the D3D surface is locked and a pointer to it is located in [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header).**Data**. The surface stride information is supplied in the [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_frame_info) extension to KSSTREAM\_HEADER, as shown in the following code example:
+When a SHED-capable minidriver receives D3D buffers, the D3D surface is locked and a pointer to it is located in [**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header).**Data**. The surface stride information is supplied in the [**KS\_FRAME\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_frame_info) extension to KSSTREAM\_HEADER, as shown in the following code example:
 
 ```cpp
 typedef struct KS_FRAME_INFO {
@@ -39,16 +38,11 @@ typedef struct KS_FRAME_INFO {
 } KS_FRAME_INFO, *PKS_FRAME_INFO;
 ```
 
-Minidrivers should use the **biWidth** member of the [**KS\_BITMAPINFOHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_bitmapinfoheader) structure as the surface width.
+Minidrivers should use the **biWidth** member of the [**KS\_BITMAPINFOHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_bitmapinfoheader) structure as the surface width.
 
-([**KS\_VIDEOINFOHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_videoinfoheader).**bmiHeader** is of type KS\_BITMAPINFOHEADER. [**KS\_DATARANGE\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_datarange_video).**VideoInfoHeader** is of type KS\_VIDEOINFOHEADER.)
+([**KS\_VIDEOINFOHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_videoinfoheader).**bmiHeader** is of type KS\_BITMAPINFOHEADER. [**KS\_DATARANGE\_VIDEO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video).**VideoInfoHeader** is of type KS\_VIDEOINFOHEADER.)
 
 If KS\_FRAME\_INFO.**lSurfacePitch** has a nonzero value, the minidriver must use **lSurfacePitch** as the width/stride for the buffer that is specified in the related KSSTREAM\_HEADER. Otherwise, the output image appears garbled.
 
  
-
- 
-
-
-
 

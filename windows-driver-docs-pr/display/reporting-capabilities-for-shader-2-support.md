@@ -1,7 +1,6 @@
 ---
 title: Reporting Capabilities for Shader 2 Support
 description: Reporting Capabilities for Shader 2 Support
-ms.assetid: 27397e32-cdc0-47b5-b9b5-a4b22ed971f3
 keywords:
 - shaders WDK DirectX 9.0 , shader 2.0 support
 - vertex shaders WDK DirectX 9.0 , shader 2.0 support
@@ -24,17 +23,11 @@ If a device supports vertex shader 2.0 and later, its driver must set the member
 
 -   Set the D3DDTCAPS\_UBYTE4 bit in the **DeclTypes** member to 1 to indicate support of the UBYTE4 vertex element type. For more information, see [Reporting Support of UBYTE4 Vertex Element](reporting-support-of-ubyte4-vertex-element.md).
 
-If a device supports pixel shader 2.0 and later, its driver must configure the following bits in the **TextureCaps** member to indicate whether the driver supports 2-D texture mapping as nonpowers-of-2 conditionally or unconditionally. For more information, see the description of these bits in the [**D3DPRIMCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dcaps/ns-d3dcaps-_d3dprimcaps) reference page.
+If a device supports pixel shader 2.0 and later, its driver must configure the following bits in the **TextureCaps** member to indicate whether the driver supports 2-D texture mapping as nonpowers-of-2 conditionally or unconditionally. For more information, see the description of these bits in the [**D3DPRIMCAPS**](/windows-hardware/drivers/ddi/d3dcaps/ns-d3dcaps-_d3dprimcaps) reference page.
 
 -   Set the D3DPTEXTURECAPS\_POW2 and D3DPTEXTURECAPS\_NONPOW2CONDITIONAL bits to 1 to indicate conditional support.
 
 -   Set the D3DPTEXTURECAPS\_POW2 and D3DPTEXTURECAPS\_NONPOW2CONDITIONAL bits to 0 (that is, do not set these bits) to indicate unconditional support.
 
  
-
- 
-
-
-
-
 

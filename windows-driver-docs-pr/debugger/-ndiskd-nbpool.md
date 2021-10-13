@@ -1,7 +1,6 @@
 ---
 title: ndiskd.nbpool
 description: The ndiskd.nbpool extension displays information about a NET_BUFFER (NB) pool. 
-ms.assetid: 4FCD48B7-C469-4057-A279-20522B00E80B
 keywords: ["ndiskd.nbpool Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # !ndiskd.nbpool
 
 
-The **!ndiskd.nbpool** extension displays information about a [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-structure) (NB) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NB pools in the system.
+The **!ndiskd.nbpool** extension displays information about a [**NET\_BUFFER**](../network/net-buffer-structure.md) (NB) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NB pools in the system.
 
 ```console
 !ndiskd.nbpool [-handle <x>] [-allocations] [-find <str>] [-findva <x>] [-findpa <x>] 
@@ -44,8 +43,7 @@ Find NBs that straddle the given physical address.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 Enter the **!ndiskd.nbpool** command with no parameters to see a list of all allocated NB pools. In this example, look for the NB pool allocated by the Netio service with the Nnbf Tag. Its handle is ffffdf801308ca40.
 
@@ -132,24 +130,17 @@ ALL ALLOCATED NBs
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-structure)
+[**NET\_BUFFER**](../network/net-buffer-structure.md)
 
  
-
- 
-
-
-
-
-
 

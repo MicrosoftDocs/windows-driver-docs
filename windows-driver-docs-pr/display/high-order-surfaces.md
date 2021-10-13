@@ -1,7 +1,6 @@
 ---
 title: High Order Surfaces
 description: High Order Surfaces
-ms.assetid: 2cbca6e0-ab32-454f-999a-89862eb8ece5
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , high order surfaces
 - high order surfaces WDK DirectX 8.0

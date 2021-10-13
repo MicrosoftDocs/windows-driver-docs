@@ -1,9 +1,8 @@
 ---
 title: Configuring Object Reference Tracing
 description: Configuring Object Reference Tracing
-ms.assetid: 9dbf979d-5fc0-4359-bbed-6175f3191c52
 keywords: ["Object Reference Tracing, configuration"]
-ms.date: 05/23/2017
+ms.date: 01/26/2021
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +19,7 @@ You can use Gflags to enable, disable, and configure the Object Reference Tracin
 
     You must limit the trace to objects with specified pool tags, to objects created by a specified process, or both.
 
-3.  To limit the trace to objects with a particular pool tag, type the pool tag name. To list multiple pool tags, use semicolons (;) to separate the pool tags. When you list multiple pool tags, the trace includes objects with any of the specified pool tags. Pool tags are case sensitive.
+3.  To limit the trace to objects with a particular pool tag, type the pool tag name. To list multiple pool tags, use semicolons (;) to separate the pool tags. When you list multiple pool tags, the trace includes objects with any of the specified pool tags. Pool tags are case sensitive. Use the [!pool](-pool.md) and [!poolfind](-poolfind.md) debugger commands to determine pool names.
 
     For example, Fred;Tag1.
 
@@ -36,7 +35,7 @@ You can use Gflags to enable, disable, and configure the Object Reference Tracin
 
 The following screen shot shows Object Reference Tracing enabled on the **Kernel Flags** tab.
 
-![screen shot that shows object reference tracing enabled on the kernel flags tab](images/gflags-obj.png)
+![screen shot that shows object reference tracing enabled on the kernel flags tab.](images/gflags-obj.png)
 
 This trace will include only objects that were created by the notepad.exe process that have the pool tag **Fred** or **Tag1**. Because this is a run time (kernel flags) setting, the trace starts immediately. If it were a registry setting, you would have to restart Windows to start the trace.
 

@@ -1,7 +1,6 @@
 ---
 title: Audio Stream Object Interfaces
 description: Audio Stream Object Interfaces
-ms.assetid: 9d68016a-ddb1-4fbb-b6cc-384f8c76552c
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ This section discusses the following audio stream object interfaces:
 
 Manages buffer storage for DirectMusic streams. Implemented by the DMus port driver.
 
-Assigns [digital rights management (DRM)](https://docs.microsoft.com/windows-hardware/drivers/audio/digital-rights-management) protection to the digital content in an audio stream. Implemented by a WaveCyclic, WavePci, or WaveRT miniport driver.
+Assigns [digital rights management (DRM)](./digital-rights-management.md) protection to the digital content in an audio stream. Implemented by a WaveCyclic, WavePci, or WaveRT miniport driver.
 
 Represents the MIDI stream that flows through a pin on a MIDI filter. Implemented by a MIDI miniport driver.
 
@@ -36,31 +35,25 @@ Provides mapping services to a WavePci miniport driver's stream objects. Impleme
 
 Handles wave output for a DirectMusic synthesizer device. Implemented by a DMus miniport driver and used by the DMus port driver's wave sink.
 
-[IAllocatorMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iallocatormxf)
+[IAllocatorMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iallocatormxf)
 
-[IDrmAudioStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/drmk/nn-drmk-idrmaudiostream)
+[IDrmAudioStream](/windows-hardware/drivers/ddi/drmk/nn-drmk-idrmaudiostream)
 
-[IMiniportMidiStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportmidistream)
+[IMiniportMidiStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidistream)
 
-[IMiniportWaveCyclicStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavecyclicstream)
+[IMiniportWaveCyclicStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclicstream)
 
-[IMiniportWavePciStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavepcistream)
+[IMiniportWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream)
 
-[IMiniportWaveRTStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavertstream)
+[IMiniportWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream)
 
-[IMiniportWaveRTStreamNotofication](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavertstreamnotification)
+[IMiniportWaveRTStreamNotofication](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstreamnotification)
 
-[IMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imxf)
+[IMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imxf)
 
-[IPortWavePciStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportwavepcistream)
+[IPortWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepcistream)
 
-[ISynthSinkDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-isynthsinkdmus)
-
- 
+[ISynthSinkDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-isynthsinkdmus)
 
  
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: LogoutFromTarget
 description: LogoutFromTarget
-ms.assetid: 29be7228-2b18-4f88-8a5a-e7406ef91b1c
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -13,13 +12,7 @@ The **LogoutFromTarget** method instructs the miniport driver that manages the i
 
 Miniport drivers that implement the [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md) are not required to support this method.
 
-The MSiSCSI\_Operations WMI class is unpublished. For a description of the parameters of the **LogoutFromTarget** method, see the member descriptions for the [**LogoutFromTarget\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_logoutfromtarget_in) and [**LogoutFromTarget\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_logoutfromtarget_out) structures.
+The MSiSCSI\_Operations WMI class is unpublished. For a description of the parameters of the **LogoutFromTarget** method, see the member descriptions for the [**LogoutFromTarget\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_logoutfromtarget_in) and [**LogoutFromTarget\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_logoutfromtarget_out) structures.
 
  
-
- 
-
-
-
-
 

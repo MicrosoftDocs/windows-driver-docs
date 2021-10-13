@@ -1,7 +1,6 @@
 ---
 title: USB I/O Targets in UMDF
 description: USB I/O Targets in UMDF
-ms.assetid: e08ca910-1b28-4809-9a5b-db3730cda31a
 keywords:
 - user-mode drivers WDK UMDF , USB I/O targets
 - UMDF WDK , USB I/O targets
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 # USB I/O Targets in UMDF
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 Each universal serial bus (USB) device, and each pipe that a USB device interface supports, has a separate I/O target. I/O that the USB device processes is sent to the device's I/O target. I/O that a specific pipe processes is sent to that pipe's I/O target.
 

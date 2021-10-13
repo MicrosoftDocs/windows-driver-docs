@@ -1,7 +1,6 @@
 ---
 title: Developing and Debugging DRM Drivers
 description: Developing and Debugging DRM Drivers
-ms.assetid: 3450717a-fd27-4bea-8740-9d47b420ed32
 keywords:
 - Digital Rights Management WDK audio , recommendations
 - DRM WDK audio , recommendations
@@ -28,7 +27,7 @@ The following checklist may help driver writers avoid some common pitfalls:
 
 The [DRMK system driver](kernel-mode-wdm-audio-components.md#drmk_system_driver) prevents the kernel debugger from connecting while DRM-protected content is playing. Anti-debugging armor is one of several measures that DRMK uses to make protected content opaque. Once your driver is ready to be tested, however, you can debug its DRM-compliant features by using the following technique:
 
--   Temporarily modify the wave stream's **SetState** method (for example, see [**IMiniportWavePciStream::SetState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-setstate)) to call [**IDrmAudioStream::SetContentId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/drmk/nf-drmk-idrmaudiostream-setcontentid) and set the [**DRMRIGHTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/drmk/ns-drmk-tagdrmrights) parameter's **CopyProtect** member to **TRUE**.
+-   Temporarily modify the wave stream's **SetState** method (for example, see [**IMiniportWavePciStream::SetState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-setstate)) to call [**IDrmAudioStream::SetContentId**](/windows-hardware/drivers/ddi/drmk/nf-drmk-idrmaudiostream-setcontentid) and set the [**DRMRIGHTS**](/windows-hardware/drivers/ddi/drmk/ns-drmk-tagdrmrights) parameter's **CopyProtect** member to **TRUE**.
 
 -   After you finish debugging, remember to remove the **SetContentId** call.
 
@@ -37,9 +36,4 @@ With this technique, you can play unprotected content as though it were DRM-prot
 For example, you can use the debugger to verify that your driver prevents the content from being recorded. Try to trick the driver into enabling recording of the wave-out stream through the capture MUX by changing the SndVol32 program's volume and mute settings. The sliders should reflect the changes you make to their settings, which are persistent, but the capture MUX should continue to mute the wave-out stream until the "protected" content finishes playing. Only then should the new settings take effect.
 
  
-
- 
-
-
-
 

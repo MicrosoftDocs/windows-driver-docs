@@ -1,7 +1,6 @@
 ---
 title: Edit Menu
 description: Edit Menu
-ms.assetid: fb3c8b71-93ba-4811-ba86-abc5aef81faa
 keywords: ["Edit Menu (complete listing)", "graphical interface, edit menu"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

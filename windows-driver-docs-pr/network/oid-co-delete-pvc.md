@@ -1,7 +1,6 @@
 ---
 title: OID_CO_DELETE_PVC
 description: This topic describes the OID_CO_DELETE_PVC object identifier (OID).
-ms.assetid: 02da08d0-9d08-4a91-b851-50e3c3b065d6
 keywords:
 - OID_CO_DELETE_PVC
 ms.date: 11/03/2017
@@ -22,17 +21,14 @@ typedef struct _CO_PVC {
 The members of this structure contain the following information:
 
 **NdisAfHandle**  
-Specifies the NDIS-supplied handle returned by [NdisClOpenAddressFamilyEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclopenaddressfamilyex).
+Specifies the NDIS-supplied handle returned by [NdisClOpenAddressFamilyEx](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex).
 
 **PvcParameters**  
-A formatted [CO_SPECIFIC_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclopenaddressfamilyex) structure. This structure contains protocol-specific parameters that describe the PVC.
+A formatted [CO_SPECIFIC_PARAMETERS](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex) structure. This structure contains protocol-specific parameters that describe the PVC.
 
 A PVC is removed manually by an administrator. A client that monitors such activity notifies a call manager of a PVC that has been removed by sending this OID to the call manager.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

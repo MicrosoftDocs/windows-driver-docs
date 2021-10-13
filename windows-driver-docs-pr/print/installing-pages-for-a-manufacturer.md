@@ -1,7 +1,6 @@
 ---
 title: Installing Pages for a Manufacturer
 description: Installing Pages for a Manufacturer
-ms.assetid: 637b265f-9138-4696-b52a-ce63cd1f2c01
 keywords:
 - installing customized print Web pages WDK
 - customized print Web pages WDK , installing

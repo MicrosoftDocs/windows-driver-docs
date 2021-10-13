@@ -1,7 +1,6 @@
 ---
 title: Establishing a Connection with a Destination
 description: Establishing a Connection with a Destination
-ms.assetid: 1258ee32-3914-4832-b98b-361dace0abaf
 keywords:
 - Winsock Kernel WDK networking , remote transport addresses
 - WSK WDK networking , remote transport addresses
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 After a Winsock Kernel (WSK) application has bound a connection-oriented socket to a local transport address, it can connect the socket to a remote transport address in order to establish a connection with the remote system. A WSK application must connect a connection-oriented socket to a remote transport address before it can send or receive data over the socket.
 
-A WSK application connects a socket to a remote transport address by calling the [**WskConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_connect) function. The **WskConnect** function is pointed to by the **WskConnect** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
+A WSK application connects a socket to a remote transport address by calling the [**WskConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_connect) function. The **WskConnect** function is pointed to by the **WskConnect** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
 
 The following code example shows how a WSK application can connect a connection-oriented socket to a remote transport address.
 
@@ -122,13 +121,7 @@ NTSTATUS
 }
 ```
 
-A WSK application can call the [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_socket_connect) function to create, bind, and connect a connection-oriented socket in a single function call.
+A WSK application can call the [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create, bind, and connect a connection-oriented socket in a single function call.
 
  
-
- 
-
-
-
-
 

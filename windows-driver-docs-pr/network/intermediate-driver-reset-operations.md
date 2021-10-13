@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Reset Operations
 description: Intermediate Driver Reset Operations
-ms.assetid: 473dce77-4636-40da-ac38-cda1676eba3f
 keywords:
 - intermediate drivers WDK networking , reset operations
 - NDIS intermediate drivers WDK , reset operations
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 An intermediate driver must be prepared to handle the situation where its outstanding sends on a binding to an underlying driver can be dropped because the underlying NIC is reset.
 
-An underlying driver typically resets a NIC because NDIS calls the miniport driver's [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset) function when NDIS times out queued sends or requests that are bound for the NIC. If an underlying NIC is reset, NDIS calls the [**ProtocolStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_status_ex)(or [**ProtocolCoStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_co_status_ex)) function of each bound protocol and intermediate driver with a status of NDIS\_STATUS\_RESET\_START. When the miniport driver completes the reset, NDIS again calls *ProtocolStatusEx*(or *ProtocolCoStatusEx*) with a status of NDIS\_STATUS\_RESET\_END.
+An underlying driver typically resets a NIC because NDIS calls the miniport driver's [*MiniportResetEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_reset) function when NDIS times out queued sends or requests that are bound for the NIC. If an underlying NIC is reset, NDIS calls the [**ProtocolStatusEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_status_ex)(or [**ProtocolCoStatusEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_status_ex)) function of each bound protocol and intermediate driver with a status of NDIS\_STATUS\_RESET\_START. When the miniport driver completes the reset, NDIS again calls *ProtocolStatusEx*(or *ProtocolCoStatusEx*) with a status of NDIS\_STATUS\_RESET\_END.
 
 When a NIC is reset, if a bound intermediate driver has any transmit network data that is pending to that NIC, NDIS completes those network data back to the intermediate driver with an appropriate status. The intermediate driver must resubmit these network data again when the reset is completed.
 
@@ -32,13 +31,7 @@ When an intermediate driver receives a status of NDIS\_STATUS\_RESET\_START, it 
 
 After *ProtocolStatusEx*(or *ProtocolCoStatusEx*) receives NDIS\_STATUS\_RESET\_END, the intermediate driver can resume sending network data, making requests and making indications to higher-level drivers.
 
-An intermediate driver does not provide a [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset) function.
+An intermediate driver does not provide a [*MiniportResetEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_reset) function.
 
  
-
- 
-
-
-
-
 

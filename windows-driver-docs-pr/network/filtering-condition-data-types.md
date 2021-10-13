@@ -1,7 +1,6 @@
 ---
 title: Filtering condition data types
 description: This section describes filtering condition data types.
-ms.assetid: 43810fc0-f386-4a21-9229-c8c8f8d6710f
 keywords:
 - Filtering condition data types network drivers
 ms.date: 11/08/2017

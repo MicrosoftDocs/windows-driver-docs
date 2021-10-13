@@ -1,7 +1,6 @@
 ---
 title: Introduction to DPCs
 description: Introduction to DPCs
-ms.assetid: 10e8d0e7-c04a-4dca-853c-74c911f59341
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Any driver that has an ISR typically also has at least one [*DpcForIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_dpc_routine) or [*CustomDpc*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kdeferred_routine) routine to complete processing of interrupt-driven I/O operations. A typical lowest-level driver's *DpcForIsr* or *CustomDpc* routine does the following:
+Any driver that has an ISR typically also has at least one [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) or [*CustomDpc*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine) routine to complete processing of interrupt-driven I/O operations. A typical lowest-level driver's *DpcForIsr* or *CustomDpc* routine does the following:
 
 -   Finishes handling an I/O operation that the ISR began processing.
 
@@ -28,9 +27,4 @@ A *DpcForIsr* or *CustomDpc* routine is called in an arbitrary DPC context at IR
 DPC objects and DPCs can also be used with timers. For more information, see [Timer Objects and DPCs](timer-objects-and-dpcs.md).
 
  
-
- 
-
-
-
 

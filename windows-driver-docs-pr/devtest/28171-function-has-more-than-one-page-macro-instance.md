@@ -1,7 +1,6 @@
 ---
-title: C28171
+title: C28171 warning
 description: Warning C28171 The function has more than one instance of PAGED_CODE or PAGED_CODE_LOCKED.
-ms.assetid: 7a3740aa-53fc-4219-9606-edc0e9bd9879
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

@@ -1,7 +1,6 @@
 ---
 title: Stream Class Debugging
 description: Stream Class Debugging
-ms.assetid: 544b922b-58e4-4cbb-a76c-d8e13ae17e55
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , debugging
 - streaming minidrivers WDK Windows 2000 Kernel , debugging
@@ -25,12 +24,7 @@ The following, additional tips can be used when debugging stream class minidrive
 
 -   To adjust the output level of the debugger, load *stream.sys* symbols (*stream.sym* for Windows Me and *stream.sys* for Windows 2000) and modify the *StreamDebug* variable with "e StreamDebug *xx*". The default is 00, which prints only severe errors. Set it to FF to print all messages.
 
--   Minidrivers can print their own messages, using *stream.sys* facilities previously described, by calling [**StreamClassDebugPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassdebugprint). Note that the output level as previously described must be set to be greater than or equal to the output level chosen in the call.
+-   Minidrivers can print their own messages, using *stream.sys* facilities previously described, by calling [**StreamClassDebugPrint**](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassdebugprint). Note that the output level as previously described must be set to be greater than or equal to the output level chosen in the call.
 
  
-
- 
-
-
-
 

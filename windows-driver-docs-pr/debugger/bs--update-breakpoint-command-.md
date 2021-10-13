@@ -1,7 +1,6 @@
 ---
 title: bs (Update Breakpoint Command)
 description: The bs command changes the command executed when the specified breakpoint is encountered.
-ms.assetid: 624c9a30-a0d8-49bd-aba6-a46250022677
 keywords: ["bs (Update Breakpoint Command) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,8 +65,7 @@ Any command that resumes program execution after a breakpoint (such as **g** or 
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 If the *CommandString* is not specified, any commands already set on the breakpoint are removed.
 

@@ -1,7 +1,6 @@
 ---
 title: Overview of Hyper-V Extensible Switch Network Adapters
 description: Overview of Hyper-V Extensible Switch Network Adapters
-ms.assetid: 61403FDE-90BF-4D0A-83E1-5AF8ADBD37A5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -46,10 +45,10 @@ For more information about this type of network adapter, see [Virtual Machine Ne
 
 Extensible switch network adapter connections are created, updated, and deleted through the following extensible switch OID requests:
 
-<a href="" id="oid-switch-nic-create"></a>[OID\_SWITCH\_NIC\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create)  
-The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create) to notify extensible switch extensions about the creation of a network adapter connection to an extensible switch port. The port must have been previously created through an OID set request of [OID\_SWITCH\_PORT\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-create).
+<a href="" id="oid-switch-nic-create"></a>[OID\_SWITCH\_NIC\_CREATE](./oid-switch-nic-create.md)  
+The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CREATE](./oid-switch-nic-create.md) to notify extensible switch extensions about the creation of a network adapter connection to an extensible switch port. The port must have been previously created through an OID set request of [OID\_SWITCH\_PORT\_CREATE](./oid-switch-port-create.md).
 
-The [OID\_SWITCH\_NIC\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create) request only notifies the extension that a new extensible switch network adapter connection is being brought up and that packet traffic may soon begin to occur over the specified port.
+The [OID\_SWITCH\_NIC\_CREATE](./oid-switch-nic-create.md) request only notifies the extension that a new extensible switch network adapter connection is being brought up and that packet traffic may soon begin to occur over the specified port.
 
 The extension can veto the creation notification by returning STATUS\_DATA\_NOT\_ACCEPTED for the OID request. For example, if an extension cannot satisfy its configured policies on the port that is used for the network adapter connection, the extension should veto the creation notification.
 
@@ -65,12 +64,12 @@ For more information about the different configurations in which physical networ
 
 For more information on NDIS\_SWITCH\_NIC\_INDEX values, see [Network Adapter Index Values](network-adapter-index-values.md).
 
-**Note**  The extension cannot generate or forward packets over the network adapter connection until the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect).
+**Note**  The extension cannot generate or forward packets over the network adapter connection until the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](./oid-switch-nic-connect.md).
 
  
 
-<a href="" id="oid-switch-nic-connect"></a>[OID\_SWITCH\_NIC\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect)  
-The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect) to notify extensible switch extensions that an extensible switch network adapter connection is fully operational.
+<a href="" id="oid-switch-nic-connect"></a>[OID\_SWITCH\_NIC\_CONNECT](./oid-switch-nic-connect.md)  
+The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](./oid-switch-nic-connect.md) to notify extensible switch extensions that an extensible switch network adapter connection is fully operational.
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
@@ -80,56 +79,50 @@ After the OID request has completed with NDIS\_STATUS\_SUCCESS, the network adap
 
 -   Issue extensible switch OIDs or status indications that use the port as the source port.
 
--   Call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the network adapter connection. The extensible switch interface will not tear down a network adapter connection while the reference counter has a nonzero value.
+-   Call [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the network adapter connection. The extensible switch interface will not tear down a network adapter connection while the reference counter has a nonzero value.
 
-<a href="" id="oid-switch-nic-updated"></a>[OID\_SWITCH\_NIC\_UPDATED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-updated)  
+<a href="" id="oid-switch-nic-updated"></a>[OID\_SWITCH\_NIC\_UPDATED](./oid-switch-nic-updated.md)  
 The protocol edge of the extensible switch issues an OID set request of OID\_SWITCH\_NIC\_UPDATED to notify extensible switch extensions that the parameters for an extensible switch network adapter have been updated. The OID will only be issued for NICs that have already been connected, and have not yet begun the disconnect process. These run-time configuration changes can include *NicFriendlyName*, *MTU*, *NetCfgInstanceId*, *PermanentMacAddress*, *VMMacAddress*, *CurrentMacAddress*, and *VFAssigned.*
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
-<a href="" id="oid-switch-nic-disconnect"></a>[OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect)  
-The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect) to notify extensible switch extensions that an extensible switch network adapter connection is being torn down. After the connection has been completely torn down, the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete).
+<a href="" id="oid-switch-nic-disconnect"></a>[OID\_SWITCH\_NIC\_DISCONNECT](./oid-switch-nic-disconnect.md)  
+The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](./oid-switch-nic-disconnect.md) to notify extensible switch extensions that an extensible switch network adapter connection is being torn down. After the connection has been completely torn down, the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DELETE](./oid-switch-nic-delete.md).
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
-After the extension forwards this OID request, it can no longer generate or forward packets to the port on which the network adapter connection is being torn down. Also, the extension can no longer call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) for the network adapter connection.
+After the extension forwards this OID request, it can no longer generate or forward packets to the port on which the network adapter connection is being torn down. Also, the extension can no longer call [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) for the network adapter connection.
 
-<a href="" id="oid-switch-nic-delete"></a>[OID\_SWITCH\_NIC\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete)  
-The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete) to notify extensible switch extensions that an extensible switch network adapter connection has been torn down and deleted. This OID request is only issued for network connections for which an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect) was previously issued.
+<a href="" id="oid-switch-nic-delete"></a>[OID\_SWITCH\_NIC\_DELETE](./oid-switch-nic-delete.md)  
+The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DELETE](./oid-switch-nic-delete.md) to notify extensible switch extensions that an extensible switch network adapter connection has been torn down and deleted. This OID request is only issued for network connections for which an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](./oid-switch-nic-disconnect.md) was previously issued.
 
 **Note**  The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
  
 
-After this OID request is completed, the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-teardown) to start the deletion process for the port that was used for the network adapter connection.
+After this OID request is completed, the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](./oid-switch-port-teardown.md) to start the deletion process for the port that was used for the network adapter connection.
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
 The extensible switch interface maintains a reference counter for each network adapter connection that has been created. A network adapter connection will not be deleted if its reference counter has a nonzero value. The interface provides the following handler functions for incrementing or decrementing the reference counter of an extensible switch network adapter connection:
 
-<a href="" id="referenceswitchnic"></a>[*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic)  
+<a href="" id="referenceswitchnic"></a>[*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic)  
 The extensible switch extension calls this function to increment a network adapter connection's reference counter. Although the reference counter has a nonzero value, the extensible switch interface does not delete the network adapter connection.
 
-The extension should call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) before it performs the following operations:
+The extension should call [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) before it performs the following operations:
 
--   Forwards an [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request) request down the extensible switch driver stack to an underlying external adapter.
+-   Forwards an [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) request down the extensible switch driver stack to an underlying external adapter.
 
--   Forwards an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) status indication up the extensible switch driver stack from an underlying external adapter.
+-   Forwards an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) status indication up the extensible switch driver stack from an underlying external adapter.
 
-**Note**  The extension must not call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) for a network adapter connection after it receives an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect) for that connection.
+**Note**  The extension must not call [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) for a network adapter connection after it receives an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](./oid-switch-nic-disconnect.md) for that connection.
 
  
 
-<a href="" id="dereferenceswitchnic"></a>[*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_dereference_switch_nic)  
+<a href="" id="dereferenceswitchnic"></a>[*DereferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic)  
 The extensible switch extension calls this function to decrement a port's reference counter.
 
-If the extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic), it must call [*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_dereference_switch_nic) after the [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request) or [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indication have completed.
+If the extension calls [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic), it must call [*DereferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic) after the [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) or [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) indication have completed.
 
  
-
- 
-
-
-
-
 

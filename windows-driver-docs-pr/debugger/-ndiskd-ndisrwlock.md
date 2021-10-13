@@ -1,9 +1,8 @@
 ---
 title: ndiskd.ndisrwlock
 description: The ndiskd.ndisrwlock extension displays information about an NDIS_RW_LOCK_EX lock structure.
-ms.assetid: 853CBAFE-3899-4983-BFC7-933D3BC7ADA1
 keywords: ["ndiskd.ndisrwlock Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/18/2020
 topic_type:
 - apiref
 api_name:
@@ -15,25 +14,22 @@ ms.localizationpriority: medium
 
 # !ndiskd.ndisrwlock
 
-
-The **!ndiskd.ndisrwlock** extension displays information about an [**NDIS\_RW\_LOCK\_EX**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff567279(v=vs.85)) lock structure.
+The **!ndiskd.ndisrwlock** extension displays information about an [**NDIS\_RW\_LOCK\_EX**](/previous-versions/windows/hardware/drivers/ff567279(v=vs.85)) lock structure.
 
 ```console
-!ndiskd.ndisrwlock [-handle <x>] 
+!ndiskd.ndisrwlock -handle <x>
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Handle of the lock structure.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Use the **!ndiskd.ndisrwlock** extension if you create your own RW lock and would want to inspect it. To obtain the handle for an RW lock, use the *poi* command to dereference the address of your driver's lock. The following snippet shows how to look at a lock that the TCIPIP protocol was using at the time of the example.
 
@@ -75,27 +71,16 @@ NDIS READ-WRITE LOCK
     Set a breakpoint on acquire/release
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NDIS\_RW\_LOCK\_EX**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff567279(v=vs.85))
-
- 
-
- 
-
-
-
-
-
-
+[**NDIS\_RW\_LOCK\_EX**](/previous-versions/windows/hardware/drivers/ff567279(v=vs.85))

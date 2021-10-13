@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET
 description: The KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET property ID that is defined in KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY is used to set per-frame settings in the driver.
-ms.assetid: 2EFBEA64-8340-4367-A56B-2C46167F0DE5
 keywords: ["KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET Streaming Media Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET
 
-The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET** property ID that is defined in [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_perframesetting_property) is used to set per-frame settings in the driver.
+The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET** property ID that is defined in [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_perframesetting_property) is used to set per-frame settings in the driver.
 
 ## Usage summary
 
@@ -25,17 +24,17 @@ To set per frame settings, the **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET
 
 This property can be read or written. While a **GET** call can be used to return the last per frame settings that was set on the driver, the **GET** call is not exposed to the app client and is only issued at the initialization time when the per-frame setting control is constructed by the MF pipeline, where the driver must return **STATUS\_BUFFER\_OVERFLOW** with buffer size of 0.
 
-In a GET call, a zero length buffer is sent to the driver first to find out the required data buffer size to hold the entire per-frame settings the driver has. In response to this call, the driver must return **STATUS\_BUFFER\_OVERFLOW** with the required per-frame settings buffer size that must be 0 if no per-frame settings has ever been set or at least the size of [**KSCAMERA\_PERFRAMESETTING\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_header) otherwise.
+In a GET call, a zero length buffer is sent to the driver first to find out the required data buffer size to hold the entire per-frame settings the driver has. In response to this call, the driver must return **STATUS\_BUFFER\_OVERFLOW** with the required per-frame settings buffer size that must be 0 if no per-frame settings has ever been set or at least the size of [**KSCAMERA\_PERFRAMESETTING\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_header) otherwise.
 
-The per-frame setting payload must start with a **KSCAMERA\_PERFRAMESETTING\_HEADER**, followed by one or more frame settings. The number of frame settings is specified in FrameCount. The settings for each frame must start with a [**KSCAMERA\_PERFRAMESETTING\_FRAME\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_frame_header), followed by zero or more item settings. The number of item settings is specified in ItemCount. The settings for each item, if any must start with a [**KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_item_header).
+The per-frame setting payload must start with a **KSCAMERA\_PERFRAMESETTING\_HEADER**, followed by one or more frame settings. The number of frame settings is specified in FrameCount. The settings for each frame must start with a [**KSCAMERA\_PERFRAMESETTING\_FRAME\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_frame_header), followed by zero or more item settings. The number of item settings is specified in ItemCount. The settings for each item, if any must start with a [**KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_item_header).
 
-For the settings for each item, if a Value payload is present, the **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value). If a custom item is present, **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_custom_item), followed by the custom data associated with the GUID Id specified in **KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**.
+For the settings for each item, if a Value payload is present, the **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value). If a custom item is present, **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_custom_item), followed by the custom data associated with the GUID Id specified in **KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**.
 
 If FrameCount is 0, the driver must reject the per-frame settings payload. If ItemCount is 0, no frame settings are specified. The driver must apply global settings to the frame associated. For example, FrameCount = 1 and ItemCount = 0 implies a single frame variable photo sequence with global settings.
 
 The figure below illustrates the data structure layout of a per frame settings payload configuration. In the example below, a per-frame settings for four frames are configured with frame 0 containing three items, two without payload and one with a Value payload; frame 1 containing two items, one without payload and the other with a value payload; frame 2 containing 0 item which implies the global settings for frame 2; frame 3 containing four items, one with a value payload, two each with a custom item and a custom data payload, and one without payload.
 
-![structure of the perframesetting\-header](images/oem-perframesettings-header-payload-datastructure.png)
+![structure of the perframesetting\-header.](images/oem-perframesettings-header-payload-datastructure.png)
 
 1.  **Size in per-frame settings header** represents the total payload size to be filled in **KSCAMERA\_PERFRAMESETTING\_HEADER.Size**
 

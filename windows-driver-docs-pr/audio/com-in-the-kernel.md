@@ -1,7 +1,6 @@
 ---
 title: COM in the Kernel
 description: COM in the Kernel
-ms.assetid: 2ce13ef1-9868-4f6d-9c42-b71f9e3d5615
 keywords:
 - audio miniport drivers WDK , COM
 - miniport drivers WDK audio , COM

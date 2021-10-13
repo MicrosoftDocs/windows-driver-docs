@@ -1,7 +1,6 @@
 ---
-title: C30035
+title: C30035 warning
 description: Warning C30035 A call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). PREfast was unable to determine if the call was made from the initialization function.
-ms.assetid: 1A5F97EA-7DDC-4D3A-8058-B9C0C2211DA9
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 
@@ -15,7 +14,7 @@ warning C30035: A call was made to a function that must be made from inside the 
 
 BANNED\_MEM\_ALLOCATION\_MAYBE\_BAD\_CALL\_SITE
 
-The code was compiled with the [POOL\_NX\_OPTIN](https://docs.microsoft.com/windows-hardware/drivers/kernel/single-binary-opt-in-pool-nx-optin) macro but the initialization did not occur inside of **DriverEntry()** or **DllInitialize()**. To fix this, move the call inside of the initialization function.
+The code was compiled with the [POOL\_NX\_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md) macro but the initialization did not occur inside of **DriverEntry()** or **DllInitialize()**. To fix this, move the call inside of the initialization function.
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -64,10 +63,4 @@ DriverEntry (
 ```
 
  
-
- 
-
-
-
-
 

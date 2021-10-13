@@ -1,7 +1,6 @@
 ---
 title: ndiskd.pendingnbls
 description: The ndiskd.pendingnbls extension displays pending NBLs (NET_BUFFER_LISTs) that are in transit.
-ms.assetid: 9137B995-FCCA-4E25-85D3-FCB5B717EBDF
 keywords: ["ndiskd.pendingnbls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -15,15 +14,13 @@ ms.localizationpriority: medium
 
 # !ndiskd.pendingnbls
 
-
-The **!ndiskd.pendingnbls** extension displays pending NBLs ([**NET\_BUFFER\_LISTs**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)) that are in transit.
+The **!ndiskd.pendingnbls** extension displays pending NBLs ([**NET\_BUFFER\_LISTs**](../network/net-buffer-list-structure.md)) that are in transit.
 
 ```console
 !ndiskd.pendingnbls [-handle <x>] [-fullstack] [-verbosity <x>] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Handle of an NDIS miniport, filter, or open.
@@ -34,12 +31,11 @@ Shows pending NBLs from the entire stack associated with the handle.
 <span id="_______-verbosity______"></span><span id="_______-VERBOSITY______"></span> *-verbosity*   
 Level of detail to display.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 **!ndiskd.pendingnbls** can be passed the handle of an NDIS miniport, filter, or open. The following series of examples use a miniport handle. To see a list of all miniports and their associated minidrivers, run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension with no parameters. In the following example output, look for the Microsoft Kernel Debug Network Adapter, whose handle is ffffe00bc3f701a0. Its minidriver's handle is ffffe00bc51b9ae0.
 
@@ -95,7 +91,6 @@ Now, after hitting the minidriver's SendNetBufferListsHandler breakpoint, you ca
 **Note**  
 The debugee target machine in this example was loading a web page when it hit the breakpoint, so traffic was flowing through the miniport's datapath. Therefore, it had a pending NBL to send. Even after setting a breakpoint on one or more of the NBL handlers for the minidriver, you may not see any pending NBLs if there were no activity in the datapath.
 
- 
 
 ```console
 0: kd> !ndiskd.pendingnbls ffffe00bc3f701a0
@@ -111,33 +106,23 @@ PHASE 3/3: Found 1 pending NBL(s) of 4817 total NBL(s).
 Search complete.
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)
+[**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
 
 [**bp, bu, bm (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md)
-
- 
-
- 
-
-
-
-
-
-

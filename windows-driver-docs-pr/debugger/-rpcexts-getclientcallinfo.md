@@ -1,7 +1,6 @@
 ---
 title: rpcexts.getclientcallinfo
 description: The rpcexts.getclientcallinfo extension searches the system's RPC state information for client call (CCALL) information.
-ms.assetid: 1b838238-63b3-4618-bc59-6b4d74274b9c
 keywords: ["rpcexts.getclientcallinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,8 +65,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension can only be used with CDB or with user-mode WinDbg. It is only available if full RPC state information is being gathered.
 

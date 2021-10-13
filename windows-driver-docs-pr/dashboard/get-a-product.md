@@ -1,8 +1,6 @@
 ---
 title: Get a product
 description: This method in the Microsoft Hardware API retrieves data for a specific product registered to your Windows Dev Center account.
-author: balapv
-ms.author: balapv
 ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium
@@ -22,7 +20,7 @@ This method has the following syntax. See the following sections for usage examp
 
 |Method|Request URI|
 |:--|:--|
-|GET|https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}|
+|GET|https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}|
 
 ### Request header
 
@@ -45,7 +43,7 @@ Do not provide a request body for this method.
 The following example demonstrates how to retrieve information about a specific product registered to your account.
 
 ```cpp
-GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14039471039847257 HTTP/1.1
+GET https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14039471039847257 HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

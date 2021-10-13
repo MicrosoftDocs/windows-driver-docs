@@ -1,7 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_QUEUE_PARAMETERS
 description: Overlying drivers issue object identifier (OID) method requests of OID_RECEIVE_FILTER_QUEUE_PARAMETERS to obtain the current configuration parameters of a receive queue.
-ms.assetid: f6cd7896-0811-4029-b1d8-8cf800d7813e
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_QUEUE_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,12 +10,11 @@ ms.localizationpriority: medium
 # OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS
 
 
-Overlying drivers issue object identifier (OID) method requests of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS to obtain the current configuration parameters of a receive queue. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure with a queue identifier of type **NDIS\_RECEIVE\_QUEUE\_ID**. After a successful return from the OID method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an **NDIS\_RECEIVE\_QUEUE\_PARAMETERS** structure.
+Overlying drivers issue object identifier (OID) method requests of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS to obtain the current configuration parameters of a receive queue. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure with a queue identifier of type **NDIS\_RECEIVE\_QUEUE\_ID**. After a successful return from the OID method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an **NDIS\_RECEIVE\_QUEUE\_PARAMETERS** structure.
 
-Overlying drivers issue OID set requests of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS to change the current configuration parameters of a queue. The overlying driver provides a pointer to an [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure.
+Overlying drivers issue OID set requests of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS to change the current configuration parameters of a queue. The overlying driver provides a pointer to an [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure.
 
-Remarks
--------
+## Remarks
 
 Overlying drivers issue OID set requests of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS to change the parameters of one or more receive queues. The OID set request is optional for NDIS 6.20 and later miniport drivers. However, the OID request is mandatory for miniport drivers that support the virtual machine queue (VMQ) interface.
 
@@ -26,7 +24,7 @@ Overlying drivers issue OID set requests of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMET
 
 The overlying driver obtained the queue identifier input value from an earlier [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](oid-receive-filter-allocate-queue.md) method OID request.
 
-After the overlying driver allocates a queue, it can change the configuration parameters that have a corresponding change flag (NDIS\_RECEIVE\_QUEUE\_PARAMETER\_*Xxx*\_CHANGED) in the **Flags** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure. However, after the queue has been allocated, the overlying driver cannot change the configuration parameters that do not have a corresponding change flag.
+After the overlying driver allocates a queue, it can change the configuration parameters that have a corresponding change flag (NDIS\_RECEIVE\_QUEUE\_PARAMETER\_*Xxx*\_CHANGED) in the **Flags** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure. However, after the queue has been allocated, the overlying driver cannot change the configuration parameters that do not have a corresponding change flag.
 
 ### Return Status Codes
 
@@ -69,8 +67,7 @@ NDIS handles the OID method request of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS f
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -92,18 +89,13 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
-[**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters)
+[**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters)
 
 [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](oid-receive-filter-allocate-queue.md)
 
 [OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS](oid-receive-filter-queue-parameters.md)
 
  
-
- 
-
-
-
 

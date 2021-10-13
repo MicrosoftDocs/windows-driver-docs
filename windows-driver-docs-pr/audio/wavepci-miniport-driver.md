@@ -1,7 +1,6 @@
 ---
 title: WavePci Miniport Driver
 description: WavePci Miniport Driver
-ms.assetid: 8a166087-d158-4d49-a917-2a5a78b43cb4
 keywords:
 - audio miniport drivers WDK , WavePci
 - miniport drivers WDK audio , WavePci
@@ -28,57 +27,52 @@ A WavePci miniport driver should implement two interfaces:
 
 -   **The stream interface** manages a wave stream and exposes most of the miniport driver's functionality.
 
-The miniport interface, [IMiniportWavePci](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavepci), inherits the methods in the [IMiniport](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiport) interface. IMiniportWavePci provides the following additional methods:
+The miniport interface, [IMiniportWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci), inherits the methods in the [IMiniport](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport) interface. IMiniportWavePci provides the following additional methods:
 
-[**IMiniportWavePci::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepci-init)
+[**IMiniportWavePci::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepci-init)
 
 Initializes the miniport object.
 
-[**IMiniportWavePci::NewStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepci-newstream)
+[**IMiniportWavePci::NewStream**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepci-newstream)
 
 Creates a new stream object.
 
-[**IMiniportWavePci::Service**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepci-service)
+[**IMiniportWavePci::Service**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepci-service)
 
 Notifies the miniport driver of a request for service.
 
-The stream interface, [IMiniportWavePciStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavepcistream), inherits the methods from the [**IUnknown**](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWavePciStream provides the following additional methods:
+The stream interface, [IMiniportWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream), inherits the methods from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWavePciStream provides the following additional methods:
 
-[**IMiniportWavePciStream::GetAllocatorFraming**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-getallocatorframing)
+[**IMiniportWavePciStream::GetAllocatorFraming**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getallocatorframing)
 
 Gets the miniport driver's preferred allocator-framing parameters for the wave stream.
 
-[**IMiniportWavePciStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-getposition)
+[**IMiniportWavePciStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition)
 
 Gets the device's current position in the wave stream.
 
-[**IMiniportWavePciStream::MappingAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-mappingavailable)
+[**IMiniportWavePciStream::MappingAvailable**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-mappingavailable)
 
 Indicates that a new mapping is available from the port driver.
 
-[**IMiniportWavePciStream::NormalizePhysicalPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-normalizephysicalposition)
+[**IMiniportWavePciStream::NormalizePhysicalPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-normalizephysicalposition)
 
 Converts a physical buffer position value into a time-based value.
 
-[**IMiniportWavePciStream::RevokeMappings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-revokemappings)
+[**IMiniportWavePciStream::RevokeMappings**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-revokemappings)
 
 Revokes previously issued mappings.
 
-[**IMiniportWavePciStream::Service**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-service)
+[**IMiniportWavePciStream::Service**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-service)
 
 Notifies the stream object of a request for service.
 
-[**IMiniportWavePciStream::SetFormat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-setformat)
+[**IMiniportWavePciStream::SetFormat**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-setformat)
 
 Sets the data format of the wave stream.
 
-[**IMiniportWavePciStream::SetState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-setstate)
+[**IMiniportWavePciStream::SetState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-setstate)
 
 Sets the state of the wave stream.
  
-
- 
-
-
-
 

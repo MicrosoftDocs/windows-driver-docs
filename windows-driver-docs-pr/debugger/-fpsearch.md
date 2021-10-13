@@ -1,7 +1,6 @@
 ---
-title: fpsearch
+title: fpsearch (WinDbg)
 description: The fpsearch extension searches the freed special pool for a specified address.
-ms.assetid: 70375723-7156-47ec-b6e1-b3c51b5caaf9
 keywords: ["special pool", "fpsearch Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,8 +51,7 @@ If set, the debugger displays the raw content of each page on the free list as i
 
  
 
-Remarks
--------
+## Remarks
 
 The display for an address includes the virtual address, the page frame number (PFN), the pool tag, size, whether the data at the address is pageable, the thread ID, and the call stack at the time of deallocation.
 

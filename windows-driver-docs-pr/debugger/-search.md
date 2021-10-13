@@ -1,7 +1,6 @@
 ---
-title: search
+title: search (WinDbg)
 description: The search extension searches pages in physical memory for pointer-sized data that matches the specified criteria.
-ms.assetid: 5f9d4e50-c389-4309-8851-0f5069b1b66e
 keywords: ["search Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Kdexts.dll
 
 For more ways to display and search physical memory, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 If *StartPFN* and *EndPFN* are specified, these are taken as the page frame numbers of the beginning and end of the range in physical memory to be searched. For an explanation of page frame numbers, see [Converting Virtual Addresses to Physical Addresses](converting-virtual-addresses-to-physical-addresses.md). If *StartPFN* and *EndPFN* are omitted, all physical memory is searched.
 

@@ -1,7 +1,6 @@
 ---
-title: .for
+title: .for (WinDbg)
 description: The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
-ms.assetid: 35f54c4c-e7f5-42a9-b579-1e4958b7286b
 keywords: [".for Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -41,8 +40,7 @@ Specifies one or more commands that will be executed repeatedly as long as the c
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 If all the work is being done by the increment commands, you can omit *Condition* entirely and simply use an empty pair of braces.
 
@@ -52,13 +50,7 @@ Here is an example of a **.for** statement with multiple increment commands:
 0:000> .for (r eax=0; @eax < 7; r eax=@eax+1; r ebx=@ebx+1) { .... }
 ```
 
-The [**.break**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-break) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
+The [**.break**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Attaching a Client Module to a Provider Module
 description: Attaching a Client Module to a Provider Module
-ms.assetid: 351c07f6-186a-4f47-95f8-c94084ff68fb
 keywords:
 - attaching network modules
 - registering network modules
@@ -17,19 +16,19 @@ ms.localizationpriority: medium
 # Attaching a Client Module to a Provider Module
 
 
-After a client module has registered with the Network Module Registrar (NMR), the NMR calls the client module's [*ClientAttachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function, once for each provider module that is registered as a provider of the same [Network Programming Interface (NPI)](network-programming-interface.md) for which the client module has registered as a client.
+After a client module has registered with the Network Module Registrar (NMR), the NMR calls the client module's [*ClientAttachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function, once for each provider module that is registered as a provider of the same [Network Programming Interface (NPI)](network-programming-interface.md) for which the client module has registered as a client.
 
-The NMR also calls a client module's [*ClientAttachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function whenever a new provider module registers as a provider of the same NPI for which the client module has registered as a client.
+The NMR also calls a client module's [*ClientAttachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function whenever a new provider module registers as a provider of the same NPI for which the client module has registered as a client.
 
-When the NMR calls the client module's [*ClientAttachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function for a particular provider module, it passes, in the *ProviderRegistrationInstance* parameter, a pointer to the [**NPI\_REGISTRATION\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/ns-netioddk-_npi_registration_instance) structure that is associated with the provider module. The client module's *ClientAttachProvider* callback function can use the data in the provider module's **NPI\_REGISTRATION\_INSTANCE** structure, as well as the data in the [**NPI\_MODULEID**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568813(v=vs.85)) structure and the NPI-specific provider characteristics structure pointed to by the **ModuleId** and **NpiSpecificCharacteristics** members of the provider module's **NPI\_REGISTRATION\_INSTANCE** structure, to determine if it will attach to the provider module.
+When the NMR calls the client module's [*ClientAttachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function for a particular provider module, it passes, in the *ProviderRegistrationInstance* parameter, a pointer to the [**NPI\_REGISTRATION\_INSTANCE**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance) structure that is associated with the provider module. The client module's *ClientAttachProvider* callback function can use the data in the provider module's **NPI\_REGISTRATION\_INSTANCE** structure, as well as the data in the [**NPI\_MODULEID**](/previous-versions/windows/hardware/drivers/ff568813(v=vs.85)) structure and the NPI-specific provider characteristics structure pointed to by the **ModuleId** and **NpiSpecificCharacteristics** members of the provider module's **NPI\_REGISTRATION\_INSTANCE** structure, to determine if it will attach to the provider module.
 
-If the client module determines that it will attach to the provider module, the client module's [*ClientAttachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function allocates and initializes a binding context structure for the attachment to the provider module and then calls the [**NmrClientAttachProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrclientattachprovider) function to continue the attachment process. In this situation, the client module's *ClientAttachProvider* callback function must return the status code that is returned by the **NmrClientAttachProvider** function.
+If the client module determines that it will attach to the provider module, the client module's [*ClientAttachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function allocates and initializes a binding context structure for the attachment to the provider module and then calls the [**NmrClientAttachProvider**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrclientattachprovider) function to continue the attachment process. In this situation, the client module's *ClientAttachProvider* callback function must return the status code that is returned by the **NmrClientAttachProvider** function.
 
-If [**NmrClientAttachProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrclientattachprovider) returns STATUS\_SUCCESS, the client module and the provider module have successfully attached to each other. In this situation, the client module's [*ClientAttachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function must save the binding handle that the NMR passed in the *NmrBindingHandle* parameter when the NMR called the client module's *ClientAttachProvider* callback function. The client module's *ClientAttachProvider* callback function must also save the pointers to the provider binding context and the provider dispatch table that are returned in the variables that the client module passed to the **NmrClientAttachProvider** function in the *ProviderBindingContext* and *ProviderDispatch* parameters. A client module typically saves this data in its binding context for the attachment to the provider module.
+If [**NmrClientAttachProvider**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrclientattachprovider) returns STATUS\_SUCCESS, the client module and the provider module have successfully attached to each other. In this situation, the client module's [*ClientAttachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function must save the binding handle that the NMR passed in the *NmrBindingHandle* parameter when the NMR called the client module's *ClientAttachProvider* callback function. The client module's *ClientAttachProvider* callback function must also save the pointers to the provider binding context and the provider dispatch table that are returned in the variables that the client module passed to the **NmrClientAttachProvider** function in the *ProviderBindingContext* and *ProviderDispatch* parameters. A client module typically saves this data in its binding context for the attachment to the provider module.
 
-If [**NmrClientAttachProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrclientattachprovider) does not return STATUS\_SUCCESS, the client module's [*ClientAttachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function should clean up and free any resources that it allocated before it called **NmrClientAttachProvider**.
+If [**NmrClientAttachProvider**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrclientattachprovider) does not return STATUS\_SUCCESS, the client module's [*ClientAttachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function should clean up and free any resources that it allocated before it called **NmrClientAttachProvider**.
 
-If the client module determines that it will not attach to the provider module, then the client module's [*ClientAttachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function must return STATUS\_NOINTERFACE.
+If the client module determines that it will not attach to the provider module, then the client module's [*ClientAttachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function must return STATUS\_NOINTERFACE.
 
 For example, suppose the "EXNPI" Network Programming Interface (NPI) defines the following in header file Exnpi.h:
 
@@ -180,10 +179,4 @@ NTSTATUS
 ```
 
  
-
- 
-
-
-
-
 

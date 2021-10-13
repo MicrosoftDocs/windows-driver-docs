@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_READ
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_READ notification to inform the MB Service that data has been received from an open device service session.NDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure.
-ms.assetid: 680C15DA-B37C-4A7C-B7BE-B13B3B050EC3
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_READ Network Drivers Starting with Windows Vista
@@ -15,10 +14,9 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION\_READ noti
 
 Miniport drivers can only use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_read) structure.
+This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_READ**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_read) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -40,12 +38,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_read)
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_READ**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_read)
 
  
-
- 
-
-
-
 

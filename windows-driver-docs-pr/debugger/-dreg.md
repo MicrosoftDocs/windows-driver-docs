@@ -1,7 +1,6 @@
 ---
-title: dreg
+title: dreg (WinDbg)
 description: The dreg extension displays registry information.
-ms.assetid: a54ed14e-eb9d-48fd-877d-d6d0fe4a8d3f
 keywords: ["dreg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -77,8 +76,7 @@ Specifies the name of the registry value to be displayed. If an asterisk (\*) is
 
 For information about the registry, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The **!dreg** extension can be used to display the registry during user-mode debugging.
 

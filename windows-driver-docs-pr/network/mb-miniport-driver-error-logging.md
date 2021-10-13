@@ -1,7 +1,6 @@
 ---
 title: MB Miniport driver Error Logging
 description: MB Miniport driver Error Logging
-ms.assetid: 57f83d03-29e5-4a20-8c0c-2d00954e7ccb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # MB Miniport driver Error Logging
 
 
-MB miniport drivers should perform the following checks in their [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, such as:
+MB miniport drivers should perform the following checks in their [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, such as:
 
 -   The presence of the correct device firmware version required to support the MB driver model.
 
@@ -17,7 +16,7 @@ MB miniport drivers should perform the following checks in their [*MiniportIniti
 
 -   No resource conflicts.
 
-If a miniport driver fails to obtain resources it requires, it should return NDIS\_STATUS\_RESOURCES from its MiniportInitializeEx function. Miniport drivers should call [**NdisWriteErrorLogEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiswriteerrorlogentry) to log the details of failure to the Windows Event Log.
+If a miniport driver fails to obtain resources it requires, it should return NDIS\_STATUS\_RESOURCES from its MiniportInitializeEx function. Miniport drivers should call [**NdisWriteErrorLogEntry**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswriteerrorlogentry) to log the details of failure to the Windows Event Log.
 
 Miniport drivers should specify the error code in the first element of the last parameter in the call to NdisWriteErrorLogEntry (a variable-sized array of ULONGs) according to the information in the following table.
 
@@ -53,10 +52,4 @@ Miniport drivers should specify the error code in the first element of the last 
 Miniport drivers can put other values in the remainder of the elements of variable-sized array.
 
  
-
- 
-
-
-
-
 

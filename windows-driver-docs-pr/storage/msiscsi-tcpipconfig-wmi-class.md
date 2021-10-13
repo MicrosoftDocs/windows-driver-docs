@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_TCPIPConfig WMI Class
 description: MSiSCSI\_TCPIPConfig WMI Class
-ms.assetid: 57451576-a900-4eaa-b229-bda79a81d014
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -59,13 +58,7 @@ class MSiSCSI_TCPIPConfig {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_TCPIPConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsicfg/ns-iscsicfg-_msiscsi_tcpipconfig) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_TCPIPConfig**](/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_tcpipconfig) data structure.
 
  
-
- 
-
-
-
-
 

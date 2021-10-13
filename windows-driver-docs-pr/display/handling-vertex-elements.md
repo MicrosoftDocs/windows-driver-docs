@@ -1,7 +1,6 @@
 ---
 title: Handling Vertex Elements
 description: Handling Vertex Elements
-ms.assetid: b931b674-f8c4-4852-a66a-97d545059287
 keywords:
 - vertex shader declarations WDK DirectX 9.0 , handling vertex elements
 - shader declarations WDK DirectX 9.0 , handling vertex elements

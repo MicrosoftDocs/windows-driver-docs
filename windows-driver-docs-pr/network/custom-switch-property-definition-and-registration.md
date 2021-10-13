@@ -1,7 +1,6 @@
 ---
 title: Custom Switch Property Definition and Registration
 description: Custom Switch Property Definition and Registration
-ms.assetid: DB80E86D-8553-47B5-8AE1-6D430FDDE206
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -63,7 +62,7 @@ mofcomp -N:root\virtualization\v2 Fabrikam_SwitchCustomSettingData.mof
 net start vmms
 ```
 
-For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](https://docs.microsoft.com/windows-hardware/drivers/kernel/compiling-a-driver-s-mof-file).
+For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](../kernel/compiling-a-driver-s-mof-file.md).
 
 The following example shows how you can configure the sample feature. In this example, the Fabrikam\_SwitchCustomSettingData MOF class is used to configure a switch named “TestSwitch”.
 
@@ -149,10 +148,4 @@ PSComputerName    : TEST_SERVER
 For more information on how extensible switch extensions manage switch policies, see [Managing Switch Policies](managing-switch-policies.md).
 
  
-
- 
-
-
-
-
 

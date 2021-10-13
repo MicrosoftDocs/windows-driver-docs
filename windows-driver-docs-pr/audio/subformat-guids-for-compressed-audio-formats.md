@@ -1,7 +1,6 @@
 ---
 title: Subformat GUIDs for Compressed Audio Formats
 description: Subformat GUIDs for Compressed Audio Formats
-ms.assetid: f9595d6c-952c-4266-8eb5-5c8581051d28
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ For Windows 7, new subformat GUIDs have been added to the Ksmedia.h header file 
 
 As a result of the CEA-861-D standard, you must ensure that audio formats that are not supported by a CEA device are not transmitted to such a device. High definition multimedia interface (HDMI) and [DisplayPort](https://www.displayport.org/) are examples of CEA devices.
 
-For user-mode access, the GUIDs are specified in the **SubFormat** member of [WAVEFORMATEXTENSIBLE](https://go.microsoft.com/fwlink/p/?linkid=142020) and in the **FormatExt** member of [WAVEFORMATEXTENSIBLE\_IEC61937](https://go.microsoft.com/fwlink/p/?linkid=142021). For kernel-mode access for audio drivers, the GUIDs are specified in the **DataRange** member of the [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) structure,
+For user-mode access, the GUIDs are specified in the **SubFormat** member of [WAVEFORMATEXTENSIBLE](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible) and in the **FormatExt** member of [WAVEFORMATEXTENSIBLE\_IEC61937](/windows/win32/coreaudio/representing-formats-for-iec-61937-transmissions). For kernel-mode access for audio drivers, the GUIDs are specified in the **DataRange** member of the [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) structure.
 
 The GUIDs for the available compressed audio formats are listed in the following table.
 
@@ -176,9 +175,9 @@ The GUIDs for compressed audio formats that can be implemented by third-party so
 
  
 
-The following code example shows how an audio miniport driver defines and initializes a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) structure for use with an HDMI sink that has a fully functional Dolby Digital Plus decoder. A sink of this type supports transfer rates of 44.1 and 48 KHz.
+The following code example shows how an audio miniport driver defines and initializes a [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure for use with an HDMI sink that has a fully functional Dolby Digital Plus decoder. A sink of this type supports transfer rates of 44.1 and 48 KHz.
 
-For a sampling rate of 48 KHz, an audio miniport driver uses the following code to define and initialize a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) structure. This code shows the data ranges that the audio miniport driver exposes:
+For a sampling rate of 48 KHz, an audio miniport driver uses the following code to define and initialize a [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure. This code shows the data ranges that the audio miniport driver exposes:
 
 ```cpp
 //Define and initialize KSDATARANGE_AUDIO structure
@@ -198,7 +197,7 @@ drDDPlus48.MinimumSampleFrequency = 192000; // 48 KHz * 4.
 drDDPlus48.MaximumSampleFrequency = 192000;
 ```
 
-For a sampling rate of 44.1 KHz, an audio miniport driver uses the following code to define and initialize a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) structure:
+For a sampling rate of 44.1 KHz, an audio miniport driver uses the following code to define and initialize a [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure:
 
 ```cpp
 //Define and initialize KSDATARANGE_AUDIO structure
@@ -219,9 +218,4 @@ drDDPlus44.MaximumSampleFrequency = 176400;
 ```
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Error Information Retrieval
 description: Error Information Retrieval
-ms.assetid: 4af06727-9660-4bbc-8c9e-a50c8f2d566d
 keywords:
 - Windows Hardware Error Architecture WDK , error information retrieval
 - WHEA WDK , error information retrieval
@@ -28,7 +27,7 @@ During the handling of a hardware error condition, the PSHED is called at three 
 The PSHED supports error information retrieval operations for error conditions that are reported by the standard error sources that the PSHED discovers. If a PSHED plug-in is implemented that participates in [error source discovery](error-source-discovery.md) and reports additional error sources to the operating system that the PSHED does not support, the PSHED plug-in must also participate in error information retrieval to support the error information retrieval operations for these error sources. A PSHED plug-in can also optionally participate in error information retrieval to provide additional error information for error conditions that are reported by the standard error sources.
 
 **Note**   A PSHED plug-in that participates in error information retrieval must also participate in [error source discovery](error-source-discovery.md) if either of the following is true:
--   The PSHED plug-in provides additional error information to the hardware error packets that are reported by a particular error source. In this situation, the PSHED plug-in must modify the value that is contained in the **MaxRawDataLength** member of the [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_source_descriptor) structure for that error source during error source discovery to account for the additional error information.
+-   The PSHED plug-in provides additional error information to the hardware error packets that are reported by a particular error source. In this situation, the PSHED plug-in must modify the value that is contained in the **MaxRawDataLength** member of the [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structure for that error source during error source discovery to account for the additional error information.
 
 -   The PSHED plug-in provides additional error record sections to the error records for hardware errors that are reported by a particular error source. In this situation, the PSHED plug-in must modify the value that is contained in the **MaxSectionsPerRecord** member of the WHEA\_ERROR\_SOURCE\_DESCRIPTOR structure for that error source during error source discovery to account for the additional error record sections.
 
@@ -37,9 +36,4 @@ The PSHED supports error information retrieval operations for error conditions t
 For more information about how to implement a PSHED plug-in that participates in error information retrieval, see [Participating in Error Information Retrieval](participating-in-error-information-retrieval.md).
 
  
-
- 
-
-
-
 

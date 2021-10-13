@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_PinCapsChange
 description: KSEVENTSETID\_PinCapsChange
-ms.assetid: a8fc4b57-9e80-49e5-a0fc-92bb38724ea0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

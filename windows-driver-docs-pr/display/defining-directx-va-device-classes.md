@@ -1,7 +1,6 @@
 ---
 title: Defining DirectX VA Device Classes
 description: Defining DirectX VA Device Classes
-ms.assetid: a4b2ee88-747a-48c3-ba1d-2d605c46db58
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , defining device classes
 - device classes WDK DirectX VA
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_defining_directx_va_device_classes_gg"></span><span id="DDK_DEFINING_DIRECTX_VA_DEVICE_CLASSES_GG"></span>
 
 
-Use the example code in this section to define device classes for the deinterlace container device, ProcAmp control device, deinterlace mode device (for example, [bob](bob-deinterlacing.md)), and COPP device. These device classes contain declarations for member functions that comprise the [ProcAmp Control DDI](https://docs.microsoft.com/windows-hardware/drivers/display/procamp-control-ddi) and [Deinterlace DDI](https://docs.microsoft.com/windows-hardware/drivers/display/deinterlace-ddi). These device class definitions can be declared in a driver-supplied header file.
+Use the example code in this section to define device classes for the deinterlace container device, ProcAmp control device, deinterlace mode device (for example, [bob](bob-deinterlacing.md)), and COPP device. These device classes contain declarations for member functions that comprise the [ProcAmp Control DDI](./procamp-control-ddi.md) and [Deinterlace DDI](./deinterlace-ddi.md). These device class definitions can be declared in a driver-supplied header file.
 
 Use the following example code to define each device type and a base class that applies to each device type:
 
@@ -50,10 +49,4 @@ The following topics contain example code that defines classes for the deinterla
 [Defining the COPP Device Class](defining-the-copp-device-class.md)
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
 title: MB Multi-SIM Operations
 description: MB Multi-SIM Operations
-ms.date: 04/20/2017
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -13,7 +13,7 @@ Traditionally, non-phone Windows devices have not been configured for multi-SIM 
 
 Most typical multi-SIM phone devices have dual SIM slots but are limited to one primary SIM card supporting data while the other only supports voice features. Such a limitation does not exist in the non-phone PC model as all SIM cards are used for data connection.
 
-While the framework defined in this specification can theoretically support an unbounded number of modems and SIM cards, Windows 10, version 1703 and later supports only the dual-SIM/single-active scenario end to end. 
+While the framework defined in this specification can theoretically support an unbounded number of modems and SIM cards, Windows 10, version 1703 and later supports only the [dual-SIM/single-active (DSSA)](#dual-sim-single-active) scenario end to end. 
 
 ## NDIS Modem Interface Specification
 
@@ -27,13 +27,13 @@ The executor is a logical representation of the hardware and may in fact be one 
 
 The following two images illustrate the logical view of a dual SIM modem. Each shows a possible combination of executor and UICC.
 
-![Logical view of a dual SIM modem](images/multi-SIM_1_dualSimModem.png "Logical view of a dual SIM modem")
+![Logical view of a dual SIM modem.](images/multi-SIM_1_dualSimModem.png "Logical view of a dual SIM modem")
 
 The cellular stack inside an executor is considered mostly self-contained except in the case of a Dual Standby modem implementation where the executor conducting traffic (voice and/or data) may prevent the other from maintaining registration.
 
 The following diagram illustrates the logical view of a dual standby modem. Traffic on Executor 0, a phone call, causes Executor 1 to lose registration.
 
-![Logical view of a dual-standby modem](images/multi-SIM_2_dualExecutors.png "Logical view of a dual-standby modem")
+![Logical view of a dual-standby modem.](images/multi-SIM_2_dualExecutors.png "Logical view of a dual-standby modem")
 
 The Windows Desktop modem interface model in NDIS 6.7 does not accommodate such an architecture because it is based upon several implicit assumptions:
 
@@ -49,7 +49,7 @@ For more information about cellular architecture and the differences between Win
 
 The following figure shows an abstract model of a modem.
 
-![Relationship of Modem, Executors, and Slots](images/multi-SIM_3_majorObjectsAndOperations.png "Relationship of Modem, Executors, and Slots")
+![Relationship of Modem, Executors, and Slots.](images/multi-SIM_3_majorObjectsAndOperations.png "Relationship of Modem, Executors, and Slots")
 
 Each modem is identified by a globally unique identifier (GUID) and contains a set of one or more executors, each of which is capable of independent registration on a cellular network. Each executor has an associated executor index, an integer, beginning with 0 for the first executor. In addition, the modem exposes one or more slots that may contain UICC cards. It is assumed is that the number of slots is greater than or equal to the number of executors. Each slot has an associated index, also beginning with 0, and a current state related to the power state of the slot and availability state of a card in the slot (if any).
 
@@ -63,9 +63,9 @@ For non-Windows Mobile operating systems, a multi-executor modem appears as one 
 
 The following two diagrams show the difference in executor-specific commands and notifications (the first diagram), where commands and notifications go through and come from the same executor, and modem-specific commands and notifications (the second diagram), where commands may go through any executor and come from any executor.
 
-![Executor-specific commands and notifications](images/multi-SIM_4_executorSpecificCommands.png "Executor-specific commands and notifications")
+![Executor-specific commands and notifications.](images/multi-SIM_4_executorSpecificCommands.png "Executor-specific commands and notifications")
 
-![Modem-specific commands and notifications](images/multi-SIM_4_modemSpecificCommands.png "Modem-specific commands and notifications")
+![Modem-specific commands and notifications.](images/multi-SIM_4_modemSpecificCommands.png "Modem-specific commands and notifications")
 
 All OID set or query requests issued to a miniport instance are executed against the modem and executor with which the miniport instance is associated. Likewise, all unsolicited notifications and unsolicited Device Service events sent from a miniport instance are applicable to the modem and the executor with which the miniport instance is associated. For example, an unsolicited NDIS_STATUS_WWAN_REGISTER_STATE or NDIS_STATUS_WWAN_PACKET_SERVICE notification from a miniport indicates the registration (or packet service state) of the associated modem and the executor only and is unrelated to the state of other modem(s) or other executor(s). 
 
@@ -79,13 +79,13 @@ The Windows 10 desktop WMBCLASS driver follows the specification outlined in the
 
 ## OIDs for Set and Query Requests
 
-To query the number of devices (executors) and slots in the modem, as well as the number of executors that may be active concurrently, the host uses [OID_WWAN_SYS_CAPS](https://go.microsoft.com/fwlink/p/?linkid=841265).
+To query the number of devices (executors) and slots in the modem, as well as the number of executors that may be active concurrently, the host uses [OID_WWAN_SYS_CAPS](./oid-wwan-sys-caps.md).
 
-To query the capability of an executor, the host uses [OID_WWAN_DEVICE_CAPS_EX](https://go.microsoft.com/fwlink/p/?linkid=841266).
+To query the capability of an executor, the host uses [OID_WWAN_DEVICE_CAPS_EX](./oid-wwan-device-caps-ex.md).
 
-To define the slot that is bound to each executor or query the current mapping, the host uses [OID_WWAN_DEVICE_SLOT_MAPPINGS](https://go.microsoft.com/fwlink/p/?linkid=841267).
+To define the slot that is bound to each executor or query the current mapping, the host uses [OID_WWAN_DEVICE_SLOT_MAPPINGS](./oid-wwan-device-slot-mappings.md).
 
-To query the status of a particular slot on the modem, the host uses [OID_WWAN_SLOT_INFO_STATUS](https://go.microsoft.com/fwlink/p/?linkid=841268).
+To query the status of a particular slot on the modem, the host uses [OID_WWAN_SLOT_INFO_STATUS](./oid-wwan-slot-info-status.md).
 
 ## Per-device and Per-executor Commands
 
@@ -133,7 +133,7 @@ With the addition of the executor concept to non-Windows Mobile devices in Windo
 |  | OID_WWAN_SLOT_INFO_STATUS |
 
 > [!NOTE]
-> [OID_WWAN_RADIO_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-radio-state) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
+> [OID_WWAN_RADIO_STATE](./oid-wwan-radio-state.md) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
 
 ## MBIM Interface Update for Multi-SIM Operations
 
@@ -149,7 +149,7 @@ When there are multiple modems and/or multiple executors in a device, non-execut
 
 The following diagram illustrates the information flow between the WWANSVC and MBIM functions in two different modems.
 
-![Modem structure with MBIM functions](images/multi-SIM_10_MBIMspecification.png "Modem structure with MBIM functions")
+![Modem structure with MBIM functions.](images/multi-SIM_10_MBIMspecification.png "Modem structure with MBIM functions")
 
 This section contains the detailed modem-wide and per-executor CID descriptions for the defined device services. The definitions reference back to existing public MBIM1.0 specification. An MBIM-compliant device implements and reports the following device service when queried by CID_MBIM_DEVICE_SERVICES. The existing well-known services are defined in section 10.1 of the USB NCM MBIM 1.0 specification. Microsoft extends this to define the following service.
 
@@ -190,7 +190,7 @@ Not applicable.
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_SYS_CAPS_INFO | Not applicable |
@@ -226,7 +226,7 @@ The *ModemId* field denotes the unique 64-bit identifier for a given modem hardw
 
 #### Status Codes
 
-This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064)).
+This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement)).
 
 ### MBIM_CID_MS_DEVICE_CAPS_V2
 
@@ -238,7 +238,7 @@ This CID continues to be query-only and will return a MBIM_MS_DEVICE_CAPS_INFO_V
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_DEVICE_CAPS_INFO_V2 | Not applicable |
@@ -302,7 +302,7 @@ Not applicable.
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | Not applicable | Not applicable |
 | Response | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | Not applicable |
@@ -356,7 +356,7 @@ The Event InformationBuffer contains an MBIM_MS_SLOT_INFO structure. The functio
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_MS_SLOT_INFO_REQ | Not applicable |
 | Response | Not applicable | MBIM_MS_SLOT_INFO | MBIM_MS_SLOT_INFO |
@@ -398,6 +398,24 @@ The following MBIM_MS_UICCSLOT_STATE structure describes the possible states of 
 | UICCSlotStateActiveEsim | 7 | The card in the slot is an eSIM with an active profile and is ready to accept commands. |
 | UICCSlotStateActiveEsimNoProfiles | 8 | The card in the slot is an eSIM with no profiles (or no active profiles) and is ready to accept commands. |
 
+##### MBIM_MS_UICCSLOT_STATE transition guidance for multi-sim devices
+
+Conforming to the correct UICC slot state transitions ensures that the OS handles all changes properly and displays the correct toast notifications to the user.
+
+For the *SIM inserted* toast notification, the OS expects the embedded slot (SIM2/Slot 1) to be selected and the following state transition to occur upon the insertion of a SIM in the physical slot (SIM1/Slot 0).
+
+| Possible values of Slot 0 before SIM insertion | Possible values of Slot 0 after SIM insertion |
+| --- | --- |
+| UICCSlotStateEmpty | UICCSlotStateActive |
+| UICCSlotStateOffEmpty | <ul><li>UICCSlotStateActiveEsim</li><li>UICCSlotStateActiveEsimNoProfile</li></ul> |
+
+For the *SIM removed* toast notification, the OS expects the physical slot (SIM1/Slot 0) to be selected with a SIM inserted and the following state transition to occur upon the removal of the SIM from the physical slot (SIM1/Slot 0).
+
+| Possible values of Slot 0 before SIM removal | Possible values of Slot 0 after SIM removal |
+| --- | --- |
+| UICCSlotStateActive | UICCSlotStateEmpty |
+| <ul><li>UICCSlotStateActiveEsim</li><li>UICCSlotStateActiveEsimNoProfile</li></ul> | UICCSlotStateOffEmpty |
+
 #### Status Codes
 
 This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of the public USB MBIM standard).
@@ -414,3 +432,156 @@ Most of the MBIM CIDs map or relate to NDIS OIDs, but there are a few commands t
 |  | CID_MBIM_MSNETWORKIDLEHINT |
 |  | CID_MBIM_MULTICARRIER_CURRENT_CID_LIST |
 
+## Dual SIM Single Active
+
+Dual SIM single active (DSSA) is the only form of multi-SIM operation that is fully supported in Windows 10. DSSA allows for two SIM cards to be used with the modem, with the restriction that only one SIM can be active at any given time. 
+
+### Architecture/Flow
+ 
+![DSSA flow diagram.](images/DSSA-flow.png)
+
+### Slot Switch Behavior
+
+If DSSA is supported on the device, there are some scenarios where slot switch is performed either automatically or prompted by the user via notification toasts.
+
+**Out-of-Box Experience (OOBE)**
+- During OOBE, WwanSvc may perform a slot remap based on the state of the physical slot. If the physical slot is empty, then the embedded slot is selected. If the physical slot has a SIM, the physical slot is selected.
+
+**SIM Removal**
+- If the SIM is removed from the physical slot and the physical slot is the currently selected slot, a toast is displayed asking the user if they want to switch to the embedded slot.
+- If the user selects "Yes" then the slot is switched.
+
+![SIM removal flow.](images/SIM_removal.png)
+
+**SIM Insert**
+- If auto-switch is enabled via regkey:
+    - If the SIM is inserted in the physical slot while the selected slot is embedded, the slot is automatically switched to the physical slot and a toast is displayed informing the user about the switch.
+    - The toast has a button that opens the settings page.
+- If auto-switch is disabled via regkey
+    - If the SIM is inserted in the physical slot while the selected slot is embedded, a toast is displayed asking if the user wants switch to the physical slot.
+    - If user selects "Yes" then the slot is switched.
+
+![SIM insertion flow.](images/SIM_insert.png)
+
+## Hardware Lab Kit (HLK) Tests
+
+See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx).
+
+In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestSlot](/windows-hardware/test/hlk/testref/defddebe-cc40-4d6f-9b0c-ca5ca9a1cb4d). This test contains the following four tests:
+
+| Test Name | Description |
+|---|---|
+| QuerySlotMapping | This test verifies the test can successfully query devcie slot mapping. |
+| SetSlotMapping | This test verifies the test can successfully set device slot mapping. |
+| QuerySlotInfo | This test verifies the test can successfully query device slot information. |
+| ValidateSlotInfoState | This test validates UICC Slot state against ReadyInfoState. |
+
+Alternatively, you can run the **TestSlot** HLK testlist by [**netsh-mbn**](/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
+
+```
+netsh mbn test feature=dssa testpath="C:\data\test\bin" taefpath="C:\data\test\bin" param="AccessString=internet"
+```
+
+This file showing the HLK test results should have been generated in the directory that the 'netsh mbn test' command was ran from: `TestSlot.htm`.
+
+### Log Analysis
+
+1. Logs can be collected and decoded using these instructions: [MB Collecting Logs](mb-collecting-logs.md)
+1. Open the .txt file in the [TextAnalysisTool](mb-analyzing-logs.md)
+1. Load the [DSSA filter](mb-dssa-filter.md)
+
+Here is an example log for querying and setting slot mappings:
+```
+  1619 [5]6C6C.0824::01/09/2020-10:57:17.118 [WwanDimCommon]QUERY OID_WWAN_DEVICE_CAPS_EX (e01012e), RequestId 11, Status 340001
+  1673 [5]6C6C.0824::01/09/2020-10:57:17.118 [WwanDimCommon]QUERY OID_WWAN_SYS_CAPS (e01012d), RequestId 21, Status 340001
+  2488 [5]6C6C.2738::01/09/2020-10:57:17.120 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_DEVICE_CAPS_EX (0x4004103f)
+  2520 [5]6C6C.2738::01/09/2020-10:57:17.120 [WwanDimCommon]    SSERVICE_CAPS_MULTI_SIM     : Supported
+  2669 [2]6C6C.2738::01/09/2020-10:57:17.121 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_SYS_CAPS_INFO (0x4004102c)
+  2679 [2]6C6C.2738::01/09/2020-10:57:17.121 [WwanDimCommon]    NumberOfExecutors 0x1
+  2680 [2]6C6C.2738::01/09/2020-10:57:17.121 [WwanDimCommon]    NumberOfSlots 0x2
+  3497 [5]6C6C.0824::01/09/2020-10:57:17.125 [WwanDimCommon]QUERY OID_WWAN_SLOT_INFO_STATUS (e010130), RequestId 42, Status 340001
+  3502 [5]6C6C.0824::01/09/2020-10:57:17.125 [WwanDimCommon]    Slot Index    : 0
+  3531 [5]6C6C.0824::01/09/2020-10:57:17.126 [WwanDimCommon]QUERY OID_WWAN_SLOT_INFO_STATUS (e010130), RequestId 32, Status 340001
+  3536 [5]6C6C.0824::01/09/2020-10:57:17.126 [WwanDimCommon]    Slot Index    : 1
+  6356 [4]6C6C.2738::01/09/2020-10:57:17.133 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+  6890 [4]6C6C.2738::01/09/2020-10:57:17.134 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+  6912 [4]6C6C.2738::01/09/2020-10:57:17.134 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+  6926 [4]6C6C.2738::01/09/2020-10:57:17.134 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_SLOT_INFO (0x4004102e)
+  6934 [4]6C6C.2738::01/09/2020-10:57:17.134 [WwanDimCommon]    SlotIndex     : 0x0
+  6935 [4]6C6C.2738::01/09/2020-10:57:17.134 [WwanDimCommon]    SlotState     :  WwanUiccSlotStateActive (0x5)
+  6955 [4]6C6C.2738::01/09/2020-10:57:17.134 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+  7060 [7]6C6C.2738::01/09/2020-10:57:17.135 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+  7100 [6]6C6C.2738::01/09/2020-10:57:17.135 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_SLOT_INFO (0x4004102e)
+  7108 [6]6C6C.2738::01/09/2020-10:57:17.135 [WwanDimCommon]    SlotIndex     : 0x1
+  7109 [6]6C6C.2738::01/09/2020-10:57:17.135 [WwanDimCommon]    SlotState     :  WwanUiccSlotStateActiveEsimNoProfile (0x8)
+  7140 [6]6C6C.2738::01/09/2020-10:57:17.135 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+  7177 [6]6C6C.2738::01/09/2020-10:57:17.135 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+  8424 [4]6C6C.2738::01/09/2020-10:57:17.137 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+ 10616 [6]6C6C.2738::01/09/2020-10:57:17.145 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+ 12731 [4]6C6C.2738::01/09/2020-10:57:17.149 [WwanDimCommon]QUERY OID_WWAN_SYS_SLOTMAPPINGS (e01012f), RequestId 1e1, Status 340001
+ 12991 [2]6C6C.2738::01/09/2020-10:57:17.150 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_DEVICE_SLOT_MAPPING_INFO (0x4004102d)
+ 13003 [2]6C6C.2738::01/09/2020-10:57:17.150 [WwanDimCommon]        Executor Index 0 is mapped to Uicc Slot Index 0
+123489 [4]6C6C.2738::01/09/2020-10:57:24.048 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+128251 [2]6C6C.2738::01/09/2020-10:57:24.064 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+128317 [2]6C6C.2738::01/09/2020-10:57:24.064 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+128407 [7]6C6C.2738::01/09/2020-10:57:24.064 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+128445 [7]6C6C.2738::01/09/2020-10:57:24.065 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+129265 [5]6C6C.2738::01/09/2020-10:57:24.067 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+129292 [5]6C6C.2738::01/09/2020-10:57:24.067 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+130122 [7]6C6C.2738::01/09/2020-10:57:24.069 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+155583 [2]6C6C.2738::01/09/2020-10:57:26.637 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+159010 [7]6C6C.2738::01/09/2020-10:57:26.644 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+159034 [7]6C6C.2738::01/09/2020-10:57:26.644 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+161963 [7]6C6C.2738::01/09/2020-10:57:26.655 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+161986 [7]6C6C.2738::01/09/2020-10:57:26.655 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+162110 [2]6C6C.2738::01/09/2020-10:57:26.655 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+162355 [4]6C6C.2738::01/09/2020-10:57:26.656 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+162381 [6]6C6C.2738::01/09/2020-10:57:26.656 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+162441 [4]6C6C.2738::01/09/2020-10:57:26.656 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+194294 [6]6C6C.2738::01/09/2020-10:57:28.722 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+200029 [0]6C6C.2738::01/09/2020-10:57:28.738 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+200131 [4]6C6C.2738::01/09/2020-10:57:28.738 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+200354 [7]6C6C.2738::01/09/2020-10:57:28.739 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+200671 [6]6C6C.2738::01/09/2020-10:57:28.739 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+200729 [7]6C6C.2738::01/09/2020-10:57:28.739 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+200864 [1]6C6C.2738::01/09/2020-10:57:28.740 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+201464 [0]6C6C.2738::01/09/2020-10:57:28.741 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+265128 [1]6C6C.2218::01/09/2020-10:57:32.150 [WwanDimCommon]SET OID_WWAN_SYS_SLOTMAPPINGS (e01012f), RequestId a6, Len 10, Status 340001
+265133 [1]6C6C.2218::01/09/2020-10:57:32.150 [WwanDimCommon]    SlotMapListHeader.ElementType    : 0xe
+265134 [1]6C6C.2218::01/09/2020-10:57:32.150 [WwanDimCommon]    SlotMapListHeader.ElementCount    : 0x1
+265135 [1]6C6C.2218::01/09/2020-10:57:32.150 [WwanDimCommon]    Executor Index 0 is mapped to Uicc Slot Index 1
+265523 [6]6C6C.2738::01/09/2020-10:57:32.152 [WwanDimCommon]    ReadyState     : WwanReadyStateOff (0x0)
+270760 [5]6C6C.2738::01/09/2020-10:57:32.171 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_DEVICE_SLOT_MAPPING_INFO (0x4004102d)
+270770 [5]6C6C.2738::01/09/2020-10:57:32.171 [WwanDimCommon]        Executor Index 0 is mapped to Uicc Slot Index 1
+270799 [5]6C6C.2738::01/09/2020-10:57:32.171 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_SLOT_INFO (0x4004102e)
+270807 [5]6C6C.2738::01/09/2020-10:57:32.171 [WwanDimCommon]    SlotIndex     : 0x0
+270808 [5]6C6C.2738::01/09/2020-10:57:32.171 [WwanDimCommon]    SlotState     :  WwanUiccSlotStateEmpty (0x3)
+270827 [5]6C6C.2738::01/09/2020-10:57:32.171 [WwanDimCommon]    ReadyState     : WwanReadyStateFailure (0x4)
+271044 [5]6C6C.2738::01/09/2020-10:57:32.172 [WwanDimCommon]    ReadyState     : WwanReadyStateFailure (0x4)
+271089 [5]6C6C.2738::01/09/2020-10:57:32.172 [WwanDimCommon]    ReadyState     : WwanReadyStateFailure (0x4)
+271130 [5]6C6C.2738::01/09/2020-10:57:32.172 [WwanDimCommon]    ReadyState     : WwanReadyStateSimNotInserted (0x2)
+274729 [7]6C6C.2738::01/09/2020-10:57:32.188 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+283027 [6]6C6C.2738::01/09/2020-10:57:32.211 [WwanDimCommon]    ReadyState     : WwanReadyStateSimNotInserted (0x2)
+323130 [5]6C6C.2738::01/09/2020-10:57:32.352 [WwanDimCommon]    ReadyState     : WwanReadyStateNoEsimProfile (0x7)
+403200 [0]6C6C.2738::01/09/2020-10:57:33.748 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_SLOT_INFO (0x4004102e)
+403208 [0]6C6C.2738::01/09/2020-10:57:33.748 [WwanDimCommon]    SlotIndex     : 0x0
+403209 [0]6C6C.2738::01/09/2020-10:57:33.748 [WwanDimCommon]    SlotState     :  WwanUiccSlotStateActive (0x5)
+407008 [5]6C6C.33A8::01/09/2020-10:57:40.355 [WwanDimCommon]SET OID_WWAN_SYS_SLOTMAPPINGS (e01012f), RequestId 18f, Len 10, Status 340001
+407015 [5]6C6C.33A8::01/09/2020-10:57:40.355 [WwanDimCommon]    SlotMapListHeader.ElementType    : 0xe
+407017 [5]6C6C.33A8::01/09/2020-10:57:40.355 [WwanDimCommon]    SlotMapListHeader.ElementCount    : 0x1
+407018 [5]6C6C.33A8::01/09/2020-10:57:40.355 [WwanDimCommon]    Executor Index 0 is mapped to Uicc Slot Index 0
+407079 [4]6C6C.2738::01/09/2020-10:57:40.355 [WwanDimCommon]    ReadyState     : WwanReadyStateOff (0x0)
+409570 [2]6C6C.2738::01/09/2020-10:57:40.371 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_DEVICE_SLOT_MAPPING_INFO (0x4004102d)
+409580 [2]6C6C.2738::01/09/2020-10:57:40.371 [WwanDimCommon]        Executor Index 0 is mapped to Uicc Slot Index 0
+409591 [5]6C6C.2738::01/09/2020-10:57:40.371 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_SLOT_INFO (0x4004102e)
+409600 [5]6C6C.2738::01/09/2020-10:57:40.371 [WwanDimCommon]    SlotIndex     : 0x1
+409601 [5]6C6C.2738::01/09/2020-10:57:40.371 [WwanDimCommon]    SlotState     :  WwanUiccSlotStateEmpty (0x3)
+411302 [7]6C6C.2738::01/09/2020-10:57:40.385 [WwanDimCommon]    ReadyState     : WwanReadyStateSimNotInserted (0x2)
+416851 [4]6C6C.2738::01/09/2020-10:57:40.510 [WwanDimCommon]    StatusCode    : NDIS_STATUS_WWAN_SLOT_INFO (0x4004102e)
+416859 [4]6C6C.2738::01/09/2020-10:57:40.510 [WwanDimCommon]    SlotIndex     : 0x1
+416860 [4]6C6C.2738::01/09/2020-10:57:40.510 [WwanDimCommon]    SlotState     :  WwanUiccSlotStateActiveEsimNoProfile (0x8)
+418613 [0]6C6C.2738::01/09/2020-10:57:42.632 [WwanDimCommon]    ReadyState     : WwanReadyStateOff (0x0)
+434410 [4]6C6C.2738::01/09/2020-10:57:44.558 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+443914 [7]6C6C.2738::01/09/2020-10:57:44.593 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+529138 [4]6C6C.2738::01/09/2020-10:57:45.270 [WwanDimCommon]    ReadyState     : WwanReadyStateInitialized (0x1)
+```

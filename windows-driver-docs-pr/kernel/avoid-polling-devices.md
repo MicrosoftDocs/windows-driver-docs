@@ -1,7 +1,6 @@
 ---
 title: Avoid Polling Devices
 description: Avoid Polling Devices
-ms.assetid: c50c9c6f-c8eb-4e52-854a-3ebc4fdc874c
 keywords: ["I/O WDK kernel , device polling", "device polling WDK I/O", "polling devices WDK I/O", "loop counters WDK I/O", "counters WDK I/O"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -22,7 +21,7 @@ Nevertheless, some devices still in use were designed to work with old processor
 Although it might seem logical to solve a slow-device problem by coding a simple loop that increments a counter, thereby "wasting" a minimum interval while the device updates registers, such a driver is unlikely to be portable across Windows platforms. The loop counter maximum would require customization for each platform. Furthermore, if the driver is compiled with a good optimizing compiler, the compiler might remove the driver's counter variable and the loop(s) where it is incremented.
 
 **Note**   Follow this implementation guideline if the driver must stall while the device hardware updates state:
-A driver can call [**KeStallExecutionProcessor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-kestallexecutionprocessor) before it reads device registers. The driver should minimize the interval it stalls and should, in general, specify a stall interval no longer than 50 microseconds.
+A driver can call [**KeStallExecutionProcessor**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kestallexecutionprocessor) before it reads device registers. The driver should minimize the interval it stalls and should, in general, specify a stall interval no longer than 50 microseconds.
 
 The granularity of a **KeStallExecutionProcessor** interval is one microsecond.
 
@@ -31,9 +30,4 @@ If the device frequently requires more than 50 microseconds to update state, con
  
 
  
-
- 
-
-
-
 

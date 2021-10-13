@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CLOCK\_INTERVAL\_MARK
 description: Clients enable the KSEVENT\_CLOCK\_INTERVAL\_MARK event to be notified when an initial time value is reached, and then at fixed time increments after that.
-ms.assetid: 5292606e-d0b3-4e64-a236-c1cecf3fd53a
 keywords: ["KSEVENT_CLOCK_INTERVAL_MARK Streaming Media Devices"]
 topic_type:
 - apiref
@@ -23,18 +22,11 @@ Clients enable the KSEVENT\_CLOCK\_INTERVAL\_MARK event to be notified when an i
 
 ### <span id="event_data"></span><span id="EVENT_DATA"></span>Event Data
 
-Use a structure of type [**KSEVENT\_TIME\_INTERVAL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksevent_time_interval) as the *OutBuffer* parameter when calling [**KsSynchronousDeviceControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-kssynchronousdevicecontrol) to register for this event.
+Use a structure of type [**KSEVENT\_TIME\_INTERVAL**](/windows-hardware/drivers/ddi/ks/ns-ks-ksevent_time_interval) as the *OutBuffer* parameter when calling [**KsSynchronousDeviceControl**](/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-kssynchronousdevicecontrol) to register for this event.
 
-Remarks
--------
+## Remarks
 
-For information about how to register for events, see [KS Events](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-events).
-
- 
+For information about how to register for events, see [KS Events](./ks-events.md).
 
  
-
-
-
-
 

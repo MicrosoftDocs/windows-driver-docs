@@ -1,16 +1,17 @@
 ---
 title: UVC Extension Unit Code Samples
-description: UVC Extension Unit Code Samples
-ms.assetid: c4f24646-57ea-4467-ad48-a3e6044658e3
+description: This section contains the UVC Extension Unit code samples
 keywords:
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class
-ms.date: 04/20/2017
+ms.date: 09/17/2021
 ms.localizationpriority: medium
 ---
 
 # UVC Extension Unit Code Samples
 
+> [!IMPORTANT]
+> The content and sample code in the topics listed in this section is outdated and currently unsupported. It may not work with the current driver development toolchain.
 
 This section contains the following topics:
 
@@ -31,11 +32,3 @@ This section contains the following topics:
 [Providing a UVC INF File](providing-a-uvc-inf-file.md)
 
 For more information on UVC drivers in Windows, see [USB Video Class Driver Overview](usb-video-class-driver-overview.md).
-
- 
-
- 
-
-
-
-

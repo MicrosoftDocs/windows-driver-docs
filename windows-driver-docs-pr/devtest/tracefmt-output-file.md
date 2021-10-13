@@ -1,7 +1,6 @@
 ---
 title: Tracefmt Output File
 description: Tracefmt Output File
-ms.assetid: 55c8964c-992f-468c-83ea-0316fcb12110
 keywords:
 - Tracefmt WDK , output files
 - output files WDK Tracefmt
@@ -21,7 +20,7 @@ The Tracefmt output file is optional. You can direct Tracefmt to display the tra
 
 Tracefmt output files are often used as input to other programs that analyze and filter trace messages.
 
-The following is an excerpt of the content of a Tracefmt output file of a trace session with Tracedrv, a sample driver instrumented for software tracing. [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+The following is an excerpt of the content of a Tracefmt output file of a trace session with Tracedrv, a sample driver instrumented for software tracing. [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ```
 EventTrace

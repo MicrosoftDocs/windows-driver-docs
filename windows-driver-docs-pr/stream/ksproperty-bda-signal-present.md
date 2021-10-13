@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_PRESENT
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_PRESENT to determine whether a signal carrier is present.
-ms.assetid: d3dbe0f7-a308-48e2-9751-0131fa2b512d
 keywords: ["KSPROPERTY_BDA_SIGNAL_PRESENT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_PRESENT to determine whether a signal carri
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
 The returned value indicates whether a signal carrier is present. Returns **TRUE** if a signal carrier is present and **FALSE** otherwise. The RF tuner node should provide this indication.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,14 +78,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

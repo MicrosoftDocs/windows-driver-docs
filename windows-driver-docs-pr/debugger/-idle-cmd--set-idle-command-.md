@@ -1,7 +1,6 @@
 ---
 title: .idle_cmd (Set Idle Command)
 description: The .idle_cmd command sets the idle command. This is a command that is executed whenever control returns from the target to the debugger. 
-ms.assetid: 8cfe7aa8-4e31-4e97-b61d-9e8bb1b7be61
 keywords: [".idle_cmd (Set Idle Command) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,8 +59,7 @@ This command cannot be used in script files.
 
  
 
-Remarks
--------
+## Remarks
 
 When **.idle\_cmd** is used with no parameters it displays the current idle command.
 

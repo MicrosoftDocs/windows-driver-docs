@@ -1,7 +1,6 @@
 ---
 title: Introduction to Application Notification
 description: Introduction to Application Notification
-ms.assetid: c115eb29-8bd2-40f7-b979-cff386bdc9aa
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -27,14 +26,9 @@ When a user-mode application receives this notification, it can adjust some or a
 
 -   Load balancing algorithms
 
-A user-mode application can get the amount of physical memory that is in the hardware partition by calling the [GlobalMemoryStatusEx](https://go.microsoft.com/fwlink/p/?linkid=97891) function. For more information about the **GlobalMemoryStatusEx** function, see the Microsoft Windows SDK documentation.
+A user-mode application can get the amount of physical memory that is in the hardware partition by calling the [GlobalMemoryStatusEx](/windows/win32/api/sysinfoapi/nf-sysinfoapi-globalmemorystatusex) function. For more information about the **GlobalMemoryStatusEx** function, see the Microsoft Windows SDK documentation.
 
 A user-mode application must register itself with the operating system to receive application notification. For more information, see [Registering for Application Notification](registering-for-application-notification.md).
 
  
-
- 
-
-
-
 

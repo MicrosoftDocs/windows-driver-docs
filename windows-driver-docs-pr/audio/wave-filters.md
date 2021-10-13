@@ -1,7 +1,6 @@
 ---
 title: Wave Filters
 description: Wave Filters
-ms.assetid: 9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b
 keywords:
 - audio filters WDK audio , wave
 - wave filters WDK audio
@@ -27,7 +26,7 @@ ms.localizationpriority: medium
 ## <span id="wave_filters"></span><span id="WAVE_FILTERS"></span>
 
 
-Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) and [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-waveformatextensible).
+Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) and [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible).
 
 A *wave-rendering* filter receives as input a wave digital audio stream and outputs either an analog audio signal (to a set of speakers or external mixer) or a digital audio stream (to an S/PDIF connector, for example).
 
@@ -58,11 +57,11 @@ A WaveRT filter is implemented as a port/miniport driver pair. In Windows Vista 
 
 -   It instantiates a WaveRT miniport driver object.
 
--   It instantiates a WaveRT port driver object by calling [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewport) with GUID value **CLSID\_PortWaveRT**.
+-   It instantiates a WaveRT port driver object by calling [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) with GUID value **CLSID\_PortWaveRT**.
 
--   It calls the port driver's [**IPort::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveRT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportwavert) and [IMiniportWaveRT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavert) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert) and [IMiniportWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert) interfaces.
 
 For more information, see the [A Wave Port Driver for Real-Time Audio Streaming](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WaveRTport.doc) white paper.
 
@@ -92,15 +91,18 @@ A WavePci filter is implemented as a port/miniport driver pair. A WavePci filter
 
 -   It instantiates a WavePci miniport driver object.
 
--   It instantiates a WavePci port driver object by calling [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewport) with GUID value **CLSID\_PortWavePci**.
+-   It instantiates a WavePci port driver object by calling [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) with GUID value **CLSID\_PortWavePci**.
 
--   It calls the port driver's [**IPort::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWavePci](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536905(v=vs.85)) and [IMiniportWavePci](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavepci) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci) and [IMiniportWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci) interfaces.
 
 For more information, see [Implementation Issues for WavePci Devices](implementation-issues-for-wavepci-devices.md).
 
 ### <span id="wavecyclic_filter"></span><span id="WAVECYCLIC_FILTER"></span>WaveCyclic Filters
+
+> [!NOTE]
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the [Microsoft style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
 
 **Note: WaveCyclic Information for previous versions of Windows**
 
@@ -108,32 +110,27 @@ A WaveCyclic filter is implemented as a port/miniport driver pair. A WaveCyclic 
 
 -   It instantiates a WaveCyclic miniport driver object.
 
--   It instantiates a WaveCyclic port driver object by calling [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewport) with GUID value **CLSID\_PortWaveCyclic**.
+-   It instantiates a WaveCyclic port driver object by calling [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) with GUID value **CLSID\_PortWaveCyclic**.
 
--   It calls the port driver's [**IPort::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveCyclic](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportwavecyclic) and [IMiniportWaveCyclic](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavecyclic) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic) and [IMiniportWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclic) interfaces.
 
-The WaveCyclic filter's cyclic buffer always consists of a contiguous block of virtual memory. The port driver's implementation of the [**IDmaChannel::AllocateBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-allocatebuffer) method always allocates a buffer that is contiguous in both physical and virtual memory address space. If, as mentioned previously, the WaveCyclic device's DMA engine imposes additional constraints on the buffer memory, the miniport driver is free to implement its own buffer-allocation method to meet these constraints.
+The WaveCyclic filter's cyclic buffer always consists of a contiguous block of virtual memory. The port driver's implementation of the [**IDmaChannel::AllocateBuffer**](/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-allocatebuffer) method always allocates a buffer that is contiguous in both physical and virtual memory address space. If, as mentioned previously, the WaveCyclic device's DMA engine imposes additional constraints on the buffer memory, the miniport driver is free to implement its own buffer-allocation method to meet these constraints.
 
-A WaveCyclic miniport driver that asks for a large buffer (for example, eight physically contiguous memory pages) should be prepared to settle for a smaller buffer size if the operating system denies the original request. An audio device might occasionally be unloaded and reloaded to rebalance system resources (see [Stopping a Device to Rebalance Resources](https://docs.microsoft.com/windows-hardware/drivers/kernel/stopping-a-device-to-rebalance-resources)).
+A WaveCyclic miniport driver that asks for a large buffer (for example, eight physically contiguous memory pages) should be prepared to settle for a smaller buffer size if the operating system denies the original request. An audio device might occasionally be unloaded and reloaded to rebalance system resources (see [Stopping a Device to Rebalance Resources](../kernel/stopping-a-device-to-rebalance-resources.md)).
 
-A WaveCyclic device with built-in, bus-mastering DMA hardware is called a *master device*. Alternatively, a WaveCyclic device can be a *subordinate device* with no built-in DMA-hardware capabilities. A subordinate device has to rely on the system DMA controller to perform any data transfers that it requires. For more information about master and subordinate devices, see [IDmaChannel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-idmachannel) and [IDmaChannelSlave](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-idmachannelslave).
+A WaveCyclic device with built-in, bus-mastering DMA hardware is called a *master device*. Alternatively, a WaveCyclic device can be a *subordinate device* with no built-in DMA-hardware capabilities. A subordinate device has to rely on the system DMA controller to perform any data transfers that it requires. For more information about master and subordinate devices, see [IDmaChannel](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel) and [IDmaChannelSlave](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannelslave).
 
 A WaveCyclic miniport driver can implement its own DMA-channel object instead of using the default DMA-channel object, which is created by one of the port driver's New*Xxx*DmaChannel methods:
 
-[**IPortWaveCyclic::NewMasterDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavecyclic-newmasterdmachannel)
+[**IPortWaveCyclic::NewMasterDmaChannel**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavecyclic-newmasterdmachannel)
 
-[**IPortWaveCyclic::NewSlaveDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavecyclic-newslavedmachannel)
+[**IPortWaveCyclic::NewSlaveDmaChannel**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavecyclic-newslavedmachannel)
 
-The adapter driver's custom [IDmaChannel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-idmachannel) implementation can perform custom handling of data to meet special hardware constraints. For example, the Windows Multimedia functions use wave formats in which 16-bit samples are always signed values, but the audio-rendering hardware might be designed to use unsigned 16-bit values instead. In this case, the driver's custom [**IDmaChannel::CopyTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-copyto) method can be written to convert the signed source values to the unsigned destination values that the hardware requires. Although this technique can be useful for working around hardware-design flaws, it can also incur a significant cost in software overhead.
+The adapter driver's custom [IDmaChannel](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel) implementation can perform custom handling of data to meet special hardware constraints. For example, the Windows Multimedia functions use wave formats in which 16-bit samples are always signed values, but the audio-rendering hardware might be designed to use unsigned 16-bit values instead. In this case, the driver's custom [**IDmaChannel::CopyTo**](/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-copyto) method can be written to convert the signed source values to the unsigned destination values that the hardware requires. Although this technique can be useful for working around hardware-design flaws, it can also incur a significant cost in software overhead.
 
-For an example of a driver that implements its own DMA-channel object, see the Sb16 sample audio adapter in the WDK. If the constant OVERRIDE\_DMA\_CHANNEL is defined to be **TRUE**, the conditional compilation statements in the source code enable the implementation of a proprietary [IDmaChannel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-idmachannel) object, which the driver uses in place of the default IDmaChannel object from the IPortWaveCyclic::New*Xxx*DmaChannel call.
-
- 
+For an example of a driver that implements its own DMA-channel object, see the Sb16 sample audio adapter in earlier versions of the WDK. If the constant OVERRIDE\_DMA\_CHANNEL is defined to be **TRUE**, the conditional compilation statements in the source code enable the implementation of a proprietary [IDmaChannel](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel) object, which the driver uses in place of the default IDmaChannel object from the IPortWaveCyclic::New*Xxx*DmaChannel call.
 
  
-
-
-
 

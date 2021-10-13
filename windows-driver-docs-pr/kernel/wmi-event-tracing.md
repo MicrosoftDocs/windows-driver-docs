@@ -1,7 +1,6 @@
 ---
 title: WMI Event Tracing
 description: WMI Event Tracing
-ms.assetid: 72505a9a-830a-4529-ba73-31af0fedfeec
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "WMI WDK kernel , WDM drivers", "WDM drivers WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -21,21 +20,21 @@ Trace events are defined in the same manner as other WMI events. WMI events are 
 
 The process by which kernel-mode drivers log information is integrated into the existing WMI infrastructure. To log trace events, a driver does the following:
 
-1.  Register as a WMI provider by calling [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiregistrationcontrol).
+1.  Register as a WMI provider by calling [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol).
 
-2.  Mark events as traceable by setting WMIREG\_FLAG\_TRACED\_GUID in the **Flags** member of the [**WMIREGGUID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-wmiregguidw) structure that is passed when the driver registers events with WMI.
+2.  Mark events as traceable by setting WMIREG\_FLAG\_TRACED\_GUID in the **Flags** member of the [**WMIREGGUID**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw) structure that is passed when the driver registers events with WMI.
 
 3.  Specify one event as the control event for overall enabling/disabling of a set of trace events by setting WMIREG\_FLAG\_TRACE\_CONTROL\_GUID in the **Flags** member of the **WMIREGGUID** structure that is passed when the driver registers events with WMI.
 
-4.  Upon receiving a request from WMI to enable events where the GUID matches the trace control GUID, the driver should store the handle to the logger. The value will be needed when writing an event. For information about how to use this handle, see step 6. The logger handle value is contained in the **HistoricalContext** member of the [**WNODE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-_wnode_header) portion of the WMI buffer that is part of the parameters in the enable events request.
+4.  Upon receiving a request from WMI to enable events where the GUID matches the trace control GUID, the driver should store the handle to the logger. The value will be needed when writing an event. For information about how to use this handle, see step 6. The logger handle value is contained in the **HistoricalContext** member of the [**WNODE\_HEADER**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-_wnode_header) portion of the WMI buffer that is part of the parameters in the enable events request.
 
-5.  Decide whether the trace event will be sent to WMI event consumers or is targeted for the WMI event logger only. This will determine where the memory for the [**EVENT\_TRACE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff544329) structure should come from. This memory will eventually be passed to [**IoWMIWriteEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiwriteevent).
+5.  Decide whether the trace event will be sent to WMI event consumers or is targeted for the WMI event logger only. This will determine where the memory for the [**EVENT\_TRACE\_HEADER**](/previous-versions/ff544329(v=vs.85)) structure should come from. This memory will eventually be passed to [**IoWMIWriteEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent).
 
     If the event is a log event only, the memory will not be deleted by WMI. In this case, the driver should pass in a buffer on the stack or should be reusing an allocated buffer for this purpose. For performance reasons, the driver should minimize any unnecessary calls to allocate or free memory. Failure to comply with this recommendation will compromise the integrity of the timing information contained in the log file.
 
     If the event is to be sent to both the logger and to WMI event consumers, then the memory must be allocated from a nonpaged pool. In this case the event will be sent to the logger and then forwarded to WMI to be sent to WMI event consumers who have requested notification of the event. The memory for the event will then be freed by WMI according to the behavior of **IoWMIWriteEvent**.
 
-6.  After the memory for the [**EVENT\_TRACE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff544329) and any driver event data, if any, has been secured, the following information should be set:
+6.  After the memory for the [**EVENT\_TRACE\_HEADER**](/previous-versions/ff544329(v=vs.85)) and any driver event data, if any, has been secured, the following information should be set:
 
     Set the **Size** member to the sizeof(**EVENT\_TRACE\_HEADER**) plus the size of any additional driver event data that will be appended on to the end of **EVENT\_TRACE\_HEADER**.
 
@@ -49,14 +48,9 @@ The process by which kernel-mode drivers log information is integrated into the 
 
     Finally cast the **EVENT\_TRACE\_HEADER** to a **WNODE\_HEADER** and set the **HistoricalContext** value of the **Wnode** to the logger handle that was saved in step 4 above.
 
-7.  Call [**IoWMIWriteEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiwriteevent) with the pointer to the **EVENT\_TRACE\_HEADER** structure.
+7.  Call [**IoWMIWriteEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent) with the pointer to the **EVENT\_TRACE\_HEADER** structure.
 
 The driver should continue logging trace events associated with the control GUID until the driver receives notification to disable event logging via an **IRP\_MN\_DISABLE\_EVENTS** request.
 
  
-
- 
-
-
-
 

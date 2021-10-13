@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_SecurityCapabilities WMI Class
 description: MSiSCSI\_SecurityCapabilities WMI Class
-ms.assetid: 50f7aa98-0743-4775-808b-c5a90dc1d0fe
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -48,13 +47,7 @@ class MSiSCSI_SecurityCapabilities {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_SecurityCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsicfg/ns-iscsicfg-_msiscsi_securitycapabilities) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_SecurityCapabilities**](/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_securitycapabilities) data structure.
 
  
-
- 
-
-
-
-
 

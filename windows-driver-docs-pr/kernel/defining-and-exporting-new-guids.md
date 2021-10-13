@@ -1,7 +1,6 @@
 ---
 title: Defining and Exporting New GUIDs
 description: Defining and Exporting New GUIDs
-ms.assetid: a7deb283-7cab-4f3c-ad96-f8085222456e
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "exporting GUIDs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -73,7 +72,7 @@ You define a new GUID for an item the driver exports to other system components,
 
     Putting a GUID definition outside statements that prevent multiple inclusion does not cause multiple instances of the GUID in a driver because **DEFINE\_GUID** defines the GUID as an EXTERN\_C variable. Multiple declarations of an EXTERN variable are allowed as long as the types match.
 
-4.  When creating a GUID for a new [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) or [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes), the following rules apply:
+4.  When creating a GUID for a new [device setup class](../install/overview-of-device-setup-classes.md) or [device interface class](../install/overview-of-device-interface-classes.md), the following rules apply:
     -   Do not use a single GUID to identify both a device setup class and a device interface class.
 
     -   When creating a symbolic name to associate with the GUID, use the following convention:
@@ -83,9 +82,4 @@ You define a new GUID for an item the driver exports to other system components,
         For device interface classes, use the format GUID\_DEVINTERFACE\_*XXX*.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
-title: help
+title: help (WinDbg)
 description: The help extension displays help text that describes the extension commands exported from the extension DLL.
-ms.assetid: 9d01856e-4906-43cb-a445-71cce011a973
 keywords: ["help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,8 +41,7 @@ Displays only the help text for the specified command. This feature is not suppo
 
 This extension is supported by most extension DLLs.
 
-Remarks
--------
+## Remarks
 
 Some individual commands will also display a help text if you use the **/?** or **-?** parameter with the command name.
 

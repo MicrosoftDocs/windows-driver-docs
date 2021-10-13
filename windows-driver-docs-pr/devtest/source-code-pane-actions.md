@@ -1,7 +1,6 @@
 ---
 title: Source Code Pane Actions
 description: Source Code Pane Actions
-ms.assetid: 0512e468-7c43-4f72-9029-9cf84028f94a
 keywords:
 - Static Driver Verifier Report WDK , Source Code pane
 - Source Code pane WDK Static Driver Verifier

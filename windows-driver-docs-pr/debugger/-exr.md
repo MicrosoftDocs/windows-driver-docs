@@ -1,7 +1,6 @@
 ---
-title: exr
+title: exr (WinDbg)
 description: exr
-ms.assetid: b7ba5e47-07f1-4835-af87-022ddd3857f2
 keywords: ["exr extension (obsolete)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

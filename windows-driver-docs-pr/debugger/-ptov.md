@@ -1,7 +1,6 @@
 ---
-title: ptov
+title: ptov (WinDbg)
 description: The ptov extension displays the entire physical-to-virtual map for a given process.
-ms.assetid: 82352d12-4e81-4746-9333-b2cc98eb7a9d
 keywords: ["ptov Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,8 +48,7 @@ Specifies the directory base for the process. To determine the directory base, u
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example. First, use [**.process**](-process--set-process-context-.md) and [**!process**](-process.md) to determine the directory base of the current process:
 

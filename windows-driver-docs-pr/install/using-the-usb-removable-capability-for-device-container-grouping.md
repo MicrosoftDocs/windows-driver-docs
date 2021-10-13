@@ -1,7 +1,6 @@
 ---
 title: Using the USB Removable Capability for Device Container Grouping
 description: Using the USB Removable Capability for Device Container Grouping
-ms.assetid: ed78a544-1035-4b99-b27c-90ebef2ed710
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

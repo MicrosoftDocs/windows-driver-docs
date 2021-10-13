@@ -1,7 +1,6 @@
 ---
 title: SRB\_WRITE\_DATA
 description: SRB\_WRITE\_DATA
-ms.assetid: f7867185-3f1b-4c83-b23a-5b2b4ce6e484
 keywords: ["SRB_WRITE_DATA Streaming Media Devices"]
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_srb_write_data_ks"></span><span id="DDK_SRB_WRITE_DATA_KS"></span>
 
 
-The class driver has received a write request for the minidriver. The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array of [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header) structures, which together describe the data buffer. The value of *pSrb*-&gt;**CommandData**.**NumberOfBuffers** specifies the size of the array. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure.
+The class driver has received a write request for the minidriver. The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array of [**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structures, which together describe the data buffer. The value of *pSrb*-&gt;**CommandData**.**NumberOfBuffers** specifies the size of the array. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure.
 
 ### <span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -40,11 +39,4 @@ Indicates that a hardware failure occurred.
 [**SRB\_SET\_STREAM\_STATE**](srb-set-stream-state.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Building a WIA Minidriver
 description: Building a WIA Minidriver
-ms.assetid: 7a13d355-f42e-406d-8cba-4739df1af9fa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -36,11 +35,11 @@ All WIA minidrivers must include the header files that are shown in the followin
 </tr>
 <tr class="even">
 <td><p><em>stiusd.h</em></p></td>
-<td><p>Defines the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image/index" data-raw-source="[IStiUSD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image/index)">IStiUSD</a> interface that all WIA minidrivers must implement.</p></td>
+<td><p>Defines the <a href="/windows-hardware/drivers/ddi/_image/index" data-raw-source="[IStiUSD](/windows-hardware/drivers/ddi/_image/index)">IStiUSD</a> interface that all WIA minidrivers must implement.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>wiamindr.h</em></p></td>
-<td><p>Defines the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv" data-raw-source="[IWiaMiniDrv](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv)">IWiaMiniDrv</a> interface that all WIA minidrivers must implement. Other interfaces used by the WIA minidriver are defined here as well.</p></td>
+<td><p>Defines the <a href="/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv" data-raw-source="[IWiaMiniDrv](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv)">IWiaMiniDrv</a> interface that all WIA minidrivers must implement. Other interfaces used by the WIA minidriver are defined here as well.</p></td>
 </tr>
 </tbody>
 </table>
@@ -79,11 +78,4 @@ WIA uses the library files that are shown in the following table. All minidriver
  
 
 In your build environment, the WDK *Include* and *Lib* directories should be the first directories in the search path. This ensures that you are using the most recent versions of headers and library files.
-
- 
-
- 
-
-
-
 

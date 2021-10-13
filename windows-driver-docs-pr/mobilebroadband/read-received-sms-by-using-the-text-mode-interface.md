@@ -1,7 +1,6 @@
 ---
 title: Read received SMS by using the text-mode interface
 description: Read received SMS by using the text-mode interface
-ms.assetid: 5e095fc0-59bf-4ec4-96a3-efe6f4ae054f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

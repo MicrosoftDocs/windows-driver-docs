@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR property specifies the rolloff factor for a 3D listener.
-ms.assetid: 3eef80ef-921b-4364-b31d-14a62f305f5d
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_ROLLOFFFACTOR Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR property specifies the roll
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>FLOAT</p></td>
 </tr>
 </tbody>
@@ -61,15 +60,13 @@ The property value (operation data) is of type FLOAT and specifies the rolloff f
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 Rolloff is the amount of attenuation that is applied to sounds, based on the listener's distance from the sound source. A rolloff factor of zero means that no attenuation is applied to a sound regardless of its distance from the listener. Factors larger than 1 exaggerate the real-world attenuation of sound with distance.
 
 DirectSound uses this property to implement the **IDirectSound3DListener::GetRolloffFactor** and **IDirectSound3DListener::SetRolloffFactor** methods, which are described in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,14 +84,5 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
-
- 
-
- 
-
-
-
-
-
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 

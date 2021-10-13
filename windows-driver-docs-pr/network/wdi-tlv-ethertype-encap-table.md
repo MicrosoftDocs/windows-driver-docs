@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ETHERTYPE_ENCAP_TABLE
 description: WDI_TLV_ETHERTYPE_ENCAP_TABLE is a TLV that contains the Ethertype encapsulations for the association.
-ms.assetid: BAAC7E5B-F13F-4AC8-A3F9-76197F92C7E3
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ETHERTYPE_ENCAP_TABLE Network Drivers Starting with Windows Vista
@@ -28,12 +27,11 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                                                       | Description                                                                                                                                                                  |
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ns-wditypes-_wdi_ethertype_encapsulation_entry)\[\] | An array of [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ns-wditypes-_wdi_ethertype_encapsulation_entry) elements that specifies the Ethertype encapsulations for the association. |
+| [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_ethertype_encapsulation_entry)\[\] | An array of [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_ethertype_encapsulation_entry) elements that specifies the Ethertype encapsulations for the association. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

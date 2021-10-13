@@ -1,7 +1,6 @@
 ---
 title: SO_RCVBUF
 description: SO_RCVBUF
-ms.assetid: 218b52ac-95ee-4047-ad75-76d6ae6ab14e
 ms.date: 08/08/2017
 keywords: 
  -SO_RCVBUF Network Drivers Starting with Windows Vista
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 The SO\_RCVBUF socket option determines the size of a socket's receive buffer that is used by the underlying transport. This socket option applies only to listening sockets, datagram sockets, and connection-oriented sockets.
 
-To set the value of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the value of this socket option, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -118,8 +117,7 @@ The default size of a socket's receive buffer is transport-specific. Some transp
 
 If this socket option is set on a listening socket, all incoming connections that are accepted on that listening socket have their receive buffer set to the same size that is specified for the listening socket. A WSK application can call the **WskControlSocket** function on an accepted socket to override the size of the receive buffer that was inherited from the listening socket.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -139,9 +137,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

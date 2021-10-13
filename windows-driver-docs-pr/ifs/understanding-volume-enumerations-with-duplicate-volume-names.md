@@ -1,7 +1,6 @@
 ---
 title: Understanding Volume Enumerations with Duplicate Volume Names
 description: Understanding Volume Enumerations with Duplicate Volume Names
-ms.assetid: c05982dc-4124-4f9a-93b8-0e56ac296d1b
 keywords:
 - volumes WDK file system , duplicate names
 - volumes WDK file system , enumerating
@@ -17,9 +16,9 @@ ms.localizationpriority: medium
 
 When enumerating volumes, it is possible for duplicate volume names to appear in a resulting volume information list.
 
-To help understand why this can occur, consider the following scenario: the volume enumeration routine [**FltEnumerateVolumeInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltenumeratevolumeinformation) is used to enumerate all system volumes. This results in a buffer filled with volume information structures - one for each volume known to filter manager. In this buffer, each volume information structure can be of type [**FILTER\_VOLUME\_BASIC\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltuserstructures/ns-fltuserstructures-_filter_volume_basic_information) or [**FILTER\_VOLUME\_STANDARD\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltuserstructures/ns-fltuserstructures-_filter_volume_standard_information), but not both.
+To help understand why this can occur, consider the following scenario: the volume enumeration routine [**FltEnumerateVolumeInformation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltenumeratevolumeinformation) is used to enumerate all system volumes. This results in a buffer filled with volume information structures - one for each volume known to filter manager. In this buffer, each volume information structure can be of type [**FILTER\_VOLUME\_BASIC\_INFORMATION**](/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_filter_volume_basic_information) or [**FILTER\_VOLUME\_STANDARD\_INFORMATION**](/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_filter_volume_standard_information), but not both.
 
-Given this list of volume information structures, it is possible for multiple list elements to contain the same volume name. That is, the **FilterVolumeName** members of two or more list elements could be identical. This is possible because all filter manager enumeration routines, such as [**FltEnumerateVolumes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltenumeratevolumes), enumerate volumes including those that have been dismounted but have not been torn-down (due to the fact that open files still exist on the volume). Thus, when a volume becomes dismounted, its name can appear more than once in a volume information list - once for its current mounted state and once for its prior dismounted but non-torn-down state, in the simplest case.
+Given this list of volume information structures, it is possible for multiple list elements to contain the same volume name. That is, the **FilterVolumeName** members of two or more list elements could be identical. This is possible because all filter manager enumeration routines, such as [**FltEnumerateVolumes**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltenumeratevolumes), enumerate volumes including those that have been dismounted but have not been torn-down (due to the fact that open files still exist on the volume). Thus, when a volume becomes dismounted, its name can appear more than once in a volume information list - once for its current mounted state and once for its prior dismounted but non-torn-down state, in the simplest case.
 
 If duplicate volume names appear in a volume information list, each group of identical names is explained by the above description. However, it is possible to confirm the above scenario by using the following procedures:
 
@@ -33,24 +32,19 @@ If duplicate volume names appear in a volume information list, each group of ide
 
 Routines and structures affected by this topic include the following:
 
-[**FILTER\_VOLUME\_BASIC\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltuserstructures/ns-fltuserstructures-_filter_volume_basic_information)
+[**FILTER\_VOLUME\_BASIC\_INFORMATION**](/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_filter_volume_basic_information)
 
-[**FILTER\_VOLUME\_STANDARD\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltuserstructures/ns-fltuserstructures-_filter_volume_standard_information)
+[**FILTER\_VOLUME\_STANDARD\_INFORMATION**](/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_filter_volume_standard_information)
 
-[**FilterVolumeFindFirst**](https://docs.microsoft.com/windows/desktop/api/fltuser/nf-fltuser-filtervolumefindfirst)
+[**FilterVolumeFindFirst**](/windows/win32/api/fltuser/nf-fltuser-filtervolumefindfirst)
 
-[**FilterVolumeFindNext**](https://docs.microsoft.com/windows/desktop/api/fltuser/nf-fltuser-filtervolumefindnext)
+[**FilterVolumeFindNext**](/windows/win32/api/fltuser/nf-fltuser-filtervolumefindnext)
 
-[**FltEnumerateVolumeInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltenumeratevolumeinformation)
+[**FltEnumerateVolumeInformation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltenumeratevolumeinformation)
 
-[**FltEnumerateVolumes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltenumeratevolumes)
+[**FltEnumerateVolumes**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltenumeratevolumes)
 
-[**FltGetVolumeInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetvolumeinformation)
-
- 
+[**FltGetVolumeInformation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetvolumeinformation)
 
  
-
-
-
 

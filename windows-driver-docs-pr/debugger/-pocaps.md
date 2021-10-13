@@ -1,7 +1,6 @@
 ---
-title: pocaps
+title: pocaps (WinDbg)
 description: The pocaps extension displays the power capabilities of the target computer.
-ms.assetid: 011d923a-a5c4-4d3b-ba06-fe5dc884adaa
 keywords: ["pocaps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,8 +49,7 @@ The **!pocaps** extension displays the power capabilities of the target computer
 
 To view the system's power policy, use the [**!popolicy**](-popolicy.md) extension command. For information about power capabilities and power policy, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of this command's output:
 

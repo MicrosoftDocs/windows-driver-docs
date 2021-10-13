@@ -1,7 +1,6 @@
 ---
 title: scsikd.classext
 description: The scsikd.classext extension displays the specified class Plug and Play (PnP) device.
-ms.assetid: 2b56966c-7ae1-4d44-ad60-19f31e47efff
 keywords: ["scsikd.classext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,8 +55,7 @@ Specifies the amount of detail to display. This parameter can take 0, 1, or 2 as
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!scsikd.classext** display:
 

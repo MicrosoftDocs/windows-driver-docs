@@ -1,7 +1,6 @@
 ---
 title: Introduction to COSA/APN database
 description: Introduction to COSA/APN database
-ms.assetid: 0E3DA610-090D-4D1E-B67E-A4747252E8BE
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
@@ -20,5 +19,5 @@ The following topics present further information about APNs, COSA, and APN datab
 - [APN elements](apn-elements.md)
 - [COSA overview](cosa-overview.md)
 - [APN database overview](apn-database-overview.md)
-- [COSA/APN database submission](cosa-apn-database-submission.md)
+- [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md)
 

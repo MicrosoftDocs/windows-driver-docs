@@ -1,8 +1,7 @@
 ---
 title: Native Debugger Objects in JavaScript Extensions
 description: Native debugger objects represent various constructs and behaviors of the debugger environment. The objects can be passed into (or acquired in) JavaScript extensions.
-ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE8
-ms.date: 09/07/2019
+ms.date: 02/02/2021
 ms.localizationpriority: medium
 ---
 
@@ -95,35 +94,46 @@ The presence of a host.namedModelParent object within the returned array indicat
 
 The following debugger extension points are integral to the debugger and available to be used by script providers such as JavaScript.
 
-|                                |                                                                                              |
-|--------------------------------|----------------------------------------------------------------------------------------------|
-| Debugger.Models.Sessions       | The list of sessions (targets) that the debugger is attached to                              |
-| Debugger.Models.Session        | An individual session (target) that the debugger is attached to (live user mode, KD, etc...) |
-| Debugger.Models.Processes      | The list of processes within a session                                                       |
-| Debugger.Models.Threads        | The list of threads within a process                                                         |
-| Debugger.Models.Thread         | An individual thread within a process (regardless of whether user or kernel mode)            |
-| Debugger.Models.Stack          | The stack of a thread                                                                        |
-| Debugger.Models.StackFrames    | The collection of frames which make up a stack                                               |
-| Debugger.Models.StackFrame     | An individual stack frame within a stack                                                     |
-| Debugger.Models.LocalVariables | The local variables within a stack frame                                                     |
-| Debugger.Models.Parameters     | The parameters for a call within a stack frame                                               |
-| Debugger.Models.Module         | An individual module within the address space of a process                                   |
+**Debugger.Models.Sessions**: The list of sessions (targets) that the debugger is attached to
+
+**Debugger.Models.Session**: An individual session (target) that the debugger is attached to (live user mode, KD, etc...)
+
+**Debugger.Models.Processes**: The list of processes within a session
+
+**Debugger.Models.Threads**: The list of threads within a process
+
+**Debugger.Models.Thread**: An individual thread within a process (regardless of whether user or kernel mode)
+
+**Debugger.Models.Stack**: The stack of a thread
+
+**Debugger.Models.StackFrames**: The collection of frames which make up a stack
+
+**Debugger.Models.StackFrame**: An individual stack frame within a stack
+
+**Debugger.Models.LocalVariables**: The local variables within a stack frame
+
+**Debugger.Models.Parameters**: The parameters for a call within a stack frame
+
+**Debugger.Models.Module**: An individual module within the address space of a process
 
  
-
-**Addtional Data Model Objects**
+**Additional Data Model Objects**
 
 In addition, there are some additional data model objects that are defined by the core data model.
 
-|                                             |                                                               |
-|---------------------------------------------|---------------------------------------------------------------|
-| DataModel.Models.Intrinsic                  | An intrinsic value (ordinals, floats, etc...)                 |
-| DataModel.Models.String                     | A string                                                      |
-| DataModel.Models.Array                      | A native array                                                |
-| DataModel.Models.Guid                       | A GUID                                                        |
-| DataModel.Models.Error                      | An error object                                               |
-| DataModel.Models.Concepts.Iterable          | Applied to every object which is iterable                     |
-| DataModel.Models.Concepts.StringDisplayable | Applied to every object which has a display string conversion |
+**DataModel.Models.Intrinsic**: An intrinsic value (ordinals, floats, etc...)
+
+**DataModel.Models.String**: A string
+
+**DataModel.Models.Array**: A native array
+
+**DataModel.Models.Guid**: A GUID
+
+**DataModel.Models.Error**: An error object
+
+**DataModel.Models.Concepts.Iterable**: Applied to every object which is iterable
+
+**DataModel.Models.Concepts.StringDisplayable**: Applied to every object which has a display string conversion
 
  
 
@@ -174,7 +184,6 @@ There can be multiple processes (whether attached to such in user mode or under 
 
 `this.__process = process;`
 
- 
 
 ```javascript
 class comNamespace
@@ -345,10 +354,9 @@ Here is the process information available in user mode before loading this exten
     Modules  
 ```
 
-Load the JavaScript scripting provider and the extension.
+Load the JavaScript extension.
 
 ```dbgcmd
-0:000:x86> !load jsprovider.dll
 0:000:x86> .scriptload C:\JSExtensions\GipTableAbstractor.js
 JavaScript script successfully loaded from 'C:\JSExtensions\GipTableAbstractor.js'
 ```
@@ -438,6 +446,8 @@ Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d              
     [3]              : intelppm!MWaitIdle+0x18 (fffff805`0e351348) 
 …
 ```
+
+
 
 ## <span id="related_topics"></span>Related topics
 

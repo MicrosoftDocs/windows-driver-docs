@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x69 IO1_INITIALIZATION_FAILED
 description: The IO1_INITIALIZATION_FAILED bug check has a value of 0x00000069. This bug check indicates that the initialization of the I/O system failed for some reason.
-ms.assetid: 1f150598-d008-41d0-8b2a-ef59bc5e5e6c
 keywords: ["Bug Check 0x69 IO1_INITIALIZATION_FAILED", "IO1_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,8 +26,7 @@ The IO1\_INITIALIZATION\_FAILED bug check has a value of 0x00000069. This bug ch
 
 None
 
-Cause
------
+## Cause
 
 There is very little information available to analyze this error.
 

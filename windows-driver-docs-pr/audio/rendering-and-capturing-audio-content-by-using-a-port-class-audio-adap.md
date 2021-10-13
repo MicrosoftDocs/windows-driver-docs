@@ -1,7 +1,6 @@
 ---
 title: Rendering and Capturing Audio Using a Port Class Audio Adapter
 description: Rendering and Capturing Audio Using a Port Class Audio Adapter
-ms.assetid: a6f47f94-eaff-47bf-b9e5-fc6d4b8d25fd
 keywords:
 - port class adapter drivers WDK audio
 ms.date: 04/20/2017
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 The following figure shows a configuration of a port class audio adapter driver that renders and captures audio content.
 
-![diagram illustrating rendering and capturing audio content by using a port class audio adapter driver](images/portcls.png)
+![diagram illustrating rendering and capturing audio content by using a port class audio adapter driver.](images/portcls.png)
 
 See the following for a description of the Microsoft Windows Driver Model (WDM) audio components:
 

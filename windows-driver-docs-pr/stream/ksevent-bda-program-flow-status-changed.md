@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED
 description: Clients use KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED to request notification when status on program information changes.
-ms.assetid: 4d4041ba-2330-4dc5-aa8b-3ea8cb1b27e7
 keywords: ["KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,8 +30,7 @@ KSEVENT
 
 A KSEVENTDATA structure that describes how to notify about the event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -50,22 +48,13 @@ Requirements
 ## See also
 
 
-[**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](./ksevent-structure.md)
 
-[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)
+[**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
 [**KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM**](ksproperty-bda-ca-remove-program.md)
 
 [**KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS**](ksproperty-bda-ca-set-program-pids.md)
 
 [**KSPROPERTY\_BDA\_ECM\_MAP\_STATUS**](ksproperty-bda-ecm-map-status.md)
-
- 
-
- 
-
-
-
-
-
 

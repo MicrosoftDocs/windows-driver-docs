@@ -1,7 +1,6 @@
 ---
 title: Installing Device Metadata Packages through an Application
 description: Installing Device Metadata Packages through an Application
-ms.assetid: 3fec5938-b81b-4efe-8bcd-b2ef4b1c4b8b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 To install device metadata packages in the [device metadata store](device-metadata-store.md) by using an application, such as a device installation application, follow these steps:
 
-1.  The application first queries the path of the [device metadata store](device-metadata-store.md) by calling the [SHGetKnownFolderPath](https://go.microsoft.com/fwlink/p/?linkid=145428) function. The [KNOWNFOLDERID](https://go.microsoft.com/fwlink/p/?linkid=145429) GUID for the device metadata store is {5CE4A5E9-E4EB-479D-B89F-130C02886155}.
+1.  The application first queries the path of the [device metadata store](device-metadata-store.md) by calling the [SHGetKnownFolderPath](/windows/win32/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath) function. The [KNOWNFOLDERID](/previous-versions//bb762584(v=vs.85)) GUID for the device metadata store is {5CE4A5E9-E4EB-479D-B89F-130C02886155}.
 
 2.  The application then copies the device metadata package to the device metadata store by calling the [CopyFile]( https://go.microsoft.com/fwlink/p/?linkid=189596) function.
 
@@ -33,13 +32,3 @@ When your application copies the device metadata package to the [device metadata
 
 
 After the device metadata package is installed in the [device metadata store](device-metadata-store.md), the [Device Metadata Retrieval Client](device-metadata-retrieval-client.md) (DMRC) accesses the device metadata package and presents the device information to the Devices and Printers user interface.
-
-
-
-
-
-
-
-
-
-

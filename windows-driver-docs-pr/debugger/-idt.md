@@ -1,9 +1,8 @@
 ---
-title: idt
+title: idt (WinDbg)
 description: The idt extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT).
-ms.assetid: 6b289fde-85a3-4a40-8354-db6861ca8cb2
 keywords: ["ISR (interrupt service routine)", "IDT (interrupt dispatch table)", "idt Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 topic_type:
 - apiref
 api_name:
@@ -55,18 +54,13 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
-
 This extension command can only be used with an x64-based or x86-based target computer.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about ISRs and IDTs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-For more information about how to display the interrupt vector tables on an Itanium target computer, see [**!ivt**](-ivt.md).
-
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

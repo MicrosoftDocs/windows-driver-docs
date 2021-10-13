@@ -1,7 +1,6 @@
 ---
 title: Error Injection
 description: Error Injection
-ms.assetid: d97d49bc-b216-40d6-afd1-aecff624624d
 keywords:
 - Windows Hardware Error Architecture WDK , error injection
 - WHEA WDK , error injection
@@ -21,12 +20,7 @@ The PSHED exposes an interface to the operating system through which the Windows
 
 For more information about how to implement a PSHED plug-in that participates in error injection, see [Participating in Error Injection](participating-in-error-injection.md).
 
-User-mode management applications can inject errors into the hardware platform by calling the [WHEA Management API](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
+User-mode management applications can inject errors into the hardware platform by calling the [WHEA Management API](/windows-hardware/drivers/ddi/_whea/). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
 
  
-
- 
-
-
-
 

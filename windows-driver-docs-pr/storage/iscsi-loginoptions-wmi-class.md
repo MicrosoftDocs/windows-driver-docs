@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_LoginOptions WMI Class
 description: ISCSI\_LoginOptions WMI Class
-ms.assetid: dc05f8e9-599d-4963-98a8-64e1d23c37a1
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -68,13 +67,7 @@ class ISCSI_LoginOptions {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_LoginOptions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsidef/ns-iscsidef-_iscsi_loginoptions) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_LoginOptions**](/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_loginoptions) data structure.
 
  
-
- 
-
-
-
-
 

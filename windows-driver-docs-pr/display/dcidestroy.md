@@ -1,7 +1,6 @@
 ---
 title: DCIDestroy
 description: DCIDestroy
-ms.assetid: 446a14ee-075e-4390-be89-99cad3e9a8b9
 keywords: ["DCIDestroy Display Devices"]
 topic_type:
 - apiref

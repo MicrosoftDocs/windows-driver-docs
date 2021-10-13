@@ -1,5 +1,5 @@
 ---
-Description: Reading Resource Data
+description: Reading Resource Data
 title: Reading Resource Data
 ms.date: 04/20/2017
 ms.localizationpriority: medium

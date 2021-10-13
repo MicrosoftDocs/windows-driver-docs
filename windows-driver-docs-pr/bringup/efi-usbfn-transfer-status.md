@@ -1,18 +1,15 @@
 ---
 title: EFI_USBFN_TRANSFER_STATUS
-description: EFI_USBFN_TRANSFER_STATUS
-ms.assetid: 60631dad-a617-4ed4-a975-5e480cf324e3
-ms.date: 04/20/2017
+description: The EFI_USBFN_TRANSFER_STATUS enumeration indicates the USB transfer status.
+ms.date: 08/23/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_USBFN\_TRANSFER\_STATUS
+# EFI_USBFN_TRANSFER_STATUS
 
-
-This enumeration indicates the USB transfer status.
+The **EFI_USBFN_TRANSFER_STATUS** enumeration indicates the USB transfer status.
 
 ## Syntax
-
 
 ```cpp
 typedef enum _EFI_USBFN_TRANSFER_STATUS 
@@ -27,31 +24,21 @@ typedef enum _EFI_USBFN_TRANSFER_STATUS
 
 ## Constants
 
-
-<a href="" id="usbtransferstatusunknown"></a>**UsbTransferStatusUnknown**  
+**UsbTransferStatusUnknown**  
 Transfer status is unknown.
 
-<a href="" id="usbtransferstatuscomplete"></a>**UsbTransferStatusComplete**  
+**UsbTransferStatusComplete**  
 Transfer complete.
 
-<a href="" id="usbtransferstatusaborted"></a>**UsbTransferStatusAborted**  
+**UsbTransferStatusAborted**  
 Transfer was aborted.
 
-<a href="" id="usbtransferstatusactive"></a>**UsbTransferStatusActive**  
+**UsbTransferStatusActive**  
 Transfer is active.
 
-<a href="" id="usbtransferstatusnone"></a>**UsbTransferStatusNone**  
+**UsbTransferStatusNone**  
 Transfer has no status.
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

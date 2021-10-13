@@ -1,30 +1,21 @@
 ---
 title: Slicer settings
 description: The configuration file XML contains a number of settings that need to be adjusted for a specific 3D Printer device to control the print capabilities exposed to the 3D Print Dialog in Windows.
-ms.assetid: 9203AABB-48D9-47A6-A2B1-7A878BF82FD1
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
 # Slicer settings
 
-
 The configuration file XML contains a number of settings that need to be adjusted for a specific 3D Printer device to control the print capabilities exposed to the 3D Print Dialog in Windows. These settings also control Microsoft 3D Slicer (MS3DPrinterRenderFilter.DLL and dependencies) running parameters.  
 
-## Slicer settings
-
+## Slicer settings (XML path)
 
 <table>
 
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-
 <thead>
 <tr class="header">
-<th>Setting (XML Path)</th>
+<th>Setting (XML path)</th>
 <th>Change</th>
 <th>Description</th>
 </tr>
@@ -43,7 +34,6 @@ The configuration file XML contains a number of settings that need to be adjuste
 <td><p>Print volume in microns, defined by width (x max), depth (y max), and height (z max).</p>
 <p>The volume should represent the capabilities of the physical device, as one of the tests in the certification phase when publishing the driver ensures the printer can use the declared volume.</p></td>
 </tr>
-
 
 <tr>
 <td><p>psk3d:Job3DOutputArea\ </p>
@@ -236,7 +226,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3dx:precommands\ </p>
 <p>psk3dx:command</p></td>
 <td><p>Yes</p></td>
-<td><p>The set of G-Code commands to send at the start of each job, generally to initialize the 3D printer, like homing and heating up the extruder to the final temperature and priming the extruder. Each device has different required pre-commands. Each line of G-Code should appear in a child &lt;command&gt; element. Variables that are to be replaced by the referenced setting can be declared as the name delimited by ‘$’ characters, for example, &lt;command&gt;M104 <em>S$extrudertemperature$</em>&lt;/command&gt;. Refer to the next section for the built-in variables.</p></td>
+<td><p>The set of G-Code commands to send at the start of each job, generally to initialize the 3D printer, like homing and heating up the extruder to the final temperature and priming the extruder. Each device has different required pre-commands. Each line of G-Code should appear in a child &lt;command&gt; element. Variables that are to be replaced by the referenced setting can be declared as the name delimited by '$' characters, for example, &lt;command&gt;M104 <em>S$extrudertemperature$</em>&lt;/command&gt;. Refer to the next section for the built-in variables.</p></td>
 </tr>
 
 <tr>
@@ -554,65 +544,17 @@ The configuration file XML contains a number of settings that need to be adjuste
 </tbody>
 </table>
 
+> [!NOTE]
+> In the print node's settings (psk3dx:MS3DPrinter\\psk3dx:print\\psk3dx:{quality}\), the {quality} element name is replaced by one of the corresponding psk3d:Quality Print Schema 3D Keyword settings sent in the PrintTicket along with the print job. This allows each quality level to define its own set of slicer settings. If the PrintTicket is omitted, the slicer will use the \[quality\] setting marked with the attribute default="true", so exactly one quality level should always define this attribute.
 
-**Note** In the print node's settings (psk3dx:MS3DPrinter\\psk3dx:print\\psk3dx:{quality}\), the {quality} element name is replaced by one of the corresponding psk3d:Quality Print Schema 3D Keyword settings sent in the PrintTicket along with the print job. This allows each quality level to define its own set of slicer settings. If the PrintTicket is omitted, the slicer will use the \[quality\] setting marked with the attribute default="true", so exactly one quality level should always define this attribute.
+## Slicer settings (name)
 
-<table>
-
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-
-<thead>
-<tr class="header">
-<th>Setting name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td><p>$extrudertemperature$</p>
-<p>$extruder2temperature$</p></td>
-<td><p>The temperature of the first and respectively the second extruder, as specified by &lt;psk3dx:extrudertemperature&gt; in the Materials section in the XML. These variables are being deprecated and being replaced by $MaterialSetup$.</p></td>
-</tr>
-
-<tr>
-<td><p>$platformtemperature$</p></td>
-<td><p>The temperature of the heated bed as specified by the &lt;psk3dx:platformtemperature&gt; entry in the last material in the list.</p></td>
-</tr>
-
-<tr>
-<td><p>$MaterialSetup<n>$</p></td>
-<td><p>The material setup section &lt;psk3dx:SetupCommands&gt; in materials. For example $MaterialSetup3$ represents the 3rd material in the list, typically the 3rd extruder.</p></td>
-</tr>
-
-<tr>
-<td><p>$rampup$</p></td>
-<td><p>This is a variable that can be 0..255 and scales with Z axis and is controlled by the &lt;psk3dx:rampuptarget&gt; in the slicer quality settings.</p>
-<p>For example a command "M106 S$rampup$" turns on the fan gradually as the Z axis increases. If the &lt;psk3dx:rampuptarget&gt; is set to 500 microns, the value of the variable would be  0 on the first layer, and 255 once the layer is at 500 microns or above.</p>
-<p>This variable is intended to support for better print adhesion on heated print beds but it can be used in any command.</p></td>
-</tr>
-
-<tr>
-<td><p>;?ack=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to change the command ACK pattern (the printer response) from the default 'ok' to something temporary, for example ";?ack=Writing to file" would tell the driver to wait for a confirmation the printer is ready to write to the internal storage.</p></td>
-</tr>
-
-<tr>
-<td><p>;?err=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to look for an additional error pattern in the printer response, in addition to the default 'error'. For example “;?err=open failed” would tell the driver to fail if such a response is received (in this example the hardware would return this response if the internal SD card storage was not initialized or full).</p></td>
-</tr>
-
-<tr>
-<td><p>;?wait=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to ignore the pattern, this is typically used for keep alive signals, and the default value is ‘;?wait=wait’.</p></td>
-</tr>
-
-</tbody>
-</table>
-
-
-
-
+| Setting name | Description |
+|--|--|
+| \$extrudertemperature\$, \$extruder2temperature\$ | The temperature of the first and respectively the second extruder, as specified by &lt;psk3dx:extrudertemperature&gt; in the Materials section in the XML. These variables are being deprecated and being replaced by \$MaterialSetup\$. |
+| \$platformtemperature\$ | The temperature of the heated bed as specified by the &lt;psk3dx:platformtemperature&gt; entry in the last material in the list. |
+| \$MaterialSetup*x*\$ | Where *x* is a single digit. The material setup section &lt;psk3dx:SetupCommands&gt; in materials. For example, \$MaterialSetup3\$ represents the 3rd material in the list, typically the 3rd extruder. |
+| \$rampup\$ | This is a variable that can be in the range of 0 - 255. It scales with Z axis and is controlled by the &lt;psk3dx:rampuptarget&gt; in the slicer quality settings. For example, a command "M106 S\$rampup\$" turns on the fan gradually as the Z axis increases. If the &lt;psk3dx:rampuptarget&gt; is set to 500 microns, the value of the variable would be  0 on the first layer, and 255 once the layer is at 500 microns or above. This variable is intended to provide support for better print adhesion on heated print beds but it can be used in any command. |
+| ;?ack=&lt;pattern&gt; | This setting instructs the driver to change the command ACK pattern (the printer response) from the default 'ok' to something temporary, for example ";?ack=Writing to file" would tell the driver to wait for a confirmation the printer is ready to write to the internal storage. |
+| ;?err=&lt;pattern&gt; | This setting instructs the driver to look for an additional error pattern in the printer response, in addition to the default 'error'. For example ";?err=open failed" would tell the driver to fail if such a response is received (in this example the hardware would return this response if the internal SD card storage was not initialized or full). |
+| ;?wait=&lt;pattern&gt; | This setting instructs the driver to ignore the pattern, this is typically used for keep alive signals, and the default value is ';?wait=wait'. |

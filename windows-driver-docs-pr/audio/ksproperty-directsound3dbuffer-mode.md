@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_MODE
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_MODE property specifies the processing mode of a 3D sound buffer.
-ms.assetid: a3b15544-c534-47ea-a02e-5c8f9ccee414
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_MODE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_DIRECTSOUND3DBUFFER\_MODE property specifies the processing mode
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -69,8 +68,7 @@ The meaning of these parameters is explained in the Microsoft Windows SDK docume
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_MODE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 For additional information about the processing mode for a DirectSound 3D buffer, see the following in the Windows SDK documentation:
 
@@ -78,8 +76,7 @@ For additional information about the processing mode for a DirectSound 3D buffer
 
 -   The **IDirectSound3DBuffer::GetMode** and **IDirectSound3DBuffer::SetMode** methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -97,14 +94,5 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
-
- 
-
- 
-
-
-
-
-
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 

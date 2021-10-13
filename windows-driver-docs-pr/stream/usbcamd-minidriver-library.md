@@ -1,7 +1,6 @@
 ---
-title: USBCAMD Minidriver Library
-description: USBCAMD Minidriver Library
-ms.assetid: 4447bf3d-5eaa-4de7-96bb-22dae68b44eb
+title: USBCAMD minidriver library
+description: USBCAMD minidriver Library
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
 - Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library
@@ -9,12 +8,11 @@ keywords:
 - USBCAMD2 minidriver library WDK Windows 2000 Kernel Streaming
 - USB-based streaming cameras WDK USBCAMD2
 - cameras WDK USBCAMD2
-ms.date: 04/20/2017
+ms.date: 06/19/2020
 ms.localizationpriority: medium
 ---
 
-# USBCAMD Minidriver Library
-
+# USBCAMD minidriver library
 
 USBCAMD2 is a kernel-mode minidriver library that simplifies driver development for USB-based streaming cameras. The USBCAMD2 minidriver library interfaces with the Stream class (*stream.sys*) and USB bus drivers so that you can focus on implementing support for the camera's properties and image processing.
 
@@ -26,11 +24,11 @@ The minidriver library manages the data stream on the USB bus from the device, w
 
 The camera minidriver is responsible for:
 
--   Implementing support for kernel streaming properties, such as [PROPSETID\_VIDCAP\_VIDEOPROCAMP](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videoprocamp) and [PROPSETID\_VIDCAP\_CAMERACONTROL](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol).
+- Implementing support for kernel streaming properties, such as [PROPSETID\_VIDCAP\_VIDEOPROCAMP](./propsetid-vidcap-videoprocamp.md) and [PROPSETID\_VIDCAP\_CAMERACONTROL](./propsetid-vidcap-cameracontrol.md).
 
--   Determining whether the data stream is valid and part of the current or next video frame in the camera minidriver's [*CamProcessUSBPacketEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-pcam_process_packet_routine_ex) callback function.
+- Determining whether the data stream is valid and part of the current or next video frame in the camera minidriver's [*CamProcessUSBPacketEx*](/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-pcam_process_packet_routine_ex) callback function.
 
--   Extracting video frames from the stream and performing processing on video frames before they are returned to the calling application in the camera minidriver's [*CamProcessRawVideoFrameEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-pcam_process_raw_frame_routine_ex) callback function.
+- Extracting video frames from the stream and performing processing on video frames before they are returned to the calling application in the camera minidriver's [*CamProcessRawVideoFrameEx*](/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-pcam_process_raw_frame_routine_ex) callback function.
 
 The original USBCAMD minidriver library is supported on Windows 98 as *usbcamd.sys*, but is not supported on Windows 2000. USBCAMD2 is supported on Windows 2000 and later and on Windows Millennium Edition and later as both *usbcamd.sysand usbcamd2.sys*. Neither the original USBCAMD minidriver library nor USBCAMD2 are supported on 64-bit platforms.
 
@@ -38,18 +36,10 @@ For Windows 2000 and later and Windows Millennium Edition and later operating sy
 
 You can use the *usbintel* example camera minidriver as a starting point. This sample is available in the Driver Development Kit (DDK) and Windows Driver Kit (WDK) for Windows XP through Windows 7 (Build 7600). The WDK installs this sample to *src\\wdm\\videocap\\usbintel* (if it was selected as an option to install).
 
-**Additional Resources**
+## Additional Resources
 
-Developers should familiarize themselves with the material in [Kernel Streaming](kernel-streaming.md), [Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index), and [Video Capture Devices](video-capture-devices.md).
+Developers should familiarize themselves with the material in [Kernel Streaming](kernel-streaming.md), [Streaming Minidrivers](/windows-hardware/drivers/ddi/_stream/index), and [Video Capture Devices](video-capture-devices.md).
 
-For additional developer information, including the USB specifications, see [USB-IF Developers Area](https://go.microsoft.com/fwlink/p/?linkid=8781).
+For additional developer information, including the USB specifications, see [USB-IF Developers Area](https://www.usb.org/developers).
 
-For general or consumer information, see [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780).
-
- 
-
- 
-
-
-
-
+For general or consumer information, see [USB Implementers Forum](https://www.usb.org/).

@@ -1,7 +1,6 @@
 ---
 title: eulaYesButton XML Element
 description: eulaYesButton XML Element
-ms.assetid: 7d91d3ec-af0a-4b6a-83d8-fa14a527378b
 keywords: ["eulaYesButton XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # eulaYesButton XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **eulaYesButton** XML element customizes the text that is associated with the accept option button on a DPInst EULA page.
 
@@ -87,11 +86,4 @@ If a **eulaYesButton** element is not specified, DPInst displays the default opt
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

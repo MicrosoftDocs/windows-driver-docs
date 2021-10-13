@@ -1,43 +1,45 @@
 ---
 title: Creating a "Hello World" WIA Minidriver UI Extension
 description: Creating a "Hello World" WIA Minidriver UI Extension
-ms.assetid: 8de1f8ca-f618-44d7-b6dd-c02cdee8a556
-ms.date: 04/20/2017
+ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---
 
 # Creating a "Hello World" WIA Minidriver UI Extension
 
-
-
-
-
 A WIA minidriver UI extension is a simple DLL that exports a few functions and implements at least one of the four following COM interface identifiers (IID):
 
-<a href="" id="iid-iwiauiextension"></a>IID\_IWiaUIExtension  
+**IID\_IWiaUIExtension**
+
 The interface identifier (IID) for the **IWiaUIExtension** interface. This is the standard WIA interface used to replace the minidriver device icon in My Computer and in Control Panel, and replace the Microsoft common minidriver UI dialogs.
 
-<a href="" id="iid-ishellextinit"></a>IID\_IShellExtInit  
-The IID for the **IShellExtInit** interface. This is the standard Windows Shell interface used to initialize Shell extensions for property sheets, shortcut menus, and drag-and-drop handlers (extensions that add items to shortcut menus during nondefault drag-and-drop operations).
+**IID\_IShellExtInit**
 
-<a href="" id="iid-icontextmenu"></a>IID\_IContextMenu  
+The IID for the **IShellExtInit** interface. This is the standard Windows Shell interface used to initialize Shell extensions for property sheets, shortcut menus, and drag-and-drop handlers (extensions that add items to shortcut menus during non-default drag-and-drop operations).
+
+**IID\_IContextMenu**
+
 The IID for the **ContextMenu** interface. This is the standard Windows Shell interface used to create or merge a shortcut menu associated with a Shell object (the WIA minidriver icon in My Computer and in Control Panel).
 
-<a href="" id="iid-ishellpropsheet"></a>IID\_IShellPropSheet  
+**IID\_IShellPropSheet**
+
 The IID for the **IShellPropSheet** interface. This is the standard Windows Shell interface used to add or replace pages in the property sheet displayed for a Shell object (the WIA minidriver icon in My Computer and Control Panel).
 
 The "Hello World" WIA minidriver UI extension consists of the following files:
 
-<a href="" id="hellowld-inf"></a>*hellowld.inf*  
+*hellowld.inf*
+
 This is the installation file (modified to install this UI extension with the original *hellowld* sample).
 
-<a href="" id="hellowldui-def"></a>*hellowldui.def*  
+*hellowldui.def*
+
 This is the definition file containing the two COM exports, **DllGetClassObject** and **DllCanUnloadNow** (both are described in the Windows SDK documentation).
 
-<a href="" id="hellowldui-cpp"></a>*hellowldui.cpp*  
+*hellowldui.cpp*
+
 This is the WIA UI extension implementation.
 
-### Installing WIA UI extensions
+## Installing WIA UI extensions
 
 To install a WIA UI extension DLL, add **UI Class ID=**{&lt;CLSID of the DLL of your UI extension&gt;} to the INF file under the **DeviceData** section. This CLSID allows clients to call **CoCreateInstance** (described in the Microsoft Windows SDK documentation), and to obtain the supported interfaces of your WIA UI extension.
 
@@ -347,14 +349,6 @@ extern "C" STDAPI DllGetClassObject(REFCLSID rclsid,REFIID riid,LPVOID *ppv)
 }
 ```
 
-### Adding a Custom Device Icon
+## Adding a Custom Device Icon
 
 The preceding sample is an example of how to replace the default icon for your device. Replacing the default icon can be an ideal way to guide the user in using the correct device if there is more than one device installed. It will be more intuitive for the user if the icon resembles the attached device.
-
- 
-
- 
-
-
-
-

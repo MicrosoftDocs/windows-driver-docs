@@ -1,7 +1,6 @@
 ---
 title: Rendering and Capturing Wave Content
 description: Rendering and Capturing Wave Content
-ms.assetid: 575499a9-e572-4ccc-bcee-8f2843310b05
 keywords:
 - wave rendering WDK audio
 - wave capturing WDK audio
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The following figure shows the configuration of Microsoft Windows Driver Model (WDM) audio components that render and capture wave content.
 
-![diagram illustrating rendering and capturing wave content](images/wave.png)
+![diagram illustrating rendering and capturing wave content.](images/wave.png)
 
 See the following for a description of the WDM audio components:
 

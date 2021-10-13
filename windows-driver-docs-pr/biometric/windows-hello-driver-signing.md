@@ -1,7 +1,6 @@
 ---
 title: Windows Hello fingerprint driver signature process
 description: Windows Hello fingerprint driver signature process
-ms.assetid: 803f4326-32ce-44b4-a2fb-6c6f245c3728
 keywords:
 - biometric drivers WDK , windows hello
 - signing biometric drivers
@@ -22,13 +21,14 @@ The biometric signature enforcement date is 6/1/2017, after which drivers that d
 
 ### Step One: Create a biometric driver
 Follow the instructions here to create a biometric driver: 
-https://docs.microsoft.com/windows/desktop/SecBioMet/biometric-service-api-portal
+
+[Windows Biometric Framework](/windows/desktop/SecBioMet/biometric-service-api-portal)
 
 ### Step Two: Test your sensor and self-validate
 Self validate the sensor and driver to ensure they meet Microsoft’s biometric requirements and report findings in the Fingerprint Security Review Template. Documents for the requirements and template can be found within the Fingerprint partner package on Connect. If you do not have access to Connect, contact your Microsoft representative.
 
 ### Step Three: Modify the driver configuration xml file
-When you submit your driver, the Windows 10, version 1703 Fingerprint HLK test will check to ensure that the <vendorCompliance> and <securityReview> tag are included with the following fields:
+When you submit your driver, the Windows 10, version 1703 Fingerprint HLK test will check to ensure that the `<vendorCompliance>` and `<securityReview>` tag are included with the following fields:
 
 **bugId**: ID number for the previous HLK submission that contains the previously approved security review information or 0 if the submission is undergoing an entirely new security review.
 
@@ -100,10 +100,8 @@ The driver configuration xml should be included in the driver package that is su
 ## Related topics
 
 
-[Windows Hello face authentication](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-face-authentication)
+[Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication)
 
-[Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
+[Windows Hello](/windows-hardware/design/device-experiences/windows-hello)
 
-[Biometric Devices Design Guide](https://docs.microsoft.com/windows-hardware/drivers/biometric/)
-
-
+[Biometric Devices Design Guide](./index.md)

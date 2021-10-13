@@ -1,7 +1,6 @@
 ---
 title: SymProxy
 description: SymProxy
-ms.assetid: c0b122fe-4996-4659-a3f1-95831605c0b3
 keywords: ["symbols, SymProxy (symproxy.dll)", "symbol stores, HTTP", "symbol stores, SymProxy (symproxy.dll)", "SymProxy"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 You can configure your HTTP-based symbol store to act as a proxy between client computers and other symbol stores. The implementation is through an Internet Server Application Programming Interface (ISAPI) filter called SymProxy (Symproxy.dll). The SymProxy server can be used as a gateway computer to the Internet or other sources within your company network. The following diagram shows an example SymProxy configuration.
 
-![diagram of an example symproxy configuration](images/symproxy-configuration.png)
+![diagram of an example symproxy configuration.](images/symproxy-configuration.png)
 
 SymProxy is useful in many situations. For example:
 
@@ -62,7 +61,7 @@ If the symbol file is not found, the Microsoft Symbol Store is queried using a (
 SRV*D:\SymStore\Symbols*https://msdl.microsoft.com/download/symbols
 ```
 
-If the file is still not found, the Contoso Symbol Store (https://symbols.contoso.com/symbols) is queried using a (generated) symbol path of:
+If the file is still not found, the Contoso Symbol Store `(https://symbols.contoso.com/symbols)` is queried using a (generated) symbol path of:
 
 ```dbgcmd
 SRV*D:\SymStore\Symbols*https://symbols.contoso.com/symbols

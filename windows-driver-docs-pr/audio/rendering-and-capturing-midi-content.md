@@ -1,7 +1,6 @@
 ---
 title: Rendering and Capturing MIDI Content
 description: Rendering and Capturing MIDI Content
-ms.assetid: 32eff06a-f3e8-471c-8fe6-b7cee208b90c
 keywords:
 - MIDI content rendering WDK audio
 - MIDI content capturing WDK audio
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the relationship between the system-supplied Microsoft Windows Driver Model (WDM) audio components that support rendering and capturing MIDI content.
 
-![diagram illustrating rendering and capturing midi content](images/midi.png)
+![diagram illustrating rendering and capturing midi content.](images/midi.png)
 
 See the following for a description of the Microsoft Windows Driver Model (WDM) audio components:
 

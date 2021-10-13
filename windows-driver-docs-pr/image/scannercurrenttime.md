@@ -1,7 +1,6 @@
 ---
 title: ScannerCurrentTime element
 description: The required ScannerCurrentTime element indicates the current date and time according to the scanner's internal clock.
-ms.assetid: 7103fdb4-dfa4-40b0-b20e-022e2a42bf5c
 keywords: ["ScannerCurrentTime element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScannerCurrentTime** element indicates the current date and time according to the scanner's internal clock.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerCurrentTime>
@@ -27,13 +25,11 @@ Usage
 </wscn:ScannerCurrentTime>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid value for the dateTime type. For more information about dateTime, see XML Schema Part 2: Datatypes Second Edition.**dateTimedateTime**
 
@@ -61,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The scanner's internal clock does not have to be a real-time clock. The clock can start at zero (0001-01-01T00:00:00Z) and start counting up when the device is turned on.
 

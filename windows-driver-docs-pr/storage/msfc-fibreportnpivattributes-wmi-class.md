@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FibrePortNPIVAttributes WMI Class
 description: MSFC\_FibrePortNPIVAttributes WMI Class
-ms.assetid: A778E00A-476C-4763-B652-3312B7913F9C
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -38,15 +37,9 @@ class MSFC_FibrePortNPIVAttributes
 
 When compiled by the WMI tool suite, this class definition produces the following data structure:
 
-[**MSFC\_FibrePortNPIVAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/npivwmi/ns-npivwmi-_msfc_fibreportnpivattributes)
+[**MSFC\_FibrePortNPIVAttributes**](/windows-hardware/drivers/ddi/npivwmi/ns-npivwmi-_msfc_fibreportnpivattributes)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

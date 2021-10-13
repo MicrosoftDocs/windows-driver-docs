@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RECEIVE_FILTER_FIELD (0x65)
 description: WDI_TLV_RECEIVE_FILTER_FIELD is a TLV that contains a receive filter test criterion for one field in a network header.
-ms.assetid: 9037CD08-742E-4A99-A37B-9969A2BC666A
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RECEIVE_FILTER_FIELD (0x65) Network Drivers Starting with Windows Vista
@@ -47,32 +46,31 @@ The sum (in bytes) of the sizes of all contained elements.
 </ul></td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_frame_header" data-raw-source="[&lt;strong&gt;NDIS_FRAME_HEADER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_frame_header)"><strong>NDIS_FRAME_HEADER</strong></a> (UINT32)</td>
+<td><a href="/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_frame_header" data-raw-source="[&lt;strong&gt;NDIS_FRAME_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_frame_header)"><strong>NDIS_FRAME_HEADER</strong></a> (UINT32)</td>
 <td>Frame header. Specifies the type of the frame header.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_receive_filter_test" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_FILTER_TEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_receive_filter_test)"><strong>NDIS_RECEIVE_FILTER_TEST</strong></a> (UINT32)</td>
+<td><a href="/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_receive_filter_test" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_FILTER_TEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_receive_filter_test)"><strong>NDIS_RECEIVE_FILTER_TEST</strong></a> (UINT32)</td>
 <td>Receive filter test. Specifies the type of test that the receive filter performs.</td>
 </tr>
 <tr class="even">
 <td>UINT32</td>
-<td>Header field. Specifies the protocol-specific header field type with the union as documented in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_FILTER_FIELD_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters)"><strong>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</strong></a>.HeaderField.</td>
+<td>Header field. Specifies the protocol-specific header field type with the union as documented in the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_FILTER_FIELD_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters)"><strong>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</strong></a>.HeaderField.</td>
 </tr>
 <tr class="odd">
 <td>UINT8[16]</td>
-<td>Field value. Specifies the value that the miniport adapter compares to the corresponding header field value in incoming packets. The location of the header field value is determined by the field type that is specified in the <em>header field</em> element. This value is in network byte order and is specified with the union as documented in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_FILTER_FIELD_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters)"><strong>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</strong></a>.FieldValue.</td>
+<td>Field value. Specifies the value that the miniport adapter compares to the corresponding header field value in incoming packets. The location of the header field value is determined by the field type that is specified in the <em>header field</em> element. This value is in network byte order and is specified with the union as documented in the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_FILTER_FIELD_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters)"><strong>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</strong></a>.FieldValue.</td>
 </tr>
 <tr class="even">
 <td>UINT8[16]</td>
-<td>Test result value. If the <em>receive filter test</em> element is set to ReceiveFilterTestMaskEqual, the network adapter first calculates a result from the value in the <em>field value</em> member and the header field value as specified by the <em>header field</em> member. The adapter then compares the calculated result with <em>result value</em>. This value is specified with the union as documented in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_FILTER_FIELD_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters)"><strong>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</strong></a>.ResultValue.</td>
+<td>Test result value. If the <em>receive filter test</em> element is set to ReceiveFilterTestMaskEqual, the network adapter first calculates a result from the value in the <em>field value</em> member and the header field value as specified by the <em>header field</em> member. The adapter then compares the calculated result with <em>result value</em>. This value is specified with the union as documented in the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_FILTER_FIELD_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters)"><strong>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</strong></a>.ResultValue.</td>
 </tr>
 </tbody>
 </table>
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -94,11 +92,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
 

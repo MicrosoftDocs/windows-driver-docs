@@ -1,7 +1,6 @@
 ---
-title: AVC\_FUNCTION\_FIND\_PEER\_DO
-description: AVC\_FUNCTION\_FIND\_PEER\_DO
-ms.assetid: a21dde69-f005-4782-97d9-095a57b2b1a5
+title: AVC_FUNCTION_FIND_PEER_DO
+description: The AVC_FUNCTION_FIND_PEER_DO function code locates a nonvirtual avc.sys instance.
 keywords: ["AVC_FUNCTION_FIND_PEER_DO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -9,52 +8,28 @@ api_name:
 - AVC_FUNCTION_FIND_PEER_DO
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 07/27/2021
 ms.localizationpriority: medium
 ---
 
-# AVC\_FUNCTION\_FIND\_PEER\_DO
+# AVC_FUNCTION_FIND_PEER_DO
 
+The AVC_FUNCTION_FIND_PEER_DO function code locates a nonvirtual *avc.sys* instance.
 
-## <span id="ddk_avc_function_find_peer_do_ks"></span><span id="DDK_AVC_FUNCTION_FIND_PEER_DO_KS"></span>
+## I/O Status Block
 
-
-The **AVC\_FUNCTION\_FIND\_PEER\_DO** function code locates a nonvirtual *avc.sys* instance.
-
-### I/O Status Block
-
-If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
+If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS_SUCCESS.
 
 Possible other return values include:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>STATUS_UNSUCCESSFUL</p></td>
-<td><p>A nonvirtual instance of <em>avc.sys</em> was not found</p></td>
-</tr>
-<tr class="even">
-<td><p>STATUS_INVALID_GENERATION</p></td>
-<td><p>A bus reset occurred before the Device Object reference could be found. Obtain a new NodeAddress and try again.</p></td>
-</tr>
-</tbody>
-</table>
+| Return value | Description |
+|--|--|
+| STATUS_UNSUCCESSFUL | A nonvirtual instance of *avc.sys* was not found |
+| STATUS_INVALID_GENERATION | A bus reset occurred before the Device Object reference could be found. Obtain a new NodeAddress and try again. |
 
- 
+## Comments
 
-### Comments
-
-This function uses the **PeerLocator** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
+This function uses the **PeerLocator** member of the AVC_MULTIFUNC_IRB structure as shown below.
 
 ```cpp
 typedef struct _AVC_MULTIFUNC_IRB {
@@ -71,31 +46,28 @@ typedef struct _AVC_MULTIFUNC_IRB {
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;
 ```
 
-### Requirements
+## Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### AVC\_MULTIFUNC\_IRB Input
+### AVC_MULTIFUNC_IRB Input
 
 **Common**  
-The **Function** submember of this member must be set to **AVC\_FUNCTION\_FIND\_PEER\_DO** from the AVC\_FUNCTION enumeration.
+The **Function** submember of this member must be set to **AVC_FUNCTION_FIND_PEER_DO** from the AVC_FUNCTION enumeration.
 
-<span id="PeerLocator"></span><span id="peerlocator"></span><span id="PEERLOCATOR"></span>**PeerLocator**  
+**PeerLocator**  
 Specifies the nonvirtual (peer) instances of *avc.sys*.
 
-This function locates a nonvirtual *avc.sys* instance according to the node address of the device it represents. If an instance is not found, the IRP completes with a status of STATUS\_UNSUCCESSFUL. Once an instance is located, the caller may submit any GUID\_AVC\_CLASS Device Interface requests through the object. The caller must release the reference to this object (through **ObDereferenceObject**) when finished with it.
+This function locates a nonvirtual *avc.sys* instance according to the node address of the device it represents. If an instance is not found, the IRP completes with a status of STATUS_UNSUCCESSFUL. Once an instance is located, the caller may submit any GUID_AVC_CLASS Device Interface requests through the object. The caller must release the reference to this object (through **ObDereferenceObject**) when finished with it.
 
-This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
+This function code may be called at IRQL <= DISPATCH_LEVEL.
 
-### See Also
+## See also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PEER\_DO\_LOCATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_peer_do_locator), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function), [**ObDereferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obdereferenceobject)
+[**AVC_MULTIFUNC_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb)
 
- 
+[**AVC_PEER_DO_LOCATOR**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_peer_do_locator)
 
- 
+[**AVC_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
 
-
-
-
-
+[**ObDereferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject)

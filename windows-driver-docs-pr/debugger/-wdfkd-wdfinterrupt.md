@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfinterrupt
 description: The wdfkd.wdfinterrupt extension displays information about a WDFINTERRUPT object.
-ms.assetid: 3e032095-94fe-41d5-aeed-645d6b544105
 keywords: ["wdfkd.wdfinterrupt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,8 +45,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following example shows the output of the **!wdfinterrupt** extension with bit 0 set in the *Flags* parameter (so the output displays information about the IDT).
 

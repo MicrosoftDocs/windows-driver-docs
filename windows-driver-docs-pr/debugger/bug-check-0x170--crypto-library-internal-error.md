@@ -32,16 +32,12 @@ The CRYPTO\_LIBRARY\_INTERNAL\_ERROR  bug check has a value of 0x00000170. It in
 
 
 ## Cause
------
 
 This bugcheck indicates the cryptographic library hit an anomaly which should never occur, and the library has no safe method of signaling the error to the caller.  This might be the symptom of an active attack.
 
 
-## See Also
-----------
+## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-[Cryptography API: Next Generation](https://docs.microsoft.com/windows/desktop/SecCNG/cng-portal) 
-
-
+[Cryptography API: Next Generation](/windows/desktop/SecCNG/cng-portal)

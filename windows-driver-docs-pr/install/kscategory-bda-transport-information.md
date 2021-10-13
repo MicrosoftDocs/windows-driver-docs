@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_TRANSPORT_INFORMATION
 description: KSCATEGORY_BDA_TRANSPORT_INFORMATION
-ms.assetid: 0af3159c-8c44-4c42-8141-944bb734623c
 keywords: ["KSCATEGORY_BDA_TRANSPORT_INFORMATION Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BDA_TRANSPORT_INFORMATION
 
 
-The KSCATEGORY_BDA_TRANSPORT_INFORMATION [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a transport information filter (TIF) in the [broadcast driver architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index) (BDA).
+The KSCATEGORY_BDA_TRANSPORT_INFORMATION [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a transport information filter (TIF) in the [broadcast driver architecture](/windows-hardware/drivers/ddi/_stream/index) (BDA).
 
 <table>
 <colgroup>
@@ -45,15 +44,13 @@ The KSCATEGORY_BDA_TRANSPORT_INFORMATION [device interface class](https://docs.m
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_TRANSPORT_INFORMATION to indicate to the operating system that the devices support a BDA transport information filter.
 
-For more information about the KS functional category for BDA transport information filters, see [BDA Filter Category GUIDs](https://docs.microsoft.com/windows-hardware/drivers/stream/bda-filter-category-guids).
+For more information about the KS functional category for BDA transport information filters, see [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,10 +70,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

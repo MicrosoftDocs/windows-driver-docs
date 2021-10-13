@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_OUTPUT\_TYPE\_DEFINITION
 description: The EXT\_TDOP\_OUTPUT\_TYPE\_DEFINITION sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation prints the definition of the type for the specified typed data.
-ms.assetid: 88e97066-f471-4e6c-9b9b-369f31da5bde
 keywords: ["EXT_TDOP_OUTPUT_TYPE_DEFINITION Windows Debugging"]
 topic_type:
 - apiref
@@ -29,32 +28,24 @@ Specifies the typed data whose type's definition will be printed.
 <span id="Status"></span><span id="status"></span><span id="STATUS"></span>**Status**  
 Receives the status code returned by this sub-operation. This is the same as the value returned by [**Request**](request.md).
 
-Remarks
--------
+## Remarks
 
-The definition of the type is formatted and sent to the debugger engine's [output callbacks](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-input-and-output#output-callbacks).
+The definition of the type is formatted and sent to the debugger engine's [output callbacks](./using-input-and-output.md#output-callbacks).
 
-EXT\_TDOP\_OUTPUT\_TYPE\_DEFINITION is a value in the [**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
+EXT\_TDOP\_OUTPUT\_TYPE\_DEFINITION is a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 
-The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
+The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
 
 ## <span id="see_also"></span>See also
 
 
 [**DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI**](debug-request-ext-typed-data-ansi.md)
 
-[**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ne-wdbgexts-_ext_tdop)
+[**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop)
 
-[**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data)
+[**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data)
 
 [**Request**](request.md)
 
  
-
- 
-
-
-
-
-
 

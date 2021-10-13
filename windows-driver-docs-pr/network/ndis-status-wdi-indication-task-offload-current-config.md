@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG to indicate when there is a change in the TCP offload capabilities of the hardware.
-ms.assetid: 4E73F09A-965F-4F32-AFF7-FDF1E3B2853C
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG Network Drivers Starting with Windows Vista
@@ -19,19 +18,18 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_TASK\_OFFLOAD\_CURRENT\_CONF
 
  
 
-When there is a change in the TCP offload capabilities of the hardware, the LE sends this unsolicited indication to the UE, with the new TCP checksum/LSO capabilities. Use the values **NDIS\_OFFLOAD\_SET\_OFF** and **NDIS\_OFFLOAD\_SET\_ON** for members in [**WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-tcp-offload-capabilities) for indicating changes in offload capabilities. When the UE sends down a [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](oid-wdi-set-tcp-offload-parameters.md), the LE should update the offload capabilities and then send this indication so that the OS is updated with the latest offload capabilities information.
+When there is a change in the TCP offload capabilities of the hardware, the LE sends this unsolicited indication to the UE, with the new TCP checksum/LSO capabilities. Use the values **NDIS\_OFFLOAD\_SET\_OFF** and **NDIS\_OFFLOAD\_SET\_ON** for members in [**WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES**](./wdi-tlv-tcp-offload-capabilities.md) for indicating changes in offload capabilities. When the UE sends down a [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](oid-wdi-set-tcp-offload-parameters.md), the LE should update the offload capabilities and then send this indication so that the OS is updated with the latest offload capabilities information.
 
 ## Payload data
 
 
 | Type                                                                                  | Multiple TLV instances allowed | Optional | Description                                              |
 |---------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------|
-| [**WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-tcp-offload-capabilities) |                                | X        | The TCP/IP checksum and Large Send Offload capabilities. |
+| [**WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES**](./wdi-tlv-tcp-offload-capabilities.md) |                                | X        | The TCP/IP checksum and Large Send Offload capabilities. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -60,9 +58,4 @@ Requirements
 [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](oid-wdi-set-tcp-offload-parameters.md)
 
  
-
- 
-
-
-
 

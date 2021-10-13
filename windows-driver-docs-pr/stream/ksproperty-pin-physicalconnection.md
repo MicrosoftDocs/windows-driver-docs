@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_PHYSICALCONNECTION
 description: Audio adapter drivers use the KSPROPERTY\_PIN\_PHYSICALCONNECTION property to denote physical connections between miniports.
-ms.assetid: a679ce41-93d2-4b46-a26d-ce05408ec6aa
 keywords: ["KSPROPERTY_PIN_PHYSICALCONNECTION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,29 +46,27 @@ Audio adapter drivers use the KSPROPERTY\_PIN\_PHYSICALCONNECTION property to de
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_physicalconnection" data-raw-source="[&lt;strong&gt;KSPIN_PHYSICALCONNECTION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_physicalconnection)"><strong>KSPIN_PHYSICALCONNECTION</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kspin_physicalconnection" data-raw-source="[&lt;strong&gt;KSPIN_PHYSICALCONNECTION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_physicalconnection)"><strong>KSPIN_PHYSICALCONNECTION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
 Specify this property using KSP\_PIN, where the member specifies the relevant pin factory.
 
-KSPROPERTY\_PIN\_PHYSICALCONNECTION returns a structure of type [**KSPIN\_PHYSICALCONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_physicalconnection), specifying the connected **PinId** and the symbolic link name of the connected filter.
+KSPROPERTY\_PIN\_PHYSICALCONNECTION returns a structure of type [**KSPIN\_PHYSICALCONNECTION**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_physicalconnection), specifying the connected **PinId** and the symbolic link name of the connected filter.
 
 The class driver does not handle this property; the stream minidriver must provide handling on its own.
 
-Audio adapter drivers register connections with [**PcRegisterPhysicalConnection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcregisterphysicalconnection).
+Audio adapter drivers register connections with [**PcRegisterPhysicalConnection**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection).
 
 Subsequently, the SysAudio system driver (*sysaudio.sys*) queries this property and builds the graph accordingly. SysAudio uses this property to determine which wave filter pin is connected to which topology filter pin.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,18 +84,9 @@ Requirements
 ## See also
 
 
-[**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)
+[**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 
-[**KSPIN\_PHYSICALCONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_physicalconnection)
+[**KSPIN\_PHYSICALCONNECTION**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_physicalconnection)
 
-[**PcRegisterPhysicalConnection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcregisterphysicalconnection)
-
- 
-
- 
-
-
-
-
-
+[**PcRegisterPhysicalConnection**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection)
 

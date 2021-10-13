@@ -1,7 +1,6 @@
 ---
 title: Printer Capability Attributes
 description: Printer Capability Attributes
-ms.assetid: 3ee98eee-8f46-4bf0-ac2c-f47f8402fa86
 keywords:
 - printer capability attributes WDK Unidrv
 - general printer attributes WDK Unidrv , printer capability
@@ -44,7 +43,7 @@ VECTOR
 </tr>
 <tr class="even">
 <td><p></em><strong>OEMCustomData</strong></p></td>
-<td><p>Quoted text string to be supplied to a <a href="rendering-plug-ins.md" data-raw-source="[rendering plug-in](rendering-plug-ins.md)">rendering plug-in</a> when it calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriveruni-drvgetgpddata" data-raw-source="[&lt;strong&gt;IPrintOemDriverUni::DrvGetGPDData&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriveruni-drvgetgpddata)"><strong>IPrintOemDriverUni::DrvGetGPDData</strong></a>.</p></td>
+<td><p>Quoted text string to be supplied to a <a href="rendering-plug-ins.md" data-raw-source="[rendering plug-in](rendering-plug-ins.md)">rendering plug-in</a> when it calls <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvgetgpddata" data-raw-source="[&lt;strong&gt;IPrintOemDriverUni::DrvGetGPDData&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvgetgpddata)"><strong>IPrintOemDriverUni::DrvGetGPDData</strong></a>.</p></td>
 <td><p>Required if a rendering plug-in calls <strong>IPrintOemDriverUni::DrvGetGPDData</strong>.</p>
 <p>Interpretation of text string contents is determined by the rendering plug-in.</p>
 <p>This attribute is a relocatable global attribute; it may be placed at the root level (see <a href="root-level-only-attributes.md" data-raw-source="[Root-Level-Only Attributes](root-level-only-attributes.md)">Root-Level-Only Attributes</a>) to signify that it has no dependency on printer configuration, or it may appear with <em>Option or *Case constructs if there is some dependency.</p></td>
@@ -148,14 +147,7 @@ Legend: SW\_LTOR = Left To Right, SW\_RTOL = Right To Left, SW\_UP = Bottom To T
 
 An OEM rendering plug-in can support auto-duplexing without using the \***ReverseBandOrderForEvenPages?** attribute. The plug-in can do so by simply caching all of the data for the entire page and sending it to the printer, beginning with the bottom scan line. That scan line, as well as all the others on that page, must be sent in reverse order.
 
-**Note**   The OEM rendering plug-in is responsible for reversing the order of the bits with each scan line and the order of the scan lines with each band as it sends the data to the printer. To determine when this must be done, the value of the PageNumber standard variable can be obtained by making a call to [**IPrintOemDriverUni::DrvGetStandardVariable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriveruni-drvgetstandardvariable), using the index SVI\_PAGENUMBER. If the page number is odd, no reversing is needed. If the number is even and duplexing is selected, reversing is needed.
+**Note**   The OEM rendering plug-in is responsible for reversing the order of the bits with each scan line and the order of the scan lines with each band as it sends the data to the printer. To determine when this must be done, the value of the PageNumber standard variable can be obtained by making a call to [**IPrintOemDriverUni::DrvGetStandardVariable**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvgetstandardvariable), using the index SVI\_PAGENUMBER. If the page number is odd, no reversing is needed. If the number is even and duplexing is selected, reversing is needed.
 
  
-
- 
-
- 
-
-
-
 

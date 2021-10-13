@@ -1,7 +1,6 @@
 ---
 title: Introduction to Framework Objects
 description: Introduction to Framework Objects
-ms.assetid: 1314501a-bff1-4aac-a391-a72acca9cc26
 keywords:
 - framework objects WDK KMDF , about framework objects
 - reference counts WDK KMDF
@@ -34,15 +33,9 @@ Framework-based drivers can create object-specific context space for every frame
 Drivers can register callback functions that the framework calls when it is deleting an object. The callback functions can remove driver-assigned resources, such as object-specific memory allocations. For more information about these callback functions, see [Framework Object Life Cycle](framework-object-life-cycle.md).
 
 <a href="" id="parent-object"></a>*Parent object*  
-All framework objects can have a parent object. The framework designates a default parent object for most objects. When a driver creates an object, it can designate a parent object that overrides the object's default parent object. To designate an object's parent object, drivers set the **ParentObject** member of the object's [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) structure. (For a few object types, drivers cannot override the default parent object.) When the framework or a driver deletes a parent object, the framework also deletes the parent object's children.
+All framework objects can have a parent object. The framework designates a default parent object for most objects. When a driver creates an object, it can designate a parent object that overrides the object's default parent object. To designate an object's parent object, drivers set the **ParentObject** member of the object's [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure. (For a few object types, drivers cannot override the default parent object.) When the framework or a driver deletes a parent object, the framework also deletes the parent object's children.
 
 For an overview of all of the objects that are defined by WDF, see [Summary of Framework Objects](summary-of-framework-objects.md).
 
  
-
- 
-
-
-
-
 

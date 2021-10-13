@@ -1,7 +1,6 @@
 ---
 title: .remote_exit (Exit Debugging Client)
 description: The .remote_exit command exits the debugging client but does not end the debugging session.
-ms.assetid: 9e15a842-6864-4ff9-97bc-f6cc8549a422
 keywords: ["Exit Debugging Client (.remote_exit) command", "remote debugging through the debugger, Exit Debugging Client (.remote_exit) command", ".remote_exit (Exit Debugging Client) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ You can use the **.remote\_exit** command only in a script file. You can use it 
 
 For more information about script files, see [Using Script Files](using-script-files.md). For more information about debugging clients and debugging servers, see [Remote Debugging Through the Debugger](remote-debugging-through-the-debugger.md).
 
-Remarks
--------
+## Remarks
 
 If you are using KD or CDB directly, instead of using a script, you can exit from the debugging client by using the [**CTRL+B**](ctrl-b--quit-local-debugger-.md) key.
 

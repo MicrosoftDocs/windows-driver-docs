@@ -1,7 +1,6 @@
 ---
-title: obja
+title: obja (WinDbg)
 description: The obja extension displays the attributes of an object in the object manager.
-ms.assetid: dc263ec2-72bf-4cb1-8583-4e9142d0bbdb
 keywords: ["object manager", "obja Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,8 +54,7 @@ Kdextx86.dll</td>
 
 For information about objects and the object manager, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The attributes pertaining to the specified object are listed. Valid attributes are:
 

@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfdevext
 description: The wdfkd.wdfdevext extension displays information that is associated with the DeviceExtension member of a Microsoft Windows Driver Model (WDM) DEVICE_OBJECT structure.
-ms.assetid: 89559cae-7323-4c91-b20a-7d42069cdb93
 keywords: ["wdfkd.wdfdevext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,8 +39,7 @@ KMDF 1, UMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example for HdAudBus.sys, which is a KMDF driver. Use [**!devnode**](-devnode.md) to find a device node that has HdAudBus as its function driver. Take the physical device object (PDO) from the output and pass it to [**!devstack**](-devstack.md). Take the device extension address from the output of **!devstack** and pass it to **!wdfdevext**.
 

@@ -1,7 +1,6 @@
 ---
 title: NFP provider model
 description: The Near Field Proximity (NFP) provider driver model provides a common surface for Windows to use NFP capabilities and to enable NFP scenarios and use cases.
-ms.assetid: AD8DC80F-5CE2-4547-B951-A82A280F18ED
 keywords:
 - NFC
 - near field communications
@@ -14,7 +13,6 @@ ms.localizationpriority: medium
 
 # NFP provider model
 
-
 The Near Field Proximity (NFP) provider driver model provides a common surface for Windows to use NFP capabilities and to enable NFP scenarios and use cases.
 
 To expose these capabilities to Windows, the implementer of a compatible device must provide a device driver that implements the **GUID\_DEVINTERFACE\_NFP** device interface. This driver works with the underlying NFP technology implemented in software and/or hardware on the device to form an NFP provider.
@@ -23,12 +21,10 @@ The **GUID\_DEVINTERFACE\_NFP** device interface enables Windows to use various 
 
 Two PCs with incompatible NFP providers will not be able to communicate through their NFP providers. This specification provides guidelines sufficient to support interoperation of two certified Windows systems because support for at least one NFC-enabled provider is a requirement for Windows system certification.
 
-NFP providers pre-stage their communication using a pub/sub model whose transmission is triggered by a proximate event of the underlying NFP technology. Messages are published and subscribed to based on a message type. When two devices become proximate according to the NFP technology, the proximity state is triggered and all currently published messages are transmitted to current subscribers on the other device. This mechanism provides a model where the user sets some context on his device, then taps it with another device to complete the scenario in an easy way.
+NFP providers pre-stage their communication using a pub/sub model whose transmission is triggered by a proximate event of the underlying NFP technology. Messages are published and subscribed to based on a message type. When two devices become proximate according to the NFP technology, the proximity state is triggered and all currently published messages are transmitted to current subscribers on the other device. This mechanism provides a model where the user sets some context on their device, then taps it with another device to complete the scenario in an easy way.
 
- 
-
- 
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
 
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+
+[Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

@@ -1,7 +1,6 @@
 ---
 title: Error Source Discovery
 description: Error Source Discovery
-ms.assetid: 58b7501d-b51a-436f-ac29-8d03161d0956
 keywords:
 - Windows Hardware Error Architecture WDK , error source discovery
 - WHEA WDK , error source discovery
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 # Error Source Discovery
 
 
-During initialization of the operating system, the Windows kernel queries the PSHED for a list of all of the [error sources](hardware-errors-and-error-sources.md) that are implemented by the hardware platform. The PSHED returns a list of [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_source_descriptor) structures that describe each of the error sources that the hardware platform supports. The operating system uses this information to enable the necessary low-level hardware error handlers (LLHEHs) that are responsible for processing error notifications from the hardware platform.
+During initialization of the operating system, the Windows kernel queries the PSHED for a list of all of the [error sources](hardware-errors-and-error-sources.md) that are implemented by the hardware platform. The PSHED returns a list of [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structures that describe each of the error sources that the hardware platform supports. The operating system uses this information to enable the necessary low-level hardware error handlers (LLHEHs) that are responsible for processing error notifications from the hardware platform.
 
 The following is the minimum set of error sources that is discovered by the PSHED.
 
@@ -44,9 +43,4 @@ For PCI Express (PCIe) advanced error reporting (AER), the PCI bus driver discov
 A PSHED plug-in can also participate in error source discovery to modify the error source information that is reported by the PSHED and to report additional error sources that were not discovered by the PSHED. If a PSHED plug-in is implemented that participates in error source discovery and reports additional error sources to the operating system that the PSHED does not support, the PSHED plug-in must also participate in [error source control](error-source-control.md) and [error information retrieval](error-information-retrieval.md) to support the error source control and error information retrieval operations for these additional error sources. For more information about how to implement a PSHED plug-in that participates in error source discovery, see [Participating in Error Source Discovery](participating-in-error-source-discovery.md).
 
  
-
- 
-
-
-
 

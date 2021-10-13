@@ -1,7 +1,6 @@
 ---
-title: dma
+title: dma (WinDbg)
 description: The dma extension displays information about the Direct Memory Access (DMA) subsystem, and the DMA Verifier option of Driver Verifier.
-ms.assetid: 4ccf679f-5804-4644-935a-18ff8711ae9a
 keywords: ["DMA Verification (Driver Verifier)", "dma Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -75,8 +74,7 @@ Causes the display to include Wait context block information.
 
 For information about Driver Verifier, see the Windows Driver Kit (WDK) documentation. For information about DMA, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich David Solomon.
 
-Remarks
--------
+## Remarks
 
 Invalid arguments (for example, **!dma 1**) generate a brief help text.
 

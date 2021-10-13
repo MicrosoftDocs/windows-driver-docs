@@ -1,7 +1,6 @@
 ---
 title: Audio Position Property
 description: Audio Position Property
-ms.assetid: 893fea84-9136-4107-96d2-8a4e2ab7bd2a
 keywords:
 - play position WDK audio
 - record position WDK audio
@@ -23,17 +22,17 @@ ms.localizationpriority: medium
 # Audio Position Property
 
 
-The client of an audio driver uses the [**KSPROPERTY\_AUDIO\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-position) property to get and set the current position in an audio stream. The property uses a [**KSAUDIO\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_position) structure to describe the current position. The structure contains two members: **PlayOffset** and **WriteOffset**.
+The client of an audio driver uses the [**KSPROPERTY\_AUDIO\_POSITION**](./ksproperty-audio-position.md) property to get and set the current position in an audio stream. The property uses a [**KSAUDIO\_POSITION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position) structure to describe the current position. The structure contains two members: **PlayOffset** and **WriteOffset**.
 
 The **PlayOffset** and **WriteOffset** members define the boundaries of the region of the client buffer that is currently reserved for the exclusive use of the audio device. The client must assume that the device might currently be accessing any of the data contained in this region. Hence, the client must access only the portions of the buffer that lie outside this region. The boundaries of the region move as the stream advances.
 
-If the client buffer is looped (that is, the stream type is [**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksinterface-standard-looped-streaming)), **PlayOffset** and **WriteOffset** are buffer-relative offsets. That is, they are specified as byte offsets from the start of the looped client buffer. When either offset increments to the end of the buffer, it wraps around to the start of the buffer. (The offset at the start of the buffer is zero.) Thus, neither offset ever exceeds the buffer size.
+If the client buffer is looped (that is, the stream type is [**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](../stream/ksinterface-standard-looped-streaming.md)), **PlayOffset** and **WriteOffset** are buffer-relative offsets. That is, they are specified as byte offsets from the start of the looped client buffer. When either offset increments to the end of the buffer, it wraps around to the start of the buffer. (The offset at the start of the buffer is zero.) Thus, neither offset ever exceeds the buffer size.
 
-If the client buffer is nonlooped (that is, the stream type is [**KSINTERFACE\_STANDARD\_STREAMING**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksinterface-standard-streaming)), **PlayOffset** and **WriteOffset** are stream-relative offsets. That is, they are specified as byte offsets from the start of the stream. These offsets can be thought of as offsets into an idealized buffer that contains the entire stream and is contiguous from beginning to end.
+If the client buffer is nonlooped (that is, the stream type is [**KSINTERFACE\_STANDARD\_STREAMING**](../stream/ksinterface-standard-streaming.md)), **PlayOffset** and **WriteOffset** are stream-relative offsets. That is, they are specified as byte offsets from the start of the stream. These offsets can be thought of as offsets into an idealized buffer that contains the entire stream and is contiguous from beginning to end.
 
 In the case of a render stream, the **PlayOffset** member specifies the play position of the stream, and the **WriteOffset** member specifies the write position of the stream. The following figure shows the play and write positions in a client buffer.
 
-![diagram illustrating the play position and write position in a render stream](images/playoffset.png)
+![diagram illustrating the play position and write position in a render stream.](images/playoffset.png)
 
 The play position is the byte offset of the sample that is currently being played (that is, the sample that is latched at the input of the digital-to-analog converter, or DAC). The write position is the position beyond which the client can safely write to the buffer. As the stream plays, the play and write positions move from left to right in the preceding figure. The client's writes must stay ahead of the write position. In addition, if the buffer is looped, the client's writes must never overtake the play position.
 
@@ -41,17 +40,17 @@ Although the WaveCyclic or WavePci port driver relies on the miniport driver to 
 
 -   **WaveCyclic**
 
-    Each time the WaveCyclic port driver calls [**IDmaChannel::CopyTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-copyto) to copy a new block of data to the cyclic buffer (from the client buffer), the write position advances to the location (in the client buffer) of the last byte in the data block.
+    Each time the WaveCyclic port driver calls [**IDmaChannel::CopyTo**](/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-copyto) to copy a new block of data to the cyclic buffer (from the client buffer), the write position advances to the location (in the client buffer) of the last byte in the data block.
 
 -   **WavePci**
 
-    By default, each time the WavePci miniport driver calls [**IPortWavePciStream::GetMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavepcistream-getmapping) to acquire a new mapping (of a portion of the client buffer) and the call succeeds, the write position advances to the location (in the client buffer) of the last byte in the new mapping.
+    By default, each time the WavePci miniport driver calls [**IPortWavePciStream::GetMapping**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-getmapping) to acquire a new mapping (of a portion of the client buffer) and the call succeeds, the write position advances to the location (in the client buffer) of the last byte in the new mapping.
 
     If the WavePci miniport driver overrides the default behavior by specifying a prefetch offset to the port driver, the current write position is always equal to the sum of the current play position and the prefetch offset. For more information, see [Prefetch Offsets](prefetch-offsets.md).
 
 In the case of a capture stream, the **PlayOffset** member specifies the record position of the stream, and the **WriteOffset** member specifies the read position of the stream. The following figure shows the record and read positions in a client buffer.
 
-![diagram illustrating the record position and read position in a capture stream](images/recordoffset.png)
+![diagram illustrating the record position and read position in a capture stream.](images/recordoffset.png)
 
 The record position is the byte offset of the latest sample to be latched at the output of the analog-to-digital converter, or ADC. (This position specifies the buffer location into which the audio device's DMA engine will eventually write the sample.) The read position is the position beyond which the client cannot safely read from the buffer. As the recording of the stream progresses, the read and record positions advance from left to right in the preceding figure. The client's reads must trail the read position. In addition, if the buffer is looped, the client's reads must stay ahead of the record position.
 
@@ -59,13 +58,13 @@ Although the WaveCyclic or WavePci port driver relies on the miniport driver to 
 
 -   **WaveCyclic**
 
-    Each time the WaveCyclic port driver calls [**IDmaChannel::CopyFrom**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-copyfrom) to copy a new block of data from the cyclic buffer (to the client buffer), the read position advances to the location (in the client buffer) of the last byte in the data block.
+    Each time the WaveCyclic port driver calls [**IDmaChannel::CopyFrom**](/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-copyfrom) to copy a new block of data from the cyclic buffer (to the client buffer), the read position advances to the location (in the client buffer) of the last byte in the data block.
 
 -   **WavePci**
 
-    Each time the WavePci miniport driver calls [**IPortWavePciStream::ReleaseMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavepcistream-releasemapping) to release a previously acquired mapping (of a portion of the client buffer), the read position advances to the location (in the client buffer) of the last byte in the released mapping.
+    Each time the WavePci miniport driver calls [**IPortWavePciStream::ReleaseMapping**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-releasemapping) to release a previously acquired mapping (of a portion of the client buffer), the read position advances to the location (in the client buffer) of the last byte in the released mapping.
 
-Miniport drivers do not need to implement handler routines for KSPROPERTY\_AUDIO\_POSITION property requests. Instead, the WaveCyclic and WavePci port drivers handle these requests on behalf of miniport drivers. When handling a get-property request, a WaveCyclic or WavePci port driver already has all the information it needs to calculate the **WriteOffset** value, but it still needs information from the miniport driver to calculate the **PlayOffset** value. To obtain this information, the port driver calls the miniport driver's [**IMiniportWaveCyclicStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavecyclicstream-getposition) or [**IMiniportWavePciStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-getposition) method.
+Miniport drivers do not need to implement handler routines for KSPROPERTY\_AUDIO\_POSITION property requests. Instead, the WaveCyclic and WavePci port drivers handle these requests on behalf of miniport drivers. When handling a get-property request, a WaveCyclic or WavePci port driver already has all the information it needs to calculate the **WriteOffset** value, but it still needs information from the miniport driver to calculate the **PlayOffset** value. To obtain this information, the port driver calls the miniport driver's [**IMiniportWaveCyclicStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition) or [**IMiniportWavePciStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition) method.
 
 For a render stream, the **GetPosition** method retrieves the play position - the byte offset of the sample that is currently being played through the DAC. For a capture stream, the **GetPosition** method retrieves the record position - the byte offset of the latest sample to be captured by the ADC.
 
@@ -79,14 +78,9 @@ The **IMiniportWaveCyclicStream::GetPosition** method always reports a buffer-re
 
 The **IMiniportWavePciStream::GetPosition** method always reports a stream-relative play or record position regardless of whether the client buffer is looped or nonlooped. If the client buffer is looped, the property handler converts the stream-relative play position to a buffer-relative play position (expressed as an offset into the client buffer) before writing it to the **PlayOffset** member in the KSAUDIO\_POSITION structure in the property request. If the client buffer is nonlooped, the property handler writes the stream-relative position to the **PlayOffset** member.
 
-The play or record position is zero immediately following initialization of the stream. A transition to the KSSTATE\_STOP state (see [**KSSTATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ne-ks-ksstate)) resets the position to zero. When the stream is halted by a transition from KSSTATE\_RUN to KSSTATE\_PAUSE or KSSTATE\_ACQUIRE, the position freezes. It unfreezes when the stream transitions from KSSTATE\_PAUSE or KSSTATE\_ACQUIRE back to KSSTATE\_RUN.
+The play or record position is zero immediately following initialization of the stream. A transition to the KSSTATE\_STOP state (see [**KSSTATE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate)) resets the position to zero. When the stream is halted by a transition from KSSTATE\_RUN to KSSTATE\_PAUSE or KSSTATE\_ACQUIRE, the position freezes. It unfreezes when the stream transitions from KSSTATE\_PAUSE or KSSTATE\_ACQUIRE back to KSSTATE\_RUN.
 
 For example implementations of **GetPosition** methods for WaveCyclic and WavePci miniport drivers, see the sample audio drivers in the Windows Driver Kit (WDK).
 
  
-
- 
-
-
-
 

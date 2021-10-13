@@ -1,7 +1,6 @@
 ---
 title: New Root-Level-Only PPD Attributes for Windows Vista
 description: New Root-Level-Only PPD Attributes for Windows Vista
-ms.assetid: 49cdfb2f-e119-4960-9e79-67e1025b753f
 keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only
@@ -104,7 +103,7 @@ A single printer model's PPD file (or files) should have only one definition of 
 The following code example shows an example of the **MsPrintSchemaPrivateNamespaceURI** attribute in a partial PPD file.
 
 ```cpp
-*MSPrivateNamespaceURI:  "http://www.ihv.com/schema/2004"
+*MSPrivateNamespaceURI:  "https://www.ihv.com/schema/2004"
 ```
 
 ### MSIsXPSDriver

@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CAMERACONTROL\_FOCUS
 description: The KSEVENT\_CAMERACONTROL\_FOCUS event is triggered when a camera focus operation has completed or has been canceled.
-ms.assetid: 7B10D45F-4673-405C-B44F-3FAA3E8957EF
 keywords: ["KSEVENT_CAMERACONTROL_FOCUS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -45,30 +44,19 @@ The **KSEVENT\_CAMERACONTROL\_FOCUS** event is triggered when a camera focus ope
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](./ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
-For more information, see [**KSPROPERTY\_CAMERACONTROL\_S\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s_ex).
+For more information, see [**KSPROPERTY\_CAMERACONTROL\_S\_EX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s_ex).
 
 ## See also
 
 
-[**KSEVENT\_CAMERACONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksevent_cameracontrol)
-
- 
-
- 
-
-
-
-
-
-
+[**KSEVENT\_CAMERACONTROL**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksevent_cameracontrol)

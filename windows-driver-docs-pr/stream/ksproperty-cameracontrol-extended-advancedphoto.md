@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO is used to control photo HDR, flash no flash, and ultra low light fusion on the driver. This is a pin level control for photo pin only.
-ms.assetid: 88C14C9E-8675-42BF-A606-64232ABD4FD1
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -102,7 +101,7 @@ The following table describes the flag capabilities.
 
  
 
-The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>

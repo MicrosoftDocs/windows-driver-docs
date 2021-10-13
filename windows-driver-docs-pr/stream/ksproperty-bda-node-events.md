@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_EVENTS
 description: Clients use KSPROPERTY\_BDA\_NODE\_EVENTS to retrieve a list of events supported on a node.
-ms.assetid: 4923a88b-abb3-4608-95b3-b0e74eeadaa8
 keywords: ["KSPROPERTY_BDA_NODE_EVENTS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_NODE\_EVENTS to retrieve a list of events supported
 
  
 
-Remarks
--------
+## Remarks
 
 The list of events supported by a node is a list of GUIDs.
 
 The network provider will use this property to query the capabilities of each node in the BDA template connection list.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,9 @@ Requirements
 ## See also
 
 
-[**BdaPropertyNodeEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdapropertynodeevents)
+[**BdaPropertyNodeEvents**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodeevents)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
-
- 
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
-
-
-
-
-
 

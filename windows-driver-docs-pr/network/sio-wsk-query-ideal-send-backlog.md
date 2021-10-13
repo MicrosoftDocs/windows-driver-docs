@@ -1,7 +1,6 @@
 ---
 title: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 description: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
-ms.assetid: 8d05b1dc-9dbf-4726-9eaf-721d1fb8282e
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_QUERY_IDEAL_SEND_BACKLOG Network Drivers Starting with Windows Vista
@@ -17,7 +16,7 @@ The ideal send backlog size for a connection-oriented socket is the optimal amou
 
 If a WSK application uses this socket I/O control operation to query the ideal send backlog size, it must do so after the connection-oriented socket has been connected to a remote transport address.
 
-To query the ideal send backlog size for a connection-oriented socket, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To query the ideal send backlog size for a connection-oriented socket, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -68,10 +67,9 @@ To query the ideal send backlog size for a connection-oriented socket, a WSK app
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to query the ideal send backlog size for a connection-oriented socket.
 
-A connection-oriented socket can be notified of changes to the ideal send backlog size by enabling its [*WskSendBacklogEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_send_backlog_event) event callback function.
+A connection-oriented socket can be notified of changes to the ideal send backlog size by enabling its [*WskSendBacklogEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_backlog_event) event callback function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,9 +89,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: HTTP Symbol Stores
 description: HTTP Symbol Stores
-ms.assetid: b7dd1f3c-0135-4b69-9d70-b7cbf37fa969
 keywords: ["HTTP symbol stores"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -39,7 +38,7 @@ Internet Information Services (IIS) must be configured to serve the symbols by c
 
 **To create a virtual directory**
 
-1.  From **Administrative Tools** open **Internet Information Services (IIS) Manager**.
+1.  Open **Internet Information Services (IIS) Manager**.
 
 2.  Navigate to **Web Sites**.
 

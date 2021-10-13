@@ -1,7 +1,6 @@
 ---
-title: Access Control
-description: Access Control
-ms.assetid: 7f87276f-4014-4b37-b051-4bf02acbf575
+title: Access control in a driver
+description: Drivers protect themselves from inappropriate access through access control.
 keywords:
 - security WDK file systems , minimizing threats
 - access control WDK file systems
@@ -12,32 +11,20 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Access Control
+# Access control in a driver
 
-
-## <span id="ddk_access_control_if"></span><span id="DDK_ACCESS_CONTROL_IF"></span>
-
-
-To protect themselves from inappropriate access, most drivers rely upon the default access controls applied by the I/O manager against their device objects. Other mechanisms are available to drivers. Perhaps the simplest for normal drivers is to apply an explicit security descriptor when they install their driver. An example of applying security descriptors to the device object are discussed in a later section.
+To protect themselves from inappropriate access, most drivers rely upon the default access controls applied by the I/O manager against their device objects. Other mechanisms are available to drivers. Perhaps the simplest for normal drivers is to apply an explicit security descriptor when they install their driver. An example of applying security descriptors to the device object is discussed in a later section.
 
 A driver that implements its own security policy could rely upon the standard Windows APIs for assistance managing security access. In this case, the driver manages the storage of security descriptors and is responsible for invoking the security reference monitor routines to validate security. These include numerous routines, such as the following:
 
--   [**SeAccessCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-seaccesscheck)--this routine compares the security descriptor against the security credentials of the caller.
+- [**SeAccessCheck**](/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck)--this routine compares the security descriptor against the security credentials of the caller.
 
--   [**SePrivilegeCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-seprivilegecheck)--this routine determines if the given privileges are enabled for the caller.
+- [**SePrivilegeCheck**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seprivilegecheck)--this routine determines if the given privileges are enabled for the caller.
 
--   [**SeSinglePrivilegeCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-sesingleprivilegecheck)--this routine determines if a specific privilege is enabled for the caller.
+- [**SeSinglePrivilegeCheck**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-sesingleprivilegecheck)--this routine determines if a specific privilege is enabled for the caller.
 
--   [**SeAuditingFileOrGlobalEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-seauditingfileorglobalevents)--this routine indicates if the system has enabled auditing.
+- [**SeAuditingFileOrGlobalEvents**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seauditingfileorglobalevents)--this routine indicates if the system has enabled auditing.
 
--   [**SeOpenObjectAuditAlarm**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-seopenobjectauditalarm)--this routine audits open object events.
+- [**SeOpenObjectAuditAlarm**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seopenobjectauditalarm)--this routine audits open object events.
 
 This list is incomplete, but it describes a number of the key functions that can be used within a driver to perform access validation.
-
- 
-
- 
-
-
-
-

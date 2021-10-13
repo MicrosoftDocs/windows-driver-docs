@@ -1,7 +1,6 @@
 ---
 title: Functions Defined by Print Providers
 description: Functions Defined by Print Providers
-ms.assetid: 4fae4b69-ed4b-47b6-b6e8-41733aed51a5
 keywords:
 - print providers WDK , functions
 - functions WDK print providers
@@ -26,7 +25,7 @@ All print providers must supply pointers for all listed functions. However, most
 
 In the following function lists, functions that must be supported are labeled "Required".
 
-All print providers must export the initialization function, [**InitializePrintProvidor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintprovidor). Pointers to all the other functions must be supplied in a [**PRINTPROVIDOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-_printprovidor) structure. (Note that these two names are misspelled, but are consistent with the names that appear in the header file, Winsplp.h.)
+All print providers must export the initialization function, [**InitializePrintProvidor**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor). Pointers to all the other functions must be supplied in a [**PRINTPROVIDOR**](/windows-hardware/drivers/ddi/winsplp/ns-winsplp-_printprovidor) structure. (Note that these two names are misspelled, but are consistent with the names that appear in the header file, Winsplp.h.)
 
 Functions are divided into groups, and presented in the following sections:
 
@@ -67,7 +66,7 @@ Other Functions
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintprovidor" data-raw-source="[&lt;strong&gt;InitializePrintProvidor&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintprovidor)"><strong>InitializePrintProvidor</strong></a> (Required)</p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor" data-raw-source="[&lt;strong&gt;InitializePrintProvidor&lt;/strong&gt;](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor)"><strong>InitializePrintProvidor</strong></a> (Required)</p></td>
 <td><p>Initializes the print provider and returns pointers to supplied functions.</p></td>
 </tr>
 </tbody>
@@ -130,12 +129,12 @@ Other Functions
 <td><p>Enables caller access to a specified print queue.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/previous-versions/ff561930(v=vs.85)" data-raw-source="[&lt;strong&gt;RefreshPrinterChangeNotification&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561930(v=vs.85))"><strong>RefreshPrinterChangeNotification</strong></a></p></td>
+<td><p><a href="/previous-versions/ff561930(v=vs.85)" data-raw-source="[&lt;strong&gt;RefreshPrinterChangeNotification&lt;/strong&gt;](/previous-versions/ff561930(v=vs.85))"><strong>RefreshPrinterChangeNotification</strong></a></p></td>
 <td><p>Called by router if client calls <strong>FindNextPrinterChangeNotification</strong> (see the Microsoft Windows SDK documentation) with the PRINTER_NOTIFY_OPTIONS_REFRESH flag set.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ResetPrinter</strong></p></td>
-<td><p>Modifies a print queue's data type or <a href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew)"><strong>DEVMODEW</strong></a> structure.</p></td>
+<td><p>Modifies a print queue's data type or <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SetPrinter</strong> (Required)</p></td>
@@ -225,7 +224,7 @@ Other Functions
 <td><p></p>
 <strong>AddJob</strong>
 (Required)</td>
-<td><p>Returns a job identifier and spool file path. The caller uses <a href="https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea" data-raw-source="[&lt;strong&gt;CreateFile&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea)"><strong>CreateFile</strong></a> and <strong>WriteFile</strong> to send data to the spool file.</p></td>
+<td><p>Returns a job identifier and spool file path. The caller uses <a href="/windows/win32/api/fileapi/nf-fileapi-createfilea" data-raw-source="[&lt;strong&gt;CreateFile&lt;/strong&gt;](/windows/win32/api/fileapi/nf-fileapi-createfilea)"><strong>CreateFile</strong></a> and <strong>WriteFile</strong> to send data to the spool file.</p></td>
 </tr>
 <tr class="odd">
 <td><p></p>
@@ -421,7 +420,7 @@ Returns the directory path in which print processor files must be stored.
 <tbody>
 <tr class="odd">
 <td><p><strong>AddPort</strong></p></td>
-<td><p>Adds a printer port to the list of those available, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-addportui" data-raw-source="[&lt;strong&gt;AddPortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-addportui)"><strong>AddPortUI</strong></a> function.</p></td>
+<td><p>Adds a printer port to the list of those available, typically by calling the specified port monitor's <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-addportui" data-raw-source="[&lt;strong&gt;AddPortUI&lt;/strong&gt;](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-addportui)"><strong>AddPortUI</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>AddPortEx</strong></p></td>
@@ -431,13 +430,13 @@ Returns the directory path in which print processor files must be stored.
 <td><p></p>
 <strong>ConfigurePort</strong>
 (Required)</td>
-<td><p>Configures a printer port, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-configureportui" data-raw-source="[&lt;strong&gt;ConfigurePortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-configureportui)"><strong>ConfigurePortUI</strong></a> function.</p></td>
+<td><p>Configures a printer port, typically by calling the specified port monitor's <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-configureportui" data-raw-source="[&lt;strong&gt;ConfigurePortUI&lt;/strong&gt;](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-configureportui)"><strong>ConfigurePortUI</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p></p>
 <strong>DeletePort</strong>
 (Required)</td>
-<td><p>Deletes a printer port from the list of those available, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-deleteportui" data-raw-source="[&lt;strong&gt;DeletePortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-deleteportui)"><strong>DeletePortUI</strong></a> function.</p></td>
+<td><p>Deletes a printer port from the list of those available, typically by calling the specified port monitor's <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-deleteportui" data-raw-source="[&lt;strong&gt;DeletePortUI&lt;/strong&gt;](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-deleteportui)"><strong>DeletePortUI</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p></p>
@@ -528,18 +527,11 @@ Returns the directory path in which print processor files must be stored.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)" data-raw-source="[&lt;strong&gt;XcvData&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85))"><strong>XcvData</strong></a></p></td>
+<td><p><a href="/previous-versions/ff564255(v=vs.85)" data-raw-source="[&lt;strong&gt;XcvData&lt;/strong&gt;](/previous-versions/ff564255(v=vs.85))"><strong>XcvData</strong></a></p></td>
 <td><p>Provides a communication path between a port monitor UI DLL and a port monitor server DLL.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
- 
-
- 
-
-
-
 

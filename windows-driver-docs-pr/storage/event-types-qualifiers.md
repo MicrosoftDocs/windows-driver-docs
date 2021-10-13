@@ -1,7 +1,6 @@
 ---
 title: EVENT\_TYPES\_QUALIFIERS
 description: EVENT\_TYPES\_QUALIFIERS
-ms.assetid: 528e5eaa-aaeb-4e5b-a4b2-0f518fcd79ee
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

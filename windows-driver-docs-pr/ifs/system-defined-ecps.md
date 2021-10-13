@@ -1,52 +1,45 @@
 ---
-title: System-Defined ECPs
+title: System-defined ECPs
 description: System-Defined ECPs
-ms.assetid: 6acb4be4-a7aa-431d-b2d8-3ef6d41cb4ef
-ms.date: 04/20/2017
+ms.date: 09/09/2021
 ms.localizationpriority: medium
 ---
 
-# System-Defined ECPs
+# System-defined ECPs
 
+This page lists and describes system-defined extra create parameters (ECPs). The operating system defines these ECPs in the *Ntifs.h* header file.
 
-The operating system defines the following ECPs in the *Ntifs.h* header file. These system-defined ECPs attach the specified extra information to the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation on a file. Elements of the file-system stack can query the ECPs for the extra information.
+These system-defined ECPs attach the specified extra information to the [**IRP_MJ_CREATE**](./irp-mj-create.md) operation on a file. Elements of the file system stack can query the ECPs for the extra information.
 
-Typically, a filter that processes the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation on a file and then passes the file down to filters below it must not attach and spoof any of the following system-defined ECPs to the **IRP\_MJ\_CREATE** operation on the file. Similarly, a kernel-mode driver that processes and issues IRP\_MJ\_CREATE operations on files must not attach and spoof any of the following system-defined ECPs to the IRP\_MJ\_CREATE operations on the files. The following system-defined ECPs are read-only. You should use them to retrieve information only.
+Typically, a filter that processes the [**IRP_MJ_CREATE**](./irp-mj-create.md) operation on a file and then passes the file down to filters below it must not attach and spoof any of the system-defined ECPs to the **IRP_MJ_CREATE** operation on the file.
 
-One exception to restricting a filter driver from attaching any of the following system-defined ECPs is when the filter driver implements a layered file system. It does this by owning file objects and by issuing its own [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operations on files below its filter, in response to the IRP\_MJ\_CREATE operation on a file that the filter driver services on its own file objects. Such a filter driver should propagate any ECP context structure lists (ECP\_LIST) from the original IRP\_MJ\_CREATE operation on a file to the IRP\_MJ\_CREATE operations that the filter driver issues below it. By propagating these ECP lists, the filter driver ensures that any filters below the filter that issues the IRP\_MJ\_CREATE operations are aware of the context of the original IRP\_MJ\_CREATE operation.
+Similarly, a kernel-mode driver that processes and issues **IRP_MJ_CREATE** operations on files must not attach and spoof any system-defined ECPs to the **IRP_MJ_CREATE** operations on the files.
 
-<span id="GUID_ECP_OPLOCK_KEY"></span><span id="guid_ecp_oplock_key"></span>GUID\_ECP\_OPLOCK\_KEY  
-A GUID that identifies the [**OPLOCK\_KEY\_ECP\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ifs/oplock-key-ecp-context) structure and is used to attach an oplock key to the open file request. The oplock key lets an application open multiple handles to the same stream without breaking the application's own oplock.
+Filter drivers should consider system-defined ECPs to be read-only. You should use them to retrieve information only.
 
-For more information about oplocks and oplock keys, see [Oplock Semantics Overview](overview.md).
+One exception to restricting a filter driver from attaching any of the following system-defined ECPs is when the filter driver implements a layered file system. It does this by owning file objects and by issuing its own [**IRP_MJ_CREATE**](./irp-mj-create.md) operations on files below its filter, in response to the **IRP_MJ_CREATE** operation on a file that the filter driver services on its own file objects. Such a filter driver should propagate any ECP context structure lists ([**ECP_LIST**](/previous-versions/windows/hardware/drivers/ff540148(v=vs.85))) from the original **IRP_MJ_CREATE** operation on a file to the **IRP_MJ_CREATE** operations that the filter driver issues below it. By propagating these ECP lists, the filter driver ensures that any filters below the filter that issues the **IRP_MJ_CREATE** operations are aware of the context of the original **IRP_MJ_CREATE** operation.
 
-<span id="GUID_ECP_NETWORK_OPEN_CONTEXT"></span><span id="guid_ecp_network_open_context"></span>GUID\_ECP\_NETWORK\_OPEN\_CONTEXT  
-A GUID that identifies the [**NETWORK\_OPEN\_ECP\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff550896) structure and is used to attach extra information for network redirectors. This GUID also identifies the [**NETWORK\_OPEN\_ECP\_CONTEXT\_V0**](https://msdn.microsoft.com/library/windows/hardware/ff550899) structure for drivers that run on Windows 7 and later versions of Windows and that must interpret network ECP contexts on files that reside on Windows Vista.
-
-<span id="GUID_ECP_PREFETCH_OPEN"></span><span id="guid_ecp_prefetch_open"></span>GUID\_ECP\_PREFETCH\_OPEN  
-A GUID that identifies the [**PREFETCH\_OPEN\_ECP\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551843) structure.
-
-The prefetcher is a component of the operating system that is tightly integrated with the cache manager and the memory manager to make disk accesses more efficient and therefore improve performance. If other components interfere with the prefetcher, system performance decreases and might deadlock. Therefore, the prefetcher attaches the PREFETCH\_OPEN\_ECP\_CONTEXT structure to a file to communicate that the prefetcher performs an open request on the file. This open request is specified by the **Context** member of PREFETCH\_OPEN\_ECP\_CONTEXT. Other components, such as, file system filter drivers, can determine whether PREFETCH\_OPEN\_ECP\_CONTEXT is attached to the file and then take appropriate action.
-
-<span id="GUID_ECP_NFS_OPEN"></span><span id="guid_ecp_nfs_open"></span>GUID\_ECP\_NFS\_OPEN  
-A GUID that identifies the [**NFS\_OPEN\_ECP\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff550942) structure. The Network File System (NFS) server attaches the NFS\_OPEN\_ECP\_CONTEXT structure to an open file request. The NFS server uses this GUID on any open file request that the NFS server makes to satisfy a client request. The file-system stack can then determine whether NFS\_OPEN\_ECP\_CONTEXT is attached to the open file request. Based on the information in NFS\_OPEN\_ECP\_CONTEXT the file-system stack can determine the client that requested that the file be opened and why.
-
-<span id="GUID_ECP_SRV_OPEN"></span><span id="guid_ecp_srv_open"></span>GUID\_ECP\_SRV\_OPEN  
-A GUID that identifies the [**SRV\_OPEN\_ECP\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff556749) structure. A server attaches the SRV\_OPEN\_ECP\_CONTEXT structure to an open file request. The server uses this GUID on any open file request that the server makes to satisfy a conditional client request. The file-system stack can then determine whether SRV\_OPEN\_ECP\_CONTEXT is attached to the open file request. Based on the information in SRV\_OPEN\_ECP\_CONTEXT the file-system stack can determine the client that requested that the file be opened and why.
-
-<span id="GUID_ECP_DUAL_OPLOCK_KEY"></span><span id="guid_ecp_dual_oplock_key"></span>GUID\_ECP\_DUAL\_OPLOCK\_KEY  
-A GUID that identifies the [**DUAL OPLOCK\_KEY\_ECP\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ifs/dual-oplock-key-ecp-context) structure. Like the [**OPLOCK\_KEY\_ECP\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ifs/oplock-key-ecp-context) structure, **DUAL OPLOCK\_KEY\_ECP\_CONTEXT** is used to attach an oplock key to the open file request. With **DUAL OPLOCK\_KEY\_ECP\_CONTEXT**, however, a parent key can also be set to provide oplock for a target file's directory.
-
-<span id="GUID_ECP_IO_DEVICE_HINT"></span><span id="guid_ecp_io_device_hint"></span>GUID\_ECP\_IO\_DEVICE\_HINT  
-A GUID that identifies the **IO\_DEVICE\_HINT\_ECP\_CONTEXT** structure. Device hints are used to assist name provider minifilter drivers in tracking a reparse target to new device.
-
-<span id="GUID_ECP_NETWORK_APP_INSTANCE"></span><span id="guid_ecp_network_app_instance"></span>GUID\_ECP\_NETWORK\_APP\_INSTANCE  
-A GUID that identifies the [**NETWORK\_APP\_INSTANCE\_ECP\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/hh439443) structure. A client application in a failover cluster may have a set of files opened on a node in the cluster. The file objects are tagged to an application by an instance identifier in the **NETWORK\_APP\_INSTANCE\_ECP\_CONTEXT** structure. On failover, a secondary node can validate a client application's access to the opened files with the previously cached application instance identifier.
-
- 
-
- 
-
-
-
-
+| ECP GUID | ECP context structure and meaning |
+| -------- | --------------------------------- |
+| ECP_TYPE_CLFS_CREATE_CONTAINER | The GUID used to identify the [**CREATE_REDIRECTION_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-create_redirection_ecp_context) ECP context structure. This ECP can be sent to NTFS to insert a new common log file system (CLFS) container during volume mount. |
+| ECP_TYPE_IO_STOP_ON_SYMLINK_FILTER_GUID | The GUID that identifies the [**IO_STOP_ON_SYMLINK_FILTER_ECP_v0**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_io_stop_on_symlink_filter_ecp_v0) ECP context structure. This ECP restricts the behavior of IO_STOP_ON_SYMLINK to act on specified reparse tags only. |
+| ECP_TYPE_OPEN_REPARSE_GUID | The GUID that identifies the [**OPEN_REPARSE_LIST**](/previous-versions/mt734264(v=vs.85)) ECP context structure. This ECP supports callers opening specific reparse points without inhibiting reparse behavior for all classes of reparse points. |
+| GUID_ECP_ATOMIC_CREATE | The GUID that identifies the [**ATOMIC_CREATE_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_atomic_create_ecp_context) ECP context structure. This ECP allow certain supplemental operations to be performed on a file atomically during create. |
+| GUID_ECP_CLOUDFILES_ATTRIBUTION | The GUID that identifies the ECP for cloud files attribution. |
+| GUID_ECP_CREATE_REDIRECTION | The GUID used to identify the ECP that can be sent to query the redirection state of a file for a specific create operation. |
+| GUID_ECP_CSV_DOWN_LEVEL_OPEN | The GUID that identifies the [**CSV_DOWN_LEVEL_FILE_TYPE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-csv_down_level_open_ecp_context) ECP context structure. This ECP is sent by the Cluster Shared Volumes file system (CSVFS) to the Metadata Node (MDS), and contains information about the type of create. |
+| GUID_ECP_CSV_QUERY_FILE_REVISION | The GUID that identifies the [**CSV_QUERY_FILE_REVISION_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-csv_query_file_revision_ecp_context) ECP context structure. This ECP can be sent to CSVFS to request a file revision number. |
+| GUID_ECP_CSV_QUERY_FILE_REVISION_FILE_ID_128 | The GUID that identifies the [**CSV_QUERY_FILE_REVISION_ECP_CONTEXT_FILE_ID_128**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-csv_query_file_revision_ecp_context_file_id_128) ECP context structure. This ECP can be sent to CSVFS to request a file revision number. |
+| GUID_ECP_CSV_SET_HANDLE_PROPERTIES | The GUID that identifies the [**CSV_SET_HANDLE_PROPERTIES_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-csv_set_handle_properties_ecp_context) ECP context structure. This ECP can be sent to CSVFS to set properties on how it should handle IO arriving on this open. |
+| GUID_ECP_DUAL_OPLOCK_KEY  | The GUID that identifies the [**DUAL OPLOCK_KEY_ECP_CONTEXT**](./dual-oplock-key-ecp-context.md) ECP context structure. Like the [**OPLOCK_KEY_ECP_CONTEXT**](./oplock-key-ecp-context.md) structure, **DUAL OPLOCK_KEY_ECP_CONTEXT** is used to attach an oplock key to the open file request. With **DUAL OPLOCK_KEY_ECP_CONTEXT**, a parent key can also be set to provide an oplock for a target file's directory. |
+| GUID_ECP_IO_DEVICE_HINT   | A GUID that identifies the [**IO_DEVICE_HINT_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-io_device_hint_ecp_context) structure. Device hints are used to assist name provider minifilter drivers in tracking a reparse target to new device. |
+| GUID_ECP_NETWORK_APP_INSTANCE   | The GUID that identifies the [**NETWORK_APP_INSTANCE_ECP_CONTEXT**](/previous-versions/hh439443(v=vs.85)) ECP context structure. A client application in a failover cluster might have a set of files opened on a node in the cluster. The file objects are tagged to an application by an instance identifier in the **NETWORK_APP_INSTANCE_ECP_CONTEXT** structure. On failover, a secondary node can validate a client application's access to the opened files with the previously cached application instance identifier. |
+| GUID_ECP_NETWORK_APP_INSTANCE_VERSION | The GUID that identifies the **NETWORK_APP_INSTANCE_VERSION_ECP_CONTEXT** structure, which is an ECP context for an application to provide its instance ID. This ECP must accompany a [**NETWORK_APP_INSTANCE_ECP_CONTEXT**](/previous-versions/hh439443(v=vs.85)) (GUID_ECP_NETWORK_APP_INSTANCE) to be valid. |
+| GUID_ECP_NETWORK_OPEN_CONTEXT   | The GUID that identifies the [**NETWORK_OPEN_ECP_CONTEXT**](/previous-versions/ff550896(v=vs.85)) ECP context structure and is used to attach extra information for network redirectors. This GUID also identifies the [**NETWORK_OPEN_ECP_CONTEXT_V0**](/previous-versions/ff550899(v=vs.85)) structure for drivers that run on Windows 7 and later versions of Windows and that must interpret network ECP contexts on files that reside on Windows Vista. |
+| GUID_ECP_NFS_OPEN   | The GUID that identifies the [**NFS_OPEN_ECP_CONTEXT**](/previous-versions/ff550942(v=vs.85)) structure. The Network File System (NFS) server attaches the NFS_OPEN_ECP_CONTEXT structure to an open file request. The NFS server uses this GUID on any open file request that the NFS server makes to satisfy a client request. The file-system stack can then determine whether NFS_OPEN_ECP_CONTEXT is attached to the open file request. Based on the information in NFS_OPEN_ECP_CONTEXT the file-system stack can determine the client that requested that the file be opened and why. |
+| GUID_ECP_OPEN_PARAMETERS | The GUID that identifies the [**ECP_OPEN_PARAMETERS**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_ecp_open_parameters) ECP context structure. This ECP allows a caller to specify the purpose of the file open without interfering with existing handles and/or opportunistic locks (oplocks) on the file. |
+| GUID_ECP_OPLOCK_KEY | The GUID that identifies the [**OPLOCK_KEY_ECP_CONTEXT**](./oplock-key-ecp-context.md) ECP context structure and is used to attach an oplock key to the open file request. The oplock key lets an application open multiple handles to the same stream without breaking the application's own oplock. For more information about oplocks and oplock keys, see [Oplock Semantics Overview](oplock-overview.md). |
+| GUID_ECP_PREFETCH_OPEN  | The GUID that identifies the [**PREFETCH_OPEN_ECP_CONTEXT**](/previous-versions/ff551843(v=vs.85)) ECP context structure. The prefetcher is a component of the operating system that is tightly integrated with the cache manager and the memory manager to make disk accesses more efficient and therefore improve performance. If other components interfere with the prefetcher, system performance decreases and might deadlock. Therefore, the prefetcher attaches the PREFETCH_OPEN_ECP_CONTEXT structure to a file to communicate that the prefetcher performs an open request on the file. This open request is specified by the **Context** member of PREFETCH_OPEN_ECP_CONTEXT. Other components, such as, file system filter drivers, can determine whether PREFETCH_OPEN_ECP_CONTEXT is attached to the file and then take appropriate action. |
+| GUID_ECP_QUERY_ON_CREATE | The GUID that identifies the ECP for query file information on create. |
+| GUID_ECP_RKF_BYPASS | The GUID that identifies the [**RKF_BYPASS_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-rkf_bypass_ecp_context) ECP context structure. |
+| GUID_ECP_SRV_OPEN   | The GUID that identifies the [**SRV_OPEN_ECP_CONTEXT**](/previous-versions/ff556749(v=vs.85)) ECP context structure. A server attaches the SRV_OPEN_ECP_CONTEXT structure to an open file request. The server uses this GUID on any open file request that the server makes to satisfy a conditional client request. The file-system stack can then determine whether SRV_OPEN_ECP_CONTEXT is attached to the open file request. Based on the information in SRV_OPEN_ECP_CONTEXT the file-system stack can determine the client that requested that the file be opened and why. |

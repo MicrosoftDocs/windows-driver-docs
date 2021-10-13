@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_HESSID_INFO
 description: WDI_TLV_HESSID_INFO is a TLV that contains HESSID information, which includes a list of HESSIDs, the Access Network Type, and Hotspot Indication Element.
-ms.assetid: 60D130AC-8249-4B60-B46C-8B83FDDB148F
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_HESSID_INFO Network Drivers Starting with Windows Vista
@@ -34,8 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

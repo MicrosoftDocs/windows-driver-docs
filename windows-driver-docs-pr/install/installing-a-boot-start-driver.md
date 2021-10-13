@@ -1,7 +1,6 @@
 ---
 title: Installing a Boot-Start Driver
 description: Installing a Boot-Start Driver
-ms.assetid: 0b93233b-266c-4d2e-a5d8-01d2d477dd13
 keywords:
 - Device setup WDK device installations , boot drivers
 - device installations WDK , boot drivers
@@ -12,7 +11,7 @@ keywords:
 - platform-specific distribution disks WDK
 - cross-platform distribution disks WDK
 - vendor-supplied boot drivers WDK
-ms.date: 04/20/2017
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -69,7 +68,7 @@ When Windows fails to start, certain error messages that are displayed can indic
 
 ### <a href="" id="boot-start-driver-distribution-disk"></a> Boot-Start Driver Distribution Disk
 
-A *boot-start driver distribution disk* is a medium, such as a floppy disk or USB flash drive, that contains a *TxtSetup.oem* file and the related driver files. The *TxtSetup.oem* file is a text file that contains a list of hardware components, a list of files on the distribution disk that will be copied to the system, and a list of registry keys and values that will be created. A sample *TxtSetup.oem* file is provided with the Windows Driver Kit (WDK), under the \\src directory of the WDK. For details about the contents of a *TxtSetup.oem* file, see [TxtSetup.oem File Format](https://docs.microsoft.com/previous-versions/ff553509(v=vs.85)).
+A *boot-start driver distribution disk* is a medium, such as a floppy disk or USB flash drive, that contains a *TxtSetup.oem* file and the related driver files. The *TxtSetup.oem* file is a text file that contains a list of hardware components, a list of files on the distribution disk that will be copied to the system, and a list of registry keys and values that will be created. A sample *TxtSetup.oem* file is provided with the Windows Driver Kit (WDK), under the \\src directory of the WDK. For details about the contents of a *TxtSetup.oem* file, see [TxtSetup.oem File Format](/previous-versions/ff553509(v=vs.85)).
 
 The following requirements and recommendations apply to platform-specific and cross-platform distributions disks:
 
@@ -125,15 +124,3 @@ Windows also supports platform-specific distribution disks. A platform-specific 
 The driver files for a given platform on a cross-platform distribution disk or on a platform-specific distribution disk must be located relative to the directory that contains the platform-specific *TxtSetup.oem* file.
 
 **Tip**  Although not required, we recommend that a *TxtSetup.oem* file always be placed in a corresponding platform directory. Using platform directories eliminates the possibility that Windows might attempt to use a *TxtSetup.oem* file that is incompatible with the platform on which Windows is running. For example, if a user attempts an unattended installation on a platform with a distribution disk that does not contain a corresponding platform directory, Windows cannot determine whether the *TxtSetup.oem* file in the default directory is compatible with the platform. If a driver fails to load because the driver is incompatible with the platform, Windows displays an error message and terminates the unattended installation.
-
-
-
-
-
-
-
-
-
-
-
-

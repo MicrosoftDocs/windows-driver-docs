@@ -1,16 +1,32 @@
 ---  
 title: System-Defined Device Setup Classes Available to Vendors  
-description: System-Defined Device Setup Classes Available to Vendors  
-ms.assetid: d4b8a964-f843-4960-9077-46746af27a61
-ms.date: 05/08/2018
+description: System-Defined Device Setup Classes Available to Vendors 
+ms.date: 06/04/2021
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q1
 ---  
 
 # System-Defined Device Setup Classes Available to Vendors  
-  
-  
-The following classes and GUIDs are defined by the operating system. Unless otherwise noted, these classes and GUIDs can be used to install devices (or drivers) on Windows 2000 and later versions of Windows:  
-  
+
+If you're writing a Windows device driver for a specific category of device, you can use the following list to select the right pre-defined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file.
+
+> [!NOTE]
+> If you're looking for info on reserved classes and GUIDs, see [System-Defined Device Setup Classes Reserved for System Use](system-defined-device-setup-classes-reserved-for-system-use.md).
+
+To see how these entries appear in an INF file, check out [cdrom.inf](https://github.com/microsoft/Windows-driver-samples/blob/aaeca58c5e7b67740a603a3150db225670b42bb6/storage/class/cdrom/src/cdrom.inf#L7-L8) in the [Windows driver samples](https://github.com/microsoft/Windows-driver-samples) repo.
+
+Values in the list can be used to install device drivers on Windows 2000 and later, unless specially noted.
+
+> [!NOTE]
+> If you're looking for info on troubleshooting a problem with a CD or DVD drive, see [The CD drive or the DVD drive does not work as expected](https://support.microsoft.com/help/929461/the-cd-drive-or-the-dvd-drive-does-not-work-as-expected-on-a-computer).
+
+## Device categories and class values 
+
+**Audio Processing Objects (APOs)**  
+Class = AudioProcessingObject  
+ClassGuid = {5989fce8-9cd0-467d-8a6a-5419e31529d4}  
+This class includes Audio processing objects (APOs). For more info, see [Windows Audio Processing Objects](../audio/windows-audio-processing-objects.md).  
+
 **Battery Devices**  
 Class = Battery  
 ClassGuid = {72631e54-78a4-11d0-bcf7-00aa00b7b32a}  
@@ -49,7 +65,7 @@ This class includes video adapters. Drivers for this class include display drive
 **Extension INF**  
 Class = Extension  
 ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}  
-(Windows 10 and later versions of Windows) This class includes all devices requiring customizations. For more details, see [Using an Extension INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).  
+(Windows 10 and later versions of Windows) This class includes all devices requiring customizations. For more details, see [Using an Extension INF File](./using-an-extension-inf-file.md).  
   
 <a href="" id="floppy-disk-controllers-"></a>**Floppy Disk Controllers**  
 Class = FDC  
@@ -69,7 +85,7 @@ This class includes hard disk controllers, including ATA/ATAPI controllers but n
 **Human Interface Devices (HID)**  
 Class = HIDClass  
 ClassGuid = {745a17a0-74d3-11d0-b6fe-00a0c90f57da}  
-This class includes interactive input devices that are operated by the system-supplied [HID class driver](https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)  
+This class includes interactive input devices that are operated by the system-supplied [HID class driver](../hid/hid-architecture.md). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)  
   
 **IEEE 1284.4 Devices**  
 Class = Dot4  
@@ -131,7 +147,7 @@ This class includes memory devices, such as flash memory cards.
 <a href="" id="modem-"></a>**Modem**  
 Class = Modem  
 ClassGuid = {4d36e96d-e325-11ce-bfc1-08002be10318}  
-This class includes modem devices or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](https://docs.microsoft.com/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](https://docs.microsoft.com/previous-versions/windows/hardware/modem/ff541218(v=vs.85)).  
+This class includes [modem devices](/previous-versions/windows/hardware/modem/ff542476(v=vs.85)). An INF file for a device of this class specifies the features and configuration of the device and stores this information in the registry. An INF file for a device of this class can also be used to install device drivers for a *controllerless modem* or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](/previous-versions/windows/hardware/modem/ff541218(v=vs.85)).  
   
 <a href="" id="monitor-"></a>**Monitor**  
 Class = Monitor  
@@ -161,7 +177,7 @@ This class includes intelligent multiport serial cards, but not peripheral devic
 <a href="" id="network-adapter-"></a>**Network Adapter**  
 Class = Net  
 ClassGuid = {4d36e972-e325-11ce-bfc1-08002be10318}  
-This class consists of network adapter drivers.  These drivers must either call [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver) or [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate).  Drivers that do not use NDIS or NetAdapter should use a different setup class.
+This class consists of network adapter drivers.  These drivers must either call [**NdisMRegisterMiniportDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver) or [**NetAdapterCreate**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptercreate).  Drivers that do not use NDIS or NetAdapter should use a different setup class.
   
 <a href="" id="network-client-"></a>**Network Client**  
 Class = NetClient  
@@ -216,7 +232,12 @@ This class includes processor types.
 Class = SCSIAdapter  
 ClassGuid = {4d36e97b-e325-11ce-bfc1-08002be10318}  
 This class includes SCSI HBAs (Host Bus Adapters) and disk-array controllers.  
-  
+ 
+<a href="" id="security-devices-"></a>**Security Devices**
+Class = Securitydevices  
+ClassGuid = {d94ee5d8-d189-4994-83d2-f68d7d41b0e6}  
+(Windows 8.1, Windows 10) This class includes [Trusted Platform Module](/windows/security/information-protection/tpm/trusted-platform-module-top-node) chips. A TPM is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. Any new manufactured device must implement and enable TPM 2.0 by default. For more information, see [TPM Recommendations](/windows/security/information-protection/tpm/tpm-recommendations).
+
 **Sensors**  
 Class = Sensor  
 ClassGuid = {5175d334-c371-4806-b3ba-71fd53c9258d}  
@@ -230,7 +251,7 @@ This class includes smart card readers.
 **Software Component**  
 Class = SoftwareComponent  
 ClassGuid = {5c4c3332-344d-483c-8739-259e934c9cc8}  
-(Windows 10 version 1703 and later versions of Windows) This class includes virtual child device to encapsulate software components. For more details, see [Adding Software Components with an INF file](https://docs.microsoft.com/windows-hardware/drivers/install/adding-software-components-with-an-inf-file).  
+(Windows 10 version 1703 and later versions of Windows) This class includes virtual child device to encapsulate software components. For more details, see [Adding Software Components with an INF file](./using-a-component-inf-file.md).  
   
 <a href="" id="storage-volumes-"></a>**Storage Volumes**  
 Class = Volume  
@@ -264,17 +285,7 @@ Class = WPD
 ClassGuid = {eec5ad98-8080-425f-922a-dabf3de3f69a}  
 (Windows Vista and later versions of Windows) This class includes WPD devices.  
   
-**Windows SideShow**  
-Class = SideShow  
-ClassGuid = {997b5d8d-c442-4f2e-baf3-9c8e671e9e21}  
-(Windows Vista and later versions of Windows) This class includes all devices that are compatible with Windows SideShow.  
-  
-   
-  
    
   
 
-  
-  
-  
   

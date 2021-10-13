@@ -1,7 +1,6 @@
 ---
 title: Differentiating the SKU for Windows 7 Display Drivers
 description: Differentiating the SKU for Windows 7 Display Drivers
-ms.assetid: 3cf72bd5-21bc-4a7f-8c2f-98f8e70d8248
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -37,13 +36,7 @@ The following example shows the **Manufacturer** directive, and the section that
 [ATI.Mfg.NTamd64...1]
 ```
 
-For more information about the **Manufacturer** section, see [**INF Manufacturer Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section).
+For more information about the **Manufacturer** section, see [**INF Manufacturer Section**](../install/inf-manufacturer-section.md).
 
  
-
- 
-
-
-
-
 

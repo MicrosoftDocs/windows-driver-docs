@@ -1,7 +1,6 @@
 ---
 title: Tracking Contention in the Server Process
 description: Tracking Contention in the Server Process
-ms.assetid: ef0c0294-a010-439b-82dd-25148e05a7f1
 keywords: ["RPC debugging, tracking contention"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 In order to service incoming requests, RPC will maintain a set of worker threads. Ideally, the number of threads will be small. However, this ideal situation has only been seen in lab environments, where the server manager routines are carefully tuned. In a real situation, the number of threads will vary depending on server workload, but it can be anywhere from 1 to 50.
 
-If the number of worker threads is above 50, you may have excessive contention in the server process. Common causes of this are indiscriminate use of the heap, memory pressure, or serializing most activities in a server through a single critical section.
+If the number of worker threads is above 50, you may have excessive contention in the server process. Common causes of this are icriminate use of the heap, memory pressure, or serializing most activities in a server through a single critical section.
 
 To see the number of threads in a given server process, use the [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md) extension, or use DbgRpc with the **-t** switch. Supply the process ID (in the following example, 0xC4):
 

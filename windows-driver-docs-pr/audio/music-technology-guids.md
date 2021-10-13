@@ -1,7 +1,6 @@
 ---
 title: Music Technology GUIDs
 description: Music Technology GUIDs
-ms.assetid: 3b7c2907-e67f-458e-809d-080dcc30be1a
 keywords:
 - WDM audio extensions WDK , music technology GUIDs
 - music technology GUIDs WDK audio
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="music_technology_guids"></span><span id="MUSIC_TECHNOLOGY_GUIDS"></span>
 
 
-A MIDI or DMus miniport driver must specify the range of stream formats that each of its pins is capable of handling. As described in [Pin Factories](pin-factories.md), the driver specifies this information as an array of one or more data range descriptors, each of which is a structure of type [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_music). This structure's **Technology** member indicates what type of synthesizer technology the MIDI or DirectMusic device uses. A miniport driver can set the **Technology** member to one of the GUID values shown in the following table (left column).
+A MIDI or DMus miniport driver must specify the range of stream formats that each of its pins is capable of handling. As described in [Pin Factories](pin-factories.md), the driver specifies this information as an array of one or more data range descriptors, each of which is a structure of type [**KSDATARANGE\_MUSIC**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music). This structure's **Technology** member indicates what type of synthesizer technology the MIDI or DirectMusic device uses. A miniport driver can set the **Technology** member to one of the GUID values shown in the following table (left column).
 
 <table>
 <colgroup>
@@ -80,7 +79,7 @@ The **midiOutGetDevCaps** function translates the technology GUID that it receiv
 
 When enumerating devices, a MIDI application that uses the Windows multimedia midiOut or midiIn API can see MIDI pins, but not DirectMusic pins. A DirectMusic application can see both MIDI and DirectMusic pins. A MIDI or DMus miniport driver identifies a MIDI pin by setting the subtype GUID in the pin's data ranges to KSDATAFORMAT\_SUBTYPE\_MIDI. A DMus miniport driver identifies a DirectMusic pin by setting the subtype GUID to KSDATAFORMAT\_SUBTYPE\_DIRECTMUSIC. For examples of data ranges for MIDI and DirectMusic pins, see [MIDI Stream Data Range](midi-stream-data-range.md) and [DirectMusic Stream Data Range](directmusic-stream-data-range.md).
 
-As explained in [MIDI and DirectMusic Filters](midi-and-directmusic-filters.md), an adapter driver calls the [**PcNewMiniport**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewminiport) function to create an instance of one of the system-supplied miniport drivers in Portcls.sys. The caller specifies one of the driver GUIDs in the following table to specify which miniport driver to instantiate.
+As explained in [MIDI and DirectMusic Filters](midi-and-directmusic-filters.md), an adapter driver calls the [**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport) function to create an instance of one of the system-supplied miniport drivers in Portcls.sys. The caller specifies one of the driver GUIDs in the following table to specify which miniport driver to instantiate.
 
 <table>
 <colgroup>
@@ -127,7 +126,7 @@ However, the midiOut API prefers wavetable synthesizer devices (with technology 
 
 To make itself eligible to be the default device, a wavetable device that can play raw MIDI should expose itself as a wavetable device, not an MPU-401 device. However, if an adapter driver is using the system-supplied MPU-401 miniport driver, DMusUART, to manage its wavetable synthesizer device, that miniport driver statically assigns the technology GUID KSMUSIC\_TECHNOLOGY\_PORT to its pins.
 
-By calling the [**IMusicTechnology::SetTechnology**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-imusictechnology-settechnology) method, an adapter driver can overwrite the technology GUIDs in a miniport driver's data ranges. In the following code example, an adapter driver changes the technology GUID in the DMusUART miniport driver's data ranges from its default value, KSMUSIC\_TECHNOLOGY\_PORT, to the value KSMUSIC\_TECHNOLOGY\_WAVETABLE. With this new setting, the MPU-like wavetable device is eligible to be selected by the midiOut API as the default MIDI device.
+By calling the [**IMusicTechnology::SetTechnology**](/windows-hardware/drivers/ddi/portcls/nf-portcls-imusictechnology-settechnology) method, an adapter driver can overwrite the technology GUIDs in a miniport driver's data ranges. In the following code example, an adapter driver changes the technology GUID in the DMusUART miniport driver's data ranges from its default value, KSMUSIC\_TECHNOLOGY\_PORT, to the value KSMUSIC\_TECHNOLOGY\_WAVETABLE. With this new setting, the MPU-like wavetable device is eligible to be selected by the midiOut API as the default MIDI device.
 
 ```cpp
   // Create the miniport object.
@@ -152,12 +151,7 @@ By calling the [**IMusicTechnology::SetTechnology**](https://docs.microsoft.com/
   }
 ```
 
-As indicated in the comment in the preceding code example, the adapter driver should call [**SetTechnology**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-imusictechnology-settechnology) before calling the port driver's `Init` method (which, in turn, calls the miniport driver's `Init` method). The system-supplied DMusUART and UART miniport drivers both support the [IMusicTechnology](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-imusictechnology) interface. For other miniport drivers, support for IMusicTechnology is optional. For more information, see the implementation of the **SetTechnology** method in the DMusUART sample audio driver in the Microsoft Windows Driver Kit (WDK).
+As indicated in the comment in the preceding code example, the adapter driver should call [**SetTechnology**](/windows-hardware/drivers/ddi/portcls/nf-portcls-imusictechnology-settechnology) before calling the port driver's `Init` method (which, in turn, calls the miniport driver's `Init` method). The system-supplied DMusUART and UART miniport drivers both support the [IMusicTechnology](/windows-hardware/drivers/ddi/portcls/nn-portcls-imusictechnology) interface. For other miniport drivers, support for IMusicTechnology is optional. For more information, see the implementation of the **SetTechnology** method in the DMusUART sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
  
-
- 
-
-
-
 

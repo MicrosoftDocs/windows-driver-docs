@@ -23,6 +23,12 @@
       href: writing-tests-with-wdtf.md
     - name: "Simple Data Evaluation Language Overview"
       href: simple-data-evaluation-language-overview.md
+    - name: "Device relation tokens in SDEL"
+      href: device-relation-tokens-in-sdel.md
+    - name: "Attribute tokens in SDEL"
+      href: attribute-tokens-in-sdel.md
+    - name: "Examples of SDEL queries"
+      href: examples-of-sdel-queries.md
     - name: "Creating WDTF Scenarios"
 # Auto-expanded node
       items: 

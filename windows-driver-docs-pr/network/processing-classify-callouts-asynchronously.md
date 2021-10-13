@@ -1,7 +1,6 @@
 ---
 title: Processing Classify Callouts Asynchronously
 description: Processing Classify Callouts Asynchronously
-ms.assetid: 1026f917-7b21-4b01-8cfd-4d14e92106fe
 keywords:
 - asynchronous processing of WFP classify callouts WDK Windows Filtering Platform
 - Windows Filtering Platform Callout Drivers WDK , asynchronous processing of classify callouts
@@ -14,14 +13,14 @@ ms.localizationpriority: medium
 # Processing Classify Callouts Asynchronously
 
 
-A WFP callout driver can authorize or deny a network operation, or admit or discard a network packet, by returning the action types **FWP\_ACTION\_PERMIT**, **FWP\_ACTION\_CONTINUE**, or **FWP\_ACTION\_BLOCK** from the [*classifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function. Frequently a callout driver cannot return an inspection decision from its *classifyFn* function until the indicated information, such as classifiable fields, metadata, or packets, can be forwarded for processing to another component, such as a user-mode application. In these cases a decision may have to be made asynchronously at some later time.
+A WFP callout driver can authorize or deny a network operation, or admit or discard a network packet, by returning the action types **FWP\_ACTION\_PERMIT**, **FWP\_ACTION\_CONTINUE**, or **FWP\_ACTION\_BLOCK** from the [*classifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function. Frequently a callout driver cannot return an inspection decision from its *classifyFn* function until the indicated information, such as classifiable fields, metadata, or packets, can be forwarded for processing to another component, such as a user-mode application. In these cases a decision may have to be made asynchronously at some later time.
 
 ### General Rules for Asynchronous Processing
 
 WFP supports asynchronous processing of the *classifyFn* callout function. However, the mechanism for doing this differs according to the different layers.
 
 <a href="" id="asynchronous-ale-classify-------"></a>**Asynchronous ALE Classify**   
-A callout driver must call the [**FwpsPendOperation0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpspendoperation0) function from *classifyFn*. The asynchronous operation must be completed with a call to the [**FwpsCompleteOperation0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpscompleteoperation0) function.
+A callout driver must call the [**FwpsPendOperation0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpspendoperation0) function from *classifyFn*. The asynchronous operation must be completed with a call to the [**FwpsCompleteOperation0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscompleteoperation0) function.
 
 <a href="" id="asynchronous-packet-classify-------"></a>**Asynchronous Packet Classify**   
 A callout driver should return **FWP\_ACTION\_BLOCK** from the *classifyFn* function, with the **FWPS\_CLASSIFY\_OUT\_FLAG\_ABSORB** flag set. Network packets must be referenced or cloned. The asynchronous operation is completed by either reinjecting the cloned or modified packet or by silently discarding the packet.
@@ -50,15 +49,9 @@ Asynchronous processing is not supported at these layers (**FWPS\_LAYER\_ALE\_FL
 A callout driver must not perform asynchronous processing of packets that require ALE classify processing at an incoming (inbound) transport layer (**FWPS\_LAYER\_INBOUND\_TRANSPORT\_V4** or **FWPS\_LAYER\_INBOUND\_TRANSPORT\_V6**). Doing this can interfere with flow creation. When WFP calls the *classifyFn* callout function at an incoming transport layer, it sets the **FWPS\_METADATA\_FIELD\_ALE\_CLASSIFY\_REQUIRED** flag for those packets that require ALE classify processing. A callout driver should permit such packets from an INBOUND\_TRANSPORT layer and should defer processing them until they reach an ALE\_RECV\_ACCEPT layer.
 
 <a href="" id="stream-layers-------"></a>**STREAM Layers**   
-At a stream layer (**FWPS\_LAYER\_STREAM\_V4** or **FWPS\_LAYER\_STREAM\_V6**), TCP data segments are indicated instead of an IP or TCP header. The stream layer is also where a chain of net buffer lists can be indicated in one call to the *classifyFn* callout function. WFP makes available specialized clone and injection functions, [**FwpsCloneStreamData0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsclonestreamdata0) and [**FwpsStreamInjectAsync0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsstreaminjectasync0), for stream layer callouts to use.
+At a stream layer (**FWPS\_LAYER\_STREAM\_V4** or **FWPS\_LAYER\_STREAM\_V6**), TCP data segments are indicated instead of an IP or TCP header. The stream layer is also where a chain of net buffer lists can be indicated in one call to the *classifyFn* callout function. WFP makes available specialized clone and injection functions, [**FwpsCloneStreamData0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsclonestreamdata0) and [**FwpsStreamInjectAsync0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0), for stream layer callouts to use.
 
 Because of the ordered delivery nature of stream layer data, a callout driver must continue to clone and absorb data as long any stream data is still pending. Mixing asynchronous and synchronous operations for a given stream flow can result in undefined behavior.
 
  
-
- 
-
-
-
-
 

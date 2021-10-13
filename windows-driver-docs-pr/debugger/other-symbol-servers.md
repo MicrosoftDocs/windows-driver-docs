@@ -1,7 +1,6 @@
 ---
 title: Other Symbol Servers
 description: Other Symbol Servers
-ms.assetid: 69d88a60-88b6-4118-9f8b-0d7b80bad1ab
 keywords: ["symbol servers, writing your own symbol server"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ If you wish to use a different method for your symbol search, you can provide yo
 
 ### <span id="setting_the_symbol_path"></span><span id="SETTING_THE_SYMBOL_PATH"></span>Setting the Symbol Path
 
-When implementing a symbol server other than SymSrv, the debugger's symbol path is set in the same way as with SymSrv. See [SymSrv](symsrv.md) for an explanation of the symbol path syntax. The only change you need to make is to replace the string **symsrv.dll** with the name of your own symbol server DLL.
+When implementing a symbol server other than SymSrv, the debugger's symbol path is set in the same way as with SymSrv. See [Microsoft Public Symbols](microsoft-public-symbols.md) for an explanation of the symbol path syntax. The only change you need to make is to replace the string **symsrv.dll** with the name of your own symbol server DLL.
 
 If you wish, you are free to use a different syntax within the parameters to indicate the use of different technologies such as UNC paths, SQL database identifiers, or Internet specifications.
 

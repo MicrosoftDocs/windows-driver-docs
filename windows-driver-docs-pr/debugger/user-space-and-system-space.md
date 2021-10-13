@@ -1,7 +1,6 @@
 ---
 title: User Space and System Space
 description: User Space and System Space
-ms.assetid: 2d988178-cd19-4dc4-8dc1-39b9b6a1aaad
 keywords: ["system space", "system space, addresses", "system space, breakpoints", "kernel space", "kernel space, addresses", "kernel space, breakpoints", "user space", "user space, addresses", "user space, breakpoints"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

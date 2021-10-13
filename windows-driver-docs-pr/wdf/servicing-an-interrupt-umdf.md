@@ -1,40 +1,31 @@
 ---
-title: Servicing an Interrupt
+title: Servicing an Interrupt (UMDF 1)
 description: Servicing an Interrupt
-ms.assetid: 79BA75B3-E10F-4AC1-A2C5-A502BF821188
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Servicing an Interrupt
+# Servicing an Interrupt (UMDF 1)
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 Servicing an interrupt consists of two steps:
 
 1.  Saving volatile information (such as register contents) quickly, in an interrupt service routine.
 2.  Processing the saved volatile information in a workitem routine.
 
-When a device generates a hardware interrupt, the framework calls the driver's interrupt service routine (ISR), which framework-based drivers implement as an [*OnInterruptIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function.
+When a device generates a hardware interrupt, the framework calls the driver's interrupt service routine (ISR), which framework-based drivers implement as an [*OnInterruptIsr*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function.
 
-The [*OnInterruptIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function, which runs at PASSIVE\_LEVEL, must quickly save interrupt information, such as register contents, queue a workitem to process the data further, and return from the ISR to allow servicing of other interrupts if the interrupt line is shared. Because the UMDF driver's ISR runs at PASSIVE\_LEVEL, handling PCI line-based interrupts is not recommended. These interrupts are typically shared between multiple devices, some of which might not accept ISR delays. However, you can handle PCI MSI interrupts in a UMDF driver. These interrupts have edge semantics and are not shared.
+The [*OnInterruptIsr*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function, which runs at PASSIVE\_LEVEL, must quickly save interrupt information, such as register contents, queue a workitem to process the data further, and return from the ISR to allow servicing of other interrupts if the interrupt line is shared. Because the UMDF driver's ISR runs at PASSIVE\_LEVEL, handling PCI line-based interrupts is not recommended. These interrupts are typically shared between multiple devices, some of which might not accept ISR delays. However, you can handle PCI MSI interrupts in a UMDF driver. These interrupts have edge semantics and are not shared.
 
-Typically, the [*OnInterruptIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function schedules a workitem to process the saved information later. Framework-based drivers implement workitem routines as [*OnInterruptWorkItem*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_workitem) callback functions.
+Typically, the [*OnInterruptIsr*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function schedules a workitem to process the saved information later. Framework-based drivers implement workitem routines as [*OnInterruptWorkItem*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_workitem) callback functions.
 
-Most drivers use a single [*OnInterruptWorkItem*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_workitem) callback function for each type of interrupt. To schedule execution of an *OnInterruptWorkItem* callback function, a driver must call [**IWDFInterrupt::QueueWorkItemForIsr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfinterrupt-queueworkitemforisr) from within the [*OnInterruptIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function.
+Most drivers use a single [*OnInterruptWorkItem*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_workitem) callback function for each type of interrupt. To schedule execution of an *OnInterruptWorkItem* callback function, a driver must call [**IWDFInterrupt::QueueWorkItemForIsr**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfinterrupt-queueworkitemforisr) from within the [*OnInterruptIsr*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function.
 
-If your driver creates multiple framework queue objects for each device, you might consider using a separate workitem object and [*OnWorkItem*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfworkitem/nc-wudfworkitem-wudf_workitem_function) callback function for each queue. To schedule execution of an *OnWorkItem* callback function, the driver must first create one or more workitem objects by calling [**IWdfDevice3::CreateWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice3-createworkitem), typically from the driver's [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback function. Then the driver's [*OnInterruptIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function can call [**IWDFWorkItem::Enqueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfworkitem-enqueue).
+If your driver creates multiple framework queue objects for each device, you might consider using a separate workitem object and [*OnWorkItem*](/windows-hardware/drivers/ddi/wudfworkitem/nc-wudfworkitem-wudf_workitem_function) callback function for each queue. To schedule execution of an *OnWorkItem* callback function, the driver must first create one or more workitem objects by calling [**IWdfDevice3::CreateWorkItem**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice3-createworkitem), typically from the driver's [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback function. Then the driver's [*OnInterruptIsr*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_isr) callback function can call [**IWDFWorkItem::Enqueue**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfworkitem-enqueue).
 
-Drivers typically complete I/O requests in their [*OnInterruptWorkItem*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_workitem) or [*OnWorkItem*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfworkitem/nc-wudfworkitem-wudf_workitem_function) callback functions.
+Drivers typically complete I/O requests in their [*OnInterruptWorkItem*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_workitem) or [*OnWorkItem*](/windows-hardware/drivers/ddi/wudfworkitem/nc-wudfworkitem-wudf_workitem_function) callback functions.
 
-For an example of a UMDF driver that handles interrupts, see the [SpbAccelerometer](https://go.microsoft.com/fwlink/p/?linkid=256189) sample driver, available starting in the Windows 8 WDK.
-
- 
-
- 
-
-
-
-
+For an example of a UMDF driver that handles interrupts, see the [SpbAccelerometer](/samples/browse/) sample driver, available starting in the Windows 8 WDK.
 

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PATCH\_CODE\_READER
 description: The WIA\_IPS\_PATCH\_CODE\_READER property is used to enable patch code detection. This property is required for all Patch code Reader items.
-ms.assetid: 8F008388-9822-44DC-B022-0822A8204740
 keywords: ["WIA_IPS_PATCH_CODE_READER Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the required values for the **WIA\_IPS\_PATCH\_CODE\_READER** property.
 
@@ -88,8 +86,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

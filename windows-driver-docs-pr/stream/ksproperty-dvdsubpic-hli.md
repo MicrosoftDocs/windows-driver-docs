@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDSUBPIC\_HLI
 description: The KSPROPERTY\_DVDSUBPIC\_HLI property specifies the rectangle of the subpicture or screen to change, including the color or contrast.
-ms.assetid: c3498ff8-11fe-4f53-8317-83a487684ac7
 keywords: ["KSPROPERTY_DVDSUBPIC_HLI Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_DVDSUBPIC\_HLI property specifies the rectangle of the subpictur
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksproperty_sphli" data-raw-source="[&lt;strong&gt;KSPROPERTY_SPHLI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksproperty_sphli)"><strong>KSPROPERTY_SPHLI</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sphli" data-raw-source="[&lt;strong&gt;KSPROPERTY_SPHLI&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sphli)"><strong>KSPROPERTY_SPHLI</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,13 +56,11 @@ The KSPROPERTY\_DVDSUBPIC\_HLI property specifies the rectangle of the subpictur
 
 The property value (operation data) is a KSPROPERTY\_SPHLI structure that describes the DVD highlight information to change.
 
-Remarks
--------
+## Remarks
 
-The [**KSPROPERTY\_SPHLI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksproperty_sphli) structure describes the currently selected button from the DVD highlight information.
+The [**KSPROPERTY\_SPHLI**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sphli) structure describes the currently selected button from the DVD highlight information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,14 +78,4 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_SPHLI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksproperty_sphli)
-
- 
-
- 
-
-
-
-
-
-
+[**KSPROPERTY\_SPHLI**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sphli)

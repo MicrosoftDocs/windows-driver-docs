@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_SURROUND\_ENCODE
 description: The KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property specifies whether the filter's surround encoder is enabled or disabled. A surround-encoder node (KSNODETYPE\_PROLOGIC\_ENCODER) performs Dolby Surround Pro Logic encoding.
-ms.assetid: 249ee13f-a986-4cb1-906f-55062274df45
 keywords: ["KSPROPERTY_AUDIO_SURROUND_ENCODE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property specifies whether the filter's 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -61,15 +60,13 @@ The property value (operation data) is of type BOOL and indicates whether the su
 
 A KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
-In Microsoft Windows XP and later, the [KMixer system driver](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components#kmixer-system-driver) supports the KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property.
+In Microsoft Windows XP and later, the [KMixer system driver](./kernel-mode-wdm-audio-components.md#kmixer-system-driver) supports the KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property.
 
 If enabled, the surround-encoder node encodes the four-channel input stream (with channels for left, right, center, and back speakers) to a surround-encoded stereo output stream. This output stream can be decoded by a [**KSNODETYPE\_PROLOGIC\_DECODER**](ksnodetype-prologic-decoder.md) node, for example. It can also be played through the audio device's analog stereo outputs, which can be connected to an external surround decoder that directly drives left, right, center, and back speakers.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,18 +84,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_PROLOGIC\_ENCODER**](ksnodetype-prologic-encoder.md)
 
 [**KSNODETYPE\_PROLOGIC\_DECODER**](ksnodetype-prologic-decoder.md)
-
- 
-
- 
-
-
-
-
-
 

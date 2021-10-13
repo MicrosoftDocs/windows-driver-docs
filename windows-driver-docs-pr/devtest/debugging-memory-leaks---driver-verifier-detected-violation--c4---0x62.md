@@ -1,7 +1,6 @@
 ---
 title: Debugging memory leaks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x62
 description: Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x62 when a driver unloads without first freeing all of its pool allocations.
-ms.assetid: CDBE9A18-4126-4AD7-8E53-6D75DCA8B022
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Debugging memory leaks - DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4): 0x62
 
 
-[Driver Verifier](driver-verifier.md) generates [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) with a parameter 1 value of 0x62 when a driver unloads without first freeing all of its pool allocations. Unfreed memory allocations (also called memory leaks) are a common cause of lowered operating system performance. These can fragment the system pools and eventually cause system crashes.
+[Driver Verifier](driver-verifier.md) generates [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) with a parameter 1 value of 0x62 when a driver unloads without first freeing all of its pool allocations. Unfreed memory allocations (also called memory leaks) are a common cause of lowered operating system performance. These can fragment the system pools and eventually cause system crashes.
 
 When you have a kernel debugger connected to a test computer running [Driver Verifier](driver-verifier.md), if Driver Verifier detects a violation, Windows breaks into the debugger and displays a brief description of the error.
 
@@ -24,7 +23,7 @@ When you have a kernel debugger connected to a test computer running [Driver Ver
 
 ### Use !analyze to display information about the bug check
 
-As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) command.
+As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debugger/-analyze.md) command.
 
 ```
 kd> !analyze -v
@@ -56,7 +55,7 @@ Arg4: 00000003, total # of (paged+nonpaged) allocations that weren't freed.
     that were leaked that caused the bugcheck.
 ```
 
-A [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) with a parameter 1 (Arg1) value of 0x62 is described as follows:
+A [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) with a parameter 1 (Arg1) value of 0x62 is described as follows:
 
 DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4)
 Arg1
@@ -69,13 +68,13 @@ Driver Verifier flags
 Name of the driver.
 Reserved
 Total number of allocations that were not freed, including both paged and non-paged pool.
-The driver is unloading without first freeing its pool allocations. In Windows 8.1, this bug check will also occur if the driver unloaded without first freeing any work items ([**IO\_WORKITEM**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess)) it had allocated with [**IoAllocateWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateworkitem). A bug check with this parameter occurs only when the [Pool Tracking](pool-tracking.md) option is active.
+The driver is unloading without first freeing its pool allocations. In Windows 8.1, this bug check will also occur if the driver unloaded without first freeing any work items ([**IO\_WORKITEM**](../kernel/eprocess.md)) it had allocated with [**IoAllocateWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem). A bug check with this parameter occurs only when the [Pool Tracking](pool-tracking.md) option is active.
 Specify [Pool Tracking](pool-tracking.md) (**verifier /flags 0x8**). The Pool Tracking option is enabled with Standard Flags (**verifier /standard** ).
  
 
 ### Use the !verifier 3 extension command to find out about the pool allocations
 
-For this particular bug check, the information provided in parameter 4 (Arg4) is the most important. Arg4 shows number of allocations that weren’t freed. The output of the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) command also shows the [**!verifier**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-verifier) debugger extension command that you can use to display what those allocations were. The full output of **!verifier 3 MyDriver.sys** command is shown in the following example:
+For this particular bug check, the information provided in parameter 4 (Arg4) is the most important. Arg4 shows number of allocations that weren’t freed. The output of the [**!analyze**](../debugger/-analyze.md) command also shows the [**!verifier**](../debugger/-verifier.md) debugger extension command that you can use to display what those allocations were. The full output of **!verifier 3 MyDriver.sys** command is shown in the following example:
 
 ```
 kd> !verifier 3 Mydriver.sys
@@ -153,7 +152,7 @@ Summary of All Verifier Statistics
 
 In example, the driver, MyDriver.sys, has two memory allocations and one I/O work item that have not been properly freed. Each listing shows the address of the current allocation, the size, the pool tag used, and the address in the driver code where the request for an allocation was made. If symbols are loaded for the driver in question, it will also show the name of the function next to the caller address.
 
-Of the tags displayed, only one (for the allocation at address 0x8645a000) was supplied by the driver itself (**mdrv**). The tag **VMdl** is used whenever a driver being verified by Driver Verifier makes calls [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatemdl). Similarly, the tag **Vfwi** is used whenever a driver being verified by Driver Verifier makes a request to allocate a work item using [**IoAllocateWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateworkitem).
+Of the tags displayed, only one (for the allocation at address 0x8645a000) was supplied by the driver itself (**mdrv**). The tag **VMdl** is used whenever a driver being verified by Driver Verifier makes calls [**IoAllocateMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl). Similarly, the tag **Vfwi** is used whenever a driver being verified by Driver Verifier makes a request to allocate a work item using [**IoAllocateWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem).
 
 ### If you have symbols you can locate where in the source files the memory allocations occurred
 
@@ -262,25 +261,18 @@ This Driver Verifier bug check is designed to prevent the driver from leaking ke
 
 [Static Driver Verifier](static-driver-verifier.md) is a tool that scans Windows driver source code and reports on possible issues by simulating the exercising of various code paths. Static Driver Verifier is an excellent development-time utility to help identify these kinds of issues.
 
-For other techniques you can use, including scenarios where Driver Verifier is not involved, see [Finding a Kernel-Mode Memory Leak](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-a-kernel-mode-memory-leak).
+For other techniques you can use, including scenarios where Driver Verifier is not involved, see [Finding a Kernel-Mode Memory Leak](../debugger/finding-a-kernel-mode-memory-leak.md).
 
 ## Related topics
 
 
-[Finding a Kernel-Mode Memory Leak](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-a-kernel-mode-memory-leak)
+[Finding a Kernel-Mode Memory Leak](../debugger/finding-a-kernel-mode-memory-leak.md)
 
 [Static Driver Verifier](static-driver-verifier.md)
 
-[Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index)
+[Windows Debugging](../debugger/index.md)
 
-[Handling a Bug Check When Driver Verifier is Enabled](https://docs.microsoft.com/windows-hardware/drivers/debugger/handling-a-bug-check-when-driver-verifier-is-enabled)
-
- 
+[Handling a Bug Check When Driver Verifier is Enabled](../debugger/handling-a-bug-check-when-driver-verifier-is-enabled.md)
 
  
-
-
-
-
-
 

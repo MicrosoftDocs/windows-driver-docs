@@ -1,7 +1,6 @@
 ---
 title: 'REMOTE_NDIS_KEEPALIVE_MSG'
-Description: 'The host sends this message periodically when there has been no other control or data traffic from the device to the host for the bus-defined KeepAliveTimeoutPeriod.'
-ms.assetid: 7e0b329f-8ba7-488d-b99d-63e6b9bbc171
+description: 'The host sends this message periodically when there has been no other control or data traffic from the device to the host for the bus-defined KeepAliveTimeoutPeriod.'
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
@@ -50,8 +49,7 @@ The host sends this message periodically when there has been no other control or
 
  
 
-Remarks
--------
+## Remarks
 
 The host will not send a REMOTE\_NDIS\_KEEPALIVE\_MSG message until RNDIS\_KEEPALIVE\_TIMEOUT seconds have elapsed since the last message received from the remote device. This avoids unnecessary exchange of keep-alive messages when the communication channel is active.
 
@@ -63,8 +61,7 @@ Upon receiving this message, the remote device must return a response whose *Sta
 
 The device does not have to perform any specific action if it stops seeing **REMOTE\_NDIS\_KEEPALIVE\_MSG** messages from the host.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_VOID\_TRANSFORM\_START
 description: Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_START to start operation of a node.
-ms.assetid: f9116fc6-1c53-470f-abf9-69d047dca44b
 keywords: ["KSPROPERTY_BDA_VOID_TRANSFORM_START Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_START to start operation of a node
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -74,14 +72,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
-
- 
-
-
-
-
-
 

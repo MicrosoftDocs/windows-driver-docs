@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for VMQ
 description: Standardized INF Keywords for VMQ
-ms.assetid: 5DA92019-D2E0-41D9-9C31-94E464B824BA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,14 +14,14 @@ The following standardized INF keywords are defined to enable or disable support
 A value that describes whether the device has enabled or disabled the VMQ feature.
 
 <a href="" id="-vmqlookaheadsplit"></a>**\*VMQLookaheadSplit**  
-A value that describes whether the device has enabled or disabled the ability to split receive buffers into lookahead and post-lookahead buffers. The miniport driver reports this capability with the NDIS\_RECEIVE\_FILTER\_LOOKAHEAD\_SPLIT\_SUPPORTED flag in the **SupportedQueueProperties** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure. For more information about this feature, see [Shared Memory in Receive Buffers](shared-memory-in-receive-buffers.md).
+A value that describes whether the device has enabled or disabled the ability to split receive buffers into lookahead and post-lookahead buffers. The miniport driver reports this capability with the NDIS\_RECEIVE\_FILTER\_LOOKAHEAD\_SPLIT\_SUPPORTED flag in the **SupportedQueueProperties** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure. For more information about this feature, see [Shared Memory in Receive Buffers](shared-memory-in-receive-buffers.md).
 
 **Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Starting with Windows Server 2012, this INF keyword is obsolete.
 
 
 
 <a href="" id="-vmqvlanfiltering"></a>**\*VMQVlanFiltering**  
-A value that describes whether the device has enabled or disabled the ability to filter network packets by using the VLAN identifier in the media access control (MAC) header. The miniport driver reports this capability with the NDIS\_RECEIVE\_FILTER\_MAC\_HEADER\_VLAN\_ID\_SUPPORTED flag in **SupportedMacHeaderFields** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
+A value that describes whether the device has enabled or disabled the ability to filter network packets by using the VLAN identifier in the media access control (MAC) header. The miniport driver reports this capability with the NDIS\_RECEIVE\_FILTER\_MAC\_HEADER\_VLAN\_ID\_SUPPORTED flag in **SupportedMacHeaderFields** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
 
 <a href="" id="-rssorvmqpreference"></a>**\*RssOrVmqPreference**  
 A value that defines whether VMQ capabilities should be enabled instead of receive side scaling (RSS) capabilities.
@@ -148,7 +147,7 @@ Network adapters that support VMQ and receive side scaling (RSS) cannot use thes
 
 Because the network adapter is not disabled and then re-enabled when it is unbound from the TCP/IP stack and bound to the Hyper-V driver stack (or the reverse), it is not possible for such network adapters to switch between VMQ and RSS automatically.
 
-When NDIS calls the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, the miniport driver follows these steps before it reports its currently-enabled VMQ or RSS capabilities to NDIS:
+When NDIS calls the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the miniport driver follows these steps before it reports its currently-enabled VMQ or RSS capabilities to NDIS:
 
 1.  The miniport driver reads the **\*RssOrVmqPreference** keyword before reporting its currently-enabled capabilities to NDIS.
 
@@ -304,14 +303,3 @@ The miniport driver that supports VMQ must not read the following subkeys under 
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-

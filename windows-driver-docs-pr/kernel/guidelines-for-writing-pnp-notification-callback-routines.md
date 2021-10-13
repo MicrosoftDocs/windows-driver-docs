@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Writing PnP Notification Callback Routines
 description: Guidelines for Writing PnP Notification Callback Routines
-ms.assetid: 2153b4c2-f60f-4ac9-8eee-66c5f3a9f414
 keywords: ["notifications WDK PnP , callback routines", "callback routines WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ To ensure smooth operation of the PnP subsystem, a PnP notification callback rou
 
     Calling such routines during a notification callback can cause a system deadlock.
 
-    For example, a driver must not call [**IoReportTargetDeviceChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreporttargetdevicechange) in a notification callback routine. Call [**IoReportTargetDeviceChangeAsynchronous**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreporttargetdevicechangeasynchronous) instead.
+    For example, a driver must not call [**IoReportTargetDeviceChange**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreporttargetdevicechange) in a notification callback routine. Call [**IoReportTargetDeviceChangeAsynchronous**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreporttargetdevicechangeasynchronous) instead.
 
 3.  A notification callback routine should return success for any events it does not explicitly fail.
 
@@ -34,9 +33,4 @@ To ensure smooth operation of the PnP subsystem, a PnP notification callback rou
 4.  A notification callback routine should be paged code.
 
  
-
- 
-
-
-
 

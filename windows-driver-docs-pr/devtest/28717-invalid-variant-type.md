@@ -1,7 +1,6 @@
 ---
-title: C28717
+title: C28717 warning
 description: Warning C28717 Invalid VARIANT type.
-ms.assetid: e1373005-a1ff-4722-98f9-00c7e4f89370
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

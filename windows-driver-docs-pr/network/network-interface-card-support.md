@@ -1,7 +1,6 @@
 ---
 title: Network Interface Card Support
 description: Network Interface Card Support
-ms.assetid: de673a37-3870-4995-b4f1-647b502e0773
 keywords:
 - miniport drivers WDK networking , NIC support
 - NDIS miniport drivers WDK , NIC support
@@ -19,9 +18,9 @@ This topic describes the types of Network Interface Cards (NICs) that an NDIS mi
 
 ## Reporting a NIC's medium type to NDIS
 
-To report a medium type for a NIC, a miniport driver passes a pointer to an [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure in the *MiniportAttributes* parameter of the [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes) function. A miniport driver calls **NdisMSetMiniportAttributes** from its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function during initialization. Miniport drivers should set the *MiniportAttributes* attributes after setting the registration attributes in the [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes) structure and before setting any other attributes. Setting the *MiniportAttributes* attributes is mandatory. The driver sets the **MediaType** member of the **NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES** structure to the appropriate media type when setting the *MiniportAttributes* attributes.
+To report a medium type for a NIC, a miniport driver passes a pointer to an [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure in the *MiniportAttributes* parameter of the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function. A miniport driver calls **NdisMSetMiniportAttributes** from its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function during initialization. Miniport drivers should set the *MiniportAttributes* attributes after setting the registration attributes in the [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes) structure and before setting any other attributes. Setting the *MiniportAttributes* attributes is mandatory. The driver sets the **MediaType** member of the **NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES** structure to the appropriate media type when setting the *MiniportAttributes* attributes.
 
-When an overlying NDIS protocol driver calls [**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisopenadapterex) to bind to a specified miniport adapter, it provides a list of medium types on which it can operate. NDIS uses the information from the miniport driver and from the protocol driver to set up a binding. This binding provides the path for transferring network data up and down the driver stack.
+When an overlying NDIS protocol driver calls [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex) to bind to a specified miniport adapter, it provides a list of medium types on which it can operate. NDIS uses the information from the miniport driver and from the protocol driver to set up a binding. This binding provides the path for transferring network data up and down the driver stack.
 
 ## Physical NICs
 
@@ -51,7 +50,7 @@ The steps that a miniport driver completes to initialize a miniport adapter and 
 
 In a virtual machine, NDIS miniport drivers can manage either software-only resources as a virtual miniport, or they can manage a virtual NIC that represents hardware resources. The following table explains the differences between a virtual miniport and a virtual NIC.
 
-|   | Virtual miniport | Virtual NIC |
+|  Attribute | Virtual miniport | Virtual NIC |
 | --- | --- | --- |
 | Definition | An NDIS miniport driver that maps to a software-enumerated PnP device. | A NIC managed by the host OS hypervisor. The hypervisor makes the virtual machine think that it has some hardware, but no such hardware actually exists in the physical world. |
 | Has interrupts | No | Yes |

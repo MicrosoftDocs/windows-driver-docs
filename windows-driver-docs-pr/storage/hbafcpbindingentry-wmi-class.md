@@ -1,7 +1,6 @@
 ---
 title: HBAFCPBindingEntry WMI Class
 description: HBAFCPBindingEntry WMI Class
-ms.assetid: 58993d0d-2044-430d-b8f6-5ea3b68d460b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -29,15 +28,9 @@ class HBAFCPBindingEntry {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**HBAFCPBindingEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry)
+[**HBAFCPBindingEntry**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

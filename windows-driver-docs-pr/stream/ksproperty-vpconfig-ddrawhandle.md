@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_DDRAWHANDLE
 description: The KSPROPERTY\_VPCONFIG\_DDRAWHANDLE property returns the Microsoft DirectDraw handle property information.
-ms.assetid: e8238751-8d4d-4b5b-a2d4-bbb3f783eefa
 keywords: ["KSPROPERTY_VPCONFIG_DDRAWHANDLE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_VPCONFIG\_DDRAWHANDLE property returns the Microsoft DirectDraw 
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -57,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_DDRAWHANDLE property returns the Microsoft DirectDraw 
 
 The property value (operation data) is a ULONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,14 +74,4 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
-
- 
-
- 
-
-
-
-
-
-
+[**KSPROPERTY**](ksproperty-structure.md)

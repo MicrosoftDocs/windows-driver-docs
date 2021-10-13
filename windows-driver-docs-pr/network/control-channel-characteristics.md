@@ -1,7 +1,6 @@
 ---
 title: Control Channel Characteristics
 description: Control Channel Characteristics
-ms.assetid: b289f21c-a53e-424c-be31-b7a869e335c4
 keywords:
 - Control Channel Characteristics
 ms.date: 04/20/2017
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 The Control channel for the device is its USB Control endpoint. A control message from the host to the device is sent as a SEND\_ENCAPSULATED\_COMMAND transfer. This transfer is defined in the following table.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />
@@ -86,7 +85,7 @@ The host does not continuously poll the USB Control endpoint for input control m
 
 Upon receiving the RESPONSE\_AVAILABLE notification, the host reads the control message from the Control endpoint using a GET\_ENCAPSULATED\_RESPONSE transfer, defined in the following table.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />

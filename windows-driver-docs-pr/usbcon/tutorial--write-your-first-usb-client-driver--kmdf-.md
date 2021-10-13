@@ -1,5 +1,5 @@
 ---
-Description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2019 to write a simple kernel-mode driver framework (KMDF)-based client driver.
+description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2019 to write a simple kernel-mode driver framework (KMDF)-based client driver.
 title: How to write your first USB client driver (KMDF)
 ms.date: 06/07/2019
 ms.localizationpriority: medium
@@ -24,46 +24,45 @@ Before you begin, make sure that you meet the following requirements:
 **Software requirements**
 
 -   Your host computer hosts your development environment and has Visual Studio Professional 2019.
--   Your host computer has the latest Windows Driver Kit (WDK) for Windows 8. The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a KMDF driver. To get the latest version of the WDK, see [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
--   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](https://msdn.microsoft.com/windows/hardware/gg463009.aspx).
+-   Your host computer has the latest Windows Driver Kit (WDK) for Windows 8. The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a KMDF driver. To get the latest version of the WDK, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
+-   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](../download-the-wdk.md).
 -   Your target computer is running Windows Vista or a later version of Windows.
--   Your host and target computers are configured for kernel debugging. For more information, see [Setting Up a Network Connection in Visual Studio](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-in-visual-studio).
+-   Your host and target computers are configured for kernel debugging. For more information, see [Setting Up a Network Connection in Visual Studio](../debugger/setting-up-a-network-debugging-connection-in-visual-studio.md).
 
 **Hardware requirements**
 
 Get a USB device for which you will be writing the client driver. In most cases, you are provided with a USB device and its hardware specification. The specification describes device capabilities and the supported vendor commands. Use the specification to determine the functionality of the USB driver and the related design decisions.
 
-If you are new to USB driver development, use the OSR USB FX2 learning kit to study USB samples included with the WDK. You can get the learning kit from [OSR Online](http://www.osronline.com/). It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
+If you are new to USB driver development, use the OSR USB FX2 learning kit to study USB samples included with the WDK. You can get the learning kit from [OSR Online](https://www.osronline.com/). It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
 
-You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](http://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](https://msdn.microsoft.com/windows/hardware/jj590752) and run MUTTUtil.exe. For more information, see the documentation included with the package.
+You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/mutt.htm). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
 
 **Recommended reading**
 
--   [Concepts for All Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)
--   [Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks)
--   [Getting started with Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/index)
--   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
--   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](https://msdn.microsoft.com/windows/hardware/gg463318).
+-   [Concepts for All Driver Developers](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md)
+-   [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md)
+-   [Getting started with Windows drivers](../gettingstarted/index.md)
+-   [Kernel-Mode Driver Framework](../wdf/index.md)
+-   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="generate-the-kmdf-driver-code-by-using-the--visual-studio-professional-2019---usb-driver-template"></a>Step 1: Generate the KMDF driver code by using the Visual Studio Professional 2019 USB driver template
 
-For instructions about generating KMDF driver code, see the steps in [Writing a KMDF driver based on a template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-kmdf-driver-based-on-a-template).
+For instructions about generating KMDF driver code, see the steps in [Writing a KMDF driver based on a template](../gettingstarted/writing-a-kmdf-driver-based-on-a-template.md).
 
 **For USB-specific code, select the following options in Visual Studio Professional 2019**
 
 1.  In the **New Project** dialog box, in the search box at the top, type **USB.**
 2.  In the middle pane, select **Kernel Mode Driver, USB (KMDF)**.
-3.  Click **Next**.
-4.  Enter a project name, choose a save location, and click **Create**.
+3.  Select **Next**.
+4.  Enter a project name, choose a save location, and select **Create**.
 
 The following screen shots show the **New Project** dialog box for the **USB Kernel-Mode Driver** template.
 
-![visual studio new project options](images/kmdf-template-visual-studio-2019.png)
+![visual studio new project options.](images/kmdf-template-visual-studio-2019.png)
 
-![visual studio new project options second screen](images/kmdf-template-visual-studio-2019-2.png)
+![visual studio new project options second screen.](images/kmdf-template-visual-studio-2019-2.png)
 
 This topic assumes that the name of the Visual Studio project is "MyUSBDriver\_". It contains the following files:
 
@@ -92,7 +91,7 @@ To provide the hardware ID string:
 2.  Open **Device Manager** and open properties for your device.
 3.  On the **Details** tab, select **Hardward Ids** under **Property.**
 
-    The hardware ID for the device is displayed in the list box. Right-click and copy the hardware ID string.
+    The hardware ID for the device is displayed in the list box. Select and hold (or right-click) and copy the hardware ID string.
 
 4.  Replace USB\\VID\_vvvv&PID\_pppp in the following line with your hardware ID string.
 
@@ -103,15 +102,15 @@ To provide the hardware ID string:
 **To build your driver**
 
 1.  Open the driver project or solution in Visual Studio Professional 2019
-2.  Right-click the solution in the **Solution Explorer** and select **Configuration Manager**.
+2.  Select and hold (or right-click) the solution in the **Solution Explorer** and select **Configuration Manager**.
 3.  From the **Configuration Manager**, select the **Active Solution Configuration** (for example, **Windows 8 Debug** or **Windows 8 Release**) and the **Active Solution Platform** (for example, Win32) that correspond to the type of build you're interested in.
-4.  From the **Build** menu, click **Build Solution**.
+4.  From the **Build** menu, select **Build Solution**.
 
-For more information, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
+For more information, see [Building a Driver](../develop/building-a-driver.md).
 
 ### <a href="" id="configure-a-computer-for-testing-and-debugging"></a>Step 4: Configure a computer for testing and debugging
 
-To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 
 ### <a href="" id="enable-tracing-for-kernel-debugging"></a>Step 5: Enable tracing for kernel debugging
 
@@ -125,7 +124,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
    **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
 
-   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracepdb-commands).
+   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](../devtest/tracepdb-commands.md).
 
    At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
 
@@ -148,7 +147,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 **To configure your target computer for WPP tracing**
 
-1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\8.0\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracelog-command-syntax).
+1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\8.0\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](../devtest/tracelog-command-syntax.md).
 2. Open a **Command Window** and run as administrator.
 3. Type the following command:
 
@@ -166,23 +165,23 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 ### <a href="" id="deploy-the-driver-on-the-target-computer"></a>Step 6: Deploy the driver on the target computer
 
-1. In the **Solution Explorer** window, right click the <em>&lt;project name&gt;</em>**Package** , and choose **Properties**.
+1. In the **Solution Explorer** window, select and hold (or right-click)  the <em>&lt;project name&gt;</em>**Package** , and choose **Properties**.
 2. In the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**.
 3. Check Enable deployment, and check Import into driver store.
 4. For **Remote Computer Name**, specify the name of the target computer.
 5. Select **Install and Verify**.
-6. Click **Ok**.
+6. Select **Ok**.
 7. On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 
 **Note**  Do *not* specify the hardware ID of your device under **Hardware ID Driver Update**. The hardware ID must be specified only in your driver's information (INF) file.
 
  
 
-For more information about deploying the driver to the target system in Visual Studio Professional 2019, see [Deploying a Driver to a Test Computer](https://docs.microsoft.com/windows-hardware/drivers).
+For more information about deploying the driver to the target system in Visual Studio Professional 2019, see [Deploying a Driver to a Test Computer](/windows-hardware/drivers).
 
 You can also manually install the driver on the target computer by using Device Manager. If you want to install the driver from a command prompt, these utilities are available:
 
--   [PnPUtil](https://docs.microsoft.com/windows-hardware/drivers/devtest/pnputil)
+-   [PnPUtil](../devtest/pnputil.md)
 
     This tool comes with the Windows. It is in Windows\\System32. You can use this utility to add the driver to the driver store.
 
@@ -195,9 +194,9 @@ You can also manually install the driver on the target computer by using Device 
     Published name : oem22.inf
     ```
 
-    For more information, see [PnPUtil Examples](https://docs.microsoft.com/windows-hardware/drivers/devtest/pnputil-examples).
+    For more information, see [PnPUtil Examples](../devtest/pnputil-examples.md).
 
--   [**DevCon Update**](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon-update)
+-   [**DevCon Update**](../devtest/devcon-update.md)
 
     This tool comes with the WDK. You can use it to install and update drivers.
 

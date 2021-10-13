@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_RENDER
 description: KSCATEGORY_RENDER
-ms.assetid: 467e3192-46c4-4ef4-88cf-0a870efc1725
 keywords: ["KSCATEGORY_RENDER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_RENDER
 
 
-The KSCATEGORY_RENDER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that renders wave and MIDI data streams.
+The KSCATEGORY_RENDER [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that renders wave and MIDI data streams.
 
 <table>
 <colgroup>
@@ -45,17 +44,15 @@ The KSCATEGORY_RENDER [device interface class](https://docs.microsoft.com/window
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS audio adapter devices register an instance of KSCATEGORY_RENDER to indicate that the devices support the KSCATEGORY_RENDER functional category.
 
-For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) in the WDK.
+For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](/samples/browse/) in the WDK.
 
-For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories).
+For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -69,12 +66,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: JobEndStateEvent element
 description: The required JobEndStateEvent element informs the client that the scanner has finished processing a job.
-ms.assetid: 2d5307fb-9c64-413d-8c5c-439012a44a19
 keywords: ["JobEndStateEvent element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobEndStateEvent** element informs the client that the scanner has finished processing a job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobEndStateEvent>
@@ -27,8 +25,7 @@ Usage
 </wscn:JobEndStateEvent>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,28 +53,26 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service sends a **JobEndStateEvent** event element to the client when the scanner has finished processing a job. **JobEndStateEvent** contains data elements that identify the completed job and details about its completion.
 
-Examples
---------
+## Examples
 
 The following code example shows how the scan device notifies the client of the final state and status of Job 253.
 
 ```xml
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-  xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding'>
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+  xmlns:wse="https://schemas.xmlsoap.org/ws/2004/08/eventing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding'>
 
   <soap:Header>
     <wsa:To>AddressofEventSink</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/JobEndStateEvent
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/JobEndStateEvent
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>

@@ -1,7 +1,6 @@
 ---
-title: cs
+title: cs (WinDbg)
 description: The cs extension displays one or more critical sections or the whole critical section tree.
-ms.assetid: 767ad508-013b-4cf7-808d-38ff64418879
 keywords: ["cs Windows Debugging"]
 ms.date: 11/15/2018
 topic_type:
@@ -39,7 +38,7 @@ Parameter | Description
 *EndAddress*   | Specifies the end of the address range to search for critical sections.
 **-d**    | Displays critical sections that are associated with DebugInfo.
 *InfoAddress*   | Specifies the address of the DebugInfo.
-**-t**    | Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier) for the target process and select the **Check lock usage** option.
+**-t**    | Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](../devtest/application-verifier.md) for the target process and select the **Check lock usage** option.
 *TreeAddress*    | Specifies the address of the root of the critical section tree. If you omit this parameter or specify zero, the debugger displays the critical section tree for the current process.
 **-?**    | Displays some Help text for this extension in the [Debugger Command window](debugger-command-window.md).
 
@@ -54,7 +53,7 @@ For other commands and extensions that can display critical section information,
 
 #### Remarks
 
-The **!cs** extension requires full symbols (including type information) for the process that is being debugged and for Ntdll.dll. If you do not have symbols for Ntdll.dll, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
+The **!cs** extension requires full symbols (including type information) for the process that is being debugged and for Ntdll.dll. 
 
 The following examples shows you how to use **!cs**. The following command displays information about the critical section at address 0x7803B0F8 and shows its initialization stack trace.
 
@@ -164,12 +163,6 @@ The following items appear in this **!cs -t** display:
 -   **EnterCnt** is the count of **EnterCriticalSection**.
 
 -   **WaitCnt** is the contention count.
-
-
-
- 
-
-
 
 
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_LNB\_SWITCH\_FREQUENCY
 description: Clients use KSPROPERTY\_BDA\_LNB\_SWITCH\_FREQUENCY to inform the RF tuner node about the frequency of incoming RF signals at which the tuner should inform the low-noise block (LNB) device to switch from using low-band local oscillator frequency (LOF) to using high-band LOF or vice versa when the LNB shifts the frequency of RF signals.
-ms.assetid: a448bad1-40dc-4596-bc18-9522144e33a7
 keywords: ["KSPROPERTY_BDA_LNB_SWITCH_FREQUENCY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_LNB\_SWITCH\_FREQUENCY to inform the RF tuner node 
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the RF tuner node.
 
@@ -66,8 +64,7 @@ If a client sends a KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY request to tune an RF 
 
 Likewise, if a client sends a KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY request to tune an RF tuner to a specific frequency and this frequency is less than the switch frequency, then the RF tuner should send a command to the LNB to switch to the low-band LOF. The RF tuner should then expect that the LNB device shifts the frequency of the incoming RF signal by the low-band LOF amount, which was specified using KSPROPERTY\_BDA\_LNB\_LOF\_LOW\_BAND.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,7 +82,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**KSPROPERTY\_BDA\_LNB\_LOF\_HIGH\_BAND**](ksproperty-bda-lnb-lof-high-band.md)
 
@@ -94,11 +91,4 @@ Requirements
 [**KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY**](ksproperty-bda-rf-tuner-frequency.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Setting a Copy-File Flag to Support PnP Stop
 description: Setting a Copy-File Flag to Support PnP Stop
-ms.assetid: 9f716ac0-c181-489f-8bc4-ccca8c141b06
 keywords:
 - INF files WDK display , copy-file flags
 - copy-file flags WDK display
@@ -35,13 +34,7 @@ r200umd.dll,,,0x00004000  ; COPYFLG_IN_USE_TRY_RENAME
 r200umd2.dll,,,0x00004000 ; COPYFLG_IN_USE_TRY_RENAME
 ```
 
-For more information about the **CopyFiles** directive and file sections that are associated with **CopyFiles**, see [**INF CopyFiles Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive).
+For more information about the **CopyFiles** directive and file sections that are associated with **CopyFiles**, see [**INF CopyFiles Directive**](../install/inf-copyfiles-directive.md).
 
  
-
- 
-
-
-
-
 

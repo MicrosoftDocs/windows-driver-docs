@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for 2D Operations Using Surface Formats
 description: Reporting Support for 2D Operations Using Surface Formats
-ms.assetid: c7737daf-3342-48dc-a365-f789b7203013
 keywords:
 - two-dimensional operations WDK DirectX 9.0 , surface formats
 - 2D operations WDK DirectX 9.0 , surface formats
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_reporting_support_for_2d_operations_using_surface_formats_gg"></span><span id="DDK_REPORTING_SUPPORT_FOR_2D_OPERATIONS_USING_SURFACE_FORMATS_GG"></span>
 
 
-The driver specifies flags in the **dwOperations** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat) structure for a surface's format to indicate that it can perform 2D operations using that format.
+The driver specifies flags in the **dwOperations** member of the [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for a surface's format to indicate that it can perform 2D operations using that format.
 
 For example, the driver can indicate that it can copy to or from and color fill to a surface by setting the D3DFORMAT\_OP\_OFFSCREENPLAIN flag.
 
@@ -28,10 +27,4 @@ The driver can only specify the D3DFORMAT\_MEMBEROFGROUP\_ARGB flag for target s
 Note that although D3DFORMAT\_OP\_CONVERT\_TO\_ARGB and D3DFORMAT\_MEMBEROFGROUP\_ARGB indicate ARGB formats, the runtime also lets the driver specify surfaces with XRGB formats (for example, D3DFMT\_X1R5G5B5). If the driver specifies D3DFORMAT\_MEMBEROFGROUP\_ARGB or D3DFORMAT\_OP\_CONVERT\_TO\_ARGB with an invalid format, the runtime prevents the Direct3D HAL from loading.
 
  
-
- 
-
-
-
-
 

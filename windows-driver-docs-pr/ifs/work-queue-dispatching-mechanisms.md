@@ -1,7 +1,6 @@
 ---
 title: Work Queue Dispatching Mechanisms
 description: Work Queue Dispatching Mechanisms
-ms.assetid: d4ce929f-2d84-4194-9afa-e00629594c36
 keywords:
 - RDBSS WDK file systems , work queue dispatching
 - Redirected Drive Buffering Subsystem WDK file systems , work queue dispatching
@@ -31,7 +30,7 @@ RDBSS provides several routines that implement the dispatching mechanism used in
 
 RDBSS keeps track of the work items on a per-device-object basis. This allows RDBSS to handle the race conditions associated with loading and unloading network mini-redirectors. This also provides a mechanism in RDBSS for preventing a single network mini-redirector from unfairly using all of the resources.
 
-There are certain scenarios in which dispatching of work items is inevitable. To avoid frequent memory allocation and to free operations in these scenarios, the WORK\_QUEUE\_ITEM is allocated as part of another data. In other scenarios where dispatching is rare, it pays to avoid memory allocation until it is required. The RDBSS work queue implementation provides for both of these scenarios in the form of dispatching and posting work queue requests. In the case of dispatching using the [**RxDispatchToWorkerThread**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxdispatchtoworkerthread) routine, no memory for the WORK\_QUEUE\_ITEM needs to be allocated by the caller. For posting using the [**RxPostToWorkerThread**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxposttoworkerthread) routine, the memory for the WORK\_QUEUE\_ITEM needs to be allocated by the caller.
+There are certain scenarios in which dispatching of work items is inevitable. To avoid frequent memory allocation and to free operations in these scenarios, the WORK\_QUEUE\_ITEM is allocated as part of another data. In other scenarios where dispatching is rare, it pays to avoid memory allocation until it is required. The RDBSS work queue implementation provides for both of these scenarios in the form of dispatching and posting work queue requests. In the case of dispatching using the [**RxDispatchToWorkerThread**](/windows-hardware/drivers/ddi/rxworkq/nf-rxworkq-rxdispatchtoworkerthread) routine, no memory for the WORK\_QUEUE\_ITEM needs to be allocated by the caller. For posting using the [**RxPostToWorkerThread**](/windows-hardware/drivers/ddi/rxworkq/nf-rxworkq-rxposttoworkerthread) routine, the memory for the WORK\_QUEUE\_ITEM needs to be allocated by the caller.
 
 There are two common cases of dispatching operations to worker threads:
 
@@ -76,15 +75,15 @@ The following RDBSS routines for work queue dispatching include.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxdispatchtoworkerthread" data-raw-source="[&lt;strong&gt;RxDispatchToWorkerThread&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxdispatchtoworkerthread)"><strong>RxDispatchToWorkerThread</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/rxworkq/nf-rxworkq-rxdispatchtoworkerthread" data-raw-source="[&lt;strong&gt;RxDispatchToWorkerThread&lt;/strong&gt;](/windows-hardware/drivers/ddi/rxworkq/nf-rxworkq-rxdispatchtoworkerthread)"><strong>RxDispatchToWorkerThread</strong></a></p></td>
 <td align="left"><p>This routine invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM is allocated by this routine.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxposttoworkerthread" data-raw-source="[&lt;strong&gt;RxPostToWorkerThread&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxposttoworkerthread)"><strong>RxPostToWorkerThread</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/rxworkq/nf-rxworkq-rxposttoworkerthread" data-raw-source="[&lt;strong&gt;RxPostToWorkerThread&lt;/strong&gt;](/windows-hardware/drivers/ddi/rxworkq/nf-rxworkq-rxposttoworkerthread)"><strong>RxPostToWorkerThread</strong></a></p></td>
 <td align="left"><p>This routine invokes the routine in the context of a worker thread. Memory for the WORK_QUEUE_ITEM must be allocated by the caller.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxspindownmrxdispatcher" data-raw-source="[&lt;strong&gt;RxSpinDownMRxDispatcher&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxspindownmrxdispatcher)"><strong>RxSpinDownMRxDispatcher</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/rxworkq/nf-rxworkq-rxspindownmrxdispatcher" data-raw-source="[&lt;strong&gt;RxSpinDownMRxDispatcher&lt;/strong&gt;](/windows-hardware/drivers/ddi/rxworkq/nf-rxworkq-rxspindownmrxdispatcher)"><strong>RxSpinDownMRxDispatcher</strong></a></p></td>
 <td align="left"><p>This routine tears down the dispatcher context for a network mini-redirector.</p>
 <p>Note that this routine is only available on Windows Server 2003 and Windows XP.</p></td>
 </tr>
@@ -92,11 +91,4 @@ The following RDBSS routines for work queue dispatching include.
 </table>
 
  
-
- 
-
- 
-
-
-
 

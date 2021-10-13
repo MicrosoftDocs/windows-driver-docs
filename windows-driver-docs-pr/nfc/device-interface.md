@@ -1,7 +1,6 @@
 ---
 title: NFP device interface
 description: A client application communicates with the proximity device through a defined set of I/O control codes sent to an open handle.
-ms.assetid: ED63FDCF-3253-4976-8571-82F4824923C5
 keywords:
 - NFC
 - near field communications
@@ -58,6 +57,4 @@ The following table describes the reserved and vender specific control code rang
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

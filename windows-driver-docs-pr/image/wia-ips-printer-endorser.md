@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER
 description: The WIA\_IPS\_PRINTER\_ENDORSER property is used by the WIA minidriver to list the locations where a printer/endorser device is available, and is used by an application to select one of these locations to enable imprinting/endorsing.
-ms.assetid: A9BAC8D3-AB06-4600-9EF7-E9F4846B5215
 keywords: ["WIA_IPS_PRINTER_ENDORSER Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the required values for the **WIA\_IPS\_PRINTER\_ENDORSER** property.
 
@@ -98,8 +96,7 @@ The following table describes the optional values for the **WIA\_IPS\_PRINTER\_E
 
 This property must be supported by all Imprinter/Endorser data source items. The required default value is **WIA\_PRINTER\_ENDORSER\_DISABLED**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

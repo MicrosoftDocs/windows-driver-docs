@@ -1,7 +1,6 @@
 ---
 title: ioctldecode
 description: The ioctldecode extension displays the Device Type, Required Access, Function Code and Transfer Type as specified by the given IOCTL code. 
-ms.assetid: 50B12034-E5C7-43F2-A31E-AAC824A05D46
 keywords: ["ioctldecode Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # !ioctldecode
 
 
-The **!ioctldecode** extension displays the *Device Type*, *Required Access*, *Function Code* and *Transfer Type* as specified by the given IOCTL code. For more information about IOCTL control codes, see [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes).
+The **!ioctldecode** extension displays the *Device Type*, *Required Access*, *Function Code* and *Transfer Type* as specified by the given IOCTL code. For more information about IOCTL control codes, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md).
 
 ```dbgcmd
 !ioctldecode IoctlCode 
@@ -80,7 +79,7 @@ No Mdl: No System Buffer: Thread 00000000:  Irp stack trace.
                                                 Args: ffffd581a6c61a50 00000000 0x220003 00000000
 ```
 
-The third argument displayed, in this case *0x220003*, is the IOCTL code. Use the IOCTL code to display information about the IOCTL, in this case [**IOCTL\_INTERNAL\_USB\_SUBMIT\_URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb).
+The third argument displayed, in this case *0x220003*, is the IOCTL code. Use the IOCTL code to display information about the IOCTL, in this case [**IOCTL\_INTERNAL\_USB\_SUBMIT\_URB**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb).
 
 ```dbgcmd
 0: kd> !ioctldecode 0x220003
@@ -110,15 +109,9 @@ Although the IOCTL is not identified, information about the IOCTL fields are dis
 
 Note that only a subset of publicly defined IOCTLs are able to be identified by the **!ioctldecode** command.
 
-For more information about IOCTLs see [Introduction to I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes).
+For more information about IOCTLs see [Introduction to I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md).
 
 For more general information about IRPs and IOCTLs, refer to *Windows Internals* by Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
  
-
- 
-
-
-
-
 

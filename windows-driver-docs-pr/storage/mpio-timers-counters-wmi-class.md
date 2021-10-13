@@ -1,7 +1,6 @@
 ---
 title: MPIO\_TIMERS\_COUNTERS WMI Class
 description: MPIO\_TIMERS\_COUNTERS WMI Class
-ms.assetid: 386110f8-504c-4617-b8ae-557ea504d41d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -72,13 +71,7 @@ class MPIO_TIMERS_COUNTERS
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_TIMERS\_COUNTERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_mpio_timers_counters) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_TIMERS\_COUNTERS**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_timers_counters) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

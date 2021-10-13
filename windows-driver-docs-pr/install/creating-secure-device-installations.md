@@ -1,7 +1,6 @@
 ---
 title: Creating Secure Device Installations
 description: Creating Secure Device Installations
-ms.assetid: e92488c4-1383-4493-b229-61c646546c82
 keywords:
 - Device setup WDK device installations , security
 - device installations WDK , security
@@ -40,7 +39,7 @@ Device installation security is controlled by *security descriptors*. The primar
 
 ### Security Settings for Devices and Interfaces
 
-The system supplies default security descriptors for all [system-supplied device setup classes](https://docs.microsoft.com/previous-versions/ff553419(v=vs.85)). Generally, these descriptors allow full access for system administrators and read/write/execute access for users. (The security descriptors that control access to a device also control access to the device's [device interface classes](device-interface-classes.md), if any.)
+The system supplies default security descriptors for all [system-supplied device setup classes](./system-defined-device-setup-classes-reserved-for-system-use.md). Generally, these descriptors allow full access for system administrators and read/write/execute access for users. (The security descriptors that control access to a device also control access to the device's [device interface classes](./overview-of-device-interface-classes.md), if any.)
 
 INF files for WDM drivers can specify security settings, either per class or per device, that override the system's default settings. Vendors who create a new device setup class should specify a security descriptor for the class. Generally, specifying a device-specific security descriptor is not necessary. It might be useful to supply a device-specific security descriptor if different types of devices that belong to the same class have significantly different types of users.
 
@@ -50,9 +49,9 @@ To specify a security descriptor for a single device that belongs to a WDM devic
 
 By default, the system applies the security descriptor set for a device to a request to open the device object that represents the device (for example, a request to open the device whose NT device name is *\\Device\\DeviceName*).
 
-However, the system does not by default apply the security descriptor set for a device to a request to open an object in the namespace of the device, where the device namespace includes all objects whose names have the form *\\Device\\DeviceName\\ObjectName*. To ensure that the same security settings are applied to open requests for objects in the namespace of a device, set the FILE_DEVICE_SECURE_OPEN device characteristics flag for a device. For more information about secure device access, see [Controlling Device Namespace Access (Windows Drivers)](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-namespace-access). For information about how to set the FILE_DEVICE_SECURE_OPEN device characteristics flag, See [Specifying Device Characteristics (Windows Drivers)](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-characteristics).
+However, the system does not by default apply the security descriptor set for a device to a request to open an object in the namespace of the device, where the device namespace includes all objects whose names have the form *\\Device\\DeviceName\\ObjectName*. To ensure that the same security settings are applied to open requests for objects in the namespace of a device, set the FILE_DEVICE_SECURE_OPEN device characteristics flag for a device. For more information about secure device access, see [Controlling Device Namespace Access (Windows Drivers)](../kernel/controlling-device-namespace-access.md). For information about how to set the FILE_DEVICE_SECURE_OPEN device characteristics flag, See [Specifying Device Characteristics (Windows Drivers)](../kernel/specifying-device-characteristics.md).
 
-The PnP manager sets security values on device objects after it calls a driver's [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine. Some WDM drivers can specify a device-specific security descriptor when creating a physical device object (PDO) by calling [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure). For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
+The PnP manager sets security values on device objects after it calls a driver's [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. Some WDM drivers can specify a device-specific security descriptor when creating a physical device object (PDO) by calling [**IoCreateDeviceSecure**](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure). For more information, see [Securing Device Objects](../kernel/controlling-device-access.md).
 
 ### Security Settings for Driver Files
 
@@ -89,12 +88,3 @@ Additionally, after an installation completes you can do the following:
 -   Use Registry Editor to view the security settings that are assigned to a registry entry.
 
 -   Use **My Computer** to view the security settings that are assigned to a file.
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: ProcAmpControlBlt method
 description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpControlBlt function performs the ProcAmp adjustment operation by writing the output to the destination surface.
-ms.assetid: bf86fd39-554d-4ef1-adb7-202bb70fd3b4
 keywords: ["ProcAmpControlBlt method Display Devices", "ProcAmpControlBlt method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlBlt method"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The sample *ProcAmpControlBlt* function performs the ProcAmp adjustment operation by writing the output to the destination surface.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ProcAmpControlBlt(
@@ -29,8 +27,7 @@ HRESULT ProcAmpControlBlt(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpDDSDstSurface* \[in\]
 Supplies a pointer to the destination surface.
@@ -39,21 +36,19 @@ Supplies a pointer to the destination surface.
 Supplies a pointer to the source surface.
 
 *ccBlt* \[in\]
-Supplies a pointer to a [**DXVA\_ProcAmpControlBlt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolblt) structure that specifies the ProcAmp adjustment data output to the destination surface.
+Supplies a pointer to a [**DXVA\_ProcAmpControlBlt**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolblt) structure that specifies the ProcAmp adjustment data output to the destination surface.
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
-The source and destination rectangles are required for either subrectangle ProcAmp adjustment or stretching. Support for stretching is optional and is reported by the **VideoProcessingCaps** member of the [**DXVA\_ProcAmpControlCaps**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolcaps) structure. Support for subrectangles is also optional.
+The source and destination rectangles are required for either subrectangle ProcAmp adjustment or stretching. Support for stretching is optional and is reported by the **VideoProcessingCaps** member of the [**DXVA\_ProcAmpControlCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolcaps) structure. Support for subrectangles is also optional.
 
 The destination surface can be an off-screen plane, a D3D render target, a D3D texture, or a D3D texture that is also a render target. The destination surface will always be allocated in local video memory. The pixel format of the destination surface will be the one indicated in the DXVA\_ProcAmpControlCaps structure, unless a YUV-to-RGB color space conversion is being performed as part of the ProcAmp adjustment procedure. In this case, the destination surface format will be an RGB format with at least 8 bits of precision for each color component.
 
-The sample *ProcAmpControlBlt* function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to the driver-supplied *DdMoCompRender* callback that references the [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
+The sample *ProcAmpControlBlt* function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to the driver-supplied *DdMoCompRender* callback that references the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
 
 <table>
 <colgroup>
@@ -81,7 +76,7 @@ The sample *ProcAmpControlBlt* function maps directly to a call to the **RenderM
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolblt" data-raw-source="[&lt;strong&gt;DXVA_ProcAmpControlBlt&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolblt)"><strong>DXVA_ProcAmpControlBlt</strong></a> structure.</p></td>
+<td align="left"><p>Pointer to a <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolblt" data-raw-source="[&lt;strong&gt;DXVA_ProcAmpControlBlt&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolblt)"><strong>DXVA_ProcAmpControlBlt</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
@@ -97,22 +92,13 @@ For the DirectX VA device used for ProcAmp control, RenderMoComp is called witho
 ## <span id="see_also"></span>See also
 
 
-[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc)
+[**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)
 
-[**DXVA\_ProcAmpControlCaps**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolcaps)
+[**DXVA\_ProcAmpControlCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolcaps)
 
-[**DXVA\_ProcAmpControlBlt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolblt)
+[**DXVA\_ProcAmpControlBlt**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolblt)
 
-[**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
+[**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
-[**DD\_CREATEMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_createmocompdata)
-
- 
-
- 
-
-
-
-
-
+[**DD\_CREATEMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_createmocompdata)
 

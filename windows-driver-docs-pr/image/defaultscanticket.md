@@ -1,7 +1,6 @@
 ---
 title: DefaultScanTicket element
-description: .
-ms.assetid: 1c0f15c8-b14f-4607-8655-36e1397082e6
+description: Learn about the 'DefaultScanTicket' element. See code examples and view additional available resources.
 keywords: ["DefaultScanTicket element Imaging Devices"]
 topic_type:
 - apiref
@@ -16,8 +15,7 @@ ms.localizationpriority: medium
 # DefaultScanTicket element
 
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DefaultScanTicket>
@@ -25,8 +23,7 @@ Usage
 </wscn:DefaultScanTicket>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -74,15 +71,13 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **DefaultScanTicket** element is an instance of the [**ScanTicket**](scanticket.md) element. **DefaultScanTicket** describes the current set of default values that the WSD Scan Service will apply when a job is created without specific processing elements.
 
 A client can request the scanner's **DefaultScanTicket** element through the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation and then use it without error when requesting a scan job through the [**CreateScanJobRequest**](createscanjobrequest.md) operation. The **DefaultScanTicket** will contain values for all **ScanTicket** options that the device supports.
 
-Examples
---------
+## Examples
 
 The following code example shows a sample DefaultScanTicket.
 

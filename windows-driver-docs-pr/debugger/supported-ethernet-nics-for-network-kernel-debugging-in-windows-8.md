@@ -1,44 +1,39 @@
 ---
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 8
 description: You can do kernel debugging over an Ethernet network cable when the target computer is running Windows 8. The target computer must have a supported network interface card (NIC) or network adapter.
-ms.assetid: 92FEEBAF-9978-4BDE-BB4F-81454D84A7E7
-ms.date: 11/28/2017
+ms.date: 02/20/2020
 ms.localizationpriority: medium
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 8
 
-
 You can do kernel debugging over an Ethernet network cable when the target computer is running Windows 8. The target computer must have a supported network interface card (NIC) or network adapter.
 
-During kernel debugging, the computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. To do [kernel debugging over a network cable](setting-up-a-network-debugging-connection.md), the target computer must have a supported network adapter. When the target computer is running Windows 8, the network adapters listed here are supported for kernel debugging.
+During kernel debugging, the computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+
+To do kernel debugging over a network cable, the target computer must have a supported network adapter. When the target computer is running Windows 8, the network adapters listed here are supported for kernel debugging.
 
 **Note**  For a list of network adapters supported by Windows 8.1 for kernel debugging, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
- 
-
 ## <span id="System_Requirements"></span><span id="system_requirements"></span><span id="SYSTEM_REQUIREMENTS"></span>System Requirements
-
 
 Kernel debugging through Ethernet NICs requires certain low-level platform support. Windows requires that these NICs be attached via PCI/PCIe for this debugging solution. In most cases, simply plugging in one of these supported NICs will allow a robust kernel debugging experience. However, there may be cases where BIOS configuration details hinder the Windows debug path. The following set of platform requirements should be considered:
 
--   System firmware should discover and configure the NIC device such that its resources do not conflict with any other devices that have been BIOS-configured.
--   System firmware should place the NIC’s resources under address windows that are not marked prefetchable.
+- System firmware should discover and configure the NIC device such that its resources do not conflict with any other devices that have been BIOS-configured.
+- System firmware should place the NIC’s resources under address windows that are not marked prefetchable.
 
 ## <span id="Finding_the_vendor_ID_and_device_ID"></span><span id="finding_the_vendor_id_and_device_id"></span><span id="FINDING_THE_VENDOR_ID_AND_DEVICE_ID"></span>Finding the vendor ID and device ID
 
-
 First find the vendor ID and device ID of the network adapter on your target computer.
 
--   On the target computer, open Device Manager (enter **devmgmt** in a Command Prompt window).
--   In Device Manager, locate the network adapter that you want to use for debugging.
--   Right click the network adapter node, and choose **Properties**.
--   In the **Details** tab, under **Property**, select **Hardware Ids**.
+-  On the target computer, open Device Manager (enter **devmgmt** in a Command Prompt window).
+-  In Device Manager, locate the network adapter that you want to use for debugging.
+-  Right click the network adapter node, and choose **Properties**.
+-  In the **Details** tab, under **Property**, select **Hardware Ids**.
 
 The vendor and device IDs are shown as VEN\_*VendorID* and DEV\_*DeviceID*. For example, if you see PCI\\VEN\_8086&DEV\_104B, the vendor ID is 8086, and the device ID is 104B.
 
 ## <span id="Vendor_ID_8086__Intel_Corporation"></span><span id="vendor_id_8086__intel_corporation"></span><span id="VENDOR_ID_8086__INTEL_CORPORATION"></span>Vendor ID 8086, Intel Corporation
-
 
 For vendor ID 8086, these device IDs are supported:
 

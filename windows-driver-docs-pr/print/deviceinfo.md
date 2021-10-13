@@ -1,107 +1,105 @@
 ---
 title: DeviceInfo
-description: DeviceInfo
-ms.assetid: be2ee9e7-bd94-4f96-8d93-3b6f5fd9350e
-ms.date: 11/28/2017
+description: Contains information about the device as a whole. Much of this data can be set by the user or administrator to personalize the device.
+ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
 # DeviceInfo
 
+Schema Path: \\Printer.DeviceInfo
 
-Schema Path:\\Printer.DeviceInfo
+Node Type: Property
 
-Node Type:Property
-
-The DeviceInfo property contains information about the device as a whole. Much of this data can be set by the user/administrator to personalize the device.
+The DeviceInfo property contains information about the device as a whole. Much of this data can be set by the user or administrator to personalize the device.
 
 The DeviceInfo property contains the following child values.
 
-FriendlyName
+- FriendlyName
 
-Manufacturer
+- Manufacturer
 
-ModelName
+- ModelName
 
-Location
+- Location
 
-Comment
+- Comment
 
-FirmwareVersion
+- FirmwareVersion
 
-IEEE1284DeviceID
+- IEEE1284DeviceID
 
-[NetworkingInfo](networkinginfo.md)
+- [NetworkingInfo](networkinginfo.md)
 
-### <span id="friendlyname"></span><span id="FRIENDLYNAME"></span> FriendlyName
+## FriendlyName
 
-Schema Path:\\Printer.DeviceInfo:FriendlyName
+Schema Path: \\Printer.DeviceInfo:FriendlyName
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:A user-created, user-settable name that identifies the device.
+Description: A user-created, user-settable name that identifies the device.
 
-### <span id="manufacturer"></span><span id="MANUFACTURER"></span> Manufacturer
+## Manufacturer
 
-Schema Path:\\Printer.DeviceInfo:Manufacturer
+Schema Path: \\Printer.DeviceInfo:Manufacturer
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:The name of the device manufacturer.
+Description: The name of the device manufacturer.
 
-### <span id="modelname"></span><span id="MODELNAME"></span> ModelName
+## ModelName
 
-Schema Path:\\Printer.DeviceInfo:ModelName
+Schema Path: \\Printer.DeviceInfo:ModelName
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:The name of the device model, including the model number, but excluding the manufacturer name.
+Description: The name of the device model, including the model number, but excluding the manufacturer name.
 
-### <span id="location"></span><span id="LOCATION"></span> Location
+## Location
 
-Schema Path:\\Printer.DeviceInfo:Location
+Schema Path: \\Printer.DeviceInfo:Location
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:The current location of the device.
+Description: The current location of the device.
 
-### <span id="comment"></span><span id="COMMENT"></span> Comment
+## Comment
 
-Schema Path:\\Printer.DeviceInfo:Comment
+Schema Path: \\Printer.DeviceInfo:Comment
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:A string containing information important to the administrator or organization in which the device resides.
+Description: A string containing information important to the administrator or organization in which the device resides.
 
-### <span id="firmwareversion"></span><span id="FIRMWAREVERSION"></span> FirmwareVersion
+## FirmwareVersion
 
-Schema Path:\\Printer.DeviceInfo:FirmwareVersion
+Schema Path: \\Printer.DeviceInfo:FirmwareVersion
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:A string that contains the current firmware version of the device.
+Description: A string that contains the current firmware version of the device.
 
-### <span id="ieee1284deviceid"></span><span id="IEEE1284DEVICEID"></span> IEEE1284DeviceID
+## IEEE1284DeviceID
 
-Schema Path:\\Printer.DeviceInfo:IEEE1284DeviceID
+Schema Path: \\Printer.DeviceInfo:IEEE1284DeviceID
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:A string that contains the IEEE 1284-2000 device ID for the device. Note that the length field must not be specified. The value is assigned by the Printer vendor and must not be localized by the Print Service.
+Description: A string that contains the IEEE 1284-2000 device ID for the device. Note that the length field must not be specified. The value is assigned by the Printer vendor and must not be localized by the Print Service.
 
 The IEEE 1284-2000 device ID is a length field followed by a case-sensitive string of ASCII characters that define peripheral characteristics and capabilities. The length bytes must not be included. The device ID sequence is composed of a series of keys and values of the form:
 
@@ -111,22 +109,13 @@ As indicated, each key will have one value and might have more than one value. T
 
 The following code example shows an ID string, which shows the optional command set, comment, and active command set keys and their associated values.
 
-**Note**   All of the text must be on one line.
+> [!NOTE]
+> All of the text must be on one line.
 
- 
-
-```cpp
+```inf
 MANUFACTURER:ACME Manufacturing;
 MODEL:LaserBeam 9;
 COMMAND SET:PCL,PJL,PS,XHTML-Print+xml;
 COMMENT:Anything you like;
 ACTIVE COMMAND SET:PCL;
 ```
-
- 
-
- 
-
-
-
-

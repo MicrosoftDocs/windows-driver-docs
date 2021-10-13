@@ -1,7 +1,6 @@
 ---
 title: Remote NDIS INF Template
 description: Remote NDIS INF Template
-ms.assetid: bbbd3aef-230f-4286-bea2-bb583789865e
 keywords:
 - Remote NDIS WDK networking , INF template
 ms.date: 04/20/2017
@@ -176,14 +175,5 @@ Rndis_Property         = "Optional RNDIS Property"
 
 [Overview of Remote NDIS (RNDIS)](overview-of-remote-ndis--rndis-.md)
 
-[USB class drivers included in Windows](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
-
- 
-
- 
-
-
-
-
-
+[USB class drivers included in Windows](../usbcon/supported-usb-classes.md)
 

@@ -1,7 +1,6 @@
 ---
 title: OID_NDK_CONNECTIONS
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_NDK_CONNECTIONS OID to query the list of active Network Direct connections from the miniport adapter.
-ms.assetid: 31A0BB2B-B571-4548-A9D1-BE44687DEA37
 ms.date: 08/08/2017
 keywords: 
  -OID_NDK_CONNECTIONS Network Drivers Starting with Windows Vista
@@ -15,15 +14,13 @@ As a query, NDIS and overlying drivers or user-mode applications use the OID\_ND
 
 NDIS 6.30 and later miniport drivers that provide NDK services must support this OID. Otherwise, this OID is optional.
 
-Remarks
--------
+## Remarks
 
-NDIS issues this OID to obtain the list of active Network Direct connections from an adapter. The adapter must return the list of connections with the [**NDIS\_NDK\_CONNECTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_ndk_connections) structure at the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure.
+NDIS issues this OID to obtain the list of active Network Direct connections from an adapter. The adapter must return the list of connections with the [**NDIS\_NDK\_CONNECTIONS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_connections) structure at the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure.
 
 This structure is variable-sized based on the number of connections that are returned. The size of the connection array, as element count, is specified in the **Count** member.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -53,14 +50,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_NDK\_CONNECTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_ndk_connections)
+[**NDIS\_NDK\_CONNECTIONS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_connections)
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
-
- 
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
  
-
-
-
 

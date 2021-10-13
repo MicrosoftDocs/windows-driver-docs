@@ -1,7 +1,6 @@
 ---
 title: Completing the IRP
 description: Completing the IRP
-ms.assetid: 3174b36c-feb5-497c-a6e4-0d070c658899
 keywords:
 - IRP dispatch routines WDK file system , completing IRPs
 - completing I/O requests WDK file system
@@ -23,7 +22,7 @@ To *complete* an IRP, a dispatch routine must perform all of the following steps
 
 1.  Set **Irp-&gt;IoStatus.Status** to an appropriate NTSTATUS value.
 
-2.  Call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) to return the IRP to the I/O Manager.
+2.  Call [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) to return the IRP to the I/O Manager.
 
 3.  Return the same status value as in step 1 to the caller.
 
@@ -33,16 +32,11 @@ Completing an IRP is sometimes referred to as "succeeding" or "failing" the IRP:
 
 -   To *fail* an IRP means to complete it with an error or warning NTSTATUS value such as STATUS\_INVALID\_DEVICE\_REQUEST or STATUS\_BUFFER\_OVERFLOW.
 
-NTSTATUS values are defined in ntstatus.h. These values fall into four categories: success, informational, warning, and error. For more information, see [Using NTSTATUS Values](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values).
+NTSTATUS values are defined in ntstatus.h. These values fall into four categories: success, informational, warning, and error. For more information, see [Using NTSTATUS Values](../kernel/using-ntstatus-values.md).
 
 **Note**   Although STATUS\_PENDING is a success NTSTATUS value, it is a programming error to complete an IRP with STATUS\_PENDING.
 
  
 
  
-
- 
-
-
-
 

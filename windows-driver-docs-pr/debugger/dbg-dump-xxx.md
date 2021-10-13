@@ -1,7 +1,6 @@
 ---
 title: DBG\_DUMP\_XXX
 description: DBG\_DUMP\_XXX
-ms.assetid: d34ecf95-3aea-4850-a2de-76f239e8b8a0
 ms.date: 12/07/2017
 keywords: ["DBG_DUMP_XXX Windows Debugging"]
 topic_type:
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_dbg_dump_xxx_dbx"></span><span id="DDK_DBG_DUMP_XXX_DBX"></span>
 
 
-The DBG\_DUMP\_*XXX* bit flags are used by the **Options** member of the SYM\_DUMP\_PARAM structure to control the behavior of the [**IG\_DUMP\_SYMBOL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_sym_dump_param)[**Ioctl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine) operation.
+The DBG\_DUMP\_*XXX* bit flags are used by the **Options** member of the SYM\_DUMP\_PARAM structure to control the behavior of the [**IG\_DUMP\_SYMBOL\_INFO**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_sym_dump_param)[**Ioctl**](/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine) operation.
 
 The following flags can be present.
 
@@ -104,8 +103,7 @@ The following flags can be present.
 
 In addition, the result of the macro DBG\_DUMP\_RECUR\_LEVEL(*Level*) can be added to the bit-set to specify how deep into structures to recurse. *Level* can be a number between 0 and 15.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -123,16 +121,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**IG\_DUMP\_SYMBOL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_sym_dump_param)
+[**IG\_DUMP\_SYMBOL\_INFO**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_sym_dump_param)
 
-[**Ioctl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine)
-
- 
+[**Ioctl**](/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine)
 
  
-
-
-
-
-
 

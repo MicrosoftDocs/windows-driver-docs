@@ -1,23 +1,21 @@
 ---
 title: GPIO controller Device-Specific Method (_DSM)
 description: To support a variety of device-class-specific communications between the general-purpose I/O (GPIO) driver stack in Windows and the platform firmware, Microsoft defines a Device-Specific Method (_DSM) that can be included under a GPIO controller in the ACPI namespace.
-ms.assetid: 2891A78C-8C4F-4FE4-AB69-402F04DFA885
-ms.date: 04/20/2017
+ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---
 
 # GPIO controller Device-Specific Method (\_DSM)
 
-
 To support a variety of device-class-specific communications between the general-purpose I/O (GPIO) driver stack in Windows and the platform firmware, Microsoft defines a Device-Specific Method (\_DSM) that can be included under a GPIO controller in the ACPI namespace.
 
 Currently, this method defines two functions:
 
--   **Function Index 0**: The Standard Query Function that all \_DSM methods are required to provide.
--   **Function Index 1**: The ActiveBoth Polarity Function, which informs the GPIO stack of any ActiveBoth pins on the controller that are not asserted logic low. The GPIO stack assumes that ActiveBoth pins are asserted logic low, so this function allows the platform to override that default for specific pins.
+- **Function Index 0**: The Standard Query Function that all \_DSM methods are required to provide.
+
+- **Function Index 1**: The ActiveBoth Polarity Function, which informs the GPIO stack of any ActiveBoth pins on the controller that are not asserted logic low. The GPIO stack assumes that ActiveBoth pins are asserted logic low, so this function allows the platform to override that default for specific pins.
 
 ## GUID definition
-
 
 The GUID for the GPIO controller \_DSM method is defined to be:
 
@@ -25,17 +23,15 @@ The GUID for the GPIO controller \_DSM method is defined to be:
 
 ## Function 0
 
-
 Function 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ## Function 1
-
 
 The parameters for Function 1 of the GPIO controller \_DSM method are defined as follows:
 
 ### Arguments
 
--   **Arg0:** UUID for GPIO controller \_DSM
+- **Arg0:** UUID for GPIO controller \_DSM
 
     `// GUID: {4F248F40-D5E2-499F-834C-27758EA1CD3F}`
 
@@ -43,27 +39,27 @@ The parameters for Function 1 of the GPIO controller \_DSM method are defined as
 
     `0x4f248f40, 0xd5e2, 0x499f, 0x83, 0x4c, 0x27, 0x75, 0x8e, 0xa1, 0xcd. 0x3f);`
 
--   **Arg1:** Revision ID
+- **Arg1:** Revision ID
 
     `#define GPIO_CONTROLLER _DSM_REVISION_ID     0`
 
--   **Arg2:** Function index for ActiveBoth asserted polarity:
+- **Arg2:** Function index for ActiveBoth asserted polarity:
 
     `#define GPIO_CONTROLLER_DSM_ACTIVE_BOTH_POLARITY_FUNCTION_INDEX  1`
 
--   **Arg3:** Package empty (not used)
+- **Arg3:** Package empty (not used)
 
 ### Return
 
 A package of integers, each of which is the controller-relative pin number of a pin on the GPIO controller that is:
 
--   Defined to be an ActiveBoth interrupt, and
--   Whose asserted state is *not* logic low (in other words, *is* logic high).
+- Defined to be an ActiveBoth interrupt, and
+
+- Whose asserted state is *not* logic low (in other words, *is* logic high).
 
 For example, if an emulated ActiveBoth pin is connected to a pushbutton device, the pin enters the *asserted* state (logic-high input level at pin) when the user presses the button, and stays in the asserted state while the user holds the button down. When the user releases the button, the pin state changes to *unasserted* (logic-low input level).
 
 ## ASL code example
-
 
 The following ASL code example identifies a set of GPIO pins that have initial polarity of ActiveHigh.
 
@@ -141,11 +137,3 @@ Function(_DSM,{BuffObj, PkgObj, IntObj},{BuffObj, IntObj, IntObj, PkgObj})
     }
 }
 ```
-
- 
-
- 
-
-
-
-

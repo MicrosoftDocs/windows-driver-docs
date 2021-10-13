@@ -1,7 +1,6 @@
 ---
 title: Device Status for High-Performance Buses and Adapters
 description: Device Status for High-Performance Buses and Adapters
-ms.assetid: 7a6b8048-d9aa-4169-aac5-150dc805f61b
 keywords:
 - Storport drivers WDK , errors
 - errors WDK Storport

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD7 DRIVER_UNMAPPING_INVALID_VIEW
 description: The DRIVER_UNMAPPING_INVALID_VIEW bug check has a value of 0x000000D7. This indicates a driver is trying to unmap an address that was not mapped.
-ms.assetid: 68075aa7-f579-49c7-a30a-a21312625ff9
 keywords: ["Bug Check 0xD7 DRIVER_UNMAPPING_INVALID_VIEW", "DRIVER_UNMAPPING_INVALID_VIEW"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,10 +58,9 @@ The DRIVER\_UNMAPPING\_INVALID\_VIEW bug check has a value of 0x000000D7. This i
 
  
 
-Remarks
--------
+## Remarks
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. Use the [**kb (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) command to get a stack trace: the driver that caused the error can be determined from the stack trace.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace: the driver that caused the error can be determined from the stack trace.
 
  
 

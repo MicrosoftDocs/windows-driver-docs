@@ -1,7 +1,6 @@
 ---
 title: Use __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls
 description: Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls
-ms.assetid: 14d3a022-3e74-4526-9bf5-fee1ce36ac9e
 keywords:
 - __sdv_save_request
 - __sdv_retrieve_request
@@ -32,9 +31,9 @@ Where *request* can be a handle to any framework request object.
 
 These functions are only used by the static analysis tools. The functions are ignored by the compiler.
 
-The following code example shows how the **\_\_sdv\_save\_request** and \_**\_sdv\_retrieve\_request** functions are used to guide SDV, so that SDV can map the deferred request. SDV can use this mapping to verify the [DeferredRequestCompleted](https://docs.microsoft.com/windows-hardware/drivers/devtest/kmdf-deferredrequestcompleted) rule. The DeferredRequestCompleted rule requires that **\_\_sdv\_save\_request** and \_**\_sdv\_retrieve\_request** appear in your code. There are two driver property rules (**AliasWithinDispatch**, **AliasWithinTimerDpc**) that look for the existence of the **\_\_sdv\_save\_request** and \_**\_sdv\_retrieve\_request** functions.
+The following code example shows how the **\_\_sdv\_save\_request** and \_**\_sdv\_retrieve\_request** functions are used to guide SDV, so that SDV can map the deferred request. SDV can use this mapping to verify the [DeferredRequestCompleted](./kmdf-deferredrequestcompleted.md) rule. The DeferredRequestCompleted rule requires that **\_\_sdv\_save\_request** and \_**\_sdv\_retrieve\_request** appear in your code. There are two driver property rules (**AliasWithinDispatch**, **AliasWithinTimerDpc**) that look for the existence of the **\_\_sdv\_save\_request** and \_**\_sdv\_retrieve\_request** functions.
 
-In the following code example, the function *EchoEvtIoRead* is an [*EvtIoRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_read) event callback function that saves the handle to the framework request object in the queue context area. The function *EchoEvtTimerFunc* is an [*EvtTimerFunc*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdftimer/nc-wdftimer-evt_wdf_timer) event callback function that retrieves it.
+In the following code example, the function *EchoEvtIoRead* is an [*EvtIoRead*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_read) event callback function that saves the handle to the framework request object in the queue context area. The function *EchoEvtTimerFunc* is an [*EvtTimerFunc*](/windows-hardware/drivers/ddi/wdftimer/nc-wdftimer-evt_wdf_timer) event callback function that retrieves it.
 
 ```
 VOID
@@ -111,10 +110,4 @@ EchoEvtTimerFunc(
 ```
 
  
-
- 
-
-
-
-
 

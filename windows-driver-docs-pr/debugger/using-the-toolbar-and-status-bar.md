@@ -1,7 +1,6 @@
 ---
 title: Using the Toolbar and Status Bar
 description: Using the Toolbar and Status Bar
-ms.assetid: 96427166-b6df-4f6b-b550-69d0eb33042d
 keywords: ["toolbar (WinDbg)", "toolbar (WinDbg), overview", "buttons (WinDbg Toolbar)", "buttons (WinDbg Toolbar), overview", "status bar", "status bar, overview", "WinDbg, toolbar", "WinDbg, status bar", "WinDbg, buttons"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -19,7 +18,7 @@ The *toolbar* appears underneath the menu bar, near the top of the WinDbg window
 
 The following screen shot shows the WinDbg toolbar.
 
-![screen shot of the windbg toolbar](images/toolbar4.png)
+![screen shot of the windbg toolbar.](images/toolbar4.png)
 
 The toolbar buttons have various effects. Most of them are equivalent to menu commands. To execute the command that is associated with a toolbar button, click the toolbar button. When you cannot use a button, it appears unavailable.
 
@@ -29,7 +28,7 @@ For more information about each button, see [Toolbar Buttons](toolbar-buttons.md
 
 The following screen shot shows the WinDbg status bar.
 
-![screen shot of the windbg status bar](images/statusbar3.png)
+![screen shot of the windbg status bar.](images/statusbar3.png)
 
 The following table describes the sections of the WinDbg status bar.
 

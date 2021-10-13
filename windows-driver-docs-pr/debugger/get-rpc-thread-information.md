@@ -1,7 +1,6 @@
 ---
 title: Get RPC Thread Information
 description: Get RPC Thread Information
-ms.assetid: 4cb8d11f-5b0a-4526-9f64-ee69fd15d1ba
 keywords: ["RPC thread information"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

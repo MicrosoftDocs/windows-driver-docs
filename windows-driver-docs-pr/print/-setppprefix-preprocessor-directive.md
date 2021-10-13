@@ -1,7 +1,6 @@
 ---
 title: '#SetPPPrefix Preprocessor Directive'
 description: '#SetPPPrefix Preprocessor Directive'
-ms.assetid: 3520aa66-1090-40db-9c9f-cfba0e6e2bee
 keywords:
 - preprocessor directives WDK GDL , keywords
 - keywords WDK GDL

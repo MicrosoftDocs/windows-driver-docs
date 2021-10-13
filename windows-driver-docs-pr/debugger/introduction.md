@@ -1,7 +1,6 @@
 ---
 title: Debugger Engine Introduction
 description: Debugger Engine Introduction
-ms.assetid: fa52a1f0-9397-48a5-acbd-ce5347c0baef
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ This is a preliminary document and is currently incomplete.
 
 For many concepts relating to the debuggers and the debugger engine that are not yet documented here, look in the [Debugging Techniques](debugging-techniques.md) section of this documentation.
 
-To obtain some of the currently undocumented functionality of the debugger engine API, use the [**Execute**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugcontrol3-execute) method to execute individual debugger commands.
+To obtain some of the currently undocumented functionality of the debugger engine API, use the [**Execute**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-execute) method to execute individual debugger commands.
 
 ### <span id="extensions"></span><span id="EXTENSIONS"></span>Extensions
 
@@ -64,10 +63,4 @@ You can customize debugger output using DML. For more information see [Customizi
 Use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger. JavaScript providers bridge a scripting language to the debugger's internal object model. The JavaScript debugger scripting provider, allows the for use of JavaScript with the debugger. For more information, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md).
 
  
-
- 
-
-
-
-
 

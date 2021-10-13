@@ -1,7 +1,6 @@
 ---
-title: Bluetooth Version and Profile Support in Previous Windows Versions
-description: Bluetooth Version and Profile Support in Previous Windows Versions
-ms.assetid: A5A81EAA-0DC7-4725-AA0D-5C4867DDE47C
+title: Bluetooth Software Radio Switch Function Prototypes
+description: Learn about bluetooth version and profile support in previous windows versions. See requirements, recommendations, and code examples.
 ms.date: 02/12/2018
 ms.localizationpriority: medium
 ---
@@ -14,31 +13,32 @@ For Windows 8, Bluetooth radios must support software on/off capability. To allo
 
 To provide this DLL plug-in, two things must be done.
 
-A DLL must be authored which exports the correct functions 
-The DLL must be registered on the machine. The DLL is responsible for persisting the radio state, including across system reboots 
+A DLL must be authored which exports the correct functions
+The DLL must be registered on the machine. The DLL is responsible for persisting the radio state, including across system reboots
 The DLL must export two functions:
 
--    BluetoothEnableRadio: The radio support DLL implements BluetoothEnableRadio to enable Windows to turn power to the radio on or off.
+- BluetoothEnableRadio: The radio support DLL implements BluetoothEnableRadio to enable Windows to turn power to the radio on or off.
 
 ```cpp
-C++ 
+C++
 DWORD WINAPI BluetoothEnableRadio(
    BOOL fEnable
 );
-``` 
+```
 
 fEnable: Set to TRUE to turn radio power on. Set to FALSE to turn radio power off.
 
 Return value: Return ERROR_SUCCESS if current state was changed to state of fEnable. Otherwise, returns a WIN32 error code if current state was not changed.
 
--    IsBluetoothRadioEnabled: The radio support DLL implements IsBluetoothRadioEnabled to enable Windows to determine if power to the radio is on or off.
+- IsBluetoothRadioEnabled: The radio support DLL implements IsBluetoothRadioEnabled to enable Windows to determine if power to the radio is on or off.
 
 ```cpp
-C++ 
+C++
 DWORD WINAPI IsBluetoothRadioEnabled(
    BOOL* pfEnabled
 );
 ```
+
 pfEnabled: Pointer to buffer describing if power to the radio is on or off.
 
 Return value: Return ERROR_SUCCESS if current state was obtained. The value pointed to by pfEnabled now contains the state. (true or false). Otherwise, returns a WIN32 error code if current state was not obtained. The value pointed to by pfEnabled is undefined and should not be used
@@ -61,7 +61,7 @@ Example:
 
 It is required to install the DLL in a secure location such as C:\Program Files\Fabrikam.
 
-Requirements and Recommendations
+## Requirements and Recommendations
 
 While this design allows flexibility in how the hardware can be controlled, it is required that the off state results in no transmission/reception from the radio. Additionally, it is recommended to power down the radio to its lowest power state to conserve energy and remove it from the bus to allow the Bluetooth stack to unload.
 
@@ -72,6 +72,7 @@ Windows 8 Radio Management requires the DLL to execute its instructions in the L
 The radio support DLL should perform the appropriate checks to ensure the presence of its corresponding hardware prior to performing any actions. If the corresponding hardware is not found on the system, the radio support DLL should return an appropriate error code.
 
 ## Bluetooth Software Radio Sample Sources
+
 Registry File
 
 Windows Registry Editor Version 5.00
@@ -90,8 +91,8 @@ Windows Registry Editor Version 5.00
 
 00
 
-
 MAKEFILE
+
 ```cpp
 ###### --------------------------------------------------------------------
 
@@ -102,7 +103,6 @@ MAKEFILE
 ######
 
 ###### --------------------------------------------------------------------
-```
 
 !ifdef NTMAKEENV
 
@@ -112,8 +112,7 @@ MAKEFILE
 
 !error - You forgot to set your build environment
 
-!endif 
-
+!endif
 
 RSupport.cpp
 
@@ -169,7 +168,6 @@ return ERROR_SUCCESS;
 
 }
 
-
 RSupport.def
 
 /*++
@@ -198,8 +196,7 @@ EXPORTS
 
 BluetoothEnableRadio
 
-IsBluetoothRadioEnabled 
-
+IsBluetoothRadioEnabled
 
 Sample SOURCES
 
@@ -227,8 +224,5 @@ $(SDK_LIB_PATH)\user32.lib \
 
 C_DEFINES=-DWIN32 -DUNICODE -D_UNICODE
 
-SOURCES = RSupport.cpp 
-
-
-
-
+SOURCES = RSupport.cpp
+```

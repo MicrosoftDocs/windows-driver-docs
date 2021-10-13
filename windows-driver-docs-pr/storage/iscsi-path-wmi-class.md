@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_Path WMI Class
 description: ISCSI\_Path WMI Class
-ms.assetid: d4067869-2c67-42d3-988e-af825549853d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -54,13 +53,7 @@ class ISCSI_Path
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_Path**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_iscsi_path) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_Path**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_path) data structure.
 
  
-
- 
-
-
-
-
 

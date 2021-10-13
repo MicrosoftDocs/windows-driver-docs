@@ -1,7 +1,6 @@
 ---
 title: GetActiveJobsResponse element
 description: The required GetActiveJobsResponse element returns a summary of job-related variables for all currently active scan jobs.
-ms.assetid: 77efef7f-451d-49f8-80c1-6ab12c98ee7b
 keywords: ["GetActiveJobsResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **GetActiveJobsResponse** element returns a summary of job-related variables for all currently active scan jobs.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetActiveJobsResponse>
@@ -27,8 +25,7 @@ Usage
 </wscn:GetActiveJobsResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,8 +53,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetActiveJobsResponse** operation.
 
@@ -65,25 +61,24 @@ A client can call [**GetActiveJobsRequest**](getactivejobsrequest.md) to determi
 
 **GetActiveJobsResponse** contains an [**ActiveJobs**](activejobs.md) element that contains a summary of all jobs.
 
-Examples
---------
+## Examples
 
 The following code example shows how to return the fact that there are no active scan jobs.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
-      http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
+      https://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
     </wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/GetActiveJobs
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/GetActiveJobs
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheGetActiveJobsRequest</wsa:RelatesTo>
@@ -102,17 +97,17 @@ The following code example reports two active scan jobs.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
-      http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
+      https://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
     </wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/GetActiveJobs
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/GetActiveJobs
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheGetActiveJobsRequest</wsa:RelatesTo>

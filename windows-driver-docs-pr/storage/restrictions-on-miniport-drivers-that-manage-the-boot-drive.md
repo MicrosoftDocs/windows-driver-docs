@@ -1,7 +1,6 @@
 ---
 title: Restrictions on Miniport Drivers that Manage the Boot Drive
 description: Restrictions on Miniport Drivers that Manage the Boot Drive
-ms.assetid: 78375e9b-8be9-4e64-b90e-cc8c4ab1751b
 keywords:
 - storage miniport drivers WDK , boot drives
 - miniport drivers WDK storage , boot drives
@@ -27,27 +26,27 @@ Miniport drivers must make frugal use of memory during a system crash. The amoun
 
 ### <span id="accessibility"></span><span id="ACCESSIBILITY"></span>Accessibility of the boot device
 
-The boot device must be accessible before the miniport returns from initialization routine ([**HwStorInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_initialize) for StorPort and [*HwScsiInitialize*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557302(v=vs.85)) for SCSI Port). The operating system might send commands to the boot device at any point after the initialization routine completes.
+The boot device must be accessible before the miniport returns from initialization routine ([**HwStorInitialize**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_initialize) for StorPort and [*HwScsiInitialize*](/previous-versions/windows/hardware/drivers/ff557302(v=vs.85)) for SCSI Port). The operating system might send commands to the boot device at any point after the initialization routine completes.
 
 ### <span id="bus_resets"></span><span id="BUS_RESETS"></span>Bus resets
 
-Miniport drivers should disregard requests to reset the bus ([**HwStorResetBus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_reset_bus) for StorPort and [*HwScsiResetBus*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557318(v=vs.85)) for SCSI Port ).
+Miniport drivers should disregard requests to reset the bus ([**HwStorResetBus**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_reset_bus) for StorPort and [*HwScsiResetBus*](/previous-versions/windows/hardware/drivers/ff557318(v=vs.85)) for SCSI Port ).
 
 ### <span id="dpcs"></span><span id="DPCS"></span>Deferred Procedure Calls (DPCs)
 
-StorPort miniport drivers must not attempt to initialize a DPC routine ([**HwStorDpcRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_dpc_routine)) with [**StorPortInitializeDpc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportinitializedpc). Any processing normally queued for execution to a DPC routine during an interrupt request must, in this case, occur in the context of that request.
+StorPort miniport drivers must not attempt to initialize a DPC routine ([**HwStorDpcRoutine**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_dpc_routine)) with [**StorPortInitializeDpc**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializedpc). Any processing normally queued for execution to a DPC routine during an interrupt request must, in this case, occur in the context of that request.
 
 ### <span id="multiple_requests"></span><span id="MULTIPLE_REQUESTS"></span>Multiple requests per logical unit
 
-The disk dump port driver does not send multiple requests per logical unit. Therefore, it does not matter what value a miniport driver assigns to the **MultipleRequestPerLu** member of [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563901(v=vs.85)).
+The disk dump port driver does not send multiple requests per logical unit. Therefore, it does not matter what value a miniport driver assigns to the **MultipleRequestPerLu** member of [**PORT\_CONFIGURATION\_INFORMATION**](/previous-versions/windows/hardware/drivers/ff563901(v=vs.85)).
 
 ### <span id="polling"></span><span id="POLLING"></span>Polling and time checking
 
-Miniport drivers must not rely on time checking routines, such as [**ScsiPortQuerySystemTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportquerysystemtime) or [**StorPortQuerySystemTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportquerysystemtime) while running in dump mode. Best practices for miniport drivers exclude using the [**KeQuerySystemTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kequerysystemtime) routine, at any time, because miniport drivers should always use port driver library routines to check the time.
+Miniport drivers must not rely on time checking routines, such as [**ScsiPortQuerySystemTime**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportquerysystemtime) or [**StorPortQuerySystemTime**](/windows-hardware/drivers/ddi/storport/nf-storport-storportquerysystemtime) while running in dump mode. Best practices for miniport drivers exclude using the [**KeQuerySystemTime**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime) routine, at any time, because miniport drivers should always use port driver library routines to check the time.
 
 ### <span id="irql"></span><span id="IRQL"></span>Interrupt request level
 
-The runtime port driver calls [**HwStorFindAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_find_adapter) and [*HwScsiFindAdapter*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) at PASSIVE IRQL. However, the dump driver calls all miniport routines at IRQL higher than PASSIVE. Therefore, miniport drivers in the dump path must avoid operations, such as registry accesses, that must be performed at PASSIVE IRQL.
+The runtime port driver calls [**HwStorFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) and [*HwScsiFindAdapter*](/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) at PASSIVE IRQL. However, the dump driver calls all miniport routines at IRQL higher than PASSIVE. Therefore, miniport drivers in the dump path must avoid operations, such as registry accesses, that must be performed at PASSIVE IRQL.
 
 ### <span id="target_and_lun"></span><span id="TARGET_AND_LUN"></span>Target IDs and logical unit numbers (LUNs)
 
@@ -57,14 +56,7 @@ Storage miniport drivers in the boot or dump path must detect whether they are r
 
 -   The operating system passes **NULL** arguments to the miniport driver's *DriverEntry* routine.
 
--   The disk dump port driver passes a string of "dump=1" in the *ArgumentString* parameter when it calls the [**HwStorFindAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_find_adapter) or [*HwScsiFindAdapter*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) routine.
+-   The disk dump port driver passes a string of "dump=1" in the *ArgumentString* parameter when it calls the [**HwStorFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) or [*HwScsiFindAdapter*](/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) routine.
 
 When you look in the debugger for an image of a storage miniport driver in dump mode, the driver name will have a prefix of "dump\_". If the miniport driver is in hibernation mode, the driver name will have a prefix of "hiber\_".
-
- 
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CROSSBAR\_ROUTE
 description: The KSPROPERTY\_CROSSBAR\_ROUTE property queries whether a particular routing is possible and to route a video or audio stream by specifying an output pin index and an input pin index. This property must be implemented.
-ms.assetid: 2c64575c-49c6-437b-924e-042ee0f15d9b
 keywords: ["KSPROPERTY_CROSSBAR_ROUTE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_CROSSBAR\_ROUTE property queries whether a particular routing is
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_ROUTE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s)"><strong>KSPROPERTY_CROSSBAR_ROUTE_S</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_ROUTE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s)"><strong>KSPROPERTY_CROSSBAR_ROUTE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_ROUTE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s)"><strong>KSPROPERTY_CROSSBAR_ROUTE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_ROUTE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s)"><strong>KSPROPERTY_CROSSBAR_ROUTE_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,13 +56,11 @@ The KSPROPERTY\_CROSSBAR\_ROUTE property queries whether a particular routing is
 
 The property value (operation data) is a KSPROPERTY\_CROSS\_ROUTE\_S structure that specifies a particular routing and whether that routing is possible.
 
-Remarks
--------
+## Remarks
 
 When routed to an input pin index of -1, an audio output pin should mute the output audio stream, such as when changing a channel.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_CROSSBAR\_ROUTE\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_CROSSBAR\_ROUTE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_route_s)
 

@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_ConnectionStaticInfo WMI Class
 description: ISCSI\_ConnectionStaticInfo WMI Class
-ms.assetid: 63af8432-3e38-451a-a26d-57b5ad1f29dd
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -68,13 +67,7 @@ class ISCSI_ConnectionStaticInfo {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_ConnectionStaticInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_iscsi_connectionstaticinfo) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_ConnectionStaticInfo**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_connectionstaticinfo) data structure.
 
  
-
- 
-
-
-
-
 

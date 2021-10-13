@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a 1394 (Firewire) cable.
-ms.assetid: 07784500-83F1-4927-998F-7CEEEADAA2B0
 ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a 1394 (Firewire) cable. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](https://go.microsoft.com/fwlink/p?linkid=301383).
+You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a 1394 (Firewire) cable. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Debugging Using Visual Studio](debugging-using-visual-studio.md).
 
 As an alternative to using Visual Studio to set up 1394 debugging, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](setting-up-a-1394-cable-connection.md).
 
@@ -23,17 +22,17 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 
 1.  Connect a 1394 cable to the 1394 controllers that you have chosen for debugging on the host and target computers.
-2.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+2.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 3.  On the host computer, in Visual Studio, when you get to the Computer Configuration dialog, select **Provision computer and choose debugger settings**.
 4.  For **Connection Type**, choose **Firewire**.
 
-    ![screen shot showing an example of debugger settings with values for the following fields: connection type, port number, key, host ip, and bus parameters](images/setup1394vs.png)
+    ![screen shot showing an example of debugger settings with values for the following fields: connection type, port number, key, host ip, and bus parameters.](images/setup1394vs.png)
 
     For **Channel**, enter a decimal number of your choice from 1 through 62.
 
     **Note**  Do not set the channel to 0 when you first set up debugging. Because the default channel value is 0, the software assumes there is no change and does not update the settings. If you must use channel 0, first use an alternate channel (1 through 62) and then switch to channel 0.
 
-    If you have more than one 1394 controller on the target computer, enter a **Bus Parameters** value of *b*.*d*.*f*, where *b*, *d*, and *f* are the bus, device, and function numbers for the 1394 controller that you intend to use for debugging on the target computer. The bus, device, and function numbers must be in decimal format (example: 4.4.0).
+    Enter a **Bus Parameters** value of *b*.*d*.*f*, where *b*, *d*, and *f* are the bus, device, and function numbers for the 1394 controller that you intend to use for debugging on the target computer. The bus, device, and function numbers must be in decimal format (example: 4.4.0). These values are displayed in Device Manager under *Location* on the *General* tab.  
 
 5.  The configuration process takes several minutes and might automatically reboot the target computer once or twice. When the process is complete, click **Finish**.
 
@@ -62,7 +61,7 @@ busparams               4.0.0
 
 Verify that *debugtype* is 1394 and *channel* is the channel number you specified in Visual Studio on the host computer. You can ignore the values of *debugport* and *baudrate*; they do not apply to debugging over 1394.
 
-If you entered **Bus Parameters** in Visual Studio, verify that *busparams* matches the bus parameters you specified.
+Verify that *busparams* matches the bus parameters you specified.
 
 If you do not see the value you entered for **Bus Parameters**, enter this command:
 
@@ -112,11 +111,4 @@ Reboot the target computer.
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
  
-
- 
-
-
-
-
-
 

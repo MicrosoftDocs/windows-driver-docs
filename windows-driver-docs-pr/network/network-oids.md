@@ -1,7 +1,6 @@
 ---
 title: Network OIDs
 description: Network OIDs
-ms.assetid: a897ba37-7984-455f-9428-a74850f7e3b6
 keywords:
 - OIDs WDK networking
 - network OIDs WDK
@@ -21,19 +20,13 @@ A miniport driver maintains information about its capabilities and current statu
 
 NDIS and higher level drivers can query and, in some cases, set information by using OIDs.
 
--   Higher level drivers for connectionless media call [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisoidrequest) to query or set information in a connectionless miniport driver. To perform a query or a set operation, NDIS calls the miniport driver's [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function.
+-   Higher level drivers for connectionless media call [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) to query or set information in a connectionless miniport driver. To perform a query or a set operation, NDIS calls the miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function.
 
--   Higher level drivers for connection-oriented media call [**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscooidrequest) to query or set information in a connection-oriented miniport driver. To perform both query and set operations, NDIS calls the miniport driver's [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_oid_request) function.
+-   Higher level drivers for connection-oriented media call [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) to query or set information in a connection-oriented miniport driver. To perform both query and set operations, NDIS calls the miniport driver's [**MiniportCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) function.
 
 NDIS maps many of the system-defined OIDs for miniport drivers to globally unique identifiers (GUIDs). NDIS registers these GUIDs with the kernel-mode Microsoft Windows Management Instrumentation (WMI) that supports user-mode Web-Based Enterprise Management (WBEM) applications. When a WMI client queries or sets one of these GUIDs, NDIS translates the request to a query OID operation or a set OID operation, as appropriate, and then passes any returned information and the status back to WMI. You can map custom GUIDs to custom OIDs or miniport driver status. A miniport driver must register custom GUID-to-OID or GUID-to-status mappings with NDIS during initialization.
 
-For more information about querying and setting OIDs, creating custom OIDs, and NDIS support for WMI, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
+For more information about querying and setting OIDs, creating custom OIDs, and NDIS support for WMI, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](ndis-management-information-and-oids.md).
 
  
-
- 
-
-
-
-
 

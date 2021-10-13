@@ -1,7 +1,6 @@
 ---
 title: OID_PNP_WAKE_UP_PATTERN_LIST
 description: OID_PNP_WAKE_UP_PATTERN_LIST
-ms.assetid: 36e4243f-5df6-4231-b1e3-63fcb2e2ec04
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_WAKE_UP_PATTERN_LIST Network Drivers Starting with Windows Vista
@@ -18,20 +17,19 @@ The OID\_PNP\_WAKE\_UP\_PATTERN\_LIST OID is used by a protocol to query a list 
 
 OID\_PNP\_WAKE\_UP\_PATTERN\_LIST is handled by NDIS rather than the miniport driver.
 
-NDIS returns to the protocol a description of each wake-up pattern set in the miniport driver. Each wake-up pattern, along with its mask, is described by an [**NDIS\_PM\_PACKET\_PATTERN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure.
+NDIS returns to the protocol a description of each wake-up pattern set in the miniport driver. Each wake-up pattern, along with its mask, is described by an [**NDIS\_PM\_PACKET\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure.
 
-For each wake-up pattern, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains the following:
+For each wake-up pattern, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains the following:
 
--   An [**NDIS\_PM\_PACKET\_PATTERN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure that provides information about the pattern and its mask.
+-   An [**NDIS\_PM\_PACKET\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure that provides information about the pattern and its mask.
 
--   A mask that indicates which bytes of an incoming packet should be compared with corresponding bytes in the pattern. The mask starts with the first byte of the packet. The mask immediately follows the [**NDIS\_PM\_PACKET\_PATTERN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure in the **InformationBuffer**.
+-   A mask that indicates which bytes of an incoming packet should be compared with corresponding bytes in the pattern. The mask starts with the first byte of the packet. The mask immediately follows the [**NDIS\_PM\_PACKET\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure in the **InformationBuffer**.
 
 -   A wake-up pattern, which begins **PatternOffset** bytes from the beginning of the **InformationBuffer**.
 
 An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling Ndis(Co)Request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -53,9 +51,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_PM\_PACKET\_PATTERN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern)
+[**NDIS\_PM\_PACKET\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern)
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [OID\_PM\_WOL\_PATTERN\_LIST](oid-pm-wol-pattern-list.md)
 
@@ -64,9 +62,4 @@ Requirements
 [OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN](oid-pnp-remove-wake-up-pattern.md)
 
  
-
- 
-
-
-
 

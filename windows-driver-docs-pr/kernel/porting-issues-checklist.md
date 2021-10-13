@@ -1,7 +1,6 @@
 ---
 title: Porting Issues Checklist
 description: Porting Issues Checklist
-ms.assetid: 6ab26321-85b8-4a5b-8ca5-af6cbf56ccd6
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -138,7 +137,7 @@ ms.localizationpriority: medium
 
 -   Avoid using computed or hard-coded pointer offsets.
 
-    When working with structures, use the [**FIELD\_OFFSET**](https://docs.microsoft.com/windows/desktop/api/ntdef/nf-ntdef-field_offset) macro wherever possible to determine the offset of structure members.
+    When working with structures, use the [**FIELD\_OFFSET**](/windows/win32/api/ntdef/nf-ntdef-field_offset) macro wherever possible to determine the offset of structure members.
 
 -   Avoid using hard-coded pointer or handle values.
 
@@ -236,7 +235,7 @@ ms.localizationpriority: medium
 
 <!-- -->
 
--   Use the [**FIELD\_OFFSET**](https://docs.microsoft.com/windows/desktop/api/ntdef/nf-ntdef-field_offset) macro.
+-   Use the [**FIELD\_OFFSET**](/windows/win32/api/ntdef/nf-ntdef-field_offset) macro.
 
     For example:
 
@@ -288,7 +287,7 @@ ms.localizationpriority: medium
 
 -   Be cautious when using structure packing directives.
 
-    On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlcopymemory) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
+    On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcopymemory) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
 
     ```cpp
     #pragma pack (1)  /* also set by /Zp switch */
@@ -323,12 +322,7 @@ ms.localizationpriority: medium
 
 -   [Supporting 32-Bit I/O in Your 64-Bit Driver](supporting-32-bit-i-o-in-your-64-bit-driver.md)
 
--   [Getting Ready for 64-bit Windows](https://docs.microsoft.com/windows/desktop/WinProg64/getting-ready-for-64-bit-windows) (user-mode application porting guide)
+-   [Getting Ready for 64-bit Windows](/windows/desktop/WinProg64/getting-ready-for-64-bit-windows) (user-mode application porting guide)
 
  
-
- 
-
-
-
 

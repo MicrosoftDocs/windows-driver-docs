@@ -1,7 +1,6 @@
 ---
 title: Using General Setup Functions
 description: Using General Setup Functions
-ms.assetid: 08a7b585-7930-47a3-9fa0-a36625242e5d
 keywords:
 - SetupAPI functions WDK , general Setup functions
 - general Setup functions WDK SetupAPI
@@ -27,7 +26,7 @@ This section summarizes the general Setup functions. *Device installation applic
 
 -   Write log entries to the [SetupAPI text logs](setupapi-text-logs.md).
 
-Installation software typically uses these functions together with [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)) and [PnP configuration manager functions](https://docs.microsoft.com/previous-versions/ff549713(v=vs.85)).
+Installation software typically uses these functions together with [device installation functions](/previous-versions/ff541299(v=vs.85)) and [PnP configuration manager functions](/previous-versions/ff549713(v=vs.85)).
 
 The general Setup functions listed in this section are described in detail in the Microsoft Windows SDK documentation.
 
@@ -54,10 +53,4 @@ This section includes the following topics:
 [SetupAPI Logging Functions](setupapi-logging-functions.md)
 
  
-
- 
-
-
-
-
 

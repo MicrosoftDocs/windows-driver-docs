@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_DEVICE\_LOST
 description: The KSEVENT\_DEVICE\_LOST event is triggered when a camera device is removed from the system \ 8212;for example, when a USB cable that connects a camera is unplugged.
-ms.assetid: 28E21A2D-63CC-4991-AEBA-694773FC009A
 keywords: ["KSEVENT_DEVICE_LOST Streaming Media Devices"]
 topic_type:
 - apiref
@@ -45,8 +44,8 @@ The **KSEVENT\_DEVICE\_LOST** event is triggered when a camera device is removed
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](./ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -56,16 +55,6 @@ The **KSEVENT\_DEVICE\_LOST** event is triggered when a camera device is removed
 ## See also
 
 
-[**KSEVENT\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ne-ks-ksevent_device)
+[**KSEVENT\_DEVICE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksevent_device)
 
 [**KSEVENT\_DEVICE\_PREEMPTED**](ksevent-device-preempted.md)
-
- 
-
- 
-
-
-
-
-
-

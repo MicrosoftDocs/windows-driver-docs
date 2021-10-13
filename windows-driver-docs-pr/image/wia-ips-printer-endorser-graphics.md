@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS property is used to report whether the Imprinter/Endorser item supports graphics and image data along with text.
-ms.assetid: F2550D8F-DF66-4184-909B-F0CCB68AD7C6
 keywords: ["WIA_IPS_PRINTER_ENDORSER_GRAPHICS Imaging Devices"]
 topic_type:
 - apiref
@@ -29,15 +28,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 If **WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS** is supported and set to a value of nonzero (True), the Imprinter/Endorser supports graphic data.
 
 This property is required for all Imprinter/Endorser items, but it can be implemented to always report a value of 0 (False).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

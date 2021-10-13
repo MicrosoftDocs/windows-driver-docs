@@ -1,7 +1,6 @@
 ---
 title: Planning your desktop COSA/APN database submission
 description: Planning your desktop COSA/APN database submission
-ms.assetid: 7e974914-c3e5-409e-b0bf-28d6885585b3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ To connect to a mobile broadband network, the user is typically required to prov
 
 COSA and the APN connectivity database are updated by using Windows Update. The figure below shows the overall submission process.
 
-![COSA/APN database submission process](images/COSA_and_APN_database_submission_process_diagram.png "COSA/APN database submission process")
+![COSA/APN database submission process.](images/COSA_and_APN_database_submission_process_diagram.png "COSA/APN database submission process")
 
 ## Complete the APN/COSA update spreadsheet
 

@@ -1,7 +1,6 @@
 ---
 title: Breakpoint Syntax
 description: This topic covers breakpoint syntax
-ms.assetid: 86228b87-9ca3-4d0c-be9e-63446ac6ce31
 keywords: debugger, breakpoints on methods, breakpoints, syntax rules for commands, b (breakpoint identifier), literal MASM identifier, templated functions
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -46,7 +45,7 @@ If you want to put a breakpoint on the *MyMethod* method in the *MyClass* class,
 
 If you want to use a more complex breakpoint command, you should use MASM expression syntax. For more information about expression syntax, see [Evaluating Expressions](evaluating-expressions.md).
 
-### <span id="breakpoints_using_complicated_text"></span><span id="BREAKPOINTS_USING_COMPLICATED_TEXT"></span>Breakpoints Using Complicated Text
+### Breakpoints Using Complicated MASM expressions
 
 To set a breakpoint on complicated functions, including functions that contain spaces, as well as a member of a C++ public class, enclose the expression in parentheses. For example, use **bp (??MyPublic)** or **bp (operator new)**.
 
@@ -62,7 +61,7 @@ This escape syntax is more useful for C++ (for example, overloaded operators) in
 
 To set a breakpoint on arbitrary text in C++ syntax, use <strong>bu @@c++(</strong><em>text</em>**)** for C++-compatible symbols.
 
-### <span id="breakpoints_in_scripts"></span><span id="BREAKPOINTS_IN_SCRIPTS"></span>Breakpoints in Scripts
+### Breakpoints in Scripts
 
 Breakpoint IDs do not have to be referred to explicitly. Instead, you can use a numerical expression that resolves to an integer that corresponds to a breakpoint ID. To indicate that the expression should be interpreted as a breakpoint, use the following syntax.
 
@@ -78,7 +77,7 @@ This syntax allows debugger scripts to programmatically select a breakpoint. In 
 b?[@$t0]
 ```
 
-### <span id="breakpoint_pseudo_registers"></span><span id="BREAKPOINT_PSEUDO_REGISTERS"></span>Breakpoint Pseudo-Registers
+### >Breakpoint Pseudo-Registers
 
 If you want to refer to a breakpoint address in an expression, you can use a [pseudo-register](pseudo-register-syntax.md) with the **$bp**_Number_ syntax, where *Number* is the breakpoint ID. For more information about this syntax, see Pseudo-Register Syntax.
 

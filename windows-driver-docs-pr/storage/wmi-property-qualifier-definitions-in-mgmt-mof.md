@@ -1,7 +1,6 @@
 ---
 title: WMI Property Qualifier Definitions in Mgmt.mof
 description: WMI Property Qualifier Definitions in Mgmt.mof
-ms.assetid: 2d8e7e83-6304-459f-b9d8-b40365834bb7
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -36,13 +35,7 @@ If you apply one of the preceding qualifiers to a data field in a WMI class defi
 
 Thus, a WMI property qualifier resembles an enumeration because the qualifier represents a set of integer values. But the WMI tool suite does not generate an enumeration declaration in *Iscsimgt.h* that corresponds to the qualifiers in *Mgmt.mof*, neither does it generate a set of symbolic constant definitions that correspond to the qualifier values.
 
-For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-property-qualifiers).
+For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](../kernel/wmi-property-qualifiers.md).
 
  
-
- 
-
-
-
-
 

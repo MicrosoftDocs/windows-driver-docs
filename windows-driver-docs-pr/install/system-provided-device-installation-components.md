@@ -1,7 +1,6 @@
 ---
 title: System-Provided Device Installation Components
 description: System-Provided Device Installation Components
-ms.assetid: faf586b9-ab99-4fee-a0d1-923000000189
 ms.date: 04/20/2017
 ms.localizationpriority: High
 ---
@@ -28,7 +27,7 @@ For more information, see [SetupAPI](setupapi.md).
 The PnP configuration manager API provides basic installation and configuration operations that are not provided by SetupAPI. The PnP configuration manager functions perform low-level tasks such as obtaining the status of a device node (*devnode*) and managing resource descriptors. These functions are primarily called by SetupAPI but can also be called by other device installation components.
 
 <a href="" id="driver-store"></a>Driver Store  
-Starting with Windows Vista, the driver store is a trusted collection of in-box and third-party [driver packages](driver-packages.md). The operating system maintains this collection in a secure location on the local hard disk. Only the driver packages in the driver store can be installed for a device.
+The driver store is a trusted collection of in-box and third-party [driver packages](driver-packages.md). The operating system maintains this collection in a secure location on the local hard disk. Only the driver packages in the driver store can be installed for a device.
 
 For more information, see [Driver Store](driver-store.md).
 

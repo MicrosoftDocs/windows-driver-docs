@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_VENDOR_SPECIFIC_IE
 description: WDI_TLV_VENDOR_SPECIFIC_IE is a TLV that contains a list of vendor-specific IEs.
-ms.assetid: 66995086-329A-49F1-B531-2AD2383473CF
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_VENDOR_SPECIFIC_IE Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,6 +1,5 @@
 ---
-title: Logging
-ms.assetid: CB7FE988-6E5A-4669-9FFB-A2B3F8DAF30F
+title: Logging NFC
 keywords:
 - NFC
 - near field communications
@@ -27,12 +26,12 @@ tracelog -enableex MyNfcSession -guid #D976D933-B88B-4227-95F8-00513C0986DE -mat
 tracelog -stop MyNfcSession
 ```
 
-This will generate an ETL file named MySession.etl in the C:\\Data folder. You can then decode them using [Tracepdb](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracepdb) (Tracepdb.exe) and [Tracefmt](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt) (Tracefmt.exe), which are included in the Windows Driver Kit.
+This will generate an ETL file named MySession.etl in the C:\\Data folder. You can then decode them using [Tracepdb](../devtest/tracepdb.md) (Tracepdb.exe) and [Tracefmt](../devtest/tracefmt.md) (Tracefmt.exe), which are included in the Windows Driver Kit.
 
 The NFC CX does not include any debugging extensions.
 
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Event Tracing for Windows (Windows Drivers)](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-software-tracing)  
-[Tools for Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing)  
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)  
+[Event Tracing for Windows (Windows Drivers)](../devtest/tools-for-software-tracing.md)  
+[Tools for Software Tracing](../devtest/wpp-software-tracing.md)

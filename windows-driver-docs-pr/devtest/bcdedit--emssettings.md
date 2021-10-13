@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /emssettings
 description: The /emssettings option sets the global Emergency Management Services (EMS) settings for the computer. To enable or disable EMS, use the /ems option. The /emssettings option does not enable or disable EMS for any boot entry.
-ms.assetid: 010e852d-ff97-4280-b35b-f1881e249e42
 ms.date: 07/03/2018
 keywords: ["BCDEdit /emssettings Driver Development Tools"]
 topic_type:
@@ -24,13 +23,15 @@ Syntax
     bcdedit /emssettings [ BIOS ] | [ EMSPORT: port | [EMSBAUDRATE: baudrate] ] 
 ```
 
-Parameters
-----------
+> [!NOTE]
+> Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
+
+## Parameters
 
 **BIOS**   
 Specifies that the system will use BIOS settings for the EMS configuration. This works only on systems that have EMS support provided by the BIOS.
 
- **EMSPORT:** *port*   
+**EMSPORT:** *port*   
 Specifies the serial port to use as the EMS port. This parameter should not be specified with the **BIOS** option.
 
 **EMSBAUDRATE:** *baudrate*   
@@ -46,15 +47,9 @@ On computers that have BIOS firmware, but do not have an SPCR table, use BCDEdit
 
 On all systems, use the [**BCDEdit /ems**](bcdedit--ems.md) command and specify the boot entry to enable EMS console redirection on the operating system that the boot entry loads.
 
-The boot parameters described in this section enable EMS console redirection after Windows is installed. For information about enabling EMS during a new installation or upgrade of Windows, search for "Enabling Emergency Management Services" on the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=10111) website.
+The boot parameters described in this section enable EMS console redirection after Windows is installed. 
 
-For a detailed example, see [Boot Parameters to Enable EMS Redirection](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-parameters-to-enable-ems-redirection).
-
- 
+For a detailed example, see [Boot Parameters to Enable EMS Redirection](./boot-parameters-to-enable-ems-redirection.md).
 
  
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_CopyProt
 description: KSPROPSETID\_CopyProt
-ms.assetid: f5596bed-e7be-4ad0-aaf7-cb34550e0726
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

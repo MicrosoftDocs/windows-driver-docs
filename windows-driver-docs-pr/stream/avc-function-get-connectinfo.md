@@ -1,7 +1,6 @@
 ---
-title: AVC\_FUNCTION\_GET\_CONNECTINFO
-description: AVC\_FUNCTION\_GET\_CONNECTINFO
-ms.assetid: d4230024-a765-47f0-9958-9f71761f7b85
+title: AVC_FUNCTION_GET_CONNECTINFO
+description: The AVC_FUNCTION_GET_CONNECT_INFO function code obtains the AVCPRECONNECTINFO structure for each pin ID.
 keywords: ["AVC_FUNCTION_GET_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -9,56 +8,29 @@ api_name:
 - AVC_FUNCTION_GET_CONNECTINFO
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 07/27/2021
 ms.localizationpriority: medium
 ---
 
-# AVC\_FUNCTION\_GET\_CONNECTINFO
+# AVC_FUNCTION_GET_CONNECTINFO
 
+The AVC_FUNCTION_GET_CONNECT_INFO function code obtains the **AVCPRECONNECTINFO** structure for each pin ID (offset from zero).
 
-## <span id="ddk_avc_function_get_connectinfo_ks"></span><span id="DDK_AVC_FUNCTION_GET_CONNECTINFO_KS"></span>
+## I/O Status Block
 
-
-The AVC\_FUNCTION\_GET\_CONNECT\_INFO function code obtains the AVCPRECONNECTINFO structure for each pin ID (offset from zero).
-
-### I/O Status Block
-
-If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
+If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS_SUCCESS.
 
 Possible other return values include:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>STATUS_TIMEOUT</p></td>
-<td><p>The request was made, but no response was received before all time-out and retry processing was complete.</p></td>
-</tr>
-<tr class="even">
-<td><p>STATUS_REQUEST_ABORTED</p></td>
-<td><p>Immediately abort when the IRP completion status is STATUS_REQUEST_ABORTED. This indicates that the device has been removed or is no longer available on the 1394 bus.</p></td>
-</tr>
-<tr class="odd">
-<td><p>STATUS_*</p></td>
-<td><p>Any other return code indicates that an error or warning occurred that was beyond the scope of the AV/C protocol.</p></td>
-</tr>
-</tbody>
-</table>
+| Return value | Description |
+|--|--|
+| STATUS_TIMEOUT | The request was made, but no response was received before all time-out and retry processing was complete. |
+| STATUS_REQUEST_ABORTED | Immediately abort when the IRP completion status is STATUS_REQUEST_ABORTED. This indicates that the device has been removed or is no longer available on the 1394 bus. |
+| STATUS_* | Any other return code indicates that an error or warning occurred that was beyond the scope of the AV/C protocol. |
 
- 
+## Comments
 
-### Comments
-
-This function uses the **PreConnectInfo** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
+This function uses the **PreConnectInfo** member of the AVC_MULTIFUNC_IRB structure as shown below.
 
 ```cpp
 typedef struct _AVC_MULTIFUNC_IRB {
@@ -75,7 +47,7 @@ typedef struct _AVC_MULTIFUNC_IRB {
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;
 ```
 
-The members of the AVC\_PRECONNECT\_INFO structure are shown below:
+The members of the AVC_PRECONNECT_INFO structure are shown below:
 
 ```cpp
 typedef struct _AVC_PRECONNECT_INFO {
@@ -84,33 +56,30 @@ typedef struct _AVC_PRECONNECT_INFO {
 } AVC_PRECONNECT_INFO, *PAVC_PRECONNECT_INFO;
 ```
 
-### Requirements
+## Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### AVC\_MULTIFUNC\_IRB Input
+### AVC_MULTIFUNC_IRB Input
 
 **Common**  
-The **Function** submember of this member must be set to **AVC\_FUNCTION\_GET\_CONNECTINFO** from the AVC\_FUNCTION enumeration.
+The **Function** submember of this member must be set to **AVC_FUNCTION_GET_CONNECTINFO** from the AVC_FUNCTION enumeration.
 
-<span id="ConnectInfo"></span><span id="connectinfo"></span><span id="CONNECTINFO"></span>**ConnectInfo**  
+**ConnectInfo**  
 Specifies the connection information for the AV/C device.
 
 This function code is not supported by virtual instances of *avc.sys*.
 
-A subunit driver must use this function if it is responsible for creating the data ranges included in the KSPIN\_DESCRIPTOR structure. The AVCPRECONNECTINFO structure is appended to the **DataRanges** member for connections external to the PC.
+A subunit driver must use this function if it is responsible for creating the data ranges included in the KSPIN_DESCRIPTOR structure. The AVCPRECONNECTINFO structure is appended to the **DataRanges** member for connections external to the PC.
 
-This must be called at IRQL = PASSIVE\_LEVEL.
+This must be called at IRQL = PASSIVE_LEVEL.
 
-### See Also
+## See also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PRECONNECT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_preconnect_info), [**AVCPRECONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avcpreconnectinfo), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function)
+[**AVC_MULTIFUNC_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb)
 
- 
+[**AVC_PRECONNECT_INFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_preconnect_info)
 
- 
+[**AVCPRECONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcpreconnectinfo)
 
-
-
-
-
+[**AVC_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)

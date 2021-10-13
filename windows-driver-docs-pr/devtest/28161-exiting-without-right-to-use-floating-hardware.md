@@ -1,7 +1,6 @@
 ---
-title: C28161
+title: C28161 warning
 description: Warning C28161 Exiting without acquiring the right to use floating hardware.
-ms.assetid: 4132409d-10aa-4014-a2d9-77c62e137795
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

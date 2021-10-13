@@ -1,7 +1,6 @@
 ---
 title: .formats (Show Number Formats)
 description: The .formats command evaluates an expression or symbol in the context of the current thread and process and displays it in multiple numeric formats.
-ms.assetid: 9eac92b3-5137-4adb-a074-31510dc9bff7
 keywords: [".formats (Show Number Formats) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the expression to evaluate. For more information about the syntax, see
 
  
 
-Remarks
--------
+## Remarks
 
 The evaluated expression is displayed in hexadecimal, decimal, octal, and binary formats, as well as single-precision and double-precision floating-point format. ASCII character formats are also displayed when the bytes correspond to standard ASCII characters. The expression is also interpreted as a time stamp if it is in the allowed range.
 

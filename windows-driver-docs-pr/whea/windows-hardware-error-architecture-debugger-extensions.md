@@ -1,12 +1,11 @@
 ---
 title: Windows Hardware Error Architecture Debugger Extensions
 description: Windows Hardware Error Architecture Debugger Extensions
-ms.assetid: 47eaaf7e-31d6-437a-8318-a650d07e0c11
 keywords:
 - WHEA WDK , debugger extensions
 - Windows Hardware Error Architecture WDK , debugger extensions
 - debugger extensions WDK WHEA , whea debugger extension WDK WHEA , errpkt debugger extension WDK WHEA , errrec debugger extension WDK WHEA
-ms.date: 04/20/2017
+ms.date: 05/04/2021
 ms.localizationpriority: medium
 ---
 
@@ -15,21 +14,13 @@ ms.localizationpriority: medium
 
 Microsoft provides the following debugger extensions to help debug the Windows Hardware Error Architecture (WHEA).
 
-<a href="" id="-whea"></a>**!whea**  
+[!whea](../debugger/-whea.md)  
 Displays top level WHEA information.
 
-<a href="" id="-errpkt"></a>**!errpkt**  
+[!errpkt](../debugger/-errpkt.md)  
 Displays the contents of a hardware error packet.
 
-<a href="" id="-errrec"></a>**!errrec**  
+[!errrec](../debugger/-errrec.md)
 Displays the contents of an error record.
 
-The WHEA debugger extensions are included in the *Kdexts.dll* file.
-
- 
-
- 
-
-
-
-
+The WHEA kernel debugger extensions are included in the *Kdexts.dll* file. For more information about the Windows Debugger, see [Getting Started with WinDbg (Kernel-Mode)](../debugger/getting-started-with-windbg--kernel-mode-.md). For information on downloading the Windbg Preview, see [WinDbg Preview - Installation](../debugger/windbg-install-preview.md).

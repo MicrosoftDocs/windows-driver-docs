@@ -1,7 +1,6 @@
 ---
 title: Getting Started with UMDF
 description: This section describes User-Mode Driver Framework (UMDF) and details the differences between UMDF versions 1 and 2.
-ms.assetid: 2C4DAFA4-783C-4739-8D27-A417AC63B447
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ Writing a driver using UMDF version 1 requires using the COM programming model t
 
 In contrast, starting in UMDF version 2, you can write a UMDF driver in the C programming language that calls many of the methods that are available to KMDF drivers. All of the interfaces that are shared between UMDF version 2 and KMDF have the same names, parameters, and structure definitions. If your driver uses only shared functionality, or uses conditional macros around calls that are only supported in one framework, you can write a single driver that you can compile with either UMDF or KMDF. For more information, see [How to generate a UMDF driver from a KMDF driver](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md).
 
-While there is significant commonality between UMDF 2 and KMDF, there is still a small amount of functionality that is available only in one framework or the other. For specifics, see [Comparing UMDF 2 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md). For a list of all UMDF 2 and KMDF callbacks and methods and which framework(s) they apply to, see [Summary of WDF Callbacks and Methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_wdf/). In a few cases, a structure member or parameter of a method applies only to one framework or the other. The documentation describes these differences on the corresponding reference pages.
+While there is significant commonality between UMDF 2 and KMDF, there is still a small amount of functionality that is available only in one framework or the other. For specifics, see [Comparing UMDF 2 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md). For a list of all UMDF 2 and KMDF callbacks and methods and which framework(s) they apply to, see [Summary of WDF Callbacks and Methods](/windows-hardware/drivers/ddi/_wdf/). In a few cases, a structure member or parameter of a method applies only to one framework or the other. The documentation describes these differences on the corresponding reference pages.
 
 You must choose one or the other; you cannot write a UMDF driver that calls methods from both UMDF versions 1 and 2.
 
@@ -29,4 +28,3 @@ UMDF version 2 drivers run only on Windows 8.1 or later. If you need to write a
 
  
 
- 

@@ -1,7 +1,6 @@
 ---
 title: OID_PNP_SET_POWER
 description: OID_PNP_SET_POWER
-ms.assetid: 21232db2-7484-4878-a2f9-5131c18ecf57
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_SET_POWER Network Drivers Starting with Windows Vista
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The OID\_PNP\_SET\_POWER OID notifies a miniport driver that its underlying network adapter will be transitioning to the device power state specified in the *InformationBuffer*. The device power state is specified as one of the following [**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state) values:
+The OID\_PNP\_SET\_POWER OID notifies a miniport driver that its underlying network adapter will be transitioning to the device power state specified in the *InformationBuffer*. The device power state is specified as one of the following [**NDIS\_DEVICE\_POWER\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state) values:
 
 -   **NdisDeviceStateD0**
 -   **NdisDeviceStateD1**
@@ -25,7 +24,7 @@ An OID\_PNP\_SET\_POWER request may be preceded by an [OID\_PNP\_QUERY\_POWER](o
 
 Starting with NDIS 6.30, NDIS will not pause and restart the NDIS drivers in the driver stack during power-state transitions if the following conditions are true:
 
--   The underlying miniport driver sets the **NDIS\_MINIPORT\_ATTRIBUTES\_NO\_PAUSE\_ON\_SUSPEND** flag in the [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes) structure. The driver passes a pointer to this structure in its call to the [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes) function.
+-   The underlying miniport driver sets the **NDIS\_MINIPORT\_ATTRIBUTES\_NO\_PAUSE\_ON\_SUSPEND** flag in the [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes) structure. The driver passes a pointer to this structure in its call to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
 -   All overlying filter drivers that are attached to the miniport driver support NDIS 6.30 or later versions of NDIS.
 
@@ -37,19 +36,19 @@ When the miniport driver handles a set request of OID\_PNP\_SET\_POWER to transi
 
 -   Fully prepare the network adapter for the indicated network device power state. The task that is performed by the miniport driver to accomplish this is device-dependent.
 
--   Wait for calls to the [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function to return.
+-   Wait for calls to the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function to return.
 
--   Wait for send requests processed by the network adapter to complete. Once completed, the miniport driver must call the [**NdisMSendNetBufferListsComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsendnetbufferlistscomplete) function. The driver should set the **Status** member in each [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure to the appropriate NDIS\_STATUS\_*Xxx* value.
+-   Wait for send requests processed by the network adapter to complete. Once completed, the miniport driver must call the [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) function. The driver should set the **Status** member in each [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure to the appropriate NDIS\_STATUS\_*Xxx* value.
 
--   Complete all pending send requests by calling the [**NdisMSendNetBufferListsComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsendnetbufferlistscomplete) function. The driver must set the **Status** member in each [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure to **NDIS\_STATUS\_LOW\_POWER\_STATE**.
+-   Complete all pending send requests by calling the [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) function. The driver must set the **Status** member in each [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure to **NDIS\_STATUS\_LOW\_POWER\_STATE**.
 
--   Reject all new send requests made to its [*MiniportSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_send_net_buffer_lists) function immediately by calling the [**NdisMSendNetBufferListsComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsendnetbufferlistscomplete) function. The driver must set the **Status** member in each [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure to **NDIS\_STATUS\_LOW\_POWER\_STATE**.
+-   Reject all new send requests made to its [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) function immediately by calling the [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) function. The driver must set the **Status** member in each [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure to **NDIS\_STATUS\_LOW\_POWER\_STATE**.
 
 The miniport driver that supports NDIS 6.30 and later versions of NDIS must also do the following:
 
--   Not wait for the completion of pending receive indications through calls to its [*MiniportReturnNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_return_net_buffer_lists) function. Also, the miniport driver must not alter the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure or data for any packets that are waiting to be completed.
+-   Not wait for the completion of pending receive indications through calls to its [*MiniportReturnNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_return_net_buffer_lists) function. Also, the miniport driver must not alter the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure or data for any packets that are waiting to be completed.
 
--   Handle the OID\_PNP\_SET\_POWER request to a low-power state from either the Paused or Running adapter states. For more information about these states, see [Miniport Adapter States and Operations](https://docs.microsoft.com/windows-hardware/drivers/network/miniport-adapter-states-and-operations).
+-   Handle the OID\_PNP\_SET\_POWER request to a low-power state from either the Paused or Running adapter states. For more information about these states, see [Miniport Adapter States and Operations](./miniport-adapter-states-and-operations.md).
 
 Before the network adapter transitions to the D3 state, the miniport driver must turn off everything under the miniport driver's control by performing the following tasks:
 
@@ -73,7 +72,7 @@ When the miniport driver handles a set request of OID\_PNP\_SET\_POWER to transi
 
  
 
-NDIS calls the miniport driver's [*MiniportRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart) function after the transition to a full-power state only if NDIS called the driver's [*MiniportPause*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_pause) function before the transition to a low-power state.
+NDIS calls the miniport driver's [*MiniportRestart*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart) function after the transition to a full-power state only if NDIS called the driver's [*MiniportPause*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_pause) function before the transition to a low-power state.
 
 **Note**  An intermediate driver must always return **NDIS\_STATUS\_SUCCESS** to a query of OID\_PNP\_SET\_POWER. An intermediate driver should never propagate an OID\_PNP\_SET\_POWER request to an underlying miniport driver.
 
@@ -82,7 +81,7 @@ NDIS calls the miniport driver's [*MiniportRestart*](https://docs.microsoft.com/
 ## Return status codes
 
 
-The miniport driver's [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function returns one of the following values for this request:
+The miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function returns one of the following values for this request:
 
 <table>
 <colgroup>
@@ -102,7 +101,7 @@ The miniport driver's [*MiniportOidRequest*](https://docs.microsoft.com/windows-
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
-<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismoidrequestcomplete" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismoidrequestcomplete)"><strong>NdisMOidRequestComplete</strong></a> function, passing NDIS_STATUS_SUCCESS for the <em>Status</em> parameter.</p></td>
+<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)"><strong>NdisMOidRequestComplete</strong></a> function, passing NDIS_STATUS_SUCCESS for the <em>Status</em> parameter.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_NOT_ACCEPTED</strong></p></td>
@@ -113,8 +112,7 @@ The miniport driver's [*MiniportOidRequest*](https://docs.microsoft.com/windows-
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -137,28 +135,21 @@ Requirements
 
 
 ****
-[*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize)
+[*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)
 
-[*MiniportPause*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_pause)
+[*MiniportPause*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_pause)
 
-[*MiniportRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart)
+[*MiniportRestart*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart)
 
-[*MiniportReturnNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_return_net_buffer_lists)
+[*MiniportReturnNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_return_net_buffer_lists)
 
-[*MiniportSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_send_net_buffer_lists)
+[*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists)
 
-[**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state)
+[**NDIS\_DEVICE\_POWER\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state)
 
-[**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatereceivenetbufferlists)
+[**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists)
 
-[**NdisMSendNetBufferListsComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsendnetbufferlistscomplete)
+[**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete)
 
-[**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list)
-
- 
-
- 
-
-
-
+[**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)
 

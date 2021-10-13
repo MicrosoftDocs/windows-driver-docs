@@ -1,7 +1,6 @@
 ---
 title: GDL Nested Contexts
 description: GDL Nested Contexts
-ms.assetid: c679937a-fa36-487a-84f2-f61a7ef0198e
 keywords:
 - GDL WDK , contexts
 - contexts WDK GDL , nested contexts

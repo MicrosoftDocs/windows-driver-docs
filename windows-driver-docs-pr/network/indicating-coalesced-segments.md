@@ -1,7 +1,6 @@
 ---
 title: Indicating Coalesced Segments
 description: This section describes how to indicate coalesced segments
-ms.assetid: 79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ A single coalesced unit (SCU) is a sequence of TCP segments that are coalesced i
 
 An SCU must:
 
--   Be indicated by calling [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatereceivenetbufferlists).
+-   Be indicated by calling [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists).
 
 -   Look like a normal TCP segment that is received over the wire.
 
@@ -23,9 +22,9 @@ An SCU must:
 
      
 
-The NIC or miniport driver should recompute the TCP and IPv4 checksums, if applicable, before indicating the coalesced segment. If the NIC or miniport driver validates the TCP and IPv4 checksums but does not recompute them for the coalesced segment, it must set the **TcpChecksumValueInvalid** and **IpChecksumValueInvalid** flags in the [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_tcp_ip_checksum_net_buffer_list_info) structure. Additionally, in this case the NIC or miniport driver may optionally zero out the TCP and IPv4 header checksum values in the segment.
+The NIC or miniport driver should recompute the TCP and IPv4 checksums, if applicable, before indicating the coalesced segment. If the NIC or miniport driver validates the TCP and IPv4 checksums but does not recompute them for the coalesced segment, it must set the **TcpChecksumValueInvalid** and **IpChecksumValueInvalid** flags in the [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblchecksum/ns-nblchecksum-ndis_tcp_ip_checksum_net_buffer_list_info) structure. Additionally, in this case the NIC or miniport driver may optionally zero out the TCP and IPv4 header checksum values in the segment.
 
-The NIC and miniport driver must always set the **IpChecksumSucceeded** and **TcpChecksumSucceeded** flags in the [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_tcp_ip_checksum_net_buffer_list_info) structure before indicating the coalesced segment.
+The NIC and miniport driver must always set the **IpChecksumSucceeded** and **TcpChecksumSucceeded** flags in the [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblchecksum/ns-nblchecksum-ndis_tcp_ip_checksum_net_buffer_list_info) structure before indicating the coalesced segment.
 
 For more information about coalescing rules, see [Rules for Coalescing TCP/IP Segments](rules-for-coalescing-tcp-ip-packets.md).
 
@@ -50,10 +49,4 @@ At a high level, the NIC and miniport driver must handle the receipt of a TCP se
 -   The NIC and miniport driver may use timers to determine the end of coalescing. However, the handling of latency sensitive workloads must be as effective as the DPC boundary requirement.
 
  
-
- 
-
-
-
-
 

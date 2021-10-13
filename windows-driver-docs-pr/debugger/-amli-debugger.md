@@ -1,7 +1,6 @@
 ---
 title: amli debugger
 description: The amli debugger extension breaks into the AMLI Debugger.
-ms.assetid: ef55a45f-445a-4b05-a2a9-b21be3667ec3
 keywords: ["amli debugger Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -35,8 +34,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 When this command is issued, notification is sent to the AML interpreter. The next time the interpreter is active, it will immediately break into the AMLI Debugger.
 

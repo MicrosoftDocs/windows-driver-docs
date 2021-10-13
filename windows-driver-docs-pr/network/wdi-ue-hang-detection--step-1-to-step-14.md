@@ -1,7 +1,6 @@
 ---
 title: UE hang detection Steps 1-14
 description: Steps 1 through 14 of UE hang detection are described below. The steps correspond to the diagram shown in UE hang detection and recovery flow.
-ms.assetid: 0F6F9B31-27FB-44B1-8C0E-A270E8BAF295
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ This example uses OID\_SET\_POWER.
     -   If the firmware is simply taking too long to complete the command after a time out, the LE can complete the WDI command. The UE handles it appropriately.
     -   If the firmware is hung, the WDI command is not completed soon. The LE must complete it at surprise-remove at Step 16 when the hardware has been reset, so it is safe to complete without special handling for a potential race condition.
 
-7.  The WDI timer fires to generate a WDI Diagnose command. This WDI command is a call to the LE driver, [*MiniportWdiAdapterHangDiagnose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose), rather than a WDI OID.
+7.  The WDI timer fires to generate a WDI Diagnose command. This WDI command is a call to the LE driver, [*MiniportWdiAdapterHangDiagnose*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose), rather than a WDI OID.
 8.  LE collects hardware control register states, and optionally, the full firmware state.
     -   The IHV driver is expected to collect hardware register content which is limited to 1KB, and return it in the function return. Additionally, in the pre-production environment, the LE should also try to dump the firmware context into files so that the IHV can do post-mortem debug thoroughly. The switch can be implemented as a registry key to control the collection of hardware registers and the firmware image.
     -   The LE also marks the current command for cancellation. If command completion races to beat the diagnosis, it is acceptable if the LE does nothing for this command.
@@ -31,7 +30,7 @@ This example uses OID\_SET\_POWER.
 9.  WDI receives the control register state.
 10. WDI marks the hang WDI command so that it is indicated later by the LE.
 11. WDI returns (completes) the NDIS command without the WDI completion. This is safe because WDI double-buffers NDIS commands.
-12. WDI calls NDIS to reset and calls [**NdisWriteErrorLogEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiswriteerrorlogentry) with *Error Code* of **NDIS\_ERROR\_CODE\_HARDWARE\_FAILURE** (0xc000138a). This results in an event recorded in the system event log with the module name of LE. The error event ID automatically pops up as (0xc000138a | 0xffff) – 0n5002. If the LE also uses the same error code to write error logs, the first DWORD of the data should contain the high bit set (0x80000000) to easily separate events by the LE. WDI uses 0x00000000 to 0x7fffffff for the first DWORD data.
+12. WDI calls NDIS to reset and calls [**NdisWriteErrorLogEntry**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswriteerrorlogentry) with *Error Code* of **NDIS\_ERROR\_CODE\_HARDWARE\_FAILURE** (0xc000138a). This results in an event recorded in the system event log with the module name of LE. The error event ID automatically pops up as (0xc000138a | 0xffff) – 0n5002. If the LE also uses the same error code to write error logs, the first DWORD of the data should contain the high bit set (0x80000000) to easily separate events by the LE. WDI uses 0x00000000 to 0x7fffffff for the first DWORD data.
 13. The call returns.
 14. NDIS completes the IRP.
 
@@ -42,18 +41,11 @@ The completion of NDIS OID\_SET\_POWER is necessary to avoid a deadlock of PnP o
 ## Related topics
 
 
-[*MiniportWdiAdapterHangDiagnose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose)
+[*MiniportWdiAdapterHangDiagnose*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose)
 
 [Reset (surprise remove): steps 15-20](wdi-reset--surprise-remove---steps-15-20.md)
 
 [UE hang detection and recovery flow](wdi-ue-hang-detection-and-recovery-flow.md)
 
  
-
- 
-
-
-
-
-
 

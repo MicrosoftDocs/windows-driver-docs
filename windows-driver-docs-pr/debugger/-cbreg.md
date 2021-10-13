@@ -1,7 +1,6 @@
 ---
-title: cbreg
+title: cbreg (WinDbg)
 description: The cbreg extension displays CardBus Socket registers and CardBus Exchangable Card Architecture (ExCA) registers.
-ms.assetid: 7943e152-b1c9-464c-a0ad-3beac48884d2
 keywords: ["CardBus", "ExCA registers", "cbreg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

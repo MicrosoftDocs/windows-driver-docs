@@ -1,7 +1,6 @@
 ---
 title: Registry Entries for Still Image Devices
 description: Registry Entries for Still Image Devices
-ms.assetid: cedc8afc-54c4-485e-989c-481fe30d899b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -57,7 +56,7 @@ The following table lists the predefined registry value names and their meanings
 
  
 
-Clients of the **StillImage** COM interface should call [**IStillImage::SetDeviceValue**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543801(v=vs.85)) and [**IStillImage::GetDeviceValue**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543786(v=vs.85)) to reference the registry. Still image minidrivers can call the Win32 registry API, specifying the registry key received by the minidriver's [**IStiUSD::Initialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-initialize) method. Values for predefined registry entries can also be set from within [the INF file](inf-files-for-still-image-devices.md).
+Clients of the **StillImage** COM interface should call [**IStillImage::SetDeviceValue**](/previous-versions/windows/hardware/drivers/ff543801(v=vs.85)) and [**IStillImage::GetDeviceValue**](/previous-versions/windows/hardware/drivers/ff543786(v=vs.85)) to reference the registry. Still image minidrivers can call the Win32 registry API, specifying the registry key received by the minidriver's [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) method. Values for predefined registry entries can also be set from within [the INF file](inf-files-for-still-image-devices.md).
 
 ### Customized Registry Values
 
@@ -87,7 +86,7 @@ The following table lists registry entries that should not be modified by vendor
 <p>0x1 - informational messages</p>
 <p>0x2 - warning messages</p>
 <p>0x4 - error messages</p>
-<p>See <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543807(v=vs.85)" data-raw-source="[&lt;strong&gt;IStillImage::WriteToErrorLog&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543807(v=vs.85))"><strong>IStillImage::WriteToErrorLog</strong></a>.</p></td>
+<p>See <a href="/previous-versions/windows/hardware/drivers/ff543807(v=vs.85)" data-raw-source="[&lt;strong&gt;IStillImage::WriteToErrorLog&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff543807(v=vs.85))"><strong>IStillImage::WriteToErrorLog</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\StillImage\Logging\STIMON</strong></p></td>
@@ -112,11 +111,4 @@ The following table lists registry entries that should not be modified by vendor
 </table>
 
  
-
- 
-
- 
-
-
-
 

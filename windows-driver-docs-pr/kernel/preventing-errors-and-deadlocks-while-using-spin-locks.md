@@ -1,7 +1,6 @@
 ---
 title: Preventing Errors and Deadlocks While Using Spin Locks
 description: Preventing Errors and Deadlocks While Using Spin Locks
-ms.assetid: 1df563e6-7ad2-4684-9778-ffa1b845ac31
 keywords: ["deadlocks WDK kernel", "recursion WDK kernel", "nested spin lock acquisitions WDK kernel", "pageable data locking WDK kernel", "spin locks WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-While a driver routine holds a spin lock, it cannot cause a hardware exception or raise a software exception without bringing down the system. In other words, a driver's ISR and any *SynchCritSection* routine that the driver supplies in a call to [**KeSynchronizeExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesynchronizeexecution) must not cause a fault or trap, such as a page fault or an arithmetic exception, and cannot raise a software exception. A routine that calls [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keacquirespinlock) or [**KeAcquireInStackQueuedSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) also cannot cause a hardware exception or raise a software exception until it has released its executive spin lock and is no longer running at IRQL = DISPATCH\_LEVEL.
+While a driver routine holds a spin lock, it cannot cause a hardware exception or raise a software exception without bringing down the system. In other words, a driver's ISR and any *SynchCritSection* routine that the driver supplies in a call to [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution) must not cause a fault or trap, such as a page fault or an arithmetic exception, and cannot raise a software exception. A routine that calls [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock) or [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) also cannot cause a hardware exception or raise a software exception until it has released its executive spin lock and is no longer running at IRQL = DISPATCH\_LEVEL.
 
 ### Pageable Data and Support Routines
 
@@ -45,12 +44,5 @@ The following guidelines describe how drivers should hold spin locks:
 
 In general, avoid using nested spin locks to protect overlapping subsets or discrete sets of shared data and resources. Consider what can happen if a driver uses two executive spin locks to protect discrete resources, such as a pair of timer objects that might be set individually and collectively by various driver routines. The driver would deadlock intermittently in an SMP machine, whenever either of two routines, each holding one spin lock, tried to acquire the other spin lock.
 
-For more information about acquiring nested spin locks, see [Locks, Deadlocks, and Synchronization](https://go.microsoft.com/fwlink/p/?linkid=57456 ).
-
- 
-
- 
-
-
-
+For more information about acquiring nested spin locks, see [Locks, Deadlocks, and Synchronization](/previous-versions/ms810047(v=msdn.10)).
 

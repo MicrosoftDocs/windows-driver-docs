@@ -1,7 +1,6 @@
 ---
 title: Additive Template Directive
 description: Additive Template Directive
-ms.assetid: 94883a51-a3a6-492e-9597-6a2f913d40bc
 keywords:
 - Additive directive WDK GDL
 - templates WDK GDL , order of definitions

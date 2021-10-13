@@ -1,7 +1,6 @@
 ---
 title: Video Miniport Driver Initialization (Windows 2000 Model)
 description: Video Miniport Driver Initialization (Windows 2000 Model)
-ms.assetid: b18b5483-f11f-4533-9434-a3a4a30fb4b2
 keywords:
 - video miniport drivers WDK Windows 2000 , initializing
 - initializing video miniport drivers
@@ -25,19 +24,13 @@ Video miniport driver initialization occurs after the NT kernel, *HAL*, and core
 
 4.  If the PnP manager recognizes the device and vendor IDs, the I/O manager loads the corresponding video miniport driver and the video port driver from a known location. If the PnP manager does not recognize the IDs, it prompts the user for the location of the miniport driver and loads it from this location.
 
-5.  The I/O manager calls the miniport driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/display/driverentry-of-video-miniport-driver) routine with two system-supplied input pointers. **DriverEntry** allocates and initializes a [**VIDEO\_HW\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/ns-video-_video_hw_initialization_data) structure with driver-specific and adapter-specific values, including pointers to the miniport driver's other entry points. **DriverEntry** must also claim any legacy resources, which are those resources not listed in the device's PCI configuration space but that are decoded by the device. See [Claiming Legacy Resources](claiming-legacy-resources.md) for details.
+5.  The I/O manager calls the miniport driver's [**DriverEntry**](./driverentry-of-video-miniport-driver.md) routine with two system-supplied input pointers. **DriverEntry** allocates and initializes a [**VIDEO\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data) structure with driver-specific and adapter-specific values, including pointers to the miniport driver's other entry points. **DriverEntry** must also claim any legacy resources, which are those resources not listed in the device's PCI configuration space but that are decoded by the device. See [Claiming Legacy Resources](claiming-legacy-resources.md) for details.
 
-6.  The miniport driver's **DriverEntry** function calls [**VideoPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportinitialize). **VideoPortInitialize** performs those aspects of miniport driver initialization that are common to all miniport drivers. For example, for non-PnP drivers, **VideoPortInitialize** verifies portions of the miniport driver-initialized VIDEO\_HW\_INITIALIZATION\_DATA structure, initializes some of the public members of the system-created device object, allocates memory for the device extension of the device object, and collects and stores pertinent information in the device extension. See [Video Miniport Driver's Device Extension (Windows 2000 Model)](video-miniport-driver-s-device-extension--windows-2000-model-.md) for more details about device extensions. For PnP drivers, the device object-related actions occur at a later time.
+6.  The miniport driver's **DriverEntry** function calls [**VideoPortInitialize**](/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize). **VideoPortInitialize** performs those aspects of miniport driver initialization that are common to all miniport drivers. For example, for non-PnP drivers, **VideoPortInitialize** verifies portions of the miniport driver-initialized VIDEO\_HW\_INITIALIZATION\_DATA structure, initializes some of the public members of the system-created device object, allocates memory for the device extension of the device object, and collects and stores pertinent information in the device extension. See [Video Miniport Driver's Device Extension (Windows 2000 Model)](video-miniport-driver-s-device-extension--windows-2000-model-.md) for more details about device extensions. For PnP drivers, the device object-related actions occur at a later time.
 
 7.  When **VideoPortInitialize** returns, **DriverEntry** propagates the return value of **VideoPortInitialize** back to the caller. Miniport driver writers should make no assumptions about the value returned by **VideoPortInitialize**.
 
 At this point, the system has loaded and initialized the video miniport driver. The next step is for the PnP manager to start the device. See [Starting the Device of the Video Miniport Driver](starting-the-device-of-the-video-miniport-driver.md) for details.
 
  
-
- 
-
-
-
-
 

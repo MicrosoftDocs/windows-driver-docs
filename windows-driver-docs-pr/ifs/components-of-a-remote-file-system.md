@@ -1,7 +1,6 @@
 ---
 title: Components of a Remote File System
 description: Components of a Remote File System
-ms.assetid: b2cd153a-5bcc-4670-8542-afa55e14727a
 keywords:
 - network redirectors WDK , remote file systems
 - redirector drivers WDK , remote file systems
@@ -34,17 +33,4 @@ For example, the Microsoft Network remote file system is implemented as follows:
 -   The LAN Manager Server (sometimes called SMB Server) provides the file server service.
 
 The network redirector software installed on the client consists of several software components, some that operate in user-mode and some that operate in kernel-mode.
-
-The following sections discuss concepts that are important to developers of remote file systems on Windows Server 2003, Windows XP, and Windows 2000. The following topics are discussed:
-
-[Introduction to Network Redirectors](introduction-to-network-redirectors.md)
-
-[Kernel Network Redirector Driver Components](kernel-network-redirector-driver-components.md)
-
- 
-
- 
-
-
-
 

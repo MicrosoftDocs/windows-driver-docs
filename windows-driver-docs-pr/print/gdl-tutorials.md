@@ -1,23 +1,25 @@
 ---
 title: GDL Tutorials
 description: GDL Tutorials
-ms.assetid: 79c73df6-0890-436c-827d-6fccbd14b503
 keywords:
 - GDL WDK , examples
 - examples WDK GDL
 - tutorials WDK GDL
 - GDL Correctness Test WDK
 - GDL WDK , tutorials
-ms.date: 04/20/2017
+ms.date: 08/13/2021
 ms.localizationpriority: medium
 ---
 
 # GDL Tutorials
 
-
 This section includes several exercises that describe the design and definition of some simple schemas and their implementation through GDL templates. The exercises also consider several schema extension scenarios.
 
-You can verify the correctness of each solution by using the GDL Correctness Test, which is part of the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613).
+You can verify the correctness of each solution by using the GDL Correctness Test, which is part of the [Windows Hardware Certification Kit (HCK) (EXE download)](https://download.microsoft.com/download/1/8/B/18BC088A-537D-4386-9334-687747A602E6/hlk/hlksetup.exe).
+
+> [!NOTE]
+> The HCK is not for use with Windows 10.
+> If you are developing hardware or drivers for Windows 10, you need the new [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10.
 
 This section includes:
 
@@ -34,11 +36,3 @@ This section includes:
 [GDL Exercise 6: Creating Specialized Versions](gdl-exercise-6--creating-specialized-versions.md)
 
 [GDL Exercise Notes](gdl-exercise-notes.md)
-
- 
-
- 
-
-
-
-

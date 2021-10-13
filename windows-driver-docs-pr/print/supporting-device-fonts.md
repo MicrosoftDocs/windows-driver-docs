@@ -1,7 +1,6 @@
 ---
 title: Supporting Device Fonts
 description: Supporting Device Fonts
-ms.assetid: 9ca3269d-3f87-4d8a-a897-7305ac172227
 keywords:
 - printer graphics DLL WDK , device fonts
 - graphics DLL WDK printer , device fonts
@@ -17,18 +16,13 @@ ms.localizationpriority: medium
 
 
 
-If a printer provides device fonts, the printer graphics DLL must define a [**DrvTextOut**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvtextout) function to generate text output commands. The graphics DLL must also define the following functions:
+If a printer provides device fonts, the printer graphics DLL must define a [**DrvTextOut**](/windows/win32/api/winddi/nf-winddi-drvtextout) function to generate text output commands. The graphics DLL must also define the following functions:
 
-[**DrvQueryAdvanceWidths**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvqueryadvancewidths)
-[**DrvQueryFont**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvqueryfont)
-[**DrvQueryFontData**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvqueryfontdata)
-[**DrvQueryFontTree**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvqueryfonttree)
-For more information about supporting device fonts, see [Supporting Graphics DDI Font and Text Functions](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-graphics-ddi-font-and-text-functions).
-
- 
+[**DrvQueryAdvanceWidths**](/windows/win32/api/winddi/nf-winddi-drvqueryadvancewidths)
+[**DrvQueryFont**](/windows/win32/api/winddi/nf-winddi-drvqueryfont)
+[**DrvQueryFontData**](/windows/win32/api/winddi/nf-winddi-drvqueryfontdata)
+[**DrvQueryFontTree**](/windows/win32/api/winddi/nf-winddi-drvqueryfonttree)
+For more information about supporting device fonts, see [Supporting Graphics DDI Font and Text Functions](../display/supporting-graphics-ddi-font-and-text-functions.md).
 
  
-
-
-
 

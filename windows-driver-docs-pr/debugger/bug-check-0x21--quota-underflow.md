@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x21 QUOTA_UNDERFLOW
 description: The QUOTA_UNDERFLOW bug check has a value of 0x00000021. This indicates that quota charges have been mishandled by returning more quota to a particular block than was previously charged.
-ms.assetid: 41b1c93b-77e0-4baa-8eed-7a956e45d144
 keywords: ["Bug Check 0x21 QUOTA_UNDERFLOW", "QUOTA_UNDERFLOW"]
 ms.date: 05/23/2017
 topic_type:

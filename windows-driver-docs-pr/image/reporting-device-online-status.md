@@ -1,7 +1,6 @@
 ---
 title: Reporting Device Online Status
 description: Reporting Device Online Status
-ms.assetid: 59ce747a-bb5e-4e8c-ab4a-d3f4432f17e6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-The WIA service checks a WIA device's online status by calling the [**IStiUSD::GetStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getstatus) method. The WIA minidriver should check the hardware's current online state and report the results.
+The WIA service checks a WIA device's online status by calling the [**IStiUSD::GetStatus**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getstatus) method. The WIA minidriver should check the hardware's current online state and report the results.
 
 The WIA service calls the **IStiUSD::GetStatus** method for two major operations:
 
@@ -20,7 +19,7 @@ The WIA service calls the **IStiUSD::GetStatus** method for two major operations
 
 -   Polling for device events, such as a push button event.
 
-Determining the operation request can be done by checking the **StatusMask** member of the [**STI\_DEVICE\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sti/ns-sti-_sti_device_status) structure. The **StatusMask** member can be either of the following requests.
+Determining the operation request can be done by checking the **StatusMask** member of the [**STI\_DEVICE\_STATUS**](/windows-hardware/drivers/ddi/sti/ns-sti-_sti_device_status) structure. The **StatusMask** member can be either of the following requests.
 
 <a href="" id="sti-devstatus-online-state"></a>STI\_DEVSTATUS\_ONLINE\_STATE  
 Check whether the device is online.
@@ -36,7 +35,7 @@ This operation request should be carried out by setting the **dwOnlineState** me
 
 This operation request should be carried out by setting the **dwEventHandlingState** member of the STI\_DEVICE\_STATUS structure. The value that should be used is STI\_EVENTHANDLING\_PENDING. (The device has an event pending and is waiting to report it to the WIA service.)
 
-When STI\_EVENTHANDLING\_PENDING is set, the WIA service is signaled that an event has occurred in the WIA driver. The WIA service calls the [**IStiUSD::GetNotificationData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getnotificationdata) method to get more information about the event.
+When STI\_EVENTHANDLING\_PENDING is set, the WIA service is signaled that an event has occurred in the WIA driver. The WIA service calls the [**IStiUSD::GetNotificationData**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getnotificationdata) method to get more information about the event.
 
 The **IStiUSD::GetNotificationData** method is called for polled events and interrupt events. It is in this method that you should fill out the proper event information to return to the WIA service.
 
@@ -94,9 +93,4 @@ STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
 ```
 
  
-
- 
-
-
-
 

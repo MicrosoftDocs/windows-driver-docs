@@ -1,7 +1,6 @@
 ---
 title: Prefix Table Management
 description: Prefix Table Management
-ms.assetid: a48ed460-fab9-4a6d-bd2f-454b4932ea61
 keywords:
 - RDBSS WDK file systems , prefix tables
 - Redirected Drive Buffering Subsystem WDK file systems , prefix tables
@@ -40,11 +39,11 @@ These prefix table management routines are used internally by RDBSS in response 
 
 -   Acquire a shared lock by calling **RxAcquirePrefixTableLockShared**.
 
--   Look up a name by calling [**RxPrefixTableLookupName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxprefixtablelookupname).
+-   Look up a name by calling [**RxPrefixTableLookupName**](/windows-hardware/drivers/ddi/prefix/nf-prefix-rxprefixtablelookupname).
 
 -   Release the shared lock by calling **RxReleasePrefixTableLock**.
 
-Note that certain routines are implemented only on Windows XP and previous versions of Windows. [**RxPrefixTableLookupName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxprefixtablelookupname) is the only prefix table management routine implemented on all versions of Windows
+Note that certain routines are implemented only on Windows XP and previous versions of Windows. [**RxPrefixTableLookupName**](/windows-hardware/drivers/ddi/prefix/nf-prefix-rxprefixtablelookupname) is the only prefix table management routine implemented on all versions of Windows
 
 The RDBSS prefix table management routines include the following:
 
@@ -61,21 +60,21 @@ The RDBSS prefix table management routines include the following:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxpacquireprefixtablelockexclusive" data-raw-source="[&lt;strong&gt;RxpAcquirePrefixTableLockExclusive&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxpacquireprefixtablelockexclusive)"><strong>RxpAcquirePrefixTableLockExclusive</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/prefix/nf-prefix-rxpacquireprefixtablelockexclusive" data-raw-source="[&lt;strong&gt;RxpAcquirePrefixTableLockExclusive&lt;/strong&gt;](/windows-hardware/drivers/ddi/prefix/nf-prefix-rxpacquireprefixtablelockexclusive)"><strong>RxpAcquirePrefixTableLockExclusive</strong></a></p></td>
 <td align="left"><p>This routine acquires an exclusive lock on a prefix table used to catalog SRV_CALL and NET_ROOT names.</p>
 <p>This routine is only available on Windows XP and Windows 2000. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxpacquireprefixtablelockshared" data-raw-source="[&lt;strong&gt;RxpAcquirePrefixTableLockShared&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxpacquireprefixtablelockshared)"><strong>RxpAcquirePrefixTableLockShared</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/prefix/nf-prefix-rxpacquireprefixtablelockshared" data-raw-source="[&lt;strong&gt;RxpAcquirePrefixTableLockShared&lt;/strong&gt;](/windows-hardware/drivers/ddi/prefix/nf-prefix-rxpacquireprefixtablelockshared)"><strong>RxpAcquirePrefixTableLockShared</strong></a></p></td>
 <td align="left"><p>This routine acquires a shared lock on a prefix table used to catalog SRV_CALL and NET_ROOT names.</p>
 <p>This routine is only available on Windows XP and Windows 2000. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxprefixtablelookupname" data-raw-source="[&lt;strong&gt;RxPrefixTableLookupName&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxprefixtablelookupname)"><strong>RxPrefixTableLookupName</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/prefix/nf-prefix-rxprefixtablelookupname" data-raw-source="[&lt;strong&gt;RxPrefixTableLookupName&lt;/strong&gt;](/windows-hardware/drivers/ddi/prefix/nf-prefix-rxprefixtablelookupname)"><strong>RxPrefixTableLookupName</strong></a></p></td>
 <td align="left"><p>The routine looks up a name in a prefix table used to catalog SRV_CALL and NET_ROOT names and converts from the underlying pointer to the containing structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxpreleaseprefixtablelock" data-raw-source="[&lt;strong&gt;RxpReleasePrefixTableLock&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxpreleaseprefixtablelock)"><strong>RxpReleasePrefixTableLock</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/prefix/nf-prefix-rxpreleaseprefixtablelock" data-raw-source="[&lt;strong&gt;RxpReleasePrefixTableLock&lt;/strong&gt;](/windows-hardware/drivers/ddi/prefix/nf-prefix-rxpreleaseprefixtablelock)"><strong>RxpReleasePrefixTableLock</strong></a></p></td>
 <td align="left"><p>This routine releases a lock on a prefix table used to catalog SRV_CALL and NET_ROOT names.</p>
 <p>This routine is only available on Windows XP and Windows 2000. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
@@ -84,7 +83,7 @@ The RDBSS prefix table management routines include the following:
 
  
 
-Starting with Windows Server 2003, the routines mentioned in the previous table, except [**RxPrefixTableLookupName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prefix/nf-prefix-rxprefixtablelookupname), are replaced by macros.The following macros are defined that call the prefix table routines with fewer parameters.
+Starting with Windows Server 2003, the routines mentioned in the previous table, except [**RxPrefixTableLookupName**](/windows-hardware/drivers/ddi/prefix/nf-prefix-rxprefixtablelookupname), are replaced by macros.The following macros are defined that call the prefix table routines with fewer parameters.
 
 <table>
 <colgroup>
@@ -122,11 +121,4 @@ Starting with Windows Server 2003, the routines mentioned in the previous table
 </table>
 
  
-
- 
-
- 
-
-
-
 

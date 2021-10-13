@@ -1,7 +1,6 @@
 ---
 title: WindowsMime protocol
 description: WindowsMime protocol
-ms.assetid: 03C5A31F-269A-45B3-9359-B6FFF4823190
 keywords:
 - NFC
 - near field communications
@@ -63,6 +62,4 @@ A “WindowsMime:WriteTag.” publication is a means for an app to simply write 
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

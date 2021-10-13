@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 5a0fb200-a2c2-41f0-8dcf-6eb3361c148e
 keywords: ["Print Pipeline Property Bag Print Devices"]
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ The print pipeline property bag is used to pass information between filters in t
 <td><p>ProgressReport</p></td>
 <td><p>XPS_FP_PROGRESS_REPORT</p></td>
 <td><p>VT_UNKNOWN</p></td>
-<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintpipelineprogressreport" data-raw-source="[IPrintPipelineProgressReport](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintpipelineprogressreport)">IPrintPipelineProgressReport</a> interface.</p></td>
+<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelineprogressreport" data-raw-source="[IPrintPipelineProgressReport](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelineprogressreport)">IPrintPipelineProgressReport</a> interface.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PrinterHandle</p></td>
@@ -61,7 +60,7 @@ The print pipeline property bag is used to pass information between filters in t
 <td><p>PerUserPrintTicket</p></td>
 <td><p>XPS_FP_USER_PRINT_TICKET</p></td>
 <td><p>VT_UNKNOWN</p></td>
-<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintreadstreamfactory" data-raw-source="[IPrintReadStreamFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintreadstreamfactory)">IPrintReadStreamFactory</a> interface.</p></td>
+<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintreadstreamfactory" data-raw-source="[IPrintReadStreamFactory](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintreadstreamfactory)">IPrintReadStreamFactory</a> interface.</p></td>
 </tr>
 <tr class="odd">
 <td><p>UserSecurityToken</p></td>
@@ -79,20 +78,20 @@ The print pipeline property bag is used to pass information between filters in t
 <td><p>PrintClassFactory</p></td>
 <td><p>XPS_FP_PRINT_CLASS_FACTORY</p></td>
 <td><p>VT_UNKNOWN</p></td>
-<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintclassobjectfactory" data-raw-source="[IPrintClassObjectFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintclassobjectfactory)">IPrintClassObjectFactory</a> interface.</p></td>
+<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintclassobjectfactory" data-raw-source="[IPrintClassObjectFactory](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintclassobjectfactory)">IPrintClassObjectFactory</a> interface.</p></td>
 </tr>
 <tr class="even">
 <td><p>IPrintCoreHelper</p></td>
 <td><p>(There is no symbolic name for this property name.)</p></td>
 <td><p>VT_UNKNOWN</p></td>
-<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelper" data-raw-source="[IPrintCoreHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelper)">IPrintCoreHelper</a> interface.</p>
+<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelper" data-raw-source="[IPrintCoreHelper](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelper)">IPrintCoreHelper</a> interface.</p>
 <p>Note that this property is only available in XPSDrv printer drivers that use the unidrvui.dll as the configuration UI DLL.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PrintDeviceCapabilities</p></td>
 <td><p>XPS_FP_PRINTDEVICECAPABILITIES</p></td>
 <td><p>VT_UNKNOWN</p></td>
-<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintreadstreamfactory" data-raw-source="[IPrintReadStreamFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintreadstreamfactory)">IPrintReadStreamFactory</a> interface.</p>
+<td><p>A pointer to an <strong>IUnknown</strong> interface. Call <strong>QueryInterface</strong> to obtain a pointer to the <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintreadstreamfactory" data-raw-source="[IPrintReadStreamFactory](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintreadstreamfactory)">IPrintReadStreamFactory</a> interface.</p>
 <p>Allows XPS rendering filters to retrieve PrintDeviceCapabilities XML files from the Print filter pipeline property bag.</p></td>
 </tr>
 </tbody>
@@ -100,4 +99,4 @@ The print pipeline property bag is used to pass information between filters in t
 
 ## See also
 
-[V4 Printer Driver Property Bags](https://docs.microsoft.com/windows-hardware/drivers/print/v4-driver-property-bags)
+[V4 Printer Driver Property Bags](./v4-driver-property-bags.md)

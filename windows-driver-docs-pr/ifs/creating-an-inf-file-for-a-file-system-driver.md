@@ -1,7 +1,6 @@
 ---
-title: Creating an INF File for a File System Driver
-description: Creating an INF File for a File System Driver
-ms.assetid: 4b67159f-a5a5-46da-9500-a9c6b6995da4
+title: Creating an INF file for a file system driver
+description: Describes how to create an INF file for a file system driver
 keywords:
 - INF files WDK file system , creating
 - SetupAPI WDK file system
@@ -13,118 +12,91 @@ keywords:
 - DestinationDirs section WDK file system
 - Version section WDK file system
 - creating INF files WDK file system
-ms.date: 04/20/2017
+ms.date: 06/29/2021
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q4
 ---
 
-# Creating an INF File for a File System Driver
+# Creating an INF file for a file system driver
 
+## About file system INF files
 
-## <span id="ddk_creating_an_inf_file_for_a_file_system_filter_driver_if"></span><span id="DDK_CREATING_AN_INF_FILE_FOR_A_FILE_SYSTEM_FILTER_DRIVER_IF"></span>
-
-
-The Windows Setup and Device Installer Services, known collectively as [SetupAPI](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi), provide the functions that control Windows setup and driver installation. The installation process is controlled by INF files.
+The Windows Setup and Device Installer Services, known collectively as [SetupAPI](../install/setupapi.md), provide the functions that control Windows setup and driver installation. The installation process is controlled by INF files.
 
 A file system driver's INF file provides instructions that SetupAPI uses to install the driver. The INF file is a text file that specifies the files that must be present for your driver to run and the source and destination directories for the driver files. An INF file also contains driver configuration information that SetupAPI stores in the registry, such as the driver's start type and load order group.
 
-For more information about INF files and how they are created, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives). For general information about signing drivers, see [Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/install/driver-signing).
+For more information about INF files, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md). For general information about signing drivers, see [Driver Signing](../install/driver-signing.md).
 
-You can create a single INF file to install your driver on multiple versions of the Windows operating system. For more information about creating such an INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](https://docs.microsoft.com/windows-hardware/drivers/install/creating-inf-files-for-multiple-platforms-and-operating-systems) and [Creating International INF Files](https://docs.microsoft.com/windows-hardware/drivers/install/creating-international-inf-files).
+You can create a single INF file to install your driver on multiple versions of the Windows operating system. For more information about creating such an INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md) and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 Starting with 64-bit versions of Windows Vista, all kernel-mode components, including non-PnP (Plug and Play) drivers such as file system drivers (file system, legacy filter, and minifilter drivers), must be signed in order to load and execute. For these versions of the Windows operating system, the following list contains information that is relevant to file system drivers.
 
--   INF files for non-PnP drivers, including file system drivers, are not required to contain \[Manufacturer\] or \[Models\] sections.
+- INF files for non-PnP drivers, including file system drivers, are not required to contain \[Manufacturer\] or \[Models\] sections.
 
--   The [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) command-line tool, located in the \\bin\\SelfSign directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
+- The [**SignTool**](../devtest/signtool.md) command-line tool, located in the \bin\SelfSign directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
 
--   Given an INF file, the [**Inf2Cat**](https://docs.microsoft.com/windows-hardware/drivers/devtest/inf2cat) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](https://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
+- Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package.
 
--   With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it is unsigned.
+- With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it is unsigned.
 
--   For detailed information about the driving signing process, including the driving signing process for 64-bit versions of Windows Vista, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
+- For detailed information about the driving signing process, including the driving signing process for 64-bit versions of Windows Vista, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
 
--   All kernel-mode components, including custom kernel-mode development tools, must be signed. For more information, see [Signing Drivers during Development and Test (Windows Vista and Later)](https://docs.microsoft.com/windows-hardware/drivers/install/signing-drivers-during-development-and-test--windows-vista-and-later-).
+- All kernel-mode components, including custom kernel-mode development tools, must be signed. For more information, see [Signing Drivers during Development and Test (Windows Vista and Later)](../install/introduction-to-test-signing.md).
 
 INF files cannot be used to read information from the registry or to launch a user-mode application.
 
-After creating an INF file, you will typically write the source code for your setup application. The setup application calls user-mode setup functions to access the information in the INF file and perform installation operations.
+## Sections in a file system driver INF file
 
-To construct your own file system driver INF file, use the following information as a guide. You can use the [ChkINF](https://docs.microsoft.com/windows-hardware/drivers/devtest/chkinf) tool to check the syntax of your INF file.
+To construct your own file system driver INF file, use the following information as a guide. You can use the [InfVerif](../devtest/infverif.md) tool to check the syntax of your INF file.
 
 An INF file for a file system driver generally contains the following sections.
 
--   Version (required)
+- [Version (required)](#version-section-required)
 
--   DestinationDirs (optional but recommended)
+- [DestinationDirs (optional but recommended)](#destinationdirs-section-optional-but-recommended)
 
--   SourceDisksNames (required)
+- [SourceDisksNames (required)](#sourcedisksnames-section-required)
 
--   SourceDisksFiles (required)
+- [SourceDisksFiles (required)](#sourcedisksfiles-section-required)
 
--   DefaultInstall (required)
+- [DefaultInstall (required)](#defaultinstall-section-required)
 
--   DefaultInstall.Services (required)
+- [DefaultInstall.Services (required)](#defaultinstallservices-section-required)
 
--   ServiceInstall (required)
+- [ServiceInstall (required)](#serviceinstall-section-required)
 
--   DefaultUninstall (optional)
+- [DefaultUninstall (optional)](#defaultuninstall-section-optional)
 
--   DefaultUninstall.Services (optional)
+- [DefaultUninstall.Services (optional)](#defaultuninstallservices-section-optional)
 
--   Strings (required)
+- [Strings (required)](#strings-section-required)
 
-### <span id="Version_Section__required_"></span><span id="version_section__required_"></span><span id="VERSION_SECTION__REQUIRED_"></span>Version Section (required)
+### Version Section (required)
 
-The [**Version**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) section specifies the driver version information, as shown in the following code example.
+The [**Version**](../install/inf-version-section.md) section specifies the driver version information, as shown in the following code example.
 
 ```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Provider    = %Msft%
 DriverVer   = 08/28/2000,1.0.0.1
-CatalogFile = 
+CatalogFile =
 ```
 
-The following table shows the values that file system filter drivers should specify in the [**Version**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) section.
+The following table shows the values that file system filter drivers should specify in the [**Version**](../install/inf-version-section.md) section.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Entry</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Signature</strong></p></td>
-<td align="left"><p>"$WINDOWS NT$"</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Provider</strong></p></td>
-<td align="left"><p>In your own INF file, you should specify a provider other than Microsoft.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>DriverVer</strong></p></td>
-<td align="left"><p>See <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive)"><strong>INF DriverVer directive</strong></a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>CatalogFile</strong></p></td>
-<td align="left"><p>Leave this entry blank. In the future, it will contain the name of a WHQL-supplied catalog file for signed drivers.</p></td>
-</tr>
-</tbody>
-</table>
+| Entry | Value |
+| ----- | ----- |
+| **Signature** | "$WINDOWS NT$" |
+| **Provider** | In your own INF file, you should specify a provider other than Microsoft. |
+| **DriverVer** | See [**INF DriverVer directive**](../install/inf-driverver-directive.md) |
+| **CatalogFile** | Leave this entry blank. In the future, it will contain the name of a WHQL-supplied catalog file for signed drivers. |
 
- 
+### DestinationDirs Section (optional but recommended)
 
-### <span id="DestinationDirs_Section__optional_but_recommended_"></span><span id="destinationdirs_section__optional_but_recommended_"></span><span id="DESTINATIONDIRS_SECTION__OPTIONAL_BUT_RECOMMENDED_"></span>DestinationDirs Section (optional but recommended)
+The [**DestinationDirs**](../install/inf-destinationdirs-section.md) section specifies the directories where the file system driver files will be copied.
 
-The [**DestinationDirs**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section) section specifies the directories where the file system driver files will be copied.
-
-In this section and in the **ServiceInstall** section, you can specify well-known system directories by using system-defined numeric values. For a list of these values, see [**INF DestinationDirs Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section). In the following code example, the value "12" refers to the Drivers directory (%windir%\\system32\\drivers).
+In this section and in the **ServiceInstall** section, you can specify well-known system directories by using system-defined numeric values. For a list of these values, see [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md). In the following code example, the value "12" refers to the Drivers directory (%windir%\system32\drivers).
 
 ```cpp
 [DestinationDirs]
@@ -132,39 +104,38 @@ DefaultDestDir = 12
 ExampleFileSystem.DriverFiles = 12
 ```
 
-### <span id="SourceDisksNames_Section__required_"></span><span id="sourcedisksnames_section__required_"></span><span id="SOURCEDISKSNAMES_SECTION__REQUIRED_"></span>SourceDisksNames Section (required)
+### SourceDisksNames Section (required)
 
-The [**SourceDisksNames**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section) section specifies the distribution media to be used.
+The [**SourceDisksNames**](../install/inf-sourcedisksnames-section.md) section specifies the distribution media to be used.
 
-In the following code example, the [**SourceDisksNames**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section) section lists a single distribution media for the file system driver. The unique identifier for the media is 1. The name of the media is specified by the %Disk1% token, which is defined in the **Strings** section of the INF file.
+In the following code example, the [**SourceDisksNames**](../install/inf-sourcedisksnames-section.md) section lists a single distribution media for the file system driver. The unique identifier for the media is 1. The name of the media is specified by the %Disk1% token, which is defined in the **Strings** section of the INF file.
 
 ```cpp
 [SourceDisksNames]
 1 = %Disk1%
 ```
 
-### <span id="SourceDisksFiles_Section__required_"></span><span id="sourcedisksfiles_section__required_"></span><span id="SOURCEDISKSFILES_SECTION__REQUIRED_"></span>SourceDisksFiles Section (required)
+### SourceDisksFiles Section (required)
 
-The [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) section specifies the location and names of the files to be copied.
+The [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) section specifies the location and names of the files to be copied.
 
-In the following code example, the [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) section lists the file to be copied for the file system driver and specifies that the files can be found on the media whose unique identifier is 1 (This identifier is defined in the [**SourceDisksNames**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section) section of the INF file.)
+In the following code example, the [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) section lists the file to be copied for the file system driver and specifies that the files can be found on the media whose unique identifier is 1 (This identifier is defined in the [**SourceDisksNames**](../install/inf-sourcedisksnames-section.md) section of the INF file.)
 
 ```cpp
 [SourceDisksFiles]
 examplefilesystem.sys = 1
 ```
 
-### <span id="DefaultInstall_Section__required_"></span><span id="defaultinstall_section__required_"></span><span id="DEFAULTINSTALL_SECTION__REQUIRED_"></span>DefaultInstall Section (required)
+### DefaultInstall Section (required)
 
-In the [**DefaultInstall**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-section) section, a [**CopyFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) directive copies the file system driver's driver files to the destination that is specified in the [**DestinationDirs**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section) section.
+In the [**DefaultInstall**](../install/inf-defaultinstall-section.md) section, a [**CopyFiles**](../install/inf-copyfiles-directive.md) directive copies the file system driver's driver files to the destination that is specified in the [**DestinationDirs**](../install/inf-destinationdirs-section.md) section.
 
-**Note**   The [**CopyFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) directive should not refer to the catalog file or the INF file itself; SetupAPI copies these files automatically.
+> [!NOTE]
+> The [**CopyFiles**](../install/inf-copyfiles-directive.md) directive should not refer to the catalog file or the INF file itself; SetupAPI copies these files automatically.
 
- 
+You can create a single INF file to install your driver on multiple versions of the Windows operating system. This type of INF file is created by creating additional [**DefaultInstall**](../install/inf-defaultinstall-section.md), [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md), **DefaultUninstall**, and **DefaultUninstall.Services** sections for each operating system version. Each section is labeled with a *decoration* (for example, .ntx86, .ntia64, or .nt) that specifies the operating system version to which it applies. For more information about creating this type of INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
-You can create a single INF file to install your driver on multiple versions of the Windows operating system. This type of INF file is created by creating additional [**DefaultInstall**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-section), [**DefaultInstall.Services**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-services-section), **DefaultUninstall**, and **DefaultUninstall.Services** sections for each operating system version. Each section is labeled with a *decoration* (for example, .ntx86, .ntia64, or .nt) that specifies the operating system version to which it applies. For more information about creating this type of INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](https://docs.microsoft.com/windows-hardware/drivers/install/creating-inf-files-for-multiple-platforms-and-operating-systems).
-
-In the following code example, the [**CopyFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) directive copies the files that are listed in the ExampleFileSystem.DriverFiles section of the INF file.
+In the following code example, the [**CopyFiles**](../install/inf-copyfiles-directive.md) directive copies the files that are listed in the ExampleFileSystem.DriverFiles section of the INF file.
 
 ```cpp
 [DefaultInstall]
@@ -175,20 +146,20 @@ CopyFiles = ExampleFileSystem.DriverFiles
 examplefilesystem.sys
 ```
 
-### <span id="DefaultInstall.Services_Section__required_"></span><span id="defaultinstall.services_section__required_"></span><span id="DEFAULTINSTALL.SERVICES_SECTION__REQUIRED_"></span>DefaultInstall.Services Section (required)
+### DefaultInstall.Services Section (required)
 
-The [**DefaultInstall.Services**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-services-section) section contains an [**AddService**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) directive that controls how and when the services of a particular driver are loaded.
+The [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) section contains an [**AddService**](../install/inf-addservice-directive.md) directive that controls how and when the services of a particular driver are loaded.
 
-In the following code example, the [**AddService**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) directive adds the file system service to the operating system. The %ServiceName% token contains the service name string, which is defined in the **Strings** section of the INF file. ExampleFileSystem.Service is the name of the file system driver's **ServiceInstall** section.
+In the following code example, the [**AddService**](../install/inf-addservice-directive.md) directive adds the file system service to the operating system. The %ServiceName% token contains the service name string, which is defined in the **Strings** section of the INF file. ExampleFileSystem.Service is the name of the file system driver's **ServiceInstall** section.
 
 ```cpp
 [DefaultInstall.Services]
 AddService = %ServiceName%,,ExampleFileSystem.Service
 ```
 
-### <span id="ddk_serviceinstall_section_if"></span><span id="DDK_SERVICEINSTALL_SECTION_IF"></span>ServiceInstall Section (required)
+### ServiceInstall Section (required)
 
-The **ServiceInstall** section adds subkeys or value names to the registry and sets values. The name of the **ServiceInstall** section must appear in an [**AddService directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) in the [**DefaultInstall.Services section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-services-section).
+The **ServiceInstall** section adds subkeys or value names to the registry and sets values. The name of the **ServiceInstall** section must appear in an [**AddService directive**](../install/inf-addservice-directive.md) in the [**DefaultInstall.Services section**](../install/inf-defaultinstall-services-section.md).
 
 The following code example shows the **ServiceInstall** section for the file system driver.
 
@@ -208,143 +179,60 @@ The **DisplayName** entry specifies the name for the service. In the preceding e
 
 The **Description** entry specifies a string that describes the service. In the preceding example, this string is specified by the %ServiceDesc% token, which is defined in the **Strings** section of the INF file.
 
-The **ServiceBinary** entry specifies the path to the executable file for the service. In the preceding example, the value 12 refers to the Drivers directory (%windir%\\system32\\drivers).
+The **ServiceBinary** entry specifies the path to the executable file for the service. In the preceding example, the value 12 refers to the Drivers directory (%windir%\system32\drivers).
 
 The **ServiceType** entry specifies the type of service. The following table lists the possible values for **ServiceType** and their corresponding service types.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0x00000001</p></td>
-<td align="left"><p>SERVICE_KERNEL_DRIVER (Device driver service)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x00000002</p></td>
-<td align="left"><p>SERVICE_FILE_SYSTEM_DRIVER (File system or file system filter driver service)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x00000010</p></td>
-<td align="left"><p>SERVICE_WIN32_OWN_PROCESS (Microsoft Win32 service that runs in its own process)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x00000020</p></td>
-<td align="left"><p>SERVICE_WIN32_SHARE_PROCESS (Win32 service that shares a process)</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Description |
+| ----- | ----------- |
+| 0x00000001 | SERVICE_KERNEL_DRIVER (Device driver service) |
+| 0x00000002 | SERVICE_FILE_SYSTEM_DRIVER (File system or file system filter driver service) |
+| 0x00000010 | SERVICE_WIN32_OWN_PROCESS (Microsoft Win32 service that runs in its own process) |
+| 0x00000020 | SERVICE_WIN32_SHARE_PROCESS (Win32 service that shares a process) |
 
- 
-
-The **ServiceType** entry should always be set to SERVICE\_FILE\_SYSTEM\_DRIVER for a file system driver.
+The **ServiceType** entry should always be set to SERVICE_FILE_SYSTEM_DRIVER for a file system driver.
 
 The **StartType** entry specifies when to start the service. The following table lists the possible values for **StartType** and their corresponding start types.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0x00000000</p></td>
-<td align="left"><p>SERVICE_BOOT_START</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x00000001</p></td>
-<td align="left"><p>SERVICE_SYSTEM_START</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x00000002</p></td>
-<td align="left"><p>SERVICE_AUTO_START</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x00000003</p></td>
-<td align="left"><p>SERVICE_DEMAND_START</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x00000004</p></td>
-<td align="left"><p>SERVICE_DISABLED</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Description |
+| ----- | ----------- |
+| 0x00000000 | SERVICE_BOOT_START |
+| 0x00000001 | SERVICE_SYSTEM_START |
+| 0x00000002 | SERVICE_AUTO_START |
+| 0x00000003 | SERVICE_DEMAND_START |
+| 0x00000004 | SERVICE_DISABLED |
 
 For detailed descriptions of these start types to determine which one is appropriate for your file system driver, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
-Starting with x64-based Windows Vista systems, the binary image file of a boot-start driver (a driver that has a start type of SERVICE\_BOOT\_START) must contain an embedded signature. This requirement ensures optimal system boot performance. For more information, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
+Starting with x64-based Windows Vista systems, the binary image file of a boot-start driver (a driver that has a start type of SERVICE_BOOT_START) must contain an embedded signature. This requirement ensures optimal system boot performance. For more information, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
 
 For information about how the **StartType** and **LoadOrderGroup** entries determine when the driver is loaded, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
 The **ErrorControl** entry specifies the action to be taken if the service fails to start during system startup. The following table lists the possible values for **ErrorControl** and their corresponding error control values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">Action</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0x00000000</p></td>
-<td align="left"><p>SERVICE_ERROR_IGNORE (Log the error and continue system startup.)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x00000001</p></td>
-<td align="left"><p>SERVICE_ERROR_NORMAL (Log the error, display a message to the user, and continue system startup.)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x00000002</p></td>
-<td align="left"><p>SERVICE_ERROR_SEVERE (Switch to the registry's LastKnownGood control set and continue system startup.)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x00000003</p></td>
-<td align="left"><p>SERVICE_ERROR_CRITICAL (If system startup is not using the registry's LastKnownGood control set, switch to LastKnownGood and try again. If startup still fails, run a bug-check routine. Only the drivers that are needed for the system to startup should specify this value in their INF files.)</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Description |
+| ----- | ----------- |
+| 0x00000000 | SERVICE_ERROR_IGNORE (Log the error and continue system startup.) |
+| 0x00000001 | SERVICE_ERROR_NORMAL (Log the error, display a message to the user, and continue system startup.) |
+| 0x00000002 | SERVICE_ERROR_SEVERE (Switch to the registry's LastKnownGood control set and continue system startup. |
+| 0x00000003 | SERVICE_ERROR_CRITICAL (If system startup is not using the registry's LastKnownGood control set, switch to LastKnownGood and try again. If startup still fails, run a bug-check routine. Only the drivers that are needed for the system to startup should specify this value in their INF files.) |
 
 The **LoadOrderGroup** entry must always be set to "File System" for a file system driver. This is different from what is specified for a file system filter driver or file system minifilter driver where the **LoadOrderGroup** entry is set to one of the file system filter load order groups. For more information about the load order groups that are used for file system filter drivers and file system minifilter drivers, see [Load Order Groups for File System Filter Drivers](load-order-groups-for-file-system-filter-drivers.md) and [Load Order Groups and Altitudes for Minifilter Drivers](load-order-groups-and-altitudes-for-minifilter-drivers.md).
 
-The [**AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) refers to one or more INF writer-defined **AddRegistry** sections that contain any information to be stored in the registry for the newly installed service.
+The [**AddReg directive**](../install/inf-addreg-directive.md) refers to one or more INF writer-defined **AddRegistry** sections that contain any information to be stored in the registry for the newly installed service.
 
-**Note**   If the INF file will also be used for upgrading the driver after the initial install, the entries that are contained in the **AddRegistry** section should specify the 0x00000002 (FLG\_ADDREG\_NOCLOBBER) flag. Specifying this flag preserves the registry entries in HKLM\\CurrentControlSet\\Services when subsequent files are installed. For example:
-
- 
+If the INF file will also be used for upgrading the driver after the initial install, the entries that are contained in the **AddRegistry** section should specify the 0x00000002 (FLG_ADDREG_NOCLOBBER) flag. Specifying this flag preserves the registry entries in HKLM\CurrentControlSet\Services when subsequent files are installed. For example:
 
 ```cpp
 [ExampleFileSystem.AddRegistry]
 HKR,Parameters,ExampleParameter,0x00010003,1
 ```
 
-### <span id="DefaultUninstall_Section__optional_"></span><span id="defaultuninstall_section__optional_"></span><span id="DEFAULTUNINSTALL_SECTION__OPTIONAL_"></span>DefaultUninstall Section (optional)
+### DefaultUninstall Section (optional)
 
-The **DefaultUninstall** section is optional but recommended if your driver can be uninstalled. It contains [**DelFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delfiles-directive) and [**DelReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delreg-directive) directives to remove files and registry entries.
+The **DefaultUninstall** section is optional but recommended if your driver can be uninstalled. It contains [**DelFiles**](../install/inf-delfiles-directive.md) and [**DelReg**](../install/inf-delreg-directive.md) directives to remove files and registry entries.
 
-In the following code example, the [**DelFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delfiles-directive) directive removes the files that are listed in the ExampleFileSystem.DriverFiles section of the INF file.
+In the following code example, the [**DelFiles**](../install/inf-delfiles-directive.md) directive removes the files that are listed in the ExampleFileSystem.DriverFiles section of the INF file.
 
 ```cpp
 [DefaultUninstall]
@@ -352,30 +240,27 @@ DelFiles   = ExampleFileSystem.DriverFiles
 DelReg     = ExampleFileSystem.DelRegistry
 ```
 
-The [**DelReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delreg-directive) directive refers to one or more INF writer-defined **DelRegistry** sections that contain any information to be removed from the registry for the service that is being uninstalled.
+The [**DelReg**](../install/inf-delreg-directive.md) directive refers to one or more INF writer-defined **DelRegistry** sections that contain any information to be removed from the registry for the service that is being uninstalled.
 
-### <span id="DefaultUninstall.Services_Section__optional_"></span><span id="defaultuninstall.services_section__optional_"></span><span id="DEFAULTUNINSTALL.SERVICES_SECTION__OPTIONAL_"></span>DefaultUninstall.Services Section (optional)
+### DefaultUninstall.Services Section (optional)
 
-The **DefaultUninstall.Services** section is optional but recommended if your driver can be uninstalled. It contains [**DelService**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delservice-directive) directives to remove the file system driver's services.
+The **DefaultUninstall.Services** section is optional but recommended if your driver can be uninstalled. It contains [**DelService**](../install/inf-delservice-directive.md) directives to remove the file system driver's services.
 
-In the following code example, the [**DelService**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delservice-directive) directive removes the file system driver's service from the operating system.
+In the following code example, the [**DelService**](../install/inf-delservice-directive.md) directive removes the file system driver's service from the operating system.
 
 ```cpp
 [DefaultUninstall.Services]
 DelService = %ServiceName%,0x200
 ```
 
-**Note**   The [**DelService**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delservice-directive) directive should always specify the 0x200 (SPSVCINST\_STOPSERVICE) flag to stop the service before it is deleted.
+The [**DelService**](../install/inf-delservice-directive.md) directive should always specify the 0x200 (SPSVCINST_STOPSERVICE) flag to stop the service before it is deleted.
 
- 
+> [!NOTE]
+> There are certain classes of file system products that cannot be completely uninstalled. In this situation, it is acceptable to just uninstall the components of the product that can be uninstalled and leave installed the components of the product that cannot be uninstalled. An example of such a product is the Microsoft Single Instance Store (SIS) feature.
 
-**Note**   There are certain classes of file system products that cannot be completely uninstalled. In this situation, it is acceptable to just uninstall the components of the product that can be uninstalled and leave installed the components of the product that cannot be uninstalled. An example of such a product is the Microsoft Single Instance Store (SIS) feature.
+### Strings Section (required)
 
- 
-
-### <span id="Strings_Section__required_"></span><span id="strings_section__required_"></span><span id="STRINGS_SECTION__REQUIRED_"></span>Strings Section (required)
-
-The [**Strings**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section) section defines each %strkey% token that is used in the INF file.
+The [**Strings**](../install/inf-strings-section.md) section defines each %strkey% token that is used in the INF file.
 
 For example, the file system driver defines the following strings in its INF file.
 
@@ -388,12 +273,4 @@ ParameterPath = "SYSTEM\CurrentControlSet\Services\ExampleFileSystem\Parameters"
 Disk1       = "Example File System Driver CD"
 ```
 
-You can create a single international INF file by creating additional locale-specific **Strings.**<em>LanguageID</em> sections in the INF file. For more information about international INF files, see [Creating International INF Files](https://docs.microsoft.com/windows-hardware/drivers/install/creating-international-inf-files).
-
- 
-
- 
-
-
-
-
+You can create a single international INF file by creating additional locale-specific **Strings**.*LanguageID* sections in the INF file. For more information about international INF files, see [Creating International INF Files](../install/creating-international-inf-files.md).

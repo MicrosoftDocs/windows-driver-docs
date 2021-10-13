@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_RTC\_SEARCH
 description: The KSPROPERTY\_EXTXPORT\_RTC\_SEARCH property searches to a relative time counter (RTC) on a tape.
-ms.assetid: 4a5b76fc-46f3-44f7-8548-34125df777f5
 keywords: ["KSPROPERTY_EXTXPORT_RTC_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_EXTXPORT\_RTC\_SEARCH property searches to a relative time count
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Device</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
@@ -57,15 +56,13 @@ The KSPROPERTY\_EXTXPORT\_RTC\_SEARCH property searches to a relative time count
 
 The property value (operation data) is a DWORD that specifies the timecode, in hour:minute:second:frame, to search to on a tape.
 
-Remarks
--------
+## Remarks
 
 The **dwTimecode** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the relative time counter setting to search to.
 
 This method is defined, but not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,16 +80,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_EXTXPORT\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_EXTXPORT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
 

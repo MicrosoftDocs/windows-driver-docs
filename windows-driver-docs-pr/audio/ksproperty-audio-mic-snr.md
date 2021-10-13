@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MIC\_SNR
 description: The KSPROPERTY\_AUDIO\_MIC\_SNR property specifies the microphone signal to noise ratio (SNR) measured in dB units.
-ms.assetid: 1DF088D0-7C0D-42B6-B7FA-2E714C70DAA4
 keywords: ["KSPROPERTY_AUDIO_MIC_SNR Audio Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ Usage Summary Table
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin Instance</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></td>
 <td align="left">LONG</td>
 </tr>
 </tbody>
@@ -58,17 +57,15 @@ The property value (operation data) is of type LONG and contains the SNR informa
 
 A KSPROPERTY\_AUDIO\_MIC\_SNR property request returns a STATUS\_SUCCESS upon successful completion of the request. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The audio driver can obtain microphone SNR for each microphone. This property allows this information to be retrieved from driver.
 
-For Windows 10 voice recognition experiences such as Cortana to accurately detect and analyze user’s voice on various devices with different microphones, the OS needs to know certain characteristics of the input signal. Based on that information, the OS can calculate effective sensitivity and apply appropriate gain to enhance input signal. For more information, see [Voice Activation](https://docs.microsoft.com/windows-hardware/drivers/audio/voice-activation).
+For Windows 10 voice recognition experiences such as Cortana to accurately detect and analyze user’s voice on various devices with different microphones, the OS needs to know certain characteristics of the input signal. Based on that information, the OS can calculate effective sensitivity and apply appropriate gain to enhance input signal. For more information, see [Voice Activation](./voice-activation.md).
 
 KSPROPERTY\_AUDIO\_MIC\_SNR is available beginning with Windows 10, version 1607.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,12 +79,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

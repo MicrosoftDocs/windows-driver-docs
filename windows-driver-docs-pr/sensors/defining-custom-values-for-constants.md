@@ -1,19 +1,18 @@
 ---
-title: Defining custom values for sensor constants
-description: Defining custom values for sensor constants
-ms.assetid: 0ed635c2-117d-4a49-a565-31e5a0a9861d
+title: Defining custom values for sensor constants (previous version)
+description: Defining custom values for sensor constants (previous version)
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
-# Defining custom values for sensor constants
+# Defining custom values for sensor constants (previous version)
 
 
 You can define custom values for categories, sensor types, data fields, properties, and events.
 
 ## Guidelines for Custom Values
 
-Avoid defining new constants if a set of platform-defined constants will work. Study and understand the categories, types, data fields, properties, and events described in the [Constants](https://docs.microsoft.com/windows-hardware/drivers/sensors/about-sensor-constants) reference section and decide whether your sensor driver fits into the platform framework.
+Avoid defining new constants if a set of platform-defined constants will work. Study and understand the categories, types, data fields, properties, and events described in the [Constants](./about-sensor-constants.md) reference section and decide whether your sensor driver fits into the platform framework.
 
 If you choose to define custom values, follow these guidelines:
 
@@ -73,7 +72,4 @@ To use the DEFINE\_PROPERTYKEY macro, use one of the following two options:
 Using the macro without including Initguid.h and without referencing a library file will cause the LNK2001 error.
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-
-
-
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

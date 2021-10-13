@@ -1,7 +1,6 @@
 ---
 title: Microsoft OS 1.0 Descriptors Specification
 description: Microsoft OS 1.0 Descriptors Specification
-ms.assetid: A2B00584-DDD5-42D2-BDBF-116637ABD192
 ms.date: 07/08/2019
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ To help IHVs address this issue, Microsoft has defined Microsoft OS descriptors.
 
 **Note:** The table of compatible and sub-compatible IDs in Appendix 1 of "Extended Compat ID OS Feature Descriptor Specification" is current as of the time the specification was written, but might have since changed. The following table contains the most recent list of compatible and sub-compatible IDs. All IDs must be eight bytes, so any unused characters are filled with NULLs.
 
-<table border="0" cellpadding="0" cellspacing="0" class="grid" width="100%" summary="table">
+<table border="0" cellpadding="0" cellspacing="0" class="grid" width="100%">
 <thead>
 <tr align="left" valign="top">
 <td>
@@ -58,7 +57,7 @@ To help IHVs address this issue, Microsoft has defined Microsoft OS descriptors.
 <tr align="left" valign="top">
 <td>"BLUTUTH"<br>(0x42 0x4C 0x55 0x54 0x55 0x54 0x48 0x00)</td>
 <td>
-<div class="contentTableWrapper"><table border="0" cellpadding="0" cellspacing="0" class="grid" width="100%" summary="table">
+<div class="contentTableWrapper"><table border="0" cellpadding="0" cellspacing="0" class="grid" width="100%">
 <tbody>
 <tr align="left" valign="top">
 <td>"11"<br>(0x31 0x31 0x00 0x00 0x00 0x00 0x00 0x00)</td>
@@ -104,16 +103,16 @@ This information applies to Windows XP and later versions of Windows.
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><strong><br />
+<td><strong><br />
 Microsoft OS Descriptors Specification</strong><br />
 </td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><div style="font-size: 100%; border: thin inset; height: 400px; overflow: scroll; text-align: left; padding: 10px;">
+<td><div>
 <h3 id="microsoft-os-descriptor-specification-license-agreement">Microsoft OS Descriptor Specification License Agreement</h3>
 <p>This is a legal agreement (“Agreement”) between you (either an individual or single entity) (“You”), and Microsoft Corporation (“Microsoft”) for the Specification.  By downloading, copying or otherwise using the Specification, You agree to be bound by the terms of this Agreement.   </p>
 <p><strong>SECTION 1           DEFINITIONS.</strong></p>
@@ -139,7 +138,7 @@ Microsoft OS Descriptors Specification</strong><br />
 <p>Neither party may assign this Agreement without prior written approval of the other party.</p>
 </div>
 <p><br />
-<a href="http://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/OS_Desc_Ext_Prop.zip">I accept, Download</a></p></td>
+<a href="https://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/OS_Desc_Ext_Prop.zip">I accept, Download</a></p></td>
 </tr>
 </tbody>
 </table>

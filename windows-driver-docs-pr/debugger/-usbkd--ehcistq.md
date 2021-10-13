@@ -1,7 +1,6 @@
 ---
 title: usbkd._ehcistq
 description: The usbkd._ehcistq command displays a usbehci _HCD_QUEUEHEAD_DESCRIPTOR structure.
-ms.assetid: 282206D2-7F4A-4EBA-A874-F1744F218194
 keywords: ["usbkd._ehcistq Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -38,14 +37,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

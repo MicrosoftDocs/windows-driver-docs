@@ -1,7 +1,6 @@
 ---
 title: Building and Sending an AV/C Command
 description: Building and Sending an AV/C Command
-ms.assetid: 0f5bb205-7ffe-4007-bb66-a77889af2eed
 keywords:
 - Avc.sys function driver WDK , command building and sending
 - command building WDK AV/C
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The following procedure outlines the process to build and send an AV/C command:
 
-1. The subunit driver must allocate and initialize an IRP that is appropriate for the number of drivers below itself (as specified in the next lower driver's DEVICE\_OBJECT-&gt;**StackSize** member). The style of IRP management that is implemented by the driver writer influences how to obtain an IRP to use with *Avc.sys*. Typically, a minidriver calls [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp) to allocate a new IRP for an AV/C Command. Do not call [**IoInitializeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinitializeirp) on an IRP allocated in a subunit driver by **IoAllocateIrp**. Rather than trying to reinitialize and reuse an old IRP, call [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iofreeirp) on the existing IRP, and then call **IoAllocateIrp** to allocate a new IRP.
+1. The subunit driver must allocate and initialize an IRP that is appropriate for the number of drivers below itself (as specified in the next lower driver's DEVICE\_OBJECT-&gt;**StackSize** member). The style of IRP management that is implemented by the driver writer influences how to obtain an IRP to use with *Avc.sys*. Typically, a minidriver calls [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) to allocate a new IRP for an AV/C Command. Do not call [**IoInitializeIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializeirp) on an IRP allocated in a subunit driver by **IoAllocateIrp**. Rather than trying to reinitialize and reuse an old IRP, call [**IoFreeIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp) on the existing IRP, and then call **IoAllocateIrp** to allocate a new IRP.
 
     > [!NOTE]
     > For readability, the following code examples do not demonstrate error handling.
@@ -29,7 +28,7 @@ The following procedure outlines the process to build and send an AV/C command:
 
 2. The subunit driver then allocates an AVC\_COMMAND\_IRB or AVC\_MULTIFUNC\_IRB structure that is appropriate for the type of AV/C function desired and fills in the block with the desired AV/C request parameters. The reference page for each IOCTL\_AVC\_CLASS function describes which IRB the function requires. The IRB is a block of data that describes the AV/C opcode and operation to perform. Each function supported by *Avc.sys* is associated with a specific IRB structure. The memory for the IRB must be allocated from nonpaged pool. When the memory for the IRB has been allocated, fill in the parameters for the function according to its associated structure definition.
 
-    For the list of available functions and their associated structure definitions, see [AV/C Protocol Driver Function Codes](https://docs.microsoft.com/windows-hardware/drivers/stream/av-c-protocol-driver-function-codes), [AV/C Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index), and [AV/C Enumerations](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index).
+    For the list of available functions and their associated structure definitions, see [AV/C Protocol Driver Function Codes](./av-c-protocol-driver-function-codes.md), [AV/C Structures](/windows-hardware/drivers/ddi/_stream/index), and [AV/C Enumerations](/windows-hardware/drivers/ddi/_stream/index).
 
     The following is a code sample that shows how the AVC\_COMMAND\_IRB structure might be allocated and initialized for an AV/C control command that consists of a single operand byte:
 
@@ -63,7 +62,7 @@ The following procedure outlines the process to build and send an AV/C command:
     AvcIrb->Operand[0] = Operand;
     ```
 
-3. The subunit driver must specify the IRP's **MajorFunction** and **Parameters.DeviceIoControl.IoControlCode** members as well as the pointer to the IRB that was allocated in step 2. After you allocate an IRP from the operating system, then allocate nonpaged memory for a corresponding IRB, and then set up the parameters for the IRB, you must associate the IRB with the IRP. Depending on the IRB's function code, the correct dispatch routine must be specified in the IRP. For AV/C function codes that correspond to IOCTL\_AVC\_CLASS (that is, the **Parameters.DeviceIoControl.IoControlCode** member is set to IOCTL\_AVC\_CLASS), IRP\_MN\_INTERNAL\_DEVICE\_CONTROL must be specified as the allocated IRP's **MajorFunction** value. All other AV/C function codes supported by *Avc.sys*, such as [**IOCTL\_AVC\_UPDATE\_VIRTUAL\_SUBUNIT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_update_virtual_subunit_info), [**IOCTL\_AVC\_REMOVE\_VIRTUAL\_SUBUNIT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_remove_virtual_subunit_info), and [**IOCTL\_AVC\_BUS\_RESET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_bus_reset), must specify IRP\_MJ\_DEVICE\_CONTROL as the allocated IRP's **MajorFunction** value.
+3. The subunit driver must specify the IRP's **MajorFunction** and **Parameters.DeviceIoControl.IoControlCode** members as well as the pointer to the IRB that was allocated in step 2. After you allocate an IRP from the operating system, then allocate nonpaged memory for a corresponding IRB, and then set up the parameters for the IRB, you must associate the IRB with the IRP. Depending on the IRB's function code, the correct dispatch routine must be specified in the IRP. For AV/C function codes that correspond to IOCTL\_AVC\_CLASS (that is, the **Parameters.DeviceIoControl.IoControlCode** member is set to IOCTL\_AVC\_CLASS), IRP\_MN\_INTERNAL\_DEVICE\_CONTROL must be specified as the allocated IRP's **MajorFunction** value. All other AV/C function codes supported by *Avc.sys*, such as [**IOCTL\_AVC\_UPDATE\_VIRTUAL\_SUBUNIT\_INFO**](/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_update_virtual_subunit_info), [**IOCTL\_AVC\_REMOVE\_VIRTUAL\_SUBUNIT\_INFO**](/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_remove_virtual_subunit_info), and [**IOCTL\_AVC\_BUS\_RESET**](/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_bus_reset), must specify IRP\_MJ\_DEVICE\_CONTROL as the allocated IRP's **MajorFunction** value.
 
     The following code sample shows how to set up the IRP for *Avc.sys* to process:
 
@@ -88,11 +87,11 @@ The following procedure outlines the process to build and send an AV/C command:
 
     An I/O completion routine is required because subunit drivers must allocate IRPs to communicate with *Avc.sys*. The completion routine prevents the I/O manager from continuing to process the subunit driver's allocated IRP after the subunit's call to the lower driver completes. The I/O completion routine must always return STATUS\_MORE\_PROCESSING\_REQUIRED. Beyond that requirement, a subunit driver may implement its control flow and resource management mechanisms.
 
-    When a subunit driver sets the I/O completion routine, it can include a PVOID context parameter. This parameter can be a pointer to anything, as long as the completion routine is written specifically to deal with it. If the subunit driver is sure to make AV/C requests that never involve *interim processing*, then the I/O completion routine can be very simple: use it to trigger a [**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)) (passed as the PVOID context). The main code path that calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) (described in step 5) provides the storage for the event, and uses [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject) to synchronize with the completion routine. The IRP and IRB are freed by the main code path.
+    When a subunit driver sets the I/O completion routine, it can include a PVOID context parameter. This parameter can be a pointer to anything, as long as the completion routine is written specifically to deal with it. If the subunit driver is sure to make AV/C requests that never involve *interim processing*, then the I/O completion routine can be very simple: use it to trigger a [**KSEVENT**](./ksevent-structure.md) (passed as the PVOID context). The main code path that calls [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) (described in step 5) provides the storage for the event, and uses [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) to synchronize with the completion routine. The IRP and IRB are freed by the main code path.
 
     If, however, the subunit driver is sending a request that is likely to involve interim processing, the completion routine is responsible for handling the response and freeing the IRP and IRB resources. The main code path relinquishes all IRP processing responsibility to the completion routine.
 
-5. The subunit driver then calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) and passes the next lower driver (as returned by the call to [**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioattachdevicetodevicestack) in the subunit driver's **AddDevice** routine) and the IRP to be processed to *Avc.sys*.
+5. The subunit driver then calls [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) and passes the next lower driver (as returned by the call to [**IoAttachDeviceToDeviceStack**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack) in the subunit driver's **AddDevice** routine) and the IRP to be processed to *Avc.sys*.
 
     ```cpp
     status = IoCallDriver( DeviceExtension->NextLowerDriver, Irp );
@@ -116,7 +115,7 @@ Repeat Steps 1 through 5 as necessary.
 <tbody>
 <tr class="odd">
 <td><p>STATUS_SUCCESS</p></td>
-<td><p>The request was made, and a final response was received within the bounds of the AV/C specification's time-out and retry parameters. The subunit's response code (the <strong>ResponseCode</strong> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_command_irb" data-raw-source="[&lt;strong&gt;AVC_COMMAND_IRB&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_command_irb)"><strong>AVC_COMMAND_IRB</strong></a> structure) must still be examined to determine the true result of the operation. STATUS_SUCCESS simply means that a round-trip request and response cycle was completed in less than 100 ms (assuming the default timeout was not changed from 100 ms).</p></td>
+<td><p>The request was made, and a final response was received within the bounds of the AV/C specification's time-out and retry parameters. The subunit's response code (the <strong>ResponseCode</strong> member of the <a href="/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb" data-raw-source="[&lt;strong&gt;AVC_COMMAND_IRB&lt;/strong&gt;](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb)"><strong>AVC_COMMAND_IRB</strong></a> structure) must still be examined to determine the true result of the operation. STATUS_SUCCESS simply means that a round-trip request and response cycle was completed in less than 100 ms (assuming the default timeout was not changed from 100 ms).</p></td>
 </tr>
 <tr class="even">
 <td><p>STATUS_TIMEOUT</p></td>
@@ -174,4 +173,4 @@ A *notify* request responds immediately only if there is an error condition.
 
 Some *control* and all *notify* requests acknowledge, but may not necessarily complete, the request within 100 ms. The acknowledgment is through an interim response, which is referred to in this documentation as *interim processing*. The result of an interim response is that **IoCallDriver** returns STATUS\_PENDING. If this result occurs, then the I/O completion routine specified in step 4 above is the point of notification when the request is finally completed by the AV/C subunit.
 
-For more information about IRPs and IOCTLs, see [Handling IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-irps).
+For more information about IRPs and IOCTLs, see [Handling IRPs](../kernel/handling-irps.md).

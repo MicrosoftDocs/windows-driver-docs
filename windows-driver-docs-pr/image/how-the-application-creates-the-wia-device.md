@@ -1,7 +1,6 @@
 ---
 title: How the Application Creates the WIA Device
 description: How the Application Creates the WIA Device
-ms.assetid: f4268c61-11e5-4796-b7cb-80c8112be4d8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,15 +11,15 @@ ms.localizationpriority: medium
 
 
 
-When an application intends to use a WIA device driver, it calls the **IWiaDevMgr::CreateDevice** method (described in the Microsoft Windows SDK documentation). The WIA service first calls [**IStiUSD::LockDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-lockdevice) to lock the WIA driver for mutually exclusive access. Next, the WIA service calls [**IWiaMiniDrv::drvInitializeWia**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinitializewia) to create the initial WIA item tree structure. Finally, the WIA service unlocks the device driver by calling [**IStiUSD::UnLockDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-unlockdevice).
+When an application intends to use a WIA device driver, it calls the **IWiaDevMgr::CreateDevice** method (described in the Microsoft Windows SDK documentation). The WIA service first calls [**IStiUSD::LockDevice**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-lockdevice) to lock the WIA driver for mutually exclusive access. Next, the WIA service calls [**IWiaMiniDrv::drvInitializeWia**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinitializewia) to create the initial WIA item tree structure. Finally, the WIA service unlocks the device driver by calling [**IStiUSD::UnLockDevice**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-unlockdevice).
 
 The **IWiaMiniDrv::drvInitializeWia** method should perform the following tasks.
 
-1.  Cache the interface that the *pStiDevice* parameter points to for proper device locking. (For more information, see [**IWiaMiniDrv::drvLockWiaDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvlockwiadevice).)
+1.  Cache the interface that the *pStiDevice* parameter points to for proper device locking. (For more information, see [**IWiaMiniDrv::drvLockWiaDevice**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvlockwiadevice).)
 
 2.  Create the initial WIA item tree structure.
 
-3.  Increment the current application connection count. This count is used to inform the driver whether an application is still connected. It also helps determine the proper action to take in [**IWiaMiniDrv::drvUnInitializeWia**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvuninitializewia).
+3.  Increment the current application connection count. This count is used to inform the driver whether an application is still connected. It also helps determine the proper action to take in [**IWiaMiniDrv::drvUnInitializeWia**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvuninitializewia).
 
 WIA items should be named with some logical meaning. Microsoft requires the following item names for Windows XP and later.
 
@@ -35,9 +34,9 @@ This is the term for a scanner that supports only a feeder.
 
 The WIA service calls the **IWiaMiniDrv::drvInitializeWia** method in response to a WIA application's call to **IWiaDevMgr::CreateDevice** (described in the Windows SDK documentation). A consequence of this is that the WIA service calls the **IWiaMiniDrv::drvInitializeWia** method for each new client connection.
 
-The **IWiaMiniDrv::drvInitializeWia** method should initialize any private structures and create the driver item tree. The driver item tree shows the layout of all WIA items supported by this WIA device. This method is used to create the initial tree structure only, *not* the contents (WIA properties). The WIA service will individually populate the WIA properties for the WIA driver items by making multiple calls to the [**IWiaMiniDrv::drvInitItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinititemproperties) method.
+The **IWiaMiniDrv::drvInitializeWia** method should initialize any private structures and create the driver item tree. The driver item tree shows the layout of all WIA items supported by this WIA device. This method is used to create the initial tree structure only, *not* the contents (WIA properties). The WIA service will individually populate the WIA properties for the WIA driver items by making multiple calls to the [**IWiaMiniDrv::drvInitItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinititemproperties) method.
 
-All WIA devices have a root item, which is the parent to all WIA device items. To create a WIA device item the WIA driver should call the WIA service helper function, [**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiascreatedrvitem).
+All WIA devices have a root item, which is the parent to all WIA device items. To create a WIA device item the WIA driver should call the WIA service helper function, [**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem).
 
 The following example shows how to create a WIA device root item.
 
@@ -66,7 +65,7 @@ if(S_OK == hr){
 
 To create a WIA child item, located directly under the root item created in the previous example, use code similar to the following.
 
-**Note**  **** Notice that the [**IWiaDrvItem::AddItemToFolder**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiadrvitem-additemtofolder) method is called to add the newly created child item to the root item.
+**Note**  **** Notice that the [**IWiaDrvItem::AddItemToFolder**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiadrvitem-additemtofolder) method is called to add the newly created child item to the root item.
 
  
 
@@ -264,9 +263,4 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
 ```
 
  
-
- 
-
-
-
 

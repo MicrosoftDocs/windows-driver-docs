@@ -1,7 +1,6 @@
 ---
 title: Filter Driver Characteristics
 description: Filter Driver Characteristics
-ms.assetid: 95e302c1-687e-4a30-b3bc-9d272c688cba
 keywords:
 - filter drivers WDK networking , characteristics
 - NDIS filter drivers WDK , characteristics
@@ -29,7 +28,7 @@ Filter drivers have the following characteristics:
 
 -   Protocol drivers can obtain the list of filter modules in a driver stack when NDIS restarts the driver stack.
 
-    For more information about the list of filter modules, see [**NDIS\_PROTOCOL\_RESTART\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_protocol_restart_parameters).
+    For more information about the list of filter modules, see [**NDIS\_PROTOCOL\_RESTART\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_restart_parameters).
 
 -   Filter drivers can filter most communication to and from the underlying miniport adapter. Filter modules are not associated with any particular binding between overlying protocol drivers and the miniport adapter. For more information about the types of filtering services that a filter driver can provide, see [Filter Driver Services](filter-driver-services.md).
 
@@ -38,10 +37,4 @@ Filter drivers have the following characteristics:
 -   NDIS guarantees the availability of context space (see [NET\_BUFFER\_LIST\_CONTEXT structure](net-buffer-list-context-structure.md)) for filter drivers. Therefore, filter drivers are not required to include the code to copy buffers to obtain context space. For more information about how to manage buffers, see [Filter Driver Buffer Management](filter-driver-buffer-management.md).
 
  
-
- 
-
-
-
-
 

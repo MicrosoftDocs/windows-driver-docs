@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfdriverinfo
 description: The wdfkd.wdfdriverinfo extension displays information about the specified driver, including its device tree, and version information.
-ms.assetid: dc758fd3-1226-46e3-b249-2cf37ef3e539
 keywords: ["wdfkd.wdfdriverinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,8 +66,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 If you omit the *DriverName* parameter, the default driver is used. You can display the default driver by using the [**!wdfkd.wdfgetdriver**](-wdfkd-wdfgetdriver.md) extension; you can set the default driver by using the [**!wdfkd.wdfsetdriver**](-wdfkd-wdfsetdriver.md) extension.
 

@@ -1,7 +1,6 @@
 ---
 title: Boot Parameters to Test Drivers for Multiple Processor Group Support
 description: Boot Parameters to Test Drivers for Multiple Processor Group Support
-ms.assetid: 8ce311d6-a182-4d04-a453-81f6abe2043b
 ms.date: 05/08/2018
 ms.localizationpriority: medium
 ---
@@ -9,18 +8,18 @@ ms.localizationpriority: medium
 # Boot Parameters to Test Drivers for Multiple Processor Group Support
 
 
-Windows 7 and Windows Server 2008 R2 provide support for computers with more than 64 processors. This support is made possible by introducing [Processor groups](https://go.microsoft.com/fwlink/p/?linkid=155063). For testing purposes, you can configure any computer that has multiple logical processors to have multiple processor groups by limiting the group size. This means you can test drivers and components for multiple processor group compatibility on computers that have 64 or fewer logical processors.
+Windows 7 and Windows Server 2008 R2 provide support for computers with more than 64 processors. This support is made possible by introducing [Processor groups](/windows/win32/procthread/processor-groups). For testing purposes, you can configure any computer that has multiple logical processors to have multiple processor groups by limiting the group size. This means you can test drivers and components for multiple processor group compatibility on computers that have 64 or fewer logical processors.
 
 **Note**   The concept of *processor groups*, introduced with Windows 7, allows existing APIs and DDIs to continue to work on computers with more than 64 logical processors. Typically, a group's processors are represented by an affinity mask, which is 64 bits long. Any computer with more than 64 logical processors will necessarily have more than one group.
 When a process is created, the process is assigned to a specific group. By default, threads of the process can run on all logical processors of the same group, although the thread affinity can be explicitly changed. Calls to any API or DDI that takes an affinity mask or processor number as an argument, but not a group number, is limited to affecting or reporting on those processors in the calling thread's group. The same is true of APIs or DDIs that return an affinity mask or processor number, like **GetSystemInfo**.
 
-Starting with Windows 7, an application or driver can make use of functions that extend the legacy APIs. These new group-aware functions accept a group number argument to unambiguously qualify a processor number or affinity mask, and therefore can manipulate processors outside of the calling thread's group. The interaction between drivers and components running in different groups within a computer introduces the potential for bugs when legacy APIs or DDIs are involved. You can use the legacy non-group-aware APIs on Windows 7 and Windows Server 2008 R2. However, driver requirements are more stringent. For functional correctness of drivers on computers that have more than one processor group, you must replace any DDI that either accepts a processor number or mask as a parameter without an accompanying processor group or returns a processor number or mask without an accompanying processor group. These legacy non-group-aware DDIs can perform erratically on a computer that has multiple process groups because the inferred group may be different than what the calling thread intended. Therefore, drivers that use these legacy DDIs and are targeted for Windows Server 2008 R2 must be updated to use the new extended versions of the interfaces. Drivers that do not call any functions that use processor affinity masks or processor numbers will operate correctly, regardless of the number of processors. Drivers that call the new DDIs can run on previous versions of Windows by including the procgrp.h header, calling [**WdmlibProcgrpInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/procgrp/nf-procgrp-wdmlibprocgrpinitialize), and linking against the [Processor Group Compatibility Library](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) (procgrp.lib).
+Starting with Windows 7, an application or driver can make use of functions that extend the legacy APIs. These new group-aware functions accept a group number argument to unambiguously qualify a processor number or affinity mask, and therefore can manipulate processors outside of the calling thread's group. The interaction between drivers and components running in different groups within a computer introduces the potential for bugs when legacy APIs or DDIs are involved. You can use the legacy non-group-aware APIs on Windows 7 and Windows Server 2008 R2. However, driver requirements are more stringent. For functional correctness of drivers on computers that have more than one processor group, you must replace any DDI that either accepts a processor number or mask as a parameter without an accompanying processor group or returns a processor number or mask without an accompanying processor group. These legacy non-group-aware DDIs can perform erratically on a computer that has multiple process groups because the inferred group may be different than what the calling thread intended. Therefore, drivers that use these legacy DDIs and are targeted for Windows Server 2008 R2 must be updated to use the new extended versions of the interfaces. Drivers that do not call any functions that use processor affinity masks or processor numbers will operate correctly, regardless of the number of processors. Drivers that call the new DDIs can run on previous versions of Windows by including the procgrp.h header, calling [**WdmlibProcgrpInitialize**](/windows-hardware/drivers/ddi/procgrp/nf-procgrp-wdmlibprocgrpinitialize), and linking against the [Processor Group Compatibility Library](/windows-hardware/drivers/ddi/procgrp) (procgrp.lib).
 
-For more information on the new group-aware APIs and DDIs, download the white paper [Supporting System that Have More than 64 Logical Processors: Guideline for Developers](https://go.microsoft.com/fwlink/p/?linkid=147914).
+For more information on the new group-aware APIs and DDIs, download the white paper [Supporting Systems that Have More than 64 Logical Processors: Guidelines for Developers](https://download.microsoft.com/download/a/d/f/adf1347d-08dc-41a4-9084-623b1194d4b2/MoreThan64proc.docx).
 
  
 
-To help identify potential processor group-related problems in drivers and components, you can use the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) options. The two BCD boot configuration settings, **groupsize** and **maxgroup**, can configure any computer that has multiple logical processors to support multiple processor groups. The **groupaware** option modifies the behavior of certain DDIs and manipulates the group environment for testing purposes.
+To help identify potential processor group-related problems in drivers and components, you can use the [**BCDEdit /set**](./bcdedit--set.md) options. The two BCD boot configuration settings, **groupsize** and **maxgroup**, can configure any computer that has multiple logical processors to support multiple processor groups. The **groupaware** option modifies the behavior of certain DDIs and manipulates the group environment for testing purposes.
 
 ### <span id="create_multiple_processor_groups_by_changing_the_group_size"></span><span id="CREATE_MULTIPLE_PROCESSOR_GROUPS_BY_CHANGING_THE_GROUP_SIZE"></span>Create Multiple Processor Groups by Changing the Group Size
 
@@ -30,7 +29,7 @@ The **groupsize** option specifies the maximum number of logical processors in a
 
  
 
-To create multiple processor groups, run [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) in an elevated Command Prompt window and specify a new *maxsize* value for **groupsize** that is less than the total number of logical processors. Note that the group size setting is for testing and you should not configure shipping systems with this setting. The *maxsize* value can be set to any power of 2 between 1 and 64 inclusive. The command uses the following syntax:
+To create multiple processor groups, run [**BCDEdit /set**](./bcdedit--set.md) in an elevated Command Prompt window and specify a new *maxsize* value for **groupsize** that is less than the total number of logical processors. Note that the group size setting is for testing and you should not configure shipping systems with this setting. The *maxsize* value can be set to any power of 2 between 1 and 64 inclusive. The command uses the following syntax:
 
 ```
 bcdedit.exe /set groupsize maxsize
@@ -72,7 +71,7 @@ This command is the equivalent of setting **groupsize** to 64.
 
 The **maxgroup** option is another way to create processor groups on a computer with multiple logical processors and NUMA nodes. The **maxgroup** boot option has no effect on non-NUMA computers.
 
-To maximize the number of groups, run the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command in an elevated Command Prompt window. The command uses the following syntax:
+To maximize the number of groups, run the [**BCDEdit /set**](./bcdedit--set.md) command in an elevated Command Prompt window. The command uses the following syntax:
 
 ```
 bcdedit.exe /set maxgroup on
@@ -104,7 +103,7 @@ Windows 7 and Windows Server 2008 R2 have introduced a new BCD option (**groupaw
 
 When the **groupaware** boot option is set, the operating system ensures that processes are started in a group other than group 0. This increases the chances of cross-group interaction between drivers and components. The option also modifies the behavior of the legacy functions that are not group-aware, **KeSetTargetProcessorDpc**, **KeSetSystemAffinityThreadEx**, and **KeRevertToUserAffinityThreadEx**, so that they always operate on the highest numbered group that contains active logical processors. Drivers that call any of these legacy functions should be changed to call their group-aware counterparts (**KeSetTargetProcessorDpcEx**, **KeSetSystemGroupAffinityThread**, and **KeRevertToUserGroupAffinityThread**),
 
-To test for compatibility, use the following [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command.
+To test for compatibility, use the following [**BCDEdit /set**](./bcdedit--set.md) command.
 
 ```
 bcdedit.exe /set groupaware on
@@ -146,10 +145,4 @@ bcdedit.exe /set groupaware off
 ```
 
  
-
- 
-
-
-
-
 

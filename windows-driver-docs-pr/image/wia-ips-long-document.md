@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_LONG\_DOCUMENT
 description: The WIA\_IPS\_LONG\_DOCUMENT property is used by the WIA minidriver to report whether long document scanning is supported and by the WIA client application to enable this feature. The WIA minidriver creates and maintains this property.
-ms.assetid: FEFB77EE-8377-406C-A244-84E1BEF57808
 keywords: ["WIA_IPS_LONG_DOCUMENT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_LONG\_DOCUMENT** property.
 
@@ -65,8 +63,7 @@ The following table describes the valid values for the **WIA\_IPS\_LONG\_DOCUMEN
 
 This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

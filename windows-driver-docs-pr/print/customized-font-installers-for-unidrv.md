@@ -1,7 +1,6 @@
 ---
 title: Customized Font Installers for Unidrv
 description: Customized Font Installers for Unidrv
-ms.assetid: d753368d-b1c8-454e-a02b-131dc778e723
 keywords:
 - printer driver customizing WDK , installing components
 - customizing printer drivers WDK , installing components
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-Vendor-supplied font installation software is required for cartridge fonts that are not described by font cartridge file. These fonts must be described using [Unidrv font format files](customized-font-management.md#ddk-unidrv-font-format-files-gg) (.uff files). Creating .uff files is the responsibility of vendor-supplied font installers.
+Vendor-supplied font installation software is required for cartridge fonts that are not described by [font cartridge](font-cartridges.md) entries in a printer's *GPD* file. These fonts must be described using [Unidrv font format files](customized-font-management.md#ddk-unidrv-font-format-files-gg) (.uff files). Creating .uff files is the responsibility of vendor-supplied font installers.
 
 Vendor-supplied font installers should also provide support for downloadable *PCL* soft fonts.
 
@@ -29,9 +28,9 @@ The two techniques to create a customized font installer are as follows:
 
     This plug-in must implement the following COM interface methods:
 
-    [**IPrintOemUI::FontInstallerDlgProc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui-fontinstallerdlgproc)
+    [**IPrintOemUI::FontInstallerDlgProc**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-fontinstallerdlgproc)
 
-    [**IPrintOemUI::UpdateExternalFonts**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui-updateexternalfonts)
+    [**IPrintOemUI::UpdateExternalFonts**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-updateexternalfonts)
 
 -   Supply a separate executable file
 
@@ -44,9 +43,4 @@ Unidrv uses the following algorithm for locating a font installer:
 2.  If an installer executable file is not available, Unidrv enables selection of font installation operations from the printer's property sheet. Unidrv determines if a user interface plug-in has been installed. If so, its font installation methods are called. If a user interface plug-in has not been installed, or if its font installation methods return E\_NOTIMPL, the driver uses its own fault installer.
 
  
-
- 
-
-
-
 

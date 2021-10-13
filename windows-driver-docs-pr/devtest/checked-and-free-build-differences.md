@@ -1,12 +1,11 @@
 ---
 title: Checked and Free Build Differences
 description: There are two distinct builds of the NT-based operating systems that are available free (retail) and checked (debug). There is a third option, called a partial checked build, that combines the elements of the two.
-ms.assetid: 43aebfdb-2605-485c-a3a4-93e03b33aeca
 keywords:
 - checked builds WDK , vs. free builds
 - free builds WDK
 - retail builds WDK
-ms.date: 09/26/2019
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
@@ -14,9 +13,9 @@ ms.localizationpriority: medium
 
 There are two distinct builds of the NT-based operating systems that are available: free (retail) and checked (debug). There is a third option, *called a partial checked build*, that combines the elements of the two.
 
-- [Differences between the checked and free builds](#differences-between-the-checked-and-free-builds)
-- [Where to find a checked build of Windows](#where-to-find-a-checked-build-of-windows)
-- [When to use the checked build or partial checked build](#when-to-use-the-checked-build-or-partial-checked-build)
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 ## Differences between the checked and free builds
 

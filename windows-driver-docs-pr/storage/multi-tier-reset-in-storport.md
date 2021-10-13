@@ -1,7 +1,6 @@
 ---
 title: Multi-Tier Reset in Storport
 description: Multi-Tier Reset in Storport
-ms.assetid: 11c717b9-5154-43dd-b357-ff093cabec4b
 keywords:
 - Storport drivers WDK , errors
 - errors WDK Storport
@@ -21,12 +20,7 @@ When possible, the Storport driver and related higher-level drivers attempt to r
 
 To address the more complex requirements of high performance buses, Storport implements a multitier reset operation that allows a greater variety of reset options. There are two types of reset that are sent via SRBs that can be requested, instead of one:
 
-Finally, the bus reset operation is effected through a synchronous callback routine, [**HwStorResetBus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_reset_bus).
+Finally, the bus reset operation is effected through a synchronous callback routine, [**HwStorResetBus**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_reset_bus).
 
  
-
- 
-
-
-
 

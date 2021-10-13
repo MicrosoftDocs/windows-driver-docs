@@ -1,20 +1,19 @@
 ---
 title: Storport's Interface with Storport Miniport Drivers
 description: Storport's Interface with Storport Miniport Drivers
-ms.assetid: 8e09d6a6-7e4f-44fc-a2b0-5f21b4ac0593
 ms.date: 06/18/2019
 ms.localizationpriority: medium
 ---
 
 # Storport's Interface with Storport Miniport Drivers
 
-Communication between the Storport driver and the Storport miniport drivers takes place by means of SCSI request blocks (SRBs) and miniport driver callback routines. For a detailed discussion of the Storport miniport driver callback routines, see [Storport Miniport Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-driver-routines).
+Communication between the Storport driver and the Storport miniport drivers takes place by means of SCSI request blocks (SRBs) and miniport driver callback routines. For a detailed discussion of the Storport miniport driver callback routines, see [Storport Miniport Driver Routines](./storport-miniport-driver-routines.md).
 
-For an overview and definition of the individual SRB functions, SRB flags, and SRB status values, see [**SCSI_REQUEST_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_request_block).
+For an overview and definition of the individual SRB functions, SRB flags, and SRB status values, see [**SCSI_REQUEST_BLOCK**](/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block).
 
-For discussions about how miniport drivers must respond to each individual SRB function, see [**HwStorStartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_startio).
+For discussions about how miniport drivers must respond to each individual SRB function, see [**HwStorStartIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio).
 
-Storport forwards SRBs to Storport miniport drivers for asynchronous processing. Typically, the miniport driver will take some time to actually complete the request. Host bus adapters (HBAs) that support tagged queuing can queue requests internally and process them in the order that is indicated by the tags that Storport assigns to each request. The [**SCSI_REQUEST_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_startio) (SRB) structure contains two members that the Storport and miniport drivers use to specify how SRBs should be ordered in the host adapter's internal queue:
+Storport forwards SRBs to Storport miniport drivers for asynchronous processing. Typically, the miniport driver will take some time to actually complete the request. Host bus adapters (HBAs) that support tagged queuing can queue requests internally and process them in the order that is indicated by the tags that Storport assigns to each request. The [**SCSI_REQUEST_BLOCK**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio) (SRB) structure contains two members that the Storport and miniport drivers use to specify how SRBs should be ordered in the host adapter's internal queue:
 
 * **QueueTag**: Storport assigns a count, or *"tag"* value, to the **QueuedTag** member of each SRB. This tag indicates the order in which the adapter should process the packets. The tag values also allow Storport to track which SRBs are still outstanding, which have completed successfully, and which have timed out.
 

@@ -1,7 +1,6 @@
 ---
 title: DirectX VA Operations
 description: DirectX VA Operations
-ms.assetid: 101bde49-aa6c-4058-bb63-a1ae75e1c6f0
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , operations
 - Video Acceleration WDK DirectX , operations

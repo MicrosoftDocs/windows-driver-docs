@@ -1,30 +1,23 @@
 ---
 title: Referencing Contexts
 description: Referencing Contexts
-ms.assetid: 9ac3aedb-e057-4e19-9de5-709311072b09
 keywords:
 - contexts WDK file system minifilter , referencing
 - referencing contexts
-ms.date: 04/20/2017
+ms.date: 01/22/2021
 ms.localizationpriority: medium
 ---
 
 # Referencing Contexts
 
+The filter manager uses reference counting to manage the lifetime of a minifilter context. A reference count is a number indicating the state of a context.
 
-## <span id="ddk_registering_the_minifilter_if"></span><span id="DDK_REGISTERING_THE_MINIFILTER_IF"></span>
+Whenever a context is successfully created, the reference count of the context is initialized to one (this is called the initial reference to the context).
 
+Whenever a context is referenced, for example by a successful context [set](setting-contexts.md) or [get](getting-contexts.md), the reference count of the context is incremented by one.
 
-The filter manager uses reference counting to manage the lifetime of a minifilter driver context. A reference count is a number indicating the state of a context. Whenever a context is created, the reference count of the context is initialized to one (this is called the initial reference to the context). Whenever a context is referenced by a system component, the reference count of the context is incremented by one. When a context is no longer needed, its reference count is decremented. A positive reference count means that the context is usable. When the reference count becomes zero, the context is unusable, and the filter manager eventually frees it.
+When a context is no longer needed, its reference count must be decremented. A positive reference count means that the context is usable. When the reference count becomes zero, the context is unusable, and the filter manager eventually frees it.
 
-The initial reference to the context is typically released when the object is torn down. However, if a minifilter driver must remove a context from an object, the minifilter driver must somehow release that initial reference to the context. To safely release that initial reference to the context, the minifilter driver calls [**FltDeleteContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltdeletecontext).
+The initial reference to the context is typically released when the object is torn down. However, if a minifilter must remove a context from an object, the minifilter must somehow release that initial reference to the context. To safely release that initial reference to the context, the minifilter driver calls [**FltDeleteContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletecontext).
 
-A minifilter driver can add its own reference to a context by calling [**FltReferenceContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreferencecontext) to increment the context's reference count. This added reference must eventually be removed by calling [**FltReleaseContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreleasecontext).
-
- 
-
- 
-
-
-
-
+A minifilter can add its own reference to a context by calling [**FltReferenceContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreferencecontext) to increment the context's reference count. This added reference must eventually be removed by calling [**FltReleaseContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontext).

@@ -1,7 +1,6 @@
 ---
 title: Force Pending I/O Requests
 description: Force Pending I/O Requests
-ms.assetid: 0255fc5c-0e75-4108-ba29-f1a61ce9b0dd
 keywords:
 - Force Pending I/O Requests option WDK Driver Verifier
 - STATUS_PENDING WDK Driver Verifier
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 # Force Pending I/O Requests
 
 
-The Force Pending I/O Requests option randomly returns STATUS\_PENDING in response to a driver's calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver). This option tests the driver's logic for responding to STATUS\_PENDING return values from **IoCallDriver**.
+The Force Pending I/O Requests option randomly returns STATUS\_PENDING in response to a driver's calls to [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver). This option tests the driver's logic for responding to STATUS\_PENDING return values from **IoCallDriver**.
 
 This option is supported only on Windows Vista and later versions of the Windows operating system.
 
@@ -22,23 +21,23 @@ This option is supported only on Windows Vista and later versions of the Windows
 
 ### <span id="why_use_force_pending_i_o_requests_"></span><span id="WHY_USE_FORCE_PENDING_I_O_REQUESTS_"></span>Why Use Force Pending I/O Requests?
 
-Higher-level drivers in a driver stack call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) to pass an IRP down to lower-level drivers in the driver stack. The driver dispatch routine in the lower-level driver that receives the IRP can either complete the IRP immediately or return STATUS\_PENDING and complete the IRP at a later time.
+Higher-level drivers in a driver stack call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to pass an IRP down to lower-level drivers in the driver stack. The driver dispatch routine in the lower-level driver that receives the IRP can either complete the IRP immediately or return STATUS\_PENDING and complete the IRP at a later time.
 
 Typically, the caller must be prepared to handle either outcome. However, because most dispatch routines handle the IRP immediately, the STATUS\_PENDING logic in the caller is not often exercised and serious logic errors might not be detected. The Force Pending I/O Requests option intercepts calls to **IoCallDriver** and returns STATUS\_PENDING to test the calling driver's infrequently used logic.
 
 ### <span id="when_do_you_use_force_pending_i_o_requests_"></span><span id="WHEN_DO_YOU_USE_FORCE_PENDING_I_O_REQUESTS_"></span>When do you use Force Pending I/O Requests?
 
-Before running this test, review the driver design and source code and confirm that the driver is intended to handle STATUS\_PENDING from all of its [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) calls.
+Before running this test, review the driver design and source code and confirm that the driver is intended to handle STATUS\_PENDING from all of its [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) calls.
 
 Many drivers are not designed to handle STATUS\_PENDING on all calls to **IoCallDriver**. They might be sending the IRP to a particular well-known driver that is guaranteed to complete the IRP immediately. Sending STATUS\_PENDING to a driver that does not handle it can cause driver and system crashes and memory corruption.
 
 ### <span id="how_should_drivers_handle_status_pending_"></span><span id="HOW_SHOULD_DRIVERS_HANDLE_STATUS_PENDING_"></span>How should drivers handle STATUS\_PENDING?
 
-The higher-level driver that calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) must handle a STATUS\_PENDING return value as follows:
+The higher-level driver that calls [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) must handle a STATUS\_PENDING return value as follows:
 
--   Before calling **IoCallDriver**, the driver must call [**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildsynchronousfsdrequest) to arrange for synchronous processing of the IRP.
+-   Before calling **IoCallDriver**, the driver must call [**IoBuildSynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest) to arrange for synchronous processing of the IRP.
 
--   If **IoCallDriver** returns STATUS\_PENDING, the driver must wait for the completion of the IRP by calling [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject) on the specified event.
+-   If **IoCallDriver** returns STATUS\_PENDING, the driver must wait for the completion of the IRP by calling [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) on the specified event.
 
 -   The driver must anticipate that the IRP might be freed before the I/O Manager signals the event.
 
@@ -46,7 +45,7 @@ The higher-level driver that calls [**IoCallDriver**](https://docs.microsoft.com
 
 ### <span id="which_errors_does_force_pending_i_o_request_detect_"></span><span id="WHICH_ERRORS_DOES_FORCE_PENDING_I_O_REQUEST_DETECT_"></span>Which Errors Does Force Pending I/O Request Detect?
 
-The Force Pending I/O Request option detects the following errors in the driver that calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) and receives a STATUS\_PENDING return value:
+The Force Pending I/O Request option detects the following errors in the driver that calls [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) and receives a STATUS\_PENDING return value:
 
 -   The driver does not call **IoBuildSynchronousFsdRequest** to arrange for synchronous processing.
 
@@ -60,7 +59,7 @@ The Force Pending I/O Request option detects the following errors in the driver 
 
 ### <span id="Force_Pending_I_O_Requests_Changes_Introduced_in_Windows_7"></span><span id="force_pending_i_o_requests_changes_introduced_in_windows_7"></span><span id="FORCE_PENDING_I_O_REQUESTS_CHANGES_INTRODUCED_IN_WINDOWS_7"></span>Force Pending I/O Requests Changes Introduced in Windows 7
 
-Starting in Windows 7, the Force Pending I/O Requests option is more effective at forcing the exercising of the STATUS\_PENDING code paths in verified drivers. In earlier Windows versions, Driver Verifier forced an IRP completion to be delayed only when the first [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) for that IRP executes. This means that the effectiveness of verifying Driver1 can be reduced by the behavior of Driver2 from the same device stack. Driver2 might wait synchronously for the completion before it returns from its dispatch routine to Driver1. The forced delay of the IRP completion occurs precisely before the I/O request unwinds back into the verified driver on the completion path. This means that the STATUS\_PENDING code path of the verified driver is really exercised and the verified driver perceives a delay in the completion.
+Starting in Windows 7, the Force Pending I/O Requests option is more effective at forcing the exercising of the STATUS\_PENDING code paths in verified drivers. In earlier Windows versions, Driver Verifier forced an IRP completion to be delayed only when the first [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) for that IRP executes. This means that the effectiveness of verifying Driver1 can be reduced by the behavior of Driver2 from the same device stack. Driver2 might wait synchronously for the completion before it returns from its dispatch routine to Driver1. The forced delay of the IRP completion occurs precisely before the I/O request unwinds back into the verified driver on the completion path. This means that the STATUS\_PENDING code path of the verified driver is really exercised and the verified driver perceives a delay in the completion.
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 
@@ -151,10 +150,4 @@ IRP: 8f84ef00 - forced pending from stack trace:
 The stack trace shows that *Acpi.sys* was trying to complete IRP 8f84ef00. Driver Verifier forced a deferred completion, so *Acpi.sys* returned STATUS\_PENDING to **pci!PciCallDownIrpStack**. If this call had caused a crash, the driver owner would need to review the source code for **pci!PciCallDownIrpStack** and revise it to handle the STATUS\_PENDING properly.
 
  
-
- 
-
-
-
-
 

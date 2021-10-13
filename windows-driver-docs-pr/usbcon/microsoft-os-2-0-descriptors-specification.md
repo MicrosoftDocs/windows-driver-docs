@@ -1,7 +1,6 @@
 ---
 title: Microsoft OS 2.0 Descriptors Specification
 description: Microsoft OS 2.0 Descriptors Specification
-ms.assetid: C5C5B14A-F39E-4A15-B8BC-615BD11FB630
 ms.date: 07/08/2019
 ms.localizationpriority: medium
 ---
@@ -19,16 +18,16 @@ This information applies to the following operating systems:
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><strong><br />
+<td><strong><br />
 Microsoft OS Descriptors Specification</strong><br />
 </td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><div style="font-size: 100%; border: thin inset; height: 400px; overflow: scroll; text-align: left; padding: 10px; background-color: white;">
+<td><div>
 <h3 id="microsoft-os-descriptor-specification-license-agreement">Microsoft OS Descriptor Specification License Agreement</h3>
 <p>This is a legal agreement (“Agreement”) between you (either an individual or single entity) (“You”), and Microsoft Corporation (“Microsoft”) for the Specification.  By downloading, copying or otherwise using the Specification, You agree to be bound by the terms of this Agreement.   </p>
 <p><strong>SECTION 1           DEFINITIONS.</strong></p>
@@ -54,7 +53,7 @@ Microsoft OS Descriptors Specification</strong><br />
 <p>Neither party may assign this Agreement without prior written approval of the other party.</p>
 </div>
 <p><br />
-<a href="http://download.microsoft.com/download/3/5/6/3563ED4A-F318-4B66-A181-AB1D8F6FD42D/MS_OS_2_0_desc.docx">I accept, Download</a></p></td>
+<a href="https://download.microsoft.com/download/3/5/6/3563ED4A-F318-4B66-A181-AB1D8F6FD42D/MS_OS_2_0_desc.docx">I accept, Download</a></p></td>
 </tr>
 </tbody>
 </table>

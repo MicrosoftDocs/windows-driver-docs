@@ -1,7 +1,6 @@
 ---
 title: RSS with Hardware Queuing
 description: RSS with Hardware Queuing
-ms.assetid: f37caef9-6d22-4d17-8628-0c3f93de470e
 keywords:
 - receive-side scaling WDK networking , hardware queuing
 - RSS WDK networking , hardware queuing
@@ -21,7 +20,7 @@ RSS with hardware queuing improves system performance relative to RSS with a sin
 
 The following figure illustrates RSS with NIC receive queuing.
 
-![diagram illustrating rss with nic receive queuing](images/rssqstack.png)
+![diagram illustrating rss with nic receive queuing.](images/rssqstack.png)
 
 In the figure, the dashed arrows represent an alternate path for the receive processing. RSS cannot control the CPU that receives the initial ISR call. The driver does not have to queue the data so it can immediately schedule the initial DPCs on the correct CPUs.
 
@@ -41,24 +40,18 @@ The following process repeats for each interrupt:
 
         The received buffers that the system handles in one interrupt are distributed between the CPUs.
 
-2.  NDIS calls the miniport driver's [*MiniportInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_isr) function (ISR) on a system-determined CPU.
+2.  NDIS calls the miniport driver's [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function (ISR) on a system-determined CPU.
 
 3.  The miniport driver requests NDIS to queue deferred procedure calls (DPCs) for each of the CPUs that have a non-empty queue.
 
     Note that all the DPCs must complete before the driver enables interrupts. Also, note that the ISR might be running on a CPU that has no buffers to process.
 
-4.  NDIS calls the [*MiniportInterruptDPC*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_interrupt_dpc) function for each queued DPC. The DPC on a given CPU:
+4.  NDIS calls the [*MiniportInterruptDPC*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_interrupt_dpc) function for each queued DPC. The DPC on a given CPU:
     1.  Builds receive descriptors for all of the received buffers in its queue and indicates the data up the driver stack.
 
         For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
 
-    2.  Enables the interrupts, if it is the last DPC to complete. This interrupt is complete and the process starts again. The driver must use an atomic operation to identify the last DPC to complete. For example, the driver can use the [**NdisInterlockedDecrement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisinterlockeddecrement) function to implement an atomic counter.
+    2.  Enables the interrupts, if it is the last DPC to complete. This interrupt is complete and the process starts again. The driver must use an atomic operation to identify the last DPC to complete. For example, the driver can use the [**NdisInterlockedDecrement**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisinterlockeddecrement) function to implement an atomic counter.
 
  
-
- 
-
-
-
-
 

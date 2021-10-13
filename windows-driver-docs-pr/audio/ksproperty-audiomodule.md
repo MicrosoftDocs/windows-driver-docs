@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOMODULE enumeration
 description: The KSPROPERTY\_AUDIOMODULE enumeration defines constants that are used by audio drivers to communicate information about partner defined audio modules.
-ms.assetid: 94873A4A-A40F-40A7-B7A2-B693A5253714
 keywords: ["KSPROPERTY_AUDIOMODULE enumeration Audio Devices"]
 topic_type:
 - apiref
@@ -20,10 +19,9 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_AUDIOMODULE enumeration defines constants that are used by audio drivers to communicate information about partner defined audio modules.
 
-For more information about audio modules, see [Implementing Audio Module Discovery](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication).
+For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum  { 
@@ -33,8 +31,7 @@ typedef enum  {
 } KSPROPERTY_AUDIOMODULE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="KSPROPERTY_AUDIOMODULE_DESCRIPTORS__"></span><span id="ksproperty_audiomodule_descriptors__"></span>**KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS**   
 Specifies the ID for the [**KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS**](ksproperty-audiomodule-descriptors.md) property.
@@ -45,13 +42,11 @@ Specifies the ID for the [**KSPROPERTY\_AUDIOMODULE\_COMMAND**](ksproperty-audio
 <span id="KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID"></span><span id="ksproperty_audiomodule_notification_device_id"></span>**KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID**  
 Specifies the ID for the [**KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID**](ksproperty-audiomodule-notification-device-id.md) property.
 
-Remarks
--------
+## Remarks
 
 All KS Property calls must be non-blocking because the hardware effects are part of the processing chain and should not wait.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,11 +75,4 @@ Requirements
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Implementing IAdapterPowerManagement
 description: Implementing IAdapterPowerManagement
-ms.assetid: 654b86a7-845c-415b-99e4-c7be92cb9b9c
 keywords:
 - IAdapterPowerManagement
 - adapter drivers WDK audio , power management
@@ -16,20 +15,15 @@ ms.localizationpriority: medium
 ## <span id="implementing_iadapterpowermanagement"></span><span id="IMPLEMENTING_IADAPTERPOWERMANAGEMENT"></span>
 
 
-When implementing the [IAdapterPowerManagement](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iadapterpowermanagement) interface for your driver, refer to the implementation of the **CAdapterCommon** class in the sample audio drivers in the Microsoft Windows Driver Kit (WDK). This class handles device interrupts and performs other functions that are common to all audio adapter drivers. Your adapter's **CAdapterCommon** class should inherit from the **IAdapterPowerManagement** interface and support this interface in its **NonDelegatingQueryInterface** method. (For details on nondelegating interfaces, see the description of the **INonDelegatingUnknown** interface.)
+When implementing the [IAdapterPowerManagement](/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpowermanagement) interface for your driver, refer to the implementation of the **CAdapterCommon** class in the sample audio drivers in the Microsoft Windows Driver Kit (WDK). This class handles device interrupts and performs other functions that are common to all audio adapter drivers. Your adapter's **CAdapterCommon** class should inherit from the **IAdapterPowerManagement** interface and support this interface in its **NonDelegatingQueryInterface** method. (For details on nondelegating interfaces, see the description of the **INonDelegatingUnknown** interface.)
 
-You can use the IMP\_IAdapterPowerManagement definition from header file Portcls.h to add the function declarations for the [**IAdapterPowerManagement::PowerChangeState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iadapterpowermanagement-powerchangestate), [**IAdapterPowerManagement::QueryPowerChangeState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iadapterpowermanagement-querypowerchangestate), and [**IAdapterPowerManagement::QueryDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iadapterpowermanagement-querydevicecapabilities) methods to your driver's **CAdapterCommon** class definition.
+You can use the IMP\_IAdapterPowerManagement definition from header file Portcls.h to add the function declarations for the [**IAdapterPowerManagement::PowerChangeState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iadapterpowermanagement-powerchangestate), [**IAdapterPowerManagement::QueryPowerChangeState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iadapterpowermanagement-querypowerchangestate), and [**IAdapterPowerManagement::QueryDeviceCapabilities**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iadapterpowermanagement-querydevicecapabilities) methods to your driver's **CAdapterCommon** class definition.
 
-During the PortCls system driver's call to an adapter's device-startup routine (see [Starting a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/starting-a-device)), the adapter should register its **IAdapterPowerManagement** interface with PortCls by calling [**PcRegisterAdapterPowerManagement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcregisteradapterpowermanagement). For a code example, see the **StartDevice** function in the Sb16 sample adapter driver in the WDK. The **PcRegisterAdapterPowerManagement** function's first parameter is an **IUnknown** pointer to the adapter driver's **CAdapterCommon** object. PortCls queries this object for its **IAdapterPowerManagement** interface.
+During the PortCls system driver's call to an adapter's device-startup routine (see [Starting a Device](../kernel/starting-a-device.md)), the adapter should register its **IAdapterPowerManagement** interface with PortCls by calling [**PcRegisterAdapterPowerManagement**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisteradapterpowermanagement). For a code example, see the **StartDevice** function in the Sysvad sample driver, which is discussed in [Sample Audio Drivers](sample-audio-drivers.md). The **PcRegisterAdapterPowerManagement** function's first parameter is an **IUnknown** pointer to the adapter driver's **CAdapterCommon** object. PortCls queries this object for its **IAdapterPowerManagement** interface.
 
-When PortCls calls the adapter driver's **IAdapterPowerManagement::PowerChangeState** method to change the device's power state, the adapter driver should cache the device's new power state in the adapter's **CAdapterCommon** object. During the **CAdapterCommon::Init** call (see the implementation in the WDK's sample adapter drivers), the driver should set the initial power state to PowerDeviceD0 (described in [DeviceState](https://docs.microsoft.com/windows-hardware/drivers/kernel/devicestate)) before returning from a successful initialization. The driver should write to the hardware only if it is known to be in an appropriate power state. In the Sb16 sample driver in the WDK, for example, the driver writes to the hardware only in the PowerDeviceD0 state.
+When PortCls calls the adapter driver's **IAdapterPowerManagement::PowerChangeState** method to change the device's power state, the adapter driver should cache the device's new power state in the adapter's **CAdapterCommon** object. During the **CAdapterCommon::Init** call (see the implementation in the WDK's sample adapter drivers), the driver should set the initial power state to PowerDeviceD0 (described in [DeviceState](../kernel/devicestate.md)) before returning from a successful initialization. The driver should write to the hardware only if it is known to be in an appropriate power state. 
 
 Before powering down in response to a **PowerChangeState** call, the adapter driver should place the audio outputs in a state that prevents speaker noise from occurring when the power switches off. For example, the shutdown process might include ramping the DAC outputs to zero, turning off the DACs, and muting the MIDI lines.
 
  
-
- 
-
-
-
 

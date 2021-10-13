@@ -1,7 +1,6 @@
 ---
-title: dflink
+title: dflink (WinDbg)
 description: The dflink extension displays a linked list in the forward direction.
-ms.assetid: b75a01f6-557c-4602-83fa-629e16ba8c5d
 keywords: ["dflink Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,8 +54,7 @@ Specifies a mask of bits to ignore in each pointer. Each **Flink** address is AN
 
  
 
-Remarks
--------
+## Remarks
 
 The **!dflink** extension traverses the **Flink** fields of the LIST\_ENTRY structure and displays up to four ULONGs at each address. To go in the other direction, use [**!dblink**](-dblink.md).
 

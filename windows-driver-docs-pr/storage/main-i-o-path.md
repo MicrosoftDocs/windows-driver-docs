@@ -1,7 +1,6 @@
 ---
 title: Main I/O Path
 description: Main I/O Path
-ms.assetid: 643842e4-a75e-4d86-a1f7-d1a4468b5e17
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

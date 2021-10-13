@@ -1,14 +1,13 @@
 ---
 title: MobileBroadbandInfo XML example
 description: MobileBroadbandInfo XML example
-ms.assetid: 605566a2-55d7-456c-8999-e3bb626527fd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # MobileBroadbandInfo XML example
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following XML document uses the [MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md) to specify the mobile broadband specific information for the service:
 
@@ -32,12 +31,3 @@ The following XML document uses the [MobileBroadbandInfo XML schema](mobilebroad
   </ProvisioningEngine>
 </MobileBroadbandInfo>
 ```
-
- 
-
- 
-
-
-
-
-

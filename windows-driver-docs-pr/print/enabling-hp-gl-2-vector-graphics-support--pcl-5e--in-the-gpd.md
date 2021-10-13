@@ -1,7 +1,6 @@
 ---
 title: Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
 description: Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
-ms.assetid: 2ca5a2fe-4c37-4b7f-bd9b-d41240f8843f
 keywords:
 - HP-GL/2 monochrome WDK Unidrv , enabling support
 - PCL-5e WDK Unidrv , enabling support

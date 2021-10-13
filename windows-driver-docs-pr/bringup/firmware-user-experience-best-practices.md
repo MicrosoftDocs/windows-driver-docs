@@ -1,38 +1,32 @@
 ---
 title: Firmware user experience (UX) best practices
-description: Firmware user experience (UX) best practices
-ms.date: 05/15/2018
+description: Provides information about firmware user experience (UX) best practices.
+ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---
 
-
 # Firmware user experience (UX) best practices
-
 
 A firmware update to a system can be important to the continued use of that machine. Microsoft wants to ensure that firmware updates are safely delivered, and installation is uninterrupted. To do this, we have recommended the following guidelines that are described in greater detail in the **Related resources** section.
 
-1.  Progress bar/indicator that the system is installing an update.
+1. Progress bar/indicator that the system is installing an update.
 
-2.  Windows Boot loader with **UpdateCapsule** function will provide a bitmap containing message for user.
+1. Windows Boot loader with **UpdateCapsule** function will provide a bitmap containing message for user.
 
-3.  UEFI check for AC Power, or sufficient battery life (RSOC) or fail out with error codes recorded in ESRT.
+1. UEFI check for AC Power, or sufficient battery life (RSOC) or fail out with error codes recorded in ESRT.
 
 The **Related resources** links contain the most recent information on firmware UX guidance.
 
 ## Related resources
 
-[Windows UEFI firmware update platform](https://docs.microsoft.com/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform)
+[Windows UEFI firmware update platform](./windows-uefi-firmware-update-platform.md)
 
-[Seamless crisis prevention and recovery](https://docs.microsoft.com/windows-hardware/drivers/bringup/seamless-crisis-prevention-and-recovery)
+[Seamless crisis prevention and recovery](./seamless-crisis-prevention-and-recovery.md)
 
-[User experience for UEFI firmware updates](https://docs.microsoft.com/windows-hardware/drivers/bringup/user-experience-for-uefi-firmware-updates)
+[User experience for UEFI firmware updates](./user-experience-for-uefi-firmware-updates.md)
 
-[Boot screen components](https://docs.microsoft.com/windows-hardware/drivers/bringup/boot-screen-components)
+[Boot screen components](./boot-screen-components.md)
 
-[ESRT table definition](https://docs.microsoft.com/windows-hardware/drivers/bringup/esrt-table-definition)
+[ESRT table definition](./esrt-table-definition.md)
 
-[Validating Windows UEFI Firmware Update Platform Functionality](https://docs.microsoft.com/windows-hardware/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality)
-
-
-
-
+[Validating Windows UEFI Firmware Update Platform Functionality](/windows-hardware/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality)

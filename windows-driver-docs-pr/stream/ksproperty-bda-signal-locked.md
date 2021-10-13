@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_LOCKED
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCKED to determine whether a signal can be locked.
-ms.assetid: 98023f83-2e90-4649-8e85-3e7b7f26b01d
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCKED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCKED to determine whether a signal can be
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
@@ -66,8 +64,7 @@ If an RF tuner node returns **TRUE**, a phase-lock-loop (PLL) lock is typically 
 
 If a demodulator node returns **TRUE**, a signal quality of at least 20% is indicated.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,16 +82,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**KSPROPERTY\_BDA\_SIGNAL\_QUALITY**](ksproperty-bda-signal-quality.md)
 
  
-
- 
-
-
-
-
-
 

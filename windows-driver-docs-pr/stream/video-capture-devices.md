@@ -1,7 +1,6 @@
 ---
 title: Video Capture Devices
 description: Video Capture Devices
-ms.assetid: ed02e6c8-fd82-488b-a0dc-8e83a842bcc4
 keywords:
 - capturing video WDK AVStream
 ms.date: 04/20/2017
@@ -11,11 +10,11 @@ ms.localizationpriority: medium
 # Video Capture Devices
 
 
-This section describes how to create video capture minidrivers, which follow the Windows Driver Model (WDM) architecture. It assumes familiarity with concepts discussed in [Kernel Streaming](kernel-streaming.md). For information on creating a minidriver for audio-only devices, the [Audio devices Design Guide](https://docs.microsoft.com/windows-hardware/drivers/audio/index).
+This section describes how to create video capture minidrivers, which follow the Windows Driver Model (WDM) architecture. It assumes familiarity with concepts discussed in [Kernel Streaming](kernel-streaming.md). For information on creating a minidriver for audio-only devices, the [Audio devices Design Guide](../audio/index.md).
 
 With the integration of DVD, MPEG decoders, video decoders and tuners, video port extensions (VPEs), and audio codecs on single adapters, a unified driver model that supports all these devices and handles resource contention simplifies development efforts.
 
-The [AVStream](avstream-minidrivers-design-guide.md) and [Stream class](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index) interfaces both provide a framework that provide support for integrated devices. These interfaces support data transfer between kernel-mode drivers. These data transfers do not require a thread to transition to user mode, thereby avoiding a performance hit.
+The [AVStream](avstream-minidrivers-design-guide.md) and [Stream class](/windows-hardware/drivers/ddi/_stream/index) interfaces both provide a framework that provide support for integrated devices. These interfaces support data transfer between kernel-mode drivers. These data transfers do not require a thread to transition to user mode, thereby avoiding a performance hit.
 
 Both interfaces support a uniform streaming model for standard and custom data types. Microsoft defines property sets for most standard devices. Vendors can provide additional property sets if needed.
 
@@ -33,9 +32,4 @@ This section includes:
 [Implementing Video Capture Support](implementing-video-capture-support.md)
 
  
-
- 
-
-
-
 

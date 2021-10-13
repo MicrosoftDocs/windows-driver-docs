@@ -1,7 +1,6 @@
 ---
 title: Unloading a Callout Driver
 description: Unloading a Callout Driver
-ms.assetid: a8c1bb33-41f8-420c-a761-669864eb9444
 keywords:
 - Windows Filtering Platform callout drivers WDK , unloading
 - callout drivers WDK Windows Filtering Platform , unloading
@@ -15,11 +14,11 @@ ms.localizationpriority: medium
 
 To unload a callout driver, the operating system calls the callout driver's unload function. For more information about how to specify a callout driver's unload function, see [Specifying an Unload Function](specifying-an-unload-function.md).
 
-A callout driver's unload function guarantees that the callout driver's callouts are unregistered from the filter engine before the callout driver is unloaded from system memory. A callout driver calls either the [**FwpsCalloutUnregisterById0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpscalloutunregisterbyid0) function or the [**FwpsCalloutUnregisterByKey0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpscalloutunregisterbykey0) function to unregister a callout from the filter engine. A callout driver must not return from its unload function until after it has successfully unregistered all its callouts from the filter engine.
+A callout driver's unload function guarantees that the callout driver's callouts are unregistered from the filter engine before the callout driver is unloaded from system memory. A callout driver calls either the [**FwpsCalloutUnregisterById0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutunregisterbyid0) function or the [**FwpsCalloutUnregisterByKey0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutunregisterbykey0) function to unregister a callout from the filter engine. A callout driver must not return from its unload function until after it has successfully unregistered all its callouts from the filter engine.
 
-After a callout driver has unregistered all its callouts from the filter engine, it must delete the device object that it created before it originally registered its callouts. A callout driver that is based on the Windows Driver Model (WDM) calls the [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iodeletedevice) function to delete the device object. A callout driver that is based on the Windows Driver Frameworks (WDF) calls the [**WdfObjectDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete) function to delete the framework device object.
+After a callout driver has unregistered all its callouts from the filter engine, it must delete the device object that it created before it originally registered its callouts. A callout driver that is based on the Windows Driver Model (WDM) calls the [**IoDeleteDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice) function to delete the device object. A callout driver that is based on the Windows Driver Frameworks (WDF) calls the [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) function to delete the framework device object.
 
-A callout driver must also destroy any packet injection handle that it previously created by calling the [**FwpsInjectionHandleDestroy0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsinjectionhandledestroy0) function before it returns from its unload function.
+A callout driver must also destroy any packet injection handle that it previously created by calling the [**FwpsInjectionHandleDestroy0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectionhandledestroy0) function before it returns from its unload function.
 
 For example:
 
@@ -113,10 +112,4 @@ VOID
 ```
 
  
-
- 
-
-
-
-
 

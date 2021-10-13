@@ -1,7 +1,6 @@
 ---
 title: Forwarding Extensions
 description: Forwarding Extensions
-ms.assetid: 7ABBB3F3-66F5-4651-8A5A-94940F3FD82D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,7 +32,7 @@ A forwarding extension can do the following with packets that were obtained on t
 
 -   It can filter packet traffic and enforce custom and standard port or switch policies for packet delivery through the extensible switch. When the forwarding extension filters packets in the ingress data path, it applies filtering rules based on the source port as well as the destination ports that the extension assigns to the packet.
 
-    Custom policies are defined by the independent software vendor (ISV). Standard policies are defined by the extensible switch interface. Property settings for these types of policies are managed through the Hyper-V WMI management layer. The forwarding extension is configured with these property settings through an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-update) and [OID\_SWITCH\_PROPERTY\_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-update).
+    Custom policies are defined by the independent software vendor (ISV). Standard policies are defined by the extensible switch interface. Property settings for these types of policies are managed through the Hyper-V WMI management layer. The forwarding extension is configured with these property settings through an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](./oid-switch-port-property-update.md) and [OID\_SWITCH\_PROPERTY\_UPDATE](./oid-switch-property-update.md).
 
     For more information on extensible switch policies, see [Managing Hyper-V Extensible Switch Policies](managing-hyper-v-extensible-switch-extensibility-policies.md).
 
@@ -73,13 +72,13 @@ Besides inspecting OID requests and NDIS status indications, a forwarding extens
 
     For more information about teaming providers, see [Teaming Provider Extensions](teaming-provider-extensions.md).
 
--   It can veto the creation of an extensible switch port or network adapter connection by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the forwarding extension can veto a port creation request by returning STATUS\_DATA\_NOT\_ACCEPTED when the driver receives an OID set request of [OID\_SWITCH\_PORT\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-create).
+-   It can veto the creation of an extensible switch port or network adapter connection by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the forwarding extension can veto a port creation request by returning STATUS\_DATA\_NOT\_ACCEPTED when the driver receives an OID set request of [OID\_SWITCH\_PORT\_CREATE](./oid-switch-port-create.md).
 
     **Note**  Forwarding extensions do not create or delete ports or network adapter connections. The protocol edge of the extensible switch issues OIDs to notify the underlying extensions about the creation or deletion of ports or network adapter connections. For more information, see [Hyper-V Extensible Switch Port and Network Adapter States](hyper-v-extensible-switch-port-and-network-adapter-states.md).
 
      
 
--   It can veto the addition or update of an extensible switch or port policy by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the forwarding extension can veto the addition of a port policy by returning STATUS\_DATA\_NOT\_ACCEPTED when the driver receives an OID set request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-add).
+-   It can veto the addition or update of an extensible switch or port policy by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the forwarding extension can veto the addition of a port policy by returning STATUS\_DATA\_NOT\_ACCEPTED when the driver receives an OID set request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](./oid-switch-port-property-add.md).
 
     For more information about extensible switch policies, see [Managing Hyper-V Extensible Switch Policies](managing-hyper-v-extensible-switch-extensibility-policies.md).
 
@@ -87,7 +86,7 @@ A forwarding extension has the following requirements:
 
 -   A forwarding extension must be developed as an NDIS filter driver that supports the extensible switch interface.
 
-    For more information about filter drivers, see [NDIS Filter Drivers](ndis-filter-drivers2.md).
+    For more information about filter drivers, see [NDIS Filter Drivers](./roadmap-for-developing-ndis-filter-drivers.md).
 
     For more information on how to write a forwarding extension, see [Writing Hyper-V Extensible Switch Extensions](writing-hyper-v-extensible-switch-extensions.md).
 
@@ -118,11 +117,4 @@ For more information about forwarding extensions, see the following pages:
 [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
-title: C28156
+title: C28156 warning
 description: Warning C28156 The actual IRQL is inconsistent with the required IRQL.
-ms.assetid: dc9c108f-adf1-4364-9d2b-711c8c9db939
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

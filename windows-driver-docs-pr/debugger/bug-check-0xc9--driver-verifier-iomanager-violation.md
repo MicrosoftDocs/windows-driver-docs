@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION
 description: The DRIVER_VERIFIER_IOMANAGER_VIOLATION bug check has a value of 0x000000C9. This is the bug check code for all Driver Verifier I/O Verification violations.
-ms.assetid: dcafb0df-cbc1-44f4-8ec4-976df0842f0c
 keywords: ["Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION", "DRIVER_VERIFIER_IOMANAGER_VIOLATION"]
 ms.date: 05/07/2019
 topic_type:
@@ -702,7 +701,7 @@ The following table lists those **I/O Verification** errors that can appear.
 </tbody>
 </table>
 
-The following table lists additional **I/O Verification** errors that can appear. These errors appear when **Enhanced I/O Verification** is activated. For more information, see [Enhanced I/O Verification](https://docs.microsoft.com/windows-hardware/drivers/devtest/enhanced-i-o-verification).
+The following table lists additional **I/O Verification** errors that can appear. These errors appear when **Enhanced I/O Verification** is activated. For more information, see [Enhanced I/O Verification](../devtest/enhanced-i-o-verification.md).
 
 <table>
 <colgroup>
@@ -944,16 +943,14 @@ The following table lists additional **I/O Verification** errors that can appear
 </tbody>
 </table>
 
-Cause
------
+## Cause
 
 See the description of each code in the Parameters section for a description of the cause.
 
-Resolution
-----------
+## Resolution
 
-This bug check can only occur when Driver Verifier has been instructed to monitor one or more drivers. If you did not intend to use Driver Verifier, you should deactivate it. For more information, see "How to control Driver Verifier" in [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier). You might consider updating or removing the driver which caused this problem as well.
+This bug check can only occur when Driver Verifier has been instructed to monitor one or more drivers. If you did not intend to use Driver Verifier, you should deactivate it. For more information, see "How to control Driver Verifier" in [Driver Verifier](../devtest/driver-verifier.md). You might consider updating or removing the driver which caused this problem as well.
 
 If you are the driver developer, use the information obtained through this bug check to fix the bugs in your code.
 
-For full details on Driver Verifier, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+For full details on Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).

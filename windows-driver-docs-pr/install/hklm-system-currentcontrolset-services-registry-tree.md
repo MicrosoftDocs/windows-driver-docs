@@ -1,8 +1,7 @@
 ---
 title: HKLM\SYSTEM\CurrentControlSet\Services Registry Tree
 description: HKLM\SYSTEM\CurrentControlSet\Services registry tree stores information about each service on the system.
-ms.assetid: c966b029-8171-4db7-9fbb-3a4222ff184b
-ms.date: 04/20/2017
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-The **HKLM\\SYSTEM\\CurrentControlSet\\Services** registry tree stores information about each service on the system. Each driver has a key of the form **HKLM\\SYSTEM\\CurrentControlSet\\Services\\**<em>DriverName</em>. The PnP manager passes this path of a driver in the *RegistryPath* parameter when it calls the driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine. A driver can store global driver-defined data under the **Parameters** subkey of its key in the **Services** tree. Information that is stored under this key is available to the driver during its initialization.
+The **HKLM\\SYSTEM\\CurrentControlSet\\Services** registry tree stores information about each service on the system. Each driver has a key of the form **HKLM\\SYSTEM\\CurrentControlSet\\Services\\**<em>DriverName</em>. The PnP manager passes this path of a driver in the *RegistryPath* parameter when it calls the driver's [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine. A driver can store global driver-defined data under the **Parameters** subkey of its key in the **Services** tree. Information that is stored under this key is available to the driver during its initialization.
 
 The following keys and value entries are of particular interest:
 
@@ -26,10 +25,4 @@ A key that is used to store driver-specific data. For some types of drivers, the
 A key that specifies information for optional performance monitoring. The values under this key specify the name of the driver's performance DLL and the names of certain exported functions in that DLL. You can add value entries to this subkey using **AddReg** entries in the driver's INF file.
 
  
-
- 
-
-
-
-
 

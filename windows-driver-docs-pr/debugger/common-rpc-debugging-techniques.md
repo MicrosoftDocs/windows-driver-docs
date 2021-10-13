@@ -1,7 +1,6 @@
 ---
 title: Common RPC Debugging Techniques
 description: Common RPC Debugging Techniques
-ms.assetid: 4439ba40-909d-4fa8-a96d-8ffaf90e22d9
 keywords: ["RPC debugging, common techniques"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

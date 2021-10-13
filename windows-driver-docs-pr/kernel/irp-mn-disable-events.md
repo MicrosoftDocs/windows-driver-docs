@@ -1,8 +1,7 @@
 ---
 title: IRP_MN_DISABLE_EVENTS
-description: Any WMI driver that registers one or more event blocks must handle this IRP.
+description: Learn about the 'IRP_MN_DISABLE_EVENTS' kernel-mode driver architecture. Any WMI driver that registers one or more event blocks must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 3187643b-27d7-4a6d-8fbe-4f8eb6c251ed
 keywords:
  - IRP_MN_DISABLE_EVENTS Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -11,16 +10,15 @@ ms.localizationpriority: medium
 # IRP\_MN\_DISABLE\_EVENTS
 
 
-Any WMI driver that registers one or more event blocks must handle this IRP. A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests).
+Any WMI driver that registers one or more event blocks must handle this IRP. A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
-If a driver calls [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_DISABLE\_EVENTS** request, WMI in turn calls that driver's [*DpWmiFunctionControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_function_control_callback) routine.
+If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_DISABLE\_EVENTS** request, WMI in turn calls that driver's [*DpWmiFunctionControl*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_function_control_callback) routine.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
-When Sent
----------
+
+## When Sent
 
 WMI sends this IRP to inform the driver that a data consumer has requested no further notification of an event.
 
@@ -41,7 +39,7 @@ None.
 ## I/O Status Block
 
 
-If the driver handles the IRP by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
+If the driver handles the IRP by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
 
 Otherwise, the driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as the following:
 
@@ -51,14 +49,13 @@ STATUS\_INVALID\_DEVICE\_REQUEST
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-Operation
----------
+## Operation
 
-A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests).
+A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
-If a driver handles WMI IRPs by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol), that routine calls the driver's [*DpWmiFunctionControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_function_control_callback) routine, or returns STATUS\_SUCCESS if the driver does not define the routine.
+If a driver handles WMI IRPs by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), that routine calls the driver's [*DpWmiFunctionControl*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_function_control_callback) routine, or returns STATUS\_SUCCESS if the driver does not define the routine.
 
-If a driver handles an **IRP\_MN\_DISABLE\_EVENTS** request itself, it should do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed to [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next-lower driver.
+If a driver handles an **IRP\_MN\_DISABLE\_EVENTS** request itself, it should do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed to [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next-lower driver.
 
 Before handling a request, the driver must determine whether **Parameters.WMI.DataPath** points to a GUID the driver supports. If not, the driver must fail the IRP and return STATUS\_WMI\_GUID\_NOT\_FOUND.
 
@@ -66,10 +63,9 @@ If the driver supports the event block, it disables the event for all instances 
 
 It is unnecessary for the driver to check whether events are already disabled for the event block because WMI sends a single disable request for that event block when the last data consumer disables the event. WMI will not send another disable request without an intervening request to enable.
 
-For details about defining event blocks, see [Designing WMI Data and Event Blocks](https://docs.microsoft.com/windows-hardware/drivers/kernel/designing-wmi-data-and-event-blocks).
+For details about defining event blocks, see [Designing WMI Data and Event Blocks](./designing-wmi-data-and-event-blocks.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,20 +83,15 @@ Requirements
 ## See also
 
 
-[*DpWmiFunctionControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_function_control_callback)
+[*DpWmiFunctionControl*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_function_control_callback)
 
-[**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiregistrationcontrol)
+[**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol)
 
 [**IRP\_MN\_ENABLE\_EVENTS**](irp-mn-enable-events.md)
 
-[**WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/ns-wmilib-_wmilib_context)
+[**WMILIB\_CONTEXT**](/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context)
 
-[**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol)
-
- 
+[**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
 
  
-
-
-
 

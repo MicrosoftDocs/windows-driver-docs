@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS
 description: The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS property specifies the mix-level capabilities of a supermixer node (KSNODETYPE\_SUPERMIX). A single get-property request retrieves information for all combinations of input and output channels.
-ms.assetid: ab7a5dfb-8975-41bb-9347-953406701804
 keywords: ["KSPROPERTY_AUDIO_MIX_LEVEL_CAPS Audio Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS property specifies the mix-level capabil
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_mixcap_table" data-raw-source="[&lt;strong&gt;KSAUDIO_MIXCAP_TABLE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_mixcap_table)"><strong>KSAUDIO_MIXCAP_TABLE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixcap_table" data-raw-source="[&lt;strong&gt;KSAUDIO_MIXCAP_TABLE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixcap_table)"><strong>KSAUDIO_MIXCAP_TABLE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -61,8 +60,7 @@ The property value (operation data) is a structure of type KSAUDIO\_MIXCAP\_TABL
 
 A KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,18 +78,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
-[**KSAUDIO\_MIXCAP\_TABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_mixcap_table)
+[**KSAUDIO\_MIXCAP\_TABLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixcap_table)
 
 [**KSNODETYPE\_SUPERMIX**](ksnodetype-supermix.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Example 12 Using Page Heap Verification to Find a Bug
 description: Example 12 Using Page Heap Verification to Find a Bug
-ms.assetid: aa3f5c53-8522-48be-a3cd-49b740803fe3
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
@@ -149,7 +148,7 @@ pheap-buggy!TestCorruptAfterEnd+1f:
 
 With full page heap verification enabled, the debugger breaks at an access violation. To find the precise location of the access violation, turn on line number dumping and display the call stack trace.
 
-The numbered call stack trace appears as follows: The line displaying the problem appears in bold text.
+The numbered call stack trace appears as follows: 
 
 ```console
 ChildEBP RetAddr  Args to Child

@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_COMMIT\_CHANGES
 description: Clients use KSMETHOD\_BDA\_COMMIT\_CHANGES to commit a list of requested changes.
-ms.assetid: f6572a4e-2328-4157-80f7-110e0fe58a4f
 keywords: ["KSMETHOD_BDA_COMMIT_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,13 +30,11 @@ KSMETHOD with **Flags** member set to KSMETHOD\_TYPE\_NONE.
 
 None
 
-Remarks
--------
+## Remarks
 
 When the network provider makes a KSMETHOD\_BDA\_COMMIT\_CHANGES request, the list of changes are committed on the underlying filter, at which point the filter resets its state and a new cycle can begin.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -55,16 +52,7 @@ Requirements
 ## See also
 
 
-[**BdaCommitChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdacommitchanges)
+[**BdaCommitChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacommitchanges)
 
-[**KSMETHOD**](https://docs.microsoft.com/previous-versions/ff563398(v=vs.85))
-
- 
-
- 
-
-
-
-
-
+[**KSMETHOD**](./ksmethod-structure.md)
 

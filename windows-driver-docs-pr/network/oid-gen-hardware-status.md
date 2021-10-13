@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_HARDWARE_STATUS
 description: As a query, the OID_GEN_HARDWARE_STATUS OID specifies the current hardware status of the underlying NIC.
-ms.assetid: beab6f7a-b064-446f-8008-ef8db9d7c080
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_HARDWARE_STATUS Network Drivers Starting with Windows Vista
@@ -30,8 +29,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 The OID\_GEN\_HARDWARE\_STATUS OID specifies the current hardware status of the underlying NIC as one of the following NDIS\_HARDWARE\_STATUS-type values:
 
@@ -50,8 +48,7 @@ Closing
 <a href="" id="ndishardwarestatusnotready"></a>**NdisHardwareStatusNotReady**  
 Not ready
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

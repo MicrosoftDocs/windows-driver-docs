@@ -1,7 +1,6 @@
 ---
 title: language XML Element
 description: language XML Element
-ms.assetid: 1fc6a3b4-379e-4fd3-b526-c4193e9e84c5
 keywords: ["language XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # language XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **language** XML element localizes and customizes the items that DPInst displays on its wizard pages.
 
@@ -88,7 +87,7 @@ The **language** XML element localizes and customizes the items that DPInst disp
 
 You can use a **language** element to localize and customize text, the icon, and bitmaps that DPInst displays on its wizard pages. The icon represents DPInst on the Microsoft Windows taskbar, and Windows desktop.
 
-DPInst also uses this icon for the entries that are added to **Programs and Features** in Control Panel. These entries represent the [driver packages](https://docs.microsoft.com/windows-hardware/drivers) that DPInst installs.
+DPInst also uses this icon for the entries that are added to **Programs and Features** in Control Panel. These entries represent the [driver packages](/windows-hardware/drivers) that DPInst installs.
 
 **Note**  In versions of Windows earlier than Windows Vista, DPInst added these entries to **Add or Remove Programs** in Control Panel.
 
@@ -143,11 +142,4 @@ If a **dpinstTitle** element is not specified, DPInst displays the default title
 [**welcomeTitle**](welcometitle-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

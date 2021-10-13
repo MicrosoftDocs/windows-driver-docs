@@ -1,7 +1,6 @@
 ---
 title: Filtering condition flags
 description: This section describes filtering condition flags.
-ms.assetid: a2493fc5-614f-47df-a818-cdec06dc9f4a
 keywords:
 - Filtering condition flags network drivers
 ms.date: 01/07/2019
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 The filtering condition flags are each represented by a bit field. These flags are defined as follows:
 
 > [!NOTE]
-> This topic contains filtering condition flags for kernel mode WFP callout drivers. For information about filtering condition flags that are shared between user mode and kernel mode, or if you are looking for information about a flag that isn't listed here, see the [Filtering Condition Flags](https://docs.microsoft.com/windows/desktop/FWP/filtering-condition-flags-) topic in the Windows SDK documentation.
+> This topic contains filtering condition flags for kernel mode WFP callout drivers. For information about filtering condition flags that are shared between user mode and kernel mode, or if you are looking for information about a flag that isn't listed here, see the [Filtering Condition Flags](/windows/desktop/FWP/filtering-condition-flags-) topic in the Windows SDK documentation.
 
 <table>
 <tr>
@@ -178,7 +177,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00000020</p>
 </td>
 <td>
-<p>Indicates that the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver is an IP packet fragment.</p>
+<p>Indicates that the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver is an IP packet fragment.</p>
 <p>This flag is applicable at the following filtering layers:<dl>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V4</dd>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V6</dd>
@@ -194,7 +193,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00000040</p>
 </td>
 <td>
-<p>Indicates that the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver describes a linked list of packet
+<p>Indicates that the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver describes a linked list of packet
        fragments.</p>
 <p>This flag is applicable at the following filtering layers:<dl>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V4</dd>
@@ -281,7 +280,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00004000</p>
 </td>
 <td>
-<p>Indicates that the name of the peer machine that the application is expecting to connect to has been obtained by calling a function such as <a href="https://docs.microsoft.com/windows/desktop/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname"><b>WSASetSocketPeerTargetName</b></a> and not by using the caching heuristics.</p>
+<p>Indicates that the name of the peer machine that the application is expecting to connect to has been obtained by calling a function such as <a href="/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname"><b>WSASetSocketPeerTargetName</b></a> and not by using the caching heuristics.</p>
 <p>This flag is applicable at the following filtering layers in Windows Server 2008 R2, Windows 7, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V4</dd>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V6</dd>
@@ -306,7 +305,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00010000</p>
 </td>
 <td>
-<p>Indicates that a packet matches authenticated firewall policies. Only connections matching the "Allow the connection if it is secure" firewall rule option will have this flag set. For more information, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)">How to Enable Authenticated Firewall Bypass</a>.</p>
+<p>Indicates that a packet matches authenticated firewall policies. Only connections matching the "Allow the connection if it is secure" firewall rule option will have this flag set. For more information, see <a href="/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)">How to Enable Authenticated Firewall Bypass</a>.</p>
 <p>This flag is also applicable at the following filtering layers in Windows Server 2008, Windows Vista with SP1, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4</dd>
 <dd>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6</dd>
@@ -333,7 +332,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00020000</p>
 </td>
 <td>
-<p>This flag is set when the <a href="https://docs.microsoft.com/windows/desktop/WinSock/ipv6-protection-level">IPV6_PROTECTION_LEVEL</a> socket option is set on a previously authorized socket.</p>
+<p>This flag is set when the <a href="/windows/desktop/WinSock/ipv6-protection-level">IPV6_PROTECTION_LEVEL</a> socket option is set on a previously authorized socket.</p>
 <p>This flag is applicable at the following filtering layers:<dl>
 <dd>FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6</dd>
 <dd>FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6_DISCARD</dd>
@@ -468,7 +467,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x02000000</p>
 </td>
 <td>
-<p>Indicates that the current classification is being performed to honor the intention of a redirected Universal Windows app to connect to a specified host. Such a classification will contain the same classifiable field values as if the app were never redirected. The flag also indicates that a future classification will be invoked to match the effective redirected destination. If the app is redirected to a proxy service for inspection, it also means a future classification will be invoked on the proxy connection. Callout drivers should generally allow this classification.</p>
+<p>Indicates that the current classification is being performed to honor the intention of a redirected Universal Windows app to connect to a specified host. Such a classification will contain the same classifiable field values as if the app were never redirected. The flag also indicates that a future classification will be invoked to match the effective redirected destination. If the app is redirected to a proxy service for inspection, it also means a future classification will be invoked on the proxy connection. Callouts should use FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_ORIGINAL_APP_ID to find the appid of the (original) redirected connection.</p>
 <p>This flag is applicable at the following filtering layers in Windows Server 2012, Windows 8, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V4</dd>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V6</dd>
@@ -479,4 +478,3 @@ The filtering condition flags are each represented by a bit field. These flags a
 </td>
 </tr>
 </table>
-

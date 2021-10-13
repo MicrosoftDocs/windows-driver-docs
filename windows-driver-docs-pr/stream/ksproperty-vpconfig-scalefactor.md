@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_SCALEFACTOR
 description: The KSPROPERTY\_VPCONFIG\_SCALEFACTOR property sets the video port dimensions to user-defined specifications.
-ms.assetid: 0fbfedc8-9dff-4c7c-910f-507b84614e47
 keywords: ["KSPROPERTY_VPCONFIG_SCALEFACTOR Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_VPCONFIG\_SCALEFACTOR property sets the video port dimensions to
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_amvpsize" data-raw-source="[&lt;strong&gt;KS_AMVPSIZE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_amvpsize)"><strong>KS_AMVPSIZE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_amvpsize" data-raw-source="[&lt;strong&gt;KS_AMVPSIZE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_amvpsize)"><strong>KS_AMVPSIZE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,13 +56,11 @@ The KSPROPERTY\_VPCONFIG\_SCALEFACTOR property sets the video port dimensions to
 
 The property value (operation data) is a KS\_AMVPSIZE structure that specifies the width and height of the video port.
 
-Remarks
--------
+## Remarks
 
 When this property is used by KSPROPSETID\_VPVBIConfig, all property requests must return STATUS\_NOT\_IMPLEMENTED.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,6 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KS\_AMVPSIZE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_amvpsize)
-
- 
-
- 
-
-
-
-
-
-
+[**KS\_AMVPSIZE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_amvpsize)

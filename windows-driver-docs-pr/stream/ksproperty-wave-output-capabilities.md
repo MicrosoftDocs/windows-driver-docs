@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES
 description: The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave device's wave output capabilities.
-ms.assetid: 9e5e8ed1-0d08-45b7-b683-df7ce4424c26
 keywords: ["KSPROPERTY_WAVE_OUTPUT_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave device's wave
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kswave_output_capabilities" data-raw-source="[&lt;strong&gt;KSWAVE_OUTPUT_CAPABILITIES&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kswave_output_capabilities)"><strong>KSWAVE_OUTPUT_CAPABILITIES</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kswave_output_capabilities" data-raw-source="[&lt;strong&gt;KSWAVE_OUTPUT_CAPABILITIES&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kswave_output_capabilities)"><strong>KSWAVE_OUTPUT_CAPABILITIES</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +56,7 @@ The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave device's wave
 
 The property value (operation data) is a KSWAVE\_OUTPUT\_CAPABILITIES structure that describes the output capabilities of a wave device, including the maximum number of audio channels, the range of bits per sample, the range of sampling frequency, the total and active number of connections.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,16 +74,6 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSWAVE\_OUTPUT\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kswave_output_capabilities)
-
- 
-
- 
-
-
-
-
-
-
+[**KSWAVE\_OUTPUT\_CAPABILITIES**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kswave_output_capabilities)

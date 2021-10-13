@@ -1,7 +1,6 @@
 ---
-title: Device ID
+title: Device ID string
 description: A device ID is a string reported by a device’s enumerator. A device has only one device ID. A device ID has the same format as a hardware ID.
-ms.assetid: a71b64bc-319e-4133-810b-7fd417cf0af8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,13 +15,7 @@ A device ID is a string reported by a device’s *enumerator*. A device has only
 
 The Plug and Play (PnP) manager uses the device ID to create a subkey for a device under the registry key for the device's enumerator.
 
-To obtain a device ID, use an [**IRP_MN_QUERY_ID**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id) request and set the **Parameters.QueryId.IdType** field to **BusQueryDeviceID**.
+To obtain a device ID, use an [**IRP_MN_QUERY_ID**](../kernel/irp-mn-query-id.md) request and set the **Parameters.QueryId.IdType** field to **BusQueryDeviceID**.
 
  
-
- 
-
-
-
-
 

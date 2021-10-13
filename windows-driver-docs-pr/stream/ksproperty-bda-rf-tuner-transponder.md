@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_TRANSPONDER
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_TRANSPONDER to inform the tuner node of the appropriate transponder number.
-ms.assetid: 00445260-a317-4341-baab-d1391f6748e4
 keywords: ["KSPROPERTY_BDA_RF_TUNER_TRANSPONDER Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_TRANSPONDER to inform the tuner node of 
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the tuner node.
 
@@ -64,8 +62,7 @@ The property value specifies the transponder number to set.
 
 Some tuning spaces have all of the information about how to acquire a frequency imbedded in hardware. These tuning spaces specify a transponder number. This property informs the tuner node of this transponder number. The tuner hardware can then automatically determine the tuning characteristics needed to acquire the intermediate frequency. In this case, the other properties in the KSPROPSETID\_BdaFrequencyFilter property set are set to −1.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,14 +80,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

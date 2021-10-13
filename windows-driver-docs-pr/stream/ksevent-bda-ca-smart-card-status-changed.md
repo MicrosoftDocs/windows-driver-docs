@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_CA\_SMART\_CARD\_STATUS\_CHANGED
 description: Clients use KSEVENT\_BDA\_CA\_SMART\_CARD\_STATUS\_CHANGED to request notification when status on the smart card reader associated with an ECM map node changes.
-ms.assetid: 67684ce9-038a-41fc-a272-f0fd3d5bfbbf
 keywords: ["KSEVENT_BDA_CA_SMART_CARD_STATUS_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,8 +30,7 @@ KSEVENT
 
 A KSEVENTDATA structure that describes how to notify about the event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -50,18 +48,9 @@ Requirements
 ## See also
 
 
-[**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](./ksevent-structure.md)
 
-[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)
+[**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
 [**KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS**](ksproperty-bda-ca-smart-card-status.md)
-
- 
-
- 
-
-
-
-
-
 

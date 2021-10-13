@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VFR
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VFR is a property ID that will be used to specify whether variable frame rate is desired on the driver.
-ms.assetid: 9B528421-B5AA-4092-9F7B-71A18732ABA8
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_VFR Streaming Media Devices"]
 topic_type:
 - apiref
@@ -59,7 +58,7 @@ This control has no effect during the video recording for the driver that doesnâ
 
 This is a synchronous control and not cancelable. There are no capabilities defined for this control.
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>

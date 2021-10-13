@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PM_CAPABILITIES (0x42)
 description: WDI_TLV_PM_CAPABILITIES is a TLV that contains power management capabilities.
-ms.assetid: DE8A5333-BE2B-4CBB-8C75-45ABBE35A635
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PM_CAPABILITIES (0x42) Network Drivers Starting with Windows Vista
@@ -96,15 +95,15 @@ The sum (in bytes) of the sizes of all contained elements.
 <td>Specifies the number of NS offload IPv6 addresses.</td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
+<td><a href="/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
 <td>Specifies the minimum magic packet wake-up.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
+<td><a href="/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
 <td>Specifies the minimum pattern wake-up.</td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
+<td><a href="/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
 <td>Specifies the minimum link change wake-up.</td>
 </tr>
 <tr class="odd">
@@ -132,8 +131,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -155,11 +153,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Collection list legacy helpers
 description: The collection list legacy helper functions are used by v2 sensor drivers for interacting with SENSOR\_COLLECTION\_LIST structures.
-ms.assetid: AD5AB3EE-5AD7-4576-8E8E-3FEA08930DD7
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Collection list legacy helpers
 
 
-The collection list legacy helper functions are used by v2 sensor drivers for interacting with [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
+The collection list legacy helper functions are used by v2 sensor drivers for interacting with [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
 
 The helper functions are used along with the sensor device driver software interface (DDSI).
 
@@ -21,15 +20,15 @@ Usage by sensor DDSI
 
 -   Sets the value of the PKEY\_Sensor\_MaximumDataFieldSize\_Bytes property.
 
--   Returns the *pSize* value from [EvtSensorGetProperties](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
+-   Returns the *pSize* value from [EvtSensorGetProperties](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
 
--   Returns the *pSize* value from [*EvtSensorGetDataFieldProperties*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
+-   Returns the *pSize* value from [*EvtSensorGetDataFieldProperties*](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
 
--   Returns the *pSize* value from [*EvtSensorGetDataThresholds*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
+-   Returns the *pSize* value from [*EvtSensorGetDataThresholds*](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
 
 Comments
 
--   See [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information about the *pSize* member.
+-   See [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information about the *pSize* member.
 
 -   Also, see [Common sensor properties](common-sensor-properties.md) for more information.
 
@@ -37,15 +36,15 @@ Comments
 
 Usage by sensor DDSI
 
--   Populates the collection list in [*EvtSensorGetProperties*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
+-   Populates the collection list in [*EvtSensorGetProperties*](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)
 
--   Populates the collection list in [*EvtSensorGetDataFieldProperties*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
+-   Populates the collection list in [*EvtSensorGetDataFieldProperties*](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)
 
--   Populates the collection list in [*EvtSensorGetDataThresholds*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
+-   Populates the collection list in [*EvtSensorGetDataThresholds*](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)
 
 Comments
 
--   See [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
+-   See [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
 
 **CollectionsListMarshall**
 
@@ -55,7 +54,7 @@ Usage by sensor DDSI
 
 Comments
 
--   See [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
+-   See [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
 
 **CollectionsListGetMarshalledSizeWithoutSerialization**
 
@@ -73,21 +72,22 @@ Comments
 
 Usage by sensor DDSI
 
--   Passes a buffer to the sensor driver using [*EvtSensorSetDataThresholds*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
+-   Passes a buffer to the sensor driver using [*EvtSensorSetDataThresholds*](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
 
--   Passes a buffer to the driver using [*EvtSensorDeviceIoControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
+-   Passes a buffer to the driver using [*EvtSensorDeviceIoControl*](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
 
 Comments
 
--   See [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
+-   See [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
 
 ## Requirements
 
-|                          |                        |
-|--------------------------|------------------------|
-| Minimum supported client | Windows 8.1            |
-| Minimum supported server | Windows Server 2012 R2 |
-| Header                   | Sensorsutils.h         |
+**Minimum supported client**: Windows 8.1
+
+**Minimum supported server**: Windows Server 2012 R2
+
+**Header**: Sensorsutils.h
+
 
  
 
@@ -97,11 +97,4 @@ Comments
 [Marshalling helper functions](marshalling-helper-functions.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Timing a Flip
 description: Timing a Flip
-ms.assetid: abd3188e-0f75-401a-88e3-e2a9c5788ad5
 keywords:
 - drawing page flips WDK DirectDraw , timing
 - DirectDraw flipping WDK Windows 2000 display , timing

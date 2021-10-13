@@ -1,7 +1,6 @@
 ---
 title: Methods of Controlling Breakpoints
 description: Methods of Controlling Breakpoints
-ms.assetid: 69de05e8-1b41-403a-a628-88da9528e1ab
 keywords: ["breakpoints, controlling"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

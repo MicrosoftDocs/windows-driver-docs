@@ -1,7 +1,6 @@
 ---
 title: PSHED Plug-In Operations
 description: PSHED Plug-In Operations
-ms.assetid: 05862cc4-0257-46d1-88c1-faa4230e3b89
 keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , operations
 - PSHED plug-ins WDK WHEA , operations

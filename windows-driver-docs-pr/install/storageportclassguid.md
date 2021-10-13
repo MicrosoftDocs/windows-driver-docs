@@ -1,7 +1,6 @@
 ---
 title: StoragePortClassGuid
 description: StoragePortClassGuid
-ms.assetid: 62175051-2453-411a-b033-f750376a703c
 keywords: ["StoragePortClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 StoragePortClassGuid is an obsolete identifier for the device interface class for storage port. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_STORAGEPORT**](guid-devinterface-storageport.md) class identifier for new instances of this class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: HP-GL/2 Caveats
 description: HP-GL/2 Caveats
-ms.assetid: 201a894e-5d22-46f8-965d-0e5b88dc54d7
 keywords:
 - HP-GL/2 monochrome WDK Unidrv , additional considerations
 - PCL-5e WDK Unidrv , additional considerations
@@ -25,9 +24,9 @@ ms.localizationpriority: medium
 
         Additionally, all HP-GL/2 commands are hard-coded in the driver.
 
-3.  Masks received in calls to [**DrvBitBlt**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvbitblt) and other bit-block transfer functions may not work correctly.
+3.  Masks received in calls to [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt) and other bit-block transfer functions may not work correctly.
 
-4.  When Windows XP Unidrv is used on Windows 2000 and HP-GL/2 is activated, some graphics rendering functions may not work correctly. For example, the output from [**DrvGradientFill**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgradientfill) calls has red and blue reversed.
+4.  When Windows XP Unidrv is used on Windows 2000 and HP-GL/2 is activated, some graphics rendering functions may not work correctly. For example, the output from [**DrvGradientFill**](/windows/win32/api/winddi/nf-winddi-drvgradientfill) calls has red and blue reversed.
 
 5.  Unidrv assumes that printer hardware supports ROP commands. If a printer does not support ROP, some documents might not print correctly.
 
@@ -79,9 +78,4 @@ ms.localizationpriority: medium
 15. It is possible for TrueType outline fonts to be downloaded as raster fonts even when the GPD file specifies that the device supports outline fonts. This can occur for a variety of reasons (for example, insufficient memory on the printer).
 
  
-
- 
-
-
-
 

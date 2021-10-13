@@ -1,21 +1,18 @@
 ---
-title: Storage Filter Drivers
+title: Introduction to Storage Filter Drivers
 description: Storage Filter Drivers
-ms.assetid: 615e8ff1-d5b2-49da-b024-83bbaff70ded
 keywords:
 - storage filter drivers WDK
 - filter drivers WDK storage
 - storage drivers WDK , filter drivers
 - SFD WDK storage
-ms.date: 04/20/2017
+ms.date: 12/15/2019
 ms.localizationpriority: medium
 ---
 
-# Storage Filter Drivers
+# Introduction to Storage Filter Drivers
 
-
-## <span id="ddk_storage_filter_drivers_kg"></span><span id="DDK_STORAGE_FILTER_DRIVERS_KG"></span>
-
+A storage filter driver supports device-specific functionality not provided by a system-supplied storage class driver.
 
 This section contains the following information:
 
@@ -40,11 +37,3 @@ If a storage class driver already exists for a particular type of device, it mig
 If an existing storage class driver does not fully support a new device of its type, a new driver can be written as a storage filter driver (SFD) layered over or under an existing system-supplied class driver. An SFD might transform data in read/write requests, define additional I/O control codes (IOCTLs) that enable a user application to take advantage of additional features of a particular device, or work around device-specific problems without requiring hardware-specific changes to the generic class or port drivers.
 
 Unless a new device requires that every request be handled in a device-specific manner, a storage filter driver can be developed in far less time than a new storage class driver.
-
- 
-
- 
-
-
-
-

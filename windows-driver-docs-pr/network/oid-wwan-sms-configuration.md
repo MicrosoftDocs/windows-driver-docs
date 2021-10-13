@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SMS_CONFIGURATION
 description: OID_WWAN_SMS_CONFIGURATION sets or returns a MB device's SMS text message configuration.
-ms.assetid: 3292a91d-4aa8-4c57-9223-d7d984dc5d69
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_CONFIGURATION Network Drivers Starting with Windows Vista
@@ -17,12 +16,11 @@ Miniport drivers must process set and query requests asynchronously, initially r
 
 Query requests return the MB device's current SMS text message configuration stored in the device or Subscriber Identity Module (SIM) card.
 
-Set requests use the [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration) structure to change the SMS text message configuration of the MB device.
+Set requests use the [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration) structure to change the SMS text message configuration of the MB device.
 
-Remarks
--------
+## Remarks
 
-For more information about using this OID, see [WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations).
+For more information about using this OID, see [WWAN SMS Operations](./mb-sms-operations.md).
 
 When processing this OID, miniport drivers can access the SIM card, but should not access the provider network.
 
@@ -34,8 +32,7 @@ Miniport drivers should return NDIS\_STATUS\_NOT\_INITIALIZED if the device is i
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support configuring SMS text messages.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,16 +54,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration)
+[**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration)
 
 [**NDIS\_STATUS\_WWAN\_SMS\_CONFIGURATION**](ndis-status-wwan-sms-configuration.md)
 
-[WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations)
+[WWAN SMS Operations](./mb-sms-operations.md)
 
  
-
- 
-
-
-
 

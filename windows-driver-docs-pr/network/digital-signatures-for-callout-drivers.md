@@ -1,7 +1,6 @@
 ---
 title: Digital Signatures for Callout Drivers
 description: Digital Signatures for Callout Drivers
-ms.assetid: 5741b2f5-20e9-437c-a466-6f372b2e8ab4
 keywords:
 - Windows Filtering Platform callout drivers WDK , installing
 - callout drivers WDK Windows Filtering Platform , installing
@@ -20,14 +19,8 @@ To guarantee the quality and integrity of the driver, all drivers must be digita
 
 For more information, see the following topics:
 
--   [Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/install/driver-signing)
+-   [Driver Signing](../install/driver-signing.md)
 -   [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613)
 
  
-
- 
-
-
-
-
 

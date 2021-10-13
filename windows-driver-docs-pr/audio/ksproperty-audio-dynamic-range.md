@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE
 description: The KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE property specifies the dynamic range of the audio stream that is output from a loudness node (KSNODETYPE\_LOUDNESS).
-ms.assetid: bab1cc2c-0751-4425-8546-9587baece585
 keywords: ["KSPROPERTY_AUDIO_DYNAMIC_RANGE Audio Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE property specifies the dynamic range of th
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_dynamic_range" data-raw-source="[&lt;strong&gt;KSAUDIO_DYNAMIC_RANGE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_dynamic_range)"><strong>KSAUDIO_DYNAMIC_RANGE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_dynamic_range" data-raw-source="[&lt;strong&gt;KSAUDIO_DYNAMIC_RANGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_dynamic_range)"><strong>KSAUDIO_DYNAMIC_RANGE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -61,15 +60,13 @@ The property value (operation data) is a structure of type KSAUDIO\_DYNAMIC\_RAN
 
 A KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 By default, the values for the **QuietCompression** and **LoudCompression** members of the KSAUDIO\_DYNAMIC\_RANGE structure are set to zero percent. This produces the full dynamic range of the audio stream. The miniport driver sets the property to its default value when it instantiates the pin whose data path contains the node.
 
 Some devices might not support changes to **QuietCompression** and **LoudCompression**. If the client attempts to change a value that the device does not support, the miniport driver should return an error.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,18 +84,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_LOUDNESS**](ksnodetype-loudness.md)
 
-[**KSAUDIO\_DYNAMIC\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_dynamic_range)
-
- 
-
- 
-
-
-
-
-
+[**KSAUDIO\_DYNAMIC\_RANGE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_dynamic_range)
 

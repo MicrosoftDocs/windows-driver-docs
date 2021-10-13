@@ -1,7 +1,6 @@
 ---
 title: Extending the Properties for Wireless Network Profiles
 description: Extending the Properties for Wireless Network Profiles
-ms.assetid: c98266b5-3841-4dfa-b274-5c1ef16bfef6
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , network profile extensions
 - network profiles WDK Native 802.11 IHV UI Extensions DLL
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
  
 
-The end user creates or edits a wireless network connection profile through the Native 802.11 Network Configuration user interface (UI). For more information about this UI, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
+The end user creates or edits a wireless network connection profile through the Native 802.11 Network Configuration user interface (UI). For more information about this UI, see [Native 802.11 Software Architecture](/previous-versions/windows/hardware/wireless/native-802-11-software-architecture).
 
 The independent hardware vendor (IHV) can extend the Network Configuration UI to support proprietary connection and security profile settings through a Native 802.11 UI Extensions DLL. The DLL can extend the following tabs that are displayed in the Network Configuration UI.
 
@@ -43,8 +42,3 @@ The Native 802.11 IHV UI Extensions DLL can also extend the Microsoft 802.1X set
  
 
  
-
-
-
-
-

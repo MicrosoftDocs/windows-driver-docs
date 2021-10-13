@@ -1,7 +1,6 @@
 ---
 title: Locking Swizzled Allocations
 description: Locking Swizzled Allocations
-ms.assetid: c9be52d9-36b2-4a0f-9629-01b31293af38
 keywords:
 - swizzled allocation locking WDK display
 - locking swizzled allocations WDK display
@@ -16,17 +15,17 @@ ms.localizationpriority: medium
 # Locking Swizzled Allocations
 
 
-The video memory manager provides special support for direct CPU access to swizzled allocations (that is, allocations in which the display miniport driver's [**DxgkDdiCreateAllocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function sets the **Swizzled** flag in the **Flags** member of the [**DXGK\_ALLOCATIONINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_allocationinfo) structure).
+The video memory manager provides special support for direct CPU access to swizzled allocations (that is, allocations in which the display miniport driver's [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function sets the **Swizzled** flag in the **Flags** member of the [**DXGK\_ALLOCATIONINFO**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_allocationinfo) structure).
 
-When the video memory manager evicts CPU-accessible allocations that are not marked by the driver as swizzled from a memory segment, the display miniport driver must always store them in a linear format. Therefore, such allocations cannot be swizzled while they are located in an aperture segment, and they must always be swizzled or unswizzled by the driver's [**DxgkDdiBuildPagingBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) function.
+When the video memory manager evicts CPU-accessible allocations that are not marked by the driver as swizzled from a memory segment, the display miniport driver must always store them in a linear format. Therefore, such allocations cannot be swizzled while they are located in an aperture segment, and they must always be swizzled or unswizzled by the driver's [**DxgkDdiBuildPagingBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) function.
 
 On the other hand, allocations that are marked as swizzled are not required to always be stored in a linear format when evicted from a memory segment. For such allocations, the video memory manager tracks the swizzling state of those allocations and only requires the driver's *DxgkDdiBuildPagingBuffer* function to unswizzle an allocation during certain transfer operations.
 
-After the user-mode display driver calls the Microsoft Direct3D runtime's [**pfnLockCb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb) function, the video memory manager and the display miniport driver behave in the following ways depending on the state of the allocation:
+After the user-mode display driver calls the Microsoft Direct3D runtime's [**pfnLockCb**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb) function, the video memory manager and the display miniport driver behave in the following ways depending on the state of the allocation:
 
 1.  Allocation located in a memory segment
 
-    The video memory manager attempts to acquire a CPU aperture to provide linear access to the allocation. If the video memory manager cannot acquire the aperture, the video memory manager evicts the allocation back to system memory (unless the driver sets the **DonotEvict** member of the [**D3DDDICB\_LOCKFLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ns-d3dukmdt-_d3dddicb_lockflags) structure). When the video memory manager calls the display miniport driver's [**DxgkDdiBuildPagingBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) function to transfer the allocation, the display miniport driver should unswizzle the allocation.
+    The video memory manager attempts to acquire a CPU aperture to provide linear access to the allocation. If the video memory manager cannot acquire the aperture, the video memory manager evicts the allocation back to system memory (unless the driver sets the **DonotEvict** member of the [**D3DDDICB\_LOCKFLAGS**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddicb_lockflags) structure). When the video memory manager calls the display miniport driver's [**DxgkDdiBuildPagingBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) function to transfer the allocation, the display miniport driver should unswizzle the allocation.
 
 2.  Allocation evicted (swizzled) or located in an aperture segment
 
@@ -44,18 +43,12 @@ After the user-mode display driver calls the Microsoft Direct3D runtime's [**pfn
 
     -   Allocation evicted to system memory (unswizzled)
 
-        The pages of the allocation contain unswizzled data and cannot be mapped into an aperture segment. Therefore, the allocation must be paged in a memory segment. When the video memory manager calls the display miniport driver's [**DxgkDdiBuildPagingBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) function to page in the allocation, the video memory manager requests that the display miniport driver swizzle the allocation.
+        The pages of the allocation contain unswizzled data and cannot be mapped into an aperture segment. Therefore, the allocation must be paged in a memory segment. When the video memory manager calls the display miniport driver's [**DxgkDdiBuildPagingBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) function to page in the allocation, the video memory manager requests that the display miniport driver swizzle the allocation.
 
 **Note**   After a swizzled allocation is under CPU access through a CPU aperture, it can still be evicted before the user-mode display driver terminates the CPU access. This case is handled as in number 2. The eviction is performed in such a way as to be invisible to the application and user-mode display driver.
-Also, a no-overwrite lock (that is, a lock obtained by setting the **IgnoreSync** member of [**D3DDDICB\_LOCKFLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ns-d3dukmdt-_d3dddicb_lockflags)) is not allowed on a swizzled allocation. Only the CPU or the GPU can access such an allocation at any given time.
+Also, a no-overwrite lock (that is, a lock obtained by setting the **IgnoreSync** member of [**D3DDDICB\_LOCKFLAGS**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddicb_lockflags)) is not allowed on a swizzled allocation. Only the CPU or the GPU can access such an allocation at any given time.
 
  
 
  
-
- 
-
-
-
-
 

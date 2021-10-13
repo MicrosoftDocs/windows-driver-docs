@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGYNODE\_ENABLE
 description: The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to turn on or off the topology nodes in an already built topology.
-ms.assetid: 6b9f7a92-97dc-476b-962a-40ccf1987154
 keywords: ["KSPROPERTY_TOPOLOGYNODE_ENABLE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to turn on or off the topo
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -61,15 +60,13 @@ The property value (operation data) is of type BOOL and specifies whether the no
 
 A KSPROPERTY\_TOPOLOGYNODE\_ENABLE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 Enabling an already enabled node or disabling an already disabled node has no effect, but should not be treated as an error.
 
 Disabling a node turns off the transformation that the node performs on the stream that passes through the node. In the case of an AEC, AGC, or noise-suppression node ([**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md), [**KSNODETYPE\_AGC**](ksnodetype-agc.md), or [**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)), for example, a disabled node operates in pass-through mode (that is, it performs no operation on the stream as it flows from the node's input pin to its output pin).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,20 +84,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)
 
 [**KSNODETYPE\_AGC**](ksnodetype-agc.md)
 
 [**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)
-
- 
-
- 
-
-
-
-
-
 

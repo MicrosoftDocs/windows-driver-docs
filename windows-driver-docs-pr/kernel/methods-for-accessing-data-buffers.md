@@ -1,7 +1,6 @@
 ---
 title: Methods for Accessing Data Buffers
 description: Methods for Accessing Data Buffers
-ms.assetid: f95a0aec-65f9-44c9-8ae5-11bb4d832752
 keywords: ["I/O WDK kernel , data buffers", "data buffers WDK I/O", "buffers WDK I/O", "buffers WDK I/O , accessing", "data buffers WDK I/O , accessing", "data transfers WDK kernel , data buffer access", "transferring data WDK kernel , data buffer access"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -27,16 +26,11 @@ The operating system passes the application buffer's virtual starting address an
 
 For more information, see [Using Neither Buffered Nor Direct I/O](using-neither-buffered-nor-direct-i-o.md).
 
-For [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write) requests, drivers specify the I/O method by using flags in each [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure. For more information, see [Initializing a Device Object](initializing-a-device-object.md).
+For [**IRP\_MJ\_READ**](./irp-mj-read.md) and [**IRP\_MJ\_WRITE**](./irp-mj-write.md) requests, drivers specify the I/O method by using flags in each [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. For more information, see [Initializing a Device Object](initializing-a-device-object.md).
 
-For [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) requests, the I/O method is determined by the *TransferType* value that is contained in each IOCTL value. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
+For [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests, the I/O method is determined by the *TransferType* value that is contained in each IOCTL value. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
 
 All drivers in a driver stack must use the same buffer access method for each request, except possibly for the highest-level driver (which can use the "neither" method, regardless of the method used by lower drivers).
 
  
-
- 
-
-
-
 

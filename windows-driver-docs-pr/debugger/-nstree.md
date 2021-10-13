@@ -1,7 +1,6 @@
 ---
-title: nstree
+title: nstree (WinDbg)
 description: The nstree extension displays an ACPI namespace object and its children in the namespace tree.
-ms.assetid: 0dec2a5a-ca77-4f91-9128-2d3dd8cd035f
 keywords: ["nstree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -38,8 +37,7 @@ Kdexts.dll
 
 For more information, see [ACPI Debugging](acpi-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension is equivalent to [**!amli dns /s**](-amli-dns.md).
 

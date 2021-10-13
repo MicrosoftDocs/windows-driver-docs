@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE property controls the data rate that describes the average frame size. This property must be implemented.
-ms.assetid: 44cf4bb6-7ddb-4a72-8a77-7dc390aa8c12
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_WINDOWSIZE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE property controls the data rate tha
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videocompression_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCOMPRESSION_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videocompression_s)"><strong>KSPROPERTY_VIDEOCOMPRESSION_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCOMPRESSION_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s)"><strong>KSPROPERTY_VIDEOCOMPRESSION_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
@@ -57,17 +56,15 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE property controls the data rate tha
 
 The property value (operation data) is a LONG that specifies a data rate that represents the average frame size.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOCOMPRESSION\_S structure specifies the window size.
 
-Minidrivers that support this property should set the **KS\_CompressionCaps\_CanWindow** flag in the **Capabilities** member of the [**KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videocompression_getinfo_s) structure that retrieves the minidriver's video compression capabilities. If a minidriver sets the **KS\_CompressionCaps\_CanWindow** flag, it should provide both get and set support for the property.
+Minidrivers that support this property should set the **KS\_CompressionCaps\_CanWindow** flag in the **Capabilities** member of the [**KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_getinfo_s) structure that retrieves the minidriver's video compression capabilities. If a minidriver sets the **KS\_CompressionCaps\_CanWindow** flag, it should provide both get and set support for the property.
 
 For a window of size *n,* the average frame size of any consecutive *n* frames must not exceed the stream's specified data rate, although *individual* frames may be larger or smaller. For example, if the data rate has been set to 150 kilobytes per second (KBps) on a 15 frame per second (fps) movie, the *average* size of each frame must therefore be less than or equal to 10 kilobytes. Individual frames may be larger or smaller just so long as the average size (calculated across 15 frames per second of movie) is less than or equal to 10 kilobytes.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,18 +82,9 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_VIDEOCOMPRESSION\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videocompression_s)
+[**KSPROPERTY\_VIDEOCOMPRESSION\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s)
 
-[**KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videocompression_getinfo_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_getinfo_s)
 

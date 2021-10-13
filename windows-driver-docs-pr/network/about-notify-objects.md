@@ -1,7 +1,6 @@
 ---
 title: About Notify Objects
 description: About Notify Objects
-ms.assetid: 87e4bcb6-dbdc-487d-9e21-0738165bf834
 keywords:
 - notify objects WDK networking , about notify objects
 - network notify objects WDK , about notify objects
@@ -27,7 +26,7 @@ A notify object processes notifications that the network configuration subsystem
 -   Clients such as a Client for Microsoft Networks
 
 **Note**  Network cards do not support and cannot own notify objects. Physical or virtual network cards that participate in either configuring the network or installing and uninstalling must use INF files or the device co-installer mechanism.
-For more information, see [Writing a Co-installer](https://docs.microsoft.com/windows-hardware/drivers/install/writing-a-co-installer).
+For more information, see [Writing a Co-installer](../install/writing-a-co-installer.md).
 
  
 
@@ -35,7 +34,7 @@ A notify object performs the following actions:
 
 -   Exposes interface methods to the network configuration subsystem so that the network configuration subsystem can inform the notify object about the occurrence of events on which the notify object requested notification.
 
--   Calls methods of the network configuration subsystem's public interfaces to perform actions that include but are not limited to installing and removing network devices. For more information, see [Network Configuration Interfaces](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559080(v=vs.85)).
+-   Calls methods of the network configuration subsystem's public interfaces to perform actions that include but are not limited to installing and removing network devices. For more information, see [Network Configuration Interfaces](/previous-versions/windows/hardware/network/ff559080(v=vs.85)).
 
 To request and receive notifications and to communicate with each other, the notify object and the network configuration subsystem implement Component Object Model (COM) interfaces.
 
@@ -60,10 +59,4 @@ The following topics describe the types of notifications that notify objects rec
 [Configuring the Network](configuring-the-network.md)
 
  
-
- 
-
-
-
-
 

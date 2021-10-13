@@ -1,7 +1,6 @@
 ---
 title: MPIO\_CONTROLLER\_CONFIGURATION WMI Class
 description: MPIO\_CONTROLLER\_CONFIGURATION WMI Class
-ms.assetid: c11429d6-b016-464e-a7b4-03b6cdc8ddb7
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -40,13 +39,7 @@ class MPIO_CONTROLLER_CONFIGURATION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_CONTROLLER\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_mpio_controller_configuration) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_CONTROLLER\_CONFIGURATION**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_controller_configuration) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

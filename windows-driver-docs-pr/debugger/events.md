@@ -1,7 +1,6 @@
 ---
 title: Events
 description: Events
-ms.assetid: 2b086e78-ac4d-4f9c-a006-65f6f50b33f1
 keywords: ["Debugger Engine, events"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -15,9 +14,9 @@ ms.localizationpriority: medium
 
 The debugger engine provides facilities for monitoring and responding to events in the target. When an event occurs, the engine suspends the target (often only briefly), it then notifies all of the clients of the event, who in turn instruct the engine on how execution should proceed in the target.
 
-To notify a client of an event, the engine calls the event callback object that is registered with the client. The engine provides each event callback with details of the event, and the event callback instructs the engine on how execution should proceed in the target. When different event callbacks provide conflicting instructions, the engine acts on the instruction with the highest precedence (see [**DEBUG\_STATUS\_XXX**](https://docs.microsoft.com/windows-hardware/drivers/debugger/debug-status-xxx)), which typically means choosing the instruction that involves the least execution of the target.
+To notify a client of an event, the engine calls the event callback object that is registered with the client. The engine provides each event callback with details of the event, and the event callback instructs the engine on how execution should proceed in the target. When different event callbacks provide conflicting instructions, the engine acts on the instruction with the highest precedence (see [**DEBUG\_STATUS\_XXX**](./debug-status-xxx.md)), which typically means choosing the instruction that involves the least execution of the target.
 
-**Note**   While the event callback is handling the event, the target is suspended and the debugging session is accessible; however, because the engine was waiting for an event--either explicitly during a [**WaitForEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugcontrol3-waitforevent) call or implicitly by executing a command such as [**g (Go)**](g--go-.md) or [**p (Step)**](p--step-.md)--the event callback cannot call **WaitForEvent**, and if it attempts to execute any commands that would cause the debugger to execute, for example **g (Go)** or **p (Step)**, the engine will interpret these commands as an instruction on how to proceed.
+**Note**   While the event callback is handling the event, the target is suspended and the debugging session is accessible; however, because the engine was waiting for an event--either explicitly during a [**WaitForEvent**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-waitforevent) call or implicitly by executing a command such as [**g (Go)**](g--go-.md) or [**p (Step)**](p--step-.md)--the event callback cannot call **WaitForEvent**, and if it attempts to execute any commands that would cause the debugger to execute, for example **g (Go)** or **p (Step)**, the engine will interpret these commands as an instruction on how to proceed.
 
  
 
@@ -30,10 +29,4 @@ The debugger engine also provides *event filters*, which are a simpler alternati
 For details about monitoring events, see [Monitoring Events](monitoring-events.md).
 
  
-
- 
-
-
-
-
 

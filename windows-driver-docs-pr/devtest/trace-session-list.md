@@ -1,7 +1,6 @@
 ---
 title: Trace Session List
 description: Trace Session List
-ms.assetid: 96709994-6b69-4e39-9da7-1144d6cea28c
 keywords:
 - TraceView WDK , window
 - Trace Session List WDK
@@ -16,7 +15,7 @@ TraceView displays trace sessions and trace logs in the *Trace Session List*. Th
 
 The following screen shot shows the Trace Session List displaying one running trace session and one trace log file.
 
-![screen shot of the trace session list displaying a running trace session and a trace log file](images/tracesessionlist.png)
+![screen shot of the trace session list displaying a running trace session and a trace log file.](images/tracesessionlist.png)
 
 The following topics describe the contents and features of the Trace Session List:
 

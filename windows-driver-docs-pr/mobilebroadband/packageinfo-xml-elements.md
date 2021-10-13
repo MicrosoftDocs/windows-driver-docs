@@ -1,14 +1,13 @@
 ---
 title: PackageInfo XML elements list
 description: PackageInfo XML elements list
-ms.assetid: eb08c164-d901-4806-a9f1-f538f3ff00e3
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
 # PackageInfo XML elements list
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 This section describes the XML elements defined by the [PackageInfo XML schema](packageinfo-xml-schema.md). The following is a list of these elements in the order in which they are defined in the XML schema.
 

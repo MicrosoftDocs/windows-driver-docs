@@ -1,7 +1,6 @@
 ---
 title: .step_filter (Set Step Filter)
 description: The .step_filter command creates a list of functions that are skipped (stepped over) when tracing.
-ms.assetid: 9ce2bed4-fac0-4537-a129-7cb9f1e8725e
 keywords: [".step_filter (Set Step Filter) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,12 +57,11 @@ Clears the filter list.
 
  
 
-Remarks
--------
+## Remarks
 
 Without any parameters, **.step\_filter** displays the current filter list.
 
-Typically, a trace command (for example, [**t**](t--trace-.md) or the windbg [debug | step into](debug---step-into.md) button ![screen shot of the step into button](images/tbinto.png)) traces into a function call. However, if the symbol associated with the function being called matches a pattern specified by *FilterList*, the function will be stepped over -- as if a step command (for example, [**p**](p--step-.md)) had been used.
+Typically, a trace command (for example, [**t**](t--trace-.md) or the windbg [debug | step into](debug---step-into.md) button ![screen shot of the step into button.](images/tbinto.png)) traces into a function call. However, if the symbol associated with the function being called matches a pattern specified by *FilterList*, the function will be stepped over -- as if a step command (for example, [**p**](p--step-.md)) had been used.
 
 If the instruction pointer is located within code that is listed in the filter list, any trace or step commands will step out of this function, like the [**gu**](gu--go-up-.md) command or the WinDbg **Step Out** button. Of course, this filter would prevent such code from having been traced into in the first place, so this will only happen if you have changed the filter or hit a breakpoint.
 

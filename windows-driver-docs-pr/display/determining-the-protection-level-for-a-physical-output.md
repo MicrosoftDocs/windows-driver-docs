@@ -1,7 +1,6 @@
 ---
 title: Determining the Protection Level for a Physical Output
 description: Determining the Protection Level for a Physical Output
-ms.assetid: ea06903a-0ad5-43fd-b2d3-013584ae6f69
 keywords:
 - protection levels WDK display , determining for physical output
 ms.date: 04/20/2017

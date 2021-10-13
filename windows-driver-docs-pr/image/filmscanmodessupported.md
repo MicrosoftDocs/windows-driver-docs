@@ -1,7 +1,6 @@
 ---
 title: FilmScanModesSupported element
 description: The required FilmScanModesSupported element contains a list of film exposure types that the film scanning option supports.
-ms.assetid: bcc1335f-4465-4bc1-a804-b6e8729ec616
 keywords: ["FilmScanModesSupported element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FilmScanModesSupported** element contains a list of film exposure types that the film scanning option supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmScanModesSupported>
@@ -27,8 +25,7 @@ Usage
 </wscn:FilmScanModesSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -70,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **FilmScanModesSupported** element contains one or more [**FilmScanModeValue**](filmscanmodevalue.md) child elements. Each **FilmScanModeValue** element identifies a film exposure type that the film scanning option supports.
 

@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_Supported\_LB\_Policies WMI Class
 description: ISCSI\_Supported\_LB\_Policies WMI Class
-ms.assetid: c11eebe8-519a-473d-9e9c-8a787333223e
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -57,13 +56,7 @@ class ISCSI_Supported_LB_Policies {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_Supported\_LB\_Policies**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_iscsi_supported_lb_policies) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_Supported\_LB\_Policies**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_supported_lb_policies) data structure.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_DELETE\_PIN\_FACTORY
 description: Clients use KSMETHOD\_BDA\_DELETE\_PIN\_FACTORY to delete a pin factory for a filter.
-ms.assetid: b9e9306a-5b0e-47d0-9194-eb60d793bebc
 keywords: ["KSMETHOD_BDA_DELETE_PIN_FACTORY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -31,13 +30,11 @@ KSM\_PIN with the **Flags** member of the **Method** member set to KSMETHOD\_TYP
 
 None
 
-Remarks
--------
+## Remarks
 
 Specifies the pin factory to delete in the **PinId** member of the KSM\_PIN structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -55,16 +52,9 @@ Requirements
 ## See also
 
 
-[**BdaMethodDeletePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdamethoddeletepin)
+[**BdaMethodDeletePin**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethoddeletepin)
 
-[**KSM\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/ns-bdasup-_ksm_pin)
-
- 
+[**KSM\_PIN**](/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_ksm_pin)
 
  
-
-
-
-
-
 

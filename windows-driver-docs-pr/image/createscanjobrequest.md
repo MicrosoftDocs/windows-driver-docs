@@ -1,7 +1,6 @@
 ---
 title: CreateScanJobRequest element
 description: The required CreateScanJobRequest operation prepares a scan device to scan.
-ms.assetid: ce3aafe2-71b0-4875-852a-f3ab78684329
 keywords: ["CreateScanJobRequest element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **CreateScanJobRequest** operation prepares a scan device to scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CreateScanJobRequest>
@@ -27,13 +25,11 @@ Usage
 </wscn:CreateScanJobRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -67,8 +63,7 @@ None
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **CreateScanJobRequest** operation.
 
@@ -145,23 +140,22 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
      
 
-Examples
---------
+## Examples
 
 The following code example shows a scan job request when the scan is initiated from the scanning device.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/CreateScanJob
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/CreateScanJob
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>
@@ -211,15 +205,15 @@ The following code example shows a scan job request when the scan is initiated f
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/CreateScanJob
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/CreateScanJob
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>

@@ -7,11 +7,11 @@ ms.localizationpriority: medium
 
 # Wi-Fi Hotspot Offloading Architecture
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 The following diagram shows the major components in the Wi-Fi Offload Framework.
 
-![Wi-Fi Hotspot Offload Framework](images/WiFi_Hotspot_Offload-1.png "Wi-Fi Hotspot Offload Framework")
+![Wi-Fi Hotspot Offload Framework.](images/WiFi_Hotspot_Offload-1.png "Wi-Fi Hotspot Offload Framework")
 
 ## Hotspot offload service
 

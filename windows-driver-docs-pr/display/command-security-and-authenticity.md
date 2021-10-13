@@ -1,7 +1,6 @@
 ---
 title: Command Security and Authenticity
 description: Command Security and Authenticity
-ms.assetid: 2a70f974-c34c-4462-a772-d8253f842ed8
 keywords:
 - commands WDK COPP
 - command exchange WDK COPP
@@ -19,7 +18,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 The following figure shows an application sending command messages to the video miniport driver across the secure channel.
 
-![diagram illustrating command exchange](images/coppcmnd.png)
+![diagram illustrating command exchange.](images/coppcmnd.png)
 
 These command messages are contained in an envelope. The envelope contains data and MAC sections. The application calculates the MAC of the command data by using the data integrity key and the OMAC. For more information about the MAC and OMAC, see [Cryptographic Primitives Used by COPP](cryptographic-primitives-used-by-copp.md).
 

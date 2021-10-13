@@ -1,7 +1,6 @@
 ---
 title: PS/2 (i8042prt) driver
 description: This topic describes the features of I8042prt, the Microsoft Windows 2000 and later system function driver for PS/2-style keyboard and mouse devices.
-ms.assetid: BB1046EE-8780-46ED-8CEB-63110643D325
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,27 +22,27 @@ The features of I8042prt include:
 
 -   Operation of legacy devices.
 
--   Connection of a [keyboard class service callback routine](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/kbdmou/nc-kbdmou-pservice_callback_routine) and a [mouse class service callback routine](https://docs.microsoft.com/previous-versions/ff542363(v=vs.85)).
+-   Connection of a [keyboard class service callback routine](/windows-hardware/drivers/ddi/kbdmou/nc-kbdmou-pservice_callback_routine) and a [mouse class service callback routine](/previous-versions/ff542363(v=vs.85)).
 
     I8042prt uses the class service callback to transfer data from the input data buffer of I8042prt to the data buffer of the class driver.
 
--   Addition of a vendor-supplied [**PI8042\_KEYBOARD\_INITIALIZATION\_ROUTINE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdd8042/nc-ntdd8042-pi8042_keyboard_initialization_routine) callback routines for a keyboard device.
+-   Addition of a vendor-supplied [**PI8042\_KEYBOARD\_INITIALIZATION\_ROUTINE**](/windows-hardware/drivers/ddi/ntdd8042/nc-ntdd8042-pi8042_keyboard_initialization_routine) callback routines for a keyboard device.
 
     An optional upper-level device filter driver provides the callback routines.
 
--   Addition of a vendor-supplied [**PI8042\_KEYBOARD\_ISR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdd8042/nc-ntdd8042-pi8042_keyboard_isr) callback routine and a custom [**PI8042\_MOUSE\_ISR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdd8042/nc-ntdd8042-pi8042_mouse_isr) callback routine.
+-   Addition of a vendor-supplied [**PI8042\_KEYBOARD\_ISR**](/windows-hardware/drivers/ddi/ntdd8042/nc-ntdd8042-pi8042_keyboard_isr) callback routine and a custom [**PI8042\_MOUSE\_ISR**](/windows-hardware/drivers/ddi/ntdd8042/nc-ntdd8042-pi8042_mouse_isr) callback routine.
 
     Optional upper-level device filter drivers provide these callbacks routines.
 
--   [Keyboard write buffer request](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_keyboard_write_buffer) and [mouse write buffer request](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_mouse_write_buffer).
+-   [Keyboard write buffer request](/windows-hardware/drivers/ddi/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_keyboard_write_buffer) and [mouse write buffer request](/windows-hardware/drivers/ddi/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_mouse_write_buffer).
 
     An upper-level device filter driver can use write buffer requests to synchronize its writes to a device with the ISR of the device and other reads and writes on the device.
 
--   [Keyboard start information request](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_keyboard_start_information) and [mouse start information request](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_mouse_start_information).
+-   [Keyboard start information request](/windows-hardware/drivers/ddi/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_keyboard_start_information) and [mouse start information request](/windows-hardware/drivers/ddi/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_mouse_start_information).
 
     The start information request passes a pointer to an interrupt object of a device to an upper-level filter driver. The filter driver can use the interrupt object to synchronize its operation with the ISR of the device.
 
--   [I8042prt callback routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+-   [I8042prt callback routines](/windows-hardware/drivers/ddi/index).
 
     An upper-level device filter driver can use the callback routines in the context of the ISR of a device to write to a device, and to queue data packets from the device.
 
@@ -69,5 +68,5 @@ The following is a list of registry keys associated with the PS/2 port driver.
 
 For additional information, please see:
 
-* https://docs.microsoft.com/windows/desktop/sysinfo/about-the-registry
-* https://docs.microsoft.com/windows/desktop/sysinfo/registry-reference 
+* [About the Registry](/windows/desktop/sysinfo/about-the-registry)
+* [Registry Reference](/windows/desktop/sysinfo/registry-reference)

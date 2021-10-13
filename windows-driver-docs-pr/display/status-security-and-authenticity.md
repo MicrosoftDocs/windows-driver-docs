@@ -1,7 +1,6 @@
 ---
 title: Status Security and Authenticity
 description: Status Security and Authenticity
-ms.assetid: 554d74ee-26fb-4e75-b799-c55c6bdd0153
 keywords:
 - status information WDK COPP
 - status exchange WDK COPP
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The following figure shows an application requesting status messages from the video miniport driver, and then the video miniport driver sending the status messages to the application across the secure channel.
 
-![diagram illustrating status exchange](images/coppstus.png)
+![diagram illustrating status exchange.](images/coppstus.png)
 
 These status messages are contained in an envelope. The envelope contains data and MAC sections. The video miniport driver calculates the MAC of the status data by using the data integrity key and the OMAC. For more information about the MAC and OMAC, see [Cryptographic Primitives Used by COPP](cryptographic-primitives-used-by-copp.md).
 

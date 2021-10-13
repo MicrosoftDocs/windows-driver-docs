@@ -4,7 +4,6 @@ description: The IPrinterScriptUsbWritePrintDataProgress interface is passed as 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: E22725DA-2BD5-4FBC-A3E4-A3C5678A9E57
 keywords: ["IPrinterScriptUsbWritePrintDataProgress interface Print Devices", "IPrinterScriptUsbWritePrintDataProgress interface Print Devices , described"]
 topic_type:
 - apiref
@@ -20,10 +19,9 @@ ms.localizationpriority: medium
 
 The IPrinterScriptUsbWritePrintDataProgress interface is passed as a parameter in the **writePrintData** JavaScript function call.
 
-Members
--------
+## Members
 
-The **IPrinterScriptUsbWritePrintDataProgress** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbWritePrintDataProgress** also has these types of members:
+The **IPrinterScriptUsbWritePrintDataProgress** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbWritePrintDataProgress** also has these types of members:
 
 -   [Methods](#methods)
 

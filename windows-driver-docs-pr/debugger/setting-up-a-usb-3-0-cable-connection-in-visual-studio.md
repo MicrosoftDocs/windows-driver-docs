@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 3.0 cable.
-ms.assetid: F8DD0475-13CE-464A-A491-AEFA962A96DB
 ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 3.0 cable. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](https://go.microsoft.com/fwlink/p?linkid=301383).
+You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 3.0 cable. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Debugging Using Visual Studio](debugging-using-visual-studio.md).
 
 As an alternative to using Visual Studio to set up USB 3.0 debugging, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](setting-up-a-usb-3-0-debug-cable-connection.md).
 
@@ -61,20 +60,20 @@ Debugging over a USB 3.0 connection requires the following hardware:
 ## <span id="Configuring_the_host_and_target_computers"></span><span id="configuring_the_host_and_target_computers"></span><span id="CONFIGURING_THE_HOST_AND_TARGET_COMPUTERS"></span>Configuring the host and target computers
 
 
-1.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+1.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 2.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 3.  For **Connection Type**, choose **USB**.
 
-    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters](images/setupusbvs.png)
+    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters.](images/setupusbvs.png)
 
     For **Target Name**, enter a string to represent the target computer. This string does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
 
     -   The maximum length of the string is 24 characters.
     -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
 
-    If you have more than one USB host controller on the target computer, enter a **Bus Parameters** value of *b*.*d*.*f*, where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging on the target computer. The bus, device, and function numbers must be in decimal format (example: 48.0.0).
+    Enter a **Bus Parameters** value of *b*.*d*.*f*, where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging on the target computer. The bus, device, and function numbers must be in decimal format (example: 48.0.0). These values are displayed in Device Manager under *Location* on the *General* tab.  
 
-4.  The configuration process takes several minutes and might automatically reboot the target computer once or twice. When the process is complete, click **Finish**.
+4.  The configuration process takes several minutes and might automatically reboot the target computer once or twice. When the process is complete, select **Finish**.
 
 ## <span id="Verifying_dbgsettings_on_the_Target_Computer"></span><span id="verifying_dbgsettings_on_the_target_computer"></span><span id="VERIFYING_DBGSETTINGS_ON_THE_TARGET_COMPUTER"></span>Verifying dbgsettings on the Target Computer
 
@@ -97,7 +96,7 @@ busparams               48.0.0
 
 Verify that *debugtype* is USB and *targetname* is the name you specified in Visual Studio on the host comptuer. You can ignore the values of *debugport* and *baudrate*; they do not apply to debugging over USB.
 
-If you entered **Bus Parameters** in Visual Studio, verify that *busparams* matches the bus parameters you specified.
+Verify that *busparams* matches the bus parameters you specified.
 
 If you do not see the value you entered for **Bus Parameters**, enter this command:
 
@@ -119,7 +118,7 @@ Reboot the target computer.
 3.  On the **Tools** menu, choose **Attach to Process**.
 4.  For **Transport**, choose **Windows Kernel Mode Debugger**.
 5.  For **Qualifier**, select the name of the target computer that you previously configured.
-6.  Click **Attach**.
+6. Select **Attach**.
 
 At this point, the USB debug driver gets installed on the host computer. This is why it is important to run Visual Studio as Administrator. After the USB debug driver is installed, you do not need to run as Administrator for subsequent debugging sessions.
 
@@ -129,15 +128,15 @@ At this point, the USB debug driver gets installed on the host computer. This is
 1.  On the host computer, in Visual Studio, on the **Tools** menu, choose **Attach to Process**.
 2.  For **Transport**, choose **Windows Kernel Mode Debugger**.
 3.  For **Qualifier**, select the name of the target computer that you previously configured.
-4.  Click **Attach**.
+4.  Select **Attach**.
 
 ## <span id="troubleshooting_tips_for_debugging_over_usb_3.0"></span><span id="TROUBLESHOOTING_TIPS_FOR_DEBUGGING_OVER_USB_3.0"></span>Troubleshooting tips for debugging over USB 3.0
 
 
 In some cases, power transitions can interfere with debugging over USB 3.0. If you have this problem, disable selective suspend for the xHCI host controller (and its root hub) that you are using for debugging.
 
-1.  In Device Manager, navigate to the node for the xHCI host controller. Right click the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
-2.  In Device Manager, navigate to the node for the root hub of the xHCI host controller. Right click the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
+1.  In Device Manager, navigate to the node for the xHCI host controller. Select and hold (or right-click) the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
+2.  In Device Manager, navigate to the node for the root hub of the xHCI host controller. Select and hold (or right-click) the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
 
 When you have finished using the xHCI host controller for debugging, enable selective suspend for the xHCI host controller.
 
@@ -147,11 +146,4 @@ When you have finished using the xHCI host controller for debugging, enable sele
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
  
-
- 
-
-
-
-
-
 

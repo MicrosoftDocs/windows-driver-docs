@@ -1,7 +1,6 @@
 ---
 title: MSFC\_EventBuffer WMI Class
 description: MSFC\_EventBuffer WMI Class
-ms.assetid: ce16e42c-5d0b-47e9-9baa-53dcec482940
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -25,15 +24,9 @@ class MSFC_EventBuffer {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_EventBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_eventbuffer)
+[**MSFC\_EventBuffer**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_eventbuffer)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

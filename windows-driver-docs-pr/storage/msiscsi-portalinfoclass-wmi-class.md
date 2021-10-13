@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_PortalInfoClass WMI Class
 description: MSiSCSI\_PortalInfoClass WMI Class
-ms.assetid: f22c36a9-28be-4de1-9e80-0f0c1bd6473d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -39,13 +38,7 @@ class MSiSCSI_PortalInfoClass {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_PortalInfoClass**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_msiscsi_portalinfoclass) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_PortalInfoClass**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_portalinfoclass) data structure.
 
  
-
- 
-
-
-
-
 

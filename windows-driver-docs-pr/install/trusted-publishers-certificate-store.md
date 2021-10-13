@@ -1,7 +1,6 @@
 ---
 title: Trusted Publishers Certificate Store
 description: Trusted Publishers Certificate Store
-ms.assetid: e2fcb0ce-82e3-499a-85b9-76e4e742190e
 keywords:
 - driver signing WDK , Trusted Publishers certificate store
 - Trusted Publishers certificate store WDK
@@ -29,23 +28,15 @@ Use a Group Policy to distribute certificates to an organizational unit on a net
 
 -   Windows Server 2003.
 
-You can manually install the Authenticode certificates into the Trusted Publishers certificate store on a computer by using the [**CertMgr**](https://docs.microsoft.com/windows-hardware/drivers/devtest/certmgr) tool.
+You can manually install the Authenticode certificates into the Trusted Publishers certificate store on a computer by using the [**CertMgr**](../devtest/certmgr.md) tool.
 
 **Note**  The driver signing verification policy used by Plug and Play requires that the Authenticode certificate of a CA has been previously installed in the local machine version of the Trusted Publishers certificate store. For more information, see [Local Machine and Current User Certificate Stores](local-machine-and-current-user-certificate-stores.md).
 
  
 
-For more information about software restriction policies and using Certificate Rules, see the information in the Windows Help and Support Center. In addition, you find more information about these topics on the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=10111) website.
+For more information about software restriction policies and using Certificate Rules, see the information in the Windows Help and Support Center. 
 
 For more information about how to deploy Authenticode certificates in an enterprise by using Group Policy, see the readme file *Selfsign_readme.htm*, which is located in the *src\\general\\build\\driversigning* directory of the WDK.
 
-For more information about certificate stores, see the [Code Signing Best Practices](https://go.microsoft.com/fwlink/p/?linkid=68250) website.
-
- 
-
- 
-
-
-
-
+For more information about certificate stores, see the [Code Signing Best Practices](/windows-hardware/test/hlk/) website.
 

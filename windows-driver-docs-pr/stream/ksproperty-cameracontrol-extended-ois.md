@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OIS
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OIS is a property ID that is used to control optical image stabilization (OIS) on the driver.
-ms.assetid: CF4F1283-1517-4F93-8554-FBD4B068A655
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_OIS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -86,7 +85,7 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
-The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>

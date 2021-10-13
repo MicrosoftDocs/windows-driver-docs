@@ -1,7 +1,6 @@
 ---
-title: ate
+title: ate (WinDbg)
 description: The ate extension displays the alternate page table entry (ATE) for the specified address.
-ms.assetid: 8ec98fa5-4939-49cb-8678-e412b9cbe7e3
 keywords: ["ate Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -57,8 +56,7 @@ Specifies the ATE to display.
 
 For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 This extension is only available on Itanium-based computers.
 

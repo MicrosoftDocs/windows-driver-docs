@@ -1,7 +1,6 @@
 ---
-title: Storage Drivers and Device Objects
+title: About Storage Drivers and Device Objects
 description: Storage Drivers and Device Objects
-ms.assetid: dbadebe6-b2ae-4dc2-837b-5ca9634d45d0
 keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage
@@ -9,11 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Storage Drivers and Device Objects
-
-
-## <span id="ddk_storage_drivers_and_device_objects_kg"></span><span id="DDK_STORAGE_DRIVERS_AND_DEVICE_OBJECTS_KG"></span>
-
+# About Storage Drivers and Device Objects
 
 The storage device stack consists of a tree of device objects created by the drivers that are involved in handling I/O to storage devices on the system. The root of this tree is a functional device object (FDO) for a storage adapter or for another driver stack integrated with the storage stack. The leaves of this tree are device objects for use by file systems and user-mode applications.
 
@@ -21,14 +16,6 @@ Like any PnP driver, a storage class or storage filter driver adds itself to the
 
 A tape miniclass, medium changer miniclass, or SCSI miniport driver is not required to create a device object and attach it to the device stack. Instead, the system-supplied tape class, changer class, or SCSI port driver handles these tasks on behalf of the miniclass/miniport, calling miniclass/miniport driver routines to gather the data needed to create the device object.
 
-Storage port drivers create physical device objects (PDOs) of type FILE\_DEVICE\_MASS\_STORAGE. The disk class, CD-ROM class, tape class and changer class drivers create FDOs of types FILE\_DEVICE\_DISK, FILE\_DEVICE\_CD\_ROM, FILE\_DEVICE\_TAPE, and FILE\_DEVICE\_CHANGER respectively.
+Storage port drivers create physical device objects (PDOs) of type FILE_DEVICE_MASS_STORAGE. The disk class, CD-ROM class, tape class and changer class drivers create FDOs of types FILE_DEVICE_DISK, FILE_DEVICE_CD_ROM, FILE_DEVICE_TAPE, and FILE_DEVICE_CHANGER respectively.
 
-For information about designing PnP drivers, see the [PnP Driver Design Guidelines](https://docs.microsoft.com/windows-hardware/drivers/kernel/pnp-driver-design-guidelines). For information about PnP-related **Io***Xxx* routines, see the [Plug and Play Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
-
- 
-
- 
-
-
-
-
+For information about designing PnP drivers, see the [PnP Driver Design Guidelines](../kernel/pnp-driver-design-guidelines.md). For information about PnP-related **Io***Xxx* routines, see the [Plug and Play Routines](/windows-hardware/drivers/ddi/index).

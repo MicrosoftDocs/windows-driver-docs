@@ -1,14 +1,13 @@
 ---
 title: Verb
 description: Verb
-ms.assetid: 38edbb37-5fd4-4301-adc0-4a66a7e8a564
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Verb
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Verb element specifies the Verb that the application registers.
 

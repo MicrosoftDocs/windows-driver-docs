@@ -1,17 +1,12 @@
 ---
 title: Debugging Multiple Targets
 description: Debugging Multiple Targets
-ms.assetid: 93eb6b49-e7a0-4f30-ade8-94019a1adf43
 keywords: ["multiple targets", "system", "system, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
 
 # Debugging Multiple Targets
-
-
-## <span id="ddk_debugging_multiple_targets_dbg"></span><span id="DDK_DEBUGGING_MULTIPLE_TARGETS_DBG"></span>
-
 
 You can debug multiple dump files or live user-mode applications at the same time. Each target contains one or more processes, and each process contains one or more threads.
 
@@ -25,7 +20,7 @@ These targets are also grouped into *systems*. Systems are sets of targets that 
 
 The *current* or *active* system is the system that you are currently debugging.
 
-### <span id="acquiring_multiple_targets"></span><span id="ACQUIRING_MULTIPLE_TARGETS"></span>Acquiring Multiple Targets
+### Acquiring Multiple Targets
 
 The first target is acquired in the usual manner.
 
@@ -56,8 +51,7 @@ However, you cannot separate execution of these processes. The [**g (Go)**](g--g
 **Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
 
 
-Example
--------
+### Example
 
 To  work with three dump files at the same time, you can use the -z option to load them when WinDbg is started. 
 
@@ -121,8 +115,7 @@ Detached
    2 User mini dump: c:\calc.dmp
 ```
 
-Resources
----------
+## Resources
 
 For addtional information on debugging see the following resources.
 

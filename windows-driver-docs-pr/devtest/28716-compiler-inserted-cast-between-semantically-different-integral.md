@@ -1,7 +1,6 @@
 ---
-title: C28716
+title: C28716 warning
 description: Warning C28716 Compiler-inserted cast between semantically different integral types.
-ms.assetid: 6cb5e57f-3535-4ef2-b586-d46d0de60a4b
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

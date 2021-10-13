@@ -1,7 +1,6 @@
 ---
 title: OPM Features
 description: OPM Features
-ms.assetid: a2fc9d0c-d85c-484e-8cf2-09b2a84801f8
 keywords:
 - OPM WDK display , features
 - OPM WDK display , COPP and OPM comparison
@@ -18,7 +17,7 @@ OPM supports all of Certified Output Protection Protocol's (COPP) features. The 
     > [!NOTE]
     > A COPP graphics driver is equivalent to an OPM video output.
 
-    COPP applications request information from a graphics driver by causing a [**DXVA\_COPPStatusInput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_coppstatusinput) structure to be passed to the driver.
+    COPP applications request information from a graphics driver by causing a [**DXVA\_COPPStatusInput**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppstatusinput) structure to be passed to the driver.
 
 -   OPM supports High-bandwidth Digital Content Protection (HDCP) repeaters. For more information about HDCP repeaters, see the [HDCP Specification Revision 1.1](https://go.microsoft.com/fwlink/p/?linkid=38728).
 
@@ -26,7 +25,7 @@ OPM supports all of Certified Output Protection Protocol's (COPP) features. The 
 
 -   OPM uses X.509 certificates and COPP uses proprietary XML certificates. The COPP certificate format is based on the signature format in the XML-Signature Syntax and Processing specification. For information about X.509 certificates, see the [X.509 Certificate Profile](https://go.microsoft.com/fwlink/p/?linkid=70416).
 
--   COPP applications get the COPP **IAMCertifiedOutputProtection** interface by creating version 7 or 9 of the Video Mixing Renderer ([*VMR*](https://docs.microsoft.com/windows/desktop/DirectShow/using-the-video-mixing-renderer)) and then passing IID\_IAMCertifiedOutputProtection to the VMR filter's implementation of **IUnknown::QueryInterface**. OPM applications get the **IOPMVideoOutput** interface by passing an HMONITOR or an **IDirect3DDevice9** object to the **OPMGetVideoOutputsFromHMONITOR** or **OPMGetVideoOutputsFromIDirect3DDevice9Object** function respectively. For more information about these functions and interfaces, see the Microsoft Windows SDK documentation.
+-   COPP applications get the COPP **IAMCertifiedOutputProtection** interface by creating version 7 or 9 of the Video Mixing Renderer ([*VMR*](/windows/desktop/DirectShow/using-the-video-mixing-renderer)) and then passing IID\_IAMCertifiedOutputProtection to the VMR filter's implementation of **IUnknown::QueryInterface**. OPM applications get the **IOPMVideoOutput** interface by passing an HMONITOR or an **IDirect3DDevice9** object to the **OPMGetVideoOutputsFromHMONITOR** or **OPMGetVideoOutputsFromIDirect3DDevice9Object** function respectively. For more information about these functions and interfaces, see the Microsoft Windows SDK documentation.
 
 -   OPM supports clone mode in all cases while COPP supports clone mode only in one specific case.
 

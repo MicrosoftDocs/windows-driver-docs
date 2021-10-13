@@ -1,7 +1,6 @@
 ---
 title: Custom Rendering in User Mode
 description: Custom Rendering in User Mode
-ms.assetid: a30c9eae-c3a9-4ff8-8e6c-d98c83f8596e
 keywords:
 - DirectMusic custom rendering WDK audio
 - DirectMusic custom rendering WDK audio , about user-mode custom rendering

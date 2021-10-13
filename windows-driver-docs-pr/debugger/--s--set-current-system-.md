@@ -1,7 +1,6 @@
 ---
 title: s (Set Current System)
 description: The s command sets or displays the current system number.
-ms.assetid: 33ad3a63-166f-4669-868c-49100c9b4d8c
 keywords: ["s (Set Current System) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -56,8 +55,7 @@ Specifies the system number to activate. For more information about the syntax, 
 
  
 
-Remarks
--------
+## Remarks
 
 The **||s** command is useful when you are debugging multiple targets or working with multiple dump files.  For more information about these kinds of sessions, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 

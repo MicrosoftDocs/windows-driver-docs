@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE
 description: The KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property creates a new virtual source.
-ms.assetid: 771c4084-8007-4280-8451-946a26182740
 keywords: ["KSPROPERTY_SYSAUDIO_CREATE_VIRTUAL_SOURCE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property creates a new virtual
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-sysaudio_create_virtual_source" data-raw-source="[&lt;strong&gt;SYSAUDIO_CREATE_VIRTUAL_SOURCE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-sysaudio_create_virtual_source)"><strong>SYSAUDIO_CREATE_VIRTUAL_SOURCE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_create_virtual_source" data-raw-source="[&lt;strong&gt;SYSAUDIO_CREATE_VIRTUAL_SOURCE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_create_virtual_source)"><strong>SYSAUDIO_CREATE_VIRTUAL_SOURCE</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -63,8 +62,7 @@ The property value (operation data) is a ULONG variable containing the virtual s
 
 A KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to create a mixer-line virtual source such as a volume or mute control.
 
@@ -74,10 +72,9 @@ After SysAudio has assigned an index to a virtual source, a [**KSPROPERTY\_SYSAU
 
 The user controls the volume levels of various audio sources through the SndVol32 application. These sources include the wave-output device, MIDI synthesizer, CD player, and line-in jack. SndVol32 uses the Windows multimedia **waveOut**_Xxx_, **midiOut**_Xxx_, and **aux**_Xxx_ functions to control the volume levels for these sources. For more information about Windows multimedia functions, see the Microsoft Windows SDK documentation.
 
-SysAudio intercepts volume changes made to these devices and applies them to its virtual sources. For example, if a software MIDI synthesizer that converts a MIDI file to wave data is connected to one of the virtual audio device's wave-rendering pins, SysAudio applies midiOut*Xxx* volume changes to the pin (instead of **waveOut**_Xxx_ volume changes). Similarly, if the [Redbook system driver](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components#redbook-system-driver), which converts digital audio from a CD player to wave data, is connected to one of the virtual audio device's wave-rendering pins, SysAudio applies AUXCAPS\_CDAUDIO volume changes to the pin. For more information about the AUXCAPS\_CDAUDIO structure, see the Windows SDK documentation.
+SysAudio intercepts volume changes made to these devices and applies them to its virtual sources. For example, if a software MIDI synthesizer that converts a MIDI file to wave data is connected to one of the virtual audio device's wave-rendering pins, SysAudio applies midiOut*Xxx* volume changes to the pin (instead of **waveOut**_Xxx_ volume changes). Similarly, if the [Redbook system driver](./kernel-mode-wdm-audio-components.md#redbook-system-driver), which converts digital audio from a CD player to wave data, is connected to one of the virtual audio device's wave-rendering pins, SysAudio applies AUXCAPS\_CDAUDIO volume changes to the pin. For more information about the AUXCAPS\_CDAUDIO structure, see the Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -95,16 +92,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-sysaudio_create_virtual_source)
+[**SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_create_virtual_source)
 
 [**KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE**](ksproperty-sysaudio-attach-virtual-source.md)
-
- 
-
- 
-
-
-
-
-
 

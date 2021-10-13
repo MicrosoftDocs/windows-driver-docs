@@ -1,7 +1,6 @@
 ---
 title: Developing IPsec-Compatible Callout Drivers
 description: Developing IPsec-Compatible Callout Drivers
-ms.assetid: 5e4fad4e-a790-4294-b3ac-a796f76265ad
 keywords:
 - IPsec WDK Windows Filtering Platform , compatibility with WFP callout drivers
 - Windows Filtering Platform callout drivers WDK , IPsec compatibility
@@ -64,7 +63,7 @@ To make a callout driver that is registered with a transport layer (FWPS\_LAYER\
 
 1.  Register the callout at ALE authorize receive/accept layers (**FWPS\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V4** or **FWPS\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V6**) in addition to transport layers (FWPS\_LAYER\_*XXX*\_TRANSPORT\_V4 or \_V6).
 
-2.  To prevent interference with internal Windows IPsec processing, register the callout at a sublayer that has a lower weight than **FWPM\_SUBLAYER\_UNIVERSAL**. Use the [**FwpmSubLayerEnum0**](https://docs.microsoft.com/windows/desktop/api/fwpmu/nf-fwpmu-fwpmsublayerenum0) function to find the sublayer's weight. For information about this function, see the [Windows Filtering Platform](https://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
+2.  To prevent interference with internal Windows IPsec processing, register the callout at a sublayer that has a lower weight than **FWPM\_SUBLAYER\_UNIVERSAL**. Use the [**FwpmSubLayerEnum0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmsublayerenum0) function to find the sublayer's weight. For information about this function, see the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) documentation in the Microsoft Windows SDK.
 
 3.  An incoming transport packet that requires ALE classification must be inspected at the ALE authorize receive/accept layers (**FWPS\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V4** or **FWPS\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V6**). Such a packet must be permitted from incoming transport layers. Beginning with Windows Vista with Service Pack 1 (SP1) and Windows Server 2008, use the **FWPS\_METADATA\_FIELD\_ALE\_CLASSIFY\_REQUIRED** metadata flag to determine whether the incoming packet will be indicated to the **FWPM\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V4** and **FWPM\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V6** filtering layers. This metadata flag replaces the **FWP\_CONDITION\_FLAG\_REQUIRES\_ALE\_CLASSIFY** condition flag that was used in Windows Vista.
 
@@ -86,19 +85,11 @@ To make a callout driver that is registered with a transport layer (FWPS\_LAYER\
     }
     ```
 
-5.  After an IPsec-protected packet is decrypted and verified at the transport layer, the AH/ESP header remains in the IP header. If such a packet has to be reinjected back into the TCP/IP stack, the IP header must be rebuilt to remove the AH/ESP header. Beginning with Windows Vista with SP1 and Windows Server 2008, you can do this by cloning the packet and calling the [**FwpsConstructIpHeaderForTransportPacket0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsconstructipheaderfortransportpacket0) function that has the *headerIncludeHeaderSize* parameter set to the IP header size of the cloned packet.
+5.  After an IPsec-protected packet is decrypted and verified at the transport layer, the AH/ESP header remains in the IP header. If such a packet has to be reinjected back into the TCP/IP stack, the IP header must be rebuilt to remove the AH/ESP header. Beginning with Windows Vista with SP1 and Windows Server 2008, you can do this by cloning the packet and calling the [**FwpsConstructIpHeaderForTransportPacket0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsconstructipheaderfortransportpacket0) function that has the *headerIncludeHeaderSize* parameter set to the IP header size of the cloned packet.
 
-6.  At the ALE receive/accept layer, a callout can detect IPsec-protected traffic by checking whether the **FWP\_CONDITION\_FLAG\_IS\_IPSEC\_SECURED** flag is set. At transport layers, a callout can detect IPsec-protected traffic by calling the [**FwpsGetPacketListSecurityInformation0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsgetpacketlistsecurityinformation0) function and checking whether the **FWPS\_PACKET\_LIST\_INFORMATION0** flag is set in the *queryFlags* parameter.
+6.  At the ALE receive/accept layer, a callout can detect IPsec-protected traffic by checking whether the **FWP\_CONDITION\_FLAG\_IS\_IPSEC\_SECURED** flag is set. At transport layers, a callout can detect IPsec-protected traffic by calling the [**FwpsGetPacketListSecurityInformation0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsgetpacketlistsecurityinformation0) function and checking whether the **FWPS\_PACKET\_LIST\_INFORMATION0** flag is set in the *queryFlags* parameter.
 
 ### Working With IPsec ESP Packets
 
-When the engine indicates decrypted encapsulating security payload (ESP) packets, it truncates them to exclude trailing ESP data. Because of the way the engine handles such packets, the MDL data in the [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structure does not reflect the correct packet length. The correct length can be obtained by using the [**NET\_BUFFER\_DATA\_LENGTH**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-data-length) macro to retrieve the data length of the **NET\_BUFFER** structure.
-
- 
-
- 
-
-
-
-
+When the engine indicates decrypted encapsulating security payload (ESP) packets, it truncates them to exclude trailing ESP data. Because of the way the engine handles such packets, the MDL data in the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure does not reflect the correct packet length. The correct length can be obtained by using the [**NET\_BUFFER\_DATA\_LENGTH**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_data_length) macro to retrieve the data length of the **NET\_BUFFER** structure.
 

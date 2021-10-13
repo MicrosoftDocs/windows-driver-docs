@@ -1,7 +1,6 @@
 ---
 title: PROPSETID\_EXT\_TRANSPORT
 description: PROPSETID\_EXT\_TRANSPORT
-ms.assetid: 2e96dec7-43a9-44a4-9636-4ccb5244d5bd
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

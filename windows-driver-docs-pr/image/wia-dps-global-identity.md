@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_GLOBAL\_IDENTITY
 description: The WIA\_DPS\_GLOBAL\_IDENTITY property contains the SOAP address of a web services scanner device. The WIA minidriver creates and maintains this property.
-ms.assetid: 4ee25eb9-eb5b-43b2-8b35-7bc8ac45c90a
 keywords: ["WIA_DPS_GLOBAL_IDENTITY Imaging Devices"]
 topic_type:
 - apiref
@@ -26,15 +25,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA minidriver initializes this property at run time by reading the PKEY\_PNPX\_GlobalIdentity device property from the Function Instance object.
 
 Both PKEY\_PNPX\_GlobalIdentity and PKEY\_PNPX\_ID contain a unique ID of the UPnP Device. The difference is that PKEY\_PNPX\_GlobalIdentity always contains the UUID of the root device for all Function Instances, while PKEY\_PNPX\_ID contains the UUID of the Device/Sub-Device that the Function Instance represents.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

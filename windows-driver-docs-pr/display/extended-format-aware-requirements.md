@@ -1,7 +1,6 @@
 ---
 title: Extended Format Aware Requirements
 description: Extended Format Aware Requirements
-ms.assetid: eab9c254-fca7-449d-a6cf-1b20d2e7173c
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format aware requirements
 - extended format aware requirements WDK Windows 7 display
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later operating systems.
 
-User-mode display drivers that are extended format aware guarantee to return accurate values from their [**CheckFormatSupport**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkformatsupport) entry-point function for every format in the table in the [Details of the Extended Format](details-of-the-extended-format.md) section. However, drivers do not necessarily support every format.
+User-mode display drivers that are extended format aware guarantee to return accurate values from their [**CheckFormatSupport**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkformatsupport) entry-point function for every format in the table in the [Details of the Extended Format](details-of-the-extended-format.md) section. However, drivers do not necessarily support every format.
 
 Extended format aware drivers implicitly guarantee that casting of fully-typed back buffers is supported.
 
@@ -43,11 +42,11 @@ The Direct3D 10.1 and later DDIs are updated to allow the user-mode display driv
 
 ### <span id="xr_bias_and_presentdxgi"></span><span id="XR_BIAS_AND_PRESENTDXGI"></span>XR\_BIAS and PresentDXGI
 
-Drivers are not required to support windowed present of XR\_BIAS resources through calls to their [**PresentDXGI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions) functions. These cases are restricted at the runtime level. As with all other formats, drivers perform full-screen present of XR\_BIAS through either a flip operation or a bit-block transfer (bitblt) operation with an identical source and destination resource. No stretch or conversion is necessary.
+Drivers are not required to support windowed present of XR\_BIAS resources through calls to their [**PresentDXGI**](/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions) functions. These cases are restricted at the runtime level. As with all other formats, drivers perform full-screen present of XR\_BIAS through either a flip operation or a bit-block transfer (bitblt) operation with an identical source and destination resource. No stretch or conversion is necessary.
 
 ### <span id="xr_bias_and_bltdxgi"></span><span id="XR_BIAS_AND_BLTDXGI"></span>XR\_BIAS and BltDXGI
 
-The Direct3D runtime calls a driver's [**BltDXGI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions) function to perform only the following operations on XR\_BIAS source resources:
+The Direct3D runtime calls a driver's [**BltDXGI**](/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions) function to perform only the following operations on XR\_BIAS source resources:
 
 -   A copy to a destination that is also XR\_BIAS
 
@@ -60,10 +59,4 @@ The Direct3D runtime calls a driver's [**BltDXGI**](https://docs.microsoft.com/w
 Because XR\_BIAS does not support Multiple Sample Anti Aliasing (MSAA), drivers are not required to resolve XR\_BIAS resources.
 
  
-
- 
-
-
-
-
 

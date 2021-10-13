@@ -2,7 +2,6 @@
 title: IRP_MN_DEVICE_ENUMERATED
 description: The PnP manager uses this I/O request packet (IRP) to notify bus drivers that a device object exists and that it has been fully enumerated by the plug and play manager.
 ms.date: 08/12/2017
-ms.assetid: 50ECF6E1-4FC6-4EEA-BACF-EBAD0329DA2E
 keywords:
  - IRP_MN_DEVICE_ENUMERATED Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -13,14 +12,17 @@ ms.localizationpriority: medium
 
 The PnP manager uses this I/O request packet (IRP) to notify bus drivers that a device object exists and that it has been fully enumerated by the plug and play manager.
 
-Major Code
-----------
+## Value
+
+0x19
+
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-When Sent
----------
 
-The PnP manager sends this IRP just before user mode is notified with GUID\_DEVICE\_ENUMERATED. This IRP allows drivers to provide a preprocess routine for IRP\_MN\_DEVICE\_ENUMERATED, such as filling in additional device properties. This IRP primarily allows drivers to set device properties for the physical device object (PDO) by using [**IoSetDevicePropertyData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdevicepropertydata).
+## When Sent
+
+The PnP manager sends this IRP just before user mode is notified with GUID\_DEVICE\_ENUMERATED. This IRP allows drivers to provide a preprocess routine for IRP\_MN\_DEVICE\_ENUMERATED, such as filling in additional device properties. This IRP primarily allows drivers to set device properties for the physical device object (PDO) by using [**IoSetDevicePropertyData**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdevicepropertydata).
 
 ## Input Parameters
 
@@ -35,10 +37,9 @@ None
 ## I/O Status Block
 
 
-A driver that handles this IRP sets [Irp-&gt;IoStatus.Status](https://docs.microsoft.com/windows-hardware/drivers/kernel/i-o-status-blocks) to STATUS\_SUCCESS or an appropriate error status.
+A driver that handles this IRP sets [Irp-&gt;IoStatus.Status](./i-o-status-blocks.md) to STATUS\_SUCCESS or an appropriate error status.
 
-Operation
----------
+## Operation
 
 The **IRP\_MN\_DEVICE\_ENUMERATED** IRP is sent to the bus driver's PDO to indicate that the bus driver PDO exists.
 
@@ -47,8 +48,7 @@ The **IRP\_MN\_DEVICE\_ENUMERATED** IRP is sent to the bus driver's PDO to indic
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,9 +73,4 @@ Requirements
 [Plug and Play Minor IRPs](plug-and-play-minor-irps.md)
 
  
-
- 
-
-
-
 

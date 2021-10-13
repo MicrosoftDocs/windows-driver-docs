@@ -1,7 +1,6 @@
 ---
 title: Bidi Extension Sample for TCP/IP Port Monitor
 description: Bidi Extension Sample for TCP/IP Port Monitor
-ms.assetid: 76454b0c-0e02-4372-97ed-2401a785cef8
 keywords:
 - bidi extension files WDK printer autoconfig
 - in-box autoconfiguration support WDK printer , bidi extension files
@@ -16,7 +15,7 @@ The following code example is a sample XML file that extends the bidi communicat
 
 ```xml
 <?xml version="1.0" encoding="US-ASCII"?>
-<bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
+<bidi:Schema xmlns:bidi="https://schemas.microsoft.com/windows/2005/03/printing/bidi">
     <Property name="Printer">
       <Property name="Layout">
         <Property name="InputBins">

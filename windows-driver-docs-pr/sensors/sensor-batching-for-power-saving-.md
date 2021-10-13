@@ -1,7 +1,6 @@
 ---
 title: Sensor data batching for power savings
 description: This topic covers the interfaces that are required between the sensor class extension and the sensor driver, to implement sensor data batching in Windows 10.
-ms.assetid: E64B9CE0-2C76-430A-ABE0-717BD27BCA8A
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -48,10 +47,10 @@ If the sensor hardware subsystem is wake-capable, then it should make sure that 
 
 The device driver software interface (DDSI) functions are the interface between the driver and the class extension. To support data batching, a driver must implement the following DDSI function, so that the sensor class extension can set the batch latency.
 
--   [EvtSensorSetBatchLatency](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
+-   [EvtSensorSetBatchLatency](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)
     This is a callback function that sets the batch latency for a specified sensor. The driver should set the Batch Latency to a value that is less than or equal to the *BatchLatencyMs* parameter, depending on buffer availability.
 
-The driver must also implement all the required DDSI functions. For more information, see [Sensor DDSI functions](sensor-ddsi-functions.md).
+The driver must also implement all the required DDSI functions. For more information, see [_SENSOR_CONTROLLER_CONFIG structure](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
 
 It is optional for the sensor class extension to specify batch latency. The default batch latency for all sensors is zero (0), which is used to indicate that samples will not be batched. Sensor samples will be delivered in batches, only if the class extension calls **EvtSensorSetBatchLatency** to set a batch latency value. Otherwise, the samples will be delivered normally at the periodic data interval rate.
 
@@ -66,14 +65,14 @@ Batch latency and data rate are related as follows:
 
 ![formula for the batch latency value in milliseconds.](images/batch-formula.png)
 
-Where *SensorBatching\_MaxSize\_Bytes* is the maximum size of the buffer for the batched sensor data. If your sensor is an accelerometer, then we recommend a hardware buffer that is large enough to hold 250 or more samples. The data rate is expressed in milliseconds, and it's the length of time it takes to transfer one data sample. The number of samples the sensor hardware must store in a batch is inversely proportional to the data rate. The smaller the data rate, the bigger the sample buffer that is needed to store the batched samples for a given batch latency value. In the preceding formula, batch latency is represented by *BatchLatencyMs* and data rate is represented by *DataRateMs*. And If the combination of *BatchLatencyMs* and *DataRateMs* result in a buffer size that’s larger than *SensorBatching\_MaxSize\_Bytes*, then **EvtSensorSetBatchLatency** and [EvtSensorSetDataInterval](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config) will set the batch latency to the value shown by the preceding formula.
+Where *SensorBatching\_MaxSize\_Bytes* is the maximum size of the buffer for the batched sensor data. If your sensor is an accelerometer, then we recommend a hardware buffer that is large enough to hold 250 or more samples. The data rate is expressed in milliseconds, and it's the length of time it takes to transfer one data sample. The number of samples the sensor hardware must store in a batch is inversely proportional to the data rate. The smaller the data rate, the bigger the sample buffer that is needed to store the batched samples for a given batch latency value. In the preceding formula, batch latency is represented by *BatchLatencyMs* and data rate is represented by *DataRateMs*. And If the combination of *BatchLatencyMs* and *DataRateMs* result in a buffer size that’s larger than *SensorBatching\_MaxSize\_Bytes*, then **EvtSensorSetBatchLatency** and [EvtSensorSetDataInterval](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config) will set the batch latency to the value shown by the preceding formula.
 
 If the caller specifies a *BatchLatencyMs* value that is less than *DataRateMs*, then the data is delivered without buffering.
 
 ## Batching with data thresholds
 
 
-A sensor driver that implements data batching can use [EvtSensorSetDataThresholds](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config) to set a non-zero data threshold. In this case, when the difference in data values between the current readings and the last readings, exceeds the data threshold that was set using **EvtSensorSetDataThresholds**, then the data collection, batching and delivery process is invoked. So using data batching together with data thresholds, allows the sensor driver to save even more power.
+A sensor driver that implements data batching can use [EvtSensorSetDataThresholds](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config) to set a non-zero data threshold. In this case, when the difference in data values between the current readings and the last readings, exceeds the data threshold that was set using **EvtSensorSetDataThresholds**, then the data collection, batching and delivery process is invoked. So using data batching together with data thresholds, allows the sensor driver to save even more power.
 
 When non-zero data thresholds are set by the sensor class extension, along with data batching, the driver is expected to deliver batched samples with accurate timestamps, and to honor the data thresholds as well. If the sensor hardware itself isn’t capable of keeping accurate timestamps while enforcing data thresholds it can collect samples without enforcing data thresholds. However, in such a case the driver should filter out samples that don’t meet the current data threshold settings, before delivering them to the sensor class extension.
 
@@ -122,11 +121,4 @@ The following diagram illustrates the different configurations described in the 
 **Buffer-full behavior in hardware**
 
 Under normal circumstances the driver is supposed to read the hardware buffer at least once every time interval equal to *BatchLatencyMs*, to ensure that no data is dropped or lost. When the hardware FIFO buffer fills up, it should wrap around and behave like a circular buffer, overwriting older events.
-
- 
-
- 
-
-
-
 

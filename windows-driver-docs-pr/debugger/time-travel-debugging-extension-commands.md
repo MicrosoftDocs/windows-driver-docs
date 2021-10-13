@@ -5,15 +5,13 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
-#  Time travel debugging extension commands
+# Time travel debugging extension commands
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
 
 This section introduces the time travel debugger extension commands.
 
-
 ## <span id="in_this_section"></span>In this section
-
 
 <table>
 <colgroup>
@@ -54,11 +52,3 @@ The time travel debugger extension commands are implemented in ttdext.dll. The t
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-
-
-
-
-

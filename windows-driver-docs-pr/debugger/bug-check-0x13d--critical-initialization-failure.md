@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x13D CRITICAL_INITIALIZATION_FAILURE
 description: The CRITICAL_INITIALIZATION_FAILURE bug check has a value of 0x0000013D. This indicates that early kernel initialization has failed.
-ms.assetid: 6983C044-223E-4C58-91A9-5C89C9C0FAC9
 keywords: ["Bug Check 0x13D CRITICAL_INITIALIZATION_FAILURE", "CRITICAL_INITIALIZATION_FAILURE"]
 ms.date: 05/23/2017
 topic_type:

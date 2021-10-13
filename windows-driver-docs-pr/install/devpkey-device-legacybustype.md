@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_LegacyBusType
 description: DEVPKEY_Device_LegacyBusType
-ms.assetid: 76c2a472-bb05-4f6a-84da-0ae9e7c1fdf1
 keywords: ["DEVPKEY_Device_LegacyBusType Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_Device_LegacyBusType device property represents the legacy bus numbe
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -51,52 +56,30 @@ The DEVPKEY_Device_LegacyBusType device property represents the legacy bus numbe
 
  
 
-Remarks
--------
+## Remarks
 
-Windows sets the value of DEVPKEY_Device_LegacyBusType to the value of the LegacyBusType member of the [**PNP_BUS_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_pnp_bus_information) structure that a bus driver returns in response to an [**IRP_MN_QUERY_BUS_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-bus-information) request. The value of DEVPKEY_Device_LegacyBusType is one of [**INTERFACE_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_interface_type) enumerator values that are defined in Wdm.h and Ntddk.h.
+Windows sets the value of DEVPKEY_Device_LegacyBusType to the value of the LegacyBusType member of the [**PNP_BUS_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_pnp_bus_information) structure that a bus driver returns in response to an [**IRP_MN_QUERY_BUS_INFORMATION**](../kernel/irp-mn-query-bus-information.md) request. The value of DEVPKEY_Device_LegacyBusType is one of [**INTERFACE_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_interface_type) enumerator values that are defined in Wdm.h and Ntddk.h.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_LegacyBusType.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_LegacyBusType.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LegacyBusType property key. Instead, you can use the corresponding SPDRP_LEGACYBUSTYPE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LegacyBusType property key. Instead, you can use the corresponding SPDRP_LEGACYBUSTYPE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**INTERFACE_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_interface_type)
+[**INTERFACE_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_interface_type)
 
-[**IRP_MN_QUERY_BUS_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-bus-information)
+[**IRP_MN_QUERY_BUS_INFORMATION**](../kernel/irp-mn-query-bus-information.md)
 
-[**PNP_BUS_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_pnp_bus_information)
+[**PNP_BUS_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_pnp_bus_information)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

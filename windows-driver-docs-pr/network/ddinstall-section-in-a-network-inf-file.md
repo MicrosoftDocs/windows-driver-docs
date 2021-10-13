@@ -1,7 +1,6 @@
 ---
 title: DDInstall Section in a Network INF File
 description: DDInstall Section in a Network INF File
-ms.assetid: f6621796-0d1f-4d96-9850-720718e7ac44
 keywords:
 - INF files WDK network , DDInstall section
 - network INF files WDK , DDInstall section
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-A *DDInstall* section in a network INF file is based on the generic [**INF DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section).
+A *DDInstall* section in a network INF file is based on the generic [**INF DDInstall section**](../install/inf-ddinstall-section.md).
 
 A *DDInstall* section in a network INF file has the following network-specific entries:
 
@@ -224,10 +223,4 @@ The *DDInstall* section of an INF file that installs a multiport network adapter
 The **Port1DeviceNumber** and **Port1FunctionNumber** entries are mutually exclusive. If both entries are present in a given *DDInstall* Section, only the **Port1DeviceNumber** entry is used.
 
  
-
- 
-
-
-
-
 

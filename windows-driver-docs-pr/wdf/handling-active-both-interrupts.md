@@ -1,7 +1,6 @@
 ---
 title: Handling Active-Both Interrupts
 description: Handling Active-Both Interrupts
-ms.assetid: CFA205B1-FDDD-4E27-8CF9-106C8D1CC4EF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,11 +22,11 @@ On SoC hardware platforms, active-both interrupts are typically used for very si
 
 To distinguish between low-to-high and high-to-low transitions, the driver must track the state of each interrupt. To do so, your driver might maintain a Boolean interrupt state value that is **FALSE** when interrupt line state is low and **TRUE** when line state is high.
 
-Consider an example in which the line state defaults to low when the system starts. The driver initializes the state value to **FALSE** in its [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function. Then each time the driver's ISR is called, signaling a change in state, the driver inverts the state value in its ISR.
+Consider an example in which the line state defaults to low when the system starts. The driver initializes the state value to **FALSE** in its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function. Then each time the driver's ISR is called, signaling a change in state, the driver inverts the state value in its ISR.
 
-If the line state is high when the system starts, the interrupt fires immediately after it is enabled. Because the driver calls the [**IoConnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterruptex) routine directly, instead of calling [**WdfInterruptCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate), it is ensured of receiving a possible immediate interrupt.
+If the line state is high when the system starts, the interrupt fires immediately after it is enabled. Because the driver calls the [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) routine directly, instead of calling [**WdfInterruptCreate**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate), it is ensured of receiving a possible immediate interrupt.
 
-This solution requires that the GPIO controller support active-both interrupts in hardware, or that the driver for the GPIO controller emulate active-both interrupts in software. For information about emulating active-both interrupts, see the description of the **EmulateActiveBoth** member of the [**CONTROLLER\_ATTRIBUTE\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/ns-gpioclx-_controller_attribute_flags) structure.
+This solution requires that the GPIO controller support active-both interrupts in hardware, or that the driver for the GPIO controller emulate active-both interrupts in software. For information about emulating active-both interrupts, see the description of the **EmulateActiveBoth** member of the [**CONTROLLER\_ATTRIBUTE\_FLAGS**](/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_controller_attribute_flags) structure.
 
 The following code example shows how a KMDF driver for a peripheral device can track interrupt polarity.
 
@@ -166,17 +165,11 @@ EvtDeviceReleaseHardware(
 }
 ```
 
-In the preceding code example, the driver's [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function configures the device context and then calls [**IoInitializeDpcRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinitializedpcrequest) to register a [*DpcForIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_dpc_routine) routine.
+In the preceding code example, the driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function configures the device context and then calls [**IoInitializeDpcRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializedpcrequest) to register a [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine.
 
-The driver's [*InterruptService*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kservice_routine) routine inverts the interrupt state value and then calls [**IoRequestDpc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iorequestdpc) to queue the DPC.
+The driver's [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine inverts the interrupt state value and then calls [**IoRequestDpc**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdpc) to queue the DPC.
 
-In its [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function, the driver initializes the state value to **FALSE** and then calls [**IoConnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterruptex). In its [*EvtDeviceReleaseHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) callback function, the driver calls [**IoDisconnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iodisconnectinterruptex) to unregister its ISR.
-
- 
+In its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function, the driver initializes the state value to **FALSE** and then calls [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex). In its [*EvtDeviceReleaseHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) callback function, the driver calls [**IoDisconnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodisconnectinterruptex) to unregister its ISR.
 
  
-
-
-
-
 

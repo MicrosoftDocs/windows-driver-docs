@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_OPERATION_MODE
 description: WDI_TLV_OPERATION_MODE is a TLV that contains the desired operation mode.
-ms.assetid: CF5D9148-E50B-4F39-B37C-2495DE9A1488
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_OPERATION_MODE Network Drivers Starting with Windows Vista
@@ -28,12 +27,11 @@ The size (in bytes) of a UINT32.
 
 | Type   | Description                                                                                        |
 |--------|----------------------------------------------------------------------------------------------------|
-| UINT32 | The desired operation mode, as defined in [**WDI\_OPERATION\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ne-dot11wdi-_wdi_operation_mode). |
+| UINT32 | The desired operation mode, as defined in [**WDI\_OPERATION\_MODE**](/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_operation_mode). |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

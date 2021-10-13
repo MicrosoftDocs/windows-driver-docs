@@ -1,7 +1,6 @@
 ---
 title: Audio Device Class Inactivity Timer Implementation
 description: Audio Device Class Inactivity Timer Implementation
-ms.assetid: e7e431ec-626d-4fdb-8705-fc5420c43f17
 keywords:
 - inactivity timers WDK audio
 - timers WDK audio
@@ -36,7 +35,7 @@ Vendors can override the default values of the following power-idle parameters:
     \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\xxxx\yyyy\PowerSettings\ConservationIdleTime
     ```
 
-    Note that *xxxx* represents the Media class GUID (see [System-Supplied Device Setup Classes](https://docs.microsoft.com/previous-versions/ff553419(v=vs.85))) and *yyyy* represents the name of the driver's subkey under the Media class GUID. The value of the key specifies the time-out interval in seconds.
+    Note that *xxxx* represents the Media class GUID (see [System-Supplied Device Setup Classes](../install/system-defined-device-setup-classes-reserved-for-system-use.md)) and *yyyy* represents the name of the driver's subkey under the Media class GUID. The value of the key specifies the time-out interval in seconds.
 
 -   *PerformanceIdleTime*
 
@@ -60,11 +59,11 @@ Vendors can override the default values of the following power-idle parameters:
 
 The three power-idle registry keys exist only if the device-installation INF file creates them. Before configuring the power-idle timer, PortCls attempts to retrieve the driver-specific power-idle parameters from the registry. PortCls uses the default values in place of any power-idle parameters it does not find in the registry. As explained previously, the default power-idle parameter values disable the idle timer.
 
-For more information about specifying the *ConservationIdleTime*, *PerformanceIdleTime*, and *IdlePowerState* parameters, see the definitions of the last three call parameters in [**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-poregisterdeviceforidledetection).
+For more information about specifying the *ConservationIdleTime*, *PerformanceIdleTime*, and *IdlePowerState* parameters, see the definitions of the last three call parameters in [**PoRegisterDeviceForIdleDetection**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection).
 
 ### <span id="example"></span><span id="EXAMPLE"></span> Example
 
-For example, a hardware vendor might want to specify the following power-idle parameters for an audio device: *ConservationIdleTime* = 0x0000001e (30 seconds), *PerformanceIdleTime* = 0x0000012c (300 seconds), and *IdlePowerState* = 0x00000003 (device power state D3). To enable these settings, the device-installation file can include an [**INF AddReg section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) containing the following directives:
+For example, a hardware vendor might want to specify the following power-idle parameters for an audio device: *ConservationIdleTime* = 0x0000001e (30 seconds), *PerformanceIdleTime* = 0x0000012c (300 seconds), and *IdlePowerState* = 0x00000003 (device power state D3). To enable these settings, the device-installation file can include an [**INF AddReg section**](../install/inf-addreg-directive.md) containing the following directives:
 
 ```inf
 [MyAudioDevice.AddReg]
@@ -80,11 +79,4 @@ HKR represents the driver's root key in the registry:
 ```
 
 Again, *xxxx* represents the Media class GUID and *yyyy* represents the name of the driver's subkey. The **PowerSettings** subkey is specified relative to the path name for the root key.
-
- 
-
- 
-
-
-
 

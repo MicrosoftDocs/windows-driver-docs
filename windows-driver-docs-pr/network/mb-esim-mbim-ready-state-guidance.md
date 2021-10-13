@@ -1,7 +1,6 @@
 ---
 title: MB eSIM MBIM ready state guidance
 description: MB eSIM MBIM ready state guidance
-ms.assetid: E7EB5E6D-1858-4B94-AF91-05333CC93D8B
 ms.date: 08/10/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ When a change in both MBIM_MS_UICCSLOT_STATE and MBIM_SUBSCRIBER_READY_STATE is 
 
 When enabling a new profile or switching between profiles, the ready state should have the following flow:
 
-![eSIM MBIM ready state flow when switching profiles](images/esim_mbim_ready_state_flow.png "eSIM MBIM ready state flow when switching profiles")
+![eSIM MBIM ready state flow when switching profiles.](images/esim_mbim_ready_state_flow.png "eSIM MBIM ready state flow when switching profiles")
 
 For more info about MBIM_MS_UICCSLOT_STATE, see the MBIM_MS_UICCSLOT_STATE table on [MB Multi-SIM Operations (MBIM_CID_MS_SLOT_INFO_STATUS)](mb-multi-sim-operations.md).
 
-For more info about MBIM_SUBSCRIBER_READY_STATE, see Section 10.5.2.3 of [the public USB MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064).
+For more info about MBIM_SUBSCRIBER_READY_STATE, see Section 10.5.2.3 of [the public USB MBIM standard](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement).
 

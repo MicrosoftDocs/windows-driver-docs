@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.HW Section for PF Miniport Drivers
 description: INF DDInstall.HW Section for PF Miniport Drivers
-ms.assetid: 65399462-4AF1-401C-87CB-BF387CA0B053
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -28,13 +27,7 @@ Needs=PciSriovSupported.HW
 
 For more information about the *DDInstall* section, see [DDInstall Section in a Network INF File](ddinstall-section-in-a-network-inf-file.md).
 
-For more information about the *DDInstall*.HW section, see [**INF DDInstall.HW Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section).
+For more information about the *DDInstall*.HW section, see [**INF DDInstall.HW Section**](../install/inf-ddinstall-hw-section.md).
 
  
-
- 
-
-
-
-
 

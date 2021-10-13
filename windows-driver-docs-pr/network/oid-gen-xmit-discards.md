@@ -1,8 +1,7 @@
 ---
 title: OID_GEN_XMIT_DISCARDS
 description: As a query, NDIS and overlying drivers use the OID_GEN_XMIT_DISCARDS OID to determine the number of transmit discards on a miniport adapter.
-ms.assetid: f6265262-c485-441c-bb89-fa1d302608d2
-ms.date: 08/08/2017
+ms.date: 11/01/2019
 keywords: 
  -OID_GEN_XMIT_DISCARDS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -21,15 +20,13 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for miniport drivers. See the [OID\_GEN\_STATISTICS](oid-gen-statistics.md) OID for more information about statistics.
 
-The count that this OID returns is the number of packets that is discarded by the interface.
+The count that this OID returns is the number of packets that is discarded by the interface. The count is identical to the *ifOutDiscards* counter described in RFC 2863.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

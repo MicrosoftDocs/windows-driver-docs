@@ -1,13 +1,14 @@
 ---
 title: Standardized INF Keywords for NDIS Selective Suspend
 description: Standardized INF Keywords for NDIS Selective Suspend
-ms.assetid: A45EE23D-1C60-4DA4-82A5-89DB5CE48E21
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for NDIS Selective Suspend
 
+> [!NOTE]
+> Selective Suspend related keywords are for traditional NDIS miniport driver use only. They are deprecated in [Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) and must not be used by its client drivers.
 
 The following standardized INF keywords are defined to enable, disable, and configure parameters for NDIS selective suspend on a miniport driver:
 
@@ -85,7 +86,7 @@ The miniport driver must check the **\*SelectiveSuspend** keyword value in the r
 ## \*SSIdleTimeout INF Keyword
 
 
-The INF file for the miniport driver that supports NDIS selective suspend should specify the optional **\*SSIdleTimeout** standardized INF keyword. This keyword specifies the idle time-out period in units of seconds. If NDIS does not detect any activity on the network adapter for a period that exceeds the **\*SSIdleTimeout** value, NDIS starts a selective suspend operation by calling the miniport driver's [*MiniportIdleNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_idle_notification) handler function.
+The INF file for the miniport driver that supports NDIS selective suspend should specify the optional **\*SSIdleTimeout** standardized INF keyword. This keyword specifies the idle time-out period in units of seconds. If NDIS does not detect any activity on the network adapter for a period that exceeds the **\*SSIdleTimeout** value, NDIS starts a selective suspend operation by calling the miniport driver's [*MiniportIdleNotification*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_idle_notification) handler function.
 
 After the driver is installed, administrators can update the **\*SSIdleTimeout** keyword value in the **Advanced** property page for the network adapter. For more information about advanced properties, see [Specifying Configuration Parameters for the Advanced Properties Page](specifying-configuration-parameters-for-the-advanced-properties-page.md).
 
@@ -154,7 +155,7 @@ NDIS measures the idle time-out by using timers that are precise to within 30 pe
 ## \*SSIdleTimeoutScreenOff INF Keyword
 
 
-The INF file for the miniport driver that supports NDIS selective suspend should specify the optional **\*SSIdleTimeoutScreenOff** standardized INF keyword. This keyword specifies the idle time-out period in units of seconds and is only applicable when the screen is off. If NDIS does not detect any activity on the network adapter for a period that exceeds the **\*SSIdleTimeoutScreenOff** value after the screen is off, NDIS starts a selective suspend operation by calling the miniport driver's [*MiniportIdleNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_idle_notification) handler function.
+The INF file for the miniport driver that supports NDIS selective suspend should specify the optional **\*SSIdleTimeoutScreenOff** standardized INF keyword. This keyword specifies the idle time-out period in units of seconds and is only applicable when the screen is off. If NDIS does not detect any activity on the network adapter for a period that exceeds the **\*SSIdleTimeoutScreenOff** value after the screen is off, NDIS starts a selective suspend operation by calling the miniport driver's [*MiniportIdleNotification*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_idle_notification) handler function.
 
 After the driver is installed, administrators can update the **\*SSIdleTimeoutScreenOff** keyword value in the **Advanced** property page for the network adapter. For more information about advanced properties, see [Specifying Configuration Parameters for the Advanced Properties Page](specifying-configuration-parameters-for-the-advanced-properties-page.md).
 
@@ -219,11 +220,5 @@ The maximum value that is allowed for an integer.
 
  
 NDIS measures the idle time-out by using timers that are precise to within 30 percent of the **\*SSIdleTimeoutScreenOff** value. For example, if the **\*SSIdleTimeoutScreenOff** value is 5, the adapter is suspended between 5 to 6.5 seconds after NDIS first detects the adapter is idle.
-
-
- 
-
-
-
 
 

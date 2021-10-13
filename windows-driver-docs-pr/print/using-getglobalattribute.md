@@ -1,7 +1,6 @@
 ---
 title: Using GetGlobalAttribute
 description: Using GetGlobalAttribute
-ms.assetid: 0e23ecba-7d89-44f5-b6a7-7d6be9a56765
 keywords:
 - GetGlobalAttribute
 ms.date: 04/20/2017
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 All of the global attribute names are the same as the keyword names defined in *PostScript Printer Description File Format Specification, v4.3*. Refer to this specification for their semantics. (This resource may not be available in some languages and countries.)
 
-In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/ne-printoem-_eattribute_datatype) enumerated type.
+In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
 <table>
 <colgroup>
@@ -161,9 +160,4 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
  
 
  
-
- 
-
-
-
 

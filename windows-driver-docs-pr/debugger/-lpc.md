@@ -1,7 +1,6 @@
 ---
-title: lpc
+title: lpc (WinDbg)
 description: The lpc extension displays information about all local procedure call (LPC) ports and messages in the target system.
-ms.assetid: d474aeca-fb12-424a-b57e-360215d0305c
 keywords: ["LPC (local/light-weight procedure call)", "lpc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -84,8 +83,7 @@ The **!lpc** extension displays information about all local procedure call (LPC)
 
 For information about LPCs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This extension is not supported in Windows Vista and later versions of Windows.
 

@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_TASK_OFFLOAD
 description: This topic describes the OID_TCP_TASK_OFFLOAD object identifier (OID).
-ms.assetid: 4e16cdb7-b899-43b6-a94b-d691622be105
 keywords:
 - OID_TCP_TASK_OFFLOAD
 ms.date: 11/06/2017
@@ -14,24 +13,24 @@ The host stack queries the OID_TCP_TASK_OFFLOAD OID to obtain the TCP offload ca
 
 ## Querying offload capabilities
 
-When the host stack queries OID_TCP_TASK_OFFLOAD, it supplies in the *InformationBuffer* an [NDIS_TASK_OFFLOAD_HEADER](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559004(v=vs.85)) structure. This structure specifies the following:
+When the host stack queries OID_TCP_TASK_OFFLOAD, it supplies in the *InformationBuffer* an [NDIS_TASK_OFFLOAD_HEADER](/previous-versions/windows/hardware/network/ff559004(v=vs.85)) structure. This structure specifies the following:
 
 - The offload version supported by the host stack.
 - The encapsulation format for send and receive packets processed by the host stack.
 - The size of the encapsulation header in such packets.
 
-With this information, a miniport driver or its NIC can locate the beginning of the first IP header in a transmit packet, which is a prerequisite for performing an offload task. An offload target needs to know the encapsulation format to process receive packets. In response to a query of OID_TCP_TASK_OFFLOAD, a miniport driver or offload target returns, in the *InformationBuffer*, the NDIS_TASK_OFFLOAD_HEADER structure followed immediately by one or more [NDIS_TASK_OFFLOAD](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff558995(v=vs.85)) structures. Each NDIS_TASK_OFFLOAD structure describes an offload capability supported by the miniport driver's NIC or by the offload target. If the miniport driver's NIC or the offload target supports multiple versions of a particular offload capability, it should return one NDIS_TASK_OFFLOAD structure for each version.
+With this information, a miniport driver or its NIC can locate the beginning of the first IP header in a transmit packet, which is a prerequisite for performing an offload task. An offload target needs to know the encapsulation format to process receive packets. In response to a query of OID_TCP_TASK_OFFLOAD, a miniport driver or offload target returns, in the *InformationBuffer*, the NDIS_TASK_OFFLOAD_HEADER structure followed immediately by one or more [NDIS_TASK_OFFLOAD](/previous-versions/windows/hardware/network/ff558995(v=vs.85)) structures. Each NDIS_TASK_OFFLOAD structure describes an offload capability supported by the miniport driver's NIC or by the offload target. If the miniport driver's NIC or the offload target supports multiple versions of a particular offload capability, it should return one NDIS_TASK_OFFLOAD structure for each version.
 
 Each NDIS_TASK_OFFLOAD structure has a **Task** member that specifies the particular offload capability to which the structure applies. Each NDIS_TASK_OFFLOAD structure also has a **TaskBuffer** that contains information pertinent to the specified offload capability. The information in the **TaskBuffer** is formatted as one of the following structures:
 
-- [NDIS_TASK_TCP_IP_CHECKSUM](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559004(v=vs.85))  
+- [NDIS_TASK_TCP_IP_CHECKSUM](/previous-versions/windows/hardware/network/ff559004(v=vs.85))  
     Specifies checksum offload capabilities.
-- [NDIS_TASK_IPSEC](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff558990(v=vs.85))  
+- [NDIS_TASK_IPSEC](/previous-versions/windows/hardware/network/ff558990(v=vs.85))  
     Specifies Internet Protocol security (IPsec) offload capabilities.
-- [NDIS_TASK_TCP_LARGE_SEND](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559008(v=vs.85))  
+- [NDIS_TASK_TCP_LARGE_SEND](/previous-versions/windows/hardware/network/ff559008(v=vs.85))  
     Specifies large TCP packet segmentation capabilities.
-- [NDIS_TASK_TCP_CONNECTION_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndischimney/ns-ndischimney-_ndis_tcp_connection_offload_parameters)  
-    Specifies TCP chimney offload capabilities. For more information on NDIS_TASK_TCP_CONNECTION_OFFLOAD, see [TCP Chimney Offload](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload).
+- [NDIS_TASK_TCP_CONNECTION_OFFLOAD](/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_tcp_connection_offload_parameters)  
+    Specifies TCP chimney offload capabilities. For more information on NDIS_TASK_TCP_CONNECTION_OFFLOAD, see [TCP Chimney Offload](/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload).
 
 > [!NOTE]
 > If an intermediate driver modifies the contents of packets that it forwards to an underlying miniport driver such that TCP offload functions cannot be performed on the packets, the intermediate driver should respond to OID_TCP_TASK_OFFLOAD queries with a status of NDIS_STATUS_NOT_SUPPORTED instead of passing the OID request to the underlying miniport driver or offload target.
@@ -48,10 +47,10 @@ To change the offload capabilities that are enabled for a NIC or an offload targ
 
 An offload target can use pause or resume offload indications to change its reported TCP offload capabilities:
 
-- An offload target makes a pause indication by calling the [NdisMIndicateStatusEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex) function with the NDIS_STATUS_INDICATION->**StatusCode** member set to NDIS_STATUS_OFFLOAD_PAUSE.
+- An offload target makes a pause indication by calling the [NdisMIndicateStatusEx](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function with the NDIS_STATUS_INDICATION->**StatusCode** member set to NDIS_STATUS_OFFLOAD_PAUSE.
 - An offload target makes a resume indication by calling the **NdisMIndicateStatusEx** function with the NDIS_STATUS_INDICATION->**StatusCode** member set to NDIS_STATUS_OFFLOAD_RESUME.
 
-After an offload target requests the host stack to resume offloading state objects, the host stack queries OID_TCP_TASK_OFFLOAD again to obtain the offload target's TCP offload revised capabilities. For more information, see [NDIS_STATUS_OFFLOAD_RESUME](https://docs.microsoft.com/windows-hardware/drivers/network/).
+After an offload target requests the host stack to resume offloading state objects, the host stack queries OID_TCP_TASK_OFFLOAD again to obtain the offload target's TCP offload revised capabilities. For more information, see [NDIS_STATUS_OFFLOAD_RESUME](./index.md).
 
 ## Disabling offload capabilities
 
@@ -59,8 +58,5 @@ To disable all offload capabilities supported by a NIC or an offload target, the
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

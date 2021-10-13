@@ -1,7 +1,6 @@
 ---
 title: Jack Description Property
 description: Jack Description Property
-ms.assetid: 6398efc9-4435-4234-bd72-1ed0f96c9f9f
 ms.date: 05/08/2018
 ms.localizationpriority: medium
 ---
@@ -9,17 +8,17 @@ ms.localizationpriority: medium
 # Jack Description Property
 
 
-In Windows Vista and later, the [**KSPROPERTY\_JACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-jack-description) property describes an audio jack or other physical connector on an audio adapter. The property value describes the color of the jack, the physical location of the jack, the connector type, and other jack features. The purpose of this information is to help the user to find the correct jack for plugging in an audio endpoint device such as a microphone, headphones, or speakers. For more information, see [Audio Endpoint Devices](https://go.microsoft.com/fwlink/p/?linkid=130876).
+In Windows Vista and later, the [**KSPROPERTY\_JACK\_DESCRIPTION**](./ksproperty-jack-description.md) property describes an audio jack or other physical connector on an audio adapter. The property value describes the color of the jack, the physical location of the jack, the connector type, and other jack features. The purpose of this information is to help the user to find the correct jack for plugging in an audio endpoint device such as a microphone, headphones, or speakers. For more information, see [Audio Endpoint Devices](/windows/win32/coreaudio/audio-endpoint-devices).
 
 If a KS filter on an audio adapter supports the KSPROPERTY\_JACK\_DESCRIPTION property, the Windows multimedia control panel, Mmsys.cpl, displays the jack information for the bridge pins on the filter. A bridge pin represents a connection (typically, a jack) to an audio endpoint device. Although the property value contains information about a pin (or rather, the jack or jacks that are associated with the pin), the property is a property of the filter, not of the pin. For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md). For more information about filter properties and pin properties, see [Filter, Pin, and Node Properties](filter--pin--and-node-properties.md).
 
-An audio application can obtain the KSPROPERTY\_JACK\_DESCRIPTION property value for an audio endpoint device by calling the **IKsJackDescription::GetJackDescription** method in the DeviceTopology API. For example, an application can use the jack information to help the user to distinguish a microphone plugged into a green XLR jack from a microphone plugged into an orange XLR jack. For more information about the DeviceTopology API, see [Device Topologies](https://go.microsoft.com/fwlink/p/?linkid=130878).
+An audio application can obtain the KSPROPERTY\_JACK\_DESCRIPTION property value for an audio endpoint device by calling the **IKsJackDescription::GetJackDescription** method in the DeviceTopology API. For example, an application can use the jack information to help the user to distinguish a microphone plugged into a green XLR jack from a microphone plugged into an orange XLR jack. For more information about the DeviceTopology API, see [Device Topologies](/windows/win32/coreaudio/device-topologies).
 
-The Microsoft HD Audio class driver automatically constructs the KSPROPERTY\_JACK\_DESCRIPTION property values from the data that it reads from the pin-configuration registers in an HD Audio codec. However, any KS-based audio driver can implement support for this property in its filter automation tables. For more information about the HD Audio class driver, see [HD Audio and UAA](hd-audio-and-uaa.md). For more information about pin-configuration registers, see [Pin Configuration Guidelines for High Definition Audio Devices](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/PinConfig.doc) white paper.
+The Microsoft HD Audio class driver automatically constructs the KSPROPERTY\_JACK\_DESCRIPTION property values from the data that it reads from the pin-configuration registers in an HD Audio codec. However, any KS-based audio driver can implement support for this property in its filter automation tables. For more information about the HD Audio class driver, see [HD Audio and UAA](hd-audio-and-uaa.md). For more information about pin-configuration registers, see the [Pin Configuration Guidelines for High Definition Audio Devices](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/PinConfig.doc) white paper.
 
 An audio endpoint device can connect to a bridge pin through one or more jacks. For example, a set of (two-channel) stereo speakers requires one jack, but a set of 5.1 surround-sound speakers requires three jacks (assuming that each jack handles two of the six channels).
 
-The description for each jack is contained in a [**KSJACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description) structure. For example, the KSPROPERTY\_JACK\_DESCRIPTION property value for an audio endpoint device with one jack contains one KSJACK\_DESCRIPTION structure, but the property value for an endpoint device with three jacks contains three KSJACK\_DESCRIPTION structures. In either case, the KSJACK\_DESCRIPTION structure or structures in the property value are preceded by a [**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksmultiple_item) structure that specifies the size of the property value. For more information, see [**KSPROPERTY\_JACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-jack-description).
+The description for each jack is contained in a [**KSJACK\_DESCRIPTION**](./ksjack-description.md) structure. For example, the KSPROPERTY\_JACK\_DESCRIPTION property value for an audio endpoint device with one jack contains one KSJACK\_DESCRIPTION structure, but the property value for an endpoint device with three jacks contains three KSJACK\_DESCRIPTION structures. In either case, the KSJACK\_DESCRIPTION structure or structures in the property value are preceded by a [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure that specifies the size of the property value. For more information, see [**KSPROPERTY\_JACK\_DESCRIPTION**](./ksproperty-jack-description.md).
 
 Jack information is particularly useful for helping users to distinguish among the jacks that connect to a multichannel speaker configuration. The following code example shows an array of KSJACK\_DESCRIPTION structures that an audio driver uses to describe the three jacks for a set of 5.1 surround speakers:
 
@@ -61,7 +60,7 @@ KSJACK_DESCRIPTION ar_5dot1_Jacks[] =
 
 If the audio hardware can detect whether the device is plugged in, the driver dynamically updates the value of this member to indicate whether the device is currently plugged in (**TRUE**) or unplugged (**FALSE**)
 
-In the preceding code example, the **IsConnected** member in each array element is set to **TRUE** to indicate that the endpoint device is plugged into the jack. However, if the hardware lacks jack presence detection, **IsConnected** must always be set to **TRUE**, whether there is a device plugged into the jack. To remove the ambiguity that results from this dual meaning of the **TRUE** return value, a client application can call [IKsJackDescription2::GetJackDescription2](https://go.microsoft.com/fwlink/p/?linkid=143698) to read the JackCapabilities flag of the [**KSJACK\_DESCRIPTION2**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description2) structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint does in fact support jack presence detection. In that case, the value of the **IsConnected** member can be interpreted as an accurate reflection of the insertion status of the jack.
+In the preceding code example, the **IsConnected** member in each array element is set to **TRUE** to indicate that the endpoint device is plugged into the jack. However, if the hardware lacks jack presence detection, **IsConnected** must always be set to **TRUE**, whether there is a device plugged into the jack. To remove the ambiguity that results from this dual meaning of the **TRUE** return value, a client application can call [IKsJackDescription2::GetJackDescription2](/windows/win32/api/devicetopology/nf-devicetopology-iksjackdescription2-getjackdescription2) to read the JackCapabilities flag of the [**KSJACK\_DESCRIPTION2**](./ksjack-description2.md) structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint does in fact support jack presence detection. In that case, the value of the **IsConnected** member can be interpreted as an accurate reflection of the insertion status of the jack.
 
 The RGB macro that appears in the preceding structures is defined in header file Wingdi.h in the Windows SDK.
 
@@ -95,7 +94,7 @@ KSJACK_DESCRIPTION ar_SPDIF_Jacks[] =
 
 In the preceding code example, the values of the **ChannelMapping** members in the two KSJACK\_DESCRIPTION structures are identical.
 
-The "Simple" MSVAD sample driver in the WDK (in sample directory Src\\Audio\\Msvad\\Simple) can be adapted to support the KSPROPERTY\_JACK\_DESCRIPTION property. This sample driver is convenient for demonstrating the use of the property because it does not require actual hardware. Thus, it can be installed on any computer running Windows. (However, only Windows Vista and later operating systems provide full support for the KSPROPERTY\_JACK\_DESCRIPTION property.) For more information about this sample, see [Windows Driver Kit Samples](https://docs.microsoft.com/windows-hardware/drivers/samples/index).
+The "Simple" MSVAD sample driver in the WDK (in sample directory Src\\Audio\\Msvad\\Simple) can be adapted to support the KSPROPERTY\_JACK\_DESCRIPTION property. This sample driver is convenient for demonstrating the use of the property because it does not require actual hardware. Thus, it can be installed on any computer running Windows. (However, only Windows Vista and later operating systems provide full support for the KSPROPERTY\_JACK\_DESCRIPTION property.) For more information about this sample, see [Windows Driver Kit Samples](../samples/index.md).
 
 The topology filter for the Simple MSVAD sample defines three bridge pins. These pins are listed in the following table.
 
@@ -299,7 +298,7 @@ Two additional modifications to the Simple MSVAD sample are required to support 
 
 -   Add the declaration of the **PropertyHandlerJackDescription** method in the preceding code example to the CMiniportTopology class definition in header file Mintopo.h.
 
--   Implement an automation table for the topology filter and load the address of this table into the **AutomationTable** member of the [**PCFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcfilter_descriptor) structure in header file Toptable.h. This structure is named **MiniportFilterDescriptor**.
+-   Implement an automation table for the topology filter and load the address of this table into the **AutomationTable** member of the [**PCFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor) structure in header file Toptable.h. This structure is named **MiniportFilterDescriptor**.
 
 To implement the automation table for the filter, insert the following code into header file Toptable.h (before the definition of **MiniportFilterDescriptor**):
 
@@ -317,14 +316,9 @@ static PCPROPERTY_ITEM PropertiesTopoFilter[] =
 DEFINE_PCAUTOMATION_TABLE_PROP(AutomationTopoFilter, PropertiesTopoFilter);
 ```
 
-In the preceding code example, the **Handler** member of the [**PCPROPERTY\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcproperty_item) structure contains a function pointer to the property handler that was added to Mintopo.cpp in a previous step. To make the property handler accessible from the header file, insert an **extern** function declaration for PropertyHandler\_TopoFilter at the start of the header file.
+In the preceding code example, the **Handler** member of the [**PCPROPERTY\_ITEM**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcproperty_item) structure contains a function pointer to the property handler that was added to Mintopo.cpp in a previous step. To make the property handler accessible from the header file, insert an **extern** function declaration for PropertyHandler\_TopoFilter at the start of the header file.
 
 For more information about the jack description property, see [Jack Descriptions for Dynamic Audio Subdevices](jack-descriptions-for-dynamic-audio-subdevices.md).
 
  
-
- 
-
-
-
 

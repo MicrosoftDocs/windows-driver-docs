@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEODECODER\_STANDARD
 description: The KSPROPERTY\_VIDEODECODER\_STANDARD property controls the current analog video standard. This property must be implemented.
-ms.assetid: 955c267a-703e-4d18-a4e9-710f316cfb48
 keywords: ["KSPROPERTY_VIDEODECODER_STANDARD Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_VIDEODECODER\_STANDARD property controls the current analog vide
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videodecoder_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEODECODER_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)"><strong>KSPROPERTY_VIDEODECODER_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEODECODER_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)"><strong>KSPROPERTY_VIDEODECODER_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -57,13 +56,11 @@ The KSPROPERTY\_VIDEODECODER\_STANDARD property controls the current analog vide
 
 The property value (operation data) is a ULONG that specifies the current analog video standard.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEODECODER\_S structure specifies the current analog video standard.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_VIDEODECODER\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_VIDEODECODER\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)
 

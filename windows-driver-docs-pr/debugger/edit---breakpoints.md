@@ -1,7 +1,6 @@
 ---
 title: Edit Breakpoints
 description: Edit Breakpoints
-ms.assetid: ca55ee25-aef3-42b1-b628-0a0e849103eb
 keywords: ["Edit Breakpoints", "breakpoints, Edit Breakpoints"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Breakpoints** on the **Edit** menu to display or control breakpoints.
 
-This command is equivalent to pressing ALT+F9. If a [source window](source-window.md) or the [disassembly window](disassembly-window.md) is not active, you can also press f9 or click the **insert or remove breakpoint (f9)** button (![screen shot of the insert or remove breakpoint button](images/tbbp.png)) on the toolbar.
+This command is equivalent to pressing ALT+F9. If a [source window](source-window.md) or the [disassembly window](disassembly-window.md) is not active, you can also press f9 or click the **insert or remove breakpoint (f9)** button (![screen shot of the insert or remove breakpoint button.](images/tbbp.png)) on the toolbar.
 
 However, if a Source window or the Disassembly window is open, the **Insert or remove breakpoint (F9)** button and the F9 key set a breakpoint on the current line. (If there is already a breakpoint set at the current line, this button or key will remove the breakpoint.)
 

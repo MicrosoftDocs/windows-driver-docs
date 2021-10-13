@@ -1,7 +1,6 @@
 ---
 title: ValidateScanTicketRequest element
 description: The required ValidateScanTicketRequest operation element enables a client to determine if the settings for future scan operations are valid.
-ms.assetid: 366b0d71-1494-48fa-94f5-1832d7f119a4
 keywords: ["ValidateScanTicketRequest element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ValidateScanTicketRequest** operation element enables a client to determine if the settings for future scan operations are valid.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ValidateScanTicketRequest>
@@ -27,8 +25,7 @@ Usage
 </wscn:ValidateScanTicketRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,8 +53,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 A client can use the **ValidateScanTicketRequest** element to validate various setting changes and combinations.
 
@@ -82,23 +78,22 @@ This operation might also return the following error code:
 
      
 
-Examples
---------
+## Examples
 
 The following code example shows a validation request for a valid scan ticket.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/ValidateScanTicket
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/ValidateScanTicket
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>
@@ -145,15 +140,15 @@ The following code example shows a validation request for an invalid scan ticket
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/ValidateScanTicket
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/ValidateScanTicket
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>

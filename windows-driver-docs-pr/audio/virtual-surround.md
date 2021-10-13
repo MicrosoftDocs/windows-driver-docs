@@ -1,7 +1,6 @@
 ---
 title: Virtual Surround
 description: Virtual Surround
-ms.assetid: be68a531-6691-4db1-ad85-d56e77ee82e2
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---

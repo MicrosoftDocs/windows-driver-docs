@@ -1,7 +1,6 @@
 ---
 title: Device and Driver Installation Software Components
 description: Device and Driver Installation Software Components
-ms.assetid: 80f64014-ee9b-4adb-83fd-4c5a3122877b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,14 +17,8 @@ This section contains the following topics which describe the various software c
 -   [Writing a Co-installer](writing-a-co-installer.md)
 -   [Calling the Default DIF Code Handlers](calling-the-default-dif-code-handlers.md)
 -   [Finish-Install Actions](finish-install-actions--windows-vista-and-later-.md)
--   [Providing Device Property Pages](providing-device-property-pages.md)
+-   [Providing Device Property Pages](./overview-of-device-property-pages.md)
 -   [Writing a Device Installation Application](writing-a-device-installation-application.md)
 
  
-
- 
-
-
-
-
 

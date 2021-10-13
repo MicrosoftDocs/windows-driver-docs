@@ -1,14 +1,13 @@
 ---
 title: GUIDType (PackageInfo)
 description: GUIDType (PackageInfo)
-ms.assetid: 3f88df5a-2a17-4006-ad3b-aab9a12cbcb9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # GUIDType (PackageInfo)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The GUIDType XML simple type specifies a GUID.
 

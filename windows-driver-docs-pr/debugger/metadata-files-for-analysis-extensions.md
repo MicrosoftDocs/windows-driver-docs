@@ -1,7 +1,6 @@
 ---
 title: Metadata Files for Analysis Extension Plug-ins
 description: When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called.
-ms.assetid: 13B9B7A5-1D68-49A3-825B-454AC070FCC1
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -34,7 +33,7 @@ You can use the following keys in a metadata file.
 | PluginId       | String - Identifies the plug-in.                                                                                                                                                                                                                                                                  |
 | DebuggeeClass  | String - Possible values are “Kernel” and "User". Indicates that the plug-in is interested in analyzing only kernel-mode failures or only user-mode failures.                                                                                                                                     |
 | BugCheckCode   | 32-bit bug check code - Indicates that the plug-in is interested in analyzing this [bug check code](bug-check-code-reference2.md). A single metadata file can specify multiple bug check codes.                                                                                                  |
-| ExceptionCode  | 32-bit exception code - Indicates that the plug-in is interested in analyzing this [exception code](https://go.microsoft.com/fwlink/p?LinkID=282670). A single metadata file can specify multiple exception codes.                                                                                 |
+| ExceptionCode  | 32-bit exception code - Indicates that the plug-in is interested in analyzing this [exception code](/windows/win32/debug/structured-exception-handling). A single metadata file can specify multiple exception codes.                                                                                 |
 | ExecutableName | String - Indicates that the plug-in is interested only in sessions where this is the running executable of the process to be analyzed. A single metadata file can specify multiple executable names.                                                                                              |
 | ImageName      | String - Indicates that the plug-in is only interested only in sessions where the default analysis considers this image (dll, sys, or exe) to be at fault. The plug-in is invoked after analysis has determined which image is at fault. A single metadata file can specify multiple image names. |
 | MaxTagCount    | Integer - The maximum number of custom tags that the plug-in needs. Custom tags are tags other than the ones defined in extsfns.h.                                                                                                                                                                |
@@ -72,7 +71,7 @@ ExceptionCode   0xC0000005
 ExecutableName  MyApp.exe
 ```
 
-Debugging Tools for Windows has a sample that you can use to build a debugger extension module named dbgexts.dll. This extension module implements several debugger extension commands, but it can also serve as an analysis extension plug-in; that is, it exports an [**\_EFN\_Analyze**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nc-extsfns-ext_analysis_plugin) function. Here is a metadata file that describes dbgexts.dll as an analysis extension plug-in.
+Debugging Tools for Windows has a sample that you can use to build a debugger extension module named dbgexts.dll. This extension module implements several debugger extension commands, but it can also serve as an analysis extension plug-in; that is, it exports an [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function. Here is a metadata file that describes dbgexts.dll as an analysis extension plug-in.
 
 ```text
 PluginId         PluginSample
@@ -93,16 +92,9 @@ help text from plug-in analysis}
 
 [Writing an Analysis Extension Plug-in to Extend !analyze](writing-an-analysis-extension-to-extend--analyze.md)
 
-[**\_EFN\_Analyze**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extsfns/nc-extsfns-ext_analysis_plugin)
+[**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin)
 
 [**!analyze**](-analyze.md)
 
  
-
- 
-
-
-
-
-
 

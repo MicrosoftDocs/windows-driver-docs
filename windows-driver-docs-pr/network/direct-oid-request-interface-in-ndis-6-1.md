@@ -1,7 +1,6 @@
 ---
 title: Direct OID Request Interface in NDIS 6.1
 description: Direct OID Request Interface in NDIS 6.1
-ms.assetid: 1a24dec6-f16a-45f5-857b-c6e0df4ce261
 keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS provides a direct OID request interface for NDIS 6.1 and later drivers. The *direct OID request path* supports OID requests that are queried or set frequently. For example, the IPsec offload version 2 (IPsecOV2) interface provides the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa) OID for direct OID requests.
+NDIS provides a direct OID request interface for NDIS 6.1 and later drivers. The *direct OID request path* supports OID requests that are queried or set frequently. For example, the IPsec offload version 2 (IPsecOV2) interface provides the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](./oid-tcp-task-ipsec-offload-v2-add-sa.md) OID for direct OID requests.
 
 The direct OID request interface is optional for NDIS drivers. To support the direct OID path, drivers provide entry points and NDIS provides **Ndis*Xxx*** functions for protocol, filter, and miniport drivers.
 
@@ -27,11 +26,11 @@ For NDIS 6.1, the only interface that uses the direct OID request interface is I
 
 For NDIS 6.1 drivers in the Windows Server 2008 and Windows Vista with Service Pack 1 (SP1) operating systems, you can use only the following OIDs with the direct OID request interface:
 
--   [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa)
+-   [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](./oid-tcp-task-ipsec-offload-v2-add-sa.md)
 
--   [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa)
+-   [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA](./oid-tcp-task-ipsec-offload-v2-delete-sa.md)
 
--   [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_UPDATE\_SA](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-update-sa)
+-   [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_UPDATE\_SA](./oid-tcp-task-ipsec-offload-v2-update-sa.md)
 
 Miniport drivers and filter drivers must be able to handle direct OID requests that are not serialized. Unlike the standard OID request interface, NDIS does not serialize direct OID requests with other requests that are sent with the direct OID interface or with the standard OID request interface. Also, miniport drivers and filter drivers must be able to handle direct OID requests at IRQL &lt;= DISPATCH\_LEVEL.
 
@@ -44,10 +43,4 @@ For more information about how to implement the direct OID interface in drivers,
 -   [Filter Module OID Requests](filter-module-oid-requests.md)
 
  
-
- 
-
-
-
-
 

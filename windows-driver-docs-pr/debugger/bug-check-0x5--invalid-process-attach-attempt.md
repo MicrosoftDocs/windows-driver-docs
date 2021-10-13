@@ -1,9 +1,8 @@
 ---
 title: Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT
 description: The INVALID_PROCESS_ATTACH_ATTEMPT bug check has a value of 0x00000005.
-ms.assetid: 72efb88f-1bf7-4552-b44e-4ecb04754b7d
 keywords: ["Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT", "INVALID_PROCESS_ATTACH_ATTEMPT"]
-ms.date: 05/23/2017
+ms.date: 09/04/2020
 topic_type:
 - apiref
 api_name:
@@ -60,15 +59,13 @@ This bug check appears very infrequently.
 
  
 
-Remarks
--------
+## Remarks
 
-This bug check can occur if the driver calls the **KeAttachProcess** function and the thread is already attached to another process. It is better to use the **KeStackAttachProcess** function. If the current thread was already attached to another process, the **KeStackAttachProcess** function saves the current APC state before it attaches the current thread to the new process.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+
+This bug check can occur if the driver calls the [KeAttachProcess](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-keattachprocess)  function and the thread is already attached to another process. It is better to use the [KeStackAttachProcess](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kestackattachprocess) function. If the current thread was already attached to another process, the **KeStackAttachProcess** function saves the current APC state before it attaches the current thread to the new process. Calling **KeStackAttachProcess** incorrectly can also cause this bug check, for example if a DPC is running on the current processor.
+
+For general information about this area, see working with [Windows Kernel-Mode Process and Thread Manager](../kernel/windows-kernel-mode-process-and-thread-manager.md) and [Introduction to Kernel Dispatcher Objects](../kernel/managing-interlocked-queues-with-a-driver-created-thread.md).
 
  
-
- 
-
-
-
 

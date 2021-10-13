@@ -1,7 +1,6 @@
 ---
 title: NFC class extension state machine
 description: The internal design of the NFC CX state machine is shown below.
-ms.assetid: A131F881-C05A-44FF-A7A6-FD40BA344BD0
 keywords:
 - NFC
 - near field communications
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The internal design of the NFC CX state machine is shown below. The various states specified by NFC CX and the internal and external events that cause the state transitions are captured in the diagram. Note that some transitions between some states are not shown in the diagram for the ease of reading. The states along with the mapping to the NCI RF state machine are described further below.
 
-![nfc cx state machine](images/statemachine.png)
+![nfc cx state machine.](images/statemachine.png)
 
 | State             | Description                                                                                                                                                                                                                                                                                                                                             |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,6 +35,5 @@ The internal design of the NFC CX state machine is shown below. The various stat
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

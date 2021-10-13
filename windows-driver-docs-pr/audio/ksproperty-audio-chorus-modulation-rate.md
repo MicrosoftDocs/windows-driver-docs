@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_RATE
 description: The KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_RATE property specifies the chorus modulation rate. This is a property of a chorus node (KSNODETYPE\_CHORUS).
-ms.assetid: 5B57D4C9-E5D1-4407-9556-D59D11DAB1AB
 keywords: ["KSPROPERTY_AUDIO_CHORUS_MODULATION_RATE Audio Devices"]
 topic_type:
 - apiref
@@ -61,8 +60,7 @@ The property value is of type ULONG and it specifies the chorus modulation rate.
 
 A KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_RATE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

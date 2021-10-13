@@ -1,7 +1,6 @@
 ---
 title: Wmimofck task
 description: The Windows Driver Kit (WDK) provides the Wmimofck task so you can run the wmimofck.exe tool when you build a driver using MSBuild.
-ms.assetid: 33C5C079-510F-4BD3-AEF1-F152E88E45C2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 The Windows Driver Kit (WDK) provides the Wmimofck task so you can run the wmimofck.exe tool when you build a driver using MSBuild.
 
-For information about using the Wmimofck tool, see [Using Wmimofck.exe](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-wmimofck-exe).
+For information about using the Wmimofck tool, see [Using Wmimofck.exe](../kernel/using-wmimofck-exe.md).
 
 MSBuild uses the Wmimofck item to send the parameters for the Wmimofck task. The item metadata for wmimofck is accessed using the Wmimofck item in project files.
 
@@ -191,14 +190,7 @@ The example above invokes wmimofck.exe on both a.bmf and b.bmf, but with differe
 ## <span id="related_topics"></span>Related topics
 
 
-[Using Wmimofck.exe](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-wmimofck-exe)
+[Using Wmimofck.exe](../kernel/using-wmimofck-exe.md)
 
  
-
- 
-
-
-
-
-
 

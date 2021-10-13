@@ -1,7 +1,6 @@
 ---
 title: wmitrace.dumpmini
 description: The wmitrace.dumpmini extension displays the system trace fragment, which is stored in a dump file.
-ms.assetid: c6b4c09f-3a73-4467-849b-8570477bc9af
 keywords: ["wmitrace.dumpmini Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -37,8 +36,7 @@ This extension is useful only when debugging a minidump file or a full dump file
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 The *system trace fragment* is a copy of the contents of the last buffer of the System Context Log. Under normal conditions, this is the trace session whose logger ID is 2.
 

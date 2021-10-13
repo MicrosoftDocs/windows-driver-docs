@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x25 NPFS_FILE_SYSTEM
 description: The NPFS_FILE_SYSTEM bug check has a value of 0x00000025. This indicates that a problem occurred in the NPFS file system.
-ms.assetid: 099c93ec-78c0-4bb9-827d-712cfdfec0bb
 keywords: ["Bug Check 0x25 NPFS_FILE_SYSTEM", "NPFS_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,13 +57,11 @@ The NPFS\_FILE\_SYSTEM bug check has a value of 0x00000025. This indicates that 
 
  
 
-Cause
------
+## Cause
 
 One possible cause of this bug check is depletion of nonpaged pool memory. If the nonpaged pool memory is completely depleted, this error can stop the system. However, during the indexing process, if the amount of available nonpaged pool memory is very low, another kernel-mode driver requiring nonpaged pool memory can also trigger this error.
 
-Resolution
-----------
+## Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 

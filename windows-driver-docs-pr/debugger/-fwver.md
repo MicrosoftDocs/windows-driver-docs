@@ -1,7 +1,6 @@
 ---
-title: fwver
+title: fwver (WinDbg)
 description: The fwver extension displays the Itanium firmware version.
-ms.assetid: 0b1a2fb2-9df6-45b4-bd5b-cbcdde38ddad
 keywords: ["fwver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,8 +55,7 @@ This extension command can only be used with an Itanium target computer.
 
 For more information, consult an Intel architecture manual.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

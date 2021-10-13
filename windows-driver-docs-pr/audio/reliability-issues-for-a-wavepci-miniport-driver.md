@@ -1,7 +1,6 @@
 ---
 title: Reliability Issues for a WavePci Miniport Driver
 description: Reliability Issues for a WavePci Miniport Driver
-ms.assetid: 329f28a8-5e99-4c25-8a88-1e634f7eeec8
 keywords:
 - WavePci reliability issues WDK audio
 - spin locks WDK audio
@@ -25,20 +24,15 @@ When developing the portion of the driver that manages mappings, vendors should 
 
 ### <span id="Spin_Locks"></span><span id="spin_locks"></span><span id="SPIN_LOCKS"></span>Spin Locks
 
-To avoid potential deadlocks, the miniport driver must not hold its own spin lock when calling into Portcls.sys to acquire or release mappings. The Ac97 sample driver in the Microsoft Windows Driver Kit (WDK) illustrates this principle. Before calling either [**IPortWavePciStream::GetMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavepcistream-getmapping) or [**IPortWavePciStream::ReleaseMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavepcistream-releasemapping), the sample driver calls [**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleasespinlock) to release the spin lock. After the **GetMapping** or **ReleaseMapping** call returns, the driver calls [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keacquirespinlock) to acquire the spin lock again. Between the calls to release and acquire the spin lock, a driver thread must not assume that it has exclusive access to the list of mappings. Accessing the shared data during this unprotected interval is dangerous. If the interval between releasing and acquiring the spin lock is small, the likelihood of the data being corrupted by a race condition between two driver threads is also small. This means that the resulting failures are intermittent and thus difficult to trace. After releasing and acquiring a spin lock, a well-written driver should assume that any temporary pointers or indices that it previously used to access the contents of the shared data structures are no longer valid.
+To avoid potential deadlocks, the miniport driver must not hold its own spin lock when calling into Portcls.sys to acquire or release mappings. The Ac97 sample driver in the Microsoft Windows Driver Kit (WDK) illustrates this principle. Before calling either [**IPortWavePciStream::GetMapping**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-getmapping) or [**IPortWavePciStream::ReleaseMapping**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-releasemapping), the sample driver calls [**KeReleaseSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock) to release the spin lock. After the **GetMapping** or **ReleaseMapping** call returns, the driver calls [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock) to acquire the spin lock again. Between the calls to release and acquire the spin lock, a driver thread must not assume that it has exclusive access to the list of mappings. Accessing the shared data during this unprotected interval is dangerous. If the interval between releasing and acquiring the spin lock is small, the likelihood of the data being corrupted by a race condition between two driver threads is also small. This means that the resulting failures are intermittent and thus difficult to trace. After releasing and acquiring a spin lock, a well-written driver should assume that any temporary pointers or indices that it previously used to access the contents of the shared data structures are no longer valid.
 
 ### <span id="IRP_Cancellation"></span><span id="irp_cancellation"></span><span id="IRP_CANCELLATION"></span>IRP Cancellation
 
-At any time during the processing of a playback or capture stream, cancellation of an IRP can cause the operating system to revoke one or more mappings that the miniport driver has acquired. When this occurs, the port driver calls the [**IMiniportWavePciStream::RevokeMappings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-revokemappings) method to notify the miniport driver. In order to avoid either playing data from or capturing data into the revoked mappings, the miniport driver has to remove the mappings from both its software list and the DMA controller's hardware queue. Because the software list and hardware queue are shared between driver threads, some care is required to perform these operations reliably.
+At any time during the processing of a playback or capture stream, cancellation of an IRP can cause the operating system to revoke one or more mappings that the miniport driver has acquired. When this occurs, the port driver calls the [**IMiniportWavePciStream::RevokeMappings**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-revokemappings) method to notify the miniport driver. In order to avoid either playing data from or capturing data into the revoked mappings, the miniport driver has to remove the mappings from both its software list and the DMA controller's hardware queue. Because the software list and hardware queue are shared between driver threads, some care is required to perform these operations reliably.
 
 For example, a set of mappings to be revoked might contain a mapping that has just been or is just about to be released. In this case, two driver threads might simultaneously attempt to remove the same mapping from the DMA queue. If the driver fails to prevent simultaneous access, the result can be corruption of the data in the registers or memory structures that manage the queue.
 
 For a working code example, see the Ac97 sample driver in the Windows Driver Kit (WDK).
 
  
-
- 
-
-
-
 

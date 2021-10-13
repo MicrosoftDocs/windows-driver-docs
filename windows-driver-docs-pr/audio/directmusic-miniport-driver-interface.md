@@ -1,7 +1,6 @@
 ---
 title: DirectMusic Miniport Driver Interface
 description: DirectMusic Miniport Driver Interface
-ms.assetid: a3532993-732a-4a7e-82bc-fc4199ec23dd
 keywords:
 - miniport drivers WDK audio , synthesizers
 - synthesizers WDK audio , miniport drivers
@@ -28,17 +27,17 @@ The DMus miniport driver interface is based on the MIDI miniport driver interfac
 
 -   Sequencing of note events in hardware
 
-The DMus miniport driver interface differs from the MIDI miniport driver interface in several ways. A DMus miniport driver implements the interface [IMiniportDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iminiportdmus) as opposed to [IMiniportMidi](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportmidi). This interface is similar to **IMiniportMidi**, but the [**IMiniportDMus::NewStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iminiportdmus-newstream) method creates an [IMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imxf) (MIDI transform filter) interface and connects to an [IAllocatorMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iallocatormxf) interface in the DMus port driver, as opposed to implementing an [IMiniportMidiStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportmidistream) interface. **IAllocatorMXF** and **IMXF** wrap the standard **GetMessage** and **PutMessage** calls (see [**IAllocatorMXF::GetMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iallocatormxf-getmessage) and [**IMXF::PutMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-imxf-putmessage)). These calls deal with packaged events rather than with raw MIDI bytes.
+The DMus miniport driver interface differs from the MIDI miniport driver interface in several ways. A DMus miniport driver implements the interface [IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus) as opposed to [IMiniportMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi). This interface is similar to **IMiniportMidi**, but the [**IMiniportDMus::NewStream**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iminiportdmus-newstream) method creates an [IMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imxf) (MIDI transform filter) interface and connects to an [IAllocatorMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iallocatormxf) interface in the DMus port driver, as opposed to implementing an [IMiniportMidiStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidistream) interface. **IAllocatorMXF** and **IMXF** wrap the standard **GetMessage** and **PutMessage** calls (see [**IAllocatorMXF::GetMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iallocatormxf-getmessage) and [**IMXF::PutMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-putmessage)). These calls deal with packaged events rather than with raw MIDI bytes.
 
-The DMus miniport driver for a synthesizer can implement some or all of the DirectMusic properties. These properties allow the system to manage DLS downloads and channel allocations for the device. The dmusprop.h header file defines DirectMusic-specific property items. For a list of these properties, see [KSPROPSETID\_Synth](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-synth) and [KSPROPSETID\_Synth\_Dls](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-synth-dls).
+The DMus miniport driver for a synthesizer can implement some or all of the DirectMusic properties. These properties allow the system to manage DLS downloads and channel allocations for the device. The dmusprop.h header file defines DirectMusic-specific property items. For a list of these properties, see [KSPROPSETID\_Synth](./kspropsetid-synth.md) and [KSPROPSETID\_Synth\_Dls](./kspropsetid-synth-dls.md).
 
 DMus miniport drivers are expected to allow the creation of multiple pin instances. Each pin instance acts as one virtual synthesizer and contains a set of channels and DLS downloads independent of the other pin instances.
 
-Some of the synth properties described in [Audio Drivers Property Sets](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-drivers-property-sets) act on a pin instance, and others are global. To process the global properties, the synthesizer must have a synthesizer node in its topology. The description of each property item indicates whether that item is sent to the synthesizer node or to a pin instance. For each piece of hardware supporting synthesis, there exists a port driver object and a miniport driver object, as shown in the following figure.
+Some of the synth properties described in [Audio Drivers Property Sets](./audio-drivers-property-sets.md) act on a pin instance, and others are global. To process the global properties, the synthesizer must have a synthesizer node in its topology. The description of each property item indicates whether that item is sent to the synthesizer node or to a pin instance. For each piece of hardware supporting synthesis, there exists a port driver object and a miniport driver object, as shown in the following figure.
 
-![diagram illustrating port and miniport drivers for a directmusic synthesizer](images/dmkmport.png)
+![diagram illustrating port and miniport drivers for a directmusic synthesizer.](images/dmkmport.png)
 
-The port driver object exposes one instance of an [IPortDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iportdmus) interface, which is held by the miniport driver object. The miniport driver exports one instance of an **IMiniportDMus** interface, which is held by the port driver. For every instantiated pin, the port driver requests a matching **IMXF** interface. Communication between the system and this instance is the combination of property requests addressed to the pin and events flowing to or from the **IMXF** stream interface.
+The port driver object exposes one instance of an [IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus) interface, which is held by the miniport driver object. The miniport driver exports one instance of an **IMiniportDMus** interface, which is held by the port driver. For every instantiated pin, the port driver requests a matching **IMXF** interface. Communication between the system and this instance is the combination of property requests addressed to the pin and events flowing to or from the **IMXF** stream interface.
 
 Two objects must be passed to the miniport driver when it is created:
 
@@ -63,9 +62,4 @@ This section includes:
 [Exposing Your Synthesizer as a Legacy Device](exposing-your-synthesizer-as-a-legacy-device.md)
 
  
-
- 
-
-
-
 

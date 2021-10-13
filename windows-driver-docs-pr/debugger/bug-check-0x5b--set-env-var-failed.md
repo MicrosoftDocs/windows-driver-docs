@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x5B SET_ENV_VAR_FAILED
 description: The SET_ENV_VAR_FAILED bug check has a value of 0x0000005B.This bug check appears very infrequently.
-ms.assetid: 0161bfca-48d2-4991-b6e0-15c96c167295
 keywords: ["Bug Check 0x5B SET_ENV_VAR_FAILED", "SET_ENV_VAR_FAILED"]
 ms.date: 05/23/2017
 topic_type:

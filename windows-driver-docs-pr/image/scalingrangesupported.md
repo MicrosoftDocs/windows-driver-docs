@@ -1,7 +1,6 @@
 ---
 title: ScalingRangeSupported element
 description: The required ScalingRangeSupported element describes the range of values that the scan device supports for scaling the output document.
-ms.assetid: 0af5a00e-fdca-438f-b463-3150abf0f871
 keywords: ["ScalingRangeSupported element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScalingRangeSupported** element describes the range of values that the scan device supports for scaling the output document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScalingRangeSupported>
@@ -27,8 +25,7 @@ Usage
 </wscn:ScalingRangeSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -73,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The [**ScalingWidth**](scalingwidth2.md) and [**ScalingHeight**](scalingheight2.md) elements specify the scaling range for the width and height of an image, respectively.
 

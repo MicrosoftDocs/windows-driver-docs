@@ -1,7 +1,6 @@
 ---
 title: NFC polling
 description: NFC polling
-ms.assetid: C6C531EC-59AA-4AF5-903E-A726C0E79E47
 keywords:
 - NFC
 - near field communications
@@ -25,6 +24,4 @@ If the NFP technology must poll, the polling MUST be done in hardware without wa
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
- 
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  

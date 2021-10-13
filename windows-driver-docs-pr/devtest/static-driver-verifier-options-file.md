@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier Options File
 description: Static Driver Verifier Options File
-ms.assetid: 694fbaef-6bff-4ecb-a271-a0313dae1d6c
 keywords:
 - Static Driver Verifier WDK , input files
 - StaticDV WDK , input files

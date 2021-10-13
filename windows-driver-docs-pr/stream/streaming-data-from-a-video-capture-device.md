@@ -1,7 +1,6 @@
 ---
 title: Streaming Data from a Video Capture Device
 description: Streaming Data from a Video Capture Device
-ms.assetid: c83aae8e-70a7-4d65-a888-00a7c21eebdd
 keywords:
 - video capture WDK AVStream , streaming data from
 - capturing video WDK AVStream , streaming data from
@@ -24,14 +23,9 @@ When capturing vertical blanking interval (VBI) streams, the capture device shou
 
 VBI decoders must be immediately informed of tuning changes. For example, when the tuner switches from one channel to another, a VBI decoder must be notified at the beginning of the tuning operation so it can temporarily stop decoding during the period of signal instability. When the tuning operation completes, the VBI decoder must be notified of the new channel and any video standard or country/region code changes that may have occurred.
 
-A minidriver must propagate a tuning packet from its tuner filter, through the crossbar filter, and then into the analog video input pin on its capture filter. This packet is only available in user mode until it reaches the capture filter. The minidriver receives this tuning packet as a [**KS\_TVTUNER\_CHANGE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_tvtuner_change_info) structure on the analog video input pin of the minidriver's capture filter.
+A minidriver must propagate a tuning packet from its tuner filter, through the crossbar filter, and then into the analog video input pin on its capture filter. This packet is only available in user mode until it reaches the capture filter. The minidriver receives this tuning packet as a [**KS\_TVTUNER\_CHANGE\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_tvtuner_change_info) structure on the analog video input pin of the minidriver's capture filter.
 
 The minidriver must also propagate the tuning packet to the VBI output pins of its capture filter using the [video stream extended header](video-stream-extended-headers.md). VBI decoders that operate as a chain must similarly propagate the extended header information from their input pins to their output pins.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Access Rights
 description: Access Rights
-ms.assetid: 518e60db-7058-4ebe-8640-eb8f6b9e7645
 keywords: ["access rights WDK objects", "generic access rights WDK objects", "standard access rights WDK objects", "specific access rights WDK objects", "object access rights WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 An *access right* is the right to perform a particular operation on the object. For example, the FILE\_READ\_DATA access right specifies the right to read from a file.
 
-When you open a handle to an object, you specify a set of access rights corresponding to the operations that may be performed on the object. The system checks the specified access rights against the object's security descriptor to see if each operation is permitted for the current user. (For more information, see [Security Descriptors](https://docs.microsoft.com/windows-hardware/drivers/ifs/security-descriptors).)
+When you open a handle to an object, you specify a set of access rights corresponding to the operations that may be performed on the object. The system checks the specified access rights against the object's security descriptor to see if each operation is permitted for the current user. (For more information, see [Security Descriptors](../ifs/security-descriptors.md).)
 
 Access rights come in two types:
 
@@ -41,9 +40,4 @@ The system provides the following generic access rights:
 Thus, the system maps GENERIC\_READ to a set of rights that includes FILE\_READ\_DATA and FILE\_READ\_ATTRIBUTES for a file, and KEY\_QUERY\_VALUE and KEY\_ENUMERATE\_SUBKEYS for a key. For more information about each generic access right, see [**ACCESS\_MASK**](access-mask.md).
 
  
-
- 
-
-
-
 

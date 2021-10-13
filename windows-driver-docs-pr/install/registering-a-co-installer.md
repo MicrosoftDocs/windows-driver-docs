@@ -1,7 +1,6 @@
 ---
 title: Registering a Co-installer
 description: Registering a Co-installer
-ms.assetid: a585bb06-d65f-4e14-a205-dc0d6523363e
 keywords:
 - co-installers WDK device installations , registering
 - registering co-installers

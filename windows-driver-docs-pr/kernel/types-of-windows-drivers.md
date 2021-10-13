@@ -1,7 +1,6 @@
 ---
 title: Types of Windows Drivers
 description: Types of Windows Drivers
-ms.assetid: e6696c6b-2d3c-473c-9f46-576fe0c40496
 keywords: ["Windows drivers WDK , types", "drivers WDK , types", "kernel-mode drivers WDK , types", "highest-level drivers WDK", "intermediate drivers WDK kernel", "lowest-level drivers WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: High
@@ -17,17 +16,17 @@ There are two basic types of Microsoft Windows drivers:
 
 -   *User-mode drivers* execute in user mode, and they typically provide an interface between a Win32 application and kernel-mode drivers or other operating system components.
 
-    For example, in Windows Vista, all printer drivers execute in user mode. For more information about printer driver components, see [Introduction to Printing](https://docs.microsoft.com/windows-hardware/drivers/print/introduction-to-printing).
+    For example, in Windows Vista, all printer drivers execute in user mode. For more information about printer driver components, see [Introduction to Printing](../print/introduction-to-printing.md).
 
 -   *Kernel-mode drivers* execute in kernel mode as part of the executive, which consists of kernel-mode operating system components that manage I/O, Plug and Play memory, processes and threads, security, and so on. Kernel-mode drivers are typically layered. Generally, higher-level drivers typically receive data from applications, filter the data, and pass it to a lower-level driver that supports device functionality.
 
-    Some kernel-mode drivers are also *WDM drivers*, which conform to the [Windows Driver Model](windows-driver-model.md) (WDM). All WDM drivers support Plug and Play, and power management. WDM drivers are source-compatible (but not binary-compatible) across Windows 98/Me and Windows 2000 and later operating systems.
+    Some kernel-mode drivers are also *WDM drivers*, which conform to the [Windows Driver Model](introduction-to-wdm.md) (WDM). All WDM drivers support Plug and Play, and power management. WDM drivers are source-compatible (but not binary-compatible) across Windows 98/Me and Windows 2000 and later operating systems.
 
-    Like the operating system itself, kernel-mode drivers are implemented as discrete, modular components that have a well-defined set of required functionalities. All kernel-mode drivers supply a set of system-defined [standard driver routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-standard-driver-routines).
+    Like the operating system itself, kernel-mode drivers are implemented as discrete, modular components that have a well-defined set of required functionalities. All kernel-mode drivers supply a set of system-defined [standard driver routines](./introduction-to-standard-driver-routines.md).
 
 The following figure divides kernel-mode drivers into several types.
 
-![diagram illustrating types of kernel-mode drivers](images/1drvlyrs.png)
+![diagram illustrating types of kernel-mode drivers.](images/1drvlyrs.png)
 
 As shown in the figure, there are three basic types of kernel-mode drivers in a driver stack: highest-level, intermediate, and lowest-level. Each type differs only slightly in structure but greatly in functionality:
 
@@ -62,9 +61,4 @@ As shown in the figure, there are three basic types of kernel-mode drivers in a 
     -   *Legacy drivers* that directly control a physical device are lowest-level drivers.
 
  
-
- 
-
-
-
 

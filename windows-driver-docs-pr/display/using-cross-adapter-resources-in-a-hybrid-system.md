@@ -1,7 +1,6 @@
 ---
 title: Using cross-adapter resources in a hybrid system
 description: A Windows Display Driver Model (WDDM) driver can support a hybrid system, where cross-adapter resources are shared between an integrated GPU and a discrete GPU.
-ms.assetid: ECBB0AA7-50C2-41C8-9DC6-6EEFC5CEEB15
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Starting in Windows 8.1, a Windows Display Driver Model (WDDM) driver can support a *hybrid system*, where *cross-adapter resources* are shared between an integrated GPU and a discrete GPU, and an application can be run on either GPU, depending on the needs of the application. The operating system and driver together determine which GPU an application should run on.
 
-The display miniport driver should express support for cross-adapter resources by setting the **CrossAdapterResource** member of the [**DXGK\_VIDMMCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps) structure.
+The display miniport driver should express support for cross-adapter resources by setting the **CrossAdapterResource** member of the [**DXGK\_VIDMMCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps) structure.
 
 Drivers get information in different ways depending on the type of allocation. If the allocation is a traditional full-screen primary, the user-mode display driver gets the information that's usually provided when the primary is created, such as the primary flag, the video present network (VidPN) source ID, the refresh rate, and rotation information. However, if the allocation is a direct flip primary, the cross-adapter allocation could be used as a primary, but the user-mode display driver won't get the usual information that's provided when the primary is created. Also, in this case the discrete user-mode display driver receives information about the primary but should not validate it. The integrated driver does not receive information that indicates that it's a primary.
 
@@ -46,10 +45,4 @@ These subsequent topics give more details on driver implementation for hybrid sy
 -   It might be created by the user-mode display driver.
 
  
-
- 
-
-
-
-
 

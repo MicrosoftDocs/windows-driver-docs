@@ -1,80 +1,70 @@
 ---
-title: Summary
-description: Summary
-ms.assetid: 8ed412b2-1e7c-440f-8949-a3b1fff09b16
-ms.date: 11/28/2017
+title: Summary property
+description: A brief description of the current state of the device.
+ms.date: 09/08/2021
 ms.localizationpriority: medium
 ---
 
-# Summary
+# Summary property
 
+Schema Path: \\Printer.Status.Summary
 
-Schema Path:\\Printer.Status.Summary
+Node Type: Property
 
-Node Type:Property
-
-Description:A brief description of the current state of the device. This provides a high-level view of the device status. Only the most important conditions are displayed.
+Description: A brief description of the current state of the device. This provides a high-level view of the device status. Only the most important conditions are displayed.
 
 The Summary property contains two child values: **State** and **StateReason**.
 
-### <span id="state"></span><span id="STATE"></span>State
+## State
 
-Schema Path:\\Printer.Status.Summary:State
+Schema Path: \\Printer.Status.Summary:State
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:The processing state of the device.
-
-The following values are allowed:
-
-Idle
-
-Processing
-
-Stopped
-
-### <span id="statereason"></span><span id="STATEREASON"></span>StateReason
-
-Schema Path:\\Printer.Status.Summary:StateReason
-
-Node Type:Value
-
-Data Type:BIDI\_STRING
-
-Description:The most important reasons for the current printer state. This value can be a list of space-delimited state reasons.
+Description: The processing state of the device.
 
 The following values are allowed:
 
-AttentionRequired
+- Idle
 
-DoorOpen
+- Processing
 
-MarkerSupplyEmpty
+- Stopped
 
-MarkerSupplyLow
+## StateReason
 
-MediaEmpty
+Schema Path: \\Printer.Status.Summary:StateReason
 
-MediaJam
+Node Type: Value
 
-MediaLow
+Data Type: BIDI_STRING
 
-MediaNeeded
+Description: The most important reasons for the current printer state. This value can be a list of space-delimited state reasons.
 
-None
+The following values are allowed:
 
-Paused
+- AttentionRequired
 
-OutputAreaAlmostFull
+- DoorOpen
 
-OutputAreaFull
+- MarkerSupplyEmpty
 
- 
+- MarkerSupplyLow
 
- 
+- MediaEmpty
 
+- MediaJam
 
+- MediaLow
 
+- MediaNeeded
 
+- None
+
+- Paused
+
+- OutputAreaAlmostFull
+
+- OutputAreaFull

@@ -1,7 +1,6 @@
 ---
 title: Driver x64 Restrictions
 description: Driver x64 Restrictions
-ms.assetid: 717ca559-93aa-48d6-8347-bfdf223f1aa4
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -25,12 +24,7 @@ Even though the preceding operations will not trigger a bug check on x86-based o
 
 For more information about modifying kernel code and data structures, see the [Patching Policy for x64-based Systems](https://go.microsoft.com/fwlink/p/?linkid=50719) white paper and the [64-Bit Patching FAQ](https://go.microsoft.com/fwlink/p/?linkid=69534).
 
-For general information about programming with a 64-bit compiler, see [64-Bit Programming with Visual C++](https://go.microsoft.com/fwlink/p/?linkid=165521).
+For general information about programming with a 64-bit compiler, see [64-Bit Programming with Visual C++](/cpp/build/configuring-programs-for-64-bit-visual-cpp).
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Message compiler task
 description: The Windows Driver Kit (WDK) provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see Message Compiler (MC.exe).
-ms.assetid: 77B2DBF4-64EB-4396-BAA5-80F23C9899CC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Message compiler task
 
 
-The Windows Driver Kit (WDK) provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see [**Message Compiler (MC.exe)**](https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-).
+The Windows Driver Kit (WDK) provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see [**Message Compiler (MC.exe)**](/windows/desktop/WES/message-compiler--mc-exe-).
 
 MSBuild uses the MessageCompile Item to send the parameters for the MessageCompiler task. The MessageCompile item accesses the item metadata for mc.exe in project files.
 
@@ -259,14 +258,7 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 ## <span id="related_topics"></span>Related topics
 
 
-[**Message Compiler (MC.exe)**](https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-)
+[**Message Compiler (MC.exe)**](/windows/desktop/WES/message-compiler--mc-exe-)
 
  
-
- 
-
-
-
-
-
 

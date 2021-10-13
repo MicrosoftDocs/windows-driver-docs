@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT
 description: The KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT property sets the video format. The format must match one that an earlier KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT Get request returned.
-ms.assetid: f701ad32-ba85-4766-ac6b-11744af8fc0d
 keywords: ["KSPROPERTY_VPCONFIG_SETVIDEOFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT property sets the video format. The for
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat" data-raw-source="[&lt;strong&gt;DDPIXELFORMAT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat)"><strong>DDPIXELFORMAT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat" data-raw-source="[&lt;strong&gt;DDPIXELFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat)"><strong>DDPIXELFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT property sets the video format. The for
 
 The property value (operation data) is a DDPIXELFORMAT structure that specifies the video format to use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,16 +74,6 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat)
-
- 
-
- 
-
-
-
-
-
-
+[**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat)

@@ -1,7 +1,6 @@
 ---
 title: Instructing How to Protect the Signal
 description: Instructing How to Protect the Signal
-ms.assetid: d55a3660-5b7c-43e9-b1c5-b61f8b997a1a
 keywords:
 - copy protection WDK COPP , signal protection
 - video copy protection WDK COPP , signal protection
@@ -17,13 +16,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 
-The COPP command can provide instructions about how to protect the signal that goes through the physical connector associated with the DirectX VA COPP device. To set signal protection, the video miniport driver's [*COPPCommand*](https://docs.microsoft.com/windows-hardware/drivers/display/coppcommand) function receives a pointer to a [**DXVA\_COPPCommand**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_coppcommand) structure with the **guidCommandID** member set to the DXVA\_COPPSetSignaling GUID and the **CommandData** member set to a pointer to a [**DXVA\_COPPSetSignalingCmdData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_coppsetsignalingcmddata) structure that specifies how to protect the signal.
+The COPP command can provide instructions about how to protect the signal that goes through the physical connector associated with the DirectX VA COPP device. To set signal protection, the video miniport driver's [*COPPCommand*](./coppcommand.md) function receives a pointer to a [**DXVA\_COPPCommand**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppcommand) structure with the **guidCommandID** member set to the DXVA\_COPPSetSignaling GUID and the **CommandData** member set to a pointer to a [**DXVA\_COPPSetSignalingCmdData**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppsetsignalingcmddata) structure that specifies how to protect the signal.
 
  
-
- 
-
-
-
-
 

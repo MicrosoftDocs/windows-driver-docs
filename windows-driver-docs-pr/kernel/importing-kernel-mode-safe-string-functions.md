@@ -1,7 +1,6 @@
 ---
 title: Importing Kernel-Mode Safe String Functions
 description: Importing Kernel-Mode Safe String Functions
-ms.assetid: f1cee7e0-151b-4e03-bf4d-400f328083fa
 keywords: ["importing safe string functions", "inline safe string function versions WDK kernel", "library safe string function versions WDK kernel", "byte-counted functions WDK kernel", "character-counted functions WDK kernel", "safe string functions WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -43,7 +42,7 @@ Include the following line in your code before including the Ntstrsafe.h header 
 
 You can define either NTSTRSAFE\_NO\_CB\_FUNCTIONS or NTSTRSAFE\_NO\_CCH\_FUNCTIONS, but not both.
 
-You can make the [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_unicode_string) structure functions unavailable.
+You can make the [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure functions unavailable.
 
 ### <a href="" id="to-make-unicode-string-structure-functions-unavailable"></a>To make UNICODE\_STRING structure functions unavailable
 
@@ -65,9 +64,4 @@ Your driver can assign smaller values to NTSTRSAFE\_MAX\_CCH and NTSTRSAFE\_UNIC
 Directives in Ntstrsafe.h verify that your new values are not larger than the default values.
 
  
-
- 
-
-
-
 

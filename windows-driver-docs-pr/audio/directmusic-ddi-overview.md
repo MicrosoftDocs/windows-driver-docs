@@ -1,7 +1,6 @@
 ---
 title: DirectMusic DDI Overview
 description: DirectMusic DDI Overview
-ms.assetid: 95870103-197c-4b7c-b6ee-cac176b62dfc
 keywords:
 - DirectMusic WDK audio , about DirectMusic DDI
 - user-mode synths WDK audio
@@ -27,15 +26,15 @@ Typically, the best design strategy is to first write a software implementation 
 
 DirectMusic uses the following user-mode interfaces to control user-mode synthesizers and communicate with kernel-streaming drivers:
 
-[IDirectMusicSynth](https://docs.microsoft.com/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynth)
+[IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth)
 
 This is the user-mode interface for implementing custom software synths.
 
-[IDirectMusicSynthSink](https://docs.microsoft.com/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynthsink)
+[IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink)
 
 This is the user-mode interface for implementing custom wave sinks in Microsoft DirectX 6.1 and DirectX 7. In DirectX 8 and later, DirectMusic always uses its private wave sink with a user-mode synth, and no public interface is supported for user-mode wave sinks.
 
-[IKsControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nn-ksproxy-ikscontrol)
+[IKsControl](/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol)
 
 DirectMusic uses this interface to access the properties of kernel-streaming drivers from user mode in DirectX 6.1 and later.
 
@@ -43,24 +42,19 @@ Kernel-mode terminology differs slightly from user-mode because of the port-mini
 
 Custom DMus miniport drivers use the following kernel-mode interfaces:
 
-[IAllocatorMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iallocatormxf)
+[IAllocatorMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iallocatormxf)
 
-[IMiniportDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iminiportdmus)
+[IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus)
 
-[ISynthSinkDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-isynthsinkdmus)
+[ISynthSinkDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-isynthsinkdmus)
 
-[IMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imxf)
+[IMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imxf)
 
-[IMasterClock](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imasterclock)
+[IMasterClock](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imasterclock)
 
-[IPortDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iportdmus)
+[IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus)
 
 DMus miniport drivers implement the **IMiniportDMus**, **ISynthSinkDMus**, and **IMXF** interfaces. The DMus port driver implements the **IAllocatorMXF**, **IMasterClock**, and **IPortDMus** interfaces and exposes them to miniport drivers.
 
  
-
- 
-
-
-
 

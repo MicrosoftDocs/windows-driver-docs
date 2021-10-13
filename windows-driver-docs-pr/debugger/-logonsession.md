@@ -1,7 +1,6 @@
 ---
 title: logonsession
 description: The logonsession extension displays information about a specified logon session.
-ms.assetid: 95746bc0-ab36-43a7-83ad-9f6fdbb15b39
 keywords: ["logon session", "logonsession Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,10 +35,10 @@ Checked Build Syntax
 <span id="_______LUID______"></span><span id="_______luid______"></span> *LUID*   
 Specifies the locally unique identifier (LUID) of a logon session to display. If *LUID*is 0, information about all logon sessions is displayed.
 
-To display information about the system session and all system tokens in a checked build, enter **!logonsession 3e7 1**.
+To display information about the system session and all system tokens in a checked build, enter **!logonsession 3e7 1**. Checked builds were available on older versions of Windows before Windows 10, version 1803.
 
 <span id="_______InfoLevel______"></span><span id="_______infolevel______"></span><span id="_______INFOLEVEL______"></span> *InfoLevel*   
-(Checked Build Only) Specifies how much token information is displayed. The *InfoLevel* parameter can take values from 0 to 4, with 0 representing the least information and 4 representing the most information.
+(Checked Build Only) Specifies how much token information is displayed. The *InfoLevel* parameter can take values from 0 to 4, with 0 representing the least information and 4 representing the most information. Checked builds were available on older versions of Windows before Windows 10, version 1803.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -66,8 +65,7 @@ To display information about the system session and all system tokens in a check
 
 For information about logon sessions, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension on a free build:
 

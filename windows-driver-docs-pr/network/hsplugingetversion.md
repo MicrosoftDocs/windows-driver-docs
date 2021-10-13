@@ -1,7 +1,6 @@
 ---
 title: HSPluginGetVersion function
 description: The HSPluginGetVersion function is exported by the plugin DLL and is called to verify that the plugin version matches the host version.
-ms.assetid: dfdd534c-43c0-4d96-b85b-de9c2830322d
 keywords: 
 - HSPluginGetVersion function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
@@ -10,13 +9,12 @@ ms.localizationpriority: medium
 
 # HSPluginGetVersion function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HSPluginGetVersion** function is exported by the plugin DLL and is called to verify that the plugin version matches the host version.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DWORD HSPluginGetVersion(
@@ -24,14 +22,12 @@ DWORD HSPluginGetVersion(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pHotspotPluginVersion* \[out\]  
 A pointer to the [**HS\_PLUGIN\_VERSION**](hs-plugin-version.md) structure that contains version information for the plugin.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

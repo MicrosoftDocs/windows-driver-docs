@@ -1,7 +1,6 @@
 ---
-title: Sequences
+title: NFC CX driver sequences
 description: This topic describes NFC CX driver sequences.
-ms.assetid: 92FDF18F-B42B-43F2-914A-CA7E986EE0DF
 keywords:
 - NFC
 - near field communications
@@ -38,6 +37,5 @@ This topic describes NFC CX driver sequences.
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

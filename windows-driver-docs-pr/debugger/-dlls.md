@@ -1,7 +1,6 @@
 ---
-title: dlls
+title: dlls (WinDbg)
 description: The dlls extension displays the table entries of all loaded modules or all modules that a specified thread or process are using.
-ms.assetid: a47ec828-ba5a-4f0d-be85-18633c4e4185
 keywords: ["DLL table entry", "dlls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -82,8 +81,7 @@ Ntsdexts.dll</td>
 
  
 
-Remarks
--------
+## Remarks
 
 The module listing includes all entry points into each module.
 

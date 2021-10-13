@@ -1,7 +1,6 @@
 ---
-title: C28742
+title: C28742 warning
 description: Warning C28742 Unannotated buffer in the function.
-ms.assetid: 04B2D637-360F-4347-8533-FEDC81FCE40D
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

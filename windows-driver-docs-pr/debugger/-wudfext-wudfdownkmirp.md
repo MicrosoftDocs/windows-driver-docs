@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfdownkmirp
 description: The wudfext.downkmmirp extension displays the kernel-mode I/O request packet (IRP) that corresponds to the specified user-mode I/O request packet (UM IRP).
-ms.assetid: f5c42040-2349-4469-a398-12a238ff170e
 keywords: ["wudfext.wudfdownkmirp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the address of the UM IRP whose corresponding kernel-mode IRP is to be
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use the [**!wudfext.umirps**](-wudfext-umirps.md) extension command to display a list of all outstanding UM IRPs in the host process.
 

@@ -1,7 +1,6 @@
 ---
 title: Handling Client Impersonation in UMDF Drivers
 description: This topic describes how a User-Mode Driver Framework (UMDF) driver accesses protected resources, starting in UMDF version 2.
-ms.assetid: 02EA93CE-3C4D-4F6F-8E58-DD78EBDB19DE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,23 +28,23 @@ Both the UMDF driver's installation package and the client application must enab
 
 The UMDF driver and framework handle impersonation for an I/O request in the following sequence:
 
-1.  The driver calls the [**WdfRequestImpersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) method to specify the required impersonation level and an [*EvtRequestImpersonate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function.
+1.  The driver calls the [**WdfRequestImpersonate**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) method to specify the required impersonation level and an [*EvtRequestImpersonate*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function.
 
-2.  The framework checks the requested impersonation level. If the requested level is greater than the level that the UMDF driver's installation package and the client application allow, the impersonation request fails. Otherwise, the framework impersonates the client and immediately calls the [*EvtRequestImpersonate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function.
+2.  The framework checks the requested impersonation level. If the requested level is greater than the level that the UMDF driver's installation package and the client application allow, the impersonation request fails. Otherwise, the framework impersonates the client and immediately calls the [*EvtRequestImpersonate*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function.
 
-The [*EvtRequestImpersonate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function must perform only the operations that require the requested impersonation level, such as opening a protected file.
+The [*EvtRequestImpersonate*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function must perform only the operations that require the requested impersonation level, such as opening a protected file.
 
-The framework does not allow a driver's [*EvtRequestImpersonate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function to call any of the framework's object methods. This ensures that the driver does not expose the impersonation level to other driver callback functions or other drivers.
+The framework does not allow a driver's [*EvtRequestImpersonate*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function to call any of the framework's object methods. This ensures that the driver does not expose the impersonation level to other driver callback functions or other drivers.
 
-As a best practice, your driver should not [enable cancellation](canceling-i-o-requests.md) of an I/O request before calling [**WdfRequestImpersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) for that request.
+As a best practice, your driver should not [enable cancellation](canceling-i-o-requests.md) of an I/O request before calling [**WdfRequestImpersonate**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) for that request.
 
-The [**WdfRequestImpersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) method grants only the impersonation level that the driver requests.
+The [**WdfRequestImpersonate**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) method grants only the impersonation level that the driver requests.
 
 ### Passing Credentials down the Driver Stack
 
-When your driver receives a [**WdfRequestTypeCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/ne-wdfrequest-_wdf_request_type)-typed I/O request, the driver might forward the I/O request down the driver stack to a kernel-mode driver. Kernel-mode drivers do not have the impersonation capability that [**WdfRequestImpersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) provides to UMDF drivers.
+When your driver receives a [**WdfRequestTypeCreate**](/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type)-typed I/O request, the driver might forward the I/O request down the driver stack to a kernel-mode driver. Kernel-mode drivers do not have the impersonation capability that [**WdfRequestImpersonate**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) provides to UMDF drivers.
 
-Therefore, if you want a kernel-mode driver to receive the client's user credentials (rather the credentials of the [driver host process](umdf-driver-host-process.md)), the driver must set the [**WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATE\_CLIENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/ne-wdfrequest-_wdf_request_send_options_flags) flag when it calls [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsend) to send the create request to the I/O target. The **Send** method returns an error code if the impersonation attempt fails, unless the driver also sets the **WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATION\_IGNORE\_FAILURE** flag.
+Therefore, if you want a kernel-mode driver to receive the client's user credentials (rather the credentials of the [driver host process](umdf-driver-host-process.md)), the driver must set the [**WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATE\_CLIENT**](/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_send_options_flags) flag when it calls [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) to send the create request to the I/O target. The **Send** method returns an error code if the impersonation attempt fails, unless the driver also sets the **WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATION\_IGNORE\_FAILURE** flag.
 
 The following example shows how a UMDF driver might use the **WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATE\_CLIENT** flag to send a file creation request to an I/O target. The driver's INF file must also include the **UmdfImpersonationLevel** directive as described above.
 
@@ -73,7 +72,7 @@ if (WdfRequestSend(Request,
 }
 ```
 
-The driver does not have to call [**WdfRequestImpersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) before it sends the request to the I/O target.
+The driver does not have to call [**WdfRequestImpersonate**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate) before it sends the request to the I/O target.
 
 If lower-level drivers also forward the request, the client's impersonation level travels down the driver stack.
 
@@ -91,13 +90,7 @@ To reduce the chance of an "elevation of privilege" attack, you should:
 
 -   Minimize the opportunities for an attacker to exploit your driver.
 
-    Your [*EvtRequestImpersonate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function should contain a small section of code that performs only the operation that requires impersonation. For example, if your driver accesses a protected file, it requires impersonation only when it opens the file handle. It does not require impersonation to read from or write to the file.
+    Your [*EvtRequestImpersonate*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_impersonate) callback function should contain a small section of code that performs only the operation that requires impersonation. For example, if your driver accesses a protected file, it requires impersonation only when it opens the file handle. It does not require impersonation to read from or write to the file.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_SessionStaticInfo WMI Class
 description: ISCSI\_SessionStaticInfo WMI Class
-ms.assetid: e6ef8389-c4f3-4498-9864-6e4c1e8ca5b5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -161,13 +160,7 @@ class ISCSI_SessionStaticInfo {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_SessionStaticInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_iscsi_sessionstaticinfo) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_SessionStaticInfo**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_sessionstaticinfo) data structure.
 
  
-
- 
-
-
-
-
 

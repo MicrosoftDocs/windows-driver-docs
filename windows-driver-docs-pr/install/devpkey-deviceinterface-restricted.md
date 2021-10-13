@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceInterface_Restricted
 description: DEVPKEY_DeviceInterface_Restricted
-ms.assetid: 54C71B62-3F3D-462B-BF72-DDF1F97D3C75
 keywords: ["DEVPKEY_DeviceInterface_Restricted Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_DeviceInterface_Restricted device interface property indicates that 
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -47,13 +52,11 @@ The DEVPKEY_DeviceInterface_Restricted device interface property indicates that 
 
  
 
-Remarks
--------
+## Remarks
 
-You can call [**SetupDiGetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to retrieve the value of DEVPKEY_DeviceInterface_Restricted.
+You can call [**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to retrieve the value of DEVPKEY_DeviceInterface_Restricted.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,14 +78,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
+[**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
 
  
-
- 
-
-
-
-
-
 

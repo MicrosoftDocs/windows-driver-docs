@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AEC\_MODE
 description: The KSPROPERTY\_AEC\_MODE property is used to control an AEC node's mode of operation. This is an optional property of an AEC node (KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL).
-ms.assetid: 79f0d655-4764-454f-8867-6cf1b5cedc82
 keywords: ["KSPROPERTY_AEC_MODE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AEC\_MODE property is used to control an AEC node's mode of oper
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -71,14 +70,13 @@ The property value (operation data) is of type ULONG and can be set to one of th
 
 Pass-through mode is the default. When the filter containing the AEC node is created or the node is reset, the node is initially configured to operate in pass-through mode.
 
-In the initial release of Windows XP, the AEC algorithm that the [AEC system filter](https://docs.microsoft.com/windows-hardware/drivers/audio/aec-system-filter) uses does not support the half-duplex mode.
+In the initial release of Windows XP, the AEC algorithm that the [AEC system filter](./aec-system-filter.md) uses does not support the half-duplex mode.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
 A KSPROPERTY\_AEC\_MODE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -96,16 +94,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)
-
- 
-
- 
-
-
-
-
-
 

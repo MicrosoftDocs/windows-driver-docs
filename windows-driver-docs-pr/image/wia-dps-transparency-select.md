@@ -1,7 +1,6 @@
 ---
-title: WIA\_DPS\_TRANSPARENCY\_SELECT
-description: The WIA\_DPS\_TRANSPARENCY\_SELECT property is obsolete and should not be used.
-ms.assetid: 486a5a59-b314-4171-90e7-1eeeed7d5e3d
+title: WIA_DPS_TRANSPARENCY_SELECT
+description: The WIA_DPS_TRANSPARENCY_SELECT property is obsolete and should not be used.
 keywords: ["WIA_DPS_TRANSPARENCY_SELECT Imaging Devices"]
 topic_type:
 - apiref
@@ -11,45 +10,20 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/04/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DPS\_TRANSPARENCY\_SELECT
+# WIA_DPS_TRANSPARENCY_SELECT
 
+The WIA_DPS_TRANSPARENCY_SELECT property is obsolete and should not be used.
 
-The WIA\_DPS\_TRANSPARENCY\_SELECT property is obsolete and should not be used.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dps_transparency_select_si"></span><span id="DDK_WIA_DPS_TRANSPARENCY_SELECT_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

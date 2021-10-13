@@ -1,7 +1,6 @@
 ---
 title: WSK_SET_STATIC_EVENT_CALLBACKS
 description: WSK_SET_STATIC_EVENT_CALLBACKS
-ms.assetid: fa95bc7d-c7b2-4cca-a419-ef5eb2520976
 ms.date: 07/18/2017
 keywords:
  - WSK_SET_STATIC_EVENT_CALLBACKS Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ A WSK application uses the WSK\_SET\_STATIC\_EVENT\_CALLBACKS client control ope
 
 If a WSK application uses the WSK\_SET\_STATIC\_EVENT\_CALLBACKS client control operation, it must do so before it creates any sockets.
 
-To automatically enable certain event callback functions on every socket it creates, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
+To automatically enable certain event callback functions on every socket it creates, a WSK application calls the [**WskControlClient**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
 
 <table>
 <colgroup>
@@ -39,7 +38,7 @@ To automatically enable certain event callback functions on every socket it crea
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_event_callback_control" data-raw-source="[&lt;strong&gt;WSK_EVENT_CALLBACK_CONTROL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_event_callback_control)"><strong>WSK_EVENT_CALLBACK_CONTROL</strong></a> structure that specifies the desired event callback functions to be automatically enabled</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_event_callback_control" data-raw-source="[&lt;strong&gt;WSK_EVENT_CALLBACK_CONTROL&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_event_callback_control)"><strong>WSK_EVENT_CALLBACK_CONTROL</strong></a> structure that specifies the desired event callback functions to be automatically enabled</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -60,16 +59,15 @@ To automatically enable certain event callback functions on every socket it crea
 </tbody>
 </table>
 
-A WSK application can specify a combination of event flags for different socket types in the **EventMask** member of the [**WSK\_EVENT\_CALLBACK\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_event_callback_control) structure. When the WSK application creates a new socket, the WSK subsystem will automatically enable the appropriate event callback functions for the specific [category](https://docs.microsoft.com/windows-hardware/drivers/network/winsock-kernel-socket-categories) of WSK socket that is being created.
+A WSK application can specify a combination of event flags for different socket types in the **EventMask** member of the [**WSK\_EVENT\_CALLBACK\_CONTROL**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_event_callback_control) structure. When the WSK application creates a new socket, the WSK subsystem will automatically enable the appropriate event callback functions for the specific [category](./winsock-kernel-socket-categories.md) of WSK socket that is being created.
 
 For more information about the event flags for the standard WSK event callback functions, see [**SO\_WSK\_EVENT\_CALLBACK**](so-wsk-event-callback.md).
 
-For more information about enabling and disabling a socket's event callback functions, see [Enabling and Disabling Event Callback Functions](https://docs.microsoft.com/windows-hardware/drivers/network/enabling-and-disabling-event-callback-functions).
+For more information about enabling and disabling a socket's event callback functions, see [Enabling and Disabling Event Callback Functions](./enabling-and-disabling-event-callback-functions.md).
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,11 +85,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
 

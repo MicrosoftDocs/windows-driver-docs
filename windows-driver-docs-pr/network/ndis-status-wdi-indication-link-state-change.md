@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE to indicate any of the following situations
-ms.assetid: 5a8fbe41-d063-4d34-beb8-92ceeb1d97a2
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE Network Drivers Starting with Windows Vista
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_LINK\_STATE\_CHANGE to indicate any of the following situations:
 
 -   The link speed changed.
--   The link quality changed by more than a threshold value. The threshold is 1 if the connection quality hint is set to WDI\_CONNECTION\_QUALITY\_LOW\_LATENCY (defined in [**WDI\_CONNECTION\_QUALITY\_HINT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_connection_quality_hint)). Otherwise, the threshold is 5.
+-   The link quality changed by more than a threshold value. The threshold is 1 if the connection quality hint is set to WDI\_CONNECTION\_QUALITY\_LOW\_LATENCY (defined in [**WDI\_CONNECTION\_QUALITY\_HINT**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_connection_quality_hint)). Otherwise, the threshold is 5.
 
 | Object |
 |--------|
@@ -31,12 +30,11 @@ In Station and P2P Client cases, the Peer MAC Address is set to the BSSID of the
 
 | Type                                                                                           | Multiple TLV instances allowed | Optional | Description                       |
 |------------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------|
-| [**WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-link-state-change-parameters) |                                |          | The link state change parameters. |
+| [**WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS**](./wdi-tlv-link-state-change-parameters.md) |                                |          | The link state change parameters. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -60,9 +58,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

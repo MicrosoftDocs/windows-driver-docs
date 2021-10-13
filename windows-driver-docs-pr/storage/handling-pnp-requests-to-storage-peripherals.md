@@ -1,7 +1,6 @@
 ---
 title: Handling PnP Requests to Storage Peripherals
 description: Handling PnP Requests to Storage Peripherals
-ms.assetid: 9c7ea576-11e6-46d7-b04c-ce412a0fc569
 keywords:
 - peripherals WDK storage , PnP requests
 - storage peripherals WDK , PnP requests
@@ -23,16 +22,11 @@ A storage class driver's *DispatchPnP* routine is responsible for the following 
 
 -   Removing its device in response to a remove request (IRP\_MJ\_PNP with IRP\_MN\_REMOVE\_DEVICE). See [Storage Class Driver's RemoveDevice Routine](storage-class-driver-s-removedevice-routine.md).
 
--   If its device can contain the system paging file, maintaining a count of paging path notifications in its device extension in response to a paging-notification request (IRP\_MJ\_PNP with [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-device-usage-notification)) and forwarding the request to the next-lower driver.
+-   If its device can contain the system paging file, maintaining a count of paging path notifications in its device extension in response to a paging-notification request (IRP\_MJ\_PNP with [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](../kernel/irp-mn-device-usage-notification.md)) and forwarding the request to the next-lower driver.
 
 -   Handling query-remove and query-stop requests and, if the device contains the system paging file or hibernation file, failing such requests. A driver might also fail a query-remove request if its device is claimed for crash dump, because removing such a device disables crash dump.
 
 The storage class driver forwards PnP query, cancel, and stop requests (except for failed query requests) to the next-lower driver.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PEER_MAC_ADDRESS
 description: WDI_TLV_PEER_MAC_ADDRESS is a TLV that contains the MAC address of the peer.
-ms.assetid: A936BAA6-96AD-4187-9933-FA02CCFED2AE
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PEER_MAC_ADDRESS Network Drivers Starting with Windows Vista
@@ -21,19 +20,18 @@ WDI\_TLV\_PEER\_MAC\_ADDRESS is a TLV that contains the MAC address of the peer.
 ## Length
 
 
-The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
+The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
 
 ## Values
 
 
 | Type                                              | Description                                  |
 |---------------------------------------------------|----------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Specifies the Wi-Fi MAC address of the peer. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Specifies the Wi-Fi MAC address of the peer. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

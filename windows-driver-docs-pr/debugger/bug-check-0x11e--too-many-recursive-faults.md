@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x11E TOO_MANY_RECURSIVE_FAULTS
 description: The TOO_MANY_RECURSIVE_FAULTS bug check has a value of 0x0000011E. This indicates that a file system has caused too many recursive faults under low resource conditions to be handled.
-ms.assetid: E945719A-ACFA-4DDF-8176-7ABEF41E1C47
 keywords: ["Bug Check 0x11E TOO_MANY_RECURSIVE_FAULTS", "TOO_MANY_RECURSIVE_FAULTS"]
 ms.date: 01/30/2019
 topic_type:

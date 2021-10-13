@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 656c8d36-23c0-46ae-81fd-a1123d5ab068
 keywords: ["get_DriverName method Print Devices", "get_DriverName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_DriverName method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **DriverName** property enables an ASP Web page to obtain the name of the printer driver.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_DriverName(
@@ -32,14 +30,12 @@ HRESULT get_DriverName(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive a pointer to a driver name string.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -82,8 +78,7 @@ objPrinter.Open strPrinter
 DrvrName = objPrinter.DriverName
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

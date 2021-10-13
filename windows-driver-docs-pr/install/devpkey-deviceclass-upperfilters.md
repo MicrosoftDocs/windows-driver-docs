@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_UpperFilters
 description: DEVPKEY_DeviceClass_UpperFilters
-ms.assetid: 9a6a9587-340c-460e-b6e2-1aadfb5b8c2f
 keywords: ["DEVPKEY_DeviceClass_UpperFilters Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,13 +17,19 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_UpperFilters
 
 
-The DEVPKEY_DeviceClass_UpperFilters device property represents a list of the service names of the upper-level filter drivers that are installed for a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
+The DEVPKEY_DeviceClass_UpperFilters device property represents a list of the service names of the upper-level filter drivers that are installed for a [device setup class](./overview-of-device-setup-classes.md).
 
 <table>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -59,52 +64,30 @@ The DEVPKEY_DeviceClass_UpperFilters device property represents a list of the se
 
  
 
-Remarks
--------
+## Remarks
 
-The value of DEVPKEY_DeviceClass_UpperFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](https://docs.microsoft.com/windows-hardware/drivers/install/installing-a-filter-driver) and [**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section).
+The value of DEVPKEY_DeviceClass_UpperFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](./installing-a-filter-driver.md) and [**INF ClassInstall32 Section**](./inf-classinstall32-section.md).
 
-You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_UpperFilters.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_UpperFilters.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_UpperFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **UpperFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-registry-entry-values-under-the-class-registry-key).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_UpperFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **UpperFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section)
+[**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
-[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiOpenClassRegKeyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa)
-
- 
+[**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa)
 
  
-
-
-
-
-
 

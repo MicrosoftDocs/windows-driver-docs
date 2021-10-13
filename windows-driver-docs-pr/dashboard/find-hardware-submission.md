@@ -1,8 +1,6 @@
 ---
 title: Find and manage your hardware submission
-author: dimanjar
 description: Learn how to find a specific Windows hardware submission by searching with text or by selecting driver attributes in a keyword search.
-ms.author: dimanjar
 ms.topic: article
 ms.date: 09/24/2018
 ms.localizationpriority: medium
@@ -66,13 +64,13 @@ You can use the following driver attributes for keyword searches:
 |SubmissionID |Numeric|19 digit Submission ID|
 |SubmissionName |Text|
 |SubmissionType |Text|Initial, Derived|
-|SubmissionStatus |Text|Complete, Failed, NotSet, Processing, Ready|
+|SubmissionStatus |Text|Complete, Failed, Processing, Ready|
 |IsExtensionDriver |Boolean|False, True|
 |IsUniversalDriver |Boolean|False, True|
 |IsDeclarativeDriver |Boolean|False, True|
 |INFName |Text|
 |HardwareID |Text|
-|OperatingSystemCode |Text|[list of OS codes](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-product-data#list-of-operating-system-codes)|
+|OperatingSystemCode |Text|[list of OS codes](./get-product-data.md#list-of-operating-system-codes)|
 
 ## Search results
 
@@ -81,7 +79,7 @@ Search results displayed on the dashboard list the driver submissions that match
 > [!NOTE]
 > The hardware dashboard creates entities only after the package acceptance is complete. Driver submissions therefore will not appear in search results until after the package acceptance is complete.
 
-In the results, click the **Private Product ID** to navigate to that driver's overview page. There, you can view information about the driver's submission; updating the submission through the [DUA process](https://docs.microsoft.com/windows-hardware/test/hlk/user/create-a-driver-only-update-package); and viewing, creating, and editing shipping labels or download signed files.
+In the results, click the **Private Product ID** to navigate to that driver's overview page. There, you can view information about the driver's submission; updating the submission through the [DUA process](/windows-hardware/test/hlk/user/create-a-driver-only-update-package); and viewing, creating, and editing shipping labels or download signed files.
 
 ### Important Points
 

@@ -1,7 +1,6 @@
 ---
 title: Installing Core System Components for an Audio Adapter
 description: Installing Core System Components for an Audio Adapter
-ms.assetid: fc14867e-cae8-4381-bcd3-ec2230050cf6
 keywords:
 - audio adapters WDK , system components
 - adapter drivers WDK audio , system components
@@ -20,12 +19,7 @@ This section includes the following topics about installing the core system comp
 
 [Installing in Windows](installing-in-windows.md)
 
-The [**INF DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) for each hardware ID specified in the manufacture's **MODEL** section should specify the inclusion of the **KS.Registration** section in Ks.inf and the **WDMAUDIO.Registration** section in Wdmaudio.inf. The Ks.inf file installs the core kernel streaming components. The Wdmaudio.inf file installs the core WDM audio components. Vendors should not modify or replace these system INF files.
+The [**INF DDInstall section**](../install/inf-ddinstall-section.md) for each hardware ID specified in the manufacture's **MODEL** section should specify the inclusion of the **KS.Registration** section in Ks.inf and the **WDMAUDIO.Registration** section in Wdmaudio.inf. The Ks.inf file installs the core kernel streaming components. The Wdmaudio.inf file installs the core WDM audio components. Vendors should not modify or replace these system INF files.
 
  
-
- 
-
-
-
 

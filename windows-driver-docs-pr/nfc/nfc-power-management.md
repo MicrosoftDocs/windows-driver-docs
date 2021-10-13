@@ -1,7 +1,6 @@
 ---
 title: NFC power management
 description: NFC power management
-ms.assetid: 7B45730F-A49D-45E0-B314-0464141E3C8B
 keywords:
 - NFC
 - near field communications
@@ -27,6 +26,4 @@ The NFC driver shall intelligently manage the power state of the device. The fol
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)

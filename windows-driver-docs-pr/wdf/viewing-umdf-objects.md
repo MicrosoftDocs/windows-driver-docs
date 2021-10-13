@@ -1,7 +1,6 @@
 ---
 title: Viewing UMDF Objects
 description: This topic describes how you can use the Wudfext.dll debugger extensions to view information about objects used by a User-Mode Driver Framework (UMDF) version 1 driver.
-ms.assetid: 36d0d604-3ed1-4ca7-b5bd-207942ecfc1e
 keywords:
 - debugging scenarios WDK UMDF , viewing UMDF objects
 - UMDF WDK , debugging scenarios, viewing UMDF objects
@@ -12,11 +11,11 @@ ms.localizationpriority: medium
 
 # Viewing UMDF Objects
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 This topic describes how you can use the Wudfext.dll debugger extensions to view information about objects used by a User-Mode Driver Framework (UMDF) version 1 driver.
 
-Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see [Windows Driver Framework Extensions (Wdfkd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-).
+Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see [Windows Driver Framework Extensions (Wdfkd.dll)](../debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
 
 You can perform the following steps to view information about UMDF version 1 objects:
 
@@ -78,10 +77,4 @@ You can perform the following steps to view information about UMDF version 1 obj
     Use the output from the **!wudfext.umdevstacks** and **!wudfext.umdevstack** UMDF debugger extensions to view outstanding UMDF intra-stack files that correspond to driver-created files.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIN\_TYPE
 description: Clients use KSPROPERTY\_BDA\_PIN\_TYPE to retrieve the value that specifies the type of a pin.
-ms.assetid: 3d2a976b-67ff-4469-aa96-7aa8bd5f229e
 keywords: ["KSPROPERTY_BDA_PIN_TYPE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_PIN\_TYPE to retrieve the value that specifies the 
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the pin type.
 
 When the network provider creates a pin for a filter using KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY, it specifies a pin type from the list of pin types included in the filter's BDA template topology. KSPROPERTY\_BDA\_PIN\_TYPE returns this pin type. In the filter's BDA template topology each pin type can only occur once, but it can occur multiple times in an actual topology. The value for the pin type corresponds to the index of the element in the zero-based array of pin types. This array of pin types is an array of KSPIN\_DESCRIPTOR\_EX structures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,16 +80,9 @@ Requirements
 
 [**KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY**](ksmethod-bda-create-pin-factory.md)
 
-[**KSPIN\_DESCRIPTOR\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin_descriptor_ex)
+[**KSPIN\_DESCRIPTOR\_EX**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_descriptor_ex)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
-
- 
+[**KSPROPERTY**](ksproperty-structure.md)
 
  
-
-
-
-
-
 

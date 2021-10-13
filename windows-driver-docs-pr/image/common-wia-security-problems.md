@@ -1,7 +1,6 @@
 ---
 title: Common WIA Security Problems
 description: Common WIA Security Problems
-ms.assetid: d3f7d6e9-1ac4-4209-92bb-d08e4e13a4ad
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

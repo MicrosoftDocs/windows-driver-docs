@@ -1,7 +1,6 @@
 ---
-title: ppmperf
+title: ppmperf (WinDbg)
 description: The ppmperf command
-ms.assetid: B6BCB832-E7D9-44AA-9305-9A017124022B
 keywords: ["ppmperf Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

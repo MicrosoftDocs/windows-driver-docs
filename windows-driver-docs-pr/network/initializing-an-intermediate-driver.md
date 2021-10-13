@@ -1,7 +1,6 @@
 ---
 title: Initializing an Intermediate Driver
 description: Initializing an Intermediate Driver
-ms.assetid: cd4903f8-f522-403a-bec4-03ee7e82dcac
 keywords:
 - NDIS intermediate drivers WDK , initializing
 - intermediate drivers WDK networking , initializing
@@ -14,21 +13,21 @@ ms.localizationpriority: medium
 
 
 
-An NDIS intermediate driver registers its *MiniportXxx* functions and its *ProtocolXxx* functions in the context of its [DriverEntry](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine. To register its *MiniportXxx* functions, an intermediate driver must call the [NdisMRegisterMiniportDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver) function with the NDIS\_INTERMEDIATE\_DRIVER flag set. This flag is in the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_driver_characteristics) structure that the driver passes at *MiniportDriverCharacteristics*. To register its *ProtocolXxx* functions, an intermediate driver must call the [NdisRegisterProtocolDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisregisterprotocoldriver) function.
+An NDIS intermediate driver registers its *MiniportXxx* functions and its *ProtocolXxx* functions in the context of its [DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine. To register its *MiniportXxx* functions, an intermediate driver must call the [NdisMRegisterMiniportDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver) function with the NDIS\_INTERMEDIATE\_DRIVER flag set. This flag is in the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_driver_characteristics) structure that the driver passes at *MiniportDriverCharacteristics*. To register its *ProtocolXxx* functions, an intermediate driver must call the [NdisRegisterProtocolDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) function.
 
-[DriverEntry](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) returns STATUS_SUCCESS, or its equivalent NDIS_STATUS_SUCCESS, if the driver registered as an NDIS intermediate driver successfully. If DriverEntry fails initialization by propagating an error status that was returned by an **NdisXxx** function or by a kernel-mode support routine, the driver will not remain loaded. **DriverEntry** must execute synchronously; that is, it cannot return STATUS_PENDING or its equivalent NDIS_STATUS_PENDING.
+[DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) returns STATUS_SUCCESS, or its equivalent NDIS_STATUS_SUCCESS, if the driver registered as an NDIS intermediate driver successfully. If DriverEntry fails initialization by propagating an error status that was returned by an **NdisXxx** function or by a kernel-mode support routine, the driver will not remain loaded. **DriverEntry** must execute synchronously; that is, it cannot return STATUS_PENDING or its equivalent NDIS_STATUS_PENDING.
 
-To register the intermediate driver with NDIS, the [DriverEntry](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine must, at a minimum:
+To register the intermediate driver with NDIS, the [DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine must, at a minimum:
 
-- Call the [NdisMRegisterMiniportDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver) function with the NDIS_INTERMEDIATE_DRIVER flag set to register the driver's *MiniportXxx* functions.
-- Call the [NdisRegisterProtocolDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisregisterprotocoldriver) function to register the driver's *ProtocolXxx* functions if the driver subsequently binds itself to an underlying NDIS driver.
-- Call the [NdisIMAssociateMiniport](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisimassociateminiport) function to inform NDIS about the association between the driver's miniport upper edge and protocol lower edge.
+- Call the [NdisMRegisterMiniportDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver) function with the NDIS_INTERMEDIATE_DRIVER flag set to register the driver's *MiniportXxx* functions.
+- Call the [NdisRegisterProtocolDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) function to register the driver's *ProtocolXxx* functions if the driver subsequently binds itself to an underlying NDIS driver.
+- Call the [NdisIMAssociateMiniport](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisimassociateminiport) function to inform NDIS about the association between the driver's miniport upper edge and protocol lower edge.
 
-If an error occurs in **DriverEntry** after **NdisMRegisterMiniportDriver** returns successfully, the driver must call the [NdisMDeregisterMiniportDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterminiportdriver) function before **DriverEntry** returns. If **DriverEntry** succeeds, the driver must call **NdisMDeregisterMiniportDriver** from its [MiniportDriverUnload](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_unload) function.
+If an error occurs in **DriverEntry** after **NdisMRegisterMiniportDriver** returns successfully, the driver must call the [NdisMDeregisterMiniportDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterminiportdriver) function before **DriverEntry** returns. If **DriverEntry** succeeds, the driver must call **NdisMDeregisterMiniportDriver** from its [MiniportDriverUnload](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_unload) function.
 
 Intermediate drivers share most of the **DriverEntry** requirements of protocol drivers and miniport drivers.
 
-The initialization of an intermediate driver's virtual miniport occurs when the driver calls the [NdisIMInitializeDeviceInstanceEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisiminitializedeviceinstanceex) function from its [ProtocolBindAdapterEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_bind_adapter_ex) function.
+The initialization of an intermediate driver's virtual miniport occurs when the driver calls the [NdisIMInitializeDeviceInstanceEx](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisiminitializedeviceinstanceex) function from its [ProtocolBindAdapterEx](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function.
 
 NDIS calls the *ProtocolBindAdapterEx* function after all underlying miniport drivers have initialized.
 

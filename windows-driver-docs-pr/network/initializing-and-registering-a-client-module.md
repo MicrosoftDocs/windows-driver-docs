@@ -1,7 +1,6 @@
 ---
 title: Initializing and Registering a Client Module
 description: Initializing and Registering a Client Module
-ms.assetid: 3d0941d0-5a6f-4c6d-b519-af850a8de341
 keywords:
 - client modules WDK Network Module Registrar , initializing
 - client modules WDK Network Module Registrar , registering
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # Initializing and Registering a Client Module
 
 
-A client module must initialize a number of data structures before it can register itself with the Network Module Registrar (NMR). These structures include an [**NPI\_MODULEID**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568813(v=vs.85)) structure, an [**NPI\_CLIENT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/ns-netioddk-_npi_client_characteristics) structure, an [**NPI\_REGISTRATION\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/ns-netioddk-_npi_registration_instance) structure (contained within the NPI\_CLIENT\_CHARACTERISTICS structure), and a structure defined by the client module that is used for the client module's registration context.
+A client module must initialize a number of data structures before it can register itself with the Network Module Registrar (NMR). These structures include an [**NPI\_MODULEID**](/previous-versions/windows/hardware/drivers/ff568813(v=vs.85)) structure, an [**NPI\_CLIENT\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_client_characteristics) structure, an [**NPI\_REGISTRATION\_INSTANCE**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance) structure (contained within the NPI\_CLIENT\_CHARACTERISTICS structure), and a structure defined by the client module that is used for the client module's registration context.
 
 If a client module registers itself with the NMR as a client of a [Network Programming Interface (NPI)](network-programming-interface.md) that defines NPI-specific client characteristics, the client module must also initialize an instance of the client characteristics structure defined by the NPI.
 
@@ -110,11 +109,11 @@ CLIENT_REGISTRATION_CONTEXT ClientRegistrationContext =
 };
 ```
 
-A client module typically initializes itself within its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function. The main initialization tasks for a client module are:
+A client module typically initializes itself within its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The main initialization tasks for a client module are:
 
--   Specify an [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload) function. The operating system calls this function when the client module is unloaded from the system. If a client module does not provide an unload function, the client module cannot be unloaded from the system.
+-   Specify an [**Unload**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function. The operating system calls this function when the client module is unloaded from the system. If a client module does not provide an unload function, the client module cannot be unloaded from the system.
 
--   Call the [**NmrRegisterClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrregisterclient) function to register the client module with the NMR.
+-   Call the [**NmrRegisterClient**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient) function to register the client module with the NMR.
 
 For example:
 
@@ -156,17 +155,11 @@ NTSTATUS
 }
 ```
 
-If a client module is a client of more than one NPI, it must initialize an independent set of data structures and call [**NmrRegisterClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrregisterclient) for each NPI that it supports. If a network module is both a client module and a provider module (that is, it is a client of one NPI and a provider of another NPI), it must initialize two independent sets of data structures, one for the client interface and one for the provider interface, and call both **NmrRegisterClient** and [**NmrRegisterProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrregisterprovider).
+If a client module is a client of more than one NPI, it must initialize an independent set of data structures and call [**NmrRegisterClient**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient) for each NPI that it supports. If a network module is both a client module and a provider module (that is, it is a client of one NPI and a provider of another NPI), it must initialize two independent sets of data structures, one for the client interface and one for the provider interface, and call both **NmrRegisterClient** and [**NmrRegisterProvider**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterprovider).
 
-A client module is not required to call [**NmrRegisterClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrregisterclient) from within its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function. For example, in the situation where a client module is a subcomponent of a complex driver, the registration of the client module might occur only when the client module subcomponent is activated.
+A client module is not required to call [**NmrRegisterClient**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient) from within its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. For example, in the situation where a client module is a subcomponent of a complex driver, the registration of the client module might occur only when the client module subcomponent is activated.
 
-For more information about implementing a client module's [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload) function, see [Unloading a Client Module](unloading-a-client-module.md).
-
- 
+For more information about implementing a client module's [**Unload**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function, see [Unloading a Client Module](unloading-a-client-module.md).
 
  
-
-
-
-
 

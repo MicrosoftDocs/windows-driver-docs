@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_HARDWARE_STATUS
 description: This topic describes the OID_GEN_CO_HARDWARE_STATUS object identifier (OID).
-ms.assetid: b846622a-a082-41e8-b32b-74c111b31f69
 keywords:
 - OID_GEN_CO_HARDWARE_STATUS
 ms.date: 11/02/2017
@@ -29,8 +28,6 @@ Not ready.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

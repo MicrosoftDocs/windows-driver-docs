@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL
 description: The KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL property specifies the volume level of a channel in a given stream.
-ms.assetid: E10E2ADC-BD76-4871-85DA-19385A0D77EE
 keywords: ["KSPROPERTY_AUDIOENGINE_VOLUMELEVEL Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ The **KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL** property specifies the volume level
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Node via Pin instance</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
-<td align="left"><p>LONG (for a Get request) and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagksaudioengine_volumelevel" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_VOLUMELEVEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagksaudioengine_volumelevel)"><strong>KSAUDIOENGINE_VOLUMELEVEL</strong></a> (for a Set request).</p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
+<td align="left"><p>LONG (for a Get request) and <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_volumelevel" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_VOLUMELEVEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_volumelevel)"><strong>KSAUDIOENGINE_VOLUMELEVEL</strong></a> (for a Set request).</p></td>
 </tr>
 </tbody>
 </table>
@@ -60,8 +59,8 @@ For a Get request, the property value is of type LONG, and it specifies the volu
 
 +2147483647 (0x7FFFFFFF in hexadecimal, or LONG\_MAX) is +32767.99998474 decibels (gain).
 
-&gt; \[!Note\]
-&gt;  The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
+> [!NOTE]
+> The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
 
  
 
@@ -71,13 +70,11 @@ For a Set request, the property value is of type **KSAUDIOENGINE\_VOLUMELEVEL**,
 
 The [**KSPROPERTY\_AUDIOENGINE\_SUPPORTEDDEVICEFORMATS**](ksproperty-audioengine-supporteddeviceformats.md) property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The property descriptor for **KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL** specifies a channel number. If the stream that passes through the audio engine node contains *n* channels, the channels are numbered 0 through *n-1*. Also note that a channel value of 0xFFFFFFFF indicates that the request applies to all channels. If a property request is made while the stream is not in a running state, the volume level is immediately set to the requested level. If the stream leaves the run state while a volume level ramp is in progress, the volume level of the stream is immediately set to the target level of the current fade. If a new property request is made while an existing volume level ramp is in progress, the new ramp request must begin from the current volume level - the level that the volume had reached when the new request arrived.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -99,20 +96,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSAUDIOENGINE\_VOLUMELEVEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagksaudioengine_volumelevel)
+[**KSAUDIOENGINE\_VOLUMELEVEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_volumelevel)
 
-[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
+[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
 
 [**KSPROPERTY\_AUDIOENGINE\_SUPPORTEDDEVICEFORMATS**](ksproperty-audioengine-supporteddeviceformats.md)
-
- 
-
- 
-
-
-
-
-
 

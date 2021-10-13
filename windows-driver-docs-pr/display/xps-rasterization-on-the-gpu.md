@@ -1,7 +1,6 @@
 ---
 title: XPS rasterization on the GPU
 description: XML Paper Specification (XPS) rasterization on the GPU does not require any independent hardware vendor (IHV) code or behavioral changes in drivers.
-ms.assetid: 3C43552A-7D2B-4C10-9AD3-66755171D997
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,12 +10,14 @@ ms.localizationpriority: medium
 
 XML Paper Specification (XPS) rasterization on the GPU does not require any independent hardware vendor (IHV) code or behavioral changes in drivers. However, XPS rasterization is a usage pattern that can potentially expose bugs or improper assumptions in driver code. Windows Display Driver Model (WDDM) 1.2 and later drivers must be able to pass XPS rasterization display conformance tests in order to ensure high-quality Windows printing.
 
-|                                                                                   |                                                   |
-|-----------------------------------------------------------------------------------|---------------------------------------------------|
-| Minimum WDDM version                                                              | 1.2                                               |
-| Minimum Windows version                                                           | 8                                                 |
-| Driver implementation—Full graphics and Display only                              | Mandatory                                         |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦XPSRasterizationConformance** |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Display only**: Mandatory
+
+**[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics¦XPSRasterizationConformance**
+
 
  
 
@@ -30,15 +31,9 @@ The XPS rasterizer is a system component used heavily by Windows print drivers t
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ XPSRasterizationConformance**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ XPSRasterizationConformance**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION
 description: The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request retrieves a structure that specifies the current position within the audio data being rendered to the endpoint.
-ms.assetid: 21067580-12FF-4327-B9AA-D16E2635FA12
 keywords: ["KSPROPERTY_AUDIO_PRESENTATION_POSITION Audio Devices"]
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request retrieves a struc
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via Pin instance</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_presentation_position" data-raw-source="[&lt;strong&gt;KSAUDIO_PRESENTATION_POSITION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_presentation_position)"><strong>KSAUDIO_PRESENTATION_POSITION</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position" data-raw-source="[&lt;strong&gt;KSAUDIO_PRESENTATION_POSITION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position)"><strong>KSAUDIO_PRESENTATION_POSITION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -56,11 +55,9 @@ The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request retrieves a struc
 
 The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,14 +79,5 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSAUDIO\_PRESENTATION\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_presentation_position)
-
- 
-
- 
-
-
-
-
-
+[**KSAUDIO\_PRESENTATION\_POSITION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position)
 

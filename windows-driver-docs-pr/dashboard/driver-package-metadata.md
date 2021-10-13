@@ -1,8 +1,6 @@
 ---
 title: Driver package metadata
 description: Describes the structure of the driver package metadata for Partner Center submissions.
-author: balapv
-ms.author: balapv
 ms.topic: article
 ms.date: 08/21/2018
 ---
@@ -10,6 +8,8 @@ ms.date: 08/21/2018
 # Driver package metadata
 
 The driver metadata package is a file associated with a submission. The metadata package contains details about each INF file in a driver package or bundle. This file can be downloaded by using the [Get a submission](get-a-submission.md) method. The file is available in the [Link object](get-product-data.md#link-object) of the submission with the *rel* - **driverMetadata**. 
+
+If you are the publisher and recieved the submission via sharing you may need to run the [Create Publisher Metadata](create-publisher-metadata.md) method to generate the driver metadata for that submission.
 
 ## Driver Metadata structure
 

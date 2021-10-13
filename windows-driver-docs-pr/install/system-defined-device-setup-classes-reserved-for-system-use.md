@@ -1,13 +1,14 @@
 ---
 title: System-Defined Device Setup Classes Reserved for System Use
 description: System-Defined Device Setup Classes Reserved for System Use
-ms.assetid: 519a8833-8ed0-40c8-b7cb-a86f13191227
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
 # System-Defined Device Setup Classes Reserved for System Use
 
+> [!NOTE]
+> If you're looking for info on pre-defined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file, see [System-Defined Device Setup Classes Available to Vendors](system-defined-device-setup-classes-available-to-vendors.md).
 
 The following classes and GUIDs should not be used to install devices (or drivers) on Windows 2000 or later versions of Windows:
 

@@ -1,7 +1,6 @@
 ---
 title: Specifying Pin Data Ranges
 description: Specifying Pin Data Ranges
-ms.assetid: bef74cd1-d2be-402d-be7f-acc7d8cbf392
 keywords:
 - pins WDK audio , data ranges
 - WDM audio drivers WDK , pin data ranges
@@ -51,16 +50,8 @@ static KSDATARANGE_AUDIO PinDataRangesPcm[] =
 };
 ```
 
-Note that the `PinDataRangesPcm` array in the preceding example contains a single data-range descriptor of type [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio). More generally, a data-range array can contain an arbitrary number of descriptors. For example, a non-PCM wave-output pin might support both AC-3-over-S/PDIF and WMA Pro-over-S/PDIF formats. Each of these two formats is specified by a separate data-range descriptor. Thus, the pin's data-range array would contain at least two KSDATARANGE\_AUDIO structures.
+Note that the `PinDataRangesPcm` array in the preceding example contains a single data-range descriptor of type [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio). More generally, a data-range array can contain an arbitrary number of descriptors. For example, a non-PCM wave-output pin might support both AC-3-over-S/PDIF and WMA Pro-over-S/PDIF formats. Each of these two formats is specified by a separate data-range descriptor. Thus, the pin's data-range array would contain at least two KSDATARANGE\_AUDIO structures.
 
-A configurable pin that supports the music stream format from an application that uses DirectMusic or the Windows multimedia midiIn*Xxx* and midiOut*Xxx* functions uses a data-range descriptor of type [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_music).
+A configurable pin that supports the music stream format from an application that uses DirectMusic or the Windows multimedia midiIn*Xxx* and midiOut*Xxx* functions uses a data-range descriptor of type [**KSDATARANGE\_MUSIC**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music).
 
-The port driver obtains the data-range information from the miniport driver and uses this information, wherever possible, to handle requests for information about the data formats that each pin can support. In the case of a pin with a simple PCM data range, the port driver is able to handle the intersection requests for that pin. In an intersection request, a client supplies a set of data ranges that represent possible data formats for a stream. If possible, the port driver's intersection handler picks a particular data format from the data ranges in the request that also falls within its pin's data ranges. This format represents an intersection of the two sets of data ranges. Hence, both the client and the pin can process a stream with this format. For more complex data ranges, the miniport driver can provide its own intersection handler, which the port driver then uses instead of its own, default handler. The intersection handler of the miniport driver can allow for any format requirements that might be difficult to express to the port driver as an array of data ranges. For more information, see [Data-Intersection Handlers](data-intersection-handlers.md). Additional information is available in the white paper titled *Multiple Channel Audio Data and WAVE Files* at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
-
- 
-
- 
-
-
-
-
+The port driver obtains the data-range information from the miniport driver and uses this information, wherever possible, to handle requests for information about the data formats that each pin can support. In the case of a pin with a simple PCM data range, the port driver is able to handle the intersection requests for that pin. In an intersection request, a client supplies a set of data ranges that represent possible data formats for a stream. If possible, the port driver's intersection handler picks a particular data format from the data ranges in the request that also falls within its pin's data ranges. This format represents an intersection of the two sets of data ranges. Hence, both the client and the pin can process a stream with this format. For more complex data ranges, the miniport driver can provide its own intersection handler, which the port driver then uses instead of its own, default handler. The intersection handler of the miniport driver can allow for any format requirements that might be difficult to express to the port driver as an array of data ranges. For more information, see [Data-Intersection Handlers](data-intersection-handlers.md) and [Multiple Channel Audio Data and WAVE Files](/previous-versions/windows/hardware/design/dn653308(v=vs.85)).

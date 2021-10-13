@@ -1,7 +1,6 @@
 ---
 title: Translating Speaker-Configuration Requests
 description: Translating Speaker-Configuration Requests
-ms.assetid: be3dce30-7395-4332-ba62-de9a718b62f5
 keywords:
 - translating speaker-configuration requests WDK audio
 ms.date: 04/20/2017
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
  
 
-When an application calls **IDirectSound::SetSpeakerConfig** (see Microsoft Windows SDK documentation) to change the speaker configuration, DirectSound translates the specified DSSPEAKER\_*Xxx* speaker-configuration parameter to the equivalent KSAUDIO\_*Xxx* channel-configuration mask. It sends a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) set-property request containing this mask to the filter that represents the DirectSound device.
+When an application calls **IDirectSound::SetSpeakerConfig** (see Microsoft Windows SDK documentation) to change the speaker configuration, DirectSound translates the specified DSSPEAKER\_*Xxx* speaker-configuration parameter to the equivalent KSAUDIO\_*Xxx* channel-configuration mask. It sends a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) set-property request containing this mask to the filter that represents the DirectSound device.
 
 In the following table, each DSSPEAKER\_*Xxx* parameter on the left is paired with the equivalent KSAUDIO\_*Xxx* channel-configuration mask on the right.
 
@@ -71,7 +70,7 @@ In the following table, each DSSPEAKER\_*Xxx* parameter on the left is paired wi
 
  
 
-In the preceding table, DirectSound specifies both its headphone and stereo speaker configurations with the same channel mask, KSAUDIO\_SPEAKER\_STEREO. To distinguish between these two configurations, DirectSound sends the filter a second set-property request, which specifies a speaker geometry (see [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-stereo-speaker-geometry)). To indicate headphones, DirectSound passes the value KSAUDIO\_STEREO\_SPEAKER\_GEOMETRY\_HEADPHONE with the speaker-geometry request.
+In the preceding table, DirectSound specifies both its headphone and stereo speaker configurations with the same channel mask, KSAUDIO\_SPEAKER\_STEREO. To distinguish between these two configurations, DirectSound sends the filter a second set-property request, which specifies a speaker geometry (see [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](./ksproperty-audio-stereo-speaker-geometry.md)). To indicate headphones, DirectSound passes the value KSAUDIO\_STEREO\_SPEAKER\_GEOMETRY\_HEADPHONE with the speaker-geometry request.
 
 In the case of stereo speakers, however, the caller to **SetSpeakerConfig** can specify one of several possible DSSPEAKER\_*Xxx* stereo-speaker geometries. These appear in the left column of the following table, and the equivalent KSAUDIO\_*Xxx* parameters appear on the right.
 
@@ -111,9 +110,4 @@ In the case of stereo speakers, however, the caller to **SetSpeakerConfig** can 
 If the caller does not explicitly specify one of the geometries in the left column above, DirectSound assumes DSSPEAKER\_GEOMETRY\_WIDE by default.
 
  
-
- 
-
-
-
 

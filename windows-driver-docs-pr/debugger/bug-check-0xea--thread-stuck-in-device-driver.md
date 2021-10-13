@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xEA THREAD_STUCK_IN_DEVICE_DRIVER
 description: The THREAD_STUCK_IN_DEVICE_DRIVER bug check has a value of 0x000000EA. This indicates that a thread in a device driver is endlessly spinning.
-ms.assetid: f3d6acaf-3445-4fc3-b4ed-b72a74a32b57
 keywords: ["Bug Check 0xEA THREAD_STUCK_IN_DEVICE_DRIVER", "THREAD_STUCK_IN_DEVICE_DRIVER"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,15 +58,13 @@ The THREAD\_STUCK\_IN\_DEVICE\_DRIVER bug check has a value of 0x000000EA. This 
 
  
 
-Cause
------
+## Cause
 
 A device driver is spinning in an infinite loop, most likely waiting for hardware to become idle.
 
 This usually indicates problem with the hardware itself, or with the device driver programming the hardware incorrectly. Frequently, this is the result of a bad video card or a bad display driver.
 
-Resolution
-----------
+## Resolution
 
 Use the [**.thread (Set Register Context)**](-thread--set-register-context-.md) command together with Parameter 1. Then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to find the location where the thread is stuck.
 

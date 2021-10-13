@@ -1,7 +1,6 @@
 ---
 title: HS_DEVICE_IDENTITY structure
 description: The HS_DEVICE_IDENTITY structure contains information about the device model and manufacturer.
-ms.assetid: 4a679fb2-d5b1-4635-9422-a21a316b360c
 keywords: 
 - HS_DEVICE_IDENTITY structure Network Drivers Starting with Windows Vista
 - PHS_DEVICE_IDENTITY structure pointer Network Drivers Starting with Windows Vista
@@ -11,13 +10,12 @@ ms.localizationpriority: medium
 
 # HS\_DEVICE\_IDENTITY structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_DEVICE\_IDENTITY** structure contains information about the device model and manufacturer.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_DEVICE_IDENTITY {
@@ -29,8 +27,7 @@ typedef struct _HS_DEVICE_IDENTITY {
 } HS_DEVICE_IDENTITY, *PHS_DEVICE_IDENTITY;
 ```
 
-Members
--------
+## Members
 
 **dwSystemType**  
 The type of SIM, whether GSM or CDMA.
@@ -47,8 +44,7 @@ Another name for the phone manufacturer and model.
 **wszDeviceModel**  
 The device model name.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

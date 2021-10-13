@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_BASS
 description: The KSPROPERTY\_AUDIO\_BASS property specifies the bass level for a channel in a tone node (KSNODETYPE\_TONE).
-ms.assetid: 64f2f1c9-9275-4fcf-b187-a097b218924e
 keywords: ["KSPROPERTY_AUDIO_BASS Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_BASS property specifies the bass level for a channel in a
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -71,15 +70,13 @@ This scale has a resolution of 1/65536 decibel.
 
 A KSPROPERTY\_AUDIO\_BASS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The filter will succeed a KSPROPERTY\_AUDIO\_BASS set-property request that specifies a value that is beyond the range of the filter but will clamp the value to the supported range. In a subsequent request to get this property, however, it will output the actual value used.
 
 A tone node can support properties for controlling treble level, mid-frequency level, bass level, and bass boost. For more information, see [**KSNODETYPE\_TONE**](ksnodetype-tone.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -97,16 +94,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
+[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
 
 [**KSNODETYPE\_TONE**](ksnodetype-tone.md)
-
- 
-
- 
-
-
-
-
-
 

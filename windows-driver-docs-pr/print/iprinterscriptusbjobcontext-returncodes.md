@@ -4,7 +4,6 @@ description: Returns an object that can supply return code values that an IHV ha
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 0FD3A103-970E-4EB8-9867-7EC21273269C
 keywords: ["ReturnCodes method Print Devices", "ReturnCodes method Print Devices , IPrinterScriptUsbJobContext interface", "IPrinterScriptUsbJobContext interface Print Devices , ReturnCodes method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Returns an object that can supply return code values that an IHV has defined for their JavaScript functions.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ReturnCodes(
@@ -29,24 +27,20 @@ HRESULT ReturnCodes(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *ppReturnCodes* \[out, retval\]  
 The return code values for the IHV JavaScript functions. The return code values are represented by the [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md) interface.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 The IHV must develop an interface that implements a property bag associated with the current print job. The IHV JavaScript functions can then use this property bag to store properties or data that is specific to the print job that is currently being processed. This property bag exists for the duration of the current job only.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

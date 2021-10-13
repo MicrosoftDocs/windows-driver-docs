@@ -1,7 +1,6 @@
 ---
 title: Dedicated Film Scanners
 description: Dedicated Film Scanners
-ms.assetid: 1f8b73eb-a81a-4db3-b5be-b0a01a12696a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,13 +15,13 @@ A *dedicated* film scanner is a scanner that performs only film scanning. This d
 
 The following figure illustrates the WIA item tree of a dedicated film scanner with a multiframe scan and shows the physical device and documents.
 
-![diagram illustrating the item tree of a dedicated film scanner with multiframe scanning](images/art-scanner-film.png)
+![diagram illustrating the item tree of a dedicated film scanner with multiframe scanning.](images/art-scanner-film.png)
 
 In the preceding figure, the tree on the left represents the scanner item tree. The curved lines that are drawn to the elements on the right symbolize the physical device and documents that are represented by this item tree.
 
 The following figure illustrates the WIA item tree of a dedicated film scanner with a single frame scan and shows the physical device and documents.
 
-![diagram illustrating the item tree of a dedicated film scanner with single-frame scanning](images/art-scanner-film2.png)
+![diagram illustrating the item tree of a dedicated film scanner with single-frame scanning.](images/art-scanner-film2.png)
 
 In the preceding figure, the tree on the left represents the scanner item tree. The curved lines that are drawn to the elements on the right symbolize the physical device and documents that are represented by this item tree.
 

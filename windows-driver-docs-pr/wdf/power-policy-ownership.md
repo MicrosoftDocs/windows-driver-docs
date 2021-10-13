@@ -1,7 +1,6 @@
 ---
 title: Power Policy Ownership
 description: Power Policy Ownership
-ms.assetid: 8e44eedd-6afe-45c6-bbe8-42cfb6f6a644
 keywords:
 - power management WDK KMDF , ownership
 - ownership WDK KMDF
@@ -20,21 +19,21 @@ ms.localizationpriority: medium
 # Power Policy Ownership
 
 
-For each device, one (and only one) of the device's drivers must be the device's *power policy owner*. The power policy owner determines the appropriate [device power state](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-power-states) for a device and sends requests to the device's driver stack whenever the device's power state should change.
+For each device, one (and only one) of the device's drivers must be the device's *power policy owner*. The power policy owner determines the appropriate [device power state](../kernel/device-power-states.md) for a device and sends requests to the device's driver stack whenever the device's power state should change.
 
-Framework-based drivers do not contain code that requests changes in a device's power state, because the framework provides that code. By default, whenever the system enters a [system sleeping state](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-sleeping-states), the framework asks the driver for your device's bus to lower the device power state to D3. (Your driver can change the default behavior so that the framework sets your device's sleep state to D1 or D2, if the device provides wake-up capabilities.) When the system power returns to its [working (S0) state](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-working-state-s0), the framework requests the bus driver to restore your device to its working (D0) state.
+Framework-based drivers do not contain code that requests changes in a device's power state, because the framework provides that code. By default, whenever the system enters a [system sleeping state](../kernel/system-sleeping-states.md), the framework asks the driver for your device's bus to lower the device power state to D3. (Your driver can change the default behavior so that the framework sets your device's sleep state to D1 or D2, if the device provides wake-up capabilities.) When the system power returns to its [working (S0) state](../kernel/system-working-state-s0.md), the framework requests the bus driver to restore your device to its working (D0) state.
 
 The power policy owner is also responsible for enabling and disabling the following device features:
 
--   Your device's ability to enter a [low-power (sleeping) state](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-sleeping-states) when it is idle and the system remains in its working (S0) state
+-   Your device's ability to enter a [low-power (sleeping) state](../kernel/device-sleeping-states.md) when it is idle and the system remains in its working (S0) state
 
 -   Your device's ability to wake itself up from a sleeping state when it detects an external event
 
 -   Your device's ability to wake up the entire system from a system sleeping state when it detects an external event
 
-If your device supports these idle power-down and system wake-up capabilities, the power policy owner can also call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register a set of power policy event callback functions.
+If your device supports these idle power-down and system wake-up capabilities, the power policy owner can also call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register a set of power policy event callback functions.
 
-By default, for framework-based drivers, the device's function driver is the power policy owner. (If there is no function driver and the bus driver has called [**WdfPdoInitAssignRawDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfpdo/nf-wdfpdo-wdfpdoinitassignrawdevice), the bus driver is the power policy owner). If you want to change the power policy owner for a driver stack, the default power policy owner must call [**WdfDeviceInitSetPowerPolicyOwnership**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyownership) to disable ownership, and the driver that will be the power policy owner must call **WdfDeviceInitSetPowerPolicyOwnership** to enable ownership.
+By default, for framework-based drivers, the device's function driver is the power policy owner. (If there is no function driver and the bus driver has called [**WdfPdoInitAssignRawDevice**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitassignrawdevice), the bus driver is the power policy owner). If you want to change the power policy owner for a driver stack, the default power policy owner must call [**WdfDeviceInitSetPowerPolicyOwnership**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyownership) to disable ownership, and the driver that will be the power policy owner must call **WdfDeviceInitSetPowerPolicyOwnership** to enable ownership.
 
 The framework does the following work for the power policy owner:
 
@@ -52,10 +51,4 @@ For more information about the power policy owner's responsibilities, see the fo
 -   [Supporting Functional Power States](supporting-functional-power-states.md)
 
  
-
- 
-
-
-
-
 

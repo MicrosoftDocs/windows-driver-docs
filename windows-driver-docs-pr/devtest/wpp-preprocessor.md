@@ -1,7 +1,6 @@
 ---
 title: WPP Preprocessor
 description: WPP Preprocessor
-ms.assetid: 92bcb2c4-f6de-4704-8f5c-9a2e5901616a
 keywords:
 - Windows software trace preprocessor WDK , options
 - WPP software tracing WDK , options
@@ -118,7 +117,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="odd">
 <td align="left"><p>Specify Control GUID</p></td>
 <td align="left"><p><strong>-ctl:</strong> <em>GUID</em></p></td>
-<td align="left">Defines a <a href="https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)" data-raw-source="[WPP_CONTROL_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85))">WPP_CONTROL_GUIDS</a> macro with the specified <a href="control-guid.md" data-raw-source="[control GUID](control-guid.md)">control GUID</a> and WPP_DEFINE_BIT entries named Error, Unusual, and Noise.
+<td align="left">Defines a <a href="/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)" data-raw-source="[WPP_CONTROL_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85))">WPP_CONTROL_GUIDS</a> macro with the specified <a href="control-guid.md" data-raw-source="[control GUID](control-guid.md)">control GUID</a> and WPP_DEFINE_BIT entries named Error, Unusual, and Noise.
 <p>This is an alternative to adding the macro to the source file.</p>
 <p><em>GUID</em> represents the control GUID.</p></td>
 </tr>
@@ -158,9 +157,9 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="odd">
 <td align="left"><p>Function To Generate Trace Messages</p></td>
 <td align="left"><p><strong>-func:</strong> <em>FunctionDescription</em></p></td>
-<td align="left"><p>Specifies alternatives to the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85))"><strong>DoTraceMessage</strong></a> macro. These functions can then be used to generate trace messages.</p>
+<td align="left"><p>Specifies alternatives to the <a href="/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85))"><strong>DoTraceMessage</strong></a> macro. These functions can then be used to generate trace messages.</p>
 <p>For example, you can define a function that specifies both the flags and the level for a trace message, such as:</p>
-<pre space="preserve"><code>-func (DoMyTraceMessage(LEVEL,FLAGS,MSG,...)</code></pre>
+<pre><code>-func (DoMyTraceMessage(LEVEL,FLAGS,MSG,...)</code></pre>
 <p>You can use multiple instances of the <strong>-func</strong> option.</p>
 <p>This option is an alternative to specifying function descriptions in a local configuration file.</p></td>
 </tr>
@@ -170,7 +169,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <td align="left"><p>Directs WPP to search the source files for the specified string to initiate tracing. By default, WPP searches for the string "WPP_INIT_TRACING."</p>
 <p>This is an advanced option for users who are writing their own templates.</p>
 <p>For example, in default.tpl:</p>
-<pre space="preserve"><code><code>IF FOUND WPP_INIT_TRACING</code>
+<pre><code><code>IF FOUND WPP_INIT_TRACING</code>
  <code>INCLUDE um-init.tpl</code>
 <code>ENDIF</code></code></pre></td>
 </tr>
@@ -181,7 +180,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <p>The friendly name of the message GUID appears, by default, in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a> that is represented by the variable, <strong>%1</strong>. You can use this parameter to add a string to the prefix that helps the user to identify the trace provider, such as the friendly name of the trace provider, the name of the module that includes the trace provider, or the name of a project that is implemented by creating several trace providers. This information helps users to associate related trace providers that are in different files or different paths.</p>
 <p>The <strong>-p</strong> parameter requires the version of WPP that is included in the Windows Driver Kit (WDK) for Windows Vista and later versions of the WDK. The <strong>-p</strong> parameter works on Windows 2000 and later versions of Windows.</p>
 <p>Examples:</p>
-<pre space="preserve"><code>-p:TraceDrv
+<pre><code>-p:TraceDrv
 -p:AudioModule</code></pre></td>
 </tr>
 </tbody>
@@ -281,12 +280,4 @@ The WPP build process completes the following steps:
 1.  The WPP preprocessor processes WPP macros in each source file and creates a [trace message header file](trace-message-header-file.md) for each source file. The source code is not directly modified.
 
 2.  After the WPP preprocessor has created the trace message header files, the C preprocessor processes the built-in WPP macros in the trace message header files in a normal manner.
-
- 
-
- 
-
-
-
-
 

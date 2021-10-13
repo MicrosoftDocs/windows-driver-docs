@@ -1,7 +1,6 @@
 ---
 title: Creating a Device Interface for a WBDI Driver
 description: Creating a Device Interface for a WBDI Driver
-ms.assetid: 8595092c-9105-4638-814a-74cdfa372638
 keywords:
 - biometric drivers WDK , device interfaces
 - device interfaces WDK biometric
@@ -14,13 +13,13 @@ ms.localizationpriority: medium
 
 After the device callback object has been initialized and returned to the driver, at the time of queue setup, the driver should create a device interface instance for the biometric device.
 
-Specifically, WBDI drivers must expose the GUID\_DEVINTERFACE\_BIOMETRIC\_READER device interface by calling [**IWDFDevice::CreateDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-createdeviceinterface):
+Specifically, WBDI drivers must expose the GUID\_DEVINTERFACE\_BIOMETRIC\_READER device interface by calling [**IWDFDevice::CreateDeviceInterface**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-createdeviceinterface):
 
 ```cpp
 hr = m_FxDevice->CreateDeviceInterface(&GUID_DEVINTERFACE_BIOMETRIC_READER, NULL);
 ```
 
-This call is followed by a call to [**IWDFDevice::AssignDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-assigndeviceinterfacestate):
+This call is followed by a call to [**IWDFDevice::AssignDeviceInterfaceState**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-assigndeviceinterfacestate):
 
 ```cpp
 hr = m_FxDevice->AssignDeviceInterfaceState(&GUID_DEVINTERFACE_BIOMETRIC_READER,
@@ -35,10 +34,4 @@ Exposing the GUID\_DEVINTERFACE\_BIOMETRIC\_READER device interface causes the W
 Alternatively, the driver could detect internally that it is in legacy mode and then not expose the GUID\_DEVINTERFACE\_BIOMETRIC\_READER device interface.
 
  
-
- 
-
-
-
-
 

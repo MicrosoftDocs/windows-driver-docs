@@ -1,7 +1,6 @@
 ---
 title: Loading and Unloading a WIA Minidriver
 description: Loading and Unloading a WIA Minidriver
-ms.assetid: a5f930c3-f92c-498a-a334-b5eb60fbd61b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,23 +11,23 @@ ms.localizationpriority: medium
 
 
 
-After the WIA device driver is installed, the WIA service attempts to load it for the first time. The WIA minidriver's [**IStiUSD::Initialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-initialize) method is called and should perform the following tasks:
+After the WIA device driver is installed, the WIA service attempts to load it for the first time. The WIA minidriver's [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) method is called and should perform the following tasks:
 
-1.  Check the transfer mode to determine the caller's intent for initializing this device driver. This is done by calling the [**IStiDeviceControl::GetMyDeviceOpenMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-getmydeviceopenmode) method.
+1.  Check the transfer mode to determine the caller's intent for initializing this device driver. This is done by calling the [**IStiDeviceControl::GetMyDeviceOpenMode**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istidevicecontrol-getmydeviceopenmode) method.
 
-2.  Obtain the installed device's port name, so that this driver can call [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) (documented in the Microsoft Windows SDK) on the proper port to access the device. This is done by calling the [**IStiDeviceControl::GetMyDevicePortName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-getmydeviceportname) method.
+2.  Obtain the installed device's port name, so that this driver can call [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) (documented in the Microsoft Windows SDK) on the proper port to access the device. This is done by calling the [**IStiDeviceControl::GetMyDevicePortName**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istidevicecontrol-getmydeviceportname) method.
 
 3.  Read device-specific registry settings written during device installation. This can be done by using *hParametersKey* parameter passed to **IStiUSD::Initialize**.
 
-The WIA service calls the **IStiUSD::Initialize** method when the driver is first loaded. The **IStiUSD::Initialize** method is also called when a client uses the legacy STI DDIs and calls the [**IStillImage::CreateDevice**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543778(v=vs.85)) method.
+The WIA service calls the **IStiUSD::Initialize** method when the driver is first loaded. The **IStiUSD::Initialize** method is also called when a client uses the legacy STI DDIs and calls the [**IStillImage::CreateDevice**](/previous-versions/windows/hardware/drivers/ff543778(v=vs.85)) method.
 
-The **IStiUSD::Initialize** method should initialize the WIA driver and the device for use. WIA drivers can store the **IStiDeviceControl** interface pointer if they need it at a later time. The [**IStiDeviceControl::AddRef**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-addref) method must be called before storing this interface. If you do not need to store the interface, then ignore it. Do *not* release the **IStiDeviceControl** interface if you have not called **IStiDeviceControl::AddRef** first. This might cause unpredictable results. The [IStiDeviceControl COM Interface](istidevicecontrol-com-interface.md) is needed to get information about the device's ports. The port name used in a call to the [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) function can be obtained by calling the **IStiDeviceControl::GetMyDevicePortName** method. For devices on shared ports, such as serial port devices, opening the port in **IStiUSD::Initialize** is not recommended. The port should be opened only in calls to **IStiUSD::LockDevice**. The closing of the ports should be controlled internally to provide fast access. (Opening and closing in **IStiUSD::LockDevice** and **IStiUSD::UnLockDevice** is very inefficient. **CreateFile** can cause a delay making the device appear slow and unresponsive to the user.)
+The **IStiUSD::Initialize** method should initialize the WIA driver and the device for use. WIA drivers can store the **IStiDeviceControl** interface pointer if they need it at a later time. The [**IStiDeviceControl::AddRef**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istidevicecontrol-addref) method must be called before storing this interface. If you do not need to store the interface, then ignore it. Do *not* release the **IStiDeviceControl** interface if you have not called **IStiDeviceControl::AddRef** first. This might cause unpredictable results. The [IStiDeviceControl COM Interface](istidevicecontrol-com-interface.md) is needed to get information about the device's ports. The port name used in a call to the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function can be obtained by calling the **IStiDeviceControl::GetMyDevicePortName** method. For devices on shared ports, such as serial port devices, opening the port in **IStiUSD::Initialize** is not recommended. The port should be opened only in calls to **IStiUSD::LockDevice**. The closing of the ports should be controlled internally to provide fast access. (Opening and closing in **IStiUSD::LockDevice** and **IStiUSD::UnLockDevice** is very inefficient. **CreateFile** can cause a delay making the device appear slow and unresponsive to the user.)
 
-If a WIA driver cannot support multiple [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) calls on the same device port, then the **IStiDeviceControl::GetMyDeviceOpenMode** method should be called.
+If a WIA driver cannot support multiple [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) calls on the same device port, then the **IStiDeviceControl::GetMyDeviceOpenMode** method should be called.
 
 The WIA driver should check the returned mode value for the STI\_DEVICE\_CREATE\_DATA flag and open the port accordingly.
 
-If the device port must be opened, a call to [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) should be used. When opening a port, the FILE\_FLAG\_OVERLAPPED flag should be used. This allows the OVERLAPPED structure (described in the Windows SDK documentation) to be used when accessing the device. Using overlapped I/O will help control responsive access to the hardware. When a problem is detected, the WIA driver can call **CancelIo** (described in the Windows SDK documentation) to stop all current hardware access.
+If the device port must be opened, a call to [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) should be used. When opening a port, the FILE\_FLAG\_OVERLAPPED flag should be used. This allows the OVERLAPPED structure (described in the Windows SDK documentation) to be used when accessing the device. Using overlapped I/O will help control responsive access to the hardware. When a problem is detected, the WIA driver can call **CancelIo** (described in the Windows SDK documentation) to stop all current hardware access.
 
 The following example shows an implementation of the **IStiUSD::Initialize** method.
 
@@ -150,7 +149,7 @@ STDMETHODIMP CWIADevice::Initialize(
 }
 ```
 
-The WIA service calls [**IStiUSD::GetCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getcapabilities) after a successful call to the **IStiUSD::Initialize** method. **IStiUSD::GetCapabilities** then supplies the [**STI\_USD\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/ns-stiusd-_sti_usd_caps) structure with STI version information, WIA support flags (bit flags indicating driver capabilities), and any event requirements.
+The WIA service calls [**IStiUSD::GetCapabilities**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getcapabilities) after a successful call to the **IStiUSD::Initialize** method. **IStiUSD::GetCapabilities** then supplies the [**STI\_USD\_CAPS**](/windows-hardware/drivers/ddi/stiusd/ns-stiusd-_sti_usd_caps) structure with STI version information, WIA support flags (bit flags indicating driver capabilities), and any event requirements.
 
 The following example shows an implementation of **IStiUSD::GetCapabilities**.
 
@@ -188,9 +187,4 @@ STDMETHODIMP CWIADevice::GetCapabilities(PSTI_USD_CAPS pUsdCaps)
 ```
 
  
-
- 
-
-
-
 

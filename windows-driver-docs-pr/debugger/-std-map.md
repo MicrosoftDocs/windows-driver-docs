@@ -1,7 +1,6 @@
 ---
-title: std_map
+title: std_map (WinDbg)
 description: The std_map extension displays the entries of a std map tree.
-ms.assetid: 7a921226-e7b1-4c3f-9732-c53c66710ccb
 keywords: ["std_map Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,8 +65,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 To display other Standard Template Library (STL) defined templates, see [**!stl**](-stl.md).
 
-Remarks
--------
+## Remarks
 
 Including the <em>Module</em>**!**<em>Type</em> option causes each entry in the table to be interpreted as having the given type.
 

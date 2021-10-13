@@ -1,7 +1,6 @@
 ---
 title: Determining If a Driver Leaks Framework Objects
 description: This topic describes how you can find driver memory leaks caused by unreleased references. It applies to User-Mode Driver Framework (UMDF) version 1 and 2 drivers.
-ms.assetid: 617cc678-e0db-4d2f-9d19-34b6cedad234
 keywords:
 - debugging scenarios WDK UMDF , determining whether a driver leaks framework objects
 - UMDF WDK , debugging scenarios, determining whether a driver leaks framework objects
@@ -22,7 +21,7 @@ In UMDF version 1, a call stack can cause a memory leak if each call to **AddRef
 
 To test if your UMDF version 1 driver leaks framework objects, use the following steps:
 
-1.  Use the [WDF Verifier control application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) to set the verifier options that you want. During regular testing, start by setting **TrackObjects** and not **TrackRefCounts**.
+1.  Use the [WDF Verifier control application](../devtest/wdf-verifier-control-application.md) to set the verifier options that you want. During regular testing, start by setting **TrackObjects** and not **TrackRefCounts**.
 
     When the driver is unloaded, the framework's code verifier enters the debugger if a framework object was not deleted, and it prompts you to use the [**!wudfdumpobjects**](using-umdf-debugger-extensions.md) debugger extension. This debugger extension displays a list of undeleted objects.
 
@@ -37,7 +36,7 @@ For information about when to delete framework objects, see [Managing the Lifeti
 ## UMDF 2
 
 
-In UMDF version 2, unreleased references are rare, but can occur due to call mismatches when using [**WdfObjectReference**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfobjectreference) and [**WdfObjectDereference**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfobjectdereference).
+In UMDF version 2, unreleased references are rare, but can occur due to call mismatches when using [**WdfObjectReference**](./wdfobjectreference.md) and [**WdfObjectDereference**](./wdfobjectdereference.md).
 
 To test if your UMDF version 2 driver leaks framework objects, use the following procedure:
 
@@ -48,22 +47,16 @@ To test if your UMDF version 2 driver leaks framework objects, use the following
 
     To enable handle tracking, set the value of **TrackHandles** to the name of one or more object types, or specify an asterisk (\*) to track all object types.
 
-    You can also modify UMDF Verifier settings by using the [WdfVerifier.exe](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) application.
+    You can also modify UMDF Verifier settings by using the [WdfVerifier.exe](../devtest/wdf-verifier-control-application.md) application.
 
 3.  Reboot, establish a debugger connection, and then use the following debugger commands:
 
-    -   [**!wdfkd.wdfdriverinfo 0x10**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdriverinfo) to display the handle hierarchy
-    -   [**!wdfkd.wdftagtracker**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdftagtracker) to display tag information
+    -   [**!wdfkd.wdfdriverinfo 0x10**](../debugger/-wdfkd-wdfdriverinfo.md) to display the handle hierarchy
+    -   [**!wdfkd.wdftagtracker**](../debugger/-wdfkd-wdftagtracker.md) to display tag information
 
 If UMDF Verifier is on, memory leaks are detected at driver unload, just as in KMDF.
 
 For additional information about using reference counts in KMDF and UMDF version 2 drivers, see [Framework Object Life Cycle](framework-object-life-cycle.md).
 
  
-
- 
-
-
-
-
 

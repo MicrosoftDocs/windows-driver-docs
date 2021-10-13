@@ -1,7 +1,6 @@
 ---
-title: ks.help
+title: ks.help (WinDbg)
 description: The ks.help extension displays a help text showing all AVStream-specific Ks.dll extension commands.
-ms.assetid: c9e6e3fb-1dd8-4de6-8996-2482457f3979
 keywords: ["ks.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Supporting Mount Manager Requests in a Storage Class Driver
 description: Supporting Mount Manager Requests in a Storage Class Driver
-ms.assetid: fb37f862-70d6-4514-b481-16f664346422
 keywords:
 - storage class drivers WDK , mount manager
 - class drivers WDK storage , mount manager
@@ -43,32 +42,27 @@ For instance, a single volume with a unique volume name of <strong>"\\\\?\\Volum
 
 The following acreen shot illustrates how persistent names appear in the **MountedDevices** registry key.
 
-![screen shot illustrating how persistent names appear in the mounteddevices registry key](images/mntmgr.png)
+![screen shot illustrating how persistent names appear in the mounteddevices registry key.](images/mntmgr.png)
 
-The mount manager relies on the Plug and Play device interface notification mechanism to alert it of volume arrival and removal. Therefore every client (that is, every volume driver, usually a class driver) must create an interface in the MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class by calling [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) to notify the mount manager of the arrival in the system of the volume it manages. The MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class GUID is defined in *mountmgr.h*.
+The mount manager relies on the Plug and Play device interface notification mechanism to alert it of volume arrival and removal. Therefore every client (that is, every volume driver, usually a class driver) must create an interface in the MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class by calling [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) to notify the mount manager of the arrival in the system of the volume it manages. The MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class GUID is defined in *mountmgr.h*.
 
 Upon receiving a Plug and Play notification of the arrival of a volume interface, mount manager sends the client three device control IRPs:
 
-* [**IOCTL\_MOUNTDEV\_QUERY\_DEVICE\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountdev_query_device_name)
-* [**IOCTL\_MOUNTDEV\_QUERY\_UNIQUE\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountdev/ni-mountdev-ioctl_mountdev_query_unique_id)
-* [**IOCTL\_MOUNTDEV\_QUERY\_SUGGESTED\_LINK\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountdev/ni-mountdev-ioctl_mountdev_query_suggested_link_name)
+* [**IOCTL\_MOUNTDEV\_QUERY\_DEVICE\_NAME**](/windows-hardware/drivers/ddi/mountmgr/ni-mountmgr-ioctl_mountdev_query_device_name)
+* [**IOCTL\_MOUNTDEV\_QUERY\_UNIQUE\_ID**](/windows-hardware/drivers/ddi/mountdev/ni-mountdev-ioctl_mountdev_query_unique_id)
+* [**IOCTL\_MOUNTDEV\_QUERY\_SUGGESTED\_LINK\_NAME**](/windows-hardware/drivers/ddi/mountdev/ni-mountdev-ioctl_mountdev_query_suggested_link_name)
 
-In response to these three IOCTLs the client should return the volume's nonpersistent device object name (or target name) located in the **Device** directory of the system object tree (for example: "\\Device\\HarddiskVolume1"), the unique volume ID, and a suggested persistent symbolic link name for the volume, respectively. Although clients may elect to ignore [**IOCTL\_MOUNTDEV\_QUERY\_SUGGESTED\_LINK\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountdev/ni-mountdev-ioctl_mountdev_query_suggested_link_name), they are required to provide a unique volume ID upon receiving [**IOCTL\_MOUNTDEV\_QUERY\_DEVICE\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountdev_query_device_name) or IOCTL\_MOUNTDEV\_QUERY\_UNIQUE\_ID. The mount manager relies entirely upon the client to provide the unique volume ID, and if the client does not provide it, then the mount manager is not able to assign mount points, such as drive letters, to the volume.
+In response to these three IOCTLs the client should return the volume's nonpersistent device object name (or target name) located in the **Device** directory of the system object tree (for example: "\\Device\\HarddiskVolume1"), the unique volume ID, and a suggested persistent symbolic link name for the volume, respectively. Although clients may elect to ignore [**IOCTL\_MOUNTDEV\_QUERY\_SUGGESTED\_LINK\_NAME**](/windows-hardware/drivers/ddi/mountdev/ni-mountdev-ioctl_mountdev_query_suggested_link_name), they are required to provide a unique volume ID upon receiving [**IOCTL\_MOUNTDEV\_QUERY\_DEVICE\_NAME**](/windows-hardware/drivers/ddi/mountmgr/ni-mountmgr-ioctl_mountdev_query_device_name) or IOCTL\_MOUNTDEV\_QUERY\_UNIQUE\_ID. The mount manager relies entirely upon the client to provide the unique volume ID, and if the client does not provide it, then the mount manager is not able to assign mount points, such as drive letters, to the volume.
 
-For more information about these IOCTLs, see [I/O Control Codes Sent by the Mount Manager](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For more information about these IOCTLs, see [I/O Control Codes Sent by the Mount Manager](/windows-hardware/drivers/ddi/index).
 
-If a client alerts the mount manager of the arrival of its volume but fails to provide a unique ID for the volume when queried, the volume is placed on a *dead mounted device* list. When this occurs, clients can send an [**IOCTL\_MOUNTMGR\_CHECK\_UNPROCESSED\_VOLUMES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountmgr_check_unprocessed_volumes) IOCTL to the mount manager to request that the mount manager rescan its dead mounted device list and make another attempt to query the clients on the list for the unique IDs of their respective volumes. For more information about the IOCTL\_MOUNTMGR\_xxx IOCTLs, see [I/O Control Codes Sent by Mount Manager Clients](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+If a client alerts the mount manager of the arrival of its volume but fails to provide a unique ID for the volume when queried, the volume is placed on a *dead mounted device* list. When this occurs, clients can send an [**IOCTL\_MOUNTMGR\_CHECK\_UNPROCESSED\_VOLUMES**](/windows-hardware/drivers/ddi/mountmgr/ni-mountmgr-ioctl_mountmgr_check_unprocessed_volumes) IOCTL to the mount manager to request that the mount manager rescan its dead mounted device list and make another attempt to query the clients on the list for the unique IDs of their respective volumes. For more information about the IOCTL\_MOUNTMGR\_xxx IOCTLs, see [I/O Control Codes Sent by Mount Manager Clients](/windows-hardware/drivers/ddi/index)
 
 After the mount manager receives a unique volume ID for a newly introduced volume, then it searches its database for all of the persistent names assigned to that unique ID and creates symbolic links to the volume for each persistent symbolic link name.
 
 When the mount manager detects that a volume has gone off line then it deletes the symbolic links pointing to the device object without deleting the corresponding symbolic link names in the mount manager's database.
 
-For information about how mount manager clients create persistent symbolic names, see [**IOCTL\_MOUNTMGR\_CREATE\_POINT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountmgr_create_point).
+For information about how mount manager clients create persistent symbolic names, see [**IOCTL\_MOUNTMGR\_CREATE\_POINT**](/windows-hardware/drivers/ddi/mountmgr/ni-mountmgr-ioctl_mountmgr_create_point).
 
  
-
- 
-
-
-
 

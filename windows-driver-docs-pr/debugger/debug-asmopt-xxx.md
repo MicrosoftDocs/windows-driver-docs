@@ -74,8 +74,7 @@ Additionally, the value DEBUG_ASMOPT_DEFAULT represents the default set of assem
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,5 +1,5 @@
 ---
-Description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.
+description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.
 title: Windows 8 - What's new for USB
 ms.date: 05/05/2018
 ms.localizationpriority: medium
@@ -22,12 +22,12 @@ This topic summarizes the new features and improvements for Universal Serial Bus
 -   [Enhanced debugging and diagnostic capabilities](#enhanced-debugging-and-diagnostic-capabilities)
 -   [New USB-specific failure messages in Device Manager](#new-usb-specific-failure-messages-in-device-manager)
 
-For information about new features in USB in general, see [New for USB Drivers](https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development).
+For information about new features in USB in general, see [New for USB Drivers](../what-s-new-in-driver-development.md).
 
 ## New Driver Stack for USB 3.0 Devices
 
 
-Windows 8 provides a new USB driver stack to support USB 3.0 devices. The new stack includes drivers that are loaded by Windows when a USB 3.0 device is attached to an xHCI host controller. The new drivers are based on [Kernel Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development) (KMDF) and implement features defined in the USB 3.0 specification. The new drivers are as follows:
+Windows 8 provides a new USB driver stack to support USB 3.0 devices. The new stack includes drivers that are loaded by Windows when a USB 3.0 device is attached to an xHCI host controller. The new drivers are based on [Kernel Mode Driver Framework](../what-s-new-in-driver-development.md) (KMDF) and implement features defined in the USB 3.0 specification. The new drivers are as follows:
 
 -   Usbxhci.sys
 -   Ucx01000.sys
@@ -63,38 +63,38 @@ A client driver that intends to use the capabilities of the USB driver stack for
 
 | Use case                                                           | A KMDF-based driver should ...                                                                                                              | A WDM driver must ...                                                                                          |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| To specify a client contract version and with the USB driver stack | Call the [**WdfUsbTargetDeviceCreateWithParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters) method.                                      | Call the [**USBD\_CreateHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_createhandle) routine.                                                |
-| To query for a particular capability                               | Call [**WdfUsbTargetDeviceQueryUsbCapability**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability) and specify the GUID of the capability to query. | Call [**USBD\_QueryUsbCapability**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)) and specify the GUID of the capability to query. |
+| To specify a client contract version and with the USB driver stack | Call the [**WdfUsbTargetDeviceCreateWithParameters**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters) method.                                      | Call the [**USBD\_CreateHandle**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle) routine.                                                |
+| To query for a particular capability                               | Call [**WdfUsbTargetDeviceQueryUsbCapability**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability) and specify the GUID of the capability to query. | Call [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)) and specify the GUID of the capability to query. |
 
  
 
 ## New Routines for Allocating and Building URBs
 
 
-Windows 8 provides new routines for allocating, formatting, and releasing URBs. The [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb) structure is allocated by the USB driver stack. If the underlying stack is the new USB driver stack, the URB is paired with an opaque URB context. The USB driver stack uses the URB context to improve URB tracking and processing. For more information about the routines, see [Allocating and Building URBs](how-to-add-xrb-support-for-client-drivers.md).
+Windows 8 provides new routines for allocating, formatting, and releasing URBs. The [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure is allocated by the USB driver stack. If the underlying stack is the new USB driver stack, the URB is paired with an opaque URB context. The USB driver stack uses the URB context to improve URB tracking and processing. For more information about the routines, see [Allocating and Building URBs](how-to-add-xrb-support-for-client-drivers.md).
 
 The new routines are as follows:
 
--   [**USBD\_UrbAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_urballocate)
--   [**USBD\_IsochUrbAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_isochurballocate)
--   [**USBD\_SelectConfigUrbAllocateAndBuild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild)
--   [**USBD\_SelectInterfaceUrbAllocateAndBuild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_selectinterfaceurballocateandbuild)
--   [**USBD\_UrbFree**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_urbfree)
--   [**USBD\_AssignUrbToIoStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_assignurbtoiostacklocation) routine to associate an URB with an IRP. This routine only applies to WDM client drivers.
+-   [**USBD\_UrbAllocate**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate)
+-   [**USBD\_IsochUrbAllocate**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_isochurballocate)
+-   [**USBD\_SelectConfigUrbAllocateAndBuild**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild)
+-   [**USBD\_SelectInterfaceUrbAllocateAndBuild**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectinterfaceurballocateandbuild)
+-   [**USBD\_UrbFree**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urbfree)
+-   [**USBD\_AssignUrbToIoStackLocation**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_assignurbtoiostacklocation) routine to associate an URB with an IRP. This routine only applies to WDM client drivers.
 
 In addition to the routines in the preceding list, there are new KMDF-specific methods for URB allocation. For KMDF-based client drivers, we recommend that you call,
 
--   The [**WdfUsbTargetDeviceCreateUrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb) method (instead of [**USBD\_UrbAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_urballocate)) to allocate an URB.
--   The [**WdfUsbTargetDeviceCreateIsochUrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateisochurb) method (instead of [**USBD\_IsochUrbAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_isochurballocate))to allocate an URB for an isochronous transfer. Those calls allocate a variable-sized URB that is based on the number of isochronous packets required for the transfer. For more information about isochronous transfers, see [How to Transfer Data to USB Isochronous Endpoints](transfer-data-to-isochronous-endpoints.md).
+-   The [**WdfUsbTargetDeviceCreateUrb**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb) method (instead of [**USBD\_UrbAllocate**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate)) to allocate an URB.
+-   The [**WdfUsbTargetDeviceCreateIsochUrb**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateisochurb) method (instead of [**USBD\_IsochUrbAllocate**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_isochurballocate))to allocate an URB for an isochronous transfer. Those calls allocate a variable-sized URB that is based on the number of isochronous packets required for the transfer. For more information about isochronous transfers, see [How to Transfer Data to USB Isochronous Endpoints](transfer-data-to-isochronous-endpoints.md).
 
 ## New User Mode I/O Control Requests for USB 3.0 Hubs
 
 
 Windows 8 provides the new IOCTLs that applications can use to retrieve information about USB 3.0 hubs and their ports. The new IOCTLs are as follows:
 
--   [**IOCTL\_USB\_GET\_HUB\_INFORMATION\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_get_hub_information_ex)
--   [**IOCTL\_USB\_GET\_PORT\_CONNECTOR\_PROPERTIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_get_port_connector_properties)
--   [**IOCTL\_USB\_GET\_NODE\_CONNECTION\_INFORMATION\_EX\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2)
+-   [**IOCTL\_USB\_GET\_HUB\_INFORMATION\_EX**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_hub_information_ex)
+-   [**IOCTL\_USB\_GET\_PORT\_CONNECTOR\_PROPERTIES**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_port_connector_properties)
+-   [**IOCTL\_USB\_GET\_NODE\_CONNECTION\_INFORMATION\_EX\_V2**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2)
 
 By sending the preceding I/O requests to the USB driver stack an application retrieve the following set of information:
 
@@ -132,7 +132,7 @@ The Windows to Go feature allows Windows to boot from a flash drive or an extern
 ## Enhanced debugging and diagnostic capabilities
 
 
-Windows 8 provides new USB 3.0 debugging tools to improve diagnosing USB issues faster. There are new USB 3.0 kernel debugger extensions that examine USB 3.0 host controller and device states. You can use USB WPP and event tracing to analyze USB interactions and troubleshoot USB device issues more easily. Windows 8 supports debugging over USB 3.0. For more information, see [Setting Up a USB 3.0 Connection Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-usb-3-0-debug-cable-connection).
+Windows 8 provides new USB 3.0 debugging tools to improve diagnosing USB issues faster. There are new USB 3.0 kernel debugger extensions that examine USB 3.0 host controller and device states. You can use USB WPP and event tracing to analyze USB interactions and troubleshoot USB device issues more easily. Windows 8 supports debugging over USB 3.0. For more information, see [Setting Up a USB 3.0 Connection Manually](../debugger/setting-up-a-usb-3-0-debug-cable-connection.md).
 
 ## New USB-specific failure messages in Device Manager
 
@@ -170,8 +170,5 @@ The error strings are as follows:
 -   The USB device returned an invalid serial number string descriptor.
 
 ## Related topics
-[New for USB Drivers](https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development)  
-[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
-
-
-
+[New for USB Drivers](../what-s-new-in-driver-development.md)  
+[Universal Serial Bus (USB) Drivers](../index.yml)

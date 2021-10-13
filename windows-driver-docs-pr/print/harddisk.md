@@ -1,56 +1,46 @@
 ---
-title: HardDisk
-description: HardDisk
-ms.assetid: 88eadea0-54cb-4c19-90d2-9941b13b9303
-ms.date: 11/28/2017
+title: HardDisk property
+description: The value entries for a hard disk installed in the device.
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
-# HardDisk
+# HardDisk property
 
+Schema Path: \\Printer.Configuration.HardDisk
 
-Schema Path:\\Printer.Configuration.HardDisk
+Node Type: Property
 
-Node Type:Property
-
-Description:The value entries for a hard disk installed in the device.
+Description: The value entries for a hard disk installed in the device.
 
 The HardDisk property contains three child values: Installed, Capacity, and FreeSpace.
 
-### <span id="installed"></span><span id="INSTALLED"></span> Installed
+## Installed
 
-Schema Path:\\Printer.Configuration.HardDisk:Installed
+Schema Path: \\Printer.Configuration.HardDisk:Installed
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_BOOL
+Data Type: BIDI_BOOL
 
-Description:Indicates whether a hard disk is installed on the device. If **TRUE**, a hard disk is installed; if **FALSE**, a hard disk is not installed.
+Description: Indicates whether a hard disk is installed on the device. If **TRUE**, a hard disk is installed; if **FALSE**, a hard disk is not installed.
 
-### <span id="capacity"></span><span id="CAPACITY"></span> Capacity
+## Capacity
 
-Schema Path:\\Printer.Configuration.HardDisk:Capacity
+Schema Path: \\Printer.Configuration.HardDisk:Capacity
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_INT
+Data Type: BIDI_INT
 
-Description:The capacity, in megabytes (MB), of the installed hard disk.
+Description: The capacity, in megabytes (MB), of the installed hard disk.
 
-### <span id="freespace"></span><span id="FREESPACE"></span> FreeSpace
+## FreeSpace
 
-Schema Path:\\Printer.Configuration.HardDisk:FreeSpace
+Schema Path: \\Printer.Configuration.HardDisk:FreeSpace
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_INT
+Data Type: BIDI_INT
 
-Description:The currently available free space, in megabytes (MB), of the installed hard disk.
-
- 
-
- 
-
-
-
-
+Description: The currently available free space, in megabytes (MB), of the installed hard disk.

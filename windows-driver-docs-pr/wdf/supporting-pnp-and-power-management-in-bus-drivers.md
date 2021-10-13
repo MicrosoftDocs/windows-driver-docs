@@ -1,7 +1,6 @@
 ---
 title: Supporting PnP and Power Management in Bus Drivers
 description: Supporting PnP and Power Management in Bus Drivers
-ms.assetid: 35a3d734-7d7e-46ee-aba6-fc6a579d4394
 keywords:
 - PnP WDK KMDF , bus drivers
 - Plug and Play WDK KMDF , bus drivers

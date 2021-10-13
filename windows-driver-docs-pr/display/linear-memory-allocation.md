@@ -1,7 +1,6 @@
 ---
 title: Linear Memory Allocation
 description: Linear Memory Allocation
-ms.assetid: f39c6752-c771-43d4-b89e-77f3d542d1fd
 keywords:
 - linear memory allocation WDK DirectDraw
 ms.date: 04/20/2017
@@ -20,13 +19,13 @@ The pitch is determined by multiplying the pixel depth, in bytes, by surface wid
 
 The following diagram illustrates linear memory heap allocation with one primary surface and one scratch area.
 
-![diagram illustrating linear memory heap allocation](images/ddfig4.png)
+![diagram illustrating linear memory heap allocation.](images/ddfig4.png)
 
-The pointer to the start of the primary surface is **fpPrimary**, a member of the [**VIDEOMEMORYINFO**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_videomemoryinfo) structure. The size of the primary surface and the various Windows caches are added to this to give a pointer to the beginning of the scratch area, indicated by the **fpStart** member of the [**VIDEOMEMORY**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_videomemory) structure. The end point, indicated by the **fpEnd** member of the **VIDEOMEMORY** structure, is calculated by adding the size of the remaining memory minus one.
+The pointer to the start of the primary surface is **fpPrimary**, a member of the [**VIDEOMEMORYINFO**](/windows/win32/api/ddrawint/ns-ddrawint-videomemoryinfo) structure. The size of the primary surface and the various Windows caches are added to this to give a pointer to the beginning of the scratch area, indicated by the **fpStart** member of the [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure. The end point, indicated by the **fpEnd** member of the **VIDEOMEMORY** structure, is calculated by adding the size of the remaining memory minus one.
 
-The [**VIDEOMEMORY**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_videomemory) structure holds the information that manages the display memory heaps. This sample has only one element in the array of **VIDEOMEMORY** structures because there is only one heap. VIDMEM\_ISLINEAR, a flag in the **dwFlags** member of the **VIDEOMEMORY** structure, denotes this as linear memory.
+The [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure holds the information that manages the display memory heaps. This sample has only one element in the array of **VIDEOMEMORY** structures because there is only one heap. VIDMEM\_ISLINEAR, a flag in the **dwFlags** member of the **VIDEOMEMORY** structure, denotes this as linear memory.
 
-The following pseudocode shows how a [**VIDEOMEMORY**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_videomemory) structure is set up for linear memory:
+The following pseudocode shows how a [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure is set up for linear memory:
 
 ```cpp
 /*
@@ -62,15 +61,9 @@ The following pseudocode shows how linear memory heaps are set up:
     vidMem[ 0 ].fpEnd = VideoHeapEnd;
 ```
 
-The beginning of the first available scratch area is calculated by adding the beginning of the GDI primary surface to the size of the primary surface and the size of the Windows brush, pen, and VDD caches. The result is used to set the starting point in the first element of the [**VIDEOMEMORY**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_videomemory) structure to the beginning of the scratch area.
+The beginning of the first available scratch area is calculated by adding the beginning of the GDI primary surface to the size of the primary surface and the size of the Windows brush, pen, and VDD caches. The result is used to set the starting point in the first element of the [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure to the beginning of the scratch area.
 
-The end of the scratch area is found by adding the beginning of the scratch area to the size of the scratch area and subtracting one to make it inclusive. The result is used to set the end point of the first (and, in this case, only) element of the [**VIDEOMEMORY**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_videomemory) structure to the end of the scratch area. If there is more than one heap, the end point is set to the end of this heap and the next heap starts where this one leaves off.
-
- 
+The end of the scratch area is found by adding the beginning of the scratch area to the size of the scratch area and subtracting one to make it inclusive. The result is used to set the end point of the first (and, in this case, only) element of the [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure to the end of the scratch area. If there is more than one heap, the end point is set to the end of this heap and the next heap starts where this one leaves off.
 
  
-
-
-
-
 

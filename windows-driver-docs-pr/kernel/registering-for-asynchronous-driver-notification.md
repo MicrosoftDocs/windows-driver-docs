@@ -1,7 +1,6 @@
 ---
 title: Registering for Asynchronous Driver Notification
 description: Registering for Asynchronous Driver Notification
-ms.assetid: e1f97a65-7c82-4d7b-97ec-0293fc69fd8c
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "asynchronous notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , registering", "asynchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -28,7 +27,7 @@ NTSTATUS
     );
 ```
 
-A device driver registers for asynchronous notification by calling the [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification) function, one time for each of the device driver's callback functions, specifying a pointer to one of the following GUIDs for the *EventCategoryData* parameter:
+A device driver registers for asynchronous notification by calling the [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) function, one time for each of the device driver's callback functions, specifying a pointer to one of the following GUIDs for the *EventCategoryData* parameter:
 
 <a href="" id="guid-device-processor"></a>GUID\_DEVICE\_PROCESSOR  
 Register to be notified when a processor is dynamically added to the hardware partition.
@@ -72,7 +71,7 @@ Status =
 
  
 
-When a device driver must stop receiving asynchronous driver notifications, such as when it is being unloaded, it must unregister each callback function by calling the [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iounregisterplugplaynotification) function. The following code example shows how to unregister the callback functions:
+When a device driver must stop receiving asynchronous driver notifications, such as when it is being unloaded, it must unregister each callback function by calling the [**IoUnregisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification) function. The following code example shows how to unregister the callback functions:
 
 ```cpp
 // Unregister for asynchronous notifications
@@ -88,9 +87,4 @@ Status =
 ```
 
  
-
- 
-
-
-
 

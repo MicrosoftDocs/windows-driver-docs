@@ -1,7 +1,6 @@
 ---
 title: Responding to Check-Verify Requests from the File System
 description: Responding to Check-Verify Requests from the File System
-ms.assetid: 227e65d6-d746-4b16-978d-4d42be9aeb2c
 keywords: ["removable media WDK kernel , check-verify requests", "check-verify requests WDK removable media", "media change requests WDK removable media", "checking removable media changes", "verifying removable media changes"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-At its discretion, the file system can send an IRP to the device driver's Dispatch entry point for [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) requests with **Parameters.DeviceIoControl.IoControlCode** in the I/O stack location set to the following:
+At its discretion, the file system can send an IRP to the device driver's Dispatch entry point for [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) requests with **Parameters.DeviceIoControl.IoControlCode** in the I/O stack location set to the following:
 
 <a href="" id="ioctl-xxx-check-verify"></a>IOCTL\_*XXX*\_CHECK\_VERIFY  
 where *XXX* is the type of device, such as DISK, TAPE, or CDROM.
@@ -51,14 +50,9 @@ If the underlying device driver determines that the media has changed, it takes 
     -   **Status** set to STATUS\_VERIFY\_REQUIRED
     -   **Information** set to zero
 
-3.  Call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) with the input IRP.
+3.  Call [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) with the input IRP.
 
 If the volume is not mounted, the driver must not set the DO\_VERIFY\_VOLUME bit. The driver should set **IoStatus.Status** to STATUS\_IO\_DEVICE\_ERROR, set **IoStatus.Information** to zero, and call **IoCompleteRequest** with the IRP.
 
  
-
- 
-
-
-
 

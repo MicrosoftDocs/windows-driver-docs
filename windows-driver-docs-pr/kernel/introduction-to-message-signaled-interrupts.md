@@ -1,7 +1,6 @@
 ---
 title: Introduction to Message-Signaled Interrupts
 description: Introduction to Message-Signaled Interrupts
-ms.assetid: 035207a1-762d-463e-822e-64ac4833afa4
 keywords: ["message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -18,17 +17,17 @@ For PCI 2.2, a message consists of an address and a partially opaque 16-bit valu
 
 For PCI 3.0, a message consists of an address and an opaque 32-bit value. Each different message has its own unique address. Unlike for PCI 2.2, the device does not modify the value. For PCI 3.0, a device can support up to 2,048 different messages. Devices that support PCI 3.0 MSI-X feature a dynamically programmable hardware table that contains entries for each of the interrupt sources in the device. Each entry in this table can be programmed with one of the messages that are allocated to a device, and can be independently masked. Drivers can change the programming of an interrupt message into a table entry and whether an entry has been masked. For more information, see [Dynamically Configuring MSI-X](dynamically-configuring-msi-x.md).
 
-Drivers can register a single [*InterruptMessageService*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kmessage_service_routine) routine that handles all possible messages or individual [*InterruptService*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kservice_routine) routines for each message.
+Drivers can register a single [*InterruptMessageService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kmessage_service_routine) routine that handles all possible messages or individual [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routines for each message.
 
 Drivers can handle MSIs that a device sends as follows:
 
 1.  During driver installation, enable MSIs in the registry. You can also use the registry to specify the number of messages to allocate for the device. For more information, see [Enabling Message-Signaled Interrupts in the Registry](enabling-message-signaled-interrupts-in-the-registry.md).
 
-2.  Optionally, increase the number of interrupt messages and save some per-message settings by responding to an [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-filter-resource-requirements) request. For more information, see [Using Interrupt Resource Descriptors](using-interrupt-resource-descriptors.md).
+2.  Optionally, increase the number of interrupt messages and save some per-message settings by responding to an [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](./irp-mn-filter-resource-requirements.md) request. For more information, see [Using Interrupt Resource Descriptors](using-interrupt-resource-descriptors.md).
 
-3.  In the driver's dispatch routine for [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device), call [**IoConnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterruptex) to register an *InterruptService* or *InterruptMessageService* routine to service the device's interrupts. Use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx** to register an *InterruptService* routine for a specific message or the CONNECT\_MESSAGE\_BASED version of **IoConnectInterruptEx** to register a single *InterruptMessageService* routine for all messages. For more information, see [Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx](using-the-connect-message-based-version-of-ioconnectinterruptex.md) and [Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx](using-the-connect-fully-specified-version-of-ioconnectinterruptex.md).
+3.  In the driver's dispatch routine for [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md), call [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register an *InterruptService* or *InterruptMessageService* routine to service the device's interrupts. Use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx** to register an *InterruptService* routine for a specific message or the CONNECT\_MESSAGE\_BASED version of **IoConnectInterruptEx** to register a single *InterruptMessageService* routine for all messages. For more information, see [Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx](using-the-connect-message-based-version-of-ioconnectinterruptex.md) and [Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx](using-the-connect-fully-specified-version-of-ioconnectinterruptex.md).
 
-4.  After the driver no longer intends to service interrupts from the device, call [**IoDisconnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iodisconnectinterruptex) (after disabling the device's interrupts) to remove any registered interrupt service routines.
+4.  After the driver no longer intends to service interrupts from the device, call [**IoDisconnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodisconnectinterruptex) (after disabling the device's interrupts) to remove any registered interrupt service routines.
 
 Drivers that are designed to use multiple messages should check that the expected number of messages is allocated. If the Plug and Play (PnP) manager cannot allocate the requested number of messages, it instead allocates exactly one message to the device. Drivers can check the number of messages that are actually allocated in one of the following ways:
 
@@ -37,9 +36,4 @@ Drivers that are designed to use multiple messages should check that the expecte
 -   When **IoConnectInterruptEx** returns, it sets *Parameters*-&gt;**MessageBased.ConnectContext.InterruptMessageTable-&gt;MessageCount** to the number of allocated messages.
 
  
-
- 
-
-
-
 

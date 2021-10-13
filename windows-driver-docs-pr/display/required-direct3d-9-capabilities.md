@@ -1,6 +1,5 @@
 ---
 title: Required Direct3D 9 capabilities
-ms.assetid: AE8ED273-2329-4E53-9FCD-5A8E863AED83
 description: Capabilities required for the user-mode driver to access Direct3D 9 features.
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Required Direct3D 9 capabilities
 
 
-For applications to fully access the features of Microsoft Direct3D versions 9\_1, 9\_2, and 9\_3, the user-mode driver must expose certain hardware capabilities. These capabilities are expressed in terms of the [**D3DCAPS9**](https://docs.microsoft.com/windows/desktop/api/d3d9caps/ns-d3d9caps-_d3dcaps9) structure that is returned by the user-mode driver's [*GetCaps*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps) function. To indicate support of the capabilities, the driver must set these members of **D3DCAPS9** to a bitwise-OR of all of the respective flag values:
+For applications to fully access the features of Microsoft Direct3D versions 9\_1, 9\_2, and 9\_3, the user-mode driver must expose certain hardware capabilities. These capabilities are expressed in terms of the [**D3DCAPS9**](/windows/win32/api/d3d9caps/ns-d3d9caps-d3dcaps9) structure that is returned by the user-mode driver's [*GetCaps*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps) function. To indicate support of the capabilities, the driver must set these members of **D3DCAPS9** to a bitwise-OR of all of the respective flag values:
 
 ## <span id="Minimum_capabilities_for_Direct3D_level_9_1"></span><span id="minimum_capabilities_for_direct3d_level_9_1"></span><span id="MINIMUM_CAPABILITIES_FOR_DIRECT3D_LEVEL_9_1"></span>Minimum capabilities for Direct3D level 9\_1
 
@@ -21,7 +20,7 @@ For applications to fully access the features of Microsoft Direct3D versions 9\_
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><a href="https://docs.microsoft.com/windows/desktop/api/d3d9caps/ns-d3d9caps-_d3dcaps9" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/d3d9caps/ns-d3d9caps-_d3dcaps9)"><strong>D3DCAPS9</strong></a> member</th>
+<th align="left"><a href="/windows/win32/api/d3d9caps/ns-d3d9caps-d3dcaps9" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](/windows/win32/api/d3d9caps/ns-d3d9caps-_d3dcaps9)"><strong>D3DCAPS9</strong></a> member</th>
 <th align="left">Flag value</th>
 </tr>
 </thead>
@@ -169,7 +168,7 @@ For applications to fully access the features of Microsoft Direct3D versions 9\_
 
 **Note**  These requirements also apply:
 -   The driver must also set the **TextureCaps** member to a value of D3DPTEXTURECAPS\_NONPOW2CONDITIONAL and D3DPTEXTURECAPS\_POW2, or to neither.
--   When the driver responds to an event, where [**D3DDDIARG\_CREATEQUERY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_createquery).**QueryType** is D3DDDIQUERYTYPE\_EVENT, it must always set the event's **BOOL** value to **TRUE** when responding. See [*CreateQuery*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createquery) and **D3DDDIARG\_CREATEQUERY**.
+-   When the driver responds to an event, where [**D3DDDIARG\_CREATEQUERY**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createquery).**QueryType** is D3DDDIQUERYTYPE\_EVENT, it must always set the event's **BOOL** value to **TRUE** when responding. See [*CreateQuery*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createquery) and **D3DDDIARG\_CREATEQUERY**.
 
  
 
@@ -185,7 +184,7 @@ These capabilities must be set in addition to those listed for Direct3D level 9\
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><a href="https://docs.microsoft.com/windows/desktop/api/d3d9caps/ns-d3d9caps-_d3dcaps9" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/d3d9caps/ns-d3d9caps-_d3dcaps9)"><strong>D3DCAPS9</strong></a> member</th>
+<th align="left"><a href="/windows/win32/api/d3d9caps/ns-d3d9caps-d3dcaps9" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](/windows/win32/api/d3d9caps/ns-d3d9caps-_d3dcaps9)"><strong>D3DCAPS9</strong></a> member</th>
 <th align="left">Flag value</th>
 </tr>
 </thead>
@@ -244,7 +243,7 @@ These capabilities must be set in addition to those listed for Direct3D level 9\
  
 
 **Note**  This requirement also applies:
--   When the driver responds to a *z*-testing query, where [**D3DDDIARG\_CREATEQUERY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_createquery).**QueryType** is D3DDDIQUERYTYPE\_OCCLUSION, it must always set the query's **UINT** value to a non-zero value when responding. See [*CreateQuery*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createquery) and **D3DDDIARG\_CREATEQUERY**.
+-   When the driver responds to a *z*-testing query, where [**D3DDDIARG\_CREATEQUERY**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createquery).**QueryType** is D3DDDIQUERYTYPE\_OCCLUSION, it must always set the query's **UINT** value to a non-zero value when responding. See [*CreateQuery*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createquery) and **D3DDDIARG\_CREATEQUERY**.
 
  
 
@@ -260,7 +259,7 @@ These capabilities must be set in addition to those listed for Direct3D levels 9
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><a href="https://docs.microsoft.com/windows/desktop/api/d3d9caps/ns-d3d9caps-_d3dcaps9" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/d3d9caps/ns-d3d9caps-_d3dcaps9)"><strong>D3DCAPS9</strong></a> member</th>
+<th align="left"><a href="/windows/win32/api/d3d9caps/ns-d3d9caps-d3dcaps9" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](/windows/win32/api/d3d9caps/ns-d3d9caps-_d3dcaps9)"><strong>D3DCAPS9</strong></a> member</th>
 <th align="left">Flag value</th>
 </tr>
 </thead>
@@ -322,12 +321,4 @@ These capabilities must be set in addition to those listed for Direct3D levels 9
 **Note**  The **VertexShaderVersion** value of D3DVS\_VERSION(3,0) guarantees instancing support. Direct3D 10Level 9 does not expose Shader Model 3.0.
 
  
-
- 
-
- 
-
-
-
-
 

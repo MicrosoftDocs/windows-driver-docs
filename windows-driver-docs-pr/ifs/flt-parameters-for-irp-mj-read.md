@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_READ union
-description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_READ.
-ms.assetid: 48674db7-c0cc-45a0-bce9-eaf1a4cec362
+description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_READ.
 keywords: ["FLT_PARAMETERS for IRP_MJ_READ union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref
@@ -11,17 +10,15 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 02/04/2020
 ms.localizationpriority: medium
 ---
 
-# FLT\_PARAMETERS for IRP\_MJ\_READ union
+# FLT_PARAMETERS for IRP_MJ_READ union
 
+The following union component is used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP_MJ_READ**](irp-mj-read.md).
 
-The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_READ**](irp-mj-read.md).
-
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -37,8 +34,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **Read**  
 Structure containing the following members.
@@ -53,61 +49,42 @@ Key value associated with a byte-range lock on the target file.
 Starting byte offset within the file of the data to be read.
 
 **ReadBuffer**  
-Pointer to a buffer that receives the data that is read from the file.
+Pointer to a buffer that receives the data that is read from the file. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
 
 **MdlAddress**  
-Address of a memory descriptor list (MDL) that describes the buffer that the **ReadBuffer** member points to. This member is optional and can be **NULL**.
+Address of a memory descriptor list (MDL) that describes the buffer that the **ReadBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **ReadBuffer**. See **Remarks**.
 
-Remarks
--------
+## Remarks
 
-The [**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_READ operations contains the parameters for a read operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
+The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_READ operations contains the parameters for a read operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
 
-IRP\_MJ\_READ can be an IRP-based operation or a fast I/O operation.
+If both a **ReadBuffer** and **MdlAddress** buffer are provided, it is recommended that minifilters use the MDL. The memory that **ReadBuffer** points to is valid when it is a user mode address being accessed within the context of the calling process, or if it is a kernel mode address.
 
-Requirements
-------------
+If a minifilter changes the value of **MdlAddress**, then after its post operation callback, Filter Manager will free the MDL currently stored in **MdlAddress** and restore the previous value of **MdlAddress**.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Fltkernel.h (include Fltkernel.h)</td>
-</tr>
-</tbody>
-</table>
+IRP_MJ_READ can be an IRP-based operation or a fast I/O operation.
+
+## Requirements
+
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)
+[**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block)
+[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/index)
 
-[**FLT\_IS\_FASTIO\_OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[**FLT_IS_FS_FILTER_OPERATION**](/previous-versions/ff544648(v=vs.85))
 
-[**FLT\_IS\_FS\_FILTER\_OPERATION**](https://docs.microsoft.com/previous-versions/ff544648(v=vs.85))
+[**FLT_IS_IRP_OPERATION**](/previous-versions/ff544654(v=vs.85))
 
-[**FLT\_IS\_IRP\_OPERATION**](https://docs.microsoft.com/previous-versions/ff544654(v=vs.85))
+[**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 
-[**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters)
+[**FltReadFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreadfile)
 
-[**FltReadFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreadfile)
+[**IRP_MJ_READ**](irp-mj-read.md)
 
-[**IRP\_MJ\_READ**](irp-mj-read.md)
-
-[**ZwReadFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntreadfile)
-
- 
-
- 
-
-
-
-
-
-
+[**ZwReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile)

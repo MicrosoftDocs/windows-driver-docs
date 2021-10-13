@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_NOISE\_SUPPRESS
 description: KSNODETYPE\_NOISE\_SUPPRESS
-ms.assetid: 416504e2-38eb-4cfd-ae20-6f1f44a82abd
 keywords: ["KSNODETYPE_NOISE_SUPPRESS Audio Devices"]
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ The KSNODETYPE\_NOISE\_SUPPRESS node represents a noise-suppression (NS) control
 
 When a filter containing an NS node is created or the node is reset, the node is initially configured to operate in pass-through mode.
 
-An NS node can be incorporated into an AEC (acoustic echo cancellation) filter to support full-duplex DirectSound applications. For more information, see [DirectSound Capture Effects](https://docs.microsoft.com/windows-hardware/drivers/audio/directsound-capture-effects).
+An NS node can be incorporated into an AEC (acoustic echo cancellation) filter to support full-duplex DirectSound applications. For more information, see [DirectSound Capture Effects](./directsound-capture-effects.md).
 
 A KSNODETYPE\_NOISE\_SUPPRESS node in an AEC filter should support the following properties in order to enable hardware acceleration:
 
@@ -38,10 +37,4 @@ A KSNODETYPE\_NOISE\_SUPPRESS node in an AEC filter should support the following
 The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to both enable and disable the node. When disabled, the node operates in pass-through mode (that is, it allows the input stream to pass through to the output without modification).
 
  
-
- 
-
-
-
-
 

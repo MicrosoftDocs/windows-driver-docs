@@ -1,7 +1,6 @@
 ---
 title: usbkd.usblist
 description: The usbkd.usblist command displays a linked list of structures of a specified type.
-ms.assetid: 503466EE-2246-4CE3-BCE7-6DC7D42DB86A
 keywords: ["usbkd.usblist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,8 +53,7 @@ One of the following list types.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a linked list. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -68,7 +66,7 @@ Here is one way to find the address of a linked list. First enter [**!usbkd.usb2
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!ehci\_info ffffe00001ca11a0**.
 
-Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdext).
+Either click the DML command or pass the address of the device extension to [**!usbhcdext**](-usbkd-usbhcdext.md).
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001ca11a0
@@ -107,14 +105,7 @@ DriverName :\Driver\USBSTOR      !devstack ffffe000053ef2a0
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

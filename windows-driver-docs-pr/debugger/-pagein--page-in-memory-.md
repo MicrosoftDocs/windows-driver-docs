@@ -1,7 +1,6 @@
 ---
 title: .pagein (Page In Memory)
 description: The .pagein command pages in the specified region of memory.
-ms.assetid: 5fb8f9d2-d07a-49c3-b844-aade9bdba367
 keywords: ["Page In Memory (.pagein) command", "memory, Page In Memory (.pagein) command", ".pagein (Page In Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,8 +61,7 @@ Specifies the address to page in.
 
  
 
-Remarks
--------
+## Remarks
 
 After you run the **.pagein** command, you must use the [**g (Go)**](g--go-.md) command to resume program execution. After a brief time, the target computer automatically breaks into the debugger again.
 
@@ -77,8 +75,7 @@ In Windows Server 2003 and Windows XP, you can page in only user-mode addresses 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

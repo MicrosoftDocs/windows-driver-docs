@@ -1,7 +1,6 @@
 ---
 title: Tools for Signing Drivers
 description: Tools for Signing Drivers
-ms.assetid: 2654388d-b39e-4009-bcba-56b318fd5119
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Tools for Signing Drivers
 
 
-The Microsoft Windows Driver Kit (WDK) includes the following tools that you can use to create a code-signing certificate, to sign the [catalog file](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files) of a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages), and to embed a signature in a driver file:
+The Microsoft Windows Driver Kit (WDK) includes the following tools that you can use to create a code-signing certificate, to sign the [catalog file](../install/catalog-files.md) of a [driver package](../install/driver-packages.md), and to embed a signature in a driver file:
 
 [**CertMgr**](certmgr.md)
 
@@ -35,15 +34,9 @@ These tools are located in the following directories:
 
 The Microsoft Windows SDK includes information about the services, components, and tools that enable you to add cryptographic security to your applications. This includes the [**CertMgr**](certmgr.md), [**MakeCert**](makecert.md), and [**SignTool**](signtool.md) tools.
 
-For more information on signing drivers and [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages), see [Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/install/driver-signing).
+For more information on signing drivers and [driver packages](../install/driver-packages.md), see [Driver Signing](../install/driver-signing.md).
 
-For information on test-signing a driver package, see [Signing Drivers during Development and Test](https://docs.microsoft.com/windows-hardware/drivers/install/signing-drivers-during-development-and-test).
-
- 
+For information on test-signing a driver package, see [Signing Drivers during Development and Test](../install/introduction-to-test-signing.md).
 
  
-
-
-
-
 

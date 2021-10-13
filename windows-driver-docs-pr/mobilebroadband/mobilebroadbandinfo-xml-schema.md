@@ -1,14 +1,13 @@
 ---
 title: MobileBroadbandInfo XML schema overview
 description: MobileBroadbandInfo XML schema overview
-ms.assetid: fdbc340c-8fed-4a25-96c4-ec185af04de9
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
 # MobileBroadbandInfo XML schema overview
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 A service metadata package contains one MobileBroadbandInfo.xml document, which contains information that is specific to mobile broadband networks.
 

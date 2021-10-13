@@ -1,7 +1,6 @@
 ---
 title: Managing Multiple-Head Memory
 description: Managing Multiple-Head Memory
-ms.assetid: 37cda124-0c3b-4af4-92b8-329440dd3221
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , memory management
 ms.date: 04/20/2017
@@ -14,11 +13,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_managing_multiple_head_memory_gg"></span><span id="DDK_MANAGING_MULTIPLE_HEAD_MEMORY_GG"></span>
 
 
-Setting the DDSCAPS2\_ADDITIONALPRIMARY capability bit in the **dwCaps2** member of the [**DDSCAPS2**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for each surface on the subordinate head notifies that head that these surfaces are the last surfaces that are allocated from the video memory assigned to that head. The subordinate head should then relinquish control of the allocation of its video memory to the master head because the subordinate head is guaranteed that it does not receive subsequent [*DdCreateSurface*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)) calls for the lifetime of the application.
+Setting the DDSCAPS2\_ADDITIONALPRIMARY capability bit in the **dwCaps2** member of the [**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for each surface on the subordinate head notifies that head that these surfaces are the last surfaces that are allocated from the video memory assigned to that head. The subordinate head should then relinquish control of the allocation of its video memory to the master head because the subordinate head is guaranteed that it does not receive subsequent [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)) calls for the lifetime of the application.
 
 The driver must ensure that the master head is able to allocate memory that is associated with subordinate heads.
 
-When the runtime calls the driver's [*DdDestroySurface*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) function to destroy surfaces on the subordinate head in which the DDSCAPS2\_ADDITIONALPRIMARY capability bit is set, the driver is notified that the subordinate head is again in control of its video memory management.
+When the runtime calls the driver's [*DdDestroySurface*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) function to destroy surfaces on the subordinate head in which the DDSCAPS2\_ADDITIONALPRIMARY capability bit is set, the driver is notified that the subordinate head is again in control of its video memory management.
 
 For the most part, this choice of which head owns video memory is inherent in the existing DirectDraw process. Specifically:
 
@@ -33,10 +32,4 @@ For the most part, this choice of which head owns video memory is inherent in th
 -   Finally, note that the runtime guarantees that all heads in the group participate in the multiple-head scenario. Therefore, the driver must only maintain one bit of state indicating whether it is currently in multiple-head mode.
 
  
-
- 
-
-
-
-
 

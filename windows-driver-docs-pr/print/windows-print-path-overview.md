@@ -1,7 +1,6 @@
 ---
 title: Windows Print Path Overview
 description: Windows Print Path Overview
-ms.assetid: c06e122b-a4d8-4b3a-9db0-0bc8f2728177
 keywords:
 - XPSDrv printer drivers WDK , print paths
 - print paths WDK XPSDrv
@@ -29,7 +28,7 @@ The two conversion options are:
 
 The following illustration shows the different print path and conversion options of the XPSDrv subsystem.
 
-![diagram illustrating the different print-path and conversion options of the xpsdrv subsystem](images/printpathoverview.png)
+![diagram illustrating the different print-path and conversion options of the xpsdrv subsystem.](images/printpathoverview.png)
 
 For more information about configuring the filter pipeline service, see [Filter Pipeline Configuration File](filter-pipeline-configuration-file.md).
 

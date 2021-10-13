@@ -1,7 +1,6 @@
 ---
 title: NDIS 6.20 Updates to NDIS 6.1 Features
 description: NDIS 6.20 Updates to NDIS 6.1 Features
-ms.assetid: b57af71b-2718-4a52-888b-b378b3e6097f
 keywords:
 - NDIS 6.20 WDK , updates to NDIS 6.1 features
 ms.date: 04/20/2017
@@ -30,15 +29,9 @@ NDIS 6.1 also includes updates to support MSI-X dynamic configuration for receiv
 
 The [direct OID request interface](direct-oid-request-interface-in-ndis-6-1.md) is optional for NDIS 6.1 drivers but it is mandatory for NDIS 6.20 miniport drivers.
 
-After NDIS 6.20 [IPsec task offload version 1](ipsec-offload-version-1.md) will not be supported. All drivers that support IPsec task offload should be updated to support [IPsec task offload version 2](ipsec-offload-version-2.md).
+After NDIS 6.20 [IPsec task offload version 1](background-reading-on-ipsec.md) will not be supported. All drivers that support IPsec task offload should be updated to support [IPsec task offload version 2](./introduction-to-ipsec-offload-version-2.md).
 
 NetDMA 1.1 and 2.0 were introduced with NDIS 6.1. NetDMA 2.1 is introduced with NDIS 6.20 to provide support for more than 64 processors.
 
  
-
- 
-
-
-
-
 

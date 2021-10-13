@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xCB DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS
 description: The DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS bug check has a value of 0x000000CB. This indicates that a driver or the I/O manager failed to release locked pages after an I/O operation.
-ms.assetid: e97d114e-c6f1-44f1-a2ad-bfa8d03dc3c7
 keywords: ["Bug Check 0xCB DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS", "DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS"]
 ms.date: 05/23/2017
 topic_type:
@@ -99,8 +98,7 @@ If the I/O manager locked these pages, the parameters have the following meaning
 
  
 
-Remarks
--------
+## Remarks
 
 This bug check is issued only if the registry value **\\\\HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management\\TrackLockedPages** is equal to DWORD 1. If this value is not set, the system will issue the less-informative [**bug check 0x76**](bug-check-0x76--process-has-locked-pages.md) (PROCESS\_HAS\_LOCKED\_PAGES).
 

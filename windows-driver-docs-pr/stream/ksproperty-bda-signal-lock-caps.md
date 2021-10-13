@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lock types that the driver can support for a signal.
-ms.assetid: 753f1a3c-5308-49a6-96ee-f7d0090f021a
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCK_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -45,24 +44,22 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lock types that
 <td><p>No</p></td>
 <td><p>Pin or Filter</p></td>
 <td><p>KSP_NODE</p></td>
-<td><p>A 32-bit value that contains a bitwise OR of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdamedia/ne-bdamedia-_bdalocktype" data-raw-source="[&lt;strong&gt;BDA_LockType&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdamedia/ne-bdamedia-_bdalocktype)"><strong>BDA_LockType</strong></a>-typed values</p></td>
+<td><p>A 32-bit value that contains a bitwise OR of <a href="/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype" data-raw-source="[&lt;strong&gt;BDA_LockType&lt;/strong&gt;](/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)"><strong>BDA_LockType</strong></a>-typed values</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
-The returned 32-bit value is a bitwise OR of [**BDA\_LockType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdamedia/ne-bdamedia-_bdalocktype)-typed values that indicates the lock types that the driver supports.
+The returned 32-bit value is a bitwise OR of [**BDA\_LockType**](/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)-typed values that indicates the lock types that the driver supports.
 
 The RF tuner node should provide this indication.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,18 +77,9 @@ Requirements
 ## See also
 
 
-[**BDA\_LockType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdamedia/ne-bdamedia-_bdalocktype)
+[**BDA\_LockType**](/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE**](ksproperty-bda-signal-lock-type.md)
-
- 
-
- 
-
-
-
-
-
 

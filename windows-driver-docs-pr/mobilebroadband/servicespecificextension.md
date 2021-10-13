@@ -1,14 +1,13 @@
 ---
 title: ServiceSpecificExtension
 description: ServiceSpecificExtension
-ms.assetid: 49c8e902-d943-4884-96e4-c5472a82b568
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ServiceSpecificExtension
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ServiceSpecificExtension element specifies the relative location of the MobileBroadbandInfo.xml file.
 

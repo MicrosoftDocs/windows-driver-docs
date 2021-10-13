@@ -1,7 +1,6 @@
 ---
 title: SINCOS Instruction Format
 description: SINCOS Instruction Format
-ms.assetid: df9b51ef-5a9f-4222-a0be-a40d5b577f9a
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ The SINCOS instruction computes sine and cosine, in radians. The X component of 
 
 [instruction token](instruction-token.md) that contains D3DSIO\_SINCOS. Instruction length is 4.
 
-[destination parameter token](destination-parameter-token.md) using the D3DSPR\_TEMP [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+[destination parameter token](destination-parameter-token.md) using the D3DSPR\_TEMP [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 first [source parameter token](source-parameter-token.md). Requires explicit use of replicate swizzle, that is, the X, Y, Z, or W swizzle component (or the R, G, B, or A equivalent) must be specified.
 
@@ -126,10 +125,4 @@ mad r0.x, r0.x, c0.z, -c0.x
 Available in Windows Vista and later versions of the Windows operating systems.
 
  
-
- 
-
-
-
-
 

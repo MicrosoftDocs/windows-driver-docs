@@ -1,5 +1,5 @@
 ---
-Description: This section provides guidance concerning the careful management of USB bandwidth.
+description: This section provides guidance concerning the careful management of USB bandwidth.
 title: USB Bandwidth Allocation
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -75,7 +75,7 @@ The *maximum transfer size* specifies hard-coded limits in the USB driver stack.
 
 > **Note**  
 >
-> In Windows XP, Windows Server 2003, and later versions, **MaximumTransferSize** member of the [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_usbd_pipe_information) structure is obsolete. The USB driver stack ignores the value in **MaximumTransferSize** for both composite and non-composite devices.
+> In Windows XP, Windows Server 2003, and later versions, **MaximumTransferSize** member of the [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structure is obsolete. The USB driver stack ignores the value in **MaximumTransferSize** for both composite and non-composite devices.
 >
 > In Windows 2000, the USB driver stack initializes **MaximumTransferSize** to USBD\_DEFAULT\_MAXIMUM\_TRANSFER\_SIZE. A client driver can set a smaller value while configuring the device. For a composite device, the client driver for each function can only change **MaximumTransferSize** for pipes in the non-default interface setting.
 
@@ -134,7 +134,7 @@ USB transfer sizes are subject to the following limits:
 </tr>
 <tr class="even">
 <td>Isochronous</td>
-<td><p>1024<em><strong>wBytesPerInterval</strong> (see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor" data-raw-source="[&lt;strong&gt;USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor)"><strong>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</strong></a>) for SuperSpeed (xHCI)</p>
+<td><p>1024<em><strong>wBytesPerInterval</strong> (see <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor" data-raw-source="[&lt;strong&gt;USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor)"><strong>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</strong></a>) for SuperSpeed (xHCI)</p>
 <p>1024</em> <strong>MaximumPacketSize</strong> for high speed (xHCI, EHCI)</p>
 <p>256 * <strong>MaximumPacketSize</strong> for full speed (xHCI, EHCI)</p>
 <p>64K for full speed (UHCI, OHCI)</p></td>
@@ -151,17 +151,17 @@ USB transfer sizes are subject to the following limits:
 
  
 
-Restricting the transfer size with **MaximumTransferSize** does not directly affect how much bandwidth a device consumes. The client driver must either change the interface setting or restrict the maximum packet size set in the **MaximumPacketSize** member of [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_usbd_pipe_information).
+Restricting the transfer size with **MaximumTransferSize** does not directly affect how much bandwidth a device consumes. The client driver must either change the interface setting or restrict the maximum packet size set in the **MaximumPacketSize** member of [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information).
 
 ### Maximum packet size
 
 
 The *maximum packet size* is defined by the **wMaxPacketSize** field of the endpoint descriptor. A client driver can regulate the USB packet size in a select-interface request to the device. Changing this value does not change the **wMaxPacketSize** on the device.
 
-In the [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb) for the request is a [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_usbd_pipe_information) structure for the pipe. In that structure,
+In the [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) for the request is a [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structure for the pipe. In that structure,
 
--   Modify the **MaximumPacketSize** member of the [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_usbd_pipe_information) structure. Set it to a value less than or equal to the value of **wMaxPacketSize** defined in device firmware for the current interface setting.
--   Set the USBD\_PF\_CHANGE\_MAX\_PACKET flag in the **PipeFlags** member [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_usbd_pipe_information) structure.
+-   Modify the **MaximumPacketSize** member of the [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structure. Set it to a value less than or equal to the value of **wMaxPacketSize** defined in device firmware for the current interface setting.
+-   Set the USBD\_PF\_CHANGE\_MAX\_PACKET flag in the **PipeFlags** member [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structure.
 
 For information about selecting an interface setting, see [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md).
 
@@ -172,7 +172,7 @@ When a client driver makes a read request, the transfer buffer must be a multipl
 
 **Note**  
 
-On older controllers, the client driver can override the behavior. In the **TransferFlags** member of the data transfer [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb), the client driver must set the USBD\_SHORT\_TRANSFER\_OK flag. That flag permits the device to send packets smaller than **wMaxPacketSize**.
+On older controllers, the client driver can override the behavior. In the **TransferFlags** member of the data transfer [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb), the client driver must set the USBD\_SHORT\_TRANSFER\_OK flag. That flag permits the device to send packets smaller than **wMaxPacketSize**.
 
 On xHCI host controllers, USBD\_SHORT\_TRANSFER\_OK ignored for bulk and interrupt endpoints. Transfer of short packets on EHCI controllers does not result in an error condition.
 
@@ -196,10 +196,3 @@ Delimiting the data transmission with zero-length packets, as required by the US
 Compliant USB 2.0/1.1 drivers must transmit packets of maximum size (*wMaxPacketSize*) and then either end the transmission by means of a packet of less than maximum size, or delimit the end of the transmission by means of a zero-length packet. The transmission is not complete until the driver sends a packet smaller than *wMaxPacketSize*. If the transfer size is an exact multiple of the maximum, the driver must send a zero-length delimiting packet to explicitly terminate the transfer
 
 Delimiting the data transmission with zero-length packets, as required by the USB specification, is the responsibility of the device driver. The system USB stack will not generate these packets automatically.
-
-
- 
-
-
-
-

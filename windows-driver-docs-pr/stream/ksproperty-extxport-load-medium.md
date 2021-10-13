@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM
 description: The KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM property sets or gets an external device's load medium. For example eject, open tray, close tray, etc.
-ms.assetid: 13ec61ae-4be7-4af6-875f-a6ca178cf6bc
 keywords: ["KSPROPERTY_EXTXPORT_LOAD_MEDIUM Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM property sets or gets an external device'
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Device</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -57,13 +56,11 @@ The KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM property sets or gets an external device'
 
 The property value (operation data) is a ULONG that specifies the current load medium. For example eject, open tray or closed tray.
 
-Remarks
--------
+## Remarks
 
 The **LoadMedium** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the load medium.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_EXTXPORT\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_EXTXPORT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
 

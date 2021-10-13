@@ -1,7 +1,6 @@
 ---
 title: WDI information collection for bugs
 description: Bugs in any non-trivial software are inevitable.
-ms.assetid: 551CA7DD-EB1A-41FB-A3D7-472DA7020B51
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ When an operating system crash occurs, a memory dump file is generated at %windi
 ## OS crash with kernel debugger attached
 
 
-Developers or QA should have kernel debuggers attached if possible. A kernel debugger can quickly tell what is wrong and which direction to investigate further. The kd command '[**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) –v' is useful as the first command to run after a bug check. This command points to the location inside a module where the crash occurred and the reason (bug check code) for the crash.
+Developers or QA should have kernel debuggers attached if possible. A kernel debugger can quickly tell what is wrong and which direction to investigate further. The kd command '[**!analyze**](../debugger/-analyze.md) –v' is useful as the first command to run after a bug check. This command points to the location inside a module where the crash occurred and the reason (bug check code) for the crash.
 
 ## When Reset Recovery is invoked
 
@@ -53,7 +52,7 @@ ActiveWdiCommand may be 0 (no active command) if the trigger type is RESET\_RECO
 
 This screenshot is an example view of eventvwr showing system.evtx. The trigger type is 3 and there is no active command.
 
-![wdi event log screenshot](images/wdi-event-log-screenshot.png)
+![wdi event log screenshot.](images/wdi-event-log-screenshot.png)
 
 ## When Wi-Fi malfunctions
 
@@ -72,10 +71,4 @@ Powercfg /SleepStudy
 A report file named SleepStudy-report.html is generated. It should be opened outside %windiir%\\system. The report breaks down what modules are keeping the system out of very low power state (DRIPS). It can also further break down which components are keeping the Wi-Fi NIC up (out of Dx).
 
  
-
- 
-
-
-
-
 

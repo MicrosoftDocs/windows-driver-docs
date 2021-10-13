@@ -1,7 +1,6 @@
 ---
-title: net_send
+title: net_send (WinDbg)
 description: The net_send extension sends a message over a local network.
-ms.assetid: 13d5fe3f-6477-4610-8928-020726ccb3c8
 keywords: ["network messages", "net_send Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

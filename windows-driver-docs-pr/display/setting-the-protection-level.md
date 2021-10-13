@@ -1,7 +1,6 @@
 ---
 title: Setting the Protection Level
 description: Setting the Protection Level
-ms.assetid: e0fecc58-59d9-470a-83e6-9b08e2f59169
 keywords:
 - copy protection WDK COPP , protection levels
 - video copy protection WDK COPP , protection levels
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 
-The COPP command can set the protection level of a protection type on the physical connector associated with the DirectX VA COPP device. To set the protection level, the video miniport driver's [*COPPCommand*](https://docs.microsoft.com/windows-hardware/drivers/display/coppcommand) function receives a pointer to a [**DXVA\_COPPCommand**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_coppcommand) structure with the **guidCommandID** member set to the DXVA\_COPPSetProtectionLevel GUID and the **CommandData** member set to a pointer to a [**DXVA\_COPPSetProtectionLevelCmdData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_coppsetprotectionlevelcmddata) structure that specifies the type of protection to set and the level at which to set the protection. If a protection level is not available for the protection type, the COPP command sets the protection level to COPP\_NoProtectionLevelAvailable (-1). The COPP command might also specify some extended information in the **ExtendedInfoChangeMask** and **ExtendedInfoData** members of DXVA\_COPPSetProtectionLevelCmdData for the video miniport driver to set for the protection type.
+The COPP command can set the protection level of a protection type on the physical connector associated with the DirectX VA COPP device. To set the protection level, the video miniport driver's [*COPPCommand*](./coppcommand.md) function receives a pointer to a [**DXVA\_COPPCommand**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppcommand) structure with the **guidCommandID** member set to the DXVA\_COPPSetProtectionLevel GUID and the **CommandData** member set to a pointer to a [**DXVA\_COPPSetProtectionLevelCmdData**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppsetprotectionlevelcmddata) structure that specifies the type of protection to set and the level at which to set the protection. If a protection level is not available for the protection type, the COPP command sets the protection level to COPP\_NoProtectionLevelAvailable (-1). The COPP command might also specify some extended information in the **ExtendedInfoChangeMask** and **ExtendedInfoData** members of DXVA\_COPPSetProtectionLevelCmdData for the video miniport driver to set for the protection type.
 
 The following protection levels can be set for the indicated protection types:
 
@@ -44,10 +43,4 @@ The following protection levels can be set for the indicated protection types:
     -   COPP\_HDCP\_Level1 or COPP\_HDCP\_LevelMax (1)
 
  
-
- 
-
-
-
-
 

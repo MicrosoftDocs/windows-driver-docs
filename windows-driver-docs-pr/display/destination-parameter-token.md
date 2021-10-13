@@ -1,7 +1,6 @@
 ---
 title: Destination Parameter Token
 description: Destination Parameter Token
-ms.assetid: 1a9842c5-0ea9-47ee-a341-77e705ab5e25
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ A destination parameter token describes properties of a destination register and
 Bits 0 through 10 indicate the register number (offset in register file).
 
 <span id="_12_11_"></span>**\[12:11\]**
-Bits 11 and 12 are the fourth and fifth bits \[3,4\] for indicating the [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+Bits 11 and 12 are the fourth and fifth bits \[3,4\] for indicating the [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 <span id="_13_"></span>**\[13\]**
 For vertex shader (VS) version 3\_0 and later, bit 13 indicates whether relative addressing mode is used. If set to 1, [relative addressing](shader-relative-addressing.md) applies.
@@ -102,14 +101,14 @@ Bits 20 through 23 indicate the result modifier. Multiple result modifiers can b
 For PS versions earlier than 2\_0, bits 24 through 27 specify the result shift scale (signed shift).
 For PS version 2\_0 and later and VS, these bits are reserved and set to 0x0.
 <span id="_30_28_"></span>**\[30:28\]**
-Bits 28 through 30 are the first three bits \[0,1,2\] for indicating the [register type](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+Bits 28 through 30 are the first three bits \[0,1,2\] for indicating the [register type](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 <span id="_31_"></span>**\[31\]**
 Bit 31 is 0x1.
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type. For information about register types, see [Shader Register Types](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type. For information about register types, see [Shader Register Types](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -117,10 +116,4 @@ Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type.
 Available in Windows Vista and later versions of the Windows operating systems.
 
  
-
- 
-
-
-
-
 

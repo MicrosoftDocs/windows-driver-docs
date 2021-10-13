@@ -1,7 +1,6 @@
 ---
 title: Attaching the WSK Client to the WSK Subsystem
 description: Attaching the WSK Client to the WSK Subsystem
-ms.assetid: 752d204f-3022-48b0-9237-707b753a7ad3
 keywords:
 - Network Module Registrar WDK Winsock Kernel
 - NMR WDK Winsock Kernel
@@ -13,17 +12,17 @@ ms.localizationpriority: medium
 # Attaching the WSK Client to the WSK Subsystem
 
 
-After a Winsock Kernel (WSK) application has registered with the [Network Module Registrar (NMR)](network-module-registrar2.md) as a client of the WSK NPI, the NMR immediately calls the application's [*ClientAttachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function if the WSK subsystem is loaded and has registered itself with the NMR. If the WSK subsystem is not registered with the NMR, the NMR does not call the application's *ClientAttachProvider* callback function until the WSK subsystem registers with the NMR.
+After a Winsock Kernel (WSK) application has registered with the [Network Module Registrar (NMR)](network-module-registrar2.md) as a client of the WSK NPI, the NMR immediately calls the application's [*ClientAttachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_attach_provider_fn) callback function if the WSK subsystem is loaded and has registered itself with the NMR. If the WSK subsystem is not registered with the NMR, the NMR does not call the application's *ClientAttachProvider* callback function until the WSK subsystem registers with the NMR.
 
 The WSK application should make the following sequence of calls to complete the attachment procedure.
 
-1.  When the NMR calls the WSK application's *ClientAttachProvider* callback function, it passes a pointer to the [**NPI\_REGISTRATION\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/ns-netioddk-_npi_registration_instance) structure associated with the WSK subsystem. The WSK application's *ClientAttachProvider* callback function can use the data passed to it by the NMR to determine if it can attach to the WSK subsystem. Typically, a WSK application only needs the version information contained within a [**WSK\_PROVIDER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_provider_characteristics) structure that is pointed to by the **NpiSpecificCharacteristics** member of the WSK subsystem's NPI\_REGISTRATION\_INSTANCE structure.
+1.  When the NMR calls the WSK application's *ClientAttachProvider* callback function, it passes a pointer to the [**NPI\_REGISTRATION\_INSTANCE**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance) structure associated with the WSK subsystem. The WSK application's *ClientAttachProvider* callback function can use the data passed to it by the NMR to determine if it can attach to the WSK subsystem. Typically, a WSK application only needs the version information contained within a [**WSK\_PROVIDER\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_characteristics) structure that is pointed to by the **NpiSpecificCharacteristics** member of the WSK subsystem's NPI\_REGISTRATION\_INSTANCE structure.
 
-2.  If the WSK application determines that it can attach to the WSK subsystem, the WSK application's *ClientAttachProvider* callback function allocates and initializes a binding context structure for the attachment to the WSK subsystem. The application then calls the [**NmrClientAttachProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrclientattachprovider) function to continue the attachment process.
+2.  If the WSK application determines that it can attach to the WSK subsystem, the WSK application's *ClientAttachProvider* callback function allocates and initializes a binding context structure for the attachment to the WSK subsystem. The application then calls the [**NmrClientAttachProvider**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrclientattachprovider) function to continue the attachment process.
 
-    If **NmrClientAttachProvider** returns STATUS\_SUCCESS, the WSK application has successfully attached to the WSK subsystem. In this situation, the WSK application's *ClientAttachProvider* callback function must save the binding handle that the NMR passed in the *NmrBindingHandle* parameter when the NMR called the application's *ClientAttachProvider* callback function. The WSK application's *ClientAttachProvider* callback function must also save the pointers to the client object ( [**WSK\_CLIENT**](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-client)) and the provider dispatch table ( [**WSK\_PROVIDER\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_provider_dispatch)) that are returned in the variables that the application passed to the **NmrClientAttachProvider** function in the *ProviderBindingContext* and *ProviderDispatch* parameters. A WSK application typically saves this data in its binding context for the attachment to the WSK subsystem. After the WSK application has successfully attached to the WSK subsystem, the WSK application's *ClientAttachProvider* callback function must return STATUS\_SUCCESS.
+    If **NmrClientAttachProvider** returns STATUS\_SUCCESS, the WSK application has successfully attached to the WSK subsystem. In this situation, the WSK application's *ClientAttachProvider* callback function must save the binding handle that the NMR passed in the *NmrBindingHandle* parameter when the NMR called the application's *ClientAttachProvider* callback function. The WSK application's *ClientAttachProvider* callback function must also save the pointers to the client object ( [**WSK\_CLIENT**](./wsk-client.md)) and the provider dispatch table ( [**WSK\_PROVIDER\_DISPATCH**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch)) that are returned in the variables that the application passed to the **NmrClientAttachProvider** function in the *ProviderBindingContext* and *ProviderDispatch* parameters. A WSK application typically saves this data in its binding context for the attachment to the WSK subsystem. After the WSK application has successfully attached to the WSK subsystem, the WSK application's *ClientAttachProvider* callback function must return STATUS\_SUCCESS.
 
-3.  If **NmrClientAttachProvider** returns STATUS\_NOINTERFACE, the WSK application can make another attempt to attach to the WSK subsystem by calling the **NmrClientAttachProvider** function again, passing a *ClientDispatch* pointer to a different [**WSK\_CLIENT\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_client_dispatch) structure that specifies an alternate version of the WSK NPI that is supported by the application.
+3.  If **NmrClientAttachProvider** returns STATUS\_NOINTERFACE, the WSK application can make another attempt to attach to the WSK subsystem by calling the **NmrClientAttachProvider** function again, passing a *ClientDispatch* pointer to a different [**WSK\_CLIENT\_DISPATCH**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_dispatch) structure that specifies an alternate version of the WSK NPI that is supported by the application.
 
 4.  If a call to the **NmrClientAttachProvider** function does not return STATUS\_SUCCESS, and the WSK application does not make any further attempts to attach to the WSK subsystem, the WSK application's *ClientAttachProvider* callback function should clean up and deallocate any resources that it allocated before it called **NmrClientAttachProvider**. In this situation, the WSK application's *ClientAttachProvider* callback function must return the status code that was returned by the last call to the **NmrClientAttachProvider** function.
 
@@ -143,10 +142,4 @@ NTSTATUS
 ```
 
  
-
- 
-
-
-
-
 

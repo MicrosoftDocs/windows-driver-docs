@@ -1,7 +1,6 @@
 ---
-title: dblink
+title: dblink (WinDbg)
 description: The dblink extension displays a linked list in the backward direction.
-ms.assetid: d57b07a6-217b-475e-adf5-7dc0f972c494
 keywords: ["dblink Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,8 +54,7 @@ Specifies a mask of bits to ignore in each pointer. Each **Blink** address is AN
 
  
 
-Remarks
--------
+## Remarks
 
 The **!dblink** extension traverses the **Blink** fields of the LIST\_ENTRY structure and displays up to four ULONGs at each address. To go in the other direction, use [**!dflink**](-dflink.md).
 

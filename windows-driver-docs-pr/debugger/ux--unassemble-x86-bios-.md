@@ -1,7 +1,6 @@
 ---
 title: ux (Unassemble x86 BIOS)
 description: The ux command displays the instruction set of the x86-based BIOS code.
-ms.assetid: d3616255-1a07-4a5d-8171-c8316179a7dc
 keywords: ["ux (Unassemble x86 BIOS) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,8 +54,7 @@ Specifies the memory offset within the x86-based BIOS code. If you omit this par
 
 For more information about how to debug BIOS code, see [Debugging BIOS Code](debugging-bios-code.md).
 
-Remarks
--------
+## Remarks
 
 The debugger displays the instructions that are generated from the first eight lines of code, beginning at the *Address* offset.
 

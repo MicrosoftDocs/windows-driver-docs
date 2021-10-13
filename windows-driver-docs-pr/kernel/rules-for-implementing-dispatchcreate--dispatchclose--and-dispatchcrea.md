@@ -1,7 +1,6 @@
 ---
 title: Rules for Implementing DispatchCreate, DispatchClose, and DispatchCreateClose Routines
 description: Rules for Implementing DispatchCreate, DispatchClose, and DispatchCreateClose Routines
-ms.assetid: 4ce37675-92a6-41c2-b386-6570c989e56c
 keywords: ["dispatch routines WDK kernel , DispatchCreate routine", "dispatch routines WDK kernel , DispatchClose routine", "dispatch routines WDK kernel , DispatchCreateClose routine", "DispatchCreateClose routine", "DispatchClose routine", "DispatchCreate routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

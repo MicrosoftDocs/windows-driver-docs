@@ -1,7 +1,6 @@
 ---
 title: Enumerator Template Data Type
 description: Enumerator Template Data Type
-ms.assetid: deb95ca1-05a5-47f4-8e2a-1d1aa1ae2261
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , primitive

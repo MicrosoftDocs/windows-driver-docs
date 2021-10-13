@@ -1,7 +1,6 @@
 ---
 title: Brightness element
 description: The optional Brightness element specifies the relative amount to reduce or enhance the brightness of the scanned document.
-ms.assetid: 15b1b9a1-4735-4a25-837e-8fd9e9ecf88d
 keywords: ["Brightness element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Brightness** element specifies the relative amount to reduce or enhance the brightness of the scanned document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Brightness wscn:Override="" wscn:UsedDefault=""
@@ -29,8 +27,7 @@ Usage
 </wscn:Brightness wscn:Override="" wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -65,8 +62,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 The Brightness value must lie in the range from -1000 through 1000, inclusive.**Brightness**
 
@@ -94,8 +90,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **Brightness** element indicates the relative amount to reduce or enhance the brightness of the scanned document. A value of 0 indicates that the WSD Scan Service should make no adjustments to the scanned brightness.
 

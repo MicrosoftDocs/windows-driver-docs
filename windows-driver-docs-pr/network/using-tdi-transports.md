@@ -1,7 +1,6 @@
 ---
 title: Using TDI Transports
 description: Using TDI Transports
-ms.assetid: 58fb5e62-e15d-4f15-8eb3-3e302ea08c4f
 keywords:
 - TDI transports WDK Winsock Kernel
 ms.date: 04/20/2017
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # Using TDI Transports
 
 
-The Winsock Kernel (WSK) subsystem provides support for using [TDI](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565094(v=vs.85)) transports. In order to use TDI transports via the WSK [Network Programming Interface (NPI)](network-programming-interface.md), a WSK application must map the combination of address family, socket type, and protocol for each of the TDI transports it uses to the associated device name of each of those TDI transports. A WSK application maps combinations of address family, socket type, and protocol to device names of TDI transports by using the [**WSK\_TDI\_DEVICENAME\_MAPPING**](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-tdi-devicename-mapping) client control operation.
+The Winsock Kernel (WSK) subsystem provides support for using [TDI](/previous-versions/windows/hardware/network/ff565094(v=vs.85)) transports. In order to use TDI transports via the WSK [Network Programming Interface (NPI)](network-programming-interface.md), a WSK application must map the combination of address family, socket type, and protocol for each of the TDI transports it uses to the associated device name of each of those TDI transports. A WSK application maps combinations of address family, socket type, and protocol to device names of TDI transports by using the [**WSK\_TDI\_DEVICENAME\_MAPPING**](./wsk-tdi-devicename-mapping.md) client control operation.
 
 The following code example shows how a WSK application can map combinations of address family, socket type, and protocol to device names of TDI transports.
 
@@ -63,15 +62,9 @@ NTSTATUS
 
 A WSK application must map combinations of address family, socket type, and protocol to device names of TDI transports before it creates any sockets. After the WSK application has successfully mapped the combinations of address family, socket type, and protocol to device names of TDI transports, the application can then create new sockets that use the mapped TDI transports.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](/windows-hardware/drivers/ddi/_netvista/) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 
  
-
- 
-
-
-
-
 

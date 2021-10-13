@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for the Halftone Feature
 description: Option Attributes for the Halftone Feature
-ms.assetid: a188908a-ddf7-4b4d-a46d-e3550ffb0418
 keywords:
 - Halftone Feature
 ms.date: 04/20/2017
@@ -32,7 +31,7 @@ The following table lists the attributes associated with the Halftone feature. F
 <tbody>
 <tr class="odd">
 <td><p><em><strong>HTCallbackID</strong></p></td>
-<td><p>Positive numeric value passed to the rendering plug-in's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern" data-raw-source="[&lt;strong&gt;IPrintOemUni::HalftonePattern&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern)"><strong>IPrintOemUni::HalftonePattern</strong></a> method as its <em>dwCallbackID</em> parameter.</p></td>
+<td><p>Positive numeric value passed to the rendering plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern" data-raw-source="[&lt;strong&gt;IPrintOemUni::HalftonePattern&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern)"><strong>IPrintOemUni::HalftonePattern</strong></a> method as its <em>dwCallbackID</em> parameter.</p></td>
 <td><p>Required if an <strong>IPrintOemUni::HalftonePattern</strong> method is provided. See <a href="halftoning-with-unidrv.md" data-raw-source="[Halftoning with Unidrv](halftoning-with-unidrv.md)">Halftoning with Unidrv</a>.</p></td>
 </tr>
 <tr class="even">
@@ -59,11 +58,4 @@ The following table lists the attributes associated with the Halftone feature. F
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
 For more information about using these attributes, see [Halftoning with Unidrv](halftoning-with-unidrv.md). These attributes are not used with [minidriver-supplied halftoning](minidriver-supplied-halftoning.md).
-
- 
-
- 
-
-
-
 

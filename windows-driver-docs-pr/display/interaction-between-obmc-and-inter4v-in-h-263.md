@@ -1,7 +1,6 @@
 ---
 title: Interaction Between OBMC and INTER4V in H.263
 description: Interaction Between OBMC and INTER4V in H.263
-ms.assetid: 096c723d-ec16-49f7-acaa-62ed228338c3
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017
@@ -44,13 +43,7 @@ The **wPatternCode** structure member indicates whether residual difference data
 
 Bit (11- *i*) of **wPatternCode** (where bit zero is the least significant bit) indicates whether residual difference data is sent for block *i*, where *i* is the index of the block within the macroblock as specified in MPEG-2 video figures 6-10, 6-11, and 6-12 (raster-scan order for Y, followed by 4:2:0 blocks of Cb in raster-scan order, followed by 4:2:0 blocks of Cr, followed by 4:2:2 blocks of Cb, followed by 4:2:2 blocks of Cr, followed by 4:4:4 blocks of Cb, followed by 4:4:4 blocks of Cr). The data for the coded blocks (those blocks having bit 11-*i* equal to 1) is found in the residual coding buffer in the same indexing order (increasing *i*). For 4:2:0 MPEG-2 data, the value of **wPatternCode** corresponds to shifting the decoded value of CBP (Coded Block Pattern) to the left by six bit positions (those lower bit positions being used for 4:2:2 and 4:4:4 chroma formats).
 
-If the **bConfigSpatialResidInterleaved** member of [**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configpicturedecode) is 1, host-based residual differences are sent in a chroma-interleaved form matching that of the YUV pixel format in use. In this case, each Cb and spatially corresponding Cr pair of blocks is treated as a single residual difference structure unit. This does not alter the value or meaning of **wPatternCode**, but it implies that both members of each pair of Cb and Cr data blocks are sent whenever either of these data blocks has the corresponding bit (bit 7 or bit 6) set in **wPatternCode**. If the bit in **wPatternCode** for a particular data block is zero, the corresponding residual difference data values must be sent as zero whenever the pairing of the Cb and Cr blocks necessitates sending a residual difference data block for a block with a **wPatternCode** bit equal to zero.
+If the **bConfigSpatialResidInterleaved** member of [**DXVA\_ConfigPictureDecode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) is 1, host-based residual differences are sent in a chroma-interleaved form matching that of the YUV pixel format in use. In this case, each Cb and spatially corresponding Cr pair of blocks is treated as a single residual difference structure unit. This does not alter the value or meaning of **wPatternCode**, but it implies that both members of each pair of Cb and Cr data blocks are sent whenever either of these data blocks has the corresponding bit (bit 7 or bit 6) set in **wPatternCode**. If the bit in **wPatternCode** for a particular data block is zero, the corresponding residual difference data values must be sent as zero whenever the pairing of the Cb and Cr blocks necessitates sending a residual difference data block for a block with a **wPatternCode** bit equal to zero.
 
  
-
- 
-
-
-
-
 

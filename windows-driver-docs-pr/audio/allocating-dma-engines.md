@@ -1,7 +1,6 @@
 ---
 title: Allocating DMA Engines
 description: Allocating DMA Engines
-ms.assetid: 45b772ce-e6ae-4102-bad4-734f8f079817
 keywords:
 - HD Audio, DMA engines
 - High Definition Audio (HD Audio), DMA engines
@@ -26,16 +25,11 @@ Three types of DMA engines are available:
 
 -   Bidirectional DMA engines, which can be configured to handle either render or capture streams.
 
-When allocating a DMA engine for a render stream, the [**AllocateCaptureDmaEngine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pallocate_capture_dma_engine) routine allocates a render DMA engine if one is available. If the supply of render DMA engines is exhausted, the routine allocates a bidirectional DMA engine if one is available.
+When allocating a DMA engine for a render stream, the [**AllocateCaptureDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine) routine allocates a render DMA engine if one is available. If the supply of render DMA engines is exhausted, the routine allocates a bidirectional DMA engine if one is available.
 
-Similarly, when allocating a DMA engine for a capture stream, the [**AllocateRenderDmaEngine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pallocate_render_dma_engine) routine allocates a capture DMA engine if one is available. If the supply of capture DMA engines is exhausted, the routine allocates a bidirectional DMA engine if one is available.
+Similarly, when allocating a DMA engine for a capture stream, the [**AllocateRenderDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine) routine allocates a capture DMA engine if one is available. If the supply of capture DMA engines is exhausted, the routine allocates a bidirectional DMA engine if one is available.
 
 The Allocate*Xxx*DmaEngine routines are available in both versions of the HD Audio DDI.
 
  
-
- 
-
-
-
 

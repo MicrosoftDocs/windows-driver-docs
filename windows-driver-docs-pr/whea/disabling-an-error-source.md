@@ -1,7 +1,6 @@
 ---
 title: Disabling an Error Source
 description: Disabling an Error Source
-ms.assetid: a481ac98-0ff1-4583-a81a-1d2e4f968111
 keywords:
 - error sources WDK WHEA , disabling
 - Windows Hardware Error Architecture WDK , disabling error sources
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # Disabling an Error Source
 
 
-A user-mode application can disable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::DisableErrorSourceRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/) method.
+A user-mode application can disable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::DisableErrorSourceRtn**](/windows-hardware/drivers/ddi/_whea/) method.
 
 The following code example shows how to disable an error source.
 
@@ -119,12 +118,7 @@ pClass->Release();
 pOutParameters->Release();
 ```
 
-A user-mode application can re-enable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::EnableErrorSourceRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/) method. For more information about how to enable an error source, see [Enabling an Error Source](enabling-an-error-source.md).
+A user-mode application can re-enable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::EnableErrorSourceRtn**](/windows-hardware/drivers/ddi/_whea/) method. For more information about how to enable an error source, see [Enabling an Error Source](enabling-an-error-source.md).
 
  
-
- 
-
-
-
 

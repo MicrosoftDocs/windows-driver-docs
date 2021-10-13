@@ -1,7 +1,6 @@
 ---
-title: dbgprint
+title: dbgprint (WinDbg)
 description: The dbgprint extension displays a string that was previously sent to the DbgPrint buffer.
-ms.assetid: bf25ac2a-5a07-43df-946b-3b2237b1816b
 keywords: ["dbgprint Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,12 +49,11 @@ The **!dbgprint** extension displays a string that was previously sent to the **
 
 For information about **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx**, see [Sending Output to the Debugger](sending-output-to-the-debugger.md).
 
-Remarks
--------
+## Remarks
 
 The kernel-mode routines **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx** send a formatted string to a buffer on the target computer. The string is automatically displayed in the Debugger Command window on the host computer unless such printing has been disabled.
 
-Generally, messages sent to this buffer are displayed automatically in the Debugger Command window. However, this display can be disabled through the Global Flags (gflags.exe) utility. Moreover, this display does not automatically appear during local kernel debugging. For more information, see [The DbgPrint Buffer](reading-and-filtering-debugging-messages.md#the-dbgprint-buffer).
+Generally, messages sent to this buffer are displayed automatically in the Debugger Command window. However, this display can be disabled through the Global Flags (gflags.exe) utility. Moreover, this display does not automatically appear during local kernel debugging. For more information, see "The DbgPrint Buffer" in [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md).
 
 The **!dbgprint** extension causes the contents of this buffer to be displayed (regardless of whether automatic printing has been disabled). It will not show messages that have been filtered out based on their component and importance level. (For details on this filtering, see [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md).)
 

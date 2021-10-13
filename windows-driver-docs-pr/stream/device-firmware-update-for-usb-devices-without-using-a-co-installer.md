@@ -23,7 +23,7 @@ The primary requirements from the USB device firmware update process are:
 
 USB devices like UVC cameras are released with in-field updatable firmware. There is no standard way to update the firmware today. One thing that is common to all existing update mechanism is that some custom software suite runs on the client and downloads the firmware to the device. Typically, as part of the device installation process, the firmware updating software suite is installed. The co-installer kick starts the firmware update process. The absence of co-installers on Windows 10 prevents device vendors from updating the firmware on these devices in the field.
 
-The recommended way to circumvent the absence of a co-installer for the USB device firmware update scenario is to use a lower filter driver to the USB device that will kick start the firmware update process. During the [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) call, the filter driver will check the device firmware version and update the firmware if necessary.
+The recommended way to circumvent the absence of a co-installer for the USB device firmware update scenario is to use a lower filter driver to the USB device that will kick start the firmware update process. During the [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) call, the filter driver will check the device firmware version and update the firmware if necessary.
 
 ## Firmware update overview
 
@@ -55,21 +55,21 @@ The driver update package on the Windows Update server will contain:
 
 - The "firmware.bin" file
 
-![Firmware update UMDF lower filter driver method](images/fw-update-umdf-lower-filter-driver-method.png)
+![Firmware update UMDF lower filter driver method.](images/fw-update-umdf-lower-filter-driver-method.png)
 
-While installing the driver update package, the firmware update WDF filter driver’s [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine will be called. From this routine, the WDF filter driver will get for the device firmware version from the device HW registry key. The device firmware should have placed the firmware version using the MSOS descriptor onto the device HW registry key.
+While installing the driver update package, the firmware update WDF filter driver’s [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine will be called. From this routine, the WDF filter driver will get for the device firmware version from the device HW registry key. The device firmware should have placed the firmware version using the MSOS descriptor onto the device HW registry key.
 
 1. If the device firmware version and the filter driver expected firmware version are different, or
 
 1. The firmware version is not available in the device HW registry key
 
-    1. Then, the filter driver will insert itself into the device stack by returning success to [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) callback.
+    1. Then, the filter driver will insert itself into the device stack by returning success to [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) callback.
 
 1. Else, the filter driver will not insert itself into the device stack
 
     1. Because there is no necessity for updating the firmware as the device has the expected firmware.
 
-When the [EVT_WDF_DEVICE_D0_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver must register for device interface change notifications using CM\_Register\_Notification or IoRegisterPlugPlayNotification (UMDF or KMDF) to listen to the device interface class the USB device will register the device into. E.g. The firmware update filter driver for a RGB camera would register for KSCATEGORY\_VIDEO\_CAMERA. On receiving the notification, the filter driver should post a work-item that would perform the firmware update.
+When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver must register for device interface change notifications using CM\_Register\_Notification or IoRegisterPlugPlayNotification (UMDF or KMDF) to listen to the device interface class the USB device will register the device into. E.g. The firmware update filter driver for a RGB camera would register for KSCATEGORY\_VIDEO\_CAMERA. On receiving the notification, the filter driver should post a work-item that would perform the firmware update.
 
 UMDF based firmware update drivers can use the device specific APIs or issue the control transfers directly to access the USB device to perform the firmware update. For example, the UMDF based filter driver for a camera would use Camera APIs to perform the firmware update.
 
@@ -95,7 +95,7 @@ In addition to the driver update package, a separate Firmware Update Device Driv
 
 1. The "firmware.bin" file.
 
-![Firmware update WDF driver method](images/fw-update-wdf-driver-method.png)
+![Firmware update WDF driver method.](images/fw-update-wdf-driver-method.png)
 
 While installing the driver update package, the WDF lower filter driver’s AddDevice routine will be called. From this routine, the filter driver will query for the device firmware version from the device HW registry key. The device firmware should have placed the "firmware version", using the MSOS descriptor or the USB device’s extension INF, onto the device HW registry key.
 
@@ -107,11 +107,11 @@ While installing the driver update package, the WDF lower filter driver’s AddD
 
 1. Else, the WDF filter driver will not insert itself into the device stack
 
-When the [EVT_WDF_DEVICE_D0_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver will issue a vendor specific command to the device which will place it in firmware update mode. i.e. The device will disconnect and reconnect, exposing the firmware update interface.
+When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver will issue a vendor specific command to the device which will place it in firmware update mode. i.e. The device will disconnect and reconnect, exposing the firmware update interface.
 
 The system will enumerate the firmware update device interface. A custom firmware update WDF driver supplied by the vendor, in the firmware update package, will be load for this firmware update interface. This driver will update the firmware.
 
-When the [EVT_WDF_DEVICE_D0_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF firmware update driver is called at a later point, the driver must post a work-item that would perform the firmware update.
+When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF firmware update driver is called at a later point, the driver must post a work-item that would perform the firmware update.
 
 On completion of flashing the firmware, the device must disconnect and reconnect to the bus. The device will be re-enumerated with new firmware.
 

@@ -1,7 +1,6 @@
 ---
 title: Writing drivers for different versions of Windows
 description: Writing drivers for different versions of Windows
-ms.assetid: 7519235c-46c5-49aa-8b11-9e9ac5a51026
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,7 +34,7 @@ A kernel-mode driver can dynamically determine which version of Windows it is ru
 
 ### <span id="determining_the_windows_version"></span><span id="DETERMINING_THE_WINDOWS_VERSION"></span>Determining the Windows version
 
-[**RtlIsNtDdiVersionAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlisntddiversionavailable) is a function that drivers can use to determine, at run time, if the features that are provided by a particular version of Windows are available. The prototype for this function is as follows:
+[**RtlIsNtDdiVersionAvailable**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisntddiversionavailable) is a function that drivers can use to determine, at run time, if the features that are provided by a particular version of Windows are available. The prototype for this function is as follows:
 
 ```cpp
 BOOLEAN RtlIsNtDdiVersionAvailable(IN ULONG Version)
@@ -43,9 +42,9 @@ BOOLEAN RtlIsNtDdiVersionAvailable(IN ULONG Version)
 
 In this prototype, *Version* is a value that indicates the required version of the Windows DDI. This value must be one of the DDI version constants, defined in sdkddkver.h, such as NTDDI\_WIN8 or NTDDI\_WIN7.
 
-[**RtlIsNtDdiVersionAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlisntddiversionavailable) returns TRUE when the caller is running on a version of Windows that is the same as, or later than, the one that is specified by *Version.*
+[**RtlIsNtDdiVersionAvailable**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisntddiversionavailable) returns TRUE when the caller is running on a version of Windows that is the same as, or later than, the one that is specified by *Version.*
 
-Your driver can also check for a specific service pack by calling the [**RtlIsServicePackVersionInstalled**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlisservicepackversioninstalled) function. The prototype for this function is as follows:
+Your driver can also check for a specific service pack by calling the [**RtlIsServicePackVersionInstalled**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisservicepackversioninstalled) function. The prototype for this function is as follows:
 
 ```cpp
 BOOLEAN RtlIsServicePackVersionInstalled(IN ULONG Version)
@@ -53,11 +52,11 @@ BOOLEAN RtlIsServicePackVersionInstalled(IN ULONG Version)
 
 In this prototype, *Version* is a value that indicates the required Windows version and service pack. This value must be one of the DDI version constants, defined in sdkddkver.h, such as NTDDI\_WS08SP3.
 
-Note that [**RtlIsServicePackVersionInstalled**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlisservicepackversioninstalled) returns TRUE only when the operating system version exactly matches the specified version. Thus, a call to **RtlIsServicePackVersionInstalled** with *Version* set to NTDDI\_WS08SP3 will fail if the driver is not running on Windows Server 2008 with SP4.
+Note that [**RtlIsServicePackVersionInstalled**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisservicepackversioninstalled) returns TRUE only when the operating system version exactly matches the specified version. Thus, a call to **RtlIsServicePackVersionInstalled** with *Version* set to NTDDI\_WS08SP3 will fail if the driver is not running on Windows Server 2008 with SP4.
 
 ### <span id="conditionally_calling_windows_version_dependent_functions"></span><span id="CONDITIONALLY_CALLING_WINDOWS_VERSION_DEPENDENT_FUNCTIONS"></span>Conditionally calling Windows version-dependent functions
 
-After a driver determines that a specific operating system version is available on the computer, the driver can use the [**MmGetSystemRoutineAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmgetsystemroutineaddress) function to dynamically locate the routine and call it through a pointer. This function is available in Windows 7 and later operating system versions.
+After a driver determines that a specific operating system version is available on the computer, the driver can use the [**MmGetSystemRoutineAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemroutineaddress) function to dynamically locate the routine and call it through a pointer. This function is available in Windows 7 and later operating system versions.
 
 **Note**  To help preserve type checking and prevent unintentional errors, you should create a typedef that mirrors the original function type.
 
@@ -65,7 +64,7 @@ After a driver determines that a specific operating system version is available 
 
 ### <span id="example__determining_the_windows_version_and_conditionally_calling_a_v"></span><span id="EXAMPLE__DETERMINING_THE_WINDOWS_VERSION_AND_CONDITIONALLY_CALLING_A_V"></span>Example: Determining the Windows version and conditionally calling a version-dependent function
 
-This code example, which is from a driver's header file, defines the PAISQSL type as a pointer to the [**KeAcquireInStackQueuedSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) function. The example then declares a `AcquireInStackQueuedSpinLock` variable with this type.
+This code example, which is from a driver's header file, defines the PAISQSL type as a pointer to the [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) function. The example then declares a `AcquireInStackQueuedSpinLock` variable with this type.
 
 ```cpp
 ...
@@ -78,7 +77,7 @@ PAISQSL AcquireInStackQueued = NULL;
  ...
 ```
 
-This code example, which is from the driver's initialization code, determines whether the driver is running on Windows 7 or a later operating system. If it is, the code retrieves a pointer to [**KeAcquireInStackQueuedSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)).
+This code example, which is from the driver's initialization code, determines whether the driver is running on Windows 7 or a later operating system. If it is, the code retrieves a pointer to [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)).
 
 ```cpp
 ...
@@ -112,15 +111,6 @@ This code example, which is from the driver's initialization code, determines wh
 }
 ```
 
-In the example the driver calls [**RtlIsNtDdiVersionAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlisntddiversionavailable) to determine whether the driver is running on Windows 7 or later. If the version is Windows 7 or later, the driver calls [**MmGetSystemRoutineAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmgetsystemroutineaddress) to get a pointer to the [**KeAcquireInStackQueuedSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) function and stores this pointer in the variable named `AcquireInStackQueued` (which was declared as a PAISQSL type).
+In the example the driver calls [**RtlIsNtDdiVersionAvailable**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisntddiversionavailable) to determine whether the driver is running on Windows 7 or later. If the version is Windows 7 or later, the driver calls [**MmGetSystemRoutineAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemroutineaddress) to get a pointer to the [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) function and stores this pointer in the variable named `AcquireInStackQueued` (which was declared as a PAISQSL type).
 
-Later, when the driver must acquire a spin lock, it checks to see whether it has received a pointer to the [**KeAcquireInStackQueuedSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) function. If the driver has received this pointer, the driver uses the pointer to call **KeAcquireInStackQueuedSpinLock**. If the pointer to **KeAcquireInStackQueuedSpinLock** is null, the driver uses [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keacquirespinlock) to acquire the spin lock.
-
-
-
-
-
-
-
-
-
+Later, when the driver must acquire a spin lock, it checks to see whether it has received a pointer to the [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) function. If the driver has received this pointer, the driver uses the pointer to call **KeAcquireInStackQueuedSpinLock**. If the pointer to **KeAcquireInStackQueuedSpinLock** is null, the driver uses [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock) to acquire the spin lock.

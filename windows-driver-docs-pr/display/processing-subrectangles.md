@@ -1,7 +1,6 @@
 ---
 title: Processing Subrectangles
 description: Processing Subrectangles
-ms.assetid: d00803c0-98e2-4101-bcfc-ef11fea07962
 keywords:
 - deinterlacing WDK DirectX VA , subrectangular processing
 - subrectangular processing WDK DirectX VA
@@ -17,9 +16,9 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.**
 
-The VMR on Windows Server 2003 SP1 and later and Windows XP SP2 and later can process subrectangular regions of the source video image and video substreams and can write to subrectangular regions on the destination surface. The VMR performs a subrectangular-process operation by making the coordinates of the rectangles in the **rcSrc** and **rcDest** members of the [**DXVA\_VideoSample2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videosample2) structure for each sample different from the coordinates of the source and destination surfaces.
+The VMR on Windows Server 2003 SP1 and later and Windows XP SP2 and later can process subrectangular regions of the source video image and video substreams and can write to subrectangular regions on the destination surface. The VMR performs a subrectangular-process operation by making the coordinates of the rectangles in the **rcSrc** and **rcDest** members of the [**DXVA\_VideoSample2**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample2) structure for each sample different from the coordinates of the source and destination surfaces.
 
-If the deinterlace hardware supports subrectangular-process operations, the display driver reports this support by setting the DXVA\_VideoProcess\_SubRects flag in the **VideoProcessingCaps** member of the [**DXVA\_DeinterlaceCaps**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_deinterlacecaps) structure. The driver returns a pointer to DXVA\_DeinterlaceCaps when its [**DeinterlaceQueryModeCaps**](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps) function is called.
+If the deinterlace hardware supports subrectangular-process operations, the display driver reports this support by setting the DXVA\_VideoProcess\_SubRects flag in the **VideoProcessingCaps** member of the [**DXVA\_DeinterlaceCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacecaps) structure. The driver returns a pointer to DXVA\_DeinterlaceCaps when its [**DeinterlaceQueryModeCaps**](./dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md) function is called.
 
 In subrectangular-process operations, the VMR can stretch subrectangles and can intersect subrectangles with each other on the destination surface.
 
@@ -30,10 +29,4 @@ The following topics show how to perform various subrectangular-process operatio
 [Stretching Subrectangles](stretching-subrectangles.md)
 
  
-
- 
-
-
-
-
 

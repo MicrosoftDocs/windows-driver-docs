@@ -1,7 +1,6 @@
 ---
 title: DVD 720-Wide Example
 description: DVD 720-Wide Example
-ms.assetid: 02761bf5-afae-4f38-9178-6a721fcad84e
 keywords:
 - alpha-blend combination WDK DirectX VA , DVD 720-wide example
 - blended pictures WDK DirectX VA , DVD 720-wide example
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_dvd_720_wide_example_gg"></span><span id="DDK_DVD_720_WIDE_EXAMPLE_GG"></span>
 
 
-The use of MPEG-2 on DVD with 720-wide pictures uses picture source rectangle values specified by the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure (in one-sixteenth of a luminance sample spacing resolution) with the following values:
+The use of MPEG-2 on DVD with 720-wide pictures uses picture source rectangle values specified by the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination) structure (in one-sixteenth of a luminance sample spacing resolution) with the following values:
 
 -   **left** = 0
 
@@ -30,10 +29,4 @@ Generally, the following destination rectangle values are used:
 -   **right** = **left** + *horizontal\_size* = 720
 
  
-
- 
-
-
-
-
 

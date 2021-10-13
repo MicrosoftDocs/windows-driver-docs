@@ -1,7 +1,6 @@
 ---
 title: logexts.loge
 description: The logexts.loge extension enables logging. If logging has not been initialized, it will be initialized and enabled.
-ms.assetid: d8b621f1-19e7-4c42-a428-8572d29b666f
 keywords: ["logexts.loge Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the directory to use for output. If *OutputDirectory* is specified, it
 
 For more information, see [Logger and LogViewer](logger-and-logviewer.md).
 
-Remarks
--------
+## Remarks
 
 If Logger has not yet been injected into the target application by the [**!logexts.logi**](-logexts-logi.md) extension, the **!logexts.loge** extension will inject Logger into the target and then enable logging.
 

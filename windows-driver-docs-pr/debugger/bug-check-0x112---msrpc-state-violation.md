@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x112 MSRPC_STATE_VIOLATION
 description: The MSRPC_STATE_VIOLATION bug check has a value of 0x00000112. This indicates that the Msrpc.sys driver has initiated a bug check.
-ms.assetid: b7cd531d-518e-4d11-8edb-d52dbbe51043
 keywords: ["Bug Check 0x112 MSRPC_STATE_VIOLATION", "MSRPC_STATE_VIOLATION"]
 ms.date: 05/23/2017
 topic_type:
@@ -128,8 +127,7 @@ Parameters 1 and 2 are the only parameters of interest. Parameter 1 indicates th
 
  
 
-Cause
------
+## Cause
 
 The most common cause of this bug check is that the caller of the Msrpc.sys driver violated the state semantics for such a call.
 

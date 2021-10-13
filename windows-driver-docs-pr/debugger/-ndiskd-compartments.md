@@ -1,7 +1,6 @@
 ---
 title: ndiskd.compartments
 description: The ndiskd.compartments extension displays all network compartments.
-ms.assetid: F9BF319D-77E9-4D12-84E9-655058F57AC4
 keywords: ["ndiskd.compartments Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,13 +30,11 @@ This extension has no parameters.
 
 Ndiskd.dll
 
-Remarks
--------
+## Remarks
 
-Compartments are a way that NDIS manages interfaces. Third party interface providers only use the primary compartment, as described in the **CompartmentId** member of the [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_bind_parameters) structure.
+Compartments are a way that NDIS manages interfaces. Third party interface providers only use the primary compartment, as described in the **CompartmentId** member of the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure.
 
-Examples
---------
+## Examples
 
 Run the **!ndiskd.compartments** extension to see a list of all network compartments. In this example, there is only one compartment (the primary one).
 
@@ -54,24 +51,17 @@ Run the **!ndiskd.compartments** extension to see a list of all network compartm
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_bind_parameters)
+[**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)
 
  
-
- 
-
-
-
-
-
 

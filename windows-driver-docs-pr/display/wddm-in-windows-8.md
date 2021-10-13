@@ -1,7 +1,6 @@
 ---
 title: WDDM 1.2 and Windows 8
 description: This section provides details about new features and enhancements in Windows Display Driver Model (WDDM) version 1.2, which is available starting with Windows 8. It also describes hardware requirements, implementation guidelines, and usage scenarios.
-ms.assetid: 8757ADDD-EDCA-4C09-BB71-2ED925DB2E41
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -60,7 +59,7 @@ This section provides details about new features and enhancements in Windows Dis
 
 The WDDM was introduced with Windows Vista as a replacement of the Windows XP or [Windows 2000 Display Driver Model (XDDM)](windows-2000-display-driver-model-design-guide.md). With its introduction in Windows Vista, the WDDM architecture offered functionality to enable new features such as Desktop Composition, enhanced fault tolerance, video memory manager, GPU scheduler, cross process sharing of Direct3D surfaces, and so on. WDDM was specifically designed for modern graphics devices that were Microsoft Direct3D 9 with pixel shader 2.0 or better, and had all the necessary hardware features to support the WDDM features. WDDM for Windows Vista was referred to as "WDDM 1.0."
 
-Windows 7 made incremental changes to the driver model for supporting Windows 7 features and capabilities and was referred to as "WDDM 1.1." WDDM 1.1 is a strict superset of WDDM 1.0. WDDM 1.1 introduced support for Microsoft Direct3D 11, Windows Graphics Device Interface (GDI) hardware acceleration, Connecting and Configuring Displays, DirectX Video Acceleration (VA) High-Definition (DXVA-HD), and many other features. For more details on these features, see the [Graphics Guide for Windows 7](https://go.microsoft.com/fwlink/p/?linkid=327733).
+Windows 7 made incremental changes to the driver model for supporting Windows 7 features and capabilities and was referred to as "WDDM 1.1." WDDM 1.1 is a strict superset of WDDM 1.0. WDDM 1.1 introduced support for Microsoft Direct3D 11, Windows Graphics Device Interface (GDI) hardware acceleration, Connecting and Configuring Displays, DirectX Video Acceleration (VA) High-Definition (DXVA-HD), and many other features. For more details on these features, see the [Graphics Guide for Windows 7](/previous-versions/windows/hardware/download/dn550976(v=vs.85)).
 
 Windows 8 introduces an array of new features and capabilities that require graphics driver changes. These incremental changes benefit end users and developers, and improve system reliability. The WDDM driver model that enables these Windows 8 features is referred to as "WDDM 1.2." WDDM 1.2 is a superset of WDDM 1.1 and WDDM 1.0. These changes can be represented in a simplified form, as shown in this table:
 
@@ -242,10 +241,4 @@ This table explains scenario usage for the new driver types:
 WDDM 1.2 is required for all systems that are shipped with Windows 8. WDDM 1.0 and WDDM 1.1 will continue to work on Windows 8. However, the best experience and Windows 8-specific features are enabled only by a WDDM 1.2 driver.
 
  
-
- 
-
-
-
-
 
