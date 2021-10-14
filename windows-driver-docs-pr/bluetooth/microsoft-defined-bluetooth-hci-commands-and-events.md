@@ -78,7 +78,7 @@ The controller shall always complete this command promptly with a Command Comple
 | Value  |  Parameter description |
 |---|---|
 |  0x00 |  The command succeeded. |
-| 0x01&#160;-&#160;0xFF  |  The command failed. See _Error Codes_ in the Bluetooth Core specification for details. |
+| 0x01&#160;to&#160;0xFF  |  The command failed. See _Error Codes_ in the Bluetooth Core specification for details. |
 
 **Subcommand_opcode** (1 octet):
 
@@ -105,7 +105,7 @@ The controller shall always complete this command promptly with a Command Comple
 
 | Value  |  Parameter description |
 |---|---|
-|0x00&#160;-&#160;0x20|Number of bytes in the Microsoft event prefix field as specified in the returned _Microsoft_event_prefix_. This is the number of bytes of constant information at the beginning of every Microsoft-specified HCI event.|
+|0x00&#160;to&#160;0x20|Number of bytes in the Microsoft event prefix field as specified in the returned _Microsoft_event_prefix_. This is the number of bytes of constant information at the beginning of every Microsoft-specified HCI event.|
 
 **Microsoft_event_prefix** (variable length):
 
@@ -155,27 +155,27 @@ RSSI_threshold_high (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-| 0xXX |  The maximum expected RSSI value. The controller will generate an event if the observed RSSI becomes greater than or equal to this value.</br>Unit: dBm</br>BR/EDR Range: -128&#160;-&#160;127 (signed integer)</br>LE Range: -127&#160;-&#160;20 (signed integer)|
+| 0xXX |  The maximum expected RSSI value. The controller will generate an event if the observed RSSI becomes greater than or equal to this value.</br>Unit: dBm</br>BR/EDR Range: -128&#160;to&#160;127 (signed integer)</br>LE Range: -127&#160;to&#160;20 (signed integer)|
 
 RSSI_threshold_low (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-| 0xXX |The minimum expected RSSI value. The controller will generate an event if the observed RSSI becomes less than or equal to this value.</br>Unit: dBm</br>BR/EDR Mandatory Range: -128&#160;-&#160;127 (signed integer)</br>LE Mandatory Range: -127&#160;-&#160;20 (signed integer)|
+| 0xXX |The minimum expected RSSI value. The controller will generate an event if the observed RSSI becomes less than or equal to this value.</br>Unit: dBm</br>BR/EDR Mandatory Range: -128&#160;to&#160;127 (signed integer)</br>LE Mandatory Range: -127&#160;to&#160;20 (signed integer)|
 
 RSSI_threshold_low_time_interval (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
 |0x00|Reserved value.|
-|_N_&#160;=&#160;0xXX|The time in seconds over which the RSSI value should be below _RSSI_threshold_low_ before an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] is generated.</br>Time period = _N_ * 1 second</br>Mandatory Range: 0x01&#160;-&#160;0x3C|
+|_N_&#160;=&#160;0xXX|The time in seconds over which the RSSI value should be below _RSSI_threshold_low_ before an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] is generated.</br>Time period = _N_ * 1 second</br>Mandatory Range: 0x01&#160;to&#160;0x3C|
 
 RSSI_sampling_period (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
 |0x00|Reserved value.|
-|_N_&#160;=&#160;0xXX|The sampling interval in milliseconds.</br>Time period = _N_ * 100 milliseconds</br>Mandatory Range: 0x01&#160;-&#160;0xFE|
+|_N_&#160;=&#160;0xXX|The sampling interval in milliseconds.</br>Time period = _N_ * 100 milliseconds</br>Mandatory Range: 0x01&#160;to&#160;0xFE|
 |0xFF|Reserved value.|
 
 #### Return_parameters
@@ -185,7 +185,7 @@ Status (1 octet):
 | Value  |  Parameter description |
 |---|---|
 |  0x00 |  The command succeeded. |
-| 0x01&#160;-&#160;0xFF  |  The command failed. See _Error Codes_ in the Bluetooth Core specification for details. |
+| 0x01&#160;to&#160;0xFF  |  The command failed. See _Error Codes_ in the Bluetooth Core specification for details. |
 |0x07|The controller shall return _Memory Capacity Exceeded_ if it does not have enough memory to process the command.|
 |_Error&#160;code_| The command failed. See _Error Codes_ in the Bluetooth Core specification for details.|
 
@@ -238,7 +238,7 @@ Status (1 octet):
 | Value  |  Parameter description |
 |---|---|
 |  0x00 |  The command succeeded. |
-| 0x01&#160;-&#160;0xFF  |  The command failed. See _Error Codes_ in the Bluetooth Core specification for details. |
+| 0x01&#160;to&#160;0xFF  |  The command failed. See _Error Codes_ in the Bluetooth Core specification for details. |
 
 Subcommand_opcode (1 octet):
 
@@ -279,9 +279,9 @@ If the controller supports the RSSI monitoring of LE extended advertisements wit
 
 | _RSSI_sampling_period_ | Legacy Advertisements | Extended Advertisements (Non-Anonymous) | Extended Advertisements (Anonymous)|
 |---|---|---|---|
-|0xFF|The controller shall not allow further advertisement packets to flow to the host for the device for the _Condition_ until the controller has notified the host that the particular device’s RSSI has fallen below _RSSI_threshold_low_ for _RSSI_threshold_low_time_interval_ for the particular device for this _Condition_. This notification is done by generating an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 0.|If the controller supports the RSSI monitoring of LE extended advertisements without sampling, same behavior as _Legacy Advertisements_ column.|  If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |
 |0x00|The controller shall propagate all received advertisement packets to the host for the device for this _Condition_ unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with _Enable_ set to 0x00. The controller shall propagate an advertisement packet to the host even if the received RSSI is less than or equal to _RSSI_threshold_low_ as long as _RSSI_threshold_low_time_interval_ has not expired for the particular device for this _Condition_. The RSSI value of this advertisement packet shall be the RSSI value of the received advertisement. | If the controller supports the RSSI monitoring of LE extended advertisements without sampling, same behavior as _Legacy Advertisements_ column except that an advertisement packet is defined as all PDUs in the advertising chain. | If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall propagate all received advertisement packets to the host for the device for this _Condition_ unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with _Enable_ set to 0x00. |
-|0x01 - 0xFE| The controller shall propagate legacy advertisement packets to the host every _RSSI_sampling_period_ specified unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with _Enable_ set to 0x00. The RSSI value specified for the advertisement shall be the average of the RSSI value received during this sampling interval. If the controller does not receive an advertisement packet during the sampling period, it shall not propagate an advertisement to the host. It is possible that _RSSI_sampling_period_ is less than _RSSI_threshold_low_time_interval_ and all advertisements received during the _RSSI_sampling_period_ have RSSI below _RSSI_threshold_low_. The controller shall still propagate the advertisement with the average of the RSSI value received during this sampling interval. | If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |  If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |
+|0x01&#160;to&#160;0xFE| The controller shall propagate legacy advertisement packets to the host every _RSSI_sampling_period_ specified unless the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with _Enable_ set to 0x00. The RSSI value specified for the advertisement shall be the average of the RSSI value received during this sampling interval. If the controller does not receive an advertisement packet during the sampling period, it shall not propagate an advertisement to the host. It is possible that _RSSI_sampling_period_ is less than _RSSI_threshold_low_time_interval_ and all advertisements received during the _RSSI_sampling_period_ have RSSI below _RSSI_threshold_low_. The controller shall still propagate the advertisement with the average of the RSSI value received during this sampling interval. | If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |  If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |
+|0xFF|The controller shall not allow further advertisement packets to flow to the host for the device for the _Condition_ until the controller has notified the host that the particular device’s RSSI has fallen below _RSSI_threshold_low_ for _RSSI_threshold_low_time_interval_ for the particular device for this _Condition_. This notification is done by generating an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 0.|If the controller supports the RSSI monitoring of LE extended advertisements without sampling, same behavior as _Legacy Advertisements_ column.|  If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall behave as if the _RSSI_sampling_period_ was 0x00. |
 
 If the controller previously received an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with _Enable_ set to 0x00, the sampling period timer shall not be stopped. See Example: HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable on filters with sampling period for more information.
 If the controller receives non-duplicate advertisement packets from the same device, it shall match each advertisement packet against the Conditions stored on the controller.
@@ -356,14 +356,14 @@ RSSI_threshold_low_time_interval (1 octet):
 | Value  |  Parameter description |
 |---|---|
 |0x00|Reserved value.|
-|_N_&#160;=&#160;0xXX|The time in seconds over which the RSSI value should be below _RSSI_threshold_low_ before an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] is generated</br>Time period = _N_ * 1 second</br>Mandatory Range: 0x01&#160;-&#160;0x3C.
+|_N_&#160;=&#160;0xXX|The time in seconds over which the RSSI value should be below _RSSI_threshold_low_ before an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] is generated</br>Time period = _N_ * 1 second</br>Mandatory Range: 0x01&#160;to&#160;0x3C.
 
 RSSI_sampling_period (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
 |0x00|The controller shall propagate all received advertisements to the host.|
-|_N_&#160;=&#160;0xXX|The sampling interval in milliseconds.</br>Time period = _N_ * 100 milliseconds.</br>Mandatory Range: 0x01&#160;-&#160;0xFE|
+|_N_&#160;=&#160;0xXX|The sampling interval in milliseconds.</br>Time period = _N_ * 100 milliseconds.</br>Mandatory Range: 0x01&#160;to&#160;0xFE|
 |0xFF|The controller shall not propagate any of the received advertisements to the host.|
 
 Condition_type (1 octet):
@@ -419,7 +419,7 @@ Address_type (1 octet):
 |---|---|
 |0x00| Public Device Address.|
 |0x01| Random Device Address.|
-|0x02 - 0xFF| Reserved values for future use.|
+|0x02&#160;to&#160;0xFF| Reserved values for future use.|
 
 BD_ADDR (6 octets):
 
@@ -447,7 +447,7 @@ Monitor_handle (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-|0x00 - 0xFF|The handle to this rule. This handle is used as a parameter for [HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement] to cancel monitoring the advertisement.</br>This parameter is only valid if Status is 0x00.|
+|0x00&#160;to&#160;0xFF|The handle to this rule. This handle is used as a parameter for [HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement] to cancel monitoring the advertisement.</br>This parameter is only valid if Status is 0x00.|
 
 #### Events Generated Unless Masked Away
 
@@ -585,7 +585,7 @@ Status (1 octet):
 |Value|Parameter description|
 |---|---|
 |0x00|The command succeeded.|
-|0x01 - 0xFF|The command failed. See _Error Codes_ in the Bluetooth Core specification for details.|
+|0x01&#160;to&#160;0xFF|The command failed. See _Error Codes_ in the Bluetooth Core specification for details.|
 
 Subcommand_opcode (1 octet):
 
@@ -603,7 +603,7 @@ RSSI (1 octet):
 
 |     Value      |                                                  Parameter description                                                   |
 |----------------|--------------------------------------------------------------------------------------------------------------------------|
-| N = 0xXX | The RSSI value for the BR/EDR connection.</br>Unit: dBm</br>Mandatory Range: -128&#160;-&#160;127 (signed integer)|
+| N = 0xXX | The RSSI value for the BR/EDR connection.</br>Unit: dBm</br>Mandatory Range: -128&#160;to&#160;127 (signed integer)|
 
 #### Events Generated Unless Masked Away
 
@@ -647,7 +647,7 @@ Status (1 octet):
 |Value|Parameter description|
 |---|---|
 |0x00|Success. The RSSI value of the connection has met one of the following conditions.The RSSI reached or exceeded _RSSI_threshold_high_.,</br>The RSSI reached or dropped below _RSSI_threshold_low_ over _RSSI_threshold_low_time_interval_ seconds.,</br>The _RSSI_sampling_period_ has expired and this event was generated to notify the host of the RSSI value.|
-|0x01&#160;-&#160;0xFF|Failure. The RSSI value of the connection can no longer be monitored. The error code is usually one of codes that describes why the underlying ACL connection was lost.|
+|0x01&#160;to&#160;0xFF|Failure. The RSSI value of the connection can no longer be monitored. The error code is usually one of codes that describes why the underlying ACL connection was lost.|
 
 Connection_Handle (2 octets):
 
@@ -659,7 +659,7 @@ RSSI (1 octet):
 
 |Value|Parameter description|
 |---|---|
-|0xXX|The measured link RSSI value for the connection.</br>Unit: dBm</br>BR/EDR Range: -128&#160;-&#160;127 (signed integer)</br>LE Range: -127&#160;-&#160;20 (signed integer)|
+|0xXX|The measured link RSSI value for the connection.</br>Unit: dBm</br>BR/EDR Range: -128&#160;to&#160;127 (signed integer)</br>LE Range: -127&#160;to&#160;20 (signed integer)|
 
 ### HCI_VS_MSFT_LE_Monitor_Device_Event
 [ref_HCI_VS_MSFT_LE_Monitor_Device_Event]: #hci_vs_msft_le_monitor_device_event
@@ -694,7 +694,7 @@ Address_type (1 octet):
 |---|---|
 |0x00|Public Device Address.|
 |0x01|Random Device Address.|
-|0x02&#160;-&#160;0xFF|Reserved values for future use.|
+|0x02&#160;to&#160;0xFF|Reserved values for future use.|
 
 BD_ADDR (6 octets):
 
@@ -772,7 +772,7 @@ The controller then receives the following advertisement packets.
 |Pattern to be matched at position 0x00 for AD Type 0x01|0x01|
 |Bytes at position 0x00 for the AD Type 0x01|0x01|
 |AD Type of second pattern to be matched|0xFF (Manufacturer specific data)|
-|Length of second patter to be matched|0x06 - 0x02 = 0x04 bytes|
+|Length of second pattern to be matched|0x06 - 0x02 = 0x04 bytes|
 |Pattern to be matched at position 0x00 for AD Type 0xFF|0x00 0x06 0xFF 0xFF|
 |Bytes at position 0x00 for the AD Type 0xFF|0x00 0x06 0xFF 0xFF|
 
@@ -786,7 +786,7 @@ The controller then receives the following advertisement packets.
 |Pattern to be matched at position 0x00 for AD Type 0x01|0x01|
 |Bytes at position 0x00 for the AD Type 0x01|0x01|
 |AD Type of second pattern to be matched|0xFF (Manufacturer specific data)|
-|Length of second patter to be matched|0x06 - 0x02 = 0x04 bytes|
+|Length of second pattern to be matched|0x06 - 0x02 = 0x04 bytes|
 |Pattern to be matched at position 0x00 for AD Type 0xFF|0x00 0x06 0xFF |
 |Bytes at position 0x00 for the AD Type 0xFF|0x00 0x06 0xFF |
 
