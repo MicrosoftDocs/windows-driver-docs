@@ -428,7 +428,7 @@ The following schema is also valid as of Windows 10, version 1809.  It enables a
 
 [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
 
-[Universal Windows Platform (UWP)](/windows/uwp/design/basics/design-and-ui-intro)
+[Universal Windows Platform (UWP)](/windows/uwp/design/basics)
 
 [App capabilities](/windows/uwp/packaging/app-capability-declarations)
 
