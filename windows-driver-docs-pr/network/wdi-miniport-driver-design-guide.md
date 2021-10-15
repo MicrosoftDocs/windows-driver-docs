@@ -121,5 +121,5 @@ The following principles guided the overall model and design of this protocol.
 ## Related topics
 
 
-[WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)
+[WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/#wireless-networking)
 
