@@ -1,5 +1,5 @@
 ---
-title:Naming convention for EMI rails 
+title: Naming convention for EMI rails 
 description: Naming convention for EMI rails 
 keywords:
 - Energy Metering , interface
@@ -17,12 +17,12 @@ Energy Estimation Engine (E3) attributes energy to software applications. If the
 ## Rail to Component mapping
 | EMI Rail Name | Component |
 |--|--|
-| CPU_* | cpu |
-| STORAGE_* | disk | 
-| WIFI_* | network |
-| MBB_* | mbb |
-| DISPLAY_* | display |
-| GPU_* | Soc |
+| CPU or CPU_* | cpu |
+| STORAGE or STORAGE_* | disk | 
+| WIFI or WIFI_* | network |
+| MBB or MBB_* | mbb |
+| DISPLAY or DISPLAY_* | display |
+| GPU or GPU_* | soc |
 
 
 ## How the rails are mapped to E3 component energy
