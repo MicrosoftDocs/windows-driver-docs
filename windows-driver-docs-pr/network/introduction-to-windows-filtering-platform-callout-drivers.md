@@ -16,7 +16,7 @@ This section introduces Windows Filtering Platform [callout drivers](callout-dri
 
 For more information about the Windows Filtering Platform, see the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) documentation in the Microsoft Windows SDK.
 
-For WFP reference information, see [Windows Filtering Platform Callout Drivers](/windows-hardware/drivers/ddi/_netvista/).
+For WFP reference information, see [Windows Filtering Platform Callout Drivers](/windows-hardware/drivers/ddi/_netvista/#windows-filtering-platform-callout-drivers).
 
 ### Purpose of Callout Drivers
 
