@@ -1,27 +1,14 @@
 ---
-title: EVENTSETID\_CROSSBAR
-description: EVENTSETID\_CROSSBAR
-ms.date: 11/28/2017
+title: EVENTSETID_CROSSBAR
+description: The EVENTSETID_CROSSBAR event set notifies clients when a crossbar change event occurs
+ms.date: 10/11/2021
 ms.localizationpriority: medium
 ---
 
-# EVENTSETID\_CROSSBAR
+# EVENTSETID_CROSSBAR
 
+The **EVENTSETID_CROSSBAR** event set notifies clients when a crossbar change event occurs, such as when a new signal routing has been selected.
 
-## <span id="ddk_eventsetid_crossbar_ks"></span><span id="DDK_EVENTSETID_CROSSBAR_KS"></span>
+The event item in this set is specified in the KSEVENT_CROSSBAR enumeration.
 
-
-The **EVENTSETID\_CROSSBAR** event set notifies clients when a crossbar change event occurs, such as when a new signal routing has been selected.
-
-The event item in this set is specified in the KSEVENT\_CROSSBAR enumeration.
-
-The only event in this set is [**KSEVENT\_CROSSBAR\_CHANGED**](ksevent-crossbar-changed.md).
-
- 
-
- 
-
-
-
-
-
+The only event in this set is [**KSEVENT_CROSSBAR_CHANGED**](ksevent-crossbar-changed.md).

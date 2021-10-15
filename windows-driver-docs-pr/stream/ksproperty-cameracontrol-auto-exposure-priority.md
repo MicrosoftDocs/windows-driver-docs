@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY
-description: The KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY property specifies whether the device can dynamically vary the frame rate.
+title: KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY
+description: The KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY property specifies whether the device can dynamically vary the frame rate.
 keywords: ["KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,73 +10,26 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/14/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY
+# KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY
 
+The **KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY** property specifies whether the device can dynamically vary the frame rate.
 
-The KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY property specifies whether the device can dynamically vary the frame rate.
+## Usage Summary Table
 
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter or node</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a>, <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
-<td><p>ULONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter or node | [**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s), [**KSPROPERTY_CAMERACONTROL_NODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s) | ULONG |
 
 The property value (operation data) is a ULONG that specifies whether frame rate can be dynamically varied by the device.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0</p></td>
-<td><p>Frame rate must remain constant.</p></td>
-</tr>
-<tr class="even">
-<td><p>1</p></td>
-<td><p>Frame rate can be dynamically varied by the device.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Description |
+|--|--|
+| 0 | Frame rate must remain constant. |
+| 1 | Frame rate can be dynamically varied by the device. |
 
 ## Remarks
 
@@ -86,35 +39,18 @@ Without auto-exposure, for instance, if the frame rate is 30 fps, the exposure t
 
 With auto-exposure priority, however, the camera could compensate for low lighting by decreasing the frame rate. For instance, the camera could reduce frame rate to 25 fps, thereby lengthening exposure time to 40 ms.
 
-KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY maps to the **Low-Light Compensation** check box on the USB Video Class property page.
+**KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY** maps to the **Low-Light Compensation** check box on the USB Video Class property page.
 
-In order to use KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY, you must set [**KSPROPERTY\_CAMERACONTROL\_EXPOSURE**](ksproperty-cameracontrol-exposure.md) to auto. In other words, the camera must be in auto-exposure mode for the auto-exposure-priority mode to be a valid option.
+In order to use **KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY**, you must set [**KSPROPERTY_CAMERACONTROL_EXPOSURE**](ksproperty-cameracontrol-exposure.md) to auto. In other words, the camera must be in auto-exposure mode for the auto-exposure-priority mode to be a valid option.
 
-The default value for KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY is zero.
+The default value for KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY is zero.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available for Windows Vista and later versions of the Windows operating system.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
+[**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
 
-[**KSPROPERTY\_CAMERACONTROL\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
-
-[**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)
-
+[**KSPROPERTY_CAMERACONTROL_NODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)

@@ -1,6 +1,6 @@
 ---
-title: KSEVENT\_VIDCAP\_AUTO\_UPDATE
-description: The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a property value changes.
+title: KSEVENT_VIDCAP_AUTO_UPDATE
+description: The KSEVENT_VIDCAP_AUTO_UPDATE event is triggered when a property value changes.
 keywords: ["KSEVENT_VIDCAP_AUTO_UPDATE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -8,49 +8,19 @@ api_name:
 - KSEVENT_VIDCAP_AUTO_UPDATE
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 10/11/2021
 ms.localizationpriority: medium
 ---
 
-# KSEVENT\_VIDCAP\_AUTO\_UPDATE
+# KSEVENT_VIDCAP_AUTO_UPDATE
 
+The **KSEVENT_VIDCAP_AUTO_UPDATE** event is triggered when a property value changes.
 
-The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a property value changes.
+## Usage Summary Table
 
-## <span id="ddk_ksevent_vidcap_auto_update_ks"></span><span id="DDK_KSEVENT_VIDCAP_AUTO_UPDATE_KS"></span>
-
-
-### <span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Event descriptor type</th>
-<th>Event value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](./ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Event descriptor type | Event value type |
+|--|--|--|--|--|
+| No | Yes | Filter | [**KSEVENT**](/windows-hardware/drivers/stream/ksevent-structure) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
 
 ## Remarks
 

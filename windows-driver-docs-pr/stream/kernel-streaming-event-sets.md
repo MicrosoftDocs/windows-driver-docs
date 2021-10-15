@@ -1,33 +1,20 @@
 ---
 title: Kernel Streaming Event Sets
-description: Kernel Streaming Event Sets
-ms.date: 11/28/2017
+description: Provides information about kernel streaming event sets.
+ms.date: 10/11/2021
 ms.localizationpriority: medium
 ---
 
 # Kernel Streaming Event Sets
 
-
-## <span id="ddk_kernel_streaming_event_sets_ks"></span><span id="DDK_KERNEL_STREAMING_EVENT_SETS_KS"></span>
-
-
 This section contains information about the following topics:
 
-[**KSEVENTSETID\_Clock**](kseventsetid-clock.md)
+[**KSEVENTSETID_Clock**](kseventsetid-clock.md)
 
-[**KSEVENTSETID\_Connection**](kseventsetid-connection.md)
+[**KSEVENTSETID_Connection**](kseventsetid-connection.md)
 
-[**KSEVENTSETID\_Device**](kseventsetid-device.md)
+[**KSEVENTSETID_Device**](kseventsetid-device.md)
 
-[**KSEVENTSETID\_DynamicFormatChange**](kseventsetid-dynamicformatchange.md)
+[**KSEVENTSETID_DynamicFormatChange**](kseventsetid-dynamicformatchange.md)
 
-[**KSEVENTSETID\_StreamAllocator**](kseventsetid-streamallocator.md)
-
- 
-
- 
-
-
-
-
-
+[**KSEVENTSETID_StreamAllocator**](kseventsetid-streamallocator.md)
