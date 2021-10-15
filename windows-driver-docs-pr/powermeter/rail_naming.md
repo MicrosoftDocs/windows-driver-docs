@@ -17,7 +17,12 @@ Energy Estimation Engine (E3) attributes energy to software applications. If the
 ## Rail to Component mapping
 | EMI Rail Name | Component |
 |--|--|
-| CPU_* | cpu | STORAGE_* | disk | WIFI_* | network | MBB_* | mbb | DISPLAY_* | display | GPU_* | Soc |
+| CPU_* | cpu |
+| STORAGE_* | disk | 
+| WIFI_* | network |
+| MBB_* | mbb |
+| DISPLAY_* | display |
+| GPU_* | Soc |
 
 
 ## How the rails are mapped to E3 component energy
