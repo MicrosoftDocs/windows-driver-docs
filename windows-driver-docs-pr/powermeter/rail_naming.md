@@ -9,17 +9,16 @@ ms.date: 10/14/2021
 ms.localizationpriority: medium
 ---
 
-# Naming convention for EMI rails 
+# Integrating EMI data into E3 
 
+Energy Estimation Engine (E3) attributes energy to software applications. If the device has data expressed through the EMI interface and matches the rail naming taxonomy, E3 will preferentially use that data over its software estimated model.
 
-The Energy Estimation Engine (E3) will override the software model for components with EMI rails, if they match a pre-defined naming convention.   
 
 ## Rail to Component mapping
 | EMI Rail Name | Component |
 |--|--|
-| CPU | cpu | STORAGE | disk | WIFI | network | MBB | mbb | DISPLAY | display | GPU | Soc* |
+| CPU_* | cpu | STORAGE_* | disk | WIFI_* | network | MBB_* | mbb | DISPLAY_* | display | GPU_* | Soc |
 
-* Gpu energy is mis-labeled as “Soc” component energy in E3.
 
 ## How the rails are mapped to E3 component energy
 If the Emi rail name matches the name in the map above, the measurement from that rail and only that rail will be used for the E3 component energy.  
@@ -33,10 +32,3 @@ Only GPU will be used for E3 Soc energy
 ## Example without exact match
 WIFI_BLUETOOTH and WIFI_WIFI are available.
 The sum of WIFI_BLUETOOTH and WIFI_WIFI will be used for E3 Network energy.
-
-## Tip
-The output of “powercfg /srumutil” has a column that indicates which components used EMI rails
-
- 
-
-
