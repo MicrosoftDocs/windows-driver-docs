@@ -15,7 +15,7 @@ After you create and verify a [driver package's](driver-packages.md) [catalog f
 
 ## Using a MakeCert Test Certificate or Commercial Test Certificate to Test-Sign a Driver Package's Catalog File
 
-Use the following SignTool command to sign a [catalog file](catalog-files.md) by using a [MakeCert test certificate](makecert-test-certificate.md) or a [commercial test certificate](commercial-test-certificate.md):
+Use the following SignTool command to sign a [catalog file](catalog-files.md) by using a [MakeCert test certificate](makecert-test-certificate.md) or a [commercial test certificate](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates):
 
 ```cpp
 SignTool sign /v /s TestCertStoreName /n TestCertName /t http://timestamp.digicert.com CatalogFileName.cat

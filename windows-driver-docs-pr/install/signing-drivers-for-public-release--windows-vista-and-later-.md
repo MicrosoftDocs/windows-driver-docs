@@ -22,7 +22,7 @@ Release-signing identifies the publisher of a kernel-mode binary (for example, d
 
 -   A [WHQL Release Signature](whql-release-signature.md) obtained through the [Windows Logo Program](/windows-hardware/drivers).
 
--   A release signature created through a [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
+-   A release signature created through a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).
 
 To understand the steps that are involved in release-signing [driver packages](driver-packages.md), review the following topics:
 
@@ -38,7 +38,5 @@ For more information about the release-signing process, see the following topics
 
 [Release Certificates](release-certificates.md)
 
-[Release-Signing Driver Packages](release-signing-driver-packages.md)
-
- 
+[Release-Signing Driver Packages](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates)
 

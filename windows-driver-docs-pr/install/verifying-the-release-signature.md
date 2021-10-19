@@ -72,7 +72,5 @@ You can also verify the digital signature of the catalog file itself through Win
 
 -   For digitally signed files, the file's **Properties** dialog box has an additional **Digital Signature** tab, on which the signature, time stamp, and details of the certificate that was used to sign the file appear.
 
-For more information about how to release-sign driver packages, see [Release-Signing Driver Packages](release-signing-driver-packages.md) and [Verifying the SPC Signature of a Catalog File](verifying-the-spc-signature-of-a-catalog-file.md).
-
- 
+For more information about how to release-sign driver packages, see [Release-Signing Driver Packages](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) and [Verifying the SPC Signature of a Catalog File](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).
 

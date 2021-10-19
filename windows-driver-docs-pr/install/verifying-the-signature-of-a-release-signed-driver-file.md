@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Verifying the Signature of a Release-Signed Driver File
 
 
-To verify an embedded signature in a driver file that is created by a [Software Publisher Certificate (SPC)](software-publisher-certificate.md), use the following [**SignTool**](../devtest/signtool.md) command:
+To verify an embedded signature in a driver file that is created by a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates), use the following [**SignTool**](../devtest/signtool.md) command:
 
 ```cpp
 SignTool verify /v /kp DriverFileName.sys
@@ -29,6 +29,4 @@ For example, the following command verifies that *Toaster.sys* has a valid embed
 ```cpp
 SignTool verify /kp amd64\toaster.sys
 ```
-
- 
 
