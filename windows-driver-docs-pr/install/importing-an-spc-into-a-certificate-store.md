@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Importing an SPC into a Certificate Store
 
 
-Once a Personal Information Exchange (.*pfx*) file is created to store a [Software Publisher Certificate (SPC)](software-publisher-certificate.md) and its private and public keys, the *.pfx* file must be imported into the Personal certificate store on the signing computer. For more information about *.pfx* files, see [Personal Information Exchange (.pfx) Files](personal-information-exchange---pfx--files.md).
+Once a Personal Information Exchange (.*pfx*) file is created to store a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) and its private and public keys, the *.pfx* file must be imported into the Personal certificate store on the signing computer. For more information about *.pfx* files, see [Personal Information Exchange (.pfx) Files](personal-information-exchange---pfx--files.md).
 
 To import a *.pfx* file into the local Personal certificate store, do the following:
 
@@ -33,4 +33,3 @@ Where:
 -   The **-importPFX** option specifies name of the *.pfx* file (*abc.pfx*).
 
 Once the *.pfx* file is imported into the Personal certificate store on the signing computer, you can use [**SignTool**](../devtest/signtool.md) to release-sign [driver packages](driver-packages.md).
-

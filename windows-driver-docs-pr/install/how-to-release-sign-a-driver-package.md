@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This section provides the basic steps that you have to follow when you release-sign a [driver package](driver-packages.md). This includes the following:
 
--   Obtaining a [Software Publisher Certificate (SPC)](software-publisher-certificate.md) from a commercial certificate authority (CA).
+-   Obtaining a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) from a commercial certificate authority (CA).
 
 -   Preparing a [driver package](driver-packages.md) for release-signing. This includes creating a [catalog file](catalog-files.md), which contains the digital signature for the driver package.
 
@@ -46,7 +46,7 @@ When discussing the release-signing process, the topics of this section use the 
 
 This section contains the following topics:
 
-[Obtaining a Software Publisher Certificate (SPC)](obtaining-a-software-publisher-certificate--spc-.md)
+[Obtaining a Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates)
 
 [Creating a Catalog File for Release-Signing a Driver Package](creating-a-catalog-file-for-release-signing-a-driver-package.md)
 
