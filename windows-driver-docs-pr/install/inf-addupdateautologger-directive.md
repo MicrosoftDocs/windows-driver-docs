@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # INF AddAutoLogger and UpdateAutoLogger Directives 
 
-**AddAutoLogger** and **UpdateAutoLogger** directives are used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). They specify characteristics for [Event Tracing for Windows](/windows/desktop/ETW/about-event-tracing) (ETW) AutoLogger sessions that record events occurring early in the operating system boot process. These directives are supported for Windows 10 version XXXX and later. 
+**AddAutoLogger** and **UpdateAutoLogger** directives are used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). They specify characteristics for [Event Tracing for Windows](/windows/desktop/ETW/about-event-tracing) (ETW) AutoLogger sessions that record events occurring early in the operating system boot process. These directives are supported starting in Windows 11.
 
 ```inf
 [DDInstall.Events] 
@@ -200,7 +200,7 @@ Enabled = 1
 
 ## Legacy Compatibility
 
-The AddAutoLogger and UpdateAutoLogger directives are supported on Windows 10 version XXXX and later. To configure an AutoLogger on a downlevel OS, use the [AddReg](inf-addreg-directive.md) directive.
+The AddAutoLogger and UpdateAutoLogger directives are supported starting in Windows 11. To configure an AutoLogger on a downlevel OS, use the [AddReg](inf-addreg-directive.md) directive.
 
 ```inf
 [Contoso_AutoLogger_AddReg] 
