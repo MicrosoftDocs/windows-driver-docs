@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_GO\_NEGOTIATION\_RESPONSE\_PARAMETERS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_GO\_NEGOTIATION\_RESPONSE\_PARAMETERS is a TLV that contains incoming GO Negotiation Response parameters.

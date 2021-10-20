@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_CONFIG\_METHODS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_CONFIG\_METHODS is a TLV that contains Wi-Fi Direct configuration methods.

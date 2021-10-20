@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_REPLAY\_COUNTER (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 WDI\_TLV\_REPLAY\_COUNTER is a TLV that contains a UINT64 value that represents a replay counter.
 

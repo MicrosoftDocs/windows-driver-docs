@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CONNECTION\_SETTINGS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_CONNECTION\_SETTINGS is a TLV that contains connection settings for [OID\_WDI\_TASK\_CONNECT](./oid-wdi-task-connect.md).

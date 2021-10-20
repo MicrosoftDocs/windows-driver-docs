@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_SAE_SCALAR (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_SAE_SCALAR** is a TLV that contains the Finite Field Element (FFE) for a Simultaneous Authentication of Equals (SAE) Commit request.
 

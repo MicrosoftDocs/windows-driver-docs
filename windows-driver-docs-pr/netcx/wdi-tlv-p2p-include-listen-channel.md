@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL is a TLV that specifies whether the probe request should include the Listen Channel attribute during discovery.

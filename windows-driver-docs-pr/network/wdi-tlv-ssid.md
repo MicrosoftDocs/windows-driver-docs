@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SSID
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_SSID is a TLV that contains an SSID.

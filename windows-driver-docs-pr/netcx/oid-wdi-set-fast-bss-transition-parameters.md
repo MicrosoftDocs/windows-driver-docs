@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS is sent in response to [NDIS\_STATUS\_WDI\_INDICATION\_FT\_ASSOC\_PARAMS\_NEEDED](ndis-status-wdi-indication-ft-assoc-params-needed.md). It has the parameters required to send the (Re)Association request. The command is sent to the driver as a direct OID.

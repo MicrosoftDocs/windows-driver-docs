@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_DOT11\_RESET\_PARAMETERS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_DOT11\_RESET\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DOT11\_RESET](./oid-wdi-task-dot11-reset.md).

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_ACTION\_FRAME\_IES
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_ACTION\_FRAME\_IES is a TLV that contains action frame IEs.

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_PROVISION\_SERVICE\_ATTRIBUTES (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_PROVISION\_SERVICE\_ATTRIBUTES is a TLV that contains Wi-Fi Direct Provision Service attributes.

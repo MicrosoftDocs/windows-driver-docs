@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_FTM_RESPONSE_STATUS (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_FTM_RESPONSE_STATUS** is a TLV that contains the Fine Timing Measurement (FTM) response status from a target BSS.
 

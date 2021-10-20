@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_FLUSH\_BSS\_ENTRY
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_FLUSH\_BSS\_ENTRY is sent to the device to flush the list of BSS entries maintained by the adapter. This command can only be sent on the station port.

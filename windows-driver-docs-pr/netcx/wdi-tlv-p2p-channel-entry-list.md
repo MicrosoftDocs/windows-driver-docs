@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_CHANNEL\_ENTRY\_LIST (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_CHANNEL\_ENTRY\_LIST is a TLV that contains a channel number list.

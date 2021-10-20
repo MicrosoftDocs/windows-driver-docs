@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_FT\_R1KHID
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_FT\_R1KHID is an unused TLV.

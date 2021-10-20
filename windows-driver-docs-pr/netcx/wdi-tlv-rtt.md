@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_RTT (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_RTT** is a TLV that contains the measured roundtrip time (RTT), in picoseconds, for a Fine Timing Measurement (FTM) request. 
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_RTT_ACCURACY (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_RTT_ACCURACY** is a TLV that contains the accuracy, or expected degree of closeness, of a roundtrip time (RTT) measurement to the true value for a Fine Timing Measurement (FTM) request. The unit is in picoseconds.
 

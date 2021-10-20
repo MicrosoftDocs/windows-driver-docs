@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # OID\_WDI\_TASK\_P2P\_DISCOVER
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_P2P\_DISCOVER is issued to the device to perform Wi-Fi Direct discovery.

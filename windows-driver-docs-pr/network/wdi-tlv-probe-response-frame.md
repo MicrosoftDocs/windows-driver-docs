@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PROBE\_RESPONSE\_FRAME
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PROBE\_RESPONSE\_FRAME is a TLV that contains a probe response frame.

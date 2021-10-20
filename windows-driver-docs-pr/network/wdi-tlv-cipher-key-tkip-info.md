@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CIPHER\_KEY\_TKIP\_INFO
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_CIPHER\_KEY\_TKIP\_INFO is a TLV that contains TKIP information.

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 The Wi-Fi adapter sends this indication to request parameters for Simultaneous Authentication of Equals (SAE) authentication.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SCAN\_DWELL\_TIME
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_SCAN\_DWELL\_TIME is a TLV that contains scanning dwell time settings.

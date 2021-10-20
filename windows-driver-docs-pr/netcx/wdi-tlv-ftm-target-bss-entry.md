@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_FTM_TARGET_BSS_ENTRY (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_FTM_TARGET_BSS_ENTRY** is a TLV that contains information for a BSS target with which Fine Timing Measurement (FTM) procedures should be completed. 
 

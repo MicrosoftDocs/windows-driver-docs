@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ACCESS\_NETWORK\_TYPE (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_ACCESS\_NETWORK\_TYPE is a TLV that contains an Access Network Type.

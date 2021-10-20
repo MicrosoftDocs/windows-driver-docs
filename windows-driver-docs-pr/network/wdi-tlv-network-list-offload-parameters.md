@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS is a TLV that contains Network List Offload (NLO) parameters for [OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD](./oid-wdi-set-network-list-offload.md).

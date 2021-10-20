@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CONNECT\_PARAMETERS (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 WDI\_TLV\_CONNECT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_CONNECT](./oid-wdi-task-connect.md) and [OID\_WDI\_TASK\_ROAM](./oid-wdi-task-roam.md).
 

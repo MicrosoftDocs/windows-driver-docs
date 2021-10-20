@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 WiFiCx drivers send this indication to indicate that the cipher key(s) have been updated.
 

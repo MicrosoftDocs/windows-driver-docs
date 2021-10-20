@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # WDI_TLV_SAE_CONFIRM_RESPONSE
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_SAE_CONFIRM_RESPONSE** is a TLV that contains the Simultaneous Authentication of Equals (SAE) Confirm response frame.
 

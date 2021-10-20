@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_HOTSPOT\_DOMAIN\_PARTNER
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_HOTSPOT\_DOMAIN\_PARTNER is an unused TLV.

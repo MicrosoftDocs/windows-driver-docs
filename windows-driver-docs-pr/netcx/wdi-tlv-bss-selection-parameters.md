@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_BSS\_SELECTION\_PARAMETERS (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_BSS\_SELECTION\_PARAMETERS is a TLV that contains [**WDI\_BSS\_SELECTION\_FLAGS**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_bss_selection_flags) that are used by host for BSS selection.

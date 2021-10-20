@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PHY\_STATISTICS (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_PHY\_STATISTICS is a TLV that contains per-PHY statistics for [OID\_WDI\_GET\_STATISTICS](./oid-wdi-get-statistics.md).

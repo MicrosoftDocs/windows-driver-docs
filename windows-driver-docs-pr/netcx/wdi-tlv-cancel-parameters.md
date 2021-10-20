@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CANCEL\_PARAMETERS (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_CANCEL\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_ABORT\_TASK](./oid-wdi-abort-task.md).

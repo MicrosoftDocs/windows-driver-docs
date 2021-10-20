@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PHY\_TYPE\_LIST
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PHY\_TYPE\_LIST is a TLV that contains an array of PHY types.

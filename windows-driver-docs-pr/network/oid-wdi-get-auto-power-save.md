@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_GET\_AUTO\_POWER\_SAVE
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_GET\_AUTO\_POWER\_SAVE gets the power save state of the port.

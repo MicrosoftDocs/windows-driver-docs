@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_GET\_STATISTICS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_GET\_STATISTICS requests that the IHV component returns MAC and PHY layer statistics.

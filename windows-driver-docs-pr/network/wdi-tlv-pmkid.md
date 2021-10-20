@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PMKID
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PMKID is a TLV that contains a PMKID value.

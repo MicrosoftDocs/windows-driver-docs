@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_ASP2\_ADVERTISED\_SERVICE\_ENTRY
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_ASP2\_ADVERTISED\_SERVICE\_ENTRY is a TLV that contains an ASP2 Advertised Service Entry.

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_SAE_ANTI_CLOGGING_TOKEN (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_SAE_ANTI_CLOGGING_TOKEN** is a TLV that contains the anti-clogging token for a Simultaneous Authentication of Equals (SAE) Commit request.
 

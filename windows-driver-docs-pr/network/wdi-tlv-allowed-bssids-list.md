@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ALLOWED\_BSSIDS\_LIST
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_ALLOWED\_BSSIDS\_LIST is a TLV that contains a list of BSSIDs that are allowed to be used for association.

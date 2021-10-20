@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY instructs the adapter to periodically perform Wi-Fi Direct discovery in the background

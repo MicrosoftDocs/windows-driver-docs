@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PHY\_LIST
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PHY\_LIST is an unused TLV.

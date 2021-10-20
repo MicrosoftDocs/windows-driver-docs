@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_FT\_MDE
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_FT\_MDE is a TLV that contains the MDIE of a BSS entry.

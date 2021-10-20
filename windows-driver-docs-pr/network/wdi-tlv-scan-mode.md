@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SCAN\_MODE
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_SCAN\_MODE is a TLV that contains scan mode parameters.

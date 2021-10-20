@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_OPERATING\_CLASS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_OPERATING\_CLASS is a TLV that contains the frequency band for a channel.

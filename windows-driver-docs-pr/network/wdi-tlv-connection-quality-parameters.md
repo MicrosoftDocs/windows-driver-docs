@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS is a TLV that contains the desired Wi-Fi Connection Quality Hint.

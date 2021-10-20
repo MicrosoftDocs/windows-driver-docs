@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS deletes cipher keys from the device's cipher key table.

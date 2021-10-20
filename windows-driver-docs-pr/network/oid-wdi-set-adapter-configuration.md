@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_ADAPTER\_CONFIGURATION
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_ADAPTER\_CONFIGURATION configures the adapter. It is an optional property and can only be sent before any ports are created.

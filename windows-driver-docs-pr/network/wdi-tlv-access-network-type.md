@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ACCESS\_NETWORK\_TYPE
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_ACCESS\_NETWORK\_TYPE is a TLV that contains an Access Network Type.

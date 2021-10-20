@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_STATUS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_STATUS is a TLV that contains a status value.

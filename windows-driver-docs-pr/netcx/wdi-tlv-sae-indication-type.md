@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_SAE_INDICATION_TYPE (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_SAE_INDICATION_TYPE** is a TLV that contains the type of information needed to continue SAE authentication with a target BSSID, or notification that authentication cannot continue.
 

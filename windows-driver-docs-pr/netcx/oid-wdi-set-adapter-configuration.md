@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_ADAPTER\_CONFIGURATION (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_SET\_ADAPTER\_CONFIGURATION configures the adapter. It is an optional property and can only be sent before any ports are created.

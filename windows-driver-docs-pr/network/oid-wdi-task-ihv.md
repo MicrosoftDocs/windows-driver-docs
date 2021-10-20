@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # OID\_WDI\_TASK\_IHV
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_IHV is used to start an IHV-initiated task.

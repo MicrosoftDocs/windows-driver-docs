@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG is a TLV that contains Network List Offload (NLO) configuration.

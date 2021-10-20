@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_TASK\_IHV (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_TASK\_IHV is used to start an IHV-initiated task.

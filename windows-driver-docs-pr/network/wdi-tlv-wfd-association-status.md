@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_WFD\_ASSOCIATION\_STATUS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_WFD\_ASSOCIATION\_STATUS is a TLV that contains the status code to be set when an association request is denied.

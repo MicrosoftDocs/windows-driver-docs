@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST to inform the host about updates to the BSS entries. This is an unsolicited indication and can be sent at any time.

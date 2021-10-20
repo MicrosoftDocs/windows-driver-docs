@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_SAE_CONFIRM_RESPONSE (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_SAE_CONFIRM_RESPONSE** is a TLV that contains the Simultaneous Authentication of Equals (SAE) Confirm response frame.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_BSS\_ENTRY\_PHY\_INFO (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WiFiCx does not use the WDI_TLV_BSS_ENTRY_PHY_INFO TLV.

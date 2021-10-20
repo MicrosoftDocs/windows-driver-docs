@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_KCK\_CONTENT (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 WDI\_TLV\_KCK\_CONTENT is a TLV that contains an IEEE 802.11 key confirmation key (KCK).
 

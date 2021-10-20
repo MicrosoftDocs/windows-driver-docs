@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_FIRMWARE\_VERSION (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_FIRMWARE\_VERSION is a TLV that contains the firmware version.

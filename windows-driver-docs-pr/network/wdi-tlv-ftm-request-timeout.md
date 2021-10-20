@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # WDI_TLV_FTM_REQUEST_TIMEOUT
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_FTM_REQUEST_TIMEOUT** is a TLV that contains the maximum time, in milliseconds, to complete a Fine Timing Measurement (FTM).
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME is issued to the device to send a Wi-Fi Direct Public Action Frame Request.

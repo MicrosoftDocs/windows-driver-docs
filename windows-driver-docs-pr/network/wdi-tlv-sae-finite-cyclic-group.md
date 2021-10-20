@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # WDI_TLV_SAE_FINITE_CYCLIC_GROUP
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_SAE_FINITE_CYCLIC_GROUP** is a TLV that contains the Finite Cyclic Group used in a Commit request for Simultaneous Authentication of Equals (SAE) authentication.
 

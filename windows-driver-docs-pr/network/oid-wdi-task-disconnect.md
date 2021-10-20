@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_TASK\_DISCONNECT
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_DISCONNECT is used to terminate a connection with a peer.

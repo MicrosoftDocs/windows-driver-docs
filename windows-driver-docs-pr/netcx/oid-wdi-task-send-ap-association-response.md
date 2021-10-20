@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE requests that the IHV component sends an Association Response to a peer device that has recently sent an association request.

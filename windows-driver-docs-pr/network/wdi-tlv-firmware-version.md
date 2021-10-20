@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_FIRMWARE\_VERSION
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_FIRMWARE\_VERSION is a TLV that contains the firmware version.

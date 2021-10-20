@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_SERVICE\_TRANSACTION\_ID
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_SERVICE\_TRANSACTION\_ID is a TLV that contains the Service transaction ID to be used for the ANQP query request.

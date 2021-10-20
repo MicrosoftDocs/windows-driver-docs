@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ASSOCIATION\_REQUEST\_IES
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_ASSOCIATION\_REQUEST\_IES is an unused TLV.

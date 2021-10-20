@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME requests that the IHV component sends Response Action Frames.

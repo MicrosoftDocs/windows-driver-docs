@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_REQUEST_LCI_REPORT (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_REQUEST_LCI_REPORT** is a TLV that contains information for whether a Location Configuration Information (LCI) report should be requested from a target BSS during a Fine Timing Measurement (FTM) request.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_GET\_NEXT\_ACTION\_FRAME\_DIALOG\_TOKEN
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_GET\_NEXT\_ACTION\_FRAME\_DIALOG\_TOKEN requests the DialogToken to be used in the next Action frame.

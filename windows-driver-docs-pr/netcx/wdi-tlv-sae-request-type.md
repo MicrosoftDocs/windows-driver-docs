@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_SAE_REQUEST_TYPE (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_SAE_REQUEST_TYPE** is a TLV that contains the type of Simultaneous Authentication of Equals (SAE) request frame to send to a target BSSID.
 

@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME is issued to the IHV component to send a Wi-Fi Direct Public Action Frame Request to a peer.

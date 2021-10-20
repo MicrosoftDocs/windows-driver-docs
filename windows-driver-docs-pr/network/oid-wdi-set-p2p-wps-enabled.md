@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_P2P\_WPS\_ENABLED
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables Wi-Fi Protected Setup (WPS) on the NIC.

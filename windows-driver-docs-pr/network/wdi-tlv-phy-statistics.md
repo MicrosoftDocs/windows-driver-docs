@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PHY\_STATISTICS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PHY\_STATISTICS is a TLV that contains per-PHY statistics for [OID\_WDI\_GET\_STATISTICS](./oid-wdi-get-statistics.md).

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED to indicate that the host should try to find a better peer to connect to. This notification is used when the link quality with the currently connected peer falls below a certain threshold. On sending this notification, the host may trigger a roam scan and/or a roam operation. The Microsoft component does not perform a disconnect before it starts the roam operation.

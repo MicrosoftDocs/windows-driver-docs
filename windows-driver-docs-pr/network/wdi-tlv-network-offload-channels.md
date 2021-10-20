@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS is an unused TLV.

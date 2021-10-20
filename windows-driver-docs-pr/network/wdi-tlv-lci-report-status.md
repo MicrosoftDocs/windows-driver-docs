@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # WDI_TLV_LCI_REPORT_STATUS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_LCI_REPORT_STATUS** is a TLV that contains the status result of a Location Configuration Information (LCI) report, if one was requested during a Fine Timing Measurement (FTM) request.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_GO\_NEGOTIATION\_REQUEST\_PARAMETERS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_GO\_NEGOTIATION\_REQUEST\_PARAMETERS is a TLV that contains Wi-Fi Direct Group Owner negotiation request parameters.

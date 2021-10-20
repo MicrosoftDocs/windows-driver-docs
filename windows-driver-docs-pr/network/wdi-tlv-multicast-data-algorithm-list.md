@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_MULTICAST\_DATA\_ALGORITHM\_LIST
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_MULTICAST\_DATA\_ALGORITHM\_LIST is a TLV that contains an array of multicast data algorithm pairs.

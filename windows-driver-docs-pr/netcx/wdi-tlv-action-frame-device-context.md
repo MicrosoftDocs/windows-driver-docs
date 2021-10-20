@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ACTION\_FRAME\_DEVICE\_CONTEXT (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_ACTION\_FRAME\_DEVICE\_CONTEXT is a TLV that contains an Action Frame device context.

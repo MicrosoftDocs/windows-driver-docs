@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SSID\_LIST (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WiFiCx does not use the WDI\_TLV\_SSID\_LIST TLV.

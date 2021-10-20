@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME is a TLV that contains the received disassociation frame.

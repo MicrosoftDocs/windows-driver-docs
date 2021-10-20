@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 WiFiCx drivers use the NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT status indication to pass on unsolicited information about a device to a user mode client.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS specifies parameters that the adapter can use during association to a set of BSSIDs.

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_RADIO\_STATE\_PARAMETERS (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_RADIO\_STATE\_PARAMETERS is a TLV that contains radio state parameters for [OID\_WDI\_TASK\_SET\_RADIO\_STATE](./oid-wdi-task-set-radio-state.md).

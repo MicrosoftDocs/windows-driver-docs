@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD is a TLV that contains the unreachable detection threshold.

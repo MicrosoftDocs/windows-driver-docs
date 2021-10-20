@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_DEFAULT\_KEY\_ID (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_SET\_DEFAULT\_KEY\_ID sets the default key ID for packet transmission on a port.

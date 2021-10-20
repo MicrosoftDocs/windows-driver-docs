@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS is a TLV that contains the requested priority for [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST](./ndis-status-wdi-indication-ihv-task-request.md).

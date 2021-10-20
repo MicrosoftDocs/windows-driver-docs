@@ -10,7 +10,7 @@ ms.custom: 19H1
 
 # WDI_TLV_RETRY_AFTER
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_RETRY_AFTER** is a TLV that contains the duration, in seconds, that should pass before trying to request a new Fine Timing Measurement (FTM) from a target BSS.
 

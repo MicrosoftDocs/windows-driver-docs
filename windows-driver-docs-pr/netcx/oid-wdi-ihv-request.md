@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_IHV\_REQUEST (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 OID\_WDI\_IHV\_REQUEST is used to forward information that an IHV extensibility module has sent to the miniport.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID_WDI_GET_SUPPORTED_DEVICE_SERVICES
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID_WDI_GET_SUPPORTED_DEVICE_SERVICES queries the IHV driver for all of its supported device services (with each device service identified by a GUID). If no device services are supported, LE should fail the command with **STATUS_NOT_SUPPORTED**.

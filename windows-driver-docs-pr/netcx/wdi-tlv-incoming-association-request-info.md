@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO is a TLV that contains information about the incoming association request.

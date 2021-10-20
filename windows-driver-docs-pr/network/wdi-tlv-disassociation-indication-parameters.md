@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS is a TLV that contains disassociation indication parameters for [NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION](./ndis-status-wdi-indication-disassociation.md).

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS is a TLV that contains initial association parameters for Fast Transition.

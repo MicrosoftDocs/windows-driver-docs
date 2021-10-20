@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_OWE\_DH\_IE
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 WDI\_TLV\_OWE\_DH\_IE is a Diffie-Hellman Extension IE blob that must be included in the association request sent by the station when auth type is OWE. This is applicable to any BSSID that the device would associate with and should be included in addition to the other associated req vendor IEs.
 

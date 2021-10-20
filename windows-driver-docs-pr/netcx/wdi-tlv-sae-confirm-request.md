@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_SAE_CONFIRM_REQUEST (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 **WDI_TLV_SAE_CONFIRM_REQUEST** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Confirm request. 
 

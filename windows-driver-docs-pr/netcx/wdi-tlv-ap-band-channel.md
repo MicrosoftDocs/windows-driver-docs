@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_AP\_BAND\_CHANNEL (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_AP\_BAND\_CHANNEL is a TLV that specifies access point band and channel information.

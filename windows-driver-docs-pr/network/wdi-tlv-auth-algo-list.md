@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_AUTH\_ALGO\_LIST
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_AUTH\_ALGO\_LIST is a TLV that contains a list of authentication algorithms.

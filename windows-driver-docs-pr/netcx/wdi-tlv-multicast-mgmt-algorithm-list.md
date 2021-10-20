@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_MULTICAST\_MGMT\_ALGORITHM\_LIST (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI\_TLV\_MULTICAST\_MGMT\_ALGORITHM\_LIST is a TLV that contains an array of multicast management algorithm pairs.

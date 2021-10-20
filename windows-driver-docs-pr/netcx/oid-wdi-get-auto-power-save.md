@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_GET\_AUTO\_POWER\_SAVE (dot11wificxintf.h)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 OID\_WDI\_GET\_AUTO\_POWER\_SAVE gets the power save state of the port.

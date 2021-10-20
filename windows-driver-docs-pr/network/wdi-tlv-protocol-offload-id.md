@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PROTOCOL\_OFFLOAD\_ID
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 WDI\_TLV\_PROTOCOL\_OFFLOAD\_ID is a TLV that contains the protocol offload identifier.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_INDICATION\_STOP\_AP
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_INDICATION\_STOP\_AP is a TLV that contains the reason for a Stop AP indication.

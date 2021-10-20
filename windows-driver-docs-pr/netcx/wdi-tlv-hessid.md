@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_HESSID (dot11wificxtypes.hpp)
 
-[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+[!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
 WDI_TLV_HESSID is a TLV that contains a list of HESSIDs.

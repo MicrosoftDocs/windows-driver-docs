@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_BSS\_ENTRY\_DEVICE\_CONTEXT
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_BSS\_ENTRY\_DEVICE\_CONTEXT is a TLV that contains device context for the BSS entry.

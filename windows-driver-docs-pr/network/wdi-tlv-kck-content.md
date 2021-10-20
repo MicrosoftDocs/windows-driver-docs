@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_KCK\_CONTENT
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 WDI\_TLV\_KCK\_CONTENT is a TLV that contains an IEEE 802.11 key confirmation key (KCK).
 

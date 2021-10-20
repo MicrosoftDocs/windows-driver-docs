@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_BSS\_ENTRY\_AGE\_INFO
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_BSS\_ENTRY\_AGE\_INFO is a TLV that contains age information for a BSS entry.

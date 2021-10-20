@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_COUNTRY\_REGION\_LIST
 
-[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_COUNTRY\_REGION\_LIST is a TLV that contains a list of country or region codes.
