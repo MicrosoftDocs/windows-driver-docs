@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CONNECTION\_DATAFORMAT
-description: Clients use the KSPROPERTY\_CONNECTION\_DATAFORMAT property to set the current data format.
+title: KSPROPERTY_CONNECTION_DATAFORMAT
+description: Clients use the KSPROPERTY_CONNECTION_DATAFORMAT property to set the current data format.
 keywords: ["KSPROPERTY_CONNECTION_DATAFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,49 +10,19 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/18/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_CONNECTION\_DATAFORMAT
+# KSPROPERTY_CONNECTION_DATAFORMAT
 
+Clients use the **KSPROPERTY_CONNECTION_DATAFORMAT** property to set the current data format.
 
-Clients use the KSPROPERTY\_CONNECTION\_DATAFORMAT property to set the current data format.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_connection_dataformat_ks"></span><span id="DDK_KSPROPERTY_CONNECTION_DATAFORMAT_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) |
 
 ## Remarks
 
@@ -60,28 +30,16 @@ This property takes a [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-
 
 KS filters only need to support this property if they allow clients to reset the current property, or if connections can be made with the data format incompletely specified.
 
-For more information about the KSPROPERTY\_CONNECTION\_DATAFORMAT property, see [KS Data Formats and Data Ranges](./ks-data-formats-and-data-ranges.md) and [Data Range Intersections in AVStream](./data-range-intersections-in-avstream.md).
+For more information about the **KSPROPERTY_CONNECTION_DATAFORMAT** property, see [KS Data Formats and Data Ranges](ks-data-formats-and-data-ranges.md) and [Data Range Intersections in AVStream](data-range-intersections-in-avstream.md).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ks.h (include Ks.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ks.h (include Ks.h)
 
 ## See also
 
+[**KSSTREAM_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header)
 
-[**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header)
+[**KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT**](ksproperty-connection-proposedataformat.md)
 
-[**KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT**](ksproperty-connection-proposedataformat.md)
-
-[**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT**](ksproperty-pin-proposedataformat.md)
+[**KSPROPERTY_PIN_PROPOSEDATAFORMAT**](ksproperty-pin-proposedataformat.md)

@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CONNECTION\_ACQUIREORDERING
-description: The KSPROPERTY\_CONNECTION\_ACQUIREORDERING property is an optional property that should be implemented on a pin when state change order is significant.
+title: KSPROPERTY_CONNECTION_ACQUIREORDERING
+description: The KSPROPERTY_CONNECTION_ACQUIREORDERING property is an optional property that should be implemented on a pin when state change order is significant.
 keywords: ["KSPROPERTY_CONNECTION_ACQUIREORDERING Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,49 +10,19 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/18/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_CONNECTION\_ACQUIREORDERING
+# KSPROPERTY_CONNECTION_ACQUIREORDERING
 
+The **KSPROPERTY_CONNECTION_ACQUIREORDERING** property is an optional property that should be implemented on a pin when state change order is significant. For example, the property should be implemented on communication sink pins if the sink requires pins connected to its communication source pins to be set to an Acquire state before the sink pins are set.
 
-The KSPROPERTY\_CONNECTION\_ACQUIREORDERING property is an optional property that should be implemented on a pin when state change order is significant. For example, the property should be implemented on communication sink pins if the sink requires pins connected to its communication source pins to be set to an Acquire state before the sink pins are set.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_connection_acquireordering_ks"></span><span id="DDK_KSPROPERTY_CONNECTION_ACQUIREORDERING_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property Descriptor Type</th>
-<th>Property Value Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p>BOOL</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property Descriptor Type | Property Value Type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | BOOL |
 
 ## Remarks
 
@@ -62,20 +32,8 @@ This read-only property is used to determine whether the Stop-to-Acquire state c
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ks.h (include Ks.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ks.h (include Ks.h)
 
 ## See also
 
-
-[KSPROPSETID\_Connection](kspropsetid-connection.md)
+[KSPROPSETID_Connection](kspropsetid-connection.md)
