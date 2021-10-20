@@ -13,6 +13,8 @@ Starting in Windows 11, the Windows Driver Kit (WDK) includes a Wi-Fi WDF class 
 
 In addition to being a fully-fledged WDF client driver, WiFiCx drivers are also [NetAdapterCx](../netcx/index.md) client drivers just like other NIC drivers. The client driver interacts with WiFiCx for Wi-Fi media-specific functionality.
 
+WiFiCx drivers run on Windows 11 only. 
+
 ## WiFiCx architecture
 
 The following block diagram illustrates the WiFiCx architecture:
