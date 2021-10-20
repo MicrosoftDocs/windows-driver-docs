@@ -134,7 +134,7 @@
   items: 
   - name: "Non-HID legacy devices"
     href: non-hid-legacy-devices.md
-  - name: "Keyboard and mouse class drivers"
+  - name: "Configuration of keyboard and mouse class drivers"
     href: keyboard-and-mouse-class-drivers.md
   - name: "PS/2 (i8042prt) driver"
     href: ps-2--i8042prt--driver.md
