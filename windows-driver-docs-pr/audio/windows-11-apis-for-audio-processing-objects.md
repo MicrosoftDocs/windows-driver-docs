@@ -10,7 +10,7 @@ keywords:
 - Audio Settings, Audio Notifications
 - Windows 11 audio 
 - CAPX, Core Audio Processing Object Extensions
-ms.date: 10/15/2021
+ms.date: 10/20/2021
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +33,7 @@ Any new APOs that ship on a device for Windows 11 are required to be compliant w
 
 ## Windows version requirements
 
-The APIs described in this topic are available starting in build 22000 of the Windows 11 OS, WDK, and SDK. Windows 10 will not have support for these APIs. If an APO intends to function on both Windows 10 and Windows 11, it can examine whether it is being initialized with the [APOInitSystemEffects2]() or the [APOInitSystemEffects3]() structure to determine whether it is running on an OS that supports the CAPX APIs.
+The APIs described in this topic are available starting in build 22000 of the Windows 11 OS, WDK, and SDK. Windows 10 will not have support for these APIs. If an APO intends to function on both Windows 10 and Windows 11, it can examine whether it is being initialized with the [APOInitSystemEffects2](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects2) or the [APOInitSystemEffects3](/windows/win32/api/audioengineextensionapo/ns-audioengineextensionapo-apoinitsystemeffects3) structure to determine whether it is running on an OS that supports the CAPX APIs.
 
 The latest versions of Windows, the WDK, and the SDK can be downloaded below through the Windows Insider Program. Partners that are engaged with Microsoft through Partner Center can also access this content through Collaborate. For more information about Collaborate, see [Introduction to Microsoft Collaborate](/collaborate/intro-to-mscollaborate).
 
@@ -76,7 +76,7 @@ The AEC framework provides new structures and interfaces that APOs can leverage.
 
 #### APO_CONNECTION_PROPERTY_V2 structure 
 
-APOs that implement the [IApoAcousticEchoCancellation](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation) interface will be passed an [APO_CONNECTION_PROPERTY_V2](/windows/win32/api/audioapotypes/ns-audioapotypes-apo_connection_property_v2) structure in its call to IAudioProcessingObjectRT::APOProcess. In addition to all the fields in the [APO_CONNECTION_PROPERTY]() structure, version 2 of the structure also provides timestamp information for the audio buffers.
+APOs that implement the [IApoAcousticEchoCancellation](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation) interface will be passed an [APO_CONNECTION_PROPERTY_V2](/windows/win32/api/audioapotypes/ns-audioapotypes-apo_connection_property_v2) structure in its call to IAudioProcessingObjectRT::APOProcess. In addition to all the fields in the [APO_CONNECTION_PROPERTY](/windows/win32/api/audioapotypes/ns-audioapotypes-apo_connection_property) structure, version 2 of the structure also provides timestamp information for the audio buffers.
 
 An APO can examine the APO_CONNECTION_PROPERTY.u32Signature field to determine whether the structure it receives from the audio engine is of type APO_CONNECTION_PROPERTY or APO_CONNECTION_PROPERTY_V2. APO_CONNECTION_PROPERTY structures have a signature of 
 APO_CONNECTION_PROPERTY_SIGNATURE, while APO_CONNECTION_PROPERTY_V2 have a signature that equals APO_CONNECTION_PROPERTY_V2_SIGNATURE.
