@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_OPERATION\_MODE
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_OPERATION\_MODE is a TLV that contains the desired operation mode.
 

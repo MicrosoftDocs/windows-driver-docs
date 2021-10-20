@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CIPHER\_KEY\_CCMP\_KEY (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_CIPHER\_KEY\_CCMP\_KEY is a TLV that contains CCMP cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEY](./oid-wdi-set-add-cipher-keys.md).
 

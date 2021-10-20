@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY is a TLV that contains a discovered service entry.
 

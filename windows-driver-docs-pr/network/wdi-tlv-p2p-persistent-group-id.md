@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_PERSISTENT\_GROUP\_ID
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_P2P\_PERSISTENT\_GROUP\_ID is a TLV that contains a Group ID of a Persistent Group to be used for a connection.
 

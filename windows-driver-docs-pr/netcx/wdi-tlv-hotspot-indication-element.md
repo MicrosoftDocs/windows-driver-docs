@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT is a TLV that contains a Hotspot Indication Element that is used in a Association Request.
 

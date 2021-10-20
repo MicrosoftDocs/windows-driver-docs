@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_INCOMING\_FRAME\_INFORMATION (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_P2P\_INCOMING\_FRAME\_INFORMATION is a TLV that contains incoming Wi-Fi Direct action frame information.
 

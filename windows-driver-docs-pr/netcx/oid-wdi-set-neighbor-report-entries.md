@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES sends the list of neighbor reports received from the AP to the LE. This is sent as soon as the UE receives the neighbor report from the currently connected AP.
 

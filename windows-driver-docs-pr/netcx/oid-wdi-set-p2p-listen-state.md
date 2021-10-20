@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_P2P\_LISTEN\_STATE (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_SET\_P2P\_LISTEN\_STATE sets the Wi-Fi Direct listen state on the port.
 

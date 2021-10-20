@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_HESSID\_INFO
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_HESSID\_INFO is a TLV that contains HESSID information, which includes a list of HESSIDs, the Access Network Type, and Hotspot Indication Element.
 

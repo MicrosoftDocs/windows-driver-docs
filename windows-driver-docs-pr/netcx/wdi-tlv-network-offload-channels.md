@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WiFiCx does not use the WDI_TLV_NETWORK_OFFLOAD_CHANNELS TLV.
 

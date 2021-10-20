@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_UNICAST\_ALGORITHM\_LIST (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 
 WDI\_TLV\_UNICAST\_ALGORITHM\_LIST is a TLV that contains an array of unicast data algorithm pairs.

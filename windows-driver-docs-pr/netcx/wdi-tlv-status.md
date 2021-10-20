@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_STATUS (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI_TLV_STATUS is a TLV that contains a status value.
 

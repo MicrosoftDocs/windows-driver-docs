@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_SERVICE\_INFORMATION
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_P2P\_SERVICE\_INFORMATION is a TLV that contains Wi-Fi Direct Service Information.
 

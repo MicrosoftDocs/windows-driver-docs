@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD is a TLV that contains the unreachable detection threshold.
 

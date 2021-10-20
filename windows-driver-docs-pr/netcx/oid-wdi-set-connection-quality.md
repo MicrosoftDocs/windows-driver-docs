@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_CONNECTION\_QUALITY (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enforce connection quality for a given virtualized port. This hint allows the port to optimize channel usage in different scenarios.
 

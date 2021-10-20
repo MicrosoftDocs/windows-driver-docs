@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SSID\_LIST
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_SSID\_LIST is an unused TLV.
 

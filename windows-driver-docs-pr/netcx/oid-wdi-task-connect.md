@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_TASK\_CONNECT (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_TASK\_CONNECT requests that the IHV component connects to an Access Point or to a Wi-Fi Direct GO.
 

@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for [OID\_WDI\_SET\_DEFAULT\_KEY\_ID](./oid-wdi-set-default-key-id.md).
 

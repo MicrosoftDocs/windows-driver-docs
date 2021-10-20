@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_BSSID (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_BSSID is a TLV that contains the BSSID of a BSS.
 

@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_BSS_ENTRY (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_BSS\_ENTRY is a TLV that contains BSS entry information.
 

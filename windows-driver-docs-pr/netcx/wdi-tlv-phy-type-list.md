@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PHY\_TYPE\_LIST (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_PHY\_TYPE\_LIST is a TLV that contains an array of PHY types.
 

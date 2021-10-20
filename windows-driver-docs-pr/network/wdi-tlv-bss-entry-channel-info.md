@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO is a TLV that contains BSS entry channel information.
 

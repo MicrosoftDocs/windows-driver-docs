@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 **WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS** is a TLV that contains the number of measurements used to provide the round trip time (RTT) for a Fine Timing Measurement (FTM) request.
 
 This TLV is used in [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md).

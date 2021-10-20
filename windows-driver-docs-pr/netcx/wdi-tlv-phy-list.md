@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PHY\_LIST (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WiFiCx does not use the WDI_TLV_PHY_LIST TLV.
 

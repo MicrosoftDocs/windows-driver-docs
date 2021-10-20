@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_P2P\_WPS\_ENABLED (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables Wi-Fi Protected Setup (WPS) on the NIC.
 

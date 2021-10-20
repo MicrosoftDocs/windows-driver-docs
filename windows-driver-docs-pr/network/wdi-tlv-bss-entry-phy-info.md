@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_BSS\_ENTRY\_PHY\_INFO
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_BSS\_ENTRY\_PHY\_INFO is an unused TLV.
 

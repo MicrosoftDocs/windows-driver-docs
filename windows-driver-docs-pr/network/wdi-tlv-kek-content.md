@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_KEK\_CONTENT
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 WDI\_TLV\_KEK\_CONTENT is a TLV that contains an IEEE 802.11 key encryption key (KEK).
 
 ## TLV Type

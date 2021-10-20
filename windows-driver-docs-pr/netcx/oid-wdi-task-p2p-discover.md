@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_TASK\_P2P\_DISCOVER (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_TASK\_P2P\_DISCOVER is issued to the device to perform Wi-Fi Direct discovery.
 

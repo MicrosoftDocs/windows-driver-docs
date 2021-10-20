@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_SAE_ELEMENT (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 **WDI_TLV_SAE_ELEMENT** is a TLV that contains the Encoded Field Element (EFE) for a Simultaneous Authentication of Equals (SAE) Commit request.
 
 This TLV is used in [WDI_TLV_SAE_COMMIT_REQUEST](wdi-tlv-sae-commit-request.md).

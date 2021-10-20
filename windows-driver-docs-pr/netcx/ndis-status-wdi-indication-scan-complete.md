@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE to indicate the completion of [OID_WDI_TASK_SCAN](oid-wdi-task-scan.md).
 

@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_MAC\_STATISTICS (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_MAC\_STATISTICS is a TLV that contains per-peer MAC statistics for [OID\_WDI\_GET\_STATISTICS](./oid-wdi-get-statistics.md).
 

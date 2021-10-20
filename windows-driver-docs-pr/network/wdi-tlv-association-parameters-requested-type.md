@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE is a TLV that contains the requested Association Parameter TLV types.
 

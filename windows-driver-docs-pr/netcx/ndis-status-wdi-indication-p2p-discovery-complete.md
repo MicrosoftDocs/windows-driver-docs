@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS\_STATUS\_WDI\_INDICATION\_P2P\_DISCOVERY\_COMPLETE (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WiFiCx drivers use NDIS\_STATUS\_WDI\_INDICATION\_P2P\_DISCOVERY\_COMPLETE to indicate the completion of [OID\_WDI\_TASK\_P2P\_DISCOVER](oid-wdi-task-p2p-discover.md).
 

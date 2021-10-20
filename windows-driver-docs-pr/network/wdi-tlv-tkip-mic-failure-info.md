@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO is a TLV that contains TKIP-MIC failure information.
 

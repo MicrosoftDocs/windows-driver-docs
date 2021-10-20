@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_RETRY_AFTER  (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 **WDI_TLV_RETRY_AFTER** is a TLV that contains the duration, in seconds, that should pass before trying to request a new Fine Timing Measurement (FTM) from a target BSS.
 
 This TLV is used in [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md).

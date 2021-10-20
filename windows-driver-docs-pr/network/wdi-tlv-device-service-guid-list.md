@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_DEVICE_SERVICE_GUID_LIST
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 WDI_TLV_DEVICE_SERVICE_GUID_LIST is a TLV that contains a list of device services that an underlying IHV driver exposes to UM components. This TLV is used in [OID_WDI_GET_SUPPORTED_DEVICE_SERVICES](oid-wdi-get-supported-device-services.md).
 
 ## TLV Type

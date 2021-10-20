@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS is a TLV that contains Network List Offload (NLO) parameters for [OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD](./oid-wdi-set-network-list-offload.md).
 

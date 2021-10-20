@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_RADIO\_STATE (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_RADIO\_STATE is a TLV that contains the state of the radio in hardware and software.
 

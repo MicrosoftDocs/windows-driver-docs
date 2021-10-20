@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ADAPTER\_NLO\_SCAN\_MODE
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_ADAPTER\_NLO\_SCAN\_MODE is a TLV that indicates whether scans should be performed in active or passive mode.
 

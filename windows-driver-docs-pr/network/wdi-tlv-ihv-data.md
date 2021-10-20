@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_IHV\_DATA
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_IHV\_DATA is a TLV that contains IHV-specific information that is used by the IHV extensibility module.
 

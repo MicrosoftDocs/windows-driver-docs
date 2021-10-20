@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CONNECT\_BSS\_ENTRY (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_CONNECT\_BSS\_ENTRY is a TLV that contains a list of candidate connect BSS entries.
 

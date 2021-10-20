@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ACTION\_FRAME\_BODY (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_ACTION\_FRAME\_BODY is a TLV that contains the body of an Action Frame.
 

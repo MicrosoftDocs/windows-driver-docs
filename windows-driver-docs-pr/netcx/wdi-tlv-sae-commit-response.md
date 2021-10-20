@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_SAE_COMMIT_RESPONSE (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 **WDI_TLV_SAE_COMMIT_RESPONSE** is a TLV that contains the Simultaneous Authentication of Equals (SAE) Commit response frame.
 
 This TLV is used in the payload data of [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md).

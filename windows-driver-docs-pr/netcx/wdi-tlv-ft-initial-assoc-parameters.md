@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS is a TLV that contains initial association parameters for Fast Transition.
 

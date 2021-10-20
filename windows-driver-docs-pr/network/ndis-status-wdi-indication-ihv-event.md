@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS\_STATUS\_WDI\_INDICATION\_IHV\_EVENT
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_EVENT to pass IHV specific information to the IHV extensibility module.
 

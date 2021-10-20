@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SET\_CIPHER\_KEY\_INFO (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 WDI\_TLV\_SET\_CIPHER\_KEY\_INFO is a TLV that contains cipher key mapping key information for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
 
 ## TLV Type

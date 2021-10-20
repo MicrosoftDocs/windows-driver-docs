@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID_WDI_SET_SAE_AUTH_PARAMS (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 **OID_WDI_SET_SAE_AUTH_PARAMS** is sent by WDI in response to an [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) indication from the driver. It contains the parameters required to send the Simultaneous Authentication of Equals (SAE) Commit or Confirm request, or an error message indicating a failure to perform SAE with the BSSID. 
 
 This command is sent as a Direct OID request to the driver.

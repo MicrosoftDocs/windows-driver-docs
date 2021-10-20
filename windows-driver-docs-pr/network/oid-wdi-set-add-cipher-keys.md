@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_ADD\_CIPHER\_KEYS
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_SET\_ADD\_CIPHER\_KEYS adds or overwrites cipher keys in the key table of a port. This is a set-only property.
 

@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_OPERATION\_MODE (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_OPERATION\_MODE is a TLV that contains the desired operation mode.
 

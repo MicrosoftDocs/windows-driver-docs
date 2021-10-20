@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID_WDI_TASK_SCAN (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan according to the requirements of the IEEE 802.11 specification.
 

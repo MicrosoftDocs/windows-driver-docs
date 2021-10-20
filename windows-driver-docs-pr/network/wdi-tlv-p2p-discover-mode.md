@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_DISCOVER\_MODE
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_P2P\_DISCOVER\_MODE is a TLV that contains Wi-Fi Direct discovery mode information for [OID\_WDI\_TASK\_P2P\_DISCOVER](./oid-wdi-task-p2p-discover.md).
 

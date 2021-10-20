@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_SERVICE\_INFORMATION\_ENTRY (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WiFiCx does not use the WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY TLV.
 

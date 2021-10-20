@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 WiFiCx drivers use the NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT status indication to pass on unsolicited information about a device to a user mode client.
 
 Device service indications must be sent by the driver only when in the *D0* power state, and it must not cause the device to wake from *Dx*. WDI will drop this indication without forwarding it up the stack if it receives it when in *Dx*.

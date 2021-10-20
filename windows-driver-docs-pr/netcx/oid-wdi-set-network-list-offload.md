@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD sets a list of preferred SSIDs for the firmware to scan for APs.
 

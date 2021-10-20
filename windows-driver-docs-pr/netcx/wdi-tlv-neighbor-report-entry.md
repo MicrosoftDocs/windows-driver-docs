@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY is a TLV that contains a neighbor report.
 

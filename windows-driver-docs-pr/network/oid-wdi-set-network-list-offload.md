@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD sets a list of preferred SSIDs for the firmware to scan for APs.
 

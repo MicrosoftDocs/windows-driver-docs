@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PLDR\_SUPPORT
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_PLDR\_SUPPORT is a TLV that specifies if PLDR (Platform Level Reset) is supported.
 

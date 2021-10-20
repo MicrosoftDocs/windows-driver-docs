@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PROTOCOL\_OFFLOAD\_ID (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 WDI\_TLV\_PROTOCOL\_OFFLOAD\_ID is a TLV that contains the protocol offload identifier.
 
 ## TLV Type

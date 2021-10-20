@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_PARAMETERS
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_PARAMETERS is a TLV that contains association request parameters.
 

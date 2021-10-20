@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 Miniport drivers send the **NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE** status indication to the host as a task completion indication for [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md). This notification contains a list of Fine Timing Measurement (FTM) responses received from each requested target.
 
 ## Payload data

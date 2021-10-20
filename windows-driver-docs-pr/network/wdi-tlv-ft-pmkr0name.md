@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_FT\_PMKR0NAME
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_FT\_PMKR0NAME is a TLV that contains a PMKR0Name or PMKR1Name (802.11r).
 

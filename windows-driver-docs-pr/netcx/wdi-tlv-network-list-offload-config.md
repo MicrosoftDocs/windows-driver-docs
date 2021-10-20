@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG is a TLV that contains Network List Offload (NLO) configuration.
 

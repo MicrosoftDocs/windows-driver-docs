@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # WDI_TLV_FTM_RESPONSE
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 **WDI_TLV_FTM_RESPONSE** is a TLV that contains Fine Timing Measurement (FTM) response information from a BSS target. 
 
 This TLV is used in the payload data of an [NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE](ndis-status-wdi-indication-request-ftm-complete.md) task completion indication.

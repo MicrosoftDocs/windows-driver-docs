@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS is a TLV that contains link state change parameters for [NDIS\_STATUS\_WDI\_INDICATION\_LINK\_STATE\_CHANGE](./ndis-status-wdi-indication-link-state-change.md).
 

@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_GET\_AUTO\_POWER\_SAVE (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_GET\_AUTO\_POWER\_SAVE is a TLV that contains auto power save information for [OID\_WDI\_GET\_AUTO\_POWER\_SAVE](./oid-wdi-get-auto-power-save.md).
 

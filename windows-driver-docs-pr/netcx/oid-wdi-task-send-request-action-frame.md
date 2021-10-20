@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME  (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME requests that the device sends an Action Frame Request to another device.
 

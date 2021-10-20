@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_NEXT\_DIALOG\_TOKEN
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_NEXT\_DIALOG\_TOKEN is a TLV that contains the dialog token to be used in the next Action frame.
 

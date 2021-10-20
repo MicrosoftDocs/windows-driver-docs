@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list of exemptions for packet description. The adapter applies these exemptions to packets it receives that match the IEEE EtherType value specified for the exemption.
 

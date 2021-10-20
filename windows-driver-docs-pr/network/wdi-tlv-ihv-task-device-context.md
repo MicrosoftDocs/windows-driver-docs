@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT is a TLV that contains IHV-provided device context for [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST](./ndis-status-wdi-indication-ihv-task-request.md).
 

@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # WDI_TLV_SAE_SEND_CONFIRM
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 **WDI_TLV_SAE_SEND_CONFIRM** is a TLV that contains the Send Confirm field for a Simultaneous Authentication of Equals (SAE) Confirm request. The Send Confirm field is used as an anti-replay counter.
 
 This TLV is used in [WDI_TLV_SAE_CONFIRM_REQUEST](wdi-tlv-sae-confirm-request.md).

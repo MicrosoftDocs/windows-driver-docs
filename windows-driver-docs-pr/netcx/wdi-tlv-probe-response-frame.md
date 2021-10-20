@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_PROBE_RESPONSE_FRAME (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_PROBE\_RESPONSE\_FRAME is a TLV that contains a probe response frame.
 

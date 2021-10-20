@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY (dot11wificxintf.h)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY instructs the adapter to cancel the background discovery and stop any active scans in progress.
 

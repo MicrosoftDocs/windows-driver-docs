@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SUPPORTED\_GUIDS (dot11wificxtypes.hpp)
 
+[!INCLUDE[WiFiCx topic note](../includes/wificx-version-warning.md)]
+
 
 WDI\_TLV\_SUPPORTED\_GUIDS is a TLV that contains a supported NDIS GUID.
 

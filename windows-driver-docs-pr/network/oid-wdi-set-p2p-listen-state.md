@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_P2P\_LISTEN\_STATE
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_SET\_P2P\_LISTEN\_STATE sets the Wi-Fi Direct listen state on the port.
 

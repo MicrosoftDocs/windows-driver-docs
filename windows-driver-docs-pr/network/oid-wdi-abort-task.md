@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_ABORT\_TASK
 
+[!INCLUDE[WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_ABORT\_TASK is a property that is sent down to cancel a specific pending task.
 
