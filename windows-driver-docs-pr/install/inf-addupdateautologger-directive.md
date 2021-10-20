@@ -98,7 +98,7 @@ Optionally specifies the timer to use when logging the time stamp for each event
 
 For a description of each clock type, see the ClientContext member of [WNODE_HEADER](/windows/win32/etw/wnode-header). 
 
-<a href="" id="disablerealtimepersistence-value"></a>**DisableRealtimePersistense**=*0 | 1*  
+<a href="" id="disablerealtimepersistence-value"></a>**DisableRealtimePersistence**=*0 | 1*  
 Optionally allows disabling of real time persistence by setting value to 1. The default is 0 (enabled). If real time persistence is enabled, real-time events that were not delivered by the time the computer was shutdown will be persisted. The events will then be delivered to the consumer the next time the consumer connects to the session.
 
 <a href="" id="filename-file-name"></a>**FileName**=*file-name*  
