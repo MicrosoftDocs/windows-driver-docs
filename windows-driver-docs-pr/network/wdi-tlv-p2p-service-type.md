@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_SERVICE\_TYPE
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_P2P\_SERVICE\_TYPE is a TLV that contains the Service Type of the service.
 

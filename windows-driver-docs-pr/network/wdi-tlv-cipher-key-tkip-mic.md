@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CIPHER\_KEY\_TKIP\_MIC
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_CIPHER\_KEY\_TKIP\_MIC is a TLV that contains the TKIP MIC material.
 

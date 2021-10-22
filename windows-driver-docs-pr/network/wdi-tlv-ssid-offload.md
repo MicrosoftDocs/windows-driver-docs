@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SSID\_OFFLOAD
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_SSID\_OFFLOAD is a TLV that contains an SSID and hints about the SSID.
 

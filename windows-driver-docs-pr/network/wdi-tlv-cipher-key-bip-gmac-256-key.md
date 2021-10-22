@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CIPHER\_KEY\_BIP\_GMAC\_256\_KEY
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 WDI\_TLV\_CIPHER\_KEY\_BIP\_GMAC\_256\_KEY is a TLV that contains BIP GMAC 256 cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
 
 ## TLV Type

@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID_WDI_TASK_REQUEST_FTM
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 **OID_WDI_TASK_REQUEST_FTM** is issued to the LE to initiate Fine Timing Measurement (FTM) procedures with the listed BSS targets. The number of targets is less than or equal to the value of **FTMNumberOfSupportedTargets**, obtained from the station attributes.
 
 This task should be completed as soon as all the FTM sessions with the targets are completed, the timeout has expired, or the host has aborted the operation.

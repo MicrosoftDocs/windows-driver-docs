@@ -10,7 +10,9 @@ ms.custom: 19H1
 
 # WDI_TLV_LCI_REPORT_BODY
 
-**WDI_TLV_LCI_REPORT_BODY** is a TLV that contains the Location Configuration Report (LCI) for a Fine Timing Measuremement (FTM) request.
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
+**WDI_TLV_LCI_REPORT_BODY** is a TLV that contains the Location Configuration Report (LCI) for a Fine Timing Measurement (FTM) request.
 
 This TLV is used in [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md).
 

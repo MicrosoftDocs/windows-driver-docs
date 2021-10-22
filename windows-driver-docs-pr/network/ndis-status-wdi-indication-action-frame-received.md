@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to indicate that an Action Frame has been received.
 

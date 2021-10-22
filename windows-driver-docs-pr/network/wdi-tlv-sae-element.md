@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # WDI_TLV_SAE_ELEMENT
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 **WDI_TLV_SAE_ELEMENT** is a TLV that contains the Encoded Field Element (EFE) for a Simultaneous Authentication of Equals (SAE) Commit request.
 
 This TLV is used in [WDI_TLV_SAE_COMMIT_REQUEST](wdi-tlv-sae-commit-request.md).

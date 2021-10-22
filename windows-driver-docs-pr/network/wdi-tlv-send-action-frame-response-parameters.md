@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_SEND\_ACTION\_FRAME\_RESPONSE\_PARAMETERS
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_SEND\_ACTION\_FRAME\_RESPONSE\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME](./oid-wdi-task-send-response-action-frame.md).
 
