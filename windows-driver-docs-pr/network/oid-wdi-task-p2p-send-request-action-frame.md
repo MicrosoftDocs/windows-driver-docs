@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME is issued to the device to send a Wi-Fi Direct Public Action Frame Request.
 

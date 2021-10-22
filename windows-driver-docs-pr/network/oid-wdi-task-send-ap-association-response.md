@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE requests that the IHV component sends an Association Response to a peer device that has recently sent an association request.
 

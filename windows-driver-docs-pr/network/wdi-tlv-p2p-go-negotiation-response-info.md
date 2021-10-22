@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_GO\_NEGOTIATION\_RESPONSE\_INFO
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_P2P\_GO\_NEGOTIATION\_RESPONSE\_INFO is a TLV that contains Wi-Fi Direct Group Owner negotiation response information.
 

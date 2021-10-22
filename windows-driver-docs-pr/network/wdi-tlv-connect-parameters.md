@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CONNECT\_PARAMETERS
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 WDI\_TLV\_CONNECT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_CONNECT](./oid-wdi-task-connect.md) and [OID\_WDI\_TASK\_ROAM](./oid-wdi-task-roam.md).
 
 ## TLV Type
@@ -25,7 +27,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | --- | --- | --- | --- |
 | [**WDI\_TLV\_CONNECTION\_SETTINGS**](wdi-tlv-connection-settings.md) |   |   | The settings for the connection. |
 | [**WDI\_TLV\_SSID**](wdi-tlv-ssid.md) | X |   | List of SSIDs that the port is allowed to connect to. |
-| [**WDI\_TLV\_HESSID**](wdi-tlv-hessid.md) |   | X | List of HESSIDs that the port is allowed to connect to. This is an additional requirement to the SSID list. |
+| [**WDI\_TLV\_HESSID_INFO**](wdi-tlv-hessid-info.md) |   | X | List of HESSIDs that the port is allowed to connect to. This is an additional requirement to the SSID list. |
 | [**WDI\_TLV\_AUTH\_ALGO\_LIST**](wdi-tlv-auth-algo-list.md) |   |   | The list of authentication algorithms that the connection can use. |
 | [**WDI\_TLV\_MULTICAST\_CIPHER\_ALGO\_LIST**](wdi-tlv-multicast-cipher-algo-list.md) |   |   | The list of multicast cipher algorithms that the connection can use. |
 | [**WDI\_TLV\_UNICAST\_CIPHER\_ALGO\_LIST**](wdi-tlv-unicast-cipher-algo-list.md) |   |   | The list of unicast cipher algorithms that the connection can use. |

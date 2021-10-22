@@ -53,3 +53,4 @@ This section contains the following topics:
 * [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md)
 * [NetAdapterCx limitations](netadaptercx-limitations.md)
 * [Mobile Broadband (MBB) WDF class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md)
+* [Wi-Fi WDF class extension (WiFiCx)](wifi-wdf-class-extension-wificx.md)

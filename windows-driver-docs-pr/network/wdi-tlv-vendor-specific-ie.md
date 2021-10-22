@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_VENDOR\_SPECIFIC\_IE
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_VENDOR\_SPECIFIC\_IE is a TLV that contains a list of vendor-specific IEs.
 

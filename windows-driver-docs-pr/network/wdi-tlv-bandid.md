@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_BANDID
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_BANDID is a TLV that contains a band ID.
 

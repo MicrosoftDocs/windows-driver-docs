@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CHANNEL\_WIDTH\_LIST
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_CHANNEL\_WIDTH\_LIST is a TLV that contains a list of channel widths.
 

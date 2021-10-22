@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME is a TLV that contains the received disassociation frame.
 

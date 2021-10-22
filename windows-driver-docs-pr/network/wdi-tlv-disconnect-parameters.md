@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_DISCONNECT\_PARAMETERS
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_DISCONNECT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DISCONNECT](./oid-wdi-task-disconnect.md).
 

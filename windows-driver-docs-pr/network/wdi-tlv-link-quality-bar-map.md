@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP is a TLV that contains the mapping of signal quality to Wi-Fi signal strength bars.
 

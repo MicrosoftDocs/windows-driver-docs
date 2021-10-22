@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY instructs the adapter to periodically perform Wi-Fi Direct discovery in the background
 

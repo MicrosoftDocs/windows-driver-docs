@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # OID\_WDI\_IHV\_REQUEST
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_IHV\_REQUEST is used to forward information that an IHV extensibility module has sent to the miniport.
 

@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # WDI_TLV_SAE_ANTI_CLOGGING_TOKEN
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 **WDI_TLV_SAE_ANTI_CLOGGING_TOKEN** is a TLV that contains the anti-clogging token for a Simultaneous Authentication of Equals (SAE) Commit request.
 
 This TLV is used in [WDI_TLV_SAE_COMMIT_REQUEST](wdi-tlv-sae-commit-request.md).
