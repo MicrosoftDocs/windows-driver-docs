@@ -12,7 +12,7 @@ The WPD infrastructure is command driven. When a WPD application calls one of th
 
 The following image of the *WpdMon.exe* tool shows the result of an application calling the **IPortableDeviceServiceMethods::Invoke** method to invoke the BeginSync method that is supported by the sample driver:
 
-![the wpd monitor](images/iportabledeviceservicemethods_invoke_method_wpdmon.png)
+![the wpd monitor.](images/iportabledeviceservicemethods_invoke_method_wpdmon.png)
 
 In the previous image, the WPD serializer converted the **Invoke** call into the WPD\_COMMAND\_SERVICE\_METHODS\_START\_INVOKE command and the corresponding parameters. The driver processed this command and issued two responses to the WPD API. The first response is the result of WPD\_COMMAND\_SERVICE\_METHODS\_START\_INVOKE to indicate that the **StartInvoke**command was successful and that the method started running on the device. The second response is the WPD\_EVENT\_SERVICE\_METHOD\_COMPLETE event that the driver sent when the method completed. The driver sent WPD\_EVENT\_SERVICE\_METHOD\_COMPLETE so that the WPD API could perform the necessary method completion and cleanup. For the sample driver, the two responses followed immediately with no time delay; on an actual device, there can be a delay between the two responses, if a method takes a long time to complete.
 

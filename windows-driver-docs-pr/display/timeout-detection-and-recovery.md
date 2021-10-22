@@ -19,7 +19,7 @@ One of the most common stability problems in graphics occurs when a computer "ha
 
 The figure below shows the TDR process.
 
-![timeout detection and recovery (tdr) of gpus through wddm](images/timeoutdetectionrecoverygpusthroughwddm.jpg)
+![timeout detection and recovery (tdr) of gpus through wddm.](images/timeoutdetectionrecoverygpusthroughwddm.jpg)
 
 The operating system (OS) attempts to detect situations in which computers appear to be "frozen". The OS then attempts to dynamically recover from the frozen situations so that desktops are responsive again, alleviating the situation where end users needlessly reboot their systems.
 

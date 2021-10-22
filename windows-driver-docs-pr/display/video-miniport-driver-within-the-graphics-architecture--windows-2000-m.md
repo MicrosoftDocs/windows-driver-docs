@@ -13,7 +13,7 @@ ms.custom: seodec18
 
 The following figure shows the video miniport driver within the NT-based operating system graphics subsystem.
 
-![diagram illustrating the nt-based operating system graphics architecture](images/2vidarch.png)
+![diagram illustrating the nt-based operating system graphics architecture.](images/2vidarch.png)
 
 Each video miniport driver provides hardware-level support for a display driver. The display driver calls the graphics engine [**EngDeviceIoControl**](/windows/win32/api/winddi/nf-winddi-engdeviceiocontrol) function to request support from the underlying video miniport driver. **EngDeviceIoControl**, in turn, calls an I/O system service to send the request through the video port driver to the miniport driver.
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The landing page is the first page that the user sees when they start the mobile broadband app, except for certain cases that are described in [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#launchpts).
 
-![landing page postpaid](images/mb-fig1-landing-page-postpaid.png)
+![landing page postpaid.](images/mb-fig1-landing-page-postpaid.png)
 
 The landing page should follow UWP app guidelines for app layout. To encourage simplicity and ease of navigation, we recommend that you fit all contents of the landing page into a single page. The landing page is the central hub of your app. Although it is not a primary navigation method or management page, it showcases your app and its major functionality.
 
@@ -41,7 +41,7 @@ Because it is important user to be able to see information about their data usag
 
 Data usage display is simplified for prepaid plans. A user should also be offered an option to recharge or refill their plan. You can provide a link to a page that offers payment options. See [Design billing pages in a mobile broadband app](design-billing-pages-in-a-mobile-broadband-app.md) for more info. The following shows a typical overview page for a prepaid plan:
 
-![landing page prepaid](images/mb-fig2-landing-page-prepaid.png)
+![landing page prepaid.](images/mb-fig2-landing-page-prepaid.png)
 
 ## <span id="opmsg"></span><span id="OPMSG"></span>Operator messages – show an overview or link
 
@@ -62,7 +62,7 @@ When describing the landing page, it is important to consider navigation within 
 
 -   **Drop-down affordance with header text** The header text can be used as a drop-down affordance for navigation between multiple pages in an app. In the previous figures, clicking **Account Overview** would result in a drop-down list of pages in the app that can be navigated to, as shown in the following figure:
 
-    ![navigating between apps](images/mb-fig3-nav-between-apps.png)
+    ![navigating between apps.](images/mb-fig3-nav-between-apps.png)
 
     For more information about designing app navigation, see [Quickstart: Using single-page navigation](/previous-versions/windows/apps/hh452768(v=win.10)) and [**select element | select object**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select).
 

@@ -149,7 +149,7 @@ The maximum processor group of the RSS interface.
 **\*RssMaxProcGroup** together with **\*RssMaxProcNumber** form a PROCESSOR_NUMBER structure that identifies the maximum processor number that can be used with RSS.
 
 For example, suppose **\*RssBaseProcGroup** is set to 1, **\*RssBaseProcNumber** is set to 16, **\*RssMaxProcGroup** is set to 3, and **\*RssMaxProcNumber** is set to 8.
-Using <group>:<processor> notation, the base processor is 1:16 and the max processor is 3:8.
+Using `<group>:<processor>` notation, the base processor is 1:16 and the max processor is 3:8.
 Then processors 0:0, 0:32, 1:0, and 1:15 will not be considered candidates for RSS, because they are below the base processor number.
 Processors 1:16, 1:31, 2:0, 2:63, 3:0, and 3:8 will all be considered candidates for RSS, because they fall in the range 1:16 through 3:8.
 Processors 3:9, 3:31, and 4:0 will not be considered candidates for RSS, because they are beyond the maximum processor number.
@@ -180,7 +180,7 @@ The maximum value that is allowed for an integer. &lt;IHV defined&gt; indicates 
 
 The following table describes all of the RSS keywords that can be edited.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />
@@ -228,11 +228,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p><strong></em>MaxRssProcessors</strong></p></td>
 <td align="left"><p>Maximum number of RSS Processors</p></td>
 <td align="left"><p>Int</p></td>
-<td align="left"><p>Windows Server 2008 defaults:</p>
-<p>8 for 1G or slower adapters, 16 for 10G adapters</p>
-<p>Windows 8 defaults:</p>
-<p>For NICs with no MSI-X support - 2 for 1GbE or slower adapters, 4 for 10 GbE adapters.</p>
-<p>For NICs with MSI-X support - 4 for 1GbE or slower adapters, 16 for 10 GbE adapters.</p></td>
+<td align="left"><p>16</p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p>MAXIMUM_PROC_PER_SYSTEM</p></td>
 </tr>
@@ -248,7 +244,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p><strong></em>NumRSSQueues</strong></p></td>
 <td align="left"><p>Maximum Number of RSS Queues</p></td>
 <td align="left"><p>Int</p></td>
-<td align="left"><p>Device-specific</p></td>
+<td align="left"><p>16</p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p>Device-specific</p></td>
 </tr>

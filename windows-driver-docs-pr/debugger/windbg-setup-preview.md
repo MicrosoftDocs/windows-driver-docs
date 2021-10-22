@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - Settings and workspaces
 
-![Small logo of windbg preview with bit pattern](images/windbgx-preview-logo.png)
+![Small logo of windbg preview with bit pattern.](images/windbgx-preview-logo.png)
 
 This section describes how to setup and configure the WinDbg Preview debugger.
 
@@ -15,7 +15,7 @@ This section describes how to setup and configure the WinDbg Preview debugger.
 
 Use the settings menu to set things such as the source and symbol path as well as choose the light and dark theme for the debugger. 
 
-![Screen shot of settings showing general tab](images/windbgx-settings-menu.png)
+![Screen shot of settings showing general tab.](images/windbgx-settings-menu.png)
 
 There are currently six settings dialog panels:
 

@@ -26,7 +26,7 @@ To make use of the DMus port driver's wave sink, a DMus miniport driver should d
 
 The following figure shows a DirectMusic filter containing a synthesizer node ([**KSNODETYPE\_SYNTHESIZER**](./ksnodetype-synthesizer.md)). This filter meets the preceding requirements for a kernel-mode software synthesizer by providing a DirectMusic input pin and a wave output pin. (In addition, a DMus miniport driver that supports legacy MIDI synthesis can provide a MIDI input pin.)
 
-![diagram illustrating a directmusic filter for a kernel-mode software synthesizer](images/wavesink.png)
+![diagram illustrating a directmusic filter for a kernel-mode software synthesizer.](images/wavesink.png)
 
 On the left side of the figure, a MIDI stream enters the filter through the DirectMusic input pin. This pin has an [IMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imxf) interface that it exposes to the port driver. The port driver obtains this interface by calling the [**IMiniportDMus::NewStream**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iminiportdmus-newstream) method. The port driver feeds MIDI messages to the pin by calling the [**IMXF::PutMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-putmessage) method.
 

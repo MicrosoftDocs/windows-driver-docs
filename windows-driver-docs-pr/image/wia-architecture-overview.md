@@ -23,7 +23,7 @@ WIA has three main components: the WIA service, the WIA driver service library, 
 
 The following diagram illustrates the WIA architecture.
 
-![diagram illustrating the wia components](images/art-1.png)
+![diagram illustrating the wia components.](images/art-1.png)
 
 ### Imaging Applications
 

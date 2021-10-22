@@ -25,21 +25,21 @@ To create an application from the template:
 
     The following screenshots show the **New Project** dialog box for the **WinUSB Application (Universal)** template.
 
-    ![winusb template new project creation first screen](images/winusb-template-creation-1.png)
+    ![winusb template new project creation first screen.](images/winusb-template-creation-1.png)
 
-    ![winusb template new project creation second screen](images/winusb-template-creation-2.png)
+    ![winusb template new project creation second screen.](images/winusb-template-creation-2.png)
 
     This topic assumes that the name of the Visual Studio project is *USB Application1*.
 
     Visual Studio creates one project and a solution. You can see the solution, the project, and the files that belong to the project in the **Solution Explorer** window, as shown in the following screen shot. (If the **Solution Explorer** window is not visible, choose **Solution Explorer** from the **View** menu.) The solution contains a C++ application project named USB Application1.
 
-    ![winusb template solution explorer 1](images/winusb-template-solution-explorer-1.png)
+    ![winusb template solution explorer 1.](images/winusb-template-solution-explorer-1.png)
 
     The USB Application1 project has source files for the application. If you want to look at the application source code, you can open any of the files that appear under **Source Files**.  
 
 5. Add a driver package project to the solution. Select and hold (or right-click) the solution (Solution 'USB Application1'), then select **Add** \> **New Project** as shown in the following screenshot.
 
-    ![winusb template creation second project addition](images/winusb-template-creation-3.png)
+    ![winusb template creation second project addition.](images/winusb-template-creation-3.png)
 
 6. In the **New Project** dialog box, in the search box at the top, once again type **USB.**
 7. In the middle pane, select **WinUSB INF Driver Package**.
@@ -48,9 +48,9 @@ To create an application from the template:
 
     The following screenshots show the **New Project** dialog box for the **WinUSB INF Driver Package** template.
 
-    ![winusb template second project creation first screen](images/winusb-template-creation-4.png)
+    ![winusb template second project creation first screen.](images/winusb-template-creation-4.png)
 
-    ![winusb template second project creation second screen](images/winusb-template-creation-5.png)
+    ![winusb template second project creation second screen.](images/winusb-template-creation-5.png)
 
     This topic assumes that the name of the Visual Studio project is *USB Application1 Package*.
 
@@ -58,7 +58,7 @@ To create an application from the template:
 
     Your **Solution Explorer** should now contain both projects, as shown in the following screenshot.
 
-    ![winusb template solution explorer 2](images/winusb-template-solution-explorer-2.png)
+    ![winusb template solution explorer 2.](images/winusb-template-solution-explorer-2.png)
 
 10. In the INF file, USBApplication1.inf, locate this code:   `%DeviceName% =USB_Install, USB\VID_vvvv&PID_pppp`
 
@@ -106,11 +106,11 @@ You can deploy, install, load, and debug your application and the driver by foll
   8. For **Remote Computer Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named dbg-target.
   9. Select **Install/Reinstall and Verify**. Select **Apply**.
 
-        ![winusb template deployment](images/winusb-template-deployment.png)
+        ![winusb template deployment.](images/winusb-template-deployment.png)
 
   10. In the property page, navigate to **Configuration Properties &gt; Debugging**, and select **Debugging Tools for Windows – Remote Debugger**, as shown in the following screen shot.
 
-        ![winusb template remote debugger](images/winusb-template-remote-debugger.png)
+        ![winusb template remote debugger.](images/winusb-template-remote-debugger.png)
 
   11. Select **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've built the project for an x64 system running Windows 10.
   12. Select **Deploy Solution** from the **Build** menu.
@@ -134,7 +134,7 @@ Deployment may take a few minutes...
 4. On the host computer, from the **Debug** menu, select **Attach to process**.
 5. In the window, select **Windows User Mode Debugger** (Debugging Tools for Windows) as the transport and the name of the target computer, in this case dbg-target, as the qualifier as shown in this image.
 
-    ![winusb template debug setting](images/winusb-template6.png)
+    ![winusb template debug setting.](images/winusb-template6.png)
 
 6. Select the application from the list of **Available Processes** and select **Attach**. You can now debug using **Immediate Window** or by using the options in **Debug** menu.
 
@@ -155,7 +155,7 @@ The preceding instructions debug the application by using **Debugging Tools for 
   1. To build your application and the driver installation package, choose **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've built the project for an x64 system running Windows 10.
   2. To see the built driver package, navigate in Windows Explorer to your USB Application1 folder, and then navigate to **x64 \> Debug \> USB Application1 Package**. The driver package contains several files: MyDriver.inf is an information file that Windows uses when you install the driver, mydriver.cat is a catalog file that the installer uses to verify the test signature for the driver package. These files are shown in the following screen shot.
 
-        ![winusb application template](images/winusb-template3.png)
+        ![winusb application template.](images/winusb-template3.png)
 
         **Note**  There is no driver file included in the package. That is because the INF file references the in-box driver, Winusb.sys, found in Windows\\System32 folder.
   3. Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section. **Note** If you see the error `DriverVer set to a date in the future`, set **INF Package project settings > Inf2Cat > General > Use Local Time > Yes**.

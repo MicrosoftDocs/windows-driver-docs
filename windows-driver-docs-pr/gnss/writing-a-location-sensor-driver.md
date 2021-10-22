@@ -1,13 +1,16 @@
 ---
 title: Writing a location sensor driver for Windows 8.1
-description: Writing a location sensor driver for Windows 8.1
-ms.date: 04/20/2017
+description: The Sensor and Location Platform provides the Windows Location API to enable software developers to add location features to their applications.
+ms.date: 08/25/2021
 ms.localizationpriority: medium
 ---
 
 # Writing a location sensor driver for Windows 8.1
 
-The Sensor and Location Platform provides the Windows Location API to enable software developers to add location features to their programs easily. If you are writing a driver for a location sensor, you must understand how to make the driver compatible with the Location API and follow the guidelines in [Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md).
+> [!IMPORTANT]
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
+
+The Sensor and Location Platform provides the Windows Location API to enable software developers to add location features to their applications. If you are writing a driver for a location sensor, you must understand how to make the driver compatible with the Location API and follow the guidelines in [Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md).
 
 ## Windows Hardware Certification Program requirements
 
@@ -41,7 +44,7 @@ The rest of this section describes these minimum requirements
 
 ## Identifying the category
 
-When it is called through [**ISensorDriver::OnGetProperties**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) named pValues.
+When it is called through [**ISensorDriver::OnGetProperties**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **WPD_FUNCTIONAL_OBJECT_CATEGORY** property value to **SENSOR_CATEGORY_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) named pValues.
 
 ```cpp
 hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCATION);
@@ -49,7 +52,7 @@ hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCAT
 
 ## Setting the location sensor type
 
-When it is called through [**ISensorDriver::OnGetProperties**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) named pValues.
+When it is called through [**ISensorDriver::OnGetProperties**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **SENSOR_PROPERTY_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR_TYPE_LOCATION_GPS** constant through a pointer to [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) named pValues.
 
 ```cpp
 hr = pValues->SetGuidValue(SENSOR_PROPERTY_TYPE, SENSOR_TYPE_LOCATION_GPS);
@@ -61,17 +64,17 @@ The Location API defines two kinds of location reports. These are objects that o
 
 To support a LatLong report, the following data fields are required:
 
-- SENSOR\_DATA\_TYPE\_LATITUDE\_DEGREES
+- SENSOR_DATA_TYPE_LATITUDE_DEGREES
 
-- SENSOR\_DATA\_TYPE\_LONGITUDE\_DEGREES
+- SENSOR_DATA_TYPE_LONGITUDE_DEGREES
 
-- SENSOR\_DATA\_TYPE\_ERROR\_RADIUS\_METERS
+- SENSOR_DATA_TYPE_ERROR_RADIUS_METERS
 
 To support a civic address report, at least one of the following data fields is required:
 
-- SENSOR\_DATA\_TYPE\_COUNTRY\_REGION
+- SENSOR_DATA_TYPE_COUNTRY_REGION
 
-To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](../sensors/sensor-category-loc.md) in the [Windows Sensor Reference](/windows-hardware/drivers/ddi/_sensors/) section.
+To view the complete set of platform-defined location data fields, see [**SENSOR_CATEGORY_LOCATION**](../sensors/sensor-category-loc.md) in the [Windows Sensor Reference](/windows-hardware/drivers/ddi/_sensors/) section.
 
 When they are called through [**ISensorDriver::OnGetSupportedDataFields**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupporteddatafields), add the supported data field property key constants to the [IPortableDeviceKeyCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) through a variable named pKeyCollection.
 
@@ -83,27 +86,27 @@ pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
 
 Like other sensor drivers, location drivers provide information about the sensor itself through a set of properties. The Windows Hardware Certification Program specifies the minimum required set of properties that a location sensor must support. For more information about sensor properties, their meanings, and which properties are required for sensor drivers, see [**Sensor Properties**](../sensors/sensor-properties.md). The following list contains the required properties:
 
-- WPD\_FUNCTIONAL\_OBJECT\_CATEGORY
+- WPD_FUNCTIONAL_OBJECT_CATEGORY
 
-- SENSOR\_PROPERTY\_TYPE
+- SENSOR_PROPERTY_TYPE
 
-- SENSOR\_PROPERTY\_STATE
+- SENSOR_PROPERTY_STATE
 
-- SENSOR\_PROPERTY\_PERSISTENT\_UNIQUE\_ID
+- SENSOR_PROPERTY_PERSISTENT_UNIQUE_ID
 
-- SENSOR\_PROPERTY\_MANUFACTURER
+- SENSOR_PROPERTY_MANUFACTURER
 
-- SENSOR\_PROPERTY\_MODEL
+- SENSOR_PROPERTY_MODEL
 
-- SENSOR\_PROPERTY\_SERIAL\_NUMBER
+- SENSOR_PROPERTY_SERIAL_NUMBER
 
-- SENSOR\_PROPERTY\_FRIENDLY\_NAME
+- SENSOR_PROPERTY_FRIENDLY_NAME
 
-- SENSOR\_PROPERTY\_MIN\_REPORT\_INTERVAL
+- SENSOR_PROPERTY_MIN_REPORT_INTERVAL
 
-- SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL
+- SENSOR_PROPERTY_CURRENT_REPORT_INTERVAL
 
-- SENSOR\_PROPERTY\_LOCATION\_DESIRED\_ACCURACY
+- SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY
 
 ## Providing data
 
@@ -115,18 +118,18 @@ The following requirements apply to providing data from a location sensor:
 
 - Maintain a copy of your most recent data report. If new data is not available when you request it, return the cached report. Do not update the time stamp.
 
-- Do not provide values for SENSOR\_DATA\_TYPE\_LATITUDE\_DEGREES and SENSOR\_DATA\_TYPE\_LONGITUDE\_DEGREES that fall outside the range of real-world latitudes and longitudes.
+- Do not provide values for SENSOR_DATA_TYPE_LATITUDE_DEGREES and SENSOR_DATA_TYPE_LONGITUDE_DEGREES that fall outside the range of real-world latitudes and longitudes.
 
-- Do not report a value for SENSOR\_DATA\_TYPE\_ERROR\_RADIUS\_METERS that is zero or less.
+- Do not report a value for SENSOR_DATA_TYPE_ERROR_RADIUS_METERS that is zero or less.
 
-- Set the value for SENSOR\_DATA\_TYPE\_COUNTRY\_REGION to a valid ISO 3166 1-alpha-2 country code.
+- Set the value for SENSOR_DATA_TYPE_COUNTRY_REGION to a valid ISO 3166 1-alpha-2 country code.
 
 - If your driver supports both latitude/longitude and civic address reports, the location data in these reports should correspond to the same physical location.
 
 The following table describes the sensor data fields that correspond to Location API data report fields. Use these data field constants when you provide data reports for a location.
 
 | Sensor constant | Location API method and property |
-| --- | --- |
+|--|--|
 | SENSOR_DATA_TYPE_ADDRESS1 | [ICivicAddressReport::GetAddressLine1](/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getaddressline1)<br><br>[LocationDisp.DispCivicAddressReport.AddressLine1](/windows/win32/locationapi/locationdisp-dispcivicaddressreport-addressline1) |
 | SENSOR_DATA_TYPE_ADDRESS2 | [ICivicAddressReport::GetAddressLine2](/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getaddressline2)<br><br>[LocationDisp.DispCivicAddressReport.AddressLine2](/windows/win32/locationapi/locationdisp-dispcivicaddressreport-addressline2) |
 | SENSOR_DATA_TYPE_ALTITUDE_ELLIPSOID_ERROR_METERS | [ILatLongReport::GetAltitudeError](/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getaltitudeerror)<br><br>[LocationDisp.DispLatLongReport.AltitudeError](/windows/win32/locationapi/locationdisp-displatlongreport-altitudeerror) |
@@ -143,29 +146,29 @@ The following table describes the sensor data fields that correspond to Location
 
 At any time, a sensor driver can be in one of a number of states. Sensor states are defined by the [**SensorState**](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) enumeration. To work correctly with the Location API, location sensors must follow these rules for handling state transitions.
 
-- Always start in the SENSOR\_STATE\_INITIALIZING state, but do not raise a state-changed event at startup.
+- Always start in the SENSOR_STATE_INITIALIZING state, but do not raise a state-changed event at startup.
 
-- The driver should transition from SENSOR\_STATE\_INITIALIZING to SENSOR\_STATE\_READY when data is available.
+- The driver should transition from SENSOR_STATE_INITIALIZING to SENSOR_STATE_READY when data is available.
 
-- The driver should transition back to SENSOR\_STATE\_INITIALIZING when the driver does not have current data to report. The driver should decide when that transition occurs. If you have lost a signal, but still have a means to provide valid data, stay in the SENSOR\_STATE\_READY state.
+- The driver should transition back to SENSOR_STATE_INITIALIZING when the driver does not have current data to report. The driver should decide when that transition occurs. If you have lost a signal, but still have a means to provide valid data, stay in the SENSOR_STATE_READY state.
 
 - Always raise events in the correct order. First, establish that data is available. Then, raise a state-changed event. Finally, raise the data-updated event.
 
 - Always raise a state-changed event when the driver's state changes.
 
--The Location API does not use data from sensors that are in the following states: SENSOR\_STATE\_NO\_DATA, SENSOR\_STATE\_NOT\_AVAILABLE, SENSOR\_STATE\_ERROR.
+-The Location API does not use data from sensors that are in the following states: SENSOR_STATE_NO_DATA, SENSOR_STATE_NOT_AVAILABLE, SENSOR_STATE_ERROR.
 
 The various sensor states for location sensor drivers are described in the following table.
 
 | Value | Description | Location API state |
-| --- | --- | --- |
-| SENSOR_STATE_READY | Sensor driver can provide new location reports that have complete and accurate data.<br><br>For example, a Wi-Fi or cellular provider is connected and working, or a GPS sensor has a fix.<br><br>A GPS driver that has used data from a triangulation sensor to determine location has this state. | REPORT_RUNNING |  
-| SENSOR_STATE_INITIALIZING | Sensor driver is trying to acquire a fix. The sensor driver should leave this state to transition to SENSOR_STATE_READY, after a fix is locked and tracking.<br><br>For example, a Wi-Fi provider is looking for an Internet connection, a cellular provider is looking for radios, or a GPS sensor is acquiring a fix.<br><br>GPS sensors should re-enter this state when they try to reacquire a fix. | REPORT_INITIALIZING |  
-| SENSOR_STATE_NO_DATA | The location provider is available, but is unable to provide location data.<br><br>For example, a Wi-Fi provider has access to the Internet, but the database has no location data. | REPORT_ERROR |  
-| SENSOR_STATE_NOT_AVAILABLE | The functionality that the location provider uses to acquire data is disabled.<br><br>A GPS sensor could be in this state if the radio is turned off. | REPORT_ERROR |  
+|--|--|--|
+| SENSOR_STATE_READY | Sensor driver can provide new location reports that have complete and accurate data. For example, a Wi-Fi or cellular provider is connected and working, or a GPS sensor has a fix. A GPS driver that has used data from a triangulation sensor to determine location has this state. | REPORT_RUNNING |  
+| SENSOR_STATE_INITIALIZING | Sensor driver is trying to acquire a fix. The sensor driver should leave this state to transition to SENSOR_STATE_READY, after a fix is locked and tracking. For example, a Wi-Fi provider is looking for an Internet connection, a cellular provider is looking for radios, or a GPS sensor is acquiring a fix. GPS sensors should re-enter this state when they try to reacquire a fix. | REPORT_INITIALIZING |  
+| SENSOR_STATE_NO_DATA | The location provider is available, but is unable to provide location data. For example, a Wi-Fi provider has access to the Internet, but the database has no location data. | REPORT_ERROR |  
+| SENSOR_STATE_NOT_AVAILABLE | The functionality that the location provider uses to acquire data is disabled. A GPS sensor could be in this state if the radio is turned off. | REPORT_ERROR |  
 | SENSOR_STATE_ERROR | The sensor has encountered a major error. The sensor can recover from this state, but the time frame for recovery is not known. | REPORT_ERROR |  
 
-The following diagram shows how state transitions may occur in a location sensor.![state transitions](images/gps-state-transitions.png)
+The following diagram shows how state transitions may occur in a location sensor.![state transitions.](images/gps-state-transitions.png)
 
 ## Raising data-updated and state-changed events
 
@@ -185,11 +188,11 @@ When raising these events, location drivers must follow these rules:
 
 - Always raise a data-updated event when the sensor accuracy changes.
 
-- Report a valid value for SENSOR\_DATA\_TYPE\_ERROR\_RADIUS\_METERS before raising events or changing the value for SENSOR\_PROPERTY\_STATE to SENSOR\_STATE\_READY.
+- Report a valid value for SENSOR_DATA_TYPE_ERROR_RADIUS_METERS before raising events or changing the value for SENSOR_PROPERTY_STATE to SENSOR_STATE_READY.
 
 - Do not provide incomplete data reports.
 
-- You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR\_DATA\_TYPE\_NMEA\_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](../sensors/defining-custom-values-for-constants.md).
+- You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR_DATA_TYPE_NMEA_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](../sensors/defining-custom-values-for-constants.md).
 
 ## Related topics
 

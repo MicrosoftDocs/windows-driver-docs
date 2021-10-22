@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-To get started, be sure you have the latest versions of [Microsoft Visual Studio]https://visualstudio.microsoft.com/vs/) and the [Windows Driver Kit (WDK)](../download-the-wdk.md) installed.
+To get started, be sure you have the latest versions of [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/) and the [Windows Driver Kit (WDK)](../download-the-wdk.md) installed.
 
 [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
 
@@ -124,7 +124,7 @@ With your KMDF driver deployed to the target computer, now you'll install the dr
 
         A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
-        :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="screenshot of driver installation warning":::
+        :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="screenshot of driver installation warning.":::
 
 ## Debug the driver
 

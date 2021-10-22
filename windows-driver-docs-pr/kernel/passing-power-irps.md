@@ -16,11 +16,11 @@ Power IRPs must be passed all the way down the device stack to the PDO to ensure
 
 The following figure shows the steps that drivers need to take to pass a power IRP down a device stack in Windows 7 and Windows Vista.
 
-![diagram illustrating passing down a power irp in windows vista](images/passirpvista.png)
+![diagram illustrating passing down a power irp in windows vista.](images/passirpvista.png)
 
 As the previous figure shows, in Windows 7 and Windows Vista, a driver must do the following:
 
-1.  Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) if setting an *IoCompletion* routine, or [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) if not setting an *IoCompletion* routine.
+1.  Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) if setting an *IoCompletion* routine, or [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) if not setting an *IoCompletion* routine.
 
     These two routines set the IRP stack location for the next-lower driver. Copying the current stack location ensures that the IRP stack pointer is set to the correct location when the *IoCompletion* routine runs.
 
@@ -32,13 +32,13 @@ As the previous figure shows, in Windows 7 and Windows Vista, a driver must do
 
 The following figure shows the steps that drivers need to take to pass a power IRP down a device stack in Windows Server 2003, Windows XP, and Windows 2000.
 
-![passing down a power irp (windows server 2003, windows xp, and windows 2000)](images/passirp.png)
+![passing down a power irp (windows server 2003, windows xp, and windows 2000).](images/passirp.png)
 
 As the previous figure shows, a driver must do the following:
 
 1.  Depending on the type of driver, possibly call [**PoStartNextPowerIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp). For more information, see [Calling PoStartNextPowerIrp](calling-postartnextpowerirp.md).
 
-2.  Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) if setting an *IoCompletion* routine, or [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) if not setting an *IoCompletion* routine.
+2.  Call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) if setting an *IoCompletion* routine, or [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) if not setting an *IoCompletion* routine.
 
     These two routines set the IRP stack location for the next-lower driver. Copying the current stack location ensures that the IRP stack pointer is set to the correct location when the *IoCompletion* routine runs.
 

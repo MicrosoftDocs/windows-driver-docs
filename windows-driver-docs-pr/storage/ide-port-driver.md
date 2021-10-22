@@ -16,7 +16,7 @@ In Microsoft Windows 2000 and Windows XP, the IDE port driver *atapi.sys* is an 
 
 There are three system-supplied drivers in the IDE driver model for Windows 2000 and Windows XP: *atapi.sys* (port driver), *pciidex.sys* (controller driver), and *pciide.sys* (generic controller minidriver). All three drivers are illustrated in the following figure.
 
-![windows 2000 and windows xp ide driver stack ](images/idedrvrs.png)
+![windows 2000 and windows xp ide driver stack .](images/idedrvrs.png)
 
 Starting from the bottom of the figure, the following describes each driver in the stack:
 

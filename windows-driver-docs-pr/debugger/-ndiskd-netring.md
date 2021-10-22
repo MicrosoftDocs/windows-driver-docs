@@ -2,7 +2,7 @@
 title: ndiskd.netring
 description: The ndiskd.netring extension displays information about a NET_PACKET_FRAGMENT structure.
 keywords: ["ndiskd.netring Windows Debugging"]
-ms.date: 06/17/2020
+ms.date: 10/11/2021
 topic_type:
 - apiref
 api_name:
@@ -48,50 +48,29 @@ To obtain a handle for a NET\_PACKET, follow these steps:
 3. Click the "More Information" link to the right of the NetAdapter's NETADAPTER object to run the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension.
 4. Enter the **!ndiskd.cxadapter** command with the *-datapath* parameter to see that NETADAPTER's datapath queues.
 5. Click on the handle for one of the datapath queues.
-6. Click on the handle for that datapath queue's ring buffer. TBD - Does this work with netring?
-7. Click on the "List all elements" link at the bottom of the ring buffer details to see the elements it contains. TBD TBD TBD
-8. Click on one of the NET\_RING (Collection?) objects TBD.
-For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic. For details on Steps 6-7 of this procedure, see the examples on the [**!ndiskd.netrb**](-ndiskd-netrb.md) topic. TBD TBD  
+6. Click on the handle for that datapath queue's ring buffer. 
+7. Click on the "List all elements" link at the bottom of the ring buffer details to see the elements it contains. 
+8. Click on one of the Net Ring Collection objects.
 
-In the following example, use the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension to look for TBD .
+For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic. For details on Steps 6-7 of this procedure, see the examples on the [**!ndiskd.netrb**](-ndiskd-netrb.md) topic.   
 
-```console
-0: kd> !ndiskd.cxdapter 
-
-TBD
-
-TBD
-
-TBD
-
-
-```
-
-Use the address of the TBD to display the netring TBD.
+This example shows the use of netring.
 
 ```console
-0: kd> !ndiskd.netring ffffTBDfffff
+0: kd> !ndiskd.netring ffff8b82f8e75000 
 
-TBD
+NET RING               ffff8b82f8e75000
 
-TBD
+Begin index            000
+Next index             000
+End index              0x2
+Reserved by OS         000
+Element stride         0x40
+Element index mask     0x7f
 
-TBD
-
-
-```
-
-This example shows the use of the -dump option that displays information about each element.
-
-```console
-0: kd> !ndiskd.netring ffffTBDfffff -dump
-
-TBD
-
-TBD
-
-TBD
-
+Number of elements     0x80
+Owned by OS            0x7e
+Owned by Client        0x2
 ```
 
 ## See also

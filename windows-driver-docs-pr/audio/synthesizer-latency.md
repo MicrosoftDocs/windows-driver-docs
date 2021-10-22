@@ -25,7 +25,7 @@ Latency time is all managed by the wave sink. Your implementation of the [**IDir
 
 An example of the latency of a MIDI message is shown in the following figure.
 
-![diagram illustrating latency of a midi message](images/dmclock.png)
+![diagram illustrating latency of a midi message.](images/dmclock.png)
 
 In the preceding figure, the latency clock points to the first place in the PCM buffer loop where a note can be played. Note that the master clock is at 22 time units, which is the point where sound is currently playing from, but the space between 22 and 30 time units has already been filled with wave data and can no longer be written to. Therefore, the first place where a new time-stamped MIDI event can be scheduled to play is at time 30. Thus, the latency clock reads 30 time units.
 

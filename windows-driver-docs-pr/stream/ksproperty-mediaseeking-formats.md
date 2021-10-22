@@ -46,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_FORMATS property retrieves the media time formats 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>PVOID</p></td>
 </tr>
 </tbody>
@@ -77,4 +77,3 @@ This property can return a multiple item property. The requester is responsible 
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-

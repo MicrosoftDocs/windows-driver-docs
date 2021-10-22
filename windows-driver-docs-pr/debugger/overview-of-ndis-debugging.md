@@ -12,7 +12,7 @@ The two primary tools for debugging a network driver are debug tracing and the N
 
 Use the [ndiskd.netreport](-ndiskd-netreport.md) command to generate a visual report showing the current adapters and protocols.
 
-![ndiskd.netreport color coded output showing two columns that illustrate multiple adapters](images/ndis-report.png)
+![ndiskd.netreport color coded output showing two columns that illustrate multiple adapters.](images/ndis-report.png)
 
 Then the [ndiskd.netadapter](-ndiskd-netadapter.md) kernel debugger command is a good place to start to investigate the current set of the drivers.
 

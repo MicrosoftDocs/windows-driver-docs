@@ -1,16 +1,16 @@
 ---
-title: Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary 
+title: Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver 
 ms.topic: article
-ms.date: 06/18/2020
+ms.date: 09/02/2021
 ms.localizationpriority: medium
 ---
- 
-# Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary
+
+# Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash
 
 ## Description
 
-During a user’s session, crash in the graphics driver binary may cause the machine’s screen to hang or appear completely frozen. A Timeout Detection and Recovery (TDR) event attempts to detect these hangs and dynamically recover to unfreeze the display. Users that have encountered a TDR will be unable to use their computer until the TDR is successful, which causes the screen to flicker. This measure evaluates myriad (out of 10,000) of machines with integrated GPUs having the driver, encountering TDR due to a crash in graphics driver binary.
+During a user's session, crash in the graphics driver binary may cause the machine's screen to hang or appear completely frozen. A Timeout Detection and Recovery (TDR) event attempts to detect these hangs and dynamically recover to unfreeze the display. Users that have encountered a TDR will be unable to use their computer until the TDR is successful, which causes the screen to flicker. This measure evaluates myriad (out of 10,000) of machines with integrated GPUs having the driver, encountering TDR due to a crash in graphics driver binary.
 
 ## Measure attributes
 

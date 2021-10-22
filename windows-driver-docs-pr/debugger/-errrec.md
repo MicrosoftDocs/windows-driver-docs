@@ -1,5 +1,5 @@
 ---
-title: errrec
+title: errrec (WinDbg)
 description: The errrec extension displays the contents of a Windows Hardware Error Architecture (WHEA) error record.
 keywords: ["errrec Windows Debugging"]
 ms.date: 05/23/2017

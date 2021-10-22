@@ -1,6 +1,6 @@
 ---
-title: KSMETHOD\_BDA\_DELETE\_PIN\_FACTORY
-description: Clients use KSMETHOD\_BDA\_DELETE\_PIN\_FACTORY to delete a pin factory for a filter.
+title: KSMETHOD_BDA_DELETE_PIN_FACTORY
+description: Clients use KSMETHOD_BDA_DELETE_PIN_FACTORY to delete a pin factory for a filter.
 keywords: ["KSMETHOD_BDA_DELETE_PIN_FACTORY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,51 +10,32 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/12/2021
 ms.localizationpriority: medium
 ---
 
-# KSMETHOD\_BDA\_DELETE\_PIN\_FACTORY
+# KSMETHOD_BDA_DELETE_PIN_FACTORY
 
+Clients use KSMETHOD_BDA_DELETE_PIN_FACTORY to delete a pin factory for a filter.
 
-Clients use KSMETHOD\_BDA\_DELETE\_PIN\_FACTORY to delete a pin factory for a filter.
+## Specifying This Method
 
-## <span id="ddk_ksmethod_bda_delete_pin_factory_ks"></span><span id="DDK_KSMETHOD_BDA_DELETE_PIN_FACTORY_KS"></span>
+KSM_PIN with the **Flags** member of the **Method** member set to KSMETHOD_TYPE_NONE.
 
-
-### <span id="Specifying_This_Method"></span><span id="specifying_this_method"></span><span id="SPECIFYING_THIS_METHOD"></span>Specifying This Method
-
-KSM\_PIN with the **Flags** member of the **Method** member set to KSMETHOD\_TYPE\_NONE.
-
-### <span id="Method_Data"></span><span id="method_data"></span><span id="METHOD_DATA"></span>Method Data
+## Method Data
 
 None
 
 ## Remarks
 
-Specifies the pin factory to delete in the **PinId** member of the KSM\_PIN structure.
+Specifies the pin factory to delete in the **PinId** member of the KSM_PIN structure.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
 [**BdaMethodDeletePin**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethoddeletepin)
 
-[**KSM\_PIN**](/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_ksm_pin)
-
- 
-
+[**KSM_PIN**](/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_ksm_pin)

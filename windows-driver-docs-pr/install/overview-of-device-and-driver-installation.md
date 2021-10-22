@@ -5,7 +5,7 @@ keywords:
 - Device setup WDK device installations , about device installations
 - device installations WDK , about device installations
 - installing devices WDK , about device installations
-ms.date: 10/16/2019
+ms.date: 08/05/2021
 ms.localizationpriority: High
 ---
 

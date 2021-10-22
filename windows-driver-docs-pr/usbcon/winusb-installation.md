@@ -263,7 +263,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 -   An .inf file that installs Winusb.sys as the device's function driver. For more information, see [Writing an .Inf File for WinUSB Installation](#inf).
 -   A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows starting with Vista.
 
-![winusb installation package](images/winusb-package.jpg)
+![winusb installation package.](images/winusb-package.jpg)
 
 **Note**  Make sure that the driver package contents meet these requirements:
 -   The KMDF and WinUSB co-installer files must be obtained from the same version of the Windows Driver Kit (WDK).

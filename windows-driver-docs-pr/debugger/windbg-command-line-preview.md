@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - Command line startup options
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 ## Starting WinDbg Preview
 
@@ -133,7 +133,7 @@ For general information on the startup parameters, see [WinDbg Command-Line Opti
 
 You can use -? to list the supported command line options.
 
-![Screen shot of command line help output listing about 50 options](images/windbgx-start-up-options.png)
+![Screen shot of command line help output listing about 50 options.](images/windbgx-start-up-options.png)
 
 ## See Also
 

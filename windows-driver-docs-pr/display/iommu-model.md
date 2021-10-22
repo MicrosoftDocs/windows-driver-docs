@@ -12,7 +12,7 @@ In the *IoMmu* model each process has a single virtual address space that is sha
 
 To access memory, the GPU sends a data request to a compliant *IoMmu*. The request includes a shared virtual address and a *process address space identifier* (PASID). The *IoMmu* unit performs the address translation using the shared page table. This is illustrated below:
 
-![iommu process address space translation](images/iommu-model.1.png)
+![iommu process address space translation.](images/iommu-model.1.png)
 
 The kernel mode driver expresses support for the *IoMmu* model by setting the [**DXGK\_VIDMMCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps)::**IoMmuSupported** caps. When this flags is set, the video memory manager will automatically register any process using the GPU with the *IoMmu* and obtain a *PASID* for that process address space. The *PASID* is passed to the driver during device creation.
 

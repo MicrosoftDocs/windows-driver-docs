@@ -1,5 +1,5 @@
 ---
-title: verifier
+title: verifier (WinDbg)
 description: The verifier extension displays the status of Driver Verifier and its actions.
 keywords: ["Driver Verifier", "verifier Windows Debugging"]
 ms.date: 05/03/2018

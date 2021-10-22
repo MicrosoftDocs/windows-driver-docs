@@ -25,7 +25,7 @@ As such, we recommend that JavaScript constraints are used only where appropriat
 
 Basic syntactical validation of JavaScript files is supported by opening the JavaScript file in the Windows based Script Host. To do this, right-click the JavaScript file and select **Open With**, and choose the Windows based Script Host entry in the list. If no errors are thrown, then the JavaScript is syntactically valid. Otherwise, it will point out the line number of the issue, as shown in the following screenshot.
 
-![javascript syntax error dialog](images/script-host-err.png)
+![javascript syntax error dialog.](images/script-host-err.png)
 
 Publicly available JavaScript validation tools may also be valuable as an aide in evaluating the style of JavaScript files.
 

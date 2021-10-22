@@ -12,7 +12,7 @@ While an audio record stream is in the Run state, the role of the WaveRT port dr
 
 In the following diagram, the record and read positions continually progress from left to right as the stream flows through the buffer. When the record or the read position reaches the end of the buffer, it wraps around to the start of the buffer.
 
-![diagram illustrating the latency of a recording stream](images/wavert-record.png)
+![diagram illustrating the latency of a recording stream.](images/wavert-record.png)
 
 The preceding diagram identifies the *Record Position* as the buffer location of the sample that the audio device is currently recording (capturing from the microphone through the analog-to-digital converter, or ADC). Note that the record position is the future buffer location into which the audio device writes the sample after it passes through the FIFO. The *Read Position* is the buffer position from which the audio engine reads the next sample.
 

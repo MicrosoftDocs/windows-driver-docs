@@ -47,8 +47,8 @@ Control and configure the kernel debugging connection. See [Using KDbgCtrl](usin
 <span id="SrcSrv"></span><span id="srcsrv"></span><span id="SRCSRV"></span>[SrcSrv](srcsrv.md)  
 A source server that can be used to deliver source files while debugging.
 
-<span id="SymSrv"></span><span id="symsrv"></span><span id="SYMSRV"></span>[SymSrv](symsrv.md)  
-A symbol server that the debugger can use to connect to a symbol store.
+<span id="SymSrv"></span><span id="symsrv"></span><span id="SYMSRV"></span>SymSrv  
+A symbol server that the debugger can use to connect to a symbol store.  For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 <span id="SymProxy"></span><span id="symproxy"></span><span id="SYMPROXY"></span>[SymProxy](symproxy.md)  
 Create a single HTTP symbol server on your network that all your debuggers can point to. This has the benefit of pointing to multiple symbol servers (both internal and external) with a single symbol path, handling all authentication, and increasing performance via symbol caching. Symproxy.dll is in the SymProxy folder in the [installation directory](#installation-directories).

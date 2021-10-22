@@ -53,7 +53,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure along with a user-mode event handle.
+The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure along with a user-mode event handle.
 
 The property value (operation data) for this property is **NULL** because no operation data is returned.
 
@@ -120,11 +120,10 @@ After you stop the pin and prior to the step where you close it, each registered
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)
 
 [**KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md)
 
 [**KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-register-notification-event.md)
-

@@ -114,7 +114,7 @@ Each pin name in the preceding code example ends with either "SRC" or "DST" depe
 
 The PCCONNECTION\_DESCRIPTOR array in the preceding code example describes the topology filter in the following figure.
 
-![diagram illustrating the topology filter connections described by the pcconnection\-descriptor array](images/topofilt.png)
+![diagram illustrating the topology filter connections described by the pcconnection\-descriptor array.](images/topofilt.png)
 
 The topology filter in the figure has four input (sink) pins on the left and two output (source) pins on the right. The data paths that connect the top two input pins and top output pin mix the two analog signals that have been rendered from the wave and MIDI streams that are being played back. The data paths that connect the bottom two input pins and bottom output pin multiplex the captured analog signals that are being recorded.
 

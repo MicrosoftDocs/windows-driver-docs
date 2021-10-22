@@ -20,11 +20,11 @@ A filter is a group of nodes that encapsulates a processing task to be performed
 
 A simple filter could contain one data sink pin and one data source pin. The filter receives incoming data on the data sink pin, processes it internally, and writes to the data source pin. In the following figure, the pins are shown as heavy line segments. Internally, the filter connects the data sink pin to an internal processing unit, a *node*, which in turn is connected to the data source pin.
 
-![diagram illustrating a simple ks filter](images/ks01.png)
+![diagram illustrating a simple ks filter.](images/ks01.png)
 
 Another device might combine or split data flows between pins. For example, an audio mixer supports several data sink pins. The mixer combines them into a single stream, and writes that stream to a data source pin. The following illustration shows the data flow.
 
-![diagram illustrating a mixer](images/ks02.png)
+![diagram illustrating a mixer.](images/ks02.png)
 
 The graph describes the internal relationship between the filter's pins. A more complicated filter might encapsulate several nodes that transform data flowing through the filter.
 

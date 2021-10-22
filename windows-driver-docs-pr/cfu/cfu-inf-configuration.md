@@ -3,8 +3,6 @@ title: Component Firmware Update (CFU) INF configuration
 description: Provides information on configuring the INF file for Component Firmware Update (CFU).
 ms.date: 10/01/2020
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +43,7 @@ To update the firmware image for your device by using the CFU model, you should 
 
 This allows you to service your in-market devices through Windows Update. To update the firmware for a component, you deploy the firmware update image through Windows Update. When the CFU inbox driver detects the presence of a component, it performs the necessary actions on the host and transmits the firmware image to the primary component on the device.
 
-![CFU firmware update](images/transfer-flowchart.png)
+![CFU firmware update.](images/transfer-flowchart.png)
 
 ## Configure your custom CFU INF file
 

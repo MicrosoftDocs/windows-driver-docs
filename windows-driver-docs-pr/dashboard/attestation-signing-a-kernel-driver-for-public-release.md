@@ -13,7 +13,7 @@ This topic describes how to sign a driver using attestation signing.
 > [!Note]
 > Attestation signing has the following properties.
 >
-> - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
+> - Attestation signing supports Windows 10 kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
 > - Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
 > - Attestation signing requires the use of an EV Certificate to submit the driver to the Partner Center (Hardware Dev Center Dashboard).
 > - An attestation signed driver works on Windows 10. It does not work on earlier versions of Windows, such as Windows 8.1 and Windows 7, and is not supported for Windows Server 2016 and later.
@@ -177,7 +177,7 @@ C:\Echo> SignTool sign /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /fd sha256 
    - As part of the Attestation submission process, do not check any of the Test Signing boxes highlighted below.  Leave those unchecked.
 
    - The following screen shot shows the options for submitting the echo driver for signing.
-    ![a screenshot showing the options for submitting the echo driver for signing](images/Attestation-Flow.PNG)
+    ![a screenshot showing the options for submitting the echo driver for signing.](images/Attestation-Flow.PNG)
 
 2. When the signing process is complete, download your signed driver from the hardware dashboard.
 

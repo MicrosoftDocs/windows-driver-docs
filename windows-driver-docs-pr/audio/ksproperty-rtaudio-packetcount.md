@@ -43,7 +43,7 @@ KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets complete
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/dotnet/csharp/language-reference/keywords/ulong" data-raw-source="[&lt;strong&gt;ULONG&lt;/strong&gt;](/dotnet/csharp/language-reference/keywords/ulong)"><strong>ULONG</strong></a></p></td>
 </tr>
 </tbody>
@@ -51,7 +51,7 @@ KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets complete
 
  
 
-The property descriptor (instance data) is a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
+The property descriptor (instance data) is a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the structure with the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
 
 The property value is a variable of type ULONG.
 
@@ -92,4 +92,3 @@ The driver should reset the packet count to 0 when the stream is in KSSTATE\_STO
 
 
 [KSPROPSETID\_RTAudio](kspropsetid-rtaudio.md)
-

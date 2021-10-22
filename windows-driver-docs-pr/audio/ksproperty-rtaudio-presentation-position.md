@@ -43,14 +43,14 @@ KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns stream presentation informat
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position"><STRONG>KSAUDIO_PRESENTATION_POSITION</STRONG></a></p></td>
 </tr>
 </tbody>
 </table>
  
 
-The property descriptor (instance data) is a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with values that describe the current cursor position in audio data stream.
+The property descriptor (instance data) is a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the structure with values that describe the current cursor position in audio data stream.
 
 The property value is a [**KSAUDIO\_PRESENTATION\_POSITION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position) structure that represents a recent presentation position in the audio data stream.
 
@@ -89,4 +89,3 @@ This does not mean that KSPROPERTY\_RTAUDIO\_PACKETCOUNT and KSPROPERTY\_RTAUDIO
 
 
 [KSPROPSETID\_RTAudio](kspropsetid-rtaudio.md)
-

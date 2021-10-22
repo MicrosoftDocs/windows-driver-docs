@@ -71,17 +71,17 @@ The following table describes the elements of the Bootcfg display of boot data i
 <tr class="even">
 <td align="left"><p><strong>Timeout</strong></p></td>
 <td align="left"><p>Determines how long the boot menu is displayed. When this value expires, the boot loader loads the default operating system.</p></td>
-<td align="left"><pre space="preserve"><code>Timeout:   30</code></pre></td>
+<td align="left"><pre><code>Timeout:   30</code></pre></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Default</strong></p></td>
 <td align="left"><p>Specifies the location of the default operating system.</p></td>
-<td align="left"><pre space="preserve"><code>\Device\HarddiskVolume3\WINDOWS</code></pre></td>
+<td align="left"><pre><code>\Device\HarddiskVolume3\WINDOWS</code></pre></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CurrentBootEntryID</strong></p></td>
 <td align="left"><p>Identifies the boot entry that was used to start the current session of the operating system.</p></td>
-<td align="left"><pre space="preserve"><code>CurrentBootEntryID:  1</code></pre></td>
+<td align="left"><pre><code>CurrentBootEntryID:  1</code></pre></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Boot Entries</strong></p></td>
@@ -93,19 +93,19 @@ The following table describes the elements of the Bootcfg display of boot data i
 <td align="left"><p><strong>Boot entry ID</strong></p></td>
 <td align="left"><p>Identifies the boot entry to Bootcfg. This value changes when you reorder the boot entries.</p>
 <p>This is not the <em>EFI boot entry ID</em>, which is a persistent identifier for the EFI components.</p></td>
-<td align="left"><pre space="preserve"><code>Boot entry ID:    1</code></pre></td>
+<td align="left"><pre><code>Boot entry ID:    1</code></pre></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>OS Friendly Name</strong></p></td>
 <td align="left"><p>Represents the boot entry in the boot menu.</p></td>
-<td align="left"><pre space="preserve"><code>Windows Server 2003,
+<td align="left"><pre><code>Windows Server 2003,
 Enterprise</code></pre></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>OsLoadOptions</strong></p></td>
 <td align="left"><p>Specifies the <em>boot parameters</em> for the entry. <em>Boot parameters</em> are commands to enable, disable, and configure features of the operating system. The EFI Boot Manager passes these parameters to the bootable device or system to be interpreted and implemented.</p>
 <p>For a list of the boot parameters that are related to driver debugging and testing, see <a href="/windows-hardware/drivers/devtest/boot-options-in-a-boot-ini-file" data-raw-source="[Boot Options in a Boot.ini File](./boot-options-in-a-boot-ini-file.md)">Boot Options in a Boot.ini File</a>.</p></td>
-<td align="left"><pre space="preserve"><code>OsLoadOptions: /debug
+<td align="left"><pre><code>OsLoadOptions: /debug
 /debugport=COM1 /baudrate=57600</code></pre></td>
 </tr>
 <tr class="odd">
@@ -113,7 +113,7 @@ Enterprise</code></pre></td>
 <td align="left"><p>Specifies the location of the EFI boot loader for the operating system. On EFI-based systems, each operating system or bootable device has its own copy of the boot loader on the EFI partition.</p>
 <p>In EFI NVRAM, the boot loader file path is stored as a binary EFI device path that uses a globally unique identifier (GUID) to identify the EFI partition .</p>
 <p>Bootcfg uses the NT device name of the partition in its path display.</p></td>
-<td align="left"><pre space="preserve"><code>BootFilePath: \Device\HarddiskVolume1
+<td align="left"><pre><code>BootFilePath: \Device\HarddiskVolume1
 \EFI\Microsoft\WINNT50\ia64ldr.efi</code></pre></td>
 </tr>
 <tr class="even">
@@ -121,7 +121,7 @@ Enterprise</code></pre></td>
 <td align="left"><p>Specifies the location of the operating system.</p>
 <p>In NVRAM, this value is stored as an EFI device path that uses the GUID of the boot disk partition and the path to the directory that contains the operating system.</p>
 <p>Bootcfg uses the NT device name of the partition in its path display.</p></td>
-<td align="left"><pre space="preserve"><code>OsFilePath: \Device\HarddiskVolume3
+<td align="left"><pre><code>OsFilePath: \Device\HarddiskVolume3
 \WINDOWS</code></pre></td>
 </tr>
 </tbody>

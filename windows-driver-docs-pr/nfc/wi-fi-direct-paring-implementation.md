@@ -45,7 +45,7 @@ This section provides more details on how NFC, Wi-Fi Direct, and Windows work to
 
 Wi-Fi Direct pairing is accomplished using an NFC Forum standardized Connection Handover Select message type. The below graphic provides an overview of how a Connection Handover Select message is applied for Wi-Fi Direct device pairing, specifically NDEF records 3 and 4. The Handover Select message describes one or more “ac” or “Alternate Carrier” records. These records follow the Handover Select record sequentially and each have a well defined type. Finally, the message will contain a Microsoft defined device pairing record which provides Windows with information about how to process the pairing operation.
 
-![connection handover select message](images/handover.png)
+![connection handover select message.](images/handover.png)
 
 ### Wi-Fi Direct Device Pairing Message
 
@@ -543,7 +543,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 <td align="left"><p>0x01 0x23 0x34 0xab</p>
 <p>0xcd 0xef</p></td>
 <td align="left">6</td>
-<td align="left">Wi-Fi Direct P2P device MAC address: “01:23:34<span class="emoji" shortCode="ab">🆎</span>cd:ef”</td>
+<td align="left">Wi-Fi Direct P2P device MAC address: “01:23:34<span class="emoji">🆎</span>cd:ef”</td>
 </tr>
 <tr class="odd">
 <td align="left">69</td>

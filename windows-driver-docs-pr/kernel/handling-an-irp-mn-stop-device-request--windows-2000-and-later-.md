@@ -32,7 +32,7 @@ A driver handles an **IRP\_MN\_STOP\_DEVICE** request with a procedure such as t
 
 4.  Pass the IRP to the next lower driver or complete the IRP.
 
-    -   In a function or filter driver, set up the next stack location with [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md), pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver), and return the status from **IoCallDriver** as the return status from the *DispatchPnP* routine. Do not complete the IRP.
+    -   In a function or filter driver, set up the next stack location with [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation), pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver), and return the status from **IoCallDriver** as the return status from the *DispatchPnP* routine. Do not complete the IRP.
 
     -   In a bus driver, complete the IRP using [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) with IO\_NO\_INCREMENT and return from the *DispatchPnP* routine.
 

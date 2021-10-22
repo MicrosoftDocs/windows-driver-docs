@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # IrqlKeWaitForMutexObject rule (wdm)
 
 
-The **IrqlKeWaitForMutexObject** rule specifies the driver to call the [**KeWaitForMutexObject**](https://msdn.microsoft.com/library/windows/hardware/ff553344) routine at the proper IRQL based on the value of the *Timeout* parameter:
+The **IrqlKeWaitForMutexObject** rule specifies the driver to call the [**KeWaitForMutexObject**](/windows-hardware/drivers/ddi/wdm/) routine at the proper IRQL based on the value of the *Timeout* parameter:
 
 -   If *Timeout* points to a zero value, the driver is executing at IRQL = DISPATCH\_LEVEL.
 

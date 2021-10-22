@@ -22,7 +22,7 @@ After the NetVSC successfully binds to the driver, network traffic in the guest 
 
 The following diagram shows the components of the VF data path over an SR-IOV network adapter.
 
-![stack diagram showing a sr-iov adapter underneath a management parent partition communicating using a pgf miniport and a child partition containing a guest operating system communicating using a vf miniport](images/sriovvf-datapaths.png)
+![stack diagram showing a sr-iov adapter underneath a management parent partition communicating using a pgf miniport and a child partition containing a guest operating system communicating using a vf miniport.](images/sriovvf-datapaths.png)
 
 The use of the VF data path provides the following benefits:
 

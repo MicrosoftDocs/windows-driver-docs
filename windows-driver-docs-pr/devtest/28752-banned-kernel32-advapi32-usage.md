@@ -1,5 +1,5 @@
 ---
-title: C28752
+title: C28752 warning
 description: Warning C28752 Banned usage of kernel32 or advapi32 API.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

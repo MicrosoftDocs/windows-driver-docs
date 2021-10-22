@@ -33,7 +33,7 @@ Display memory heaps can be either linear or rectangular, depending on the blitt
 
 A surface's memory *pitch*, also called stride or offset, is the number of bytes added to a column of display memory in order to reach the same column of display memory on the following scan line. Because pitch is measured in bytes rather than pixels, a 640x480x8 surface has a different pitch value than a surface with the same width and height dimensions but a different pixel format (depth in bits). Additionally, the pitch value sometimes reflects extra bytes that the runtime has reserved as a cache along with extra bytes due to alignment requirements. Therefore, you cannot assume that pitch is simply the surface's width multiplied by the number of bytes per pixel. Rather, visualize the difference between width and pitch as shown in the following figure.
 
-![diagram illustrating the difference between width and pitch](images/ddfig3.png)
+![diagram illustrating the difference between width and pitch.](images/ddfig3.png)
 
 As noted previously, you must also take into account alignment requirements when determining the pitch value. For example, suppose a one byte per pixel (bpp) surface is 97 pixels wide. Also, suppose that the hardware or display driver requires DWORD (4 bytes) alignment. If the runtime has not reserved cache bytes, the pitch is 100, which is the next higher number above 97 that is evenly divisible by 4. The following calculation determines this pitch value:
 

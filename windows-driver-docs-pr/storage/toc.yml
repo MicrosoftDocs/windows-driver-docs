@@ -40,7 +40,7 @@
     - name: "Storage Data Set Management (DSM)"
 # Auto-expanded node
       items: 
-      - name: "Overview"
+      - name: "Performing storage driver data set management"
         href: data-set-management-overview.md
       - name: "DEVICE_DSM_ACTION Descriptions"
         href: device-dsm-action-descriptions.md
@@ -425,6 +425,8 @@
         href: storport-miniport-dma-remapping-support.md
       - name: "Upgrading Firmware for an NVMe Device"
         href: upgrading-firmware-for-an-nvme-device.md
+      - name: "BypassIO for storage drivers"
+        href: bypassio.md
       - name: "StorNVMe Miniport Driver"
 # Auto-expanded node
         items: 

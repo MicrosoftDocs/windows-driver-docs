@@ -26,7 +26,7 @@ This section describes the various isochronous listen options.
 
 Host controllers may or may not automatically strip the headers off an isochronous packet. The bus driver sets the HOST\_INFO\_SUPPORTS\_RETURNING\_ISO\_HDR flag of **HostCapabilities** member of the [**GET\_LOCAL\_HOST\_INFO2**](/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info2) structure if the host controller does *not* automatically strip the headers off isochronous packets.
 
-Also, host controllers may support configurable stripping of headers. The bus driver sets the HOST\_INFO\_SUPPORTS\_ISOCH\_STRIPPING flag of HostCapabilities if the host controller can be configured to strip headers. To actually configure the host controller to strip headers, the driver submits the [**REQUEST\_ISOCH\_ALLOCATE\_RESOURCES**](https://msdn.microsoft.com/library/windows/hardware/ff537649) request with the RESOURCE\_STRIP\_ADDITIONAL\_QUADLETS flag set. The **nQuadletsToStrip** member specifies the number of quadlets to strip off the beginning of each packet. For example, **nQuadletsToStrip** = 1 would strip off the isochronous packet header.
+Also, host controllers may support configurable stripping of headers. The bus driver sets the HOST\_INFO\_SUPPORTS\_ISOCH\_STRIPPING flag of HostCapabilities if the host controller can be configured to strip headers. To actually configure the host controller to strip headers, the driver submits the [**REQUEST\_ISOCH\_ALLOCATE\_RESOURCES**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) request with the RESOURCE\_STRIP\_ADDITIONAL\_QUADLETS flag set. The **nQuadletsToStrip** member specifies the number of quadlets to strip off the beginning of each packet. For example, **nQuadletsToStrip** = 1 would strip off the isochronous packet header.
 
 ### Stream versus packet-based DMA
 
@@ -42,7 +42,7 @@ Regardless of which DMA mode you choose, some design tradeoffs apply. For exampl
 
 If the host controller supports both types of DMA, the bus driver sets the host controller to default to stream-based DMA. To reset the host controller to packet-based DMA, the driver should set the RESOURCE\_USE\_PACKET\_BASED flag when it allocates the resource handle.
 
-Drivers use the [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537644) bus request (with the **u.GetLocalHostInformation.nLevel** member of the IRB = GET\_HOST\_CAPABILITIES) to determine the characteristics of the host controller. The bus driver returns a [**GET\_LOCAL\_HOST\_INFO2**](/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info2) structure, and sets flags within the **HostCapabilities** member to indicate what the host controller supports:
+Drivers use the [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) bus request (with the **u.GetLocalHostInformation.nLevel** member of the IRB = GET\_HOST\_CAPABILITIES) to determine the characteristics of the host controller. The bus driver returns a [**GET\_LOCAL\_HOST\_INFO2**](/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info2) structure, and sets flags within the **HostCapabilities** member to indicate what the host controller supports:
 
 <table>
 <colgroup>

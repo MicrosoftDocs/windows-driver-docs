@@ -35,7 +35,7 @@ DMus miniport drivers are expected to allow the creation of multiple pin instanc
 
 Some of the synth properties described in [Audio Drivers Property Sets](./audio-drivers-property-sets.md) act on a pin instance, and others are global. To process the global properties, the synthesizer must have a synthesizer node in its topology. The description of each property item indicates whether that item is sent to the synthesizer node or to a pin instance. For each piece of hardware supporting synthesis, there exists a port driver object and a miniport driver object, as shown in the following figure.
 
-![diagram illustrating port and miniport drivers for a directmusic synthesizer](images/dmkmport.png)
+![diagram illustrating port and miniport drivers for a directmusic synthesizer.](images/dmkmport.png)
 
 The port driver object exposes one instance of an [IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus) interface, which is held by the miniport driver object. The miniport driver exports one instance of an **IMiniportDMus** interface, which is held by the port driver. For every instantiated pin, the port driver requests a matching **IMXF** interface. Communication between the system and this instance is the combination of property requests addressed to the pin and events flowing to or from the **IMXF** stream interface.
 

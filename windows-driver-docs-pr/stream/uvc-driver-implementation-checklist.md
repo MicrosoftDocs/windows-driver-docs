@@ -1,7 +1,7 @@
 ---
 title: USB Video Class (UVC) driver implementation checklist
 description: Provides step-by-step information on implementing a USB Video Class (UVC) driver for your device.
-ms.date: 06/19/2020
+ms.date: 08/10/2021
 ms.localizationpriority: medium
 ---
 

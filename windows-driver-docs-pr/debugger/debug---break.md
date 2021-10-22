@@ -18,7 +18,7 @@ In user mode, this command stops the process and its threads, enabling you to re
 
 You can also use this command while the debugger is active. In this situation, the command will truncate long [Debugger Command window](debugger-command-window.md) displays.
 
-The **Break** command is equivalent to pressing CTRL+BREAK or clicking the **Break (Ctrl+Break)** button (![screen shot of the break button](images/tbbreak.png)) on the toolbar.
+The **Break** command is equivalent to pressing CTRL+BREAK or clicking the **Break (Ctrl+Break)** button (![screen shot of the break button.](images/tbbreak.png)) on the toolbar.
 
 ### <span id="ALT_DEL"></span><span id="alt_del"></span>ALT+DEL
 

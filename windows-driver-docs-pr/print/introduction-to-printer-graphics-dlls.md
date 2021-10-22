@@ -43,11 +43,11 @@ The first diagram depicts a user-mode printer graphics DLL.
 
  
 
-![diagram illustrating a user-mode printer graphics dll](images/usrmdprt.png)
+![diagram illustrating a user-mode printer graphics dll.](images/usrmdprt.png)
 
 The second diagram depicts a kernel-mode printer graphics DLL.
 
-![print job data flow, using a kernel-mode printer graphics dll](images/gdiprint.png)
+![print job data flow, using a kernel-mode printer graphics dll.](images/gdiprint.png)
 
 Note in these diagrams that if the output format from GDI is *enhanced metafile (EMF)*, the printer graphics DLL does not receive the job until the EMF print processor plays back EMF records. Note also that the EMF Print Processor changes output format to non-EMF.
 

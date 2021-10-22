@@ -1,5 +1,5 @@
 ---
-title: Sequences
+title: NFC CX driver sequences
 description: This topic describes NFC CX driver sequences.
 keywords:
 - NFC

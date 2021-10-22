@@ -26,7 +26,7 @@ It is important for driver developers to understand the different kinds of WDM d
 
 The following figure shows the relationship between the bus driver, function driver, and filter drivers for a device.
 
-![diagram illustrating possible driver layers](images/drvlyr.png)
+![diagram illustrating possible driver layers.](images/drvlyr.png)
 
 Each device typically has a bus driver for the parent I/O bus, a function driver for the device, and zero or more filter drivers for the device. A driver design that requires many filter drivers does not yield optimal performance.
 

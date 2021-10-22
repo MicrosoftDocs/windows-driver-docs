@@ -1,5 +1,5 @@
 ---
-title: C28725
+title: C28725 warning
 description: Warning C28725 Use Watson instead of this SetUnhandledExceptionFilter.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

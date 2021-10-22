@@ -31,7 +31,7 @@ SAE connections are initiated with [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.m
 
 ### Authentication flow
 
-![WPA3-SAE authentication flow](images/wpa3-sae-authentication-flow.png "WPA3-SAE authentication flow")
+![WPA3-SAE authentication flow.](images/wpa3-sae-authentication-flow.png "WPA3-SAE authentication flow")
 
 #### Initial request for SAE parameters
 

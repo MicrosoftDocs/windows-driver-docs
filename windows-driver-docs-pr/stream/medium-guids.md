@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Minidrivers must be able to support multiple devices. In addition, because the TV/radio tuner, TV audio, crossbar, and video capture components are separated into different kernel streaming filters, a method is necessary to correctly describe the topological hardware connections between these components on the device, as well as on multiple devices. For example, two built but not running filter graphs that support FM radio and TV capture must be able to coexist. Minidrivers use mediums to address these scenarios. Also, filter graph building applications, such as *Graph Edit*, use mediums during filter graph construction to ensure that filters for one device connect correctly to filters of another device. For example, the tuner filter of one device should not connect to the crossbar filter of another device.
 
-A minidriver describes mediums with the [**KSPIN\_MEDIUM**](/previous-versions/ff563538(v=vs.85)) structure that consists of a GUID data type member (**Set**) followed by two ULONG members (**Id** and **Flags**):
+A minidriver describes mediums with the [**KSPIN\_MEDIUM**](./kspin-medium-structure.md) structure that consists of a GUID data type member (**Set**) followed by two ULONG members (**Id** and **Flags**):
 
 - The **Set** member should be assigned the GUID representing the topological hardware connection.
 

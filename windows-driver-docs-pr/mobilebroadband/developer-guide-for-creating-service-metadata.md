@@ -88,7 +88,7 @@ When you have completed preview testing, and verified your package works for all
 
 The following diagram discusses the workflow:
 
-![creating a service metadata package](images/mbae-sxs81-createpackageworkflow.png)
+![creating a service metadata package.](images/mbae-sxs81-createpackageworkflow.png)
 
 To create a new service metadata package, see [Steps for creating a service metadata package](#steps-for-creating-a-service-metadata-package).
 
@@ -134,7 +134,7 @@ The mobile broadband app must be associated with the Microsoft Store before you 
 
 4.  Close the package.appxmanifest file.
 
-![the package.appxmanifest file in code view](images/mbae-sxs-appxmanifest.png)
+![the package.appxmanifest file in code view.](images/mbae-sxs-appxmanifest.png)
 
 You can also complete this without using Visual Studio 2013 by doing the following steps:
 
@@ -166,7 +166,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
 2.  Under the **Device metadata** heading, click **Create mobile broadband experience**.
 
-    ![this is the landing page for the dashboard](images/mbae-sxs81-dashboard.png)
+    ![this is the landing page for the dashboard.](images/mbae-sxs81-dashboard.png)
 
 3.  On the **Service info** page, complete the following fields, and then click **Next**.
 
@@ -182,7 +182,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     -   **Do you want to require system admin privileges to perform PIN unlock on SIMs?** – If you want to require system administrator privileges to PIN unlock a SIM card, click the **Yes** option.
 
-    ![the service info step of the wizard](images/mbae-sxs81-serviceinfostep.png)
+    ![the service info step of the wizard.](images/mbae-sxs81-serviceinfostep.png)
 
 4.  On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows APN database so the right subscriber is identified. For more information about the APN database, see [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
@@ -198,11 +198,11 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     -   Click **Next**.
 
-    ![this is the hardware info step of the wizard](images/mbae-sxs81-hardwareinfostep.png)
+    ![this is the hardware info step of the wizard.](images/mbae-sxs81-hardwareinfostep.png)
 
 5.  On the **App info** page, enter the information you gathered in Step 1 of this topic. If you want to add additional privileged apps, click **Add**, and then enter up to 7 more. When all of the privileged apps are entered, click **Next**.
 
-    ![this is the app info step of the wizard](images/mbae-sxs81-appinfostep.png)
+    ![this is the app info step of the wizard.](images/mbae-sxs81-appinfostep.png)
 
 6.  On the **Confirm** page, verify that the information is correct. Select the **Developer Mode** or **Preview Mode** option, and then click **Submit**.
 
@@ -210,7 +210,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     -   **Preview Mode** – The package is signed and automatically downloaded from Microsoft to test computers with the appropriate registry settings configured. Preview Mode does not check to ensure that the mobile broadband app is published to the Microsoft Store.
 
-    ![this is the confirm step of the wizard](images/mbae-sxs81-confirm.png)
+    ![this is the confirm step of the wizard.](images/mbae-sxs81-confirm.png)
 
 ### 3-Insert the store manifest file into the Microsoft Store device app
 
@@ -220,7 +220,7 @@ A store manifest file must be included with a UWP device app. Use the following 
 
 1.  On the Windows Dev Center hardware dashboard, on the manage experience page for your service metadata package, click the service metadata package, and then click **StoreManifest.xml** to download your store manifest file.
 
-    ![download the store manifest file](images/mbae-sxs81-storemanifest.png)
+    ![download the store manifest file.](images/mbae-sxs81-storemanifest.png)
 
 2.  Open the mobile broadband app project by using Visual Studio 2013.
 
@@ -240,11 +240,11 @@ You must manually download the package and install it in the right location for 
 
 If you created a new package, in the Windows Dev Center hardware dashboard, click **Manage experiences**, and then click **Unassociated Dev Packages** (the first entry in the **Manage experiences** table). The following figure shows an example:
 
-![download your service metadata package](images/mbae-sxs81-managedevpackages.png)
+![download your service metadata package.](images/mbae-sxs81-managedevpackages.png)
 
 If you edited an existing service metadata package that is already associated with an experience, select the experience from the **Manage experiences** table, and you will see the developer mode package in the **Metadata packages** table. Click **Download MBAE Zip Package Edit** to download it.
 
-![download the service metadata package](images/mbae-sxs81-manageassociatedpackages.png)
+![download the service metadata package.](images/mbae-sxs81-manageassociatedpackages.png)
 
 After you’ve download the service metadata package, you must enable test signing because the service metadata package is not signed. To enable test signing, **run bcdedit –set testsigning on** from an elevated command prompt and then restart your computer.
 
@@ -523,14 +523,14 @@ After the environment is set up, run the following steps each time that you want
 
 Once you have confirmed that the service metadata package works correctly, the final step is to release the package. You can release the package by selecting the package attached to the specific experience by clicking the **Release** button, as shown below.
 
-![release your service metadata package](images/mbae-sxs81-releasetolive.jpg)
+![release your service metadata package.](images/mbae-sxs81-releasetolive.jpg)
 
 ## Steps for editing a service metadata package
 
 
 You can edit a service metadata package by using the Manage Experiences page of the Windows Dev Center hardware dashboard.
 
-![the manage experiences page](images/mbae-sxs81-manageexperience.png)
+![the manage experiences page.](images/mbae-sxs81-manageexperience.png)
 
 ## Troubleshooting
 
@@ -597,13 +597,13 @@ Perform the following steps to check the registry:
 
 5.  If some or all of these keys exist, expand the **Accounts** key in the **Tree** view. One or more registry keys that have names similar to GUIDs should exist inside it. The registry tree entries should be similar to the registry tree that is displayed below:
 
-    ![registry entries for parsed account](images/fig2-registryentries-for-parsedmobilebroadbandaccount.png)
+    ![registry entries for parsed account.](images/fig2-registryentries-for-parsedmobilebroadbandaccount.png)
 
     If the registry key looks similar to the above figure (the value names will vary slightly depending on whether the account is on a GSM or CDMA network), and if you do not see the icon in the networks list, you should look at the event logs.
 
     If the Registry entries are similar to the next figure, it means that the mobile broadband adapter was inserted before the service metadata package was copied into the device metadata store, the service metadata package is corrupted, or the Hardware IDs are incorrect. To remedy a situation where you plugged in or turned on the device before copying the metadata package into the metadata store, perform the steps in Force a metadata refresh. Otherwise, follow the steps in Check the WWAN Logs.
 
-    ![registry entries for unparsed account](images/fig1-registryentries-for-unparsedmobilebroadbandaccount.png)
+    ![registry entries for unparsed account.](images/fig1-registryentries-for-unparsedmobilebroadbandaccount.png)
 
 ### <span id="checkwwanlogs"></span><span id="CHECKWWANLOGS"></span>Check the WWAN Logs
 

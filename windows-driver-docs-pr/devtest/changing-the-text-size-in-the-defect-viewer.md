@@ -18,7 +18,7 @@ This feature affects only the Defect Viewer. It does not change the size of the 
 
 The following screen shot shows how to change text size in the Defect Viewer window.
 
-![screen shot showing how to change text size in the defect viewer window](images/sdv-defectviewerbig.png)
+![screen shot showing how to change text size in the defect viewer window.](images/sdv-defectviewerbig.png)
 
  
 

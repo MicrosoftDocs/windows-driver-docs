@@ -1,5 +1,5 @@
 ---
-title: qlocks
+title: qlocks (WinDbg)
 description: The qlocks extension displays the state of all queued spin locks.
 keywords: ["qlocks Windows Debugging"]
 ms.date: 05/23/2017

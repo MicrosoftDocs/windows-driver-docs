@@ -28,7 +28,7 @@ Audio drivers support get, set, and basic-support requests on properties (KSPROP
 
 A client can send requests for three kinds of properties: filter properties, pin properties, and node properties. For more information, see [Filter, Pin, and Node Properties](filter--pin--and-node-properties.md).
 
-When sending a filter-property request to a filter object, the client specifies the target filter by its instance handle (see [Filter Factories](filter-factories.md)). Similarly, when sending a pin-property request to a pin object, the target pin is specified by its instance handle (see [Pin Factories](pin-factories.md)). Either type of request contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure that specifies the following:
+When sending a filter-property request to a filter object, the client specifies the target filter by its instance handle (see [Filter Factories](filter-factories.md)). Similarly, when sending a pin-property request to a pin object, the target pin is specified by its instance handle (see [Pin Factories](pin-factories.md)). Either type of request contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure that specifies the following:
 
 -   A GUID that identifies the property set
 
@@ -49,6 +49,4 @@ If a filter can create more than one instance of a particular node type, the tar
 With these conventions, a particular node on a particular data path can be identified uniquely.
 
 For information about using the mixer API to traverse the nodes in a data path, see [Kernel Streaming Topology to Audio Mixer API Translation](kernel-streaming-topology-to-audio-mixer-api-translation.md).
-
- 
 

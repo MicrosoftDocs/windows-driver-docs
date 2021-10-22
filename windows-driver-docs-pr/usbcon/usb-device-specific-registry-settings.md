@@ -19,19 +19,19 @@ This topic describes the device-specific registry entries.
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\**
 
-    ![usb hardware id](images/deviceinstance.png)
+    ![usb hardware id.](images/deviceinstance.png)
 
 2.  Find the device instance registry key and get the device interface GUID:
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;hardware id&gt;\\&lt;instance id&gt;\\Device Parameters**
 
-    ![usb device interface guid](images/device-interface-guid2.png)
+    ![usb device interface guid.](images/device-interface-guid2.png)
 
 3.  Under the device instance key, note the device class, subclass, and protocol codes:
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB**
 
-    ![usb device class subclass protocol codes](images/deviceclass.png)
+    ![usb device class subclass protocol codes.](images/deviceclass.png)
 
 ## Registry settings for configuring USB driver stack behavior
 

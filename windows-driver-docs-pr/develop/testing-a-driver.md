@@ -14,14 +14,15 @@ The WDK adds a driver testing interface to Visual Studio that allows you to buil
 
 This video demonstrates the how to run driver-related tests in a test group.
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/videoplayer/embed/e12e5ce5-b41f-4b91-ab5f-69598ccdcb57?autoplay=false"></iframe> 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/e12e5ce5-b41f-4b91-ab5f-69598ccdcb57?autoplay=false]
+
 
 This section describes some strategies for testing driver, and information about how you select and configure a remote computer to use for testing.
 
 To prepare a driver for public distribution, you should run the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/). For information about the Windows Certification program and how to obtain the HCK, see [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
 The WDK provides the test binaries and tools which make it easy to run the Device Fundamentals tests from the command-line.
-For more information, see [Run the DevFund Tests via the command-line](/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line).
+For more information, see [Run the DevFund Tests via the command-line](../devtest/run-devfund-tests-via-the-command-line.md).
 
 
 <table>

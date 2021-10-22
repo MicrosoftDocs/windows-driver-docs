@@ -75,7 +75,7 @@ In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the followi
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
     -   Propagate the status from **IoCallDriver** as the return status from the *DispatchPnP* routine.
 

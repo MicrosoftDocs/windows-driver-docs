@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # KSRTAUDIO\_BUFFER\_PROPERTY structure
 
 
-The KSRTAUDIO\_BUFFER\_PROPERTY structure appends a buffer base address and requested buffer size to a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. This structure is used by the client to request allocation of the audio buffer via [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md).
+The KSRTAUDIO\_BUFFER\_PROPERTY structure appends a buffer base address and requested buffer size to a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. This structure is used by the client to request allocation of the audio buffer via [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md).
 
 ## Syntax
 
@@ -64,6 +64,4 @@ The value that the client writes into the **RequestedBufferSize** member is not 
 </tr>
 </tbody>
 </table>
-
- 
 

@@ -18,7 +18,7 @@ Most of this discussion is also relevant to configuring a PnP device that is pre
 
 The following figure shows the first steps in configuring the device, starting from when the user plugs the hardware into the machine.
 
-![diagram illustrating enumerating and reporting a plug and play device](images/hotplug.png)
+![diagram illustrating enumerating and reporting a plug and play device.](images/hotplug.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 
@@ -54,7 +54,7 @@ Note that the bus function driver reports a change in its list of children by re
 
 At this point, the PnP manager has the current list of devices on the bus. The PnP manager then determines whether any devices are newly arrived or have been removed. In this example, there is one new device. The following figure shows the PnP manager creating a devnode for the new device and beginning to configure the device.
 
-![diagram illustrating creating a devnode for a new plug and play device](images/credvnd.png)
+![diagram illustrating creating a devnode for a new plug and play device.](images/credvnd.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 
@@ -140,7 +140,7 @@ The following notes correspond to the circled numbers in the previous figure:
 
 At this point, the PnP manager is ready to locate the function driver and filter drivers for the device, if any. (See the following figure.)
 
-![diagram illustrating finding function and filter drivers](images/finddrv.png)
+![diagram illustrating finding function and filter drivers.](images/finddrv.png)
 
 The following notes correspond to the numbered circles in the previous figure:
 
@@ -154,7 +154,7 @@ The following notes correspond to the numbered circles in the previous figure:
 
 The following figure shows the PnP manager loading the drivers (if appropriate), calling their *AddDevice* routines, and directing the drivers to start the device.
 
-![diagram illustrating calling adddevice routines and starting the new device](images/addstart.png)
+![diagram illustrating calling adddevice routines and starting the new device.](images/addstart.png)
 
 The following notes correspond to the numbered circles in the previous figure:
 

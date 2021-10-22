@@ -43,7 +43,6 @@ Column key for the below table:
         <th>H</th>
     </tr>
 </head>
-<body>
     <tr>
         <td>Buffer</td>
         <td>N/A</td>
@@ -241,7 +240,6 @@ Column key for the below table:
         <td>R</td>
         <td>R</td>
     </tr>
-</body>
 </table>
 
 >[!NOTE]

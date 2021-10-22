@@ -17,7 +17,7 @@ GPIO test modules that are included in the MITT software package can be used to 
 
 ## Hardware setup
 
-![mitt gpio hardware setup](images/mitttogpio.jpg)
+![mitt gpio hardware setup.](images/mitttogpio.jpg)
 
 |Bus interface|Pin-out|ACPI and schematics|Connection solution|
 |----|----|----|----|
@@ -26,23 +26,23 @@ GPIO test modules that are included in the MITT software package can be used to 
 
 1. On the MITT board, identify the GPIO connector. It uses the left most 12-pin header, labeled **JA1**, as shown in this image.
 
-    ![gpio header on the mitt board](images/gpioheader.jpg)
+    ![gpio header on the mitt board.](images/gpioheader.jpg)
 
 2. Connect the GPIO adapter board to the **JA1** header.
 3. Connect the power jumper on the MITT board to 3V3.
 4. Push the slider up on the switch next to the GPIO header to power the board.
 
-    ![gpio power connection](images/gpiopower.png)
+    ![gpio power connection.](images/gpiopower.png)
 
 5. Connect the volume up (volu), volume down (vold), dock/undock (dock), and slate/laptop (mode) lines from the GPIO adapter board (connected to the MITT) to the corresponding pins on the system under test.
 
     The 12-pin header is wired to individual GPIO lines as shown in this image.
 
-    ![gpio wiring on ja1 header](images/gpiowiring.png)
+    ![gpio wiring on ja1 header.](images/gpiowiring.png)
 
     Schematic of an output pin on the GPIO board. The pin must be placed in parallel with a switch so that the FET can pull the line low, as if the switch is pushed.
 
-    ![gpio output pin on mitt](images/gpiooutputpin.png)
+    ![gpio output pin on mitt.](images/gpiooutputpin.png)
 
 6. Optional. If you want to run the MITT GPIO tests on volume or indicators but not both, you can skip the related tests in GPIO automation by setting these registry entries. Each entry is a DWORD and the value of 1 enables the test; 0 disables it.
     - Volume
@@ -127,10 +127,10 @@ To generate a sequence, you need these values:
 
     By using the preceding example you can create input injection files. To generate input sequences, you need the communication protocol. Data sent from the MITT board to the system under test is arranged in this pattern:
 
-    ![communication protocol for gpio module](images/gpioprotocol.png)
+    ![communication protocol for gpio module.](images/gpioprotocol.png)
 
     There is no protocol-level error checking in the GPIO test circuit. If there is a protocol error, the MITT displays an unknown error.
 
 ## GPIO adapter schematic
 
-![gpio schematic](images/gpioschematic.png)
+![gpio schematic.](images/gpioschematic.png)

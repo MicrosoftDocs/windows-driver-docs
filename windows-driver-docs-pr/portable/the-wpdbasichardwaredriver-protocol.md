@@ -16,7 +16,7 @@ After you install a device and the sample driver, you can view packets of this d
 DEFINE_GUID (EVENT_SENSOR_READING_UPDATED, 0xada23b0b, 0xce13, 0x4e11, 0x9d, 0x2f, 0x15, 0xfe, 0x10, 0xd6, 0x63, 0x37);
 ```
 
-![the wpd monitor](images/wpdmon.png)
+![the wpd monitor.](images/wpdmon.png)
 
 **Note**  The SENSOR\_READING and SENSOR\_UPDATE\_INTERVAL event parameters are not part of the WPD schema. It is necessary to edit the WpdInfo Properties file to add the following entries. (If these entries are not added, the WpdMon and WpdInfo tools will display raw PROPERTYKEYs rather than friendly names.)
 
@@ -29,7 +29,7 @@ DEFINE_GUID (EVENT_SENSOR_READING_UPDATED, 0xada23b0b, 0xce13, 0x4e11, 0x9d, 0x2
 
 In the previous image, the SENSOR\_READING line contains data that is sent by the sensor by using the driver to the WPD API. This data is a multibyte packet that has the format that is shown in the following image:
 
-![sensor packet](images/sensiron_packetvsd.png)
+![sensor packet.](images/sensiron_packetvsd.png)
 
 The first byte identifies the sensor, the second specifies a count of elements, the third specifies the size of an element, the fourth through (fourth + count) bytes contain the actual data elements, and the last six bytes specify the interval at which the sensor publishes its data to the computer.
 

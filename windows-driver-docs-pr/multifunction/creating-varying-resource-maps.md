@@ -1,17 +1,13 @@
 ---
 title: Creating Varying Resource Maps
-description: Creating Varying Resource Maps
+description: Varying resource maps let you subdivide a parent resource among children enumerated by mf.sys.
 keywords:
 - varying resource maps WDK multifunction devices
-ms.date: 04/20/2017
+ms.date: 08/13/2021
 ms.localizationpriority: medium
 ---
 
 # Creating Varying Resource Maps
-
-
-
-
 
 While standard resource maps can only assign an entire parent resource to a child of a multifunction device, varying resource maps let you subdivide a parent resource among children enumerated by mf.sys. Varying resource maps are supported on Windows XP and later versions of the NT-based operating system.
 
@@ -21,54 +17,19 @@ In addition to the I/O port and interrupt resources required by the card's 16550
 
 Based on these assumptions, mf.sys will return a resource requirements list for this device, constructed as follows:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Resourcenumber</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>00</p></td>
-<td><p><em>Memory Range</em> Base Register Address (BAR) 0</p></td>
-</tr>
-<tr class="even">
-<td><p>01</p></td>
-<td><p><em>Private Data</em></p></td>
-</tr>
-<tr class="odd">
-<td><p>02</p></td>
-<td><p><em>Memory Range</em> BAR 1</p></td>
-</tr>
-<tr class="even">
-<td><p>03</p></td>
-<td><p><em>Private Data</em></p></td>
-</tr>
-<tr class="odd">
-<td><p>04</p></td>
-<td><p><em>I/O Port Range</em> BAR 2</p></td>
-</tr>
-<tr class="even">
-<td><p>05</p></td>
-<td><p><em>Private Data</em></p></td>
-</tr>
-<tr class="odd">
-<td><p>06</p></td>
-<td><p><em>Interrupt</em></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Resourcenumber | Resource |
+|--|--|
+| 00 | *Memory Range* Base Register Address (BAR) 0 |
+| 01 | *Private Data* |
+| 02 | *Memory Range* BAR 1 |
+| 03 | *Private Data* |
+| 04 | *I/O Port Range* BAR 2 |
+| 05 | *Private Data* |
+| 06 | *Interrupt* |
 
 Vendors use INF file directives to specify the sharing of these resources among the card's 16550 UART functions. For each function that requires a segment of the device's resources, you must use a **VaryingResourceMap** entry in the INF to create a registry entry. Following is an excerpt from the INF file for this device:
 
-```cpp
+```inf
 [DDInstall.RegHW] 
 ; for each "child" function list hardware ID and resource map 
 ; and/or varying resource map
@@ -79,19 +40,19 @@ HKR,Child0002,ResourceMap,1,06
 
 The line containing **VaryingResourceMap** is interpreted as follows:
 
--   The "1" following the **VaryingResourceMap** parameter specifies that the registry entry's data type is REG\_BINARY.
+- The "1" following the **VaryingResourceMap** parameter specifies that the registry entry's data type is REG\_BINARY.
 
--   The numbers following the "1" are the varying resource map values. The '04' indicates the parent resource, a segment of which we are assigning to this child. In this case, we're assigning a segment of resource 04 (BAR 2) to the child (that is, a piece of the resource representing the eight I/O port ranges for each serial port).
+- The numbers following the "1" are the varying resource map values. The '04' indicates the parent resource, a segment of which we are assigning to this child. In this case, we're assigning a segment of resource 04 (BAR 2) to the child (that is, a piece of the resource representing the eight I/O port ranges for each serial port).
 
--   The next two DWORDs indicate, first, the offset into the resource and, second, the length of the range that should be allocated to this child. In this case, eight I/O ports are being allocated to this child, starting at offset 0x10 into the parent resource.
+- The next two DWORDs indicate, first, the offset into the resource and, second, the length of the range that should be allocated to this child. In this case, eight I/O ports are being allocated to this child, starting at offset 0x10 into the parent resource.
 
--   If this child required another parent resource, the resource's number, length, and offset would be included on the same line of the INF, following the first resource.
+- If this child required another parent resource, the resource's number, length, and offset would be included on the same line of the INF, following the first resource.
 
 The **ResourceMap** parameter is described in [Creating Standard Resource Maps](creating-standard-resource-maps.md) and indicates that this child should get a share of resource 06, which in this case is the PCI device's interrupt.
 
 Following is a more complete example for this device, specifying four child functions:
 
-```cpp
+```inf
 [Version]
 Signature="$Windows NT$"
 Class=MultiFunction
@@ -136,11 +97,3 @@ HKR,Child0003,ResourceMap,1,06
 MYCOMPANY= "MYCOMPANY Inc."
 MYCOMPANY_4PORT="MYCOMPANY 4PORT"
 ```
-
- 
-
- 
-
-
-
-

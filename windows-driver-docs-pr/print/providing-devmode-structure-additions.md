@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 Your UI plug-in can add its own private members to the [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure, as illustrated in the following figure.
 
-![diagram illustrating public and private devmode sections](images/dvmdstru.png)
+![diagram illustrating public and private devmode sections.](images/dvmdstru.png)
 
 A UI plug-in can use these private DEVMODE members to store values associated with customized printer options. The plug-in makes these options available to the user by [modifying a driver-supplied property sheet page](modifying-a-driver-supplied-property-sheet-page.md) or by [adding new property sheet pages](adding-new-property-sheet-pages.md).
 

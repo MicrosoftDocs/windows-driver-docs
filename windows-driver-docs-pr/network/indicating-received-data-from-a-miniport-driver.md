@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates a miniport driver receive indication.
 
-![diagram illustrating a miniport driver receive indication](images/miniportreceive.png)
+![diagram illustrating a miniport driver receive indication.](images/miniportreceive.png)
 
 Miniport drivers call the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function to indicate the receipt of data from the network. The **NdisMIndicateReceiveNetBufferLists** function passes the indicated list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures up the stack to overlying drivers.
 

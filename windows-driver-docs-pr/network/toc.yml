@@ -622,7 +622,7 @@
         href: wan-miniport-drivers.md
       - name: "Choosing a WAN Driver Model"
         items: 
-        - name: "Introduction to Choosing a WAN Driver Model"
+        - name: "WAN Driver Models"
           href: choosing-a-wan-driver-model.md
         - name: "CoNDIS WAN Is More Flexible"
           href: condis-wan-is-more-flexible.md
@@ -2890,14 +2890,14 @@
         href: ihv-guidance-for-implementing-multimode-and-multicarrier-capable-mb-devices.md
       - name: "Mobile Broadband Device Firmware Update"
         href: mobile-broadband-device-firmware-update.md
-      - name: "Mobile Broadband Class Driver Logs: Event Trace Log Tracing"
-        href: mobile-broadband-class-driver-logs--event-trace-log-tracing.md
       - name: "Mobile Broadband Implementation Guidelines for USB Devices"
         href: mobile-broadband-implementation-guidelines-for-usb-devices.md
-      - name: "Collecting Mobilebroadband Logs"
+      - name: "Collecting Mobile Broadband Logs"
         href: mb-collecting-logs.md
-      - name: "Analyzing Mobilebroadband Logs"
+      - name: "Analyzing Mobile Broadband Logs"
         href: mb-analyzing-logs.md
+      - name: "Analyzing Mobile Broadband Logs in Wireshark"
+        href: analyzing-mobile-broadband-logs-in-wireshark.md
       - name: "TextAnalysisTool Filter Files"
         href: mb-tat-filters.md
       - name: "netsh mbn test installation"

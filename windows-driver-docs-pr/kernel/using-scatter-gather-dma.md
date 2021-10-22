@@ -18,7 +18,7 @@ A device does not need to have built-in scatter/gather support for its driver to
 
 Drivers that use packet-based DMA call the following general sequence of support routines for scatter/gather operations:
 
-1.  [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) to get an index into the MDL, required as a parameter in the call to **GetScatterGatherList**
+1.  [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) to get an index into the MDL, required as a parameter in the call to **GetScatterGatherList**
 
 2.  [**GetScatterGatherList**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pget_scatter_gather_list) when the driver is ready to program its device for DMA and needs the system DMA controller or bus-master adapter
 

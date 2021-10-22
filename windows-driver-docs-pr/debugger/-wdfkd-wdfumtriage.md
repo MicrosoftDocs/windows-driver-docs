@@ -42,7 +42,7 @@ You can use this command in a kernel-mode debugging session.
 
 Here is an example of the output of **!wdfkd.wdfumtriage**.
 
-![driver object list output from !wdfkd.wdfumtriage](images/wdfumtriage2.png)
+![driver object list output from !wdfkd.wdfumtriage.](images/wdfumtriage2.png)
 
  
 

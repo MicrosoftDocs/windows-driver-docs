@@ -56,7 +56,7 @@ Delete driver package from the driver store.
 /reboot - reboot system if needed to complete the operation.  
 ```
 
-**/export-driver** <em><oem#.inf | *> <target directory></em>
+**/export-driver** `<oem#.inf | *> <target directory>`
 
 **Available starting in Windows 10, version 1607.**
 

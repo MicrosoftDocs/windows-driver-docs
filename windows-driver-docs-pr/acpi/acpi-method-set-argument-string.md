@@ -3,14 +3,13 @@ title: ACPI_METHOD_SET_ARGUMENT_STRING macro
 description: The ACPI_METHOD_SET_ARGUMENT_STRING macro sets the members of an ACPI_METHOD_ARGUMENT structure for a string value.
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_STRING macro ACPI Devices
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
-# ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro
+# ACPI_METHOD_SET_ARGUMENT_STRING macro
 
-
-The ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro sets the members of an [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a string value.
+The ACPI_METHOD_SET_ARGUMENT_STRING macro sets the members of an [**ACPI_METHOD_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a string value.
 
 ## Syntax
 
@@ -23,10 +22,10 @@ void ACPI_METHOD_SET_ARGUMENT_STRING(
 
 ## Parameters
 
-*Argument*   
-A pointer to an ACPI\_METHOD\_ARGUMENT structure.
+*Argument*
+A pointer to an **ACPI_METHOD_ARGUMENT** structure.
 
-*StrData*   
+*StrData*
 A pointer to a NULL-terminated ASCII string.
 
 ## Return value
@@ -35,28 +34,14 @@ This macro does not return a value.
 
 ## Remarks
 
-A driver can use this macro to set the members of an ACPI\_METHOD\_ARGUMENT structure that supplies a NULL-terminated ASCII string.
+A driver can use this macro to set the members of an **ACPI_METHOD_ARGUMENT** structure that supplies a NULL-terminated ASCII string.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr>
-<td><p>Header</p></td>
-<td>Acpiioct.h (include Acpiioct.h)</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Header:** acpiioct.h (include Acpiioct.h)
 
 ## See also
 
-
-[**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)
+[**ACPI_METHOD_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)

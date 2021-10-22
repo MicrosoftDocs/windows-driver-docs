@@ -54,7 +54,7 @@ When the style position advances to a new integer, the style step advances one u
 
 The following figure shows several cosmetic styled lines having different slopes.
 
-![diagram illustrating styled cosmetic lines](images/102-02.png)
+![diagram illustrating styled cosmetic lines.](images/102-02.png)
 
 In this illustration, the pixel grid shown is not square, but is shown as it would be for an EGA display in which four pixels in the x direction represent the same distance as three pixels in the y direction. The style steps in the [**GDIINFO**](/windows/win32/api/winddi/ns-winddi-gdiinfo) structure ensure that styled lines appear the same at any slope on displays whose pixels are not square. In this illustration, the styling array (defined by the **pstyle** member of the [**LINEATTRS**](/windows/win32/api/winddi/ns-winddi-lineattrs) structure) is {1,1}, which is a broken line having equal-sized dots and gaps. The driver's value of **xStyleStep** is 3, **yStyleStep** is 4, and **denStyleStep** is 12.
 

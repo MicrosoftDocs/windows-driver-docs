@@ -26,7 +26,7 @@ Printer notifications are driven by Bidi and by the DriverEvent XML file. In ord
 
 While print preferences are contextual to the app that is printing, printer notifications are not. The following flow chart explains the decision tree that Windows uses to determine the behavior of printer notifications. If available, UWP device apps take precedence over printer extensions.
 
-![printer notification behavior flowchart](images/notificationbhvr.png)
+![printer notification behavior flowchart.](images/notificationbhvr.png)
 
 **Note**  It is important to be aware of the fact that, if you try to use a custom UI to show a notification in the Windows 8 environment by calling [GetForegroundWindow](/windows/win32/api/winuser/nf-winuser-getforegroundwindow), the notification window will not be displayed. This is because the operating system tries to assign a higher priority to the thread that creates a foreground window using GetForegroundWindow, and this is not allowed for dialogs in the Windows 8 environment. If you want to use a custom UI to display a notification in the Windows 8 environment, you must do so by calling [GetDesktopWindow.](/windows/win32/api/winuser/nf-winuser-getdesktopwindow)
 
@@ -36,7 +36,7 @@ While print preferences are contextual to the app that is printing, printer noti
 
 The following diagram shows the protocol utilization.
 
-![protocol utilization with driver events](images/drivereventprotutil.png)
+![protocol utilization with driver events.](images/drivereventprotutil.png)
 
 **Driver Event XML Sample**. The following XML code snippet specifies one driver event. The event checks for yellow ink to be less than 21% of the total capacity as reported by Bidi. If this occurs, an AsyncUIBalloon message is created with the string that is referenced by resourceID 132. In other words, the message would say that "'%1' is low on toner/ink." where Resource 2002 ("Yellow"), would be substituted for %1.
 

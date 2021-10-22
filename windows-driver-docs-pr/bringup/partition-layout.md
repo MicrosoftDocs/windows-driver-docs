@@ -1,7 +1,7 @@
 ---
 title: Partition Layout
-description: Partition Layout
-ms.date: 04/20/2017
+description: Provides information about partition layout for Windows 10 Mobile.
+ms.date: 09/28/2021
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +18,7 @@ The storage subsystem for a phone must conform to the requirements specified in 
 
 The following diagram shows the required storage partitions.
 
-![partition layout](images/oem-bringup-partitionlayout.png)
+![partition layout.](images/oem-bringup-partitionlayout.png)
 
 ## Partition requirements
 
@@ -125,7 +125,7 @@ The following table summarizes the requirements for each partition. All sizes ar
 
 ### Device provisioning partition
 
-The device provisioning partition (DPP) contains provisioning data for a specific device. It is typically calibrated on the factory floor and contains the product validation key as well as configuration information for components such as the radio and GPS. Because it is specific to the device, it is excluded from any image updates or FFU.
+The device provisioning partition (DPP) contains provisioning data for a specific device. It is typically calibrated on the factory floor and contains the product validation key as well as configuration information for components such as the radio and GPS. Because it is specific to the device, it is excluded from any image updates or Full Flash Updates (FFU).
 
 This partition shall be 8 MB in size.
 
@@ -138,7 +138,7 @@ The SV can define partitions for their own components. One of these partitions i
 
 ### EFI system partition
 
-The EFI system partition contains the Windows boot manager (BootMgr) and the boot configuration database (BCD). The BootMgr is responsible for loading higher-level operating systems, such as the main OS or update OS. In addition, the EFI system partition contains a number of UEFI applications, such as the FFU application and battery charging application.
+The EFI system partition contains the Windows boot manager (BootMgr) and the boot configuration database (BCD). The BootMgr is responsible for loading higher-level operating systems, such as the main OS or update OS. In addition, the EFI system partition contains a number of UEFI applications, such as the Full Flash Update (FFU) application and battery charging application.
 
 This partition shall be a minimum of 32 MB in size.
 
@@ -181,3 +181,7 @@ This partition in internal storage stores the user data, applications, and appli
 ### SD card
 
 The removable user data partition refers to the data stored on the SD card. The SD card is treated as a separate volume that is used to store certain types of user data. The content on the SD card can be removed from the system by the user at any time and therefore cannot contain information critical to the core phone functionality.
+
+## See also
+
+[Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu)

@@ -18,7 +18,7 @@ A call manager calls [**NdisCmDeactivateVc**](/windows-hardware/drivers/ddi/ndis
 
 The call to **NdisCmDeactivateVc** causes NDIS to call the underlying miniport driver's [**MiniportCoDeactivateVc**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_deactivate_vc) function (see the following figure). *MiniportCoDeactivateVc* communicates with its network adapter to terminate all communication across this VC (for example, clearing receive or send buffers on the adapter).
 
-![diagram illustrating a call manager initiating vc deactivation](images/cm-08.png)
+![diagram illustrating a call manager initiating vc deactivation.](images/cm-08.png)
 
 Before it deactivates a VC, the miniport driver must complete any pending transfers on the VC. That is, the miniport driver must wait until it has completed all sends in progress and until all receive packets that it has indicated are returned to it. After deactivating the VC, the miniport driver cannot indicate receives or transmit sends on the VC.
 
@@ -28,7 +28,7 @@ Note that *MiniportCoDeactivateVc* does not delete the VC. The creator (client, 
 
 An MCM driver's call to **NdisMCmDeactivateVc** informs NDIS that it has deactivated a VC or changed the call parameters on an established VC (see the following figure). NDIS completes the deactivation sequence by calling the MCM driver's *ProtocolCmDeactivateVcComplete* function.
 
-![diagram illustrating an mcm driver initiating vc deactivation](images/fig1-08.png)
+![diagram illustrating an mcm driver initiating vc deactivation.](images/fig1-08.png)
 
 An MCM driver does not call **NdisMCmDeactivateVc** to deactivate VCs used for exchanging signaling messages between the MCM driver and network components such as a switch. An MCM driver deactivates a signaling VC internally without calling any **Ndis*Xxx*** function.
 

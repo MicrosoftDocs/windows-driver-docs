@@ -1,7 +1,7 @@
 ---
 title: Provision a computer for driver deployment and testing (WDK 10)
 description: Provisioning a target or test computer is the process of configuring a computer for automatic driver deployment, testing, and debugging. To provision a computer, use Microsoft Visual Studio.
-ms.date: 05/08/2020
+ms.date: 08/06/2021
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +57,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 3. For **Network host name**, enter the name or local IP address of your target computer. Select **Provision device and choose debugger settings**.
 
-    ![screen shot of device configuration dialog box](images/vs2015-device-configuration.png)
+    :::image type="content" source="images/vs2019-device-configuration.png" alt-text="Screen shot of device configuration dialog box.":::
 
 4. Select **Next**.
 

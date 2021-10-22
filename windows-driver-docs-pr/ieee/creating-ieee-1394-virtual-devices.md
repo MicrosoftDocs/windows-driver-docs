@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-Upper-level drivers and user-mode services can add or remove virtual 1394 devices by means of a device control request with an [**IOCTL\_IEEE1394\_API\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537241) control code. The request contains an [**IEEE1394\_API\_REQUEST**](/previous-versions/ff537204(v=vs.85)) structure whose **RequestNumber** member indicates the action to be taken (addition or removal) by the bus driver. Since a virtual device has no device ID or instance ID, the driver or the user program that requests that a virtual device be created, must supply the device ID and instance ID in an [**IEEE1394\_VDEV\_PNP\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537206) structure.
+Upper-level drivers and user-mode services can add or remove virtual 1394 devices by means of a device control request with an [**IOCTL\_IEEE1394\_API\_REQUEST**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) control code. The request contains an [**IEEE1394\_API\_REQUEST**](/previous-versions/ff537204(v=vs.85)) structure whose **RequestNumber** member indicates the action to be taken (addition or removal) by the bus driver. Since a virtual device has no device ID or instance ID, the driver or the user program that requests that a virtual device be created, must supply the device ID and instance ID in an [**IEEE1394\_VDEV\_PNP\_REQUEST**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) structure.
 
 When the IEEE1394\_REQUEST\_FLAG\_PERSISTENT is specified using IOCTL\_IEEE1394\_API\_REQUEST, the 1394 bus driver stores nonvolatile context information about the virtual device in the registry. This allows the bus driver to automatically recreate the virtual PDO on the next boot without intervention from an upper-level driver.
 
@@ -25,7 +25,7 @@ If more than one 1394 host controller is present on the system, a virtual device
 
 In order to expose a virtual device on the 1394 bus, an emulation driver must add a unit directory for the virtual device using the following steps:
 
-1.  Send a [**REQUEST\_SET\_LOCAL\_HOST\_PROPERTIES**](https://msdn.microsoft.com/library/windows/hardware/ff537663) request to the bus driver with **u.SetLocalHostProperties.nLevel** member of the IRB set to SET\_LOCAL\_HOST\_PROPERTIES\_MODIFY\_CROM in order to add a unit directory to the system's IEEE 1394 configuration ROM. This request also adds any other necessary configuration data to the configuration ROM in order to expose the emulated device functionality. The request must be sent using the virtual PDO that the emulation driver is associated with.
+1.  Send a [**REQUEST\_SET\_LOCAL\_HOST\_PROPERTIES**](/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class) request to the bus driver with **u.SetLocalHostProperties.nLevel** member of the IRB set to SET\_LOCAL\_HOST\_PROPERTIES\_MODIFY\_CROM in order to add a unit directory to the system's IEEE 1394 configuration ROM. This request also adds any other necessary configuration data to the configuration ROM in order to expose the emulated device functionality. The request must be sent using the virtual PDO that the emulation driver is associated with.
 
 2.  Issue a bus reset to inform the 1394 nodes present on the bus that the system configuration ROM has changed.
 

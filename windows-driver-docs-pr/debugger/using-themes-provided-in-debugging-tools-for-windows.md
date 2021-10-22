@@ -20,7 +20,7 @@ The Standard.reg theme can be used for most debugging purposes. In this arrangem
 
 In each docking location, a placeholder window is also included as a point of reference for the other windows. The placeholder windows should not be closed because closing them may change the configuration of the windows. All of the windows in this arrangement are docked.The following screen shot shows the Standard.reg theme.
 
-![screen shot of the standard.reg theme](images/theme-standard.jpg)
+![screen shot of the standard.reg theme.](images/theme-standard.jpg)
 
 ### <span id="standardvs_reg"></span><span id="STANDARDVS_REG"></span>Standardvs.reg
 
@@ -28,7 +28,7 @@ The Standardvs.reg theme can be used for most debugging purposes, but is more si
 
 In each docking location, a placeholder window is also included as a point of reference for the other windows. The placeholder windows should not be closed because closing them may change the configuration of the windows. All of the windows in this arrangement are docked. The following screen shot shows the Standardvs.reg theme.
 
-![screen shot of the standardvs.reg theme](images/theme-standardvs.jpg)
+![screen shot of the standardvs.reg theme.](images/theme-standardvs.jpg)
 
 ### <span id="srcdisassembly_reg"></span><span id="SRCDISASSEMBLY_REG"></span>Srcdisassembly.reg
 
@@ -36,7 +36,7 @@ The Srcdisassembly.reg theme includes a Disassembly window, for debugging in ass
 
 In each docking location, a placeholder window is also included as a point of reference for the other windows. The placeholder windows should not be closed because closing them may change the configuration of the windows. All of the windows in this arrangement are docked. The following screen shot shows the Srcdisassembly.reg theme.
 
-![screen shot of the srcdisassembly.reg theme](images/theme-srcdisassembly.jpg)
+![screen shot of the srcdisassembly.reg theme.](images/theme-srcdisassembly.jpg)
 
 ### <span id="multimon_reg"></span><span id="MULTIMON_REG"></span>Multimon.reg
 
@@ -44,7 +44,7 @@ The Multimon.reg theme is set up for debugging with multiple monitors. In this a
 
 In each docking location, a placeholder window is also included as a point of reference for the other windows. The placeholder windows should not be closed because closing them may change the configuration of the windows. All of the windows in this arrangement are docked. The following screen shot shows the Multimon.reg theme.
 
-![screen shot of the multimon.reg theme](images/theme-multimon.jpg)
+![screen shot of the multimon.reg theme.](images/theme-multimon.jpg)
 
  
 

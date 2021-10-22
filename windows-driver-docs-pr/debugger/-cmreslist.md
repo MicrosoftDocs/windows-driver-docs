@@ -1,5 +1,5 @@
 ---
-title: cmreslist
+title: cmreslist (WinDbg)
 description: The cmreslist extension displays the CM_RESOURCE_LIST structure for the specified device object.
 keywords: ["CM_RESOURCE_LIST", "cmreslist Windows Debugging"]
 ms.date: 05/23/2017

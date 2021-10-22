@@ -62,7 +62,7 @@ A *usage value array* is a consecutive set of values specified in a main item, a
 
 The following figure shows an example of a usage value array that contains five data items, each six bits long.
 
-![diagram illustrating a usage value array that contains five data items, each 6 bits long](images/repcount.png)
+![diagram illustrating a usage value array that contains five data items, each 6 bits long.](images/repcount.png)
 
 In the previous example, the value capability structure for such a usage value array would have its **IsRange** member set to **FALSE**, its **NotRange.Usage** member set to 17, its **ReportCount** member set to 5, and its **BitSize** member set to 6.
 

@@ -1,5 +1,5 @@
 ---
-title: .leave
+title: .leave (WinDbg)
 description: The .leave token is used to exit from a .catch block.
 keywords: [".leave Windows Debugging"]
 ms.date: 05/23/2017

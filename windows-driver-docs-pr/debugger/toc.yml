@@ -57,6 +57,8 @@
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Previous Versions of Windows"
 # Auto-expanded node
       items: 
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 2004"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-2004.md
       - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1909"
         href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1909.md
       - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1903"
@@ -118,6 +120,8 @@
     href: windbg-scripting-preview.md
   - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
     href: windbg-notes-etc-preview.md
+  - name: "WinDbg Preview - Restricted Mode"
+    href: windbg-restricted-mode-preview.md
   - name: "WinDbg Preview Basics"
 # Auto-expanded node
     items: 
@@ -514,6 +518,8 @@
             href: language-specification-1.md
           - name: "Language Specification 2"
             href: language-specification-2.md
+          - name: "Language Specification 3"
+            href: language-specification-3.md
       - name: "HTTP Sites and UNC Shares"
 # Auto-expanded node
         items: 
@@ -1781,99 +1787,31 @@
   items: 
   - name: "Symbols for Windows Debugging (WinDbg, KD, CDB, NTSD)"
     href: symbols.md
-  - name: "Introduction to Symbols"
+  - name: "Symbol path for Windows debuggers"
+    href: symbol-path.md
+  - name: "Using a Symbol Server"
+    href: using-a-symbol-server.md
+  - name: "Microsoft public symbol server"
+    href: microsoft-public-symbols.md
+  - name: "Advanced SymSrv Use"
+    href: advanced-symsrv-use.md
+  - name: "Firewalls and Proxy Servers"
+    href: firewalls-and-proxy-servers.md
+  - name: "Symbols and Symbol Files"
+    href: symbols-and-symbol-files.md
+  - name: "Public and Private Symbols"
+    href: public-and-private-symbols.md
+  - name: "Portable PDB Symbols"
+    href: symbols-portable-pdb.md
+  - name: "Symbol Syntax and Symbol Matching"
 # Auto-expanded node
     items: 
-    - name: "Introduction to Symbols"
-      href: introduction-to-symbols.md
-    - name: "Symbol path for Windows debuggers"
-      href: symbol-path.md
-    - name: "Symbols and Symbol Files"
-      href: symbols-and-symbol-files.md
-    - name: "Public and Private Symbols"
-      href: public-and-private-symbols.md
-    - name: "Portable PDB Symbols"
-      href: symbols-portable-pdb.md
-  - name: "Accessing Symbols for Debugging"
-# Auto-expanded node
-    items: 
-    - name: "Accessing Symbols for Debugging"
-      href: accessing-symbols-for-debugging.md
-    - name: "Installing Windows Symbol Files"
-      href: installing-windows-symbol-files.md
-    - name: "Symbol Stores and Symbol Servers"
-# Auto-expanded node
-      items: 
-      - name: "Symbol Stores and Symbol Servers"
-        href: symbol-stores-and-symbol-servers.md
-      - name: "Using a Symbol Server"
-        href: using-a-symbol-server.md
-      - name: "SymSrv"
-# Auto-expanded node
-        items: 
-        - name: "SymSrv"
-          href: symsrv.md
-        - name: "Microsoft public symbol server"
-          href: microsoft-public-symbols.md
-        - name: "Advanced SymSrv Use"
-          href: advanced-symsrv-use.md
-        - name: "Firewalls and Proxy Servers"
-          href: firewalls-and-proxy-servers.md
-      - name: "HTTP Symbol Stores"
-        href: http-symbol-stores.md
-      - name: "File Share (SMB) Symbol Server"
-        href: file-share--smb--symbol-server.md
-      - name: "Symbol Store Folder Tree"
-        href: symbol-store-folder-tree.md
-      - name: "SymProxy"
-# Auto-expanded node
-        items: 
-        - name: "SymProxy"
-          href: symproxy.md
-        - name: "Installing SymProxy"
-          href: installing-symproxy.md
-        - name: "Configuring the Registry"
-          href: configuring-the-registry.md
-        - name: "Choosing Network Security Credentials"
-          href: choosing-network-security-credentials.md
-        - name: "Configuring IIS for SymProxy"
-          href: configuring-iis-for-symproxy.md
-        - name: "Setting Up Exclusion Lists"
-          href: setting-up-exclusion-lists.md
-        - name: "Dealing with Unavailable Symbol Stores"
-          href: dealing-with-unavailable-symbol-stores.md
-        - name: "Handling File Pointers"
-          href: handling-file-pointers.md
-        - name: "Caching Acquired Symbol Files"
-          href: caching-acquired-symbol-files.md
-        - name: "SymProxy Automated Installation"
-          href: symproxy-automated-installation.md
-      - name: "Other Symbol Stores"
-        href: other-symbol-stores.md
-      - name: "Other Symbol Servers"
-        href: other-symbol-servers.md
+    - name: "Symbol Syntax and Symbol Matching"
+      href: symbol-syntax-and-symbol-matching.md
     - name: "Deferred Symbol Loading"
       href: deferred-symbol-loading.md
     - name: "Avoiding debugger searches for unneeded symbols"
       href: avoiding-debugger-searches-for-unneeded-symbols.md
-  - name: "SymStore"
-# Auto-expanded node
-    items: 
-    - name: "SymStore"
-      href: symstore.md
-    - name: "SymStore Transactions"
-      href: symstore-transactions.md
-    - name: "File System References and Symbol Files"
-      href: file-system-references-and-symbol-files.md
-    - name: "Symbol Storage Format"
-      href: symbol-storage-format.md
-  - name: "How the Debugger Recognizes Symbols"
-# Auto-expanded node
-    items: 
-    - name: "How the Debugger Recognizes Symbols"
-      href: how-the-debugger-recognizes-symbols.md
-    - name: "Symbol Syntax and Symbol Matching"
-      href: symbol-syntax-and-symbol-matching.md
     - name: "Symbol Options"
       href: symbol-options.md
     - name: "Symbol Status Abbreviations"
@@ -1895,8 +1833,61 @@
       href: debugging-user-mode-processes-without-symbols.md
     - name: "Debugging Performance-Optimized Code"
       href: debugging-performance-optimized-code.md
+  - name: "Symbol Stores"
+# Auto-expanded node
+    items: 
+    - name: "Symbol Stores and Symbol Servers"
+      href: symbol-stores-and-symbol-servers.md      
+    - name: "Accessing Symbols for Debugging"
+      href: accessing-symbols-for-debugging.md
     - name: "Offline Symbols for Windows Update"
       href: symbols-windows-update.md
+    - name: "Installing Windows Symbol Files for Older Versions of Windows"
+      href: installing-windows-symbol-files.md
+    - name: "HTTP Symbol Stores"
+      href: http-symbol-stores.md
+    - name: "File Share (SMB) Symbol Server"
+      href: file-share--smb--symbol-server.md
+    - name: "Symbol Store Folder Tree"
+      href: symbol-store-folder-tree.md
+    - name: "Other Symbol Stores"
+      href: other-symbol-stores.md
+    - name: "Other Symbol Servers"
+      href: other-symbol-servers.md
+  - name: "SymProxy"
+# Auto-expanded node
+    items: 
+    - name: "SymProxy"
+      href: symproxy.md
+    - name: "Installing SymProxy"
+      href: installing-symproxy.md
+    - name: "Configuring the Registry"
+      href: configuring-the-registry.md
+    - name: "Choosing Network Security Credentials"
+      href: choosing-network-security-credentials.md
+    - name: "Configuring IIS for SymProxy"
+      href: configuring-iis-for-symproxy.md
+    - name: "Setting Up Exclusion Lists"
+      href: setting-up-exclusion-lists.md
+    - name: "Dealing with Unavailable Symbol Stores"
+      href: dealing-with-unavailable-symbol-stores.md
+    - name: "Handling File Pointers"
+      href: handling-file-pointers.md
+    - name: "Caching Acquired Symbol Files"
+      href: caching-acquired-symbol-files.md
+    - name: "SymProxy Automated Installation"
+      href: symproxy-automated-installation.md
+  - name: "SymStore"
+# Auto-expanded node
+    items: 
+    - name: "SymStore"
+      href: symstore.md
+    - name: "SymStore Transactions"
+      href: symstore-transactions.md
+    - name: "File System References and Symbol Files"
+      href: file-system-references-and-symbol-files.md
+    - name: "Symbol Storage Format"
+      href: symbol-storage-format.md
   - name: "AgeStore"
 # Auto-expanded node
     items: 

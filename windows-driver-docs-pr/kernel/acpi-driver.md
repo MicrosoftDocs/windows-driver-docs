@@ -2,7 +2,7 @@
 title: Acpi.sys The Windows ACPI Driver
 description: The Windows ACPI driver, Acpi.sys, is an inbox component of the Windows operating system.
 keywords: ["ACPI drivers WDK power management", "enumerators WDK power management", "PDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management"]
-ms.date: 12/17/2020
+ms.date: 07/21/2021
 ms.localizationpriority: High
 ---
 
@@ -12,7 +12,7 @@ The Windows ACPI driver, Acpi.sys, is an inbox component of the Windows operatin
 
 Other tasks performed by Acpi.sys on a particular hardware platform might include reprogramming the resources for a COM port or enabling the USB controller for system wake-up.
 
-**In this topic**
+## In this topic
 
 - [ACPI devices](#acpi-devices)
 
@@ -48,7 +48,7 @@ To invoke a control method, the kernel-mode driver for an ACPI device initiates 
 
 The *Advanced Configuration and Power Interface Specification* ([ACPI 5.0 specification](https://uefi.org/specifications)) is available from the Unified Extensible Firmware Interface Forum website.
 
-Revision 5.0 of the ACPI specification introduces a set of features to support low-power, mobile PCs that are based on System on a Chip (SoC) integrated circuits and that implement the [connected standby](/windows-hardware/design/device-experiences/modern-standby) power model. Starting with Windows 8 and later versions, the Windows ACPI driver, Acpi.sys, supports the new features in the ACPI 5.0 specification. For more information, see [Windows ACPI design guide for SoC platforms](../bringup/windows-acpi-design-guide-for-soc-platforms.md).
+Revision 5.0 of the ACPI specification introduces a set of features to support low-power, mobile PCs that are based on System on a Chip (SoC) integrated circuits and that implement the [connected standby](/windows-hardware/design/device-experiences/modern-standby) power model. Starting with Windows 8 and later versions, the Windows ACPI driver, Acpi.sys, supports the new features in the ACPI 5.0 specification. For more information, see [Windows ACPI design guide for SoC platforms](../bringup/windows-acpi-design-guide-for-soc-platforms.md).
 
 ## ACPI debugging
 

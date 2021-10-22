@@ -1,6 +1,6 @@
 ---
-title: KSEVENT\_TVAUDIO\_CHANGED
-description: The KSEVENT\_TVAUDIO\_CHANGED event propagates an action, such as a newly tuned-to channel supports stereo audio, from the kernel-mode video capture minidriver to DirectShow in user-mode.
+title: KSEVENT_TVAUDIO_CHANGED
+description: The KSEVENT_TVAUDIO_CHANGED event propagates an action, such as a newly tuned-to channel supports stereo audio, from the kernel-mode video capture minidriver to DirectShow in user-mode.
 keywords: ["KSEVENT_TVAUDIO_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -8,49 +8,18 @@ api_name:
 - KSEVENT_TVAUDIO_CHANGED
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 10/11/2021
 ms.localizationpriority: medium
 ---
 
-# KSEVENT\_TVAUDIO\_CHANGED
+# KSEVENT_TVAUDIO_CHANGED
 
+The **KSEVENT_TVAUDIO_CHANGED** event propagates an action, such as a newly tuned-to channel supports stereo audio, from the kernel-mode video capture minidriver to DirectShow in user-mode.
 
-The KSEVENT\_TVAUDIO\_CHANGED event propagates an action, such as a newly tuned-to channel supports stereo audio, from the kernel-mode video capture minidriver to DirectShow in user-mode.
+## Usage Summary Table
 
-## <span id="ddk_ksevent_tvaudio_changed_ks"></span><span id="DDK_KSEVENT_TVAUDIO_CHANGED_KS"></span>
-
-
-### <span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Event descriptor type</th>
-<th>Event value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Event descriptor type | Event value type |
+|--|--|--|--|--|
+| No | Yes | Pin | [**KSE_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
 
 For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index).
-

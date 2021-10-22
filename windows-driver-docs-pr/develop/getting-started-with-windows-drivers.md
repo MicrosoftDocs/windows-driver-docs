@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Windows Drivers
 description: Windows Drivers allow you to create one driver that will run on on both Windows 10X and Windows Desktop.
-ms.date: 04/28/2020
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Starting at some point after Windows 10, version 2004, drivers that run on Windows will be classified as either *Windows Drivers* or *Windows Desktop Drivers*. 
 
-Windows Drivers will run on all Window 10 variants, including Windows 10X and Windows 10 Desktop editions.  Windows Desktop Drivers will *only* run on Windows 10 Desktop editions.  
+Windows Drivers will run on all Windows 10 variants, including Windows 10X and Windows 10 Desktop editions.  Windows Desktop Drivers will *only* run on Windows 10 Desktop editions.  
 
 The *Windows Driver* classification will extend and replace the current *Universal Driver* classification. 
 

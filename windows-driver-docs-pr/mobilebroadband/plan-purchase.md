@@ -34,7 +34,7 @@ Design considerations include the following:
 
 The following flow chart describes how plan purchase works with Windows and UWP apps:
 
-![plan purchase flowchart](images/mb-fig1-planpurchaseflowchart.png)
+![plan purchase flowchart.](images/mb-fig1-planpurchaseflowchart.png)
 
 ## <span id="related_topics"></span>Related topics
 

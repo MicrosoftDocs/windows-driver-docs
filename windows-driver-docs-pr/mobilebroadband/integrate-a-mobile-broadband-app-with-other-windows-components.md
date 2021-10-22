@@ -64,7 +64,7 @@ Your mobile broadband app can have a number of error cases that should be dealt 
 
 For guidance on how to present errors, see [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10)). In the example below, a notification bar is displayed at the top of the page.
 
-![notification bar shows errors](images/mb-fig1-notificationbarerrors.png)
+![notification bar shows errors.](images/mb-fig1-notificationbarerrors.png)
 
 ### <span id="Errors_in_data_usage"></span><span id="errors_in_data_usage"></span><span id="ERRORS_IN_DATA_USAGE"></span>Errors in data usage
 
@@ -100,9 +100,9 @@ Your app should be adaptive and be able to fit a number of layouts, including:
 
 The following examples show how some pages look when side by side with another app.
 
-![landing page side by side with another app](images/mb-fig2-snappedview-landingpage.png)
+![landing page side by side with another app.](images/mb-fig2-snappedview-landingpage.png)
 
-![services page side by side with another app](images/mb-fig3-snappedview-servicespage.png)
+![services page side by side with another app.](images/mb-fig3-snappedview-servicespage.png)
 
 Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in UWP apps using JavaScript](/previous-versions/windows/apps/hh452681(v=win.10)).
 
@@ -111,15 +111,15 @@ Make sure that your app is accessible through app views, including high-contrast
 
 Your mobile broadband app is available to users in the **All Apps** view, in Windows Connection Manager, or through a toast notification.
 
-![entry points to start app](images/mb-fig4-entrypoints.png)
+![entry points to start app.](images/mb-fig4-entrypoints.png)
 
 ### <span id="Launch_from_Windows_Connection_Manager"></span><span id="launch_from_windows_connection_manager"></span><span id="LAUNCH_FROM_WINDOWS_CONNECTION_MANAGER"></span>Launch from Windows Connection Manager
 
-![start app by using windows connection manager](images/mb-fig5-startfromwcm.png)
+![start app by using windows connection manager.](images/mb-fig5-startfromwcm.png)
 
 You can connect to the mobile broadband app by using Windows Connection Manager. Your app should open to the landing page with account and data usage information. After you are connected, Windows Connection Manager shows the current account and data usage.
 
-![windows connection manager account information](images/mb-fig6-wcmaccountinfo.png)
+![windows connection manager account information.](images/mb-fig6-wcmaccountinfo.png)
 
 **Automatic launch from connection manager during a captive portal purchase flow**
 
@@ -135,11 +135,11 @@ If your app was suspended or already running, it should show the last page used.
 
 In the **Start** menu, tiles are the primary representation of an app. Users launch their apps through those tiles, which can display new, relevant, and tailored content through notifications. This makes the **Start** menu feel vibrant, and allows the user to see what's new at a glance. An app can also communicate time-critical events to the user through toast notifications, whether the user is in another app, on the **Start** screen, or on the Desktop. The methodology to design and deliver toast closely parallels that of tiles, thereby lowering the learning curve.
 
-![start screen tile](images/mb-fig7-startscreentile.png)
+![start screen tile.](images/mb-fig7-startscreentile.png)
 
 A toast notification can contain text and images but do not support secondary actions such as buttons. Think of toast as similar to a Windows balloon notification from the taskbar's notification area. Like balloon notifications, a toast appears in the lower-right corner of the screen. When a user taps or clicks on the toast, the associated app is launched in a view that is related to the notification. This is the only mechanism by which one app can interrupt a user in another app. Toasts can be activated, dismissed, or ignored by the user. The user can disable all toasts for an app.
 
-![toast notification](images/mb-fig8-toastonpage.png)
+![toast notification.](images/mb-fig8-toastonpage.png)
 
 A toast notification should be used only for information of high interest to the user and typically involves some form of user opt-in. It is a good choice for incoming email alerts, IM chat requests, and breaking news. However, it is very important that when you consider using a toast notification, you realize that, due to its transient nature, the user might never see it. When using toast notifications for data usage overage or roaming alerts, consider showing the information on your tile and within your app views in case the end user misses the toast notification.
 
@@ -147,7 +147,7 @@ A toast notification should be used only for information of high interest to the
 
 You can use splash screen to promote branding. For more info about the splash screen, see [Adding a splash screen](/previous-versions/windows/apps/hh465332(v=win.10)).
 
-![splash screen](images/mb-fig4-splash-screen.png)
+![splash screen.](images/mb-fig4-splash-screen.png)
 
 ### <span id="qusum"></span><span id="QUSUM"></span>Quick summary
 

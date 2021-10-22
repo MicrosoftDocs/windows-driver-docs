@@ -1,7 +1,7 @@
 ---
 title: V4 Driver UI Architecture
 description: A high level design goal for the v4 driver architecture was to provide built-in support for the Microsoft Store app user interface.
-ms.date: 09/28/2018
+ms.date: 08/30/2021
 ms.localizationpriority: medium
 ---
 
@@ -15,13 +15,13 @@ Printer extension apps support print preferences and printer notifications when 
 
 The following diagram shows a high level architecture of the Microsoft Store device apps for the [v4 Print driver and printer extension samples](https://github.com/Microsoft/Windows-driver-samples/tree/master/print/v4PrintDriverSamples) that are provided on GitHub.
 
-![overview of custom ui architecture](images/v4custuiarch.png)
+![overview of custom ui architecture.](images/v4custuiarch.png)
 
 As shown in the preceding diagram, the model/view/controller-based architecture enables the apps to share code at the model layer, written in C#.
 
 ## Extending PrinterExtensionLibrary
 
-The PrinterExtensionLibrary project that ships in the various samples can be extended using new classes, or by extending the provided set of classes. Since Microsoft periodically makes updates to the sample code, we recommend that partners should minimize the number of code changes that they make to the provided source files. For partners that are extending the provided set of classes, we recommend that you mark the existing classes as “partial” and add new functions or overrides in a separate source file.
+The PrinterExtensionLibrary project that ships in the various samples can be extended using new classes, or by extending the provided set of classes. Since Microsoft periodically makes updates to the sample code, we recommend that partners should minimize the number of code changes that they make to the provided source files. For partners that are extending the provided set of classes, we recommend that you mark the existing classes as "partial" and add new functions or overrides in a separate source file.
 
 ## Sharing compiled binaries between UWP apps and Desktop apps
 
@@ -29,11 +29,11 @@ The PrinterExtensionLibrary project that is shipped in the Microsoft Store devic
 
 1. In Microsoft Visual Studio, click **File** > **New** > **Project**, and then search for "Portable" in the **Search Installed Templates** box.
 
-2. Select Portable Class Library Visual C#, and then provide a name for the project in the **Name** text box and click **OK.**
+1. Select Portable Class Library Visual C#, and then provide a name for the project in the **Name** text box and click **OK.**
 
-3. Copy the source code from your existing PrinterExtensionLibrary project into the new project.
+1. Copy the source code from your existing PrinterExtensionLibrary project into the new project.
 
-4. Right-click your Portable Class Library project and choose **Unload**. Then open the .csproj file and add the following section to your file, just prior to the last tag in the document.
+1. Right-click your Portable Class Library project and choose **Unload**. Then open the .csproj file and add the following section to your file, just prior to the last tag in the document.
 
     ```xml
       <ItemGroup>
@@ -49,7 +49,7 @@ The PrinterExtensionLibrary project that is shipped in the Microsoft Store devic
       </ItemGroup>
     ```
 
-5. If you see warnings as a result of COM references, add the following to the \<PropertyGroup\> tag:
+1. If you see warnings as a result of COM references, add the following to the \<PropertyGroup\> tag:
 
 ```xml
 <ResolveComReferenceSilent>true</ResolveComReferenceSilent>

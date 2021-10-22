@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 
 The following figure shows what CDFS might look like before it has mounted any volumes. In this example, two filters have attached themselves to the CDFS control device object. (Note: The global file system queue that contains the CDFS control device object is not shown.)
 
-![diagram illustrating cdfs before volume mount](images/cdfsunmounted.png)
+![diagram illustrating cdfs before volume mount.](images/cdfsunmounted.png)
 
 The following figure shows a typical driver stack for a CD-ROM storage device that has not yet been mounted as a CDFS volume.
 
-![diagram illustrating cd-rom storage device stack before volume mount](images/cdromstack.png)
+![diagram illustrating cd-rom storage device stack before volume mount.](images/cdromstack.png)
 
 The following figure shows what the file system driver stack, volume stack, and CD-ROM storage device stack look like after the CDFS file system has mounted a volume on a CD-ROM device.
 
-![diagram illustrating mounted cdfs volume](images/cdfsmountedstacks.png)
+![diagram illustrating mounted cdfs volume.](images/cdfsmountedstacks.png)
 
 Some notes about the preceding figure:
 

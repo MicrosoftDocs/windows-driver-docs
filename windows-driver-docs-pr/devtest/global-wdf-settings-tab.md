@@ -15,7 +15,7 @@ This topic provides detailed information about WDF Verifier's **Global WDF Setti
 
 At the top, you'll see the **Loader Diagnostic Output Control** box. Here, you can specify whether you want to see diagnostic messages from the KMDF and UMDF 2.0 loaders. These are global options that set the diagnostic (DbgPrint enable) flags for the respective loaders.
 
-![screen grab of global wdf settings tab](images/wdfverifier-tab3.png)
+![screen grab of global wdf settings tab.](images/wdfverifier-tab3.png)
 
 You can also choose if you want to see loader diagnostic messages in the kernel debugger.
 

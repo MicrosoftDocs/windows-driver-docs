@@ -34,7 +34,7 @@ An [NDIS filter driver](ndis-filter-drivers.md) must support the following opera
 
 The following figure shows the relationships between these states.
 
-![diagram illustrating filter module states](images/filterstate.png)
+![diagram illustrating filter module states.](images/filterstate.png)
 
 The following defines the filter module states:
 

@@ -3,8 +3,6 @@ title: Storage Firmware Update (SFU) driver
 description: Provides implementation details for the Storage Firmware Update (SFU) driver.
 ms.date: 10/07/2020
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -86,7 +84,7 @@ For more information, see [Identifiers for SCSI Devices](../install/identifiers-
 
 In the following diagram, Windows 10 provides both the function driver (stornvme.sys) and firmware update driver (storfwupdate.dll). To utilize the Microsoft supplied driver to update NVMe drive firmware, two separate driver submissions are required.
 
-![storage firmware update details](images/storage-firmware-update-detail.png)
+![storage firmware update details.](images/storage-firmware-update-detail.png)
 
 ### Package 1 - Create identity for drive firmware update
 
@@ -113,7 +111,7 @@ ComponentIDs = StorageIHVabcd-firmware-update
 
 In the INF sample above, `ComponentIDs = StorageIHVabcd-firmware-update` indicates that the child device will have a hardware ID of **SWC\StorageIHVabcd-firmware-update**. When installed, this INF creates the following device hierarchy:
 
-![I N F device hierarchy](images/inf-device-hierarchy.png)
+![I N F device hierarchy.](images/inf-device-hierarchy.png)
 
 A sample extension INF to create a new identity for drive firmware updates is provided below. Since the **SCSI\DiskNVMe____StorageIHVabcd** hardware may not be unique across hardware manufacturers, the extension INF must utilize [CHID](../install/specifying-hardware-ids-for-a-computer.md) targeting for distribution.
 
@@ -172,7 +170,7 @@ To view the current NVMe disk firmware version:
 
 1. Type `Get-PhysicalDisk | Get-StorageFirmwareInformation` to view the current NVMe disk firmware version.
 
-    ![current N V M e disk firmware version](images/media2-1.png)
+    ![current N V M e disk firmware version.](images/media2-1.png)
 
 Note the current **ActiveSlotNumber** and **FirmwareVersionInSlot** values.
 
@@ -186,7 +184,7 @@ For more information, see [Get-StorageFirmwareInformation](/powershell/module/st
 
 1. Install the extension INF with the Microsoft PnP utility. For example, in an administrator command prompt, type `pnputil /add-driver .\OEMDiskExtnPackage.inf /install`. As the new software node is created as a child of a boot critical device, a reboot is required to take effect.
 
-    ![ p n p util command output](images/media3-2.png)
+    ![ p n p util command output.](images/media3-2.png)
 
 ### View the new software component (SWC) node
 
@@ -220,7 +218,7 @@ To view the new SWC node and hardware ID:
 
 1. Type `Get-PhysicalDisk | Get-StorageFirmwareInformation` to view the updated NVMe disk firmware information.
 
-    ![updated N V M e disk firmware](images/media5-4.png)
+    ![updated N V M e disk firmware.](images/media5-4.png)
 
 View the updated NVMe disk firmware information in the **ActiveSlotNumber** and **FirmwareVersionInSlot** values.
 

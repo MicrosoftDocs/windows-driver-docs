@@ -38,13 +38,13 @@ When using fog with the D3DTLVERTEX structure, the **IDirect3DDevice7::SetRender
 
 The following figure illustrates a sample relationship between altitude and fog density in a layered atmosphere model.
 
-![diagram illustrating a sample relationship between altitude and fog density in a layered atmosphere model](images/d3dfig25.png)
+![diagram illustrating a sample relationship between altitude and fog density in a layered atmosphere model.](images/d3dfig25.png)
 
 The fog blending factor is calculated during the lighting phase and is placed in the alpha component of the specular color value in the vertex. This should then be interpolated according to the current shade mode set up by the D3DRENDERSTATE\_SHADEMODE render state.
 
 The fog blending factors for vertices v1, v2, and v3 are determined by using the following calculations.
 
-![calculations illustrating the fog-blending factors for vertices v1, v2, and v3](images/d3dfig8.png)
+![calculations illustrating the fog-blending factors for vertices v1, v2, and v3.](images/d3dfig8.png)
 
 f1, f2, and f3 are interpolated across the triangle based on the current shade mode.
 

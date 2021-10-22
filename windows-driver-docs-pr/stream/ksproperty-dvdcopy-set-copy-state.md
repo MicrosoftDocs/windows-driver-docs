@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE
-description: The KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE property sets the copy state of the DVD decoder stream. This property is optional to implement.
+title: KSPROPERTY_DVDCOPY_SET_COPY_STATE
+description: The KSPROPERTY_DVDCOPY_SET_COPY_STATE property sets the copy state of the DVD decoder stream. This property is optional to implement.
 keywords: ["KSPROPERTY_DVDCOPY_SET_COPY_STATE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,96 +10,53 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/19/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE
+# KSPROPERTY_DVDCOPY_SET_COPY_STATE
 
+The **KSPROPERTY_DVDCOPY_SET_COPY_STATE** property sets the copy state of the DVD decoder stream. This property is optional to implement.
 
-The KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE property sets the copy state of the DVD decoder stream. This property is optional to implement.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_dvdcopy_set_copy_state_ks"></span><span id="DDK_KSPROPERTY_DVDCOPY_SET_COPY_STATE_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_DVDCOPY_SET_COPY_STATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_SET_COPY_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state)"><strong>KS_DVDCOPY_SET_COPY_STATE</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a KS\_DVDCOPY\_SET\_COPY\_STATE structure that describes the copyright protection state of the DVD decoder stream.
+The property value (operation data) is a KS_DVDCOPY_SET_COPY_STATE structure that describes the copyright protection state of the DVD decoder stream.
 
 ## Remarks
 
-This property indicates whether this pin requires CSS authentication. If the property is not implemented, the default is assumed to be the **KS\_DVDCOPYSTATE\_AUTHENTICATION\_REQUIRED** value from the [**KS\_DVDCOPYSTATE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ks_dvdcopystate) enumeration.
+This property indicates whether this pin requires CSS authentication. If the property is not implemented, the default is assumed to be the **KS_DVDCOPYSTATE_AUTHENTICATION_REQUIRED** value from the [**KS_DVDCOPYSTATE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ks_dvdcopystate) enumeration.
 
-The main use for this property is for a decoder that supports multiple pins with the same decrypter. For example, if one filter provides both subpicture and video decoding, the keys only need to be exchanged for one of the two pins. If a filter is going to return **KS\_DVDCOPYSTATE\_AUTHENTICATION\_NOT\_REQUIRED** on one of the pins, then it must always return **KS\_DVDCOPYSTATE\_AUTHENTICATION\_REQUIRED** on the first pin that the property is issued on.
+The main use for this property is for a decoder that supports multiple pins with the same decrypter. For example, if one filter provides both subpicture and video decoding, the keys only need to be exchanged for one of the two pins. If a filter is going to return **KS_DVDCOPYSTATE_AUTHENTICATION_NOT_REQUIRED** on one of the pins, then it must always return **KS_DVDCOPYSTATE_AUTHENTICATION_REQUIRED** on the first pin that the property is issued on.
 
-When this property is issued as a **Get** call, the filter can respond with either **KS\_DVDCOPYSTATE\_AUTHENTICATION\_REQUIRED** or KS\_DVDCOPYSTATE\_AUTHENTICATION\_NOT\_REQUIRED.
+When this property is issued as a **Get** call, the filter can respond with either **KS_DVDCOPYSTATE_AUTHENTICATION_REQUIRED** or KS_DVDCOPYSTATE_AUTHENTICATION_NOT_REQUIRED.
 
-When this property is issued as a **Set** call, this is an informational call used by hardware decoders to indicate what phase of the copyright protection negotiation is being entered. The decoder can hold off the SET\_STATE with one of the following until the correct bits, indicating that a new CSS key is required, have been received:
+When this property is issued as a **Set** call, this is an informational call used by hardware decoders to indicate what phase of the copyright protection negotiation is being entered. The decoder can hold off the SET_STATE with one of the following until the correct bits, indicating that a new CSS key is required, have been received:
 
-<span id="KS_DVDCOPYSTATE_INITIALIZE"></span><span id="ks_dvdcopystate_initialize"></span>**KS\_DVDCOPYSTATE\_INITIALIZE**  
+**KS_DVDCOPYSTATE_INITIALIZE**  
 Indicates the start of a disc key negotiation sequence.
 
-<span id="KS_DVDCOPYSTATE_INITIALIZE_TITLE"></span><span id="ks_dvdcopystate_initialize_title"></span>**KS\_DVDCOPYSTATE\_INITIALIZE\_TITLE**  
+**KS_DVDCOPYSTATE_INITIALIZE_TITLE**  
 Indicates the start of a title key negotiation sequence.
 
-<span id="KS_DVDCOPYSTATE_DONE"></span><span id="ks_dvdcopystate_done"></span>**KS\_DVDCOPYSTATE\_DONE**  
+**KS_DVDCOPYSTATE_DONE**  
 Indicates the completion of a key negotiation sequence.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
+[**KS_DVDCOPY_SET_COPY_STATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state)
 
-[**KS\_DVDCOPY\_SET\_COPY\_STATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state)
-
-[**KS\_DVDCOPYSTATE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ks_dvdcopystate)
+[**KS_DVDCOPYSTATE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ks_dvdcopystate)
 
 [DVD Copyright Protection](./dvd-copyright-protection.md)
 
 [Multiple Data Streams on the same Hardware](./multiple-data-streams-on-the-same-hardware.md)
 
 [Synchronizing Key Exchange with Data Flow](./synchronizing-key-exchange-with-data-flow.md)
-

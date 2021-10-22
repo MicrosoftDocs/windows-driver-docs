@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 The following figure shows the network packet receive path within the VMMQ interface.
 
-![diagram illustrating network packet data paths with vmmq](images/vmmq-architecture.png)
+![diagram illustrating network packet data paths with vmmq.](images/vmmq-architecture.png)
 
 On the receive path, when a packet arrives at a NIC that supports VMMQ the NIC:
 

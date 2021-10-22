@@ -19,7 +19,7 @@ In a single configuration device, a USB device can define one or more interfaces
 
 The USB function stack is conceptualized in this image:
 
-![usb function stack](images/usb-fn.png)
+![usb function stack.](images/usb-fn.png)
 
 **Applications and Services**
 

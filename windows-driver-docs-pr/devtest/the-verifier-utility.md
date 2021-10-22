@@ -30,9 +30,7 @@ This section includes:
 
 [**Verifier Command Line**](verifier-command-line.md)
 
-[Driver Verifier Manager (Windows 2000)](driver-verifier-manager--windows-2000-.md)
-
-[Driver Verifier Manager (Windows XP and later)](driver-verifier-manager--windows-xp-and-later-.md)
+[Driver Verifier Manager](driver-verifier-manager--windows-xp-and-later-.md)
 
  
 

@@ -7,7 +7,7 @@ keywords:
 - tutorials WDK GDL
 - GDL Correctness Test WDK
 - GDL WDK , tutorials
-ms.date: 06/05/2020
+ms.date: 08/13/2021
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 This section includes several exercises that describe the design and definition of some simple schemas and their implementation through GDL templates. The exercises also consider several schema extension scenarios.
 
-You can verify the correctness of each solution by using the GDL Correctness Test, which is part of the [Windows Hardware Certification Kit (HCK) (EXE download)](https://go.microsoft.com/fwlink/p/?LinkId=733613).
+You can verify the correctness of each solution by using the GDL Correctness Test, which is part of the [Windows Hardware Certification Kit (HCK) (EXE download)](https://download.microsoft.com/download/1/8/B/18BC088A-537D-4386-9334-687747A602E6/hlk/hlksetup.exe).
 
 > [!NOTE]
 > The HCK is not for use with Windows 10.

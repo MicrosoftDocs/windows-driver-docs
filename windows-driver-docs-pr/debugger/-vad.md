@@ -1,5 +1,5 @@
 ---
-title: vad
+title: vad (WinDbg)
 description: The vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
 keywords: ["virtual address descriptor (VAD)", "VAD (virtual address descriptor)", "addresses, virtual address descriptor (VAD)", "vad Windows Debugging"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: C28165
+title: C28165 warning
 description: Warning C28165 The function pointer of class does not match the function class.
 keywords:
 - warnings listed WDK PREfast for Drivers

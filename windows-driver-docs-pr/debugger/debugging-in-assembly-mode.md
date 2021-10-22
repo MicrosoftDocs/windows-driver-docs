@@ -34,7 +34,7 @@ You can display the resulting code (known as *disassembly code*) in several diff
 
 -   The [**ux (Unassemble x86 BIOS)**](ux--unassemble-x86-bios-.md) command disassembles and displays the x86-based BIOS code instruction set at a specified address.
 
--   (WinDbg only) The [disassembly window](view---disassembly.md) disassembles and displays a specified section of machine language. this window is automatically active if you select the **automatically open disassembly** command on the **window** menu. you can also open this window by selecting **disassembly** on the **view** menu, pressing alt+7, or pressing the **disassembly (alt+7)** button (![screen shot of the disassembly button](images/tbdisasm2.png)) on the WinDbg toolbar.
+-   (WinDbg only) The [disassembly window](view---disassembly.md) disassembles and displays a specified section of machine language. this window is automatically active if you select the **automatically open disassembly** command on the **window** menu. you can also open this window by selecting **disassembly** on the **view** menu, pressing alt+7, or pressing the **disassembly (alt+7)** button (![screen shot of the disassembly button.](images/tbdisasm2.png)) on the WinDbg toolbar.
 
 The disassembly display appears in four columns: address offset, binary code, assembly language mnemonic, and assembly language details. The following example shows this display.
 
@@ -70,7 +70,7 @@ To set the mode, you can do one of the following:
 
 -   Use the [**l+, l- (Set Source Options)**](l---l---set-source-options-.md) command to control the mode. The **l-t** command activates assembly mode.
 
--   (WinDbg only) Clear the **Source Mode** command on the **Debug** menu to cause the debugger to enter assembly mode.You can also select the **Source mode off** button (![screen shot of the source mode off button](images/tbasm.png)) on the toolbar.
+-   (WinDbg only) Clear the **Source Mode** command on the **Debug** menu to cause the debugger to enter assembly mode.You can also select the **Source mode off** button (![screen shot of the source mode off button.](images/tbasm.png)) on the toolbar.
 
 In WinDbg, when you are in assembly mode, **ASM** appears visible on the status bar.
 

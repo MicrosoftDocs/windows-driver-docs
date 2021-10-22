@@ -32,17 +32,17 @@ When secondary views are disabled, the primary view should be able to access all
 
 The following figure illustrates an arrangement of video memory with DualView disabled.
 
-![diagram illustrating memory arrangement with dualview disabled](images/memfig1.png)
+![diagram illustrating memory arrangement with dualview disabled.](images/memfig1.png)
 
 The following figure illustrates a suggested arrangement of video memory with DualView enabled. Each view has its own screen buffer and offscreen heap.
 
-![diagram illustrating memory arrangement with dualview enabled](images/memfig2.png)
+![diagram illustrating memory arrangement with dualview enabled.](images/memfig2.png)
 
 ### <span id="Child_Relationships"></span><span id="child_relationships"></span><span id="CHILD_RELATIONSHIPS"></span>Child Relationships
 
 A typical mobile video chip has multiple child devices, such as LCD, CRT, and TV. In SingleView mode, as shown in the following figure, the primary view owns all of these child devices, while the secondary view owns none of them. A user can switch the primary view from one child device to another. Only one device can be active at a time.
 
-![diagram illustrating singleview mode](images/childfig1.png)
+![diagram illustrating singleview mode.](images/childfig1.png)
 
 In DualView mode, however, each child can be assigned to a different view; the question arises as to which view is associated with which child. The relationships between views and devices can be described in two ways: in terms of *physical child relations* and in terms of *logical child relations*.
 
@@ -50,7 +50,7 @@ In DualView mode, however, each child can be assigned to a different view; the q
 
 *Logical child relations* reflect the dynamic relationships between the views and the display devices. In the following figure, DualView has been enabled, and the situation is that the primary view (View 1) owns the LCD device, while the secondary view (View 2) owns both the CRT and TV devices. Another way to say this is that the LCD device is the logical child of the primary view, while the CRT and TV devices are the logical children of the secondary view. The miniport driver reports logical child relationships through the [**IOCTL\_VIDEO\_GET\_CHILD\_STATE**](/windows-hardware/drivers/ddi/ntddvdeo/ni-ntddvdeo-ioctl_video_get_child_state) request.
 
-![diagram illustrating dualview mode](images/childfig2.png)
+![diagram illustrating dualview mode.](images/childfig2.png)
 
 One additional point remains. When DualView is enabled, the primary view may automatically switch children. In SingleView mode, only the CRT, which is associated with the primary (and only) view, is active. All other display devices are inactive. After DualView has been enabled, the preceding figure shows the primary view has switched to display on the LCD device, while the CRT is a child of the secondary view. This switch might be necessary for a laptop computer due to the fact that the secondary view is removable, which means that the LCD device cannot be associated with that view. Whether and how to make this switch is totally under the control of miniport drivers.
 

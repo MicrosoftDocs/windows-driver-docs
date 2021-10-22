@@ -1,6 +1,6 @@
 ---
-title: KSMETHOD\_BDA\_CREATE\_TOPOLOGY
-description: Clients use KSMETHOD\_BDA\_CREATE\_TOPOLOGY to create a topology structure in Ring 3 that reflects the known connections in a filter.
+title: KSMETHOD_BDA_CREATE_TOPOLOGY
+description: Clients use KSMETHOD_BDA_CREATE_TOPOLOGY to create a topology structure in Ring 3 that reflects the known connections in a filter.
 keywords: ["KSMETHOD_BDA_CREATE_TOPOLOGY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,49 +10,30 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/12/2021
 ms.localizationpriority: medium
 ---
 
-# KSMETHOD\_BDA\_CREATE\_TOPOLOGY
+# KSMETHOD_BDA_CREATE_TOPOLOGY
 
+Clients use KSMETHOD_BDA_CREATE_TOPOLOGY to create a topology structure in Ring 3 that reflects the known connections in a filter.
 
-Clients use KSMETHOD\_BDA\_CREATE\_TOPOLOGY to create a topology structure in Ring 3 that reflects the known connections in a filter.
+## Specifying This Method
 
-## <span id="ddk_ksmethod_bda_create_topology_ks"></span><span id="DDK_KSMETHOD_BDA_CREATE_TOPOLOGY_KS"></span>
+KSMETHOD with the **Flags** member set to KSMETHOD_TYPE_WRITE.
 
+## Method Data
 
-### <span id="Specifying_This_Method"></span><span id="specifying_this_method"></span><span id="SPECIFYING_THIS_METHOD"></span>Specifying This Method
-
-KSMETHOD with the **Flags** member set to KSMETHOD\_TYPE\_WRITE.
-
-### <span id="Method_Data"></span><span id="method_data"></span><span id="METHOD_DATA"></span>Method Data
-
-A KSMULTIPLE\_ITEM structure, which is the header for a list of topology information.
+A KSMULTIPLE_ITEM structure, which is the header for a list of topology information.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
 [**BdaMethodCreateTopology**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethodcreatetopology)
 
-[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
+[**KSMETHOD**](./ksmethod-structure.md)
 
-[**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
-
- 
-
+[**KSMULTIPLE_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)

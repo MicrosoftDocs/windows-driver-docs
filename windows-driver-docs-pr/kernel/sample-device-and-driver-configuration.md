@@ -22,13 +22,13 @@ The following figure shows two possible hardware configurations for the keyboard
 
 -   Both connected through a keyboard and auxiliary device controller
 
-![diagram illustrating keyboard and mouse hardware configurations](images/2kbdmuhw.png)
+![diagram illustrating keyboard and mouse hardware configurations.](images/2kbdmuhw.png)
 
 ### <a href="" id="keyboard-and-mouse-driver-layers"></a>
 
 The following figure illustrates the corresponding layered drivers for I/O operations on the devices shown in the previous figure.
 
-![keyboard and mouse driver layers](images/2samplyr.png)
+![keyboard and mouse driver layers.](images/2samplyr.png)
 
 Note that drivers of keyboard and mouse devices, whatever the hardware configuration, can use the system's keyboard class and mouse class drivers to handle hardware-independent operations. These are called *class drivers* because each supplies system-required but hardware-independent support for a particular class of device.
 

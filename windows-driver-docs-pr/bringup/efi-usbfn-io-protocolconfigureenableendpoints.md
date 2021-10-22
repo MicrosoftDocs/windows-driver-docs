@@ -1,17 +1,15 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
-description: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
-ms.date: 04/20/2017
+description: The ConfigureEnableEndpoints function initializes endpoints based on supplied device and configuration descriptors.
+ms.date: 08/20/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_USBFN\_IO\_PROTOCOL.ConfigureEnableEndpoints
-
+# EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
 
 The **ConfigureEnableEndpoints** function initializes endpoints based on supplied device and configuration descriptors.
 
 ## Syntax
-
 
 ```cpp
 typedef
@@ -24,57 +22,25 @@ EFI_STATUS
 
 ## Parameters
 
+*This*  
+A pointer to the EFI_USBFN_IO_PROTOCOL instance.
 
-<a href="" id="this"></a>*This*  
-A pointer to the EFI\_USBFN\_IO\_PROTOCOL instance.
-
-<a href="" id="deviceinfo"></a>*DeviceInfo*  
-A pointer to an [EFI\_USB\_DEVICE\_INFO](efi-usb-device-info.md) structure.
+*DeviceInfo*  
+A pointer to an [EFI_USB_DEVICE_INFO](efi-usb-device-info.md) structure.
 
 ## Return values
 
-
 The function returns the following values:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>EFI_SUCCESS</strong></p></td>
-<td><p>The function returned successfully</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>EFI_INVALID_PARAMETER</strong></p></td>
-<td><p>A parameter is invalid</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>EFI_DEVICE_ERROR</strong></p></td>
-<td><p>The physical device reported an error.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>EFI_NOT_READY</strong></p></td>
-<td><p>The physical device is busy or not ready to process this request</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>EFI_OUT_OF_RESOURCES</strong></p></td>
-<td><p>The request could not be completed due to lack of resources.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Return value | Description |
+| -- | -- |
+| EFI_SUCCESS | The function returned successfully. |
+| EFI_INVALID_PARAMETER | A parameter is invalid. |
+| EFI_DEVICE_ERROR | The physical device reported an error. |
+| EFI_NOT_READY | The physical device is busy or not ready to process this request. |
+| EFI_OUT_OF_RESOURCES | The request could not be completed due to lack of resources. |
 
 ## Remarks
-
 
 Assuming that the hardware has already been initialized, this function configures the endpoints using the supplied *DeviceInfo* , activates the port, and starts receiving USB events.
 
@@ -82,13 +48,4 @@ This function must ignore the *bMaxPacketSize0* field of the Standard Device Des
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

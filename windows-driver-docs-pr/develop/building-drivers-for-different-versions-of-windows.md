@@ -37,7 +37,7 @@ If you are [writing drivers for different versions of Windows](../gettingstarted
 
     Using Notepad, or another text editor, open the driver project file (\*.vcxproj). In the project file, locate the **&lt;PropertyGroup&gt;** for the configurations your driver supports, and add the following line to override the default linker option:
 
-    <span codelanguage="XML"></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -58,7 +58,7 @@ If you are [writing drivers for different versions of Windows](../gettingstarted
 
     For example, if your driver supports Windows 8.1 and Windows 8 debug and release builds, those configuration sections would look like the following:
 
-    <span codelanguage="XML"></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />

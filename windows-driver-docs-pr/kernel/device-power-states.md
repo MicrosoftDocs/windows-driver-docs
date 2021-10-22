@@ -41,7 +41,7 @@ A driver or the power manager can request a device power state transition, and a
 
 Like the system, a device can transition from the working state (D0) to any low-power state (D1, D2, or D3) and from any low-power state to the working state. The following diagram is a state graph that shows the valid device power state transitions.
 
-![diagram illustrating the valid device power state transitions](images/dxpostates.png)
+![diagram illustrating the valid device power state transitions.](images/dxpostates.png)
 
 This graph shows the subdivision of D3 into D3hot and D3cold. D3hot and D3cold are defined starting with Windows 8. All devices are required to support the D0 state and D3hot substate. The other states shown in the diagram are optional.
 

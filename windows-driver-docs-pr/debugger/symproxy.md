@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 You can configure your HTTP-based symbol store to act as a proxy between client computers and other symbol stores. The implementation is through an Internet Server Application Programming Interface (ISAPI) filter called SymProxy (Symproxy.dll). The SymProxy server can be used as a gateway computer to the Internet or other sources within your company network. The following diagram shows an example SymProxy configuration.
 
-![diagram of an example symproxy configuration](images/symproxy-configuration.png)
+![diagram of an example symproxy configuration.](images/symproxy-configuration.png)
 
 SymProxy is useful in many situations. For example:
 

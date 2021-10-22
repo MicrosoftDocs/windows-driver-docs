@@ -7,7 +7,7 @@ keywords:
 - radio management, example
 - GPS radio management
 - radio management, GPS
-ms.date: 04/20/2017
+ms.date: 08/25/2021
 ms.localizationpriority: medium
 ---
 
@@ -34,54 +34,40 @@ If you create a device-driver for a radio device, like a GPS, your driver will n
 
 The following table lists the methods in the Radio Management API and the corresponding methods found in the sample DLL.
 
-**Radio Manager API**: Radio Manager DLL
-
-**IMediaRadioManager::GetRadioInstances**: CSampleRadioManager::GetRadioInstances
-
-**IMediaRadioManager::OnSystemRadioStateChange**: CSampleRadioManager::OnSystemRadioStateChange
-
-**IRadioInstance::GetFriendlyName**: CSampleRadioInstance::GetFriendlyName
-
-**IRadioInstance::GetInstanceSignature**: CSampleRadioInstance::GetInstanceSignature
-
-**IRadioInstance::GetRadioManagerSignature**: CSampleRadioInstance::GetRadioManagerSignature
-
-**IRadioInstance::GetRadioState**: CSampleRadioInstance::GetRadioState
-
-**IRadioState::IsAssociatingDevice**: CSampleRadioInstance::IsAssociatingDevice
-
-**IRadioState::IsMultiComm**: CSampleRadioInstance::IsMultiComm
-
-**IRadioState::SetRadioState**: CSampleRadioInstance::SetRadioState
-
-**IRadioInstanceCollection::GetAt**: CRadioInstanceCollection::GetAt
-
-**IRadioInstanceCollection::GetCount**: CRadioInstanceCollection::GetCount
-
-**IMediaRadioManagerNotifySink::OnInstanceAdd**: CSampleRadioManager::\_FireEventOnInstanceAdd
-
-**IMediaRadioManagerNotifySink::OnInstanceRadioChange**: CSampleRadioManager::\_FireEventOnInstanceRadioChange
-
-**IMediaRadioManagerNotifySink::OnInstanceRemove**: CSampleRadioManager::\_FireEventOnInstanceRemove
-
+| Radio Manager API | Radio Manager DLL |
+|--|--|
+| IMediaRadioManager::GetRadioInstances | CSampleRadioManager::GetRadioInstances |
+| IMediaRadioManager::OnSystemRadioStateChange | CSampleRadioManager::OnSystemRadioStateChange |
+| IRadioInstance::GetFriendlyName | CSampleRadioInstance::GetFriendlyName |
+| IRadioInstance::GetInstanceSignature | CSampleRadioInstance::GetInstanceSignature |
+| IRadioInstance::GetRadioManagerSignature | CSampleRadioInstance::GetRadioManagerSignature |
+| IRadioInstance::GetRadioState | CSampleRadioInstance::GetRadioState |
+| IRadioState::IsAssociatingDevice | CSampleRadioInstance::IsAssociatingDevice |
+| IRadioState::IsMultiComm | CSampleRadioInstance::IsMultiComm |
+| IRadioState::SetRadioState | CSampleRadioInstance::SetRadioState |
+| IRadioInstanceCollection::GetAt | CRadioInstanceCollection::GetAt |
+| IRadioInstanceCollection::GetCount | CRadioInstanceCollection::GetCount |
+| IMediaRadioManagerNotifySink::OnInstanceAdd | CSampleRadioManager::_FireEventOnInstanceAdd |
+| IMediaRadioManagerNotifySink::OnInstanceRadioChange | CSampleRadioManager::_FireEventOnInstanceRadioChange |
+| IMediaRadioManagerNotifySink::OnInstanceRemove | CSampleRadioManager::_FireEventOnInstanceRemove |
 
 ## Communicating with the device driver
 
 When the radio-management DLL receives a request to retrieve or set the radio state from the radio-management API, it forwards that request as an IOCTL to the corresponding device driver. The DLL sends IOCTLs by invoking the [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function. The specific IOCTLs associated with radio management are:
 
-- IOCTL\_GPS\_RADIO\_MANAGEMENT\_GET\_RADIO\_STATE
+- IOCTL_GPS_RADIO_MANAGEMENT_GET_RADIO_STATE
 
-- IOCTL\_GPS\_RADIO\_MANAGEMENT\_GET\_PREVIOUS\_RADIO\_STATE
+- IOCTL_GPS_RADIO_MANAGEMENT_GET_PREVIOUS_RADIO_STATE
 
-- IOCTL\_GPS\_RADIO\_MANAGEMENT\_SET\_RADIO\_STATE
+- IOCTL_GPS_RADIO_MANAGEMENT_SET_RADIO_STATE
 
-- IOCTL\_GPS\_RADIO\_MANAGEMENT\_SET\_PREVIOUS\_RADIO\_STATE
+- IOCTL_GPS_RADIO_MANAGEMENT_SET_PREVIOUS_RADIO_STATE
 
 In the case of the sample radio-management DLL, the **CSensorCommunication::GetRadioStateHelper** and **CSensorCommunication::SetRadioStateHelper** methods forward the IOCTLs so the sample Geolocation driver.
 
 ## Driver support for radio management
 
-In addition to the radio-management DLL, you will also need to modify your device driver to handle the four radio-management IOCTLs that are sent from the DLL to the driver. These IOCTLs inform the device driver that it should retrieve the current radio state, or, turn the device’s radio on or off.
+In addition to the radio-management DLL, you will also need to modify your device driver to handle the four radio-management IOCTLs that are sent from the DLL to the driver. These IOCTLs inform the device driver that it should retrieve the current radio state, or, turn the device's radio on or off.
 
 The device driver initially receives and processes any IOCTL in the **CMyQueue::OnDeviceIoControl** method. If this method identifies one of the four radio-management IOCTLs, it forwards that IOCTL to the **CMyDevice::ProcessIoControlRadioManagement** method for further processing. This method, in turn, forwards the IOCTL to **CSensorManager::ProcessIoControlRadioManagement**. Within this last method, the radio state is set or retrieved by calls into the **CSensorDDI** class.
 
@@ -95,4 +81,4 @@ You can debug the radio-management DLL in Visual Studio by completing the follow
 
 1. Select **Debug/Attach to Process**. In the list of available processes that appears in the **Attach to Process** dialog box, select dllhost.exe.
 
-Note that if multiple instances of dllhost.exe are running, you may need to choose each one in a process of elimination in order to determine the process associated with the radio-management DLL. Once you’ve attached to the correct process, you can set breakpoints in Visual Studio and begin debugging.
+Note that if multiple instances of dllhost.exe are running, you may need to choose each one in a process of elimination in order to determine the process associated with the radio-management DLL. Once you've attached to the correct process, you can set breakpoints in Visual Studio and begin debugging.

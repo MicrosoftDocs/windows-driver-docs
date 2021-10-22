@@ -19,7 +19,7 @@ The host may use this OID to query the registration parameters that an MB device
 
 ## Remarks
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE](/windows-hardware/drivers/network/ndis-status-wwan-register-params-state) status notification containing an [**NDIS_WWAN_REGISTER_PARAMS_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-ndis_wwan_register_params_info) structure, which contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE](./ndis-status-wwan-register-params-state.md) status notification containing an [**NDIS_WWAN_REGISTER_PARAMS_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-ndis_wwan_register_params_info) structure, which contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure.
 
 For a failured set or query response, the information shall be null and the **InformationBufferLength** shall be zero.
 
@@ -38,11 +38,12 @@ For more information about usage of this OID, see MBIM_CID_MS_REGISTRATION_PARAM
 
 |Requirement|Value|
 |-|-|
-|Version|Windows Server 2022. NDIS 6.84 and later.|
+|Minimum supported client|Windows 11|
+|Minimum supported server|Windows Server 2022. NDIS 6.84 and later.|
 |Header|Ntddndis.h (include Ndis.h)|
 
 ## See also
 
 [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info)
 
-[NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE](/windows-hardware/drivers/network/ndis-status-wwan-register-params-state)
+[NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE](./ndis-status-wwan-register-params-state.md)

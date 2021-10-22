@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPS\_ENDORSER\_STRING
-description: The WIA\_DPS\_ENDORSER\_STRING property contains a string that is to be endorsed (that is, printed) on each page that the minidriver scans.
+title: WIA_DPS_ENDORSER_STRING
+description: The WIA_DPS_ENDORSER_STRING property contains a string that is to be endorsed (that is, printed) on each page that the minidriver scans.
 keywords: ["WIA_DPS_ENDORSER_STRING Imaging Devices"]
 topic_type:
 - apiref
@@ -10,82 +10,46 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/30/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DPS\_ENDORSER\_STRING
+# WIA_DPS_ENDORSER_STRING
 
+The WIA_DPS_ENDORSER_STRING property contains a string that is to be endorsed (that is, printed) on each page that the minidriver scans.
 
-The WIA\_DPS\_ENDORSER\_STRING property contains a string that is to be endorsed (that is, printed) on each page that the minidriver scans.
+> [!NOTE]
+> This property is now obsolete. Use [**WIA_IPS_PRINTER_ENDORSER_STRING**](wia-ips-printer-endorser-string.md) instead.
 
-## <span id="ddk_wia_dps_endorser_string_si"></span><span id="DDK_WIA_DPS_ENDORSER_STRING_SI"></span>
+Property Type: VT_BSTR
 
-
-**Note**  This property is now obsolete. Use [**WIA\_IPS\_PRINTER\_ENDORSER\_STRING**](wia-ips-printer-endorser-string.md) instead.
-
- 
-
-Property Type: VT\_BSTR
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read/write
 
 ## Remarks
 
-An application sets the WIA\_DPS\_ENDORSER\_STRING property by using the valid character set that is reported in the [**WIA\_DPS\_ENDORSER\_CHARACTERS**](wia-dps-endorser-characters.md) property. The WIA minidriver should endorse documents only if a string is set in WIA\_DPS\_ENDORSER\_STRING. An empty string means that the endorser functionality is disabled.
+An application sets the WIA_DPS_ENDORSER_STRING property by using the valid character set that is reported in the [**WIA_DPS_ENDORSER_CHARACTERS**](wia-dps-endorser-characters.md) property. The WIA minidriver should endorse documents only if a string is set in WIA_DPS_ENDORSER_STRING. An empty string means that the endorser functionality is disabled.
 
-Because the driver must interpret the endorser string, your driver can use special characters in WIA\_DPS\_ENDORSER\_STRING. However, only your applications will understand these characters.
+Because the driver must interpret the endorser string, your driver can use special characters in WIA_DPS_ENDORSER_STRING. However, only your applications will understand these characters.
 
-A driver that supports the WIA\_DPS\_ENDORSER\_STRING property must support the following list of tokens:
+A driver that supports the WIA_DPS_ENDORSER_STRING property must support the following tokens:
 
-<span id="_DATE__"></span><span id="_date__"></span>$DATE$   
-The date in the form YYYY/MM/DD.
-
-<span id="_DAY__"></span><span id="_day__"></span>$DAY$   
-The day, in the form DD.
-
-<span id="_MONTH__"></span><span id="_month__"></span>$MONTH$   
-The month of the year, in the form MM.
-
-<span id="_PAGE_COUNT__"></span><span id="_page_count__"></span>$PAGE\_COUNT$   
-The number of pages that are transferred.
-
-<span id="_TIME__"></span><span id="_time__"></span>$TIME$   
-The time of day, in the form HH:MM:SS.
-
-<span id="_YEAR__"></span><span id="_year__"></span>$YEAR$   
-The year, in the form YYYY.
+| Value | Description |
+|--|--|
+| $DATE$ | The date in the form YYYY/MM/DD. |
+| $DAY$ | The day, in the form DD. |
+| $MONTH$ | The month of the year, in the form MM. |
+| $PAGE_COUNT$ | The number of pages that are transferred. |
+| $TIME$ | The time of day, in the form HH:MM:SS. |
+| $YEAR$ | The year, in the form YYYY. |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_DPS_ENDORSER_CHARACTERS**](wia-dps-endorser-characters.md)
 
-[**WIA\_DPS\_ENDORSER\_CHARACTERS**](wia-dps-endorser-characters.md)
-
-[**WIA\_IPS\_PRINTER\_ENDORSER\_STRING**](wia-ips-printer-endorser-string.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_PRINTER_ENDORSER_STRING**](wia-ips-printer-endorser-string.md)

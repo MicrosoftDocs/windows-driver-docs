@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_ORIENTATION
-description: The WIA\_IPS\_ORIENTATION property describes the current orientation of the document to scan. The WIA minidriver creates and maintains this property.
+title: WIA_IPS_ORIENTATION
+description: The WIA_IPS_ORIENTATION property describes the current orientation of the document to scan. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_ORIENTATION Imaging Devices"]
 topic_type:
 - apiref
@@ -10,101 +10,48 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/05/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_IPS\_ORIENTATION
+# WIA_IPS_ORIENTATION
 
+The WIA_IPS_ORIENTATION property describes the current orientation of the document to scan. The WIA minidriver creates and maintains this property.
 
-The WIA\_IPS\_ORIENTATION property describes the current orientation of the document to scan. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ips_orientation_si"></span><span id="DDK_WIA_IPS_ORIENTATION_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
 ## Remarks
 
-An application sets the WIA\_IPS\_ORIENTATION property to define the original orientation of a page or image to be acquired. For more information about how to use WIA\_IPS\_ORIENTATION, see [**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md).
+An application sets the WIA_IPS_ORIENTATION property to define the original orientation of a page or image to be acquired. For more information about how to use WIA_IPS_ORIENTATION, see [**WIA_DPS_PAGE_SIZE**](wia-dps-page-size.md).
 
-The following table describes the constants that are valid with WIA\_IPS\_ORIENTATION.
+The following table describes the constants that are valid with WIA_IPS_ORIENTATION.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>LANSCAPE</p></td>
-<td><p>The orientation is a 90-degree counterclockwise rotation, relative to the PORTRAIT orientation.</p></td>
-</tr>
-<tr class="even">
-<td><p>PORTRAIT</p></td>
-<td><p>The orientation is at 0 degrees.</p></td>
-</tr>
-<tr class="odd">
-<td><p>ROT180</p></td>
-<td><p>The orientation is a 180-degree counterclockwise rotation, relative to the PORTRAIT orientation.</p></td>
-</tr>
-<tr class="even">
-<td><p>ROT270</p></td>
-<td><p>The orientation is a 270-degree counterclockwise rotation, relative to the PORTRAIT orientation.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| LANDSCAPE | The orientation is a 90-degree counterclockwise rotation, relative to the PORTRAIT orientation. |
+| PORTRAIT | The orientation is at 0 degrees. |
+| ROT180 | The orientation is a 180-degree counterclockwise rotation, relative to the PORTRAIT orientation. |
+| ROT270 | The orientation is a 270-degree counterclockwise rotation, relative to the PORTRAIT orientation. |
 
- 
+The WIA_IPS_ORIENTATION property describes the orientation of the document to scan. This property affects the current scan frame and available page sizes.
 
-The WIA\_IPS\_ORIENTATION property describes the orientation of the document to scan. This property affects the current scan frame and available page sizes.
+WIA_IPS_ORIENTATIONis different from the [**WIA_IPS_ROTATION**](wia-ips-rotation.md) property, which refers to a rotation that is applied to an image *after* it is scanned. So, a ROT180 value for WIA_IPS_ORIENTATION is different from a ROT180 value for WIA_IPS_ROTATION. For WIA_IPS_ORIENTATION, ROT180 describes the orientation of the physical document to scan, relative to the scan direction, and for WIA_IPS_ROTATION, ROT180 describes the rotation to apply to an image after it is scanned.
 
-WIA\_IPS\_ORIENTATIONis different from the [**WIA\_IPS\_ROTATION**](wia-ips-rotation.md) property, which refers to a rotation that is applied to an image *after* it is scanned. So, a ROT180 value for WIA\_IPS\_ORIENTATION is different from a ROT180 value for WIA\_IPS\_ROTATION. For WIA\_IPS\_ORIENTATION, ROT180 describes the orientation of the physical document to scan, relative to the scan direction, and for WIA\_IPS\_ROTATION, ROT180 describes the rotation to apply to an image after it is scanned.
+The WIA_IPS_ORIENTATION property is required for ADF items and optional for all other image acquisition items.
 
-The WIA\_IPS\_ORIENTATION property is required for ADF items and optional for all other image acquisition items.
-
-**Note**   The compatibility layer within the WIA service does not add support for WIA\_IPS\_ORIENTATION to the ADF item that is translated from a Microsoft Windows XP WIA device if the property is not supported on the child item of the device. Applications should not expect that an ADF item will always support this property and should always check if WIA\_IPS\_ORIENTATION is supported at run time.
-
- 
+> [!NOTE]
+> The compatibility layer within the WIA service does not add support for WIA_IPS_ORIENTATION to the ADF item that is translated from a Microsoft Windows XP WIA device if the property is not supported on the child item of the device. Applications should not expect that an ADF item will always support this property and should always check if WIA_IPS_ORIENTATION is supported at run time.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_DPS_PAGE_SIZE**](wia-dps-page-size.md)
 
-[**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md)
-
-[**WIA\_IPS\_ROTATION**](wia-ips-rotation.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_ROTATION**](wia-ips-rotation.md)

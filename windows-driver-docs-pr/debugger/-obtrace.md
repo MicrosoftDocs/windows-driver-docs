@@ -1,5 +1,5 @@
 ---
-title: obtrace
+title: obtrace (WinDbg)
 description: The obtrace extension displays object reference tracing data for the specified object.
 keywords: ["obtrace Windows Debugging"]
 ms.date: 05/23/2017

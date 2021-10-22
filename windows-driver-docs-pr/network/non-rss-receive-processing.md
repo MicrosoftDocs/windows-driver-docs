@@ -19,7 +19,7 @@ Miniport drivers that do not support RSS handle receive processing as described 
 
 The following figure illustrates non-RSS receive processing.
 
-![diagram illustrating send and receive processing without rss](images/rsslessstack.png)
+![diagram illustrating send and receive processing without rss.](images/rsslessstack.png)
 
 In the figure, the dashed paths represent an alternate path for the send and receive processing. Because the system controls the scaling, the processing doesn't always occur on the CPU that provides the best performance. Connections are processed on the same CPU over successive interrupts only by chance.
 

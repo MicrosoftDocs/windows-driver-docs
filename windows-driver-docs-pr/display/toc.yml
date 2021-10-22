@@ -20,6 +20,10 @@
       href: what-s-new-for-windows-8-display-drivers.md
     - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
       href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
+  - name: "WDDM 2.4 Features"
+    items:
+    - name: "IOMMU-based GPU isolation"
+      href: iommu-based-gpu-isolation.md
   - name: "WDDM 2.1 Features"
     href: wddm-2-1-features.md
   - name: "WDDM 2.0 and Windows 10"
@@ -628,6 +632,8 @@
         href: validating-a-hybrid-system-configuration.md
       - name: "Rendering on a discrete GPU using cross-adapter resources"
         href: rendering-on-a-discrete-gpu-using-cross-adapter-resources.md
+      - name: "Supporting cross-adapter resource scan-out (CASO)"
+        href: supporting-caso.md
       - name: "Hybrid system DDI"
         href: hybrid-system-ddi.md
     - name: "Managing Resources for Multiple GPU Scenarios"

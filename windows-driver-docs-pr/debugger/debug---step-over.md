@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Step Over** on the **Debug** menu to execute a single instruction on the target. If the instruction is a function call, the whole function is executed.
 
-This command is equivalent to pressing F10 or clicking the **Step over (F10)** button (![screen shot of the step over button](images/tbover.png)) on the toolbar.
+This command is equivalent to pressing F10 or clicking the **Step over (F10)** button (![screen shot of the step over button.](images/tbover.png)) on the toolbar.
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 

@@ -94,7 +94,7 @@ Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range i
 
 This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxiliary power in D3, above the default 375mA @3.3V. Any PCI port or bridge defining this DSD *must* guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds.
 
-```asl
+```ASL
 Name (_DSD, Package () {
             ToUUID("6B4AD420-8FD3-4364-ACF8-EB94876FD9EB"),
             Package () {
@@ -102,6 +102,39 @@ Name (_DSD, Package () {
         }
 )
 
+```
+
+## Mapping native protocols (PCIe, DisplayPort) tunneled through USB4 to USB4 Host Routers
+
+This ACPI object enables the operating system to map native protocols, such as PCIe and DisplayPort, tunneled through USB4 to the correct USB4 host router.
+
+In the following sample, `Device (DSB0)` has a dependency on `\_SB.PCI0.NHI0`.
+
+```ASL
+Scope (\_SB.PCI0)
+{
+    Device (NHI0) { } //Host interface instance which has dependency on \_SB.PCI0.NHI0
+    Device (DSB0) //Tunneled PCIe port instance
+    {
+        Name (_DSD, Package () {
+            ToUUID("daffd814-6eba-4d8c-8a91-bc9bbf4aa301"), //Device Properties UUID 
+            Package () {
+                Package () { “usb4-host-interface", \_SB.PCI0.NHI0 },
+                Package () { “usb4-port-number", PortInstance#},
+            }
+        })
+    }
+    Device (…) //Extend to DP and USB tunneled ports, as needed 
+    {
+        Name (_DSD, Package () {
+            ToUUID("daffd814-6eba-4d8c-8a91-bc9bbf4aa301"), //Device Properties UUID 
+            Package () {
+                Package () { “usb4-host-interface", \_SB.PCI0.NHI0 },
+                Package () { “usb4-port-number", PortInstance#},
+            }
+        })
+    }
+}
 ```
 
 ## See also

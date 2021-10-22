@@ -26,7 +26,7 @@ For WinDbg, "Debugger Command window" refers to the window that is labeled "Comm
 
 -   In the large, upper pane, you view command output.
 
-This window is always open at the beginning of a debugging session. You can reopen or switch to this window by selecting **Command** on the **View** menu, pressing ALT+1, or selecting the **Command (Alt+1)** button (![screen shot of the debugger command window button](images/tbcmd.png)) on the toolbar.
+This window is always open at the beginning of a debugging session. You can reopen or switch to this window by selecting **Command** on the **View** menu, pressing ALT+1, or selecting the **Command (Alt+1)** button (![screen shot of the debugger command window button.](images/tbcmd.png)) on the toolbar.
 
 You can use the UP ARROW and DOWN ARROW keys to scroll through the command history. When a previous command appears, you can edit it and then press ENTER to execute the previous command (or the edited version of the previous command). The cursor does not have to be at the end of the line for this procedure to work correctly.
 

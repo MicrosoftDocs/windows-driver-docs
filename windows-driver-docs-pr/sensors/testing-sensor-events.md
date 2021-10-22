@@ -23,7 +23,7 @@ The following procedure describes how to configure the diagnostic tool to captur
 
 The following illustration shows the tool after it begins capturing accelerometer events.
 
-![sensor diagnostic tool: capturing accelerometer events](images/sdt-events.png)
+![sensor diagnostic tool: capturing accelerometer events.](images/sdt-events.png)
 
 
 ## Logging Event Data to an XML File

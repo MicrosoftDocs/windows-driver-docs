@@ -22,7 +22,7 @@ You can provide metadata to customize various aspects of the Windows 8, Windows
 
 The following diagram shows how the different metadata sources are related and how they are serviced. The service metadata takes priority over information in the Windows APN database.
 
-![this is an overview of mobile broadband](images/mbae-sxs-overview.jpg)
+![this is an overview of mobile broadband.](images/mbae-sxs-overview.jpg)
 
 Overview of use the links in this section to learn more about the different types of mobile broadband metadata:
 

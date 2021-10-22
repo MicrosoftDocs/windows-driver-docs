@@ -19,8 +19,8 @@ The MITT software package contains several tools to be used to test simple perip
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -81,4 +81,4 @@ The MITT software package contains several tools to be used to test simple perip
 
 ## Related topics
 
-[Get started with MITT](/windows-hardware/drivers/spb/get-started-with-mitt---)
+[Get started with MITT](./get-started-with-mitt---.md)

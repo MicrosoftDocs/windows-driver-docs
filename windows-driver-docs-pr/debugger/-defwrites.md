@@ -1,5 +1,5 @@
 ---
-title: defwrites
+title: defwrites (WinDbg)
 description: The defwrites extension displays the values of the kernel variables used by the cache manager.
 keywords: ["cache manager", "defwrites Windows Debugging"]
 ms.date: 05/23/2017

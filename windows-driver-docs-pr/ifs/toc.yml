@@ -6,7 +6,7 @@
     items:
     - name: "File system sample code"
       href: file-system-sample-code.md
-    - name: "Installing a file system driver"
+    - name: "Development process for file system driver installation"
       href: installing-a-file-system-driver.md
     - name: "Creating an INF file for a file system driver"
       href: creating-an-inf-file-for-a-file-system-driver.md
@@ -207,6 +207,8 @@
       href: reparse-points.md
     - name: "Reparse point tag request"
       href: reparse-point-tag-request.md
+  - name: "BypassIO"
+    href: bypassio.md
 - name: "File system legacy filter drivers"
   # Auto-expanded node L1
   items:
@@ -840,6 +842,8 @@
       href: fsctl-request-oplock-level-2.md
     - name: "FSCTL_SET_EXTERNAL_BACKING"
       href: fsctl-set-external-backing.md
+    - name: "FSCTL_SET_PURGE_FAILURE_MODE"
+      href: fsctl-set-purge-failure-mode.md
     - name: "FSCTL_SET_PERSISTENT_VOLUME_STATE"
       href: fsctl-set-persistent-volume-state.md
     - name: "FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS"

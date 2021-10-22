@@ -13,7 +13,7 @@ Microsoft provides an inbox class driver for mobile broadband (MBB) devices call
 MBCD is a miniport driver that combines with the Network Driver Interface Specification (NDIS) port driver to form a single function driver. In the OSI Network Model, this driver  logically sits on the top half of the Data Link Layer (layer 2). Network protocol drivers (such as IP) that logically sit on the Network layer (layer 3) receive data (SDUs) in segments (TCP) or datagrams (UDP) from the Transport Layer (layer 4) and send down data (PDUs) as packets to the Data Link Layer by invoking NDIS APIs. Generally, NDIS only involves a miniport driver when it is necessary.
 
 <br>
-<table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+<table cellpadding="10" border='1'>
   <tr>
   	  <td align ="center" colspan="5">OSI Network Model</td>
   </tr>
@@ -84,19 +84,19 @@ Application -> TCP/IP --(packets)--> NDIS ----(frames)---> [Driver] ---> MBB Dev
 
 ## Driver Architecture
 ### Legacy
-![Legacy](images/mbim_architecture_legacy.png?raw=true "Legacy")
+![Legacy.](images/mbim_architecture_legacy.png?raw=true "Legacy")
 
 ### Current (Since RS5 OSBuild 17763)
-![Current](images/mbim_4_0_architecture.png?raw=true "Current")
+![Current.](images/mbim_4_0_architecture.png?raw=true "Current")
 
 ## Device Power Up
-![Device PowerUp](images/mbim_powerup.png?raw=true "Device PowerUp")
+![Device PowerUp.](images/mbim_powerup.png?raw=true "Device PowerUp")
 
 ## Device Power Down
-![Device PowerDown](images/mbim_powerdown.png?raw=true "Device PowerDown")
+![Device PowerDown.](images/mbim_powerdown.png?raw=true "Device PowerDown")
 
 ## MBBCx interface
-![MBBCx interface](images/mbim_interface.png?raw=true "MBBCx interface")
+![MBBCx interface.](images/mbim_interface.png?raw=true "MBBCx interface")
 
 **See Also**
 
@@ -105,17 +105,17 @@ Application -> TCP/IP --(packets)--> NDIS ----(frames)---> [Driver] ---> MBB Dev
 [MbbRequestComplete](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbrequestcomplete)
 
 ### Default NetAdapter Initialization
-![Default NetAdapter Initialization](images/Default_netadapter_init.png?raw=true "Default NetAdapter Init")
+![Default NetAdapter Initialization.](images/Default_netadapter_init.png?raw=true "Default NetAdapter Init")
 
 **See Also**
 
 [MbbAdapterInitialize](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbadapterinitialize)
 
 ### Additional NetAdapter Initialization
-![Additional NetAdapter Init](images/netadapter_init.png?raw=true "Additional NetAdapter Init")
+![Additional NetAdapter Init.](images/netadapter_init.png?raw=true "Additional NetAdapter Init")
 
 ### Device Initialization
-![Device Initialization](images/device_init.png?raw=true "Device Init")
+![Device Initialization.](images/device_init.png?raw=true "Device Init")
 
 
 ## Hardware Lab Kit (HLK) Tests

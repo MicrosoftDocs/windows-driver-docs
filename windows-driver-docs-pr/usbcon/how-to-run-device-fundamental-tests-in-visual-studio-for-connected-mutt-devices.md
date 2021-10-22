@@ -45,7 +45,7 @@ Before you start running devfund tests, make sure that you meet the following re
     -   DQ: Class=’USBTest’
     -   TestCycles: 100
 
-    ![visual studio test group](images/fig11-vs-testgroup.png)
+    ![visual studio test group.](images/fig11-vs-testgroup.png)
 
 3.  Configure the test parameters. For information about configuration, see **Step 3: Configure test parameters** in [How to test a driver at runtime using Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=290770).
 4.  Run the Tests. For information about tests to run, see **Step 5: Run the tests on the test computer** in [How to test a driver at runtime using Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=290770).

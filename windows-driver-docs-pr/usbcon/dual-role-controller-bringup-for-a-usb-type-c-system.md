@@ -30,7 +30,7 @@ The client driver handles hardware events and reports them to the class extensio
 
 On systems with USB micro-AB connectors, the client driver for the dual-role controller makes that decision based on the ID pin in the connector by using interrupt resources assigned to it. On systems with USB Type-C connectors, this decision is made by the client driver for the connector. That driver determines the role based on the CC pins and reports the results to the USB connector manager (UCM), which then sends the results to the role-switch drivers.
 
-![usb role switch drivers](images/urs.png)
+![usb role switch drivers.](images/urs.png)
 
 ## 1. Enable the URS driver in system ACPI
 
@@ -38,7 +38,7 @@ In order to use URS, you must make ACPI modifications. Replace the device on whi
 
 ## 2. Load the USB role-switch drivers for the dual-role controller driver
 
-![usb role switch stack](images/urs.png)
+![usb role switch stack.](images/urs.png)
 
 - If your system uses ChipIdea and Synopsys controllers, load the Microsoft provided in-box client drivers for ChipIdea and Synopsys controllers.
 

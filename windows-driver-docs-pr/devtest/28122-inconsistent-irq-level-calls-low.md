@@ -1,5 +1,5 @@
 ---
-title: C28122
+title: C28122 warning
 description: Warning C28122 The function is not permitted to be called at a low IRQ level. Prior function calls are inconsistent with this constraint.
 keywords:
 - warnings listed WDK PREfast for Drivers

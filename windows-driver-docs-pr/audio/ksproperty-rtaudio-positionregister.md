@@ -53,7 +53,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) is a KSRTAUDIO\_HWREGISTER\_PROPERTY structure, which contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with values that indicate the preferred base address for the register.
+The property descriptor (instance data) is a KSRTAUDIO\_HWREGISTER\_PROPERTY structure, which contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the structure with values that indicate the preferred base address for the register.
 
 The property value (operation data) is a KSRTAUDIO\_HWREGISTER structure into which the property handler writes the virtual address to which it has mapped the hardware position register. The client can directly read the register from this address. The KSRTAUDIO\_HWREGISTER structure also specifies the rate at which the position register increments itself.
 
@@ -109,7 +109,7 @@ It is typically faster to read the position register than it is to send a KSPROP
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSRTAUDIO\_HWREGISTER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister)
 
@@ -118,4 +118,3 @@ It is typically faster to read the position register than it is to send a KSPROP
 [**KSPROPERTY\_AUDIO\_POSITION**](ksproperty-audio-position.md)
 
 [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](ksproperty-rtaudio-hwlatency.md)
-

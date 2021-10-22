@@ -17,7 +17,7 @@ keywords:
 - GUIDGen WDK
 - GUID Generator WDK
 - GUIDGen.exe WDK
-ms.date: 05/09/2018
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
@@ -110,7 +110,6 @@ The information in the following tables describes the tools that are useful for 
 |Driver Verifier (Verifier.exe)</br>**WDK tool:** No|%Windir%\system32\verifier.exe|Monitors kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. It can subject the drivers to a variety of stresses and tests to find improper behavior.</br>WDK Documentation:</br>[Driver Verifier](driver-verifier.md)|
 |Driver Verification Log (DVL)</br>**WDK tool:** Yes|Requires Microsoft Visual Studio and the WDK. From the **Driver** menu, select **Create Driver Verification Log....**|The [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. See [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md).|
 |Enhanced Storage Certificate Management Tool (EhStorCertMgrCmd.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\ehstorcertmgrcmd.exe</br>%WindowsSdkDir%\tools\x86\ehstorcertmgrcmd.exe|Manages certificates on USB storage devices that are compliant with the IEEE 1667 standard.</br>WDK Documentation:</br>[Enhanced Storage Certificate Management Tool](enhanced-storage-certificate-management-tool.md)|
-|Event and Performance Counter Manifest Generator Tool (ECManGen.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\ECManGen.exe</br>%WindowsSdkDir%\bin\x86\ECManGen.exe|A tool for creating an event or performance counter manifest (*.man) from scratch without ever having to use XML tags. For information about creating manifest files, see [Writing an Instrumentation Manifest (Windows)](/windows/desktop/WES/writing-an-instrumentation-manifest) section and [Adding Event Tracing to Kernel-Mode Drivers](adding-event-tracing-to-kernel-mode-drivers.md)|
 |Inf2Cat (Inf2cat.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\inf2cat.exe</br>%WindowsSdkDir%\bin\x86\inf2cat.exe|Determines whether a [driver package's](../install/driver-packages.md) INF file can be digitally-signed for a specified list of Windows versions, and, if so, generates the unsigned [catalog files](../install/catalog-files.md) that apply to the specified Windows versions.</br>WDK Documentation:</br>[Inf2Cat](inf2cat.md)|
 |InfVerif (InfVerif.exe)</br>**WDK tool:** Yes|c:\Program Files(x86)\Windows Kits\10\tools\arm\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\arm64\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\x86\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\x64\infverif.exe|Tests a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</br>WDK Documentation:</br>[InfVerif](infverif.md)|
 |MakeCat (MakeCat.exe)</br>**WDK tool:** Yes|WDKPath\bin\amd64\MakeCat.exe</br>WDKPath\bin\ia64\MakeCat.exe</br>WDKPath\bin\x86\MakeCat.exe|Creates a [catalog file](../install/catalog-files.md) for a [driver package](../install/driver-packages.md).</br>WDK Documentation:</br>[MakeCat](makecat.md)|

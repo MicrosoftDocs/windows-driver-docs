@@ -22,7 +22,7 @@ The format of the error records that are used by WHEA are based on the *Common P
 
 The following diagram shows the general format of an error record.
 
-![diagram illustrating the general format of an error record](images/whearecord.png)
+![diagram illustrating the general format of an error record.](images/whearecord.png)
 
 An error record consists of an error record header followed by one or more fixed-length error record section descriptors. For each error record section descriptor there is an associated variable-length error record section that contains either error data or informational data. An error record must contain at least one error record section.
 
@@ -41,7 +41,7 @@ This error record section contains processor error data that is not specific to 
 <a href="" id="x86-x64-processor-error"></a>x86/x64 Processor Error  
 This error record section contains processor error data that is specific to the x86 or x64 processor architecture. The data that is contained in this section is described by the [**WHEA\_XPF\_PROCESSOR\_ERROR\_SECTION**](/previous-versions/ff560655(v=vs.85)) structure. The following diagram shows how the data structures that contain the processor error data are stored in the VariableInfo member. 
 
-![Processor error data](images/wheaxpfsection.gif)
+![Processor error data.](images/wheaxpfsection.gif)
 
 <a href="" id="itanium-processor-error"></a>Itanium Processor Error  
 This error record section contains processor error data that is specific to the Itanium processor architecture. For more information about the format of the error data that is contained in this error record section, see the [Intel Itanium Processor Family System Abstraction Layer Specification](https://go.microsoft.com/fwlink/p/?linkid=72212).

@@ -38,7 +38,7 @@ The PF miniport driver, which runs in the management operating system of the Hyp
 
 The following diagram shows the steps that are involved with VF initialization.
 
-![example vf initialization sequence showing calls from the virtualization stack to ndis and then to the pf miniport driver](images/sriov-vf-initialization.png)
+![example vf initialization sequence showing calls from the virtualization stack to ndis and then to the pf miniport driver.](images/sriov-vf-initialization.png)
 
 NDIS, the virtualization stack, and the PF miniport driver follow these steps during the VF initialization sequence:
 

@@ -15,7 +15,7 @@ Advanced duplex scanning allows the application to independently configure the f
 
 The following diagram illustrates the WIA item tree of a flatbed scanner that supports advanced duplex and document feeder scanning.
 
-![diagram illustrating the item tree of a flatbed scanner that supports advanced duplex and document feeder scanning](images/wia-feeder-tree3.png)
+![diagram illustrating the item tree of a flatbed scanner that supports advanced duplex and document feeder scanning.](images/wia-feeder-tree3.png)
 
 Note that the front and back of the page that is being scanned are represented by separate child items in the item tree. This differentiation includes separate categories in the [**WIA\_IPA\_ITEM\_CATEGORY**](./wia-ipa-item-category.md) property: WIA\_CATEGORY\_FRONT and WIA\_CATEGORY\_BACK. In a scanner that performs advanced duplex scanning, the front and back items are set separately; they may be set to different values. However, even on a scanner that is capable of advanced duplex scanning, there cannot be only a front or back item; if there is either a front or back item, the other item must also be present.
 

@@ -26,7 +26,7 @@ The power manager sends **IRP\_MN\_QUERY\_POWER** and **IRP\_MN\_SET\_POWER** re
 
 For example, to change the system power state, the power manager sends a system power IRP to the top driver in the stack at each device node of the device tree. The following figure shows how drivers within a single device stack handle a system power IRP.
 
-![diagram illustrating the path of a system power irp](images/s2dirp.png)
+![diagram illustrating the path of a system power irp.](images/s2dirp.png)
 
 As the previous figure shows:
 

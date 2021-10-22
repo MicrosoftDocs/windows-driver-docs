@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Time Travel Debugging - JavaScript Automation
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
 
 You can use JavaScript automation to work with TTD traces in a number of ways, such as command automation or using queries to locate event data from the trace file.
 

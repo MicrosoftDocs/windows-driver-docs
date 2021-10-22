@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates a miniport driver send operation.
 
-![diagram illustrating a miniport driver send operation](images/miniportsend.png)
+![diagram illustrating a miniport driver send operation.](images/miniportsend.png)
 
 NDIS calls a miniport driver's [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) function to transmit the network data that is described by a linked list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures.
 

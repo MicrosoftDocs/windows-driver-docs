@@ -19,11 +19,11 @@ To share a driver with one of your partners, [create a hardware submission](crea
 
 2. Go to the **Distribution** section of the hardware submission and select **New shipping label**.
 
-   ![screenshot that shows new shipping label button](images/publish-new-shipping-label.png)
+   ![screenshot that shows new shipping label button.](images/publish-new-shipping-label.png)
 
 3. On the shipping label page, go to the **Details** section and enter a name for the shipping label in the **Shipping label name** field. This name is private and will not be visible by your partner. The name allows you to organize and search for your shipping labels.
 
-   ![screenshot that shows label name and properties](images/publish-label-name-share-new.png)
+   ![screenshot that shows label name and properties.](images/publish-label-name-share-new.png)
 
 4. In the **Properties** section, complete the following information:
 
@@ -56,7 +56,7 @@ To share a driver with one of your partners, [create a hardware submission](crea
    
 5. In the **Targeting** section, select the driver package that you want to share.
 
-   ![screenshot that shows publish targeting settings](images/publish-targeting-new.png)
+   ![screenshot that shows publish targeting settings.](images/publish-targeting-new.png)
 
 6. After you select your driver package, the **Select PNPs** grid becomes available. You can search for a specific hardware ID or operating system by using the search box above the list of hardware IDs.  Your partner is limited to the hardware ID values you share for any publications they create. 
 

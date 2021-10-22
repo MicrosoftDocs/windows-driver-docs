@@ -16,7 +16,7 @@ This section describes each kind of device object and mentions when each is crea
 
 The following figure shows the possible kinds of device objects that can be attached in a device stack, representing the drivers handling I/O requests for a device.
 
-![diagram illustrating possible device object layers for a device](images/objlyr.png)
+![diagram illustrating possible device object layers for a device.](images/objlyr.png)
 
 Starting at the bottom of this figure:
 

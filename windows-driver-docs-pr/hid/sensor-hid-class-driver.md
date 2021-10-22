@@ -35,7 +35,7 @@ Here is a list of the supported sensors:
 
 The following illustration depicts the flow of data back and forth from two sensor applications down through the driver stack and, finally, to the hardware itself.
 
-![client sensor architecture](images/client-sensor-architecture.png)
+![client sensor architecture.](images/client-sensor-architecture.png)
 
 ## Support for custom sensors
 
@@ -52,7 +52,7 @@ If you are creating the firmware for a compatible sensor, you’ll need a basic 
 
 The following diagram illustrates the I/O model:
 
-![i/o model](images/hid-sensor-stack.png)
+![i/o model.](images/hid-sensor-stack.png)
 
 ## Sample Report Descriptor
 

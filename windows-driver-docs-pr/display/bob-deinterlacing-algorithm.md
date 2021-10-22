@@ -22,15 +22,15 @@ Output is a frame F<sub>out</sub>(i,j) of size 2xMxN such that 0 &lt;= i &lt;= 2
 
 If F<sub>in</sub>(i,j) is a top field:
 
-![calculation illustrating a bob deinterlacing algorithm when fin(i,j) is a top field](images/bobtop.png)
+![calculation illustrating a bob deinterlacing algorithm when fin(i,j) is a top field.](images/bobtop.png)
 
 If F<sub>in</sub>(i,j) is a bottom field:
 
-![calculation illustrating a bob deinterlacing algorithm when fin(i,j) is a bottom field](images/bobbotom.png)
+![calculation illustrating a bob deinterlacing algorithm when fin(i,j) is a bottom field.](images/bobbotom.png)
 
 Each definition uses a finite impulse response (FIR) filter with an impulse response h of length 2K. Impulse response h is symmetric about its midpoint, such that h₋₍ₖ₊₁₎ = hₖ for k=0 to K-1 and
 
-![calculation illustrating a filter algorithm](images/firfiltr.png)
+![calculation illustrating a filter algorithm.](images/firfiltr.png)
 
 The preferred form of bob-style deinterlacing uses K=2 and h₀ = 9/16 (so h₁ = 1/16). This filter should be implemented as (9\*(b+c)-(a+d)+8)&gt;&gt;4, where a, b, c, and d are the four input samples used to produce one output sample.
 

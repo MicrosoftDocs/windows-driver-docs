@@ -1,17 +1,15 @@
 ---
 title: Device control keywords
 description: These keywords are used to provide control over the 3D manufacturing device.
-ms.date: 04/20/2017
+ms.date: 08/23/2021
 ms.localizationpriority: medium
 ---
 
 # Device control keywords
 
-
 These keywords are used to provide control over the 3D manufacturing device.
 
 ## 2.1. Job3DOutputArea
-
 
 The psk3d:Job3DOutputArea Property SHOULD be used to define the size of the area where the device can actually print: the lower left bottom corner of the Job3DOutputArea is defined as (0,0,0). Job3DOutputAreaWidth, Job3DOutputAreaDepth, and Job3DOutputAreaHeight Properties define the bounding box of the print volume, while Job3DOutputAreaMesh optionally defines the exact print volume within that bounding box if the print volume is not a cuboid.
 
@@ -49,8 +47,6 @@ The psk3d:Job3DOutputArea Property SHOULD be used to define the size of the area
 </tr>
 </tbody>
 </table>
-
- 
 
 Job3DOutputArea keyword usage
 
@@ -126,8 +122,6 @@ Describes the width of the output area along the X axis, in microns.
 </tbody>
 </table>
 
- 
-
 ### 2.1.2. Job3DOutputAreaDepth
 
 Describes the depth of the output area along the Y axis, in microns.
@@ -166,8 +160,6 @@ Describes the depth of the output area along the Y axis, in microns.
 </tr>
 </tbody>
 </table>
-
- 
 
 ### 2.1.3. Job3DOutputAreaHeight
 
@@ -208,8 +200,6 @@ Describes the height of the output area along the Z axis, in microns.
 </tbody>
 </table>
 
- 
-
 ### 2.1.4. Job3DOutputAreaMesh
 
 Describes the shape of the output volume if not a rectangular prism. The string value is an XML blob following the 3MF spec for a &lt;mesh&gt; element (containing vertices and triangles, and conforming to the manifoldness standards for 3MF meshes). This polyhedron MUST be entirely contained within the bounding box described by the previous OutputArea Properties.
@@ -249,10 +239,7 @@ Describes the shape of the output volume if not a rectangular prism. The string 
 </tbody>
 </table>
 
- 
-
 ## 2.2. Job3DAppName
-
 
 The device MAY identify a workflow app other than the default (the example contains the default workflow) that the print dialog will invoke when this printer is selected. This workflow app allows for any custom UI that may be necessary or desired to best set up a 3D print job for this device.
 
@@ -291,8 +278,6 @@ The device MAY identify a workflow app other than the default (the example conta
 </tbody>
 </table>
 
- 
-
 Job3DAppName keyword usage
 
 ```xml
@@ -302,7 +287,6 @@ Job3DAppName keyword usage
 ```
 
 ## 2.3. Job3DWSDAPackageFamilyName
-
 
 The device MAY identify a UWP device app, which the print dialog will launch when the **Advanced settings** button is clicked by a user. This app presents UI for operations such as printer maintenance, material setup, calibration, etc. No default is supplied, so if this keyword is omitted, no **Advanced settings** button will be displayed.
 
@@ -336,12 +320,10 @@ The device MAY identify a UWP device app, which the print dialog will launch whe
 <p><strong>Child:</strong> Value</p>
 <p><strong>xsi:type:</strong> xsd:string</p>
 <p><strong>Value:</strong></p>
-<p><strong>Description:</strong> The package name of the UWP device app to be used for this printer’s advanced settings.</p></td>
+<p><strong>Description:</strong> The package name of the UWP device app to be used for this printer's advanced settings.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 Job3DWSDAPackageFamilyName keyword usage
 
@@ -353,8 +335,7 @@ Job3DWSDAPackageFamilyName keyword usage
 
 ## 2.4. Job3D3MFVersion
 
-
-The device MUST identify the version of 3MF file that it expects to receive from the Windows print system. The version is specified by the URI namespace from the appropriate version of the core specification. For backwards compatibility, if this keyword is omitted, it will be assumed to take a default value of “<https://schemas.microsoft.com/3dmanufacturing/2013/01”>, indicating the legacy 0.93 version of 3MF, which is NOT RECOMMENDED.
+The device MUST identify the version of 3MF file that it expects to receive from the Windows print system. The version is specified by the URI namespace from the appropriate version of the core specification. For backwards compatibility, if this keyword is omitted, it will be assumed to take a default value of `<https://schemas.microsoft.com/3dmanufacturing/2013/01>`, indicating the legacy 0.93 version of 3MF, which is NOT RECOMMENDED.
 
 <table>
 <colgroup>
@@ -391,18 +372,15 @@ The device MUST identify the version of 3MF file that it expects to receive from
 </tbody>
 </table>
 
- 
-
 Job3D3MFVersion keyword usage
 
 ```xml
 <psf:Property name="psk3d:Job3D3MFVersion">
-    <psf:Value xsi:type="xsd:string"> https://schemas.microsoft.com/3dmanufacturing/core/2015/02</psf:Value>
+    <psf:Value xsi:type="xsd:string">https://schemas.microsoft.com/3dmanufacturing/core/2015/02</psf:Value>
 </psf:Property>
 ```
 
 ## 2.5. Job3D3MFExtensions
-
 
 The device MAY specify 3MF extensions (by namespace, forming a space-delimited list) that it understands, for instance allowing the print system to send slice data if available.
 
@@ -441,20 +419,10 @@ The device MAY specify 3MF extensions (by namespace, forming a space-delimited l
 </tbody>
 </table>
 
- 
-
 Job3D3MFExtensions keyword usage
 
 ```xml
 <psf:Property name="psk3d:Job3D3MFExtensions">
-    <psf:Value xsi:type="xsd:string"> https://schemas.microsoft.com/3dmanufacturing/material/2015/02</psf:Value>
+    <psf:Value xsi:type="xsd:string">https://schemas.microsoft.com/3dmanufacturing/material/2015/02</psf:Value>
 </psf:Property>
 ```
-
- 
-
- 
-
-
-
-

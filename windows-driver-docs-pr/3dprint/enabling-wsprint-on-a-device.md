@@ -1,7 +1,7 @@
 ---
 title: Enable WSPrint 2.0 on a device
 description: Use these settings to enable WSPrint 2.0 on a device
-ms.date: 05/18/2020
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +33,7 @@ WSDPRINT\MS3DCompatE2D2
 
 The following diagram shows WSPrint 2.0 interactions:
 
-![wsprint interactions](images/wsprint-interactions.png)
+![wsprint interactions.](images/wsprint-interactions.png)
 
 The following steps are a more detailed description of WSPrint 2.0 interactions:
 

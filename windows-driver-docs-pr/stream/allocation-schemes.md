@@ -15,13 +15,13 @@ ms.localizationpriority: medium
 
 The following diagram represents a single allocator that is assigned for use by three filters. No allocation is required in the transform or sink filters because the system has not assigned an allocator handle to these filters.
 
-![diagram illustrating a simple allocator configuration](images/ksart-10.png)
+![diagram illustrating a simple allocator configuration.](images/ksart-10.png)
 
 The source filter allocates a frame, fills it with data and submits it to the next filter. The transform filter performs an in-place data transformation and submits the frame to the next filter. When the sink filter completes the I/O operation, the source filter either frees or reuses the frame. Flow control is maintained in this filter graph by the number of total outstanding frames that can be allocated from the sink allocator and by the rate of completion of the I/O operation.
 
 The following diagram represents an allocator configuration in which a source frame is routed to multiple destination sinks.
 
-![diagram illustrating an allocator configuration with multiple sinks](images/ksart-11.png)
+![diagram illustrating an allocator configuration with multiple sinks.](images/ksart-11.png)
 
 In the diagram, the file writer could represent wave out to a file, and the device a sound card to which audio is being sent.
 

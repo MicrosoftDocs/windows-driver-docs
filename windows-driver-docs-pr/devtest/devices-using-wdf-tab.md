@@ -15,7 +15,7 @@ This topic discusses WDF Verifier's **Devices using WDF** page. This page lists 
 
 At the top of this page, you'll find a summary of installed runtimes and drivers. Below is a list of device instances that are associated with WDF drivers.
 
-![screen grab of devices using wdf tab](images/wdfverifier-tab2.png)
+![screen grab of devices using wdf tab.](images/wdfverifier-tab2.png)
 
 In the **Devices with WDF drivers** box, devices that have WDF-related settings are preceded by a +. To change settings, right-click the device ID or the individual settings within the node.
 

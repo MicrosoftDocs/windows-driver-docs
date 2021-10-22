@@ -64,7 +64,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
 -   Handle the I/O stack properly.
 
-    When [passing IRPs down the driver stack](passing-irps-down-the-driver-stack.md), it is important for drivers to call [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) to set up the next driver's I/O stack location. Do not write code that directly copies one I/O stack location to the next.
+    When [passing IRPs down the driver stack](passing-irps-down-the-driver-stack.md), it is important for drivers to call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) to set up the next driver's I/O stack location. Do not write code that directly copies one I/O stack location to the next.
 
 -   Handle IRP completion operations properly.
 

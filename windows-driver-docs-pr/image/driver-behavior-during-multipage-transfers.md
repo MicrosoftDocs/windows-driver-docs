@@ -16,7 +16,7 @@ One of the main reasons that a driver would support folder acquisition directly 
 
 A good example of this situation is during a multiregion scan. When multiple regions (such as separate pictures) are detected on the flatbed of a scanner, they could be represented as children off the "Flatbed" item. An example of this situation is represented in the following figure.
 
-![diagram illustrating an item tree for multiregion scanning](images/itemtree-multiregionscan.png)
+![diagram illustrating an item tree for multiregion scanning.](images/itemtree-multiregionscan.png)
 
 If a separate transfer was called on each of the child items of "Flatbed", the driver would perform three separate scans, which could be time consuming. However, if a folder acquisition was requested on "Flatbed", the driver would perform one scan, decompose it, and hand back three separate regions (which is often faster).
 

@@ -26,7 +26,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 3.  On the host computer, in Visual Studio, when you get to the Computer Configuration dialog, select **Provision computer and choose debugger settings**.
 4.  For **Connection Type**, choose **Firewire**.
 
-    ![screen shot showing an example of debugger settings with values for the following fields: connection type, port number, key, host ip, and bus parameters](images/setup1394vs.png)
+    ![screen shot showing an example of debugger settings with values for the following fields: connection type, port number, key, host ip, and bus parameters.](images/setup1394vs.png)
 
     For **Channel**, enter a decimal number of your choice from 1 through 62.
 

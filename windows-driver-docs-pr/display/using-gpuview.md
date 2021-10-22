@@ -1,7 +1,7 @@
 ---
 title: Using GPUView
 description: Using GPUView
-ms.date: 01/23/2019
+ms.date: 08/10/2021
 ms.localizationpriority: medium
 ---
 
@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 
 GPUView (*GPUView.exe*) is a development tool for determining the performance of the graphics processing unit (GPU) and CPU. It looks at performance with regard to direct memory access (DMA) buffer processing and all other video processing on the video hardware. GPUView is useful for developing display drivers that comply with the Windows Vista display driver model. GPUView is introduced with the release of the Windows 7 operating system.
 
-GPUView and other files that are associated with it are included with the Windows Performance Toolkit (WPT) as an installable option of the WPT MSI. GPUView binaries are available for x86-based, x64-based, and IA64-based architectures. For example, *Wpt\_x86.msi* is for an x86 platform. 
+GPUView and other files that are associated with it are included with the Windows Performance Toolkit (WPT) as an installable option of the WPT MSI. GPUView binaries are available for x86-based, x64-based, and IA64-based architectures. For example, *Wpt_x86.msi* is for an x86 platform.
 
-You can also download GPUView as part of the Windows 7 SDK. After installing the SDK you will need to go to C:\Program Files\Microsoft SDKs\Windows\v7.0\bin and run either wpt_x64.msi or wpt_x86.msi. This will install the Windows Performance Toolkit which contains GPUView. 
+You can also download GPUView as part of the Windows 7 SDK. After installing the SDK you will need to go to C:\Program Files\Microsoft SDKs\Windows\v7.0\bin and run either wpt_x64.msi or wpt_x86.msi. This will install the Windows Performance Toolkit which contains GPUView.
 
 The WPT MSI includes the files that are described in the following table.
 

@@ -15,7 +15,7 @@ Simple duplex scanning uses the same page settings for both front and back pages
 
 The following figure illustrates the WIA item tree of a flatbed scanner that supports simple duplex-capable document feeder scanning.
 
-![diagram illustrating the item tree of a flatbed scanner that supports simple duplex-capable document feeder scanning](images/wia-feeder-tree3.png)
+![diagram illustrating the item tree of a flatbed scanner that supports simple duplex-capable document feeder scanning.](images/wia-feeder-tree3.png)
 
 Note that the front and back of the page that is being scanned are represented by separate child items in the item tree. This differentiation includes separate categories in the [**WIA\_IPA\_ITEM\_CATEGORY**](./wia-ipa-item-category.md) property: WIA\_CATEGORY\_FRONT and WIA\_CATEGORY\_BACK. In a scanner that performs basic duplex scanning, the front and back items will not be set separately; they will be set to the exact same values.
 

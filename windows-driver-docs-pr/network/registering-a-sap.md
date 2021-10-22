@@ -19,11 +19,11 @@ If a client accepts incoming calls, its [**ProtocolClOpenAfCompleteEx**](/window
 
 The following figure shows a client of a call manager registering a SAP.
 
-![diagram illustrating a client of a call manager registering a sap](images/cm-02.png)
+![diagram illustrating a client of a call manager registering a sap.](images/cm-02.png)
 
 The following figure shows a client of an MCM driver registering a SAP.
 
-![registering a sap with an mcm driver](images/fig1-02.png)
+![registering a sap with an mcm driver.](images/fig1-02.png)
 
 With the call to **NdisClRegisterSap**, a client requests notifications of incoming calls on a particular SAP. NDIS forwards the SAP information supplied by the client to the call manager's or MCM driver's [**ProtocolCmRegisterSap**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_reg_sap) function for validation. If the given SAP is already in use or if the call manager or MCM driver does not recognize the client-supplied SAP specification, the call manager or MCM driver fails this request.
 

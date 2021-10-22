@@ -1,5 +1,5 @@
 ---
-title: drivers
+title: drivers (WinDbg)
 description: In Windows XP and later versions of Windows, the drivers extension is obsolete. Instead use the lm command.
 keywords: ["drivers Windows Debugging"]
 ms.date: 05/23/2017

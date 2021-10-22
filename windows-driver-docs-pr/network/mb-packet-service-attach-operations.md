@@ -13,7 +13,7 @@ This topic describes the operations for losing and regaining packet data service
 
 The following diagram shows the process that miniport drivers should follow when they lose signal strength and packet service for various intervals. The labels in bold are OID identifiers or transactional flow control.The labels in regular text are the important flags within the OID structure.
 
-![Diagram illustrating losing and regaining signals for packet data service](images/wwanregainingpacketdataservice.png)
+![Diagram illustrating losing and regaining signals for packet data service.](images/wwanregainingpacketdataservice.png)
 
 To regain packet data service after it has been lost, use the following procedure:
 
@@ -37,7 +37,7 @@ To regain packet data service after it has been lost, use the following procedur
 
 The following diagram shows the steps that miniport drivers should follow when packet service moves between different GSM-based technologies, such as GPRS, EDGE, UMTS, HSDPA, or TD-SCDMA, or moves between different CDMA-based technologies, such as 1xRTT, EV-DO, or EV-DO RevA. The labels in bold are OID identifiers or transactional flow control. The labels in regular text are the important flags within the OID structure.
 
-![diagram illustrating the steps that miniport drivers should follow when packet service moves between different gsm-based technologies](images/wwanpacketdataservicehandoff.png)
+![diagram illustrating the steps that miniport drivers should follow when packet service moves between different gsm-based technologies.](images/wwanpacketdataservicehandoff.png)
 
 Be aware that unless the IP address changes in the handoff process, the MB Service handles the handoff event transparently without disrupting the existing connection. However, miniport drivers must still notify the MB Service about media disconnect events if, and only if, the IP address changes.
 
@@ -65,7 +65,7 @@ To hand off packet data service, use the following procedure:
 
 The following diagram represents the process that miniport drivers should follow when a voice call is placed while packet data service is active. The diagram uses 1xRTT as an example, but the procedure applies to other air interfaces as well. The process outlined in the following graphic applies only to miniport drivers that return **WwanVoiceClassSeparateVoiceData** in the **WwanVoiceClass** member in response to an OID\_WWAN\_DEVICE\_CAPS *query* request. The labels in bold represent OID identifiers or transactional flow control. The labels in regular text represent the important flags within the OID structure.
 
-![diagram illustrating the process that miniport drivers should follow when a voice call is placed while packet data service is active](images/wwanvoicecalls.png)
+![diagram illustrating the process that miniport drivers should follow when a voice call is placed while packet data service is active.](images/wwanvoicecalls.png)
 
 The procedure assumes that accepting an incoming voice call will pre-empt any pre-existing packet connection. For miniport drivers that return **WwanVoiceClassSimultaneousVoiceData** in the **WwanVoiceClass** member in response to an OID\_WWAN\_DEVICE\_CAPS *query* request, the current packet connection should not be affected.
 

@@ -138,7 +138,7 @@ The list of modules that you enter in the **Module Ignore List** box is stored i
 
 When a monitored process exits silently, the monitor creates an entry in Event Viewer. To open Event Viewer, enter the command **eventvwr.msc**. Navigate to **Windows Logs &gt; Application**. Look for log entries that have a **Source** of Process Exit Monitor.
 
-![event properties dialog box showing general tab displaying the source as process exit monitor](images/gflagssilentprocessexit02.png)
+![event properties dialog box showing general tab displaying the source as process exit monitor.](images/gflagssilentprocessexit02.png)
 
  
 

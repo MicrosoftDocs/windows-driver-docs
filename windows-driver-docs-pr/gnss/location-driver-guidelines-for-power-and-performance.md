@@ -1,7 +1,7 @@
 ---
 title: Location driver guidelines for power and performance
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
-ms.date: 07/06/2020
+ms.date: 08/25/2021
 ms.localizationpriority: medium
 ---
 
@@ -11,7 +11,7 @@ The following sections describe guidelines to ensure that your location driver c
 
 ## Tracking the Number of Connected Clients and Radio State
 
-Location sensors must track the number of connected applications, and must track the value of both the SENSOR\_PROPERTY\_LOCATION\_DESIRED\_ACCURACY and SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL properties for each subscribed application.
+Location sensors must track the number of connected applications, and must track the value of both the SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY and SENSOR_PROPERTY_CURRENT_REPORT_INTERVAL properties for each subscribed application.
 
 When the number of connected clients is zero, the location sensor should enter the lowest possible power state, preferably D3. When an event indicates that a client is connected, the sensor should exit the low-power state and acquire data.
 
@@ -19,7 +19,7 @@ Also, if the location device contains a radio, like a GPS location sensor, then 
 
 When tracking connected clients and radio state, the location sensor should enter the lowest possible power state, preferably D3, at any time there is not a connected client while the radio is on. The diagram below illustrates a state machine for connected clients, radio state, and the suggested corresponding device state.
 
-![state machine](images/state-diagram-with-radio.png)
+![state machine.](images/state-diagram-with-radio.png)
 
 The following table provides another view of the various input combinations and the resulting outputs (including power state).
 
@@ -36,7 +36,7 @@ The [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in
 
 ## Tracking Report Intervals
 
-Applications that consume location data by subscribing to events request the maximum frequency for data-updated events by setting the SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL property. To conserve power, your driver should send data reports no more frequently than the lowest requested report interval.
+Applications that consume location data by subscribing to events request the maximum frequency for data-updated events by setting the SENSOR_PROPERTY_CURRENT_REPORT_INTERVAL property. To conserve power, your driver should send data reports no more frequently than the lowest requested report interval.
 
 For more information on how to track values for each application, see [Filtering data](../sensors/filtering-data.md). You can also find example of tracking report intervals in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK.
 
@@ -46,11 +46,11 @@ Just as report intervals are tracked per client, the accuracy level requested by
 
 The [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK provides an example of a driver that tracks the desired accuracy requested by clients.
 
-Location sensor drivers must support the SENSOR\_PROPERTY\_LOCATION\_DESIRED\_ACCURACY as a settable property. The driver should monitor the desired accuracy property of the connected clients and set SENSOR\_PROPERTY\_LOCATION\_DESIRED\_ACCURACY based on the highest requested desired accuracy.
+Location sensor drivers must support the SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY as a settable property. The driver should monitor the desired accuracy property of the connected clients and set SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY based on the highest requested desired accuracy.
 
-If the highest accuracy requested by an app is DESIRED\_ACCURACY\_DEFAULT, the location sensor should optimize power and other cost considerations. The Location API will not use GPS sensors if location data is available from other providers on the system and data accuracy is 500m or better.
+If the highest accuracy requested by an app is DESIRED_ACCURACY_DEFAULT, the location sensor should optimize power and other cost considerations. The Location API will not use GPS sensors if location data is available from other providers on the system and data accuracy is 500m or better.
 
-If any app requests DESIRED\_ACCURACY\_HIGH, the sensor should deliver the highest accuracy report possible. The Location API will always connect to all location sensors (including GPS) in order to acquire the most accurate position possible.
+If any app requests DESIRED_ACCURACY_HIGH, the sensor should deliver the highest accuracy report possible. The Location API will always connect to all location sensors (including GPS) in order to acquire the most accurate position possible.
 
 ## Detecting Idle States
 
@@ -73,7 +73,7 @@ If the Global Navigation Satellite System (GNSS) driver does not get a position 
 > [!NOTE]
 > Sensors should not get data from location sensors of the same type. For instance, a triangulation sensor should not use data from other triangulation sensors.
 
-To access triangulation sensors, call [**ISensorManager::GetSensorByType**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbytype) with type SENSOR\_TYPE\_LOCATION\_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](/windows/desktop/SensorsAPI/retrieving-a-sensor) for more information on the use of **GetSensorsByType**.
+To access triangulation sensors, call [**ISensorManager::GetSensorByType**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbytype) with type SENSOR_TYPE_LOCATION_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](/windows/desktop/SensorsAPI/retrieving-a-sensor) for more information on the use of **GetSensorsByType**.
 
 > [!NOTE]
 > The Windows Location Provider does not provide any guarantee of accuracy or availability.

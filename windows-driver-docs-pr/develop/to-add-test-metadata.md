@@ -18,7 +18,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
 1.  Add the required test property metadata to the source files for your test.
 2.  For example, if you use the Driver Test template to create your version of the SurpriseRemove test, the following metadata is added. Edit the test description, display name, category, and results file attributes.
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -50,7 +50,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="CSharp"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -86,7 +86,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
 
     Windows Script Component (.wsc)
 
-    <span codelanguage=""></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -118,7 +118,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**  
     A short description of what the test does.
 
-    <span codelanguage=""></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -132,7 +132,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -154,7 +154,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     <span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**DisplayName**  
     The name of the test as it shown in Driver Test.
 
-    <span codelanguage=""></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -168,7 +168,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -190,7 +190,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     <span id="Kits.Parameter"></span><span id="kits.parameter"></span><span id="KITS.PARAMETER"></span>**Kits.Parameter**  
     A standard parameter for a method call. A test can have multiple parameters.
 
-    <span codelanguage=""></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -204,7 +204,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -226,7 +226,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     <span id="Kits.Parameter._ParameterName_.Description"></span><span id="kits.parameter._parametername_.description"></span><span id="KITS.PARAMETER._PARAMETERNAME_.DESCRIPTION"></span>**Kits.Parameter.***&lt;ParameterName&gt;***.Description**  
     The description for the parameter.
 
-    <span codelanguage=""></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -240,7 +240,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -263,7 +263,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     <span id="Kits.Parameter._ParameterName_.Default"></span><span id="kits.parameter._parametername_.default"></span><span id="KITS.PARAMETER._PARAMETERNAME_.DEFAULT"></span>**Kits.Parameter.***&lt;ParameterName&gt;***.Default**  
     The default value for the parameter.
 
-    <span codelanguage=""></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -277,7 +277,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -299,7 +299,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     <span id="Kits.Drivers"></span><span id="kits.drivers"></span><span id="KITS.DRIVERS"></span>**Kits.Drivers**  
     This attribute marks the test for inclusion in the WDK.
 
-    <span codelanguage=""></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -313,7 +313,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />
@@ -335,7 +335,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     <span id="Kits.Category"></span><span id="kits.category"></span><span id="KITS.CATEGORY"></span>**Kits.Category**  
     Describes the category of a test.
 
-    <span codelanguage=""></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -349,7 +349,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col width="100%" />

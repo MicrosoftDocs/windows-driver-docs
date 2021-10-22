@@ -78,7 +78,7 @@ The **Mode** member of the KSPROPERTY\_TVAUDIO\_S structure specifies the audio 
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_TVAUDIO\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tvaudio_s)
 

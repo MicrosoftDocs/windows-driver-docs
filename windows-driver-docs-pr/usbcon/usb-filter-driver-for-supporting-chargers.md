@@ -30,7 +30,7 @@ Those operations are handled by [USB function class extension (UFX)/client drive
 
 Here is an architectural representation of the device stacks.
 
-![USB Charging](images/charger.png)
+![USB Charging.](images/charger.png)
 
 When a USB port is attached to the device, the client driver gets a notified either by the lower filter driver or an interrupt. At this time, the client driver performs port detection by communicating with the USB hardware and reports the port type to UFX. Alternately, it can request the filter driver. In that case, the filter driver coordinates with the USB hardware to perform USB port detection and returns the detected port type to the client driver and the client driver passes it to UFX.
 

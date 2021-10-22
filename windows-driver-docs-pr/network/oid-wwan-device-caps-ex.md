@@ -17,7 +17,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 The following diagram illustrates a query request.
 
-![executor capability query](images/multi-SIM_6_executorCapabilityQuery.png)
+![executor capability query.](images/multi-SIM_6_executorCapabilityQuery.png)
 
 Set requests are not applicable.
 

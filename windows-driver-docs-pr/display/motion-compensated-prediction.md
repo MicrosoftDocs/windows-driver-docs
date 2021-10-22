@@ -27,7 +27,7 @@ This recursive loop occasionally is broken by various types of resets that are s
 
 The following figure shows the signal flow for motion-compensated prediction.
 
-![diagram illustrating motion-compensated prediction signal flow](images/sigflow.png)
+![diagram illustrating motion-compensated prediction signal flow.](images/sigflow.png)
 
 The steps required for motion-compensated prediction coding of pictures are as follows:
 

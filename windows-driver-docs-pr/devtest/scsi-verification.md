@@ -120,7 +120,7 @@ This command allows you to set a new value for *Level*. Using this method, you c
 
 Similarly, if you want to completely deactivate SCSI Verification, you need to set *Level* to 0xFFFFFFFF at the initial breakpoint.
 
-**Note**   The value 0xF0000000 will disable all tests, but the SCSI Verification modules will still be loaded. Use this value if you wish to disable verification but intend to enable the high-bit tests at a later time. On the other hand, the value 0xFFFFFFFF prevents the modules from being loaded entirely; if this value is used during boot it will not be possible to enable SCSI Verification without rebooting.
+**Note**   The value 0xF0000000 will disable all tests, but the SCSI Verification modules will still be loaded. Use this value if you wish to disable verification but intend to enable the high-bit tests at a later time. On the other hand, the value 0xFFFFFFFF prevents the modules from being loaded entirely; if this value is used during boot it will not be possible to enable SCSI Verification without rebooting.
 
  
 
@@ -129,4 +129,3 @@ Similarly, if you want to completely deactivate SCSI Verification, you need to s
 In general, you cannot activate or deactivate SCSI Verification without restarting ("rebooting") the computer on any Windows operating system. The ScsiPort.sys driver reads the **VerifyLevel** registry entry only when it loads, which is typically at boot time. However, if the ScsiPort.sys driver is not loaded when you add the registry entry, or if it is unloaded and reloaded, you can enable SCSI Verification on Windows XP and later versions of Windows without restarting the computer.
 
  
-

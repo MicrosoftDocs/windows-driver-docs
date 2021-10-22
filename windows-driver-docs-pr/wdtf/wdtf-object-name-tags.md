@@ -33,7 +33,7 @@ The WDTF OBJECT\_NAME tags are used in WDTF object logging.
 <tr class="even">
 <td><p>WDTF_TARGETS</p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2" data-raw-source="[&lt;strong&gt;IWDTFTargets2&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2)"><strong>IWDTFTargets2</strong></a></p></td>
-<td><pre class="syntax" space="preserve"><code>Device query
+<td><pre class="syntax"><code>Device query
 WDTF_TARGETS              : INFO  :  - Query("IsDevice AND Volume::BOOT")
 WDTF_TARGETS              : INFO  :          Target: Generic volume (C:) STORAGE\VOLUME{F1309F19-F052-11DF-BC7C-B1A2109AB6D2}
 Get interface
@@ -48,7 +48,7 @@ WDTF_TARGETS              : INFO  :          Target: Generic volume (C:) STORAGE
 <tr class="even">
 <td><p>WDTF_SIMPLEIO_STRESS</p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2" data-raw-source="[&lt;strong&gt;IWDTFSimpleIOStressAction2&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2)"><strong>IWDTFSimpleIOStressAction2</strong></a></p></td>
-<td><pre class="syntax" space="preserve"><code>WDTF_SIMPLEIO_STRESS      : INFO  :  - Start(Generic volume (C:) STORAGE\VOLUME{2550460D-F167-11E0-B20B-806E6F6E6963}#0000000018100000)
+<td><pre class="syntax"><code>WDTF_SIMPLEIO_STRESS      : INFO  :  - Start(Generic volume (C:) STORAGE\VOLUME{2550460D-F167-11E0-B20B-806E6F6E6963}#0000000018100000)
 WDTF_SIMPLE_IO            : INFO  :  - Open(Generic volume (C:) STORAGE\VOLUME{2550460D-F167-11E0-B20B-806E6F6E6963}#0000000018100000) Try count 1
 WDTF_SIMPLE_IO            : INFO  :  - PerformIO(Generic volume (C:) STORAGE\VOLUME{2550460D-F167-11E0-B20B-806E6F6E6963}#0000000018100000) Count 1
 WDTF_SIMPLEIO_STRESS      : INFO  :  - Stop(Generic volume (C:) STORAGE\VOLUME{2550460D-F167-11E0-B20B-806E6F6E6963}#0000000018100000)
@@ -91,7 +91,7 @@ WDTF_SIMPLE_IO            : INFO  :  - Close(Generic volume (C:) STORAGE\VOLUME{
 <tr class="even">
 <td><p>WDTF_TARGETS</p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2" data-raw-source="[&lt;strong&gt;IWDTFTargets2&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2)"><strong>IWDTFTargets2</strong></a></p></td>
-<td><pre class="syntax" space="preserve"><code>// When reboot and restart is initiated<br/>WDTF_SYSTEM               : INFO  :  - Reboot and Restart
+<td><pre class="syntax"><code>// When reboot and restart is initiated<br/>WDTF_SYSTEM               : INFO  :  - Reboot and Restart
 // When we come back
 WDTF_SYSTEM               : INFO  :  - Have restarted. Context = WDTF_RebootRestart
 // Sleep cycle
@@ -110,7 +110,7 @@ WDTF_SYSTEM               : INFO  : Returning from Hibernate. Elapsed time (hh:m
 <tr class="odd">
 <td><p>WDTF_WDTFSUPPORT</p></td>
 <td><p>None</p></td>
-<td><pre class="syntax" space="preserve"><code>WDTF_WDTFSUPPORT             : INFO  :  - WaitForSeconds : 3
+<td><pre class="syntax"><code>WDTF_WDTFSUPPORT             : INFO  :  - WaitForSeconds : 3
 
 // Indicates that we waited 3 seconds. </code></pre></td>
 </tr>
@@ -141,7 +141,7 @@ WDTF_SYSTEM               : INFO  : Returning from Hibernate. Elapsed time (hh:m
 <tr class="even">
 <td><p>WDTF_DRIVER_SETUP_DEVICE</p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nn-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2" data-raw-source="[IWDTFDriverSetupAction2](/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nn-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2)"><strong>IWDTFDriverSetupAction2</strong></a></p></td>
-<td><pre class="syntax" space="preserve"><code>WDTF_DRIVER_SETUP_DEVICE  : INFO  :  - UpdateDriver()
+<td><pre class="syntax"><code>WDTF_DRIVER_SETUP_DEVICE  : INFO  :  - UpdateDriver()
 WDTF_DRIVER_SETUP_DEVICE  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&DABA3FF&2
 </code></pre></td>
 </tr>
@@ -158,7 +158,7 @@ WDTF_DRIVER_SETUP_DEVICE  : INFO  :          Target: TI EHCI controller ACPI\TXI
 <tr class="odd">
 <td><p>WDTF_EDT</p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/wdtfedtaction/nn-wdtfedtaction-iwdtfenhanceddevicetestsupportaction2" data-raw-source="[&lt;strong&gt;IWDTFEnhancedDeviceTestSupportAction2&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdtfedtaction/nn-wdtfedtaction-iwdtfenhanceddevicetestsupportaction2)"><strong>IWDTFEnhancedDeviceTestSupportAction2</strong></a></p></td>
-<td><pre class="syntax" space="preserve"><code>WDTF_EDT                  : INFO  :  - Enable()<br/>WDTF_EDT                  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&DABA3FF&2
+<td><pre class="syntax"><code>WDTF_EDT                  : INFO  :  - Enable()<br/>WDTF_EDT                  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&DABA3FF&2
 WDTF_EDT                  : INFO  :          Result: System reboot required as device is not disableable  ( 80004005 ).
 
 WDTF_EDT                  : INFO  :  - Disable()<br/>WDTF_EDT                  : INFO  :          Target: OMAP4 Dual-Core ARM Cortex A9 ACPI\TEXAS_INSTRUMENTS_INC._-_ARM_FAMILY_7_MODEL_C09_REVISION_102\0</code></pre></td>
@@ -191,7 +191,7 @@ WDTF_EDT                  : INFO  :  - Disable()<br/>WDTF_EDT                  :
 <tr class="odd">
 <td><p>WDTF_CPUUTIL</p></td>
 <td><p>None</p></td>
-<td><pre class="syntax" space="preserve"><code>WDTF_CPUUTIL              : INFO  :  - SetCpuUtilization : 44% : 0.
+<td><pre class="syntax"><code>WDTF_CPUUTIL              : INFO  :  - SetCpuUtilization : 44% : 0.
 
 // Where the 44% indicates the percent of CPU utilization generated. </code></pre></td>
 </tr>

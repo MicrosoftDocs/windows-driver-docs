@@ -1,11 +1,11 @@
 ---
 title: Bluetooth Printing
-description: Bluetooth Printing
+description: Describes device requirements for Bluetooth printing
 keywords:
 - printer drivers WDK , Bluetooth
 - Bluetooth WDK , printing
 - wireless connectivity WDK printer
-ms.date: 06/02/2020
+ms.date: 08/11/2021
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +16,7 @@ If a printing device supports Bluetooth, it should meet the following requiremen
 - If the printing device returns a 1284 ID on its USB or parallel buses, the Bluetooth bus must return a 1284 ID. If, for the purposes of [Plug and Play](../kernel/introduction-to-plug-and-play.md) (PnP) and identification, a device returns a 1284 ID on either the parallel or USB buses, the Bluetooth bus must also employ a 1284 ID for PnP identification.
 
   > [!NOTE]
-  > Information the user should notice even if skimmingDevices that have never had parallel or USB ports should still contain a 1284 ID. Without a 1284 ID, PnP will not create a print queue.
+  > Devices that have never had parallel or USB ports should still contain a 1284 ID. Without a 1284 ID, PnP will not create a print queue.
 
 - The device should return the same 1284 ID that its USB or parallel buses return, so that the Microsoft Windows operating system can properly identify the device and does not confuse it with the same device that is connected through a different bus. If a device on any bus uses a 1284 ID, that same ID should be returned over Bluetooth.
 

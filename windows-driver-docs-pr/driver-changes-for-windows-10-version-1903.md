@@ -88,8 +88,6 @@ The following is a list of NetAdapterCx content updates:
   * [Checksum.h](/windows-hardware/drivers/ddi/checksum/index)
   * [Checksumtypes.h](/windows-hardware/drivers/ddi/checksumtypes/index)
   * [Extension.h](/windows-hardware/drivers/ddi/extension/index)
-  * [Lso.h](/windows-hardware/drivers/ddi/lso/index)
-  * [Lsotypes.h](/windows-hardware/drivers/ddi/lsotypes/index)
   * [Rsc.h](/windows-hardware/drivers/ddi/rsc/index)
   * [Rsctypes.h](/windows-hardware/drivers/ddi/rsctypes/index)
 

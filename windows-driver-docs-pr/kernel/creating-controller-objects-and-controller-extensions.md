@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 If a driver uses a controller object, it must call [**IoCreateController**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatecontroller) after it has created device objects and its device is ready for I/O, typically after receiving a PnP [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) request. The following figure illustrates the call.
 
-![diagram illustrating a controller object](images/3ctlrobj.png)
+![diagram illustrating a controller object.](images/3ctlrobj.png)
 
 Every controller object has an associated controller extension. As the previous figure shows, the caller of **IoCreateController** determines the *Size* of the controller extension. Its structure and contents are driver-defined.
 

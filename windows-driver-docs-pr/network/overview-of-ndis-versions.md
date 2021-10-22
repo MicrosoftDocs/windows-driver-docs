@@ -1,12 +1,12 @@
 ---
 title: Overview of NDIS versions
-description: Overview of NDIS versions
+description: This NDIS versions overview is targeted at Windows Vista and later operating systems and NDIS 6.0 and later drivers. 
 keywords:
 - network drivers WDK , NDIS versions
 - NDIS WDK , versions in network drivers
 - backward compatibility WDK networking
 - compatibility WDK networking
-ms.date: 05/03/2019
+ms.date: 08/06/2021
 ms.localizationpriority: medium
 ms.custom: contperf-fy21q4
 ---

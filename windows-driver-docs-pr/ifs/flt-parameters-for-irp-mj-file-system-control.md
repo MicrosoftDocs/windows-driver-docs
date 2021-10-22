@@ -115,7 +115,7 @@ Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operation
 Address of the input buffer for the operation. This buffer is locked down by the operating system so that it is safe to access from kernel mode. For more information, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **OutputBuffer**  
-User-mode virtual address of the output buffer that the original requester of the operation supplied. In direct I/O, unlike METHOD_NEITHER I/O, the operating system locks down this buffer so that it is safe to access from kernel mode, as long as the minifilter is in the same process context as the original requester of the I/O operation. (Otherwise it must call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to get the system address from the MDL that the **OutputMdlAddress** member points to.) For more information, see [Using Direct I/O](../kernel/using-direct-i-o.md) and [Errors in Direct I/O](../kernel/errors-in-direct-i-o.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
+User-mode virtual address of the output buffer that the original requester of the operation supplied. In direct I/O, unlike METHOD_NEITHER I/O, the operating system locks down this buffer so that it is safe to access from kernel mode, as long as the minifilter is in the same process context as the original requester of the I/O operation. (Otherwise it must call [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) to get the system address from the MDL that the **OutputMdlAddress** member points to.) For more information, see [Using Direct I/O](../kernel/using-direct-i-o.md) and [Errors in Direct I/O](../kernel/errors-in-direct-i-o.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **OutputMdlAddress**  
 Address of a memory descriptor list (MDL) that describes the buffer that the **Direct.OutputBuffer** member points to. This member is required and cannot be **NULL**.
@@ -159,7 +159,7 @@ IRP_MJ_FILE_SYSTEM_CONTROL is an IRP-based operation.
 
 [**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md)
 
-[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
+[**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe)
 
 [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages)
 

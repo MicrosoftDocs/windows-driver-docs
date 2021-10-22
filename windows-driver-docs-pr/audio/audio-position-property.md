@@ -32,7 +32,7 @@ If the client buffer is nonlooped (that is, the stream type is [**KSINTERFACE\_S
 
 In the case of a render stream, the **PlayOffset** member specifies the play position of the stream, and the **WriteOffset** member specifies the write position of the stream. The following figure shows the play and write positions in a client buffer.
 
-![diagram illustrating the play position and write position in a render stream](images/playoffset.png)
+![diagram illustrating the play position and write position in a render stream.](images/playoffset.png)
 
 The play position is the byte offset of the sample that is currently being played (that is, the sample that is latched at the input of the digital-to-analog converter, or DAC). The write position is the position beyond which the client can safely write to the buffer. As the stream plays, the play and write positions move from left to right in the preceding figure. The client's writes must stay ahead of the write position. In addition, if the buffer is looped, the client's writes must never overtake the play position.
 
@@ -50,7 +50,7 @@ Although the WaveCyclic or WavePci port driver relies on the miniport driver to 
 
 In the case of a capture stream, the **PlayOffset** member specifies the record position of the stream, and the **WriteOffset** member specifies the read position of the stream. The following figure shows the record and read positions in a client buffer.
 
-![diagram illustrating the record position and read position in a capture stream](images/recordoffset.png)
+![diagram illustrating the record position and read position in a capture stream.](images/recordoffset.png)
 
 The record position is the byte offset of the latest sample to be latched at the output of the analog-to-digital converter, or ADC. (This position specifies the buffer location into which the audio device's DMA engine will eventually write the sample.) The read position is the position beyond which the client cannot safely read from the buffer. As the recording of the stream progresses, the read and record positions advance from left to right in the preceding figure. The client's reads must trail the read position. In addition, if the buffer is looped, the client's reads must stay ahead of the record position.
 

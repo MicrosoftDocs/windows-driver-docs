@@ -1,5 +1,5 @@
 ---
-title: cpuid
+title: cpuid (WinDbg)
 description: The cpuid extension displays information about the processors on the system.
 keywords: ["cpuid Windows Debugging"]
 ms.date: 05/23/2017

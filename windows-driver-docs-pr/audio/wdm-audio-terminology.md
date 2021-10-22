@@ -39,7 +39,7 @@ The miniport driver sits below the port driver in the driver stack. That is, all
 
 The following figure illustrates the meaning of the terms *stack*, *upper-edge interface*, and *lower-edge interface* as they are used in this context. The block representing the port driver is stacked on top of the block representing the miniport driver. Hence, the miniport driver sits below the port driver in the "stack".
 
-![diagram illustrating driver stack terminology](images/drvstack.png)
+![diagram illustrating driver stack terminology.](images/drvstack.png)
 
 The port and miniport drivers communicate through the software interfaces that they expose to each other. In the preceding figure, these interfaces are associated with the lower-edge of the block representing the port driver and the upper-edge of the block representing the miniport driver. This representation is the source of the terms "lower-edge interface" and "upper-edge interface".
 
@@ -105,7 +105,7 @@ Unlike the generic port driver, the audio port driver shares the device object a
 
 The port class driver (WDM audio) serves as a container for a collection of port drivers, each of which provides support for a different type of audio hardware function. The following figure shows the relationships between the audio port class and adapter drivers.
 
-![diagram illustrating the relationship between the audio port class and adapter drivers](images/wdmaumi.png)
+![diagram illustrating the relationship between the audio port class and adapter drivers.](images/wdmaumi.png)
 
 An adapter driver manages an adapter card that might contain several different hardware functions. As shown in the preceding figure, the adapter driver contains a miniport driver to manage each type of hardware function. Similarly, the port class driver is designed to provide support to adapter cards with multiple hardware functions. The port class driver provides a port driver for each of the well defined function types that it supports. The adapter driver binds its miniport driver for a particular function to the corresponding port driver for that function type. The port driver for each function handles communication with the WDM audio clients that use the function. The miniport driver contains all of the hardware-specific code for managing that function.
 

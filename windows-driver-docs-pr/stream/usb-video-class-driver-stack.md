@@ -18,7 +18,7 @@ Optionally, vendors can extend the USB Video Class driver to add device-specific
 
 The USB Video Class driver stack is shown in the following diagram:
 
-![diagram illustrating the usb video class driver stack ](images/uvc2.png)
+![diagram illustrating the usb video class driver stack .](images/uvc2.png)
 
  
 

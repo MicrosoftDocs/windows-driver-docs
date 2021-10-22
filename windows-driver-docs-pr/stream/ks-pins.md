@@ -27,7 +27,7 @@ A minidriver provides an INF file that registers one or more pin device names. A
 
 User-mode clients call the Win32 function [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) with the name of the device. For example, "*\\\\.\\filters\\audio\\default renderer*" could be a link to the audio device that has been configured for default output. Kernel-mode clients call [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile) from kernel mode. After the create-file routine returns a file handle, KS clients communicate with pin instances through [KS Properties](ks-properties.md).
 
-In the pin descriptor structures, the minidriver lays out arrays of [**KSPIN\_INTERFACE**](/previous-versions/ff563537(v=vs.85)) structures and [**KSPIN\_MEDIUM**](/previous-versions/ff563538(v=vs.85)) structures that specify the [interfaces](ks-interfaces.md) and [mediums](ks-mediums.md) supported by that pin factory. [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) is also where the minidriver specifies the valid data ranges for pins created by that factory. It does this by providing a pointer to an array of [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structures. The minidriver also specifies the directions of data and communication flow for new pins created by this pin factory.
+In the pin descriptor structures, the minidriver lays out arrays of [**KSPIN\_INTERFACE**](./kspin-interface-structure.md) structures and [**KSPIN\_MEDIUM**](./kspin-medium-structure.md) structures that specify the [interfaces](ks-interfaces.md) and [mediums](ks-mediums.md) supported by that pin factory. [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) is also where the minidriver specifies the valid data ranges for pins created by that factory. It does this by providing a pointer to an array of [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structures. The minidriver also specifies the directions of data and communication flow for new pins created by this pin factory.
 
 A minidriver enables run-time discovery of pin factories by supporting the [KSPROPSETID\_Pin](./kspropsetid-pin.md) property set.
 
@@ -52,6 +52,4 @@ A client interacts with a kernel streaming pin by calling the **DeviceIoControl*
 To support requests, the minidriver supplies a pointer to a [**KSDISPATCH\_TABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdispatch_table) structure in a call to [**KsAllocateObjectHeader**](/windows-hardware/drivers/ddi/ks/nf-ks-ksallocateobjectheader).
 
 Write requests contain a pointer to an array of [**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structures that in turn contain pointers to stream data. Read requests contain a pointer to an array of empty header structures where the read data should be returned.
-
- 
 

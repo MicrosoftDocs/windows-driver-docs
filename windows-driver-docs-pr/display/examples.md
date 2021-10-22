@@ -31,7 +31,7 @@ Here is the sequence of operations to update page table entries to map an alloca
 6.  The video memory manager calls [*DxgkDdiBuildPagingBuffer*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) with the *FlushTLB(process P root page table)* command.
 7.  The paging buffer is submitted for execution in the paging process context.
 
-![updating page table entries of a process](images/examples.1.png)
+![updating page table entries of a process.](images/examples.1.png)
 
 ## Transferring allocation content from one location to another<a name="transferring-allocation-content-from-one-location-to-another"></a>
 
@@ -45,7 +45,7 @@ Here is the sequence of operations when transferring an allocation content from 
 5.  The video memory manager calls [*DxgkDdiBuildPagingBuffer*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) with the *TransferVirtual* command to perform a transfer operation.
 6.  The paging buffer is submitted to the GPU for execution in the paging process context.
 
-![transferring allocation content from one location to another](images/examples.2.png)
+![transferring allocation content from one location to another.](images/examples.2.png)
 
 ## Filling an allocation with a pattern <a name="filling-an-allocation-with-a-pattern"></a>
 
@@ -58,7 +58,7 @@ Here is the sequence of operations when an allocation needs to be filled with a 
 4.  The video memory manager calls [*DxgkDdiBuildPagingBuffer*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) with the *FillVirtual* command to perform the operation.
 5.  The paging buffer is submitted to the GPU for execution in the paging process context.
 
-![filling an allocation with a pattern](images/examples.3.png)
+![filling an allocation with a pattern.](images/examples.3.png)
 
 ## Making an allocation resident in system memory
 

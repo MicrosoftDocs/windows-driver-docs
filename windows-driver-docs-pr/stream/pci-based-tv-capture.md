@@ -17,7 +17,7 @@ PCI-based capture devices with TV/radio tuners, TV audio, and crossbars require 
 
 The following diagram shows separate renderers connected to the preview and capture streams.
 
-![diagram illustrating separate renderers connected to the preview and capture streams](images/pci-tvtuner.gif)
+![diagram illustrating separate renderers connected to the preview and capture streams.](images/pci-tvtuner.gif)
 
 The [PROPSETID\_ALLOCATOR\_CONTROL](./propsetid-allocator-control.md) property set is specific to this type of filter graph.
 

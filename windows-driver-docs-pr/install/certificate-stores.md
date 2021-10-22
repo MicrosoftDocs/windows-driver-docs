@@ -3,7 +3,7 @@ title: Certificate Stores
 description: Certificate Stores
 keywords:
 - certificate stores WDK
-ms.date: 04/20/2017
+ms.date: 08/05/2021
 ms.localizationpriority: medium
 ---
 

@@ -26,11 +26,11 @@ To map a CPU virtual address to a segment, the segment should have linear access
 
 The following diagram illustrates how virtual addresses are mapped to a linear memory-space segment.
 
-![diagram illustrating a virtual address mapped to a linear memory-space segment](images/vrtlmap.png)
+![diagram illustrating a virtual address mapped to a linear memory-space segment.](images/vrtlmap.png)
 
 The following diagram illustrates how virtual addresses are mapped to the underlying pages of a linear aperture-space segment.
 
-![diagram illustrating a virtual address mapped to the underlying pages of a linear aperture-space segment](images/vrtlmap2.png)
+![diagram illustrating a virtual address mapped to the underlying pages of a linear aperture-space segment.](images/vrtlmap2.png)
 
 Before mapping a virtual address to a portion of the segment, the video memory manager calls the display miniport driver's [**DxgkDdiAcquireSwizzlingRange**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_acquireswizzlingrange) function so that the driver can set up the aperture that is used for accessing bits of the allocation that might be swizzled. The driver can change neither the offset into the PCI aperture where the allocation is accessed nor the amount of space that the allocation takes up in the aperture. If the driver cannot make the allocation CPU-accessible given these constraints (for example, the hardware possibly ran out of unswizzling aperture), the video memory manager evicts the allocation to system memory and lets the application access the bits there.
 

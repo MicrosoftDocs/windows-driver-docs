@@ -1,5 +1,5 @@
 ---
-title: vadump
+title: vadump (WinDbg)
 description: The vadump extension displays all virtual memory ranges and their corresponding protection information.
 keywords: ["vadump Windows Debugging"]
 ms.date: 05/23/2017

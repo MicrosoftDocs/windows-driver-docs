@@ -2,11 +2,10 @@
 title: Windows kernel opaque structures
 description: Windows kernel opaque structures
 ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.date: 07/21/2021
 ---
 
 # Windows kernel opaque structures
-
 
 The following table contains Windows kernel opaque structures:
 
@@ -25,7 +24,9 @@ The following table contains Windows kernel opaque structures:
 <tr class="odd">
 <td><strong>EPROCESS</strong></td>
 <td><p>The <strong>EPROCESS</strong> structure is an opaque structure that serves as the process object for a process.</p>
-<p>Some routines, such as <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetprocesscreatetimequadpart" data-raw-source="[&lt;strong&gt;PsGetProcessCreateTimeQuadPart&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetprocesscreatetimequadpart)"><strong>PsGetProcessCreateTimeQuadPart</strong></a>, use <strong>EPROCESS</strong> to identify the process to operate on. Drivers can use the <a href="/windows-hardware/drivers/kernel/mm-bad-pointer#psgetcurrentprocess" data-raw-source="[&lt;strong&gt;PsGetCurrentProcess&lt;/strong&gt;](./mm-bad-pointer.md#psgetcurrentprocess)"><strong>PsGetCurrentProcess</strong></a> routine to obtain a pointer to the process object for the current process and can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle" data-raw-source="[&lt;strong&gt;ObReferenceObjectByHandle&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)"><strong>ObReferenceObjectByHandle</strong></a> routine to obtain a pointer to the process object that is associated with the specified handle. The <a href="/windows-hardware/drivers/kernel/mm64bitphysicaladdress" data-raw-source="[&lt;strong&gt;PsInitialSystemProcess&lt;/strong&gt;](./mm64bitphysicaladdress.md)"><strong>PsInitialSystemProcess</strong></a> global variable points to the process object for the system process.</p>
+<p>Some routines, such as <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetprocesscreatetimequadpart"><strong>PsGetProcessCreateTimeQuadPart</strong></a>, use <strong>EPROCESS</strong> to identify the process to operate on.
+Drivers can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentprocess">
+<strong>PsGetCurrentProcess</strong></a> routine to obtain a pointer to the process object for the current process and can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle" data-raw-source="[&lt;strong&gt;ObReferenceObjectByHandle&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)"><strong>ObReferenceObjectByHandle</strong></a> routine to obtain a pointer to the process object that is associated with the specified handle. The <a href="/windows-hardware/drivers/kernel/mm64bitphysicaladdress" data-raw-source="[&lt;strong&gt;PsInitialSystemProcess&lt;/strong&gt;](./mm64bitphysicaladdress.md)"><strong>PsInitialSystemProcess</strong></a> global variable points to the process object for the system process.</p>
 <p>Note that a process object is an Object Manager object. Drivers should use Object Manager routines such as <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject" data-raw-source="[&lt;strong&gt;ObReferenceObject&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)"><strong>ObReferenceObject</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject" data-raw-source="[&lt;strong&gt;ObDereferenceObject&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject)"><strong>ObDereferenceObject</strong></a> to maintain the object's reference count.</p>
 <p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
 </tr>
@@ -96,14 +97,14 @@ The following table contains Windows kernel opaque structures:
 <td><strong>KBUGCHECK_CALLBACK_RECORD</strong></td>
 <td><p>The <strong>KBUGCHECK_CALLBACK_RECORD</strong> structure is an opaque structure that is used by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckcallback" data-raw-source="[&lt;strong&gt;KeRegisterBugCheckCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckcallback)"><strong>KeRegisterBugCheckCallback</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckcallback" data-raw-source="[&lt;strong&gt;KeDeregisterBugCheckCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckcallback)"><strong>KeDeregisterBugCheckCallback</strong></a> routines.</p>
 <p>The <strong>KBUGCHECK_CALLBACK_RECORD</strong> structure is used for bookkeeping by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeRegisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)"><strong>KeRegisterBugCheckReasonCallback</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeDeregisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)"><strong>KeDeregisterBugCheckReasonCallback</strong></a> routines.</p>
-<p>The structure must be allocated in resident memory, such as nonpaged pool. Use the <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;KeInitializeCallbackRecord&lt;/strong&gt;](./mm-bad-pointer.md)"><strong>KeInitializeCallbackRecord</strong></a> routine to initialize the structure before using it.</p>
+<p>The structure must be allocated in resident memory, such as nonpaged pool. Use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializecallbackrecord"><strong>KeInitializeCallbackRecord</strong></a> routine to initialize the structure before using it.</p>
 <p>Header: Ntddk.h. Include: Ntddk.h.</p></td>
 </tr>
 <tr class="even">
 <td><strong>KBUGCHECK_REASON_CALLBACK_RECORD</strong></td>
 <td><p>The <strong>KBUGCHECK_REASON_CALLBACK_RECORD</strong> structure is an opaque structure that is used by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeRegisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)"><strong>KeRegisterBugCheckReasonCallback</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeDeregisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)"><strong>KeDeregisterBugCheckReasonCallback</strong></a> routines.</p>
 <p>The <strong>KBUGCHECK_REASON_CALLBACK_RECORD</strong> structure is used for bookkeeping by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeRegisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)"><strong>KeRegisterBugCheckReasonCallback</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeDeregisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)"><strong>KeDeregisterBugCheckReasonCallback</strong></a> routines.</p>
-<p>The structure must be allocated in resident memory, such as nonpaged pool. Use the <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;KeInitializeCallbackRecord&lt;/strong&gt;](./mm-bad-pointer.md)"><strong>KeInitializeCallbackRecord</strong></a> routine to initialize the structure before using it.</p>
+<p>The structure must be allocated in resident memory, such as nonpaged pool. Use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializecallbackrecord"><strong>KeInitializeCallbackRecord</strong></a> routine to initialize the structure before using it.</p>
 <p>Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.</p>
 <p>Header: Ntddk.h. Include: Ntddk.h.</p></td>
 </tr>
@@ -154,7 +155,7 @@ The following table contains Windows kernel opaque structures:
 <p>The following See Also section contains a list of the routines that use this structure.</p>
 <p>For more information about lookaside lists, see <a href="using-lookaside-lists.md" data-raw-source="[Using Lookaside Lists](using-lookaside-lists.md)">Using Lookaside Lists</a>.</p>
 <p>On 64-bit platforms, this structure must be 16-byte aligned.</p>
-<p>Supported starting with Windows Vista.</p>
+<p>Supported starting with Windows Vista.</p>
 <p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
 </tr>
 <tr class="even">
@@ -228,91 +229,172 @@ The following table contains Windows kernel opaque structures:
 </tbody>
 </table>
 
- 
-
 ## Related topics
-[**BugCheckDumpIoCallback**](https://msdn.microsoft.com/library/windows/hardware/ff540677)  
-[**BugCheckSecondaryDumpDataCallback**](https://msdn.microsoft.com/library/windows/hardware/ff540679)  
+
 [**ExAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85))  
+
 [**ExAcquireFastMutexUnsafe**](/previous-versions/windows/hardware/drivers/ff544340(v=vs.85))  
+
 [**ExAllocateFromLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromlookasidelistex)  
+
 [**ExAllocateFromNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromnpagedlookasidelist)  
+
 [**ExAllocateFromPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefrompagedlookasidelist)  
+
 [**ExAllocateTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatetimer)  
+
 [**ExDeletePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist)  
+
 [**ExFreeToPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetopagedlookasidelist)  
+
 [**ExInitializePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist)  
+
 [**ExCancelTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excanceltimer)  
+
 [**ExDeleteLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletelookasidelistex)  
+
 [**ExDeleteNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletenpagedlookasidelist)  
+
 [**ExDeleteTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletetimer)  
+
 [**ExFlushLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exflushlookasidelistex)  
+
 [**ExFreeToLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetolookasidelistex)  
+
 [**ExFreeToNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetonpagedlookasidelist)  
+
 [**ExInitializeLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializelookasidelistex)  
+
 [**ExInitializeNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist)  
+
 [**ExInitializeSListHead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-initializeslisthead)  
+
 [**ExInterlockedFlushSList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinterlockedflushslist)  
+
 [**ExInterlockedPopEntrySList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinterlockedpopentryslist)  
+
 [**ExInterlockedPushEntrySList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinterlockedpushentryslist)  
+
 [**ExQueryDepthSList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exquerydepthslist)  
+
 [**ExReleaseFastMutex**](/previous-versions/windows/hardware/drivers/ff545549(v=vs.85))  
+
 [**ExReleaseFastMutexUnsafe**](/previous-versions/windows/hardware/drivers/ff545567(v=vs.85))  
+
 [**ExSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer)  
+
 [**ExTryToAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff545647(v=vs.85))  
+
 [*ExTimerCallback*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ext_callback)  
+
 [**IoAllocateWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem)  
+
 [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex)  
+
 [**IoCsqInitialize**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitialize)  
+
 [**IoCsqInitializeEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitializeex)  
+
 [**IoCsqInsertIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirp)  
+
 [**IoCsqInsertIrpEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirpex)  
+
 [**IoCsqRemoveIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqremoveirp)  
+
 [**IoDisconnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodisconnectinterruptex)  
+
 [**IoFreeWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeworkitem)  
+
 [**IoInitializeWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializeworkitem)  
+
 [**IoRequestDpc**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdpc)  
+
 [**IoUninitializeWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iouninitializeworkitem)  
+
 [**KeAcquireGuardedMutex**](/previous-versions/windows/hardware/drivers/ff551892(v=vs.85))  
+
 [**KeAcquireGuardedMutexUnsafe**](/previous-versions/windows/hardware/drivers/ff551894(v=vs.85))  
+
 [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85))  
+
 [**KeAcquireInStackQueuedSpinLockAtDpcLevel**](/previous-versions/windows/hardware/drivers/ff551908(v=vs.85))  
+
 [**KeAcquireInterruptSpinLock**](/previous-versions/windows/hardware/drivers/ff551914(v=vs.85))  
+
 [**KeCancelTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kecanceltimer)  
-[**KeInitializeCallbackRecord**](./mm-bad-pointer.md)  
+
+[**KeInitializeCallbackRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializecallbackrecord)  
+
 [**KeInitializeGuardedMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializeguardedmutex)  
+
 [**KeInitializeTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimer)  
+
 [**KeInitializeTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimerex)  
+
 [**KeReadStateTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereadstatetimer)  
+
 [**KeRestoreExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate)  
+
 [**KeSaveExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate)  
+
 [**KeSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimer)  
+
 [**KeSetTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimerex)  
+
 [**KeDeregisterBugCheckCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckcallback)  
+
 [**KeDeregisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)  
+
 [**KeInsertQueueDpc**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc)  
+
 [**KeRegisterBugCheckCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckcallback)  
+
 [**KeRegisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)  
+
 [**KeReleaseGuardedMutexUnsafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseguardedmutexunsafe)  
+
 [**KeReleaseInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock)  
+
 [**KeReleaseInStackQueuedSpinLockFromDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlockfromdpclevel)  
+
 [**KeReleaseInterruptSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinterruptspinlock)  
+
 [**KeRestoreFloatingPointState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestorefloatingpointstate)  
+
 [**KeSaveFloatingPointState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesavefloatingpointstate)  
+
 [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution)  
+
 [*LookasideListAllocateEx*](/windows-hardware/drivers/ddi/wdm/nc-wdm-allocate_function_ex)  
+
 [*LookasideListFreeEx*](/windows-hardware/drivers/ddi/wdm/nc-wdm-free_function_ex)  
+
 [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)  
-[**PsGetCurrentProcess**](./mm-bad-pointer.md#psgetcurrentprocess)  
+
+[**PsGetCurrentProcess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentprocess)  
+
 [**PsGetProcessCreateTimeQuadPart**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetprocesscreatetimequadpart)  
+
 [**PsInitialSystemProcess**](./mm64bitphysicaladdress.md)  
+
 [**PsIsSystemThread**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psissystemthread)  
+
+[Reading Bug Check Callback Data](../debugger/reading-bug-check-callback-data.md)
+
 [**RtlRunOnceBeginInitialize**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrunoncebegininitialize)  
+
 [**RtlRunOnceComplete**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrunoncecomplete)  
+
 [**RtlRunOnceExecuteOnce**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrunonceexecuteonce)  
+
 [**RtlRunOnceInitialize**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrunonceinitialize)  
+
 [*RunOnceInitialization*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-rtl_run_once_init_fn)  
+
 [Run-Down Protection](run-down-protection.md)  
+
 [**SeAccessCheck**](/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck)  
+
 [**SeAssignSecurity**](/windows-hardware/drivers/ddi/wdm/nf-wdm-seassignsecurity)  
+
 [**SeAssignSecurityEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-seassignsecurityex)

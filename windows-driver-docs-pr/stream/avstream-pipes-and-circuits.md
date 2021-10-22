@@ -29,7 +29,7 @@ A *pipe* is a set of AVStream filters that share a common [allocator](avstream-a
 
 The following illustration shows a pipe composed of three AVStream filters: a source filter, an *inplace* transform filter, and a renderer filter.
 
-![diagram illustrating a pipe using all avstream filters](images/pipe1.png)
+![diagram illustrating a pipe using all avstream filters.](images/pipe1.png)
 
 In this example, [KSProxy](/windows-hardware/drivers/ddi/_stream/index) (not shown) has chosen an allocator, represented by the **Alloc** block in the diagram.
 
@@ -47,7 +47,7 @@ Therefore, frames sent downstream return to the requester, where they can be rec
 
 Consider a second example, shown in the illustration below, in which the transform filter is not an AVStream filter, but is still a kernel-mode filter.
 
-![diagram illustrating a pipe using a non-avstream kernel-mode transform filter](images/pipe2.png)
+![diagram illustrating a pipe using a non-avstream kernel-mode transform filter.](images/pipe2.png)
 
 As in the first example, this example includes three filters: an AVStream source, a KS transform (this could be a driver that uses KS directly or a minidriver under stream class), and an AVStream renderer.
 
@@ -63,7 +63,7 @@ Consider a final example in which the frame source is in user-mode. (Alternative
 
 In the illustration below, a kernel-mode *non-inplace* transform filter receives frames from a user-mode DirectShow filter and sends the transformed frame to a kernel-mode AVStream renderer:
 
-![diagram illustrating frames received from a user-mode source and sent to an avstream renderer](images/pipe3.png)
+![diagram illustrating frames received from a user-mode source and sent to an avstream renderer.](images/pipe3.png)
 
 When frames arrive from user mode, the AVStream pin object places them in the queue for the input pipe section.
 

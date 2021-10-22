@@ -1,19 +1,15 @@
 ---
-title: Lists
-description: Lists
+title: Lists (GPD language)
+description: To assign a set of values to an attribute, use the LIST keyword.
 keywords:
 - GPD file entries WDK Unidrv , lists
 - listing attributes WDK GPD files
 - LIST keyword
-ms.date: 04/20/2017
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
-# Lists
-
-
-
-
+# Lists (GPD language)
 
 To assign a set of values to an attribute, use the LIST keyword. The format is:
 
@@ -24,11 +20,3 @@ where *Value1*, *Value2*, *Value3*, ..., *ValueN* represent a set of one or more
 ```cpp
 *ColorPlaneOrder: LIST(YELLOW, MAGENTA, CYAN, BLACK)
 ```
-
- 
-
- 
-
-
-
-

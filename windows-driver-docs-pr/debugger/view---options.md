@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_view_options_dbg"></span><span id="DDK_VIEW_OPTIONS_DBG"></span>
 
 
-Click **Options** on the **View** menu to open the **Options** dialog box. This command is equivalent to clicking the button (![screen shot of the options button](images/tbopt.png)) on the toolbar.
+Click **Options** on the **View** menu to open the **Options** dialog box. This command is equivalent to clicking the button (![screen shot of the options button.](images/tbopt.png)) on the toolbar.
 
 ### <span id="dialog_box"></span><span id="DIALOG_BOX"></span>Dialog Box
 

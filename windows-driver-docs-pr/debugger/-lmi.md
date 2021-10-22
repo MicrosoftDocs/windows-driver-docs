@@ -1,5 +1,5 @@
 ---
-title: lmi
+title: lmi (WinDbg)
 description: The lmi extension displays detailed information about a module.
 keywords: ["lmi Windows Debugging"]
 ms.date: 05/23/2017

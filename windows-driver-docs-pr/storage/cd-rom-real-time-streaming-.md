@@ -28,7 +28,7 @@ These changes in the storage driver stack allow higher layers (in particular, fi
 
 Figure 1 illustrates the relationship between regular and streaming read and write requests and the UDF file system and CDROM class drivers.
 
-![figure 1: real-time streaming support in cdrom.sys and udfs.sys](images/cdromstreaming.png)
+![figure 1: real-time streaming support in cdrom.sys and udfs.sys.](images/cdromstreaming.png)
 
 DVD playback applications and file system drivers have a choice of using IOCTLs to access the raw streaming support in Cdrom.sys (lowest level), or using the file system support for streaming mode introduced in Udfs.sys. Applications can also include the Windows video playback sub-system as a whole. In addition to playback, the Cdrom.sys and file system layers also support streaming recording.
 

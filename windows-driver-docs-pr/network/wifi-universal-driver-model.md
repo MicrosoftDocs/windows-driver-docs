@@ -24,7 +24,7 @@ To write a universal WLAN driver, see [Getting Started with Universal Windows dr
 Then, see the WDI design and reference sections for implementation guidance.
 
 -   [WDI Miniport Driver Design Guide](wdi-miniport-driver-design-guide.md)
--   [WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)
+-   [WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/#wireless-networking)
 
 ## Related topics
 

@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_EXTDEVICE\_PORT
-description: The KSPROPERTY\_EXTDEVICE\_PORT property retrieves an external device's port type.
+title: KSPROPERTY_EXTDEVICE_PORT
+description: The KSPROPERTY_EXTDEVICE_PORT property retrieves an external device's port type.
 keywords: ["KSPROPERTY_EXTDEVICE_PORT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,75 +10,32 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/20/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_EXTDEVICE\_PORT
+# KSPROPERTY_EXTDEVICE_PORT
 
+The **KSPROPERTY_EXTDEVICE_PORT** property retrieves an external device's port type.
 
-The KSPROPERTY\_EXTDEVICE\_PORT property retrieves an external device's port type.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_extdevice_port_ks"></span><span id="DDK_KSPROPERTY_EXTDEVICE_PORT_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Device</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTDEVICE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)"><strong>KSPROPERTY_EXTDEVICE_S</strong></a></p></td>
-<td><p>ULONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | No | Device | [**KSPROPERTY_EXTDEVICE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s) | ULONG |
 
 The property value (operation data) is a ULONG that specifies the external device's connection port. For example 1394 or USB.
 
 ## Remarks
 
-The **DevPort** member of the KSPROPERTY\_EXTDEVICE\_S structure specifies the external device's port type. The **DevPort** member may be set to equal DEV\_PORT\_1394, DEV\_PORT\_USB, etc. These tokens are defined in the *xprtdefs.h* file in the Microsoft DirectX SDK.
+The **DevPort** member of the KSPROPERTY_EXTDEVICE_S structure specifies the external device's port type. The **DevPort** member may be set to equal **DEV_PORT_1394**, **DEV_PORT_USB**, and so on. These tokens are defined in the *xprtdefs.h* file in the Microsoft DirectX SDK.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
-[**KSPROPERTY\_EXTDEVICE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)
-
+[**KSPROPERTY_EXTDEVICE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)

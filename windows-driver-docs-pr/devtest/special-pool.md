@@ -96,7 +96,7 @@ You can activate the Special Pool feature for one or more drivers by using Drive
 
     The feature will be active after the next boot.
 
-    On Windows 2000 and later versions of Windows, you can also activate and deactivate Special Pool without rebooting the computer by adding the **/volatile** parameter to the command. For example:
+    Yyou can also activate and deactivate Special Pool without rebooting the computer by adding the **/volatile** parameter to the command. For example:
 
     ``` console
     verifier /volatile /flags 0x1 /adddriver MyDriver.sys

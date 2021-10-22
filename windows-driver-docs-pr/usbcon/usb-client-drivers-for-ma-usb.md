@@ -76,7 +76,7 @@ For a user good experience over MA-USB with such client drivers, the driver must
 The client driver can set the options by defining the priorties of specific bulk endpoints in the Device Parameters subkey of the device's HW registry key.  
 
 The format of the registry value is a multistring named **EndpointPriorities**.  Each string within the multi-string defines the priority for a specific endpoint.  The format of the string is as follows:
-    "<CONFIG>,<INTERFACE>,<ALTSETTING>,<TYPE>,<ORDER>,<PRIORITY>"
+    `<CONFIG>,<INTERFACE>,<ALTSETTING>,<TYPE>,<ORDER>,<PRIORITY>`
 
 Where:
 

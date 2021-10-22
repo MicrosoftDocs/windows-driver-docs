@@ -16,7 +16,7 @@ Besides detecting new monitors and launching the TMM dialog in a two-monitor con
 
 The following figure shows the flow of operations that occur when TMM restores an existing monitor configuration.
 
-![diagram illustrating restoring an existing monitor configuration](images/tmm-existconfig.png)
+![diagram illustrating restoring an existing monitor configuration.](images/tmm-existconfig.png)
 
  
 

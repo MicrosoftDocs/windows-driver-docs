@@ -1,7 +1,7 @@
 ---
 title: DCH Example
 description: Describes how the DCHU driver sample applies the DCH design principles (Declarative, Componentized, Hardware Support Apps [HSA]).
-ms.date: 04/15/2020
+ms.date: 07/23/2021
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +35,7 @@ Next, Fabrikam separates customizations that are specific to OEM partners (such 
 
 The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
 
-```cpp
+```inf
 [Version]
 Class       = Extension
 ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
@@ -45,7 +45,7 @@ ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUI
 
 In [`osrfx2_DCHU_base.inx`], Fabrikam specifies the following entries:
 
-```cpp
+```inf
 [OsrFx2_AddReg]
 HKR, OSR, "OperatingMode",, "Default" ; FLG_ADDREG_TYPE_SZ
 HKR, OSR, "OperatingParams",, "None" ; FLG_ADDREG_TYPE_SZ
@@ -53,7 +53,7 @@ HKR, OSR, "OperatingParams",, "None" ; FLG_ADDREG_TYPE_SZ
 
 In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry value set by the base and adds **OperatingExceptions**:
 
-```cpp
+```inf
 [OsrFx2Extension_AddReg]
 HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"
@@ -65,7 +65,7 @@ Note that extensions are always processed after the base INF but in no definite 
 
 Fabrikam uses a Win32 service to control the LEDs on the OSR board. They view this component as part of the core functionality of the device, so they include it as part of their base INF ([`osrfx2_DCHU_base.inx`]).  This user-mode service (usersvc) can be added and started declaratively by specifying the [**AddService**](../install/inf-addservice-directive.md) directive in the INF file:
 
-```cpp
+```inf
 [OsrFx2_Install.NT]
 CopyFiles = OsrFx2_CopyFiles
 
@@ -101,7 +101,7 @@ Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they pr
 
 The following snippet from [`osrfx2_DCHU_extension.inx`] uses the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to create a virtual child device:
 
-```cpp
+```inf
 [OsrFx2Extension_Install.NT.Components]
 AddComponent = osrfx2_DCHU_component,,OsrFx2Extension_ComponentInstall
 
@@ -112,7 +112,7 @@ ComponentIds=VID_045e&PID_94ab
 
 Then, in the component INF [`osrfx2_DCHU_component.inx`], Fabrikam specifies the [**AddSoftware**](../install/inf-addsoftware-directive.md) directive to install the optional executable:
 
-```cpp
+```inf
 [OsrFx2Component_Install.NT.Software]
 AddSoftware = osrfx2_DCHU_componentsoftware,, OsrFx2Component_SoftwareInstall
 
@@ -138,7 +138,7 @@ The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Micr
 
 ```cpp
     WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = { 0 };
-    static const wchar_t customCapabilities[] = L"CompanyName.yourCustomCapabilityNameTBD_YourStorePubId\0";
+    static const wchar_t customCapabilities[] = L"CompanyName.yourCustomCapabilityName_YourStorePubId\0";
 
     WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT(&PropertyData,
                                             &GUID_DEVINTERFACE_OSRUSBFX2,
@@ -157,12 +157,13 @@ The new app (not included in the sample) is secure and can be updated easily in 
 
 Ideally, there should be strong versioning contracts between base, extensions, and components.  There are servicing advantages in having these three packages serviced independently (the "loosely coupled" scenario), but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes examples of both scenarios:
 
-* [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)
-* [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)
+- [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)
+
+- [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)
 
   When the extension and component are in the same driver package ("tightly coupled"), the extension INF specifies the [CopyINF directive](../install/inf-copyinf-directive.md) to cause the component INF to be copied to the target system.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx):
 
-```cpp
+```inf
 [OsrFx2Extension_Install.NT]
 CopyInf=osrfx2_DCHU_component.inf
 ```
@@ -176,7 +177,7 @@ This directive can also be used to coordinate installation of INF files in multi
 
 To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid 13**](../install/using-dirids.md) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here is an example from [`osrfx2_DCHU_base.inx`]:
 
-```cpp
+```inf
 [DestinationDirs]
 OsrFx2_CopyFiles = 13 ; copy to Driver Store
 ```
@@ -187,7 +188,7 @@ See the [driver package isolation](driver-isolation.md#run-from-driver-store) pa
 
 The following diagram shows the driver packages that Fabrikam and Contoso created for their DCH-compliant driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they will make two submissions: base and extension/component.
 
-![Extension, base, and component driver packages](images/universal-scenarios.png)
+![Extension, base, and component driver packages.](images/universal-scenarios.png)
 
 Note that the component INF will match on the component hardware ID, whereas the base and extensions will match on the board's hardware ID.
 
@@ -197,10 +198,12 @@ Note that the component INF will match on the component hardware ID, whereas the
 
 [Using an Extension INF File](../install/using-an-extension-inf-file.md)
 
-[`osrfx2_DCHU_base.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/osrfx2_DCHU_base.inx
+[osrfx2_DCHU_base.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/osrfx2_DCHU_base.inx)
 
-[`osrfx2_DCHU_usersvc.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_usersvc/osrfx2_DCHU_usersvc.inx
+["loosely coupled" osrfx2_DCHU_component.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_component/osrfx2_DCHU_component.inx)
 
-[`osrfx2_DCHU_component.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_component/osrfx2_DCHU_component.inx
+["loosely coupled" osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx)
 
-[`osrfx2_DCHU_extension.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx
+["tightly coupled" osrfx2_DCHU_component.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_component/osrfx2_DCHU_component.inx)
+
+["tightly coupled" osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx)

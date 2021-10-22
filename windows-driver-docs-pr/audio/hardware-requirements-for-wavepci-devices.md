@@ -63,7 +63,7 @@ This exceeds the memory page size (4096 bytes), which means that the buffer cont
 
 For this reason, the scatter/gather DMA hardware for a WavePci device should be designed to handle audio frames (such as frame 197 in the following figure) that are split between two physically noncontiguous pages in memory.
 
-![diagram illustrating an audio buffer at an offset from the start of a page](images/framealign.png)
+![diagram illustrating an audio buffer at an offset from the start of a page.](images/framealign.png)
 
 At the top of the preceding figure is a 5760-byte buffer that straddles the boundary between two pages. In this example, the buffer begins at a 1728-byte offset from the start of the first page, which aligns the start of the buffer to a 64-byte boundary in memory. Assume that each audio frame occupies 12 bytes and contains six channels. The first page contains all of frames 0 through 196 but only the first four bytes of frame 197.
 
@@ -73,7 +73,7 @@ Although the two pages appear next to each other at the top of the figure, they 
 
 Even if the preceding example is changed to align the buffer with the start of the first page, the split-frame problem does not disappear. The following figure demonstrates this point. In this case, frame 341 gets split at the page boundary with the samples for channels 0 and 1 again falling within the first page and the samples for channels 2 through 5 located in the second page.
 
-![diagram illustrating an audio buffer aligned to the start of a page](images/framealign2.png)
+![diagram illustrating an audio buffer aligned to the start of a page.](images/framealign2.png)
 
 A WavePci device whose scatter/gather DMA controller does not properly handle split audio frames is limited in the kinds of audio data formats it can handle, although software workarounds might help alleviate some hardware design flaws. For more information, see [WavePci Latency](wavepci-latency.md).
 

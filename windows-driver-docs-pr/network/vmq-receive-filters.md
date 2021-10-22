@@ -21,13 +21,13 @@ Multiple filters can be set on a receive queue. If any of the filters on a queue
 
 This following figure shows how filter tests are performed and how filters determine a queue assignment.
 
-![diagram illustrating how filter tests are performed and how filters determine a queue assignment](images/vmqfilter.png)
+![diagram illustrating how filter tests are performed and how filters determine a queue assignment.](images/vmqfilter.png)
 
 In the preceding figure, the destination address (DA) is tested (compared to A and B). Also, the VLAN identifier is tested (compared to 2 and 3). The AND operation illustrates that both the DA and VLAN identifier must be equal to the specified values to have a filter match. The OR operation illustrates that any filter on the queue that matches results in the assignment of the network data packet to that queue.
 
 This following figure shows how filters and queues affect the receive data flow.
 
-![diagram illustrating how filters and queues affect the receive data flow](images/vmqfilterpaths.png)
+![diagram illustrating how filters and queues affect the receive data flow.](images/vmqfilterpaths.png)
 
 If an incoming packet matches a filter on a queue, it is assigned to that queue. Otherwise, the packet is tested against the filters on the next queue and so on. If there is no filter match on any of the queues, the network adapter assigns the packet to the default queue.
 

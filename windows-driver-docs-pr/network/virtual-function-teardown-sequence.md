@@ -22,7 +22,7 @@ Before the VF is torn down and its resources freed, the virtualization stack not
 
 After the failover to the synthetic data path is complete, the VF is torn down and its resources freed. The following diagram shows the steps that are involved with VF teardown.
 
-![example vf teardown sequence showing calls from the virtualization stack to ndis and then to the pf miniport driver](images/sriov-vf-teardown.png)
+![example vf teardown sequence showing calls from the virtualization stack to ndis and then to the pf miniport driver.](images/sriov-vf-teardown.png)
 
 NDIS, the virtualization stack, and the PF miniport driver follow these steps during the VF teardown sequence:
 

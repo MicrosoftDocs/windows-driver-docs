@@ -40,7 +40,7 @@ The build lab support files include the **setup.ps1** PowerShell command file, w
 
     The syntax for the PowerShell command is as follows:
 
-    <span codelanguage="PowerShell"></span>
+    <span></span>
     <table>
     <colgroup>
     <col width="100%" />

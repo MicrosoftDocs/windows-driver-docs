@@ -19,7 +19,7 @@ Therefore, in the virtualization environment, incoming received frames are copie
 
 The following figure shows the performance bottlenecks for receive processing in a virtualized environment.
 
-![diagram illustrating performance bottlenecks for receive processing in a virtualized environment](images/vmqsyntheticpaths.png)
+![diagram illustrating performance bottlenecks for receive processing in a virtualized environment.](images/vmqsyntheticpaths.png)
 
 The performance issues in the previous figure include the following:
 

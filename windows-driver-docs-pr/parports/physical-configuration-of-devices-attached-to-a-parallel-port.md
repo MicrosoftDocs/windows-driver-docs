@@ -20,13 +20,13 @@ This section describes the typical physical configurations of devices that are a
 
 The following figure shows a parallel device attached a parallel port.
 
-![diagram illustrating a parallel device connected to a parallel port](images/parport2.png)
+![diagram illustrating a parallel device connected to a parallel port.](images/parport2.png)
 
 Microsoft Windows supports one parallel device attached to a parallel port, which can be a legacy device or a Plug and Play device that complies with the IEEE 1284 standard.
 
 The following figure shows IEEE 1284.3 devices and an end-of-chain IEEE 1284 device that are simultaneously attached to a parallel port.
 
-![ieee 1284.3 daisy chain devices connected to a parallel port](images/parport3.png)
+![ieee 1284.3 daisy chain devices connected to a parallel port.](images/parport3.png)
 
 The IEEE 1284.3 standard specifies that up to four daisy chain devices and an end-of-chain device can be simultaneously attached to a parallel port.
 

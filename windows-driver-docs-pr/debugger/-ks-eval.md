@@ -1,5 +1,5 @@
 ---
-title: ks.eval
+title: ks.eval (WinDbg)
 description: The ks.eval extension evaluates an expression using an extension-specific expression evaluator.
 keywords: ["ks.eval Windows Debugging"]
 ms.date: 05/23/2017

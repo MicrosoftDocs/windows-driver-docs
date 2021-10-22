@@ -1,12 +1,11 @@
 ---
 title: PrintCapabilities document example
 description: The keywords used in the following example are for illustration only, although they generally conform to the Print Schema keywords for 3D manufacturing.
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
 # PrintCapabilities document example
-
 
 The keywords used in the following example are for illustration only, although they generally conform to the Print Schema keywords for 3D manufacturing.
 
@@ -264,11 +263,3 @@ The keywords used in the following example are for illustration only, although t
 
 </psf:PrintCapabilities>
 ```
-
- 
-
- 
-
-
-
-

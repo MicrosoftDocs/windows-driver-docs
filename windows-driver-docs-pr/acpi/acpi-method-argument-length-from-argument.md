@@ -3,14 +3,13 @@ title: ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro
 description: The ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro calculates the size, in bytes, of the data that is contained in the Data array of an ACPI_METHOD_ARGUMENT structure.
 keywords: 
 - ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro ACPI Devices
-ms.date: 04/20/2017
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
-# ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro
+# ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro
 
-
-The ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro calculates the size, in bytes, of the data that is contained in the Data array of an [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure.
+The ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro calculates the size, in bytes, of the data that is contained in the Data array of an [**ACPI_METHOD_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure.
 
 ## Syntax
 
@@ -22,40 +21,23 @@ void ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT(
 
 ## Parameters
 
-*Argument*   
-A pointer to an ACPI\_METHOD\_ARGUMENT structure.
+*Argument*
+A pointer to an **ACPI_METHOD_ARGUMENT** structure.
 
 ## Return value
 
-The size, in bytes, of the data that is contained in the **Data** array of the ACPI\_METHOD\_ARGUMENT structure that *Argument* points to.
+The size, in bytes, of the data that is contained in the **Data** array of the **ACPI_METHOD_ARGUMENT** structure that *Argument* points to.
 
 ## Remarks
 
-A driver can use this macro to determine the size, in bytes, of the data in the **Data** array of an ACPI\_METHOD\_ARGUMENT structure.
+A driver can use this macro to determine the size, in bytes, of the data in the **Data** array of an **ACPI_METHOD_ARGUMENT** structure.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr>
-<td><p>Header</p></td>
-<td>Acpiioct.h (include Acpiioct.h)</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Header:** acpiioct.h (include Acpiioct.h)
 
 ## See also
 
-
-[**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)
-
- 
-
+[**ACPI_METHOD_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)

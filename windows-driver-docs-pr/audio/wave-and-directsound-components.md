@@ -41,7 +41,7 @@ DirectSound and the Windows Multimedia wave functions are clients of the [SysAud
 
 The following figure shows the user-mode and kernel-mode components that a wave application uses to render or capture a digital audio stream consisting of wave PCM data.
 
-![diagram illustrating wave rendering and capture components](images/wavecomp.png)
+![diagram illustrating wave rendering and capture components.](images/wavecomp.png)
 
 The rendering components appear on the left side of the preceding figure, and the capture components appear on the right. The boxes representing the wave miniport driver are darkened to indicate that these are vendor-supplied components. The other components in the figure are system-supplied.
 
@@ -73,7 +73,7 @@ At the time that the wave-capture application calls the [**waveInOpen**](/previo
 
 The following figure shows the user-mode and kernel-mode components that are used by a DirectSound application program to render or capture wave data.
 
-![diagram illustrating directsound rendering and capture components](images/dscomp.png)
+![diagram illustrating directsound rendering and capture components.](images/dscomp.png)
 
 The rendering components are shown in the left half of the preceding figure, and the capture components appear on the right. The wave miniport drivers are shown as darkened boxes to indicate that they are vendor-supplied components. The other components in the figure are system-supplied.
 

@@ -1,5 +1,5 @@
 ---
-title: wdmaud
+title: wdmaud (WinDbg)
 description: Displays a variety of WDM Audio (WDMAud) structures.
 keywords: ["wdmaud Windows Debugging"]
 ms.date: 05/23/2017

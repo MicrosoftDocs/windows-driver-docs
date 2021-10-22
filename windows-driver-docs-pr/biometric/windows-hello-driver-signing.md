@@ -28,7 +28,7 @@ Follow the instructions here to create a biometric driver:
 Self validate the sensor and driver to ensure they meet Microsoft’s biometric requirements and report findings in the Fingerprint Security Review Template. Documents for the requirements and template can be found within the Fingerprint partner package on Connect. If you do not have access to Connect, contact your Microsoft representative.
 
 ### Step Three: Modify the driver configuration xml file
-When you submit your driver, the Windows 10, version 1703 Fingerprint HLK test will check to ensure that the <vendorCompliance> and <securityReview> tag are included with the following fields:
+When you submit your driver, the Windows 10, version 1703 Fingerprint HLK test will check to ensure that the `<vendorCompliance>` and `<securityReview>` tag are included with the following fields:
 
 **bugId**: ID number for the previous HLK submission that contains the previously approved security review information or 0 if the submission is undergoing an entirely new security review.
 

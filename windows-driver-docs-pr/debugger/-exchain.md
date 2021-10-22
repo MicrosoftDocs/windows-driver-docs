@@ -1,5 +1,5 @@
 ---
-title: exchain
+title: exchain (WinDbg)
 description: The exchain extension displays the current exception handler chain.
 keywords: ["exchain Windows Debugging"]
 ms.date: 05/23/2017

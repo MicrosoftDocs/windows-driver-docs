@@ -26,7 +26,7 @@ This feature configures the program so that it always runs in a debugger with th
 
     The following screen shot shows the **Debugger** check box on the **Image File** tab in Windows Vista.
 
-    ![screen shot of the debugger check box on the image file tab in windows vista ](images/gflags-debugger.png)
+    ![screen shot of the debugger check box on the image file tab in windows vista .](images/gflags-debugger.png)
 
 4.  In the **Debugger** box, type the command to run the debugger, including the path (optional) and name of the debugger and parameters. For example, **ntsd -d -g -G -x** or **c:\\debuggers\\cdb.exe -g -G**.
 

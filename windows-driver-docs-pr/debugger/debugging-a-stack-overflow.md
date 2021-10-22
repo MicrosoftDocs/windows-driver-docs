@@ -2,7 +2,7 @@
 title: Debugging a Stack Overflow
 description: This topic describes debugging a use mode stack overflow
 keywords: ["stack overflow", "call stack, debugging a stack overflow"]
-ms.date: 03/23/2021
+ms.date: 09/30/2021
 ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
@@ -90,38 +90,89 @@ ChildEBP RetAddr
 
 Now you need to investigate thread 2. The period at the left of this line indicates that this is the current thread.
 
-The stack information is contained in the TEB (Thread Environment Block) at 0x7FFDC000. The easiest way to list it is using [!teb](-teb.md). However, this requires you to have the proper symbols. For maximum versatility, assume you have no symbols and use the [dd (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to display the raw values at that location:
+The stack information is contained in the TEB (Thread Environment Block) at 0x7FFDC000. The easiest way to list it is using [!teb](-teb.md). 
+
+```dbgcmd
+0:000> !teb
+TEB at 000000c64b95d000
+    ExceptionList:        0000000000000000
+    StackBase:            000000c64ba80000
+    StackLimit:           000000c64ba6f000
+    SubSystemTib:         0000000000000000
+    FiberData:            0000000000001e00
+    ArbitraryUserPointer: 0000000000000000
+    Self:                 000000c64b95d000
+    EnvironmentPointer:   0000000000000000
+    ClientId:             0000000000003bbc . 0000000000004ba0
+    RpcHandle:            0000000000000000
+    Tls Storage:          0000027957243530
+    PEB Address:          000000c64b95c000
+    LastErrorValue:       0
+    LastStatusValue:      0
+    Count Owned Locks:    0
+    HardErrorMode:        0```
+```
+
+
+However, this requires you to have the proper symbols. A more difficult situation is when you have no symbols and need to use the [dd (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to display the raw values at that location:
 
 ```dbgcmd
 0:002> dd 7ffdc000 L4 
 7ffdc000   009fdef0 00a00000 009fc000 00000000 
 ```
 
-To interpret this, you need to look up the definition of the TEB data structure. If you had complete symbols, you could use [dt TEB](dt--display-type-.md) to do this. But in this case, you will need to look at the ntpsapi.h file in the Microsoft Windows SDK. This file contains the following information:
+To interpret this, you need to look up the definition of the TEB data structure. Use the [dt Display Type](dt--display-type-.md) command to do this on a system where symbols are available. 
 
-```cpp
-typedef struct _TEB {
-    NT_TIB NtTib;
-    PVOID  EnvironmentPointer;
-    CLIENT_ID ClientId;
-    PVOID ActiveRpcHandle;
-    PVOID ThreadLocalStoragePointer;
-    PPEB ProcessEnvironmentBlock;
-    ULONG LastErrorValue;
-    .....
-    PVOID DeallocationStack;
-    .....
-} TEB;
-
-typedef struct _NT_TIB {
-    struct _EXCEPTION_REGISTRATION_RECORD *ExceptionList;
-    PVOID StackBase;
-    PVOID StackLimit;
-    .....
-} NT_TIB; 
+```dbgcmd
+0:000> dt _TEB
+ntdll!_TEB
+   +0x000 NtTib            : _NT_TIB
+   +0x01c EnvironmentPointer : Ptr32 Void
+   +0x020 ClientId         : _CLIENT_ID
+   +0x028 ActiveRpcHandle  : Ptr32 Void
+   +0x02c ThreadLocalStoragePointer : Ptr32 Void
+   +0x030 ProcessEnvironmentBlock : Ptr32 _PEB
+   +0x034 LastErrorValue   : Uint4B
+   +0x038 CountOfOwnedCriticalSections : Uint4B
+   +0x03c CsrClientThread  : Ptr32 Void
+   +0x040 Win32ThreadInfo  : Ptr32 Void
+   +0x044 User32Reserved   : [26] Uint4B
+   +0x0ac UserReserved     : [5] Uint4B
+   +0x0c0 WOW32Reserved    : Ptr32 Void
+...
 ```
 
-This indicates that the second and third DWORDs in the TEB structure point to the bottom and top of the stack, respectively. In this case, these addresses are 0x00A00000 and 0x009FC000. (The stack grows downward in memory.) You can calculate the stack size using the [? (Evaluate Expression)](---evaluate-expression-.md) command:
+**Thread Data Structures**
+
+To learn more about threads, you can also display information about the  thread control block related structures ethread and kthread. (Note that 64 bit examples are shown here.)
+
+```dbgcmd
+0:001> dt nt!_ethread
+ntdll!_ETHREAD
+   +0x000 Tcb              : _KTHREAD
+   +0x430 CreateTime       : _LARGE_INTEGER
+   +0x438 ExitTime         : _LARGE_INTEGER
+   +0x438 KeyedWaitChain   : _LIST_ENTRY
+   +0x448 PostBlockList    : _LIST_ENTRY
+   +0x448 ForwardLinkShadow : Ptr64 Void
+   +0x450 StartAddress     : Ptr64 Void
+...
+```
+
+```dbgcmd
+0:001> dt nt!_kthread
+ntdll!_KTHREAD
+   +0x000 Header           : _DISPATCHER_HEADER
+   +0x018 SListFaultAddress : Ptr64 Void
+   +0x020 QuantumTarget    : Uint8B
+   +0x028 InitialStack     : Ptr64 Void
+   +0x030 StackLimit       : Ptr64 Void
+   +0x038 StackBase        : Ptr64 Void
+```
+
+Refer to *Microsoft Windows Internals* for more information about thread data structures.
+
+Looking at a 32 bit version of the _TEB structure, it indicates that the second and third DWORDs in the TEB structure point to the bottom and top of the stack, respectively. In this example, these addresses are 0x00A00000 and 0x009FC000. (The stack grows downward in memory.) You can calculate the stack size using the [? (Evaluate Expression)](---evaluate-expression-.md) command:
 
 ```dbgcmd
 0:002> ? a00000-9fc000

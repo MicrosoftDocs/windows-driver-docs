@@ -46,7 +46,7 @@ The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>HANDLE</p></td>
 </tr>
 </tbody>
@@ -84,5 +84,4 @@ Also see [KS Clocks](./ks-clocks.md) and [AVStream Clocks](./avstream-clocks.md)
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
+[**KSPROPERTY**](ksproperty-structure.md)

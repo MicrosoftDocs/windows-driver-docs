@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Roadmap for Device and Driver Installation
 
 
-![figure of a compass, a map, and a finger pointing at the map](images/map-hand-sml.png)
+![figure of a compass, a map, and a finger pointing at the map.](images/map-hand-sml.png)
 
 To install a device and driver in the Windows operating system, follow these steps:
 
@@ -56,7 +56,7 @@ To install a device and driver in the Windows operating system, follow these st
     [Driver packages](driver-packages.md) are release-signed through either:
 
   - A [WHQL Release Signature](whql-release-signature.md) obtained through the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10), or the [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems).
-  - A release signature created through a [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
+  - A release signature created through a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).
 
     For more information, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md).
 

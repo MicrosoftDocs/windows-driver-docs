@@ -5,7 +5,7 @@ ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
-# MobileBroadband Analyzing logs
+# Mobile Broadband Analyzing Logs
 
 [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases) is an extensive text filtering tool that is useful for complex traces with numerous ETW providers. You can filter logs of interest using the .tat files.
 

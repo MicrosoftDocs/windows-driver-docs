@@ -65,7 +65,7 @@ Debugging over a USB 2.0 connection requires the following hardware:
 2.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 3.  For **Connection Type**, choose **USB**.
 
-    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters](images/setupusb2vs.png)
+    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters.](images/setupusb2vs.png)
 
     For **Target Name**, enter a string to represent the target computer. This string does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
 

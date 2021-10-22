@@ -140,7 +140,7 @@ Now that you have added the BSP to your Windows image, copy these folders and fi
 
 Set up your Sharks Cove hardware as shown here:
 
-![picture of board and connections](images/sharkscoveconnections03.png)
+![picture of board and connections.](images/sharkscoveconnections03.png)
 
 Plug the flash drive into the hub that is connected to the Sharks Cove board. Hold the volume-up button as you start or restart the Sharks Cove board. The volume-up button is the top button in the set of three buttons on the left side of the board as shown in the preceding diagram. (If the board is already started, you can turn it off by holding the Power button for several seconds.) When the board starts, you will see the EFI shell on the screen.
 
@@ -165,7 +165,7 @@ Follow the Windows setup instructions on the screen.
 
 Set up your hardware as shown here.
 
-![picture of board with connections for provisioning](images/sharkscoveconnections02.png)
+![picture of board with connections for provisioning.](images/sharkscoveconnections02.png)
 
 Provisioning the Sharks Cove board is similar to provisioning any other computer. To provision the Sharks Cove board, follow the instructions in this topic:
 

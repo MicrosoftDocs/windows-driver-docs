@@ -101,7 +101,7 @@ Endpoint Effect (EFX) are applied to all streams that use the same endpoint. An 
 
 This diagram shows the possible locations for stream (SFX), mode (MFX) and endpoint (EFX) effects for Windows 10.
 
-![diagram illustrating placement for stream, mode, and endpoint effects in windows 10](images/audio-apo-software-effects-summary.png)
+![diagram illustrating placement for stream, mode, and endpoint effects in windows 10.](images/audio-apo-software-effects-summary.png)
 
 **Multiple Custom APO Effects**
 
@@ -109,7 +109,7 @@ It is possible to configure multiple APO based effects to work with different ap
 
 This diagram illustrates how multiple applications can access multiple combinations of stream, mode and endpoint APO effects. All of the APOs are COM based and run in user mode. In this scenario, none of the effects are running in hardware or in kernel mode.
 
-![diagram showing how multiple applications can access multiple combinations of stream, mode and endpoint apo effects](images/audio-apo-software-effects-1.png)
+![diagram showing how multiple applications can access multiple combinations of stream, mode and endpoint apo effects.](images/audio-apo-software-effects-1.png)
 
 **Note**  You can use the scroll bar at the very bottom of this page to view all of this diagram.
 
@@ -117,7 +117,7 @@ This diagram illustrates how multiple applications can access multiple combinati
 
 This diagram illustrates software mode effects and hardware endpoint effects for render and capture.
 
-![diagram that shows software mode effects and hardware endpoint effects for render and capture](images/audio-apo-software-mode-effects-and-hardware-endpoint-effects-2.png)
+![diagram that shows software mode effects and hardware endpoint effects for render and capture.](images/audio-apo-software-mode-effects-and-hardware-endpoint-effects-2.png)
 
 **DSP Equipped System with Hardware Effects**
 

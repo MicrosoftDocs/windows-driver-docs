@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_FOCUS
-description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_FOCUS property to get or set a camera's focus setting. This property is optional.
+title: KSPROPERTY_CAMERACONTROL_FOCUS
+description: User-mode clients use the KSPROPERTY_CAMERACONTROL_FOCUS property to get or set a camera's focus setting. This property is optional.
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCUS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,81 +10,37 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/14/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_CAMERACONTROL\_FOCUS
+# KSPROPERTY_CAMERACONTROL_FOCUS
 
+User-mode clients use the **KSPROPERTY_CAMERACONTROL_FOCUS** property to get or set a camera's focus setting. This property is optional.
 
-User-mode clients use the KSPROPERTY\_CAMERACONTROL\_FOCUS property to get or set a camera's focus setting. This property is optional.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_cameracontrol_focus_ks"></span><span id="DDK_KSPROPERTY_CAMERACONTROL_FOCUS_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter or node</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
-<td><p>LONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter or node | [**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s) or [**KSPROPERTY_CAMERACONTROL_NODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s) | LONG |
 
 The property value (operation data) is a LONG that specifies the focus setting. This value is expressed in millimeters.
 
-**Caution**  When writing or testing an app, you should be aware that in practice, some drivers define a custom range of focus values and custom step values that might not be based on typical units. Drivers might implement the focus control either physically or digitally.
-
- 
+> [!CAUTION]
+> When writing or testing an app, you should be aware that in practice, some drivers define a custom range of focus values and custom step values that might not be based on typical units. Drivers might implement the focus control either physically or digitally.
 
 ## Remarks
 
-The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies the focus setting.
+The **Value** member of the **KSPROPERTY_CAMERACONTROL_S** structure specifies the focus setting.
 
 Every video capture minidriver that supports this property must define its own range and default value for this property.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
-[**KSPROPERTY\_CAMERACONTROL\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
-
+[**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)

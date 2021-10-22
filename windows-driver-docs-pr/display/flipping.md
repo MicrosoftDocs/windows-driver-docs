@@ -35,7 +35,7 @@ Surfaces that are not used for flipping can have any dimension and can store non
 
 The following figure illustrates the relationship between two flippable surfaces.
 
-![diagram illustrating flipping](images/ddfig7.png)
+![diagram illustrating flipping.](images/ddfig7.png)
 
 If a front buffer has one or more back buffers attached, it is a flippable surface, as shown in the preceding figure. The back buffer and all attached flippable surfaces must be the same size and pixel depth as the front buffer. A back buffer surface becomes the primary surface using a flip. A flip simply changes a pointer so it points to a different flippable surface, thereby displaying the new surface. The front buffer (which is no longer the primary surface) then becomes accessible, and can have new data written to it.
 

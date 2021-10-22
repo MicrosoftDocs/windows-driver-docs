@@ -42,9 +42,9 @@ While there are different approaches to recover from a failed state, Bluetooth u
 | Function-level device reset (FLDR) | The reset operation is restricted to a specific device and is not visible to other devices. There is no re-enumeration. Function drivers must assume that the hardware has returned to its original state after the operation.  Intermediary state is not preserved.
 | Platform-level device reset (PLDR) | The reset operation affects a specific device and all other devices that are connected to it via the same power rail or reset line. The reset operation causes the device to be reported as missing from the bus and re-enumerated. This type of reset has the most impact on the system since all devices that share the resource go back to their original state.|
 
-- **To support FLDR** there must be an __RST method defined within the __ADR_ namespace as detailed in [ACPI firmware: Function-level reset](../kernel/resetting-and-recovering-a-device.md#acpi-firmware-function-level-reset).
+- **To support FLDR** there must be an __RST method defined within the __ADR_ namespace as detailed in [ACPI firmware: Function-level reset](../kernel/working-with-guid-device-reset-interface-standard.md#acpi-firmware-function-level-reset).
 
-- **To support PLDR** there must be an _RST or _PR3  method defined within the __ADR_ namespace as detailed in [ACPI firmware: Platform-level reset](../kernel/resetting-and-recovering-a-device.md#acpi-firmware-platform-level-reset). Note that if a __PR3_ method is used, ACPI uses the D3Cold power cycle mechanism to reset. This emulates removing power from the device and subsequently restoring it. If any other devices share the same power rail they will also be reset. If an __RST_ method is defined and referenced by a __PRR_ (PowerResource) then all devices that use that PowerResource will be affected.
+- **To support PLDR** there must be an _RST or _PR3  method defined within the __ADR_ namespace as detailed in [ACPI firmware: Platform-level reset](../kernel/working-with-guid-device-reset-interface-standard.md#acpi-firmware-platform-level-reset). Note that if a __PR3_ method is used, ACPI uses the D3Cold power cycle mechanism to reset. This emulates removing power from the device and subsequently restoring it. If any other devices share the same power rail they will also be reset. If an __RST_ method is defined and referenced by a __PRR_ (PowerResource) then all devices that use that PowerResource will be affected.
 
   - Since PLDR works only for internal devices, it must be declared as such in ACPI. For USB devices, to specify a port that is internal (not user visible) and can be connected to an integrated device, set the __UPC.PortIsConnectable_ byte to 0xFF and the __PLD.UserVisible_ bit to 0.
 
@@ -58,4 +58,4 @@ While there are different approaches to recover from a failed state, Bluetooth u
 
 ### Related links
 
-[Resetting and recovering a device](../kernel/resetting-and-recovering-a-device.md)
+[Resetting and recovering a device](../kernel/working-with-guid-device-reset-interface-standard.md)

@@ -20,7 +20,7 @@ Generally the user mode driver wants to push the synchronization as far as possi
 
 To obtain a reference to the device paging fence object a new **GetDevicePagingFenceObjectCb**device driver interface (DDI) is added to the user mode driver. This is illustrated below:
 
-![device paging queues](images/device-paging-queues.1.png)
+![device paging queues.](images/device-paging-queues.1.png)
 
  
 

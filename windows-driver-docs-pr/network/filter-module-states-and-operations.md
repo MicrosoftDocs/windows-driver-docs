@@ -42,7 +42,7 @@ In the *Pausing* state, a filter driver completes any operations that are requir
 
 In the following table, the headings are the filter module states. Major events are listed in the first column. The rest of the entries in the table specify the next state that the filter module enters after an event occurs within a state. The blank entries represent invalid event/state combinations.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />

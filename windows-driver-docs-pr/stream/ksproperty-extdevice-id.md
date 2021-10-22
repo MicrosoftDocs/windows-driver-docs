@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_EXTDEVICE\_ID
-description: The KSPROPERTY\_EXTDEVICE\_ID property retrieves an external device's generalized system-wide Id.
+title: KSPROPERTY_EXTDEVICE_ID
+description: The KSPROPERTY_EXTDEVICE_ID property retrieves an external device's generalized system-wide Id.
 keywords: ["KSPROPERTY_EXTDEVICE_ID Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,75 +10,32 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/20/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_EXTDEVICE\_ID
+# KSPROPERTY_EXTDEVICE_ID
 
+The **KSPROPERTY_EXTDEVICE_ID** property retrieves an external device's generalized system-wide Id.
 
-The KSPROPERTY\_EXTDEVICE\_ID property retrieves an external device's generalized system-wide Id.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_extdevice_id_ks"></span><span id="DDK_KSPROPERTY_EXTDEVICE_ID_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Device</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTDEVICE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)"><strong>KSPROPERTY_EXTDEVICE_S</strong></a></p></td>
-<td><p>DWORD array</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | No | Device | [**KSPROPERTY_EXTDEVICE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s) | DWORD array |
 
 The property value (operation data) is a DWORD array that specifies the external device's unique node Id
 
 ## Remarks
 
-The **NodeUniqueID** member of the KSPROPERTY\_EXTDEVICE\_S structure specifies the external device's unique node Id.
+The **NodeUniqueID** member of the **KSPROPERTY_EXTDEVICE_S** structure specifies the external device's unique node Id.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
-[**KSPROPERTY\_EXTDEVICE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)
-
+[**KSPROPERTY_EXTDEVICE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extdevice_s)

@@ -48,13 +48,13 @@ Drivers specify the size of the data buffer in the **nNumberOfBytesToRead** or *
 
 The following diagram illustrates contiguous data blocks.
 
-![diagram illustrating contiguous data blocks](images/1394blkd.png)
+![diagram illustrating contiguous data blocks.](images/1394blkd.png)
 
 Optionally, the driver can specify the ASYNC\_FLAGS\_NONINCREMENTING flag for the request; then the bus driver will use the same set of addresses for each block.
 
 The following diagram illustrates asynchronous non-incrementing data blocks.
 
-![diagram illustrating asynchronous non-incrementing data blocks](images/1394blkf.png)
+![diagram illustrating asynchronous non-incrementing data blocks.](images/1394blkf.png)
 
 **Warning**  The bus driver enforces the maximum asynchronous packet size for the current connection speed between the device and the computer, and the maximum speed the device reports in the MAX\_REC field of its configuration ROM. If **nBlockSize** is greater than either of these values, the bus driver uses the enforced value for the block size. If the driver sets the ASYNC\_FLAGS\_NONINCREMENTING flag, this is unlikely to give the desired behavior. If drivers set this flag, they should check that the block size is smaller than the enforced limitations before submitting the request.
 

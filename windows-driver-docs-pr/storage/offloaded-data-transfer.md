@@ -1,22 +1,29 @@
 ---
-title: Offloaded Data Transfer
+title: Windows Storage Offloaded Data Transfer
 description: Offloaded Data Transfer
 appliesto:
 - Windows Server 2019
 - Windows Server 2016
-ms.date: 10/04/2019
+ms.date: 09/30/2021
+keywords:
+- offloaded data transfers
+- Windows offloaded data transfers
+- offloaded data transfers, storage
 ms.localizationpriority: medium
+ms.custom: contperf-fy22q1
 ---
 
-# Offloaded Data Transfer
+# Windows Storage Offloaded Data Transfer
 
 ## Overview
 
-Offloaded Data Transfer (ODX) introduces a tokenized operation to move data on storage devices. A source file and a destination file can be on the same volume, two different volumes hosted by the same machine, a local volume and a remote volume through Server Message Block (SMB2 or SMB3), or two volumes on two different machines through SMB2 or SMB3. ODX was introduced in Windows 8.
+This page describes Windows Offloaded Data Transfer (ODX) from a storage perspective. For information related to file systems and minifilters, see [Offloaded Data Transfers](/windows-hardware/drivers/ifs/offloaded-data-transfers).
+
+[Windows ODX](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831628(v=ws.11)) introduces a tokenized operation to move data on storage devices. A source file and a destination file can be on the same volume, two different volumes hosted by the same machine, a local volume and a remote volume through Server Message Block (SMB2 or SMB3), or two volumes on two different machines through SMB2 or SMB3. ODX was introduced in Windows 8.
 
 The process of an offload copy operation on ODX-capable storage devices is shown in the following diagram and described below.
 
-![Copy offload operation using ODX](images/odx.png)
+![Copy offload operation using ODX.](images/odx.png)
 
 1. The copy application sends an offload read request to the copy manager of the source storage device.
 2. The source copy manager returns a token. The token is a representation of data (ROD) to be copied.
@@ -25,7 +32,7 @@ The process of an offload copy operation on ODX-capable storage devices is shown
 
 ## Identify an ODX-Capable Source and Destination
 
-To support ODX, storage arrays must implement the related T10 standard specifications for ODX-capable storage arrays, including offload read and write operations with tokens. During the LUN device enumeration (a system boot or a plug-and-play event), Windows gathers or updates the ODX capability information of the storage target device through the following steps.
+To support ODX, storage arrays must implement the related [T10 standard specifications](https://www.t10.org/) for ODX-capable storage arrays, including offload read and write operations with tokens. During the LUN device enumeration (a system boot or a plug-and-play event), Windows gathers or updates the ODX capability information of the storage target device through the following steps.
 
 1. Query copy offload capability.
 2. Gather the required parameters for copy offload operations and limitations.
@@ -95,8 +102,6 @@ The optimal and maximum transfer length parameters specify the optimal and maxim
 
 When an ODX operation fails a file copy request, the copy engine and the Windows file system (NTFS) fall back to the legacy copy operation. If the copy offload fails in the middle of the offload write operation, the copy engine and NTFS resume with the legacy copy operation from the first failure point in the offload write.
 
-The following is the algorithm of the copy offload operation using ODX.
-
 ### ODX Error Handling
 
 ODX uses a robust error handling algorithm in accordance with the storage array’s features. If the copy offload fails in an ODX-capable path, the Windows host expects the application to fall back to the legacy copy operation. At this point, the Windows copy engine has already implemented the “fallback to traditional copy” mechanism. After the copy offload failure, NTFS marks the source and destination LUN as not ODX-capable for three minutes. After this period of time passes, the Windows copy engine retries the ODX operation. A storage array could use this feature to temporarily disable ODX support in some paths during highly stressful situations.
@@ -123,7 +128,7 @@ Currently, Windows does not issue asynchronous offload read or write SCSI comman
 
 To perform ODX operations, the application server must have access to both the source LUN and destination LUN with read/write privileges. The copy offload application issues an offload read request to the source LUN and receives a token from the copy manager of the source LUN. The copy offload applications use the token to issue an offload write request to the destination LUN. The copy manager then moves the data from the source LUN to the destination LUN through the storage network. The following diagram illustrates the most basic supported source and destination targets for offloaded data transfers.
 
-![Basic supported ODX source and destination targets](images/odx-scenarios.png)
+![Basic supported ODX source and destination targets.](images/odx-scenarios.png)
 
 ### ODX Operation with One Server
 

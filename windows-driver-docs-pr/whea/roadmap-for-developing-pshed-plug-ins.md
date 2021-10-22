@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Roadmap for Developing PSHED Plug-Ins
 
 
-![figure of a compass, a map, and a finger pointing at the map](images/map-hand-sml.png)
+![figure of a compass, a map, and a finger pointing at the map.](images/map-hand-sml.png)
 
 The platform-specific hardware error driver (PSHED) is a component of Windows Hardware Error Architecture (WHEA) that is used to collect platform-specific error information. The PSHED provides an abstraction layer above the hardware error reporting capabilities of the underlying platform, By providing this layer, the PSHED hides the details of a platform's error handling capabilities from the operating system, and exposes a consistent error handling interface to the Windows operating system.
 

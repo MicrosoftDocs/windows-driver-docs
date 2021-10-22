@@ -1,26 +1,29 @@
 ---
 title: V4 Driver Manifest
 description: The v4 print driver manifest contains printer-specific setup directives and is used in conjunction with an INF file.
-ms.date: 07/13/2018
+ms.date: 08/30/2021
 ms.localizationpriority: medium
 ---
 
 # V4 Driver Manifest
 
-
 The v4 print driver manifest is a text file that contains all the printer-specific setup directives. A v4 print driver manifest is used in conjunction with a v4 print driver INF file, as part of the set up for a printer-specific v4 print driver.
 
 The directives in a manifest are organized into sections:
 
--   [DriverConfig Section](#driverconfig-section)
--   [BidiFiles Section](#bidifiles-section)
--   [DriverRender Section](#driverrender-section)
--   [FileSave Section](#filesave-section)
--   [PrinterExtensions Section](#printerextensions-section)
--   [Related topics](#related-topics)
+- [DriverConfig Section](#driverconfig-section)
+
+- [BidiFiles Section](#bidifiles-section)
+
+- [DriverRender Section](#driverrender-section)
+
+- [FileSave Section](#filesave-section)
+
+- [PrinterExtensions Section](#printerextensions-section)
+
+- [Related topics](#related-topics)
 
 ## DriverConfig Section
-
 
 The following table shows the directives that are used in the DriverConfig section.
 
@@ -208,10 +211,7 @@ All queues which use the same Manufacturer string in the INF use the same user p
 </tbody>
 </table>
 
- 
-
 ## BidiFiles Section
-
 
 The BidiFiles section is used to define Bidi extension files. It is identical to the Windows 7 format for TCP and WSD. The USB keywords are new.
 
@@ -258,10 +258,7 @@ The following table shows the directives that are used in the BidiFiles section.
 </tbody>
 </table>
 
- 
-
 ## DriverRender Section
-
 
 The following table shows the directives that are used in the DriverRender section.
 
@@ -318,8 +315,6 @@ The following table shows the directives that are used in the DriverRender secti
 </tbody>
 </table>
 
- 
-
 The MxdcImageType keyword for the PageOutputQuality directive has the following allowed values:
 
 <table>
@@ -351,10 +346,7 @@ The MxdcImageType keyword for the PageOutputQuality directive has the following 
 </tbody>
 </table>
 
- 
-
 ## FileSave Section
-
 
 This section supports the file-save scenario. When a v4 print driver is installed against the new PORTPROMPT port type, this section specifies the file extensions to be shown in the **Common File** window, and also specifies the localizable resource strings that support the extensions and the dialog box itself.
 
@@ -392,10 +384,7 @@ This section supports the file-save scenario. When a v4 print driver is installe
 </tbody>
 </table>
 
- 
-
 ## PrinterExtensions Section
-
 
 The PrinterExtensions section specifies a printer extension and the invocation modes it supports. For both of these entries, the app will automatically be registered with the print system. In addition, the app will be configured with two different parameters, the PrinterDriverID and the ReasonID, in that order. As a result, each entry must use a different PrinterExtensionID GUID.
 
@@ -432,11 +421,9 @@ The following table shows the directives that are used in the PrinterExtensions 
 </tbody>
 </table>
 
- 
-
 The following is a sample of a v4 print driver manifest.
 
-```INF
+```inf
 [DriverConfig]
 DataFile=FAPDL.xml
 RequiredFiles=UNIRES.DLL,STDNAMES.GPD,STDDTYPE.GDL,STDSCHEM.GDL,STDSCHMX.GDL,XPSSVCS.DLL,MSXPSINC.GPD,PWGRRenderFilter.DLL
@@ -469,7 +456,5 @@ PrintPreferences=FAapp.exe,{GUID2}
 ```
 
 ## Related topics
+
 [Printer INF File Entries](printer-inf-file-entries.md)  
-
-
-

@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID
-description: The WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID property specifies a class identifier (CLSID) that represents a set of device property values.
+title: WIA_IPA_PROP_STREAM_COMPAT_ID
+description: The WIA_IPA_PROP_STREAM_COMPAT_ID property specifies a class identifier (CLSID) that represents a set of device property values.
 keywords: ["WIA_IPA_PROP_STREAM_COMPAT_ID Imaging Devices"]
 topic_type:
 - apiref
@@ -10,115 +10,41 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/05/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID
+# WIA_IPA_PROP_STREAM_COMPAT_ID
 
+The WIA_IPA_PROP_STREAM_COMPAT_ID property specifies a class identifier (CLSID) that represents a set of device property values.
 
-The WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID property specifies a class identifier (CLSID) that represents a set of device property values.
+Property Type: VT_CLSID
 
-## <span id="ddk_wia_ipa_prop_stream_compat_id_si"></span><span id="DDK_WIA_IPA_PROP_STREAM_COMPAT_ID_SI"></span>
-
-
-Property Type: VT\_CLSID
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read-only
 
 ## Remarks
 
-If a device driver implements the WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID property, applications use this property to determine whether the device supports a set of values.
+If a device driver implements the WIA_IPA_PROP_STREAM_COMPAT_ID property, applications use this property to determine whether the device supports a set of values.
 
-The following table describes the constants that are valid with WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID.
+The following table describes the constants that are valid with WIA_IPA_PROP_STREAM_COMPAT_ID.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Format</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WiaImgFmt_BMP</p></td>
-<td><p>Microsoft Windows bitmap with a header file</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_EMF</p></td>
-<td><p>Extended Windows metafile</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_EXIF</p></td>
-<td><p>Exchangeable File Format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_FLASHPIX</p></td>
-<td><p>FlashPix format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_GIF</p></td>
-<td><p>GIF image format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_ICO</p></td>
-<td><p>Windows icon file format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_JPEG</p></td>
-<td><p>JPEG compressed format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_PHOTOCD</p></td>
-<td><p>Eastman Kodak file format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_PNG</p></td>
-<td><p>W3C PNG format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_MEMORYBMP</p></td>
-<td><p>Windows bitmap without a header file</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_TIFF</p></td>
-<td><p>Tag Image File Format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_WMF</p></td>
-<td><p>Windows metafile</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Format | Description |
+|--|--|
+| WiaImgFmt_BMP | Microsoft Windows bitmap with a header file |
+| WiaImgFmt_EMF | Extended Windows metafile |
+| WiaImgFmt_EXIF | Exchangeable File Format |
+| WiaImgFmt_FLASHPIX | FlashPix format |
+| WiaImgFmt_GIF | GIF image format |
+| WiaImgFmt_ICO | Windows icon file format |
+| WiaImgFmt_JPEG | JPEG compressed format |
+| WiaImgFmt_PHOTOCD | Eastman Kodak file format |
+| WiaImgFmt_PNG | W3C PNG format |
+| WiaImgFmt_MEMORYBMP | Windows bitmap without a header file |
+| WiaImgFmt_TIFF | Tag Image File Format |
+| WiaImgFmt_WMF | Windows metafile |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

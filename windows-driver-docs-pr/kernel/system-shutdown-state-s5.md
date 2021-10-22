@@ -25,5 +25,4 @@ State S5 has the following characteristics:
 
 For a comparison between system power states and more info on S5, see [System Power States](/windows/win32/power/system-power-states).
 
-For info on S1-S4, see [System Sleeping States](/windows-hardware/drivers/kernel/system-sleeping-states).
-
+For info on S1-S4, see [System Sleeping States](./system-sleeping-states.md).

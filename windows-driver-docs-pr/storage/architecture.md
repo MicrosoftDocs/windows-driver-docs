@@ -12,7 +12,7 @@ Before discussing the enumeration and discovery process for 1667-compatible mass
 
 When a USB mass storage device is connected to a Windows XP or Vista host system, the kernel-mode driver USBStor is installed and loaded. This driver creates a number of disk Physical Device Objects (PDOs) equal to the number of logical units (LUNs) present on the device. Figure 1 illustrates the driver stack for a single LUN USB flash device (UFD).
 
-![figure 1: driver stack for legacy usb mass storage](images/enhancedstorage-1.png)
+![figure 1: driver stack for legacy usb mass storage.](images/enhancedstorage-1.png)
 
 When the device is connected to the system, data storage media available at LUN 0 is made accessible through the disk device represented by the disk PDO. PartMgr recognizes the partition information stored on the media, and VolMgr uses this information to create one or more Volume PDOs that represent logical partitions on the media. Each volume is inspected to identify the file system type, and then the appropriate file system is mounted for that volume. Applications then address this mounted volume through the system API, using the familiar file-path nomenclature that incorporates a DOS drive letter (for example, *E:\\myfile*).
 

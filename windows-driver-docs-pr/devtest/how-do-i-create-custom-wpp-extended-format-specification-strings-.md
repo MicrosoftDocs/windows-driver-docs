@@ -26,7 +26,7 @@ In this example, a complex data type (IPV6ADDR) is defined, which can then be us
 
 To create the IPV6ADDR complex data type, add the following statements to the LocalWpp.ini configuration file:
 
-1.  <span codelanguage=""></span>
+1.  <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -42,7 +42,7 @@ To create the IPV6ADDR complex data type, add the following statements to the Lo
 
     The statement also specifies the name of a helper macro (WPP\_LOGIPV6) that is used by the WPP preprocessor when it parses an IPV6ADDR complex type in the source code of your [trace provider](trace-provider.md).
 
-2.  <span codelanguage=""></span>
+2.  <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -77,7 +77,7 @@ In this example, a complex data type (HEXDUMP) is defined which can then be used
 
 To create the HEXDUMP complex data type, add the following statements to the LocalWpp.ini configuration file:
 
-1.  <span codelanguage=""></span>
+1.  <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -93,7 +93,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
 
     The statement also specifies the name of a helper macro (WPP\_LOGHEXDUMP) that is used by the WPP preprocessor when it parses a HEXDUMP complex type in the source code of your [trace provider](trace-provider.md).
 
-2.  <span codelanguage=""></span>
+2.  <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -111,7 +111,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
 
     This statement defines a structure that is used to save the length and address of a variable-length buffer. This structure is initialized in the LOG\_LENSTR macro, and is local to each invocation of [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) in which the HEXDUMP complex type is used within the *FormatString* parameter.
 
-3.  <span codelanguage=""></span>
+3.  <span></span>
     <table>
     <colgroup>
     <col width="100%" />
@@ -125,7 +125,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
 
     This statement defines the macro that is used to initialize an xstr\_t structure for the variable-length buffer. You must use this macro to pass the variable-length buffer in the *VariableList* parameter of [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
 
-4.  <span codelanguage=""></span>
+4.  <span></span>
     <table>
     <colgroup>
     <col width="100%" />

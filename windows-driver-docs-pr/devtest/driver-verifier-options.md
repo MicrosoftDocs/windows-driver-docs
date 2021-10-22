@@ -4,7 +4,7 @@ description: Driver Verifier options and rule classes
 keywords:
 - Driver Verifier WDK , options listed
 - errors WDK Driver Verifier
-ms.date: 11/02/2020
+ms.date: 06/29/2021
 ms.localizationpriority: medium
 ---
 
@@ -114,14 +114,6 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 [IRP Logging](irp-logging.md)
 
 (Windows Server 2003 and later) When this option is active, Driver Verifier monitors a driver's use of IRPs and creates a log of IRP use.
-
-[Disk Integrity Checking](disk-integrity-checking.md)
-
-(Introduced in Windows Server 2003. Not available in Windows 7 and later.) When this option is active, Driver Verifier monitors hard disk access, and detects whether the disk is preserving its data correctly.
-
-[SCSI Verification](scsi-verification.md)
-
- When this option is active, Driver Verifier monitors a SCSI miniport driver for improper use of exported SCSI port routines, excessive delays, and improper handling of SCSI requests.
 
 [Storport Verification](dv-storport-verification.md)
 

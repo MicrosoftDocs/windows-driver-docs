@@ -212,8 +212,6 @@
       href: whql-test-signature-program.md
     - name: "MakeCert Test Certificate"
       href: makecert-test-certificate.md
-    - name: "Commercial Test Certificate"
-      href: commercial-test-certificate.md
     - name: "Enterprise CA Test Certificate"
       href: enterprise-ca-test-certificate.md
     - name: "Test-Signing Driver Packages"
@@ -250,14 +248,10 @@
       href: introduction-to-release-signing.md
     - name: "How to Release-Sign a Driver Package"
       href: how-to-release-sign-a-driver-package.md
-    - name: "Obtaining a Software Publisher Certificate (SPC)"
-      href: obtaining-a-software-publisher-certificate--spc-.md
     - name: "Personal Information Exchange (.pfx) Files"
       href: personal-information-exchange---pfx--files.md
     - name: "Importing an SPC into a Certificate Store"
       href: importing-an-spc-into-a-certificate-store.md
-    - name: "Determining an SPC's Cross-Certificate"
-      href: determining-an-spc-s-cross-certificate.md
     - name: "Creating a Catalog File for Release-Signing a Driver Package"
       href: creating-a-catalog-file-for-release-signing-a-driver-package.md
     - name: "Release-Signing a Driver Package's Catalog File"
@@ -274,24 +268,12 @@
       href: whql-release-signature.md
     - name: "Release Certificates"
       href: release-certificates.md
-    - name: "Software Publisher Certificate"
-      href: software-publisher-certificate.md
-    - name: "Commercial Release Certificate"
-      href: commercial-release-certificate.md
     - name: "Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates"
       href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md  
-    - name: "Release-Signing Driver Packages"
-      href: release-signing-driver-packages.md
-    - name: "Release-Signing a Driver File"
-      href: release-signing-a-driver-file.md
     - name: "Verifying the Signature of a Release-Signed Driver File"
       href: verifying-the-signature-of-a-release-signed-driver-file.md
     - name: "Creating a Catalog File for a PnP Driver Package "
       href: creating-a-catalog-file-for-a-pnp-driver-package.md
-    - name: "Signing a Catalog File with an SPC"
-      href: signing-a-catalog-file-with-an-spc.md
-    - name: "Verifying the SPC Signature of a Catalog File"
-      href: verifying-the-spc-signature-of-a-catalog-file.md
     - name: "Signing a Catalog File with a Commercial Release Certificate"
       href: signing-a-catalog-file-with-a-commercial-release-certificate.md
     - name: "Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate"
@@ -836,6 +818,8 @@
     href: inf-version-section.md
 - name: "INF Directives"
   items: 
+  - name: "INF AddAutoLogger and UpdateAutoLogger Directives"
+    href: inf-addupdateautologger-directive.md
   - name: "INF AddComponent Directive"
     href: inf-addcomponent-directive.md
   - name: "INF AddEventProvider Directive"
@@ -916,10 +900,6 @@
     href: enumerating-installed-device-interface-classes.md
   - name: "Accessing the Properties of Installed Device Interfaces"
     href: accessing-the-properties-of-installed-device-interface-classes.md
-  - name: "Modifying Registry Keys by Class Installers and Co-installers"
-    href: modifying-registry-keys-by-class-installers-and-co-installers.md
-  - name: "Modifying Registry Values by Class Installers and Co-installers"
-    href: modifying-registry-values-by-class-installers-and-co-installers.md
   - name: "Deleting the Registry Keys of a Device"
     href: deleting-the-registry-keys-of-a-device.md
   - name: "Calling SetupAPI Functions"
@@ -944,8 +924,6 @@
     href: installing-a-new-bus-driver.md
   - name: "Using Custom Hardware IDs and Compatible IDs"
     href: using-custom-hardware-ids-and-compatible-ids.md
-  - name: "Installing a New Device Setup Class for a Bus"
-    href: installing-a-new-device-setup-class-for-a-bus.md
   - name: "Installing Private Builds of In-box Drivers"
     href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
   - name: "Overview of Installing Private Builds of In-box Drivers"

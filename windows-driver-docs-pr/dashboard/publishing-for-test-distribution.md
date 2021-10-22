@@ -48,7 +48,7 @@ Configuring a system to receive test distribution updates can be performed with 
 4.  Under the \\Partner subkey, create a string named **TargetRing** and type **Drivers** as the value
 5.  Make sure you have the setting as shown below:
 
-    ![an image showing the created string under the partner subkey, within the windows registry editor](images/registry-editor-drivers.png)
+    ![an image showing the created string under the partner subkey, within the windows registry editor.](images/registry-editor-drivers.png)
 
 6.  Exit Windows Registry Editor. You do not need to restart the computer after this change.
 7.  Do one of the following:
@@ -58,7 +58,7 @@ Configuring a system to receive test distribution updates can be performed with 
 
     -   If you run into issues, contact Customer Service and Support.
 
-        ![an image showing the button to contact customer service and support](images/dashboard-help-button.png)
+        ![an image showing the button to contact customer service and support.](images/dashboard-help-button.png)
 
 ### <span id="How_do_I_stop_my_PC_from_receiving_test_distribution_drivers_"></span><span id="how_do_i_stop_my_pc_from_receiving_test_distribution_drivers_"></span><span id="HOW_DO_I_STOP_MY_PC_FROM_RECEIVING_TEST_DISTRIBUTION_DRIVERS_"></span>How do I stop my PC from receiving test distribution drivers?
 
@@ -73,7 +73,7 @@ To stop receiving test distribution drivers, remove the **TargetRing** registry 
 3.  Under \\Partner subkey, remove the data value for **TargetRing**
 4.  Make sure the setting appears as shown below:
 
-    ![an image showing the removed string value under the partner subkey, within the windows registry editor](images/registry-editor-no-drivers.png)
+    ![an image showing the removed string value under the partner subkey, within the windows registry editor.](images/registry-editor-no-drivers.png)
 
 5.  Exit Windows Registry Editor. You do not need to restart the computer after this change.
 6.  Do one of the following:

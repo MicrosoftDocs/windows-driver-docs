@@ -85,7 +85,7 @@ Optionally, separate INF files can be used for the DSP and Codec.
 
 This diagram summarizes a componentized audio installation.
 
-![The componentized audio stack showing DSP driver codec and APOs](images/audio-componentized-stack-diagram.png)
+![The componentized audio stack showing DSP driver codec and APOs.](images/audio-componentized-stack-diagram.png)
 
 A separate extension INF file is used to customize each base driver component for a particular system. Customizations include tuning parameters and other system-specific settings. For more information, see
 [Using an Extension INF File](../install/using-an-extension-inf-file.md).
@@ -195,7 +195,6 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
 | tabletaudiosample.inf      | An information (INF) file that contains information needed to install the driver. |
 | sysvad.cat                 | The catalog file.                                                                 |
 | SwapAPO.dll                | A sample driver extension for a UI to manage APOs.                                |
-| PropPageExt.dll            | A sample driver extension for a property page.                                    |
 | KeywordDetectorAdapter.dll | A sample keyword detector.                                                        |
 
 ## Install and test the driver

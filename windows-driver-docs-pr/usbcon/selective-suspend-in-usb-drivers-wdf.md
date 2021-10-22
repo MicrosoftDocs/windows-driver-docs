@@ -44,7 +44,7 @@ If your USB driver supports selective suspend and is layered above the PPO in it
 
 Figure 1 shows the flow of I/O requests to a USB driver through its I/O queues.
 
-![flow of requests to a wdf usb driver](images/flowrequestswdfusbdriver.png)
+![flow of requests to a wdf usb driver.](images/flowrequestswdfusbdriver.png)
 
 In the figure, a request arrives for a USB driver. The framework adds the request to the appropriate queue.
 

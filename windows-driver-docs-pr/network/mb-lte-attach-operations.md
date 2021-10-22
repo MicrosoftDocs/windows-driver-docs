@@ -83,7 +83,7 @@ Per the 3GPP standard, the default LTE attach context can be split into two cate
 
 The following diagram illustrates an example flow of LTE attach configuration.
 
-![LTE attach config example flow](images/LTE_attach_1.png "LTE attach config example flow")
+![LTE attach config example flow.](images/LTE_attach_1.png "LTE attach config example flow")
 
 #### Query
 
@@ -220,7 +220,7 @@ During runtime, the OS should also be able to query what the last used attach in
 
 The below diagram illustrates an example message flow for LTE attach status.
 
-![LTE attach status example flow](images/LTE_attach_2.png "LTE attach status example flow")
+![LTE attach status example flow.](images/LTE_attach_2.png "LTE attach status example flow")
 
 #### Query
 
