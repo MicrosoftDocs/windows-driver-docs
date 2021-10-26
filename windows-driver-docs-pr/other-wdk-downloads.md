@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 08/05/2021
+ms.date: 10/25/2021
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
@@ -20,8 +20,6 @@ download on [Download the Windows Driver Kit (WDK)](download-the-wdk.md).
 
 To use these earlier versions, you must *first* install the version of
 Visual Studio that is appropriate for your targeted platform.
-
-## Install a previous WDK version
 
 ## Runtime requirements
 
