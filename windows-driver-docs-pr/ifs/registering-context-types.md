@@ -5,13 +5,13 @@ keywords:
 - contexts WDK file system minifilter , registering types
 - registering context types
 - FLT_CONTEXT_REGISTRATION
-ms.date: 01/22/2021
+ms.date: 10/25/2021
 ms.localizationpriority: medium
 ---
 
 # Registering context types
 
-A minifilter driver must register each type of context that it uses.
+A minifilter driver must first register each type of context that it uses. Once a minifilter has registered the context types that it uses, it can [create a context](creating-contexts.md).
 
 ## Steps to register a context type
 
