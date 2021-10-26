@@ -27,6 +27,10 @@ This section contains the following topics:
 
 [ACPI Power Meter Interface](acpi-power-meter-interface.md)
 
+[Energy Meter Interface](energy-meter-interface.md)
+
+[EMI naming convention](rail_naming.md)
+
 
 
  
