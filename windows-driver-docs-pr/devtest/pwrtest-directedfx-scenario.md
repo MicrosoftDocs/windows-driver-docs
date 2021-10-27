@@ -1,7 +1,7 @@
 ---
 title: PwrTest DirectedFx Scenario
 description: The PwrTest Directed Power Framework Scenario is designed to test PoFx v3 functionality.
-ms.date: 03/27/2019
+ms.date: 10/27/2021
 ms.custom: 19H1
 ---
 
@@ -24,14 +24,17 @@ For the specified device, the test verifies that:
 For each cycle, the test shows:
 
 - Time the system was in idle resiliency
+ 
 - Time that Directed [Deepest Runtime Idle Platform State (DRIPS)](/windows-hardware/design/device-experiences/prepare-hardware-for-modern-standby) was disengaged
     - Time each individual reason was active
+
 - Individual statistics and an optional fail reason for all test devices
     - `Device {Test Device} failed because device {Failed Device} {Failed Reason}`.
         - Is either a paging device or the debugging device
         - Does not support DFx
         - Has a constraint on a component
         - Failed its DFx power down call
+
 - Each broadcast tree and all participant devices
 
 Running the test for three cycles is recommended to ensure the device(s) can undergo multiple directed power transitions.  Once all cycles are complete, the test outputs the total number of success/failure cycles.
@@ -65,5 +68,10 @@ pwrtest /directedfx
 
 ## Related topics
 
-
 [PwrTest Syntax](pwrtest-syntax.md)
+
+[Introduction to the Directed Power Management Framework](/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework)
+
+[Directed FX System Verification Test](/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
+
+[PwrTest DirectedFx Scenario](/windows-hardware/drivers/devtest/pwrtest-directedfx-scenario)
