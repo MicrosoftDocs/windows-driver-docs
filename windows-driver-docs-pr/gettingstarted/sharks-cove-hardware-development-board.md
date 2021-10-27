@@ -18,7 +18,7 @@ The Intel Sharks Cove board supports driver development for devices that use a v
 
 The instructions given here require that you are running Windows 10, Windows 8.1, or Windows 7. These instructions do not work if you are running Windows 8.
 
-If you are running Windows 7, you need to install [PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0/rss.aspx) and the[Windows Assessment and Deployment Kit (ADK) for Windows 8.1 Update](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
+If you are running Windows 7, you need to install [PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0/rss.aspx) and the[Windows Assessment and Deployment Kit (ADK) for Windows 8.1 Update](/windows-hardware/get-started/adk-install). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
 
 ## Step 1: Get the board and related hardware
 
@@ -73,7 +73,7 @@ If the use of this software is in support of the Hardware Developer Program the 
   - All provisions in Section 1.b. that do not directly conflict with the amended section above, shall apply.
 - **By using the software, you accept these terms.** If you do not accept and comply with these terms, you may not use the software or its features.
 
-Download [Windows Embedded 8.1 Industry (x86) Pro Evaluation](https://www.microsoft.com/en-us/download/details.aspx?id=40745) or Windows Embedded 8.1 Industry Pro with Update (x86) - DVD.
+Download [Windows Embedded 8.1 Industry (x86) Pro Evaluation](/download/details.aspx?id=40745) or Windows Embedded 8.1 Industry Pro with Update (x86) - DVD.
 Locate the downloaded file. For example,
 
 9600.17050.WINBLUE\_REFRESH...X86FRE\_EN-US\_DV9.ISO.
