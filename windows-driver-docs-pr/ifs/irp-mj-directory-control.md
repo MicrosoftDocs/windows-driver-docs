@@ -8,7 +8,7 @@ api_name:
 - IRP_MJ_DIRECTORY_CONTROL
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 10/26/2021
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +24,9 @@ The file system driver should check the minor function code to determine which d
 
 | Term | Description |
 | ---- | ----------- |
-| IRP_MN_QUERY_DIRECTORY | Indicates a directory query request. The types of information that can be queried are file-system-dependent, but generally include the following: FileBothDirectoryInformation, FileDirectoryInformation, FileFullDirectoryInformation, FileIdBothDirectoryInformation, FileIdFullDirectoryInformation, FileNamesInformation, FileObjectIdInformation, FileReparsePointInformation |
-| IRP_MN_NOTIFY_CHANGE_DIRECTORY | Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP. Returns information in a [**FILE_NOTIFY_INFORMATION**](link) structure.|
-| IRP_MN_NOTIFY_CHANGE_DIRECTORY_EX | Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP. Returns information based on the specified *IrpSp->Parameters.NotifyDirectoryEx.DirectoryNotifyInformationClass*.|
+| IRP_MN_QUERY_DIRECTORY | Indicates a directory query request. The types of information that can be queried are file-system-dependent, but generally include the following: FileBothDirectoryInformation, FileDirectoryInformation, FileFullDirectoryInformation, FileIdBothDirectoryInformation, FileIdFullDirectoryInformation, FileNamesInformation, FileObjectIdInformation, FileReparsePointInformation. |
+| IRP_MN_NOTIFY_CHANGE_DIRECTORY | Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP. The file system driver returns the information in a [**FILE_NOTIFY_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_notify_information) structure.|
+| IRP_MN_NOTIFY_CHANGE_DIRECTORY_EX | Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP. The file system driver returns information based on the specified *IrpSp->Parameters.NotifyDirectoryEx.DirectoryNotifyInformationClass*.|
 
 > [!NOTE]
 > The FileQuotaInformation information class is obsolete. [**IRP_MJ_QUERY_QUOTA**](irp-mj-query-quota.md) should be used instead.
