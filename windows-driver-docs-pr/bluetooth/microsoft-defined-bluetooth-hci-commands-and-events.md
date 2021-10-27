@@ -802,7 +802,7 @@ Verdict: **PASS**
 | Pattern to be matched at position 0x00 for AD Type 0x01 | 0x01                              |
 | Bytes at position 0x00 for the AD Type 0x01             | 0x01                              |
 | AD Type of second pattern to be matched                 | 0xFF (Manufacturer specific data) |
-| Length of second pattern to be matched                  | 0x06 - 0x02 = 0x04 bytes          |
+| Length of second pattern to be matched                  | 0x05 - 0x02 = 0x03 bytes          |
 | Pattern to be matched at position 0x00 for AD Type 0xFF | 0x00 0x06 0xFF                    |
 | Bytes at position 0x00 for the AD Type 0xFF             | 0x00 0x06 0xFF                    |
 
