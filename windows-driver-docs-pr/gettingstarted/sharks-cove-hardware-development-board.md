@@ -18,7 +18,7 @@ The Intel Sharks Cove board supports driver development for devices that use a v
 
 The instructions given here require that you are running Windows 10, Windows 8.1, or Windows 7. These instructions do not work if you are running Windows 8.
 
-If you are running Windows 7, you need to install [PowerShell 4.0](https://go.microsoft.com/fwlink/p?linkid=507377) and the[Windows Assessment and Deployment Kit (ADK) for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?linkid=239721). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
+If you are running Windows 7, you need to install [PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0/rss.aspx) and the[Windows Assessment and Deployment Kit (ADK) for Windows 8.1 Update](/windows-hardware/get-started/adk-install). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
 
 ## Step 1: Get the board and related hardware
 
@@ -31,7 +31,7 @@ You will need this hardware:
 - USB network adapter
 - Monitor and HDMI cable (and possibly adapters)
 
-You can get a Sharks Cove board at [Mouser Electronics](https://go.microsoft.com/fwlink/p?linkid=403172).
+You can get a Sharks Cove board at [Mouser Electronics](https://www.mouser.com/ProductDetail/CircuitCo/999-0005112/?qs=%2Fha2pyFadujHMsjnM70kKGG23vMNVMdDa094WOKuFgB8eIBF6%252bBXww%3D%3D).
 
 ## Step 2: Download kits and tools
 
@@ -39,7 +39,7 @@ A driver development environment has two computers: the *host computer* and the 
 
 To develop hardware and drivers for the Sharks Cove board, you need these kits and tools on the host computer:
 
-- [Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=533470)
+- [Visual Studio](https://visualstudio.microsoft.com/)
 - [Windows Driver Kit (WDK), WDK Test Pack, and Debugging Tools for Windows](../download-the-wdk.md)
 
 On the host computer, first download Visual Studio, then download the WDK, and then download the WDK Test Pack. You do not need to download Debugging Tools for Windows separately, because it is included in the WDK.
@@ -73,7 +73,7 @@ If the use of this software is in support of the Hardware Developer Program the 
   - All provisions in Section 1.b. that do not directly conflict with the amended section above, shall apply.
 - **By using the software, you accept these terms.** If you do not accept and comply with these terms, you may not use the software or its features.
 
-Download [Windows Embedded 8.1 Industry (x86) Pro Evaluation](https://go.microsoft.com/fwlink/p?linkid=403173) or Windows Embedded 8.1 Industry Pro with Update (x86) - DVD.
+Download [Windows Embedded 8.1 Industry (x86) Pro Evaluation](/download/details.aspx?id=40745) or Windows Embedded 8.1 Industry Pro with Update (x86) - DVD.
 Locate the downloaded file. For example,
 
 9600.17050.WINBLUE\_REFRESH...X86FRE\_EN-US\_DV9.ISO.
@@ -99,7 +99,7 @@ Double click your ISO file, and copy these files to *Root*\\Setup.
 
 Get the Sharks Cove board support package (BSP). Copy all the files in the package to *Root*\\SharksCoveBsp.
 
-Get the [WDK Development Boards Add-on Kit](https://go.microsoft.com/fwlink/p/?linkid=403174). Open the **SourceCode** tab. Click **Download** (not the Downloads tab) to get the kit scripts. Open the Scripts folder, and copy these two items to *Root*.
+Get the WDK Development Boards Add-on Kit. Open the **SourceCode** tab. Click **Download** (not the Downloads tab) to get the kit scripts. Open the Scripts folder, and copy these two items to *Root*.
 
 - Create-DevboardImage.ps1
 - DevBoard folder
@@ -188,7 +188,7 @@ Before you write a device driver for the Sharks Cove board, it is helpful to fam
 
 If you are writing a driver for a driver for a device that connects to a simple peripheral bus (SPB) on the Sharks Cove board, you need to update the Secondary System Description Table (SSDT) in the Sharks Cove firmware. An example of this is writing a driver for an accelerometer that transfers data over an I2C bus and generates interrupts through a general-purpose I/O (GPIO) pin. For more information, see [Simple Peripheral Buses](/previous-versions//hh450903(v=vs.85)).
 
-Here's an example of altering the SSDT. We will add a table entry for the [ADXL345](https://go.microsoft.com/fwlink/p?linkid=401463) accelerometer.
+Here's an example of altering the SSDT. We will add a table entry for the [ADXL345](https://www.sparkfun.com/products/9836) accelerometer.
 
 >[!NOTE]
 >See the [SpbAccelerometer driver cookbook](../sensors/spbaccelerometer-driver-cookbook.md) for a step-by-step guide to the [SpbAccelerometer sample driver](/samples/browse/) and the ADXL345 accelerometer.
