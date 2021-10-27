@@ -158,7 +158,7 @@ EvtWifiDeviceCreateWifiDirectDevice(
 
 Client drivers create the station adapter and WfdRole adapter using the same event callback: [*EvtWifiDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_adapter). 
 - Call [**WifiAdapterGetType**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadaptergettype) to determine the adapter type. 
-- If the driver needs to query the adapter type from the NETADAPTER_INIT object before the adapter is created, call [**WifiAdapterInitGetType**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapterinitgettype.md). 
+- If the driver needs to query the adapter type from the NETADAPTER_INIT object before the adapter is created, call [**WifiAdapterInitGetType**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapterinitgettype). 
 - Call [**WifiAdapterGetPortId**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadaptergetportid) determine the port ID (used in message commands). 
 
 
