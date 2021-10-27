@@ -785,13 +785,13 @@ The controller then receives the following advertisement packets.
 | AD Type of first pattern to be matched                  | 0x01                              |
 | Length of first pattern to be matched                   | 0x03 - 0x02 = 0x01 byte           |
 | Pattern to be matched at position 0x00 for AD Type 0x01 | 0x01                              |
-| Bytes at position 0x00 for the AD Type 0x01             | 0x01                              |
+| Bytes at position 0x00 for the AD Type 0x01             | 0x01 _(MATCH!)_                   |
 | AD Type of second pattern to be matched                 | 0xFF (Manufacturer specific data) |
 | Length of second pattern to be matched                  | 0x06 - 0x02 = 0x04 bytes          |
 | Pattern to be matched at position 0x00 for AD Type 0xFF | 0x00 0x06 0xFF 0xFF               |
-| Bytes at position 0x00 for the AD Type 0xFF             | 0x00 0x06 0xFF 0xFF               |
+| Bytes at position 0x00 for the AD Type 0xFF             | 0x00 0x06 0xFF 0xFF _(MATCH!)_    |
 
-Verdict: **PASS**
+Verdict: **PASS** (both patterns match)
 
 #### Evaluating match for Advertisement packet [B]
 
@@ -800,13 +800,13 @@ Verdict: **PASS**
 | AD Type of first pattern to be matched                  | 0x01                              |
 | Length of first pattern to be matched                   | 0x03 - 0x02 = 0x01 byte           |
 | Pattern to be matched at position 0x00 for AD Type 0x01 | 0x01                              |
-| Bytes at position 0x00 for the AD Type 0x01             | 0x01                              |
+| Bytes at position 0x00 for the AD Type 0x01             | 0x01 _(MATCH!)_                   |
 | AD Type of second pattern to be matched                 | 0xFF (Manufacturer specific data) |
-| Length of second pattern to be matched                  | 0x05 - 0x02 = 0x03 bytes          |
-| Pattern to be matched at position 0x00 for AD Type 0xFF | 0x00 0x06 0xFF                    |
-| Bytes at position 0x00 for the AD Type 0xFF             | 0x00 0x06 0xFF                    |
+| Length of second pattern to be matched                  | 0x06 - 0x02 = 0x04 bytes          |
+| Pattern to be matched at position 0x00 for AD Type 0xFF | 0x00 0x06 0xFF 0xFF               |
+| Bytes at position 0x00 for the AD Type 0xFF             | 0x00 0x06 0xFF _(no match)_       |
 
-Verdict: **PASS**
+Verdict: **PASS** (only first pattern matches)
 
 ### Evaluating match for Advertisement packet [C]
 
@@ -816,8 +816,12 @@ Verdict: **PASS**
 | Length of first pattern to be matched                   | 0x03 - 0x02 = 0x01 byte                                            |
 | Pattern to be matched at position 0x00 for AD Type 0x01 | 0x01                                                               |
 | Bytes at position 0x00 for the AD Type 0x01             | Undefined. The advertisement does not have data with AD Type 0x01. |
+| AD Type of second pattern to be matched                 | 0xFF (Manufacturer specific data)                                  |
+| Length of second pattern to be matched                  | 0x06 - 0x02 = 0x04 bytes                                           |
+| Pattern to be matched at position 0x00 for AD Type 0xFF | 0x00 0x06 0xFF 0xFF                                                |
+| Bytes at position 0x00 for the AD Type 0xFF             | 0x00 0x06 0xFF 0xFF _(MATCH!)_                                     |
 
-Verdict: **FAIL**
+Verdict: **PASS** (only second pattern matches)
 
 ### Example: Advertisement monitoring
 
