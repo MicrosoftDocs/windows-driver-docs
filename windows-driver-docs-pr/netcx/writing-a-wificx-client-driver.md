@@ -84,7 +84,7 @@ Commands are exchanged through a set of callback functions provided by the clien
 
 - Unsolicited indications are also notified via **WifiDeviceReceiveIndication**, but with the message ID set to **0**.
 
-![Flow chart showing WiFiCx driver command message handling.](images/wificx_command.png)
+![Flow chart showing WiFiCx driver command message handling.](images/wificx_command1.png)
 
 ## Wi-Fi Direct (P2P) support
 
