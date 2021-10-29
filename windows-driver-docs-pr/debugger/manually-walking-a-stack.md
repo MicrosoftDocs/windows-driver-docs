@@ -193,7 +193,7 @@ rdr!__strnicmp+0xa8:
 fe68204e 0000             add     [eax],al 
 ```
 
-Based on this, it appears that **RdrReconnectConnection** called **CleanupTransportConnection**, to **RdrTdiDisconnect**, to **ZwCloseObjectAuditAlarm**, to **KiSystemServiceExit**. The other functions on the stack are probably leftover portions of previously active stacks.
+Based on this, it appears that **RdrReconnectConnection** called **CleanupTransportConnection**, to **RdrTdiDisconnect**, to **ZwCloseObjectAuditAlarm**, to **KiServiceExit**. The other functions on the stack are probably leftover portions of previously active stacks.
 
 In this case, the stack trace worked properly. Following is the actual stack trace to check the answer:
 
