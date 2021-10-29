@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The symbol path specifies the directories where the symbol files are located. For more information about symbols and symbol files, see [Symbols](symbols.md).
 
-**Note**   If you are connected to the Internet or a corporate network, the most efficient way to access symbols is to use a symbol server. You can use a symbol server by using the srv\* or symsrv\* string within your symbol path. For more information about symbol servers, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
+**Note**   If you are connected to the Internet or a corporate network, the most efficient way to access symbols is to use a symbol server. You can use a symbol server by using the srv\* or symsrv\* string within your symbol path. For more information about symbol servers, see [Symbol path for Windows debugger](symbol-path.md).
 
  
 

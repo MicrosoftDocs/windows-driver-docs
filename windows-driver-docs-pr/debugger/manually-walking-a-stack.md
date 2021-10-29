@@ -2,7 +2,7 @@
 title: Manually Walking a Stack
 description: Manually Walking a Stack
 keywords: ["stack trace, walking the stack manually", "walking the stack"]
-ms.date: 05/23/2017
+ms.date: 10/29/2021
 ms.localizationpriority: medium
 ---
 
@@ -59,6 +59,8 @@ fe680000 fe6bcf20   rdr       (rdr.sys, \\ntstress\symbols\sys\rdr.DBG)
 
 fe6c0000 fe6f0920   srv       (load from srv.sys deferred) 
 ```
+
+The output is from an older version of Windows, and the module names will be different on current day versions. 
 
 The second step is dumping out the stack pointer to look for addresses in the modules given by the **x \*!** command:
 
