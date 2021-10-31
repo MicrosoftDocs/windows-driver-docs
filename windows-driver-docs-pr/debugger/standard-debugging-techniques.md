@@ -46,7 +46,6 @@ This section discusses standard debugging techniques that you can apply across d
 -   [Debugging a Failed Driver Unload](debugging-a-failed-driver-unload.md)
 -   [Reading Bug Check Callback Data](reading-bug-check-callback-data.md)
 -   [Debugging a User-Mode Failure with KD](debugging-a-user-mode-failure-with-kd.md)
--   [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)
 -   [Mapping Driver Files](mapping-driver-files.md)
 -   [Messages from the Target](messages-from-the-target.md)
 
