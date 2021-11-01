@@ -28,7 +28,7 @@ Follow the CA's instructions for how to acquire the SPC and install the private 
 
 ## Cross-Certificates
 
-*Excerpt from* [Software Publisher Certificate](software-publisher-certificate.md):
+*Excerpt from* [Software Publisher Certificate](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates):
 
 In addition to obtaining an SPC, you must obtain a cross-certificate that is issued by Microsoft. The cross certificate is used to verify that the CA that issued an SPC is a trusted root authority. A cross-certificate is an X.509 certificate issued by a CA that signs the public key for the root certificate of another CA. Cross-certificates allow the system to have a single trusted Microsoft root authority, but also provide the flexibility to extend the chain of trust to commercial CAs that issue SPCs.
 
@@ -51,11 +51,11 @@ Microsoft provides a specific cross-certificate for each CA that issues SPCs for
 
 ## Installing SPC Information in the Personal Certificate Store
 
-*Further excerpts from* [Software Publisher Certificate](software-publisher-certificate.md):
+*Further excerpts from* [Software Publisher Certificate](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates):
 
 In order to use an SPC to sign a driver in a manner that complies with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md), the certificate information must first be contained in a Personal Information Exchange (*.pfx*) file. The information that is contained in the *.pfx* file must then be added to the Personal certificate store of the local computer that signs a driver.
 
-A CA might issue a *.pfx* file that contains the necessary certificate information. If so, you can add the .*pfx* file to the Personal certificate store by following the instructions described in [Installing a .pfx File in the Personal Certificate Store](software-publisher-certificate.md#installing-a-pfx-file-in-the-personal-certificate-store).
+A CA might issue a *.pfx* file that contains the necessary certificate information. If so, you can add the .*pfx* file to the Personal certificate store by following the instructions described in [Installing a .pfx File in the Personal Certificate Store](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates#installing-a-pfx-file-in-the-personal-certificate-store).
 
 However, a CA might issue the following pairs of files:
 
@@ -100,7 +100,7 @@ The following describes the parameters that are used in the [**Pvk2Pfx**](../dev
 
 For signing kernel-mode drivers, the certificates and key stored in the .pfx file must be imported into the local Personal certificate store. Signtool does not support using .pfx files for signing kernel-mode drivers. The restriction is due to a conflict in adding cross-certificates in the signature while using a certificate from a .pfx file
 
-*Final excerpts from* [Software Publisher Certificate](software-publisher-certificate.md):
+*Final excerpts from* [Software Publisher Certificate](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates):
 
 After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk* and either an .*spc* or a *.cer* file, add the information in the *.pfx* file to the Personal certificate store of the local computer that signs the driver. You can use the Certificate Import Wizard to import the information in the *.pfx* file to the Personal certificate store, as follows:
 

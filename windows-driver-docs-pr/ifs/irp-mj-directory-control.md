@@ -8,7 +8,7 @@ api_name:
 - IRP_MJ_DIRECTORY_CONTROL
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 10/26/2021
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 ## When Sent
 
-The IRP_MJ_DIRECTORY_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **ReadDirectoryChangesW** or **FindNextVolumeMountPoint** or when a kernel-mode component has called [**ZwQueryDirectoryFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwquerydirectoryfile).
+The IRP_MJ_DIRECTORY_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **ReadDirectoryChangesW** or **FindNextVolumeMountPoint** or when a kernel-mode component has called [**ZwQueryDirectoryFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwquerydirectoryfile) or [**ZwQueryDirectoryFileEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwquerydirectoryfileex).
 
 ## Operation: File System Drivers
 
@@ -24,8 +24,9 @@ The file system driver should check the minor function code to determine which d
 
 | Term | Description |
 | ---- | ----------- |
-| IRP_MN_NOTIFY_CHANGE_DIRECTORY | Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP. |
-| IRP_MN_QUERY_DIRECTORY | Indicates a directory query request. The types of information that can be queried are file-system-dependent, but generally include the following: FileBothDirectoryInformation, FileDirectoryInformation, FileFullDirectoryInformation, FileIdBothDirectoryInformation, FileIdFullDirectoryInformation, FileNamesInformation, FileObjectIdInformation, FileReparsePointInformation |
+| IRP_MN_QUERY_DIRECTORY | Indicates a directory query request. The types of information that can be queried are file-system-dependent, but generally include the following: FileBothDirectoryInformation, FileDirectoryInformation, FileFullDirectoryInformation, FileIdBothDirectoryInformation, FileIdFullDirectoryInformation, FileNamesInformation, FileObjectIdInformation, FileReparsePointInformation. |
+| IRP_MN_NOTIFY_CHANGE_DIRECTORY | Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP. The file system driver returns the information in a [**FILE_NOTIFY_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_notify_information) structure.|
+| IRP_MN_NOTIFY_CHANGE_DIRECTORY_EX | Indicates a request for notification of changes to the directory. Usually, instead of satisfying this request immediately, the file system driver holds the IRP in a private queue. When a change occurs to the directory, the file system driver performs the notification, and dequeues and completes the IRP. The file system driver returns information based on the specified *IrpSp->Parameters.NotifyDirectoryEx.DirectoryNotifyInformationClass*.|
 
 > [!NOTE]
 > The FileQuotaInformation information class is obsolete. [**IRP_MJ_QUERY_QUOTA**](irp-mj-query-quota.md) should be used instead.
@@ -76,14 +77,9 @@ Specifies IRP_MJ_DIRECTORY_CONTROL.
 *IrpSp->MinorFunction*  
 One of the following:
 
-- IRP_MN_NOTIFY_CHANGE_DIRECTORY
 - IRP_MN_QUERY_DIRECTORY
-
-*IrpSp->Parameters.NotifyDirectory.CompletionFilter*  
-For more information, see the description of the *CompletionFilter* parameter to [**FsRtlNotifyFullChangeDirectory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory).
-
-*IrpSp->Parameters.NotifyDirectory.Length*  
-Length in bytes of the buffer pointed to by *Irp->UserBuffer*.
+- IRP_MN_NOTIFY_CHANGE_DIRECTORY
+- IRP_MN_NOTIFY_CHANGE_DIRECTORY_EX
 
 *IrpSp->Parameters.QueryDirectory.FileIndex*  
 Index of the file at which to begin the directory scan. Ignored if the SL_INDEX_SPECIFIED flag is not set. This parameter cannot be specified in any Win32 function or kernel-mode support routine. Currently it is used only by the NT virtual DOS machine (NTVDM), which exists only on 32-bit NT-based platforms. Note that the file index is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
@@ -109,6 +105,26 @@ Optional name of a file within the specified directory.
 *IrpSp->Parameters.QueryDirectory.Length*  
 Length in bytes of the buffer pointed to by *Irp->UserBuffer*.
 
+*IrpSp->Parameters.NotifyDirectory.Length*  
+Length in bytes of the buffer pointed to by *Irp->UserBuffer*.
+
+*IrpSp->Parameters.NotifyDirectory.CompletionFilter*  
+For more information, see the description of the *CompletionFilter* parameter to [**FsRtlNotifyFullChangeDirectory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory).
+
+*IrpSp->Parameters.NotifyDirectoryEx.Length*  
+Length in bytes of the buffer pointed to by *Irp->UserBuffer*.
+
+*IrpSp->Parameters.NotifyDirectoryEx.CompletionFilter*  
+For more information, see the description of the *CompletionFilter* parameter to [**FsRtlNotifyFullChangeDirectory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory).
+
+*IrpSp->Parameters.NotifyDirectoryEx.DirectoryNotifyInformationClass*  
+Specifies one of the values described below.
+
+| Value | Meaning |
+| ----- | ------- |
+| **DirectoryNotifyInformation** | Return a [**FILE_NOTIFY_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_information) structure for directory change. |
+| **DirectoryNotifyExtendedInformation** | Return a [**FILE_NOTIFY_EXTENDED_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_extended_information) structure for each directory change. |
+
 ## See also
 
 [**FILE_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_both_dir_information)
@@ -129,6 +145,10 @@ Length in bytes of the buffer pointed to by *Irp->UserBuffer*.
 
 [**FsRtlNotifyFullChangeDirectory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory)
 
+[**FILE_NOTIFY_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_information)
+
+[**FILE_NOTIFY_EXTENDED_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_extended_information)
+
 [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
 [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
@@ -140,3 +160,5 @@ Length in bytes of the buffer pointed to by *Irp->UserBuffer*.
 [**IRP_MJ_QUERY_QUOTA**](irp-mj-query-quota.md)
 
 [**ZwQueryDirectoryFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwquerydirectoryfile)
+
+[**ZwQueryDirectoryFileEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwquerydirectoryfileex)

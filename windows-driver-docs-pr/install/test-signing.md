@@ -288,7 +288,7 @@ The following procedure describes the steps to use on either machine to test the
 
 3. Verify signing of the cat file and the sys file. Open an elevated command window, and assuming the signtool.exe is available in the computer, go to the driver package directory where the cat, inf and the sys file is located. Execute the following commands at the appropriate directory
 
-    From [Verifying the SPC Signature of a Catalog File](verifying-the-spc-signature-of-a-catalog-file.md):
+    From [Verifying the SPC Signature of a Catalog File](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates):
 
     ```cpp
     signtool  verify  /v  /kp  /c  tstamd64.cat  toaster.inf

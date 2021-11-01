@@ -1,6 +1,6 @@
 ---
-title: KS\_AM\_RATE\_SimpleRateChange
-description: The KS\_AM\_RATE\_SimpleDataRate property sets the time stamp rate on a filter.
+title: KS_AM_RATE_SimpleRateChange
+description: The KS_AM_RATE_SimpleDataRate property sets the time stamp rate on a filter.
 keywords: ["KS_AM_RATE_SimpleRateChange Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,68 +10,26 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/11/2021
 ms.localizationpriority: medium
 ---
 
-# KS\_AM\_RATE\_SimpleRateChange
+# KS_AM_RATE_SimpleRateChange
 
+The **KS_AM_RATE_SimpleDataRate** property sets the time stamp rate on a filter.
 
-The KS\_AM\_RATE\_SimpleDataRate property sets the time stamp rate on a filter.
+## Usage Summary Table
 
-## <span id="ddk_ks_am_rate_simpleratechange_ks"></span><span id="DDK_KS_AM_RATE_SIMPLERATECHANGE_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_AM_SimpleRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange" data-raw-source="[&lt;strong&gt;KS_AM_SimpleRateChange&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange)"><strong>KS_AM_SimpleRateChange</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a KS\_AM\_SimpleRateChange structure that describes a simple rate change for an MPEG-2 stream, such as fast-forward or rewind.
+The property value (operation data) is a **KS_AM_SimpleRateChange** structure that describes a simple rate change for an MPEG-2 stream, such as fast-forward or rewind.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
-[**KS\_AM\_SimpleRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange)
+[**KS_AM_SimpleRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_simpleratechange)

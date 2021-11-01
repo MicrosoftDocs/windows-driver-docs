@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS is a TLV that contains a custom MAC address.
 

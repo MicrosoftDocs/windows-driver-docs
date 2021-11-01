@@ -29,7 +29,7 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 
 where, again, *DownstreamStore* specifies the local directory or network share that will be used to cache individual symbol files. For more information, see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
-If you plan to create a symbol store, configure a symbol store for web (HTTP) access, or write your own symbol server or symbol store, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
+If you plan to create a symbol store, configure a symbol store for web (HTTP) access, or write your own symbol server or symbol store, see [Custom Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
 ### <span id="using_agestore_to_reduce_the_cache_size"></span><span id="USING_AGESTORE_TO_REDUCE_THE_CACHE_SIZE"></span>Using AgeStore to Reduce the Cache Size
 

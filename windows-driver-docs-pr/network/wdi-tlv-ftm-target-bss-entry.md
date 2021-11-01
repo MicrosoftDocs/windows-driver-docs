@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # WDI_TLV_FTM_TARGET_BSS_ENTRY
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 **WDI_TLV_FTM_TARGET_BSS_ENTRY** is a TLV that contains information for a BSS target with which Fine Timing Measurement (FTM) procedures should be completed. 
 
 This TLV is used in the task parameters for [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md).

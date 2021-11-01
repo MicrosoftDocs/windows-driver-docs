@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_EXTXPORT\_STATE\_NOTIFY
-description: The KSPROPERTY\_EXTXPORT\_STATE\_NOTIFY property sets or gets notification of transport mode and state change.
+title: KSPROPERTY_EXTXPORT_STATE_NOTIFY
+description: The KSPROPERTY_EXTXPORT_STATE_NOTIFY property sets or gets notification of transport mode and state change.
 keywords: ["KSPROPERTY_EXTXPORT_STATE_NOTIFY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,34 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/20/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_EXTXPORT\_STATE\_NOTIFY
+# KSPROPERTY_EXTXPORT_STATE_NOTIFY
 
+The **KSPROPERTY_EXTXPORT_STATE_NOTIFY** property sets or gets notification of transport mode and state change.
 
-The KSPROPERTY\_EXTXPORT\_STATE\_NOTIFY property sets or gets notification of transport mode and state change.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_extxport_state_notify_ks"></span><span id="DDK_KSPROPERTY_EXTXPORT_STATE_NOTIFY_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Device | [**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s) | [**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Device</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is the KSPROPERTY\_EXTXPORT\_S structure that describes the current external transport whenever the transport state has changed.
+The property value (operation data) is the **KSPROPERTY_EXTXPORT_S** structure that describes the current external transport whenever the transport state has changed.
 
 ## Remarks
 
-The KSPROPERTY\_EXTXPORT\_S structure receives notification when the transport state has changed.
+The **KSPROPERTY_EXTXPORT_S** structure receives notification when the transport state has changed.
 
 This call is a synchronous operation and will not return until the transport state has changed. It is not recommended for use since not all DV camcorders can support this operation.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
 [**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_EXTXPORT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
-
+[**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)

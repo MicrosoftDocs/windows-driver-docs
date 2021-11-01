@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_AP\_BAND\_CHANNEL
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_AP\_BAND\_CHANNEL is a TLV that specifies access point band and channel information.
 

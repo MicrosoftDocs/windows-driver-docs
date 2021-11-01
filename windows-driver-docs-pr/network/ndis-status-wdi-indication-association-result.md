@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT to indicate association results.
 

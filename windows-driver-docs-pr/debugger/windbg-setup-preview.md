@@ -26,7 +26,7 @@ There are currently six settings dialog panels:
 - Events & exceptions
 - Source window
 
-For more information on setting the paths, see [Accessing Symbols for Debugging](accessing-symbols-for-debugging.md) and [Source Code Debugging in WinDbg](source-window.md).
+For more information on setting the paths, see [Symbol path for Windows debugger](symbol-path.md) and [Source Code Debugging in WinDbg](source-window.md).
 
 ## Workspaces
 

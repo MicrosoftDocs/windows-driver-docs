@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP is a TLV that contains the reason for a Can Sustain AP indication.
 

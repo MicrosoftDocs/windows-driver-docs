@@ -1,6 +1,6 @@
 ---
-title: KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED
-description: Clients use KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED to request notification when interface data is available to retrieve and display to users.
+title: KSEVENT_BDA_CA_MODULE_UI_REQUESTED
+description: Clients use KSEVENT_BDA_CA_MODULE_UI_REQUESTED to request notification when interface data is available to retrieve and display to users.
 keywords: ["KSEVENT_BDA_CA_MODULE_UI_REQUESTED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,47 +10,30 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/11/2021
 ms.localizationpriority: medium
 ---
 
-# KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED
+# KSEVENT_BDA_CA_MODULE_UI_REQUESTED
 
+Clients use **KSEVENT_BDA_CA_MODULE_UI_REQUESTED** to request notification when interface data is available to retrieve and display to users.
 
-Clients use KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED to request notification when interface data is available to retrieve and display to users.
-
-## <span id="ddk_ksevent_bda_ca_module_ui_requested_ks"></span><span id="DDK_KSEVENT_BDA_CA_MODULE_UI_REQUESTED_KS"></span>
-
-
-### <span id="specifying_this_event"></span><span id="SPECIFYING_THIS_EVENT"></span>Specifying This Event
+## Specifying this event
 
 KSEVENT
 
-### <span id="event_data"></span><span id="EVENT_DATA"></span>Event Data
+## Event data
 
 A KSEVENTDATA structure that describes how to notify about the event.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
-
 
 [**KSEVENT**](./ksevent-structure.md)
 
 [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
-[**KSPROPERTY\_BDA\_CA\_MODULE\_UI**](ksproperty-bda-ca-module-ui.md)
-
+[**KSPROPERTY_BDA_CA_MODULE_UI**](ksproperty-bda-ca-module-ui.md)

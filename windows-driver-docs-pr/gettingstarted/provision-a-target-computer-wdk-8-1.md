@@ -1,7 +1,7 @@
 ---
 title: Provision a computer for driver deployment and testing (WDK 10)
 description: Provisioning a target or test computer is the process of configuring a computer for automatic driver deployment, testing, and debugging. To provision a computer, use Microsoft Visual Studio.
-ms.date: 08/06/2021
+ms.date: 10/29/2021
 ms.localizationpriority: medium
 ---
 
@@ -13,8 +13,10 @@ A testing and debugging environment has two computers: the *host computer* and t
 
 The host and target computers must be able to ping each other by name. This might be easier if both computers are joined to the same workgroup or the same network domain. If your computers are in a workgroup, we recommend that you connect the computers with a router rather than a hub or switch.
 
+It is recommended that both the host and target run the same version of Windows.
+
 > [!TIP]
-> For the latest information on the WDK and known issues, see the  [WDK support forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=wdk).
+> For the latest information on the WDK and known issues, see the  [WDK support forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=wdk) and the [Windows Hardware Q&A Forum](https://docs.microsoft.com/answers/topics/windows-hardware.html).
 
 ## Prepare the target computer for provisioning
 
@@ -63,7 +65,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 5. Select a type of debugging connection, and enter the required parameters.
 
-    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](../debugger/index.md).
+    For more information about setting up debugging over various types of connections, see [Setting Up KDNET Network Kernel Debugging Manually](../debugger/setting-up-a-network-debugging-connection.md) and the related  documentation for the [Debugging Tools for Windows](../debugger/index.md).
 
 6. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, select **Finish**.
 
@@ -73,3 +75,6 @@ Now you're ready to provision the target computer from the host computer in Visu
 ## See Also
 
 [Deploying a Driver to a Test Computer](../develop/deploying-a-driver-to-a-test-computer.md)
+
+[When you provision a computer (WDK 8.1)](../develop/what-happens-when-you-provision-a-computer--wdk-8-1-.md)
+

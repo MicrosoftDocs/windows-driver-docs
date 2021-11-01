@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # WDI_TLV_SAE_COMMIT_REQUEST
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 **WDI_TLV_SAE_COMMIT_REQUEST** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Commit request. 
 
 This TLV is used in the command parameters for [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md).

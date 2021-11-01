@@ -1787,12 +1787,12 @@
   items: 
   - name: "Symbols for Windows Debugging (WinDbg, KD, CDB, NTSD)"
     href: symbols.md
+  - name: "Microsoft public symbol server"
+    href: microsoft-public-symbols.md
   - name: "Symbol path for Windows debuggers"
     href: symbol-path.md
   - name: "Using a Symbol Server"
     href: using-a-symbol-server.md
-  - name: "Microsoft public symbol server"
-    href: microsoft-public-symbols.md
   - name: "Advanced SymSrv Use"
     href: advanced-symsrv-use.md
   - name: "Firewalls and Proxy Servers"
@@ -1836,14 +1836,8 @@
   - name: "Symbol Stores"
 # Auto-expanded node
     items: 
-    - name: "Symbol Stores and Symbol Servers"
+    - name: "Custom Symbol Stores and Symbol Servers"
       href: symbol-stores-and-symbol-servers.md      
-    - name: "Accessing Symbols for Debugging"
-      href: accessing-symbols-for-debugging.md
-    - name: "Offline Symbols for Windows Update"
-      href: symbols-windows-update.md
-    - name: "Installing Windows Symbol Files for Older Versions of Windows"
-      href: installing-windows-symbol-files.md
     - name: "HTTP Symbol Stores"
       href: http-symbol-stores.md
     - name: "File Share (SMB) Symbol Server"
@@ -1854,6 +1848,10 @@
       href: other-symbol-stores.md
     - name: "Other Symbol Servers"
       href: other-symbol-servers.md
+    - name: "Offline Symbols for Windows Update"
+      href: symbols-windows-update.md
+    - name: "Installing Windows Symbol Files for Older Versions of Windows"
+      href: installing-windows-symbol-files.md
   - name: "SymProxy"
 # Auto-expanded node
     items: 

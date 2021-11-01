@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_REPLAY\_COUNTER
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 WDI\_TLV\_REPLAY\_COUNTER is a TLV that contains a UINT64 value that represents a replay counter.
 
 ## TLV Type

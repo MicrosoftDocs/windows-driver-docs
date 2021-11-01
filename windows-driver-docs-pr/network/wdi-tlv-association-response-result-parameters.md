@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_ASSOCIATION\_RESPONSE\_RESULT\_PARAMETERS
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_ASSOCIATION\_RESPONSE\_RESULT\_PARAMETERS is a TLV that contains association response result parameters.
 

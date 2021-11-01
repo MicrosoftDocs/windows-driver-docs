@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_PRIVACY
-description: The KSPROPERTY\_CAMERACONTROL\_PRIVACY property specifies whether to prevent video from being acquired by the camera sensor.
+title: KSPROPERTY_CAMERACONTROL_PRIVACY
+description: The KSPROPERTY_CAMERACONTROL_PRIVACY property specifies whether to prevent video from being acquired by the camera sensor.
 keywords: ["KSPROPERTY_CAMERACONTROL_PRIVACY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,30 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/14/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_CAMERACONTROL\_PRIVACY
+# KSPROPERTY_CAMERACONTROL_PRIVACY
 
+The **KSPROPERTY_CAMERACONTROL_PRIVACY** property specifies whether to prevent video from being acquired by the camera sensor.
 
-The KSPROPERTY\_CAMERACONTROL\_PRIVACY property specifies whether to prevent video from being acquired by the camera sensor.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_cameracontrol_privacy_ks"></span><span id="DDK_KSPROPERTY_CAMERACONTROL_PRIVACY_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property Descriptor Type</th>
-<th>Property Value Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter or node</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
-<td><p>LONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property Descriptor Type | Property Value Type |
+|--|--|--|--|--|
+| Yes | Yes | Filter or node | [**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s) or [**KSPROPERTY_CAMERACONTROL_NODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s) | LONG |
 
 The property value (operation data) is a LONG that specifies whether privacy mode is enable or disabled. A value of 0 indicates that the camera sensor can capture video images, and a value of 1 indicates that the camera sensor is prevented from capturing video images.
 
 ## Remarks
 
-The **Value** member of the KSPROPERTY\_CAMERACONTROL\_NODE\_S structure specifies whether the camera sensor should capture video.
+The **Value** member of the **KSPROPERTY_CAMERACONTROL_NODE_S** structure specifies whether the camera sensor should capture video.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available for Windows Vista and later versions of the Windows operating system.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
-[**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)
-
+[**KSPROPERTY_CAMERACONTROL_NODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)

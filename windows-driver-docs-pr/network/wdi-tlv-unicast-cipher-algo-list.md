@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_UNICAST\_CIPHER\_ALGO\_LIST
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_UNICAST\_CIPHER\_ALGO\_LIST is a TLV that contains a list of unicast cipher algorithms.
 

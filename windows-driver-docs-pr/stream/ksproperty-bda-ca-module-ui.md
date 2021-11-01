@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_CA\_MODULE\_UI
-description: Clients use KSPROPERTY\_BDA\_CA\_MODULE\_UI to retrieve interface data that a CA plugin can display to users.
+title: KSPROPERTY_BDA_CA_MODULE_UI
+description: Clients use KSPROPERTY_BDA_CA_MODULE_UI to retrieve interface data that a CA plugin can display to users.
 keywords: ["KSPROPERTY_BDA_CA_MODULE_UI Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,32 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/13/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_BDA\_CA\_MODULE\_UI
+# KSPROPERTY_BDA_CA_MODULE_UI
 
+Clients use **KSPROPERTY_BDA_CA_MODULE_UI** to retrieve interface data that a CA plugin can display to users.
 
-Clients use KSPROPERTY\_BDA\_CA\_MODULE\_UI to retrieve interface data that a CA plugin can display to users.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_ca_module_ui_ks"></span><span id="DDK_KSPROPERTY_BDA_CA_MODULE_UI_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p>KSP_NODE</p></td>
-<td><p>BDA_CA_MODULE_UI</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter | KSP_NODE | BDA_CA_MODULE_UI |
 
 ## Remarks
 
-The BDA\_CA\_MODULE\_UI structure contains the user interface (UI) data.
+The BDA_CA_MODULE_UI structure contains the user interface (UI) data.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
+[**BDA_CA_MODULE_UI**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_ca_module_ui)
 
-[**BDA\_CA\_MODULE\_UI**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_ca_module_ui)
+[**KSEVENT_BDA_CA_MODULE_UI_REQUESTED**](ksevent-bda-ca-module-ui-requested.md)
 
-[**KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED**](ksevent-bda-ca-module-ui-requested.md)
-
-[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
-
+[**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)

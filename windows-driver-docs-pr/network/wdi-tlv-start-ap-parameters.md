@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_START\_AP\_PARAMETERS
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_START\_AP\_PARAMETERS is a TLV that contains the parameters for [OID\_WDI\_TASK\_START\_AP](./oid-wdi-task-start-ap.md).
 

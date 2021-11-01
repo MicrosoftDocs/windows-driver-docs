@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_P2P\_INCOMING\_FRAME\_PARAMETERS
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_P2P\_INCOMING\_FRAME\_PARAMETERS is a TLV that contains incoming Wi-Fi Direct action frame parameters.
 

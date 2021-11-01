@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CLOCK\_RESOLUTION
-description: Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precision of a clock.
+title: KSPROPERTY_CLOCK_RESOLUTION
+description: Clients use the KSPROPERTY_CLOCK_RESOLUTION property to determine the precision of a clock.
 keywords: ["KSPROPERTY_CLOCK_RESOLUTION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,49 +10,19 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/18/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_CLOCK\_RESOLUTION
+# KSPROPERTY_CLOCK_RESOLUTION
 
+Clients use the **KSPROPERTY_CLOCK_RESOLUTION** property to determine the precision of a clock.
 
-Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precision of a clock.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_clock_resolution_ks"></span><span id="DDK_KSPROPERTY_CLOCK_RESOLUTION_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property Descriptor Type</th>
-<th>Property Value Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution" data-raw-source="[&lt;strong&gt;KSRESOLUTION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution)"><strong>KSRESOLUTION</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property Descriptor Type | Property Value Type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSRESOLUTION**](/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution) |
 
 ## Remarks
 
@@ -60,24 +30,12 @@ The delay introduced in the **Error** member is in addition to that in the **Gra
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ks.h (include Ks.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ks.h (include Ks.h)
 
 ## See also
 
-
-[**KSCLOCK\_DISPATCH**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksclock_dispatch)
+[**KSCLOCK_DISPATCH**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksclock_dispatch)
 
 [**KSRESOLUTION**](/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution)
 
-[**KSPROPERTY\_CLOCK\_PHYSICALTIME**](ksproperty-clock-physicaltime.md)
+[**KSPROPERTY_CLOCK_PHYSICALTIME**](ksproperty-clock-physicaltime.md)

@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_BSSID
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_BSSID is a TLV that contains the BSSID of a BSS.
 

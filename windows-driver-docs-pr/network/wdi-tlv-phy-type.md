@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_PHY\_TYPE
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_PHY\_TYPE is a TLV that contains a PHY type.
 

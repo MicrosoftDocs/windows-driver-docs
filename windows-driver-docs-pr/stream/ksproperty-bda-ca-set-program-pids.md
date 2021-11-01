@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS
-description: Clients use KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS to set the list of packet identifiers in a particular program.
+title: KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS
+description: Clients use KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS to set the list of packet identifiers in a particular program.
 keywords: ["KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,32 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/13/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS
+# KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS
 
+Clients use **KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS** to set the list of packet identifiers in a particular program.
 
-Clients use KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS to set the list of packet identifiers in a particular program.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_ca_set_program_pids_ks"></span><span id="DDK_KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p>KSP_NODE</p></td>
-<td><p>BDA_PROGRAM_PID_LIST</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter | KSP_NODE | BDA_PROGRAM_PID_LIST |
 
 ## Remarks
 
-The BDA\_PROGRAM\_PID\_LIST structure contains the list of packet identifiers for a specified program.
+The BDA_PROGRAM_PID_LIST structure contains the list of packet identifiers for a specified program.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
+[**BDA_PROGRAM_PID_LIST**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_program_pid_list)
 
-[**BDA\_PROGRAM\_PID\_LIST**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_program_pid_list)
+[**KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED**](ksevent-bda-program-flow-status-changed.md)
 
-[**KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED**](ksevent-bda-program-flow-status-changed.md)
-
-[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
-
+[**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)

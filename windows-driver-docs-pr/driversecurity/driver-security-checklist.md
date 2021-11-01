@@ -690,14 +690,6 @@ Consider the development of custom domain-specific security tests. To develop ad
 
 **Security checklist item \#17:** *Review these debugger tools and consider their use in your development debugging workflow.*
 
-### !exploitable Crash Analyzer
-
-The !exploitable Crash Analyzer is a Windows debugger extensions that parses crash logs looking for unique issues. It also examines the type of crash and tries to determine whether the error is something that could be exploited by a malicious hacker.
-
-Microsoft Security Engineering Center (MSEC), created the !exploitable Crash Analyzer. You can download the from codeplex: <https://msecdbg.codeplex.com/>.
-
-For more information, see [!Exploitable crash analyzer version 1.6](https://www.microsoft.com/security/blog/2013/06/13/exploitable-crash-analyzer-version-1-6/) and the Channel 9 video [!exploitable Crash Analyzer](https://channel9.msdn.com/blogs/pdcnews/bang-exploitable-security-analyzer).
-
 ### Security related debugger commands
 
 The !acl extension formats and displays the contents of an access control list (ACL). For more information, see [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md) and [**!acl**](../debugger/-acl.md).

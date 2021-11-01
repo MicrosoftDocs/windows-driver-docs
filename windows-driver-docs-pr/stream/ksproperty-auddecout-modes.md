@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_AUDDECOUT\_MODES
-description: The KSPROPERTY\_AUDDECOUT\_MODES property returns the available output modes of the audio decoder.This property is read-only.
+title: KSPROPERTY_AUDDECOUT_MODES
+description: The KSPROPERTY_AUDDECOUT_MODES property returns the available output modes of the audio decoder.This property is read-only.
 keywords: ["KSPROPERTY_AUDDECOUT_MODES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,51 +10,21 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/13/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_AUDDECOUT\_MODES
+# KSPROPERTY_AUDDECOUT_MODES
 
-
-The KSPROPERTY\_AUDDECOUT\_MODES property returns the available output modes of the audio decoder.
+The KSPROPERTY_AUDDECOUT_MODES property returns the available output modes of the audio decoder.
 
 This property is read-only.
 
-## <span id="ddk_ksproperty_auddecout_modes_ks"></span><span id="DDK_KSPROPERTY_AUDDECOUT_MODES_KS"></span>
+## Usage Summary Table
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p>DWORD</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | DWORD |
 
 The property value (operation data) is a DWORD that represents a bitmask of the audio output modes that the audio decoder supports.
 
@@ -62,31 +32,19 @@ The property value (operation data) is a DWORD that represents a bitmask of the 
 
 The property value can contain a bitwise OR of the following constants that are defined in the *Ksmedia.h* header file:
 
-<span id="KSAUDDECOUTMODE_STEREO_ANALOG"></span><span id="ksauddecoutmode_stereo_analog"></span>**KSAUDDECOUTMODE\_STEREO\_ANALOG**  
+**KSAUDDECOUTMODE_STEREO_ANALOG**  
 Indicates that the output is in analog stereo.
 
-<span id="KSAUDDECOUTMODE_PCM_51"></span><span id="ksauddecoutmode_pcm_51"></span>**KSAUDDECOUTMODE\_PCM\_51**  
+**KSAUDDECOUTMODE_PCM_51**  
 Indicates that the output is in PCM 5.1 channel digital.
 
-<span id="KSAUDDECOUTMODE_SPDIFF"></span><span id="ksauddecoutmode_spdiff"></span>**KSAUDDECOUTMODE\_SPDIFF**  
+**KSAUDDECOUTMODE_SPDIFF**  
 Indicates that the output is SPDIFF format AC3 digital.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
-[**KSPROPERTY\_AUDDECOUT\_CUR\_MODE**](ksproperty-auddecout-cur-mode.md)
+[**KSPROPERTY_AUDDECOUT_CUR_MODE**](ksproperty-auddecout-cur-mode.md)
