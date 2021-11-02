@@ -16,7 +16,7 @@ The host and target computers must be able to ping each other by name. This migh
 It is recommended that both the host and target run the same version of Windows.
 
 > [!TIP]
-> For the latest information on the WDK and known issues, see the  [WDK support forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=wdk) and the [Windows Hardware Q&A Forum](https://docs.microsoft.com/answers/topics/windows-hardware.html).
+> For the latest information on the WDK and known issues, see the  [WDK support forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=wdk) and the [Windows Hardware Q&A Forum](/answers/topics/windows-hardware.html).
 
 ## Prepare the target computer for provisioning
 
