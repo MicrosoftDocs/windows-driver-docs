@@ -62,7 +62,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong><em>RSS</strong></p></td>
+<td align="left"><p><strong>*RSS</strong></p></td>
 <td align="left"><p>Receive Side Scaling</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -74,7 +74,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>RSSProfile</strong></p></td>
+<td align="left"><p><strong>*RSSProfile</strong></p></td>
 <td align="left"><p>RSS load balancing profile</p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p><strong>ClosestProcessor</strong>: Default behavior is consistent with that of Windows Server 2008 R2.</p></td>
@@ -201,7 +201,7 @@ The following table describes all of the RSS keywords that can be edited.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong><em>RssBaseProcGroup</strong></p></td>
+<td align="left"><p><strong>*RssBaseProcGroup</strong></p></td>
 <td align="left"><p>RSS Base Processor Group</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>0</p></td>
@@ -209,7 +209,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>MAXIMUM_GROUPS-1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong></em>NumaNodeId</strong></p></td>
+<td align="left"><p><strong>*NumaNodeId</strong></p></td>
 <td align="left"><p>Preferred NUMA node</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>65535 (Any node)</p></td>
@@ -217,7 +217,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>System specific - cannot exceed 65534</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>RssBaseProcNumber</strong></p></td>
+<td align="left"><p><strong>*RssBaseProcNumber</strong></p></td>
 <td align="left"><p>RSS Base Processor Number</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>0</p></td>
@@ -225,7 +225,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>MAXIMUM_PROC_PER_GROUP-1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong></em>MaxRssProcessors</strong></p></td>
+<td align="left"><p><strong>*MaxRssProcessors</strong></p></td>
 <td align="left"><p>Maximum number of RSS Processors</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>16</p></td>
@@ -233,7 +233,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>MAXIMUM_PROC_PER_SYSTEM</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><em>RssMaxProcNumber</strong></p></td>
+<td align="left"><p><strong>*RssMaxProcNumber</strong></p></td>
 <td align="left"><p>Maximum RSS Processor Number</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>MAXIMUM_PROC_PER_GROUP-1 (Default)</p></td>
@@ -241,7 +241,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>MAXIMUM_PROC_PER_GROUP-1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong></em>NumRSSQueues</strong></p></td>
+<td align="left"><p><strong>*NumRSSQueues</strong></p></td>
 <td align="left"><p>Maximum Number of RSS Queues</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>16</p></td>
@@ -267,6 +267,8 @@ The following table describes all of the RSS keywords that can be edited.
 
 **Note**  The default value for **\*NumaNodeId** (65535) means the network adapter is agnostic to NUMA node, and NDIS should not attempt to prefer any node over another.
 If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects the closest node based on hints from ACPI.
+
+**Note**  The max value for **\*MaxRssProcessors** may be set to the maximum number of processors that the NIC can support. If this value is too big, NDIS will automatically cap this value to be the maximum number of processors on the system.
 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
