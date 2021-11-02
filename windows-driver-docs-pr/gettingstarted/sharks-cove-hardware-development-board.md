@@ -73,7 +73,7 @@ If the use of this software is in support of the Hardware Developer Program the 
   - All provisions in Section 1.b. that do not directly conflict with the amended section above, shall apply.
 - **By using the software, you accept these terms.** If you do not accept and comply with these terms, you may not use the software or its features.
 
-Download [Windows Embedded 8.1 Industry (x86) Pro Evaluation](/download/details.aspx?id=40745) or Windows Embedded 8.1 Industry Pro with Update (x86) - DVD.
+Download [Windows Embedded 8.1 Industry (x86) Pro Evaluation](https://www.microsoft.com/download/details.aspx?id=40745) or Windows Embedded 8.1 Industry Pro with Update (x86) - DVD.
 Locate the downloaded file. For example,
 
 9600.17050.WINBLUE\_REFRESH...X86FRE\_EN-US\_DV9.ISO.
