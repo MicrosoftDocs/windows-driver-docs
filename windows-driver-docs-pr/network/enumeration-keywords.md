@@ -27,7 +27,7 @@ HKR, Ndi\params\<SubkeyName>\enum, "3", 0, "%Rx & Tx Enabled%"
 
 The general enumeration keywords are:
 
-<a href="" id="-speedduplex"></a>**\*SpeedDuplex**  
+**\*SpeedDuplex**  
 Speed and duplex settings that a device supports. The device INF file should list only the settings that the associated device supports. That is, for an Ethernet 10/100 device that can support only full-duplex mode, settings for Gigabit or higher speeds or half duplex should not be listed in the associated INF file.
 
 Speed values that are not specifically defined already with enumerated values of 0 through 10 may be set as a number that is the value directly in Mbps.  Direct values must be at least 1,000 Mbps (1 Gbps) and above.  Here are a few examples for specifying the speed directly:
@@ -40,7 +40,7 @@ Speed values that are not specifically defined already with enumerated values of
 | 50,000 | 50 Gbps |
 | 100,000 | 100 Gbps |
 
-<a href="" id="-flowcontrol"></a>**\*FlowControl**  
+**\*FlowControl**  
 The ability for the device to enable or disable flow control in the send or receive path.
 
 **Note**  
@@ -59,7 +59,7 @@ Set this registry value to 0x00000001.
 
 If it does not exist, you can create a value with the name **AllowFlowControlUnderDebugger** and the type **REG\_DWORD** and set it to 0x00000001.
 
-<a href="" id="-priorityvlantag"></a>**\*PriorityVLANTag**  
+**\*PriorityVLANTag**  
 A value that indicates whether the device has enabled or disabled the ability to insert the 802.1Q tags for packet priority and virtual LANs (VLANs). This keyword does not indicate whether the device enabled or disabled packet priority or VLAN tags. Instead, it describes the following:
 
 - Whether the device inserts 802.1Q tags during a send operation
@@ -135,494 +135,100 @@ For more information about the TCP/IP offload keywords, see [Using Registry Valu
 
 The columns in the table at the end of this topic describe the following attributes for enumeration keywords:
 
-<a href="" id="subkeyname"></a>SubkeyName  
+SubkeyName  
 The name of the keyword that you must specify in the INF file and that appears in the registry.
 
-<a href="" id="paramdesc"></a>ParamDesc  
+ParamDesc  
 The display text that is associated with **SubkeyName**.
 
-<a href="" id="value"></a>Value  
+Value  
 The enumeration integer value that is associated with each option in the list. This value is stored in **NDI\\params\\**<em>SubkeyName</em>**\\**<em>Value</em>.
 
-<a href="" id="enumdesc"></a>EnumDesc  
+EnumDesc  
 The display text that is associated with each value that appears in the menu.
 
-<a href="" id="default"></a>Default  
+Default  
 The default value for the menu.
 
 The following table lists all of the keywords and describes the values that a driver must use for the preceding attributes. For more information about a keyword, search for the keyword in the WDK documentation.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SubkeyName</th>
-<th align="left">ParamDesc</th>
-<th align="left">Value</th>
-<th align="left">EnumDesc</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>*SpeedDuplex</strong></p></td>
-<td align="left"><p>Speed & Duplex</p></td>
-<td align="left"><p>0 (Default)</p></td>
-<td align="left"><p>Auto Negotiation</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>10 Mbps Half Duplex</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>10 Mbps Full Duplex</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3</p></td>
-<td align="left"><p>100 Mbps Half Duplex</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>4</p></td>
-<td align="left"><p>100 Mbps Full Duplex</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>5</p></td>
-<td align="left"><p>1.0 Gbps Half Duplex</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>6</p></td>
-<td align="left"><p>1.0 Gbps Full Duplex</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>7</p></td>
-<td align="left"><p>10 Gbps Full Duplex</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>8</p></td>
-<td align="left"><p>20 Gbps Full Duplex</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>9</p></td>
-<td align="left"><p>40 Gbps Full Duplex</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>10</p></td>
-<td align="left"><p>100 Gbps Full Duplex</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>*FlowControl</strong></p></td>
-<td align="left"><p>Flow Control</p></td>
-<td align="left"><p>0 (Server Default)</p></td>
-<td align="left"><p>Tx & Rx Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Client Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>4</p></td>
-<td align="left"><p>Auto Negotiation</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*PriorityVLANTag</strong></p></td>
-<td align="left"><p>Packet Priority & VLAN</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Packet Priority & VLAN Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Packet Priority Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>VLAN Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Packet Priority & VLAN Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*InterruptModeration</strong></p></td>
-<td align="left"><p>Interrupt Moderation</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*RSS</strong></p></td>
-<td align="left"><p>Receive Side Scaling</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*HeaderDataSplit</strong></p></td>
-<td align="left"><p>Header Data Split</p></td>
-<td align="left"><p>0 (Default)</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*TCPConnectionOffloadIPv4</strong></p></td>
-<td align="left"><p>TCP Connection Offload (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*TCPConnectionOffloadIPv6</strong></p></td>
-<td align="left"><p>TCP Connection Offload (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*IPChecksumOffloadIPv4</strong></p></td>
-<td align="left"><p>IPv4 Checksum Offload</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*TCPChecksumOffloadIPv4</strong></p></td>
-<td align="left"><p>TCP Checksum Offload (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong><em>TCPChecksumOffloadIPv6</strong></p></td>
-<td align="left"><p>TCP Checksum Offload (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*UDPChecksumOffloadIPv4</strong></p></td>
-<td align="left"><p>UDP Checksum Offload (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*UDPChecksumOffloadIPv6</strong></p></td>
-<td align="left"><p>UDP Checksum Offload (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*LsoV1IPv4</strong></p></td>
-<td align="left"><p>Large Send Offload Version 1 (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*LsoV2IPv4</strong></p></td>
-<td align="left"><p>Large Send Offload Version 2 (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>LsoV2IPv6</strong></p></td>
-<td align="left"><p>Large Send Offload Version 2 (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*IPsecOffloadV1IPv4</strong></p></td>
-<td align="left"><p>IPsec Offload Version 1 (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Auth Header Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>ESP Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header & ESP Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*IPsecOffloadV2</strong></p></td>
-<td align="left"><p>IPsec Offload</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Auth Header Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>ESP Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header & ESP Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*IPsecOffloadV2IPv4</strong></p></td>
-<td align="left"><p>IPsec Offload (IPv4 only)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Auth Header Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>ESP Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header & ESP Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*TCPUDPChecksumOffloadIPv4</strong></p></td>
-<td align="left"><p>TCP/UDP Checksum Offload (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Tx and Rx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*TCPUDPChecksumOffloadIPv6</strong></p></td>
-<td align="left"><p>TCP/UDP Checksum Offload (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Tx and Rx Enabled</p></td>
-</tr>
-</tbody>
-</table>
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**\*SpeedDuplex**|Speed & Duplex|0 (Default)|Auto Negotiation|
+|||1|10 Mbps Half Duplex|
+|||2|10 Mbps Full Duplex|
+|||3|100 Mbps Half Duplex|
+|||4|100 Mbps Full Duplex|
+|||5|1.0 Gbps Half Duplex|
+|||6|1.0 Gbps Full Duplex|
+|||7|10 Gbps Full Duplex|
+|||8|20 Gbps Full Duplex|
+|||9|40 Gbps Full Duplex|
+|||10|100 Gbps Full Duplex|
+|**\*FlowControl**|Flow Control|0 (Server Default)|Tx & Rx Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Client Default)|Rx & Tx Enabled|
+|||4|Auto Negotiation|
+|**\*PriorityVLANTag**|Packet Priority & VLAN|0|Packet Priority & VLAN Disabled|
+|||1|Packet Priority Enabled|
+|||2|VLAN Enabled|
+|||3 (Default)|Packet Priority & VLAN Enabled|
+|**\*InterruptModeration**|Interrupt Moderation|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*RSS**|Receive Side Scaling|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*HeaderDataSplit**|Header Data Split|0 (Default)|Disabled|
+|||1|Enabled|
+|**\*TCPConnectionOffloadIPv4**|TCP Connection Offload (IPv4)|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*TCPConnectionOffloadIPv6**|TCP Connection Offload (IPv6)|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*IPChecksumOffloadIPv4**|IPv4 Checksum Offload|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**\*TCPChecksumOffloadIPv4**|TCP Checksum Offload (IPv4)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**\*TCPChecksumOffloadIPv6**|TCP Checksum Offload (IPv6)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**\*UDPChecksumOffloadIPv4**|UDP Checksum Offload (IPv4)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**\*UDPChecksumOffloadIPv6**|UDP Checksum Offload (IPv6)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**\*LsoV1IPv4**|Large Send Offload Version 1 (IPv4)|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*LsoV2IPv4**|Large Send Offload Version 2 (IPv4)|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*LsoV2IPv6**|Large Send Offload Version 2 (IPv6)|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*IPsecOffloadV1IPv4**|IPsec Offload Version 1 (IPv4)|0|Disabled|
+|||1|Auth Header Enabled|
+|||2|ESP Enabled|
+|||3 (Default)|Auth Header & ESP Enabled|
+|**\*IPsecOffloadV2**|IPsec Offload|0|Disabled|
+|||1|Auth Header Enabled|
+|||2|ESP Enabled|
+|||3 (Default)|Auth Header & ESP Enabled|
+|**\*IPsecOffloadV2IPv4**|IPsec Offload (IPv4 only)|0|Disabled|
+|||1|Auth Header Enabled|
+|||2|ESP Enabled|
+|||3 (Default)|Auth Header & ESP Enabled|
+|**\*TCPUDPChecksumOffloadIPv4**|TCP/UDP Checksum Offload (IPv4)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Tx and Rx Enabled|
+|**\*TCPUDPChecksumOffloadIPv6**|TCP/UDP Checksum Offload (IPv6)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Tx and Rx Enabled|
+
+
