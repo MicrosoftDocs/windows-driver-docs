@@ -205,7 +205,7 @@ The PCI bus driver that runs in the guest operating system of a Hyper-V child pa
 
 The VPCI driver is a Hyper-V VSC and communicates with the VPCI VSP that runs in the management operating system in the Hyper-V parent partition. Communication between the VPCI VSP and VSC components occurs over VMBUS.
 
-For more information about the VPCI interface, see [GUID\_PCI\_VIRTUALIZATION\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh451143).
+For more information about the VPCI interface, see [GUID\_PCI\_VIRTUALIZATION\_INTERFACE](/previous-versions/windows/hardware/drivers/hh406642(v=vs.85)).
 
 <a href="" id="virtualization-stack"></a>Virtualization Stack  
 A collection of software components that manages the creation and execution of child partitions under Hyper-V. The virtualization stack manages the access by child partitions to the hardware resources on the host computer. The virtualization stack runs in the Hyper-V parent partition.
