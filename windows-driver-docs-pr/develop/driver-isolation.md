@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Driver Package Isolation
 
-Driver package isolation is a requirement for [Windows Drivers](./getting-started-with-windows-drivers) that makes driver packages more resilient to external changes, easier to update, and more straightforward to install.
+Driver package isolation is a requirement for [Windows Drivers](./getting-started-with-windows-drivers.md) that makes driver packages more resilient to external changes, easier to update, and more straightforward to install.
 
 > [!NOTE]
 > While Driver Package Isolation is required for Windows Drivers, Windows Desktop Drivers still benefit from it through improved resiliency and serviceability.
