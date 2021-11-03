@@ -34,7 +34,7 @@ When it handles the OID method request of OID\_SRIOV\_WRITE\_VF\_CONFIG\_SPACE, 
 
 -   The PF miniport driver calls [**NdisMSetVirtualFunctionBusData**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetvirtualfunctionbusdata) to write to the requested PCI configuration space. However, the PF miniport driver can also return PCI configuration space data for the VF that the driver has cached from previous read or write operations of the PCI configuration space.
 
-    **Note**  If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV [driver package](../install/driver-packages.md), its PF miniport driver must not call [**NdisMSetVirtualFunctionBusData**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetvirtualfunctionbusdata). Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call [*SetVirtualFunctionData*](/windows-hardware/drivers/ddi/wdm/nc-wdm-set_virtual_device_data). This function is exposed from the [GUID\_VPCI\_INTERFACE\_STANDARD](https://msdn.microsoft.com/library/windows/hardware/hh451146) interface that is supported by the underlying virtual PCI (VPCI) bus driver.
+    **Note**  If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV [driver package](../install/driver-packages.md), its PF miniport driver must not call [**NdisMSetVirtualFunctionBusData**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetvirtualfunctionbusdata). Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call [*SetVirtualFunctionData*](/windows-hardware/drivers/ddi/wdm/nc-wdm-set_virtual_device_data). This function is exposed from the [GUID\_VPCI\_INTERFACE\_STANDARD](/previous-versions/windows/hardware/drivers/hh451580(v=vs.85)) interface that is supported by the underlying virtual PCI (VPCI) bus driver.
 
      
 
@@ -106,7 +106,7 @@ The PF miniport driver returns one of the following status codes for the OID set
 
 
 ****
-[GUID\_VPCI\_INTERFACE\_STANDARD](https://msdn.microsoft.com/library/windows/hardware/hh451146)
+[GUID\_VPCI\_INTERFACE\_STANDARD](/previous-versions/windows/hardware/drivers/hh451580(v=vs.85))
 
 [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
