@@ -1,25 +1,25 @@
 ---
 title: Driver Package Isolation
 description: This page describes driver isolation, a requirement for a Windows Driver.
-ms.date: 10/01/2019
+ms.date: 11/03/2021
 ms.localizationpriority: medium
 ---
 
 # Driver Package Isolation
 
-Driver package isolation is a requirement for Windows Drivers that makes drivers more resilient to external changes, easier to update, and more straightforward to install.
+Driver package isolation is a requirement for [Windows Drivers](./getting-started-with-windows-drivers) that makes driver packages more resilient to external changes, easier to update, and more straightforward to install.
 
 > [!NOTE]
 > While Driver Package Isolation is required for Windows Drivers, Windows Desktop Drivers still benefit from it through improved resiliency and serviceability.
 
-The following table shows legacy driver practices that are no longer allowed for Windows Drivers in the left column along with the required behavior for Windows Drivers in the right column.
+The following table shows some example legacy driver practices that are no longer allowed for Windows Drivers in the left column along with the required behavior for Windows Drivers in the right column.
 
 |Non-isolated Driver|Isolated Driver|
 |-|-|
-|INF copies files to System32\drivers|Driver files are run from the driver store|
-|Interacts with other drivers using hardcoded paths|Interacts with other drivers using system-supplied functions or device interfaces|
+|INF copies files to %windir%\System32 or %windir%\System32\drivers|Driver files are run from the driver store|
+|Interacts with device stacks/drivers using hardcoded paths|Interacts with device stacks/drivers using system-supplied functions or device interfaces|
 |Hardcodes path to global registry locations|Uses HKR and system-supplied functions for relative location of registry and file state|
-|Runtime file writes to any location|Driver writes files to system-supplied locations|
+|Runtime file writes to any location|Files are written relative to locations supplied by the operating system|
 
 
 ## Run From Driver Store
@@ -194,15 +194,16 @@ HKR, Parameters, ExampleValue, 0x00010001, 1
 
 To access the location of this state, use one of these functions, based on your platform:
 
-* [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of DriverRegKeyParameters
+* [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of **DriverRegKeyParameters**
 * [**WdfDriverOpenParametersRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) (WDF)
-* [**GetServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getserviceregistrystatekey) (Win32 Services) with a SERVICE_REGISTRY_STATE_TYPE of ServiceRegistryStateParameters
+* [**GetServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getserviceregistrystatekey) (Win32 Services) with a SERVICE_REGISTRY_STATE_TYPE of **ServiceRegistryStateParameters**
 
 These registry values supplied by the INF in the “Parameters” subkey for the service should not be modified at runtime and should be treated as read only.  Registry values that are written at runtime should be written under a different location.  To access the location for state to be written at runtime, use one of these functions:
 
-* [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of DriverRegKeyPersistentState
+* [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of **DriverRegKeyPersistentState** or **DriverRegKeySharedPersistentState**
 * [**WdfDriverOpenPersistentStateRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenpersistentstateregistrykey) (WDF)
-* [**GetServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getserviceregistrystatekey) (Win32 Services) with a SERVICE_REGISTRY_STATE_TYPE of ServiceRegistryStatePersistent
+* [**GetServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getserviceregistrystatekey) (Win32 Services) with a SERVICE_REGISTRY_STATE_TYPE of **ServiceRegistryStatePersistent**
+* [**GetSharedServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getsharedserviceregistrystatekey) (Win32 Services) with a SERVICE_SHARED_REGISTRY_STATE_TYPE of **ServiceSharedRegistryPersistentState**
 
 ### Device File State
 
@@ -217,10 +218,11 @@ Both Win32 and driver services read and write state about themselves.
 
 To access its own internal state values, a service uses one of the following options: 
 
-* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (WDM) with the **DirectoryType** parameter set to **DeviceDirectoryData**
-* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (KMDF) with the **DirectoryType** parameter set to **DeviceDirectoryData**
+* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (WDM) with the **DirectoryType** parameter set to **DriverDirectoryData** or **DriverDirectorySharedData**
+* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (KMDF) with the **DirectoryType** parameter set to **DriverDirectoryData** or **DriverDirectorySharedData**
 * [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring) (UMDF)
 * [**GetServiceDirectory**](/windows/win32/api/winsvc/nf-winsvc-getservicedirectory) (Win32 Services) with the **eDirectoryType** parameter set to **ServiceDirectoryPersistentState**
+* [**GetSharedServiceDirectory**](/windows/win32/api/winsvc/nf-winsvc-getsharedservicedirectory) (Win32 Services) with the **DirectoryType** parameter set to **ServiceSharedDirectoryPersistentState**
 
 To share internal state of the service with other components, use a controlled, versioned interface instead of direct registry or file reads.
 
