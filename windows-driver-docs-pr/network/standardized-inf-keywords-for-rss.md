@@ -145,6 +145,8 @@ The following table describes all of the RSS keywords that can be edited.
 **Note**  The default value for **\*NumaNodeId** (65535) means the network adapter is agnostic to NUMA node, and NDIS should not attempt to prefer any node over another.
 If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects the closest node based on hints from ACPI.
 
+**Note**  The max value for **\*MaxRssProcessors** may be set to the maximum number of processors that the NIC can support. NDIS will automatically cap this value to be the maximum number of processors on the current system.
+
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
  
