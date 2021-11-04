@@ -3,6 +3,7 @@ title: Filtering Registry Operations on Application Hives
 description: Initial support for application hives was introduced in Windows Vista.
 ms.localizationpriority: medium
 ms.date: 11/04/2021
+ms.custom: contperf-fy22q2
 ---
 
 # Filtering Registry Operations on Application Hives
