@@ -85,7 +85,7 @@ develop, build, package, deploy, test, and debug drivers.
 |--------------------------|-------------------------------------------------|
 | Windows Server 2022      | [WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149)|
 | Windows 10, version 2004 | [WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)| 
-| Windows 10, version 2004 | WDK for Windows 10, version 2004 (10.1094.1)* See Note below |
+| Windows 10, version 2004 | WDK for Windows 10, version 2004 (10.10941.1)* See Note below |
 | Windows 10, version 1903 | [WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767) |
 | Windows 10, version 1809 | [WDK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026156) |
 | Windows 10, version 1803 | [WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873060) |
@@ -97,7 +97,7 @@ develop, build, package, deploy, test, and debug drivers.
 | Windows 7 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800) |
 
 >[!NOTE]
->Please review [Hardware development kits for Windows 10, Version 2004 (10.1094.1)](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk), which addresses a bug with ExAllocatePoolZero.
+>Please review [Hardware development kits for Windows 10, Version 2004 (10.10941.1)](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk), which addresses a bug with ExAllocatePoolZero.
 
 > [!IMPORTANT]
 > If you have installed the WDK for Windows 10, version 1703 on a system that had the WDK for Windows 10, version 1607 installed, some files from the earlier version of the WDK might have been removed. To restore these files:
