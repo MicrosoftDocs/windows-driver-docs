@@ -173,7 +173,7 @@ This directive can also be used to coordinate installation of INF files in multi
 > [!NOTE]
 > While a base driver can payload an extension (and target the base driver in the shipping label), an extension bundled with another driver cannot be published to the extension hardware ID.
 
-## Run from the driver store
+## Run from the Driver Store
 
 To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid 13**](../install/using-dirids.md) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here is an example from [`osrfx2_DCHU_base.inx`]:
 
@@ -182,7 +182,7 @@ To make it easier to update the driver, Fabrikam specifies the [Driver Store](..
 OsrFx2_CopyFiles = 13 ; copy to Driver Store
 ```
 
-See the [driver package isolation](driver-isolation.md#run-from-driver-store) page for more details regarding how to dynamically find and load files from the Driver Store.  
+See the [run from Driver Store](./run-from-driver-store.md) page for more details regarding how to dynamically find and load files from the Driver Store.  
 
 ## Summary
 
