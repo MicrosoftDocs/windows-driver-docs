@@ -54,6 +54,8 @@
         href: setting-up-a-1394-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"
       href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md
+    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 11"
+      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Previous Versions of Windows"
 # Auto-expanded node
       items: 

@@ -455,8 +455,6 @@ The list of supported adapters is for the following versions of Windows.
 
 ## Related topics
 
-[Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio](setting-up-a-network-debugging-connection-in-visual-studio.md)
-
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 
 [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
