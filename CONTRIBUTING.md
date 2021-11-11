@@ -34,7 +34,7 @@ If you're a Microsoft employee and you need to collaborate in a private environm
 
 To make substantial changes to an existing article, add or change images, or contribute a new article, we recommend forking the official repo into your GitHub account, and then creating a local clone.
 
-For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
+For more info, you can see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
 ## Using issues to provide feedback on Windows driver documentation
 
