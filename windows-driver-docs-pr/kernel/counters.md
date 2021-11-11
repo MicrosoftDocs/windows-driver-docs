@@ -1,5 +1,5 @@
 ---
-title: Counters
+title: Counter driver support routines
 description: Counters
 keywords: ["synchronization WDK kernel , counters", "counters WDK kernel", "count values WDK kernel"]
 ms.date: 06/16/2017

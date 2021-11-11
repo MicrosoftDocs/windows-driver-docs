@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_SAMPLE\_TIME
-description: Clients use KSPROPERTY\_BDA\_SAMPLE\_TIME to determine the sample time over which signal level and quality are averaged.
+title: KSPROPERTY_BDA_SAMPLE_TIME
+description: Clients use KSPROPERTY_BDA_SAMPLE_TIME to determine the sample time over which signal level and quality are averaged.
 keywords: ["KSPROPERTY_BDA_SAMPLE_TIME Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,83 +10,38 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/14/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_BDA\_SAMPLE\_TIME
+# KSPROPERTY_BDA_SAMPLE_TIME
 
+Clients use **KSPROPERTY_BDA_SAMPLE_TIME** to determine the sample time over which signal level and quality are averaged.
 
-Clients use KSPROPERTY\_BDA\_SAMPLE\_TIME to determine the sample time over which signal level and quality are averaged.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_sample_time_ks"></span><span id="DDK_KSPROPERTY_BDA_SAMPLE_TIME_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin or Filter</p></td>
-<td><p>KSP_NODE</p></td>
-<td><p>LONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Pin or Filter | [**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node) | LONG |
 
 ## Remarks
 
-The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
+The **NodeId** member of **KSP_NODE** specifies the identifier of the control node or is set to −1 to specify a pin.
 
 The returned value specifies the sample time in milliseconds.
 
-Each time a client requests a signal statistics property, the node should report the average value for the last n milliseconds where n is the value indicated by KSPROPERTY\_BDA\_SAMPLE\_TIME. If no time value is set or if the driver does not support KSPROPERTY\_BDA\_SAMPLE\_TIME, the driver should default to a sample time of 100 milliseconds.
+Each time a client requests a signal statistics property, the node should report the average value for the last n milliseconds where n is the value indicated by **KSPROPERTY_BDA_SAMPLE_TIME**. If no time value is set or if the driver does not support **KSPROPERTY_BDA_SAMPLE_TIME**, the driver should default to a sample time of 100 milliseconds.
 
 The driver can report time values for the most recently completed sample period.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
+[**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
-[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSPROPERTY_BDA_SIGNAL_QUALITY**](ksproperty-bda-signal-quality.md)
 
-[**KSPROPERTY\_BDA\_SIGNAL\_QUALITY**](ksproperty-bda-signal-quality.md)
-
-[**KSPROPERTY\_BDA\_SIGNAL\_STRENGTH**](ksproperty-bda-signal-strength.md)
-
- 
-
+[**KSPROPERTY_BDA_SIGNAL_STRENGTH**](ksproperty-bda-signal-strength.md)

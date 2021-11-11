@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY instructs the adapter to cancel the background discovery and stop any active scans in progress.
 

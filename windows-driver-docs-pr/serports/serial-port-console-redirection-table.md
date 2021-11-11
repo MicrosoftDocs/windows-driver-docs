@@ -5,7 +5,7 @@ keywords:
 - SPCR
 - EMS
 - UART
-ms.date: 07/23/2018
+ms.date: 09/23/2021
 ---
 
 # Serial Port Console Redirection Table  (SPCR)
@@ -20,7 +20,7 @@ This table must be located in system memory with other ACPI tables, and it must 
 > Microsoft is making certain patent rights available for implementations of this specification under two options:
 >
 >1. Microsoft’s Community Promise, available at <https://www.microsoft.com/openspecifications/en/us/programs/community-promise/default.aspx>; or
->2. The Open Web Foundation Final Specification Agreement Version 1.0 ("OWF 1.0") as of October 1, 2012, available at [http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0/](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0).
+>2. The Open Web Foundation Final Specification Agreement Version 1.0 ("OWF 1.0") as of October 1, 2012, available on the [Open Web Foundation](https://sites.google.com/site/openwebfoundation/welcome) web site.
 
 | **Field** | **Byte Length** | **Byte Offset** | **Description** |
 |-----------|-----------------|-----------------|-----------------|

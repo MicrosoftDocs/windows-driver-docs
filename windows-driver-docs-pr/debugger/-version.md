@@ -1,5 +1,5 @@
 ---
-title: version
+title: version (WinDbg)
 description: The version extension displays the version information for the extension DLL.This extension command should not be confused with the version (Show Debugger Version) command.
 keywords: ["version Windows Debugging"]
 ms.date: 05/23/2017

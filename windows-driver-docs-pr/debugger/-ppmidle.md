@@ -1,5 +1,5 @@
 ---
-title: ppmidle
+title: ppmidle (WinDbg)
 description: The ppmidle command
 keywords: ["ppmidle Windows Debugging"]
 ms.date: 05/23/2017

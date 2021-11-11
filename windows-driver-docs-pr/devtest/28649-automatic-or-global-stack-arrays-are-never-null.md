@@ -1,5 +1,5 @@
 ---
-title: C28649
+title: C28649 warning
 description: Warning C28649 Automatic or Global Stack Arrays are never NULL.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

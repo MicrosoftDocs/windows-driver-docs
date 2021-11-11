@@ -1,5 +1,5 @@
 ---
-title: bcb
+title: bcb (WinDbg)
 description: The bcb extension displays the specified buffer control block.
 keywords: ["cache manager", "bcb Windows Debugging"]
 ms.date: 05/23/2017

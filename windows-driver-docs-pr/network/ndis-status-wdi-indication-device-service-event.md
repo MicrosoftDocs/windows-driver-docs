@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 The NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT status indication is used by an IHV miniport driver to pass on unsolicited information about a device to a user mode client.
 
 Device service indications must be sent by the miniport driver only when in the *D0* power state, and it must not cause the device to wake from *Dx*. WDI will drop this indication without forwarding it up the stack if it receives it when in *Dx*.

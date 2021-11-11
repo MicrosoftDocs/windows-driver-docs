@@ -20,8 +20,8 @@ References and resources discussed here are listed at the end of this paper.
 > Patent Notice:
 > Microsoft is making certain patent rights available for implementations of this specification under two options:
 >
-> 1. Microsoft's Community Promise, available at <https://www.microsoft.com/openspecifications/en/us/programs/community-promise/default.aspx>; or
-> 2. The Open Web Foundation Final Specification Agreement Version 1.0 ("OWF 1.0") as of October 1, 2012, available at [http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0/](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0).
+> 1. Microsoft's Community Promise, available at `https://www.microsoft.com/openspecifications/en/us/programs/community-promise/default.aspx`
+> 2. The Open Web Foundation Final Specification Agreement Version 1.0 ("OWF 1.0") as of October 1, 2012, available at `http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0`.
 
 ## Document History
 

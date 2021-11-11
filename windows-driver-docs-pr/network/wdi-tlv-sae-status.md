@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # WDI_TLV_SAE_STATUS
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 **WDI_TLV_SAE_STATUS** is a TLV that contains Simultaneous Authentication of Equals (SAE) authentication failure error status.
 
 This TLV is used in the command parameters of [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) and in the payload data of [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md).

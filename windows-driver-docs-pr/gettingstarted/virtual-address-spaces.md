@@ -1,5 +1,5 @@
 ---
-title: Virtual address spaces | Windows drivers
+title: Virtual address spaces
 description: When a processor reads or writes to a memory location, it uses a virtual address.
 ms.date: 08/06/2021
 ms.localizationpriority: medium

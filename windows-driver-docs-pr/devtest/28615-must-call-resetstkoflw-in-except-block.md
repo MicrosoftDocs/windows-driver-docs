@@ -1,5 +1,5 @@
 ---
-title: C28615
+title: C28615 warning
 description: Warning C28615 Must call _resetstkoflw in the __except() block when calling _alloca in the __try block. Don't call _resetstkoflw from inside a catch() block.
 ms.date: 04/20/2017
 ms.localizationpriority: medium 

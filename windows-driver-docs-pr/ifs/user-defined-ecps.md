@@ -1,14 +1,18 @@
 ---
 title: User-Defined ECPs
 description: User-Defined ECPs
-ms.date: 04/20/2017
+ms.date: 09/09/2021
 ms.localizationpriority: medium
 ---
 
-# User-Defined ECPs
+# User-defined ECPs
 
+A filter driver can define its own extra create parameters (ECPs). To define your own ECP:
 
-To define your own ECP, define a GUID that identifies your ECP and a context structure that describes your ECP. For information about how to define GUIDs and using them in driver code, see [Using GUIDs in Drivers](../kernel/using-guids-in-drivers.md).
+* Define a GUID that identifies your ECP.
 
- 
+* Define a context structure that describes your ECP.
 
+See [System-defined ECPs](system-defined-ecps.md) for examples of system-defined GUIDs and associated context structures.
+
+For information about how to define GUIDs and using them in driver code, see [Using GUIDs in Drivers](../kernel/using-guids-in-drivers.md).

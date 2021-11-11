@@ -20,73 +20,38 @@ In Windows 8, Windows Server 2012, and later, the receive segment coalescing (
 
 The following list shows the enumeration [standardized INF keywords](standardized-inf-keywords-for-network-devices.md) for RSC:
 
-<a href="" id="-rscipv4"></a>**\*RscIPv4**  
+**\*RscIPv4**  
 Enable or disable support for RSC for the IPv4 datagram version.
 
-<a href="" id="---------rscipv6"></a> **\*RscIPv6**  
+**\*RscIPv6**  
 Enable or disable support for RSC for the IPv6 datagram version.
 
 Enumeration standardized INF keywords have the following attributes:
 
-<a href="" id="subkeyname"></a>**SubkeyName**  
+**SubkeyName**  
 The name of the keyword that you must specify in the INF file and that appears in the registry.
 
-<a href="" id="paramdesc"></a>**ParamDesc**  
+**ParamDesc**  
 The display text that is associated with **SubkeyName**.
 
-<a href="" id="value"></a>**Value**  
+**Value**  
 The enumeration integer value that is associated with each option in the list. This value is stored in NDI\\params\\ *SubkeyName*\\*Value*.
 
-<a href="" id="enumdesc"></a>**EnumDesc**  
+**EnumDesc**  
 The display text that is associated with each value that appears in the menu.
 
-<a href="" id="default"></a>**Default**  
+**Default**  
 The default value for the menu.
 
 The following table describes the possible INF entries for the RSC enumeration keywords.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SubkeyName</th>
-<th align="left">ParamDesc</th>
-<th align="left">Value</th>
-<th align="left">EnumDesc</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong><em>RscIPv4</strong></p></td>
-<td align="left"><p>Recv Segment Coalescing (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>RscIPv6</strong></p></td>
-<td align="left"><p>Recv Segment Coalescing (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-</tbody>
-</table>
+
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**\*RscIPv4**|Recv Segment Coalescing (IPv4)|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*RscIPv6**|Recv Segment Coalescing (IPv6)|0|Disabled|
+|||1 (Default)|Enabled|
 
  
 

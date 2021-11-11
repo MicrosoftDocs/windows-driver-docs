@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_ITEM\_FLAGS
-description: The WIA\_IPA\_ITEM\_FLAGS property contains the descriptive flags for a WIA item.
+title: WIA_IPA_ITEM_FLAGS
+description: The WIA_IPA_ITEM_FLAGS property contains the descriptive flags for a WIA item.
 keywords: ["WIA_IPA_ITEM_FLAGS Imaging Devices"]
 topic_type:
 - apiref
@@ -10,76 +10,37 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/05/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_IPA\_ITEM\_FLAGS
+# WIA_IPA_ITEM_FLAGS
 
+The WIA_IPA_ITEM_FLAGS property contains the descriptive flags for a WIA item.
 
-The WIA\_IPA\_ITEM\_FLAGS property contains the descriptive flags for a WIA item.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ipa_item_flags_si"></span><span id="DDK_WIA_IPA_ITEM_FLAGS_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-The WIA item flags are the same as those in the *lObjectFlags* parameter of the [**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. The WIA service creates and maintains the WIA\_IPA\_ITEM\_FLAGS property.
+The WIA item flags are the same as those in the *lObjectFlags* parameter of the [**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. The WIA service creates and maintains the WIA_IPA_ITEM_FLAGS property.
 
-An application reads WIA\_IPA\_ITEM\_FLAGS to determine a WIA item's descriptive flag values.
+An application reads WIA_IPA_ITEM_FLAGS to determine a WIA item's descriptive flag values.
 
 The following table describes the flags that are obsolete in Windows Vista and later versions of the operating system but are valid with Microsoft Windows XP.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Flag</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>WiaItemTypeAnalyze</strong></p></td>
-<td><p>WIA item that supports the <strong>IWiaItem::AnalyzeItem</strong> method,which is described in the Microsoft Windows SDK documentation. This item also supports automatic child item generation, which helps you detect regions or decomposepages.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>WiaItemTypeBurst</strong></p></td>
-<td><p>For folders only. <strong>WiaItemTypeBurst</strong> indicates that the images in this folder were taken in a continuous time sequence.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>WiaItemTypeHasAttachments</strong></p></td>
-<td><p>WIA item that supports attachments and currently contains attachments.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>WiaItemTypeHPanorama</strong></p></td>
-<td><p>WIA item that represents a horizontal panoramic image. This flag is valid only for items that also have the <strong>WiaItemTypeFolder</strong> flag set.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>WiaItemTypeTwainCapabilityPassThrough</strong></p></td>
-<td><p><strong>WiaItemTypeTwainCapabilityPassThrough</strong> indicates that the WIA device is able to receive TWAIN capability data from the TWAIN compatibility layer. If this flag is set, any TWAIN capability that the TWAIN compatibility layer does not understand will be passed to the WIA driver. This flag is valid only for the root item of the WIA driver.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>WiaItemTypeVideo</strong></p></td>
-<td><p>WIA item that supports streaming video.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>WiaItemTypeVPanorama</strong></p></td>
-<td><p>WIA item that represents a vertical panoramic image. <strong>WiaItemTypeVPanorama</strong> is valid only for items that also have the <strong>WiaItemTypeFolder</strong> flag set.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Flag | Definition |
+|--|--|
+| **WiaItemTypeAnalyze** | WIA item that supports the **IWiaItem::AnalyzeItem** method,which is described in the Microsoft Windows SDK documentation. This item also supports automatic child item generation, which helps you detect regions or decomposepages. |
+| **WiaItemTypeBurst** | For folders only. **WiaItemTypeBurst** indicates that the images in this folder were taken in a continuous time sequence. |
+| **WiaItemTypeHasAttachments** | WIA item that supports attachments and currently contains attachments. |
+| **WiaItemTypeHPanorama** | WIA item that represents a horizontal panoramic image. This flag is valid only for items that also have the **WiaItemTypeFolder** flag set. |
+| **WiaItemTypeTwainCapabilityPassThrough** | **WiaItemTypeTwainCapabilityPassThrough** indicates that the WIA device is able to receive TWAIN capability data from the TWAIN compatibility layer. If this flag is set, any TWAIN capability that the TWAIN compatibility layer does not understand will be passed to the WIA driver. This flag is valid only for the root item of the WIA driver. |
+| **WiaItemTypeVideo** | WIA item that supports streaming video. |
+| **WiaItemTypeVPanorama** | WIA item that represents a vertical panoramic image. **WiaItemTypeVPanorama** is valid only for items that also have the **WiaItemTypeFolder** flag set. |
 
 The following table describes the flags that are valid in Windows Vista, Windows XP, and later operating systems.
 
@@ -150,8 +111,6 @@ The following table describes the flags that are valid in Windows Vista, Windows
 </tbody>
 </table>
 
- 
-
 The following table describes the flags that are valid in Windows Vista and later versions of the operating system only.
 
 <table>
@@ -190,31 +149,14 @@ The following table describes the flags that are valid in Windows Vista and late
 </tbody>
 </table>
 
- 
-
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_IPA_FORMAT**](wia-ipa-format.md)
 
-[**WIA\_IPA\_FORMAT**](wia-ipa-format.md)
-
-[**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md)
+[**WIA_IPA_ITEM_CATEGORY**](wia-ipa-item-category.md)
 
 [**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem)
-
- 
-

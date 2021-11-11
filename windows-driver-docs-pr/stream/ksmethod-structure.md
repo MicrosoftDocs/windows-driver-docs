@@ -2,6 +2,7 @@
 title: KSMETHOD structure (ks.h)
 description: The KSMETHOD structure specifies a single kernel streaming method within a method set.
 ms.date: 07/07/2021
+ms.custom: contperf-fy22q1
 ms.localizationpriority: medium
 ---
 

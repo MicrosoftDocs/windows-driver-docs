@@ -1,5 +1,5 @@
 ---
-title: ks.dhdr
+title: ks.dhdr (WinDbg)
 description: ks.dhdr
 ms.date: 11/28/2017
 ms.localizationpriority: medium

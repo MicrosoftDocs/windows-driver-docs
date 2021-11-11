@@ -10,6 +10,8 @@ ms.custom: 19H1
 
 # OID\_WDI\_TASK\_STOP\_AP
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 OID\_WDI\_TASK\_STOP\_AP requests that the IHV component disconnects all connected clients on the specified port and stops beaconing and responding to probe requests. AP configuration and MIB attributes are preserved.
 

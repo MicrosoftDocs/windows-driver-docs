@@ -1,5 +1,5 @@
 ---
-title: errpkt
+title: errpkt (WinDbg)
 description: The errpkt extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet.
 keywords: ["errpkt Windows Debugging"]
 ms.date: 05/23/2017

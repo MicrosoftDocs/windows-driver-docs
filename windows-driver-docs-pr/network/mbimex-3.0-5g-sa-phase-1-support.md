@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # MBIMEx 3.0 – 5G SA Phase 1 support
 
-As of Windows 10, version 21H1, Windows OS supports the first phase of features for 5G systems with the next generation core network. These 5G systems are commonly referred to as 5G SA networks. They contain the new 5G Core Network (5GC) and are independent of Enhanced Packet Core (EPC) as used in 5G NSA networks and 4G networks.  
+Starting with Windows 11, Windows OS supports the first phase of features for 5G systems with the next generation core network. These 5G systems are commonly referred to as 5G SA networks. They contain the new 5G Core Network (5GC) and are independent of Enhanced Packet Core (EPC) as used in 5G NSA networks and 4G networks.  
 
 The first phase of features for 5G SA enables MBB functionality parity for Windows MBIM MBB devices on 5G SA networks compared to 5G NSA. These features include registration with 5GC and basic PDU sessions on default eMBB network slice. Note that this phase does not support more advanced 5G SA features such as multiple concurrent network slices and URSP rules.
 

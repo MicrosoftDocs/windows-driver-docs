@@ -1,5 +1,5 @@
 ---
-title: ndiskd.nb
+title: ndiskd.nb (WinDbg)
 description: The ndiskd.nb extension displays information about a NET_BUFFER (NB) structure.
 keywords: ["ndiskd.nb Windows Debugging"]
 ms.date: 06/15/2020

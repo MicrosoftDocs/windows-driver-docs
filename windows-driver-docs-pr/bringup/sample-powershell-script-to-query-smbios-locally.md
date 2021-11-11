@@ -5,9 +5,7 @@ ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---
 
-
 # Sample PowerShell script to query SMBIOS locally
-
 
 The following list of ChassisTypes is copied from the latest DMTF SMBIOS specification.
 

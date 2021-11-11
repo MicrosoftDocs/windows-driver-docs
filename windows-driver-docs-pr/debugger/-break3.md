@@ -1,5 +1,5 @@
 ---
-title: .break
+title: .break (WinDbg)
 description: The .break token behaves like the break keyword in C.
 keywords: [".break Windows Debugging"]
 ms.date: 05/23/2017

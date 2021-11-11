@@ -1,26 +1,25 @@
 ---
 title: SendDownStreamIrp Function
-description: SendDownStreamIrp Function
-ms.date: 04/20/2017
+description: Provides information about the SendDownStreamIrp function
+ms.date: 08/17/2021
 ms.localizationpriority: medium
 ---
 
 # SendDownStreamIrp Function
 
-
-The code example for the `SendDownStreamIrp` function that is provided in this topic shows how to implement a driver-supplied function that sends synchronous IOCTL requests to the ACPI driver. The `SendDownStreamIrp` function can be used to send an [**IOCTL\_ACPI\_EVAL\_METHOD**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method) request, an [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex) request, or an [**IOCTL\_ACPI\_ENUM\_CHILDREN**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request.
+The code example for the `SendDownStreamIrp` function that is provided in this topic shows how to implement a driver-supplied function that sends synchronous IOCTL requests to the ACPI driver. The `SendDownStreamIrp` function can be used to send an [**IOCTL_ACPI_EVAL_METHOD**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method) request, an [**IOCTL_ACPI_EVAL_METHOD_EX**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex) request, or an [**IOCTL_ACPI_ENUM_CHILDREN**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request.
 
 The example code for the `SendDownStreamIrp` function that is included in this section performs the following sequence of operations:
 
--   Creates an event object.
+- Creates an event object.
 
--   Calls [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) to create the IOCTL request.
+- Calls [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) to create the IOCTL request.
 
--   Calls [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the IOCTL request.
+- Calls [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the IOCTL request.
 
--   Waits until the ACPI driver signals the event object, which indicates that the request has completed.
+- Waits until the ACPI driver signals the event object, which indicates that the request has completed.
 
--   Returns the status of the request to the caller.
+- Returns the status of the request to the caller.
 
 ```cpp
 NTSTATUS
@@ -94,6 +93,3 @@ Return Value:
     return status;
 }
 ```
-
- 
-

@@ -1,5 +1,5 @@
 ---
-title: C28260
+title: C28260 warning
 description: Warning C28260 A syntax error in the annotations was found while parsing for a property inside a function.
 keywords:
 - warnings listed WDK PREfast for Drivers

@@ -1,13 +1,13 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.EventHandler
-description: EFI_USBFN_IO_PROTOCOL.EventHandler
+description: The EventHandler function is called repeatedly to receive updates on USB bus states, receive and transmit status changes on endpoints, and set up packet on endpoint 0.
 ms.date: 08/16/2021
 ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_IO_PROTOCOL.EventHandler
 
-The **EventHandler** function is called repeatedly to receive updates on USB bus states, receive and transmit status changes on endpoints, and set up packet on endpoint 0.
+The *EventHandler* function is called repeatedly to receive updates on USB bus states, receive and transmit status changes on endpoints, and set up packet on endpoint 0.
 
 ## Syntax
 
@@ -37,6 +37,8 @@ On input, the size of the memory pointed to by Payload. On output, the amount of
 A pointer to the [EFI_USBFN_MESSAGE_PAYLOAD](efi-usbfn-message-payload.md) instance to return additional payload for current message.
 
 ## Return values
+
+The function returns the following values:
 
 | Return code | Description |
 |--|--|

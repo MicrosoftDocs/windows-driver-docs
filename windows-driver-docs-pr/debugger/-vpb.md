@@ -1,5 +1,5 @@
 ---
-title: vpb
+title: vpb (WinDbg)
 description: The vpb extension displays a volume parameter block (VPB).
 keywords: ["vpb Windows Debugging"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Logging
+title: Logging NFC
 keywords:
 - NFC
 - near field communications

@@ -1,13 +1,13 @@
 ---
 title: Architecture of the UEFI battery charging application
-description: Provides information about the design of the UEFI battery charging application provided by Microsoft for devices that run Windows 10 Mobile.
+description: Provides information about the design of the UEFI battery charging application provided by Microsoft for devices that run Windows 10 Mobile.
 ms.date: 08/16/2021
 ms.localizationpriority: medium
 ---
 
 # Architecture of the UEFI battery charging application provided by Microsoft
 
-This topic provides information about the design of the UEFI battery charging application provided by Microsoft for devices that run Windows 10 Mobile. OEMs can use the battery charging application from Microsoft, or they can implement their own charging application. OEMs that implement their own UEFI battery charging application may use the information in this topic as a guideline for their design.
+This topic provides information about the design of the UEFI battery charging application provided by Microsoft for devices that run Windows 10 Mobile. OEMs can use the battery charging application from Microsoft, or they can implement their own charging application. OEMs that implement their own UEFI battery charging application may use the information in this topic as a guideline for their design.
 
 The UEFI battery charging application is one of the first Microsoft-owned applications that runs during the boot process. The UEFI battery charging application has the following main responsibilities:
 

@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY
-description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY to control the polarity setting of the tuner node.
+title: KSPROPERTY_BDA_RF_TUNER_POLARITY
+description: Clients use KSPROPERTY_BDA_RF_TUNER_POLARITY to control the polarity setting of the tuner node.
 keywords: ["KSPROPERTY_BDA_RF_TUNER_POLARITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,53 +10,23 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/14/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY
+# KSPROPERTY_BDA_RF_TUNER_POLARITY
 
+Clients use **KSPROPERTY_BDA_RF_TUNER_POLARITY** to control the polarity setting of the tuner node.
 
-Clients use KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY to control the polarity setting of the tuner node.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_rf_tuner_polarity_ks"></span><span id="DDK_KSPROPERTY_BDA_RF_TUNER_POLARITY_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p>KSP_NODE</p></td>
-<td><p>ULONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter | [**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node) | ULONG |
 
 ## Remarks
 
-The **NodeId** member of KSP\_NODE specifies the identifier of the tuner node.
+The **NodeId** member of **KSP_NODE** specifies the identifier of the tuner node.
 
 The property value specifies the polarity to set for the transmitted signal.
 
@@ -64,25 +34,10 @@ For some transmissions, particularly satellite transmissions, the signal may be 
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
-[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**Polarization**](/previous-versions/windows/hardware/drivers/ff567780(v=vs.85))
-
- 
-

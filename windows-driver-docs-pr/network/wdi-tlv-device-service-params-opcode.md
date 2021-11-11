@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE is a TLV that contains the opcode specific to the device service. This TLV is used in the [NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT](ndis-status-wdi-indication-device-service-event.md) status indication.
 
 ## TLV Type

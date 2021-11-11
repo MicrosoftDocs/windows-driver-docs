@@ -10,12 +10,11 @@ api_name:
 - EFI_RNG_ALGORITHM_LIST
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 08/20/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_RNG\_ALGORITHM\_LIST structure
-
+# EFI_RNG_ALGORITHM_LIST structure
 
 This data structure contains a list of the supported Random Number Generation (RNG) algorithms.
 
@@ -34,13 +33,13 @@ typedef struct _EFI_RNG_ALGORITHM_LIST {
 The number of algorithms in the list.
 
 **Algorithms**  
-Pointer to a list of RNG algorithms. Each algorithm is `sizeof(EFI_GUID)` bytes long. It is the caller's responsibility to free this memory by using EFI\_BOOT\_SERVICES-&gt;FreePool().
+Pointer to a list of RNG algorithms. Each algorithm is `sizeof(EFI_GUID)` bytes long. It is the caller's responsibility to free this memory by using EFI_BOOT_SERVICES->FreePool().
 
 ## Remarks
 
 An implementation may support one or more ways to provide RNG values. The list of supported RNG algorithms is represented in this structure.
 
-The following list provides EFI GUID values for a selection of EFI\_RNG\_PROTOCOL algorithms. The list is not meant to be exhaustive and may be augmented by vendors or other industry standards.
+The following list provides EFI GUID values for a selection of EFI_RNG_PROTOCOL algorithms. The list is not meant to be exhaustive and may be augmented by vendors or other industry standards.
 
 ```cpp
 #define EFI_RNG_ALGORITHM_SP800_90_HASH_256_GUID   \

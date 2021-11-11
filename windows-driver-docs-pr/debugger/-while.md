@@ -1,5 +1,5 @@
 ---
-title: .while
+title: .while (WinDbg)
 description: The .while token behaves like the while keyword in C.
 keywords: [".while Windows Debugging"]
 ms.date: 05/23/2017

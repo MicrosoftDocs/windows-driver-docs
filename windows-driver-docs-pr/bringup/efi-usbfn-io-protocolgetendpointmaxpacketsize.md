@@ -1,17 +1,15 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetEndpointMaxPacketSize
-description: EFI_USBFN_IO_PROTOCOL.GetEndpointMaxPacketSize
-ms.date: 04/20/2017
+description: The GetEndpointMaxPacketSize function returns the maximum packet size of the specified endpoint type for the supplied bus speed.
+ms.date: 08/23/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_USBFN\_IO\_PROTOCOL.GetEndpointMaxPacketSize
+# EFI_USBFN_IO_PROTOCOL.GetEndpointMaxPacketSize
 
-
-The **GetEndpointMaxPacketSize** function returns the maximum packet size of the specified endpoint type for the supplied bus speed..
+The *GetEndpointMaxPacketSize* function returns the maximum packet size of the specified endpoint type for the supplied bus speed.
 
 ## Syntax
-
 
 ```cpp
 typedef
@@ -26,66 +24,29 @@ EFI_STATUS
 
 ## Parameters
 
+*This*  
+A pointer to the EFI_USBFN_IO_PROTOCOL instance.
 
-<a href="" id="this"></a>*This*  
-A pointer to the EFI\_USBFN\_IO\_PROTOCOL instance.
+*EndpointType*  
+Endpoint type as defined in the [EFI_USB_ENDPOINT_TYPE](efi-usb-endpoint-type.md). enumeration
 
-<a href="" id="endpointtype"></a>*EndpointType*  
-Endpoint type as defined in the [EFI\_USB\_ENDPOINT\_TYPE](efi-usb-endpoint-type.md). enumeration
+*BusSpeed*  
+An [EFI_USB_BUS_SPEED](efi-usb-bus-speed.md) enumeration value that indicates the current bus speed as known to the caller.
 
-<a href="" id="busspeed"></a>*BusSpeed*  
-An [EFI\_USB\_BUS\_SPEED](efi-usb-bus-speed.md) enumeration value that indicates the current bus speed as known to the caller.
-
-<a href="" id="maxpacketsize"></a>*MaxPacketSize*  
+*MaxPacketSize*  
 The maximum packet size, in bytes, of the specified endpoint type.
 
 ## Return values
 
-
 This function returns the following values:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>EFI_SUCCESS</strong></p></td>
-<td><p>The function returned successfully</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>EFI_INVALID_PARAMETER</strong></p></td>
-<td><p>A parameter is invalid</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>EFI_DEVICE_ERROR</strong></p></td>
-<td><p>The physical device reported an error.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>EFI_NOT_READY</strong></p></td>
-<td><p>The physical device is busy or not ready to process this request</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Return code | Description |
+|--|--|
+| EFI_SUCCESS | The function returned successfully |
+| EFI_INVALID_PARAMETER | A parameter is invalid |
+| EFI_DEVICE_ERROR | The physical device reported an error. |
+| EFI_NOT_READY | The physical device is busy or not ready to process this request |
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

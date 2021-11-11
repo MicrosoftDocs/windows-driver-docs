@@ -1,5 +1,5 @@
 ---
-title: ahcache
+title: ahcache (WinDbg)
 description: The ahcache extension displays the application compatibility cache.
 keywords: ["ahcache Windows Debugging"]
 ms.date: 09/17/2018

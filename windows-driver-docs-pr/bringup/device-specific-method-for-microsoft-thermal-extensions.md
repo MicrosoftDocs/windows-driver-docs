@@ -1,7 +1,7 @@
 ---
 title: Device-Specific Method for Microsoft thermal extensions
 description: To support more flexible design of thermal zones and thermal sensors, Windows supports extensions to the ACPI thermal zone model.
-ms.date: 01/14/2021
+ms.date: 08/18/2021
 ms.localizationpriority: medium
 ---
 
@@ -11,17 +11,20 @@ To support more flexible design of thermal zones and thermal sensors, Windows su
 
 For more information about MTL, see [Thermal management in Windows](/windows-hardware/design/device-experiences/thermal-management-in-windows)
 
-To use these features, OEMs can include the following Device-Specific Method (\_DSM) in the namespace of any thermal zone.
+To use these features, OEMs can include the following Device-Specific Method (_DSM) in the namespace of any thermal zone.
 
 ## Function 1: Minimum throttle limit
 
-The \_DSM control method parameters for the thermal minimum throttle limit are as follows:
+The _DSM control method parameters for the thermal minimum throttle limit are as follows:
 
 ### Arguments (Minimum throttle limit)
 
 - **Arg0:** UUID = 14d399cd-7a27-4b18-8fb4-7cb7b9f4e500
+
 - **Arg1:** Revision ID = 0
+
 - **Arg2:** Function index = 1
+
 - **Arg3:** Empty package (not used)
 
 ### Return (Minimum throttle limit)
@@ -30,13 +33,16 @@ An integer value with the current minimum throttle limit, expressed as a percent
 
 ## Function 2: Temperature sensor device
 
-The \_DSM control method parameters for the temperature sensor device are as follows:
+The _DSM control method parameters for the temperature sensor device are as follows:
 
 ### Arguments (Temperature sensor device)
 
 - **Arg0:** UUID = 14d399cd-7a27-4b18-8fb4-7cb7b9f4e500
+
 - **Arg1:** Revision ID = 0
+
 - **Arg2:** Function index = 2
+
 - **Arg3:** Empty package (not used)
 
 ### Return (Temperature sensor device)

@@ -2,6 +2,7 @@
 title: KSPROPERTY structure (ks.h)
 description: The KSPROPERTY structure specifies a single kernel streaming property within a property set.
 ms.date: 07/07/2021
+ms.custom: contperf-fy22q1
 ms.localizationpriority: medium
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: pte
+title: pte (WinDbg)
 description: The pte extension displays the page table entry (PTE) and page directory entry (PDE) for the specified address.
 keywords: ["page table entry (PTE)", "PTE (page table entry)", "page directory entry (PDE)", "PDE (page directory entry)", "pte Windows Debugging"]
 ms.date: 05/13/2020

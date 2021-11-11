@@ -1,19 +1,12 @@
 ---
 title: Kernel Streaming Method Sets
-description: Kernel Streaming Method Sets
-ms.date: 11/28/2017
+description: Provides information about kernel streaming method sets.
+ms.date: 10/11/2021
 ms.localizationpriority: medium
 ---
 
 # Kernel Streaming Method Sets
 
-
-## <span id="ddk_kernel_streaming_method_sets_ks"></span><span id="DDK_KERNEL_STREAMING_METHOD_SETS_KS"></span>
-
-
-This section discusses the [KSMETHODSETID\_StreamAllocator](ksmethodsetid-streamallocator.md) method set.
+This section discusses the [KSMETHODSETID_StreamAllocator](ksmethodsetid-streamallocator.md) method set.
 
 Also see [KS Methods](./ks-methods.md).
-
- 
-

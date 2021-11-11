@@ -1,6 +1,6 @@
 ---
-title: WIA\_DIP\_DEV\_DESC
-description: The WIA\_DIP\_DEV\_DESC property contains the device description string for a WIA minidriver. The WIA service creates and maintains this property.
+title: WIA_DIP_DEV_DESC
+description: The WIA_DIP_DEV_DESC property contains the device description string for a WIA minidriver. The WIA service creates and maintains this property.
 keywords: ["WIA_DIP_DEV_DESC Imaging Devices"]
 topic_type:
 - apiref
@@ -10,48 +10,24 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/29/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DIP\_DEV\_DESC
+# WIA_DIP_DEV_DESC
 
+The WIA_DIP_DEV_DESC property contains the device description string for a WIA minidriver. The WIA service creates and maintains this property.
 
-The WIA\_DIP\_DEV\_DESC property contains the device description string for a WIA minidriver. The WIA service creates and maintains this property.
+Property Type: VT_BSTR
 
-## <span id="ddk_wia_dip_dev_desc_si"></span><span id="DDK_WIA_DIP_DEV_DESC_SI"></span>
-
-
-Property Type: VT\_BSTR
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-The device description string that the WIA\_DIP\_DEV\_DESC property contains is obtained from the driver's INF file. An application reads this property to get a description of the device.
+The device description string that the WIA_DIP_DEV_DESC property contains is obtained from the driver's INF file. An application reads this property to get a description of the device.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

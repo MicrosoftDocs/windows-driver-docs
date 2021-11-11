@@ -1,5 +1,5 @@
 ---
-title: atom
+title: atom (WinDbg)
 description: The atom extension displays the formatted atom table for the specified atom or for all atoms of the current process.
 keywords: ["atom Windows Debugging"]
 ms.date: 09/17/2018

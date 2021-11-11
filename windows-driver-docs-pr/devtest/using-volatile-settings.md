@@ -20,7 +20,7 @@ However, you can activate and deactivate some options without rebooting. These a
 This section explains the volatile settings and how to use them on the versions of Driver Verifier included in different versions of Windows.
 
 > [!NOTE]
-> This option will be deprecated in a future release of Windows. A replacement option will be provided.
+> This option will be deprecated in a future release of Windows. A replacement option for Windows 11 is provided with the **/now** [Verifier Command](verifier-command-line.md).
 
 ### Changing Options Without Rebooting
 
@@ -30,9 +30,12 @@ As of Windows 11, only the following flags can be used with volatile:
 0x00000004 (bit  2) - Randomized low resources simulation
 0x00000020 (bit  5) - Deadlock detection
 0x00000080 (bit  7) - DMA checking
-0x00000200 (bit  9) - Force pending I/O requests 
-0x00000400 (bit 10) - IRP logging 
+0x00000200 (bit  9) - Force pending I/O requests
+0x00000400 (bit 10) - IRP logging
 ```
+
+> [!NOTE]
+> A number of other flags in Windows 11 may be enabled without reboot using the **/now** command. The supported flags are described in [Verifier Command](verifier-command-line.md).
 
 As of Windows 10, only the following flags can be used with volatile:
 
@@ -109,7 +112,7 @@ To add or remove a driver from the volatile list, use the **/volatile /adddriver
     verifier /volatile /flags 0x20
     ```
 
-   
+
 -   To turn off all Driver Verifier options:
 
     You cannot stop the verification of a driver that is currently loaded without rebooting. However, you can use the following command syntax to deactivate all of the Driver Verifier options without rebooting, thereby minimizing the overhead until the next reboot.
@@ -121,7 +124,7 @@ To add or remove a driver from the volatile list, use the **/volatile /adddriver
     Driver Verifier continues to monitor the driver using the options in the [Automatic Checks](automatic-checks.md) feature, which cannot be turned off, but the overhead is reduced to approximately ten percent of the overhead of a typical verification.
 
 
-### Configuring Volatile Settings by Using Driver Verifier Manager 
+### Configuring Volatile Settings by Using Driver Verifier Manager
 
 **To view the Driver Verifier features that are currently active, or to change the volatile settings**
 
@@ -143,13 +146,13 @@ To add or remove a driver from the volatile list, use the **/volatile /adddriver
 
 Driver Verifier Manager shows three possible status values for drivers shown on the **Current settings and verified drivers (run time information)** screen. The possible status values are as follows:
 
-<span id="Loaded"></span><span id="loaded"></span><span id="LOADED"></span>**Loaded**  
+<span id="Loaded"></span><span id="loaded"></span><span id="LOADED"></span>**Loaded**
 The driver is currently loaded and is being verified.
 
-<span id="Unloaded"></span><span id="unloaded"></span><span id="UNLOADED"></span>**Unloaded**  
+<span id="Unloaded"></span><span id="unloaded"></span><span id="UNLOADED"></span>**Unloaded**
 The driver was loaded and verified at least once since the last boot, but is currently not loaded.
 
-<span id="Never_Loaded"></span><span id="never_loaded"></span><span id="NEVER_LOADED"></span>**Never Loaded**  
+<span id="Never_Loaded"></span><span id="never_loaded"></span><span id="NEVER_LOADED"></span>**Never Loaded**
 Driver Verifier was instructed to verify this driver, but the driver has not been loaded since this request. This can indicate that the driver is loaded on demand and has not yet been required in this session. It might also indicate that a nonexistent driver was requested for verification, or that a driver image file has been corrupted.
 
 ## Related topics
@@ -159,9 +162,9 @@ Driver Verifier was instructed to verify this driver, but the driver has not bee
 
 [Controlling Driver Verifier](controlling-driver-verifier.md)
 
- 
 
- 
+
+
 
 
 

@@ -72,8 +72,6 @@ If you have a directory on your computer where you manually place symbols, do no
 .sympath c:\MyRegularSymbols;srv*c:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
 ```
 
-For more information about symbol servers, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
-
 ## <span id="Combining_cache__and_srv_"></span><span id="combining_cache__and_srv_"></span><span id="COMBINING_CACHE__AND_SRV_"></span>Combining cache\* and srv\*
 
 
@@ -95,7 +93,7 @@ For example, the following command tells the debugger to use a symbol server to 
 
 You can use the AgeStore tool to delete cached files that are older than a specified date, or to delete enough old files that the resulting size of the cache is less than a specified amount. This can be useful if your downstream store is too large. For details, see [AgeStore](agestore.md).
 
-For more information about symbol servers and symbol stores, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
+For more information about symbol servers and symbol stores, see [Custom Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
 ## <span id="lazy_symbol_loading"></span><span id="LAZY_SYMBOL_LOADING"></span>Lazy symbol loading
 

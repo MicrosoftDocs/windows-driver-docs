@@ -8,6 +8,8 @@
   href: power-meter-interface.md
 - name: "Energy Meter Interface"
   href: energy-meter-interface.md
+- name: "EMI naming convention"
+  href: rail_naming.md
 - name: "Software Defined Batteries"
   href: software-defined-batteries.md
 - name: "ACPI Power Meter Interface"

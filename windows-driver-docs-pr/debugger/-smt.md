@@ -1,5 +1,5 @@
 ---
-title: smt
+title: smt (WinDbg)
 description: The smt extension displays a summary of the simultaneous multithreaded processor information.
 keywords: ["smt Windows Debugging"]
 ms.date: 05/23/2017

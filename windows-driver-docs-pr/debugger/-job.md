@@ -1,5 +1,5 @@
 ---
-title: job
+title: job (WinDbg)
 description: The job extension displays a job object.
 keywords: ["job Windows Debugging"]
 ms.date: 05/23/2017

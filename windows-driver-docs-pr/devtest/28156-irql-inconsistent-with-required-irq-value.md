@@ -1,5 +1,5 @@
 ---
-title: C28156
+title: C28156 warning
 description: Warning C28156 The actual IRQL is inconsistent with the required IRQL.
 keywords:
 - warnings listed WDK PREfast for Drivers

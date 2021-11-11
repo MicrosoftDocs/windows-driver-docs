@@ -1,6 +1,6 @@
 ---
-title: KSINTERFACE\_MEDIA\_MUSIC
-description: KSINTERFACE\_MEDIA\_MUSIC
+title: KSINTERFACE_MEDIA_MUSIC
+description: The KSINTERFACE_MEDIA_MUSIC interface is not supported.
 keywords: ["KSINTERFACE_MEDIA_MUSIC Streaming Media Devices"]
 topic_type:
 - apiref
@@ -8,38 +8,14 @@ api_name:
 - KSINTERFACE_MEDIA_MUSIC
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 10/12/2021
 ms.localizationpriority: medium
 ---
 
-# KSINTERFACE\_MEDIA\_MUSIC
+# KSINTERFACE_MEDIA_MUSIC
 
-
-## <span id="ddk_ksinterface_media_music_ks"></span><span id="DDK_KSINTERFACE_MEDIA_MUSIC_KS"></span>
-
-
-The KSINTERFACE\_MEDIA\_MUSIC interface is not supported.
+The KSINTERFACE_MEDIA_MUSIC interface is not supported.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Not supported.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Version:** Not supported.

@@ -1,5 +1,5 @@
 ---
-title: dt
+title: dt (WinDbg)
 description: The dt extension displays information about a CSR thread.This extension command should not be confused with the dt (Display Type) command.
 keywords: ["dt Windows Debugging"]
 ms.date: 05/23/2017

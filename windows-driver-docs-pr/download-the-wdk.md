@@ -65,13 +65,13 @@ MSVC v142 - VS 2019 C++ x64/x86 build tools (Latest)
 MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
-### ![download icon.](images/download-install.png) Step 2 Install Windows 11 SDK (22000.1)
+### ![download icon.](images/download-install.png) Step 2: Install Windows 11 SDK (22000.1)
+
 * [Download Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460)
 
 This SDK must be installed separately until available through Visual Studio
 
-
-### ![download icon.](images/download-install.png) Step 2: Install Windows 11 WDK
+### ![download icon.](images/download-install.png) Step 3: Install Windows 11 WDK
 
 * [Download WDK for Windows 11](https://go.microsoft.com/fwlink/?linkid=2166289)
 
@@ -92,10 +92,10 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 > You can use the Visual Studio interface with the build tools provided in the EWDK.
 >
->1.	Mount the EWDK ISO.
->2.	Run `LaunchBuildEnv.cmd`.
->3.	In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
->4.	Launch devenv.exe from the same environment, using the full file path. 
+>1.    Mount the EWDK ISO.
+>2.    Run `LaunchBuildEnv.cmd`.
+>3.    In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
+>4.    Launch devenv.exe from the same environment, using the full file path. 
 >Example: `"C:\Program Files (x86)\Microsoft Visual Studio\2019\\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
 >
 >Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2019 works with the EWDK that contain VS16.X build tools. 

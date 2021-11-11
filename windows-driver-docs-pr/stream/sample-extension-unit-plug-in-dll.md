@@ -1,15 +1,18 @@
 ---
 title: Sample Extension Unit Plug-in DLL
-description: Sample extension unit plug-in DLL
+description: This topic contains sample code for an Extension Unit plug-in DLL that exposes a COM API on top of a KS property set.
 keywords:
 - plug-in DLL WDK USB Video Class
 - extension units WDK USB Video Class , samples, plug-in DLL
 - sample code WDK USB Video Class , extension unit plug-in DLL
-ms.date: 06/19/2020
+ms.date: 09/17/2021
 ms.localizationpriority: medium
 ---
 
 # Sample extension unit plug-in DLL
+
+> [!IMPORTANT]
+> The content and sample code in this topic is outdated and currently unsupported. It may not work with the current driver development toolchain.
 
 This topic contains sample code for an Extension Unit plug-in DLL that exposes a COM API on top of a KS property set.
 

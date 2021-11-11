@@ -1,6 +1,6 @@
 ---
-title: WIA\_DIP\_SERVER\_NAME
-description: The WIA\_DIP\_SERVER\_NAME property contains the name of the server that a WIA minidriver is running on.
+title: WIA_DIP_SERVER_NAME
+description: The WIA_DIP_SERVER_NAME property contains the name of the server that a WIA minidriver is running on.
 keywords: ["WIA_DIP_SERVER_NAME Imaging Devices"]
 topic_type:
 - apiref
@@ -10,52 +10,24 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/29/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DIP\_SERVER\_NAME
+# WIA_DIP_SERVER_NAME
 
+The WIA_DIP_SERVER_NAME property contains the name of the server that a WIA minidriver is running on.
 
-The WIA\_DIP\_SERVER\_NAME property contains the name of the server that a WIA minidriver is running on.
+Property Type: VT_BSTR
 
-## <span id="ddk_wia_dip_server_name_si"></span><span id="DDK_WIA_DIP_SERVER_NAME_SI"></span>
-
-
-Property Type: VT\_BSTR
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-The default value of WIA\_DIP\_SERVER\_NAME is "local". This property should contain the string "local" when an application is connected to a device on the same computer.
+The default value of WIA_DIP_SERVER_NAME is "local". This property should contain the string "local" when an application is connected to a device on the same computer.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Optional for Microsoft Windows XP and later operating systems.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

@@ -1,17 +1,15 @@
 ---
 title: EFI_USBFN_TRANSFER_RESULT
-description: EFI_USBFN_TRANSFER_RESULT
-ms.date: 04/20/2017
+description: The EFI_USBFN_TRANSFER_RESULT structure contains information about data transmitted to or received from the host.
+ms.date: 08/23/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_USBFN\_TRANSFER\_RESULT
+# EFI_USBFN_TRANSFER_RESULT
 
-
-The **EFI\_USBFN\_TRANSFER\_RESULT** structure contains information about data transmitted to or received from the host.
+The **EFI_USBFN_TRANSFER_RESULT** structure contains information about data transmitted to or received from the host.
 
 ## Syntax
-
 
 ```cpp
 typedef struct _EFI_USBFN_TRANSFER_RESULT 
@@ -26,31 +24,21 @@ typedef struct _EFI_USBFN_TRANSFER_RESULT
 
 ## Members
 
-
-<a href="" id="bytestransferred"></a>**BytesTransferred**  
+**BytesTransferred**  
 The amount of data transferred, in bytes.
 
-<a href="" id="transferstatus"></a>**TransferStatus**  
-An enumeration of type [EFI\_USBFN\_TRANSFER\_STATUS](efi-usbfn-transfer-status.md) that indicates the status of the transfer.
+**TransferStatus**  
+An enumeration of type [EFI_USBFN_TRANSFER_STATUS](efi-usbfn-transfer-status.md) that indicates the status of the transfer.
 
-<a href="" id="endpointindex"></a>**EndpointIndex**  
+**EndpointIndex**  
 The index of the endpoint for which the notification occurred.
 
-<a href="" id="direction"></a>**Direction**  
+**Direction**  
 The direction of the endpoint.
 
-<a href="" id="buffer"></a>**Buffer**  
+**Buffer**  
 The buffer that contains the transferred data.
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

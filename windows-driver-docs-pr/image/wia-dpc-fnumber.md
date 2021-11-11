@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPC\_FNUMBER
-description: The WIA\_DPC\_FNUMBER property corresponds to the aperture of the lens, in units of the f-stop number scaled by 100.
+title: WIA_DPC_FNUMBER
+description: The WIA_DPC_FNUMBER property corresponds to the aperture of the lens, in units of the f-stop number scaled by 100.
 keywords: ["WIA_DPC_FNUMBER Imaging Devices"]
 topic_type:
 - apiref
@@ -10,58 +10,30 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/29/2021
 ms.localizationpriority: medium
 ---
 
-# WIA\_DPC\_FNUMBER
+# WIA_DPC_FNUMBER
 
+The WIA_DPC_FNUMBER property corresponds to the aperture of the lens, in units of the f-stop number scaled by 100.
 
-The WIA\_DPC\_FNUMBER property corresponds to the aperture of the lens, in units of the f-stop number scaled by 100.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_fnumber_si"></span><span id="DDK_WIA_DPC_FNUMBER_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
 ## Remarks
 
-The setting of the WIA\_DPC\_FNUMBER property is typically valid only when the [**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md) property is set to EXPOSUREMODE\_MANUAL or EXPOSUREMODE\_APERTURE\_PRIORITY.
+The setting of the WIA_DPC_FNUMBER property is typically valid only when the [**WIA_DPC_EXPOSURE_MODE**](wia-dpc-exposure-mode.md) property is set to EXPOSUREMODE_MANUAL or EXPOSUREMODE_APERTURE_PRIORITY.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
+
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_DPC_EXPOSURE_MODE**](wia-dpc-exposure-mode.md)

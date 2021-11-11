@@ -1,6 +1,6 @@
 ---
-title: KSINTERFACE\_STANDARD\_STREAMING
-description: KSINTERFACE\_STANDARD\_STREAMING
+title: KSINTERFACE_STANDARD_STREAMING
+description: The KSINTERFACE_STANDARD_STREAMING interface is used between most KS audio filters and is supported by all audio miniports.
 keywords: ["KSINTERFACE_STANDARD_STREAMING Streaming Media Devices"]
 topic_type:
 - apiref
@@ -8,19 +8,22 @@ api_name:
 - KSINTERFACE_STANDARD_STREAMING
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 10/12/2021
 ms.localizationpriority: medium
 ---
 
-# KSINTERFACE\_STANDARD\_STREAMING
+# KSINTERFACE_STANDARD_STREAMING
 
+The KSINTERFACE_STANDARD_STREAMING interface is used between most KS audio filters and is supported by all audio miniports.
 
-## <span id="ddk_ksinterface_standard_streaming_ks"></span><span id="DDK_KSINTERFACE_STANDARD_STREAMING_KS"></span>
+If a pin supports this interface, the relevant filter processes the data embedded in each [**KSSTREAM_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structure once.
 
+## See also
 
-The KSINTERFACE\_STANDARD\_STREAMING interface is used between most KS audio filters and is supported by all audio miniports. If a pin supports this interface, the relevant filter processes the data embedded in each [**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structure once.
+[KSINTERFACESETID_Standard](ksinterfacesetid-standard.md)
 
-### See Also
+[**KSPIN_INTERFACE**](./kspin-interface-structure.md)
 
-[KSINTERFACESETID\_Standard](ksinterfacesetid-standard.md), [**KSPIN\_INTERFACE**](./kspin-interface-structure.md), [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor), [**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header)
+[**KSPIN_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor)
 
+[**KSSTREAM_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header)

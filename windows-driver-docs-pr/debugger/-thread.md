@@ -1,5 +1,5 @@
 ---
-title: thread
+title: thread (WinDbg)
 description: The thread extension displays summary information about a thread on the target system, including the ETHREAD block. This command can be used only during kernel-mode debugging.
 keywords: ["thread Windows Debugging"]
 ms.date: 07/19/2021

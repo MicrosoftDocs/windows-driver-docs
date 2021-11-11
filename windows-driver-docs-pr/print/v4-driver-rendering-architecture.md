@@ -1,17 +1,15 @@
 ---
 title: V4 Printer Driver Rendering Architecture
 description: The rendering architecture for the v4 printer driver model is the same as the XPSDrv architecture.
-ms.date: 04/20/2017
+ms.date: 08/27/2021
 ms.localizationpriority: medium
 ---
 
 # V4 Printer Driver Rendering Architecture
 
-
 The rendering architecture for the v4 printer driver model is the same as the XPSDrv architecture, and the XPS Filter Pipeline also follows the same design that was used in previous versions of Windows, with a few notable additions.
 
 ## Rendering Architecture Diagram
-
 
 The following diagram shows the rendering architecture choices for v4 printer drivers.
 
@@ -21,11 +19,9 @@ The following paragraphs explain the roles of the IHV filters in the preceding d
 
 ## Print Filter Pipeline Configuration File
 
-
 The print filter pipeline configuration file is unchanged in format. Recommended naming convention: vv&lt;PDL&gt;-pipelineconfig.xml, where vv is a placeholder for your manufacturer code. Example fapcl6-pipelineconfig.xml. All print filter pipeline configuration files must end with –pipelineconfig.xml in order to be compatible with Windows desktop applications that print XPS.
 
 ## IHV Rendering Filter
-
 
 This filter completes the rendering from XPS to the device PDL output. It may use the XPS Rasterization Service or a third-party RIP as necessary. The following are some guidelines for designing rendering filters.
 
@@ -42,7 +38,6 @@ Devices that are capable of consuming XPS as a PDL may be supported without any 
 
 ## IHV Feature Filter
 
-
 IHV Feature Filters enable the processing of features like N-up, watermarking, or page reordering. Using feature filters are a convenient way to add features to a driver without changing the underlying PDL rendering. The following are some guidelines for designing such feature filters.
 
 **Recommended input type:** IXpsDocumentProvider.
@@ -53,9 +48,10 @@ For manufacturers with multiple IHV Feature Filters, we recommend that these fil
 
 ## Color Management
 
-
 Color management is supported in v4 print drivers. Drivers should include [Windows Color System](/windows-hardware/drivers/ddi/_print/index) (WCS) compliant color profiles or International Color Consortium (ICC) color profiles. V4 print drivers may also use the driver property bag for device-specific color tables.
 
 ## Related topics
+
 [V4 Printer Driver Rendering](v4-driver-rendering.md)  
+
 [Windows Color System](/windows-hardware/drivers/ddi/_print/index)

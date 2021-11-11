@@ -1,5 +1,5 @@
 ---
-title: mps
+title: mps (WinDbg)
 description: The mps extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer.
 keywords: ["mps Windows Debugging"]
 ms.date: 05/23/2017

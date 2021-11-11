@@ -39,7 +39,7 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 ### 3. Install SDK Insider Preview 
 
-[Get SDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+[Get SDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewSDK)
 
 ### 4. Install WDK Insider Preview
 

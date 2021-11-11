@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS\_STATUS\_WDI\_INDICATION\_CAN\_SUSTAIN\_AP
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CAN\_SUSTAIN\_AP to indicate that the port is ready to receive a [OID\_WDI\_TASK\_START\_AP](oid-wdi-task-start-ap.md) request, after previously indicating [NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP](ndis-status-wdi-indication-stop-ap.md).
 

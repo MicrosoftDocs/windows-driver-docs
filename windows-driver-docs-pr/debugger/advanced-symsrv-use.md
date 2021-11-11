@@ -99,7 +99,7 @@ It is possible to have a vast symbol store that includes symbol files for many d
 
 You can specify any number of downstream stores, separated by asterisks. These stores are known as *cascading symbol stores*.
 
-After the initial **srv\\*** or **symsrv\\**<strong>ServerDLL</strong>*\***, each subsequent token represents a symbol location. The token furthest left is checked first. An empty token -- indicated by two asterisks in a row, or by an asterisk at the end of the string -- represents the default downstream store.
+After the initial `srv*` or `symsrv*ServerDLL*`, each subsequent token represents a symbol location. The token furthest left is checked first. An empty token -- indicated by two asterisks in a row, or by an asterisk at the end of the string -- represents the default downstream store.
 
 Here is an example of a symbol path that uses two downstream stores to hold information from the main symbol store being accessed. These could be called the master store, the mid-level store, and the local cache:
 
@@ -165,12 +165,12 @@ srv*C:\Symbols*\\MachineName\Symbols*https://SymProxyName/Symbols
 It is possible to specify multiple chains of symbol servers and cache locations, separated by a semi colon “;”. If the symbols are located in the first chain, the second chain is not traversed. If the symbols are not located in the first chain, the second chain will be traversed and if the symbols are located in the second chain, they will be cached in the specified location. This approach will allow a primary symbol server to normally be used, with a secondary server only being used, if the symbols are not available on the primary symbol server specified in the first chain.
 
 ```console
-srv*C:\Symbols*\\Machine1\Symbols*https://SymProxyName/Symbols;srv*C:\WebSymbols* https://msdl.microsoft.com/download/symbols
+srv*C:\Symbols*\\Machine1\Symbols*https://SymProxyName/Symbols;srv*C:\WebSymbols*https://msdl.microsoft.com/download/symbols
 ```
 
 ### <span id="cache_localsymbolcache"></span><span id="CACHE_LOCALSYMBOLCACHE"></span>cache\**localsymbolcache*
 
-Another way to create a local cache of symbols is by using the **cache\\**<em>*localsymbolcache</em> string in your symbol path. This is not part of the symbol server element, but a separate element in your symbol path. The debugger will use the specified directory *localsymbolcache* to store any symbols loaded from any element that appears in your symbol path to the right of this string. This allows you to use a local cache for symbols downloaded from any location, not just those downloaded by a symbol server.
+Another way to create a local cache of symbols is by using the <code>cache\*<em>localsymbolcache</em></code> string in your symbol path. This is not part of the symbol server element, but a separate element in your symbol path. The debugger will use the specified directory *localsymbolcache* to store any symbols loaded from any element that appears in your symbol path to the right of this string. This allows you to use a local cache for symbols downloaded from any location, not just those downloaded by a symbol server.
 
 For example, the following symbol path will not cache symbols taken from *\\\\someshare*. It will use c:\\mysymbols to cache symbols taken from *\\\\anothershare*, because the element beginning with *\\\\anothershare* appears to the right of the **cache\*c:\\mysymbols** element. It will also use c:\\mysymbols to cache symbols taken from the Microsoft public symbol store, because of the usual syntax used by the symbol server (**srv** with two or more asterisks). Moreover, if you subsequently use the [**.sympath+**](-sympath--set-symbol-path-.md) command to add additional locations to this path, these new elements will also be cached, since they will be appended to the right side of the path.
 

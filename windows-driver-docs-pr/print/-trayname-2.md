@@ -1,75 +1,66 @@
 ---
-title: \ TrayName\ (OutputBins)
-description: \ TrayName\ (OutputBins)
-ms.date: 11/28/2017
+title: TrayName (OutputBins)
+description: An IHV-mapped property name for an output tray.
+ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
-# \[TrayName\] (OutputBins)
+# TrayName (OutputBins)
 
+Schema Path: \\Printer.Finishing.OutputBins.\[TrayName\]
 
-Schema Path:\\Printer.Finishing.OutputBins.\[TrayName\]
+Node Type: Property
 
-Node Type:Property
+Description: An IHV-mapped property name for an output tray. An IHV can map an IHV-specific tray name for an output bin with a name from the following list.
 
-Description:An IHV-mapped property name for an output tray. An IHV can map an IHV-specific tray name for an output bin with a name from the following list:
+- OutputBin1
 
-OutputBin1
+- OutputBin2
 
-OutputBin2
+- OutputBin*xx* (*xx* is a positive integer)
 
-OutputBin*xx* (*xx* is a positive integer)
+- TopBin
 
-TopBin
+- MiddleBin
 
-MiddleBin
+- BottomBin
 
-BottomBin
+- LargeCapacityBin
 
-LargeCapacityBin
+- FaceUpBin
 
-FaceUpBin
+- FaceDownBin
 
-FaceDownBin
-
-MailboxBin
+- MailboxBin
 
 The \[TrayName\] property contains three child values: Installed, Capacity, and Level.
 
-### <span id="installed"></span><span id="INSTALLED"></span> Installed
+## Installed
 
-Schema Path:\\Printer.Finishing.OutputBins.\[TrayName\]:Installed
+Schema Path: \\Printer.Finishing.OutputBins.\[TrayName\]:Installed
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_BOOL
+Data Type: BIDI_BOOL
 
-Description:Determines whether the bin referenced by \[TrayName\] is installed on the device. If **TRUE**, that bin is installed on the device; if **FALSE**, that bin is not installed on the device.
+Description: Determines whether the bin referenced by \[TrayName\] is installed on the device. If **TRUE**, that bin is installed on the device; if **FALSE**, that bin is not installed on the device.
 
-### <span id="capacity"></span><span id="CAPACITY"></span> Capacity
+## Capacity
 
-Schema Path:\\Printer.Finishing.OutputBins.\[TrayName\]:Capacity
+Schema Path: \\Printer.Finishing.OutputBins.\[TrayName\]:Capacity
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_INT
+Data Type: BIDI_INT
 
-Description:The capacity, in sheets, of the currently referenced output bin.
+Description: The capacity, in sheets, of the currently referenced output bin.
 
-### <span id="level"></span><span id="LEVEL"></span> Level
+## Level
 
-Schema Path:\\Printer.Finishing.OutputBins.\[TrayName\]:Level
+Schema Path: \\Printer.Finishing.OutputBins.\[TrayName\]:Level
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_INT
+Data Type: BIDI_INT
 
-Description:The amount of capacity remaining in the currently referenced output bin, expressed as a percentage. A full tray has a value of 100, while an empty tray has a value of 0. If the level is not measurable, a value of -1 (indicating an unknown level) should be returned.
-
- 
-
- 
-
-
-
-
+Description: The amount of capacity remaining in the currently referenced output bin, expressed as a percentage. A full tray has a value of 100, while an empty tray has a value of 0. If the level is not measurable, a value of -1 (indicating an unknown level) should be returned.

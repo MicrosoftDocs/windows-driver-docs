@@ -1,5 +1,5 @@
 ---
-title: tp
+title: tp (WinDbg)
 description: The tp extension displays thread pool information.
 keywords: ["thread pool", "tp Windows Debugging"]
 ms.date: 05/23/2017

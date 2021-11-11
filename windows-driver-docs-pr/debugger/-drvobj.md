@@ -1,5 +1,5 @@
 ---
-title: drvobj
+title: drvobj (WinDbg)
 description: The drvobj extension displays detailed information about a DRIVER_OBJECT.
 keywords: ["drvobj Windows Debugging"]
 ms.date: 11/16/2018
@@ -48,7 +48,7 @@ Kdexts.dll
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for examples and applications of this extension command. For information about driver objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-## ## Remarks
+## Remarks
 
 If *DriverObject* specifies the name of the device but supplies no prefix, the prefix "\\Driver\\" is assumed. Note that this command will check to see if *DriverObject* is a valid address or device name before using the expression evaluator.
 

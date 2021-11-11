@@ -1,17 +1,15 @@
 ---
 title: EFI_USB_BOS_DESCRIPTOR
-description: EFI_USB_BOS_DESCRIPTOR
-ms.date: 04/20/2017
+description: Provides information about the Binary Object Store (BOS) to the USB function driver.
+ms.date: 08/20/2021
 ms.localizationpriority: medium
 ---
 
-# EFI\_USB\_BOS\_DESCRIPTOR
+# EFI_USB_BOS_DESCRIPTOR
 
-
-The **EFI\_USB\_BOS\_DESCRIPTOR** structure provides information about the Binary Object Store (BOS) to the USB function driver.
+The **EFI_USB_BOS_DESCRIPTOR** structure provides information about the Binary Object Store (BOS) to the USB function driver.
 
 ## Syntax
-
 
 ```cpp
 typedef struct
@@ -25,28 +23,18 @@ typedef struct
 
 ## Members
 
-
-<a href="" id="length"></a>**Length**  
+**Length**  
 The size of the descriptor.
 
-<a href="" id="descriptortype"></a>**DescriptorType**  
+**DescriptorType**  
 The BOS descriptor type.
 
-<a href="" id="totallength"></a>**TotalLength**  
+**TotalLength**  
 The length of this descriptor and all of its sub descriptors.
 
-<a href="" id="numdevicecaps"></a>**NumDeviceCaps**  
+**NumDeviceCaps**  
 The number of separate device capability descriptors in the BOS.
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

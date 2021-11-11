@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # NDIS\_STATUS\_WDI\_INDICATION\_START\_AP\_COMPLETE
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_START\_AP\_COMPLETE to indicate the completion of [OID\_WDI\_TASK\_START\_AP](oid-wdi-task-start-ap.md).
 

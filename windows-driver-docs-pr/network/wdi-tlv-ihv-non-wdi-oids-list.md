@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_IHV\_NON\_WDI\_OIDS\_LIST
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_IHV\_NON\_WDI\_OIDS\_LIST is a TLV that contains a list of non-WDI OIDs that the adapter wants to advertise to the operating system.
 

@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_FT\_AUTH\_REQUEST
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_FT\_AUTH\_REQUEST is a TLV that contains the Fast Transition authentication request byte blob.
 

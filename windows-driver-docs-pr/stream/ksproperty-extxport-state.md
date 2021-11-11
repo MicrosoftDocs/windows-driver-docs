@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_EXTXPORT\_STATE
-description: The KSPROPERTY\_EXTXPORT\_STATE property sets or gets an external device's transport mode and state.
+title: KSPROPERTY_EXTXPORT_STATE
+description: The KSPROPERTY_EXTXPORT_STATE property sets or gets an external device's transport mode and state.
 keywords: ["KSPROPERTY_EXTXPORT_STATE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,34 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 10/20/2021
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_EXTXPORT\_STATE
+# KSPROPERTY_EXTXPORT_STATE
 
+The **KSPROPERTY_EXTXPORT_STATE** property sets or gets an external device's transport mode and state.
 
-The KSPROPERTY\_EXTXPORT\_STATE property sets or gets an external device's transport mode and state.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_extxport_state_ks"></span><span id="DDK_KSPROPERTY_EXTXPORT_STATE_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Device | [**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s) | [**TRANSPORT_STATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-transport_state) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Device</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-transport_state" data-raw-source="[&lt;strong&gt;TRANSPORT_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-transport_state)"><strong>TRANSPORT_STATE</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a TRANSPORT\_STATE structure that describes the current mode and state of the external transport. For example when the mode is set to play, the state might be set to freeze (paused).
+The property value (operation data) is a **TRANSPORT_STATE** structure that describes the current mode and state of the external transport. For example when the mode is set to play, the state might be set to freeze (paused).
 
 ## Remarks
 
-The **XPrtState** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the mode and state.
+The **XPrtState** member of the **KSPROPERTY_EXTXPORT_S** structure specifies the mode and state.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
 [**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_EXTXPORT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
+[**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
 
-[**TRANSPORT\_STATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-transport_state)
-
+[**TRANSPORT_STATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-transport_state)

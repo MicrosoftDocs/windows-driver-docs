@@ -1,5 +1,5 @@
 ---
-title: .for
+title: .for (WinDbg)
 description: The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
 keywords: [".for Windows Debugging"]
 ms.date: 05/23/2017

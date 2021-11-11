@@ -141,6 +141,6 @@ switch (Orientation)
 
 ### See also
 
-[Windows Driver Model (WDM)](/windows-hardware/drivers/kernel/windows-driver-model)
+[Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)
 
-[Audio Drivers Overview](/windows-hardware/drivers/audio/getting-started-with-wdm-audio-drivers)
+[Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)

@@ -1,17 +1,15 @@
 ---
 title: CPSUI Option Types
-description: CPSUI Option Types
-ms.date: 11/28/2017
+description: When using CPSUI to create a property sheet page, user-selectable options must be defined using CPSUI-supported window controls.
+ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
 # CPSUI Option Types
 
+When using CPSUI to create a property sheet page, user-selectable options must be defined using [CPSUI-supported window controls](./cpsui-supported-window-controls.md).
 
-## <span id="ddk_cpsui_option_types_gg"></span><span id="DDK_CPSUI_OPTION_TYPES_GG"></span>
-
-
-When using CPSUI to create a property sheet page, user-selectable options must be defined using [CPSUI-supported window controls](./cpsui-supported-window-controls.md). These controls are identified by the following CPSUI option types:
+These controls are identified by the following CPSUI option types:
 
 [**TVOT\_2STATES**](tvot-2states.md)
 
@@ -34,6 +32,3 @@ When using CPSUI to create a property sheet page, user-selectable options must b
 [**TVOT\_UDARROW**](tvot-udarrow.md)
 
 An option's type is specified in the **Type** member of an [**OPTTYPE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype) structure.
-
- 
-

@@ -1,5 +1,5 @@
 ---
-title: amli bl
+title: amli bl (WinDbg)
 description: The amli bl extension displays a list of all AML breakpoints.
 keywords: ["amli bl Windows Debugging"]
 ms.date: 09/17/2018
