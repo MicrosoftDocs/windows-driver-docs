@@ -21,6 +21,7 @@ The following table shows some example legacy driver practices that are no longe
 |Hardcodes path to global registry locations|Uses HKR and system-supplied functions for relative location of registry and file state|
 |Runtime file writes to any location|Files are written relative to locations supplied by the operating system|
 
+For help in determining if your driver package meets Driver Package Isolation requirements, see [Validating Windows Drivers](./validating-windows-drivers.md).
 
 ## Run From Driver Store
 
@@ -56,15 +57,15 @@ For more information about device interfaces, see:
 
 Access to various state should be done by calling functions that provide a caller with the location of the state and then the state is read/written relative to that location. Do not use hardcoded absolute registry paths and file paths.
 
+### Registry State
+
 This section contains the following subsections:
 
 * [PnP Device Registry State](#pnp-device-registry-state)
 * [Device Interface Registry State](#device-interface-registry-state)
 * [Service Registry State](#service-registry-state)
-* [Device File State](#device-file-state)
-* [Service File State](#service-file-state)
 
-### PnP Device Registry State
+#### PnP Device Registry State
 
 Isolated driver packages and user-mode components typically use two locations to store device state in the registry. These are the *hardware key* (device key) for the device and the *software key* (driver key) for the device. To retrieve a handle to these registry locations, use one of the following options, based on the platform you are using:
 
@@ -81,7 +82,7 @@ AddReg = Example_DDInstall.AddReg
 [Example_DDInstall.AddReg] 
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
-### Device Interface Registry State
+#### Device Interface Registry State
 
 Use device interfaces to share state with other drivers and components. Do not hardcode paths to global registry locations.
 
@@ -91,7 +92,7 @@ To read and write device interface registry state, use one of the following opti
 * [**CM_Open_Device_Interface_Key**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keyw) (user-mode code)
 * [INF AddReg](../install/inf-addreg-directive.md) directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section](../install/inf-addinterface-directive.md) section
 
-### Service Registry State
+#### Service Registry State
 
 Registry values that are set by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service by providing an HKR line in an [AddReg](../install/inf-addreg-directive.md) section, and then referencing that section in the service install section in the INF.  For example:
 
@@ -124,14 +125,21 @@ These registry values supplied by the INF in the “Parameters” subkey for the
 * [**GetServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getserviceregistrystatekey) (Win32 Services) with a SERVICE_REGISTRY_STATE_TYPE of **ServiceRegistryStatePersistent**
 * [**GetSharedServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getsharedserviceregistrystatekey) (Win32 Services) with a SERVICE_SHARED_REGISTRY_STATE_TYPE of **ServiceSharedRegistryPersistentState**
 
-### Device File State
+### File State
+
+This section contains the following subsections:
+
+* [Device File State](#device-file-state)
+* [Service File State](#service-file-state)
+
+#### Device File State
 
 If files related to a device need to be written, those files should be stored relative to a handle or file path provided via OS API’s. Configuration files specific to that device is one example of what types of files to be stored here.
 
 * [**IoGetDeviceDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdevicedirectory) (WDM) with the **DirectoryType** parameter set to **DeviceDirectoryData**
 * [**WdfDeviceRetrieveDeviceDirectoryString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring) (WDF)
 
-### Service File State
+#### Service File State
 
 Both Win32 and driver services read and write state about themselves.
 
@@ -145,7 +153,7 @@ To access its own internal state values, a service uses one of the following opt
 
 To share internal state of the service with other components, use a controlled, versioned interface instead of direct registry or file reads.
 
-## DriverData and ProgramData
+#### DriverData and ProgramData
 
 Files that are to be used as part of intermediate operations that can be shared with other components should be written to either *DriverData* or *ProgramData* locations.
 
@@ -155,14 +163,14 @@ Avoid writing files in the root of the `DriverData` or `ProgramData` directories
 
 For example, for a company name of Contoso, a kernel-mode driver could write a custom log to `\DriverData\Contoso\Logs` and a user-mode application could collect or analyze the log files from `%DriverData%\Contoso\Logs`.
 
-### DriverData
+##### DriverData
 
 The `DriverData` directory is available in Windows 10, version 1803 and later, and is accessible to administrators and UMDF drivers.
 
 Kernel-mode drivers access the `DriverData` directory by using a system-supplied symbolic link called `\DriverData`.
 User-mode programs access the `DriverData` directory by using the environment variable `%DriverData%`.
 
-### ProgramData
+##### ProgramData
 
 The `%ProgramData%` user-mode environment variable is available for user-mode components to use when storing data. 
 
