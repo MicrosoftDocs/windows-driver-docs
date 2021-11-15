@@ -16,7 +16,7 @@ The following table shows some example legacy driver practices that are no longe
 
 |Non-isolated Driver|Isolated Driver|
 |-|-|
-|INF copies files to %windir%\System32 or %windir%\System32\drivers|Driver files are run from the driver store|
+|INF copies files to %windir%\System32 or %windir%\System32\drivers|Driver files are [run from the driver store](./run-from-driver-store.md)|
 |Interacts with device stacks/drivers using hardcoded paths|Interacts with device stacks/drivers using system-supplied functions or device interfaces|
 |Hardcodes path to global registry locations|Uses HKR and system-supplied functions for relative location of registry and file state|
 |Runtime file writes to any location|Files are written relative to locations supplied by the operating system|
@@ -67,7 +67,7 @@ This section contains the following subsections:
 
 #### PnP Device Registry State
 
-Isolated driver packages and user-mode components typically use two locations to store device state in the registry. These are the *hardware key* (device key) for the device and the *software key* (driver key) for the device. To retrieve a handle to these registry locations, use one of the following options, based on the platform you are using:
+Isolated driver packages and user-mode components typically use one of two locations to store device state in the registry. These are the *hardware key* (device key) for the device and the *software key* (driver key) for the device. To retrieve a handle to these registry locations, use one of the following options:
 
 
 * [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey) (WDM)
@@ -82,11 +82,10 @@ AddReg = Example_DDInstall.AddReg
 [Example_DDInstall.AddReg] 
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
+
 #### Device Interface Registry State
 
-Use device interfaces to share state with other drivers and components. Do not hardcode paths to global registry locations.
-
-To read and write device interface registry state, use one of the following options, based on the platform you are using:
+To read and write device interface registry state, use one of the following options:
 
 * [**IoOpenDeviceInterfaceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) (WDM) 
 * [**CM_Open_Device_Interface_Key**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keyw) (user-mode code)
@@ -94,7 +93,13 @@ To read and write device interface registry state, use one of the following opti
 
 #### Service Registry State
 
-Registry values that are set by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service by providing an HKR line in an [AddReg](../install/inf-addreg-directive.md) section, and then referencing that section in the service install section in the INF.  For example:
+Service state should be classified into one of 3 categories
+* [Immutable Service Registry State](#immutable-service-registry-state)
+* [Internal Service Registry State](#internal-service-registry-state)
+* [Shared Service Registry State](#shared-service-registry-state)
+
+##### Immutable Service Registry State
+Immutable service state is state that is provided by the driver package that installs the service.  These registry values that are set by the INF for driver and Win32 services must be stored under the "Parameters" subkey of the service by providing an HKR line in an [AddReg](../install/inf-addreg-directive.md) section, and then referencing that section in the service install section in the INF.  For example:
 
 ```
 [ExampleDDInstall.Services]
@@ -112,17 +117,30 @@ AddReg=Example_Service_Inst.AddReg
 HKR, Parameters, ExampleValue, 0x00010001, 1
 ```
 
-To access the location of this state, use one of these functions, based on your platform:
+To access the location of this state from the service at runtime, use one of these functions:
 
 * [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of **DriverRegKeyParameters**
 * [**WdfDriverOpenParametersRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) (WDF)
 * [**GetServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getserviceregistrystatekey) (Win32 Services) with a SERVICE_REGISTRY_STATE_TYPE of **ServiceRegistryStateParameters**
 
-These registry values supplied by the INF in the “Parameters” subkey for the service should not be modified at runtime and should be treated as read only.  Registry values that are written at runtime should be written under a different location.  To access the location for state to be written at runtime, use one of these functions:
+These registry values supplied by the INF in the “Parameters” subkey for the service should only be read at runtime and not modified. They should be treated as read only.
 
-* [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of **DriverRegKeyPersistentState** or **DriverRegKeySharedPersistentState**
+If the registry values supplied by the INF are default settings that can be overwritten at runtime, the override values should be written into the [Internal Service Registry State](#internal-service-registry-state) or [Shared Service Registry State](#shared-service-registry-state) for the service.  When retrieving the settings, the setting can be looked for first in the mutable state. If it does not exist there, then the setting can be looked for in the immutable state.  [**RtlQueryRegistryValueWithFallback**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlqueryregistryvaluewithfallback) can be used to help query settings such as these that have an override and a default value.
+
+
+##### Internal Service Registry State
+Internal service state is state that is written at runtime and owned and managed by only the service itself and is only accessible to that service. To access the location for internal service state, use one of these functions from the service:
+
+* [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of **DriverRegKeyPersistentState**
 * [**WdfDriverOpenPersistentStateRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenpersistentstateregistrykey) (WDF)
 * [**GetServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getserviceregistrystatekey) (Win32 Services) with a SERVICE_REGISTRY_STATE_TYPE of **ServiceRegistryStatePersistent**
+
+If the service wants to allow other components to modify these settings, the service must expose an interface that another component can call into that tells the service how to alter these settings.  For example, a Win32 service could expose a COM or RPC interface and a driver service could expose an IOCTL interface via a device interface.
+
+##### Shared Service Registry State
+Shared service state is state that is written at runtime and can be shared with other user mode components if they are sufficiently privileged. To access the location for this shared service state, use one of these functions:
+
+* [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of **DriverRegKeySharedPersistentState**
 * [**GetSharedServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getsharedserviceregistrystatekey) (Win32 Services) with a SERVICE_SHARED_REGISTRY_STATE_TYPE of **ServiceSharedRegistryPersistentState**
 
 ### File State
