@@ -99,6 +99,7 @@ Service state should be classified into one of 3 categories
 * [Shared Service Registry State](#shared-service-registry-state)
 
 ##### Immutable Service Registry State
+
 Immutable service state is state that is provided by the driver package that installs the service.  These registry values that are set by the INF for driver and Win32 services must be stored under the "Parameters" subkey of the service by providing an HKR line in an [AddReg](../install/inf-addreg-directive.md) section, and then referencing that section in the service install section in the INF.  For example:
 
 ```
@@ -129,6 +130,7 @@ If the registry values supplied by the INF are default settings that can be over
 
 
 ##### Internal Service Registry State
+
 Internal service state is state that is written at runtime and owned and managed by only the service itself and is only accessible to that service. To access the location for internal service state, use one of these functions from the service:
 
 * [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of **DriverRegKeyPersistentState**
@@ -138,6 +140,7 @@ Internal service state is state that is written at runtime and owned and managed
 If the service wants to allow other components to modify these settings, the service must expose an interface that another component can call into that tells the service how to alter these settings.  For example, a Win32 service could expose a COM or RPC interface and a driver service could expose an IOCTL interface via a device interface.
 
 ##### Shared Service Registry State
+
 Shared service state is state that is written at runtime and can be shared with other user mode components if they are sufficiently privileged. To access the location for this shared service state, use one of these functions:
 
 * [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM) with a DRIVER_REGKEY_TYPE of **DriverRegKeySharedPersistentState**
@@ -152,28 +155,42 @@ This section contains the following subsections:
 
 #### Device File State
 
-If files related to a device need to be written, those files should be stored relative to a handle or file path provided via OS API’s. Configuration files specific to that device is one example of what types of files to be stored here.
+If files related to a device need to be written at runtime, those files should be stored relative to a handle or file path provided via OS API’s. Configuration files specific to that device is one example of what types of files to be stored here. To access the location of this state, use one of these functions from the service:
 
 * [**IoGetDeviceDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdevicedirectory) (WDM) with the **DirectoryType** parameter set to **DeviceDirectoryData**
 * [**WdfDeviceRetrieveDeviceDirectoryString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring) (WDF)
 
 #### Service File State
 
-Both Win32 and driver services read and write state about themselves.
+Service file state can be classified into one of 3 categories
+* [Immutable Service File State](#immutable-service-file-state)
+* [Internal Service File State](#internal-service-file-state)
+* [Shared Service File State](#shared-service-file-state)
 
-To access its own internal state values, a service uses one of the following options: 
+##### Immutable Service File State
 
-* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (WDM) with the **DirectoryType** parameter set to **DriverDirectoryData** or **DriverDirectorySharedData**
-* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (KMDF) with the **DirectoryType** parameter set to **DriverDirectoryData** or **DriverDirectorySharedData**
+Immutable service file state are files that are part of the driver package. For more information on accessing those files, see [**Run from Driver Store**](./run-from-driver-store.md).
+
+##### Internal Service File State
+
+Internal service file state is state that is written at runtime and owned and managed by only the service itself and is only accessible to that service. To access the location for internal service state, use one of these functions from the service:
+
+* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (WDM, KMDF) with the **DirectoryType** parameter set to **DriverDirectoryData**
 * [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring) (UMDF)
 * [**GetServiceDirectory**](/windows/win32/api/winsvc/nf-winsvc-getservicedirectory) (Win32 Services) with the **eDirectoryType** parameter set to **ServiceDirectoryPersistentState**
-* [**GetSharedServiceDirectory**](/windows/win32/api/winsvc/nf-winsvc-getsharedservicedirectory) (Win32 Services) with the **DirectoryType** parameter set to **ServiceSharedDirectoryPersistentState**
 
-To share internal state of the service with other components, use a controlled, versioned interface instead of direct registry or file reads.
+If the service wants to allow other components to modify these settings, the service must expose an interface that another component can call into that tells the service how to alter these settings.  For example, a Win32 service could expose a COM or RPC interface and a driver service could expose an IOCTL interface via a device interface.
+
+##### Shared Service File State
+
+Shared service file state is state that is written at runtime and can be shared with other user mode components if they are sufficiently privileged. To access the location for this shared service state, use one of these functions:
+
+* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (WDM, KMDF) with the **DirectoryType** parameter set to **DriverDirectorySharedData**
+* [**GetSharedServiceDirectory**](/windows/win32/api/winsvc/nf-winsvc-getsharedservicedirectory) (Win32 Services) with the **DirectoryType** parameter set to **ServiceSharedDirectoryPersistentState**
 
 #### DriverData and ProgramData
 
-Files that are to be used as part of intermediate operations that can be shared with other components should be written to either *DriverData* or *ProgramData* locations.
+Files that are to be used as part of intermediate operations that can be shared with other components can be written to either `DriverData` or `ProgramData` locations.
 
 These locations offer components a location to write temporary state or state that is meant to be consumed by other components and potentially collected and copied from a system to be processed by another system.  For example, custom log files or crash dumps fit this description.
 
