@@ -27,29 +27,6 @@ For help in determining if your driver package meets Driver Package Isolation re
 
 All isolated driver packages leave their driver package files in the driver store. This means that they specify [**DIRID 13**](../install/using-dirids.md) in their INF to specify the location for driver package files on install.  For more information on how to use this in a driver package, see [**Run from Driver Store**](./run-from-driver-store.md).
 
-## Using Device Interfaces
-
-When state needs to be shared between drivers, there should be a single driver that owns the shared state, and it should expose a way for other drivers to *read* and *modify* that state.
-
-Typically, the driver that owns the state exposes a device interface in a custom device interface class. When the driver is ready for other drivers to have access to the state, it enables the interface. Other drivers can register for [device interface arrival notifications](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md). To access the state, the custom device interface class can define one of two contracts:
-
-* An *I/O contract* can be associated with that device interface class that provides a mechanism for accessing the state. Other drivers use the enabled device interface to send I/O requests that conform to the contract.
-* A *direct-call interface* that gets returned via a query interface. Other drivers could send [IRP_MN_QUERY_INTERFACE](../kernel/irp-mn-query-interface.md) to retrieve function pointers from the driver to call.
-
-Alternatively, if the driver that owns the state allows direct access to the state, other drivers could access state by using system-supplied functions for programmatic access to device interface state.
-
-These interfaces or state (depending on sharing method used) need to be properly versioned so the driver owning the state can be serviced independently of other drivers that access that state. Driver vendors cannot rely on both drivers being serviced at the same time and staying at the same version.  
-
-Because devices and drivers controlling interfaces come and go, drivers and applications should avoid calling [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) at component start-up to get a list of enabled interfaces.
-
-Instead, the best practice is to register for notifications of device interface arrival or removal and then call the appropriate function to get the list of existing enabled interfaces on the machine.
-
-For more information about device interfaces, see:
-
-* [Using Device Interfaces](../wdf/using-device-interfaces.md)
-* [Registering for Notification of Device Interface Arrival and Device Removal](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md)
-* [Registering for Device Interface Change Notification](../kernel/registering-for-device-interface-change-notification.md)
-
 ## Reading and Writing State
 
 > [!NOTE]
@@ -208,4 +185,25 @@ User-mode programs access the `DriverData` directory by using the environment va
 ##### ProgramData
 
 The `%ProgramData%` user-mode environment variable is available for user-mode components to use when storing data. 
+
+## Using Device Interfaces
+
+If a driver wants to allow other components to read or modify the driver's internal state, the driver should expose an interface that another component can call into that tells the driver what settings to return or how to modify particular settings. For example, the driver service could expose an IOCTL interface via a device interface.
+
+Typically, the driver that owns the state exposes a device interface in a custom device interface class. When the driver is ready for other components to have access to the state, it enables the interface. To get notified when a device interface is enabled, user mode components can register for [device interface arrival notifications](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md) and kernel mode components can use [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification). For these components to access the state, the driver enabling the interface must define a contract for its custom device interface class.  This contract typically is one of two kinds:
+
+* An *I/O contract* can be associated with that device interface class that provides a mechanism for accessing the state. Other components use the enabled device interface to send I/O requests that conform to the contract.
+* A *direct-call interface* that gets returned via a query interface. Other drivers could send [IRP_MN_QUERY_INTERFACE](../kernel/irp-mn-query-interface.md) to retrieve function pointers from the driver to call.
+
+Alternatively, if the driver that owns the state allows direct access to the state, other drivers could access state by using system-supplied functions for programmatic access to device interface state. See [Device Interface Registry State](#device-interface-registry-state) for more information.
+
+These interfaces or state (depending on sharing method used) need to be properly versioned so the driver owning the state can be serviced independently of other components that access that state. Driver vendors cannot rely on other components being serviced at the same time as the driver and staying at the same version.  
+
+Because devices and drivers controlling interfaces come and go, drivers and applications should avoid calling [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) at component start-up to get a list of enabled interfaces. Instead, the best practice is to register for notifications of device interface arrival or removal and then call the appropriate function to get the list of existing enabled interfaces on the machine.
+
+For more information about device interfaces, see:
+
+* [Using Device Interfaces](../wdf/using-device-interfaces.md)
+* [Registering for Notification of Device Interface Arrival and Device Removal](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md)
+* [Registering for Device Interface Change Notification](../kernel/registering-for-device-interface-change-notification.md)
 
