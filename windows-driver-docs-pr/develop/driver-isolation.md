@@ -30,9 +30,14 @@ All isolated driver packages leave their driver package files in the driver stor
 ## Reading and Writing State
 
 > [!NOTE]
-> If your component is using device or device interface *properties* to store state, continue to use that method and the appropriate OS API's to store and access state. The following guidance is for *other* state that needs to be stored by a component.
+> If your component is using device or device interface *properties* to store state, continue to use that method and the appropriate OS API's to store and access state. The following guidance for registry and file state is for *other* state that needs to be stored by a component.
 
-Access to various state should be done by calling functions that provide a caller with the location of the state and then the state is read/written relative to that location. Do not use hardcoded absolute registry paths and file paths.
+Access to various registry and file state should be done by calling functions that provide a caller with the location of the state and then the state is read/written relative to that location. Do not use hardcoded absolute registry paths and file paths.
+
+This section contains the following subsections:
+* [Registry State](#registry-state)
+* [File State](#file-state)
+* [Property State](#property-state)
 
 ### Registry State
 
@@ -104,7 +109,6 @@ To access the location of this state from the service at runtime, use one of the
 These registry values supplied by the INF in the “Parameters” subkey for the service should only be read at runtime and not modified. They should be treated as read only.
 
 If the registry values supplied by the INF are default settings that can be overwritten at runtime, the override values should be written into the [Internal Service Registry State](#internal-service-registry-state) or [Shared Service Registry State](#shared-service-registry-state) for the service.  When retrieving the settings, the setting can be looked for first in the mutable state. If it does not exist there, then the setting can be looked for in the immutable state.  [**RtlQueryRegistryValueWithFallback**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlqueryregistryvaluewithfallback) can be used to help query settings such as these that have an override and a default value.
-
 
 ##### Internal Service Registry State
 
@@ -185,6 +189,40 @@ User-mode programs access the `DriverData` directory by using the environment va
 ##### ProgramData
 
 The `%ProgramData%` user-mode environment variable is available for user-mode components to use when storing data. 
+
+### Property State
+
+Both devices and device interfaces support storing state via the PnP [property model](/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-).  The property model allows for structured property data to be stored against a device or device interface.  This is meant for smaller data that reasonably fits into the property types supported by the property model.
+
+To access device properties, these APIs can be used:
+* WDM drivers
+  * [IoGetDevicePropertyData](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdevicepropertydata)
+  * [IoSetDevicePropertyData](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdevicepropertydata)
+* WDF drivers
+  * [WdfDeviceQueryProperty](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicequeryproperty)
+  * [WdfDeviceAllocAndQueryProperty](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceallocandqueryproperty)
+  * [WdfDeviceQueryPropertyEx](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicequerypropertyex)
+  * [WdfDeviceAllocAndQueryPropertyEx](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceallocandquerypropertyex)
+  * [WdfDeviceAssignProperty](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassignproperty)
+  * [WdfFdoInitQueryProperty](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitqueryproperty)
+  * [WdfFdoInitAllocAndQueryProperty](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitallocandqueryproperty)
+  * [WdfFdoInitQueryPropertyEx](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitquerypropertyex)
+  * [WdfFdoInitAllocAndQueryPropertyEx](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitallocandquerypropertyex)
+* User mode code
+  * [CM_Get_DevNode_Property](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw)
+  * [CM_Set_DevNode_Property](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_set_devnode_propertyw)
+
+To access device interface properties, these APIs can be used:
+* WDM drivers
+  * [IoGetDeviceInterfacePropertyData](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfacepropertydata)
+  * [IoSetDeviceInterfacePropertyData](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacepropertydata)
+* WDF drivers
+  * [WdfDeviceQueryInterfaceProperty](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicequeryinterfaceproperty)
+  * [WdfDeviceAllocAndQueryInterfaceProperty](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceallocandqueryinterfaceproperty)
+  * [WdfDeviceAssignInterfaceProperty](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigninterfaceproperty)
+* User mode code
+  * [CM_Get_Device_Interface_Property](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_propertyw)
+  * [CM_Set_Device_Interface_Property](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_set_device_interface_propertyw)
 
 ## Using Device Interfaces
 
