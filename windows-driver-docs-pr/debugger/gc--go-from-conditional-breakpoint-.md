@@ -21,7 +21,7 @@ The **gc** command resumes execution from a conditional breakpoint in the same f
 gc
 ```
 
-While this command is no longer as useful for conditional breakpoints, it can still be useful for breakpoints used for tracing when a break into the debugger is not actually desired. For instance, a breakpoint could be written that looks like this:
+While this command is no longer as useful for conditional breakpoints, it can still be used for breakpoints that do logging or some other activity without breaking into the debugger. For instance, a breakpoint could be written that looks like this:
 
 ```dbgcmd
 bp module!myFunction ".echo myFunction executed; gc"
