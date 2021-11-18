@@ -31,7 +31,7 @@ BOOL SetPrivilege(HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
 
     if (LookupPrivilegeValue(NULL, lpszPrivilege, &luid))
     {
-        TOKEN_PRIVILEGE tp;
+        TOKEN_PRIVILEGES tp;
 
         tp.PrivilegeCount=1;
         tp.Privileges[0].Luid=luid;
