@@ -454,3 +454,159 @@ Notifications contain an MBIM_SIGNAL_STATE_INFO_V2 structure.
 ### Status Codes
 
 This CID only uses generic status codes defined in Section 9.4.5 of the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip).
+
+## LTE signal bar calculation
+![Diagram showing LTE signal bar calculation.](images/lte_signal_bar_calc.png)
+
+The OS shall process the registry settings for signal strength calculations in the following order: 
+
+Dataclass is CDMA (or its variant) or TDSCDMA
+
+1. If a legacy signal bar mapping table exists under “per_iccid”, use this setting.
+2. Else, if a legacy signal bar mapping table exists under “per_device”, use this setting.
+3. Else, use the default signal bar mapping table in code. 
+
+Dataclass is GSM or WCDMA
+
+1. If a GSM or WCDMA technology specific signal bar mapping table exists under “per_iccid”, use this setting.
+2. Else, if a GSM or WCDMA technology specific signal bar mapping table exists under “per_device”, use this setting.
+3. Else, if a legacy signal bar mapping table exists under “per_iccid”, use this setting. 
+4. Else, if a legacy signal bar mapping table exists under “per_device”, use this setting. 
+5. Else, use the default signal bar mapping table in code.
+    1. RSSI >= 17; 5 bars
+    1. RSSI >= 12; 4 bars
+    1. RSSI >= 7; 3 bars
+    1. RSSI >= 4; 2 bars
+    1. RSSI >= 2; 1 bars
+    1. else; 0 bars
+
+Dataclass is LTE and RSRP is reported by the modem 
+1. If a LTE technology specific signal bar mapping table for RSRP exists under “per_iccid”, use this setting. 
+2. Else, if a LTE technology specific signal bar mapping table for RSRP exists under “per_device”, use this setting. 
+3. Else, use the default LTE RSRP signal bar mapping table in code. 
+> [!NOTE]
+> If EnableLTESnrReporting is enabled but there is no SNR table for LTE or SNR reporting by the modem, only RSRP is used. Otherwise, the better of RSRP or SNR is converted to signal bars. 
+
+Dataclass is LTE and RSSI is reported by the modem 
+1. If a LTE technology specific signal bar mapping table exists under “per_iccid”, use this setting. 
+2. Else, if a  LTE technology specific signal bar mapping table exists under “per_device”, use this setting. 
+3. Else, if a legacy signal bar mapping table exists under “per_iccid”, use this setting. 
+4. Else, if a legacy signal bar mapping table exists under “per_device”, use this setting. 
+5. Else, use the default signal bar mapping table in code. 
+
+Dataclass is NR 
+1. If a NR technology specific signal bar mapping table for RSRP exists under “per_iccid”, use this setting. 
+2. Else, if a NR technology specific signal bar mapping table for RSRP exists under “per_device”, use this setting. 
+3. Else, use the default NR RSRP signal bar mapping table in code. 
+> [!NOTE]
+> If EnableNRSnrReporting is enabled, but no there is no SNR table for NR or SNR reporting by the modem, only RSRP is used. Otherwise, the better of RSRP or SNR is converted to signal bars. 
+
+Dataclass is NSA 
+1. If EnableLTEReportingOnNSA is not set or is set to **0**: 
+   1. Follow the Dataclass NR flow. 
+2. If EnableLTEReportingOnNSA is set to **1**: 
+   1. Follow the Dataclass LTE flows (RSRP or RSSI). 
+3. If EnableLTEReportingOnNSA is set to **2**:  
+   1. If FrequencyRange is FR1, follow the Dataclass LTE flows (RSRP or RSSI). 
+   1. If FrequencyRange is <> FR1, follow the Dataclass NR flow. 
+4. If EnableLTEReportingOnNSA is set to **3**:  
+	1. If FrequencyRange is FR2, follow the Dataclass LTE flows (RSRP or RSSI). 
+	1. If FrequencyRange is <> FR2, follow the Dataclass NR flow. 
+5. If EnableLTEReportingOnNSA is set to **4**: 
+    1. Calculate signal bar using the LTE and NR flows. 
+	1. Select the strongest. 
+> [!NOTE]
+> If the LTE signal is not reported by the modem in 1-5, the NR signal is used. If the NR signal is not used, the LTE signal is applied. 
+
+### COSA customizations for SignalBar calculation
+
+EnableLTEReportingOnNSA:
+
+0 = "Use 5G signal"
+
+1 = "Use LTE signal"
+
+2 = "Use LTE signal if camped on 5G frequency range 1"
+
+3 = "Use LTE signal if camped on 5G frequency range 2"
+
+4 = "Use the strongest signal of LTE and 5G"
+ 
+EnableNRSnrReporting:
+
+0 = "Use only RSRP"
+
+1 = "Use both RSRP and SNR"
+ 
+EnableLTESnrReporting:
+
+0 = "Use only RSRP"
+
+1 = "Use both RSRP and SNR"
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/<SignalBar>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown. Technology specific settings take precedence. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/GERAN/<SignalBar>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on GSM. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/WCDMA/<SignalBar>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on WCDMA. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTE/<SignalBar>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on LTE. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTERSRP/<SignalBar>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown, when device is camped on LTE. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTERSSNR/<SignalBar>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on LTE. Used when EnableLTESnrReporting is set to 1. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/NRRSRP/<SignalBar>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on 5G. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/NRRSSNR/<SignalBar>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on 5G. Used when EnableNRSnrReporting is set to 1. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+```<SignalBar>``` can be 1-5 values.
+
+If the OEM/MO fails to properly configure the mapping table for RSSI or it’s incomplete, use the default mapping:
+
+|RSSI|Bars Displayed|
+|-|-|
+|[0,1] |0|
+|[2,3] |1|
+|[4,6] |2|
+|[7,11] |3|
+| [12,16] |4|
+|[17,31] |5|
+
+If the OEM/MO fails to properly configure the mapping table for RSRP or it’s incomplete, use the default mapping:
+
+|RSRP|Bars Displayed|
+|-|-|
+|[0,16] |0|
+|[17,41] |1|
+|[42,51] |2|
+|[52,61] |3|
+| [62,71] |4|
+|[72,126] |5|
+
+If the OEM/MO fails to properly configure the mapping table for SNR or it’s incomplete, use the default mapping:
+
+|SNR|Bars Displayed|
+|-|-|
+|[0,18] |0|
+|[19,38] |1|
+|[39,46] |2|
+|[47,53] |3|
+| [54,72] |4|
+|[73,127] |5|
