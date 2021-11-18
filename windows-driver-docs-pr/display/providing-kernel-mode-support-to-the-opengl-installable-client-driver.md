@@ -6,19 +6,14 @@ keywords:
 - kernel-mode OpenGL ICD WDK display
 - ICD WDK display
 - installable client driver WDK display
-ms.date: 12/06/2018
+ms.date: 11/17/2021
 ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 
 # Kernel-Mode Support to the OpenGL Installable Client Driver
 
-
-The OpenGL installable client driver (ICD) can obtain the same level of support for calling kernel-mode services as [the Direct3D user-mode display driver](initializing-communication-with-the-direct3d-user-mode-display-driver.md). However, rather than gaining access to kernel-mode services through callback functions like the Microsoft Direct3D runtime supplies through the **pAdapterCallbacks** member of the [**D3DDDIARG\_OPENADAPTER**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_openadapter) structure and the **pCallbacks** member of the [**D3DDDIARG\_CREATEDEVICE**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createdevice) structure, the OpenGL ICD must load Gdi32.dll and initialize use of the [OpenGL-kernel-mode-accessing functions](/windows-hardware/drivers/ddi/_display/#functions) as shown in the following example code. This code does not implement [Windows 8 enhancements in OpenGL](supporting-opengl-enhancements.md).
-
-**Note**   To obtain a license for the OpenGL ICD Development Kit, contact the [OpenGL Issues](mailto:opengl@microsoft.com) team.
-
- 
+The OpenGL installable client driver (ICD) can obtain the same level of support for calling kernel-mode services as [the Direct3D user-mode display driver](initializing-communication-with-the-direct3d-user-mode-display-driver.md). However, rather than gaining access to kernel-mode services through callback functions like the Microsoft Direct3D runtime supplies through the **pAdapterCallbacks** member of the [**D3DDDIARG_OPENADAPTER**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_openadapter) structure and the **pCallbacks** member of the [**D3DDDIARG_CREATEDEVICE**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createdevice) structure, the OpenGL ICD must load Gdi32.dll and initialize use of the [OpenGL-kernel-mode-accessing functions](/windows-hardware/drivers/ddi/_display/#functions) as shown in the following example code. This code does not implement [Windows 8 enhancements in OpenGL](supporting-opengl-enhancements.md).
 
 ```cpp
 #include "d3dkmthk.h"
@@ -311,6 +306,3 @@ HRESULT InitKernelTHunks()
     return S_OK;
 }
 ```
-
- 
-
