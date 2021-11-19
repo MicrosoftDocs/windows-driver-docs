@@ -1,7 +1,7 @@
 ---
 title: Run From Driver Store
 description: This page describes how to make use of 'run from driver store' concepts in a driver package.
-ms.date: 11/05/2021
+ms.date: 11/10/2021
 ms.localizationpriority: medium
 ---
 
@@ -9,9 +9,23 @@ ms.localizationpriority: medium
 
 An INF that is using 'run from [Driver Store](/windows-hardware/drivers/install/driver-store)' means that the INF uses [**DIRID 13**](../install/using-dirids.md) to specify the location for driver package files on install.
 
-A WDM or KMDF driver that is running from the Driver Store on Windows 10 version 1803 and later which needs to access other files from its driver package should call [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from.
+For a 'run from Driver Store' file payloaded by an INF, the *subdir* listed in the [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entry for the file in the INF **must** match the subdir listed in the [**DestinationDirs**](../install/inf-destinationdirs-section.md) entry for the file in the INF.
 
-Alternatively for drivers that need to support OS versions before Windows 10 version 1803, use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find the driver's path, get the directory path it was loaded from, and look for configuration files relative to that path.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath. UMDF drivers can use [**GetModuleHandleExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) and [**GetModuleFileNameW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to determine where the driver was loaded from.  For example:
+Additionally, a [**CopyFiles**](../install/inf-copyfiles-directive.md) directive cannot be used to rename a file that is run from Driver Store. These restrictions are required so that the installation of an INF on a device does not result in the creation of new files in the Driver Store directory.
+
+Since [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every 'run from Driver Store' file that an INF references must have a unique file name.
+
+## Dynamically finding and loading files from the Driver Store
+
+Sometimes there is a need for a component to load a file that is part of a driver package that uses 'run from Driver Store'.  Paths to these driver package files should not be hardcoded as they can be different between different versions of the driver package, different OS versions, different OS editions, etc.  When such a need to load driver package files arises, these driver package files should be discovered and loaded dynamically using some of the paradigms described below.
+
+### Find and load files in the same driver package
+
+When a file in a driver package needs to load another file from the same driver package, one potential option for dynamically discovering that file is to determine the directory that this file is running from and to load the other file relative to that directory.
+
+A WDM or KMDF driver that is running from the Driver Store on Windows 10 version 1803 and later which needs to access other files from its driver package should call [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from. Alternatively for drivers that need to support OS versions before Windows 10 version 1803, use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find the driver's path, get the directory path it was loaded from, and look for files relative to that path.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath. 
+
+Usermode binaries can use [**GetModuleHandleExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) and [**GetModuleFileNameW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to determine where the driver was loaded from.  For example, a UMDF driver binary may do something like the following:
 
 ```cpp
 bRet = GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
@@ -24,24 +38,18 @@ if (bRet) {
     …
 ```
 
-For a file payloaded by an INF, the *subdir* listed in the [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entry for the file in the INF must match the subdir listed in the [**DestinationDirs**](../install/inf-destinationdirs-section.md) entry for the file in the INF.
+### Find and load files in any driver package
 
-Additionally, a [**CopyFiles**](../install/inf-copyfiles-directive.md) directive cannot be used to rename a file. These restrictions are required so that the installation of an INF on a device does not result in the creation of new files in the Driver Store directory.
+In some scenarios, a driver package may contain a file that is intended to be loaded by a binary in another driver package or by a user mode component.  This method can also be used for files from the same driver package if this is preferred over the method described above for loading files from the same driver package.
 
-Since [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a unique file name.
+Here are a couple of examples of scenarios that may involve loading files from a driver package:
 
-## Dynamically finding and loading files from the Driver Store
+* A user mode DLL in a driver package provides an interface for communicating with a driver in the driver package.
+* An [extension driver package](/windows-hardware/drivers/install/using-an-extension-inf-file) contains a configuration file that is loaded by the driver in the base driver package.
 
-In some scenarios, a driver package may contain a file that is intended to be loaded by a binary in another driver package or by a user mode component.
+In these situations, the driver package should set some state on a device or device interface that indicates the path of the file that is expected to be loaded.
 
-Here are a couple of examples:
-
-* A user mode DLL provides an interface for communicating with a driver in the driver package.
-* An extension driver package contains a configuration file that is loaded by the driver in the base driver package.
-
-In these situations, the driver package should set some state indicating the path of the file or a device interface exposed by the device.
-
-For example, the driver package could use an HKR [**AddReg**](../install/inf-addreg-directive.md) to set this state. For this example, it should be assumed that for `ExampleFile.dll`, the driver package has a [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entry with no *subdir*.  This results in the file being at the root of the driver package directory, and the [**DestinationDirs**](../install/inf-destinationdirs-section.md) for a [**CopyFiles**](../install/inf-copyfiles-directive.md) directive specifies **dirid** 13.
+A driver package would typically use an HKR [**AddReg**](../install/inf-addreg-directive.md) to set this state. For this example, it should be assumed that for `ExampleFile.dll`, the driver package has a [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entry with no *subdir*.  This results in the file being at the root of the driver package directory. It should also be assumed that the [**DestinationDirs**](../install/inf-destinationdirs-section.md) for a [**CopyFiles**](../install/inf-copyfiles-directive.md) directive specifies **dirid** 13.
 
 Here is an INF example for setting this as device state:
 
@@ -74,7 +82,7 @@ To access this setting when it is part of the device's state, first the applicat
 
 Once the correct device is found, call [**CM_Open_DevNode_Key**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key) to get a handle to the registry location where the device state was stored.
 
-Kernel mode code should retrieve a PDO (physical device object) and call [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
+Kernel mode code should retrieve a PDO (physical device object) to the device with the state and call [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).  One possible way for the kernel mode code to retrieve the PDO of the device would be to discover an enabled interface exposed by the device and use [**IoGetDeviceObjectPointer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceobjectpointer) to retrieve the device object.
 
 To access this setting when it is device interface state, User mode code can call [**CM_Get_Device_Interface_List_Size**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_list_sizea) and [**CM_Get_Device_Interface_List**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista).
 
@@ -87,4 +95,14 @@ Kernel mode code can retrieve a symbolic link name for the device interface from
 Once the appropriate symbolic link name is found, call [**IoOpenDeviceInterfaceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a handle to the registry location where the device interface state was stored.
 
 > [!NOTE]
-> Use the **CM_GETIDLIST_FILTER_PRESENT** flag with [CM_Get_Device_ID_List_Size](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_list_sizea) and [**CM_Get_Device_ID_List**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_lista) or the **CM_GET_DEVICE_INTERFACE_LIST_PRESENT** flag with [**CM_Get_Device_Interface_List_Size**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_list_sizew) and [**CM_Get_Device_Interface_List**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista). This ensures that hardware is present and ready for communication.
+> Use the **CM_GETIDLIST_FILTER_PRESENT** flag with [CM_Get_Device_ID_List_Size](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_list_sizea) and [**CM_Get_Device_ID_List**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_lista) or the **CM_GET_DEVICE_INTERFACE_LIST_PRESENT** flag with [**CM_Get_Device_Interface_List_Size**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_list_sizew) and [**CM_Get_Device_Interface_List**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista). This ensures that the hardware related to the state that contains the file path is present and ready for communication.
+
+## Removing driver package
+
+By default, a driver package cannot be removed from the system if it is still installed on any devices.  However, some options for removing a driver package from the system allow for it to be attempted to be 'force' removed.  This attempts to remove the driver package even if that driver package is still installed on some devices on the system.  Force removals are not allowed for driver packages that have any files that are 'run from Driver Store'.  When a driver package is removed from the system, its Driver Store contents are removed.  If there are any devices that are still installed with that driver package, any 'run from Driver Store' files in that driver package will now be gone and those missing files may cause that device to malfunction.  To prevent putting the device into a bad state like that, driver packages that contain any 'run from Driver Store' files cannot be force removed.  They can only be removed once they are no longer installed on any devices.  To aid in removals of such driver packages, [**DiUninstallDriver**](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw) or [pnputil /delete-driver <oem#.inf> /uninstall](/windows-hardware/drivers/devtest/pnputil-command-syntax) can be used.  These methods of removal will first update any devices using the driver package being removed to no longer be installed with that driver package before attempting to remove the driver package.
+
+## Driver package development
+
+### Testing private binaries
+
+When developing a driver package, if there is a need to replace a particular executable file from the driver package with a private version instead of fully rebuilding and replacing the driver package on the system, then it is recommended that a kernel debugger is used along with the [**.kdfiles**](/windows-hardware/drivers/debugger/-kdfiles--set-driver-replacement-map-) command.  Since the full path to the file in the Driver Store should not be hardcoded, it is recommended that in the .kdfiles mapping, the *OldDriver* file name is just the direct name of the file with no preceding path information.  To facilitate this (and other scenarios), names of files in driver packages should be as unique as possible so it does not match the name of a file from an unrelated driver package on the system.
