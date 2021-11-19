@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # General Guidelines for Device and Driver Installation
 
 
-The fundamental goal for device and driver installation on Windows operating systems is to make the process as easy as possible for the user. Your installation procedures and the components of your [driver packages](driver-packages.md) should work seamlessly with the operating system's [device installation components](/previous-versions/ff541277(v=vs.85)).
+The fundamental goal for device and driver installation on Windows operating systems is to make the process as easy as possible for the user. Your installation procedures and the components of your [driver packages](driver-packages.md) should work seamlessly with the operating system's device installation components.
 
 To provide the best possible user experience, use the following guidelines to design and implement your installation procedures:
 

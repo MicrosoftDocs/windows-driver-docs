@@ -26,7 +26,7 @@ To install a device and driver in the Windows operating system, follow these st
 
 -   Step 3: Learn about information (INF) files.
 
-    An INF file contains the information and device settings which the system-provided [device installation components](/previous-versions/ff541277(v=vs.85)) use to install your [driver package](driver-packages.md), such as the driver for the device and any device-specific applications.
+    An INF file contains the information and device settings which the system-provided device installation components use to install your [driver package](driver-packages.md), such as the driver for the device and any device-specific applications.
 
     For more information, see [INF Files](overview-of-inf-files.md).
 
