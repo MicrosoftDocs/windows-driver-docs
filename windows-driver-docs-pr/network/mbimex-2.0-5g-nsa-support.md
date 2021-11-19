@@ -544,39 +544,39 @@ EnableLTESnrReporting:
 
 1 = "Use both RSRP and SNR"
 
-Cellular/PerDevice/SignalBarMappingTable/SignalForBars/<SignalBar>
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/\<SignalBar\>
 
 Modify the minimum signal strength value corresponding to the number of bars to be shown. Technology specific settings take precedence. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
 
-Cellular/PerDevice/SignalBarMappingTable/SignalForBars/GERAN/<SignalBar>
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/GERAN/\<SignalBar\>
 
 Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on GSM. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
 
-Cellular/PerDevice/SignalBarMappingTable/SignalForBars/WCDMA/<SignalBar>
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/WCDMA/\<SignalBar\>
 
 Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on WCDMA. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
 
-Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTE/<SignalBar>
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTE/\<SignalBar\>
 
 Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on LTE. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
 
-Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTERSRP/<SignalBar>
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTERSRP/\<SignalBar\>
 
 Modify the minimum signal strength value corresponding to the number of bars to be shown, when device is camped on LTE. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
 
-Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTERSSNR/<SignalBar>
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTERSSNR/\<SignalBar\>
 
 Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on LTE. Used when EnableLTESnrReporting is set to 1. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
 
-Cellular/PerDevice/SignalBarMappingTable/SignalForBars/NRRSRP/<SignalBar>
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/NRRSRP/\<SignalBar\>
 
 Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on 5G. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
 
-Cellular/PerDevice/SignalBarMappingTable/SignalForBars/NRRSSNR/<SignalBar>
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/NRRSSNR/\<SignalBar\>
 
 Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on 5G. Used when EnableNRSnrReporting is set to 1. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
 
-```<SignalBar>``` can be 1-5 values.
+\<SignalBar\> can be 1-5 values.
 
 If the OEM/MO fails to properly configure the mapping table for RSSI or it’s incomplete, use the default mapping:
 
