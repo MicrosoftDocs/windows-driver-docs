@@ -26,7 +26,7 @@ The breakpoint will only cause a break into the debugger when the specified cond
 0:000> bp /w "MyVar > 20" `mysource.cpp:143`
 ```
 
-Since the condition is evaluated using the debugger object model, you can also take advantage of things like NatVis support. For instance, assuming myVec is a std::vector<int>, you could create a condition such as:
+Since the condition is evaluated using the debugger object model, you can also take advantage of things like NatVis support. For instance, assuming myVec is a `std::vector<int>`, you could create a condition such as:
 
 ```dbgcmd
 0:000> bp /w "myVec.Count() == 4" `mysource.cpp:143`

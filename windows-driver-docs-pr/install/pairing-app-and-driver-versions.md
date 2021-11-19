@@ -24,7 +24,7 @@ To cause a UWP app to load only when a specific driver is present, add two XML e
 In particular, use these elements to specify at least one driver dependency containing at least one driver constraint.  See further details on use of these elements on the reference pages linked to above, including [Examples](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint#examples).
 
 > [!NOTE]
-> Debug builds in earlier versions of Visual Studio may place the <PackageDependency> elements for debug dependencies after `<uap5:DriverDependency>`, resulting in the manifest failing to validate against the schema.
+> Debug builds in earlier versions of Visual Studio may place the `<PackageDependency>` elements for debug dependencies after `<uap5:DriverDependency>`, resulting in the manifest failing to validate against the schema.
 > To fix the problem, update Visual Studio to version 16.11.5 or more recent.
 
 ## Steps in the driver
