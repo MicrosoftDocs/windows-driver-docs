@@ -24,8 +24,7 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
         [Hyper-V Extensible Switch Status Indications](./hyper-v-extensible-switch-status-indications.md)
         [Hyper-V Extensible Switch Macros](/windows-hardware/drivers/ddi/ntddndis/)
     -   Read the online documentation for WFP-based extensions, beginning with [Using Virtual Switch Filtering](using-virtual-switch-filtering.md).
-    -   Watch the following instructional videos on extensions.
-        -   [TechEd session on Hyper-V Extensible Switch](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2012/VIR307)
+    -   Watch the following instructional videos on extensions.  
         -   [Hyper-V Extensible Switch, Part I—Introduction](https://channel9.msdn.com/posts/Hyper-V-Extensible-Switch-Part-I--Introduction)
         -   [Hyper-V Extensible Switch, Part II—Understanding the Control Path](https://channel9.msdn.com/posts/Hyper-V-Extensible-Switch-Part-II--Understanding-the-Control-Path)
         -   [Hyper-V Extensible Switch, Part III—The Ins and Outs of the Datapath for Capture and Filter Extensions](https://channel9.msdn.com/posts/Hyper-V-Extensible-Switch-Part-III--The-Ins-and-Outs-of-the-Data-Path-for-Capture-and-Filter-Extensi)
