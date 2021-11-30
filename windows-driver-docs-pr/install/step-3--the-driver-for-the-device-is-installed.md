@@ -11,7 +11,7 @@ After Windows has selected the best driver package for the new device, Windows i
 
 1.  Based on directives within the [driver package's](driver-packages.md) [INF file](overview-of-inf-files.md), Windows installs the driver package on the device.  For example, it:
 
-    -   Copies the driver binaries and other associated files to locations on the hard disk as specified any relevant [**INF CopyFiles directive**](inf-copyfiles-directive.md).
+    -   Copies the driver binaries and other associated files to locations on the hard disk as specified by any relevant [**INF CopyFiles directive**](inf-copyfiles-directive.md).
 
     -   Performs registry operations as specified by any relevant [**INF AddReg directive**](inf-addreg-directive.md).
 
