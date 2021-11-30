@@ -15,7 +15,7 @@ After a [new device is detected and identified](step-1--the-new-device-is-identi
 
 ### <a href="" id="searching-for-the-driver"></a>Searching for a Driver Package
 
-Using the [hardware identifieriers (IDs)](hardware-ids.md) and [compatible IDs](compatible-ids.md) that are reported by the [bus driver](../kernel/bus-drivers.md) for the device, Windows searches for [driver packages](driver-packages.md) that match that device. A driver package matches a device if a hardware ID or compatible ID on the device matches an ID in an [**INF *Models* section**](inf-models-section.md) entry of the driver package's [INF file](overview-of-inf-files.md).
+Using the [hardware identifiers (IDs)](hardware-ids.md) and [compatible IDs](compatible-ids.md) that are reported by the [bus driver](../kernel/bus-drivers.md) for the device, Windows searches for [driver packages](driver-packages.md) that match that device. A driver package matches a device if a hardware ID or compatible ID on the device matches an ID in an [**INF *Models* section**](inf-models-section.md) entry of the driver package's [INF file](overview-of-inf-files.md).
 
 As an example, on Windows 8 and later, if a user plugs a WLAN adapter into a port of a USB hub, the following steps occur:
 
