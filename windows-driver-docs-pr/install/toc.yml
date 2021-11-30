@@ -22,8 +22,6 @@
         href: pnp-manager.md
       - name: "Driver Store"
         href: driver-store.md
-      - name: "Vendor-provided Device Installation Components"
-        href: vendor-provided-device-installation-components.md
     - name: "Installation Files"
       items: 
       - name: "Device Installation Files"
