@@ -16,7 +16,7 @@
         href: step-3--the-driver-for-the-device-is-installed.md
     - name: "Components"
       items: 
-      - name: "System-provided Device Installation Components"
+      - name: "Device Installation Components"
         href: system-provided-device-installation-components.md
       - name: "Plug and Play Manager"
         href: pnp-manager.md
