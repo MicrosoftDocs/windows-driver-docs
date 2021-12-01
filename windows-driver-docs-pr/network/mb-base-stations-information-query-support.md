@@ -192,7 +192,7 @@ The MBIM_TDSCDMA_SERVING_CELL_INFO structure contains information about the TDSC
 | 16 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0-16383). Use 0xFFFFFFFF when this information is not available. |
 | 20 | 4 | CellParameterID | UINT32 | The Cell parameter ID (0-127). Use 0xFFFFFFFF when this information is not available. |
 | 24 | 4 | TimingAdvance | UINT32 | The Timing Advance (0-1023). This member is the same value for all timeslots. Use 0xFFFFFFFF when this information is not available. |
-| 28 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is -120 to -25, in units of 1dBm in Q8 L3 filtered. Use 0xFFFFFFFF when this information is not available. |
+| 28 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is -120 to -25, in units of 1dBm in Q8 L3 filtered. Use 0 when this information is not available. |
 | 32 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46-158). Use 0xFFFFFFFF when this information is not available. |
 | 36 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
