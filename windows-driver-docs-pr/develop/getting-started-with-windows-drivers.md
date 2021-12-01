@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Starting at some point after Windows 10, version 2004, drivers that run on Windows will be classified as either *Windows Drivers* or *Windows Desktop Drivers*. 
 
-Windows Drivers will run on all Windows variants, including [HoloLens](/hololens), Xbox, [Factory OS](/windows-hardware/manufacture/desktop/factoryos/factory-product?view=windows-11), and Windows Desktop editions.  Windows Desktop Drivers will *only* run on Windows Desktop editions.  
+Windows Drivers will run on all Windows variants, including [HoloLens](/hololens), Xbox, [Factory OS](/windows-hardware/manufacture/desktop/factoryos/factory-product), and Windows Desktop editions.  Windows Desktop Drivers will *only* run on Windows Desktop editions.  
 
 The *Windows Driver* classification will extend and replace the current *Universal Driver* classification. 
 
