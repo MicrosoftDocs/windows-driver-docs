@@ -7,17 +7,13 @@ keywords:
 - installing devices WDK , files
 - files WDK device installations
 - sample files WDK device installations
-ms.date: 04/20/2017
+ms.date: 12/01/2021
 ms.localizationpriority: medium
 ---
 
 # Sample Device Installation Files
 
-
-
-
-
-The Windows Driver Kit (WDK) includes various sample installation files, such as INF files, device installation applications, class installers, co-installers, and property page providers.
+The Windows Driver Kit (WDK) includes various sample installation files, such as INF files, device installation applications, and property page providers.
 
 Most sample installation files are located under the *src\\setup* subdirectory of the WDK. Also see the *src\\general\\toaster* subdirectory of the WDK.
 
