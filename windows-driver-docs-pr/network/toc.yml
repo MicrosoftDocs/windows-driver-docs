@@ -2272,20 +2272,18 @@
     items: 
     - name: "Virtual Machine Queue (VMQ) Overview"
       href: virtual-machine-queue--vmq-.md
-    - name: "VVMQ Architecture"
+    - name: "VMQ Architecture"
       items: 
-      - name: "Virtual Machine Queue Architecture"
+      - name: "Virtual Machine Queue (VMQ) Architecture"
         href: virtual-machine-queue-architecture.md
-      - name: "About NDIS Virtual Machine Queue (VMQ)"
-        items: 
-        - name: "Introduction to NDIS Virtual Machine Queue (VMQ)"
-          href: introduction-to-ndis-virtual-machine-queue--vmq-.md
-        - name: "VMQ Components"
-          href: vmq-components.md
-        - name: "VMQ Receive Queues"
-          href: vmq-receive-queues.md
-        - name: "VMQ Receive Filters"
-          href: vmq-receive-filters.md
+      - name: "Introduction to NDIS Virtual Machine Queue (VMQ)"
+        href: introduction-to-ndis-virtual-machine-queue--vmq-.md
+      - name: "VMQ Components"
+        href: vmq-components.md
+      - name: "VMQ Receive Queues"
+        href: vmq-receive-queues.md
+      - name: "VMQ Receive Filters"
+        href: vmq-receive-filters.md
       - name: "Security Issues with NDIS Virtual Machine (VM) Shared Memory"
         href: security-issues-with-ndis-virtual-machine--vm--shared-memory.md
       - name: "NDIS VMQ Live Migration Support"

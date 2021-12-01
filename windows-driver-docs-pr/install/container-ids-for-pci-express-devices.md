@@ -1,7 +1,7 @@
 ---
 title: Container IDs for PCI Express Devices
 description: Container IDs for PCI Express Devices
-ms.date: 04/20/2017
+ms.date: 11/29/2021
 ms.localizationpriority: medium
 ---
 
@@ -55,7 +55,7 @@ The mechanism that is used to set these register bits varies by PCIe chipset ver
 
 Be aware that if the device implements an _EJ0 method in the ACPI namespace, the ACPI driver marks the device as removable. This occurs regardless of the setting of the Slot Implemented or Hot-Plug Capable bits. For more information, see the [Hot-Plug PCI and Windows](https://go.microsoft.com/fwlink/p/?linkid=26278) white paper.
 
-For more information about the PCIe interface, see the [PCIe Base](https://go.microsoft.com/fwlink/p/?linkid=69486) specification.
+For more information about the PCIe interface, see the [PCIe Base](https://pcisig.com/specifications/pciexpress/) specification.
 
  
 

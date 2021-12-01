@@ -1,7 +1,7 @@
 ---
 title: Pairing a driver with a Universal Windows Platform (UWP) app
 description: This topic describes how to specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.
-ms.date: 08/24/2017
+ms.date: 11/18/2021
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +21,11 @@ To cause a UWP app to load only when a specific driver is present, add two XML e
 * [uap5:DriverDependency](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency)
 * [uap5:DriverConstraint](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint)
 
-In particular, use these elements to specify at least one driver dependency containing at least one driver constraint.  See further details on use of these elements on the reference pages linked to above.  The latter page contains an example.
+In particular, use these elements to specify at least one driver dependency containing at least one driver constraint.  See further details on use of these elements on the reference pages linked to above, including [Examples](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint#examples).
+
+> [!NOTE]
+> Debug builds in earlier versions of Visual Studio may place the `<PackageDependency>` elements for debug dependencies after `<uap5:DriverDependency>`, resulting in the manifest failing to validate against the schema.
+> To fix the problem, update Visual Studio to version 16.11.5 or more recent.
 
 ## Steps in the driver
 

@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 
 
-Every driver package must include an INF file, which the [device installation components](/previous-versions/ff541277(v=vs.85)) read when installing the device. An INF file is not an installation script. It is an ASCII or Unicode text file that provides device and driver information, including the driver files, registry entries, device IDs, [catalog files](catalog-files.md), and version information that is required to install the device or driver. The INF is used not only when the device or driver is first installed, but also when the user requests a driver update through Device Manager.
+Every driver package must include an INF file, which the device installation components read when installing the device. An INF file is not an installation script. It is an ASCII or Unicode text file that provides device and driver information, including the driver files, registry entries, device IDs, [catalog files](catalog-files.md), and version information that is required to install the device or driver. The INF is used not only when the device or driver is first installed, but also when the user requests a driver update through Device Manager.
 
 The exact contents and format of the INF file depend on the [device setup classes](./overview-of-device-setup-classes.md). [Summary of INF Sections](summary-of-inf-sections.md) describes the information that is required in each type of INF. In general, per-manufacturer information is located in an [**INF *Models* section**](inf-models-section.md). Entries in the **Models** section refer to [**INF *DDInstall* sections**](inf-ddinstall-section.md) that contain model-specific details.
 

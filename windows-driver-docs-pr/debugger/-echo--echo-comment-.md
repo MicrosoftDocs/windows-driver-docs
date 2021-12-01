@@ -2,7 +2,7 @@
 title: .echo (Echo Comment)
 description: The .echo command displays a comment string.
 keywords: [".echo (Echo Comment) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 11/19/2021
 topic_type:
 - apiref
 api_name:
@@ -57,10 +57,10 @@ Specifies the text to display. You can also enclose *String* in quotation marks 
 
 The **.echo** command causes the debugger to display *String* immediately after you enter the command.
 
-An **.echo** command is ended if the debugger encounters a semicolon (unless the semicolon occurs within a quoted string). This restriction enables you to use **.echo** in complex constructions such as [conditional breakpoints](setting-a-conditional-breakpoint.md), as the following example shows.
+An **.echo** command is ended if the debugger encounters a semicolon (unless the semicolon occurs within a quoted string). This restriction enables you to use **.echo** in more complex constructions such as with the [j (Execute If - Else)](j--execute-if---else-.md) command, as the following example shows.
 
 ```dbgcmd
-0:000> bp `:143` "j (poi(MyVar)>5) '.echo MyVar Too Big'; '.echo MyVar Acceptable; gc' " 
+0:000> j (poi(MyVar)>5) '.echo MyVar Too Big'; '.echo MyVar Acceptable;
 ```
 
 The **.echo** command also provides an easy way for users of debugging servers and debugging clients to communicate with one another. For more information about this situation, see [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md).

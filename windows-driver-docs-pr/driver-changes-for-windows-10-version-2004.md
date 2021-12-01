@@ -1,7 +1,7 @@
 ---
 title: Driver development changes for Windows 10, version 2004
 description: This section describes new features for driver development in Windows 10, version 2004.
-ms.date: 05/22/2020
+ms.date: 12/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -13,7 +13,7 @@ This section describes new features and updates for driver development in Window
 
 Windows 10, version 2004 is a transition release for universal drivers. In this release, universal drivers still exist, but are being replaced by Windows Drivers. A Windows Driver is a universal driver with a few additional requirements.
 
-Windows Drivers are distinguished from Windows Desktop Drivers. While Windows Drivers run on Windows 10X and Windows 10 Desktop editions,  Windows Desktop Drivers run only on Windows 10 Desktop editions.
+Windows Drivers are distinguished from Windows Desktop Drivers. While Windows Drivers run on all Windows editions, Windows Desktop Drivers run only on Windows 10 Desktop editions.
 
 No changes are required to universal drivers for the version 2004 release, but documentation is available now so that you can plan ahead for upcoming changes.
 

@@ -1,43 +1,35 @@
 ---
 title: Granting Oplocks
 description: Granting Oplocks
-ms.date: 04/20/2017
+ms.date: 11/17/2021
 ms.localizationpriority: medium
 ---
 
 # Granting Oplocks
 
-
-## <span id="ddk_network_redirector_design_and_performance_if"></span><span id="DDK_NETWORK_REDIRECTOR_DESIGN_AND_PERFORMANCE_IF"></span>
-
-
 Oplocks are requested through [FSCTL](https://go.microsoft.com/fwlink/p/?linkid=124238)s. The following list shows the FSCTLs for the different oplock types (which user-mode applications and kernel-mode drivers can issue):
 
--   FSCTL\_REQUEST\_OPLOCK\_LEVEL\_1
+* FSCTL_REQUEST_OPLOCK_LEVEL_1
+* FSCTL_REQUEST_OPLOCK_LEVEL_2
+* FSCTL_REQUEST_BATCH_OPLOCK
+* FSCTL_REQUEST_FILTER_OPLOCK
+* FSCTL_REQUEST_OPLOCK
 
--   FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2
+The first four FSCTLs in the list are used to request legacy oplocks. The last FSCTL is used to request Windows 7 oplocks with the REQUEST_OPLOCK_INPUT_FLAG_REQUEST flag specified in the **Flags** member of the REQUEST_OPLOCK_INPUT_BUFFER structure, passed as the *lpInBuffer* parameter of [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol). In a similar manner, [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) can be used to request Windows 7 oplocks from kernel mode. A file system minifilter must use [**FltAllocateCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata) and [**FltPerformAsynchronousIo**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltperformasynchronousio) to request a Windows 7 oplock. To specify which of the four Windows 7 oplocks is required, one or more of the flags OPLOCK_LEVEL_CACHE_READ, OPLOCK_LEVEL_CACHE_HANDLE, or OPLOCK_LEVEL_CACHE_WRITE is set in the **RequestedOplockLevel** member of the REQUEST_OPLOCK_INPUT_BUFFER structure. For more information, see [**FSCTL_REQUEST_OPLOCK**](./fsctl-request-oplock.md).
 
--   FSCTL\_REQUEST\_BATCH\_OPLOCK
+When a request is made for an oplock and the oplock can be granted, the file system returns STATUS_PENDING (because of this, oplocks are never granted for synchronous I/O). The FSCTL IRP does not complete until the oplock is broken. If the oplock cannot be granted, an appropriate error code is returned. The most commonly returned error codes are STATUS_OPLOCK_NOT_GRANTED and STATUS_INVALID_PARAMETER (and their equivalent user-mode analogs).
 
--   FSCTL\_REQUEST\_FILTER\_OPLOCK
+As mentioned previously, the Filter oplock allows an application to "back out" when other applications/clients try to access the same stream. This mechanism allows an application to access a stream without causing other accessors of the stream to receive sharing violations when attempting to open the stream. To avoid sharing violations, a special three-step procedure should be used to request a Filter oplock (FSCTL_REQUEST_FILTER_OPLOCK):
 
--   FSCTL\_REQUEST\_OPLOCK
+1. Open the file with a required access of FILE_READ_ATTRIBUTES and a share mode of FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE.
 
-The first four FSCTLs in the list are used to request legacy oplocks. The last FSCTL is used to request Windows 7 oplocks with the REQUEST\_OPLOCK\_INPUT\_FLAG\_REQUEST flag specified in the **Flags** member of the REQUEST\_OPLOCK\_INPUT\_BUFFER structure, passed as the *lpInBuffer* parameter of [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol). In a similar manner, [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) can be used to request Windows 7 oplocks from kernel mode. A file system minifilter must use [**FltAllocateCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata) and [**FltPerformAsynchronousIo**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltperformasynchronousio) to request a Windows 7 oplock. To specify which of the four Windows 7 oplocks is required, one or more of the flags OPLOCK\_LEVEL\_CACHE\_READ, OPLOCK\_LEVEL\_CACHE\_HANDLE, or OPLOCK\_LEVEL\_CACHE\_WRITE is set in the **RequestedOplockLevel** member of the REQUEST\_OPLOCK\_INPUT\_BUFFER structure. For more information, see [**FSCTL\_REQUEST\_OPLOCK**](./fsctl-request-oplock.md).
+2. Request a Filter oplock on the handle from step 1.
 
-When a request is made for an oplock and the oplock can be granted, the file system returns STATUS\_PENDING (because of this, oplocks are never granted for synchronous I/O). The FSCTL IRP does not complete until the oplock is broken. If the oplock cannot be granted, an appropriate error code is returned. The most commonly returned error codes are STATUS\_OPLOCK\_NOT\_GRANTED and STATUS\_INVALID\_PARAMETER (and their equivalent user-mode analogs).
+3. Open the file again for read access.
 
-As mentioned previously, the Filter oplock allows an application to "back out" when other applications/clients try to access the same stream. This mechanism allows an application to access a stream without causing other accessors of the stream to receive sharing violations when attempting to open the stream. To avoid sharing violations, a special three-step procedure should be used to request a Filter oplock (FSCTL\_REQUEST\_FILTER\_OPLOCK):
+The handle opened in step 1 will not cause other applications to receive sharing violations, since it is open only for attribute access (FILE_READ_ATTRIBUTES), and not data access (FILE_READ_DATA). This handle is suitable for requesting the Filter oplock, but not for performing actual I/O on the data stream. The handle opened in step 3 allows the holder of the oplock to perform I/O on the stream, while the oplock granted in step 2 allows the holder of the oplock to "get out of the way" without causing a sharing violation to another application that attempts to access the stream.
 
-1.  Open the file with a required access of FILE\_READ\_ATTRIBUTES and a share mode of FILE\_SHARE\_READ | FILE\_SHARE\_WRITE | FILE\_SHARE\_DELETE.
-
-2.  Request a Filter oplock on the handle from step 1.
-
-3.  Open the file again for read access.
-
-The handle opened in step 1 will not cause other applications to receive sharing violations, since it is open only for attribute access (FILE\_READ\_ATTRIBUTES), and not data access (FILE\_READ\_DATA). This handle is suitable for requesting the Filter oplock, but not for performing actual I/O on the data stream. The handle opened in step 3 allows the holder of the oplock to perform I/O on the stream, while the oplock granted in step 2 allows the holder of the oplock to "get out of the way" without causing a sharing violation to another application that attempts to access the stream.
-
-The NTFS file system provides an optimization for this procedure through the FILE\_RESERVE\_OPFILTER create option flag. If this flag is specified in step 1 of the previous procedure, it allows the file system to fail the create request with STATUS\_OPLOCK\_NOT\_GRANTED if the file system can determine that step 2 will fail. Be aware that if step 1 succeeds, there is no guarantee that step 2 will succeed, even if FILE\_RESERVE\_OPFILTER was specified for the create request.
+The NTFS file system provides an optimization for this procedure through the FILE_RESERVE_OPFILTER create option flag. If this flag is specified in step 1 of the previous procedure, it allows the file system to fail the create request with STATUS_OPLOCK_NOT_GRANTED if the file system can determine that step 2 will fail. Be aware that if step 1 succeeds, there is no guarantee that step 2 will succeed, even if FILE_RESERVE_OPFILTER was specified for the create request.
 
 The following table identifies the required conditions necessary to grant an oplock.
 
@@ -120,9 +112,6 @@ The following table identifies the required conditions necessary to grant an opl
 <td align="left"><p>Granted only if all of the following conditions are true:</p>
 <ul>
 <li>The request is for a given stream of a file.
-<ul>
-<li>If a directory, STATUS_INVALID_PARAMETER is returned.</li>
-</ul></li>
 <li>The stream is opened for ASYNCHRONOUS access.
 <ul>
 <li>If opened for SYNCHRONOUS access, STATUS_OPLOCK_NOT_GRANTED is returned.</li>
@@ -155,9 +144,6 @@ The following table identifies the required conditions necessary to grant an opl
 <td align="left"><p>Granted only if all of the following conditions are true:</p>
 <ul>
 <li>The request is for a given stream of a file.
-<ul>
-<li>If a directory, STATUS_INVALID_PARAMETER is returned.</li>
-</ul></li>
 <li>The stream is opened for ASYNCHRONOUS access.
 <ul>
 <li>If opened for SYNCHRONOUS access, STATUS_OPLOCK_NOT_GRANTED is returned.</li>
@@ -247,7 +233,6 @@ The following table identifies the required conditions necessary to grant an opl
 </tbody>
 </table>
 
- 
-
-**Note**   Read and Level 2 oplocks may coexist on the same stream, and Read and Read-Handle oplocks may coexist, but Level 2 and Read-Handle oplocks may not coexist.
-
+> [!NOTE]
+>
+> Read and Level 2 oplocks can coexist on the same stream, and Read and Read-Handle oplocks can coexist, but Level 2 and Read-Handle oplocks cannot coexist.
