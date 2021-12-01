@@ -1,7 +1,7 @@
 ---
 title: Sample PowerShell script to query SMBIOS locally
 description: Sample PowerShell script to query SMBIOS locally
-ms.date: 05/07/2018
+ms.date: 12/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -61,7 +61,7 @@ $machines = New-Object System.Collections.ArrayList
 
 # TODO: add code to populate the machine list from user input, etc.
 #
-$machines. Add("LocalHost") | Out-Null
+$machines.Add("LocalHost") | Out-Null
 
 $list = New-Object System.Collections.ArrayList
 
