@@ -4,6 +4,7 @@ description: Setting SetupAPI Logging Levels
 keywords:
 - logging levels WDK SetupAPI
 ms.date: 04/20/2017
+ms.custom: contperf-fy22q2
 ms.localizationpriority: medium
 ---
 
