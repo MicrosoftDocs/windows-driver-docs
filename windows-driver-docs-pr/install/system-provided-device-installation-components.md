@@ -25,7 +25,7 @@ The driver store is a trusted collection of in-box and third-party [driver packa
 For more information, see [Driver Store](driver-store.md).
 
 <a href="" id="device-installation-apis"></a>Device Installation APIs  
-With various device installation APIs, you can programatically add driver packages to the system and update the driver package installed on a device.
+With various device installation APIs, you can programmatically add driver packages to the system and update the driver package installed on a device.
 
 For more information, see [Functions that Simplify Driver Installation](functions-that-simplify-driver-installation.md).
 
