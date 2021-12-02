@@ -33,7 +33,7 @@ This table shows the values that apply for Windows 8. Key changes are italicize
 
 Each operating system release introduces a new feature score value. For Windows 8 this is *E3* for in-box and pre-release drivers, and *E0* for WHQL drivers. The feature score is used by Windows to determine which driver to install when multiple possible drivers exist. A driver with a higher ranked feature score is selected.
 
-All Windows 8 in-box driver devices have a higher ranked feature score than all existing Windows 7 drivers because the in-box drivers are tested on Windows 8, and existing Windows 7Windows 7 drivers have not been. This results in the in-box Windows 8 driver replacing existing Windows 7 drivers. An independent hardware vendor (IHV) can use the E0 feature score with a Windows 7 driver if the following is true:
+All Windows 8 in-box driver devices have a higher ranked feature score than all existing Windows 7 drivers because the in-box drivers are tested on Windows 8, and existing Windows 7 drivers have not been. This results in the in-box Windows 8 driver replacing existing Windows 7 drivers. An independent hardware vendor (IHV) can use the E0 feature score with a Windows 7 driver if the following is true:
 
 -   The driver has been tested for Windows 8.
 -   The driver has fixes that make it better than the in-box driver.
