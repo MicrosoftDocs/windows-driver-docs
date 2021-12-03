@@ -31,24 +31,3 @@ Drivers can read from the extended PCI device configuration space (that is, more
 PCI Express and PCI-X mode 2 support an extended PCI device configuration space of greater than 256 bytes. Drivers can read and write to this configuration space, but only with the appropriate hardware and BIOS support. Within the ACPI BIOS, the root bus must have a PNP ID of either PNP0A08 or PNP0A03. For root buses with PNP ID of PNP0A03, the \_DSM method with function 4 should indicate that the current mode is PCI-X mode 2. All the bridges and devices should either be PCI express or operate in PCI-X mode 2.
 
 In addition, the system should support memory-mapped configuration space accesses. This is by defining an MCFG table in the system BIOS/firmware. Windows Vista and Windows Server 2008 and later operating systems automatically support memory-mapped configuration space accesses.
-
-## Obtaining segment values
-
-To obtain the Segment value for PCI Multi-Segment, use the [DEVPKEY_Device_LocationInfo](/windows-hardware/drivers/install/devpkey-device-locationinfo) key.
-
-Supported methods to obtain this property are:
-
-* Kernel mode:
-    * [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty)
-    * [**IoGetDevicePropertyData**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdevicepropertydata)
-* User mode:
-    * [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-    * [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw)
-
-Upon successful call, you'll need to parse the returned string.
-
-On single-segment system the string is in this format: `PCI bus 1, device 2, function 3`
-
-On multi-segment system it looks like this: `PCI segment 1 bus 2, device 3, function 4`
-
-**DEVPROP_TYPE_NULL** most likely means the property doesn’t exist for the device in question.
