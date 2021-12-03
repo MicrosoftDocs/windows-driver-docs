@@ -1,32 +1,27 @@
 ---
 title: Device Installation Types
-description: Windows uses INF files to install a driver package on a computer or device. All Windows platforms support universal INF files, while only Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) supports legacy INF files.
+description: Windows uses INF files to install a driver package on a computer or device. All Windows platforms support Windows Drivers, while only Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) supports Windows Desktop Drivers.
 keywords:
 - Device setup WDK device installations , types
 - device installations WDK , types
 - installing devices WDK , types
 - server-side installations WDK device installations
 - client-side installations WDK device installations
-ms.date: 04/20/2017
+ms.date: 12/01/2021
 ms.localizationpriority: medium
 ---
 
 # Device Installation Types
 
+Windows uses INF files to install a [driver package](driver-packages.md) on a device. All Windows platforms support [Windows Drivers](../develop/getting-started-with-windows-drivers.md), while only Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) support Windows Desktop Drivers.
 
-Windows uses INF files to install a driver package on a computer or device. All Windows platforms support universal INF files, while only Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) supports legacy INF files.
+## INF files for Windows Drivers
 
-## INF files for universal and mobile driver packages
+If you are building a [driver package](driver-packages.md) for a non-Desktop variant of Windows, you must supply a driver package that conforms to the Windows Driver requirements. INF files in Windows Driver driver packages contain only a subset of INF sections and directives. For more information, see [Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
+## INF files for Windows Desktop Drivers
 
-If you are building a universal or mobile driver package, you must supply a universal INF file. Universal INFs contain only the subset of INF sections and directives that are required to install and configure a device. These directives can be performed on an offline system, without any runtime operations. For more information, see [Using a Universal INF File](using-a-universal-inf-file.md).
-
-## INF files for desktop driver packages
-
-
-If you are building a desktop-only driver package, your INF file can use legacy, non-universal INF syntax.
-
-Windows 10 for desktop editions continues to support legacy INF behavior, such as co-installers and class installers.
+If you are building a desktop-only driver package, your INF file can use legacy, non-universal INF syntax. Windows 10 for desktop editions continues to support legacy INF behavior.
 
  
 

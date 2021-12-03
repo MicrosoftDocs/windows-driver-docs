@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 A driver *project* is the Microsoft Visual Studio project which produces a driver binary (such as a .sys file), and potentially the driver's INF file.
 
-A driver *package* is the collection of files used to install a driver. The package includes an INF file, and files and binaries referred to by that INF. Visual Studio uses driver packages to automatically deploy and debug your driver to a remote target.
+A driver *package* is the collection of files used during a device installation. A [driver package](../install/driver-packages.md) includes an INF file, as well as files and binaries referenced by that INF. Visual Studio uses driver packages to automatically deploy and debug your driver to a remote target.
 
 A driver package is a separate project which collects output from one or more projects, such as driver projects. The driver package's project, when built, then produces the driver package which Visual Studio uses to deploy the driver.
 
