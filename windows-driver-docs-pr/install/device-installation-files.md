@@ -18,7 +18,7 @@ The software that is required to support a particular device depends on the kind
     An INF file contains information that the device installation components use to install the [driver package](driver-packages.md) on a device. This file is required. For more information, see [Creating an INF File](overview-of-inf-files.md).
 
 * <a href="" id="digital-signatures-for-the-driver-package--a-driver-catalog-file-"></a>Digital signatures for the [driver package](driver-packages.md) (a driver catalog file)  
-    A driver catalog file contains hashes of all of the files in the driver package and signed with a digital signature that would be trusted by the systems that should use this driver package. All driver packages should include a catalog file that is signed.
+    A driver catalog file contains hashes of all of the files in the driver package and is signed with a digital signature that would be trusted by the systems that should use this driver package. All driver packages should include a catalog file that is signed.
 
     A vendor obtains release digital signatures by submitting its driver package to the Windows Hardware Quality Lab (WHQL) for testing and signing. WHQL returns the package with a catalog file (.*cat* file). For more information, see [WHQL release signatures](whql-release-signature.md).
 
