@@ -28,11 +28,11 @@
         href: sample-device-installation-files.md
     - name: "Device Installation Types"
       href: device-installation-types.md
-    - name: "How Windows Selects Drivers"
+    - name: "How Windows Selects Driver Packages"
       items: 
-      - name: "Overview of the Driver Selection Process"
+      - name: "Overview of the Driver Package Selection Process"
         href: overview-of-the-driver-selection-process.md
-      - name: "How Windows selects a driver for a device"
+      - name: "How Windows selects a driver package for a device"
         href: how-windows-selects-a-driver-for-a-device.md
     - name: "How Windows Ranks Drivers"
       items: 
