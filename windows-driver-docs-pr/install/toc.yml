@@ -34,9 +34,9 @@
         href: overview-of-the-driver-selection-process.md
       - name: "How Windows selects a driver package for a device"
         href: how-windows-selects-a-driver-for-a-device.md
-    - name: "How Windows Ranks Drivers"
+    - name: "How Windows Ranks Driver Packages"
       items: 
-        - name: "How Windows Ranks Drivers"
+        - name: "How Windows Ranks Driver Packages"
           href: how-setup-ranks-drivers--windows-vista-and-later-.md
         - name: "Signature Categories and Driver Installation"
           href: signature-categories-and-driver-installation.md
@@ -48,11 +48,9 @@
           href: feature-score--windows-vista-and-later-.md
         - name: "Identifier Score"
           href: identifier-score--windows-vista-and-later-.md
-        - name: "Driver Rank Ranges"
-          href: driver-rank-ranges--windows-vista-and-later-.md
-        - name: "Driver Rank Example"
+        - name: "Driver Package Rank Example"
           href: driver-rank-example--windows-vista-and-later-.md
-        - name: "Driver Rank Information in the SetupAPI Log"
+        - name: "Driver Package Rank Information in the SetupAPI Log"
           href: driver-rank-information-in-the-setupapi-log.md
         - name: "AllSigningEqual Group Policy"
           href: allsigningequal-group-policy.md

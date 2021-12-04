@@ -26,6 +26,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/driver-rank-ranges--windows-vista-and-later-.md",
+            "redirect_URL": "/windows-hardware/drivers/install/identifier-score--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/obtaining-a-software-publisher-certificate--spc-.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false
