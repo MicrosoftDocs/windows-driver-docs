@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # How Windows Ranks Driver Packages
 
 > [!NOTE]
-> This page describes how Windows determines a [driver package](driver-packages.md) rank value for a given driver package that matches on a device.  To understand how driver package rank and other factors (including INF date, driver version, etc.) are used to determine which driver package Windows selects for a device, see [How Windows Selects Drivers](./overview-of-the-driver-selection-process.md#-how-windows-selects-drivers).
+> This page describes how Windows determines a [driver package](driver-packages.md) rank value for a given driver package that matches on a device.  To understand how driver package rank and other factors (including INF date, driver version, etc.) are used to determine which driver package Windows selects for a device, see [How Windows Selects Drivers](./overview-of-the-driver-selection-process.md).
 
 Windows assigns a rank to a [driver package](driver-packages.md) that matches a device. The rank indicates how well the driver package matches the device. A driver rank is represented by an integer that is equal to or greater than zero. The lower the rank, the better a match the driver package is for the device.
 
