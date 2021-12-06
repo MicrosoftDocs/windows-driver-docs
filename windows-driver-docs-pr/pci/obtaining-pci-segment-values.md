@@ -6,7 +6,7 @@ keywords:
 - PCI Multi Segment
 - DEVPKEY_Device_LocationInfo
 - IoGetDeviceProperty
-ms.date: 12/02/2021
+ms.date: 12/06/2021
 ms.localizationpriority: medium
 ---
 
@@ -28,5 +28,3 @@ Upon successful call, you'll need to parse the returned string.
 On single-segment system the string is in this format: `PCI bus 1, device 2, function 3`
 
 On multi-segment system it looks like this: `PCI segment 1 bus 2, device 3, function 4`
-
-**DEVPROP_TYPE_NULL** most likely means the property doesn’t exist for the device in question.

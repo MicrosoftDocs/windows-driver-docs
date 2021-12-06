@@ -31,3 +31,4 @@ Drivers can read from the extended PCI device configuration space (that is, more
 PCI Express and PCI-X mode 2 support an extended PCI device configuration space of greater than 256 bytes. Drivers can read and write to this configuration space, but only with the appropriate hardware and BIOS support. Within the ACPI BIOS, the root bus must have a PNP ID of either PNP0A08 or PNP0A03. For root buses with PNP ID of PNP0A03, the \_DSM method with function 4 should indicate that the current mode is PCI-X mode 2. All the bridges and devices should either be PCI express or operate in PCI-X mode 2.
 
 In addition, the system should support memory-mapped configuration space accesses. This is by defining an MCFG table in the system BIOS/firmware. Windows Vista and Windows Server 2008 and later operating systems automatically support memory-mapped configuration space accesses.
+
