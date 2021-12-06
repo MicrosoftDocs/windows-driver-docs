@@ -44,6 +44,7 @@ The following table summarizes the PCIe features that are supported by different
 - [Order of Resources in Start-Device IRP](./order-of-resources-in-start-device-irp.md)
 - [PCI Express FAQ for Graphics](./pci-express-faq-for-graphics.yml)
 - [PCI Sample](./pci-sample.md)
+- [Obtaining PCI Segment Values](./obtaining-pci-segment-values.md)
 
 ## See Also
 
