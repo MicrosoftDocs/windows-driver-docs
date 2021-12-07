@@ -23,7 +23,7 @@ When Windows is selecting a driver package to install, the SetupAPI log typicall
      utl:           Signer Score   - Inbox (0D000003)
 ```
 
-or, in some scenarios, the logging may appear more like this excerpt where the Rank entry indicates that the driver has a rank of "0x00ff0005" and the Signer Score entry indicates that the driver is an inbox driver.
+Or, in some scenarios, the logging may appear more like this excerpt where the Rank entry indicates that the driver has a rank of "0x00ff0005" and the Signer Score entry indicates that the driver is an inbox driver.
 ```cpp
      dvi:           Created Driver Node:
      dvi:                HardwareID   - GenCdRom
