@@ -34,7 +34,7 @@ Administrative users have more flexibility:
 
 -   If a driver package is signed by a Windows signing authority or a trusted publisher, Windows stages and installs the driver package without prompting the user.
 
--   If the driver package is signed by an untrusted publisher, Windows does not install the driver pacakge. Windows does not prompt the user in this case, but logs an error to *Setupapi.dev.log*.
+-   If the driver package is signed by an untrusted publisher, Windows does not install the driver package. Windows does not prompt the user in this case, but logs an error to *Setupapi.dev.log*.
 
 -   If the driver package was signed by a publisher of unknown trust, Windows prompts the user with the following Windows Security dialog box.
 
