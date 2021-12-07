@@ -6,23 +6,23 @@ keywords:
 - device identification strings WDK , identifier score driver ranking
 - identifier-match-type score WDK device installations
 - identifier-list-position score WDK device installations
-ms.date: 04/20/2017
+ms.date: 12/03/2021
 ms.localizationpriority: medium
 ---
 
 # Identifier Score
 
 
-A driver rank is formatted as 0x*SSGGTHHH*, where the value of 0x*SS*000000 is the [signature score](signature-score--windows-vista-and-later-.md), the value of 0x00*GG*0000 is the [feature score](feature-score--windows-vista-and-later-.md), and the value of 0x0000*THHH* is the identifier score.
+A driver package rank is formatted as 0x*SSGGTHHH*, where the value of 0x*SS*000000 is the [signature score](signature-score--windows-vista-and-later-.md), the value of 0x00*GG*0000 is the [feature score](feature-score--windows-vista-and-later-.md), and the value of 0x0000*THHH* is the identifier score.
 
-The identifier score ranks a driver based on the type of match between a Plug and Play (PnP) [device identification string](device-identification-strings.md) that is reported by the bus driver of a device and a corresponding device identification string that is specified in an entry of an [**INF *Models* section**](inf-models-section.md) of a driver INF file.
+The identifier score ranks a driver package based on the type of match between a Plug and Play (PnP) [device identification string](device-identification-strings.md) that is reported by the bus driver of a device and a corresponding device identification string that is specified in an entry of an [**INF *Models* section**](inf-models-section.md) of a driver package INF file.
 
-The identifier score is a sum of an identifier-match-type score and an identifier-list-position score. The identifier-match-type score ranks a driver according to whether a device [hardware ID](hardware-ids.md) or a device [compatible ID](compatible-ids.md) matches a hardware ID or a compatible ID in an entry of an INF *Models* section. A match between a device hardware ID and a hardware ID in an entry of an INF Models section is called a hardware ID match. A match where at least one of the matching identifiers is a compatible ID is called a compatible ID match.
+The identifier score is the sum of an identifier-match-type score and an identifier-list-position score. The identifier-match-type score ranks a driver package according to whether a device [hardware ID](hardware-ids.md) or a device [compatible ID](compatible-ids.md) matches a hardware ID or a compatible ID in an entry of an INF *Models* section. A match between a device hardware ID and a hardware ID in an entry of an INF Models section is called a hardware ID match. A match where at least one of the matching identifiers is a compatible ID is called a compatible ID match.
 
-For a given identifier-match type, the identifier-list-position score ranks a driver according to the position of the matching identifier in the hardware ID list or the compatible ID list for a device and the position of the matching identifier in an entry of an INF *Models* section. Specifically, each device has an ordered list of hardware IDs and an ordered list of compatible IDs that are reported by the bus driver for the device. The identifiers are ordered in the list from the most specific to the most generic functionality. In addition, each INF *Models* section entry has one hardware ID and an optional list of compatible IDs that are listed in order of the most specific to the most generic functionality, as follows:
+For a given identifier-match type, the identifier-list-position score ranks a driver package according to the position of the matching identifier in the hardware ID list or the compatible ID list for a device and the position of the matching identifier in an entry of an INF *Models* section. Specifically, each device has an ordered list of hardware IDs and an ordered list of compatible IDs that are reported by the bus driver for the device. The identifiers are ordered in the list from the most specific to the most generic functionality. In addition, each INF *Models* section entry has one hardware ID and an optional list of compatible IDs that are listed in order of the most specific to the most generic functionality, as follows:
 
 ```cpp
-device-description=install-section-name,hw-id,[compatible-id,...] ...
+device-description=install-section-name,[hw-id][,compatible-id,...] ...
 ```
 
 The first identifier in a device identifier list has an identifier-list-position score of 0x0000, the second identifier has an identifier-list-position score of 0x0001, and so on. Because an INF *Models* section entry only has one hardware ID, the identifier-list-position score of this hardware ID is always 0x0000.
@@ -61,12 +61,3 @@ The following lists the identifier scores for the four types of identifier-match
     For this type of match, the value 0x00003000 is the best identifier score and the value 0x00003FFF is the worst identifier score.
 
 For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
-
- 
-
- 
-
-
-
-
-
