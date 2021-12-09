@@ -3,7 +3,7 @@ title: BypassIO for filter drivers
 description: About BypassIO
 keywords:
 - filter drivers WDK file system , BypassIO
-ms.date: 08/11/2021
+ms.date: 12/08/2021
 prerelease: false
 ms.localizationpriority: medium
 ---
@@ -40,34 +40,36 @@ Starting in Windows 11, BypassIO is supported as follows:
 
 ## How BypassIO works
 
-When [**NtReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile) is called on a BypassIO-enabled **FileHandle**, the operation does not flow through the traditional I/O stack. Instead, no IRP is issued, and the operation flows directly from the I/O manager to the (NTFS) file system, then to the disk (classpnp) driver, and then to the StorNVMe driver.
+When [**NtReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile) is called on a BypassIO-enabled **FileHandle**, the operation does not flow through the traditional I/O stack, which traverses the entire file system stack, volume stack, and storage stack. Instead, no IRP is issued, and the operation flows directly from the I/O manager to the (NTFS) file system, then to the disk (classpnp) driver, and then to the StorNVMe driver. With a BypassIO-enabled **FileHandle**:
 
 * All file system filters are skipped.
 * All volume stack filters are skipped.
 * All storage stack filters and drivers above the disk driver, and between the disk and StorNVMe drivers, are skipped.
 
-:::image type="content" source="images/traditional-io-path.jpg" alt-text="Shows the traditional I O path, where a read request traverses the entire file system stack, volume stack, and storage stack.":::
+:::image type="content" source="images/traditional-io-path.jpg" alt-text="Image that shows the traditional I O path for a read request.":::
 
-:::image type="content" source="images/bypass-io-path.jpg" alt-text="Shows the Bypass I O path. When Bypass I O is enabled, the I O manager sends a read request directly to the file system, which sends the request directly to the disk driver, skipping all filters in the file system stack, the entire volume stack, and any drivers in the storage stack above the disk driver, and between the disk and StorNVMe drivers.":::
+:::image type="content" source="images/bypass-io-path.jpg" alt-text="Image that shows the Bypass I O path for a read request.":::
 
 ## DDIs changes and additions for BypassIO
 
 The following DDIs relevant to filter drivers were added to provide BypassIO support:
 
-* [**FSCTL_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-fsctl_manage_bypass_io)
-* [**FS_BPIO_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-fs_bpio_input) structure
-* [**FS_BPIO_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-fs_bpio_output) structure
-* [**FS_BPIO_OPERATIONS**](/windows-hardware/drivers/ddi/ntifs/ne-ntifs-fs_bpio_operations) enumerator
+* [**FltVetoBypassIo**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltvetobypassio) function
 * [**FS_BPIO_INFLAGS**](/windows-hardware/drivers/ddi/ntifs/ne-ntifs-fs_bpio_inflags) enumerator
+* [**FS_BPIO_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-fs_bpio_info) structure
+* [**FS_BPIO_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-fs_bpio_input) structure
+* [**FS_BPIO_OPERATIONS**](/windows-hardware/drivers/ddi/ntifs/ne-ntifs-fs_bpio_operations) enumerator
 * [**FS_BPIO_OUTFLAGS**](/windows-hardware/drivers/ddi/ntifs/ne-ntifs-fs_bpio_outflags) enumerator
+* [**FS_BPIO_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-fs_bpio_output) structure
 * [**FS_BPIO_RESULTS**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-fs_bpio_results) structure
+* [**FSCTL_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-fsctl_manage_bypass_io) control code
 * [**FsRtlGetBypassIoOpenCount**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlgetbypassioopencount) function
 
 Additionally, the following DDIs were changed to support BypassIO:
 
 * A **BypassIoOpenCount** field was added to the [**FSRTL_ADVANCED_FCB_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure. The file system uses this field to maintain a count of unique FileObjects on a stream that currently have BypassIO enabled. The addition of this field increases the structure size. The structure version to use starting in Windows 11 is **FSRTL_FCB_HEADER_V4**.
 
-## Impacts of other operations on BypassIO-enabled handles
+## Impact of other operations on BypassIO-enabled handles
 
 Enabling BypassIO on a handle doesn't impact other handles. However, other operations on a BypassIO-enabled handle do impact the use of BypassIO, such as the following:
 
@@ -77,22 +79,26 @@ Enabling BypassIO on a handle doesn't impact other handles. However, other opera
 
 * Defragging a BypassIO-enabled file causes all BypassIO operations to use the traditional I/O path. Once the defragging is completed, the system will switch back to the BypassIO path on that handle.
 
-## What minifilters need to do to support BypassIO
+## Implementing BypassIO support in minifilters
+
+### Update your INF or MANIFEST files
 
 Starting in Windows 11, filter developers should add **SUPPORTED_FS_FEATURES_BYPASS_IO** to **SupportedFeatures** in your driver's .INF or MANIFEST files. (You can type ```fltmc instances``` in an elevated command prompt to see "SprtFtrs" values for all active filters.)
 
 > [!NOTE]
 > A filter that can never support BypassIO should still add **SUPPORTED_FS_FEATURES_BYPASS_IO** to its **SupportedFeatures** state, and then veto appropriately inside the filter, specifying the reason.
+>
+> Minifilters are encouraged to minimize vetoing BypassIO as much as possible.
+
+If a minifilter attaches to a volume on which BypassIO is enabled, but that minifilter has not updated its **SupportedFeatures** setting to include **SUPPORTED_FS_FEATURES_BYPASS_IO**, all BypassIO operations on that volume are immediately blocked, falling back to the traditional I/O path, resulting in degraded game performance.
 
 Minifilters that do not filter IRP_MJ_READ or IRP_MJ_WRITE are automatically opted in to BypassIO support, as if they had added **SUPPORTED_FS_FEATURES_BYPASS_IO** in **SupportedFeatures**.
 
-The **FS_BPIO_OP_ENABLE** and **FS_BPIO_OP_QUERY** operations will fail on that stack if there is an attached minifilter that has not opted in.
+The **FS_BPIO_OP_ENABLE** and **FS_BPIO_OP_QUERY** operations will fail on a stack if there is an attached minifilter that has not opted in.
 
-Minifilters are encouraged to minimize vetoing BypassIO as much as possible.
+### Implement support for BypassIO requests
 
-### Impacts when a minifilter does not indicate BypassIO support
-
-If a minifilter attaches to a volume on which BypassIO is enabled, but that minifilter has not updated its **SupportedFeatures** setting to include **SUPPORTED_FS_FEATURES_BYPASS_IO**, all BypassIO operations on that volume are immediately blocked, falling back to the traditional I/O path, resulting in degraded game performance.
+Minifilters should add support for BypassIO requests, which are sent through the [**FSCTL_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-fsctl_manage_bypass_io) control code. See [Supporting BypassIO operations](bypassio-operations.md) for details.
 
 ## Determining whether BypassIO is working
 
