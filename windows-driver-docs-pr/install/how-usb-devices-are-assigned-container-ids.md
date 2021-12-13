@@ -1,7 +1,7 @@
 ---
 title: How USB Devices are Assigned Container IDs
 description: How USB Devices are Assigned Container IDs
-ms.date: 05/09/2018
+ms.date: 12/13/2021
 ms.localizationpriority: medium
 ---
 
@@ -54,7 +54,7 @@ This heuristic follows these steps for each devnode that the Plug and Play (PnP)
 
     -   If the hub indicates that devices attached to the given port are not removable from the hub, the PnP manager determines that devices attached to this port are sub-functions of a multifunction device. In this case, the devnode inherits the container ID of the parent devnode.
 
-For more information about the ACPI 3.0 interface, see [Advanced Configuration and Power Interface Specification Revision 3.0b](https://go.microsoft.com/fwlink/p/?linkid=145427).
+For more information about the ACPI 3.0 interface, see [Advanced Configuration and Power Interface Specification Revision 3.0b](https://uefi.org/acpi/specs).
 
  
 
