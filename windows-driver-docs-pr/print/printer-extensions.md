@@ -1,7 +1,7 @@
 ---
 title: Printer Extensions
 description: Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
-ms.date: 01/25/2021
+ms.date: 12/13/2021
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +43,9 @@ Printer extensions are registered with the print system by specifying a set of r
 
 There are specified GUIDs that support each of the different entry points for printer extensions. You do not have to use these GUIDs in the v4 manifest file, but you must know the GUID values to use the registry format for v4 driver installation. The following table shows the GUID values for the two entry points.
 
-| Entry Point           | GUID                                   |
-|-----------------------|----------------------------------------|
-| Print Preferences     | {EC8F261F-267C-469F-B5D6-3933023C29CC} |
+| Entry Point | GUID |
+|--|--|
+| Print Preferences | {EC8F261F-267C-469F-B5D6-3933023C29CC} |
 | Printer Notifications | {23BB1328-63DE-4293-915B-A6A23D929ACB} |
 
 Printer extensions that are installed outside of the printer driver need to be registered using the registry. This ensures that printer extensions can be installed regardless of the status of the spooler, or the v4 configuration module on the client machine.
@@ -201,7 +201,7 @@ Print preferences is driven by the PrintSchemaEventArgs.Ticket object. This obje
 
 Inside each [**IPrintSchemaTicket**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) or [**IPrintSchemaCapabilities**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities) object there are features ([**IPrintSchemaFeature**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature)) and options ([**IPrintSchemaOption**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption)). While the interfaces used for features and options are the same regardless of the origin, the behavior varies slightly as a result of the underlying XML. For example, PrintCapabilities documents specify many options per feature, while PrintTicket documents specify only the selected (or default) option. Similarly, PrintCapabilities documents specify localized display strings, whereas PrintTicket documents do not.
 
-The [Printer Extension Sample](/samples/microsoft/windows-driver-samples/printer-extension-sample/) uses data binding to create ComboBox controls for printer preferences. Microsoft recommends using data binding as it makes the code much easier to maintain by reducing scattering. For more information on data binding in WPF, see [Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview).
+The [Printer Extension Sample](/samples/microsoft/windows-driver-samples/printer-extension-sample/) uses data binding to create ComboBox controls for printer preferences. Microsoft recommends using data binding as it makes the code much easier to maintain by reducing scattering. For more information on data binding in WPF, see [Data Binding Overview](/dotnet/desktop/wpf/data/?view=netdesktop-6.0&preserve-view=true).
 
 In order to maximize performance, Microsoft recommends that calls to GetPrintCapabilities should only be done when it is necessary to update the PrintCapabilities document.
 
@@ -316,7 +316,7 @@ The Printer Extension Sample demonstrates how to create a UI that is generally l
 
 [Bidi Request and Response Schemas](/previous-versions/dd183368(v=vs.85))
 
-[Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview)
+[Data Binding Overview](/dotnet/desktop/wpf/data/?view=netdesktop-6.0&preserve-view=true)
 
 [Improving Launch Performance for Your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/)
 
