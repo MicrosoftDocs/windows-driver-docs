@@ -50,9 +50,9 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 </tr>
 <tr class="odd">
 <td align="left"><p>Buses: Native SD bus driver, native SD storage class driver, and storage miniport driver</p></td>
-<td align="left"><p>sdbus.sys, sffdisk.sys, sffp_sd.sys</p></td>
-<td align="left"><p>Windows Vista and later</p></td>
-<td align="left"><p>Microsoft provides support for SD card readers as follows: The operating system provides support for SD host controllers that connect directly to the PCI bus. When the system enumerates an SD host controller, it loads a native SD bus driver (sdbus.sys). If a user inserts an SD memory card, Windows loads a native SD storage class driver (sffdisk.sys) and storage miniport driver (sffp_sd.sys) on top of the bus driver. If a user inserts an SD card with a different kind of function, such as GPS or wireless LAN, Windows loads a vendor-supplied driver for the device.</p></td>
+<td align="left"><p>sdbus.sys<p>sffdisk.sys, sffp_sd.sys (Windows Vista and 7)<p>sdstor.sys (Windows 8 and later)</p></td>
+<td align="left"><p>Windows Vista and 7</p>Windows 8 and later </td>
+<td align="left"><p>Microsoft provides support for SD card readers as follows: The operating system provides support for SD host controllers that connect directly to the PCI bus. When the system enumerates an SD host controller, it loads a native SD bus driver (sdbus.sys). If a user inserts an SD memory card, Windows loads a native SD storage class driver (sffdisk.sys) and storage miniport driver (sffp_sd.sys) on top of the bus driver. These SD storage drivers are unified under a single driver named sdstor.sys for Windows 8 and later operating system. If a user inserts an SD card with a different kind of function, such as GPS or wireless LAN, Windows loads a vendor-supplied driver for the device.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HID: HID I2C driver</p></td>
