@@ -20,12 +20,6 @@
         href: pnp-manager.md
       - name: "Driver Store"
         href: driver-store.md
-    - name: "Installation Files"
-      items: 
-      - name: "Device Installation Files"
-        href: device-installation-files.md
-      - name: "Sample Device Installation Files"
-        href: sample-device-installation-files.md
     - name: "Device Installation Types"
       href: device-installation-types.md
     - name: "How Windows Selects Driver Packages"
@@ -64,8 +58,8 @@
       href: components-of-a-driver-package.md
     - name: "Installation Component Overview"
       href: installation-component-overview.md
-    - name: "Supplying an INF File"
-      href: supplying-an-inf-file.md
+    - name: "Sample Device Installation Files"
+      href: sample-device-installation-files.md
   - name: "INF Files"
     items: 
     - name: "Overview of INF Files"
