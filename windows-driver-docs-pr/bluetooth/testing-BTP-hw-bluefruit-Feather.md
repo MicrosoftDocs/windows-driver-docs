@@ -33,11 +33,13 @@ The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafrui
 
 ## Getting Started
 
-For first time setup, the bootloader needs to be updated. This step is not required for future firmware updates. Plug the Bluefruit Feather device into a PC via the a micro-USB cable.
+For first time setup, the bootloader will need to be updated. This step is not required for most future firmware updates. The current recommended version of the Firmware and bootloader are -.3.2_s140_6.1.1 or higher. Previous versions of the firmware may cause tests to fail. 
+
+To connect the Bluefruit Feather device to a PC via use a micro-USB cable.
 
 1. Follow the [Adafruit](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/update-bootloader) instructions to update the bootloader.
 
-    The correct package to download should have a name similar to "feather_nrf52840_express_bootloader-*\<version\>*.zip" where the version number should be equal or greater to 0.3.2_s140_6.1.1. If you are having issues, try using version 0.3.2_s140_6.1.1 which is known and verified to work with the BTP tests.
+    The correct package to download should have a name similar to "feather_nrf52840_express_bootloader-*\<version\>*.zip" where the version number should be equal or greater to -.3.2_s140_6.1.1 or higher. If you are having issues, try using version 0.3.2_s140_6.1.1 which is known and verified to work with the BTP tests.
 
 1. Acquire and setup the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
@@ -73,3 +75,6 @@ For first time setup, the bootloader needs to be updated. This step is not requi
 
 > [!Note]
 > The Bluefruit Feather is not currently supported for use with the Traduci.
+
+>[!Troubleshooting]
+> If the tests are failing and the firmware of the Bluefruit Feather has not been updated recently, check that the firmware is a supported version by following step 1. If ther version is older and download the bootloader and install the latest firmware.

@@ -14,12 +14,13 @@ The BTP software package contains several tools to be used for testing Bluetooth
 The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included. Click the following button to download the latest version.
 
 > [!div class="nextstepaction"]
-> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.8.0.msi)
+> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.10.1.msi)
 
 ## Version Updates
 
 | Version | Changes |
 |---------|---------|
+|1.10.1    | - Added Power state tests.</br>
 |1.8.0     | - Added Wi-Fi with Bluetooth audio and HID co-existence tests.</br>- Added mute and unmute audio tests.</br>- Added option to record audio played during tests to a local file.</br>- Fixed issue that could cause the Bluefruit Feather to incorrectly report its Bluetooth address.</br>- Fixed issue with running current audio tests on older Windows builds.</br>- Several other fixes and improvements to test reliability. |
 |1.7.2     | - Added Wi-Fi and Bluetooth audio co-existence tests.</br>- Added support for Bluefruit Feather (nRF52840) with full parity to existing Bluefruit support.</br>- Added tests for all types of pairing key negotiations using the Bluefruit Feather.</br>- Fixed issue where failures would occur in a tight loop if a device was unplugged mid-test.</br>- Several fixes and improvements to test reliability. |
 |1.6.2     | - No longer require a WDK installation to run BTP tests.</br>- Added quick keystroke HID tests to more easily catch key repeats and other performance issues.</br>- Added quick keystroke and mouse movement after idle HID tests that are useful for loop execution.</br>- Added reconnection latency measurement to HID tests.</br>- Added reconnection after idle disconnection HID tests.</br>- Several fixes and improvements to test reliability. |
