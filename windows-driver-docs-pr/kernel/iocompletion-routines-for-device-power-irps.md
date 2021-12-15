@@ -3,7 +3,6 @@ title: IoCompletion Routines for Device Power IRPs
 description: IoCompletion Routines for Device Power IRPs
 keywords: ["IoCompletion routines", "power IRPs WDK kernel , device changes", "state transitions WDK power management", "device state transitions WDK power management", "working state returns WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # IoCompletion Routines for Device Power IRPs

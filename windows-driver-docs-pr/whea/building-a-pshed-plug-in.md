@@ -2,7 +2,6 @@
 title: Building a PSHED Plug-In
 description: Building a PSHED Plug-In
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Building a PSHED Plug-In

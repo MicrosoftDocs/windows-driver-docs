@@ -3,7 +3,6 @@ title: Defining and Using an Event Object
 description: Defining and Using an Event Object
 keywords: ["event objects WDK kernel", "waiting on event objects", "synchronization events WDK kernel", "notification events WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Defining and Using an Event Object

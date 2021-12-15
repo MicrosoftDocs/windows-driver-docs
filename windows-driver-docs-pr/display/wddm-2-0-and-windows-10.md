@@ -2,7 +2,6 @@
 title: WDDM 2.0 and Windows 10
 description: This section provides details about new features and enhancements in Windows Display Driver Model (WDDM) version 2.0, which is available starting with Windows 10.
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # WDDM 2.0 and Windows 10

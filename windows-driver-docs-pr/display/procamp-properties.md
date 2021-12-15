@@ -4,7 +4,6 @@ description: ProcAmp Properties
 keywords:
 - ProcAmp WDK DirectX VA , properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ProcAmp Properties

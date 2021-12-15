@@ -9,7 +9,6 @@ api_name:
 - EVENT_TRACING_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11D: EVENT\_TRACING\_FATAL\_ERROR

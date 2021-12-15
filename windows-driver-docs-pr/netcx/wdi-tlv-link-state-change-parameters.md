@@ -4,7 +4,6 @@ description: WDI_TLV_LINK_STATE_CHANGE_PARAMETERS is a WiFiCx TLV that contains 
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_LINK_STATE_CHANGE_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS (dot11wificxtypes.hpp)

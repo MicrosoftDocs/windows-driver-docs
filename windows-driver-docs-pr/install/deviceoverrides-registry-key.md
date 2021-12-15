@@ -2,7 +2,6 @@
 title: DeviceOverrides Registry Key
 description: DeviceOverrides Registry Key
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DeviceOverrides Registry Key

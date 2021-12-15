@@ -2,7 +2,6 @@
 title: Account management
 description: Account management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Account management

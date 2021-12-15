@@ -8,7 +8,6 @@ keywords:
 - cycle time synchronization WDK IEEE 1394 bus
 - buffers WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Isochronous Synchronization Options for IEEE 1394 Devices

@@ -2,7 +2,6 @@
 title: Developing a WIA Camera Driver
 description: Developing a WIA Camera Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Developing a WIA Camera Driver

@@ -3,7 +3,6 @@ title: File Clear Workspace
 description: File Clear Workspace
 keywords: ["File Clear Workspace", "workspaces, File Clear Workspace"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Clear Workspace

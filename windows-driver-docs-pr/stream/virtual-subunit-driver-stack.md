@@ -10,7 +10,6 @@ keywords:
 - Avc.sys function driver WDK , driver stacks
 - compatible IDs WDK AV/C
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Subunit Driver Stack

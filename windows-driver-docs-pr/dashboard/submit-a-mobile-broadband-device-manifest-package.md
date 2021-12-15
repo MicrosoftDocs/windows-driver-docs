@@ -3,7 +3,6 @@ title: Submit a mobile broadband device manifest package
 description: Submit a mobile broadband device manifest package
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Submit a mobile broadband device manifest package

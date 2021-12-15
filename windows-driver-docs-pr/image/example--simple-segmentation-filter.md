@@ -2,7 +2,6 @@
 title: Example Simple Segmentation Filter
 description: Example Simple Segmentation Filter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example: Simple Segmentation Filter

@@ -3,7 +3,6 @@ title: Edit Open/Close Log File
 description: Edit Open/Close Log File
 keywords: ["Edit Open/Close Log File", "log file, Edit Open/Close Log File"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Open/Close Log File

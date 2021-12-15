@@ -9,7 +9,6 @@ keywords:
 - color filling destination surfaces WDK DirectX VA
 - color filling substream surfaces WDK DirectX VA
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

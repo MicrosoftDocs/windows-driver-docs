@@ -2,7 +2,6 @@
 title: SR-IOV Virtual Functions (VFs)
 description: SR-IOV Virtual Functions (VFs)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SR-IOV Virtual Functions (VFs)

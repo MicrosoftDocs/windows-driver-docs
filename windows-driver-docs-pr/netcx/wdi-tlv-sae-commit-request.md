@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_COMMIT_REQUEST is a WiFiCx TLV that contains parameters
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_SAE_COMMIT_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_SAE_COMMIT_REQUEST (dot11wificxtypes.hpp)

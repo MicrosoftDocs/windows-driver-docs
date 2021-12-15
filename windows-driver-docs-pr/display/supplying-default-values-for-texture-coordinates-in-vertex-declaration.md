@@ -5,7 +5,6 @@ keywords:
 - vertex declarations WDK DirectX 9.0
 - texture coordinates WDK DirectX 9.0
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

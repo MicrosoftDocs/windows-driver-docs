@@ -3,7 +3,6 @@ title: Help Index
 description: Help Index
 keywords: ["Help Index", "help file, Help Index"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Help | Index

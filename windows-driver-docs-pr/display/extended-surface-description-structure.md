@@ -6,7 +6,6 @@ keywords:
 - DirectDraw extended surface capabilities WDK Windows 2000 display , description structure
 - extended surface capabilities WDK DirectDraw , description structure
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Surface Description Structure

@@ -9,7 +9,6 @@ keywords:
 - ProcAmp WDK DirectX VA , about ProcAmp control processing
 - VMR WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ProcAmp Control Processing

@@ -3,7 +3,6 @@ title: SymProxy
 description: SymProxy
 keywords: ["symbols, SymProxy (symproxy.dll)", "symbol stores, HTTP", "symbol stores, SymProxy (symproxy.dll)", "SymProxy"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # SymProxy

@@ -7,7 +7,6 @@ keywords:
 - D3dCreateSurfaceEx
 - surfaces WDK DirectDraw , driver-side structures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Driver-Side Surface Structures

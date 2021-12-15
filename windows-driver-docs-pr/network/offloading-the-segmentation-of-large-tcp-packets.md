@@ -6,7 +6,6 @@ keywords:
 - large TCP packet segmentation WDK networking
 - segmentation of large TCP packets WDK networking
 ms.date: 10/24/2019
-ms.localizationpriority: medium
 ---
 
 # Offloading the Segmentation of Large TCP Packets

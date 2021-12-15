@@ -2,7 +2,6 @@
 title: WIA Item Flags
 description: WIA Item Flags
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Item Flags

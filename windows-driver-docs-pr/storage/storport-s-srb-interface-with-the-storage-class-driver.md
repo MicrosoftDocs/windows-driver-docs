@@ -2,7 +2,6 @@
 title: Storport's SRB Interface with the Storage Class Driver
 description: Storport's SRB Interface with the Storage Class Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storport's SRB Interface with the Storage Class Driver

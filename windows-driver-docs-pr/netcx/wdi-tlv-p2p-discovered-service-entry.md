@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY is a WiFix TLV that contains a
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY (dot11wificxtypes.hpp)

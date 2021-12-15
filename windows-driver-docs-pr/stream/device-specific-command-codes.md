@@ -2,7 +2,6 @@
 title: Device-Specific Command Codes
 description: Lists device-specific SRB command codes.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # Device-Specific Command Codes

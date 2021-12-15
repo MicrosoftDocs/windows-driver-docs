@@ -4,7 +4,6 @@ description: OID_WWAN_PIN_LIST returns a list of all the different types of Pers
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PIN_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PIN\_LIST

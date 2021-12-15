@@ -2,7 +2,6 @@
 title: Creating a primitive driver
 description: Use a primitive driver to handle and manage software that uses INF-based installation but are not necessarily tied to a particular hardware device.
 ms.date: 04/16/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

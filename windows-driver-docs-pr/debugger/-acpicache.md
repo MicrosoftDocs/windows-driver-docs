@@ -9,7 +9,6 @@ api_name:
 - acpicache
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !acpicache

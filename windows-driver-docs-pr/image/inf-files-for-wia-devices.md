@@ -2,7 +2,6 @@
 title: INF Files for WIA Devices
 description: INF Files for WIA Devices
 ms.date: 07/18/2018
-ms.localizationpriority: medium
 ---
 
 # INF Files for WIA Devices

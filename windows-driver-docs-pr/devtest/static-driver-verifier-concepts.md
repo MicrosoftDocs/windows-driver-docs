@@ -2,7 +2,6 @@
 title: Static Driver Verifier Concepts
 description: Static Driver Verifier Concepts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier Concepts

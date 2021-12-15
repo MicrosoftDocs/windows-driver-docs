@@ -8,7 +8,6 @@ keywords:
 - uninterrupted operations WDK parallel devices
 - freeing parallel ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Locking and Unlocking a Parallel Port for Use by a Parallel Device

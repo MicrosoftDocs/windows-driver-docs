@@ -7,7 +7,6 @@ keywords:
 - drawing WDK GDI , user objects
 - user objects WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI User Objects

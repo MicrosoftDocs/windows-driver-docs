@@ -1,7 +1,6 @@
 ---
 title: About storage management and WMI classes
 description: Storage management and WMI classes
-ms.localizationpriority: medium
 ms.date: 12/15/2019
 ---
 

@@ -9,7 +9,6 @@ api_name:
 - .while
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .while

@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_INIT_TIME_MS OID returns the time in millis
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_INIT_TIME_MS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_INIT\_TIME\_MS

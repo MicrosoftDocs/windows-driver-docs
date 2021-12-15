@@ -9,7 +9,6 @@ keywords:
 - .uff files
 - UFF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customized Font Installers for Unidrv

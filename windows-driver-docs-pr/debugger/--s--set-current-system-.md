@@ -9,7 +9,6 @@ api_name:
 - s (Set Current System)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ||s (Set Current System)

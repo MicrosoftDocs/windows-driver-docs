@@ -1,7 +1,6 @@
 ---
 title: MSFC\_HBAPortStatistics WMI Class
 description: MSFC\_HBAPortStatistics WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

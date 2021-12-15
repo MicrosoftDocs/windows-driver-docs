@@ -9,7 +9,6 @@ api_name:
 - qlocks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !qlocks

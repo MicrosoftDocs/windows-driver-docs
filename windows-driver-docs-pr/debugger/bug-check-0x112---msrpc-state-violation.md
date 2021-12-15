@@ -9,7 +9,6 @@ api_name:
 - MSRPC_STATE_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x112: MSRPC\_STATE\_VIOLATION

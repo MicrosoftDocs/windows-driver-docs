@@ -9,7 +9,6 @@ api_name:
 - .allow_image_mapping (Allow Image Mapping)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .allow\_image\_mapping (Allow Image Mapping)

@@ -9,7 +9,6 @@ api_name:
 - CM_Get_Hardware_Profile_InfoW
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

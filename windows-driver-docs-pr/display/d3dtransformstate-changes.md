@@ -5,7 +5,6 @@ keywords:
 - multimatrix vertex blending WDK Direct3D , D3DTRANSFORMSTATE
 - D3DTRANSFORMSTATE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # D3DTRANSFORMSTATE Changes

@@ -5,7 +5,6 @@ keywords:
 - calling deinterlace DDI WDK DirectX VA
 - user-mode component calls WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling the Deinterlace DDI from a User-Mode Component

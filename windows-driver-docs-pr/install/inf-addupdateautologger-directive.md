@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 06/16/2021
-ms.localizationpriority: medium
 ---
 
 # INF AddAutoLogger and UpdateAutoLogger Directives 

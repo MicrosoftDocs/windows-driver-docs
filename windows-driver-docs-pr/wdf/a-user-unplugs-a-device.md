@@ -11,7 +11,6 @@ keywords:
 - removing devices WDK KMDF
 - ejecting devices WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # A User Unplugs a Device

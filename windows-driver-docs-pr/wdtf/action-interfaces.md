@@ -8,7 +8,6 @@ keywords:
 - COM interfaces WDK WDTF
 - interfaces WDK WDTF
 ms.date: 06/07/2021
-ms.localizationpriority: medium
 ---
 
 # Action interfaces

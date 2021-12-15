@@ -1,7 +1,6 @@
 ---
 title: Bug Management
 description: Bug Management
-ms.localizationpriority: medium
 ms.topic: article
 ms.date: 10/17/2018
 ---

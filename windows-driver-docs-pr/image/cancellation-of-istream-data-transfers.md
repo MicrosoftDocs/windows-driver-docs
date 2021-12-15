@@ -2,7 +2,6 @@
 title: Cancellation of IStream Data Transfers
 description: Cancellation of IStream Data Transfers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cancellation of IStream Data Transfers

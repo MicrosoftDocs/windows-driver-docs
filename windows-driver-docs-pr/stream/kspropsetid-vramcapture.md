@@ -2,7 +2,6 @@
 title: KSPROPSETID\_VramCapture
 description: KSPROPSETID\_VramCapture
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_VramCapture

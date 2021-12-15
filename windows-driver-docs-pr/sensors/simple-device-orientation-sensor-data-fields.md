@@ -2,7 +2,6 @@
 title: Simple device orientation sensor data fields
 description: This topic provides information about the data fields that are specific to the simple device orientation sensor.
 ms.date: 01/04/2018
-ms.localizationpriority: medium
 ---
 
 # Simple device orientation sensor data fields

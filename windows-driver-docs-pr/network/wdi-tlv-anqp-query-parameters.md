@@ -4,7 +4,6 @@ description: WDI_TLV_ANQP_QUERY_PARAMETERS is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ANQP_QUERY_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ANQP\_QUERY\_PARAMETERS

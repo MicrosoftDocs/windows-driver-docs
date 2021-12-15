@@ -3,7 +3,6 @@ title: Introduction to Plug and Play
 description: Introduction to Plug and Play
 keywords: ["PnP WDK kernel , about Plug and Play", "Plug and Play WDK kernel , about Plug and Play"]
 ms.date: 03/10/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
 

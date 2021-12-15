@@ -12,7 +12,6 @@ keywords:
 - Power Management Capabilities WDK KMDF
 - PMC WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting System Wake-Up

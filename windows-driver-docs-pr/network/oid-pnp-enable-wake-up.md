@@ -4,7 +4,6 @@ description: OID_PNP_ENABLE_WAKE_UP
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_ENABLE_WAKE_UP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_ENABLE\_WAKE\_UP

@@ -8,7 +8,6 @@ keywords:
 - errors WDK WHEA , Windows and firmware
 - firmware WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Relationship between Microsoft Windows and the System Firmware

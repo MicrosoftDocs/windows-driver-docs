@@ -3,7 +3,6 @@ title: Debugging a Failed Driver Unload
 description: Debugging a Failed Driver Unload
 keywords: ["failed driver unload", "driver unload debugging", "unload failures"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging a Failed Driver Unload

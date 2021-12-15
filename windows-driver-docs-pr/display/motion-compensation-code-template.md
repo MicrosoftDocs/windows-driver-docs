@@ -10,7 +10,6 @@ keywords:
 - video copy protection WDK COPP , motion-compensation code template
 - protected video WDK COPP , motion-compensation code template
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Motion Compensation Code Template

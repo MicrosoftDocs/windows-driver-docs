@@ -1,7 +1,6 @@
 ---
 title: Get Critical Health Info (Function Index 10)
 description: This function returns critical health-related information.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

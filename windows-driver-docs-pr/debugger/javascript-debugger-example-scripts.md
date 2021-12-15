@@ -2,7 +2,6 @@
 title: JavaScript Debugger Example Scripts
 description: This topic provides the information on user and kernel mode JavaScript code samples, such as the Data Filtering Plug and Play Device Tree sample.
 ms.date: 02/02/2021
-ms.localizationpriority: medium
 ---
 
 # JavaScript Debugger Example Scripts

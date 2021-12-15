@@ -4,7 +4,6 @@ description: WDI_TLV_BSS_ENTRY_PHY_INFO is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_ENTRY_PHY_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BSS\_ENTRY\_PHY\_INFO

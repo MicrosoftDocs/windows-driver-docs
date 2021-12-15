@@ -3,7 +3,6 @@ title: Debug Menu
 description: Debug Menu
 keywords: ["Debug Menu (complete listing)", "graphical interface, debug menu"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug Menu

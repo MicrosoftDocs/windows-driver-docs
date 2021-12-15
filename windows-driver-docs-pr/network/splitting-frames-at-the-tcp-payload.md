@@ -5,7 +5,6 @@ keywords:
 - Ethernet frame splitting WDK networking , TCP payload
 - TCP payload WDK header-data split
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Splitting Frames at the TCP Payload

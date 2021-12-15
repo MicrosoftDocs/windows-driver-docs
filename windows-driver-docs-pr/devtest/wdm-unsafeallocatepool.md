@@ -9,7 +9,6 @@ api_name:
 - UnSafeAllocate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # UnSafeAllocatePool rule (wdm)

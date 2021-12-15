@@ -9,7 +9,6 @@ api_name:
 - RemoveLockReleasePnp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockReleasePnp rule (wdm)

@@ -5,7 +5,6 @@ keywords:
 - DirectSound WDK audio , content rendering
 - wave content rendering WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rendering Wave Content Using DirectSound Software and Hardware Buffers

@@ -2,7 +2,6 @@
 title: Servicing an Interrupt (UMDF 1)
 description: Servicing an Interrupt
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Servicing an Interrupt (UMDF 1)

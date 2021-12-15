@@ -4,7 +4,6 @@ description: WDI_TLV_STATION_CAPABILITIES is a TLV that contains the capabilitie
 ms.date: 05/07/2021
 keywords:
  - WDI_TLV_STATION_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

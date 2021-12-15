@@ -2,7 +2,6 @@
 title: PackageInfo XML Example
 description: PackageInfo XML Example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PackageInfo XML Example

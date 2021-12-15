@@ -9,7 +9,6 @@ api_name:
 - IrqlMmApcLte
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlMmApcLte rule (wdm)

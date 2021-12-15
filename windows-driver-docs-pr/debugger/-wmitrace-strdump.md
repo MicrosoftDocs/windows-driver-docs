@@ -9,7 +9,6 @@ api_name:
 - wmitrace.strdump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wmitrace.strdump

@@ -6,7 +6,6 @@ keywords:
 - debugging scenarios WDK UMDF , application request not completing
 - UMDF WDK , debugging scenarios, application request not completing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining Why an Application Request Does Not Complete

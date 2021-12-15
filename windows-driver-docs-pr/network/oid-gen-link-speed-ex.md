@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_LINK_SPEED_EX OID provides the transmit and
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LINK_SPEED_EX Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_LINK\_SPEED\_EX

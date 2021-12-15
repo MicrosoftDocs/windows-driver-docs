@@ -9,7 +9,6 @@ keywords:
 - lower edge of NDIS miniport drivers WDK networking , about WDM lower edge
 - WDM lower edge WDK networking , about WDM lower edge
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Driver with a WDM Lower Edge

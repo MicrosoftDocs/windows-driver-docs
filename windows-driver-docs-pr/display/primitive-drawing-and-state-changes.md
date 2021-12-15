@@ -8,7 +8,6 @@ keywords:
 - primitive drawing WDK Direct3D
 - D3dDrawPrimitives2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Primitive Drawing and State Changes

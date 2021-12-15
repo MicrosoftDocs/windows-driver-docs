@@ -2,7 +2,6 @@
 title: Optional DirectX 9.0 Driver Support
 description: Optional DirectX 9.0 Driver Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Optional DirectX 9.0 Driver Support

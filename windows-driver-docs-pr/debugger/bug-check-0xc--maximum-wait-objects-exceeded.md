@@ -9,7 +9,6 @@ api_name:
 - MAXIMUM_WAIT_OBJECTS_EXCEEDED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC: MAXIMUM\_WAIT\_OBJECTS\_EXCEEDED

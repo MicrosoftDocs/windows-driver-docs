@@ -9,7 +9,6 @@ keywords:
 - registering operation region handlers
 - deregistering operation region handlers
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Registering and Deregistering an Operation Region Handler

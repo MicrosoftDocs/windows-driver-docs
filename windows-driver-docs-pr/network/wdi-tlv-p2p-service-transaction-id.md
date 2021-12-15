@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_SERVICE_TRANSACTION_ID is a TLV that contains the Servi
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SERVICE_TRANSACTION_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_SERVICE\_TRANSACTION\_ID

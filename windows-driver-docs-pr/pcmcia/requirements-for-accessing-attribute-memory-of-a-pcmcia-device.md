@@ -4,7 +4,6 @@ description: Requirements for Accessing Attribute Memory of a PCMCIA Device
 keywords:
 - attribute memory WDK PCMCIA bus , requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requirements for Accessing Attribute Memory of a PCMCIA Device

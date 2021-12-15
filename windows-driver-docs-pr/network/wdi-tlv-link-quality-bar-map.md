@@ -4,7 +4,6 @@ description: WDI_TLV_LINK_QUALITY_BAR_MAP is a TLV that contains the mapping of 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_LINK_QUALITY_BAR_MAP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP

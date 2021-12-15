@@ -2,7 +2,6 @@
 title: Setting DXGI Information in the Registry
 description: Setting DXGI Information in the Registry
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting DXGI Information in the Registry

@@ -2,7 +2,6 @@
 title: Standardized INF keywords for VMMQ
 description: The *RssOnHostVPorts standardized INF keyword is defined to enable or disable support for VMMQ.
 ms.date: 02/28/2021
-ms.localizationpriority: medium
 ---
 
 # Standardized INF keywords for VMMQ

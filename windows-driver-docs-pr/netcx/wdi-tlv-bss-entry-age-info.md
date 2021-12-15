@@ -4,7 +4,6 @@ description: WDI_TLV_BSS_ENTRY_AGE_INFO is a WiFiCx TLV that contains age inform
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_BSS_ENTRY_AGE_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BSS\_ENTRY\_AGE\_INFO (dot11wificxtypes.hpp)

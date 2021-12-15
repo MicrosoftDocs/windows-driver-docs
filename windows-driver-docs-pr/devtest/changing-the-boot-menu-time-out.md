@@ -8,7 +8,6 @@ keywords:
 - time-outs WDK boot options
 - boot menu time-outs WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Changing the Boot Menu Time-out

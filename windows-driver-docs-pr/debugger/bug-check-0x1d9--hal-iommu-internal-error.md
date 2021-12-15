@@ -9,7 +9,6 @@ api_name:
 - HAL_IOMMU_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D9: HAL\_IOMMU\_INTERNAL\_ERROR

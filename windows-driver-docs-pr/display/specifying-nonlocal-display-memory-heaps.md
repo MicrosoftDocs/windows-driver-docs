@@ -12,7 +12,6 @@ keywords:
 - linear heaps WDK DirectDraw
 - physical heaps WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Nonlocal Display Memory Heaps

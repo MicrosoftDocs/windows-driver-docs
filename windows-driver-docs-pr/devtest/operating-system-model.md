@@ -8,7 +8,6 @@ keywords:
 - operating system model WDK Static Driver Verifier
 - harness WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Operating System Model

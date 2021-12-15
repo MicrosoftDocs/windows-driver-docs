@@ -7,7 +7,6 @@ keywords:
 - printer drivers WDK , programming with GDL
 - GDL WDK , features of
 ms.date: 09/08/2021
-ms.localizationpriority: medium
 ---
 
 # Use GDL to create configurations and snapshots

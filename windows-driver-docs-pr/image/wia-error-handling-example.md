@@ -2,7 +2,6 @@
 title: WIA Error Handling Example
 description: WIA Error Handling Example
 ms.date: 05/29/2020
-ms.localizationpriority: medium
 ---
 
 # WIA Error Handling Example

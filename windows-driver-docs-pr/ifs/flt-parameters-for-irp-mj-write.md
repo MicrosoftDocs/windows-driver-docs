@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 02/04/2020
-ms.localizationpriority: medium
 ---
 
 # FLT_PARAMETERS for IRP_MJ_WRITE union

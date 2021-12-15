@@ -8,7 +8,6 @@ keywords:
 - Installing WDTF
 - driver testing
 ms.date: 08/14/2018
-ms.localizationpriority: medium
 ---
 
 # The WDTF runtime library

@@ -4,7 +4,6 @@ description: WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS is a WiFiCx TLV that contains 
 ms.date: 08/31/2021
 keywords:
  - WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS (dot11wificxtypes.hpp)

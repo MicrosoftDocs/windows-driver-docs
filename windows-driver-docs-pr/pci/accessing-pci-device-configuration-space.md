@@ -7,7 +7,6 @@ keywords:
 - IRP_MN_READ_CONFIG
 - IRP_MN_WRITE_CONFIG
 ms.date: 09/13/2021
-ms.localizationpriority: medium
 ---
 
 # Accessing PCI Device Configuration Space

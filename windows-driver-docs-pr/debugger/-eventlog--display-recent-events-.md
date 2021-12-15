@@ -9,7 +9,6 @@ api_name:
 - .eventlog (Display Recent Events)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .eventlog (Display Recent Events)

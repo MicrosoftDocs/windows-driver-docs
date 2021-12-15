@@ -4,7 +4,6 @@ description: Querying VidPN Hardware Capabilities
 keywords:
 - VidPN WDK display , hardware capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying VidPN Hardware Capabilities

@@ -2,7 +2,6 @@
 title: WDI non-TLV versioning
 description: This section describes WDI non-TLV versioning
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI non-TLV versioning

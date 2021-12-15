@@ -3,7 +3,6 @@ title: Map Registers
 description: Map Registers
 keywords: ["memory management WDK kernel , map registers", "map registers WDK kernel", "virtual address space mappings WDK kernel", "logical address space mappings WDK kernel", "physical address space mappings WDK kernel", "mapping memory", "address space mappings WDK kernel", "scatter/gather capabilities WDK kernel", "translating address space WDK kernel", "memory management WDK kernel , mapping addresses"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Map Registers

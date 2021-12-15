@@ -2,7 +2,6 @@
 title: Creating the WIA Driver Item Tree
 description: Creating the WIA Driver Item Tree
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating the WIA Driver Item Tree

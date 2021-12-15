@@ -7,7 +7,6 @@ keywords:
 - device mutex WDK AVStream
 - synchronization WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Mutex in AVStream

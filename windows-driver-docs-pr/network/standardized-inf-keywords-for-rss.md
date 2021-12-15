@@ -7,7 +7,6 @@ keywords:
 - standardized INF keywords WDK RSS
 - INF entries WDK RSS
 ms.date: 02/01/2019
-ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for RSS

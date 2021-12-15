@@ -7,7 +7,6 @@ keywords:
 - concurrent DMA WDK video miniport
 - VideoPortStartDma
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Points to Consider When Using DMA

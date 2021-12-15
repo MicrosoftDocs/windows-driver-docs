@@ -6,7 +6,6 @@ keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL
 - Native 802.11 IHV Extensions DLL WDK , network profiles
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Profile Management

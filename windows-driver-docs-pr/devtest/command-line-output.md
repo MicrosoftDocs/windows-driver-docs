@@ -5,7 +5,6 @@ keywords:
 - output files WDK Static Driver Verifier
 - command-line output WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command-Line Output

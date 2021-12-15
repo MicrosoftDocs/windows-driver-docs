@@ -5,7 +5,6 @@ keywords:
 - BDA minidrivers WDK AVStream , automation tables
 - automation tables WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining Automation Tables

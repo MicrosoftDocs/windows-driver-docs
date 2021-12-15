@@ -9,7 +9,6 @@ api_name:
 - .tlist (List Process IDs)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .tlist (List Process IDs)

@@ -2,7 +2,6 @@
 title: Data Driven Testing
 description: Data Driven Testing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Driven Testing

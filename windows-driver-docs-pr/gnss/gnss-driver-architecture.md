@@ -2,7 +2,6 @@
 title: Global Navigation Satellite System (GNSS) driver architecture
 description: Provides an overview of Global Navigation Satellite System (GNSS) UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
 ms.date: 08/24/2021
-ms.localizationpriority: medium
 ---
 
 # Global Navigation Satellite System (GNSS) driver architecture

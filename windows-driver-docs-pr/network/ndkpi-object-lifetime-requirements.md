@@ -2,7 +2,6 @@
 title: NDKPI Object Lifetime Requirements
 description: This section describes NDKPI object lifetime requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDKPI Object Lifetime Requirements

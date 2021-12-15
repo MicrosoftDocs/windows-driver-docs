@@ -2,7 +2,6 @@
 title: Microsoft Basic Display Driver
 description: In Windows 8, The Microsoft Basic Display Driver (MSBDD) is the in-box display driver that replaces the XDDM VGA Save and VGA PnP drivers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Microsoft Basic Display Driver

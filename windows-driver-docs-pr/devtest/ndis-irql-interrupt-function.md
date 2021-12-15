@@ -9,7 +9,6 @@ api_name:
 - Irql_Interrupt_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_Interrupt\_Function rule (ndis)

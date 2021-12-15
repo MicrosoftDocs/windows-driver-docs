@@ -2,7 +2,6 @@
 title: Specifying the Source and Target Locations for Device Files
 description: Specifying the Source and Target Locations for Device Files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying the Source and Target Locations for Device Files

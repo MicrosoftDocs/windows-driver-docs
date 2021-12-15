@@ -9,7 +9,6 @@ api_name:
 - CID_HANDLE_DELETION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x17: CID\_HANDLE\_DELETION

@@ -9,7 +9,6 @@ api_name:
 - PdoInitFreeDeviceCreate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PdoInitFreeDeviceCreate rule (kmdf)

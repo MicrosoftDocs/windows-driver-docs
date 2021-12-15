@@ -2,7 +2,6 @@
 title: N (Windows Debugger Glossary)
 description: Glossary page - N
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # N

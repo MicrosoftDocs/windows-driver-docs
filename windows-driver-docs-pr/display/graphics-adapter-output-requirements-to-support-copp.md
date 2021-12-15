@@ -8,7 +8,6 @@ keywords:
 - protected video WDK COPP , graphics adapter output requirements
 - graphics adapter output requirements WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Graphics Adapter Output Requirements to Support COPP

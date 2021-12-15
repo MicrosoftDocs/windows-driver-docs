@@ -9,7 +9,6 @@ api_name:
 - ib, iw, id (Input from Port)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ib, iw, id (Input from Port)

@@ -1,7 +1,6 @@
 ---
 title: WMI Property Qualifier Definitions in Config.mof
 description: WMI Property Qualifier Definitions in Config.mof
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

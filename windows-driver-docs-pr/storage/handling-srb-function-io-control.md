@@ -6,7 +6,6 @@ keywords:
 - HwScsiStartIo
 - SRB_FUNCTION_IO_CONTROL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_IO\_CONTROL

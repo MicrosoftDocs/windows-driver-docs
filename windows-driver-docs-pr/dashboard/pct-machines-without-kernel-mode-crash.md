@@ -3,7 +3,6 @@ title: Percent of machines with a kernel mode crash
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have experienced a kernel mode crash 
 ms.topic: article
 ms.date: 05/29/2020
-ms.localizationpriority: medium
 ---
 
 # Percent of machines without a kernel mode crash

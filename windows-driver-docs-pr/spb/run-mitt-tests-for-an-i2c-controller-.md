@@ -2,7 +2,6 @@
 title: I2C controller tests in MITT
 description: I<sup>2</sup>C test modules that are included in the MITT software package can be used to test data transfers for an I<sup>2</sup>C controller and its driver. The MITT board acts as a client device connected to the I<sup>2</sup>C bus.
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # I2C controller tests in MITT

@@ -9,7 +9,6 @@ api_name:
 - AGP_ILLEGALLY_REPROGRAMMED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x106: AGP\_ILLEGALLY\_REPROGRAMMED

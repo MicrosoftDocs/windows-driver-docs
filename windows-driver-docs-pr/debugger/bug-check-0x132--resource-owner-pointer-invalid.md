@@ -9,7 +9,6 @@ api_name:
 - RESOURCE_OWNER_POINTER_INVALID
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x132: RESOURCE\_OWNER\_POINTER\_INVALID

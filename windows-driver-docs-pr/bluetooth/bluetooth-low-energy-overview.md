@@ -2,7 +2,6 @@
 title: Bluetooth Low Energy Overview
 description: This section provides an overview of Bluetooth Low Energy introduced in Windows 8
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Low Energy Overview

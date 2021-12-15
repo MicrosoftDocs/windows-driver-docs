@@ -5,7 +5,6 @@ keywords:
 - Unidrv, halftoning
 - halftoning WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Halftoning with Unidrv

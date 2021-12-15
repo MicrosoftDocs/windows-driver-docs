@@ -4,7 +4,6 @@ description: This topic describes how to write a Universal Windows driver using 
 keywords:
 - Write a KMDF driver
 ms.date: 06/02/2021
-ms.localizationpriority: medium
 ---
 
 # Write a Universal Windows driver (KMDF) based on a template

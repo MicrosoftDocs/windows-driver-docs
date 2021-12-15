@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - BM-64-EVB board
 description: Bluetooth Test Platform (BTP) supported hardware (BM64).
 ms.date: 06/09/2021
-ms.localizationpriority: medium
 ---
 
 # BM-64-EVB board

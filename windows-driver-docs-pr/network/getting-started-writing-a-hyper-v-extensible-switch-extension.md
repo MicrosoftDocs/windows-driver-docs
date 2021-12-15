@@ -2,7 +2,6 @@
 title: Getting started writing a Hyper-V Extensible Switch extension
 description: This section describes how to start writing a Hyper-V Extensible Switch extension
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Getting Started Writing a Hyper-V Extensible Switch Extension

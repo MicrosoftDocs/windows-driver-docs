@@ -6,7 +6,6 @@ keywords:
 - NDIS filter drivers WDK , writing filter drivers
 - writing filter drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Easier-to-Write Filter Drivers

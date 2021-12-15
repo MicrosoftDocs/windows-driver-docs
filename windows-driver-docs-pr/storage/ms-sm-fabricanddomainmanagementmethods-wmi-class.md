@@ -1,7 +1,6 @@
 ---
 title: MS\_SM\_FabricAndDomainManagementMethods WMI Class
 description: MS\_SM\_FabricAndDomainManagementMethods WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

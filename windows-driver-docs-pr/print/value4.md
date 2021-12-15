@@ -4,7 +4,6 @@ description: The TCP/IP Value construct allows you to extend the bidi communicat
 keywords:
 - Value construct
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Value (TCP/IP)

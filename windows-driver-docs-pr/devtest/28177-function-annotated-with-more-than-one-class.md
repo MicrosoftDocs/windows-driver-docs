@@ -2,7 +2,6 @@
 title: C28177 warning
 description: Warning C28177 Function is annotated with more than one function class. All but one will be ignored.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28177"
 ---

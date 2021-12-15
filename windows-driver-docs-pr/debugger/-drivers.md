@@ -9,7 +9,6 @@ api_name:
 - drivers
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !drivers

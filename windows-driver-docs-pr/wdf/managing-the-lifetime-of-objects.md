@@ -7,7 +7,6 @@ keywords:
 - lifetimes WDK UMDF
 - callback objects WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing the Lifetime of Objects

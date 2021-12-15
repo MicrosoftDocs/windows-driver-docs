@@ -3,7 +3,6 @@ title: Callback Objects
 description: Callback Objects
 keywords: ["synchronization WDK kernel , callback objects", "callback objects WDK kernel", "objects WDK callback objects", "kernel callback mechanism WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Callback Objects

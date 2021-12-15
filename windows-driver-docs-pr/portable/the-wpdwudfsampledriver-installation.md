@@ -2,7 +2,6 @@
 description: Installing the WpdWudfSampleDriver Sample
 title: Installing the WpdWudfSampleDriver Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing the WpdWudfSampleDriver Sample

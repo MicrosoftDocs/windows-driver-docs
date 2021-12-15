@@ -3,7 +3,6 @@ title: ACE
 description: ACE
 keywords: ["access control entry WDK file systems", "ACE WDK file systems"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ACE

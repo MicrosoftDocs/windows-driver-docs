@@ -4,7 +4,6 @@ description: WDI_TLV_RETRY_AFTER is a WiFiCx TLV that contains the duration, in 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_RETRY_AFTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_RETRY_AFTER  (dot11wificxtypes.hpp)

@@ -6,7 +6,6 @@ keywords:
 - INF files WDK device installations , sections
 - sections WDK INF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Looking at an INF File

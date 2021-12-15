@@ -3,7 +3,6 @@ title: Fast Mutexes and Guarded Mutexes
 description: Fast Mutexes and Guarded Mutexes
 keywords: ["synchronization WDK kernel , fast mutexes", "synchronization WDK kernel , guarded mutexes", "guarded mutexes WDK kernel", "fast mutexes WDK kernel", "mutexes WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Fast Mutexes and Guarded Mutexes

@@ -4,7 +4,6 @@ description: Supporting Kernel-Mode Command Buffers
 keywords:
 - command buffer WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Kernel-Mode Command Buffers

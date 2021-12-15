@@ -5,7 +5,6 @@ keywords:
 - registering callback routines
 - callback routines WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \[Optional\] Registering Callback Routines

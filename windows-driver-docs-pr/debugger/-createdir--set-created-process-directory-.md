@@ -9,7 +9,6 @@ api_name:
 - .createdir (Set Created Process Directory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .createdir (Set Created Process Directory)

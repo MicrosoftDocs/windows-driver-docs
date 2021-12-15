@@ -3,7 +3,6 @@ title: Debug Go Unhandled Exception
 description: Debug Go Unhandled Exception
 keywords: ["Debug Go Unhandled Exception", "controlling the target, Debug Go Unhandled Exception", "exceptions, Debug Go Unhandled Exception"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Go Unhandled Exception

@@ -3,7 +3,6 @@ title: Cancel-Safe IRP Queues
 description: Cancel-Safe IRP Queues
 keywords: ["cancel-safe IRP queues WDK kernel", "callback routines WDK IRPs", "synchronization WDK IRPs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Cancel-Safe IRP Queues

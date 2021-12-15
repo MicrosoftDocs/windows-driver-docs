@@ -2,7 +2,6 @@
 title: Create a MobileBroadbandDeviceInformation object
 description: Create a MobileBroadbandDeviceInformation object
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Create a MobileBroadbandDeviceInformation object

@@ -2,7 +2,6 @@
 title: Vendor-Extended Properties
 description: Vendor-Extended Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vendor-Extended Properties

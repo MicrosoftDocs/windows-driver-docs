@@ -2,7 +2,6 @@
 title: PROPSETID\_TIMECODE\_READER
 description: PROPSETID\_TIMECODE\_READER
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PROPSETID\_TIMECODE\_READER

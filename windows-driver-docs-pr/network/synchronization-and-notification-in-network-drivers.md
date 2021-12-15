@@ -13,7 +13,6 @@ keywords:
 - event notifications WDK networking
 - events WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Synchronization and Notification in Network Drivers

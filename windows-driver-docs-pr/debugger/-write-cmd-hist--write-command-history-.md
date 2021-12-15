@@ -9,7 +9,6 @@ api_name:
 - .write_cmd_hist (Write Command History)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .write\_cmd\_hist (Write Command History)

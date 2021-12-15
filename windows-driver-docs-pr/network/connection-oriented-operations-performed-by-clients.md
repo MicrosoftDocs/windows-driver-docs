@@ -5,7 +5,6 @@ keywords:
 - connection-oriented clients WDK
 - client operations WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection-Oriented Operations Performed by Clients

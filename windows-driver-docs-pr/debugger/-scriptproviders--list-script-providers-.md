@@ -9,7 +9,6 @@ api_name:
 - .scriptproviders (List Script Providers)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .scriptproviders (List Script Providers)

@@ -2,7 +2,6 @@
 title: Installing an Image Processing Filter
 description: Installing an Image Processing Filter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing an Image Processing Filter

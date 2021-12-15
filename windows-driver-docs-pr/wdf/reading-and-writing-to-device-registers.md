@@ -2,7 +2,6 @@
 title: Reading and Writing to Device Registers
 description: Reading and Writing to Device Registers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reading and Writing to Device Registers

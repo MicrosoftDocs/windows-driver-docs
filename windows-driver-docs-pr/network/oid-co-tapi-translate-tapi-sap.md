@@ -4,7 +4,6 @@ description: This topic describes the OID_CO_TAPI_TRANSLATE_TAPI_SAP object iden
 keywords:
 - OID_CO_TAPI_TRANSLATE_TAPI_SAP
 ms.date: 11/03/2017
-ms.localizationpriority: medium
 ---
 
 # OID_CO_TAPI_TRANSLATE_TAPI_SAP

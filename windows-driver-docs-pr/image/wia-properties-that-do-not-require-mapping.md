@@ -2,7 +2,6 @@
 title: WIA Properties That Do Not Require Mapping
 description: WIA Properties That Do Not Require Mapping
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Properties That Do Not Require Mapping

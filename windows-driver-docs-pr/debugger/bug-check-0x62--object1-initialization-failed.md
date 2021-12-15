@@ -9,7 +9,6 @@ api_name:
 - OBJECT1_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x62: OBJECT1\_INITIALIZATION\_FAILED

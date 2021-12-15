@@ -12,7 +12,6 @@ keywords:
 - DDCAPS2_SYSTONONLOCAL_AS_SYSTOLOCAL
 - textures WDK DirectDraw , reordering
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reordering Textures In Nonlocal Display Memory

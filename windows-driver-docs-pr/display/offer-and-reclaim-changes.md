@@ -2,7 +2,6 @@
 title: Offer and reclaim changes
 description: For Windows Display Driver Model (WDDM) v2, requirements around Offer and Reclaim are being relaxed.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Offer and reclaim changes

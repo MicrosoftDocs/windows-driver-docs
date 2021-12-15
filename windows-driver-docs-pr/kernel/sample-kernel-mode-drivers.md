@@ -3,7 +3,6 @@ title: Sample Kernel-Mode Drivers
 description: Sample Kernel-Mode Drivers
 keywords: ["kernel-mode drivers WDK , samples", "sample drivers WDK kernel-mode"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Kernel-Mode Drivers

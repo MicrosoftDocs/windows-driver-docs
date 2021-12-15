@@ -4,7 +4,6 @@ description: Porting NDIS miniport drivers to NetAdapterCx
 keywords:
 - Porting miniport drivers to the Network Adapter Class Extension, porting to the Network Adapter WDF Class Extension, porting NDIS 6.x to NetAdapterCx
 ms.date: 01/22/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

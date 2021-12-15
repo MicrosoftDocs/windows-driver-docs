@@ -3,7 +3,6 @@ title: Defining Custom Error Types
 description: Defining Custom Error Types
 keywords: ["custom error messages WDK kernel", "custom error types WDK kernel", "IO_ERR_XXX values", "templates WDK errors", "headers WDK errors", "files WDK error logs", "text files WDK error logs", "compiling error message files", "LanguageNames directive", "SeverityNames directive", "FacilityNames directive"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Defining Custom Error Types

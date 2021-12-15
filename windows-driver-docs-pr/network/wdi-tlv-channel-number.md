@@ -4,7 +4,6 @@ description: WDI_TLV_CHANNEL_NUMBER is a TLV that contains a channel number.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHANNEL_NUMBER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CHANNEL\_NUMBER

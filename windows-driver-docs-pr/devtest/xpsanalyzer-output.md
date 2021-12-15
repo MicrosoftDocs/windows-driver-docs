@@ -2,7 +2,6 @@
 title: XpsAnalyzer Output
 description: XpsAnalyzer Output
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XpsAnalyzer Output

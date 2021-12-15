@@ -5,7 +5,6 @@ keywords:
 - data-intersection handlers WDK audio , proprietary
 - proprietary data-intersection handlers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Proprietary Data-Intersection Handlers

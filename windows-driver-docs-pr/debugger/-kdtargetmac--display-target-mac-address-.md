@@ -9,7 +9,6 @@ api_name:
 - .kdtargetmac (Display Target MAC Address)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .kdtargetmac (Display Target MAC Address)

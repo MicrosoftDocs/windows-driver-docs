@@ -11,7 +11,6 @@ keywords:
 - function drivers WDK ACPI , device stacks
 - WDM function drivers WDK ACPI , device stacks
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Device Stacks for an ACPI Device

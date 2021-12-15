@@ -9,7 +9,6 @@ api_name:
 - DRIVER_UNMAPPING_INVALID_VIEW
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD7: DRIVER\_UNMAPPING\_INVALID\_VIEW

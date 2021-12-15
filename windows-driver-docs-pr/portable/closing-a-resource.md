@@ -2,7 +2,6 @@
 description: Closing a Resource
 title: Closing a Resource
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Closing a Resource

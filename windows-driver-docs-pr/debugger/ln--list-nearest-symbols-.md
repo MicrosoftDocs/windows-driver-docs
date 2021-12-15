@@ -9,7 +9,6 @@ api_name:
 - ln (List Nearest Symbols)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ln (List Nearest Symbols)

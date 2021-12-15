@@ -3,7 +3,6 @@ title: DispatchSetInformation Routines
 description: DispatchSetInformation Routines
 keywords: ["dispatch routines WDK kernel , DispatchSetInformation routine", "DispatchSetInformation routine", "set information dispatch routines WDK kernel", "IRP_MJ_SET_INFORMATION I/O function code"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DispatchSetInformation Routines

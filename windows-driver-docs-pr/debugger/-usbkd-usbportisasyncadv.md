@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbportisasyncadv
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbportisasyncadv

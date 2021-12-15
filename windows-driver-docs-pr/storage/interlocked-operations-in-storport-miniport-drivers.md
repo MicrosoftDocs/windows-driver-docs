@@ -2,7 +2,6 @@
 title: Interlocked Operations in Storport Miniport Drivers
 description: Many of the interlocked functions available to Windows applications are appropriate for use in Storport miniport drivers.
 ms.date: 06/13/2019
-ms.localizationpriority: medium
 ---
 
 # Interlocked Operations in Storport Miniport Drivers

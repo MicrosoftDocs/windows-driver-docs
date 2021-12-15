@@ -3,7 +3,6 @@ title: Sending IRP_MN_QUERY_POWER or IRP_MN_SET_POWER for Device Power States
 description: Sending IRP_MN_QUERY_POWER or IRP_MN_SET_POWER for Device Power States
 keywords: ["IRP_MN_SET_POWER", "IRP_MN_QUERY_POWER", "device power states WDK kernel", "query-power IRPs WDK power management", "power IRPs WDK kernel , device queries", "querying power state", "queuing IRPs", "device query power IRPs WDK kernel", "sending power state IRPs", "set-power IRPs WDK kernel", "device set power IRPs WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Sending IRP\_MN\_QUERY\_POWER or IRP\_MN\_SET\_POWER for Device Power States

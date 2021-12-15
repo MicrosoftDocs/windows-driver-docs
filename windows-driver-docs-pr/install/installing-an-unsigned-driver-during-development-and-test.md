@@ -12,7 +12,6 @@ keywords:
 - kernel-mode driver signing WDK
 - F8 key WDK drvier signing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing an Unsigned Driver during Development and Test

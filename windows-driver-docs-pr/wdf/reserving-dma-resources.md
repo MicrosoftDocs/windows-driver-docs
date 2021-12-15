@@ -2,7 +2,6 @@
 title: Reserving DMA Resources
 description: Reserving DMA Resources
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reserving DMA Resources

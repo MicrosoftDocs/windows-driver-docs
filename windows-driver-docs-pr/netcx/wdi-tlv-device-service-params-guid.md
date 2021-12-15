@@ -4,7 +4,6 @@ description: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID is a WiFiCx TLV that contains a 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_GUID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_DEVICE_SERVICE_PARAMS_GUID (dot11wificxtypes.hpp)

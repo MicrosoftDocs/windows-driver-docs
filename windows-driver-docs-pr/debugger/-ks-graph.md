@@ -9,7 +9,6 @@ api_name:
 - ks.graph
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.graph

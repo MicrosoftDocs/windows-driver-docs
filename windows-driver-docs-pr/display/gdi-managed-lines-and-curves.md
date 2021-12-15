@@ -14,7 +14,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , curves
 - drawing WDK GDI , curves
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI-Managed Lines and Curves

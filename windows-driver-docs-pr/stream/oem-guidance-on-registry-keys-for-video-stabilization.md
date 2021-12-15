@@ -2,7 +2,6 @@
 title: Video stabilization registry settings
 description: The OEM-set MaxPixelsPerSecond value in the VideoStabilization registry key enables OEMs to configure video stabilization settings on a device and apply video stabilization to a video at capture-time.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video stabilization registry settings

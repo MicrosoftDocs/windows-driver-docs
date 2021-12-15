@@ -2,7 +2,6 @@
 title: Mobilebroadband TextAnalysisTool Filters
 description: Following Section contains TAT Filters that will be used for log analysis
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # Mobilebroadband TextAnalysisTool Filters

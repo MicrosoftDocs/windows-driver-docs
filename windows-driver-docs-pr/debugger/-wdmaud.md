@@ -9,7 +9,6 @@ api_name:
 - wdmaud
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdmaud

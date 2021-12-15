@@ -11,7 +11,6 @@ keywords:
 - copying checked files
 - Boot.ini files WDK , checked builds
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)

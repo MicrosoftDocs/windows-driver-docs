@@ -6,7 +6,6 @@ keywords:
 - initializing SCSI miniport drivers
 - SCSI miniport drivers WDK storage , initializing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling ScsiPortInitialize

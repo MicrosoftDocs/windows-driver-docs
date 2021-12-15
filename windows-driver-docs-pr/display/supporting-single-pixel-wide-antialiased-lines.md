@@ -7,7 +7,6 @@ keywords:
 - antialias single-pixel-wide lines WDK DirectX 9.0
 - line antialiasing WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Single-Pixel-Wide Antialiased Lines

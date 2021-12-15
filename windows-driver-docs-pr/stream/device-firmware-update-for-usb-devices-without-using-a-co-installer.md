@@ -2,7 +2,6 @@
 title: Device firmware update For USB devices without using a co-installer
 description: Outlines a recommend way to update USB device firmware without a co-installer.
 ms.date: 11/15/2018
-ms.localizationpriority: medium
 ---
 
 # Device firmware update For USB devices without using a co-installer

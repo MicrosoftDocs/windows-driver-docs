@@ -2,7 +2,6 @@
 title: PKEY\_CompositeFX\_StreamEffectClsid
 description: In Windows 10 version 1803 and later, the PKEY\_FX\_StreamEffectClsid property key identifies the stream effect (SCompositeFX) supported by the driver. The driver developer should specify the list of supported stream effects that their driver supports.
 ms.date: 11/15/2018
-ms.localizationpriority: medium
 ---
 
 # PKEY\_CompositeFX\_StreamEffectClsid

@@ -9,7 +9,6 @@ api_name:
 - rcdrkd.rcdrtmffile
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrtmffile

@@ -14,7 +14,6 @@ keywords:
 - event callback functions WDK KMDF
 - framework objects WDK KMDF , I/O queue objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Queue Objects

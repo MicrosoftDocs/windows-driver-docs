@@ -2,7 +2,6 @@
 title: Interface Descriptor for Data Class Interface
 description: Interface Descriptor for Data Class Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interface Descriptor for Data Class Interface

@@ -2,7 +2,6 @@
 title: Network cost information element
 description: Network cost information element
 ms.date: 05/31/2021
-ms.localizationpriority: medium
 ---
 
 # Network cost information element

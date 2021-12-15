@@ -2,7 +2,6 @@
 title: Testing manual brightness
 description: How to test manual brightness by using the MALT (Microsoft Ambient Light Tool) tool.
 ms.date: 07/08/2021
-ms.localizationpriority: medium
 ---
 
 # Testing manual brightness

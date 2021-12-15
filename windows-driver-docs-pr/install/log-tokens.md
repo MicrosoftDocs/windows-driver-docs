@@ -8,7 +8,6 @@ keywords:
 - identifying text log sections
 - SetupAPI logging WDK Windows Vista , log tokens
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Log Tokens

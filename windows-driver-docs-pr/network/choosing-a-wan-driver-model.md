@@ -9,7 +9,6 @@ keywords:
 - CoNDIS drivers WDK networking , WAN drivers
 - CoNDIS WAN drivers WDK networking
 ms.date: 10/14/2021
-ms.localizationpriority: medium
 ---
 
 # WAN Driver Models

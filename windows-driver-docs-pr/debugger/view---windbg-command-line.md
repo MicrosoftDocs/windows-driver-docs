@@ -3,7 +3,6 @@ title: View WinDbg Command Line
 description: View WinDbg Command Line
 keywords: ["View WinDbg Command Line"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | WinDbg Command Line

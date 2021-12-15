@@ -9,7 +9,6 @@ api_name:
 - SOC_CRITICAL_DEVICE_REMOVED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x14E: SOC\_CRITICAL\_DEVICE\_REMOVED

@@ -2,7 +2,6 @@
 title: Privacy shutter notification
 description: Provides guidance for OEMs and ODMs that are adding a mechanism to detect the state of the physical camera privacy shutter.
 ms.date: 06/24/2021
-ms.localizationpriority: medium
 ---
 
 # Privacy shutter notification

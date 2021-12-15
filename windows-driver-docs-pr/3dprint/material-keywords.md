@@ -2,7 +2,6 @@
 title: Material keywords
 description: These keywords describe the raw material in the device used to create 3D objects.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Material keywords

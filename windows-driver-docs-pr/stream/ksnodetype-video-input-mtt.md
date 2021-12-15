@@ -2,7 +2,6 @@
 title: KSNODETYPE\_VIDEO\_INPUT\_MTT
 description: KSNODETYPE\_VIDEO\_INPUT\_MTT
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSNODETYPE\_VIDEO\_INPUT\_MTT

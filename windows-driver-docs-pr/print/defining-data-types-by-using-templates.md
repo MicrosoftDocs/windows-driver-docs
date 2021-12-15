@@ -7,7 +7,6 @@ keywords:
 - defining data types WDK GDL
 - data type template WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 #  Defining Data Types by Using Templates

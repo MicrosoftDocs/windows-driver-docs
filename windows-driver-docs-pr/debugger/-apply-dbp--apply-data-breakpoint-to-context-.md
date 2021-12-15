@@ -9,7 +9,6 @@ api_name:
 - .apply_dbp (Apply Data Breakpoint to Context)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .apply\_dbp (Apply Data Breakpoint to Context)

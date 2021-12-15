@@ -2,7 +2,6 @@
 title: MB SMS Operations
 description: MB SMS Operations
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB SMS Operations

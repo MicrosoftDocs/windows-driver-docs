@@ -4,7 +4,6 @@ description: As a query, use the OID_GEN_XMIT_LINK_SPEED OID to determine the tr
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_XMIT_LINK_SPEED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_XMIT\_LINK\_SPEED

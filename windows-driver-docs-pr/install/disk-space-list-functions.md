@@ -9,7 +9,6 @@ keywords:
 - disk space calculations WDK SetupAPI
 - total disk space calculations WDK SetupAPI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disk-Space List Functions

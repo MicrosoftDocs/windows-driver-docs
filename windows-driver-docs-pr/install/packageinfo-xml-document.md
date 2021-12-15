@@ -2,7 +2,6 @@
 title: PackageInfo XML Document
 description: PackageInfo XML Document
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PackageInfo XML Document

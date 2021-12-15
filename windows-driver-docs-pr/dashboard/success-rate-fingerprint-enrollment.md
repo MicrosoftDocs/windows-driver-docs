@@ -3,7 +3,6 @@ title: Success rate of Fingerprint Enrollment
 description: The measure looks at the success of going through the enrollment experience
 ms.topic: article
 ms.date: 03/30/2020
-ms.localizationpriority: medium
 ---
  
 # Success rate of Fingerprint Enrollment

@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_LISTEN_CHANNEL is a TLV that contains Wi-Fi Direct chan
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_LISTEN_CHANNEL Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_LISTEN\_CHANNEL

@@ -2,7 +2,6 @@
 title: GpuMmu Example Scenarios
 description: This topic describes common usage scenarios and the sequence of operations necessary to implement them.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GpuMmu Example Scenarios

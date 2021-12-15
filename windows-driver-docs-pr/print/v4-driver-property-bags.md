@@ -2,7 +2,6 @@
 title: V4 Printer Driver Property Bags
 description: The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
 ms.date: 08/30/2021
-ms.localizationpriority: medium
 ---
 
 # V4 Printer Driver Property Bags

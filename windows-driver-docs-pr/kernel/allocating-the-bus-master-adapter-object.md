@@ -3,7 +3,6 @@ title: Allocating the Bus-Master Adapter Object
 description: Allocating the Bus-Master Adapter Object
 keywords: ["allocating bus-master adapter objects", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating the Bus-Master Adapter Object

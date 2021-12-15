@@ -2,7 +2,6 @@
 title: Enabling Fault Injection
 description: Enabling Fault Injection
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Fault Injection

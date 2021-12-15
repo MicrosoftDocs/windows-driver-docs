@@ -6,7 +6,6 @@ keywords:
 - serial devices WDK , Plug and Play
 - RS-232 ports WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuration of Plug and Play Serial Device Connected to an RS-232 Port

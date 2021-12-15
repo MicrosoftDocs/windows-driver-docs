@@ -6,7 +6,6 @@ keywords:
 - checking in-progress installations
 - verifying in-progress installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Checking for In-Progress Installations

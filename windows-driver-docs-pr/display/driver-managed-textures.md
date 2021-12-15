@@ -6,7 +6,6 @@ keywords:
 - driver-managed textures WDK Direct3D
 - manageable textures WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver-Managed Textures

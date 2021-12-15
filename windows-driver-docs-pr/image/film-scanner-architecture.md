@@ -2,7 +2,6 @@
 title: Film Scanner Architecture
 description: Film Scanner Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Film Scanner Architecture

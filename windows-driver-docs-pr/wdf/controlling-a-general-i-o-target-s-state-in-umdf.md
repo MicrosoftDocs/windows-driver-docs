@@ -13,7 +13,6 @@ keywords:
 - stopping I/O targets
 - restarting I/O targets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling a General I/O Target's State in UMDF

@@ -2,7 +2,6 @@
 title: Custom sensor data fields
 description: This topic provides information about the data fields that can be used by a custom sensor.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Custom sensor data fields

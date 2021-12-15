@@ -4,7 +4,6 @@ description: WDI_TLV_FT_AUTH_REQUEST is a WiFiCx TLV that contains the Fast Tran
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_FT_AUTH_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_AUTH\_REQUEST (dot11wificxtypes.hpp)

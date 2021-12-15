@@ -4,7 +4,6 @@ description: Client Module
 keywords:
 - client modules WDK Network Module Registrar , defined
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Client Module

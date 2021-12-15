@@ -9,7 +9,6 @@ api_name:
 - ; (Command Separator)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ; (Command Separator)

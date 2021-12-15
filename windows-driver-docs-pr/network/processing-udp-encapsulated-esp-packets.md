@@ -4,7 +4,6 @@ description: Processing UDP-Encapsulated ESP Packets
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , processing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing UDP-Encapsulated ESP Packets

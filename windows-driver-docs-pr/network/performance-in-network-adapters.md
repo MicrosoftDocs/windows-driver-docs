@@ -2,7 +2,6 @@
 title: Performance in Network Adapters
 description: There are always tradeoffs in deciding which hardware functions to implement on a network adapter.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performance in Network Adapters

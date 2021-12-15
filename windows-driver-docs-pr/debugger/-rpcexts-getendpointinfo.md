@@ -9,7 +9,6 @@ api_name:
 - rpcexts.getendpointinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.getendpointinfo

@@ -2,7 +2,6 @@
 title: PKEY\_FX\_ModeEffectClsid
 description: In Windows 8.1 and later, the PKEY\_FX\_ModeEffectClsid property key identifies the mode effect (MFX) supported by the driver. The driver developer should specify the list of supported processing modes that their driver supports.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PKEY\_FX\_ModeEffectClsid

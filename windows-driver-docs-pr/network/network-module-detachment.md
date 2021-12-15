@@ -10,7 +10,6 @@ keywords:
 - Network Module Registrar WDK , detaching network modules
 - NMR WDK , detaching network modules
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Module Detachment

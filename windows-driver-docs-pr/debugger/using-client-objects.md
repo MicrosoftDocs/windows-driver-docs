@@ -3,7 +3,6 @@ title: Using Client Objects
 description: Using Client Objects
 keywords: ["Debugger Engine, COM Interfaces"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Client Objects

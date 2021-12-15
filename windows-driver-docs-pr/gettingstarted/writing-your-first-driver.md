@@ -4,7 +4,6 @@ description: If you're writing your first driver, use these exercises to get sta
 keywords:
 - Hello World driver
 ms.date: 08/06/2021
-ms.localizationpriority: medium
 ---
 
 # Write your first driver

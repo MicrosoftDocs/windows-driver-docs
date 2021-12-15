@@ -9,7 +9,6 @@ api_name:
 - BAD_POOL_HEADER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x19: BAD\_POOL\_HEADER

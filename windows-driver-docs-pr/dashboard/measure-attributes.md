@@ -3,7 +3,6 @@ title: Driver measure attributes
 description: The measures used for driver flighting often share attributes that measure telemetry to the aggregation process to how Microsoft evaluates the measure.
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Driver measure attributes

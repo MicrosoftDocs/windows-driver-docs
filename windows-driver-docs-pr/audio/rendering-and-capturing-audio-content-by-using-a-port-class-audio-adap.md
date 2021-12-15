@@ -4,7 +4,6 @@ description: Rendering and Capturing Audio Using a Port Class Audio Adapter
 keywords:
 - port class adapter drivers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rendering and Capturing Audio Content by Using a Port Class Audio Adapter

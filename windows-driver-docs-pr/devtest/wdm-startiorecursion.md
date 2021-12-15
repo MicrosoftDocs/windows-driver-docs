@@ -9,7 +9,6 @@ api_name:
 - StartIoRecursion
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StartIoRecursion rule (wdm)

@@ -2,7 +2,6 @@
 title: How are Trace-If expressions used
 description: How are Trace-If expressions used
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How are Trace-If expressions used?

@@ -2,7 +2,6 @@
 title: Enumerating NIC Switches on a Network Adapter
 description: Enumerating NIC Switches on a Network Adapter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating NIC Switches on a Network Adapter

@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_NETWORK_BLACKLIST notific
 ms.date: 08/21/2018
 keywords: 
  -NDIS_STATUS_WWAN_NETWORK_BLACKLIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_NETWORK_BLACKLIST

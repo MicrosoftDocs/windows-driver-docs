@@ -2,7 +2,6 @@
 title: Supporting Audio Posture
 description: Windows 11 provides the ability to determine the posture of the device and remap and calibrate input and outputs to create an improved user experience.
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ms.topic: article
 ---
 

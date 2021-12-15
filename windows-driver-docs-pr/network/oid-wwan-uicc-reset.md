@@ -4,7 +4,6 @@ description: OID_WWAN_UICC_RESET
 keywords:
 - MB UICC reset, Mobile Broadband UICC reset, Mobile Broadband miniport driver UICC reset
 ms.date: 08/17/2017
-ms.localizationpriority: medium
 ---
 
 # OID_WWAN_UICC_RESET

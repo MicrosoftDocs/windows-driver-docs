@@ -9,7 +9,6 @@ api_name:
 - IrpCancelField
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrpCancelField rule (wdm)

@@ -9,7 +9,6 @@ api_name:
 - bcb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bcb

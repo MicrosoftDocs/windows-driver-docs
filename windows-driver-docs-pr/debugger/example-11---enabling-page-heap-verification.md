@@ -2,7 +2,6 @@
 title: Example 11 Enabling Page Heap Verification
 description: Example 11 Enabling Page Heap Verification
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Example 11: Enabling Page Heap Verification

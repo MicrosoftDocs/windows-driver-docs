@@ -9,7 +9,6 @@ api_name:
 - DIRTY_NOWRITE_PAGES_CONGESTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xFD: DIRTY\_NOWRITE\_PAGES\_CONGESTION

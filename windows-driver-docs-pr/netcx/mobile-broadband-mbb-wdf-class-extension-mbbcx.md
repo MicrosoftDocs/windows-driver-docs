@@ -4,7 +4,6 @@ description: An overview of the Mobile Broadband (MBB) WDF class extension (MBBC
 keywords:
 - Mobile Broadband (MBB) WDF class extension, MBBCx, Mobile Broadband NetAdapterCx
 ms.date: 07/01/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)

@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_AdapterEvent WMI Class
 description: MSiSCSI\_AdapterEvent WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

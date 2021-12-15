@@ -2,7 +2,6 @@
 title: Ksmedia.h
 description: This section contains reference topics for the Ksmedia.h header.
 ms.date: 11/27/2018
-ms.localizationpriority: medium
 ---
 
 # Ksmedia.h

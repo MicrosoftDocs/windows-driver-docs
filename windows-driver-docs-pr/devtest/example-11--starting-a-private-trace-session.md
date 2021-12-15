@@ -5,7 +5,6 @@ keywords:
 - trace sessions WDK , private
 - private trace sessions WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 11: Starting a Private Trace Session

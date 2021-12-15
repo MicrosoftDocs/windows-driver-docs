@@ -2,7 +2,6 @@
 title: Static Driver Verifier Limitations
 description: Static Driver Verifier Limitations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier Limitations

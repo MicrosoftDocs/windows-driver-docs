@@ -4,7 +4,6 @@ description: System-Defined Device Properties
 keywords:
 - device properties WDK device installations , system-defined
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # System-Defined Device Properties

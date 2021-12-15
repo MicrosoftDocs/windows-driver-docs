@@ -9,7 +9,6 @@ api_name:
 - SpinlockDpc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpinlockDpc rule (kmdf)

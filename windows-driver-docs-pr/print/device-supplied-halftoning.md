@@ -4,7 +4,6 @@ description: Device-Supplied Halftoning
 keywords:
 - device-supplied halftoning WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device-Supplied Halftoning

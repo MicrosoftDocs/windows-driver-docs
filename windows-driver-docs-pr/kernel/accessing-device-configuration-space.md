@@ -3,7 +3,6 @@ title: Accessing Device Configuration Space
 description: Accessing Device Configuration Space
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "resource information WDK I/O", "driver stacks WDK configuration info"]
 ms.date: 07/21/2021
-ms.localizationpriority: medium
 ---
 
 # Accessing Device Configuration Space

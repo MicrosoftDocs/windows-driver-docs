@@ -3,7 +3,6 @@ title: Winqual Submission Tool (winqual.exe)
 description: Winqual Submission Tool (winqual.exe)
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Winqual Submission Tool (winqual.exe)

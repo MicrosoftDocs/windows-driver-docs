@@ -2,7 +2,6 @@
 title: UninitializedPtrField (Supplemental Windows Driver CodeQL Query)
 description: UninitializedPtrField a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
-ms.localizationpriority: medium
 ---
 
 # UninitializedPtrField (Windows Driver CodeQL Query)

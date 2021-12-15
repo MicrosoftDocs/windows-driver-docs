@@ -9,7 +9,6 @@ api_name:
 - IoBuildFsdComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildFsdComplete rule (wdm)

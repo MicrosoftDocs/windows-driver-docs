@@ -15,7 +15,6 @@ keywords:
 - drawing WDK GDI , termination
 - terminating graphics drivers WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Initialization and Termination Functions

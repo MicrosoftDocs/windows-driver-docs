@@ -2,7 +2,6 @@
 title: Setting a VMQ Filter
 description: Setting a VMQ Filter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting a VMQ Filter

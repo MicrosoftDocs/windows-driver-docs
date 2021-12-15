@@ -9,7 +9,6 @@ api_name:
 - ForwardedAtBadIrqlFsdSync
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ForwardedAtBadIrqlFsdSync rule

@@ -9,7 +9,6 @@ api_name:
 - cpuid
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !cpuid

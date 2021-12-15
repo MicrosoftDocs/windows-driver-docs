@@ -2,7 +2,6 @@
 description: Testing and Debugging the Sample Driver
 title: Testing and Debugging the Sample Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing and Debugging the Sample Driver

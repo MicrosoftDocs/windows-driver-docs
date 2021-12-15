@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_P2P_DISCOVER task command is issued to the device 
 ms.date: 06/30/2021
 keywords:
  - OID_WDI_TASK_P2P_DISCOVER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_P2P\_DISCOVER (dot11wificxintf.h)

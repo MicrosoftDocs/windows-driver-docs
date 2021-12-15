@@ -3,7 +3,6 @@ title: The Srcsrv.ini File
 description: The Srcsrv.ini File
 keywords: ["SrcSrv, Srcsrv.ini file", "Srcsrv.ini file", "SrcSrv, SRCSRV_INI_FILE environment variable", "SRCSRV_INI_FILE environment variable"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # The Srcsrv.ini File

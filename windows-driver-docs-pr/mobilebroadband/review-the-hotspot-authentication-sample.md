@@ -2,7 +2,6 @@
 title: Review the hotspot authentication sample
 description: Review the hotspot authentication sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Review the hotspot authentication sample

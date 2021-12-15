@@ -3,7 +3,6 @@ title: Videos Debugging UMDF Drivers
 description: This topic contains a series of videos by Abhishek Ram that demonstrate how to debug User-Mode Driver Framework (UMDF) drivers.
 Search.SourceType: Video
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Videos: Debugging UMDF Drivers

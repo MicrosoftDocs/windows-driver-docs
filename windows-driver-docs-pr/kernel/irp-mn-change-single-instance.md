@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_CHANGE_SINGLE_INSTANCE'. All of the drivers
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_CHANGE_SINGLE_INSTANCE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_CHANGE\_SINGLE\_INSTANCE

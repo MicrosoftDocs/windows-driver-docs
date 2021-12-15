@@ -3,7 +3,6 @@ title: Using KDbgCtrl
 description: Using KDbgCtrl
 keywords: ["KDbgCtrl", "KDbgCtrl, basic use", "DbgPrint buffer, changing buffer size", "DbgPrint buffer, KDbgCtrl utility"]
 ms.date: 05/17/2018
-ms.localizationpriority: medium
 ---
 
 # Using KDbgCtrl

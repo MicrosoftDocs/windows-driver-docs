@@ -4,7 +4,6 @@ description: As a query, overlying drivers can use the OID_PM_CURRENT_CAPABILITI
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PM\_CURRENT\_CAPABILITIES

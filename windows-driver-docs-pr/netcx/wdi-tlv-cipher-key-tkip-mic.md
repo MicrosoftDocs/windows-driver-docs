@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_TKIP_MIC is a WiFiCx TLV that contains the TKIP 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_TKIP_MIC Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_TKIP\_MIC (dot11wificxtypes.hpp)

@@ -4,7 +4,6 @@ description: Building Device Metadata Packages
 keywords:
 - device metadata packages WDK , building
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Building Device Metadata Packages

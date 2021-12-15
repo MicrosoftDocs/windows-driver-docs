@@ -8,7 +8,6 @@ keywords:
 - BGR8888 WDK Windows 7 display
 - BGR8888 WDK Windows 7 display , conversion to XR_BIAS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Conversion from BGR8888 to XR\_BIAS

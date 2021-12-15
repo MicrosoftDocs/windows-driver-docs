@@ -9,7 +9,6 @@ api_name:
 - ks.dumpqueue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.dumpqueue

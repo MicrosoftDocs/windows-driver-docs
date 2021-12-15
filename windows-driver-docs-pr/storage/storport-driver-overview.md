@@ -6,7 +6,6 @@ keywords:
 - Storport drivers WDK
 - Storport drivers WDK , about Storport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storport Driver

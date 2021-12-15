@@ -6,7 +6,6 @@ keywords:
 - print spooler Directory Services support WDK
 - publishing WDK printer
 ms.date: 06/09/2020
-ms.localizationpriority: medium
 ---
 
 # Print Spooler Support for Printer Directory Services

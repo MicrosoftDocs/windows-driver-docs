@@ -2,7 +2,6 @@
 title: WSD Scan Service Operation Error Reporting
 description: WSD Scan Service Operation Error Reporting
 ms.date: 05/29/2020
-ms.localizationpriority: medium
 ---
 
 # WSD Scan Service Operation Error Reporting

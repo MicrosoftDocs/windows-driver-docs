@@ -2,7 +2,6 @@
 title: Universal camera driver design guide for Windows 10
 description: The camera driver interface for Windows 10 is converged for all devices and uses a universal camera driver model.
 ms.date: 03/23/2021
-ms.localizationpriority: medium
 ---
 
 # Universal camera driver design guide for Windows 10

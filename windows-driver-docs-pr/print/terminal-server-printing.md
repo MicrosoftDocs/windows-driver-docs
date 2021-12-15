@@ -5,7 +5,6 @@ keywords:
 - printer drivers WDK , terminal servers
 - terminal server printing WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Terminal Server Printing

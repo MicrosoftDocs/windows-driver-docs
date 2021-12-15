@@ -9,7 +9,6 @@ api_name:
 - ControlDeviceDeleted
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ControlDeviceDeleted rule (kmdf)

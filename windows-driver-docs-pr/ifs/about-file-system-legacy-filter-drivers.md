@@ -6,7 +6,6 @@ keywords:
 - file system legacy filter drivers WDK , about file system legacy filter drivers
 - what is a file system legacy filter driver
 ms.date: 10/16/2019
-ms.localizationpriority: medium
 ---
 
 # About File System Legacy Filter Drivers

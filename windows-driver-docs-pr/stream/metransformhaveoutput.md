@@ -2,7 +2,6 @@
 title: METransformHaveOutput
 description: The METransformHaveOutput event indicates that a device transform has a sample ready on one of its output streams.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # METransformHaveOutput

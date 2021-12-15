@@ -7,7 +7,6 @@ keywords:
 - extended surface capabilities WDK DirectDraw , flags
 - flags WDK DirectDraw extended surface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Surface Capability Flags

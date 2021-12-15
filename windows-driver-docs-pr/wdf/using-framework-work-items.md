@@ -5,7 +5,6 @@ keywords:
 - work items WDK KMDF
 - queues WDK KMDF , framework work items
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Framework Work Items

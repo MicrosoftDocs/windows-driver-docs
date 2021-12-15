@@ -4,7 +4,6 @@ description: All drivers that support methods within data blocks must handle thi
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_EXECUTE_METHOD Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_EXECUTE\_METHOD

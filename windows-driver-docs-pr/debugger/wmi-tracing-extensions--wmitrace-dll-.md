@@ -3,7 +3,6 @@ title: WMI Tracing Extensions (Wmitrace.dll)
 description: WMI Tracing Extensions (Wmitrace.dll)
 keywords: ["WMI tracing extensions (wmitrace.dll)", "wmitrace.dll (WMI tracing extensions)", "extensions, WMI tracing"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # WMI Tracing Extensions (Wmitrace.dll)

@@ -2,7 +2,6 @@
 title: Mobile operator notification event technical details
 description: Mobile operator notification event technical details
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mobile operator notification event technical details

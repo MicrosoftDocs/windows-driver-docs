@@ -2,7 +2,6 @@
 title: Overview of the Driver Package Selection Process
 description: Overview of the Driver Package Selection Process
 ms.date: 12/03/2021
-ms.localizationpriority: medium
 ---
 
 # Overview of the Driver Package Selection Process

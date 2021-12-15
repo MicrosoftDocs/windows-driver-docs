@@ -6,7 +6,6 @@ keywords:
 - retrieving INF file information
 - status information WDK INF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving Information from an INF File

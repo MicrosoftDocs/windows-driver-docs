@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfsetdriver
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfsetdriver

@@ -9,7 +9,6 @@ keywords:
 - GDI surface flipping WDK DirectDraw
 - surfaces WDK DirectDraw , flipping
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Flipping to the GDI Surface

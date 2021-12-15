@@ -5,7 +5,6 @@ keywords:
 - vertex shaders WDK DirectX 8.0 , programmable hardware
 - programmable vertex processing hardware WDK DirectX 8.0
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

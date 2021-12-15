@@ -6,7 +6,6 @@ keywords:
 - pure devices WDK DirectX 8.0 , D3DDP2OP_CLEAR DP2 token processing
 - D3DDP2OP_CLEAR WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing the D3DDP2OP\_CLEAR DP2 Token

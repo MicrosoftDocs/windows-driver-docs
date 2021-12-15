@@ -2,7 +2,6 @@
 title: Debugger Data Model - Operand Objects
 description: Individual operands of a machine instruction are described by operand objects.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Operand Objects 
 ## Summary

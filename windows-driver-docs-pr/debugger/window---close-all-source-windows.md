@@ -3,7 +3,6 @@ title: Window Close All Source Windows
 description: Window Close All Source Windows
 keywords: ["Window Close All Source Windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Window | Close All Source Windows

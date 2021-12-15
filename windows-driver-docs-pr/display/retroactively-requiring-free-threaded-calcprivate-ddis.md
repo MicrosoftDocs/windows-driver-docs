@@ -2,7 +2,6 @@
 title: Retroactively Requiring Free-Threaded CalcPrivate DDIs
 description: Retroactively Requiring Free-Threaded CalcPrivate DDIs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retroactively Requiring Free-Threaded CalcPrivate DDIs

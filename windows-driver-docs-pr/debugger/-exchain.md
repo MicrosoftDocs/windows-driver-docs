@@ -9,7 +9,6 @@ api_name:
 - exchain
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !exchain

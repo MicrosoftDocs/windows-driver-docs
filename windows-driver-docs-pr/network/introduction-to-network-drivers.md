@@ -4,7 +4,6 @@ description: Introduction to Network Drivers
 keywords:
 - network drivers WDK , about network drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Network Drivers Topics

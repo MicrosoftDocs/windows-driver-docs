@@ -2,7 +2,6 @@
 description: The goal of device testing is to test device usage against various hub scenarios and systems power states.
 title: USB device testing with MUTT devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB device testing with MUTT devices

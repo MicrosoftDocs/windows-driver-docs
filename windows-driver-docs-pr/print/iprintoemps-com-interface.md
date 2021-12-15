@@ -4,7 +4,6 @@ description: IPrintOemPS COM Interface
 keywords:
 - IPrintOemPS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrintOemPS COM Interface

@@ -7,7 +7,6 @@ keywords:
 - SRB_FUNCTION_FLUSH
 - SRB_FUNCTION_SHUTDOWN
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN

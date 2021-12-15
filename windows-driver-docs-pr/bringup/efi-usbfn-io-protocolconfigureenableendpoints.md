@@ -2,7 +2,6 @@
 title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
 description: The ConfigureEnableEndpoints function initializes endpoints based on supplied device and configuration descriptors.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints

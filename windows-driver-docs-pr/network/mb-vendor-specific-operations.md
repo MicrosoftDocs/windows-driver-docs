@@ -2,7 +2,6 @@
 title: MB Vendor Specific Operations
 description: MB Vendor Specific Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Vendor Specific Operations

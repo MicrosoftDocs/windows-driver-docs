@@ -5,7 +5,6 @@ keywords:
 - Direct3D WDK Windows 2000 display , operation codes
 - operation codes WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Improving Performance of Operation Handling

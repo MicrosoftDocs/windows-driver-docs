@@ -7,7 +7,6 @@ keywords:
 - Windows 2000 display driver model WDK
 - display drivers WDK , Windows 2000
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows 2000 Display Driver Model (XDDM) Design Guide

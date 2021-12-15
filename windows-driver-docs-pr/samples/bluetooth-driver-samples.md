@@ -2,7 +2,6 @@
 title: Bluetooth driver samples
 description: The driver samples in this directory provide a starting point for writing a custom Bluetooth driver for your device.
 ms.date: 11/15/2019
-ms.localizationpriority: medium
 ---
 
 # Bluetooth driver samples

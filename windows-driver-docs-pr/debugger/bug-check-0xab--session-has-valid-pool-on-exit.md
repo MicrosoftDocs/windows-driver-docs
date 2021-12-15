@@ -9,7 +9,6 @@ api_name:
 - SESSION_HAS_VALID_POOL_ON_EXIT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xAB: SESSION\_HAS\_VALID\_POOL\_ON\_EXIT

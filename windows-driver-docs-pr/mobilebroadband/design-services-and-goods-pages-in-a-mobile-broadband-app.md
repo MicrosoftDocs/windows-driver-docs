@@ -2,7 +2,6 @@
 title: Design services and goods pages in a mobile broadband app
 description: Design services and goods pages in a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design services and goods pages in a mobile broadband app

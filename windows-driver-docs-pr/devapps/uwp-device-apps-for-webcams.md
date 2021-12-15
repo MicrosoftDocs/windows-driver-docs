@@ -2,7 +2,6 @@
 title: UWP device apps for cameras
 description: This section introduces UWP device apps for cameras.
 ms.date: 08/12/2021
-ms.localizationpriority: medium
 ---
 
 # UWP device apps for cameras

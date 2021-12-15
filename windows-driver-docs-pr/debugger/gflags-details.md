@@ -3,7 +3,6 @@ title: GFlags Details
 description: GFlags Details
 keywords: ["GFlags, details"]
 ms.date: 04/12/2019
-ms.localizationpriority: medium
 ---
 
 # GFlags Details

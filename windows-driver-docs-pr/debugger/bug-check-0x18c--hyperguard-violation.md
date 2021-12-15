@@ -9,7 +9,6 @@ api_name:
 - HYPERGUARD_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x18C: HYPERGUARD\_VIOLATION 

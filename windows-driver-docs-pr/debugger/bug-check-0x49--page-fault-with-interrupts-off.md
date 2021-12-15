@@ -9,7 +9,6 @@ api_name:
 - PAGE_FAULT_WITH_INTERRUPTS_OFF
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x49: PAGE\_FAULT\_WITH\_INTERRUPTS\_OFF

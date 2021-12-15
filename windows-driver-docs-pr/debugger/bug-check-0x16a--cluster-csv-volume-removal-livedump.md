@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x16A: CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP

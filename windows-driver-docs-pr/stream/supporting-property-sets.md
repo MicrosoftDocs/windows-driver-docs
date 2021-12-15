@@ -7,7 +7,6 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , property sets
 - property sets WDK streaming minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Property Sets

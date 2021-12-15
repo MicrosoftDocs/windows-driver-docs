@@ -9,7 +9,6 @@ api_name:
 - NO_MORE_SYSTEM_PTES
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x3F: NO\_MORE\_SYSTEM\_PTES

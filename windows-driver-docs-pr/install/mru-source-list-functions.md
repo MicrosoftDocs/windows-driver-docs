@@ -7,7 +7,6 @@ keywords:
 - MRU source lists WDK SetupAPI
 - source lists WDK MRU
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MRU Source List Functions

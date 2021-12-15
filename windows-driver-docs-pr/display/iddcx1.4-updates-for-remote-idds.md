@@ -7,7 +7,6 @@ keywords:
 - Remote IDD, IddCx versions 1.4 and later
 - Remote indirect display driver
 - Remote IDD
-ms.localizationpriority: medium
 ---
 
 # IddCx 1.4 updates for remote IDDs

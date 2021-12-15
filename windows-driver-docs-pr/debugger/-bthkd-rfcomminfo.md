@@ -9,7 +9,6 @@ api_name:
 - bthkd.rfcomminfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bthkd.rfcomminfo

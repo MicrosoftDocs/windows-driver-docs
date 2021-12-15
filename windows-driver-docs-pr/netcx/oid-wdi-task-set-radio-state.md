@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_SET_RADIO_STATE task command is used to set the Wi
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_SET_RADIO_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_SET\_RADIO\_STATE (dot11wificxintf.h)

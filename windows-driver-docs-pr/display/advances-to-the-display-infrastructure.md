@@ -2,7 +2,6 @@
 title: Advances to the display Infrastructure
 description: Windows 8 provides enhancements and optimizations to the display infrastructure to further improve the user experience.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Advances to the display Infrastructure

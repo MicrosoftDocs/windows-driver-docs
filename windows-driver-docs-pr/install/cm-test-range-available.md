@@ -8,7 +8,6 @@ api_name:
 - CM_Test_Range_Available
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

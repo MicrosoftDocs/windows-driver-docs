@@ -2,7 +2,6 @@
 title: Enable Code Integrity Event Logging and System Auditing
 description: Describes how to Enable Code Integrity Event Logging and System Auditing.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Appendix 3: Enable Code Integrity Event Logging and System Auditing

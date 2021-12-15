@@ -9,7 +9,6 @@ api_name:
 - EvtIoStopCompleteOrStopAck
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # EvtIoStopCompleteOrStopAck rule (kmdf)

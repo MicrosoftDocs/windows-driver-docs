@@ -2,7 +2,6 @@
 title: Append Info to Windows 7 Display Driver Friendly Names
 description: Describes the information you must append to the friendly string name for Windows 7 Display Drivers.
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

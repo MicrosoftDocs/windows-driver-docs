@@ -9,7 +9,6 @@ keywords:
 - buffer description list WDK DirectX VA
 - DXVA_BufferDescription
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Buffer Description List

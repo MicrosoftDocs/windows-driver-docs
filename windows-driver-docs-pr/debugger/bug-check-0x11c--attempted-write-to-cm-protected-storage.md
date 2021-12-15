@@ -9,7 +9,6 @@ api_name:
 - ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11C: ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE

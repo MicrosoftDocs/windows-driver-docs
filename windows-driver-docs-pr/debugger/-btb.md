@@ -9,7 +9,6 @@ api_name:
 - btb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !btb

@@ -9,7 +9,6 @@ api_name:
 - SCSI_VERIFIER_DETECTED_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF1: SCSI\_VERIFIER\_DETECTED\_VIOLATION

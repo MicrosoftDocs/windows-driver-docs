@@ -2,7 +2,6 @@
 title: Creating a sensor driver
 description: Creating a sensor driver
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Creating a sensor driver

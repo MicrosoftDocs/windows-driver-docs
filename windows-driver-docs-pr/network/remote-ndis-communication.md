@@ -2,7 +2,6 @@
 title: 'Remote NDIS Communication'
 description: 'Remote NDIS Communication'
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # Remote NDIS Communication

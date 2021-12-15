@@ -1,7 +1,6 @@
 ---
 title: Indicator implementation
 description: This topic describes indicator implementation.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

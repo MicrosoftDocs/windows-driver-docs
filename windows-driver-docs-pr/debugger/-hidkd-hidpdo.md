@@ -9,7 +9,6 @@ api_name:
 - hidkd.hidpdo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !hidkd.hidpdo

@@ -4,7 +4,6 @@ description: The HS_PLUGIN_STOP_POST_CONNECT_AUTH function is called to notify t
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_STOP_POST_CONNECT_AUTH) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_STOP\_POST\_CONNECT\_AUTH function

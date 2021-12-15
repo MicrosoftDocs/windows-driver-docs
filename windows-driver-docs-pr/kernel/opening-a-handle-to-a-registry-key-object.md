@@ -3,7 +3,6 @@ title: Opening a Handle to a Registry-Key Object
 description: Opening a Handle to a Registry-Key Object
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel", "opening handle to registry-key object", "handle to registry-key object WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Opening a Handle to a Registry-Key Object

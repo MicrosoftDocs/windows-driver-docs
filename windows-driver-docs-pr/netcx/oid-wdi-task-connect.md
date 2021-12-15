@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_CONNECT task command requests that the IHV compone
 ms.date: 10/30/2021
 keywords:
  - OID_WDI_TASK_CONNECT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_CONNECT (dot11wificxintf.h)

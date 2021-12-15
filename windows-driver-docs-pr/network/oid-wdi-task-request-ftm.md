@@ -4,7 +4,6 @@ description: OID_WDI_TASK_REQUEST_FTM is issued to the LE to initiate Fine Timin
 ms.date: 05/07/2021
 keywords:
  - OID_WDI_TASK_REQUEST_FTM Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

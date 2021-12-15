@@ -9,7 +9,6 @@ api_name:
 - BUGCODE_ID_DRIVER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD2: BUGCODE\_ID\_DRIVER

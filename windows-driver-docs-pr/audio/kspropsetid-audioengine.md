@@ -2,7 +2,6 @@
 title: KSPROPSETID\_AudioEngine
 description: The KSPROPSETID\_AudioEngine property set contains KS properties that the audio driver can use to provide more information about the hardware audio engine node.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_AudioEngine

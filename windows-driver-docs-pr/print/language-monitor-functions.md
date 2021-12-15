@@ -4,7 +4,6 @@ description: Language Monitor Functions
 keywords:
 - language monitors WDK print , functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Language Monitor Functions

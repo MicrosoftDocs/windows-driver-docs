@@ -6,7 +6,6 @@ keywords:
 - UMDF WDK , debugging scenarios, UMDF indicates outstanding files at device removal time
 - UMDF WDK , UMDF indicates outstanding files at device removal time
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining Why UMDF Indicates Outstanding Files at Device Removal Time

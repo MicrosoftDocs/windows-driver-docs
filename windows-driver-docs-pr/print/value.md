@@ -4,7 +4,6 @@ description: The WSD Value construct allows you to extend the bidi communication
 keywords:
 - Value construct
 ms.date: 06/12/2020
-ms.localizationpriority: medium
 ---
 
 # Value (WSD)

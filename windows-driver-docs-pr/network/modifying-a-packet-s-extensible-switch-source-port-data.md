@@ -2,7 +2,6 @@
 title: Modifying a Packet's Extensible Switch Source Port Data
 description: Modifying a Packet's Extensible Switch Source Port Data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modifying a Packet's Extensible Switch Source Port Data

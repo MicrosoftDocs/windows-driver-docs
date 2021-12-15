@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 10/26/2021
-ms.localizationpriority: medium
 ---
 
 # IRP_MJ_DIRECTORY_CONTROL (IFS)

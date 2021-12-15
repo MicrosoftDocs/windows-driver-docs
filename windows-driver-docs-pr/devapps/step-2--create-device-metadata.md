@@ -2,7 +2,6 @@
 title: Step 2 Create device metadata for your UWP device app
 description: This topic describes how to use the Device Metadata Authoring Wizard to create new device metadata that associates your UWP device app with a device.
 ms.date: 08/12/2021
-ms.localizationpriority: medium
 ---
 
 # Step 2: Create device metadata for your UWP device app

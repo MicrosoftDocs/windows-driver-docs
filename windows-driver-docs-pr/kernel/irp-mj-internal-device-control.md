@@ -4,7 +4,6 @@ description: In general, any replacement for an existing driver that supports in
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_INTERNAL_DEVICE_CONTROL Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL

@@ -6,7 +6,6 @@ keywords:
 - request objects WDK KMDF , processing I/O requests
 - request processing WDK KMDF , options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing I/O Requests

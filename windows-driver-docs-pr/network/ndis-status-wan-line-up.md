@@ -4,7 +4,6 @@ description: The NDIS_STATUS_WAN_LINE_UP status indicates that a WAN-capable min
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WAN_LINE_UP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WAN\_LINE\_UP

@@ -7,7 +7,6 @@ keywords:
 - display driver model WDK Windows Vista , requirements
 - Windows Vista display driver model WDK , requirements
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

@@ -8,7 +8,6 @@ keywords:
 - tessellation mapping WDK DirectX 9.0
 - patched surfaces WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting High-Order Patched Surfaces

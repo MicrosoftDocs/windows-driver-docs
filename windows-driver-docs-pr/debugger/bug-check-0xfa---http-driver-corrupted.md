@@ -9,7 +9,6 @@ api_name:
 - HTTP_DRIVER_CORRUPTED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xFA: HTTP\_DRIVER\_CORRUPTED

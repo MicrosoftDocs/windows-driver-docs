@@ -6,7 +6,6 @@ keywords:
 - UMDF WDK , debugging scenarios, reflector terminates the host process
 - UMDF WDK , reflector terminates the host process
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining Why the Reflector Terminated the Host Process

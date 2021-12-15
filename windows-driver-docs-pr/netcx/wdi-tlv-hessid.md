@@ -4,7 +4,6 @@ description: WDI_TLV_HESSID is a WiFiCx TLV that contains a list of HESSIDs.
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_HESSID, WiFiCx
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_HESSID (dot11wificxtypes.hpp)

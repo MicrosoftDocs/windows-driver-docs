@@ -3,7 +3,6 @@ title: Determining the Cause of a Video Stream Stall
 description: Determining the Cause of a Video Stream Stall
 keywords: ["kernel streaming debugging, video stream stall, cause"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the Cause of a Video Stream Stall

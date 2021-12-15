@@ -3,7 +3,6 @@ title: GFlags Flag Table
 description: GFlags Flag Table
 keywords: ["GFlags, flag table"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # GFlags Flag Table

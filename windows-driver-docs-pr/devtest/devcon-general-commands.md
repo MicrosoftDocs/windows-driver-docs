@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: high 
 ---
 
 # Device Console (DevCon.exe) Commands

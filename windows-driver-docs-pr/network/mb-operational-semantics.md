@@ -2,7 +2,6 @@
 title: MB Operational Semantics
 description: MB Operational Semantics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Operational Semantics

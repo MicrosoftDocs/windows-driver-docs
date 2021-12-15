@@ -3,7 +3,6 @@ title: Enable close exception
 description: Enable close exception
 keywords: ["Enable close exception (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable close exception

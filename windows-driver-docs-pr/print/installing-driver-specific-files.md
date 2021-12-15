@@ -5,7 +5,6 @@ keywords:
 - Point and Print WDK , driver-specific files
 - driver-specific files WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Driver-Specific Files

@@ -9,7 +9,6 @@ keywords:
 - VPEs WDK DirectDraw , initialization
 - initializing DirectX VPE functionality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectX VPE Initialization

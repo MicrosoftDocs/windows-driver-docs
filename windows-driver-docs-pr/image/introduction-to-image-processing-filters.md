@@ -2,7 +2,6 @@
 title: Introduction to Image Processing Filters
 description: Introduction to Image Processing Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Image Processing Filters

@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfdmatransaction
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdmatransaction

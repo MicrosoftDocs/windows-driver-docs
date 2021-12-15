@@ -2,7 +2,6 @@
 title: Overview of NVGRE Task Offload
 description: Describes an overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload

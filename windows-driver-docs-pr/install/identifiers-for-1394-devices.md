@@ -10,7 +10,6 @@ keywords:
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Identifiers for 1394 Devices

@@ -4,7 +4,6 @@ description: OID_WDI_SET_MULTICAST_LIST specifies the multicast address list for
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_MULTICAST_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

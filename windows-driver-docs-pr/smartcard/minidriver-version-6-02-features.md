@@ -2,7 +2,6 @@
 title: Minidriver Version 6.02 Features
 description: Minidriver Version 6.02 Features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minidriver Version 6.02 Features

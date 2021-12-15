@@ -3,7 +3,6 @@ title: Using the Scratch Pad
 description: Using the Scratch Pad
 keywords: ["debugging information windows, Scratch Pad", "Scratch Pad"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Scratch Pad

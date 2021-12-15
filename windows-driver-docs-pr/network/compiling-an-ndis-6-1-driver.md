@@ -5,7 +5,6 @@ keywords:
 - NDIS WDK , compile flags
 - compile flags WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Compiling an NDIS 6.1 Driver

@@ -6,7 +6,6 @@ keywords:
 - multiple render targets WDK DirectX 9.0 , required features
 - simultaneous render targets WDK DirectX 9.0 , required features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Required Features for Multiple Render Targets

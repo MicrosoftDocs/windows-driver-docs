@@ -9,7 +9,6 @@ api_name:
 - ACPI_BIOS_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA5: ACPI\_BIOS\_ERROR

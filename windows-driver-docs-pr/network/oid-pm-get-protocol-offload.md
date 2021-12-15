@@ -4,7 +4,6 @@ description: An overlying driver issues an OID method request of OID_PM_GET_PROT
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_GET_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PM\_GET\_PROTOCOL\_OFFLOAD

@@ -3,7 +3,6 @@ title: Using Safe String Functions
 description: Using Safe String Functions
 keywords: ["safe string functions WDK", "string manipulation functions WDK", "buffers WDK safe string functions"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Safe String Functions

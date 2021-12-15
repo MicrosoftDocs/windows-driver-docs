@@ -4,7 +4,6 @@ description: Getting started with hardware codec support in AVStream
 keywords:
 - hardware codec support WDK AVStream , using
 ms.date: 06/18/2020
-ms.localizationpriority: medium
 ---
 
 # Getting started with hardware codec support in AVStream

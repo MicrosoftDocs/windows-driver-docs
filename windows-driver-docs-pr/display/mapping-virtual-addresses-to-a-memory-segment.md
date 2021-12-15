@@ -11,7 +11,6 @@ keywords:
 - linear memory-space segments WDK display
 - memory-space segments WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping Virtual Addresses to a Memory Segment

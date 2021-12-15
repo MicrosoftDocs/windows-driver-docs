@@ -9,7 +9,6 @@ api_name:
 - .for
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .for

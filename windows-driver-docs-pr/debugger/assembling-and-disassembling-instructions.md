@@ -3,7 +3,6 @@ title: Assembling and Disassembling Instructions
 description: Assembling and Disassembling Instructions
 keywords: ["Debugger Engine API, assembling and disassembling"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Assembling and Disassembling Instructions

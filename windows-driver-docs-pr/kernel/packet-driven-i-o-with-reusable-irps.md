@@ -3,7 +3,6 @@ title: Packet-Driven I/O with Reusable IRPs
 description: Packet-Driven I/O with Reusable IRPs
 keywords: ["I/O stack locations WDK kernel", "packet-driven I/O WDK kernel", "reusing IRPs WDK kernel", "headers WDK kernel", "I/O manager communication WDK kernel", "I/O status blocks WDK kernel", "status blocks WDK kernel", "stack locations WDK kernel", "IRPs WDK kernel , reusing"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Packet-Driven I/O with Reusable IRPs

@@ -2,7 +2,6 @@
 title: Importing Certificates from a File
 description: Importing Certificates from a File
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Importing Certificates from a File

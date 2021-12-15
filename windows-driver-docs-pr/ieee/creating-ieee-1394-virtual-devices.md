@@ -6,7 +6,6 @@ keywords:
 - hardware emulation drivers WDK IEEE 1394 bus
 - virtual devices WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating IEEE 1394 Virtual Devices

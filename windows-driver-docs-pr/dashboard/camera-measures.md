@@ -3,7 +3,6 @@ title: Camera measures
 description: Camera measures filter out benign initialization errors during Bluetooth driver flighting
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Camera measures

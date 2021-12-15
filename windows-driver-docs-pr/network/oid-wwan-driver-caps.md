@@ -4,7 +4,6 @@ description: OID_WWAN_DRIVER_CAPS returns the version of the MB driver model sup
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DRIVER_CAPS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DRIVER\_CAPS

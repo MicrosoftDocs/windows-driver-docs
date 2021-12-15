@@ -9,7 +9,6 @@ keywords:
 - IOCTL_HID_SET_Xxx requests WDK HID
 - HID reports WDK , sending
 ms.date: 09/10/2020
-ms.localizationpriority: medium
 ---
 
 # Sending HID Reports

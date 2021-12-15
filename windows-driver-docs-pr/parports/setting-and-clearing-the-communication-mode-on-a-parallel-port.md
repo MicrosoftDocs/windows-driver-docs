@@ -5,7 +5,6 @@ keywords:
 - parallel ports WDK , communication modes
 - communication modes WDK parallel ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting and Clearing the Communication Mode on a Parallel Port

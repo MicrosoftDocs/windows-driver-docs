@@ -6,7 +6,6 @@ keywords:
 - TMC files WDK
 - files WDK software tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trace Message Control File

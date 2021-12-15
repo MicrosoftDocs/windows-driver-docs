@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbver
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbver

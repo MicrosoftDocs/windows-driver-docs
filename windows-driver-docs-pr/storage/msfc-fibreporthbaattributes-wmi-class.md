@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FibrePortHBAAttributes WMI Class
 description: MSFC\_FibrePortHBAAttributes WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -5,7 +5,6 @@ ms.assetid:
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_GCMP_256_KEY Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY (dot11wificxtypes.hpp)

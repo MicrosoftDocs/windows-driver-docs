@@ -9,7 +9,6 @@ api_name:
 - IrqlKeWaitForMultipleObjects
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlKeWaitForMultipleObjects rule (wdm)

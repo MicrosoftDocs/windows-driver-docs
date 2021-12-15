@@ -11,7 +11,6 @@ keywords:
 - DDSCAPS2_VERTEXBUFFER
 - DDSCAPS2_COMMANDBUFFER
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command and Vertex Buffer Allocation

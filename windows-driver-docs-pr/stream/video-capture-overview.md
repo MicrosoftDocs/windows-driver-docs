@@ -6,7 +6,6 @@ keywords:
 - capturing video WDK AVStream , about video capture
 - video capture WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Capture Overview

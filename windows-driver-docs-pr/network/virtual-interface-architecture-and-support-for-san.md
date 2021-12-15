@@ -7,7 +7,6 @@ keywords:
 - VI architecture WDK SANs
 - Virtual Interface architecture WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Interface Architecture and Support for SAN

@@ -9,7 +9,6 @@ api_name:
 - EMPTY_THREAD_REAPER_LIST
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x13: EMPTY\_THREAD\_REAPER\_LIST

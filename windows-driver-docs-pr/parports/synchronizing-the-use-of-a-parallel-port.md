@@ -5,7 +5,6 @@ keywords:
 - parallel ports WDK , synchronization
 - synchronization WDK parallel ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Synchronizing the Use of a Parallel Port

@@ -7,7 +7,6 @@ keywords:
 - miniport drivers WDK
 - miniport drivers WDK , porting to NDIS 6.20
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Summary of Changes Required to Port a Miniport Driver to NDIS 6.20

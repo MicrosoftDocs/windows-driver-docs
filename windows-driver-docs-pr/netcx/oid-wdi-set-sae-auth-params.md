@@ -4,7 +4,6 @@ description: The OID_WDI_SET_SAE_AUTH_PARAMS command contains parameters require
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_SAE_AUTH_PARAMS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WDI_SET_SAE_AUTH_PARAMS (dot11wificxintf.h)

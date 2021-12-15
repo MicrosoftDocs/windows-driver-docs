@@ -4,7 +4,6 @@ description: Power-down sequence for a NetAdapterCx client driver
 keywords:
 - Power-down sequence for a NetAdapterCx client driver
 ms.date: 08/07/2018
-ms.localizationpriority: medium
 ---
 
 # Power-down sequence for a NetAdapterCx client driver

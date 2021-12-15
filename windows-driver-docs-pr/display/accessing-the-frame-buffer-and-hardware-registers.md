@@ -12,7 +12,6 @@ keywords:
 - banked memory WDK Windows 2000 display
 - linear frame buffers WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing the Frame Buffer and Hardware Registers

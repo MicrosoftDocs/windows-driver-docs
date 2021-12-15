@@ -4,7 +4,6 @@ description: Any WMI driver that registers one or more of its data blocks as pot
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_ENABLE_COLLECTION Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_ENABLE\_COLLECTION

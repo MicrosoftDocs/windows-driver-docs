@@ -2,7 +2,6 @@
 title: Legacy Audio Device Messages
 description: Legacy Audio Device Messages
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Legacy Audio Device Messages

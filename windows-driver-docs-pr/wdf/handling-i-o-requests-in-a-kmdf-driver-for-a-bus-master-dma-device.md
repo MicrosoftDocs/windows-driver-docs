@@ -7,7 +7,6 @@ keywords:
 - I/O requests WDK KMDF , DMA devices
 - request processing WDK KMDF , DMA devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device

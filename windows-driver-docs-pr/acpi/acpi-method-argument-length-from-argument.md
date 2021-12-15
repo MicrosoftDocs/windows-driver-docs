@@ -4,7 +4,6 @@ description: The ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro calculates the 
 keywords: 
 - ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro ACPI Devices
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro

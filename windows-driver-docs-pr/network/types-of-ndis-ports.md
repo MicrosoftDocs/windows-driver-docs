@@ -5,7 +5,6 @@ keywords:
 - ports WDK NDIS , types
 - NDIS ports WDK , types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Types of NDIS Ports

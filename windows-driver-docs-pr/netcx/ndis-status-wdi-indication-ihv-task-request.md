@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST to r
 ms.date: 07/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST (dot11wificxintf.h)

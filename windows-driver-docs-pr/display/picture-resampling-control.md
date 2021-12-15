@@ -7,7 +7,6 @@ keywords:
 - reference picture resampling WDK DirectX VA
 - resampling pictures WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Picture Resampling Control

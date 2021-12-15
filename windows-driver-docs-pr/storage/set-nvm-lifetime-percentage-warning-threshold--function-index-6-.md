@@ -1,7 +1,6 @@
 ---
 title: Set NVM Lifetime Percentage Warning Threshold (Function Index 6)
 description: This function sets the warning threshold for remaining non-volatile memory lifetime percentage.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

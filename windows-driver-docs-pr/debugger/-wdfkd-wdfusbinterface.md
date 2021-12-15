@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfusbinterface
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfusbinterface

@@ -2,7 +2,6 @@
 title: Managing Switch Policies
 description: Managing Switch Policies
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Switch Policies

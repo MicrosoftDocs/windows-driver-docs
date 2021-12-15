@@ -7,7 +7,6 @@ keywords:
 - user-mode drivers WDK UMDF , driver failures
 - failed drivers WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How UMDF Handles Driver Failures

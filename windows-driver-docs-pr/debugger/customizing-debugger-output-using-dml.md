@@ -2,7 +2,6 @@
 title: Customizing Debugger Output Using DML
 description: The debugger markup language (DML) provides a mechanism for enhancing output from the debugger and extensions.
 ms.date: 11/13/2018
-ms.localizationpriority: medium
 ---
 
 # Customizing Debugger Output Using DML

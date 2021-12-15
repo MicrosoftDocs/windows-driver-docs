@@ -2,7 +2,6 @@
 title: Still Image SCSI I/O Control Codes
 description: Still Image SCSI I/O Control Codes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Still Image SCSI I/O Control Codes

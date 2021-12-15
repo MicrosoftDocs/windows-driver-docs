@@ -9,7 +9,6 @@ api_name:
 - MICROCODE_REVISION_MISMATCH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x17E: MICROCODE\_REVISION\_MISMATCH

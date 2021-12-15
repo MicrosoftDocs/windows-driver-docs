@@ -4,7 +4,6 @@ description: Physical Configuration of Parallel Ports
 keywords:
 - parallel ports WDK , port configurations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Physical Configuration of Parallel Ports

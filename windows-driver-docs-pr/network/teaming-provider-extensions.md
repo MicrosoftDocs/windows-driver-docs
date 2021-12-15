@@ -2,7 +2,6 @@
 title: Teaming Provider Extensions
 description: Teaming Provider Extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Teaming Provider Extensions

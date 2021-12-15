@@ -9,7 +9,6 @@ api_name:
 - IoBuildFsdIrpSignalEventInCompletion2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildFsdIrpSignalEventInCompletion2 rule (wdm)

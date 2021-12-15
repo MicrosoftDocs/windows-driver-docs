@@ -1,7 +1,6 @@
 ---
 title: Button reporting
 description: The in-box general-purpose I/O (GPIO) button driver reports to Windows, based on the interrupts that are received on the defined GPIO resources of the button array.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

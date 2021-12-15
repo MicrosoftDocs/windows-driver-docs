@@ -10,7 +10,6 @@ keywords:
 - CPSUI WDK print , about CPSUI
 - property sheet pages WDK print , about CPSUI with printer drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using CPSUI with Printer Drivers

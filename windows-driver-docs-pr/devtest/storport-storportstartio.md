@@ -9,7 +9,6 @@ api_name:
 - StorPortStartIo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortStartIo rule (storport)

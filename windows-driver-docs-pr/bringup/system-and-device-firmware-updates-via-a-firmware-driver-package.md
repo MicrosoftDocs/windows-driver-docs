@@ -2,7 +2,6 @@
 title: System and device firmware updates via a firmware driver package
 description: Describes deploying a firmware update using a firmware driver package.
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # System and device firmware updates via a firmware driver package

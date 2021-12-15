@@ -7,7 +7,6 @@ keywords:
 - mounting volumes WDK file systems
 - volumes WDK file system , mounting
 ms.date: 10/16/2019
-ms.localizationpriority: medium
 ---
 
 # Volume Mount Example

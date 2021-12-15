@@ -3,7 +3,6 @@ title: File Image File Path
 description: File Image File Path
 keywords: ["File Image File Path", "executable files and paths, File Image File Path"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Image File Path

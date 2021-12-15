@@ -9,7 +9,6 @@ keywords:
 - bus-master DMA NICs WDK networking
 - non-bus-master DMA NICs WDK networking
 ms.date: 06/11/2018
-ms.localizationpriority: medium
 ---
 
 # Network Interface Card Support

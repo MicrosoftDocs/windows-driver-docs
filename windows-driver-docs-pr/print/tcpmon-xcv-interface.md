@@ -7,7 +7,6 @@ keywords:
 - Xcv interface WDK print
 - TCPMON Xcv interface WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TCPMON Xcv Interface

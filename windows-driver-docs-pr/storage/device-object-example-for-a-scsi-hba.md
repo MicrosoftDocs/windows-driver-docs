@@ -6,7 +6,6 @@ keywords:
 - device objects WDK storage
 - SCSI HBA device object example WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Object Example for a SCSI HBA

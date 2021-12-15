@@ -2,7 +2,6 @@
 title: WindowsInfo XML Document
 description: WindowsInfo XML Document
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WindowsInfo XML Document

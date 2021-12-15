@@ -4,7 +4,6 @@ description: AVStream Architecture Advanced Topics
 keywords:
 - AVStream WDK , architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AVStream Architecture: Advanced Topics

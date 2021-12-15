@@ -2,7 +2,6 @@
 title: C28742 warning
 description: Warning C28742 Unannotated buffer in the function.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28742"
 ---

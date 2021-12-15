@@ -3,7 +3,6 @@ title: Creating a Device Object
 description: Learn about creating a device object for WDM function and filter drivers, WDM bus drivers, and non-WDM drivers.
 keywords: ["device objects WDK kernel , creating", "non-WDM driver device objects WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Device Object

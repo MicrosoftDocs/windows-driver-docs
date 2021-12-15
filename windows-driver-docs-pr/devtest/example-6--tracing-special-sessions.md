@@ -4,7 +4,6 @@ description: Example 6 Tracing Special Sessions
 keywords:
 - Tracefmt WDK , special sessions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 6: Tracing Special Sessions

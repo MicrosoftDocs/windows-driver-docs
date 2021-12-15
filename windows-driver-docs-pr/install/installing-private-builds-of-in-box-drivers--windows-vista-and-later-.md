@@ -2,7 +2,6 @@
 title: Installing Private Builds of Inbox Drivers
 description: Installing Private Builds of Inbox Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Private Builds of Inbox Drivers

@@ -3,7 +3,6 @@ title: Handling IRP_MN_QUERY_POWER for System Power States
 description: Handling IRP_MN_QUERY_POWER for System Power States
 keywords: ["IRP_MN_QUERY_POWER", "system power states WDK kernel , IRP_MN_QUERY_POWER", "query-power IRPs WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling IRP\_MN\_QUERY\_POWER for System Power States

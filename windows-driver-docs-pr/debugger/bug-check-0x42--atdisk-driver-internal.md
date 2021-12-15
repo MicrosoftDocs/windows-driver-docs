@@ -9,7 +9,6 @@ api_name:
 - ATDISK_DRIVER_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x42: ATDISK\_DRIVER\_INTERNAL

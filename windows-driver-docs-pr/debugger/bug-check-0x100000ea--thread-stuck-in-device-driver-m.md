@@ -9,7 +9,6 @@ api_name:
 - THREAD_STUCK_IN_DEVICE_DRIVER_M
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x100000EA: THREAD\_STUCK\_IN\_DEVICE\_DRIVER\_M

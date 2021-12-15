@@ -8,7 +8,6 @@ keywords:
 - protected video WDK COPP , signal protection
 - signal protection WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Instructing How to Protect the Signal

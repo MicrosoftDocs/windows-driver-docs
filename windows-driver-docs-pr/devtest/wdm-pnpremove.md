@@ -9,7 +9,6 @@ api_name:
 - PnpRemove
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PnpRemove rule (wdm)

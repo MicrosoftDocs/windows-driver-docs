@@ -6,7 +6,6 @@ keywords:
 - private data validation WDK display
 - invalid private data WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Validating Private Data Sent from User Mode to Kernel Mode

@@ -7,7 +7,6 @@ keywords:
 - PnP WDK print
 - Plug and Play WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Plug and Play for Printers

@@ -4,7 +4,6 @@ description: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME is a TLV that contains the 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME

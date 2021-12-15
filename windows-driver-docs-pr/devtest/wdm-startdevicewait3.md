@@ -9,7 +9,6 @@ api_name:
 - StartDeviceWait3
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StartDeviceWait3 rule (wdm)

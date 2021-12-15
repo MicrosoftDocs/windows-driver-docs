@@ -2,7 +2,6 @@
 title: Partition Layout
 description: Provides information about partition layout for Windows 10 Mobile.
 ms.date: 09/28/2021
-ms.localizationpriority: medium
 ---
 
 # Windows 10 Mobile partition layout

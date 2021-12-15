@@ -3,7 +3,6 @@ title: Errors in Handling Cleanup and Close Operations
 description: Errors in Handling Cleanup and Close Operations
 keywords: ["reliability WDK kernel , errors", "DispatchClose", "DispatchCleanup", "cleanup errors WDK kernel", "close errors WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Errors in Handling Cleanup and Close Operations

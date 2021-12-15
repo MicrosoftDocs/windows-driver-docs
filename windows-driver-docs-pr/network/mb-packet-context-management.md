@@ -2,7 +2,6 @@
 title: MB Packet Context Management
 description: MB Packet Context Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Packet Context Management

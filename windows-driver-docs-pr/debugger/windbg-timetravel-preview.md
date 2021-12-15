@@ -2,7 +2,6 @@
 title: WinDbg Preview - Time Travel 
 description: This section describes how work with the time travel menu.
 ms.date: 01/10/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Time Travel Menu

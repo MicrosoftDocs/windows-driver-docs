@@ -2,7 +2,6 @@
 title: Remote NDIS Data Message
 description: Remote NDIS Data Message
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # Remote NDIS Data Message

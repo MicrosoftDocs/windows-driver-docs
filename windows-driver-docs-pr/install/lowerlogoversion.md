@@ -4,7 +4,6 @@ description: LowerLogoVersion
 keywords:
 - LowerLogoVersion
 ms.date: 12/03/2021
-ms.localizationpriority: medium
 ---
 
 # LowerLogoVersion

@@ -9,7 +9,6 @@ api_name:
 - vm
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vm

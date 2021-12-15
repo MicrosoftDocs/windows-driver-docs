@@ -9,7 +9,6 @@ keywords:
 - opening streams WDK AVStream
 - closing streams WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening and Closing a Stream

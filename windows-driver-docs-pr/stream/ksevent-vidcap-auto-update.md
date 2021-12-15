@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 10/11/2021
-ms.localizationpriority: medium
 ---
 
 # KSEVENT_VIDCAP_AUTO_UPDATE

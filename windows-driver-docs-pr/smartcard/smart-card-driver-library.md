@@ -5,7 +5,6 @@ keywords:
 - smart card drivers WDK , library
 - library WDK smart card
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Smart Card Driver Library

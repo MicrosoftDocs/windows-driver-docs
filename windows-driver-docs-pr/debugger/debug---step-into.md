@@ -3,7 +3,6 @@ title: Debug Step Into
 description: Debug Step Into
 keywords: ["Debug Step Into", "controlling the target, Debug Step Into"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Step Into

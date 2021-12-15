@@ -2,7 +2,6 @@
 title: Still Image Drivers
 description: Still Image Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Still Image Drivers

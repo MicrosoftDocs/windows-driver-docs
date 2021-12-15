@@ -4,7 +4,6 @@ description: WDI_TLV_CANCEL_PARAMETERS is a WiFiCx TLV that contains parameters 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CANCEL_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CANCEL\_PARAMETERS (dot11wificxtypes.hpp)

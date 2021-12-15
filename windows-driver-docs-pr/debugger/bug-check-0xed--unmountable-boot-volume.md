@@ -9,7 +9,6 @@ api_name:
 - UNMOUNTABLE_BOOT_VOLUME
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xED: UNMOUNTABLE\_BOOT\_VOLUME

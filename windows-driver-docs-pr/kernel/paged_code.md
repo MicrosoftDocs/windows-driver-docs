@@ -1,7 +1,6 @@
 ---
 title: PAGED_CODE macro
 description: PAGED_CODE macro
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -5,7 +5,6 @@ keywords:
 - parallel ports WDK , creating
 - parallel ports WDK , starting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating and Starting a Parallel Port

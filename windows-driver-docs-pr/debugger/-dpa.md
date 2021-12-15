@@ -9,7 +9,6 @@ api_name:
 - dpa
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dpa

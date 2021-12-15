@@ -3,7 +3,6 @@ title: View Toolbar
 description: View Toolbar
 keywords: ["View Toolbar", "toolbar (WinDbg), View Toolbar"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Toolbar

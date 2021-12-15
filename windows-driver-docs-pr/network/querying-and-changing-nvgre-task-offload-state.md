@@ -2,7 +2,6 @@
 title: Querying and Changing NVGRE Task Offload State
 description: This section describes how to query or change the current Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload state of an NVGRE-capable miniport driver.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying and Changing NVGRE Task Offload State

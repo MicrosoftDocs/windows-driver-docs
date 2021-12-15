@@ -2,7 +2,6 @@
 title: Rendering Pipeline
 description: Rendering Pipeline
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rendering Pipeline

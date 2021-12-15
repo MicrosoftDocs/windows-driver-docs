@@ -2,7 +2,6 @@
 title: Hardware Resource Management
 description: Hardware Resource Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Resource Management

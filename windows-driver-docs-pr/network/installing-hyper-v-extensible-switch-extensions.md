@@ -2,7 +2,6 @@
 title: Installing Hyper-V Extensible Switch Extensions
 description: Installing Hyper-V Extensible Switch Extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Hyper-V Extensible Switch Extensions

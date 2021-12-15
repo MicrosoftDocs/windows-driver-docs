@@ -2,7 +2,6 @@
 title: Introduction to Crash Dump Filter Drivers
 description: Crash Dump Filter Drivers
 ms.date: 12/15/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to Crash Dump Filter Drivers

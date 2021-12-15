@@ -4,7 +4,6 @@ description: WDI_TLV_HESSID_INFO is a WiFiCx TLV that contains HESSID informatio
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_HESSID_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_HESSID\_INFO (dot11wificxtypes.hpp)

@@ -6,7 +6,6 @@ keywords:
 - KSEVENTSETID_VIDCAPNotify
 - video capture events WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Capture Events

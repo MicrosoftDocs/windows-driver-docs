@@ -10,7 +10,6 @@ keywords:
 - ancestors WDK
 - immediate parents in device tree WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining the Parent of a Device in the Device Tree

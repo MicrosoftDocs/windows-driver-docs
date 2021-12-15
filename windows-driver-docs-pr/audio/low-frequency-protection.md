@@ -2,7 +2,6 @@
 title: Low Frequency Protection
 description: Low Frequency Protection
 ms.date: 11/07/2018
-ms.localizationpriority: medium
 ---
 
 # Low Frequency Protection

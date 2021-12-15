@@ -5,7 +5,6 @@ keywords:
 - Direct3D version 10.1 WDK Windows 7 display , version discovery support
 - version discovery support WDK Windows 7 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Version Discovery Support

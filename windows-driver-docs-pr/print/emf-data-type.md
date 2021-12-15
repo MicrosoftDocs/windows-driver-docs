@@ -6,7 +6,6 @@ keywords:
 - data types WDK print processor
 - EMF data type WDK print processor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # EMF Data Type

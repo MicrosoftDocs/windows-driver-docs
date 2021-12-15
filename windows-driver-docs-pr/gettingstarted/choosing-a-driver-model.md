@@ -5,7 +5,6 @@ keywords:
 - driver model
 - driver design
 ms.date: 08/06/2021
-ms.localizationpriority: medium
 ---
 
 # Choosing a driver model

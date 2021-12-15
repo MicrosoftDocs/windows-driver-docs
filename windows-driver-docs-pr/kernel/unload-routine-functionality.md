@@ -3,7 +3,6 @@ title: Unload Routine Functionality
 description: Unload Routine Functionality
 keywords: ["Unload routines WDK kernel , functionality"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Unload Routine Functionality

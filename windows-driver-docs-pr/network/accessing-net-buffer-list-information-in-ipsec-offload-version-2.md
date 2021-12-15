@@ -5,7 +5,6 @@ keywords:
 - IPsecOV2 WDK TCP/IP transport , NET_BUFFER_LIST information
 - NET_BUFFER_LIST
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing NET\_BUFFER\_LIST Information in IPsec Offload Version 2

@@ -4,7 +4,6 @@ description: Function, filter, and bus drivers can handle this request.
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_PNP_DEVICE_STATE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE

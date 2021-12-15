@@ -2,7 +2,6 @@
 title: Kernel Streaming Method Sets
 description: Provides information about kernel streaming method sets.
 ms.date: 10/11/2021
-ms.localizationpriority: medium
 ---
 
 # Kernel Streaming Method Sets

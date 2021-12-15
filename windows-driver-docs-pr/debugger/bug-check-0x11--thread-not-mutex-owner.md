@@ -9,7 +9,6 @@ api_name:
 - THREAD_NOT_MUTEX_OWNER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11: THREAD\_NOT\_MUTEX\_OWNER

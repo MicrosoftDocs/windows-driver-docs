@@ -4,7 +4,6 @@ description: WSK_CACHE_SD
 ms.date: 07/18/2017
 keywords:
  - WSK_CACHE_SD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WSK\_CACHE\_SD

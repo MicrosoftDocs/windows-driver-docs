@@ -2,7 +2,6 @@
 title: Code Integrity Event Logging and System Auditing
 description: Code Integrity Event Logging and System Auditing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Integrity Event Logging and System Auditing

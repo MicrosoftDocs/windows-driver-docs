@@ -4,7 +4,6 @@ description: Configuring power management
 keywords:
 - NetAdapterCx configuring power management, NetCx configuring power management
 ms.date: 06/12/2020
-ms.localizationpriority: medium
 ---
 
 # Configuring NetAdapterCx power management

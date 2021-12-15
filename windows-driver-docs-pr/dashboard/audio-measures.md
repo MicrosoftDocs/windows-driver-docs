@@ -3,7 +3,6 @@ title: Audio measures
 description: Audio measure definitions
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Audio measures

@@ -9,7 +9,6 @@ api_name:
 - vtop
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vtop

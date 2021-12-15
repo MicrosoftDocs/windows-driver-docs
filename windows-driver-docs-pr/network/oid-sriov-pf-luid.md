@@ -4,7 +4,6 @@ description: An overlying driver issues an object identifier (OID) query request
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_PF_LUID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_PF\_LUID

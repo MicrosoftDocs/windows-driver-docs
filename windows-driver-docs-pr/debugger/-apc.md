@@ -9,7 +9,6 @@ api_name:
 - apc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !apc

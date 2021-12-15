@@ -3,7 +3,6 @@ title: Changes to the Number of Processors
 description: Changes to the Number of Processors
 keywords: ["dynamic hardware partitioning WDK , changing number of processors", "hardware partitioning WDK dynamic , changing number of processors", "partitions WDK dynamic hardware , changing number of processors", "active processors WDK dynamic hardware partitioning", "processor count WDK dynamic hardware partitioning", "processor affinity WDK dynamic hardware paritioning", "per-processor data structures WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Changes to the Number of Processors

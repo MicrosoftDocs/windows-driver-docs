@@ -6,7 +6,6 @@ keywords:
 - I/O queues WDK KMDF , request handlers
 - request handlers WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Request Handlers

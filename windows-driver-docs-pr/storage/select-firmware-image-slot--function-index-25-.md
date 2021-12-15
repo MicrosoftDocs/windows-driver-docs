@@ -1,7 +1,6 @@
 ---
 title: Select Firmware Image Slot (Function Index 25)
 description: This function selects which firmware image is active.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -3,7 +3,6 @@ title: Handling Device Power-Up IRPs
 description: Handling Device Power-Up IRPs
 keywords: ["set-power IRPs WDK kernel", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "power-up IRPs WDK kernel", "startup power management WDK kernel", "restoring power WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Device Power-Up IRPs

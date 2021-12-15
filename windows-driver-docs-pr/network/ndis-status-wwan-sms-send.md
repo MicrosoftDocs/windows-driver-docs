@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_SEND notification to 
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_SMS_SEND Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_SMS\_SEND

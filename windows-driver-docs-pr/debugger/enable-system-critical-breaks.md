@@ -3,7 +3,6 @@ title: Enable system critical breaks
 description: Enable system critical breaks
 keywords: ["Enable system critical breaks (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable system critical breaks

@@ -9,7 +9,6 @@ api_name:
 - RemoveLockReleaseRead
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseRead rule (wdm)

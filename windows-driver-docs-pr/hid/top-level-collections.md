@@ -4,7 +4,6 @@ description: Top-Level Collections
 keywords:
 - top-level collections WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Top-Level Collections

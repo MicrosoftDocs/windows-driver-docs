@@ -5,7 +5,6 @@ keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL , about network profiles
 - XML fragments WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Profile Overview

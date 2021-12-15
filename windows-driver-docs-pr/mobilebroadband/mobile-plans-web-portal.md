@@ -4,7 +4,6 @@ description: This topic describes the implementation step for the Mobile Plans p
 keywords:
 - Windows Mobile Plans Web Portal, Mobile Plans implementation mobile operators
 ms.date: 03/25/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile operator web portal

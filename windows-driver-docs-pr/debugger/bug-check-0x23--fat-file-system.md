@@ -9,7 +9,6 @@ api_name:
 - FAT_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x23: FAT\_FILE\_SYSTEM

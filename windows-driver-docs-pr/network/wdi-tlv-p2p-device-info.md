@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_DEVICE_INFO is a TLV that contains Wi-Fi Direct device 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DEVICE_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DEVICE\_INFO

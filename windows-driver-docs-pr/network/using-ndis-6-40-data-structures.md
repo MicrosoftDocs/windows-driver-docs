@@ -2,7 +2,6 @@
 title: Using NDIS 6.40 Data Structures
 description: The following structures and enumerations were updated for NDIS 6.40.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using NDIS 6.40 Data Structures

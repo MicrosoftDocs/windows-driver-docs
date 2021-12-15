@@ -10,7 +10,6 @@ keywords:
 - refusing SAN connection requests
 - rejecting SAN connection requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accepting Connection Requests

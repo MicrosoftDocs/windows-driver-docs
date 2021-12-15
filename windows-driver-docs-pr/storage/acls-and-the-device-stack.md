@@ -2,7 +2,6 @@
 title: ACLs and the Device Stack
 description: ACLs and the Device Stack
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ACLs and the Device Stack

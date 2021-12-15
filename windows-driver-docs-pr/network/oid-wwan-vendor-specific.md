@@ -4,7 +4,6 @@ description: OID_WWAN_VENDOR_SPECIFIC allows miniport drivers to implement vendo
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_VENDOR_SPECIFIC Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_VENDOR\_SPECIFIC

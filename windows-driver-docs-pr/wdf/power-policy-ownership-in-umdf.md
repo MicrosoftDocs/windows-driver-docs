@@ -6,7 +6,6 @@ keywords:
 - power policy ownership WDK UMDF , overview
 - power management WDK UMDF , power policy ownership
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power Policy Ownership in UMDF

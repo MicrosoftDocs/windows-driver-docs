@@ -2,7 +2,6 @@
 title: Constructing a Package-Aware Driver with Updated Core Drivers
 description: Constructing a Package-Aware Driver with Updated Core Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Constructing a Package-Aware Driver with Updated Core Drivers

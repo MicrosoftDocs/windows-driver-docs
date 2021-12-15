@@ -6,7 +6,6 @@ keywords:
 - DMA buffers WDK display , memory segments
 - buffers WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Segments for DMA Buffers

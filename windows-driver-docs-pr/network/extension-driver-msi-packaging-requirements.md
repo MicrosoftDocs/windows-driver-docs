@@ -2,7 +2,6 @@
 title: Extension Driver MSI Packaging Requirements
 description: Switch extensions must be packaged in a silently installable MSI file.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extension Driver MSI Packaging Requirements

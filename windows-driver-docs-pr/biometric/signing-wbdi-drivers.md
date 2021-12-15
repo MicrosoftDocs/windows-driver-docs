@@ -2,7 +2,6 @@
 title: Signing WBDI Drivers
 description: Signing WBDI Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Signing WBDI Drivers

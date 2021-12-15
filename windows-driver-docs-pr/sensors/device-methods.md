@@ -2,7 +2,6 @@
 title: Device methods
 description: The sensor firmware supports several helper methods that perform tasks like supporting events and managing power.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device methods

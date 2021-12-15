@@ -9,7 +9,6 @@ api_name:
 - DbEngPrx Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DbEngPrx Command-Line Options

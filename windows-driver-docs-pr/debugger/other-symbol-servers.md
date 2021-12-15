@@ -3,7 +3,6 @@ title: Other Symbol Servers
 description: Other Symbol Servers
 keywords: ["symbol servers, writing your own symbol server"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Other Symbol Servers

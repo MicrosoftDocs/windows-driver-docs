@@ -2,7 +2,6 @@
 title: Scan Service (WS-Scan) Schema
 description: Scan Service (WS-Scan) Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Scan Service (WS-Scan) Schema

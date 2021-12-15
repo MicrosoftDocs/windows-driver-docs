@@ -9,7 +9,6 @@ api_name:
 - HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1DA: HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR

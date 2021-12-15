@@ -2,7 +2,6 @@
 title: Determining Which Properties are Set for a Device Interface
 description: Determining Which Properties are Set for a Device Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining Which Properties are Set for a Device Interface

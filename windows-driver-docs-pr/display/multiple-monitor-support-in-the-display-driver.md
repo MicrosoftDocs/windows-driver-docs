@@ -6,7 +6,6 @@ keywords:
 - multiple monitors WDK
 - multiple-monitor systems WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiple-Monitor Support in the Display Driver

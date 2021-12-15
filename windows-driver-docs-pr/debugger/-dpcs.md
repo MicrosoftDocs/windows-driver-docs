@@ -9,7 +9,6 @@ api_name:
 - dpcs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dpcs

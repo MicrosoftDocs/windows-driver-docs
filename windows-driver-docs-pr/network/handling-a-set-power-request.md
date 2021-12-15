@@ -8,7 +8,6 @@ keywords:
 - standby flags WDK NDIS intermediate
 - power states WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling a Set Power Request

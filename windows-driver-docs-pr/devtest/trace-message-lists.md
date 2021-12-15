@@ -5,7 +5,6 @@ keywords:
 - TraceView WDK , window
 - Trace Message Lists WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trace Message Lists

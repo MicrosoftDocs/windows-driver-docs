@@ -4,7 +4,6 @@ description: The NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES status indicates t
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES

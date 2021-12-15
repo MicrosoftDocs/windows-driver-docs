@@ -5,7 +5,6 @@ keywords:
 - cursor attributes WDK Unidrv
 - general printer attributes WDK Unidrv , cursor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cursor Attributes

@@ -7,7 +7,6 @@ keywords:
 - reserved keywords WDK
 - EnablePPDirective directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \#EnablePPDirective Preprocessor Directive

@@ -4,7 +4,6 @@ description: MB NITZ support
 keywords:
 - MB NITZ support, Mobile Broadband NITZ support
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

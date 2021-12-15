@@ -3,7 +3,6 @@ title: UMDH Commands
 description: UMDH Commands
 keywords: ["UMDH, UMDH commands"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # UMDH Commands

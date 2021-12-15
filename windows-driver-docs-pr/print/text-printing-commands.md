@@ -5,7 +5,6 @@ keywords:
 - text printing commands WDK Unidrv
 - printer commands WDK Unidrv , text
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Text Printing Commands

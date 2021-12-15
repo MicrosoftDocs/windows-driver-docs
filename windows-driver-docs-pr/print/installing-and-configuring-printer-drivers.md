@@ -5,7 +5,6 @@ keywords:
 - installing drivers WDK printer
 - printer driver installations WDK
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # Installing and Configuring Printer Drivers

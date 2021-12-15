@@ -2,7 +2,6 @@
 title: Converting WDK 8.1 Projects to WDK 10
 description: How to convert a driver project created with Microsoft Visual Studio 2013 and the Windows Driver Kit (WDK) 8.1 to a driver project that builds in Microsoft Visual Studio 2015 with the Windows Driver Kit (WDK) 10.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting WDK 8.1 Projects to WDK 10

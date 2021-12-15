@@ -9,7 +9,6 @@ api_name:
 - INVALID_AFFINITY_SET
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x3: INVALID\_AFFINITY\_SET

@@ -2,7 +2,6 @@
 title: Providing IPrintCoreHelper Configuration Service to Filters
 description: Providing IPrintCoreHelper Configuration Service to Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Providing IPrintCoreHelper Configuration Service to Filters

@@ -2,7 +2,6 @@
 title: Hardware Initialization with Storport
 description: Hardware Initialization with Storport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Initialization with Storport

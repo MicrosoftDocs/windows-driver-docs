@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 01/14/2021
-ms.localizationpriority: medium
 ---
 
 # IRP_MJ_SET_INFORMATION (IFS)

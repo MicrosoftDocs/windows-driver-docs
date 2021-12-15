@@ -5,7 +5,6 @@ keywords:
 - filter drivers WDK networking , services
 - NDIS filter drivers WDK , services
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Driver Services

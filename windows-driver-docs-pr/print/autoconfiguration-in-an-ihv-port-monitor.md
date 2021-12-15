@@ -6,7 +6,6 @@ keywords:
 - autoconfiguration WDK printer , IHV port monitors
 - printer autoconfiguration WDK printer , IHV port monitors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autoconfiguration in an IHV Port Monitor

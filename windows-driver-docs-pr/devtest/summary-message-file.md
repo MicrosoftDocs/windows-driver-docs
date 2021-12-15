@@ -8,7 +8,6 @@ keywords:
 - .sum files
 - sum files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Summary Message File

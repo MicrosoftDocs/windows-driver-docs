@@ -2,7 +2,6 @@
 title: DirectX Video Acceleration I/O Control Codes
 description: DirectX Video Acceleration I/O Control Codes
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DirectX Video Acceleration I/O Control Codes

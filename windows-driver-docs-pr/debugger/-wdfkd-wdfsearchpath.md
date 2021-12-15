@@ -11,7 +11,6 @@ api_location:
 - Wdfkd.dll
 api_type:
 - DllExport
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfsearchpath

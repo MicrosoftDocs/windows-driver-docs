@@ -2,7 +2,6 @@
 title: Native Debugger Objects in JavaScript Extensions - Type Objects
 description: Native debugger objects represent various constructs of the debugger environment. JavaScript extensions have direct access to the type system of the underlying language. This access is expressed through the notion of type objects.
 ms.date: 02/04/2021
-ms.localizationpriority: medium
 ---
 
 # Native Debugger Objects in JavaScript Extensions - Type Objects

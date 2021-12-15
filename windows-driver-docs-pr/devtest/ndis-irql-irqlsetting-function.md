@@ -9,7 +9,6 @@ api_name:
 - Irql_IrqlSetting_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_IrqlSetting\_Function rule (ndis)

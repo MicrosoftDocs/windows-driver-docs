@@ -4,7 +4,6 @@ description: The WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro inserts an object'
 keywords:
  - WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro

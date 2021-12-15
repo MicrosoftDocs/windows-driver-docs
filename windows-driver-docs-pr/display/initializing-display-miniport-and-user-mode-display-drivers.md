@@ -6,7 +6,6 @@ keywords:
 - Windows Vista display driver model WDK , initialization
 - initializing Windows Vista display drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing Display Miniport and User-Mode Display Drivers

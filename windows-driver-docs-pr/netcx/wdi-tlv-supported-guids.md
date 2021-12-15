@@ -4,7 +4,6 @@ description: WDI_TLV_SUPPORTED_GUIDS is a WiFiCx TLV that contains a supported N
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_SUPPORTED_GUIDS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SUPPORTED\_GUIDS (dot11wificxtypes.hpp)

@@ -3,7 +3,6 @@ title: Dispatch(Internal)DeviceControl in Class/Port Drivers
 description: Dispatch(Internal)DeviceControl in Class/Port Drivers
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Dispatch(Internal)DeviceControl in Class/Port Drivers

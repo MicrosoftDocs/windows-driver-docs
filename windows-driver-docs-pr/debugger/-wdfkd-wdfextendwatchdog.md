@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfextendwatchdog
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfextendwatchdog

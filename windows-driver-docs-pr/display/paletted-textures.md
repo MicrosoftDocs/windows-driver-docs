@@ -5,7 +5,6 @@ keywords:
 - texture management WDK Direct3D , paletted textures
 - paletted textures WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Paletted Textures

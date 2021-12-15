@@ -2,7 +2,6 @@
 title: Reset (surprise remove) steps 15-20
 description: The steps of reset (surprise-remove), which are Steps 15 through 20, are described below. The steps correspond to the diagram shown in UE hang detection and recovery flow.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reset (surprise remove): steps 15-20

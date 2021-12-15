@@ -3,7 +3,6 @@ title: Logger Extensions (Logexts.dll)
 description: Logger Extensions (Logexts.dll)
 keywords: ["logger extensions (logexts.dll)", "logexts.dll (logger extensions)", "extensions, logger"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Logger Extensions (Logexts.dll)

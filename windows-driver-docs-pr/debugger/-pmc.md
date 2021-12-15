@@ -9,7 +9,6 @@ api_name:
 - pmc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pmc

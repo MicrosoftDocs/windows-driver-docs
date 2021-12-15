@@ -2,7 +2,6 @@
 title: Jack Descriptions for Dynamic Audio Subdevices
 description: Jack Descriptions for Dynamic Audio Subdevices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Jack Descriptions for Dynamic Audio Subdevices

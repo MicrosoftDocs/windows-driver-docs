@@ -2,7 +2,6 @@
 title: INF Files for Still Image Devices
 description: INF Files for Still Image Devices
 ms.date: 03/21/2019
-ms.localizationpriority: medium
 ---
 
 # INF Files for Still Image Devices

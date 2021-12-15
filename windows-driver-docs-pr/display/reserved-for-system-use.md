@@ -2,7 +2,6 @@
 title: Reserved For System Use
 description: Reserved For System Use
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # Reserved For System Use

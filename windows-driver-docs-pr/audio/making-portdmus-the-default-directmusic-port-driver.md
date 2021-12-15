@@ -5,7 +5,6 @@ keywords:
 - port drivers WDK audio , default DMus port driver
 - default DMus port driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Making PortDMus the Default DirectMusic Port Driver

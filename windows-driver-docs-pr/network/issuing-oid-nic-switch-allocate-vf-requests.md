@@ -2,7 +2,6 @@
 title: Issuing OID_NIC_SWITCH_ALLOCATE_VF Requests
 description: Issuing OID_NIC_SWITCH_ALLOCATE_VF Requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Issuing OID\_NIC\_SWITCH\_ALLOCATE\_VF Requests

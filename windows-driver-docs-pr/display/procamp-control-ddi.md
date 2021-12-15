@@ -2,7 +2,6 @@
 title: ProcAmp Control DDI
 description: ProcAmp Control DDI
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # ProcAmp Control DDI

@@ -3,7 +3,6 @@ title: Percentage of Wi-Fi sessions ending in a disconnection with more than 50%
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device unexpectedly disconnects from Wi-Fi
 ms.topic: article
 ms.date: 09/02/2021
-ms.localizationpriority: medium
 ---
 
 # Percentage of Wi-Fi sessions ending in a disconnection with more than 50% signal quality

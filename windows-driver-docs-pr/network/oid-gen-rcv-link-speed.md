@@ -4,7 +4,6 @@ description: As a query, use the OID_GEN_RCV_LINK_SPEED OID to determine the rec
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RCV_LINK_SPEED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_RCV\_LINK\_SPEED

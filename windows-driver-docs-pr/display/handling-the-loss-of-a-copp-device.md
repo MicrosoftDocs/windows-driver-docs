@@ -8,7 +8,6 @@ keywords:
 - protected video WDK COPP , loss of device
 - lost COPP devices WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling the Loss of a COPP Device

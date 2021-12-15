@@ -2,7 +2,6 @@
 title: Requirements for Using Storport with an Adapter
 description: Requirements for Using Storport with an Adapter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requirements for Using Storport with an Adapter

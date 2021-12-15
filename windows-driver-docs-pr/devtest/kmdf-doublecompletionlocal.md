@@ -9,7 +9,6 @@ api_name:
 - DoubleCompletionLocal
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleCompletionLocal rule (kmdf)

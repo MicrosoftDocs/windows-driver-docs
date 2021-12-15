@@ -6,7 +6,6 @@ keywords:
 - postoperation callback routines WDK file system minifilter , registering
 - registering callback routines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering Preoperation and Postoperation Callback Routines

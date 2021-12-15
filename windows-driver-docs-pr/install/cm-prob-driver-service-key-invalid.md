@@ -4,7 +4,6 @@ description: CM_PROB_DRIVER_SERVICE_KEY_INVALID
 keywords:
 - CM_PROB_DRIVER_SERVICE_KEY_INVALID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 40 - CM_PROB_DRIVER_SERVICE_KEY_INVALID

@@ -2,7 +2,6 @@
 title: Ending a Debugging Session in KD
 description: Ending a Debugging Session in KD
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Ending a Debugging Session in KD

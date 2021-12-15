@@ -1,7 +1,6 @@
 ---
 title: Logging and investigations
 description: This topic describes logging and investigations for GPIO implementations.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

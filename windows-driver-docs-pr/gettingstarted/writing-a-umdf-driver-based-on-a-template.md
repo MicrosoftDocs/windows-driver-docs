@@ -4,7 +4,6 @@ description: This topic describes how to write a Universal Windows driver using 
 keywords:
 - Write a UMDF driver
 ms.date: 06/02/2021
-ms.localizationpriority: medium
 ---
 
 # Write a Universal Windows driver (UMDF 2) based on a template

@@ -2,7 +2,6 @@
 title: WIA with Web Services for Devices
 description: WIA with Web Services for Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA with Web Services for Devices

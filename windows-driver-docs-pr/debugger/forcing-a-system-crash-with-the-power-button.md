@@ -3,7 +3,6 @@ title: Forcing a System Crash with the Power Button
 description: Forcing a System Crash with the Power Button
 keywords: ["boot process, causing system crash from power button", "system crash, power button", "bug check, power button"]
 ms.date: 10/12/2020
-ms.localizationpriority: medium
 ---
 
 # Forcing a System Crash with the Power Button

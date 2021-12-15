@@ -2,7 +2,6 @@
 title: Windows button array Device-Specific Method (_DSM)
 description: To support evolution of the Windows Button user interface (UI), Windows defines a Device-Specific Method (_DSM) for the Windows button array device with the function that is described in this article.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # Windows button array Device-Specific Method (_DSM)

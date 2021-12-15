@@ -2,7 +2,6 @@
 title: Context monitoring
 description: A monitored fence object is an advanced form of fence synchronization which allows either a CPU core or a graphics processing unit (GPU) engine to signal or wait on a particular fence object, allowing for very flexible synchronization between GPU engines, or across CPU cores and GPU engines.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Context monitoring

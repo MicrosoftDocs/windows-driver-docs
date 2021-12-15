@@ -1,7 +1,6 @@
 ---
 title: iSCSI WMI Common Classes
 description: iSCSI WMI Common Classes
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

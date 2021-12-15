@@ -2,7 +2,6 @@
 title: Entering Debugger Commands in Visual Studio
 description: The procedures covers Entering Debugger Commands in Visual Studio.
 ms.date: 08/23/2018
-ms.localizationpriority: medium
 ---
 
 # Entering Debugger Commands in Visual Studio

@@ -3,7 +3,6 @@ title: Completing IRPs
 description: Completing IRPs
 keywords: ["IRPs WDK kernel , completing", "completing IRPs WDK kernel", "finished IRPs WDK kernel", "I/O WDK kernel , operation completed", "completing IRPs WDK kernel , about completing IRPs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Completing IRPs

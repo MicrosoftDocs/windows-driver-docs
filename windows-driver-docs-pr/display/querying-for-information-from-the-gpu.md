@@ -2,7 +2,6 @@
 title: Querying for Information from the GPU
 description: Querying for Information from the GPU
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying for Information from the GPU

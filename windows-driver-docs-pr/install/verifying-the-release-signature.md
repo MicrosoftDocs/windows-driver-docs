@@ -2,7 +2,6 @@
 title: Verifying the Release-Signature
 description: Verifying the Release-Signature
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying the Release-Signature

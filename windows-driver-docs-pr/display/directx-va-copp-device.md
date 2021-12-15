@@ -8,7 +8,6 @@ keywords:
 - COPP WDK DirectX VA , COPP device
 - protected video WDK COPP , COPP device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectX VA COPP Device

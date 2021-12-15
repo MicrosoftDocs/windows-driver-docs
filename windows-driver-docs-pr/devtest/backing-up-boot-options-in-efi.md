@@ -10,7 +10,6 @@ keywords:
 - boot options WDK , backing up
 - Nvrboot tool
 ms.date: 07/02/2018
-ms.localizationpriority: medium
 ---
 
 # Backing up Boot Options in EFI

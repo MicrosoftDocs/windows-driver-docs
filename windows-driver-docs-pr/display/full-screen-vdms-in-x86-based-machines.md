@@ -7,7 +7,6 @@ keywords:
 - full-screen VDMs in x86-based machines WDK video miniport
 - x86-based machines WDK VGA-compatible video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Full-Screen VDMs in x86-based Machines

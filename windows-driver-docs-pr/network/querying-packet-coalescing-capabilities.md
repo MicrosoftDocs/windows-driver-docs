@@ -2,7 +2,6 @@
 title: Querying Packet Coalescing Capabilities
 description: Querying Packet Coalescing Capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying Packet Coalescing Capabilities

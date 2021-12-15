@@ -2,7 +2,6 @@
 title: DEVICE_DSM_ACTION Descriptions
 description: This page describes the DEVICE_DSM_ACTION constants that can be used to perform a data set management (DSM) action on a device's data-set attributes.
 keywords: Storage Data Set Management Actions, Data Set Management Actions, DSM Actions
-ms.localizationpriority: medium
 ms.date: 08/23/2019
 ---
 

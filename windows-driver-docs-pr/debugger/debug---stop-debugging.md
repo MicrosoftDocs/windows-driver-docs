@@ -3,7 +3,6 @@ title: Debug Stop Debugging
 description: Debug Stop Debugging
 keywords: ["Debug Stop Debugging", "controlling the target, Debug Stop Debugging", "exiting the debugger, Debug Stop Debugging", "quitting the debugger, Debug Stop Debugging", "ending the debugging session, Debug Stop Debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Stop Debugging

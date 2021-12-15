@@ -5,7 +5,6 @@ keywords:
 - network drivers WDK , NDIS drivers
 - NDIS WDK , driver types supported
 ms.date: 11/26/2018
-ms.localizationpriority: medium
 ---
 
 # Overview of NDIS driver types

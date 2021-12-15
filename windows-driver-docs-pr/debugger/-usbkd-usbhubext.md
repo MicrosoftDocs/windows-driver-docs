@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbhubext
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhubext

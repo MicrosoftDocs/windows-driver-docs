@@ -5,7 +5,6 @@ keywords:
 - unused channel defaults WDK DirectX 9.0
 - channel defaults WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Recommended DirectX 9.0 Driver Support

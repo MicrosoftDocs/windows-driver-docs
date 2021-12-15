@@ -8,7 +8,6 @@ keywords:
 - sending BRBs
 - return values WDK Bluetooth
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Building and Sending a BRB

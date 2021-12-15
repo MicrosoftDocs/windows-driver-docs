@@ -2,7 +2,6 @@
 title: How do I include a trace statement in a C/C++ macro
 description: How do I include a trace statement in a C/C++ macro
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I include a trace statement in a C/C++ macro?

@@ -9,7 +9,6 @@ api_name:
 - db, dc, dd, dp, dq, du, dw
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !db, !dc, !dd, !dp, !dq, !du, !dw

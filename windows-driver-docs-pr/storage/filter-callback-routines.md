@@ -2,7 +2,6 @@
 title: Filter Callback Routines
 description: Filter Callback Routines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Callback Routines

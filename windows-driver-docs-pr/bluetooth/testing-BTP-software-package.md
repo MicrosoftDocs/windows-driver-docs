@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform package
 description: Bluetooth Test Platform (BTP) software package.
 ms.date: 06/09/2021
-ms.localizationpriority: medium
 ---
 
 # The BTP Software Package

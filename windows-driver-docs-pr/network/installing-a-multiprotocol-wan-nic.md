@@ -7,7 +7,6 @@ keywords:
 - WAN NIC WDK networking
 - NIC multiprotocol WAN WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Multiprotocol WAN NIC

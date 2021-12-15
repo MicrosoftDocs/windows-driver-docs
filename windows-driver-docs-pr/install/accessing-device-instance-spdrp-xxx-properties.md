@@ -2,7 +2,6 @@
 title: Accessing Device Instance SPDRP_Xxx Properties
 description: Accessing Device Instance SPDRP_Xxx Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Device Instance SPDRP_Xxx Properties

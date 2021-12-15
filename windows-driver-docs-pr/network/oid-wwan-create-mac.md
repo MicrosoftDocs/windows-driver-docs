@@ -4,7 +4,6 @@ description: OID_WWAN_CREATE_MAC requests the miniport driver to create a new ND
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_CREATE_MAC Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_CREATE\_MAC

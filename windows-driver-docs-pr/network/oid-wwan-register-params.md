@@ -4,7 +4,6 @@ description: OID_WWAN_REGISTER_PARAMS sets or returns the parameters that an MB 
 ms.date: 05/13/2021
 keywords: 
  -OID_WWAN_REGISTER_PARAMS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WWAN_REGISTER_PARAMS

@@ -2,7 +2,6 @@
 title: WdkDeprecatedApi (Windows Driver CodeQL Query)
 description: Learn about the WdkDeprecatedApi Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
-ms.localizationpriority: medium
 ---
 
 # WdkDeprecatedApi  (Windows Driver CodeQL Query)

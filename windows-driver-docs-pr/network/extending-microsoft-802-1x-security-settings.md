@@ -5,7 +5,6 @@ keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , 802.1X security settings
 - 802.1X security settings WDK Native 802.11 IHV UI Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extending Microsoft 802.1X Security Settings

@@ -3,7 +3,6 @@ title: Handling Recovery Operations
 description: Handling Recovery Operations
 keywords: ["transactions WDK KTM , recovering transactions", "recovering transactions WDK KTM", "transaction processing systems WDK KTM , recovering transactions", "TPS WDK KTM , recovering transactions", "log streams WDK KTM , recovering transactions", "virtual clock values WDK KTM , recovering transactions"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Recovery Operations

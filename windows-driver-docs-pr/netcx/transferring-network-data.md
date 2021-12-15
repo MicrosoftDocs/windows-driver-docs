@@ -4,7 +4,6 @@ description: Introduction to the NetAdapterCx data path
 keywords:
 - NetAdapterCx transferring network data, NetCx transferring network data
 ms.date: 07/01/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

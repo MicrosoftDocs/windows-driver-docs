@@ -3,7 +3,6 @@ title: Moving Through a Window
 description: Moving Through a Window
 keywords: ["debugging information windows, navigating"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Moving Through a Window

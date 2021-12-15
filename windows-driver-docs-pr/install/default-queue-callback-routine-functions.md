@@ -9,7 +9,6 @@ keywords:
 - queue files WDK SetupAPI
 - file queuing WDK SetupAPI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Default Queue Callback Routine Functions

@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfobject
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfobject

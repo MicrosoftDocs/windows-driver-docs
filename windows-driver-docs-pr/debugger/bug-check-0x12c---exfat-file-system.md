@@ -9,7 +9,6 @@ api_name:
 - EXFAT_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x12C: EXFAT\_FILE\_SYSTEM

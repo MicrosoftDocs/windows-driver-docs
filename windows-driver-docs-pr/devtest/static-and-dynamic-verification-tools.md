@@ -5,7 +5,6 @@ keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static and Dynamic Verification Tools

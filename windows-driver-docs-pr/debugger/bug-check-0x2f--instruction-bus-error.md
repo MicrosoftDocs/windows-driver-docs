@@ -9,7 +9,6 @@ api_name:
 - INSTRUCTION_BUS_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2F: INSTRUCTION\_BUS\_ERROR

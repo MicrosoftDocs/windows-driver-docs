@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_STOP_AP command requests that the IHV component di
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_STOP_AP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_STOP\_AP (dot11wificxintf.h)

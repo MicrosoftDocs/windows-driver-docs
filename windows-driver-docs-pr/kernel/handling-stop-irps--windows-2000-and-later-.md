@@ -3,7 +3,6 @@ title: Handling Stop IRPs (Windows 2000 and Later)
 description: Handling Stop IRPs (Windows 2000 and Later)
 keywords: ["stop IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Stop IRPs (Windows 2000 and Later)

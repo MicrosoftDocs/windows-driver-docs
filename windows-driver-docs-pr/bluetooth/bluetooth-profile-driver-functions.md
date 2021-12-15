@@ -2,7 +2,6 @@
 title: Bluetooth Profile Driver Functions
 description: List of Bluetooth functions supported with Profile drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Profile Driver Functions

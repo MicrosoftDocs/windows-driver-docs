@@ -11,7 +11,6 @@ keywords:
 - structures WDK RDBSS
 - connection information WDK RDBSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection and File Control Block Management Routines

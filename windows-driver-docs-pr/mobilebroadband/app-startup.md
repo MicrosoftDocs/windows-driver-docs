@@ -2,7 +2,6 @@
 title: App startup
 description: App startup
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # App startup

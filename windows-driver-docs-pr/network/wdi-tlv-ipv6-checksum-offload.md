@@ -4,7 +4,6 @@ description: WDI_TLV_IPV6_CHECKSUM_OFFLOAD is a TLV that contains checksum offlo
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_IPV6_CHECKSUM_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_IPV6\_CHECKSUM\_OFFLOAD

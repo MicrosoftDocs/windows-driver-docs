@@ -5,7 +5,6 @@ keywords:
 - spooler component diagram WDK print
 - print spooler component diagram WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Spooler Components

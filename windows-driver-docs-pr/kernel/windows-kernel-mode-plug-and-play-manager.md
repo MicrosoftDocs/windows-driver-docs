@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Plug and Play Manager
 description: Windows Kernel-Mode Plug and Play Manager
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

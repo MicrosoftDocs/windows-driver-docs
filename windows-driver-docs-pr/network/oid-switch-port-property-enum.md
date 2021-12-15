@@ -4,7 +4,6 @@ description: The Hyper-V extensible switch extension issues an object identifier
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_PORT_PROPERTY_ENUM Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_PORT\_PROPERTY\_ENUM

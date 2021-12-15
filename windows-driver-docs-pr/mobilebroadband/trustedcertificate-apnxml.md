@@ -2,7 +2,6 @@
 title: TrustedCertificate (APN element)
 description: TrustedCertificate (APN element)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TrustedCertificate (APN element)

@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbhublog
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhublog

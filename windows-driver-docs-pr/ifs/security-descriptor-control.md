@@ -2,7 +2,6 @@
 title: SECURITY\_DESCRIPTOR\_CONTROL
 description: SECURITY\_DESCRIPTOR\_CONTROL
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # SECURITY\_DESCRIPTOR\_CONTROL

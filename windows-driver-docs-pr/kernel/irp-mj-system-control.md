@@ -4,7 +4,6 @@ description: All drivers must provide a DispatchSystemControl routine that handl
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_SYSTEM_CONTROL Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_SYSTEM\_CONTROL

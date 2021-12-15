@@ -9,7 +9,6 @@ api_name:
 - DRIPS_SW_HW_DIVERGENCE_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A4: DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP 

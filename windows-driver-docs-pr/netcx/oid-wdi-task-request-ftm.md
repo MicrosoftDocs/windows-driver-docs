@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_REQUEST_FTM command is issued to the LE to initiat
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_REQUEST_FTM Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WDI_TASK_REQUEST_FTM (dot11wificxintf.h)

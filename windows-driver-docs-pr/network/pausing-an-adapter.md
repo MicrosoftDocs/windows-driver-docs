@@ -10,7 +10,6 @@ keywords:
 - pausing miniport adapters
 - stopping miniport adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pausing an Adapter

@@ -9,7 +9,6 @@ api_name:
 - ube
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ube

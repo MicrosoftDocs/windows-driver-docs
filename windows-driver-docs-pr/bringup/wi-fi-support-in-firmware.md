@@ -2,7 +2,6 @@
 title: Wi-Fi support in firmware 
 description: Wi-Fi support in firmware 
 ms.date: 05/07/2018
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi support in firmware

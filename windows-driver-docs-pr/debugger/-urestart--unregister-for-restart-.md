@@ -9,7 +9,6 @@ api_name:
 - .urestart (Unregister for Restart)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .urestart (Unregister for Restart)

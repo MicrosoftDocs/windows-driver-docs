@@ -3,7 +3,6 @@ title: Reading Symbols from Paged-Out Headers
 description: Reading Symbols from Paged-Out Headers
 keywords: ["symbols, paged-out header problems"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Reading Symbols from Paged-Out Headers

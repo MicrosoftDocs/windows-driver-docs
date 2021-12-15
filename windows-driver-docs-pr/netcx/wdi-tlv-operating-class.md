@@ -4,7 +4,6 @@ description: WDI_TLV_OPERATING_CLASS is a WiFiCx TLV that contains the frequency
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_OPERATING_CLASS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_OPERATING\_CLASS (dot11wificxtypes.hpp)

@@ -2,7 +2,6 @@
 title: Introduction to WinUSB (Winusb.sys)
 description: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
 ms.date: 12/10/2021
-ms.localizationpriority: High
 ms.custom: contperf-fy21q4, contperf-fy22q2
 ---
 

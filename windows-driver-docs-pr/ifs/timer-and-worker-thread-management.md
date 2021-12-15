@@ -11,7 +11,6 @@ keywords:
 - one-shot notifications WDK RDBSS
 - periodic triggers WDK RDBSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Timer and Worker Thread Management

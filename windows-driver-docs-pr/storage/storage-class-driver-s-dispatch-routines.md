@@ -4,7 +4,6 @@ description: Storage Class Driver's Dispatch Routines
 keywords:
 - dispatch routines WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's Dispatch Routines

@@ -3,7 +3,6 @@ title: View Show Version
 description: View Show Version
 keywords: ["View Show Version"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Show Version

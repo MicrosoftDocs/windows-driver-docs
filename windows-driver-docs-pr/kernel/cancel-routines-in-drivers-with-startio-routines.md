@@ -3,7 +3,6 @@ title: Cancel Routines in Drivers with StartIo Routines
 description: Cancel Routines in Drivers with StartIo Routines
 keywords: ["canceling IRPs, StartIo routines", "Cancel routines, StartIo routines", "StartIo routines, Cancel routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Cancel Routines in Drivers with StartIo Routines

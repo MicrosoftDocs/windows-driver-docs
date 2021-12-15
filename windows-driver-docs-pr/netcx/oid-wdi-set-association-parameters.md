@@ -4,7 +4,6 @@ description: The OID_WDI_SET_ASSOCIATION_PARAMETERS command specifies parameters
 ms.date: 06/30/2021
 keywords:
  - OID_WDI_SET_ASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS (dot11wificxintf.h)

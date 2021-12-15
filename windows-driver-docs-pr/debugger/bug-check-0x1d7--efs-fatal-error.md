@@ -9,7 +9,6 @@ api_name:
 - EFS_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D7: EFS\_FATAL\_ERROR

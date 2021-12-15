@@ -3,7 +3,6 @@ title: ob, od, ow
 description: ob, od, ow
 keywords: ["ob extension (obsolete)", "od extension (obsolete)", "ow extension (obsolete)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # !ob, !od, !ow

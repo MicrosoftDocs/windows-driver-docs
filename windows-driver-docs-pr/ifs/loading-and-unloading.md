@@ -9,7 +9,6 @@ keywords:
 - loading drivers WDK file system
 - unloading drivers
 ms.date: 10/16/2019
-ms.localizationpriority: medium
 ---
 
 # Loading and Unloading

@@ -4,7 +4,6 @@ description: Bus drivers must handle requests for BusQueryDeviceID for their chi
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_ID Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_ID

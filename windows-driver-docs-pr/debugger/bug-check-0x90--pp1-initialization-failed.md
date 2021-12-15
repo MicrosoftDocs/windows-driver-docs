@@ -9,7 +9,6 @@ api_name:
 - PP1_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x90: PP1\_INITIALIZATION\_FAILED

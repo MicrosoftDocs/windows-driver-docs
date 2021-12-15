@@ -2,7 +2,6 @@
 title: Peronal hotspot communication channels
 description: Peronal hotspot communication channels
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Personal hotspot communication channels

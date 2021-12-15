@@ -2,7 +2,6 @@
 title: Live Kernel-Mode Debugging Using WinDbg
 description: There are two ways you can use WinDbg to initiate a live kernel-mode debugging session.
 ms.date: 06/21/2018
-ms.localizationpriority: medium
 ---
 
 # <span id="debugger.performing_kernel-mode_debugging_using_windbg"></span>Live Kernel-Mode Debugging Using WinDbg

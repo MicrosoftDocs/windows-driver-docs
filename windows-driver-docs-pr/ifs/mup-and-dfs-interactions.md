@@ -9,7 +9,6 @@ keywords:
 - multiple UNC provider WDK network redirectors
 - UNC WDK network redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MUP and DFS Interactions

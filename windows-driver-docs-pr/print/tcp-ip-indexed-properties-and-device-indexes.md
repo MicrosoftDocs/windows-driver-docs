@@ -6,7 +6,6 @@ keywords:
 - indexed properties WDK printer
 - device indexes WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TCP/IP Indexed Properties and Device Indexes

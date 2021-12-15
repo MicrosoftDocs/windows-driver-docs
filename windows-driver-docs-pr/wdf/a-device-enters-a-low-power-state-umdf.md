@@ -5,7 +5,6 @@ keywords:
 - power management scenarios WDK UMDF, entering a low-power state
 - low-power state scenario WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # A Device Enters a Low-Power State (UMDF 1)

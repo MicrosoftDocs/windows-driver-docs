@@ -9,7 +9,6 @@ api_name:
 - FTDISK_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x58: FTDISK\_INTERNAL\_ERROR

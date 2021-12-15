@@ -2,7 +2,6 @@
 title: Using Layer 2 Filtering
 description: Using Layer 2 Filtering
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Layer 2 Filtering

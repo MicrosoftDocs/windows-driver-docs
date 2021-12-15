@@ -9,7 +9,6 @@ keywords:
 - Wireless display callback functions called by Miracast user-mode drivers
 - Wireless display functions implemented by Miracast user-mode drivers
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # About wireless displays (Miracast)

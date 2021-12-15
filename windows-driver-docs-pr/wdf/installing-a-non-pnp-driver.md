@@ -7,7 +7,6 @@ keywords:
 - INF files WDK KMDF , non-PnP drivers
 - non-PnP drivers WDK KMDF
 ms.date: 03/12/2020
-ms.localizationpriority: medium
 ---
 
 # Installing a Non-PnP Driver

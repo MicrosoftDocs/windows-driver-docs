@@ -6,7 +6,6 @@ keywords:
 - Windows 2000 display driver model WDK , responsibilities
 - video miniport drivers WDK Windows 2000 , responsibilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows 2000 Video Miniport Driver Responsibilities

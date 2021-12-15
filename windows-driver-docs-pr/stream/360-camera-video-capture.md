@@ -2,7 +2,6 @@
 title: 360 camera video capture
 description: Provides information about 360 camera video preview, capture, and record with MediaCapture APIs.
 ms.date: 07/26/2021
-ms.localizationpriority: medium
 ---
 
 # 360 camera video capture

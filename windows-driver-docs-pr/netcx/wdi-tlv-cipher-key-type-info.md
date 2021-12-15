@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_TYPE_INFO is a WiFiCx TLV that contains cipher k
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_TYPE_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO (dot11wificxtypes.hpp)

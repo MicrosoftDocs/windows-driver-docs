@@ -3,7 +3,6 @@ title: Source Indexing
 description: Source Indexing
 keywords: ["source indexing"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Source Indexing

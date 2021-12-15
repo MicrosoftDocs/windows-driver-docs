@@ -2,7 +2,6 @@
 title: Differences Between WDM and WDF
 description: The WDM model is closely tied to the operating system.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Differences Between WDM and WDF

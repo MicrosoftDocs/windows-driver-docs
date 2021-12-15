@@ -9,7 +9,6 @@ api_name:
 - bthkd.sdpinterface
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bthkd.sdpinterface

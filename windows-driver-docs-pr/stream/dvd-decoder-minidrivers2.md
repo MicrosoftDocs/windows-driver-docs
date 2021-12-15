@@ -12,7 +12,6 @@ keywords:
 - video playbacks WDK DVD decoder
 - playback WDK DVD decoder
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DVD Decoder Minidrivers

@@ -5,7 +5,6 @@ keywords:
 - IDE controller minidrivers WDK storage , installing
 - storage IDE controller minidrivers WDK , installing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing IDE Controller Minidrivers

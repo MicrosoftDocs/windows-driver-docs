@@ -2,7 +2,6 @@
 title: PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
 description: PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint

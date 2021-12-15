@@ -2,7 +2,6 @@
 title: Debugger Data Model - Instruction Attributes Objects
 description: Contains a description of some of the details of an instruction.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Instruction Attributes Objects 
 ## Summary

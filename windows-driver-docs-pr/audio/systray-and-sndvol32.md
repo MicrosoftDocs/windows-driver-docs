@@ -13,7 +13,6 @@ keywords:
 - hidden speaker icons WDK audio
 - mute control WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SysTray and SndVol32

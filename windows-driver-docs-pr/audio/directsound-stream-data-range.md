@@ -4,7 +4,6 @@ description: DirectSound Stream Data Range
 keywords:
 - DirectSound WDK audio , stream data ranges
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectSound Stream Data Range

@@ -9,7 +9,6 @@ api_name:
 - VIDEO_SCHEDULER_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x119: VIDEO\_SCHEDULER\_INTERNAL\_ERROR

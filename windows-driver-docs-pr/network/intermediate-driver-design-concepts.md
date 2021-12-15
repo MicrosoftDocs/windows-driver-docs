@@ -6,7 +6,6 @@ keywords:
 - NDIS intermediate drivers WDK , writing
 - writing NDIS intermediate drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Design Concepts

@@ -4,7 +4,6 @@ description: WDI_TLV_LINK_STATE_CHANGE_PARAMETERS is a TLV that contains link st
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_LINK_STATE_CHANGE_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS

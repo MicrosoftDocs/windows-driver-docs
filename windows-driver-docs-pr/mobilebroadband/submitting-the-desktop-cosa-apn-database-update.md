@@ -2,7 +2,6 @@
 title: Submitting the desktop COSA/APN database update
 description: Submitting the desktop COSA/APN database update
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Submitting the desktop COSA/APN database update

@@ -7,7 +7,6 @@ keywords:
 - file objects WDK UMDF
 - IWDFFile
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework File Object

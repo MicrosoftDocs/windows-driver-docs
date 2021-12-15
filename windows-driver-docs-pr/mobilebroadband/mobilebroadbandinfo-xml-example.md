@@ -2,7 +2,6 @@
 title: MobileBroadbandInfo XML example
 description: MobileBroadbandInfo XML example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MobileBroadbandInfo XML example

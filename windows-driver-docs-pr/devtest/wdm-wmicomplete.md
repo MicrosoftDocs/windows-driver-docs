@@ -9,7 +9,6 @@ api_name:
 - WmiComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WmiComplete rule (wdm)

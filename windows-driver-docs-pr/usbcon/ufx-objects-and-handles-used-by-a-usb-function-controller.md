@@ -2,7 +2,6 @@
 description: USB function class extension (UFX) uses the WDF object functionality to define these USB-specific UFX objects.
 title: UFX objects and handles used by a USB function client driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UFX objects and handles used by a USB function client driver

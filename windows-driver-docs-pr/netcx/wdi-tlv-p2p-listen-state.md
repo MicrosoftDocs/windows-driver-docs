@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_LISTEN_STATE is a WiFiCx TLV that contains a Wi-Fi Dire
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_LISTEN_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_LISTEN\_STATE (dot11wificxtypes.hpp)

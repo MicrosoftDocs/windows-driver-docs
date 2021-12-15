@@ -6,7 +6,6 @@ keywords:
 - NDIS intermediate drivers WDK , binding
 - unbinding WDK NDIS intermediate
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Unbinding Operations

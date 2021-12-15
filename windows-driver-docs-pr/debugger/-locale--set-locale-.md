@@ -9,7 +9,6 @@ api_name:
 - .locale (Set Locale)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .locale (Set Locale)

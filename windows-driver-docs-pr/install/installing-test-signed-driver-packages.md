@@ -12,7 +12,6 @@ keywords:
 - test signing drivers WDK , driver packages
 - installing test-signed driver packages WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Test-Signed Driver Packages

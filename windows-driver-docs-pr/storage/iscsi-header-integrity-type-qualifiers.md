@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_HEADER\_INTEGRITY\_TYPE\_QUALIFIERS
 description: ISCSI\_HEADER\_INTEGRITY\_TYPE\_QUALIFIERS
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /displayorder
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /displayorder

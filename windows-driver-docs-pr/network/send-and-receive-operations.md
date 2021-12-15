@@ -11,7 +11,6 @@ keywords:
 - NET_BUFFER_LIST
 - multiple NET_BUFFER_LIST structures WDK networki
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Send and Receive Operations

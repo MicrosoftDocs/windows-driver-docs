@@ -4,7 +4,6 @@ description: As a query, overlying drivers can use the OID_PM_PROTOCOL_OFFLOAD_L
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_PROTOCOL_OFFLOAD_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PM\_PROTOCOL\_OFFLOAD\_LIST

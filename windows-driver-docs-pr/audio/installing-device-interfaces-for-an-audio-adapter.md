@@ -9,7 +9,6 @@ keywords:
 - subdevices WDK audio
 - audio device interfaces WDK
 ms.date: 10/27/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Device Interfaces for an Audio Adapter

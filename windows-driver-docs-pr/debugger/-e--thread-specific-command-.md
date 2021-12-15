@@ -9,7 +9,6 @@ api_name:
 - ~e (Thread-Specific Command)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~e (Thread-Specific Command)

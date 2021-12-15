@@ -15,7 +15,6 @@ keywords:
 - Driver Verifier options, Monitoring Driver Dispatch Routines
 - Driver Verifier options, Monitoring Memory Dispatch List (MDL) Usage
 ms.date: 10/20/2017
-ms.localizationpriority: medium
 ---
 
 # Automatic Checks

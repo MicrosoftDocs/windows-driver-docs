@@ -12,7 +12,6 @@ keywords:
 - event callback functions WDK KMDF
 - callback functions WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Access to Hardware

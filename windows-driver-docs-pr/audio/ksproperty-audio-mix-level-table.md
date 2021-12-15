@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/04/2020
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE

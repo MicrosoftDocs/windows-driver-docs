@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_PCO_STATUS notification t
 keywords:
 - NDIS_STATUS_WWAN_PCO_STATUS, PCO status notification, Mobile Broadband PCO status notification, MB PCO status notification
 ms.date: 08/08/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_PCO_STATUS

@@ -9,7 +9,6 @@ api_name:
 - .pcmd (Set Prompt Command)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .pcmd (Set Prompt Command)

@@ -4,7 +4,6 @@ description: The OID_WDI_GET_BSS_ENTRY_LIST command is used to ask the adapter t
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_GET_BSS_ENTRY_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_BSS\_ENTRY\_LIST (dot11wificxintf.h)

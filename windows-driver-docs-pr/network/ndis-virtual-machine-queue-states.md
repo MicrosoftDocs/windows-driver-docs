@@ -2,7 +2,6 @@
 title: NDIS Virtual Machine Queue States
 description: NDIS Virtual Machine Queue States
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Virtual Machine Queue States

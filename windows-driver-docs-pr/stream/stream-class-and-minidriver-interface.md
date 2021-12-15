@@ -9,7 +9,6 @@ keywords:
 - SRBs WDK streaming minidriver
 - ISRs WDK streaming minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stream Class and Minidriver Interface

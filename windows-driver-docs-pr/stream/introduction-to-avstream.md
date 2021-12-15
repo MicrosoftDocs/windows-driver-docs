@@ -4,7 +4,6 @@ description: Introduction to AVStream
 keywords:
 - AVStream WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to AVStream

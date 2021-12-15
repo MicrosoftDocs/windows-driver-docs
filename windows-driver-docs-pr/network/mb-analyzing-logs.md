@@ -2,7 +2,6 @@
 title: MB Analyzing Logs
 description: MB Analyzing Logs
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # Mobile Broadband Analyzing Logs

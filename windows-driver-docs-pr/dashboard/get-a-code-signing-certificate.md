@@ -3,7 +3,6 @@ title: Get a code signing certificate
 description: Get a code signing certificate
 ms.topic: article
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Get a code signing certificate

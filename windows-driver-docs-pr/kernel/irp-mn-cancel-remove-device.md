@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_CANCEL_REMOVE_DEVICE' kernel-mode driver ar
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_CANCEL_REMOVE_DEVICE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_CANCEL\_REMOVE\_DEVICE

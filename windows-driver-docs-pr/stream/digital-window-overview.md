@@ -2,7 +2,6 @@
 title: Digital Window overview
 description: Describes Digital Window controls that allow an application that implements digital pan, tilt and zoom to focus selectively on objects.
 ms.date: 06/24/2021
-ms.localizationpriority: medium
 ---
 
 # Digital Window overview

@@ -6,7 +6,6 @@ keywords:
 - system-supplied function drivers WDK parallel ports
 - function drivers WDK parallel ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Operating a Parallel Port

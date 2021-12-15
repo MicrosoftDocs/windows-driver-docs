@@ -12,7 +12,6 @@ keywords:
 - prefix cache WDK network redirectors
 - double filtering WDK network redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MUP Changes in Microsoft Windows Vista

@@ -10,7 +10,6 @@ keywords:
 - switching to VGA mode WDK Windows 2000 display
 - thread watchdog timers WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disabling the Watchdog Timer While Testing Display Drivers

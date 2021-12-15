@@ -2,7 +2,6 @@
 title: Symbol Store Folder Tree
 description: The symbol store backing SMB and HTTP requests is a folder tree residing on a local disk.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Symbol Store Folder Tree

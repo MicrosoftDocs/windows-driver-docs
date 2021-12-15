@@ -9,7 +9,6 @@ api_name:
 - ChildListConfiguration
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ChildListConfiguration rule (kmdf)

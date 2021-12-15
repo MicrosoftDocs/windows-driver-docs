@@ -3,7 +3,6 @@ title: The Ssindex.cmd Script
 description: The Ssindex.cmd Script
 keywords: ["SrcSrv, Ssindex.cmd script", "Ssindex.cmd script"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # The Ssindex.cmd Script

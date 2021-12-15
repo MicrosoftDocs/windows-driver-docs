@@ -4,7 +4,6 @@ description: WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS is a TLV that contain
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SEND\_ACTION\_FRAME\_RESPONSE\_PARAMETERS

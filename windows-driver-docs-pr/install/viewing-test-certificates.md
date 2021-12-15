@@ -4,7 +4,6 @@ description: Viewing Test Certificates
 keywords:
 - driver signing WDK , viewing test certificates
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing Test Certificates

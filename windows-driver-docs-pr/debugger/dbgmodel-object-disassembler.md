@@ -2,7 +2,6 @@
 title: Debugger Data Model - Disassembler Objects
 description: Disassembler objects enable the ability to disassemble code for a specific architecture.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Disassembler Objects
 ## Summary

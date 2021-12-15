@@ -3,7 +3,6 @@ title: Toolbar Buttons
 description: Toolbar Buttons
 keywords: ["toolbar (WinDbg), button descriptions", "buttons (WinDbg Toolbar), descriptions"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Toolbar Buttons

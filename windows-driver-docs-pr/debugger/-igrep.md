@@ -9,7 +9,6 @@ api_name:
 - igrep
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !igrep

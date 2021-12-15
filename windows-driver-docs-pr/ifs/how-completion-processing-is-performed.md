@@ -4,7 +4,6 @@ description: How Completion Processing Is Performed
 keywords:
 - IRP completion routines WDK file system , processing stages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How Completion Processing Is Performed

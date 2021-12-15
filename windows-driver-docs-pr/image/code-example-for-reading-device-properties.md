@@ -2,7 +2,6 @@
 title: Code Example for Reading Device Properties
 description: Code Example for Reading Device Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Example for Reading Device Properties

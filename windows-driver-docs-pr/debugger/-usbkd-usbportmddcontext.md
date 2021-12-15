@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbportmddcontext
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbportmddcontext

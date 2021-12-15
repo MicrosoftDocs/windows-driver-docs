@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY is a TLV that contains the pol
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_GO\_INTERNAL\_RESET\_POLICY

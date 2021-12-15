@@ -13,7 +13,6 @@ keywords:
 - custom synths WDK audio , downloadable sounds
 - synthesizers WDK audio , downloadable sounds
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DLS Download Support

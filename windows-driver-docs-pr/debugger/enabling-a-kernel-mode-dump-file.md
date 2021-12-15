@@ -3,7 +3,6 @@ title: Enabling a Kernel-Mode Dump File
 description: Enabling a Kernel-Mode Dump File
 keywords: ["dump file, enabling kernel-mode dump file"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling a Kernel-Mode Dump File

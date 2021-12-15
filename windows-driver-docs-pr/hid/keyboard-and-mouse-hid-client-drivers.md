@@ -9,7 +9,6 @@ keywords:
 - mouse drivers, HID
 - HID mouse driver for Windows
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Keyboard and mouse HID client drivers

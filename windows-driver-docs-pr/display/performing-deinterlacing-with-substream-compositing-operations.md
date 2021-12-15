@@ -6,7 +6,6 @@ keywords:
 - combining substream compositing WDK DirectX VA
 - substream compositing WDK DirectX VA
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

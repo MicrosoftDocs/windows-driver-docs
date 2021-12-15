@@ -4,7 +4,6 @@ description: WDI_TLV_AUTH_ALGO_LIST is a WiFiCx TLV that contains a list of auth
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_AUTH_ALGO_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_AUTH\_ALGO\_LIST (dot11wificxtypes.hpp)

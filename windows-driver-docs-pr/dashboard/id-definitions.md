@@ -3,7 +3,6 @@ title: Windows Partner Center ID Definitions
 description: Windows Partner Center ID Definitions
 ms.topic: article 
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dashboard ID definitions

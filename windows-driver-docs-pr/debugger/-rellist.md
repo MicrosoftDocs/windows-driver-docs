@@ -9,7 +9,6 @@ api_name:
 - rellist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rellist

@@ -2,7 +2,6 @@
 title: Audio Miniport Object Interfaces
 description: Audio Miniport Object Interfaces
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Miniport Object Interfaces

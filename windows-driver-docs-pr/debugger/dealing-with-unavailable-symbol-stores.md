@@ -3,7 +3,6 @@ title: Dealing with Unavailable Symbol Stores
 description: Dealing with Unavailable Symbol Stores
 keywords: ["SymProxy, unavailable stores"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Dealing with Unavailable Symbol Stores

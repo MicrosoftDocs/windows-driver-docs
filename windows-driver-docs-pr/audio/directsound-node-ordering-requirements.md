@@ -11,7 +11,6 @@ keywords:
 - software-emulated 3D processing WDK audio
 - supermixer nodes WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectSound Node-Ordering Requirements

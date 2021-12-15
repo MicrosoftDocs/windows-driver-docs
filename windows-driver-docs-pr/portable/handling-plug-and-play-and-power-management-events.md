@@ -2,7 +2,6 @@
 description: Handling Plug and Play and Power Management Events
 title: Handling Plug and Play and Power Management Events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Plug and Play and Power Management Events

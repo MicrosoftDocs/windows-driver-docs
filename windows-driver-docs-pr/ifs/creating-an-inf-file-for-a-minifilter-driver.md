@@ -11,7 +11,6 @@ keywords:
 - DefaultInstall section WDK file system
 - AddRegistry section WDK file system
 ms.date: 08/21/2020
-ms.localizationpriority: medium
 ---
 
 # Creating an INF file for a filter driver

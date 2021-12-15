@@ -6,7 +6,6 @@ keywords:
 - VGA WDK video miniport
 - VGA WDK video miniport , about VGA-compatible drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VGA-Compatible Video Miniport Drivers (Windows 2000 Model)

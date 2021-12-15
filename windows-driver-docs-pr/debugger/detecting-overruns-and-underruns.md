@@ -2,7 +2,6 @@
 title: Detecting Overruns and Underruns
 description: Detecting Overruns and Underruns
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Detecting Overruns and Underruns

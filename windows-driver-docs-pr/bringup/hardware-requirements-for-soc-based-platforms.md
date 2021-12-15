@@ -2,7 +2,6 @@
 title: Hardware requirements for SoC-based platforms
 description: The ACPI 5.0 specification introduces a new set of hardware requirements to support SoC-based platforms that run Windows.
 ms.date: 08/19/2021
-ms.localizationpriority: medium
 ---
 
 # Hardware requirements for SoC-based platforms

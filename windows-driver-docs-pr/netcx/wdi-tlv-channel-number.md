@@ -4,7 +4,6 @@ description: WDI_TLV_CHANNEL_NUMBER is a WiFiCx TLV that contains a channel numb
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_CHANNEL_NUMBER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CHANNEL\_NUMBER (dot11wificxtypes.hpp)

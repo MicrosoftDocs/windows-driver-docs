@@ -2,7 +2,6 @@
 title: Requirements for Property Page Extension DLLs
 description: Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)

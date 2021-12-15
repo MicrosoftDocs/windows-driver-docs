@@ -12,7 +12,6 @@ keywords:
 - registry WDK device installations
 - WMI security WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Secure Device Installations

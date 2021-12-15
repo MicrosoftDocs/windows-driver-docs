@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_DISCOVER_MODE is a WiFiCx TLV that contains Wi-Fi Direc
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_P2P_DISCOVER_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DISCOVER\_MODE (dot11wificxtypes.hpp)

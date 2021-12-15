@@ -4,7 +4,6 @@ description: WDI_TLV_BSS_SELECTION_PARAMETERS is a WiFiCx TLV that contains WDI_
 ms.date: 06/25/2021
 keywords:
  - WDI_TLV_BSS_SELECTION_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BSS\_SELECTION\_PARAMETERS (dot11wificxtypes.hpp)

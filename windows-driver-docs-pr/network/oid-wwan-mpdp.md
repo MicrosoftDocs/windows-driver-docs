@@ -4,7 +4,6 @@ description: OID_WWAN_MPDP sets or queries information about Multiple Packet Dat
 keywords:
 - OID_WWAN_MPDP, MPDP OID
 ms.date: 06/25/2018
-ms.localizationpriority: medium
 ---
 
 # OID_WWAN_MPDP

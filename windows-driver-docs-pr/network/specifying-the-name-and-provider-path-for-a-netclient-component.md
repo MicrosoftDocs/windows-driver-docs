@@ -5,7 +5,6 @@ keywords:
 - add-registry-sections WDK networking , NetClient component name and path
 - NetClient component name and path WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying the Name and Provider Path for a NetClient Component

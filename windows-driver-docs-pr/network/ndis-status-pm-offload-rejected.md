@@ -4,7 +4,6 @@ description: The NDIS_STATUS_PM_OFFLOAD_REJECTED status indicates to overlying d
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PM_OFFLOAD_REJECTED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED

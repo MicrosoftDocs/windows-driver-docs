@@ -4,7 +4,6 @@ description: Remote NDIS INF Template
 keywords:
 - Remote NDIS WDK networking , INF template
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Remote NDIS INF Template

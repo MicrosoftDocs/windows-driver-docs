@@ -2,7 +2,6 @@
 title: Wi-Fi device model and objects
 description: The Wi-Fi device is used by the host in the context of two types of objects adapter and port.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi device model and objects

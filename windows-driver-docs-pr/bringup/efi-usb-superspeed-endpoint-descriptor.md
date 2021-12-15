@@ -2,7 +2,6 @@
 title: EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR
 description: The EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR structure is used to describe the supported USB SuperSpeed endpoints to the USB function driver.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR

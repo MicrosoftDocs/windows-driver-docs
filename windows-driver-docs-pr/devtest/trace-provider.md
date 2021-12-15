@@ -8,7 +8,6 @@ keywords:
 - providers WDK software tracing
 - trace sessions WDK , providers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trace Provider

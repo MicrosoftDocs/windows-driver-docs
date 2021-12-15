@@ -9,7 +9,6 @@ api_name:
 - PDC_UNEXPECTED_REVOCATION_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x17D: PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP

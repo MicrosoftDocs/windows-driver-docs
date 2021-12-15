@@ -6,7 +6,6 @@ keywords:
 - graphics DLL WDK printer , return printer-specific information
 - returning printer-specific information WDK printer graphics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Returning Printer-Specific Information

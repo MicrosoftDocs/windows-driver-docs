@@ -11,7 +11,6 @@ keywords:
 - Example 44 Forcibly update the HAL
 - HAL update example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Console (DevCon.exe) Examples

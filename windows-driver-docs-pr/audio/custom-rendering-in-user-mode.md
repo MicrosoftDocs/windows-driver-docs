@@ -16,7 +16,6 @@ keywords:
 - default synthesizers
 - synthesizers WDK audio , user-mode custom rendering
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Custom Rendering in User Mode

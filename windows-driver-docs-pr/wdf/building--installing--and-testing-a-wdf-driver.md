@@ -2,7 +2,6 @@
 title: Building, Installing, and Testing
 description: This section describes how you build a Windows Driver Frameworks (WDF) driver in Microsoft Visual Studio, whether you need to provide a co-installer, and how you test your driver using the WDF Verifier and built-in event logging.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Building, Installing, and Testing

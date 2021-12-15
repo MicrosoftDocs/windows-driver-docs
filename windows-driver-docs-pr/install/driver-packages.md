@@ -2,7 +2,6 @@
 title: Driver Packages
 description: Driver Packages
 ms.date: 12/09/2021
-ms.localizationpriority: High
 ---
 
 # Driver Packages

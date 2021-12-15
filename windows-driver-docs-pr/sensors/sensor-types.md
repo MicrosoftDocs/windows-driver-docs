@@ -2,7 +2,6 @@
 title: Sensor types
 description: Universal Sensor Type GUIDs
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Sensor types

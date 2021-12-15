@@ -2,7 +2,6 @@
 title: Windows Inbox Smart Card Minidriver
 description: Windows Inbox Smart Card Minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Inbox Smart Card Minidriver

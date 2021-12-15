@@ -4,7 +4,6 @@ description: NDIS issues an object identifier (OID) method request of OID_NIC_SW
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_CREATE_SWITCH Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NIC\_SWITCH\_CREATE\_SWITCH

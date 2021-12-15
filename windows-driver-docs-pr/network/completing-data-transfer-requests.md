@@ -2,7 +2,6 @@
 title: Completing Data Transfer Requests
 description: Completing Data Transfer Requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Completing Data Transfer Requests

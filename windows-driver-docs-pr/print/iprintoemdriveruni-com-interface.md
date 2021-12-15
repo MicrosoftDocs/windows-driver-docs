@@ -4,7 +4,6 @@ description: IPrintOemDriverUni COM Interface
 keywords:
 - IPrintOemDriverUni
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrintOemDriverUni COM Interface

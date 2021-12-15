@@ -3,7 +3,6 @@ title: View Source language file extensions
 description: View Source language file extensions
 keywords: ["View Source Language File Extensions"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Source language file extensions

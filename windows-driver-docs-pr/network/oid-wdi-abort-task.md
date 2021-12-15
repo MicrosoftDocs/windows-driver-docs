@@ -4,7 +4,6 @@ description: OID_WDI_ABORT_TASK is a property that is sent down to cancel a spec
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_ABORT_TASK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_ABORT\_TASK

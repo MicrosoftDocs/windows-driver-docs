@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_ELEMENT is a TLV that contains the Encoded Field Elemen
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_ELEMENT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

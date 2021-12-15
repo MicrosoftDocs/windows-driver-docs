@@ -2,7 +2,6 @@
 title: USB Remote NDIS overview
 description: USB Remote NDIS overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Remote NDIS overview

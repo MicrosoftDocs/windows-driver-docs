@@ -7,7 +7,6 @@ keywords:
 - deferred contexts WDK Windows 7 display , excluding DDI functions
 - deferred contexts WDK Windows Server 2008 R2 display , excluding DDI functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Excluding DDI Functions for Deferred Contexts

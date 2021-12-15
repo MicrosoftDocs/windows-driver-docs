@@ -8,7 +8,6 @@ keywords:
 - user-mode DirectDraw WDK Windows 2000 display
 - kernel-mode DirectDraw WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectDraw Architecture

@@ -6,7 +6,6 @@ keywords:
 - Metadata Information Server WDK
 - metadata server WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Metadata and Internet Services

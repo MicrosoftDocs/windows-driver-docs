@@ -9,7 +9,6 @@ keywords:
 - flipping WDK DirectDraw , tearing
 - surfaces WDK DirectDraw , flipping
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tearing

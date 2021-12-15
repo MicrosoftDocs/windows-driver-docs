@@ -2,7 +2,6 @@
 title: IRP Major Function Codes
 description: IRP Major Function Codes
 ms.date: 03/09/2020
-ms.localizationpriority: medium
 ---
 
 # IRP Major Function Codes

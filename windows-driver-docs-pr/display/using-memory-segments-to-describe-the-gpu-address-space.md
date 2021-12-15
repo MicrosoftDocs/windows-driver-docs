@@ -6,7 +6,6 @@ keywords:
 - hidden video memory WDK display
 - video memory manager WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Memory Segments to Describe the GPU Address Space

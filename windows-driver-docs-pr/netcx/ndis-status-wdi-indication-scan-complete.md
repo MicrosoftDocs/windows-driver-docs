@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE to indi
 ms.date: 06/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE (dot11wificxintf.h)

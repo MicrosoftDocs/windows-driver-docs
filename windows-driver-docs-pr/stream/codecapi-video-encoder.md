@@ -2,7 +2,6 @@
 title: CODECAPI_VIDEO_ENCODER
 description: Video encoders use the support of this GUID to indicate they are a video encoder.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # CODECAPI_VIDEO_ENCODER

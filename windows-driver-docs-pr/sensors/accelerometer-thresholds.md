@@ -2,7 +2,6 @@
 title: Accelerometer thresholds
 description: This topic provides information about the accelerometer thresholds.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Accelerometer thresholds

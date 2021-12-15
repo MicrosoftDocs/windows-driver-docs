@@ -4,7 +4,6 @@ description: The IRP_MN_QUERY_INTERFACE request enables a driver to export a dir
 ms.date: 07/30/2021
 keywords:
  - IRP_MN_QUERY_INTERFACE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_INTERFACE

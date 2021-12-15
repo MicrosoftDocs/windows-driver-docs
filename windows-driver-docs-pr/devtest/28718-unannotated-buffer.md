@@ -2,7 +2,6 @@
 title: C28718 warning
 description: Warning C28718 Unannotated buffer.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28718"
 ---

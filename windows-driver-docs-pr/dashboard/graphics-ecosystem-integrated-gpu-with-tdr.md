@@ -3,7 +3,6 @@ title: Myriad of machines with integrated GPU that had a TDR caused by graphics 
 description: Learn about the measure that evaluates a myriad of machines with integrated GPUs having the driver and encountering TDR due to a graphics driver binary crash.
 ms.topic: article
 ms.date: 09/02/2021
-ms.localizationpriority: medium
 ---
 
 # Myriad of machines with integrated GPU that had a TDR caused by graphics driver crash (ecosystem)

@@ -2,7 +2,6 @@
 title: Design the landing page of a mobile broadband app
 description: Design the landing page of a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design the landing page of a mobile broadband app

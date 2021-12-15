@@ -6,7 +6,6 @@ keywords:
 - protocol INF files WDK networking
 - device INF files WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installation Requirements for Network MUX Intermediate Drivers

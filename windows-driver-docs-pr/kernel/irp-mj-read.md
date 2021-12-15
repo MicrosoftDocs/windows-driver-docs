@@ -4,7 +4,6 @@ description: Every device driver that transfers data from its device to the syst
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_READ Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_READ

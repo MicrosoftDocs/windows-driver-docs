@@ -9,7 +9,6 @@ api_name:
 - wmitrace.logger
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wmitrace.logger

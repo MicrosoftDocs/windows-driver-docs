@@ -4,7 +4,6 @@ description: The PnP manager uses this IRP to request the type and instance numb
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_BUS_INFORMATION Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_BUS\_INFORMATION

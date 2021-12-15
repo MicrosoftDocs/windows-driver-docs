@@ -2,7 +2,6 @@
 title: Canceling DMA Transactions
 description: Canceling DMA Transactions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Canceling DMA Transactions

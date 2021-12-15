@@ -9,7 +9,6 @@ api_name:
 - pcitree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pcitree

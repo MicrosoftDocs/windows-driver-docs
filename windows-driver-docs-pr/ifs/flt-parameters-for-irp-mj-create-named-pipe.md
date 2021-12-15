@@ -14,7 +14,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/05/2019
-ms.localizationpriority: medium
 ---
 
 # FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE union

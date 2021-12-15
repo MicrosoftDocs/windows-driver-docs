@@ -2,7 +2,6 @@
 title: HTTPS
 description: HTTPS
 ms.date: 05/07/2018
-ms.localizationpriority: medium
 ---
 
 # HTTPS

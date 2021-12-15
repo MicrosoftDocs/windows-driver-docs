@@ -7,7 +7,6 @@ keywords:
 - KSEVENTSETID_VIDCAP_TVAUDIO
 - audio changed event WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TV Audio Change Event

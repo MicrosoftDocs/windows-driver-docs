@@ -9,7 +9,6 @@ api_name:
 - NdisReEnumerateProtocolBindings
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisReEnumerateProtocolBindings rule (ndis)

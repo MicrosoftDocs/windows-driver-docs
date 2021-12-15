@@ -2,7 +2,6 @@
 title: MB Device Services
 description: Windows 7 introduced a NDIS (Network Device Interface Specification) based driver model for supporting Mobile Broadband (MB) devices.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Device Services

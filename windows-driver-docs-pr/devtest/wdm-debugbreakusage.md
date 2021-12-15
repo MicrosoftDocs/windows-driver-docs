@@ -9,7 +9,6 @@ api_name:
 - DebugBreakUsage
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DebugBreakUsage rule (wdm)

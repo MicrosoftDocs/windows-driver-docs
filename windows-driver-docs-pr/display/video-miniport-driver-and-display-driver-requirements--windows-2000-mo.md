@@ -2,7 +2,6 @@
 title: Video Miniport and Display Driver Requirements (XDDM)
 description: Video Miniport Driver and Display Driver Requirements (Windows 2000 Model)
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

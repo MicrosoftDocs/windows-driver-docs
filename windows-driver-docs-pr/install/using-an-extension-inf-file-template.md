@@ -2,7 +2,6 @@
 title: Using an Extension INF File Template
 description: Describes how to use extension INF templates
 ms.topic: article 
-ms.localizationpriority: medium
 ms.date: 06/12/2020
 ---
 

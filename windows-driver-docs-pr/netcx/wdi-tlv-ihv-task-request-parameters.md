@@ -4,7 +4,6 @@ description: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS is a WiFiCx TLV that contains t
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_IHV_TASK_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS (dot11wificxtypes.hpp)

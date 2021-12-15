@@ -2,7 +2,6 @@
 description: Defining the Service Properties
 title: Defining the Service Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining the Service Properties

@@ -10,7 +10,6 @@ keywords:
 - public release driver signing WDK , WHQL
 - release signing WDK , WHQL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WHQL Release Signature

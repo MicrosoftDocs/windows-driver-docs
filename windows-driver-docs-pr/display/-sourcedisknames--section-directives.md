@@ -2,7 +2,6 @@
 title: '[SourceDiskNames] section directives'
 description: On Windows Vista and later, in-box INFs use the [SourceDisksXxx] directives. 
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \[SourceDiskNames\] section directives

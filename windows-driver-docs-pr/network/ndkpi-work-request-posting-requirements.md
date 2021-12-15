@@ -2,7 +2,6 @@
 title: NDKPI Work Request Posting Requirements
 description: This section describes requirements for NDKPI work request posting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDKPI Work Request Posting Requirements

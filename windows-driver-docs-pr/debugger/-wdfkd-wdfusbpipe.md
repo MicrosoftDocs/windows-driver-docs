@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfusbpipe
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfusbpipe

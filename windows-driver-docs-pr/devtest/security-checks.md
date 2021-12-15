@@ -2,7 +2,6 @@
 title: Driver Verifier Security Checks
 description: The Security Checks option of Driver Verifier monitors the driver for common errors that can result in security vulnerabilities.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Verifier Security Checks

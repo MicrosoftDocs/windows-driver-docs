@@ -4,7 +4,6 @@ description: WDI_TLV_FT_PMKR0NAME is a TLV that contains a PMKR0Name or PMKR1Nam
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_PMKR0NAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_PMKR0NAME

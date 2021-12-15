@@ -9,7 +9,6 @@ keywords:
 - actions WDK finish-install
 - DI_FLAGSEX_FINISHINSTALL_ACTION
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How Finish-Install Actions are Processed

@@ -9,7 +9,6 @@ api_name:
 - vpb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vpb

@@ -4,7 +4,6 @@ description: Pre-Association Operation Overview
 keywords:
 - pre-association operations WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pre-Association Operation Overview

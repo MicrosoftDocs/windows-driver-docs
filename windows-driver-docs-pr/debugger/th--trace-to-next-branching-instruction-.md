@@ -9,7 +9,6 @@ api_name:
 - th (Trace to Next Branching Instruction)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # th (Trace to Next Branching Instruction)

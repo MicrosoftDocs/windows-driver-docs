@@ -5,7 +5,6 @@ keywords:
 - Serenum driver WDK , device enumeration
 - enumerating Serenum devices WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating Serenum Devices

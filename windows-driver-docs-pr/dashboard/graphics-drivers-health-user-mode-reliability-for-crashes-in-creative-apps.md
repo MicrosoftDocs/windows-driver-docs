@@ -3,7 +3,6 @@ title: Number of user mode reliability for crashes in creative applications
 description: Learn about the measure that counts crashes in display drivers that happen in creative applications. The measure then normalizes the total runtime to years.
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Number of user mode reliability for crashes in creative applications, normalized by usage, is less than or equal to the baseline goal

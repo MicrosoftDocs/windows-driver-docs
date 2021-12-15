@@ -8,7 +8,6 @@ keywords:
 - UART WDK serial devices
 - 16550 UART-compatible interfaces WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface

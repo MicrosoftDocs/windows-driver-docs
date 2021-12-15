@@ -5,7 +5,6 @@ keywords:
 - spooler notification WDK print , terminology
 - print spooler notification WDK , terminology
 ms.date: 06/12/2020
-ms.localizationpriority: medium
 ---
 
 # Spooler notification terminology

@@ -3,7 +3,6 @@ title: Configuring Object Reference Tracing
 description: Configuring Object Reference Tracing
 keywords: ["Object Reference Tracing, configuration"]
 ms.date: 01/26/2021
-ms.localizationpriority: medium
 ---
 
 # Configuring Object Reference Tracing

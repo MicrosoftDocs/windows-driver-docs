@@ -6,7 +6,6 @@ keywords:
 - adapters WDK networking , installation requirements
 - WAN WDK networking , adapter installation requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installation Requirements for Network Adapters

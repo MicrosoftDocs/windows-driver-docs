@@ -2,7 +2,6 @@
 title: Virtual address spaces
 description: When a processor reads or writes to a memory location, it uses a virtual address.
 ms.date: 11/30/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy22q2
 ---
 

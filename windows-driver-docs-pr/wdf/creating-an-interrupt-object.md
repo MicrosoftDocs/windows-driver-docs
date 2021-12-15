@@ -7,7 +7,6 @@ keywords:
 - message-signaled interrupts WDK KMDF
 - MSIs WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating an Interrupt Object

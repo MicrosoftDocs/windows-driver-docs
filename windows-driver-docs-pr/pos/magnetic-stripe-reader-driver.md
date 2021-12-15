@@ -2,7 +2,6 @@
 title: Magnetic stripe reader driver sample
 description: This sample demonstrates how to create a universal driver for a magnetic stripe reader and is intended as a template for creating a new driver.
 ms.date: 09/07/2018
-ms.localizationpriority: medium
 ---
 
 # Magnetic stripe reader driver sample

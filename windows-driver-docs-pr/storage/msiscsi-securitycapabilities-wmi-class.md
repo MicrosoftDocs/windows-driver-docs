@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_SecurityCapabilities WMI Class
 description: MSiSCSI\_SecurityCapabilities WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

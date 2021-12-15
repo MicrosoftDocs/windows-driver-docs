@@ -2,7 +2,6 @@
 description: The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.
 title: Using the Network Monitor Tool
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Network Monitor Tool

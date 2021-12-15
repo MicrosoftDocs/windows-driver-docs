@@ -4,7 +4,6 @@ description: WDI_TLV_PROTOCOL_OFFLOAD_ID is a TLV that contains the protocol off
 ms.date: 05/07/2021
 keywords:
  - WDI_TLV_PROTOCOL_OFFLOAD_ID Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PROTOCOL\_OFFLOAD\_ID

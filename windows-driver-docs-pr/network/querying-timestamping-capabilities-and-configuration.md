@@ -2,7 +2,6 @@
 title: Querying timestamping capabilities and configuration
 description: Overlying drivers can issue the following OID query requests to obtain hardware and software timestamping information.
 ms.date: 01/31/2021
-ms.localizationpriority: medium
 ---
 
 # Querying timestamping capabilities and configuration

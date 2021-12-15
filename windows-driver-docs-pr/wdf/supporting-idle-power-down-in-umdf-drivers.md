@@ -5,7 +5,6 @@ keywords:
 - power management WDK UMDF , idle power-down
 - idle power-down WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Idle Power-Down in UMDF Drivers

@@ -3,7 +3,6 @@ title: Get started with the Hardware program
 description: Get started with the Hardware program
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Get started with the hardware dashboard program

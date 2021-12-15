@@ -9,7 +9,6 @@ api_name:
 - g (Go)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # g (Go)

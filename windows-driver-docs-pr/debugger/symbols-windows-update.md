@@ -3,7 +3,6 @@ title: Offline Symbols for Windows Update
 description: This topic describes how you can work with off line symbols for Windows Update.
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Offline Symbols for Windows Update

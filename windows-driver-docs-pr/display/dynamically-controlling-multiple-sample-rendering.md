@@ -5,7 +5,6 @@ keywords:
 - multiple-sample rendering WDK DirectX 9.0 , dynamic control
 - rendering multisamples WDK DirectX 9.0 , dynamic control
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dynamically Controlling Multiple-Sample Rendering

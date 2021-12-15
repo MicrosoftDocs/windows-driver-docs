@@ -8,7 +8,6 @@ api_name:
 - DEVPRIVATE_RESOURCE
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

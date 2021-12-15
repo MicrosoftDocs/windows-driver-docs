@@ -2,7 +2,6 @@
 title: WiFiCx IHV extensible types
 description: The WiFiCx model allows the IHV to support custom PHY type, authentication algorithms, and cipher algorithms.
 ms.date: 09/30/2021
-ms.localizationpriority: medium
 ---
 
 # WiFiCx IHV extensible types

@@ -4,7 +4,6 @@ description: OID_WDI_TASK_CHANGE_OPERATION_MODE configures the operation mode fo
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CHANGE_OPERATION_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

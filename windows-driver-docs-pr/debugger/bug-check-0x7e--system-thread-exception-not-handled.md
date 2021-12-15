@@ -9,7 +9,6 @@ api_name:
 - SYSTEM_THREAD_EXCEPTION_NOT_HANDLED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7E: SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED

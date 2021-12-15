@@ -4,7 +4,6 @@ description: Advantages of the Filter Manager Model
 keywords:
 - filter manager WDK file system minifilter , advantages
 ms.date: 10/16/2019
-ms.localizationpriority: medium
 ---
 
 # Advantages of the Filter Manager Model

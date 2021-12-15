@@ -2,7 +2,6 @@
 title: Device Communication through the Bus Driver
 description: Device Communication through the Bus Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Communication through the Bus Driver

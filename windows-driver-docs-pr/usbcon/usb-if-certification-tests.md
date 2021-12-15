@@ -2,7 +2,6 @@
 description: Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.
 title: USB-IF Certification Tests
 ms.date: 10/22/2019
-ms.localizationpriority: medium
 ---
 
 # USB-IF Certification

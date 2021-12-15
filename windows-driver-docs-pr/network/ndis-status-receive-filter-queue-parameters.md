@@ -4,7 +4,6 @@ description: The NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS status indicates to
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS

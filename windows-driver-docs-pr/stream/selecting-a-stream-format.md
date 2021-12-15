@@ -10,7 +10,6 @@ keywords:
 - data intersections WDK video capture
 - intersections WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Selecting a Stream Format

@@ -2,7 +2,6 @@
 title: Updating the IP headers for coalesced segments
 description: This section describes how to update the IP headers for coalesced segments
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Updating the IP Headers for Coalesced Segments

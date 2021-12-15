@@ -6,7 +6,6 @@ keywords:
 - blended pictures WDK DirectX VA , alpha-blend data loading
 - AYUV alpha-blending surface WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Loading an AYUV Alpha-Blending Surface

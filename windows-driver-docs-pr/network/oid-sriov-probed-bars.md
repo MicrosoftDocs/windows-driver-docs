@@ -4,7 +4,6 @@ description: NDIS issues an object identifier (OID) query request of OID_SRIOV_P
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_PROBED_BARS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_PROBED\_BARS

@@ -2,7 +2,6 @@
 title: Debugger Data Model - Operand Attributes Objects
 description: An operand of a machine instruction is described by an operand attributes object.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Operand Attributes Objects 
 ## Summary

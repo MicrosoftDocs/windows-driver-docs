@@ -9,7 +9,6 @@ keywords:
 - heaps WDK DirectDraw
 - alignment WDK DirectDraw extended surface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Surface Alignment

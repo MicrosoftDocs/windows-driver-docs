@@ -2,7 +2,6 @@
 title: Understanding TYMED
 description: Understanding TYMED
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Understanding TYMED

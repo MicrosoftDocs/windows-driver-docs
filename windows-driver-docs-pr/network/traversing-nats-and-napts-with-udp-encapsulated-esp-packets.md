@@ -6,7 +6,6 @@ keywords:
 - network address translators WDK IPsec offload
 - network address port translators WDK IPsec offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets

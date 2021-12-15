@@ -9,7 +9,6 @@ api_name:
 - pte2va
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pte2va

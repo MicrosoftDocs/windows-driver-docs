@@ -2,7 +2,6 @@
 title: PwrTest
 description: The power management test tool (PwrTest) is a test tool that enables developers, testers, and system integrators to exercise and record power management information from the system.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PwrTest

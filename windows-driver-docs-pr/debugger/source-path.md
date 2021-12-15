@@ -3,7 +3,6 @@ title: Source Path
 description: This topic covers how to set the source path or load the individual source files.
 keywords: source files and paths, source path
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Source Path

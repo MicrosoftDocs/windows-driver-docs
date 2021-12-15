@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 05/17/2019
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_MULTI\_FEED\_DETECT\_METHOD

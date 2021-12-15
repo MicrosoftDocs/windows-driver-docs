@@ -2,7 +2,6 @@
 title: Specify mobile telephone numbers
 description: Specify mobile telephone numbers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specify mobile telephone numbers

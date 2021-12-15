@@ -3,7 +3,6 @@ title: WMI and the Power Management Tab
 description: WMI and the Power Management Tab
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "device property sheets WDK WMI", "power management WDK WMI", "property pages WDK WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # WMI and the Power Management Tab

@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT to
 ms.date: 06/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT (dot11wificxintf.h)

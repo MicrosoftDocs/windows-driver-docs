@@ -2,7 +2,6 @@
 title: Option Attributes for All Features
 description: Option Attributes for All Features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Option Attributes for All Features

@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbtx
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbtx

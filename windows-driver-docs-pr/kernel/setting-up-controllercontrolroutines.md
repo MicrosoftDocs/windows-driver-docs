@@ -3,7 +3,6 @@ title: Setting Up ControllerControl Routines
 description: Describes how a driver's DispatchPnP routine sets up a ControllerControl routine when it receives an IRP_MN_START_DEVICE request. 
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, setting up"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Setting Up ControllerControl Routines

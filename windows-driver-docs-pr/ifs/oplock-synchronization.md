@@ -2,7 +2,6 @@
 title: Oplock synchronization
 description: Describes how filters and file systems handle oplock synchronization
 ms.date: 01/08/2021
-ms.localizationpriority: medium
 ---
 
 # Oplock synchronization

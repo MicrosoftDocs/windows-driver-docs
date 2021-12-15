@@ -2,7 +2,6 @@
 title: WDK and MSBuild overview
 description: Visual Studio can manage multiple projects. This section describes the WDK build environment.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDK and MSBuild overview

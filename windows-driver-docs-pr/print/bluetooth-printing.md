@@ -6,7 +6,6 @@ keywords:
 - Bluetooth WDK , printing
 - wireless connectivity WDK printer
 ms.date: 08/11/2021
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Printing

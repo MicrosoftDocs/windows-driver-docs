@@ -2,7 +2,6 @@
 title: Setting Up Network Debugging of a Virtual Machine with KDNET
 description: This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine.
 ms.date: 01/21/2021
-ms.localizationpriority: medium
 ---
 
 # Setting Up Network Debugging of a Virtual Machine - KDNET

@@ -9,7 +9,6 @@ api_name:
 - pmssa
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pmssa

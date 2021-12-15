@@ -2,7 +2,6 @@
 title: KSPROPSETID\_MediaSeeking
 description: KSPROPSETID\_MediaSeeking
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_MediaSeeking

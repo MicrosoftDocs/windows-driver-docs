@@ -2,7 +2,6 @@
 title: Multiplane overlay support
 description: Multiplane overlays can be supported by Windows Display Driver Model (WDDM) 1.3 and later drivers. This capability is new starting with Windows 8.1.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiplane overlay support

@@ -4,7 +4,6 @@ description: Trace Session List Features
 keywords:
 - Trace Session List WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trace Session List Features

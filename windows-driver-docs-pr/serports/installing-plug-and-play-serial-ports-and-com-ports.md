@@ -6,7 +6,6 @@ keywords:
 - Plug and Play serial devices WDK
 - serial devices WDK , Plug and Play
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Plug and Play Serial Ports and COM Ports

@@ -2,7 +2,6 @@
 title: Initializing the Use of a SAN
 description: Initializing the Use of a SAN
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing the Use of a SAN

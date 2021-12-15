@@ -2,7 +2,6 @@
 title: Introduction to NDIS 6.80
 description: This section introduces NDIS 6.80 and describes changes from NDIS 6.70. NDIS 6.80 is included in Windows 10, version 1709.
 ms.date: 07/05/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.80

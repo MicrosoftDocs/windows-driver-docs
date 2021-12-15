@@ -4,7 +4,6 @@ description: The WDF_PTR_GET_OFFSET macro subtracts an address from another addr
 keywords:
  - WDF_PTR_GET_OFFSET macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WDF_PTR_GET_OFFSET macro

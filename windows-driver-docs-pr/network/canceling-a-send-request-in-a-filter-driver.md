@@ -4,7 +4,6 @@ description: Canceling a Send Request in a Filter Driver
 keywords:
 - canceling send operations WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Canceling a Send Request in a Filter Driver

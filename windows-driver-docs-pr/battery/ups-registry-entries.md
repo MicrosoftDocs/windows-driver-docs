@@ -6,7 +6,6 @@ keywords:
 - UPS registry entries WDK
 - registry WDK UPS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UPS Registry Entries

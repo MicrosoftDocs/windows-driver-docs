@@ -2,7 +2,6 @@
 title: SCSI Driver
 description: SCSI Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SCSI Driver

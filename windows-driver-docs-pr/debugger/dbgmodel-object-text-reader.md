@@ -2,7 +2,6 @@
 title: Debugger Data Model - Text Reader Objects
 description: Reads text out of files.
 ms.date: 12/13/2018
-ms.localizationpriority: medium
 ---
 # Text Reader Objects 
 ## Summary

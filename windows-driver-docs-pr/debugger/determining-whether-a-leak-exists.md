@@ -3,7 +3,6 @@ title: Determining Whether a Leak Exists
 description: Determining Whether a Leak Exists
 keywords: ["memory leak, detection"]
 ms.date: 10/01/2021
-ms.localizationpriority: medium
 ---
 
 # Determining Whether a Leak Exists

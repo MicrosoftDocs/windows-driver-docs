@@ -9,7 +9,6 @@ api_name:
 - NTFS_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x24: NTFS\_FILE\_SYSTEM

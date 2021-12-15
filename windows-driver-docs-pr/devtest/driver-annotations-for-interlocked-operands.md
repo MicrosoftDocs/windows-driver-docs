@@ -2,7 +2,6 @@
 title: Driver annotations for interlocked operands
 description: Driver annotations for interlocked operands
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver annotations for interlocked operands

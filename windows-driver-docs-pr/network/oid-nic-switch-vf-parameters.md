@@ -4,7 +4,6 @@ description: An overlying driver or user-mode application issues an object ident
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_VF_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NIC\_SWITCH\_VF\_PARAMETERS

@@ -9,7 +9,6 @@ api_name:
 - ControlDeviceInitAPI
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ControlDeviceInitAPI rule (kmdf)

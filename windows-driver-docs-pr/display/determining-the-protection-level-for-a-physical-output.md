@@ -4,7 +4,6 @@ description: Determining the Protection Level for a Physical Output
 keywords:
 - protection levels WDK display , determining for physical output
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the Protection Level for a Physical Output

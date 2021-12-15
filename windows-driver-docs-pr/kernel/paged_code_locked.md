@@ -1,7 +1,6 @@
 ---
 title: PAGED_CODE_LOCKED macro
 description: PAGED_CODE_LOCKED macro
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

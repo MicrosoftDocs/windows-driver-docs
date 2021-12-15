@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/03/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_PIN_GLOBALCINSTANCES

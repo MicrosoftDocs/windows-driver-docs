@@ -5,7 +5,6 @@ keywords:
 - MakeCert test certificates WDK
 - digital certificates WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MakeCert Test Certificate

@@ -2,7 +2,6 @@
 title: Power Management (NDIS 6.30)
 description: Power Management (NDIS 6.30)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power Management (NDIS 6.30)

@@ -5,7 +5,6 @@ keywords:
 - contexts WDK file system minifilter , referencing
 - referencing contexts
 ms.date: 10/25/2021
-ms.localizationpriority: medium
 ---
 
 # Referencing Contexts

@@ -5,7 +5,6 @@ keywords:
 - BinPlace WDK , examples
 - examples WDK BinPlace
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # BinPlace Examples

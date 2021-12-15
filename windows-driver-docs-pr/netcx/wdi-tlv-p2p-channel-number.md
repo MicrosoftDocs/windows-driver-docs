@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_CHANNEL_NUMBER is a WiFiCx TLV that contains Wi-Fi Dire
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_CHANNEL_NUMBER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_CHANNEL\_NUMBER (dot11wificxtypes.hpp)

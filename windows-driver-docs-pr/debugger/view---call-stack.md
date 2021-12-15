@@ -3,7 +3,6 @@ title: View Call Stack
 description: View Call Stack
 keywords: ["View Call Stack"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Call Stack

@@ -7,7 +7,6 @@ keywords:
 - hardware acceleration slider WDK Windows 2000 display
 - acceleration slider WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Display Hardware Acceleration Slider

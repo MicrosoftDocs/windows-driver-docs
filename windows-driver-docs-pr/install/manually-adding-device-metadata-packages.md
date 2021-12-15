@@ -2,7 +2,6 @@
 title: Manually Adding Device Metadata Packages
 description: Manually Adding Device Metadata Packages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Manually Adding Device Metadata Packages

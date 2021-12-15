@@ -7,7 +7,6 @@ keywords:
 - storage miniport drivers WDK , ATA miniport drivers
 - miniport drivers WDK storage , ATA miniport drivers
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # ATA Miniport Drivers

@@ -2,7 +2,6 @@
 title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
 ms.date: 05/14/2018
-ms.localizationpriority: medium
 ---
 
 # Audio Signal Processing Modes

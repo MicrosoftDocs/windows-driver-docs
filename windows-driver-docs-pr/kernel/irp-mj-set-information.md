@@ -4,7 +4,6 @@ description: Device drivers can optionally handle an IRP_MJ_SET_INFORMATION requ
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_SET_INFORMATION Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_SET\_INFORMATION

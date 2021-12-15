@@ -9,7 +9,6 @@ api_name:
 - SECURITY1_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x63: SECURITY1\_INITIALIZATION\_FAILED

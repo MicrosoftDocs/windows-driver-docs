@@ -2,7 +2,6 @@
 title: rpcexts.checkrpcsym
 description: rpcexts.checkrpcsym
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.checkrpcsym

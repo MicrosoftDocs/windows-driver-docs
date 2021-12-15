@@ -2,7 +2,6 @@
 title: Deployment Properties for Driver Package Projects
 description: You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deployment Properties for Driver Package Projects

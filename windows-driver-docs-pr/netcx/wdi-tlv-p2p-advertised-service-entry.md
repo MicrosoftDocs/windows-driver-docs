@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY is a WiFiCx TLV that contains 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_ADVERTISED\_SERVICE\_ENTRY (dot11wificxtypes.hpp)

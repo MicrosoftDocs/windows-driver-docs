@@ -8,7 +8,6 @@ keywords:
 - converting SCSI miniport drivers
 - resource restrictions WDK SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Use Only Supplied Resources in a Plug and Play SCSI Miniport

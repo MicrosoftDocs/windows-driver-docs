@@ -2,7 +2,6 @@
 title: WLAN Universal Windows driver model
 description: WDI (WLAN Device Driver Interface) is the new Universal Windows driver model for Windows 10.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WLAN Universal Windows driver model

@@ -9,7 +9,6 @@ api_name:
 - StorPortAllocatePool
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortAllocatePool rule (storport)

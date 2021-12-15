@@ -9,7 +9,6 @@ keywords:
 - synchronous codec commands WDK audio
 - asynchronous codec commands WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Synchronous and Asynchronous Codec Commands

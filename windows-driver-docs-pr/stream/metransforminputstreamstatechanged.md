@@ -2,7 +2,6 @@
 title: METransformInputStreamStateChanged
 description: The METransformInputStreamStateChanged event indicates that the input stream state or media type must be changed.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # METransformInputStreamStateChanged

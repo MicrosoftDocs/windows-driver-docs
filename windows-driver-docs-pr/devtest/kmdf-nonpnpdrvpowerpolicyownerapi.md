@@ -9,7 +9,6 @@ api_name:
 - NonPnPDrvPowerPolicyOwnerAPI
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NonPnPDrvPowerPolicyOwnerAPI rule (kmdf)

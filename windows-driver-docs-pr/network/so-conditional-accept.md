@@ -4,7 +4,6 @@ description: SO_CONDITIONAL_ACCEPT
 ms.date: 08/08/2017
 keywords: 
  -SO_CONDITIONAL_ACCEPT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SO\_CONDITIONAL\_ACCEPT

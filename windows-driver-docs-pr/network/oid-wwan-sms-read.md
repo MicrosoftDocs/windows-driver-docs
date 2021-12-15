@@ -4,7 +4,6 @@ description: OID_WWAN_SMS_READ reads SMS text messages stored in the MB device, 
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_READ Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SMS\_READ

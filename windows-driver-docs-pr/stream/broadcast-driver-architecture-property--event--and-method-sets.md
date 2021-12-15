@@ -2,7 +2,6 @@
 title: Broadcast Driver Architecture Property, Event, and Method Sets
 description: This section documents the property, event, and method sets that a BDA minidriver implements.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # Broadcast Driver Architecture Property, Event, and Method Sets

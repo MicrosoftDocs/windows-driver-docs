@@ -5,7 +5,6 @@ keywords:
 - Direct3D version 11 WDK Windows 7 display , enabling DDI support
 - Direct3D version 11 WDK Windows Server 2008 R2 display , enabling DDI support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Support for the Direct3D Version 11 DDI

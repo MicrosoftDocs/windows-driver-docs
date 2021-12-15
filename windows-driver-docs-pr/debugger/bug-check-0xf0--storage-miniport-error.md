@@ -9,7 +9,6 @@ api_name:
 - STORAGE_MINIPORT_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF0: STORAGE\_MINIPORT\_ERROR

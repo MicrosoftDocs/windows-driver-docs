@@ -9,7 +9,6 @@ api_name:
 - WdfSpinlock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WdfSpinlock rule (kmdf)

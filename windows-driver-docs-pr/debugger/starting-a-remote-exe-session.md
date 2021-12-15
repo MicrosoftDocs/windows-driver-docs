@@ -3,7 +3,6 @@ title: Starting a Remote.exe Session
 description: Starting a Remote.exe Session
 keywords: ["remote debugging through remote.exe, starting the session"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Starting a Remote.exe Session

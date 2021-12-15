@@ -4,7 +4,6 @@ description: WiFiCx does not use the WDI_TLV_HOTSPOT_DOMAIN_PARTNER TLV.
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_HOTSPOT_DOMAIN_PARTNER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_HOTSPOT\_DOMAIN\_PARTNER (dot11wificxtypes.hpp)

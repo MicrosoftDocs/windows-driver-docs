@@ -8,7 +8,6 @@ keywords:
 - DXVA_MBctrl_P_HostResidDiff_1
 - DXVA_MBctrl_P_OffHostIDCT_1
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Macroblock Control Commands

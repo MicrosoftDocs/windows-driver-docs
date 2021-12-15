@@ -7,7 +7,6 @@ keywords:
 - initializing callout drivers WDK Windows Filtering Platform
 - registering callouts WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering Callouts with the Filter Engine

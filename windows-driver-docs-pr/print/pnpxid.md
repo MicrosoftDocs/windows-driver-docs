@@ -5,7 +5,6 @@ keywords:
 - WSDMON port monitors WDK , PnPXID command
 - PnPXID
 ms.date: 09/08/2021
-ms.localizationpriority: medium
 ---
 
 # PnPXID command

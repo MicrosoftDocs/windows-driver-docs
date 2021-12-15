@@ -5,7 +5,6 @@ keywords:
 - TV connector WDK video miniport
 - copy protection WDK video miniport , setting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting TV Connector and Copy Protection Hardware

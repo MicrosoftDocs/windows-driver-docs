@@ -3,7 +3,6 @@ title: Using Spin Locks An Example
 description: Using Spin Locks An Example
 keywords: ["spin locks WDK kernel", "interrupt spin locks WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Spin Locks: An Example

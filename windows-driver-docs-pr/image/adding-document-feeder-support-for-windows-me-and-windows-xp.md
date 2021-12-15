@@ -2,7 +2,6 @@
 title: Adding document feeder support for Windows Me and Windows XP
 description: Adding document feeder support for Windows Me and Windows XP
 ms.date: 07/06/2020
-ms.localizationpriority: medium
 ---
 
 # Adding document feeder support

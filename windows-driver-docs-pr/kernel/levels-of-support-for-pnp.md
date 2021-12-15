@@ -3,7 +3,6 @@ title: Levels of Support for PnP
 description: Levels of Support for PnP
 keywords: ["PnP WDK kernel , device support", "Plug and Play WDK kernel , device support", "full PnP WDK kernel", "partial PnP WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Levels of Support for PnP

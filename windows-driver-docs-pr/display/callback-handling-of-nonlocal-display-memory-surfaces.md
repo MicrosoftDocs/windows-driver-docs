@@ -10,7 +10,6 @@ keywords:
 - memory WDK DirectDraw AGP , callbacks
 - callbacks WDK DirectDraw nonlocal memory
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Callback Handling Of Nonlocal Display Memory Surfaces

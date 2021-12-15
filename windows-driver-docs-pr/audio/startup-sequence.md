@@ -6,7 +6,6 @@ keywords:
 - startup sequences WDK audio
 - audio adapters WDK , startup sequences
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Startup Sequence

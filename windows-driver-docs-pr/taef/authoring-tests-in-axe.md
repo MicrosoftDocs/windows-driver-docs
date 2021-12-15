@@ -2,7 +2,6 @@
 title: Authoring Tests in AXE
 description: Authoring Tests in AXE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Authoring Tests in AXE

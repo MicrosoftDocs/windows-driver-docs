@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/30/2021
-ms.localizationpriority: medium
 ---
 
 # WIA_DPS_PREVIEW

@@ -8,7 +8,6 @@ keywords:
 - server-side installations WDK device installations
 - client-side installations WDK device installations
 ms.date: 12/01/2021
-ms.localizationpriority: medium
 ---
 
 # Device Installation Types

@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT is a TLV that contains th
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_RECEIVE\_SEQUENCE\_COUNT

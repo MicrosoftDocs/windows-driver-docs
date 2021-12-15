@@ -5,7 +5,6 @@ keywords:
 - request objects WDK KMDF , context space
 - context space WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Request Object Context

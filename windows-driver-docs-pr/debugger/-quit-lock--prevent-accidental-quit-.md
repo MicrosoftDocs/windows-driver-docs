@@ -9,7 +9,6 @@ api_name:
 - .quit_lock (Prevent Accidental Quit)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .quit\_lock (Prevent Accidental Quit)

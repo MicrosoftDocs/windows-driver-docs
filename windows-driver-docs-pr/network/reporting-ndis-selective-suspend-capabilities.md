@@ -2,7 +2,6 @@
 title: Reporting NDIS Selective Suspend Capabilities
 description: Reporting NDIS Selective Suspend Capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting NDIS Selective Suspend Capabilities

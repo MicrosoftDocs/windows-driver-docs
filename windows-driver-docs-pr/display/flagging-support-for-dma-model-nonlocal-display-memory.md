@@ -13,7 +13,6 @@ keywords:
 - DDCAPS2_NONLOCALVIDMEM
 - DDCAPS2_NONLOCALVIDMEMCAPS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Flagging Support for DMA Model Nonlocal Display Memory

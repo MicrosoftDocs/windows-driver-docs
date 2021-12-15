@@ -5,7 +5,6 @@ keywords:
 - HP-GL/2 monochrome WDK Unidrv , enabling support
 - PCL-5e WDK Unidrv , enabling support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD

@@ -4,7 +4,6 @@ description: This topic describes the OID_IP6_OFFLOAD_STATS object identifier (O
 keywords:
 - OID_IP6_OFFLOAD_STATS
 ms.date: 11/06/2017
-ms.localizationpriority: medium
 ---
 
 # OID_IP6_OFFLOAD_STATS

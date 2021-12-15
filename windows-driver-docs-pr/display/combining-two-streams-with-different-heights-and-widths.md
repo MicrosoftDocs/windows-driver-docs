@@ -6,7 +6,6 @@ keywords:
 - video streams combined WDK DirectX VA
 - streams combined WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Combining Two Streams with Different Heights and Widths

@@ -9,7 +9,6 @@ keywords:
 - writing network migration DLL
 - DLLs WDK network migration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing a Network Migration DLL

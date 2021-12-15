@@ -2,7 +2,6 @@
 title: About the Sensor Class Extension
 description: About the Sensor Class Extension
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # About the Sensor Class Extension

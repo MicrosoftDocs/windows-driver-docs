@@ -5,7 +5,6 @@ keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
 ms.date: 09/22/2021
-ms.localizationpriority: medium
 ---
 
 # Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates

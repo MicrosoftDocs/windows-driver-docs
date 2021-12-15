@@ -15,7 +15,6 @@ keywords:
 - parallel devices WDK , internal names
 - parallel devices WDK , symbolic links
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Parallel Device Interfaces, Internal Names, and Symbolic Links

@@ -4,7 +4,6 @@ description: AF_INET6
 ms.date: 08/08/2017
 keywords: 
  -AF_INET6 Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # AF\_INET6

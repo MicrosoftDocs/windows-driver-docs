@@ -8,7 +8,6 @@ keywords:
 - tracking per-stream context WDK file system
 - associating per-stream context WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Associating a Per-Stream Context With a File Stream

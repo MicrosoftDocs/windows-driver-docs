@@ -7,7 +7,6 @@ keywords:
 - ACPI namespaces WDK
 - ACPI control methods WDK , enumerating
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Enumerating Child Devices and Control Methods

@@ -2,7 +2,6 @@
 title: Handling the OID_NIC_SWITCH_CREATE_SWITCH Request
 description: Handling the OID_NIC_SWITCH_CREATE_SWITCH Request
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling the OID\_NIC\_SWITCH\_CREATE\_SWITCH Request

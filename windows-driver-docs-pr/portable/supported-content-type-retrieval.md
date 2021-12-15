@@ -2,7 +2,6 @@
 description: Supported Content-Type Retrieval
 title: Supported Content-Type Retrieval
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supported Content-Type Retrieval

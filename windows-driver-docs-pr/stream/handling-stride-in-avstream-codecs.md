@@ -4,7 +4,6 @@ description: Handling Stride in AVStream Codecs
 keywords:
 - AVStream hardware codec support WDK , handling stride
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Stride in AVStream Codecs

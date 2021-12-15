@@ -10,7 +10,6 @@ keywords:
 - color checking WDK Pscript
 - checking RGB colors
 ms.date: 09/08/2021
-ms.localizationpriority: medium
 ---
 
 # TrueGray feature

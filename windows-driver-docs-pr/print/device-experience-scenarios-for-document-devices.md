@@ -2,7 +2,6 @@
 title: Device experience scenarios for document devices
 description: Device experience scenarios for document devices
 ms.date: 01/30/2019
-ms.localizationpriority: medium
 ---
 
 # Device experience scenarios for document devices

@@ -2,7 +2,6 @@
 title: Improvements in XPSDrv
 description: This topic provides information about updates that have been made to the XPSDrv rendering architecture.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Improvements in XPSDrv

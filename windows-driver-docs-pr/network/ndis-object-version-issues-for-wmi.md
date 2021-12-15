@@ -4,7 +4,6 @@ description: NDIS Object Version Issues for WMI
 keywords:
 - NDIS version information WDK , WMI support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Object Version Issues for WMI

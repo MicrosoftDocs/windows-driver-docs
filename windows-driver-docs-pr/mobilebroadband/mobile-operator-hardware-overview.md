@@ -2,7 +2,6 @@
 title: Mobile operator hardware overview
 description: Mobile operator hardware overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mobile operator hardware overview

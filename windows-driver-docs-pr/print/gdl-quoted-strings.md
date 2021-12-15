@@ -7,7 +7,6 @@ keywords:
 - strings WDK GDL , quoted strings
 - quoted strings WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Quoted Strings

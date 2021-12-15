@@ -9,7 +9,6 @@ api_name:
 - AGP_INVALID_ACCESS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x104: AGP\_INVALID\_ACCESS

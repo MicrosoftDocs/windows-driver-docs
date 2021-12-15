@@ -4,7 +4,6 @@ description: WDI_TLV_RADIO_STATE_PARAMETERS is a WiFiCx TLV that contains radio 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_RADIO_STATE_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_RADIO\_STATE\_PARAMETERS (dot11wificxtypes.hpp)

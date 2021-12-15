@@ -11,7 +11,6 @@ keywords:
 - OPM WDK display , getting graphics adapter information
 - protection levels WDK display , changing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the OPM DDI

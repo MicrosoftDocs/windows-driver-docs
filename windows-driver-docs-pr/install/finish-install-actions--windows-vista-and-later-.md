@@ -8,7 +8,6 @@ keywords:
 - class installers WDK device installations , finish-install actions
 - co-installers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Finish-Install Actions

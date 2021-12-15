@@ -9,7 +9,6 @@ api_name:
 - DRIVE_EXTENDER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x134: DRIVE\_EXTENDER

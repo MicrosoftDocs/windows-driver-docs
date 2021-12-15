@@ -2,7 +2,6 @@
 title: Vendor-Provided DCB Components
 description: Vendor-Provided DCB Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vendor-Provided DCB Components

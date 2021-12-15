@@ -6,7 +6,6 @@ keywords:
 - Plug and Play WDK KMDF , scenarios
 - power management WDK KMDF , scenarios
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PnP and Power Management Scenarios

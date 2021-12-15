@@ -4,7 +4,6 @@ description: Control Channel Characteristics
 keywords:
 - Control Channel Characteristics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Control Channel Characteristics

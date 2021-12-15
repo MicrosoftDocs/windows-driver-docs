@@ -6,7 +6,6 @@ keywords:
 - AH-protected packets WDK IPsec offload , receive path offload
 - receive path offload WDK IPsec offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Offloading IPsec Tasks in the Receive Path

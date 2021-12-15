@@ -3,7 +3,6 @@ title: Target State
 description: Target State
 keywords: ["Debugger Engine API, targets, state"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Target State

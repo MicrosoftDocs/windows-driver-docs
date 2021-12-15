@@ -7,7 +7,6 @@ keywords:
 - framework collection objects WDK KMDF
 - object collections WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Object Collections

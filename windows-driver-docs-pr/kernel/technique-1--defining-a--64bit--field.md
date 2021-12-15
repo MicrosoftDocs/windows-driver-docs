@@ -3,7 +3,6 @@ title: Technique 1 Defining a "64Bit" Field
 description: Defining a "64Bit" Field for drivers
 keywords: ["32-bit I/O support WDK 64-bit , 64Bit field defined", "64Bit field defined WDK kernel", "bitfields WDK 64-bit", "separate control codes WDK 64-bit", "control codes WDK 64-bit", "file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Technique 1: Defining a "64Bit" Field

@@ -6,7 +6,6 @@ keywords:
 - drawing WDK DirectDraw , floating-point operations
 - DirectDraw WDK Windows 2000 display , floating-point operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performing Floating-point Operations in DirectDraw

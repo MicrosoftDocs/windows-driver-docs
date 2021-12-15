@@ -5,7 +5,6 @@ keywords:
 - storage drivers WDK , architecture
 - storage drivers WDK , types
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Windows Storage Driver Architecture

@@ -2,7 +2,6 @@
 title: Driver development changes for Windows 10, version 1809
 description: Learn about new features for driver development in Windows 10, version 1809 (Windows 10 October 2018 update).
 ms.date: 04/28/2020
-ms.localizationpriority: medium
 ---
 
 # What's new in Windows 10, version 1809

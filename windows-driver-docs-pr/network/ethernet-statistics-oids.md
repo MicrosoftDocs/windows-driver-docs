@@ -4,7 +4,6 @@ description: This topic describes Ethernet statistics OIDs
 keywords:
 - Ethernet statistics OIDs, Ethernet NDIS OIDs, Ethernet OIDs WDK, Ethernet OIDs networking
 ms.date: 11/01/2017
-ms.localizationpriority: medium
 ---
 
 # Ethernet statistics OIDs

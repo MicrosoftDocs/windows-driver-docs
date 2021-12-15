@@ -3,7 +3,6 @@ title: Graphics measures
 description: Graphics measures filter out benign initialization errors during graphics driver flighting
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Graphics measures

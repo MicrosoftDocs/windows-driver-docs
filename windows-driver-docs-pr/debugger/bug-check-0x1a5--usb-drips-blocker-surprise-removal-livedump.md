@@ -9,7 +9,6 @@ api_name:
 - USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A5: USB\_DRIPS\_BLOCKER\_SURPRISE\_REMOVAL\_LIVEDUMP

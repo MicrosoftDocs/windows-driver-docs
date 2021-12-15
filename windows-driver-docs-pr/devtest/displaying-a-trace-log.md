@@ -10,7 +10,6 @@ keywords:
 - .etl files
 - etl files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying a Trace Log

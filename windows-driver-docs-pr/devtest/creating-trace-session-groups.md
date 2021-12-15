@@ -5,7 +5,6 @@ keywords:
 - grouping trace sessions
 - trace sessions WDK , groups
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Trace Session Groups

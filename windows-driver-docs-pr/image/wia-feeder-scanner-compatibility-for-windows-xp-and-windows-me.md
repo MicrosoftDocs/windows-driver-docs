@@ -2,7 +2,6 @@
 title: WIA Feeder Scanner Compatibility for Windows XP and Windows Me
 description: WIA Feeder Scanner Compatibility for Windows XP and Windows Me
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Feeder Scanner Compatibility for Windows XP and Windows Me

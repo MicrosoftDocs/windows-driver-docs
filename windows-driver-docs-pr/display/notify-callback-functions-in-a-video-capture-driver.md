@@ -6,7 +6,6 @@ keywords:
 - notifying callback functions WDK kernel-mode video transport
 - callback functions WDK kernel-mode video transport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Notify Callback Functions in a Video Capture Driver

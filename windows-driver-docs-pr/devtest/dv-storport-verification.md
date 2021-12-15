@@ -2,7 +2,6 @@
 title: Storport Verification
 description: Storport Verification
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storport Verification

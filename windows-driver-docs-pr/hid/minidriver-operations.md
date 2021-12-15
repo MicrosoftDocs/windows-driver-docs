@@ -2,7 +2,6 @@
 title: Minidrivers and the HID class driver
 description: Operation of the HID class driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minidrivers and the HID class driver

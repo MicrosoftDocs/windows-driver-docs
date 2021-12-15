@@ -9,7 +9,6 @@ api_name:
 - DRIVER_VERIFIER_IOMANAGER_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC9: DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION

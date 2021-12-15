@@ -9,7 +9,6 @@ api_name:
 - devhandles
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !devhandles

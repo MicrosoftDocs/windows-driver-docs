@@ -8,7 +8,6 @@ api_name:
 - CM_Detect_Resource_Conflict
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

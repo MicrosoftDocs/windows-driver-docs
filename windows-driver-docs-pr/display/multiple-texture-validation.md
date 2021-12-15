@@ -5,7 +5,6 @@ keywords:
 - multiple textures WDK Direct3D , validation
 - texture management WDK Direct3D , validation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiple Texture Validation

@@ -9,7 +9,6 @@ api_name:
 - DeviceInitAllocate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DeviceInitAllocate rule (kmdf)

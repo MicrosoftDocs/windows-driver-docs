@@ -2,7 +2,6 @@
 title: Develop an app to handle the MobileOperatorNotification event
 description: Develop an app to handle the MobileOperatorNotification event
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Develop an app to handle the MobileOperatorNotification event

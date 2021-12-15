@@ -2,7 +2,6 @@
 title: LaunchDeviceStageFromExplorer
 description: LaunchDeviceStageFromExplorer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # LaunchDeviceStageFromExplorer

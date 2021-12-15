@@ -4,7 +4,6 @@ description: The OID_WDI_SET_ADD_CIPHER_KEYS command adds or overwrites cipher k
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_ADD_CIPHER_KEYS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_ADD\_CIPHER\_KEYS (dot11wificxintf.h)

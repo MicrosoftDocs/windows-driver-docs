@@ -4,7 +4,6 @@ description: This IRP enables a driver to awaken a sleeping system or to awaken 
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_WAIT_WAKE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_WAIT\_WAKE

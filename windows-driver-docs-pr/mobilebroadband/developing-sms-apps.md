@@ -2,7 +2,6 @@
 title: Introduction to developing SMS apps
 description: Introduction to developing SMS apps
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to developing SMS apps

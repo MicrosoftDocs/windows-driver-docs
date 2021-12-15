@@ -4,7 +4,6 @@ description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS is a WiFiCx TLV tha
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_PARAMETERS (dot11wificxtypes.hpp)

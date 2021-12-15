@@ -4,7 +4,6 @@ description: WDI_TLV_OPERATION_MODE is a WiFiCx TLV that contains the desired op
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_OPERATION_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_OPERATION\_MODE (dot11wificxtypes.hpp)

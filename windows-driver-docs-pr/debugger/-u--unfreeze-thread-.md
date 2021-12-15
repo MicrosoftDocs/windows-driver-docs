@@ -9,7 +9,6 @@ api_name:
 - ~u (Unfreeze Thread)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~u (Unfreeze Thread)

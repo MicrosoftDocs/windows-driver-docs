@@ -7,7 +7,6 @@ keywords:
 - KSPROPERTY_STREAM_MASTERCLOCK
 - physical time WDK kernel streaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Master Clocks

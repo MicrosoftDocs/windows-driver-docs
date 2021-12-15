@@ -2,7 +2,6 @@
 title: Basic Scanning with a Feeder Scanner
 description: Basic Scanning with a Feeder Scanner
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Basic Scanning with a Feeder Scanner

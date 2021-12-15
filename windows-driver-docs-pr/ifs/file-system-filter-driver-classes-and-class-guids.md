@@ -8,7 +8,6 @@ keywords:
 - filter drivers WDK file system , classes
 - file system filter drivers WDK , classes
 ms.date: 12/02/2021
-ms.localizationpriority: medium
 ---
 
 # File System Filter Driver Classes and Class GUIDs

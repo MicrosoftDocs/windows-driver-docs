@@ -8,7 +8,6 @@ keywords:
 - UMDF WDK , kernel-mode clients
 - User-Mode Driver Framework WDK , kernel-mode clients
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Kernel-Mode Clients in UMDF 1.x Drivers

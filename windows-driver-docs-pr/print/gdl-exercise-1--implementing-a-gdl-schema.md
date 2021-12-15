@@ -8,7 +8,6 @@ keywords:
 - GDL WDK , tutorials
 - schemas WDK GDL , implementing GDL schemas
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Exercise 1: Implementing a GDL Schema

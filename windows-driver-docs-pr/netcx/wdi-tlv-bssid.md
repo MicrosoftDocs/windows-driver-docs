@@ -4,7 +4,6 @@ description: WDI_TLV_BSSID is a WiFiCx TLV that contains the BSSID of a BSS.
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_BSSID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_BSSID (dot11wificxtypes.hpp)

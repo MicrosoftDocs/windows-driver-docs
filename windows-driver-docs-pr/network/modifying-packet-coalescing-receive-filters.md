@@ -2,7 +2,6 @@
 title: Modifying Packet Coalescing Receive Filters
 description: Modifying Packet Coalescing Receive Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modifying Packet Coalescing Receive Filters

@@ -2,7 +2,6 @@
 title: Plug and Play ID - PNPID Request
 description: Describes how Plug and Play ID values are requested using the UEFI website.
 ms.date: 08/06/2018
-ms.localizationpriority: medium
 ---
 
 # Plug and Play ID - PNPID Request

@@ -9,7 +9,6 @@ api_name:
 - .srcnoisy (Noisy Source Loading)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .srcnoisy (Noisy Source Loading)

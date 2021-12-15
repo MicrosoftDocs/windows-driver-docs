@@ -4,7 +4,6 @@ description: Understanding the Sdv-map.h File
 keywords:
 - Sdv-map.h WDK Static Driver Verifier , about Sdv-map.h
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Understanding the Sdv-map.h File

@@ -4,7 +4,6 @@ description: WDI_TLV_SET_POWER_DX_REASON is a TLV that contains the reason for a
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_POWER_DX_REASON Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SET\_POWER\_DX\_REASON

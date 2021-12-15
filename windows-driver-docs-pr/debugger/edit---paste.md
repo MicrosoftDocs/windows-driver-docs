@@ -3,7 +3,6 @@ title: Edit Paste
 description: Edit Paste
 keywords: ["Edit Paste", "text, Edit Paste"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Paste

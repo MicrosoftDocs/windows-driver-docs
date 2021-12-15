@@ -3,7 +3,6 @@ title: Edit Menu
 description: Edit Menu
 keywords: ["Edit Menu (complete listing)", "graphical interface, edit menu"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit Menu

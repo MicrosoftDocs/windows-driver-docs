@@ -9,7 +9,6 @@ api_name:
 - homedir
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !homedir

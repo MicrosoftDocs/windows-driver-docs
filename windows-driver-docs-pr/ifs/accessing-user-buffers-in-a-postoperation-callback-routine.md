@@ -4,7 +4,6 @@ description: Accessing User Buffers in a Postoperation Callback Routine
 keywords:
 - postoperation callback routines WDK file system minifilter , buffers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing User Buffers in a Postoperation Callback Routine

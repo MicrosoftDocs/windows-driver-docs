@@ -3,7 +3,6 @@ title: WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3
 description: WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3
 keywords: ["WakeFromD0", "WakeFromD1", "WakeFromD2", "WakeFromD3"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3

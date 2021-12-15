@@ -2,7 +2,6 @@
 title: Optimizing conditional checks that the WPP macros produce before tracing
 description: Can I optimize the conditional checks that the WPP macros produce before the tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Can I optimize the conditional checks that the WPP macros produce before the tracing?

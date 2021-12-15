@@ -4,7 +4,6 @@ description: Kernel Streaming Proxy Plug-ins Design Guide
 keywords:
 - Kernel Streaming Proxy WDK AVStream , plug-ins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Kernel Streaming Proxy Plug-ins Design Guide

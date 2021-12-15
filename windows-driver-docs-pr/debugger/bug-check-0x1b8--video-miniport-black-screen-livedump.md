@@ -9,7 +9,6 @@ api_name:
 - VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1B8: VIDEO\_MINIPORT\_BLACK\_SCREEN\_LIVEDUMP

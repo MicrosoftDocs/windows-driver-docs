@@ -11,7 +11,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , mirror drivers
 - assistive technologies and mirror drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mirror Drivers

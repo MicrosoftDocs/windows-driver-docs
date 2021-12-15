@@ -4,7 +4,6 @@ description: The NDIS_STATUS_WAN_FRAGMENT status indicates that a WAN-capable mi
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WAN_FRAGMENT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WAN\_FRAGMENT

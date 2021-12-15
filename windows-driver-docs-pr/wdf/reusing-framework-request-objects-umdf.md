@@ -9,7 +9,6 @@ keywords:
 - user-mode drivers WDK UMDF , reusing I/O request objects
 - reusing I/O request objects WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reusing Framework Request Objects in UMDF

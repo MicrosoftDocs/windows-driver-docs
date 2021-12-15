@@ -5,7 +5,6 @@ keywords:
 - battery miniclass drivers WDK , installing
 - battery class drivers WDK , installing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Battery Driver

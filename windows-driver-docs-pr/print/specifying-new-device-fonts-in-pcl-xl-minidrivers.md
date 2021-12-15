@@ -6,7 +6,6 @@ keywords:
 - device fonts WDK PCL XL
 - fonts WDK PCL XL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying New Device Fonts in PCL XL Minidrivers

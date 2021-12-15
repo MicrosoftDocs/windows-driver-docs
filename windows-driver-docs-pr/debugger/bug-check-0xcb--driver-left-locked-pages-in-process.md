@@ -9,7 +9,6 @@ api_name:
 - DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCB: DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS

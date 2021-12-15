@@ -2,7 +2,6 @@
 title: Overview of the Removable Device Capability
 description: Overview of the Removable Device Capability
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of the Removable Device Capability

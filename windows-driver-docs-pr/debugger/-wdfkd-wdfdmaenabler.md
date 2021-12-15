@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfdmaenabler
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdmaenabler

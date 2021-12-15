@@ -5,7 +5,6 @@ description: This topic provides instructions on how to use the MALT (Microsoft 
 ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a8
 
 ms.date: 07/08/2021
-ms.localizationpriority: medium
 ---
 
 # Building a light and color testing tool (MALT)

@@ -8,7 +8,6 @@ keywords:
 - dropped HID reports WDK
 - errors WDK HID reports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Troubleshooting HID Reports

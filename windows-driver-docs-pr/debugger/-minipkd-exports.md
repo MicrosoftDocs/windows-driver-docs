@@ -9,7 +9,6 @@ api_name:
 - minipkd.exports
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !minipkd.exports

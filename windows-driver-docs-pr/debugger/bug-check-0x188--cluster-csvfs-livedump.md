@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSVFS_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x188: CLUSTER\_CSVFS\_LIVEDUMP

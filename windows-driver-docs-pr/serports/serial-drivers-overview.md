@@ -2,7 +2,6 @@
 title: Serial Controller Drivers Overview
 description: All versions of Windows provide driver support for serial controller devices.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Serial Controller Drivers Overview

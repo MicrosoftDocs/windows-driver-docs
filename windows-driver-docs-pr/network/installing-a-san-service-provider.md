@@ -7,7 +7,6 @@ keywords:
 - SAN service providers WDK , registering
 - registering SAN service providers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a SAN Service Provider

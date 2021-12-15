@@ -5,7 +5,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , graphics
 - architecture WDK video miniport
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

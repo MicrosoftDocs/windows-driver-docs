@@ -20,7 +20,6 @@ keywords:
 - editors WDK boot options
 - boot options WDK , editing
 ms.date: 07/03/2018
-ms.localizationpriority: medium
 ---
 
 # Editing the Boot.ini File

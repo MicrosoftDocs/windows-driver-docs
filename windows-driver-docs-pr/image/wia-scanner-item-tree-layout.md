@@ -2,7 +2,6 @@
 title: WIA Scanner Item Tree Layout
 description: WIA Scanner Item Tree Layout
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Scanner Item Tree Layout

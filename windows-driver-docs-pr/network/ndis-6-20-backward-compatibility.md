@@ -5,7 +5,6 @@ keywords:
 - NDIS 6.20 WDK , backward compatibility
 - backward compatibility WDK NDIS 6.20
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS 6.20 Backward Compatibility

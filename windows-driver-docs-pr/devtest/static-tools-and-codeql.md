@@ -5,7 +5,6 @@ keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
 ms.date: 02/03/2021
-ms.localizationpriority: medium
 ---
 
 # CodeQL and the Static Tools Logo Test

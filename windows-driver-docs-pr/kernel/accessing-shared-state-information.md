@@ -3,7 +3,6 @@ title: Accessing Shared State Information
 description: Accessing Shared State Information
 keywords: ["critical section routines WDK kernel", "timer counters WDK kernel", "shared state information WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Shared State Information

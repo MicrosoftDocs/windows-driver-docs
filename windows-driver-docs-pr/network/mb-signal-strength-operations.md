@@ -2,7 +2,6 @@
 title: MB Signal Strength Operations
 description: MB Signal Strength Operations
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Signal Strength Operations

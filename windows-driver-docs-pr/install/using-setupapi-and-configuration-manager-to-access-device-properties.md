@@ -2,7 +2,6 @@
 title: Using SetupAPI and Configuration Manager with Device Properties
 description: Using SetupAPI and Configuration Manager to Access Device Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using SetupAPI and Configuration Manager to Access Device Properties

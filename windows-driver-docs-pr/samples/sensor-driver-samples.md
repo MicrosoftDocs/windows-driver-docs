@@ -2,7 +2,6 @@
 title: Sensor driver samples
 description: The driver samples in this directory provide a starting point for writing a custom sensor driver for your device.
 ms.date: 11/19/2019
-ms.localizationpriority: medium
 ---
 
 # Sensor driver samples

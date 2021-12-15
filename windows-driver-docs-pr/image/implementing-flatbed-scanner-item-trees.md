@@ -2,7 +2,6 @@
 title: Implementing Flatbed Scanner Item Trees
 description: Implementing Flatbed Scanner Item Trees
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing Flatbed Scanner Item Trees

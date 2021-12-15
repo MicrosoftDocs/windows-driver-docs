@@ -11,7 +11,6 @@ keywords:
 - interrupt affinity WDK networking
 - interrupts WDK net
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of NDIS MSI-X
