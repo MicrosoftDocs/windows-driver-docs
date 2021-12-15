@@ -41,3 +41,9 @@ More information about officially supported devices can be reviewed at the follo
 | [BM64](testing-BTP-hw-bm64.md) | Dual Mode radio | bm64 | pairing, audio, audio HID scenario | RunPairingTests.bat bm64 |
 | [ESP32](testing-BTP-hw-esp32.md) | Wi-Fi soft AP and server | esp32wifi | Wi-Fi coexistence | RunWiFiCoexScenarioTests.bat rn52 esp32wifi |
 | [Human Device Adapter](testing-BTP-human-device-adapter.md) | BR, LE, Dual Mode | HDA | pairing, audio, audio HID scenario, battery | RunPairingTests.bat HDA |
+
+## Power adapter
+
+Some multi-radio tests and power tests may require an external power adapter for the Traduci as the USB will be unable to provide sufficient power for all devices. 
+
+More information about power adapter requirements can be review on the [Power adapter](testing-BTP-hw-power-adapter.md) page.

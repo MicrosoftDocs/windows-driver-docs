@@ -76,5 +76,5 @@ To connect the Bluefruit Feather device to a PC via use a micro-USB cable.
 > [!Note]
 > The Bluefruit Feather is not currently supported for use with the Traduci.
 
->[!Troubleshooting]
-> If the tests are failing and the firmware of the Bluefruit Feather has not been updated recently, check that the firmware is a supported version by following step 1. If ther version is older and download the bootloader and install the latest firmware.
+## Trouble shooting
+- If the tests are failing consistently and the firmware of the Bluefruit Feather has not been updated recently, check that the firmware is a supported version by following step 1. If the version is older, download the bootloader and install the latest firmware.
