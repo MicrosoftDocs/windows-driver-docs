@@ -2,12 +2,12 @@
 title: Driver Release Cadence
 description: Policy around when drivers are released
 ms.topic: article
-ms.date: 08/31/2021
+ms.date: 12/15/2021
 ms.localizationpriority: medium
 ---
 
 # Driver Shiproom Release Cadence Windows
-Last Updated: August 31, 2021
+Last Updated: December 15, 2021
 
 This page provides information on the operation schedule for driver shiproom. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
 
@@ -37,20 +37,20 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 
 > A. If there are known issues for feature update and driver compatibility, partners can request feature update offer block mitigation while a compatible driver update is being validated and posted to WU.
 
-3. **Certain US Holidays**: Drivers needing “Microsoft Approval” will not be released on certain US Holidays
+3. **Certain US Holidays**: Drivers needing “Microsoft Approval” will not be released on certain US Holidays and long weekends
 
-|US Holidays | 2020 |	2021 |
+|US Holidays | 2022 |	2021 |
 |----|----|----|
-|New Year's Day | Tuesday Jan 01 | Friday Jan 01 |
-|Martin Luther King Day | Monday Jan 20 | Monday Jan 18 |
-|Presidents Day | Monday Feb 17 | Monday Feb 15 |
-|Memorial Day | Monday May 25 | Monday May 31 |
-|Fourth of July | Thursday Jul 03 | Monday Jul 5 |
-|Labor Day | Monday Sep 07 | Monday Sep 6 |
-|Thanksgiving Day | Thursday Nov 26 | Thursday Nov 25 |
-|Day after Thanksgiving | Friday Nov 27 |  Friday Nov 26 |
-|Christmas Eve | Tuesday Dec 24 | Thursday Dec 23 |
-|Christmas Day | Wednesday Dec 25 | Friday December 24 |
+|New Year's Day | Saturday Jan 01 | Friday Jan 01 |
+|Martin Luther King Day | Monday Jan 17 | Monday Jan 18 |
+|Presidents Day | Monday Feb 21 | Monday Feb 15 |
+|Memorial Day | Monday May 30 | Monday May 31 |
+|Fourth of July | Monday Jul 04 | Monday Jul 5 |
+|Labor Day | Monday Sep 05 | Monday Sep 6 |
+|Thanksgiving Day | Thursday Nov 24 | Thursday Nov 25 |
+|Day after Thanksgiving | Friday Nov 25 |  Friday Nov 26 |
+|Christmas Eve | Saturday Dec 24 | Thursday Dec 23 |
+|Christmas Day | Sunday Dec 25 | Friday December 24 |
 
 4. **US Winter Holiday timeframe release moratorium**: During the US Winter Holiday season, for approximately two weeks driver shiproom will not be releasing ANY drivers, for calendar year 2020 this is December 17, 2020 through January 1, 2021 and for CY2021 this will be December 16, 2021 through January 1, 2022. 
 
@@ -68,4 +68,4 @@ See the [2021 driver deferral periods](#calendar) calendars for additional dates
 2. <a id="calendar"></a>What is the latest deferral calendar?
 ** This calendar is subject to changes based on OS release timelines.
  
-![Sept - Dec 2021 Driver Release Calendar showing excluded dates as described above.](images/2021_updated_calendar.png)
+![Sept - Dec 2021 Driver Release Calendar showing excluded dates as described above.](images/2022_driver_calendar.png)
