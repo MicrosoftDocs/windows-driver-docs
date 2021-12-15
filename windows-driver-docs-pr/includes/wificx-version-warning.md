@@ -1,7 +1,6 @@
 ---
 description: "Note to warn this is a WiFiCx topic"
 title: Note to warn this is a WiFiCx topic
-ms.localizationpriority: medium
 ms.date: 10/30/2021
 ms.topic: include
 ---

@@ -2,7 +2,6 @@
 title: Time Travel Debugging - JavaScript Automation
 description: This section describes how to use JavaScript automation to work with TTD traces.
 ms.date: 09/17/2020
-ms.localizationpriority: medium
 ---
 
 # Time Travel Debugging - JavaScript Automation

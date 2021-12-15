@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 06/19/2020
-ms.localizationpriority: medium
 ---
 
 # SRB\_NOTIFY\_IDLE\_STATE

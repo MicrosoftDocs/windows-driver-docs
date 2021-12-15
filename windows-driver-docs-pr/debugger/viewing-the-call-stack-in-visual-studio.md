@@ -2,7 +2,6 @@
 title: Viewing the Call Stack in Visual Studio
 description: The procedure describes how to view the Call Stack in Visual Studio
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # Viewing the Call Stack in Visual Studio

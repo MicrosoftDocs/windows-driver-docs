@@ -8,7 +8,6 @@ keywords:
 - opportunistic lock WDK file system minifilter
 - locking WDK file system minifilter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing I/O Operations

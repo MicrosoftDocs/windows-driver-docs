@@ -2,7 +2,6 @@
 title: Processing the surprise removal of a NIC (Windows 7 and later)
 description: Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)

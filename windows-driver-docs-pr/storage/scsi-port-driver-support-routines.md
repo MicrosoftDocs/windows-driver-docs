@@ -6,7 +6,6 @@ keywords:
 - storage WDK
 - storage support routines
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # SCSI Port Driver Support Routines

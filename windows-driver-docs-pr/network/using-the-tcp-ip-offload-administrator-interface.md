@@ -7,7 +7,6 @@ keywords:
 - task offload WDK TCP/IP transport , administrator interface
 - connection offload WDK TCP/IP transport , administrator interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the TCP/IP Offload Administrator Interface

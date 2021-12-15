@@ -12,7 +12,6 @@ keywords:
 - templates WDK CPSUI
 - treeview pages WDK CPSUI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CPSUI-Supplied Pages and Templates

@@ -10,7 +10,6 @@ keywords:
 - driver file test signing WDK
 - test signing driver packages WDK , driver files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying the Signature of a Test-Signed Driver File

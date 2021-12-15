@@ -10,7 +10,6 @@ keywords:
 - formats WDK audio , pin data ranges
 - intersections WDK audio drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Pin Data Ranges

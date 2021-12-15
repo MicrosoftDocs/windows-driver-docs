@@ -6,7 +6,6 @@ keywords:
 - XPSDrv printer drivers WDK , end-user improvements
 - Print Capabilities WDK , XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Improved End-User Experience

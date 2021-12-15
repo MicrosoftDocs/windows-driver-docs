@@ -6,7 +6,6 @@ keywords:
 - language monitors WDK print
 - language monitors WDK print , about language monitors
 ms.date: 06/17/2020
-ms.localizationpriority: medium
 ---
 
 # Language Monitors

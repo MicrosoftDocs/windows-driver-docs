@@ -7,7 +7,6 @@ keywords:
 - Print Tickets WDK , XPSDrv
 - Print Tickets WDK , GDI-based print drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Ticket Compatibility with Win 32 Applications

@@ -6,7 +6,6 @@ keywords:
 - volume textures WDK DirectX 8.0
 - 3D textures WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Volume Textures

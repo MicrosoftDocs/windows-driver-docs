@@ -4,7 +4,6 @@ description: This topic provides information on cellular COM API capabilities.
 keywords:
 - Cellular COM API capabilities network drivers
 ms.date: 11/07/2017
-ms.localizationpriority: medium
 ---
 
 # Cellular COM API capabilities

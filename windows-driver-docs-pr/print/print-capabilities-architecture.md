@@ -4,7 +4,6 @@ description: Print Capabilities Architecture
 keywords:
 - Print Capabilities WDK , architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Capabilities Architecture

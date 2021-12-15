@@ -4,7 +4,6 @@ description: WDI_TLV_BSS_ENTRY_CHANNEL_INFO is a TLV that contains BSS entry cha
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_ENTRY_CHANNEL_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO

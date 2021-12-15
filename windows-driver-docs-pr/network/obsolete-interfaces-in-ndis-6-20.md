@@ -5,7 +5,6 @@ keywords:
 - NDIS 6.20 WDK , obsolete NDIS 6.1 interfaces
 - obsolete NDIS 6.1 interfaces WDK NDIS 6.20
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obsolete Interfaces in NDIS 6.20

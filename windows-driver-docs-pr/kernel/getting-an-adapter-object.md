@@ -3,7 +3,6 @@ title: Getting an Adapter Object
 description: Getting an Adapter Object
 keywords: ["adapter objects WDK kernel , getting", "DEVICE_DESCRIPTION", "DMA_OPERATIONS", "DMA transfers WDK kernel , adapter objects"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Getting an Adapter Object

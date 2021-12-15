@@ -3,7 +3,6 @@ title: Window Automatically Open Disassembly
 description: Window Automatically Open Disassembly
 keywords: ["Window Automatically Open Disassembly"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Window | Automatically Open Disassembly

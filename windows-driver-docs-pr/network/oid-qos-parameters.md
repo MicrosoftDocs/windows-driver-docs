@@ -4,7 +4,6 @@ description: The Data Center Bridging (DCB) component (Msdcb.sys) issues an obje
 ms.date: 08/08/2017
 keywords: 
  -OID_QOS_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_QOS\_PARAMETERS

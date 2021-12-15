@@ -8,7 +8,6 @@ keywords:
 - KMDF WDK , INX files
 - Kernel-Mode Driver Framework WDK , INX files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using INX Files to Create INF Files

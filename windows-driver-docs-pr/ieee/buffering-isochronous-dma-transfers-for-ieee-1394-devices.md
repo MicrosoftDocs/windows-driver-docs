@@ -6,7 +6,6 @@ keywords:
 - buffers WDK IEEE 1394 bus
 - DMA transfers WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Buffering Isochronous DMA Transfers for IEEE 1394 Devices

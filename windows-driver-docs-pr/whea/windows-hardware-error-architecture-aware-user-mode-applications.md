@@ -7,7 +7,6 @@ keywords:
 - Windows Hardware Error Architecture WDK , user-mode applications
 - errors WDK WHEA , user-mode applications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Hardware Error Architecture-Aware User-Mode Applications

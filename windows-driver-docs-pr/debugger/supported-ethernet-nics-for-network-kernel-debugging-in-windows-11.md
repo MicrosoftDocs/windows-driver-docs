@@ -2,7 +2,6 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 11
 description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 11.
 ms.date: 10/06/2021
-ms.localizationpriority: medium
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 11

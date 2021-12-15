@@ -8,7 +8,6 @@ keywords:
 - test scenarios WDK WSDBIT
 - Attachments scenario WDK WSDBIT
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Attachments Scenarios

@@ -2,7 +2,6 @@
 title: Thin Provisioning
 description: Thin Provisioning
 ms.date: 09/30/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy22q1
 ---
 

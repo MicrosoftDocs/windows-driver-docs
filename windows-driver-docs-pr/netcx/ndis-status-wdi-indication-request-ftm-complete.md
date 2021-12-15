@@ -4,7 +4,6 @@ description: WiFiCx drivers send the NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMP
 ms.date: 07/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE (dot11wificxintf.h)

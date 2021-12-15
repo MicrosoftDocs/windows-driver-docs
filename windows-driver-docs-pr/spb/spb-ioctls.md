@@ -2,7 +2,6 @@
 title: SPB I/O Requests
 description: These IOCTLs are sent by a client (peripheral driver) handled by controller driver.
 ms.date: 11/29/2017
-ms.localizationpriority: medium
 ---
 
 # SPB I/O Requests

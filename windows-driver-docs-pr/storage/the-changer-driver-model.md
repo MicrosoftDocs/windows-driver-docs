@@ -13,7 +13,6 @@ keywords:
 - removable storage manager WDK changer
 - RSM WDK changer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The Changer Driver Model

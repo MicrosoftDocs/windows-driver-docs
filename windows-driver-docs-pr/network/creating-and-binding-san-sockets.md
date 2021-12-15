@@ -13,7 +13,6 @@ keywords:
 - SAN sockets WDK , creating
 - SAN sockets WDK , binding
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating and Binding SAN Sockets

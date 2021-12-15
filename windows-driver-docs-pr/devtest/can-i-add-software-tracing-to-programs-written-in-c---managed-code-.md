@@ -2,7 +2,6 @@
 title: Can I add software tracing to programs written in C++ managed code
 description: Can I add software tracing to programs written in C++ managed code
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Can I add software tracing to programs written in C++ managed code?

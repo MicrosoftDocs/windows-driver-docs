@@ -3,7 +3,6 @@ title: Non-PnP Driver's Unload Routine
 description: Non-PnP Driver's Unload Routine
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Non-PnP Driver's Unload Routine

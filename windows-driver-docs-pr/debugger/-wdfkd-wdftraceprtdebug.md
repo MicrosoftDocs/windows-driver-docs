@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdftraceprtdebug
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdftraceprtdebug

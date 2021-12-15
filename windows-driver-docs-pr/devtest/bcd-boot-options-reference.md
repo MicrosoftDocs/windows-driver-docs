@@ -2,7 +2,6 @@
 title: BCDEdit Options Reference
 description: BCDEdit Options Reference
 ms.date: 09/25/2020
-ms.localizationpriority: medium
 ---
 
 # BCDEdit Options Reference

@@ -5,7 +5,6 @@ keywords:
 - GPD files WDK Unidrv , resource DLLs
 - resource DLLs WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Resource DLLs in a Minidriver

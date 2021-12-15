@@ -3,7 +3,6 @@ title: Resizing and Moving a Window
 description: Resizing and Moving a Window
 keywords: ["debugging information windows, resizing and moving a window", "resizing and moving windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Resizing and Moving a Window

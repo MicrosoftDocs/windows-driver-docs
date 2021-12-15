@@ -9,7 +9,6 @@ api_name:
 - .restart (Restart Kernel Connection)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .restart (Restart Kernel Connection)

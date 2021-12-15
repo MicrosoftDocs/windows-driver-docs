@@ -2,7 +2,6 @@
 title: Overview of NDIS QoS Parameters
 description: Overview of NDIS QoS Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of NDIS QoS Parameters

@@ -6,7 +6,6 @@ keywords:
 - duplicate installation detection WDK print
 - detecting duplicate printer installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Installation and the Plug and Play Manager

@@ -2,7 +2,6 @@
 title: USB 2.0 Extensions
 description: This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # USB 2.0 Extensions

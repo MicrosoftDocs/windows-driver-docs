@@ -9,7 +9,6 @@ keywords:
 - PCM buffers WDK audio
 - latency WDK audio , clocks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Time-Stamped Events

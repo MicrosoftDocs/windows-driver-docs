@@ -9,7 +9,6 @@ api_name:
 - usb3kd.usb_tree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.usb\_tree

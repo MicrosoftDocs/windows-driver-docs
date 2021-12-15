@@ -9,7 +9,6 @@ api_name:
 - IrqlKeReleaseSpinLock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlKeReleaseSpinLock rule (wdm)

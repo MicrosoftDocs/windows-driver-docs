@@ -4,7 +4,6 @@ description: This topic describes the GUID_NDIS_STATUS_NETWORK_CHANGE GUID for t
 keywords:
 - GUID_NDIS_STATUS_NETWORK_CHANGE, WDK GUID_NDIS_STATUS_NETWORK_CHANGE network drivers
 ms.date: 11/22/2017
-ms.localizationpriority: medium
 ---
 
 # GUID_NDIS_STATUS_NETWORK_CHANGE

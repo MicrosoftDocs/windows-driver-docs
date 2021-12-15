@@ -6,7 +6,6 @@ keywords:
 - FDOs WDK battery
 - functional device objects WDK battery
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating an FDO in the Battery Miniclass Driver

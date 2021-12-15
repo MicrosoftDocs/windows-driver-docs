@@ -7,7 +7,6 @@ keywords:
 - edge filtering WDK DirectX VA
 - read-back buffers WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Edge Filtering Command Bytes

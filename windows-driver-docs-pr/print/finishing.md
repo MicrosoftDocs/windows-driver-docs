@@ -2,7 +2,6 @@
 title: Finishing property
 description: Contains data about operations performed after printing is complete.
 ms.date: 09/07/2021
-ms.localizationpriority: medium
 ---
 
 # Finishing property

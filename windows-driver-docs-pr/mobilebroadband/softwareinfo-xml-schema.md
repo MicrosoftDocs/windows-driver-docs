@@ -2,7 +2,6 @@
 title: SoftwareInfo XML schema overview
 description: SoftwareInfo XML schema overview
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # SoftwareInfo XML schema overview

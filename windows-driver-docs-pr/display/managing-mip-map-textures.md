@@ -4,7 +4,6 @@ description: Managing MIP Map Textures
 keywords:
 - MIP map textures WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing MIP Map Textures

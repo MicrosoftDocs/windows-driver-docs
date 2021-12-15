@@ -3,7 +3,6 @@ title: Verifying Symbols
 description: Verifying Symbols
 keywords: ["symbols, verifying"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying Symbols

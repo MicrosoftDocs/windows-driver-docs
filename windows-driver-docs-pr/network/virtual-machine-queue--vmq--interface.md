@@ -2,7 +2,6 @@
 title: Virtual Machine Queue (VMQ) Interface
 description: Virtual Machine Queue (VMQ) Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Machine Queue (VMQ) Interface

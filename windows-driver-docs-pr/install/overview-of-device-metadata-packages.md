@@ -4,7 +4,6 @@ description: Overview of Device Metadata Packages
 keywords:
 - device metadata packages WDK , about
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Device Metadata Packages

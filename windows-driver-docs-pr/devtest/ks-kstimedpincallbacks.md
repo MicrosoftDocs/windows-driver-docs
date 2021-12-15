@@ -9,7 +9,6 @@ api_name:
 - KsTimedPinCallbacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsTimedPinCallbacks rule ()

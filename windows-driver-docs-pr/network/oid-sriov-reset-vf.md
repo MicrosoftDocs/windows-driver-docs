@@ -4,7 +4,6 @@ description: Overlying drivers issue an object identifier (OID) set request of O
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_RESET_VF Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_RESET\_VF

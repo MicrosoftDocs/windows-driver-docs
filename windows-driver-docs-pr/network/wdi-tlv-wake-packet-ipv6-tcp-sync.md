@@ -4,7 +4,6 @@ description: WDI_TLV_WAKE_PACKET_IPv6_TCP_SYNC is a TLV that contains wake-on-LA
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_WAKE_PACKET_IPv6_TCP_SYNC Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_WAKE\_PACKET\_IPv6\_TCP\_SYNC

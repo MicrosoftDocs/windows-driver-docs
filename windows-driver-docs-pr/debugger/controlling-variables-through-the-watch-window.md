@@ -3,7 +3,6 @@ title: Controlling Variables Through the Watch Window
 description: Controlling Variables Through the Watch Window
 keywords: ["Watch window, global variables", "Watch window, local variables"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling Variables Through the Watch Window

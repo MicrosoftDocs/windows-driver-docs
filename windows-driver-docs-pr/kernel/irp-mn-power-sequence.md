@@ -4,7 +4,6 @@ description: This IRP returns the power sequence values for a device.
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_POWER_SEQUENCE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_POWER\_SEQUENCE

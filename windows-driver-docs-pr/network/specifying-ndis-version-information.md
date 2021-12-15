@@ -5,7 +5,6 @@ keywords:
 - NDIS version information WDK
 - versioning WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying NDIS Version Information

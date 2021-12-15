@@ -4,7 +4,6 @@ description: The OID_WDI_SET_DEFAULT_KEY_ID command sets the default key ID for 
 ms.date: 07/21/2021
 keywords:
  - OID_WDI_SET_DEFAULT_KEY_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_DEFAULT\_KEY\_ID (dot11wificxintf.h)

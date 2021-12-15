@@ -2,7 +2,6 @@
 title: Installing the Checked Build of Windows
 description: Installing the Checked Build of Windows
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # Installing the Checked Build of Windows

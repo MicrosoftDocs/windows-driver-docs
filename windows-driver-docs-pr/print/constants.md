@@ -5,7 +5,6 @@ keywords:
 - GPD file entries WDK Unidrv , constants
 - constants WDK GPD files
 ms.date: 09/03/2021
-ms.localizationpriority: medium
 ---
 
 # Constants (GPD language)

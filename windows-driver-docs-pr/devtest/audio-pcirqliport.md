@@ -9,7 +9,6 @@ api_name:
 - PcIrqlIport
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PcIrqlIport rule (audio)

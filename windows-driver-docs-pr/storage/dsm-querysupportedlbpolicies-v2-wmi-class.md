@@ -1,7 +1,6 @@
 ---
 title: DSM\_QuerySupportedLBPolicies\_V2 WMI Class
 description: DSM\_QuerySupportedLBPolicies\_V2 WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

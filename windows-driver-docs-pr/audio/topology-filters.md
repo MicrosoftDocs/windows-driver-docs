@@ -18,7 +18,6 @@ keywords:
 - audio jacks WDK
 - digital connectors WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Topology Filters

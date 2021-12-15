@@ -3,7 +3,6 @@ title: Create a device metadata experience
 description: Create a Device Metadata Experience
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Create a Device Metadata Experience

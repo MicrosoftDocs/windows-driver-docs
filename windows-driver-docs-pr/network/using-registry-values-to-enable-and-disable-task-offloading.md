@@ -7,7 +7,6 @@ keywords:
 - task offload WDK TCP/IP transport , enabling services
 - task offload WDK TCP/IP transport , disabling services
 ms.date: 10/30/2020
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q2 
 ---
 

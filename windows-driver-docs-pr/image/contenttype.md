@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/09/2020
-ms.localizationpriority: medium
 ---
 
 # ContentType element

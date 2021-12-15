@@ -2,7 +2,6 @@
 title: Keeping a Log File in KD
 description: Keeping a Log File in KD
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Keeping a Log File in KD

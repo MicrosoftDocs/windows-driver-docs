@@ -7,7 +7,6 @@ keywords:
 - co-installers WDK device installations , writing
 - writing co-installers WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing Class Installers and Co-Installers

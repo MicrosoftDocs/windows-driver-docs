@@ -4,7 +4,6 @@ description: Initializing the Display Miniport Driver
 keywords:
 - miniport drivers WDK display , initializing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing the Display Miniport Driver

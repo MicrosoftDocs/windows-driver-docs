@@ -3,7 +3,6 @@ title: Registering for Synchronous Driver Notification
 description: Registering for Synchronous Driver Notification
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "synchronous notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , registering", "synchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering for Synchronous Driver Notification

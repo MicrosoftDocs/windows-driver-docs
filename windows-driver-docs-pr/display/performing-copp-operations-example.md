@@ -7,7 +7,6 @@ keywords:
 - COPP WDK DirectX VA , operation example code
 - protected video WDK COPP , COPP operation example code
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performing COPP Operations Example

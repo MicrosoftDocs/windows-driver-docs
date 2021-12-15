@@ -9,7 +9,6 @@ api_name:
 - .rrestart (Register for Restart)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .rrestart (Register for Restart)

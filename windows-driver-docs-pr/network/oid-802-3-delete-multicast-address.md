@@ -4,7 +4,6 @@ description: As a set request, NDIS and overlying protocol drivers use the OID_8
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_DELETE_MULTICAST_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS

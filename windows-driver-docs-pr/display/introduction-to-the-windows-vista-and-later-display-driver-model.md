@@ -2,7 +2,6 @@
 title: Introduction to the Windows Display Driver Model (WDDM)
 description: Introduction to the Windows Display Driver Model (WDDM)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to the Windows Display Driver Model (WDDM)

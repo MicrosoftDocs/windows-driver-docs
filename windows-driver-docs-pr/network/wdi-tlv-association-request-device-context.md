@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT is a TLV that contains v
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_REQUEST\_DEVICE\_CONTEXT

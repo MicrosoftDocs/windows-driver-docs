@@ -9,7 +9,6 @@ keywords:
 - virtual subunit device identifiers WDK AV/C
 - subunit support WDK AV/C
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Subunit Device Identifiers

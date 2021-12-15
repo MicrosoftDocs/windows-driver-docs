@@ -2,7 +2,6 @@
 title: Can I tell if my trace provider is enabled for tracing
 description: Can I tell if my trace provider is enabled for tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Can I tell if my trace provider is enabled for tracing?

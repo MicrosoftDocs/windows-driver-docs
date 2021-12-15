@@ -9,7 +9,6 @@ api_name:
 - rcdrkd.rcdrsearchpath
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrsearchpath

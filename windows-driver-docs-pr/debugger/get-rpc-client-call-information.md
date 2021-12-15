@@ -3,7 +3,6 @@ title: Get RPC Client Call Information
 description: Get RPC Client Call Information
 keywords: ["RPC client call information", "CCALL (client call)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Get RPC Client Call Information

@@ -9,7 +9,6 @@ api_name:
 - MUI_NO_VALID_SYSTEM_LANGUAGE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x12A: MUI\_NO\_VALID\_SYSTEM\_LANGUAGE

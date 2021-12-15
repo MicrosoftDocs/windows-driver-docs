@@ -2,7 +2,6 @@
 description: This section describes the Usbccgp.sys driver provided by Microsoft for composite devices.
 title: USB Generic Parent Driver (Usbccgp.sys)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Generic Parent Driver (Usbccgp.sys)

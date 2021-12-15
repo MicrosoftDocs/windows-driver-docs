@@ -9,7 +9,6 @@ api_name:
 - TargetRelationNeedsRef
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # TargetRelationNeedsRef rule (wdm)

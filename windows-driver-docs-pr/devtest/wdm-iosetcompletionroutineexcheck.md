@@ -9,7 +9,6 @@ api_name:
 - IoSetCompletionRoutineExCheck
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoSetCompletionRoutineExCheck rule (wdm)

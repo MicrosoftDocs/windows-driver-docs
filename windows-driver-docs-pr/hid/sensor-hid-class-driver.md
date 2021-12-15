@@ -11,7 +11,6 @@ keywords:
 - Windows 8 sensors driver
 - sensors driver, Windows 8
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sensor HID class driver

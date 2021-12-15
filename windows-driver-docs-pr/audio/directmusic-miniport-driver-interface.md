@@ -12,7 +12,6 @@ keywords:
 - miniport drivers WDK audio , kernel-mode hardware acceleration
 - synthesizers WDK audio , kernel-mode hardware acceleration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectMusic Miniport Driver Interface

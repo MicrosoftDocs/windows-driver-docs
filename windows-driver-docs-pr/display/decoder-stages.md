@@ -13,7 +13,6 @@ keywords:
 - MCP WDK DirectX VA
 - motion compensation WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Decoder Stages

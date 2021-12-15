@@ -2,7 +2,6 @@
 title: Introduction to NDIS 6.30
 description: Introduction to NDIS 6.30
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.30

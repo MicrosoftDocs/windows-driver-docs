@@ -2,7 +2,6 @@
 title: Installing Device Metadata Packages through an Application
 description: Installing Device Metadata Packages through an Application
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Device Metadata Packages through an Application

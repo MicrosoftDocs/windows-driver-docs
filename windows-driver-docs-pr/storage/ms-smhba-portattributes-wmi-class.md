@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_PORTATTRIBUTES WMI Class
 description: MS\_SMHBA\_PORTATTRIBUTES WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

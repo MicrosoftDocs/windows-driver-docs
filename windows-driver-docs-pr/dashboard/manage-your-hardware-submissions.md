@@ -3,7 +3,6 @@ title: Manage hardware submissions
 description: Manage hardware submissions for the Partner Center
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing hardware submissions in the Partner Center

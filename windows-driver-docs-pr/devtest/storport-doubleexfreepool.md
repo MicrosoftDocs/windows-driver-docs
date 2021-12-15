@@ -9,7 +9,6 @@ api_name:
 - DoubleExFreePool
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleExFreePool rule (storport)

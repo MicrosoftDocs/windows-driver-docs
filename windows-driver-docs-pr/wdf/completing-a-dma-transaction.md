@@ -7,7 +7,6 @@ keywords:
 - bus-master DMA WDK KMDF , transactions
 - completing DMA transactions WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Completing a DMA Transaction

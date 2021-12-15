@@ -9,7 +9,6 @@ keywords:
 - CCD APIs WDK Windows 7 display , summaries and scenarios
 - CCD APIs WDK Windows Server 2008 R2 display , summaries and scenarios
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CCD Summaries and Scenarios

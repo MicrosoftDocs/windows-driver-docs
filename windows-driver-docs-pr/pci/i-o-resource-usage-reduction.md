@@ -6,7 +6,6 @@ keywords:
 - resource usage WDK
 - I/O resources WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # I/O Resource Usage Reduction

@@ -5,7 +5,6 @@ keywords:
 - property item requests WDK DirectMusic
 - miniport drivers WDK audio , property item requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Driver Property Item Requests

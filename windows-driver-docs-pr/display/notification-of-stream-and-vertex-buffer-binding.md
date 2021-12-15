@@ -8,7 +8,6 @@ keywords:
 - vertex buffers WDK DirectX 8.0
 - stream binding to vertex buffer WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Notification of Stream and Vertex Buffer Binding

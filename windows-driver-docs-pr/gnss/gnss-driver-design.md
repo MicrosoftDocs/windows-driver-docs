@@ -2,7 +2,6 @@
 title: Global Navigation Satellite System (GNSS) driver design
 description: Discusses design principles to consider when developing a Global Navigation Satellite System (GNSS) driver for Windows 10 including data structures, error reporting, and driver versioning.
 ms.date: 08/24/2021
-ms.localizationpriority: medium
 ---
 
 # Global Navigation Satellite System (GNSS) driver design

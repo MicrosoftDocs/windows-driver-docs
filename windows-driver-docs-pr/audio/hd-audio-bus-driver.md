@@ -10,7 +10,6 @@ keywords:
 - HD Audio, bus driver
 - High Definition Audio (HD Audio), bus driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HD Audio Bus Driver

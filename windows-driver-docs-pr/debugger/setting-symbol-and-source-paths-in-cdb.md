@@ -2,7 +2,6 @@
 title: Setting Symbol and Executable Image Paths in CDB
 description: Setting Symbol and Executable Image Paths in CDB
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Symbol and Executable Image Paths in CDB

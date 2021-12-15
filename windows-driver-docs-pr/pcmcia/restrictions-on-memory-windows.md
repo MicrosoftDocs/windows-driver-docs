@@ -5,7 +5,6 @@ keywords:
 - PCMCIA WDK buses , memory windows
 - memory windows WDK PCMCIA bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Restrictions on Memory Windows

@@ -3,7 +3,6 @@ title: Handling an IRP_MN_SURPRISE_REMOVAL Request
 description: Handling an IRP_MN_SURPRISE_REMOVAL Request
 keywords: ["surprise removals WDK PnP", "IRP_MN_SURPRISE_REMOVAL"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling an IRP\_MN\_SURPRISE\_REMOVAL Request

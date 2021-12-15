@@ -1,7 +1,6 @@
 ---
 title: iSCSI WMI Discovery Classes
 description: iSCSI WMI Discovery Classes
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

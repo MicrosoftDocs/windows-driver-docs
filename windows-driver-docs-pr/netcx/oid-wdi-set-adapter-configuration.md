@@ -4,7 +4,6 @@ description: The OID_WDI_SET_ADAPTER_CONFIGURATION command configures the adapte
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_ADAPTER_CONFIGURATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_ADAPTER\_CONFIGURATION (dot11wificxintf.h)

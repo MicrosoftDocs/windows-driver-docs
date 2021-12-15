@@ -2,7 +2,6 @@
 title: KSPROPSETID\_BtAudio
 description: KSPROPSETID\_BtAudio
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BtAudio

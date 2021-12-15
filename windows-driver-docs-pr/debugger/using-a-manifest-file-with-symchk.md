@@ -2,7 +2,6 @@
 title: Using a Manifest File with SymChk
 description: Using a Manifest File with SymChk
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Using a Manifest File with SymChk

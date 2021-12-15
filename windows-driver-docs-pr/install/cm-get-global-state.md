@@ -8,7 +8,6 @@ api_name:
 - CM_Get_Global_State
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

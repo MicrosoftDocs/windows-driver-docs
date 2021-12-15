@@ -1,7 +1,6 @@
 ---
 title: Read Typed Data (Function Index 29)
 description: This function reads a 32-byte block inside a typed block data region.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

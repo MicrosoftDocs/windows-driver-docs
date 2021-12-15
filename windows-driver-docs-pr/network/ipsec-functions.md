@@ -4,7 +4,6 @@ description: This section describes IPsec functions for Windows Filtering Platfo
 keywords:
 - IPsec functions network drivers
 ms.date: 11/07/2017
-ms.localizationpriority: medium
 ---
 
 # IPsec functions

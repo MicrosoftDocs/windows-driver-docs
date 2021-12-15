@@ -6,7 +6,6 @@ keywords:
 - driver-specific files WDK printer
 - downloading driver-specific printer files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Downloading Driver-Specific Files

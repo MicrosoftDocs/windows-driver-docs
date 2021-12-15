@@ -2,7 +2,6 @@
 title: WDI TX path
 description: This section describes the WDI TX path
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI TX path

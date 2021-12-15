@@ -5,7 +5,6 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , about platform-specific hardware error driver plug-ins
 - PSHED plug-ins WDK WHEA , about platform-specific hardware error driver plug-ins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to PSHED Plug-Ins

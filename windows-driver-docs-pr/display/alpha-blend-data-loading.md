@@ -5,7 +5,6 @@ keywords:
 - alpha-blend data loading WDK DirectX VA
 - blended pictures WDK DirectX VA , alpha-blend data loading
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Alpha-Blend Data Loading

@@ -4,7 +4,6 @@ description: WDI_TLV_PEER_MAC_ADDRESS is a WiFiCx TLV that contains the MAC addr
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_PEER_MAC_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PEER\_MAC\_ADDRESS (dot11wificxtypes.hpp)

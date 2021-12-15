@@ -2,7 +2,6 @@
 title: EFI_USB_INTERFACE_INFO
 description: The EFI_USB_INTERFACE_INFO structure  defines the supported USB interface.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USB_INTERFACE_INFO

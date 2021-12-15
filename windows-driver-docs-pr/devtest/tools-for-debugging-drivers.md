@@ -8,7 +8,6 @@ keywords:
 - debug_client tool WDK
 - debug_host tool WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tools for Debugging Drivers

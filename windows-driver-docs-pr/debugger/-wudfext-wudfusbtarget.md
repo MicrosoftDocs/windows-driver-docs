@@ -9,7 +9,6 @@ api_name:
 - wudfext.wudfusbtarget
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfusbtarget

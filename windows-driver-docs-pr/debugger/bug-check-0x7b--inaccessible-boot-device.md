@@ -9,7 +9,6 @@ api_name:
 - INACCESSIBLE_BOOT_DEVICE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7B: INACCESSIBLE\_BOOT\_DEVICE

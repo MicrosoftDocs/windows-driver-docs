@@ -8,7 +8,6 @@ keywords:
 - Extensible Firmware Interface WDK boot options
 - Itanium processor boot options WDK
 ms.date: 07/03/2018
-ms.localizationpriority: medium
 ---
 
 # Boot Options in EFI NVRAM

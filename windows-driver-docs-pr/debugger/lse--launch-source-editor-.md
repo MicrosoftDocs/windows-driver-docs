@@ -9,7 +9,6 @@ api_name:
 - lse (Launch Source Editor)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # lse (Launch Source Editor)

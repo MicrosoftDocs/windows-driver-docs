@@ -4,7 +4,6 @@ description: Setting Basic Trace Session Options
 keywords:
 - trace sessions WDK , options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Basic Trace Session Options

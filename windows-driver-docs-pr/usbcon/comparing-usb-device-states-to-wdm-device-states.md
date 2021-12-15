@@ -2,7 +2,6 @@
 description: This topic describes the WDM device states to use for USB device power states as specified in section 9.1 of the Universal Serial Bus 2.0 specification.
 title: USB Device Power States
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Device Power States

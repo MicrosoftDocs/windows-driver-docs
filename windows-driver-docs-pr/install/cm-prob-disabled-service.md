@@ -4,7 +4,6 @@ description: CM_PROB_DISABLED_SERVICE
 keywords:
 - CM_PROB_DISABLED_SERVICE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 32 - CM_PROB_DISABLED_SERVICE

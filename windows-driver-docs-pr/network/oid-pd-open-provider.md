@@ -4,7 +4,6 @@ description: An NDIS protocol or filter driver sends an object identifier (OID) 
 ms.date: 08/08/2017
 keywords: 
  -OID_PD_OPEN_PROVIDER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PD\_OPEN\_PROVIDER

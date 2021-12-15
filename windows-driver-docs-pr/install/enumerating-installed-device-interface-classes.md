@@ -7,7 +7,6 @@ keywords:
 - installed device interfaces WDK , enumerating
 - device interfaces WDK device installations , enumerating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating Installed Device Interfaces

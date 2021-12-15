@@ -4,7 +4,6 @@ description: Obtaining an HDAUDIO_BUS_INTERFACE DDI Object
 keywords:
 - HDAUDIO_BUS_INTERFACE structure
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object

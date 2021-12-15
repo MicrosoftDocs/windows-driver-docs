@@ -3,7 +3,6 @@ title: Debugging an Interrupt Storm
 description: Debugging an Interrupt Storm
 keywords: ["pending IRPs", "I/O Request Packet (IRP), pending"]
 ms.date: 05/15/2020
-ms.localizationpriority: medium
 ---
 
 # Debugging an Interrupt Storm

@@ -4,7 +4,6 @@ description: OID_WWAN_PIN_EX2 accesses a UICC linear fixed or cyclic file, the s
 ms.date: 04/10/2019
 keywords: 
 - OID_WWAN_PIN_EX2 Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

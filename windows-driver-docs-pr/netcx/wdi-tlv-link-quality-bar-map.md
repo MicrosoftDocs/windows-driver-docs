@@ -4,7 +4,6 @@ description: WDI_TLV_LINK_QUALITY_BAR_MAP is a WiFiCx TLV that contains the mapp
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_LINK_QUALITY_BAR_MAP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP (dot11wificxtypes.hpp)

@@ -9,7 +9,6 @@ api_name:
 - FILE_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x68: FILE\_INITIALIZATION\_FAILED

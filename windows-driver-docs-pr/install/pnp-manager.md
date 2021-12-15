@@ -2,7 +2,6 @@
 title: Plug and Play Manager
 description: Plug and Play Manager
 ms.date: 11/29/2021
-ms.localizationpriority: medium
 ---
 
 # Plug and Play Manager

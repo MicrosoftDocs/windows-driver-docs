@@ -6,7 +6,6 @@ keywords:
 - D3dCreateSurfaceEx
 - backing surfaces WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # D3dCreateSurfaceEx and Backing Surfaces

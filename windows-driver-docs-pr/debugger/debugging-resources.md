@@ -2,7 +2,6 @@
 title: Debugging Resources
 description: Use Debugging Tools for Windows to debug drivers, applications, and services on Windows systems.
 ms.date: 01/26/2021
-ms.localizationpriority: medium
 ---
 
 # Debugging Resources

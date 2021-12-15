@@ -4,7 +4,6 @@ description: The HS_PLUGIN_RESET function is called by the host to notify the pl
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_RESET) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_RESET function

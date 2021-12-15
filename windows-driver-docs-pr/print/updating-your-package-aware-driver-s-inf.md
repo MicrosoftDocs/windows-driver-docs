@@ -2,7 +2,6 @@
 title: Updating Your Package-Aware Driver's INF
 description: Updating Your Package-Aware Driver's INF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Updating Your Package-Aware Driver's INF

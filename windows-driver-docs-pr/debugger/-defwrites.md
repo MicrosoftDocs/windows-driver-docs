@@ -9,7 +9,6 @@ api_name:
 - defwrites
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !defwrites

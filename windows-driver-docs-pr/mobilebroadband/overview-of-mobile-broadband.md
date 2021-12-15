@@ -2,7 +2,6 @@
 title: Overview of mobile broadband
 description: Overview of mobile broadband
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of mobile broadband

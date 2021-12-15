@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY is a WiFiCx TLV tha
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_SERVICE\_INFORMATION\_DISCOVERY\_ENTRY (dot11wificxtypes.hpp)

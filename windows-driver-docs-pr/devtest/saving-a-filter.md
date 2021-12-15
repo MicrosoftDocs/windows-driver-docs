@@ -6,7 +6,6 @@ keywords:
 - trace message filters WDK , saving
 - saving trace filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Saving a Filter

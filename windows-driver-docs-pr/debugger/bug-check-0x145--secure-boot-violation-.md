@@ -9,7 +9,6 @@ api_name:
 - SECURE_BOOT_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x145: SECURE\_BOOT\_VIOLATION

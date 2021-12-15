@@ -2,7 +2,6 @@
 title: BDA Node Category GUIDs
 description: A BDA minidriver uses the BDA node category GUIDs to specify the types of BDA nodes that are available to create.
 ms.date: 10/07/2021
-ms.localizationpriority: medium
 ---
 
 # BDA Node Category GUIDs

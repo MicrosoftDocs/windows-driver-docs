@@ -7,7 +7,6 @@ keywords:
 - filter drivers WDK networking , starting filter modules
 - NDIS filter drivers WDK , starting filter modules
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting a Filter Module

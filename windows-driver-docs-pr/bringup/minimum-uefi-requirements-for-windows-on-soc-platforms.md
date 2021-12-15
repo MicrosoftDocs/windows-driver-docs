@@ -2,7 +2,6 @@
 title: Minimum UEFI requirements for Windows on SoC platforms
 description: Provides information about minimum UEFI requirements for Windows on SoC platforms.
 ms.date: 08/19/2021
-ms.localizationpriority: medium
 ---
 
 # Minimum UEFI requirements for Windows on SoC platforms

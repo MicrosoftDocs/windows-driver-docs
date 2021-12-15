@@ -2,7 +2,6 @@
 title: Getting Started with Windows Debugging
 description: This section covers how to get started with Windows Debugging. If your goal is to use the debugger to analyze a crash dump, see Crash dump analysis using the Windows debuggers (WinDbg).
 ms.date: 08/06/2021
-ms.localizationpriority: high 
 ---
 
 # Getting Started with Windows Debugging

@@ -3,7 +3,6 @@ title: Using a File Handle
 description: Using a File Handle
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using a File Handle

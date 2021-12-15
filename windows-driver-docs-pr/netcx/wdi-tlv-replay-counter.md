@@ -4,7 +4,6 @@ description: WDI_TLV_REPLAY_COUNTER is a WiFiCx TLV that contains a UINT64 value
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_REPLAY_COUNTER Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_REPLAY\_COUNTER (dot11wificxtypes.hpp)

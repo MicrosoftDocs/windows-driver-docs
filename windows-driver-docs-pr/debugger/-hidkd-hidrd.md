@@ -9,7 +9,6 @@ api_name:
 - hidkd.hidrd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !hidkd.hidrd

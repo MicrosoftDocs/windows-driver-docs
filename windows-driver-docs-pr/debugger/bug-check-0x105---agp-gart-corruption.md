@@ -9,7 +9,6 @@ api_name:
 - AGP_GART_CORRUPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x105: AGP\_GART\_CORRUPTION

@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Power Manager
 description: Windows Kernel-Mode Power Manager
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

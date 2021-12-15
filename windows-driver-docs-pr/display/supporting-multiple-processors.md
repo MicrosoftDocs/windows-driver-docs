@@ -8,7 +8,6 @@ keywords:
 - driver-handled multiple-processor optimizations WDK display
 - multiple-processor optimizations WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Multiple Processors

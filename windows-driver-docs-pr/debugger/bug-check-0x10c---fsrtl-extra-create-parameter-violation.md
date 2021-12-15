@@ -9,7 +9,6 @@ api_name:
 - FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10C: FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION

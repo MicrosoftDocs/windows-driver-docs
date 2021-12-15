@@ -9,7 +9,6 @@ api_name:
 - ILLEGAL_IOMMU_PAGE_FAULT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x158: ILLEGAL\_IOMMU\_PAGE\_FAULT

@@ -16,7 +16,6 @@ keywords:
 - fill colors WDK DirectDraw
 - fill patterns WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Color Fills and Pattern Fills

@@ -7,7 +7,6 @@ keywords:
 - Universal Printer Driver WDK See Unidrv
 - minidrivers WDK Unidrv
 ms.date: 08/04/2021
-ms.localizationpriority: medium
 ---
 
 # Microsoft Universal Printer Driver

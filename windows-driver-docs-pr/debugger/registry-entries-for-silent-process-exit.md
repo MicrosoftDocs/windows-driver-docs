@@ -2,7 +2,6 @@
 title: Monitoring Silent Process Exit
 description: Beginning with Windows 7, you can use the Silent Process Exit tab in GFlags to enter the name of a process that you want to monitor for silent exit.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Monitoring Silent Process Exit

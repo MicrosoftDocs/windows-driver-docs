@@ -2,7 +2,6 @@
 title: Life Cycle of a Storport Driver
 description: Life Cycle of a Storport Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Life Cycle of a Storport Driver

@@ -9,7 +9,6 @@ api_name:
 - PDBCopy Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PDBCopy Command-Line Options

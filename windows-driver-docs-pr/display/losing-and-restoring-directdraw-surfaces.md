@@ -12,7 +12,6 @@ keywords:
 - lost surfaces WDK DirectDraw
 - suspended surfaces WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Losing and Restoring DirectDraw Surfaces

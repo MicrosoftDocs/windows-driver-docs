@@ -5,7 +5,6 @@ keywords:
 - clip planes WDK Direct3D
 - user-defined clip planes WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # User Clip Planes

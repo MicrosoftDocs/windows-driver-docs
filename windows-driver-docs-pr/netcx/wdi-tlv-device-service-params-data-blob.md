@@ -4,7 +4,6 @@ description: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB is a WiFiCx TLV that contai
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB (dot11wificxtypes.hpp)

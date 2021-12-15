@@ -12,7 +12,6 @@ keywords:
 - alternate fills WDK GDI
 - winding fills WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Path Fill Modes

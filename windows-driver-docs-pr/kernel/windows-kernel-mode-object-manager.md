@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Object Manager
 description: Windows Kernel-Mode Object Manager
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -2,7 +2,6 @@
 title: VMQ Receive Filters
 description: VMQ Receive Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VMQ Receive Filters

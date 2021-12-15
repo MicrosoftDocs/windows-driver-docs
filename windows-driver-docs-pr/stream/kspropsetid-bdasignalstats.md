@@ -2,7 +2,6 @@
 title: KSPROPSETID\_BdaSignalStats
 description: KSPROPSETID\_BdaSignalStats
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BdaSignalStats

@@ -2,7 +2,6 @@
 title: Granting Oplocks
 description: Granting Oplocks
 ms.date: 11/17/2021
-ms.localizationpriority: medium
 ---
 
 # Granting Oplocks

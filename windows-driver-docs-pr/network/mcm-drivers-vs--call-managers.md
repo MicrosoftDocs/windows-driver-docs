@@ -9,7 +9,6 @@ keywords:
 - MCM drivers WDK networking
 - call managers WDK networking , vs. MCM drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MCM Drivers vs. Call Managers

@@ -15,7 +15,6 @@ keywords:
 - set operations WDK kernel streaming
 - get operations WDK kernel streaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # KS Properties, Events, and Methods

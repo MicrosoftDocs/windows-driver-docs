@@ -9,7 +9,6 @@ api_name:
 - vprot
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vprot

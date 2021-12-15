@@ -2,7 +2,6 @@
 title: Sample Code to Create Custom Properties
 description: Sample Code to Create Custom Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Code to Create Custom Properties

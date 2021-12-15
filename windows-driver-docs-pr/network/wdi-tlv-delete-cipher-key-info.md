@@ -4,7 +4,6 @@ description: WDI_TLV_DELETE_CIPHER_KEY_INFO is a TLV that contains information t
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DELETE_CIPHER_KEY_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_DELETE\_CIPHER\_KEY\_INFO

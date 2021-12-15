@@ -11,7 +11,6 @@ keywords:
 - PAUSE state WDK video capture
 - RUN state WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Streaming States

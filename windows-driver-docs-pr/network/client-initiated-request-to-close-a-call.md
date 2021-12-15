@@ -4,7 +4,6 @@ description: Client-Initiated Request to Close a Call
 keywords:
 - client-initiated close call requests WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Client-Initiated Request to Close a Call

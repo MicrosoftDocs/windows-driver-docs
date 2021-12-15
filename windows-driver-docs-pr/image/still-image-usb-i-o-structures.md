@@ -2,7 +2,6 @@
 title: Still Image USB I/O Structures
 description: Still Image USB I/O Structures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Still Image USB I/O Structures

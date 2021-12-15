@@ -2,7 +2,6 @@
 title: EFI_USB_SUPERSPEED_DEVICE_INFO
 description: The EFI_USB_SUPERSPEED_DEVICE_INFO structure defines the USB SuperSpeed function device.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USB_SUPERSPEED_DEVICE_INFO

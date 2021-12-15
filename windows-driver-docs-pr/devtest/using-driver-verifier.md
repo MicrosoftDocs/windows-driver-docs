@@ -2,7 +2,6 @@
 title: Using Driver Verifier
 description: Using Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Driver Verifier

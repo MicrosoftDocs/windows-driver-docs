@@ -11,7 +11,6 @@ keywords:
 - drawing WDK GDI , halftoning
 - halftoning WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Halftoning Capabilities

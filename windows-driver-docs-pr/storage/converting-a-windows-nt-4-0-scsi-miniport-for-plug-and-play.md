@@ -7,7 +7,6 @@ keywords:
 - Plug and Play WDK SCSI
 - converting SCSI miniport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting a Windows NT 4.0 SCSI Miniport for Plug and Play Overview

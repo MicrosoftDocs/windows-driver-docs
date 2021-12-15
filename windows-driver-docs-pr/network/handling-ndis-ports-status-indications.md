@@ -7,7 +7,6 @@ keywords:
 - status indications WDK networking , NDIS ports
 - port states WDK NDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling NDIS Ports Status Indications

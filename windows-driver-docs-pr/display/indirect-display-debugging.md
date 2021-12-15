@@ -5,7 +5,6 @@ ms.date: 07/17/2020
 keywords:
 - Indirect display drivers, debugging
 - IDDs, debugging
-ms.localizationpriority: medium
 ---
 
 # Debugging indirect display drivers

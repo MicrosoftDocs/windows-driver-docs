@@ -5,7 +5,6 @@ keywords:
 - call setup WDK CoNDIS
 - making calls WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Making a Call

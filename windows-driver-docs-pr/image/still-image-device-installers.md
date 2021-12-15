@@ -2,7 +2,6 @@
 title: Still Image Device Installers
 description: Still Image Device Installers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Still Image Device Installers

@@ -2,7 +2,6 @@
 title: Implementing Audio Module Communication
 description: An Audio Module is a distinct piece of audio processing logic performing a relatively atomic function.
 ms.date: 07/07/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing Audio Module Communication

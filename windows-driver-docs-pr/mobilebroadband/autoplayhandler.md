@@ -2,7 +2,6 @@
 title: AutoplayHandler
 description: AutoplayHandler
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AutoplayHandler

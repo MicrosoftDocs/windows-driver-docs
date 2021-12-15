@@ -2,7 +2,6 @@
 title: Activity sensor properties
 description: The property keys for the activity sensor.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Activity sensor properties

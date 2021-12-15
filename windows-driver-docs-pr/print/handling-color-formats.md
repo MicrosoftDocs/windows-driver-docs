@@ -9,7 +9,6 @@ keywords:
 - color management WDK print , formats
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Color Formats

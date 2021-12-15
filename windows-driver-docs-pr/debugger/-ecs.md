@@ -3,7 +3,6 @@ title: ecs (WinDbg)
 description: ecs
 keywords: ["ecs extension (obsolete)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # !ecs

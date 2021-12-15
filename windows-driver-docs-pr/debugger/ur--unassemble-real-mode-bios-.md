@@ -9,7 +9,6 @@ api_name:
 - ur (Unassemble Real Mode BIOS)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ur (Unassemble Real Mode BIOS)

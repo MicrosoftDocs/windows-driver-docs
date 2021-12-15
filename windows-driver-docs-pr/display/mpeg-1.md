@@ -9,7 +9,6 @@ keywords:
 - backward-predicted prediction blocks WDK DirectX VA
 - forward-predicted prediction blocks WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MPEG-1

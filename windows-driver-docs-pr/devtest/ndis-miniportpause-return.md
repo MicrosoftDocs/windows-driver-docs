@@ -9,7 +9,6 @@ api_name:
 - MiniportPause_Return
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MiniportPause\_Return rule (ndis)

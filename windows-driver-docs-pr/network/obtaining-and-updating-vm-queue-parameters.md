@@ -2,7 +2,6 @@
 title: Obtaining and Updating VM Queue Parameters
 description: Obtaining and Updating VM Queue Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining and Updating VM Queue Parameters

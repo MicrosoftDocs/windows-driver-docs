@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_RADIO_STATUS to indic
 ms.date: 07/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_RADIO_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS (dot11wificxintf.h)

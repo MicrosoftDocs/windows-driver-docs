@@ -13,7 +13,6 @@ keywords:
 - WDMAud system driver
 - WDMAud system driver, user mode (wdmaud.drv)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # User-Mode WDM Audio Components

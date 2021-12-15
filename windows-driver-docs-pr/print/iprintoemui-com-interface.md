@@ -4,7 +4,6 @@ description: IPrintOemUI COM Interface
 keywords:
 - IPrintOemUI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrintOemUI COM Interface

@@ -4,7 +4,6 @@ description: The WiFiCx adapter sends NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS
 ms.date: 07/31/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED (dot11wificxintf.h)

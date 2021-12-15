@@ -2,7 +2,6 @@
 title: Implementation Tips and Requirements for COPP
 description: Implementation Tips and Requirements for COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementation Tips and Requirements for COPP

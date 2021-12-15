@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_GROUP_ID is a WiFiCx TLV that contains the Group ID for
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_GROUP_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_GROUP\_ID (dot11wificxtypes.hpp)

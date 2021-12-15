@@ -5,7 +5,6 @@ keywords:
 - Tracefmt WDK , real-time trace sessions
 - real-time trace sessions WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 5: Formatting Real-Time Trace Sessions

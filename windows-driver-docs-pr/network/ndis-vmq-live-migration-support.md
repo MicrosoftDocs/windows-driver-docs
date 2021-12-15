@@ -2,7 +2,6 @@
 title: NDIS VMQ Live Migration Support
 description: NDIS VMQ Live Migration Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS VMQ Live Migration Support

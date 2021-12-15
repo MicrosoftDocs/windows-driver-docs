@@ -2,7 +2,6 @@
 title: Protocol Offloads for NDIS Power Management
 description: Protocol Offloads for NDIS Power Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Protocol Offloads for NDIS Power Management

@@ -2,7 +2,6 @@
 title: Account provisioning
 description: Account provisioning
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Account provisioning

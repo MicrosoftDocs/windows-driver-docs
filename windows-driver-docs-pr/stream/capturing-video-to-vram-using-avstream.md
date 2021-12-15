@@ -11,7 +11,6 @@ keywords:
 - display minidrivers WDK VRAM capture
 - minidrivers WDK VRAM capture
 ms.date: 06/16/2020
-ms.localizationpriority: medium
 ---
 
 # Capturing Video to VRAM using AVStream

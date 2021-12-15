@@ -2,7 +2,6 @@
 title: Device Installation Application Started through AutoRun
 description: Device Installation Application Started through AutoRun
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Installation Application Started through AutoRun

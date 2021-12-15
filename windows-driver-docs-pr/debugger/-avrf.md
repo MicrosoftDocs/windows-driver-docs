@@ -9,7 +9,6 @@ api_name:
 - avrf
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !avrf

@@ -2,7 +2,6 @@
 title: Sensor categories
 description: Sensor categories
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Sensor categories

@@ -9,7 +9,6 @@ keywords:
 - verifying Authenticode signatures
 - checking Authenticode signatures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using SetupAPI To Verify Driver Authenticode Signatures

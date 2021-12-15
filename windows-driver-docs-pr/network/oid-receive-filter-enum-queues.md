@@ -4,7 +4,6 @@ description: Overlying drivers and user-mode applications issue object identifie
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_ENUM_QUEUES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_ENUM\_QUEUES

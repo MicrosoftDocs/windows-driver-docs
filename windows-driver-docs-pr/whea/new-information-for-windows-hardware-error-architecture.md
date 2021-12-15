@@ -8,7 +8,6 @@ keywords:
 - errors WDK WHEA , new information about WHEA
 - source information WDK WHEA , new
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # New Information for Windows Hardware Error Architecture

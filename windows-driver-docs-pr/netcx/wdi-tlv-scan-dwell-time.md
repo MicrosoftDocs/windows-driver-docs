@@ -4,7 +4,6 @@ description: WDI_TLV_SCAN_DWELL_TIME is a WiFiCx TLV that contains scanning dwel
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_SCAN_DWELL_TIME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SCAN\_DWELL\_TIME (dot11wificxtypes.hpp)

@@ -4,7 +4,6 @@ description: INF File Platform Extensions and x64-Based Systems
 keywords:
 - x64 INF file platform extensions WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF File Platform Extensions and x64-Based Systems

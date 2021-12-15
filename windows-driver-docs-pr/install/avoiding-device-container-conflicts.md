@@ -2,7 +2,6 @@
 title: Avoiding Device Container Conflicts
 description: Avoiding Device Container Conflicts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Avoiding Device Container Conflicts

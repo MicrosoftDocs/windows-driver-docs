@@ -3,7 +3,6 @@ title: Which Data Types Need Thunking
 description: Which Data Types Need Thunking
 keywords: ["thunking WDK", "WOW64 thunking layer WDK", "32-bit I/O support WDK 64-bit , thunking", "data types WDK 64-bit", "pointer precision WDK 64-bit", "fixed-precision data types WDK 64-bit"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Which Data Types Need Thunking

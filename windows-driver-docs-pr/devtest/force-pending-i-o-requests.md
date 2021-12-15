@@ -5,7 +5,6 @@ keywords:
 - Force Pending I/O Requests option WDK Driver Verifier
 - STATUS_PENDING WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Force Pending I/O Requests

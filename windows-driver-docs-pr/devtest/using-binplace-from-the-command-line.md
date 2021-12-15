@@ -2,7 +2,6 @@
 title: Using BinPlace from the Command Line
 description: Using BinPlace from the Command Line
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using BinPlace from the Command Line

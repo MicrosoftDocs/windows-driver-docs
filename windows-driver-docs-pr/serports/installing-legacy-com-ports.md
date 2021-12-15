@@ -4,7 +4,6 @@ description: Installing Legacy COM Ports
 keywords:
 - legacy COM ports WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Legacy COM Ports

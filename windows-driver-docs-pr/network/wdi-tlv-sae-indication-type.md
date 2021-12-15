@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_INDICATION_TYPE is a TLV that contains the type of info
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_INDICATION_TYPE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

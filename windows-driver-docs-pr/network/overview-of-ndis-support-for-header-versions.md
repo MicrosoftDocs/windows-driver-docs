@@ -5,7 +5,6 @@ keywords:
 - NDIS version information WDK , structure requirements
 - NDIS version information WDK , header member
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of NDIS Support for Header Versions

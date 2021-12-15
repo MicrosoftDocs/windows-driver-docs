@@ -4,7 +4,6 @@ description: Selection Constraints
 keywords:
 - selection constraints WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Selection Constraints

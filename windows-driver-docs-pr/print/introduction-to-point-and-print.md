@@ -4,7 +4,6 @@ description: Introduction to Point and Print
 keywords:
 - Point and Print WDK , about Point and Print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Point and Print

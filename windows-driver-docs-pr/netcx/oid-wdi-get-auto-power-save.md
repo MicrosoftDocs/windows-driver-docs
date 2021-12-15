@@ -4,7 +4,6 @@ description: The OID_WDI_GET_AUTO_POWER_SAVE command gets the power save state o
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_GET_AUTO_POWER_SAVE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_AUTO\_POWER\_SAVE (dot11wificxintf.h)

@@ -2,7 +2,6 @@
 title: Management of I2S and SCO Resources
 description: The Management of I2S and SCO Resources topic discusses the assumptions that were made in the design of this new support for Bluetooth bypass audio streaming in Windows 8.1.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Management of I2S and SCO Resources

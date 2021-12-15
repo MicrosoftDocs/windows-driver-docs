@@ -9,7 +9,6 @@ api_name:
 - ks.objhdr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.objhdr

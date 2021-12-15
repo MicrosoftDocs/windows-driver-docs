@@ -9,7 +9,6 @@ keywords:
 - target ports WDK NDIS
 - source ports WDK NDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Port Send and Receive Operations

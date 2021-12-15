@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_INFO is a WiFiCx TLV that conta
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_GO\_NEGOTIATION\_RESPONSE\_INFO (dot11wificxtypes.hpp)

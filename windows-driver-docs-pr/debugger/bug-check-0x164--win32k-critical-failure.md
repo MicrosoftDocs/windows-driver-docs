@@ -9,7 +9,6 @@ api_name:
 - WIN32K_CRITICAL_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x164: WIN32K\_CRITICAL\_FAILURE

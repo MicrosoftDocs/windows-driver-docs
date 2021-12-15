@@ -7,7 +7,6 @@ keywords:
 - attaching filters to file system or volume
 - volumes WDK file system , attaching filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Attaching a Filter to a File System or Volume

@@ -2,7 +2,6 @@
 title: Using Proxied Connections Tracking
 description: Using Proxied Connections Tracking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Proxied Connections Tracking

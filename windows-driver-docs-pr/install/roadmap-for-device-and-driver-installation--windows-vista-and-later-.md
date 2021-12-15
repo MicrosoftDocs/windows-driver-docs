@@ -2,7 +2,6 @@
 title: Roadmap for Device and Driver Installation
 description: Roadmap for Device and Driver Installation
 ms.date: 12/01/2021
-ms.localizationpriority: medium
 ---
 
 # Roadmap for Device and Driver Installation

@@ -2,7 +2,6 @@
 title: Win32 DeviceCapabilities API Behavior Changes
 description: Win32 DeviceCapabilities API Behavior Changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Win32 DeviceCapabilities API Behavior Changes

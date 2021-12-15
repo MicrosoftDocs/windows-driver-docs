@@ -8,7 +8,6 @@ keywords:
 - miniport adapters WDK networking , NET_LUID value
 - filter modules WDK networking , NET_LUID value
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NET\_LUID Values for Miniport Adapters and Filter Modules

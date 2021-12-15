@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_INVITATION_REQUEST_PARAMETERS is a TLV that contains Wi
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INVITATION_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_INVITATION\_REQUEST\_PARAMETERS

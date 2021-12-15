@@ -9,7 +9,6 @@ api_name:
 - .closehandle (Close Handle)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .closehandle (Close Handle)

@@ -7,7 +7,6 @@ keywords:
 - context data WDK networking
 - profile data WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Profile and Context Data

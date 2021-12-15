@@ -8,7 +8,6 @@ keywords:
 - filling paths WDK GDI
 - paths WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Drawing and Filling Paths

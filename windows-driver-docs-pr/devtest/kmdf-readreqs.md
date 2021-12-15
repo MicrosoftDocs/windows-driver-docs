@@ -9,7 +9,6 @@ api_name:
 - ReadReqs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReadReqs rule (kmdf)

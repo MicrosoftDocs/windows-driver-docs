@@ -2,7 +2,6 @@
 title: Additional Encouraged Configuration Set
 description: Additional Encouraged Configuration Set
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Additional Encouraged Configuration Set

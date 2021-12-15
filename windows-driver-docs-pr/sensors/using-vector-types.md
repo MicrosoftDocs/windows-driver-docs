@@ -2,7 +2,6 @@
 title: Using vector types with sensors
 description: Using vector types with sensors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using vector types with sensors

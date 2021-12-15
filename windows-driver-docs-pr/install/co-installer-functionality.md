@@ -4,7 +4,6 @@ description: Co-installer Functionality
 keywords:
 - co-installers WDK device installations , functionality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Co-installer Functionality

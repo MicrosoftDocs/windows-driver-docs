@@ -7,7 +7,6 @@ keywords:
 - UVC drivers WDK AVStream , properties
 - property sets WDK USB Video Class
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Video Class Properties

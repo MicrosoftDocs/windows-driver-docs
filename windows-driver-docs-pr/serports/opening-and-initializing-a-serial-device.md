@@ -8,7 +8,6 @@ keywords:
 - serial devices WDK , initializing
 - initializing serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening and Initializing a Serial Device

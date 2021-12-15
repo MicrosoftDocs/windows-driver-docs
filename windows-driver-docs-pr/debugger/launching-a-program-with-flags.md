@@ -3,7 +3,6 @@ title: Launching a Program with Flags
 description: Launching a Program with Flags
 keywords: ["GFlags, launching a program with flags"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Launching a Program with Flags

@@ -9,7 +9,6 @@ api_name:
 - (Search for Disassembly Pattern)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # \# (Search for Disassembly Pattern)

@@ -2,7 +2,6 @@
 title: Invoking a Device Properties Dialog Box
 description: Invoking a Device Properties Dialog Box
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Invoking a Device Properties Dialog Box

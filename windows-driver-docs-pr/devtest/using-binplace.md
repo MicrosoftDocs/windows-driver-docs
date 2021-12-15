@@ -5,7 +5,6 @@ keywords:
 - BinPlace WDK , about BinPlace
 - place files WDK BinPlace
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using BinPlace

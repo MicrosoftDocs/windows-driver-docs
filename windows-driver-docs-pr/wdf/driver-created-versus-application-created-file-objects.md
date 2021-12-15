@@ -9,7 +9,6 @@ keywords:
 - UMDF WDK , file object to handle I/O, driver-created versus application-created
 - user-mode drivers WDK UMDF , file object to handle I/O, driver-created versus application-created
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver-Created Versus Application-Created File Objects

@@ -2,7 +2,6 @@
 description: The WpdBasicHardwareDriver Sample
 title: The WpdBasicHardwareDriver Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The WpdBasicHardwareDriver Sample

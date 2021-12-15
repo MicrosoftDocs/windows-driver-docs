@@ -4,7 +4,6 @@ description: NDIS issues an object identifier (OID) method request of OID_SRIOV_
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_VF\_INVALIDATE\_CONFIG\_BLOCK

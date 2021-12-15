@@ -5,7 +5,6 @@ keywords:
 - Windows Sockets Direct WDK , installing components
 - layered service providers WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing the Windows Sockets Switch

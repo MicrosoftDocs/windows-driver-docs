@@ -6,7 +6,6 @@ keywords:
 - PostScript Printer Driver WDK print
 - Pscript WDK print
 ms.date: 08/04/2021
-ms.localizationpriority: medium
 ---
 
 # Microsoft PostScript Printer Driver

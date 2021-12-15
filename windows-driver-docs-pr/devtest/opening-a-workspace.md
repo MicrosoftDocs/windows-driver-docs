@@ -5,7 +5,6 @@ keywords:
 - workspaces WDK TraceView , opening
 - opening workspaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening a Workspace

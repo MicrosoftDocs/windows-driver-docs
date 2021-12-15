@@ -9,7 +9,6 @@ api_name:
 - CTRL+K (Change Post-Reboot Break State)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+K (Change Post-Reboot Break State)

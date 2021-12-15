@@ -3,7 +3,6 @@ title: Acquire and Release Semantics
 description: Acquire and Release Semantics
 keywords: ["synchronization WDK kernel , acquire semantics", "synchronization WDK kernel , release semantics", "acquire semantics WDK kernel", "release semantics WDK kernel", "semantics WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Acquire and Release Semantics

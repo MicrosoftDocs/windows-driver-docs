@@ -3,7 +3,6 @@ title: Registering and Queuing a CustomTimerDpc Routine
 description: A driver can register a CustomTimerDpc routine by calling the KeInitializeDpc, KeInitializeTimer, or KeInitializeTimerEx routines.
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "queuing timer objects", "registering timer objects", "KeSetTimer", "KeSetTimerEx", "KeInitializeTimer", "KeInitializeTimerEx", "invoking CustomTimerDpc routine repeatedly", "repeatedly invoke CustomTimerDpc routine", "DueTime values", "timer expirations WDK kernel", "expired timers WDK kernel", "timer objects WDK kernel , queuing", "timer objects WDK kernel , registering", "timer objects WDK kernel , expirations"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering and Queuing a CustomTimerDpc Routine

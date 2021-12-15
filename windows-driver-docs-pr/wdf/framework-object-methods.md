@@ -4,7 +4,6 @@ description: Framework Object Methods
 keywords:
 - framework objects WDK KMDF , methods
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Object Methods

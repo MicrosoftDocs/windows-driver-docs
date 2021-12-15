@@ -9,7 +9,6 @@ api_name:
 - chkimg
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !chkimg

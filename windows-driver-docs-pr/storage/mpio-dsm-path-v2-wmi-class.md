@@ -1,7 +1,6 @@
 ---
 title: MPIO\_DSM\_Path\_V2 WMI Class
 description: MPIO\_DSM\_Path\_V2 WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

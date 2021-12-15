@@ -7,7 +7,6 @@ keywords:
 - control operations WDK Winsock Kernel
 - client objects WDK Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performing Control Operations on a Client Object

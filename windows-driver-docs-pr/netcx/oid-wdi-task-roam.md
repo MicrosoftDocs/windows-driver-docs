@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_ROAM command requests that the adapter tries to ro
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_ROAM Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_ROAM (dot11wificxintf.h)

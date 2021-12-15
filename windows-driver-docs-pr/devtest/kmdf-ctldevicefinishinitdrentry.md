@@ -9,7 +9,6 @@ api_name:
 - CtlDeviceFinishInitDrEntry
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CtlDeviceFinishInitDrEntry rule (kmdf)

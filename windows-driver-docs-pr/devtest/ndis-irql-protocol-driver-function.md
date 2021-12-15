@@ -9,7 +9,6 @@ api_name:
 - Irql_Protocol_Driver_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_Protocol\_Driver\_Function rule (ndis)

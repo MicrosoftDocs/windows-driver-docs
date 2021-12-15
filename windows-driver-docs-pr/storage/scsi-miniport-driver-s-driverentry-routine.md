@@ -4,7 +4,6 @@ description: SCSI Miniport Driver's DriverEntry Routine
 keywords:
 - DriverEntry WDK storage
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's DriverEntry Routine

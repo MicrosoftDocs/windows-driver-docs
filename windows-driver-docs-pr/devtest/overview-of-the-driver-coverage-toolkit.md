@@ -4,7 +4,6 @@ description: Overview of the Driver Coverage Toolkit
 keywords:
 - Driver Coverage Toolkit WDK , about the Driver Coverage Toolkit
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of the Driver Coverage Toolkit

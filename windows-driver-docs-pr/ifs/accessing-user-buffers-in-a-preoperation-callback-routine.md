@@ -4,7 +4,6 @@ description: Accessing User Buffers in a Preoperation Callback Routine
 keywords:
 - preoperation callback routines WDK file system minifilter , buffers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing User Buffers in a Preoperation Callback Routine

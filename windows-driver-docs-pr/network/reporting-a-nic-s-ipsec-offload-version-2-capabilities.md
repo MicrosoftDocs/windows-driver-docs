@@ -4,7 +4,6 @@ description: Reporting a NIC's IPsec Offload Version 2 Capabilities
 keywords:
 - IPsecOV2 WDK TCP/IP transport , capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting a NIC's IPsec Offload Version 2 Capabilities

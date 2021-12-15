@@ -4,7 +4,6 @@ description: The OID_WDI_SET_END_DWELL_TIME command is typically sent during an 
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_END_DWELL_TIME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_END\_DWELL\_TIME (dot11wificxintf.h)

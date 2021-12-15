@@ -10,7 +10,6 @@ keywords:
 - UnRegisterForPrintAsyncNotifications
 - unregistering for spooler notifications
 ms.date: 06/12/2020
-ms.localizationpriority: medium
 ---
 
 # Registering to receive notifications

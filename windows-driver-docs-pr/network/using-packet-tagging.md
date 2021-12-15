@@ -2,7 +2,6 @@
 title: Using Packet Tagging
 description: Using Packet Tagging
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Packet Tagging

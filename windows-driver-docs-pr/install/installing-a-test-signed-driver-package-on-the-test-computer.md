@@ -2,7 +2,6 @@
 title: Installing a Test-Signed Driver Package on the Test Computer
 description: Installing a Test-Signed Driver Package on the Test Computer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Test-Signed Driver Package on the Test Computer

@@ -9,7 +9,6 @@ api_name:
 - ndiskd.nbllog
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.nbllog

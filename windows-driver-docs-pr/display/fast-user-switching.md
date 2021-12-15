@@ -10,7 +10,6 @@ keywords:
 - virtual display drivers WDK Windows 2000 display
 - display drivers WDK Windows 2000 , Fast User Switching
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Fast User Switching

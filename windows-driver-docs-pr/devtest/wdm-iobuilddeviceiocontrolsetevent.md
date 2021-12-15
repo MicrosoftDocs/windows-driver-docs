@@ -9,7 +9,6 @@ api_name:
 - IoBuildDeviceIoControlSetEvent
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildDeviceIoControlSetEvent rule (wdm)

@@ -6,7 +6,6 @@ keywords:
 - incoming calls WDK CoNDIS
 - indicating incoming calls WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Indicating an Incoming Call

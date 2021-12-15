@@ -2,7 +2,6 @@
 title: Loudness Equalization DSP
 description: Loudness Equalization DSP
 ms.date: 11/07/2018
-ms.localizationpriority: medium
 ---
 
 # Loudness Equalization DSP

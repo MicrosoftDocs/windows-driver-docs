@@ -9,7 +9,6 @@ api_name:
 - vad
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vad

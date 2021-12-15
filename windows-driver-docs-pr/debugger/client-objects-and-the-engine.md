@@ -3,7 +3,6 @@ title: Client Objects and the Engine
 description: Client Objects and the Engine
 keywords: ["EngExtCpp extensions, client objects"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Client Objects and the Engine

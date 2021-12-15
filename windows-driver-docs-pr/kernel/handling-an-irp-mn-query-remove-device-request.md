@@ -3,7 +3,6 @@ title: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 description: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 keywords: ["IRP_MN_QUERY_REMOVE_DEVICE"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request

@@ -6,7 +6,6 @@ keywords:
 - D3DCAPS8
 - presentation swap intervals WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Presentation Swap Intervals

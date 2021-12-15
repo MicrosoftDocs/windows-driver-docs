@@ -7,7 +7,6 @@ keywords:
 - WDM IRPs WDK KMDF , preprocessing and postprocessing
 - IRPs WDK KMDF , preprocessing and postprocessing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Preprocessing and Postprocessing IRPs

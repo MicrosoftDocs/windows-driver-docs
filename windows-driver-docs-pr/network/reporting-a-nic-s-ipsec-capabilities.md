@@ -6,7 +6,6 @@ keywords:
 - IPsec offload WDK TCP/IP transport , capabilities
 - IPsec offload WDK TCP/IP transport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting a NIC's IPsec Capabilities

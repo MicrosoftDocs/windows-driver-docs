@@ -2,7 +2,6 @@
 title: SRB\_UNKNOWN\_DEVICE\_COMMAND
 description: SRB\_UNKNOWN\_DEVICE\_COMMAND
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # SRB\_UNKNOWN\_DEVICE\_COMMAND

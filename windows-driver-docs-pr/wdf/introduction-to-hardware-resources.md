@@ -6,7 +6,6 @@ keywords:
 - logical configurations WDK KMDF
 - hardware resources WDK KMDF , about hardware resources
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Hardware Resources

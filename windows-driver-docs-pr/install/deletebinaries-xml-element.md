@@ -8,7 +8,6 @@ api_name:
 - deleteBinaries XML Element
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 07/21/2021
 ---
 

@@ -5,7 +5,6 @@ keywords:
 - memory segments WDK display , configuring
 - memory segments WDK display , types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring Memory Segment Types

@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /deletevalue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /deletevalue

@@ -3,7 +3,6 @@ title: KD Connection Servers (Kernel Mode)
 description: KD Connection Servers (Kernel Mode)
 keywords: ["remote debugging through a KD connection server", "KD connection server", "KD connection server, overview", "smart client (kernel mode)", "KdSrv", "KdSrv, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # KD Connection Servers (Kernel Mode)

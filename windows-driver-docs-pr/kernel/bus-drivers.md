@@ -3,7 +3,6 @@ title: Bus Drivers
 description: Bus Drivers
 keywords: ["bus drivers WDK WDM", "enumerating bus devices WDK WDM", "bus controllers WDK WDM", "adapters WDK WDM", "bridges WDK WDM", "WDM bus drivers WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Bus Drivers

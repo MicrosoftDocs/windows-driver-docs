@@ -4,7 +4,6 @@ description: OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY instructs the adapter to 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

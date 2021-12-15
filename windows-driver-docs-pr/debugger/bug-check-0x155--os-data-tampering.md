@@ -9,7 +9,6 @@ api_name:
 - OS_DATA_TAMPERING
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x155: OS\_DATA\_TAMPERING

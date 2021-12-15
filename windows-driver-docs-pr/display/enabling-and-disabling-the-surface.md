@@ -9,7 +9,6 @@ keywords:
 - surface initialization WDK GDI
 - surface disabling WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling and Disabling the Surface

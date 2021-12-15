@@ -8,7 +8,6 @@ keywords:
 - print Web pages WDK , ASP variables
 - Web pages WDK printer , ASP variables
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ASP Variables for Print Web Pages

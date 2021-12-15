@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR is a WiFiCx TLV that contains 
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_SERVICE\_UPDATE\_INDICATOR (dot11wificxtypes.hpp)

@@ -8,7 +8,6 @@ keywords:
 - MiniportResetEx
 - hardware resets WDK NDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Driver Hardware Reset

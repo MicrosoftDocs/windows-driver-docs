@@ -3,7 +3,6 @@ title: Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx
 description: Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx
 keywords: ["IoConnectInterruptEx", "CONNECT_MESSAGE_BASED", "message-signaled interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx

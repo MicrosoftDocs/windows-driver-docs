@@ -2,7 +2,6 @@
 title: IrpProcessing rule set (WDM)
 description: Use these rules to verify that your driver correctly processes I/O request packets (IRP).
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # IrpProcessing rule set (WDM)

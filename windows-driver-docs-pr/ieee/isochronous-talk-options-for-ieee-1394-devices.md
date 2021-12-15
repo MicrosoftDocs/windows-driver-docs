@@ -10,7 +10,6 @@ keywords:
 - header elements WDK IEEE 1394 bus
 - buffers WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Isochronous Talk Options for IEEE 1394 Devices

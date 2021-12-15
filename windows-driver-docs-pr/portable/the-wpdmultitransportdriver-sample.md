@@ -2,7 +2,6 @@
 description: The WpdMultiTransportDriver Sample
 title: The WpdMultiTransportDriver Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The WpdMultiTransportDriver Sample

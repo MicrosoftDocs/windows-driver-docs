@@ -3,7 +3,6 @@ title: Introduction to Controller Objects
 description: Introduction to Controller Objects
 keywords: ["controller objects WDK kernel , about controller objects", "ControllerControl routines, about ControllerControl routines", "overlapped I/O WDK kernel", "I/O WDK kernel , overlaps"]
 ms.date: 07/21/2021
-ms.localizationpriority: medium
 ---
 
 # Introduction to Controller Objects

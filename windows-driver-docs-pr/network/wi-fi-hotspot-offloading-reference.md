@@ -2,7 +2,6 @@
 title: Wi-Fi Hotspot Offloading Reference
 description: Wi-Fi Hotspot Offloading Reference
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi Hotspot Offloading Reference

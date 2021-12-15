@@ -4,7 +4,6 @@ description: WDI_TLV_IPV4_LSO_V2 is a TLV that contains Large Send Offload V2 pa
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_IPV4_LSO_V2 (0xD3) Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_IPV4\_LSO\_V2 (0xD3)

@@ -2,7 +2,6 @@
 title: Opting Out of Volume Level Persistence
 description: Opting Out of Volume Level Persistence
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opting Out of Volume Level Persistence

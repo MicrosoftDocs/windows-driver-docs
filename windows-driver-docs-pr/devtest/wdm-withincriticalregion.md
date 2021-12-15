@@ -9,7 +9,6 @@ api_name:
 - WithinCriticalRegion
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WithinCriticalRegion rule (wdm)

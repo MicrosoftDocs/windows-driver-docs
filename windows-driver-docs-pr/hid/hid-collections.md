@@ -17,7 +17,6 @@ keywords:
 - HID collections WDK
 - HID collections WDK , about HID collections
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HID Collections Overview

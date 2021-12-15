@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Process and Thread Manager
 description: Windows Kernel-Mode Process and Thread Manager
-ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
 

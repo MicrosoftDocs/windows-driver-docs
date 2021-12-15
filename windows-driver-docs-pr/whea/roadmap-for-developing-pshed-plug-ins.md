@@ -2,7 +2,6 @@
 title: Roadmap for Developing PSHED Plug-Ins
 description: Roadmap for Developing PSHED Plug-Ins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing PSHED Plug-Ins

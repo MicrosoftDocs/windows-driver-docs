@@ -2,7 +2,6 @@
 title: Version Information Requirements for NDIS
 description: Version Information Requirements for NDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Version Information Requirements for NDIS

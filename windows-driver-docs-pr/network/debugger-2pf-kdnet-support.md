@@ -6,7 +6,6 @@ keywords:
 - kdnet
 - 2PF
 ms.date: 04/12/2021
-ms.localizationpriority: medium
 ---
 
 # Debugger 2PF KDNET Support

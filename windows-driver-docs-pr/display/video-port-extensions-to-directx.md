@@ -8,7 +8,6 @@ keywords:
 - video port extensions WDK DirectDraw
 - VPEs WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Port Extensions to DirectX

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 01/04/2018
-ms.localizationpriority: medium
 ---
 
 # Sensor Icon Constants

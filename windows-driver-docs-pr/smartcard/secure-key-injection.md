@@ -2,7 +2,6 @@
 title: Secure Key Injection
 description: Secure Key Injection
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Secure Key Injection

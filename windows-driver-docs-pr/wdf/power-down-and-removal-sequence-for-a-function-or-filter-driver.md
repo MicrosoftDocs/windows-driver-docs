@@ -2,7 +2,6 @@
 title: Power-Down and Removal Sequence for a Function or Filter Driver
 description: Power-Down and Removal Sequence for a Function or Filter Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power-Down and Removal Sequence for a Function or Filter Driver

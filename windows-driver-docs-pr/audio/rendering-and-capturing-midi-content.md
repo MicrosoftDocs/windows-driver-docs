@@ -5,7 +5,6 @@ keywords:
 - MIDI content rendering WDK audio
 - MIDI content capturing WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rendering and Capturing MIDI Content

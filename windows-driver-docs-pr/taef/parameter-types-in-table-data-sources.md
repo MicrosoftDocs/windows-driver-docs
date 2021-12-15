@@ -2,7 +2,6 @@
 title: Parameter Types in Table Data Sources
 description: Parameter Types in Table Data Sources
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Parameter Types in Table Data Sources

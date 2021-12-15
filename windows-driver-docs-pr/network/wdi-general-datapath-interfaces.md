@@ -2,7 +2,6 @@
 title: WDI general datapath interfaces
 description: This section describes general WDI datapath interfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI general datapath interfaces

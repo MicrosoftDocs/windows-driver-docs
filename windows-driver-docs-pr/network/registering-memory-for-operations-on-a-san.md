@@ -10,7 +10,6 @@ keywords:
 - memory WDK SANs
 - registered memory WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering Memory for Operations on a SAN

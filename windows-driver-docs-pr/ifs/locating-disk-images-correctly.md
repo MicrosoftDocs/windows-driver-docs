@@ -2,7 +2,6 @@
 title: Locating Disk Images Correctly
 description: Locating Disk Images Correctly
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Locating Disk Images Correctly

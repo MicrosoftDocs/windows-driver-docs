@@ -9,7 +9,6 @@ api_name:
 - ivt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ivt

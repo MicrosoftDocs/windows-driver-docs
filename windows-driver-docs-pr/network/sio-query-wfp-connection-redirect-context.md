@@ -4,7 +4,6 @@ description: The SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT socket I/O control op
 ms.date: 08/08/2017
 keywords: 
  -SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT control code

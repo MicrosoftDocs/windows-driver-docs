@@ -4,7 +4,6 @@ description: As a query, protocol drivers can use the OID_PM_PARAMETERS OID to q
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PM\_PARAMETERS

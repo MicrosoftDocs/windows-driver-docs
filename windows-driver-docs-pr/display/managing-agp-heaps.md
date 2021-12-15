@@ -11,7 +11,6 @@ keywords:
 - memory WDK DirectDraw AGP , heaps
 - GetDriverInfo2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing AGP Heaps

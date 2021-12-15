@@ -9,7 +9,6 @@ api_name:
 - .echotime (Show Current Time)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .echotime (Show Current Time)

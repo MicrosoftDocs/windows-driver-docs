@@ -6,7 +6,6 @@ keywords:
 - WSK WDK networking , extension interfaces
 - extension interfaces WDK Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Extension Interfaces

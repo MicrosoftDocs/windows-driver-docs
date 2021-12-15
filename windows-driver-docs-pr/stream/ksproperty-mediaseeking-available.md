@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 10/22/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_MEDIASEEKING_AVAILABLE

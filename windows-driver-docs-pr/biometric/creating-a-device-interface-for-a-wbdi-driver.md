@@ -5,7 +5,6 @@ keywords:
 - biometric drivers WDK , device interfaces
 - device interfaces WDK biometric
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Device Interface for a WBDI Driver

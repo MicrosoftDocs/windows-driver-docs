@@ -7,7 +7,6 @@ keywords:
 - MSIs WDK networking , resource-requirements filter function
 - resource-requirements filter function WDK net
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MSI-X Pre-Registration

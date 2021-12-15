@@ -9,7 +9,6 @@ api_name:
 - DRIVER_USED_EXCESSIVE_PTES
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD8: DRIVER\_USED\_EXCESSIVE\_PTES

@@ -6,7 +6,6 @@ keywords:
 - file names WDK file system minifilter
 - names WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing File Names

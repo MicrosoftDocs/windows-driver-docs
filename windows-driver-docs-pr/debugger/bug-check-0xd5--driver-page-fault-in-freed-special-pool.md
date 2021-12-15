@@ -9,7 +9,6 @@ api_name:
 - DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD5: DRIVER\_PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL

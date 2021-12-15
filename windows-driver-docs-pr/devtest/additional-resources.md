@@ -6,7 +6,6 @@ keywords:
 - device experience resources
 - UWP device app resources
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Additional resources

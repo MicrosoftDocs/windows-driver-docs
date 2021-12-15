@@ -2,7 +2,6 @@
 title: Opening a Dump File Using Visual Studio
 description: The procedures Opening a Dump File Using Visual Studio.
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # Opening a Dump File Using Visual Studio

@@ -4,7 +4,6 @@ description: WDI_TLV_ETHERTYPE_ENCAP_TABLE is a WiFiCx TLV that contains the Eth
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_ETHERTYPE_ENCAP_TABLE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ETHERTYPE\_ENCAP\_TABLE (dot11wificxtypes.hpp)

@@ -2,7 +2,6 @@
 title: Querying a Packet's Extensible Switch Source Port Data
 description: Querying a Packet's Extensible Switch Source Port Data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying a Packet's Extensible Switch Source Port Data

@@ -2,7 +2,6 @@
 title: How do I notify a driver when enabling, disabling, or changing certain flags
 description: How do I notify a driver when enabling, disabling, or changing certain flags
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I notify a driver when enabling, disabling, or changing certain flags?

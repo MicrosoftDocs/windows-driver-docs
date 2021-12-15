@@ -5,7 +5,6 @@ keywords:
 - post-association operations WDK Native 802.11 IHV Extensions DLL
 - stopping post-association operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stopping a Post-Association Operation

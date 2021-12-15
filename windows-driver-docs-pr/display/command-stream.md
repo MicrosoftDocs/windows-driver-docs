@@ -6,7 +6,6 @@ keywords:
 - operation codes WDK Direct3D
 - command stream WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command Stream

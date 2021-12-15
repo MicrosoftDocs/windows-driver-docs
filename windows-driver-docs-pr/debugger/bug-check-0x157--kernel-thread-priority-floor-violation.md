@@ -9,7 +9,6 @@ api_name:
 - KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x157: KERNEL\_THREAD\_PRIORITY\_FLOOR\_VIOLATION

@@ -3,7 +3,6 @@ title: Using PoolMon to Find a Kernel-Mode Memory Leak
 description: Using PoolMon to Find a Kernel-Mode Memory Leak
 keywords: ["memory leak, kernel-mode, PoolMon", "PoolMon", "PoolMon, finding a memory leak"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using PoolMon to Find a Kernel-Mode Memory Leak

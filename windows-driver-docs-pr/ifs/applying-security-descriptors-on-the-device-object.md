@@ -4,7 +4,6 @@ description: Applying Security Descriptors on the Device Object
 keywords:
 - security descriptors WDK file systems , applying on device object
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Applying Security Descriptors on the Device Object

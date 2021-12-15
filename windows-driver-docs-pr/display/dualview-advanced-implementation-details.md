@@ -9,7 +9,6 @@ keywords:
 - child devices WDK video miniport
 - memory WDK DualView
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DualView Advanced Implementation Details

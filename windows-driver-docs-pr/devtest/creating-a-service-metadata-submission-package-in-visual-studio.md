@@ -4,7 +4,6 @@ description: Creating a service metadata submission package in Visual Studio
 keywords:
 - Creating a service metadata submission package in Visual Studio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a service metadata submission package in Visual Studio

@@ -6,7 +6,6 @@ keywords:
 - starting IHV Extensions DLL
 - Native 802.11 IHV Extensions DLL WDK , start operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DLL Start Operations

@@ -4,7 +4,6 @@ description: WDI_TLV_TKIP_MIC_FAILURE_INFO is a WiFiCx TLV that contains TKIP-MI
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_TKIP_MIC_FAILURE_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO (dot11wificxtypes.hpp)

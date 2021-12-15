@@ -7,7 +7,6 @@ keywords:
 - incoming SCO connection requests WDK Bluetooth
 - remote connection notifications WDK Bluetooth
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accepting SCO Connections in a Bluetooth Profile Driver

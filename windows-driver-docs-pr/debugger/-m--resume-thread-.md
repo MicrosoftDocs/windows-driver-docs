@@ -9,7 +9,6 @@ api_name:
 - ~m (Resume Thread)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~m (Resume Thread)

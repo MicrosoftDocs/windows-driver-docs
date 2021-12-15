@@ -2,7 +2,6 @@
 title: Setting the HDCP SRM Version
 description: Setting the HDCP SRM Version
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the HDCP SRM Version

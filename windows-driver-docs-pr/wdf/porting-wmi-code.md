@@ -2,7 +2,6 @@
 title: Porting WMI
 description: Porting WMI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting WMI

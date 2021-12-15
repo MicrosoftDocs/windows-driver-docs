@@ -4,7 +4,6 @@ description: WDI_TLV_6_GHZ_BAND_CHANNEL is a WiFiCx TLV that contains the channe
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_BSS_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_6_GHZ_BAND_CHANNEL (dot11wificxtypes.hpp)

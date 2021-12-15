@@ -9,7 +9,6 @@ api_name:
 - Searching for Debugging Servers
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Searching for Debugging Servers

@@ -9,7 +9,6 @@ api_name:
 - CNSS_FILE_SYSTEM_FILTER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA4: CNSS\_FILE\_SYSTEM\_FILTER

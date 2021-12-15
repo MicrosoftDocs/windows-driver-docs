@@ -9,7 +9,6 @@ keywords:
 - state change event
 - sensor state change event
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Raising sensor events

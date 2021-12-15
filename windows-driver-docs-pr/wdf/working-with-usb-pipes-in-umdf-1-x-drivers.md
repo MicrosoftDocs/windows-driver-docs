@@ -7,7 +7,6 @@ keywords:
 - user-mode drivers WDK UMDF , USB pipes
 - USB pipes WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Working with USB Pipes in UMDF 1.x Drivers

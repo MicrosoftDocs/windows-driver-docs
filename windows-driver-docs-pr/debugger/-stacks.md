@@ -9,7 +9,6 @@ api_name:
 - stacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !stacks

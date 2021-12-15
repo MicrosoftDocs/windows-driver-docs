@@ -4,7 +4,6 @@ description: OID_WDI_SET_REMOVE_WOL_PATTERN removes a wake-on-LAN (WOL) pattern 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_REMOVE_WOL_PATTERN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

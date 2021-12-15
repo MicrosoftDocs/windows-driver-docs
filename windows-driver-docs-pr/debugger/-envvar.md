@@ -9,7 +9,6 @@ api_name:
 - envvar
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !envvar

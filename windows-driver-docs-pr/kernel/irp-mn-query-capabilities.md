@@ -4,7 +4,6 @@ description: The PnP manager sends this IRP to get the capabilities of a device,
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_CAPABILITIES Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_CAPABILITIES

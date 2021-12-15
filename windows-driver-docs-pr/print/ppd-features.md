@@ -6,7 +6,6 @@ keywords:
 - non-PPD features WDK Pscript
 - driver features WDK Pscript
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PPD Features

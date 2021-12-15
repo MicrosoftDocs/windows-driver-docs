@@ -3,7 +3,6 @@ title: Number of user mode reliability for crashes in creative applications (Exp
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in creative applications, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Number of user mode reliability for crashes in creative applications, normalized by usage, is less than or equal to the baseline goal (Expanded)

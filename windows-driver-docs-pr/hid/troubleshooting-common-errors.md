@@ -2,7 +2,6 @@
 title: Troubleshooting common errors
 description: This section covers common issues that hardware vendors and driver developers may encounter when debugging their I²C firmware or driver software.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Troubleshooting common errors

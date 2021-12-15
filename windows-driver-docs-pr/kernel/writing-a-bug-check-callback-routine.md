@@ -3,7 +3,6 @@ title: Writing a Bug Check Reason Callback Routine
 description: Writing a Bug Check Callback Routine
 keywords: ["bug check callback routines WDK kernel", "callback routines WDK bug checks", "registering callback routines", "KeRegisterBugCheckCallback", "BugCheckCallback"]
 ms.date: 08/02/2021
-ms.localizationpriority: medium
 ---
 
 # Writing a Bug Check Reason Callback Routine

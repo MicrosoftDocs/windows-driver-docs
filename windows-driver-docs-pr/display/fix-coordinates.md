@@ -8,7 +8,6 @@ keywords:
 - Bezier curves WDK GDI
 - lines WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # FIX Coordinates

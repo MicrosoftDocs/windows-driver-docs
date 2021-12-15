@@ -7,7 +7,6 @@ keywords:
 - drawing WDK GDI , floating-point operations
 - floating-point operations WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Floating-Point Services

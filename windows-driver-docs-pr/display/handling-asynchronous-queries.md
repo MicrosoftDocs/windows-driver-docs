@@ -5,7 +5,6 @@ keywords:
 - asynchronous query operations WDK DirectX 9.0
 - query operations WDK DirectX 9.0 , asynchronous
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Asynchronous Queries

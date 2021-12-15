@@ -4,7 +4,6 @@ description: Creating a device metadata submission package in Visual Studio
 keywords:
 - Creating a device metadata submission package in Visual Studio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a device metadata submission package in Visual Studio

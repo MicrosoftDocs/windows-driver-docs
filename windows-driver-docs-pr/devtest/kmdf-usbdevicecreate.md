@@ -9,7 +9,6 @@ api_name:
 - UsbDeviceCreate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # UsbDeviceCreate rule (kmdf)

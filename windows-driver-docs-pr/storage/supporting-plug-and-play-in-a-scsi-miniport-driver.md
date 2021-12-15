@@ -6,7 +6,6 @@ keywords:
 - PnP WDK SCSI
 - Plug and Play WDK SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Plug and Play in a SCSI Miniport Driver

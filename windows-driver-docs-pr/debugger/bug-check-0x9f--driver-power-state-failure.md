@@ -9,7 +9,6 @@ api_name:
 - DRIVER_POWER_STATE_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE

@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY is a WiFiCx TLV that contains G
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_BIP\_GMAC\_256\_KEY (dot11wificxtypes.hpp)

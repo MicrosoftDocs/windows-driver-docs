@@ -9,7 +9,6 @@ api_name:
 - PFN_SHARE_COUNT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1B: PFN\_SHARE\_COUNT

@@ -4,7 +4,6 @@ description: WDI_TLV_BAND_CHANNEL is a WiFiCx TLV that contains the channels to 
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_BAND_CHANNEL Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BAND\_CHANNEL (dot11wificxtypes.hpp)

@@ -2,7 +2,6 @@
 title: Capabilities Provided by SCSI Port
 description: Capabilities Provided by SCSI Port
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Capabilities Provided by SCSI Port

@@ -3,7 +3,6 @@ title: Interpreting a Log Comparison
 description: Interpreting a Log Comparison
 keywords: ["UMDH, interpreting a log comparison"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Interpreting a Log Comparison

@@ -2,7 +2,6 @@
 title: WinDbg Preview - Data Model Menu
 description: This section describes how to work with the data model menu in the WinDbg preview debugger.
 ms.date: 01/10/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Data Model Menu

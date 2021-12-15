@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_WEP_KEY is a TLV that contains a WEP key.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_WEP_KEY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_WEP\_KEY

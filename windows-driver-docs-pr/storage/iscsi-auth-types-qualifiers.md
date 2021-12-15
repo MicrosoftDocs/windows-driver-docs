@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_AUTH\_TYPES\_QUALIFIERS
 description: ISCSI\_AUTH\_TYPES\_QUALIFIERS
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

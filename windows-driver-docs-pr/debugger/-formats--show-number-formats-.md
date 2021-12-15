@@ -9,7 +9,6 @@ api_name:
 - .formats (Show Number Formats)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .formats (Show Number Formats)

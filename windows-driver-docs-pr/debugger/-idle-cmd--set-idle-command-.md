@@ -9,7 +9,6 @@ api_name:
 - .idle_cmd (Set Idle Command)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .idle\_cmd (Set Idle Command)

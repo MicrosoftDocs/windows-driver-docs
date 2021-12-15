@@ -5,7 +5,6 @@ keywords:
 - Remote NDIS WDK networking , architecture
 - Remote NDIS WDK networking , USB transport
 ms.date: 08/06/2021
-ms.localizationpriority: medium
 ---
 
 # Overview of Remote NDIS (RNDIS)

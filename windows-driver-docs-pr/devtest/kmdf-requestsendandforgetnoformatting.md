@@ -9,7 +9,6 @@ api_name:
 - RequestSendAndForgetNoFormatting
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RequestSendAndForgetNoFormatting rule (kmdf)

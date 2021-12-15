@@ -9,7 +9,6 @@ api_name:
 - CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15F: CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP

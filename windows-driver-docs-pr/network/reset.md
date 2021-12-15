@@ -8,7 +8,6 @@ keywords:
 - NICs WDK networking , resetting
 - network interface cards WDK networking , resetting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reset

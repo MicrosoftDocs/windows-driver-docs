@@ -3,7 +3,6 @@ title: Enabling Postmortem Debugging
 description: This topic covers how to enable postmortem debugging
 keywords: debugging. debug, Windbg, postmortem debugging, just-in-time debugging, JIT debugging, AeDebug registry key
 ms.date: 09/17/2018
-ms.localizationpriority: medium
 ---
 
 # Enabling Postmortem Debugging

@@ -2,7 +2,6 @@
 title: Overview of SPB peripheral device drivers
 description: An SPB peripheral device driver controls a peripheral device that is connected to a simple peripheral bus (SPB).
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of SPB peripheral device drivers

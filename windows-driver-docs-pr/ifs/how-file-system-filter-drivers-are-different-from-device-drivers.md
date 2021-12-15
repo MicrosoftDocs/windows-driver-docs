@@ -6,7 +6,6 @@ keywords:
 - file system filter drivers WDK , vs. device drivers
 - device drivers WDK file system
 ms.date: 10/16/2019
-ms.localizationpriority: medium
 ---
 
 # How File System Filter Drivers Are Different from Device Drivers

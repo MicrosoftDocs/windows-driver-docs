@@ -2,7 +2,6 @@
 title: DVD Decoder Minidriver Property Sets
 description: Describes DVD decoder minidriver property sets.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # DVD Decoder Minidriver Property Sets

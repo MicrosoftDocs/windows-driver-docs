@@ -3,7 +3,6 @@ title: Enable loading of kernel debugger symbols
 description: Enable loading of kernel debugger symbols
 keywords: ["Enable loading of kernel debugger symbols (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable loading of kernel debugger symbols

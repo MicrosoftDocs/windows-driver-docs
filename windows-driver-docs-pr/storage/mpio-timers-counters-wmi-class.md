@@ -1,7 +1,6 @@
 ---
 title: MPIO\_TIMERS\_COUNTERS WMI Class
 description: MPIO\_TIMERS\_COUNTERS WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

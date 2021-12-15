@@ -3,7 +3,6 @@ title: KSPROPSETID\_DirectSound3DBuffer
 description: KSPROPSETID\_DirectSound3DBuffer
 keywords: ["KSPROPSETID_DirectSound3DBuffer"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_DirectSound3DBuffer

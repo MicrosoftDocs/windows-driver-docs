@@ -3,7 +3,6 @@ title: Filtering Registry Calls
 description: Filtering Registry Calls
 keywords: ["filtering registry calls WDK kernel", "registry filtering drivers WDK kernel", "RegistryCallback", "filtering registry calls WDK kernel , about filtering registry calls", "registry filtering drivers WDK kernel , about filtering registry calls"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering Registry Calls

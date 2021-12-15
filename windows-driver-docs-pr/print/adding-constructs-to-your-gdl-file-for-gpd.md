@@ -2,7 +2,6 @@
 title: Adding Constructs to Your GDL File for GPD
 description: Adding Constructs to Your GDL File for GPD
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Constructs to Your GDL File for GPD

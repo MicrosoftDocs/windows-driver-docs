@@ -2,7 +2,6 @@
 title: Read received SMS by using the text-mode interface
 description: Read received SMS by using the text-mode interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Read received SMS by using the text-mode interface

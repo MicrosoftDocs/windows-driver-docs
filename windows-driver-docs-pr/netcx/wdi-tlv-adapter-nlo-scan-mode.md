@@ -4,7 +4,6 @@ description: WDI_TLV_ADAPTER_NLO_SCAN_MODE is a WiFiCx TLV that indicates whethe
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_ADAPTER_NLO_SCAN_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ADAPTER\_NLO\_SCAN\_MODE (dot11wificxtypes.hpp)

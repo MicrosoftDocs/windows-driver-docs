@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED to ind
 ms.date: 06/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED (dot11wificxintf.h)

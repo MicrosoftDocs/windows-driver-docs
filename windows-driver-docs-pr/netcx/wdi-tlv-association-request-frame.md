@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_REQUEST_FRAME is a WiFiCx TLV that contains the
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_ASSOCIATION_REQUEST_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_REQUEST\_FRAME (dot11wificxtypes.hpp)

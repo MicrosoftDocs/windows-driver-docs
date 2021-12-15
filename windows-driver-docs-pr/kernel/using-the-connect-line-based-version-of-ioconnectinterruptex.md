@@ -3,7 +3,6 @@ title: Using the CONNECT_LINE_BASED Version of IoConnectInterruptEx
 description: Using the CONNECT_LINE_BASED Version of IoConnectInterruptEx
 keywords: ["IoConnectInterruptEx", "CONNECT_LINE_BASED", "line-based interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using the CONNECT\_LINE\_BASED Version of IoConnectInterruptEx

@@ -9,7 +9,6 @@ api_name:
 - UP_DRIVER_ON_MP_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x92: UP\_DRIVER\_ON\_MP\_SYSTEM

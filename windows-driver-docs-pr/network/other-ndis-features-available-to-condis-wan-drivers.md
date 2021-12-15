@@ -4,7 +4,6 @@ description: Other NDIS Features Available to CoNDIS WAN Drivers
 keywords:
 - CoNDIS WAN drivers WDK networking , features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Other NDIS Features Available to CoNDIS WAN Drivers

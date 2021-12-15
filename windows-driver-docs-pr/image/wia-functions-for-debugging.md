@@ -2,7 +2,6 @@
 title: WIA Functions for Debugging
 description: WIA Functions for Debugging
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Functions for Debugging

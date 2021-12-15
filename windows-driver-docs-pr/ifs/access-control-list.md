@@ -14,7 +14,6 @@ keywords:
 - access control entry WDK file systems
 - ACE WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access Control List

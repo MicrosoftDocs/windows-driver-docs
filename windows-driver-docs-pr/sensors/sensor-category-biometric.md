@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # SENSOR\_CATEGORY\_BIOMETRIC

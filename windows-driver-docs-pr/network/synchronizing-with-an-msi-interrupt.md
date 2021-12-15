@@ -8,7 +8,6 @@ keywords:
 - interrupts WDK networking , synchronizing
 - synchronization WDK MSI-X
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Synchronizing with an MSI Interrupt

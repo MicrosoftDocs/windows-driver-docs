@@ -1,9 +1,8 @@
-﻿---
+---
 title: KSDEGRADE structure (ks.h)
 description: The KSDEGRADE structure contains specifics of degradation strategies.
 ms.date: 07/13/2021
 ms.custom: contperf-fy22q1
-ms.localizationpriority: medium
 ---
 
 # KSDEGRADE structure
@@ -17,7 +16,7 @@ The **KSDEGRADE** structure contains specifics of degradation strategies.
 
 ``` c++
 struct KSDEGRADE {
-  GUID  Set;
+  GUID �Set;
   ULONG Id;
   ULONG Flags;
 };

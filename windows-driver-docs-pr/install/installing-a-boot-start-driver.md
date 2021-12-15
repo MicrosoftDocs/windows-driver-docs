@@ -12,7 +12,6 @@ keywords:
 - cross-platform distribution disks WDK
 - vendor-supplied boot drivers WDK
 ms.date: 08/05/2021
-ms.localizationpriority: medium
 ---
 
 # Installing a Boot-Start Driver

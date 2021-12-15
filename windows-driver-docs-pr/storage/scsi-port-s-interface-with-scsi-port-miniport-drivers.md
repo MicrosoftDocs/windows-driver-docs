@@ -2,7 +2,6 @@
 title: SCSI Port's Interface with SCSI Port Miniport Drivers
 description: SCSI Port's Interface with SCSI Port Miniport Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SCSI Port's Interface with SCSI Port Miniport Drivers

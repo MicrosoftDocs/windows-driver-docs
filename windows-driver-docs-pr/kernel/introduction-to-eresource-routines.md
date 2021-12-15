@@ -3,7 +3,6 @@ title: Introduction to ERESOURCE Routines
 description: Introduction to ERESOURCE Routines
 keywords: ["ERESOURCE structures", "exclusive waiters WDK kernel", "shared waiters WDK kernel", "exclusive/shared synchronization WDK kernel", "synchronization WDK kernel , exclusive/shared", "waiters WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to ERESOURCE Routines

@@ -2,7 +2,6 @@
 title: Open the networks list
 description: Open the networks list
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Open the networks list

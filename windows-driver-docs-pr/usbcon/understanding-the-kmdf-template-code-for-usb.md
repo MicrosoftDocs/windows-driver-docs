@@ -2,7 +2,6 @@
 description: Learn about the source code for KMDF-based USB client driver.
 title: USB client driver code structure (KMDF)
 ms.date: 09/16/2021
-ms.localizationpriority: medium
 ---
 
 # Understanding the USB client driver code structure (KMDF)

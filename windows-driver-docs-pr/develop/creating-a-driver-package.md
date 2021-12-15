@@ -2,7 +2,6 @@
 title: Creating a Driver Package
 description: Creating a Driver Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Driver Package

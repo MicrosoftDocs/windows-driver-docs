@@ -2,7 +2,6 @@
 title: Name property
 description: This property is an vendor-mapped Consumable name.
 ms.date: 09/08/2021
-ms.localizationpriority: medium
 ---
 
 # Name property

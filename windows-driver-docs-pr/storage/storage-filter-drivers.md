@@ -7,7 +7,6 @@ keywords:
 - storage drivers WDK , filter drivers
 - SFD WDK storage
 ms.date: 12/15/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to Storage Filter Drivers

@@ -2,7 +2,6 @@
 title: How to select and configure the Device Fundamentals tests
 description: The WDK for Windows 8 provides a driver testing framework that includes a set of tests called the Device Fundamentals tests.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to select and configure the Device Fundamentals tests

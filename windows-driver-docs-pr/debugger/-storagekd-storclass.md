@@ -9,7 +9,6 @@ api_name:
 - storagekd.storclass
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !storagekd.storclass

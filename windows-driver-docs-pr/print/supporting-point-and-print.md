@@ -4,7 +4,6 @@ description: Supporting Point and Print
 keywords:
 - Point and Print WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Point and Print

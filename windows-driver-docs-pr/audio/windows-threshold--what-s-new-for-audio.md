@@ -2,7 +2,6 @@
 title: Windows 10 What's New for Audio Drivers
 description: This topic provides a high level summary of what's new in audio for Windows 10.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows 10: What's New for Audio Drivers

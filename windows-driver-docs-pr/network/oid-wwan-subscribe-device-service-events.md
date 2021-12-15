@@ -4,7 +4,6 @@ description: OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS sets information about the
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS

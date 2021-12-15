@@ -2,7 +2,6 @@
 title: Writing an Error or Warning Log Entry
 description: Writing an Error or Warning Log Entry
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing an Error or Warning Log Entry

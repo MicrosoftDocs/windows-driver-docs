@@ -2,7 +2,6 @@
 title: Barcode scanner Bluetooth service UUIDs
 description: This topic describes UUIDs for use with the Bluetooth Service Discovery Protocol (SDP) for barcode scanners.
 ms.date: 02/14/2018
-ms.localizationpriority: medium
 ---
 
 # Barcode scanner Bluetooth service UUIDs

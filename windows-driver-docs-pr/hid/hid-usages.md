@@ -18,7 +18,6 @@ keywords:
 - aliased usages WDK HID
 - usage WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 #  HID Usages

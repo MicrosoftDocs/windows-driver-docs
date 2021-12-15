@@ -4,7 +4,6 @@ description: WDI_TLV_NEXT_DIALOG_TOKEN is a WiFiCx TLV that contains the dialog 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_NEXT_DIALOG_TOKEN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_NEXT\_DIALOG\_TOKEN (dot11wificxtypes.hpp)

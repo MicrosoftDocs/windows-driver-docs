@@ -2,7 +2,6 @@
 title: Handling SRB_FUNCTION_PNP
 description: Handling SRB_FUNCTION_PNP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_PNP

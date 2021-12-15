@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME command requests that t
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME (dot11wificxintf.h)

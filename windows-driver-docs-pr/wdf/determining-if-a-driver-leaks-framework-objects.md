@@ -6,7 +6,6 @@ keywords:
 - UMDF WDK , debugging scenarios, determining whether a driver leaks framework objects
 - UMDF WDK , determining whether a driver leaks framework objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining If a Driver Leaks Framework Objects

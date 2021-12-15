@@ -2,7 +2,6 @@
 title: KSPROPERTYSETID_ExtendedCameraControl
 description: The KSPROPERTYSETID_ExtendedCameraControl property set controls the extended camera device settings. The additional controls it provides allow for camera photo sequencing.
 ms.date: 06/24/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTYSETID_ExtendedCameraControl

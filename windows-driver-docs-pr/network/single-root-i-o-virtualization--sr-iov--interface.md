@@ -2,7 +2,6 @@
 title: Single Root I/O Virtualization (SR-IOV) Interface
 description: Single Root I/O Virtualization (SR-IOV) Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Single Root I/O Virtualization (SR-IOV) Interface

@@ -6,7 +6,6 @@ keywords:
 - temporary I/O queues WDK KMDF
 - deleting I/O queues WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deleting I/O Queues

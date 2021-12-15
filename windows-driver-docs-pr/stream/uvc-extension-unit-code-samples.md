@@ -5,7 +5,6 @@ keywords:
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class
 ms.date: 09/17/2021
-ms.localizationpriority: medium
 ---
 
 # UVC Extension Unit Code Samples

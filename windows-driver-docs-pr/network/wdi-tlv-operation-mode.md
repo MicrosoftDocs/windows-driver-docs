@@ -4,7 +4,6 @@ description: WDI_TLV_OPERATION_MODE is a TLV that contains the desired operation
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_OPERATION_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_OPERATION\_MODE

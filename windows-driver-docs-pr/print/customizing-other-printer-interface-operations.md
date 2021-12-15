@@ -6,7 +6,6 @@ keywords:
 - UI plug-ins WDK print , customization methods
 - IPrintOemUI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customizing Other Printer Interface Operations

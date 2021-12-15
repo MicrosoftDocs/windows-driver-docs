@@ -2,7 +2,6 @@
 title: WiFiCx WPA3-SAE authentication
 description: This topic describes WPA3-SAE authentication for WifiCx.
 ms.date: 09/15/2021
-ms.localizationpriority: medium
 ---
 
 # WiFiCx WPA3-SAE authentication

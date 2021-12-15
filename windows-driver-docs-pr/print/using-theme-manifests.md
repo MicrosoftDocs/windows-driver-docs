@@ -2,7 +2,6 @@
 title: Using Theme Manifests
 description: Using Theme Manifests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Theme Manifests

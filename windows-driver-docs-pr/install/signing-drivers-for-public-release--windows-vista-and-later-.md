@@ -12,7 +12,6 @@ keywords:
 - release signing WDK , about release signing
 - release signatures WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Signing Drivers for Public Release

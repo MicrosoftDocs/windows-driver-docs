@@ -2,7 +2,6 @@
 title: BarcodeScannerTriggerReleased
 description: The BarcodeScannerTriggerReleased event occurs when the barcode scanner trigger is released.
 ms.date: 09/07/2018
-ms.localizationpriority: medium
 ---
 
 # BarcodeScannerTriggerReleased

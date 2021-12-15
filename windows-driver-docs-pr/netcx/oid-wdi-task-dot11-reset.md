@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_DOT11_RESET task command requests that the IHV com
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_DOT11_RESET Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_DOT11\_RESET (dot11wificxintf.h)

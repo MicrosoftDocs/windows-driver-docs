@@ -2,7 +2,6 @@
 title: Guidelines for Implementing Finish-Install Actions
 description: Guidelines for Implementing Finish-Install Actions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Guidelines for Implementing Finish-Install Actions

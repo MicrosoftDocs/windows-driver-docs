@@ -2,7 +2,6 @@
 title: Implementing support for UEFI firmware updates
 description: This section describes the steps necessary for a firmware vendor to implement support for update capsule firmware updates.
 ms.date: 08/19/2021
-ms.localizationpriority: medium
 ---
 
 # Implementing support for UEFI firmware updates

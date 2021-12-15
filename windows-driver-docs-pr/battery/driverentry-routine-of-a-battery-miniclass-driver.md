@@ -5,7 +5,6 @@ keywords:
 - battery miniclass drivers WDK , routines
 - DriverEntry WDK battery
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DriverEntry Routine of a Battery Miniclass Driver

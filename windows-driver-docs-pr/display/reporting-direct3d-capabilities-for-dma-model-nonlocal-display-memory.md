@@ -11,7 +11,6 @@ keywords:
 - memory WDK DirectDraw AGP , DMA-style AGP
 - reporting Direct3D capabilities
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

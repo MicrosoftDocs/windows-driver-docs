@@ -5,7 +5,6 @@ keywords:
 - Winsock Kernel WDK networking , about Winsock Kernel
 - WSK WDK networking , about Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Winsock Kernel

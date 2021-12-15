@@ -7,7 +7,6 @@ keywords:
 - registering Stream class interface WDK AVStream
 - initializing stream data WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering with the Stream Class Interface

@@ -15,7 +15,6 @@ keywords:
 - WSDBIT tool WDK , devices for testing
 - WSDAPI Basic Interoperability Tool WDK , devices for testing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WSDBIT Testing Environment

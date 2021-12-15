@@ -2,7 +2,6 @@
 title: V4 Printer Driver Rendering Architecture
 description: The rendering architecture for the v4 printer driver model is the same as the XPSDrv architecture.
 ms.date: 08/27/2021
-ms.localizationpriority: medium
 ---
 
 # V4 Printer Driver Rendering Architecture

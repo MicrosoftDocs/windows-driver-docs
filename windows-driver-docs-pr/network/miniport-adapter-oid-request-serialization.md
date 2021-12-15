@@ -8,7 +8,6 @@ keywords:
 - object identifiers WDK networking
 - OID serialization
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport adapter OID request serialization

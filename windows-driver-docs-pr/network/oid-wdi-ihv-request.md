@@ -4,7 +4,6 @@ description: OID_WDI_IHV_REQUEST is used to forward information that an IHV exte
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_IHV_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_IHV\_REQUEST

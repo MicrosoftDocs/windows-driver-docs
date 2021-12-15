@@ -9,7 +9,6 @@ api_name:
 - lm (List Loaded Modules)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # lm (List Loaded Modules)

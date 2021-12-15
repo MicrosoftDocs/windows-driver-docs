@@ -8,7 +8,6 @@ keywords:
 - undelivered I/O requests WDK KMDF
 - forwarding I/O requests WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Canceling I/O Requests

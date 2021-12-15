@@ -9,7 +9,6 @@ api_name:
 - INVALID_EXTENDED_PROCESSOR_STATE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x131: INVALID\_EXTENDED\_PROCESSOR\_STATE

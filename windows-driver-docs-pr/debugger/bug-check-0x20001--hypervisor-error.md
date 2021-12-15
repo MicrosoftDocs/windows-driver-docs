@@ -9,7 +9,6 @@ api_name:
 - HYPERVISOR_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x20001: HYPERVISOR\_ERROR

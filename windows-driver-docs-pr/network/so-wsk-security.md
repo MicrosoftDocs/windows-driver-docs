@@ -4,7 +4,6 @@ description: SO_WSK_SECURITY
 ms.date: 07/18/2017
 keywords:
  - SO_WSK_SECURITY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SO\_WSK\_SECURITY

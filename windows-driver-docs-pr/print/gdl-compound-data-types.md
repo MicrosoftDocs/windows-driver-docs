@@ -6,7 +6,6 @@ keywords:
 - data types WDK GDL , compound
 - parser WDK GDL , compound data types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Compound Data Types

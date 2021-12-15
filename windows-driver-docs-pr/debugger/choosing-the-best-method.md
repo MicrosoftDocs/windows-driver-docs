@@ -2,7 +2,6 @@
 title: Choosing the Best Method
 description: Choosing the Best Method
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Choosing the Best Method

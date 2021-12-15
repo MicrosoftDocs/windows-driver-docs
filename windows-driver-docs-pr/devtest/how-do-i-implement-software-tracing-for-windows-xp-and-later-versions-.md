@@ -2,7 +2,6 @@
 title: Implementing software tracing for Windows
 description: How do I implement software tracing for Windows XP and later versions of Windows
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I implement software tracing for Windows XP and later versions of Windows?

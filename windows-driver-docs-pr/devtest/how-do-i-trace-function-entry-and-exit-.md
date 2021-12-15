@@ -2,7 +2,6 @@
 title: How do I trace function entry and exit
 description: How do I trace function entry and exit
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I trace function entry and exit?

@@ -9,7 +9,6 @@ api_name:
 - usb3kd.ucx_controller
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.ucx\_controller

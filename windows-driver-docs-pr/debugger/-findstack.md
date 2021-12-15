@@ -9,7 +9,6 @@ api_name:
 - findstack
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !findstack

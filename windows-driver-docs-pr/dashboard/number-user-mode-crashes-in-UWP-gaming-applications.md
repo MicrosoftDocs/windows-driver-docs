@@ -3,7 +3,6 @@ title: Number of user mode crashes or TDRs in UWP gaming applications
 description: Counts the number of crashes in display drivers that happen in the context of UWP gaming applications
 ms.topic: article
 ms.date: 07/20/2021
-ms.localizationpriority: medium
 ---
 
 # Number of user mode crashes or TDRs in UWP gaming applications

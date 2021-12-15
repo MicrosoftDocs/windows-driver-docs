@@ -9,7 +9,6 @@ api_name:
 - MemAfterReqCompletedReadA
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MemAfterReqCompletedReadA rule (kmdf)

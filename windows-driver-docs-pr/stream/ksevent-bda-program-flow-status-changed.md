@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 10/11/2021
-ms.localizationpriority: medium
 ---
 
 # KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED

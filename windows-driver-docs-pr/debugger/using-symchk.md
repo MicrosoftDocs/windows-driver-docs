@@ -3,7 +3,6 @@ title: Using SymChk
 description: Using SymChk
 keywords: ["SymChk, using"]
 ms.date: 10/08/2017
-ms.localizationpriority: medium
 ---
 
 # Using SymChk

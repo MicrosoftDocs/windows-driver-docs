@@ -8,7 +8,6 @@ keywords:
 - bidirectional communication WDK print
 - bidi communication WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Bidirectional Communication

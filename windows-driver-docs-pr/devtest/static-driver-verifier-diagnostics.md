@@ -2,7 +2,6 @@
 title: Static Driver Verifier Diagnostics
 description: Static Driver Verifier Diagnostics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier Diagnostics

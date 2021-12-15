@@ -2,7 +2,6 @@
 title: Destination Parameter Token
 description: Destination Parameter Token
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # Destination Parameter Token

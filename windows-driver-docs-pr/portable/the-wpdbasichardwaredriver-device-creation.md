@@ -2,7 +2,6 @@
 description: Creating the Sensor Devices
 title: Creating the Sensor Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating the Sensor Devices

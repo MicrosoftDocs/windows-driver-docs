@@ -6,7 +6,6 @@ keywords:
 - non-visible keywords WDK DNIS miniport
 - hidden keywords WDK DNIS miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Keywords Not Displayed in the User Interface

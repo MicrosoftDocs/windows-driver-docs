@@ -7,7 +7,6 @@ keywords:
 - port states WDK NDIS
 - port numbers WDK NDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing an NDIS Port

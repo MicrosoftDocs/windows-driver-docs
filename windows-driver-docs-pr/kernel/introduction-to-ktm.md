@@ -3,7 +3,6 @@ title: Introduction to KTM
 description: Introduction to KTM
 keywords: ["Kernel Transaction Manager WDK , about Kernel Transaction Manager", "KTM WDK , about KTM", "transaction processing systems WDK KTM", "TPS WDK KTM"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to KTM

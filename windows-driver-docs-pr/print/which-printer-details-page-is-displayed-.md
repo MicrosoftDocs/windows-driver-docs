@@ -6,7 +6,6 @@ keywords:
 - viewing printer details page
 - displaying printer details page
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Which Printer Details Page is Displayed?

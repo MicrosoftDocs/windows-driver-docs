@@ -2,7 +2,6 @@
 title: Communication model, synchronization, and abort
 description: This section describes the WDI communication model, synchronization, and abort
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Communication model, synchronization, and abort

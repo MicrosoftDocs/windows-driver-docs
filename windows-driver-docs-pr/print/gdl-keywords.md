@@ -6,7 +6,6 @@ keywords:
 - keywords WDK GDL , about GDL keywords
 - keywords WDK GDL , characters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Keywords

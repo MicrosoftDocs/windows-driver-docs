@@ -9,7 +9,6 @@ api_name:
 - INVALID_PUSH_LOCK_FLAGS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x152: INVALID\_PUSH\_LOCK\_FLAGS

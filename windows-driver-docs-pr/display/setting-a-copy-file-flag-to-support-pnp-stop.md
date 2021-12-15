@@ -7,7 +7,6 @@ keywords:
 - PnP stop WDK display
 - Plug and Play stop WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting a Copy-File Flag to Support PnP Stop

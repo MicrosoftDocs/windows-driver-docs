@@ -2,7 +2,6 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.date: 12/07/2020
-ms.localizationpriority: high
 ---
 
 # Bug Check Code Reference

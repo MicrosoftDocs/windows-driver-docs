@@ -2,7 +2,6 @@
 title: Executing Tests
 description: Executing Tests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Executing Tests

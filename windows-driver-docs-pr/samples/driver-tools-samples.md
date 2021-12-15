@@ -2,7 +2,6 @@
 title: Tools samples
 description: The driver samples in this directory contains intentional code errors that are designed to show the capabilities and features of Static Driver Verifier (SDV).
 ms.date: 11/15/2019
-ms.localizationpriority: medium
 ---
 
 # Tools samples

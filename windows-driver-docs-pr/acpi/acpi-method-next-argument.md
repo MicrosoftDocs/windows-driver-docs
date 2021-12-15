@@ -4,7 +4,6 @@ description: The ACPI_METHOD_NEXT_ARGUMENT structure returns a pointer to the ne
 keywords: 
 - ACPI_METHOD_NEXT_ARGUMENT macro ACPI Devices
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # ACPI_METHOD_NEXT_ARGUMENT macro

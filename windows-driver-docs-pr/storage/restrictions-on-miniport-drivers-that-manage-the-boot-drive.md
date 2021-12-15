@@ -8,7 +8,6 @@ keywords:
 - disk dump drivers WDK storage
 - dump mode WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Restrictions on Miniport Drivers that Manage the Boot Drive

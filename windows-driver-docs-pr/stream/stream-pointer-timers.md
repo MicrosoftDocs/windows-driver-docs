@@ -6,7 +6,6 @@ keywords:
 - timers WDK AVStream
 - time-outs WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stream Pointer Timers

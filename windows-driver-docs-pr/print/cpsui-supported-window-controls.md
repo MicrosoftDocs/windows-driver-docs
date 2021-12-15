@@ -7,7 +7,6 @@ keywords:
 - property sheet pages WDK print , window controls
 - window controls WDK CPSUI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CPSUI-Supported Window Controls

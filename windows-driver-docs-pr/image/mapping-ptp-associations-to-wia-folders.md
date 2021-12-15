@@ -2,7 +2,6 @@
 title: Mapping PTP Associations to WIA Folders
 description: Mapping PTP Associations to WIA Folders
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping PTP Associations to WIA Folders

@@ -9,7 +9,6 @@ api_name:
 - .exr (Display Exception Record)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .exr (Display Exception Record)

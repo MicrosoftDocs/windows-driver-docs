@@ -2,7 +2,6 @@
 title: Vendor-Extended Commands
 description: Vendor-Extended Commands
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vendor-Extended Commands

@@ -6,7 +6,6 @@ keywords:
 - Direct3D WDK Windows 2000 display , context management
 - context WDK Direct3D , about context management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D Context Management

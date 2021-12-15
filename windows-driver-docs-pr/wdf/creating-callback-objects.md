@@ -9,7 +9,6 @@ keywords:
 - UMDF objects WDK , callback objects
 - framework objects WDK UMDF , callback objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Callback Objects

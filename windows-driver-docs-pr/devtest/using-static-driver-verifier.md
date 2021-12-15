@@ -2,7 +2,6 @@
 title: Using Static Driver Verifier
 description: Using Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Static Driver Verifier

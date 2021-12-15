@@ -14,7 +14,6 @@ keywords:
 - highlighting WDK Direct3D
 - D3DPRIMCAPS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Shading Requirements

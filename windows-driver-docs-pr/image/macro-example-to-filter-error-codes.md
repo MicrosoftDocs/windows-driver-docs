@@ -2,7 +2,6 @@
 title: Macro Example to Filter Error Codes
 description: Macro Example to Filter Error Codes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Macro Example to Filter Error Codes

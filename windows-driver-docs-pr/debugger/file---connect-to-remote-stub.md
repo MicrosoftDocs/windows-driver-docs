@@ -3,7 +3,6 @@ title: File Connect to Remote Stub
 description: File Connect to Remote Stub
 keywords: ["File Connect to Remote Stub"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Connect to Remote Stub

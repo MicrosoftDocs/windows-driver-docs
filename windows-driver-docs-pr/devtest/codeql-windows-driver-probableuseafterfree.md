@@ -2,7 +2,6 @@
 title: ProbableUseAfterFree (Supplemental Windows Driver CodeQL Query)
 description: UseAfterFree, Low Precision a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
-ms.localizationpriority: medium
 ---
 
 # Probable UseAfterFree (Windows Driver CodeQL Query)

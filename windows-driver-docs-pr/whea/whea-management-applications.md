@@ -7,7 +7,6 @@ keywords:
 - applications WDK WHEA , management
 - management applications WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WHEA Management Applications

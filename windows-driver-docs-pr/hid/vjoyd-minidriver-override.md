@@ -7,7 +7,6 @@ keywords:
 - VJoyD WDK HID , overrides
 - overriding virtual minidrivers WDK joysticks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VJoyD Minidriver Override

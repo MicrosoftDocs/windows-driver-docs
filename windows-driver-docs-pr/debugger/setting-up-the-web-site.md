@@ -2,7 +2,6 @@
 title: Setting Up the Web Site
 description: Setting Up the Web Site
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up the Web Site

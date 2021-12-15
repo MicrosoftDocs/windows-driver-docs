@@ -4,7 +4,6 @@ description: As a query, use the OID_GEN_OPERATIONAL_STATUS OID to determine the
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_OPERATIONAL_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_OPERATIONAL\_STATUS

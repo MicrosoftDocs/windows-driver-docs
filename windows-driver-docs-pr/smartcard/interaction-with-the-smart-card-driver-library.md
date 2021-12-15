@@ -5,7 +5,6 @@ keywords:
 - IOCTLs WDK smart card
 - vendor-supplied drivers WDK smart card , IOCTL request management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interaction with the Smart Card Driver Library

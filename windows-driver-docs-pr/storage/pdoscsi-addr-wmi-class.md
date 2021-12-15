@@ -1,7 +1,6 @@
 ---
 title: PDOSCSI\_ADDR WMI Class
 description: PDOSCSI\_ADDR WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

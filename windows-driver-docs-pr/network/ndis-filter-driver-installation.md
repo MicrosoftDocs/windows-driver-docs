@@ -6,7 +6,6 @@ keywords:
 - NDIS filter drivers WDK , installation
 - installing NDIS filter drivers WDK networking
 ms.date: 01/16/2019
-ms.localizationpriority: medium
 ---
 
 # NDIS Filter Driver Installation

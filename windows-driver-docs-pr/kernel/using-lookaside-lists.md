@@ -3,7 +3,6 @@ title: Using Lookaside Lists
 description: Using Lookaside Lists
 keywords: ["memory management WDK kernel , lookaside lists", "lookaside lists WDK kernel", "fixed-size buffer allocations WDK kernel", "ExXxxLookasideList routines WDK", "entries WDK lookaside", "nonpaged lookaside lists WDK kernel", "paged lookaside lists WDK kernel", "Allocate routine WDK memory", "Free routine WDK memory"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Lookaside Lists

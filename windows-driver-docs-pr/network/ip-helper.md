@@ -6,7 +6,6 @@ keywords:
 - IP Helper WDK networking , about
 - network drivers WDK , IP Helper
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IP Helper Overview

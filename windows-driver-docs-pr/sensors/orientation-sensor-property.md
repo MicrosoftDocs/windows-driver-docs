@@ -2,7 +2,6 @@
 title: Orientation sensor property
 description: The property key for the orientation sensor.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Orientation sensor property

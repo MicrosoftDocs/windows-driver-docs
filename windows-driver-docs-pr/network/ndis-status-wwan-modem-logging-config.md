@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG noti
 ms.date: 04/11/2019
 keywords: 
  -NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

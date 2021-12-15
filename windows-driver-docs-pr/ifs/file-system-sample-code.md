@@ -5,7 +5,6 @@ keywords:
 - drivers WDK file system
 - file system drivers WDK
 ms.date: 02/10/2020
-ms.localizationpriority: medium
 ---
 
 # File system sample code

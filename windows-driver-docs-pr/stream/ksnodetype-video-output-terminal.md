@@ -2,7 +2,6 @@
 title: KSNODETYPE\_VIDEO\_OUTPUT\_TERMINAL
 description: KSNODETYPE\_VIDEO\_OUTPUT\_TERMINAL
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSNODETYPE\_VIDEO\_OUTPUT\_TERMINAL

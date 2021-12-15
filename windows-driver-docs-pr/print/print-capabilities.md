@@ -7,7 +7,6 @@ keywords:
 - PrintCapabilities document WDK print
 - IPrintTicketProvider
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Capabilities

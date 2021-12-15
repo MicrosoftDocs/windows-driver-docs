@@ -2,7 +2,6 @@
 title: User Interface Extension Registry Entries
 description: User Interface Extension Registry Entries
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # User Interface Extension Registry Entries

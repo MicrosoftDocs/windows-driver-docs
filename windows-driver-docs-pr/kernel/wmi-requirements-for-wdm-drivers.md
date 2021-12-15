@@ -3,7 +3,6 @@ title: WMI Requirements for WDM Drivers
 description: WMI Requirements for WDM Drivers
 keywords: ["WMI WDK kernel , WDM drivers", "WDM drivers WDK WMI", "IRPs WDK WMI", "requests WDK WMI", "WMI WDK kernel , requests", "data providers WDK WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # WMI Requirements for WDM Drivers

@@ -3,7 +3,6 @@ title: Command Tokens
 description: Command Tokens
 keywords: ["commands, tokens used in commands"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Command Tokens

@@ -9,7 +9,6 @@ api_name:
 - MANUALLY_INITIATED_POWER_BUTTON_HOLD
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1C8: MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD

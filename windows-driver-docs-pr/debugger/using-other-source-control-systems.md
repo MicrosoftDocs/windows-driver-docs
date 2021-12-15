@@ -3,7 +3,6 @@ title: Using Other Source Control Systems
 description: Using Other Source Control Systems
 keywords: ["version control systems", "version control systems, Subversion", "source servers, writing your own version control system", "provider modules", "provider modules, creating your own"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Other Source Control Systems

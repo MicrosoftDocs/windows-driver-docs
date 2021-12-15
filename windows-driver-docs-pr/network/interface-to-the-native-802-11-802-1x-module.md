@@ -5,7 +5,6 @@ keywords:
 - post-association operations WDK Native 802.11 IHV Extensions DLL
 - 802.1X module WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interface to the Native 802.11 802.1X Module

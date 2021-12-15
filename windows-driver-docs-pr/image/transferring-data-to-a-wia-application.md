@@ -2,7 +2,6 @@
 title: Transferring Data to a WIA Application
 description: Transferring Data to a WIA Application
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Transferring Data to a WIA Application

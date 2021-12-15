@@ -9,7 +9,6 @@ api_name:
 - pci
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pci

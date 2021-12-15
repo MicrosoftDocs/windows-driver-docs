@@ -3,7 +3,6 @@ title: Other Data Spaces
 description: Other Data Spaces
 keywords: ["Debugger Engine API, memory, data spaces"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Other Data Spaces

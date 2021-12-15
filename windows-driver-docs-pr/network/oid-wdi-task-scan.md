@@ -4,7 +4,6 @@ description: OID_WDI_TASK_SCAN requests a survey of BSS networks. The port perfo
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SCAN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

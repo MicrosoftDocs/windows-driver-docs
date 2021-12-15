@@ -4,7 +4,6 @@ description: WiFiCx does not use the WDI_TLV_ANQP_ELEMENTS TLV.
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_ANQP_ELEMENTS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ANQP\_ELEMENTS (dot11wificxtypes.hpp)

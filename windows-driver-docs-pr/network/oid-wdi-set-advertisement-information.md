@@ -4,7 +4,6 @@ description: OID_WDI_SET_ADVERTISEMENT_INFORMATION configures the Information El
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ADVERTISEMENT_INFORMATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_ADVERTISEMENT\_INFORMATION

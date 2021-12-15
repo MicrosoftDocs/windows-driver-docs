@@ -6,7 +6,6 @@ keywords:
 - storage changer drivers WDK , request processing
 - IOCTLs WDK changer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing Changer Device-Control Requests

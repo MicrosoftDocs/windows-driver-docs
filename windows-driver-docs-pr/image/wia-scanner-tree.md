@@ -2,7 +2,6 @@
 title: WIA scanner tree
 description: The WIA scanner tree provides information about the root item (scanner) and each child item that consists of properties common to both camera and scanner.
 ms.date: 07/06/2020
-ms.localizationpriority: medium
 ---
 
 # WIA scanner tree

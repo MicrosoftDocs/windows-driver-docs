@@ -5,7 +5,6 @@ keywords:
 - installation keywords WDK networking , enumeration keywords
 - enumeration keywords WDK NDIS miniport
 ms.date: 4/08/2020
-ms.localizationpriority: medium
 ---
 
 # Enumeration Keywords

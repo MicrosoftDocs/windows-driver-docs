@@ -2,7 +2,6 @@
 title: C30033 warning
 description: Warning C30033 Executable allocation was detected in a driver compiled with POOL_NX_OPTIN.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C30033"
 ---

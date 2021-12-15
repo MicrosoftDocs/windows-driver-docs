@@ -4,7 +4,6 @@ description: WDI_TLV_PHY_TYPE_LIST is a WiFiCx TLV that contains an array of PHY
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_PHY_TYPE_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_TYPE\_LIST (dot11wificxtypes.hpp)

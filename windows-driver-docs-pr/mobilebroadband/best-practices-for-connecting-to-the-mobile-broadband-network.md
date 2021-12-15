@@ -2,7 +2,6 @@
 title: Best practices for connecting to the mobile broadband network
 description: Best practices for connecting to the mobile broadband network
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Best practices for connecting to the mobile broadband network

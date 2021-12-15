@@ -6,7 +6,6 @@ keywords:
 - device objects WDK storage
 - USB mass storage device example WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Object Example for a USB Mass Storage Device

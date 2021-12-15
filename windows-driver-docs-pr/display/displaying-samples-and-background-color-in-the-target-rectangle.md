@@ -7,7 +7,6 @@ keywords:
 - background color options WDK DirectX VA
 - deinterlacing WDK DirectX VA , target rectangle
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

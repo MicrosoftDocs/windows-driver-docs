@@ -8,7 +8,6 @@ keywords:
 - topology nodes WDK audio
 - connections WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Nodes and Connections

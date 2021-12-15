@@ -6,7 +6,6 @@ keywords:
 - INF files WDK KMDF , about installing KMDF drivers
 - installation components for drivers WDK KMDF
 ms.date: 05/16/2019
-ms.localizationpriority: medium
 ---
 
 # Redistributable Framework Components

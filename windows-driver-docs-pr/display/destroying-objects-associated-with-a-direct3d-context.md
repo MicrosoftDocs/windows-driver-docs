@@ -6,7 +6,6 @@ keywords:
 - context WDK Direct3D , DirectX 9.0
 - destroying objects associated with context WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Destroying Objects Associated with a Direct3D Context

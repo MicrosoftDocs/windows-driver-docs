@@ -9,7 +9,6 @@ api_name:
 - (Evaluate C++ Expression)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ?? (Evaluate C++ Expression)

@@ -2,7 +2,6 @@
 description: The Windows Driver Frameworks Files
 title: The Windows Driver Frameworks Files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The Windows Driver Frameworks Files

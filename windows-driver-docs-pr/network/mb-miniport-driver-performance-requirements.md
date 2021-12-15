@@ -2,7 +2,6 @@
 title: MB Miniport Driver Performance Requirements
 description: MB Miniport Driver Performance Requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Miniport Driver Performance Requirements

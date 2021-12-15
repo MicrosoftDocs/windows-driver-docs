@@ -2,7 +2,6 @@
 title: Wi-Fi device initialization
 description: This topic describes the initialization of the Wi-Fi device after power-on.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi device initialization

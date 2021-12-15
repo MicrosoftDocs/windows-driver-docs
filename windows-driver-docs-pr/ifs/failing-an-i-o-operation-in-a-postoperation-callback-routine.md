@@ -5,7 +5,6 @@ keywords:
 - postoperation callback routines WDK file system minifilter , failing operations
 - failing I/O operations WDK file system minifilter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Failing an I/O Operation in a Postoperation Callback Routine

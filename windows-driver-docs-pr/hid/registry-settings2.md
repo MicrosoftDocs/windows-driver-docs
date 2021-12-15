@@ -7,7 +7,6 @@ keywords:
 - VJoyD WDK HID , registry settings
 - registry WDK joysticks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Settings

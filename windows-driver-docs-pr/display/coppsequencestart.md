@@ -7,7 +7,6 @@ keywords:
 - protected video WDK COPP , video miniport driver code template
 - video miniport drivers WDK Windows 2000 , COPP code template
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPPSequenceStart function

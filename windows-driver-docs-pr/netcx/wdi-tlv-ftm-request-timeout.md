@@ -4,7 +4,6 @@ description: WDI_TLV_FTM_REQUEST_TIMEOUT is a WiFiCx TLV that contains the maxim
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_FTM_REQUEST_TIMEOUT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_FTM_REQUEST_TIMEOUT (dot11wificxtypes.hpp)

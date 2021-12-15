@@ -2,7 +2,6 @@
 title: Managing NIC Switches
 description: Managing NIC Switches
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing NIC Switches

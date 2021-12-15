@@ -2,7 +2,6 @@
 title: WIA Architecture Overview
 description: WIA Architecture Overview
 ms.date: 07/18/2018
-ms.localizationpriority: medium
 ---
 
 # WIA Architecture Overview

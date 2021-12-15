@@ -1,7 +1,6 @@
 ---
 title: HBA\_BIND\_TYPE
 description: HBA\_BIND\_TYPE
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

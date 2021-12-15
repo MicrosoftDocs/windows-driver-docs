@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_ADVERTISEMENT_ID is a WiFiCx TLV that contains an ID th
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_P2P_ADVERTISEMENT_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_ADVERTISEMENT\_ID (dot11wificxtypes.hpp)

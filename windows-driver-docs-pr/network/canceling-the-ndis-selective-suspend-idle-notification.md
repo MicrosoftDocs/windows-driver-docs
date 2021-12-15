@@ -2,7 +2,6 @@
 title: Canceling the NDIS Selective Suspend Idle Notification
 description: Canceling the NDIS Selective Suspend Idle Notification
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Canceling the NDIS Selective Suspend Idle Notification

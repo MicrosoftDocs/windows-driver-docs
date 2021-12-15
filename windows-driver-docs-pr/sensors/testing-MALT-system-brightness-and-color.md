@@ -2,7 +2,6 @@
 title: Testing system brightness and color
 description: Instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light testing solution.
 ms.date: 07/08/2021
-ms.localizationpriority: medium
 ---
 
 # Testing system brightness and color

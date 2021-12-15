@@ -3,7 +3,6 @@ title: Passing PnP IRPs Down the Device Stack
 description: Passing PnP IRPs Down the Device Stack
 keywords: ["PnP WDK kernel , passing IRPs down device stack", "Plug and Play WDK kernel , passing IRPs down device stack", "IRPs WDK PnP", "I/O request packets WDK PnP", "passing IRPs down device stack WDK", "IoCompletion routine"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Passing PnP IRPs Down the Device Stack

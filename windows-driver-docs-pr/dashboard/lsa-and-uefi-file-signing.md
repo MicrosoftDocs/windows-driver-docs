@@ -1,7 +1,6 @@
 ---
 title: LSA and UEFI file signing
 description: LSA plug-in and UEFI firmware signing
-ms.localizationpriority: medium
 ms.topic: article
 ms.date: 10/17/2018
 ---

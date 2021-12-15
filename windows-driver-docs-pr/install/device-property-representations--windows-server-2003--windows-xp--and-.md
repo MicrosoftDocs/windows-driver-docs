@@ -4,7 +4,6 @@ description: Device Property Representations (Windows Server 2003, Windows XP, a
 keywords:
 - device properties WDK device installations , representations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)

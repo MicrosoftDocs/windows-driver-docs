@@ -2,7 +2,6 @@
 title: Symmetric and Asymmetric Assignment of Queue Pairs
 description: Symmetric and Asymmetric Assignment of Queue Pairs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Symmetric and Asymmetric Assignment of Queue Pairs

@@ -2,7 +2,6 @@
 title: Ending a Debugging Session in Visual Studio
 description: To end a debugging session in Microsoft Visual Studio, from the Debug menu, choose Stop Debugging.
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # Ending a Debugging Session in Visual Studio

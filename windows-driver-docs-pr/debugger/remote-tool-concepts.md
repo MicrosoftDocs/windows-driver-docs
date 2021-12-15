@@ -3,7 +3,6 @@ title: Remote Tool Concepts
 description: Remote Tool Concepts
 keywords: ["Remote Tool, Remote Tool Concepts"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Remote Tool Concepts

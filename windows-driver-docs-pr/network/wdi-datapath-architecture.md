@@ -2,7 +2,6 @@
 title: WDI datapath architecture
 description: To interoperate with existing WLAN target devices, the current version of the driver interface does not specify a host-controller interface (HCI) for TX/RX.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI datapath architecture

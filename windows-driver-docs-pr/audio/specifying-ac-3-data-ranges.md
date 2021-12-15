@@ -12,7 +12,6 @@ keywords:
 - data ranges WDK audio , AC-3
 - non-PCM audio formats WDK , AC-3
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying AC-3 Data Ranges

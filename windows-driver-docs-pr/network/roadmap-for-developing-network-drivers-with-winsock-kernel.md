@@ -2,7 +2,6 @@
 title: Roadmap for Developing Network Drivers with Winsock Kernel
 description: Roadmap for Developing Network Drivers with Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing Network Drivers with Winsock Kernel

@@ -4,7 +4,6 @@ description: WDI_TLV_PHY_STATISTICS is a WiFiCx TLV that contains per-PHY statis
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_PHY_STATISTICS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_STATISTICS (dot11wificxtypes.hpp)

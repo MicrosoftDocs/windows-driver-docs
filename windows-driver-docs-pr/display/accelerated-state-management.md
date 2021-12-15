@@ -5,7 +5,6 @@ keywords:
 - accelerated state management WDK Direct3D
 - states WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accelerated State Management

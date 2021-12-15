@@ -9,7 +9,6 @@ api_name:
 - DPC_WATCHDOG_TIMEOUT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x102: DPC\_WATCHDOG\_TIMEOUT

@@ -9,7 +9,6 @@ api_name:
 - ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xFC: ATTEMPTED\_EXECUTE\_OF\_NOEXECUTE\_MEMORY

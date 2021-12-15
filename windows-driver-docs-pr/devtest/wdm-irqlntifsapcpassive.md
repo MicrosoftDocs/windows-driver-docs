@@ -9,7 +9,6 @@ api_name:
 - IrqlNtifsApcPassive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlNtifsApcPassive rule (wdm)

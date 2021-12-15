@@ -9,7 +9,6 @@ keywords:
 - Windows Management Instrumentation WDK networking , GUIDs
 - MOF files WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Including a MOF File

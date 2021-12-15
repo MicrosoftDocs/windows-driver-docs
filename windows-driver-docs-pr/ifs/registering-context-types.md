@@ -6,7 +6,6 @@ keywords:
 - registering context types
 - FLT_CONTEXT_REGISTRATION
 ms.date: 10/25/2021
-ms.localizationpriority: medium
 ---
 
 # Registering context types

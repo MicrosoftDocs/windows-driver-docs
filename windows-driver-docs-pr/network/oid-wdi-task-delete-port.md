@@ -4,7 +4,6 @@ description: OID_WDI_TASK_DELETE_PORT requests that the IHV component releases a
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DELETE_PORT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

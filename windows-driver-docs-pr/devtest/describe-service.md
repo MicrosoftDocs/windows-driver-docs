@@ -4,7 +4,6 @@ description: Describe your service in the Mobile Broadband Metadata Authoring Wi
 keywords:
 - Describe your service in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Describe your service in the Mobile Broadband Metadata Authoring Wizard

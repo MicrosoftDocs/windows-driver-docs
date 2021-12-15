@@ -4,7 +4,6 @@ description: The OID_WAN_CO_SET_LINK_INFO OID requests the miniport driver to se
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_SET_LINK_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_SET\_LINK\_INFO

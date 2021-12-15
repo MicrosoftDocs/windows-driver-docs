@@ -9,7 +9,6 @@ api_name:
 - Irql_Gather_DMA_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_Gather\_DMA\_Function rule (ndis)

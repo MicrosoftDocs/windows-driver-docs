@@ -10,7 +10,6 @@ keywords:
 - remote access registered memory caching WDK SANs
 - memory WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Caching Registered Memory

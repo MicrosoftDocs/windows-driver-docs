@@ -8,7 +8,6 @@ keywords:
 - video transport kernel-mode WDK DirectDraw , user-mode handles
 - user-mode handles WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Getting the User-Mode Handles

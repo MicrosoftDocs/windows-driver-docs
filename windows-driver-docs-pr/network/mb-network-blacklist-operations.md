@@ -2,7 +2,6 @@
 title: MB Network Blacklist Operations
 description: MB Network Blacklist Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Network Blacklist Operations

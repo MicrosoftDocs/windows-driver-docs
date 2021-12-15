@@ -4,7 +4,6 @@ description: CM_PROB_DUPLICATE_DEVICE
 keywords:
 - CM_PROB_DUPLICATE_DEVICE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 42 - CM_PROB_DUPLICATE_DEVICE

@@ -3,7 +3,6 @@ title: Transaction Manager Objects
 description: Transaction Manager Objects
 keywords: ["log streams WDK KTM , creating", "virtual clock values WDK KTM , in transaction manager objects", "Kernel Transaction Manager WDK , transaction managers", "transaction manager objects WDK KTM"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Transaction Manager Objects

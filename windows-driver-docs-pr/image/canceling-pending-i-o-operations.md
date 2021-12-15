@@ -2,7 +2,6 @@
 title: Canceling Pending I/O Operations
 description: Canceling Pending I/O Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Canceling Pending I/O Operations

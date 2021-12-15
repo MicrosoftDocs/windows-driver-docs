@@ -5,7 +5,6 @@ keywords:
 - DMA operations WDK KMDF , about DMA operations
 - bus-master DMA WDK KMDF , about DMA operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to DMA in Windows Driver Framework

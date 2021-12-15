@@ -3,7 +3,6 @@ title: Using IoCompletion Routines
 description: Using IoCompletion Routines
 keywords: ["IoCompletion routines", "completing IRPs WDK kernel , IoCompletion routines", "completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using IoCompletion Routines

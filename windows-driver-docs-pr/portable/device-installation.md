@@ -2,7 +2,6 @@
 description: Device Installation
 title: Device Installation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Installation

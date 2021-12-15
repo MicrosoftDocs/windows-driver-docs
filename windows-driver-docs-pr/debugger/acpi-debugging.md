@@ -3,7 +3,6 @@ title: ACPI Debugging
 description: ACPI Debugging
 keywords: ["ACPI debugging", "BIOS debugging, ACPI BIOS debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # ACPI Debugging

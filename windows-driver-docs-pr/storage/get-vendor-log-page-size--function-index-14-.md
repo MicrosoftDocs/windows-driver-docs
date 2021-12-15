@@ -1,7 +1,6 @@
 ---
 title: Get Vendor Log Page Size (Function Index 14)
 description: This function returns the size of the vendor log page so that the host knows the size of the buffer it needs to allocate to read the vendor log page.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

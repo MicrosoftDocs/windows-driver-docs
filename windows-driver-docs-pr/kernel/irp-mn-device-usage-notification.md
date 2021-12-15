@@ -4,7 +4,6 @@ description: System components send this IRP to ask the drivers for a device whe
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_DEVICE_USAGE_NOTIFICATION Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION

@@ -5,7 +5,6 @@ keywords:
 - vertex shader declarations WDK DirectX 9.0
 - shader declarations WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Vertex Shader Declarations

@@ -8,7 +8,6 @@ keywords:
 - locating drivers for device installation WDK device installations , ranking drivers
 - searching for drivers during device installation WDK devi
 ms.date: 12/03/2021
-ms.localizationpriority: medium
 ---
 
 # How Windows Ranks Driver Packages

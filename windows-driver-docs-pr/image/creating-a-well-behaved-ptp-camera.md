@@ -2,7 +2,6 @@
 title: Creating a Well-Behaved PTP Camera
 description: Creating a Well-Behaved PTP Camera
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Well-Behaved PTP Camera

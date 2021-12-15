@@ -9,7 +9,6 @@ api_name:
 - COREMSGCALL_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x173: COREMSGCALL\_INTERNAL\_ERROR

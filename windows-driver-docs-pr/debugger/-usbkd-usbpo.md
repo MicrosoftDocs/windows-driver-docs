@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbpo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbpo

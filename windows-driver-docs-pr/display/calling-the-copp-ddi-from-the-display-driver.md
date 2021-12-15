@@ -5,7 +5,6 @@ keywords:
 - calling COPP DDI WDK DirectX VA
 - COPP WDK DirectX VA , calling from the display driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling the COPP DDI from the Display Driver

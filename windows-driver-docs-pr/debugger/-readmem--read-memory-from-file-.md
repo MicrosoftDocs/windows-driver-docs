@@ -9,7 +9,6 @@ api_name:
 - .readmem (Read Memory from File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .readmem (Read Memory from File)

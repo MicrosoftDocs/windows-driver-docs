@@ -3,7 +3,6 @@ title: Trusted certificates
 description: Trusted certificates
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trusted certificates

@@ -4,7 +4,6 @@ description: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG is a WiFiCx TLV that contains N
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG (dot11wificxtypes.hpp)

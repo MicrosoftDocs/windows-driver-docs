@@ -2,7 +2,6 @@
 title: Testing your desktop COSA/APN database submission
 description: Testing your desktop COSA/APN database submission
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing your desktop COSA/APN database submission

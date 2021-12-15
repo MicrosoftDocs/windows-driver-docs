@@ -12,7 +12,6 @@ keywords:
 - hardware WDK SD bus
 - software WDK SD bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SD Card Driver Stack

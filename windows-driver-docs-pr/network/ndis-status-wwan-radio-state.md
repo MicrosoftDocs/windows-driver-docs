@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_RADIO_STATE notification 
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_RADIO_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_RADIO\_STATE

@@ -2,7 +2,6 @@
 description: Requirements for Objects
 title: Requirements for Objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requirements for Objects

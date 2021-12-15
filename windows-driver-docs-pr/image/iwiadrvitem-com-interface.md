@@ -2,7 +2,6 @@
 title: IWiaDrvItem COM Interface
 description: IWiaDrvItem COM Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IWiaDrvItem COM Interface

@@ -2,7 +2,6 @@
 title: Unidrv/PScript5 XPSDrv UI Behavior Changes
 description: Unidrv/PScript5 XPSDrv UI Behavior Changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv/PScript5 XPSDrv UI Behavior Changes

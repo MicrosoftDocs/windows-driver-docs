@@ -2,7 +2,6 @@
 title: UPS ServiceProviders Registry Entries
 description: Create a vendor-specific subkey under the UPS ServiceProviders registry key for each UPS model.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UPS\\ServiceProviders Registry Entries

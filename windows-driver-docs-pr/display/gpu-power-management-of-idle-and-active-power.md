@@ -2,7 +2,6 @@
 title: GPU power management of idle states and active power
 description: A GPU power management infrastructure that lets Windows Display Driver Model (WDDM) 1.2 and later drivers manage power for individual devices or a set of devices.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GPU power management of idle states and active power

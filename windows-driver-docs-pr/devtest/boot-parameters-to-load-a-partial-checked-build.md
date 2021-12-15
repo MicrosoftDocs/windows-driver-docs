@@ -7,7 +7,6 @@ keywords:
 - boot entry parameters WDK
 - loading partial checked builds WDK boot options
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 #  Boot Parameters to Load a Partial Checked Build

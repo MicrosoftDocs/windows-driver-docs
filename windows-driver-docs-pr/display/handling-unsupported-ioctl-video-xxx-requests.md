@@ -8,7 +8,6 @@ keywords:
 - IOCTL_VIDEO_XXX requests WDK video miniport
 - I/O WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Unsupported IOCTL\_VIDEO\_XXX Requests

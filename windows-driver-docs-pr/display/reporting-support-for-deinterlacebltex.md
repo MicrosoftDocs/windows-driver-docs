@@ -7,7 +7,6 @@ keywords:
 - DXVA_VideoProcess_YUV2RGBExtended
 - DXVA_VideoProcess_AlphaBlendExtended
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Support for DeinterlaceBltEx

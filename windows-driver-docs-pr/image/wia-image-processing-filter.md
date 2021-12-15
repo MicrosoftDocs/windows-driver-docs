@@ -2,7 +2,6 @@
 title: WIA Image Processing Filter
 description: WIA Image Processing Filter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Image Processing Filter

@@ -1,7 +1,6 @@
 ---
 title: Get Last Backup Information (Function Index 4)
 description: This function returns information about the saved image.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

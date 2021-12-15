@@ -7,7 +7,6 @@ keywords:
 - SetupAPI logging WDK Windows Vista
 - SetupAPI logging WDK Windows Vista , about SetupAPI logging
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SetupAPI Logging

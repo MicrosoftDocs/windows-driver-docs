@@ -4,7 +4,6 @@ description: This section contains kernel mode network driver topics for the Ntd
 keywords:
 - Ntddndis.h network drivers
 ms.date: 08/08/2017
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

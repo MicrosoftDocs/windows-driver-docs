@@ -7,7 +7,6 @@ keywords:
 - vendor-supplied parallel drivers WDK , parallel device operation
 - parallel devices WDK , client operation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Operating a Parallel Device Attached to a Parallel Port

@@ -3,7 +3,6 @@ title: Using the Debugger Command Window
 description: Using the Debugger Command Window
 keywords: ["Debugger Command window", "Debugger Command window, using"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Debugger Command Window

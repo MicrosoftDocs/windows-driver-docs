@@ -2,7 +2,6 @@
 title: Thermal driver samples
 description: The thermal driver samples in this directory provide a starting point for writing a custom driver for your device.
 ms.date: 11/21/2019
-ms.localizationpriority: medium
 ---
 
 # Thermal driver samples

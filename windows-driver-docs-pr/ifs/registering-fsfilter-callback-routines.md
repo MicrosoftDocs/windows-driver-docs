@@ -6,7 +6,6 @@ keywords:
 - callback routines WDK file system
 - FsFilter notification callback routines WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering FsFilter Callback Routines

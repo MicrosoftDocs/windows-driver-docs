@@ -8,7 +8,6 @@ keywords:
 - option items WDK UI plug-in
 - customized option items WDK UI plug-in
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modifying a Driver-Supplied Property Sheet Page

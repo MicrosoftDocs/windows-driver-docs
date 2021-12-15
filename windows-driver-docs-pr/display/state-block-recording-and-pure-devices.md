@@ -7,7 +7,6 @@ keywords:
 - state block handling WDK DirectX 8.0
 - state block handling WDK DirectX 8.0 , pure devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # State Block Recording and Pure Devices

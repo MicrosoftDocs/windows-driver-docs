@@ -4,7 +4,6 @@ description: NDIS protocol drivers issue object identifier (OID) set requests of
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_FREE_QUEUE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_FREE\_QUEUE

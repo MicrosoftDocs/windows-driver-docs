@@ -9,7 +9,6 @@ api_name:
 - RemoveLockReleaseShutdown
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseShutdown rule (wdm)

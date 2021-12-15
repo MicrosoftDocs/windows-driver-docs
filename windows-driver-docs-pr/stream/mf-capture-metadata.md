@@ -2,7 +2,6 @@
 title: Capture Stats Metadata Attributes
 description: This topic discusses the available capture stats metadata IMFAttributes that should be populated or forwarded by the MFT0
 ms.date: 08/16/2019
-ms.localizationpriority: medium
 ---
 
 # Capture Stats Metadata Attributes

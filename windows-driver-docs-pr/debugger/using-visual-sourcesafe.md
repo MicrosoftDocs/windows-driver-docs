@@ -3,7 +3,6 @@ title: Using Visual SourceSafe
 description: Using Visual SourceSafe
 keywords: ["Visual SourceSafe", "source servers, Visual SourceSafe", "SrcSrv, Visual SourceSafe", "Visual SourceSafe, SrcSrv", "Visual SourceSafe, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Visual SourceSafe

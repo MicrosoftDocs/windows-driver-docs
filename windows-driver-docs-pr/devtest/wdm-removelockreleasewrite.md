@@ -9,7 +9,6 @@ api_name:
 - RemoveLockReleaseWrite
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseWrite rule (wdm)

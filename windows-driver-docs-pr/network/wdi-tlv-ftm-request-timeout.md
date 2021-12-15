@@ -4,7 +4,6 @@ description: WDI_TLV_FTM_REQUEST_TIMEOUT is a TLV that contains the maximum time
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_FTM_REQUEST_TIMEOUT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

@@ -16,7 +16,6 @@ keywords:
 - Japanese font support WDK
 - Korean font support WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting East Asian AFM Files to NTF Files

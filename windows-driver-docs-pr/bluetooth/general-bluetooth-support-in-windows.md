@@ -2,7 +2,6 @@
 title: Bluetooth version and profile support in Windows 10
 description: Provides information about Bluetooth version and profile support in Windows 10
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Version and Profile Support in Windows 10

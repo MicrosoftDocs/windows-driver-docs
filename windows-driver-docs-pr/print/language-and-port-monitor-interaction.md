@@ -7,7 +7,6 @@ keywords:
 - language monitors WDK print , port monitor interaction
 - port monitors WDK print , language monitor interaction
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Language and Port Monitor Interaction

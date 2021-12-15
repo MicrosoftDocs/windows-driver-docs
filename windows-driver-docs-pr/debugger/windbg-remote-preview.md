@@ -2,7 +2,6 @@
 title: WinDbg Preview - Remote, Process Server and Dump file Sessions
 description: This section describes how to start a remote, process server and dump file session with the WinDbg preview debugger.
 ms.date: 01/10/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Start a remote, process server and dump file session

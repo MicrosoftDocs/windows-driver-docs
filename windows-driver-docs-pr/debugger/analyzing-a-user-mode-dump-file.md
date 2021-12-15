@@ -3,7 +3,6 @@ title: Analyzing a User-Mode Dump File
 description: Analyzing a User-Mode Dump File
 keywords: ["dump file, analyzing a user-mode dump file"]
 ms.date: 08/01/2018
-ms.localizationpriority: medium
 ---
 
 # Analyzing a User-Mode Dump File

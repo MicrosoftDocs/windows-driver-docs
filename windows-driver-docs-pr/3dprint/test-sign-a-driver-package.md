@@ -2,7 +2,6 @@
 title: Test-sign a driver package
 description: This section describes how to test-sign a driver package.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Test-sign a driver package

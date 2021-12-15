@@ -11,7 +11,6 @@ keywords:
 - SimpleIO wizard WDK WDTF
 - action interfaces WDK WDTF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extending the Framework

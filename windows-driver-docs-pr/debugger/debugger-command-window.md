@@ -3,7 +3,6 @@ title: Entering Debugger Commands in WinDbg
 description: Entering Debugger Commands in WinDbg using the Debugger Command window 
 keywords: debugging information windows, command window, WinDbg
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Entering Debugger Commands in WinDbg

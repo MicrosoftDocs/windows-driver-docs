@@ -8,7 +8,6 @@ keywords:
 - filtering WDK Unidrv
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customized Data Stream Filtering

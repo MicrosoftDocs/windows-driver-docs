@@ -2,7 +2,6 @@
 title: Audio Drivers Property Sets
 description: Audio Drivers Property Sets
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Drivers Property Sets

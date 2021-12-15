@@ -2,8 +2,7 @@
 title: Attestation signing a kernel driver for public release
 description: This topic describes how to sign a driver using attestation signing.
 ms.topic: article
-ms.date: 12/09/2021
-ms.localizationpriority: medium
+ms.date: 12/15/2021
 ---
 
 # Attestation signing a kernel driver for public release

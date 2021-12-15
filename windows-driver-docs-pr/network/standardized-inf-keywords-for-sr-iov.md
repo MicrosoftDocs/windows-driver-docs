@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for SR-IOV
 description: Standardized INF Keywords for SR-IOV
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for SR-IOV

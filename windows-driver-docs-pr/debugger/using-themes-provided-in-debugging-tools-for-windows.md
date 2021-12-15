@@ -3,7 +3,6 @@ title: Using Themes Provided in Debugging Tools for Windows
 description: Using Themes Provided in Debugging Tools for Windows
 keywords: ["themes, provided"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Themes Provided in Debugging Tools for Windows

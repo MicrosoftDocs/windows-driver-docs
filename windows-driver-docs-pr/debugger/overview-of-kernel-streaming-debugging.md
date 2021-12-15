@@ -3,7 +3,6 @@ title: Overview of Kernel Streaming Debugging
 description: Overview of Kernel Streaming Debugging
 keywords: ["kernel streaming debugging", "kernel streaming debugging, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Kernel Streaming Debugging

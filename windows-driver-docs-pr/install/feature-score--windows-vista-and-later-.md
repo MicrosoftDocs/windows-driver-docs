@@ -4,7 +4,6 @@ description: Feature Score
 keywords:
 - feature score WDK device installations
 ms.date: 12/03/2021
-ms.localizationpriority: medium
 ---
 
 # Feature Score

@@ -1,7 +1,6 @@
 ---
 title: Improving System Startup Performance
 description: Improving System Startup Performance
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -9,7 +9,6 @@ keywords:
 - printer attributes WDK Unidrv , about printer attributes
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Attributes

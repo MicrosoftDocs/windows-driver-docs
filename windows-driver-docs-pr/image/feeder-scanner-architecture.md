@@ -2,7 +2,6 @@
 title: Feeder Scanner Architecture
 description: Feeder Scanner Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Feeder Scanner Architecture

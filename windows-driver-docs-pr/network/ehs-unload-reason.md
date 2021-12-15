@@ -4,7 +4,6 @@ description: The eHS_UNLOAD_REASON enumeration indicates the reason for the plug
 keywords: 
 - eHS_UNLOAD_REASON enumeration Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # eHS\_UNLOAD\_REASON enumeration

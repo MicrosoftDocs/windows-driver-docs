@@ -4,7 +4,6 @@ description: Overlying drivers issue OID query requests of OID_RECEIVE_FILTER_HA
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_HARDWARE\_CAPABILITIES

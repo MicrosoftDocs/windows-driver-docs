@@ -9,7 +9,6 @@ api_name:
 - ks.pciks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.pciks

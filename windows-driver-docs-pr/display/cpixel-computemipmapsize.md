@@ -11,7 +11,6 @@ api_location:
 api_type:
 - COM
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # CPixel::ComputeMipMapSize method

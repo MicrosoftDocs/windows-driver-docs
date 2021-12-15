@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
 description: MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

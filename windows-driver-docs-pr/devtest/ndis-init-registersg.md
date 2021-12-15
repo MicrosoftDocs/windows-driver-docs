@@ -9,7 +9,6 @@ api_name:
 - Init_RegisterSG
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Init\_RegisterSG rule (ndis)

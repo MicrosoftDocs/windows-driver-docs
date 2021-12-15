@@ -2,7 +2,6 @@
 description: Supported Format-Property Retrieval
 title: Supported Format-Property Retrieval
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supported Format-Property Retrieval

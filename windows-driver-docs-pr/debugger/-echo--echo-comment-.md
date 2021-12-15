@@ -9,7 +9,6 @@ api_name:
 - .echo (Echo Comment)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .echo (Echo Comment)

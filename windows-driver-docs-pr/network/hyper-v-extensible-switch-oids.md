@@ -3,7 +3,6 @@ title: Hyper-V Extensible Switch OIDs
 description: This section describes Hyper-V Extensible Switch OIDs and their characteristics.
 keywords: ["Hyper-V Extensible Switch OIDs", "Hyper-V Switch OIDs", "WDK Hyper-V Extensible Switch OIDs", "Hyper-V Extensible Switch object identifiers"]
 ms.date: 04/24/2017
-ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch OIDs

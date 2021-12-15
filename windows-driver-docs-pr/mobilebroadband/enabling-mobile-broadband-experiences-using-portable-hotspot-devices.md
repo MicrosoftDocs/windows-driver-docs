@@ -2,7 +2,6 @@
 title: Introduction to enabling MB experiences using portable hotspot devices
 description: Introduction to enabling mobile broadband (MB) experiences using portable hotspot devices
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to enabling mobile broadband (MB) experiences using portable hotspot devices

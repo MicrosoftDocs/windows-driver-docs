@@ -3,7 +3,6 @@ title: Access Rights
 description: Access Rights
 keywords: ["access rights WDK objects", "generic access rights WDK objects", "standard access rights WDK objects", "specific access rights WDK objects", "object access rights WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Access Rights

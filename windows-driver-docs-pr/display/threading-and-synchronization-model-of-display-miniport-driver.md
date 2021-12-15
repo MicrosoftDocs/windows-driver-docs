@@ -7,7 +7,6 @@ keywords:
 - miniport drivers WDK display , synchronization
 - miniport drivers WDK display , threading
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

@@ -6,7 +6,6 @@ keywords:
 - warnings WDK PREfast for Drivers
 - errors WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Analysis for Drivers Warnings

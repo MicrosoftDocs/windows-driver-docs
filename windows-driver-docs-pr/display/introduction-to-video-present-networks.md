@@ -17,7 +17,6 @@ keywords:
 - codecs WDK video present network
 - CRTC WDK video present network
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Video Present Networks

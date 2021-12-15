@@ -2,7 +2,6 @@
 title: Deleting an Item from the Driver Tree
 description: Deleting an Item from the Driver Tree
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deleting an Item from the Driver Tree

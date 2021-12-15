@@ -4,7 +4,6 @@ description: Code integrity checks for Driver Verifier
 keywords:
 - Code integrity checks for Driver Verifier
 ms.date: 09/14/2017 
-ms.localizationpriority: medium
 ---
 
 # Code integrity checking

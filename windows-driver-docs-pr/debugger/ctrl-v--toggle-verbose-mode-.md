@@ -9,7 +9,6 @@ api_name:
 - CTRL+V (Toggle Verbose Mode)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+V (Toggle Verbose Mode)

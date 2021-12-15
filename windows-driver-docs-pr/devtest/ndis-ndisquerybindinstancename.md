@@ -9,7 +9,6 @@ api_name:
 - NdisQueryBindInstanceName
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisQueryBindInstanceName rule (ndis)

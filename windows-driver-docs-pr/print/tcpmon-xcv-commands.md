@@ -17,7 +17,6 @@ keywords:
 - SNMPDeviceIndex
 - SNMPEnabled
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TCPMON Xcv Commands

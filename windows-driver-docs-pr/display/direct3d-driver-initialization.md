@@ -7,7 +7,6 @@ keywords:
 - DrvGetDirectDrawInfo
 - DdGetDriverInfo
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D Driver Initialization

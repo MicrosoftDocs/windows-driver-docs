@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x16B: CLUSTER\_CSV\_CLUSTER\_WATCHDOG\_LIVEDUMP

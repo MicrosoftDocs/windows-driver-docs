@@ -3,7 +3,6 @@ title: Understanding TPS Components
 description: Understanding TPS Components
 keywords: ["transaction processing systems WDK KTM , components", "TPS WDK KTM , components", "transaction processing systems WDK KTM , scenarios", "TPS WDK KTM , scenarios", "resource managers WDK KTM , in a TPS"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Understanding TPS Components

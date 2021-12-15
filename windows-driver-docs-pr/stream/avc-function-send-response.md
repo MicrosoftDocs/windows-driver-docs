@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/27/2021
-ms.localizationpriority: medium
 ---
 
 # AVC_FUNCTION_SEND_RESPONSE

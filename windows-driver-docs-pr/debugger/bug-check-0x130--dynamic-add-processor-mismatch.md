@@ -9,7 +9,6 @@ api_name:
 - DYNAMIC_ADD_PROCESSOR_MISMATCH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x130: DYNAMIC\_ADD\_PROCESSOR\_MISMATCH

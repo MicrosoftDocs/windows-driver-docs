@@ -9,7 +9,6 @@ api_name:
 - .lines (Toggle Source Line Support)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .lines (Toggle Source Line Support)

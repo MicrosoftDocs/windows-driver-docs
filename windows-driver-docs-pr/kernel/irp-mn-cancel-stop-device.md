@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_CANCEL_STOP_DEVICE' kernel-mode driver arch
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_CANCEL_STOP_DEVICE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_CANCEL\_STOP\_DEVICE

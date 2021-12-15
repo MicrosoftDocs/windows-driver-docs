@@ -9,7 +9,6 @@ api_name:
 - ls, lsa (List Source Lines)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ls, lsa (List Source Lines)

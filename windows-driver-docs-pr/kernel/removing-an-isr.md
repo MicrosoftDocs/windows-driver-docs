@@ -3,7 +3,6 @@ title: Removing an ISR
 description: Removing an ISR
 keywords: ["interrupt service routines WDK kernel , removing ISRs", "interrupt objects WDK kernel , removing ISRs", "ISRs WDK kernel , removing ISRs", "removing ISRs WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Removing an ISR

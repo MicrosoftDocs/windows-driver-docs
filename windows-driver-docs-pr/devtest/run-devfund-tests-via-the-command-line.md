@@ -5,7 +5,6 @@ keywords:
 - DevFund tests
 - command line
 ms.date: 06/29/2018
-ms.localizationpriority: medium
 ---
 
 # How to run the DevFund Tests via the command-line

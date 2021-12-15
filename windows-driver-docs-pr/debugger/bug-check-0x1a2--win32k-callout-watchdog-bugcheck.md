@@ -9,7 +9,6 @@ api_name:
 - WIN32K_CALLOUT_WATCHDOG_BUGCHECK
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A2: WIN32K\_CALLOUT\_WATCHDOG\_BUGCHECK

@@ -3,7 +3,6 @@ title: USBView in Windows
 description: USBView
 keywords: ["USBView"]
 ms.date: 08/06/2021
-ms.localizationpriority: high 
 ---
 
 # USBView

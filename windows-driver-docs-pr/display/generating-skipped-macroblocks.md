@@ -5,7 +5,6 @@ keywords:
 - macroblocks WDK DirectX VA , skipped macroblocks
 - skipped macroblocks WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Generating Skipped Macroblocks

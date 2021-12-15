@@ -4,7 +4,6 @@ description: WiFiCx does not use the WDI_TLV_NETWORK_OFFLOAD_CHANNELS TLV.
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_NETWORK_OFFLOAD_CHANNELS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS (dot11wificxtypes.hpp)

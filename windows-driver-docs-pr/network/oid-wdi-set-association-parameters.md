@@ -4,7 +4,6 @@ description: OID_WDI_SET_ASSOCIATION_PARAMETERS specifies parameters that the ad
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

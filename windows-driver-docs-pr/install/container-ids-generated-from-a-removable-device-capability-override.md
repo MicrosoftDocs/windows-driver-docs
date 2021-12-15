@@ -2,7 +2,6 @@
 title: Container IDs Generated from Removable Device Capability Override
 description: Container IDs Generated from a Removable Device Capability Override
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Container IDs Generated from a Removable Device Capability Override

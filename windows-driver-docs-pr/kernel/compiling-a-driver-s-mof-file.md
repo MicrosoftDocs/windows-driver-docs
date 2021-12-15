@@ -3,7 +3,6 @@ title: Compiling a Driver's MOF File
 description: Compiling a Driver's MOF File
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "compiling MOF files"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Compiling a Driver's MOF File

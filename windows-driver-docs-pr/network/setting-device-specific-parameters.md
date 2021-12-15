@@ -2,7 +2,6 @@
 title: Setting Device-Specific Parameters
 description: Setting Device-Specific Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Device-Specific Parameters

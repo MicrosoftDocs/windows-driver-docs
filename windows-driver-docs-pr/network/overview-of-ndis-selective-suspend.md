@@ -2,7 +2,6 @@
 title: Overview of NDIS Selective Suspend
 description: Overview of NDIS Selective Suspend
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of NDIS Selective Suspend

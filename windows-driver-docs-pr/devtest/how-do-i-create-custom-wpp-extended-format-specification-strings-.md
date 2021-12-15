@@ -2,7 +2,6 @@
 title: How do I create custom WPP extended format specification strings
 description: How do I create custom WPP extended format specification strings
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I create custom WPP extended format specification strings?

@@ -7,7 +7,6 @@ keywords:
 - PnP WDK storage
 - Plug and Play WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling PnP Start in a Storage Class Driver

@@ -9,7 +9,6 @@ api_name:
 - SpinlockRelease
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpinlockRelease rule (wdm)

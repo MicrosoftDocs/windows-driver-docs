@@ -3,7 +3,6 @@ title: Manage driver distribution with shipping labels
 description: After you have created your hardware submissions and uploaded your driver packages, you can create shipping labels to distribute your drivers.
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Manage driver distribution with shipping labels

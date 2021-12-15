@@ -9,7 +9,6 @@ api_name:
 - INVALID_RUNDOWN_PROTECTION_FLAGS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x16C: INVALID\_RUNDOWN\_PROTECTION\_FLAGS

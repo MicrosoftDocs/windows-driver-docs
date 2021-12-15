@@ -8,7 +8,6 @@ keywords:
 - NDIS_INTERRUPT_MODERATION_PARAMETERS
 - interrupts WDK networking , moderation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interrupt Moderation

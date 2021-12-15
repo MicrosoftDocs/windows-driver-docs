@@ -2,7 +2,6 @@
 title: Properties and Data Management
 description: Properties and Data Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Properties and Data Management

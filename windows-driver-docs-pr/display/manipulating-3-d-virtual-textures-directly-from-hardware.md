@@ -8,7 +8,6 @@ keywords:
 - manipulating 3-D textures directly WDK display
 - hardware 3-D texture manipulation WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Manipulating 3-D Virtual Textures Directly from Hardware

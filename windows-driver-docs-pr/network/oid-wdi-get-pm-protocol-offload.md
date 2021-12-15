@@ -4,7 +4,6 @@ description: OID_WDI_GET_PM_PROTOCOL_OFFLOAD requests a list of protocol offload
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_PM_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD

@@ -2,7 +2,6 @@
 title: Properties and Related System-Defined Items
 description: Properties and Related System-Defined Items
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Properties and Related System-Defined Items

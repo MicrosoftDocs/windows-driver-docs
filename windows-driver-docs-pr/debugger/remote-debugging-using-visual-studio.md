@@ -2,7 +2,6 @@
 title: Remote Debugging Using Visual Studio
 description: The procedure covers Remote Debugging Using Visual Studio.
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # Remote Debugging Using Visual Studio

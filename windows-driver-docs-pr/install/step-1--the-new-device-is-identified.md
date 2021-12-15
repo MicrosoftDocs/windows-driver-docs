@@ -2,7 +2,6 @@
 title: Step 1 The New Device is Identified
 description: Step 1 The New Device is Identified
 ms.date: 11/18/2021
-ms.localizationpriority: High
 ---
 
 # Step 1: The New Device is Identified

@@ -2,7 +2,6 @@
 title: Camera class INF file setting for camera drivers
 description: Describes how to add the camera class setting to a Universal camera driver INF file.
 ms.date: 01/30/2018
-ms.localizationpriority: medium
 ---
 
 # Camera class INF file setting for Universal camera drivers

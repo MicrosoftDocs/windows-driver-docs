@@ -9,7 +9,6 @@ api_name:
 - .dvalloc (Allocate Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .dvalloc (Allocate Memory)

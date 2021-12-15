@@ -4,7 +4,6 @@ description: WDI_TLV_CONNECT_BSS_ENTRY is a TLV that contains a list of candidat
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CONNECT_BSS_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CONNECT\_BSS\_ENTRY

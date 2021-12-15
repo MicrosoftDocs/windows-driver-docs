@@ -9,7 +9,6 @@ api_name:
 - driveinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !driveinfo

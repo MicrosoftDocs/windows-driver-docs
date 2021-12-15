@@ -7,7 +7,6 @@ keywords:
 - intermediate drivers WDK networking , vs filter drivers
 - NDIS intermediate drivers WDK , vs filter drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Faster filter drivers

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 07/07/2020
-ms.localizationpriority: medium
 ---
 
 # KSEVENT\_VOLUMELIMIT\_CHANGED (stream)

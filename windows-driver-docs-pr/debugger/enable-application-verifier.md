@@ -3,7 +3,6 @@ title: Enable application verifier
 description: Enable application verifier
 keywords: ["Enable application verifier (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable application verifier

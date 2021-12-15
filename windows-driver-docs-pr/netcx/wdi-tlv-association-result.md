@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_RESULT is a WiFiCx TLV that contains the result
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_ASSOCIATION_RESULT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_RESULT (dot11wificxtypes.hpp)

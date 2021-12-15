@@ -9,7 +9,6 @@ api_name:
 - rcdrkd.rcdrtraceprtdebug
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrtraceprtdebug

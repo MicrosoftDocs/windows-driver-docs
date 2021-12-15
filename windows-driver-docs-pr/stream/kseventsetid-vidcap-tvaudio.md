@@ -2,7 +2,6 @@
 title: KSEVENTSETID_VIDCAP_TVAUDIO
 description: The KSEVENTSETID_VIDCAP_TVAUDIO event set notifies clients when a TV audio change event occurs.
 ms.date: 10/12/2021
-ms.localizationpriority: medium
 ---
 
 # KSEVENTSETID_VIDCAP_TVAUDIO

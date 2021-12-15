@@ -2,7 +2,6 @@
 title: Installing a New Bus Driver
 description: Installing a New Bus Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a New Bus Driver

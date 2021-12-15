@@ -9,7 +9,6 @@ api_name:
 - bp, bu, bm (Set Breakpoint)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # bp, bu, bm (Set Breakpoint)

@@ -10,7 +10,6 @@ keywords:
 - miniport adapters WDK networking , WMI
 - adapters WD
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registration and Deregistration of NDIS Miniport Drivers with WMI

@@ -2,7 +2,6 @@
 title: WDI datapath operation sequence diagrams
 description: This section shows diagrams illustrating WDI datapath operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI datapath operation sequence diagrams

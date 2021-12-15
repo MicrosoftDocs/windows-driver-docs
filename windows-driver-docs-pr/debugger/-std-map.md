@@ -9,7 +9,6 @@ api_name:
 - std_map
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !std\_map

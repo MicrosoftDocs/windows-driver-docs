@@ -3,7 +3,6 @@ title: Deferred Symbol Loading
 description: Deferred Symbol Loading
 keywords: ["deferred symbol loading", "symbols, deferred symbol loading", "lazy symbol loading", "symbols, lazy symbol loading"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Deferred Symbol Loading

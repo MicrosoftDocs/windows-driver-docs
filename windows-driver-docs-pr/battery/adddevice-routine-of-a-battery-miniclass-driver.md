@@ -5,7 +5,6 @@ keywords:
 - AddDevice routine WDK battery
 - battery miniclass drivers WDK , routines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AddDevice Routine of a Battery Miniclass Driver

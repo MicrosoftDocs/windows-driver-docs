@@ -2,7 +2,6 @@
 title: USB 3.0 Extensions
 description: This section describes the USB 3.0 debugger extension commands.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # USB 3.0 Extensions

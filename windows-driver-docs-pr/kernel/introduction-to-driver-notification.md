@@ -3,7 +3,6 @@ title: Introduction to Driver Notification
 description: Introduction to Driver Notification
 keywords: ["driver notification WDK dynamic hardware partitioning , synchronous", "driver notification WDK dynamic hardware partitioning , asynchronous", "driver notification WDK dynamic hardware partitioning , memory notification"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Driver Notification

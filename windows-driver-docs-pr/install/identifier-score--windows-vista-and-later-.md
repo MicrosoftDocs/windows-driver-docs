@@ -7,7 +7,6 @@ keywords:
 - identifier-match-type score WDK device installations
 - identifier-list-position score WDK device installations
 ms.date: 12/03/2021
-ms.localizationpriority: medium
 ---
 
 # Identifier Score

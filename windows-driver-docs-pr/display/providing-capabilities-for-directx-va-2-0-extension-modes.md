@@ -6,7 +6,6 @@ keywords:
 - Video Acceleration WDK DirectX , extended support
 - VA WDK DirectX , extended support
 ms.date: 10/22/2021
-ms.localizationpriority: medium
 ---
 
 # Providing capabilities for DirectX VA 2.0 extension modes

@@ -2,7 +2,6 @@
 title: Updated feature score directive in Windows 8
 description: The updated feature score directive is a general installation setting that's required for all Windows 8 drivers that follow the Windows Display Driver Model (WDDM).
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Updated feature score directive in Windows 8

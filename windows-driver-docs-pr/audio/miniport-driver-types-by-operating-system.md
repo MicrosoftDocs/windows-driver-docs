@@ -2,7 +2,6 @@
 title: Miniport Driver Types by Operating System
 description: Miniport Driver Types by Operating System
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Driver Types by Operating System

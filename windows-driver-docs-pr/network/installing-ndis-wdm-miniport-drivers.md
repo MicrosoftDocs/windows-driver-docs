@@ -6,7 +6,6 @@ keywords:
 - lower edge of NDIS miniport drivers WDK networking , driver installations
 - WDM lower edge WDK networking , driver installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing NDIS-WDM Miniport Drivers

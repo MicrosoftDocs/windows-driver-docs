@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x171: CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG

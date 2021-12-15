@@ -3,7 +3,6 @@ title: Edit Go to Address
 description: Edit Go to Address
 keywords: ["Edit Go to Address"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Go to Address

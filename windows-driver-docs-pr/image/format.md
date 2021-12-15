@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 09/27/2021
-ms.localizationpriority: medium
 ---
 
 # Format element

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/24/2019
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT

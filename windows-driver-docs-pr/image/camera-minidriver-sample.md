@@ -2,7 +2,6 @@
 title: Camera Minidriver Sample
 description: Camera Minidriver Sample
 ms.date: 05/29/2020
-ms.localizationpriority: medium
 ---
 
 # Camera Minidriver Sample

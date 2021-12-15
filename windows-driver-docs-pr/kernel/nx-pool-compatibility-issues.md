@@ -1,7 +1,6 @@
 ---
 title: NX Pool Compatibility Issues
 description: When you use the NX nonpaged pool in driver binaries for Windows 8, you will find compatibility issues if you run these binaries on earlier versions of Windows.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -9,7 +9,6 @@ api_name:
 - INSUFFICIENT_SYSTEM_MAP_REGS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x45: INSUFFICIENT\_SYSTEM\_MAP\_REGS

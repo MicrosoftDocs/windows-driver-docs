@@ -2,7 +2,6 @@
 title: Determine if a device is PIN-locked
 description: Determine if a device is PIN-locked
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determine if a device is PIN-locked

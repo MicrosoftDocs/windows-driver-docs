@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT is a WiFiCx TLV that con
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_REQUEST\_DEVICE\_CONTEXT (dot11wificxtypes.hpp)

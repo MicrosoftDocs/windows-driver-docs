@@ -4,7 +4,6 @@ description: The OID_WDI_GET_STATISTICS command requests that the IHV component 
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_GET_STATISTICS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_STATISTICS (dot11wificxintf.h)

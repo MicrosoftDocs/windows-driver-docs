@@ -4,7 +4,6 @@ description: Gradual rollout ensures the best driver experience for each system 
 ms.author: webreidi
 ms.topic: article
 ms.date: 03/01/2020
-ms.localizationpriority: medium
 ---
 
 # Gradual rollout

@@ -7,7 +7,6 @@ keywords:
 - address families WDK networking
 - AFs WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Address Families

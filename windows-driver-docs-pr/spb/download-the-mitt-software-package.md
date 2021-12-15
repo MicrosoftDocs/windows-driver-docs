@@ -1,8 +1,7 @@
-﻿---
+---
 title: Download the MITT software package
 description: Download the MITT software package.
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # Download the MITT software package

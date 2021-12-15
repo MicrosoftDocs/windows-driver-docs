@@ -10,7 +10,6 @@ keywords:
 - AC-3 WDK audio
 - Sony/Philips digital interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # S/PDIF Pass-Through Transmission of Non-PCM Streams

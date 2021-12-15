@@ -4,7 +4,6 @@ description: OID_WWAN_DEVICE_SERVICE_SESSION directs a miniport driver to open o
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_SERVICE_SESSION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DEVICE\_SERVICE\_SESSION

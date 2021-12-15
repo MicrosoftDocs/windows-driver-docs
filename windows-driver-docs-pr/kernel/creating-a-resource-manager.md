@@ -3,7 +3,6 @@ title: Creating a Resource Manager
 description: Creating a Resource Manager
 keywords: ["resource managers WDK KTM , creating resource managers", "enlistments WDK KTM , read-only enlistments", "read-only enlistments WDK KTM", "resource managers WDK KTM , volatile resource managers", "volatile resource managers WDK KTM", "resource managers WDK KTM , adding to a TPS", "transaction processing systems WDK KTM , adding resource managers", "TPS WDK KTM , adding resource managers"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Resource Manager

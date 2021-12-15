@@ -2,7 +2,6 @@
 title: How Container IDs are Generated
 description: How Container IDs are Generated
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How Container IDs are Generated

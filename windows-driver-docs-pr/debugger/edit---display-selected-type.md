@@ -3,7 +3,6 @@ title: Edit Display Selected Type
 description: Edit Display Selected Type
 keywords: ["Edit Display Selected Type", "data types, Edit Display Selected Type"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Display Selected Type

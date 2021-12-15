@@ -9,7 +9,6 @@ api_name:
 - ks.pchelp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.pchelp

@@ -9,7 +9,6 @@ api_name:
 - .reload (Reload Module)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .reload (Reload Module)

@@ -8,7 +8,6 @@ keywords:
 - load errors WDK driver signing
 - status information WDK driver signing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Detecting Driver Load Errors

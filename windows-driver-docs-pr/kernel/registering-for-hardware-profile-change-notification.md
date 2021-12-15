@@ -3,7 +3,6 @@ title: Registering for Hardware Profile Change Notification
 description: Registering for Hardware Profile Change Notification
 keywords: ["notifications WDK PnP , hardware profile changes", "hardware profile change notifications WDK PnP", "EventCategoryHardwareProfileChange notification", "profile change notifications WDK PnP", "registering hardware profile change notifications", "machine hardware profile change notifications WDK PnP", "IoRegisterPlugPlayNotification"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering for Hardware Profile Change Notification

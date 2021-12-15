@@ -9,7 +9,6 @@ api_name:
 - Init_RegisterInterrupt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Init\_RegisterInterrupt rule (ndis)

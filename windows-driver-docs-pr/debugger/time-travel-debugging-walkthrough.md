@@ -2,7 +2,6 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.date: 01/23/2020
-ms.localizationpriority: medium
 ---
 
 # Time Travel Debugging - Sample App Walkthrough

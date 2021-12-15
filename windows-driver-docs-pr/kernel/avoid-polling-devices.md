@@ -3,7 +3,6 @@ title: Avoid Polling Devices
 description: Avoid Polling Devices
 keywords: ["I/O WDK kernel , device polling", "device polling WDK I/O", "polling devices WDK I/O", "loop counters WDK I/O", "counters WDK I/O"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Avoid Polling Devices

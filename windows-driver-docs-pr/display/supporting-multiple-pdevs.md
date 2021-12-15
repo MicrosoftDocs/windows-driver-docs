@@ -7,7 +7,6 @@ keywords:
 - multiple PDEVs WDK Windows 2000 display
 - PDEV WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Multiple PDEVs

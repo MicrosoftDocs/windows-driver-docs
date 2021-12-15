@@ -2,7 +2,6 @@
 title: DuplexUnit
 description: Describes the value entries of the duplex print unit on the device.
 ms.date: 08/31/2021
-ms.localizationpriority: medium
 ---
 
 # DuplexUnit

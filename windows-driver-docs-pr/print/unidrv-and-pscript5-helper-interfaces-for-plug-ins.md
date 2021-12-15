@@ -7,7 +7,6 @@ keywords:
 - IPrintCoreHelper
 - helper interfaces WDK printer interface DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv and Pscript5 Helper Interfaces for Plug-ins

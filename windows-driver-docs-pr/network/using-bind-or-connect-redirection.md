@@ -2,7 +2,6 @@
 title: Using Bind or Connect Redirection
 description: Using Bind or Connect Redirection
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Bind or Connect Redirection

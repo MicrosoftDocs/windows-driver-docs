@@ -2,7 +2,6 @@
 title: Out-of-Process COM Objects for WIA Drivers
 description: Out-of-Process COM Objects for WIA Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Out-of-Process COM Objects for WIA Drivers

@@ -6,7 +6,6 @@ keywords:
 - network notify objects WDK , change processing
 - changes to network configuration WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Evaluating Changes to Network Configuration

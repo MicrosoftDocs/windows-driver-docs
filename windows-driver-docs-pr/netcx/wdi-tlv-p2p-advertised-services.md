@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_ADVERTISED_SERVICES is a WiFiCx TLV that contains a lis
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_ADVERTISED_SERVICES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_ADVERTISED\_SERVICES (dot11wificxtypes.hpp)

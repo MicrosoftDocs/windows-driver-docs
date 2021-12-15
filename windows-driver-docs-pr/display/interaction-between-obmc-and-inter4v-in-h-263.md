@@ -4,7 +4,6 @@ description: Interaction Between OBMC and INTER4V in H.263
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interaction Between OBMC and INTER4V in H.263

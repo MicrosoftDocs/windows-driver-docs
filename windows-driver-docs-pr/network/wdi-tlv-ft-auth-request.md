@@ -4,7 +4,6 @@ description: WDI_TLV_FT_AUTH_REQUEST is a TLV that contains the Fast Transition 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_AUTH_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_AUTH\_REQUEST

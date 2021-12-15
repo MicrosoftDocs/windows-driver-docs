@@ -3,7 +3,6 @@ title: Using Script Files
 description: Using Script Files
 keywords: ["script file", "script file, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Script Files

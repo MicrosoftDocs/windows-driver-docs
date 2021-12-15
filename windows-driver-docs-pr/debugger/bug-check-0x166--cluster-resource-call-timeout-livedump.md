@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x166: CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP

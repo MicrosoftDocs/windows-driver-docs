@@ -5,7 +5,6 @@ keywords:
 - vertex shader declarations WDK DirectX 9.0 , separating declarations and code
 - shader declarations WDK DirectX 9.0 , separating declarations and code
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Separating Declarations and Code for Vertex Shaders

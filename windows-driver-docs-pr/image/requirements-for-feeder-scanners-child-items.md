@@ -2,7 +2,6 @@
 title: Requirements for Feeder Scanners Child Items
 description: Requirements for Feeder Scanners Child Items
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requirements for Feeder Scanners Child Items

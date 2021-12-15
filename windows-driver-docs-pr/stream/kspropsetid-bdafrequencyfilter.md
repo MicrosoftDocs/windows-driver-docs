@@ -2,7 +2,6 @@
 title: KSPROPSETID\_BdaFrequencyFilter
 description: KSPROPSETID\_BdaFrequencyFilter
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BdaFrequencyFilter

@@ -9,7 +9,6 @@ api_name:
 - list
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !list

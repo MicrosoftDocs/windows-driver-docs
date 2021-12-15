@@ -2,7 +2,6 @@
 title: Can I see trace messages as they are generated
 description: Can I see trace messages as they are generated
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Can I see trace messages as they are generated?

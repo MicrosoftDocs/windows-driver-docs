@@ -4,7 +4,6 @@ description: WLAN Device Driver Interface (WDI) is the new WLAN Universal Window
 keywords:
 - wi-fi drivers, wi-fi drivers Windows 10, wireless drivers, wireless drivers windows 10, wlan drivers, wlan drivers windows 10, wlan driver interface, WDI drivers, WDI network drivers, WDI Windows 10
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI Miniport Driver Design Guide

@@ -6,7 +6,6 @@ keywords:
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # D3dCreateSurfaceEx and MIP Maps

@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_INFO is a TLV that contains Wi-F
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_GO\_NEGOTIATION\_REQUEST\_INFO

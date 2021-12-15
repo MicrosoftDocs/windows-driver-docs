@@ -3,7 +3,6 @@ title: Window Open Dock
 description: Window Open Dock
 keywords: ["Window Open Dock", "docking windows, Window Open Dock"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Window | Open Dock

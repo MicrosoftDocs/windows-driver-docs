@@ -9,7 +9,6 @@ api_name:
 - IrqlExAllocatePool
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlExAllocatePool rule (wdm)

@@ -7,7 +7,6 @@ keywords:
 - command ordering WDK PCL XL
 - writing PCL XL GPD files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing a PCL XL GPD File

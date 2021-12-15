@@ -2,7 +2,6 @@
 title: Creating a log file for the code analysis tool
 description: The Windows Server 2012 Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a log file for the code analysis tool

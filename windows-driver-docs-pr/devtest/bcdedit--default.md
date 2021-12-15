@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /default
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /default

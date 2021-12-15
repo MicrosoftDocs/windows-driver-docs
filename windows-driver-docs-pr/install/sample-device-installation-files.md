@@ -8,7 +8,6 @@ keywords:
 - files WDK device installations
 - sample files WDK device installations
 ms.date: 12/01/2021
-ms.localizationpriority: medium
 ---
 
 # Sample Device Installation Files

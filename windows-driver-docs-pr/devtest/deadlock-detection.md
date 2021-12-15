@@ -7,7 +7,6 @@ keywords:
 - locked resources WDK Driver Verifier
 - thread locks WDK Driver Verifier
 ms.date: 06/04/2020
-ms.localizationpriority: medium
 ---
 
 # Deadlock Detection

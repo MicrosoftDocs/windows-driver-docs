@@ -13,7 +13,6 @@ keywords:
 - Version section WDK file system
 - creating INF files WDK file system
 ms.date: 06/29/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q4
 ---
 

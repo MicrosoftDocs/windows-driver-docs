@@ -4,7 +4,6 @@ description: WiFiCx enables simultaneous connections to more than one STA when t
 keywords:
 - WiFiCx WDF class extension, WiFiCx, WiFi NetAdapterCx
 ms.date: 09/15/2021
-ms.localizationpriority: medium
 ---
 
 # Dual STA connectivity

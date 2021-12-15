@@ -7,7 +7,6 @@ keywords:
 - jobs WDK print , print spoolers
 - print jobs WDK , print spoolers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Spooler Architecture

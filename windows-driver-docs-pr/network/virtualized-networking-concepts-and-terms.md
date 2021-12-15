@@ -2,7 +2,6 @@
 title: Virtualized Networking Concepts and Terms
 description: Virtualized Networking Concepts and Terms
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtualized Networking Concepts and Terms

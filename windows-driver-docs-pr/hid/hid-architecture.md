@@ -6,7 +6,6 @@ keywords:
 - hidclass.sys
 - HID class driver for Windoows
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HID Architecture

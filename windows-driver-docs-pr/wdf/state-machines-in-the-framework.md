@@ -13,7 +13,6 @@ keywords:
 - status information WDK KMDF , state machines
 - power policy WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # State Machines in the Framework

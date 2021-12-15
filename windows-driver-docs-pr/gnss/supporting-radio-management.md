@@ -8,7 +8,6 @@ keywords:
 - GPS radio management
 - radio management, GPS
 ms.date: 08/25/2021
-ms.localizationpriority: medium
 ---
 
 # Supporting radio management

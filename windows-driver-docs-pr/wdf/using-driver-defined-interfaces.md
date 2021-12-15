@@ -11,7 +11,6 @@ keywords:
 - dereference functions WDK KMDF
 - no-op functions WDK KMDF
 ms.date: 07/30/2021
-ms.localizationpriority: medium
 ---
 
 # Using Driver-Defined Interfaces

@@ -6,7 +6,6 @@ keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format awareness
 - extended format awareness WDK Windows 7 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Extended Format Awareness

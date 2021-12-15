@@ -2,7 +2,6 @@
 title: IoSpy and IoAttack
 description: IoSpy and IoAttack
 ms.date: 07/10/2018
-ms.localizationpriority: medium
 ---
 
 # IoSpy and IoAttack

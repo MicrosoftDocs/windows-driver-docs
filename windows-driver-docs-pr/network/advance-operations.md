@@ -11,7 +11,6 @@ keywords:
 - freeing MDLs
 - reducing use
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Advance Operations

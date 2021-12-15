@@ -12,7 +12,6 @@ keywords:
 - UPS WDK battery
 - system battery management WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of System Battery Management

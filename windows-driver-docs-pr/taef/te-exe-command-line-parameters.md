@@ -2,7 +2,6 @@
 title: Te.exe Command Options
 description: Te.exe Command Options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Te.exe Command Options

@@ -3,7 +3,6 @@ title: KSPROPSETID\_Itd3d
 description: KSPROPSETID\_Itd3d
 keywords: ["KSPROPSETID_Itd3d"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Itd3d

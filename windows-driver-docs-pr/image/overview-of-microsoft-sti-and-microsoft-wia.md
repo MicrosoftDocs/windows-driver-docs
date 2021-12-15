@@ -2,7 +2,6 @@
 title: Overview of Microsoft STI and Microsoft WIA
 description: Overview of Microsoft STI and Microsoft WIA
 ms.date: 07/18/2018
-ms.localizationpriority: medium
 ---
 
 # Overview of Microsoft STI and Microsoft WIA

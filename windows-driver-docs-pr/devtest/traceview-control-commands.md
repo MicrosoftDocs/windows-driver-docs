@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 12/17/2018
-ms.localizationpriority: medium
 ---
 
 # TraceView Control Commands

@@ -6,7 +6,6 @@ keywords:
 - vertex blending WDK Direct3D
 - Direct3D WDK Windows 2000 display , vertex blending
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vertex Blending

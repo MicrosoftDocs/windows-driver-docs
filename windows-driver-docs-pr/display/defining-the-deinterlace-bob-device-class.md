@@ -5,7 +5,6 @@ keywords:
 - deinterlacing WDK DirectX VA , bob
 - bob deinterlacing WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining the Deinterlace Bob Device Class

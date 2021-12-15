@@ -4,7 +4,6 @@ description: OID_WWAN_ENUMERATE_DEVICE_SERVICES returns the list of device servi
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_ENUMERATE_DEVICE_SERVICES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICES

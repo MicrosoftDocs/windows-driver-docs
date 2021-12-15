@@ -6,7 +6,6 @@ keywords:
 - Windows Vista display driver model WDK , version numbers
 - version numbers WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Version Numbers for WDDM Drivers

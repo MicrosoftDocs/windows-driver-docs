@@ -5,7 +5,6 @@ keywords:
 - threading WDK display , second level
 - synchronization WDK display , second level
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Threading and Synchronization Second Level

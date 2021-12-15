@@ -9,7 +9,6 @@ api_name:
 - pnpevent
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pnpevent

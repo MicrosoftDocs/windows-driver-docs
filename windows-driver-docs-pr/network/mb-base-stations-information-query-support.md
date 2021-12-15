@@ -4,7 +4,6 @@ description: MB base stations information query support
 keywords:
 - MB base stations information query, Mobile Broadband base stations information query
 ms.date: 08/14/2017
-ms.localizationpriority: medium
 ---
 
 # MB base stations information query support

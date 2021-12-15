@@ -9,7 +9,6 @@ api_name:
 - k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)

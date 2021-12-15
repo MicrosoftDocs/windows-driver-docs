@@ -2,7 +2,6 @@
 title: MobileBroadbandInfo XML schema overview
 description: MobileBroadbandInfo XML schema overview
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # MobileBroadbandInfo XML schema overview

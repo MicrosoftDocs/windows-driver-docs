@@ -12,7 +12,6 @@ keywords:
 - DDSCAPS2
 - DD_MORESURFACECAPS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Surface Capabilities

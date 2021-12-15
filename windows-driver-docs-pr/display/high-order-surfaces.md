@@ -5,7 +5,6 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , high order surfaces
 - high order surfaces WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # High Order Surfaces

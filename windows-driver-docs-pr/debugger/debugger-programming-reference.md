@@ -2,7 +2,6 @@
 title: Debugger Programming Reference
 description: This topic describes the programming reference topics.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugger Programming Reference

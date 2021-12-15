@@ -5,7 +5,6 @@ keywords:
 - PCMCIA WDK buses , attribute memory
 - attribute memory WDK PCMCIA bus , read and write
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Read and Write Attribute Memory

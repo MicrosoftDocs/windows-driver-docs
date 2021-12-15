@@ -3,7 +3,6 @@ title: System-Wide Overview of Power Management
 description: System-Wide Overview of Power Management
 keywords: ["power management WDK kernel , about power management", "power management WDK kernel , system-wide overview", "software WDK power management", "Control Panel WDK power management", "system-wide power policy WDK kernel", "power policy WDK kernel", "conserving power WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # System-Wide Overview of Power Management

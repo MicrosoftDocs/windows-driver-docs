@@ -9,7 +9,6 @@ keywords:
 - arrays WDK BDA
 - pin controller WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the Controlling Pin of a Node

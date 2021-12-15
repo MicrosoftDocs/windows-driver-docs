@@ -12,7 +12,6 @@ keywords:
 - per-pixel texturing WDK Direct3D
 - emulation WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bump Mapping

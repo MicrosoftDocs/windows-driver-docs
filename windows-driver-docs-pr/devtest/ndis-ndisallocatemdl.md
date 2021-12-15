@@ -9,7 +9,6 @@ api_name:
 - NdisAllocateMdl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisAllocateMdl rule (ndis)

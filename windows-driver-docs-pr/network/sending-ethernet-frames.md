@@ -7,7 +7,6 @@ keywords:
 - TCP/IP transport of Ethernet frames WDK networking
 - sending Ethernet frames
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sending Ethernet Frames

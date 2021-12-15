@@ -9,7 +9,6 @@ api_name:
 - .if
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .if

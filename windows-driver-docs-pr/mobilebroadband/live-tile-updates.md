@@ -2,7 +2,6 @@
 title: Live tile updates
 description: Live tile updates
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Live tile updates

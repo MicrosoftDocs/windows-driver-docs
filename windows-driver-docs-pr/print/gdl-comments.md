@@ -7,7 +7,6 @@ keywords:
 - contexts WDK GDL , comments
 - GDL WDK , comments
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Comments

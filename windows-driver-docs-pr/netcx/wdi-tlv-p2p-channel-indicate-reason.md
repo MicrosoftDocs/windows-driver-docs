@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_CHANNEL_INDICATE_REASON is a WiFiCx TLV that contains a
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_P2P_CHANNEL_INDICATE_REASON Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON (dot11wificxtypes.hpp)

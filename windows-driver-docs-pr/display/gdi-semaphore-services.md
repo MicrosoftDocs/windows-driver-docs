@@ -7,7 +7,6 @@ keywords:
 - drawing WDK GDI , semaphore services
 - semaphore services WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Semaphore Services

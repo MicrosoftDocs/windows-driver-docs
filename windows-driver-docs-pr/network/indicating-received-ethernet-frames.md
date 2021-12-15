@@ -6,7 +6,6 @@ keywords:
 - frames WDK networking
 - TCP/IP transport of Ethernet frames WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Indicating Received Ethernet Frames

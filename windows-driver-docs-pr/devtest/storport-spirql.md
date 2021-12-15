@@ -9,7 +9,6 @@ api_name:
 - SpIrql
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpIrql rule (storport)

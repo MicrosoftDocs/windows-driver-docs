@@ -6,7 +6,6 @@ keywords:
 - DirectDraw extended surface capabilities WDK Windows 2000 display , exposing
 - extended surface capabilities WDK DirectDraw , exposing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Exposing the Extended Surface Capabilities

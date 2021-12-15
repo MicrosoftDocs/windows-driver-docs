@@ -4,7 +4,6 @@ description: WDI_TLV_UNAVAILABLE_BAND_LIST is a WiFiCx TLV that contains the lis
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_UNAVAILABLE_BAND_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_UNAVAILABLE_BAND_LIST (dot11wificxtypes.hpp)

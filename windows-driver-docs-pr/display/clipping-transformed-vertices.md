@@ -7,7 +7,6 @@ keywords:
 - clipping WDK DirectX 8.0
 - vertex clipping WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Clipping Transformed Vertices

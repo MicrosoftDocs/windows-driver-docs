@@ -10,7 +10,6 @@ keywords:
 - ranges WDK streaming minidriver
 - formats WDK streaming minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Formats and Data Ranges in Streaming Minidrivers

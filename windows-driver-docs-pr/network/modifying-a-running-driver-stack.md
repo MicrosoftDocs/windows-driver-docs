@@ -4,7 +4,6 @@ description: Modifying a Running Driver Stack
 keywords:
 - driver stacks WDK networking , modifying a running stack
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modifying a Running Driver Stack

@@ -4,7 +4,6 @@ description: WDI_TLV_PHY_TYPE is a WiFiCx TLV that contains a PHY type.
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_PHY_TYPE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_TYPE (dot11wificxtypes.hpp)

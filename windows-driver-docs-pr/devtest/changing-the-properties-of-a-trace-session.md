@@ -7,7 +7,6 @@ keywords:
 - changeable properties WDK TraceView
 - displaying trace session properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Changing the Properties of a Trace Session

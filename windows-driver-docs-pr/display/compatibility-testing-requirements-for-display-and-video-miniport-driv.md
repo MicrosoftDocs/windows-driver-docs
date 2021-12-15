@@ -9,7 +9,6 @@ keywords:
 - compatibility testing WDK Windows 2000 display
 - testing compatibility WDK Windows 2000 display
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

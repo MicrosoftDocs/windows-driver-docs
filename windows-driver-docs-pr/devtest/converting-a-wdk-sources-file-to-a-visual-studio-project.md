@@ -2,7 +2,6 @@
 title: Converting a WDK sources file to a Visual Studio project
 description: Using Nmake2msBuild to convert WDK source files to a Visual Studio project.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting a WDK sources file to a Visual Studio project

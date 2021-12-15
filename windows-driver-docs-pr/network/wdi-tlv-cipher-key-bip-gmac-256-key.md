@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY is a TLV that contains GMAC 256
 ms.date: 05/07/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_BIP\_GMAC\_256\_KEY

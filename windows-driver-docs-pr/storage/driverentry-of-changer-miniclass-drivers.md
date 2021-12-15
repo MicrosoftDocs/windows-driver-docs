@@ -10,7 +10,6 @@ api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

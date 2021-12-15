@@ -5,7 +5,6 @@ keywords:
 - DC origin WDK GDI
 - surface negotiation WDK GDI , DC origin
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DC Origin

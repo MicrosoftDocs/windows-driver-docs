@@ -9,7 +9,6 @@ api_name:
 - SECURE_FAULT_UNHANDLED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x18D: SECURE\_FAULT\_UNHANDLED

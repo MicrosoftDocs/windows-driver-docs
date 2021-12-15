@@ -16,7 +16,6 @@ keywords:
 - filtering data
 - data filtering
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Filtering data

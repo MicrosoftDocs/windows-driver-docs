@@ -9,7 +9,6 @@ keywords:
 - drawing WDK GDI , surfaces
 - surface enabling and disabling WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Support for Surfaces

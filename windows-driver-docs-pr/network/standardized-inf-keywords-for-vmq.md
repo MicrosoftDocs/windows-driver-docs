@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for VMQ
 description: Standardized INF Keywords for VMQ
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for VMQ

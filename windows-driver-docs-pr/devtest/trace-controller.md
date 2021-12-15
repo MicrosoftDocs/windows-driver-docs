@@ -5,7 +5,6 @@ keywords:
 - trace controllers WDK
 - controllers WDK software tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trace Controller

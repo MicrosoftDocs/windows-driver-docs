@@ -6,7 +6,6 @@ keywords:
 - parallel ports WDK , vendor-supplied drivers
 - vendor-supplied parallel drivers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vendor-Supplied Parallel Drivers

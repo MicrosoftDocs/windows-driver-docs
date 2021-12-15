@@ -2,7 +2,6 @@
 title: DVD Decoder Minidriver Event Sets
 description: Lists DVD decoder minidriver event sets.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # DVD Decoder Minidriver Event Sets

@@ -6,7 +6,6 @@ keywords:
 - registering device-specific co-installers
 ms.date: 10/01/2021
 ms.custom: contperf-fy22q2
-ms.localizationpriority: medium
 ---
 
 # Registering a Device-Specific Co-installer

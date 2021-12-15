@@ -7,7 +7,6 @@ keywords:
 - GUIDs WDK networking
 - Windows Management Instrumentation WDK networking , GUIDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping of GUIDs to OIDs and Miniport Driver Status

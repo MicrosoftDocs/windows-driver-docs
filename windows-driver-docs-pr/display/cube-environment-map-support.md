@@ -12,7 +12,6 @@ keywords:
 - circular maps WDK Direct3D
 - spherical maps WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cube Environment Map Support

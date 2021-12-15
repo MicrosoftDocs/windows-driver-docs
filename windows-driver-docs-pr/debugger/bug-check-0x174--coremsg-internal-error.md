@@ -9,7 +9,6 @@ api_name:
 - COREMSG_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x174: COREMSG\_INTERNAL\_ERROR

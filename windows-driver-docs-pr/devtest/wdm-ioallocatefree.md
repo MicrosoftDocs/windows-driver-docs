@@ -9,7 +9,6 @@ api_name:
 - IoAllocateFree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoAllocateFree rule

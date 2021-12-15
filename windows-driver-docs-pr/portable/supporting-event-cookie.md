@@ -2,7 +2,6 @@
 description: Supporting Event Cookies
 title: Supporting Event Cookies
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Event Cookies

@@ -3,7 +3,6 @@ title: Controlling the Target
 description: Controlling the Target
 keywords: ["controlling the target", "controlling the target, overview", "starting and stopping the target", "execution of the target"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling the Target

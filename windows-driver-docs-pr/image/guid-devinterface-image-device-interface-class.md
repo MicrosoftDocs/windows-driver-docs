@@ -2,7 +2,6 @@
 title: GUID_DEVINTERFACE_IMAGE Device Interface Class
 description: The image device interface class is defined for still image devices, including digital cameras and scanners.
 ms.date: 09/27/2021
-ms.localizationpriority: medium
 ---
 
 # GUID_DEVINTERFACE_IMAGE Device Interface Class

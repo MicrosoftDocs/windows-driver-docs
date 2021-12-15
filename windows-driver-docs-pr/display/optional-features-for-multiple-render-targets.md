@@ -6,7 +6,6 @@ keywords:
 - multiple render targets WDK DirectX 9.0 , optional features
 - simultaneous render targets WDK DirectX 9.0 , optional features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Optional Features for Multiple Render Targets

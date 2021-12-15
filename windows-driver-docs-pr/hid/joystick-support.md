@@ -10,7 +10,6 @@ keywords:
 - virtual joystick drivers WDK HID , about VJoyD
 - VJoyD WDK HID , about VJoyD
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Joystick Support Overview

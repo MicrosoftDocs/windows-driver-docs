@@ -8,7 +8,6 @@ keywords:
 - removing network components
 - notifications WDK networking , removing network components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Removing Network Components

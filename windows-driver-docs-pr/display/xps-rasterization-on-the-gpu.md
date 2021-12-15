@@ -2,7 +2,6 @@
 title: XPS rasterization on the GPU
 description: XML Paper Specification (XPS) rasterization on the GPU does not require any independent hardware vendor (IHV) code or behavioral changes in drivers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPS rasterization on the GPU

@@ -2,7 +2,6 @@
 title: Acknowledging Oplock Breaks
 description: Acknowledging Oplock Breaks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Acknowledging Oplock Breaks

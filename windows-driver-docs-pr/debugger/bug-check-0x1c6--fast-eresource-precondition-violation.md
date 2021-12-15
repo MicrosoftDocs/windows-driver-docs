@@ -9,7 +9,6 @@ api_name:
 - FAST_ERESOURCE_PRECONDITION_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1C6: FAST\_ERESOURCE\_PRECONDITION\_VIOLATION

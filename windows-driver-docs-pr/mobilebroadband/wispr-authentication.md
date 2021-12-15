@@ -2,7 +2,6 @@
 title: WISPr authentication overview
 description: WISPr authentication overview
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # WISPr authentication overview

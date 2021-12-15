@@ -4,7 +4,6 @@ description: How Windows selects a driver package for a device
 keywords:
 - driver selections WDK device installations , where Device setupsearches
 ms.date: 12/03/2021
-ms.localizationpriority: High
 ---
 
 # How Windows selects a driver package for a device

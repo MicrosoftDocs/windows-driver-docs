@@ -6,7 +6,6 @@ keywords:
 - boot parameters WDK
 - boot options WDK , boot parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Changing Boot Parameters

@@ -6,7 +6,6 @@ keywords:
 - discrete value data ranges WDK audio
 - data ranges WDK audio , discrete values
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Ranges with Discrete Values

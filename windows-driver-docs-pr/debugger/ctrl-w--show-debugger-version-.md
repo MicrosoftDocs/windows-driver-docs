@@ -9,7 +9,6 @@ api_name:
 - CTRL+W (Show Debugger Version)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+W (Show Debugger Version)

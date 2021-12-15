@@ -3,7 +3,6 @@ title: Source Control Systems
 description: Source Control Systems
 keywords: ["source control systems", "source servers, source control systems"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Source Control Systems

@@ -2,7 +2,6 @@
 title: Service metadata overview
 description: Service metadata overview
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Service metadata overview

@@ -10,7 +10,6 @@ keywords:
 - cameras WDK USBCAMD2
 - IRP_MN_QUERY_INTERFACE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Acquiring USBCAMD2 Features

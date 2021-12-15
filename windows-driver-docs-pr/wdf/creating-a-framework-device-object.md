@@ -8,7 +8,6 @@ keywords:
 - device objects WDK KMDF
 - framework objects WDK KMDF , device objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Framework Device Object

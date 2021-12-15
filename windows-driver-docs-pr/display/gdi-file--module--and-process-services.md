@@ -15,7 +15,6 @@ keywords:
 - file services WDK GDI
 - modules WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI File, Module, and Process Services

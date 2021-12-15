@@ -2,7 +2,6 @@
 title: WIA Root Item
 description: WIA Root Item
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Root Item

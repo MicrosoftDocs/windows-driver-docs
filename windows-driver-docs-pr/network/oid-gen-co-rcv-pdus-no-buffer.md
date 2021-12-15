@@ -4,7 +4,6 @@ description: This topic describes the OID_GEN_CO_RCV_PDUS_NO_BUFFER object ident
 keywords:
 - OID_GEN_CO_RCV_PDUS_NO_BUFFER
 ms.date: 11/02/2017
-ms.localizationpriority: medium
 ---
 
 # OID_GEN_CO_RCV_PDUS_NO_BUFFER

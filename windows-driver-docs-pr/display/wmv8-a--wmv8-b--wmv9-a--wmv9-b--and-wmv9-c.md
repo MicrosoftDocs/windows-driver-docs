@@ -8,7 +8,6 @@ keywords:
 - WMV9_B restricted profile WDK DirectX VA
 - WMV9_C restricted profile WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C

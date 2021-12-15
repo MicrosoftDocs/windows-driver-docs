@@ -10,7 +10,6 @@ keywords:
 - unions WDK GDL
 - GDL WDK , unions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiple Personality Template Data Types

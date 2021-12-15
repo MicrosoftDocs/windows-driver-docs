@@ -9,7 +9,6 @@ api_name:
 - gn, gN (Go with Exception Not Handled)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # gn, gN (Go with Exception Not Handled)

@@ -4,7 +4,6 @@ description: The WdfObjectAddCustomType macro associates a framework object with
 keywords:
  - WdfObjectAddCustomType macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WdfObjectAddCustomType macro

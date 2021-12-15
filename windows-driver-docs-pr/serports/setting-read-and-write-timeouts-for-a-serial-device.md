@@ -8,7 +8,6 @@ keywords:
 - read time-outs WDK serial devices
 - write time-outs WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Read and Write Timeouts for a Serial Device

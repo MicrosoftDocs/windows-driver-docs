@@ -7,7 +7,6 @@ keywords:
 - device objects WDK UMDF
 - IWDFDevice
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Device Object

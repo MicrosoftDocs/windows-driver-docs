@@ -2,7 +2,6 @@
 title: Irql rule set (KMDF)
 description: Learn about using rules (KMDF) to verify that your driver makes DDI calls at the required IRQL. In addition, learn how to select the IRQL rule set.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # Irql rule set (KMDF)

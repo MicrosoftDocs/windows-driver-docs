@@ -9,7 +9,6 @@ keywords:
 - FDOs WDK ports
 - IEEE 1284 WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Features of System-Supplied Parallel Drivers

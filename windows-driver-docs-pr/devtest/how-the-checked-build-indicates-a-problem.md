@@ -10,7 +10,6 @@ keywords:
 - messages WDK checked builds
 - errors WDK checked builds
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # How the Checked Build Indicates a Problem

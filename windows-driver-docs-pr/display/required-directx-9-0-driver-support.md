@@ -5,7 +5,6 @@ keywords:
 - required driver support WDK DirectX 9.0
 - DirectX 9.0 driver support WDK
 ms.date: 11/20/2018
-ms.localizationpriority: medium
 ---
 
 # Required DirectX 9.0 Driver Support

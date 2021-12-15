@@ -4,7 +4,6 @@ description: How to create an INF File for a legacy file system driver
 keywords:
 - INF files WDK file system , creating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating an INF file for a legacy file system filter driver

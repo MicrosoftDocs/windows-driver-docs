@@ -5,7 +5,6 @@ ms.assetid:
 keywords:
 - NetAdapterCx, Recovering mechanism, device reset, collecting diagnostics, PLDR
 ms.date: 07/02/2020
-ms.localizationpriority: medium
 ms.custom: Fe
 ---
 

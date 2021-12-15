@@ -7,7 +7,6 @@ keywords:
 - contexts WDK file system minifilter
 - contexts WDK file system minifilter , about contexts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # About minifilter contexts

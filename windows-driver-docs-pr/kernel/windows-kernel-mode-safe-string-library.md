@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Safe String Library
 description: Windows Kernel-Mode Safe String Library
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

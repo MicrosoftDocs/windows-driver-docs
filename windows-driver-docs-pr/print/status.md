@@ -2,7 +2,6 @@
 title: Status property
 description: The Status property contains information about the current state of the print device.
 ms.date: 09/08/2021
-ms.localizationpriority: medium
 ---
 
 # Status property

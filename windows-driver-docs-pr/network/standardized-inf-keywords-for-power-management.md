@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for Power Management
 description: Standardized INF Keywords for Power Management
 ms.date: 01/29/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
 

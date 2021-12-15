@@ -4,7 +4,6 @@ description: WDI_TLV_BEACON_IES is a TLV that contains beacon IEs from an associ
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BEACON_IES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BEACON\_IES

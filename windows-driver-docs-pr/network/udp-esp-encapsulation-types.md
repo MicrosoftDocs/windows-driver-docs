@@ -5,7 +5,6 @@ keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , encapsulation types and subtypes
 - encapsulation WDK UDP-ESP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UDP-ESP Encapsulation Types

@@ -2,7 +2,6 @@
 title: Matching Symbol Names
 description: Matching Symbol Names
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Matching Symbol Names

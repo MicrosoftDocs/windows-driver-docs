@@ -10,7 +10,6 @@ keywords:
 - address validation WDK file systems
 - fast I/O WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Buffer Handling

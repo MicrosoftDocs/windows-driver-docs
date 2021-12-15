@@ -8,7 +8,6 @@ keywords:
 - offline state WDK printer
 - hot-pluggable bus WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Error States

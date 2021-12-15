@@ -4,7 +4,6 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_IHV_EVENT to pass I
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_IHV_EVENT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_IHV\_EVENT

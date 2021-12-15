@@ -7,7 +7,6 @@ keywords:
 - default
 - WDK boot options
 ms.date: 04/22/2019
-ms.localizationpriority: medium
 ---
 
 # Boot Options Identifiers

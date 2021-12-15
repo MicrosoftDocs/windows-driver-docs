@@ -1,7 +1,6 @@
 ---
 title: MSFC\_EventBuffer WMI Class
 description: MSFC\_EventBuffer WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

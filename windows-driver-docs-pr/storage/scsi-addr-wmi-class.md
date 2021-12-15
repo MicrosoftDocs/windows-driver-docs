@@ -1,7 +1,6 @@
 ---
 title: SCSI\_ADDR WMI Class
 description: SCSI\_ADDR WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

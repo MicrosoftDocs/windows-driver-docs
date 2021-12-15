@@ -2,7 +2,6 @@
 title: Bluetooth user interface
 description: Describes working with the Bluetooth user interface in Windows for software developers and vendors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth User Interface

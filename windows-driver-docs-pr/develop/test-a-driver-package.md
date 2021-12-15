@@ -2,7 +2,6 @@
 title: How to test a driver package
 description: You can use Visual Studio to deploy and install a driver package on a test computer, and then verify that the driver is installed and running.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to test a driver package

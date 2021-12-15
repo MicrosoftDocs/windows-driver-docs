@@ -3,7 +3,6 @@ title: Registering and Queuing a DpcForIsr Routine
 description: Registering and Queuing a DpcForIsr Routine
 keywords: ["DpcForIsr", "registering DpcForIsr routine", "queuing DpcForIsr routine"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering and Queuing a DpcForIsr Routine

@@ -4,7 +4,6 @@ description: This topic describes the OID_CO_SIGNALING_DISABLED object identifie
 keywords:
 - OID_CO_SIGNALING_DISABLED
 ms.date: 11/03/2017
-ms.localizationpriority: medium
 ---
 
 # OID_CO_SIGNALING_DISABLED

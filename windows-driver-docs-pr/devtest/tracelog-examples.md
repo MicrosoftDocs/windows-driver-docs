@@ -7,7 +7,6 @@ keywords:
 - Tracelog WDK , commands
 - commands WDK Tracelog
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tracelog Examples

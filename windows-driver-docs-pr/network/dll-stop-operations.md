@@ -7,7 +7,6 @@ keywords:
 - stopping IHV Extensions DLL
 - Native 802.11 IHV Extensions DLL WDK , stop operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DLL Stop Operations

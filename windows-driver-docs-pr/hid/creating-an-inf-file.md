@@ -8,7 +8,6 @@ keywords:
 - INF files WDK joysticks
 - INF files WDK joysticks , creating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating an INF File

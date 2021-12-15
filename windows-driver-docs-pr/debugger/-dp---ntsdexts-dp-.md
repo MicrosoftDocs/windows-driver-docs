@@ -9,7 +9,6 @@ api_name:
 - dp ( ntsdexts.dp)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dp (!ntsdexts.dp)

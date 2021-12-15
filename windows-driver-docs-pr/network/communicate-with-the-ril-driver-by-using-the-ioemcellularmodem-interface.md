@@ -4,7 +4,6 @@ description: This topic provides information on how to communicate with the RIL 
 keywords:
 - Communicate with the RIL driver by using the IOemCellularModem interface network drivers
 ms.date: 11/07/2017
-ms.localizationpriority: medium
 ---
 
 # Communicate with the RIL driver by using the IOemCellularModem interface

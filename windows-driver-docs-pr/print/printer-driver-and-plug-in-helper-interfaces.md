@@ -2,7 +2,6 @@
 title: Printer Driver and Plug-in Helper Interfaces
 description: Printer Driver and Plug-in Helper Interfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Driver and Plug-in Helper Interfaces

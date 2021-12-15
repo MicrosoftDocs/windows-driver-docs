@@ -7,7 +7,6 @@ keywords:
 - mixer API WDK audio
 - KS filters WDK audio , non-PCM wave formats
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # KS Topology Considerations

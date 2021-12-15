@@ -14,7 +14,6 @@ keywords:
 - RSTATE_FOGEND
 - D3DRENDERSTATE_FOGDENSITY
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pixel Fog

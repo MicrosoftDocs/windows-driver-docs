@@ -3,7 +3,6 @@ title: Overview of Windows Components
 description: Overview of Windows Components
 keywords: ["Windows components WDK", "Windows NT components WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: High
 ---
 
 # Overview of Windows Components

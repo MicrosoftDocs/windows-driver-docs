@@ -6,7 +6,6 @@ keywords:
 - RSS WDK networking , hash
 - hash WDK RSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying the RSS Hash Calculation

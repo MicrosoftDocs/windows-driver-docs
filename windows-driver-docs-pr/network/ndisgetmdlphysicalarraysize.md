@@ -4,7 +4,6 @@ description: The NdisGetMdlPhysicalArraySize macro retrieves the number of disco
 ms.date: 07/18/2017
 keywords:
  - NdisGetMdlPhysicalArraySize macro Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NdisGetMdlPhysicalArraySize macro

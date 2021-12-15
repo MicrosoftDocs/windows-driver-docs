@@ -2,7 +2,6 @@
 title: Step 4 Test the device metadata for your UWP device app
 description: This topic describes how you can test device metadata for your UWP device app locally before you submit it to the Windows Dev Center Dashboard.
 ms.date: 08/12/2021
-ms.localizationpriority: medium
 ---
 
 # Step 4: Test the device metadata for your UWP device app

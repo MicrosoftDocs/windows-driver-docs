@@ -5,7 +5,6 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, renaming
 - vertex buffers WDK DirectX 8.0 , renaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vertex Buffer Renaming

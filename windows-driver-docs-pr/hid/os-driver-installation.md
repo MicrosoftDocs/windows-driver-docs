@@ -2,7 +2,6 @@
 title: OS Driver installation
 description: Class-specific INF file entries that a vendor can use to control how the Microsoft-supplied keyboard and mouse class installers install devices .
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # OS Driver installation

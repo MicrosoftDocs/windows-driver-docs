@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbfaildata
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbfaildata

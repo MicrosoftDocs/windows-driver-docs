@@ -9,7 +9,6 @@ keywords:
 - filling points WDK Direct3D
 - filling triangles WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Point, Line, and Triangle Filling Requirements

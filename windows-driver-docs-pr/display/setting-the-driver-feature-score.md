@@ -5,7 +5,6 @@ keywords:
 - INF files WDK display , FeatureScore directive
 - FeatureScore directive WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the Driver Feature Score

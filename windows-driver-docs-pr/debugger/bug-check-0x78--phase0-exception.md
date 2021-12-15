@@ -9,7 +9,6 @@ api_name:
 - PHASE0_EXCEPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x78: PHASE0\_EXCEPTION

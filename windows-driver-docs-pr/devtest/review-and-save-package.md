@@ -4,7 +4,6 @@ description: Review and save package in the Device Metadata Authoring Wizard
 keywords:
 - Review and save package in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Review and save package in the Device Metadata Authoring Wizard

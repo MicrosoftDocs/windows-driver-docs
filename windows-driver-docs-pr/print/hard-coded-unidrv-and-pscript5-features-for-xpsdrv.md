@@ -2,7 +2,6 @@
 title: Hard-Coded UniDrv and PScript5 Features for XPSDrv
 description: Hard-Coded UniDrv and PScript5 Features for XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hard-Coded UniDrv and PScript5 Features for XPSDrv

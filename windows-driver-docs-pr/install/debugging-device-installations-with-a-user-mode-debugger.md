@@ -2,7 +2,6 @@
 title: Debugging Device Installations with a User-mode Debugger
 description: Debugging Device Installations with a User-mode Debugger
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Device Installations with a User-mode Debugger

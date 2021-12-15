@@ -4,7 +4,6 @@ description: Implicit Bin Extensions
 keywords:
 - implicit bin extensions WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implicit Bin Extensions

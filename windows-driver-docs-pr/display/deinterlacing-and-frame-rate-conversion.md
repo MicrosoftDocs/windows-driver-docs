@@ -12,7 +12,6 @@ keywords:
 - frame-rate conversion WDK DirectX VA
 - deinterlacing WDK DirectX VA , about deinterlacing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deinterlacing and Frame-Rate Conversion

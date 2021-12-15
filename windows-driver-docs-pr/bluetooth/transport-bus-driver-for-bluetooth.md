@@ -2,7 +2,6 @@
 title: Transport Bus Driver for Bluetooth
 description: The following diagram of a sample system, depicts the driver stacks used to support a multifunction controller, using UART as its transport.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Transport Bus Driver for Bluetooth

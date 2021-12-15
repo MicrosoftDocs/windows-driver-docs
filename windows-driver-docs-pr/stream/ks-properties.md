@@ -6,7 +6,6 @@ keywords:
 - KS properties WDK kernel streaming
 - properties WDK kernel streaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # KS Properties

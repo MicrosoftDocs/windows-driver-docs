@@ -5,7 +5,6 @@ keywords:
 - trace sessions WDK , NT Kernel Logger
 - NT Kernel Logger trace sessions WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 12: Starting an NT Kernel Logger Session

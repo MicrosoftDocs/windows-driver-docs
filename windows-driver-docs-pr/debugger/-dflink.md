@@ -9,7 +9,6 @@ api_name:
 - dflink
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dflink

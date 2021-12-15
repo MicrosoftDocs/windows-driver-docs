@@ -4,7 +4,6 @@ description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS is a TLV that conta
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_PARAMETERS

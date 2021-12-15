@@ -13,7 +13,6 @@ keywords:
 - path and mode information WDK Windows 7 display
 - path and mode information WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Relationship of Mode Information to Path Information

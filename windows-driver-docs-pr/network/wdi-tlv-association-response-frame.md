@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a TLV that contains the recei
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_RESPONSE_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_RESPONSE\_FRAME

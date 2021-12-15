@@ -9,7 +9,6 @@ api_name:
 - ppmidleaccounting
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ppmidleaccounting

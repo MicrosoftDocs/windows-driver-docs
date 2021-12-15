@@ -2,7 +2,6 @@
 title: PKEY\_Devices\_AudioDevice\_Microphone\_IsFarField
 description: In Windows 10 Version 19H1 and later, **PKEY\_Devices\_AudioDevice\_Microphone\_IsFarField** property key identifies indicates if the microphone will capture far field audio.
 ms.date: 02/13/2019
-ms.localizationpriority: medium
 ---
 
 # PKEY\_Devices\_AudioDevice\_Microphone\_IsFarField

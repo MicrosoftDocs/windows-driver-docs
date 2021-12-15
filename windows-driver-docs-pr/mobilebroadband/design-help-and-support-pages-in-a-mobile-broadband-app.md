@@ -2,7 +2,6 @@
 title: Design help and support pages in a mobile broadband app
 description: Design help and support pages in a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design help and support pages in a mobile broadband app

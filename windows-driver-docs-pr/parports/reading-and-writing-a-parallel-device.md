@@ -7,7 +7,6 @@ keywords:
 - reading parallel devices
 - writing parallel devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reading and Writing a Parallel Device

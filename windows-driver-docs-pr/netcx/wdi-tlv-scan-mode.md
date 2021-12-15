@@ -4,7 +4,6 @@ description: WDI_TLV_SCAN_MODE is a WiFiCx TLV that contains scan mode parameter
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_SCAN_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SCAN\_MODE (dot11wificxtypes.hpp)

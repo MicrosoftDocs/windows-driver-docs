@@ -9,7 +9,6 @@ api_name:
 - rcdrkd.rcdrlogdump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrlogdump

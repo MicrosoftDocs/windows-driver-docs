@@ -4,7 +4,6 @@ description: WDI_TLV_BEACON_PROBE_RESPONSE is a WiFiCx TLV that contains the lat
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_BEACON_PROBE_RESPONSE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BEACON\_PROBE\_RESPONSE (dot11wificxtypes.hpp)

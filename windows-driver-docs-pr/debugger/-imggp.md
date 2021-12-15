@@ -9,7 +9,6 @@ api_name:
 - imggp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !imggp

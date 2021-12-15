@@ -3,7 +3,6 @@ title: Reading Data Records from a CLFS Stream
 description: Reading Data Records from a CLFS Stream
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reading data records", "read forward WDK CLFS", "forward reading WDK CLFS", "read backward WDK CLFS", "backward reading WDK CLFS", "previous LSNs WDK CLFS", "undo-next LSNs WDK CLFS"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Reading Data Records from a CLFS Stream

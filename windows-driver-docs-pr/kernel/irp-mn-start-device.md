@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_START_DEVICE' kernel-mode driver architectu
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_START_DEVICE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_START\_DEVICE

@@ -2,7 +2,6 @@
 title: User Mode Monitor
 description: User Mode Monitor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # User Mode Monitor

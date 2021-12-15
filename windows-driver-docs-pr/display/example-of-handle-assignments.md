@@ -4,7 +4,6 @@ description: Example of Handle Assignments
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , handle assignments
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example of Handle Assignments

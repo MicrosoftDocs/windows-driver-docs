@@ -4,7 +4,6 @@ description: Supporting Nonstandard Display Modes
 keywords:
 - nonstandard display modes WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Nonstandard Display Modes

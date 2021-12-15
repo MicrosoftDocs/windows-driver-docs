@@ -2,7 +2,6 @@
 title: What Is Device Stage
 description: What Is Device Stage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What Is Device Stage?

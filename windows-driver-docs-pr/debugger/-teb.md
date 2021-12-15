@@ -9,7 +9,6 @@ api_name:
 - teb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !teb

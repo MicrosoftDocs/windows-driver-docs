@@ -9,7 +9,6 @@ api_name:
 - SESSION4_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x70: SESSION4\_INITIALIZATION\_FAILED

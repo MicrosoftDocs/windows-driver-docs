@@ -3,7 +3,6 @@ title: Using Breakpoints with the Debugger Engine API
 description: Using Breakpoints Debugger Engine API - Setting and Controlling 
 keywords: ["Debugger Engine, breakpoints", "breakpoints"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Breakpoints with the Debugger Engine API

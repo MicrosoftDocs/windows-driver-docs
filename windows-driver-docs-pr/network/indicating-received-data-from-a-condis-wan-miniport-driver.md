@@ -6,7 +6,6 @@ keywords:
 - receiving data WDK networking
 - indications WDK CoNDIS WAN
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Indicating Received Data from a CoNDIS WAN Miniport Driver

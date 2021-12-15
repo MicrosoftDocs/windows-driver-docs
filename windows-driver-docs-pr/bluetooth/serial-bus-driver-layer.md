@@ -2,7 +2,6 @@
 title: Serial Bus Driver Layer
 description: The serial bus driver is loaded based on a PDO created by ACPI, and can query and access the system resources, such as GPIO and I2C controllers to perform signaling control.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Serial Bus Driver Layer

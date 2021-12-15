@@ -4,7 +4,6 @@ description: WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS is a TLV that contains current
 ms.date: 04/02/2018
 keywords:
  - WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS

@@ -9,7 +9,6 @@ keywords:
 - DMA buffers WDK display , operation flow
 - buffers WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Display Driver Model (WDDM) Operation Flow

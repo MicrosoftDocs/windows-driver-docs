@@ -2,7 +2,6 @@
 title: WIA Transfer Architecture
 description: WIA Transfer Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Transfer Architecture

@@ -2,7 +2,6 @@
 title: Overview of Virtual Function Initialization and Teardown
 description: Overview of Virtual Function Initialization and Teardown
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Virtual Function Initialization and Teardown

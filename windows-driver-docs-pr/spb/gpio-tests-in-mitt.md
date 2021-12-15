@@ -2,7 +2,6 @@
 title: GPIO tests in MITT
 description: GPIO test modules that are included in the MITT software package can be used to test the following buttons volume up, volume down, power, and rotation lock.
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # GPIO tests in MITT

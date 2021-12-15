@@ -2,7 +2,6 @@
 title: Windows Hardware Error Architecture Overview
 description: Windows Hardware Error Architecture Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

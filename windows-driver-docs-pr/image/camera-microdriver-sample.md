@@ -2,7 +2,6 @@
 title: Camera Microdriver Sample
 description: Camera Microdriver Sample
 ms.date: 05/29/2020
-ms.localizationpriority: medium
 ---
 
 # Camera Microdriver Sample

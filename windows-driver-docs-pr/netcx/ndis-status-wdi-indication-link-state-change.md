@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE to 
 ms.date: 08/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_LINK\_STATE\_CHANGE (dot11wificxintf.h)

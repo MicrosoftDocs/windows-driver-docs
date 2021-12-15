@@ -10,7 +10,6 @@ keywords:
 - input devices WDK , reports
 - HID reports WDK , operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling HID Reports Topics

@@ -9,7 +9,6 @@ api_name:
 - Cleanup4CtlDeviceRegistered
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Cleanup4CtlDeviceRegistered rule (kmdf)

@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_CHANNEL_ENTRY_LIST is a TLV that contains a channel num
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_CHANNEL_ENTRY_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_CHANNEL\_ENTRY\_LIST

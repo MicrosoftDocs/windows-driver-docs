@@ -2,7 +2,6 @@
 description: This topic describes the steps that are required to submit an initialized URB to the USB driver stack to process a particular request.
 title: How to Submit an URB
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to Submit an URB

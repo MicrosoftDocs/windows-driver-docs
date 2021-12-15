@@ -6,7 +6,6 @@ keywords:
 - recognizing first tuning requests WDK video capture
 - radio tuners WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Recognizing the First Tuning Request

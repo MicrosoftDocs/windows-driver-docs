@@ -9,7 +9,6 @@ api_name:
 - Flags_Irql
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Flags\_Irql rule (ndis)

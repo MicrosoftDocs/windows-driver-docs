@@ -4,7 +4,6 @@ description: Miniport drivers that support NDIS ports use the NDIS_STATUS_PORT_S
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PORT_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PORT\_STATE

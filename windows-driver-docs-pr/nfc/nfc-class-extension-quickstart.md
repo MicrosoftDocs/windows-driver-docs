@@ -12,7 +12,6 @@ ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.localizationpriority: low
 ---
 
 # NFC CX quick start guide

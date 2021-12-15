@@ -3,7 +3,6 @@ title: Closing a Window
 description: Closing a Window
 keywords: ["debugging information windows, closing"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Closing a Window

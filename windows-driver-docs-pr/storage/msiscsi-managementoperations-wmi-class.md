@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_ManagementOperations WMI Class
 description: MSiSCSI\_ManagementOperations WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

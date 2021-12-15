@@ -3,7 +3,6 @@ title: KSPROPSETID\_Sysaudio\_Pin
 description: KSPROPSETID\_Sysaudio\_Pin
 keywords: ["KSPROPSETID_Sysaudio_Pin"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Sysaudio\_Pin

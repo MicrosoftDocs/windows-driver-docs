@@ -2,7 +2,6 @@
 title: Maintenance
 description: Contains information about the maintenance of the print device.
 ms.date: 08/31/2021
-ms.localizationpriority: medium
 ---
 
 # Maintenance

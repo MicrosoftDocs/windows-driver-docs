@@ -2,7 +2,6 @@
 title: WIA Scanner Storage
 description: WIA Scanner Storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Scanner Storage

@@ -4,7 +4,6 @@ description: As a set, NDIS protocol drivers use the OID_PM_ADD_WOL_PATTERN OID 
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_ADD_WOL_PATTERN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PM\_ADD\_WOL\_PATTERN

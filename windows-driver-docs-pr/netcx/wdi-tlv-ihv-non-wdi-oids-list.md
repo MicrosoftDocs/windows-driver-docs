@@ -4,7 +4,6 @@ description: WDI_TLV_IHV_NON_WDI_OIDS_LIST is a WiFiCx TLV that contains a list 
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_IHV_NON_WDI_OIDS_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_IHV\_NON\_WDI\_OIDS\_LIST (dot11wificxtypes.hpp)

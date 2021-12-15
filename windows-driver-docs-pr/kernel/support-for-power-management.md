@@ -3,7 +3,6 @@ title: Support for Power Management
 description: Support for Power Management
 keywords: ["power management WDK kernel , support requirements", "power management WDK kernel , about power management", "PnP WDK power management", "Plug and Play WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Support for Power Management

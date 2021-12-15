@@ -9,7 +9,6 @@ keywords:
 - task offload WDK TCP/IP transport , out-of-band data
 - connection offload WDK TCP/IP transport , out-of-band data
 ms.date: 10/23/2018
-ms.localizationpriority: medium
 ---
 
 # Accessing TCP/IP Offload NET\_BUFFER\_LIST Information

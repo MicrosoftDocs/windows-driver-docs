@@ -2,7 +2,6 @@
 title: How to create a custom driver installation script
 description: If you need to install more than the driver package on a test computer, you can run custom command scripts at installation.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to create a custom driver installation script

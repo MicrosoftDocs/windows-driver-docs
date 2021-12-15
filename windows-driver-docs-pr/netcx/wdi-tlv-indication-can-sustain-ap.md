@@ -4,7 +4,6 @@ description: WDI_TLV_INDICATION_CAN_SUSTAIN_AP is a WiFiCx TLV that contains the
 ms.date: 08/31/2021
 keywords:
  - WDI_TLV_INDICATION_CAN_SUSTAIN_AP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP (dot11wificxtypes.hpp)

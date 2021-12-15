@@ -4,7 +4,6 @@ description: The OID_WDI_GET_SUPPORTED_DEVICE_SERVICES command queries the IHV d
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_GET_SUPPORTED_DEVICE_SERVICES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WDI_GET_SUPPORTED_DEVICE_SERVICES (dot11wificxintf.h)

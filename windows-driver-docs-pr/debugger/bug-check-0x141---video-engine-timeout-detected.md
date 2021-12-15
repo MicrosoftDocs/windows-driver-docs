@@ -9,7 +9,6 @@ api_name:
 - VIDEO_ENGINE_TIMEOUT_DETECTED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x141: VIDEO\_ENGINE\_TIMEOUT\_DETECTED

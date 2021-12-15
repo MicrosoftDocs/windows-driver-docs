@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_RCV_ERROR OID specifies the number of frame
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_RCV_ERROR Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_RCV\_ERROR

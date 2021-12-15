@@ -2,7 +2,6 @@
 title: WLAN feature information
 description: This section contains specific WLAN feature information.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WLAN feature information

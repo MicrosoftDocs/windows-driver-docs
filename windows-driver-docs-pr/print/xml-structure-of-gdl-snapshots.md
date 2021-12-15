@@ -9,7 +9,6 @@ keywords:
 - data tree WDK GDL
 - GDL WDK , entries
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XML Structure of GDL Snapshots

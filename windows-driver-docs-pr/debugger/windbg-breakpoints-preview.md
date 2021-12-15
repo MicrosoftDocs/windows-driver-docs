@@ -2,7 +2,6 @@
 title: WinDbg Preview - Breakpoints Menu
 description: This section describes how to set and clear breakpoints using the WinDbg preview debugger.
 ms.date: 08/15/2017
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Breakpoints Menu

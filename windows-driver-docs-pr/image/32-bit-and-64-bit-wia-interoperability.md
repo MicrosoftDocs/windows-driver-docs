@@ -2,7 +2,6 @@
 title: 32-Bit and 64-Bit WIA Interoperability
 description: 32-Bit and 64-Bit WIA Interoperability
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 32-Bit and 64-Bit WIA Interoperability

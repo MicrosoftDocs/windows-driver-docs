@@ -8,7 +8,6 @@ keywords:
 - protected video WDK COPP , display modes
 - display modes WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP and Display Modes

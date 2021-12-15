@@ -3,7 +3,6 @@ title: x86 Instructions
 description: x86 Instructions
 keywords: ["x86 processor, instructions", "x86 processor, arithmetic"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # x86 Instructions

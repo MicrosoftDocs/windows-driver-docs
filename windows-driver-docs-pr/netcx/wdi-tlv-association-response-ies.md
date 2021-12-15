@@ -4,7 +4,6 @@ description: WiFiCx does not use the WDI_TLV_ASSOCIATION_RESPONSE_IES TLV.
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_ASSOCIATION_RESPONSE_IES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_RESPONSE\_IES (dot11wificxtypes.hpp)

@@ -4,7 +4,6 @@ description: The HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS function queries the l
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS function

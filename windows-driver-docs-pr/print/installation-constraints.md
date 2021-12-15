@@ -4,7 +4,6 @@ description: Installation Constraints
 keywords:
 - installation constraints WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installation Constraints

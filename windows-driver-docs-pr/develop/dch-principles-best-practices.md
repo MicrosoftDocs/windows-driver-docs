@@ -2,7 +2,6 @@
 title: DCH Design Principles and Best Practices
 description: Describes DCH principles for Windows drivers.
 ms.date: 04/28/2020
-ms.localizationpriority: medium
 ---
 
 # DCH Design Principles and Best Practices

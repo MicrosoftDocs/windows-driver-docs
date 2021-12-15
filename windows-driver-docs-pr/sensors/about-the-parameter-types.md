@@ -2,7 +2,6 @@
 title: About Sensor Parameter Types
 description: About the Parameter Types
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # About Sensor Parameter Types

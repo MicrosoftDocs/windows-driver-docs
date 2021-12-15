@@ -2,7 +2,6 @@
 title: Extended camera controls
 description: Extended controls use the KSPROPERTY mechanism to expose camera controls to the application.
 ms.date: 06/19/2020
-ms.localizationpriority: medium
 ---
 
 # Extended camera controls

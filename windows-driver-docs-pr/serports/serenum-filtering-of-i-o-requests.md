@@ -6,7 +6,6 @@ keywords:
 - I/O request filtering WDK Serenum
 - filtering I/O requests WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Serenum Filtering of I/O Requests

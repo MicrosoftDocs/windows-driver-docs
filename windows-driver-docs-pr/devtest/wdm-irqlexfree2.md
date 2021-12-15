@@ -9,7 +9,6 @@ api_name:
 - IrqlExFree2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlExFree2 rule (wdm)

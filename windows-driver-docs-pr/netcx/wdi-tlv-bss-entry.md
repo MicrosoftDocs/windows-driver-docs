@@ -4,7 +4,6 @@ description: WDI_TLV_BSS_ENTRY is a WiFiCx TLV that contains BSS entry informati
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_BSS_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_BSS_ENTRY (dot11wificxtypes.hpp)

@@ -3,7 +3,6 @@ title: Object Reference Tracing with Tags
 description: Object Reference Tracing with Tags
 keywords: ["object referencing with tags WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Object Reference Tracing with Tags

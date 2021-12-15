@@ -4,7 +4,6 @@ description: WDI_TLV_FT_RSNIE is a WiFiCx TLV that contains the Fast Transition 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_FT_RSNIE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_RSNIE (dot11wificxtypes.hpp)

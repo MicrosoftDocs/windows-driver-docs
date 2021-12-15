@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_CURRENT_PACKET_FILTER OID reports the types
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_CURRENT_PACKET_FILTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_CURRENT\_PACKET\_FILTER

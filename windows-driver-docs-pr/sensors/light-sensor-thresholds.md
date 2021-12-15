@@ -2,7 +2,6 @@
 title: Light sensor thresholds
 description: This topic provides information about the light sensor thresholds.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Light sensor thresholds

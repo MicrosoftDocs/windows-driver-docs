@@ -4,7 +4,6 @@ description: WDI_TLV_INDICATION_STOP_AP is a TLV that contains the reason for a 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INDICATION_STOP_AP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INDICATION\_STOP\_AP

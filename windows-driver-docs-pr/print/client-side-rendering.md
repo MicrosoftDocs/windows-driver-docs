@@ -9,7 +9,6 @@ keywords:
 - spooler print-job rendering WDK print
 - jobs WDK print , client-side rendering
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Client-Side Rendering

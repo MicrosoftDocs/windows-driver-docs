@@ -3,7 +3,6 @@ title: Writing an ISR
 description: Writing an ISR
 keywords: ["interrupt service routines WDK kernel , writing", "ISRs WDK kernel , writing", "writing ISRs", "interrupt objects WDK kernel , writing ISRs", "I/O WDK kernel , interrupts"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Writing an ISR

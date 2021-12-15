@@ -4,7 +4,6 @@ description: WDI_TLV_DISCONNECT_PARAMETERS is a WiFiCx TLV that contains paramet
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_DISCONNECT_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_DISCONNECT\_PARAMETERS (dot11wificxtypes.hpp)

@@ -2,7 +2,6 @@
 title: Memory Buffer Life Cycle
 description: Memory Buffer Life Cycle
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Memory Buffer Life Cycle

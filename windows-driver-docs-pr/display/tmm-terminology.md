@@ -9,7 +9,6 @@ keywords:
 - TMM WDK display , single view
 - TMM WDK display , topology
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TMM Terminology

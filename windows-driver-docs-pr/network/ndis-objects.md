@@ -5,7 +5,6 @@ keywords:
 - allocating generic NDIS objects
 - generic NDIS objects WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Objects

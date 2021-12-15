@@ -4,7 +4,6 @@ description: The XPSDrv configuration module must meet requirements described in
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , requirements
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Driver Requirements

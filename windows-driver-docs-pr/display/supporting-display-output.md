@@ -8,7 +8,6 @@ keywords:
 - BIOS display control WDK display
 - automatic display switch WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Display Output and ACPI Events

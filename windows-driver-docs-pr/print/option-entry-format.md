@@ -5,7 +5,6 @@ keywords:
 - printer options WDK Unidrv , entry format
 - formats WDK printer options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Option Entry Format

@@ -4,7 +4,6 @@ description: OID_WWAN_REGISTER_STATE selects a network provider to register with
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_REGISTER_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

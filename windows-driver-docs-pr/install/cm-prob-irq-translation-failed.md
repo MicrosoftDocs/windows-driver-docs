@@ -4,7 +4,6 @@ description: CM_PROB_IRQ_TRANSLATION_FAILED
 keywords:
 - CM_PROB_IRQ_TRANSLATION_FAILED
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 36 - CM_PROB_IRQ_TRANSLATION_FAILED

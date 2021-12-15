@@ -5,7 +5,6 @@ keywords:
 - ACPI control methods WDK , evaluating
 - ACPI devices WDK , evaluating control methods
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Evaluating ACPI Control Methods

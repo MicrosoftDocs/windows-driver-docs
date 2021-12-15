@@ -2,7 +2,6 @@
 title: Cross Architecture Execution
 description: Cross Architecture Execution
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cross Architecture Execution

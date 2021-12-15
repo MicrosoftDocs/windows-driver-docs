@@ -4,7 +4,6 @@ description: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT is a WiFiCx TLV that contains devi
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BSS\_ENTRY\_DEVICE\_CONTEXT (dot11wificxtypes.hpp)

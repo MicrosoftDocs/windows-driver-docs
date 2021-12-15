@@ -9,7 +9,6 @@ api_name:
 - UFX_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x198: UFX\_LIVEDUMP

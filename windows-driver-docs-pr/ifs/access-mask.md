@@ -9,7 +9,6 @@ keywords:
 - standard rights WDK file systems
 - specific rights WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access Mask

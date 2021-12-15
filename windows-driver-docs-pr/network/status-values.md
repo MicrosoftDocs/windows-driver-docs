@@ -2,7 +2,6 @@
 title: Status Values
 description: Status Values
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Status Values

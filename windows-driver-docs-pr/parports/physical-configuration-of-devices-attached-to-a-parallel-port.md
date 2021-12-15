@@ -7,7 +7,6 @@ keywords:
 - daisy chain devices WDK
 - parallel devices WDK , physical configurations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Physical Configuration of Devices Attached to a Parallel Port

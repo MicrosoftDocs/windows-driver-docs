@@ -3,7 +3,6 @@ title: Privileges
 description: Privileges
 keywords: ["privileges WDK objects", "process privileges WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Privileges

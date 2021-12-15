@@ -11,7 +11,6 @@ keywords:
 - DLLs WDK network upgrades
 - vendor-supplied files WDK netmap.inf file
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying the Upgrade DLL in a Netmap.inf File

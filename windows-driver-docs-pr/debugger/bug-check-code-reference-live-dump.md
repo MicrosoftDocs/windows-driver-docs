@@ -2,7 +2,6 @@
 title: Kernel Live Dump Code Reference
 description: This section contains descriptions of the common kernel live dumps, and describes how they are different from traditional bug checks.
 ms.date: 03/10/2021
-ms.localizationpriority: high
 ---
 
 # Kernel Live Dump Code Reference

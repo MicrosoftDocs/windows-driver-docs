@@ -5,7 +5,6 @@ keywords:
 - status information WDK COPP
 - status exchange WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Status Security and Authenticity

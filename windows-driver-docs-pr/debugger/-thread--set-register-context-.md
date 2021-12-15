@@ -9,7 +9,6 @@ api_name:
 - .thread (Set Register Context)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .thread (Set Register Context)

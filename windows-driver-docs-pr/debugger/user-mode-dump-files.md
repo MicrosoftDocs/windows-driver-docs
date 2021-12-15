@@ -3,7 +3,6 @@ title: User-Mode Dump Files
 description: User-Mode Dump Files
 keywords: ["dump file, user-mode"]
 ms.date: 12/03/2019
-ms.localizationpriority: medium
 ---
 
 # User-Mode Dump Files

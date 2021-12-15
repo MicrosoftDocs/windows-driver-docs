@@ -4,7 +4,6 @@ description: NDIS and overlying drivers issue an object identifier (OID) request
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_ISOLATION_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_ISOLATION\_PARAMETERS

@@ -9,7 +9,6 @@ api_name:
 - owner
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !owner

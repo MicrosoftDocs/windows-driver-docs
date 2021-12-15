@@ -9,7 +9,6 @@ api_name:
 - CRITICAL_STRUCTURE_CORRUPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x109: CRITICAL\_STRUCTURE\_CORRUPTION

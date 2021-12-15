@@ -8,7 +8,6 @@ keywords:
 - Windows Hardware Error Architecture WDK , setting error source information
 - hardware error sources WDK WHEA , setting information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Error Source Information

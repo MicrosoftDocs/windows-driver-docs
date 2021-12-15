@@ -3,7 +3,6 @@ title: Add or update a code signing certificate
 description: Add or update a code signing certificate
 ms.topic: article
 ms.date: 09/10/2021
-ms.localizationpriority: medium
 ---
 
 # Add or update a code signing certificate

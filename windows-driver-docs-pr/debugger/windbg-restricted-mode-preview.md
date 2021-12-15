@@ -2,7 +2,6 @@
 title: WinDbg Preview - Restricted Mode
 description: Restricted Mode limits the types of debugging sessions WinDbg Preview can start to remote debugging sessions and dump files only. 
 ms.date: 08/09/2021
-ms.localizationpriority: High
 ---
 
 # WinDbg Preview - Restricted Mode

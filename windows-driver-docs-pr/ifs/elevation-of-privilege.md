@@ -7,7 +7,6 @@ keywords:
 - elevation-of-privilege WDK file systems
 - buffers WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Elevation of Privilege

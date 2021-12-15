@@ -3,7 +3,6 @@ title: Configuring tools.ini
 description: Configuring tools.ini
 keywords: ["tools.ini file", "ntsd.ini file"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring tools.ini

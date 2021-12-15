@@ -4,7 +4,6 @@ description: CM_PROB_CONSOLE_LOCKED
 keywords:
 - CM_PROB_CONSOLE_LOCKED
 ms.date: 02/28/2020
-ms.localizationpriority: medium
 ---
 
 # Code 55 - CM_PROB_CONSOLE_LOCKED

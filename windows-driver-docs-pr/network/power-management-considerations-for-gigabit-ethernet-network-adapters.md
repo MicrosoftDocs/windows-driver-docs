@@ -14,7 +14,6 @@ keywords:
 - transitioning power states WDK networking
 - wake-up capabilities WDK networking , transitioning power states
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power Management Considerations for Gigabit Ethernet Network Adapters

@@ -3,7 +3,6 @@ title: Number of user mode crashes in Microsoft Photos app (ecosystem)
 description: Learn about the measure that counts the number of display driver crashes in the Microsoft Photos app, then normalizes the total runtime to years.
 ms.topic: article
 ms.date: 09/03/2021
-ms.localizationpriority: medium
 ---
 
 # Number of user mode crashes in Microsoft Photos app (ecosystem)

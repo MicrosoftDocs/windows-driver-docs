@@ -9,7 +9,6 @@ api_name:
 - sysptes
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sysptes

@@ -2,7 +2,6 @@
 title: Orientation
 description: Current page orientation and a list of page orientations supported by the device.
 ms.date: 08/31/2021
-ms.localizationpriority: medium
 ---
 
 # Orientation

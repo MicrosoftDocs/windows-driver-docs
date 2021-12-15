@@ -8,7 +8,6 @@ keywords:
 - co-installers WDK device installations , about co-installers
 - coinstallers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing a Co-installer

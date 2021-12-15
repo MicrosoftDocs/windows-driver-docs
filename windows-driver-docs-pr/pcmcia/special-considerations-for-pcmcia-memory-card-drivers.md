@@ -4,7 +4,6 @@ description: Special Considerations for PCMCIA Memory Card Drivers
 keywords:
 - PCMCIA_INTERFACE_STANDARD
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Special Considerations for PCMCIA Memory Card Drivers

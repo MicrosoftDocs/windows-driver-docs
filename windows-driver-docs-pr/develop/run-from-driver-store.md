@@ -2,7 +2,6 @@
 title: Run From Driver Store
 description: This page describes how to make use of 'run from driver store' concepts in a driver package.
 ms.date: 11/10/2021
-ms.localizationpriority: medium
 ---
 
 # Run From Driver Store

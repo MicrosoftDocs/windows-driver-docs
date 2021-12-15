@@ -6,7 +6,6 @@ keywords:
 - timers WDK video miniport
 - HwVidTimer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Timers in Video Miniport Drivers

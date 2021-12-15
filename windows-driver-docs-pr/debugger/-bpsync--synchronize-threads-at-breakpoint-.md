@@ -9,7 +9,6 @@ api_name:
 - .bpsync (Synchronize Threads at Breakpoint)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .bpsync (Synchronize Threads at Breakpoint)

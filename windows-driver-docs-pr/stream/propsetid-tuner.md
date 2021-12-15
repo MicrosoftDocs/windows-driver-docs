@@ -2,7 +2,6 @@
 title: PROPSETID\_TUNER
 description: PROPSETID\_TUNER
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PROPSETID\_TUNER

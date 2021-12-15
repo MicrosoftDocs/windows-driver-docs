@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_PROVISION_DISCOVERY_REQUEST_PARAMETERS is a WiFiCx TLV 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_PROVISION_DISCOVERY_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_REQUEST\_PARAMETERS (dot11wificxtypes.hpp)

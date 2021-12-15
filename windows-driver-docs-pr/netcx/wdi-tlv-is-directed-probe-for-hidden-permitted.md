@@ -4,7 +4,6 @@ description: WDI_TLV_IS_DIRECTED_PROBE_FOR_HIDDEN_PERMITTED is a WiFiCx TLV that
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_PLDR_SUPPORT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_IS_DIRECTED_PROBE_FOR_HIDDEN_PERMITTED (dot11wificxtypes.hpp)

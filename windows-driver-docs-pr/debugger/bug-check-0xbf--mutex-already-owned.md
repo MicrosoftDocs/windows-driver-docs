@@ -9,7 +9,6 @@ api_name:
 - MUTEX_ALREADY_OWNED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBF: MUTEX\_ALREADY\_OWNED

@@ -6,7 +6,6 @@ keywords:
 - auditing WDK file systems
 - security checks WDK file systems , IRP_MJ_CREATE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Auditing on IRP\_MJ\_CREATE

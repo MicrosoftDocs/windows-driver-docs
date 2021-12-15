@@ -5,7 +5,6 @@ keywords:
 - device fonts WDK Unidrv
 - font attributes WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Attributes for Device Fonts

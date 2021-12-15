@@ -2,7 +2,6 @@
 title: WdfTester Installation
 description: WdfTester Installation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WdfTester Installation

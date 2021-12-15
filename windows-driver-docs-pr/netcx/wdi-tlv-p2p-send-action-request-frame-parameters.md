@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_SEND_ACTION_REQUEST_FRAME_PARAMETERS is a WiFiCx TLV th
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_SEND_ACTION_REQUEST_FRAME_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_SEND\_ACTION\_REQUEST\_FRAME\_PARAMETERS (dot11wificxtypes.hpp)

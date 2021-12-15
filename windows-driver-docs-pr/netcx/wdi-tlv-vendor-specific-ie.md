@@ -4,7 +4,6 @@ description: WDI_TLV_VENDOR_SPECIFIC_IE is a WiFiCx TLV that contains a list of 
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_VENDOR_SPECIFIC_IE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_VENDOR\_SPECIFIC\_IE (dot11wificxtypes.hpp)

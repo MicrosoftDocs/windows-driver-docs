@@ -9,7 +9,6 @@ api_name:
 - .context (Set User-Mode Address Context)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .context (Set User-Mode Address Context)

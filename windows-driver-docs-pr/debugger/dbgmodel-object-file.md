@@ -2,7 +2,6 @@
 title: Debugger Data Model - File Objects
 description: File objects are used to open, edit, and otherwise manipulate files on the file system.
 ms.date: 12/13/2018
-ms.localizationpriority: medium
 ---
 # File Objects 
 ## Summary

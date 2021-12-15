@@ -10,7 +10,6 @@ keywords:
 - data WDK networking , returning
 - packets WDK networking , returning
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving Network Data

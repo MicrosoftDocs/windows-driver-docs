@@ -2,7 +2,6 @@
 title: Retrieving SPCRP_Xxx Properties
 description: Retrieving SPCRP_Xxx Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving SPCRP_Xxx Properties

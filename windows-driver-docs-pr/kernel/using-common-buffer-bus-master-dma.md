@@ -3,7 +3,6 @@ title: Using Common-Buffer Bus-Master DMA
 description: Using Common-Buffer Bus-Master DMA
 keywords: ["continuous DMA WDK kernel", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Common-Buffer Bus-Master DMA

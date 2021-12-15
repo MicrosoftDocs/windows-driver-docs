@@ -9,7 +9,6 @@ api_name:
 - FATAL_UNHANDLED_HARD_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4C: FATAL\_UNHANDLED\_HARD\_ERROR

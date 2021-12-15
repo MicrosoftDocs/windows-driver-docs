@@ -5,7 +5,6 @@ keywords:
 - vendor-supplied drivers WDK smart card , required routines
 - WDM WDK smart card
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDM Reader Driver

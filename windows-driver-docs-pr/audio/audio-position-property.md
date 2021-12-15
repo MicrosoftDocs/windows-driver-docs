@@ -16,7 +16,6 @@ keywords:
 - capture stream position WDK audio
 - port drivers WDK audio , position properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Position Property

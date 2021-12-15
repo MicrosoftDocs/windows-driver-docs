@@ -3,7 +3,6 @@ title: Using NTSTATUS Values
 description: Using NTSTATUS Values
 keywords: ["NTSTATUS values WDK kernel", "driver support routines WDK kernel", "return values WDK kernel", "testing return values WDK NTSTATUS values", "success values WDK NTSTATUS values", "informational values WDK NTSTATUS values", "warnings WDK NTSTATUS values", "error values WDK NTSTATUS values", "status information WDK NTSTATUS values", "checking return values"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using NTSTATUS Values

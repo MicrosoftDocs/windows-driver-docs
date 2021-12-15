@@ -2,7 +2,6 @@
 title: Storport Idle Power Management Overview
 description: Storport Idle Power Management Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storport Idle Power Management Overview

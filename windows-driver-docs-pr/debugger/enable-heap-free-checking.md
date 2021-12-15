@@ -3,7 +3,6 @@ title: Enable heap free checking
 description: Enable heap free checking
 keywords: ["Enable heap free checking (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable heap free checking

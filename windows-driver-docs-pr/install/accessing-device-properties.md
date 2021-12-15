@@ -5,7 +5,6 @@ keywords:
 - device properties WDK device installations , accessing
 - accessing device properties WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Device Properties

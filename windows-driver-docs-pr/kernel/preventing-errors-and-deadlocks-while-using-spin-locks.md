@@ -3,7 +3,6 @@ title: Preventing Errors and Deadlocks While Using Spin Locks
 description: Preventing Errors and Deadlocks While Using Spin Locks
 keywords: ["deadlocks WDK kernel", "recursion WDK kernel", "nested spin lock acquisitions WDK kernel", "pageable data locking WDK kernel", "spin locks WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Preventing Errors and Deadlocks While Using Spin Locks

@@ -2,7 +2,6 @@
 title: Static Creation of a NIC Switch
 description: Static Creation of a NIC Switch
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Creation of a NIC Switch

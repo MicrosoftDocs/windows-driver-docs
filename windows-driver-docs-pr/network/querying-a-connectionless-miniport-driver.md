@@ -4,7 +4,6 @@ description: Querying a Connectionless Miniport Driver
 keywords:
 - connectionless drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying a Connectionless Miniport Driver

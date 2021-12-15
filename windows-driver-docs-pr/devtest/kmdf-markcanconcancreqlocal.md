@@ -9,7 +9,6 @@ api_name:
 - MarkCancOnCancReqLocal
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkCancOnCancReqLocal rule (kmdf)

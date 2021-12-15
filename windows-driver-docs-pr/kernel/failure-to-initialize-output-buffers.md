@@ -3,7 +3,6 @@ title: Failure to Initialize Output Buffers
 description: Failure to Initialize Output Buffers
 keywords: ["output buffers WDK kernel", "initializing output buffers"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Failure to Initialize Output Buffers

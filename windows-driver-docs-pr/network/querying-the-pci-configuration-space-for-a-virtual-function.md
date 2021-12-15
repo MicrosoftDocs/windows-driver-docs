@@ -2,7 +2,6 @@
 title: Querying the PCI Configuration Space for a Virtual Function
 description: Querying the PCI Configuration Space for a Virtual Function
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying the PCI Configuration Space for a Virtual Function

@@ -2,7 +2,6 @@
 title: PKEY\_AudioEngine\_OEMFormat
 description: PKEY\_AudioEngine\_OEMFormat
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PKEY\_AudioEngine\_OEMFormat

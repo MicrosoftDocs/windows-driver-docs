@@ -8,7 +8,6 @@ keywords:
 - interrupts WDK networking , MSI-X table entry CPU affinity
 - CPU af
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Changing the CPU Affinity of MSI-X Table Entries

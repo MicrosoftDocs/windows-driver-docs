@@ -9,7 +9,6 @@ api_name:
 - RESOURCE_MANAGER_EXCEPTION_NOT_HANDLED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10F: RESOURCE\_MANAGER\_EXCEPTION\_NOT\_HANDLED

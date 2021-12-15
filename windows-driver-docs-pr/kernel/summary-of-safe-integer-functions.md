@@ -1,7 +1,6 @@
 ---
 title: Summary of Kernel-Mode Safe Integer Functions
 description: The following table summarizes the safe integer functions that are available to kernel-mode drivers.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

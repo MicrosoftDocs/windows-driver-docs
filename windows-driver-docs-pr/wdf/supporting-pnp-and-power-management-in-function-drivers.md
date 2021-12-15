@@ -8,7 +8,6 @@ keywords:
 - function drivers WDK KMDF
 - power policy WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting PnP and Power Management in Function Drivers

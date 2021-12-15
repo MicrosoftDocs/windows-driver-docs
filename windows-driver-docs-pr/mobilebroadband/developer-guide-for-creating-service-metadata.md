@@ -2,7 +2,6 @@
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Developer guide for creating service metadata

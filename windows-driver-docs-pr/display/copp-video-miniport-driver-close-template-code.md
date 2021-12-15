@@ -5,7 +5,6 @@ keywords:
 - releasing COPP DirectX VA device objects
 - closing COPP DirectX VA device objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP Video Miniport Driver Close Template Code

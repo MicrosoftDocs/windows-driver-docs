@@ -9,7 +9,6 @@ api_name:
 - INSTRUCTION_COHERENCY_EXCEPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x56: INSTRUCTION\_COHERENCY\_EXCEPTION

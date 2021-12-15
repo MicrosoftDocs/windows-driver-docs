@@ -1,7 +1,6 @@
 ---
 title: _DSM Interface for JEDEC Byte Addressable Energy Backed Function Class (Function Interface 1)
 description: The Device-Specific Method (_DSM) interface is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity.
-ms.localizationpriority: medium
 ms.date: 12/15/2019
 ---
 

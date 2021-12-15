@@ -4,7 +4,6 @@ description: Smart Card Driver Environment
 keywords:
 - smart card drivers WDK , environment
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Smart Card Driver Environment
