@@ -1,5 +1,5 @@
 ---
-title: vm
+title: vm (WinDbg)
 description: The vm extension displays summary information about virtual memory use statistics on the target system.
 keywords: ["vm Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - vm
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vm

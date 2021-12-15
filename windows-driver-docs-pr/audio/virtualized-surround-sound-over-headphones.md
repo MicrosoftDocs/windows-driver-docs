@@ -2,7 +2,6 @@
 title: Virtualized Surround Sound over Headphones
 description: Virtualized Surround Sound over Headphones
 ms.date: 11/07/2018
-ms.localizationpriority: medium
 ---
 
 # Virtualized Surround Sound over Headphones

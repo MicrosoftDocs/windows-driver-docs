@@ -2,7 +2,6 @@
 title: Using Updated Core Print Drivers
 description: Using Updated Core Print Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Updated Core Print Drivers

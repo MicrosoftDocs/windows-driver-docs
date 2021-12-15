@@ -9,7 +9,6 @@ api_name:
 - WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D6: WORKER\_THREAD\_RETURNED\_WITH\_NON\_DEFAULT\_WORKLOAD\_CLASS
@@ -30,12 +29,12 @@ The WORKER\_THREAD\_RETURNED\_WITH\_NON\_DEFAULT\_WORKLOAD\_CLASS bug check has 
 |3| WorkItem parameter. |
 |4| WorkItem address. |
 
-## ## Cause
+## Cause
 
 A worker thread changed its workload class and did not revert it before returning.
 
 
-## ## See Also-
+## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

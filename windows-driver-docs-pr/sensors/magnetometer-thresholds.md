@@ -2,7 +2,6 @@
 title: Magnetometer thresholds
 description: This topic provides information about the magnetometer thresholds.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Magnetometer thresholds

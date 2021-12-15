@@ -2,7 +2,6 @@
 title: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
 description: The AllocateTransferBuffer function allocates a transfer buffer of the specified size that satisfies controller requirements.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer

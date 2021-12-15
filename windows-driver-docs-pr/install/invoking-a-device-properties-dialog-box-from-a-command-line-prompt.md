@@ -8,7 +8,6 @@ keywords:
 - machine-name-parameter field WDK device installations
 - device-instance-ID-parameter field WDK device inst
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Invoking a Device Properties Dialog Box from a Command-line Prompt

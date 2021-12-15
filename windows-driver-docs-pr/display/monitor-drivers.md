@@ -6,7 +6,6 @@ keywords:
 - monitor drivers WDK
 - display drivers WDK , monitor drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Monitor Drivers

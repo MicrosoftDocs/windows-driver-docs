@@ -1,7 +1,6 @@
 ---
 title: Docking versus laptop slate conversion
 description: This topic describes the distinctions for indicators between laptop slate conversion and docking actions.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

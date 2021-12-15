@@ -9,7 +9,6 @@ keywords:
 - validating test certificates WDK
 - test signing driver packages WDK , catalog files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying the Signature of a Test-Signed Catalog File

@@ -3,7 +3,6 @@ title: Controlling Processes and Threads in WinDbg
 description: Controlling Processes and Threads in WinDbg
 keywords: ["debugging information windows, Processes and Threads window", "Processes and Threads window", "process, Processes and Threads window", "thread, Processes and Threads window"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling Processes and Threads in WinDbg

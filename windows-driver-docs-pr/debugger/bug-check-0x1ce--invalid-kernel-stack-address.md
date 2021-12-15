@@ -9,7 +9,6 @@ api_name:
 - INVALID_KERNEL_STACK_ADDRESS 
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1CE: INVALID\_KERNEL\_STACK\_ADDRESS

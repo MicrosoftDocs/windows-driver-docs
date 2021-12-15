@@ -2,7 +2,6 @@
 title: Using Work Items
 description: Using Work Items
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Work Items

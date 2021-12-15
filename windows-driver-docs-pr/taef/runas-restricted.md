@@ -2,7 +2,6 @@
 title: RunAs Restricted
 description: TAEF ensures that the test is run in a restricted process.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # RunAs Restricted

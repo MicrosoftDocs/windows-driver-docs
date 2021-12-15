@@ -5,7 +5,6 @@ keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # First Picture Decoding Configuration

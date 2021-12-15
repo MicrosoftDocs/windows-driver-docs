@@ -4,7 +4,6 @@ description: OID_WWAN_NETWORK_PARAMS retrieves the network parameters from an MB
 ms.date: 06/15/2021
 keywords: 
  -OID_WWAN_NETWORK_PARAMS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WWAN_NETWORK_PARAMS

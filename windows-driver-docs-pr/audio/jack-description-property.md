@@ -2,7 +2,6 @@
 title: Jack Description Property
 description: Jack Description Property
 ms.date: 05/08/2018
-ms.localizationpriority: medium
 ---
 
 # Jack Description Property

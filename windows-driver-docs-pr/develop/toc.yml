@@ -8,6 +8,8 @@
     href: dch-principles-best-practices.md
   - name: "Driver Package Isolation"
     href: driver-isolation.md
+  - name: "Run From Driver Store"
+    href: run-from-driver-store.md
   - name: "API Layering"
     href: api-layering.md
   - name: "Building a Windows driver"

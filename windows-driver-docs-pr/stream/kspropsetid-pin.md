@@ -2,7 +2,6 @@
 title: KSPROPSETID\_Pin
 description: KSPROPSETID\_Pin
 ms.date: 06/26/2020
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Pin

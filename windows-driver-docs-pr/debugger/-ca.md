@@ -1,5 +1,5 @@
 ---
-title: ca
+title: ca (WinDbg)
 description: The ca extension displays information about a control area.
 keywords: ["control area", "ca Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ca
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ca

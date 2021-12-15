@@ -9,7 +9,6 @@ api_name:
 - SYSTEM_LICENSE_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9A: SYSTEM\_LICENSE\_VIOLATION

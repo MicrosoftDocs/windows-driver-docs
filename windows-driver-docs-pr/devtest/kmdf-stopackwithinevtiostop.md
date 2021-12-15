@@ -9,7 +9,6 @@ api_name:
 - StopAckWithinEvtIoStop
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StopAckWithinEvtIoStop rule (kmdf)

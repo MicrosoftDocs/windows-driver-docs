@@ -1,5 +1,5 @@
 ---
-title: sid
+title: sid (WinDbg)
 description: The sid extension displays the security identifier (SID) at the specified address.
 keywords: ["sid Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - sid
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sid

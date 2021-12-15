@@ -1,8 +1,8 @@
-﻿---
+---
 title: KSPROPERTY structure (ks.h)
 description: The KSPROPERTY structure specifies a single kernel streaming property within a property set.
 ms.date: 07/07/2021
-ms.localizationpriority: medium
+ms.custom: contperf-fy22q1
 ---
 
 # KSPROPERTY structure
@@ -15,7 +15,7 @@ The [**KSEVENT**](ksevent-structure.md), [**KSMETHOD**](ksmethod-structure.md), 
 
 ```cpp
 struct KSPROPERTY {
-  GUID  Set;
+  GUID �Set;
   ULONG Id;
   ULONG Flags;
 };

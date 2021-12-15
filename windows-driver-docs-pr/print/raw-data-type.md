@@ -6,7 +6,6 @@ keywords:
 - data types WDK print processor
 - RAW data type WDK print processor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # RAW Data Type

@@ -3,7 +3,6 @@ title: User-Mode Driver Framework Debugging
 description: User-Mode Driver Framework Debugging
 keywords: ["User-Mode Driver Framework debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # User-Mode Driver Framework Debugging

@@ -12,7 +12,6 @@ keywords:
 - upgrading network components WDK , notify objects
 - installing network components WDK , notify objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing, Upgrading, and Removing the Component

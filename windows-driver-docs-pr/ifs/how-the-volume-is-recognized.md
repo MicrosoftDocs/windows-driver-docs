@@ -7,7 +7,6 @@ keywords:
 - volumes WDK file system , mounting
 - mounting volumes WDK file systems
 ms.date: 10/16/2019
-ms.localizationpriority: medium
 ---
 
 # How the Volume is Recognized

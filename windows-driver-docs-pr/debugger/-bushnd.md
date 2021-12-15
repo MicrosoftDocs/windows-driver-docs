@@ -1,5 +1,5 @@
 ---
-title: bushnd
+title: bushnd (WinDbg)
 description: The bushnd extension displays a HAL BUS_HANDLER structure.
 keywords: ["bushnd Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - bushnd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bushnd

@@ -7,7 +7,6 @@ keywords:
 - display drivers WDK Windows 2000
 - display drivers WDK Windows 2000 , about display drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Display Drivers (Windows 2000 Model)

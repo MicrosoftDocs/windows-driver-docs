@@ -9,7 +9,6 @@ api_name:
 - wmitrace.tmffile
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wmitrace.tmffile

@@ -8,7 +8,6 @@ keywords:
 - storage IDE controller minidrivers WDK , calling
 - initializing IDE controller minidrivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing and Calling IDE Minidriver Routines

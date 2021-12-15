@@ -2,7 +2,6 @@
 title: Overview of Hyper-V Extensible Switch Policies
 description: Overview of Hyper-V Extensible Switch Policies
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Hyper-V Extensible Switch Policies

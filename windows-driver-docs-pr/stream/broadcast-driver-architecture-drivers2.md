@@ -12,7 +12,6 @@ keywords:
 - signal manipulation WDK BDA
 - radio frequency tuner node WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Broadcast Driver Architecture Drivers

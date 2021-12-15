@@ -2,7 +2,6 @@
 title: PCI Sample
 description: PCI Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PCI Sample

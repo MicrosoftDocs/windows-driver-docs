@@ -7,7 +7,6 @@ keywords:
 - Serial driver WDK , configurations
 - Serenum driver WDK , configurations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuration of Serial Devices and Drivers

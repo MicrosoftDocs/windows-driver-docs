@@ -5,7 +5,6 @@ ms.assetid:
 ms.date: 10/30/2020
 keywords: 
  -OID_QOS_OFFLOAD_CREATE_SQ Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_QOS_OFFLOAD_CREATE_SQ

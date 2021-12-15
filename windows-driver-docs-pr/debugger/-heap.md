@@ -1,5 +1,5 @@
 ---
-title: heap
+title: heap (WinDbg)
 description: The heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
 keywords: ["heap usage", "GFlags, enabling page heap", "heap Windows Debugging"]
 ms.date: 08/23/2019
@@ -9,7 +9,6 @@ api_name:
 - heap
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !heap

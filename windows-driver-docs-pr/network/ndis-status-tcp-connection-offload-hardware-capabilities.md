@@ -4,7 +4,6 @@ description: MUX intermediate drivers use the NDIS_STATUS_TCP_CONNECTION_OFFLOAD
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_TCP\_CONNECTION\_OFFLOAD\_HARDWARE\_CAPABILITIES

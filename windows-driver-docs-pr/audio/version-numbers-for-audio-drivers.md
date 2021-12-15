@@ -11,7 +11,6 @@ keywords:
 - audio drivers WDK , models supported
 - driver version numbers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Version Numbers for Audio Drivers

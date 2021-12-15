@@ -3,7 +3,6 @@ title: Extracting Information from a Dump File
 description: Extracting Information from a Dump File
 keywords: ["extracting information from a dump file", "dump file, extracting various information", "machine name (determining from a dump file)", "computer name (determining from a dump file)", "IP address (determining from a dump file)"]
 ms.date: 03/13/2019
-ms.localizationpriority: medium
 ---
 
 # Extracting Information from a Dump File

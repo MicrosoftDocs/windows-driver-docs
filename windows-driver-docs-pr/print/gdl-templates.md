@@ -11,7 +11,6 @@ keywords:
 - inheritance WDK GDL
 - schemas WDK GDL , inheritance-based schemas
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Templates

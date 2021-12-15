@@ -1,5 +1,5 @@
 ---
-title: hidppd
+title: hidppd (WinDbg)
 description: The hidppd extension displays the contents of the HIDP_PREPARSED_DATA structure.
 keywords: ["HIDP_PREPARSED_DATA", "hidppd Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - hidppd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !hidppd

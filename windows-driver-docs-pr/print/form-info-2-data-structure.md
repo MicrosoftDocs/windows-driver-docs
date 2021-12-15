@@ -4,7 +4,6 @@ description: FORM_INFO_2 Data Structure
 keywords:
 - FORM_INFO_2 data structure WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # FORM\_INFO\_2 Data Structure

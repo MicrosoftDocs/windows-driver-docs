@@ -3,7 +3,6 @@ title: Using Direct I/O with DMA
 description: Using Direct I/O with DMA
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O", "DMA transfers WDK kernel , direct I/O"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Direct I/O with DMA

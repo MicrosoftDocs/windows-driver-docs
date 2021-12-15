@@ -11,7 +11,6 @@ keywords:
 - viewing print server pages
 - print URLs WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing Print Web Pages

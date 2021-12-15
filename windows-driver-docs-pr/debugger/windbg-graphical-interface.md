@@ -3,7 +3,6 @@ title: Using the WinDbg Graphical Interface
 description: This section covers using the WinDbg Graphical Interface
 keywords: WinDbg, graphical interface, GUI, graphical interface
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the WinDbg Graphical Interface

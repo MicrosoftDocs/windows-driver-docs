@@ -2,7 +2,6 @@
 title: Data Out Endpoint Descriptor
 description: Data Out Endpoint Descriptor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Out Endpoint Descriptor

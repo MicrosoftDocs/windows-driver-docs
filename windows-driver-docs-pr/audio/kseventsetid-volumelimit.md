@@ -2,7 +2,6 @@
 title: KSEVENTSETID\_VolumeLimit
 description: The KSEVENTSETID\_VolumeLimit event set has been introduced with Windows 8.1.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSEVENTSETID\_VolumeLimit

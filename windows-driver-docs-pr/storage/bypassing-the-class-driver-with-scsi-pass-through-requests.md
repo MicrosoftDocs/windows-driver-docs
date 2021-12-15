@@ -2,7 +2,6 @@
 title: Bypassing the Class Driver with SCSI Pass-Through Requests
 description: Bypassing the Class Driver with SCSI Pass-Through Requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bypassing the Class Driver with SCSI Pass-Through Requests

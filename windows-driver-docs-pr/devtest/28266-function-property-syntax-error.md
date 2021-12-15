@@ -1,11 +1,10 @@
 ---
-title: C28266
+title: C28266 warning
 description: A syntax error in the annotations was found for the property in the function.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # C28266

@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_COMPRESSION
-description: The WIA\_IPA\_COMPRESSION property contains the current compression type that is used. The WIA minidriver creates and maintains this property.
+title: WIA_IPA_COMPRESSION
+description: The WIA_IPA_COMPRESSION property contains the current compression type that is used. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPA_COMPRESSION Imaging Devices"]
 topic_type:
 - apiref
@@ -10,113 +10,44 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/04/2021
 ---
 
-# WIA\_IPA\_COMPRESSION
+# WIA_IPA_COMPRESSION
 
+The WIA_IPA_COMPRESSION property contains the current compression type that is used. The WIA minidriver creates and maintains this property.
 
-The WIA\_IPA\_COMPRESSION property contains the current compression type that is used. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ipa_compression_si"></span><span id="DDK_WIA_IPA_COMPRESSION_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write (image acquisitions); read-only (image storage)
 
 ## Remarks
 
-An application reads the WIA\_IPA\_COMPRESSION property to determine the image compression type, or the application sets this property to configure the compression setting.
+An application reads the WIA_IPA_COMPRESSION property to determine the image compression type, or the application sets this property to configure the compression setting.
 
-The following table describes the constants that are valid with WIA\_IPA\_COMPRESSION.
+The following table describes the constants that are valid with WIA_IPA_COMPRESSION.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_COMPRESSION_BI_RLE4</p></td>
-<td><p>RLE 4 compression</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_COMPRESSION_BI_RLE8</p></td>
-<td><p>RLE 8 compression</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_COMPRESSION_G3</p></td>
-<td><p>Group 3 compression</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_COMPRESSION_G4</p></td>
-<td><p>Group 4 compression</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_COMPRESSION_JBIG<em></p></td>
-<td><p>IS 11544 (ITU-T T.82) compression</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_COMPRESSION_JPEG</p></td>
-<td><p>JPEG compression</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_COMPRESSION_JPEG2K</em></p></td>
-<td><p>JPEG 2000 compression</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_COMPRESSION_NONE</p></td>
-<td><p>No compression</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_COMPRESSION_PNG*</p></td>
-<td><p>W3C PNG compression</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| WIA_COMPRESSION_BI_RLE4 | RLE 4 compression |
+| WIA_COMPRESSION_BI_RLE8 | RLE 8 compression |
+| WIA_COMPRESSION_G3 | Group 3 compression |
+| WIA_COMPRESSION_G4 | Group 4 compression |
+| WIA_COMPRESSION_JBIG | IS 11544 (ITU-T T.82) compression |
+| WIA_COMPRESSION_JPEG | JPEG compression |
+| WIA_COMPRESSION_JPEG2K | JPEG 2000 compression |
+| WIA_COMPRESSION_NONE | No compression |
+| WIA_COMPRESSION_PNG | W3C PNG compression |
 
- 
+> [!NOTE]
+> When the file format is WiaImgFmt_XPS or WiaImgFmt_PDFA, WIA_COMPRESSION_NONE means "not defined"; the device cannot choose the internal compression (if any) for images that are stored in these two document formats.
 
-Values that are marked with an asterisk (\*) are for Windows Vista and later operating systems only.
+All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is WIA_COMPRESSION_NONE.
 
-**Note**   When the file format is WiaImgFmt\_XPS or WiaImgFmt\_PDFA, WIA\_COMPRESSION\_NONE means "not defined"; the device cannot choose the internal compression (if any) for images that are stored in these two document formats.
-
- 
-
-All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is WIA\_COMPRESSION\_NONE.
-
-The access rights of the WIA\_IPA\_COMPRESSION property are read/write for all image acquisitions but read-only for stored image items.
+The access rights of the WIA_IPA_COMPRESSION property are read/write for all image acquisitions but read-only for stored image items.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

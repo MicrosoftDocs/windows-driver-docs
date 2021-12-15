@@ -5,7 +5,6 @@ keywords:
 - TMM WDK display , IViewHelper requirements
 - monitor configurations WDK display , IViewHelper requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requirements of an IViewHelper Clone-View COM Object

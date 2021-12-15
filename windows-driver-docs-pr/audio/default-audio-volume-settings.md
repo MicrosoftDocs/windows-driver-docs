@@ -14,7 +14,6 @@ keywords:
 - default master-volume settings
 - full-volume sliders WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Default Audio Volume Settings

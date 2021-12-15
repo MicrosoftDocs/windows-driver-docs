@@ -7,7 +7,6 @@ keywords:
 - rendering multisamples WDK DirectX 8.0 , StretchBlt
 - stretch blit operations WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multisample Support through StretchBlt

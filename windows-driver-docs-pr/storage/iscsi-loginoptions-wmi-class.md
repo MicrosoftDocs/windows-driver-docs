@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_LoginOptions WMI Class
 description: ISCSI\_LoginOptions WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

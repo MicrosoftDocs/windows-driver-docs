@@ -7,7 +7,6 @@ keywords:
 - checked builds WDK , messages
 - messages WDK checked builds
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # Checked Build Breakpoints and Messages

@@ -9,7 +9,6 @@ api_name:
 - bthkd.l2capinterface
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bthkd.l2capinterface

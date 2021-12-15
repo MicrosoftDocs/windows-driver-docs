@@ -7,7 +7,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , strategies
 - display drivers WDK Windows 2000 , strategies
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Design and Implementation Strategies

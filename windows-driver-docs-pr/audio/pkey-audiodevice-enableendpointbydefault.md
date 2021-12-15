@@ -2,7 +2,6 @@
 title: PKEY\_AudioDevice\_EnableEndpointByDefault
 description: PKEY\_AudioDevice\_EnableEndpointByDefault
 ms.date: 01/15/2020
-ms.localizationpriority: medium
 ---
 
 # PKEY\_AudioDevice\_EnableEndpointByDefault

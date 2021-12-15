@@ -9,7 +9,6 @@ api_name:
 - .frame (Set Local Context)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .frame (Set Local Context)

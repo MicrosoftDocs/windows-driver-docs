@@ -10,7 +10,6 @@ keywords:
 - Plug and Play WDK storage
 - converting SCSI class drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting an Existing SCSI Class Driver for Plug and Play

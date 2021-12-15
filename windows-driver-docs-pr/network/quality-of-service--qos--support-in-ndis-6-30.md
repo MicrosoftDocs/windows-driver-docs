@@ -2,7 +2,6 @@
 title: Quality of Service (QoS) Support in NDIS 6.30
 description: Quality of Service (QoS) Support in NDIS 6.30
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Quality of Service (QoS) Support in NDIS 6.30

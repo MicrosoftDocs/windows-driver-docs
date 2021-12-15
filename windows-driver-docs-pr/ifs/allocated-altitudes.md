@@ -5,7 +5,6 @@ ms.date: 05/27/2021
 keywords:
 - filter driver altitude
 - minifilter driver altitude
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q1
 ---
 

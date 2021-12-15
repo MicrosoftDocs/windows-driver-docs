@@ -2,7 +2,6 @@
 title: Pedometer data fields
 description: This topic provides information about the data fields that are specific to the pedometer.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Pedometer data fields

@@ -6,7 +6,6 @@ keywords:
 - storage changer drivers WDK , class drivers
 - class drivers WDK storage , changer drivers
 ms.date: 12/15/2019
-ms.localizationpriority: medium
 ---
 
 # About the Changer Class Driver

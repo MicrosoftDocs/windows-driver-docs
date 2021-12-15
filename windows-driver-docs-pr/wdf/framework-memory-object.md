@@ -7,7 +7,6 @@ keywords:
 - memory objects WDK UMDF
 - IWDFMemory
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Memory Object

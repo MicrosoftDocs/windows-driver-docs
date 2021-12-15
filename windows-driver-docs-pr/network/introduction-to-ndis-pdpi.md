@@ -2,7 +2,6 @@
 title: Introduction to the NDIS PacketDirect Provider Interface
 description: This section provides an introduction to the NDIS PacketDirect Provider Interface (PDPI)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to the NDIS PacketDirect Provider Interface

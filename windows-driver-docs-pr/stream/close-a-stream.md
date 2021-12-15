@@ -6,7 +6,6 @@ keywords:
 - stream closing WDK AV/C streaming
 - closing streams
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Close a Stream

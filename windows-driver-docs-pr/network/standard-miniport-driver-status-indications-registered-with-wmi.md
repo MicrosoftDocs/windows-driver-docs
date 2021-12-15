@@ -6,7 +6,6 @@ keywords:
 - WMI WDK networking , status indications
 - Windows Management Instrumentation WDK networking , status indications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standard Miniport Driver Status Indications Registered with WMI

@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - BTP battery tests
 description: Bluetooth Test Platform (BTP) battery tests.
 ms.date: 06/09/2021
-ms.localizationpriority: medium
 ---
 
 # BTP battery Tests

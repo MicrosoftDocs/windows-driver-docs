@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x167: CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP
@@ -32,16 +31,16 @@ The CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMPP bug check has a val
 |4| Reserved.|
 
 
-## ## Cause
+## Cause
 
 A Cluster Service call to the volsnap to query snapshot information took too long.
 
 (This code can never be used for a real bugcheck.)
 
-## ## Resolution
+## Resolution
  
 
-## ## See Also-
+## See Also-
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

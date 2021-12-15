@@ -9,7 +9,6 @@ api_name:
 - storagekd.storhelp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !storagekd.storhelp

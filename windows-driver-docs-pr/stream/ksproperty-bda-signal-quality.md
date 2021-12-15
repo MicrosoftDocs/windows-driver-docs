@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_SIGNAL\_QUALITY
-description: Clients use KSPROPERTY\_BDA\_SIGNAL\_QUALITY to determine the amount of data successfully extracted from the signal as a percent.
+title: KSPROPERTY_BDA_SIGNAL_QUALITY
+description: Clients use KSPROPERTY_BDA_SIGNAL_QUALITY to determine the amount of data successfully extracted from the signal as a percent.
 keywords: ["KSPROPERTY_BDA_SIGNAL_QUALITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,53 +10,22 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/14/2021
 ---
 
-# KSPROPERTY\_BDA\_SIGNAL\_QUALITY
+# KSPROPERTY_BDA_SIGNAL_QUALITY
 
+Clients use **KSPROPERTY_BDA_SIGNAL_QUALITY** to determine the amount of data successfully extracted from the signal as a percent.
 
-Clients use KSPROPERTY\_BDA\_SIGNAL\_QUALITY to determine the amount of data successfully extracted from the signal as a percent.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_signal_quality_ks"></span><span id="DDK_KSPROPERTY_BDA_SIGNAL_QUALITY_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin or Filter</p></td>
-<td><p>KSP_NODE</p></td>
-<td><p>LONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Pin or Filter | [**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node) | LONG |
 
 ## Remarks
 
-The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
+The **NodeId** member of **KSP_NODE** specifies the identifier of the control node or is set to −1 to specify a pin.
 
 The returned value specifies the data that is extracted from the signal as a percent.
 
@@ -66,37 +35,22 @@ In the case of analog signals, this percentage can be computed by examining the 
 
 In the case of digital signals, this percentage can be computed by examining packet cyclic redundancy checks (CRC) and forward error correction (FEC) confidence values as follows:
 
--   100 percent is ideal.
+- 100 percent is ideal.
 
--   95 percent shows very little (almost unnoticeable) artifacts when rendered.
+- 95 percent shows very little (almost unnoticeable) artifacts when rendered.
 
--   90 percent contains few enough artifacts as to be easily viewable.
+- 90 percent contains few enough artifacts as to be easily viewable.
 
--   80 percent is the minimum level to be viewable.
+- 80 percent is the minimum level to be viewable.
 
--   60 percent is the minimum level to expect data services, including receiving an electronic program guide (EPG), to work.
+- 60 percent is the minimum level to expect data services, including receiving an electronic program guide (EPG), to work.
 
--   20 percent indicates that the demodulator is aware that a properly modulated signal exists but cannot produce enough data to be useful.
+- 20 percent indicates that the demodulator is aware that a properly modulated signal exists but cannot produce enough data to be useful.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
-[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
-
+[**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)

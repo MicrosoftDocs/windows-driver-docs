@@ -6,7 +6,6 @@ keywords:
 - multisample rendering WDK DirectX 8.0 , creating
 - rendering multisamples WDK DirectX 8.0 , creating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling the Creation of Multisampled Surfaces

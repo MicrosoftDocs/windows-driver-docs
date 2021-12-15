@@ -1,9 +1,8 @@
 ---
-title: dcs
+title: dcs (WinDbg)
 description: dcs
 keywords: ["dcs extension (obsolete)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # !dcs

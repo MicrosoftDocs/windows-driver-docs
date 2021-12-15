@@ -2,7 +2,6 @@
 title: Release-Signing a Driver through an Embedded Signature
 description: Release-Signing a Driver through an Embedded Signature
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Release-Signing a Driver through an Embedded Signature
@@ -19,7 +18,7 @@ As with [catalog files](catalog-files.md), the [**SignTool**](../devtest/signtoo
 
 - Test-sign the 64-bit version of the Toastpkg sample's binary file, toaster.sys. Within the WDK installation directory, this file is located in the *src\\general\\toaster\\toastpkg\\toastcd\\amd64* directory.
 
-- Use a [Software Publisher Certificate (SPC)](software-publisher-certificate.md) issued by a commercial certificate authority (CA).
+- Use a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) issued by a commercial certificate authority (CA).
 
 - Use a compatible cross-certificate for SPC.
 
@@ -54,4 +53,4 @@ Where:
 
 For more information about SignTool and its command-line arguments, see [**SignTool**](../devtest/signtool.md).
 
-For more information about release-signing a driver through an embedded signature, see [Release-Signing Driver Packages](release-signing-driver-packages.md) and [Release-Signing a Driver File](release-signing-a-driver-file.md).
+For more information about release-signing a driver through an embedded signature, see [Release-Signing Driver Packages](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) and [Release-Signing a Driver File](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).

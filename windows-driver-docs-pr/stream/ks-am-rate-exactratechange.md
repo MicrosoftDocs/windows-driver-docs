@@ -1,6 +1,6 @@
 ---
-title: KS\_AM\_RATE\_ExactRateChange
-description: The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
+title: KS_AM_RATE_ExactRateChange
+description: The KS_AM_RATE_ExactRateChange property is not yet implemented.
 keywords: ["KS_AM_RATE_ExactRateChange Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,72 +10,29 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/11/2021
 ---
 
-# KS\_AM\_RATE\_ExactRateChange
+# KS_AM_RATE_ExactRateChange
 
+The KS_AM_RATE_ExactRateChange property is not yet implemented.
 
-The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
+## Usage Summary Table
 
-## <span id="ddk_ks_am_rate_exactratechange_ks"></span><span id="DDK_KS_AM_RATE_EXACTRATECHANGE_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_AM_ExactRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange" data-raw-source="[&lt;strong&gt;KS_AM_ExactRateChange&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange)"><strong>KS_AM_ExactRateChange</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a KS\_AM\_ExactRateChange structure.
+The property value (operation data) is a **KS_AM_ExactRateChange** structure.
 
 ## Remarks
 
-This property always returns STATUS\_NOT\_IMPLEMENTED.
+This property always returns STATUS_NOT_IMPLEMENTED.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
-[**KS\_AM\_ExactRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange)
+[**KS_AM_ExactRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange)

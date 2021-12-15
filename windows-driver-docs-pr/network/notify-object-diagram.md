@@ -8,7 +8,6 @@ keywords:
 - subsystem WDK network configuration
 - notifications WDK networking , notifyo object diagram
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Notify Object Diagram

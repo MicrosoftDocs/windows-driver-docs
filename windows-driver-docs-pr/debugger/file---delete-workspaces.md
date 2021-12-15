@@ -3,7 +3,6 @@ title: File Delete Workspaces
 description: File Delete Workspaces
 keywords: ["File Delete Workspaces", "workspaces, File Delete Workspaces"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Delete Workspaces

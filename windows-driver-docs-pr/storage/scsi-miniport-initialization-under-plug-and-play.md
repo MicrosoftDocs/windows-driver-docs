@@ -8,7 +8,6 @@ keywords:
 - initializing SCSI miniport drivers
 - SCSI miniport drivers WDK storage , initializing
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Initialization Under Plug and Play

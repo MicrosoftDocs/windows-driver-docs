@@ -4,7 +4,6 @@ description: NDIS issues an object identifier (OID) method request of OID_NIC_SW
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_CREATE_SWITCH Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NIC\_SWITCH\_CREATE\_SWITCH
@@ -40,7 +39,7 @@ When it receives the OID method request of OID\_NIC\_SWITCH\_CREATE\_SWITCH, the
 
 4.  The PF miniport driver that supports dynamic switch creation and configuration must enable SR-IOV virtualization on the switch by calling [**NdisMEnableVirtualization**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismenablevirtualization). This call configures the **NumVFs** member and the **VF Enable** bit in the SR-IOV Extended Capability structure of the adapter's PCI Express (PCIe) configuration space.
 
-    For more information about the SR-IOV configuration space, see the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](https://go.microsoft.com/fwlink/p/?linkid=221742) specification.
+    For more information about the SR-IOV configuration space, see the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](https://pcisig.com/specifications/iov/single_root) specification.
 
     **Note**  If the PF miniport driver supports static switch creation, it enables SR-IOV virtualization after it creates the switch when [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) is called.
 

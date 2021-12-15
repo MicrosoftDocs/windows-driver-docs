@@ -2,7 +2,6 @@
 title: Hello World' Installation File
 description: Hello World' Installation File
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 'Hello World' Installation File

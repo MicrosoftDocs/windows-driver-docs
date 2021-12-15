@@ -5,7 +5,6 @@ keywords:
 - calling COPP DDI WDK DirectX VA
 - user-mode component calls WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling the COPP DDI from a User-Mode Component

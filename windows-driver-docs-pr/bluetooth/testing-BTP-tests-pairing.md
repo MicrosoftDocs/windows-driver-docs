@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - Pairing
 description: Bluetooth Test Platform (BTP) pairing tests.
 ms.date: 06/09/2021
-ms.localizationpriority: medium
 ---
 
 # BTP Pairing Tests

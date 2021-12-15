@@ -2,7 +2,6 @@
 title: Opening a SerCx2-Managed Serial Port
 description: If your peripheral driver controls a device on a serial port that is jointly managed by SerCx2 and a serial controller driver, your driver can open a logical connection to this port and then send I/O requests to the device through the port.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening a SerCx2-Managed Serial Port

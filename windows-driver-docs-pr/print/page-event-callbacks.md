@@ -9,7 +9,6 @@ keywords:
 - page event callbacks WDK CPSUI
 - event callbacks WDK CPSUI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Page Event Callbacks

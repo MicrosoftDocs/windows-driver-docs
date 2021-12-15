@@ -7,7 +7,6 @@ keywords:
 - Direct3D version 9 drivers WDK Windows 7 display , DDI changes
 - XR_BIAS WDK Windows 7 display , Direct3D version 9 DDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DDI Changes for Direct3D Version 9 Drivers

@@ -5,7 +5,6 @@ keywords:
 - INF files WDK display , start type values
 - start type values WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the Start Type Value

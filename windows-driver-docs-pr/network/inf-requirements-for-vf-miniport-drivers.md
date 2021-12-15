@@ -2,13 +2,12 @@
 title: INF Requirements for VF Miniport Drivers
 description: INF Requirements for VF Miniport Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF Requirements for VF Miniport Drivers
 
 
-The INF file for the miniport driver of a PCI Express (PCIe) Virtual Function (VF) does not specify any standardized INF keywords for single root I/O virtualization (SR-IOV). Only the INF file of a PCIe Physical Function (PF) specifies standardized SR-IOV keywords. For more information about these keywords, see [INF Requirements for PF Miniport Drivers](inf-requirements-for-pf-miniport-drivers.md).
+The INF file for the miniport driver of a PCI Express (PCIe) Virtual Function (VF) does not specify any [standardized INF keywords for single root I/O virtualization (SR-IOV)](standardized-inf-keywords-for-sr-iov.md). Only the INF file of a PCIe Physical Function (PF) specifies standardized SR-IOV keywords. For more information about these keywords, see [INF Requirements for PF Miniport Drivers](inf-requirements-for-pf-miniport-drivers.md).
 
 The INF for a VF miniport driver follows (with one exception) the same requirements as other INF files for network adapters. For more information, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 

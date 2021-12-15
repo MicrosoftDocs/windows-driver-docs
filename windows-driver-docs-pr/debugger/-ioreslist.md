@@ -1,5 +1,5 @@
 ---
-title: ioreslist
+title: ioreslist (WinDbg)
 description: The ioreslist extension displays an IO_RESOURCE_REQUIREMENTS_LIST structure.
 keywords: ["ioreslist Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ioreslist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ioreslist

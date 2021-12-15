@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FibrePortHBAStatistics WMI Class
 description: MSFC\_FibrePortHBAStatistics WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

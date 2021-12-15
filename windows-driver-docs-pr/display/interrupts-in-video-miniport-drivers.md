@@ -6,7 +6,6 @@ keywords:
 - interrupts WDK video miniport
 - HwVidInterrupt
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interrupts in Video Miniport Drivers

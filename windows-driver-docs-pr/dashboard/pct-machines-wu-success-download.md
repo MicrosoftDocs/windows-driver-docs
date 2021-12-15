@@ -3,7 +3,6 @@ title: Percent of machines that WU reported a successful download within the las
 description: The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that reported a successful download from Windows Update
 ms.topic: article
 ms.date: 02/28/2020
-ms.localizationpriority: medium
 ---
  
 # Percent of machines that Windows Update (WU) reported a successful download within the last 28 days

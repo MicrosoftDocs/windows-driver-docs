@@ -9,7 +9,6 @@ keywords:
 - stopping timers WDK KMDF
 - starting timers WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Timers

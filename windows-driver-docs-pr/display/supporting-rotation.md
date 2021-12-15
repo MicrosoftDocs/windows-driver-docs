@@ -2,7 +2,6 @@
 title: Supporting Rotation
 description: Supporting Rotation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Rotation

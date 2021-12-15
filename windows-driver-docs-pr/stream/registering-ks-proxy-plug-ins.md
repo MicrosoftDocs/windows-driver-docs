@@ -5,7 +5,6 @@ keywords:
 - Kernel Streaming Proxy WDK AVStream , registering plug-ins
 - registering Kernel Streaming Proxy plug-ins WDK AVStream
 ms.date: 06/18/2020
-ms.localizationpriority: medium
 ---
 
 # Registering KS proxy plug-ins

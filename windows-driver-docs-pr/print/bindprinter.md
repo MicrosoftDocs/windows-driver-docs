@@ -4,7 +4,6 @@ description: The IPrintTicketProvider BindPrinter method binds a printer or prin
 keywords:
 - BindPrinter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # BindPrinter

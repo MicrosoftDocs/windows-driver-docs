@@ -2,7 +2,6 @@
 title: Object Handle and Event Order
 description: Object Handle and Event Order
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Object Handle and Event Order

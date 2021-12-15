@@ -5,7 +5,6 @@ keywords:
 - stress testing WDK printer
 - bus stress testing WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stress Testing

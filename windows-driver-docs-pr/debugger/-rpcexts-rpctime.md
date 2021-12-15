@@ -9,7 +9,6 @@ api_name:
 - rpcexts.rpctime
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.rpctime

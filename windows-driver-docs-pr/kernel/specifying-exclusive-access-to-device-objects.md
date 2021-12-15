@@ -3,7 +3,6 @@ title: Specifying Exclusive Access to Device Objects
 description: Specifying Exclusive Access to Device Objects
 keywords: ["exclusive access WDK device objects", "device objects WDK kernel , exclusive access", "single access WDK device objects"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Exclusive Access to Device Objects

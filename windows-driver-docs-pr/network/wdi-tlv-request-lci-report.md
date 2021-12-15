@@ -4,11 +4,12 @@ description: WDI_TLV_REQUEST_LCI_REPORT is a TLV that contains information for w
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_REQUEST_LCI_REPORT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # WDI_TLV_REQUEST_LCI_REPORT
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_REQUEST_LCI_REPORT** is a TLV that contains information for whether a Location Configuration Information (LCI) report should be requested from a target BSS during a Fine Timing Measurement (FTM) request.
 

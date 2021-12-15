@@ -3,7 +3,6 @@ title: Calling Support Routines That Use Spin Locks
 description: Calling Support Routines That Use Spin Locks
 keywords: ["KeAcquireSpinLock", "KeAcquireInStackQueuedSpinLock", "spin locks WDK kernel", "calling spin lock support routines WDK kernel", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Calling Support Routines That Use Spin Locks

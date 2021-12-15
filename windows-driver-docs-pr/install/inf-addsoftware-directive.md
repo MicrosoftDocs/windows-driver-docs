@@ -1,8 +1,7 @@
 ---
 title: INF AddSoftware Directive
 description: An AddSoftware directive describes the installation of standalone software.
-ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.date: 09/22/2021
 ---
 
 # INF AddSoftware Directive
@@ -25,7 +24,7 @@ AddSoftware=SoftwareName,[flags],software-install-section
 
 *SoftwareName*
 
-Specifies the name of the software to be installed.  This name uniquely identifies the software.  The processing of an **AddSoftware** directive checks the version against previous software installed with the same name by an **AddSoftware** directive from any driver package.  We recommend prefacing the SoftwareName with the vendor name, for example `ContosoControlPanel`.
+Specifies the name of the software to be installed.  This name must be unique system-wide, regardless of the INF or section name.  The processing of an **AddSoftware** directive checks the version against previous software installed with the same name by an **AddSoftware** directive from any driver package.  We recommend prefacing the SoftwareName with the vendor name, for example `ContosoControlPanel`.
 
 *flags*
 
@@ -36,6 +35,8 @@ The **AddSoftware** directive is processed only once.
 
 **0x00000001**  
 The **AddSoftware** directive is processed once for each component device that specifies **AddSoftware** with the same unique *SoftwareName*.
+
+For example, consider a configuration in which three devices are installed using the same INF file. The software installation process runs only once for *flags* 0x00000000 but three times for *flags* 0x00000001.
 
 *software-install-section*
 

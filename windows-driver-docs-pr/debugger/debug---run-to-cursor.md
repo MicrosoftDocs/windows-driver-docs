@@ -3,7 +3,6 @@ title: Debug Run to Cursor
 description: Debug Run to Cursor
 keywords: ["Debug Run to Cursor", "controlling the target, Debug Run to Cursor"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Run to Cursor

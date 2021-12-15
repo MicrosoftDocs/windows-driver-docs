@@ -11,7 +11,6 @@ keywords:
 - INF files WDK display , about driver installations
 - miniport drivers WDK display , installing
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

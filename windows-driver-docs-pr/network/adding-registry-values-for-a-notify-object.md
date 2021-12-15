@@ -7,7 +7,6 @@ keywords:
 - network notify objects WDK , registry values
 - registry WDK notify objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Registry Values for a Notify Object

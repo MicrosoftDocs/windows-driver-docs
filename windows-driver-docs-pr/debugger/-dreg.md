@@ -1,5 +1,5 @@
 ---
-title: dreg
+title: dreg (WinDbg)
 description: The dreg extension displays registry information.
 keywords: ["dreg Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - dreg
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dreg

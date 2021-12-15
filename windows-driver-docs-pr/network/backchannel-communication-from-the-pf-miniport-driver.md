@@ -2,7 +2,6 @@
 title: Backchannel Communication from the PF Miniport Driver
 description: Backchannel Communication from the PF Miniport Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Backchannel Communication from the PF Miniport Driver

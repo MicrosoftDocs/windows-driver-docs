@@ -2,7 +2,6 @@
 title: Enumerating the Allocated Queues
 description: Enumerating the Allocated Queues
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating the Allocated Queues

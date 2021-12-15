@@ -2,7 +2,6 @@
 title: Magnetometer data fields
 description: This topic provides information about the data fields that are specific to the magnetometer.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Magnetometer data fields

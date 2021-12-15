@@ -2,7 +2,6 @@
 title: Standardized INF keywords for VMMQ
 description: The *RssOnHostVPorts standardized INF keyword is defined to enable or disable support for VMMQ.
 ms.date: 02/28/2021
-ms.localizationpriority: medium
 ---
 
 # Standardized INF keywords for VMMQ
@@ -25,8 +24,8 @@ The following table describes the possible INF entries for the **\*RssOnHostVPor
 
 | SubkeyName       | ParamDesc          | Value       | EnumDesc |
 |-------------------|--------------------|-------------|----------|
-| \*RssOnHostVPorts | Virtual Switch RSS | 0 (Default) | Disabled |
-|                   |                    | 1           | Enabled  |
+| \*RssOnHostVPorts | Virtual Switch RSS | 0  | Disabled |
+|                   |                    | 1 (Default)          | Enabled  |
 
 During miniport adapter initialization, the miniport driver must examine the **\*RssOnHostVPorts** keyword to determine if it should enable the VMMQ feature on the NIC.
 

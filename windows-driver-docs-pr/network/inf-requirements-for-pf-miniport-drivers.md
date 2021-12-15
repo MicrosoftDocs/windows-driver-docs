@@ -2,7 +2,6 @@
 title: INF Requirements for PF Miniport Drivers
 description: INF Requirements for PF Miniport Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF Requirements for PF Miniport Drivers

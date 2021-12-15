@@ -2,7 +2,6 @@
 title: Container IDs for DPWS Devices
 description: Container IDs for DPWS Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Container IDs for DPWS Devices

@@ -4,7 +4,6 @@ description: WDI_TLV_COALESCING_FILTER_MATCH_COUNT is a TLV that contains the nu
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_COALESCING_FILTER_MATCH_COUNT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_COALESCING\_FILTER\_MATCH\_COUNT

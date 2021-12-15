@@ -11,7 +11,6 @@ api_location:
 api_type:
 - UserDefined
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\] routine

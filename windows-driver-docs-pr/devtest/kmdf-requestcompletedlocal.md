@@ -9,7 +9,6 @@ api_name:
 - RequestCompletedLocal
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RequestCompletedLocal rule (kmdf)

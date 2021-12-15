@@ -9,7 +9,6 @@ keywords:
 - Hewlett-Packard Graphics Language WDK MSPlot
 - Microsoft Plotter Driver WDK print
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # Microsoft Plotter Driver

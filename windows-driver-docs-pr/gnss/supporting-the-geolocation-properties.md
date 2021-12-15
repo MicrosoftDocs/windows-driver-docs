@@ -2,7 +2,6 @@
 title: Supporting the geolocation properties
 description: The source file, geolocation.cpp, contains three arrays of PROPERTYKEY structures that define the properties supported by the simulated sensor.
 ms.date: 08/25/2021
-ms.localizationpriority: medium
 ---
 
 # Supporting the geolocation properties

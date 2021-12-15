@@ -5,7 +5,6 @@ keywords:
 - multiple-head hardware WDK DirectX 9.0 , configuring
 - multiple-head hardware WDK DirectX 9.0 , adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Identifying Adapter Group and Providing Capabilities

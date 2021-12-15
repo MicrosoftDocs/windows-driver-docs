@@ -2,7 +2,6 @@
 title: Release-Signing a Driver Package's Catalog File
 description: Release-Signing a Driver Package's Catalog File
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Release-Signing a Driver Package's Catalog File
@@ -17,7 +16,7 @@ The following command line shows how to run SignTool to do the following:
 
 - Release-sign the *tstamd64.cat* catalog file of the *ToastPkg* sample [driver package](driver-packages.md). For more information about how this [catalog file](catalog-files.md) was created, see [Creating a Catalog File for Release-Signing a Driver Package](creating-a-catalog-file-for-release-signing-a-driver-package.md).
 
-- Use a [Software Publisher Certificate (SPC)](software-publisher-certificate.md) issued by a commercial certificate authority (CA).
+- Use a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) issued by a commercial certificate authority (CA).
 
 - Use a compatible cross-certificate for SPC.
 
@@ -52,4 +51,4 @@ Where:
 
 For more information about SignTool and its command-line arguments, see [**SignTool**](../devtest/signtool.md).
 
-For more information about release-signing driver packages, see [Release-Signing Driver Packages](release-signing-driver-packages.md).
+For more information about release-signing driver packages, see [Release-Signing Driver Packages](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).

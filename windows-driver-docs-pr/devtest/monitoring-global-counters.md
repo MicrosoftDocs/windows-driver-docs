@@ -7,7 +7,6 @@ keywords:
 - statistics WDK Driver Verifier
 - counters WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Monitoring Global Counters

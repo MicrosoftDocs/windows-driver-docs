@@ -2,7 +2,6 @@
 title: Other ACPI namespace objects
 description: For some specific classes of device, there are requirements for additional ACPI namespace objects to appear under those devices in the namespace.
 ms.date: 05/22/2020
-ms.localizationpriority: medium
 ---
 
 # Other ACPI namespace objects

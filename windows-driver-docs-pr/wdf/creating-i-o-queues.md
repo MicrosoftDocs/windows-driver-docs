@@ -7,7 +7,6 @@ keywords:
 - default I/O queues WDK KMDF
 - creating I/O queues WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating I/O Queues

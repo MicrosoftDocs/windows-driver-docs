@@ -3,7 +3,6 @@ title: DispatchReadWrite in Higher-Level Drivers
 description: DispatchReadWrite in Higher-Level Drivers
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DispatchReadWrite in Higher-Level Drivers

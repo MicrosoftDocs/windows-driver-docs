@@ -7,7 +7,6 @@ keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , about custom UI display requests
 - displaying custom UI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Requests for the Display of a Custom UI

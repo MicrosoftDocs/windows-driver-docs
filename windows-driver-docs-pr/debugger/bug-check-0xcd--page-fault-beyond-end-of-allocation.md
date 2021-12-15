@@ -9,7 +9,6 @@ api_name:
 - PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCD: PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION

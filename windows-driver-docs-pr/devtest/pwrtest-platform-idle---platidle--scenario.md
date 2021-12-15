@@ -2,7 +2,6 @@
 title: PwrTest Platform Idle Scenario
 description: The PwrTest Platform Idle Scenario (/platidle) polls and attempts to log platform idle transition counts if they are supported by the computer.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PwrTest Platform Idle Scenario

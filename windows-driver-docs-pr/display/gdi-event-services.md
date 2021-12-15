@@ -7,7 +7,6 @@ keywords:
 - drawing WDK GDI , events
 - events WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Event Services

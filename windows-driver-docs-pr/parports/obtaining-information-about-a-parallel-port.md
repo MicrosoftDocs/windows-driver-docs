@@ -4,7 +4,6 @@ description: Obtaining Information About a Parallel Port
 keywords:
 - parallel ports WDK , obtaining information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining Information About a Parallel Port

@@ -7,7 +7,6 @@ keywords:
 - unsupported SRB_FUNCTION_XXX
 - SRB_FUNCTION_XXX unsupported
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Unsupported SRB\_FUNCTION\_XXX

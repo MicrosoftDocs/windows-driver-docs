@@ -8,7 +8,6 @@ keywords:
 - vertex buffers WDK Direct3D
 - Direct3D WDK Windows 2000 display , flexible vertex format
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the Vertex Buffer Data Format

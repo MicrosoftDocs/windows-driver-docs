@@ -2,7 +2,6 @@
 title: Running InfVerif from the command line
 description: This topic lists the options that are available when you run InfVerif.exe from the command line.
 ms.date: 04/28/2020
-ms.localizationpriority: medium
 ---
 
 # Running InfVerif from the command line
@@ -74,3 +73,14 @@ To validate multiple INF files, provide multiple filenames or use a wildcard:
 infverif.exe /w test1.inf test2.inf
 infverif.exe /w test*.inf
 ```
+
+## InfVerif and MSBuild tasks
+
+MSBuild runs InfVerif as a task automatically, right after the [Stampinf task](./stampinf-task.md).
+It uses the **Target Platform** in the project properties (**Configuration Properties->Driver Settings**) to auto-configure as follows:
+
+* Target Platform = Desktop uses `InfVerif /k`
+* Target Platform = Universal uses `InfVerif /u`
+* Target Platform = Windows Driver uses `InfVerif /w`
+
+It is not possible to change that automatic invocation. If you want to use other settings described above, you can either run InfVerif as a standalone or call InfVerif.exe using a custom target in the .vcxproj file.

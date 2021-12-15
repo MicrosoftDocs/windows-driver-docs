@@ -2,7 +2,6 @@
 title: PackageInfo XML schema definition
 description: PackageInfo XML schema definition
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PackageInfo XML schema definition

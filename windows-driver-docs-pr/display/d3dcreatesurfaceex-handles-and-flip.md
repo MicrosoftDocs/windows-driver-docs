@@ -7,7 +7,6 @@ keywords:
 - flipping WDK Direct3D
 - DdFlip
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # D3dCreateSurfaceEx Handles and Flip

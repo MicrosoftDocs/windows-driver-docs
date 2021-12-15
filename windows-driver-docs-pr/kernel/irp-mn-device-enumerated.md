@@ -4,7 +4,6 @@ description: The PnP manager uses this I/O request packet (IRP) to notify bus dr
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_DEVICE_ENUMERATED Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DEVICE\_ENUMERATED

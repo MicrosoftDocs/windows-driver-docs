@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPS\_PREVIEW
-description: The WIA\_DPS\_PREVIEW property indicates the preview mode for a device. An application sets this property to place the device into a preview mode.
+title: WIA_DPS_PREVIEW
+description: The WIA_DPS_PREVIEW property indicates the preview mode for a device. An application sets this property to place the device into a preview mode.
 keywords: ["WIA_DPS_PREVIEW Imaging Devices"]
 topic_type:
 - apiref
@@ -10,83 +10,34 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPS\_PREVIEW
+# WIA_DPS_PREVIEW
 
+The WIA_DPS_PREVIEW property indicates the preview mode for a device. An application sets this property to place the device into a preview mode.
 
-The WIA\_DPS\_PREVIEW property indicates the preview mode for a device. An application sets this property to place the device into a preview mode.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dps_preview_si"></span><span id="DDK_WIA_DPS_PREVIEW_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
 ## Remarks
 
-The following table describes the constants that are valid with the WIA\_DPS\_PREVIEW property.
+The following table describes the constants that are valid with the WIA_DPS_PREVIEW property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_FINAL_SCAN</p></td>
-<td><p>The application will perform a final scan.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_PREVIEW_SCAN</p></td>
-<td><p>The application will perform a preview scan.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Definition |
+|--|--|
+| WIA_FINAL_SCAN | The application will perform a final scan. |
+| WIA_PREVIEW_SCAN | The application will perform a preview scan. |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available for Microsoft Windows XP. For Windows Vista and later, use the identical WIA_IPS_PREVIEW property.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete, use the WIA_IPS_PREVIEW property instead.
+
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_IPS\_PREVIEW**](wia-ips-preview.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_PREVIEW**](wia-ips-preview.md)

@@ -1,5 +1,5 @@
 ---
-title: envvar
+title: envvar (WinDbg)
 description: The envvar extension displays the value of the specified environment variable.
 keywords: ["envvar Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - envvar
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !envvar

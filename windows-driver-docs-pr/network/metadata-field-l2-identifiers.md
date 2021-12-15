@@ -4,7 +4,6 @@ description: This section describes metadata field L2 identifiers for Windows Fi
 keywords:
 - Metadata field L2 identifiers network drivers
 ms.date: 11/09/2017
-ms.localizationpriority: medium
 ---
 
 # Metadata field L2 identifiers

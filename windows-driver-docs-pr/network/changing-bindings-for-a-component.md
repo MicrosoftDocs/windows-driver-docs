@@ -6,7 +6,6 @@ keywords:
 - network notify objects WDK , binding changes
 - binding changes WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Changing Bindings for a Component

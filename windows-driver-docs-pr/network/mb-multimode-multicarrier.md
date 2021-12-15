@@ -2,7 +2,6 @@
 title: MB Multimode Multicarrier
 description: This topic describes the support for MB multimode multicarrier that has been integrated into mobile broadband for Windows 8.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Multimode Multicarrier

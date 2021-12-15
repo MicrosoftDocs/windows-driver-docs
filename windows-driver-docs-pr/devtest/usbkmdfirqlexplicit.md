@@ -9,7 +9,6 @@ api_name:
 - UsbKmdfIrqlExplicit
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # UsbKmdfIrqlExplicit rule (kmdf)

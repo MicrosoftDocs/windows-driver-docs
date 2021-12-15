@@ -6,7 +6,6 @@ keywords:
 - class drivers WDK storage , device extensions
 - device extensions WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up a Storage Class Driver's Device Extension

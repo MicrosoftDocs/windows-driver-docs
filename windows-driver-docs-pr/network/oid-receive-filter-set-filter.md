@@ -4,7 +4,6 @@ description: An overlying driver issues an OID method request of OID_RECEIVE_FIL
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_SET_FILTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_SET\_FILTER

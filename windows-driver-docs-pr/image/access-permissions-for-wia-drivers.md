@@ -2,7 +2,6 @@
 title: Access Permissions for WIA Drivers
 description: Access Permissions for WIA Drivers
 ms.date: 07/18/2018
-ms.localizationpriority: medium
 ---
 
 # Access Permissions for WIA Drivers

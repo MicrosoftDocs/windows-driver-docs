@@ -11,7 +11,6 @@ keywords:
 - data ranges WDK audio , WMA Pro
 - non-PCM audio formats WDK , WMA Pro
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying WMA Pro Data Ranges

@@ -1,5 +1,5 @@
 ---
-title: pci
+title: pci (WinDbg)
 description: The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
 keywords: ["PCI bus", "PCI device", "PCI configuration space", "pci Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - pci
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pci

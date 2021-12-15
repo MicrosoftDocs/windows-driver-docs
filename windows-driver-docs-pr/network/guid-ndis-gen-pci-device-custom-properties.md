@@ -4,7 +4,6 @@ description: WMI clients can use the GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES 
 ms.date: 08/08/2017
 keywords: 
  -GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # GUID\_NDIS\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES

@@ -4,7 +4,6 @@ description: AVStream Overview
 keywords:
 - AVStream WDK , about AVStream minidrivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AVStream Overview

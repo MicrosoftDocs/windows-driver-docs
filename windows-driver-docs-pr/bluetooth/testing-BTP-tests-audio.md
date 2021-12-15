@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - Audio
 description: Bluetooth Test Platform (BTP) Audio tests.
 ms.date: 07/26/2021
-ms.localizationpriority: medium
 ---
 
 # BTP Audio Tests

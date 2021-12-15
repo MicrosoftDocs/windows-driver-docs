@@ -2,7 +2,6 @@
 title: WIA Item Properties for Flatbed Scanners
 description: WIA Item Properties for Flatbed Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Item Properties for Flatbed Scanners

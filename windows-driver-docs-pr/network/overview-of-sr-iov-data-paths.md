@@ -2,7 +2,6 @@
 title: Overview of SR-IOV Data Paths
 description: Overview of SR-IOV Data Paths
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of SR-IOV Data Paths

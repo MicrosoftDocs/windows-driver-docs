@@ -7,7 +7,6 @@ keywords:
 - debugging code WDK , build environment
 - conditional compilation WDK debugging
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Conditional Compilation and the Build Environment

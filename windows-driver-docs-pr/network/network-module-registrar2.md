@@ -8,7 +8,6 @@ keywords:
 - registered network modules WDK Network Module Registrar
 - software modules WDK Network Module Registrar
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Module Registrar Topics

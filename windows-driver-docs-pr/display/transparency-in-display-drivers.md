@@ -5,7 +5,6 @@ keywords:
 - display drivers WDK Windows 2000 , transparency
 - transparency WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Transparency in Display Drivers

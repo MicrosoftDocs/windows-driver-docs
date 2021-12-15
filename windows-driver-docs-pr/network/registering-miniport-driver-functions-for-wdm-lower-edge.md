@@ -7,7 +7,6 @@ keywords:
 - lower edge of NDIS miniport drivers WDK networking , entry-point functions
 - WDM lower edge WDK networking , entry-point functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering Miniport Driver Functions for WDM Lower Edge

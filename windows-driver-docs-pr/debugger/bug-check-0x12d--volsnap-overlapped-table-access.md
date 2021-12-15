@@ -9,7 +9,6 @@ api_name:
 - VOLSNAP_OVERLAPPED_TABLE_ACCESS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x12D: VOLSNAP\_OVERLAPPED\_TABLE\_ACCESS

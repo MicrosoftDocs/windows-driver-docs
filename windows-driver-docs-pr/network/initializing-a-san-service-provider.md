@@ -6,7 +6,6 @@ keywords:
 - initializing SAN usage
 - SAN service providers WDK , initializing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a SAN Service Provider

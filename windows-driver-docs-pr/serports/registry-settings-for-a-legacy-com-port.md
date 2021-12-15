@@ -7,7 +7,6 @@ keywords:
 - serial devices WDK , COM ports
 - legacy COM ports WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Settings for a Legacy COM Port

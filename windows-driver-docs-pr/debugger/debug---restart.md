@@ -3,7 +3,6 @@ title: Debug Restart
 description: Debug Restart
 keywords: ["Debug Restart", "controlling the target, Debug Restart"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Restart

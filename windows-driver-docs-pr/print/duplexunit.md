@@ -1,35 +1,25 @@
 ---
 title: DuplexUnit
-description: DuplexUnit
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+description: Describes the value entries of the duplex print unit on the device.
+ms.date: 08/31/2021
 ---
 
 # DuplexUnit
 
+Schema Path: \\Printer.Configuration.DuplexUnit
 
-Schema Path:\\Printer.Configuration.DuplexUnit
+Node Type: Property
 
-Node Type:Property
-
-Description:The value entries of the duplex print unit on the device.
+Description: The value entries of the duplex print unit on the device.
 
 The DuplexUnit property contains a single child value: Installed.
 
-### <span id="installed"></span><span id="INSTALLED"></span> Installed
+## Installed
 
-Schema Path:\\Printer.Configuration.DuplexUnit:Installed
+Schema Path: \\Printer.Configuration.DuplexUnit:Installed
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_BOOL
+Data Type: BIDI_BOOL
 
-Description:Indicates whether a duplex print unit is installed on the device.
-
- 
-
- 
-
-
-
-
+Description: Indicates whether a duplex print unit is installed on the device.

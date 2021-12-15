@@ -4,7 +4,6 @@ description: OID_WWAN_AUTH_CHALLENGE sends an authentication challenge to the MB
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_AUTH_CHALLENGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_AUTH\_CHALLENGE

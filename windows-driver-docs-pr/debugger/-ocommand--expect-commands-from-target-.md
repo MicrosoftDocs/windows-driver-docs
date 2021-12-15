@@ -9,7 +9,6 @@ api_name:
 - .ocommand (Expect Commands from Target)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .ocommand (Expect Commands from Target)

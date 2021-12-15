@@ -5,7 +5,6 @@ keywords:
 - external device properties WDK video capture
 - PROPSETID_EXT_DEVICE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # External Device Properties

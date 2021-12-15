@@ -2,7 +2,6 @@
 title: Make the driver loadable
 description: To make a driver loadable, you must add a function that will register the required driver callback routines (DriverEntry), a function that will attach the driver to a device stack (DeviceAdd), and a function that will unload the driver when it's no longer needed (DriverUnload).
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Make the driver loadable

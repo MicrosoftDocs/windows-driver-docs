@@ -5,7 +5,6 @@ keywords:
 - tape drivers WDK storage , about tape drivers
 - storage tape drivers WDK , about tape drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Tape Class Driver

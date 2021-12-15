@@ -6,7 +6,6 @@ keywords:
 - HwScsiStartIo
 - SRB modifications WDK storage
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Modifying SRBs

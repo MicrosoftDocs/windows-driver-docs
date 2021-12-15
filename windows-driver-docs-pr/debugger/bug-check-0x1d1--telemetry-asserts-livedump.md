@@ -9,7 +9,6 @@ api_name:
 - TELEMETRY_ASSERTS_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D1: TELEMETRY\_ASSERTS\_LIVEDUMP

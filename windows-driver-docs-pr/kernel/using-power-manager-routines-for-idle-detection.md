@@ -3,7 +3,6 @@ title: Using Power Manager Routines for Idle Detection
 description: Using Power Manager Routines for Idle Detection
 keywords: ["idle detection WDK power management", "PoRegisterDeviceForIdleDetection", "PoSetDeviceBusy", "power manager WDK kernel", "idle time-outs WDK power management", "time-outs WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Power Manager Routines for Idle Detection

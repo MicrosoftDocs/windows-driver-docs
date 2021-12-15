@@ -4,10 +4,11 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_DOT11_RESET_COMPLET
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DOT11_RESET_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_DOT11\_RESET\_COMPLETE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DOT11\_RESET\_COMPLETE to indicate the completion of [OID\_WDI\_TASK\_DOT11\_RESET](oid-wdi-task-dot11-reset.md).

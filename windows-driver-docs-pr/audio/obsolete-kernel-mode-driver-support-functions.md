@@ -2,7 +2,6 @@
 title: Obsolete Kernel-Mode Driver-Support Functions
 description: Obsolete Kernel-Mode Driver-Support Functions
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Obsolete Kernel-Mode Driver-Support Functions

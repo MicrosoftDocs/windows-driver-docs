@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_IP\_Address WMI Class
 description: ISCSI\_IP\_Address WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

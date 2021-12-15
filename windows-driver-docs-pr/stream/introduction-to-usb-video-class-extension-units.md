@@ -8,7 +8,6 @@ keywords:
 - UVC drivers WDK AVStream , extension units, about
 - extension units WDK USB Video Class , about
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to USB Video Class Extension Units

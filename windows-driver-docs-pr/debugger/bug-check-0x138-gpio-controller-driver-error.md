@@ -9,7 +9,6 @@ api_name:
 - GPIO_CONTROLLER_DRIVER_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x138: GPIO\_CONTROLLER\_DRIVER\_ERROR

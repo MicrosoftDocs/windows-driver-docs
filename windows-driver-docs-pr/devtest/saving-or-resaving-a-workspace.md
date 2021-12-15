@@ -7,7 +7,6 @@ keywords:
 - resaving workspaces
 - updating workspaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Saving or Resaving a Workspace

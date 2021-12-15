@@ -10,7 +10,6 @@ keywords:
 - VidPN WDK display , interfaces
 - sub-objects WDK video present network
 ms.date: 10/30/2018
-ms.localizationpriority: medium
 ---
 
 # VidPN Objects and Interfaces

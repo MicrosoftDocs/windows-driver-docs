@@ -3,7 +3,6 @@ title: Configuring a Window
 description: Configuring a Window
 keywords: ["debugging information windows, configuring"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring a Window

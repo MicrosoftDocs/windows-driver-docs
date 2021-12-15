@@ -11,7 +11,6 @@ api_location:
 api_type:
 - UserDefined
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGKCB\_PRESENT\_DISPLAYONLY\_PROGRESS callback function

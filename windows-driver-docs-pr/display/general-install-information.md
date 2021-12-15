@@ -7,7 +7,6 @@ keywords:
 - production display drivers WDK Windows Vista
 - retail display drivers WDK Windows Vista
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Install Information

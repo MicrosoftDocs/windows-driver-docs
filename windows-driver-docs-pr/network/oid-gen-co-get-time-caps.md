@@ -4,7 +4,6 @@ description: This topic describes the OID_GEN_CO_GET_TIME_CAPS object identifier
 keywords:
 - OID_GEN_CO_GET_TIME_CAPS
 ms.date: 11/02/2017
-ms.localizationpriority: medium
 ---
 
 # OID_GEN_CO_GET_TIME_CAPS

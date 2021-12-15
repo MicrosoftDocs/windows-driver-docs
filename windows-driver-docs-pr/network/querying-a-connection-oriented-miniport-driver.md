@@ -4,7 +4,6 @@ description: Querying a Connection-Oriented Miniport Driver
 keywords:
 - connection-oriented drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying a Connection-Oriented Miniport Driver

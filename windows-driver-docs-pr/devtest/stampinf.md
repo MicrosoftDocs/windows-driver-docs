@@ -8,7 +8,6 @@ keywords:
 - creating INF files WDK
 - INX files WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stampinf

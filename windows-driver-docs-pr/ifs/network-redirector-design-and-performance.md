@@ -8,7 +8,6 @@ keywords:
 - run-to-the-wire approach WDK network redirectors
 - bandwidth WDK network redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Redirector Design and Performance

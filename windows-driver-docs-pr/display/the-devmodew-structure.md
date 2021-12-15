@@ -8,7 +8,6 @@ keywords:
 - Unicode WDK graphics
 - drawing WDK GDI , DEVMODEW structure
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The DEVMODEW Structure

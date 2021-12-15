@@ -3,7 +3,6 @@ title: Security Descriptors
 description: Security Descriptors
 keywords: ["security descriptors WDK objects", "system ACL WDK objects", "SACL WDK objects", "discretionary ACL WDK objects", "DACL WDK objects", "access control lists WDK objects", "ACL WDK objects"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Security Descriptors

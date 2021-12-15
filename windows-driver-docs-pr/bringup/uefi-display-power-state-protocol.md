@@ -2,7 +2,6 @@
 title: UEFI display power state protocol
 description: Provides information about the UEFI display power state protocol.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # UEFI display power state protocol

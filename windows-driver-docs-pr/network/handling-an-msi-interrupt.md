@@ -7,7 +7,6 @@ keywords:
 - MSIs WDK networking , handling interrupts
 - interrupts WDK networking , handling
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling an MSI Interrupt

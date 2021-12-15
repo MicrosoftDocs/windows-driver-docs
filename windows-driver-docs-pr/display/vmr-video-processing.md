@@ -13,7 +13,6 @@ keywords:
 - resizing video image horizontally
 - converting color space
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VMR Video Processing

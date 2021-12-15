@@ -4,10 +4,11 @@ description: The NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT status indicati
 ms.date: 06/14/2018
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 The NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT status indication is used by an IHV miniport driver to pass on unsolicited information about a device to a user mode client.
 

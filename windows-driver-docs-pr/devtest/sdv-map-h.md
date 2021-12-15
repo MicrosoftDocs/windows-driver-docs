@@ -10,7 +10,6 @@ keywords:
 - Sdv-map.h WDK Static Driver Verifier , about Sdv-map.h
 - scanning DriverEntry routine WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sdv-map.h

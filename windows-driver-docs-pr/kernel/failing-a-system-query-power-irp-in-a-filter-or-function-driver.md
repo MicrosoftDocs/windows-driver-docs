@@ -3,7 +3,6 @@ title: Failing a System Query-Power IRP in a Filter or Function Driver
 description: Failing a System Query-Power IRP in a Filter or Function Driver
 keywords: ["query-power IRPs WDK power management", "filter drivers WDK power management", "function drivers WDK power management", "failing query-power IRPs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Failing a System Query-Power IRP in a Filter or Function Driver

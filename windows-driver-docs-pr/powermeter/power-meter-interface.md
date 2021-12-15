@@ -6,7 +6,6 @@ keywords:
 - Power Meter Interface WDK
 - PMI WDK Power Meter
 ms.date: 10/09/2017
-ms.localizationpriority: medium
 ---
 
 # Power Meter Interface

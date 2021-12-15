@@ -9,7 +9,6 @@ api_name:
 - .symfix (Set Symbol Store Path)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .symfix (Set Symbol Store Path)

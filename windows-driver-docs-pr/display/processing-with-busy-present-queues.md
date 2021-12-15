@@ -5,7 +5,6 @@ keywords:
 - busy present queues WDK DirectX 9.0
 - present queues WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing with Busy Present Queues

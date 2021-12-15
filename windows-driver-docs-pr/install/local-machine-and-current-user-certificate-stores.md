@@ -2,7 +2,6 @@
 title: Local Machine and Current User Certificate Stores
 description: Local Machine and Current User Certificate Stores
 ms.date: 08/05/2021
-ms.localizationpriority: medium
 ---
 
 # Local Machine and Current User Certificate Stores

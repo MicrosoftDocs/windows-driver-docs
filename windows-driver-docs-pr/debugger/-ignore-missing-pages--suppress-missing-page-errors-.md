@@ -9,7 +9,6 @@ api_name:
 - .ignore_missing_pages (Suppress Missing Page Errors)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .ignore\_missing\_pages (Suppress Missing Page Errors)

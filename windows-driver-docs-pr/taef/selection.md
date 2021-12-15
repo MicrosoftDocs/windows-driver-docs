@@ -2,7 +2,6 @@
 title: Selection
 description: Selection
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Selection

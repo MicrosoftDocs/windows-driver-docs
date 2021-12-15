@@ -1,7 +1,6 @@
 ---
 title: Basic Calling Pattern for Version-3 DMA Routines
 description: To perform a DMA transfer that uses the routines in version 3 of the DMA operations interface, your driver should follow the steps described in the following list.
-ms.localizationpriority: medium
 ms.date: 07/21/2021
 ---
 

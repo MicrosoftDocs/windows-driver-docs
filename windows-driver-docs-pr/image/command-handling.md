@@ -2,7 +2,6 @@
 title: Command Handling
 description: Command Handling
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command Handling

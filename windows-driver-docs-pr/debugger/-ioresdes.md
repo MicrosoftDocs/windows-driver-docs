@@ -1,5 +1,5 @@
 ---
-title: ioresdes
+title: ioresdes (WinDbg)
 description: The ioresdes extension displays the IO_RESOURCE_DESCRIPTOR structure at the specified address.
 keywords: ["ioresdes Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ioresdes
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ioresdes

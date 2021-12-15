@@ -2,7 +2,6 @@
 title: How do I add a prefix and suffix to a trace message
 description: How do I add a prefix and suffix to a trace message
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I add a prefix and suffix to a trace message?

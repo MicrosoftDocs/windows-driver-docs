@@ -1,5 +1,5 @@
 ---
-title: srb
+title: srb (WinDbg)
 description: The srb extension displays information about a SCSI Request Block (SRB).
 keywords: ["srb Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - srb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !srb

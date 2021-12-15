@@ -5,7 +5,6 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, callbacks
 - vertex buffers WDK DirectX 8.0 , callbacks and Windows 2000
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vertex Buffer Callbacks and Windows 2000

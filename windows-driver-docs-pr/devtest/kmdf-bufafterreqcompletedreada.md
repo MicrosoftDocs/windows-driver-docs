@@ -9,7 +9,6 @@ api_name:
 - BufAfterReqCompletedReadA
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BufAfterReqCompletedReadA rule (kmdf)

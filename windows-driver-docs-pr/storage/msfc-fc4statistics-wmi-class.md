@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FC4STATISTICS WMI Class
 description: MSFC\_FC4STATISTICS WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

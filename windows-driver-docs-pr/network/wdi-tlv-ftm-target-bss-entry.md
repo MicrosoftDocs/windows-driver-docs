@@ -4,11 +4,12 @@ description: WDI_TLV_FTM_TARGET_BSS_ENTRY is a TLV that contains information for
 ms.date: 02/13/2019
 keywords:
  - WDI_TLV_FTM_TARGET_BSS_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # WDI_TLV_FTM_TARGET_BSS_ENTRY
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_FTM_TARGET_BSS_ENTRY** is a TLV that contains information for a BSS target with which Fine Timing Measurement (FTM) procedures should be completed. 
 

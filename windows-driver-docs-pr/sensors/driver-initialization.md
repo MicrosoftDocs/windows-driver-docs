@@ -2,7 +2,6 @@
 title: Driver initialization
 description: Driver initialization
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver initialization

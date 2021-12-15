@@ -16,31 +16,21 @@
         href: step-3--the-driver-for-the-device-is-installed.md
     - name: "Components"
       items: 
-      - name: "System-provided Device Installation Components"
-        href: system-provided-device-installation-components.md
       - name: "Plug and Play Manager"
         href: pnp-manager.md
       - name: "Driver Store"
         href: driver-store.md
-      - name: "Vendor-provided Device Installation Components"
-        href: vendor-provided-device-installation-components.md
-    - name: "Installation Files"
-      items: 
-      - name: "Device Installation Files"
-        href: device-installation-files.md
-      - name: "Sample Device Installation Files"
-        href: sample-device-installation-files.md
     - name: "Device Installation Types"
       href: device-installation-types.md
-    - name: "How Windows Selects Drivers"
+    - name: "How Windows Selects Driver Packages"
       items: 
-      - name: "Overview of the Driver Selection Process"
+      - name: "Overview of the Driver Package Selection Process"
         href: overview-of-the-driver-selection-process.md
-      - name: "How Windows selects a driver for a device"
+      - name: "How Windows selects a driver package for a device"
         href: how-windows-selects-a-driver-for-a-device.md
-    - name: "How Windows Ranks Drivers"
+    - name: "How Windows Ranks Driver Packages"
       items: 
-        - name: "How Windows Ranks Drivers"
+        - name: "How Windows Ranks Driver Packages"
           href: how-setup-ranks-drivers--windows-vista-and-later-.md
         - name: "Signature Categories and Driver Installation"
           href: signature-categories-and-driver-installation.md
@@ -52,11 +42,9 @@
           href: feature-score--windows-vista-and-later-.md
         - name: "Identifier Score"
           href: identifier-score--windows-vista-and-later-.md
-        - name: "Driver Rank Ranges"
-          href: driver-rank-ranges--windows-vista-and-later-.md
-        - name: "Driver Rank Example"
+        - name: "Driver Package Rank Example"
           href: driver-rank-example--windows-vista-and-later-.md
-        - name: "Driver Rank Information in the SetupAPI Log"
+        - name: "Driver Package Rank Information in the SetupAPI Log"
           href: driver-rank-information-in-the-setupapi-log.md
         - name: "AllSigningEqual Group Policy"
           href: allsigningequal-group-policy.md
@@ -70,8 +58,8 @@
       href: components-of-a-driver-package.md
     - name: "Installation Component Overview"
       href: installation-component-overview.md
-    - name: "Supplying an INF File"
-      href: supplying-an-inf-file.md
+    - name: "Sample Device Installation Files"
+      href: sample-device-installation-files.md
   - name: "INF Files"
     items: 
     - name: "Overview of INF Files"
@@ -212,8 +200,6 @@
       href: whql-test-signature-program.md
     - name: "MakeCert Test Certificate"
       href: makecert-test-certificate.md
-    - name: "Commercial Test Certificate"
-      href: commercial-test-certificate.md
     - name: "Enterprise CA Test Certificate"
       href: enterprise-ca-test-certificate.md
     - name: "Test-Signing Driver Packages"
@@ -250,14 +236,10 @@
       href: introduction-to-release-signing.md
     - name: "How to Release-Sign a Driver Package"
       href: how-to-release-sign-a-driver-package.md
-    - name: "Obtaining a Software Publisher Certificate (SPC)"
-      href: obtaining-a-software-publisher-certificate--spc-.md
     - name: "Personal Information Exchange (.pfx) Files"
       href: personal-information-exchange---pfx--files.md
     - name: "Importing an SPC into a Certificate Store"
       href: importing-an-spc-into-a-certificate-store.md
-    - name: "Determining an SPC's Cross-Certificate"
-      href: determining-an-spc-s-cross-certificate.md
     - name: "Creating a Catalog File for Release-Signing a Driver Package"
       href: creating-a-catalog-file-for-release-signing-a-driver-package.md
     - name: "Release-Signing a Driver Package's Catalog File"
@@ -274,24 +256,12 @@
       href: whql-release-signature.md
     - name: "Release Certificates"
       href: release-certificates.md
-    - name: "Software Publisher Certificate"
-      href: software-publisher-certificate.md
-    - name: "Commercial Release Certificate"
-      href: commercial-release-certificate.md
     - name: "Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates"
       href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md  
-    - name: "Release-Signing Driver Packages"
-      href: release-signing-driver-packages.md
-    - name: "Release-Signing a Driver File"
-      href: release-signing-a-driver-file.md
     - name: "Verifying the Signature of a Release-Signed Driver File"
       href: verifying-the-signature-of-a-release-signed-driver-file.md
     - name: "Creating a Catalog File for a PnP Driver Package "
       href: creating-a-catalog-file-for-a-pnp-driver-package.md
-    - name: "Signing a Catalog File with an SPC"
-      href: signing-a-catalog-file-with-an-spc.md
-    - name: "Verifying the SPC Signature of a Catalog File"
-      href: verifying-the-spc-signature-of-a-catalog-file.md
     - name: "Signing a Catalog File with a Commercial Release Certificate"
       href: signing-a-catalog-file-with-a-commercial-release-certificate.md
     - name: "Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate"
@@ -836,6 +806,8 @@
     href: inf-version-section.md
 - name: "INF Directives"
   items: 
+  - name: "INF AddAutoLogger and UpdateAutoLogger Directives"
+    href: inf-addupdateautologger-directive.md
   - name: "INF AddComponent Directive"
     href: inf-addcomponent-directive.md
   - name: "INF AddEventProvider Directive"
@@ -916,10 +888,6 @@
     href: enumerating-installed-device-interface-classes.md
   - name: "Accessing the Properties of Installed Device Interfaces"
     href: accessing-the-properties-of-installed-device-interface-classes.md
-  - name: "Modifying Registry Keys by Class Installers and Co-installers"
-    href: modifying-registry-keys-by-class-installers-and-co-installers.md
-  - name: "Modifying Registry Values by Class Installers and Co-installers"
-    href: modifying-registry-values-by-class-installers-and-co-installers.md
   - name: "Deleting the Registry Keys of a Device"
     href: deleting-the-registry-keys-of-a-device.md
   - name: "Calling SetupAPI Functions"
@@ -944,8 +912,6 @@
     href: installing-a-new-bus-driver.md
   - name: "Using Custom Hardware IDs and Compatible IDs"
     href: using-custom-hardware-ids-and-compatible-ids.md
-  - name: "Installing a New Device Setup Class for a Bus"
-    href: installing-a-new-device-setup-class-for-a-bus.md
   - name: "Installing Private Builds of In-box Drivers"
     href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
   - name: "Overview of Installing Private Builds of In-box Drivers"

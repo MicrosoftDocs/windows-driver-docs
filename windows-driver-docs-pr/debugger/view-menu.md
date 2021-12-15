@@ -3,7 +3,6 @@ title: View Menu
 description: View Menu
 keywords: ["View Menu (complete listing)", "graphical interface, view menu"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View Menu

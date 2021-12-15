@@ -2,11 +2,11 @@
 title: Driver Release Cadence
 description: Policy around when drivers are released
 ms.topic: article
-ms.date: 12/15/2021
-ms.localizationpriority: medium
+ms.date: 12/15/2020
 ---
 
 # Driver Shiproom Release Cadence Windows
+
 Last Updated: December 15, 2021
 
 This page provides information on the operation schedule for driver shiproom. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
@@ -18,6 +18,7 @@ Windows as a Service has a well-established OS update release cadence.
     **Feature Updates**: Provide the latest feature experiences and quality fixes.
 
 To ensure we release quality drivers, reduce the risk of releasing drivers at the same time as OS changes and provide ecosystem partners a predictable driver release cadence; we are making the following changes for releasing drivers marked as needing "Microsoft Approval". Today, this includes:
+
 * Flighted drivers:  Drivers (Shipping Label) marked as **Automatic** = Critical Update (CU) or Dynamic Update (DU) or both 
 * Optional driver classes which always go through Shiproom approval
 
@@ -55,17 +56,20 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 4. **US Winter Holiday timeframe release moratorium**: During the US Winter Holiday season, for approximately two weeks driver shiproom will not be releasing ANY drivers, for calendar year 2020 this is December 17, 2020 through January 1, 2021 and for CY2021 this will be December 16, 2021 through January 1, 2022. 
 
 See the [2021 driver deferral periods](#calendar) calendars for additional dates. 
- 
-> 📘 Note
->
-> We believe that creating a predictable driver release cadence will result in better update user experience across both Windows 10 OS and driver updates. We encourage ecosystem partners to _plan for their driver flighting and publication releases_ in alignment with above cadence and help us improve the experience of our mutual users and customers. 
- 
+
+> [!NOTE]
+> Because a predictable driver release cadence results in a better user experience, we encourage ecosystem partners to plan for driver flighting and publication releases.
+
 ## Appendix
+
 ### FAQ:
+
 1. What does this deferral mean for newly submitted drivers or drivers currently In-Flight?
+
 * This deferral is for the actual “Release” of a driver needing “Microsoft Approval” (marked as Automatic or Dynamic Update) to WU.  Newly submitted drivers and drivers currently In-Flight will proceed as they normally do.  
 
 2. <a id="calendar"></a>What is the latest deferral calendar?
+
 ** This calendar is subject to changes based on OS release timelines.
- 
+
 ![Sept - Dec 2021 Driver Release Calendar showing excluded dates as described above.](images/2022_driver_calendar.png)

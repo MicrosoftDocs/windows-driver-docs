@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfforwardprogress
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfforwardprogress

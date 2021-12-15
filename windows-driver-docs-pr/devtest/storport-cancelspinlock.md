@@ -9,7 +9,6 @@ api_name:
 - CancelSpinLock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CancelSpinLock rule (storport)

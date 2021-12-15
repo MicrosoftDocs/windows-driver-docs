@@ -5,7 +5,6 @@ keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , network profile extensions
 - network profiles WDK Native 802.11 IHV UI Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extending the Properties for Wireless Network Profiles

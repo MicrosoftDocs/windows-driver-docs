@@ -1,5 +1,5 @@
 ---
-title: tzinfo
+title: tzinfo (WinDbg)
 description: The tzinfo extension displays the contents of the specified thermal zone information structure.
 keywords: ["thermal zone information", "tzinfo Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - tzinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !tzinfo

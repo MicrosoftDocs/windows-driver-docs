@@ -8,7 +8,6 @@ keywords:
 - volumes WDK file system , attaching filters
 - DO_DEVICE_INITIALIZING
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Clearing the DO\_DEVICE\_INITIALIZING Flag

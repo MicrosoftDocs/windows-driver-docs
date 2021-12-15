@@ -6,7 +6,6 @@ keywords:
 - multiple render targets WDK DirectX 9.0
 - depth stencils WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Multiple Render Targets and Depth Stencils

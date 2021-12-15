@@ -4,7 +4,6 @@ description: CM_PROB_DISABLED
 keywords:
 - CM_PROB_DISABLED
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 22 - CM_PROB_DISABLED

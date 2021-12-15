@@ -1,79 +1,69 @@
 ---
-title: Pattern
-description: Pattern
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+title: Pattern property
+description: Contains all the value entries that pertain to the patterns in which holes can be punched in output pages.
+ms.date: 09/08/2021
 ---
 
-# Pattern
+# Pattern property
 
+Schema Path: \\Printer.Finishing.HolePunch.Pattern
 
-Schema Path:\\Printer.Finishing.HolePunch.Pattern
+Node Type: Property
 
-Node Type:Property
-
-Description:This property contains all the value entries that pertain to the patterns in which holes can be punched in output pages.
+Description: This property contains all the value entries that pertain to the patterns in which holes can be punched in output pages.
 
 The Pattern property contains two child values: **CurrentValue** and **Supported**.
 
-### <span id="currentvalue"></span><span id="CURRENTVALUE"></span>CurrentValue
+## CurrentValue
 
-Schema Path:\\Printer.Finishing.HolePunch.Pattern:CurrentValue
+Schema Path: \\Printer.Finishing.HolePunch.Pattern:CurrentValue
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:The current (default) hole punch pattern to be applied to output pages.
+Description: The current (default) hole punch pattern to be applied to output pages.
 
 The following values are allowed:
 
-TwoHoleUSTop
+- TwoHoleUSTop
 
-ThreeHoleUS
+- ThreeHoleUS
 
-TwoHoleDIN
+- TwoHoleDIN
 
-FourHoleDIN
+- FourHoleDIN
 
-TwentyTwoHoleUS
+- TwentyTwoHoleUS
 
-NineteenHoleUS
+- NineteenHoleUS
 
-TwoHoleMetric
+- TwoHoleMetric
 
-Swedish4Hole
+- Swedish4Hole
 
-TwoHoleUSSide
+- TwoHoleUSSide
 
-FiveHoleUS
+- FiveHoleUS
 
-SevenHoleUS
+- SevenHoleUS
 
-Mixed7H4S
+- Mixed7H4S
 
-Norweg6Hole
+- Norweg6Hole
 
-Metric26Hole
+- Metric26Hole
 
-Metric30Hole
+- Metric30Hole
 
-unknown
+- unknown
 
-### <span id="supported"></span><span id="SUPPORTED"></span>Supported
+## Supported
 
-Schema Path:\\Printer.Finishing.HolePunch.Pattern:Supported
+Schema Path: \\Printer.Finishing.HolePunch.Pattern:Supported
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:A comma-separated list of all values supported for hole punch Pattern.
-
- 
-
- 
-
-
-
-
+Description: A comma-separated list of all values supported for hole punch Pattern.

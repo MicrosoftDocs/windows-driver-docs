@@ -2,7 +2,6 @@
 title: Software Volume Control Support
 description: Software Volume Control Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Software Volume Control Support

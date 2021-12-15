@@ -3,7 +3,6 @@ title: User Space and System Space
 description: User Space and System Space
 keywords: ["system space", "system space, addresses", "system space, breakpoints", "kernel space", "kernel space, addresses", "kernel space, breakpoints", "user space", "user space, addresses", "user space, breakpoints"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # User Space and System Space

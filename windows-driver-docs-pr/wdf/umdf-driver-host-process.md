@@ -8,7 +8,6 @@ keywords:
 - user-mode drivers WDK UMDF , architecture
 - architecture WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UMDF Driver Host Process

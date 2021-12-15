@@ -6,7 +6,6 @@ keywords:
 - data types WDK GDL , primitive
 - parser WDK GDL , primitive data types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Primitive Data Types

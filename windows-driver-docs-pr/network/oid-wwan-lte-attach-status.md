@@ -4,7 +4,6 @@ description: OID_WWAN_LTE_ATTACH_STATUS is used to inform the OS of the last use
 ms.date: 08/23/2018
 keywords: 
  -OID_WWAN_LTE_ATTACH_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WWAN_LTE_ATTACH_STATUS

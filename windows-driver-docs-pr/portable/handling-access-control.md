@@ -2,7 +2,6 @@
 description: Handling Access Control
 title: Handling Access Control
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Access Control

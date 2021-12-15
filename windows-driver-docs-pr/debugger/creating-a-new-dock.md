@@ -3,7 +3,6 @@ title: Creating a New Dock
 description: Creating a New Dock
 keywords: ["docking windows, creating a new dock", "window docking, creating a new dock"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a New Dock

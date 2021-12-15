@@ -6,7 +6,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , utility services
 - drawing WDK GDI , utility services
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Utility Services

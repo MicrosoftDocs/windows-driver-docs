@@ -4,7 +4,6 @@ description: OID_WWAN_SAR_TRANSMISSION_STATUS enables or disables notifications 
 ms.date: 08/20/2018
 keywords: 
  -OID_WWAN_SAR_TRANSMISSION_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WWAN_SAR_TRANSMISSION_STATUS

@@ -3,7 +3,6 @@ title: View Memory
 description: View Memory
 keywords: ["View Memory"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Memory

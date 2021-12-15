@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # FLT\_PARAMETERS for IRP_MJ_QUERY_OPEN union

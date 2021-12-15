@@ -2,7 +2,6 @@
 title: Calling Order for Minidriver Functions
 description: Calling Order for Minidriver Functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling Order for Minidriver Functions

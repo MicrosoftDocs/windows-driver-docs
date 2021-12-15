@@ -7,7 +7,6 @@ keywords:
 - file system filter drivers WDK , initializing
 - DriverEntry WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a File System Filter Driver

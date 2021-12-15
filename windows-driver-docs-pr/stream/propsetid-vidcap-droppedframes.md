@@ -2,7 +2,6 @@
 title: PROPSETID\_VIDCAP\_DROPPEDFRAMES
 description: PROPSETID\_VIDCAP\_DROPPEDFRAMES
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PROPSETID\_VIDCAP\_DROPPEDFRAMES

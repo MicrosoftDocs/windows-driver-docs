@@ -7,7 +7,6 @@ keywords:
 - WSK WDK networking , registering
 - WskDeregister
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unregistering a Winsock Kernel Application

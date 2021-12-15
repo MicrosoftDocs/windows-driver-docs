@@ -3,7 +3,6 @@ title: The x64 Processor
 description: This section provides information on the x64 Processor
 keywords: x64 processor, AMD64 processor, x86-64 processor", AMD x86-64 processor
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # The x64 Processor

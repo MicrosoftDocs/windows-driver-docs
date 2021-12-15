@@ -3,7 +3,6 @@ title: Microsoft public symbol server
 description: The Microsoft symbol server makes Windows debugger symbols publicly available.
 keywords: ["SymSrv, public Microsoft symbols", "symbol servers, public Microsoft symbols", "public symbol store", "Microsoft symbol store"]
 ms.date: 04/26/2018
-ms.localizationpriority: High
 ---
 
 # Microsoft public symbol server

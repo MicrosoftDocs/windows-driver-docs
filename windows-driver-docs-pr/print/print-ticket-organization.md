@@ -5,7 +5,6 @@ keywords:
 - Print Tickets WDK , organization
 - hierarchy WDK Print Ticket
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Ticket Organization

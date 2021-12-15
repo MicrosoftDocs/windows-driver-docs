@@ -2,7 +2,6 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10, version 2004 (20H1) Build 19041
 description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 10, version 2004 (20H1) Build 19041.
 ms.date: 06/12/2020
-ms.localizationpriority: medium
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 10 version 2004 (20H1) Build 19041
@@ -502,8 +501,6 @@ This is the same information shown above in the XML format.
 ```
 
 ## Related topics
-
-[Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio](setting-up-a-network-debugging-connection-in-visual-studio.md)
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

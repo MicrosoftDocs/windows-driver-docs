@@ -2,7 +2,6 @@
 title: Getting started with MALT
 description: How to upload firmware to the MALT and how to calibrate it using SensorExplorer.
 ms.date: 07/08/2021
-ms.localizationpriority: medium
 ---
 
 # Getting started with MALT

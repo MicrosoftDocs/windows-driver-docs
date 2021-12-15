@@ -2,7 +2,6 @@
 title: Requesting Special Pool by Allocation Size
 description: Requesting Special Pool by Allocation Size
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Requesting Special Pool by Allocation Size

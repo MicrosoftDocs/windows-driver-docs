@@ -5,7 +5,6 @@ keywords:
 - task offload WDK TCP/IP transport , checksum tasks
 - checksum tasks WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting a NIC's Checksum Capabilities

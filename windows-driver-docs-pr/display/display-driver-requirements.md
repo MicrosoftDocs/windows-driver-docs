@@ -4,7 +4,6 @@ description: Display Driver Requirements
 keywords:
 - display drivers WDK Windows 2000 , requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Display Driver Requirements

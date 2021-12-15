@@ -2,7 +2,6 @@
 title: Setting Breakpoints in Visual Studio
 description: The procedure covers Setting Breakpoints in Visual Studio.
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # Setting Breakpoints in Visual Studio

@@ -4,7 +4,6 @@ description: PNPCPU Overview
 keywords:
 - PNPCPU WDK , about PNPCPU
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PNPCPU Overview

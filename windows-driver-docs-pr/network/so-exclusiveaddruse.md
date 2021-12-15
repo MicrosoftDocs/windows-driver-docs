@@ -4,7 +4,6 @@ description: SO_EXCLUSIVEADDRUSE
 ms.date: 08/08/2017
 keywords: 
  -SO_EXCLUSIVEADDRUSE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SO\_EXCLUSIVEADDRUSE

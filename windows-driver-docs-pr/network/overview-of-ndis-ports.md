@@ -5,7 +5,6 @@ keywords:
 - ports WDK NDIS , about NDIS ports
 - NDIS ports WDK , about NDIS ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of NDIS Ports

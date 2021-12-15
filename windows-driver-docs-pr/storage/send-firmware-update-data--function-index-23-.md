@@ -1,7 +1,6 @@
 ---
 title: Send Firmware Update Data (Function Index 23)
 description: This function sends firmware data to the device.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

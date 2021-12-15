@@ -7,7 +7,6 @@ keywords:
 - HwVidQueryInterface
 - IRP_MN_QUERY_INTERFACE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Communicating with the Driver of a Child Device

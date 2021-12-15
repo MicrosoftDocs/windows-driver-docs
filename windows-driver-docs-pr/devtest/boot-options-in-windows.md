@@ -17,7 +17,6 @@ keywords:
 - boot loaders WDK
 - firmware-independent boot options WDK
 ms.date: 04/23/2019
-ms.localizationpriority: medium
 ---
 
 # Overview of Boot Options in Windows

@@ -9,7 +9,6 @@ api_name:
 - e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)

@@ -2,7 +2,6 @@
 title: UMDF Settings (Test Use Only) Tab
 description: This topic details WDF Verifier's UMDF Settings (Test Use Only) page.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UMDF Settings (Test Use Only) Tab

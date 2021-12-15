@@ -6,7 +6,6 @@ keywords:
 - miniport drivers WDK audio , WavePci
 - WavePci miniport drivers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WavePci Miniport Driver

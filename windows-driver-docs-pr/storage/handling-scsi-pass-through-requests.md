@@ -7,7 +7,6 @@ keywords:
 - SCSI pass-through requests WDK storage
 - pass-through requests WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling SCSI Pass-Through Requests

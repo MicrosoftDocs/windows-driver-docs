@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPS\_DOCUMENT\_HANDLING\_CAPACITY
-description: The WIA\_DPS\_DOCUMENT\_HANDLING\_CAPACITY property is obsolete and should not be used.
+title: WIA_DPS_DOCUMENT_HANDLING_CAPACITY
+description: The WIA_DPS_DOCUMENT_HANDLING_CAPACITY property is obsolete and should not be used.
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_CAPACITY Imaging Devices"]
 topic_type:
 - apiref
@@ -10,41 +10,19 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPS\_DOCUMENT\_HANDLING\_CAPACITY
+# WIA_DPS_DOCUMENT_HANDLING_CAPACITY
 
+The WIA_DPS_DOCUMENT_HANDLING_CAPACITY property is obsolete and should not be used.
 
-The WIA\_DPS\_DOCUMENT\_HANDLING\_CAPACITY property is obsolete and should not be used.
+Property Type: VT_I4
 
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

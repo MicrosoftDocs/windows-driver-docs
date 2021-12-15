@@ -9,7 +9,6 @@ keywords:
 - shape of pointer WDK Windows 2000 display
 - reshaping pointer WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling the Pointer: DrvSetPointerShape

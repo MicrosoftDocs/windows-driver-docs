@@ -3,7 +3,6 @@ title: IoCompletion Routines for Wait/Wake IRPs
 description: IoCompletion Routines for Wait/Wake IRPs
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "IoCompletion routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # IoCompletion Routines for Wait/Wake IRPs

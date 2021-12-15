@@ -2,7 +2,6 @@
 title: MB Miniport driver Error Logging
 description: MB Miniport driver Error Logging
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Miniport driver Error Logging

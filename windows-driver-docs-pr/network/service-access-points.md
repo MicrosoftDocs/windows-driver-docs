@@ -8,7 +8,6 @@ keywords:
 - service access points WDK CoNDIS
 - SAPs WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Service Access Points

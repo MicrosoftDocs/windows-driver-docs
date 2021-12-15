@@ -2,7 +2,6 @@
 title: Obtaining and Updating Power Management Parameters
 description: Obtaining and Updating Power Management Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining and Updating Power Management Parameters

@@ -2,7 +2,6 @@
 title: How do I debug tracing failures
 description: How do I debug tracing failures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I debug tracing failures?

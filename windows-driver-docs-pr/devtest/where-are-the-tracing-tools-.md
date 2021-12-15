@@ -2,7 +2,6 @@
 title: Where are the tracing tools
 description: Where are the tracing tools
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Where are the tracing tools?

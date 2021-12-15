@@ -4,7 +4,6 @@ description: This topic describes the Windows account management experience with
 keywords:
 - Windows Mobile Plans account management, Mobile Plans mobile operators
 ms.date: 03/15/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile Operator account management in Windows 10

@@ -2,7 +2,6 @@
 title: F (Windows Debugger Glossary)
 description: Glossary page - F
 ms.date: 12/17/2019
-ms.localizationpriority: medium
 ---
 
 # F

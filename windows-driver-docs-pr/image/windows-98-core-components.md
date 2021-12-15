@@ -2,7 +2,6 @@
 title: Windows 98 Core Components
 description: Windows 98 Core Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows 98 Core Components

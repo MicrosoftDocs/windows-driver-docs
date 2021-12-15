@@ -6,7 +6,6 @@ keywords:
 - trace message control files WDK
 - TMC files WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tracepdb Overview

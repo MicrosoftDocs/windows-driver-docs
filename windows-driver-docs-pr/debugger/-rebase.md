@@ -1,5 +1,5 @@
 ---
-title: rebase
+title: rebase (WinDbg)
 description: The rebase extension searches in a rebase.log file for a specified address or symbol.
 keywords: ["rebase Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - rebase
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rebase

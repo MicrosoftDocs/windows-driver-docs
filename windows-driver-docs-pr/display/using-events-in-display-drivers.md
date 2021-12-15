@@ -5,7 +5,6 @@ keywords:
 - events WDK Windows 2000 display
 - display drivers WDK Windows 2000 , events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Events in Display Drivers

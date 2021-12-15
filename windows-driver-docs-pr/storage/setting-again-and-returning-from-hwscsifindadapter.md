@@ -7,7 +7,6 @@ keywords:
 - Again WDK SCSI
 - return values WDK SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Again and Returning from HwScsiFindAdapter

@@ -5,7 +5,6 @@ ms.date: 09/11/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Command line startup options

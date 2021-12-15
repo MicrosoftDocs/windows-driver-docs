@@ -3,7 +3,6 @@ title: Viewing the Call Stack in WinDbg
 description: In WinDbg, you can view the call stack by entering commands or by using the Calls window.
 keywords: ["debugging information windows, Calls window", "Calls window", "call stack, Calls window"]
 ms.date: 05/13/2020
-ms.localizationpriority: medium
 ---
 
 # Viewing the Call Stack in WinDbg

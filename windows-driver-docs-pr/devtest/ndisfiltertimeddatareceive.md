@@ -9,7 +9,6 @@ api_name:
 - NdisFilterTimedDataReceive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisFilterTimedDataReceive rule (ndis)

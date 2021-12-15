@@ -9,7 +9,6 @@ api_name:
 - scsikd.classext
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !scsikd.classext

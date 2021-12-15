@@ -7,7 +7,6 @@ keywords:
 - UVC drivers WDK AVStream , about USB Video Class drivers
 - user-mode clients WDK USB Video Class
 ms.date: 08/04/2021
-ms.localizationpriority: medium
 ---
 
 # USB Video Class driver overview

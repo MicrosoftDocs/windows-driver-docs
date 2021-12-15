@@ -2,7 +2,6 @@
 title: Supporting Audio Posture
 description: Windows 11 provides the ability to determine the posture of the device and remap and calibrate input and outputs to create an improved user experience.
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ms.topic: article
 ---
 
@@ -141,6 +140,6 @@ switch (Orientation)
 
 ### See also
 
-[Windows Driver Model (WDM)](/windows-hardware/drivers/kernel/windows-driver-model)
+[Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)
 
-[Audio Drivers Overview](/windows-hardware/drivers/audio/getting-started-with-wdm-audio-drivers)
+[Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)

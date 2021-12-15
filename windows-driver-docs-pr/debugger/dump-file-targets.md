@@ -3,7 +3,6 @@ title: Dump-File Targets
 description: Dump-File Targets
 keywords: ["targets, dump files", "dump files"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Dump-File Targets

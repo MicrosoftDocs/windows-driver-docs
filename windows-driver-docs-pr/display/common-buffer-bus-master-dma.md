@@ -6,7 +6,6 @@ keywords:
 - DMA bus-master WDK video miniport , common buffer
 - common-buffer DMA WDK video miniport , description
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Common-Buffer Bus-Master DMA

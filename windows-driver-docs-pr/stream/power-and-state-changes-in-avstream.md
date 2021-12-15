@@ -6,7 +6,6 @@ keywords:
 - power changes WDK , AVStream
 - state changes WDK , AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power and State Changes in AVStream

@@ -2,7 +2,6 @@
 title: PwrTest Device Scenario
 description: The PwrTest Device Scenario monitors device idle statistics.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PwrTest Device Scenario

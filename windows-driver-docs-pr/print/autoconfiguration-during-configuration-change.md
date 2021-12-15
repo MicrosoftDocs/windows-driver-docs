@@ -5,7 +5,6 @@ keywords:
 - autoconfiguration WDK printer , during configuration changes
 - printer autoconfiguration WDK printer , during configuration changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autoconfiguration During Configuration Change

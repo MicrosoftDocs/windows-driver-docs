@@ -4,7 +4,6 @@ description: WDF verification for Driver Verifier
 keywords:
 - WDF verification for Driver Verifier
 ms.date: 09/14/2018
-ms.localizationpriority: medium
 ---
 
 # WDF Verification

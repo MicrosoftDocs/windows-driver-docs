@@ -11,7 +11,6 @@ keywords:
 - video decoding WDK DirectX VA , macroblock-oriented picture decoding
 - decoding video WDK DirectX VA , macroblock-oriented picture decoding
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Macroblock-Oriented Picture Decoding

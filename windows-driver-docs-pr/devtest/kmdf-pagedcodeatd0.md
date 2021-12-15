@@ -9,7 +9,6 @@ api_name:
 - PagedCodeAtD0
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PagedCodeAtD0 rule (kmdf)

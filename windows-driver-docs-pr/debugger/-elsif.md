@@ -1,5 +1,5 @@
 ---
-title: .elsif
+title: .elsif (WinDbg)
 description: The .elsif token behaves like the else if keyword combination in C.
 keywords: [".elsif Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .elsif
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .elsif

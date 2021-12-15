@@ -9,7 +9,6 @@ api_name:
 - PINBALL_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x59: PINBALL\_FILE\_SYSTEM

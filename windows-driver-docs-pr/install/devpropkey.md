@@ -10,7 +10,6 @@ api_location:
 - devpropdef.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

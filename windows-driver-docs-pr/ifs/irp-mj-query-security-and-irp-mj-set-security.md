@@ -12,7 +12,6 @@ keywords:
 - retrieving security descriptors
 - querying security descriptors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY

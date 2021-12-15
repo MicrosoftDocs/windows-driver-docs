@@ -2,7 +2,6 @@
 title: SendDownStreamIrp Function
 description: Provides information about the SendDownStreamIrp function
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # SendDownStreamIrp Function

@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbhcdlistlogs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhcdlistlogs

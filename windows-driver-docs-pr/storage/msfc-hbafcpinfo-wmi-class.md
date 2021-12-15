@@ -1,7 +1,6 @@
 ---
 title: MSFC\_HBAFCPInfo WMI Class
 description: MSFC\_HBAFCPInfo WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

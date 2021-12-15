@@ -10,7 +10,6 @@ keywords:
 - GDL WDK , entries
 - unidentified entries WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Association Search Criteria

@@ -6,7 +6,6 @@ keywords:
 - PCL-5e WDK Unidrv , halftone algorithms
 - halftoning WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Halftone Algorithms

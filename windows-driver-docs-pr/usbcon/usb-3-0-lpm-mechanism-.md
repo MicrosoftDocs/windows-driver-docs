@@ -2,7 +2,6 @@
 description: This topic describes the USB 3.0 LPM mechanism.There is an addendum to the official USB 2.0 Specification (USB2_LinkPowerMangement_ECN), which defines LPM for newer USB 2.0 hardware.
 title: USB 3.0 LPM mechanism
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB 3.0 LPM mechanism

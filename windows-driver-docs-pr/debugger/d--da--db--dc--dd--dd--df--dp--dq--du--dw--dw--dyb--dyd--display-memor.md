@@ -9,7 +9,6 @@ api_name:
 - d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)

@@ -9,7 +9,6 @@ api_name:
 - .outmask (Control Output Mask)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .outmask (Control Output Mask)

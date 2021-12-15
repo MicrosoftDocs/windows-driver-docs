@@ -5,7 +5,6 @@ keywords:
 - heads WDK DirectX 9.0
 - multiple-head hardware WDK DirectX 9.0 , creating heads
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Heads

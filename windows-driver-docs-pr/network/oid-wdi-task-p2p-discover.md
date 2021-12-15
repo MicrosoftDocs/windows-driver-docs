@@ -4,11 +4,12 @@ description: OID_WDI_TASK_P2P_DISCOVER is issued to the device to perform Wi-Fi 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_P2P_DISCOVER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_P2P\_DISCOVER
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_P2P\_DISCOVER is issued to the device to perform Wi-Fi Direct discovery.

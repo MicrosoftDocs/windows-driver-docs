@@ -3,7 +3,6 @@ title: Enable heap validation on call
 description: Enable heap validation on call
 keywords: ["Enable heap validation on call (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable heap validation on call

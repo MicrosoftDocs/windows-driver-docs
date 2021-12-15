@@ -2,7 +2,6 @@
 title: Creating a mobile package
 description: This topic provides information about creating a package for installing the sample driver on a mobile device.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Creating a mobile package

@@ -2,7 +2,6 @@
 title: Storage Virtual Miniport Drivers When Are They Appropriate
 description: Storage Virtual Miniport Drivers When Are They Appropriate
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storage Virtual Miniport Drivers: When Are They Appropriate?

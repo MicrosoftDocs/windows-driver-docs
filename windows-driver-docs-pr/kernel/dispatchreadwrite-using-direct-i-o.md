@@ -3,7 +3,6 @@ title: DispatchReadWrite Using Direct I/O
 description: DispatchReadWrite Using Direct I/O
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DispatchReadWrite Using Direct I/O

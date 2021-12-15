@@ -5,7 +5,6 @@ keywords:
 - pending packets WDK Windows Filtering Platform
 - callout types WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Types of Callouts

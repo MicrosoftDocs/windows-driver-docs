@@ -7,7 +7,6 @@ keywords:
 - TV capture WDK video capture
 - television capture WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PCI-Based TV Capture

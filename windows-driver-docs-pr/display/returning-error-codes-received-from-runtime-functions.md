@@ -6,7 +6,6 @@ keywords:
 - runtime function error codes WDK display
 - error codes WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Returning Error Codes Received from Runtime Functions

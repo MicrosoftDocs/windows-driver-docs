@@ -2,7 +2,6 @@
 title: Cancellation of Data Transfers in Windows Vista
 description: Cancellation of Data Transfers in Windows Vista
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cancellation of Data Transfers in Windows Vista

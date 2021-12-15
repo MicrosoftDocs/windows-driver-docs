@@ -9,7 +9,6 @@ keywords:
 - user-mode drivers WDK UMDF , I/O requests
 - processing I/O requests WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing I/O Requests (UMDF 1)

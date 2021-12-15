@@ -16,7 +16,6 @@ keywords:
 - proscan monitors WDK video port extensions
 - progressive scan monitors WDK video port extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Progressive Scan Monitors and Interleaved Data

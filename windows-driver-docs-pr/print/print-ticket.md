@@ -8,7 +8,6 @@ keywords:
 - print jobs WDK , Print Tickets
 - jobs WDK print , Print Tickets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Ticket

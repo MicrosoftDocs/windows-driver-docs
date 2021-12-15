@@ -7,7 +7,6 @@ keywords:
 - shared memory WDK networking
 - sharing memory address space
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Shared Memory in Network Drivers

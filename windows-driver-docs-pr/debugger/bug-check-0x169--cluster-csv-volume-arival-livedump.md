@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x169: CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP
@@ -31,7 +30,7 @@ The CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP bug check has a value of 0x00000169.
 |4| Reserved.|
 
 
-## ## Cause
+## Cause
 
 The Cluster Shared Volume Manager was asked to create a new volume device object, and volume has not arrived in time.
 
@@ -39,10 +38,10 @@ The system generated a live dump for analysis of the delay.
 
 (This code can never be used for a real bugcheck.)
 
-## ## Resolution
+## Resolution
  
 
-## ## See Also-
+## See Also-
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

@@ -8,7 +8,6 @@ keywords:
 - .out files
 - out files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tracefmt Output File

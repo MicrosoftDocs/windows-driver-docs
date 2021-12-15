@@ -10,7 +10,6 @@ keywords:
 - decoding video WDK DirectX VA , data flow
 - picture decoding WDK DirectX VA , data flow
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectX VA Data Flow Management

@@ -9,7 +9,6 @@ api_name:
 - .childdbg (Debug Child Processes)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .childdbg (Debug Child Processes)

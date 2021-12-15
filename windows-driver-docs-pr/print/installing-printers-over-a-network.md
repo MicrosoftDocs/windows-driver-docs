@@ -11,7 +11,6 @@ keywords:
 - sharing printers over network
 - connections WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Printers Over a Network

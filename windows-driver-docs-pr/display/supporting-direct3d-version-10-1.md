@@ -4,7 +4,6 @@ description: Supporting Direct3D Version 10.1
 keywords:
 - Direct3D version 10.1 WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Direct3D Version 10.1

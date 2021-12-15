@@ -10,7 +10,6 @@ keywords:
 - drawing surfaces WDK DirectDraw , attachments
 - DirectDraw surfaces WDK Windows 2000 display , attachments
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Complex Surfaces and Attachments

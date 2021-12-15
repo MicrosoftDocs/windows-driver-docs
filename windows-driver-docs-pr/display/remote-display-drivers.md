@@ -2,7 +2,6 @@
 title: Remote Display Drivers
 description: A remote display driver is based on the Windows 2000 Mirror Driver model and is used to render the desktop in a remote session.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Remote Display Drivers

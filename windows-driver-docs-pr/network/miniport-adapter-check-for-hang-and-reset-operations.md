@@ -9,7 +9,6 @@ keywords:
 - MiniportCheckForHangEx
 - hang and reset o
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Adapter Check-for-Hang and Reset Operations

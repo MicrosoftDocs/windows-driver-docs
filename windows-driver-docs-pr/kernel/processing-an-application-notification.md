@@ -3,7 +3,6 @@ title: Processing an Application Notification
 description: Processing an Application Notification
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , application", "registering for application notifications WDK dynamic hardware partitioning", "processing application notifications WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Processing an Application Notification

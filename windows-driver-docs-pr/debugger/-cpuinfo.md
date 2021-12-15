@@ -1,5 +1,5 @@
 ---
-title: cpuinfo
+title: cpuinfo (WinDbg)
 description: The cpuinfo extension displays detailed information about the target computer's CPU.
 keywords: ["cpuinfo Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - cpuinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !cpuinfo

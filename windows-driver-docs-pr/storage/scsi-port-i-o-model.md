@@ -2,7 +2,6 @@
 title: SCSI Port I/O Model
 description: SCSI Port I/O Model
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SCSI Port I/O Model

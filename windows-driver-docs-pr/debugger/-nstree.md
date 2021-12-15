@@ -1,5 +1,5 @@
 ---
-title: nstree
+title: nstree (WinDbg)
 description: The nstree extension displays an ACPI namespace object and its children in the namespace tree.
 keywords: ["nstree Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - nstree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !nstree

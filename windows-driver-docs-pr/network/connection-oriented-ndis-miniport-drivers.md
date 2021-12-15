@@ -6,7 +6,6 @@ keywords:
 - NDIS miniport drivers WDK , types
 - connection-oriented drivers WDK networking , miniport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection-Oriented NDIS Miniport Drivers

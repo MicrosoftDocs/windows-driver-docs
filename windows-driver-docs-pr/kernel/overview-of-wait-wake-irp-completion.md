@@ -3,7 +3,6 @@ title: Overview of Wait/Wake IRP Completion
 description: Overview of Wait/Wake IRP Completion
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , completing"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Wait/Wake IRP Completion

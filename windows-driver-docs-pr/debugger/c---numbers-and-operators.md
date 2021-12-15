@@ -3,7 +3,6 @@ title: C++ Numbers and Operators
 description: C++ Numbers and Operators
 keywords: ["expressions, C++ expression syntax", "C++ expressions, numbers", "C++ expressions, operators", "numerical expressions, C++", "operators, C++", "precedence rules (C++)", "methods", "methods, syntax", "members of classes"]
 ms.date: 03/31/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
 

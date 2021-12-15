@@ -5,7 +5,6 @@ keywords:
 - parsed data WDK HID
 - preparsed data WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Preparsed Data

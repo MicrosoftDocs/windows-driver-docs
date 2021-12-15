@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 06/18/2020
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH

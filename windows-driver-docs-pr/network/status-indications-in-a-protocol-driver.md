@@ -6,7 +6,6 @@ keywords:
 - NDIS protocol drivers WDK , status indications
 - status indications WDK networking , protocol drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Status Indications in a Protocol Driver

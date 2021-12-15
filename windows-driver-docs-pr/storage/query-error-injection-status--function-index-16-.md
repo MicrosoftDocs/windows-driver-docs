@@ -1,7 +1,6 @@
 ---
 title: Query Error Injection Status (Function Index 16)
 description: This function returns the status of NVDIMM-N error injection.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

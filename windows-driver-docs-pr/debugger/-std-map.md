@@ -1,5 +1,5 @@
 ---
-title: std_map
+title: std_map (WinDbg)
 description: The std_map extension displays the entries of a std map tree.
 keywords: ["std_map Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - std_map
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !std\_map

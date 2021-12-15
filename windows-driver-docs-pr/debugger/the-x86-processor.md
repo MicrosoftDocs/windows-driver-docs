@@ -3,7 +3,6 @@ title: The x86 Processor
 description: This section provides information on the x86 Processor
 keywords: x86 processor, i386 processor"
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # The x86 Processor

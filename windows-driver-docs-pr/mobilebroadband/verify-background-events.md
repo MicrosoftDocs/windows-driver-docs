@@ -2,7 +2,6 @@
 title: Verify background events
 description: Verify background events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verify background events

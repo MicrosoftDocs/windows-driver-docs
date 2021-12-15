@@ -7,7 +7,6 @@ keywords:
 - callbacks WDK Direct3D
 - callback functions WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Return Codes for Direct3D Driver Callbacks

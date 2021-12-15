@@ -1,5 +1,5 @@
 ---
-title: sym
+title: sym (WinDbg)
 description: The sym extension controls noisy symbol loading and symbol prompts.
 keywords: ["symbols, noisy symbol loading", "symbols, prompts", "sym Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - sym
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sym

@@ -2,7 +2,6 @@
 title: Performance Tip Completing Requests During HwStartIo
 description: Performance Tip Completing Requests During HwStartIo
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performance Tip: Completing Requests During HwStartIo

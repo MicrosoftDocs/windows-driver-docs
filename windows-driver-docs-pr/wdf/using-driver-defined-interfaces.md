@@ -11,7 +11,6 @@ keywords:
 - dereference functions WDK KMDF
 - no-op functions WDK KMDF
 ms.date: 07/30/2021
-ms.localizationpriority: medium
 ---
 
 # Using Driver-Defined Interfaces
@@ -48,7 +47,7 @@ To create an interface and make it available to other drivers, framework-based d
     >
     > As a result, when introducing a new version of an existing interface, we recommend creating a new GUID instead of revising the **Size** or **Version** fields of the [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) structure.
     >
-    > If your driver does reuse the same interface GUID with modified **Size** or **Version** fields, the driver should not supply [**WDF\_QUERY\_INTERFACE\_CONFIG**](/windows-hardware/drivers/ddi/wdfqueryinterface/ns-wdfqueryinterface-_wdf_query_interface_config) and should instead provide a [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) callback routine for [**IRP_MN_QUERY_INTERFACE**](/windows-hardware/drivers/kernel/irp-mn-query-interface).
+    > If your driver does reuse the same interface GUID with modified **Size** or **Version** fields, the driver should not supply [**WDF\_QUERY\_INTERFACE\_CONFIG**](/windows-hardware/drivers/ddi/wdfqueryinterface/ns-wdfqueryinterface-_wdf_query_interface_config) and should instead provide a [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) callback routine for [**IRP_MN_QUERY_INTERFACE**](../kernel/irp-mn-query-interface.md).
 
 2.  Call [**WdfDeviceAddQueryInterface**](/windows-hardware/drivers/ddi/wdfqueryinterface/nf-wdfqueryinterface-wdfdeviceaddqueryinterface).
 
@@ -92,6 +91,3 @@ The only time that drivers must keep track of an interface's reference count, an
 If you are designing driver B, which defines an interface, you must decide whether your driver's interface will be accessed from a different driver stack. (Driver B cannot determine if a request for its interface is from the local driver stack or from a remote stack.) If your driver will support interface requests from a remote stack, the driver must implement a reference count.
 
 If you are designing driver A, which accesses the interface on the remote I/O target, the driver must provide an [*EvtIoTargetQueryRemove*](/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_query_remove) callback function that releases the interface when driver B's device is about to be removed, an [*EvtIoTargetRemoveComplete*](/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_remove_complete) callback function that releases the interface when driver B's device is surprise-removed, and an [*EvtIoTargetRemoveCanceled*](/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_remove_canceled) callback function that reacquires the interface if an attempt to remove the device was canceled.
-
- 
-

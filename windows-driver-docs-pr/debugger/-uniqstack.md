@@ -1,5 +1,5 @@
 ---
-title: uniqstack
+title: uniqstack (WinDbg)
 description: The uniqstack extension displays all of the stacks for all of the threads in the current process, excluding stacks that appear to have duplicates.
 keywords: ["uniqstack Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - uniqstack
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !uniqstack

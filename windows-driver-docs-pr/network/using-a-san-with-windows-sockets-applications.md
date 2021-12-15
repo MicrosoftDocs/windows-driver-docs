@@ -6,7 +6,6 @@ keywords:
 - SAN WDK , Windows Sockets applications
 - Windows Sockets applications WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using a SAN with Windows Sockets Applications

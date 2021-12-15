@@ -9,7 +9,6 @@ api_name:
 - pt (Step to Next Return)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # pt (Step to Next Return)

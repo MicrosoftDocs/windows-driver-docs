@@ -1,5 +1,5 @@
 ---
-title: dpa
+title: dpa (WinDbg)
 description: The dpa extension displays pool allocation information.
 keywords: ["pool allocation", "dpa Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - dpa
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dpa

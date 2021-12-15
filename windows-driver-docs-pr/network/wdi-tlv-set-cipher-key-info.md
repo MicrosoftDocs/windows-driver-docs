@@ -4,10 +4,11 @@ description: WDI_TLV_SET_CIPHER_KEY_INFO is a TLV that contains cipher key mappi
 ms.date: 05/07/2021
 keywords:
  - WDI_TLV_SET_CIPHER_KEY_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SET\_CIPHER\_KEY\_INFO
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 WDI\_TLV\_SET\_CIPHER\_KEY\_INFO is a TLV that contains cipher key mapping key information for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
 

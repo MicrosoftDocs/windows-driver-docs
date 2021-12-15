@@ -9,7 +9,6 @@ keywords:
 - UlGenerateDigitModes
 - UlMonitorDigitModes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Responding to an OID\_CO\_TAPI\_LINE\_CAPS Query

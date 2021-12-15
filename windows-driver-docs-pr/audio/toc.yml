@@ -347,6 +347,8 @@
     href: usb-2-0-audio-drivers.md
   - name: "Supporting audio posture"
     href: supporting-audio-posture.md
+  - name: "Windows 11 APIs for Audio Processing Object"
+    href: windows-11-apis-for-audio-processing-objects.md
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
   - name: "Bluetooth Bypass Guidelines for Audio Drivers"

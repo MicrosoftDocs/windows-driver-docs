@@ -2,7 +2,6 @@
 title: Querying SCSI Port for Hardware Information
 description: Querying SCSI Port for Hardware Information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying SCSI Port for Hardware Information

@@ -1,11 +1,10 @@
 ---
-title: C28124
+title: C28124 warning
 description: Warning C28124 The call to causes the IRQ Level to be set below the minimum acceptable for the function being analyzed.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28124"
 ---

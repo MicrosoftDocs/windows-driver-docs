@@ -6,7 +6,6 @@ keywords:
 - DrvDeviceCapabilities
 - Win32 applications WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Win32 API Support for Print Capabilities

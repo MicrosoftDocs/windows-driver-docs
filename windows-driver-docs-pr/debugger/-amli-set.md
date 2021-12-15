@@ -1,5 +1,5 @@
 ---
-title: amli set
+title: amli set (WinDbg)
 description: The amli set extension sets or displays the AMLI Debugger options.
 keywords: ["amli set Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - amli set
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli set

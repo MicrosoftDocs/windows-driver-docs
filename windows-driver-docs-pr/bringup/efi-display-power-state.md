@@ -2,7 +2,6 @@
 title: EFI_DISPLAY_POWER_STATE
 description: Provides information about the EFI_DISPLAY_POWER_STATE enumeration.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_DISPLAY_POWER_STATE

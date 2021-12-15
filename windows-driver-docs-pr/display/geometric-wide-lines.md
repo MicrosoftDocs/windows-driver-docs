@@ -9,7 +9,6 @@ keywords:
 - geometric wide lines WDK GDI
 - geometric lines WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Geometric Wide Lines

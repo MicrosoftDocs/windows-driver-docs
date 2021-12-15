@@ -2,7 +2,6 @@
 title: Device power management
 description: The ACPI 6.3 specification defines a set of namespace objects to specify device power information for a device.
 ms.date: 03/28/2021
-ms.localizationpriority: medium
 ---
 
 # Device power management

@@ -2,7 +2,6 @@
 title: Kernel Live Dump Code Reference
 description: This section contains descriptions of the common kernel live dumps, and describes how they are different from traditional bug checks.
 ms.date: 03/10/2021
-ms.localizationpriority: high
 ---
 
 # Kernel Live Dump Code Reference
@@ -14,7 +13,7 @@ This section contains descriptions of common kernel live dump codes that may occ
 
 ## Kernel live dump compared to bug check
 
-With a traditional bug check, the PC resets and the user's work is disrupted. The goal of kernel live dump is to gather data to trouble shoot an abnormal situation, but allow the OS to continue operation. This reduces downtime when compared to a bug check for “non-fatal” but high-impact failures and hangs. Kernel live dumps are used when it is possible to recover the OS to a to a known good state. For example a hardware reset of a subsystem, such as video/display, USB3 or Wi-Fi can allow those systems to return to a known good state, with minimal user impact.
+With a traditional bug check, the PC resets and the user's work is disrupted. The goal of kernel live dump is to gather data to trouble shoot an abnormal situation, but allow the OS to continue operation. This reduces downtime when compared to a bug check for “non-fatal” but high-impact failures and hangs. Kernel live dumps are used when it is possible to recover the OS to a known good state. For example a hardware reset of a subsystem, such as video/display, USB3 or Wi-Fi can allow those systems to return to a known good state, with minimal user impact.
 
 A kernel live dump creates a consistent snapshot of kernel memory and saves it to a dump file for the future analysis. To minimize impact on the performance, memory copy techniques are used to create the dump file in a short period of time. In addition, the collection of live dumps is throttled, so that user impact is minimized.
 

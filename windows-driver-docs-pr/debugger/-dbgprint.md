@@ -1,5 +1,5 @@
 ---
-title: dbgprint
+title: dbgprint (WinDbg)
 description: The dbgprint extension displays a string that was previously sent to the DbgPrint buffer.
 keywords: ["dbgprint Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - dbgprint
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dbgprint

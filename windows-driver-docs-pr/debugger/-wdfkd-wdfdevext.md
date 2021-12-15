@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfdevext
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdevext

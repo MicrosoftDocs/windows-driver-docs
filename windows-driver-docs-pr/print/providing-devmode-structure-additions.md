@@ -8,7 +8,6 @@ keywords:
 - private DEVMODE WDK print
 - public DEVMODE WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Providing DEVMODE Structure Additions

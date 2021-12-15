@@ -3,7 +3,6 @@ title: Singly and Doubly Linked Lists
 description: Singly and Doubly Linked Lists
 keywords: ["singly linked lists WDK kernel", "doubly linked lists WDK kernel", "sequenced singly linked lists WDK kernel", "SINGLE_LIST_ENTRY", "LIST_ENTRY"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Singly and Doubly Linked Lists

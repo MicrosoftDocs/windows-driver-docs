@@ -1,5 +1,5 @@
 ---
-title: diskspace
+title: diskspace (WinDbg)
 description: The diskspace extension displays the amount of free space on a hard disk of the target computer.
 keywords: ["diskspace Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - diskspace
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !diskspace

@@ -10,7 +10,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , DDI, conditionally required functions
 - DDI WDK graphics , conditionally required functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Conditionally Required Graphics Driver Functions

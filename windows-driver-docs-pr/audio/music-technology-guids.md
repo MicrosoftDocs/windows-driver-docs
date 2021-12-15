@@ -10,7 +10,6 @@ keywords:
 - DirectMusic WDK audio , stream data formats
 - DMus stream data formats WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Music Technology GUIDs

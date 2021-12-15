@@ -9,7 +9,6 @@ api_name:
 - dl (Display Linked List)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # dl (Display Linked List)

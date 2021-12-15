@@ -3,7 +3,6 @@ title: Remote Debugging (Debugger Engine)
 description: Remote debugging occurs when a client's communication with a target is indirect, for example, through a network connection.
 keywords: ["Debugger Engine, remote debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Remote Debugging (Debugger Engine)

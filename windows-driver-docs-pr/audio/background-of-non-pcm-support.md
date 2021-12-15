@@ -7,7 +7,6 @@ keywords:
 - waveOut non-PCM support WDK audio
 - DirectSound WDK audio , non-PCM support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Background of Non-PCM Support

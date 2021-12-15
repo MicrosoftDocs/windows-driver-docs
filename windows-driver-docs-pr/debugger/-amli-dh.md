@@ -1,5 +1,5 @@
 ---
-title: amli dh
+title: amli dh (WinDbg)
 description: The amli dh extension displays the AML interpreter's internal heap block.
 keywords: ["amli dh Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - amli dh
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli dh

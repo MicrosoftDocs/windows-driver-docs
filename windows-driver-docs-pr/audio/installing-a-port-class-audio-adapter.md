@@ -12,7 +12,6 @@ keywords:
 - add-registry-sections WDK audio
 - audio adapter drivers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Port Class Audio Adapter

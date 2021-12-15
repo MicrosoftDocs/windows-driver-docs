@@ -1,5 +1,5 @@
 ---
-title: igrep
+title: igrep (WinDbg)
 description: The igrep extension searches for a pattern in disassembly.
 keywords: ["igrep Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - igrep
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !igrep

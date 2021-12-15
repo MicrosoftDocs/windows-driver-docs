@@ -9,7 +9,6 @@ api_name:
 - PdoInitFreeDeviceCallback
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PdoInitFreeDeviceCallback rule (kmdf)

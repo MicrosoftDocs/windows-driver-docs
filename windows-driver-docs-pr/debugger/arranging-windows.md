@@ -3,7 +3,6 @@ title: Arranging Windows
 description: Arranging Windows
 keywords: ["debugging information windows, suggestions for docking"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Arranging Windows

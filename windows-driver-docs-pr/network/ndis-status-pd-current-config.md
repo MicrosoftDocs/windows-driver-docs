@@ -4,7 +4,6 @@ description: This status indication is a notification that the NDIS_PD_CONFIG st
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PD_CURRENT_CONFIG Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PD\_CURRENT\_CONFIG

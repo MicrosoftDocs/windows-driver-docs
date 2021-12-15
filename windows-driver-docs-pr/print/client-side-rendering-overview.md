@@ -4,7 +4,6 @@ description: Client-Side Rendering Overview
 keywords:
 - client-side rendering WDK print , about client-side rendering
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Client-Side Rendering Overview

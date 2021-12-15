@@ -1,8 +1,7 @@
 ---
 title: API Layering
 description: Windows drivers allow you to create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
-ms.date: 04/28/2020
-ms.localizationpriority: medium
+ms.date: 12/01/2021
 ---
 
 # API Layering
@@ -13,7 +12,7 @@ API Layering requires that binaries in Windows Driver packages call only those A
 
 To see which platform an API supports, visit the documentation page for the API and examine the **Target Platform** entry of the Requirements section.  Windows Drivers must only use APIs or DDIs that have a **Target Platform** listed as `Universal`, meaning the subset of functionality that is available on all Windows offerings.
 
-The [Windows API Sets](/windows/win32/apiindex/windows-apisets) page describes a set of best practices and tools for determining whether an API is available for Windows 10X development.
+The [Windows API Sets](/windows/win32/apiindex/windows-apisets) page describes a set of best practices and tools for determining whether an API is available on a particular platform.
 
 ## Validating API Layering  
 

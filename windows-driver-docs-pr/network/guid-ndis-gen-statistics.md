@@ -4,7 +4,6 @@ description: This topic describes the GUID_NDIS_GEN_STATISTICS GUID for the NDIS
 keywords:
 - GUID_NDIS_GEN_STATISTICS, WDK GUID_NDIS_GEN_STATISTICS network drivers
 ms.date: 11/22/2017
-ms.localizationpriority: medium
 ---
 
 # GUID_NDIS_GEN_STATISTICS

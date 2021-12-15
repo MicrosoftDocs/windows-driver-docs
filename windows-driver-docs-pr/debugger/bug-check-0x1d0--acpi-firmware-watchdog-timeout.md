@@ -9,7 +9,6 @@ api_name:
 - ACPI_FIRMWARE_WATCHDOG_TIMEOUT 
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D0: ACPI\_FIRMWARE\_WATCHDOG\_TIMEOUT 

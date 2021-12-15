@@ -2,7 +2,6 @@
 title: EFI_USBFN_ENDPOINT_DIRECTION
 description: The EFI_USBFN_ENDPOINT_DIRECTION enumeration is used to identify direction of an USB transfer.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_ENDPOINT_DIRECTION

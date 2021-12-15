@@ -2,7 +2,6 @@
 title: Card Requirements
 description: Card Requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Card Requirements

@@ -1,8 +1,7 @@
 ---
-title: C28717
+title: C28717 warning
 description: Warning C28717 Invalid VARIANT type.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28717"
 ---

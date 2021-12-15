@@ -2,7 +2,6 @@
 title: Debugger Data Model - The FileSystem Namespace
 description: The FileSystem namespace provides the  properties and methods for manipulating the file system.
 ms.date: 12/13/2018
-ms.localizationpriority: medium
 ---
 # The FileSystem Namespace
 

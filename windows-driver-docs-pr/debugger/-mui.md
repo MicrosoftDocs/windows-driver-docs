@@ -1,5 +1,5 @@
 ---
-title: mui
+title: mui (WinDbg)
 description: The mui extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was improved in Windows Vista. 
 keywords: ["multi-language user interface", "mui Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - mui
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !mui

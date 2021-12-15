@@ -9,7 +9,6 @@ api_name:
 - Irql_Miscellaneous_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_Miscellaneous\_Function rule (ndis)

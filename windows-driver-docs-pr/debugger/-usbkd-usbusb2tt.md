@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbusb2tt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbusb2tt

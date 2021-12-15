@@ -8,7 +8,6 @@ keywords:
 - NFP
 description: Information about reserved ioctl codes for NFC drivers, which must return STATUS_INVALID_DEVICE_STATE.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reserved IOCTL codes

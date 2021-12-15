@@ -2,7 +2,6 @@
 title: Enabling Support for Debugging Device Installations
 description: Enabling Support for Debugging Device Installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Support for Debugging Device Installations

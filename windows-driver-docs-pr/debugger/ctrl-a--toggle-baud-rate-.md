@@ -9,7 +9,6 @@ api_name:
 - CTRL+A (Toggle Baud Rate)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+A (Toggle Baud Rate)

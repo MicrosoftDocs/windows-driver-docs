@@ -8,7 +8,6 @@ keywords:
 - decoding video WDK DirectX VA , compressed pictures
 - compressed picture decoding WDK DirectX VA , about compressed picture decoding
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Compressed Picture Decoding

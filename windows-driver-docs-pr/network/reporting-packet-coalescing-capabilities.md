@@ -2,7 +2,6 @@
 title: Reporting Packet Coalescing Capabilities
 description: Reporting Packet Coalescing Capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Packet Coalescing Capabilities

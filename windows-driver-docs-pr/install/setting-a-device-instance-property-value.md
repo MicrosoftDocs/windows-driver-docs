@@ -2,7 +2,6 @@
 title: Setting a Device Instance Property Value
 description: Setting a Device Instance Property Value
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting a Device Instance Property Value

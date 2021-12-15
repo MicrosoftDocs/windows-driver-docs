@@ -9,7 +9,6 @@ api_name:
 - .holdmem (Hold and Compare Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .holdmem (Hold and Compare Memory)

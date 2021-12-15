@@ -10,7 +10,6 @@ keywords:
 - sensor driver
 - UMDF sensor driver
 ms.date: 08/25/2021
-ms.localizationpriority: medium
 ---
 
 # Geolocation driver sample for Windows 8.1

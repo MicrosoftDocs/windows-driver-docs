@@ -7,7 +7,6 @@ keywords:
 - backward compatibility WDK networking
 - compatibility WDK networking
 ms.date: 08/06/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q4
 ---
 

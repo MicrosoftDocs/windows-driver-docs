@@ -3,7 +3,6 @@ title: File Kernel Debug
 description: File Kernel Debug
 keywords: ["File Kernel Debug", "starting the debugger, File Kernel Debug"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Kernel Debug

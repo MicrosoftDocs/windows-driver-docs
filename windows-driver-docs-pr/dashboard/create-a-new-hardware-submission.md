@@ -3,7 +3,6 @@ title: Create a new hardware submission
 description: Create a new hardware submission
 ms.date: 04/20/2017
 ms.topic: article
-ms.localizationpriority: medium
 ---
 
 # Create a new hardware submission

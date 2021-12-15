@@ -1,5 +1,5 @@
 ---
-title: ready
+title: ready (WinDbg)
 description: The ready extension displays summary information about each thread in the system in a READY state.
 keywords: ["thread, ready threads", "ready Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ready
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ready

@@ -9,7 +9,6 @@ api_name:
 - TTM_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x19B: TTM\_FATAL\_ERROR

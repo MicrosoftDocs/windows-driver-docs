@@ -2,7 +2,6 @@
 title: How do I initialize WPP software tracing in a kernel-mode driver
 description: How do I initialize WPP software tracing in a kernel-mode driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I initialize WPP software tracing in a kernel-mode driver?

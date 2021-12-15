@@ -9,7 +9,6 @@ api_name:
 - CompletionEventChecking
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CompletionEventChecking rule (wdm)

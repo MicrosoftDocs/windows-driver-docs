@@ -2,7 +2,6 @@
 title: Status Section
 description: Status Section
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Status Section

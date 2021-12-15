@@ -3,7 +3,6 @@ title: Crashing and Rebooting the Target Computer
 description: This topic covers crashing and rebooting the Target Computer
 keywords: debugging, debug, controlling the target, crashing the target computer, rebooting the target computer, reboot, boot process, system crash, bug check
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Crashing and Rebooting the Target Computer

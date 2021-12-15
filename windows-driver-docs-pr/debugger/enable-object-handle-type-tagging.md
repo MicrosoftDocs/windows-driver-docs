@@ -3,7 +3,6 @@ title: Enable object handle type tagging
 description: Enable object handle type tagging
 keywords: ["Enable object handle type tagging (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable object handle type tagging

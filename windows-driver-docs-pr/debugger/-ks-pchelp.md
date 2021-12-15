@@ -1,5 +1,5 @@
 ---
-title: ks.pchelp
+title: ks.pchelp (WinDbg)
 description: The ks.pchelp extension displays a help text showing PortCls-specific Ks.dll extension commands.
 keywords: ["ks.pchelp Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ks.pchelp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.pchelp

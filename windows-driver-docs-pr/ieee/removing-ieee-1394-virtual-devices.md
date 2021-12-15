@@ -7,7 +7,6 @@ keywords:
 - virtual devices WDK IEEE 1394 bus
 - removing virtual devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Removing IEEE 1394 Virtual Devices

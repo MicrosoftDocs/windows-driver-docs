@@ -2,7 +2,6 @@
 title: Porting DriverEntry
 description: Porting DriverEntry
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting DriverEntry

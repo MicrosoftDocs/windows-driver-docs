@@ -1,5 +1,5 @@
 ---
-title: .else
+title: .else (WinDbg)
 description: The .else token behaves like the else keyword in C.
 keywords: [".else Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .else
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .else

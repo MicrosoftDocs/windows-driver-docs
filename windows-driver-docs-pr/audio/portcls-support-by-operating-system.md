@@ -16,7 +16,6 @@ keywords:
 - interfaces WDK Port Class
 - prefetch offset
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PortCls Support by Operating System

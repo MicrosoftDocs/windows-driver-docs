@@ -8,7 +8,6 @@ keywords:
 - D3DHAL_DP2TEXTURESTAGESTATE
 - texture management WDK Direct3D , stages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing Texture Stages

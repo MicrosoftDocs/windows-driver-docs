@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfumtriage
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfumtriage

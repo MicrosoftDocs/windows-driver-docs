@@ -9,7 +9,6 @@ api_name:
 - lsp (Set Number of Source Lines)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # lsp (Set Number of Source Lines)

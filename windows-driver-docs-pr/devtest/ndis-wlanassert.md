@@ -9,7 +9,6 @@ api_name:
 - WlanAssert
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WlanAssert rule (ndis)

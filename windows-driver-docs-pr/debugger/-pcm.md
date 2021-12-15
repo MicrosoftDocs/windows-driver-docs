@@ -1,5 +1,5 @@
 ---
-title: pcm
+title: pcm (WinDbg)
 description: The pcm extension displays the specified private cache map. This extension is only available in Windows 2000.
 keywords: ["private cache map", "cache manager", "pcm Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - pcm
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pcm

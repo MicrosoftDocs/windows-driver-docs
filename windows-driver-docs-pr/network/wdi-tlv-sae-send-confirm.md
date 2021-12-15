@@ -4,11 +4,12 @@ description: WDI_TLV_SAE_SEND_CONFIRM is a TLV that contains the Send Confirm fi
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_SEND_CONFIRM Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # WDI_TLV_SAE_SEND_CONFIRM
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_SAE_SEND_CONFIRM** is a TLV that contains the Send Confirm field for a Simultaneous Authentication of Equals (SAE) Confirm request. The Send Confirm field is used as an anti-replay counter.
 

@@ -4,7 +4,6 @@ description: Frame-Rate Conversion Modes
 keywords:
 - frame-rate conversion WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Frame-Rate Conversion Modes

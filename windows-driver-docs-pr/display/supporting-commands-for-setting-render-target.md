@@ -4,7 +4,6 @@ description: Supporting Commands for Setting Render Target
 keywords:
 - render targets WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Commands for Setting Render Target

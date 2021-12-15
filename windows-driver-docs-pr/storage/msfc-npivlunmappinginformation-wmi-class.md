@@ -1,7 +1,6 @@
 ---
 title: MSFC\_NPIVLUNMappingInformation WMI Class
 description: MSFC\_NPIVLUNMappingInformation WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

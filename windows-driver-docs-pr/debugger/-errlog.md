@@ -1,5 +1,5 @@
 ---
-title: errlog
+title: errlog (WinDbg)
 description: The errlog extension displays the contents of any pending entries in the I/O system's error log.
 keywords: ["errlog Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - errlog
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !errlog

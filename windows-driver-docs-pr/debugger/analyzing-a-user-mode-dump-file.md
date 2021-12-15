@@ -3,7 +3,6 @@ title: Analyzing a User-Mode Dump File
 description: Analyzing a User-Mode Dump File
 keywords: ["dump file, analyzing a user-mode dump file"]
 ms.date: 08/01/2018
-ms.localizationpriority: medium
 ---
 
 # Analyzing a User-Mode Dump File
@@ -21,7 +20,7 @@ User-mode memory dump files can be analyzed by WinDbg. The processor or Windows 
 
 ### <span id="installing_symbol_files"></span><span id="INSTALLING_SYMBOL_FILES"></span>Installing Symbol Files
 
-Before analyzing the memory dump file, you will need to install the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For more information about the proper installation of symbol files, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
+Before analyzing the memory dump file, you will need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md)..
 
 You will also need to install all the symbol files for the user-mode process, either an application or system service, that caused the system to generate the dump file. If this code was written by you, the symbol files should have been generated when the code was compiled and linked. If this is commercial code, check on the product CD-ROM or contact the software manufacturer for these particular symbol files.
 
@@ -62,7 +61,7 @@ User-mode memory dump files can be analyzed by CDB. The processor or Windows ver
 
 ### <span id="installing_symbol_files"></span><span id="INSTALLING_SYMBOL_FILES"></span>Installing Symbol Files
 
-Before analyzing the memory dump file, you will need to install the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For more information about the proper installation of symbol files, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
+Before analyzing the memory dump file, you will need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 You will also need to install all the symbol files for the user-mode process, either an application or system service, that caused the system to generate the dump file. If this code was written by you, the symbol files should have been generated when the code was compiled and linked. If this is commercial code, check on the product CD-ROM or contact the software manufacturer for these particular symbol files.
 

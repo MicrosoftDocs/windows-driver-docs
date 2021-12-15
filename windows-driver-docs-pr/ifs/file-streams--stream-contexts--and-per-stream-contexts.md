@@ -11,7 +11,6 @@ keywords:
 - SCB WDK file system
 - stream context WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # File Streams, Stream Contexts, and Per-Stream Contexts

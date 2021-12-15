@@ -2,7 +2,6 @@
 title: MB identity morphing solution details
 description: Describes configuration requirements and compatible IDs for MB identity morphing devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Identity Morphing Solution Details

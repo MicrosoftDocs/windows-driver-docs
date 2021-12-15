@@ -4,7 +4,6 @@ description: The NDIS_STATUS_SWITCH_NIC_STATUS status indication is used to enca
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_SWITCH_NIC_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_SWITCH\_NIC\_STATUS

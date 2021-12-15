@@ -3,7 +3,6 @@ title: Design Goals for Kernel-Mode Drivers
 description: Design Goals for Kernel-Mode Drivers
 keywords: ["kernel-mode drivers WDK , design goals"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Design Goals for Kernel-Mode Drivers

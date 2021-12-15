@@ -8,7 +8,6 @@ keywords:
 - UWP
 - Hardware
 ms.date: 08/11/2021
-ms.localizationpriority: medium
 ---
 
 # Hardware Support App (HSA): Steps for App Developers
@@ -140,4 +139,4 @@ When the target machine is in Developer Mode, you can try the following steps to
 
 [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
 
-[Universal Windows Platform (UWP)](/windows/uwp/design/basics/design-and-ui-intro)
+[Universal Windows Platform (UWP)](/windows/uwp/design/basics)

@@ -9,7 +9,6 @@ api_name:
 - InitFreeDeviceCallback
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # InitFreeDeviceCallback rule (kmdf)

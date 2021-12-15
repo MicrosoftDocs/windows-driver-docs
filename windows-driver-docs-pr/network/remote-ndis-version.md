@@ -2,7 +2,6 @@
 title: Remote NDIS Version
 description: Remote NDIS Version
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Remote NDIS Version

@@ -3,7 +3,6 @@ title: Extended Example Using IoIs32bitProcess
 description: Extended Example Using IoIs32bitProcess
 keywords: ["32-bit I/O support WDK 64-bit , IoIs32bitProcess", "IoIs32bitProcess"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Example: Using IoIs32bitProcess

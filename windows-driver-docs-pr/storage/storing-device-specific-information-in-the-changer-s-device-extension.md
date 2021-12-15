@@ -6,7 +6,6 @@ keywords:
 - storage changer drivers WDK , device-specific data storage
 - device-specific data storage WDK changer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storing Device-Specific Information in the Changer's Device Extension

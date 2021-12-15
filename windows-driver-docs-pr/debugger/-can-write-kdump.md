@@ -9,7 +9,6 @@ api_name:
 - can_write_kdump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !can\_write\_kdump

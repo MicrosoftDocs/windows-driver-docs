@@ -2,7 +2,6 @@
 title: Building ARM64 Drivers with the WDK
 description: This topic describes how to build an ARM64 driver with the Windows Driver Kit (WDK).
 ms.date: 01/18/2018
-ms.localizationpriority: medium
 ---
 
 # Building ARM64 Drivers with the WDK

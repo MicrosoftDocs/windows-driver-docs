@@ -1,5 +1,5 @@
 ---
-title: slist
+title: slist (WinDbg)
 description: The slist extension displays a singly-linked list (SList).
 keywords: ["SList (singly-linked list)", "slist Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - slist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !slist

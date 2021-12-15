@@ -2,7 +2,6 @@
 title: File Transfers
 description: File Transfers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # File Transfers

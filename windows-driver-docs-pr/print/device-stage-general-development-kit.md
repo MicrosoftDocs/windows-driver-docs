@@ -2,7 +2,6 @@
 title: Device Stage General Development Kit
 description: Device Stage General Development Kit
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Stage General Development Kit

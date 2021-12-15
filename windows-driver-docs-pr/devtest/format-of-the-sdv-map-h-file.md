@@ -5,7 +5,6 @@ keywords:
 - Sdv-map.h WDK Static Driver Verifier , formats
 - formats WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Format of the Sdv-map.h File

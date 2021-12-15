@@ -2,7 +2,6 @@
 title: Callout Driver Installation
 description: Callout Driver Installation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Callout Driver Installation

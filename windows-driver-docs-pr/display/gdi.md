@@ -9,7 +9,6 @@ keywords:
 - GDI WDK Windows 2000 display
 - drawing WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI

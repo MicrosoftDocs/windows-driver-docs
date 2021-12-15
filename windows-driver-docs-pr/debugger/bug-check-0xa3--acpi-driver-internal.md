@@ -9,7 +9,6 @@ api_name:
 - ACPI_DRIVER_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA3: ACPI\_DRIVER\_INTERNAL

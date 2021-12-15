@@ -5,7 +5,6 @@ ms.date: 09/28/2020
 keywords:
 - Indirect display driver, IddCx versions 1.4 and later
 - IDD, IddCx versions 1.4 and later
-ms.localizationpriority: medium
 ---
 
 # Updates for IddCx versions 1.4 and later

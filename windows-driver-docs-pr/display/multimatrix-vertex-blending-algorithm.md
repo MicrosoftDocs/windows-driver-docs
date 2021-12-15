@@ -4,7 +4,6 @@ description: Multimatrix Vertex Blending Algorithm
 keywords:
 - multimatrix vertex blending WDK Direct3D , algorithm
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multimatrix Vertex Blending Algorithm

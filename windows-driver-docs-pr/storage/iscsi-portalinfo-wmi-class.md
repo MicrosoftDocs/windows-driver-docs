@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_PortalInfo WMI Class
 description: ISCSI\_PortalInfo WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

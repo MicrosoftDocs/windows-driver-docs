@@ -7,7 +7,6 @@ keywords:
 - registering subdevices
 - dynamic subdevices WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Dynamic Topologies

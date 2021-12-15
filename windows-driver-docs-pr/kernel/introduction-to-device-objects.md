@@ -3,7 +3,6 @@ title: Introduction to Device Objects
 description: Introduction to Device Objects
 keywords: ["device objects WDK kernel , about device objects", "multiple device objects WDK kernel", "device stacks WDK kernel , about device stacks", "device extensions WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Device Objects

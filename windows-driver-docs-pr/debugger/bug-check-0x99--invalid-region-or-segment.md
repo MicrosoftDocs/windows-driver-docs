@@ -9,7 +9,6 @@ api_name:
 - INVALID_REGION_OR_SEGMENT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x99: INVALID\_REGION\_OR\_SEGMENT

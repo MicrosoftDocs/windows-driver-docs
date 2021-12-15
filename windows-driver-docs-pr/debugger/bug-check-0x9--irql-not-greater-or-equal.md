@@ -9,7 +9,6 @@ api_name:
 - IRQL_NOT_GREATER_OR_EQUAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9: IRQL\_NOT\_GREATER\_OR\_EQUAL

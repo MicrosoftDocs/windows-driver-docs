@@ -7,7 +7,6 @@ keywords:
 - notifications WDK battery
 - battery class drivers WDK , notifications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interaction of Battery Status and Notification Routines

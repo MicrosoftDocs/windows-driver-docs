@@ -6,7 +6,6 @@ keywords:
 - framework objects WDK UMDF , COM subset
 - COM WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UMDF Based on COM Subset

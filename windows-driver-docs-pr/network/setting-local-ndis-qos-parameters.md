@@ -2,7 +2,6 @@
 title: Setting Local NDIS QoS Parameters
 description: Setting Local NDIS QoS Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Local NDIS QoS Parameters

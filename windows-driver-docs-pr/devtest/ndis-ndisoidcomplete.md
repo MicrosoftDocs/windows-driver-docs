@@ -9,7 +9,6 @@ api_name:
 - NdisOidComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisOidComplete rule (ndis)

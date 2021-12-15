@@ -8,7 +8,6 @@ keywords:
 - WMI SRBs WDK storage
 - SRB WMI support WDK storage
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Handling WMI SRBs in Storage Miniport Drivers

@@ -18,7 +18,6 @@ keywords:
 - audio data ranges WDK
 - port drivers WDK audio , data-intersection handlers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data-Intersection Handlers

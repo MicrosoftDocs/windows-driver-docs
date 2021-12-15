@@ -2,7 +2,6 @@
 title: Indicating Changes to the Remote NDIS QoS Parameters
 description: Indicating Changes to the Remote NDIS QoS Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Indicating Changes to the Remote NDIS QoS Parameters

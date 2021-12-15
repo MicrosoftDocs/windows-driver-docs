@@ -2,7 +2,6 @@
 title: Property Validation for RAW Format Transfers
 description: Property Validation for RAW Format Transfers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Property Validation for RAW Format Transfers

@@ -3,7 +3,6 @@ title: File Connect to Remote Session
 description: File Connect to Remote Session
 keywords: ["File Connect to Remote Session", "remote debugging through the debugger, File Connect to Remote Session"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Connect to Remote Session

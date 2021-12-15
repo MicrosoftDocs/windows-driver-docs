@@ -9,7 +9,6 @@ api_name:
 - PROCESS_HAS_LOCKED_PAGES
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x76: PROCESS\_HAS\_LOCKED\_PAGES

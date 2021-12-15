@@ -1,5 +1,5 @@
 ---
-title: frozen
+title: frozen (WinDbg)
 description: The frozen extension displays the state of each processor.
 keywords: ["processor states", "frozen Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - frozen
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !frozen

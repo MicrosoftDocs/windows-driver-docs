@@ -4,7 +4,6 @@ description: The NDIS_STATUS_MEDIA_DISCONNECT status indicates that the status o
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_MEDIA_DISCONNECT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_MEDIA\_DISCONNECT

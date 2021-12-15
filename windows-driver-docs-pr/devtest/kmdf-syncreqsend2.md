@@ -9,7 +9,6 @@ api_name:
 - SyncReqSend2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SyncReqSend2 rule (kmdf)

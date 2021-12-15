@@ -5,7 +5,6 @@ keywords:
 - version numbers WDK DirectX 9.0
 - notifying DirectX versions WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Notifying about DirectX Version

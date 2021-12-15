@@ -1,11 +1,10 @@
 ---
-title: C28161
+title: C28161 warning
 description: Warning C28161 Exiting without acquiring the right to use floating hardware.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28161"
 ---

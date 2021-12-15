@@ -9,7 +9,6 @@ keywords:
 - original source paths WDK INF files
 - retrieving INF file path information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining the Original Source Path of an Installed INF File

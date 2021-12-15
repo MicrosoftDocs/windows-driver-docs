@@ -10,7 +10,6 @@ keywords:
 - display driver model WDK Windows 2000 , DirectX Video Acceleration
 - Windows 2000 display driver model WDK , DirectX Video Acceleration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectX Video Acceleration

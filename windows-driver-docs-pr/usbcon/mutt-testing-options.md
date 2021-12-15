@@ -2,7 +2,6 @@
 description: Before using MUTT devices, you must prepare the test system.
 title: How to prepare the test system to run MUTT test tools
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to prepare the test system to run MUTT test tools

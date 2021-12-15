@@ -1,5 +1,5 @@
 ---
-title: object
+title: object (WinDbg)
 description: The object extension displays information about a system object.
 keywords: ["object Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - object
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !object

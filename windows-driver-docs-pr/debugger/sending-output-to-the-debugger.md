@@ -3,7 +3,6 @@ title: Sending Output to the Debugger
 description: Sending Output to the Debugger
 keywords: ["sending output to the debugger", "OutputDebugString function", "DbgPrint function", "DbgPrintEx function", "KdPrint function", "KdPrintEx function"]
 ms.date: 07/20/2020
-ms.localizationpriority: medium
 ---
 
 # Sending Output to the Debugger

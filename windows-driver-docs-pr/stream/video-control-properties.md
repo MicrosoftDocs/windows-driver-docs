@@ -6,7 +6,6 @@ keywords:
 - control properties WDK video capture
 - PROPSETID_VIDCAP_VIDEOCONTROL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Control Properties

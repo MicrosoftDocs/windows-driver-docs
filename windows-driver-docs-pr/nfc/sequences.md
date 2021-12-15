@@ -1,5 +1,5 @@
 ---
-title: Sequences
+title: NFC CX driver sequences
 description: This topic describes NFC CX driver sequences.
 keywords:
 - NFC
@@ -8,7 +8,6 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sequences

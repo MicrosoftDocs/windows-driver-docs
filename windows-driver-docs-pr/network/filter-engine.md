@@ -4,7 +4,6 @@ description: Filter Engine
 keywords:
 - filter engine WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Engine

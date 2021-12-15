@@ -11,7 +11,6 @@ keywords:
 - kernel-mode file system drivers WDK file systems
 - user-mode DLLs WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Basic Architecture of a Network Redirector

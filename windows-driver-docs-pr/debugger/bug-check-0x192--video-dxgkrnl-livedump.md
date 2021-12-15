@@ -9,7 +9,6 @@ api_name:
 - VIDEO_DXGKRNL_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x193: VIDEO\_DXGKRNL\_LIVEDUMP

@@ -4,7 +4,6 @@ description: This IRP notifies a driver of a change to the system power state or
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_SET_POWER Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_SET\_POWER

@@ -2,7 +2,6 @@
 title: Porting from ScsiPort to StorPort
 description: Porting from ScsiPort to StorPort
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting from ScsiPort to StorPort

@@ -3,7 +3,6 @@ title: Registering and Enabling an IoTimer Routine
 description: Registering and Enabling an IoTimer Routine
 keywords: ["IoTimer", "IoInitializeTimer", "IoStartTimer", "registering IoTimer routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering and Enabling an IoTimer Routine

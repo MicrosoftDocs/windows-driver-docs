@@ -2,7 +2,6 @@
 title: Debugger Data Model - Source Information Objects
 description: Contains information about how Machine instructions are related to source code.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Source Information Objects 
 ## Summary

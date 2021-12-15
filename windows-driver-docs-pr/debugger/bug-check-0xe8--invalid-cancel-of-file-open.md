@@ -9,7 +9,6 @@ api_name:
 - INVALID_CANCEL_OF_FILE_OPEN
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE8: INVALID\_CANCEL\_OF\_FILE\_OPEN

@@ -5,7 +5,6 @@ keywords:
 - security WDK file systems , coexistence
 - coexistence WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Coexistence with other File System Filter Drivers

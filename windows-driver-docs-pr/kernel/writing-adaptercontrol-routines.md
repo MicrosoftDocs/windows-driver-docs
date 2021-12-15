@@ -3,7 +3,6 @@ title: Writing AdapterControl Routines
 description: Writing AdapterControl Routines
 keywords: ["AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Writing AdapterControl Routines

@@ -5,7 +5,6 @@ keywords:
 - multimatrix vertex blending WDK Direct3D , D3DRENDERSTATETYPE
 - D3DRENDERSTATETYPE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # D3DRENDERSTATETYPE Changes

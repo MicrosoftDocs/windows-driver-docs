@@ -3,7 +3,6 @@ title: Object Handles
 description: Object Handles
 keywords: ["object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel", "private object handles WDK", "shared object handles WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Object Handles

@@ -5,7 +5,6 @@ keywords:
 - GDI printer drivers WDK , data files
 - data files WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Data Files

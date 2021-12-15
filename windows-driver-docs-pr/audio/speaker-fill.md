@@ -2,7 +2,6 @@
 title: Speaker Fill
 description: Speaker Fill
 ms.date: 11/07/2018
-ms.localizationpriority: medium
 ---
 
 # Speaker Fill

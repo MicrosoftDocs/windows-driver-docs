@@ -4,7 +4,6 @@ description: The HSPluginInitPlugin function is exported by the plugin DLL and i
 keywords: 
 - HSPluginInitPlugin function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HSPluginInitPlugin function

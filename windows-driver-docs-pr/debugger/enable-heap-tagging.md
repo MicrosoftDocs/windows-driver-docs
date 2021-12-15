@@ -3,7 +3,6 @@ title: Enable heap tagging
 description: Enable heap tagging
 keywords: ["Enable heap tagging (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable heap tagging

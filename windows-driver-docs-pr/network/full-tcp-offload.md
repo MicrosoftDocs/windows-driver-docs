@@ -7,7 +7,6 @@ keywords:
 - offloading processing WDK networking
 - full TCP offload WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Full TCP Offload

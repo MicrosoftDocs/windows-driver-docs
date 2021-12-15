@@ -1,12 +1,10 @@
 ---
 description: This topic describes the WDF-provided continuous reader object. The procedures in this topic provide step-by-step instructions about how to configure the object and use it to read data from a USB pipe.
 title: How to use the continuous reader for reading data from a USB pipe
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 09/16/2021
 ---
 
 # How to use the continuous reader for reading data from a USB pipe
-
 
 This topic describes the WDF-provided continuous reader object. The procedures in this topic provide step-by-step instructions about how to configure the object and use it to read data from a USB pipe.
 
@@ -18,52 +16,51 @@ The continuous reader is not automatically power managed by the framework. This 
 
 ## What you need to know
 
-
 ### Technologies
 
--   [Kernel-Mode Driver Framework](../wdf/index.md)
--   [User-Mode Driver Framework](../wdf/index.md)
+* [Kernel-Mode Driver Framework](../wdf/index.md)
+* [User-Mode Driver Framework](../wdf/index.md)
 
 ### Prerequisites
 
 Before the client driver can use the continuous reader, make sure that these requirements are met:
 
--   Your USB device must have an IN endpoint. Check the device configuration in [USBView](../debugger/usbview.md). Usbview.exe is an application that allows you to browse all USB controllers and the USB devices connected to them. Typically, USBView is installed in the **Debuggers** folder in the Windows Driver Kit (WDK).
--   The client driver must have created the framework USB target device object.
+* Your USB device must have an IN endpoint. Check the device configuration in [USBView](../debugger/usbview.md). Usbview.exe is an application that allows you to browse all USB controllers and the USB devices connected to them. Typically, USBView is installed in the **Debuggers** folder in the Windows Driver Kit (WDK).
+* The client driver must have created the framework USB target device object.
 
     If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context.
 
     **KMDF client driver:**
 
-    A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
+    A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [WdfUsbTargetDeviceCreateWithParameters](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
     **UMDF client driver:**
 
-    A UMDF client driver must obtain an [**IWDFUsbTargetDevice**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetdevice) pointer by querying the framework target device object. For more information, see "[**IPnpCallbackHardware**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
+    A UMDF client driver must obtain an [IWDFUsbTargetDevice](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetdevice) pointer by querying the framework target device object. For more information, see "[IPnpCallbackHardware](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
 
--   The device must have an active configuration.
+* The device must have an active configuration.
 
     If you are using USB templates, the code selects the first configuration and the default alternate setting in each interface. For information about how to change the alternate setting, see [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md).
 
     **KMDF client driver:**
 
-    A KMDF client driver must call the [**WdfUsbTargetDeviceSelectConfig**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceselectconfig) method.
+    A KMDF client driver must call the [WdfUsbTargetDeviceSelectConfig](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceselectconfig) method.
 
     **UMDF client driver:**
 
     For a UMDF client driver, the framework selects the first configuration and the default alternate setting for each interface in that configuration.
 
--   The client driver must have a handle to the framework target pipe object for the IN endpoint. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
+* The client driver must have a handle to the framework target pipe object for the IN endpoint. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
 ## Instructions
 
 ### Using the continuous reader - KMDF client driver
 
-1.  Configure the continuous reader.
+1. Configure the continuous reader.
 
-    1.  Initialize a [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config) structure by calling the [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552561_init) macro.
-    2.  Specify its configuration options in the [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config) structure.
-    3.  Call the [**WdfUsbTargetPipeConfigContinuousReader**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader) method.
+    1. Initialize a [WDF_USB_CONTINUOUS_READER_CONFIG](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config) structure by calling the [WDF_USB_CONTINUOUS_READER_CONFIG_INIT](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_continuous_reader_config_init) macro.
+    1. Specify its configuration options in the [WDF_USB_CONTINUOUS_READER_CONFIG](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config) structure.
+    1. Call the [WdfUsbTargetPipeConfigContinuousReader](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader) method.
 
     The following example code configures the continuous reader for the specified target pipe object.
 
@@ -74,7 +71,7 @@ Before the client driver can use the continuous reader, make sure that these req
     {
         NTSTATUS status;
 
-        PDEVICE_CONTEXT                     pDeviceContext;       
+        PDEVICE_CONTEXT                     pDeviceContext;
 
         WDF_USB_CONTINUOUS_READER_CONFIG    readerConfig;
 
@@ -112,21 +109,21 @@ Before the client driver can use the continuous reader, make sure that these req
     }
     ```
 
-Typically the client driver configures the continuous reader in the [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function after enumerating the target pipe objects in the active setting.
+    Typically the client driver configures the continuous reader in the [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function after enumerating the target pipe objects in the active setting.
 
-In the preceding example, the client driver specifies its configuration options in two ways. First by calling [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG\_INIT**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_continuous_reader_config_init) and then by setting [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config) members. Notice the parameters for **WDF\_USB\_CONTINUOUS\_READER\_CONFIG\_INIT**. These values are mandatory. In this example, the client driver specifies:
+    In the preceding example, the client driver specifies its configuration options in two ways. First by calling [WDF_USB_CONTINUOUS_READER_CONFIG_INIT](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_continuous_reader_config_init) and then by setting [WDF_USB_CONTINUOUS_READER_CONFIG](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config) members. Notice the parameters for **WDF_USB_CONTINUOUS_READER_CONFIG_INIT**. These values are mandatory. In this example, the client driver specifies:
 
--   A pointer to a completion routine that the driver implements. The framework calls this routine when it completes a read request. In the completion routine, the driver can access the memory location that contains the data that was read. The implementation of the completion routine is discussed in step 2.
--   A pointer to the driver-defined context.
--   The number of bytes that can be read from the device in a single transfer. The client driver can obtain that information in a [**WDF\_USB\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information) structure by calling [**WdfUsbInterfaceGetConfiguredPipe**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe)or [**WdfUsbTargetPipeGetInformation**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipegetinformation) method. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
+    * A pointer to a completion routine that the driver implements. The framework calls this routine when it completes a read request. In the completion routine, the driver can access the memory location that contains the data that was read. The implementation of the completion routine is discussed in step 2.
+    * A pointer to the driver-defined context.
+    * The number of bytes that can be read from the device in a single transfer. The client driver can obtain that information in a [WDF_USB_PIPE_INFORMATION](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information) structure by calling [WdfUsbInterfaceGetConfiguredPipe](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe)or [WdfUsbTargetPipeGetInformation](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipegetinformation) method. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-[**WDF\_USB\_CONTINUOUS\_READER\_CONFIG\_INIT**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_continuous_reader_config_init) configures the continuous reader to use the default value for *NumPendingReads*. That value determines the number of read requests that the framework adds to the pending queue. The default value has been determined to provide reasonably good performance for many devices on many processor configurations.
+    [WDF_USB_CONTINUOUS_READER_CONFIG_INIT](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_continuous_reader_config_init) configures the continuous reader to use the default value for *NumPendingReads*. That value determines the number of read requests that the framework adds to the pending queue. The default value has been determined to provide reasonably good performance for many devices on many processor configurations.
 
-In addition to the configuration parameters specified in [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG\_INIT**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_continuous_reader_config_init), the example also sets a failure routine in [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config). This failure routine is optional.
+    In addition to the configuration parameters specified in [WDF_USB_CONTINUOUS_READER_CONFIG_INIT](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_continuous_reader_config_init), the example also sets a failure routine in [WDF_USB_CONTINUOUS_READER_CONFIG](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config). This failure routine is optional.
 
-In addition to the failure routine, there are other members in [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG**](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config) that the client driver can use to specify the layout of the transfer buffer. For example, consider a network driver that uses the continuous reader to receive network packets. Each packet contains header, payload, and footer data. To describe the packet, the driver must first specify the size of the packet in its call to [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552561_init). Then, the driver must specify the length of the header and footer by setting **HeaderLength** and **TrailerLength** members of **WDF\_USB\_CONTINUOUS\_READER\_CONFIG**. The framework uses those values to calculate the byte offsets on either side of the payload. When payload data is read from the endpoint, the framework stores that data in the part of the buffer between the offsets.
+    In addition to the failure routine, there are other members in [WDF_USB_CONTINUOUS_READER_CONFIG](/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config) that the client driver can use to specify the layout of the transfer buffer. For example, consider a network driver that uses the continuous reader to receive network packets. Each packet contains header, payload, and footer data. To describe the packet, the driver must first specify the size of the packet in its call to [WDF_USB_CONTINUOUS_READER_CONFIG_INIT](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_continuous_reader_config_init). Then, the driver must specify the length of the header and footer by setting **HeaderLength** and **TrailerLength** members of **WDF_USB_CONTINUOUS_READER_CONFIG**. The framework uses those values to calculate the byte offsets on either side of the payload. When payload data is read from the endpoint, the framework stores that data in the part of the buffer between the offsets.
 
-2.  Implement the completion routine.
+1. Implement the completion routine.
 
     The framework invokes the client-driver implemented completion routine each time a request is completed. The framework passes the number of bytes read and a WDFMEMORY object whose buffer contains the data that is read from the pipe.
 
@@ -144,7 +141,7 @@ In addition to the failure routine, there are other members in [**WDF\_USB\_CONT
     {
 
         PDEVICE_CONTEXT  pDeviceContext;  
-        PVOID  requestBuffer;    
+        PVOID  requestBuffer;
 
         pDeviceContext = (PDEVICE_CONTEXT)Context;
 
@@ -168,9 +165,9 @@ In addition to the failure routine, there are other members in [**WDF\_USB\_CONT
 
     ```
 
-The framework invokes the client-driver implemented completion routine each time a request is completed. The framework allocates a memory object for each read operation. In the completion routine, the framework passes the number of bytes read and a WDFMEMORY handle to the memory object. The memory object buffer contains the data that is read from the pipe. The client driver must not free the memory object. The framework releases the object after each completion routine returns. If the client driver wants to store the received data, the driver must copy the contents of the buffer in the completion routine.
+    The framework invokes the client-driver implemented completion routine each time a request is completed. The framework allocates a memory object for each read operation. In the completion routine, the framework passes the number of bytes read and a WDFMEMORY handle to the memory object. The memory object buffer contains the data that is read from the pipe. The client driver must not free the memory object. The framework releases the object after each completion routine returns. If the client driver wants to store the received data, the driver must copy the contents of the buffer in the completion routine.
 
-3.  Implement the failure routine.
+1. Implement the failure routine.
 
     The framework invokes the client-driver implemented failure routine to inform the driver that the continuous reader has reported an error while processing a read request. The framework passes the pointer to the target pipe object on which the request failed and error code values. Based on those error code values the driver can implement its error recovery mechanism. The driver must also return an appropriate value that indicates to the framework whether the framework should restart the continuous reader.
 
@@ -185,7 +182,7 @@ The framework invokes the client-driver implemented completion routine each time
         NTSTATUS        Status,  
         USBD_STATUS     UsbdStatus  
         )  
-    {      
+    {
         UNREFERENCED_PARAMETER(Status);  
 
         TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, 
@@ -203,12 +200,12 @@ Alternatively, the client driver can return FALSE and provide an error recovery 
 
 For information about error recovery in pipes, see [How to recover from USB pipe errors](how-to-recover-from-usb-pipe-errors.md).
 
-4.  Instruct the framework to start the continuous reader when the device enters working state; stop the reader when the device leaves working state. Call these methods and specify the target pipe object as the I/O target object.
+1. Instruct the framework to start the continuous reader when the device enters working state; stop the reader when the device leaves working state. Call these methods and specify the target pipe object as the I/O target object.
 
-    -   [**WdfIoTargetStart**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstart)
-    -   [**WdfIoTargetStop**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop)
+    * [WdfIoTargetStart](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstart)
+    * [WdfIoTargetStop](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop)
 
-    The continuous reader is not automatically power managed by the framework. Therefore, the client driver must explicitly start or stop the target pipe object when the power state of the device changes. The driver calls [**WdfIoTargetStart**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstart) in the driver's [*EvtDeviceD0Entry*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) implementation. This call ensures that the queue delivers requests only when the device is in working state. Conversely, the driver calls [**WdfIoTargetStop**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) in the drivers [*EvtDeviceD0Exit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) implementation so that the queue stops delivering requests when the device enters a lower power state.
+    The continuous reader is not automatically power managed by the framework. Therefore, the client driver must explicitly start or stop the target pipe object when the power state of the device changes. The driver calls [WdfIoTargetStart](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstart) in the driver's [*EvtDeviceD0Entry*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) implementation. This call ensures that the queue delivers requests only when the device is in working state. Conversely, the driver calls [WdfIoTargetStop](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) in the drivers [*EvtDeviceD0Exit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) implementation so that the queue stops delivering requests when the device enters a lower power state.
 
 The following example code configures the continuous reader for the specified target pipe object.
 
@@ -247,7 +244,7 @@ NTSTATUS FX3EvtDeviceD0Exit(
     __in  WDF_POWER_DEVICE_STATE TargetState
     )
 {
-    PDEVICE_CONTEXT  pDeviceContext;      
+    PDEVICE_CONTEXT  pDeviceContext;
 
     NTSTATUS status;
 
@@ -261,22 +258,22 @@ NTSTATUS FX3EvtDeviceD0Exit(
 }
 ```
 
-The preceding example shows the implementation for [*EvtDeviceD0Entry*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) and [*EvtDeviceD0Exit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) callback routines. The Action parameter of [**WdfIoTargetStop**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) allows the client driver to decide the action for the pending requests in the queue when the device leaves working state. In the example, the driver specifies **WdfIoTargetCancelSentIo**. That option instructs the framework to cancel all pending requests in the queue. Alternatively, the driver can instruct the framework to wait for pending requests to get completed before stopping the I/O target or keep the pending requests and resume when the I/O target restarts.
+The preceding example shows the implementation for [*EvtDeviceD0Entry*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) and [*EvtDeviceD0Exit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) callback routines. The Action parameter of [WdfIoTargetStop](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) allows the client driver to decide the action for the pending requests in the queue when the device leaves working state. In the example, the driver specifies **WdfIoTargetCancelSentIo**. That option instructs the framework to cancel all pending requests in the queue. Alternatively, the driver can instruct the framework to wait for pending requests to get completed before stopping the I/O target or keep the pending requests and resume when the I/O target restarts.
 
 ### Using the continuous reader - UMDF client driver
 
-Before you start using the continuous reader, you must configure the reader in your implementation of [**IPnpCallbackHardware::OnPrepareHardware**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware) method. After you get a pointer to [**IWDFUsbTargetPipe**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe) interface of the target pipe object associated with the IN endpoint, perform these steps:
+Before you start using the continuous reader, you must configure the reader in your implementation of [IPnpCallbackHardware::OnPrepareHardware](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware) method. After you get a pointer to [IWDFUsbTargetPipe](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe) interface of the target pipe object associated with the IN endpoint, perform these steps:
 
 **Configure the continuous reader**
 
-1.  Call **QueryInterface** on the target pipe object ([**IWDFUsbTargetPipe**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe)) and query for the [**IWDFUsbTargetPipe2**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe2) interface.
-2.  Call **QueryInterface** on the device callback object and query for the [**IUsbTargetPipeContinuousReaderCallbackReadComplete**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete) interface. In order to use the continuous reader, you must implement IUsbTargetPipeContinuousReaderCallbackReadComplete. The implementation is described later in this topic.
-3.  Call **QueryInterface** on the device callback object and query for the [IUsbTargetPipeContinuousReaderCallbackReadersFailed](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed) interface if you have implemented a failure callback. The implementation is described later in this topic.
-4.  Call the [**IWDFUsbTargetPipe2::ConfigureContinuousReader**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe2-configurecontinuousreader) method and specify the configuration parameters, such as header, trailer, number of pending requests, and references to the completion and failure callback methods.
+1. Call **QueryInterface** on the target pipe object ([IWDFUsbTargetPipe](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe)) and query for the [IWDFUsbTargetPipe2](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe2) interface.
+1. Call **QueryInterface** on the device callback object and query for the [IUsbTargetPipeContinuousReaderCallbackReadComplete](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete) interface. In order to use the continuous reader, you must implement IUsbTargetPipeContinuousReaderCallbackReadComplete. The implementation is described later in this topic.
+1. Call **QueryInterface** on the device callback object and query for the [IUsbTargetPipeContinuousReaderCallbackReadersFailed](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed) interface if you have implemented a failure callback. The implementation is described later in this topic.
+1. Call the [IWDFUsbTargetPipe2::ConfigureContinuousReader](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe2-configurecontinuousreader) method and specify the configuration parameters, such as header, trailer, number of pending requests, and references to the completion and failure callback methods.
 
     The method configures the continuous reader for the target pipe object. The continuous reader creates queues that manage a set of read requests as they are sent and received from the target pipe object.
 
-The following example code configures the continuous reader for the specified target pipe object. The example assumes that the target pipe object specified by the caller is associated with an IN endpoint. The continuous reader is configured to read USBD\_DEFAULT\_MAXIMUM\_TRANSFER\_SIZE bytes; to use the default number of pending requests using by the framework; to invoke the client driver-supplied completion and failure callback methods. Buffer received will not contain any header or trailer data.
+The following example code configures the continuous reader for the specified target pipe object. The example assumes that the target pipe object specified by the caller is associated with an IN endpoint. The continuous reader is configured to read USBD_DEFAULT_MAXIMUM_TRANSFER_SIZE bytes; to use the default number of pending requests using by the framework; to invoke the client driver-supplied completion and failure callback methods. Buffer received will not contain any header or trailer data.
 
 ```cpp
 HRESULT CDeviceCallback::ConfigureContinuousReader (IWDFUsbTargetPipe* pFxPipe)
@@ -316,7 +313,7 @@ HRESULT CDeviceCallback::ConfigureContinuousReader (IWDFUsbTargetPipe* pFxPipe)
     }
 
     //Get a pointer to the target pipe2 object.
-    hr = pFxUsbPipe2->ConfigureContinuousReader (    
+    hr = pFxUsbPipe2->ConfigureContinuousReader (
         USBD_DEFAULT_MAXIMUM_TRANSFER_SIZE, //size of data to be read
         0, //Header
         0, //Trailer
@@ -359,14 +356,14 @@ Next, specify the state of the target pipe object, when the device enters and ex
 
 If a client driver uses a power-managed queue to send requests to a pipe, the queue delivers requests only when the device is in the **D0** state. If the power state of the device changes from **D0** to a lower power state (on **D0** exit), the target pipe object completes the pending requests and the queue stops submitting requests to the target pipe object. Therefore, the client driver is not required to start and stop the target pipe object.
 
-The continuous reader does not use power-managed queues to submit requests. Therefore, you must explicitly start or stop the target pipe object when the power state of the device changes. For changing the state of the target pipe object, you can use the [**IWDFIoTargetStateManagement**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement) interface implemented by the framework. After you get a pointer to [**IWDFUsbTargetPipe**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe) interface of the target pipe object associated with the IN endpoint, perform the following steps:
+The continuous reader does not use power-managed queues to submit requests. Therefore, you must explicitly start or stop the target pipe object when the power state of the device changes. For changing the state of the target pipe object, you can use the [IWDFIoTargetStateManagement](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement) interface implemented by the framework. After you get a pointer to [IWDFUsbTargetPipe](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe) interface of the target pipe object associated with the IN endpoint, perform the following steps:
 
 **Implement state management**
 
-1.  In your implementation of [**IPnpCallbackHardware::OnPrepareHardware**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware), call[**QueryInterface** on the target pipe object ([**IWDFUsbTargetPipe**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe)) and query for the [**IWDFIoTargetStateManagement**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement) interface. Store the reference in a member variable of your device callback class.
-2.  Implement the [**IPnpCallback**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallback) interface on the device callback object.
-3.  In the implementation of the [**IPnpCallback::OnD0Entry**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-ond0entry) method, call [**IWDFIoTargetStateManagement::Start**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-start) to start the continuous reader.
-4.  In the implementation of the [**IPnpCallback::OnD0Exit**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-ond0exit) method, call [**IWDFIoTargetStateManagement::Stop**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-stop) to stop the continuous reader.
+1. In your implementation of [IPnpCallbackHardware::OnPrepareHardware](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware), call[QueryInterface** on the target pipe object ([IWDFUsbTargetPipe](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe)) and query for the [IWDFIoTargetStateManagement](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement) interface. Store the reference in a member variable of your device callback class.
+1. Implement the [IPnpCallback](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallback) interface on the device callback object.
+1. In the implementation of the [IPnpCallback::OnD0Entry](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-ond0entry) method, call [IWDFIoTargetStateManagement::Start](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-start) to start the continuous reader.
+1. In the implementation of the [IPnpCallback::OnD0Exit](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-ond0exit) method, call [IWDFIoTargetStateManagement::Stop](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-stop) to stop the continuous reader.
 
 After the device enters a working state (**D0**), the framework calls the client-driver supplied D0-entry callback method that starts the target pipe object. When the device leaves the **D0** state, the framework calls the D0-exit callback method. The target pipe object completes the number of pending read requests, configured by the client driver, and stops accepting new requests.
 The following example code implements the [IPnpCallback](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallback) interface on the device callback object.
@@ -390,7 +387,7 @@ public:
     virtual HRESULT STDMETHODCALLTYPE OnD0Exit(IWDFDevice*  pWdfDevice, WDF_POWER_DEVICE_STATE  previousState);
     virtual void STDMETHODCALLTYPE OnSurpriseRemoval(IWDFDevice*  pWdfDevice);
     virtual HRESULT STDMETHODCALLTYPE OnQueryRemove(IWDFDevice*  pWdfDevice);
-    virtual HRESULT STDMETHODCALLTYPE OnQueryStop(IWDFDevice*  pWdfDevice);    
+    virtual HRESULT STDMETHODCALLTYPE OnQueryStop(IWDFDevice*  pWdfDevice);
 
 private:
     LONG m_cRefs;
@@ -420,7 +417,7 @@ The following example code shows how to get a pointer to the IWDFIoTargetStateMa
                 hr = pFxPipe->QueryInterface(IID_PPV_ARGS(&m_pFxIoTargetInterruptPipeStateMgmt));
 
                 if (m_pFxIoTargetInterruptPipeStateMgmt)
-                {               
+                {
                     m_pFxUsbPipe = pFxPipe;
 
                     break;
@@ -442,7 +439,7 @@ The following example code shows how to get a pointer to the IWDFIoTargetStateMa
     }
 ```
 
-The following example code shows how to get a pointer to the [**IWDFIoTargetStateManagement**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement) interface of the target pipe object in the [**IPnpCallbackHardware::OnPrepareHardware**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware) method.
+The following example code shows how to get a pointer to the [IWDFIoTargetStateManagement](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement) interface of the target pipe object in the [IPnpCallbackHardware::OnPrepareHardware](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware) method.
 
 ```cpp
  HRESULT CDeviceCallback::OnD0Entry(
@@ -489,14 +486,14 @@ After the continuous reader completes a read request, the client driver must pro
 
 **Provide a completion callback by implementing IUsbTargetPipeContinuousReaderCallbackReadComplete**
 
-1.  Implement the [**IUsbTargetPipeContinuousReaderCallbackReadComplete**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete) interface on the device callback object.
-2.  Make sure the **QueryInterface** implementation of the device callback object increments the reference count of the callback object and then returns the [**IUsbTargetPipeContinuousReaderCallbackReadComplete**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete) interface pointer.
-3.  In the implementation of the [**IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete-onreadercompletion) method, access the data read that was read from the pipe. The *pMemory* parameter points to the memory allocated by the framework that contains the data. You can call [**IWDFMemory::GetDataBuffer**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisgetdatabuffer) to get the buffer that contains the data. The buffer includes the header however the length of data indicated by the *NumBytesTransferred* parameter of **OnReaderCompletion** does not include the header length. The header length is specified by the client driver while configuring the continuous reader in the driver's call to [**IWDFUsbTargetPipe2::ConfigureContinuousReader**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe2-configurecontinuousreader).
-4.  Supply a pointer to the completion callback in the *pOnCompletion* parameter of the [**IWDFUsbTargetPipe2::ConfigureContinuousReader**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe2-configurecontinuousreader) method.
+1. Implement the [IUsbTargetPipeContinuousReaderCallbackReadComplete](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete) interface on the device callback object.
+1. Make sure the **QueryInterface** implementation of the device callback object increments the reference count of the callback object and then returns the [IUsbTargetPipeContinuousReaderCallbackReadComplete](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete) interface pointer.
+1. In the implementation of the [IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete-onreadercompletion) method, access the data read that was read from the pipe. The *pMemory* parameter points to the memory allocated by the framework that contains the data. You can call [IWDFMemory::GetDataBuffer](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisgetdatabuffer) to get the buffer that contains the data. The buffer includes the header however the length of data indicated by the *NumBytesTransferred* parameter of **OnReaderCompletion** does not include the header length. The header length is specified by the client driver while configuring the continuous reader in the driver's call to [IWDFUsbTargetPipe2::ConfigureContinuousReader](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe2-configurecontinuousreader).
+1. Supply a pointer to the completion callback in the *pOnCompletion* parameter of the [IWDFUsbTargetPipe2::ConfigureContinuousReader](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe2-configurecontinuousreader) method.
 
-Each time that data is available on the endpoint on the device, the target pipe object completes a read request. If the read request completed successfully, the framework notifies the client driver by calling [**IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete-onreadercompletion). Otherwise, the framework calls a client driver-supplied failure callback when the target pipe object reports an error on the read request.
+Each time that data is available on the endpoint on the device, the target pipe object completes a read request. If the read request completed successfully, the framework notifies the client driver by calling [IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete-onreadercompletion). Otherwise, the framework calls a client driver-supplied failure callback when the target pipe object reports an error on the read request.
 
-The following example code implements the [**IUsbTargetPipeContinuousReaderCallbackReadComplete**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete) interface on the device callback object.
+The following example code implements the [IUsbTargetPipeContinuousReaderCallbackReadComplete](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete) interface on the device callback object.
 
 ```cpp
 class CDeviceCallback : 
@@ -519,9 +516,9 @@ public:
     virtual HRESULT STDMETHODCALLTYPE OnD0Exit(IWDFDevice*  pWdfDevice, WDF_POWER_DEVICE_STATE  previousState);
     virtual void STDMETHODCALLTYPE OnSurpriseRemoval(IWDFDevice*  pWdfDevice);
     virtual HRESULT STDMETHODCALLTYPE OnQueryRemove(IWDFDevice*  pWdfDevice);
-    virtual HRESULT STDMETHODCALLTYPE OnQueryStop(IWDFDevice*  pWdfDevice);    
+    virtual HRESULT STDMETHODCALLTYPE OnQueryStop(IWDFDevice*  pWdfDevice);
 
-    virtual VOID STDMETHODCALLTYPE OnReaderCompletion(IWDFUsbTargetPipe* pPipe, IWDFMemory* pMemory, SIZE_T NumBytesTransferred, PVOID Context);    
+    virtual VOID STDMETHODCALLTYPE OnReaderCompletion(IWDFUsbTargetPipe* pPipe, IWDFMemory* pMemory, SIZE_T NumBytesTransferred, PVOID Context);
 
 
 private:
@@ -576,7 +573,7 @@ HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 }
 ```
 
-The following example code shows how to get data from the buffer returned by [**IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete-onreadercompletion). Each time the target pipe object completes a read request successfully, the framework calls **OnReaderCompletion**. The example gets the buffer that containsng data and prints the contents on the debugger output.
+The following example code shows how to get data from the buffer returned by [IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete-onreadercompletion). Each time the target pipe object completes a read request successfully, the framework calls **OnReaderCompletion**. The example gets the buffer that containsng data and prints the contents on the debugger output.
 
 ```cpp
  VOID CDeviceCallback::OnReaderCompletion(
@@ -584,7 +581,7 @@ The following example code shows how to get data from the buffer returned by [**
     IWDFMemory* pMemory,
     SIZE_T NumBytesTransferred,
     PVOID Context)
-{        
+{
     if (pPipe != m_pFxUsbInterruptPipe)
     {
         return;
@@ -621,19 +618,17 @@ The client driver can get notifications from the framework when a failure occurs
 
 **Provide a failure callback by implementing IUsbTargetPipeContinuousReaderCallbackReadersFailed**
 
-1.  Implement the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed) interface on the device callback object.
-2.  Make sure the **QueryInterface** implementation of the device callback object increments the reference count of the callback object and then returns the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed) interface pointer.
-3.  In the implementation of the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed-onreaderfailure) method, provide error handling of the failed read request.
+1. Implement the [IUsbTargetPipeContinuousReaderCallbackReadersFailed](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed) interface on the device callback object.
+1. Make sure the **QueryInterface** implementation of the device callback object increments the reference count of the callback object and then returns the [IUsbTargetPipeContinuousReaderCallbackReadersFailed](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed) interface pointer.
+1. In the implementation of the [IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed-onreaderfailure) method, provide error handling of the failed read request.
 
-    If the continuous reader fails to complete a read request and the client driver provides a failure callback, the framework invokes the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed-onreaderfailure) method. The framework provides an HRESULT value in the *hrStatus* parameter that indicates the error code that occurred in the target pipe object. Based on that error code you might provide certain error handling. For example, if you want the framework to reset the pipe and then restart the continuous reader, make sure that the callback returns TRUE.
+    If the continuous reader fails to complete a read request and the client driver provides a failure callback, the framework invokes the [IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed-onreaderfailure) method. The framework provides an HRESULT value in the *hrStatus* parameter that indicates the error code that occurred in the target pipe object. Based on that error code you might provide certain error handling. For example, if you want the framework to reset the pipe and then restart the continuous reader, make sure that the callback returns TRUE.
 
-    **Note**  Do not call [**IWDFIoTargetStateManagement::Start**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-start) and [**IWDFIoTargetStateManagement::Stop**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-stop) within the failure callback.
+    **Note**  Do not call [IWDFIoTargetStateManagement::Start](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-start) and [IWDFIoTargetStateManagement::Stop](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotargetstatemanagement-stop) within the failure callback.
 
+1. Supply a pointer to the failure callback in the *pOnFailure* parameter of the [IWDFUsbTargetPipe2::ConfigureContinuousReader](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe2-configurecontinuousreader) method.
 
-
-4.  Supply a pointer to the failure callback in the *pOnFailure* parameter of the [**IWDFUsbTargetPipe2::ConfigureContinuousReader**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe2-configurecontinuousreader) method.
-
-The following example code implements the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed) interface on the device callback object.
+The following example code implements the [IUsbTargetPipeContinuousReaderCallbackReadersFailed](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed) interface on the device callback object.
 
 ```cpp
 class CDeviceCallback : 
@@ -656,9 +651,9 @@ public:
     virtual HRESULT STDMETHODCALLTYPE OnD0Exit(IWDFDevice*  pWdfDevice, WDF_POWER_DEVICE_STATE  previousState);
     virtual void STDMETHODCALLTYPE OnSurpriseRemoval(IWDFDevice*  pWdfDevice);
     virtual HRESULT STDMETHODCALLTYPE OnQueryRemove(IWDFDevice*  pWdfDevice);
-    virtual HRESULT STDMETHODCALLTYPE OnQueryStop(IWDFDevice*  pWdfDevice);    
+    virtual HRESULT STDMETHODCALLTYPE OnQueryStop(IWDFDevice*  pWdfDevice);
 
-    virtual VOID STDMETHODCALLTYPE OnReaderCompletion(IWDFUsbTargetPipe* pPipe, IWDFMemory* pMemory, SIZE_T NumBytesTransferred, PVOID Context);    
+    virtual VOID STDMETHODCALLTYPE OnReaderCompletion(IWDFUsbTargetPipe* pPipe, IWDFMemory* pMemory, SIZE_T NumBytesTransferred, PVOID Context);
     virtual BOOL STDMETHODCALLTYPE OnReaderFailure(IWDFUsbTargetPipe * pPipe, HRESULT hrCompletion);
 
 private:
@@ -729,7 +724,7 @@ The following example code shows an implementation of a failure callback. If a r
     )
 {
     UNREFERENCED_PARAMETER(pPipe);  
-    UNREFERENCED_PARAMETER(hrCompletion);     
+    UNREFERENCED_PARAMETER(hrCompletion);
 
     return TRUE;
 }
@@ -738,8 +733,9 @@ The following example code shows an implementation of a failure callback. If a r
 If the client driver does not provide a failure callback and an error occurs, the framework resets the USB pipe and restarts the continuous reader.
 
 ## Related topics
-[USB I/O Transfers](usb-device-i-o.md)  
-[How to enumerate USB pipes](how-to-get-usb-pipe-handles.md)  
-[How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md)  
-[How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)  
-[Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md)
+
+* [USB I/O Transfers](usb-device-i-o.md)  
+* [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md)  
+* [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md)  
+* [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)  
+* [Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md)

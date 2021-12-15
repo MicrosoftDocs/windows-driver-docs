@@ -4,7 +4,6 @@ description: Creating Contexts
 keywords:
 - contexts WDK file system minifilter , creating
 ms.date: 01/22/2021
-ms.localizationpriority: medium
 ---
 
 # Creating Contexts

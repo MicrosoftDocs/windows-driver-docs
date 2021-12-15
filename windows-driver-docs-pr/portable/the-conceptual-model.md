@@ -2,7 +2,6 @@
 description: The Conceptual Model
 title: The Conceptual Model
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The Conceptual Model

@@ -2,7 +2,6 @@
 title: Installing a PTP Camera
 description: Installing a PTP Camera
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a PTP Camera

@@ -2,7 +2,6 @@
 title: IWiaLog COM Interface
 description: IWiaLog COM Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IWiaLog COM Interface

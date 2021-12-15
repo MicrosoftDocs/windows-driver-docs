@@ -6,7 +6,6 @@ keywords:
 - blended pictures WDK DirectX VA , alpha-blend data loading
 - DCCMD WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Loading DCCMD Data

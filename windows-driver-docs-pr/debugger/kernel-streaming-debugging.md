@@ -3,7 +3,6 @@ title: Kernel Streaming Debugging
 description: Kernel Streaming Debugging
 keywords: ["kernel streaming debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Kernel Streaming Debugging

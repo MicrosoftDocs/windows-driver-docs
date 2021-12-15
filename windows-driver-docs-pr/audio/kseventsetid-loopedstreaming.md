@@ -3,7 +3,6 @@ title: KSEVENTSETID\_LoopedStreaming
 description: KSEVENTSETID\_LoopedStreaming
 keywords: ["KSEVENTSETID_LoopedStreaming"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSEVENTSETID\_LoopedStreaming

@@ -19,7 +19,6 @@ keywords:
 - automatic display changes WDK DirectDraw
 - deinterlacing WDK video port extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mode Indicator and Anamorphic Format

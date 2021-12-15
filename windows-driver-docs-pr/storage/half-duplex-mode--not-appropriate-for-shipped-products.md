@@ -2,7 +2,6 @@
 title: Half-Duplex Mode Not Appropriate for Shipped Products
 description: Half-Duplex Mode Not Appropriate for Shipped Products
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Half-Duplex Mode: Not Appropriate for Shipped Products

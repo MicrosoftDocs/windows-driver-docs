@@ -2,7 +2,6 @@
 description: WinUSB Power Management
 title: WinUSB Power Management
 ms.date: 01/07/2019
-ms.localizationpriority: medium
 ---
 
 # WinUSB Power Management

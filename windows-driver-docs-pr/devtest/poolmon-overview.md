@@ -5,7 +5,6 @@ keywords:
 - PoolMon WDK , about PoolMon
 - Memory Pool Monitor WDK , about Memory Pool Monitor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PoolMon Overview

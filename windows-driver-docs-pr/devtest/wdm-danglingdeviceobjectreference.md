@@ -9,7 +9,6 @@ api_name:
 - DanglingDeviceObjectReference
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DanglingDeviceObjectReference rule (wdm)

@@ -5,7 +5,6 @@ keywords:
 - display drivers WDK Windows 2000 , initializing
 - initializing display drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Display Driver Initialization

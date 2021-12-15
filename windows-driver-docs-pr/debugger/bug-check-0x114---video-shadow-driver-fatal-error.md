@@ -9,7 +9,6 @@ api_name:
 - VIDEO_SHADOW_DRIVER_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x114: VIDEO\_SHADOW\_DRIVER\_FATAL\_ERROR

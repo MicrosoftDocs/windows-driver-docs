@@ -10,7 +10,6 @@ keywords:
 - SDBUS_INTERFACE_STANDARD
 - interfaces WDK SD bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening, Initializing and Closing an SD Card Bus Interface

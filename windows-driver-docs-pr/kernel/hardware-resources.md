@@ -3,7 +3,6 @@ title: Hardware Resources
 description: Hardware Resources
 keywords: ["resource descriptors WDK PnP", "PnP WDK kernel , hardware resources", "Plug and Play WDK kernel , hardware resources", "resource requirements lists WDK PnP", "resource lists WDK PnP", "assigned resources WDK PnP", "requirements lists WDK PnP", "registry WDK PnP", "logical configurations WDK PnP", "boot configurations WDK PnP", "forced configurations WDK PnP", "filtered configurations WDK PnP", "override configurations WDK PnP", "configuration types WDK PnP", "allocated configurations WDK PnP", "basic configurations WDK PnP", "Hardware Resources"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Resources

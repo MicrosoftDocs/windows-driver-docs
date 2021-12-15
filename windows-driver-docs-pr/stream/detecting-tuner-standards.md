@@ -7,7 +7,6 @@ keywords:
 - KSPROPERTY_TUNER_STANDARD_MODE
 - detecting tuner standards WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Detecting Tuner Standards

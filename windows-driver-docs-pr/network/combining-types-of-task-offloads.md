@@ -5,7 +5,6 @@ keywords:
 - task offload WDK TCP/IP transport , combining offload types
 - combining task offload types WDK TCP/IP offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Combining Types of Task Offloads

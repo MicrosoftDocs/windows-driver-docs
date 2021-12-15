@@ -2,7 +2,6 @@
 title: Capabilities Provided by Storport
 description: Capabilities Provided by Storport
 ms.date: 03/16/2021
-ms.localizationpriority: medium
 ---
 
 # Capabilities Provided by Storport

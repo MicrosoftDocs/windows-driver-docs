@@ -3,7 +3,6 @@ title: Edit Set Current Instruction
 description: Edit Set Current Instruction
 keywords: ["Edit Set Current Instruction"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Set Current Instruction

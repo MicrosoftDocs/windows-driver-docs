@@ -2,7 +2,6 @@
 title: Revise Code That Issues I/O Requests
 description: Revise Code That Issues I/O Requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Revise Code That Issues I/O Requests

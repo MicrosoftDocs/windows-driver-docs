@@ -14,7 +14,6 @@ keywords:
 - push model WDK USBCAMD2
 - pull model WDK USBCAMD2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Capturing Still Frames from a USB Camera

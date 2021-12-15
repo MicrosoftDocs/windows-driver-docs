@@ -10,7 +10,6 @@ keywords:
 - NDIS proxy interface providers WDK
 - NDIS network interfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping of NDIS Network Interfaces to NDIS OIDs

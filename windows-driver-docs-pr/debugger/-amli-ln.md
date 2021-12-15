@@ -1,5 +1,5 @@
 ---
-title: amli ln
+title: amli ln (WinDbg)
 description: The amli ln extension displays the specified method or the method containing a given address.
 keywords: ["amli ln Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - amli ln
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli ln

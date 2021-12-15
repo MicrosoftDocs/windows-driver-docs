@@ -11,7 +11,6 @@ keywords:
 - mute switch events WDK audio
 - port drivers WDK audio , events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Events

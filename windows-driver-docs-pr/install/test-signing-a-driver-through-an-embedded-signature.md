@@ -2,7 +2,6 @@
 title: Test-Signing a Driver through an Embedded Signature
 description: Test-Signing a Driver through an Embedded Signature
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Test-Signing a Driver through an Embedded Signature

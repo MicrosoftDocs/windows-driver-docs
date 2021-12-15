@@ -4,7 +4,6 @@ description: Option Attributes for the Memory Feature
 keywords:
 - Memory Feature WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Option Attributes for the Memory Feature

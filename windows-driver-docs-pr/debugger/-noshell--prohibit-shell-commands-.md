@@ -9,7 +9,6 @@ api_name:
 - .noshell (Prohibit Shell Commands)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .noshell (Prohibit Shell Commands)

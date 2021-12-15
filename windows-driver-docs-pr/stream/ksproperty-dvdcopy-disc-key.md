@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_DVDCOPY\_DISC\_KEY
-description: The KSPROPERTY\_DVDCOPY\_DISC\_KEY property retrieves the disc key information for the DVD copyright protection authentication process.
+title: KSPROPERTY_DVDCOPY_DISC_KEY
+description: The KSPROPERTY_DVDCOPY_DISC_KEY property retrieves the disc key information for the DVD copyright protection authentication process.
 keywords: ["KSPROPERTY_DVDCOPY_DISC_KEY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,72 +10,29 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/19/2021
 ---
 
-# KSPROPERTY\_DVDCOPY\_DISC\_KEY
+# KSPROPERTY_DVDCOPY_DISC_KEY
 
+The **KSPROPERTY_DVDCOPY_DISC_KEY** property retrieves the disc key information for the DVD copyright protection authentication process.
 
-The KSPROPERTY\_DVDCOPY\_DISC\_KEY property retrieves the disc key information for the DVD copyright protection authentication process.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_dvdcopy_disc_key_ks"></span><span id="DDK_KSPROPERTY_DVDCOPY_DISC_KEY_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_DVDCOPY_DISCKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_DISCKEY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey)"><strong>KS_DVDCOPY_DISCKEY</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a KS\_DVDCOPY\_DISCKEY structure that describes the DVD's disc key.
+The property value (operation data) is a **KS_DVDCOPY_DISCKEY** structure that describes the DVD's disc key.
 
 ## Remarks
 
-For more information about the disc key, see [DVD Copyright Protection](./dvd-copyright-protection.md).
+For more information about the disc key, see [DVD Copyright Protection](dvd-copyright-protection.md).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
-[**KS\_DVDCOPY\_DISCKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey)
+[**KS_DVDCOPY_DISCKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey)

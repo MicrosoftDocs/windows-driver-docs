@@ -8,7 +8,6 @@ keywords:
 - video transport kernel-mode WDK DirectDraw , architecture
 - video capture WDK video transport kernel-mode
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VPE and Kernel-Mode Video Transport Architecture

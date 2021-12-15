@@ -1,5 +1,5 @@
 ---
-title: popolicy
+title: popolicy (WinDbg)
 description: The popolicy extension displays the power policy of the target computer.
 keywords: ["popolicy Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - popolicy
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !popolicy

@@ -3,7 +3,6 @@ title: Managing Interlocked Queues with a Driver-Created Thread
 description: Managing Interlocked Queues with a Driver-Created Thread
 keywords: ["interlocked IRP queues WDK kernel", "driver-created threads WDK IRPs", "doubly linked IRPs WDK kernel", "driver-dedicated threads WDK IRPs"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Managing Interlocked Queues with a Driver-Created Thread

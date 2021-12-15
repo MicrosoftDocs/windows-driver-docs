@@ -4,10 +4,11 @@ description: WDI_TLV_FIRMWARE_VERSION is a TLV that contains the firmware versio
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FIRMWARE_VERSION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FIRMWARE\_VERSION
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_FIRMWARE\_VERSION is a TLV that contains the firmware version.

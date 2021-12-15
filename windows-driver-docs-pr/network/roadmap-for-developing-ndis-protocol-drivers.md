@@ -2,7 +2,6 @@
 title: Roadmap for Developing NDIS Protocol Drivers
 description: Roadmap for Developing NDIS Protocol Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing NDIS Protocol Drivers

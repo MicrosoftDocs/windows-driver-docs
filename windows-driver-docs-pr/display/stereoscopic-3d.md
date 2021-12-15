@@ -2,7 +2,6 @@
 title: Stereoscopic 3D
 description: Windows 8 provides a consistent API and device driver interface (DDI) platform for stereoscopic 3-D scenarios such as gaming and video playback.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stereoscopic 3D

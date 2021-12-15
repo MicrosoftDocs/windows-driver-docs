@@ -2,7 +2,6 @@
 title: DO_DEVICE_INITIALIZING Annotation for drivers
 description: Use to specify whether the annotated function is expected to clear the DO_DEVICE_INITIALIZING bit in the Flags field of the device object.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DO\_DEVICE\_INITIALIZING Annotation for drivers

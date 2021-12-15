@@ -1,5 +1,5 @@
 ---
-title: timer
+title: timer (WinDbg)
 description: The timer extension displays a detailed listing of all system timer use.
 keywords: ["timer Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - timer
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !timer

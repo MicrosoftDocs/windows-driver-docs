@@ -2,7 +2,6 @@
 title: Required Flatbed Item Properties
 description: Required Flatbed Item Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Required Flatbed Item Properties

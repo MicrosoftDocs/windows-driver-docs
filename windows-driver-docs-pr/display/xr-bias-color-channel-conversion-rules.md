@@ -1,7 +1,6 @@
 ---
 title: XR_BIAS color channel conversion rules
 description: Describes XR_BIAS color channel conversion rules
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

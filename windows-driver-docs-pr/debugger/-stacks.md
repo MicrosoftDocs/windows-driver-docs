@@ -1,5 +1,5 @@
 ---
-title: stacks
+title: stacks (WinDbg)
 description: The stacks extension displays information about the kernel stacks.
 keywords: ["stacks Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - stacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !stacks

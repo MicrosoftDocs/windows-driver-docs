@@ -10,7 +10,6 @@ keywords:
 - NDIS protocol drivers WDK , WMI support
 - i
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Support for WMI

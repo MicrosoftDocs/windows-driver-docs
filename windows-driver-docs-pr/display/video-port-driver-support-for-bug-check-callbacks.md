@@ -5,7 +5,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , bug check callbacks
 - bug check callbacks WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Port Driver Support for Bug Check Callbacks

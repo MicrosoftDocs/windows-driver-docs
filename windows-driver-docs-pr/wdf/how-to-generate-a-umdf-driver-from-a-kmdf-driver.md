@@ -2,7 +2,6 @@
 title: How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)
 description: This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver into a User-Mode Driver Framework (UMDF) version 2 driver, and vice-versa.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)
@@ -45,10 +44,7 @@ This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver
         WPP_INIT_TRACING ( DriverObject, RegistryPath ); // KMDF and UMDF 2
         WPP_INIT_TRACING ( “<MyDriverNameString>” ); // UMDF 1
         ```
-        Note that for UMDF 2, you also need to add `WPP_MACRO_USE_KM_VERSION_FOR_UM=1`, as described in [How to enable Inflight Trace Recorder in Visual Studio](/windows-hardware/drivers/devtest/using-wpp-recorder#how-to-enable-inflight-trace-recorder-in-visual-studio).
+        Note that for UMDF 2, you also need to add `WPP_MACRO_USE_KM_VERSION_FOR_UM=1`, as described in [How to enable Inflight Trace Recorder in Visual Studio](../devtest/using-wpp-recorder.md#how-to-enable-inflight-trace-recorder-in-visual-studio).
 
     -   If you are converting a KMDF driver that calls WDM routines such as [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag), replace these with the corresponding WDF methods, such as [**WdfMemoryCreate**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreate). Similarly, if you are converting a UMDF driver that calls user-mode functions, replace these with equivalent kernel-mode routines.
     -   Some methods are supported only in KMDF, while others are supported only in UMDF. For a list of all Windows Driver Frameworks (WDF) methods and their framework applicability, see [Summary of WDF Callbacks and Methods](/windows-hardware/drivers/ddi/_wdf/).
-
- 
-

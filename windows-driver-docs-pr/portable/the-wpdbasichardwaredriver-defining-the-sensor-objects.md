@@ -2,7 +2,6 @@
 description: Defining the Sensor Objects
 title: Defining the Sensor Objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining the Sensor Objects

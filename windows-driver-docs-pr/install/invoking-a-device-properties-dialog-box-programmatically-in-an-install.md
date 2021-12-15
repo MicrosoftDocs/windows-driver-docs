@@ -9,7 +9,6 @@ keywords:
 - pDeviceProperties function pointer WDK
 - machin
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Invoking a Device Properties Dialog Box Programmatically in an Installation Application
@@ -30,19 +29,19 @@ The following code example shows how to define a *pDeviceProperties* function po
 ```cpp
 #ifdef _UNICODE 
   #define DeviceProperties_RunDLL  "DeviceProperties_RunDLLW"
- typedef void (_stdcall *PDEVICEPROPERTIES)(
+  typedef void (_stdcall *PDEVICEPROPERTIES)(
     HWND hwndStub,
     HINSTANCE hAppInstance,
     LPWSTR lpCmdLine,
- int nCmdShow
-   ;
+    int nCmdShow
+  );
 #else
   #define DeviceProperties_RunDLL  "DeviceProperties_RunDLLA"
- typedef void (_stdcall *PDEVICEPROPERTIES)(
+  typedef void (_stdcall *PDEVICEPROPERTIES)(
     HWND hwndStub,
     HHINSTANCE hAppInstance,
     LPSTR lpCmdLine,
- int nCmdShow
+    int nCmdShow
   );
 #endif
 

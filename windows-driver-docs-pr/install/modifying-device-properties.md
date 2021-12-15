@@ -6,7 +6,6 @@ keywords:
 - device properties WDK device installations , modifying
 - modifying device properties WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rules for Modifying Device Properties

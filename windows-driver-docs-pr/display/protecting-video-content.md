@@ -9,7 +9,6 @@ keywords:
 - video content WDK Windows Server 2008 R2 display
 - video content WDK Windows Server 2008 R2 display , protecting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Protecting Video Content

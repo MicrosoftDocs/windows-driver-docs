@@ -2,7 +2,6 @@
 title: PortCls Registry Power Settings
 description: This topic explains the PortCls registry power settings for Windows 8.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PortCls Registry Power Settings

@@ -5,7 +5,6 @@ keywords:
 - SDEL
 - SDEL queries
 ms.date: 09/03/2020
-ms.localizationpriority: medium
 ---
 
 # Examples of SDEL Queries

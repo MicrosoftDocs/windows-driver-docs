@@ -2,7 +2,6 @@
 title: Memory (print)
 description: The value entries for the memory installed in the print device
 ms.date: 07/07/2020
-ms.localizationpriority: medium
 ---
 
 # Memory (print)

@@ -7,7 +7,6 @@ keywords:
 - COPP WDK DirectX VA , sample functions
 - protected video WDK COPP , sample functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Functions for COPP

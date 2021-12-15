@@ -4,7 +4,6 @@ description: The HS_PLUGIN_IS_HOTSPOT_NETWORK function is called by the host to 
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_IS_HOTSPOT_NETWORK) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_IS\_HOTSPOT\_NETWORK function

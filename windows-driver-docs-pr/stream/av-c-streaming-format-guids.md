@@ -2,7 +2,6 @@
 title: AV/C Streaming Format GUIDs
 description: AV/C Streaming Format GUIDs
 ms.date: 07/26/2021
-ms.localizationpriority: medium
 ---
 
 # AV/C Streaming Format GUIDs

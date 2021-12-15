@@ -3,7 +3,6 @@ title: Using CVS
 description: Using CVS
 keywords: ["Concurrent Versions System (CVS)", "source servers, CVS", "SrcSrv, CVS", "Concurrent Versions System (CVS), overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using CVS

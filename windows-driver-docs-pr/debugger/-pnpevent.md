@@ -1,5 +1,5 @@
 ---
-title: pnpevent
+title: pnpevent (WinDbg)
 description: The pnpevent extension displays the Plug and Play device event queue.
 keywords: ["pnpevent Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - pnpevent
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pnpevent

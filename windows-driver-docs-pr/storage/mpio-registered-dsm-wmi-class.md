@@ -1,7 +1,6 @@
 ---
 title: MPIO\_REGISTERED\_DSM WMI Class
 description: MPIO\_REGISTERED\_DSM WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

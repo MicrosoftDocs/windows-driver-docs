@@ -6,7 +6,6 @@ keywords:
 - copy protection WDK COPP , COPP device
 - COPP WDK DirectX VA , COPP device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP Device Definition Template Code

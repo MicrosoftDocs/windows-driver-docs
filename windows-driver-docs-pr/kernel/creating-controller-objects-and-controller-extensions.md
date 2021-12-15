@@ -3,7 +3,6 @@ title: Creating Controller Objects and Controller Extensions
 description: Creating Controller Objects and Controller Extensions
 keywords: ["controller objects WDK kernel , creating", "IoCreateController", "controller extensions WDK I/O", "extensions WDK controller objects", "controller objects WDK kernel , extensions"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Controller Objects and Controller Extensions

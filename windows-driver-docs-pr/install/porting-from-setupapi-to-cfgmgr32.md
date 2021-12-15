@@ -2,7 +2,6 @@
 title: Porting code from SetupApi to CfgMgr32
 description: This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting code from SetupApi to CfgMgr32

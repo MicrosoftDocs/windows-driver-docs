@@ -1,5 +1,5 @@
 ---
-title: dblink
+title: dblink (WinDbg)
 description: The dblink extension displays a linked list in the backward direction.
 keywords: ["dblink Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - dblink
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dblink

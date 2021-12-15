@@ -9,7 +9,6 @@ keywords:
 - stream offsets WDK DirectX 9.0
 - stream offsets WDK DirectX 9.0 , vertex shader declarations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Vertex Elements Sharing Offset in a Stream

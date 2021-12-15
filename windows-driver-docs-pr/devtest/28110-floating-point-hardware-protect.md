@@ -1,11 +1,10 @@
 ---
-title: C28110
+title: C28110 warning
 description: Warning C28110 Drivers must protect floating-point hardware state. See use of float.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28110"
 ---

@@ -4,11 +4,12 @@ description: OID_WDI_TASK_IHV is used to start an IHV-initiated task.
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_IHV Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_IHV
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_IHV is used to start an IHV-initiated task.

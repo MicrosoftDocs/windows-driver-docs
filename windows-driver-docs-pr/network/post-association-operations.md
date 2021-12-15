@@ -6,7 +6,6 @@ keywords:
 - post-association operations WDK Native 802.11 IHV Extensions DLL
 - Native 802.11 IHV Extensions DLL WDK , post-association operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Post-Association Operations Overview

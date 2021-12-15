@@ -2,7 +2,6 @@
 title: WIA-TWAIN Locking
 description: WIA-TWAIN Locking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA-TWAIN Locking

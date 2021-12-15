@@ -6,7 +6,6 @@ keywords:
 - tracing WDK , properties
 - properties WDK tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tracelog Properties Display

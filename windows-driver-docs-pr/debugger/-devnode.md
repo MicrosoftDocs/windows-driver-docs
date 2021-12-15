@@ -1,5 +1,5 @@
 ---
-title: devnode
+title: devnode (WinDbg)
 description: The devnode extension displays information about a node in the device tree.
 keywords: ["device node", "device tree", "devnode Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - devnode
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !devnode

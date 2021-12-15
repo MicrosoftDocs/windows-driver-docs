@@ -1,5 +1,5 @@
 ---
-title: npx
+title: npx (WinDbg)
 description: The npx extension displays the contents of the floating-point register save area.
 keywords: ["registers, floating-point register save area", "npx Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - npx
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !npx

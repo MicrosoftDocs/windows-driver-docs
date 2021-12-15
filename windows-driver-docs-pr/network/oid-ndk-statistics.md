@@ -4,7 +4,6 @@ description: As a query, NDIS and overlying drivers or user-mode applications us
 ms.date: 08/08/2017
 keywords: 
  -OID_NDK_STATISTICS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NDK\_STATISTICS

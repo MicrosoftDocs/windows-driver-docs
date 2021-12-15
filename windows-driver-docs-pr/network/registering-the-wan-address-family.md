@@ -9,7 +9,6 @@ keywords:
 - WAN address family WDK networking
 - address families WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering the WAN Address Family

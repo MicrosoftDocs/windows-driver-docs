@@ -4,7 +4,6 @@ description: Attribute Types
 keywords:
 - printer attributes WDK Unidrv , types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Attribute Types

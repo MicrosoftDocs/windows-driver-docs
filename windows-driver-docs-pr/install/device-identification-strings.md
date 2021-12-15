@@ -12,7 +12,6 @@ keywords:
 - device installations WDK , device identification strings
 - installing devices WDK , device identification strings
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Identification Strings

@@ -4,7 +4,6 @@ description: CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
 keywords:
 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 38 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD

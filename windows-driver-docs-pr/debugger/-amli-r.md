@@ -1,5 +1,5 @@
 ---
-title: amli r
+title: amli r (WinDbg)
 description: The amli r extension displays information about the current context or the specified context.
 keywords: ["amli r Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - amli r
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli r

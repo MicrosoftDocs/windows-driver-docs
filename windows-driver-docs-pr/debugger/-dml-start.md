@@ -9,7 +9,6 @@ api_name:
 - .dml_start (Display DML Starting Point)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .dml\_start (Display DML Starting Point)

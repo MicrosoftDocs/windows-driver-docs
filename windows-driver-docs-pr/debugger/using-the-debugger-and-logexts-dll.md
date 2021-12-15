@@ -3,7 +3,6 @@ title: Using the Debugger and Logexts.dll
 description: Using the Debugger and Logexts.dll
 keywords: ["Logger, logexts.dll", "Logger, CDB", "Logger, WinDbg", "logexts.dll"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Debugger and Logexts.dll

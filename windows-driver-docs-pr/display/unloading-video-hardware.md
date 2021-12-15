@@ -7,7 +7,6 @@ keywords:
 - hardware unloads WDK Windows 2000 display
 - unloading video hardware
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unloading Video Hardware

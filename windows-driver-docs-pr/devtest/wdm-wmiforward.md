@@ -9,7 +9,6 @@ api_name:
 - WmiForward
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WmiForward rule (wdm)

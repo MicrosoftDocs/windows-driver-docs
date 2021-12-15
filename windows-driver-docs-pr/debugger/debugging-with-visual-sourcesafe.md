@@ -3,7 +3,6 @@ title: Debugging with Visual SourceSafe
 description: Debugging with Visual SourceSafe
 keywords: ["Visual SourceSafe, debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging with Visual SourceSafe

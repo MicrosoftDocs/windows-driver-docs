@@ -8,7 +8,6 @@ keywords:
 - notifications WDK XPSDrv
 - event notifications WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Configuration Module

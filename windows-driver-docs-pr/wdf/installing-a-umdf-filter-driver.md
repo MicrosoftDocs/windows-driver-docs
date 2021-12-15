@@ -2,7 +2,6 @@
 title: Installing a UMDF Filter Driver
 description: A filter driver can support a specific device or all devices in a setup class.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a UMDF Filter Driver

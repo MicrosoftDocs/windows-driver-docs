@@ -3,7 +3,6 @@ title: DBH
 description: DBH
 keywords: ["DBH", "DBH, overview", "symbols, DBH"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # DBH

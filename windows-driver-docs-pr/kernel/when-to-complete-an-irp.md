@@ -3,7 +3,6 @@ title: When to Complete an IRP
 description: When to Complete an IRP
 keywords: ["completing IRPs WDK kernel , when to complete"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # When to Complete an IRP

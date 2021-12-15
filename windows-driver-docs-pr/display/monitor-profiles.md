@@ -11,7 +11,6 @@ keywords:
 - color gamut WDK Windows 2000 display
 - device-independent color space WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Monitor Profiles

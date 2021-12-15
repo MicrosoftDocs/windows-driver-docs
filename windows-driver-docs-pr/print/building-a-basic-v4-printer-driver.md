@@ -1,9 +1,8 @@
 ---
 title: Build a basic v4 printer driver
 description: Build a basic v4 printer driver by using the driver development wizard in Microsoft Visual Studio 2019 to select the minimum set of features to create a functional printer driver.
-ms.date: 09/24/2020
-ms.custom: contperf-fy21q1
-ms.localizationpriority: medium
+ms.date: 09/23/2021
+ms.custom: contperf-fy22q1
 ---
 
 # Build a basic v4 printer driver
@@ -18,11 +17,13 @@ A more detailed look at the printer driver options is provided in [Exploring the
 
 ## Prerequisites
 
-1. Follow the guidance in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
+Follow the guidance in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md) and ensure you have completed the following items:
 
-    1. Install Visual Studio 2019 with the **Desktop development with C++** workload and the correct version of the **Windows 10 SDK**.
+1. Install Visual Studio 2019 with the **Desktop development with C++** workload and the correct version of the **Windows 10 SDK**.
 
-    1. Install the WDK for Windows 10, version 2004.
+1. Install the Windows Driver Kit (WDK) for Windows 10, version 2004.
+
+1. Install the Windows Driver Kit (WDK) extension for Visual Studio 2019.
 
 ## Select features for the basic driver
 
@@ -84,10 +85,10 @@ Line 1 contains the year and name of your company. Replace the characters YYYY w
 
 Line 2 describes the contents of the driver INF including Manufacturer name and device Model information. Replace the characters <*Your manufacturer name*> with the name of your company and replace the characters of <*Printer Model*> with the model name of the printer supported by the driver.
 
-For example, if the year is 2020 and your company's name is Fabrikam, and the print device model is 1234, you would type the following:
+For example, if the year is 2021 and your company's name is Fabrikam, and the print device model is 1234, you would type the following:
 
 ```inf
-; Copyright (c) 2020 Fabrikam
+; Copyright (c) 2021 Fabrikam
 ; INF file for the Fabrikam 1234 print driver
 ```
 
@@ -98,13 +99,13 @@ Find the line containing **\[Version\]**.
 - Check and make sure that you see this line:
 
     ```inf
-    **ClassVer**=4.0
+    ClassVer=4.0
     ```
 
 - Check and make sure that you see this line:
 
     ```inf
-    **Signature**="$WINDOWS NT$"
+    Signature="$WINDOWS NT$"
     ```
 
 ### 3. Configure the **\[SourceDisksFiles\]** section
@@ -144,7 +145,7 @@ This section references the `Install` section of the INF for each model. For exa
 "Fabrikam 1234"=DriverInstall, WSDPRINT\\Fabrikam1234
 ```
 
-### 6. Add **PrinterDriverID** to the INF file
+### 6. Add the **PrinterDriverID** to the INF file
 
 In Visual Studio, in the **Solution Explorer**, expand the *MyV4PrintDriver* node.
 
@@ -181,7 +182,7 @@ ManufacturerName="Fabrikam"
 When you complete the INF file, it should look like the following:
 
 ```inf
-; Copyright (c) 2020 Fabrikam
+; Copyright (c) 2021 Fabrikam
 ; INF file for the Fabrikam 1234 print driver
 
 [Version]
@@ -241,15 +242,15 @@ DiskName="MyV4PrintDriver Installation Disk"
 
 1. In the **MyV4PrintDriver Property Pages** window, expand **Configuration Properties** in the left pane.
 
-1. Expand **Driver Install**, then select **Package Files**. Do the following in the right pane:
+1. Expand **Driver Install**, then select **Package Files**.
 
-    - Navigate to the project directory.
+1. In the right pane, select, then click the &lt;Edit...&gt; row in the listed files.
 
-    - Navigate down in to the *MyV4PrintDriver Render Filter* directory.
+    ![Select package files edit row.](images/select-edit-row.png)
 
-    - Select the file MyV4PrintDriverRenderFilter-PipelineConfig.xml and press **Open**.
+1. Replace the placeholder with the relative path of pipeline config file, for example, `../MyV4PrintDriver Render Filter/MyV4PrintDriverRenderFilter-PipelineConfig.xml`, then click **OK**.
 
-    - Select **OK**.
+    ![Replace the placeholder with the relative path.](images/add-pipeline-config-file.png)
 
 ## Add a reference to the render filter to the driver package
 
@@ -277,7 +278,7 @@ DiskName="MyV4PrintDriver Installation Disk"
 
     - Select **OK**.
 
-## Configure Driver Signing
+## Configure driver signing
 
 1. In the **Solution Explorer**, select and hold (or right-click) *MyV4PrintDriver* project, then select **Properties**.
 

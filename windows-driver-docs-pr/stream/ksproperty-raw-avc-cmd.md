@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_RAW_AVC_CMD

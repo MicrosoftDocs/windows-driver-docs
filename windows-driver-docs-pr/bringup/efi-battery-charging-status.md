@@ -2,7 +2,6 @@
 title: EFI_BATTERY_CHARGING_STATUS
 description: Provides information about the EFI_BATTERY_CHARGING_STATUS enumeration.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_BATTERY_CHARGING_STATUS

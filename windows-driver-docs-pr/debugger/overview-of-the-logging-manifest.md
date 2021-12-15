@@ -3,7 +3,6 @@ title: Overview of the Logging Manifest
 description: Overview of the Logging Manifest
 keywords: ["LogViewer, manifest", "LogViewer, manifest, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of the Logging Manifest

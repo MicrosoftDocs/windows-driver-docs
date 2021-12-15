@@ -2,7 +2,6 @@
 title: WIA Property Mapping
 description: WIA Property Mapping
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Property Mapping

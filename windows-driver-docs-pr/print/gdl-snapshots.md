@@ -7,7 +7,6 @@ keywords:
 - parser WDK GDL , creating snapshots
 - schemas WDK GDL , creating snapshots without GDL schemas
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Snapshots

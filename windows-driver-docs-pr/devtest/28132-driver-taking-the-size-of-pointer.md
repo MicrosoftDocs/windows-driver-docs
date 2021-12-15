@@ -1,11 +1,10 @@
 ---
-title: C28132
+title: C28132 warning
 description: Warning C28132 Taking the size of pointer.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 f1_keywords: 
   - "C28132"
 ---

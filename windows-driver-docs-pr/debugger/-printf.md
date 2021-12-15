@@ -1,5 +1,5 @@
 ---
-title: .printf
+title: .printf (WinDbg)
 description: The .printf token behaves like the printf statement in C.
 keywords: [".printf Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .printf
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .printf

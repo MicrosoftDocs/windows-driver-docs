@@ -9,7 +9,6 @@ api_name:
 - DbgSrv Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DbgSrv Command-Line Options

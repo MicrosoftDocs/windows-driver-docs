@@ -5,7 +5,6 @@ keywords:
 - request processing WDK KMDF , priority boosts
 - priority boosts WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Priority Boosts When Completing I/O Requests

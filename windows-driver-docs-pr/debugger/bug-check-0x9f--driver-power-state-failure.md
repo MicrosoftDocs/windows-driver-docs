@@ -9,7 +9,6 @@ api_name:
 - DRIVER_POWER_STATE_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE
@@ -297,7 +296,7 @@ To help you determine the cause of the error, consider the following questions:
 
 - Refer to the additional techniques described above under parameter 0x3.
 
-## ## Remarks---
+## Remarks---
 
 If you are not equipped to debug this problem using the techniques described above, you can use some basic troubleshooting techniques.
 

@@ -2,7 +2,6 @@
 title: 64-Bit and WIA
 description: 64-Bit and WIA
 ms.date: 08/25/2020
-ms.localizationpriority: medium
 ---
 
 # 64-Bit and WIA

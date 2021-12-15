@@ -9,7 +9,6 @@ api_name:
 - AccessHardwareKey
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # AccessHardwareKey rule (kmdf)

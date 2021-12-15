@@ -9,8 +9,8 @@ keywords:
 - architecture WDK WAN , bindings
 - architecture WDK WAN , connections
 - WAN miniport drivers WDK networking , bindings
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 10/14/2021
+ms.custom: contperf-fy22q2
 ---
 
 # WAN Driver Bindings and Connections

@@ -1,7 +1,6 @@
 ---
 title: DSM\_QueryLBPolicy WMI Class
 description: DSM\_QueryLBPolicy WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

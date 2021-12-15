@@ -3,7 +3,6 @@ title: DriverEntry's Required Responsibilities
 description: DriverEntry's Required Responsibilities
 keywords: ["DriverEntry WDK kernel , required responsibilities"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DriverEntry's Required Responsibilities

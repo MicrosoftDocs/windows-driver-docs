@@ -2,7 +2,6 @@
 title: Selective suspend for HID over USB devices
 description: Revision 2.0 of the Universal Serial Bus Specification specifies a USB selective suspend feature.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Selective suspend for HID over USB devices

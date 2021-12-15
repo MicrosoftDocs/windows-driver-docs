@@ -1,5 +1,5 @@
 ---
-title: arbiter
+title: arbiter (WinDbg)
 description: The arbiter extension displays the current system resource arbiters and arbitrated ranges.
 keywords: ["arbiter Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - arbiter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !arbiter

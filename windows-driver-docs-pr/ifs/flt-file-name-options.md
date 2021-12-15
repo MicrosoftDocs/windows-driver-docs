@@ -2,7 +2,6 @@
 title: FLT_FILE_NAME_OPTIONS
 description: FLT\_FILE\_NAME\_OPTIONS
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FLT\_FILE\_NAME\_OPTIONS

@@ -6,7 +6,6 @@ keywords:
 - operation codes WDK Direct3D
 - D3dDrawPrimitives2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Operation Code Handling

@@ -2,8 +2,7 @@
 title: Manually Walking a Stack
 description: Manually Walking a Stack
 keywords: ["stack trace, walking the stack manually", "walking the stack"]
-ms.date: 05/23/2017
-ms.localizationpriority: medium
+ms.date: 10/29/2021
 ---
 
 # Manually Walking a Stack
@@ -59,6 +58,8 @@ fe680000 fe6bcf20   rdr       (rdr.sys, \\ntstress\symbols\sys\rdr.DBG)
 
 fe6c0000 fe6f0920   srv       (load from srv.sys deferred) 
 ```
+
+The output is from an older version of Windows, and the module names will be different on current day versions. 
 
 The second step is dumping out the stack pointer to look for addresses in the modules given by the **x \*!** command:
 
@@ -193,7 +194,7 @@ rdr!__strnicmp+0xa8:
 fe68204e 0000             add     [eax],al 
 ```
 
-Based on this, it appears that **RdrReconnectConnection** called **RdrCleanupTransportConnection**, to **RdrTdiDisconnect**, to **ZwCloseObjectAuditAlarm**, to **KiSystemServiceExit**. The other functions on the stack are probably leftover portions of previously active stacks.
+Based on this, it appears that **RdrReconnectConnection** called **CleanupTransportConnection**, to **RdrTdiDisconnect**, to **ZwCloseObjectAuditAlarm**, to **KiServiceExit**. The other functions on the stack are probably leftover portions of previously active stacks.
 
 In this case, the stack trace worked properly. Following is the actual stack trace to check the answer:
 

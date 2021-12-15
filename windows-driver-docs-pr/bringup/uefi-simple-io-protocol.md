@@ -2,7 +2,6 @@
 title: UEFI simple I/O protocol
 description: UEFI simple I/O protocol
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # UEFI simple I/O protocol

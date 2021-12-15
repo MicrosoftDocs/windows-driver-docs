@@ -2,7 +2,6 @@
 title: Reading Device Metadata
 description: Reading Device Metadata
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # Reading Device Metadata

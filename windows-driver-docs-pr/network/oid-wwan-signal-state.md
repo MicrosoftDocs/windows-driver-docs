@@ -4,7 +4,6 @@ description: OID_WWAN_SIGNAL_STATE returns or sets the current signal state.
 ms.date: 04/05/2019
 keywords: 
  -OID_WWAN_SIGNAL_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

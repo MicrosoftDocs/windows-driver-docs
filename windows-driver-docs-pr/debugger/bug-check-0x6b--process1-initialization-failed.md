@@ -9,7 +9,6 @@ api_name:
 - PROCESS1_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x6B: PROCESS1\_INITIALIZATION\_FAILED

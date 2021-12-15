@@ -5,7 +5,6 @@ keywords:
 - CoNDIS WAN drivers WDK networking , information setting
 - OID_WAN_CO_SET_LINK_INFO
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting CoNDIS WAN Miniport Driver Information

@@ -2,7 +2,6 @@
 title: JavaScript API Reference
 description: Use the JavaScript API in combination with a Bidi XML file to provide support over a USB connection to a print device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # JavaScript API Reference

@@ -5,7 +5,6 @@ keywords:
 - Additive directive WDK GDL
 - templates WDK GDL , order of definitions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Additive Template Directive

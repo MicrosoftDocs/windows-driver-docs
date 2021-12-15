@@ -8,7 +8,6 @@ keywords:
 - verifying printer installations
 - installed driver tests WDK printer
 ms.date: 07/07/2020
-ms.localizationpriority: medium
 ---
 
 # Print device installation

@@ -1,8 +1,7 @@
 ---
-title: C28751
+title: C28751 warning
 description: Warning C28751 Banned usage of ExAllocatePool and its variants.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28751"
 ---

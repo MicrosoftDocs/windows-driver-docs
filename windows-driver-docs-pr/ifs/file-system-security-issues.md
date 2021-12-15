@@ -2,7 +2,6 @@
 title: File System Security Issues
 description: File System Security Issues
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # File System Security Issues

@@ -2,7 +2,6 @@
 title: Adding support for real hardware to the geolocation driver sample
 description: The geolocation driver sample was provided as a starting point that simulates a GPS device. This topic describes how you can add support for real hardware.
 ms.date: 08/25/2021
-ms.localizationpriority: medium
 ---
 
 # Adding support for real hardware to the geolocation driver sample

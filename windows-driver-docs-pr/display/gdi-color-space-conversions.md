@@ -6,7 +6,6 @@ keywords:
 - color channels WDK GDI
 - color space conversions WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Color Space Conversions

@@ -8,7 +8,6 @@ keywords:
 - full-screen flipping chain WDK DirectX 8.0
 - alpha channels WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Alpha Channels On Full-Screen Back Buffers

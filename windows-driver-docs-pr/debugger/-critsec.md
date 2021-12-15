@@ -1,5 +1,5 @@
 ---
-title: critsec
+title: critsec (WinDbg)
 description: The critsec extension displays a critical section.
 keywords: ["critsec Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - critsec
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !critsec

@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_EventLog WMI Class
 description: MSiSCSI\_EventLog WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

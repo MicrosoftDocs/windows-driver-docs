@@ -3,7 +3,6 @@ title: Symbols and Symbol Files
 description: Symbols and Symbol Files
 keywords: ["symbols, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Symbols and Symbol Files

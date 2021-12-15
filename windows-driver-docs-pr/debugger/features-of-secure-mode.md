@@ -3,7 +3,6 @@ title: Features of Secure Mode
 description: Features of Secure Mode
 keywords: ["Secure Mode, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Features of Secure Mode

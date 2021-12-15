@@ -2,7 +2,6 @@
 title: About ISensorDriver
 description: About ISensorDriver
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # About ISensorDriver

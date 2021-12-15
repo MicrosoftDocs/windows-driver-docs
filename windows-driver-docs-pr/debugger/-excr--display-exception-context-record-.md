@@ -9,7 +9,6 @@ api_name:
 - .excr (Display Exception Context Record)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .excr (Display Exception Context Record)

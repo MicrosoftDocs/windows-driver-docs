@@ -5,7 +5,6 @@ keywords:
 - software keys WDK device installations , opening
 - opening software keys WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening a Device's Software Key

@@ -15,7 +15,6 @@ keywords:
 - proprietary bus drivers WDK audio
 - device-ID strings WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # System-Wide Unique Device IDs

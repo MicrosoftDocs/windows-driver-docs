@@ -2,7 +2,6 @@
 title: Using Version 2 of the Serial Framework Extension (SerCx2)
 description: You can write a serial controller driver that works together with version 2 of the serial framework extension (SerCx2) to manage a serial controller.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Version 2 of the Serial Framework Extension (SerCx2)

@@ -4,7 +4,6 @@ description: NDIS and overlying drivers obtain the types of net packets that the
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_SUPPORTED_PACKET_FILTERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_SUPPORTED\_PACKET\_FILTERS

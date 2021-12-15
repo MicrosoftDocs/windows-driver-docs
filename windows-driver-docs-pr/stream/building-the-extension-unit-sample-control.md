@@ -1,14 +1,16 @@
 ---
 title: Building the Extension Unit Sample Control
-description: Building the Extension Unit Sample Control
+description: Compile the code in this section to create a UVC Extension Unit Sample Control.
 keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.date: 01/12/2021
-ms.localizationpriority: medium
+ms.date: 09/17/2021
 ---
 
 # Building the Extension Unit Sample Control
+
+> [!IMPORTANT]
+> The content and sample code in this topic is outdated and currently unsupported. It may not work with the current driver development toolchain.
 
 You can compile the code in this section to create a UVC Extension Unit Sample Control. When you build this project, you create a Microsoft ActiveX control that you can use with a corresponding application to get and set properties on an extension unit.
 
@@ -22,7 +24,7 @@ Use these steps to build the control:
     - Microsoft DirectX 9.0 SDK Update (February 2005)
     - Microsoft DirectX 9.0 February 2005 SDK Extras
 
-2. Copy the sample code from the following topics into individual files.
+1. Copy the sample code from the following topics into individual files.
 
     [Sample Interface for UVC Extension Units](sample-interface-for-uvc-extension-units.md)
 
@@ -36,7 +38,7 @@ Use these steps to build the control:
 
     [Providing a UVC INF File](providing-a-uvc-inf-file.md)
 
-3. Create a *sources* file as follows:
+1. Create a *sources* file as follows:
 
     ```cpp
     TARGETNAME= uvcxuplgn
@@ -73,7 +75,7 @@ Use these steps to build the control:
             $(SDK_LIB_PATH)\comctl32.lib
     ```
 
-4. Create a *makefile* file as follows:
+1. Create a *makefile* file as follows:
 
     ```cpp
     #############################################################################
@@ -96,13 +98,13 @@ Use these steps to build the control:
     !endif
     ```
 
-5. Use the *Guidgen.exe* tool (which is included in the Microsoft Windows SDK) to create three GUIDs:
+1. Use the *Guidgen.exe* tool (which is included in the Microsoft Windows SDK) to create three GUIDs:
 
     - Use the first GUID as the property set ID for your extension unit. Replace the x-based GUID placeholders with the new GUID in *Xuproxy.h, Xusample.rgs,Xuplgin.inf,* and in your extension unit descriptor at the hardware level.
     - Use the second GUID as the IID for your extension unit. Replace the y-based GUID placeholders with the new GUID in *Interface.idl* and *Xuplgin.inf*.
     - Use the third GUID as the class GUID (clsid) for your extension unit. Replace the z-based GUID placeholder with the new GUID in *Xuplgin.inf, Xuproxy.h*, and *Xusample.rgs.*
 
-6. Create *Uvcxuplgn.def* as follows:
+1. Create *Uvcxuplgn.def* as follows:
 
     ```cpp
     LIBRARY uvcxuplgn
@@ -114,7 +116,7 @@ Use these steps to build the control:
         DllUnregisterServer PRIVATE
     ```
 
-7. Create *Uvcxuplgn.cpp* as follows:
+1. Create *Uvcxuplgn.cpp* as follows:
 
     ```cpp
     #include "stdafx.h"
@@ -170,7 +172,7 @@ Use these steps to build the control:
     }
     ```
 
-8. Create *Stdafx.h* as follows:
+1. Create *Stdafx.h* as follows:
 
     ```cpp
     // stdafx.h : include file for standard system include files,
@@ -203,7 +205,7 @@ Use these steps to build the control:
     #endif // !defined(AFX_STDAFX_H__722DC775_FE6F_42FB_BED5_E1E299976D17__INCLUDED)
     ```
 
-9. Create *Stdafx.cpp* as follows:
+1. Create *Stdafx.cpp* as follows:
 
     ```cpp
     // stdafx.cpp : source file that includes just the standard includes
@@ -220,4 +222,20 @@ Use these steps to build the control:
     #include <atlimpl.cpp>
     ```
 
-10. Build the sample by invoking Build -cZg in the WDK build environment.
+1. Build the sample by invoking `Build -cZg` in the WDK build environment.
+
+## See also
+
+[UVC Extension Unit Code Samples](uvc-extension-unit-code-samples.md)
+
+[Sample Interface for UVC Extension Units](sample-interface-for-uvc-extension-units.md)
+
+[Sample Extension Unit Plug-in DLL](sample-extension-unit-plug-in-dll.md)
+
+[Sample Registry Entry for UVC Extension Units](sample-registry-entry-for-uvc-extension-units.md)
+
+[Sample Application for UVC Extension Units](sample-application-for-uvc-extension-units.md)
+
+[Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md)
+
+[Providing a UVC INF File](providing-a-uvc-inf-file.md)

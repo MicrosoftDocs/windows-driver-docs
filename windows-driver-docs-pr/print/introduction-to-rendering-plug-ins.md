@@ -4,7 +4,6 @@ description: Introduction to Rendering Plug-Ins
 keywords:
 - rendering plug-ins WDK print , about rendering plug-ins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Rendering Plug-Ins

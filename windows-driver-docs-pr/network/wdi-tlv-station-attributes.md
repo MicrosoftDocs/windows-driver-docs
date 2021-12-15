@@ -4,7 +4,6 @@ description: WDI_TLV_STATION_ATTRIBUTES is a TLV that contains the attributes of
 ms.date: 02/14/2019
 keywords:
  - WDI_TLV_STATION_ATTRIBUTES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

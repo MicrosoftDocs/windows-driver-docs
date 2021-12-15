@@ -9,7 +9,6 @@ api_name:
 - PORT_DRIVER_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2C: PORT\_DRIVER\_INTERNAL

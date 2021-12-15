@@ -5,7 +5,6 @@ keywords:
 - registry WDK device installations , opening registry keys for a device setup class
 - device setup classes WDK device installations , opening registry keys
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening Registry Keys for a Device Setup Class

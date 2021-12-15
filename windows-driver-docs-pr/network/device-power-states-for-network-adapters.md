@@ -9,7 +9,6 @@ keywords:
 - power management WDK NDIS miniport , device power states
 - transitioning power states WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Power States for Network Adapters

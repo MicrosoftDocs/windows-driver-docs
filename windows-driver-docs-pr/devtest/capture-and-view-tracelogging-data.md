@@ -2,7 +2,6 @@
 title: Capture and view TraceLogging data
 description: Capture and view TraceLogging data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Capture and view TraceLogging data

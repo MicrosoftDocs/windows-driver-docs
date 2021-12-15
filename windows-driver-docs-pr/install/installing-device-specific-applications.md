@@ -6,7 +6,6 @@ keywords:
 - device installation applications WDK , device-specific applications
 - device-specific applications WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Device-Specific Applications

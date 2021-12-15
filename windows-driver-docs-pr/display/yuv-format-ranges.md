@@ -7,7 +7,6 @@ keywords:
 - studio luminance range YUV WDK display
 - YUV formats and WMF support WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # YUV format ranges in Windows 8.1

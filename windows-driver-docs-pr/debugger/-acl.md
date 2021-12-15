@@ -1,5 +1,5 @@
 ---
-title: acl
+title: acl (WinDbg)
 description: The acl extension formats and displays the contents of an access control list (ACL).
 keywords: ["acl Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - acl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !acl

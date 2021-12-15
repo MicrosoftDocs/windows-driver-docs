@@ -4,7 +4,6 @@ description: Printer Driver Overview
 keywords:
 - printer drivers WDK , disign options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Driver Overview

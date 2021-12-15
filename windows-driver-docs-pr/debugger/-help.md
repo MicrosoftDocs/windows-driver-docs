@@ -1,5 +1,5 @@
 ---
-title: help
+title: help (WinDbg)
 description: The help extension displays help text that describes the extension commands exported from the extension DLL.
 keywords: ["help Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - help
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !help

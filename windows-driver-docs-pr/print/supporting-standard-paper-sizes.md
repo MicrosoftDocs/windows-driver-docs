@@ -4,7 +4,6 @@ description: Supporting Standard Paper Sizes
 keywords:
 - standard paper sizes WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Standard Paper Sizes

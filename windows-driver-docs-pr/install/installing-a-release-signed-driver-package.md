@@ -2,7 +2,6 @@
 title: Installing a Release-Signed Driver Package
 description: Installing a Release-Signed Driver Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Release-Signed Driver Package

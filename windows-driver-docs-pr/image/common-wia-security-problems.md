@@ -2,7 +2,6 @@
 title: Common WIA Security Problems
 description: Common WIA Security Problems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Common WIA Security Problems

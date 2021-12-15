@@ -4,7 +4,6 @@ description: Bus drivers for buses with configuration space must handle this req
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_WRITE_CONFIG Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_WRITE\_CONFIG

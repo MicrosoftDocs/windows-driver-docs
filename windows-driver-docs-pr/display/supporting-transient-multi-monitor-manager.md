@@ -8,7 +8,6 @@ keywords:
 - mobile devices WDK , TMM support
 - monitor configurations WDK display , TMM support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Transient Multi-Monitor Manager

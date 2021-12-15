@@ -9,7 +9,6 @@ api_name:
 - wudfext.wudfdevicequeues
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfdevicequeues

@@ -2,7 +2,6 @@
 title: NDKPI deferred processing scheme
 description: This section describes the deferred processing used with NDKPI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDKPI Deferred Processing Scheme

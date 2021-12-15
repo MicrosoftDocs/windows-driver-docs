@@ -2,7 +2,6 @@
 title: How the Application Releases the WIA Device
 description: How the Application Releases the WIA Device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How the Application Releases the WIA Device

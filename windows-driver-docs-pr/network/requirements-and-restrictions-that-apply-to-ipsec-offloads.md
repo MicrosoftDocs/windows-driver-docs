@@ -5,7 +5,6 @@ keywords:
 - ESP-protected packets WDK IPsec offload , requirements
 - AH-protected packets WDK IPsec offload , requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requirements and Restrictions That Apply to IPsec Offloads

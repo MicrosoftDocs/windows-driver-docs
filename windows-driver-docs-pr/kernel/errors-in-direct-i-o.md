@@ -3,7 +3,6 @@ title: Errors in Direct I/O
 description: Errors in Direct I/O
 keywords: ["reliability WDK kernel , direct I/O", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O", "zero-length buffers WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Errors in Direct I/O

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - DllExport
 ms.date: 09/14/2017
-ms.localizationpriority: medium
 ---
 
 # READ_AHEAD_PARAMETERS structure

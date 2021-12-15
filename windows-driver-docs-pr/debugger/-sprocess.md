@@ -1,5 +1,5 @@
 ---
-title: sprocess
+title: sprocess (WinDbg)
 description: The sprocess extension displays information about the specified session process, or about all processes in the specified session.
 keywords: ["sprocess Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - sprocess
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sprocess

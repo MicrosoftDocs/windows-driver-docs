@@ -2,7 +2,6 @@
 title: PostScript Printer Standard Features
 description: The PostScript printer standard features are the common ones that are provided by most PostScript printers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PostScript Printer Standard Features

@@ -3,7 +3,6 @@ title: Setting Up KDNET Network Kernel Debugging Automatically
 description: Use KDNET to configure network kernel debugging automatically for the Windows debugging tools.
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
 ms.date: 11/11/2020
-ms.localizationpriority: medium
 ---
 
 # Setting Up KDNET Network Kernel Debugging Automatically

@@ -6,7 +6,6 @@ keywords:
 - text strings WDK GPD files
 - strings WDK GPD files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Text Strings

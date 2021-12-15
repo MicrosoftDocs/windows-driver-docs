@@ -4,7 +4,6 @@ description: Every driver whose device objects belong to a particular device typ
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_DEVICE_CONTROL Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_DEVICE\_CONTROL

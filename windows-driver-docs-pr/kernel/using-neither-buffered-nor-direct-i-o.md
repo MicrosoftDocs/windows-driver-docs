@@ -3,7 +3,6 @@ title: Using Neither Buffered Nor Direct I/O
 description: Using Neither Buffered Nor Direct I/O
 keywords: ["buffers WDK I/O , neither buffered nor direct I/O", "data buffers WDK I/O , neither buffered nor direct I/O", "neither buffered nor direct I/O WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Neither Buffered Nor Direct I/O

@@ -12,7 +12,6 @@ keywords:
 - miniport drivers WDK display
 - display miniport drivers WDK See miniport drivers WDK display
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # WDDM Design Guide

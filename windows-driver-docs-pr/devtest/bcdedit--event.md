@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /event
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /event

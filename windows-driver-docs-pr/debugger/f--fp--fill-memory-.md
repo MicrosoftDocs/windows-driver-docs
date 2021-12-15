@@ -9,7 +9,6 @@ api_name:
 - f, fp (Fill Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # f, fp (Fill Memory)

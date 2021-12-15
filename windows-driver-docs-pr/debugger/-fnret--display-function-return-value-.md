@@ -9,7 +9,6 @@ api_name:
 - .fnret (Display Function Return Value)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .fnret (Display Function Return Value)

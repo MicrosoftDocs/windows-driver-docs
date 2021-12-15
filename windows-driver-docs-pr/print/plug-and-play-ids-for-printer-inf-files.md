@@ -7,7 +7,6 @@ keywords:
 - Plug and Play IDs WDK print
 - identifiers WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Plug and Play IDs for Printer INF Files

@@ -2,7 +2,6 @@
 title: Setting Friendly Names, Registering APOs
 description: This topic describes how a Port Class Bluetooth sideband audio driver can set the friendly name for a device interface, and register any APO that is used by the Bluetooth device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Friendly Names, Registering APOs

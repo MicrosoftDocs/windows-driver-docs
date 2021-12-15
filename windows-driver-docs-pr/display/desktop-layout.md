@@ -9,7 +9,6 @@ keywords:
 - CCD concepts WDK Windows 7 display , desktop layout
 - CCD concepts WDK Windows Server 2008 R2 display , desktop layout
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Desktop Layout

@@ -1,5 +1,5 @@
 ---
-title: ndiskd.vc
+title: ndiskd.vc (WinDbg)
 description: The ndiskd.vc extension displays a Connection-Oriented (CoNDIS) virtual connection (VC).
 keywords: ["ndiskd.vc Windows Debugging"]
 ms.date: 06/26/2020
@@ -9,7 +9,6 @@ api_name:
 - ndiskd.vc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.vc

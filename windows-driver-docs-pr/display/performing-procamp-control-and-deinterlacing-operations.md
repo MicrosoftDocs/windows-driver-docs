@@ -5,7 +5,6 @@ keywords:
 - ProcAmp WDK DirectX VA , deinterlacing operations
 - deinterlacing WDK DirectX VA , ProcAmp
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performing ProcAmp Control and Deinterlacing Operations

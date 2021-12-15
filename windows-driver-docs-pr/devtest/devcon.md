@@ -16,56 +16,33 @@ keywords:
 - device management WDK DevCon
 - listing device information WDK
 ms.date: 04/20/2017
-ms.localizationpriority: high 
 ---
 
 # Windows Device Console (Devcon.exe)
 
 > [!NOTE]
 > Please use the [PnPUtil](pnputil.md) tool instead of DevCon.
-> 
-
 
 DevCon (Devcon.exe), the Device Console, is a command-line tool that displays detailed information about devices on computers running Windows. You can use DevCon to enable, disable, install, configure, and remove devices.
 
 DevCon runs on Microsoft Windows 2000 and later versions of Windows.
 
-## <span id="ddk_devcon_tools"></span><span id="DDK_DEVCON_TOOLS"></span>
+## Where can I download DevCon?
 
+DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see [Windows Hardware Downloads](../download-the-wdk.md).
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Where can I download DevCon?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
-<p><strong>Windows Driver Kit (WDK) 8 and Windows Driver Kit (WDK) 8.1</strong> (installation path)</p>
-<p>%WindowsSdkDir%\tools\x64\devcon.exe</p>
-<p>%WindowsSdkDir%\tools\x86\devcon.exe</p>
-<p>%WindowsSdkDir%\tools\arm\devcon.exe</p>
-<div class="alert">
-<strong>Note</strong>  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where the kits are installed, for example, C:\Program Files (x86)\Windows Kits\8.1.
-</div>
-<div>
- 
-</div></td>
-</tr>
-</tbody>
-</table>
+- **Windows Driver Kit (WDK) 8 and Windows Driver Kit (WDK) 8.1** (installation path)
+- *%WindowsSdkDir%\tools\x64\devcon.exe*
+- *%WindowsSdkDir%\tools\x86\devcon.exe*
+- *%WindowsSdkDir%\tools\arm\devcon.exe*
 
- 
+> [!NOTE]
+> The Visual Studio environment variable, *%WindowsSdkDir%*, represents the path to the Windows kits directory where the kits are installed, for example, *C:\Program Files (x86)\Windows Kits\8.1*.
 
-This section includes:
+## In this section
 
-[DevCon Commands](devcon-general-commands.md)
-
-[DevCon Examples](devcon-examples.md)
+- [DevCon Commands](devcon-general-commands.md)
+- [DevCon Examples](devcon-examples.md)
 
 ## <span id="What_you_can_do_with_DevCon"></span><span id="what_you_can_do_with_devcon"></span><span id="WHAT_YOU_CAN_DO_WITH_DEVCON"></span>What you can do with DevCon
 
@@ -74,8 +51,8 @@ Windows driver developers and testers can use DevCon to verify that a driver is 
 
 DevCon is a command-line tool that performs device management functions on local computers and remote computers.
 
-**Note**  To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run Windows 8 and later operating systems, the remote access is unavailable.
-
+> [!NOTE]
+> To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run Windows 8 and later operating systems, the remote access is unavailable.
  
 
 Devcon features include:

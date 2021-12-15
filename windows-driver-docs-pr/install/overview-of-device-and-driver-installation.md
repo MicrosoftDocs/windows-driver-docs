@@ -5,20 +5,14 @@ keywords:
 - Device setup WDK device installations , about device installations
 - device installations WDK , about device installations
 - installing devices WDK , about device installations
-ms.date: 08/05/2021
-ms.localizationpriority: High
+ms.date: 11/18/2021
 ---
 
-# Overview of Device and Driver Installation
+# Overview of Device Installation
 
-The Windows operating system installs devices when the system restarts or when a user plugs in (or manually installs) a Plug and Play (PnP) device.
+The Windows operating system automatically installs devices without driver packages installed on them when those devices are reported to the operating system as present devices.  This happens for all present devices when the system is booting and happens when a user plugs in (or manually installs) a Plug and Play (PnP) device. Drivers such as the ACPI driver and other PnP [bus drivers](../kernel/bus-drivers.md) help Windows determine which devices are present.
 
-Specifically, Windows enumerates the devices that are present in the system and loads and calls the drivers for each device.
-
-Drivers such as the ACPI driver and other PnP [bus drivers](../kernel/bus-drivers.md) help Windows determine which devices are present.
-
-## In this section
-
+The following steps go over parts of this process in more detail:
 
 -   [Step 1: The New Device is Identified](step-1--the-new-device-is-identified.md)
 -   [Step 2: A Driver for the Device is Selected](step-2--a-driver-for-the-device-is-selected.md)

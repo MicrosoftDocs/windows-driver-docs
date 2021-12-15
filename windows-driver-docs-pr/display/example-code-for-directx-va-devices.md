@@ -8,7 +8,6 @@ keywords:
 - examples WDK DirectX VA
 - templates WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example Code for DirectX VA Devices

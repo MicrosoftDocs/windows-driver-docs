@@ -1,5 +1,5 @@
 ---
-title: ptov
+title: ptov (WinDbg)
 description: The ptov extension displays the entire physical-to-virtual map for a given process.
 keywords: ["ptov Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ptov
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ptov

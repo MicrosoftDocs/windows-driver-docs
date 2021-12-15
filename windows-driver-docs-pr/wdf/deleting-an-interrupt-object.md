@@ -2,7 +2,6 @@
 title: Deleting an Interrupt Object
 description: Deleting an Interrupt Object
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deleting an Interrupt Object

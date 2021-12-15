@@ -2,7 +2,6 @@
 title: Building UWP device apps
 description: Device manufacturers can create a UWP device app that serves as a companion to their device.
 ms.date: 08/11/2021
-ms.localizationpriority: medium
 ---
 
 # Building UWP device apps

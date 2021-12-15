@@ -5,7 +5,6 @@ keywords:
 - Sysfund tests
 - data-driven tests
 ms.date: 06/28/2018
-ms.localizationpriority: medium
 ---
 
 # Data-driven System Fundamentals Tests

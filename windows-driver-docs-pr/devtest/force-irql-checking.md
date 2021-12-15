@@ -6,7 +6,6 @@ keywords:
 - IRQL monitoring WDK Driver Verifier
 - spin locks WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Force IRQL Checking

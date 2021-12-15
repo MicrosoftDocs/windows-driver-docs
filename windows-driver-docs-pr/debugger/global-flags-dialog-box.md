@@ -3,7 +3,6 @@ title: Global Flags Dialog Box
 description: Global Flags Dialog Box
 keywords: ["GFlags, dialog box"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Global Flags Dialog Box

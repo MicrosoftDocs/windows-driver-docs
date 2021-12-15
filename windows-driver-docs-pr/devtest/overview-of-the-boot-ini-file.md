@@ -11,7 +11,6 @@ keywords:
 - boot entry parameters WDK
 - boot parameters WDK
 ms.date: 07/03/2018
-ms.localizationpriority: medium
 ---
 
 # Overview of the Boot.ini File

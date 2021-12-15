@@ -4,10 +4,11 @@ description: WDI_TLV_NETWORK_OFFLOAD_CHANNELS is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_NETWORK_OFFLOAD_CHANNELS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS is an unused TLV.

@@ -2,7 +2,6 @@
 description: WPD Programming Guide
 title: WPD Programming Guide
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WPD Programming Guide

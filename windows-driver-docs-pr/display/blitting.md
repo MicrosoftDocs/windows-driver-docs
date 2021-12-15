@@ -13,7 +13,6 @@ keywords:
 - blt WDK DirectDraw , about blitting
 - DdBlt
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Blitting

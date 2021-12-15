@@ -4,7 +4,6 @@ description: OID_WWAN_PREFERRED_PROVIDERS returns information about the list of 
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PREFERRED_PROVIDERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PREFERRED\_PROVIDERS

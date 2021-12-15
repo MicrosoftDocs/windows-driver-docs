@@ -9,7 +9,6 @@ api_name:
 - RemoveLockReleaseCleanup
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseCleanup rule (wdm)

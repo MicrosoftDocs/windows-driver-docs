@@ -9,7 +9,6 @@ keywords:
 - Models section WDK Windows 2000 display
 - SourceDisksFiles section WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Monitor INF File Sections

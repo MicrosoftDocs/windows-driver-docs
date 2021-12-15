@@ -9,7 +9,6 @@ api_name:
 - UDFS_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9B: UDFS\_FILE\_SYSTEM

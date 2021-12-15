@@ -2,7 +2,6 @@
 title: Types of Physical Network Adapter Configurations
 description: Types of Physical Network Adapter Configurations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Types of Physical Network Adapter Configurations

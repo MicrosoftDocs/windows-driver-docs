@@ -2,7 +2,6 @@
 title: Querying NDIS QoS Capabilities
 description: Querying NDIS QoS Capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying NDIS QoS Capabilities

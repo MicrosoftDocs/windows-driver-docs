@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_MEDIA_CONNECT_STATUS_EX OID returns the con
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MEDIA_CONNECT_STATUS_EX Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_MEDIA\_CONNECT\_STATUS\_EX

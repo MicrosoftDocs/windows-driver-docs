@@ -2,7 +2,6 @@
 title: SetupAPI Logging Functions
 description: SetupAPI Logging Functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SetupAPI Logging Functions

@@ -2,7 +2,6 @@
 title: Overview of Network Direct Kernel Provider Interface (NDKPI)
 description: This section provides an overview of Network Direct Kernel Provider Interface (NDKPI)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Network Direct Kernel Provider Interface (NDKPI)

@@ -5,7 +5,6 @@ keywords:
 - multiple-sample rendering WDK DirectX 9.0 , controlling quality
 - rendering multisamples WDK DirectX 9.0 , controlling quality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling Quality of Multiple-Sample Rendering

@@ -5,7 +5,6 @@ keywords:
 - port management WDK print , configuring ports
 - ConfigurePort
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring a Port

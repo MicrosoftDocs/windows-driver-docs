@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_FORMAT
-description: The WIA\_IPA\_FORMAT property contains the current format of the image that is about to be transferred. The WIA minidriver creates and maintains this property.
+title: WIA_IPA_FORMAT
+description: The WIA_IPA_FORMAT property contains the current format of the image that is about to be transferred. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPA_FORMAT Imaging Devices"]
 topic_type:
 - apiref
@@ -10,57 +10,52 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/04/2021
 ---
 
-# WIA\_IPA\_FORMAT
+# WIA_IPA_FORMAT
 
+The WIA_IPA_FORMAT property contains the current format of the image that is about to be transferred. The WIA minidriver creates and maintains this property.
 
-The WIA\_IPA\_FORMAT property contains the current format of the image that is about to be transferred. The WIA minidriver creates and maintains this property.
+Property Type: VT_CLSID
 
-## <span id="ddk_wia_ipa_format_si"></span><span id="DDK_WIA_IPA_FORMAT_SI"></span>
-
-
-Property Type: VT\_CLSID
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
 ## Remarks
 
-If you can set the device to only a single value, create a WIA\_PROP\_LIST type, and place the valid value in it.
+If you can set the device to only a single value, create a WIA_PROP_LIST type, and place the valid value in it.
 
-For Windows 8 and later versions of Windows, the following values have been added for the WIA\_IPA\_FORMAT property:
+For Windows 8 and later versions of Windows, the following values have been added for the WIA_IPA_FORMAT property:
 
--   WiaImgFmt\_CSV
+- WiaImgFmt_CSV
 
--   WiaImgFmt\_JBIG2
+- WiaImgFmt_JBIG2
 
--   WiaImgFmt\_RawBar
+- WiaImgFmt_RawBar
 
--   WiaImgFmt\_RawMic
+- WiaImgFmt_RawMic
 
--   WiaImgFmt\_RawPat
+- WiaImgFmt_RawPat
 
--   WiaImgFmt\_XmlBar
+- WiaImgFmt_XmlBar
 
--   WiaImgFmt\_XmlMic
+- WiaImgFmt_XmlMic
 
--   WiaImgFmt\_XmlPat
+- WiaImgFmt_XmlPat
 
-Beginning with Windows Vista and later versions of Windows, the following values are added for the WIA\_IPA\_FORMAT property:
+Beginning with Windows Vista and later versions of Windows, the following values are added for the WIA_IPA_FORMAT property:
 
--   WiaImgFmt\_PDFA
+- WiaImgFmt_PDFA
 
--   WiaImgFmt\_JBIG
+- WiaImgFmt_JBIG
 
--   WiaImgFmt\_XPS
+- WiaImgFmt_XPS
 
-For both the WiaImgFmt\_PDFA and WiaImgFmt\_XPS formats, the drivers should support any [**WIA\_IPA\_COMPRESSION**](wia-ipa-compression.md) value. For these two formats, the default WIA\_IPA\_COMPRESSION value, WIA\_COMPRESSION\_NONE, means "not defined." The scanner (or the driver, where the PDF/A or XPS file is generated) must choose the internal compression mode that is used for image data.
+For both the WiaImgFmt_PDFA and WiaImgFmt_XPS formats, the drivers should support any [**WIA_IPA_COMPRESSION**](wia-ipa-compression.md) value. For these two formats, the default WIA_IPA_COMPRESSION value, WIA_COMPRESSION_NONE, means "not defined." The scanner (or the driver, where the PDF/A or XPS file is generated) must choose the internal compression mode that is used for image data.
 
-The following table describes the constants that are valid with WIA\_IPA\_FORMAT.
+The following table describes the constants that are valid with WIA_IPA_FORMAT.
 
 <table>
 <colgroup>
@@ -253,42 +248,18 @@ The following table describes the constants that are valid with WIA\_IPA\_FORMAT
 </tbody>
 </table>
 
- 
-
 Formats that are marked with an asterisk (\*) are for Windows Vista and later versions of Windows only.
 
 Formats that are marked with two asterisks (\*\*) are for Windows 8 and later versions of Windows only.
 
-All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is WiaImgFmt\_BMP.
+All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is WiaImgFmt_BMP.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_IPA_COMPRESSION**](wia-ipa-compression.md)
 
-[**WIA\_IPA\_COMPRESSION**](wia-ipa-compression.md)
-
-[**WIA\_IPA\_FULL\_ITEM\_NAME**](wia-ipa-full-item-name.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPA_FULL_ITEM_NAME**](wia-ipa-full-item-name.md)

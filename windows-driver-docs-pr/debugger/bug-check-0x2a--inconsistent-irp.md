@@ -9,7 +9,6 @@ api_name:
 - INCONSISTENT_IRP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2A: INCONSISTENT\_IRP

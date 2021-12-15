@@ -5,7 +5,6 @@ keywords:
 - interface classes WDK device installations
 - device interface classes WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using a Device Interface

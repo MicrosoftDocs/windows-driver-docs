@@ -9,7 +9,6 @@ api_name:
 - RemoveLockQueryMnRemove
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockQueryMnRemove rule (wdm)

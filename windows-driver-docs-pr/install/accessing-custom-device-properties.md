@@ -2,7 +2,6 @@
 title: Accessing Custom Device Properties
 description: Accessing Custom Device Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Custom Device Properties

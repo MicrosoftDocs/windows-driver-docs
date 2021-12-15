@@ -5,7 +5,6 @@ keywords:
 - GDI WDK Windows 2000 display , driver division of labor
 - graphics drivers WDK Windows 2000 display , driver division of labor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI/Driver Division of Labor

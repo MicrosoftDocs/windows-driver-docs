@@ -5,7 +5,6 @@ keywords:
 - IPsec WDK Windows Filtering Platform , compatibility with WFP callout drivers
 - Windows Filtering Platform callout drivers WDK , IPsec compatibility
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Developing IPsec-Compatible Callout Drivers

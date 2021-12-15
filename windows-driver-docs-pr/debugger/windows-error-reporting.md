@@ -2,7 +2,6 @@
 title: Windows Error Reporting
 description: Windows Error Reporting (WER) is included in Windows Vista and later versions of Windows.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Error Reporting

@@ -2,7 +2,6 @@
 title: Resolving Operational NDIS QoS Parameters
 description: Resolving Operational NDIS QoS Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Resolving Operational NDIS QoS Parameters

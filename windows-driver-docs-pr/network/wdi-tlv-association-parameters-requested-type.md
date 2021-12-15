@@ -4,10 +4,11 @@ description: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE is a TLV that contain
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE is a TLV that contains the requested Association Parameter TLV types.

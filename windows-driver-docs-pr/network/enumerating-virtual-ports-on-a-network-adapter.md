@@ -2,7 +2,6 @@
 title: Enumerating Virtual Ports on a Network Adapter
 description: Enumerating Virtual Ports on a Network Adapter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating Virtual Ports on a Network Adapter

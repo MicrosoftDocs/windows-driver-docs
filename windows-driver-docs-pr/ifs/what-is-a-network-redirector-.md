@@ -5,7 +5,6 @@ keywords:
 - network redirectors WDK , about network redirectors
 - redirector drivers WDK , about network redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What is a Network Redirector?

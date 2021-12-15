@@ -9,7 +9,6 @@ api_name:
 - CACHE_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x66: CACHE\_INITIALIZATION\_FAILED

@@ -3,7 +3,6 @@ title: Stopping a Device after a Failed Start (Windows 98/Me)
 description: Stopping a Device after a Failed Start (Windows 98/Me)
 keywords: ["failed starts WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Stopping a Device after a Failed Start (Windows 98/Me)

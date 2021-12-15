@@ -2,7 +2,6 @@
 description: In Windows 8.1, you can write a UWP app that interacts with a USB device.
 title: How to connect to a USB device (UWP app)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to connect to a USB device (UWP app)

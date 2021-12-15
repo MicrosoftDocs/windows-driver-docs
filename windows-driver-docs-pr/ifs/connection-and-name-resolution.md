@@ -7,7 +7,6 @@ keywords:
 - names WDK file systems
 - connections WDK mini-redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection and Name Resolution

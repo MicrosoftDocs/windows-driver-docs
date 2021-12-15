@@ -3,7 +3,6 @@ title: Using a Handle to a Registry-Key Object
 description: Using a Handle to a Registry-Key Object
 keywords: ["handle to registry-key object WDK kernel", "registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using a Handle to a Registry-Key Object

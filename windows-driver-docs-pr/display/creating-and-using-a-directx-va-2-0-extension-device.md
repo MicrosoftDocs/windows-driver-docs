@@ -7,7 +7,6 @@ keywords:
 - VA WDK DirectX , extended support
 - extension device WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating and Using a DirectX VA 2.0 Extension Device

@@ -9,7 +9,6 @@ api_name:
 - .servers (List Debugging Servers)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .servers (List Debugging Servers)

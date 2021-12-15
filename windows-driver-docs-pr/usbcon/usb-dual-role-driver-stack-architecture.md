@@ -2,7 +2,6 @@
 description: USB Dual Role controllers are now supported in Windows, starting with Windows 10.
 title: USB Dual Role Driver Stack Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Dual Role Driver Stack Architecture

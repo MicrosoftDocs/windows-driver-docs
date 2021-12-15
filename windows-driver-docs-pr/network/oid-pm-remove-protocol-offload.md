@@ -4,7 +4,6 @@ description: As a set request, NDIS and protocol drivers use the OID_PM_REMOVE_P
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_REMOVE_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PM\_REMOVE\_PROTOCOL\_OFFLOAD

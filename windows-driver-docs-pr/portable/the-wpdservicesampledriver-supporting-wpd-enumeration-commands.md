@@ -2,7 +2,6 @@
 description: Support for enumeration commands (WpdServiceSampleDriver)
 title: Support for enumeration commands (WpdServiceSampleDriver)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Support for enumeration commands (WpdServiceSampleDriver)

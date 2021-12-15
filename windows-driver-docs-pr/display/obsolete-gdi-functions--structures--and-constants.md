@@ -6,7 +6,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , obsolete reference
 - drawing WDK GDI , obsolete reference
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obsolete GDI Functions, Structures, and Constants

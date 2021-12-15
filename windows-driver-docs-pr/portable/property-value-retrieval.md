@@ -2,7 +2,6 @@
 description: Property-Value Retrieval
 title: Property-Value Retrieval
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Property-Value Retrieval

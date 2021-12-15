@@ -3,7 +3,6 @@ title: Processing an Asynchronous Driver Notification
 description: Processing an Asynchronous Driver Notification
 keywords: ["driver notification WDK dynamic hardware partitioning , processing", "asynchronous driver notification WDK dynamic hardware partitioning , processing", "registering for driver notification WDK dynamic hardware partitioning , asynchronous"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Processing an Asynchronous Driver Notification

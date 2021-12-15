@@ -2,7 +2,6 @@
 title: Penetration Tests (Device Fundamentals)
 description: The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Penetration Tests (Device Fundamentals)

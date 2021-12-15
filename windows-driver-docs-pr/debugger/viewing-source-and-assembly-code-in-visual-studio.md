@@ -2,7 +2,6 @@
 title: Source Code Debugging in Visual Studio
 description: The procedure covers Source Code Debugging in Visual Studio.
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # Source Code Debugging in Visual Studio

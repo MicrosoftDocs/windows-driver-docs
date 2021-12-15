@@ -5,7 +5,6 @@ keywords:
 - parallel devices WDK , opening
 - parallel devices WDK , sharing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening and Using a Parallel Device

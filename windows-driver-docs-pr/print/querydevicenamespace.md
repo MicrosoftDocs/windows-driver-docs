@@ -4,7 +4,6 @@ description: The IPrintTicketProvider QueryDeviceNamespace routine provides the 
 keywords:
 - QueryDeviceNamespace
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # QueryDeviceNamespace

@@ -4,7 +4,6 @@ description: The HS_PLUGIN_PRE_CONNECT_INIT function is called to notify the plu
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_PRE_CONNECT_INIT) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_PRE\_CONNECT\_INIT function

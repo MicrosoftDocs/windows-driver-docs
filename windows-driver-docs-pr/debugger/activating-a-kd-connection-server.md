@@ -9,7 +9,6 @@ api_name:
 - Activating a KD Connection Server
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Activating a KD Connection Server

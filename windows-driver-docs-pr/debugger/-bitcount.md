@@ -1,5 +1,5 @@
 ---
-title: bitcount
+title: bitcount (WinDbg)
 description: The !bitcount extension counts the number of "1" bits in a memory range.
 keywords: ["bitcount Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - bitcount
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bitcount

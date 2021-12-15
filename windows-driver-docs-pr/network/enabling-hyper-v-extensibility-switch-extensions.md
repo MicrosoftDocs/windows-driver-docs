@@ -2,7 +2,6 @@
 title: Enabling Hyper-V Extensible Switch Extensions
 description: Enabling Hyper-V Extensible Switch Extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Hyper-V Extensible Switch Extensions

@@ -2,7 +2,6 @@
 title: Validating Universal Windows drivers
 description: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.
 ms.date: 04/28/2020
-ms.localizationpriority: medium
 ---
 
 # Validating Windows Drivers

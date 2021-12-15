@@ -14,7 +14,6 @@ keywords:
 - pins WDK audio , property handlers
 - nodes WDK audio , property handlers
 ms.date: 08/07/2018
-ms.localizationpriority: medium
 ---
 
 # Audio Property Handlers

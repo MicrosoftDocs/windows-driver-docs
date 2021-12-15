@@ -4,7 +4,6 @@ description: Installing an AVStream-based Hardware Codec Driver
 keywords:
 - hardware codec support WDK AVStream , installing a driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing an AVStream-based Hardware Codec Driver

@@ -2,7 +2,6 @@
 title: Creating a NIC Switch
 description: Creating a NIC Switch
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a NIC Switch

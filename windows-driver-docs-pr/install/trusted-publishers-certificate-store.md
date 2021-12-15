@@ -6,7 +6,6 @@ keywords:
 - Trusted Publishers certificate store WDK
 - certificate stores WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trusted Publishers Certificate Store

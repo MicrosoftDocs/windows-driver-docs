@@ -1,5 +1,5 @@
 ---
-title: dcr
+title: dcr (WinDbg)
 description: The dcr extension displays the default control register (DCR) at the specified address.
 keywords: ["DCR (default control register)", "dcr Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - dcr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dcr

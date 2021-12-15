@@ -9,7 +9,6 @@ api_name:
 - .inline (Toggle Inline Function Debugging)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .inline (Toggle Inline Function Debugging)

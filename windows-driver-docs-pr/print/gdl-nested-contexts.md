@@ -8,7 +8,6 @@ keywords:
 - GDL WDK , values
 - values WDK GDL , nested contexts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Nested Contexts

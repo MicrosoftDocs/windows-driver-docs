@@ -3,7 +3,6 @@ title: DBH Commands
 description: DBH Commands
 keywords: ["DBH, commands"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # DBH Commands

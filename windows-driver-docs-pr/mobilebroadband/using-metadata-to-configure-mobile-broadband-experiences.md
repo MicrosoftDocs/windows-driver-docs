@@ -2,7 +2,6 @@
 title: Overview of using metadata to configure mobile broadband experiences
 description: Overview of using metadata to configure mobile broadband experiences
 ms.date: 07/02/2019
-ms.localizationpriority: medium
 ---
 
 # Overview of using metadata to configure mobile broadband experiences

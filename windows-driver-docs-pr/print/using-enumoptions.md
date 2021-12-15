@@ -4,7 +4,6 @@ description: Using EnumOptions
 keywords:
 - EnumOptions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using EnumOptions

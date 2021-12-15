@@ -4,10 +4,11 @@ description: WDI_TLV_IHV_NON_WDI_OIDS_LIST is a TLV that contains a list of non-
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_IHV_NON_WDI_OIDS_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_IHV\_NON\_WDI\_OIDS\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_IHV\_NON\_WDI\_OIDS\_LIST is a TLV that contains a list of non-WDI OIDs that the adapter wants to advertise to the operating system.

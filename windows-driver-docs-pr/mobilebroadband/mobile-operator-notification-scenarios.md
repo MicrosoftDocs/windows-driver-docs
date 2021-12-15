@@ -2,7 +2,6 @@
 title: Mobile operator notification scenarios
 description: Mobile operator notification scenarios
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mobile operator notification scenarios

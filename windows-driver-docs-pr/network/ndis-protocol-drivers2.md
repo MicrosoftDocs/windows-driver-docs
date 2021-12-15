@@ -6,7 +6,6 @@ keywords:
 - NDIS protocol drivers WDK , architecture
 - transport protocol drivers WDK networking
 ms.date: 11/26/2018
-ms.localizationpriority: medium
 ---
 
 # Protocol drivers

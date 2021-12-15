@@ -2,7 +2,6 @@
 title: USB Configuration Descriptor
 description: USB Configuration Descriptor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Configuration Descriptor

@@ -3,7 +3,6 @@ title: Help Contents
 description: Help Contents
 keywords: ["Help Contents", "help file, Help Contents"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Help | Contents

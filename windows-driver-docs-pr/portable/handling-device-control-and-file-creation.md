@@ -2,7 +2,6 @@
 description: Handling Device Control and File Creation
 title: Handling Device Control and File Creation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Device Control and File Creation

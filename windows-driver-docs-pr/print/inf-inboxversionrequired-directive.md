@@ -2,7 +2,6 @@
 title: INF InboxVersionRequired Directive
 description: INF InboxVersionRequired Directive
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF InboxVersionRequired Directive

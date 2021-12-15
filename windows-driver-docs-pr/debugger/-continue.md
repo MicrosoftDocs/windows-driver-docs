@@ -1,5 +1,5 @@
 ---
-title: .continue
+title: .continue (WinDbg)
 description: The .continue token behaves like the continue keyword in C.
 keywords: [".continue Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .continue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .continue

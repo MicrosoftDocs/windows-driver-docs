@@ -2,7 +2,6 @@
 title: TTD Thread Objects
 description: This section describes the thread model objects associated with time travel debugging.
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # TTD Thread Objects

@@ -3,7 +3,6 @@ title: Queued Spin Locks
 description: Queued Spin Locks
 keywords: ["queued spin locks WDK kernel", "first-come first-served spin locks WDK kernel", "KeAcquireInStackQueuedSpinLock"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Queued Spin Locks

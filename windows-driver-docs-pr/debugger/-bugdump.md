@@ -1,5 +1,5 @@
 ---
-title: bugdump
+title: bugdump (WinDbg)
 description: The bugdump extension formats and displays the information contained in the bug check callback buffers.
 keywords: ["bugdump Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - bugdump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bugdump

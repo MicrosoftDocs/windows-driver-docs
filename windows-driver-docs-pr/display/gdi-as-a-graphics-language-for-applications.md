@@ -7,7 +7,6 @@ keywords:
 - drawing WDK GDI , graphics language for applications
 - graphics language for applications WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI as a Graphics Language for Applications

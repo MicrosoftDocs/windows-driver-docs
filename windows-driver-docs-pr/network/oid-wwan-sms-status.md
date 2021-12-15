@@ -4,7 +4,6 @@ description: OID_WWAN_SMS_STATUS reports the status of the MB device's message s
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SMS\_STATUS

@@ -8,7 +8,6 @@ keywords:
 - translating native addresss WDK SANs
 - AF_INET addresses WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Translating to a SAN Native Address

@@ -2,7 +2,6 @@
 title: System and driver support for Resizable BAR
 description: How the OS and drivers support resizable BAR
 ms.date: 03/30/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
 

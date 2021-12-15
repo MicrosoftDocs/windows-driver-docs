@@ -3,7 +3,6 @@ title: Debugging in Assembly Mode
 description: Debugging in Assembly Mode
 keywords: ["assembly debugging", "assembly mode", "assembly debugging, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging in Assembly Mode

@@ -3,7 +3,6 @@ title: PDBCopy
 description: PDBCopy
 keywords: ["PDBCopy", "PDBCopy, overview", "symbols, PDBCopy"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # PDBCopy

@@ -4,7 +4,6 @@ description: Completing an Isochronous Data Transfer
 keywords:
 - isochronous I/O WDK IEEE 1394 bus , completing transfers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Completing an Isochronous Data Transfer

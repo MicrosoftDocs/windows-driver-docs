@@ -5,7 +5,6 @@ keywords:
 - storage drivers WDK , BypassIO
 ms.date: 08/11/2021
 prerelease: false
-ms.localizationpriority: medium
 ---
 
 # BypassIO in storage drivers

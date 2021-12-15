@@ -1,7 +1,6 @@
 ---
 title: Surprise Wake-Up
 description: A surprise wake-up is an unexpected transition to D0.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

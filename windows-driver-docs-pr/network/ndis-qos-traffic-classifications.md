@@ -2,7 +2,6 @@
 title: NDIS QoS Traffic Classifications
 description: NDIS QoS Traffic Classifications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS QoS Traffic Classifications

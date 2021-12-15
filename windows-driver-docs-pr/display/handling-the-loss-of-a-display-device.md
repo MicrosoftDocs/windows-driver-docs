@@ -4,7 +4,6 @@ description: Handling the Loss of a Display Device
 keywords:
 - OPM WDK display , loss of device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling the Loss of a Display Device

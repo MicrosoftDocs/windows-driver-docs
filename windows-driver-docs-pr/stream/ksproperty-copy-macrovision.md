@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_COPY\_MACROVISION
-description: The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of the data stream.
+title: KSPROPERTY_COPY_MACROVISION
+description: The KSPROPERTY_COPY_MACROVISION property indicates the Macrovision level of the data stream.
 keywords: ["KSPROPERTY_COPY_MACROVISION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,72 +10,29 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/18/2021
 ---
 
-# KSPROPERTY\_COPY\_MACROVISION
+# KSPROPERTY_COPY_MACROVISION
 
+The **KSPROPERTY_COPY_MACROVISION** property indicates the Macrovision level of the data stream.
 
-The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of the data stream.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_copy_macrovision_ks"></span><span id="DDK_KSPROPERTY_COPY_MACROVISION_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_COPY_MACROVISION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision" data-raw-source="[&lt;strong&gt;KS_COPY_MACROVISION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision)"><strong>KS_COPY_MACROVISION</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a KS\_COPY\_MACROVISION structure the specifies the Macrovision level of the data stream.
+The property value (operation data) is a **KS_COPY_MACROVISION** structure the specifies the Macrovision level of the data stream.
 
 ## Remarks
 
-For more information about Macrovision level, see [DVD Copyright Protection](./dvd-copyright-protection.md).
+For more information about Macrovision level, see [DVD Copyright Protection](dvd-copyright-protection.md).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
-[**KS\_COPY\_MACROVISION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision)
+[**KS_COPY_MACROVISION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision)

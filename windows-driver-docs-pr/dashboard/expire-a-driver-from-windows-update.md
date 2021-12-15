@@ -3,7 +3,6 @@ title: Expire a driver from Windows Update
 description: To expire a driver from Windows Update, follow the steps below.
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Expire a driver from Windows Update

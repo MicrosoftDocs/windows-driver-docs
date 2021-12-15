@@ -2,7 +2,6 @@
 title: Supplemental MB Documentation Topics
 description: The following sections provide supplemental information for developers of MB devices.
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # Supplemental MB Documentation Topics

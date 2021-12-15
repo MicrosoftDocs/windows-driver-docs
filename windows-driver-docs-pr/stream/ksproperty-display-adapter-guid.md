@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_DISPLAY\_ADAPTER\_GUID
-description: The KSPROPERTY\_DISPLAY\_ADAPTER\_GUID property returns the adapter GUID from the capture minidriver.To use VRAM transport, a capture minidriver must support this property.
+title: KSPROPERTY_DISPLAY_ADAPTER_GUID
+description: The KSPROPERTY_DISPLAY_ADAPTER_GUID property returns the adapter GUID from the capture minidriver.To use VRAM transport, a capture minidriver must support this property.
 keywords: ["KSPROPERTY_DISPLAY_ADAPTER_GUID Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,52 +10,24 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/19/2021
 ---
 
-# KSPROPERTY\_DISPLAY\_ADAPTER\_GUID
+# KSPROPERTY_DISPLAY_ADAPTER_GUID
 
-
-The KSPROPERTY\_DISPLAY\_ADAPTER\_GUID property returns the adapter GUID from the capture minidriver.
+The **KSPROPERTY_DISPLAY_ADAPTER_GUID** property returns the adapter GUID from the capture minidriver.
 
 To use VRAM transport, a capture minidriver must support this property.
 
-### Usage Summary Table
+## Usage Summary Table
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p>GUID</p></td>
-</tr>
-</tbody>
-</table>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | GUID |
 
- 
+## Return value
 
-### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
-
-A KSPROPERTY\_DISPLAY\_ADAPTER\_GUID property returns STATUS\_SUCCESS to indicate that it has completed successfully. If the Property Type Value is incorrect, it returns STATUS\_INVALID\_PARAMETER.
+A **KSPROPERTY_DISPLAY_ADAPTER_GUID** property returns **STATUS_SUCCESS** to indicate that it has completed successfully. If the Property Type Value is incorrect, it returns **STATUS_INVALID_PARAMETER**.
 
 ## Remarks
 
@@ -67,20 +39,8 @@ AVStream matches this GUID with the GUID of the downstream render pin to verify 
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
-
 
 [**KSPROPERTY**](ksproperty-structure.md)

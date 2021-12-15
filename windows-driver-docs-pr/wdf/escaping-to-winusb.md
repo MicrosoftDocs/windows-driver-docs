@@ -6,7 +6,6 @@ keywords:
 - WinUSB WDK UMDF , escaping to WinUSB
 - user-mode drivers WDK UMDF , escaping to WinUSB
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling WinUSB from UMDF

@@ -2,7 +2,6 @@
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Delivering experiences for MVNOs

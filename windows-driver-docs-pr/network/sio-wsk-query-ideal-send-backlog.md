@@ -4,7 +4,6 @@ description: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_QUERY_IDEAL_SEND_BACKLOG Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_QUERY\_IDEAL\_SEND\_BACKLOG

@@ -2,7 +2,6 @@
 title: '[String] section changes for localized strings'
 description: This INF requirement ensures that pseudo-localized builds work. The requirement is to delineate localizable versus non-localizable strings within the strings section
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \[String\] section changes for localized strings

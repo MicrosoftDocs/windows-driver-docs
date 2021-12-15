@@ -8,7 +8,6 @@ keywords:
 - protection levels WDK display , HDCP precedence
 - protection levels WDK display , DPCP precedence
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Assigning Precedence to Protection Levels

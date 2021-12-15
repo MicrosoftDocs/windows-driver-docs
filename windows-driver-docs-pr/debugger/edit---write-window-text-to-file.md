@@ -3,7 +3,6 @@ title: Edit Write Window Text to File
 description: Edit Write Window Text to File
 keywords: ["Edit Write Window Text to File"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Write Window Text to File

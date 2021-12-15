@@ -5,7 +5,6 @@ keywords:
 - TMM WDK display , two monitor configurations
 - monitor configurations WDK display , two monitors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Two Monitor Configurations

@@ -9,7 +9,6 @@ api_name:
 - WdfInterruptLock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WdfInterruptLock rule (kmdf)

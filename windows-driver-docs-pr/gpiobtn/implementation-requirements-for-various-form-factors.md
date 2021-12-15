@@ -1,7 +1,6 @@
 ---
 title: Implementation requirements for various form factors
 description: This topic describes implementation requirements for various form factors.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

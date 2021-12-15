@@ -8,7 +8,6 @@ keywords:
 - SAN connection setup WDK , about SAN connection setup
 - SAN service providers WDK , connection setup
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up a SAN Connection

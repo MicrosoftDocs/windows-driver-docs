@@ -8,7 +8,6 @@ keywords:
 - segments WDK display
 - address space WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing Use of Memory Segments

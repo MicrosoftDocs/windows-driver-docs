@@ -1,5 +1,5 @@
 ---
-title: driveinfo
+title: driveinfo (WinDbg)
 description: The driveinfo extension displays volume information for the specified drive.
 keywords: ["driveinfo Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - driveinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !driveinfo

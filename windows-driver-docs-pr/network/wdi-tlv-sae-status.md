@@ -4,11 +4,12 @@ description: WDI_TLV_SAE_STATUS is a TLV that contains Simultaneous Authenticati
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # WDI_TLV_SAE_STATUS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 **WDI_TLV_SAE_STATUS** is a TLV that contains Simultaneous Authentication of Equals (SAE) authentication failure error status.
 

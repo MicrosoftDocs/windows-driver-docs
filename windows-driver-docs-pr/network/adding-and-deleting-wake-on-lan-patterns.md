@@ -2,7 +2,6 @@
 title: Adding and Deleting Wake on LAN Patterns
 description: Adding and Deleting Wake on LAN Patterns
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding and Deleting Wake on LAN Patterns

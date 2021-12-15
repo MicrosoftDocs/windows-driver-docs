@@ -4,7 +4,6 @@ description: OID_WWAN_DELETE_MAC requests the miniport driver to delete the NDIS
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DELETE_MAC Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DELETE\_MAC

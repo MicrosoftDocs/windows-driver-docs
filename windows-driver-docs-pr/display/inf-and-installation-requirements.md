@@ -4,7 +4,6 @@ description: INF and Installation Requirements
 keywords:
 - INF files WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF and Installation Requirements

@@ -9,7 +9,6 @@ api_name:
 - .clients (List Debugging Clients)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .clients (List Debugging Clients)

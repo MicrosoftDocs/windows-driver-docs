@@ -1,7 +1,6 @@
 ---
 title: ACPI descriptor samples
 description: This topic contains ACPI descriptor samples.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -3,7 +3,6 @@ title: Get RPC Thread Information
 description: Get RPC Thread Information
 keywords: ["RPC thread information"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Get RPC Thread Information

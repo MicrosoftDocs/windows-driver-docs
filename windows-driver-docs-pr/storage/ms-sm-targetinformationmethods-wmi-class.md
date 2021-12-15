@@ -1,7 +1,6 @@
 ---
 title: MS\_SM\_TargetInformationMethods WMI Class
 description: MS\_SM\_TargetInformationMethods WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

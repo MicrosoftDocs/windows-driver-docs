@@ -2,7 +2,6 @@
 title: Forwarding OID Requests to Physical Network Adapters
 description: Forwarding OID Requests to Physical Network Adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Forwarding OID Requests to Physical Network Adapters

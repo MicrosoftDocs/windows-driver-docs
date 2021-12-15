@@ -7,7 +7,6 @@ keywords:
 - non-Plug and Play serial devices WDK
 - RS-232 ports WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port

@@ -8,7 +8,6 @@ keywords:
 - channel notification WDK print spooler
 - data channels WDK spooler notification
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interfaces Implemented at Both Ends of the Notification Channel

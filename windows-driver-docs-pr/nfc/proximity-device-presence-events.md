@@ -8,7 +8,6 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Proximity device presence events

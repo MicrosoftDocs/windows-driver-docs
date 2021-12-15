@@ -9,7 +9,6 @@ keywords:
 - Unidrv, XPSDrv print drivers
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv/PScript5 Plug-in Configuration Modules

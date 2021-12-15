@@ -7,7 +7,6 @@ keywords:
 - filters WDK XPS
 - asynchronous notifications WDK XPS
 ms.date: 06/01/2020
-ms.localizationpriority: medium
 ---
 
 # Asynchronous Notifications in Print Filters

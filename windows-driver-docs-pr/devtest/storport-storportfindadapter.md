@@ -9,7 +9,6 @@ api_name:
 - StorPortFindAdapter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortFindAdapter rule (storport)

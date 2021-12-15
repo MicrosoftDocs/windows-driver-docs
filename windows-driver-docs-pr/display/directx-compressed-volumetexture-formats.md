@@ -13,7 +13,6 @@ keywords:
 - volume textures WDK DirectDraw
 - volumetric rendering WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectX Compressed VolumeTexture Formats

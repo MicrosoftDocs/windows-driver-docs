@@ -7,7 +7,6 @@ keywords:
 - conditional directives WDK GDL
 - Else directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \#Else Conditional Preprocessor Directive

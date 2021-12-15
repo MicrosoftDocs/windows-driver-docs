@@ -4,7 +4,6 @@ description: Specifying Allocator Framing in AVStream Codecs
 keywords:
 - AVStream hardware codec support WDK , specifying allocator framing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Allocator Framing in AVStream Codecs

@@ -1,5 +1,5 @@
 ---
-title: search
+title: search (WinDbg)
 description: The search extension searches pages in physical memory for pointer-sized data that matches the specified criteria.
 keywords: ["search Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - search
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !search

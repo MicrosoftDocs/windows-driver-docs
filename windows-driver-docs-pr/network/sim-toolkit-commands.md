@@ -2,7 +2,6 @@
 title: SIM toolkit commands
 description: SIM toolkit commands
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SIM toolkit commands

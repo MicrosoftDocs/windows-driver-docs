@@ -2,7 +2,6 @@
 title: Binding minidrivers to the HID class
 description: This section describes the operation of the system-supplied HID class driver and HID minidrivers, which support devices in the HIDClass device setup class.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Binding minidrivers to the HID class

@@ -8,7 +8,6 @@ keywords:
 - WDM lower edge WDK networking , compile flags
 - compile flags WDK NDIS-WDM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Compile Flags for WDM Lower Edge

@@ -5,7 +5,6 @@ keywords:
 - data-intersection handlers WDK audio , data-range properties
 - data ranges WDK audio , properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data-Range Properties

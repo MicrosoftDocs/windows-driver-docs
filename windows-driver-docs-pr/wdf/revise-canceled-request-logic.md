@@ -2,7 +2,6 @@
 title: Revise Canceled Request Logic
 description: Revise Canceled Request Logic
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Revise Canceled Request Logic

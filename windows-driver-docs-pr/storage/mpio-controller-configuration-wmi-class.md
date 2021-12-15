@@ -1,7 +1,6 @@
 ---
 title: MPIO\_CONTROLLER\_CONFIGURATION WMI Class
 description: MPIO\_CONTROLLER\_CONFIGURATION WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

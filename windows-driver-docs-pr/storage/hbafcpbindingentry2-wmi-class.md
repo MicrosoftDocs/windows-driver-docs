@@ -1,7 +1,6 @@
 ---
 title: HBAFCPBindingEntry2 WMI Class
 description: HBAFCPBindingEntry2 WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -2,7 +2,6 @@
 title: What are the TraceWPP parameters
 description: What are the TraceWPP parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What are the TraceWPP parameters?

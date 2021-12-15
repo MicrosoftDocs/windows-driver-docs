@@ -2,7 +2,6 @@
 title: Smart Card Plug and Play
 description: Smart Card Plug and Play
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Smart Card Plug and Play

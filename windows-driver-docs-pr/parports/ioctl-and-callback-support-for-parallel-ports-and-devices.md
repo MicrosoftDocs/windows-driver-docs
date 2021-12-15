@@ -9,7 +9,6 @@ keywords:
 - parallel devices WDK , callbacks
 - parallel devices WDK , IOCTLs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IOCTL and Callback Support for Parallel Ports and Devices

@@ -6,7 +6,6 @@ keywords:
 - reserving processors for applications WDK RSS
 - processors WDK RSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reserving Processors for Applications

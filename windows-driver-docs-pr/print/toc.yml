@@ -258,15 +258,15 @@
           href: symbolic-names.md
         - name: "Text Strings"
           href: text-strings.md
-        - name: "Constants"
+        - name: "Constants (GPD language)"
           href: constants.md
         - name: "Numeric Values"
           href: numeric-values.md
         - name: "Boolean Values"
           href: boolean-values.md
-        - name: "Lists"
+        - name: "Lists (GPD language)"
           href: lists.md
-        - name: "Pairs"
+        - name: "Pairs (GPD language)"
           href: pairs.md
         - name: "Rectangles"
           href: rectangles.md
@@ -277,7 +277,7 @@
       - name: "Macros"
 # Auto-expanded node
         items: 
-        - name: "Macros"
+        - name: "Macros (GPD language)"
           href: macros.md
         - name: "Block Macros"
           href: block-macros.md
@@ -608,7 +608,7 @@
     items: 
     - name: "Pscript Minidrivers"
       href: pscript-minidrivers.md
-    - name: "AddEuro"
+    - name: "AddEuro feature"
       href: addeuro.md
     - name: "Converting AFM Files to NTF Files"
       href: converting-afm-files-to-ntf-files.md
@@ -622,7 +622,7 @@
       href: pscript-printer-minidriver-versioning.md
     - name: "Pscript Support for Stapling"
       href: pscript-support-for-stapling.md
-    - name: "TrueGray"
+    - name: "TrueGray feature"
       href: truegray.md
   - name: "Pscript User Interface"
     href: pscript-user-interface.md
@@ -1098,7 +1098,7 @@
     - name: "Using GDL"
 # Auto-expanded node
       items: 
-      - name: "Using GDL"
+      - name: "Use GDL to create configurations and snapshots"
         href: using-gdl.md
       - name: "GDL Configurations"
 # Auto-expanded node
@@ -1469,7 +1469,7 @@
             href: tcp-ip-schema-extensions-for-driver-specific-queries.md
           - name: "Const (TCP/IP)"
             href: const.md
-          - name: "Converter"
+          - name: "Converter (TCP/IP)"
             href: converter.md
           - name: "Installed (TCP/IP)"
             href: installed2.md
@@ -1504,7 +1504,7 @@
             href: const5.md
           - name: "Installed (WSD)"
             href: installed.md
-          - name: "List"
+          - name: "List (WSD)"
             href: list.md
           - name: "Value (WSD)"
             href: value.md
@@ -1570,7 +1570,7 @@
         href: configuration.md
       - name: "Memory"
         href: memory.md
-      - name: "HardDisk"
+      - name: "HardDisk property"
         href: harddisk.md
       - name: "DuplexUnit"
         href: duplexunit.md
@@ -1584,7 +1584,7 @@
       items: 
       - name: "Consumables"
         href: consumables3.md
-      - name: "Name]"
+      - name: "Name property"
         href: -name-.md
   - name: "Layout Section"
 # Auto-expanded node
@@ -1594,16 +1594,16 @@
     - name: "Layout"
 # Auto-expanded node
       items: 
-      - name: "Layout"
+      - name: "Layout property"
         href: layout.md
       - name: "NumberUp"
 # Auto-expanded node
         items: 
-        - name: "NumberUp"
+        - name: "NumberUp property"
           href: numberup2.md
         - name: "PagesPerSheet"
           href: pagespersheet2.md
-        - name: "Direction"
+        - name: "Direction property"
           href: direction2.md
       - name: "Orientation"
         href: orientation2.md
@@ -1612,7 +1612,7 @@
       - name: "InputBins"
 # Auto-expanded node
         items: 
-        - name: "InputBins"
+        - name: "InputBins property"
           href: inputbins2.md
         - name: "TrayName]"
           href: -trayname-.md
@@ -1624,23 +1624,23 @@
     - name: "Finishing"
 # Auto-expanded node
       items: 
-      - name: "Finishing"
+      - name: "Finishing property"
         href: finishing.md
       - name: "Staple"
 # Auto-expanded node
         items: 
-        - name: "Staple"
+        - name: "Staple property"
           href: staple3.md
         - name: "Location"
           href: location3.md
-        - name: "Angle"
+        - name: "Angle property"
           href: angle2.md
       - name: "HolePunch"
 # Auto-expanded node
         items: 
-        - name: "HolePunch"
+        - name: "HolePunch property"
           href: holepunch3.md
-        - name: "Pattern"
+        - name: "Pattern property"
           href: pattern2.md
         - name: "Location"
           href: location2.md
@@ -1666,21 +1666,21 @@
     - name: "Status"
 # Auto-expanded node
       items: 
-      - name: "Status"
+      - name: "Status property"
         href: status.md
-      - name: "Summary"
+      - name: "Summary property"
         href: summary.md
       - name: "Detailed"
 # Auto-expanded node
         items: 
-        - name: "Detailed"
+        - name: "Detailed property"
           href: detailed.md
         - name: "Event###"
 # Auto-expanded node
           items: 
           - name: "Event###"
             href: event---.md
-          - name: "Component"
+          - name: "Component property"
             href: component2.md
   - name: "Bidirectional Communication Error Codes"
     href: bidi-error-codes.md
@@ -2479,13 +2479,13 @@
         href: wsdmon-port-monitor.md
       - name: "CleanupPort"
         href: cleanupport.md
-      - name: "DeviceID"
+      - name: "DeviceID command"
         href: deviceid2.md
-      - name: "PnPXID"
+      - name: "PnPXID command"
         href: pnpxid.md
       - name: "ResetCommunication"
         href: resetcommunication.md
-      - name: "ServiceID"
+      - name: "ServiceID command"
         href: serviceid.md
     - name: "Converting Print Monitors for Use with Clustered Print Servers"
       href: converting-print-monitors-for-use-with-clustered-print-servers.md

@@ -13,7 +13,6 @@ keywords:
 - resizing COM port databases
 - databases WDK COM port databases
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COM Port Database

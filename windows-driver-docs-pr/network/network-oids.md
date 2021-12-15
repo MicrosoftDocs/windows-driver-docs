@@ -7,7 +7,6 @@ keywords:
 - object identifiers WDK networking
 - OIDs WDK networking , about OIDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network OIDs

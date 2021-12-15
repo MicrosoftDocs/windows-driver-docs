@@ -2,7 +2,6 @@
 title: Common, Camera, and Scanner Properties
 description: Common, Camera, and Scanner Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Common, Camera, and Scanner Properties

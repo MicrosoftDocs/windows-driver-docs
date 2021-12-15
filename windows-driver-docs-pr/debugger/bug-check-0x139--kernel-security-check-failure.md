@@ -9,7 +9,6 @@ api_name:
 - Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x139: KERNEL\_SECURITY\_CHECK\_FAILURE

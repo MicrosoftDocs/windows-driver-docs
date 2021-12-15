@@ -1,7 +1,6 @@
 ---
 title: Design Guidelines for Starting Devices
 description: Design Guidelines for Starting Devices
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

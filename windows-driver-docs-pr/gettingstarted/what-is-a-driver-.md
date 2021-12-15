@@ -5,7 +5,6 @@ keywords:
 - define driver
 - driver definition
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy22q1
 ---
 

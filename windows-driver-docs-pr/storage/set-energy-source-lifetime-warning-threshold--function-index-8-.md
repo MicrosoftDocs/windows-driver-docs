@@ -1,7 +1,6 @@
 ---
 title: Set Energy Source Lifetime Warning Threshold (Function Index 8)
 description: This function sets the warning threshold for remaining Energy Source (ES) lifetime percentage.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

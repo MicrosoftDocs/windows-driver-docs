@@ -11,7 +11,6 @@ keywords:
 - hardware IDs WDK AV/C
 - compatible IDs WDK AV/C
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Peer Subunit Device Identifiers

@@ -1,5 +1,5 @@
 ---
-title: filetime
+title: filetime (WinDbg)
 description: The filetime extension converts a 64-bit FILETIME structure into a human-readable time.
 keywords: ["FILETIME", "filetime Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - filetime
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !filetime

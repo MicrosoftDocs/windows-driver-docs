@@ -1,8 +1,7 @@
 ---
-title: C28741
+title: C28741 warning
 description: Warning C28741 Unannotated buffer in the function.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28741"
 ---

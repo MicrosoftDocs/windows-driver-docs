@@ -6,7 +6,6 @@ keywords:
 - hardware multiple-head support WDK DirectX 9.0
 - multiple-head hardware WDK DirectX 9.0 , about multiple-head hardware
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Multiple-Head Hardware

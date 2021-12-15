@@ -6,7 +6,6 @@ keywords:
 - adapter drivers WDK audio , installing
 - Port Class audio adapters WDK , installing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miscellaneous Installation Issues for an Audio Adapter

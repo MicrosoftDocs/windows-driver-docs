@@ -2,7 +2,6 @@
 title: KSPROPSETID\_Topology
 description: KSPROPSETID\_Topology
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Topology

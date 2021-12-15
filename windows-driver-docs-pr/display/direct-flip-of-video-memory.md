@@ -5,7 +5,6 @@ keywords:
 - direct flip
 - DirectFlip
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct flip of video memory

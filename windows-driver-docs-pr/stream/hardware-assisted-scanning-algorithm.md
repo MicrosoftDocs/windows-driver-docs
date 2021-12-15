@@ -4,7 +4,6 @@ description: Hardware-Assisted Scanning Algorithm
 keywords:
 - hardware-assisted scanning WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware-Assisted Scanning Algorithm

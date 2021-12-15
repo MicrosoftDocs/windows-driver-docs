@@ -6,7 +6,6 @@ keywords:
 - security audit policy WDK driver signing
 - system audit policy WDK driver signing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling the System Event Audit Log

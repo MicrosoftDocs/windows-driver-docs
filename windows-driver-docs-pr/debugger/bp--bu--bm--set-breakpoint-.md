@@ -9,7 +9,6 @@ api_name:
 - bp, bu, bm (Set Breakpoint)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # bp, bu, bm (Set Breakpoint)
@@ -94,10 +93,7 @@ bp /w "@$scriptContents.myFunc(localVariable)" @rip
 
 For more information on debugger objects, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
 
-> [!NOTE] 
-> The /w option is experimental and requires the latest version of the debugger. 
-
-
+For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the first byte of the instruction where the breakpoint is set. If you omit *Address*, the current instruction pointer is used. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).

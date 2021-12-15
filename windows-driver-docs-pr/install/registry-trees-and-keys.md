@@ -2,7 +2,6 @@
 title: Registry Trees and Keys for Devices and Drivers
 description: Registry Trees and Keys for Devices and Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Trees and Keys for Devices and Drivers

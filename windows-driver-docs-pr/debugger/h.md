@@ -2,7 +2,6 @@
 title: H (Windows Debugger Glossary)
 description: Glossary page - H 
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # H

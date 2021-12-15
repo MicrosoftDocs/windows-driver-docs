@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_BITS\_PER\_CHANNEL
-description: The WIA\_IPA\_BITS\_PER\_CHANNEL property contains the number of bits per channel for the image. The WIA minidriver creates and maintains this property.
+title: WIA_IPA_BITS_PER_CHANNEL
+description: The WIA_IPA_BITS_PER_CHANNEL property contains the number of bits per channel for the image. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPA_BITS_PER_CHANNEL Imaging Devices"]
 topic_type:
 - apiref
@@ -10,54 +10,27 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/04/2021
 ---
 
-# WIA\_IPA\_BITS\_PER\_CHANNEL
+# WIA_IPA_BITS_PER_CHANNEL
 
+The WIA_IPA_BITS_PER_CHANNEL property contains the number of bits per channel for the image. The WIA minidriver creates and maintains this property.
 
-The WIA\_IPA\_BITS\_PER\_CHANNEL property contains the number of bits per channel for the image. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ipa_bits_per_channel_si"></span><span id="DDK_WIA_IPA_BITS_PER_CHANNEL_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-The WIA\_IPA\_BITS\_PER\_CHANNEL property is similar to the [**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](wia-ipa-raw-bits-per-channel.md) property (which is used for the raw formats).
+The WIA_IPA_BITS_PER_CHANNEL property is similar to the [**WIA_IPA_RAW_BITS_PER_CHANNEL**](wia-ipa-raw-bits-per-channel.md) property (which is used for the raw formats).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](wia-ipa-raw-bits-per-channel.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPA_RAW_BITS_PER_CHANNEL**](wia-ipa-raw-bits-per-channel.md)

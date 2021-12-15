@@ -1,5 +1,5 @@
 ---
-title: handle
+title: handle (WinDbg)
 description: The handle extension displays information about a handle or handles that one or all processes in the target system own.
 keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - handle
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !handle

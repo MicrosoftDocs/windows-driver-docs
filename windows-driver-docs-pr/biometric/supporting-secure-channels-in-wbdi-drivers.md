@@ -5,7 +5,6 @@ keywords:
 - biometric drivers WDK , secure channels
 - secure channels WDK biometric
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Secure Channels in WBDI Drivers

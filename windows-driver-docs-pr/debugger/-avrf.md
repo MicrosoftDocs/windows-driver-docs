@@ -1,5 +1,5 @@
 ---
-title: avrf
+title: avrf (WinDbg)
 description: The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier.
 keywords: ["avrf Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - avrf
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !avrf

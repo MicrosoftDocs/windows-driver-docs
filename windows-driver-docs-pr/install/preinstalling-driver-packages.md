@@ -6,7 +6,6 @@ keywords:
 - device installation applications WDK , preinstall driver packages
 - preinstalled drivers WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Preinstalling Driver Packages

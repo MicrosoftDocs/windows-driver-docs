@@ -3,7 +3,6 @@ title: Power IRPs for the System
 description: Power IRPs for the System
 keywords: ["power IRPs WDK kernel , system", "system power IRPs WDK kernel", "IRP_MJ_POWER", "IRP_MN_SET_POWER", "IRP_MN_QUERY_POWER", "inrush power WDK kernel", "system inrush power WDK kernel", "change power states WDK kernel", "reaffirming power states", "idle time-outs WDK power management", "expired batteries WDK power management", "battery expirations WDK power management", "user-requested power changes WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Power IRPs for the System

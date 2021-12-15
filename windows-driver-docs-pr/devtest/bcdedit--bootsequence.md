@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /bootsequence
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /bootsequence

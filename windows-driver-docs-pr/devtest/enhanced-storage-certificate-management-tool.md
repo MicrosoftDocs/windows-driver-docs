@@ -7,7 +7,6 @@ keywords:
 - EhStorCertMgrCmd.exe
 - driver testing tools WDK , EhStorCertMgrCmd.exe
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enhanced Storage Certificate Management Tool

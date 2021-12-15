@@ -1,7 +1,6 @@
 ---
 title: AddRADIUSServer
 description: AddRADIUSServer
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

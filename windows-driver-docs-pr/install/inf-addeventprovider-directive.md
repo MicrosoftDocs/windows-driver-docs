@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 06/04/2018
-ms.localizationpriority: medium
 ---
 
 # INF AddEventProvider Directive

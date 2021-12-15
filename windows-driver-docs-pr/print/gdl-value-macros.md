@@ -9,7 +9,6 @@ keywords:
 - Macros directive WDK GDL
 - macros WDK GDL , examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Value Macros

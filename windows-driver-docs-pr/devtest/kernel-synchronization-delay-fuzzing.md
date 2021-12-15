@@ -2,7 +2,6 @@
 title: Kernel synchronization delay fuzzing
 description: The Kernel synchronization delay fuzzing option randomizes thread schedules to help detect concurrency bugs in drivers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Kernel synchronization delay fuzzing

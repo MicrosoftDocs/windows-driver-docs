@@ -9,7 +9,6 @@ api_name:
 - StorPortSpinLock3
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortSpinLock3 rule (storport)

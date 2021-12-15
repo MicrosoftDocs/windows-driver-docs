@@ -7,7 +7,6 @@ keywords:
 - function drivers WDK ACPI , operation
 - WDM function drivers WDK ACPI , operation
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Operation of an ACPI Device Function Driver

@@ -3,7 +3,6 @@ title: Standard Event Objects
 description: Standard Event Objects
 keywords: ["event objects WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Standard Event Objects

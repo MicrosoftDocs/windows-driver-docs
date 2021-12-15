@@ -4,7 +4,6 @@ description: Property Value Requirements
 keywords:
 - device properties WDK device installations , property value requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Property Value Requirements

@@ -7,7 +7,6 @@ keywords:
 - storage miniport drivers WDK , Storport miniport drivers
 - miniport drivers WDK storage , Storport miniport drivers
 ms.date: 12/15/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to Storport Miniport Drivers

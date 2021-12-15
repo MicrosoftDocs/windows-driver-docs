@@ -3,7 +3,6 @@ title: Test distribution guidance to self-host desktop drivers
 description: Test distribution guidance to self-host desktop drivers
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Test distribution guidance to self-host desktop drivers

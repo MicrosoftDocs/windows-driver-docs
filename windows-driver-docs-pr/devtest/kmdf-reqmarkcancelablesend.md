@@ -9,7 +9,6 @@ api_name:
 - ReqMarkCancelableSend
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReqMarkCancelableSend rule (kmdf)

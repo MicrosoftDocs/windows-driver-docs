@@ -10,7 +10,6 @@ keywords:
 - WdfDeviceFailedNoRestart
 - reporting device failures WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Device Failures

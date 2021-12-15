@@ -1,7 +1,6 @@
 ---
 title: Integration testing
 description: It is important to perform integration testing to ensure an optimal end-to-end user experience.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

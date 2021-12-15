@@ -2,7 +2,6 @@
 title: Developing a WIA Video Driver
 description: Developing a WIA Video Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Developing a WIA Video Driver

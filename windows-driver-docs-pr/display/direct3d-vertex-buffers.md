@@ -5,7 +5,6 @@ keywords:
 - vertex buffers WDK Direct3D
 - buffers WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D Vertex Buffers

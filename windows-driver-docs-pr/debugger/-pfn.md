@@ -1,5 +1,5 @@
 ---
-title: pfn
+title: pfn (WinDbg)
 description: The pfn extension displays information about a specific page frame or the entire page frame database.
 keywords: ["page frame", "pfn Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - pfn
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pfn

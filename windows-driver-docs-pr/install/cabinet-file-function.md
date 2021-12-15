@@ -6,7 +6,6 @@ keywords:
 - .cab files
 - CAB files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cabinet File Function

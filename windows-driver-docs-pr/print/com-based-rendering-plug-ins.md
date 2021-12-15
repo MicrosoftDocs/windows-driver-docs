@@ -5,7 +5,6 @@ keywords:
 - COM-based rendering plug-ins WDK print
 - rendering plug-ins WDK print , COM-based
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COM-Based Rendering Plug-Ins

@@ -5,7 +5,6 @@ keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , defining device classes
 - device classes WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining DirectX VA Device Classes

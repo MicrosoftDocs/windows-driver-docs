@@ -7,7 +7,6 @@ keywords:
 - Avcstrm.sys streaming filter driver WDK , INF example
 - INF files WDK AV/C streaming
 ms.date: 08/25/2020
-ms.localizationpriority: medium
 ---
 
 # AV/C Streaming INF Example

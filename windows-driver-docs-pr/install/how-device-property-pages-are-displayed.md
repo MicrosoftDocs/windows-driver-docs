@@ -2,7 +2,6 @@
 title: How Device Property Pages are Displayed
 description: How Device Property Pages are Displayed
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How Device Property Pages are Displayed

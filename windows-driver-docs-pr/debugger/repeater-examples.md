@@ -3,7 +3,6 @@ title: Repeater Examples
 description: Repeater Examples
 keywords: ["repeater, examples"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Repeater Examples

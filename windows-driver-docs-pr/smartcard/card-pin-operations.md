@@ -2,7 +2,6 @@
 title: Card PIN Operations
 description: Card PIN Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Card PIN Operations

@@ -3,7 +3,6 @@ title: DispatchPower Routines
 description: DispatchPower Routines
 keywords: ["dispatch routines WDK kernel , DispatchPower routine", "DispatchPower routine", "power management WDK kernel , dispatch routines", "IRP_MJ_POWER I/O function code", "removable device power dispatch routines WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DispatchPower Routines

@@ -9,7 +9,6 @@ api_name:
 - RECURSIVE_NMI
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x111: RECURSIVE\_NMI

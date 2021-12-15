@@ -9,7 +9,6 @@ keywords:
 - child/parent NET_BUFFER_LIST relationships WDK networking
 - relationships WDK NET_BUFFER_LIST
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Fragmented NET\_BUFFER\_LIST Structures

@@ -2,7 +2,6 @@
 title: How do I include the source line number in the trace message prefix
 description: How do I include the source line number in the trace message prefix
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to include the source line number in the trace message prefix

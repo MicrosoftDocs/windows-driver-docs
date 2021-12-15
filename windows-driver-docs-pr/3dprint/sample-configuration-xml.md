@@ -2,7 +2,6 @@
 title: Sample configuration XML
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Sample configuration XML

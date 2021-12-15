@@ -3,7 +3,6 @@ title: Handling Transaction Operations
 description: Handling Transaction Operations
 keywords: ["transactions WDK KTM , handling operations", "handling transaction operations WDK KTM", "transactions WDK KTM , committing transactions", "committing transactions WDK KTM", "transactions WDK KTM , rolling back transactions", "rolling back transactions WDK KTM", "transactions WDK KTM , recovering transactions", "recovering transactions WDK KTM"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Transaction Operations

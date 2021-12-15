@@ -6,7 +6,6 @@ keywords:
 - NDIS rules for SDV
 - SDV WDK , NDIS rules
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier NDIS Function Declarations

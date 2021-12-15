@@ -6,7 +6,6 @@ keywords:
 - DDBLT_EXTENDED_FLAGS
 - blt flag extensions WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Blt Flags

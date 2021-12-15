@@ -8,7 +8,6 @@ keywords:
 - data transfers WDK NDIS intermediate
 - transferring data WDK NDIS intermediate
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Transmitting Network Data Through an Intermediate Driver

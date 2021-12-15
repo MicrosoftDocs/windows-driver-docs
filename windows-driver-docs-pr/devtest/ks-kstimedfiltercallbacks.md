@@ -9,7 +9,6 @@ api_name:
 - KsTimedFilterCallbacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsTimedFilterCallbacks rule ()

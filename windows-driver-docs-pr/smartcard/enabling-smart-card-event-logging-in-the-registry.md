@@ -7,7 +7,6 @@ keywords:
 - logs WDK smart card
 - events WDK smart card
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Smart Card Event Logging in the Registry

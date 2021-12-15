@@ -10,7 +10,6 @@ keywords:
 - SdBusSubmitRequest
 - SdBusSubmitRequestAsync
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SD Card Requests

@@ -2,7 +2,6 @@
 title: Introduction to Device Stage
 description: Introduction to Device Stage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Device Stage

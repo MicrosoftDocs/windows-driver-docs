@@ -9,7 +9,6 @@ keywords:
 - hard link operations WDK file systems
 - names WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rename and Hard Link Processing

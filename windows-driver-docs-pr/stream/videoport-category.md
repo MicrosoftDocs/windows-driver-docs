@@ -7,7 +7,6 @@ keywords:
 - video port category WDK video capture
 - PINNAME_VIDEO_VIDEOPORT
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Videoport Category

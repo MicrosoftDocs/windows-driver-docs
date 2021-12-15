@@ -4,7 +4,6 @@ description: This topic describes Task offload OIDs
 keywords:
 - Task offload OIDs, task offload NDIS OIDs, task offload OIDs WDK, task offload OIDs networking
 ms.date: 11/06/2017
-ms.localizationpriority: medium
 ---
 
 # Task offload OIDs

@@ -2,7 +2,6 @@
 title: Revise Forward Request Logic
 description: Revise Forward Request Logic
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Revise Forward Request Logic

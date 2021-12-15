@@ -14,7 +14,6 @@ keywords:
 - DirectDraw compressed textures WDK Windows 2000 display , height
 - compressed texture surfaces WDK DirectDraw , height
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

@@ -6,7 +6,6 @@ keywords:
 - states WDK video miniport
 - adapter states WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Changing State on the Adapter

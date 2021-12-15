@@ -2,7 +2,6 @@
 title: Minidriver Registration
 description: Minidriver Registration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minidriver Registration

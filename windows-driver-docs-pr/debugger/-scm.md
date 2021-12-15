@@ -1,5 +1,5 @@
 ---
-title: scm
+title: scm (WinDbg)
 description: The scm extension displays the specified shared cache map.
 keywords: ["shared cache map", "cache manager", "scm Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - scm
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !scm

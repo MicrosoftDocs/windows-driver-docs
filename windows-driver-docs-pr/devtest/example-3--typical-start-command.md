@@ -7,7 +7,6 @@ keywords:
 - -start command
 - starting trace sessions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 3: Typical Start Command

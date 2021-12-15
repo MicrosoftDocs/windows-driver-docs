@@ -4,11 +4,12 @@ description: OID_WDI_SET_FLUSH_BSS_ENTRY is sent to the device to flush the list
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_FLUSH_BSS_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_FLUSH\_BSS\_ENTRY
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_FLUSH\_BSS\_ENTRY is sent to the device to flush the list of BSS entries maintained by the adapter. This command can only be sent on the station port.

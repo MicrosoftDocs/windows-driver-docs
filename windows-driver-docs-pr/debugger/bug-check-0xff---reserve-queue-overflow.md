@@ -9,7 +9,6 @@ api_name:
 - RESERVE_QUEUE_OVERFLOW
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xFF: RESERVE\_QUEUE\_OVERFLOW

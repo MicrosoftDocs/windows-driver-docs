@@ -9,7 +9,6 @@ api_name:
 - BOUND_IMAGE_UNSUPPORTED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x97: BOUND\_IMAGE\_UNSUPPORTED

@@ -8,7 +8,6 @@ keywords:
 - test scenarios WDK WSDBIT
 - Secure Communication scenario WDK WSDBIT
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Secure Communication Scenarios

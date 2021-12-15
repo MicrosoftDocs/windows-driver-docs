@@ -6,7 +6,6 @@ keywords:
 - mutexes WDK AVStream
 - processing mutex WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing Mutex in AVStream

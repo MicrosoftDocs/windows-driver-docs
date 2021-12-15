@@ -12,7 +12,6 @@ keywords:
 - boot entries WDK
 - Bootcfg tool
 ms.date: 07/09/2018
-ms.localizationpriority: medium
 ---
 
 # Overview of Boot Options in EFI

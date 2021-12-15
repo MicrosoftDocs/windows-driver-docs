@@ -3,7 +3,6 @@ title: Debugger Engine Overview
 description: Debugger Engine Overview
 keywords: ["Debugger Engine", "Debugger Engine, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debugger Engine Overview
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 The *debugger engine* (DbgEng.dll), typically referred to as the *engine*, provides an interface for examining and manipulating debugging targets in *user mode* and *kernel mode* on Microsoft Windows.
 
-The debugger engine can acquire targets, set [breakpoints](multiprocessor-syntax.md#breakpoints), monitor [events](events.md#events), query [symbols](symbols.md#symbols), read and write to memory, and control [threads](controlling-threads-and-processes.md#threads) and [processes](controlling-threads-and-processes.md#processes) in a target.
+The debugger engine can acquire targets, set [breakpoints](multiprocessor-syntax.md#breakpoints), monitor [events](events.md), query [symbols](symbols.md), read and write to memory, and control [threads](controlling-threads-and-processes.md#threads) and [processes](controlling-threads-and-processes.md#processes) in a target.
 
 You can use the debugger engine to write both debugger extension libraries and stand-alone applications. Such applications are referred to as *debugger engine applications*. A debugger engine application that uses the full functionality of the debugger engine is called a *debugger*. For example, WinDbg, CDB, NTSD, and KD are debuggers; the debugger engine provides the core of their functionality.
 

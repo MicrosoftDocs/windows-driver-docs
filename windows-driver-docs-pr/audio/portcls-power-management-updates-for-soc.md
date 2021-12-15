@@ -2,7 +2,6 @@
 title: PortCls Power Management Updates for SoC
 description: The following topics discuss the power management updates that have been introduced in Windows 8 in the port-class driver (PortCls) to support the system-on-a-chip (SoC) platform.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PortCls Power Management Updates for SoC

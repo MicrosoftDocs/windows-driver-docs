@@ -3,7 +3,6 @@ title: Reporting Device Power Capabilities
 description: Reporting Device Power Capabilities
 keywords: ["reporting device power capabilities", "device power capabilities WDK kernel", "DEVICE_CAPABILITIES structure", "query-capabilities IRPs WDK power management", "IRPs WDK power management", "I/O request packets WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Device Power Capabilities

@@ -2,7 +2,6 @@
 title: Security Checklist for NDIS Drivers
 description: Security Checklist for NDIS Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Security Checklist for NDIS Drivers

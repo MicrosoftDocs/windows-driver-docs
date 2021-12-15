@@ -2,7 +2,6 @@
 title: Using Microsoft C Runtime with User-Mode Drivers and Desktop Apps
 description: This topic provides information about distributing the C Runtime Libraries with applications and drivers for Windows 8 and Windows 8.1.
 ms.date: 01/08/2021
-ms.localizationpriority: medium
 ---
 
 # Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps

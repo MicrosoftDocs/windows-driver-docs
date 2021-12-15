@@ -1,6 +1,6 @@
 ---
-title: KSINTERFACE\_MEDIA\_WAVE\_BUFFERED
-description: KSINTERFACE\_MEDIA\_WAVE\_BUFFERED
+title: KSINTERFACE_MEDIA_WAVE_BUFFERED
+description: The KSINTERFACE_MEDIA_WAVE_BUFFERED interface is not supported.
 keywords: ["KSINTERFACE_MEDIA_WAVE_BUFFERED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -8,38 +8,13 @@ api_name:
 - KSINTERFACE_MEDIA_WAVE_BUFFERED
 api_type:
 - NA
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/12/2021
 ---
 
-# KSINTERFACE\_MEDIA\_WAVE\_BUFFERED
+# KSINTERFACE_MEDIA_WAVE_BUFFERED
 
-
-## <span id="ddk_ksinterface_media_wave_buffered_ks"></span><span id="DDK_KSINTERFACE_MEDIA_WAVE_BUFFERED_KS"></span>
-
-
-The KSINTERFACE\_MEDIA\_WAVE\_BUFFERED interface is not supported.
+The KSINTERFACE_MEDIA_WAVE_BUFFERED interface is not supported.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Not supported.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Version:** Not supported.

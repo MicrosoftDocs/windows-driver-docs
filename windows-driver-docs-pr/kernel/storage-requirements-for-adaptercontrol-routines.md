@@ -3,7 +3,6 @@ title: Storage Requirements for AdapterControl Routines
 description: Storage Requirements for AdapterControl Routines
 keywords: ["AdapterControl routines, storage", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines", "storage WDK DMA"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Storage Requirements for AdapterControl Routines

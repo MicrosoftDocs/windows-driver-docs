@@ -9,7 +9,6 @@ keywords:
 - CCD APIs WDK Windows 7 display , example code
 - CCD APIs WDK Windows Server 2008 R2 display , example code
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CCD example pseudocode

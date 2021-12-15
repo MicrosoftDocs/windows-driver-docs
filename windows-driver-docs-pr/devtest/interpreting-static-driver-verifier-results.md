@@ -10,7 +10,6 @@ keywords:
 - SDV WDK , verification results
 - verification results WDK Static Driver Verifier
 ms.date: 04/02/2018
-ms.localizationpriority: medium
 ---
 
 # Interpreting Static Driver Verifier Results

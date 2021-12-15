@@ -2,7 +2,6 @@
 title: Calculating Graphics Memory
 description: Calculating Graphics Memory
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calculating Graphics Memory

@@ -1,5 +1,5 @@
 ---
-title: vprot
+title: vprot (WinDbg)
 description: The vprot extension displays virtual memory protection information.
 keywords: ["memory, memory protection", "vprot Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - vprot
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vprot

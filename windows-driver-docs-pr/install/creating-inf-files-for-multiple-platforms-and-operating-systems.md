@@ -7,7 +7,6 @@ keywords:
 - cross-platform INF files WDK
 - operating systems WDK , cross-operating system INF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating INF Files for Multiple Platforms and Operating Systems

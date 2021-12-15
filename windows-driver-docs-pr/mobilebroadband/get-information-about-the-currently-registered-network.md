@@ -2,7 +2,6 @@
 title: Get information about the currently registered network
 description: Get information about the currently registered network
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Get information about the currently registered network

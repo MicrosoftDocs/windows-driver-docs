@@ -4,7 +4,6 @@ description: The NDIS_STATUS_WAN_CO_FRAGMENT status indicates that a CoNDIS WAN 
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WAN_CO_FRAGMENT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WAN\_CO\_FRAGMENT

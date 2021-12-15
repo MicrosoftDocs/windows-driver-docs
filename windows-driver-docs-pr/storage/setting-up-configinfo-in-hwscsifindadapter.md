@@ -6,7 +6,6 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter
 - ConfigInfo
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Setting up ConfigInfo in HwScsiFindAdapter

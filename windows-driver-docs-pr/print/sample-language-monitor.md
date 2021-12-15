@@ -4,7 +4,6 @@ description: Sample Language Monitor
 keywords:
 - language monitors WDK print , samples
 ms.date: 06/17/2020
-ms.localizationpriority: medium
 ---
 
 # Sample Language Monitor

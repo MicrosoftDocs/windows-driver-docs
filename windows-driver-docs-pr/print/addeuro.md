@@ -1,21 +1,16 @@
 ---
-title: AddEuro
-description: AddEuro
+title: AddEuro feature
+description: The AddEuro feature adds this symbol to the printer's device font.
 keywords:
 - minidrivers WDK Pscript , AddEuro feature
 - AddEuro feature WDK print
 - Euro symbol WDK print
 - European Union symbol WDK print
 - ADHasEuro
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 09/02/2021
 ---
 
-# AddEuro
-
-
-
-
+# AddEuro feature
 
 The Euro symbol, as shown in the following figure, is the currency symbol for the basic monetary unit used in countries/regions of the European Union.
 
@@ -25,37 +20,9 @@ The AddEuro feature adds this symbol to the printer's device font. When AddEuro 
 
 AddEuro uses a private *PPD* keyword, \***ADHasEuro**, to allow printer manufacturers to set the best defaults.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Keyword and Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em><strong>ADHasEuro</strong>: True</p></td>
-<td><p>The printer already has a built-in Euro symbol that does not need to be downloaded. With this value, AddEuro is disabled by default.</p></td>
-</tr>
-<tr class="even">
-<td><p></em><strong>ADHasEuro</strong>: False</p></td>
-<td><p>The printer does not have a built-in Euro symbol; if called for by an application, this symbol should be downloaded. With this value, AddEuro is enabled by default, regardless of PostScript version.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Keyword and Value | Meaning |
+|--|--|
+| **ADHasEuro**: True | The printer already has a built-in Euro symbol that does not need to be downloaded. With this value, AddEuro is disabled by default. |
+| **ADHasEuro**: False | The printer does not have a built-in Euro symbol; if called for by an application, this symbol should be downloaded. With this value, AddEuro is enabled by default, regardless of PostScript version. |
 
 If the \***ADHasEuro** keyword does not appear, the AddEuro feature is enabled by default for printers with PostScript versions before 3011, and disabled by default for versions 3011 or after.
-
- 
-
- 
-
-
-
-

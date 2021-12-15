@@ -1,8 +1,7 @@
 ---
-title: C28715
+title: C28715 warning
 description: Warning C28715 Cast between semantically different integer types.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28715"
 ---

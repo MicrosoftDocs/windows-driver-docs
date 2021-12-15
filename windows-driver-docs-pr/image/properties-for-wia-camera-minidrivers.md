@@ -2,7 +2,6 @@
 title: Properties for WIA Camera Minidrivers
 description: Properties for WIA Camera Minidrivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Properties for WIA Camera Minidrivers

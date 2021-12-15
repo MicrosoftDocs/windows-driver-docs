@@ -9,7 +9,6 @@ api_name:
 - rpcexts.getdbgcell
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.getdbgcell

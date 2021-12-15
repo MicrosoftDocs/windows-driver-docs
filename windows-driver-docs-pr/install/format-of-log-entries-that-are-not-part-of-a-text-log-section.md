@@ -5,7 +5,6 @@ keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , entries not part of section
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Format of Log Entries That Are Not Part of a Text Log Section

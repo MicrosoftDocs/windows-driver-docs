@@ -1,7 +1,6 @@
 ---
 title: MSFC\_DH\_Chap\_Parameters WMI Class
 description: MSFC\_DH\_Chap\_Parameters WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -2,7 +2,6 @@
 title: Color Management for Still Image Devices
 description: Color Management for Still Image Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Color Management for Still Image Devices

@@ -7,7 +7,6 @@ keywords:
 - KSMETHODSETID_BdaDeviceConfiguration
 - filter configuration WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring a BDA Filter

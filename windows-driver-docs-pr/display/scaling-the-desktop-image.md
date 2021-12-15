@@ -11,7 +11,6 @@ keywords:
 - scaling the desktop image WDK Windows 7 display
 - scaling the desktop image WDK Windows Server 2008 R2 display
 ms.date: 03/31/2021
-ms.localizationpriority: medium
 ---
 
 # Scaling the desktop image

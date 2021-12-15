@@ -9,7 +9,6 @@ api_name:
 - MarkDevicePower
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkDevicePower rule (wdm)

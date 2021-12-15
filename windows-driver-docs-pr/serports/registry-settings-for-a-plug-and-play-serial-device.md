@@ -6,7 +6,6 @@ keywords:
 - Plug and Play serial devices WDK
 - serial devices WDK , Plug and Play
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Settings for a Plug and Play Serial Device

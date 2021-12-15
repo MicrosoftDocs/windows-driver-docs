@@ -4,10 +4,11 @@ description: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB is a TLV that contains info
 ms.date: 06/15/2018
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB is a TLV that contains information about a device service received from the IHV driver. This TLV is used in the [NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT](ndis-status-wdi-indication-device-service-event.md) status indication.
 

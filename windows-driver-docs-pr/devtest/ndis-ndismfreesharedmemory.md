@@ -9,7 +9,6 @@ api_name:
 - NdisMFreeSharedMemory
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisMFreeSharedMemory rule (ndis)

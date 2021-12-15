@@ -2,7 +2,6 @@
 title: GPIO-Based Interrupt Resources
 description: Drivers for peripheral devices that send interrupts to general-purpose I/O (GPIO) pins acquire GPIO interrupts as abstract Windows interrupt resources.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GPIO-Based Interrupt Resources

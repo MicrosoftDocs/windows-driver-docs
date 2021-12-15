@@ -3,7 +3,6 @@ title: View Options
 description: View Options
 keywords: ["View Options"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Options

@@ -1,5 +1,5 @@
 ---
-title: tz
+title: tz (WinDbg)
 description: The tz extension displays the specified power thermal zone structure.
 keywords: ["thermal zone", "tz Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - tz
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !tz

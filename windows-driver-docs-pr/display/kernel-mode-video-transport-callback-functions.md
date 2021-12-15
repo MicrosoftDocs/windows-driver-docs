@@ -6,7 +6,6 @@ keywords:
 - kernel-mode video transport WDK DirectDraw , callback functions
 - callback functions WDK kernel-mode video transport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Kernel-Mode Video Transport Callback Functions

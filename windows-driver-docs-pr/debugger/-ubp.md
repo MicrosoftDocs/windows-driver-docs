@@ -1,5 +1,5 @@
 ---
-title: ubp
+title: ubp (WinDbg)
 description: The ubp extension sets a breakpoint in user space.
 keywords: ["ubp Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ubp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ubp

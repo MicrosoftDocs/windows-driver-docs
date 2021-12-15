@@ -2,7 +2,6 @@
 title: Specifying a sensor icon
 description: Specifying a sensor icon
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying a sensor icon

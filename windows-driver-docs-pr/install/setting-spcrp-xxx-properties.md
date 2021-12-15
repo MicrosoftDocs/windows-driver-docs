@@ -2,7 +2,6 @@
 title: Setting SPCRP_Xxx Properties
 description: Setting SPCRP_Xxx Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting SPCRP_Xxx Properties

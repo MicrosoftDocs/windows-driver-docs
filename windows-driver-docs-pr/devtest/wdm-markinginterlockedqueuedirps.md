@@ -9,7 +9,6 @@ api_name:
 - MarkingInterlockedQueuedIrps
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkingInterlockedQueuedIrps rule (wdm)

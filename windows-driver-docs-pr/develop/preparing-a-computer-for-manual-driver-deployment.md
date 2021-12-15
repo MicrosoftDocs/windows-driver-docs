@@ -2,7 +2,6 @@
 title: Preparing a Computer for Manual Driver Deployment
 description: Describes how to prepare the target computer before deploying a driver manually.
 ms.date: 06/04/2018
-ms.localizationpriority: medium
 ---
 
 # Preparing a Computer for Manual Driver Deployment

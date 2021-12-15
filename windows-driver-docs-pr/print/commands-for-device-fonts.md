@@ -5,7 +5,6 @@ keywords:
 - device fonts WDK Unidrv
 - font commands WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Commands for Device Fonts

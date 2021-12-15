@@ -9,7 +9,6 @@ api_name:
 - rpcexts.getclientcallinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.getclientcallinfo

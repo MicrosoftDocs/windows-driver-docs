@@ -6,7 +6,6 @@ keywords:
 - Video Acceleration WDK DirectX , about DirectX Video Acceleration
 - VA WDK DirectX , about DirectX Video Acceleration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to DirectX VA

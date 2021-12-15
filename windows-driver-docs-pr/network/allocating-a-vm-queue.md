@@ -2,7 +2,6 @@
 title: Allocating a VM Queue
 description: Allocating a VM Queue
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating a VM Queue

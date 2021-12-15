@@ -3,7 +3,6 @@ title: Handling IRPs
 description: Handling IRPs
 keywords: ["kernel-mode drivers WDK , IRPs", "IRPs WDK kernel", "I/O request packets WDK kernel See IRPs WDK kernel", "IRP WDK See IRPs WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling IRPs

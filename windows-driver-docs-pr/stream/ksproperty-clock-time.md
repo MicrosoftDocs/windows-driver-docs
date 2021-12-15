@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CLOCK\_TIME
-description: Clients use the KSPROPERTY\_CLOCK\_TIME property to determine the current presentation time on a clock.
+title: KSPROPERTY_CLOCK_TIME
+description: Clients use the KSPROPERTY_CLOCK_TIME property to determine the current presentation time on a clock.
 keywords: ["KSPROPERTY_CLOCK_TIME Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,49 +10,18 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/18/2021
 ---
 
-# KSPROPERTY\_CLOCK\_TIME
+# KSPROPERTY_CLOCK_TIME
 
+Clients use the **KSPROPERTY_CLOCK_TIME** property to determine the current presentation time on a clock.
 
-Clients use the KSPROPERTY\_CLOCK\_TIME property to determine the current presentation time on a clock.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_clock_time_ks"></span><span id="DDK_KSPROPERTY_CLOCK_TIME_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property Descriptor Type</th>
-<th>Property Value Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p>LONGLONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property Descriptor Type | Property Value Type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | LONGLONG |
 
 ## Remarks
 
@@ -60,24 +29,12 @@ This property returns a value of type LONGLONG, specifying the current presentat
 
 The presentation time of a clock can be reversed, unlike the physical time. The presentation time of a clock typically represents a timestamp on an underlying data stream. For example, a clock for a DVD player can report the timestamp of the current position in the DVD as its presentation time.
 
-Clocks are not required to support a 100-nanosecond resolution. To determine the clock resolution, clients can use the [**KSPROPERTY\_CLOCK\_RESOLUTION**](ksproperty-clock-resolution.md) request.
+Clocks are not required to support a 100-nanosecond resolution. To determine the clock resolution, clients can use the [**KSPROPERTY_CLOCK_RESOLUTION**](ksproperty-clock-resolution.md) request.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ks.h (include Ks.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ks.h (include Ks.h)
 
 ## See also
 
-
-[KSPROPSETID\_Clock](kspropsetid-clock.md)
+[KSPROPSETID_Clock](kspropsetid-clock.md)

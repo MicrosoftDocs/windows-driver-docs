@@ -2,7 +2,6 @@
 title: Default rule set (KMDF)
 description: Learn about the default rule set (KMDF) that specifies the recommended sets of rules to use when you analyze your driver.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # Default rule set (KMDF)

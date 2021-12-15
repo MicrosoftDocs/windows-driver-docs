@@ -2,7 +2,6 @@
 title: Address and Address Range Syntax
 description: Address and Address Range Syntax
 ms.date: 05/28/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q4
 ---
 

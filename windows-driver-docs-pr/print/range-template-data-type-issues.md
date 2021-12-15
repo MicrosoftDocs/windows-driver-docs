@@ -6,7 +6,6 @@ keywords:
 - range data type WDK GDL
 - ArraySize directive wDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Range Template Data Type Issues

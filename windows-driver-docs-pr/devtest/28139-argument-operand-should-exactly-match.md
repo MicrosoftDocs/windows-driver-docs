@@ -1,11 +1,10 @@
 ---
-title: C28139
+title: C28139 warning
 description: Warning C28139 The argument should exactly match the type.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28139"
 ---

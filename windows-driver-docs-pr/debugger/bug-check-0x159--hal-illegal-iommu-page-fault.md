@@ -9,7 +9,6 @@ api_name:
 - HAL_ILLEGAL_IOMMU_PAGE_FAULT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x159: HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT

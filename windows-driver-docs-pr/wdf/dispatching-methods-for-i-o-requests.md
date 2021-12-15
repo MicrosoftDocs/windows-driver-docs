@@ -11,7 +11,6 @@ keywords:
 - asynchronous dispatching WDK KMDF
 - manual dispatching WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dispatching Methods for I/O Requests

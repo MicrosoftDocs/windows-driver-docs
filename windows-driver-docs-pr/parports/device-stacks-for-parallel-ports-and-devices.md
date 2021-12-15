@@ -6,7 +6,6 @@ keywords:
 - device stacks WDK parallel drivers
 - parallel devices WDK , device stacks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Stacks for Parallel Ports and Devices

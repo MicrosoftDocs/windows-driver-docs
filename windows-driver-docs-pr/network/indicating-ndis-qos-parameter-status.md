@@ -2,7 +2,6 @@
 title: Indicating NDIS QoS Parameter Status
 description: Indicating NDIS QoS Parameter Status
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Indicating NDIS QoS Parameter Status

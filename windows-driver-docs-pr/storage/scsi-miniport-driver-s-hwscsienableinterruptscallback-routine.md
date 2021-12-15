@@ -6,7 +6,6 @@ keywords:
 - HwScsiEnableInterruptsCallback
 - interrupts WDK SCSI
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's HwScsiEnableInterruptsCallback Routine

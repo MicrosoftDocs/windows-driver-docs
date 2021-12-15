@@ -4,7 +4,6 @@ description: SO_WSK_EVENT_CALLBACK
 ms.date: 07/18/2017
 keywords:
  - SO_WSK_EVENT_CALLBACK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SO\_WSK\_EVENT\_CALLBACK

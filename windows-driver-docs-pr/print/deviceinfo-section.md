@@ -2,7 +2,6 @@
 title: DeviceInfo Section
 description: DeviceInfo Section
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DeviceInfo Section

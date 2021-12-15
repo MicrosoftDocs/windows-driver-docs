@@ -9,7 +9,6 @@ api_name:
 - SYSTEM_SERVICE_EXCEPTION
 api_type:
 - NA
-ms.localizationpriority: high 
 ---
 
 # Bug Check 0x3B: SYSTEM\_SERVICE\_EXCEPTION

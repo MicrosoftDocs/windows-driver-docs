@@ -11,7 +11,6 @@ keywords:
 - filter-centric filters WDK AVStream
 - pin-centric filters WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AVStream Dispatch Tables

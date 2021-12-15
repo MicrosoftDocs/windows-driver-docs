@@ -11,7 +11,6 @@ keywords:
 - Windows Vista SP1 WDK WHEA
 - Windows Vista SP1 WDK WHEA , WHEA changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WHEA Changes for Windows Server 2008 and Windows Vista SP1

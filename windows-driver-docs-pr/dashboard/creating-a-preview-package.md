@@ -3,7 +3,6 @@ title: Creating a Preview Package
 description: Creating a Preview Package
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Preview Package

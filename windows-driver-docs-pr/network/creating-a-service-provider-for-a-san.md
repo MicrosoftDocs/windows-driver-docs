@@ -5,7 +5,6 @@ keywords:
 - Windows Sockets Direct WDK , service providers
 - SAN service providers WDK , creating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Service Provider for a SAN

@@ -2,7 +2,6 @@
 title: Importing Certificates from a Windows Certificate Store
 description: Importing Certificates from a Windows Certificate Store
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Importing Certificates from a Windows Certificate Store

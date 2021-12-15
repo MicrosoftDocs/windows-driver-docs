@@ -2,7 +2,6 @@
 title: General WIA Utility Functions
 description: General WIA Utility Functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General WIA Utility Functions

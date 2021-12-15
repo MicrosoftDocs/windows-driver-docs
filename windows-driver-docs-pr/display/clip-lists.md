@@ -10,7 +10,6 @@ keywords:
 - clip lists WDK DirectDraw
 - clipped blts WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Clip Lists

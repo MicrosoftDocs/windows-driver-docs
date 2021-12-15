@@ -1,5 +1,5 @@
 ---
-title: memusage
+title: memusage (WinDbg)
 description: The memusage extension displays summary statistics about physical memory use.
 keywords: ["memusage Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - memusage
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !memusage

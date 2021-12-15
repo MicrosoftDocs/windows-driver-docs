@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CONNECTION\_STATE
-description: The KSPROPERTY\_CONNECTION\_STATE property sets the current run state of the pin.
+title: KSPROPERTY_CONNECTION_STATE
+description: The KSPROPERTY_CONNECTION_STATE property sets the current run state of the pin.
 keywords: ["KSPROPERTY_CONNECTION_STATE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,105 +10,36 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/18/2021
 ---
 
-# KSPROPERTY\_CONNECTION\_STATE
+# KSPROPERTY_CONNECTION_STATE
 
+The **KSPROPERTY_CONNECTION_STATE** property sets the current run state of the pin.
 
-The KSPROPERTY\_CONNECTION\_STATE property sets the current run state of the pin.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_connection_state_ks"></span><span id="DDK_KSPROPERTY_CONNECTION_STATE_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property Descriptor Type</th>
-<th>Property Value Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter or Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate" data-raw-source="[&lt;strong&gt;KSSTATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate)"><strong>KSSTATE</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property Descriptor Type | Property Value Type |
+|--|--|--|--|--|
+| No | Yes | Filter or Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSSTATE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate) |
 
 ## Remarks
 
 This property returns one of the following values:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>KSSTATE_STOP</p></td>
-<td><p>The initial state of a pin. No data is actually being read or written. In this state, the pin uses the least amount of resources possible.</p></td>
-</tr>
-<tr class="even">
-<td><p>KSSTATE_ACQUIRE</p></td>
-<td><p>The pin is acquiring the resources necessary to read or write data.</p></td>
-</tr>
-<tr class="odd">
-<td><p>KSSTATE_PAUSE</p></td>
-<td><p>The pin is ready to read or write data, but data transfer is temporarily paused.</p></td>
-</tr>
-<tr class="even">
-<td><p>KSSTATE_RUN</p></td>
-<td><p>The state from which the pin can actually read or write data.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Description |
+|--|--|
+| KSSTATE_STOP | The initial state of a pin. No data is actually being read or written. In this state, the pin uses the least amount of resources possible. |
+| KSSTATE_ACQUIRE | The pin is acquiring the resources necessary to read or write data. |
+| KSSTATE_PAUSE | The pin is ready to read or write data, but data transfer is temporarily paused. |
+| KSSTATE_RUN | The state from which the pin can actually read or write data. |
 
- 
-
-The pin only reads or writes data in the **KSSTATE\_RUN** state. Both individual pins and the KS filter as a whole may support this property.
+The pin only reads or writes data in the **KSSTATE_RUN** state. Both individual pins and the KS filter as a whole may support this property.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ks.h (include Ks.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ks.h (include Ks.h)
 
 ## See also
-
 
 [**KSSTATE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate)

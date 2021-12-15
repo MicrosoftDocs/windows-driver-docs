@@ -3,7 +3,6 @@ title: Enable bad handles detection
 description: Enable bad handles detection
 keywords: ["Enable bad handles detection (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable bad handles detection

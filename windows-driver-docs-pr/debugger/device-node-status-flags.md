@@ -3,7 +3,6 @@ title: Device Node Status Flags
 description: Device Node Status Flags
 keywords: ["Plug and Play (PnP), Device Node Status Flags", "Device Node Status Flags", "DNF_XXX"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Device Node Status Flags

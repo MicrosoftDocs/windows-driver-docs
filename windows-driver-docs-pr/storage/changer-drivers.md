@@ -11,7 +11,6 @@ keywords:
 - autochangers WDK storage
 - jukebox WDK storage
 ms.date: 12/15/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to Changer Drivers

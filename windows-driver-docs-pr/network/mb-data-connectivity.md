@@ -2,7 +2,6 @@
 title: MB Data Connectivity
 description: MB Data Connectivity
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Data Connectivity

@@ -2,7 +2,6 @@
 title: User-initiated feedback with IHV trace logging overview
 description: This topics in this section outline the steps required for collecting verbose IHV trace logs during user-initiated feedback (UIF) reports submitted via the Feedback tool.
 ms.date: 06/15/2018
-ms.localizationpriority: medium
 ---
 
 # User-initiated feedback with IHV trace logging overview

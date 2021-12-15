@@ -2,7 +2,6 @@
 title: Device Metadata Package Structure
 description: Device Metadata Package Structure
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Metadata Package Structure

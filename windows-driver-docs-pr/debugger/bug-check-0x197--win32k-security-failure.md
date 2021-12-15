@@ -9,7 +9,6 @@ api_name:
 - WIN32K_SECURITY_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x197: WIN32K\_SECURITY\_FAILURE

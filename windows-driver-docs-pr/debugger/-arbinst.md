@@ -1,5 +1,5 @@
 ---
-title: arbinst
+title: arbinst (WinDbg)
 description: The arbinst extension displays information about a specified arbiter.
 keywords: ["arbiter", "arbinst Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - arbinst
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !arbinst

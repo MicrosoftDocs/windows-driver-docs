@@ -2,7 +2,6 @@
 title: Basic Scanning for Flatbed Scanners
 description: Basic Scanning for Flatbed Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Basic Scanning for Flatbed Scanners

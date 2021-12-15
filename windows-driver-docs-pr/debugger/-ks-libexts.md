@@ -9,7 +9,6 @@ api_name:
 - ks.libexts
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.libexts

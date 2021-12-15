@@ -11,7 +11,6 @@ keywords:
 - configuration sets WDK DirectX VA
 - DXVA_ConfigPictureDecode
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minimal Interoperability Configuration Sets

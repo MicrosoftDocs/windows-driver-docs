@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/04/2018
-ms.localizationpriority: medium
 ---
 
 # SENSOR\_CATEGORY\_ENVIRONMENTAL

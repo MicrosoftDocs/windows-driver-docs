@@ -2,7 +2,6 @@
 title: Locking rule set (KMDF)
 description: Learn about using rules (KMDF) to verify that your driver correctly manages shared resources, and how to select the Locking rule set.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # Locking rule set (KMDF)

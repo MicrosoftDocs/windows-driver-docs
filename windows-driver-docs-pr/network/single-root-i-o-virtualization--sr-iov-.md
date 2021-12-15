@@ -2,7 +2,6 @@
 title: Introduction to Single Root I/O Virtualization (SR-IOV)
 description: Introduction to Single Root I/O Virtualization (SR-IOV)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Single Root I/O Virtualization (SR-IOV)
@@ -24,7 +23,7 @@ This section includes the following topics:
 
 [SR-IOV OIDs](sr-iov-oids.md)
 
-For more information on SR-IOV, refer to the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](https://go.microsoft.com/fwlink/p/?linkid=221742) specification.
+For more information on SR-IOV, refer to the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](https://pcisig.com/specifications/iov/single_root) specification.
 
  
 

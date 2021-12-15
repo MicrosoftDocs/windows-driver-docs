@@ -4,7 +4,6 @@ description: The ACPI_ENUM_CHILD_NEXT macro calculates a pointer to the next ACP
 keywords: 
 - ACPI_ENUM_CHILD_NEXT macro ACPI Devices
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # ACPI_ENUM_CHILD_NEXT macro

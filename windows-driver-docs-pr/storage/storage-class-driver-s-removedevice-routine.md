@@ -5,7 +5,6 @@ keywords:
 - RemoveDevice
 - query-remove requests WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's RemoveDevice Routine

@@ -4,7 +4,6 @@ description: This topic describes the OID_CO_TAPI_GET_CALL_DIAGNOSTICS object id
 keywords:
 - OID_CO_TAPI_GET_CALL_DIAGNOSTICS
 ms.date: 11/03/2017
-ms.localizationpriority: medium
 ---
 
 # OID_CO_TAPI_GET_CALL_DIAGNOSTICS

@@ -3,7 +3,6 @@ title: PPM power control codes
 description: The power control codes described in this topic are used by platform extension plug-ins (PEPs). 
 keywords: [PPM power control codes]
 ms.date: 01/17/2018
-ms.localizationpriority: medium
 ---
 
 # PPM power control codes

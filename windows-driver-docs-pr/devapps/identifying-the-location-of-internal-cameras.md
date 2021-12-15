@@ -2,7 +2,6 @@
 title: Identifying the location of internal cameras
 description: This topic provides info about supporting internal cameras on systems in Windows 8.1.
 ms.date: 08/12/2021
-ms.localizationpriority: medium
 ---
 
 # Identifying the location of internal cameras (UWP device apps)

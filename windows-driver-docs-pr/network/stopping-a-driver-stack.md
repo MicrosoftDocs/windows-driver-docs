@@ -5,7 +5,6 @@ keywords:
 - driver stacks WDK networking , stopping
 - stopping driver stacks WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stopping a Driver Stack

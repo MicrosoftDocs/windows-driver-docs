@@ -4,7 +4,6 @@ description: Alpha-Blend Data Loading Set
 keywords:
 - alpha-blend data loading set WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Alpha-Blend Data Loading Set

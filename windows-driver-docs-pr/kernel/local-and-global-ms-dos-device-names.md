@@ -3,7 +3,6 @@ title: Local and Global MS-DOS Device Names
 description: Local and Global MS-DOS Device Names
 keywords: ["MS-DOS device names WDK kernel", "local MS-DOS device names WDK kernel", "global MS-DOS device names WDK kernel", "DosDevices contexts WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Local and Global MS-DOS Device Names

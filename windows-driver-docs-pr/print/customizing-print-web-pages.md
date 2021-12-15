@@ -7,7 +7,6 @@ keywords:
 - Web pages WDK printer , customizing
 - customized print Web pages WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customizing Print Web Pages

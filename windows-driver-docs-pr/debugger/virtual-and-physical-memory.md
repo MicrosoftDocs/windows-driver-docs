@@ -3,7 +3,6 @@ title: Virtual and Physical Memory
 description: Virtual and Physical Memory
 keywords: ["memory access, virtual and physical memory", "virtual memory access", "physical memory access"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual and Physical Memory

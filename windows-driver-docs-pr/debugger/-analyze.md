@@ -1,5 +1,5 @@
 ---
-title: analyze
+title: analyze (WinDbg)
 description: The analyze extension displays information about the current exception or bug check.
 keywords: ["analyze Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - analyze
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !analyze

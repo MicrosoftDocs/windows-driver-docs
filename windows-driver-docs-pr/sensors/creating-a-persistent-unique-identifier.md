@@ -2,7 +2,6 @@
 title: Creating a persistent unique identifier for a sensor (previous version)
 description: Creating a persistent unique identifier for a sensor (previous version)
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Creating a persistent unique identifier for a sensor (previous version)

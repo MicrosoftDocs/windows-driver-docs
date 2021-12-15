@@ -8,7 +8,6 @@ keywords:
 - URBs WDK KMDF
 - USB I/O targets WDK KMDF , about USB I/O targets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB I/O Targets

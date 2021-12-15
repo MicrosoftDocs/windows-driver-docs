@@ -1,5 +1,5 @@
 ---
-title: running
+title: running (WinDbg)
 description: The running extension displays a list of running threads on all processors of the target computer.
 keywords: ["running Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - running
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !running

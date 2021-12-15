@@ -6,7 +6,6 @@ keywords:
 - driver-managed resources WDK Direct3D
 - manageable resources WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver-Managed Resources

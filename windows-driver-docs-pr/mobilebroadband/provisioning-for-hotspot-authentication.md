@@ -2,7 +2,6 @@
 title: Provisioning for hotspot authentication
 description: Provisioning for hotspot authentication
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Provisioning for hotspot authentication

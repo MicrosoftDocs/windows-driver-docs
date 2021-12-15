@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - RN52 - Audio-capable peripheral radios
 description: Bluetooth Test Platform (BTP) supported hardware (RN52).
 ms.date: 06/09/2021
-ms.localizationpriority: medium
 ---
 
 # RN52 device

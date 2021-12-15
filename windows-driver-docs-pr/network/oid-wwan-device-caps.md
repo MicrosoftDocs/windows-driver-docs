@@ -4,7 +4,6 @@ description: OID_WWAN_DEVICE_CAPS returns the capabilities of the MB device, inc
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_CAPS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DEVICE\_CAPS

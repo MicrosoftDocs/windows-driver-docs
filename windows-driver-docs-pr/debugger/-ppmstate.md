@@ -1,5 +1,5 @@
 ---
-title: ppmstate
+title: ppmstate (WinDbg)
 description: The ppmstate command
 keywords: ["ppmstate Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ppmstate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ppmstate

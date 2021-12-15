@@ -1,5 +1,5 @@
 ---
-title: irpfind
+title: irpfind (WinDbg)
 description: The irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria.
 keywords: ["irpfind Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - irpfind
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !irpfind

@@ -2,7 +2,6 @@
 title: Device-Specific Contexts
 description: Device-Specific Contexts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device-Specific Contexts

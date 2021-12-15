@@ -4,7 +4,6 @@ description: An overlying driver issues an object identifier (OID) set request o
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_SET_VF_POWER_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_SET\_VF\_POWER\_STATE

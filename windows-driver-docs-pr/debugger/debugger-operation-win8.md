@@ -2,7 +2,6 @@
 title: Debugger Operation
 description: This section covers debugger operation
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugger Operation

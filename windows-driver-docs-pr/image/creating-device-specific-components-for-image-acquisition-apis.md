@@ -2,7 +2,6 @@
 title: Creating Device-Specific Components for Image Acquisition APIs
 description: Creating Device-Specific Components for Image Acquisition APIs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Device-Specific Components for Image Acquisition APIs

@@ -7,7 +7,6 @@ keywords:
 - serial devices WDK , registry settings
 - serial devices WDK , Serenum driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Settings for Serenum

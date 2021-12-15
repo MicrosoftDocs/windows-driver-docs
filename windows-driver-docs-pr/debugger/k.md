@@ -2,7 +2,6 @@
 title: K (Windows Debugger Glossary)
 description: Glossary page - K
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # K

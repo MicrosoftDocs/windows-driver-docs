@@ -11,7 +11,6 @@ keywords:
 - KS WDK , about kernel streaming
 - minidrivers WDK kernel streaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Kernel Streaming

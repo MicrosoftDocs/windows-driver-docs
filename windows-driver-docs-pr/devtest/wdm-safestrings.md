@@ -9,7 +9,6 @@ api_name:
 - SafeStrings
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SafeStrings rule (wdm)

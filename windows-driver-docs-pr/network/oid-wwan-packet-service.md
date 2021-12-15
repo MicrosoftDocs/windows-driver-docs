@@ -4,7 +4,6 @@ description: OID_WWAN_PACKET_SERVICE is used to instruct miniport drivers to per
 ms.date: 04/04/2019
 keywords: 
  -OID_WWAN_PACKET_SERVICE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

@@ -5,7 +5,6 @@ keywords:
 - intermediate drivers WDK networking , receive operations
 - NDIS intermediate drivers WDK , receive operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Indicating Receive Network Data to Higher Level Drivers

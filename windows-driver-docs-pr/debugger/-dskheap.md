@@ -1,5 +1,5 @@
 ---
-title: dskheap
+title: dskheap (WinDbg)
 description: The dskheap extension displays desktop heap information for a specified session.
 keywords: ["desktops", "dskheap Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - dskheap
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dskheap

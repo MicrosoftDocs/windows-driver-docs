@@ -2,7 +2,6 @@
 title: Querying the PCI Configuration Space for a Virtual Function
 description: Querying the PCI Configuration Space for a Virtual Function
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying the PCI Configuration Space for a Virtual Function
@@ -15,7 +14,7 @@ An overlying driver that runs in the management operating system issues an objec
 
 For example, the virtualization stack that runs in the management operating system issues the OID method request of [OID\_SRIOV\_READ\_VF\_CONFIG\_SPACE](./oid-sriov-read-vf-config-space.md) when the VF miniport driver calls [**NdisMGetBusData**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetbusdata) to read from its VF PCIe configuration space.
 
-Before it issues this OID method request, the overlying driver must set the members of the[**NDIS\_SRIOV\_READ\_VF\_CONFIG\_SPACE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_read_vf_config_space_parameters) structure in the following way:
+Before it issues this OID method request, the overlying driver must set the members of the [**NDIS\_SRIOV\_READ\_VF\_CONFIG\_SPACE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_read_vf_config_space_parameters) structure in the following way:
 
 -   The **VFId** member must be set to the identifier of the VF from which the information is to be read.
 
@@ -32,7 +31,7 @@ When it handles the OID method request of [OID\_SRIOV\_READ\_VF\_CONFIG\_SPACE](
 -   The miniport driver must verify that the buffer (referenced by the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure) is large enough to return the requested PCIe configuration space data. If this is not true, the driver must fail the OID request.
 -   The miniport driver typically calls [**NdisMGetVirtualFunctionBusData**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetvirtualfunctionbusdata) to query the requested PCIe configuration space. However, the miniport driver can also return PCIe configuration space data for the VF that the driver has cached from previous read or write operations of the PCIe configuration space.
 
-    **Note**  If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV [driver package](../install/driver-packages.md), its miniport driver must not call [**NdisMGetVirtualFunctionBusData**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetvirtualfunctionbusdata). Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call [*ReadVfConfigBlock*](/previous-versions/windows/hardware/drivers/hh439637(v=vs.85)). This function is exposed from the [GUID\_VPCI\_INTERFACE\_STANDARD](https://msdn.microsoft.com/library/windows/hardware/hh451146) interface that is supported by the underlying virtual PCI (VPCI) bus driver.
+    **Note**  If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV [driver package](../install/driver-packages.md), its miniport driver must not call [**NdisMGetVirtualFunctionBusData**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetvirtualfunctionbusdata). Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call [*ReadVfConfigBlock*](/previous-versions/windows/hardware/drivers/hh439637(v=vs.85)). This function is exposed from the [GUID\_VPCI\_INTERFACE\_STANDARD](/previous-versions/windows/hardware/drivers/hh451580(v=vs.85)) interface that is supported by the underlying virtual PCI (VPCI) bus driver.
 
      
 

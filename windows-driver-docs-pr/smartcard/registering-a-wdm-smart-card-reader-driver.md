@@ -7,7 +7,6 @@ keywords:
 - WDM device registering WDK smart card
 - registering smart card drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering a WDM Smart Card Reader Driver

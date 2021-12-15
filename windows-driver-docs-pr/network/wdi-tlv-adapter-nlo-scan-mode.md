@@ -4,10 +4,11 @@ description: WDI_TLV_ADAPTER_NLO_SCAN_MODE is a TLV that indicates whether scans
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADAPTER_NLO_SCAN_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ADAPTER\_NLO\_SCAN\_MODE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_ADAPTER\_NLO\_SCAN\_MODE is a TLV that indicates whether scans should be performed in active or passive mode.

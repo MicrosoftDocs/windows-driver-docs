@@ -2,7 +2,6 @@
 title: How do I send trace messages to a kernel debugger
 description: How do I send trace messages to a kernel debugger
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I send trace messages to a kernel debugger?

@@ -5,7 +5,6 @@ keywords:
 - header-data split WDK , receive indications
 - received data formats WDK header-data split
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receive Indications with Header-Data Split

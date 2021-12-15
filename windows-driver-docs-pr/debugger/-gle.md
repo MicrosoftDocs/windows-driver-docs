@@ -1,5 +1,5 @@
 ---
-title: gle
+title: gle (WinDbg)
 description: The gle extension displays the last error value for the current thread.
 keywords: ["thread, error value", "error value", "gle Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - gle
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !gle

@@ -1,5 +1,5 @@
 ---
-title: .block
+title: .block (WinDbg)
 description: The .block token performs no action; it is used solely to introduce a block of statements.
 keywords: [".block Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .block
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .block

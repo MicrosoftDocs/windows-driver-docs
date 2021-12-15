@@ -3,7 +3,6 @@ title: Synchronization and Threaded DPCs
 description: To synchronize access to a memory location that is accessed from both inside and outside a CustomThreadedDpc routine, a driver can use ordinary spin locks or queued spin locks.
 keywords: ["threaded DPCs WDK kernel", "synchronization WDK kernel , interrupts", "queued spin locks WDK kernel"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Synchronization and Threaded DPCs

@@ -7,7 +7,6 @@ keywords:
 - remote file systems WDK
 - file system drivers WDK , remote file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Components of a Remote File System

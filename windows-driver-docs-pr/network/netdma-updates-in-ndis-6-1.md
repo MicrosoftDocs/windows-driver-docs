@@ -4,7 +4,6 @@ description: NetDMA Updates in NDIS 6.1
 keywords:
 - NetDMA WDK networking , about NetDMA interface
 ms.date: 01/09/2019
-ms.localizationpriority: medium
 ---
 
 # NetDMA Updates in NDIS 6.1

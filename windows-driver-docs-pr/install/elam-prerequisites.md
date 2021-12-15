@@ -2,7 +2,6 @@
 title: ELAM Prerequisites
 description: Early Launch Antimalware drivers must adhere to the following program requirements to be signed by WHQL and loaded by Windows.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ELAM Prerequisites

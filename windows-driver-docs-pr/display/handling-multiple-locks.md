@@ -2,7 +2,6 @@
 title: Handling Multiple Locks
 description: Handling Multiple Locks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Multiple Locks

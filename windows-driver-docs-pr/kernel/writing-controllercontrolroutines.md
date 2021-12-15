@@ -3,7 +3,6 @@ title: Writing ControllerControl Routines
 description: Drivers that use a controller object must supply a ControllerControl routine to initiate I/O operations.
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Writing ControllerControl Routines

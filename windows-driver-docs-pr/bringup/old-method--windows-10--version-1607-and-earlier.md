@@ -2,7 +2,6 @@
 title: Old method - Windows 10, version 1607 and earlier
 description: Provides information about the old method upgrade scenario (Windows 7 to Windows 10) - Windows 10, version 1607 and earlier.
 ms.date: 08/19/2021
-ms.localizationpriority: medium
 ---
 
 # Old method - Windows 10, version 1607 and earlier

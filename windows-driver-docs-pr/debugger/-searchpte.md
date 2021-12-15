@@ -1,5 +1,5 @@
 ---
-title: searchpte
+title: searchpte (WinDbg)
 description: The searchpte extension searches physical memory for the specified page frame number (PFN).
 keywords: ["searchpte Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - searchpte
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !searchpte

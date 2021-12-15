@@ -1,8 +1,7 @@
 ---
-title: C30031
+title: C30031 warning
 description: Warning C30031 Calling a memory allocating function and passing a parameter that indicates executable memory.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C30031"
 ---

@@ -8,7 +8,6 @@ keywords:
 - frequency constraints WDK audio
 - data-intersection handlers WDK audio , sample frequency constraints
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Constraints on Sample Frequency

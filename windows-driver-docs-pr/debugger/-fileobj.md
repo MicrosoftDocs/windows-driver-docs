@@ -1,5 +1,5 @@
 ---
-title: fileobj
+title: fileobj (WinDbg)
 description: The fileobj extension displays detailed information about a FILE_OBJECT structure.
 keywords: ["FILE_OBJECT", "fileobj Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - fileobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !fileobj

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 07/06/2020
-ms.localizationpriority: medium
 ---
 
 # GetJobHistoryResponse element

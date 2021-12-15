@@ -5,7 +5,6 @@ keywords:
 - Direct3D WDK Windows 2000 display , w-buffering
 - w-buffering WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # W-Buffering

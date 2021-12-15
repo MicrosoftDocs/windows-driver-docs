@@ -3,7 +3,6 @@ title: Checking Flags in the Device Object
 description: Checking Flags in the Device Object
 keywords: ["removable media WDK kernel , flag checking", "flags WDK removable media", "checking device object flags", "verifying device object flags"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Checking Flags in the Device Object

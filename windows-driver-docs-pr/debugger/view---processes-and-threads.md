@@ -3,7 +3,6 @@ title: View Processes and Threads
 description: View Processes and Threads
 keywords: ["View Processes and Threads"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Processes and Threads

@@ -1,5 +1,5 @@
 ---
-title: .foreach
+title: .foreach (WinDbg)
 description: The .foreach token parses the output of one or more debugger commands and uses each value in this output as the input to one or more additional commands.
 keywords: [".foreach Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .foreach
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .foreach

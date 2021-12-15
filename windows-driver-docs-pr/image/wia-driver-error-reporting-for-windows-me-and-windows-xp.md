@@ -2,7 +2,6 @@
 title: WIA Driver Error Reporting for Windows Me and Windows XP
 description: WIA Driver Error Reporting for Windows Me and Windows XP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Driver Error Reporting for Windows Me and Windows XP

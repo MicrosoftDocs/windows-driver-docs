@@ -622,7 +622,7 @@
         href: wan-miniport-drivers.md
       - name: "Choosing a WAN Driver Model"
         items: 
-        - name: "Introduction to Choosing a WAN Driver Model"
+        - name: "WAN Driver Models"
           href: choosing-a-wan-driver-model.md
         - name: "CoNDIS WAN Is More Flexible"
           href: condis-wan-is-more-flexible.md
@@ -2272,20 +2272,18 @@
     items: 
     - name: "Virtual Machine Queue (VMQ) Overview"
       href: virtual-machine-queue--vmq-.md
-    - name: "VVMQ Architecture"
+    - name: "VMQ Architecture"
       items: 
-      - name: "Virtual Machine Queue Architecture"
+      - name: "Virtual Machine Queue (VMQ) Architecture"
         href: virtual-machine-queue-architecture.md
-      - name: "About NDIS Virtual Machine Queue (VMQ)"
-        items: 
-        - name: "Introduction to NDIS Virtual Machine Queue (VMQ)"
-          href: introduction-to-ndis-virtual-machine-queue--vmq-.md
-        - name: "VMQ Components"
-          href: vmq-components.md
-        - name: "VMQ Receive Queues"
-          href: vmq-receive-queues.md
-        - name: "VMQ Receive Filters"
-          href: vmq-receive-filters.md
+      - name: "Introduction to NDIS Virtual Machine Queue (VMQ)"
+        href: introduction-to-ndis-virtual-machine-queue--vmq-.md
+      - name: "VMQ Components"
+        href: vmq-components.md
+      - name: "VMQ Receive Queues"
+        href: vmq-receive-queues.md
+      - name: "VMQ Receive Filters"
+        href: vmq-receive-filters.md
       - name: "Security Issues with NDIS Virtual Machine (VM) Shared Memory"
         href: security-issues-with-ndis-virtual-machine--vm--shared-memory.md
       - name: "NDIS VMQ Live Migration Support"
@@ -3762,6 +3760,8 @@
         href: oid-wdi-get-receive-coalescing-match-count.md
       - name: "OID_WDI_GET_STATISTICS"
         href: oid-wdi-get-statistics.md
+      - name: "OID_WDI_GET_SUPPORTED_DEVICE_SERVICES"
+        href: oid-wdi-get-supported-device-services.md
       - name: "OID_WDI_IHV_REQUEST"
         href: oid-wdi-ihv-request.md
       - name: "OID_WDI_SET_ADAPTER_CONFIGURATION"

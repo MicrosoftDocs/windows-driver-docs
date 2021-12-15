@@ -2,7 +2,6 @@
 title: Code Example for Implementing Helper Methods
 description: Code Example for Implementing Helper Methods
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Example for Implementing Helper Methods

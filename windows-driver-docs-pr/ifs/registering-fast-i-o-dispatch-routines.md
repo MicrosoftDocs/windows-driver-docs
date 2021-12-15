@@ -6,7 +6,6 @@ keywords:
 - dispatch routines WDK file system
 - fast I/O dispatch routines WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering Fast I/O Dispatch Routines

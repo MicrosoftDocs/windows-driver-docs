@@ -1,7 +1,6 @@
 ---
 title: Button implementation
 description: We recommend that you use a physical GPIO resource for both the buttons and state indicators.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

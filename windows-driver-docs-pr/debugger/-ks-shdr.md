@@ -1,8 +1,7 @@
 ---
-title: ks.shdr
+title: ks.shdr (WinDbg)
 description: ks.shdr
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # !ks.shdr

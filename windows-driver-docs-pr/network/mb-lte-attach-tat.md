@@ -1,8 +1,7 @@
-﻿---
+---
 title: LTE Attach Operation Log Filter
 description: TextAnalysisTool Filter for the LTE Attach Operation
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 # LTE Attach Log Filter
 

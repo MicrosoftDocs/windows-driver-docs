@@ -15,7 +15,6 @@ keywords:
 - 3 2 pulldown WDK video port extensions
 - identifying progressive content
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MPEG and Progressive Content

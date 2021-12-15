@@ -5,7 +5,6 @@ keywords:
 - PCL XL vector graphics WDK Unidrv , installing minidrivers
 - minidrivers WDK PCL XL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a PCL XL Minidriver

@@ -4,7 +4,6 @@ description: MPEG1_A
 keywords:
 - MPEG1_A restricted profile WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MPEG1\_A

@@ -9,7 +9,6 @@ api_name:
 - validatelist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !validatelist

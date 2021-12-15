@@ -2,7 +2,6 @@
 title: Setting Breakpoints in WinDbg
 description: There are several ways you can set, view, and manipulate breakpoints using WinDbg.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Breakpoints in WinDbg

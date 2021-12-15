@@ -18,3 +18,5 @@
   href: pci-express-faq-for-graphics.yml
 - name: "PCI Sample"
   href: pci-sample.md
+- name: "Obtaining PCI Segment Values"
+  href: obtaining-pci-segment-values.md

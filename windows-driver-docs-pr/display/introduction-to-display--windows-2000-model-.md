@@ -5,7 +5,6 @@ keywords:
 - display driver model WDK Windows 2000 , about display driver model
 - Windows 2000 display driver model WDK , about display driver model
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Display (Windows 2000 Model)

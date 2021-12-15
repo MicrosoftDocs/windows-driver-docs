@@ -4,7 +4,6 @@ description: This topic describes the OID_802_3_RCV_OVERRUN object identifier (O
 keywords:
 - OID_802_3_RCV_OVERRUN
 ms.date: 11/01/2017
-ms.localizationpriority: medium
 ---
 
 # OID_802_3_RCV_OVERRUN

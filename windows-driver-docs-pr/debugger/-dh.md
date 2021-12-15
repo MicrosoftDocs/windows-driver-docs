@@ -1,5 +1,5 @@
 ---
-title: dh
+title: dh (WinDbg)
 description: The dh extension displays the headers for the specified image.
 keywords: ["NTFS file object", "dh Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - dh
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dh

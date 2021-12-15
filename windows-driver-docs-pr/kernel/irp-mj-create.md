@@ -4,7 +4,6 @@ description: Every kernel-mode driver must handle IRP_MJ_CREATE requests in a Di
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_CREATE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CREATE

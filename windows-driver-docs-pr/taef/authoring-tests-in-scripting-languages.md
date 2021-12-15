@@ -2,7 +2,6 @@
 title: Authoring Tests in Scripting Languages
 description: Authoring Tests in Scripting Languages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Authoring Tests in Scripting Languages

@@ -1,28 +1,18 @@
 ---
-title: Using GDL
-description: Using GDL
+title: Use GDL to create configurations and snapshots
+description: The following sections show how to use GDL to create configurations and snapshots.
 keywords:
 - GDL WDK , programming with GDL
 - programming with GDL WDK
 - printer drivers WDK , programming with GDL
 - GDL WDK , features of
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 09/08/2021
 ---
 
-# Using GDL
-
+# Use GDL to create configurations and snapshots
 
 The following sections show how to use GDL to create configurations and snapshots.
 
 [GDL Configurations](gdl-configurations.md)
 
 [GDL Snapshots](gdl-snapshots.md)
-
- 
-
- 
-
-
-
-

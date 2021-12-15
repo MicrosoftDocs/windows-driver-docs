@@ -1,5 +1,5 @@
 ---
-title: amli ds
+title: amli ds (WinDbg)
 description: The amli ds extension displays an AML stack.
 keywords: ["amli ds Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - amli ds
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli ds

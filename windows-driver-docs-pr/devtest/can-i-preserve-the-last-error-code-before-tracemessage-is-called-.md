@@ -2,7 +2,6 @@
 title: Can I preserve the last-error code before TraceMessage is called
 description: Can I preserve the last-error code before TraceMessage is called
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Can I preserve the last-error code before TraceMessage is called?

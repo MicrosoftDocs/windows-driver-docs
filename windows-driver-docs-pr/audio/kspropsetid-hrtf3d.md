@@ -3,7 +3,6 @@ title: KSPROPSETID\_Hrtf3d
 description: KSPROPSETID\_Hrtf3d
 keywords: ["KSPROPSETID_Hrtf3d"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Hrtf3d

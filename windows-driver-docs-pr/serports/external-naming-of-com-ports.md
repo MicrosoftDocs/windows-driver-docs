@@ -9,7 +9,6 @@ keywords:
 - external naming WDK serial devices
 - symbolic links WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # External Naming of COM Ports

@@ -3,7 +3,6 @@ title: Introduction to MS-DOS Device Names
 description: Introduction to MS-DOS Device Names
 keywords: ["MS-DOS device names WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to MS-DOS Device Names

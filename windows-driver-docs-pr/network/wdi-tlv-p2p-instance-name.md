@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_INSTANCE_NAME is a TLV that contains the Instance Name 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INSTANCE_NAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_INSTANCE\_NAME
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_INSTANCE\_NAME is a TLV that contains the Instance Name of the service.

@@ -11,7 +11,6 @@ keywords:
 - templates WDK GDL , qualifying to represent GDL entry
 - templates WDK GDL , derived templates
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Template Qualification

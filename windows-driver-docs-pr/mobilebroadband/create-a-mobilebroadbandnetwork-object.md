@@ -2,7 +2,6 @@
 title: Create a MobileBroadbandNetwork object
 description: Create a MobileBroadbandNetwork object
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Create a MobileBroadbandNetwork object

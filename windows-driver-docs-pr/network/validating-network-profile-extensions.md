@@ -5,7 +5,6 @@ keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL , validating extensions
 - validating network profile extensions WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Validating Network Profile Extensions

@@ -10,7 +10,6 @@ keywords:
 - luminance WDK DirectDraw
 - brightness WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Color Control Initialization

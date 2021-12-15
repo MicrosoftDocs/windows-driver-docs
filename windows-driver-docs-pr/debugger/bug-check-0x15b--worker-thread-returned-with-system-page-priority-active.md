@@ -9,7 +9,6 @@ api_name:
 - WORKER_THREAD_RETURNED_WITH_SYSTEM_PAGE_PRIORITY_ACTIVE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15B: WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE

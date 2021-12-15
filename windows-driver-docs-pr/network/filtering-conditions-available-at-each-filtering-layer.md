@@ -4,7 +4,6 @@ description: This section describes filtering conditions available at each filte
 keywords:
 - Filtering conditions available at each filtering layer network drivers
 ms.date: 11/08/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering conditions available at each filtering layer

@@ -4,7 +4,6 @@ description: Obtaining Additional Monitor Target Modes
 keywords:
 - monitor target modes WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining Additional Monitor Target Modes

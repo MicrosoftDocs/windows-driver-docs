@@ -1,7 +1,6 @@
 ---
 title: Writing WDM Drivers
 description: Writing WDM Drivers
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

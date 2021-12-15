@@ -9,7 +9,6 @@ api_name:
 - VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x187: VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD

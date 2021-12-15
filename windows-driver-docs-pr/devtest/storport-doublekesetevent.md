@@ -9,7 +9,6 @@ api_name:
 - DoubleKeSetEvent
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleKeSetEvent rule (storport)

@@ -1,16 +1,14 @@
 ---
 title: Asynchronous User Notification Schema
-description: Asynchronous User Notification Schema
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+description: Provides information on the XML schema that can be used by a printer driver to provide asynchronous event notification messages.
+ms.date: 08/31/2021
 ---
 
 # Asynchronous User Notification Schema
 
+This section provides information on the XML schema that can be used by a printer driver to provide asynchronous event notification messages to a client computer.
 
-This section provides information on the XML schema that can be used by a printer driver to provide asynchronous event notification messages to a client computer. This feature is available beginning with Windows Vista.
-
-### <span id="xml_schema_elements"></span><span id="XML_SCHEMA_ELEMENTS"></span> XML Schema Elements
+## XML Schema Elements
 
 [**action**](action.md)
 
@@ -39,11 +37,3 @@ This section provides information on the XML schema that can be used by a printe
 [**requestOpen**](requestopen.md)
 
 [**title**](title.md)
-
- 
-
- 
-
-
-
-

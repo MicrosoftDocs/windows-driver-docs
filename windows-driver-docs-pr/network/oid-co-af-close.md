@@ -4,7 +4,6 @@ description: This topic describes the OID_CO_AF_CLOSE object identifier (OID).
 keywords:
 - OID_CO_AF_CLOSE
 ms.date: 11/03/2017
-ms.localizationpriority: medium
 ---
 
 # OID_CO_AF_CLOSE

@@ -20,7 +20,6 @@ keywords:
 - queues WDK file system
 - FsRec
 ms.date: 10/16/2019
-ms.localizationpriority: medium
 ---
 
 # What Happens to File Systems During System Boot

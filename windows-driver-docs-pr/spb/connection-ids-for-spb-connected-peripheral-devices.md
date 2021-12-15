@@ -2,7 +2,6 @@
 title: Connection IDs for SPB-Connected Peripheral Devices
 description: Before a driver can send I/O requests to a peripheral device on a simple peripheral bus (SPB), the driver must open a logical connection to the device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection IDs for SPB-Connected Peripheral Devices

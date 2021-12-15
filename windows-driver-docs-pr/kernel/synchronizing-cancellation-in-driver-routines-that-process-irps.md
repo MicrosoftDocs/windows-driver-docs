@@ -1,7 +1,6 @@
 ---
 title: Synchronizing Cancellation in Driver Routines that Process IRPs
 description: A driver routine that dequeues or is called with an IRP that is held in a cancelable state must synchronize cancellation.
-ms.localizationpriority: medium
 ms.date: 07/22/2021
 ---
 

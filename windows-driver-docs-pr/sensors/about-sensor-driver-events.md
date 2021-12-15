@@ -2,7 +2,6 @@
 title: About Sensor Driver Events
 description: About Sensor Driver Events
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # About Sensor Driver Events

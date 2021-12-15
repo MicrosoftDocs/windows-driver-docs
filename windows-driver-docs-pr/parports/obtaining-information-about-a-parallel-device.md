@@ -4,7 +4,6 @@ description: Obtaining Information about a Parallel Device
 keywords:
 - parallel devices WDK , obtaining information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining Information about a Parallel Device

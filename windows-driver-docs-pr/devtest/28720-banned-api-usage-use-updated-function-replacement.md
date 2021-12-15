@@ -1,8 +1,7 @@
 ---
-title: C28720
+title: C28720 warning
 description: Warning C28720 Banned API Usage.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28720"
 ---

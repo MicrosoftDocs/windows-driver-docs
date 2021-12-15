@@ -1,5 +1,5 @@
 ---
-title: poolused
+title: poolused (WinDbg)
 description: The poolused extension displays memory use summaries, based on the tag used for each pool allocation.
 keywords: ["poolused Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - poolused
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !poolused

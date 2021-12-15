@@ -411,7 +411,7 @@
       href: enabling-mobile-broadband-experiences-using-portable-hotspot-devices.md
     - name: "Communication channels"
       items: 
-      - name: "Peronal hotspot communication channels"
+      - name: "Personal hotspot communication channels"
         href: communication-channels.md
       - name: "Network cost information element"
         href: network-cost-information-element.md

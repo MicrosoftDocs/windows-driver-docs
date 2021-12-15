@@ -7,7 +7,6 @@ keywords:
 - ConfigInfo
 - port-driver-supplied ConfigInfo WDK SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Port-Driver-Supplied ConfigInfo for HwScsiFindAdapter

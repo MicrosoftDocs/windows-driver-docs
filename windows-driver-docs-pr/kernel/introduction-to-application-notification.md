@@ -1,7 +1,6 @@
 ---
 title: Introduction to Application Notification
 description: Introduction to Application Notification
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

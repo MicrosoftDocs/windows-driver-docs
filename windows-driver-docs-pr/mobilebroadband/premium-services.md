@@ -2,7 +2,6 @@
 title: Premium services
 description: Premium services
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Premium services

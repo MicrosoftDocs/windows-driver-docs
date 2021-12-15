@@ -1,11 +1,10 @@
 ---
-title: C28141
+title: C28141 warning
 description: Warning C28141 The argument causes the IRQ Level to be set below the current IRQL, and this function cannot be used for that purpose.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28141"
 ---

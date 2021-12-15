@@ -12,7 +12,6 @@ keywords:
 - caps bits WDK DirectDraw
 - surfaces WDK DirectDraw , capability bits
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Emulation Layer

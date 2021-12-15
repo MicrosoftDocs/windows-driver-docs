@@ -2,7 +2,6 @@
 title: Configuring Windows to Rank Driver Signatures Equally
 description: Configuring Windows to Rank Driver Signatures Equally
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring Windows to Rank Driver Signatures Equally

@@ -1,7 +1,6 @@
 ---
 title: Timer Accuracy
 description: A system timer routine typically enables the caller to specify either an absolute or a relative expiration time for a timer.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

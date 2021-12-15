@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for NDIS QoS
 description: Standardized INF Keywords for NDIS QoS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for NDIS QoS

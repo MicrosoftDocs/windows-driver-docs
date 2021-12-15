@@ -3,7 +3,6 @@ title: Creating Your Own Provider Module
 description: Creating Your Own Provider Module
 keywords: ["version control systems, provider modules"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Your Own Provider Module

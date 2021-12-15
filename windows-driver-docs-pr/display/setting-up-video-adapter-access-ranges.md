@@ -7,7 +7,6 @@ keywords:
 - logical range addresses WDK video miniport
 - adapter access ranges WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting up Video Adapter Access Ranges

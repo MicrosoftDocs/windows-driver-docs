@@ -9,7 +9,6 @@ api_name:
 - NdisFilterTimedPauseComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisFilterTimedPauseComplete rule (ndis)

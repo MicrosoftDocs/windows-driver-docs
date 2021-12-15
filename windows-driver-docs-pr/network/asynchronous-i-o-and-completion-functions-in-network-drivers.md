@@ -6,7 +6,6 @@ keywords:
 - asynchronous I/O WDK networking
 - completion function WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Asynchronous I/O and Completion Functions in Network Drivers

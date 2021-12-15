@@ -1,67 +1,59 @@
 ---
-title: Component
-description: Component
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+title: Component property
+description: Contains the value entries that describe the part of the print device that is affected by the current event.
+ms.date: 08/31/2021
 ---
 
-# Component
+# Component property
 
+Schema Path: \\Printer.Status.Summary:Detailed.Event\#\#\#.Component
 
-Schema Path:\\Printer.Status.Summary:Detailed.Event\#\#\#.Component
+Data Type: Property
 
-Data Type:Property
-
-Description:This property contains the value entries that describe the part of the print device that is affected by the current event.
+Description: This property contains the value entries that describe the part of the print device that is affected by the current event.
 
 The Component property contains two child values: Group and Name.
 
-### <span id="group"></span><span id="GROUP"></span> Group
+## Group
 
-Schema Path:\\Printer.Status.Summary:Detailed.Event\#\#\#.Component:Group
+Schema Path: \\Printer.Status.Summary:Detailed.Event\#\#\#.Component:Group
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_STRING
+Data Type: BIDI_STRING
 
-Description:The component group affected by the current event. The component group and component name (described next) are combined to determine the exact location of the problem. The following list contains typical values for Group:
+Description: The component group affected by the current event. The component group and component name (described next) are combined to determine the exact location of the problem.
 
-InputBin
+The following list contains typical values for Group:
 
-MediaPath
+- InputBin
 
-OutputBins
+- MediaPath
 
-Consumable
+- OutputBins
 
-### <span id="name"></span><span id="NAME"></span> Name
+- Consumable
 
-Schema Path:\\Printer.Status.Detailed.Event\#\#\#.Component:Name
+## Name
 
-Node Type:Value
+Schema Path: \\Printer.Status.Detailed.Event\#\#\#.Component:Name
 
-Data Type:BIDI\_STRING
+Node Type: Value
 
-Description:The name of the individual component affected by the current event. The component name and component group (above) are combined to determine the exact location of the problem.
+Data Type: BIDI_STRING
+
+Description: The name of the individual component affected by the current event. The component name and component group (above) are combined to determine the exact location of the problem.
 
 The typical values for *Name* are as follows:
 
-Tray1
+- Tray1
 
-TopBin
+- TopBin
 
-LargeCapacityBin
+- LargeCapacityBin
 
-OutputBin1
+- OutputBin1
 
-Toner.Black
+- Toner.Black
 
-Ink.Cyan
-
- 
-
- 
-
-
-
-
+- Ink.Cyan

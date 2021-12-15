@@ -9,7 +9,6 @@ api_name:
 - usbkd._ehciframe
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.\_ehciframe

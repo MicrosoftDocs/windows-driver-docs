@@ -2,7 +2,6 @@
 title: How to convert an installed x64 Windows 7 system
 description: Provides information about how to convert an installed x64 Windows 7 system.
 ms.date: 08/19/2021
-ms.localizationpriority: medium
 ---
 
 # How to convert an installed x64 Windows 7 system

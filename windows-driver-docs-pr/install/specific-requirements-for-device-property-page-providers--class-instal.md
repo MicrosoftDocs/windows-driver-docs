@@ -7,7 +7,6 @@ keywords:
 - custom property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
 - DIF_ADDPROPERTYPAGE_ADVANCED
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specific Requirements for Device Property Page Providers (Co-Installers)

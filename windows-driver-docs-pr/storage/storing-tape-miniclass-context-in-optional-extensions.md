@@ -9,7 +9,6 @@ keywords:
 - driver-specific minitape extensions WDK tape
 - command-specific command extensions WDK tape
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storing Tape Miniclass Context in Optional Extensions

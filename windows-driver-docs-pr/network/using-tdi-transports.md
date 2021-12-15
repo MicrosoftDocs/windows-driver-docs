@@ -4,7 +4,6 @@ description: Using TDI Transports
 keywords:
 - TDI transports WDK Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using TDI Transports

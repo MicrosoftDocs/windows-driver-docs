@@ -9,7 +9,6 @@ api_name:
 - PowerDownAllocate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PowerDownAllocate rule (wdm)

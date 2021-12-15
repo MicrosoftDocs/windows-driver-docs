@@ -4,11 +4,12 @@ description: OID_WDI_TASK_ROAM requests that the adapter tries to roam from the 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_ROAM Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_ROAM
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_ROAM requests that the adapter tries to roam from the currently connected AP to a new one.
