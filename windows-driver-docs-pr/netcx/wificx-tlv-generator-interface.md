@@ -2,7 +2,6 @@
 title: WiFiCx TLV generator interface
 description: This section describes an overview of the WiFiCx TLV generator interface
 ms.date: 09/10/2021
-ms.localizationpriority: medium
 ---
 
 # WiFiCx TLV generator interface

@@ -2,7 +2,6 @@
 title: Creating a camera driver MFT for a UWP device app
 description: UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform).
 ms.date: 08/11/2021
-ms.localizationpriority: medium
 ---
 
 # Creating a camera driver MFT for a UWP device app

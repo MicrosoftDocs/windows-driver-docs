@@ -3,7 +3,6 @@ title: PnP Components
 description: PnP Components
 keywords: ["PnP WDK kernel , components", "Plug and Play WDK kernel , components", "software components WDK PnP", "PnP drivers WDK kernel", "user-mode PnP manager WDK", "kernel-mode PnP manager WDK", "PnP managers WDK", "PnP components WDK user-mode"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # PnP Components

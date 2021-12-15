@@ -2,7 +2,6 @@
 title: Debugging tips for WDDM drivers
 description: Describes debugging techniques for WDDM drivers
 ms.date: 07/17/2020
-ms.localizationpriority: medium
 ---
 
 # Debugging tips for WDDM drivers

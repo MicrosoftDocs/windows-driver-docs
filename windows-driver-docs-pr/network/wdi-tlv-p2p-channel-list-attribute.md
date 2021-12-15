@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE is a TLV that contains channel l
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_CHANNEL\_LIST\_ATTRIBUTE

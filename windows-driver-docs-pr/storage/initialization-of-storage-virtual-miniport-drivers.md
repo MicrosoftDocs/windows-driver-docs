@@ -6,7 +6,6 @@ keywords:
 - miniport drivers WDK storage
 - initializing WDK storage , virtual miniport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initialization of Storage Virtual Miniport Drivers

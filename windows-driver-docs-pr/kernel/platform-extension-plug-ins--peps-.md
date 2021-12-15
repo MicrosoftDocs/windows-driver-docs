@@ -1,7 +1,6 @@
 ---
 title: Platform Extension Plug-ins (PEPs)
 description: Starting with Windows 10, the run-time power management framework (PoFx) supports platform extension plug-ins (PEPs) for enhanced device component management.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

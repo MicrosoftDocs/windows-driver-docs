@@ -7,7 +7,6 @@ keywords:
 - VA WDK DirectX , restricted profiles
 - restricted profiles WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Restricted Profiles

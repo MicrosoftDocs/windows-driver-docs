@@ -9,7 +9,6 @@ api_name:
 - SESSION_HAS_VALID_VIEWS_ON_EXIT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBA: SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT

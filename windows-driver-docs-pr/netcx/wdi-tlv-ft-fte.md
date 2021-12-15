@@ -4,7 +4,6 @@ description: WDI_TLV_FT_FTE is a WiFiCx TLV that contains a Fast Transition Elem
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_FT_FTE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_FTE (dot11wificxtypes.hpp)

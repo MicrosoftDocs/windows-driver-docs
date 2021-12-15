@@ -7,7 +7,6 @@ keywords:
 - instance of notify objects WDK networking
 - initializing notify object instance
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating and Initializing an Instance of a Notify Object

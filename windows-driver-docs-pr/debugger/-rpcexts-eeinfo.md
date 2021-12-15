@@ -9,7 +9,6 @@ api_name:
 - rpcexts.eeinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.eeinfo

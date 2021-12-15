@@ -5,7 +5,6 @@ keywords:
 - biometric drivers WDK , windows hello
 - signing biometric drivers
 ms.date: 07/19/2017
-ms.localizationpriority: medium
 ---
 
 

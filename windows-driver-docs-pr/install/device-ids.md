@@ -2,7 +2,6 @@
 title: Device ID string
 description: A device ID is a string reported by a device’s enumerator. A device has only one device ID. A device ID has the same format as a hardware ID.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device ID

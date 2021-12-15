@@ -12,7 +12,6 @@ keywords:
 - EFI NVRAM boot options WDK , boot parameters
 - Boot.ini files WDK , boot parameters
 ms.date: 06/04/2020
-ms.localizationpriority: medium
 ---
 
 # Using boot parameters

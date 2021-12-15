@@ -11,7 +11,6 @@ keywords:
 - COPP WDK DirectX VA
 - protected video WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP Processing

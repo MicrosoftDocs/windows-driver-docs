@@ -11,7 +11,6 @@ keywords:
 - storage WDK header-data split
 - space managemen
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Header-Data Split

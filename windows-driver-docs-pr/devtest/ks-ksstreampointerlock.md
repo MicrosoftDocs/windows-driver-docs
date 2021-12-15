@@ -9,7 +9,6 @@ api_name:
 - KsStreamPointerLock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsStreamPointerLock rule ()

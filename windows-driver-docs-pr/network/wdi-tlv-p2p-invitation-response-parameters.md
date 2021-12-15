@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_INVITATION_RESPONSE_PARAMETERS is a TLV that contains W
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INVITATION_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_INVITATION\_RESPONSE\_PARAMETERS

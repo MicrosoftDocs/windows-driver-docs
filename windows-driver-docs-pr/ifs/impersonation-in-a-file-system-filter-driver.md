@@ -5,7 +5,6 @@ keywords:
 - security WDK file systems , impersonation
 - impersonation WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Impersonation in a File System Filter Driver

@@ -9,7 +9,6 @@ api_name:
 - IrqlObPassive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlObPassive rule (wdm)

@@ -4,7 +4,6 @@ description: OID_PNP_WAKE_UP_OK
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_WAKE_UP_OK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_WAKE\_UP\_OK

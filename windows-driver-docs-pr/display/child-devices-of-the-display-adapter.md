@@ -7,7 +7,6 @@ keywords:
 - child devices WDK video present network
 - display adapter child devices WDK video present network
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Child Devices of the Display Adapter

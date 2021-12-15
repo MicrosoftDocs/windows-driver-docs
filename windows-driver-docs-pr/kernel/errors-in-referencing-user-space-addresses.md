@@ -3,7 +3,6 @@ title: Errors in Referencing User-Space Addresses
 description: Errors in Referencing User-Space Addresses
 keywords: ["reliability WDK kernel , user-space addresses", "user-space address referencing WDK kernel", "referencing user-space address", "embedded pointers WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Errors in Referencing User-Space Addresses

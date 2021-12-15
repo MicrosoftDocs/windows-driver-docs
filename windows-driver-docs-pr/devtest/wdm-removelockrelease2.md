@@ -9,7 +9,6 @@ api_name:
 - RemoveLockRelease2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockRelease2 rule (wdm)

@@ -6,7 +6,6 @@ keywords:
 - system-supplied multifunction bus drivers WDK
 - mf.sys
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # PC cards with incomplete configuration register addresses

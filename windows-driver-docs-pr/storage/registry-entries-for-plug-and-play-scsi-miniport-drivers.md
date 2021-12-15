@@ -8,7 +8,6 @@ keywords:
 - PnPInterface
 - registry WDK SCSI
 ms.date: 10/27/2021
-ms.localizationpriority: medium
 ---
 
 # Registry Entries for Plug and Play SCSI Miniport Drivers

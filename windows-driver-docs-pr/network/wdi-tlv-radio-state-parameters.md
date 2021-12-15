@@ -4,7 +4,6 @@ description: WDI_TLV_RADIO_STATE_PARAMETERS is a TLV that contains radio state p
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RADIO_STATE_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_RADIO\_STATE\_PARAMETERS

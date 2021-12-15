@@ -11,7 +11,6 @@ keywords:
 - Windows 11 audio 
 - CAPX, Core Audio Processing Object Extensions
 ms.date: 10/20/2021
-ms.localizationpriority: medium
 ---
 
 # Windows 11 APIs for Audio Processing Objects

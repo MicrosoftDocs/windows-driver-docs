@@ -3,7 +3,6 @@ title: Thread Priorities
 description: Thread Priorities
 keywords: ["thread objects WDK kernel", "thread priorities WDK kernel", "priorities WDK threads"]
 ms.date: 05/08/2018
-ms.localizationpriority: medium
 ---
 
 # Thread Priorities

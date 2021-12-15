@@ -2,7 +2,6 @@
 title: E (Windows Debugger Glossary)
 description: Glossary page - E
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # E

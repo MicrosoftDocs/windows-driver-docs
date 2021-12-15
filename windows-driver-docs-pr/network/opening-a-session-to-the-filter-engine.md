@@ -7,7 +7,6 @@ keywords:
 - filter engine WDK Windows Filtering Platform
 - opening filter engine sessions WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening a Session to the Filter Engine

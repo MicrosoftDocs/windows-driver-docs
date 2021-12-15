@@ -9,7 +9,6 @@ api_name:
 - poolused
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !poolused

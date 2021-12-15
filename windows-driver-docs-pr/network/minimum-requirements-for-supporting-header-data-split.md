@@ -5,7 +5,6 @@ keywords:
 - header-data split WDK , requirements
 - Ethernet frame splitting WDK networking , requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minimum Requirements for Supporting Header-Data Split

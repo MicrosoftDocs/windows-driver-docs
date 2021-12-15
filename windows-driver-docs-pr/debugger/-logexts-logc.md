@@ -9,7 +9,6 @@ api_name:
 - logexts.logc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !logexts.logc

@@ -7,7 +7,6 @@ keywords:
 - low-memory situations WDK KMDF
 - I/O queues WDK KMDF , guaranteed forward progress
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Guaranteeing Forward Progress of I/O Operations

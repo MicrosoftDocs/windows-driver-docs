@@ -9,7 +9,6 @@ api_name:
 - ReqSendWhileSpinlock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReqSendWhileSpinlock rule (kmdf)

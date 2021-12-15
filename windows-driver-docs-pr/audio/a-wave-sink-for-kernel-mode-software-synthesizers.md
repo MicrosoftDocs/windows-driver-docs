@@ -7,7 +7,6 @@ keywords:
 - wave sinks WDK audio , MIDI transport
 - synthesizers WDK audio , MIDI transport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # A Wave Sink for Kernel-Mode Software Synthesizers

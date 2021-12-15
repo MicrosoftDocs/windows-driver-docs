@@ -2,7 +2,6 @@
 title: Audio Endpoint Builder Algorithm
 description: Audio Endpoint Builder Algorithm
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Endpoint Builder Algorithm

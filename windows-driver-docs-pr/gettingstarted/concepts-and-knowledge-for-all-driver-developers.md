@@ -4,7 +4,6 @@ description: In this section, concepts needed for all driver developers are desc
 keywords:
 - driver fundamentals
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Concepts for all driver developers

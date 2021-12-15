@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - Currently supported BTP tests
 description: List of Bluetooth Test Platform (BTP) test categories
 ms.date: 2/14/2020
-ms.localizationpriority: medium
 
 ---
 

@@ -9,7 +9,6 @@ api_name:
 - wudfext.umdevstack
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.umdevstack

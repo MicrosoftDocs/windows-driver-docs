@@ -4,7 +4,6 @@ description: Simplified Driver Model
 keywords:
 - NDIS WDK , driver development
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Simplified Driver Model

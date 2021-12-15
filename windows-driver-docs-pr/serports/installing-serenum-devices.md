@@ -4,7 +4,6 @@ description: Installing Serenum Devices
 keywords:
 - Serenum driver WDK , device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Serenum Devices

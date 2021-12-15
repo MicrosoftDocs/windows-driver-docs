@@ -4,7 +4,6 @@ description: OID_WWAN_MODEM_CONFIG_INFO retrieves information about the modem co
 ms.date: 08/08/2017
 keywords: 
  - OID_WWAN_MODEM_CONFIG_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_MODEM\_CONFIG\_INFO

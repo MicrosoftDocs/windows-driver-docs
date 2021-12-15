@@ -8,7 +8,6 @@ keywords:
 - picture decoding WDK DirectX VA , compressed
 - 4 2 2 video WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 4:2:2 Video Pixel Formats

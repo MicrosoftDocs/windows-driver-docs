@@ -8,7 +8,6 @@ keywords:
 - locale referencing WDK Unidrv
 - Unidrv WDK print
 ms.date: 06/12/2020
-ms.localizationpriority: medium
 ---
 
 # Referencing locales

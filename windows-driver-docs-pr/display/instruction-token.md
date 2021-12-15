@@ -2,7 +2,6 @@
 title: Instruction Token
 description: Instruction Token
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # Instruction Token

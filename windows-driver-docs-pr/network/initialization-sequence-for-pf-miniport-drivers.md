@@ -2,7 +2,6 @@
 title: Initialization Sequence for PF Miniport Drivers
 description: Initialization Sequence for PF Miniport Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initialization Sequence for PF Miniport Drivers

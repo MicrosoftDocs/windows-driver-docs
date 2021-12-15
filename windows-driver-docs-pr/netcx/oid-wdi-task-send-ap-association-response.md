@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE command requests that
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE (dot11wificxintf.h)

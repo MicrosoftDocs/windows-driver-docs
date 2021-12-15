@@ -9,7 +9,6 @@ api_name:
 - IoSetCompletionRoutineExCheckDeviceObject
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoSetCompletionRoutineExCheckDeviceObject rule (wdm)

@@ -2,7 +2,6 @@
 title: WDI Selective Suspend capability registration
 description: The following is a flow diagram for registering the USB Selective Suspend capability.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI Selective Suspend capability registration

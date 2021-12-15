@@ -9,7 +9,6 @@ api_name:
 - .load, .loadby (Load Extension DLL)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .load, .loadby (Load Extension DLL)

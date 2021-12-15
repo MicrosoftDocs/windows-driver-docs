@@ -4,7 +4,6 @@ description: This topic lists versions of the Network Adapter WDF Class Extensio
 keywords:
 - Version overview Network Adapter Class Extension, version overview NetAdapterCx, version overview NetCx
 ms.date: 12/09/2021
-ms.localizationpriority: medium
 ms.custom: Vib
 ---
 

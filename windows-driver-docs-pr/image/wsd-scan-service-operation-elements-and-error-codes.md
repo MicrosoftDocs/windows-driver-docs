@@ -2,7 +2,6 @@
 title: WSD Scan Service Operation Elements and Error Codes
 description: WSD Scan Service Operation Elements and Error Codes
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WSD Scan Service Operation Elements and Error Codes

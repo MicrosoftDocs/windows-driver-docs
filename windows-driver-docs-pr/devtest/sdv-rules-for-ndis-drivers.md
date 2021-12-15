@@ -2,7 +2,6 @@
 title: Rules for NDIS Drivers
 description: Rules for NDIS Drivers
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # Rules for NDIS Drivers

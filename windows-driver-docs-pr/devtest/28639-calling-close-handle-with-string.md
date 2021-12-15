@@ -2,7 +2,6 @@
 title: C28639 warning
 description: Warning C28639 Calling close handle with string.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28639"
 ---

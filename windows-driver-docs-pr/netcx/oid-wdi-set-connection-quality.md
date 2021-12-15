@@ -4,7 +4,6 @@ description: The OID_WDI_SET_CONNECTION_QUALITY command provides a hint to the I
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_CONNECTION_QUALITY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_CONNECTION\_QUALITY (dot11wificxintf.h)

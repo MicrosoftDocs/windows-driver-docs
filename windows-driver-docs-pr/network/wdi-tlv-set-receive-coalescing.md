@@ -4,7 +4,6 @@ description: WDI_TLV_SET_RECEIVE_COALESCING is a TLV that contains received pack
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SET\_RECEIVE\_COALESCING

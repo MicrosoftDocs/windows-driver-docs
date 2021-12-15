@@ -8,7 +8,6 @@ keywords:
 - drawing WDK GDI , lines, cosmetic
 - cosmetic lines WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cosmetic Lines

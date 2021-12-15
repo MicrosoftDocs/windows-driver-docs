@@ -9,7 +9,6 @@ api_name:
 - PcTimedWaveRtStreamSetState
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PcTimedWaveRtStreamSetState rule (audio)

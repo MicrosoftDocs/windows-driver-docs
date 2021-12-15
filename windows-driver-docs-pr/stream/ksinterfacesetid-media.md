@@ -2,7 +2,6 @@
 title: KSINTERFACESETID_Media
 description: This interface set includes interface types that are media-specific.
 ms.date: 10/12/2021
-ms.localizationpriority: medium
 ---
 
 # KSINTERFACESETID_Media

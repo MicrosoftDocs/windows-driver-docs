@@ -2,7 +2,6 @@
 title: MB SAR Platform Support
 description: MB SAR Platform Support
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB SAR Platform Support

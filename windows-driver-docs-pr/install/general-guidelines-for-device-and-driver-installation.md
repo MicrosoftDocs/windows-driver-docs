@@ -5,7 +5,6 @@ keywords:
 - device installations WDK , general guidelines
 - driver installations WDK , general guidelines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Guidelines for Device and Driver Installation

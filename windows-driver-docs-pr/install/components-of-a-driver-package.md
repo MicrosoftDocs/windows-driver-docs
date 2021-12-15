@@ -12,7 +12,6 @@ keywords:
 - SYS files
 - .cat files
 ms.date: 12/09/2021
-ms.localizationpriority: High
 ---
 
 # Components of a Driver Package

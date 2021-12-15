@@ -9,7 +9,6 @@ keywords:
 - IRPs WDK AV/C
 - I/O WDK AV/C
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Building and Sending an AV/C Command

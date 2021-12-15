@@ -12,7 +12,6 @@ keywords:
 - add-address notifications WDK SANs
 - notifications WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving and Translating NIC Addresses

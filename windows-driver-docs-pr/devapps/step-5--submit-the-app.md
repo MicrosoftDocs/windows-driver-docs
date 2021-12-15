@@ -2,7 +2,6 @@
 title: Step 5 Submit the Microsoft Store device app
 description: This topic describes how to submit your UWP device app to the Microsoft Store dashboard.
 ms.date: 08/12/2021
-ms.localizationpriority: medium
 ---
 
 # Step 5: Submit the Microsoft Store device app

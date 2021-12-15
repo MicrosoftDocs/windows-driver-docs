@@ -10,7 +10,6 @@ keywords:
 - analog content protection WDK COPP
 - ACP protection type WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP and ChangeDisplaySettingsEx

@@ -4,7 +4,6 @@ description: WDI_TLV_DISASSOCIATION_INDICATION_PARAMETERS is a TLV that contains
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DISASSOCIATION_INDICATION_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS

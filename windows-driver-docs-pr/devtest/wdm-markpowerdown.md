@@ -9,7 +9,6 @@ api_name:
 - MarkPowerDown
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkPowerDown rule (wdm)

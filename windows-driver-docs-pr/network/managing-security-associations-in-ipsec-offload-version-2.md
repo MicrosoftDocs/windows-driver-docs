@@ -6,7 +6,6 @@ keywords:
 - security associations WDK IPsec offload
 - SAs WDK IPsec offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Security Associations in IPsec Offload Version 2

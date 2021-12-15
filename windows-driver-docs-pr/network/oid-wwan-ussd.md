@@ -4,7 +4,6 @@ description: OID_WWAN_USSD sends Unstructured Supplementary Service Data (USSD) 
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_USSD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_USSD

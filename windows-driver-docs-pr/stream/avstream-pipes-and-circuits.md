@@ -16,7 +16,6 @@ keywords:
 - non-inplace transform filters WDK AVStream
 - circuits WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AVStream Pipes and Circuits

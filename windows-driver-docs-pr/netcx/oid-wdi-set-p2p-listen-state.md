@@ -4,7 +4,6 @@ description: The OID_WDI_SET_P2P_LISTEN_STATE command sets the Wi-Fi Direct list
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_P2P_LISTEN_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_P2P\_LISTEN\_STATE (dot11wificxintf.h)

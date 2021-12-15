@@ -2,7 +2,6 @@
 description: OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer.
 title: USB registry settings for a function controller driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB registry settings for a function controller driver

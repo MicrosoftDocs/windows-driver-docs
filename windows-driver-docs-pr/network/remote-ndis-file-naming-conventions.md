@@ -5,7 +5,6 @@ keywords:
 - Remote NDIS WDK networking , driver names
 - Remote NDIS WDK networking , operating system support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Remote NDIS File Naming Conventions

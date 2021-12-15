@@ -2,7 +2,6 @@
 title: Introduction to enabling mobile operator notifications and system events
 description: Introduction to enabling mobile operator notifications and system events
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to enabling mobile operator notifications and system events

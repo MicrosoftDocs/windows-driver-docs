@@ -5,7 +5,6 @@ keywords:
 - checked builds WDK , Driver Verifier
 - Driver Verifier WDK checked builds
 ms.date: 06/04/2020
-ms.localizationpriority: medium
 ---
 
 # The Checked Build and Driver Verifier

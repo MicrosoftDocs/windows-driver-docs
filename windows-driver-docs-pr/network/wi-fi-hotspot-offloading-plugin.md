@@ -2,7 +2,6 @@
 title: Wi-Fi Hotspot Offloading Plugin
 description: Wi-Fi Hotspot Offloading Plugin
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi Hotspot Offloading Plugin

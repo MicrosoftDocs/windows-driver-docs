@@ -2,7 +2,6 @@
 title: Transferring Data from Scanner Storage
 description: Transferring Data from Scanner Storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Transferring Data from Scanner Storage

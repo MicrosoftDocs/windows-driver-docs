@@ -9,7 +9,6 @@ api_name:
 - ioreslist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ioreslist

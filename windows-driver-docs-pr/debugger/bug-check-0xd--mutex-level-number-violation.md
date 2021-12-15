@@ -9,7 +9,6 @@ api_name:
 - MUTEX_LEVEL_NUMBER_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD: MUTEX\_LEVEL\_NUMBER\_VIOLATION

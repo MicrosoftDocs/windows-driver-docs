@@ -9,7 +9,6 @@ api_name:
 - al (List Aliases)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # al (List Aliases)

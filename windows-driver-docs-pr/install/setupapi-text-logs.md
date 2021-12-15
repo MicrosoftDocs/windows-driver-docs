@@ -11,7 +11,6 @@ keywords:
 - SetupAPI logging WDK Windows Vista , text logs
 - text logs WDK SetupAPI , about text logs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SetupAPI Text Logs

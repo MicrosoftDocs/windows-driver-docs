@@ -2,7 +2,6 @@
 description: WPD and Earlier Technologies
 title: WPD and Earlier Technologies
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WPD and Earlier Technologies

@@ -9,7 +9,6 @@ keywords:
 - PDOs WDK IEEE 1394 bus
 - virtual PDOs WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IEEE 1394 Hardware Emulation Drivers

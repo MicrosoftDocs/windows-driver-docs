@@ -5,7 +5,6 @@ keywords:
 - Device Manager WDK
 - Device Manager WDK , about Device Manager
 ms.date: 10/01/2018
-ms.localizationpriority: medium
 ---
 
 # Using Device Manager

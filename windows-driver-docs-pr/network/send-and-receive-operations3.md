@@ -5,7 +5,6 @@ keywords:
 - IHV Extensions DLL WDK Native 802.11 , send and receive operations
 - Native 802.11 IHV Extensions DLL WDK , send and receive operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Native 802.11 IHV extension send and receive operations

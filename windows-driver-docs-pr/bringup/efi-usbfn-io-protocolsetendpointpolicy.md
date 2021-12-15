@@ -2,7 +2,6 @@
 title: EFI_USBFN_IO_PROTOCOL.SetEndpointPolicy
 description: The SetEndpointPolicy function sets the configuration policy for the specified non-control endpoint.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_IO_PROTOCOL.SetEndpointPolicy

@@ -2,7 +2,6 @@
 title: Windows Bluetooth host controller interface (HCI) Architectural Overview
 description: This topic presents an architectural overview of the Windows 8.1 support for rerouting audio data to bypass the Bluetooth host controller interface (HCI).
 ms.date: 10/22/2018
-ms.localizationpriority: medium
 ---
 
 # Windows Bluetooth host controller interface (HCI) Architectural Overview

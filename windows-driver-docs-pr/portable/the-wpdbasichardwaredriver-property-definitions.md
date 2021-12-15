@@ -2,7 +2,6 @@
 description: Defining the Sensor Properties
 title: Defining the Sensor Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining the Sensor Properties

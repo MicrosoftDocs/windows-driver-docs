@@ -4,7 +4,6 @@ description: Source Code Pane
 keywords:
 - panes WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Source Code Pane

@@ -8,7 +8,6 @@ keywords:
 - cubic splines WDK GDI
 - Bezier curves WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bezier Curves

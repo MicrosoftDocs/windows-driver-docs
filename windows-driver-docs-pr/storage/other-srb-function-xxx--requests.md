@@ -6,7 +6,6 @@ keywords:
 - HwScsiStartIo
 - SRB_FUNCTION_XXX future use
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Other SRB_FUNCTION_XXX Requests

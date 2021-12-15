@@ -2,7 +2,6 @@
 title: How do I generate trace messages from a header file
 description: How do I generate trace messages from a header file
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I generate trace messages from a header file?

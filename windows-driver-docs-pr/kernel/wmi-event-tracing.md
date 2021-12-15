@@ -3,7 +3,6 @@ title: WMI Event Tracing
 description: WMI Event Tracing
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "WMI WDK kernel , WDM drivers", "WDM drivers WDK WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # WMI Event Tracing

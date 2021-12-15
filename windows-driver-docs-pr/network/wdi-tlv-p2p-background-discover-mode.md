@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE is a TLV that contains Wi-Fi D
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_BACKGROUND\_DISCOVER\_MODE

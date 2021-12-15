@@ -8,7 +8,6 @@ keywords:
 - D3DRS_MULTISAMPLEANTIALIAS
 - D3DRS_MULTISAMPLEMASK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling Multisampling

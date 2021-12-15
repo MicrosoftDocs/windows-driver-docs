@@ -2,7 +2,6 @@
 title: Error Reporting
 description: Error Reporting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Error Reporting

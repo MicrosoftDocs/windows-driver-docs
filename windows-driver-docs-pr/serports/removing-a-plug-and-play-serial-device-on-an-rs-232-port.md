@@ -8,7 +8,6 @@ keywords:
 - serial devices WDK , Plug and Play
 - removing Plug and Play devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Removing a Plug and Play Serial Device on an RS-232 Port

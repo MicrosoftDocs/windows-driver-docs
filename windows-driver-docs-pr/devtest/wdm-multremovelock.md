@@ -9,7 +9,6 @@ api_name:
 - MultRemoveLock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MultRemoveLock rule (wdm)

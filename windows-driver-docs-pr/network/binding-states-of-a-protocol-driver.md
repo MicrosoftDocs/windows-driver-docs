@@ -9,7 +9,6 @@ keywords:
 - protocol drivers WDK networking , protocol bindings
 - NDIS protocol drivers WDK , protocol
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Binding States of a Protocol Driver

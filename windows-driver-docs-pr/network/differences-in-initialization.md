@@ -4,7 +4,6 @@ description: Differences in Initialization
 keywords:
 - initializing connection-oriented protocols
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Differences in Initialization

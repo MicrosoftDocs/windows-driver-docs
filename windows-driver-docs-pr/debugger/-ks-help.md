@@ -9,7 +9,6 @@ api_name:
 - ks.help
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.help

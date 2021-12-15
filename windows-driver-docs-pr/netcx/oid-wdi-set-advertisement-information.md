@@ -4,7 +4,6 @@ description: The OID_WDI_SET_ADVERTISEMENT_INFORMATION command configures the IE
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_ADVERTISEMENT_INFORMATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_ADVERTISEMENT\_INFORMATION (dot11wificxintf.h)

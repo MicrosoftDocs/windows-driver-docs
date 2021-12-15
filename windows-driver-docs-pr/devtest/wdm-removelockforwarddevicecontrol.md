@@ -9,7 +9,6 @@ api_name:
 - RemoveLockForwardDeviceControl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockForwardDeviceControl rule (wdm)

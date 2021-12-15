@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_WPS_ENABLED is a WiFiCx TLV that specifies if Wi-Fi Pro
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_WPS_ENABLED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_WPS\_ENABLED (dot11wificxtypes.hpp)

@@ -4,7 +4,6 @@ description: An overlying driver issues an OID query request of OID_TIMESTAMP_GE
 ms.date: 01/31/2021
 keywords: 
  -OID_TIMESTAMP_GET_CROSSTIMESTAMP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_TIMESTAMP_GET_CROSSTIMESTAMP

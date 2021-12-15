@@ -2,7 +2,6 @@
 title: Stream Latency During Recording
 description: Stream Latency During Recording
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stream Latency During Recording

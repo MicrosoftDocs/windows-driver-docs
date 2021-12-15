@@ -6,7 +6,6 @@ keywords:
 - communication modes WDK parallel devices
 - clearing communication modes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting and Clearing a Communication Mode for a Parallel Device

@@ -3,7 +3,6 @@ title: Tabbing a Window
 description: Tabbing a Window
 keywords: ["debugging information windows, tabbed windows", "tabbing windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Tabbing a Window

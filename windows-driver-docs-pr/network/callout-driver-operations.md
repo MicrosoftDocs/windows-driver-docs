@@ -6,7 +6,6 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , operations
 - callouts WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Callout Driver Operations Topics

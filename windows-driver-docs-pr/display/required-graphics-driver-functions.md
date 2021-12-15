@@ -10,7 +10,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , DDI, required functions
 - DDI WDK graphics , required functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Required Graphics Driver Functions

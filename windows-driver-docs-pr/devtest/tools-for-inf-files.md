@@ -6,7 +6,6 @@ keywords:
 - driver development tools WDK , INF files
 - INF files WDK Driver Development Tools
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tools for INF Files

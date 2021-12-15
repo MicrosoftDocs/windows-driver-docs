@@ -13,7 +13,6 @@ keywords:
 - D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATS
 - D3DDDICAPS_FILTERPROPERTYRANGE
 ms.date: 10/22/2021
-ms.localizationpriority: medium
 ---
 
 # Providing video processing capabilities

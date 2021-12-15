@@ -3,7 +3,6 @@ title: Other Standard Driver Routines
 description: Other Standard Driver Routines
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Other Standard Driver Routines

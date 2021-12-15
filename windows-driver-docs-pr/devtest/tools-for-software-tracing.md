@@ -10,7 +10,6 @@ keywords:
 - event tracing WDK
 - trace tools WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tools for Software Tracing

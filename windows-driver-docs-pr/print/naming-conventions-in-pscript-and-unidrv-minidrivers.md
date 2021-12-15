@@ -5,7 +5,6 @@ keywords:
 - in-box autoconfiguration support WDK printer , naming conventions
 - names WDK printer autoconfig
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Naming Conventions in Pscript and Unidrv Minidrivers

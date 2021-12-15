@@ -9,7 +9,6 @@ keywords:
 - cryptography WDK driver signing
 - keys WDK driver signing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing the Digital Signature or Code Signing Keys

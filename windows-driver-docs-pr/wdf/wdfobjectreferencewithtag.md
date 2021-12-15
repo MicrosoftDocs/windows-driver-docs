@@ -4,7 +4,6 @@ description: The WdfObjectReferenceWithTag macro increments the reference count 
 keywords:
  - WdfObjectReferenceWithTag macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WdfObjectReferenceWithTag macro

@@ -9,7 +9,6 @@ api_name:
 - cbreg
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !cbreg

@@ -3,7 +3,6 @@ title: Driver Release Cadence
 description: Policy around when drivers are released
 ms.topic: article
 ms.date: 12/14/2020
-ms.localizationpriority: medium
 ---
 
 # Driver Shiproom Release Cadence Windows

@@ -4,7 +4,6 @@ description: This topic describes the OID_CO_DELETE_ADDRESS object identifier (O
 keywords:
 - OID_CO_DELETE_ADDRESS
 ms.date: 11/03/2017
-ms.localizationpriority: medium
 ---
 
 # OID_CO_DELETE_ADDRESS

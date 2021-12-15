@@ -4,7 +4,6 @@ description: WDI_TLV_DEVICE_SERVICE_GUID_LIST is a WDI TLV that contains informa
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_DEVICE_SERVICE_GUID_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_DEVICE_SERVICE_GUID_LIST

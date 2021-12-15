@@ -9,7 +9,6 @@ api_name:
 - KsInvalidStreamPointer
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsInvalidStreamPointer rule (ks)

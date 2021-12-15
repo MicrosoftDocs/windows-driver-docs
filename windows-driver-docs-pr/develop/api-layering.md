@@ -2,7 +2,6 @@
 title: API Layering
 description: Windows drivers allow you to create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
 ms.date: 12/01/2021
-ms.localizationpriority: medium
 ---
 
 # API Layering

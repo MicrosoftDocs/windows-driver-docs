@@ -4,7 +4,6 @@ description: The OID_WAN_CO_GET_INFO OID requests the miniport driver to return 
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_GET_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_GET\_INFO

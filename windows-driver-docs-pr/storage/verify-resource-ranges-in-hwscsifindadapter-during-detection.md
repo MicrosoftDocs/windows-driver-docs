@@ -9,7 +9,6 @@ keywords:
 - resource ranges WDK SCSI
 - HwScsiFindAdapter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verify Resource Ranges in HwScsiFindAdapter During Detection

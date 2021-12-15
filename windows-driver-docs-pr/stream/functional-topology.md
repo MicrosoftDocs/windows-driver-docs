@@ -15,7 +15,6 @@ keywords:
 - Broadcast Driver Architecture WDK AVStream , control nodes
 - BDA WDK AVStream , control nodes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Functional Topology

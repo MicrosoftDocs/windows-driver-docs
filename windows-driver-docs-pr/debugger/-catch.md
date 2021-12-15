@@ -9,7 +9,6 @@ api_name:
 - .catch
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .catch

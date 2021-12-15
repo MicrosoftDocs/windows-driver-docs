@@ -9,7 +9,6 @@ api_name:
 - npx
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !npx

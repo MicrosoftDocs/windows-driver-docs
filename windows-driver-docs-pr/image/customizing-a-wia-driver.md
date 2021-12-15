@@ -2,7 +2,6 @@
 title: Customizing a WIA Driver
 description: Customizing a WIA Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customizing a WIA Driver

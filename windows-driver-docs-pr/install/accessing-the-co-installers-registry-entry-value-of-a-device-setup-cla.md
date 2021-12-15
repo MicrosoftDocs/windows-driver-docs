@@ -2,7 +2,6 @@
 title: Access Co-installers Registry Entry Value of Device Setup Class
 description: Accessing the Co-installers Registry Entry Value of a Device Setup Class
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing the Co-installers Registry Entry Value of a Device Setup Class

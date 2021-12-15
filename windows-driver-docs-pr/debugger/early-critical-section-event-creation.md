@@ -3,7 +3,6 @@ title: Early critical section event creation
 description: Early critical section event creation
 keywords: ["Early critical section event creation (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Early critical section event creation

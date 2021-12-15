@@ -3,7 +3,6 @@ title: Controlling a Process Server Session
 description: Controlling a Process Server Session
 keywords: ["process server, controlling a session"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling a Process Server Session

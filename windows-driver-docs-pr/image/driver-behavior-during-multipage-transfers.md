@@ -2,7 +2,6 @@
 title: Driver Behavior During Multipage Transfers
 description: Driver Behavior During Multipage Transfers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Behavior During Multipage Transfers

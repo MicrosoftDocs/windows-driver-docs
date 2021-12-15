@@ -2,7 +2,6 @@
 title: Using __sdv_save_adapter_context to Track Adapter Context Fields
 description: Using __sdv_save_adapter_context to Track Adapter Context Fields
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using \_\_sdv\_save\_adapter\_context to Track Adapter Context Fields

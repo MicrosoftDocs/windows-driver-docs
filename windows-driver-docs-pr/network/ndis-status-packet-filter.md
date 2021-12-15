@@ -4,7 +4,6 @@ description: The NDIS_STATUS_PACKET_FILTER status indicates a packet filter chan
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PACKET_FILTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PACKET\_FILTER

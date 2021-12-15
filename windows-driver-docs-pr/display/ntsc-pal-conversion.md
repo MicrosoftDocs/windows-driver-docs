@@ -12,7 +12,6 @@ keywords:
 - converting NTSC to PAL
 - 3 2 pulldown WDK video port extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NTSC/PAL Conversion

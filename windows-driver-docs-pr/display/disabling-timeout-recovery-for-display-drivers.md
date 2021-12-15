@@ -5,7 +5,6 @@ keywords:
 - display drivers WDK Windows 2000 , timeout recovery
 - timeout recovery WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disabling Timeout Recovery for Display Drivers

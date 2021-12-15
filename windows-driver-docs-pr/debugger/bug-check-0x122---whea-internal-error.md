@@ -9,7 +9,6 @@ api_name:
 - WHEA_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x122: WHEA\_INTERNAL\_ERROR

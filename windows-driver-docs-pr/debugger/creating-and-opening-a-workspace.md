@@ -3,7 +3,6 @@ title: Creating and Opening a Workspace
 description: Creating and Opening a Workspace
 keywords: ["workspaces, creating", "workspaces, opening", "workspaces, named workspaces", "workspaces, default workspaces", "workspaces, types of workspaces"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Creating and Opening a Workspace

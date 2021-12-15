@@ -5,7 +5,6 @@ keywords:
 - FVF WDK Direct3D
 - multimatrix vertex blending WDK Direct3D , FVF code changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # FVF Code Changes

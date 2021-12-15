@@ -10,7 +10,6 @@ keywords:
 - SCSI miniport drivers WDK storage , initializing
 - order-dependent code WDK SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Do Not Depend on Order of SCSI Miniport Initialization

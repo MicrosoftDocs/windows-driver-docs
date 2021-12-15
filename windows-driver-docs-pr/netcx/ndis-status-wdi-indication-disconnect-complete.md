@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_DISCONNECT_COMPLETE t
 ms.date: 06/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DISCONNECT_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_DISCONNECT\_COMPLETE (dot11wificxintf.h)

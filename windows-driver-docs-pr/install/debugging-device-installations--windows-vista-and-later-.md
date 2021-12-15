@@ -2,7 +2,6 @@
 title: Debugging Device Installations
 description: Debugging Device Installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Device Installations

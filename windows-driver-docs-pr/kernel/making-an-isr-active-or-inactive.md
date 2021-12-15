@@ -1,7 +1,6 @@
 ---
 title: Making an ISR Active or Inactive
 description: Starting with Windows 8, a driver can call the IoReportInterruptActive or IoReportInterruptInactive routine to make a registered interrupt service routine (ISR) active or inactive.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

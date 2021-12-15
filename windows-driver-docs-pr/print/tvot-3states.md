@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/02/2021
-ms.localizationpriority: medium
 ---
 
 # TVOT_3STATES

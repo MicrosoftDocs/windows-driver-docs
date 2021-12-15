@@ -4,7 +4,6 @@ description: The OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES command sends the list of n
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES (dot11wificxintf.h)

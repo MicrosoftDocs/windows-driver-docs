@@ -2,7 +2,6 @@
 description: Access Control
 title: Access Control
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access Control

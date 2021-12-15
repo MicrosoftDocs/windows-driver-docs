@@ -5,7 +5,6 @@ keywords:
 - INF files WDK non-HID keyboard/mouse
 - SharedDriver entry WDK non-HID keyboard/mouse
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF SharedDriver Entry

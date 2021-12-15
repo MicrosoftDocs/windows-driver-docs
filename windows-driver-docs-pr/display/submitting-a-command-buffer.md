@@ -6,7 +6,6 @@ keywords:
 - submitting command buffers WDK display
 - passing command buffers WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Submitting a Command Buffer

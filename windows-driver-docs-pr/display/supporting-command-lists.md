@@ -9,7 +9,6 @@ keywords:
 - command lists support WDK Windows 2008 R2 display
 - command lists support WDK Windows 2008 R2 display , Direct3D version 11
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting command lists

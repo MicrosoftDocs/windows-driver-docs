@@ -9,7 +9,6 @@ keywords:
 - unregistering network interfaces
 - NdisIfDeregisterInterface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deregistering a Network Interface

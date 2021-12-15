@@ -2,7 +2,6 @@
 title: WIA Components
 description: WIA Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Components

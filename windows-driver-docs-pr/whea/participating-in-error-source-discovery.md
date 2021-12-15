@@ -10,7 +10,6 @@ keywords:
 - PSHED plug-ins WDK WHEA , error source discovery
 - error source discovery WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Participating in Error Source Discovery

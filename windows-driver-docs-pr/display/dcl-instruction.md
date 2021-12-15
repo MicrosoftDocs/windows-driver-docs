@@ -2,7 +2,6 @@
 title: DCL Instruction Format
 description: DCL Instruction Format
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DCL Instruction Format

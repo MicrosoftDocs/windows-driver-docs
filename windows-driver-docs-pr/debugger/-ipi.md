@@ -9,7 +9,6 @@ api_name:
 - ipi
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ipi

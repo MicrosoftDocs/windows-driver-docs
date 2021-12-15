@@ -9,7 +9,6 @@ api_name:
 - INVALID_WORK_QUEUE_ITEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x96: INVALID\_WORK\_QUEUE\_ITEM

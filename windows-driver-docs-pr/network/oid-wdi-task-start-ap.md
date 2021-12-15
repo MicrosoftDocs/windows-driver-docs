@@ -4,7 +4,6 @@ description: OID_WDI_TASK_START_AP requests that the IHV component configures a 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_START_AP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

@@ -5,7 +5,6 @@ keywords:
 - HOTSPOT_HOST_HANDLERS structure Network Drivers Starting with Windows Vista
 - PHOTSPOT_HOST_HANDLERS structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HOTSPOT\_HOST\_HANDLERS structure

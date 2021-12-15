@@ -2,7 +2,6 @@
 title: Reporting Graphics Memory
 description: Reporting Graphics Memory
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Graphics Memory

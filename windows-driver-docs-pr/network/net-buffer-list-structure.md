@@ -7,7 +7,6 @@ keywords:
 - data WDK networking , structures
 - packets WDK networking , data structures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NET\_BUFFER\_LIST Structure

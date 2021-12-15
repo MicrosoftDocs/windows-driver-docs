@@ -6,7 +6,6 @@ keywords:
 - replacing default printer details page
 - default printer details page
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Replacing the Default Printer Details Page

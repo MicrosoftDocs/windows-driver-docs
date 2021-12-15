@@ -7,7 +7,6 @@ keywords:
 - DirectMusic WDK audio , miniport drivers
 - DMus miniport drivers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DMus Miniport Driver

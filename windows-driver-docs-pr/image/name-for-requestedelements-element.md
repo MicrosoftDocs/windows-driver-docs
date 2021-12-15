@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 09/28/2021
-ms.localizationpriority: medium
 ---
 
 # Name for RequestedElements element

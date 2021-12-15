@@ -4,7 +4,6 @@ description: The ACPI_MANIPULATE_LOCK_BUFFER macro is reserved for internal use 
 keywords: 
 - ACPI_MANIPULATE_LOCK_BUFFER structure ACPI Devices
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # ACPI_MANIPULATE_LOCK_BUFFER structure

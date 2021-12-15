@@ -7,7 +7,6 @@ keywords:
 - render states WDK DirectX 8.0
 - render states WDK DirectX 8.0 , high order surfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # High Order Surface Render States

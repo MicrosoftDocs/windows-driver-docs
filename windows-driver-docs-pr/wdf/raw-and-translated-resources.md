@@ -8,7 +8,6 @@ keywords:
 - translated resources WDK KMDF
 - raw resources WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Raw and Translated Resources

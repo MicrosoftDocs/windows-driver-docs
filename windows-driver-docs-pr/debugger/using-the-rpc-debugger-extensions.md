@@ -3,7 +3,6 @@ title: Using the RPC Debugger Extensions
 description: Using the RPC Debugger Extensions
 keywords: ["RPC extensions (rpcexts.dll)", "RPC debugging, extensions (rpcexts.dll)", "rpcexts.dll (RPC extensions)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the RPC Debugger Extensions

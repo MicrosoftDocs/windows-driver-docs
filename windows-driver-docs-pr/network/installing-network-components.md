@@ -8,7 +8,6 @@ keywords:
 - network component installations WDK , steps
 - notifications WDK networking , installing network components
 ms.date: 01/07/2019
-ms.localizationpriority: medium
 ---
 
 # Installing Network Components

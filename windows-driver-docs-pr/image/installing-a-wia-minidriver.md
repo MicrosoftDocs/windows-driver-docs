@@ -2,7 +2,6 @@
 title: Installing a WIA Minidriver
 description: Installing a WIA Minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a WIA Minidriver

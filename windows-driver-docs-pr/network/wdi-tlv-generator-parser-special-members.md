@@ -2,7 +2,6 @@
 title: WDI TLV generator/parser special members
 description: This section describes special members for the WDI TLV generator/parser
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI TLV generator/parser special members

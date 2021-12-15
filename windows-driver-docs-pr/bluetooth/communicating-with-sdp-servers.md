@@ -12,7 +12,6 @@ keywords:
 - advertising services WDK Bluetooth
 - services advertising WDK Bluetooth
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Communicating with SDP Servers Overview

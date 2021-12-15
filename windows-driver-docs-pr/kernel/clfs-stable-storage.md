@@ -3,7 +3,6 @@ title: CLFS Stable Storage
 description: CLFS Stable Storage
 keywords: ["Common Log File System WDK kernel , stable storage", "CLFS WDK kernel , stable storage", "stable storage WDK CLFS", "storage WDK CLFS", "containers WDK CLFS", "logical containers WDK CLFS", "physical containers WDK CLFS", "log I/O blocks WDK CLFS", "blocks WDK CLFS", "block offsets WDK CLFS", "logs WDK CLFS", "physical logs WDK CLFS", "container identifiers WDK CLFS", "record sequence numbers WDK CLFS"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # CLFS Stable Storage

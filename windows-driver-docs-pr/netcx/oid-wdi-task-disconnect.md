@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_DISCONNECT task command is used to terminate a con
 ms.date: 07/30/2021
 keywords:
  - OID_WDI_TASK_DISCONNECT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_DISCONNECT (dot11wificxintf.h)

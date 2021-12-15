@@ -8,7 +8,6 @@ keywords:
 - data transfers WDK SANs
 - transferring data WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Components for Using a SAN

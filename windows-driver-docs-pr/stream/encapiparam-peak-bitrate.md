@@ -2,7 +2,6 @@
 title: ENCAPIPARAM_PEAK_BITRATE
 description: The ENCAPIPARAM_BITRATE property is used to describe the supported peak bit rate range of the device.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ENCAPIPARAM_PEAK_BITRATE

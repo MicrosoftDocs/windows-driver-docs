@@ -2,7 +2,6 @@
 title: Installing a Catalog File by using SignTool
 description: Installing a Catalog File by using SignTool
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Catalog File by using SignTool

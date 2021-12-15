@@ -2,7 +2,6 @@
 title: PCI Power Management and Device Drivers
 description: Clarifies how hardware that complies with PCI Power Management (PCI-PM) interacts with device drivers.
 ms.date: 12/04/2001
-ms.localizationpriority: medium
 ---
 
 # PCI Power Management and Device Drivers

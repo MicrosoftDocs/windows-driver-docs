@@ -9,7 +9,6 @@ api_name:
 - wmitrace.setprefix
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wmitrace.setprefix

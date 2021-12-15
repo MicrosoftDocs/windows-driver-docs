@@ -3,7 +3,6 @@ title: Viewing and Editing Memory in WinDbg
 description: In WinDbg, you can view and edit memory by entering commands or by using a Memory window.
 keywords: ["debugging information windows, Memory window", "Memory window", "memory, Memory window"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing and Editing Memory in WinDbg

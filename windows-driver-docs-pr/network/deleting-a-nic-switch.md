@@ -2,7 +2,6 @@
 title: Deleting a NIC Switch
 description: Deleting a NIC Switch
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deleting a NIC Switch

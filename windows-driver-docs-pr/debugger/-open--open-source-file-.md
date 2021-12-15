@@ -9,7 +9,6 @@ api_name:
 - .open (Open Source File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .open (Open Source File)

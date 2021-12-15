@@ -2,7 +2,6 @@
 title: Obtaining a Function Instance Object
 description: Obtaining a Function Instance Object
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining a Function Instance Object

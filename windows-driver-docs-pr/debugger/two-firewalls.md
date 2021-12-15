@@ -3,7 +3,6 @@ title: Two Firewalls
 description: Two Firewalls
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
 ms.date: 06/08/2020
-ms.localizationpriority: medium
 ---
 
 # Two Firewalls

@@ -2,7 +2,6 @@
 title: Direct3D Driver DDI
 description: Direct3D Driver DDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D Driver DDI

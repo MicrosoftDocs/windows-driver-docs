@@ -4,7 +4,6 @@ description: WDI_TLV_OS_POWER_MANAGEMENT_FEATURES is a TLV that contains flags f
 ms.date: 03/30/2018
 keywords:
  - WDI_TLV_OS_POWER_MANAGEMENT_FEATURES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_OS_POWER_MANAGEMENT_FEATURES

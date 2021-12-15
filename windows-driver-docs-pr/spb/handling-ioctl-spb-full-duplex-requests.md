@@ -2,7 +2,6 @@
 title: Handling IOCTL_SPB_FULL_DUPLEX Requests
 description: Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus.
 ms.date: 09/14/2021
-ms.localizationpriority: medium
 ---
 
 # Handling IOCTL_SPB_FULL_DUPLEX Requests

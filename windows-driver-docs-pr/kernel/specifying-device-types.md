@@ -3,7 +3,6 @@ title: Specifying Device Types
 description: Specifying Device Types
 keywords: ["device objects WDK kernel , device types", "device types WDK device objects"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Device Types

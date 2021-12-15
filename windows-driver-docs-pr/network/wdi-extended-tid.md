@@ -4,7 +4,6 @@ description: This topic describes the WDI_EXTENDED_TID data type for WDI minipor
 keywords:
 - WDI_EXTENDED_TID, WDK WDI_EXTENDED_TID network drivers
 ms.date: 11/27/2017
-ms.localizationpriority: medium
 ---
 
 # WDI_EXTENDED_TID

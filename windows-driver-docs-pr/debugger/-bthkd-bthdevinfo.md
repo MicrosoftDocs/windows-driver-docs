@@ -9,7 +9,6 @@ api_name:
 - bthkd.bthdevinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bthkd.bthdevinfo

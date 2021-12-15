@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_DEVICE_FILTER_LIST is a WiFiCx TLV that contains a list
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_DEVICE_FILTER_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DEVICE\_FILTER\_LIST (dot11wificxtypes.hpp)

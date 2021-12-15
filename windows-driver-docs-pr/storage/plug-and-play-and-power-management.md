@@ -2,7 +2,6 @@
 title: Plug and Play and Power Management
 description: Plug and Play and Power Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Plug and Play and Power Management

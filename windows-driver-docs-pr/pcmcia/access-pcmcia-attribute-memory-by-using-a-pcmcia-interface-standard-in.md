@@ -5,7 +5,6 @@ keywords:
 - PCMCIA_INTERFACE_STANDARD
 - attribute memory WDK PCMCIA bus , PCMCIA_INTERFACE_STANDARD interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access PCMCIA Attribute Memory by Using a PCMCIA\_INTERFACE\_STANDARD Interface

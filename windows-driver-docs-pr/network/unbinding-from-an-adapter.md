@@ -6,7 +6,6 @@ keywords:
 - NDIS protocol drivers WDK , unbinding
 - unbinding from adapter WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unbinding from an Adapter

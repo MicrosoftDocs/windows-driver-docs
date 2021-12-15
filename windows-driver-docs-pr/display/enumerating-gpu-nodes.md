@@ -4,7 +4,6 @@ description: Starting in Windows 8.1, a display miniport driver must implement 
 keywords:
 - GPU nodes, enumerating WDK Display Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating GPU engine capabilities

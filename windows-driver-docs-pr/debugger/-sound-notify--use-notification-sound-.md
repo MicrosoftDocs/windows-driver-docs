@@ -9,7 +9,6 @@ api_name:
 - .sound_notify (Use Notification Sound)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .sound\_notify (Use Notification Sound)

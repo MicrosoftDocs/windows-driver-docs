@@ -3,7 +3,6 @@ title: Building DbgEng Extensions
 description: Building DbgEng Extensions
 keywords: ["DbgEng Extensions, building", "Build utility (build.exe), building DbgEng extensions"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Building DbgEng Extensions

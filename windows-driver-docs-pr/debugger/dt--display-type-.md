@@ -9,7 +9,6 @@ api_name:
 - dt (Display Type)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # dt (Display Type)

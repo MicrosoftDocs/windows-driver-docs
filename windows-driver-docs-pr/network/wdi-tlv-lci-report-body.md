@@ -4,7 +4,6 @@ description: WDI_TLV_LCI_REPORT_BODY is a TLV that contains the Location Configu
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_LCI_REPORT_BODY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

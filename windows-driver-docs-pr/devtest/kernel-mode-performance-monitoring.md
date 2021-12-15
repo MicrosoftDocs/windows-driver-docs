@@ -2,7 +2,6 @@
 title: Kernel Mode Performance Monitoring
 description: Kernel Mode Performance Monitoring
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Kernel Mode Performance Monitoring

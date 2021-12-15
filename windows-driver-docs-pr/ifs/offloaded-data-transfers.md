@@ -8,7 +8,6 @@ keywords:
 - offloaded data transfers, file systems
 - offloaded data transfers, filters
 - offloaded data transfers, minifilters
-ms.localizationpriority: medium
 ms.custom: contperf-fy22q1
 ---
 

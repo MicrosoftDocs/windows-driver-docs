@@ -3,7 +3,6 @@ title: Implementing an IoCompletion Routine
 description: Implementing an IoCompletion Routine
 keywords: ["IoCompletion routines", "IoCompleteRequest routine", "priority boosts WDK IRPs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing an IoCompletion Routine

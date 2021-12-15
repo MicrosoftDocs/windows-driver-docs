@@ -10,7 +10,6 @@ keywords:
 - shutdown WDK networking
 - system shutdown WDK network
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Adapter Shutdown

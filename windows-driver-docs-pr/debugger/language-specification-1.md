@@ -2,7 +2,6 @@
 title: Language Specification 1
 description: Language Specification 1
 ms.date: 09/27/2021
-ms.localizationpriority: medium
 ---
 
 # Language Specification 1

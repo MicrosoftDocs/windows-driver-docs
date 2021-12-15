@@ -4,7 +4,6 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
 ms.date: 11/04/2019
-ms.localizationpriority: medium
 ms.custom: Vib
 ---
 

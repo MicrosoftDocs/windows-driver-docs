@@ -2,7 +2,6 @@
 title: Direct3D 11 video playback improvements
 description: With wider adoption of Microsoft Direct3D 10 technologies in mainstream apps, some app developers want to treat all content the same.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D 11 video playback improvements

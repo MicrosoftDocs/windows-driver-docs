@@ -4,7 +4,6 @@ description: WDI_TLV_RADIO_STATE is a TLV that contains the state of the radio i
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RADIO_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_RADIO\_STATE

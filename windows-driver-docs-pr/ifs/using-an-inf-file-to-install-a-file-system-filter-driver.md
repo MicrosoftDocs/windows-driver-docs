@@ -4,7 +4,6 @@ description: Using an INF File to Install a File System Filter Driver
 keywords:
 - INF files WDK file system filter driver, installation steps
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # Using an INF File to Install a File System Filter Driver

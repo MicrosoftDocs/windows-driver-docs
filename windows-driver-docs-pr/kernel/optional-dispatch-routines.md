@@ -3,7 +3,6 @@ title: Optional Dispatch Routines
 description: Optional Dispatch Routines
 keywords: ["dispatch routines WDK kernel , optional", "optional dispatch routines WDK kernel", "mass storage devices WDK dispatch routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Optional Dispatch Routines

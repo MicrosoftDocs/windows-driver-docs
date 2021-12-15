@@ -2,7 +2,6 @@
 title: Applying WIA Property Settings to the Hardware
 description: Applying WIA Property Settings to the Hardware
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Applying WIA Property Settings to the Hardware

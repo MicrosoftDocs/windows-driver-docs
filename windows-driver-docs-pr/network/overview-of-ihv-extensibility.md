@@ -5,7 +5,6 @@ keywords:
 - IHV extensions WDK Native 802.11 , about IHV extensibility
 - Native 802.11 IHV Extensions WDK , about IHV extensibility
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of IHV Extensibility

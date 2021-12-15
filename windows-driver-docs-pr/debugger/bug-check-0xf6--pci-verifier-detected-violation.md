@@ -9,7 +9,6 @@ api_name:
 - PCI_VERIFIER_DETECTED_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF6: PCI\_VERIFIER\_DETECTED\_VIOLATION

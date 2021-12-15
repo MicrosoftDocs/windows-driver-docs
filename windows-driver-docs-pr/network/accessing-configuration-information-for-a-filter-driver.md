@@ -5,7 +5,6 @@ keywords:
 - filter drivers WDK networking , configuration information
 - NDIS filter drivers WDK , configuration information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Configuration Information for a Filter Driver

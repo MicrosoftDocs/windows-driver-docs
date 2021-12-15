@@ -1,7 +1,6 @@
 ---
 title: GetPresharedKeyForId
 description: GetPresharedKeyForId
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

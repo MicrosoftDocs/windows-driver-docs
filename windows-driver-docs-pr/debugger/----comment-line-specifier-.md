@@ -9,7 +9,6 @@ api_name:
 - (Comment Line Specifier)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # \* (Comment Line Specifier)

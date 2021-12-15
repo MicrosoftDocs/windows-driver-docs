@@ -5,7 +5,6 @@ keywords:
 - filter drivers WDK networking , about filter drivers
 - NDIS filter drivers WDK , about filter drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Getting started with NDIS Filter Drivers

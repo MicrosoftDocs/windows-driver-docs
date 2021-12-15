@@ -2,7 +2,6 @@
 title: Bass Management
 description: Bass Management
 ms.date: 11/07/2018
-ms.localizationpriority: medium
 ---
 
 # Bass Management

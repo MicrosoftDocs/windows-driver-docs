@@ -9,7 +9,6 @@ api_name:
 - UNEXPECTED_KERNEL_MODE_TRAP_M
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1000007F: UNEXPECTED\_KERNEL\_MODE\_TRAP\_M

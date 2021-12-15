@@ -2,7 +2,6 @@
 title: PnP-X for mobile broadband apps
 description: PnP-X for mobile broadband apps
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PnP-X for mobile broadband apps

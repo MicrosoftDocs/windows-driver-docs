@@ -9,7 +9,6 @@ api_name:
 - threadtoken
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !threadtoken

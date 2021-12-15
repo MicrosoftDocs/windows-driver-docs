@@ -7,7 +7,6 @@ keywords:
 - stride WDK DirectX VA
 - deinterlacing WDK DirectX VA , bob, mechanics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bob Deinterlacing Mechanics

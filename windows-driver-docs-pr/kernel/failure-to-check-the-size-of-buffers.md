@@ -3,7 +3,6 @@ title: Failure to Check the Size of Buffers
 description: Failure to Check the Size of Buffers
 keywords: ["buffer size WDK kernel", "input buffers WDK kernel", "output buffers WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Failure to Check the Size of Buffers

@@ -10,7 +10,6 @@ keywords:
 - reference rasterizers WDK DirectDraw
 - rasterizers WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Compressed Texture Surfaces

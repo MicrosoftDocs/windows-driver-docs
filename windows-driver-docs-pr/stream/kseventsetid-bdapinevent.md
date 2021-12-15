@@ -2,7 +2,6 @@
 title: KSEVENTSETID_BdaPinEvent
 description: KSEVENTSETID_BdaPinEvent is the BDA pin event set.
 ms.date: 10/12/2021
-ms.localizationpriority: medium
 ---
 
 # KSEVENTSETID_BdaPinEvent

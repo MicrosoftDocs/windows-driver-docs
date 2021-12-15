@@ -8,7 +8,6 @@ keywords:
 - validating security WDK file systems
 - checking security
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access control in a driver

@@ -2,7 +2,6 @@
 title: UMDF Verifier Properties for Driver Package Projects
 description: Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UMDF Verifier Properties for Driver Package Projects

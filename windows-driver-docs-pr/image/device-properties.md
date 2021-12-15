@@ -2,7 +2,6 @@
 title: Imaging device properties
 description: Imaging device properties
 ms.date: 07/06/2020
-ms.localizationpriority: medium
 ---
 
 # Imaging device properties

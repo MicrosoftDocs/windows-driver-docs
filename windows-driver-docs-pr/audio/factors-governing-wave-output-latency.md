@@ -16,7 +16,6 @@ keywords:
 - time WDK audio
 - buffers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Factors Governing Wave-Output Latency

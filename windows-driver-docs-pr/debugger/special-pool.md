@@ -3,7 +3,6 @@ title: Special Pool
 description: Special Pool
 keywords: ["Special Pool", "Special Pool, overview", "GFlags, Special Pool"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Special Pool

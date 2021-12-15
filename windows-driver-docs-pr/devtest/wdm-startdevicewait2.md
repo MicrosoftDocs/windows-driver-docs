@@ -9,7 +9,6 @@ api_name:
 - StartDeviceWait2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StartDeviceWait2 rule (wdm)

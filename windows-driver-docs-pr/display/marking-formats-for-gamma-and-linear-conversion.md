@@ -6,7 +6,6 @@ keywords:
 - marking formats for conversion WDK DirectX 9.0
 - linear conversions WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Marking Formats for Gamma and Linear Conversion

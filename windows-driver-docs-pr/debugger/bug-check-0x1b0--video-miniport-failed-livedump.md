@@ -9,7 +9,6 @@ api_name:
 - VIDEO_MINIPORT_FAILED_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1B0: VIDEO\_MINIPORT\_FAILED\_LIVEDUMP

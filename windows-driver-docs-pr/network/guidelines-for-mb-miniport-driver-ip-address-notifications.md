@@ -2,7 +2,6 @@
 title: Guidelines for MB Miniport Driver IP Address Notifications
 description: Guidelines for MB Miniport Driver IP Address Notifications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Guidelines for MB Miniport Driver IP Address Notifications

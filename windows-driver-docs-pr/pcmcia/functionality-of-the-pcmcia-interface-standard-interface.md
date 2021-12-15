@@ -2,7 +2,6 @@
 title: Functionality of the PCMCIA_INTERFACE_STANDARD Interface
 description: Functionality of the PCMCIA_INTERFACE_STANDARD Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Functionality of the PCMCIA\_INTERFACE\_STANDARD Interface

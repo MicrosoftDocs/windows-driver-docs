@@ -4,7 +4,6 @@ description: WDI_TLV_OWE_DH_IE is a WiFiCx TLV that must be included in the asso
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_OWE_DH_IE WiFiCx
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_OWE\_DH\_IE (dot11wificxtypes.hpp)

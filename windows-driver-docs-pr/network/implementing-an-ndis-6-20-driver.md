@@ -4,7 +4,6 @@ description: Implementing an NDIS 6.20 Driver
 keywords:
 - NDIS 6.20 WDK , implementing a driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing an NDIS 6.20 Driver

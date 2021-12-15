@@ -2,7 +2,6 @@
 title: Creating a Private Build of an Inbox Driver
 description: Creating a Private Build of an Inbox Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Private Build of an Inbox Driver

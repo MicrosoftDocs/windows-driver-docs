@@ -11,7 +11,6 @@ keywords:
 - callback functions WDK DirectDraw motion compensation
 - digital video decoding WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Motion Compensation Callbacks

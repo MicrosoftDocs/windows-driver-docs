@@ -6,7 +6,6 @@ keywords:
 - disallow fast I/O operations WDK file system minifilter
 - fast I/O disallowed WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disallow a Fast I/O Operation in a Preoperation Callback Routine

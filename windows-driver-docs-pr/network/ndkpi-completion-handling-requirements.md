@@ -2,7 +2,6 @@
 title: NDKPI Completion Handling Requirements
 description: NDK consumers and NDK providers must follow these requirements for NDKPI completion handling.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDKPI Completion Handling Requirements

@@ -7,7 +7,6 @@ keywords:
 - multiple display devices simultaneously WDK video miniport
 - SingleView WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting DualView (Windows 2000 Model)

@@ -9,7 +9,6 @@ api_name:
 - FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x22: FILE\_SYSTEM

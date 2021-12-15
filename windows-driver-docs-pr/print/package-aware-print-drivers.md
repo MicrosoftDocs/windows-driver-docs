@@ -4,7 +4,6 @@ description: Package-Aware Print Drivers
 keywords:
 - package-aware print drivers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Package-Aware Print Drivers

@@ -3,7 +3,6 @@ title: The AMLI Debugger
 description: This topic describes the AMLI Debugger
 keywords: AML debugging, ACPI debugging, AMLI, BIOS debugging, ACPI Machine Language, debugging
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # The AMLI Debugger

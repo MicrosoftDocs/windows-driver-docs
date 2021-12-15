@@ -3,7 +3,6 @@ title: Monitoring Events
 description: Monitoring Events
 keywords: ["Debugger Engine, events", "events"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Monitoring Events

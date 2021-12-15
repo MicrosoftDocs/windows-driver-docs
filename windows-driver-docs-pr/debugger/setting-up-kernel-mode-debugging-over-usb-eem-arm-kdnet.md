@@ -2,7 +2,6 @@
 title: Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET
 description: Debugging Tools for Windows supports kernel debugging over a USB cable using EEM on an ARM device. This topic describes how to set up USB EEM on an ARM device using the kdnet.exe utility.
 ms.date: 11/23/2020
-ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET

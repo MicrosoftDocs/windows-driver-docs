@@ -4,7 +4,6 @@ description: Constraints on Dispatch Routines
 keywords:
 - IRP dispatch routines WDK file system , constraints
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Constraints on Dispatch Routines

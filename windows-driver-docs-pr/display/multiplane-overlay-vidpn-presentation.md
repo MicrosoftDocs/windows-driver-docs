@@ -2,7 +2,6 @@
 title: Multiplane overlay VidPN presentation
 description: Requirements that apply to functions used to present on multiple surfaces.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiplane overlay VidPN presentation

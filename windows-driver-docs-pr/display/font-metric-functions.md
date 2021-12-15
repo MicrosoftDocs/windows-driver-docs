@@ -16,7 +16,6 @@ keywords:
 - size WDK fonts
 - metric functions WDK fonts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Font Metric Functions

@@ -9,7 +9,6 @@ api_name:
 - ACPI_BIOS_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE0: ACPI\_BIOS\_FATAL\_ERROR

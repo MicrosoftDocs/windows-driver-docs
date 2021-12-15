@@ -9,7 +9,6 @@ api_name:
 - acpikd.help
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !acpikd.help

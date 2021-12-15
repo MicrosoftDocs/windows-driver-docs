@@ -5,7 +5,6 @@ keywords:
 - two-dimensional operations WDK DirectX 9.0
 - 2D operations WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Two-Dimensional Operations

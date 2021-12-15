@@ -5,7 +5,6 @@ keywords:
 - semantic model checks WDK file systems
 - semantic model checks WDK file systems , about semantic model checks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Semantic Model Checks

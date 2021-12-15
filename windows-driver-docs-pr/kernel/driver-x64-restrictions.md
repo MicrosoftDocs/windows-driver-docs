@@ -1,7 +1,6 @@
 ---
 title: Driver x64 Restrictions
 description: Driver x64 Restrictions
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

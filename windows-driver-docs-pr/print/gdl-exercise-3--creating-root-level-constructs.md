@@ -9,7 +9,6 @@ keywords:
 - constructs WDK GDL , creating constructs
 - creating GDL constructs WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Exercise 3: Creating Root-Level Constructs

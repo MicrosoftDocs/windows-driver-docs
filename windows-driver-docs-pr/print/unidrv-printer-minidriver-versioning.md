@@ -5,7 +5,6 @@ keywords:
 - minidrivers WDK Unidrv
 - version numbers WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv Printer Minidriver Versioning

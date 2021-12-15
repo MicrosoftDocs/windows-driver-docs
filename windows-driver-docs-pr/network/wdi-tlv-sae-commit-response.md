@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_COMMIT_RESPONSE is a TLV that contains the Simultaneous
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_COMMIT_RESPONSE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

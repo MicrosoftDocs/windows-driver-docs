@@ -7,7 +7,6 @@ keywords:
 - UART WDK serial devices
 - 16550 UART-compatible interfaces WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Serial Devices that Use a 16550 UART-Compatible Interface

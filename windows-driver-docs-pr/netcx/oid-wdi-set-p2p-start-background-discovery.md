@@ -4,7 +4,6 @@ description: The OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY command instructs th
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY (dot11wificxintf.h)

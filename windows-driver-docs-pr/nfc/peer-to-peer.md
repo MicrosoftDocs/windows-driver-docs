@@ -8,7 +8,6 @@ keywords:
 - NFP
 description: Information about NFC forum defined peer-to-peer standards and protocols that ensure devices are able to interact using NFC.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Peer-to-peer

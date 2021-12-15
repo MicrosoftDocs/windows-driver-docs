@@ -7,7 +7,6 @@ keywords:
 - KS properties WDK DVD decoder
 - property sets WDK DVD decoder
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DVD Decoder Related KS Properties

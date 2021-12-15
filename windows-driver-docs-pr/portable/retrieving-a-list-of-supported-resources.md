@@ -2,7 +2,6 @@
 description: Retrieving a list of Supported Resources
 title: Retrieving a list of Supported Resources
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving a list of Supported Resources

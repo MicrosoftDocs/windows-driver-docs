@@ -3,7 +3,6 @@ title: Guidelines for Writing PnP Notification Callback Routines
 description: Guidelines for Writing PnP Notification Callback Routines
 keywords: ["notifications WDK PnP , callback routines", "callback routines WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Guidelines for Writing PnP Notification Callback Routines

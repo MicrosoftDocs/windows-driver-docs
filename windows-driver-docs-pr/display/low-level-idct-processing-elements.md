@@ -9,7 +9,6 @@ keywords:
 - inverse discrete-cosine transform WDK DirectX VA
 - IDCT WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Low-Level IDCT Processing Elements

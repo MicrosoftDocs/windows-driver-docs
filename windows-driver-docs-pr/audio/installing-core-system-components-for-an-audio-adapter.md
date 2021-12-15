@@ -6,7 +6,6 @@ keywords:
 - adapter drivers WDK audio , system components
 - Port Class audio adapters WDK , system components
 ms.date: 10/27/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Core System Components for an Audio Adapter

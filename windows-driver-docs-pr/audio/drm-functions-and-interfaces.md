@@ -9,7 +9,6 @@ keywords:
 - interfaces WDK DRM
 - functions WDK DRM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DRM Functions and Interfaces

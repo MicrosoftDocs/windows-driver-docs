@@ -6,7 +6,6 @@ keywords:
 - spin locks WDK video miniport
 - locking WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Spin Locks in Video Miniport Drivers

@@ -3,7 +3,6 @@ title: Logger
 description: Logger
 keywords: ["Logger, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Logger

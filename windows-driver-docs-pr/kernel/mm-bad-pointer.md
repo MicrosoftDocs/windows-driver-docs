@@ -1,7 +1,6 @@
 ---
 title: MM_BAD_POINTER macro
 description: MM_BAD_POINTER macro
-ms.localizationpriority: medium
 ms.date: 07/16/2021
 ---
 

@@ -4,7 +4,6 @@ description: General Guidelines for INF Files
 keywords:
 - INF files WDK device installations , general guidelines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Guidelines for INF Files

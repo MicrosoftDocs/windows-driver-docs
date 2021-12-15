@@ -4,7 +4,6 @@ description: WiFiCx does not use the WDI_TLV_CIPHER_KEY_GCMP_KEY TLV.
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_GCMP_KEY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_GCMP\_KEY (dot11wificxtypes.hpp)

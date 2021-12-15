@@ -2,7 +2,6 @@
 title: How do I enable debugging without starting an ETW trace session
 description: How do I enable debugging without starting an ETW trace session
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I enable debugging without starting an ETW trace session?

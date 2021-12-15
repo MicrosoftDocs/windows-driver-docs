@@ -9,7 +9,6 @@ api_name:
 - ahcache
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ahcache

@@ -10,7 +10,6 @@ keywords:
 - PnP WDK device installations
 - Plug and Play WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Functions that Simplify Driver Installation

@@ -4,7 +4,6 @@ description: Compressed Picture Decoding Set
 keywords:
 - compressed picture decoding set WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Compressed Picture Decoding Set

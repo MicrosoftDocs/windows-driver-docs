@@ -9,7 +9,6 @@ api_name:
 - for_each_module
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !for\_each\_module

@@ -2,7 +2,6 @@
 title: Minidriver Version 7.07 Features
 description: Minidriver Version 7.07 Features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minidriver Version 7.07 Features

@@ -7,7 +7,6 @@ keywords:
 - low I/O routines WDK RDBSS
 - I/O WDK RDBSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Low I/O Routines

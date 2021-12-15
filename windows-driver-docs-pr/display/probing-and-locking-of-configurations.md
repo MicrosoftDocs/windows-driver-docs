@@ -10,7 +10,6 @@ keywords:
 - probing configurations WDK DirectX VA
 - configuration probing and locking WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Probing and Locking of Configurations

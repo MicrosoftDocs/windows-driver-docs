@@ -9,7 +9,6 @@ keywords:
 - halting adapters
 - stopping adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Halting a Miniport Adapter

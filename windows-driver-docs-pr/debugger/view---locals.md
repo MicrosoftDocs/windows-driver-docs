@@ -3,7 +3,6 @@ title: View Locals
 description: View Locals
 keywords: ["View Locals"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Locals

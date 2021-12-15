@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 06/24/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOHDR

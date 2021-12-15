@@ -2,7 +2,6 @@
 title: Debugger Data Model - Control Flow Objects
 description: For fully analyzed disassembly, each basic block contains a set of control flow objects.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Control Flow Objects 
 ## Summary

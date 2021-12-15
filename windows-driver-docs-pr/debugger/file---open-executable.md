@@ -3,7 +3,6 @@ title: File Open Executable
 description: File Open Executable
 keywords: ["File Open Executable", "starting the debugger, File Open Executable"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Open Executable

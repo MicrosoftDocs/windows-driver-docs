@@ -12,7 +12,6 @@ keywords:
 - callbacks WDK joysticks
 - polling WDK joysticks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Original Interface

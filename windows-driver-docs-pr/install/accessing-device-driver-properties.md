@@ -2,7 +2,6 @@
 title: Accessing Device Driver Properties
 description: Accessing Device Driver Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Device Driver Properties

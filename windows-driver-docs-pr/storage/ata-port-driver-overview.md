@@ -7,7 +7,6 @@ keywords:
 - ATA Port drivers WDK , about ATA Port drivers
 - IDE controllers WDK ATA Port driver
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # ATA Port Driver Overview

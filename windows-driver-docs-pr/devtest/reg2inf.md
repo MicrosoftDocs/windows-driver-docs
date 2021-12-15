@@ -2,7 +2,6 @@
 title: Reg2inf
 description: Reg2inf is a tool that converts registry keys to make a driver package universal.
 ms.date: 04/28/2020
-ms.localizationpriority: medium
 ---
 
 # Reg2inf

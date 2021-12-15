@@ -2,7 +2,6 @@
 title: Introduction to Extra Create Parameters
 description: Introduction to Extra Create Parameters
 ms.date: 09/09/2021
-ms.localizationpriority: medium
 ---
 
 # Introduction to Extra Create Parameters

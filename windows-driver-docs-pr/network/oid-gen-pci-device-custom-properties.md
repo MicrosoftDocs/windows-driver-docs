@@ -4,7 +4,6 @@ description: As a query, overlying drivers use the OID_GEN_PCI_DEVICE_CUSTOM_PRO
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES

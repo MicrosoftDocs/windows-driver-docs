@@ -2,7 +2,6 @@
 description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
 title: Case Study - Troubleshooting an unknown USB device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Case Study: Troubleshooting an unknown USB device by using ETW and Netmon

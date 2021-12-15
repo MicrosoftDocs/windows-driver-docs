@@ -4,7 +4,6 @@ description: As a set request, NDIS and overlying drivers use the OID_NDK_SET_ST
 ms.date: 08/08/2017
 keywords: 
  -OID_NDK_SET_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NDK\_SET\_STATE

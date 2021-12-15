@@ -5,7 +5,6 @@ keywords:
 - NDIS WDK , initializing drivers
 - initializing drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Easier Initialization

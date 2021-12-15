@@ -2,7 +2,6 @@
 title: Debugger Data Model - Basic Block Objects
 description: Basic Blocks are regions of code with (typically) one entry point and one exit point.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Basic Block Objects 
 ## Summary

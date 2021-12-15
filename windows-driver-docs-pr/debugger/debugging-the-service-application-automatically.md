@@ -2,7 +2,6 @@
 title: Debugging the Service Application Automatically
 description: Debugging the Service Application Automatically
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging the Service Application Automatically

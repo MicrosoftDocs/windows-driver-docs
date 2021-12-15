@@ -8,7 +8,6 @@ keywords:
 - PPD files WDK Pscript
 - PPD-specific interface WDK Pscript
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PPD-Specific Interface

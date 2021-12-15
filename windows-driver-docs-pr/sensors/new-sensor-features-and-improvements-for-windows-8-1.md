@@ -2,7 +2,6 @@
 title: New sensor features and improvements for Windows 8.1
 description: This topic summarizes the new features and improvements for Sensors in WindowsWindows 8.1.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # New sensor features and improvements for Windows 8.1

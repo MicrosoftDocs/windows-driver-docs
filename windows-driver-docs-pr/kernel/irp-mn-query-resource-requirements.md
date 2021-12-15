@@ -4,7 +4,6 @@ description: The PnP manager uses this IRP to get a device's resource requiremen
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_RESOURCE_REQUIREMENTS Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS

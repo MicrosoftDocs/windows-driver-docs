@@ -17,7 +17,6 @@ keywords:
 - non-fatal hardware errors WDK WHEA
 - hardware error sources WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Errors and Error Sources

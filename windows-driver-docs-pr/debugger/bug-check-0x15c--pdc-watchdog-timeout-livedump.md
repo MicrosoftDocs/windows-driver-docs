@@ -9,7 +9,6 @@ api_name:
 - PDC_WATCHDOG_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15C: PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP

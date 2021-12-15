@@ -6,7 +6,6 @@ keywords:
 - test signing catalog files WDK
 - test signing driver packages WDK , catalog files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Test-Signing a Catalog File

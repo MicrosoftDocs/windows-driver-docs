@@ -7,7 +7,6 @@ keywords:
 - drivers
 - known issues
 ms.date: 12/16/2020
-ms.localizationpriority: medium
 ---
 
 # Windows Driver Kit (WDK) known issues

@@ -4,7 +4,6 @@ description: ACPI _DSD methods for supporting Modern Standby and PCI hot plug sc
 ms:assetid: 44ad67da-f374-4a8e-80bd-d531853088a2
 keywords: ACPI, ACPI \_DSD method
 ms.date: 05/29/2020
-ms.localizationpriority: medium
 ---
 
 # ACPI Interface: Device Specific Data (\_DSD) for PCIe Root Ports

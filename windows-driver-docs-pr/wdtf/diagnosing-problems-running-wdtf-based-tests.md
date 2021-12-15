@@ -2,7 +2,6 @@
 title: Diagnosing problems running WDTF-based tests
 description: To help you troubleshoot problems running WDTF-based test, you can use a debugger.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Diagnosing problems running WDTF-based tests

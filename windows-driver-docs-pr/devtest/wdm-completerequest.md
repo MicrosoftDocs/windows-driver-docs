@@ -9,7 +9,6 @@ api_name:
 - CompleteRequest
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CompleteRequest rule (wdm)

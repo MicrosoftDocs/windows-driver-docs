@@ -12,7 +12,6 @@ keywords:
 - applications WDK device installation
 - device installations WDK , applications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing a Device Installation Application

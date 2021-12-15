@@ -9,7 +9,6 @@ api_name:
 - TTM_WATCHDOG_TIMEOUT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A0: TTM\_WATCHDOG\_TIMEOUT

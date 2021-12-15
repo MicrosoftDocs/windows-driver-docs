@@ -3,7 +3,6 @@ title: File Disconnect Network Drive
 description: File Disconnect Network Drive
 keywords: ["File Disconnect Network Drive", "shell commands, File Disconnect Network Drive"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Disconnect Network Drive

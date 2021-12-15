@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_CHANNEL_ENTRY_LIST is a WiFiCx TLV that contains a chan
 ms.date: 08/31/2021
 keywords:
  - WDI_TLV_P2P_CHANNEL_ENTRY_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_CHANNEL\_ENTRY\_LIST (dot11wificxtypes.hpp)

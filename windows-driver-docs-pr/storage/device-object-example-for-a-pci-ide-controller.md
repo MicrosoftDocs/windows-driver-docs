@@ -7,7 +7,6 @@ keywords:
 - PCI IDE controller example WDK storage
 - IDE controllers WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Object Example for a PCI IDE Controller

@@ -1,7 +1,6 @@
 ---
 title: iSCSI WMI Network Classes
 description: iSCSI WMI Network Classes
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

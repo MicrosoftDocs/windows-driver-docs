@@ -2,7 +2,6 @@
 title: How WIA minidriver receives disconnect from WIA
 description: How the WIA minidriver receives a disconnect event from the WIA service
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How the WIA minidriver receives a disconnect event from the WIA service

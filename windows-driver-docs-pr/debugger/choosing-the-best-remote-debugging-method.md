@@ -3,7 +3,6 @@ title: Choosing the Best Remote Debugging Method
 description: Choosing the Best Remote Debugging Method
 keywords: ["remote debugging, choosing the best method"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Choosing the Best Remote Debugging Method

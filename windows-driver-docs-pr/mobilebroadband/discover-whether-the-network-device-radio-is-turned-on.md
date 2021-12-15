@@ -2,7 +2,6 @@
 title: Discover whether the network device radio is turned on
 description: Discover whether the network device radio is turned on
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Discover whether the network device radio is turned on

@@ -4,7 +4,6 @@ description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_
 ms.date: 08/08/2017
 keywords: 
  -OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_UPDATE\_SA

@@ -11,7 +11,6 @@ keywords:
 - pins WDK audio , filter graphs
 - KS filter graphs WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Filter Graphs

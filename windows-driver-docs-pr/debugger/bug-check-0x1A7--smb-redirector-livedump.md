@@ -9,7 +9,6 @@ api_name:
 - SMB_REDIRECTOR_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A7: SMB\_REDIRECTOR\_LIVEDUMP

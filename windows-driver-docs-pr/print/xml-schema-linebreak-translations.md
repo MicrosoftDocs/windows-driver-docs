@@ -7,7 +7,6 @@ keywords:
 - schemas WDK GDL
 - snapshots WDK GDL , linebreaks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XML Schema Linebreak Translations

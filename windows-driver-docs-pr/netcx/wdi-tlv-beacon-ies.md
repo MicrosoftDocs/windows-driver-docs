@@ -4,7 +4,6 @@ description: WDI_TLV_BEACON_IES is a WiFiCx TLV that contains beacon IEs from an
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_BEACON_IES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BEACON\_IES (dot11wificxtypes.hpp)

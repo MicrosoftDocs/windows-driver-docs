@@ -3,7 +3,6 @@ title: Choosing Network Security Credentials
 description: Choosing Network Security Credentials
 keywords: ["SymProxy, network security"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Choosing Network Security Credentials

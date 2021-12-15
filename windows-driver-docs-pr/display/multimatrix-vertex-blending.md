@@ -13,7 +13,6 @@ keywords:
 - joint blending WDK Direct3D
 - matrix vertex blending WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multimatrix Vertex Blending

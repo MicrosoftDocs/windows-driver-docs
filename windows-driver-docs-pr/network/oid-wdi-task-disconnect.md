@@ -4,7 +4,6 @@ description: OID_WDI_TASK_DISCONNECT is used to terminate a connection with a pe
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DISCONNECT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_DISCONNECT

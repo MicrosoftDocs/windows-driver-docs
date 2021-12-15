@@ -9,7 +9,6 @@ keywords:
 - filters WDK XPS
 - IPrintPipelineFilter
 ms.date: 06/15/2020
-ms.localizationpriority: medium
 ---
 
 # XPS Filters

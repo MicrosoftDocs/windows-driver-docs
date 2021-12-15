@@ -12,7 +12,6 @@ api_name:
 - WinDbg Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WinDbg Command-Line Options

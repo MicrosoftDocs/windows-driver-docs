@@ -9,7 +9,6 @@ keywords:
 - security WDK COPP
 - authentication WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Communicating Through a Secure Channel

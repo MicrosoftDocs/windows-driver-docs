@@ -9,7 +9,6 @@ api_name:
 - .kframes (Set Stack Length)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .kframes (Set Stack Length)

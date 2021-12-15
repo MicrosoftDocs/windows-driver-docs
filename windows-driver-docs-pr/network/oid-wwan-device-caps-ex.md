@@ -4,7 +4,6 @@ description: OID_WWAN_DEVICE_CAPS_EX is a similar but different OID from OID_WWA
 keywords:
 - OID_WWAN_DEVICE_CAPS_EX, OID per executor, device capability ex
 ms.date: 04/04/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

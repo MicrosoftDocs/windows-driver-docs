@@ -2,7 +2,6 @@
 title: D3D Runtime Functions called by User-Mode Display Drivers
 description: This topic references the functions that the Microsoft Direct3D runtime supplies to the user-mode display driver.
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

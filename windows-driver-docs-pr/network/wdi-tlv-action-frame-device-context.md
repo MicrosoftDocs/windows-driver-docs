@@ -4,7 +4,6 @@ description: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT is a TLV that contains an Actio
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ACTION\_FRAME\_DEVICE\_CONTEXT

@@ -4,7 +4,6 @@ description: This section contains kernel mode network driver topics for the Mst
 keywords:
 - Mstcpip.h network drivers
 ms.date: 08/08/2017
-ms.localizationpriority: medium
 ---
 
 # Mstcpip.h

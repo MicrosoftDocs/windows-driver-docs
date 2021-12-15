@@ -4,7 +4,6 @@ description: Receiving Data in a Filter Driver
 keywords:
 - receiving data WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving Data in a Filter Driver

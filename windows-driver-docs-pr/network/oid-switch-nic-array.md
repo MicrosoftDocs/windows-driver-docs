@@ -4,7 +4,6 @@ description: A Hyper-V extensible switch extension issues an object identifier (
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_NIC_ARRAY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_NIC\_ARRAY

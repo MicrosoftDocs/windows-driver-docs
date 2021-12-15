@@ -1,7 +1,6 @@
 ---
 title: Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface
 description: Starting with Windows 8, drivers can call the routines in the GUID_D3COLD_SUPPORT_INTERFACE interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

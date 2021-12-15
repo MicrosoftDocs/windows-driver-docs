@@ -9,7 +9,6 @@ api_name:
 - scsikd.scsiext
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !scsikd.scsiext

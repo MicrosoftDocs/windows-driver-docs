@@ -12,7 +12,6 @@ keywords:
 - driver-file version numbers WDK audio
 - driver version numbers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Internal and External Version Numbers

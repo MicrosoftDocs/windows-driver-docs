@@ -4,7 +4,6 @@ description: Creating a Trace Session for a Registered Provider
 keywords:
 - registered providers WDK software tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Trace Session for a Registered Provider

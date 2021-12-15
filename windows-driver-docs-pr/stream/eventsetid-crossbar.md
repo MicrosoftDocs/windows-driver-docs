@@ -2,7 +2,6 @@
 title: EVENTSETID_CROSSBAR
 description: The EVENTSETID_CROSSBAR event set notifies clients when a crossbar change event occurs
 ms.date: 10/11/2021
-ms.localizationpriority: medium
 ---
 
 # EVENTSETID_CROSSBAR

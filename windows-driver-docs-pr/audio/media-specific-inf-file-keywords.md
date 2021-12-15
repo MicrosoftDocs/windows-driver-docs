@@ -8,7 +8,6 @@ keywords:
 - media-specific INF file keywords WDK audio
 - INF file media keywords WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Media-Specific INF File Keywords

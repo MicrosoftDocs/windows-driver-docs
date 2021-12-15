@@ -9,7 +9,6 @@ api_name:
 - gle
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !gle

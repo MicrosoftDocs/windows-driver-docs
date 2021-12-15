@@ -4,7 +4,6 @@ description: OID_WDI_TASK_DOT11_RESET requests that the IHV component resets the
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DOT11_RESET Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

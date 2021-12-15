@@ -4,7 +4,6 @@ description: Unidrv-based or PScript5-based XPSDrv Driver Changes
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv-based or PScript5-based XPSDrv Driver Changes

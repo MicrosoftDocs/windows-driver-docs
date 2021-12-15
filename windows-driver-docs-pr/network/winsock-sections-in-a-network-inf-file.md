@@ -6,7 +6,6 @@ keywords:
 - network INF files WDK , Winsock sections
 - Winsock sections WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Winsock Sections in a Network INF File

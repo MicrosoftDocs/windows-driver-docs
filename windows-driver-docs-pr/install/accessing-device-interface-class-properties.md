@@ -2,7 +2,6 @@
 title: Accessing Device Interface Class Properties
 description: Accessing Device Interface Class Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Device Interface Class Properties

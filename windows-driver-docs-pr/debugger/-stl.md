@@ -9,7 +9,6 @@ api_name:
 - stl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !stl

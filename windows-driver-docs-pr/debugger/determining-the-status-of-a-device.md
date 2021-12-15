@@ -3,7 +3,6 @@ title: Determining the Status of a Device
 description: Determining the Status of a Device
 keywords: ["Plug and Play (PnP), device status", "Plug and Play (PnP), device tree", "device status", "device tree"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the Status of a Device

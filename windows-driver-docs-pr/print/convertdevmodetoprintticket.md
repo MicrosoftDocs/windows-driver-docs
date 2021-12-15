@@ -4,7 +4,6 @@ description: The ConvertDevModeToPrintTicket method is called for each print dri
 keywords:
 - ConvertDevModeToPrintTicket
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ConvertDevModeToPrintTicket overview

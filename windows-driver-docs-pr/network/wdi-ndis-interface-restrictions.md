@@ -2,7 +2,6 @@
 title: WDI NDIS interface restrictions
 description: The WDI IHV miniport driver has access to all of the functionality provided by NDIS and KMDF.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI NDIS interface restrictions

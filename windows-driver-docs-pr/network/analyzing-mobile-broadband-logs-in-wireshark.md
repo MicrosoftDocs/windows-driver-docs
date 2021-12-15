@@ -2,7 +2,6 @@
 title: Analyzing Mobile Broadband Logs in Wireshark
 description: Analyzing Mobilebroadband logs in Wireshark
 ms.date: 07/31/2021
-ms.localizationpriority: medium
 ---
 
 # Analyzing Mobile Broadband Logs in Wireshark

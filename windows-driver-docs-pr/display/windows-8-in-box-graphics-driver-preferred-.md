@@ -2,7 +2,6 @@
 title: Windows 8 in-box graphics driver preferred
 description: In this scenario, Windows 8 in-box graphics driver are preferred over Windows 7 or older graphics drivers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # <span id="display.windows_8_in-box_graphics_driver_preferred_"></span>Windows 8 in-box graphics driver preferred

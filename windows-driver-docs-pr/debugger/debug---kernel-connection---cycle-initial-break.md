@@ -3,7 +3,6 @@ title: Debug Kernel Connection Cycle Initial Break
 description: Debug Kernel Connection Cycle Initial Break
 keywords: ["Debug Kernel Connection Cycle Initial Break"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Kernel Connection | Cycle Initial Break

@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 03/03/2020
-ms.localizationpriority: medium
 ---
 
 # PnPUtil Command Syntax

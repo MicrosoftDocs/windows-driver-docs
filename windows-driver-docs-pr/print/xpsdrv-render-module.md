@@ -10,7 +10,6 @@ keywords:
 - Inter-Filter Communicator WDK XPSDrv
 - IFC WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Render Module

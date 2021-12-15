@@ -10,7 +10,6 @@ keywords:
 - PFA WDK WHEA
 - failure analysis WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Predictive Failure Analysis (PFA)

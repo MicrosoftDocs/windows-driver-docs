@@ -3,7 +3,6 @@ title: Setting Up the System DMA Controller for Common-Buffer DMA
 description: Setting Up the System DMA Controller for Common-Buffer DMA
 keywords: ["system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "AllocateAdapterChannel", "MapTransfer"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up the System DMA Controller for Common-Buffer DMA

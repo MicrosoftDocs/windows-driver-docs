@@ -2,7 +2,6 @@
 title: Network camera design guide
 description: Describes the network camera control and property sets.
 ms.date: 06/24/2021
-ms.localizationpriority: medium
 ---
 
 # Network camera design guide

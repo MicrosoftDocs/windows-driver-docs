@@ -2,7 +2,6 @@
 title: WSD Scan Service Operation Elements
 description: WSD Scan Service Operation Elements
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WSD Scan Service Operation Elements

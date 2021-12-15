@@ -2,7 +2,6 @@
 title: Querying Packet Coalescing Receive Filters
 description: Querying Packet Coalescing Receive Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying Packet Coalescing Receive Filters

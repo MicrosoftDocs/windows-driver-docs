@@ -10,7 +10,6 @@ keywords:
 - PSHED plug-ins WDK WHEA , error source control
 - error source control WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Error Source Control

@@ -2,7 +2,6 @@
 title: Sensor driver best practices
 description: Sensor driver best practices
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Sensor driver best practices

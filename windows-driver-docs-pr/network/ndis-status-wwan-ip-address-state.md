@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_IP_ADDRESS_STATE notifica
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_IP_ADDRESS_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_IP\_ADDRESS\_STATE

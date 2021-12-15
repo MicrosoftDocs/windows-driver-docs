@@ -8,7 +8,6 @@ keywords:
 - DrvGetModes
 - display modes WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Returning Display Modes: DrvGetModes

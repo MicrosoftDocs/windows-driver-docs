@@ -9,7 +9,6 @@ keywords:
 - capture effects WDK audio
 - full-duplex applications WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectSound Capture Effects

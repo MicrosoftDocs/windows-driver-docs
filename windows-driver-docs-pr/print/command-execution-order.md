@@ -5,7 +5,6 @@ keywords:
 - printer commands WDK Unidrv , execution order
 - sequence numbers WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command Execution Order

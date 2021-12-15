@@ -15,7 +15,6 @@ keywords:
 - pipeline support for Direct3D version 11 WDK Windows 7 display
 - pipeline support for Direct3D version 11 WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Threading, Command Lists, and 3-D Pipeline

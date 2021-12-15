@@ -3,7 +3,6 @@ title: Enable pool tagging
 description: Enable pool tagging
 keywords: ["Enable pool tagging (global flag)"]
 ms.date: 01/11/2021
-ms.localizationpriority: medium
 ---
 
 # Enable pool tagging

@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_VENDOR_DESCRIPTION OID points to a null-ter
 keywords:
 - OID_GEN_VENDOR_DESCRIPTION
 ms.date: 11/01/2017
-ms.localizationpriority: medium
 ---
 
 # OID_GEN_VENDOR_DESCRIPTION

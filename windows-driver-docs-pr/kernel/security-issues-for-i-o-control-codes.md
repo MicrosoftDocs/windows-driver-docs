@@ -3,7 +3,6 @@ title: Security Issues for I/O Control Codes
 description: Security Issues for I/O Control Codes
 keywords: ["I/O control codes WDK kernel , security", "control codes WDK IOCTLs , security", "IOCTLs WDK kernel , security", "security WDK IOCTLs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Security Issues for I/O Control Codes

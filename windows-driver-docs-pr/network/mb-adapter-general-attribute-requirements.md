@@ -2,7 +2,6 @@
 title: MB Adapter General Attribute Requirements
 description: MB Adapter General Attribute Requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Adapter General Attribute Requirements

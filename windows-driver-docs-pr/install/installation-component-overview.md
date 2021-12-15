@@ -9,7 +9,6 @@ keywords:
 - installing drivers WDK , information required
 - installing
 ms.date: 12/09/2021
-ms.localizationpriority: medium
 ---
 
 # Installation Component Overview

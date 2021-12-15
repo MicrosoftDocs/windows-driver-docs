@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_PREFERRED_PROVIDERS notif
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_PREFERRED_PROVIDERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_PREFERRED\_PROVIDERS

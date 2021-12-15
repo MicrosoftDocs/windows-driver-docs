@@ -4,7 +4,6 @@ description: WDI_TLV_CONNECT_PARAMETERS is a TLV that contains parameters for OI
 ms.date: 05/07/2021
 keywords:
  - WDI_TLV_CONNECT_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CONNECT\_PARAMETERS

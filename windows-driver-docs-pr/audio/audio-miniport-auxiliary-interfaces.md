@@ -2,7 +2,6 @@
 title: Audio Miniport Auxiliary Interfaces
 description: Audio Miniport Auxiliary Interfaces
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Miniport Auxiliary Interfaces

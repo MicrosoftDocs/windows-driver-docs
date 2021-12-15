@@ -9,7 +9,6 @@ api_name:
 - rpcexts.thread
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.thread

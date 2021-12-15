@@ -9,7 +9,6 @@ keywords:
 - hardware error sources WDK WHEA , disabling
 - disabling an error sourc
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disabling an Error Source

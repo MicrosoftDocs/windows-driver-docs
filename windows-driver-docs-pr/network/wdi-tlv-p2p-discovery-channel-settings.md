@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS is a TLV that contains Wi-Fi
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DISCOVERY\_CHANNEL\_SETTINGS

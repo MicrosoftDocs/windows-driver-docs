@@ -4,7 +4,6 @@ description: The OID_TUNNEL_INTERFACE_SET_OID object identifier (OID) is reserve
 keywords:
 - OID_TUNNEL_INTERFACE_SET_OID
 ms.date: 11/01/2017
-ms.localizationpriority: medium
 ---
 
 # OID_TUNNEL_INTERFACE_SET_OID

@@ -7,7 +7,6 @@ keywords:
 - WSD schema extensions WDK printer
 - schema extensions WDK WSD
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bidi Extension Example for WSD Port Monitor

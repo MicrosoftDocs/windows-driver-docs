@@ -3,7 +3,6 @@ title: Machines that reported a PnP error code within two days of installing a d
 description: The measure aggregates telemetry from a 30-day sliding window into a percentage of machines that successfully installed the driver and then Encountered a PNP error within two days of install
 ms.topic: article
 ms.date: 09/03/2021
-ms.localizationpriority: medium
 ---
 
 # Machines that reported a PnP error code within two days of installing a driver update

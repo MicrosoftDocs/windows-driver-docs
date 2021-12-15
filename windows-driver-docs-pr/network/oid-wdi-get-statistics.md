@@ -4,7 +4,6 @@ description: OID_WDI_GET_STATISTICS requests that the IHV component returns MAC 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_STATISTICS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_STATISTICS

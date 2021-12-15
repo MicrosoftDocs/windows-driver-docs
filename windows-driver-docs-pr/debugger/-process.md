@@ -9,7 +9,6 @@ api_name:
 - process
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !process

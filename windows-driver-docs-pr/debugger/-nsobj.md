@@ -9,7 +9,6 @@ api_name:
 - nsobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !nsobj

@@ -9,7 +9,6 @@ api_name:
 - rpcexts.getthreadinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.getthreadinfo

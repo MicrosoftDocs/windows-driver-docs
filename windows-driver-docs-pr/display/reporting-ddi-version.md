@@ -6,7 +6,6 @@ keywords:
 - reporting DDI version WDK DirectX 9.0
 - DDI version WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting DDI Version

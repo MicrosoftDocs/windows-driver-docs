@@ -2,7 +2,6 @@
 title: GPD/PPD-Based Feature Description Changes
 description: GPD/PPD-Based Feature Description Changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GPD/PPD-Based Feature Description Changes

@@ -9,7 +9,6 @@ api_name:
 - IoBuildSynchronousFsdRequestWaitTimeout
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildSynchronousFsdRequestWaitTimeout rule (wdm)

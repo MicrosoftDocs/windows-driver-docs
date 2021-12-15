@@ -2,7 +2,6 @@
 title: What's new for UWP device apps
 description: This section provides a glimpse of what's new for UWP device apps.
 ms.date: 08/12/2021
-ms.localizationpriority: medium
 ---
 
 # What's new for UWP device apps

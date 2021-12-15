@@ -2,7 +2,6 @@
 title: Using GPUView
 description: Using GPUView
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # Using GPUView

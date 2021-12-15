@@ -2,7 +2,6 @@
 title: Installing the update
 description: Firmware update packages can be installed using any tool that installs Windows drivers.
 ms.date: 08/19/2021
-ms.localizationpriority: medium
 ---
 
 # Installing the update

@@ -2,7 +2,6 @@
 title: Negotiating Claim and Release Device Requests with SCSI Port
 description: Negotiating Claim and Release Device Requests with SCSI Port
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Negotiating Claim and Release Device Requests with SCSI Port

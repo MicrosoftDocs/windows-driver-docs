@@ -2,7 +2,6 @@
 title: Remote Debugging Using KD
 description: Learn about remote debugging using KD. Remote debugging involves two debuggers running at two different locations.
 ms.date: 05/03/2018
-ms.localizationpriority: medium
 ---
 
 # Remote Debugging Using KD

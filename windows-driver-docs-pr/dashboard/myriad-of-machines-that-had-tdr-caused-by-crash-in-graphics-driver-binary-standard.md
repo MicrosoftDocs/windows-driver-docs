@@ -3,7 +3,6 @@ title: Myriad of machines that had a TDR caused by a graphics driver crash
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a TDR caused by a crash in the graphics driver binary
 ms.topic: article
 ms.date: 09/02/2021
-ms.localizationpriority: medium
 ---
 
 # Myriad of machines that had a TDR caused by a graphics driver crash

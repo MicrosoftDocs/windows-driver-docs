@@ -3,7 +3,6 @@ title: Get all submissions
 description: This method in the Microsoft Hardware API retrieves data for all submissions of a product.
 ms.topic: article
 ms.date: 04/05/2018
-ms.localizationpriority: medium
 ---
 
 # Get all submissions

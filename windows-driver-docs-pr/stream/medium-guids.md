@@ -8,7 +8,6 @@ keywords:
 - pin connections WDK video capture
 - GUIDs WDK video capture
 ms.date: 06/18/2020
-ms.localizationpriority: medium
 ---
 
 # Medium GUIDs

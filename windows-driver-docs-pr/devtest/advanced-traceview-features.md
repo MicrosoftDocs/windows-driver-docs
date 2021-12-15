@@ -2,7 +2,6 @@
 title: Advanced TraceView Features
 description: Advanced TraceView Features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Advanced TraceView Features

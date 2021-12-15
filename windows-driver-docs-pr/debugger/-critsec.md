@@ -9,7 +9,6 @@ api_name:
 - critsec
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !critsec

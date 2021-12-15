@@ -6,7 +6,6 @@ keywords:
 - driver stacks WDK Bluetooth
 - stacks WDK Bluetooth
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Driver Stack

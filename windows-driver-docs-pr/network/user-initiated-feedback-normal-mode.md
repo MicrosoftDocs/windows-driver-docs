@@ -2,7 +2,6 @@
 title: User-initiated feedback - normal mode
 description: This topic describes normal mode for user-initiated feedback with IHV trace logging in WDI drivers.
 ms.date: 06/15/2018
-ms.localizationpriority: medium
 ---
 
 # User-initiated feedback - normal mode

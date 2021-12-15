@@ -5,7 +5,6 @@ keywords:
 - CD-ROM drivers WDK storage
 - IOCTLs WDK CD-ROM
 ms.date: 12/20/2018
-ms.localizationpriority: medium
 ---
 
 # CD-ROM I/O control codes

@@ -2,7 +2,6 @@
 title: Passing DXGI Information at Resource Creation Time
 description: Passing DXGI Information at Resource Creation Time
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Passing DXGI Information at Resource Creation Time

@@ -11,7 +11,6 @@ keywords:
 - drawing WDK GDI , text output
 - text output WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Font and Text Services

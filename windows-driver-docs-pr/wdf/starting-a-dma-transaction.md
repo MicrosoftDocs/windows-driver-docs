@@ -8,7 +8,6 @@ keywords:
 - starting DMA transactions WDK KMDF
 - scatter/gather DMA WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting a DMA Transaction

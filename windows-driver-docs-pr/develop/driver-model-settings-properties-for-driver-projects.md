@@ -2,7 +2,6 @@
 title: Driver Model Settings Properties for Driver Projects
 description: Sets the basic properties for a kernel-mode or user-mode driver, including the WDF library version and preprocessor definitions.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Model Settings Properties for Driver Projects

@@ -3,7 +3,6 @@ title: Using Timer Objects
 description: Describes using timer objects to set up a timeout interval for an operation and then wait while other driver routines process an I/O request.
 keywords: ["timer objects WDK kernel , waiting on", "waiting on timer objects", "notification timers WDK kernel", "KeDelayExecutionThread", "KeWaitForSingleObject", "KeInitializeTimer", "KeSetTimer", "DueTime values"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Using Timer Objects

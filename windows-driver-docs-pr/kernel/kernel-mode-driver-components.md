@@ -3,7 +3,6 @@ title: Kernel-Mode Driver Components
 description: Kernel-Mode Driver Components
 keywords: ["kernel-mode drivers WDK , components", "kernel-mode drivers WDK , standard driver routines", "standard driver routines WDK kernel", "driver routines WDK kernel", "routines WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Kernel-Mode Driver Components

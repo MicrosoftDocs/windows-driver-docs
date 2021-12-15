@@ -6,7 +6,6 @@ keywords:
 - AV/C WDK , connection scenarios
 - AVCCONNECTINFO
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connections Between Two Subunit Plugs in Different AV/C Units

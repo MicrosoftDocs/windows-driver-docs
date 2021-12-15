@@ -2,7 +2,6 @@
 title: Handling large numbers of SSIDs
 description: Handling large numbers of SSIDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling large numbers of SSIDs

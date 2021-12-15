@@ -2,7 +2,6 @@
 title: Set up your development environment
 description: This topic shows you how to set up your development environment, to use the Sharks Cove board and Microsoft-provided software development tools, to build a universal sensor driver for your sensor.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Set up your development environment

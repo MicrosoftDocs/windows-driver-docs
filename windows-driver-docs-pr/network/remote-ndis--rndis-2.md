@@ -6,7 +6,6 @@ keywords:
 - network drivers WDK , Remote NDIS
 - RNDIS
 ms.date: 08/06/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q4
 ---
 

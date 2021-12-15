@@ -2,7 +2,6 @@
 title: Run new SMS received background events
 description: Run new SMS received background events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Run new SMS received background events

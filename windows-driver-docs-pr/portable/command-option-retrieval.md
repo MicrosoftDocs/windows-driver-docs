@@ -2,7 +2,6 @@
 description: Command-Option Retrieval
 title: Command-Option Retrieval
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command-Option Retrieval

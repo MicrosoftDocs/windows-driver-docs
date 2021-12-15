@@ -2,7 +2,6 @@
 title: PagesPerSheet
 description: Defines the number of logical pages that can be printed on a single side of the selected media.
 ms.date: 09/02/2021
-ms.localizationpriority: medium
 ---
 
 # PagesPerSheet

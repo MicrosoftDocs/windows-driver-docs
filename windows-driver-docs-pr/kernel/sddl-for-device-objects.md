@@ -3,7 +3,6 @@ title: SDDL for Device Objects
 description: SDDL for Device Objects
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "Security Descriptor Definition Language WDK device objects", "SDDL WDK device objects", "IoCreateDeviceSecure", "security descriptors WDK device objects"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # SDDL for Device Objects

@@ -2,7 +2,6 @@
 title: Using Custom Properties
 description: Using Custom Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Custom Properties

@@ -2,7 +2,6 @@
 title: HD Audio DDI Programming Guidelines
 description: HD Audio DDI Programming Guidelines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HD Audio DDI Programming Guidelines

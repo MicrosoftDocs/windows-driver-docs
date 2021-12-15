@@ -3,7 +3,6 @@ title: Stop on exception
 description: Stop on exception
 keywords: ["Stop on exception (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Stop on exception

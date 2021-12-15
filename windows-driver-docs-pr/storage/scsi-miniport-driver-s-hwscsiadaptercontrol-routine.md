@@ -5,7 +5,6 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiAdapterControl
 - HwScsiAdapterControl
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's HwScsiAdapterControl Routine

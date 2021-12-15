@@ -10,7 +10,6 @@ keywords:
 - FIFO control parameters WDK serial devices
 - COM port numbers WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing an Advanced Properties Page for a COM Port

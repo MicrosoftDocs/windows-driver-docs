@@ -5,7 +5,6 @@ keywords:
 - wave rendering WDK audio
 - wave capturing WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rendering and Capturing Wave Content

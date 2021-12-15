@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - BTETLParse
 description: Bluetooth Test Platform (BTP) Bluetooth ETL parse.
 ms.date: 1/12/2021
-ms.localizationpriority: medium
 
 ---
 # Bluetooth ETL parse (BTETLParse.exe)

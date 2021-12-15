@@ -2,7 +2,6 @@
 title: Desktop COSA/APN database settings
 description: Desktop COSA/APN database settings
 ms.date: 01/28/2019
-ms.localizationpriority: medium
 ---
 
 # Desktop COSA/APN database settings

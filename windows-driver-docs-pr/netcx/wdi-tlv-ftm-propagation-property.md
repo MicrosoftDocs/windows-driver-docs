@@ -4,7 +4,6 @@ description: WDI_TLV_FTM_PROPAGATION_PROPERTY is a WiFiCx TLV that contains the 
 ms.date: 07/30/2021
 keywords:
  - WDI_TLV_FTM_PROPAGATION_PROPERTY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_FTM_PROPAGATION_PROPERTY (dot11wificxtypes.hpp)

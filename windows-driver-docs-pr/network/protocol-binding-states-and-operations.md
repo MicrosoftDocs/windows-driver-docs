@@ -9,7 +9,6 @@ keywords:
 - NDIS protocol drivers WDK , events
 - events WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Protocol Binding States and Operations

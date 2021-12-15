@@ -2,7 +2,6 @@
 title: Querying the Parameters of a Virtual Function
 description: Querying the Parameters of a Virtual Function
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying the Parameters of a Virtual Function

@@ -11,7 +11,6 @@ keywords:
 - start up resource assignments WDK audio
 - start-device routines WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Resource List Objects

@@ -2,7 +2,6 @@
 title: Security Issues for WIA Drivers
 description: Security Issues for WIA Drivers
 ms.date: 08/25/2020
-ms.localizationpriority: medium
 ---
 
 # Security Issues for WIA Drivers

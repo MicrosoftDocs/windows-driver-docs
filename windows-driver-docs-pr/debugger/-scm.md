@@ -9,7 +9,6 @@ api_name:
 - scm
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !scm

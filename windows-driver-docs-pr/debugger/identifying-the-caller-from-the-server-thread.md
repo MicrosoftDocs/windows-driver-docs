@@ -3,7 +3,6 @@ title: Identifying the Caller From the Server Thread
 description: Identifying the Caller From the Server Thread
 keywords: ["RPC debugging, identifying the caller"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Identifying the Caller From the Server Thread

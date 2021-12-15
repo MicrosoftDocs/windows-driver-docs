@@ -5,7 +5,6 @@ keywords:
 - printer features WDK Unidrv , conflict priority
 - conflict priority WDK printer features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Feature Conflict Priority

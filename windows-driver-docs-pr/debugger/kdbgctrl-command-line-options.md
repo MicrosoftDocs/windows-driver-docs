@@ -9,7 +9,6 @@ api_name:
 - KDbgCtrl Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KDbgCtrl Command-Line Options

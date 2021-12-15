@@ -7,7 +7,6 @@ keywords:
 - DebugLevel
 - vendor-supplied drivers WDK smart card , debugging
 ms.date: 06/04/2020
-ms.localizationpriority: medium
 ---
 
 # Smart Card Driver Debugging

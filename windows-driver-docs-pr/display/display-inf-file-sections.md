@@ -9,7 +9,6 @@ keywords:
 - INF files WDK Windows 2000 display
 - display INF file sections WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Display INF File Sections

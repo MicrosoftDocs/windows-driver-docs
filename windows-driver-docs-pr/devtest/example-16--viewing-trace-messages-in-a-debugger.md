@@ -5,7 +5,6 @@ keywords:
 - trace message displaying WDK
 - displaying trace messages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 16: Viewing Trace Messages in a Debugger

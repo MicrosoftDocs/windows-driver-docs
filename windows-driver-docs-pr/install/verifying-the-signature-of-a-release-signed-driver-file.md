@@ -2,7 +2,6 @@
 title: Verifying the Signature of a Release-Signed Driver File
 description: Verifying the Signature of a Release-Signed Driver File
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying the Signature of a Release-Signed Driver File

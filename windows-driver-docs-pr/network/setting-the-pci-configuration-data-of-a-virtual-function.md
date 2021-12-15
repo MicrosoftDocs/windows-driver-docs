@@ -2,7 +2,6 @@
 title: Setting the PCI Configuration Data of a Virtual Function
 description: Setting the PCI Configuration Data of a Virtual Function
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the PCI Configuration Data of a Virtual Function

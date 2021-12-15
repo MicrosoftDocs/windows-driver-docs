@@ -2,7 +2,6 @@
 title: Storing and Transferring Audio Data
 description: Storing and Transferring Audio Data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storing and Transferring Audio Data

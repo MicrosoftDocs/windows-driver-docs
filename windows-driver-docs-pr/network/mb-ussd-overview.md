@@ -3,7 +3,6 @@ title: USSD Overview
 description: USSD implementation and test
 keywords: USSD,Unstructured Supplementary Service Data 
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 # USSD Overview
 

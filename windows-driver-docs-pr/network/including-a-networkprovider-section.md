@@ -6,7 +6,6 @@ keywords:
 - network INF files WDK , NetworkProvider section
 - NetworkProvider section WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Including a NetworkProvider Section

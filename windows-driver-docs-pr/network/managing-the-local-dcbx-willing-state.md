@@ -2,7 +2,6 @@
 title: Managing the Local DCBX Willing State
 description: Managing the Local DCBX Willing State
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing the Local DCBX Willing State

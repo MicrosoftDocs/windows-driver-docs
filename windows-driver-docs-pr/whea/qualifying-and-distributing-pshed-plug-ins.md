@@ -6,7 +6,6 @@ keywords:
 - PSHED plug-ins WDK WHEA , qualifying
 - PSHED plug-ins WDK WHEA , distributing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Qualifying and Distributing PSHED Plug-Ins

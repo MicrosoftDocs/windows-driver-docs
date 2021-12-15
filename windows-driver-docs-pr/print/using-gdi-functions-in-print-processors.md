@@ -6,7 +6,6 @@ keywords:
 - GDI functions WDK print processor
 - NT EMF WDK print processor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using GDI Functions in Print Processors

@@ -2,7 +2,6 @@
 title: Driver installation
 description: The print driver provided in this SDK is an experimental 3D printer device driver still under development.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Driver installation

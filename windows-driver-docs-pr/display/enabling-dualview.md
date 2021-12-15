@@ -4,7 +4,6 @@ description: Enabling DualView
 keywords:
 - DualView WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling DualView

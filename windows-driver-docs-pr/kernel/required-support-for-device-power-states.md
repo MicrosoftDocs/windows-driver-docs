@@ -3,7 +3,6 @@ title: Required Support for Device Power States
 description: Required Support for Device Power States
 keywords: ["continuous power WDK kernel", "delays WDK power management", "device power states WDK kernel", "hardware WDK power management", "legacy power management WDK kernel", "class drivers WDK power management", "port drivers WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Required Support for Device Power States

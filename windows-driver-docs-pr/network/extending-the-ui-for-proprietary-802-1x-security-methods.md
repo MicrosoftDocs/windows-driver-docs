@@ -4,7 +4,6 @@ description: Extending the UI for Proprietary 802.1X Security Methods
 keywords:
 - proprietary 802.1X security WDK IHV UI Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extending the UI for Proprietary 802.1X Security Methods

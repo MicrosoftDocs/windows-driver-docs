@@ -2,7 +2,6 @@
 title: Using the XPS Rasterization Service
 description: Using the XPS Rasterization Service
 ms.date: 06/12/2020
-ms.localizationpriority: medium
 ---
 
 # Using the XPS Rasterization Service

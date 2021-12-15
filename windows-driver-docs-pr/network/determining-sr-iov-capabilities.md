@@ -2,7 +2,6 @@
 title: Determining SR-IOV Capabilities
 description: Determining SR-IOV Capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining SR-IOV Capabilities

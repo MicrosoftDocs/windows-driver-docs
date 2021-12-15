@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 06/28/2021
-ms.localizationpriority: medium
 ---
 
 # Driver Verifier Command Syntax

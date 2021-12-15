@@ -4,7 +4,6 @@ description: Device Metadata Store
 keywords:
 - device metadata store WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Metadata Store

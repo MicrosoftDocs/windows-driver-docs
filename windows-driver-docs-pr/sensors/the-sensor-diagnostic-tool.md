@@ -14,7 +14,6 @@ keywords:
 - report interval
 - change sensitivity
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing sensor functionality with the Sensor Diagnostic Tool

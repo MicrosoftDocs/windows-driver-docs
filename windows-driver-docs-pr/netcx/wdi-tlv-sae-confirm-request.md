@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_CONFIRM_REQUEST is a WiFiCx TLV that contains parameter
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_SAE_CONFIRM_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_SAE_CONFIRM_REQUEST (dot11wificxtypes.hpp)

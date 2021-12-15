@@ -1,7 +1,6 @@
 ---
 title: Windows kernel opaque structures
 description: Windows kernel opaque structures
-ms.localizationpriority: medium
 ms.date: 07/21/2021
 ---
 

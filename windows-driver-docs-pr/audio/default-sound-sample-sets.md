@@ -11,7 +11,6 @@ keywords:
 - sound sample sets WDK audio
 - synthesizers WDK audio , default sound sets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Default Sound Sample Sets

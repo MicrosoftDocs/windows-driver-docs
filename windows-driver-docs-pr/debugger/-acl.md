@@ -9,7 +9,6 @@ api_name:
 - acl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !acl

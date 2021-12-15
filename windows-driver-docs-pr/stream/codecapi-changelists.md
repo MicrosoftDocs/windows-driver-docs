@@ -2,7 +2,6 @@
 title: CODECAPI_CHANGELISTS
 description: The CODECAPI_CHANGELISTS event is used to return a list of GUIDs that have changed.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # CODECAPI_CHANGELISTS

@@ -5,7 +5,6 @@ keywords:
 - allocator properties WDK video capture
 - PROPSETID_ALLOCATOR_CONTROL
 ms.date: 07/26/2021
-ms.localizationpriority: medium
 ---
 
 # Allocator Properties

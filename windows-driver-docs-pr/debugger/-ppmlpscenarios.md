@@ -9,7 +9,6 @@ api_name:
 - ppmlpscenarios
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ppmlpscenarios

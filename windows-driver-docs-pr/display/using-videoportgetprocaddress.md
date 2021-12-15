@@ -5,7 +5,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions, VideoPortGetProcAddress
 - VideoPortGetProcAddress
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using VideoPortGetProcAddress

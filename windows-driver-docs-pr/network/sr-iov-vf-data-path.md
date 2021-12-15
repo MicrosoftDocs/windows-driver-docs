@@ -2,7 +2,6 @@
 title: SR-IOV VF Data Path
 description: SR-IOV VF Data Path
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SR-IOV VF Data Path

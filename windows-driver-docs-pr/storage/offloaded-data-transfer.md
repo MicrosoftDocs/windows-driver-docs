@@ -9,7 +9,6 @@ keywords:
 - offloaded data transfers
 - Windows offloaded data transfers
 - offloaded data transfers, storage
-ms.localizationpriority: medium
 ms.custom: contperf-fy22q1
 ---
 

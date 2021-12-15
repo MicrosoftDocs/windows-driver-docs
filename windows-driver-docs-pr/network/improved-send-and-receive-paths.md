@@ -6,7 +6,6 @@ keywords:
 - sending data WDK networking
 - receiving data WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Improved Send and Receive Paths

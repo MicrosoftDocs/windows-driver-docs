@@ -3,7 +3,6 @@ title: Managing Hardware Priorities
 description: Describes managing hardware priorities with IRQLs at which a driver routines execute.
 keywords: ["prioritizing criteria WDK kernel", "hardware priorities WDK kernel", "IRQL levels WDK kernel", "PASSIVE_LEVEL WDK", "APC_LEVEL WDK", "DISPATCH_LEVEL WDK", "DIRQL WDK", "interrupt service routines WDK kernel , hardware priorities", "ISRs WDK kernel , hardware priorities"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Managing Hardware Priorities

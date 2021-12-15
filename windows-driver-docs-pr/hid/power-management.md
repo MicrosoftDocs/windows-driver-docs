@@ -2,7 +2,6 @@
 title: Power management for HID over USB
 description: HID over USB employs USB suspend to power manage a device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HID power management over USB

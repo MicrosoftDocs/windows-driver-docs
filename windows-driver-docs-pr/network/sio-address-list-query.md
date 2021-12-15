@@ -4,7 +4,6 @@ description: SIO_ADDRESS_LIST_QUERY
 ms.date: 08/08/2017
 keywords: 
  -SIO_ADDRESS_LIST_QUERY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_ADDRESS\_LIST\_QUERY

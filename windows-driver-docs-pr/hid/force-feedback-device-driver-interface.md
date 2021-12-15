@@ -8,7 +8,6 @@ keywords:
 - joysticks WDK HID , force feedback
 - effect drivers WDK force feedback
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Force Feedback Device Driver Interface

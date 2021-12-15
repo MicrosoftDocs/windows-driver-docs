@@ -11,7 +11,6 @@ keywords:
 - drawing WDK GDI , fonts
 - drawing WDK GDI , text output
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Graphics DDI Font and Text Functions

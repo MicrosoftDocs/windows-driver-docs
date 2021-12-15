@@ -9,7 +9,6 @@ api_name:
 - REGISTRY_FILTER_DRIVER_EXCEPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x135: REGISTRY\_FILTER\_DRIVER\_EXCEPTION

@@ -8,7 +8,6 @@ keywords:
 - event categories WDK SetupAPI logging
 - text logs WDK SetupAPI , registry entries
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SetupAPI Logging Registry Settings

@@ -9,7 +9,6 @@ api_name:
 - .fnent (Display Function Data)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .fnent (Display Function Data)

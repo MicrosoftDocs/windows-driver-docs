@@ -9,7 +9,6 @@ api_name:
 - pat
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pat

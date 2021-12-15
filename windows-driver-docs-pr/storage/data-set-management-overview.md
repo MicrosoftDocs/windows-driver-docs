@@ -2,7 +2,6 @@
 title: Performing storage driver data set management
 description: Management actions can be performed on a storage device's data-set attributes as data set management (DSM) actions.
 keywords: Storage Data Set Management Actions, Data Set Management Actions, DSM Actions
-ms.localizationpriority: medium
 ms.date: 06/29/2019
 ms.custom: contperf-fy21q4
 ---

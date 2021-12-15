@@ -2,7 +2,6 @@
 title: VMQ Receive Path
 description: VMQ Receive Path
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VMQ Receive Path

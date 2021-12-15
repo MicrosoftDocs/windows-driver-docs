@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_CHANGE_OPERATION_MODE command configures the opera
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_CHANGE_OPERATION_MODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE (dot11wificxintf.h)

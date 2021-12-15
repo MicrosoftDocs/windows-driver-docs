@@ -2,7 +2,6 @@
 title: TraceView Basics
 description: TraceView Basics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TraceView Basics

@@ -4,7 +4,6 @@ description: The HS_HOST_UPDATE_CONFIGURATION_COMPLETION function indicates the 
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_UPDATE_CONFIGURATION_COMPLETION) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_HOST\_UPDATE\_CONFIGURATION\_COMPLETION function

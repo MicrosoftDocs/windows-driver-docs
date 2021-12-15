@@ -2,7 +2,6 @@
 title: Virtual Ports (VPorts)
 description: Virtual Ports (VPorts)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Ports (VPorts)

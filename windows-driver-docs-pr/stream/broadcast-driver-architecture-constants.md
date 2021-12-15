@@ -2,7 +2,6 @@
 title: Broadcast Driver Architecture Constants
 description: A BDA minidriver uses the listed constant types.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # Broadcast Driver Architecture Constants

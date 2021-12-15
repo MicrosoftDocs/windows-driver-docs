@@ -9,7 +9,6 @@ api_name:
 - scsikd.help
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !scsikd.help

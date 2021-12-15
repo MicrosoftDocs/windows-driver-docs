@@ -9,7 +9,6 @@ api_name:
 - dblink
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dblink

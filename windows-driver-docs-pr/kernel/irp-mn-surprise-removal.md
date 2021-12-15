@@ -4,7 +4,6 @@ description: All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_SURPRISE_REMOVAL Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_SURPRISE\_REMOVAL

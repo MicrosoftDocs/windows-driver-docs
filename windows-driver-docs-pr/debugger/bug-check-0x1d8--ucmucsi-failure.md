@@ -9,7 +9,6 @@ api_name:
 - UCMUCSI_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D8: UCMUCSI\_FAILURE

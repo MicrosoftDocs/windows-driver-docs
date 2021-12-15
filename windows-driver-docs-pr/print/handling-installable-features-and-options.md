@@ -7,7 +7,6 @@ keywords:
 - GPD files WDK Unidrv , installable features and options
 - Unidrv WDK print
 ms.date: 06/09/2020
-ms.localizationpriority: medium
 ---
 
 # Handling Installable Features and Options

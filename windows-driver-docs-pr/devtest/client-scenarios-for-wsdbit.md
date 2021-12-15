@@ -7,7 +7,6 @@ keywords:
 - scenarios WDK WSDBIT
 - test scenarios WDK WSDBIT
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Client Scenarios for WSDBIT

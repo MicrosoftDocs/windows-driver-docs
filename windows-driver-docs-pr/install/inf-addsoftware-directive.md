@@ -1,7 +1,6 @@
 ---
 title: INF AddSoftware Directive
 description: An AddSoftware directive describes the installation of standalone software.
-ms.localizationpriority: medium
 ms.date: 09/22/2021
 ---
 

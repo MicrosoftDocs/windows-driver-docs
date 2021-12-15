@@ -9,7 +9,6 @@ api_name:
 - WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x156: WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP

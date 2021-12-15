@@ -2,7 +2,6 @@
 title: Example code for displaying an app on a portrait device
 description: Here is code that you can use to make your app display correctly on a portrait device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example code for displaying an app on a portrait device

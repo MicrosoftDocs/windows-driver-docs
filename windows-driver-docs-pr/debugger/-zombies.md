@@ -9,7 +9,6 @@ api_name:
 - zombies
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !zombies

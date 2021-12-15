@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_TargetMappings WMI Class
 description: MSiSCSI\_TargetMappings WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

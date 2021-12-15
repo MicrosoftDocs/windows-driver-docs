@@ -2,7 +2,6 @@
 title: USB Device Descriptor
 description: USB Device Descriptor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Device Descriptor

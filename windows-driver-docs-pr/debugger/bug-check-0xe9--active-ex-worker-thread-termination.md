@@ -9,7 +9,6 @@ api_name:
 - ACTIVE_EX_WORKER_THREAD_TERMINATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE9: ACTIVE\_EX\_WORKER\_THREAD\_TERMINATION

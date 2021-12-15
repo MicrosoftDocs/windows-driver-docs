@@ -2,7 +2,6 @@
 title: Device Instance ID
 description: A device instance ID is a system-supplied device identification string that uniquely identifies a device in the system.
 ms.date: 04/20/2017
-ms.localizationpriority: High
 ---
 
 # Device Instance ID

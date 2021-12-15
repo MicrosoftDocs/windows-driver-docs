@@ -2,7 +2,6 @@
 title: Looping Back NDIS Packets
 description: Looping Back NDIS Packets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Looping Back NDIS Packets

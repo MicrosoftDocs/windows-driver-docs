@@ -6,7 +6,6 @@ keywords:
 - Video Acceleration WDK DirectX , standards
 - VA WDK DirectX , standards
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementation of Current Standards

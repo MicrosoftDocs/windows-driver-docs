@@ -2,7 +2,6 @@
 title: Win32 Services Interacting with Devices
 description: Win32 Services Interacting with Devices
 ms.date: 03/02/2020
-ms.localizationpriority: medium
 ---
 
 # Win32 Services Interacting with Devices

@@ -6,7 +6,6 @@ keywords:
 - functions WDK SetupAPI
 - text logs WDK SetupAPI , functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the SetupAPI Logging Functions

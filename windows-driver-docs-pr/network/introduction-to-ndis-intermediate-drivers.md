@@ -8,7 +8,6 @@ keywords:
 - internal bindings WDK NDIS intermediate
 - bindings WDK NDIS intermediate
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Intermediate Drivers Overview

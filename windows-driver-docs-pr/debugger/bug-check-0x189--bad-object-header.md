@@ -9,7 +9,6 @@ api_name:
 - BAD_OBJECT_HEADER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x189: BAD\_OBJECT\_HEADER

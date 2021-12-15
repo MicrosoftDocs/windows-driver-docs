@@ -3,7 +3,6 @@ title: Always Preemptible and Always Interruptible
 description: Always Preemptible and Always Interruptible
 keywords: ["preemptible designs WDK kernel", "interruptible designs WDK kernel", "interrupt request levels WDK kernel", "IRQL levels WDK kernel", "variable priority attributes WDK kernel", "prioritizing criteria WDK kernel", "hardware priorities WDK kernel", "higher IRQL levels WDK kernel", "lower IRQL levels WDK kernel", "PASSIVE_LEVEL WDK", "APC_LEVEL WDK", "DISPATCH_LEVEL WDK", "WAKE_LEVEL WDK", "deferred procedure calls WDK kernel", "DPCs WDK kernel", "arbitrary thread context WDK kernel", "thread preemption WDK kernel", "thread priorities WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Always Preemptible and Always Interruptible

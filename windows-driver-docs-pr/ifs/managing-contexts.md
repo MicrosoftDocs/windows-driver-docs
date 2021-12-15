@@ -7,7 +7,6 @@ keywords:
 - minifilter drivers WDK , context
 - contexts WDK file system minifilter
 ms.date: 01/22/2021
-ms.localizationpriority: medium
 ---
 
 # Supporting minifilter contexts

@@ -9,7 +9,6 @@ api_name:
 - IrqlMmDispatch
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlMmDispatch rule (wdm)

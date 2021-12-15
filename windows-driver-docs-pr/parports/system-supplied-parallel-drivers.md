@@ -7,7 +7,6 @@ keywords:
 - parallel drivers WDK
 - parallel devices WDK , system supplied drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # System-Supplied Parallel Drivers

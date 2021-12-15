@@ -3,7 +3,6 @@ title: Establish a relationship for HWID and CHID targeting
 description: How to establish a relationship for hardware ID (HWID) and computer hardware ID (CHID) targeting
 ms.topic: article
 ms.date: 07/20/2021
-ms.localizationpriority: medium
 ---
 
 # Establish a relationship for HWID and CHID targeting

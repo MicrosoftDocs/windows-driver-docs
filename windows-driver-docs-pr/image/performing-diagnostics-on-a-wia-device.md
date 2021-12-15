@@ -2,7 +2,6 @@
 title: Performing Diagnostics on a WIA Device
 description: Performing Diagnostics on a WIA Device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performing Diagnostics on a WIA Device

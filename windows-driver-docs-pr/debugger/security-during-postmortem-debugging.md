@@ -3,7 +3,6 @@ title: Security During Postmortem Debugging
 description: Security During Postmortem Debugging
 keywords: ["security considerations, postmortem debugging", "postmortem debugging, security considerations"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Security During Postmortem Debugging

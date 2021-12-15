@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME task command is issu
 ms.date: 07/30/2021
 keywords:
  - OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME (dot11wificxintf.h)

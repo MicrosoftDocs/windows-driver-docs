@@ -2,7 +2,6 @@
 title: Supporting cross-adapter resource scan-out
 description: A WDDM 2.9 driver can support cross-adapter resource scan-out, reducing the number of copies between GPUs and cross-adapter resources from two to one.
 ms.date: 06/22/2021
-ms.localizationpriority: medium
 ---
 
 # Supporting cross-adapter resource scan-out (CASO)

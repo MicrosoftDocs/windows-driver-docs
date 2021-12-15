@@ -9,7 +9,6 @@ keywords:
 - AutoRun-enabled installation applications WDK
 - device installations WDK , types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Software-First Installation

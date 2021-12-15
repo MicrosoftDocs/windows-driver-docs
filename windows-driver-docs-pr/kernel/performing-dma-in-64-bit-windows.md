@@ -3,7 +3,6 @@ title: Performing DMA in 64-Bit Windows
 description: Performing DMA in 64-Bit Windows
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "DMA transfers WDK kernel , 64-bit Windows", "double-buffering WDK 64-bit", "Direct Memory Access WDK kernel", "polymorphism WDK 64-bit", "data structures WDK 64-bit", "unsigned operations WDK 64-bit", "signed operations WDK 64-bit", "pointer arithmetic WDK 64-bit"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Performing DMA in 64-Bit Windows

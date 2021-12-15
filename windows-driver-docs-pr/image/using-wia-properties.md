@@ -2,7 +2,6 @@
 title: Using WIA Properties
 description: Using WIA Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using WIA Properties

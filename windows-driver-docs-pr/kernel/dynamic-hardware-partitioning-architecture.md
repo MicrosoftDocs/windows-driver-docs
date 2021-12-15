@@ -3,7 +3,6 @@ title: Dynamic Hardware Partitioning Architecture
 description: Dynamic Hardware Partitioning Architecture
 keywords: ["dynamic hardware partitioning WDK , architecture", "hardware partitioning WDK dynamic , architecture", "partitions WDK dynamic hardware , architecture", "architecture WDK dynamic hardware partitioning", "dynamically partitionable servers WDK", "servers WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Dynamic Hardware Partitioning Architecture

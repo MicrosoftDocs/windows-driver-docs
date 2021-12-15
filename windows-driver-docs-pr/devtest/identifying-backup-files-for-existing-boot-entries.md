@@ -10,7 +10,6 @@ keywords:
 - boot entry backups WDK
 - identifying backup files for boot entries
 ms.date: 07/09/2018
-ms.localizationpriority: medium
 ---
 
 # Identifying Backup Files for Existing Boot Entries

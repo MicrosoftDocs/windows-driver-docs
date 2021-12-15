@@ -4,7 +4,6 @@ description: Power Management for Old Miniport Drivers
 keywords:
 - power management WDK NDIS miniport , old miniport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power Management for Old Miniport Drivers

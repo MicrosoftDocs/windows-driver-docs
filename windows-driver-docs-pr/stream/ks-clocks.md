@@ -8,7 +8,6 @@ keywords:
 - time WDK kernel streaming
 - time stamps WDK kernel streaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # KS Clocks

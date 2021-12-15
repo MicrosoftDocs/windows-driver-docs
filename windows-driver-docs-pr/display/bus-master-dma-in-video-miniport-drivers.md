@@ -10,7 +10,6 @@ keywords:
 - packet-based DMA WDK video miniport
 - packet-based DMA WDK video miniport , overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bus-Master DMA in Video Miniport Drivers

@@ -9,7 +9,6 @@ api_name:
 - DeferredRequestCompleted
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DeferredRequestCompleted rule (kmdf)

@@ -9,7 +9,6 @@ api_name:
 - NsRemoveLockMnRemove
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NsRemoveLockMnRemove rule (wdm)

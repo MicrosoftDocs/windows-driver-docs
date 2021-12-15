@@ -5,7 +5,6 @@ keywords:
 - autoconfiguration WDK printer , implementation options
 - printer autoconfiguration WDK printer , implementation options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autoconfiguration Implementation Options

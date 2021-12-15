@@ -4,7 +4,6 @@ description: Video Miniport Driver Requirements (Windows 2000 Model)
 keywords:
 - video miniport drivers WDK Windows 2000 , requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Miniport Driver Requirements (Windows 2000 Model)

@@ -2,7 +2,6 @@
 title: Advanced Duplex-Capable Document Feeder
 description: Advanced Duplex-Capable Document Feeder
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Advanced Duplex-Capable Document Feeder

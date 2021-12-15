@@ -5,7 +5,6 @@ keywords:
 - MIP map surfaces WDK Direct3D
 - D3DRENDERSTATE_MIPMAPLODBIAS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MIP Map Surface Creation Update

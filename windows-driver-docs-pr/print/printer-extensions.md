@@ -2,7 +2,6 @@
 title: Printer Extensions
 description: Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
 ms.date: 12/13/2021
-ms.localizationpriority: medium
 ---
 
 # Printer Extensions

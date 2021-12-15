@@ -2,7 +2,6 @@
 title: Provisioning API
 description: Provisioning API
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Provisioning API

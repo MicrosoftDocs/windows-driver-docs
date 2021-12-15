@@ -2,7 +2,6 @@
 title: Hello World' Implementation File
 description: Hello World' Implementation File
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 'Hello World' Implementation File

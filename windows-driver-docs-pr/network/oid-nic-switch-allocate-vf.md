@@ -4,7 +4,6 @@ description: An overlying driver issues an object identifier (OID) method reques
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_ALLOCATE_VF Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NIC\_SWITCH\_ALLOCATE\_VF

@@ -4,7 +4,6 @@ description: WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS is a TLV that contains Netw
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS

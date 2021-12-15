@@ -9,7 +9,6 @@ api_name:
 - ndiskd.nrc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.nrc

@@ -9,7 +9,6 @@ api_name:
 - StorPortDDIsPortOnly
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortDDIsPortOnly rule (storport)

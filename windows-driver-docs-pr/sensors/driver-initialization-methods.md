@@ -2,7 +2,6 @@
 title: Driver initialization methods
 description: Methods supported by the sensor driver to initialize a device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver initialization methods

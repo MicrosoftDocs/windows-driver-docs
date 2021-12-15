@@ -4,7 +4,6 @@ description: WDI_TLV_RTT_VARIANCE is a TLV that contains the statistical varianc
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_RTT_VARIANCE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

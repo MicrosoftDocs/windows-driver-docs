@@ -7,7 +7,6 @@ keywords:
 - filter drivers WDK file system , device object I/O requests
 - file system filter drivers WDK , device object I/O requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Device Object Attached to a File System

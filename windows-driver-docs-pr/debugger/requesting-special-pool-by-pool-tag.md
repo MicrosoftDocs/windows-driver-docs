@@ -2,7 +2,6 @@
 title: Requesting Special Pool by Pool Tag
 description: Requesting Special Pool by Pool Tag
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Requesting Special Pool by Pool Tag

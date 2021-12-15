@@ -9,7 +9,6 @@ api_name:
 - IoBuildFsdForward
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildFsdForward rule (wdm)

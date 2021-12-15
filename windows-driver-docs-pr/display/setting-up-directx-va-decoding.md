@@ -11,7 +11,6 @@ keywords:
 - formats WDK DirectX VA
 - picture decoding WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up DirectX VA Decoding

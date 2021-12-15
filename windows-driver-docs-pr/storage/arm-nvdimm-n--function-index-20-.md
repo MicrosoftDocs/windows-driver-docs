@@ -1,7 +1,6 @@
 ---
 title: Arm NVDIMM-N (Function Index 20)
 description: This function arms the NVDIMM-N for save operations in the event of a power loss.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

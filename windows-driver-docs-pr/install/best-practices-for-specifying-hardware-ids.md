@@ -2,7 +2,6 @@
 title: Best Practices for Specifying Hardware IDs
 description: Best Practices for Specifying Hardware IDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Best Practices for Specifying Hardware IDs

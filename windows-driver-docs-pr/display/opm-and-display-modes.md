@@ -2,7 +2,6 @@
 title: OPM and Display Modes
 description: OPM and Display Modes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # OPM and Display Modes

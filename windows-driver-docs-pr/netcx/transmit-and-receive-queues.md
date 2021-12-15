@@ -4,7 +4,6 @@ description: Transmit and receive queues
 keywords:
 - NetAdapterCx transmit and receive queues, NetCx transmit and receive queues
 ms.date: 01/24/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

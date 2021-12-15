@@ -3,7 +3,6 @@ title: Live User-Mode Targets
 description: Live User-Mode Targets
 keywords: ["Debugger Engine API, targets, user-mode", "Debugger Engine API, disconnecting from a process", "Debugger Engine API, process options"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Live User-Mode Targets

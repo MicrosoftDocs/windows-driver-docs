@@ -2,7 +2,6 @@
 title: Implement PnP Rebalance for PortCls Audio Drivers
 description: PnP rebalancing is used in certain PCI scenarios where memory resources need to be reallocated.
 ms.date: 04/09/2019
-ms.localizationpriority: medium
 ---
 
 # Implement PnP Rebalance for PortCls Audio Drivers

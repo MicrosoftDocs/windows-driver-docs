@@ -2,7 +2,6 @@
 title: Managing the Signing Process
 description: Managing the Signing Process
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing the Signing Process

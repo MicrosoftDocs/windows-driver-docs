@@ -9,7 +9,6 @@ api_name:
 - amli bc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli bc

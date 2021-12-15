@@ -2,7 +2,6 @@
 title: KSPROPSETID\_BdaPIDFilter
 description: KSPROPSETID\_BdaPIDFilter
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BdaPIDFilter

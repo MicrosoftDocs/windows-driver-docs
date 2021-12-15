@@ -4,7 +4,6 @@ description: This topic describes the TAL_TXRX_HANDLE data type for WDI miniport
 keywords:
 - TAL_TXRX_HANDLE, WDK TAL_TXRX_HANDLE network drivers
 ms.date: 11/27/2017
-ms.localizationpriority: medium
 ---
 
 # TAL_TXRX_HANDLE

@@ -2,7 +2,6 @@
 title: Considerations for writing a sensor driver
 description: Considerations for writing a sensor driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Considerations for writing a sensor driver

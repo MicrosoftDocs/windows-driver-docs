@@ -2,7 +2,6 @@
 title: PTP Required Commands
 description: PTP Required Commands
 ms.date: 07/18/2018
-ms.localizationpriority: medium
 ---
 
 # PTP Required Commands

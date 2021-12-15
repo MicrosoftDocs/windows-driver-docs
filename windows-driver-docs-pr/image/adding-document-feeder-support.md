@@ -2,7 +2,6 @@
 title: Adding Document Feeder Support
 description: Adding Document Feeder Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Document Feeder Support

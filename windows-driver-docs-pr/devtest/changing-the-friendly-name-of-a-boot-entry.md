@@ -8,7 +8,6 @@ keywords:
 - Boot.ini files WDK , friendly names
 - boot options WDK , friendly names
 ms.date: 01/02/2019
-ms.localizationpriority: medium
 ---
 
 # Changing the Friendly Name of a Boot Entry

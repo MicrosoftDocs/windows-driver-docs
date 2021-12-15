@@ -3,7 +3,6 @@ title: 64-Bit Compiler
 description: 64-Bit Compiler
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "compilers WDK 64-bit"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # 64-Bit Compiler

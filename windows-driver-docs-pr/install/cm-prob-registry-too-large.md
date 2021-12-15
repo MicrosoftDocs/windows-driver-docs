@@ -4,7 +4,6 @@ description: CM_PROB_REGISTRY_TOO_LARGE
 keywords:
 - CM_PROB_REGISTRY_TOO_LARGE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 49 - CM_PROB_REGISTRY_TOO_LARGE

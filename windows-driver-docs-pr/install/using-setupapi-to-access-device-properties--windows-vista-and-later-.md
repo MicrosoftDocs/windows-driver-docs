@@ -4,7 +4,6 @@ description: Using SetupAPI to Access Device Properties
 keywords:
 - device properties WDK device installations , accessing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using SetupAPI to Access Device Properties

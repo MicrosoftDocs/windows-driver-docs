@@ -2,7 +2,6 @@
 title: HardwareId (APN element)
 description: HardwareId (APN element)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HardwareId (APN element)

@@ -4,7 +4,6 @@ description: CM_PROB_SYSTEM_SHUTDOWN
 keywords:
 - CM_PROB_SYSTEM_SHUTDOWN
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 46 - CM_PROB_SYSTEM_SHUTDOWN

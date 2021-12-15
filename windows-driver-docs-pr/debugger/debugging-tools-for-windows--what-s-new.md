@@ -2,7 +2,6 @@
 title: Debugging Tools For Windows What's New
 description: Debugging Tools For Windows What's New
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Tools For Windows: What's New

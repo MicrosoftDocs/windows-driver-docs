@@ -9,7 +9,6 @@ api_name:
 - PFN_LIST_CORRUPT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4E: PFN\_LIST\_CORRUPT

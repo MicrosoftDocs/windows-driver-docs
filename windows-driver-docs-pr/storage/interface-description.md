@@ -2,7 +2,6 @@
 title: Interface Description
 description: Interface Description
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interface Description

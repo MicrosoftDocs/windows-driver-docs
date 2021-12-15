@@ -2,7 +2,6 @@
 title: Adding Attachments to Images
 description: Adding Attachments to Images
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Attachments to Images

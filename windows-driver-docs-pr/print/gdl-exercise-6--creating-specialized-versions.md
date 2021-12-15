@@ -8,7 +8,6 @@ keywords:
 - GDL WDK , tutorials
 - constructs WDK GDL , creating specialized versions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Exercise 6: Creating Specialized Versions

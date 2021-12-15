@@ -4,7 +4,6 @@ description: WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS is a WiFiCx TLV t
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_LOW\_LATENCY\_CONNECTION\_QUALITY\_PARAMETERS (dot11wificxtypes.hpp)

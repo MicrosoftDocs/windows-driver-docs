@@ -3,7 +3,6 @@ title: View Watch
 description: View Watch
 keywords: ["View Watch"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Watch

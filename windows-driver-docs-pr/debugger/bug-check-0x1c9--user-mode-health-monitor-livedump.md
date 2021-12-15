@@ -9,7 +9,6 @@ api_name:
 - USER_MODE_HEALTH_MONITOR_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1C9: USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP

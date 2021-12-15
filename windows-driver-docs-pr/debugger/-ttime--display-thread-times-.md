@@ -9,7 +9,6 @@ api_name:
 - .ttime (Display Thread Times)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .ttime (Display Thread Times)

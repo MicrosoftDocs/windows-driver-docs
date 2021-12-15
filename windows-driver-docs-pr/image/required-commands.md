@@ -2,7 +2,6 @@
 title: Required Commands
 description: Describes required commands that must be implemented by every microdriver.
 ms.date: 09/28/2021
-ms.localizationpriority: medium
 ---
 
 # Required Commands

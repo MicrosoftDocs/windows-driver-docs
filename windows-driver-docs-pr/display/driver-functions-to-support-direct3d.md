@@ -8,7 +8,6 @@ keywords:
 - LPD3DHAL_MYFUNCTIONDATA
 - D3DHAL_MYFUNCTIONDATA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Functions to Support Direct3D

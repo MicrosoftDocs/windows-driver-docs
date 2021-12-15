@@ -2,7 +2,6 @@
 title: Security Guidelines for Offload-Capable Miniport Drivers Overview
 description: Security Guidelines for Offload-Capable Miniport Drivers Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Security Guidelines for Offload-Capable Miniport Drivers Overview

@@ -3,7 +3,6 @@ title: KSPROPSETID\_DirectSound3DListener
 description: KSPROPSETID\_DirectSound3DListener
 keywords: ["KSPROPSETID_DirectSound3DListener"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_DirectSound3DListener

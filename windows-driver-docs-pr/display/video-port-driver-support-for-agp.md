@@ -6,7 +6,6 @@ keywords:
 - AGP WDK video miniport
 - memory WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Port Driver Support for AGP

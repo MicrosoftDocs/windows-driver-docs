@@ -5,7 +5,6 @@ keywords:
 - WDF Verifier WDK , managing KMDF settings
 - KMDF verifier settings WDK WDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Devices Using WDF Tab

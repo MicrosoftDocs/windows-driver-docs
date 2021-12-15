@@ -9,7 +9,6 @@ api_name:
 - NoCancelFromEvtSurpriseRemove
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NoCancelFromEvtSurpriseRemove rule (kmdf)

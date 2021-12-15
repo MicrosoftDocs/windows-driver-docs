@@ -5,7 +5,6 @@ keywords:
 - control device objects WDK file system
 - CDOs WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The Filter Driver's Control Device Object

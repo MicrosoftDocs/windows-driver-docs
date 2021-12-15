@@ -3,7 +3,6 @@ title: Hiding Devices from Device Manager
 description: Hiding Devices from Device Manager
 keywords: ["Device Manager WDK , hidden devices", "devices WDK , hiding from Device Manager", "hidden devices WDK", "hiding devices WDK", "NoDisplayClass value WDK device installations"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Hiding Devices from Device Manager

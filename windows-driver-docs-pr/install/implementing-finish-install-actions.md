@@ -7,7 +7,6 @@ keywords:
 - DI_FLAGSEX_FINISHINSTALL_ACTION
 - DIF_FINISHINSTALL_ACTION
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing Finish-Install Actions

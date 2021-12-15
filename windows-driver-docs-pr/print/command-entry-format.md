@@ -5,7 +5,6 @@ keywords:
 - printer commands WDK Unidrv , entry format
 - formats WDK printer commands
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command Entry Format

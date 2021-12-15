@@ -8,7 +8,6 @@ keywords:
 - errors WDK WHEA , about Windows Hardware Error Architecture
 - source information WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to the Windows Hardware Error Architecture

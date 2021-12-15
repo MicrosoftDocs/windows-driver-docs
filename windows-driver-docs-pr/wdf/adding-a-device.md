@@ -8,7 +8,6 @@ keywords:
 - installing devices WDK , UMDF
 - adding devices WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding a Device

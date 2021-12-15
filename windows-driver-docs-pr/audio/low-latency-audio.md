@@ -2,7 +2,6 @@
 title: Low Latency Audio
 description: This topic discusses audio latency changes in Windows 10. It covers API options for application developers as well as changes in drivers that can be made to support low latency audio.
 ms.date: 01/19/2021
-ms.localizationpriority: medium
 ---
 
 # Low Latency Audio

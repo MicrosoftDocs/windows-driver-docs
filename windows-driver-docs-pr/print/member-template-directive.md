@@ -4,7 +4,6 @@ description: Member Template Directive
 keywords:
 - Member directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Member Template Directive

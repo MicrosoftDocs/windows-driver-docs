@@ -2,7 +2,6 @@
 title: Introduction to NDIS 6.60
 description: This section introduces NDIS 6.60 and describes changes from NDIS 6.50. NDIS 6.60 is included in Windows 10, version 1607 and Windows Server 2016 and later.
 ms.date: 06/01/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.60

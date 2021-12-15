@@ -5,7 +5,6 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , GDI event services
 - GDI WDK Windows 2000 display , events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Event Services in Windows 2000

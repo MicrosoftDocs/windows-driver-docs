@@ -2,7 +2,6 @@
 title: Install the driver and sample app
 description: This section provides information on installing the driver and the WSD sample app.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Install the driver and sample app

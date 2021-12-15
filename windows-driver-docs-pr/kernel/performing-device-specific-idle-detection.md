@@ -3,7 +3,6 @@ title: Performing Device-Specific Idle Detection
 description: Performing Device-Specific Idle Detection
 keywords: ["idle detection WDK power management", "device-specific idle detection WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Performing Device-Specific Idle Detection

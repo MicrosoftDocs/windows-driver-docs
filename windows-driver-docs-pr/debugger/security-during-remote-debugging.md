@@ -3,7 +3,6 @@ title: Security During Remote Debugging
 description: Security During Remote Debugging
 keywords: ["security considerations, remote debugging", "remote debugging through remote.exe, security considerations", "remote debugging through the debugger, security considerations", "process server, security considerations"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Security During Remote Debugging

@@ -4,7 +4,6 @@ description: Supplying Fence Identifiers
 keywords:
 - fence identifiers WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supplying Fence Identifiers

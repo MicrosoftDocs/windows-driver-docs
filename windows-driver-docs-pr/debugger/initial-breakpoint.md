@@ -3,7 +3,6 @@ title: Initial Breakpoint
 description: Initial Breakpoint
 keywords: ["initial breakpoint", "breakpoints, initial breakpoint"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Initial Breakpoint

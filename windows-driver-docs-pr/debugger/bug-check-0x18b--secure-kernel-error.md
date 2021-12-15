@@ -9,7 +9,6 @@ api_name:
 - SECURE_KERNEL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x18B: SECURE\_KERNEL\_ERROR

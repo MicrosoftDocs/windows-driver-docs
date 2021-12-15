@@ -12,7 +12,6 @@ keywords:
 - texture stage states WDK display
 - render states WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting the Direct3D Fixed-Function State

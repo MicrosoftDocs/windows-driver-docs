@@ -4,7 +4,6 @@ description: Setting Copy Protection Hardware
 keywords:
 - copy protection WDK video miniport , setting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Copy Protection Hardware

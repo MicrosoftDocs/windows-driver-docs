@@ -2,7 +2,6 @@
 title: Driver Support for Customized UI
 description: The v4 print driver model was developed with built-in support for UI customization using printer extensions or UWP device apps for printing.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Support for Customized UI

@@ -2,7 +2,6 @@
 title: IStiDeviceControl COM Interface
 description: IStiDeviceControl COM Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IStiDeviceControl COM Interface

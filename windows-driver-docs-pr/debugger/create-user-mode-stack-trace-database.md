@@ -3,7 +3,6 @@ title: Create user mode stack trace database
 description: Create user mode stack trace database
 keywords: ["Create user mode stack trace database (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Create user mode stack trace database

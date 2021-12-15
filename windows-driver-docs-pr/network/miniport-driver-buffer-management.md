@@ -4,7 +4,6 @@ description: Miniport Driver Buffer Management
 keywords:
 - buffers WDK NDIS miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Driver Buffer Management

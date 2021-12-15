@@ -2,7 +2,6 @@
 title: Reporting Device Online Status
 description: Reporting Device Online Status
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Device Online Status

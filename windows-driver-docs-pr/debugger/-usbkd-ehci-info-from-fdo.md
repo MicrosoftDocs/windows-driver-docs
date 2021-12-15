@@ -9,7 +9,6 @@ api_name:
 - usbkd.ehci_info_from_fdo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.ehci\_info\_from\_fdo

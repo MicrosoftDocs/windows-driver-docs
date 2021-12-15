@@ -6,7 +6,6 @@ keywords:
 - spooler component debugging WDK print
 - trace messages WDK printer
 ms.date: 06/04/2020
-ms.localizationpriority: medium
 ---
 
 # Debugging Spooler Components

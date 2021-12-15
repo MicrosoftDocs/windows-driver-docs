@@ -10,7 +10,6 @@ keywords:
 - kernel streaming WDK , quality management
 - KS WDK , quality management
 ms.date: 07/13/2021
-ms.localizationpriority: medium
 ---
 
 # Quality Management

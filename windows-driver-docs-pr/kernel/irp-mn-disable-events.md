@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_DISABLE_EVENTS' kernel-mode driver architec
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_DISABLE_EVENTS Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DISABLE\_EVENTS

@@ -13,7 +13,6 @@ keywords:
 - connected versus forced targets WDK Windows 7 display
 - connected versus forced targets WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Forced Versus Connected Targets

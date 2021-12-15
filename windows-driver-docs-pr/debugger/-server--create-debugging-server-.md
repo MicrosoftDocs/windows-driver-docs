@@ -9,7 +9,6 @@ api_name:
 - .server (Create Debugging Server)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .server (Create Debugging Server)

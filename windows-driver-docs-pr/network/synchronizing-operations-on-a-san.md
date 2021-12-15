@@ -6,7 +6,6 @@ keywords:
 - SAN synchronizations WDK
 - Windows Sockets Direct WDK , SAN synchronizations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Synchronizing Operations on a SAN

@@ -2,7 +2,6 @@
 title: Mobile Broadband Implementation Guidelines for USB Devices
 description: This topic provides specific implementation guidance to help mobile broadband device manufacturers produce compliant USB devices for Windows.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mobile Broadband Implementation Guidelines for USB Devices

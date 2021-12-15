@@ -2,7 +2,6 @@
 title: Reporting Power Management Capabilities
 description: Reporting Power Management Capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Power Management Capabilities

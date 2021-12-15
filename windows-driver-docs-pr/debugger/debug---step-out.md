@@ -3,7 +3,6 @@ title: Debug Step Out
 description: Debug Step Out
 keywords: ["Debug Step Out", "controlling the target, Debug Step Out"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Step Out

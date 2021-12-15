@@ -11,7 +11,6 @@ keywords:
 - custom synths WDK audio
 - DMus miniport drivers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectMusic DDI Overview

@@ -9,7 +9,6 @@ keywords:
 - substream compositing WDK DirectX VA
 - VMR WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Combining Deinterlacing and Video Substream Compositing

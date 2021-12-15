@@ -2,7 +2,6 @@
 title: Virtual Machine Network Adapters
 description: Virtual Machine Network Adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Machine Network Adapters

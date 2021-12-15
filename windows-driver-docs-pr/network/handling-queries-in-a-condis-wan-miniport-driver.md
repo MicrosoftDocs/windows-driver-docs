@@ -8,7 +8,6 @@ keywords:
 - OID_WAN_CO_GET_STATS_INFO
 - queries WDK CoNDIS WAN
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Queries in a CoNDIS WAN Miniport Driver

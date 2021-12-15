@@ -4,7 +4,6 @@ description: WDI_TLV_FTM_RESPONSE is a WiFiCx TLV that contains Fine Timing Meas
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_FTM_RESPONSE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_FTM_RESPONSE (dot11wificxtypes.hpp)

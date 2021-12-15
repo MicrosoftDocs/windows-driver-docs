@@ -2,7 +2,6 @@
 title: Time Travel Debugging Extension !tt Command 
 description: The !tt time travel debugger extension that allows you to navigate forward and backwards in time.
 ms.date: 01/22/2020
-ms.localizationpriority: medium
 ---
 
 # !tt (time travel)

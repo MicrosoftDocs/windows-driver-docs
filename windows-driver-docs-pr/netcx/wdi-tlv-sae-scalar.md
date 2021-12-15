@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_SCALAR is a WiFiCx TLV that contains the FFE for a SAE 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_SAE_SCALAR Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_SAE_SCALAR (dot11wificxtypes.hpp)

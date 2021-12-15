@@ -3,7 +3,6 @@ title: WMI Class Names and Base Classes
 description: WMI Class Names and Base Classes
 keywords: ["base classes WDK WMI", "names WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # WMI Class Names and Base Classes

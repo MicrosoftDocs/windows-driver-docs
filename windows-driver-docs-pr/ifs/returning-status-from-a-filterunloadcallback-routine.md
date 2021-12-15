@@ -6,7 +6,6 @@ keywords:
 - returning status WDK file system
 - refusing unload operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Returning Status from a FilterUnloadCallback Routine

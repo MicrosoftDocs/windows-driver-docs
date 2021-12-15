@@ -2,7 +2,6 @@
 title: Supporting ambient light sensors
 description: Supporting ambient light sensors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting ambient light sensors

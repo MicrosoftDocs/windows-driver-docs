@@ -2,7 +2,6 @@
 title: Flushing Port Driver's Internal Queue
 description: Flushing Port Driver's Internal Queue
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Flushing Port Driver's Internal Queue

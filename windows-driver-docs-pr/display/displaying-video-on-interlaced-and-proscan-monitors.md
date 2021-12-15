@@ -17,7 +17,6 @@ keywords:
 - VPEs WDK DirectDraw , interlaced video
 - NTSC/PAL WDK video port extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying Video on Interlaced and Proscan Monitors

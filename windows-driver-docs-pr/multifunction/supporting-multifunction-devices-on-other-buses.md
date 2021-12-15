@@ -8,7 +8,6 @@ keywords:
 - USB WDK multifunction devices
 - IEEE 1394 WDK multifunction devices
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # Supporting Multifunction Devices On Other Buses

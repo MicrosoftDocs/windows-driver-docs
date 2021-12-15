@@ -2,7 +2,6 @@
 title: KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL
 description: KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL

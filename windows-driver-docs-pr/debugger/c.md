@@ -3,7 +3,6 @@ title: C (Windows Debugger Glossary)
 description: Glossary page - C
 ms.asseti: 295b05a3-e27f-4761-a562-7e87e25bfd3b
 ms.date: 12/17/2019
-ms.localizationpriority: medium
 ---
 
 # C

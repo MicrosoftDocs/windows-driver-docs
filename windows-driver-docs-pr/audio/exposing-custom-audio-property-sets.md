@@ -5,7 +5,6 @@ keywords:
 - hardware acceleration WDK DirectSound , custom audio property sets
 - custom audio property sets WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Exposing Custom Audio Property Sets

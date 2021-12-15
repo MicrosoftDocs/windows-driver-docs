@@ -2,7 +2,6 @@
 title: Testing Location Functionality
 description: The Sensor Diagnostic Tool includes a separate Location tab that logs properties that are specific to location.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing Location Functionality

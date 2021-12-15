@@ -4,7 +4,6 @@ description: The NdisQueryMdlOffset macro retrieves the offset within a physical
 ms.date: 07/18/2017
 keywords:
  - NdisQueryMdlOffset macro Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NdisQueryMdlOffset macro

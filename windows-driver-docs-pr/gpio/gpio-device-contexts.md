@@ -2,7 +2,6 @@
 title: GPIO Device Contexts
 description: A general-purpose I/O (GPIO) controller device is represented by a framework device object.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GPIO Device Contexts

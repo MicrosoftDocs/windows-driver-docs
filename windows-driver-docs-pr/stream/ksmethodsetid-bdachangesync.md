@@ -2,7 +2,6 @@
 title: KSMETHODSETID_BdaChangeSync
 description: KSMETHODSETID_BdaChangeSync is the BDA change sync method set.
 ms.date: 10/12/2021
-ms.localizationpriority: medium
 ---
 
 # KSMETHODSETID_BdaChangeSync

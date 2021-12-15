@@ -2,7 +2,6 @@
 title: Obsolete Port Class Functions
 description: Obsolete Port Class Functions
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Obsolete Port Class Functions

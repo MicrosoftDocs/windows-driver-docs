@@ -9,7 +9,6 @@ api_name:
 - ioctldecode
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ioctldecode

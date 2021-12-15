@@ -2,7 +2,6 @@
 title: SIM toolkit Overview
 description: SIM toolkit Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SIM toolkit Overview

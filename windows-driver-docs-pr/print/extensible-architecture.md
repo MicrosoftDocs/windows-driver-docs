@@ -9,7 +9,6 @@ keywords:
 - XPSDrv printer drivers WDK , extensibility
 - extensibility WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extensible Architecture

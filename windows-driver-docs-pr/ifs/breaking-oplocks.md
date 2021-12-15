@@ -2,7 +2,6 @@
 title: Breaking Oplocks
 description: Breaking Oplocks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Breaking Oplocks

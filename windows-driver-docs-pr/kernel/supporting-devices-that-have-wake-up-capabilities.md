@@ -3,7 +3,6 @@ title: Supporting Devices that Have Wake-Up Capabilities
 description: Supporting Devices that Have Wake-Up Capabilities
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "restoring power WDK kernel", "IRPs WDK power management", "wait/wake IRPs WDK power management", "I/O request packets WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Devices that Have Wake-Up Capabilities

@@ -9,7 +9,6 @@ api_name:
 - NO_BOOT_DEVICE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x53: NO\_BOOT\_DEVICE

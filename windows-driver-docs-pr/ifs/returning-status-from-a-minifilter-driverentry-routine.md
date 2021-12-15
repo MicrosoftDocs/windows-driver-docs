@@ -5,7 +5,6 @@ keywords:
 - status values WDK file system
 - returning status WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Returning Status from a Minifilter DriverEntry Routine

@@ -2,7 +2,6 @@
 title: Uploading Data to a Device
 description: Uploading Data to a Device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Uploading Data to a Device

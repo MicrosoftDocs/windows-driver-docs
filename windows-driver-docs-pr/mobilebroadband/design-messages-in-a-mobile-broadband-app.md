@@ -2,7 +2,6 @@
 title: Design messages in a mobile broadband app
 description: Design messages in a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design messages in a mobile broadband app

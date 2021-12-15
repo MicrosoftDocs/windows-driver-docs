@@ -2,7 +2,6 @@
 title: Bluetooth Version and Profile Support in Previous Windows Versions
 description: Bluetooth Version and Profile Support in Previous Windows Versions
 ms.date: 09/14/2021
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Version and Profile Support in Previous Windows Versions

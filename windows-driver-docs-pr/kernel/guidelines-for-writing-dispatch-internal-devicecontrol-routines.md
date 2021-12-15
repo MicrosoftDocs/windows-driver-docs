@@ -3,7 +3,6 @@ title: Guidelines for Writing Dispatch(Internal)DeviceControl Routines
 description: Guidelines for Writing Dispatch(Internal)DeviceControl Routines
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Guidelines for Writing Dispatch(Internal)DeviceControl Routines

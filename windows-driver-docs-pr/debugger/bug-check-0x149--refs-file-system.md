@@ -9,7 +9,6 @@ api_name:
 - REFS_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x149: REFS\_FILE\_SYSTEM

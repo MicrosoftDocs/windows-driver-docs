@@ -8,7 +8,6 @@ keywords:
 - 16550 UART-compatible interfaces WDK serial devices
 - initializing 16550 UART-compatible interfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Opening and Initializing a 16550 UART-Compatible Interface

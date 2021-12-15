@@ -2,7 +2,6 @@
 title: MB Interface Overview
 description: MB Interface Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Interface Overview

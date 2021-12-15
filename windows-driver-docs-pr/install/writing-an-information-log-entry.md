@@ -2,7 +2,6 @@
 title: Writing an Information Log Entry
 description: Writing an Information Log Entry
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing an Information Log Entry

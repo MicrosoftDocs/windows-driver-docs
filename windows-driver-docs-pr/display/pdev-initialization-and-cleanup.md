@@ -10,7 +10,6 @@ keywords:
 - DrvEnablePDEV
 - drawing WDK GDI , PDEV cleanup
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PDEV Initialization and Cleanup

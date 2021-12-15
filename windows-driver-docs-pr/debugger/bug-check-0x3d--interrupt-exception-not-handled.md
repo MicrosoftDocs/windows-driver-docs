@@ -9,7 +9,6 @@ api_name:
 - INTERRUPT_EXCEPTION_NOT_HANDLED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x3D: INTERRUPT\_EXCEPTION\_NOT\_HANDLED

@@ -3,7 +3,6 @@ title: Loading a Theme
 description: Loading a Theme
 keywords: ["themes, loading"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Loading a Theme

@@ -8,7 +8,6 @@ keywords:
 - closing call managers
 - closing miniport call managers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Closing a CoNDIS Call Manager or MCM

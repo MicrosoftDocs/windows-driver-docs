@@ -3,7 +3,6 @@ title: Debug Kernel Connection Cycle Baud Rate
 description: Debug Kernel Connection Cycle Baud Rate
 keywords: ["Debug Kernel Connection Cycle Baud Rate"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Kernel Connection | Cycle Baud Rate

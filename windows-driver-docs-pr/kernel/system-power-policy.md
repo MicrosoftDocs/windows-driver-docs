@@ -3,7 +3,6 @@ title: System Power Policy
 description: System Power Policy
 keywords: ["system-wide power policy WDK kernel", "power policy WDK kernel", "power supply WDK kernel", "system power policy WDK kernel", "AC power WDK kernel", "DC power WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # System Power Policy

@@ -2,7 +2,6 @@
 title: Application Item Contexts
 description: Application Item Contexts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Application Item Contexts

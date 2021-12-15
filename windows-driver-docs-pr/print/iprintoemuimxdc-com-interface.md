@@ -4,7 +4,6 @@ description: IPrintOemUIMXDC COM Interface
 keywords:
 - IPrintOemUIMXDC
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrintOemUIMXDC COM Interface

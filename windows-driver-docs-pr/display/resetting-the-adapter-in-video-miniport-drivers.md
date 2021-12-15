@@ -6,7 +6,6 @@ keywords:
 - resetting adapters WDK video miniport
 - HwVidResetHw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Resetting the Adapter in Video Miniport Drivers

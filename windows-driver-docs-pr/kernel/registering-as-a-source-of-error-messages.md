@@ -3,7 +3,6 @@ title: Registering as a Source of Error Messages
 description: Registering as a Source of Error Messages
 keywords: ["source registration WDK errors", "errors WDK kernel", "registering error message sources", "registry WDK error logs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering as a Source of Error Messages

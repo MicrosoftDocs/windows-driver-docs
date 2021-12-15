@@ -10,7 +10,6 @@ keywords:
 - DirectDraw AGP support WDK Windows 2000 display , DMA-style AGP
 - memory WDK DirectDraw AGP , DMA-style AGP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling DMA-style AGP

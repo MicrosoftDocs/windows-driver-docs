@@ -9,7 +9,6 @@ api_name:
 - cchelp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !cchelp

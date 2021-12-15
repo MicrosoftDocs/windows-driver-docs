@@ -8,7 +8,6 @@ keywords:
 - Z-buffer WDK Direct3D
 - restoring flipping chains WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Points to Consider when Restoring Complex Flipping Chains

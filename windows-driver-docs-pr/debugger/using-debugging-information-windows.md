@@ -3,7 +3,6 @@ title: Using Debugging Information Windows
 description: Using Debugging Information Windows
 keywords: ["debugging information windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Debugging Information Windows

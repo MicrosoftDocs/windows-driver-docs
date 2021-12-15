@@ -2,7 +2,6 @@
 title: ALE Endpoint Lifetime Management
 description: ALE Endpoint Lifetime Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ALE Endpoint Lifetime Management

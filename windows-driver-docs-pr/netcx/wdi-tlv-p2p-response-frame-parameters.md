@@ -4,7 +4,6 @@ description: WiFiCx does not use the WDI_TLV_P2P_RESPONSE_FRAME_PARAMETERS TLV.
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_P2P_RESPONSE_FRAME_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_RESPONSE\_FRAME\_PARAMETERS (dot11wificxtypes.hpp)

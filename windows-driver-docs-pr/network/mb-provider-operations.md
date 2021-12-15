@@ -2,7 +2,6 @@
 title: MB Provider Operations
 description: MB Provider Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Provider Operations

@@ -3,7 +3,6 @@ title: triage (WinDbg)
 description: triage
 keywords: ["triage extension (obsolete)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # !triage

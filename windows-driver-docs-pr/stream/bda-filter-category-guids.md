@@ -2,7 +2,6 @@
 title: BDA Filter Category GUIDs
 description: A BDA minidriver uses the BDA filter category GUIDs to specify the types of BDA filters to create.
 ms.date: 10/07/2021
-ms.localizationpriority: medium
 ---
 
 # BDA Filter Category GUIDs

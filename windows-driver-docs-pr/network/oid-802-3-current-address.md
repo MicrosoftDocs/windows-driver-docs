@@ -4,7 +4,6 @@ description: OID_802_3_CURRENT_ADDRESS
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_CURRENT_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_CURRENT\_ADDRESS

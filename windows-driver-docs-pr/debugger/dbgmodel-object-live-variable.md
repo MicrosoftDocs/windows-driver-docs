@@ -2,7 +2,6 @@
 title: Debugger Data Model - Live Variable Objects
 description: Collection of information about the variables which are live at that particular instruction and where they are located
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Live Variable Objects 
 ## Summary

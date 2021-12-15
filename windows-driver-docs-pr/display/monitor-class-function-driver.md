@@ -13,7 +13,6 @@ keywords:
 - FDOs WDK monitors
 - filter DOs WDK monitors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Monitor Class Function Driver

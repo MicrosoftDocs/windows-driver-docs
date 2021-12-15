@@ -2,7 +2,6 @@
 title: Adding Interrupt Event Support
 description: Adding Interrupt Event Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Interrupt Event Support

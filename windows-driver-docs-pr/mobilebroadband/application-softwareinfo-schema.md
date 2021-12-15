@@ -2,7 +2,6 @@
 title: Application (SoftwareInfo)
 description: Application (SoftwareInfo)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Application (SoftwareInfo)

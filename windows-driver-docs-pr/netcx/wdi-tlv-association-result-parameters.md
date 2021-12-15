@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_RESULT_PARAMETERS is a WiFiCx TLV that contains
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_ASSOCIATION_RESULT_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_RESULT\_PARAMETERS (dot11wificxtypes.hpp)

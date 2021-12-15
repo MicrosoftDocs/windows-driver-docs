@@ -9,7 +9,6 @@ api_name:
 - ndiskd.filterdriver
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.filterdriver

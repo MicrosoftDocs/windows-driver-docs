@@ -9,7 +9,6 @@ keywords:
 - IoCreateDevice
 - filter DOs WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating the Filter Device Object

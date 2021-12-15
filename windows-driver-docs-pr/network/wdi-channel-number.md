@@ -4,7 +4,6 @@ description: This topic describes the WDI_CHANNEL_NUMBER data type for WDI minip
 keywords:
 - WDI_CHANNEL_NUMBER, WDK WDI_CHANNEL_NUMBER network drivers
 ms.date: 11/27/2017
-ms.localizationpriority: medium
 ---
 
 # WDI_CHANNEL_NUMBER

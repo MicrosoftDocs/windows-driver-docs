@@ -2,7 +2,6 @@
 title: Metadata Files for Analysis Extension Plug-ins
 description: When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Metadata Files for Analysis Extension Plug-ins

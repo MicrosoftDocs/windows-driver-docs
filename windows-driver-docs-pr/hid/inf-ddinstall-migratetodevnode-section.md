@@ -5,7 +5,6 @@ keywords:
 - INF files WDK non-HID keyboard/mouse
 - DDInstall.MigrateToDevNode section
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF DDInstall.MigrateToDevNode Section

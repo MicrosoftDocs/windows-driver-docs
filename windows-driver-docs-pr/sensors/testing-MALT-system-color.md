@@ -2,7 +2,6 @@
 title: Testing system color
 description: Instructions for how to use the Microsoft Ambient Light Tool (MALT) as a color testing solution.
 ms.date: 07/08/2021
-ms.localizationpriority: medium
 ---
 
 # Testing system color

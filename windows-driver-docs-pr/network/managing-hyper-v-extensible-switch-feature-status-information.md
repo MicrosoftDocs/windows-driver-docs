@@ -2,7 +2,6 @@
 title: Managing Hyper-V Extensible Switch Feature Status Information
 description: Managing Hyper-V Extensible Switch Feature Status Information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Hyper-V Extensible Switch Feature Status Information

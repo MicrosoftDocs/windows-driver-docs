@@ -2,7 +2,6 @@
 title: PrivilegedApplications
 description: PrivilegedApplications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PrivilegedApplications

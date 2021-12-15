@@ -5,7 +5,6 @@ keywords:
 - preoperation callback routines WDK file system minifilter , guidelines
 - postoperation callback routines WDK file system minifilter , guidelines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering I/O Operations in a Minifilter Driver

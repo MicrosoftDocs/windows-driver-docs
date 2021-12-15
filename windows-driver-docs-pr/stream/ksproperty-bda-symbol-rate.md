@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 10/14/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_BDA_SYMBOL_RATE

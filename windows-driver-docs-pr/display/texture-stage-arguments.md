@@ -6,7 +6,6 @@ keywords:
 - texture stages WDK Direct3D
 - texture management WDK Direct3D , stages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Texture Stage Arguments

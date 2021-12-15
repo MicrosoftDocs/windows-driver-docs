@@ -3,7 +3,6 @@ title: Implementing a Cancel Routine
 description: Implementing a Cancel Routine
 keywords: ["canceling IRPs, guidelines", "Cancel routines, guidelines"]
 ms.date: 05/09/2018
-ms.localizationpriority: medium
 ---
 
 # Implementing a Cancel Routine

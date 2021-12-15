@@ -10,7 +10,6 @@ keywords:
 - High Definition Audio (HD Audio), link position registers
 - clocks WDK audio , HD Audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Wall Clock and Link Position Registers

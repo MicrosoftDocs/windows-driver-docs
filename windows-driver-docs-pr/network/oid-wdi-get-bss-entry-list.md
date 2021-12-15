@@ -4,7 +4,6 @@ description: OID_WDI_GET_BSS_ENTRY_LIST is used to ask the adapter to indicate t
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_BSS_ENTRY_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

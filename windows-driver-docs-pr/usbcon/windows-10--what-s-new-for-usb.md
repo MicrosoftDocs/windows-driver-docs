@@ -2,7 +2,6 @@
 description: Highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
 title: Windows 10 - What's new for USB
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows 10: What's new for USB

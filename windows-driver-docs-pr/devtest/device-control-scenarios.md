@@ -8,7 +8,6 @@ keywords:
 - test scenarios WDK WSDBIT
 - Device Control scenario WDK WSDBIT
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Control Scenarios

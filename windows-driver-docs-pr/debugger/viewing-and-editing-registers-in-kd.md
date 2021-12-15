@@ -2,7 +2,6 @@
 title: Viewing and Editing Registers in KD
 description: In KD, you can view and edit registers by entering the r (Registers) command. You can customize the display by using several options or by using the rm (Register Mask) command.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing and Editing Registers in KD

@@ -9,7 +9,6 @@ api_name:
 - INVALID_SILO_DETACH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1CB: INVALID\_SILO\_DETACH

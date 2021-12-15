@@ -4,7 +4,6 @@ description: This topic describes the OID_GEN_CO_MEDIA_SUPPORTED object identifi
 keywords:
 - OID_GEN_CO_MEDIA_SUPPORTED
 ms.date: 11/02/2017
-ms.localizationpriority: medium
 ---
 
 # OID_GEN_CO_MEDIA_SUPPORTED

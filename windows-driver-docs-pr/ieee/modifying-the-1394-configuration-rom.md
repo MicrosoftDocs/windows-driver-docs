@@ -6,7 +6,6 @@ keywords:
 - 1394 WDK buses , modifying Configuration ROMs
 - Configuration ROMs WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modifying the 1394 Configuration ROM

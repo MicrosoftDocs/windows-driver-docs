@@ -8,7 +8,6 @@ keywords:
 - halftoning WDK GDI
 - 8-bit-per-pixel CMY mask modes WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using GDI 8-Bit-Per-Pixel CMY Mask Modes

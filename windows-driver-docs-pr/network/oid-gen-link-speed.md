@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_LINK_SPEED OID specifies the maximum speed 
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LINK_SPEED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_LINK\_SPEED

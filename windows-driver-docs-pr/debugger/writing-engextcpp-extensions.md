@@ -3,7 +3,6 @@ title: Writing EngExtCpp Extensions
 description: Writing EngExtCpp Extensions
 keywords: ["EngExtCpp extensions, writing"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Writing EngExtCpp Extensions

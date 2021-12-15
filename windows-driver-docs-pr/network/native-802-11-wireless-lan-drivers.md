@@ -4,7 +4,6 @@ description: Native 802.11 Wireless LAN Drivers
 keywords:
 - Native 802.11 Wireless LAN Drivers WDK, Native Wi-Fi network drivers, Native 802.11 wlan drivers
 ms.date: 05/08/2018
-ms.localizationpriority: medium
 ---
 
 # Native 802.11 Wireless LAN Drivers

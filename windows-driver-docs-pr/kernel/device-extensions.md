@@ -3,7 +3,6 @@ title: Device Extensions
 description: Device Extensions
 keywords: ["device objects WDK kernel , device extensions", "device extensions WDK kernel", "extensions WDK device objects", "higher-level driver extensions WDK kernel", "lower-level driver extensions WDK kernel", "intermediate driver extensions WDK kernel"]
 ms.date: 07/21/2021
-ms.localizationpriority: medium
 ---
 
 # Device Extensions

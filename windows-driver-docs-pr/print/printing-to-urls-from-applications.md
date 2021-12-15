@@ -9,7 +9,6 @@ keywords:
 - print Web pages WDK , printing to URLs
 - Web pages WDK printer , printing to URLs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printing to URLs from Applications

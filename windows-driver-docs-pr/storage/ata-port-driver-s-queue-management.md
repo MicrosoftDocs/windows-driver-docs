@@ -7,7 +7,6 @@ keywords:
 - device queues WDK ATA Port driver
 - LUN queues WDK ATA Port driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ATA Port Driver's Queue Management

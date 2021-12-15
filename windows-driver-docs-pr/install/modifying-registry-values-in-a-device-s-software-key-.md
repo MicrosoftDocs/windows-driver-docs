@@ -5,7 +5,6 @@ keywords:
 - registry WDK device installations , modifying registry values in a device's software key
 - modifying registry values WDK device installations , device software key
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modifying Registry Values in a Device's Software Key

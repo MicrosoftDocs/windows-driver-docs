@@ -9,7 +9,6 @@ api_name:
 - SpChangeIrql
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpChangeIrql rule (storport)

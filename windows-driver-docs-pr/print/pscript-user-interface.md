@@ -6,7 +6,6 @@ keywords:
 - Pscript WDK print , user interface
 - user interface WDK Pscript
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pscript User Interface

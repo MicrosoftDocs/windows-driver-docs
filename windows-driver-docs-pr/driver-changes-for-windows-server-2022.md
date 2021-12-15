@@ -2,7 +2,6 @@
 title: Driver development changes for Windows Server 2022
 description: This section describes new features for driver development in Windows 10.
 ms.date: 05/28/2021
-ms.localizationpriority: medium
 ---
 
 # What's new in Windows Server 2022

@@ -4,7 +4,6 @@ description: Driver Coverage Filter Driver
 keywords:
 - Driver Coverage Toolkit WDK , filter driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Coverage Filter Driver

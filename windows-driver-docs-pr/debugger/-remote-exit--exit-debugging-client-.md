@@ -9,7 +9,6 @@ api_name:
 - .remote_exit (Exit Debugging Client)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .remote\_exit (Exit Debugging Client)

@@ -2,7 +2,6 @@
 title: Obtaining a PCMCIA_INTERFACE_STANDARD Interface
 description: Obtaining a PCMCIA_INTERFACE_STANDARD Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface

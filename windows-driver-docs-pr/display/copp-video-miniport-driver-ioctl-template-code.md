@@ -4,7 +4,6 @@ description: COPP Video Miniport Driver IOCTL Template Code
 keywords:
 - IOCTLs WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP Video Miniport Driver IOCTL Template Code

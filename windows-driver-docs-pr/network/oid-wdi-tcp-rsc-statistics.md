@@ -4,7 +4,6 @@ description: OID_WDI_TCP_RSC_STATISTICS is a get command that queries the RSC st
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TCP_RSC_STATISTICS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TCP\_RSC\_STATISTICS

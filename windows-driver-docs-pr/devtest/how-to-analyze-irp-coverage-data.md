@@ -4,7 +4,6 @@ description: How to Analyze IRP Coverage Data
 keywords:
 - Driver Coverage Toolkit WDK , analyzing data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to Analyze IRP Coverage Data

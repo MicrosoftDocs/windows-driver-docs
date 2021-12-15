@@ -16,7 +16,6 @@ keywords:
 - DirectDraw AGP support WDK Windows 2000 display
 - memory WDK DirectDraw AGP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AGP Support

@@ -9,7 +9,6 @@ api_name:
 - WIN32K_POWER_WATCHDOG_TIMEOUT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x19C: WIN32K\_POWER\_WATCHDOG\_TIMEOUT

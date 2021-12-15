@@ -4,7 +4,6 @@ description: NDIS 6.20 Updates to NDIS 6.1 Features
 keywords:
 - NDIS 6.20 WDK , updates to NDIS 6.1 features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS 6.20 Updates to NDIS 6.1 Features

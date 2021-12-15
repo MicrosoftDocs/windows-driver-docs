@@ -4,7 +4,6 @@ description: CM_PROB_HARDWARE_DISABLED
 keywords:
 - CM_PROB_HARDWARE_DISABLED
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 29 - CM_PROB_HARDWARE_DISABLED

@@ -5,7 +5,6 @@ keywords:
 - display driver model WDK Windows Vista , benefits
 - Windows Vista display driver model WDK , benefits
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Benefits of the Windows Display Driver Model (WDDM)

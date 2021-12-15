@@ -7,7 +7,6 @@ keywords:
 - tape drivers WDK storage , required routines
 - storage tape drivers WDK , required routines
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Tape Miniclass Driver Routines

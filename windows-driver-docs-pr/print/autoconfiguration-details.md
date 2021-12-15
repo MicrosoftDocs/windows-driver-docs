@@ -5,7 +5,6 @@ keywords:
 - autoconfiguration WDK printer , about printer autoconfiguration
 - printer autoconfiguration WDK printer , about printer autoconfiguration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autoconfiguration Details

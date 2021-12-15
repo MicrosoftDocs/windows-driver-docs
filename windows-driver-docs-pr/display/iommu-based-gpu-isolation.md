@@ -2,7 +2,6 @@
 title: IOMMU-based GPU isolation
 description: In the IOMMU model each process has a single virtual address space that is shared between the CPU and graphics processing unit (GPU) and is managed by the OS memory manager.
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # IOMMU model

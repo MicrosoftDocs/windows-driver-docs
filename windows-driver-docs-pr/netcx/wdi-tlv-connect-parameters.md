@@ -4,7 +4,6 @@ description: WDI_TLV_CONNECT_PARAMETERS is a WiFiCx TLV that contains parameters
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_CONNECT_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CONNECT\_PARAMETERS (dot11wificxtypes.hpp)

@@ -7,7 +7,6 @@ keywords:
 - Windows 2000 display driver model WDK , architecture
 - architecture WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows 2000 Display Architecture

@@ -6,7 +6,6 @@ keywords:
 - network notify objects WDK , processing notifications
 - notifications WDK networking , processing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing Notifications

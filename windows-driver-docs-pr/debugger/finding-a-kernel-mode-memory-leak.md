@@ -3,7 +3,6 @@ title: Finding a Kernel-Mode Memory Leak
 description: Finding a Kernel-Mode Memory Leak
 keywords: ["memory leak, kernel-mode", "memory leak, kernel-mode, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Finding a Kernel-Mode Memory Leak

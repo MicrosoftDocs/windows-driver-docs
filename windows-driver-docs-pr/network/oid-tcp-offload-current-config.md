@@ -4,7 +4,6 @@ description: This topic describes the OID_TCP_OFFLOAD_CURRENT_CONFIG object iden
 keywords:
 - OID_TCP_OFFLOAD_CURRENT_CONFIG, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
 ms.date: 02/27/2020
-ms.localizationpriority: medium
 ---
 
 # OID_TCP_OFFLOAD_CURRENT_CONFIG

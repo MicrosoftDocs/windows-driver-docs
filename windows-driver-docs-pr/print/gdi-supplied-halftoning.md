@@ -4,7 +4,6 @@ description: GDI-Supplied Halftoning
 keywords:
 - GDI-supplied halftoning WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI-Supplied Halftoning

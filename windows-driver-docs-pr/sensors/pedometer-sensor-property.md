@@ -2,7 +2,6 @@
 title: Pedometer sensor property
 description: The property key for the pedometer.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Pedometer sensor property

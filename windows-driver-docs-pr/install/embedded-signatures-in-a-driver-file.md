@@ -8,7 +8,6 @@ keywords:
 - digital signatures WDK , embedded
 - signatures WDK , embedded
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Embedded Signatures in a Driver File

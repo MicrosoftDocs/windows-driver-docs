@@ -2,7 +2,6 @@
 title: Using Core Drivers
 description: Using Core Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Core Drivers

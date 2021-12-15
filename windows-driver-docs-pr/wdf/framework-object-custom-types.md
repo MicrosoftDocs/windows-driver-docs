@@ -2,7 +2,6 @@
 title: Framework Object Custom Types
 description: Framework Object Custom Types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Object Custom Types

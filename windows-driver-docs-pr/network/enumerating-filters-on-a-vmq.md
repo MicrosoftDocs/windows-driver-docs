@@ -2,7 +2,6 @@
 title: Enumerating Filters on a VMQ
 description: Enumerating Filters on a VMQ
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating Filters on a VMQ

@@ -5,7 +5,6 @@ keywords:
 - user-mode memory WDK Windows 2000 display
 - user-mode memory WDK Windows 2000 display , exception handling
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Exception Handling When Accessing User-Mode Memory

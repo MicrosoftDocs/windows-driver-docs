@@ -4,7 +4,6 @@ description: Required Display Driver Functions
 keywords:
 - graphics DDI functions WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Required Display Driver Functions

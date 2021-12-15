@@ -4,7 +4,6 @@ description: Mixed Memory Allocation
 keywords:
 - mixed memory allocation WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mixed Memory Allocation

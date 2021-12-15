@@ -4,7 +4,6 @@ description: Macroblock Addresses
 keywords:
 - macroblocks WDK DirectX VA , addresses
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Macroblock Addresses

@@ -2,7 +2,6 @@
 title: DDI Compliance Rules
 description: DDI Compliance Rules
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # DDI Compliance Rules

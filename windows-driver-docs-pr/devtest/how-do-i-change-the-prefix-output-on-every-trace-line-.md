@@ -2,7 +2,6 @@
 title: How do I change the prefix output on every trace line
 description: How do I change the prefix output on every trace line
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I change the prefix output on every trace line?

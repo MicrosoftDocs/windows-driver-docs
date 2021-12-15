@@ -3,7 +3,6 @@ title: Windows Compatible Products List
 description: Windows Compatible Products List
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Compatible Products List

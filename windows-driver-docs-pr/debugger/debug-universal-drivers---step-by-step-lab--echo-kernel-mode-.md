@@ -3,7 +3,6 @@ title: Debug Windows Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 keywords: ["debug lab", "step-by-step", "ECHO"]
 ms.date: 05/04/2021
-ms.localizationpriority: medium
 ---
 
 # Debug Windows Drivers - Step by Step Lab (Echo Kernel-Mode)

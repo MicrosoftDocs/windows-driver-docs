@@ -2,7 +2,6 @@
 title: Performance degradation and DoS attacks in NDIS drivers
 description: Performance Degradation and Denial of Service Attacks in NDIS Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performance Degradation and Denial of Service Attacks in NDIS Drivers

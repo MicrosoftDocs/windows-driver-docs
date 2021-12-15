@@ -3,7 +3,6 @@ title: Handling a GUID_TARGET_DEVICE_REMOVE_COMPLETE Event
 description: Handling a GUID_TARGET_DEVICE_REMOVE_COMPLETE Event
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "GUID_TARGET_DEVICE_REMOVE_COMPLETE"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling a GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE Event

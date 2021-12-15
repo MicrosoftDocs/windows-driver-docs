@@ -4,7 +4,6 @@ description: Unified Device Property Model
 keywords:
 - device properties WDK device installations , unified device property model
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unified Device Property Model

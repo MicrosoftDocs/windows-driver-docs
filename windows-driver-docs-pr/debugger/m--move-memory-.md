@@ -9,7 +9,6 @@ api_name:
 - m (Move Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # m (Move Memory)

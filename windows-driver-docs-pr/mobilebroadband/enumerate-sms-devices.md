@@ -2,7 +2,6 @@
 title: Enumerate SMS devices
 description: Enumerate SMS devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerate SMS devices

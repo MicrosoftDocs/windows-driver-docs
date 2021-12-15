@@ -10,7 +10,6 @@ keywords:
 - I2C
 - transport minidriver
 ms.date: 06/22/2021
-ms.localizationpriority: medium
 ---
 
 # HID Transport Overview

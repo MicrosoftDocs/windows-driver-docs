@@ -2,7 +2,6 @@
 title: Tile resources
 description: For tile resources, the asynchronous video memory manager services running on the device paging queue aren't sufficient.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tile resources

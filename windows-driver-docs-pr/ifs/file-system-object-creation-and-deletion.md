@@ -7,7 +7,6 @@ keywords:
 - file objects WDK mini-redirectors
 - objects WDK mini-redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # File System Object Creation and Deletion

@@ -9,7 +9,6 @@ keywords:
 - low-level hardware error handler WDK WHEA
 - LLHEH WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How WHEA Performs PFA on ECC Memory

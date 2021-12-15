@@ -8,7 +8,6 @@ keywords:
 - RF tuners WDK BDA
 - frequency properties WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Frequency Properties of a BDA Tuner Node

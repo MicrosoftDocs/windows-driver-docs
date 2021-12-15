@@ -3,7 +3,6 @@ title: I/O Stack Locations
 description: I/O Stack Locations
 keywords: ["IRPs WDK kernel , I/O stack locations", "I/O stack locations WDK kernel", "stack locations WDK kernel", "layered driver I/O stack locations WDK kernel", "IRPs WDK kernel , contents", "IO_STACK_LOCATION structure"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # I/O Stack Locations

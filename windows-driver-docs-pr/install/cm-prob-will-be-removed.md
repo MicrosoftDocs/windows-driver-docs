@@ -4,7 +4,6 @@ description: CM_PROB_WILL_BE_REMOVED
 keywords:
 - CM_PROB_WILL_BE_REMOVED
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 21 - CM_PROB_WILL_BE_REMOVED

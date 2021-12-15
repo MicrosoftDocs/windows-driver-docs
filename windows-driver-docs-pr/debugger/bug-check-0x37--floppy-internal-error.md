@@ -9,7 +9,6 @@ api_name:
 - FLOPPY_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x37: FLOPPY\_INTERNAL\_ERROR

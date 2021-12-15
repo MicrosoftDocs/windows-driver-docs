@@ -2,7 +2,6 @@
 title: WinDbg Preview -  Notes, Command, Memory and Source Menus
 description: This section describes how work with the Notes, Command, Memory and Source menus.
 ms.date: 01/10/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Notes, Command, Memory and Source Menus

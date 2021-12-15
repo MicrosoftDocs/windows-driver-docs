@@ -14,7 +14,6 @@ keywords:
 - higher-level device filter drivers WDK serial devices
 - filter drivers WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Serial.sys and Serenum.sys

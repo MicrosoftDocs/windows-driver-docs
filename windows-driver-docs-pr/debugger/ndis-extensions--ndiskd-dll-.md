@@ -3,7 +3,6 @@ title: NDIS Extensions (Ndiskd.dll)
 description: NDIS Extensions (Ndiskd.dll)
 keywords: ["NDIS extensions (ndiskd.dll)", "ndiskd.dll (NDIS extensions)", "extensions, NDIS"]
 ms.date: 06/29/2020
-ms.localizationpriority: medium
 ---
 
 # NDIS Extensions (Ndiskd.dll)

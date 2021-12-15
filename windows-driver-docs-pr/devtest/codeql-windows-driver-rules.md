@@ -2,7 +2,6 @@
 title: CodeQL Queries for Windows Drivers
 description: CodeQL Queries for Drivers
 ms.date: 01/11/2021
-ms.localizationpriority: medium
 ---
 
 # Supplemental Windows Driver CodeQL Queries

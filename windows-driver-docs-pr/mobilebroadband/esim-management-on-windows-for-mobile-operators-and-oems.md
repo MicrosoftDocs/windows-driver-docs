@@ -2,7 +2,6 @@
 title: eSIM management on Windows for mobile operators and OEMs
 description: eSIM management on Windows for mobile operators and OEMs
 ms.date: 05/23/2019
-ms.localizationpriority: medium
 ---
 
 # eSIM management on Windows for mobile operators and OEMs

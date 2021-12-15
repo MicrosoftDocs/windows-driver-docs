@@ -9,7 +9,6 @@ keywords:
 - force feedback drivers WDK HID , property sheets
 - game pad support WDK DirectInput
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extending the DirectInput Game Controller Control Panel

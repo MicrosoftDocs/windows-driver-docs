@@ -9,7 +9,6 @@ api_name:
 - VHD_BOOT_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x12F: VHD\_BOOT\_INITIALIZATION\_FAILED

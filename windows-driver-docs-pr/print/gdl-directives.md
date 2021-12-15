@@ -6,7 +6,6 @@ keywords:
 - directives WDK GDL
 - parser WDK GDL , directives
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Directives

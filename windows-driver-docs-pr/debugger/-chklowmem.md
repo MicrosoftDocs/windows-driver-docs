@@ -9,7 +9,6 @@ api_name:
 - chklowmem
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !chklowmem

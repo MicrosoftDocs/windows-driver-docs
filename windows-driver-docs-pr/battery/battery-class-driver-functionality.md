@@ -4,7 +4,6 @@ description: Battery Class Driver Functionality
 keywords:
 - battery class drivers WDK , functionality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Battery Class Driver Functionality

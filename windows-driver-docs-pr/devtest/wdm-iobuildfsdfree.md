@@ -9,7 +9,6 @@ api_name:
 - IoBuildFsdFree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildFsdFree rule (wdm)

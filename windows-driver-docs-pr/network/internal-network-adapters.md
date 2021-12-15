@@ -2,7 +2,6 @@
 title: Internal Network Adapters
 description: Internal Network Adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Internal Network Adapters

@@ -10,7 +10,6 @@ keywords:
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
 ms.date: 09/01/2020
-ms.localizationpriority: medium
 ---
 
 # Identifiers for SCSI Devices

@@ -9,7 +9,6 @@ api_name:
 - .echotimestamps (Show Time Stamps)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .echotimestamps (Show Time Stamps)

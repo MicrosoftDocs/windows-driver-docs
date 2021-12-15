@@ -7,7 +7,6 @@ keywords:
 - bus-master DMA WDK KMDF , transactions
 - reusing DMA transaction objects WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reusing DMA Transaction Objects

@@ -3,7 +3,6 @@ title: Window Undock All
 description: Window Undock All
 keywords: ["Window Undock All", "undocked windows, Window Undock All"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Window | Undock All

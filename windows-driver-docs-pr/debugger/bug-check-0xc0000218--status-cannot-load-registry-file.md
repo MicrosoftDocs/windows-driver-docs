@@ -9,7 +9,6 @@ api_name:
 - STATUS_CANNOT_LOAD_REGISTRY_FILE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC0000218: STATUS\_CANNOT\_LOAD\_REGISTRY\_FILE

@@ -2,7 +2,6 @@
 title: Performance in network drivers
 description: This section describes techniques to improve performance in network drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performance in Network Drivers

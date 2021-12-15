@@ -2,7 +2,6 @@
 title: Basic Scanning for Film Scanners
 description: Basic Scanning for Film Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Basic Scanning for Film Scanners

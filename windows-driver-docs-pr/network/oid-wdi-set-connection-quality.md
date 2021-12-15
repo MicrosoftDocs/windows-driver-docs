@@ -4,7 +4,6 @@ description: OID_WDI_SET_CONNECTION_QUALITY provides a hint to the IHV component
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_CONNECTION_QUALITY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

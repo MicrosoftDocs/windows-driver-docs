@@ -1,7 +1,6 @@
 ---
 title: Code samples
 description: This section includes code samples and sample descriptors for interface implementation.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

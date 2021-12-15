@@ -4,7 +4,6 @@ description: Enabling Support for Color in PCL XL Minidrivers
 keywords:
 - PCL XL vector graphics WDK Unidrv , enabling color support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 #  Enabling Support for Color in PCL XL Minidrivers

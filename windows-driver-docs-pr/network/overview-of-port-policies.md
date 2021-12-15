@@ -2,7 +2,6 @@
 title: Overview of Port Policies
 description: Overview of Port Policies
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Port Policies

@@ -8,7 +8,6 @@ keywords:
 - clocks
 - local clocks WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection-Oriented Timing Features

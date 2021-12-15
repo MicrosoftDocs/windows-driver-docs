@@ -3,7 +3,6 @@ title: When Should Code and Data Be Pageable
 description: When Should Code and Data Be Pageable
 keywords: ["memory management WDK kernel , pageable drivers", "pageable drivers WDK kernel , when should be pageable", "locked-on-demand code WDK kernel", "spin locks WDK memory", "resident code WDK pageable drivers"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # When Should Code and Data Be Pageable?

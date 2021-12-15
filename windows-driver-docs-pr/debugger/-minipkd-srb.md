@@ -9,7 +9,6 @@ api_name:
 - minipkd.srb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !minipkd.srb

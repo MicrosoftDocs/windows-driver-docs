@@ -6,7 +6,6 @@ keywords:
 - errors WDK display
 - logging errors WDK display
 ms.date: 10/27/2020
-ms.localizationpriority: medium
 ---
 
 # Logging Driver Errors

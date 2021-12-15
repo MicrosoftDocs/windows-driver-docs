@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbportmdportlog
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbportmdportlog

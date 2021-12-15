@@ -11,7 +11,6 @@ keywords:
 - PCI interrupts WDK PCMCIA bus
 - ISA interrupts WDK PCMCIA bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PCMCIA IRQ Routing on Windows XP

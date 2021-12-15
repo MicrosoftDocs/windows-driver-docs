@@ -9,7 +9,6 @@ api_name:
 - UNEXPECTED_INITIALIZATION_CALL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x33: UNEXPECTED\_INITIALIZATION\_CALL

@@ -3,7 +3,6 @@ title: View Status Bar
 description: View Status Bar
 keywords: ["View Status Bar", "status bar, View Status Bar"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Status Bar

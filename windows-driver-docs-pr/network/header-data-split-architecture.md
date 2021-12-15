@@ -5,7 +5,6 @@ keywords:
 - header-data split WDK , architecture
 - header-data split providers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Header-Data Split Architecture

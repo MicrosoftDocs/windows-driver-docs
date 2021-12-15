@@ -4,7 +4,6 @@ description: An overlying driver issues an object identifier (OID) set request o
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_WRITE_VF_CONFIG_SPACE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_WRITE\_VF\_CONFIG\_SPACE

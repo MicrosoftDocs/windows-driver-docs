@@ -2,7 +2,6 @@
 title: Direct3D features and requirements in WDDM 1.2
 description: Microsoft Direct3D offers a rich collection of 3-D graphics APIs, which are widely used by software applications for complex visualization and game development.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D features and requirements in WDDM 1.2

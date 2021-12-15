@@ -9,7 +9,6 @@ api_name:
 - BUGCODE_NDIS_DRIVER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15E: BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP

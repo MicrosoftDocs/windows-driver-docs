@@ -10,7 +10,6 @@ keywords:
 - converting AFM files to NTF files
 - Adobe Font Metrics WDK Pscript
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting AFM Files to NTF Files

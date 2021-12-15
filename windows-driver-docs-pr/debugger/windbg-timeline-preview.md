@@ -2,7 +2,6 @@
 title: WinDbg Preview - Timelines 
 description: This section describes how work with the time travel timelines feature in WinDbg Preview.
 ms.date: 07/02/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Timelines

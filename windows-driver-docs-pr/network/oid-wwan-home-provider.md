@@ -4,7 +4,6 @@ description: OID_WWAN_HOME_PROVIDER is used to set and retrieve information abou
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_HOME_PROVIDER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_HOME\_PROVIDER

@@ -5,7 +5,6 @@ keywords:
 - Sdv-map.h WDK Static Driver Verifier , approving
 - approving Sdv-map.h
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Approving the Sdv-map.h File

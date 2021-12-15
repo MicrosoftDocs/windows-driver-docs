@@ -9,7 +9,6 @@ api_name:
 - .process (Set Process Context)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .process (Set Process Context)

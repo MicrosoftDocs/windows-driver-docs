@@ -4,7 +4,6 @@ description: Reporting Multiple-Head Video Memory
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , memory reporting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Multiple-Head Video Memory

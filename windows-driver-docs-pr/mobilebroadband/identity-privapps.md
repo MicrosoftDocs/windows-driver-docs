@@ -2,7 +2,6 @@
 title: Identity (SoftwareInfo - priviliged applications)
 description: Identity (SoftwareInfo - priviliged applications)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Identity (SoftwareInfo - priviliged applications)

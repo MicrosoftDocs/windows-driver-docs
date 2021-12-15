@@ -12,7 +12,6 @@ api_name:
 api_type:
 - COM
 ms.date: 07/07/2020
-ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext::PrintedPageCount method (in)

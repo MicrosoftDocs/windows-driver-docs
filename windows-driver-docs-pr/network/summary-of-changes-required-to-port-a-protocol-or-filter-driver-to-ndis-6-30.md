@@ -2,7 +2,6 @@
 title: Summary of changes to port protocol or filter drivers to NDIS 6.3
 description: To update an NDIS 6.x protocol or filter driver to support NDIS 6.30, you must modify it as outlined in the following sections.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Summary of Changes Required to Port a Protocol or Filter Driver to NDIS 6.30

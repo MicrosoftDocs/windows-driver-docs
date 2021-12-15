@@ -5,7 +5,6 @@ keywords:
 - capabilities WDK HID collections
 - summary capabilities WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Collection Capability

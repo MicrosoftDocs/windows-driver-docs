@@ -8,7 +8,6 @@ keywords:
 - task offload WDK TCP/IP transport , about task offload
 - capabilities WDK TCP/IP offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TCP/IP Task Offload Overview

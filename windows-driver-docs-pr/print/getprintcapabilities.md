@@ -4,7 +4,6 @@ description: The IPrintTicketProvider GetPrintCapabilities routine must return a
 keywords:
 - GetPrintCapabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GetPrintCapabilities

@@ -2,7 +2,6 @@
 title: Providing an IStiUSD Interface
 description: Providing an IStiUSD Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Providing an IStiUSD Interface

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 10/07/2021
-ms.localizationpriority: medium
 ---
 
 # AVCSTRM_READ

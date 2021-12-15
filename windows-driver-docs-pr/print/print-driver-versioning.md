@@ -7,7 +7,6 @@ keywords:
 - version numbers WDK printer
 - printer driver versioning WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Driver Versioning

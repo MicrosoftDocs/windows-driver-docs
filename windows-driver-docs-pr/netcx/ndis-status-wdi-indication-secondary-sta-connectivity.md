@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECT
 ms.date: 08/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY  Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY  (dot11wificxintf.h)

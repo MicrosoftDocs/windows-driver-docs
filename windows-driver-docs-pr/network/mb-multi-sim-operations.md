@@ -2,7 +2,6 @@
 title: MB Multi-SIM Operations
 description: MB Multi-SIM Operations
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Multi-SIM operations

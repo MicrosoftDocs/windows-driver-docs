@@ -9,7 +9,6 @@ api_name:
 - REGISTRY_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x51: REGISTRY\_ERROR

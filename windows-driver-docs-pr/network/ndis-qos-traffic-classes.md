@@ -2,7 +2,6 @@
 title: NDIS QoS Traffic Classes
 description: NDIS QoS Traffic Classes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS QoS Traffic Classes

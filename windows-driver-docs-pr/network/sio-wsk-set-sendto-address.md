@@ -4,7 +4,6 @@ description: SIO_WSK_SET_SENDTO_ADDRESS
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_SET_SENDTO_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_SET\_SENDTO\_ADDRESS

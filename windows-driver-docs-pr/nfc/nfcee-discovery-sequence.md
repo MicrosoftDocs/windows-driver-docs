@@ -8,7 +8,6 @@ keywords:
 - NFP
 description: Information about the NFC CX, which provides two modes of operation to support different implementations of NFCEE management.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NFCEE discovery sequence

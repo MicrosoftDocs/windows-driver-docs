@@ -2,7 +2,6 @@
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # Driver security checklist

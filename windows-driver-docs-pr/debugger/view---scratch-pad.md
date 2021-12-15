@@ -3,7 +3,6 @@ title: View Scratch Pad
 description: View Scratch Pad
 keywords: ["View Scratch Pad"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Scratch Pad

@@ -2,7 +2,6 @@
 title: 802.3 Statistic OIDs
 description: 802.3 Statistic OIDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 802.3 Statistic OIDs

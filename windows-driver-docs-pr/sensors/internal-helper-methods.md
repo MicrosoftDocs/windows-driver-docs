@@ -2,7 +2,6 @@
 title: Driver update methods
 description: Update methods supported by the sensor driver.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver update methods

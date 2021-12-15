@@ -6,7 +6,6 @@ keywords:
 - parent device determining WDK SetupAPI
 - device parents WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the Parent of a Device

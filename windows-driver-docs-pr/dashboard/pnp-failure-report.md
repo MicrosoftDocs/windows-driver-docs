@@ -3,7 +3,6 @@ title: Plug and Play extended flight report
 description: Describes the Plug and Play extended flight report provided upon cancellation
 ms.topic: article
 ms.date: 07/12/2021
-ms.localizationpriority: medium
 ---
 
 # Plug and Play extended flight report

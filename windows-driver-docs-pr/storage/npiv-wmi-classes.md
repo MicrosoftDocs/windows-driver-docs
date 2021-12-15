@@ -1,7 +1,6 @@
 ---
 title: NPIV WMI Classes
 description: NPIV WMI Classes
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -2,7 +2,6 @@
 title: Audio playback fidelity tests in MITT
 description: The audio module on the MITT board is used to detect errors that occur at the transport level of the audio device by detecting sine wave frequency accuracy (at zero cross) and counting instances where the frequency or offset is incorrect.
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # Audio playback fidelity tests in MITT

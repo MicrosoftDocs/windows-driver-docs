@@ -9,7 +9,6 @@ api_name:
 - SPIN_LOCK_ALREADY_OWNED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF: SPIN\_LOCK\_ALREADY\_OWNED

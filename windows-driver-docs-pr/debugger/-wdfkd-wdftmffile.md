@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdftmffile
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdftmffile

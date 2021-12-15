@@ -2,7 +2,6 @@
 title: KSPROPSETID\_AudioDecoderOut
 description: KSPROPSETID\_AudioDecoderOut
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_AudioDecoderOut

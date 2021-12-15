@@ -9,7 +9,6 @@ keywords:
 - link collection nodes WDK HID
 - arrays WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Link Collections

@@ -2,7 +2,6 @@
 title: Get IMEI, ICCID, IMSI, and telephone numbers for the MB device
 description: Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device

@@ -3,7 +3,6 @@ title: Enable debugging of Win32 subsystem
 description: Enable debugging of Win32 subsystem
 keywords: ["Enable debugging of Win32 subsystem (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable debugging of Win32 subsystem

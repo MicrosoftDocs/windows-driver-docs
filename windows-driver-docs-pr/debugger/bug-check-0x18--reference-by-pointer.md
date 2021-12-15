@@ -9,7 +9,6 @@ api_name:
 - REFERENCE_BY_POINTER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x18: REFERENCE\_BY\_POINTER

@@ -9,7 +9,6 @@ api_name:
 - WlanTimedConnectionRoaming
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WlanTimedConnectionRoaming rule (ndis)

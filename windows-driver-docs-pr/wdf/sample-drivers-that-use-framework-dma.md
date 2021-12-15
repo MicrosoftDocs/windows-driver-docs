@@ -6,7 +6,6 @@ keywords:
 - bus-master DMA WDK KMDF , sample drivers
 - sample drivers WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Drivers That Use Framework DMA

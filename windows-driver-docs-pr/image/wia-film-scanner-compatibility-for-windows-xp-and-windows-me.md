@@ -2,7 +2,6 @@
 title: WIA Film Scanner Compatibility for Windows XP and Windows Me
 description: WIA Film Scanner Compatibility for Windows XP and Windows Me
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Film Scanner Compatibility for Windows XP and Windows Me

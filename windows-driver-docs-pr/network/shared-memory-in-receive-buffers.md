@@ -2,7 +2,6 @@
 title: Shared Memory in Receive Buffers
 description: Shared Memory in Receive Buffers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Shared Memory in Receive Buffers

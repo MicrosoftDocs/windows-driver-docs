@@ -4,7 +4,6 @@ description: Drivers of mass-storage devices that have internal caches for data 
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_SHUTDOWN Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_SHUTDOWN

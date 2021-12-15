@@ -2,7 +2,6 @@
 title: Graphics INF requirements in WDDM 1.2
 description: Windows Display Driver Model (WDDM) drivers in Windows 8 require INF changes to the graphics driver.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Graphics INF requirements in WDDM 1.2

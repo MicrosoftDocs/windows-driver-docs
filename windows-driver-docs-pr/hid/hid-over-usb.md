@@ -9,7 +9,6 @@ keywords:
 - USB 3.0
 - USB, HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HID over USB Overview

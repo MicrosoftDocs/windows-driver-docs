@@ -3,7 +3,6 @@ title: Wi-Fi connection failures from devices and access-point pairs with more t
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device fails to connect to an access point
 ms.topic: article
 ms.date: 09/02/2021
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi connection failures from devices and access-point pairs with more than 50% signal quality

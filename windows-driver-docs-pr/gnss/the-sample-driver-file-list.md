@@ -2,7 +2,6 @@
 title: Geolocation sample driver file list
 description: The source file of the geolocation driver sample includes the following categories of files.
 ms.date: 08/25/2021
-ms.localizationpriority: medium
 ---
 
 # Geolocation sample driver file list

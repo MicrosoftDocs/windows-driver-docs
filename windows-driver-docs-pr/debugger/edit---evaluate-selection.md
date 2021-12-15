@@ -3,7 +3,6 @@ title: Edit Evaluate Selection
 description: Edit Evaluate Selection
 keywords: ["Edit Evaluate Selection"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Evaluate Selection

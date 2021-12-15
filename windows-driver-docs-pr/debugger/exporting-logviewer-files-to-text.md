@@ -3,7 +3,6 @@ title: Exporting LogViewer Files to Text
 description: Exporting LogViewer Files to Text
 keywords: ["LogViewer, exporting files to text"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Exporting LogViewer Files to Text

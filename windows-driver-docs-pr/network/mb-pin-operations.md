@@ -2,7 +2,6 @@
 title: MB PIN Operations
 description: MB PIN Operations
 ms.date: 03/05/2021
-ms.localizationpriority: medium
 ---
 
 # MB PIN Operations

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_REQUEST\_GET\_ADDITIONAL\_CREATE\_OPTIONS control code

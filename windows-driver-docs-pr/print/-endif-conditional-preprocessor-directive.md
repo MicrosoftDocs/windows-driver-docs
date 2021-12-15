@@ -7,7 +7,6 @@ keywords:
 - conditional directives WDK GDL
 - Endif directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \#Endif Conditional Preprocessor Directive

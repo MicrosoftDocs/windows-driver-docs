@@ -8,7 +8,6 @@ keywords:
 - IOCTL_VIDEO_XXX requests WDK video miniport
 - I/O WDK video miniport
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

@@ -9,7 +9,6 @@ api_name:
 - ks.findlive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.findlive

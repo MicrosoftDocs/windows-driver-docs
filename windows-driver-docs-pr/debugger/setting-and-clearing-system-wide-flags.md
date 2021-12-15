@@ -3,7 +3,6 @@ title: Setting and Clearing System-wide Flags
 description: Setting and Clearing System-wide Flags
 keywords: ["GFlags, system-wide flags"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Setting and Clearing System-wide Flags

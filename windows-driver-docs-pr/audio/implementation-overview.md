@@ -2,7 +2,6 @@
 title: Implementation Overview
 description: This topic is an overview of the implementation key points that you must be aware of, when you develop a driver for an audio adapter that is capable of processing hardware-offloaded audio streams.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementation Overview

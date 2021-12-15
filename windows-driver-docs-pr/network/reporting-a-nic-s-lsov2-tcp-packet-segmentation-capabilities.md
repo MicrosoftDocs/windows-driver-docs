@@ -7,7 +7,6 @@ keywords:
 - segmentation of large TCP packets WDK networking
 - task offload WDK TCP/IP transport , LSOV1 and LSOV2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting a NIC's LSOV2 TCP-Packet-Segmentation Capabilities

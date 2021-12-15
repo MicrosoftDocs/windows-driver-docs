@@ -3,7 +3,6 @@ title: Using the DbgRpc Tool
 description: Using the DbgRpc Tool
 keywords: ["DbgRpc", "DbgRpc, basic use"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the DbgRpc Tool

@@ -2,7 +2,6 @@
 title: Running the Default Finish-Install Action
 description: Running the Default Finish-Install Action
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Running the Default Finish-Install Action

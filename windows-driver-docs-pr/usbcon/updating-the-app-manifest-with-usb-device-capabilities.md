@@ -2,7 +2,6 @@
 description: This topic describes the device capabilities that are required for a Windows app that uses the Windows.Devices.Usb namespace.
 title: How to add USB device capabilities to the app manifest
 ms.date: 01/07/2019
-ms.localizationpriority: medium
 ---
 
 # How to add USB device capabilities to the app manifest

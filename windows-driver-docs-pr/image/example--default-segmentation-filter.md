@@ -2,7 +2,6 @@
 title: Example Default Segmentation Filter
 description: Example Default Segmentation Filter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example: Default Segmentation Filter

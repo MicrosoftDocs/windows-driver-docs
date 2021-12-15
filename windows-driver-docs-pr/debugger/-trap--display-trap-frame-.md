@@ -9,7 +9,6 @@ api_name:
 - .trap (Display Trap Frame)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .trap (Display Trap Frame)

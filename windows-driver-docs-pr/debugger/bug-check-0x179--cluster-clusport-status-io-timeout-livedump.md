@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x179: CLUSTER\_CLUSPORT\_STATUS\_IO\_TIMEOUT\_LIVEDUMP

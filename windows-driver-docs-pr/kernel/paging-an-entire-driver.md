@@ -3,7 +3,6 @@ title: Paging an Entire Driver
 description: Paging an Entire Driver
 keywords: ["pageable drivers WDK kernel , paging entire drivers", "paging entire drivers WDK", "reference counts WDK pageable drivers", "overriding pageable or nonpageable attributes WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Paging an Entire Driver

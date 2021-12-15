@@ -4,7 +4,6 @@ description: Installing Serial Devices
 keywords:
 - serial devices WDK , installing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Serial Devices

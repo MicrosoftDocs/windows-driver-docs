@@ -2,7 +2,6 @@
 title: Creating a WIA Microdriver
 description: Creating a WIA Microdriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a WIA Microdriver

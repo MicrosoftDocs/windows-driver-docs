@@ -9,7 +9,6 @@ api_name:
 - AddDevice
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # AddDevice rule (wdm)

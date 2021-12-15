@@ -9,7 +9,6 @@ api_name:
 - wmitrace.traceoperation
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wmitrace.traceoperation

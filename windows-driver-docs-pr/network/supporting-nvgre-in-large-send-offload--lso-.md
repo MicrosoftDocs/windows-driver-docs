@@ -2,7 +2,6 @@
 title: Supporting NVGRE in Large Send Offload (LSO)
 description: This section describes supporting NVGRE in Large Send Offload (LSO)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting NVGRE in Large Send Offload (LSO)

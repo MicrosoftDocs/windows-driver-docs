@@ -6,7 +6,6 @@ keywords:
 - guaranteed contract DMA buffers WDK display
 - patch-location lists WDK display
 ms.date: 10/11/2019
-ms.localizationpriority: medium
 ---
 
 # Using the Guaranteed Contract DMA Buffer Model

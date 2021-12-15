@@ -3,7 +3,6 @@ title: KSPROPSETID\_TopologyNode
 description: KSPROPSETID\_TopologyNode
 keywords: ["KSPROPSETID_TopologyNode"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_TopologyNode

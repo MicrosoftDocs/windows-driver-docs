@@ -3,7 +3,6 @@ title: Window Menu
 description: Window Menu
 keywords: ["Window Menu (complete listing)", "graphical interface, window menu"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Window Menu

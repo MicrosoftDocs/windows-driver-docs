@@ -4,7 +4,6 @@ description: WMI sends this IRP to query or update a driver's registration infor
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_REGINFO_EX Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_REGINFO\_EX

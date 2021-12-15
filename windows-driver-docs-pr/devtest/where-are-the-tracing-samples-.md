@@ -2,7 +2,6 @@
 title: Where are the tracing samples
 description: Where are the tracing samples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Where are the tracing samples?

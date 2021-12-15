@@ -2,7 +2,6 @@
 title: Updates for Windows DDK
 description: Updates for Windows DDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Updates for Windows DDK

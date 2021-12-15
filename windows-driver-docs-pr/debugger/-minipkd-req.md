@@ -9,7 +9,6 @@ api_name:
 - minipkd.req
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !minipkd.req

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 04/17/2020
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_PEAKMETER

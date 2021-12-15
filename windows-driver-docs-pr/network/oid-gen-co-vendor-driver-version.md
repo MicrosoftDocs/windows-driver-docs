@@ -4,7 +4,6 @@ description: This topic describes the OID_GEN_CO_VENDOR_DRIVER_VERSION object id
 keywords:
 - OID_GEN_CO_VENDOR_DRIVER_VERSION
 ms.date: 11/02/2017
-ms.localizationpriority: medium
 ---
 
 # OID_GEN_CO_VENDOR_DRIVER_VERSION

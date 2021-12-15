@@ -2,7 +2,6 @@
 title: GPIO Interrupt Masks
 description: General-purpose I/O (GPIO) pins that are configured as interrupt inputs can be masked and unmasked in addition to being enabled and disabled.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GPIO Interrupt Masks

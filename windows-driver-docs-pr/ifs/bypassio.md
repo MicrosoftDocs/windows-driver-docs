@@ -5,7 +5,6 @@ keywords:
 - filter drivers WDK file system , BypassIO
 ms.date: 12/08/2021
 prerelease: false
-ms.localizationpriority: medium
 ---
 
 # BypassIO for filter drivers

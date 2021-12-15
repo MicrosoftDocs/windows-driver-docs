@@ -3,7 +3,6 @@ title: File Exit
 description: File Exit
 keywords: ["File Exit", "exiting the debugger, File Exit", "quitting the debugger, File Exit", "ending the debugging session, File Exit"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Exit

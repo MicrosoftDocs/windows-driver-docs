@@ -2,7 +2,6 @@
 title: GUIDType (ServiceInfo)
 description: GUIDType (ServiceInfo)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GUIDType (ServiceInfo)

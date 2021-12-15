@@ -2,7 +2,6 @@
 title: Combining Platform Extensions with Operating System Versions
 description: Combining Platform Extensions with Operating System Versions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Combining Platform Extensions with Operating System Versions

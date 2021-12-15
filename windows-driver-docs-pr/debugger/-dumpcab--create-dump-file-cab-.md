@@ -9,7 +9,6 @@ api_name:
 - .dumpcab (Create Dump File CAB)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .dumpcab (Create Dump File CAB)

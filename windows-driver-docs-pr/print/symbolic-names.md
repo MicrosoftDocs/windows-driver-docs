@@ -6,7 +6,6 @@ keywords:
 - symbolic names WDK GPD files
 - identifiers WDK GPD files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Symbolic Names

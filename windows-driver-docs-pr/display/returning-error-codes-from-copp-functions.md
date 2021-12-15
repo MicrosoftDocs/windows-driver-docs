@@ -8,7 +8,6 @@ keywords:
 - protected video WDK COPP , error codes
 - error codes WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Returning Error Codes from COPP Functions

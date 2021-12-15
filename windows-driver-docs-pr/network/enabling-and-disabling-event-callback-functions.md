@@ -9,7 +9,6 @@ keywords:
 - SO_WSK_EVENT_CALLBACK
 - WSK_SET_STATIC_EVENT_CALLBACKS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling and Disabling Event Callback Functions

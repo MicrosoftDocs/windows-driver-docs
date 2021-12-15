@@ -7,7 +7,6 @@ keywords:
 - Plug and Play WDK networking , intermediate drivers
 - power management WDK networking , intermediate drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling PnP Events and Power Management Events in an Intermediate Driver

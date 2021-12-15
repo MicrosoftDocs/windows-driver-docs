@@ -2,7 +2,6 @@
 title: PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 8.1 and later, the PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming property key identifies the end point processing modes supported for streaming supported by the driver.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming

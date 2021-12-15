@@ -9,7 +9,6 @@ keywords:
 - arbitrary thread context WDK file system
 - IRQLs WDK file system
 ms.date: 01/22/2020
-ms.localizationpriority: medium
 ---
 
 # Dispatch Routine IRQL and Thread Context

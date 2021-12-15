@@ -9,7 +9,6 @@ keywords:
 - callback functions WDK Direct3D
 - DirectDraw driver initialization WDK Windows 2000 display , callback functions
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

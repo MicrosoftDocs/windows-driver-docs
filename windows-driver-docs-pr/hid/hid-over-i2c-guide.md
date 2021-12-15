@@ -10,7 +10,6 @@ keywords:
 - SPB
 - GPIO
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to HID over I2C

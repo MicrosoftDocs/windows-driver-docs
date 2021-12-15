@@ -2,7 +2,6 @@
 title: WindowsInfo
 description: WindowsInfo
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WindowsInfo

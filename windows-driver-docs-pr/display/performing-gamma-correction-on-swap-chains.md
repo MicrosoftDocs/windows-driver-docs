@@ -5,7 +5,6 @@ keywords:
 - gamma correction WDK DirectX 9.0 , swap chains
 - swap chains WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performing Gamma Correction on Swap Chains

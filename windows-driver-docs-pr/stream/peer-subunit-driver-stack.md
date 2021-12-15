@@ -13,7 +13,6 @@ keywords:
 - command targets WDK AV/C
 - Avc.sys function driver WDK , driver stacks
 ms.date: 03/05/2021
-ms.localizationpriority: medium
 ---
 
 # Peer subunit driver stack

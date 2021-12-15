@@ -2,7 +2,6 @@
 title: BDA Pin Name GUIDs
 description: A BDA minidriver uses BDA pin name GUIDs to specify the names and categories of pins it supports.
 ms.date: 10/07/2021
-ms.localizationpriority: medium
 ---
 
 # BDA Pin Name GUIDs

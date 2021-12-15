@@ -8,7 +8,6 @@ keywords:
 - packets WDK networking , data structures
 - NDIS_PACKET
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NET\_BUFFER Structure

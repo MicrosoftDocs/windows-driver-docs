@@ -2,7 +2,6 @@
 title: Example Application Using a Segmentation Filter
 description: Example Application Using a Segmentation Filter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example: Application Using a Segmentation Filter

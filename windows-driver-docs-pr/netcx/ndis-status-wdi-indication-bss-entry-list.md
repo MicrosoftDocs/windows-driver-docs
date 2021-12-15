@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST to inf
 ms.date: 06/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST (dot11wificxintf.h)

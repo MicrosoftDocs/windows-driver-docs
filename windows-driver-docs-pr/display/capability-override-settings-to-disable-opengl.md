@@ -2,7 +2,6 @@
 title: Capability override settings to disable OpenGL
 description: This software device setting for all in-box display INFs ensures that no in-box drivers are exposed to possible interoperability issues with out-of-box OpenGL ICDs.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Capability override settings to disable OpenGL

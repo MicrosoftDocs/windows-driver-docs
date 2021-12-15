@@ -4,7 +4,6 @@ description: What is Driver Security
 keywords:
 - security WDK file systems , about file system security
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What is Driver Security

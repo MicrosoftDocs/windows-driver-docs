@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 04/03/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

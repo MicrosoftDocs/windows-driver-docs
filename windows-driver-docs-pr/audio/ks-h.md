@@ -2,7 +2,6 @@
 title: Ks.h
 description: This section contains reference topics for the Ks.h header.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Ks.h

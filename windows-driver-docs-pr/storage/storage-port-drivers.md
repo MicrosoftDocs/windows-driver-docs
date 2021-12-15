@@ -6,7 +6,6 @@ keywords:
 - storage port drivers WDK , about storage port drivers
 - port drivers WDK storage
 ms.date: 12/15/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to Storage Port Drivers

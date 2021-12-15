@@ -8,7 +8,6 @@ keywords:
 - casting ability WDK Windows 7 display
 - casting ability WDK Windows 7 display , XR formats
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Casting Ability of XR Formats

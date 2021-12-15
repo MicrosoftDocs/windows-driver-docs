@@ -5,7 +5,6 @@ keywords:
 - GPD file entries WDK Unidrv , formats
 - formats WDK GPD files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GPD File Entry Format

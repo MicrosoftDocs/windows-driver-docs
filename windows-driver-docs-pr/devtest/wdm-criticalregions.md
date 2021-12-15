@@ -9,7 +9,6 @@ api_name:
 - CriticalRegions
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CriticalRegions rule (wdm)

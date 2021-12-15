@@ -9,7 +9,6 @@ keywords:
 - single receive queue WDK RSS
 - multiple receive queues WDK RSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # RSS with a Single Hardware Receive Queue

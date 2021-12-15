@@ -4,7 +4,6 @@ description: OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES sends the list of neighbor repo
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

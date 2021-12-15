@@ -3,7 +3,6 @@ title: Event Objects
 description: Event Objects
 keywords: ["kernel dispatcher objects WDK , event objects", "dispatcher objects WDK kernel , event objects", "event objects WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Event Objects

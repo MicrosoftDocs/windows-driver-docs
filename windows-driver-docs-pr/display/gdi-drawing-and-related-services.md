@@ -6,7 +6,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , drawing services
 - drawing WDK GDI , drawing services supported
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Drawing and Related Services

@@ -3,7 +3,6 @@ title: Industry Initiatives for Power Management
 description: Industry Initiatives for Power Management
 keywords: ["power management WDK kernel , industry initiatives", "Advanced Configuration and Power Interface Specification WDK", "Device Class Power Management Reference Specification WDK", "hardware WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Industry Initiatives for Power Management

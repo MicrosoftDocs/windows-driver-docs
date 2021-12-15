@@ -5,7 +5,6 @@ keywords:
 - classify callouts WDK Windows Filtering Platform , data logging
 - logging WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Logging

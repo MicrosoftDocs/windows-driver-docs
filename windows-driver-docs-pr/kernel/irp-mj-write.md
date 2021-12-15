@@ -4,7 +4,6 @@ description: Every device driver that transfers data from the system to its devi
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_WRITE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_WRITE

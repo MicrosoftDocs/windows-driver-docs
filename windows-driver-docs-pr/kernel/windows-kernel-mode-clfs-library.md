@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode CLFS Library
 description: Windows Kernel-Mode CLFS Library
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

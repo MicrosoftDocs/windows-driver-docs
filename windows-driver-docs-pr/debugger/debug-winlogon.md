@@ -3,7 +3,6 @@ title: Debug WinLogon
 description: Debug WinLogon
 keywords: ["Debug WinLogon (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug WinLogon

@@ -2,7 +2,6 @@
 title: Threat modeling for drivers
 description: Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers for the Microsoft Windows family of operating systems.
 ms.date: 06/27/2018
-ms.localizationpriority: medium
 ---
 
 # Threat modeling for drivers

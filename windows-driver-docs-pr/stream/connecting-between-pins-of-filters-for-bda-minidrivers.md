@@ -11,7 +11,6 @@ keywords:
 - connecting pins WDK BDA
 - connections WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connecting Between Pins of Filters for BDA Minidrivers

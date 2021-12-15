@@ -4,7 +4,6 @@ description: Only file system drivers process IRP_MJ_FILE_SYSTEM_CONTROL request
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_FILE_SYSTEM_CONTROL Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_FILE\_SYSTEM\_CONTROL

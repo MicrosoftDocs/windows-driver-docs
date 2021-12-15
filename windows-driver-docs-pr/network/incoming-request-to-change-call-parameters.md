@@ -5,7 +5,6 @@ keywords:
 - call parameter changes WDK CoNDIS
 - incoming call parameter change requests WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Incoming Request to Change Call Parameters

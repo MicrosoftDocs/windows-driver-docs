@@ -4,7 +4,6 @@ description: Incoming Request to Close a Call
 keywords:
 - incoming close call requests WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Incoming Request to Close a Call

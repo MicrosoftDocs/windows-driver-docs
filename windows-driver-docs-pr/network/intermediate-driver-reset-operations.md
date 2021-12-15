@@ -6,7 +6,6 @@ keywords:
 - NDIS intermediate drivers WDK , reset operations
 - resetting intermediate drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Reset Operations

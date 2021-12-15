@@ -2,7 +2,6 @@
 title: Adding WIA Properties to a WIA Item
 description: Adding WIA Properties to a WIA Item
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding WIA Properties to a WIA Item

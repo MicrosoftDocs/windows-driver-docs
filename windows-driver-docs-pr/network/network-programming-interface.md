@@ -8,7 +8,6 @@ keywords:
 - client dispatch tables WDK Network Module Registrar
 - dispatch tables WDK Network Module Registrar
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Programming Interface

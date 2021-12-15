@@ -2,7 +2,6 @@
 title: Per-process GPU virtual address spaces
 description: Each process is associated with two graphics processing unit (GPU) virtual address spaces, an application GPU virtual address space and a privileged virtual address space.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # <span id="display.per-process_gpu_virtual_address_spaces"></span>Per-process GPU virtual address spaces

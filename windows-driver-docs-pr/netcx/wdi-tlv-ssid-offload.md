@@ -4,7 +4,6 @@ description: WDI_TLV_SSID_OFFLOAD is a WiFiCx TLV that contains an SSID and hint
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_SSID_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SSID\_OFFLOAD (dot11wificxtypes.hpp)

@@ -7,7 +7,6 @@ keywords:
 - events WDK kernel streaming
 - event sets WDK kernel streaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # KS Events

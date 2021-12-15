@@ -2,7 +2,6 @@
 title: How the DMRC Selects a Device Metadata Package
 description: How the DMRC Selects a Device Metadata Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How the DMRC Selects a Device Metadata Package

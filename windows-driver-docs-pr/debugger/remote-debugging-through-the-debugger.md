@@ -3,7 +3,6 @@ title: Remote Debugging Through the Debugger
 description: Remote Debugging Through the Debugger
 keywords: ["remote debugging through the debugger", "remote debugging through the debugger, overview", "debugging client", "debugging server", "TCP (remote debugging protocol)", "COM port (remote debugging protocol)", "modem (remote debugging protocol)", "named pipe (remote debuggi"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Remote Debugging Through the Debugger

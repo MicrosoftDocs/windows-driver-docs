@@ -6,7 +6,6 @@ keywords:
 - nodes WDK BDA
 - separating nodes in filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Separating Nodes in Individual Filters

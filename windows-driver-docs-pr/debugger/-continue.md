@@ -9,7 +9,6 @@ api_name:
 - .continue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .continue

@@ -10,7 +10,6 @@ keywords:
 - audio drivers WDK , nodes
 - filters WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Filters, Pins, and Nodes

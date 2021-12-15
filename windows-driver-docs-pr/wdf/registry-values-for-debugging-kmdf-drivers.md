@@ -5,7 +5,6 @@ keywords:
 - debugging drivers WDK KMDF , registry values
 - registry values for debugging drivers WDK KMDF
 ms.date: 04/28/2020
-ms.localizationpriority: medium
 ---
 
 # Registry Values for Debugging WDF Drivers

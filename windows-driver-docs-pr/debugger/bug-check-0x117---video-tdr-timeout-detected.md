@@ -9,7 +9,6 @@ api_name:
 - VIDEO_TDR_TIMEOUT_DETECTED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x117: VIDEO\_TDR\_TIMEOUT\_DETECTED

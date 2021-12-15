@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/11/2019
-ms.localizationpriority: medium
 ---
 
 # DevCon Dp\_delete

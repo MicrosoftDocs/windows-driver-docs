@@ -9,7 +9,6 @@ api_name:
 - KsFilterMutex
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsFilterMutex rule ()

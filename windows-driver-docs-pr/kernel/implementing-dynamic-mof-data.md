@@ -3,7 +3,6 @@ title: Implementing Dynamic MOF Data
 description: Implementing Dynamic MOF Data
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "dyanmic MOF data WDK WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing Dynamic MOF Data

@@ -9,7 +9,6 @@ api_name:
 - MULTIPLE_IRP_COMPLETE_REQUESTS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x44: MULTIPLE\_IRP\_COMPLETE\_REQUESTS

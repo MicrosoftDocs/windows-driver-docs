@@ -3,7 +3,6 @@ title: x86 Architecture
 description: x86 Architecture
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # x86 Architecture

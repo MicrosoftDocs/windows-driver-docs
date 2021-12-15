@@ -1,7 +1,6 @@
 ---
 title: MSFC\_EventControl WMI Class
 description: MSFC\_EventControl WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

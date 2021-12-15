@@ -9,7 +9,6 @@ api_name:
 - NO_MORE_IRP_STACK_LOCATIONS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x35: NO\_MORE\_IRP\_STACK\_LOCATIONS

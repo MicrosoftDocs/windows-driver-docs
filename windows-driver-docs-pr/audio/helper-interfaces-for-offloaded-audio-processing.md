@@ -2,7 +2,6 @@
 title: Helper Interfaces for Offloaded Audio Processing
 description: This topic presents the PortCls helper interfaces, to simplify the drivers that support offloaded-audio processing.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Helper Interfaces for Offloaded Audio Processing

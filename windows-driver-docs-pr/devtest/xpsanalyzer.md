@@ -4,7 +4,6 @@ description: XpsAnalyzer
 keywords:
 - XpsAnalyzer WDK
 ms.date: 09/17/2018
-ms.localizationpriority: medium
 ---
 
 # XpsAnalyzer

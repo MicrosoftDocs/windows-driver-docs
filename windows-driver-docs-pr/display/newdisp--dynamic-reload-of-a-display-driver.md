@@ -7,7 +7,6 @@ keywords:
 - reload driver dynamically WDK Windows 2000 display
 - reboot prevention with dynamic reload WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NewDisp: Dynamic Reload of a Display Driver

@@ -2,7 +2,6 @@
 title: Unidrv/PScript5 UI Standard Tab vs. Advanced Tree View Changes
 description: Unidrv/PScript5 UI Standard Tab vs.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv/PScript5 UI Standard Tab vs. Advanced Tree View Changes

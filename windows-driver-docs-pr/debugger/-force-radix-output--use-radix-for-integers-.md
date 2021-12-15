@@ -9,7 +9,6 @@ api_name:
 - .force_radix_output (Use Radix for Integers)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .force\_radix\_output (Use Radix for Integers)

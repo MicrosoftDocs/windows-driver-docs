@@ -4,7 +4,6 @@ description: WDI_TLV_PLDR_SUPPORT is a WIFiCx TLV that specifies if PLDR (Platfo
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_PLDR_SUPPORT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PLDR\_SUPPORT (dot11wificxtypes.hpp)

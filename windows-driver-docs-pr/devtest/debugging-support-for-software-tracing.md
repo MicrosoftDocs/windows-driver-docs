@@ -2,7 +2,6 @@
 title: Debugging Support for Software Tracing
 description: Debugging Support for Software Tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Support for Software Tracing

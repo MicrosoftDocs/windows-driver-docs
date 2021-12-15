@@ -4,7 +4,6 @@ description: WDI_TLV_KCK_CONTENT is a WiFiCx TLV that contains an IEEE 802.11 ke
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_KCK_CONTENT Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_KCK\_CONTENT (dot11wificxtypes.hpp)

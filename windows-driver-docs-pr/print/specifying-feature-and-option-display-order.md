@@ -7,7 +7,6 @@ keywords:
 - property sheet pages WDK print , feature and option display order
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Feature and Option Display Order

@@ -10,7 +10,6 @@ keywords:
 - Content Protection DDI WDK Windows 7 display
 - Content Protection DDI WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Content Protection DDI

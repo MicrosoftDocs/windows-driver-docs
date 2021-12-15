@@ -2,7 +2,6 @@
 title: Shared camera TorchControl registry setting
 description: The OEM-set AllowTorchControlSharing value in the registry key enables OEMs to configure torch control to work from shared Media Capture session.
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # Camera TorchControl shared usage registry setting

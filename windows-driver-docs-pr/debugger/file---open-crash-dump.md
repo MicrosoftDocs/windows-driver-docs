@@ -3,7 +3,6 @@ title: File Open Crash Dump
 description: File Open Crash Dump
 keywords: ["File Open Crash Dump", "starting the debugger, File Open Crash Dump", "dump file, File Open Crash Dump"]
 ms.date: 08/01/2018
-ms.localizationpriority: medium
 ---
 
 # File | Open Crash Dump

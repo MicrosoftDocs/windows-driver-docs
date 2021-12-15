@@ -9,7 +9,6 @@ api_name:
 - a (Assemble)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # a (Assemble)

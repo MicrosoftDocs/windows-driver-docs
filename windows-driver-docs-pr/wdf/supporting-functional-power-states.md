@@ -2,7 +2,6 @@
 title: Supporting Functional Power States
 description: Supporting Functional Power States
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Functional Power States

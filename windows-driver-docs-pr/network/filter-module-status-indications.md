@@ -7,7 +7,6 @@ keywords:
 - NDIS filter drivers WDK , status indications
 - status indications WDK networking , filter drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Module Status Indications

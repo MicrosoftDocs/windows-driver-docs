@@ -2,7 +2,6 @@
 title: General driver samples
 description: The samples in this directory provide a starting point for writing a custom driver for your device.
 ms.date: 12/03/2019
-ms.localizationpriority: medium
 ---
 
 # General driver samples

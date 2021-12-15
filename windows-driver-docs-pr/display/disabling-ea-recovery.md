@@ -7,7 +7,6 @@ keywords:
 - EA recovery WDK Windows 2000 display
 - disabled EA recovery WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disabling EA Recovery

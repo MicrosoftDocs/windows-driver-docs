@@ -9,7 +9,6 @@ keywords:
 - pDeviceProperties function pointer WDK
 - machin
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Invoking a Device Properties Dialog Box Programmatically in an Installation Application

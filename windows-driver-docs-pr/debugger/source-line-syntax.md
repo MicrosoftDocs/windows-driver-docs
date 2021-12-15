@@ -3,7 +3,6 @@ title: Source Line Syntax
 description: Source Line Syntax
 keywords: ["expressions, source line numbers", "source files and paths, line number syntax", "line number syntax", "source files and paths, file name syntax", "file name syntax", "syntax rules for commands, source line numbers"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Source Line Syntax

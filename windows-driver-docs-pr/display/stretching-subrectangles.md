@@ -6,7 +6,6 @@ keywords:
 - subrectangular processing WDK DirectX VA
 - stretching WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stretching Subrectangles

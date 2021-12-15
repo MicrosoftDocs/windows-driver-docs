@@ -2,7 +2,6 @@
 title: LocationPath Registry Subkey
 description: LocationPath Registry Subkey
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # LocationPath Registry Subkey

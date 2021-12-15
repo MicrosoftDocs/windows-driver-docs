@@ -4,7 +4,6 @@ description: NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED
 ms.date: 04/02/2018
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

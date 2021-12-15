@@ -5,7 +5,6 @@ keywords:
 - print providers WDK , local print providers
 - local print providers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Local Print Provider

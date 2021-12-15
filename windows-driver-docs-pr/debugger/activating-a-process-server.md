@@ -9,7 +9,6 @@ api_name:
 - Activating a Process Server
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Activating a Process Server

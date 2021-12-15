@@ -5,7 +5,6 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities
 - D3DCAPS8
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting DirectX 8.0 Style Direct3D Capabilities

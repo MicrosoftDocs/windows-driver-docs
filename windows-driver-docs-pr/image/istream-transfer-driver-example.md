@@ -2,7 +2,6 @@
 title: IStream Transfer Driver Example
 description: IStream Transfer Driver Example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IStream Transfer Driver Example

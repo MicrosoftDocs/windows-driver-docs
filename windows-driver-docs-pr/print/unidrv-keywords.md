@@ -2,7 +2,6 @@
 title: Unidrv Keywords
 description: Unidrv Keywords
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv Keywords

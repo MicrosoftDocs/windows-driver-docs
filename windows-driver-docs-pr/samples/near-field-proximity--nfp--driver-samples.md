@@ -2,7 +2,6 @@
 title: Near field proximity (NFP) driver samples
 description: The NFP driver sample in this directory provides a starting point for writing a custom driver for your device.
 ms.date: 11/19/2019
-ms.localizationpriority: medium
 ---
 
 # Near field proximity (NFP) driver samples

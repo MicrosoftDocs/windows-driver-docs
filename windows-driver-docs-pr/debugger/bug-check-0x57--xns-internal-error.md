@@ -9,7 +9,6 @@ api_name:
 - XNS_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x57: XNS\_INTERNAL\_ERROR

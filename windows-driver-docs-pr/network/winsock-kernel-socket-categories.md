@@ -9,7 +9,6 @@ keywords:
 - datagram sockets WDK Winsock Kernel
 - connection-oriented sockets WDK Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Socket Categories

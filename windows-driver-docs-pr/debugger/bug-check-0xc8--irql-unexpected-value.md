@@ -9,7 +9,6 @@ api_name:
 - IRQL_UNEXPECTED_VALUE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC8: IRQL\_UNEXPECTED\_VALUE

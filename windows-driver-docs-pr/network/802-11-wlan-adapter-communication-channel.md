@@ -11,7 +11,6 @@ keywords:
 - send operations WDK Native 802.11 IHV Extensions DLL
 - receive operations WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 802.11 WLAN Adapter Communication Channel

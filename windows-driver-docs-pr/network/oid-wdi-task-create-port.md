@@ -4,7 +4,6 @@ description: OID_WDI_TASK_CREATE_PORT requests that a new 802.11 entity is creat
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CREATE_PORT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

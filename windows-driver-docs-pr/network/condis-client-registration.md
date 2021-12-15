@@ -6,7 +6,6 @@ keywords:
 - registering entry points
 - entry points WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CoNDIS Client Registration

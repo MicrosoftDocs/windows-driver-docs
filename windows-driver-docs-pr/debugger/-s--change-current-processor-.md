@@ -9,7 +9,6 @@ api_name:
 - ~s (Change Current Processor)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~s (Change Current Processor)

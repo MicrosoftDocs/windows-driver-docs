@@ -7,7 +7,6 @@ keywords:
 - security checks WDK file systems , IRP_MJ_DIRECTORY_CONTROL
 - directory controls WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Security checks on IRP_MJ_DIRECTORY_CONTROL

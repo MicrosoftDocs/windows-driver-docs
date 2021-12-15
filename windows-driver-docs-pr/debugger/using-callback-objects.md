@@ -3,7 +3,6 @@ title: Using Callback Objects
 description: Using Callback Objects
 keywords: ["Debugger Engine API, callback objects", "callback objects", "callback objects, event callbacks", "event callbacks", "callback objects, input callbacks", "input callbacks", "callback objects, output callbacks", "output callbacks"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Callback Objects

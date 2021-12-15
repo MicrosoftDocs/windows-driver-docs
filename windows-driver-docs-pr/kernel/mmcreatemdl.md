@@ -1,7 +1,6 @@
 ---
 title: Windows kernel obsolete routines
 description: Windows kernel obsolete routines
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

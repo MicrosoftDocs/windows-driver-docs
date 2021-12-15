@@ -9,7 +9,6 @@ api_name:
 - SYSTEM_PTE_MISUSE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xDA: SYSTEM\_PTE\_MISUSE

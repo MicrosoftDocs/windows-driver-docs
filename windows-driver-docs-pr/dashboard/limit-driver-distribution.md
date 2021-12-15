@@ -3,7 +3,6 @@ title: How to limit or expand a driver’s distribution based on Windows version
 description: Creating a floor or ceiling for a driver submission in order to change its distribution.
 ms.topic: article 
 ms.date: 07/26/2021
-ms.localizationpriority: medium
 ---
 
 # How to limit or expand a driver’s distribution based on Windows version

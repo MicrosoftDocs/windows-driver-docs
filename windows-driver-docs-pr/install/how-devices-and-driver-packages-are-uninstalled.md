@@ -2,7 +2,6 @@
 title: How Devices and Driver Packages are Uninstalled
 description: How Devices and Driver Packages are Uninstalled
 ms.date: 10/07/2020
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q2
 ---
 

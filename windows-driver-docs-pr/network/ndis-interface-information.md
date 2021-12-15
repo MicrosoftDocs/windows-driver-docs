@@ -6,7 +6,6 @@ keywords:
 - MIBs WDK networking
 - NDIS WDK , interfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Interface Information

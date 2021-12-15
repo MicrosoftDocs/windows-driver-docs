@@ -18,7 +18,6 @@ keywords:
 - properties WDK audio
 - pins WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Endpoints, Properties and Events

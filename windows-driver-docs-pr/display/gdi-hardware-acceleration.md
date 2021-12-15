@@ -7,7 +7,6 @@ keywords:
 - Connecting and Configuring Displays (CCD) WDK display
 - hardware acceleration with GDI WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Hardware Acceleration

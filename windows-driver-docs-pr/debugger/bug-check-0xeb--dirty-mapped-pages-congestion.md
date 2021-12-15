@@ -9,7 +9,6 @@ api_name:
 - DIRTY_MAPPED_PAGES_CONGESTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xEB: DIRTY\_MAPPED\_PAGES\_CONGESTION

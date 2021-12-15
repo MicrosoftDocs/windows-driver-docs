@@ -2,7 +2,6 @@
 title: Canceling Requests for Special Pool
 description: Canceling Requests for Special Pool
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Canceling Requests for Special Pool

@@ -4,7 +4,6 @@ description: WDI_TLV_CONNECTION_QUALITY_PARAMETERS is a WiFiCx TLV that contains
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CONNECTION_QUALITY_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS (dot11wificxtypes.hpp)

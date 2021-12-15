@@ -3,7 +3,6 @@ title: Example WDM Device Objects
 description: Example WDM Device Objects
 keywords: ["device objects WDK kernel , examples", "mouse WDK kernel", "keyboards WDK kernel", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Example WDM Device Objects

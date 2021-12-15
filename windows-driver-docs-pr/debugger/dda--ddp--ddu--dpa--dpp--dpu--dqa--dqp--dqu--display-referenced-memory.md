@@ -9,7 +9,6 @@ api_name:
 - dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory)

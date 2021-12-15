@@ -2,7 +2,6 @@
 title: Using Function Role Type Declarations
 description: Using Function Role Type Declarations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Function Role Type Declarations

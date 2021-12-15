@@ -2,7 +2,6 @@
 title: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
 description: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig

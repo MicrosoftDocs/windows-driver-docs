@@ -2,7 +2,6 @@
 title: PwrTest Scenarios
 description: PwrTest Scenarios
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

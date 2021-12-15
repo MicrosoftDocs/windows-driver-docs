@@ -15,7 +15,6 @@ keywords:
 - D3DRENDERSTATE_FOGCOLOR
 - D3DRENDERSTATE_SHADEMODE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vertex Fog

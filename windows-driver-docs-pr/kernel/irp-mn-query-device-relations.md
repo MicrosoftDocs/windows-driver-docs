@@ -4,7 +4,6 @@ description: The PnP manager sends this request to determine certain relationshi
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_DEVICE_RELATIONS Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_DEVICE\_RELATIONS

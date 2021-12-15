@@ -2,7 +2,6 @@
 title: Stampinf Properties for Driver Projects
 description: Sets the properties for the Stampinf tool. You can use Stampinf to update common INF and INX file directives when you build the driver.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stampinf Properties for Driver Projects

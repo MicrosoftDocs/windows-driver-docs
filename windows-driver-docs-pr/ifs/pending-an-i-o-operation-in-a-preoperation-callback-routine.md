@@ -5,7 +5,6 @@ keywords:
 - preoperation callback routines WDK file system minifilter , pending operations
 - pending I/O operations in callback routines WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pending an I/O Operation in a Preoperation Callback Routine

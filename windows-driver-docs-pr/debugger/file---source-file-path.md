@@ -3,7 +3,6 @@ title: File Source File Path
 description: File Source File Path
 keywords: ["File Source File Path", "source files and paths, File Source File Path"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Source File Path

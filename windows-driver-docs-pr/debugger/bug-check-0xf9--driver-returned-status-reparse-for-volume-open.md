@@ -9,7 +9,6 @@ api_name:
 - DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF9: DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN

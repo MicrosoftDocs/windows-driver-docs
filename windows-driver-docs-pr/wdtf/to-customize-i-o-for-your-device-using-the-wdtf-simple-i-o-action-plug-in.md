@@ -2,7 +2,6 @@
 title: Customize device I/O using a WDTF simple I/O action plug-in
 description: To get the most benefit from the Device Fundamental tests and tests you might have written using the Visual Studio test templates, your device should be supported by a Simple I/O plug-in.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to customize I/O for your device using the WDTF Simple I/O Action Plug-in

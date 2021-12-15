@@ -9,7 +9,6 @@ api_name:
 - .endsrv (End Debugging Server)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .endsrv (End Debugging Server)

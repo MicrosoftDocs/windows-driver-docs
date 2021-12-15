@@ -6,7 +6,6 @@ keywords:
 - D3dCreateSurfaceEx
 - surface handles WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Lost Surfaces, Surface Handles, and Contexts

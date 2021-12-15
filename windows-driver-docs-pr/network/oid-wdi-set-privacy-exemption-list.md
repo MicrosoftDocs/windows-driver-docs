@@ -4,7 +4,6 @@ description: OID_WDI_SET_PRIVACY_EXEMPTION_LIST is used by the host to provide t
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_PRIVACY_EXEMPTION_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

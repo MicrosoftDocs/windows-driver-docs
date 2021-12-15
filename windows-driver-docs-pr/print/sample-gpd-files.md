@@ -6,7 +6,6 @@ keywords:
 - GPD files WDK Unidrv , samples
 - Unidrv WDK print
 ms.date: 06/12/2020
-ms.localizationpriority: medium
 ---
 
 # Sample GPD Files

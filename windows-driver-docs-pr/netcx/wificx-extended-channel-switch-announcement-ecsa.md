@@ -2,7 +2,6 @@
 title: WiFiCx Extended channel switch announcement (ECSA)
 description: This section provides suggested driver/firmware changes to implement Extended Channel Switch Announcement (ECSA) for WiFiCx
 ms.date: 09/30/2021
-ms.localizationpriority: medium
 ---
 
 # WiFiCx Extended channel switch announcement (ECSA)

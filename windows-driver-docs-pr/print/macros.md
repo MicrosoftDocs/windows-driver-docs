@@ -5,7 +5,6 @@ keywords:
 - GPD file entries WDK Unidrv , macros
 - macros WDK GPD files
 ms.date: 09/07/2021
-ms.localizationpriority: medium
 ---
 
 # Macros (GPD language)

@@ -2,7 +2,6 @@
 title: UEFI in Windows
 description: Provides information about UEFI requirements for running Windows on SoC platforms.
 ms.date: 08/04/2021
-ms.localizationpriority: medium
 ---
 
 # UEFI in Windows

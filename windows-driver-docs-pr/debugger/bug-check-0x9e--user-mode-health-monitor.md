@@ -9,7 +9,6 @@ api_name:
 - USER_MODE_HEALTH_MONITOR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9E: USER\_MODE\_HEALTH\_MONITOR

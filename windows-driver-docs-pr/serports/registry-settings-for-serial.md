@@ -7,7 +7,6 @@ keywords:
 - serial devices WDK , registry settings
 - serial devices WDK , Serial driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Settings for Serial

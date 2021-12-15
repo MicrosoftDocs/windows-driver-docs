@@ -2,7 +2,6 @@
 title: HD Audio DDI Structures
 description: HD Audio DDI Structures
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # HD Audio DDI Structures

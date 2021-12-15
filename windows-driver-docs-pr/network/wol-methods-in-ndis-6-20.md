@@ -2,7 +2,6 @@
 title: WOL Methods in NDIS 6.20
 description: WOL Methods in NDIS 6.20
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WOL Methods in NDIS 6.20

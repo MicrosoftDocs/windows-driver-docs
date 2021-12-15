@@ -3,7 +3,6 @@ title: WdbgExts Extension API Overview
 description: WdbgExts Extension API Overview
 keywords: ["WdbgExts extensions, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # WdbgExts Extension API Overview

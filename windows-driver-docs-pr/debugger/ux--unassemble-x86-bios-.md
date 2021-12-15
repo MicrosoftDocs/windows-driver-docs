@@ -9,7 +9,6 @@ api_name:
 - ux (Unassemble x86 BIOS)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ux (Unassemble x86 BIOS)

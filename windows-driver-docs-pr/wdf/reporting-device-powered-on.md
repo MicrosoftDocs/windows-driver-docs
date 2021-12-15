@@ -2,7 +2,6 @@
 title: Reporting Device Powered On When System Returns to S0
 description: Reporting Device Powered On When System Returns to S0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Device Powered On When System Returns to S0

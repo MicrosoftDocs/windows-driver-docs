@@ -8,7 +8,6 @@ keywords:
 - spool files WDK print
 - rendering plug-ins WDK print , XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Improved Spooling and Rendering

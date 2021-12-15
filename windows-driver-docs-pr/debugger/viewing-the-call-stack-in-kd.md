@@ -2,7 +2,6 @@
 title: Viewing the Call Stack in KD
 description: In KD, you can view the call stack by entering one of the k (Display Stack Backtrace) commands.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing the Call Stack in KD

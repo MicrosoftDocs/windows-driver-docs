@@ -9,7 +9,6 @@ api_name:
 - Searching for KD Connection Servers
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Searching for KD Connection Servers

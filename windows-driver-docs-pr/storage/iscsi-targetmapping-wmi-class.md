@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_TargetMapping WMI Class
 description: ISCSI\_TargetMapping WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

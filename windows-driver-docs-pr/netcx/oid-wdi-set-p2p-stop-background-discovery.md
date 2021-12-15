@@ -4,7 +4,6 @@ description: The OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY command instructs the
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY (dot11wificxintf.h)

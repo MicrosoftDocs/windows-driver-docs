@@ -2,7 +2,6 @@
 description: 'Describes the behavior of the USB Type-C Port Controller Interface Class Extension, known as UcmTcpciCx and tasks that a client driver must perform for a USB Type-C port controller.'
 title: Write a USB Type-C port controller driver
 ms.date: 01/07/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

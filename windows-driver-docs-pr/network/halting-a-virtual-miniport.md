@@ -8,7 +8,6 @@ keywords:
 - intermediate drivers WDK networking , virtual miniports
 - stopping virtual miniports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Halting a Virtual Miniport

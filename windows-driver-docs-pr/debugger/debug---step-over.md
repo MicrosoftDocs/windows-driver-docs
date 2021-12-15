@@ -3,7 +3,6 @@ title: Debug Step Over
 description: Debug Step Over
 keywords: ["Debug Step Over", "controlling the target, Debug Step Over"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Step Over

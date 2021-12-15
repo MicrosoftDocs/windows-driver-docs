@@ -4,7 +4,6 @@ description: WDI_TLV_RTT_VARIANCE is a WiFiCx TLV that contains the statistical 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_RTT_VARIANCE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_RTT_VARIANCE (dot11wificxtypes.hpp)

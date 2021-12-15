@@ -2,7 +2,6 @@
 title: Boot screen components
 description: There are two components to the firmware update boot screen the OEM logo and the update text.
 ms.date: 08/18/2021
-ms.localizationpriority: medium
 ---
 
 # Boot screen components

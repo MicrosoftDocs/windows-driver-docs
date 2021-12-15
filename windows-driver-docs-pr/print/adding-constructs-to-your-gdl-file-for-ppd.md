@@ -6,7 +6,6 @@ keywords:
 - PPD files WDK autoconfiguration , constructs
 - in-box autoconfiguration support WDK printer , constructs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Constructs to Your GDL File for PPD

@@ -2,7 +2,6 @@
 title: External Network Adapters
 description: External Network Adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # External Network Adapters

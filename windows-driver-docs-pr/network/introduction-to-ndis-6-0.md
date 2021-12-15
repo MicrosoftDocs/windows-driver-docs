@@ -6,7 +6,6 @@ keywords:
 - NDIS WDK , about NDIS
 - Network Driver Interface Specification WDK
 ms.date: 01/09/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.0

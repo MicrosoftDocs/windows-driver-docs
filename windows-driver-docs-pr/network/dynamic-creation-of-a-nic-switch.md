@@ -2,7 +2,6 @@
 title: Dynamic Creation of a NIC Switch
 description: Dynamic Creation of a NIC Switch
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dynamic Creation of a NIC Switch

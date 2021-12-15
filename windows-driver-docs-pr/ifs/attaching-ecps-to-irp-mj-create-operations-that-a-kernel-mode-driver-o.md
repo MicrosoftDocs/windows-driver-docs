@@ -2,7 +2,6 @@
 title: Attach ECPs to IRP_MJ_CREATE operations that a kernel-mode driver originated
 description: Attaching ECPs to IRP_MJ_CREATE operations that a kernel-mode driver originated
 ms.date: 09/02/2021
-ms.localizationpriority: medium
 ---
 
 # Attaching ECPs to IRP_MJ_CREATE operations that a kernel-mode driver originated

@@ -12,7 +12,6 @@ keywords:
 - overlay mixer WDK DirectX VA
 - OVM WDK DirectX VA
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

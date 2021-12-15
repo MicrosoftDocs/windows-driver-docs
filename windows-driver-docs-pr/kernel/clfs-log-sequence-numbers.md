@@ -3,7 +3,6 @@ title: CLFS Log Sequence Numbers
 description: CLFS Log Sequence Numbers
 keywords: ["Common Log File System WDK kernel , log sequence numbers", "CLFS WDK kernel , log sequence numbers", "log sequence numbers WDK CLFS", "LSNs WDK CLFS", "base LSNs WDK CLFS", "last LSNs WDK CLFS", "previous LSNs WDK CLFS", "undo-next LSNs WDK CLFS", "active stream portion WDK CLFS", "stream active portion WDK CLFS", "streams WDK CLFS"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # CLFS Log Sequence Numbers

@@ -7,7 +7,6 @@ keywords:
 - NDIS intermediate drivers WDK , virtual miniports
 - intermediate drivers WDK networking , virtual miniports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a Virtual Miniport

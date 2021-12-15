@@ -3,7 +3,6 @@ title: Using Input and Output
 description: Using Input and Output
 keywords: ["Debugger Engine, Input and Output", "Input and Output", "Output"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Input and Output

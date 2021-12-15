@@ -3,7 +3,6 @@ title: Using Debugger Extensions
 description: This topic describes using debugger extensions
 keywords: extension commands, debugger extensions
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Debugger Extensions

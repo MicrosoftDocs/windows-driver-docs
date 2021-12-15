@@ -9,7 +9,6 @@ api_name:
 - usb3kd.xhci_eventring
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.xhci\_eventring

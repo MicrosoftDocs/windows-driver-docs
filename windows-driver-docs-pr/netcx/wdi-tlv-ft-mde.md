@@ -4,7 +4,6 @@ description: WDI_TLV_FT_MDE is a WiFiCx TLV that contains the MDIE of a BSS entr
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_FT_MDE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_MDE (dot11wificxtypes.hpp)

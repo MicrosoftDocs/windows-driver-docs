@@ -18,7 +18,6 @@ keywords:
 - INF files WDK UMDF , directives
 - UmdfDispatcher INF directive WDK UMDF , syntax
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying WDF Directives in INF Files

@@ -2,7 +2,6 @@
 title: Installing a driver on Windows 10 Mobile
 description: Describes driver installation on Windows 10 Mobile.
 ms.date: 06/02/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a driver on Windows 10 Mobile

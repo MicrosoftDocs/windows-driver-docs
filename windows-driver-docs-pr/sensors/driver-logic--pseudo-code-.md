@@ -2,7 +2,6 @@
 title: Sensor driver logic
 description: This section describes key driver logic, or tasks, as pseudocode.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sensor driver logic

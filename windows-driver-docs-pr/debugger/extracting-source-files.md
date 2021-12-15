@@ -3,7 +3,6 @@ title: Extracting Source Files
 description: Extracting Source Files
 keywords: ["extracting source files", "source servers, extracting source files"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Extracting Source Files

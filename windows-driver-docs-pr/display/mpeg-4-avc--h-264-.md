@@ -7,7 +7,6 @@ keywords:
 - ITU-T H.264 video compression WDK DirectX VA
 - H.264 video compression WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MPEG-4 AVC (H.264)

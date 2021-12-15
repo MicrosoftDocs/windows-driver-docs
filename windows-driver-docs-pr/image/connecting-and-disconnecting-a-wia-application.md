@@ -2,7 +2,6 @@
 title: Connecting and Disconnecting a WIA Application
 description: Connecting and Disconnecting a WIA Application
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connecting and Disconnecting a WIA Application

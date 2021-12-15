@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Kernel Library
 description: Windows Kernel-Mode Kernel Library
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -11,7 +11,6 @@ keywords:
 - exact colors WDK Windows 2000 display
 - calibrating colors WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Color Management for Displays

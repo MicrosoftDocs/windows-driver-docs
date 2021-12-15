@@ -9,7 +9,6 @@ api_name:
 - UNSUPPORTED_PROCESSOR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x5D: UNSUPPORTED\_PROCESSOR

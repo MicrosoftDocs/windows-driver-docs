@@ -6,7 +6,6 @@ keywords:
 - geometry descriptor WDK audio
 - microphone array WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Microphone Array Geometry Property

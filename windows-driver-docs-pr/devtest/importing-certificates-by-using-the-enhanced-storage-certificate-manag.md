@@ -2,7 +2,6 @@
 title: Importing Certificates with Enhanced Storage Certificate Management Tool
 description: Importing Certificates by using the Enhanced Storage Certificate Management Tool
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Importing Certificates by using the Enhanced Storage Certificate Management Tool

@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_XMIT_OK OID specifies the number of frames 
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_XMIT_OK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_XMIT\_OK

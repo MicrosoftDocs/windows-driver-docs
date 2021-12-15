@@ -2,7 +2,6 @@
 title: Secure MOR implementation
 description: Describes the behavior and usage for the MemoryOverwriteRequestControlLock UEFI variable, revision 2.
 ms.date: 08/18/2021
-ms.localizationpriority: medium
 ---
 
 # Secure MOR implementation

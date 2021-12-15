@@ -7,7 +7,6 @@ keywords:
 - SDV WDK , requirements
 - function prototypes WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supported Drivers

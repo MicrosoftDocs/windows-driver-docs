@@ -6,7 +6,6 @@ keywords:
 - 4 3 destination surface displays 16 9 video WDK DirectX VA
 - 16 9 video on 4 3 destination surface WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying 16:9 Video within a 4:3 Destination Surface

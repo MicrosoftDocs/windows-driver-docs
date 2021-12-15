@@ -2,7 +2,6 @@
 title: Build the sensor driver
 description: This topic shows you how to build the sample sensor driver for the ADXL345 accelerometer.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Build the sensor driver

@@ -2,7 +2,6 @@
 title: User experience for UEFI firmware updates
 description: This section describes how to implement a basic user experience during UEFI firmware updates.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # User experience for UEFI firmware updates

@@ -6,7 +6,6 @@ keywords:
 - UI plug-ins WDK print , COM interfaces
 - COM interfaces WDK print , user interface plug-ins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COM Interfaces for UI Plug-Ins

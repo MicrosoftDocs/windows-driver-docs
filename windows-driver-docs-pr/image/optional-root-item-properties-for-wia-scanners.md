@@ -2,7 +2,6 @@
 title: Optional Root Item Properties for WIA Scanners
 description: Optional Root Item Properties for WIA Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Optional Root Item Properties for WIA Scanners

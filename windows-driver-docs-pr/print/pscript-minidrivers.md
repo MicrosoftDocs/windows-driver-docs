@@ -13,7 +13,6 @@ keywords:
 - East Asian fonts WDK print
 - Asian fonts WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pscript Minidrivers

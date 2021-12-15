@@ -2,7 +2,6 @@
 title: ProjectUpgradeTool
 description: The ProjectUpgradeTool takes Microsoft Visual Studio 2012 projects (*.vcxproj) and solution files (*.sln) that were created with the Windows Driver Kit (WDK) for Windows 8 and upgrades them to work with the WDK for Windows 8.1 and Microsoft Visual Studio 2013.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ProjectUpgradeTool

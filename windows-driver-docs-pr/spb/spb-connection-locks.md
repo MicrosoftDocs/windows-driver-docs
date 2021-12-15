@@ -2,7 +2,6 @@
 title: SPB Connection Locks
 description: Connection locks are useful for enabling two clients to share access to a target peripheral device on a simple peripheral bus (SPB).
 ms.date: 09/14/2021
-ms.localizationpriority: medium
 ---
 
 # SPB Connection Locks

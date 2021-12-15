@@ -4,7 +4,6 @@ description: WDI_TLV_CONFIGURED_MAC_ADDRESS is a TLV that contains a custom MAC 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CONFIGURED_MAC_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS

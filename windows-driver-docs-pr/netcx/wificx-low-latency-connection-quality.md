@@ -2,7 +2,6 @@
 title: WiFiCx low latency connection quality
 description: This section describes how to maintain quality with low latency connections in WiFiCx
 ms.date: 09/30/2021
-ms.localizationpriority: medium
 ---
 
 # WiFiCx low latency connection quality

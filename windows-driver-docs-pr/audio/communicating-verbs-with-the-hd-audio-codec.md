@@ -2,7 +2,6 @@
 title: Communicating Verbs with the HD Audio Codec
 description: Communicating Verbs with the HD Audio Codec
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Communicating Verbs with the HD Audio Codec

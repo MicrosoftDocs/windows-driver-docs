@@ -2,7 +2,6 @@
 title: Operational Ports
 description: Operational Ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Operational Ports

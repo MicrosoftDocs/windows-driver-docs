@@ -4,7 +4,6 @@ description: OID_WWAN_PCO reports the status and the payload of a PCO value that
 keywords:
 - OID_WWAN_PCO, PCO OID
 ms.date: 08/08/2017
-ms.localizationpriority: medium
 ---
 
 # OID_WWAN_PCO

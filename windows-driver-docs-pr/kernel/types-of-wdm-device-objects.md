@@ -3,7 +3,6 @@ title: Types of WDM Device Objects
 description: Types of WDM Device Objects
 keywords: ["functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "device objects WDK kernel , types", "filter DOs WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Types of WDM Device Objects

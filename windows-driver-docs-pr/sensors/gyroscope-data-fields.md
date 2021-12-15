@@ -2,7 +2,6 @@
 title: Gyroscope data fields
 description: This topic provides information about the data fields that are specific to the gyroscope.
 ms.date: 01/04/2018
-ms.localizationpriority: medium
 ---
 
 # Gyroscope data fields

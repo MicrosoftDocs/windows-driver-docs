@@ -9,7 +9,6 @@ api_name:
 - lmi
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !lmi

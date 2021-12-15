@@ -2,7 +2,6 @@
 title: PaddingByteInformationDisclosure (Supplemental Windows Driver CodeQL Query)
 description: PaddingByteInformationDisclosure a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
-ms.localizationpriority: medium
 ---
 
 # PaddingByteInformationDisclosure (Windows Driver CodeQL Query)

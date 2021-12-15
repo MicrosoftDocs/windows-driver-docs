@@ -9,7 +9,6 @@ api_name:
 - IPI_WATCHDOG_TIMEOUT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1DB: IPI\_WATCHDOG\_TIMEOUT

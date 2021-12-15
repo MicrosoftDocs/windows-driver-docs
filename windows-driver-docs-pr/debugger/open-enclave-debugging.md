@@ -2,7 +2,6 @@
 title: Open Enclave debugging
 description: Open Enclave debugging
 ms.date: 08/06/2020
-ms.localizationpriority: medium
 ---
 
 # Open Enclave debugging

@@ -9,7 +9,6 @@ api_name:
 - findxmldata
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !findxmldata

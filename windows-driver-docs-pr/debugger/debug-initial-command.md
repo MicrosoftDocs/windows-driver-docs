@@ -3,7 +3,6 @@ title: Debug initial command
 description: Debug initial command
 keywords: ["Debug initial command (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug initial command

@@ -8,7 +8,6 @@ keywords:
 - network configuration subsystem WDK
 - subsystem WDK network configuration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # About Notify Objects

@@ -4,7 +4,6 @@ description: Creating Instances of DirectX VA Device Objects
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , creating instances
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Instances of DirectX VA Device Objects

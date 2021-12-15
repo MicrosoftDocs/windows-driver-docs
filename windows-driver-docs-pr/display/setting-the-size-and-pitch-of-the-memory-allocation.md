@@ -5,7 +5,6 @@ keywords:
 - memory allocation WDK display
 - allocating memory WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the Size and Pitch of the Memory Allocation

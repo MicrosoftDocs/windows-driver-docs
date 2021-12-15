@@ -12,7 +12,6 @@ keywords:
 - EFI boot entry IDs WDK
 - identifiers WDK boot options
 ms.date: 07/02/2018
-ms.localizationpriority: medium
 ---
 
 # Exporting and Importing Boot Entries in EFI

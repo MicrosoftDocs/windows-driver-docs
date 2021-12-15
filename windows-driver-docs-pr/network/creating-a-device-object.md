@@ -9,7 +9,6 @@ keywords:
 - WDM-based callout drivers WDK Windows Filtering Platform
 - WDF-based callout drivers WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Device Object (Windows Filtering Platform)

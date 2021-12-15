@@ -2,7 +2,6 @@
 title: KSEVENTSETID_VIDCAPNotify
 description: The KSEVENTSETID_VIDCAPNotify event set notifies clients when a video capture device trigger action occurs.
 ms.date: 10/12/2021
-ms.localizationpriority: medium
 ---
 
 # KSEVENTSETID_VIDCAPNotify

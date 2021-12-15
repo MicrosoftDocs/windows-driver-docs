@@ -9,7 +9,6 @@ api_name:
 - IrqlIoPassive5
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlIoPassive5 rule (wdm)

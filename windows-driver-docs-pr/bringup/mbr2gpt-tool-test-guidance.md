@@ -2,7 +2,6 @@
 title: MBR2GPT tool test guidance
 description: Provides guidance on the MBR2GPT tool test.
 ms.date: 08/19/2021
-ms.localizationpriority: medium
 ---
 
 # MBR2GPT tool test guidance

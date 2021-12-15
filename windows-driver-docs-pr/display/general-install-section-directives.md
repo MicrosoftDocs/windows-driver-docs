@@ -2,7 +2,6 @@
 title: General install section directives
 description: Directives that apply to general installations.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General install section directives

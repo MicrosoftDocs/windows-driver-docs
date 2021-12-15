@@ -2,7 +2,6 @@
 title: Help and support
 description: Help and support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Help and support

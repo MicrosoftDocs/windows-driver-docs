@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE is a WiFiCx TLV that 
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE (dot11wificxtypes.hpp)

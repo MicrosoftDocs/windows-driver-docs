@@ -3,7 +3,6 @@ title: Debug Modules
 description: Debug Modules
 keywords: ["Debug Modules", "executable files and paths, Debug Modules"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Modules

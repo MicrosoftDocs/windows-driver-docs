@@ -9,7 +9,6 @@ api_name:
 - DMA_COMMON_BUFFER_VECTOR_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1DC: DMA\_COMMON\_BUFFER\_VECTOR\_ERROR

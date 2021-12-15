@@ -2,7 +2,6 @@
 title: Windows Audio Architecture
 description: This topic provided a high level summary of the Windows 10 audio architecture.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Audio Architecture

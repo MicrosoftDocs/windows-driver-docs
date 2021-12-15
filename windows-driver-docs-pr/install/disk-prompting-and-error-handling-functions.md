@@ -9,7 +9,6 @@ keywords:
 - prompting disk insertion WDK SetupAPI
 - media prompting WDK SetupAPI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disk Prompting and Error Handling Functions

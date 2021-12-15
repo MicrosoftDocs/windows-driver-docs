@@ -8,7 +8,6 @@ keywords:
 - decoding video WDK DirectX VA , about decoding video
 - video decoding WDK DirectX VA , about decoding video
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Decoding

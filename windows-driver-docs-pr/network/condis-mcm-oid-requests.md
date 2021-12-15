@@ -5,7 +5,6 @@ keywords:
 - miniport call managers WDK networking , OID requests
 - MCMs WDK networking , OID requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CoNDIS MCM OID Requests

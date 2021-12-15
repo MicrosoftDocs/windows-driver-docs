@@ -3,7 +3,6 @@ title: Security Considerations
 description: Security Considerations for Windows Debugging Tools
 keywords: security considerations, debugger security
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Security Considerations

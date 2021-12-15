@@ -9,7 +9,6 @@ api_name:
 - br (Breakpoint Renumber)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # br (Breakpoint Renumber)

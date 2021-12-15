@@ -2,7 +2,6 @@
 title: Handling Packet Coalescing Receive Filters
 description: Handling Packet Coalescing Receive Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Packet Coalescing Receive Filters

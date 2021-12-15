@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 12/21/2018
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_GETREADPACKET

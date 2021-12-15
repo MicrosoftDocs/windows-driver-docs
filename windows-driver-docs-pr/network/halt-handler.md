@@ -6,7 +6,6 @@ keywords:
 - halt handler WDK NDIS
 - unloading miniport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Driver Halt Handler

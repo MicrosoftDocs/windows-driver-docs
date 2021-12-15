@@ -8,7 +8,6 @@ keywords:
 - encryption WDK DirectX VA
 - cryptography WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Encryption Support

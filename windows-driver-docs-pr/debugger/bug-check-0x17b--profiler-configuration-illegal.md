@@ -9,7 +9,6 @@ api_name:
 - PROFILER_CONFIGURATION_ILLEGAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x17B: PROFILER\_CONFIGURATION\_ILLEGAL 

@@ -6,7 +6,6 @@ keywords:
 - default PCL XL fonts
 - fonts WDK PCL XL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Default PCL XL Fonts

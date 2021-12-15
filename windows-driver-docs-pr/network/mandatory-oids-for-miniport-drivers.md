@@ -4,7 +4,6 @@ description: This topic describes mandatory OIDs for miniport drivers
 keywords:
 - Mandatory OIDs for miniport drivers, mandatory NDIS OIDs, mandatory OIDs WDK, mandatory OIDs networking
 ms.date: 11/01/2017
-ms.localizationpriority: medium
 ---
 
 # Mandatory OIDs for miniport drivers

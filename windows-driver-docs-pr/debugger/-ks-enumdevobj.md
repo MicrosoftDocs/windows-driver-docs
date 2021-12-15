@@ -9,7 +9,6 @@ api_name:
 - ks.enumdevobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.enumdevobj

@@ -2,7 +2,6 @@
 title: WinDbg Preview - View Menu 
 description: This section describes how work with the view menu.
 ms.date: 07/02/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - View Menu

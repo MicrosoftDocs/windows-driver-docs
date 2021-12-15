@@ -7,7 +7,6 @@ keywords:
 - tracing WDK , ETW
 - software tracing WDK , ETW
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Event Tracing for Windows (ETW)

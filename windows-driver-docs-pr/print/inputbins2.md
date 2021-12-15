@@ -2,7 +2,6 @@
 title: InputBins property
 description: Contains all of the information about the device input bins.
 ms.date: 09/07/2021
-ms.localizationpriority: medium
 ---
 
 # InputBins property

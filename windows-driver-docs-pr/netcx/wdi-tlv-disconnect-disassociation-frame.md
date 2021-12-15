@@ -4,7 +4,6 @@ description: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME is a WiFiCx TLV that contai
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME (dot11wificxtypes.hpp)

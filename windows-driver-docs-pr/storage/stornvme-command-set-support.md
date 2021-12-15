@@ -2,7 +2,6 @@
 title: StorNVMe command set support
 description: Describes the command set support provided by StoreNVMe
 ms.date: 11/19/2021
-ms.localizationpriority: medium
 ---
 
 # StorNVMe command set support

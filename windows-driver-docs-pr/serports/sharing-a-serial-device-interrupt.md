@@ -11,7 +11,6 @@ keywords:
 - shared interrupts WDK serial devices
 - Serial driver WDK , interrupts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sharing a Serial Device Interrupt

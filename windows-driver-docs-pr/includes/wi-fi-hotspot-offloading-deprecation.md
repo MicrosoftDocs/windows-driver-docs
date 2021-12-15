@@ -1,7 +1,6 @@
 ---
 description: "Wi-Fi Hotspot Offloading deprecation note"
 title: Wi-Fi Hotspot Offloading deprecation note
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ms.topic: include
 ---

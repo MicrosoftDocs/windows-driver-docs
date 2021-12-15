@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_TKIP_KEY is a WiFiCx TLV that contains TKIP key 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_TKIP_KEY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_TKIP\_KEY (dot11wificxtypes.hpp)

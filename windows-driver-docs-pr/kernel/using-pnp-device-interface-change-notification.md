@@ -3,7 +3,6 @@ title: Using PnP Device Interface Change Notification
 description: Using PnP Device Interface Change Notification
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using PnP Device Interface Change Notification

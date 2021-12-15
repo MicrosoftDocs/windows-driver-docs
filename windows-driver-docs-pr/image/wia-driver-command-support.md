@@ -2,7 +2,6 @@
 title: WIA Driver Command Support
 description: WIA Driver Command Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Driver Command Support

@@ -2,7 +2,6 @@
 title: DMA remapping support in Storport miniport drivers
 description:  DMA remapping support in Storport miniport drivers
 ms.date: 07/10/2020
-ms.localizationpriority: medium
 ---
 
 # DMA remapping support in Storport miniport drivers

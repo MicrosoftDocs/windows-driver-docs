@@ -4,7 +4,6 @@ description: WDI_TLV_RETRY_AFTER is a TLV that contains the duration, in seconds
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_RETRY_AFTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

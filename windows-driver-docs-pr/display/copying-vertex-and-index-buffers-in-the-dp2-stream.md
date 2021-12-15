@@ -7,7 +7,6 @@ keywords:
 - drawing tokens WDK DirectX 8.0
 - tokens WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Copying Vertex and Index Buffers in the DP2 Stream

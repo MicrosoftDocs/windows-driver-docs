@@ -4,7 +4,6 @@ description: Sample Port Monitor
 keywords:
 - port monitors WDK print , samples
 ms.date: 08/25/2020
-ms.localizationpriority: medium
 ---
 
 # Sample Port Monitor

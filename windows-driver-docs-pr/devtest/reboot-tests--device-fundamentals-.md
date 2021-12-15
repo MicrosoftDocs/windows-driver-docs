@@ -2,7 +2,6 @@
 title: Reboot Tests (Device Fundamentals)
 description: The Device Fundamentals Reboot tests run I/O on the specified devices, before and after, or during system restarts.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reboot Tests (Device Fundamentals)

@@ -4,7 +4,6 @@ description: The protocol edge of the Hyper-V extensible switch issues an object
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_NIC_RESTORE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_NIC\_RESTORE

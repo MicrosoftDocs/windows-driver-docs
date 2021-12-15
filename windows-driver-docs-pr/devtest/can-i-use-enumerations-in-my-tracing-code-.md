@@ -2,7 +2,6 @@
 title: Can I use enumerations in my tracing code
 description: Can I use enumerations in my tracing code
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Can I use enumerations in my tracing code?

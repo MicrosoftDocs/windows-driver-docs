@@ -9,7 +9,6 @@ keywords:
 - FSD WDK network redirectors
 - buffers WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Redirectors and the File System Process

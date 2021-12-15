@@ -4,7 +4,6 @@ description: WDI_TLV_RTT is a WiFiCx TLV that contains the measured roundtrip ti
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_RTT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_RTT (dot11wificxtypes.hpp)

@@ -7,7 +7,6 @@ keywords:
 - Control Panel slider control WDK Windows 2000 display
 - GDI acceleration changes WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dynamic Change of Permitted Driver Accelerations

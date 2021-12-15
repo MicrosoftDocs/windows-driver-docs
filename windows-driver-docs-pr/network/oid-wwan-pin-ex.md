@@ -4,7 +4,6 @@ description: OID_WWAN_PIN_EX sets or returns expanded information related to Per
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PIN_EX Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PIN\_EX

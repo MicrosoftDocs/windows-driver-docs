@@ -11,7 +11,6 @@ keywords:
 - power management WDK KMDF , idle power-down
 - system sleeping states WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # A Device Enters a Low-Power State

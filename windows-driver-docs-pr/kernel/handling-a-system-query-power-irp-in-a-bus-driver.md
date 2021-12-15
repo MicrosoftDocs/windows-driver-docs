@@ -3,7 +3,6 @@ title: Handling a System Query-Power IRP in a Bus Driver
 description: Handling a System Query-Power IRP in a Bus Driver
 keywords: ["query-power IRPs WDK power management", "bus drivers WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling a System Query-Power IRP in a Bus Driver

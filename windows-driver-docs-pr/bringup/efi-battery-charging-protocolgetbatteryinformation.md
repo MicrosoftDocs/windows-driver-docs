@@ -2,7 +2,6 @@
 title: EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation
 description: Provides information about EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation
