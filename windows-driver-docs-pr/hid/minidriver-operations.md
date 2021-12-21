@@ -209,7 +209,7 @@ A HID minidriver does not need a dispatch routine for device control requests. T
 
 ### <a href="" id="irp-mj-internal-device-control"></a>IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL
 
-A HID minidriver must provide a dispatch routine for internal device control requests that supports the requests described in [HID MinidriverIOCTLs](/windows-hardware/drivers/ddi/index).
+A HID minidriver must provide a dispatch routine for internal device control requests that supports the requests described in [HID Minidriver IOCTLs](/windows-hardware/drivers/ddi/_hid/#hid-minidriver-ioctls).
 
 The HID class driver primarily uses internal device control requests to access the underlying input device.
 
