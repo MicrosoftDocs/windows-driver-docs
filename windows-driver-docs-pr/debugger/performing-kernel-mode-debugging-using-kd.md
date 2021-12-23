@@ -1,7 +1,7 @@
 ---
 title: Live Kernel-Mode Debugging Using KD
 description: Live Kernel-Mode Debugging Using KD
-ms.date: 06/21/2018
+ms.date: 12/22/2021
 ---
 
 # <span id="debugger.performing_kernel-mode_debugging_using_kd"></span>Live Kernel-Mode Debugging Using KD
@@ -16,6 +16,8 @@ kd \[-y *SymbolPath*\] -k 1394:channel=*1394Channel*\[,symlink=*1394Protocol*\]
 kd \[-y *SymbolPath*\] -k usb:targetname=*USBString*
 
 kd \[-y *SymbolPath*\] -k com:port=*ComPort*,baud=*BaudRate*
+
+kd \[-y *SymbolPath*\] -k com:ipport=*SerialTcpIpPort*,port=*SerialIPAddress*
 
 kd \[-y *SymbolPath*\] -k com:pipe,port=\\\\*VMHost*\\pipe\\*PipeName*\[,resets=0\]\[,reconnect\]
 
@@ -101,6 +103,13 @@ Causes the debugger to automatically disconnect and reconnect the pipe if a read
 
 <span id="_______-kl"></span><span id="_______-KL"></span> -kl  
 Causes the debugger to perform local kernel-mode debugging. For more information, see [Local Kernel-Mode Debugging](performing-local-kernel-debugging.md).
+
+<span id="SerialTcpIpPort"> *SerialTcpIpPort*   
+The target TCP IP port of the emulated serial COM port. 
+
+<span id="SerialIPAddress"> *SerialIPAddress*   
+The target TCP IP address of the emulated serial COM port. 
+
 
 ### <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
 

@@ -2,13 +2,17 @@
 title: Enable debugging of Win32 subsystem
 description: Enable debugging of Win32 subsystem
 keywords: ["Enable debugging of Win32 subsystem (global flag)"]
-ms.date: 05/23/2017
+ms.date: 12/22/2021
 ---
 
 # Enable debugging of Win32 subsystem
 
 
 ## <span id="ddk_enable_debugging_of_win32_subsystem_dtools"></span><span id="DDK_ENABLE_DEBUGGING_OF_WIN32_SUBSYSTEM_DTOOLS"></span>
+
+> [!NOTE]
+> Starting in Windows 10, CSRSS is a protected process and can only be debugged in kernel mode.
+>
 
 
 The **Enable debugging of Win32 subsystem** flag debugs the Client Server Run-time Subsystem (csrss.exe) in the NTSD debugger.

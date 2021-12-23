@@ -152,7 +152,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
         </When>
     ```
 
-    Change the not equals (!=) to less than ("&lt;").
+    Change the not equals (!=) to less than (`&lt;`).
 
     ```XML
         <When  Condition="'$(VisualStudioVersion)' &lt;'11.0'">
@@ -164,7 +164,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
         <When Condition="('$(PlatformToolset)' == 'WindowsApplicationForDrivers8.0') and ('$(VisualStudioVersion)' != '11.0')">
     ```
 
-    And change the not equals (!=) to less than ("&lt;").
+    And change the not equals (!=) to less than (`&lt;`).
 
     ```XML
         <When Condition="('$(PlatformToolset)' == 'WindowsApplicationForDrivers8.0') and ('$(VisualStudioVersion)' &lt;'11.0')">
