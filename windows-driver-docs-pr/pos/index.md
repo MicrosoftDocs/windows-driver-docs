@@ -5,7 +5,6 @@ ms.date: 08/13/2021
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.localizationpriority: medium
 ---
 
 # POS device driver design guide

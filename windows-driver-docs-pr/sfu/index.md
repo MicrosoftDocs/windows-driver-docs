@@ -3,7 +3,6 @@ title: Storage Firmware Update (SFU)
 description: Provides information about Storage Firmware Update (SFU)
 ms.date: 10/07/2020
 ms.topic: article
-ms.localizationpriority: medium
 ---
 
 # Storage Firmware Update (SFU)
