@@ -9,7 +9,6 @@ api_name:
 - UsbContReader
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # UsbContReader rule (kmdf)

@@ -9,7 +9,6 @@ api_name:
 - kuser
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !kuser

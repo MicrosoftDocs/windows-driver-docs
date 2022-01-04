@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 10/12/2021
-ms.localizationpriority: medium
 ---
 
 # KSINTERFACE_STANDARD_LOOPED_STREAMING

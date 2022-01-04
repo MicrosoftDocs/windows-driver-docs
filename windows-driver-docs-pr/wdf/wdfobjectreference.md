@@ -4,7 +4,6 @@ description: The WdfObjectReference macro increments the reference count for a s
 keywords:
  - WdfObjectReference macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WdfObjectReference macro

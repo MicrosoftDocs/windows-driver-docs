@@ -7,7 +7,6 @@ keywords:
 - general Setup functions WDK SetupAPI
 - SP_DEVINFO_DATA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Basic Installation Operations

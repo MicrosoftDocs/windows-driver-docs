@@ -3,7 +3,6 @@ title: Developer and preview mode
 description: Developer and preview mode
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Developer and preview mode

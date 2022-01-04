@@ -2,7 +2,6 @@
 title: System-defined ECPs
 description: System-Defined ECPs
 ms.date: 09/09/2021
-ms.localizationpriority: medium
 ---
 
 # System-defined ECPs

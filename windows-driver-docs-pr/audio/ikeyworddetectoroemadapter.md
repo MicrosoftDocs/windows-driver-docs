@@ -9,7 +9,6 @@ api_name:
 api_type:
 - COM
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # IKeywordDetectorOemAdapter interface

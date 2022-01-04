@@ -2,7 +2,6 @@
 title: Video Capture Minidriver Event Sets
 description: Video Capture Minidriver Event Sets
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Video Capture Minidriver Event Sets

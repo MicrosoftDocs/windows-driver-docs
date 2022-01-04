@@ -7,7 +7,6 @@ keywords:
 - trace logs WDK TraceView , setting options
 - log files WDK TraceView , setting options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Trace Log Options

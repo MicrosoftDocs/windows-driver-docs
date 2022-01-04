@@ -3,7 +3,6 @@ title: Process Syntax
 description: Process Syntax
 keywords: ["process, command syntax", "(process identifier)", "process, process identifier ( )", "process, process ID (PID)", "PID (process ID)", "(process identifier)", "syntax rules for commands, (process identifier)", "syntax rules for commands, (process identifier)", "process identifier ( )"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Process Syntax

@@ -3,7 +3,6 @@ title: Allocating Controller Objects for I/O Operations
 description: Allocating Controller Objects for I/O Operations
 keywords: ["controller objects WDK kernel , allocating", "ControllerControl routines, controller object allocation", "IoAllocateController", "allocating controller objects"]
 ms.date: 07/21/2021
-ms.localizationpriority: medium
 ---
 
 # Allocating Controller Objects for I/O Operations

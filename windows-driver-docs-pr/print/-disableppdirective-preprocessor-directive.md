@@ -7,7 +7,6 @@ keywords:
 - reserved keywords WDK
 - DisablePPDirective directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \#DisablePPDirective Preprocessor Directive

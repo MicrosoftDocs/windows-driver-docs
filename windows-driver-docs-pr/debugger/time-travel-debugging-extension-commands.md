@@ -2,7 +2,6 @@
 title: Time travel debugging extensions
 description: This section describes how to use the time travel debugger extension commands.
 ms.date: 09/22/2017
-ms.localizationpriority: medium
 ---
 
 # Time travel debugging extension commands

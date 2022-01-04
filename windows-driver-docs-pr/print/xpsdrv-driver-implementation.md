@@ -4,7 +4,6 @@ description: XPSDrv Driver Implementation
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , implementing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Driver Implementation

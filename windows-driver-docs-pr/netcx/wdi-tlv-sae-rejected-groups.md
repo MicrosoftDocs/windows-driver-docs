@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_REJECTED_GROUPS is a WiFiCx TLV that contains the anti-
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_SAE_REJECTED_GROUPS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_SAE_REJECTED_GROUPS (dot11wificxtypes.hpp)

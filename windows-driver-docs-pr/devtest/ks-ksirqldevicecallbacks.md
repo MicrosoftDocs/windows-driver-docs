@@ -9,7 +9,6 @@ api_name:
 - KsIrqlDeviceCallbacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsIrqlDeviceCallbacks rule ()

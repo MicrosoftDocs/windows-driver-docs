@@ -2,7 +2,6 @@
 title: POS events
 description: Describes the events that are passed from the device driver to the Point of Service (POS) API layer by using ReadFile.
 ms.date: 09/07/2018
-ms.localizationpriority: medium
 ---
 
 # POS events

@@ -4,7 +4,6 @@ description: Interpreting a Sample SetupAPI Log File
 keywords:
 - sample logs WDK SetupAPI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interpreting a Sample SetupAPI Log File

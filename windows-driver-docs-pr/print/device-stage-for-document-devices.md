@@ -2,7 +2,6 @@
 title: Device Stage for Document Devices
 description: Device Stage for Document Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Stage for Document Devices

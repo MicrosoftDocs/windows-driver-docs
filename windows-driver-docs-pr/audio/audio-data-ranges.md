@@ -10,7 +10,6 @@ keywords:
 - WDM audio data ranges WDK
 - data ranges WDK audio , about audio data ranges
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Data Ranges

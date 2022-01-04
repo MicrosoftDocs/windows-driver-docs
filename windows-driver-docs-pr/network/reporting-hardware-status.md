@@ -8,7 +8,6 @@ keywords:
 - hardware status WDK networking
 - status information WDK NDIS miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Hardware Status

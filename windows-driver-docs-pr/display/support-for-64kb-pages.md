@@ -2,7 +2,6 @@
 title: Support for 64KB pages
 description: To support 64 KB pages Windows Display Driver Model (WDDM) v2 provides two types of leaf page tables, one that supports 4 KB page table entries and one that supports 64 KB entries.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Support for 64KB pages

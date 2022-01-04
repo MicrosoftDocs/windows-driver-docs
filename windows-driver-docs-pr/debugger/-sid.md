@@ -9,7 +9,6 @@ api_name:
 - sid
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sid

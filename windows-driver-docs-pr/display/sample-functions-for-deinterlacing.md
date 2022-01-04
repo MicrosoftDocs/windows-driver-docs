@@ -4,7 +4,6 @@ description: Sample Functions for Deinterlacing
 keywords:
 - deinterlacing WDK DirectX VA , sample functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Functions for Deinterlacing

@@ -5,7 +5,6 @@ keywords:
 - GPD file entries WDK Unidrv , pairs
 - pairs WDK GPD files
 ms.date: 09/08/2021
-ms.localizationpriority: medium
 ---
 
 # Pairs (GPD language)

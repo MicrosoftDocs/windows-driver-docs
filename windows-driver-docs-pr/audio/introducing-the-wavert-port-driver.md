@@ -2,7 +2,6 @@
 title: Introducing the WaveRT Port Driver
 description: Introducing the WaveRT Port Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introducing the WaveRT Port Driver

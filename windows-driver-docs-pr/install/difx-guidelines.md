@@ -2,7 +2,6 @@
 title: DIFx Guidelines
 description: DIFx Guidelines
 ms.date: 05/24/2018
-ms.localizationpriority: medium
 ---
 
 # DIFx Guidelines

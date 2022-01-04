@@ -2,7 +2,6 @@
 title: Wi-Fi Direct Printing overview
 description: Provides information on supported user experiences and use cases for a Wi-Fi Direct Printing.
 ms.date: 06/09/2020
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi Direct Printing overview

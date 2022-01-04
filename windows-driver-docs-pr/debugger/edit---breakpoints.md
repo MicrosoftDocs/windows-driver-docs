@@ -3,7 +3,6 @@ title: Edit Breakpoints
 description: Edit Breakpoints
 keywords: ["Edit Breakpoints", "breakpoints, Edit Breakpoints"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Breakpoints

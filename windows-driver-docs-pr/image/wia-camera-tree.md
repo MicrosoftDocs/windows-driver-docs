@@ -2,7 +2,6 @@
 title: WIA Camera Tree
 description: WIA Camera Tree
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Camera Tree

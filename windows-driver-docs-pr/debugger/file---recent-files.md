@@ -3,7 +3,6 @@ title: File Recent Files
 description: File Recent Files
 keywords: ["File Recent Files", "source files and paths, File Recent Files"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Recent Files

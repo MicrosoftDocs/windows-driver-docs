@@ -3,7 +3,6 @@ title: Setting up IRPs in Intermediate Drivers
 description: Setting up IRPs in Intermediate Drivers
 keywords: ["removable media WDK kernel , intermediate driver IRPs", "intermediate driver IRPs WDK removable media"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Setting up IRPs in Intermediate Drivers

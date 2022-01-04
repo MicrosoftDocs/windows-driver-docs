@@ -2,7 +2,6 @@
 title: Know when network connectivity changes
 description: Know when network connectivity changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Know when network connectivity changes

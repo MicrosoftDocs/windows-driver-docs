@@ -2,7 +2,6 @@
 title: Residency overview
 description: Residency overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Residency overview

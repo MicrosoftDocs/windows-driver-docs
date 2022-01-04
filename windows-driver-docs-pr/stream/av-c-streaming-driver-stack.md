@@ -9,7 +9,6 @@ keywords:
 - stacks WDK AV/C streaming
 - peer driver stacks WDK AV/C streaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AV/C Streaming Driver Stack

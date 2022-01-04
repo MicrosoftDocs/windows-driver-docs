@@ -2,7 +2,6 @@
 title: I/O request packets
 description: I/O request packets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # I/O request packets

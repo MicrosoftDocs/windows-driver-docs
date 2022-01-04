@@ -2,7 +2,6 @@
 title: Custom Switch Property Definition and Registration
 description: Custom Switch Property Definition and Registration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Custom Switch Property Definition and Registration

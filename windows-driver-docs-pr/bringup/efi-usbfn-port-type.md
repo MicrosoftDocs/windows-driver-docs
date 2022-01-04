@@ -2,7 +2,6 @@
 title: EFI_USBFN_PORT_TYPE
 description: The EFI_USBFN_PORT_TYPE enumeration specifies the USB port type.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_PORT_TYPE

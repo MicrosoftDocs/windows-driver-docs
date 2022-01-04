@@ -5,7 +5,6 @@ keywords:
 - Winsock Kernel WDK networking , operations
 - WSK WDK networking , operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Operations Topics

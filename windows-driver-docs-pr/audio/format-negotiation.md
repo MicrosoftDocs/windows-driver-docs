@@ -2,7 +2,6 @@
 title: Format Negotiation
 description: Format Negotiation
 ms.date: 11/08/2018
-ms.localizationpriority: medium
 ---
 
 # Format Negotiation

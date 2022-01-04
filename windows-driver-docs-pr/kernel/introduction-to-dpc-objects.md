@@ -1,7 +1,6 @@
 ---
 title: Introduction to DPC Objects
 description: Introduction to DPC Objects
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

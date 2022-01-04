@@ -6,7 +6,6 @@ keywords:
 - NDIS filter drivers WDK , mandatory
 - mandatory filter drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mandatory Filter Drivers

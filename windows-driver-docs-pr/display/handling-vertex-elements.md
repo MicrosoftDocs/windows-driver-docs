@@ -7,7 +7,6 @@ keywords:
 - vertex elements WDK DirectX 9.0
 - vertex elements WDK DirectX 9.0 , vertex shader declarations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Vertex Elements

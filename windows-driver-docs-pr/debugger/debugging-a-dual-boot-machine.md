@@ -3,7 +3,6 @@ title: Debugging a Dual-Boot Machine
 description: Debugging a Dual-Boot Machine
 keywords: ["dual-boot machines"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging a Dual-Boot Machine

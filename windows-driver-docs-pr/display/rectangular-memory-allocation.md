@@ -4,7 +4,6 @@ description: Rectangular Memory Allocation
 keywords:
 - rectangular memory allocation WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rectangular Memory Allocation

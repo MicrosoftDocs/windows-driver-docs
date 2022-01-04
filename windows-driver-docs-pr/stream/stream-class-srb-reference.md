@@ -2,7 +2,6 @@
 title: Stream Class SRB Reference
 description: Stream Class SRB Reference
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Stream Class SRB Reference

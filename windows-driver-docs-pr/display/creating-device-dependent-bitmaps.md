@@ -9,7 +9,6 @@ keywords:
 - device-specific bitmaps WDK GDI
 - DDB WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Device-Dependent Bitmaps

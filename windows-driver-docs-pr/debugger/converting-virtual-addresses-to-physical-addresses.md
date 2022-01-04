@@ -3,7 +3,6 @@ title: Converting Virtual Addresses to Physical Addresses
 description: Converting Virtual Addresses to Physical Addresses
 keywords: ["virtual address", "virtual address, converting to physical address", "physical address", "physical address, converting from virtual address", "addresses", "addresses, converting virtual to physical", "memory, virtual addresses", "memory, physical addresses"]
 ms.date: 05/04/2018
-ms.localizationpriority: medium
 ---
 
 # Converting Virtual Addresses to Physical Addresses

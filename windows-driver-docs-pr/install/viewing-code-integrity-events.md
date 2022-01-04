@@ -6,7 +6,6 @@ keywords:
 - viewing Code Integrity events
 - displaying Code Integrity events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing Code Integrity Events

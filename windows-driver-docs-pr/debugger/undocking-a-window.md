@@ -3,7 +3,6 @@ title: Undocking a Window
 description: Undocking a Window
 keywords: ["debugging information windows, undocking windows", "undocked windows", "undocking windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Undocking a Window

@@ -2,7 +2,6 @@
 title: Global Navigation Satellite System (GNSS) driver design guide for Windows 10
 description: Describes design requirements and architecture of the Universal Windows UMDF 2.0 driver for Global Navigation Satellite System (GNSS) for the converged Windows location stack in Windows 10.
 ms.date: 08/24/2021
-ms.localizationpriority: medium
 ---
 
 # Global Navigation Satellite System (GNSS) driver design guide for Windows 10

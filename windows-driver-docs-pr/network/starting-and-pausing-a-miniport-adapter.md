@@ -7,7 +7,6 @@ keywords:
 - miniport adapters WDK networking , pausing
 - adapters WDK networking , pausing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting and Pausing a Miniport Adapter Overview

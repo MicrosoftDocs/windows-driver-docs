@@ -4,7 +4,6 @@ description: OID_WWAN_MODEM_LOGGING_CONFIG is used to configure logs that are co
 ms.date: 04/11/2019
 keywords: 
 - OID_WWAN_MODEM_LOGGING_CONFIG Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

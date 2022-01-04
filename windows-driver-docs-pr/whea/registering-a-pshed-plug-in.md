@@ -6,7 +6,6 @@ keywords:
 - registering PSHED plug-ins WDK WHEA
 - PSHED plug-ins WDK WHEA , registering
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering a PSHED Plug-In

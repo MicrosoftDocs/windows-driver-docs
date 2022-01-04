@@ -9,7 +9,6 @@ api_name:
 - .leave
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .leave

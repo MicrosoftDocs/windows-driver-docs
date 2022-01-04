@@ -2,7 +2,6 @@
 description: Learn about the source code for a UMDF-based USB client driver.
 title: USB client driver code structure (UMDF)
 ms.date: 06/07/2019
-ms.localizationpriority: medium
 ---
 
 # Understanding the USB client driver code structure (UMDF)

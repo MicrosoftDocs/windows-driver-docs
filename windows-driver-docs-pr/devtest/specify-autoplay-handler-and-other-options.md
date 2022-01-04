@@ -4,7 +4,6 @@ description: Specify AutoPlay Handler and options in the Device Metadata Authori
 keywords:
 - Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard

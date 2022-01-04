@@ -3,7 +3,6 @@ title: Setting Up Exclusion Lists
 description: Setting Up Exclusion Lists
 keywords: ["SymProxy, exclusion lists"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up Exclusion Lists

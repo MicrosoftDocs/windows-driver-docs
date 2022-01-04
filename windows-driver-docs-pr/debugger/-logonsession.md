@@ -9,7 +9,6 @@ api_name:
 - logonsession
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !logonsession

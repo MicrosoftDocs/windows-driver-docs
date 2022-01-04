@@ -9,7 +9,6 @@ api_name:
 - PDC_LOCK_WATCHDOG_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 17C: PDC\_LOCK\_WATCHDOG\_LIVEDUMP

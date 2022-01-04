@@ -7,7 +7,6 @@ keywords:
 - switching desktops WDK Windows 2000 display
 - DrvAssertMode
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Switching Desktops: Responding to DrvAssertMode

@@ -4,7 +4,6 @@ description: OID_WWAN_PIN sets or returns information related to Personal Identi
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PIN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PIN

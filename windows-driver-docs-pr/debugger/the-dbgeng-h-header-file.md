@@ -3,7 +3,6 @@ title: The dbgeng.h Header File
 description: This topic describes the dbgeng.h Header File. Routines in the dbgeng.h header file are used to write DbgEng extensions.
 keywords: DbgEng API, dbgeng.h header file, dbgeng.h
 ms.date: 02/20/2020
-ms.localizationpriority: medium
 ---
 
 # The dbgeng.h Header File

@@ -9,7 +9,6 @@ keywords:
 - operation region memory buffer WDK ACPI
 - memory buffers WDK ACPI
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Maintaining an Operation Region Memory Buffer

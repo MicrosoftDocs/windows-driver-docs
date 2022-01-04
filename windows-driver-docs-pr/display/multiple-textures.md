@@ -6,7 +6,6 @@ keywords:
 - multiple textures WDK Direct3D
 - multiple textures WDK Direct3D , about multiple textures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiple Textures

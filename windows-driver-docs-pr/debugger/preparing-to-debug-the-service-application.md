@@ -2,7 +2,6 @@
 title: Preparing to Debug the Service Application
 description: Preparing to Debug the Service Application
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Preparing to Debug the Service Application

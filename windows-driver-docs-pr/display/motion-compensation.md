@@ -10,7 +10,6 @@ keywords:
 - decoding WDK DirectDraw
 - digital video decoding WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Motion Compensation

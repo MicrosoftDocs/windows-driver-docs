@@ -2,7 +2,6 @@
 description: The MTP Setup Information (.inf) File
 title: The MTP Setup Information (.inf) File
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The MTP Setup Information (.inf) File

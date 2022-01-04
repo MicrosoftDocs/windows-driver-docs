@@ -2,7 +2,6 @@
 title: Starting and Pausing a Binding
 description: Starting and Pausing a Binding
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting and Pausing a Binding

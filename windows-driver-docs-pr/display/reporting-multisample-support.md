@@ -6,7 +6,6 @@ keywords:
 - multisample rendering WDK DirectX 8.0 , reporting
 - rendering multisamples WDK DirectX 8.0 , reporting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Multisample Support

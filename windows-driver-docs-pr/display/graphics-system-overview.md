@@ -6,7 +6,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , about graphics system
 - drawing WDK GDI , about graphics system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Graphics System Overview

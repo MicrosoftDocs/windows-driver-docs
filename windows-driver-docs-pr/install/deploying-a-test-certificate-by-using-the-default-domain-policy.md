@@ -7,7 +7,6 @@ keywords:
 - Trusted Publishers certificate store WDK
 - default domain policies for test certificates
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deploying a Test Certificate by Using the Default Domain Policy

@@ -9,7 +9,6 @@ keywords:
 - WDF-based callout drivers WDK Windows Filtering Platform
 - unload function WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying an Unload Function

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 07/27/2021
-ms.localizationpriority: medium
 ---
 
 # AVC_FUNCTION_RELEASE

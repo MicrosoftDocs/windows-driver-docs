@@ -4,7 +4,6 @@ description: NetAdapterCx limitations
 keywords:
 - Network Adapter WDF Class Extension limitations, NetAdapterCx limitations, NetCx limitations
 ms.date: 06/05/2017
-ms.localizationpriority: medium
 ---
 
 # NetAdapterCx limitations

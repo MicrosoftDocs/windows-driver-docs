@@ -2,7 +2,6 @@
 title: Cloning Packet Traffic
 description: Cloning Packet Traffic
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cloning Packet Traffic

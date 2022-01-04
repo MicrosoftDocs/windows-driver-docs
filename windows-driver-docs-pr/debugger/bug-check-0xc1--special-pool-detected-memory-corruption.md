@@ -9,7 +9,6 @@ api_name:
 - SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC1: SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION

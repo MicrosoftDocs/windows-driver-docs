@@ -9,7 +9,6 @@ keywords:
 - peripherals WDK storage , about storage peripherals
 - storage peripherals WDK , about storage peripherals
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Requests to Storage Peripherals

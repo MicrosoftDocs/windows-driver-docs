@@ -5,7 +5,6 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , pure devices, reporting capability
 - pure devices WDK DirectX 8.0 , reporting capability
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Pure Device Capability

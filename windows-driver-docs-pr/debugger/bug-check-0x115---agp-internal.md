@@ -9,7 +9,6 @@ api_name:
 - AGP_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x115: AGP\_INTERNAL

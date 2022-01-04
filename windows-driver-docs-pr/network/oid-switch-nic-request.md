@@ -4,7 +4,6 @@ description: An object identifier (OID) method request of OID_SWITCH_NIC_REQUEST
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_NIC_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_NIC\_REQUEST

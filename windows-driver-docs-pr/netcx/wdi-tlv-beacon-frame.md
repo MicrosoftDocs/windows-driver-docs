@@ -4,7 +4,6 @@ description: WDI_TLV_BEACON_FRAME is a WiFiCx TLV that contains a beacon frame.
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_BEACON_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BEACON\_FRAME (dot11wificxtypes.hpp)

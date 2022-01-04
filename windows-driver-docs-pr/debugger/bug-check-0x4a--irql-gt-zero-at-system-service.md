@@ -9,7 +9,6 @@ api_name:
 - IRQL_GT_ZERO_AT_SYSTEM_SERVICE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4A: IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE

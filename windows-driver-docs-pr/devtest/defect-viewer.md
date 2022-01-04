@@ -2,7 +2,6 @@
 title: Trace Viewer
 description: Trace Viewer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier Defect Viewer

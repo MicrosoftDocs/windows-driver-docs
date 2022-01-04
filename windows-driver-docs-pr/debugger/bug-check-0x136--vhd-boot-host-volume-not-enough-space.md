@@ -9,7 +9,6 @@ api_name:
 - VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x136: VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE

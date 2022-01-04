@@ -2,7 +2,6 @@
 title: CD-ROM Real-Time Streaming
 description: Streaming (or real-time streaming) is a feature provided by optical drives to allow faster read and write requests.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # <span id="storage.cd-rom_real-time_streaming_"></span>CD-ROM Real-Time Streaming

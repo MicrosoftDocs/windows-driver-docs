@@ -10,7 +10,6 @@ keywords:
 - serial devices WDK , Serial driver
 - serial devices WDK , Serenum driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Operation of Serenum and Serial

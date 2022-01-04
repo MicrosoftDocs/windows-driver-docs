@@ -5,7 +5,6 @@ keywords:
 - dropped frame properties WDK video capture
 - PROPSETID_VIDCAP_DROPPEDFRAMES
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dropped Frame Properties

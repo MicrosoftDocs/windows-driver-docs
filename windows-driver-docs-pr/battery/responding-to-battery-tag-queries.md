@@ -4,7 +4,6 @@ description: Responding to Battery Tag Queries
 keywords:
 - battery tags WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Responding to Battery Tag Queries

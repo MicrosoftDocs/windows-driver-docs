@@ -4,7 +4,6 @@ description: WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES is a TLV that contain
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_RECEIVE\_COALESCE\_OFFLOAD\_CAPABILITIES

@@ -1,7 +1,6 @@
 ---
 title: MPIO\_WMI\_METHODS WMI Class
 description: MPIO\_WMI\_METHODS WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

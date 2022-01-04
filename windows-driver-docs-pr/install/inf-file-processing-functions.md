@@ -8,7 +8,6 @@ keywords:
 - INF file processing functions WDK SetupAPI
 - processing functions WDK INF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF File Processing Functions

@@ -2,7 +2,6 @@
 title: Audio Drivers Interfaces
 description: Audio Drivers Interfaces
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Drivers Interfaces

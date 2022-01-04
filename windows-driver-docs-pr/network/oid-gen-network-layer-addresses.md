@@ -4,7 +4,6 @@ description: As a set, the OID_GEN_NETWORK_LAYER_ADDRESSES OID notifies underlyi
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_NETWORK_LAYER_ADDRESSES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_NETWORK\_LAYER\_ADDRESSES

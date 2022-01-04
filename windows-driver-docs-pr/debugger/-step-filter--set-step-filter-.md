@@ -9,7 +9,6 @@ api_name:
 - .step_filter (Set Step Filter)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .step\_filter (Set Step Filter)

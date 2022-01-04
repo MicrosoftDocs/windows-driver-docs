@@ -9,7 +9,6 @@ api_name:
 - LPC_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x6A: LPC\_INITIALIZATION\_FAILED

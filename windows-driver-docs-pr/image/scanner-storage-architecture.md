@@ -2,7 +2,6 @@
 title: Scanner Storage Architecture
 description: Scanner Storage Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Scanner Storage Architecture

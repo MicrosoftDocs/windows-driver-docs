@@ -5,7 +5,6 @@ keywords:
 - I/O requests WDK UMDF , lower drivers
 - request processing WDK UMDF , lower drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sending I/O Requests to Lower Drivers

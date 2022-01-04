@@ -6,7 +6,6 @@ keywords:
 - query operations WDK DirectX 9.0 , D3dDrawPrimitives2
 - D3dDrawPrimitives2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Imposing Requirements on the D3dDrawPrimitives2 DDI

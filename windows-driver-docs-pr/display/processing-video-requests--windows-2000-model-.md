@@ -7,7 +7,6 @@ keywords:
 - I/O WDK video miniport
 - HwVidStartIO
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing Video Requests (Windows 2000 Model)

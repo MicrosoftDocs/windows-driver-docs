@@ -2,7 +2,6 @@
 title: Troubleshooting UMDF 2.0 Driver Crashes
 description: Starting in User-Mode Driver Framework (UMDF) version 2, you can use a subset of the debugger extension commands implemented in Wdfkd.dll to debug a UMDF driver.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Troubleshooting UMDF 2.0 Driver Crashes

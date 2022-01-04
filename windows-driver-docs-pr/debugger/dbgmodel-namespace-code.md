@@ -2,7 +2,6 @@
 title: Debugger Data Model - Code Namespace
 description: Contains attributes of code and dissasembly.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 
 # The Code Namespace

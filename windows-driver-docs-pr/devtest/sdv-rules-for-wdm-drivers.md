@@ -3,7 +3,6 @@ title: Rules for WDM Drivers
 description: Rules for WDM Drivers
 ms.date: 05/21/2018
 keywords: ["Static Driver Verifier WDK , rules", "StaticDV WDK , rules", "SDV WDK , rules", "rules WDK Static Driver Verifier"]
-ms.localizationpriority: medium
 ---
 
 # Rules for WDM Drivers

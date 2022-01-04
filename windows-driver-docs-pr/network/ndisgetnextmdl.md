@@ -4,7 +4,6 @@ description: The NdisGetNextMdl macro retrieves the next MDL in an MDL chain, gi
 ms.date: 07/18/2017
 keywords:
  - NdisGetNextMdl macro Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NdisGetNextMdl macro

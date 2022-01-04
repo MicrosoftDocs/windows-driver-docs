@@ -3,7 +3,6 @@ title: Using MDLs
 description: Using MDLs
 keywords: ["memory management WDK kernel ,"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using MDLs

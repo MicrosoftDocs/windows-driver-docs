@@ -2,7 +2,6 @@
 title: Allocating VPorts for VMMQ
 description: NDIS allocates VPorts when VMMQ is present.
 ms.date: 02/28/2021
-ms.localizationpriority: medium
 ---
 
 

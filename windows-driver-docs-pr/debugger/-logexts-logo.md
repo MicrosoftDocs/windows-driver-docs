@@ -9,7 +9,6 @@ api_name:
 - logexts.logo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !logexts.logo

@@ -2,7 +2,6 @@
 title: My Preferences Tab
 description: This topic describes WDF Verifier's My Preferences page. On this page, you can set preferences for some of the control panel’s features.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # My Preferences Tab

@@ -3,7 +3,6 @@ title: System Syntax
 description: System Syntax
 keywords: ["system, command syntax", "(system identifier)", "system, system identifier ( )", "syntax rules for commands, systems", "syntax rules for commands, (system identifier)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # System Syntax

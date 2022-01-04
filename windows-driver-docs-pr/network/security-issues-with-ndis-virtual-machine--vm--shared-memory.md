@@ -2,7 +2,6 @@
 title: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 description: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Security Issues with NDIS Virtual Machine (VM) Shared Memory

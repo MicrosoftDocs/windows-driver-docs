@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x169: CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP

@@ -2,7 +2,6 @@
 title: Power management for HID over SPI
 description: Describes power management for devices that support HID over SPI.
 ms.date: 06/22/2021
-ms.localizationpriority: medium
 ---
 
 # HID over SPI power management

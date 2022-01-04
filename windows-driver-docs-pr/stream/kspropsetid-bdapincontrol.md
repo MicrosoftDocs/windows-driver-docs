@@ -2,7 +2,6 @@
 title: KSPROPSETID\_BdaPinControl
 description: KSPROPSETID\_BdaPinControl
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BdaPinControl

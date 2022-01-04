@@ -2,7 +2,6 @@
 title: Driver\services start type directive
 description: The "driver\services" start type directive is a service installation setting requirement for all display drivers. Windows Display Driver Model (WDDM) drivers are Plug and Play (PnP) and therefore must be demand started, where StartType=3.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver\\services start type directive

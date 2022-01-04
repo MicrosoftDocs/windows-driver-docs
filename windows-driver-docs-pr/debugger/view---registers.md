@@ -3,7 +3,6 @@ title: View Registers
 description: View Registers
 keywords: ["View Registers"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Registers

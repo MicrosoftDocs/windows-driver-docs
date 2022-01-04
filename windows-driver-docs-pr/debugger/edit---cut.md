@@ -3,7 +3,6 @@ title: Edit Cut
 description: Edit Cut
 keywords: ["Edit Cut", "text, Edit Cut"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Cut

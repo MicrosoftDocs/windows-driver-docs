@@ -9,7 +9,6 @@ api_name:
 - memlist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !memlist

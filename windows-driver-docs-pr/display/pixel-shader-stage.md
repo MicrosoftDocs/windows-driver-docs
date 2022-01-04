@@ -2,7 +2,6 @@
 title: Pixel Shader Stage
 description: Pixel Shader Stage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pixel Shader Stage

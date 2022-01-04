@@ -2,7 +2,6 @@
 title: Source Code
 description: This section contains the following topics.
 ms.date: 04/21/2021
-ms.localizationpriority: medium
 ---
 
 # Source Code

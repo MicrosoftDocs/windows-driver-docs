@@ -9,7 +9,6 @@ api_name:
 - qd (Quit and Detach)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # qd (Quit and Detach)

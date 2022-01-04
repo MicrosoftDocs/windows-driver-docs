@@ -2,7 +2,6 @@
 description: The Base Driver
 title: The Base Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The Base Driver

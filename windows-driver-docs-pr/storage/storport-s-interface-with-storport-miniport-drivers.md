@@ -2,7 +2,6 @@
 title: Storport's Interface with Storport Miniport Drivers
 description: Storport's Interface with Storport Miniport Drivers
 ms.date: 06/18/2019
-ms.localizationpriority: medium
 ---
 
 # Storport's Interface with Storport Miniport Drivers

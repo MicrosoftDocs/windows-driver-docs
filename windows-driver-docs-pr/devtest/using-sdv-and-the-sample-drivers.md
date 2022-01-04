@@ -2,7 +2,6 @@
 title: Using SDV and the Sample Drivers
 description: Using SDV and the Sample Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using SDV and the Sample Drivers

@@ -2,7 +2,6 @@
 title: Getting More Information
 description: Getting More Information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Getting More Information

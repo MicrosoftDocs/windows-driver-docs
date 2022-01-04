@@ -4,7 +4,6 @@ description: Receiving Notifications
 keywords:
 - notifications WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving Notifications

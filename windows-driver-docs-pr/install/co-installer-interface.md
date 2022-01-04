@@ -5,7 +5,6 @@ keywords:
 - co-installers WDK device installations , interface
 - interface WDK co-installer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Co-installer Interface

@@ -9,7 +9,6 @@ api_name:
 - locks ( ntsdexts.locks)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !locks (!ntsdexts.locks)

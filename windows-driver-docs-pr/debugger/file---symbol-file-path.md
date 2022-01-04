@@ -3,7 +3,6 @@ title: File Symbol File Path
 description: File Symbol File Path
 keywords: ["File Symbol File Path", "symbol files and paths, File Symbol File Path"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Symbol File Path

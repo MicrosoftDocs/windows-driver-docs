@@ -5,7 +5,6 @@ keywords:
 - IPsecOV2 WDK TCP/IP transport , receiving data
 - receiving data WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving Network Data with IPsec Offload Version 2

@@ -4,7 +4,6 @@ description: Power-up sequence for a NetAdapterCx client driver
 keywords:
 - Power-up sequence for a NetAdapterCx client driver, Power-up sequence for a NetAdapterCx client driver, Power-up sequence for a NetCx client driver
 ms.date: 08/07/2018
-ms.localizationpriority: medium
 ---
 
 # Power-up sequence for a NetAdapterCx client driver

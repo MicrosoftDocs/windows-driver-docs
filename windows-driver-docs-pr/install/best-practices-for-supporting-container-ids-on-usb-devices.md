@@ -2,7 +2,6 @@
 title: Best Practices for Supporting Container IDs on USB Devices
 description: Best Practices for Supporting Container IDs on USB Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Best Practices for Supporting Container IDs on USB Devices

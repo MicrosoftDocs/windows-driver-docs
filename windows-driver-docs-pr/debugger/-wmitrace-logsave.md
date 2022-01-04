@@ -9,7 +9,6 @@ api_name:
 - wmitrace.logsave
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wmitrace.logsave

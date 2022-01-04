@@ -9,7 +9,6 @@ api_name:
 - doublefetch
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleFetch rule (wdm)

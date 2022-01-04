@@ -3,7 +3,6 @@ title: Displaying RPC State Information
 description: Displaying RPC State Information
 keywords: ["RPC debugging, displaying RPC state information"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying RPC State Information

@@ -4,7 +4,6 @@ description: This section describes filtering condition identifiers.
 keywords:
 - Filtering condition identifiers network drivers
 ms.date: 11/08/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering condition identifiers

@@ -6,7 +6,6 @@ keywords:
 - request processing WDK UMDF , completing requests
 - completing I/O requests WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Completing I/O Requests in UMDF

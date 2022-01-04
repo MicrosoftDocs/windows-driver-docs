@@ -2,7 +2,6 @@
 title: PROPSETID\_VIDCAP\_CROSSBAR
 description: PROPSETID\_VIDCAP\_CROSSBAR
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PROPSETID\_VIDCAP\_CROSSBAR

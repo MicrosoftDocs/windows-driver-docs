@@ -2,7 +2,6 @@
 title: Adding New Digital Formats to Control Panel
 description: Adding New Digital Formats to Control Panel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding New Digital Formats to Control Panel

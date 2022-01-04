@@ -4,7 +4,6 @@ description: Direct3D Implementation Requirements
 keywords:
 - Direct3D WDK Windows 2000 display , requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D Implementation Requirements

@@ -9,7 +9,6 @@ keywords:
 - DirectX Video Acceleration WDK DirectX 9.0
 - DirectX Video Acceleration WDK DirectX 9.0 , 2D operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using DXVA with 2D Operations

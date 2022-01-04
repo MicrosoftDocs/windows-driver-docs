@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 09/28/2021
-ms.localizationpriority: medium
 ---
 
 # Name Element for DeviceCondition and ConditionHistoryEntry element

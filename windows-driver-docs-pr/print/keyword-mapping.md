@@ -2,7 +2,6 @@
 title: Keyword Mapping
 description: Keyword Mapping
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Keyword Mapping

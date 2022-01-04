@@ -3,7 +3,6 @@ title: Creating Reliable Kernel-Mode Drivers
 description: Creating Reliable Kernel-Mode Drivers
 keywords: ["kernel-mode drivers WDK , reliability", "reliability WDK kernel", "reliability WDK kernel , about reliable drivers", "IRPs WDK kernel , reliability issues"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Reliable Kernel-Mode Drivers

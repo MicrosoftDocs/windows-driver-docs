@@ -7,7 +7,6 @@ keywords:
 - request processing WDK KMDF , file objects
 - framework objects WDK KMDF , file objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework File Objects

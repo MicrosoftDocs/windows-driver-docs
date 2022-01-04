@@ -3,7 +3,6 @@ title: Device power management reference
 description: Describes DDIs that drivers can use to divide their device hardware into multiple logical components to enable fine-grained power management
 keywords: [AcceptDeviceNotification]
 ms.date: 12/17/2018
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

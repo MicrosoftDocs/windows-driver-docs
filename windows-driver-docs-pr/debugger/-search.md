@@ -9,7 +9,6 @@ api_name:
 - search
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !search

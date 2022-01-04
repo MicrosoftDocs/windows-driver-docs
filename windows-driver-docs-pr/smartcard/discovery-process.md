@@ -2,7 +2,6 @@
 title: Discovery Process
 description: Discovery Process
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Discovery Process

@@ -4,7 +4,6 @@ description: Specifying GDI Hardware-Accelerated Rendering Operations
 keywords:
 - rendering operations with GDI hardware acceleration WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying GDI Hardware-Accelerated Rendering Operations

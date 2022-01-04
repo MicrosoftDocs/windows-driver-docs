@@ -9,7 +9,6 @@ keywords:
 - GUIDs WDK audio
 - wave-format tags WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting Between Format Tags and Subformat GUIDs

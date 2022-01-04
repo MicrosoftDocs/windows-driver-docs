@@ -5,7 +5,6 @@ keywords:
 - bidirectional communication schema WDK print
 - bidi communication schema WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Constructing a Bidi Communication Schema Query

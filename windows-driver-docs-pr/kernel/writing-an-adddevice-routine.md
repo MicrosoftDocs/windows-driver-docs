@@ -3,7 +3,6 @@ title: Writing an AddDevice Routine
 description: Writing an AddDevice Routine
 keywords: ["standard driver routines WDK kernel , AddDevice routines", "driver routines WDK kernel , AddDevice routines", "routines WDK kernel , AddDevice routines", "AddDevice routines WDK kernel", "system-space memory allocations WDK kernel", "system resource storage WDK kernel", "storing system resources", "device objects WDK kernel , creating", "device initialization WDK kernel", "initializing devices", "AddDevice routines WDK kernel , about AddDevice routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Writing an AddDevice Routine

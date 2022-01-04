@@ -7,7 +7,6 @@ keywords:
 - ICD WDK display
 - installable client driver WDK display
 ms.date: 11/17/2021
-ms.localizationpriority: medium
 ---
 
 # Loading an OpenGL Installable Client Driver

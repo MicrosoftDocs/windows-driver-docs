@@ -3,7 +3,6 @@ title: Risks Entailed When Setting Breakpoints
 description: Risks Entailed When Setting Breakpoints
 keywords: ["breakpoints, risks"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Risks Entailed When Setting Breakpoints

@@ -2,7 +2,6 @@
 title: CODECAPI_SETALLDEFAULTS
 description: The CODECAPI_SETALLDEFAULTS property is used to reset all the internal settings of the minidriver to their default configurations.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # CODECAPI_SETALLDEFAULTS

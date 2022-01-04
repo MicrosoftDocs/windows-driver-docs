@@ -2,7 +2,6 @@
 title: Sample Toaster Driver Programming Tour
 description: This topic provides a code walkthrough of the Toaster sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Toaster Driver Programming Tour

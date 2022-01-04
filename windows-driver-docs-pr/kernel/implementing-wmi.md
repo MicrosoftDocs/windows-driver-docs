@@ -3,7 +3,6 @@ title: Implementing WMI
 description: Implementing WMI
 keywords: ["WMI WDK kernel", "Windows Management Instrumentation WDK kernel", "extensions WDK WMI", "measurement data WDK WMI", "instrumentation data WDK WMI", "user-mode WMI WDK", "WMI WDK user-mode", "Windows Management Instrumentation WDK user-mode", "kernel-mode drivers WDK , WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing WMI

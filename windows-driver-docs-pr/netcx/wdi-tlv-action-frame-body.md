@@ -4,7 +4,6 @@ description: WDI_TLV_ACTION_FRAME_BODY is a WiFiCx TLV that contains the body of
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_ACTION_FRAME_BODY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ACTION\_FRAME\_BODY (dot11wificxtypes.hpp)

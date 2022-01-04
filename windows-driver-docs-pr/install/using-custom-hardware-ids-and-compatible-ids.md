@@ -2,7 +2,6 @@
 title: Using Custom Hardware IDs and Compatible IDs
 description: Using Custom Hardware IDs and Compatible IDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Custom Hardware IDs and Compatible IDs

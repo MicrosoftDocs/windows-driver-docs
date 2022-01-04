@@ -3,7 +3,6 @@ title: Releasing Device and Controller Objects
 description: Before a driver deletes a device or controller object, it must release its references to external resources, such as pointers to other drivers' objects or to interrupt objects, that it stored in the corresponding device or controller extension.
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel", "releasing devices", "releasing controller objects", "device releases WDK kernel", "controller objects WDK kernel , releasing"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Releasing Device and Controller Objects

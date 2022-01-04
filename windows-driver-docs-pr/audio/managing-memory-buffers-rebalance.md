@@ -2,7 +2,6 @@
 title: Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations
 description: PnP rebalancing is used in certain PCI scenarios where memory resources need to be reallocated. Memory Buffers need to be managed properly to avoid issues.
 ms.date: 10/01/2020
-ms.localizationpriority: medium
 ---
 
 # Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations

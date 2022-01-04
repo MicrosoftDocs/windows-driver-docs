@@ -9,7 +9,6 @@ keywords:
 - I/O targets WDK KMDF
 - targets WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using I/O Targets

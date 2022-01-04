@@ -2,7 +2,6 @@
 title: Firmware Windows Engineering Guide (WEG)
 description: The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow through in implementing system firmware-related best practices.
 ms.date: 09/28/2021
-ms.localizationpriority: medium
 ---
 
 # Firmware Windows Engineering Guide (WEG)

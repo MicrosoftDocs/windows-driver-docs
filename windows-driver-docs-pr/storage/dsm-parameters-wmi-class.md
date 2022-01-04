@@ -1,7 +1,6 @@
 ---
 title: DSM\_PARAMETERS WMI Class
 description: DSM\_PARAMETERS WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

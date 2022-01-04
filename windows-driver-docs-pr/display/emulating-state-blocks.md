@@ -5,7 +5,6 @@ keywords:
 - emulating state blocks WDK display
 - state block emulation WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Emulating State Blocks

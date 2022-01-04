@@ -3,7 +3,6 @@ title: Writing Restart Records to a CLFS Stream
 description: Writing Restart Records to a CLFS Stream
 keywords: ["Common Log File System WDK kernel , restart records", "CLFS WDK kernel , restart records", "restart records WDK CLFS", "checkpoints WDK CLFS"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Writing Restart Records to a CLFS Stream

@@ -4,7 +4,6 @@ description: The NDIS_MDL_LINKAGE macro retrieves a pointer to the next MDL that
 ms.date: 07/18/2017
 keywords:
  - NDIS_MDL_LINKAGE macro Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_MDL\_LINKAGE macro

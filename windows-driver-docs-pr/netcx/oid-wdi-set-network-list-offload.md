@@ -4,7 +4,6 @@ description: The OID_WDI_SET_NETWORK_LIST_OFFLOAD command sets a list of preferr
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_NETWORK_LIST_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD (dot11wificxintf.h)

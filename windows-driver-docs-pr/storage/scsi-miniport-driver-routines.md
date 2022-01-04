@@ -5,7 +5,6 @@ keywords:
 - SCSI miniport drivers WDK storage , required routines
 - SCSI miniport drivers WDK storage , optional routines
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Required and Optional SCSI Miniport Driver Routines

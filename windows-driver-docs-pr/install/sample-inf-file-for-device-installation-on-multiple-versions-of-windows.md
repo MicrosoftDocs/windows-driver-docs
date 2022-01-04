@@ -2,7 +2,6 @@
 title: Sample INF File for Device Installation on Multiple Versions of Windows
 description: Sample INF File for Device Installation on Multiple Versions of Windows
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample INF File for Device Installation on Multiple Versions of Windows

@@ -4,7 +4,6 @@ description: Drivers can optionally handle an IRP_MJ_QUERY_INFORMATION request.
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_QUERY_INFORMATION Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_QUERY\_INFORMATION

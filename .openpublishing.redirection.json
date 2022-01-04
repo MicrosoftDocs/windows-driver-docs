@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "windows-driver-docs-pr/install/system-provided-device-installation-components.md",
+            "redirect_URL": "/windows-hardware/drivers/install/overview-of-device-and-driver-installation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/vendor-provided-device-installation-components.md",
+            "redirect_URL": "/windows-hardware/drivers/install/overview-of-device-and-driver-installation",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/commercial-release-certificate.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false
@@ -13,6 +23,16 @@
         {
             "source_path": "windows-driver-docs-pr/install/determining-an-spc-s-cross-certificate.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/device-installation-files.md",
+            "redirect_URL": "/windows-hardware/drivers/install/components-of-a-driver-package",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/driver-rank-ranges--windows-vista-and-later-.md",
+            "redirect_URL": "/windows-hardware/drivers/install/identifier-score--windows-vista-and-later-",
             "redirect_document_id": false
         },
         {
@@ -38,6 +58,11 @@
         {
             "source_path": "windows-driver-docs-pr/install/software-publisher-certificate.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/supplying-an-inf-file.md",
+            "redirect_URL": "/windows-hardware/drivers/install/components-of-a-driver-package",
             "redirect_document_id": false
         },
         {

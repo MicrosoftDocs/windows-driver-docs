@@ -6,7 +6,6 @@ keywords:
 - device installations WDK , about device installations
 - installing devices WDK , about device installations
 ms.date: 11/18/2021
-ms.localizationpriority: High
 ---
 
 # Overview of Device Installation

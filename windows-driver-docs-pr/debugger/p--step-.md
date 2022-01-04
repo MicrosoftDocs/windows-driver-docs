@@ -9,7 +9,6 @@ api_name:
 - p (Step)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # p (Step)

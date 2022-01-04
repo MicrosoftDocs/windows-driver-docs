@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_NICConfig WMI Class
 description: MSiSCSI\_NICConfig WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

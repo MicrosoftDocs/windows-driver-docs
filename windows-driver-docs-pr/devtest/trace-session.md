@@ -13,7 +13,6 @@ keywords:
 - process trace sessions WDK
 - reserved trace sessions WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trace Session

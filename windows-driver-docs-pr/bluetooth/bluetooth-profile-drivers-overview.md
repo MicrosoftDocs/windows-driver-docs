@@ -6,7 +6,6 @@ keywords:
 - remote connections WDK Bluetooth
 - connections WDK Bluetooth
 ms.date: 07/01/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to Bluetooth Profile Drivers

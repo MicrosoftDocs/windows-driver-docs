@@ -1,7 +1,6 @@
 ---
 title: Windows kernel routines reserved for system use
 description: Windows kernel routines reserved for system use
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

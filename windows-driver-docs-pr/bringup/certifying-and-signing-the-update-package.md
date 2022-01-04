@@ -2,7 +2,6 @@
 title: Certifying and signing the update package
 description: The firmware update is delivered as a driver package and must go through the same verification and signing processes as a regular driver package.
 ms.date: 08/18/2021
-ms.localizationpriority: medium
 ---
 
 # Certifying and signing the update package

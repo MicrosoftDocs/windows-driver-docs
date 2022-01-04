@@ -9,7 +9,6 @@ api_name:
 - wsle
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wsle

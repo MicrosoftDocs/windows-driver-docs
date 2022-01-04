@@ -4,7 +4,6 @@ description: Best Practices
 keywords:
 - contexts WDK file system minifilter , best practices
 ms.date: 01/20/2021
-ms.localizationpriority: medium
 ---
 
 # Filter context best practices

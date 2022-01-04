@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_IHV_KEY is a WiFiCx TLV that contains an IHV key
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_IHV_KEY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_IHV\_KEY (dot11wificxtypes.hpp)

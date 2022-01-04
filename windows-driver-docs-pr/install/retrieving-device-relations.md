@@ -2,7 +2,6 @@
 title: Retrieving Device Relations
 description: Retrieving Device Relations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving Device Relations

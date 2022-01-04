@@ -3,7 +3,6 @@ title: Introduction to Cancel Routines
 description: Introduction to Cancel Routines
 keywords: ["canceling IRPs, about canceling IRPs", "Cancel routines, about Cancel routines", "associated IRP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Cancel Routines

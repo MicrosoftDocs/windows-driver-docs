@@ -2,7 +2,6 @@
 title: Using NDIS 6.30 Data Structures
 description: Using NDIS 6.30 Data Structures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using NDIS 6.30 Data Structures

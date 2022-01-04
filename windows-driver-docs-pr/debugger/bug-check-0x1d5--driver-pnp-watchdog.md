@@ -9,7 +9,6 @@ api_name:
 - DRIVER_PNP_WATCHDOG
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D5: DRIVER\_PNP\_WATCHDOG

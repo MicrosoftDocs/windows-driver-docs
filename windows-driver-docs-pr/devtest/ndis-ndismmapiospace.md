@@ -9,7 +9,6 @@ api_name:
 - NdisMMapIoSpace
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisMMapIoSpace rule (ndis)

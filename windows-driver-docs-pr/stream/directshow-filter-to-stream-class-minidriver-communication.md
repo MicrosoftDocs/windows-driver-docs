@@ -5,7 +5,6 @@ keywords:
 - filter graph configurations WDK video capture , DirectShow
 - DirectShow WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectShow Filter to Stream Class Minidriver Communication

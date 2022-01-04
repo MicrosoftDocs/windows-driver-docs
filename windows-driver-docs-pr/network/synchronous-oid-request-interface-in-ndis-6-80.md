@@ -3,7 +3,6 @@ title: Synchronous OID request interface in NDIS 6.80
 description: This topic describes the new Synchronous OID request interface in NDIS 6.80
 keywords: Synchronous OID Requests Interface, Synchronous OID call, WDK Synchronous OIDs, Synchronous OID request
 ms.date: 09/28/2017
-ms.localizationpriority: medium
 ---
 
 # Synchronous OID request interface in NDIS 6.80

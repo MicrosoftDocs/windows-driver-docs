@@ -1,7 +1,6 @@
 ---
 title: Passive and Active Cooling Modes
 description: Starting with Windows 8, devices that have thermal management capabilities can expose these capabilities to the operating system through the GUID_THERMAL_COOLING_INTERFACE driver interface.
-ms.localizationpriority: medium
 ms.date: 07/22/2021
 ---
 

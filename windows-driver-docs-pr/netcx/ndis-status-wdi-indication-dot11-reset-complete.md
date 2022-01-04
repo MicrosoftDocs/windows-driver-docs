@@ -4,7 +4,6 @@ description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_DOT11_RESET_COMPLETE 
 ms.date: 07/31/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DOT11_RESET_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_DOT11\_RESET\_COMPLETE (dot11wificxintf.h)

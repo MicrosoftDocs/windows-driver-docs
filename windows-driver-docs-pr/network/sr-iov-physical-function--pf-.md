@@ -2,7 +2,6 @@
 title: SR-IOV Physical Function (PF)
 description: SR-IOV Physical Function (PF)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SR-IOV Physical Function (PF)

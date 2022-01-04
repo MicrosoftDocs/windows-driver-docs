@@ -2,7 +2,6 @@
 title: WinDbg Preview - Settings and workspaces
 description: This section describes how to setup the WinDbg preview debugger.
 ms.date: 01/16/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Settings and workspaces

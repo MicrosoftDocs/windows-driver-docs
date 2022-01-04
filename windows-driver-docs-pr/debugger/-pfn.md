@@ -9,7 +9,6 @@ api_name:
 - pfn
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pfn

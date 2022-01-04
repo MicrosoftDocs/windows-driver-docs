@@ -2,7 +2,6 @@
 title: Bundling the Core Driver with Your Package-Aware Driver
 description: Bundling the Core Driver with Your Package-Aware Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bundling the Core Driver with Your Package-Aware Driver

@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_SAR_CONFIG notification t
 ms.date: 08/17/2018
 keywords: 
  -NDIS_STATUS_WWAN_SAR_CONFIG Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_SAR_CONFIG

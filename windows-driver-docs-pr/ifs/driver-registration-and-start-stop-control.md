@@ -9,7 +9,6 @@ keywords:
 - Redirected Drive Buffering Subsystem WDK file systems , driver registration
 - driver registrations WDK RDBSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Registration and Start/Stop Control

@@ -9,7 +9,6 @@ api_name:
 - so (Set Kernel Debugging Options)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # so (Set Kernel Debugging Options)

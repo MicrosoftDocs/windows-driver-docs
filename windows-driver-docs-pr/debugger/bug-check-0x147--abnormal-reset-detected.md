@@ -9,7 +9,6 @@ api_name:
 - ABNORMAL_RESET_DETECTED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x147: ABNORMAL\_RESET\_DETECTED

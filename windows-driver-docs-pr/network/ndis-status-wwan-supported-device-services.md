@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_SUPPORTED_DEVICE_SERVICES
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_SUPPORTED_DEVICE_SERVICES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES

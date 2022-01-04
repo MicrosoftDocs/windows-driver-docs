@@ -3,7 +3,6 @@ title: AddDevice Routines in Function or Filter Drivers
 description: AddDevice Routines in Function or Filter Drivers
 keywords: ["function drivers WDK kernel", "filter drivers WDK kernel", "AddDevice routines WDK kernel , function drivers", "AddDevice routines WDK kernel , filter drivers"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # AddDevice Routines in Function or Filter Drivers

@@ -3,7 +3,6 @@ title: Types of Windows Drivers
 description: Types of Windows Drivers
 keywords: ["Windows drivers WDK , types", "drivers WDK , types", "kernel-mode drivers WDK , types", "highest-level drivers WDK", "intermediate drivers WDK kernel", "lowest-level drivers WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: High
 ---
 
 # Types of Windows Drivers

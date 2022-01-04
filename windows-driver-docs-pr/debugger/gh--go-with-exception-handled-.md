@@ -9,7 +9,6 @@ api_name:
 - gh (Go with Exception Handled)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # gh (Go with Exception Handled)

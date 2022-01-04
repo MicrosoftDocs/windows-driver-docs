@@ -2,7 +2,6 @@
 title: Properties for WIA File System Minidrivers
 description: Properties for WIA File System Minidrivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Properties for WIA File System Minidrivers

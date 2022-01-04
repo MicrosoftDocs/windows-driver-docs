@@ -2,7 +2,6 @@
 title: Windows 10 UVC camera implementation guide
 description: Outlines how to expose certain capabilities of a USB Video Class compliant camera to the applications through the inbox driver.
 ms.date: 08/04/2021
-ms.localizationpriority: medium
 ---
 
 # Windows 10 UVC camera implementation guide

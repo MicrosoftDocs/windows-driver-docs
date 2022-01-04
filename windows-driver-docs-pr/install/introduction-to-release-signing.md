@@ -2,7 +2,6 @@
 title: Introduction to Release-Signing
 description: Introduction to Release-Signing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Release-Signing

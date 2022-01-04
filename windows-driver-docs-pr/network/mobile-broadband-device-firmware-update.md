@@ -2,7 +2,6 @@
 title: Mobile Broadband Device Firmware Update
 description: This topic provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU).
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mobile Broadband Device Firmware Update

@@ -1,7 +1,6 @@
 ---
 title: iSCSI WMI Operations Classes
 description: iSCSI WMI Operations Classes
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

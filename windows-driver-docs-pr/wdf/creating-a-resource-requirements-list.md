@@ -8,7 +8,6 @@ keywords:
 - resource-requirements-list objects WDK KMDF
 - framework resource-requirements-list objects WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Resource Requirements List

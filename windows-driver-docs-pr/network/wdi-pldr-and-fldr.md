@@ -2,7 +2,6 @@
 title: WDI PLDR Recovery
 description: This section describes recovery of PLDR for WDI drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PLDR

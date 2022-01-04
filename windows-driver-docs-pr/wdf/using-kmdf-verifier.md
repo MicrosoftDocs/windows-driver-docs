@@ -2,7 +2,6 @@
 title: Using KMDF Verifier
 description: Using KMDF Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using KMDF Verifier

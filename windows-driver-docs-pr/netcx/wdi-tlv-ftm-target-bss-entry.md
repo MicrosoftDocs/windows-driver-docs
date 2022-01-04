@@ -4,7 +4,6 @@ description: WDI_TLV_FTM_TARGET_BSS_ENTRY is a WiFiCx TLV that contains informat
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_FTM_TARGET_BSS_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_FTM_TARGET_BSS_ENTRY (dot11wificxtypes.hpp)

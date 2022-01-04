@@ -4,7 +4,6 @@ description: This topic describes the OID_TCP_OFFLOAD_PARAMETERS object identifi
 keywords:
 - OID_TCP_OFFLOAD_PARAMETERS, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
 ms.date: 11/01/2017
-ms.localizationpriority: medium
 ---
 
 # OID_TCP_OFFLOAD_PARAMETERS

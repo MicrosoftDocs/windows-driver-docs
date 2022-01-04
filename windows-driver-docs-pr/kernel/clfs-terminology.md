@@ -4,7 +4,6 @@ description: The following list gives definitions of key terms used in the Commo
 Robots: noindex, nofollow
 keywords: ["Common Log File System WDK kernel , terminology", "CLFS WDK kernel , terminology"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # CLFS Terminology

@@ -3,7 +3,6 @@ title: Update submission data
 description: This method, in the Microsoft Hardware API, updates details of a submission.
 ms.topic: article
 ms.date: 04/05/2018
-ms.localizationpriority: medium
 ---
 
 # Update submission data 

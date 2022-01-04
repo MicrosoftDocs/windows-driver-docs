@@ -2,7 +2,6 @@
 title: CODECAPI_SUPPORTSEVENTS
 description: The CODECAPI_SUPPORTSEVENTS property is used to indicate whether the minidriver supports user-mode events.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # CODECAPI_SUPPORTSEVENTS

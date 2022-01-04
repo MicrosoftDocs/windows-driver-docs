@@ -11,7 +11,6 @@ keywords:
 - video decoding WDK DirectX VA , uncompressed video pixel formats
 - decoding video WDK DirectX VA , uncompressed video pixel formats
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pixel Formats for Uncompressed Video

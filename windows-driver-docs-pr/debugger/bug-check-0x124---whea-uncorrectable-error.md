@@ -9,7 +9,6 @@ api_name:
 - WHEA_UNCORRECTABLE_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.custom: contperf-fy22q1
 ---
 

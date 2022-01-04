@@ -3,7 +3,6 @@ title: Client and Server Examples
 description: Client and Server Examples
 keywords: ["remote debugging through the debugger, examples"]
 ms.date: 06/08/2020
-ms.localizationpriority: medium
 ---
 
 # Client and Server Examples

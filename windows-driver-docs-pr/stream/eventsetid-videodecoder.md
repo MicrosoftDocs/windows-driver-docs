@@ -2,7 +2,6 @@
 title: EVENTSETID_VIDEODECODER
 description: The EVENTSETID_VIDEODECODER event set notifies clients when a video decoder change event occurs
 ms.date: 10/11/2021
-ms.localizationpriority: medium
 ---
 
 # EVENTSETID_VIDEODECODER

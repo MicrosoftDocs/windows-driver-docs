@@ -1,7 +1,6 @@
 ---
 title: Start Firmware Update (Function Index 22)
 description: This function initiates a firmware update to a particular firmware slot.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

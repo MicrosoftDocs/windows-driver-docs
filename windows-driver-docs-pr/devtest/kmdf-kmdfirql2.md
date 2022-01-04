@@ -9,7 +9,6 @@ api_name:
 - KmdfIrql2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KmdfIrql2 rule (kmdf)

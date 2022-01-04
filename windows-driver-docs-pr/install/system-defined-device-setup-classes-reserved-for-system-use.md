@@ -1,7 +1,6 @@
 ---
 title: System-Defined Device Setup Classes Reserved for System Use
 description: System-Defined Device Setup Classes Reserved for System Use
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -4,7 +4,6 @@ description: WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES is a WiFiCx TLV that contains
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_EXTRA\_ASSOCIATION\_REQUEST\_IES (dot11wificxtypes.hpp)

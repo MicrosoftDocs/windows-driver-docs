@@ -6,7 +6,6 @@ keywords:
 - framework objects WDK UMDF , hierarchy
 - hierarchy WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Object Hierarchy

@@ -3,7 +3,6 @@ title: Setting Up AdapterControl Routines
 description: Describes how a driver's dispatch routine for a PnP IRP_MN_START_DEVICE request sets up an AdapterControl routine.
 keywords: ["AdapterControl routines, setting up", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Setting Up AdapterControl Routines

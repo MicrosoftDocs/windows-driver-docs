@@ -3,7 +3,6 @@ title: Enable exception logging
 description: Enable exception logging
 keywords: ["Enable exception logging (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable exception logging

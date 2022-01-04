@@ -12,7 +12,6 @@ keywords:
 - REQUEST_GET_ADDR_FROM_DEVICE_OBJECT
 - REQUEST_SET_DEVICE_XMIT_PROPERTIES
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Requests in IEEE 1394 Virtual Device Drivers

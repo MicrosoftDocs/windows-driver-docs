@@ -9,7 +9,6 @@ api_name:
 - .time (Display System Time)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .time (Display System Time)

@@ -10,7 +10,6 @@ keywords:
 - driver version numbers WDK audio
 - INF DriverVer Directive
 ms.date: 04/28/2021
-ms.localizationpriority: medium
 ---
 
 # INF Driver-Version Entry

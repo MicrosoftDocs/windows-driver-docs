@@ -5,7 +5,6 @@ keywords:
 - XPSDrv printer drivers WDK , color printing
 - color printing WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Improved Color Printing

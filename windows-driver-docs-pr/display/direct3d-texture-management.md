@@ -6,7 +6,6 @@ keywords:
 - Direct3D WDK Windows 2000 display , texture management
 - texture management WDK Direct3D , about texture management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D Texture Management

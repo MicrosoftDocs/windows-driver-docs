@@ -7,7 +7,6 @@ keywords:
 - OID requests WDK NDIS ports
 - associating OID requests WDK NDIS ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Port OID Requests

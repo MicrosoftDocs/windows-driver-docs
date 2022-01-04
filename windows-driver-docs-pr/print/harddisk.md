@@ -2,7 +2,6 @@
 title: HardDisk property
 description: The value entries for a hard disk installed in the device.
 ms.date: 09/07/2021
-ms.localizationpriority: medium
 ---
 
 # HardDisk property

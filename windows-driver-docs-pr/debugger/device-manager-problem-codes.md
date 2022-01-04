@@ -3,7 +3,6 @@ title: Device Manager Problem Codes
 description: Device Manager Problem Codes
 keywords: ["Plug and Play (PnP), device manager problem codes", "device manager problem codes", "CM_PROB_XXX"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Device Manager Problem Codes

@@ -9,7 +9,6 @@ keywords:
 - events WDK printer
 - print queues WDK , printer change notifications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Printer Change Notifications

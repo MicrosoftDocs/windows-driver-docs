@@ -9,7 +9,6 @@ api_name:
 - SymStore Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SymStore Command-Line Options

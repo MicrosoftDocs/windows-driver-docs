@@ -9,7 +9,6 @@ api_name:
 - .srcpath, .lsrcpath (Set Source Path)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .srcpath, .lsrcpath (Set Source Path)

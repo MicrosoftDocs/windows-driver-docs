@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfchildlist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfchildlist

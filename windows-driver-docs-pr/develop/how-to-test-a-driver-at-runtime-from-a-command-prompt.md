@@ -2,7 +2,6 @@
 title: How to test a driver at runtime from a Command Prompt
 description: The WDK provides device testing components that enable you to test a driver on a test computer on your network.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to test a driver at runtime from a Command Prompt

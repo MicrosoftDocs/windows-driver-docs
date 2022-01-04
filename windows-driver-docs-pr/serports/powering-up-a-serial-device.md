@@ -7,7 +7,6 @@ keywords:
 - turning on serial devices WDK
 - serial devices WDK , powering up
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Powering Up a Serial Device

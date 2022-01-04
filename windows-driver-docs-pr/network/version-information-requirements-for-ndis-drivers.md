@@ -4,7 +4,6 @@ description: Version Information Requirements for NDIS Drivers
 keywords:
 - NDIS version information WDK , NDIS responsibilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Version Information Requirements for NDIS Drivers

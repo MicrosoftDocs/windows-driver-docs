@@ -2,7 +2,6 @@
 title: Geometry Shader Stage
 description: Geometry Shader Stage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Geometry Shader Stage

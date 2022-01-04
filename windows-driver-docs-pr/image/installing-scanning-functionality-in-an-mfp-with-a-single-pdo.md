@@ -2,7 +2,6 @@
 title: Installing Scanning Functionality in an MFP with a Single PDO
 description: Installing Scanning Functionality in an MFP with a Single PDO
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Scanning Functionality in an MFP with a Single PDO

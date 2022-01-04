@@ -4,7 +4,6 @@ description: WDI_TLV_CANCEL_PARAMETERS is a TLV that contains parameters for OID
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CANCEL_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CANCEL\_PARAMETERS

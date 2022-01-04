@@ -9,7 +9,6 @@ api_name:
 - usb3kd.xhci_transferring
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.xhci\_transferring

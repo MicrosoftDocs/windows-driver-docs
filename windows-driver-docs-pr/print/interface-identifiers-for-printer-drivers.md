@@ -8,7 +8,6 @@ keywords:
 - identifiers WDK printer
 - GUIDs WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interface Identifiers for Printer Drivers

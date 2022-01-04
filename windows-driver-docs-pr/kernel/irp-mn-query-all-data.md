@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_QUERY_ALL_DATA' kernel-mode driver architec
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_ALL_DATA Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_ALL\_DATA

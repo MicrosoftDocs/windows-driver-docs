@@ -2,7 +2,6 @@
 title: Canceling a Data Transfer
 description: Canceling a Data Transfer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Canceling a Data Transfer

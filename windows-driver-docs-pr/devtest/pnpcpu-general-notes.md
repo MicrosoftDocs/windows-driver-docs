@@ -2,7 +2,6 @@
 title: PNPCPU General Notes
 description: PNPCPU General Notes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PNPCPU General Notes

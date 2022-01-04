@@ -2,7 +2,6 @@
 title: Testing Sensor Data Retrieval
 description: The Sensor Diagnostic Tool lets you test your driver and firmware support for data retrieval by invoking properties in the Sensor API.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing Sensor Data Retrieval

@@ -9,7 +9,6 @@ api_name:
 - scsikd.srbdata
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !scsikd.srbdata

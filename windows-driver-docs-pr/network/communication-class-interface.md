@@ -4,7 +4,6 @@ description: Communication Class Interface
 keywords:
 - communication
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Communication Class Interface

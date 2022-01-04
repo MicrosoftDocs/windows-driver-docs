@@ -10,7 +10,6 @@ keywords:
 - OPM WDK display , protection types
 - OPM WDK display , protection levels
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # OPM Terminology

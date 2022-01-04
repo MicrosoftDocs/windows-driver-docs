@@ -8,7 +8,6 @@ keywords:
 - states WDK video capture
 - state transitions WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # State Transitions

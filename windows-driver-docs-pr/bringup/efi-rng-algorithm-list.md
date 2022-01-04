@@ -11,7 +11,6 @@ api_name:
 api_type:
 - NA
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_RNG_ALGORITHM_LIST structure

@@ -9,7 +9,6 @@ keywords:
 - initiating reboots during device installations
 - restarting during device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Installations and System Restarts

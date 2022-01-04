@@ -2,7 +2,6 @@
 title: KSPROPSETID\_StreamInterface
 description: KSPROPSETID\_StreamInterface
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_StreamInterface

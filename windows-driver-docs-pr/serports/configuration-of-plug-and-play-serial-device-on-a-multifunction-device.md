@@ -10,7 +10,6 @@ keywords:
 - multifunction devices
 - multifunction devices WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface

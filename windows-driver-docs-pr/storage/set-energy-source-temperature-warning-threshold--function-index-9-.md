@@ -1,7 +1,6 @@
 ---
 title: Set Energy Source Temperature Warning Threshold (Function Index 9)
 description: This function sets the warning threshold for operating Energy Source (ES) temperature.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

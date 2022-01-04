@@ -5,7 +5,6 @@ keywords:
 - WMI SRBs WDK storage , SCSI Port WMI library
 - SCSI Port WMI library WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the SCSI Port WMI Library

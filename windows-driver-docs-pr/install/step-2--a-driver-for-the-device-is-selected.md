@@ -2,7 +2,6 @@
 title: Step 2 A Driver for the Device is Selected
 description: Step 2 A Driver for the Device is Selected
 ms.date: 11/18/2021
-ms.localizationpriority: medium
 ---
 
 # Step 2: A Driver Package for the Device is Selected

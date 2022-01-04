@@ -7,7 +7,6 @@ keywords:
 - video memory resource paging WDK display
 - paging buffers WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Paging Video Memory Resources

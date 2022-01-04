@@ -2,7 +2,6 @@
 title: Completing the NDIS Selective Suspend Idle Notification
 description: Completing the NDIS Selective Suspend Idle Notification
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Completing the NDIS Selective Suspend Idle Notification

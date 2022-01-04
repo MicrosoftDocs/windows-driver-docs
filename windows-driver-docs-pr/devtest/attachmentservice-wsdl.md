@@ -8,7 +8,6 @@ keywords:
 - WSDBIT tool WDK , services
 - WSDAPI Basic Interoperability Tool WDK , services
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AttachmentService WSDL

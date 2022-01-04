@@ -6,7 +6,6 @@ keywords:
 - debugger extensions WDK KMDF
 - debugging drivers WDK KMDF , debugger extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 #  Summary of Debugger Extensions in Wdfkd.dll

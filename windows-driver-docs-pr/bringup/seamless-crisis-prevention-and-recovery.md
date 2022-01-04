@@ -2,7 +2,6 @@
 title: Seamless crisis prevention and recovery
 description: If a firmware update fails, the results can be devastating.
 ms.date: 08/06/2018
-ms.localizationpriority: medium
 ---
 
 # Seamless crisis prevention and recovery

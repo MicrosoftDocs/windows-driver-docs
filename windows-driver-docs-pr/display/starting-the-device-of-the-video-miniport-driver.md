@@ -8,7 +8,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , initializing
 - initializing video miniport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting the Device of the Video Miniport Driver

@@ -4,7 +4,6 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_ASSOCIATION_PARAMET
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ASSOCIATION_PARAMETERS_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_PARAMETERS\_REQUEST

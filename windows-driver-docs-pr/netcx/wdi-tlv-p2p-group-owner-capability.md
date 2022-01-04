@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_GROUP_OWNER_CAPABILITY is a WiFiCx TLV that contains Wi
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_GROUP_OWNER_CAPABILITY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_GROUP\_OWNER\_CAPABILITY (dot11wificxtypes.hpp)

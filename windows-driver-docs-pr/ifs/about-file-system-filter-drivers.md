@@ -7,7 +7,6 @@ keywords:
 - what is a file system filter driver
 - file system filter drivers are not device drivers
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # About file system filter drivers

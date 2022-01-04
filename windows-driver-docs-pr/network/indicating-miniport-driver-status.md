@@ -7,7 +7,6 @@ keywords:
 - CoNDIS WDK networking , miniport drivers
 - miniport drivers WDK networking , CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Indicating Miniport Driver Status

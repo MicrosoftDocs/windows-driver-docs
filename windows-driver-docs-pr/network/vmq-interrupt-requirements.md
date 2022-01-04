@@ -2,7 +2,6 @@
 title: VMQ Interrupt Requirements
 description: VMQ Interrupt Requirements
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VMQ Interrupt Requirements

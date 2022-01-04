@@ -2,7 +2,6 @@
 title: Calling SetupWriteTextLog
 description: Calling SetupWriteTextLog
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling SetupWriteTextLog

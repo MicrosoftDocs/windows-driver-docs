@@ -5,7 +5,6 @@ keywords:
 - Storport drivers WDK , errors
 - errors WDK Storport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Status for High-Performance Buses and Adapters

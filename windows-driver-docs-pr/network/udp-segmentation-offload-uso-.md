@@ -7,7 +7,6 @@ keywords:
 - UDP Segmentation Offload (USO) WDK networking , about UDP Segmentation Offload (USO)
 - about UDP Segmentation Offload (USO)
 ms.date: 02/27/2020
-ms.localizationpriority: medium
 ---
 
 # UDP Segmentation Offload (USO)

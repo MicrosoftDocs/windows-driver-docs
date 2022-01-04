@@ -4,7 +4,6 @@ description: WDI_TLV_UNICAST_ALGORITHM_LIST is a TLV that contains an array of u
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_UNICAST_ALGORITHM_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_UNICAST\_ALGORITHM\_LIST

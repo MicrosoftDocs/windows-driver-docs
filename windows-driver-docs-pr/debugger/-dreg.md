@@ -9,7 +9,6 @@ api_name:
 - dreg
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dreg

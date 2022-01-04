@@ -2,7 +2,6 @@
 title: VirtualStorport rule set (Storport)
 description: Use these rules to verify that your driver correctly calls DDIs that are of particular interest to Storport virtual miniport (VMiniport) drivers.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # VirtualStorport rule set (Storport)

@@ -5,7 +5,6 @@ keywords:
 - IHV Extensions DLL WDK Native 802.11 , implementation guidelines
 - Native 802.11 IHV Extensions DLL WDK , implementation guidelines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Native 802.11 IHV Extensions DLL Implementation Guidelines

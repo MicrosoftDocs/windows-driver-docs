@@ -6,7 +6,6 @@ keywords:
 - multiple render targets WDK DirectX 9.0
 - simultaneous render targets WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rendering to Multiple Targets Simultaneously

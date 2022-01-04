@@ -9,7 +9,6 @@ api_name:
 - ReqNotCanceledLocal
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReqNotCanceledLocal rule (kmdf)

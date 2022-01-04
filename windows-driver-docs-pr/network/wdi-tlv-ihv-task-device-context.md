@@ -4,7 +4,6 @@ description: WDI_TLV_IHV_TASK_DEVICE_CONTEXT is a TLV that contains IHV-provided
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_IHV_TASK_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT

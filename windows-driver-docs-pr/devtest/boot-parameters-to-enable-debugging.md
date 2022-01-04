@@ -13,7 +13,6 @@ keywords:
 - USB 2.0 debugging connection WDK boot parameters
 - null-modem cable WDK boot parameters
 ms.date: 09/21/2020
-ms.localizationpriority: medium
 ---
 
 # Boot Parameters to Enable Debugging

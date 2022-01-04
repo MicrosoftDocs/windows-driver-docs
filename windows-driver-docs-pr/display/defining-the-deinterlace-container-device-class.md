@@ -5,7 +5,6 @@ keywords:
 - deinterlace container device WDK DirectX VA
 - container device WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining the Deinterlace Container Device Class

@@ -3,7 +3,6 @@ title: Accessing Memory by Virtual Address
 description: Accessing Memory by Virtual Address
 keywords: ["virtual address, accessing memory"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Memory by Virtual Address

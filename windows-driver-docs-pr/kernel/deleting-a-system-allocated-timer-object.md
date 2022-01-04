@@ -3,7 +3,6 @@ title: Deleting a System-Allocated Timer Object
 description: Starting with Windows 8.1, the ExDeleteTimer routine deletes a timer object that was created by the ExAllocateTimer routine.
 keywords: ["ExXxxTimer routines", "ExAllocateTimer", "ExDeleteTimer", "ExSetTimer", "ExCancelTimer", "ExTimerCallback", "ExTimerDeleteCallback", "EX_TIMER"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Deleting a System-Allocated Timer Object

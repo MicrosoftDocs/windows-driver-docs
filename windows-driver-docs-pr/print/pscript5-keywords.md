@@ -2,7 +2,6 @@
 title: Pscript5 Keywords
 description: Pscript5 Keywords
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pscript5 Keywords

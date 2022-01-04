@@ -2,7 +2,6 @@
 title: Mass Storage Driver
 description: Mass Storage Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mass Storage Driver

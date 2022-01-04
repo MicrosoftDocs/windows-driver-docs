@@ -2,7 +2,6 @@
 title: DeviceInfo
 description: Contains information about the device as a whole. Much of this data can be set by the user or administrator to personalize the device.
 ms.date: 08/31/2021
-ms.localizationpriority: medium
 ---
 
 # DeviceInfo

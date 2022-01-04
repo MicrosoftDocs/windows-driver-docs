@@ -9,7 +9,6 @@ keywords:
 - disconnections WDK Winsock Kernel
 - destination connections WDK Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disconnecting a Socket from a Destination

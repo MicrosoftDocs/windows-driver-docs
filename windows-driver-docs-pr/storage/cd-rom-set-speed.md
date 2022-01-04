@@ -12,7 +12,6 @@ keywords:
 - SET CD SPEED
 - SET STREAMING
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CD-ROM Set Speed

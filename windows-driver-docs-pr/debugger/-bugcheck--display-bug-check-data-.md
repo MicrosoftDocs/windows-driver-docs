@@ -9,7 +9,6 @@ api_name:
 - .bugcheck (Display Bug Check Data)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .bugcheck (Display Bug Check Data)

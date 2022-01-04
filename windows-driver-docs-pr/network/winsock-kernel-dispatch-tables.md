@@ -12,7 +12,6 @@ keywords:
 - connection-oriented sockets WDK Winsock Kernel
 - event callback functions WDK Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Dispatch Tables

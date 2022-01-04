@@ -8,7 +8,6 @@ keywords:
 - volumes WDK file system , device object I/O requests
 - device object I/O requests WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Device Object Attached to a Volume

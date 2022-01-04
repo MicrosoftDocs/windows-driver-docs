@@ -2,7 +2,6 @@
 title: WIA Item Properties for Feeder Scanners
 description: WIA Item Properties for Feeder Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Item Properties for Feeder Scanners

@@ -9,7 +9,6 @@ api_name:
 - IO_THREADPOOL_DEADLOCK_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1C5: IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP

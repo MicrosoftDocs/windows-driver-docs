@@ -6,7 +6,6 @@ keywords:
 - connection IDs WDK network redirectors
 - buffering state WDK network redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miscellaneous Network Mini-Redirector Routines

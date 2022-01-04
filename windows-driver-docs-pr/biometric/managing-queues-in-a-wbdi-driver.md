@@ -5,7 +5,6 @@ keywords:
 - biometric drivers WDK , managing queues
 - managing queues WDK biometric
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Queues in a WBDI Driver

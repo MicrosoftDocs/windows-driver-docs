@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdftagtracker
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdftagtracker

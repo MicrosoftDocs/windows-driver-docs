@@ -6,7 +6,6 @@ keywords:
 - DirectDraw surface pointers WDK Direct3D
 - surface pointers for DirectDraw WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pointers to DirectDraw Surfaces

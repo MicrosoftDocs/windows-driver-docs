@@ -4,7 +4,6 @@ description: IPrintOemPS2 COM Interface
 keywords:
 - IPrintOemPS2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrintOemPS2 COM Interface

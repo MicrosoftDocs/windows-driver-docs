@@ -4,7 +4,6 @@ description: WDI_TLV_LCI_REPORT_BODY is a WiFiCx TLV that contains the Location 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_LCI_REPORT_BODY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_LCI_REPORT_BODY (dot11wificxtypes.hpp)

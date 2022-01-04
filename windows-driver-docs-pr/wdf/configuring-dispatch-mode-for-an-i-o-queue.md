@@ -11,7 +11,6 @@ keywords:
 - parallel dispatch mode WDK UMDF
 - manual dispatch mode WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring Dispatch Mode for an I/O Queue

@@ -1,7 +1,6 @@
 ---
 title: MSFC\_PortEvent WMI Class
 description: MSFC\_PortEvent WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

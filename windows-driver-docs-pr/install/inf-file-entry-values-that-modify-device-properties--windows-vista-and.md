@@ -2,7 +2,6 @@
 title: INF File Entry Values That Modify Device Properties
 description: INF File Entry Values That Modify Device Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF File Entry Values That Modify Device Properties

@@ -9,7 +9,6 @@ keywords:
 - textures WDK DirectDraw , lost
 - lost textures WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Losing Driver-Managed Textures

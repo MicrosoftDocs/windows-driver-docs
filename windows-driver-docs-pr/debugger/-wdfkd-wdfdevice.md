@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfdevice
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdevice

@@ -2,7 +2,6 @@
 title: Achieving Compatibility with IStream Transfers
 description: Achieving Compatibility with IStream Transfers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Achieving Compatibility with IStream Transfers

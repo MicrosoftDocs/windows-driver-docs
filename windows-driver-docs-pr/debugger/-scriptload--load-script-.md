@@ -9,7 +9,6 @@ api_name:
 - .scriptload (Load Script)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .scriptload (Load Script)

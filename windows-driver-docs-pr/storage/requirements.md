@@ -2,7 +2,6 @@
 title: Silo driver system requirements
 description: Describes the requirements that the storage silo driver system meets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Silo driver system requirements

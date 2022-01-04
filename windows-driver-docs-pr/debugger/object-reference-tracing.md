@@ -3,7 +3,6 @@ title: Object Reference Tracing
 description: Object Reference Tracing
 keywords: ["Object Reference Tracing", "Object Reference Tracing, overview", "GFlags, Object Reference Tracing"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Object Reference Tracing

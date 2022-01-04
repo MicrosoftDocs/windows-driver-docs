@@ -7,7 +7,6 @@ keywords:
 - DVD decoder minidrivers WDK , writing
 - decoder minidrivers WDK DVD , writing
 ms.date: 06/16/2020
-ms.localizationpriority: medium
 ---
 
 # DVD Decoder Support in Windows

@@ -5,7 +5,6 @@ keywords:
 - finish-install actions WDK device installations
 - co-installers WDK device installations , finish-install actions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Example: Finish-Install Actions in a Co-installer

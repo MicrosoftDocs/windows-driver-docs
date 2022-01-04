@@ -2,7 +2,6 @@
 title: Managing Custom Switch Feature Status Information
 description: Managing Custom Switch Feature Status Information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Custom Switch Feature Status Information

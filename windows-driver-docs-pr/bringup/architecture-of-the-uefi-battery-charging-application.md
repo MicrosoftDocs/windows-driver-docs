@@ -2,7 +2,6 @@
 title: Architecture of the UEFI battery charging application
 description: Provides information about the design of the UEFI battery charging application provided by Microsoft for devices that run Windows 10 Mobile.
 ms.date: 08/16/2021
-ms.localizationpriority: medium
 ---
 
 # Architecture of the UEFI battery charging application provided by Microsoft

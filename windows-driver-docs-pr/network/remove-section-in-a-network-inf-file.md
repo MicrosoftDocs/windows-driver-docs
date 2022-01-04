@@ -6,7 +6,6 @@ keywords:
 - network INF files WDK , Remove section
 - Remove section WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Remove Section in a Network INF File

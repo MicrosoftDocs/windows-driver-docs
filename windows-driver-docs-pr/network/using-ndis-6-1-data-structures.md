@@ -5,7 +5,6 @@ keywords:
 - data structures WDK networking
 - NDIS WDK , structures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using NDIS 6.1 Data Structures

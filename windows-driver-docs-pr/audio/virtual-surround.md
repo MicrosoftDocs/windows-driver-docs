@@ -2,7 +2,6 @@
 title: Virtual Surround
 description: Virtual Surround
 ms.date: 11/07/2018
-ms.localizationpriority: medium
 ---
 
 # Virtual Surround

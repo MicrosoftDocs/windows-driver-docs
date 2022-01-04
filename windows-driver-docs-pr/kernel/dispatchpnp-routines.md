@@ -3,7 +3,6 @@ title: DispatchPnP Routines
 description: DispatchPnP Routines
 keywords: ["dispatch routines WDK kernel , DispatchPnP routine", "DispatchPnP routine", "PnP dispatch routines WDK kernel", "IRPs WDK kernel , Plug and Play dispatch routines", "Plug and Play dispatch routines WDK kernel", "IRP_MJ_PNP I/O function code"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DispatchPnP Routines

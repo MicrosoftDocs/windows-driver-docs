@@ -5,7 +5,6 @@ keywords:
 - SCSI miniport drivers WDK storage , errors
 - errors WDK SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Error Handling in SCSI Miniport Drivers

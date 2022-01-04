@@ -4,7 +4,6 @@ description: As a set, NDIS and overlying drivers use the OID_GEN_LINK_PARAMETER
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LINK_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_LINK\_PARAMETERS

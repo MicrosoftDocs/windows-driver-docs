@@ -6,7 +6,6 @@ keywords:
 - locked stream pointers WDK AVStream
 - unlocked stream pointers WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Locking and Unlocking Stream Pointers

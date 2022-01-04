@@ -4,7 +4,6 @@ description: Summary of NetAdapterCx objects
 keywords:
 - Summary of NetAdapterCx objects, NetCx summary of objects
 ms.date: 11/01/2018
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

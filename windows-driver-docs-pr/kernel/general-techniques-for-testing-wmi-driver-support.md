@@ -3,7 +3,6 @@ title: General Techniques for Testing WMI Driver Support
 description: General Techniques for Testing WMI Driver Support
 keywords: ["WMI WDK kernel , testing", "testing WMI support WDK kernel", "WMI WDM provider logs WDK", "errors WDK WMI", "provider logs WDK WMI", "events WDK WMI", "WMI WDK kernel , errors"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # General Techniques for Testing WMI Driver Support

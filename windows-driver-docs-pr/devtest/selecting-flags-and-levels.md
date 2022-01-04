@@ -9,7 +9,6 @@ keywords:
 - trace sessions WDK , flags
 - trace sessions WDK , levels
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Selecting Flags and Levels

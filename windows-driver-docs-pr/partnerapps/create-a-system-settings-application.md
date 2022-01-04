@@ -2,7 +2,6 @@
 title: Create a partner settings app
 description: Create a partner settings app
 ms.date: 08/12/2021
-ms.localizationpriority: medium
 ---
 
 # Create a partner settings app

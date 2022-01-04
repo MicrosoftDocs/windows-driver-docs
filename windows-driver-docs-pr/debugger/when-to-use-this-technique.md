@@ -2,7 +2,6 @@
 title: When to Use This Technique
 description: When to Use This Technique
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # When to Use This Technique

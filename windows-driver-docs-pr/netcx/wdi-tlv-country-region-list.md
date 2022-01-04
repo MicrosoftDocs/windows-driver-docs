@@ -4,7 +4,6 @@ description: WDI_TLV_COUNTRY_REGION_LIST is a WiFiCx TLV that contains a list of
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_COUNTRY_REGION_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_COUNTRY\_REGION\_LIST (dot11wificxtypes.hpp)

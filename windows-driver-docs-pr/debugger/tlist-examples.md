@@ -3,7 +3,6 @@ title: TList Examples
 description: TList Examples
 keywords: ["TList, TList examples"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # TList Examples

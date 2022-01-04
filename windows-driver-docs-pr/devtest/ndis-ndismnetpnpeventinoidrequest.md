@@ -9,7 +9,6 @@ api_name:
 - NdisMNetPnPEventInOIDRequest
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisMNetPnPEventInOIDRequest rule (ndis)

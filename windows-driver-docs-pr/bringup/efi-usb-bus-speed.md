@@ -2,7 +2,6 @@
 title: EFI_USB_BUS_SPEED
 description: The EFI_USB_BUS_SPEED enumeration contains values used to indicate the bus speed.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USB_BUS_SPEED

@@ -4,7 +4,6 @@ description: Controlling Color Management
 keywords:
 - color management WDK print , controlling
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling Color Management

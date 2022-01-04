@@ -7,7 +7,6 @@ keywords:
 - enumeration WDK print
 - ports WDK , Plug and Play for printers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Plug and Play Bus Enumerators

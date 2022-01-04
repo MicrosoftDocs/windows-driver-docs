@@ -2,7 +2,6 @@
 title: Smart Card Minidriver Versions
 description: Smart Card Minidrivers are written to conform to a specific version. New features and capabilities are introduced in each version.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Smart Card Minidriver Versions

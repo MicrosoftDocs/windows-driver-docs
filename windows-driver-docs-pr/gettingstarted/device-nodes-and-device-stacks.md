@@ -5,7 +5,6 @@ keywords:
 - device node
 - device stack
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device nodes and device stacks

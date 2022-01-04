@@ -2,7 +2,6 @@
 title: Introduction to COSA/APN database
 description: Introduction to COSA/APN database
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to COSA/APN database

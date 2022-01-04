@@ -2,7 +2,6 @@
 title: Room Correction
 description: Room Correction
 ms.date: 11/07/2018
-ms.localizationpriority: medium
 ---
 
 # Room Correction

@@ -9,7 +9,6 @@ api_name:
 - pct (Step to Next Call or Return)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # pct (Step to Next Call or Return)

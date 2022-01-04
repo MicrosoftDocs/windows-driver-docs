@@ -2,7 +2,6 @@
 title: Custom and Auto Page Sizes
 description: Custom and Auto Page Sizes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Custom and Auto Page Sizes

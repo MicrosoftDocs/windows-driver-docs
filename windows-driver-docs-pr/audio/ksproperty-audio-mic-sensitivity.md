@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 05/10/2018
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY

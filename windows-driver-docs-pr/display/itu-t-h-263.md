@@ -23,7 +23,6 @@ keywords:
 - reference picture selection WDK DirectX VA
 - prediction blocks WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ITU-T H.263

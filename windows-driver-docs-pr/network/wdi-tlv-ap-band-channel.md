@@ -4,7 +4,6 @@ description: WDI_TLV_AP_BAND_CHANNEL is a TLV that specifies access point band a
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_AP_BAND_CHANNEL Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_AP\_BAND\_CHANNEL

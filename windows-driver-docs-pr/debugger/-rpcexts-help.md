@@ -9,7 +9,6 @@ api_name:
 - rpcexts.help
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.help

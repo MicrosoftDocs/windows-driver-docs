@@ -3,7 +3,6 @@ title: Debug Break
 description: Debug Break
 keywords: ["Debug Break", "controlling the target, Debug Break"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Break

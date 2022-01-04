@@ -3,7 +3,6 @@ title: Accessing Global Variables
 description: Accessing Global Variables
 keywords: ["global variables", "global variables, accessing"]
 ms.date: 02/20/2020
-ms.localizationpriority: medium
 ---
 
 # Accessing Global Variables

@@ -2,7 +2,6 @@
 title: Buy hardware for using MITT
 description: To you use Multiple Interface Test Tool (MITT), order you need a MITT board and bus-specific adapter boards that plug into ports on the MITT board. The type of adapter board depends on the bus you want to test.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Buy hardware for using MITT

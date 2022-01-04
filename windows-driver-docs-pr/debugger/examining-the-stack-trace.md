@@ -3,7 +3,6 @@ title: Examining the Stack Trace
 description: Examining the Stack Trace
 keywords: ["Debugger Engine API, stack trace"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Examining the Stack Trace

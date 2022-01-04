@@ -2,7 +2,6 @@
 description: Resources (Windows Portable Device)
 title: Resources
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Resources

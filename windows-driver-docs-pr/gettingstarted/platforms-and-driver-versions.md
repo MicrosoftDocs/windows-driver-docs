@@ -2,7 +2,6 @@
 title: Writing drivers for different versions of Windows
 description: Writing drivers for different versions of Windows
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing drivers for different versions of Windows

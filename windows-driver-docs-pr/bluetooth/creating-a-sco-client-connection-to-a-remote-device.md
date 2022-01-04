@@ -6,7 +6,6 @@ keywords:
 - SCO profile drivers WDK Bluetooth
 - initiating SCO connections
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a SCO Client Connection to a Remote Device

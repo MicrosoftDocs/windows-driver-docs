@@ -2,7 +2,6 @@
 title: Error Record Persistence Mechanism
 description: Error Record Persistence Mechanism
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Error Record Persistence Mechanism

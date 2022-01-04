@@ -5,7 +5,6 @@ keywords:
 - UMDF objects WDK , listed
 - framework objects WDK UMDF , listed
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Objects

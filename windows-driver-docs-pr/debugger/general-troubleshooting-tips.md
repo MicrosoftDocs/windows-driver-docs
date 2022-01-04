@@ -3,7 +3,6 @@ title: General Tips for Blue Screens
 description: General Tips for Blue Screens
 keywords: ["bug check, troubleshooting"]
 ms.date: 03/30/2020
-ms.localizationpriority: medium
 ---
 
 # General Tips for Blue Screens

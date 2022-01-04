@@ -4,7 +4,6 @@ description: Introduction to Test-Signing
 keywords:
 - test signing driver packages WDK , about test signing driver packages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Test-Signing

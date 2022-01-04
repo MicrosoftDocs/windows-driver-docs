@@ -2,7 +2,6 @@
 title: Time stamp helper
 description: The time stamp helper function is used by v2 sensor drivers, and it's used with the sensor device driver software interface (DDSI).
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Time stamp helper

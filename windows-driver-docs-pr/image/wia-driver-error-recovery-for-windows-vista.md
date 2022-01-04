@@ -2,7 +2,6 @@
 title: WIA Driver Error Recovery
 description: WIA Driver Error Recovery
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Driver Error Recovery

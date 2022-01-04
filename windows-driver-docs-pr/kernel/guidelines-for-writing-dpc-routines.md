@@ -3,7 +3,6 @@ title: Guidelines for Writing DPC Routines
 description: Guidelines for Writing DPC Routines
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
 ms.date: 07/21/2021
-ms.localizationpriority: medium
 ---
 
 # Guidelines for Writing DPC Routines

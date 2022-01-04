@@ -4,7 +4,6 @@ description: Registry Settings for the Serial Service
 keywords:
 - Serial service WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Settings for the Serial Service

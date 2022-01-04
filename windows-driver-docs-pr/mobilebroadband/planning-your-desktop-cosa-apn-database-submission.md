@@ -2,7 +2,6 @@
 title: Planning your desktop COSA/APN database submission
 description: Planning your desktop COSA/APN database submission
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Planning your desktop COSA/APN database submission

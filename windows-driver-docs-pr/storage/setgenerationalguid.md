@@ -1,7 +1,6 @@
 ---
 title: SetGenerationalGuid
 description: SetGenerationalGuid
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

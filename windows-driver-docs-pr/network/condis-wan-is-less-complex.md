@@ -4,7 +4,6 @@ description: CoNDIS WAN Is Less Complex
 keywords:
 - CoNDIS WAN drivers WDK networking , benefits
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CoNDIS WAN Is Less Complex

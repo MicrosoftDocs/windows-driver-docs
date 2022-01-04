@@ -9,7 +9,6 @@ api_name:
 - BC_BLUETOOTH_VERIFIER_FAULT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBFE: BC\_BLUETOOTH\_VERIFIER\_FAULT

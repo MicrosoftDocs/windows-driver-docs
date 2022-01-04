@@ -2,7 +2,6 @@
 title: Exploring the Driver Options in the Wizard
 description: This topic explores the driver options in the first section of the Create a v4 Print Driver wizard.
 ms.date: 06/05/2020
-ms.localizationpriority: medium
 ---
 
 # Exploring the Driver Options in the Wizard

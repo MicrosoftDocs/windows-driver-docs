@@ -9,7 +9,6 @@ keywords:
 - DrvEnableDriver
 - drawing WDK GDI , cleanup
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Initialization and Cleanup

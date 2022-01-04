@@ -3,7 +3,6 @@ title: Bluetooth Radio Reset and Recovery
 description: Bluetooth radio automated error recovery mechanisms
 keywords: ["Bluetooth Radio Error Recovery", "Bluetooth PLDR"]
 ms.date: 09/18/2019
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Radio Reset and Recovery

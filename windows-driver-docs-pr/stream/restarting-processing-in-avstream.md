@@ -7,7 +7,6 @@ keywords:
 - resume processing WDK AVStream
 - pending status WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Restarting Processing in AVStream

@@ -2,8 +2,7 @@
 title: Enabling Postmortem Debugging
 description: This topic covers how to enable postmortem debugging
 keywords: debugging. debug, Windbg, postmortem debugging, just-in-time debugging, JIT debugging, AeDebug registry key
-ms.date: 09/17/2018
-ms.localizationpriority: medium
+ms.date: 12/15/2021
 ---
 
 # Enabling Postmortem Debugging
@@ -262,9 +261,7 @@ To uninstall ProcDump as the postmortem debugger, and restore the previous setti
 <Path>\procdump.exe -u
 ```
 
-The install and uninstall commands set both the 64-bit and 32-bit values on 64-bit platforms.
-
-ProcDump is a "packed" executable containing both the 32-bit and 64-bit version of application - as such, the same executable is used for both 32-bit and 64-bit. When ProcDump runs, it automatically switches the version, if the version running doesn't match the target process.
+For additional information on ProcDump, see [ProcDump](/sysinternals/downloads/procdump) and *Windows SysInternals Administrator's Reference* by Mark Russinovich and Aaron Margosis published by Microsoft Press.
 
 ## <span id="JIT"></span><span id="jit"></span> Just In Time (JIT) Debugging
 

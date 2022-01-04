@@ -2,7 +2,6 @@
 title: Queue States and Operations
 description: Queue States and Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Queue States and Operations

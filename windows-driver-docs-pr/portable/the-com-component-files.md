@@ -2,7 +2,6 @@
 description: The COM Component Files
 title: The COM Component Files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The COM Component Files

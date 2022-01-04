@@ -5,7 +5,6 @@ keywords:
 - AVStream WDK , writing minidrivers
 - minidrivers WDK AVStream , writing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing an AVStream Minidriver

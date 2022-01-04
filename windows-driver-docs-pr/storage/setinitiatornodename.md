@@ -1,7 +1,6 @@
 ---
 title: SetInitiatorNodeName
 description: SetInitiatorNodeName
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

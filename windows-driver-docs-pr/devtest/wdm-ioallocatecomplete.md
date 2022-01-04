@@ -9,7 +9,6 @@ api_name:
 - IoAllocateComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoAllocateComplete rule

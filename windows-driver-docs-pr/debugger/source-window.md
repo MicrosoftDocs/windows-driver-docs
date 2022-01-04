@@ -3,7 +3,6 @@ title: Source Code Debugging in WinDbg
 description: Source Code Debugging in WinDbg
 keywords: ["debugging information windows, Source windows", "Source windows", "source debugging, Source windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Source Code Debugging in WinDbg

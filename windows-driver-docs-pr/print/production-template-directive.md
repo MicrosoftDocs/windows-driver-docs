@@ -6,7 +6,6 @@ keywords:
 - constructs WDK GDL , valid combinations
 - templates WDK GDL , host template
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Production Template Directive

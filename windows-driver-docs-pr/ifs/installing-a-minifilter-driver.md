@@ -7,7 +7,6 @@ keywords:
 - filter drivers WDK , installing
 - minifilter drivers WDK , installing
 ms.date: 08/27/2020
-ms.localizationpriority: medium
 ---
 
 # Installing a filter driver

@@ -7,7 +7,6 @@ keywords:
 - alpha-blend combination WDK DirectX VA , about alpha-blend combination
 - blended pictures WDK DirectX VA , about alpha-blend combination
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Alpha-Blend Combination

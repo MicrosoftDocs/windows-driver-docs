@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DCIOpenProvider

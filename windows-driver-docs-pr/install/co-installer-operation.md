@@ -9,7 +9,6 @@ keywords:
 - DIF request co-installer example WDK
 - device-specific co-installers WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Co-installer Operation

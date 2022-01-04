@@ -2,7 +2,6 @@
 title: Obtaining an HDAUDIO_BUS_INTERFACE_V2 DDI Object
 description: Obtaining an HDAUDIO_BUS_INTERFACE_V2 DDI Object
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining an HDAUDIO\_BUS\_INTERFACE\_V2 DDI Object

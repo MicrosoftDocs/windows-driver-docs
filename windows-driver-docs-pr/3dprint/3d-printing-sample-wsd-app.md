@@ -2,7 +2,6 @@
 title: 3D printing sample WSD app
 description: This section contains detailed instructions for building and deploying the web service device (WSD) sample application with the included 3D print driver.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # 3D printing sample WSD app

@@ -6,7 +6,6 @@ keywords:
 - mirror drivers WDK Windows 2000 display
 - INF files WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mirror Driver INF File

@@ -4,7 +4,6 @@ description: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS is a WiFiCx TLV that contains th
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS (dot11wificxtypes.hpp)

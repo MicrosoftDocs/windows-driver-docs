@@ -2,7 +2,6 @@
 title: Using the Filter ID
 description: Using the Filter ID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Filter ID

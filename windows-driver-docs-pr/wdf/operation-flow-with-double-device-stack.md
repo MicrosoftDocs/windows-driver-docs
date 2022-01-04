@@ -7,7 +7,6 @@ keywords:
 - request processing WDK UMDF , operation flow
 - double device stack flow WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Operation Flow with Double Device Stack

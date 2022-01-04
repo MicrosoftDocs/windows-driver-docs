@@ -7,7 +7,6 @@ keywords:
 - power management WDK KMDF , about power management
 - device objects WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting PnP and Power Management in Your Driver

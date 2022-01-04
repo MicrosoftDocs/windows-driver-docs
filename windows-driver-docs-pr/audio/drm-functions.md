@@ -2,7 +2,6 @@
 title: DRM Functions
 description: DRM Functions
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DRM Functions

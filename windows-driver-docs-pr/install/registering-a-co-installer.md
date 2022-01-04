@@ -5,7 +5,6 @@ keywords:
 - co-installers WDK device installations , registering
 - registering co-installers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering a Co-installer

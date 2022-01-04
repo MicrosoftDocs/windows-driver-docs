@@ -2,7 +2,6 @@
 title: Receiving NET_BUFFER Structures in CoNDIS Drivers
 description: Receiving NET_BUFFER Structures in CoNDIS Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving NET\_BUFFER Structures in CoNDIS Drivers

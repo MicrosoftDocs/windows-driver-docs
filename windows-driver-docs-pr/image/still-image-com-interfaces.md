@@ -2,7 +2,6 @@
 title: Still Image COM Interfaces
 description: Still Image COM Interfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Still Image COM Interfaces

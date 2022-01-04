@@ -7,7 +7,6 @@ keywords:
 - extended surface capabilities WDK DirectDraw , heaps
 - heaps WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Heap Restrictions

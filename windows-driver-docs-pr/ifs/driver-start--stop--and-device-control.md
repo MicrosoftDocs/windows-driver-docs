@@ -6,7 +6,6 @@ keywords:
 - mini-redirectors WDK , stopping
 - mini-redirectors WDK , device controls
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Start, Stop, and Device Control

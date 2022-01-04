@@ -2,7 +2,6 @@
 title: Subscriber and Device Information API
 description: Subscriber and Device Information API
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Subscriber and Device Information API

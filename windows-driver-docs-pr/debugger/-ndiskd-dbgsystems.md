@@ -9,7 +9,6 @@ api_name:
 - ndiskd.dbgsystems
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.dbgsystems

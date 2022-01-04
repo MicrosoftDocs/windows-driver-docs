@@ -9,7 +9,6 @@ api_name:
 - ndiskd.netqueue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.netqueue

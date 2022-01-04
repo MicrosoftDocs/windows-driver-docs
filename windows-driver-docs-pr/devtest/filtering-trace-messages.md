@@ -9,7 +9,6 @@ keywords:
 - trace message filters WDK , about trace message filters
 - rules WDK software tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering Trace Messages

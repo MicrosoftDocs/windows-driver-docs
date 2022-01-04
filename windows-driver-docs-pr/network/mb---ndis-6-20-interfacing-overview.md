@@ -6,7 +6,6 @@ keywords:
 - mobile broadband (MB) WDK
 - mobile broadband (MB) WDK , NDIS 6.20 interfacing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB / NDIS 6.20 Interfacing Overview

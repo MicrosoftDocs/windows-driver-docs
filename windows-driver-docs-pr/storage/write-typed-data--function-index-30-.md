@@ -1,7 +1,6 @@
 ---
 title: Write Typed Data (Function Index 30)
 description: This function writes a 32-byte block inside a typed block data region.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -2,7 +2,6 @@
 title: Viewing and Editing Memory and Registers in Visual Studio
 description: The procedure covers Viewing and Editing Memory and Registers in Visual Studio.
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # Viewing and Editing Memory and Registers in Visual Studio

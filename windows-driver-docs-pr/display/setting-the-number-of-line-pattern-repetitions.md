@@ -4,7 +4,6 @@ description: Setting the Number of Line Pattern Repetitions
 keywords:
 - line pattern repetitions WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the Number of Line Pattern Repetitions

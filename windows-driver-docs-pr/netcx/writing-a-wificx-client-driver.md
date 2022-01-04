@@ -4,7 +4,6 @@ description: Describes the behavior of the WiFiCx class extension.
 keywords:
 - WiFiCx WDF class extension, WiFiCx, WiFi NetAdapterCx
 ms.date: 06/17/2021
-ms.localizationpriority: medium
 ---
 
 # Writing a WiFiCx client driver

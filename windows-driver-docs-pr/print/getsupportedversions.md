@@ -4,7 +4,6 @@ description: The IPrintTicketProvider GetSupportedVersions method returns the ma
 keywords:
 - GetSupportedVersions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GetSupportedVersions

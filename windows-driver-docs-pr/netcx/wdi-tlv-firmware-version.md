@@ -4,7 +4,6 @@ description: WDI_TLV_FIRMWARE_VERSION is a WiFiCx TLV that contains the firmware
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_FIRMWARE_VERSION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FIRMWARE\_VERSION (dot11wificxtypes.hpp)

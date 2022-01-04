@@ -1,18 +1,16 @@
 ---
-title: Driver Rank Example
-description: Driver Rank Example
+title: Driver Package ank Example
+description: Driver Package Rank Example
 keywords:
 - driver rank ranges WDK device installations
 - rank ranges WDK device installations
 - range ranking WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
-# Driver Rank Example
+# Driver Package Rank Example
 
-
-Consider a device that has the following lists of [device identification strings](device-identification-strings.md), where the HwID_*N* and CID_*N* names represent actual [hardware IDs](hardware-ids.md) and [compatible IDs](compatible-ids.md):
+Consider a device that has the following lists of [device identification strings](device-identification-strings.md), where the HwID_*N* and CID_*N* names are placeholders for actual [hardware IDs](hardware-ids.md) and [compatible IDs](compatible-ids.md):
 
 -   List of hardware IDs
     ```cpp
@@ -21,15 +19,15 @@ Consider a device that has the following lists of [device identification strings
 
 -   List of compatible IDs
     ```cpp
-    CID_1, and CID_2
+    CID_1, CID_2
     ```
 
 The first hardware ID in a list of hardware IDs is the most specific identifier for the device. In this example, that is HwID_1.
 
-Also assume there is an INF file that has an [**INF *Models* section**](inf-models-section.md) that has the following entry, where the INF_*XXX_N* names represent actual hardware IDs and compatible IDs:
+Also assume there is an [driver package](driver-packages.md) INF file that has an [**INF *Models* section**](inf-models-section.md) that has the following entry, where the INF_*XXX_N* names are placeholders for actual hardware IDs and compatible IDs:
 
 ```cpp
-DeviceDesc1 = InstallSection1, INF_HWID_1, INF_CID_1, INF_CID_2
+DeviceDesc1 = InstallSection1, INF_HwID_1, INF_CID_1, INF_CID_2
 ```
 
 In addition, assume that the INF *DDInstall* section named *InstallSection1* has the following **FeatureScore** directive, where the corresponding feature score of the driver is 0x00*GG*0000:
@@ -62,13 +60,13 @@ The following table lists the rank of each possible match between the identifier
 <p><b>HwID_1</b></p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>0000</p>
+<p>0x<i>SSGG</i>0000</p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>1000</p>
+<p>0x<i>SSGG</i>1000</p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>1000</p>
+<p>0x<i>SSGG</i>1000</p>
 </td>
 </tr>
 <tr>
@@ -76,13 +74,13 @@ The following table lists the rank of each possible match between the identifier
 <p><b>HwID_2</b></p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>0001</p>
+<p>0x<i>SSGG</i>0001</p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>1001</p>
+<p>0x<i>SSGG</i>1001</p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>1001</p>
+<p>0x<i>SSGG</i>1001</p>
 </td>
 </tr>
 <tr>
@@ -90,13 +88,13 @@ The following table lists the rank of each possible match between the identifier
 <p><b>CID_1</b></p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>2000</p>
+<p>0x<i>SSGG</i>2000</p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>3000</p>
+<p>0x<i>SSGG</i>3000</p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>3100</p>
+<p>0x<i>SSGG</i>3100</p>
 </td>
 </tr>
 <tr>
@@ -104,17 +102,13 @@ The following table lists the rank of each possible match between the identifier
 <p><b>CID_2</b></p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>2001</p>
+<p>0x<i>SSGG</i>2001</p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>3001</p>
+<p>0x<i>SSGG</i>3001</p>
 </td>
 <td>
-<p>Rank 0x<i>SSGG</i>3101</p>
+<p>0x<i>SSGG</i>3101</p>
 </td>
 </tr>
 </table>
-
- 
-
-

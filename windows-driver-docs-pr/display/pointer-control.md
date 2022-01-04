@@ -7,7 +7,6 @@ keywords:
 - pointers WDK Windows 2000 display
 - passing pointer information WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pointer Control

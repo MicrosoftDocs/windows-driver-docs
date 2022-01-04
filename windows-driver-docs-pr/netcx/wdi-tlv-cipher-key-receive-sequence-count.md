@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT is a WiFix TLV that conta
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_RECEIVE\_SEQUENCE\_COUNT (dot11wificxtypes.hpp)

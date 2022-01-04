@@ -10,7 +10,6 @@ keywords:
 - power states WDK networking
 - transitioning power states WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling an OID\_PNP\_QUERY\_POWER OID

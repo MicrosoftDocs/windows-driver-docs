@@ -2,7 +2,6 @@
 title: Basic Connectivity Log Filter
 description: TextAnalysisTool Filter for basic connectivity
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # Basic Connectivity Log Filter

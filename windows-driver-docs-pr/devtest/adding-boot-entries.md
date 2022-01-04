@@ -7,7 +7,6 @@ keywords:
 - adding boot entries
 - Boot.ini files WDK , adding boot entries
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Boot Entries

@@ -2,7 +2,6 @@
 description: Device Representation
 title: Device Representation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Representation

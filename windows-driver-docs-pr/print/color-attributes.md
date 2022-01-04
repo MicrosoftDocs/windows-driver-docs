@@ -5,7 +5,6 @@ keywords:
 - color attributes WDK Unidrv
 - general printer attributes WDK Unidrv , color
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Color Attributes

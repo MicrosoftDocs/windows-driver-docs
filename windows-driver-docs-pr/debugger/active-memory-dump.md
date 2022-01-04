@@ -2,7 +2,6 @@
 title: Active Memory Dump
 description: Active Memory Dump
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Active Memory Dump

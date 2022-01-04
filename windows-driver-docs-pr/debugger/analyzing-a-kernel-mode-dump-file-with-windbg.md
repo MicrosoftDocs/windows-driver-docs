@@ -3,7 +3,6 @@ title: Analyzing a Kernel-Mode Dump File with WinDbg
 description: Analyzing a Kernel-Mode Dump File with WinDbg
 keywords: ["WinDbg, analyzing a kernel-mode dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with WinDbg"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Analyzing a Kernel-Mode Dump File with WinDbg

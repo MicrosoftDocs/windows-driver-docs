@@ -5,7 +5,6 @@ keywords:
 - WAN miniport drivers WDK networking , building
 - CoNDIS WAN drivers WDK networking , building
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WAN Miniport Driver Build Parameters

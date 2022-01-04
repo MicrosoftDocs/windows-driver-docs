@@ -4,7 +4,6 @@ description: As a query, overlying drivers can use the OID_GEN_RECEIVE_SCALE_CAP
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RECEIVE_SCALE_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES

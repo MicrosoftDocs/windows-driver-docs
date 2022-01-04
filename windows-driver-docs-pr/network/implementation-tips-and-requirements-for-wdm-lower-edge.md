@@ -6,7 +6,6 @@ keywords:
 - lower edge of NDIS miniport drivers WDK networking , driver implemention
 - WDM lower edge WDK networking , driver implemention
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementation Tips and Requirements for WDM Lower Edge

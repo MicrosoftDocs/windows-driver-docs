@@ -3,7 +3,6 @@ title: Remote.exe Batch Files
 description: Remote.exe Batch Files
 keywords: ["remote debugging through remote.exe, batch files"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Remote.exe Batch Files

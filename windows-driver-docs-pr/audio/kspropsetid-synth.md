@@ -3,7 +3,6 @@ title: KSPROPSETID\_Synth
 description: KSPROPSETID\_Synth
 keywords: ["KSPROPSETID_Synth"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Synth

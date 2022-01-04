@@ -8,7 +8,6 @@ keywords:
 - manual radio tuning WDK video capture
 - FM tuners WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Capture Devices with Radio Tuners

@@ -13,7 +13,6 @@ keywords:
 - power states WDK KMDF
 - device power states WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power Management for I/O Queues

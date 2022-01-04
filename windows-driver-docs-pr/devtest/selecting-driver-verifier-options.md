@@ -4,7 +4,6 @@ description: Selecting Driver Verifier Options
 keywords:
 - Driver Verifier WDK , option selections
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Selecting Driver Verifier Options

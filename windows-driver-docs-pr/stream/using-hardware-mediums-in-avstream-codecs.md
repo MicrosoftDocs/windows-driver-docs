@@ -4,7 +4,6 @@ description: Using Hardware Mediums in AVStream Codecs
 keywords:
 - AVStream hardware codec support WDK , using hardware mediums
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Hardware Mediums in AVStream Codecs

@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /hypervisorsettings
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /hypervisorsettings

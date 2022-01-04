@@ -11,7 +11,6 @@ keywords:
 - drained I/O queue state WDK KMDF
 - purged I/O queue state WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # I/O Queue States

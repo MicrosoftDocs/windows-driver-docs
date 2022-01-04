@@ -2,7 +2,6 @@
 description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device.
 title: Talking to USB devices, start to finish (UWP app)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Talking to USB devices, start to finish (UWP app)

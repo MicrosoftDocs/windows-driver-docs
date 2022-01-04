@@ -9,7 +9,6 @@ api_name:
 - StorPortIrql
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortIrql rule (storport)

@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /toolsdisplayorder
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /toolsdisplayorder

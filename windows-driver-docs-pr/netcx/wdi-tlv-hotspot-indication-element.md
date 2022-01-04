@@ -4,7 +4,6 @@ description: WDI_TLV_HOTSPOT_INDICATION_ELEMENT is a WiFiCx TLV that contains a 
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_HOTSPOT_INDICATION_ELEMENT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT (dot11wificxtypes.hpp)

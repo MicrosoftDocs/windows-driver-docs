@@ -2,7 +2,6 @@
 title: Moving a Receive Filter to a Virtual Port
 description: Moving a Receive Filter to a Virtual Port
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Moving a Receive Filter to a Virtual Port

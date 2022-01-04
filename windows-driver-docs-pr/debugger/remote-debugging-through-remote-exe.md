@@ -3,7 +3,6 @@ title: Remote Debugging Through Remote.exe
 description: Remote Debugging Through Remote.exe
 keywords: ["remote debugging through remote.exe", "remote debugging through remote.exe, overview", "Remote.exe", "Remote.exe, overview", "Remote.exe, Remote.exe Client", "Remote.exe, Remote.exe Server"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Remote Debugging Through Remote.exe

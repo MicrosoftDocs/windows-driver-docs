@@ -6,7 +6,6 @@ keywords:
 - deblocking filter control WDK DirectX VA
 - chrominance prediction blocks WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deblocking Filter Control

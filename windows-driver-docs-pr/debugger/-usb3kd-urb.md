@@ -9,7 +9,6 @@ api_name:
 - usb3kd.urb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.urb

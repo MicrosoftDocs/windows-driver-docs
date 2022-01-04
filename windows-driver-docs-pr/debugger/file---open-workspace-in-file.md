@@ -3,7 +3,6 @@ title: File Open Workspace in File
 description: File Open Workspace in File
 keywords: ["File Open Workspace in File", "workspaces, File Open Workspace in File"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Open Workspace in File

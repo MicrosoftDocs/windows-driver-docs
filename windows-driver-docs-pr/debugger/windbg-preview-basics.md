@@ -2,7 +2,6 @@
 title: WinDbg Preview Basics 
 description: This section describes the basic capabilities of WinDbg preview debugger.
 ms.date: 05/02/2019
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview Basics

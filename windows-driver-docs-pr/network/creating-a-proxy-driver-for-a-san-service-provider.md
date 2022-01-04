@@ -9,7 +9,6 @@ keywords:
 - SAN proxy drivers WDK , about SAN proxy drivers
 - SAN service providers WDK , proxy drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Proxy Driver for a SAN Service Provider

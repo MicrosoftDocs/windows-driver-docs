@@ -3,7 +3,6 @@ title: Providing Storage for Spin Locks and Protected Data
 description: Providing Storage for Spin Locks and Protected Data
 keywords: ["storage WDK spin locks", "storing spin-lock-protected data", "spin locks WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Providing Storage for Spin Locks and Protected Data

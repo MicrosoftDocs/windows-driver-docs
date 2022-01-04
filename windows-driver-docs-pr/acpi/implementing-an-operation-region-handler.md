@@ -7,7 +7,6 @@ keywords:
 - function drivers WDK ACPI , operation regions
 - WDM function drivers WDK ACPI , operation regions
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Implementing an Operation Region Handler

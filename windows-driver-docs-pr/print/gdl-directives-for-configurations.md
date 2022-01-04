@@ -15,7 +15,6 @@ keywords:
 - InvalidCombinations directive WDK GDL
 - configurations WDK GDL , directives
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Directives for Configurations

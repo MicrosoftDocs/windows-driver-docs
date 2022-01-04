@@ -4,7 +4,6 @@ description: Requirements for Vendor-Supplied Parallel Drivers
 keywords:
 - vendor-supplied parallel drivers WDK , about vendor-supplied parallel drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requirements for Vendor-Supplied Parallel Drivers

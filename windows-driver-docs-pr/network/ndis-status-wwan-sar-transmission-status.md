@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS n
 ms.date: 08/20/2018
 keywords: 
  -NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS

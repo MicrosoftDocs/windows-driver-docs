@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/08/2020
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE (submode)

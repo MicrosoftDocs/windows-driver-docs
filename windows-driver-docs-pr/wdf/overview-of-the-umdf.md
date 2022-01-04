@@ -11,7 +11,6 @@ keywords:
 - stacks WDK UMDF
 - device stacks WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of UMDF

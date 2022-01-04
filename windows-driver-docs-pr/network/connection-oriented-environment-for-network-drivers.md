@@ -8,7 +8,6 @@ keywords:
 - miniport call managers WDK networking , connection-oriented environment
 - MCMs WDK networking , connection-oriented environment
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection-Oriented Environment for Network Drivers

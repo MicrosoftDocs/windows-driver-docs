@@ -4,7 +4,6 @@ description: WDI_TLV_NEIGHBOR_REPORT_ENTRY is a TLV that contains a neighbor rep
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_NEIGHBOR_REPORT_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY

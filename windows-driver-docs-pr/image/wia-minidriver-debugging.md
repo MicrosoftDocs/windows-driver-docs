@@ -2,7 +2,6 @@
 title: WIA Minidriver Debugging
 description: WIA Minidriver Debugging
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Minidriver Debugging

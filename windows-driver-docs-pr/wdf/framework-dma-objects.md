@@ -11,7 +11,6 @@ keywords:
 - enabler objects WDK KMDF
 - transaction objects WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework DMA Objects

@@ -3,7 +3,6 @@ title: High-Resolution Timers
 description: Starting with Windows 8.1, drivers can use the ExXxxTimer routines to manage high-resolution timers.
 keywords: ["high-resolution timers", "timer accuracy", "timer resolution", "system clock granularity", "EX_TIMER_HIGH_RESOLUTION", "ExXxxTimer routines", "ExQueryTimerResolution", "ExSetTimerResolution"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # High-Resolution Timers

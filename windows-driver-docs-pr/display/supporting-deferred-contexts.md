@@ -7,7 +7,6 @@ keywords:
 - deferred contexts WDK Windows 7 display
 - deferred contexts WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Deferred Contexts

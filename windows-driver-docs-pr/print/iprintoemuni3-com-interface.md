@@ -4,7 +4,6 @@ description: IPrintOemUni3 COM Interface
 keywords:
 - IPrintOemUni3
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrintOemUni3 COM Interface

@@ -9,7 +9,6 @@ api_name:
 - ndiskd.ndisslot
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndisslot

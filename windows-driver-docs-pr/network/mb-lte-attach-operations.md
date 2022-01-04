@@ -2,7 +2,6 @@
 title: MB LTE Attach Operations
 description: MB LTE Attach Operations
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB LTE Attach Operations

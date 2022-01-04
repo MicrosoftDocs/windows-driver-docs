@@ -8,7 +8,6 @@ keywords:
 - DirectSound WDK audio , about DirectSound
 - miniport drivers WDK audio , DirectSound
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Support for DirectSound

@@ -5,7 +5,6 @@ keywords:
 - Tracefmt WDK , sequence numbers
 - sequence numbers WDK Tracefmt
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 4: Sequence Numbers

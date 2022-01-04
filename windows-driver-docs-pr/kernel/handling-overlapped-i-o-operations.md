@@ -3,7 +3,6 @@ title: Handling Overlapped I/O Operations
 description: Handling Overlapped I/O Operations
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc", "overlapped I/O WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Overlapped I/O Operations

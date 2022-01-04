@@ -2,7 +2,6 @@
 title: Microdriver Functions
 description: Microdriver Functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Microdriver Functions

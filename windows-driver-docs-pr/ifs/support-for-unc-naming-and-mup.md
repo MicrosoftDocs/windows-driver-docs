@@ -13,7 +13,6 @@ keywords:
 - serial prefix resolution WDK network redirectors
 - parallel prefix resolution WDK network redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Support for UNC Naming and MUP

@@ -3,7 +3,6 @@ title: Debug Go
 description: Debug Go
 keywords: ["Debug Go", "controlling the target, Debug Go"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Go

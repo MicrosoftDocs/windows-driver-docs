@@ -3,7 +3,6 @@ title: Publishing a WMI Schema
 description: Publishing a WMI Schema
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "binary MOF WDK WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Publishing a WMI Schema

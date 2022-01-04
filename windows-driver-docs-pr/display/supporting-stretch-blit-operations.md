@@ -5,7 +5,6 @@ keywords:
 - blit stretch operations WDK DirectX 9.0
 - stretch blit operations WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Stretch Blit Operations

@@ -5,7 +5,6 @@ keywords:
 - functions WDK print
 - print monitors WDK , functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Functions Defined by Print Monitors

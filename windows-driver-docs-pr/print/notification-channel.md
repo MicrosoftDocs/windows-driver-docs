@@ -10,7 +10,6 @@ keywords:
 - data channels WDK spooler notification
 - IPrintAsyncNotifyChannel
 ms.date: 06/08/2020
-ms.localizationpriority: medium
 ---
 
 # Notification Channel

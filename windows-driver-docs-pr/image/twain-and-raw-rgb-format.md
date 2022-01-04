@@ -2,7 +2,6 @@
 title: TWAIN and Raw RGB Format
 description: TWAIN and Raw RGB Format
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TWAIN and Raw RGB Format

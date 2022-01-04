@@ -10,7 +10,6 @@ keywords:
 - formats WDK AVStream
 - pin data ranges WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Range Intersections in AVStream

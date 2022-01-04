@@ -2,7 +2,6 @@
 title: Introduction to NDIS 6.50
 description: This section introduces NDIS 6.50 and describes changes from NDIS 6.40. NDIS 6.50 is included in Windows 10, version 1507 and later.
 ms.date: 09/30/2020
-ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.50

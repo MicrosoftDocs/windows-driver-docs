@@ -3,7 +3,6 @@ title: KSPROPSETID\_SynthClock
 description: KSPROPSETID\_SynthClock
 keywords: ["KSPROPSETID_SynthClock"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_SynthClock

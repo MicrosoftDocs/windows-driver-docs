@@ -3,7 +3,6 @@ title: ib, id, iw
 description: ib, id, iw
 keywords: ["ib extension (obsolete)", "id extension (obsolete)", "iw extension (obsolete)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # !ib, !id, !iw

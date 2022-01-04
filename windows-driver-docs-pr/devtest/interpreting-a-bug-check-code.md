@@ -5,7 +5,6 @@ keywords:
 - tools WDK , bug check codes
 - driver development tools WDK , bug check codes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interpreting a Bug Check Code

@@ -5,7 +5,6 @@ keywords:
 - streaming media samples WDK
 - samples WDK streaming media
 ms.date: 06/19/2020
-ms.localizationpriority: medium
 ---
 
 # Streaming media samples

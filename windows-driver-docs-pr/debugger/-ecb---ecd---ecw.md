@@ -9,7 +9,6 @@ api_name:
 - ecb, ecd, ecw
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ecb, !ecd, !ecw

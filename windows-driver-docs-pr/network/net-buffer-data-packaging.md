@@ -9,7 +9,6 @@ keywords:
 - NDIS_PACKET
 - NET_BUFFER data packaging WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NET\_BUFFER Data Packaging

@@ -3,7 +3,6 @@ title: Enabling Device Wake-Up
 description: Enabling Device Wake-Up
 keywords: ["IRPs WDK power management", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "IRP_MJ_POWER", "DEVICE_CAPABILITIES structure", "restoring power WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Device Wake-Up

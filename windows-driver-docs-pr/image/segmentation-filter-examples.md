@@ -2,7 +2,6 @@
 title: Segmentation Filter Examples
 description: Segmentation Filter Examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Segmentation Filter Examples

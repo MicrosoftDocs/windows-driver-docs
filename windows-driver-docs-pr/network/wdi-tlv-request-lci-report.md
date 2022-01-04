@@ -4,7 +4,6 @@ description: WDI_TLV_REQUEST_LCI_REPORT is a TLV that contains information for w
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_REQUEST_LCI_REPORT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbtt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbtt

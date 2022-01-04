@@ -4,7 +4,6 @@ description: The OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS command is sent in r
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS (dot11wificxintf.h)

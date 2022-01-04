@@ -9,7 +9,6 @@ api_name:
 - fadt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !fadt

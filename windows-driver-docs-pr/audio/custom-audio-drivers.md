@@ -8,7 +8,6 @@ keywords:
 - vendor-supplied drivers WDK audio
 - PortCls WDK audio , custom audio drivers
 ms.date: 05/08/2018
-ms.localizationpriority: medium
 ---
 
 # Custom Audio Drivers

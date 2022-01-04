@@ -2,7 +2,6 @@
 description: Functional-Object Retrieval
 title: Functional-Object Retrieval
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Functional-Object Retrieval

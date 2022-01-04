@@ -3,7 +3,6 @@ title: MB Driver Stack, Suspend, and Resume
 description: Learn the architecture and flows of MBIM 4.0 Driver Stack, Suspend and Resume, and how to test and debug it.
 keywords: Resume,Suspend, MBIM 4.0, DriverStack
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 # MB Driver Stack, Suspend, and Resume 
 ## Overview

@@ -9,7 +9,6 @@ api_name:
 - srb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !srb

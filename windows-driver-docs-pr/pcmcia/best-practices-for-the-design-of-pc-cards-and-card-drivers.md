@@ -9,7 +9,6 @@ keywords:
 - PCI interrupts WDK PCMCIA bus
 - ISA interrupts WDK PCMCIA bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Best Practices for the Design of PC Cards and Card Drivers

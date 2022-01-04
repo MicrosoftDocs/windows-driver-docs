@@ -7,7 +7,6 @@ keywords:
 - installed device setup classes WDK , enumerating
 - device setup classes WDK device installations , enumerating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating Installed Device Setup Classes

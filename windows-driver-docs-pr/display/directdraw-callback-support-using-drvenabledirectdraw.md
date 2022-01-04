@@ -7,7 +7,6 @@ keywords:
 - DrvEnableDirectDraw
 - DirectDraw driver initialization WDK Windows 2000 display , callback functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectDraw Callback Support Using DrvEnableDirectDraw

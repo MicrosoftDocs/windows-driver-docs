@@ -7,7 +7,6 @@ keywords:
 - source files WDK display
 - identifying display source disks or files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Identifying Source Disks and Files

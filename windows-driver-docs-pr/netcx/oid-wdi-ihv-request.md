@@ -4,7 +4,6 @@ description: The OID_WDI_IHV_REQUEST command is used to forward information that
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_IHV_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_IHV\_REQUEST (dot11wificxintf.h)

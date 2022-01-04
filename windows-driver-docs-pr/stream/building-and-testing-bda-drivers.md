@@ -2,7 +2,6 @@
 title: Building and Testing BDA Drivers
 description: Building and Testing BDA Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Building and Testing BDA Drivers

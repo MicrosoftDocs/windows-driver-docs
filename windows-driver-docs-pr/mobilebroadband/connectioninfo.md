@@ -2,7 +2,6 @@
 title: ConnectionInfo
 description: ConnectionInfo
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ConnectionInfo

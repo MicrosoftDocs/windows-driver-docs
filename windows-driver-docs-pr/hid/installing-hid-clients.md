@@ -2,7 +2,6 @@
 title: Installing HID clients
 description: This section describes the following requirements for installing HIDClass devices in Microsoft Windows.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing HID clients

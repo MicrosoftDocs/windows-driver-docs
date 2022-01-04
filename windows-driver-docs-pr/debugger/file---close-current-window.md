@@ -3,7 +3,6 @@ title: File Close Current Window
 description: File Close Current Window
 keywords: ["File Close Current Window"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Close Current Window

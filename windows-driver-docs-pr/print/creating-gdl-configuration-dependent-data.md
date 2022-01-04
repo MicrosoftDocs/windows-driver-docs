@@ -7,7 +7,6 @@ keywords:
 - creating configuration-dependent data WDK GDL
 - GDL WDK , organizing data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating GDL Configuration-Dependent Data

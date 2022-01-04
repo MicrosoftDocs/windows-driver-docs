@@ -6,7 +6,6 @@ keywords:
 - storage changer drivers WDK , miniclass drivers
 - miniclass drivers WDK changer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Changer Miniclass Drivers

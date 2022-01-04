@@ -5,7 +5,6 @@ keywords:
 - HwScsiFindAdapter
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's HwScsiFindAdapter Routine

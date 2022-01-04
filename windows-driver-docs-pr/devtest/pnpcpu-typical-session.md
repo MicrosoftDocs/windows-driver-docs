@@ -2,7 +2,6 @@
 title: PNPCPU Typical Session
 description: PNPCPU Typical Session
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PNPCPU Typical Session

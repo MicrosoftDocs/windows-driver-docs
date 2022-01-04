@@ -3,7 +3,6 @@ title: Public and Private Symbols
 description: Public and Private Symbols
 keywords: ["symbols, public", "symbols, private", "public symbols", "private symbols", "retail symbols", "export symbols", "symbol file, full symbol file", "symbol file, stripped symbol file", "full symbol file"]
 ms.date: 09/30/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy22q1
 ---
 
@@ -54,8 +53,8 @@ On the other hand, the *public* symbol table stores only the following informati
 -   The address of the item in the virtual memory space of its module. For a function, this is the address of its entry point.
 
 -   Frame pointer omission (FPO) records for each function.
-- 
-- May include symbol prefix/suffixes refereed to as decorations.
+
+-   May include symbol prefix/suffixes referred to as decorations.
 
 The public symbol data can be thought of as a subset of the private symbol data in two ways: it contains a shorter list of items, and it also contains less information about each item. For example, the public symbol data does not include local variables at all. 
 

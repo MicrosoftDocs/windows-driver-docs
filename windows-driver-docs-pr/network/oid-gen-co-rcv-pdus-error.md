@@ -4,7 +4,6 @@ description: This topic describes the OID_GEN_CO_RCV_PDUS_ERROR object identifie
 keywords:
 - OID_GEN_CO_RCV_PDUS_ERROR
 ms.date: 11/02/2017
-ms.localizationpriority: medium
 ---
 
 # OID_GEN_CO_RCV_PDUS_ERROR

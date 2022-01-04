@@ -2,7 +2,6 @@
 title: Can I override the actual tracing function
 description: Can I override the actual tracing function
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Can I override the actual tracing function?

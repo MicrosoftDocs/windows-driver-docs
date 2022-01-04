@@ -2,7 +2,6 @@
 title: The radio-manager file list
 description: Describes the files that are found in the radio manager DLL.
 ms.date: 08/25/2021
-ms.localizationpriority: medium
 ---
 
 # The radio-manager file list

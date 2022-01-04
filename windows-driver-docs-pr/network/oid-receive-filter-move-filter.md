@@ -4,7 +4,6 @@ description: An overlying driver issues an object identifier (OID) set request o
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_MOVE_FILTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_MOVE\_FILTER

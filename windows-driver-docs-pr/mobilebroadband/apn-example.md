@@ -2,7 +2,6 @@
 title: APN example
 description: APN example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # APN example

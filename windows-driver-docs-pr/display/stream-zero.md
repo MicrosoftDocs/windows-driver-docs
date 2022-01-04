@@ -8,7 +8,6 @@ keywords:
 - stream zero WDK DirectX 8.0
 - vertex stream zero WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stream Zero

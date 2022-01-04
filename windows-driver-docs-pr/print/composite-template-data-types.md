@@ -12,7 +12,6 @@ keywords:
 - ArraySize directive WDK GDL
 - ArrayLabel directive WDK GDL
 ms.date: 06/09/2020
-ms.localizationpriority: medium
 ---
 
 # Composite Template Data Types

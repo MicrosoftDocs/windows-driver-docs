@@ -7,7 +7,6 @@ keywords:
 - extensions WDK GDL files
 - PPD files WDK autoconfiguration , GDL extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding GDL Extensions to an Existing PPD File

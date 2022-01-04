@@ -7,7 +7,6 @@ keywords:
 - pin VRAM processing WDK AVStream
 - VRAM capture WDK AVStream , request sequence
 ms.date: 06/19/2020
-ms.localizationpriority: medium
 ---
 
 # VRAM capture properties

@@ -5,7 +5,6 @@ keywords:
 - printer attributes WDK Unidrv , formats
 - formats WDK printer attributes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Attribute Format

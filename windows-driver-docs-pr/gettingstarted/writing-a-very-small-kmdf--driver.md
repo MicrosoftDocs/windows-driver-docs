@@ -4,7 +4,6 @@ description: This topic describes how to write a Windows driver using Kernel-Mod
 keywords:
 - KMDF Hello World
 ms.date: 06/02/2021
-ms.localizationpriority: medium
 ---
 
 # Write a Hello World Windows Driver (KMDF)

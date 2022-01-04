@@ -9,7 +9,6 @@ api_name:
 - Analyze UMDH Logs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Analyze UMDH Logs

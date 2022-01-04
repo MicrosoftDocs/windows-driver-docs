@@ -4,7 +4,6 @@ description: WSD Schema Extensions
 keywords:
 - in-box autoconfiguration support WDK printer , WSD schema extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WSD Schema Extensions

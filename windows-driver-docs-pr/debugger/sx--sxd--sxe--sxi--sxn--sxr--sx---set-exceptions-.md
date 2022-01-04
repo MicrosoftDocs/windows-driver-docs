@@ -9,7 +9,6 @@ api_name:
 - sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)

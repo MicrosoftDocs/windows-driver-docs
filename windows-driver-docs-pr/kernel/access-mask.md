@@ -1,7 +1,6 @@
 ---
 title: Specifying Access Rights
 description: Specifying Access Rights
-ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
 

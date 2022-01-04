@@ -4,7 +4,6 @@ description: WDI_TLV_PMKID is a WiFiCx TLV that contains a PMKID value.
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_PMKID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PMKID (dot11wificxtypes.hpp)

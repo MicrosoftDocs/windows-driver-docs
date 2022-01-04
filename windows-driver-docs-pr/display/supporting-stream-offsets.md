@@ -5,7 +5,6 @@ keywords:
 - stream offsets WDK DirectX 9.0
 - vertex stream offsets WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Stream Offsets

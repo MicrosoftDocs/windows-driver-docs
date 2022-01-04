@@ -9,7 +9,6 @@ api_name:
 - amli bd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli bd

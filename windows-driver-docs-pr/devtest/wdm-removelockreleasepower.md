@@ -9,7 +9,6 @@ api_name:
 - RemoveLockReleasePower
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockReleasePower rule (wdm)

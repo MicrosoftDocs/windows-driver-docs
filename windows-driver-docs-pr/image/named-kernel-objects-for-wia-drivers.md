@@ -2,7 +2,6 @@
 title: Named Kernel Objects for WIA Drivers
 description: Named Kernel Objects for WIA Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Named Kernel Objects for WIA Drivers

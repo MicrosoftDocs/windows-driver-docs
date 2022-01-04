@@ -5,7 +5,6 @@ keywords:
 - virtual connections WDK CoNDIS , activating
 - activating virtual connections
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Activating a VC

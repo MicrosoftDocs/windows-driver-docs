@@ -6,7 +6,6 @@ keywords:
 - production rasterizers WDK Direct3D
 - reference rasterizers WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rasterizer Update

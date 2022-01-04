@@ -2,7 +2,6 @@
 title: Allocating Memory for Data
 description: Allocating Memory for Data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating Memory for Data

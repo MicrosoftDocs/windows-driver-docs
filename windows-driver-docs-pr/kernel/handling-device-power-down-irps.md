@@ -3,7 +3,6 @@ title: Handling Device Power-Down IRPs
 description: Handling Device Power-Down IRPs
 keywords: ["set-power IRPs WDK kernel", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "power-down IRPs WDK kernel", "context information WDK power management", "shutdown power management WDK kernel", "off power WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Device Power-Down IRPs

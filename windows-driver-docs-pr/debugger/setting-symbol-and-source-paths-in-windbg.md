@@ -2,7 +2,6 @@
 title: Setting Symbol and Executable Image Paths in WinDbg
 description: Setting Symbol and Executable Image Paths in WinDbg
 ms.date: 05/05/2021
-ms.localizationpriority: medium
 ---
 
 # Setting Symbol and Executable Image Paths in WinDbg

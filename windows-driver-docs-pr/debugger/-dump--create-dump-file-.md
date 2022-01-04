@@ -9,7 +9,6 @@ api_name:
 - .dump (Create Dump File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .dump (Create Dump File)

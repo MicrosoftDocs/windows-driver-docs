@@ -7,7 +7,6 @@ keywords:
 - device fonts WDK printer graphics
 - fonts WDK printer graphics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Device Fonts

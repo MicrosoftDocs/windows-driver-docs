@@ -2,7 +2,6 @@
 title: Determining NIC Switch Capabilities
 description: Determining NIC Switch Capabilities
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining NIC Switch Capabilities

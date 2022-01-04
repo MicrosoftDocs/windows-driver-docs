@@ -2,7 +2,6 @@
 title: Debugging Using Visual Studio
 description: Starting with Windows Driver Kit (WDK) 8, the driver development environment and the Windows debuggers are integrated into Microsoft Visual Studio.
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # Debugging Using Visual Studio

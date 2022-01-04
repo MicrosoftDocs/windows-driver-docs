@@ -9,7 +9,6 @@ api_name:
 - PNP_DETECTED_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCA: PNP\_DETECTED\_FATAL\_ERROR

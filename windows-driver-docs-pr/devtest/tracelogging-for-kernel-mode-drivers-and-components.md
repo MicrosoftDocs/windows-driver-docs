@@ -2,7 +2,6 @@
 title: TraceLogging for kernel-mode drivers and components
 description: This topic describes how to use the TraceLogging API from within kernel-mode drivers and components.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TraceLogging for kernel-mode drivers and components

@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS is a WiFiCx TLV that contai
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS (dot11wificxtypes.hpp)

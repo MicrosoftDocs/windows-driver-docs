@@ -7,7 +7,6 @@ keywords:
 - Stream filter driver WDK AV/C
 - Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Avcstrm.sys

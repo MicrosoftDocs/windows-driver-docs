@@ -4,7 +4,6 @@ description: OID_WDI_SET_END_DWELL_TIME is typically sent during an Action Frame
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_END_DWELL_TIME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

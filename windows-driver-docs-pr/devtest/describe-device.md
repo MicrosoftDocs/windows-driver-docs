@@ -4,7 +4,6 @@ description: Describe the device in the Device Metadata Authoring Wizard
 keywords:
 - Describe the device in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Describe the device in the Device Metadata Authoring Wizard

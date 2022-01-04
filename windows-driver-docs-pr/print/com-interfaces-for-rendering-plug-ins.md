@@ -5,7 +5,6 @@ keywords:
 - rendering plug-ins WDK print , COM interfaces
 - COM interfaces WDK print , rendering plug-ins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COM Interfaces for Rendering Plug-Ins

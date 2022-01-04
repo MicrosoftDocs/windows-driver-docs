@@ -2,7 +2,6 @@
 title: WDI low latency connection quality
 description: This section describes how to maintain quality with low latency connections in WDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI low latency connection quality

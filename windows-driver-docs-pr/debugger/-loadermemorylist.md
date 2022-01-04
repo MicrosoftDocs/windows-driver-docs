@@ -9,7 +9,6 @@ api_name:
 - loadermemorylist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !loadermemorylist

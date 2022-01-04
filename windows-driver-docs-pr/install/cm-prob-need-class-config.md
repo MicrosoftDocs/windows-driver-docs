@@ -4,7 +4,6 @@ description: CM_PROB_NEED_CLASS_CONFIG
 keywords:
 - CM_PROB_NEED_CLASS_CONFIG
 ms.date: 02/28/2020
-ms.localizationpriority: medium
 ---
 
 # Code 56 - CM_PROB_NEED_CLASS_CONFIG

@@ -7,7 +7,6 @@ keywords:
 - WAN miniport drivers WDK networking
 - wide area network WDK networking . miniport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of WAN Miniport Drivers

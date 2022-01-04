@@ -4,7 +4,6 @@ description: WDI_TLV_IHV_DATA is a WiFiCx TLV that contains IHV-specific informa
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_IHV_DATA Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_IHV\_DATA (dot11wificxtypes.hpp)

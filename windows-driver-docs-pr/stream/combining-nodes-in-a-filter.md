@@ -6,7 +6,6 @@ keywords:
 - nodes WDK BDA
 - combining nodes in filters WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Combining Nodes in a Filter

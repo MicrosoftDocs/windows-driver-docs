@@ -9,7 +9,6 @@ api_name:
 - $ , $ , $$ , $$ , $$ a (Run Script File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # $<, $><, $$<, $$><, $$ >a< (Run Script File)

@@ -7,7 +7,6 @@ keywords:
 - surfaces WDK DirectDraw , extended alignment
 - extended surface alignment WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Extended Surface Alignment

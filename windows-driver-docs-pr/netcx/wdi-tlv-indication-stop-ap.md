@@ -4,7 +4,6 @@ description: WDI_TLV_INDICATION_STOP_AP is a WiFiCx TLV that contains the reason
 ms.date: 08/31/2021
 keywords:
  - WDI_TLV_INDICATION_STOP_AP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INDICATION\_STOP\_AP (dot11wificxtypes.hpp)

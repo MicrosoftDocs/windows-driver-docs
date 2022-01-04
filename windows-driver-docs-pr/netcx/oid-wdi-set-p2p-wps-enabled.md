@@ -4,7 +4,6 @@ description: The OID_WDI_SET_P2P_WPS_ENABLED command requests that the adapter e
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_P2P_WPS_ENABLED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_P2P\_WPS\_ENABLED (dot11wificxintf.h)

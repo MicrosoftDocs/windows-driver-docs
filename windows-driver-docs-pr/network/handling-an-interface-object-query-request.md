@@ -8,7 +8,6 @@ keywords:
 - OID requests WDK networking
 - query requests WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling an Interface Object Query Request

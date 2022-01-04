@@ -8,7 +8,6 @@ keywords:
 - floating-point operations WDK GDI
 - FPU WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Floating-Point Operations in Graphics Driver Functions

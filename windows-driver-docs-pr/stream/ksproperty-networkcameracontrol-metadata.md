@@ -2,7 +2,6 @@
 title: KSPROPERTY_NETWORKCAMERACONTROL_METADATA
 description: Describes the KSPROPERTY_NETWORKCAMERACONTROL_METADATA property usage.
 ms.date: 06/24/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_NETWORKCAMERACONTROL_METADATA

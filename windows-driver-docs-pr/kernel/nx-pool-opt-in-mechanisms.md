@@ -1,7 +1,6 @@
 ---
 title: NX Pool Opt-In Mechanisms
 description: To port kernel-mode driver code to Windows 8 from earlier versions of Windows, you should use the NonPagedPoolNx type of memory pool as a best practice.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

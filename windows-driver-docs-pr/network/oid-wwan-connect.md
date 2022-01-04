@@ -4,7 +4,6 @@ description: OID_WWAN_CONNECT activates or deactivates a particular packet conte
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_CONNECT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_CONNECT

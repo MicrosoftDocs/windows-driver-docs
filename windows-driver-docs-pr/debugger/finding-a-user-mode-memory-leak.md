@@ -3,7 +3,6 @@ title: Finding a User-Mode Memory Leak
 description: Finding a User-Mode Memory Leak
 keywords: ["memory leak, user-mode", "memory leak, user-mode, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Finding a User-Mode Memory Leak

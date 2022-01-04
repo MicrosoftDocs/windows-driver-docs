@@ -8,7 +8,6 @@ keywords:
 - RSS WDK networking , configuration
 - ndirection table example WDK RSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # RSS Configuration

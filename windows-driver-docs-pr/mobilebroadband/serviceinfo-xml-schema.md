@@ -2,7 +2,6 @@
 title: ServiceInfo XML schema overview
 description: ServiceInfo XML schema overview
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # ServiceInfo XML schema overview

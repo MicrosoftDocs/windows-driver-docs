@@ -9,7 +9,6 @@ api_name:
 - SPIN_LOCK_NOT_OWNED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10: SPIN\_LOCK\_NOT\_OWNED

@@ -7,7 +7,6 @@ keywords:
 - I/O request objects WDK UMDF
 - IWDFIoRequest
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework I/O Request Object

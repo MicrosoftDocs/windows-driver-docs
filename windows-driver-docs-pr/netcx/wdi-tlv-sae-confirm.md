@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_CONFIRM is a WiFiCx TLV that contains the Confirm field
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_SAE_CONFIRM Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_SAE_CONFIRM (dot11wificxtypes.hpp)

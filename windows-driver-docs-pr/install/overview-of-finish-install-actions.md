@@ -2,7 +2,6 @@
 title: Overview of Finish-Install Actions
 description: Overview of Finish-Install Actions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Finish-Install Actions

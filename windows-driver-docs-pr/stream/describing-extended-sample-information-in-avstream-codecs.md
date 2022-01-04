@@ -4,7 +4,6 @@ description: Describing Extended Sample Information in AVStream Codecs
 keywords:
 - AVStream hardware codec support WDK , extended sample information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Describing Extended Sample Information in AVStream Codecs

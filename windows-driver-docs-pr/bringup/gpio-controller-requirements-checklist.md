@@ -2,7 +2,6 @@
 title: GPIO controller requirements checklist
 description: This topic summarizes the hardware, firmware, and software requirements for General Purpose IO (GPIO) controller devices that are exposed to Windows.
 ms.date: 08/18/2021
-ms.localizationpriority: medium
 ---
 
 # GPIO controller requirements checklist

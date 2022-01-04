@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbdevobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbdevobj

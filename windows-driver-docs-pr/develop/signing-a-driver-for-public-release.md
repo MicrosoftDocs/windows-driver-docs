@@ -2,7 +2,6 @@
 title: Signing a Driver for Public Release
 description: Before you release a driver package to the public, we recommend that you submit the package for certification.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Signing a Driver for Public Release

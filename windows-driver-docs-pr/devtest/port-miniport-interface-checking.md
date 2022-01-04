@@ -4,7 +4,6 @@ description: Port/Miniport interface checking
 keywords:
 - Port/Miniport interface checking
 ms.date: 09/14/2017
-ms.localizationpriority: medium
 ---
 
 # Port/miniport interface checking

@@ -10,7 +10,6 @@ keywords:
 - notifications WDK PnP , NDIS ports
 - events WDK networkin
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Ports PnP Event Notifications

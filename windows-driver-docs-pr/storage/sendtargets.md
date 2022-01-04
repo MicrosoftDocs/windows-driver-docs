@@ -1,7 +1,6 @@
 ---
 title: SendTargets
 description: SendTargets
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

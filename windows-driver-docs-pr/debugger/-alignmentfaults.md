@@ -9,7 +9,6 @@ api_name:
 - alignmentfaults
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !alignmentfaults

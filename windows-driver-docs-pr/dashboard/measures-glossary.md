@@ -3,7 +3,6 @@ title: Glossary for driver flighting measures
 description: Contains definitions of terms of importance to driver flighting measures.
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Glossary for driver flighting measures

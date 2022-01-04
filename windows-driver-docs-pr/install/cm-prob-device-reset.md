@@ -2,7 +2,6 @@
 title: CM_PROB_DEVICE_RESET
 description: CM_PROB_DEVICE_RESET
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 54 - CM_PROB_DEVICE_RESET

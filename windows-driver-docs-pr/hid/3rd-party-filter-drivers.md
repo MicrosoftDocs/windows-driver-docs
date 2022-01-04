@@ -2,7 +2,6 @@
 title: 3rd party filter drivers
 description: Sample filter drivers in the Microsoft Windows Driver Kit (WDK).
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 3rd party filter drivers

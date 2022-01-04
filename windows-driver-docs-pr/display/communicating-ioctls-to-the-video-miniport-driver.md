@@ -5,7 +5,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , IOCTLs
 - IOCTLs WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Communicating IOCTLs to the Video Miniport Driver

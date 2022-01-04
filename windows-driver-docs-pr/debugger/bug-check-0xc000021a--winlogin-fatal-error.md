@@ -9,7 +9,6 @@ api_name:
 - WINLOGON_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC000021A: WINLOGON\_FATAL\_ERROR

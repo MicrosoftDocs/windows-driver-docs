@@ -2,7 +2,6 @@
 title: UEFI check signature protocol
 description: Provides information about the UEFI check signature protocol.
 ms.date: 09/28/2021
-ms.localizationpriority: medium
 ---
 
 # UEFI check signature protocol

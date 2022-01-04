@@ -6,7 +6,6 @@ keywords:
 - storage WDK
 - storage support routines
 ms.date: 03/16/2021
-ms.localizationpriority: medium
 ---
 
 # Storport driver support routines

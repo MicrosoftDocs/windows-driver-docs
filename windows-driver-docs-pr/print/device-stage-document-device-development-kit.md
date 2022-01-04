@@ -2,7 +2,6 @@
 title: Device Stage Document Device Development Kit
 description: Device Stage Document Device Development Kit
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Stage Document Device Development Kit

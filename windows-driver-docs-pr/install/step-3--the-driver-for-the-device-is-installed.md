@@ -2,7 +2,6 @@
 title: Step 3 The Driver for the Device is Installed
 description: Step 3 The Driver for the Device is Installed
 ms.date: 11/18/2021
-ms.localizationpriority: medium
 ---
 
 # Step 3: The Driver Package for the Device is Installed

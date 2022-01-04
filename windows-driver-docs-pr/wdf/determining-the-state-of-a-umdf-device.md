@@ -9,7 +9,6 @@ keywords:
 - debugging scenarios WDK UMDF , UMDF device state
 - UMDF WDK , debugging scenarios, UMDF device state
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the State of a UMDF Device

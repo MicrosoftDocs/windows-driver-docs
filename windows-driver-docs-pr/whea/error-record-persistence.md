@@ -15,7 +15,6 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error record persistence
 - PSHED plug-ins WDK WHEA , error record persistence
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Error Record Persistence

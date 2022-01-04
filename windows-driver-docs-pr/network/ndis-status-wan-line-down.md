@@ -4,7 +4,6 @@ description: The NDIS_STATUS_WAN_LINE_DOWN status indicates that a WAN-capable m
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WAN_LINE_DOWN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WAN\_LINE\_DOWN

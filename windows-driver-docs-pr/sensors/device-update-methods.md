@@ -2,7 +2,6 @@
 title: Device update methods
 description: Methods supported by the sensor driver to update the sensor device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device update methods

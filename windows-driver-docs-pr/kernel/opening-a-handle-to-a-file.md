@@ -3,7 +3,6 @@ title: Opening a Handle to a File
 description: Opening a Handle to a File
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "opening handle to file"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Opening a Handle to a File

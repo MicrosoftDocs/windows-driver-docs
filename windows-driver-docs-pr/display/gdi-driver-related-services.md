@@ -6,7 +6,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , driver-related services
 - drawing WDK GDI , driver-related services
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Driver-Related Services

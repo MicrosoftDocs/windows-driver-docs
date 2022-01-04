@@ -9,7 +9,6 @@ keywords:
 - property sets WDK video capture
 - custom interfaces WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Custom Property Sets and Interfaces

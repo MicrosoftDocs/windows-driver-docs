@@ -2,7 +2,6 @@
 title: Vertex and Index Buffers
 description: Vertex and Index Buffers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vertex and Index Buffers

@@ -2,7 +2,6 @@
 title: KSPROPSETID\_BdaVoidTransform
 description: KSPROPSETID\_BdaVoidTransform
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BdaVoidTransform

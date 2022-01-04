@@ -8,7 +8,6 @@ keywords:
 - enumerating COM ports WDK serial devices
 - legacy COM ports WDK serial devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating Legacy COM Ports

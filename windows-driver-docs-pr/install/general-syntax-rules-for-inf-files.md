@@ -8,7 +8,6 @@ keywords:
 - INF files WDK device installations , directives
 - directives WDK INF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Syntax Rules for INF Files

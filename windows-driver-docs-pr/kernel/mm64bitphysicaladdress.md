@@ -1,7 +1,6 @@
 ---
 title: Windows kernel global variables
 description: Kernel global variables.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

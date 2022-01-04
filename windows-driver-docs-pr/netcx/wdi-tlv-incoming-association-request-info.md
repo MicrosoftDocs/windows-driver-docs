@@ -4,7 +4,6 @@ description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO is a WiFiCx TLV that cont
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO (dot11wificxtypes.hpp)

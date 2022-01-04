@@ -4,7 +4,6 @@ description: WDI_TLV_OPERATING_IN_PBSS is a WiFiCx TLV that specifies whether th
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_OPERATING_IN_PBSS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_OPERATING_IN_PBSS (dot11wificxtypes.hpp)

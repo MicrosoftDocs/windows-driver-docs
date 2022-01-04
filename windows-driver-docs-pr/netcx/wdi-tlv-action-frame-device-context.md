@@ -4,7 +4,6 @@ description: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT is a WiFiCx TLV that contains a
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ACTION\_FRAME\_DEVICE\_CONTEXT (dot11wificxtypes.hpp)

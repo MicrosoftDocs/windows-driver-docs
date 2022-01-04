@@ -2,7 +2,6 @@
 title: Using the DevCon Tool to Install a Driver Package
 description: Using the DevCon Tool to Install a Driver Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the DevCon Tool to Install a Driver Package

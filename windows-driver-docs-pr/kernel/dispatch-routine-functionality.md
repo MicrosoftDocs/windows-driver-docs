@@ -1,7 +1,6 @@
 ---
 title: Dispatch Routine Functionality
 description: Dispatch Routine Functionality
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

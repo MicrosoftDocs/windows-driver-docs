@@ -3,7 +3,6 @@ title: Debug Detach Debuggee
 description: Debug Detach Debuggee
 keywords: ["Debug Detach Debuggee"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Detach Debuggee

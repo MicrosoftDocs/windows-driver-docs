@@ -1,7 +1,6 @@
 ---
 title: Windows kernel run-time library obsolete routines
 description: Windows kernel run-time library obsolete routines
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

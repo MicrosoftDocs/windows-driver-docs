@@ -9,7 +9,6 @@ keywords:
 - threading WDK display
 - synchronization WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDDM Threading and Synchronization Model

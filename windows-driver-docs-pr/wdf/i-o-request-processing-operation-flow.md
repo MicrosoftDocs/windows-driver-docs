@@ -6,7 +6,6 @@ keywords:
 - I/O requests WDK UMDF , operation flow
 - request processing WDK UMDF , operation flow
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # I/O Request Processing Operation Flow

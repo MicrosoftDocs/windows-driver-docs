@@ -2,7 +2,6 @@
 title: Detailed property
 description: A comprehensive description of the current information about the device, including any problem conditions.
 ms.date: 09/03/2021
-ms.localizationpriority: medium
 ---
 
 # Detailed property

@@ -2,7 +2,6 @@
 title: Overview of Device Setup Classes
 description: Overview of Device Setup Classes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Device Setup Classes

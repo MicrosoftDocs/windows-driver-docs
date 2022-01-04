@@ -9,7 +9,6 @@ api_name:
 - RDR_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x27: RDR\_FILE\_SYSTEM

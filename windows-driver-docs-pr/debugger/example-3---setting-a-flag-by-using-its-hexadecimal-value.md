@@ -2,7 +2,6 @@
 title: Example 3 Setting a Flag by Using Its Hexadecimal Value
 description: Example 3 Setting a Flag by Using Its Hexadecimal Value
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Example 3: Setting a Flag by Using Its Hexadecimal Value

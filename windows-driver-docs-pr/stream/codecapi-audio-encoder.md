@@ -2,7 +2,6 @@
 title: CODECAPI_AUDIO_ENCODER
 description: Audio encoders use the support of this GUID to indicate they are an audio encoder.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # CODECAPI_AUDIO_ENCODER

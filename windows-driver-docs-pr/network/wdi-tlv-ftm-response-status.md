@@ -4,7 +4,6 @@ description: WDI_TLV_FTM_RESPONSE_STATUS is a TLV that contains the Fine Timing 
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_FTM_RESPONSE_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

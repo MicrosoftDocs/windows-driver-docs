@@ -4,7 +4,6 @@ description: WDI_TLV_CONFIGURED_MAC_ADDRESS is a WiFiCx TLV that contains a cust
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CONFIGURED_MAC_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS (dot11wificxtypes.hpp)

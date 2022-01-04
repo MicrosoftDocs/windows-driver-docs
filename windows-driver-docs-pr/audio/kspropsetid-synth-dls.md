@@ -3,7 +3,6 @@ title: KSPROPSETID\_Synth\_Dls
 description: KSPROPSETID\_Synth\_Dls
 keywords: ["KSPROPSETID_Synth_Dls"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Synth\_Dls

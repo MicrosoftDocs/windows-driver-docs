@@ -3,7 +3,6 @@ title: Writing SynchCritSection Routines
 description: Writing SynchCritSection Routines
 keywords: ["SynchCritSection", "critical section routines WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Writing SynchCritSection Routines

@@ -2,7 +2,6 @@
 title: IRQL rule set (NDIS)
 description: Learn about using rules (NDIS) to verify that your driver makes DDI calls at the required IRQL. In addition, learn how to select the IRQL rule set.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # IRQL rule set (NDIS)

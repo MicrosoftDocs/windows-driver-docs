@@ -9,7 +9,6 @@ api_name:
 - InvalidReqAccess
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # InvalidReqAccess rule (kmdf)

@@ -9,7 +9,6 @@ keywords:
 - INF files WDK print , decorations
 - decorated INF WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to Use Decorations in INF Files for Printer Drivers

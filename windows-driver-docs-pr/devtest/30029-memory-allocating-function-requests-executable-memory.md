@@ -2,7 +2,6 @@
 title: C30029 warning
 description: Warning C30029 Calling a memory allocating function that requests executable memory.
 ms.date: 12/10/2020
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C30029"
 ---

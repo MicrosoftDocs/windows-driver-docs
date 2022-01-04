@@ -2,7 +2,6 @@
 title: Setting a Packet Coalescing Receive Filter
 description: Setting a Packet Coalescing Receive Filter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting a Packet Coalescing Receive Filter

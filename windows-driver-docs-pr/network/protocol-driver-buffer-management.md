@@ -2,7 +2,6 @@
 title: Protocol Driver Buffer Management
 description: Protocol Driver Buffer Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Protocol Driver Buffer Management

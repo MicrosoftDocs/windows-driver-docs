@@ -8,7 +8,6 @@ keywords:
 - tape drivers WDK storage , about tape drivers
 - storage tape drivers WDK , about tape drivers
 ms.date: 12/15/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to Tape Drivers

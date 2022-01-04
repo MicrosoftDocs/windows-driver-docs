@@ -3,7 +3,6 @@ title: GFlags Examples
 description: GFlags Examples
 keywords: ["GFlags, examples"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # GFlags Examples

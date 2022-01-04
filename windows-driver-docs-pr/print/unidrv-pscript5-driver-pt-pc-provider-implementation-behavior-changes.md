@@ -2,7 +2,6 @@
 title: Unidrv/PScript5 driver PT/PC provider implementation behavior
 description: Unidrv and PScript5 driver PrintTicket or print provider (PT/PC) implementation behavior changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv/PScript5 driver PT/PC provider implementation behavior changes

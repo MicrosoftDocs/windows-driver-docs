@@ -3,7 +3,6 @@ title: File Open Source File
 description: File Open Source File
 keywords: ["File Open Source File", "source debugging, File Open Source File"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Open Source File

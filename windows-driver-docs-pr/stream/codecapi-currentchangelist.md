@@ -2,7 +2,6 @@
 title: CODECAPI_CURRENTCHANGELIST
 description: The CODECAPI_CURRENTCHANGELIST property is used to indicate which parameters changed.
 ms.date: 10/08/2021
-ms.localizationpriority: medium
 ---
 
 # CODECAPI_CURRENTCHANGELIST

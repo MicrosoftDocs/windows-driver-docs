@@ -7,7 +7,6 @@ keywords:
 - architecture WDK display
 - user-mode display drivers WDK Windows Vista , architecture
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # WDDM Architecture

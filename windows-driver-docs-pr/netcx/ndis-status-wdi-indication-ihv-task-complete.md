@@ -4,7 +4,6 @@ description: NDIS_STATUS_WDI_INDICATION_IHV_TASK_COMPLETE indicates OID_WDI_TASK
 ms.date: 07/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_IHV_TASK_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_COMPLETE (dot11wificxintf.h)

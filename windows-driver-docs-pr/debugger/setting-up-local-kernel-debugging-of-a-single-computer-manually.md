@@ -2,7 +2,6 @@
 title: Setting Up Local Kernel Debugging of a Single Computer Manually
 description: Setting Up Local Kernel Debugging of a Single Computer Manually
 ms.date: 07/11/2018
-ms.localizationpriority: medium
 ---
 
 # Setting Up Local Kernel Debugging of a Single Computer Manually

@@ -9,7 +9,6 @@ keywords:
 - USB-based streaming cameras WDK USBCAMD2
 - cameras WDK USBCAMD2
 ms.date: 06/19/2020
-ms.localizationpriority: medium
 ---
 
 # USBCAMD minidriver library

@@ -2,7 +2,6 @@
 title: WIA Driver Event Support
 description: WIA Driver Event Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Driver Event Support

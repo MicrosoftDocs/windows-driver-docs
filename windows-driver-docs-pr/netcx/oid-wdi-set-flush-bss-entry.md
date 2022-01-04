@@ -4,7 +4,6 @@ description: The OID_WDI_SET_FLUSH_BSS_ENTRY command is sent to the device to fl
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_SET_FLUSH_BSS_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_FLUSH\_BSS\_ENTRY (dot11wificxintf.h)

@@ -2,7 +2,6 @@
 title: Managing Hyper-V Extensible Switch Destination Port Data
 description: Managing Hyper-V Extensible Switch Destination Port Data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Hyper-V Extensible Switch Destination Port Data

@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_TRANSMIT_QUEUE_LENGTH OID specifies the num
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_TRANSMIT_QUEUE_LENGTH Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_TRANSMIT\_QUEUE\_LENGTH

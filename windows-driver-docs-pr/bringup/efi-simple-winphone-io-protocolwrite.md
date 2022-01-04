@@ -2,7 +2,6 @@
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Write
 description: The Write function writes data to the device.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Write

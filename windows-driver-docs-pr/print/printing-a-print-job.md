@@ -12,7 +12,6 @@ keywords:
 - bidi communication WDK print
 - printing print jobs WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printing a Print Job

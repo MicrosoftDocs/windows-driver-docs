@@ -2,7 +2,6 @@
 title: Checking the Oplock State of IRP_MJ_FILE_SYSTEM_CONTROL
 description: Checking the Oplock State of an IRP_MJ_FILE_SYSTEM_CONTROL operation
 ms.date: 11/25/2019
-ms.localizationpriority: medium
 ---
 
 # Checking the Oplock State of IRP_MJ_FILE_SYSTEM_CONTROL

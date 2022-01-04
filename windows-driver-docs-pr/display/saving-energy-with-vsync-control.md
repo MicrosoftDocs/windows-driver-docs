@@ -7,7 +7,6 @@ keywords:
 - display driver model WDK Windows Vista , VSync control
 - Windows Vista display driver model WDK , VSync control
 ms.date: 10/14/2019
-ms.localizationpriority: medium
 ---
 
 # Saving Energy with VSync Control

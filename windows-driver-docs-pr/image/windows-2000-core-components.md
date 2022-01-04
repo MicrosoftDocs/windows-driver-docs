@@ -2,7 +2,6 @@
 title: Windows 2000 Core Components
 description: Windows 2000 Core Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows 2000 Core Components

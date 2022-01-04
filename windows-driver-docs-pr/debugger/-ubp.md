@@ -9,7 +9,6 @@ api_name:
 - ubp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ubp

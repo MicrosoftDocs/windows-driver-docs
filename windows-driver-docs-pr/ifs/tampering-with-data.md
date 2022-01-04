@@ -9,7 +9,6 @@ keywords:
 - buffers WDK file systems
 - IOCTLs WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tampering with Data

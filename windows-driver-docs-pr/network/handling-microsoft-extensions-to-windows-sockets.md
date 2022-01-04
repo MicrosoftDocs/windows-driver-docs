@@ -5,7 +5,6 @@ keywords:
 - extensions WDK Windows Sockets
 - Windows Sockets Direct WDK , extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Microsoft Extensions to Windows Sockets

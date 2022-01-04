@@ -7,7 +7,6 @@ keywords:
 - MiniportSetOptions
 - characteristics structure WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring Optional Miniport Driver Services

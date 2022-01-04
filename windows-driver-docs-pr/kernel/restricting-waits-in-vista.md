@@ -1,7 +1,6 @@
 ---
 title: Restricting Waits in Vista
 description: Restricting Waits in Vista
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -9,7 +9,6 @@ api_name:
 - END_OF_NT_EVALUATION_PERIOD
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x98: END\_OF\_NT\_EVALUATION\_PERIOD

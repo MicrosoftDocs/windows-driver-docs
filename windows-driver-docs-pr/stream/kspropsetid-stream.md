@@ -2,7 +2,6 @@
 title: KSPROPSETID\_Stream
 description: KSPROPSETID\_Stream
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Stream

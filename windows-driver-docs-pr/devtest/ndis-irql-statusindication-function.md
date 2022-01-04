@@ -9,7 +9,6 @@ api_name:
 - Irql_StatusIndication_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_StatusIndication\_Function rule (ndis)

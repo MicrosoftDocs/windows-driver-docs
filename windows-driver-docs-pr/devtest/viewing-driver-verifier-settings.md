@@ -5,7 +5,6 @@ keywords:
 - Driver Verifier WDK , viewing settings
 - viewing Driver Verifier setting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing Driver Verifier Settings

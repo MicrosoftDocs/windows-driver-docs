@@ -12,7 +12,6 @@ keywords:
 - stripped symbol files WDK BinPlace
 - SymChk tool WDK BinPlace
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Public Symbols and Private Symbols

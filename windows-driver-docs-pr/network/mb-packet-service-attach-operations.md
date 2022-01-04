@@ -2,7 +2,6 @@
 title: MB Packet Service Operations
 description: MB Packet Service Operations
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Packet Service Operations

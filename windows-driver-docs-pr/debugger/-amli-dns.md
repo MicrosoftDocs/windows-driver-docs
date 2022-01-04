@@ -9,7 +9,6 @@ api_name:
 - amli dns
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli dns

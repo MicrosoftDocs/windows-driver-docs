@@ -4,7 +4,6 @@ description: The OID_WDI_SET_LOCATION_PRIVACY command sets the current location 
 ms.date: 08/30/2021
 keywords:
  - OID_WDI_SET_LOCATION_PRIVACY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WDI_SET_LOCATION_PRIVACY (dot11wificxintf.h)

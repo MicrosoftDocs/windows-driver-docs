@@ -3,7 +3,6 @@ title: System Working State S0
 description: System Working State S0
 keywords: ["system power states WDK kernel , working states", "system working states WDK power management", "S0 WDK power management", "working states WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # System Working State S0

@@ -2,7 +2,6 @@
 title: Signing a Driver
 description: All drivers running on 64-bit versions of Windows must be signed before Windows will load them. However, driver signing is not required on 32-bit versions of Windows.Visual Studio to sign a driver package.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Signing a Driver

@@ -9,7 +9,6 @@ api_name:
 - IrqlKeSetEvent
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlKeSetEvent rule (wdm)

@@ -3,7 +3,6 @@ title: Introduction to Threaded DPCs
 description: A *threaded DPC* is a DPC that the system executes at IRQL equal to PASSIVE_LEVEL.
 keywords: ["threaded DPCs WDK kernel", "real-time threads WDK kernel", "preempted DPCs WDK kernel"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Introduction to Threaded DPCs

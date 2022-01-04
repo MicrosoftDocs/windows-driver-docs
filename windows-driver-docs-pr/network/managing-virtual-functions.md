@@ -2,7 +2,6 @@
 title: Managing Virtual Functions
 description: Managing Virtual Functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Virtual Functions

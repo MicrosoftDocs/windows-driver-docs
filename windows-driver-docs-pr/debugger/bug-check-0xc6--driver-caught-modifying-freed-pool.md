@@ -9,7 +9,6 @@ api_name:
 - DRIVER_CAUGHT_MODIFYING_FREED_POOL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC6: DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL

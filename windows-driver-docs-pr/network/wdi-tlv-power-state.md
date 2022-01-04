@@ -4,7 +4,6 @@ description: WDI_TLV_POWER_STATE is a TLV that contains a power state.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_POWER_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_POWER\_STATE

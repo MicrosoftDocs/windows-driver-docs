@@ -2,7 +2,6 @@
 title: Introduction to Single Root I/O Virtualization (SR-IOV)
 description: Introduction to Single Root I/O Virtualization (SR-IOV)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Single Root I/O Virtualization (SR-IOV)

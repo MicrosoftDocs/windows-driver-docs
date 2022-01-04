@@ -2,7 +2,6 @@
 title: Idle Power Management Configuration and Usage
 description: Idle Power Management Configuration and Usage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Idle Power Management Configuration and Usage

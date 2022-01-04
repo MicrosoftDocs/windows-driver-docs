@@ -2,7 +2,6 @@
 title: Single Driver for Windows Vista and Windows XP
 description: Single Driver for Windows Vista and Windows XP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Single Driver for Windows Vista and Windows XP

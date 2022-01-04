@@ -4,7 +4,6 @@ description: Introduction to IPsec Offload Version 2
 keywords:
 - IPsecOV2 WDK TCP/IP transport , about IPsecOV2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to IPsec Offload Version 2

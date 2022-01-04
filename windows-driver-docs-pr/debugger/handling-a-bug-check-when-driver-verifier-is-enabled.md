@@ -3,7 +3,6 @@ title: Handling a Bug Check When Driver Verifier is Enabled
 description: Driver Verifier detects driver errors at run time. You can use Driver Verifier along with the analyze debugger command to detect and display information about errors in your driver.
 keywords: ["Driver Verifier", "Verifier"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Handling a Bug Check When Driver Verifier is Enabled

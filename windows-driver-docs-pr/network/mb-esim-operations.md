@@ -2,7 +2,6 @@
 title: MB eSIM Operations
 description: MB eSIM Operations
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB eSIM Operations

@@ -9,7 +9,6 @@ api_name:
 - DRIVER_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x121: DRIVER\_VIOLATION

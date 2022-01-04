@@ -5,7 +5,6 @@ keywords:
 - macroblocks WDK DirectX VA , motion vectors
 - motion vectors WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Motion Vectors

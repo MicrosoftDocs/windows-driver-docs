@@ -2,7 +2,6 @@
 title: USB Remote NDIS power management
 description: USB Remote NDIS power management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Remote NDIS power management

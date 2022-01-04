@@ -4,7 +4,6 @@ description: The NDIS_STATUS_PM_WOL_PATTERN_REJECTED status indicates to overlyi
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PM_WOL_PATTERN_REJECTED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED

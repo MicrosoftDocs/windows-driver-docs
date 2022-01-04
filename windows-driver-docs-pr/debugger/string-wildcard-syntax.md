@@ -3,7 +3,6 @@ title: String Wildcard Syntax
 description: This topic covers string wildcard syntax. Some debugger commands have string parameters that accept a variety of wildcard characters.
 keywords: string wildcards, expressions, regular expressions, syntax rules for commands
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # String Wildcard Syntax

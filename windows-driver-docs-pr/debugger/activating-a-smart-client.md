@@ -9,7 +9,6 @@ api_name:
 - Activating a Smart Client
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Activating a Smart Client

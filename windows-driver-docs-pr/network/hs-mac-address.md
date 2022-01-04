@@ -5,7 +5,6 @@ keywords:
 - HS_MAC_ADDRESS structure Network Drivers Starting with Windows Vista
 - PHS_MAC_ADDRESS structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_MAC\_ADDRESS structure

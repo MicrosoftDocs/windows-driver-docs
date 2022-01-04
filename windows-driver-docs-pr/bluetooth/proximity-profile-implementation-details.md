@@ -2,7 +2,6 @@
 title: Proximity Profile Implementation Details
 description: To achieve a power-efficient design, device implementations must observe specific requirements to ensure that they remain compatible with Windows.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Proximity Profile Implementation Details

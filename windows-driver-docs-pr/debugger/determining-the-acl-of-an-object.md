@@ -3,7 +3,6 @@ title: Determining the ACL of an Object
 description: Determining the ACL of an Object
 keywords: ["access control list (ACL)", "ACL (access control list)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the ACL of an Object

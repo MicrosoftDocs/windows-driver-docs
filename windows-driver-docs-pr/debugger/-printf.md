@@ -9,7 +9,6 @@ api_name:
 - .printf
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .printf

@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_HBAInformation WMI Class
 description: MSiSCSI\_HBAInformation WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

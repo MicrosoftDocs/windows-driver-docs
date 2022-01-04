@@ -7,7 +7,6 @@ keywords:
 - DVD 4 3 pan-scan example WDK DirectX VA
 - 4 3 pan-scan example WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DVD 4:3 Pan-Scan Within 16:9 Pictures Example

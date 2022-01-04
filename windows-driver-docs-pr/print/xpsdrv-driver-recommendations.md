@@ -4,7 +4,6 @@ description: XPSDrv Driver Recommendations
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , recommendations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Driver Recommendations

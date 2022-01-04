@@ -9,7 +9,6 @@ api_name:
 - s (Search Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # s (Search Memory)

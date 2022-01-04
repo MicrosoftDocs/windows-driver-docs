@@ -4,7 +4,6 @@ description: The WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro initializes a dri
 keywords:
  - WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro

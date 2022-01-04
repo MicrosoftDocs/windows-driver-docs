@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN is a TLV that contains the anti-clo
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_ANTI_CLOGGING_TOKEN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

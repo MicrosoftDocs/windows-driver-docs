@@ -6,7 +6,6 @@ keywords:
 - feature attribues WDK Unidrv
 - printer features WDK Unidrv , attributes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Feature Attributes

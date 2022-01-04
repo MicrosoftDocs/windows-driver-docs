@@ -2,7 +2,6 @@
 title: Starting and Stopping the Still Image Service
 description: Starting and Stopping the Still Image Service
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting and Stopping the Still Image Service

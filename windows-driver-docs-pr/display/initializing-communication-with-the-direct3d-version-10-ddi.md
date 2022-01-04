@@ -2,7 +2,6 @@
 title: Initializing Communication with the Direct3D Version 10 DDI
 description: Initializing Communication with the Direct3D Version 10 DDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing Communication with the Direct3D Version 10 DDI

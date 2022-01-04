@@ -4,7 +4,6 @@ description: WDI_TLV_FT_REASSOC_PARAMETERS is a WiFiCx TLV that contains reassoc
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_FT_REASSOC_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_REASSOC\_PARAMETERS (dot11wificxtypes.hpp)

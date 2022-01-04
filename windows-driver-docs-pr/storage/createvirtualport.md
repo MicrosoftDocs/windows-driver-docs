@@ -8,7 +8,6 @@ api_name:
 - CreateVirtualPort
 api_type:
 - COM
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

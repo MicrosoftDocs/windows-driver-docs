@@ -2,7 +2,6 @@
 title: Wi-Fi Hotspot Data Submission Format
 description: Wi-Fi Hotspot Data Submission Format
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi Hotspot Data Submission Format

@@ -15,7 +15,6 @@ keywords:
 - languages WDK print
 - right to left reading languages WDk print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Providing Support for Asian Layout

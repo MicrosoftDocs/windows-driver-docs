@@ -2,7 +2,6 @@
 title: Get SMS device information
 description: Get SMS device information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Get SMS device information

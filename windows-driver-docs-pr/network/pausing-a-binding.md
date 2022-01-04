@@ -8,7 +8,6 @@ keywords:
 - binding states WDK networking
 - pausing binding for protocol driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pausing a Binding

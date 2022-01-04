@@ -9,7 +9,6 @@ api_name:
 - STORE_DATA_STRUCTURE_CORRUPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1C7: STORE\_DATA\_STRUCTURE\_CORRUPTION

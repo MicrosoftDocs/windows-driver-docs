@@ -4,7 +4,6 @@ description: OID_WWAN_RADIO_STATE sets or returns information about a MB device'
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_RADIO_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_RADIO\_STATE

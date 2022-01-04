@@ -9,7 +9,6 @@ keywords:
 - NICs WDK networking , system memory transfers
 - network interface cards WDK networking , s
 ms.date: 06/11/2018
-ms.localizationpriority: medium
 ---
 
 # NDIS Scatter/Gather DMA

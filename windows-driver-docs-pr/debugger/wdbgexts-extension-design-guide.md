@@ -3,7 +3,6 @@ title: WdbgExts Extension Design Guide
 description: WdbgExts Extension Design Guide
 keywords: ["WdbgExts extensions, design guide"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # WdbgExts Extension Design Guide

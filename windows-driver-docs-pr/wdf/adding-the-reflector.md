@@ -9,7 +9,6 @@ keywords:
 - filter drivers WDK UMDF
 - loading reflectors WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying the Reflector in an INF File

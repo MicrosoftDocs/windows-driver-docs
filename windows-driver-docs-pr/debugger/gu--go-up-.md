@@ -9,7 +9,6 @@ api_name:
 - gu (Go Up)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # gu (Go Up)

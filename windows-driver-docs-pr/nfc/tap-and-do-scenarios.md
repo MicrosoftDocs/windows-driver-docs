@@ -8,7 +8,6 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 06/08/2020
-ms.localizationpriority: medium
 ---
 
 # Tap and Do scenarios

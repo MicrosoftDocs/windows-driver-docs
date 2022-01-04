@@ -8,7 +8,6 @@ keywords:
 - INF files WDK file system
 - INF files WDK file system , about file system driver installation
 ms.date: 06/29/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q4
 ---
 

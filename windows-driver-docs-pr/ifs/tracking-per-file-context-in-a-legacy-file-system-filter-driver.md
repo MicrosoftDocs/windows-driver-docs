@@ -2,7 +2,6 @@
 title: Tracking Per-File Context in a Legacy File System Filter Driver
 description: Tracking Per-File Context in a Legacy File System Filter Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tracking Per-File Context in a Legacy File System Filter Driver

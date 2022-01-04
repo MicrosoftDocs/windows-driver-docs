@@ -5,7 +5,6 @@ keywords:
 - request objects WDK KMDF , creating
 - request objects WDK KMDF , read operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Framework Request Objects

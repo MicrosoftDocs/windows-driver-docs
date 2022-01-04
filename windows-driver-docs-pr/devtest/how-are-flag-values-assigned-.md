@@ -2,7 +2,6 @@
 title: How are flag values assigned
 description: How are flag values assigned
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How are flag values assigned?

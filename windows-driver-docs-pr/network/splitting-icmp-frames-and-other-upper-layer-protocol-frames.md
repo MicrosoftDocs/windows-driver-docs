@@ -4,7 +4,6 @@ description: Splitting ICMP Frames and Other Upper-Layer-Protocol Frames
 keywords:
 - ICMP frame splitting WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Splitting ICMP Frames and Other Upper-Layer-Protocol Frames

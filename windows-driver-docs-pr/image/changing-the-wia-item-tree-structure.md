@@ -2,7 +2,6 @@
 title: Changing the WIA Item Tree Structure
 description: Changing the WIA Item Tree Structure
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Changing the WIA Item Tree Structure

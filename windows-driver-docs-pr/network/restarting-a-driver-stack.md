@@ -5,7 +5,6 @@ keywords:
 - driver stacks WDK networking , restarting
 - restarting driver stacks WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Restarting a Driver Stack

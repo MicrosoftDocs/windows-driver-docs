@@ -9,7 +9,6 @@ keywords:
 - video port extensions WDK DirectDraw , kernel-mode video transport
 - VPEs WDK DirectDraw , kernel-mode video transport
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

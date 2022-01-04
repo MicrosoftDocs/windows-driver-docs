@@ -9,7 +9,6 @@ api_name:
 - VIDEO_MEMORY_MANAGEMENT_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10E: VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL

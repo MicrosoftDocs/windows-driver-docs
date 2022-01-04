@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for Packet Coalescing
 description: Standardized INF Keywords for Packet Coalescing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for Packet Coalescing

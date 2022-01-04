@@ -5,7 +5,6 @@ keywords:
 - global cleanup WDK file system minifilter
 - cleanup globally WDK file system minifilter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performing Global Cleanup

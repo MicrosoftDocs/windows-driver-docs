@@ -2,7 +2,6 @@
 title: Barometer data fields
 description: This topic provides information about the sensor data fields that are specific to the barometer.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Barometer data fields

@@ -2,7 +2,6 @@
 title: SoftwareInfo XML Example
 description: SoftwareInfo XML Example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SoftwareInfo XML Example

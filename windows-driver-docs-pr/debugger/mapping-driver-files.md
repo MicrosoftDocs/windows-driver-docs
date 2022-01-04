@@ -3,7 +3,6 @@ title: Mapping Driver Files
 description: Mapping Driver Files
 keywords: ["mapping driver files", "driver replacement map", "driver replacement map, overview", "driver replacement map, file format", "driver replacement map, replacing boot drivers", "boot driver replacement"]
 ms.date: 05/13/2020
-ms.localizationpriority: medium
 ---
 
 # Mapping Driver Files

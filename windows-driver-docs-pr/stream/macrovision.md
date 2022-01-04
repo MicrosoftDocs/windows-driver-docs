@@ -7,7 +7,6 @@ keywords:
 - copyright protection WDK DVD decoder
 - Macrovision WDK DVD decoder
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Macrovision

@@ -4,7 +4,6 @@ description: Battery Miniclass Driver Functionality
 keywords:
 - battery miniclass drivers WDK , functionality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Battery Miniclass Driver Functionality

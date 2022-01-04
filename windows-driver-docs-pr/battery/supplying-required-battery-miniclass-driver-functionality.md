@@ -6,7 +6,6 @@ keywords:
 - routines WDK battery
 - battery miniclass drivers WDK , functionality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supplying Required Battery Miniclass Driver Functionality

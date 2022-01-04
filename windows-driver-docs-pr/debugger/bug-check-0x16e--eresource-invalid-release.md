@@ -9,7 +9,6 @@ api_name:
 - ERESOURCE_INVALID_RELEASE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x16E: ERESOURCE\_INVALID\_RELEASE

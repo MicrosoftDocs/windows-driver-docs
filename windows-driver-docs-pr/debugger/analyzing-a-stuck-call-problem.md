@@ -3,7 +3,6 @@ title: Analyzing a Stuck Call Problem
 description: Analyzing a Stuck Call Problem
 keywords: ["RPC debugging, stuck call"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Analyzing a Stuck Call Problem

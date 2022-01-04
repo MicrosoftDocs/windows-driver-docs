@@ -9,7 +9,6 @@ keywords:
 - validating media WDK file systems
 - removable media validation WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Media Validation

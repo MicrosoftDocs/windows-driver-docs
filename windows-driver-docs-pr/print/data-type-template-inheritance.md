@@ -7,7 +7,6 @@ keywords:
 - templates WDK GDL , inheritance
 - inheritance WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Type Template Inheritance

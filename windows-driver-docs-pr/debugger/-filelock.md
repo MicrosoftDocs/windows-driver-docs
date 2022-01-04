@@ -9,7 +9,6 @@ api_name:
 - filelock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !filelock

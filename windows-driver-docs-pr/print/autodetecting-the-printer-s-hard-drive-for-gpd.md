@@ -8,7 +8,6 @@ keywords:
 - detecting printer hard drive
 - hard drive autodetection WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autodetecting the Printer's Hard Drive for GPD

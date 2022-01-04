@@ -9,7 +9,6 @@ api_name:
 - EM_INITIALIZATION_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11A: EM\_INITIALIZATION\_FAILURE

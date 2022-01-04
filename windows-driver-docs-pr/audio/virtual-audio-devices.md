@@ -9,7 +9,6 @@ keywords:
 - audio filter graphs WDK
 - filter graphs WDK audio , virtual audio devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Audio Devices

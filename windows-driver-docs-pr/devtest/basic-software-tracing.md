@@ -2,7 +2,6 @@
 title: Basic Software Tracing
 description: Basic Software Tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Basic Software Tracing

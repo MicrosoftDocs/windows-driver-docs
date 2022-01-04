@@ -2,7 +2,6 @@
 title: EFI_USB_SUPERSPEED_CONFIG_INFO
 description: The EFI_USB_SUPERSPEED_CONFIG_INFO structure defines the supported USB SuperSpeed port configuration to the USB function driver.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USB_SUPERSPEED_CONFIG_INFO

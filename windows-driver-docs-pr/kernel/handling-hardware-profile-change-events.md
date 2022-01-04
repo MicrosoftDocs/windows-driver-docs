@@ -3,7 +3,6 @@ title: Handling Hardware Profile Change Events
 description: Handling Hardware Profile Change Events
 keywords: ["notifications WDK PnP , hardware profile changes", "hardware profile change notifications WDK PnP", "EventCategoryHardwareProfileChange notification", "profile change notifications WDK PnP", "machine hardware profile change notifications WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Hardware Profile Change Events

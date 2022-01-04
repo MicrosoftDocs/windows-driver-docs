@@ -1,7 +1,6 @@
 ---
 title: Windows kernel obsolete macros
 description: This topic summarizes the following obsolete macros
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

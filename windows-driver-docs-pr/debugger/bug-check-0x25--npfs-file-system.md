@@ -9,7 +9,6 @@ api_name:
 - NPFS_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x25: NPFS\_FILE\_SYSTEM

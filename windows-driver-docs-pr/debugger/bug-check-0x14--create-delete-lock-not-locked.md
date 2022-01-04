@@ -9,7 +9,6 @@ api_name:
 - CREATE_DELETE_LOCK_NOT_LOCKED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x14: CREATE\_DELETE\_LOCK\_NOT\_LOCKED

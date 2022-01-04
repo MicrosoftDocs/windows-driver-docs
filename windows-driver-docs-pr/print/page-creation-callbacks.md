@@ -9,7 +9,6 @@ keywords:
 - page creation callbacks WDK CPSUI
 - CommonPropertySheetUI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Page Creation Callbacks

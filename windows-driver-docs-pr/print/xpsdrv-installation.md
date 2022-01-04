@@ -5,7 +5,6 @@ keywords:
 - XPSDrv printer drivers WDK , installing
 - INF files WDK print , XPSDrv printer drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Installation

@@ -2,7 +2,6 @@
 title: TraceLogging Examples
 description: The source code in this topic demonstrates how to use TraceLogging.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TraceLogging Examples

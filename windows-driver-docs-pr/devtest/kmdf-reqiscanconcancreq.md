@@ -9,7 +9,6 @@ api_name:
 - ReqIsCancOnCancReq
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReqIsCancOnCancReq rule (kmdf)

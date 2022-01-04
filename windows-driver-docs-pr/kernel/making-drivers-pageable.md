@@ -3,7 +3,6 @@ title: Making Drivers Pageable
 description: Making Drivers Pageable
 keywords: ["memory management WDK kernel , pageable drivers", "pageable drivers WDK kernel", "pageable drivers WDK kernel , about pageable drivers", "paged out drivers WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Making Drivers Pageable

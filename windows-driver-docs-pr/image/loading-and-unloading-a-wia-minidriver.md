@@ -2,7 +2,6 @@
 title: Loading and Unloading a WIA Minidriver
 description: Loading and Unloading a WIA Minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Loading and Unloading a WIA Minidriver

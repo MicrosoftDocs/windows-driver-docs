@@ -2,7 +2,6 @@
 title: Print files to the WSD sample
 description: This section describes how to print to the WSD sample.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Print files to the WSD sample

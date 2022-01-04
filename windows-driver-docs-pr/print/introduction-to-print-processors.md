@@ -7,7 +7,6 @@ keywords:
 - print processors WDK , data types
 - data types WDK print processor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Print Processors

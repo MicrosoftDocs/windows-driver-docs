@@ -2,7 +2,6 @@
 title: Floating Point Annotations for drivers
 description: Floating point annotations can help the code analysis tool detect the use of floating point in kernel-mode code and can report errors if the floating-point state is not properly protected. Floating-point rules are checked only for kernel-mode code.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Floating Point Annotations for drivers

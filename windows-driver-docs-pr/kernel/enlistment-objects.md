@@ -3,7 +3,6 @@ title: Enlistment Objects
 description: Enlistment Objects
 keywords: ["enlistments WDK KTM", "enlistments WDK KTM , objects", "resource managers WDK KTM , creating enlistments", "Kernel Transaction Manager WDK , enlistments", "KTM WDK , enlistments", "enlistment objects WDK KTM"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Enlistment Objects

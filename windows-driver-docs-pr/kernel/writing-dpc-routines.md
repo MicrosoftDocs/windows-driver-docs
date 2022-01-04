@@ -3,7 +3,6 @@ title: Writing DPC Routines
 description: DPC routines must ensure that the next device I/O operation is started promptly and the current IRP is completed.
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Writing DPC Routines

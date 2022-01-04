@@ -9,7 +9,6 @@ keywords:
 - input parameter reference counting WDK audio
 - output parameter reference counting WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reference-Counting Conventions for COM Objects

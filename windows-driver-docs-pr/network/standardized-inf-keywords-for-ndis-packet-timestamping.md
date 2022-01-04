@@ -2,7 +2,6 @@
 title: Standardized INF keywords for NDIS packet timestamping
 description: Standardized INF keywords for NDIS packet timestamping
 ms.date: 01/31/2021
-ms.localizationpriority: medium
 ---
 
 # Standardized INF keywords for NDIS packet timestamping

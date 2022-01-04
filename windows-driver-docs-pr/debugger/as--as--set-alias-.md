@@ -9,7 +9,6 @@ api_name:
 - as, aS (Set Alias)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # as, aS (Set Alias)

@@ -4,7 +4,6 @@ description: WDI_TLV_RTT_ACCURACY is a WiFiCx TLV that contains the accuracy, or
 ms.date: 10/30/2021
 keywords:
  - WDI_TLV_RTT_ACCURACY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_RTT_ACCURACY (dot11wificxtypes.hpp)

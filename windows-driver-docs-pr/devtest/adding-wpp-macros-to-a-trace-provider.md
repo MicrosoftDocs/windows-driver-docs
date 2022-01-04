@@ -6,7 +6,6 @@ keywords:
 - WPP software tracing WDK , macros
 - macros WDK WPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding WPP Macros to a Trace Provider

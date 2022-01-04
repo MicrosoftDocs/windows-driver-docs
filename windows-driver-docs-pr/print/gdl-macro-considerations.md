@@ -7,7 +7,6 @@ keywords:
 - passing GDL macro references WDK
 - macros WDK GDL , passing macro references
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Macro Considerations

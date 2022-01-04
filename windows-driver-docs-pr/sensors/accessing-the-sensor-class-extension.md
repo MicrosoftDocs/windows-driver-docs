@@ -2,7 +2,6 @@
 title: Access the sensor class extension
 description: Access the sensor class extension
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Access the sensor class extension

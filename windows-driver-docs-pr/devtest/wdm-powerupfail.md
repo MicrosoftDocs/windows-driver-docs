@@ -9,7 +9,6 @@ api_name:
 - PowerUpFail
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PowerUpFail rule (wdm)

@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - Bluefruit Feather
 description: Bluetooth Test Platform (BTP) supported hardware (Bluefruit Feather).
 ms.date: 06/09/2021
-ms.localizationpriority: medium
 ---
 
 # Bluefruit Feather (nRF52840)

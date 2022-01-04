@@ -3,7 +3,6 @@ title: Using Debugger Command Programs
 description: Using Debugger Command Programs
 keywords: ["debugger command program", "debugger command program, operation"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Debugger Command Programs

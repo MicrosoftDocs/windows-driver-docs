@@ -2,7 +2,6 @@
 title: Child Devices of the Display Adapter (Windows 2000 Model)
 description: Child Devices of the Display Adapter (Windows 2000 Model)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Child Devices of the Display Adapter (Windows 2000 Model)

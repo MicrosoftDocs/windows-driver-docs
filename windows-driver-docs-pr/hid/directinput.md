@@ -9,7 +9,6 @@ keywords:
 - pointing devices WDK , DirectInput
 - input devices WDK , DirectInput
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectInput Overview

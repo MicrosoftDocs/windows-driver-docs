@@ -2,7 +2,6 @@
 title: Audio INF File Settings
 description: Audio INF File Settings
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Audio INF File Settings

@@ -2,7 +2,6 @@
 title: Event
 description: A generated event name based on event IDs in the device.
 ms.date: 08/31/2021
-ms.localizationpriority: medium
 ---
 
 # Event\#\#\#

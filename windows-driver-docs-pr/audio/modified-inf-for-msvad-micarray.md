@@ -2,7 +2,6 @@
 title: Modified INF for MSVAD Micarray
 description: Modified INF for MSVAD Micarray
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modified INF for MSVAD Micarray

@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS is a WiFiCx TLV that contain
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DISCOVERY\_CHANNEL\_SETTINGS (dot11wificxtypes.hpp)

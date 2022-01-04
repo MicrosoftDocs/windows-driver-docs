@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_SVHDX_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x19D: CLUSTER\_SVHDX\_LIVEDUMP

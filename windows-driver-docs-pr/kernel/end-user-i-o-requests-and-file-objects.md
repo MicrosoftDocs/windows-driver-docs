@@ -3,7 +3,6 @@ title: End-User I/O Requests and File Objects
 description: End-User I/O Requests and File Objects
 keywords: ["IRPs WDK kernel , end-user I/O requests", "end-user I/O requests WDK kernel", "I/O requests WDK kernel", "named file objects WDK kernel", "file objects WDK kernel", "protected subsystems WDK kernel", "subsystem I/O requests WDK kernel", "user I/O requests WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # End-User I/O Requests and File Objects

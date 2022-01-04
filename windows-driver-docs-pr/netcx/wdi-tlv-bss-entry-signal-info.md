@@ -4,7 +4,6 @@ description: WDI_TLV_BSS_ENTRY_SIGNAL_INFO is a WiFiCx TLV that contains signal 
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_BSS_ENTRY_SIGNAL_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BSS\_ENTRY\_SIGNAL\_INFO (dot11wificxtypes.hpp)

@@ -4,7 +4,6 @@ description: Overlying drivers issue OID set requests of OID_RECEIVE_FILTER_CLEA
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_CLEAR_FILTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_CLEAR\_FILTER

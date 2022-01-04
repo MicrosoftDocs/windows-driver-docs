@@ -3,7 +3,6 @@ title: AddDevice Routines in Bus Drivers
 description: AddDevice Routines in Bus Drivers
 keywords: ["bus drivers WDK kernel", "AddDevice routines WDK kernel , bus drivers"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # AddDevice Routines in Bus Drivers

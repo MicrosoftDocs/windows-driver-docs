@@ -4,7 +4,6 @@ description: The OID_GEN_MEDIA_CAPABILITIES OID is obsolete. NDIS and NDIS drive
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MEDIA_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_MEDIA\_CAPABILITIES

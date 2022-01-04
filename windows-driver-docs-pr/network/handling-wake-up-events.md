@@ -5,7 +5,6 @@ keywords:
 - wake-up capabilities WDK networking , handling wake-up events
 - bus-specific wake-up lines WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Wake-Up Events

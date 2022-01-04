@@ -9,7 +9,6 @@ api_name:
 - ndiskd.pendingnbls
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.pendingnbls

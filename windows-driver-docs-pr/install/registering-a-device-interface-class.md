@@ -6,7 +6,6 @@ keywords:
 - registering device interface classes
 - device interface classes WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering a Device Interface Class

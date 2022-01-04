@@ -4,7 +4,6 @@ description: The NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT status indicati
 ms.date: 06/14/2018
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT

@@ -5,7 +5,6 @@ keywords:
 - COM ports WDK serial devices
 - serial devices WDK , COM ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuration of COM Ports

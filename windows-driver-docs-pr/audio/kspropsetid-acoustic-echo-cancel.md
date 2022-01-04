@@ -3,7 +3,6 @@ title: KSPROPSETID\_Acoustic\_Echo\_Cancel
 description: KSPROPSETID\_Acoustic\_Echo\_Cancel
 keywords: ["KSPROPSETID_Acoustic_Echo_Cancel"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Acoustic\_Echo\_Cancel

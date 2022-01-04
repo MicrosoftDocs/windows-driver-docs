@@ -2,7 +2,6 @@
 title: Retrieving a Device Class Property Value
 description: Retrieving a Device Class Property Value
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving a Device Class Property Value

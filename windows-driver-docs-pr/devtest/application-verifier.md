@@ -8,7 +8,6 @@ keywords:
 - AppVerif.exe
 - user-mode application testing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Application Verifier

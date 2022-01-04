@@ -2,7 +2,6 @@
 title: Time Travel Debugging - Troubleshooting
 description: This section describes how to troubleshoot time travel traces.
 ms.date: 10/18/2017
-ms.localizationpriority: medium
 ---
 
 # Time Travel Debugging - Troubleshooting

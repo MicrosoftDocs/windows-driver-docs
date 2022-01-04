@@ -2,7 +2,6 @@
 title: Calculate characters and segments of a draft SMS
 description: Calculate characters and segments of a draft SMS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calculate characters and segments of a draft SMS

@@ -3,7 +3,6 @@ title: Enable heap parameter checking
 description: Enable heap parameter checking
 keywords: ["Enable heap parameter checking (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable heap parameter checking

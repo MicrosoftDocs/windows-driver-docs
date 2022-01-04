@@ -4,7 +4,6 @@ description: WDI_TLV_CIPHER_KEY_ID is a WiFiCx TLV that contains a cipher key ID
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_ID (dot11wificxtypes.hpp)

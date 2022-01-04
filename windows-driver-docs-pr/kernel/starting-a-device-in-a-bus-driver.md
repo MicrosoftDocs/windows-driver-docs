@@ -3,7 +3,6 @@ title: Starting a Device in a Bus Driver
 description: Starting a Device in a Bus Driver
 keywords: ["bus drivers WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Starting a Device in a Bus Driver

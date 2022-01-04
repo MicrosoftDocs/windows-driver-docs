@@ -8,7 +8,6 @@ keywords:
 - network modules WDK Winsock Kernel
 - subsystem WDK Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Architecture

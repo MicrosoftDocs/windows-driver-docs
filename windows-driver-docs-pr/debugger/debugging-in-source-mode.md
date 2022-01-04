@@ -3,7 +3,6 @@ title: Debugging in Source Mode
 description: Debugging in Source Mode
 keywords: ["source debugging", "source mode", "source debugging, overview", "Build utility (build.exe), avoiding optimization"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging in Source Mode

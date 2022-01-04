@@ -2,7 +2,6 @@
 title: Understanding the WaveRT Port Driver
 description: Understanding the WaveRT Port Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Understanding the WaveRT Port Driver

@@ -2,7 +2,6 @@
 title: Audio driver samples
 description: The audio driver sample in this directory provides a starting point for writing a custom audio driver for your device.
 ms.date: 11/15/2019
-ms.localizationpriority: medium
 ---
 
 # Audio driver samples

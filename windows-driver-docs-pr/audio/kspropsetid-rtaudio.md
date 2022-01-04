@@ -2,7 +2,6 @@
 title: KSPROPSETID\_RTAudio
 description: KSPROPSETID\_RTAudio
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_RTAudio

@@ -5,7 +5,6 @@ keywords:
 - HS_NETWORK_IDENTITY structure Network Drivers Starting with Windows Vista
 - PHS_NETWORK_IDENTITY structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_NETWORK\_IDENTITY structure

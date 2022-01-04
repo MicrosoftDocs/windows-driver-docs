@@ -2,7 +2,6 @@
 title: Installing the Updated Version of the Driver Package
 description: Installing the Updated Version of the Driver Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing the Updated Version of the Driver Package

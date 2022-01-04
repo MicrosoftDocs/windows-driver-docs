@@ -3,7 +3,6 @@ title: Driver-Managed IRP Queues
 description: Driver-Managed IRP Queues
 keywords: ["device queues WDK IRPs , objects", "IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs", "internal IRP queues WDK kernel", "cancel-safe IRP queues WDK kernel", "driver-managed IRP queues WDK kernel", "supplemental IRP queues WDK kernel", "interlocked IRP queues WDK kernel", "device queues WDK IRPs", "device queues WDK IRPs , about device queues"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Driver-Managed IRP Queues

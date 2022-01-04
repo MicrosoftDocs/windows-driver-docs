@@ -6,7 +6,6 @@ keywords:
 - font cartridges WDK Unidrv
 - cartridge fonts WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Font Cartridges

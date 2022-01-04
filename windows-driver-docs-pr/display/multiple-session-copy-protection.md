@@ -5,7 +5,6 @@ keywords:
 - copy protection WDK video miniport , multiple session
 - multiple session copy protection WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiple Session Copy Protection

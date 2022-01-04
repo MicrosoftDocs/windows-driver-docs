@@ -4,7 +4,6 @@ description: This topic describes the configuration steps for the Mobile Plans p
 keywords:
 - Windows Mobile Plans configuration, Mobile Plans configuration mobile operators
 ms.date: 02/25/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile Plans service configuration

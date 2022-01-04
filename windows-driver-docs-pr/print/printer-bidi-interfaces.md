@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Bidi Interfaces

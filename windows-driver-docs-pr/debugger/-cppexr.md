@@ -9,7 +9,6 @@ api_name:
 - cppexr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !cppexr

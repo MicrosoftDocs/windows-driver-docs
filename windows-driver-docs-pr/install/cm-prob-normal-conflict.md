@@ -4,7 +4,6 @@ description: CM_PROB_NORMAL_CONFLICT
 keywords:
 - CM_PROB_NORMAL_CONFLICT
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 12 - CM_PROB_NORMAL_CONFLICT

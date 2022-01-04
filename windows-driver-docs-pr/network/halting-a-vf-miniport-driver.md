@@ -2,7 +2,6 @@
 title: Halting a VF Miniport Driver
 description: Halting a VF Miniport Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Halting a VF Miniport Driver

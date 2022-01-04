@@ -9,7 +9,6 @@ keywords:
 - PrintProvider section WDK networking
 - NetworkProvider section WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NetworkProvider and PrintProvider Sections in a Network INF File

@@ -2,7 +2,6 @@
 title: Verifying the Implementation of Container IDs
 description: Verifying the Implementation of Container IDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying the Implementation of Container IDs

@@ -9,7 +9,6 @@ api_name:
 - SpReturnValue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpReturnValue rule (storport)

@@ -6,7 +6,6 @@ keywords:
 - network interface cards WDK networking , power problems
 - NICs WDK networking , power problems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Avoiding NDIS Power Management Problems

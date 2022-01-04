@@ -2,7 +2,6 @@
 title: Device Services Extension API
 description: Device Services Extension API
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Services Extension API

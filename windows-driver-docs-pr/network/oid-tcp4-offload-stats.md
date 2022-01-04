@@ -4,7 +4,6 @@ description: This topic describes the OID_TCP4_OFFLOAD_STATS object identifier (
 keywords:
 - OID_TCP4_OFFLOAD_STATS
 ms.date: 11/06/2017
-ms.localizationpriority: medium
 ---
 
 # OID_TCP4_OFFLOAD_STATS

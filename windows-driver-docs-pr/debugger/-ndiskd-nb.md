@@ -9,7 +9,6 @@ api_name:
 - ndiskd.nb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.nb

@@ -2,7 +2,6 @@
 title: Initializing a Callout Driver
 description: Initializing a Callout Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a Callout Driver

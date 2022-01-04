@@ -2,7 +2,6 @@
 title: Using Device Manager to Uninstall Devices and Driver Packages
 description: Using Device Manager to Uninstall Devices and Driver Packages
 ms.date: 02/10/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q2
 ---
 

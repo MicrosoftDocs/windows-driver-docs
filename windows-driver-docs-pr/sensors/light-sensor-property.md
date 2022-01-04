@@ -2,7 +2,6 @@
 title: Light sensor property
 description: The property key for the light sensor.
 ms.date: 01/04/2018
-ms.localizationpriority: medium
 ---
 
 # Light sensor property

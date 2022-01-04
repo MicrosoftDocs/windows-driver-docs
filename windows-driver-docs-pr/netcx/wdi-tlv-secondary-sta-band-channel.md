@@ -4,7 +4,6 @@ description: WDI_TLV_SECONDARY_STA_BAND_CHANNEL is a WiFiCx TLV that contains a 
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_SECONDARY_STA_BAND_CHANNEL Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_SECONDARY_STA_BAND_CHANNEL (dot11wificxtypes.hpp)

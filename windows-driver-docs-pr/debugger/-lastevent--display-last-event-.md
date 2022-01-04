@@ -9,7 +9,6 @@ api_name:
 - .lastevent (Display Last Event)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .lastevent (Display Last Event)

@@ -2,7 +2,6 @@
 title: UEFI USB function protocol
 description: The USB function protocol defines a generic and lightweight USB transport in the UEFI environment.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # UEFI USB function protocol

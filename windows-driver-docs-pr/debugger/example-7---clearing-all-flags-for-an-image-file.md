@@ -2,7 +2,6 @@
 title: Example 7 Clearing All Flags for an Image File
 description: Example 7 Clearing All Flags for an Image File
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Example 7: Clearing All Flags for an Image File

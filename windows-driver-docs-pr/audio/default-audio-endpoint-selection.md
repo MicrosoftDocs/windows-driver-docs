@@ -4,7 +4,6 @@ description: Default Audio Endpoint Selection
 keywords:
 - audio default endpoint selection
 ms.date: 05/20/2021
-ms.localizationpriority: medium
 ---
 
 # Default Audio Endpoint Selection Starting in Windows 10

@@ -2,7 +2,6 @@
 title: WDI RX path
 description: This section describes the WDI RX path
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI RX path

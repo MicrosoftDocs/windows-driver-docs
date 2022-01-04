@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_QUERY_REMOVE_DEVICE' kernel-mode driver arc
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_REMOVE_DEVICE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_REMOVE\_DEVICE

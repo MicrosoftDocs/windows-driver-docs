@@ -9,7 +9,6 @@ keywords:
 - filter pipeline property bags WDK XPSDrv
 - property bags WDK filter pipeline
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Pipeline Configuration File

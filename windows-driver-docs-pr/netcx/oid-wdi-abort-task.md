@@ -4,7 +4,6 @@ description: The OID_WDI_ABORT_TASK command is a property that is sent down to c
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_ABORT_TASK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_ABORT\_TASK (dot11wificxintf.h)

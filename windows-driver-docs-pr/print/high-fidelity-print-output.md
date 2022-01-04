@@ -7,7 +7,6 @@ keywords:
 - high-fidelity print output WDK XPSDrv
 - XPSDrv printer drivers WDK , high-fidelity print output
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # High-Fidelity Print Output

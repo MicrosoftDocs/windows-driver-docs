@@ -12,7 +12,6 @@ keywords:
 - icons WDK AutoPlay
 - copying icon files
 ms.date: 04/30/2020
-ms.localizationpriority: medium
 ---
 
 # Providing Icons for a Device

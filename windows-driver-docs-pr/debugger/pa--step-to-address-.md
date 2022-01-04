@@ -9,7 +9,6 @@ api_name:
 - pa (Step to Address)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # pa (Step to Address)

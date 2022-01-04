@@ -9,7 +9,6 @@ api_name:
 - lockedpages
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !lockedpages

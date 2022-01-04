@@ -4,7 +4,6 @@ description: This topic describes the WDI_FRAME_ID data type for WDI miniport dr
 keywords:
 - WDI_FRAME_ID, WDK WDI_FRAME_ID network drivers
 ms.date: 11/27/2017
-ms.localizationpriority: medium
 ---
 
 # WDI_FRAME_ID

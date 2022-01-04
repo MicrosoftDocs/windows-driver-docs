@@ -3,7 +3,6 @@ title: No-Wake Timers
 description: Starting with Windows 8.1, drivers can use no-wake timers to avoid unnecessarily waking a processor from a low-power state.
 keywords: ["No-wake timers", "ExXxxTimer routines", "EX_TIMER_NO_WAKE", "EX_TIMER_UNLIMITED_TOLERANCE", "coalescable timers", "timer coalescing", "KeSetCoalescableTimer"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # No-Wake Timers

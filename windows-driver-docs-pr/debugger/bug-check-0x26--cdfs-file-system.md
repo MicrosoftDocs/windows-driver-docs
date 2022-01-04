@@ -9,7 +9,6 @@ api_name:
 - CDFS_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x26: CDFS\_FILE\_SYSTEM

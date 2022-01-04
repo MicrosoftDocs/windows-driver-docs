@@ -6,7 +6,6 @@ keywords:
 - customized print Web pages WDK , installing
 - printer-specific installations WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Pages for a Printer Type

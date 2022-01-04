@@ -2,7 +2,6 @@
 title: Code Example for Challenging a Potentially Disconnected Device
 description: Code Example for Challenging a Potentially Disconnected Device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Example for Challenging a Potentially Disconnected Device

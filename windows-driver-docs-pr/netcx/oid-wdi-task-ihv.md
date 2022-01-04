@@ -4,7 +4,6 @@ description: The OID_WDI_TASK_IHV command is used to start an IHV-initiated task
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_TASK_IHV Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_IHV (dot11wificxintf.h)

@@ -6,7 +6,6 @@ keywords:
 - stream creation WDK AV/C streaming
 - contexts WDK AV/C streaming
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Create a Stream

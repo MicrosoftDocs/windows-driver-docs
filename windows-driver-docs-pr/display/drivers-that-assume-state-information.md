@@ -9,7 +9,6 @@ keywords:
 - blt WDK DirectDraw , state information
 - states WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Drivers That Assume State Information

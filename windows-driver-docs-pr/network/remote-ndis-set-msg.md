@@ -3,7 +3,6 @@ title: 'REMOTE_NDIS_SET_MSG'
 description: 'This message is sent to a Remote NDIS device from a host, when it requires to set the value of some operational parameter on the device.'
 ms.date: 07/31/2017
 
-ms.localizationpriority: medium
 ---
 
 # REMOTE\_NDIS\_SET\_MSG

@@ -7,7 +7,6 @@ keywords:
 - D3DPRASTERCAPS_FOGRANGE
 - D3DRENDERSTATE_RANGEFOGENABLE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Range Based Fog

@@ -9,7 +9,6 @@ api_name:
 - StorPortPassiveFromHwInit
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortPassiveFromHwInit rule (storport)

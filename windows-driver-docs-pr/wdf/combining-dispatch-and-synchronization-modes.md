@@ -11,7 +11,6 @@ keywords:
 - parallel dispatch mode WDK UMDF
 - manual dispatch mode WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Combining Dispatch and Synchronization Modes

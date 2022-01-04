@@ -2,7 +2,6 @@
 title: Calling DisplayConfig functions for a Miracast target
 description: Calling DisplayConfig functions for a Miracast target
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling DisplayConfig functions for a Miracast target

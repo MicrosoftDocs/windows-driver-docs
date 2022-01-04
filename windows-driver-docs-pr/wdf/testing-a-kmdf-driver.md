@@ -9,7 +9,6 @@ keywords:
 - testing drivers WDK , framework-based drivers
 - VerifierOn registry value WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing a WDF Driver (KMDF or UMDF)

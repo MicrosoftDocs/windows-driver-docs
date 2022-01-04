@@ -6,7 +6,6 @@ keywords:
 - extended format WDK Windows 7 display , X channel
 - X channel WDK Windows 7 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interpretation of X Channel

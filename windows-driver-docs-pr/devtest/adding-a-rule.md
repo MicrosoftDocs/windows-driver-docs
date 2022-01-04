@@ -5,7 +5,6 @@ keywords:
 - filtering trace messages, adding rules WDK
 - trace message filters WDK , adding rules
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding a Rule

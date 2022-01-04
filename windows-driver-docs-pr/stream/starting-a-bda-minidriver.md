@@ -5,7 +5,6 @@ keywords:
 - BDA minidrivers WDK AVStream , starting
 - starting BDA minidrivers WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting a BDA Minidriver

@@ -3,7 +3,6 @@ title: KSPROPSETID\_AudioGfx
 description: KSPROPSETID\_AudioGfx
 keywords: ["KSPROPSETID_AudioGfx"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_AudioGfx

@@ -2,7 +2,6 @@
 title: Advertising VMMQ capabilities
 description: Miniport drivers register the VMMQ capability of a NIC during miniport adapter initialization.
 ms.date: 02/28/2021
-ms.localizationpriority: medium
 ---
 
 

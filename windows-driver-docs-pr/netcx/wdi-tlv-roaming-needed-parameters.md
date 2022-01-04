@@ -4,7 +4,6 @@ description: WDI_TLV_ROAMING_NEEDED_PARAMETERS is a WiFiCx TLV that contains the
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_ROAMING_NEEDED_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS (dot11wificxtypes.hpp)

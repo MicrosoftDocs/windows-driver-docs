@@ -2,7 +2,6 @@
 title: Time Travel Debugging - Introduction to Time Travel Debugging objects
 description: This section describes how to use the data model to query time travel traces. 
 ms.date: 04/17/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to Time Travel Debugging objects

@@ -4,7 +4,6 @@ description: WDI_TLV_STATUS is a WiFiCx TLV that contains a status value.
 ms.date: 06/30/2021
 keywords:
  - WDI_TLV_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_STATUS (dot11wificxtypes.hpp)

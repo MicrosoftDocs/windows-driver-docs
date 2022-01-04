@@ -9,7 +9,6 @@ keywords:
 - Serial service WDK
 - serial drivers WDK
 ms.date: 04/17/2020
-ms.localizationpriority: medium
 ---
 
 # Features of Serial and Serenum

@@ -3,7 +3,6 @@ title: Analyzing a Kernel-Mode Dump File
 description: Analyzing a Kernel-Mode Dump File
 keywords: ["dump file, analyzing a kernel-mode dump file"]
 ms.date: 06/05/2020
-ms.localizationpriority: medium
 ---
 
 # Analyzing a Kernel-Mode Dump File

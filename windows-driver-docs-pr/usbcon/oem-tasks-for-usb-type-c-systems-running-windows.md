@@ -2,7 +2,6 @@
 description: This table describes the use cases is supported by Windows 10, and the additional tasks OEMs must perform for those use case to work.
 title: OEM tasks for USB Type-C systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # OEM tasks for USB Type-C systems

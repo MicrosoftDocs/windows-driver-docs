@@ -7,7 +7,6 @@ keywords:
 - IRP dispatch routines WDK file system , registering
 - IRPs WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering IRP Dispatch Routines

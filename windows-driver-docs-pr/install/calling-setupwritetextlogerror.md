@@ -2,7 +2,6 @@
 title: Calling SetupWriteTextLogError
 description: Calling SetupWriteTextLogError
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling SetupWriteTextLogError

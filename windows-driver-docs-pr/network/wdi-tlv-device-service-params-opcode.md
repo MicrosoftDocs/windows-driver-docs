@@ -4,7 +4,6 @@ description: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE is a TLV that contains the opc
 ms.date: 06/15/2018
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE

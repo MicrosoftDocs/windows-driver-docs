@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x168: CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP

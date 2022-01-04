@@ -3,7 +3,6 @@ title: Publishing restrictions
 description: The following items are restricted during publication. You can still create a shipping label for them, but the request will require additional Microsoft review.
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Publishing restrictions

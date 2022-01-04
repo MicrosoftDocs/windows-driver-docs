@@ -9,7 +9,6 @@ api_name:
 - storagekd.storunit
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !storagekd.storunit

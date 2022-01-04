@@ -2,7 +2,6 @@
 title: Display Control Interface Functions
 description: Display Control Interface Functions
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # Display Control Interface Functions

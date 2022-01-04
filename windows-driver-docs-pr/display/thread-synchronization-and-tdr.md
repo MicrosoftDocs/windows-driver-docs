@@ -6,7 +6,6 @@ keywords:
 - synchronization WDK display , TDR
 - TDR (timeout detection and recovery) WDK display , and thread synchronization
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Thread Synchronization and TDR

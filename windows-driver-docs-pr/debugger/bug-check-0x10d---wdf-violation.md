@@ -9,7 +9,6 @@ api_name:
 - WDF_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10D: WDF\_VIOLATION

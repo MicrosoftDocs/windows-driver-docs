@@ -4,7 +4,6 @@ description: The SIO_LOOPBACK_FAST_PATH socket I/O control code allows a WSK app
 ms.date: 08/08/2017
 keywords: 
  -SIO_LOOPBACK_FAST_PATH control code Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_LOOPBACK\_FAST\_PATH control code

@@ -6,7 +6,6 @@ keywords:
 - miniport drivers WDK networking , scatter/gather DMA
 - NDIS miniport drivers WDK , scatter/gather DMA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # New Scatter/Gather DMA Support

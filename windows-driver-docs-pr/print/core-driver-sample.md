@@ -2,7 +2,6 @@
 title: Core Driver Sample
 description: Core Driver Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Core Driver Sample

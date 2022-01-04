@@ -2,7 +2,6 @@
 title: GPIO Interrupts
 description: Some general-purpose I/O (GPIO) controller devices can configure their GPIO pins to function as interrupt request inputs.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GPIO Interrupts

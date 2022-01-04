@@ -2,7 +2,6 @@
 title: Dedicated Film Scanners
 description: Dedicated Film Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dedicated Film Scanners

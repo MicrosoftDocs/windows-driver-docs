@@ -2,7 +2,6 @@
 title: Managing Physical Network Adapter Connection Status
 description: Managing Physical Network Adapter Connection Status
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Physical Network Adapter Connection Status

@@ -4,7 +4,6 @@ description: WDI_TLV_HOTSPOT_INDICATION_ELEMENT is a TLV that contains a Hotspot
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_HOTSPOT_INDICATION_ELEMENT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT

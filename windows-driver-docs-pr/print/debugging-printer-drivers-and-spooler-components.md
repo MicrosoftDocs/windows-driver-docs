@@ -2,7 +2,6 @@
 title: Debugging Printer Drivers and Spooler Components
 description: Debugging Printer Drivers and Spooler Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Printer Drivers and Spooler Components

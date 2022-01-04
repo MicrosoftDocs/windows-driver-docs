@@ -6,7 +6,6 @@ keywords:
 - events WDK video capture
 - EVENTSETID_CROSSBAR
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Crossbar Change Event

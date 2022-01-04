@@ -2,7 +2,6 @@
 title: SCSI Port Driver's Queue Management
 description: SCSI Port Driver's Queue Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SCSI Port Driver's Queue Management

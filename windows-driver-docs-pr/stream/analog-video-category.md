@@ -7,7 +7,6 @@ keywords:
 - PINNAME_VIDEO_ANALOGVIDEOIN
 - analog audio WDK video capture
 ms.date: 07/26/2021
-ms.localizationpriority: medium
 ---
 
 # Analog Video Category

@@ -2,7 +2,6 @@
 title: Example 14 Configuring Special Pool
 description: Example 14 Configuring Special Pool
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Example 14: Configuring Special Pool

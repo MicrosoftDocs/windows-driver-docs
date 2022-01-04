@@ -1,7 +1,6 @@
 ---
 title: ENCRYPTION\_TYPES\_QUALIFIERS
 description: ENCRYPTION\_TYPES\_QUALIFIERS
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -4,7 +4,6 @@ description: WDI_TLV_PROBE_RESPONSE_FRAME is a TLV that contains a probe respons
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PROBE_RESPONSE_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PROBE\_RESPONSE\_FRAME

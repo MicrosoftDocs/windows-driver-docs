@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGI\_DDI\_MULTIPLANE\_OVERLAY\_STEREO\_CAPS enumeration

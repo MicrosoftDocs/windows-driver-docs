@@ -2,7 +2,6 @@
 title: ServiceDescription1
 description: ServiceDescription1
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ServiceDescription1

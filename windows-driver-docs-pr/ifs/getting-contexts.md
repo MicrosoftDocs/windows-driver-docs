@@ -4,7 +4,6 @@ description: Getting Contexts
 keywords:
 - contexts WDK file system minifilter , getting
 ms.date: 01/22/2021
-ms.localizationpriority: medium
 ---
 
 # Getting Contexts

@@ -9,7 +9,6 @@ api_name:
 - PagedCode
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PagedCode rule (storport)

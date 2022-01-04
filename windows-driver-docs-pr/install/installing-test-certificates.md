@@ -2,7 +2,6 @@
 title: Installing Test Certificates
 description: Installing Test Certificates
 ms.date: 07/20/2020
-ms.localizationpriority: medium
 ---
 
 # Installing Test Certificates

@@ -3,7 +3,6 @@ title: Breakpoint Syntax
 description: This topic covers breakpoint syntax
 keywords: debugger, breakpoints on methods, breakpoints, syntax rules for commands, b (breakpoint identifier), literal MASM identifier, templated functions
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Breakpoint Syntax

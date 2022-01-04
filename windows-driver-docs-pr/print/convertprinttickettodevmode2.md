@@ -2,7 +2,6 @@
 title: ConvertPrintTicketToDevMode print ticket support
 description: This method is called by the print subsystem to convert the PrintTicket object to a DEVMODEW structure.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ConvertPrintTicketToDevMode print ticket support

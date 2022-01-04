@@ -3,7 +3,6 @@ title: Managing User Roles
 ms.topic: article
 description: Managing user roles in the Partner Center
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing User Roles

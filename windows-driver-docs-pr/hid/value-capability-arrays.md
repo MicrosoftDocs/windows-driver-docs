@@ -7,7 +7,6 @@ keywords:
 - capabilities WDK HID collections
 - usage value arrays WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Value Capability Arrays

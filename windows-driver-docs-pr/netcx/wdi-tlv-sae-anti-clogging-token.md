@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN is a WiFiCx TLV that contains the a
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_SAE_ANTI_CLOGGING_TOKEN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_SAE_ANTI_CLOGGING_TOKEN (dot11wificxtypes.hpp)

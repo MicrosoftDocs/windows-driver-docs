@@ -3,7 +3,6 @@ title: Registry Run-Time Library Routines
 description: Registry Run-Time Library Routines
 keywords: ["registry WDK kernel , run-time library routines", "driver registry information WDK kernel , run-time library routines", "run-time library routines WDK kernel", "RtlXxxRegistryYyy routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Run-Time Library Routines

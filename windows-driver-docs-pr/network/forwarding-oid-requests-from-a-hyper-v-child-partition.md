@@ -2,7 +2,6 @@
 title: Forwarding OID Requests from a Hyper-V Child Partition
 description: Forwarding OID Requests from a Hyper-V Child Partition
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Forwarding OID Requests from a Hyper-V Child Partition

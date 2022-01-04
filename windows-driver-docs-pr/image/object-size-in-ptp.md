@@ -2,7 +2,6 @@
 title: Object Size in PTP
 description: Object Size in PTP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Object Size in PTP

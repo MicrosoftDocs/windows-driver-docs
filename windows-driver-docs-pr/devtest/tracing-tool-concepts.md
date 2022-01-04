@@ -5,7 +5,6 @@ keywords:
 - tracing WDK , terminology
 - software tracing WDK , terminology
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tracing Tool Concepts

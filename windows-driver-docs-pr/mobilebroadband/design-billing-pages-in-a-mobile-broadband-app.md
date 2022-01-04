@@ -2,7 +2,6 @@
 title: Design billing pages in a mobile broadband app
 description: Design billing pages in a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design billing pages in a mobile broadband app

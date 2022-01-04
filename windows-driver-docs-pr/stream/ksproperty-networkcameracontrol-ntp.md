@@ -2,7 +2,6 @@
 title: KSPROPERTY_NETWORKCAMERACONTROL_NTP
 description: Enables aquiring the NTP server on a Onvif protocol camera.
 ms.date: 10/05/2020
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_NETWORKCAMERACONTROL_NTP

@@ -5,7 +5,6 @@ keywords:
 - Sysfund tests
 - data-driven tests
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Configure the machine for testing

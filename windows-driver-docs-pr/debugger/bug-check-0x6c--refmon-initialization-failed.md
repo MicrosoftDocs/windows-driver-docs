@@ -9,7 +9,6 @@ api_name:
 - REFMON_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x6C: REFMON\_INITIALIZATION\_FAILED

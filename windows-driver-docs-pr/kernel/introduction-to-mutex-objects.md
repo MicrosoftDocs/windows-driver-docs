@@ -3,7 +3,6 @@ title: Introduction to Mutex Objects
 description: Introduction to Mutex Objects
 keywords: ["kernel dispatcher objects WDK , mutex objects", "dispatcher objects WDK kernel , mutex objects", "mutex objects WDK kernel", "mutually exclusive access WDK kernel", "waiting on mutex objects"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Introduction to Mutex Objects

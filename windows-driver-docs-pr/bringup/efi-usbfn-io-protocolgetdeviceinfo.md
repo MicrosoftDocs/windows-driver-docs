@@ -2,7 +2,6 @@
 title: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
 description: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_IO_PROTOCOL.GetDeviceInfo

@@ -5,7 +5,6 @@ keywords:
 - printer graphics DLL WDK , building
 - graphics DLL WDK printer , building
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Building a Printer Graphics DLL

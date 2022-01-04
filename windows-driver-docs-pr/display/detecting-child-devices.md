@@ -7,7 +7,6 @@ keywords:
 - detecting child devices WDK video miniport
 - HwVidGetVideoChildDescriptor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Detecting Child Devices

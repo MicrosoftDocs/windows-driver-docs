@@ -4,7 +4,6 @@ description: Reporting Status of a Protected Output
 keywords:
 - OPM WDK display , status of protected output
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Status of a Protected Output

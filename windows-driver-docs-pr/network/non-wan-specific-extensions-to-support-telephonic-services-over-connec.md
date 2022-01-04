@@ -8,7 +8,6 @@ keywords:
 - NDIS/TAPI translation OIDs WDK networking
 - connection-oriented NDIS WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented NDIS

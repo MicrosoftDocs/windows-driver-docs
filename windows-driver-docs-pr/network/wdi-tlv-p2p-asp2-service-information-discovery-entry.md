@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY is a TLV that 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_ASP2\_SERVICE\_INFORMATION\_DISCOVERY\_ENTRY

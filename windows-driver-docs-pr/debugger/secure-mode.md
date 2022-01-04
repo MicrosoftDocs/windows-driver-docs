@@ -3,7 +3,6 @@ title: Secure Mode
 description: Secure Mode
 keywords: ["Secure Mode"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Secure Mode

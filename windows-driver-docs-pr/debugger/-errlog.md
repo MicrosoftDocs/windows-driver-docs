@@ -9,7 +9,6 @@ api_name:
 - errlog
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !errlog

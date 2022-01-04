@@ -9,7 +9,6 @@ keywords:
 - output bins WDK printer
 - input bins WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TCP/IP Schema Extensions for Input and Output Bins

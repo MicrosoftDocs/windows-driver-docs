@@ -4,7 +4,6 @@ description: Implementing File Systems to Minimize Security Threats
 keywords:
 - security WDK file systems , minimizing threats
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing File Systems to Minimize Security Threats

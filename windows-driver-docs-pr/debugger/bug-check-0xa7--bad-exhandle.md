@@ -9,7 +9,6 @@ api_name:
 - BAD_EXHANDLE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA7: BAD\_EXHANDLE

@@ -9,7 +9,6 @@ api_name:
 - BLUETOOTH_ERROR_RECOVERY_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A6: BLUETOOTH\_ERROR\_RECOVERY\_LIVEDUMP

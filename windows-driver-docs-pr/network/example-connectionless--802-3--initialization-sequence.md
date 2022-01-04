@@ -2,7 +2,6 @@
 title: Example Connectionless (802.3) Initialization Sequence
 description: Example Connectionless (802.3) Initialization Sequence
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example Connectionless (802.3) Initialization Sequence

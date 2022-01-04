@@ -2,7 +2,6 @@
 title: WDI TLV parser interface overview
 description: This section describes an overview of the WDI TLV parser interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI TLV parser interface overview

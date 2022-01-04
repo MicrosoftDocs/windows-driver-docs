@@ -3,7 +3,6 @@ title: A Single DispatchCreateClose Routine
 description: A Single DispatchCreateClose Routine
 keywords: ["dispatch routines WDK kernel , DispatchCreateClose routine", "DispatchCreateClose routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # A Single DispatchCreateClose Routine

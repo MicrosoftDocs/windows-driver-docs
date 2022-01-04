@@ -4,7 +4,6 @@ description: WDI_TLV_ASSOCIATION_REQUEST_FRAME is a TLV that contains the associ
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_REQUEST_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_REQUEST\_FRAME

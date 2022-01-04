@@ -11,7 +11,6 @@ keywords:
 - INF files WDK PCMCIA bus
 - PcmciaExclusiveIrq
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF Override for Configuring PC Card Interrupts

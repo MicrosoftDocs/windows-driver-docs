@@ -1,7 +1,6 @@
 ---
 title: MPIO\_GET\_DESCRIPTOR WMI Class
 description: MPIO\_GET\_DESCRIPTOR WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -2,7 +2,6 @@
 title: Kernel Streaming Event Sets
 description: Provides information about kernel streaming event sets.
 ms.date: 10/11/2021
-ms.localizationpriority: medium
 ---
 
 # Kernel Streaming Event Sets

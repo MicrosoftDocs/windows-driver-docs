@@ -2,7 +2,6 @@
 title: EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState
 description: Provides information about EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState.
 ms.date: 08/20/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState

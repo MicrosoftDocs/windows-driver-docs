@@ -9,7 +9,6 @@ api_name:
 - .pop (Restore Debugger State)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .pop (Restore Debugger State)

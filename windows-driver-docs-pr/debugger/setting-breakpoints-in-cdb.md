@@ -2,7 +2,6 @@
 title: Setting Breakpoints in CDB
 description: Setting Breakpoints in CDB
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Breakpoints in CDB

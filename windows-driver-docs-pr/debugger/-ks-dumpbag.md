@@ -9,7 +9,6 @@ api_name:
 - ks.dumpbag
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.dumpbag

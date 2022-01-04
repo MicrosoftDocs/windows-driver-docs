@@ -2,7 +2,6 @@
 title: Resetting a Virtual Function
 description: Resetting a Virtual Function
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Resetting a Virtual Function

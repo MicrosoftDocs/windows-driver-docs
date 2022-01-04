@@ -2,7 +2,6 @@
 title: Stream Latency During Playback
 description: Stream Latency During Playback
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stream Latency During Playback

@@ -4,7 +4,6 @@ description: OID_WWAN_SMS_DELETE deletes SMS text messages stored in the MB devi
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_DELETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SMS\_DELETE

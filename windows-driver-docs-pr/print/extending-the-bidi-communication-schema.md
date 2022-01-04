@@ -7,7 +7,6 @@ keywords:
 - extensions WDK bidi communication
 - bidi extension files WDK bidi communication schema
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extending the Bidi Communication Schema

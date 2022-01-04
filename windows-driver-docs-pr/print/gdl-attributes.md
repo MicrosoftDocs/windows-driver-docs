@@ -10,7 +10,6 @@ keywords:
 - keywords WDK GDL
 - values WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Attributes

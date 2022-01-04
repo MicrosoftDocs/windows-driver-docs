@@ -2,7 +2,6 @@
 title: Send SMS by using custom character sets
 description: Send SMS by using custom character sets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Send SMS by using custom character sets

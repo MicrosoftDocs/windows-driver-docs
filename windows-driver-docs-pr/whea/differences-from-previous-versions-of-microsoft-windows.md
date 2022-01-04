@@ -7,7 +7,6 @@ keywords:
 - hardware errors WDK WHEA , earlier Windows versions
 - errors WDK WHEA , earlier Windows versions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Differences from Previous Versions of Microsoft Windows

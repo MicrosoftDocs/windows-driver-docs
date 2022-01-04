@@ -4,7 +4,6 @@ description: WDI_TLV_AP_BAND_CHANNEL is a WiFiCx TLV that specifies access point
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_AP_BAND_CHANNEL Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_AP\_BAND\_CHANNEL (dot11wificxtypes.hpp)

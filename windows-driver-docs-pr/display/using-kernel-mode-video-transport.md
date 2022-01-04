@@ -8,7 +8,6 @@ keywords:
 - video transport kernel-mode WDK DirectDraw , about kernel-mode video transport
 - video capture WDK video transport kernel-mode
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Kernel-Mode Video Transport

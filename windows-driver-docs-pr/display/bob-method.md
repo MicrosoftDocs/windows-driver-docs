@@ -12,7 +12,6 @@ keywords:
 - bob WDK DirectDraw
 - deinterlacing WDK video port extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bob Method

@@ -3,7 +3,6 @@ title: Registering as a WMI Data Provider
 description: Registering as a WMI Data Provider
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering as a WMI Data Provider

@@ -4,7 +4,6 @@ description: Overview of VRAM Capture in AVStream
 keywords:
 - VRAM capture WDK AVStream , about VRAM capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of VRAM Capture in AVStream

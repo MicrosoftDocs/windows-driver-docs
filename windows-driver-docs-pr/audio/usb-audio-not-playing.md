@@ -2,7 +2,6 @@
 title: USB Audio Not Playing 
 description: Audio Drivers Event Sets
 ms.date: 12/19/2019
-ms.localizationpriority: medium
 ---
 
 # USB Audio Not Playing (KB 4045958) "Audio services not responding" error and USB audio device does not work in Windows 10 version 1703

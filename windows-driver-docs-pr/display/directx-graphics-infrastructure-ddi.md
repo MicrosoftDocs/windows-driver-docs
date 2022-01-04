@@ -2,7 +2,6 @@
 title: DirectX Graphics Infrastructure DDI
 description: DirectX Graphics Infrastructure DDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectX Graphics Infrastructure DDI

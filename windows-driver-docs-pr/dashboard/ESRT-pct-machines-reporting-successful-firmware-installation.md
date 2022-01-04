@@ -3,7 +3,6 @@ title: Percent of machines reporting successful firmware installation from ESRT
 description: The measure aggregates telemetry from a 28-day sliding window into a ratio of successful installs over attempts
 ms.topic: article
 ms.date: 06/23/2021
-ms.localizationpriority: medium
 ---
  
 # Percent of machines reporting successful firmware installation from ESRT

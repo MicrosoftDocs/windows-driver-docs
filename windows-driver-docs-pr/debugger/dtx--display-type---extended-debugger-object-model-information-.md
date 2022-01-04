@@ -9,7 +9,6 @@ api_name:
 - dtx (Display Type - Extended Debugger Object Model Information)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # <span id="debugger.dtx__display_type_-_extended_debugger_object_model_information_"></span>dtx (Display Type - Extended Debugger Object Model Information)

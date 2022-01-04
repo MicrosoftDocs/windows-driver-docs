@@ -3,7 +3,6 @@ title: System Power Actions
 description: System Power Actions
 keywords: ["system power actions WDK power management", "system power states WDK kernel , power actions", "power actions WDK power management", "POWER_ACTION"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # System Power Actions

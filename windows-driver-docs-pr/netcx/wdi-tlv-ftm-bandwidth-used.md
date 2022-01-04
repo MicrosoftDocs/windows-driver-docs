@@ -4,7 +4,6 @@ description: WDI_TLV_FTM_BANDWIDTH_USED is a WiFiCx TLV that contains the negoti
 ms.date: 07/30/2021
 keywords:
  - WDI_TLV_FTM_BANDWIDTH_USED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_FTM_BANDWIDTH_USED (dot11wificxtypes.hpp)

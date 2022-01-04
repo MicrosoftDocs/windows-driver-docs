@@ -9,7 +9,6 @@ api_name:
 - memusage
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !memusage

@@ -9,7 +9,6 @@ api_name:
 - .call (Call Function)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .call (Call Function)

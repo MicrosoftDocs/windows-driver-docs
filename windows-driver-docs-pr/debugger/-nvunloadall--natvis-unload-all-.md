@@ -9,7 +9,6 @@ api_name:
 - .nvunloadall (NatVis Unload All)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .nvunloadall (NatVis Unload All)

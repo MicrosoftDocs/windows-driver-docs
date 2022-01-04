@@ -4,7 +4,6 @@ description: The OID_WDI_DEVICE_SERVICE_COMMAND command is used to set or get pa
 ms.date: 07/31/2021
 keywords:
  - OID_WDI_DEVICE_SERVICE_COMMAND Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WDI_DEVICE_SERVICE_COMMAND (dot11wificxintf.h)

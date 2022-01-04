@@ -5,7 +5,6 @@ keywords:
 - WDK file systems filter driver , reparse points
 - reparse points WDK file systems
 ms.date: 09/10/2020
-ms.localizationpriority: medium
 ---
 
 # About reparse points

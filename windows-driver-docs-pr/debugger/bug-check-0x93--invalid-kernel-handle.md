@@ -9,7 +9,6 @@ api_name:
 - INVALID_KERNEL_HANDLE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x93: INVALID\_KERNEL\_HANDLE

@@ -2,7 +2,6 @@
 title: Priority-based Flow Control (PFC)
 description: Priority-based Flow Control (PFC)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Priority-based Flow Control (PFC)

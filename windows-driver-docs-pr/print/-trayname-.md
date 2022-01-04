@@ -2,7 +2,6 @@
 title: TrayName (InputBins)
 description: An IHV-mapped property name for an input tray.
 ms.date: 08/31/2021
-ms.localizationpriority: medium
 ---
 
 # TrayName (InputBins)

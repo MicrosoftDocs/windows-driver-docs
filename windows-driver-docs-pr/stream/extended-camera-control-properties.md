@@ -2,7 +2,6 @@
 title: Extended Camera Control Properties
 description: The extended camera control interface is used to control camera features during image capture.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Camera Control Properties

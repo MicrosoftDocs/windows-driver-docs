@@ -4,7 +4,6 @@ description: WDI_TLV_KCK_CONTENT is a TLV that contains an IEEE 802.11 key confi
 ms.date: 05/07/2021
 keywords:
  - WDI_TLV_KCK_CONTENT Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_KCK\_CONTENT

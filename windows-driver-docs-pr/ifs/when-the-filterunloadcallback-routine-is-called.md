@@ -6,7 +6,6 @@ keywords:
 - non-mandatory unload WDK file system minifilter
 - mandatory unload WDK file system minifilter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # When the FilterUnloadCallback Routine Is Called

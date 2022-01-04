@@ -9,7 +9,6 @@ api_name:
 - KsMarkPendingIrp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsMarkPendingIrp rule ()

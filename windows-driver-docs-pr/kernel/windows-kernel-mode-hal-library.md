@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode HAL Library
 description: Windows Kernel-Mode HAL Library
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

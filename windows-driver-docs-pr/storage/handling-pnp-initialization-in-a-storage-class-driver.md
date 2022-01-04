@@ -10,7 +10,6 @@ keywords:
 - storage class drivers WDK , initializing
 - class drivers WDK storage , initializing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling PnP Initialization in a Storage Class Driver

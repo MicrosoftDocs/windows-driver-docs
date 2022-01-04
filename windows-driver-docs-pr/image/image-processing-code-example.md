@@ -2,7 +2,6 @@
 title: Image Processing Code Example
 description: Image Processing Code Example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Image Processing Code Example

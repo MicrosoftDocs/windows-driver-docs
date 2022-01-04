@@ -2,7 +2,6 @@
 title: Camera Driver UI Extension Sample
 description: Camera Driver UI Extension Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Camera Driver UI Extension Sample

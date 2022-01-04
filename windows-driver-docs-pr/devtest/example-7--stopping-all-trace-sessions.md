@@ -5,7 +5,6 @@ keywords:
 - trace sessions WDK , stopping
 - stopping trace sessions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 7: Stopping All Trace Sessions

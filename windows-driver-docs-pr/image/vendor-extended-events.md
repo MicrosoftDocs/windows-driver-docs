@@ -2,7 +2,6 @@
 title: Vendor-Extended Events
 description: Vendor-Extended Events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vendor-Extended Events

@@ -9,7 +9,6 @@ api_name:
 - SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD4: SYSTEM\_SCAN\_AT\_RAISED\_IRQL\_CAUGHT\_IMPROPER\_DRIVER\_UNLOAD

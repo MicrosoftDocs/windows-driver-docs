@@ -7,7 +7,6 @@ keywords:
 - GDI print path WDK XPSDrv
 - XPS print path WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Print Path Overview

@@ -4,7 +4,6 @@ description: WDI_TLV_SAE_CONFIRM_REQUEST is a TLV that contains parameters for a
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_CONFIRM_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

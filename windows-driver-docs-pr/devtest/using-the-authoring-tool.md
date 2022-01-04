@@ -4,7 +4,6 @@ description: Using the Device Metadata Authoring Wizard
 keywords:
 - Using the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Device Metadata Authoring Wizard

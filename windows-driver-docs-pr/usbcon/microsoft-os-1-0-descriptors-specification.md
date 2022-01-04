@@ -2,7 +2,6 @@
 title: Microsoft OS 1.0 Descriptors Specification
 description: Microsoft OS 1.0 Descriptors Specification
 ms.date: 07/08/2019
-ms.localizationpriority: medium
 ---
 
 # Microsoft OS 1.0 Descriptors Specification

@@ -2,7 +2,6 @@
 title: Building a WIA Microdriver
 description: Building a WIA Microdriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Building a WIA Microdriver

@@ -3,7 +3,6 @@ title: Edit Copy
 description: Edit Copy
 keywords: ["Edit Copy", "text, Edit Copy"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Copy

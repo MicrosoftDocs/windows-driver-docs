@@ -10,7 +10,6 @@ keywords:
 - debugging drivers WDK UMDF , enabling a debugger
 - driver debugging WDK UMDF , enabling a debugger
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to Enable Debugging of a UMDF Driver

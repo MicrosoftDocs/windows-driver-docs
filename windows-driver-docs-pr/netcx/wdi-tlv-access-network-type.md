@@ -4,7 +4,6 @@ description: WDI_TLV_ACCESS_NETWORK_TYPE is a WiFiCx TLV that contains an Access
 ms.date: 08/30/2021
 keywords:
  - WDI_TLV_ACCESS_NETWORK_TYPE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ACCESS\_NETWORK\_TYPE (dot11wificxtypes.hpp)

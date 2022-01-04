@@ -8,7 +8,6 @@ keywords:
 - non-VGA-compatible video miniport drivers WDK
 - SVGA WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VGA-Compatible Miniport Driver's HwVidStartIO

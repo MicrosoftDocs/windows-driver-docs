@@ -2,7 +2,6 @@
 title: Bluetooth Bypass Guidelines for Audio Drivers
 description: This topic describes how audio data can be rerouted past the Bluetooth host controller interface (HCI) to be processed in system-on-a-chip (SoC) solution.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Bypass Guidelines for Audio Drivers

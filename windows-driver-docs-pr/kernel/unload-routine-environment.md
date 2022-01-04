@@ -3,7 +3,6 @@ title: Unload Routine Environment
 description: Unload Routine Environment
 keywords: ["Unload routines WDK kernel , environment"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Unload Routine Environment

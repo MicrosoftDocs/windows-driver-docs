@@ -3,7 +3,6 @@ title: ExXxxTimer Routines and EX_TIMER Objects
 description: Starting with Windows 8.1, a comprehensive set of ExXxxTimer routines is available to manage timers.
 keywords: ["timers WDK kernel", "timer objects WDK kernel", "timer objects WDK kernel , about timer objects", "kernel dispatcher objects WDK , timer objects", "dispatcher objects WDK kernel , timer objects", "high-resolution timers WDK kernel", "no-wake timers WDK kernel", "EX_TIMER", "ExXxxTimer routines", "ExAllocateTimer", "ExDeleteTimer", "ExSetTimer", "ExCancelTimer", "ExTimerCallback"]
 ms.date: 07/21/2021
-ms.localizationpriority: medium
 ---
 
 # ExXxxTimer Routines and EX_TIMER Objects

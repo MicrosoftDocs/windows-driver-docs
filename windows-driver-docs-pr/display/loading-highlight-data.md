@@ -7,7 +7,6 @@ keywords:
 - highlighted rectangular area WDK DirectX VA
 - rectangular highlighted area WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Loading Highlight Data

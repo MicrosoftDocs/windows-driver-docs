@@ -4,7 +4,6 @@ description: WDI_TLV_SSID is a TLV that contains an SSID.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SSID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SSID

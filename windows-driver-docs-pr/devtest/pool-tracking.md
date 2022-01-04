@@ -8,7 +8,6 @@ keywords:
 - memory leaks WDK Driver Verifier
 - unfreed memory allocations WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pool Tracking

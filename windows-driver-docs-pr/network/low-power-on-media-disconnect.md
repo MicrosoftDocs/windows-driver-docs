@@ -2,7 +2,6 @@
 title: Low Power on Media Disconnect
 description: Low Power on Media Disconnect
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Low Power on Media Disconnect

@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_RedirectSessionInfo WMI Class
 description: ISCSI\_RedirectSessionInfo WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

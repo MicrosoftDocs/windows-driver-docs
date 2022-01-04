@@ -4,7 +4,6 @@ description: PNPCPU General Commands
 keywords:
 - PNPCPU WDK , commands
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PNPCPU General Commands

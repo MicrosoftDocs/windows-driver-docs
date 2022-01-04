@@ -11,7 +11,6 @@ keywords:
 - DO_DIRECT_IO
 - propagating DO_DIRECT_IO flag
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Propagating the DO\_BUFFERED\_IO and DO\_DIRECT\_IO Flags

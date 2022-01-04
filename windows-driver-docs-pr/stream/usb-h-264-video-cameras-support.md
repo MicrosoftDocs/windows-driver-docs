@@ -2,7 +2,6 @@
 title: USB H.264 Video Cameras Support
 description: Beginning with Windows 8, the H.264 video codec (encoder/decoder) is supported.
 ms.date: 06/19/2020
-ms.localizationpriority: medium
 ---
 
 # USB H.264 video cameras support

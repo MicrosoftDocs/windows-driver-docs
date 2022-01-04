@@ -2,7 +2,6 @@
 title: WIA minidriver capabilities
 description: All WIA minidrivers must define the device's ability to handle notification events and commands. This section describes these minidriver capabilities.
 ms.date: 07/06/2020
-ms.localizationpriority: medium
 ---
 
 # WIA minidriver capabilities

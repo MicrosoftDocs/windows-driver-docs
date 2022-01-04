@@ -4,7 +4,6 @@ description: OID_WWAN_UICC_ACCESS_RECORD accesses a UICC linear fixed or cyclic 
 ms.date: 04/10/2019
 keywords: 
  -OID_WWAN_UICC_ACCESS_RECORD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

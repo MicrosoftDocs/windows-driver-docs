@@ -12,7 +12,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , text output, managing and optimizing fonts
 - drawing WDK GDI , fonts, managing and optimizing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing and Optimizing Fonts

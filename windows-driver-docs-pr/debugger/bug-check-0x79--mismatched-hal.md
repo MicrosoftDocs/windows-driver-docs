@@ -9,7 +9,6 @@ api_name:
 - MISMATCHED_HAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x79: MISMATCHED\_HAL

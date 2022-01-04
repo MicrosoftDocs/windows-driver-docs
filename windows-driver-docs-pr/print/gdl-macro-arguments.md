@@ -6,7 +6,6 @@ keywords:
 - macros WDK GDL , arguments
 - macros WDK GDL , examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Macro Arguments

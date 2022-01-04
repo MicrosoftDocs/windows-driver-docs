@@ -8,7 +8,6 @@ keywords:
 - protected video WDK COPP , mapping COPP DDI
 - mapping COPP DDI WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping the COPP DDI to DirectDraw and DirectX VA

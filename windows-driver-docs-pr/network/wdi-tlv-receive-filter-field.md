@@ -4,7 +4,6 @@ description: WDI_TLV_RECEIVE_FILTER_FIELD is a TLV that contains a receive filte
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RECEIVE_FILTER_FIELD (0x65) Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_RECEIVE\_FILTER\_FIELD (0x65)

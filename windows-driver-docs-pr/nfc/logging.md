@@ -8,7 +8,6 @@ keywords:
 - NFP
 description: NFC logging for functions/methods, NCI packets/protocols, and other verbose logging.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Logging

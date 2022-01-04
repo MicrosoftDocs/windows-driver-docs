@@ -6,7 +6,6 @@ keywords:
 - Pscript WDK print , escapes
 - escapes WDK Pscript
 ms.date: 03/28/2021
-ms.localizationpriority: medium
 ---
 
 # Pscript-Supported Escapes

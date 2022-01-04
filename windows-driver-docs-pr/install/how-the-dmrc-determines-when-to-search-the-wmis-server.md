@@ -2,7 +2,6 @@
 title: How the DMRC Determines When to Search the WMIS Server
 description: How the DMRC Determines When to Search the WMIS Server
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How the DMRC Determines When to Search the WMIS Server

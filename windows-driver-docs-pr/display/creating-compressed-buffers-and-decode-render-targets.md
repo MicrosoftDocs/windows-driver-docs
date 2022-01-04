@@ -10,7 +10,6 @@ keywords:
 - buffers WDK DirectX VA
 - render targets WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Compressed Buffers and Decode Render Targets

@@ -6,7 +6,6 @@ keywords:
 - NMR WDK Winsock Kernel
 - unloading WSK clients
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Attaching the WSK Client to the WSK Subsystem

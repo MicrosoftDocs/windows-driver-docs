@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Executive Support Library
 description: Windows Kernel-Mode Executive Support Library
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

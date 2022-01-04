@@ -3,7 +3,6 @@ title: Debug Event Filters
 description: Debug Event Filters
 keywords: ["Debug Event Filters", "exceptions, Debug Event Filters", "events, Debug Event Filters"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Event Filters

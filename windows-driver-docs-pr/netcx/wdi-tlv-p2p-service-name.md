@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_SERVICE_NAME is a WiFiCx TLV that contains the name of 
 ms.date: 06/17/2021
 keywords:
  - WDI_TLV_P2P_SERVICE_NAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_SERVICE\_NAME (dot11wificxtypes.hpp)

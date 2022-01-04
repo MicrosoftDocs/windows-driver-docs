@@ -4,7 +4,6 @@ description: This topic describes general operational OIDs for connection-orient
 keywords:
 - General operational OIDs connection-oriented miniport drivers
 ms.date: 11/02/2017
-ms.localizationpriority: medium
 ---
 
 # General operational OIDs for connection-oriented miniport drivers

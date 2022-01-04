@@ -6,7 +6,6 @@ keywords:
 - previous versions
 - WDK
 ms.date: 10/25/2021
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

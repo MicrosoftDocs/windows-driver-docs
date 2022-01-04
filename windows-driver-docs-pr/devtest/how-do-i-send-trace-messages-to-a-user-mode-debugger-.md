@@ -2,7 +2,6 @@
 title: How do I send trace messages to a user-mode debugger
 description: How do I send trace messages to a user-mode debugger
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I send trace messages to a user-mode debugger?

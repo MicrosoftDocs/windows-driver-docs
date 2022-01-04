@@ -9,7 +9,6 @@ keywords:
 - cryptography WDK COPP
 - encryption WDK COPP
 ms.date: 11/17/2021
-ms.localizationpriority: medium
 ---
 
 # Cryptographic Primitives Used by COPP

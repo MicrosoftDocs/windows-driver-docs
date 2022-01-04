@@ -9,7 +9,6 @@ keywords:
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class , autoupdate events
 ms.date: 09/17/2021
-ms.localizationpriority: medium
 ---
 
 # Supporting Autoupdate Events with Extension Units

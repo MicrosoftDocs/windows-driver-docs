@@ -4,7 +4,6 @@ description: Connecting to a Parallel Device
 keywords:
 - parallel devices WDK , connections
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connecting to a Parallel Device

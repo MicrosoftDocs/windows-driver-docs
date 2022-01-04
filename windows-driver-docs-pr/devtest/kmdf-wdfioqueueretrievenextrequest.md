@@ -9,7 +9,6 @@ api_name:
 - WdfIoQueueRetrieveNextRequest
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WdfIoQueueRetrieveNextRequest rule (kmdf)

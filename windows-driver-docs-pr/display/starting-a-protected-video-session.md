@@ -7,7 +7,6 @@ keywords:
 - COPP WDK DirectX VA , starting protected video session
 - protected video WDK COPP , starting session
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting a Protected Video Session

@@ -4,7 +4,6 @@ description: Restrictions on SCSI Miniport Drivers that Manage the Boot Drive
 keywords:
 - SCSI miniport drivers WDK storage , boot drives
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Restrictions on SCSI Miniport Drivers that Manage the Boot Drive

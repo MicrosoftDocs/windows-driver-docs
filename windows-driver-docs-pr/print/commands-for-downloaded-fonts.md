@@ -5,7 +5,6 @@ keywords:
 - downloaded font commands WDK Unidrv
 - font commands WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Commands for Downloaded Fonts

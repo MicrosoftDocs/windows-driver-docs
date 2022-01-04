@@ -9,7 +9,6 @@ api_name:
 - DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1C4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP

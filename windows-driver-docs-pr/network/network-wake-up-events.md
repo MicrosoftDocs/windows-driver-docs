@@ -11,7 +11,6 @@ keywords:
 - power management WDK NDIS miniport , wake-up capabilities
 - wake-up frames WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # About Network Wake-Up Events

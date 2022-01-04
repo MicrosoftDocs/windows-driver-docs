@@ -2,14 +2,13 @@
 title: Step 1 The New Device is Identified
 description: Step 1 The New Device is Identified
 ms.date: 11/18/2021
-ms.localizationpriority: High
 ---
 
 # Step 1: The New Device is Identified
 
 When a [bus driver](../kernel/bus-drivers.md) reports a new device to the Windows operating system, Windows needs to query information about this device from the bus driver to identify the device. This information is needed for, among other reasons, to identify the [driver package(s)](driver-packages.md) that may apply to this device.
 
-The primary information needed from the [bus driver](../kernel/bus-drivers.md) in order to choose a driver package to install on the device are the device's [hardware identifieriers (IDs)](hardware-ids.md) and [compatible IDs](compatible-ids.md). Windows uses these IDs to find the closest match between a device and a [driver package](driver-packages.md) in order to choose a driver package to install on the device. For more information about hardware IDs and compatible IDs, see [Device Identification Strings](device-identification-strings.md).
+The primary information needed from the [bus driver](../kernel/bus-drivers.md) in order to choose a driver package to install on the device are the device's [hardware identifiers (IDs)](hardware-ids.md) and [compatible IDs](compatible-ids.md). Windows uses these IDs to find the closest match between a device and a [driver package](driver-packages.md) in order to choose a driver package to install on the device. For more information about hardware IDs and compatible IDs, see [Device Identification Strings](device-identification-strings.md).
 
 The format of a hardware ID or compatible ID typically consists of the following:
 

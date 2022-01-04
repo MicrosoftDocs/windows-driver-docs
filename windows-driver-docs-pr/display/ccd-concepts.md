@@ -9,7 +9,6 @@ keywords:
 - CCD concepts WDK Windows 7 display
 - CCD concepts WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CCD Concepts

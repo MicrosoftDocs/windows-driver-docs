@@ -7,7 +7,6 @@ keywords:
 - DVD 720-wide example WDK DirectX VA
 - 720-wide example WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DVD 720-Wide Example

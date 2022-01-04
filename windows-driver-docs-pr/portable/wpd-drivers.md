@@ -2,7 +2,6 @@
 description: WPD Drivers
 title: WPD Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WPD Drivers

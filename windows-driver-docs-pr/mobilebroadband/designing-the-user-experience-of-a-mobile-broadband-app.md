@@ -2,7 +2,6 @@
 title: Introduction to designing the user experience of a mobile broadband app
 description: Introduction to designing the user experience of a mobile broadband app
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to designing the user experience of a mobile broadband app

@@ -2,7 +2,6 @@
 title: Roadmap for Developing WFP Callout Drivers
 description: Roadmap for Developing WFP Callout Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing WFP Callout Drivers

@@ -2,7 +2,6 @@
 title: Virtual Machine Queue (VMQ) Overview
 description: Virtual Machine Queue (VMQ) Overview
 ms.date: 11/30/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy22q2
 ---
 

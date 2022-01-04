@@ -2,7 +2,6 @@
 title: SCSI Port's SRB Interface with the Storage Class Driver
 description: SCSI Port's SRB Interface with the Storage Class Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SCSI Port's SRB Interface with the Storage Class Driver

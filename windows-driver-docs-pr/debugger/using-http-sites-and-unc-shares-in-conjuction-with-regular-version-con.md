@@ -2,7 +2,6 @@
 title: Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
 description: Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control

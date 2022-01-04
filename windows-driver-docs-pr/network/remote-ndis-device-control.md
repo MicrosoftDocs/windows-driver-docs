@@ -4,7 +4,6 @@ description: Remote NDIS Device Control
 keywords:
 - Remote NDIS WDK networking , device control
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Remote NDIS Device Control

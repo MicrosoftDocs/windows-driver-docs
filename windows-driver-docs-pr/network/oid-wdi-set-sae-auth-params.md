@@ -4,7 +4,6 @@ description: OID_WDI_SET_SAE_AUTH_PARAMS is sent by WDI in response to an NDIS_S
 ms.date: 02/15/2019
 keywords:
  - OID_WDI_SET_SAE_AUTH_PARAMS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

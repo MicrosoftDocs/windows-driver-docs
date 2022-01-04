@@ -8,7 +8,6 @@ keywords:
 - visible results WDK DirectX 8.0
 - DdGetBltStatus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Present and GetBltStatus

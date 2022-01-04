@@ -2,7 +2,6 @@
 title: Retrieving the Status and Problem Code for a Device Instance
 description: Retrieving the Status and Problem Code for a Device Instance
 ms.date: 02/28/2020
-ms.localizationpriority: medium
 ---
 
 # Retrieving the Status and Problem Code for a Device Instance

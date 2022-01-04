@@ -12,7 +12,6 @@ keywords:
 - buffers WDK audio
 - plit buffer frames WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Requirements for WavePci Devices

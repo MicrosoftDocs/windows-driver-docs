@@ -2,7 +2,6 @@
 title: WIA Minidriver Troubleshooting
 description: WIA Minidriver Troubleshooting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Minidriver Troubleshooting

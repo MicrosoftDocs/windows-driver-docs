@@ -4,7 +4,6 @@ description: WiFiCx drivers send this indication to indicate that the cipher key
 ms.date: 08/30/2021
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED (dot11wificxintf.h)

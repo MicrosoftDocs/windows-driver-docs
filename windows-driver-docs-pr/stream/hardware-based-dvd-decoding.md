@@ -6,7 +6,6 @@ keywords:
 - decoder minidrivers WDK DVD , hardware-based DVD decoding
 - hardware-based DVD decoding WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware-based DVD Decoding

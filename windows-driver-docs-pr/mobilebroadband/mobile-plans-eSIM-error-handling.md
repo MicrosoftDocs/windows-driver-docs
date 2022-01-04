@@ -4,7 +4,6 @@ description: This topic describes the eSIM download error handling in Mobile Pla
 keywords:
 - Windows Mobile Plans eSIM error handling, Mobile Plans implementation mobile operators
 ms.date: 03/25/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile Plans eSIM profile download error handling

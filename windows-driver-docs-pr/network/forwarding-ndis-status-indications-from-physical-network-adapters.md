@@ -2,7 +2,6 @@
 title: Forwarding NDIS Status Indications from Physical Network Adapters
 description: Forwarding NDIS Status Indications from Physical Network Adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Forwarding NDIS Status Indications from Physical Network Adapters

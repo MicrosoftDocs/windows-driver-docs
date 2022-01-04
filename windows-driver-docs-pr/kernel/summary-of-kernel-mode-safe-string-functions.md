@@ -3,7 +3,6 @@ title: Summary of Kernel-Mode Safe String Functions
 description: Summary of Kernel-Mode Safe String Functions
 keywords: ["safe string functions WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Summary of Kernel-Mode Safe String Functions

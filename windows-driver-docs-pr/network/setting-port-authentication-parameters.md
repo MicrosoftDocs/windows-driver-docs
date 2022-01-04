@@ -7,7 +7,6 @@ keywords:
 - OID requests WDK NDIS ports
 - authentication parameters WDK NDIS ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Port Authentication Parameters

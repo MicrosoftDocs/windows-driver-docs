@@ -2,7 +2,6 @@
 title: Overview of Hyper-V
 description: Overview of Hyper-V
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Hyper-V

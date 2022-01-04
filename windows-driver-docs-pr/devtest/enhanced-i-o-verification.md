@@ -5,7 +5,6 @@ keywords:
 - Enhanced I/O Verification feature WDK Driver Verifier
 - I/O Verification feature WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enhanced I/O Verification

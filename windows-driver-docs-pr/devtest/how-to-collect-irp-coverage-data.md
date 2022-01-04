@@ -4,7 +4,6 @@ description: How to Collect IRP Coverage Data
 keywords:
 - Driver Coverage Toolkit WDK , collecting data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to Collect IRP Coverage Data

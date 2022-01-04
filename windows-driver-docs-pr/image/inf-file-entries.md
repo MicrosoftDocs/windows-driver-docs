@@ -2,7 +2,6 @@
 title: INF File Entries
 description: INF File Entries
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF File Entries

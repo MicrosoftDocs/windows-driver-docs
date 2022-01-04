@@ -9,7 +9,6 @@ api_name:
 - WORKER_THREAD_RETURNED_AT_BAD_IRQL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE1: WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL

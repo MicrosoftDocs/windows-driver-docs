@@ -6,7 +6,6 @@ keywords:
 - DirectDraw WDK Windows 2000 display , DirectDraw driver
 - DirectDraw driver WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # First Steps For DirectDraw Drivers

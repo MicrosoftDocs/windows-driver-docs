@@ -3,7 +3,6 @@ title: Using the Watch Window
 description: Using the Watch Window
 keywords: ["debugging information windows, Watch window", "Watch window", "memory, Watch window"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Watch Window

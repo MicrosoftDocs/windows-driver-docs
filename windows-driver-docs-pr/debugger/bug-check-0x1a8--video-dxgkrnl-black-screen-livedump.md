@@ -9,7 +9,6 @@ api_name:
 - VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A8: VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP

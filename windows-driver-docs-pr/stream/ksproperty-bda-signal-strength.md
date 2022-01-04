@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 10/14/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_BDA_SIGNAL_STRENGTH

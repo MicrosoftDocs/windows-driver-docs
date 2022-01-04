@@ -2,7 +2,6 @@
 title: Debugging Still Image Components
 description: Debugging Still Image Components
 ms.date: 07/18/2018
-ms.localizationpriority: medium
 ---
 
 # Debugging Still Image Components

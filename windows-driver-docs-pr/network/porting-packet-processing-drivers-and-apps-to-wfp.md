@@ -2,7 +2,6 @@
 title: Porting Packet-Processing Drivers and Apps to WFP
 description: Windows Filtering Platform (WFP) enables TCP/IP packet filtering, inspection, and modification, connection monitoring or authorization, IPsec rules and processing, and RPC filtering.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting Packet-Processing Drivers and Apps to WFP

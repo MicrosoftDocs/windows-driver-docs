@@ -10,7 +10,6 @@ keywords:
 - attacks WDK security
 - I/O WDK security
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Security Threat Models

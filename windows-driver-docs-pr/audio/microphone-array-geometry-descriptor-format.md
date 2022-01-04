@@ -2,7 +2,6 @@
 title: Microphone Array Geometry Descriptor Format
 description: Microphone Array Geometry Descriptor Format
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Microphone Array Geometry Descriptor Format

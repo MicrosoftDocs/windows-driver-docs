@@ -4,7 +4,6 @@ description: WDI_TLV_LIMITED_CONNECTIVITY is a WiFiCx TLV that specifies  whethe
 ms.date: 08/31/2021
 keywords:
  - WDI_TLV_LIMITED_CONNECTIVITY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_LIMITED_CONNECTIVITY (dot11wificxtypes.hpp)

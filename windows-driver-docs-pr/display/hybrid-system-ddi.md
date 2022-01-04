@@ -3,7 +3,6 @@ title: Hybrid system DDI and dList DLL support
 description: Lists hybrid system DDIs related to handling cross-adapter resources; Describes how to set up and register a dList DLL
 ms.date: 11/01/2021
 prerelease: false
-ms.localizationpriority: medium
 ---
 
 # Hybrid system DDI and dList DLL support

@@ -3,7 +3,6 @@ title: Component Firmware Update (CFU) INF configuration
 description: Provides information on configuring the INF file for Component Firmware Update (CFU).
 ms.date: 10/01/2020
 ms.topic: article
-ms.localizationpriority: medium
 ---
 
 # Component Firmware Update (CFU) INF file configuration

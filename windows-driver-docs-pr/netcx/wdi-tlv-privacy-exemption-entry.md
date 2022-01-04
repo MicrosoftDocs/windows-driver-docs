@@ -4,7 +4,6 @@ description: WDI_TLV_PRIVACY_EXEMPTION_ENTRY is a WiFiCx TLV that contains a pri
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_PRIVACY_EXEMPTION_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PRIVACY\_EXEMPTION\_ENTRY (dot11wificxtypes.hpp)

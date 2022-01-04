@@ -3,7 +3,6 @@ title: Changing Text Properties
 description: Changing Text Properties
 keywords: ["debugging information windows, text properties", "text properties of debugging information windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Changing Text Properties

@@ -9,7 +9,6 @@ api_name:
 - eb, ed
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !eb, !ed

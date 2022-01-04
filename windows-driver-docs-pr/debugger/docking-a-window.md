@@ -3,7 +3,6 @@ title: Docking a Window
 description: Docking a Window
 keywords: ["debugging information windows, docking windows", "docking windows", "window docking"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Docking a Window

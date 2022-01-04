@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_DEVICE_NAME is a WiFiCx TLV that contains a device name
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_P2P_DEVICE_NAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DEVICE\_NAME (dot11wificxtypes.hpp)
