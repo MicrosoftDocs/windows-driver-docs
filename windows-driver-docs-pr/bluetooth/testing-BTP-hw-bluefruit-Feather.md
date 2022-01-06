@@ -37,7 +37,9 @@ The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafrui
 When you first get new hardware, the bootloader needs to be updated. You should only need to do this once for each Bluefruit Feather device.
 
 1. Plug the Bluefruit Feather device into a PC via a micro-USB cable.
-2. Follow the [Adafruit](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/update-bootloader) instructions to update the bootloader. Use version 3.2_s140_6.1.1 of the bootloader. The correct package to download should have the name "feather_nrf52840_express_bootloader-0.3.2_s140_6.1.1.zip". It can be found on the [0.3.2 release page](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fadafruit%2FAdafruit_nRF52_Bootloader%2Freleases%2Ftag%2F0.3.2&data=04%7C01%7CJulia.Fishler%40microsoft.com%7Cbf8fc523dd8d40a3f4d808d9c01a616a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637752041807743613%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=qTLBJisxAlD5vSSLIL1Hl3oODaKdU7cW2thAYe35GTA%3D&reserved=0).
+1. Follow the [Adafruit](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/update-bootloader) instructions to update the bootloader. 
+    - Use version 3.2_s140_6.1.1 of the bootloader. 
+    - The correct package to download should have the name "feather_nrf52840_express_bootloader-0.3.2_s140_6.1.1.zip". It can be found on the [0.3.2 release page](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fadafruit%2FAdafruit_nRF52_Bootloader%2Freleases%2Ftag%2F0.3.2&data=04%7C01%7CJulia.Fishler%40microsoft.com%7Cbf8fc523dd8d40a3f4d808d9c01a616a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637752041807743613%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=qTLBJisxAlD5vSSLIL1Hl3oODaKdU7cW2thAYe35GTA%3D&reserved=0).
 
 ### Updating the firmware
 You need to update the firmware for each release of BTP.
@@ -54,13 +56,13 @@ You need to update the firmware for each release of BTP.
         arduino-cli core install adafruit:nrf52 --additional-urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
         ```
 
-2. Identify the COM port assigned to the Bluefruit Feather by running the following from a command prompt:
+1. Identify the COM port assigned to the Bluefruit Feather by running the following from a command prompt:
 
     ```console
     arduino-cli board list
     ```
 
-3. Upload the firmware to the Bluefruit Feather by running the following from a command prompt, and replacing the X in COMX to the COM port number identified in the previous step:
+1. Upload the firmware to the Bluefruit Feather by running the following from a command prompt, and replacing the X in COMX to the COM port number identified in the previous step:
 
     ```console
     arduino-cli upload -p COMX --fqbn adafruit:nrf52:feather52840 --input-file C:\BTP\<version>\DeviceFirmware\BtpBluefruit_nRF52840.ino.zip
