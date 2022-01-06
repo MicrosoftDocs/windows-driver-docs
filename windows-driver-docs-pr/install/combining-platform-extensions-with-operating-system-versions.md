@@ -30,11 +30,11 @@ Specifies that the target operating system is NT-based. Windows 2000 and later v
 Identifies the hardware platform. If specified, this must be **x86**, **ia64**, or **amd64**. If not specified, the associated INF *Models* section can be used with any hardware platform.
 
 <a href="" id="osmajorversion"></a>*OSMajorVersion*  
-A number that represents the major version number for the operating system. For a table listing major versions for the Windows operating systems, see [*OSMajorVersion*](./inf-manufacturer-section.md#OSMajorVersion).
+A number that represents the major version number for the operating system. For a table listing major versions for the Windows operating systems, see [*OSMajorVersion*](./inf-manufacturer-section.md#osmajorversion).
  
 
 <a href="" id="osminorversion"></a>*OSMinorVersion*  
-A number that represents the minor version number for the operating system. For a table listing minor versions for the Windows operating systems, see [*OSMinorVersion*](./inf-manufacturer-section.md#OSMinorVersion).
+A number that represents the minor version number for the operating system. For a table listing minor versions for the Windows operating systems, see [*OSMinorVersion*](./inf-manufacturer-section.md#osminorversion).
 
 <a href="" id="producttype"></a>*ProductType*
 
