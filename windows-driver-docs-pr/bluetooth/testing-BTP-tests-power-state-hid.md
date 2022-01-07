@@ -17,7 +17,7 @@ Features and purchasing information for supported devices can be found in [Suppo
 
 An external power adapter for the Traduci is required for these tests. USB power is not sufficient. Requirements for the necessary adapter can be found on [Power Adapter](testing-BTP-hw-power-adapter.md). If a non-Traduci based device is being used, like the [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md), it will require a powered USB hub in order to remain powered throughout the tests. In such case, make sure that the USB hub is properly powered, the device is plugged into the hub via a USB cable, and the hub is plugged into the system under test (SUT) using a USB cable.
 
-A single Windows test device will not be able to run all power state tests, as some power states, such as standby and sleep, are mutually exclusive on an SUT. The BTP script `RunPowerStateTests.bat` or `RunPowerStateTests.ps1` should automatically select and run the tests compatible with the SUT. Any test that is not compatible with the SUT will be skipped.
+A single Windows test device will not be able to run all power state tests, as some power states, such as standby and sleep, are mutually exclusive on a SUT. The BTP script `RunPowerStateTests.bat` or `RunPowerStateTests.ps1` should automatically select and run the tests compatible with the SUT. Any test that is not compatible with the SUT will be skipped.
 
 ## Provisioning the System Under Test
 

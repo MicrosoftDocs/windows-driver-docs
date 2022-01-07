@@ -11,6 +11,13 @@ ms.localizationpriority: medium
 
 Certain test cases will require more power than the USB VBus can provide to the Traduci and its attached BT devices. In these instances the test will identify in documentation that an external power adapter is required.  
 
+### Tests that require an external power adapater
+- [Power State HID tests](testing-BTP-tests-power-state-hid.md)
+
+### Tests that an external power adapter is recommended for
+- [Audio and HID Scenario Tests](testing-BTP-tests-audio-hid.md)
+- [Wi-Fi and Bluetooth Audio Coexistence Tests](testing-BTP-tests-wifi.md)
+
 ## Requirements
 
 The power adapter chosen must meet the following specification:
@@ -26,3 +33,7 @@ The power adapter chosen must meet the following specification:
 The 9V DC 1000mA power adapter from Adafruit meets these requirements and can be purchased via [Adafruit](https://www.adafruit.com/product/63).
 
 Any other power adapters that meet the above specification can be used as well.
+
+
+
+
