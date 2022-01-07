@@ -11,12 +11,11 @@ ms.localizationpriority: medium
 
 Certain test cases will require more power than the USB VBus can provide to the Traduci and its attached BT devices. In these instances the test will identify in documentation that an external power adapter is required.  
 
-### Tests that require an external power adapater
-- [Power State HID tests](testing-BTP-tests-power-state-hid.md)
-
-### Tests that an external power adapter is recommended for
-- [Audio and HID Scenario Tests](testing-BTP-tests-audio-hid.md)
-- [Wi-Fi and Bluetooth Audio Coexistence Tests](testing-BTP-tests-wifi.md)
+| Test | Adapter Required | Adapter Recommended |
+| --- | --- | --- |
+| [Power State HID tests](testing-BTP-tests-power-state-hid.md) | Yes | N/A |
+| [Audio and HID Scenario Tests](testing-BTP-tests-audio-hid.md) | No | Yes |
+| [Wi-Fi and Bluetooth Audio Coexistence Tests](testing-BTP-tests-wifi.md) | No | Yes |
 
 ## Requirements
 
