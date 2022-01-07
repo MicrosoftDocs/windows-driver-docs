@@ -19,36 +19,44 @@ The nRF52840 is a Low Energy (LE) radio from Nordic Semiconductor capable of beh
 ## Supported tests
 
 - [Pairing tests](testing-BTP-tests-pairing.md)
-- [Human Interface Device (HID) tests](testing-BTP-tests-hid.md) 
+- [Human Interface Device (HID) tests](testing-BTP-tests-hid.md)
 - [Battery tests](testing-BTP-tests-battery.md)
 - [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as a HID device)
+- [Power State HID tests](testing-BTP-tests-power-state-hid.md)
 
 ## Hardware
 
 The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafruit.com/product/4062). It requires a micro-USB cable.
 
 > [!NOTE]
-> The Bluefruit Feather device is supported via USB serial only at this time. 
+> The Bluefruit Feather device is supported via USB serial only at this time.
 
 ## Getting Started
 
-For first time setup, the bootloader needs to be updated. This step is not required for future firmware updates. Plug the Bluefruit Feather device into a PC via the a micro-USB cable.
+### Updating the bootloader
 
+When you first get new hardware, the bootloader needs to be updated. You should only need to do this once for each Bluefruit Feather device.
+
+1. Plug the Bluefruit Feather device into a PC via a micro-USB cable.
 1. Follow the [Adafruit](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/update-bootloader) instructions to update the bootloader.
+    - Use version 3.2_s140_6.1.1 of the bootloader.
+    - The correct package to download should have the name "feather_nrf52840_express_bootloader-0.3.2_s140_6.1.1.zip". It can be found on the [0.3.2 release page](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases/tag/0.3.2).
 
-    The correct package to download should have a name similar to "feather_nrf52840_express_bootloader-*\<version\>*.zip" where the version number should be equal or greater to 0.3.2_s140_6.1.1. If you are having issues, try using version 0.3.2_s140_6.1.1 which is known and verified to work with the BTP tests.
+### Updating the firmware
+
+You need to update the firmware for each release of BTP.
 
 1. Acquire and setup the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
-    1. If not done already, add the arduino-cli to your [PATH variable](/windows-server/administration/windows-commands/path).
-    1. To acquire the Adafruit board packages, run the following from a command prompt:
+    2. If not done already, add the arduino-cli to your [PATH variable](/windows-server/administration/windows-commands/path).
+    3. To acquire the Adafruit board packages, run the following from a command prompt:
 
-        ```console
-        arduino-cli config init
-        arduino-cli core update-index
-        arduino-cli core update-index --additional-urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
-        arduino-cli core install adafruit:nrf52 --additional-urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
-        ```
+    ```console
+    arduino-cli config init
+    arduino-cli core update-index
+    arduino-cli core update-index --additional-urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+    arduino-cli core install adafruit:nrf52 --additional-urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+    ```
 
 1. Identify the COM port assigned to the Bluefruit Feather by running the following from a command prompt:
 
@@ -72,3 +80,7 @@ For first time setup, the bootloader needs to be updated. This step is not requi
 
 > [!Note]
 > The Bluefruit Feather is not currently supported for use with the Traduci.
+
+## Trouble shooting
+
+- If the tests are failing consistently and the firmware of the Bluefruit Feather has not been updated recently, check that the firmware is a supported version by following step 1. If the version is older, download the bootloader and install the latest firmware.
