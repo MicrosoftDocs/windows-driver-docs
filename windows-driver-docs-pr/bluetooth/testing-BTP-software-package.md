@@ -19,7 +19,7 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 
 | Version | Changes |
 | --- | --- |
-| 1.10.1 | - Added Power state tests. |
+| 1.10.1 | - Added power state HID tests.</br> - Several other fixes and improvements to test reliability. |
 | 1.9.0 | - Improved support for BTP devices using custom DLL plugins.</br> - Fixed an issue affecting the audio mute/unmute tests in certain Windows builds.</br> - Several other fixes and improvements to test reliability. |
 | 1.8.0 | - Added Wi-Fi with Bluetooth audio and HID co-existence tests.</br>- Added mute and unmute audio tests.</br>- Added option to record audio played during tests to a local file.</br>- Fixed issue that could cause the Bluefruit Feather to incorrectly report its Bluetooth address.</br>- Fixed issue with running current audio tests on older Windows builds.</br>- Several other fixes and improvements to test reliability. |
 | 1.7.2 | - Added Wi-Fi and Bluetooth audio co-existence tests.</br>- Added support for Bluefruit Feather (nRF52840) with full parity to existing Bluefruit support.</br>- Added tests for all types of pairing key negotiations using the Bluefruit Feather.</br>- Fixed issue where failures would occur in a tight loop if a device was unplugged mid-test.</br>- Several fixes and improvements to test reliability. |
@@ -45,6 +45,7 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 | RunBatteryTests | - Provided as a CMD script and a PowerShell script.</br>- Runs battery tests.</br>- Supports custom arguments if provided</br> | RunBatteryTests.bat</br>RunBatteryTests.ps1 |
 | RunWiFiAudioScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi and audio scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiAudioScenarioTests.bat</br>RunWiFiAudioScenarioTests.ps1 |
 | RunWiFiAudioHidScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi, audio, and HID scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiAudioHidScenarioTests.bat</br>RunWiFiAudioHidScenarioTests.ps1 |
+| RunPowerStateTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the power state tests.</br>- Supports custom arguments if provided</br> | RunPowerStateTests.bat</br>RunPowerStateTests.ps1 |
 | Bluefruit Feather Firmware | - Compiled binaries for Bluefruit Feather device. | BtpBluefruit_nRF52840.ino.zip |
 | ESP32 Firmware | - Compiled binaries for ESP32wifi device. | WiFi-ESP32.ino</br>WiFi-ESP32.ino.partitions |
 
@@ -59,11 +60,11 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 | GenericSerialIO | - Binary needed to support BTP devices that use Windows serial communication. | Microsoft.Bluetooth.TestPlatform.GenericSerialIO.dll |
 | HidTests | - Test binary for Bluetooth HID tests.</br> - Can be run using TAEF or via the provided scripts. | TaefHidTests.dll |
 | PairingTests | - Test binary for Bluetooth Pairing tests.</br> - Can be run using TAEF or via the provided scripts. | TaefPairingTests.dll |
-| SleepTests | - Experimental test binary for Bluetooth Sleep tests.</br> - Can be run using TAEF. </br>**Note:** This is not currently fully supported. | TaefSleepTests.dll |
 | AudioTests | -  Test binary for Bluetooth Audio tests.</br> - Can be run using TAEF. | TaefAudioTests.dll |
 | AudioHidScenarioTests | - Test binary for Bluetooth Audio and HID scenario tests.</br> - Can be run using TAEF. | TaefAudioHidScenarioTests.dll |
 | BatteryTests | - Test binary for Bluetooth battery tests.</br> - Can be run using TAEF. | TaefBatteryTests.dll |
 | WiFiCoexScenarioTests | - Test binary for Bluetooth and Wi-Fi coexistence tests.</br> - Can be run using TAEF. | TaefWiFiCoexScenarioTests.dll |
+| PowerStateTests | - Test binary for Bluetooth power state tests.</br> - Can be run using TAEF. | TaefPowerStateTests.dll |
 | TraduciCmd | - Command line tool for querying and changing the state of the Traduci, including debug commands.</br> - Used for firmware update to Traduci hardware. | TraduciCmd.exe |
 | BTETLParse | - Command line tool for extracting HCI traces from supported ETL files. | BTETLParse.exe |
 | BTVS | - Graphical tool for streaming live HCI traces in supported formats (such as Ellisys, Frontline, and Wireshark).</br> - Only available for the x86 architecture. | btvs.exe |

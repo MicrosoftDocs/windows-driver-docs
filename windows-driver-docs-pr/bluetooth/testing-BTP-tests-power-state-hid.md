@@ -7,21 +7,21 @@ ms.localizationpriority: medium
 
 # BTP Power State HID Tests
 
-The BTP Power State HID tests verify the ability of the local system to resume from various power states.
+The BTP Power State HID tests verify the ability of the local system to transition to and resume from various power states (standby, sleep, and hibernation) while maintaining correct Bluetooth HID functionality.
 
 ## Setting up for testing
 
-When using a Pmod device with the Traduci, first check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci.  More detailed information on setting up can be found in [Setting up BTP](testing-BTP-setup.md).
+When using a Pmod device with the Traduci, first check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the system under test's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci or directly connected to the SUT when appropriate.  More detailed information on setting up can be found in [Setting up BTP](testing-BTP-setup.md).
 
-Features and purchasing information for supported devices can be found in [Supported BTP hardware](testing-BTP-hw.md). 
+Features and purchasing information for supported devices can be found in [Supported BTP hardware](testing-BTP-hw.md).
 
-An external power adapter for the Traduci is required for these tests. USB power is not sufficient.  Requirements for the necessary adapter can be found on [Power Adapter](testing-BTP-hw-power-adapter.md)
+An external power adapter for the Traduci is required for these tests. USB power is not sufficient. Requirements for the necessary adapter can be found on [Power Adapter](testing-BTP-hw-power-adapter.md). If a non-Traduci based device is being used, like the [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md), it will require a powered USB hub in order to remain powered throughout the tests. In such case, make sure that the USB hub is properly powered, the device is plugged into the hub via a USB cable, and the hub is plugged into the system under test (SUT) using a USB cable.
 
-A single test device will not be able to run all power state tests, as some power states, such as hibernate and sleep, are mutually exclusive on a system under test (SUT). The BTP script RunAudioHidScenarioTests.bat or RunAudioHidScenarioTests.ps1 should automatically select & run the tests compatible with the SUT. Any test that is not compatible with the SUT will be marked others as incompatible rather than failed.
+A single Windows test device will not be able to run all power state tests, as some power states, such as standby and sleep, are mutually exclusive on an SUT. The BTP script `RunPowerStateTests.bat` or `RunPowerStateTests.ps1` should automatically select and run the tests compatible with the SUT. Any test that is not compatible with the SUT will be skipped.
 
 ## Provisioning the System Under Test
 
-Systems under test (SUTs) must be provisioned for power state tests before they are run. Follow the instructions to provision the PC for power tests provided by the WDK 10 document, [Prepare the target computer for provisioning](/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1#prepare-the-target-computer-for-provisioning)
+Systems under test (SUTs) must be provisioned for the power state tests before they are run. Follow the instructions to provision the PC for power tests provided by the WDK 10 document [Provision a computer for driver deployment and testing (WDK 10)](/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1)
 
 ## Supported devices
 
@@ -32,8 +32,8 @@ Systems under test (SUTs) must be provisioned for power state tests before they 
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Then run either:
 
-- `RunAudioHidScenarioTests.bat <device name>` from an elevated command prompt or
-- `RunAudioHidScenarioTests.ps1 <device name>` from an elevated PowerShell console
+- `RunPowerStateTests.bat <device name>` from an elevated command prompt or
+- `RunPowerStateTests.ps1 <device name>` from an elevated PowerShell console
 
 Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md#supported-devices).
 

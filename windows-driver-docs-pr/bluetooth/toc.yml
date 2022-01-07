@@ -122,6 +122,8 @@
         href: testing-BTP-hw-esp32.md
       - name: "Human Device Adapter"
         href: testing-BTP-human-device-adapter.md
+      - name: "Traduci Power Adapter"
+        href: testing-BTP-hw-power-adapter.md
     - name: "BTP Tests"
       items:
       - name: "Currently Available BTP Tests"
@@ -138,6 +140,8 @@
         href: testing-BTP-tests-wifi.md
       - name: "Testing Bluetooth Battery"
         href: testing-BTP-tests-battery.md
+      - name: "Testing Bluetooth Power States"
+        href: testing-BTP-tests-power-state-hid.md
     - name: "BTP Diagnostic Tools"
       items:
       - name: "Bluetooth ETL Parse"
