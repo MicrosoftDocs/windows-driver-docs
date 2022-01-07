@@ -7,8 +7,6 @@ ms.localizationpriority: medium
 
 # Traduci Power Adapter
 
-## Overview
-
 Certain test cases will require more power than the USB VBus can provide to the Traduci and its attached BT devices. In these instances the test will identify in documentation that an external power adapter is required.  
 
 | Test | Adapter Required | Adapter Recommended |
